@@ -1,6 +1,6 @@
 ---
 title: Debug in tempo reale delle app di Azure ASP.NET - Visual Studio | Documenti Microsoft
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug in tempo reale delle app di Azure ASP.NET utilizzando il Debugger di Snapshot
 
@@ -33,7 +33,7 @@ Inoltre, il Debugger dello Snapshot è disponibile solo per Visual Studio 2017 E
 
 ## <a name="start-the-snapshot-debugger"></a>Avviare il Debugger di Snapshot
 
-1. Installare il [Visual Studio Enterprise 15,5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) o versione successiva. Se si sta aggiornando un'anteprima di Visual Studio 2017 precedente, eseguire il programma di installazione Visual Studio e controllare il componente del Debugger di Snapshot del carico di lavoro di sviluppo ASP.NET e web.
+1. Installare [2017 Enterprise di Visual Studio versione 15,5](https://www.visualstudio.com/downloads/) o versione successiva. Se si sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire il programma di installazione Visual Studio e controllare il componente del Debugger di Snapshot del carico di lavoro di sviluppo ASP.NET e web.
 
 2. Aprire il progetto che si desidera eseguire il debug di snapshot. 
 

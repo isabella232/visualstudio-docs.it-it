@@ -17,18 +17,18 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Esplorare una sessione di debug in Visual Studio (Xaml e C#)
 Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Visual Studio e come visualizzare e modificare lo stato del programma in una sessione.  
   
  La guida è destinata agli sviluppatori che non hanno familiarità con il debug in Visual Studio e a coloro che desiderano avere maggiori informazioni su come spostarsi in una sessione di debug di Visual Studio, ma non insegna l'arte stessa del debug I metodi inclusi nel codice di esempio sono concepiti solo per illustrare le procedure di debug descritte in questo argomento. Non utilizzano procedure consigliate per la progettazione di app o funzioni. In realtà, come si scoprirà presto, i metodi e l'app stessa non hanno alcuna finalità pratica.  
   
- Le sezioni di questa guida introduttiva sono state progettate nell'ottica della massima indipendenza per consentire di ignorare le eventuali sezioni contenenti informazioni già note. Non è inoltre obbligatorio creare un'app di esempio, anche se è consigliabile e abbiamo fatto in modo da rendere il processo più semplice possibile.  
+ Le sezioni di questa guida introduttiva sono state progettate nell'ottica della massima indipendenza per consentire di ignorare le eventuali sezioni contenenti informazioni già note.  Non è inoltre obbligatorio creare un'app di esempio, anche se è consigliabile e abbiamo fatto in modo da rendere il processo più semplice possibile.  
   
  **Tasti di scelta rapida del debugger.** Gli spostamenti all'interno del debugger di Visual Studio sono ottimizzati sia per il mouse che per la tastiera. In molti passaggi di questo argomento è indicato il tasto di scelta rapida in un commento racchiuso tra parentesi. Ad esempio, (tastiera: F5) indica che premendo il tasto F5 si avvia o si continua l'esecuzione del debugger.  
   
@@ -52,7 +52,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
   
  **Aprire il file di origine MainPage.xaml.cs.** Fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor XAML e scegliere **Visualizza codice**. Verrà visualizzato il file code-behind MainPage.xaml.cs. Si noti che nel file è elencato un solo metodo, ovvero il costruttore `MainPage()` .  
   
- **Sostituire il costruttore MainPage con il codice di esempio.** Eliminare il metodo MainPage(). Fare clic sul collegamento: [codice di esempio di navigazione (Xaml e c#) del Debugger](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md), quindi copiare il codice riportato nella sezione c# negli Appunti. (Scegliere **nuovamente** nel browser o Visualizzatore della Guida per tornare a questa pagina introduttiva.) Nell'editor di Visual Studio incollare il codice nel blocco `partial class MainPage`. Scegliere CTRL+S per salvare il file.  
+ **Sostituire il costruttore MainPage con il codice di esempio.** Eliminare il metodo MainPage(). Fare clic sul collegamento: [codice di esempio di navigazione (Xaml e c#) del Debugger](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs), quindi copiare il codice riportato nella sezione c# negli Appunti. (Scegliere **nuovamente** nel browser o Visualizzatore della Guida per tornare a questa pagina introduttiva.) Nell'editor di Visual Studio incollare il codice nel blocco `partial class MainPage`. Scegliere CTRL+S per salvare il file.  
   
  È ora possibile continuare seguendo gli esempi in questo argomento.  
   
@@ -162,7 +162,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
   
  **Eseguire un'istruzione nel metodo Example3.** Scegliere **Debug** dal menu **Debug** (tastiera: F11) per passare al punto di ingresso del metodo Example3. Continuare a eseguire istruzioni nel metodo fino a completare l'iterazione di uno o due cicli del blocco `for` . Si noti che l'esecuzione di tutte e 1000 le iterazioni richiederebbe molto tempo.  
   
- **Impostare un punto di interruzione condizionale.** Nella barra di navigazione a sinistra della finestra del codice fare clic con il pulsante destro del mouse sulla riga `x += i;` e quindi scegliere **Condizione**. Selezionare la casella di controllo **Condizione** e quindi digitare `i == 500;` nella casella di testo. Scegliere l'opzione **È true** e quindi **OK**. Il punto di interruzione consente di controllare il valore alla 500a iterazione del ciclo `for` .  
+ **Impostare un punto di interruzione condizionale.** Nella barra di navigazione a sinistra della finestra del codice fare clic con il pulsante destro del mouse sulla riga `x += i;` e quindi scegliere **Condizione**. Selezionare la casella di controllo **Condizione** e quindi digitare `i == 500;` nella casella di testo. Scegliere l'opzione **È true** e quindi **OK**. Il punto di interruzione consente di controllare il valore alla 500a iterazione del ciclo `for`.  
   
  ![Finestra di dialogo Condizione punto di interruzione](../debugger/media/dbg_basics_breakpointcondition.png "DBG_Basics_BreakpointCondition")  
   

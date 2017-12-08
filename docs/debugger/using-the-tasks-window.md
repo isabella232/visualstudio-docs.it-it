@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
 Il **attività** finestra simile di **thread** finestra, ad eccezione del fatto che mostra informazioni sugli <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), o [winjs. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) oggetti anziché ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread. 
@@ -32,7 +32,7 @@ Il **attività** finestra simile di **thread** finestra, ad eccezione del fatto 
   
  Nel codice nativo, è possibile utilizzare il **attività** finestra quando si lavora con [gruppi di attività](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [gli algoritmi paralleli](/cpp/parallel/concrt/parallel-algorithms), [agenti asincroni](/cpp/parallel/concrt/asynchronous-agents), e [attività leggere](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Per ulteriori informazioni sulle attività nel codice nativo, vedere [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime).  
   
- In JavaScript è possibile utilizzare la finestra Attività quando si utilizza codice promise .then. Vedere [programmazione asincrona in JavaScript (app UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) per ulteriori informazioni.   
+ In JavaScript, è possibile utilizzare la finestra attività quando si lavora con promessa `.then` codice. Vedere [programmazione asincrona in JavaScript (app UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) per ulteriori informazioni.   
   
  È possibile utilizzare il **attività** finestra ogni volta che inserisce nel debugger. È possibile accedervi nel **Debug** menu facendo **Windows** e quindi fare clic su **attività**. La figura seguente mostra il **attività** finestra nella modalità predefinita.  
   
