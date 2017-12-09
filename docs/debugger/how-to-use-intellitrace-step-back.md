@@ -1,7 +1,7 @@
 ---
 title: Visualizzare uno snapshot tramite il passaggio di IntelliTrace-back - Visual Studio | Documenti Microsoft
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Visualizzare gli snapshot utilizzando IntelliTrace passaggio-back
 Passaggio di IntelliTrace-back automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro per i punti di interruzione precedente o passaggi e visualizzare lo stato dell'applicazione è stato in precedenza. Passaggio back IntelliTrace è possibile risparmiare tempo quando si desidera visualizzare lo stato applicazione precedente ma si desidera riavviare il debug o ricreare lo stato dell'app desiderata.

@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>L'accesso ai dati in Visual Studio
 
@@ -38,7 +38,7 @@ Gli elenchi seguenti illustrano alcune di molti sistemi di database e l'archivia
 |Database SQL|DocumentDB|Archiviazione (BLOB, tabelle, code, i file)|
 |SQL Data Warehouse|Estensione Database SQL Server|StorSimple|
 
-e altro ancora...
+E molto altro ancora.
 
 **SQL**
 
@@ -48,7 +48,7 @@ e altro ancora...
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
-e altro ancora...
+E molto altro ancora.
 
 **NoSQL**
 
@@ -58,7 +58,7 @@ e altro ancora...
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
-e altro ancora...
+E molto altro ancora.
 
 Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte di nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti** > **Gestione pacchetti NuGet** > **Gestisci NuGet Pacchetti per la soluzione**). Altri prodotti del database è integrato con Visual Studio come estensione. È possibile esplorare queste offerte di Visual Studio Marketplace, passare a **strumenti**, **estensioni e aggiornamenti** e quindi selezionando **Online** nel riquadro sinistro della finestra di la finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -104,7 +104,7 @@ I programmi C++ che utilizzano i servizi REST è possibile utilizzare il [C++ RE
 
 I programmi C++ che utilizzano l'archiviazione di Microsoft Azure è possibile utilizzare il [Client di archiviazione di Microsoft Azure](http://www.nuget.org/packages/wastorage).
 
-Modellazione dei dati &mdash; Visual Studio non fornisce un livello ORM per C++. [ODB](http://www.codesynthesis.com/products/odb/) è una diffusa ORM open source per C++.
+Modellazione dei dati&mdash;Visual Studio non fornisce un livello ORM per C++. [ODB](http://www.codesynthesis.com/products/odb/) è una diffusa ORM open source per C++.
 
 Per ulteriori informazioni sulla connessione ai database da app C++, vedere [Visual Studio data tools per C++](../data-tools/visual-studio-data-tools-for-cpp.md). Per ulteriori informazioni sulle tecnologie di accesso ai dati legacy Visual C++, vedere [accesso ai dati](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
 
