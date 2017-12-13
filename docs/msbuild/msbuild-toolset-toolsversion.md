@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,39 +13,24 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
-ms.contentlocale: it-it
-ms.lasthandoff: 05/31/2017
-
+ms.openlocfilehash: 85d570564ba3e82808f0876ead938f535368ec29
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file microsoft.common.tasks, un file microsoft.common.targets e compilatori come csc.exe e vbc.exe. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Attributo ToolsVersion  
- Specificare il set di strumenti nell'attributo `ToolsVersion` per l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. L'esempio seguente specifica che il progetto deve essere compilato con il set di strumenti di MSBuild 12.0.  
+ Specificare il set di strumenti nell'attributo `ToolsVersion` per l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. L'esempio seguente specifica che il progetto deve essere compilato usando il set di strumenti di MSBuild 15.0.  
   
 ```xml  
-<Project ToolsVersion="12.0" ... </Project>  
+<Project ToolsVersion="15.0" ... </Project>  
 ```  
   
 ## <a name="how-the-toolsversion-attribute-works"></a>Funzionamento dell'attributo ToolsVersion  
@@ -134,4 +118,3 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 ## <a name="see-also"></a>Vedere anche  
  [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
-

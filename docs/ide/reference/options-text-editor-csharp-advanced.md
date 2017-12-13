@@ -16,18 +16,17 @@ helpviewer_keywords:
 - XML comments
 - XML documentation, generating
 - outlining options [C#]
-- outlining options [J#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
 caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7537b4fc3fec90808c6bdc4a982fe3b7ff37a1d5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: bb1c757ed5c266c74ca14e0b990528844bad0fb2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 Usare questa finestra di dialogo per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti della documentazione XML per Visual C#. Per accedere a questa finestra di dialogo, fare clic su **Opzioni** nel menu **Strumenti**, spandere la cartella **Editor di testo**, espandere **C#** e quindi fare clic su **Avanzate**.  

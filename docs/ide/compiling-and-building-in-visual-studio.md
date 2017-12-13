@@ -1,32 +1,29 @@
 ---
 title: Compilazione e creazione in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
-ms.contentlocale: it-it
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 
-L'esecuzione di una compilazione consente di creare assembly e applicazioni eseguibili dal codice sorgente, in qualsiasi fase di un ciclo di sviluppo. A livello generale il processo di compilazione è molto simile tra progetti di tipi diversi, quali Windows, ASP.NET, app per dispositivi mobili e altri ancora. Il processo di compilazione è anche molto simile tra linguaggi di programmazione come C#, Visual Basic, C++ e F#. 
+L'esecuzione di una build determina la creazione di assembly e applicazioni eseguibili dal codice sorgente in qualsiasi fase di un ciclo di sviluppo. A livello generale il processo di compilazione è molto simile tra progetti di tipi diversi, quali Windows, ASP.NET, app per dispositivi mobili e altri ancora. Il processo di compilazione è anche molto simile tra linguaggi di programmazione come C#, Visual Basic, C++ e F#. 
 
 Compilando spesso il codice è possibile identificare rapidamente gli errori in fase di compilazione, ad esempio sintassi non corretta, parole chiave con errori di digitazione e tipi non corrispondenti. È anche possibile rilevare e risolvere rapidamente gli errori di runtime, ad esempio errori logici e semantici, compilando frequentemente il codice ed eseguendo le versioni di debug.  
 
@@ -61,4 +58,3 @@ Successivamente è possibile esplorare molte altre attività:
 ## <a name="see-also"></a>Vedere anche  
 
 - [Compilazione di progetti di siti Web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
-

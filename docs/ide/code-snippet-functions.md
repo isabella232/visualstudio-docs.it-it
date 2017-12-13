@@ -1,40 +1,41 @@
 ---
-title: "Funzioni dei frammenti di codice | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "frammenti di codice [Visual Studio], funzioni"
-  - "frammenti di codice IntelliSense, funzioni"
-  - "frammenti [Visual Studio], funzioni"
+title: Funzioni dei frammenti di codice | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Funzioni dei frammenti di codice
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Le funzioni disponibili per l’utilizzo con i frammenti di codice [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sono tre.  Le funzioni sono specificate nell'elemento [Function](http://msdn.microsoft.com/it-it/572c5549-5821-4e15-8ecd-0fa86c1c65df) del frammento di codice.  Per informazioni sulla creazione di frammenti di codice, vedere [Frammenti di codice](../ide/code-snippets.md).  
+# <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
+Con i frammenti di codice [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] è possibile usare tre funzioni. Le funzioni sono specificate nell'elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) del frammento di codice. Per informazioni sulla creazione di frammenti di codice, vedere [Frammenti di codice](../ide/code-snippets.md).  
   
-## Funzioni  
- Nella tabella seguente sono descritte le funzioni disponibili per l'utilizzo con l'elemento `Function` nei frammenti di codice.  
+## <a name="functions"></a>Funzioni  
+ Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.  
   
 |Funzione|Descrizione|Linguaggio|  
-|--------------|-----------------|----------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera un'istruzione switch e un insieme di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`.  Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale dell'enumerazione oppure a un tipo di enumerazione.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`ClassName()`|Restituisce il nome della classe contenente il frammento di codice inserito.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|Riduce il parametro *TypeName* alla forma più semplice nel contesto in cui è stato chiamato il frammento di codice.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|--------------|-----------------|--------------|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|Riduce il parametro *TypeName* alla forma più semplice nel contesto in cui il frammento è stato richiamato.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## Esempio  
- Nell'esempio riportato di seguito viene illustrato come utilizzare la funzione `GenerateSwitchCases`.  Quando viene inserito questo frammento di codice e un'enumerazione viene immessa nel valore letterale `$switch_on$`, il valore letterale `$cases$` genera un'istruzione `case` per ogni valore presente nell'enumerazione.  
+## <a name="example"></a>Esempio  
+ L'esempio seguente illustra come usare la funzione `GenerateSwitchCases`. Quando questo frammento viene inserito e un'enumerazione viene immessa nel valore letterale `$switch_on$`, il valore letterale `$cases$` genera un'istruzione `case` per ogni valore presente nell'enumerazione.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ Le funzioni disponibili per l’utilizzo con i frammenti di codice [!INCLUDE[csp
 </CodeSnippets>  
 ```  
   
-## Esempio  
- Nell'esempio riportato di seguito viene illustrato come utilizzare la funzione `ClassName`.  Quando viene inserito questo frammento di codice, il valore letterale `$classname$` viene sostituito con il nome della classe che lo contiene in corrispondenza della medesima posizione nel file del codice.  
+## <a name="example"></a>Esempio  
+ L'esempio seguente illustra come usare la funzione `ClassName`. Quando questo frammento viene inserito, il valore letterale `$classname$` viene sostituito con il nome della classe contenitore nella posizione corrispondente nel file di codice.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ Le funzioni disponibili per l’utilizzo con i frammenti di codice [!INCLUDE[csp
 </CodeSnippets>  
 ```  
   
-## Esempio  
- Nell'esempio riportato di seguito viene illustrato come utilizzare la funzione `SimpleTypeName`.  Quando viene inserito questo frammento di codice in un file del codice, il valore letterale `$SystemConsole$` viene sostituito con la forma più semplice del tipo <xref:System.Console> nel contesto in cui è stato chiamato il frammento.  
+## <a name="example"></a>Esempio  
+ In questo esempio viene illustrato come usare la funzione `SimpleTypeName`. Quando questo frammento viene inserito in un file di codice, il valore letterale `$SystemConsole$` verrà sostituito con la forma più semplice del tipo <xref:System.Console> nel contesto in cui il frammento è stato richiamato.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ Le funzioni disponibili per l’utilizzo con i frammenti di codice [!INCLUDE[csp
 </CodeSnippets>  
 ```  
   
-## Vedere anche  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/it-it/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+## <a name="see-also"></a>Vedere anche  
+ [Elemento Function (frammenti di codice IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

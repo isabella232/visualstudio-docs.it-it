@@ -1,56 +1,57 @@
 ---
-title: "Designing Classes and Types (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "types [Visual Studio], designing"
-  - "classes [Visual Studio], designing"
+title: Progettazione di classi e tipi (Progettazione classi) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- types [Visual Studio], designing
+- classes [Visual Studio], designing
 ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 07bae865601183446308a37f7c91255392fee342
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Designing Classes and Types (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Utilizzando **Progettazione classi** è possibile visualizzare e progettare classi e tipi.  Negli argomenti seguenti viene illustrato come eseguire questa operazione.  
+# <a name="designing-classes-and-types-class-designer"></a>Progettazione di classi e tipi (Progettazione classi)
+**Progettazione classi** non solo consente di visualizzare classi e tipi, ma anche di progettarli. Gli argomenti seguenti descrivono le procedure per eseguire queste operazioni.  
   
 > [!NOTE]
->  Quando si utilizza Progettazione classi, è necessario esaminare il codice che viene generato prima di eseguirlo, in modo da verificare che sia appropriato per il contesto di sicurezza specifico.  
+>  Quando si usa Progettazione classi, prima di eseguire il codice che viene creato è necessario ispezionarlo per verificare che sia appropriato per il contesto di protezione.  
   
-## In questa sezione  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: Creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md)  
   
- Viene descritto come utilizzare il diagramma classi per creare un tipo.  
+ Descrive l'uso del diagramma classi per creare un tipo.  
   
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Procedura: Creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
- Viene illustrato come definire una relazione di ereditarietà tra tipi.  
+ Illustra come definire una relazione di ereditarietà tra i tipi.  
   
- [How to: Create Associations Between Types \(Class Designer\)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Procedura: Creare associazioni tra tipi (Progettazione classi)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
- Viene descritto come definire le associazioni nel diagramma classi.  
+ Descrive come definire le associazioni nel diagramma classi.  
   
- [How to: Visualize a Collection Association \(Class Designer\)](../Topic/How%20to:%20Visualize%20a%20Collection%20Association%20\(Class%20Designer\).md)  
+ [Procedura: Visualizzare un'associazione di raccolte (Progettazione classi)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
- Viene illustrato come definire un'associazione di raccolte in Progettazione classi.  
+ Illustra come definire un'associazione di raccolte in Progettazione classi.  
   
- [Creating and Configuring Type Members \(Class Designer\)](../ide/creating-and-configuring-type-members-class-designer.md)  
+ [Creazione e configurazione di membri di tipi (Progettazione classi)](../ide/creating-and-configuring-type-members-class-designer.md)  
   
- Vengono forniti informazioni e collegamenti ad argomenti sulla creazione e la configurazione di membri dei tipi con Progettazione classi.  
+ Contiene informazioni e collegamenti ad argomenti sulla creazione e configurazione di membri di tipo con Progettazione classi.  
   
-## Sezioni correlate  
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)  
+## <a name="related-sections"></a>Sezioni correlate  
+ [Visualizzazione dei tipi e delle relazioni (Progettazione classi)](../ide/viewing-types-and-relationships-class-designer.md)  
   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)  
+ [Refactoring di classi e tipi (Progettazione classi)](../ide/refactoring-classes-and-types-class-designer.md)  
   
-## Vedere anche  
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)
+## <a name="see-also"></a>Vedere anche  
+ [Uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md)

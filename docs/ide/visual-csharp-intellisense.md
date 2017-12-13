@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Visual C#, IntelliSense
 - IntelliSense [C#]
 ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 99f7756369fe4848fc5641009e95bbba23c95227
-ms.contentlocale: it-it
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: b19e53d5c82c6c6a3abeda72a6b321dd630d586a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
 IntelliSense per Visual C# è disponibile durante la codifica nell'editor e durante il debug nella finestra di comando [Modalità immediata](../ide/reference/immediate-window.md).  
@@ -48,21 +32,21 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
   
 -   Nomi di variabili, comandi e funzioni  
   
--   [Frammenti di codice](#CodeSnippets),  
+-   Frammenti di codice  
   
--   [Parole chiave del linguaggio](#Keywords),  
+-   Parole chiave del linguaggio  
   
--   [Metodi di estensione](#ExtensionMethods)  
+-   Metodi di estensione  
   
- L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati](#filtered-completion-lists).  
+L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati](#filtered-completion-lists).  
   
-###  <a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento  
- In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [Elemento Shortcut (frammenti di codice IntelliSense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) del frammento.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).  
+### <a name="code-snippets-in-completion-lists"></a>Frammenti di codice negli elenchi di completamento  
+ In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut) del frammento di codice.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Parole chiave del linguaggio negli elenchi di completamento  
+### <a name="language-keywords-in-completion-lists"></a>Parole chiave del linguaggio negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](/dotnet/csharp/language-reference/keywords/index).  
   
-###  <a name="ExtensionMethods"></a> Metodi di estensione negli elenchi di completamento  
+### <a name="extension-methods-in-completion-lists"></a>Metodi Estensione negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include i metodi estensione che appartengono a un ambito.  
   
 > [!NOTE]
@@ -70,30 +54,26 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
   
  I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per un elenco di icone dell’elenco, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md). Se un metodo di istanza e un metodo di estensione con lo stesso nome sono entrambi inclusi in un ambito, nell'elenco di completamento viene visualizzata l'icona del metodo di estensione.  
   
-### <a name="filtered-completion-lists"></a> Elenchi di completamento filtrati  
- I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri.  
+### <a name="filtered-completion-lists"></a>Elenchi di completamento filtrati  
+I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri. In Visual C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:  
   
- In Visual C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:  
-  
--   **Interfacce e classi di base** Vengono rimosse le voci dagli elenchi di completamento IntelliSense per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi base dall'elenco di completamento perché Visual C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.  
+-   **Interfacce e classi di base**: IntelliSense rimuove automaticamente le voci dagli elenchi di completamento per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi base dall'elenco di completamento perché Visual C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.  
   
 -   **Attributi**: quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo i tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.  
   
--   Operatori `as` e `is`.  
+-   **Clausole catch**  
   
--   **Clausole catch.**  
-  
--   **Inizializzatori di oggetto:** solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.  
+-   **Inizializzatori di oggetto**: solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.  
   
 -   **Nuova parola chiave**: quando si digita `new` e si preme la BARRA SPAZIATRICE, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.  
   
 -   **Parola chiave enum**: quando si preme la BARRA SPAZIATRICE dopo il segno di uguale per un'assegnazione enum, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Dopo aver digitato la parola chiave return e quando si crea una dichiarazione, ad esempio, le voci nell'elenco di completamento vengono selezionate automaticamente.  
   
--   **Operatori as e is**: quando si preme la BARRA SPAZIATRICE dopo aver digitato la parola chiave `as` o `is`, viene visualizzato automaticamente un elenco di completamento filtrato.  
+-   **Operatori as e is**: quando si preme la BARRA SPAZIATRICE dopo aver digitato la parola chiave `as` o `is` viene visualizzato automaticamente un elenco di completamento filtrato.  
   
--   Event: quando si digita la parola chiave `event`, l'elenco di completamento contiene solo tipi delegati.  
+-   **Eventi**: quando si digita la parola chiave `event` l'elenco di completamento contiene solo tipi delegati.  
   
--   Il parametro consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.  
+-   Il **parametro help** consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.  
   
 ## <a name="most-recently-used-members"></a>Membri utilizzati più di recente  
  IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. La volta successiva che si utilizza l'elenco dei membri, i membri utilizzati di recente vengono visualizzati nella parte superiore. La cronologia dei membri utilizzati più di recente viene cancellata tra ogni sessione nell'ambiente di sviluppo integrato.  
@@ -104,15 +84,13 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
 ## <a name="automatic-code-generation"></a>Generazione automatica di codice  
   
 ### <a name="add-using"></a>Aggiungi using  
- L'operazione di aggiunta della direttiva using di IntelliSense consente di restare concentrati sul codice che si sta scrivendo anziché passare a un'altra parte del codice.  
+ L'operazione **Aggiungi using** di IntelliSense aggiunge automaticamente la direttiva `using` richiesta al file di codice. Questa funzione consente di restare concentrati sul codice che si sta scrivendo anziché passare a un'altra parte del codice.  
   
- Per avviare l'operazione di aggiunta della direttiva using, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Quando, ad esempio, si crea un'applicazione console e quindi si aggiunge `XmlTextReader` al corpo del metodo `Main`, viene visualizzato uno smart tag al di sotto dell'ultimo carattere a destra di `XmlTextReader` perché costituisce un riferimento a un tipo che non può essere risolto.  
+ Per avviare l'operazione di aggiunta della direttiva using, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlTextReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare Aggiungi using con l'azione rapida. L'azione rapida viene visualizzata solo quando il cursore è posizionato sul tipo non associato.  
   
- ![Aggiungi using, immagine smart tag](../ide/media/addusesmart.gif "AddUseSmart")  
-  
- È quindi possibile richiamare l'operazione di aggiunta della direttiva using scegliendo tale comando dal sottomenu **Risolvi** del menu **IntelliSense** o dal menu di scelta rapida oppure richiamando l'operazione tramite lo smart tag. Lo smart tag viene visualizzato soltanto quando il cursore è posizionato in corrispondenza o in prossimità del tipo non associato.  
-  
- ![Aggiungi using, immagine smart tag espansa](../ide/media/addusesmartexp.gif "AddUseSmartExp")  
+ ![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")  
+
+ Fare clic sull'icona lampadina e quindi scegliere **using System.Xml;** per aggiungere automaticamente la direttiva using.  
   
 ### <a name="organize-usings"></a>Organizza using  
  L'opzione **Organizza using** consente di ordinare e rimuovere le dichiarazioni `using` e `extern` senza modificare il comportamento del codice sorgente. Nel tempo i file di origine possono diventare troppo grandi e difficili da leggere a causa di direttive `using` superflue e non organizzate. Le opzioni **Organizza using`using` compattano il codice sorgente rimuovendo le direttive**  inutilizzate e migliorano la leggibilità mettendole in ordine.  
@@ -120,37 +98,33 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
  Per visualizzare le opzioni disponibili nell'ambiente di sviluppo integrato (IDE) di Visual Studio, nel menu **Modifica** scegliere **IntelliSense** e quindi selezionare **Organizza using**. IDE fornisce le seguenti opzioni per l'organizzazione e la rimozione delle direttive `usings`:  
   
 ### <a name="implement-interface"></a>Implementa interfaccia  
- IntelliSense offre un'opzione che consente di implementare un'[interfaccia](/dotnet/csharp/language-reference/keywords/interface) mentre si usa l'editor di codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe viene visualizzato uno smart tag. Lo smart tag offre la possibilità di implementare automaticamente l'interfaccia, con denominazione esplicita o implicita. Con la denominazione esplicita, le dichiarazioni di metodo contengono il nome dell'interfaccia. Con la denominazione implicita, le dichiarazioni di metodo non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).  
+ IntelliSense offre un'opzione che consente di implementare un'[interfaccia](/dotnet/csharp/language-reference/keywords/interface) mentre si usa l'editor di codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe viene visualizzata la lampadina delle Azioni rapide. La lampadina offre la possibilità di implementare automaticamente l'interfaccia, usando la denominazione esplicita o implicita. Con la denominazione esplicita, le dichiarazioni di metodo contengono il nome dell'interfaccia. Con la denominazione implicita, le dichiarazioni di metodo non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).  
   
  Con Implementa interfaccia verrà generato il numero minimo di stub di metodo necessario per soddisfare l'interfaccia. Se una classe base implementa parti dell'interfaccia, tali stub non verranno rigenerati.  
   
 ### <a name="implement-abstract-base-class"></a>Implementare una classe di base astratta  
- IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe base astratta mentre si usa l'editor di codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Usando IntelliSense, una volta digitato il nome di una classe base astratta in una dichiarazione di classe viene visualizzato uno smart tag, che offre la possibilità di implementare automaticamente i metodi della classe base. Lo smart tag offre la possibilità di implementare automaticamente i metodi della classe base.  
+ IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe base astratta mentre si usa l'editor di codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Con IntelliSense, dopo aver digitato il nome di una classe di base astratta in una dichiarazione di classe viene visualizzata la lampadina delle Azioni rapide. La lampadina offre la possibilità di implementare automaticamente i metodi della classe di base.  
   
  Gli stub di metodo generati con la funzionalità di implementazione di una classe base astratta vengono modellati in base al frammento di codice definito nel file MethodStub.snippet. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).  
-  
-<a name="generate-from-usage></a>  
   
 ### <a name="generate-from-usage"></a>Generazione dall'utilizzo  
  La funzionalità di **generazione dall'utilizzo** consente di usare le classi e i membri prima di definirli. È possibile generare uno stub per qualsiasi classe, costruttore, metodo, proprietà, campo o enumerazione che si desidera utilizzare, ma che non è ancora stato definito. È possibile generare nuovi tipi e membri senza abbandonare la posizione corrente nel codice. Ciò riduce al minimo l'interruzione del flusso di lavoro.  
   
- Viene visualizzata una sottolineatura ondulata sotto ciascun identificatore non definito. Quando si posiziona il puntatore del mouse sull'identificatore, viene visualizzato un messaggio di errore in una descrizione comando.  
+ Viene visualizzata una sottolineatura ondulata rossa sotto ogni identificatore non definito. Quando si posiziona il puntatore del mouse sull'identificatore, viene visualizzato un messaggio di errore in una descrizione comando. Per visualizzare le opzioni appropriate, è possibile utilizzare le procedure seguenti:    
   
- Per visualizzare le opzioni appropriate, è possibile utilizzare le procedure seguenti:  
+-   Fare clic sull'identificatore non definito. Viene visualizzata la lampadina delle Azioni rapide sotto l'identificatore. Fare clic sulla lampadina.  
   
--   Fare clic sull'identificatore non definito. Viene visualizzata una sottolineatura breve sotto il carattere più a sinistra. Posizionare il puntatore del mouse su tale breve sottolineatura. Viene visualizzato uno smart tag (un'icona). Fare clic sullo smart tag.  
+-   Fare clic sull'identificatore non definito, quindi premere **CTRL+.** (CTRL + punto).  
   
--   Fare clic sull'identificatore non definito, quindi premere CTRL+. (punto).  
+-   Fare clic con il pulsante destro del mouse sull'identificatore non definito e quindi scegliere **Azioni rapide e refactoring**.  
   
--   Fare clic con il pulsante destro del mouse sull'identificatore non definito e quindi selezionare **Genera**.  
+Le opzioni visualizzate possono includere quanto segue:  
   
- Le opzioni visualizzate possono includere quanto segue:  
+-   **Genera proprietà**  
   
--   **Genera stub proprietà**  
+-   **Genera campo**  
   
--   **Genera stub campo**  
-  
--   **Genera stub di metodo**  
+-   **Genera metodo**  
   
 -   **Genera classe**  
   

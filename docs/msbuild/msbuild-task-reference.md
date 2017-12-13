@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,32 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 48f6019ef12e2637917a0b70fbc4eaf3e0eb6f20
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività riportate nell'elenco seguente sono incluse in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] è installato, sono disponibili attività aggiuntive usate per compilare progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [Visual C++ Tasks](../msbuild/msbuild-tasks-specific-to-visual-cpp.md) (Attività Visual C++).  

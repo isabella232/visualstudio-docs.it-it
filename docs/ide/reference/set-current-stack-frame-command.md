@@ -1,48 +1,48 @@
 ---
-title: "Comando Imposta stack frame corrente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.setcurrentstackframe"
-helpviewer_keywords: 
-  - "Debug.SetCurrentStackFrame (comando)"
-  - "Imposta stack frame corrente (comando)"
+title: Comando Imposta stack frame corrente | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.setcurrentstackframe
+helpviewer_keywords:
+- Set Current Stack Frame command
+- Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bcc24fbcf5089d60dade18cbcb08135951cbc6b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Comando Imposta stack frame corrente
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Consente di impostare uno specifico stack frame.  
+# <a name="set-current-stack-frame-command"></a>Comando Imposta stack frame corrente
+Consente di impostare uno stack frame specifico.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 Debug.SetCurrentStackFrame index  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
  `index`  
- Obbligatorio.  Seleziona uno stack frame in base al relativo indice.  
+ Obbligatorio. Seleziona uno stack frame in base all'indice.  
   
-## Esempio  
+## <a name="example"></a>Esempio  
   
 ```  
 >Debug.SetCurrentStackFrame 1  
 ```  
   
-## Vedere anche  
- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Finestra di comando](../../ide/reference/command-window.md)   
- [Casella Trova\/Comando](../../ide/find-command-box.md)   
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>Vedere anche  
+ [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
+ [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
+ [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio)

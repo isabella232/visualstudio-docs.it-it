@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c4ed4d6a90a91ac927feb3be76a06d8080267057
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 In questa sezione verrà illustrato come usare le funzionalità per l'integrazione e la produttività di Visual Studio Tools per Unity e come usare il debugger di Visual Studio per lo sviluppo di Unity.  
@@ -97,9 +97,9 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 |Apri Esplora progetti Unity|**ALT+MAIUSC+E**|**View.UnityProjectExplorer**|  
 |Accedi alla documentazione di Unity|**CTRL+ALT+M, CTRL+H**|**Help.UnityAPIReference**|  
 |Connetti al debugger Unity (lettore o editor)|***Non sono previsti valori predefiniti***|**Debug.AttachUnityDebugger**|  
-
- Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio](https://msdn.microsoft.com/en-us/library/5zwses53.aspx).  
-
+  
+ Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+  
 ## <a name="unity-debugging"></a>Debug di Unity  
  Visual Studio Tools per Unity consente di eseguire il debug di script dell'editor e di gioco del progetto Unity usando il potente debugger di Visual Studio.  
 

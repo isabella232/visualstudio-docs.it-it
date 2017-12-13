@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 409becfa400b7275da07fd8ac0035660f8b941eb
-ms.contentlocale: it-it
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizzazione e localizzazione di applicazioni
 Se si prevede di distribuire l'applicazione a un pubblico internazionale, è necessario tener presente molti aspetti durante le fasi di progettazione e sviluppo. Anche nel caso in cui non si pianifica una distribuzione internazionalizzata dell'applicazione, è meglio considerare questi aspetti in anticipo per semplificare eventuali modiche future nelle versioni dell'applicazione. I servizi integrati in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] rendono più semplice lo sviluppo di una singola applicazione che è possibile adattare a diverse impostazioni locali usando lo sviluppo gestito con Visual Studio.  
@@ -57,11 +41,11 @@ Se si prevede di distribuire l'applicazione a un pubblico internazionale, è nec
  Offre collegamenti a pagine sulla creazione di applicazioni che supportano più impostazioni cultura.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Globalizzazione dell'app (app di Windows Store sviluppate in JavaScript e HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
- Contiene argomenti su procedure e linee guida che consentono di globalizzare e localizzare l'app [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] compilata con JavaScript e HTML.  
+ [Globalizzazione dell'app (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
+ Contiene procedure e linee guida che consentono di globalizzare e localizzare un'app di Windows 8.1 creata con HTML.  
   
- [Globalizzazione dell'app (app di Windows Store sviluppate in C#/VB/C++ e XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
- Contiene argomenti su procedure e linee guida che consentono di globalizzare e localizzare l'app [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] compilata con XAML e Visual C#, Visual Basic o Visual C++.  
+ [Globalizzazione dell'app (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
+ Contiene procedure e linee guida che consentono di globalizzare e localizzare un'app di Windows 8.1 creata con XAML.  
   
  [Procedure consigliate per lo sviluppo di applicazioni internazionali](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Offre informazioni sulla programmazione per un pubblico internazionale.  

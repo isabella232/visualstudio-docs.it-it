@@ -4,39 +4,53 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b7545bb4eaf437223e79bccdb1ad2a082e37bd4a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
-ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
-ms.contentlocale: it-it
-ms.lasthandoff: 08/16/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro delle modifiche (Visual Studio Tools per Unity)
 Registro delle modifiche di Visual Studio Tools per Unity.  
+
+## <a name="3402"></a>3.4.0.2
+ Rilasciato in data 19.09.2017
+
+### <a name="new-features"></a>Nuove funzionalità  
+
+-   **Project Generation:**  
+
+    -   Supporto aggiunto per le unità di compilazione assembly.json.
+
+    -   La copia delle assembly dell'unità per la cartella del progetto è stata arrestata.
+    
+-   **Debugger:**  
+
+    -   Supporto aggiunto per l'impostazione dell'istruzione successiva con il nuovo runtime dell'unità.
+    
+    -   Supporto aggiunto per il tipo di decimale con il nuovo runtime dell'unità.
+    
+    -   Supporto aggiunto per le conversioni implicite/esplicite.
+    
+### <a name="bug-fixes"></a>Correzioni di bug  
+  
+-   **Valutazione:**  
+
+    -   Creazione della matrice di Fixed con dimensioni implicite.
+    
+    -   Il compilatore di Fixed ha generato degli elementi con variabili locali.
+   
+-   **Project Generation:**  
+   
+    -   Riferimento di Fixed a Microsoft.CSharp per il livello API 4.6.
 
 ## <a name="3302"></a>3.3.0.2
  Rilasciato in data 15.08.2017
@@ -1021,4 +1035,3 @@ Registro delle modifiche di Visual Studio Tools per Unity.
   
 ## <a name="1000---initial-release"></a>1.0.0.0 - Versione iniziale  
  Rilasciato in data 22.08.2012
-

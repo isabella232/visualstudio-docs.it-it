@@ -4,42 +4,25 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords:
-- vs.performance.wizard.intropage
+f1_keywords: vs.performance.wizard.intropage
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 45
+caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: a5eabb6a62e4b362d9355772621d27f574034ff1
-ms.contentlocale: it-it
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guida per principianti alla profilatura delle prestazioni
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare la scheda **Utilizzo CPU** della finestra Strumenti di diagnostica per ottenere i dati relativi alle prestazioni per l'applicazione. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
@@ -174,5 +157,7 @@ Usare la casella di ricerca per trovare un nodo che si sta cercando, quindi usar
 </div>
   
 ## <a name="see-also"></a>Vedere anche  
- [[Utilizzo memoria](../profiling/memory-usage.md) [Utilizzo CPU](../profiling/cpu-usage.md) [Profilatura in Visual Studio](../profiling/index.md) [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
-
+ [[Utilizzo memoria](../profiling/memory-usage.md)  
+ [Utilizzo CPU](../profiling/cpu-usage.md)  
+ [Profilatura in Visual Studio](../profiling/index.md)  
+ [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)

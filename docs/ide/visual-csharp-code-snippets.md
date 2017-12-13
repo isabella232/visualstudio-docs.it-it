@@ -10,7 +10,6 @@ ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
-- Code Snippet Inserter [J#]
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
@@ -18,11 +17,11 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
 I frammenti di codice sono piccole porzioni di codice pronte all'uso che si possono inserire rapidamente nel codice. Ad esempio, il frammento di codice `for` crea un ciclo `for` vuoto. Alcuni frammenti di codice sono frammenti racchiusi, che consentono di selezionare righe di codice e quindi scegliere un frammento di codice che incorpora le righe di codice selezionate. Ad esempio, quando si selezionano righe di codice e si attiva il frammento di codice `for`, viene creato un ciclo `for` con le righe di codice all'interno del blocco del ciclo. I frammenti di codice possono rendere la scrittura del codice dei programmi più veloce, più semplice e più affidabile.  

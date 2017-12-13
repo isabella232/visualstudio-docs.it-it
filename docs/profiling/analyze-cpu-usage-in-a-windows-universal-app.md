@@ -4,37 +4,20 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 4d7596a891fd0cf6eef6c99ac44e21a0392847ae
-ms.contentlocale: it-it
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 59669f0430760bb98dd0cb63e05f433cb3a1fe54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>Analizzare l'utilizzo della CPU in un'app di Windows universale (UWP)
 ![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -136,8 +119,8 @@ ms.lasthandoff: 06/30/2017
   
 |||  
 |-|-|  
-|**CPU totale (%)**|![Equazione % dati totali](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Percentuale dell'attività CPU dell'app nell'intervallo di tempo selezionato usata dalle chiamate alla funzione e dalle funzioni chiamate dalla funzione. Osservare che si tratta di un valore diverso da quello del grafico della sequenza temporale di **Utilizzo CPU** , che mette a confronto l'attività totale dell'app in un intervallo di tempo con la capacità CPU disponibile totale.|  
-|**CPU auto (%)**|![Equazione % auto](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Percentuale dell'attività CPU dell'app nell'intervallo di tempo selezionato usata dalle chiamate alla funzione, esclusa l'attività delle funzioni chiamate dalla funzione.|  
+|**CPU totale (%)**|![Equazione dei dati % totali](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Percentuale dell'attività CPU dell'app nell'intervallo di tempo selezionato usata dalle chiamate alla funzione e dalle funzioni chiamate dalla funzione. Osservare che si tratta di un valore diverso da quello del grafico della sequenza temporale di **Utilizzo CPU** , che mette a confronto l'attività totale dell'app in un intervallo di tempo con la capacità CPU disponibile totale.|  
+|**CPU auto (%)**|![Equazione auto %](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Percentuale dell'attività CPU dell'app nell'intervallo di tempo selezionato usata dalle chiamate alla funzione, esclusa l'attività delle funzioni chiamate dalla funzione.|  
 |**CPU totale (ms)**|Numero di millisecondi usati nelle chiamate alla funzione nell'intervallo di tempo selezionato e per le funzioni chiamate dalla funzione.|  
 |**CPU auto (ms)**|Numero di millisecondi usati nelle chiamate alla funzione nell'intervallo di tempo selezionato e per le funzioni chiamate dalla funzione.|  
 |**Modulo**|Nome del modulo contenente la funzione o numero dei moduli contenenti le funzioni in un nodo [Codice esterno].|  
@@ -329,4 +312,5 @@ namespace CpuUseDemo
   
 ```
 ## <a name="see-also"></a>Vedere anche
- [Profilatura in Visual Studio](../profiling/index.md) [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+ [Profilatura in Visual Studio](../profiling/index.md)  
+ [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)

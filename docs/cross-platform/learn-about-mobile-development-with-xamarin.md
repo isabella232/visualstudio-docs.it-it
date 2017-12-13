@@ -11,11 +11,11 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d203bf88f5af6e69b97404ef8da4548f646750b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 In questo argomento viene fatto riferimento a materiale introduttivo che fornisce informazioni sullo sviluppo di app per dispositivi mobili multipiattaforma con Xamarin. Se Visual Studio e Xamarin non sono ancora stati installati, avviare innanzitutto il processo [Setup and install](../cross-platform/setup-and-install.md) , quindi tornare qui per consultare queste risorse mentre i programmi di installazione sono in esecuzione.  
@@ -94,7 +94,7 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 2.  **Simulatore iOS di Apple.** Per altre informazioni, leggere l' [introduzione al simulatore iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere l' [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere l' [Emulatore Windows Phone per Windows Phone 8](../debugger/run-windows-phone-apps-in-the-emulator.md).  
   
 ##  <a name="components"></a> Deeper Dive: Xamarin Components  
  *10 minuti*  

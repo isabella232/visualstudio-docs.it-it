@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,33 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, reference
+helpviewer_keywords: MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f6c59188abc8cbb9909c12438bc58fa9301d8af9
-ms.openlocfilehash: 25d55f075a3586356cc291e2811520a9bbafadf0
-ms.contentlocale: it-it
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -88,8 +71,7 @@ ms.lasthandoff: 05/19/2017
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Panoramica di MSBuild  ](../msbuild/msbuild.md)
- Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e fornisce collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
+ [Panoramica di MSBuild ](../msbuild/msbuild.md) Presenta [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e indica collegamenti ad argomenti che illustrano come usarlo per compilare i progetti.  
   
  <xref:Microsoft.Build.Conversion>  
  Contiene informazioni di riferimento sullo spazio dei nomi Conversion  

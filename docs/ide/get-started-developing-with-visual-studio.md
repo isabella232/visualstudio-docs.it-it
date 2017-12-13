@@ -13,11 +13,11 @@ caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9d35ce547e216f632f56cf8bf445b115290486cc
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introduzione allo sviluppo con Visual Studio
 Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il prodotto, queste pagine sono utili per iniziare a scrivere codice.  
@@ -32,11 +32,11 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
 -   **[Creare le app per dispositivi mobili multipiattaforma in C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**: introduzione all'uso di Visual Studio e agli strumenti per Xamarin per creare app per dispositivi mobili che eseguano Android, iOS e la piattaforma UWP (Universal Windows Platform) da una base codice condivisa.  
 
-     Caricare un esempio: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (Portatile Tasky) (interfaccia utente nativa) o [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Esempio Xamarin Forms Todo) (Interfaccia utente condivisa Xamarin.Forms) &#124;   [Do a tutorial](https://msdn.microsoft.com/library/dn879698.aspx) (Eseguire un'esercitazione) &#124;                             [Browse the docs](https://msdn.microsoft.com/en-us/library/mt299001.aspx) (Esplorare i documenti) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01) (Guardare un video)  
+     Caricare un esempio: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (Portatile Tasky) (interfaccia utente nativa) o [Xamarin Forms Todo sample](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (Esempio Xamarin Forms Todo) (Interfaccia utente condivisa Xamarin.Forms) &#124;   [Do a tutorial](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) (Eseguire un'esercitazione) &#124;                             [Browse the docs](../cross-platform/visual-studio-and-xamarin.md) (Esplorare i documenti) &#124;                                  [Watch a video](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01) (Guardare un video)  
 
 -   **[Creare app e librerie multipiattaforma native in C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Visitare questa pagina per iniziare a creare app e librerie C++ per Android, iOS e la piattaforma UWP.  
 
-     [Load a sample](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) (Caricare un esempio) &#124;   [Do a tutorial](https://msdn.microsoft.com/en-us/library/dn707595.aspx) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/en-us/library/dn707591.aspx) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Series/ConnectOn-Demand/239) (Guardare un video)  
+     [Load a sample](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) (Caricare un esempio) &#124;   [Do a tutorial](../cross-platform/create-an-android-native-activity-app.md) (Eseguire un'esercitazione) &#124;                               [Browse the docs](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Series/ConnectOn-Demand/239) (Guardare un video)  
 
 -   **[Creare giochi con DirectX](https://msdn.microsoft.com/en-us/library/windows/desktop/ee663274.aspx)**: introduzione alla creazione di giochi per la piattaforma UWP (Universal Windows Platform) con DirectX.  
 
@@ -44,7 +44,7 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
 -   **[Creare giochi con Unity](../cross-platform/visual-studio-tools-for-unity.md)**: introduzione alla creazione di giochi multipiattaforma con il framework Unity.  
 
-     [Load a sample](http://unity3d.com/learn/resources/downloads) (Caricare un esempio) &#124;                     [Do a tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/en-us/library/dn940019.aspx) (Esplorare i documenti) &#124;     [Watch a video](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em) (Guardare un video)  
+     [Load a sample](http://unity3d.com/learn/resources/downloads) (Caricare un esempio) &#124;                     [Do a tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) (Eseguire un'esercitazione) &#124;                               [Browse the docs](../cross-platform/visual-studio-tools-for-unity.md) (Esplorare i documenti) &#124;     [Watch a video](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em) (Guardare un video)  
 
 -   **[Creare app per la piattaforma UWP](https://dev.windows.com/en-us/windows-apps)** : iniziare a creare app per la piattaforma UWP (Universal Windows Platform): Xbox, PC, tablet, Windows Phone, Surface Hub e Internet delle cose.  
 
@@ -52,7 +52,7 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
 -   **[Creare applicazioni desktop](https://dev.windows.com/en-us/desktop)** : visitare questa pagina per iniziare a creare applicazioni desktop tradizionali eseguite in PC Windows.  
 
-     [Load a sample](https://github.com/microsoft/windows-classic-samples) (Caricare un esempio) &#124;                     [Do a tutorial](https://msdn.microsoft.com/en-us/library/dd492171.aspx) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://dev.windows.com/en-us/desktop) (Esplorare i documenti)  
+     [Load a sample](https://github.com/microsoft/windows-classic-samples) (Caricare un esempio) &#124;                     [Do a tutorial](getting-started-with-visual-csharp-and-visual-basic.md) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://dev.windows.com/en-us/desktop) (Esplorare i documenti)  
 
 -   **[Creare applicazioni Office](https://msdn.microsoft.com/en-us/library/fp161347.aspx)** : iniziare a creare applicazioni Office che estendono e personalizzano Word, Excel, Outlook e PowerPoint con i servizi di Office 365.  
 
