@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, msbuild properties
+helpviewer_keywords: msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-properties-and-items"></a>Confronto di proprietà ed elementi
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.  
@@ -90,9 +74,9 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 ## <a name="properties-and-items-in-tasks"></a>Proprietà ed elementi in attività  
  Le proprietà e gli elementi vengono usati come input e output nelle attività MSBuild. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  
   
- Le proprietà vengono passate alle attività sotto forma di attributi. All'interno dell'attività una proprietà MSBuild viene rappresentata da un tipo di proprietà il cui valore può essere convertito in e da una stringa. I tipi di proprietà supportati sono `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` e qualsiasi altro tipo che <xref:System.Convert.ChangeType%2A> può gestire.  
+ Le proprietà vengono passate alle attività sotto forma di attributi. All'interno dell'attività una proprietà MSBuild viene rappresentata da un tipo di proprietà il cui valore può essere convertito in e da una stringa. I tipi di proprietà supportati sono `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` e qualsiasi altro tipo che <xref:System.Convert.ChangeType%2A> è in grado di gestire.  
   
- Gli elementi vengono passati all'attività sotto forma di oggetti <xref:Microsoft.Build.Framework.ITaskItem>. All'interno dell'attività <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> rappresenta il valore dell'elemento e <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> ne recupera i metadati.  
+ Gli elementi vengono passati alle attività come oggetti <xref:Microsoft.Build.Framework.ITaskItem>. All'interno dell'attività, <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> rappresenta il valore dell'elemento e <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> recupera i relativi metadati.  
   
  È possibile passare l'elenco di elementi di un tipo di elemento sotto forma di matrice di oggetti `ITaskItem`. A partire da .NET Framework 3.5, gli elementi possono essere rimossi da un elenco di elementi in una destinazione usando l'attributo `Remove`. Poiché gli elementi possono essere rimossi da un elenco di elementi, è possibile che un tipo di elemento non contenta elementi. Se un elenco di elementi viene passato a un'attività, il codice dell'attività deve verificare questa possibilità.  
   

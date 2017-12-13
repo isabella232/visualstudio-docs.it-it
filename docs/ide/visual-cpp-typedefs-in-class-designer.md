@@ -4,38 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
-helpviewer_keywords:
-- Class Designer [Visual Studio], typedefs
+helpviewer_keywords: Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: efaec77b5d3a2fb52859ff08fe31aa6f35e4263b
-
+ms.openlocfilehash: d6df83d459165b4814fcac129bc36b64d821efb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedef di Visual C++ in Progettazione classi
 Le istruzioni typedef creano uno o più livelli di riferimento indiretto tra un nome e il relativo tipo sottostante. Progettazione classi supporta i tipi typedef di C++, che vengono dichiarati con la parola chiave `typedef`, ad esempio:  
@@ -64,7 +49,7 @@ typedef class coord
 };  
 ```  
   
- Per altre informazioni sull'uso del tipo `typedef`, vedere [(NOTINBUILD)Identificatore typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ Per altre informazioni sull'uso del tipo `typedef`, vedere [Identificatore typedef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx).  
   
  Una forma di typedef C++ ha la forma del tipo specificato nell'istruzione typedef. Ad esempio, se l'origine dichiara `typedef class`, la forma ha gli angoli arrotondati e l'etichetta **Class**. Per `typedef struct` la forma ha gli angoli quadrati e l'etichetta **Struct**.  
   
@@ -216,9 +201,4 @@ class A {
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [(NOTINBUILD)Identificatore typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
+ [Identificatore typedef](https://msdn.microsoft.com/en-us/library/05w82thz.aspx)

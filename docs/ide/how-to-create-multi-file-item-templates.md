@@ -1,42 +1,43 @@
 ---
-title: "Procedura: creare modelli di elementi a pi&#249; file | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "modelli di elementi, creazione di modelli di elementi a più file"
-  - "modelli di elementi a più file"
-  - "modelli di Visual Studio, creazione di modelli di elementi a più file"
+title: "Procedura: Creare modelli di elementi a più file | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, creating multi-file item templates
+- multi-file item templates
+- item templates, creating multi-file item templates
 ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e3e1f6c6e62494f040e2f52180c5588688f460db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Procedura: creare modelli di elementi a pi&#249; file
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-I modelli di elemento possono specificare un solo elemento, ma talvolta l'elemento è composto da più file.  Ad esempio, un modello di elemento Windows Form per Visual Basic richiede i tre file seguenti:  
+# <a name="how-to-create-multi-file-item-templates"></a>Procedura: creare modelli di elementi a più file
+Sebbene i modelli di elementi possano specificare un solo elemento, in alcuni casi l'elemento è costituito da più file. Ad esempio, un modello di elemento di Windows Forms per Visual Basic richiede i tre file seguenti:  
   
--   Un file .vb che contiene il codice per il form.  
+-   Un file con estensione vb che contiene il codice per il modulo.  
   
--   Un file designer.vb che contiene le informazioni di progettazione per il form.  
+-   Un file designer.vb che contiene le informazioni della finestra di progettazione del modulo.  
   
--   Un file resx.vb che contiene le risorse incorporate per il form.  
+-   Un file con estensione resx che contiene le risorse incorporate del modulo.  
   
- Nei modelli di elemento a più file è necessario utilizzare alcuni parametri per garantire che verranno adottate le estensioni di file corrette quando l'elemento verrà creato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Se il modello di elemento viene creato tramite l'**Esportazione guidata modelli**, questi parametri vengono generati automaticamente e non sono necessarie ulteriori operazioni di modifica.  Nella procedura riportata di seguito viene illustrato come utilizzare i parametri per garantire la creazione delle estensioni di file corrette.  
+ Per i modelli di elementi a più file è necessario specificare i parametri per assicurarsi che vengano usate le estensioni dei nomi di file corrette quando l'elemento viene creato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se si crea un modello di elemento usando l'**Esportazione guidata modelli**, questi parametri vengono generati automaticamente e non è richiesta alcuna ulteriore modifica. La procedura seguente descrive come usare i parametri per assicurarsi che vengano create le estensioni dei nomi di file corrette.  
   
-### Per creare manualmente un modello di elemento a più file  
+### <a name="to-manually-create-a-multi-file-item-template"></a>Per creare manualmente un modello di elemento a più file  
   
-1.  Creare il modello di elemento seguendo la stessa procedura per la creazione di un modello di elemento con un unico file.  Per ulteriori informazioni, vedere [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md).  
+1.  Creare il modello di elemento allo stesso modo in cui si crea un modello di elemento a file singolo. Per altre informazioni, vedere [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md).  
   
-2.  Aggiungere gli attributi `TargetFileName` a ogni elemento `ProjectItem`.  Impostare i valori degli attributi `TargetFileName` su $fileinputname$.*FileExtension*, dove *FileExtension* è l'estensione del file che verrà incluso nel modello.  Di seguito è riportato un esempio:  
+2.  Aggiungere gli attributi `TargetFileName` a ogni elemento `ProjectItem`. Impostare i valori degli attributi `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -50,14 +51,14 @@ I modelli di elemento possono specificare un solo elemento, ma talvolta l'elemen
     </ProjectItem>  
     ```  
   
-     Quando a un progetto viene aggiunto un elemento derivato da questo modello, i nomi dei file verranno creati in base al nome specificato dall'utente nella finestra di dialogo **Aggiungi nuovo elemento**.  
+     Quando un elemento derivato da questo modello viene aggiunto a un progetto, i nomi dei file saranno basati sul nome immesso dall'utente nella finestra di dialogo **Aggiungi nuovo elemento**.  
   
-3.  Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a**, quindi fare clic su **Cartella compressa**.  I file selezionati verranno compressi in un file .zip.  
+3.  Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi fare clic su **Cartella compressa**. I file selezionati verranno compressi in un file ZIP.  
   
-4.  Inserire il file con estensione zip nel percorso dei modelli di elemento dell'utente.  Per impostazione predefinita, è \\My Documents\\Visual Studio *versione*\\Templates\\ItemTemplates \\.  Per ulteriori informazioni, vedere [Procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4.  Inserire il file con estensione zip nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ItemTemplates\\. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
-## Esempio  
- Nell'esempio riportato di seguito viene mostrato un modello di Windows Form di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Quando viene creato un elemento basato su questo modello, i nomi dei tre file creati corrisponderanno ai nomi specificati nella finestra di dialogo **Aggiungi nuovo elemento**.  
+## <a name="example"></a>Esempio  
+ L'esempio seguente illustra un modello di Windows Forms di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Quando viene creato un elemento basato su questo modello, i nomi dei tre file creati corrisponderanno al nome immesso nella finestra di dialogo **Aggiungi nuovo elemento**.  
   
 ```  
 <VSTemplate Version="2.0.0" Type="Item"  
@@ -82,8 +83,8 @@ I modelli di elemento possono specificare un solo elemento, ma talvolta l'elemen
 </VSTemplate>  
 ```  
   
-## Vedere anche  
- [Creazione di un progetto e di modelli di elemento personalizzati](../ide/creating-project-and-item-templates.md)   
- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)   
- [Parametri di template](../ide/template-parameters.md)   
- [Procedura: sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md)
+## <a name="see-also"></a>Vedere anche  
+ [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
+ [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)   
+ [Parametri di modello](../ide/template-parameters.md)   
+ [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md)

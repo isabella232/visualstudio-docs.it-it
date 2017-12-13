@@ -1,56 +1,57 @@
 ---
-title: "How to: Implement an Interface (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "interfaces [Visual Studio], implementing"
-  - "interfaces [Visual Studio]"
+title: 'Procedura: Implementare un''interfaccia (Progettazione classi) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- interfaces [Visual Studio], implementing
+- interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f77a079a32cadb4a994e8874df2e9ae97dd93bf0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Implement an Interface (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.  Verrà generata un'implementazione dell'interfaccia e verrà visualizzata la relazione tra l'interfaccia e la classe come relazione di ereditarietà.  È possibile implementare un'interfaccia disegnando una linea di ereditarietà tra l'interfaccia e la classe oppure trascinando l'interfaccia da Visualizzazione classi.  
+# <a name="how-to-implement-an-interface-class-designer"></a>Procedura: implementare un'interfaccia (Progettazione classi)
+In Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia. Progettazione classi genera un'implementazione dell'interfaccia e visualizza la relazione tra l'interfaccia e la classe come relazione di ereditarietà. È possibile implementare un'interfaccia tracciando una linea di ereditarietà tra l'interfaccia e la classe oppure trascinando l'interfaccia dalla visualizzazione classi.  
   
 > [!TIP]
->  Per la creazione di interfacce è possibile seguire la stessa procedura utilizzata per la creazione di altri tipi.  Se l'interfaccia esiste ma non appare nel diagramma classi, è necessario innanzitutto visualizzarla.  Per ulteriori informazioni, vedere [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md) e [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md).  
+>  È possibile creare le interfacce allo stesso modo in cui vengono creati altri tipi di elemento. Se l'interfaccia esiste ma non viene visualizzata nel diagramma classi, è necessario innanzitutto visualizzarla. Per altre informazioni, vedere [Procedura: Creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md) e [Procedura: Visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md).  
   
-### Per implementare un'interfaccia disegnando una linea di ereditarietà  
+### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Per implementare un'interfaccia tracciando una linea di ereditarietà  
   
-1.  Nel diagramma classi visualizzare l'interfaccia e la classe che la implementerà.  
+1.  Nel diagramma classi visualizzare l'interfaccia e la classe che implementa l'interfaccia.  
   
-2.  Disegnare una linea di ereditarietà dalla classe e dall'interfaccia.  
+2.  Tracciare una linea di ereditarietà dalla classe e all'interfaccia.  
   
-     Alla classe verrà collegato un simbolo, mentre un'etichetta con il nome dell'interfaccia identificherà la relazione di ereditarietà.  In Visual Studio vengono generati stub per tutti i membri di interfaccia.  
+     Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia.  
   
- Per ulteriori informazioni, vedere [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi (Progettazione classi)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
-### Per implementare un'interfaccia dalla finestra Visualizzazione classi  
+### <a name="to-implement-an-interface-from-the-class-view-window"></a>Per implementare un'interfaccia dalla finestra Visualizzazione classi  
   
-1.  Nel diagramma classi visualizzare la classe da utilizzare per l'implementazione dell'interfaccia.  
+1.  Nel diagramma classi visualizzare la classe che deve implementare l'interfaccia.  
   
 2.  Aprire Visualizzazione classi e individuare l'interfaccia.  
   
     > [!TIP]
-    >  Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**.  Per ulteriori informazioni su Visualizzazione classi, vedere [Viewing Classes and Their Members](http://msdn.microsoft.com/it-it/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    >  Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**. Per altre informazioni sulla visualizzazione classi, vedere [Viewing Classes and Their Members](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333) (Visualizzazione delle classi e dei relativi membri).  
   
-3.  Trascinare il nodo di interfaccia sulla forma della classe nel diagramma.  
+3.  Trascinare il nodo di interfaccia nella forma della classe nel diagramma.  
   
-     Alla classe verrà collegato un simbolo, mentre un'etichetta con il nome dell'interfaccia identificherà la relazione di ereditarietà.  In Visual Studio vengono generati stub per tutti i membri di interfaccia. A questo punto, l'interfaccia risulterà implementata.  
+     Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia. A questo punto, l'interfaccia è stata implementata.  
   
-## Vedere anche  
- [How to: Create Types by using Class Designer](../ide/how-to-create-types-by-using-class-designer.md)   
- [How to: View Existing Types \(Class Designer\)](../Topic/How%20to:%20View%20Existing%20Types%20\(Class%20Designer\).md)   
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)
+## <a name="see-also"></a>Vedere anche  
+ [Procedura: Creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md)   
+ [Procedura: Visualizzare i tipi esistenti (Progettazione classi)](../ide/how-to-view-existing-types-class-designer.md)   
+ [How to: Create Inheritance Between Types (Class Designer)](../ide/how-to-create-inheritance-between-types-class-designer.md)  (Procedura: Creare l'ereditarietà tra tipi (Progettazione classi))  
+ [Refactoring di classi e tipi (Progettazione classi)](../ide/refactoring-classes-and-types-class-designer.md)

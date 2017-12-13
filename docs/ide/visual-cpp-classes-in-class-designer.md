@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.inheritancelinelabel
-helpviewer_keywords:
-- Class Designer [Visual Studio], classes
+f1_keywords: vs.classdesigner.inheritancelinelabel
+helpviewer_keywords: Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 02cd1cabf8cf296130ace9a3dcf37a237805dfe9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: b4ba110a67604a24517cac90c4645f118a33e722
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
 Progettazione classi supporta le classi C++ e visualizza classi C++ native in modo analogo alle forme classe Visual Basic e Visual C#, con la differenza che le classi C++ possono avere relazioni di ereditarietà multipla. È possibile espandere la forma classe in modo da visualizzare più campi e metodi nella classe o comprimerla per risparmiare spazio.  
@@ -69,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere Visualizzazione classi, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.  
   
- Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](/cpp/cpp/multiple-base-classes).  
+ Per altre informazioni sulle ereditarietà da classi multiple, vedere [Ereditarietà multipla](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) e [Più classi base](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Classi astratte  
  Progettazione classi supporta le classi astratte, note anche come "classi di base astratte". Si tratta di classi per le quali non viene mai creata un'istanza, ma da cui è possibile derivare altre classi. Usando un esempio citato in "Ereditarietà multipla" più indietro in questo documento, è possibile creare un'istanza della classe `Bird` come singoli oggetti, come illustrato di seguito:  
@@ -188,6 +171,6 @@ typedef struct
  [Uso del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [Classi e struct](/cpp/cpp/classes-and-structs-cpp)   
  [Tipi di classe anonimi](/cpp/cpp/anonymous-class-types)   
- [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Ereditarietà multipla](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
  [Più classi base](/cpp/cpp/multiple-base-classes)   
  [Modelli](/cpp/cpp/templates-cpp)

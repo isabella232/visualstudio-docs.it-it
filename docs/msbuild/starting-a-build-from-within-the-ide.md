@@ -1,36 +1,36 @@
 ---
-title: "Starting a Build from within the IDE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "build"
+title: Avvio di una compilazione all'interno dell'IDE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 081bcfd01d8c28959bf0dd4d038e91895e9c3983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Starting a Build from within the IDE
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-I sistemi di progetto personalizzati devono utilizzare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> per avviare le compilazioni.  In questo argomento vengono descritti i motivi e viene delineata la procedura.  
+# <a name="starting-a-build-from-within-the-ide"></a>Avvio di una compilazione all'interno dell'IDE
+I sistemi di progetto personalizzati devono usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> per avviare le compilazioni. In questo argomento vengono descritti i motivi e la procedura da seguire.  
   
-## Thread e compilazioni paralleli  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente compilazioni parallele che richiedono una mediazione per l'accesso alle risorse comuni.  I sistemi di progetto consentono di eseguire le compilazioni in modo asincrono, ma tali sistemi non devono chiamare funzioni di compilazione dall'interno di callback forniti al gestore di compilazione.  
+## <a name="parallel-builds-and-threads"></a>Compilazioni parallele e thread  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente le compilazioni parallele per cui è richiesta la mediazione per l'accesso alle risorse comuni. I sistemi di progetto sono in grado di eseguire le compilazioni in modo asincrono, ma non devono chiamare le funzioni di compilazione dall'interno delle richiamate per il gestore compilazioni.  
   
- Se il sistema di progetto modifica le variabili di ambiente, deve impostare il valore NodeAffinity della compilazione su OutOfProc.  Questo vuol dire che non è possibile utilizzare oggetti host, poiché richiedono il nodo in\-process.  
+ Se il sistema di progetto modifica le variabili di ambiente, è necessario impostare il valore NodeAffinity della compilazione su OutOfProc. Ciò significa che non è possibile usare oggetti host, poiché richiedono il nodo in-process.  
   
-## Utilizzo di IVSBuildManagerAccessor  
- Nel codice seguente viene delineato un metodo che un sistema di progetto può utilizzare per avviare una compilazione:  
+## <a name="using-ivsbuildmanageraccessor"></a>Uso di IVSBuildManagerAccessor  
+ Il codice riportato di seguito illustra un metodo che può essere usato da un sistema di progetto per avviare una compilazione:  
   
-```  
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

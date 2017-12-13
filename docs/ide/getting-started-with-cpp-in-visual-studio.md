@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
-ms.contentlocale: it-it
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 48f2bb4e61ca6a4f9a9464a6b67a3218b418c8ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Guida introduttiva a C++ in Visual Studio
 Completando questa procedura dettagliata è possibile acquisire familiarità con molti strumenti e molte finestre di dialogo utili per lo sviluppo di applicazioni con Visual Studio. Durante la procedura gli utenti potranno creare una semplice applicazione in stile "Hello, World", acquisendo al contempo altre informazioni su come lavorare in un ambiente di sviluppo integrato (IDE, Integrated Development Environment).  
@@ -70,7 +53,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
   
 2.  Nella categoria **Visual C++** scegliere il modello **Progetto console Win32** , quindi denominare il progetto `GreetingsConsoleApp`.  
   
-     ![Modello Progetto console Win32](../ide/media/c--ide_newprojectdlg.png "C++IDE_NewProjectDlg")  
+     ![Modello di applicazione console Win32](../ide/media/c--ide_newprojectdlg.png "C++IDE_NewProjectDlg")  
      La finestra di dialogo potrebbe includere opzioni diverse, a seconda di ciò che è stato installato. Se non vengono visualizzati modelli di progetto Visual C++, è necessario tornare al programma di installazione e installare un carico di lavoro di C++.
   
 3.  Quando viene visualizzata la Creazione guidata applicazione Win32, scegliere **Fine** .  

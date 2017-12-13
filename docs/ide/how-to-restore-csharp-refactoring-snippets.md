@@ -1,46 +1,20 @@
 ---
 redirect_url: /visualstudio/csharp-ide/refactoring-csharp
-title: 'Procedura: Ripristinare il refactoring di frammenti C# | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- unsafe expansion
-- expansions, unsafe
-ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 87ecb3149443bc90c2398b67158df35b193bcfe1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cb4e45847008d99aa17b5ce3dde83da036a53dbb
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/07/2017
+---
+title: "Procedura: Ripristinare refactoring di frammenti C# | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-ide-general" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "espansione non protetta"
+  - "espansioni, non protette" ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d caps.latest.revision: 20 author: "gewarren" ms.author: "gewarren" manager: ghogen
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Procedura: ripristinare refactoring di frammenti C#
 Le operazioni di refactoring di C# si basano sui frammenti di codice disponibili nella directory seguente:  
   
- *Directory di installazione*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID linguaggio*\Refactoring  
+ *Directory di installazione*\Microsoft Visual Studio 15.0\VC#\Snippets\\*ID linguaggio*\Refactoring  
   
  Se la directory Refactoring o i file in questa directory vengono eliminati o danneggiati, le operazioni di refactoring di C# potrebbero non funzionare nell'IDE. Le procedure seguenti consentono di ripristinare i frammenti di codice per il refactoring di C#.   
   
@@ -64,11 +38,11 @@ Le operazioni di refactoring di C# si basano sui frammenti di codice disponibili
   
 5.  Individuare la cartella **Refactoring**, il cui percorso di directory è:  
   
-     *Directory di installazione*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID linguaggio*\Refactoring  
+     *Directory di installazione*\Microsoft Visual Studio 15.0\VC#\Snippets\\*ID linguaggio*\Refactoring  
   
      Per un'installazione predefinita, il percorso effettivo è simile al seguente:  
   
-     C:\Programmi\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
+     C:\Programmi\Microsoft Visual Studio 15.0\VC#\Snippets\1033\Refactoring.  
   
 6.  Fare clic su **Apri** nella finestra di dialogo **Directory dei frammenti di codice** e quindi su **OK** in Gestione frammenti di codice.  
   

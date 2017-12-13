@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: ac6d4b23723842266dbdad13dcd69042357af9ab
-ms.contentlocale: it-it
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="securing-applications"></a>Protezione delle applicazioni
 Sebbene la maggior parte delle applicazioni presentino problematiche di sicurezza comuni, ogni dominio applicazione ha le proprie problematiche di sicurezza.  
@@ -46,7 +30,7 @@ Sebbene la maggior parte delle applicazioni presentino problematiche di sicurezz
  [Procedure di sicurezza consigliate](/cpp/top/security-best-practices-for-cpp)  
  Vengono fornite informazioni sulle funzionalità di sicurezza disponibili in Visual C++.  
   
- [Sicurezza e programmazione (C# e Visual Basic)](http://msdn.microsoft.com/en-us/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [Sicurezza e programmazione (C# e Visual Basic)](https://msdn.microsoft.com/en-us/library/ms233782(v=vs.100).aspx)  
  Vengono fornite informazioni sui tre principali problemi di sicurezza per gli sviluppatori Visual Basic e C#: privilegi, applicazioni Web e installazione di Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Sicurezza delle applicazioni mobili  

@@ -1,53 +1,54 @@
 ---
-title: "Personalizzazione di modelli di progetto e modelli di elementi | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "personalizzazione di modelli di Visual Studio"
-  - "modelli di Visual Studio, personalizzazione"
+title: Personalizzazione di modelli di progetti e di elementi | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- customizing Visual Studio templates
+- Visual Studio templates, customizing
 ms.assetid: d7344a0a-d93f-4b69-bbc4-0c2d67ef272b
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3170c28527aa4ecfe335a946624ad95489b75280
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Personalizzazione di modelli di progetto e modelli di elementi
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dopo aver creato il progetto e modelli di elemento, è possibile la capacità ulteriormente di personalizzarli per soddisfare le esigenze.  
+# <a name="customizing-project-and-item-templates"></a>Personalizzazione di modelli di progetto e modelli di elementi
+Dopo aver creato i modelli di progetti ed elementi è possibile personalizzarli ulteriormente in modo da soddisfare le proprie esigenze.  
   
  Ad esempio, è possibile effettuare le seguenti attività:  
   
 -   Modificare ed esportare un modello esistente come modello personalizzato.  
   
-     Per ulteriori informazioni, vedere [Procedura: aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md).  
+     Per altre informazioni, vedere [Procedura: Aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md).  
   
--   passare i parametri personalizzati in un modello ai valori esistenti di sostituzione.  
+-   Passare parametri personalizzati in un modello per sostituire i valori esistenti.  
   
-     Per ulteriori informazioni, vedere [Procedura: sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).  
+     Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).  
   
--   Personalizzare le procedure guidate per la creazione di progetti dai modelli.  
+-   Personalizzare le procedure guidate che consentono di creare progetti da modelli.  
   
-     Per ulteriori informazioni, vedere [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Per altre informazioni, vedere [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
-## Sezioni correlate  
- [Creazione di un progetto e di modelli di elemento personalizzati](../ide/creating-project-and-item-templates.md)  
+## <a name="related-sections"></a>Sezioni correlate  
+ [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)  
   
- [Procedura: risolvere i problemi relativi ai modelli](../ide/how-to-troubleshoot-templates.md)  
+ [Procedura: Risolvere i problemi relativi ai modelli](../ide/how-to-troubleshoot-templates.md)  
   
- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)  
+ [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)  
   
- [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)  
+ [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)  
   
- [Procedura: creare starter kit](../ide/how-to-create-starter-kits.md)  
+ [Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md)  
   
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
+ [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
   
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

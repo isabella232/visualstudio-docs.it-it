@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 06/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
-ms.openlocfilehash: 86f7fef0365a47e8ea88bc3fc46cb0016efd4628
-ms.contentlocale: it-it
-ms.lasthandoff: 06/15/2017
-
+ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-your-build"></a>Personalizzare la compilazione
 Nelle versioni di MS Build precedenti alla versione 15, per specificare una nuova proprietà personalizzata per i progetti nella soluzione, è necessario aggiungere manualmente un riferimento a tale proprietà per ogni file di progetto della soluzione. Oppure, è necessario definire la proprietà in un file PROPS e quindi importare in modo esplicito il file PROPS in ogni progetto della soluzione, tra le altre cose.
@@ -76,7 +60,39 @@ Directory.Build.props viene importato molto presto in Microsoft.Common.props, qu
 
 Directory.Build.targets viene importato da Microsoft.Common.targets dopo l'importazione dei file TARGET dai pacchetti NuGet. Può quindi essere usato per eseguire l'override di proprietà e destinazioni definite nella maggior parte della logica di compilazione, ma in alcuni casi può essere necessario eseguire personalizzazioni all'interno del file di progetto dopo l'importazione finale.
 
+## <a name="use-case-multi-level-merging"></a>Caso d'uso: unione a più livelli
+
+Si supponga di avere questa struttura della soluzione standard:
+
+````
+\
+  MySolution.sln
+  Directory.Build.props     (1)
+  \src
+    Directory.Build.props   (2-src)
+    \Project1
+    \Project2
+  \test
+    Directory.Build.props   (2-test)
+    \Project1Tests
+    \Project2Tests
+````
+
+Potrebbe essere preferibile usare proprietà comuni per tutti i progetti `(1)`, proprietà comuni per i progetti `src` `(2-src)` e proprietà comuni per i progetti `test` `(2-test)`.
+
+Per consentire a MSBuild di unire correttamente i file "interni" (`2-src` e `2-test`) e il file "esterno" (`1`), è necessario tenere presente che quando MSBuild trova un file `Directory.Build.props`, interrompe l'analisi. Per continuare l'analisi e completare l'unione con il file esterno, inserire il file in entrambi i file interni:
+
+`<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
+
+L'approccio generale di MSBuild può essere riepilogato come segue:
+
+- Per ogni progetto MSBuild trova il primo `Directory.Build.props` procedendo verso l'alto nella struttura della soluzione, lo unisce ai valori predefiniti e interrompe l'analisi
+- Se si vogliono rilevare e unire più livelli, usare [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (illustrato in precedenza) per importare il file "esterno" dal file "interno"
+- Se il file "esterno" non importa a sua volta un elemento situato a un livello superiore, l'analisi si interrompe qui
+- Per controllare il processo di analisi/unione, usare `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`
+
+O più semplicemente: il primo `Directory.Build.props` che non esegue alcuna importazione è il punto in cui MSBuild si arresta.
+
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
-

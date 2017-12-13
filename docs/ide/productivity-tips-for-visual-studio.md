@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
-ms.contentlocale: it-it
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: f4778bde9903ce3e264f0209c147eedc227b7d8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il debug del codice in Visual Studio in modo più rapido ed efficiente. Per altre informazioni sui tasti di scelta rapida comuni, vedere [Tips and Tricks](../ide/tips-and-tricks-for-visual-studio.md) (Suggerimenti). Per un elenco più completo vedere [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) (Identificazione e personalizzazione dei tasti di scelta rapida) e [Default Keyboard Shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md) (Tasti di scelta rapida predefiniti).  
@@ -91,23 +75,11 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
   
      Per inserire un frammento di codice, scegliere **Modifica**, **IntelliSense**, **Inserisci frammento di codice** nella barra dei menu o aprire il menu di scelta rapida in un file e scegliere **Inserisci frammento di codice**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).  
   
--   **Correzione di errori di codice inline**. Gli smart tag vengono visualizzati come caselle blu o rosse sotto una riga di codice. È possibile visualizzare le opzioni degli smart tag puntando a una delle caselle o posizionando il cursore nella riga di codice e scegliendo i tasti CTRL + . (punto).  
-  
-     Nelle caselle blu vengono forniti suggerimenti per risolvere gli errori nel codice.  
-  
-     Figura 1: errori di smart tag  
-  
-     ![Suggerimenti Smart Tag errori](../ide/media/productivity_bluesmarttags.png "Productivity_BlueSmartTags")  
-  
-     Nelle caselle rosse vengono forniti suggerimenti per effettuare il refactoring del codice.  
-  
-     Figura 2: refactoring degli smart tag  
-  
-     ![Suggerimenti Smart Tag errori](../ide/media/productivity_redsmarttags.png "Productivity_BlueSmartTags")  
-  
+-   **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando l'icona Lampadina ![Icona Lampadina piccola](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o premendo **ALT+INVIO** o **CTRL+.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).  
+
 -   **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.  
   
-     Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere ALT+F12 o aprire il menu di scelta rapida per l'elemento e scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.  
+     Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere **ALT+F12** o aprire il menu di scelta rapida per l'elemento e scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.  
   
 ##  <a name="BKMK_Navigating"></a> Spostamento all'interno del codice  
  È possibile utilizzare varie tecniche per trovare e spostarsi in punti specifici del codice più rapidamente.  

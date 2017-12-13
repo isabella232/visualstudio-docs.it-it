@@ -4,47 +4,29 @@ ms.custom:
 ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Visual Studio, getting started
+helpviewer_keywords: Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
-caps.latest.revision: 65
+caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b2952b9233c7c4571ad4509cc7c4beda7ee2338
-ms.contentlocale: it-it
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
+# <a name="get-started-developing-with-visual-studio"></a>Introduzione allo sviluppo con Visual Studio
 Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il prodotto, queste pagine sono utili per iniziare a scrivere codice.  
 
 -   **[Creare app Web](https://www.visualstudio.com/features/modern-web-tooling-vs):** strumenti per creare e distribuire applicazioni Web moderne.  
 
      [Do a tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://docs.asp.net/) (Esplorare i documenti) &#124;                                   [Watch a video](http://www.asp.net/vnext) (Guardare un video)  
 
--   **[Creare app per dispositivi mobili multipiattaforma in HTML/JavaScript (Apache Cordova)](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)**: Apache Cordova è un ambiente multipiattaforma open source basato su HTML/CSS/JavaScript.  Il codice JavaScript viene eseguito in un wrapper che è destinato a una piattaforma specifica e consente l'accesso a tutte le funzionalità hardware del dispositivo. È possibile sviluppare app per Apple Store, lo store Android e Windows Store.  
+-   **[Creare app per dispositivi mobili multipiattaforma in HTML/JavaScript (Apache Cordova)](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)**: Apache Cordova è un ambiente multipiattaforma open source basato su HTML/CSS/JavaScript. Il codice Javascript viene eseguito in un wrapper che è destinato a una piattaforma specifica e consente l'accesso a tutte le funzionalità hardware del dispositivo. È possibile sviluppare app per Apple Store, lo store Android e Microsoft Store.  
 
      [Load a sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) (Caricare un esempio) &#124;   [Do a tutorial](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/) (Eseguire un'esercitazione) &#124;                               [Browse the docs](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio) (Guardare un video)  
 
@@ -85,4 +67,3 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 |[Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) (Introduzione a Visual C# e Visual Basic)|[Scrittura di codice JavaScript](https://msdn.microsoft.com/library/cte3c772.aspx)|  
 |[Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) (Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma)|[Introduction to Functional Programming with F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx) (Introduzione alla programmazione funzionale con F#)|  
 |[Introduzione a C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)|[Introduzione al debug in Visual Studio](../ide/getting-started-with-debugging-in-visual-studio.md)|
-

@@ -11,17 +11,17 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a5ed96f71b928cdfd3845a81830adaa8de65c054
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a064d56a0be2acf6000a9e7da770cb9b25d3b65f
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esempio, si crea un progetto unit test per ogni progetto di codice del prodotto. Il progetto test può essere nella stessa soluzione del codice di produzione o in una soluzione separata. È possibile avere più progetti unit test in una soluzione.  
   
 > [!NOTE]
->  Il percorso degli unit test per un codice nativo e la struttura del progetto test possono essere diversi da quelli descritti in questo argomento. Per altre informazioni, vedere [Aggiunta di unit test alle applicazioni C++ esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
+>  Il percorso degli unit test per un codice nativo e la struttura del progetto test possono essere diversi da quelli descritti in questo argomento. Per altre informazioni, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).  
   
 ## <a name="to-create-a-unit-test-project"></a>Per creare un progetto unit test:  
   
@@ -48,7 +48,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
   
 -   [Scrittura di unit test per .NET Framework con il framework unit test di Microsoft per codice gestito](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Scrittura di unit test per C/C++ con il framework unit test di Microsoft per C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+-   [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)  
   
  **Esecuzione di unit test**  
   

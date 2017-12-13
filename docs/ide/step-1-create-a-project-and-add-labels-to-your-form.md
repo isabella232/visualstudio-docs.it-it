@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 79222e6c9cf609e617bd3cfd49d31be4f9c7c30e
-ms.contentlocale: it-it
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: creare un progetto e aggiungere etichette al form
 I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del progetto e nell'aggiunta di etichette, di un pulsante e di altri controlli a un modulo. Si impostano inoltre le proprietà di ogni controllo che si desidera aggiungere. Il progetto conterrà il modulo, i controlli e, più avanti nell'esercitazione, il codice. Il pulsante avvia il quiz, le etichette mostrano i problemi del quiz e gli altri controlli mostrano le risposte e il tempo rimanente per completarlo.  
@@ -185,7 +168,7 @@ Prima riga del quiz matematico
   
      Il modulo avrà ora il seguente aspetto.  
   
-     ![Form iniziale del quiz matematico](../ide/media/express_formlaidout.png "Express_FormLaidOut")  
+     ![Form del quiz matematico iniziale](../ide/media/express_formlaidout.png "Express_FormLaidOut")  
 Form iniziale del quiz matematico  
   
 8.  Per verificare se la proprietà **TabIndex** funziona come previsto, salvare ed eseguire il programma premendo F5 o scegliendo **Debug** e **Avvia debug** sulla barra dei menu e premendo TAB alcune volte.  

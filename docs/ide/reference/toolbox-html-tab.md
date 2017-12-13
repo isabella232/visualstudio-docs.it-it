@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.toolbox.html
+f1_keywords: vs.toolbox.html
 helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
 ms.assetid: 9bfdd3b8-f5ac-4a5f-bdbf-c2b4e97641d8
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: bc243e4d5ec1141244314109aa76fef86287d1c1
-ms.contentlocale: it-it
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, Scheda HTML
 La scheda **HTML** della casella degli strumenti contiene componenti utili nelle pagine Web e nei Web Form. Per visualizzare questa scheda, aprire un documento per la modifica nella finestra di progettazione HTML. Scegliere **Casella degli strumenti** dal menu **Visualizza** e quindi fare clic sulla scheda **HTML** della casella degli strumenti.  
@@ -239,4 +222,3 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ## <a name="see-also"></a>Vedere anche  
  [Casella degli strumenti](../../ide/reference/toolbox.md)   
  [Uso della Casella degli strumenti](../../ide/using-the-toolbox.md)   
-

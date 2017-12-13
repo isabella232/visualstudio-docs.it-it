@@ -1,58 +1,58 @@
 ---
-title: "Procedura: creare starter kit | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "starter kit, creazione"
+title: 'Procedura: Creare starter kit | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Starter Kits, creating
 ms.assetid: ed7d1844-7c01-424a-a831-5003efe0f7bc
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e93d1f3e49384097cdadf6623dae2415fe63cd18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Procedura: creare starter kit
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Uno Starter kit contiene il codice per un'applicazione completa e la documentazione che spiega come modificare o espandere l'applicazione.  Fondamentalmente la creazione di uno starter kit è identica alla creazione di un modello di progetto normale. L'unica differenza consiste nel fatto che uno starter kit contiene i file di documentazione, che sono impostati in modo da venire aperti quando si crea un progetto basato su uno starter kit.  
+# <a name="how-to-create-starter-kits"></a>Procedura: creare starter kit
+Gli starter kit contengono il codice di un'applicazione completa e la documentazione su come modificare o espandere l'applicazione. La creazione di uno starter kit è simile alla creazione di un normale modello di progetto con l'unica differenza che lo starter kit contiene i file della documentazione configurati per essere aperti quando viene creato un progetto basato sullo starter kit.  
   
-## Progettazione e sviluppo di uno starter kit  
- Innanzitutto occorre identificare il tipo di starter kit che si desidera sviluppare e definire i destinatari.  Quindi, è necessario progettare il progetto e la documentazione in base agli obiettivi prefissati.  
+## <a name="designing-and-developing-a-starter-kit"></a>Progettazione e sviluppo di uno starter kit  
+ È necessario innanzitutto individuare il tipo di starter kit che si vuole sviluppare e definire i destinatari. Passare quindi alla creazione del progetto e della documentazione per raggiungere gli obiettivi.  
   
- Se si desidera creare un'applicazione o un plug\-in di esempio:  
+ Se si sta creando un'applicazione o un plug-in di esempio:  
   
--   Creare un progetto che venga compilato senza errori.  
+-   Creare un progetto che viene compilato senza errori.  
   
--   Aggiungere il codice del modello per implementare le azioni supplementari \(facoltativo\).  
+-   Aggiungere il codice del modello per implementare le attività aggiuntive (facoltativo).  
   
 -   Preparare la documentazione.  
   
- Se si desidera creare uno strumento di apprendimento:  
+ Se si sta creando uno strumento di apprendimento:  
   
--   Creare un progetto che venga compilato senza errori.  
+-   Creare un progetto che viene compilato senza errori.  
   
--   Organizzare le risorse, come i frammenti di codice e i modelli di elemento.  
+-   Organizzare le risorse, ad esempio i frammenti di codice e i modelli di elemento.  
   
 -   Preparare la documentazione.  
   
-## Creazione di un modello  
- Dopo avere completato il progetto e la documentazione, si può iniziare la creazione del modello di progetto per lo starter kit.  Questa procedura è esattamente uguale alla creazione di un modello di progetto.  
+## <a name="creating-a-template"></a>Creazione di un modello  
+ Dopo aver completato il progetto e la relativa documentazione, è possibile procedere alla creazione del modello di progetto per lo starter kit. Questo processo è analogo alla creazione di un modello di progetto.  
   
- Gli argomenti seguenti contengono le informazioni sulla creazione dei modelli.  
+ Gli argomenti seguenti contengono informazioni sulla creazione di modelli.  
   
- [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)  
- Viene spiegato come utilizzare l'**Esportazione guidata modelli** per creare un modello.  
+ [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)  
+ Descrive come usare l'**Esportazione guidata modelli** per creare un modello.  
   
- [Procedura: aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md)  
- Viene descritto come modificare un modello esportato.  Utilizzare questa procedura per modificare il file .vstemplate e personalizzare lo starter kit.  
+ [Procedura: Aggiornare modelli esistenti](../ide/how-to-update-existing-templates.md)  
+ Descrive come modificare un modello esportato. Usare questa procedura per modificare il file con estensione vstemplate per personalizzare lo starter kit.  
   
-## Vedere anche  
- [Creazione di un progetto e di modelli di elemento personalizzati](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)   
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

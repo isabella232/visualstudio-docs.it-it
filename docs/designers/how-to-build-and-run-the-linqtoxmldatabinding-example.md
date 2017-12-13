@@ -1,37 +1,22 @@
 ---
-title: 'Procedura: Compilare ed eseguire l&quot;esempio LinqToXmlDataBinding | Microsoft Docs'
+title: 'Procedura: Compilare ed eseguire l''esempio LinqToXmlDataBinding | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3943deaf-80e2-4968-ac04-d3ef56cfad6c
-caps.latest.revision: 3
-author: kempb
-ms.author: kempb
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67003cd6b5f1ee54080f1efe5c6e13f0249f7047
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a90e55a60c9451229fd767dac6a8aaa0e2a2e224
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Procedura: Compilare ed eseguire l'esempio LinqToXmlDataBinding
 In questo argomento viene illustrato come creare e compilare il progetto LinqToXmlDataBinding di Visual Studio, nonché come eseguire il programma di esempio LinqToXmlDataBinding di WPF (Windows Presentation Foundation) risultante.  
@@ -75,7 +60,7 @@ In questo argomento viene illustrato come creare e compilare il progetto LinqToX
   
 1.  Eseguire LinqToXmlDataBinding premendo **F5** (**Avvia debug**) o **CTRL+F5** (**Avvia senza eseguire debug**). Viene visualizzata una finestra dal titolo **Data binding WPF con LINQ to XML**.  
   
-2.  Osservare la sezione superiore dell'interfaccia utente, in cui viene visualizzato il codice **XML** non elaborato che rappresenta l'elenco di libri. Viene visualizzato tramite un controllo WPF <xref:System.Windows.Controls.TextBlock> che non consente l'interazione tramite mouse o tastiera.  
+2.  Osservare la sezione superiore dell'interfaccia utente, in cui viene visualizzato il codice **XML** non elaborato che rappresenta l'elenco di libri. Viene visualizzato tramite un controllo <xref:System.Windows.Controls.TextBlock> WPF che non consente l'interazione tramite mouse o tastiera.  
   
 3.  Nella seconda sezione verticale, denominata **Book List**, vengono visualizzati i libri in un elenco ordinato in testo normale. Viene usato un controllo <xref:System.Windows.Controls.ListBox> che consente la selezione tramite mouse o tastiera.  
   
@@ -83,7 +68,7 @@ In questo argomento viene illustrato come creare e compilare il progetto LinqToX
   
 1.  Per eliminare un libro esistente dall'elenco, selezionarlo nella sezione **Book List** e quindi fare clic sul pulsante **Remove Selected Book**. Si noti che la voce relativa al libro è stata rimossa sia dall'elenco di libri che dal codice sorgente XML non elaborato.  
   
-2.  Per aggiungere un nuovo libro all'elenco, immettere valori nei controlli **ID** e **Valore**<xref:System.Windows.Controls.TextBox> nell'ultima sezione, **Add New Book**, e quindi fare clic sul pulsante **Add Book**. Il libro viene aggiunto si all'elenco di libri che all'elenco XML. In questo programma i valori di input non vengono convalidati.  
+2.  Per aggiungere un nuovo libro all'elenco, immettere i valori nei controlli **ID** e **Value**<xref:System.Windows.Controls.TextBox> (Valore) nell'ultima sezione **Add New Book** (Aggiungi nuovo libro), quindi fare clic sul pulsante **Add Book** (Aggiungi libro). Il libro viene aggiunto si all'elenco di libri che all'elenco XML. In questo programma i valori di input non vengono convalidati.  
   
 #### <a name="to-edit-an-existing-book-entry"></a>Per modificare una voce relativa a un libro esistente  
   

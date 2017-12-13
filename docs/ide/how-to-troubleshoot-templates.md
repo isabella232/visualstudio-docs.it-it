@@ -1,67 +1,67 @@
 ---
-title: "Procedura: risolvere i problemi relativi ai modelli | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "modelli di Visual Studio, risoluzione dei problemi"
+title: 'Procedura: Risolvere i problemi relativi ai modelli | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: af00efbeb759bfc41d12e0ab814ecadd4bbc7799
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-# Procedura: risolvere i problemi relativi ai modelli
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Se nell'ambiente di sviluppo il caricamento di un modello non ha esito positivo, esistono vari modi per individuare il problema.  
+# <a name="how-to-troubleshoot-templates"></a>Procedura: risolvere i problemi relativi ai modelli
+Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili diversi metodi per individuare il problema.  
   
-## Convalida del file .vstemplate  
- Se il file .vstemplate di un modello non corrisponde allo schema dei modelli di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il modello potrebbe non essere visualizzato nella finestra di dialogo **Nuovo progetto**.  
+## <a name="validating-the-vstemplate-file"></a>Convalida del file con estensione vstemplate  
+ Se il file con estensione vstemplate in un modello non rispetta lo schema di modello [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile che il modello non venga visualizzato nella finestra di dialogo **Nuovo progetto**.  
   
-#### Per convalidare il file .vstemplate  
+#### <a name="to-validate-the-vstemplate-file"></a>Per convalidare il file con estensione vstemplate  
   
-1.  Individuare il file .zip che contiene il modello.  
+1.  Individuare il file ZIP che contiene il modello.  
   
-2.  Estrarre il file con estensione zip.  
+2.  Estrarre il file ZIP.  
   
-3.  Nel menu **File** di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], scegliere **Apri**, quindi scegliere **File**.  
+3.  Nel menu **File** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fare clic su **Apri** e quindi su **File**.  
   
-4.  Selezionare il file .vstemplate relativo al modello e fare clic su **Apri**.  
+4.  Selezionare il file con estensione vstemplate per il modello e fare clic su **Apri**.  
   
-5.  Controllare che il codice XML del file .vstemplate sia conforme allo schema dei modelli di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Per ulteriori informazioni sullo schema dei modelli per .vstemplate, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+5.  Verificare che il codice XML del file con estensione vstemplate rispetti lo schema di modello [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni sullo schema del file con estensione vstemplate, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Per il supporto IntelliSense durante la creazione del file .vstemplate, aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnargli il valore http:\/\/schemas.microsoft.com\/developer\/vstemplate\/2005.  
+    >  Per ottenere il supporto IntelliSense durante la creazione del file con estensione vstemplate, aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnare all'attributo il valore http://schemas.microsoft.com/developer/vstemplate/2005.  
   
-6.  Salvare e chiudere il file .vstemplate.  
+6.  Salvare e chiudere il file vstemplate.  
   
-7.  Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse, scegliere **Invia a**, quindi fare clic su **Cartella compressa**.  I file selezionati verranno compressi in un file .zip.  
+7.  Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e selezionare **Invia a** e fare clic su **Cartella compressa**. I file selezionati verranno compressi in un file ZIP.  
   
-8.  Inserire il nuovo file .zip nella stessa directory del vecchio file .zip.  
+8.  Inserire il nuovo file con estensione zip nella stessa directory del file con estensione zip precedente.  
   
-9. Eliminare i file di modello estratti e il vecchio file di modello .zip.  
+9. Eliminare i file di modello estratti e il vecchio file di modello ZIP.  
   
-## Monitoraggio del log eventi  
- Gli errori rilevati durante l'elaborazione dei file di modello .zip vengono registrati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Se un modello non viene visualizzato nella finestra di dialogo **Nuovo progetto** come previsto, è possibile utilizzare il **Visualizzatore eventi** per risolvere il problema.  
+## <a name="monitoring-the-event-log"></a>Monitoraggio del log eventi  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] registra gli errori rilevati durante l'elaborazione dei file con estensione zip dei modelli. Se un modello non viene visualizzato nella finestra di dialogo **Nuovo progetto** come previsto, è possibile usare il **Visualizzatore eventi** per risolvere il problema.  
   
-#### Per individuare gli errori del modello nel Visualizzatore eventi  
+#### <a name="to-locate-template-errors-in-event-viewer"></a>Per individuare gli errori dei modelli nel Visualizzatore eventi  
   
-1.  In Windows fare clic su **Start**, selezionare **Pannello di controllo**, fare doppio clic su **Strumenti di amministrazione**, quindi doppio clic su **Visualizzatore eventi**.  
+1.  In Windows fare clic sul pulsante **Start**, scegliere **Pannello di controllo**, fare doppio clic su **Strumenti di amministrazione** e quindi fare doppio clic su **Visualizzatore eventi**.  
   
-2.  Nel riquadro di sinistra fare clic su **Applicazione**.  
+2.  Nel riquadro sinistro fare clic su **Applicazione**.  
   
-3.  Cercare gli eventi con un valore **Origine** di `Visual Studio - VsTemplate`.  
+3.  Cercare gli eventi con il valore **Origine** uguale a `Visual Studio - VsTemplate`.  
   
 4.  Fare doppio clic su un evento del modello per visualizzare l'errore.  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)   
- [Creazione di un progetto e di modelli di elemento personalizzati](../ide/creating-project-and-item-templates.md)   
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
+ [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
