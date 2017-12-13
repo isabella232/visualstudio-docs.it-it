@@ -1,28 +1,24 @@
 ---
 title: Ambienti Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: f73c0c7c40d1edd18cccb1ba69424c4e34472c33
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-environments"></a>Ambienti Python
 
 Python in Visual Studio consente di gestire facilmente più ambienti Python e di passare da uno all'altro per progetti diversi. 
@@ -46,17 +42,17 @@ Gli sviluppatori usano spesso un unico ambiente Python globale. Altri sviluppato
 - [Gestione dei pacchetti necessari](#managing-required-packages)
 - [Percorsi di ricerca](#search-paths)
 
-Per un video introduttivo, vedere [Visual Studio Python Tutorial Deep Dive: Interpreters](https://youtu.be/KY1GEOo3qy0) (Esercitazione approfondita su Python in Visual Studio: interpreti) su youtube.com (durata: 13 minuti e 27 secondi).
+Per un video introduttivo, vedere [Managing Python Environments](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Gestione degli ambienti Python) (Microsoft Virtual Academy, 2m35s).
 
-> [!VIDEO https://www.youtube.com/embed/KY1GEOo3qy0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
 
 ## <a name="selecting-and-installing-python-interpreters"></a>Selezione e installazione di interpreti Python
 
-Ad eccezione di Visual Studio 2017, il supporto per Python non include un interprete Python ed è quindi necessario installare uno degli interpreti seguenti per eseguire il codice. In generale, Visual Studio rileva automaticamente i nuovi interpreti installati e configura un ambiente appositamente per essi. In caso contrario, vedere [Creazione di un ambiente per un interprete esistente](#creating-an-environment-for-an-existing-interpreter) più avanti.
+Ad eccezione di Visual Studio 2017, il supporto per Python non include un interprete Python ed è quindi necessario installare uno degli interpreti seguenti per eseguire il codice. In generale, Visual Studio rileva automaticamente i nuovi interpreti installati e configura un ambiente appositamente per ognuno di essi. Se non viene rilevato un ambiente installato, vedere [Creazione di un ambiente per un interprete esistente](#creating-an-environment-for-an-existing-interpreter).
 
 | Interprete | Descrizione | 
 | --- | --- | 
-| [CPython](https://www.python.org/) | Interprete "nativo" più comunemente usato, disponibile nelle versioni a 32 bit e a 64 bit (consigliata la versione a 32 bit). Include le funzionalità più recenti del linguaggio e offre la massima compatibilità con i pacchetti Python, nonché il supporto completo per il debug e l'interoperabilità con [IPython](http://ipython.org/). Vedere anche: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (Differenze tra Python 2 e Python 3). |
+| [CPython](https://www.python.org/) | Interprete "nativo" più comunemente usato, disponibile nelle versioni a 32 bit e a 64 bit (consigliata la versione a 32 bit). Include le funzionalità più recenti del linguaggio e offre la massima compatibilità con i pacchetti Python, nonché il supporto completo per il debug e l'interoperabilità con [IPython](http://ipython.org/). Vedere anche: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (Differenze tra Python 2 e Python 3). Si noti che Visual Studio 2015 e versioni precedenti non supportano Python 3.6 e possono segnalare l'errore "Versione 3.6 di Python non supportata". Usare Python 3.5 o versioni precedenti. |
 | [IronPython](https://github.com/IronLanguages/main) | Implementazione .NET di Python, disponibile nelle versioni a 32 bit e a 64 bit, che offre interoperabilità con C#/F# e Visual Basic, accesso alle API .NET, debug Python standard (ma non debug C++ in modalità mista) e debug IronPython/C# in modalità mista. IronPython non supporta però gli ambienti virtuali. | 
 | [Anaconda](https://www.continuum.io) | Piattaforma Open Data Science basata su Python che include la versione più recente di CPython e la maggior parte dei pacchetti difficili da installare. È la piattaforma consigliata se non è possibile sceglierne una diversa. |
 | [PyPy](http://www.pypy.org/) | Implementazione JIT di traccia ad alte prestazioni di Python, ideale per applicazioni a esecuzione prolungata e situazioni in cui si verificano problemi di prestazioni, ma non si riesce a trovare altre soluzioni. Funziona con Visual Studio, ma offre supporto limitato per le funzionalità avanzate di debug. |
@@ -89,7 +85,7 @@ L'esempio precedente mostra che oltre a Python 3.4 (CPython a 32 bit) sono insta
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Creazione di un ambiente per un interprete esistente
 
-Visual Studio individua in genere la presenza di un interprete Python installato controllando il Registro di sistema, ma potrebbe non individuarla se l'interprete è installato in modalità non standard. In questi casi è possibile impostare Visual Studio in modo che punti direttamente all'interprete come illustrato di seguito:
+In genere, Visual Studio individua un interprete Python installato controllando il Registro di sistema (come descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows). Tuttavia, Visual Studio potrebbe non localizzare l'interprete se questo viene installato in modo non standard. In questi casi è possibile impostare Visual Studio in modo che punti direttamente all'interprete come illustrato di seguito:
 
 1. Selezionare **+ Personalizzato** nella finestra Ambienti Python per creare un nuovo ambiente e aprire la [scheda **Configura**](#configure-tab) descritta di seguito.
 
@@ -99,7 +95,15 @@ Visual Studio individua in genere la presenza di un interprete Python installato
 1. Immettere o selezionare il percorso dell'interprete nel campo **Percorso di prefisso**.
 1. Selezionare **Rilevamento automatico** per fare in modo che Visual Studio completi automaticamente i campi rimanenti oppure completarli manualmente.
 1. Selezionare **Applica** per salvare l'ambiente.
-1. Se è necessario rimuovere l'ambiente, selezionare il comando **Rimuovi** nella scheda **Configura**.
+1. Se è necessario rimuovere l'ambiente, selezionare il comando **Rimuovi** nella scheda **Configura**. Gli ambienti rilevati automaticamente non offrono questa opzione. Per altre informazioni, vedere la sezione successiva.
+
+### <a name="moving-an-existing-interpreter"></a>Spostamento di un interprete esistente
+
+Se si sposta un interprete esistente in una nuova posizione nel file system, Visual Studio non rileva automaticamente la modifica. Sono necessari passaggi manuali per aggiornare l'elenco nella finestra Ambiente:
+
+- Se è stato originariamente creato un ambiente per tale interprete, modificare tale ambiente per puntare alla nuova posizione.
+
+- Se in origine l'ambiente era stato rilevato automaticamente, significa che è stato installato nel computer con un programma di installazione specifico che ha creato le voci del registro esaminate da Visual Studio. In questo caso, ripristinare innanzitutto l'interprete Python nella posizione originale. Quindi disinstallarlo usando il programma di installazione, che cancellerà le voci del registro. Reinstallare quindi l'interprete nella posizione desiderata. Riavviare Visual Studio, che dovrebbe a questo punto rilevare automaticamente la nuova posizione. Questo processo assicura che eventuali altri effetti collaterali del programma di installazione vengano applicati correttamente.
 
 ### <a name="overview-tab"></a>Scheda Panoramica
 
@@ -299,4 +303,3 @@ Per aggiungere un percorso di ricerca, fare clic con il pulsante destro del mous
 > È possibile aggiungere un percorso di ricerca ai moduli di Python 2.7 mentre si usa Python 3.3, ma potrebbero verificarsi errori.
 
 Se si usa regolarmente gli stessi percorsi di ricerca e il contenuto non cambia spesso, può risultare più comodo eseguire l'installazione nella cartella dei pacchetti del sito. Questa viene quindi analizzata e archiviata nel database di IntelliSense ed è sempre associata all'ambiente di destinazione indicato. Non è inoltre più necessario aggiungere un percorso di ricerca per ogni progetto.
-

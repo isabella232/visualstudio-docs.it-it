@@ -1,42 +1,26 @@
 ---
-title: Esecuzione di unit test di una DLL di Visual C++ per le app dello Store | Microsoft Docs
+title: Esecuzione di unit test di una DLL di Visual C++ per le app UWP | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 571ea6daab6ea9cbfb30976514e163b5dcbe398d
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Testing unità di una DLL di Visual C++ per le app dello Store
-Questo argomento descrive come creare unit test per una DLL in C++ per app di Windows Store. La DLL RooterLib ricorda vagamente la teoria dei limiti di calcolo, implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app di Windows Store che mostra a un utente il lato divertente della matematica.  
+# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Esecuzione di unit test di una DLL di Visual C++ per le app UWP
+Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. La DLL RooterLib ricorda vagamente la teoria dei limiti di calcolo, implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app UWP che mostra a un utente il lato divertente della matematica.  
   
- Questo argomento illustra come usare unit test come primo passaggio dell'attività di sviluppo Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, puoi invertire questa strategia scrivendo per primo il codice che vuoi testare, quindi gli unit test.  
+ Questo argomento illustra come usare unit test come primo passaggio dell'attività di sviluppo Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.  
   
  In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. Puoi anche includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL. Per suggerimenti sulla struttura da usare, vedere [Aggiunta di unit test alle applicazioni C++ esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
   
@@ -61,13 +45,13 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
   
 1.  Scegliere **Nuovo** dal menu **File**, quindi **Nuovo progetto**.  
   
-2.  Nella finestra di dialogo Nuovo progetto espandere **Installato**, espandere **Visual C++** e quindi scegliere **Windows Store**. Scegli quindi **Libreria unit test (applicazioni Windows Store)** dall'elenco di modelli di progetto.  
+2.  Nella finestra di dialogo Nuovo progetto espandere **Installati**, espandere **Visual C++** e quindi scegliere **Universale di Windows**. Scegli quindi **Libreria unit test (Universale di Windows)** nell'elenco di modelli di progetto.  
   
      ![Creare una libreria unit test in C&#43;&#43;](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
 3.  Assegnare al progetto il nome `RooterLibTests`, specificare il percorso, assegnare alla soluzione il nome `RooterLib` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.  
   
-     ![Specificare un nome e un percorso per il progetto e la soluzione](~/test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
+     ![Specificare un nome e un percorso per il progetto e la soluzione](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
   
 4.  Nel nuovo progetto aprire **unittest1.cpp**.  
   
@@ -100,7 +84,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
   
      Il progetto di test viene compilato ed eseguito. Verrà visualizzata la finestra di Esplora test con il test elencato in **Test superati**. Nel riquadro di riepilogo nella parte inferiore della finestra sono disponibili ulteriori dettagli sul test selezionato.  
   
-     ![Esplora test](~/test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Aggiungere il progetto di DLL alla soluzione  
   
@@ -108,7 +92,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
   
      ![Creare il progetto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app di Windows Store)**.  
+2.  Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)**.  
   
 3.  Aggiungere il seguente codice al file **RooterLib.h**:  
   
@@ -211,7 +195,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
   
 5.  In Esplora test scegliere **Esegui tutto**.  
   
-     ![Test di base superato](~/test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.  
   
@@ -364,4 +348,3 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
     >  Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.  
     >   
     >  Mantenere il refactoring separato da altre modifiche.
-

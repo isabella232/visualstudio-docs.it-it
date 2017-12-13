@@ -1,27 +1,24 @@
 ---
 title: Finestra REPL interattiva di Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 0e524208684afa38916af858e6ec3a8adb1f5932
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-the-python-interactive-window"></a>Uso della finestra interattiva di Python
 
 In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per ognuno degli ambienti Python, che costituisce un miglioramento rispetto alla funzionalità REPL disponibile con `python.exe` dalla riga di comando. La finestra interattiva (aperta con i comandi di menu **Visualizza > Altre finestre > &lt;Ambiente&gt; interattivo**) consente di immettere codice Python arbitrario e visualizzare risultati immediati. Questo modo di generare codice consente di imparare e sperimentare con API e librerie e sviluppare in modo interattivo codice funzionante da includere nei propri progetti.
@@ -39,9 +36,9 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
 Questo argomento illustra le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Uso di IPython nella finestra interattiva](interactive-repl-ipython.md).
 
-Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come CTRL+INVIO, vedere [Introduzione - Uso della finestra interattiva REPL](getting-started.md#using-the-interactive-repl-window). Per un'introduzione video, vedere [Getting Started with Python in Visual Studio, Part 5: Interactive REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introduzione a PTVS, parte 5 REPL interattivo) su youtube.com (durata: 2 minuti e 51 secondi).
+Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come CTRL+INVIO, vedere [Passaggio 3: Uso della finestra interattiva REPL](vs-tutorial-01-03.md). Per un video introduttivo, vedere [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Finestra interattiva di Python) (Microsoft Virtual Academy, 2m22s).
 
-> [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
 ## <a name="opening-an-interactive-window"></a>Apertura di una finestra interattiva
 
@@ -131,4 +128,3 @@ Visual Studio rileva anche le celle di codice a partire da commenti come `# In[1
 La finestra interattiva include la funzionalità IntelliSense basata su oggetti attivi, a differenza dell'editor del codice in cui IntelliSense è basato solo sull'analisi del codice sorgente. Questi suggerimenti risultano più corretti nella finestra interattiva, in particolare con codice generato dinamicamente. Può però capitare che funzioni con effetti collaterali, ad esempio la registrazione di messaggi, influiscano negativamente sull'esperienza di sviluppo.
 
 Se questo comportamento costituisce un problema, modificare le impostazioni in **Strumenti > Opzioni > Strumenti Python > Finestre interattive** nel gruppo **Modalità di completamento**, come descritto in [Opzioni - Interactive Windows options (Opzioni della finestra interattiva)](options.md#interactive-windows-options).
-

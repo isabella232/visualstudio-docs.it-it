@@ -1,28 +1,24 @@
 ---
 title: Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web | Microsoft Docs
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: cebc1598001459d6ab1c920fa390273242e893e0
-ms.contentlocale: it-it
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 
 Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per accedere a queste opzioni selezionare **Strumenti > Opzioni**, espandere **Progetti e soluzioni** e selezionare **Progetti Web**.
@@ -41,5 +37,5 @@ Selezionare questa opzione per usare IIS Express anziché il server di sviluppo 
 Se questa opzione è selezionata, l'utente riceve un avviso quando l'applicazione Web che prova a eseguire viene compilata con errori.
 
 ## <a name="see-also"></a>Vedere anche  
-- [Finestra di dialogo Opzioni, Progetti e soluzioni](projects-and-solutions-options-dialog-box.md)
-- [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](options-dialog-box-projects-and-solutions-web-projects.md)
+[Finestra di dialogo Opzioni, Progetti e soluzioni](projects-and-solutions-options-dialog-box.md)  
+[Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](options-dialog-box-projects-and-solutions-web-projects.md)

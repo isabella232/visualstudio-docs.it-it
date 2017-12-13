@@ -1,52 +1,43 @@
 ---
-title: "Risoluzione dei problemi relativi al visualizzatore della Guida | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visualizzatore della Guida 2.0, risoluzione dei problemi"
-  - "risoluzione dei problemi [Visualizzatore della Guida 2.0]"
-ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+redirect_url: /visualstudio/ide/microsoft-help-viewer
+ms.openlocfilehash: c0b1a114eb157860dd70873929727cc56f1d6514
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/07/2017
 ---
-# Risoluzione dei problemi relativi al visualizzatore della Guida
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In questo argomento vengono illustrati i problemi che possono verificarsi con il Visualizzatore della Guida.  
+title: "Risoluzione dei problemi del visualizzatore della Guida | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "risoluzione dei problemi [Visualizzatore della Guida]"
+  - "Visualizzatore della Guida, risoluzione dei problemi" ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12 caps.latest.revision: 13 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="troubleshooting-the-help-viewer"></a>Risoluzione dei problemi relativi al visualizzatore della Guida
+In questo argomento vengono illustrati i problemi che potrebbero verificarsi con il visualizzatore della Guida.  
   
-## L'audio non funziona.  
- Il Visualizzatore della Guida non include un lettore audio.  Se si scarica il contenuto audio e quando si sceglie **Riproduci** non viene riprodotto niente, installare un lettore audio.  
+## <a name="audio-doesnt-work"></a>L'audio non funziona.  
+ Il visualizzatore della Guida non include un lettore audio. Se si scaricano contenuti che includono l'audio e non accade nulla quando si sceglie **Riproduci**, installare un lettore audio.  
   
-## La ricerca non funziona in Windows Server 2008, Windows Server 2008 con SP1 o Windows Server 2008 R2.  
- Le funzionalità di filtro e di ricerca nel Visualizzatore della Guida richiedono che il servizio Windows Search sia installato e in esecuzione.  Per impostazione predefinita, questo servizio è disattivato in Windows Server 2008, Windows Server 2008 con Service Pack 1 \(SP1\) e Windows Server 2008 R2.  
+## <a name="search-doesnt-work-in-windows-server-2008-windows-server-2008-with-sp1-or-windows-server-2008-r2"></a>La ricerca non funziona in Windows Server 2008, Windows Server 2008 con SP1 o Windows Server 2008 R2.  
+ Le funzionalità di ricerca e filtro nel visualizzatore della Guida richiedono il servizio Windows Search. Per impostazione predefinita, questo servizio è disattivato in Windows Server 2008, Windows Server 2008 con Service Pack 1 (SP1) e Windows Server 2008 R2.  
   
-#### Per attivare il servizio Windows Search  
+#### <a name="to-activate-windows-search-service"></a>Per attivare il servizio Windows Search  
   
 1.  Avviare Server Manager.  
   
-2.  Nel riquadro di navigazione a sinistra, scegliere **Ruoli**.  
+2.  Nel riquadro di spostamento a sinistra scegliere **Ruoli**.  
   
-3.  Nel riquadro Riepilogo ruoli, selezionare **Aggiungi ruolo**.  
+3.  Nel riquadro Riepilogo ruoli scegliere **Aggiungi ruolo**.  
   
-4.  Selezionare il ruolo di Servizi file, quindi fare clic su **Avanti**.  
+4.  Scegliere il ruolo Servizi file e il pulsante **Avanti**.  
   
-5.  Scegliere il servizio ruoli di Windows Search.  
+5.  Scegliere il servizio ruolo Windows Search.  
   
-## Risorse supplementari  
- È possibile ottenere ulteriori informazioni e fornire un feedback sul visualizzatore della Guida utilizzando le seguenti risorse:  
+## <a name="additional-resources"></a>Risorse aggiuntive  
+ È possibile ottenere altre informazioni e offrire commenti e suggerimenti sul visualizzatore della Guida mediante le risorse seguenti:  
   
--   Per fornire feedback, vedere [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) sul sito Web Microsoft o inviare un messaggio di posta elettronica a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
+-   Per offrire commenti e suggerimenti, vedere [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) dal sito Microsoft o inviare un messaggio di posta elettronica a [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Per ulteriori informazioni, vedere il forum sulla [Guida e documentazione per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=232741) e il blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
+-   Per altre informazioni, visitare il forum sulla [documentazione per sviluppatori e la Guida online](http://go.microsoft.com/fwlink/?LinkId=232741).  
   
-## Vedere anche  
- [Guida dell'amministratore di Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
+## <a name="see-also"></a>Vedere anche
+[Guida dell'amministratore di Help Viewer](http://go.microsoft.com/fwlink/?LinkId=243985)

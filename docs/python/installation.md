@@ -1,28 +1,23 @@
 ---
 title: Installazione per Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 09/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ce3d3656-7ba2-490d-92df-0bb3e3badf92
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installazione del supporto di Python in Visual Studio in Windows
 
 Per installare il supporto Python per Visual Studio, seguire le istruzioni nella sezione corrispondente alla versione in uso di Visual Studio:
@@ -31,7 +26,7 @@ Per installare il supporto Python per Visual Studio, seguire le istruzioni nella
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e versioni precedenti](#visual-studio-2013-and-earlier)
 
-Per Visual Studio 2015 e versioni precedenti è anche necessario installare separatamente un interprete Python a scelta. Per informazioni dettagliate, vedere [Ambienti Python](python-environments.md).
+Per Visual Studio 2015 e versioni precedenti è anche necessario installare separatamente un interprete Python a scelta. Installare Python 3.5 e versioni precedenti; Python 3.6 non è supportato. Per informazioni dettagliate, vedere [Ambienti Python](python-environments.md). Nella stessa pagina sono contenute anche le istruzioni per l'aggiunta di un interprete Python esistente in Visual Studio 2017.
 
 Per testare rapidamente il supporto Python dopo aver eseguito la procedura di installazione, aprire la finestra interattiva di Python premendo ALT+I e quindi immettere `2+2`. Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 
@@ -43,20 +38,42 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Installare Visual Studio 2017 da [https://www.visualstudio.com/vs/](https://www.visualstudio.com/vs/).
+1. Scaricare ed eseguire il programma di installazione più recente di Visual Studio 2017:
 
-1. Nel programma di installazione di Visual Studio selezionare il carico di lavoro **Web e cloud > Sviluppo Python**.
+    > [!div class="nextstepaction"]
+    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Installare Visual Studio 2017 Community</a>
+
+    >[!Tip]
+    > L'edizione Community è per singoli sviluppatori, per la formazione in classe, la ricerca accademica e per lo sviluppo open source. Per altri usi, installare <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> oppure <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+
+1. Il programma di installazione offre un elenco di carichi di lavoro, che sono gruppi di opzioni correlate per aree di sviluppo specifico. Per Python, selezionare il carico di lavoro **Sviluppo Python**.
 
     ![Carico di lavoro Sviluppo Python nel programma di installazione di Visual Studio](media/installation-python-workload.png)
 
-    > [!Note]
-    > Python è incluso anche nel carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati**.
+    Facoltativo: se si usa l'analisi scientifica dei dati, valutare la possibilità di installare il carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati**. Questo carico di lavoro include il supporto per Python, nonché per i linguaggi R e F#. Per altre informazioni, vedere [Carico di lavoro relativo alle applicazioni analitiche e di analisi scientifica dei dati](../rtvs/data-science-workload.md).
 
-1. Sul lato destro del programma di installazione selezionare gli interpreti Python e altri strumenti correlati da includere. Ad esempio, se si prevede di sviluppare estensioni C++ per Python, includere l'opzione **Strumenti di sviluppo nativi Python**.
+    > [!Note]
+    > I carichi di lavoro di Python e di analisi scientifica dei dati sono disponibili solo con la versione di Visual Studio 2017 15.2 e versioni successive.
+
+1. Sul lato destro del programma di installazione è possibile scegliere le opzioni aggiuntive. Ignorare il passaggio per accettare le opzioni predefinite.
 
     ![Opzioni di sviluppo Python nel programma di installazione di Visual Studio](media/installation-python-options.png)
 
-1. Se nel computer in uso sono già installati interpreti, vedere [Creazione di un ambiente per un interprete esistente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
+    | Opzione | Descrizione | 
+    | --- | --- |
+    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di analisi scientifica dei dati che include una vasta gamma di pacchetti. È possibile tornare al programma di installazione di Visual Studio in qualsiasi momento per aggiungere o rimuovere le distribuzioni. |
+    | Supporto modello Cookiecutter | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Uso dell'estensione Cookicutter](cookiecutter.md). |
+    | Supporto Web Python | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](template-web.md). |
+    | Supporto Python IoT | Supporta lo sviluppo di Windows IoT Core usando Python. |
+    | Strumenti di sviluppo nativo Python | Installa il compilatore C++ e altri componenti necessari per sviluppare estensioni native per Python. Vedere [Creazione di un'estensione C++ per Python](cpp-and-python.md). |
+    | Strumenti di base di Servizi cloud di Azure | Offre supporto aggiuntivo per sviluppare servizi cloud di Microsoft Azure in Python. Vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md). |
+
+1. Al termine dell'operazione, il programma di installazione specifica le opzioni per modificare, avviare, ripristinare o disinstallare Visual Studio. Il pulsante **Modifica** diventa **Aggiorna** quando sono disponibili aggiornamenti di Visual Studio per i componenti installati. L'opzione di modifica diventa disponibile nel menu a discesa. È anche possibile avviare Visual Studio e il programma di installazione dal menu Start di Windows eseguendo una ricerca su "Visual Studio".
+
+    ![Avvio, modifica, modifica o disinstallazione di Visual Studio dal programma di installazione](media/installation-vs-launch.png)
+
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -108,3 +125,4 @@ dove:
 
 Con Python Tools for Visual Studio 1.5 e versioni precedenti è consentita l'installazione solo per l'utente corrente. In tal caso, il percorso di installazione è `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>` dove i valori di &lt;VS_ver&gt; e &lt;PTVS_ver&gt; sono uguali a quelli descritti in precedenza.
 
+<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

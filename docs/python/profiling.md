@@ -1,27 +1,23 @@
 ---
 title: Misurazione delle prestazioni del codice Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2723d4d0-89c8-4279-bfc2-27c0834a997e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1f873ab7b8954f9ac8ebf089a3719e34be8e03ba
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: f01c42f073859e2e609123eb67cc9df8e26cef75
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="profiling-python-code"></a>Profilatura del codice Python
 
 In Visual Studio è possibile eseguire la profilatura di un'applicazione Python quando si usano interpreti basati su CPython.
@@ -34,11 +30,10 @@ Quando si fa clic su **OK**, viene eseguito il profiler e si apre un report di p
 
 ![Report di prestazioni del profiler](media/profiling-results.png)
 
-Per una panoramica, vedere l'argomento seguente.
+Per una dimostrazione, vedere il video [Profiling Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Profilatura di Python) (Microsoft Virtual Academy, 3m00s).
 
-Per una procedura dettagliata dimostrativa, vedere il video [Profiling with Python Tools for Visual Studio](http://www.youtube.com/watch?v=K-KqkFkp55k) (Profilatura con Python Tools for Visual Studio) (durata: 8 minuti e 52 secondi).
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
 
-> [!VIDEO https://www.youtube.com/embed/K-KqkFkp55k]
 
 ## <a name="profiling-for-ironpython"></a>Profilatura per IronPython
 

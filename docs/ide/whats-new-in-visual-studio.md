@@ -1,13 +1,15 @@
 ---
 title: "Novità di Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 08/22/2017
+ms.date: 11/06/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.StartPage.WhatsNew
+f1_keywords: VS.StartPage.WhatsNew
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,31 +17,29 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.technology:
-- vs-acquisition
+ms.openlocfilehash: 1e616fb0c223a30152b9cd18e6ea53e989690f9b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
 ms.translationtype: HT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: 5bf00b7e5ed79f8679b837d0dcabf03550d2b849
-ms.contentlocale: it-it
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
-#### <a name="updated-for-the-153-release"></a>Aggiornato per la versione 15.3
-Produttività senza precedenti per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Visual Studio 2017 è perfetto per lo sviluppo di app per Android, iOS, Windows, Linux, Web e cloud. Consente la rapida scrittura del codice, assicura facilità di debug e diagnosi e permette l'esecuzione frequente di test per il rilascio di app affidabili. È inoltre possibile rendere Visual Studio un ambiente "su misura" grazie alla possibilità di creare estensioni personalizzate. Questa versione offre eccezionali vantaggi, inclusi controllo della versione, strumenti e processi Agile ed efficienti funzionalità di collaborazione!
+#### <a name="updated-for-the-154-release"></a>Aggiornato per la versione 15.4
+Se si sta valutando l'opportunità di eseguire l'aggiornamento da una versione precedente di Visual Studio, ecco cosa può offrire Visual Studio 2017: produttività senza precedenti per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Visual Studio 2017 è perfetto per lo sviluppo di app per Android, iOS, Windows, Linux, Web e cloud. Consente la rapida scrittura del codice, assicura facilità di debug e diagnosi e permette l'esecuzione frequente di test per il rilascio di app affidabili. È inoltre possibile rendere Visual Studio un ambiente "su misura" grazie alla possibilità di creare estensioni personalizzate. Questa versione offre eccezionali vantaggi, inclusi controllo della versione, strumenti e processi Agile ed efficienti funzionalità di collaborazione!
 
-Di seguito è riportato un riepilogo generale delle modifiche apportate:
+Di seguito è riportato un riepilogo generale delle modifiche apportate dopo la versione precedente, ovvero Visual Studio 2015:
 
 * **Concetti fondamentali ridefiniti**. Una nuova esperienza di installazione offre la possibilità di completare l'installazione più rapidamente e di installare quello che serve all'occorrenza. Indipendentemente dal fatto che si vogliano caricare soluzioni e progetti di grandi dimensioni o lavorare su alcune cartelle di codice o persino su un singolo file di codice, l’avvio di Visual Studio è più veloce. Visual Studio permette anche di rimanere concentrati sul quadro generale, in particolare per i team che adottano la metodologia DevOps.
 * **Prestazioni e produttività**. Microsoft si è concentrata sulle funzionalità nuove e moderne di sviluppo per dispositivi mobili, cloud e desktop. Ha inoltre rivolto l’attenzione sul miglioramento complessivo dell'acquisizione, delle prestazioni e delle esperienze di produttività generali per gli sviluppatori. Visual Studio si avvia più velocemente, offre tempi di risposta migliori e usa meno memoria rispetto a prima.
 * **Sviluppo di app cloud con Azure**. Un gruppo di strumenti Azure incorporati consentono di creare facilmente app per cloud con tecnologia Microsoft Azure. Visual Studio facilita la configurazione, la compilazione, il debug, l'inserimento in pacchetti e la distribuzione di app e servizi in Azure.
 * **Sviluppo di app per dispositivi mobili**. Visual Studio 2017 supporta l'innovazione e permette di ottenere risultati rapidamente con Xamarin, che unifica i requisiti per dispositivi mobili multipiattaforma usando un'unica codebase principale e un singolo set di competenze. È possibile passare allo sviluppo per dispositivi mobili avvalendosi dei team, degli investimenti tecnologici e del codice C# esistenti, per offrire esperienze per consumatori in tempi più brevi e con costi minori del previsto. Ogni passaggio del ciclo di vita dei dispositivi mobili può essere velocizzato per realizzare esperienze per consumatori di alto livello o un portfolio di app di produttività per supportare e agevolare la forza lavoro.
-* **Sviluppo multipiattaforma** Per distribuire facilmente software a qualsiasi piattaforma di destinazione. Estendere i processi DevOps a SQL Server con Redgate Data Tools e automatizza in modo sicuro le distribuzioni dei database da Visual Studio. Sviluppare e rilasciare giochi multipiattaforma utilizzando gli Strumenti di Visual Studio per Unity. Oppure, utilizzare .NET Core per scrivere app e librerie in modo che vengano eseguite senza modifiche nei sistemi operativi Windows, Linux e macOS. E novità nella versione 15.3: Supporto di .NET Core 2.0 SDK affiancati.
+* **Sviluppo multipiattaforma**. Distribuire facilmente software a qualsiasi piattaforma di destinazione. Estendere i processi DevOps a SQL Server con Redgate Data Tools e automatizza in modo sicuro le distribuzioni dei database da Visual Studio. Oppure, utilizzare .NET Core per scrivere app e librerie in modo che vengano eseguite senza modifiche nei sistemi operativi Windows, Linux e macOS. E **novità nella versione 15.3**: supporto di .NET Core 2.0 SDK affiancati.
+* **Sviluppo di giochi**. Con Visual Studio Tools per Unity (VSTU) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.
 
 > [!NOTE]
 > Per un elenco completo delle nuove funzionalità in Visual Studio 2017, vedere le [Note sulla versione](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
-Ecco informazioni più dettagliate su alcune dei più importanti miglioramenti e nuove funzionalità di Visual Studio 2017.
+Ecco informazioni più dettagliate su alcuni dei più importanti miglioramenti e delle nuove funzionalità di Visual Studio 2017.
 
 ## <a name="redefined-fundamentals"></a>Concetti fondamentali ridefiniti
 ### <a name="a-new-setup-experience"></a>Una nuova esperienza di installazione
@@ -58,9 +58,14 @@ Si vuole scegliere i propri componenti anziché usare i carichi di lavoro? Selez
 
 Per altre informazioni sulla nuova esperienza di installazione, incluse le istruzioni dettagliate per eseguirla, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
 
+### <a name="a-focus-on-accessibility"></a>Informazioni sull'accessibilità
+**Nella versione 15.3** sono state apportate oltre 1700 correzioni mirate a migliorare la compatibilità tra Visual Studio e i dispositivi di Assistive Technology usati da molti clienti Microsoft. Molti scenari, inoltre, sono stati resi ancora più compatibili con utilità di lettura dello schermo, temi a contrasto elevato e altri dispositivi di Assistive Technology. Anche il debugger, l'editor e la shell hanno tutti subito considerevoli miglioramenti.
+
+Per altre informazioni, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+
 ## <a name="performance-and-productivity"></a>Prestazioni e produttività
 ### <a name="sign-in-across-multiple-accounts"></a>Accedere a più account  
-È stato introdotto in Visual Studio un nuovo servizio di identità che consente di condividere gli account utente in Team Explorer, strumenti di Azure, pubblicazione in Windows Store e altri strumenti.
+È stato introdotto in Visual Studio un nuovo servizio di identità che consente di condividere gli account utente in Team Explorer, strumenti di Azure, pubblicazione in Microsoft Store e altri strumenti.
 
 È anche possibile rimanere connessi più a lungo. Non verrà richiesto di accedere nuovamente ogni 12 ore. Per altre informazioni, vedere il post del blog relativo alla [riduzione del numero di richieste di accesso a Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/).
 
@@ -110,7 +115,7 @@ In Visual Studio Enterprise 2017, questa funzionalità mostra i risultati dei li
 
 ![Live Unit Testing](../ide/media/lut-codewindow.png "Esempio della nuova funzionalità Live Unit Testing nell'edizione Enterprise di Visual Studio")
 
-Per altre informazioni, vedere il post di blog [Live Unit Testing in Visual Studio 2017 Enterprise](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/).
+Per altre informazioni, vedere [Introduzione a Live Unit Testing](../test/live-unit-testing-intro.md). Per un elenco delle nuove funzionalità aggiunte in ogni versione di Visual Studio Enterprise 2017, vedere [Novità di Live Unit Testing](../test/live-unit-testing-whats-new.md).
 
 #### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>Configurare una pipeline CI/CD per eseguire test automatizzati in modo efficiente
 I test automatizzati sono componenti fondamentali di qualsiasi pipeline DevOps. Consente di testare in modo coerente e attendibile e di rilasciare la soluzione in cicli più brevi. I flussi CI/CD (Integrazione continua e Recapito continuo) consentono di rendere più efficiente il processo.
@@ -119,14 +124,9 @@ Per altre informazioni sui test automatizzati, vedere il post di blog [CI/CD pip
 
 Per altre informazioni sulle novità dell'estensione DevLabs [Strumenti di recapito continuo per Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), vedere il post di blog [Committing with Confidence: Commit Time Code Quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (Eseguire il commit in sicurezza: qualità del codice in fase di commit).
 
-### <a name="a-focus-on-accessibility"></a>Informazioni sull'accessibilità
-Nella versione 15.3 sono state apportate oltre 1700 correzioni mirate a migliorare la compatibilità tra Visual Studio e i dispositivi di Assistive Technology usati dalla maggior parte dei clienti. Molti scenari, inoltre, sono stati resi ancora più compatibili con utilità di lettura dello schermo, temi a contrasto elevato e altri dispositivi di Assistive Technology. Anche il debugger, l'editor e la shell hanno tutti subito considerevoli miglioramenti.
-
-Per altre informazioni, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
-
 ### <a name="visual-studio-ide-enhancements"></a>Miglioramenti dell'IDE di Visual Studio
 #### <a name="use-new-refactorings"></a>Utilizzare i nuovi refactoring
-Nella versione 15.3, è stato aggiunto un numero limitato di nuovi refactoring, per includere:
+**Nella versione 15.3** sono stati aggiunti alcuni nuovi refactoring per:
 *   Risolvere i conflitti di unione
 *   Aggiungere un parametro (da CallSite)
 *   Generare sostituzioni
@@ -137,33 +137,31 @@ Nella versione 15.3, è stato aggiunto un numero limitato di nuovi refactoring, 
 *   Convertire if-to-switch
 *   Rimuovere la variabile non usata
 
-Per maggiori informazioni, consultare la pagina [Refactoring, generazione di codice e azioni rapide in Visual Studio](refactoring-code-generation-quick-actions.md).
-
+Per maggiori informazioni, consultare la pagina [Refactoring, generazione di codice e azioni rapide in Visual Studio](refactoring-code-generation-quick-actions.md).  
 
 #### <a name="interact-with-git"></a>Interagire con Git
 Quando si lavora con un progetto in Visual Studio, è possibile configurare il codice ed eseguirne rapidamente il commit e la pubblicazione in un servizio GIT. È anche possibile gestire i repository GIT tramite i menu visualizzati facendo clic sui pulsanti nell'angolo inferiore destro dell'IDE.
 
 ![Visual Studio 2017 interagisce con la finestra di dialogo GIT](../ide/media/vsIDE-GitInteraction.png "Strumenti GIT nell'IDE di Visual Studio")
 
-#### <a name="view-and-navigate-code-with-structure-visualizer"></a>Visualizzare ed esplorare il codice con il visualizzatore di struttura
-Il visualizzatore di struttura disegna le guide per strutture (note anche come guide di rientro) nel codice. È possibile usarle per visualizzare e individuare il blocco di codice attivo in qualsiasi momento, senza dover scorrere. Al passaggio del mouse sulle linee vengono visualizzate descrizioni comando che consentono di visualizzare il blocco e i relativi elementi padre aperti. Questa funzionalità è disponibile per tutti i linguaggi supportati da grammatiche TextMate e per C#, Visual Basic e XAML.
-
-![Visualizzatore di struttura di Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png "Visualizzatore di struttura in Visual Studio")
-
 #### <a name="experience-improved-navigation-controls"></a>Controlli di spostamento migliorati
 L'esperienza è stata aggiornata per consentire spostamenti più efficienti e con meno distrazioni.
 
-* **Vai a** (CTRL+F12) &ndash; consente di spostarsi da qualsiasi tipo o membro di base alle varie implementazioni corrispondenti.
+* **Novità della versione 15.4**: **Vai a definizione (CTRL+clic o F12)** &ndash; Gli utenti che usano il mouse hanno a disposizione un modo più semplice per passare alla definizione di un membro premendo **CTRL** e facendo quindi clic sul membro. È possibile premere **CTRL** e passare il mouse su un simbolo del codice per sottolinearlo e trasformarlo in un collegamento. Per altre informazioni, vedere [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md).  
 
-* **Vai a tutti** (CTRL+T o CTRL+,) &ndash; consente di passare direttamente a qualsiasi dichiarazione di file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
+* **Vai a implementazione (CTRL+F12)** &ndash; consente di spostarsi da qualsiasi tipo o membro di base alle varie implementazioni corrispondenti.
+
+* **Vai a tutti (CTRL+T o CTRL+,)** &ndash; consente di passare direttamente a qualsiasi dichiarazione di file/tipo/membro/simbolo. È possibile filtrare l'elenco dei risultati o usare la sintassi di query, ad esempio "f Terminericerca" per i file, "t Terminericerca" per i tipi e così via.
 
  ![Vai a tutti migliorato](../ide/media/vs2017ide-navigation-go-to.png "Esempio della funzionalità Vai a tutti migliorata")
 
-* **Trova tutti i riferimenti (MAIUSC+F12)** &ndash; con colorazione della sintassi, consente di raggruppare i risultati di Trova tutti i riferimenti in base a una combinazione di progetto, definizione e percorso. È anche possibile "bloccare" i risultati in modo da poter continuare la ricerca di altri riferimenti senza perdere i risultati originali.
+* **Trova tutti i riferimenti (MAIUSC+F12)** &ndash; Con colorazione della sintassi, consente di raggruppare i risultati di Trova tutti i riferimenti in base a una combinazione di progetto, definizione e percorso. È anche possibile "bloccare" i risultati in modo da poter continuare la ricerca di altri riferimenti senza perdere i risultati originali.
 
  ![Nuovo strumento Trova tutti i riferimenti](../ide/media/vs2017ide-find-all-references.png "Esempio del nuovo strumento Trova tutti i riferimenti")
 
-* **Guide di rientro**&ndash;, ovvero linee grigie verticali punteggiate che fungono da punti di riferimento nel codice per fornire informazioni di contesto all'interno del frame di visualizzazione. Tali guide sono incluse nei famosi Productivity Power Tools.
+* **Visualizzatore di struttura** &ndash; Linee grigie verticali punteggiate (guide di rientro) che fungono da punti di riferimento nel codice per fornire informazioni di contesto all'interno del frame di visualizzazione. Tali guide sono incluse nei famosi Productivity Power Tools. È possibile usarle per visualizzare e individuare il blocco di codice attivo in qualsiasi momento, senza dover scorrere. Al passaggio del mouse sulle linee viene visualizzata una descrizione comando che mostra l'apertura del blocco e dei relativi elementi padre. Questa funzionalità è disponibile per tutti i linguaggi supportati da grammatiche TextMate, nonché per C#, Visual Basic e XAML.  
+
+![Visualizzatore di struttura di Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png "Visualizzatore di struttura in Visual Studio")
 
 Per altre informazioni sulle nuove funzionalità per la produttività, vedere il post di blog [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) (Produttività in Visual Studio 2017) di Mark Wilson-Thomas.
 
@@ -206,7 +204,7 @@ Per altre informazioni, vedere la pagina [Visual Studio e Xamarin](../cross-plat
 
 ## <a name="cross-platform-development"></a>Sviluppo di più piattaforme
 ### <a name="redgate-data-tools"></a>Redgate Data Tools
-Per estendere le funzionalità DevOps all'ambiente di sviluppo di database SQL Server, le edizioni seguenti di Visual Studio 2017 includono ora gli strumenti Redgate Data Tools.
+Per estendere le funzionalità DevOps all'ambiente di sviluppo di database SQL Server, Visual Studio include ora gli strumenti Redgate Data Tools.
 
 Strumenti inclusi in Visual Studio 2017 Enterprise:
 - [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs): consente di sviluppare script di migrazione e gestire modifiche del database mediante il controllo del codice sorgente, oltre ad automatizzare in modo sicuro le distribuzioni delle modifiche di database di SQL Server unitamente alle modifiche delle applicazioni.
@@ -217,32 +215,33 @@ Strumenti inclusi in tutte le edizioni di Visual Studio 2017:
 
 Per altre informazioni, vedere il post di blog [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/).
 
-### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
-Nell’ambito del carico di lavoro "Sviluppo di giochi per Unity", sono stati inclusi strumenti per semplificare lo sviluppo multipiattaforma per creare giochi 2D e 3D e contenuti interattivi. Puoi creare una sola volta e pubblicare in 21 piattaforme, incluse tutte le piattaforme mobili, WebGL, Mac, computer desktop Windows e Linux, Web o console, tramite Visual Studio 2017 e Unity 5.6.
-
-Per altre informazioni, vedere la pagina [Strumenti di Visual Studio per Unity](../cross-platform/visual-studio-tools-for-unity.md).
-
 ### <a name="net-core"></a>.NET Core
 .NET Core è un'implementazione generica, modulare, multi-piattaforma e open source dello Standard .NET e contiene molte delle medesime API di .NET Framework.
 
 La piattaforma .NET Core è costituita da vari componenti, tra cui i compilatori gestiti, il runtime, le librerie di classi base e numerosi modelli applicativi come ASP.NET Core. .NET Core supporta tre sistemi operativi principali: Windows, Linux e macOS. Può essere usata in scenari di dispositivi, cloud e IoT/incorporati.
 
-E include attualmente il supporto di Docker
+E include attualmente il supporto di Docker.  
 
-**Novità nella versione 15.3**: Visual Studio 2017 versione 15.3 supporta lo sviluppo di .NET Core 2.0. Nella versione 15.3, l’utilizzo di .NET Core 2.0 richiede il download e l’installazione separati di SDK 2.0 di .NET Core.
+**Novità nella versione 15.3**: Visual Studio 2017 versione 15.3 supporta lo sviluppo di .NET Core 2.0. L'uso di .NET Core 2.0 richiede il download e l'installazione separati di SDK 2.0 di .NET Core.  
 
 Per altre informazioni, vedere la pagina della [Guida .NET Core](https://docs.microsoft.com/dotnet/core/index).
 
-## <a name="talk-to-us"></a>Comunicazioni con Microsoft  
- È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti: sono molto importanti per indirizzare le nostre operazioni.
+## <a name="games-development"></a>Sviluppo di giochi
+### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
+Nell’ambito del carico di lavoro "Sviluppo di giochi per Unity", sono stati inclusi strumenti per semplificare lo sviluppo multipiattaforma per creare giochi 2D e 3D e contenuti interattivi. Puoi creare una sola volta e pubblicare in 21 piattaforme, incluse tutte le piattaforme mobili, WebGL, Mac, computer desktop Windows e Linux, Web o console, tramite Visual Studio 2017 e Unity 5.6.
 
-Per inoltrare suggerimenti su come migliorare Visual Studio o per segnalare un problema, consultare la pagina [Comunicazioni con Microsoft](../ide/talk-to-us.md) per altre informazioni.
+Per altre informazioni, vedere la pagina [Strumenti di Visual Studio per Unity](../cross-platform/visual-studio-tools-for-unity.md).
+
+## <a name="talk-to-us"></a>Comunicazioni con Microsoft  
+ È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, usandoli per migliorare i propri prodotti.  
+
+Per inoltrare suggerimenti su come migliorare Visual Studio o per segnalare un problema, consultare la pagina [Comunicazioni con Microsoft](../ide/talk-to-us.md).  
 
 ### <a name="report-a-problem"></a>Segnalare un problema  
- A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un blocco, un arresto anomalo del sistema o un altro problema di prestazioni, è possibile condividere facilmente con Microsoft la procedura per riprodurre il problema e i file di supporto, ad esempio le schermate e i file dump di traccia e heap, usando lo strumento **Segnala un problema**. Per altre informazioni su come utilizzare questo strumento, vedere la pagina relativa alla [segnalazione dei problemi](how-to-report-a-problem-with-visual-studio-2017.md).
+ A volte un messaggio non è sufficiente per comunicare il reale impatto di un problema riscontrato. Se si verifica un blocco, un arresto anomalo del sistema o un altro problema di prestazioni, è possibile condividere facilmente con Microsoft la procedura per riprodurre il problema e i file di supporto, ad esempio screenshot e file dump di traccia e heap, usando lo strumento **Segnala un problema**. Per altre informazioni su come utilizzare questo strumento, vedere la pagina relativa alla [segnalazione dei problemi](how-to-report-a-problem-with-visual-studio-2017.md).  
 
 ### <a name="track-your-issue-in-connect"></a>Tenere traccia del problema in Connect  
- Se si desidera tenere traccia dello stato del commento inviato su Visual Studio, passare al sito [Connect](http://connect.microsoft.com/) e segnalare il bug. Dopo aver effettuato la segnalazione è possibile tornare a Connect per tenere traccia dello stato.
+ Se si desidera tenere traccia dello stato del commento inviato su Visual Studio, passare al sito [Connect](http://connect.microsoft.com/) e segnalare il bug. Dopo aver effettuato la segnalazione è possibile tornare a Connect per tenere traccia dello stato.  
 
 ## <a name="see-also"></a>Vedere anche
 * [Note sulla versione di Visual Studio 2017](https://www.visualstudio.com/news/vs2015-vs)
@@ -250,4 +249,3 @@ Per inoltrare suggerimenti su come migliorare Visual Studio o per segnalare un p
 * [Novità di C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [What's New for Team Foundation Server](https://www.visualstudio.com/docs/whats-new) (Novità per Team Foundation Server)
 * [Novità di Visual Studio per Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
-

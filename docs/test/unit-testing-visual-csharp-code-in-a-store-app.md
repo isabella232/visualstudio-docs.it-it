@@ -1,47 +1,31 @@
 ---
-title: Esecuzione di unit test di codice Visual C# in un'app dello Store | Microsoft Docs
+title: Esecuzione di unit test di codice Visual C# in un'app UWP | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: it-it
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>Esecuzione di unit test di codice Visual C# in un'app dello Store
-Questo argomento descrive come creare unit test per una classe Visual C# in un'app di Windows Store. La classe Rooter rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. Nell'app Maths questa funzione può quindi essere utilizzata per illustrare all'utente le varie operazioni che si possono eseguire con questa funzione matematica.  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Esecuzione di unit test di codice Visual C# in un'app UWP
+Questo argomento descrive come creare unit test per una classe Visual C# in un'app UWP. La classe Rooter rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. Nell'app Maths questa funzione può quindi essere utilizzata per illustrare all'utente le varie operazioni che si possono eseguire con questa funzione matematica.  
   
  In questo argomento viene illustrato come utilizzare unit test come primo passaggio dell'attività di sviluppo. Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.  
   
  In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. È anche possibile includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL.  
   
 > [!NOTE]
->  Community di Visual Studio, Enterprise e Professional includono funzionalità aggiuntive per gli unit test.  
+>  Visual Studio Community, Enterprise e Professional offrono funzionalità aggiuntive per gli unit test.  
 >   
 >  -   Usare un framework di unit test open source o di terze parti che abbia creato un adattatore come componente aggiuntivo per Esplora test Microsoft. È anche possibile analizzare e visualizzare le informazioni di code coverage per i test.  
 > -   Eseguire i test dopo ogni compilazione.  
@@ -68,13 +52,13 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
 1.  Scegliere **Nuovo** dal menu **File**, quindi **Nuovo progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e scegliere **Windows Store**. Scegliere quindi **App vuota** dall'elenco di modelli di progetto.  
+2.  Nella finestra di dialogo **Nuovo progetto** espandere **Installati**, **Visual C#** e quindi scegliere **Universale di Windows**. Scegliere quindi **App vuota** dall'elenco di modelli di progetto.  
   
 3.  Assegnare al progetto il nome `Maths` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.  
   
 4.  In Esplora soluzioni selezionare il nome della soluzione, scegliere **Aggiungi** dal menu di scelta rapida e quindi **Nuovo progetto**.  
   
-5.  Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e quindi scegliere **Windows Store**. Scegli quindi **Libreria unit test (applicazioni Windows Store)** dall'elenco di modelli di progetto.  
+5.  Nella finestra di dialogo **Nuovo progetto** espandere **Installati**, **Visual C#** e quindi scegliere **Universale di Windows**. Scegli quindi **Libreria unit test (Universale di Windows)** nell'elenco di modelli di progetto.  
   
      ![Creare il progetto di unit test](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
   
 > [!NOTE]
 >  Per aggiungere un metodo di supporto a una classe di test, non aggiungere l'attributo `[TestMethod]` al metodo. Esplora test non registra il metodo da eseguire.
-

@@ -1,35 +1,27 @@
 ---
-title: "Gestire la finestra del visualizzatore della Guida | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visualizzatore della Guida 2.0, ridisposizione della finestra"
-  - "Visualizzatore della Guida 2.0, ripristino del layout di finestra predefinito"
-ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+redirect_url: /visualstudio/ide/customize-the-help-viewer
+ms.openlocfilehash: ac58c2d345a87dc872eae56f0ee0fdcdcb85a3db
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/07/2017
 ---
-# Gestire la finestra del visualizzatore della Guida
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+title: "Gestire la finestra di Help Viewer | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "Help Viewer, ridisposizione della finestra"
+  - "Help Viewer, ripristinare il layout predefinito della finestra" ms.assetid: 98625016-acce-46c9-9b5a-2107d2939a5e caps.latest.revision: 7 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="manage-the-help-viewer-window"></a>Gestire la finestra di Help Viewer
+È possibile personalizzare il layout della finestra di Help Viewer. Per ripristinare il layout predefinito della finestra di Help Viewer, aprire la finestra di dialogo **Opzioni Help Viewer** e quindi scegliere il pulsante **Reimposta**.  
 
-Nel visualizzatore della Guida è possibile personalizzare il layout delle finestre.  
+## <a name="docking-tabs"></a>Ancoraggio delle schede
+Help Viewer supporta le funzionalità standard di ancoraggio. Per impostazione predefinita, tutte le schede in Help Viewer sono ancorate, ma è possibile spostarle, ridimensionarle, ancorarle in altre posizioni e renderle mobili, in modo da visualizzarle come finestre figlio indipendenti.
   
-## Ancoraggio delle schede  
- Il Visualizzatore della Guida supporta la funzionalità standard di ancoraggio.  Per impostazione predefinita, tutte le schede nel Visualizzatore della Guida sono ancorate. Tuttavia possono essere spostate, ridimensionate, ancorate in altre posizioni e lasciate mobili così da apparire come finestre figlio indipendenti.  
+## <a name="opening-a-topic-in-a-new-tab"></a>Apertura di un argomento in una nuova scheda
+Scegliere l'argomento in qualsiasi scheda di spostamento e quindi premere **CTRL+INVIO**.
   
- Per ripristinare il layout predefinito della finestra del Visualizzatore della Guida, aprire la finestra di dialogo **Opzioni Visualizzatore**, quindi scegliere il pulsante **Reimposta**.  
-  
-## Apertura di un argomento in una nuova scheda  
- Scegliere l'argomento in una qualsiasi scheda di navigazione, quindi premere CTRL\+INVIO.  
-  
-## Minimizzare una scheda di navigazione  
- Creare più spazio per visualizzare gli argomenti facendo clic sull'icona di blocco per le schede di navigazione.  Quando queste schede vengono ridotte a icona, sul bordo più vicino della finestra vengono visualizzate soltanto le relative etichette.  Per ripristinare le schede, scegliere l'etichetta di una scheda, quindi scegliere di nuovo l'icona di blocco.
+## <a name="minimize-a-navigation-tab"></a>Ridurre a icona una scheda di spostamento
+È possibile creare più spazio per la visualizzazione degli argomenti scegliendo l'icona a forma di puntina per le schede di spostamento. Quando queste schede vengono ridotte a icona, rimangono visualizzate solo le etichette corrispondenti sul bordo più vicino della finestra. Per ripristinare le schede, scegliere l'etichetta di una scheda e quindi scegliere di nuovo l'icona a forma di puntina.
+
+## <a name="see-also"></a>Vedere anche
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

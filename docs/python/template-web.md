@@ -1,33 +1,31 @@
 ---
 title: Modello di progetto Web per Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-web-project-templates"></a>Modelli di progetti Web Python
 
-Python in Visual Studio supporta i progetti di sviluppo Web in framework quali Bottle, Django e Flask, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. Visual Studio non include però i framework veri e propri che devono essere installati separatamente. A tale scopo, fare clic con il pulsante destro del mouse sul progetto e scegliere **Python > Install/upgrade framework** (Installa/aggiorna framework).
+Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. È anche possibile usare il modello generico "Progetto Web" per altri framework, ad esempio Pyramid.
 
-Ogni modello, accessibile da **File > Nuovo > Progetto**, avvia un server Web con una porta locale selezionata in modo causale, apre il browser predefinito durante il debug e consente la pubblicazione diretta in [Microsoft Azure](http://www.azure.com). Sono disponibili modelli per Bottle, Flask e Django ed è possibile usare il modello generico "Progetto Web" per altri framework, ad esempio Pyramid.
+Visual Studio non include i framework, che devono essere installati separatamente. A tale scopo, fare clic con il pulsante destro del mouse sul progetto e scegliere **Python > Install/upgrade framework** (Installa/Aggiorna framework).
+
+Un progetto creato da un modello (accessibile da **File > Nuovo > Progetto**), quando viene eseguito avvia un server Web con una porta locale selezionata in modo causale, apre il browser predefinito durante il debug e consente la pubblicazione diretta in Microsoft Azure.
 
 ![Nuovi modelli di progetto Web](media/template-web-new-project.png)
 
@@ -40,10 +38,6 @@ Quando si crea un progetto da un modello specifico del framework, viene visualiz
 Durante la distribuzione nel servizio app di Microsoft Azure, selezionare una versione di Python come [estensione sito](https://aka.ms/PythonOnAppService) e installare manualmente i pacchetti. Dal momento poi che il servizio app di Azure **non** installa automaticamente i pacchetti da un file `requirements.txt` quando viene distribuito da Visual Studio, attenersi ai dettagli di configurazione illustrati in [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
 Il servizio cloud di Microsoft Azure invece *supporta* il file `requirements.txt`. Per dettagli, vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md).
-
-Per un'introduzione ai progetti Web di Python, vedere, vedere il video [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introduzione a PTVS, parte 6: siti Web) su youtube.com (durata: 3 minuti e 10 secondi).
-
-> [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
 
 ## <a name="debugging"></a>Debug
 
@@ -178,4 +172,3 @@ Se si aggiunge il modello `web.config` di debug al progetto e si intende usare i
 Il comando **Converti in progetto servizio cloud di Microsoft Azure** (immagine seguente) consente di aggiungere un progetto di servizio cloud alla soluzione. Questo progetto include le impostazioni di distribuzione e la configurazione per i servizi e le macchine virtuali da usare. Usare il comando **Pubblica** nel progetto cloud per eseguire la distribuzione nel servizio cloud. Con il comando **Pubblica** nel progetto Python la distribuzione viene ancora eseguita nei siti Web. Per altre informazioni, vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md).
 
 ![Comando Converti in progetto servizio cloud di Microsoft Azure](media/template-web-convert-menu.png)
-

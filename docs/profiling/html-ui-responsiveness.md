@@ -1,11 +1,10 @@
 ---
-title: "Analizzare la velocità di risposta dell&quot;interfaccia utente HTML nelle app UWP | Microsoft Docs"
+title: "Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app UWP | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: it-it
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -58,7 +41,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 -   Gli aggiornamenti visivi che sono meno frequenti del previsto. Ciò si verifica se il thread UI è troppo occupato a mantenere una frequenza dei fotogrammi uniforme. Ad esempio, se il thread UI è occupato, i fotogrammi potrebbero essere rimossi. Il lavoro di alcuni thread non UI, ad esempio le richieste di rete, la decodifica delle immagini e i disegni, può anche limitare la frequenza degli aggiornamenti visivi. (Non tutti i disegni vengono eseguiti nel thread UI).  
   
 ##  <a name="RunningProfiler"></a> Eseguire lo strumento della velocità di risposta dell'interfaccia HTML  
- È possibile usare lo strumento della velocità di risposta dell'interfaccia utente HTML quando un'app di Windows Universal o Windows Store funzionante è aperta in Visual Studio o è installata in un computer che esegue Windows 8 o versioni successive.  
+ È possibile usare lo strumento Velocità di risposta interfaccia utente HTML quando un'app UWP o Windows 8.1 funzionante è aperta in Visual Studio o è installata in un computer che esegue Windows 8 o versioni successive.  
   
 1.  Se esegui l'app da Visual Studio, nell'elenco **Avvia debug** sulla barra degli strumenti **Standard** scegli una destinazione di distribuzione, ad esempio uno degli emulatori Windows Phone, **Computer locale**, **Simulatore**o **Computer remoto**.  
   
@@ -66,13 +49,13 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
      Se si vuole modificare la destinazione di analisi del profiler, scegliere **Modifica destinazione**.  
   
-     ![Cambia destinazione analisi](~/profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![Cambia destinazione analisi](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      Sono disponibili le seguenti opzioni per la destinazione di analisi:  
   
     -   **Progetto di avvio**. Scegli questa opzione per analizzare il progetto di avvio corrente. Se esegui l'app in un dispositivo o computer remoto, devi usare questa impostazione, che corrisponde al valore predefinito.  
   
-    -   **App in esecuzione**. Scegli questa opzione per selezionare un'app Windows Store da un elenco di app in esecuzione. Non puoi usare questa opzione quando esegui l'app in un dispositivo o computer remoto.  
+    -   **App in esecuzione**. Scegliere questa opzione per selezionare un'app UWP da un elenco di app in esecuzione. Non puoi usare questa opzione quando esegui l'app in un dispositivo o computer remoto.  
   
          Puoi usare questa opzione per analizzare le prestazioni delle app in esecuzione nel tuo computer quando non disponi dell'accesso al codice sorgente.  
   
@@ -117,7 +100,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
 8.  Se hai aggiunto contrassegni utente, questi vengono visualizzati nella [Visualizzare la sequenza temporale della sessione di diagnostica](#Ruler) del profiler. La figura seguente mostra un contrassegno utente singolo usato per specificare una determinata operazione nel codice.  
   
-     ![Righello della diagnostica con contrassegno utente](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![Righello della diagnostica con contrassegno utente](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. Identificare un'area di interesse nella sequenza temporale e nei grafici del profiler usando i contrassegni utente, gli eventi del ciclo di vita dell'app o i dati visualizzati nei grafici. Di seguito sono riportate alcune linee guida che facilitano l'analisi e l'utilizzo dei dati nei grafici:  
   
@@ -131,7 +114,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
      Nella figura seguente viene mostrato il grafico dell'utilizzo della CPU con un'area di interesse evidenziata.  
   
-     ![Grafico dell'utilizzo della CPU](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![Grafico dell'utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Nella sezione [Visualizzare i dettagli della sequenza temporale](#TimelineDetails) sono disponibili informazioni dettagliate sugli eventi che si verificano troppo spesso o il cui completamento richiede troppo tempo. Ad esempio, cerca quanto segue:  
   
@@ -170,11 +153,11 @@ if (performance && performance.mark) {
  La descrizione dell'evento compare come descrizione comando quando posizioni il puntatore del mouse sul contrassegno utente. Puoi aggiungere tutti i contrassegni utente necessari.  
   
 > [!NOTE]
-> Anche `console.timeStamp`, un comando Chrome, è visualizzato come contrassegno utente.  
+>  Anche`console.timeStamp`, un comando Chrome, è visualizzato come contrassegno utente.  
   
  La figura seguente mostra il righello di diagnostica con un unico contrassegno utente e la relativa descrizione comando.  
   
- ![Righello della diagnostica con contrassegno utente](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![Righello della diagnostica con contrassegno utente](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
  È possibile anche creare eventi generati da strumenti nella visualizzazione dei dettagli della sequenza temporale per mostrare il tempo trascorso tra due contrassegni utente. Il codice seguente permette di aggiungere un secondo contrassegno utente e una misura del tempo trascorso tra l'esecuzione dei due contrassegni utenti. Il codice precedente mostra il primo contrassegno utente.  
   
@@ -199,7 +182,7 @@ if (performance.mark && performance.measure) {
   
  Ecco come appare la sequenza temporale della sessione di diagnostica con una descrizione comando visualizzata per diversi eventi del ciclo di vita dell'app:  
   
- ![Righello della sessione di diagnostica](~/profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Righello della sessione di diagnostica](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
  La sequenza temporale mostra quando si verificano eventi del ciclo di vita dell'app, ad esempio l'evento di attivazione, nonché i contrassegni utente (triangoli con l'etichetta Contrassegno utente) che è possibile aggiungere al codice. È possibile selezionare gli eventi per visualizzare descrizioni comandi con informazioni aggiuntive. Per ulteriori informazioni sui contrassegni utente, vedi [Contrassegnare il codice per l'analisi](#ProfileMark) in questo argomento.  
   
@@ -219,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  Questo esempio mostra l'aspetto del grafico relativo all'utilizzo della CPU:  
   
- ![Grafico dell'utilizzo della CPU](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![Grafico dell'utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  Usare questo grafico per:  
   
@@ -303,7 +286,7 @@ if (performance.mark && performance.measure) {
   
  Per filtrare la decodifica immagine, il download speculativo e gli eventi GC, deseleziona l'opzione **Attività in background** dall'icona filtro nel riquadro inferiore. Poiché questi eventi non sono molto utilizzabili, sono nascosti per impostazione predefinita.  
   
- ![Applicazione di filtri agli eventi nella sequenza temporale](~/profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![Applicazione di filtri agli eventi nella sequenza temporale](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Per filtrare gli eventi di richiesta HTTP, deselezionare l'opzione **Traffico di rete** dall'icona filtro nel riquadro inferiore. Per impostazione predefinita, questi eventi sono visibili nel grafico dettagli cronologia.  
   
@@ -317,7 +300,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Raggruppare gli eventi per frame  
  Puoi raggruppare gli eventi inclusi nella visualizzazione dei dettagli della sequenza temporale in base a singoli frame. Questi eventi frame sono eventi generati da strumenti e rappresentano i contenitori eventi di primo livello per tutte le operazioni relativa al thread dell'interfaccia utente che si verificano tra eventi Paint. Per abilitare questa visualizzazione, selezionare **Raggruppa eventi di primo livello in base ai frame**.  
   
- ![Raggruppamento degli eventi di livello superiore per frame](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Raggruppamento degli eventi di livello superiore per frame](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Quando si raggruppano gli eventi in base ai frame, ogni evento di primo livello nella visualizzazione dei dettagli della sequenza temporale rappresenta un frame.  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   Guardare [il video](http://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 sul profiler della velocità di risposta dell'interfaccia utente.  
   
--   Leggi i suggerimenti sulle prestazioni per le app di Windows Store compilate per Windows utilizzando JavaScript. Per altre informazioni, vedere [Procedure consigliate per le prestazioni delle app di Windows Store scritte in JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Leggere i suggerimenti sulle prestazioni per le app UWP realizzate per Windows con JavaScript. Per altre informazioni, vedere [Procedure consigliate per le prestazioni delle app UWP scritte in JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
 -   Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   

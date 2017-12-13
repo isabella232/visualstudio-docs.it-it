@@ -1,34 +1,35 @@
 ---
 title: Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 09/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 082ac09fcc1bb466de891d0daa7178e505c35770
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="working-with-python-in-visual-studio"></a>Uso di Python in Visual Studio
 
 Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Python supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, script e calcolo scientifico. Viene usato in molte università, nonché da scienziati, sviluppatori professionisti e non professionisti. Per altre informazioni sul linguaggio, vedere [python.org](https://www.python.org) e [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python per principianti).
 
 Visual Studio in Windows offre supporto [open source](https://github.com/Microsoft/ptvs) per il linguaggio Python attraverso lo sviluppo di Python e i carichi di lavoro Data Science (Visual Studio 2017), altre all'estensione gratuita Python Tools for Visual Studio (Visual Studio 2015 e versioni precedenti). Python non è attualmente supportato in Visual Studio per Mac, ma viene offerto su Mac e Linux tramite Visual Studio Code (vedere le [Domande e risposte](#questions-and-answers) riportate di seguito).
 
-Seguire le [istruzioni di installazione](installation.md) per configurare il carico di lavoro Python, quindi usare i collegamenti seguenti per saperne di più sulle funzionalità correlate a Python, nonché sulle funzionalità di Visual Studio stesso.
+Per iniziare:
+
+- Seguire le [istruzioni di installazione](installation.md) per configurare il carico di lavoro di Python.
+- Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Creare un progetto da un modello](quickstart-02-project-from-template.md).
+- Seguire l'esercitazione [Uso di Python in Visual Studio](vs-tutorial-01-01.md) per un'esperienza completa.
+- Usare quindi i collegamenti seguenti per esplorare le funzionalità correlate a Python e le funzionalità di Visual Studio.
 
 | Funzionalità | Descrizione | Documentazione generale su Visual Studio | 
 | --- | --- | --- |
@@ -44,9 +45,10 @@ Seguire le [istruzioni di installazione](installation.md) per configurare il car
 
 Il carico di lavoro Python include anche [Azure SDK per Python](azure-sdk-for-python.md), che semplifica l'uso dei servizi Azure da applicazioni Windows, Mac OS X e Linux.
 
-La serie di [video introduttivi e di approfondimento](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) su YouTube offre una panoramica delle funzionalità principali.
+Per un video introduttivo, vedere il breve corso [Python Tools for Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) su Microsoft Virtual Academy (circa 22 minuti in totale). 
 
-[![Video su Python Tools](media/video-general.png)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+
 
 ## <a name="questions-and-answers"></a>Domande e risposte
 
@@ -194,5 +196,4 @@ Funzionalità supportate in base alla versione e all'edizione di Visual Studio:
 - [Writing Kinect games with Python using PyKinect](https://github.com/Microsoft/PTVS/wiki/PyKinect) (Uso di PyKinect per scrivere di giochi Kinect con Python) (wiki GitHub)
 - [WFastCGI bridge between IIS and Python](https://pypi.python.org/pypi/wfastcgi) (Ponte WFastCGI tra IIS e Python) (python.org)
 - [Corsi gratuiti per Python in Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Top Python Questions alla Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)
-
+- [Top Python Questions (Domande principali su Python) alla Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

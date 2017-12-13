@@ -1,27 +1,24 @@
 ---
 title: Aree di lavoro in R Tools per Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 559f5832be6d4fa87be39941401f2222e075b7a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4764fb9fc6b0cd2e6160540fdec3f33370d81128
-ms.contentlocale: it-it
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Controllo della posizione di esecuzione del codice R con le aree di lavoro
 
 Un'area di lavoro in R Tools per Visual Studio (RTVS) consente di configurare la posizione di esecuzione di una sessione R, che può essere eseguita sia su computer locali che su computer remoti. L'obiettivo è offrire un'esperienza utente simile in entrambi i casi, anche grazie all'uso di computer più potenti nel cloud.
@@ -37,6 +34,7 @@ Contenuto dell'argomento:
 - [Salvataggio e reimpostazione di un'area di lavoro](#saving-and-resetting-a-workspace)
 - [Aree di lavoro locali](#local-workspaces)
 - [Aree di lavoro remote](#remote-workspaces)
+- [Accesso ad aree di lavoro remote](#remote-workspace-logon)
 - [Passaggio da un'area di lavoro all'altra](#switching-between-workspaces)
 - [Directory sui computer locali e remoti](#directories-on-local-and-remote-computers)
 - [Copia di file di progetto in aree di lavoro remote](#copying-project-files-to-remote-workspaces)
@@ -75,6 +73,17 @@ Visual Studio non rileva automaticamente le aree di lavoro remote, quindi è nec
 > [!Note]
 > Le aree di lavoro remote sono una funzionalità in anteprima. È in corso l'elaborazione di un approccio migliore al problema della sincronizzazione dei file per una versione successiva ed eventuali idee e suggerimenti sono benvenuti.
 
+## <a name="remote-workspace-logon"></a>Accesso ad aree di lavoro remote
+
+È necessario usare un nome utente e una password per accedere all'area di lavoro remota.
+
+### <a name="logon-to-windows-workspace"></a>Accesso all'area di lavoro di Windows
+
+Se il computer remoto è configurato per usare l'account di dominio, è possibile usare l'accesso al dominio per accedere a un'area di lavoro remota. In caso contrario, è necessario usare il formato `machine-name\username` per accedere con un account computer nel computer remoto.
+
+### <a name="logon-to-linux-workspace"></a>Accesso all'area di lavoro di Linux
+
+Per accedere a un account Linux, usare il formato `<<unix>>\username`. Ad esempio, se è disponibile un account con il nome `ruser`, è necessario digitare il nome utente come `<<unix>>\ruser`.
 
 ## <a name="switching-between-workspaces"></a>Passaggio da un'area di lavoro all'altra
 
@@ -139,4 +148,3 @@ L'opzione **Trasferisci file durante l'esecuzione** determina se RTVS deve copia
 ## <a name="copying-files-from-a-remote-workspace"></a>Copia di file da un'area di lavoro remota
 
 Se lo script R genera file nel server, è possibile copiare tali file nel client con la funzione `rtvs::fetch_file`. Questa funzione accetta come argomento minimo il percorso remoto del file da copiare nel proprio computer e come argomento facoltativo il percorso di destinazione nel computer. Se non si specifica un percorso il file viene copiato nella cartella `%userprofile%\Downloads`.
-

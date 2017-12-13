@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: it-it
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Aggiornare progetti di unit test di Visual Studio 2010
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] include la compatibilità dei progetti di test con i progetti di test di [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1. Ad esempio, i progetti di test creati con [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 possono essere aperti tramite [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] senza alcun aggiornamento. Il team può quindi usare sia [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 che [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] per lavorare sullo stesso progetto di test. Per altre informazioni, vedere [Aggiornamento dei test da Visual Studio 2010](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
@@ -43,14 +26,14 @@ ms.lasthandoff: 05/13/2017
 >  Gli unit test esistenti nei progetti di test di [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 funzioneranno senza problemi tra [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. Non vengono apportate modifiche ai file dei progetti di test quando si apre un progetto di test di Visual Studio 2010 contenente unit test in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] o viceversa.  
   
 > [!CAUTION]
->  Visual Studio 2010 non è in grado di aprire un progetto C++/CLI destinato al set di strumenti 11.0, ovvero un progetto creato in Visual Studio 2012. Questa limitazione si applica a tutti i progetti C++/CLI, non solo a progetti di unit test C++/CLI.  
+>  Visual Studio 2010 non è in grado di aprire un progetto C++/CLI destinato al set di strumenti 11.0, ovvero un progetto creato in Visual Studio 2012 o versioni successive. Questa limitazione si applica a tutti i progetti C++/CLI, non solo a progetti di unit test C++/CLI.  
   
 > [!NOTE]
 >  È possibile eseguire di nuovo gli unit test usando vstest.console.exe dalla riga di comando. Per altre informazioni sull'uso di vstest.console.exe, vedere [Opzioni della riga di comando di VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options) oppure eseguire il comando usando l'opzione per la Guida: **vstest.console.exe /?**. È possibile continuare a eseguire gli unit test esistenti usando MStest.exe. Per altre informazioni, vedere [Eseguire test automatizzati dalla riga di comando con MSTest](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest) e [Opzioni della riga di comando di MSTest.exe](/devops-test-docs/test/mstest-exe-command-line-options).  
   
  Un'altra modifica significativa è il nuovo Esplora test. In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sono state deprecate alcune delle finestre di test disponibili nelle versioni precedenti di Visual Studio, ad esempio la finestra Visualizzazione test. Esplora test è progettato per supportare meglio gli sviluppatori e i team che incorporano unit test nelle procedure di sviluppo del software. Per altre informazioni, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md).  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Problemi di compatibilità tra Visual Studio 2010 SP1 e Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Problemi di compatibilità tra Visual Studio 2010 SP1 e Visual Studio 2012 o versioni successive  
  Ecco alcuni problemi da tenere presente quando si esegue la migrazione di unit test tra Visual Studio 2010 SP1 e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]:  
   
 |Funzionalità di unit test|Problema|Soluzione|  
@@ -65,4 +48,3 @@ ms.lasthandoff: 05/13/2017
  [Eseguire unit test del codice](../test/unit-test-your-code.md)   
  [Aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Aggiornamento dei test codificati dell'interfaccia utente da Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

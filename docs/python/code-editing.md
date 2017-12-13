@@ -1,28 +1,23 @@
 ---
 title: Modifica del codice Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/10/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 99859fc5b9e48078b037f6d68ad3d3847658a1d0
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="editing-python-code"></a>Modifica del codice Python
 
 Gli sviluppatori passano la maggior parte del tempo nell'editor di codice, quindi il [supporto per Python in Visual Studio](installation.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione. 
@@ -35,11 +30,11 @@ Contenuto dell'argomento:
 
 Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Scrittura di codice nell'Editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md). Vedere anche [Struttura](../ide/outlining.md) per informazioni su questa funzionalità che consente di concentrarsi su sezioni specifiche del codice. Il supporto di Python include l'uso del Visualizzatore oggetti di Visual Studio (**Visualizza > Altre finestre > Visualizzatore oggetti** o CTRL+W,J) per esaminare le classi definite in ogni modulo e le funzioni definite in tali classi. 
 
-L'editor è anche integrato con la finestra interattiva in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Per informazioni dettagliate, vedere [Introduzione - Uso della finestra interattiva REPL])(getting-started.md#using-the-interactive-repl-window) e [Uso della finestra interattiva - Comando per inviare codice alla finestra interattiva](interactive-repl.md#send-code-to-interactive-command).
+L'editor è anche integrato con la finestra interattiva in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Vedere [Passaggio 3: Uso della finestra interattiva REPL](vs-tutorial-01-03.md) e [Uso della finestra interattiva - Comando per inviare codice alla finestra interattiva](interactive-repl.md#send-code-to-interactive-command) per informazioni dettagliate.
 
-Per un'introduzione alla modifica del codice Python, vedere [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introduzione a Python in Visual Studio, parte 3: modifica) (youtube.com, 3m 48s):
+Per un'introduzione alla modifica del codice Python, vedere [Editing Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Modifica del codice Python) (Microsoft Virtual Academy, 2m30s):
 
-> [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 
 ## <a name="intellisense"></a>IntelliSense
 
@@ -123,8 +118,7 @@ I frammenti di codice sono parti di codice che possono essere inserite nei file 
 
 ![Gestione frammenti di codice](media/code-editing-code-snippets-manager.png)
 
-Per creare frammenti personalizzati, vedere [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
-Per personalizzare i frammenti di codice, è possibile [creare un frammento di codice](https://msdn.microsoft.com/library/ms165394.aspx) e poi importarlo. 
+Per creare frammenti personalizzati, vedere [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). 
 
 Se si scrive un frammento di codice particolarmente utile e si vuole condividerlo, pubblicarlo in un gist e [segnalarlo a Microsoft](https://github.com/Microsoft/PTVS/issues). È possibile che venga incluso in una versione futura di Visual Studio.
 

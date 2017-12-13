@@ -1,27 +1,24 @@
 ---
 title: Installazione di R Tools per Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 10/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.tgt_pltfrm: 
 ms.devlang: r
 ms.topic: article
 ms.assetid: 3ff60292-1b88-4ee9-b2b2-edd957f1a519
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7a509743ce09f2bbfb69b62060abedb48e9777b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 8e35c82a5f8583a609e9fccbacb0b27d9c3eac8f
-ms.contentlocale: it-it
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Come installare R Tools per Visual Studio
 
 Contenuto dell'argomento:
@@ -32,7 +29,7 @@ Contenuto dell'argomento:
 - [Installazione offline](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
-> Dopo aver installato R Tools, si potrebbe voler configurare Visual Studio per un layout scientifico di dati ottimizzato, come descritto nell'argomento [Options](options.md#data-scientist-layout) (Opzioni).
+> Dopo aver installato R Tools, si potrebbe voler configurare Visual Studio per un layout scientifico di dati ottimizzato, come descritto nell'argomento [Options](options.md) (Opzioni).
 
 ## <a name="supported-versions-of-visual-studio"></a>Versioni supportate di Visual Studio
 
@@ -69,9 +66,12 @@ Microsoft R Open e CRAN R consentono l'uso di più versioni affiancate. Microsof
 
 ### <a name="install-the-r-tools"></a>Installare R Tools
 
-Scaricare RTVS corrente da [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). RTVS verifica la disponibilità di una versione appropriata di Visual Studio e consente anche di installare un interprete di R, se non è già installato.
+Scaricare RTVS corrente per Visual Studio 2015 da [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). RTVS verifica la disponibilità di una versione appropriata di Visual Studio e consente anche di installare un interprete di R, se non è già installato.
 
-RTVS viene installato in: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
+> [!Note]
+> Il programma di installazione autonomo RTVS funziona solo con Visual Studio 2015. Per Visual Studio 2017, installare il supporto R tramite il [carico di lavoro delle applicazioni analitiche e di analisi scientifica dei dati](#installing-rtvs-in-visual-studio-2017) come descritto in precedenza.
+
+RTVS per Visual Studio 2015 è installato:`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
 ## <a name="offline-installation-of-visual-studio-and-rtvs"></a>Installazione offline di Visual Studio e RTVS
 
@@ -82,7 +82,7 @@ L'installazione offline è utile per i computer che non sono connessi a Internet
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Scaricare i programmi di installazione offline RTVS da [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) e [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Per Visual Studio 2015, scaricare i programmi di installazione offline RTVS da [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) e [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
 
 1. Installare Visual Studio e RTVS da un programma di installazione offline.
 
@@ -92,4 +92,3 @@ L'installazione offline è utile per i computer che non sono connessi a Internet
 - [R Tools sample projects](getting-started-samples.md) (Progetti di esempio di R Tools)
 - [Getting help](getting-started-help.md) (Informazioni di supporto)
 - [Option settings](options.md) (Impostazioni delle opzioni)
-

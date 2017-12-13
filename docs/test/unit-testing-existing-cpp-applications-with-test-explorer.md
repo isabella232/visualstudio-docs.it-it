@@ -1,23 +1,12 @@
 ---
-title: Esecuzione di unit test delle applicazioni C++ esistenti con Esplora test | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testing unità delle applicazioni C++ esistenti con Esplora test
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>Come usare il framework di testing unità Microsoft per C++
 È consigliabile, prima di modificare un'applicazione esistente, assicurarsi di avere una buona copertura con unit test. Questo permette di avere la certezza che le modifiche non abbiano introdotto bug. Se l'applicazione non dispone di unit test, si possono aggiungere usando le tecniche illustrate in questo argomento. In questo argomento viene descritto come aggiungere unit test per codice esistente in Visual C++, partendo dalla decisione di come verificare il codice per la creazione, la scrittura e infine eseguire i test.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Decidere come testare il codice  
@@ -29,7 +18,7 @@ ms.lasthandoff: 10/27/2017
   
  Esistono diversi modi per verificare il codice prodotto, a seconda che si espongano o meno le interfacce che si desidera testare. Scegliere uno dei modi seguenti:  
   
- **Gli unit test useranno solo funzioni esportate da codice sottoposto a test:**  
+ **Gli unit test possono chiamare solo funzioni esportate da codice sottoposto a test:**  
  Aggiungere un progetto di test separato. Nel progetto di test, aggiungere un riferimento al progetto incluso nel test.  
   
  Passare alla procedura [Per fare riferimento a funzioni esportate dal progetto di test](#projectRef).  
@@ -46,7 +35,7 @@ ms.lasthandoff: 10/27/2017
   
  Passare alla procedura [Per modificare il codice sottoposto a test per una libreria statica](#staticLink).  
   
- **Gli unit test devono usare funzioni e dati privati e il codice deve essere compilato come DLL (libreria a collegamento dinamico):**  
+ **Gli unit test devono usare funzioni membro e dati privati e il codice deve essere compilato come DLL (libreria a collegamento dinamico):**  
  Aggiungere gli unit test nello stesso progetto del codice prodotto.  
   
  Passare alla procedura [Per aggiungere unit test nello stesso progetto](#sameProject).  
@@ -65,9 +54,9 @@ ms.lasthandoff: 10/27/2017
   
  Continuare con la procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).  
   
-###  <a name="projectRef"></a> Per fare riferimento a funzioni esportate dal progetto di test  
+###  <a name="projectRef"></a> Per fare riferimento a funzioni della DLL esportate dal progetto di test  
   
--   Se un progetto incluso nel test esporta le funzioni che si vogliono testare, è possibile aggiungere un riferimento al progetto di codice dal progetto di test.  
+-   Se un progetto da testare è una DLL che esporta le funzioni che si vogliono testare, è possibile aggiungere un riferimento al progetto di codice dal progetto di test.  
   
     1.  Creare un progetto di test C++.  
   
@@ -162,8 +151,11 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="run-the-tests"></a>Eseguire i test  
   
-1.  Dal menu **Visualizza** scegliere **Altre finestre**, **Esplora test**.  
+1.  Nel menu **Test** scegliere **Finestre**, **Esplora test**.  
+2. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
   
-2.  In Esplora test scegliere **Esegui tutto**.  
+2.  In Esplora test scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
   
- Per altre informazioni, vedere [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md).
+## <a name="see-also"></a>Vedere anche
+[Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
+

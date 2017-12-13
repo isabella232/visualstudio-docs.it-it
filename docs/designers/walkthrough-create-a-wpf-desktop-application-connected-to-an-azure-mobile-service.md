@@ -1,30 +1,32 @@
 ---
+redirect_url: /azure/app-service-mobile/app-service-mobile-windows-store-dotnet-get-started
 title: 'Procedura dettagliata: Creare un''applicazione desktop WPF connessa a un servizio mobile di Azure | Microsoft Docs'
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: d21c7fcc7c22c3a260d79856c66bb15d5166c444
-ms.contentlocale: it-it
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
 È possibile usare Windows Presentation Foundation (WPF) per creare rapidamente un'applicazione desktop moderna che usa un servizio mobile di Azure per archiviare e fornire i dati.  
   
-##  <a name="Requirements"></a> Prerequisiti  
- Per completare la procedura dettagliata sarà necessario disporre di:  
+## <a name="prerequisites"></a>Prerequisiti  
+Per completare la procedura dettagliata sarà necessario disporre di:  
   
 -   Visual Studio 2017 o qualsiasi versione che supporti lo sviluppo WPF.  
   
@@ -41,19 +43,19 @@ ms.lasthandoff: 09/26/2017
   
 1.  Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Visual C#** o **Visual Basic** e scegliere il nodo **Windows** , quindi espandere il nodo **Windows** e scegliere il nodo **Desktop classico** .  
+2.  Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Visual C#** o **Visual Basic** e scegliere il nodo **Desktop classico di Windows**.  
   
-3.  Nell'elenco dei modelli scegliere il modello **Applicazione WPF** .  
+3.  Nell'elenco dei modelli scegliere il modello **App WPF (.NET Framework)**.  
   
 4.  Nella finestra di dialogo **Nome** immettere `WPFQuickStart`, quindi scegliere il pulsante **OK** .  
   
-     Il progetto viene creato, i file del progetto vengono aggiunti a **Esplora soluzioni**e viene visualizzata la finestra di progettazione per la finestra dell'applicazione predefinita denominata **MainWindow.xaml** .  
+     Il progetto viene creato e i file del progetto vengono aggiunti a **Esplora soluzioni**. Viene visualizzata la finestra di progettazione per la finestra dell'applicazione predefinita denominata **MainWindow. XAML**.  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Per aggiungere un riferimento a Servizi mobili di Windows Azure SDK  
   
-1.  In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Riferimenti** e scegliere **Gestisci pacchetti NuGet**.  
+1.  In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **Riferimenti** e scegliere **Gestisci pacchetti NuGet...**.  
   
-2.  Nella finestra di dialogo **Gestione pacchetti NuGet**scegliere il campo **Cerca** e immettere `mobileservices`.  
+2.  In **Gestione pacchetti NuGet** scegliere **Sfoglia** nella parte superiore e immettere `mobileservices` nella casella di ricerca.  
   
 3.  Nel riquadro sinistro scegliere **WindowsAzure.MobileServices**, quindi nel riquadro destro scegliere il pulsante **Installa** .  
   
@@ -68,7 +70,7 @@ ms.lasthandoff: 09/26/2017
     >  Se non si accettano le condizioni di licenza, scegliere il pulsante **I Decline** (Non accetto). Non sarà possibile completare il resto della procedura dettagliata.  
   
 ## <a name="create-the-user-interface"></a>Creare l'interfaccia utente  
- Il passaggio successivo consiste nel creare l'interfaccia utente per l'applicazione. Verrà creato prima di tutto un controllo utente riutilizzabile che visualizza un layout affiancato standard a due riquadri. Il controllo utente verrà quindi aggiunto alla finestra principale dell'applicazione e verranno aggiunti anche i controlli per immettere e visualizzare i dati, infine verrà scritto il codice per definire l'interazione con il back-end del servizio mobile.  
+Il passaggio successivo consiste nel creare l'interfaccia utente per l'applicazione. Verrà creato prima di tutto un controllo utente riutilizzabile che visualizza un layout affiancato standard a due riquadri. Il controllo utente verrà quindi aggiunto alla finestra principale dell'applicazione e verranno aggiunti anche i controlli per immettere e visualizzare i dati, infine verrà scritto il codice per definire l'interazione con il back-end del servizio mobile.  
   
 #### <a name="to-add-a-user-control"></a>Per aggiungere un controllo utente  
   
@@ -85,17 +87,17 @@ ms.lasthandoff: 09/26/2017
 5.  Nel riquadro inferiore della finestra di progettazione selezionare i tag `<Grid>` e `</Grid>` e sostituirli con il codice XAML seguente:  
   
     ```xaml  
-    <Grid VerticalAlignment="Top">  
-            <StackPanel Orientation="Horizontal">  
-                <Border BorderThickness="0,0,1,0" BorderBrush="DarkGray" Margin="0,10" MinWidth="70">  
-                    <TextBlock Text="{Binding Number}" FontSize="45" Foreground="DarkGray" Margin="20,0"/>  
-                </Border>  
-                <StackPanel>  
-                    <TextBlock Text="{Binding Title}" Margin="10,10,0,0" FontSize="16" FontWeight="Bold" />  
-                    <TextBlock Text="{Binding Description}" Margin="10,0,0,0" TextWrapping="Wrap" MaxWidth="500" />  
-                </StackPanel>  
-            </StackPanel>  
-        </Grid>  
+    <Grid VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal">
+            <Border BorderThickness="0,0,1,0" BorderBrush="DarkGray" Margin="0,10" MinWidth="70">
+                <TextBlock Text="{Binding Number}" FontSize="45" Foreground="DarkGray" Margin="20,0"/>
+            </Border>
+            <StackPanel>
+                <TextBlock Text="{Binding Title}" Margin="10,10,0,0" FontSize="16" FontWeight="Bold" />
+                <TextBlock Text="{Binding Description}" Margin="10,0,0,0" TextWrapping="Wrap" MaxWidth="500" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>  
     ```  
   
      Questo codice XAML crea un layout riutilizzabile con i segnaposto per i campi numero, titolo e descrizione. In fase di esecuzione i segnaposti possono essere sostituiti con un testo come illustrato nella figura seguente.  
@@ -104,7 +106,7 @@ ms.lasthandoff: 09/26/2017
   
 6.  In **Esplora soluzioni**espandere il nodo **QuickStartTask.xaml** e aprire il file **QuickStartTask.xaml.cs** o **QuickStartTask.xaml.vb** .  
   
-7.  Nell'editor del codice sostituire lo spazio dei nomi `namespace WPFQuickStart.Common` (C#) o il metodo `Public Class QuickStartTask` (VB) con il codice seguente:  
+7.  Nell'editor del codice sostituire lo spazio dei nomi `namespace WPFQuickStart.Common` (C#) o la classe `Public Class QuickStartTask` (VB) con il codice seguente:  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -225,62 +227,52 @@ ms.lasthandoff: 09/26/2017
 5.  Selezionare i tag `<Grid>` e `</Grid>` e sostituirli con il codice XAML seguente:  
   
     ```xaml  
-    <Grid>  
-  
-            <Grid Margin="50,50,10,10">  
-                <Grid.ColumnDefinitions>  
-                    <ColumnDefinition Width="*" />  
-                    <ColumnDefinition Width="*" />  
-                </Grid.ColumnDefinitions>  
-                <Grid.RowDefinitions>  
-                    <RowDefinition Height="Auto" />  
-                    <RowDefinition Height="*" />  
-                </Grid.RowDefinitions>  
-  
-                <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20">  
-                    <StackPanel>  
-                        <TextBlock Foreground="#0094ff" FontFamily="Segoe UI Light" Margin="0,0,0,6">MICROSOFT AZURE MOBILE SERVICES</TextBlock>  
-                        <TextBlock Foreground="Gray" FontFamily="Segoe UI Light" FontSize="45" ><Run Text="My Todo List"/></TextBlock>  
-                    </StackPanel>  
-                </Grid>  
-  
-                <Grid Grid.Row="1">  
-                    <StackPanel>  
-  
-                        <local:QuickStartTask Number="1" Title="Insert a TodoItem" Description="Enter some text below and click Save to insert a new todo item into the list." />  
-  
-                        <StackPanel Orientation="Horizontal" Margin="72,0,0,0">  
-                            <TextBox x:Name="TodoInput" Margin="5" MinWidth="300"/>  
-                            <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Save"/>  
-                        </StackPanel>  
-  
-                    </StackPanel>  
-                </Grid>  
-  
-                <Grid Grid.Row="1" Grid.Column="1">  
-                    <Grid.RowDefinitions>  
-                        <RowDefinition Height="Auto" />  
-                        <RowDefinition />  
-                    </Grid.RowDefinitions>  
-                    <StackPanel>  
-                        <local:QuickStartTask Number="2" Title="Query and Update Data" Description="Click the Refresh button to load the unfinished TodoItems from the Azure Mobile Service. Select the checkbox to mark a ToDo item as complete and update the list." />  
-                        <Button Margin="72,0,0,0" Name="ButtonRefresh" Click="ButtonRefresh_Click">Refresh</Button>  
-                    </StackPanel>  
-  
-                    <ListView Name="ListItems" Margin="62,10,0,0" Grid.Row="1">  
-                        <ListView.ItemTemplate>  
-                            <DataTemplate>  
-                                <StackPanel Orientation="Horizontal">  
-                                    <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>  
-                                </StackPanel>  
-                            </DataTemplate>  
-                        </ListView.ItemTemplate>  
-                    </ListView>  
-  
-                </Grid>  
-  
-            </Grid>  
-        </Grid>  
+    <Grid>
+        <Grid Margin="50,50,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Foreground="#0094ff" FontFamily="Segoe UI Light" Margin="0,0,0,6">MICROSOFT AZURE MOBILE SERVICES</TextBlock>
+                    <TextBlock Foreground="Gray" FontFamily="Segoe UI Light" FontSize="45" ><Run Text="My Todo List"/></TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel>
+                    <local:QuickStartTask Number="1" Title="Insert a TodoItem" Description="Enter some text below and click Save to insert a new todo item into the list." />
+                    <StackPanel Orientation="Horizontal" Margin="72,0,0,0">
+                        <TextBox x:Name="TodoInput" Margin="5" MinWidth="300"/>
+                        <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Save"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel>
+                    <local:QuickStartTask Number="2" Title="Query and Update Data" Description="Click the Refresh button to load the unfinished TodoItems from the Azure Mobile Service. Select the checkbox to mark a ToDo item as complete and update the list." />
+                    <Button Margin="72,0,0,0" Name="ButtonRefresh" Click="ButtonRefresh_Click">Refresh</Button>
+                </StackPanel>
+                <ListView Name="ListItems" Margin="62,10,0,0" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox Name="CheckBoxComplete" IsChecked="{Binding Complete, Mode=TwoWay}" Checked="CheckBoxComplete_Checked" Content="{Binding Text}" Margin="10,5" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+    </Grid>  
     ```  
   
      Le modifiche si riflettono nella finestra di progettazione. Anche in questo caso l'interfaccia utente potrebbe essere stata definita aggiungendo i controlli dalla finestra **Casella degli strumenti** e impostando le proprietà nella finestra **Proprietà** . Tutto ciò che può essere eseguito nella finestra di progettazione può essere eseguito nel codice XAML e viceversa.  
@@ -486,7 +478,7 @@ ms.lasthandoff: 09/26/2017
     > [!NOTE]
     >  Potrebbe essere necessario modificare la parte numerica dell'URL. Microsoft Azure richiede un URL univoco per ogni servizio mobile.  
   
-     L'URL per il servizio verrà impostato su *https://wpfquickstart01.azure-mobile.net/*.  
+    L'URL per il servizio verrà impostato su *https://wpfquickstart01.azure-mobile.net/*.  
   
 4.  Nell'elenco **DATABASE** scegliere un'opzione di database. Poiché si tratta di un'applicazione che probabilmente non sarà molto usata, è possibile scegliere l'opzione **Crea un database SQL 20 MB gratuito** o scegliere il database gratuito già associato alla sottoscrizione.  
   
@@ -549,7 +541,7 @@ ms.lasthandoff: 09/26/2017
   
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione  
   
-1.  Nella barra dei menu scegliere **Debug**, **Avvia debug** (o premere F5).  
+1.  Nella barra dei menu scegliere **Debug**, **Avvia debug** o premere **F5**.  
   
 2.  Nella finestra di dialogo **Insert a TodoItem** immettere `Do something`, quindi scegliere il pulsante **Salva** .  
   
@@ -564,7 +556,7 @@ ms.lasthandoff: 09/26/2017
      In questo modo viene chiamato il metodo **UpdateCheckedTodoItem** e viene rimosso l'elemento sia dall'elenco che dal database.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- È stato completato un esempio abbastanza generico di un'applicazione desktop WPF con un back-end di Azure. Naturalmente, è probabile che un'applicazione reale sia molto più complessa, ma si applicano gli stessi concetti di base. Vedere [WPF in .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ È stato completato un esempio abbastanza generico di un'applicazione desktop WPF con un back-end di Azure. Naturalmente, è probabile che un'applicazione reale sia molto più complessa, ma si applicano gli stessi concetti di base. Vedere [WPF in .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  È possibile rendere più interessante l'interfaccia utente mediante l'aggiunta di colore, forme, elementi grafici e persino animazioni. Vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) e [Creazione di un'interfaccia utente usando Blend per Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Per un confronto tra gli strumenti, vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
 

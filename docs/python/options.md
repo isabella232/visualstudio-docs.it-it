@@ -1,32 +1,29 @@
 ---
 title: Opzioni di Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3c714867-7a64-4b1e-aca8-09d956192279
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: a936c7fb80dbbe6305732a26b5e0a09a737bf3a3
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: it-it
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
 Per visualizzare le opzioni di Python, usare il comando di menu **Strumenti > Opzioni**, assicurarsi che sia selezionata l'opzione **Mostra tutte le impostazioni**, quindi passare a **Strumenti Python**:
@@ -39,6 +36,7 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 
 - [Opzioni generali](#general-options)
 - [Opzioni di debug](#debugging-options)
+- [Opzioni di diagnostica](#diagnostics-options)
 - [Opzioni della finestra interattiva](#interactive-windows-options)
 - [Opzioni avanzate dell'editor di Python](#advanced-python-editor-options)
 
@@ -70,6 +68,17 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 | Abilita il debug della libreria standard Python | Disattivato | Consente di eseguire il codice sorgente della libreria standard durante il debug, ma aumenta il tempo necessario all'avvio del debugger.|
 
 ![Finestra di dialogo Opzioni di Python, scheda Debug](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>Opzioni di diagnostica
+
+| Opzione | Default | Descrizione |
+| --- | --- | --- |
+| Includi log di analisi | Attivato | Include log dettagliati relativi all'analisi di ambienti Python installati durante il salvataggio della diagnostica in un file o la copia negli Appunti tramite i pulsanti. Questa opzione può aumentare notevolmente le dimensioni del file generato, ma spesso è necessaria per diagnosticare problemi di IntelliSense. |
+| Salva diagnostica nel file (pulsante) | n/d | Richiede un nome di file, quindi salva il log in un file di testo. |
+| Copia diagnostica negli Appunti (pulsante) | n/d | Inserisce l'intero contenuto del log negli Appunti. Questa operazione potrebbe richiedere tempo a seconda delle dimensioni del log. |
+
+![Finestra di dialogo Opzioni di Python, scheda Diagnostica](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Opzioni della finestra interattiva
 
