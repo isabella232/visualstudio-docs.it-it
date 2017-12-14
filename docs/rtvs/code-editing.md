@@ -1,26 +1,25 @@
 ---
 title: Modifica del codice con R Tools per Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Modifica del codice R in Visual Studio
- 
+
 R Tools per Visual Studio (RTVS) si adatta allo strumento di modifica di Visual Studio in particolare per quanto riguarda il codice R, mantenendo tutte le funzionalità e la possibilità di usare le estensioni. Se si preferiscono i tasti di scelta rapida VIM, è ad esempio possibile installare l'[estensione VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) gratuita da Visual Studio Gallery.
 
 Contenuto dell'argomento:
@@ -33,8 +32,7 @@ Contenuto dell'argomento:
 - [Inserimento di commenti Roxygen](#inserting-roxygen-comments)
 - [Opzioni dell'editor](#editor-options)
 
-Vedere anche gli argomenti su [IntelliSense](code-intellisense.md), sui [frammenti di codice](code-snippets.md) e su [R Markdown](rmarkdown.md).
-
+Vedere anche gli argomenti su [IntelliSense](code-intellisense.md), [linting](code-linting.md), [frammenti di codice](code-snippets.md) e [R Markdown](rmarkdown.md).
 
 ## <a name="syntax-highlighting"></a>Evidenziazione della sintassi 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 Per modificare la formattazione dell'intero file, selezionare **Modifica > Avanzate > Formatta documento** (CTRL+E,D).
 
 La formattazione automatica è un'operazione distinta che può essere annullata. Ad esempio, se si incolla il codice nell'editor e si applica la formattazione, selezionando **Modifica > Annulla** o premendo CTRL+Z una volta, la formattazione viene annullata. Selezionando di nuovo Annulla, viene invertita l'operazione d'incollamento.
- 
+
 Le opzioni di formattazione, inclusa la disattivazione della formattazione, vengono impostate usando **Strumenti > Opzioni** nella scheda **Editor di testo > R > Avanzate**. È possibile passare direttamente a questa pagina usando il comando **R Tools > Opzioni editor** o facendo clic nell'editor e selezionando **Opzioni di formattazione**. Vedere la sezione relativa alle [opzioni dell'editor](#editor-options) per informazioni dettagliate.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Inserimento di commenti Roxygen
 
 RTVS offre un collegamento per la generazione di commenti [Roxygen](http://roxygen.org/) che usa i nomi dei parametri di una funzione. È sufficiente digitare `###` in una riga vuota sopra la definizione della funzione:
@@ -144,5 +142,5 @@ Le opzioni nella scheda **R > Avanzate** sono specifiche di RTVS:
 | | Elenco di completamento con il tasto TAB | Disattivato | Richiama l'elenco di completamento digitando uno o più caratteri e premendo TAB. |
 | | Corrispondenza con nomi di argomento parzialmente digitati | Disattivato | Durante la digitazione dei nomi di un argomento in una chiamata di funzione, la firma visualizza una descrizione che meglio corrisponde all'argomento. |
 | Finestra interattiva | Controllo della sintassi nella console R | Disattivato | Applica il controllo della sintassi nella finestra interattiva. Il controllo della sintassi non funziona correttamente se viene applicato a istruzioni su più righe. | 
-| struttura | Struttura del codice | Attivato | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. | 
+| struttura | Struttura del codice | Attivato | Crea automaticamente aree comprimibili in caso di istruzioni su più righe. |
 | Controllo della sintassi | Mostra errori di sintassi | Attivato | Abilita il controllo automatico della sintassi del codice. |
