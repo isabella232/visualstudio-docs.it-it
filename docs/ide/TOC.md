@@ -1,6 +1,7 @@
 # [Panoramica dell'IDE di Visual Studio](visual-studio-ide.md)
-# Guide introduttive all'IDE
+# Guide rapide introduttive
 ## [Presentazione dell'IDE di Visual Studio](quickstart-ide-orientation.md)
+## [Progetti e soluzioni](quickstart-projects-solutions.md)
 ## [Personalizzazione del tema e dei colori del testo](quickstart-personalize-the-ide.md)
 ## [Scrittura di codice nell'editor](quickstart-editor.md)
 # [Introduzione allo sviluppo con Visual Studio](get-started-developing-with-visual-studio.md)
@@ -54,7 +55,6 @@
 ## [Suggerimenti sulle prestazioni di Visual Studio](visual-studio-performance-tips-and-tricks.md)
 # [Soluzioni e progetti in Visual Studio](solutions-and-projects-in-visual-studio.md)
 ## [Creazione di soluzioni e progetti](creating-solutions-and-projects.md)
-## [Aggiunta e rimozione di elementi di progetto](adding-and-removing-project-items.md)
 ## [Tipi di file di soluzioni e di progetto](reference/project-and-solution-file-types.md)
 ## [Gestione delle proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)
 ## [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md)
@@ -68,8 +68,7 @@
 ## [Gestione delle firme di assembly e manifesti](managing-assembly-and-manifest-signing.md)
 ### [Procedura: Firmare manifesti dell'applicazione e di distribuzione](how-to-sign-application-and-deployment-manifests.md)
 ## [Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)](how-to-specify-an-application-icon-visual-basic-csharp.md)
-## [Sviluppo per una versione specifica di .NET Framework](targeting-a-specific-dotnet-framework-version.md)
-### [Cenni preliminari sul multitargeting di Visual Studio](visual-studio-multi-targeting-overview.md)
+## [Panoramica del multitargeting di Visual Studio](visual-studio-multi-targeting-overview.md)
 ### [Procedura: Destinare una versione di .NET Framework](how-to-target-a-version-of-the-dotnet-framework.md)
 ## [Creazione di modelli di progetti e di elementi](creating-project-and-item-templates.md)
 ### [Procedura: Creare modelli di progetto](how-to-create-project-templates.md)
