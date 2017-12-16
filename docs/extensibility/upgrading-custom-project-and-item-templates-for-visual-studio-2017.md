@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Aggiornamento progetto personalizzato e i modelli di Visual Studio 2017
 A partire da Visual Studio 2017, Visual Studio in fase di modifica la modalità consente di individuare modelli di progetto e di elemento che sono stati installati da un file con estensione msi o di un'estensione VSIX. Se si dispone di estensioni che utilizzano modelli di elemento o di progetto personalizzato, è necessario aggiornare le estensioni. Questo argomento illustra le operazioni da eseguire.  
@@ -26,7 +26,7 @@ A partire da Visual Studio 2017, Visual Studio in fase di modifica la modalità 
  Se si desidera creare un modello di progetto o un elemento come parte di un'estensione VSIX, vedere [creazione Custom Project and Item Templates](../extensibility/creating-custom-project-and-item-templates.md).  
   
 ## <a name="template-scanning"></a>Modello di analisi  
- In precedenza, **devenv /setup** o **devenv /installvstemplates** analizzati nel disco locale per trovare i modelli di progetto e di elemento. A partire da Preview 4, l'analisi verrà eseguita solo per il percorso a livello utente (**%USERPROFILE%\Documents\\< versione di Visual Studio\>\My Exported Templates\\**) che viene utilizzato per generato da modelli di **File / esportare modelli** comando.  
+ In precedenza, **devenv /setup** o **devenv /installvstemplates** analizzati nel disco locale per trovare i modelli di progetto e di elemento. A partire da Preview 4, l'analisi verrà eseguita solo per il percorso a livello utente (**%USERPROFILE%\Documents\\< versione di Visual Studio\>\My Exported Templates\\**) che viene utilizzato per generato da modelli di **File > Esporta modelli** comando.  
   
  Per altre posizioni (non dell'utente), è necessario includere un file manifest(.vstman) che specifica il percorso e altre caratteristiche del modello. Viene generato il file di .vstman insieme al file con estensione vstemplate utilizzato per i modelli. Se si installa l'estensione con un'estensione VSIX, è possibile eseguire ricompilando l'estensione in Visual Studio 2017. Ma se si utilizza un file con estensione msi, è necessario apportare le modifiche manualmente. Per un elenco di ciò che occorre per apportare queste modifiche, vedere **aggiornamenti per estensioni installate con un. MSI** più avanti in questo argomento.  
   

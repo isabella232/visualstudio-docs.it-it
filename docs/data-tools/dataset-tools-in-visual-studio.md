@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 > [!NOTE]
@@ -83,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     -   [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)  
   
--   Eseguire una query e cercare i dati nel set di dati. Per ulteriori informazioni, vedere [set di dati di Query](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]Abilita [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) su dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Eseguire una query e cercare i dati nel set di dati. Per ulteriori informazioni, vedere [set di dati di Query](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]Abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) su dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Utilizzare il **origini dati** finestra consente di associare i controlli dell'interfaccia utente per il set di dati o le singole colonne e per specificare quali colonne sono modificabili dall'utente. Per ulteriori informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

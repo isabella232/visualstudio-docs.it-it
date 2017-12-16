@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
 Un Windows Form è una delle applicazioni gestite più comuni. Un Windows Form consente di creare un'applicazione Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.  
@@ -126,7 +126,7 @@ Un Windows Form è una delle applicazioni gestite più comuni. Un Windows Form c
   
 4.  Nel **Debug** menu, scegliere **Windows**, quindi **espressioni di controllo**, fare clic su **Watch1**.  
   
-5.  Nel **Watch1** finestra, fare clic su una riga vuota. Nel **nome** colonna, tipo `textBox1.Text` (se si utilizza Visual Basic, Visual c# o Visual c#) o `textBox1->Text` (se si utilizza C++), quindi premere INVIO.  
+5.  Nel **Watch1** finestra, fare clic su una riga vuota. Nel **nome** colonna, tipo `textBox1.Text` (se si utilizza Visual Basic o Visual c#) o `textBox1->Text` (se si utilizza C++), quindi premere INVIO.  
   
      Il **Watch1** finestra viene visualizzato il valore di questa variabile tra virgolette:  
   

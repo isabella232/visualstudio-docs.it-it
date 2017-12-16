@@ -16,11 +16,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a27054ef8732b96d5d71cbc22d567f4509877886
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c241766a38ffc172924516e70b86ebdc22e117e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Individuare le eccezioni non conformi a CLS nei gestori generali
 |||  
@@ -83,5 +83,4 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="see-also"></a>Vedere anche  
  [Eccezioni e gestione delle eccezioni](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)   
  [Ilasm.exe (Assembler IL)](/dotnet/framework/tools/ilasm-exe-il-assembler)   
- [Override di controlli di sicurezza](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Indipendenza del linguaggio e componenti indipendenti dal linguaggio](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Indipendenza del linguaggio e componenti indipendenti dal linguaggio](/dotnet/standard/language-independence-and-language-independent-components)

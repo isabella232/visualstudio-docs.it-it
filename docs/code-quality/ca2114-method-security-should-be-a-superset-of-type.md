@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La sicurezza del metodo deve essere un superset del tipo
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Breaking Change|Interruzione|  
   
 ## <a name="cause"></a>Causa  
- Un tipo ha la sicurezza dichiarativa e uno dei relativi metodi ha la sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [le richieste di collegamento](/dotnet/framework/misc/link-demands) o [richieste di ereditarietà](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)e le autorizzazioni selezionata per il tipo non sono un sottoinsieme delle autorizzazioni controllato dal metodo.  
+ Un tipo ha la sicurezza dichiarativa e uno dei relativi metodi ha la sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [le richieste di collegamento](/dotnet/framework/misc/link-demands), e le autorizzazioni selezionate per il tipo non sono un sottoinsieme delle autorizzazioni controllato dal metodo.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
  Un metodo non può presentare sia una sicurezza dichiarativa a livello di metodo e a livello di tipo per la stessa azione. I due controlli non sono stati combinati; viene applicata solo la richiesta a livello di metodo. Ad esempio, se un tipo richiede l'autorizzazione `X`, e uno dei relativi metodi richiede l'autorizzazione `Y`, codice non è necessario disporre dell'autorizzazione `X` per eseguire il metodo.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[Nessuna autorizzazione di lettura (richiesta dal metodo)] Impossibile accedere alle informazioni personali: richiesta non riuscita.**   
 ## <a name="see-also"></a>Vedere anche  
  [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)   
- [Richieste di ereditarietà](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Richieste di collegamento](/dotnet/framework/misc/link-demands)   
  [Dati e modellazione](/dotnet/framework/data/index)

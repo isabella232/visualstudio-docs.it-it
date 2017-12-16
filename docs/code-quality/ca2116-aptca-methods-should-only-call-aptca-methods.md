@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: I metodi APTCA devono chiamare solo metodi APTCA
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Un chiamante parzialmente attendibile `X` può chiamare metodo `M1`, provocando `M1` chiamare `M2`. Poiché `M2` non hanno l'attributo APTCA, il relativo chiamante immediato (`M1`) deve soddisfare una richiesta di collegamento per l'attendibilità totale; `M1` sia totalmente attendibile e pertanto soddisfa questo controllo. Il rischio di sicurezza è perché `X` contribuisce a soddisfare la richiesta di collegamento che consente di proteggere `M2` da chiamanti non attendibili. Di conseguenza, i metodi con l'attributo APTCA non devono chiamare metodi che non dispone dell'attributo.  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- Se l'attributo APCTA è necessaria, utilizzare una richiesta per proteggere il metodo che chiama l'assembly con attendibilità totale. Le autorizzazioni esatte dipenderà è richiesta la funzionalità esposta dal metodo. Se possibile, proteggere il metodo con una richiesta per l'attendibilità totale garantire che la funzionalità sottostante non è esposta a chiamanti parzialmente attendibili. In caso contrario, selezionare un set di autorizzazioni che protegge in modo efficace le funzionalità esposte. Per ulteriori informazioni sulle richieste, vedere [richieste](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Se l'attributo APCTA è necessaria, utilizzare una richiesta per proteggere il metodo che chiama l'assembly con attendibilità totale. Le autorizzazioni esatte dipenderà è richiesta la funzionalità esposta dal metodo. Se possibile, proteggere il metodo con una richiesta per l'attendibilità totale garantire che la funzionalità sottostante non è esposta a chiamanti parzialmente attendibili. In caso contrario, selezionare un set di autorizzazioni che protegge in modo efficace le funzionalità esposte.  
   
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che la funzionalità esposta dal metodo non direttamente o indirettamente consente ai chiamanti di accedere a informazioni riservate, operazioni o risorse che possono essere utilizzate in modo distruttivo.  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vedere anche  
  [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)   
- [Assembly di .NET framework richiamabile da codice parzialmente attendibile](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Uso di librerie da codice parzialmente attendibile](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Richieste](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Richieste di collegamento](/dotnet/framework/misc/link-demands)   
  [Dati e modellazione](/dotnet/framework/data/index)

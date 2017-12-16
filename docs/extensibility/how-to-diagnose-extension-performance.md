@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurare l'impatto di estensione nella finestra di avvio
 
@@ -48,7 +48,7 @@ Sono state aggiunte numerose funzionalità, a partire da Visual Studio 2015, al 
 
 È possibile trovare ulteriori informazioni su queste funzionalità nei documenti seguenti:
 
-[Contesti dell'interfaccia utente basati su regole](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un motore basato su regole più ricco compilato in base a contesti dell'interfaccia utente consente di creare contesti personalizzati basati su tipi di progetto, caratteristiche e funzionalità. Questi contesti personalizzati possono essere utilizzati per caricare un pacchetto durante gli scenari più specifici, ad esempio la presenza di un progetto con una capacità specifica invece di avvio. o consentire [comando visibilità a un contesto personalizzato](https://msdn.microsoft.com/en-us/library/bb166512.aspx) in base alle funzionalità di progetto o altre condizioni disponibili eliminando così la necessità di caricare un pacchetto per registrare un gestore di query dello stato di comando.
+[Contesti dell'interfaccia utente basati su regole](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): un motore basato su regole più ricco compilato in base a contesti dell'interfaccia utente consente di creare contesti personalizzati basati su tipi di progetto, caratteristiche e funzionalità. Questi contesti personalizzati possono essere utilizzati per caricare un pacchetto durante gli scenari più specifici, ad esempio la presenza di un progetto con una capacità specifica invece di avvio. o consentire [comando visibilità a un contesto personalizzato](visibilityconstraints-element.md) in base alle funzionalità di progetto o altre condizioni disponibili eliminando così la necessità di caricare un pacchetto per registrare un gestore di query dello stato di comando.
 
 [Il supporto asincrono pacchetto](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): la nuova classe di base AsyncPackage in Visual Studio 2015 consente pacchetti di Visual Studio da caricare in background in modo asincrono se il caricamento del pacchetto è stato richiesto da un attributo di caricamento automatico o una query asincrona al servizio . Il caricamento in background consente all'IDE di fornire risposte tempestive mentre l'estensione viene inizializzato in background e non sarebbe risentirà scenari critici come carico di avvio e di soluzione.
 

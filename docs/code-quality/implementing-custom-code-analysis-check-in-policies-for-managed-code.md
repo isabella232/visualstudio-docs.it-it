@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 Analisi del codice dei criteri di archiviazione specificano un set di regole che i membri di un progetto team devono eseguire sul codice sorgente prima che venga verificata controllo della versione. Microsoft fornisce un set di standard *set di regole* tale analisi del codice del gruppo di regole in aree funzionali. *Set di regole di criteri di archiviazione personalizzato* specificare un set di regole di analisi del codice che sono specifiche per un progetto team. Un set di regole viene archiviato in un file con estensione ruleset.  
@@ -35,7 +35,7 @@ Analisi del codice dei criteri di archiviazione specificano un set di regole che
  Per creare una regola personalizzata impostata per un progetto team, si crea una cartella speciale per i criteri di controllo set di regole in **Esplora controllo codice sorgente**. È quindi possibile creare il file del set di regole e aggiungere il file al controllo della versione. Infine, specificare il set di regole come il codice check-in Criteri di analisi per il progetto team.  
   
 > [!NOTE]
->  Per creare una cartella in un progetto team, è necessario mappare la radice del progetto team in un percorso nel computer locale. Per ulteriori informazioni, vedere [creare e usare aree di lavoro (precedente)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Per creare una cartella in un progetto team, è necessario mappare la radice del progetto team in un percorso nel computer locale.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Per creare la cartella controllo della versione per il set di regole di criteri di archiviazione  
   
@@ -61,7 +61,7 @@ Analisi del codice dei criteri di archiviazione specificano un set di regole che
   
 1.  In **Esplora controllo codice sorgente**, fare doppio clic su nuova cartella e quindi fare clic su **Aggiungi elementi alla cartella**.  
   
-     Per ulteriori informazioni, vedere [utilizzare controllo della versione](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Per ulteriori informazioni, vedere [Git e VSTS](/vsts/git/overview).  
   
 2.  Scegliere il set di regole file creato e quindi fare clic su **fine**.  
   

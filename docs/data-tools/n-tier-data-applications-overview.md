@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
 *A più livelli* le applicazioni di dati sono dati applicazioni separate in più *livelli*. Acronimo di "applicazioni distribuite" e "applicazioni multilivello", le applicazioni a più livelli separano l'elaborazione in livelli discreti che vengono distribuite tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario una netta separazione tra i vari livelli che costituiscono l'applicazione.  
@@ -34,7 +34,7 @@ Visual Studio è disponibili molte funzionalità che consentono agli sviluppator
   
 -   Il [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce le impostazioni per generare le classi di dati e DataContext in spazi dei nomi separato. In questo modo la separazione logica dell'accesso ai dati e i livelli di entità dati.  
   
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare DataContext da livelli diversi in un'applicazione. Per ulteriori informazioni, vedere [a più livelli e applicazioni Remote con LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare DataContext da livelli diversi in un'applicazione. Per ulteriori informazioni, vedere [a più livelli e applicazioni Remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).  
   
 ## <a name="presentation-tier"></a>Livello di presentazione  
 Il *livello presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene la logica dell'applicazione aggiuntivi anche. Componenti del livello presentazione tipiche includono:  
@@ -82,7 +82,7 @@ Gli argomenti seguenti forniscono informazioni sull'utilizzo di applicazioni a p
   
 [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[A più livelli e applicazioni Remote con LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[Applicazioni a più livelli e remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>Vedere anche
 [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   

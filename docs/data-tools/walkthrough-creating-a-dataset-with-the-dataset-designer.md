@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creazione di un dataset con Progettazione DataSet
+
 In questa procedura dettagliata verrà creato un set di dati usando il **Progettazione Dataset**. Verrà illustrato il processo di creazione di un nuovo progetto e aggiungendo un nuovo **DataSet** elemento a esso. Si apprenderà come creare tabelle in base alle tabelle in un database senza utilizzare una procedura guidata.  
-  
- Le attività illustrate nella procedura dettagliata sono le seguenti:  
-  
+
+Le attività illustrate nella procedura dettagliata sono le seguenti:  
+
 -   Creazione di un nuovo **Windows Forms Application** progetto.  
-  
+
 -   Aggiunta di un oggetto vuoto **DataSet** elemento al progetto.  
-  
+
 -   Creazione e configurazione di un'origine dati nell'applicazione creando un set di dati con il **Progettazione Dataset**.  
-  
+ 
 -   Creazione di una connessione al database Northwind in **Esplora Server**.  
-  
+
 -   Creazione di tabelle con gli oggetti TableAdapter nel set di dati in base alle tabelle nel database.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  

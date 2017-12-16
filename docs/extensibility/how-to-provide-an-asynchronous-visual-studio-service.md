@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procedura: fornire un servizio di Visual Studio asincrona
 Se si desidera ottenere un servizio senza bloccare il thread dell'interfaccia utente, è necessario creare un servizio asincrono e caricare il pacchetto in un thread in background. A questo scopo è possibile utilizzare un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> piuttosto che un <xref:Microsoft.VisualStudio.Shell.Package>, aggiungere il servizio con metodi asincroni speciale del pacchetto asincrona  
@@ -24,9 +24,9 @@ Se si desidera ottenere un servizio senza bloccare il thread dell'interfaccia ut
   
 ## <a name="implementing-an-asynchronous-service"></a>Implementazione di un servizio asincrono  
   
-1.  Creare un progetto VSIX (**File / nuovo / progetto / Visual c# / Extensiblity / progetto VSIX**). Denominare il progetto **TestAsync**.  
+1.  Creare un progetto VSIX (**File > Nuovo > progetto > c# > Extensiblity > progetto VSIX**). Denominare il progetto **TestAsync**.  
   
-2.  Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora** e fare clic su **Aggiungi / nuovo elemento / elementi di Visual c# / Extensibility / pacchetto di Visual Studio**. Nome del file **TestAsyncPackage.cs**.  
+2.  Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora** e fare clic su **Aggiungi > Nuovo elemento > elementi di Visual c# > estendibilità > pacchetto di Visual Studio**. Nome del file **TestAsyncPackage.cs**.  
   
 3.  In TestAsyncPackage.cs, modificare il pacchetto da cui ereditare AsyncPackage anziché pacchetto:  
   

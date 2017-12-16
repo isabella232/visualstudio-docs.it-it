@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati nel database
 Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è consigliabile salvare le modifiche al database. Viene eseguita in uno dei tre modi:  
@@ -50,7 +50,7 @@ Se si ha familiarità con gli oggetti TableAdapter, è possibile passare diretta
 |[Aggiornamento gerarchico](../data-tools/hierarchical-update.md)|Come eseguire gli aggiornamenti da un set di dati di due o più tabelle correlate|  
 |[Gestire un'eccezione di concorrenza](../data-tools/handle-a-concurrency-exception.md)|Come gestire le eccezioni, quando due utenti tentano di modificare gli stessi dati in un database nello stesso momento|  
 |[Procedura: salvare dati utilizzando una transazione](../data-tools/save-data-by-using-a-transaction.md)|Come salvare dati in una transazione utilizzando lo spazio dei nomi System. Transactions e un oggetto TransactionScope|  
-|[Procedura dettagliata: Salvataggio di dati in una transazione](../data-tools/save-data-in-a-transaction.md)|Procedura dettagliata che consente di creare un'applicazione Windows Form per illustrare il salvataggio dei dati a un database all'interno di una transazione|  
+|[Procedura dettagliata: Salvare dati in una transazione](../data-tools/save-data-in-a-transaction.md)|Procedura dettagliata che consente di creare un'applicazione Windows Form per illustrare il salvataggio dei dati a un database all'interno di una transazione|  
 |[Salvare dati in un database (a più tabelle)](../data-tools/save-data-to-a-database-multiple-tables.md)|Come modificare i record e salvare le modifiche in più tabelle nel database|  
 |[Salvare dati da un oggetto in un database](../data-tools/save-data-from-an-object-to-a-database.md)|Come passare i dati da un oggetto che non è in un set di dati a un database utilizzando un metodo DbDirect di TableAdapter|  
 |[PSalvare dati con i metodi DBDirect di TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Come utilizzare il TableAdapter per inviare query SQL direttamente al database|  
@@ -217,7 +217,7 @@ Nella tabella seguente vengono descritte le modifiche vengono eseguito il commit
 -   Nei dati di back-end, inviando dati all'origine dati, ad esempio, il database e in modo che possa accettare o rifiutare i dati. Se si lavora con un database che dispone di funzionalità per la convalida dei dati e fornire informazioni sugli errori complesse, questo può essere un approccio pratico in quanto è possibile convalidare i dati indipendentemente da cui proviene. Tuttavia, è necessario questo approccio potrebbe non soddisfare i requisiti di convalida specifiche dell'applicazione. Inoltre, con l'origine dati di convalida dei dati può comportare numerosi round trip all'origine dati, a seconda di come l'applicazione facilita la risoluzione di errori di convalida generati dal back-end.  
   
     > [!IMPORTANT]
-    >  Quando si utilizzano comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType.Text>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (introdurre) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire l'input dell'utente a un database, verificare sempre che le informazioni non valide. È consigliabile utilizzare sempre query con parametri o stored procedure quando possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Quando si utilizzano comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType.Text>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Gli utenti malintenzionati potrebbero tentare di inviare (introdurre) istruzioni SQL modificate o aggiuntive nel tentativo di accesso non autorizzato o danneggiare il database. Prima di trasferire l'input dell'utente a un database, verificare sempre che le informazioni non valide. È consigliabile utilizzare sempre query con parametri o stored procedure quando possibile.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Trasmettere gli aggiornamenti dell'origine dati  
 Dopo avere apportate le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, questo caso, chiamare il `Update` metodo di un oggetto TableAdapter (o un adattatore dati). Il metodo scorre ogni record in una tabella di dati, determina il tipo di aggiornamento è necessario (aggiornare, inserire o eliminare), se presente, e quindi esegue il comando appropriato.  
@@ -258,7 +258,7 @@ Dopo avere apportate le modifiche in un set di dati, è possibile trasmettere le
   
  Il <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> proprietà di ogni parametro punta a una colonna nella tabella dati. Ad esempio, il `SourceColumn` proprietà per il `au_id` e `Original_au_id` parametri è impostato su qualsiasi colonna nella tabella di dati contiene l'id dell'autore. Quando l'adapter `Update` viene eseguito il metodo legge l'autore colonna id del record che viene aggiornata e vengono inseriti i valori nell'istruzione.  
   
- In un'istruzione UPDATE, è necessario specificare entrambi i nuovi valori (quelli che verrà scritto il record), nonché i vecchi valori (in modo che il record può trovarsi nel database). Sono pertanto presenti due parametri per ogni valore: uno per la clausola SET e un altro per la clausola WHERE. Entrambi i parametri di leggere i dati dal record che viene aggiornato, ma sono recuperate versioni diverse del valore della colonna in base al parametro [proprietà SqlParameter](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Il parametro per la clausola SET Ottiene la versione corrente e il parametro per la clausola WHERE recupera la versione originale.  
+ In un'istruzione UPDATE, è necessario specificare entrambi i nuovi valori (quelli che verrà scritto il record), nonché i vecchi valori (in modo che il record può trovarsi nel database). Sono pertanto presenti due parametri per ogni valore: uno per la clausola SET e un altro per la clausola WHERE. Entrambi i parametri di leggere i dati dal record che viene aggiornato, ma sono recuperate versioni diverse del valore della colonna in base al parametro <xref:System.Data.SqlClient.SqlParameter.SourceVersion> proprietà. Il parametro per la clausola SET Ottiene la versione corrente e il parametro per la clausola WHERE recupera la versione originale.  
   
 > [!NOTE]
 >  È inoltre possibile impostare i valori `Parameters` raccolta direttamente nel codice, come accade in genere in un gestore eventi per l'adattatore di dati <xref:System.Data.DataTable.RowChanging> evento.  

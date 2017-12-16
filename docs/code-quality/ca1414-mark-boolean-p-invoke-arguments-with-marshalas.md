@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Contrassegnare gli argomenti P/Invoke booleani con MarshalAs
 |||  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Descrizione della regola  
  Un platform invoke (metodo) accede al codice non gestito e viene definito utilizzando il `Declare` parola chiave in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Specifica il comportamento di marshalling che viene usato per convertire i tipi di dati tra codice gestito e gestito. Molti tipi di dati semplici, ad esempio <xref:System.Byte?displayProperty=fullName> e <xref:System.Int32?displayProperty=fullName>, avere una sola rappresentazione nel codice non gestito e non è necessario specificare il comportamento di marshalling; common language runtime fornisce automaticamente il comportamento corretto.  
   
- Il <xref:System.Boolean> tipo di dati è disponibili più rappresentazioni nel codice non gestito. Quando il <xref:System.Runtime.InteropServices.MarshalAsAttribute> viene omesso, il comportamento di marshalling predefinito di <xref:System.Boolean> è di tipo di dati <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Si tratta di un intero a 32 bit, che non è appropriato in tutte le circostanze. La rappresentazione booleana necessarie per il metodo non gestito deve essere determinata e corrispondere alla appropriata <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType. bool è il tipo BOOL Win32, che è sempre a 4 byte. UnmanagedType. U1 deve essere utilizzata per C++ `bool` o altri tipi di 1 byte. Per ulteriori informazioni, vedere [di marshalling predefinito per i tipi Boolean](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
+ Il <xref:System.Boolean> tipo di dati è disponibili più rappresentazioni nel codice non gestito. Quando il <xref:System.Runtime.InteropServices.MarshalAsAttribute> viene omesso, il comportamento di marshalling predefinito di <xref:System.Boolean> è di tipo di dati <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Si tratta di un intero a 32 bit, che non è appropriato in tutte le circostanze. La rappresentazione booleana necessarie per il metodo non gestito deve essere determinata e corrispondere alla appropriata <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType. bool è il tipo BOOL Win32, che è sempre a 4 byte. UnmanagedType. U1 deve essere utilizzata per C++ `bool` o altri tipi di 1 byte.  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Per correggere una violazione di questa regola, applicare <xref:System.Runtime.InteropServices.MarshalAsAttribute> per il <xref:System.Boolean> parametro o valore restituito. Impostare il valore dell'attributo appropriati <xref:System.Runtime.InteropServices.UnmanagedType>.  
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [Marshalling predefinito per i tipi booleani](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
  [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)

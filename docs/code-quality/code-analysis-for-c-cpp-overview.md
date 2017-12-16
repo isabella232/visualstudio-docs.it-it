@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
 Lo strumento di analisi del codice C/C++ fornisce agli sviluppatori informazioni sui possibili errori nel codice sorgente C/C++. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, la memoria non inizializzata, dereferenziazioni al puntatore null e perdite di memoria e risorse.  
@@ -38,7 +38,7 @@ Lo strumento di analisi del codice C/C++ fornisce agli sviluppatori informazioni
  Per rendere più naturale per gli sviluppatori di utilizzare lo strumento di analisi, è completamente integrato all'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Durante il processo di compilazione, tutti gli avvisi generati per il codice sorgente vengono visualizzati nell'elenco errori. È possibile passare al codice sorgente che ha provocato l'avviso e, è possibile visualizzare informazioni aggiuntive sulla causa e possibili soluzioni del problema.  
   
 ## <a name="pragma-support"></a>supporto #pragma  
- Gli sviluppatori possono utilizzare il `#pragma` direttiva per considerarli come errori; abilitare o disabilitare gli avvisi e l'esclusione di avvisi per singole righe di codice. Per ulteriori informazioni, vedere [procedura: abilitare e disabilitare analisi del codice per avvisi specifici di C/C++](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
+ Gli sviluppatori possono utilizzare il `#pragma` direttiva per considerarli come errori; abilitare o disabilitare gli avvisi e l'esclusione di avvisi per singole righe di codice. Per ulteriori informazioni, vedere [procedura: impostare le proprietà di analisi codice per progetti C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Supporto delle annotazioni  
  Annotazioni migliorano l'accuratezza dell'analisi del codice. Annotazioni informazioni aggiuntive sul pre e post-condizioni nei parametri di funzione e tipi restituiscono. Per ulteriori informazioni, vedere [procedura: specificare informazioni aggiuntive di codice utilizzando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

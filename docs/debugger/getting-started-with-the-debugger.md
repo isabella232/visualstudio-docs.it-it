@@ -1,7 +1,7 @@
 ---
-title: Iniziare con il debugger | Documenti Microsoft
+title: Informazioni su come eseguire il debug con Visual Studio | Documenti Microsoft
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Iniziare con il debugger di Visual Studio
+# <a name="learn-to-debug-using-visual-studio"></a>Viene illustrato come eseguire il debug con Visual Studio
 
 In questo argomento vengono presentate le funzionalità del debugger di Visual Studio in una procedura dettagliata. Se si desidera una visualizzazione di livello superiore delle funzionalità di debug, vedere [Debugger funzionalità presentazione](../debugger/debugger-feature-tour.md).
 
@@ -138,19 +138,81 @@ In genere, è utilizzare tasti di scelta rapida in questo caso, perché è un bu
 
      ![Risultato dell'esecuzione di istruzioni il metodo Update](../debugger/media/dbg-tour-update-method.png "Step in Update (metodo)")
 
-    In questo caso, si trova codice che sembra interessante; l'app stia ottenendo tutti i file che si trovano in una directory specifica e quindi creare un oggetto foto per ogni file *. jpg. Questo codice produce una buona opportunità per avviare controllando lo stato dell'app (variabili) con il debugger.
+    In questo caso, si trova codice che sembra interessante; l'app stia ottenendo tutti i file che si trovano in una directory specifica e quindi creare un oggetto foto per ogni file *. jpg. Questo codice produce una buona opportunità per avviare controllando lo stato dell'app (variabili) con il debugger. Che verranno eseguite nelle sezioni successive di questa esercitazione.
 
     Funzionalità che consentono di controllare le variabili sono una delle funzionalità più utili del debugger e sono disponibili diversi modi per eseguire l'operazione. Spesso, quando si tenta di eseguire il debug di un problema, si sta tentando di scoprire se le variabili vengono archiviati i valori che si prevede di disporre di un determinato momento.
 
+## <a name="examine-the-call-stack"></a>Esaminare lo stack di chiamate
+
+- Durante la sospensione nel `Update` (metodo), fare clic su di **Stack di chiamate** finestra, per impostazione predefinita è aperto nel riquadro inferiore destro.
+
+     ![Esaminare lo stack di chiamate](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    Il **Stack di chiamate** finestra Mostra l'ordine in cui sono chiamate i metodi e funzioni. La riga superiore viene illustrata la funzione corrente (il `Update` metodo nell'applicazione di presentazione). La seconda riga mostra che `Update` è stato chiamato dal `Path.set` e così via.
+
+    >  [!NOTE]
+    > Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in un IDE come Eclipse.
+
+    Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
+
+    È possibile fare doppio clic su una riga di codice per passare a esaminare il codice sorgente e che viene modificato anche l'ambito corrente in esame dal debugger. Questa azione non fa avanzare il debugger.
+
+    È inoltre possibile utilizzare i menu di scelta rapida dal **Stack di chiamate** finestra per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specificate, spostare il debugger usando **Esegui fino al cursore**e passare a esaminare il codice sorgente. Per ulteriori informazioni, vedere [procedura: esaminare lo Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Esci da istruzione
+
+Si supponga di avere esaminando il `Update` metodo Data.cs e si desidera ottenere dalla funzione ma di rimanere nel debugger. È possibile farlo usando il **Esci** comando.
+
+1. Premere MAIUSC + F11 (o **Debug > Esci da istruzione**).
+
+     Questo comando riprende l'esecuzione di app (e fa avanzare il debugger) fino alla restituzione della funzione corrente.
+
+     Dovrebbe essere nuovamente il `Update` chiamata al metodo in Data.cs.
+
+2. Premere MAIUSC + F11 nuovamente e il debugger di eseguire il backup si lo stack di chiamate per il `OnApplicationStartup` gestore dell'evento.
+
+## <a name="run-to-cursor"></a>Esecuzione fino al cursore
+
+1. Scegliere il **Termina debug** pulsante rosso ![Termina debug](../debugger/media/dbg-tour-stop-debugging.png "Termina debug") o MAIUSC + F5.
+
+2. Nel `Update` metodo Data.cs, fare doppio clic su di `Add` chiamate di metodo e scegliere **Esegui fino al cursore**. Questo comando avvia il debug e imposta un punto di interruzione temporaneo nella riga di codice corrente.
+
+     ![Utilizzare l'esecuzione alla funzionalità di cursore](../debugger/media/dbg-tour-run-to-cursor.png "Esegui fino al cursore")
+
+    Deve essere interrotta nel punto di interruzione `MainWindow` (dal momento che è il primo punto di interruzione è impostato).
+
+3. Premere F5 per spostare il `Add` metodo in cui è stata selezionata **Esegui fino al cursore**.
+
+    Questo comando è utile quando si modifica del codice e si desidera impostare un punto di interruzione temporaneo rapidamente e avviare il debugger.
+
+## <a name="change-the-execution-flow"></a>Modificare il flusso di esecuzione
+
+1. Con il debugger sospesa sul `Add` chiamata al metodo, utilizzare il mouse per trascinare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla alto di una riga per il `foreach` ciclo.
+
+     ![Spostare il puntatore di esecuzione](../debugger/media/dbg-tour-move-the-execution-pointer.gif "spostare il puntatore di esecuzione")
+
+    Se si modifica il flusso di esecuzione, è possibile eseguire operazioni quali percorsi di esecuzione diverso codice di test o eseguire di nuovo codice senza dover riavviare il debugger.
+
+2. A questo punto, premere F5.
+
+    È possibile visualizzare le immagini aggiunte nella finestra dell'applicazione. Poiché si sta eseguendo nuovamente codice il `foreach` ciclo, alcune delle immagini sono state aggiunte due volte.
+    
+    > [!WARNING]
+    > Spesso è necessario prestare attenzione con questa funzionalità, e viene visualizzato un avviso nella descrizione comando. È possibile visualizzare altri avvisi, troppo. Spostare il puntatore non è possibile ripristinare l'applicazione su uno stato precedente di app.
+
 ## <a name="inspect-variables-with-data-tips"></a>Controllare le variabili con i suggerimenti dati
 
-1. Per sospendere l'esecuzione del debugger nel `Add` chiamata al metodo, passare il mouse su di `Add` metodo chiamare e fare clic su di **eseguire fare clic su** pulsante ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Aprire Data.cs nell'app Demo Visualizzatore foto, fare doppio clic su di `private void Update` dichiarazione di funzione e scegliere **Esegui fino al cursore** (arrestare l'applicazione prima di tutto se è già in esecuzione).
 
-2. A questo punto, passare il mouse sopra l'oggetto File (`f`) e viene visualizzato il valore della proprietà predefinito, il nome del file `market 031.jpg`.
+    Sospende l'app con il debugger collegato. Ciò consente di esaminare il relativo stato.
+
+2. Passare il mouse su di `Add` metodo chiamare e fare clic su di **eseguire fare clic su** pulsante ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. A questo punto, passare il mouse sopra l'oggetto File (`f`) e viene visualizzato il valore della proprietà predefinito, il nome del file `market 031.jpg`.
 
      ![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "consente di visualizzare un suggerimento dati")
 
-3. Espandere l'oggetto per visualizzare tutte le relative proprietà, ad esempio il `FullPath` proprietà.
+4. Espandere l'oggetto per visualizzare tutte le relative proprietà, ad esempio il `FullPath` proprietà.
 
     Spesso, durante il debug, si desidera un modo rapido per verificare i valori delle proprietà per gli oggetti, e i suggerimenti dati sono un ottimo modo per farlo.
 
@@ -192,66 +254,6 @@ In genere, è utilizzare tasti di scelta rapida in questo caso, perché è un bu
 
     Per altre informazioni, vedere [impostare un'espressione di controllo utilizzando le espressioni di controllo e le finestre di controllo immediato](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Esaminare lo stack di chiamate
-
-1. Fare clic su di **Stack di chiamate** finestra, per impostazione predefinita è aperto nel riquadro inferiore destro.
-
-     ![Esaminare lo stack di chiamate](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    Il **Stack di chiamate** finestra Mostra l'ordine in cui sono chiamate i metodi e funzioni. La riga superiore viene illustrata la funzione corrente (il `Update` metodo nell'applicazione di presentazione). La seconda riga mostra che `Update` è stato chiamato dal `Path.set` e così via.
-
-    >  [!NOTE]
-    > Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in un IDE come Eclipse.
-
-    Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
-
-    È possibile fare doppio clic su una riga di codice per passare a esaminare il codice sorgente e che viene modificato anche l'ambito corrente in esame dal debugger. Questa azione non fa avanzare il debugger.
-
-    È inoltre possibile utilizzare i menu di scelta rapida dal **Stack di chiamate** finestra per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specificate, spostare il debugger usando **Esegui fino al cursore**e passare a esaminare il codice sorgente. Per ulteriori informazioni, vedere [procedura: esaminare lo Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Modificare il flusso di esecuzione
-
-1. Con il debugger sospesa sul `Add` chiamata al metodo, utilizzare il mouse per trascinare la freccia gialla (il puntatore di esecuzione) a sinistra e spostare la freccia gialla alto di una riga per il `foreach` ciclo.
-
-     ![Spostare il puntatore di esecuzione](../debugger/media/dbg-tour-move-the-execution-pointer.gif "spostare il puntatore di esecuzione")
-
-    Se si modifica il flusso di esecuzione, è possibile eseguire operazioni quali percorsi di esecuzione diverso codice di test o eseguire di nuovo codice senza dover riavviare il debugger.
-
-2. A questo punto, premere F5.
-
-    È possibile visualizzare le immagini aggiunte nella finestra dell'applicazione. Poiché si sta eseguendo nuovamente codice il `foreach` ciclo, alcune delle immagini sono state aggiunte due volte.
-    
-    > [!WARNING]
-    > Spesso è necessario prestare attenzione con questa funzionalità, e viene visualizzato un avviso nella descrizione comando. È possibile visualizzare altri avvisi, troppo. Spostare il puntatore non è possibile ripristinare l'applicazione su uno stato precedente di app.
-
-## <a name="run-to-cursor"></a>Esecuzione fino al cursore
-
-1. Scegliere il **Termina debug** pulsante rosso ![Termina debug](../debugger/media/dbg-tour-stop-debugging.png "Termina debug") o MAIUSC + F5.
-
-2. Nel `Update` (metodo), fare doppio clic su di `Add` chiamate di metodo e scegliere **Esegui fino al cursore**. Questo comando avvia il debug e imposta un punto di interruzione temporaneo nella riga di codice corrente.
-
-     ![Utilizzare l'esecuzione alla funzionalità di cursore](../debugger/media/dbg-tour-run-to-cursor.png "Esegui fino al cursore")
-
-    Deve essere interrotta nel punto di interruzione `MainWindow` (dal momento che è il primo punto di interruzione.
-
-3. Premere F5 per spostare il `Add` metodo in cui è stata selezionata **Esegui fino al cursore**.
-
-    Questo comando è utile quando si modifica del codice e si desidera impostare un punto di interruzione temporaneo rapidamente e avviare il debugger.
-
-## <a name="step-out"></a>Esci da istruzione
-
-Si supponga di avere esaminando il `Update` metodo Data.cs e si desidera ottenere dalla funzione ma di rimanere nel debugger. È possibile farlo usando il **Esci** comando.
-
-1. Premere MAIUSC + F11 (o **Debug > Esci da istruzione**).
-
-     Questo comando riprende l'esecuzione di app (e fa avanzare il debugger) fino alla restituzione della funzione corrente.
-
-     Dovrebbe essere nuovamente il `Update` chiamata al metodo in Data.cs.
-
-2. Premere MAIUSC + F11 nuovamente e il debugger di eseguire il backup si lo stack di chiamate per il `OnApplicationStartup` gestore dell'evento.
-
-3. Premere F5 per continuare.
-
 ## <a name="examine-an-exception"></a>Esaminare l'eccezione
 
 1. Nella finestra dell'applicazione in esecuzione, eliminare il testo di **percorso** casella di input e selezionare il **modifica** pulsante.
@@ -283,6 +285,7 @@ Per ulteriori informazioni sulle funzionalità del debugger, vedere [Debugger su
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>Vedere anche  
- [Debug in Visual Studio](../debugger/index.md)  
- [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>Vedere anche
+
+[Debug in Visual Studio](../debugger/index.md)  
+[Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)

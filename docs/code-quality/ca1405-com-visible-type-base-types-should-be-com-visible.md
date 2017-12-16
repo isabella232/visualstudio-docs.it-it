@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 91634d5d46d63165874deded9c5ac67e7d4afa07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cceaee755af5269e266ca57e3644213e939c0ead
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: I tipi di base del tipo visibile a COM devono essere visibili a COM
 |||  
@@ -52,5 +52,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>   
- [Introduzione all'interfaccia della classe](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
  [Interoperabilità con codice non gestito](/dotnet/framework/interop/index)

@@ -20,11 +20,11 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifiche al codice supportate (c# e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -98,8 +98,6 @@ Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5, Wi
 -   Debug SQL.  
   
 -   Debug di un dump di Dr. Watson.  
-  
--   Modifica di codice dopo un'eccezione non gestita, quando la "**Rimuovi stack di chiamate su eccezioni non gestite**" opzione non è selezionata.  
   
 -   Debug di un'applicazione di runtime incorporata.  
   

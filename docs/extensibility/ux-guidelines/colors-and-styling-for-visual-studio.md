@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Utilizzo di colore in Visual Studio  
@@ -320,7 +320,7 @@ Talvolta si desidera consentire all'utente finale di personalizzare l'interfacci
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>La creazione di un pacchetto VSPackage per i colori personalizzabili  
 Un pacchetto VSPackage può controllare i tipi di carattere e colori tramite categorie personalizzate e visualizzare gli elementi nella pagina delle proprietà dei tipi di carattere e colori. Quando si utilizza questo meccanismo, i pacchetti VSPackage devono implementare il [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interfaccia e le relative interfacce associate.  
   
-In sostanza, questo meccanismo può essere utilizzato per modificare tutti gli elementi di visualizzazione esistente e le categorie che li contengono. Tuttavia, e non deve essere utilizzato per modificare la categoria Editor di testo o i relativi elementi visualizzati. Per ulteriori informazioni sulla categoria di Editor di testo, vedere [tipo di carattere e colore Panoramica](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+In sostanza, questo meccanismo può essere utilizzato per modificare tutti gli elementi di visualizzazione esistente e le categorie che li contengono. Tuttavia, e non deve essere utilizzato per modificare la categoria Editor di testo o i relativi elementi visualizzati. Per ulteriori informazioni sulla categoria di Editor di testo, vedere [tipo di carattere e colore Panoramica](../font-and-color-overview.md).  
   
 Per implementare le categorie personalizzate o visualizzare gli elementi, un pacchetto VSPackage deve:  
   
@@ -397,7 +397,7 @@ A tale scopo, un pacchetto VSPackage deve:
   
  **OR**  
   
--   **eseguire il polling dell'IDE per le modifiche**. Questo può avvenire tramite implementato dal sistema [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaccia. Sebbene principalmente per il supporto di persistenza, il [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metodo possibile ottenere informazioni di carattere e colori per gli elementi di visualizzazione. Per ulteriori informazioni sulle impostazioni di carattere e colori, vedere l'articolo MSDN [accesso archiviati tipo di carattere e le impostazioni dei colori](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **eseguire il polling dell'IDE per le modifiche**. Questo può avvenire tramite implementato dal sistema [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaccia. Sebbene principalmente per il supporto di persistenza, il [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metodo possibile ottenere informazioni di carattere e colori per gli elementi di visualizzazione. Per ulteriori informazioni sulle impostazioni di carattere e colori, vedere l'articolo MSDN [accesso archiviati tipo di carattere e le impostazioni dei colori](../accessing-stored-font-and-color-settings.md).  
   
 > **Nota:** per assicurarsi che il polling risultati siano corretti, usare il [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interfaccia per determinare se sono necessari un scaricamento della cache e l'aggiornamento prima di chiamare i metodi di recupero del [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaccia.
   

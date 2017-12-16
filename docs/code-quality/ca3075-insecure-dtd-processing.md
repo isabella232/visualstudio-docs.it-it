@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Se si usano istanze di <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non protette o si fa riferimento a origini di entità esterne, il parser può accettare un input non attendibile e divulgare informazioni riservate a utenti malintenzionati.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , che possono causare attacchi [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Questa regola viene attivata quando:  
+ Oggetto *definizione DTD (Document Type)* è uno dei due modi un parser XML può determinare la validità di un documento, come definito dal [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , che possono causare attacchi [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Questa regola viene attivata quando:  
   
 -   DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.  
   
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/31/2017
   
 -   Disabilitare l'elaborazione DTD se si usano origini non attendibili impostando la  proprietà <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> su **true** .  
   
--   La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Vedere [richieste di ereditarietà](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per ulteriori informazioni.  
+-   La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale.  
   
  .NET 4 e versioni successive  
   
--   Evitare di abilitare DtdProcessing se si gestiscono origini non attendibili impostando la proprietà DtdProcessing su [Prohibit o Ignore](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Evitare di abilitare DtdProcessing se si gestiscono origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> proprietà **Impedisci** o **ignora**.  
   
 -   Assicurarsi che il metodo Load() accetti un'istanza di XmlReader ovunque venga usato InnerXml.  
   

@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'utilizzo di Deny e PermitOnly
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Un metodo contiene un controllo di sicurezza che specifica l'azione di sicurezza PermitOnly o Deny.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- Il [mediante il metodo PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azioni di sicurezza devono essere utilizzate solo da utenti che possiedono una conoscenza approfondita di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.  
+ Il <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azione di sicurezza deve essere utilizzato solo da utenti che possiedono una conoscenza approfondita di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.  
   
  Nega modifica il comportamento predefinito dell'analisi dello stack che si verifica in risposta a una richiesta di sicurezza. Consente di specificare le autorizzazioni che non devono essere concesse per la durata del metodo Deny, indipendentemente dalle autorizzazioni effettive dei chiamanti nello stack di chiamate. Se il percorso stack viene rilevato un metodo protetto da Deny e l'autorizzazione richiesta è inclusa nelle autorizzazioni negate, il percorso stack avrà esito negativo. Anche PermitOnly altera il comportamento predefinito dell'analisi dello stack. Consente al codice specificare solo le autorizzazioni che possono essere concesse, indipendentemente dalle autorizzazioni dei chiamanti. Se il percorso stack viene rilevato un metodo protetto da PermitOnly e l'autorizzazione richiesta non è incluso nelle autorizzazioni specificate da PermitOnly, il percorso stack avrà esito negativo.  
   
@@ -81,6 +81,5 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
- [Linee guida di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)   
- [Override di controlli di sicurezza](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Mediante il metodo PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Linee guida per la generazione di codice sicuro](/dotnet/standard/security/secure-coding-guidelines)   
+

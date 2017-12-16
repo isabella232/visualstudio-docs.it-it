@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare i controlli WPF a un servizio dati WCF
 In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i controlli associati a dati. I controlli vengono associati a record cliente incapsulati in un'istanza di [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Verranno inoltre aggiunti i pulsanti che i clienti possono usare per visualizzare e aggiornare i record.  
@@ -56,8 +56,6 @@ Per completare la procedura dettagliata è inoltre consigliabile conoscere già 
 -   Modelli di dati in [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].  
   
 -   Modelli di Entity Data Model e ADO.NET Entity Framework. Per ulteriori informazioni, vedere [Panoramica di Entity Framework](/dotnet/framework/data/adonet/ef/overview).  
-  
--   Uso di WPF Designer. Per ulteriori informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](/dotnet/framework/wpf/data/data-binding-overview).  
   

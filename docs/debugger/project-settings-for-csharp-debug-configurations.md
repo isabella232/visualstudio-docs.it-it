@@ -14,23 +14,21 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debug configurations, C#
-- debugging [J#], debugger settings
 - project settings [Visual Studio], debug configurations
 - debug builds, project settings
 - projects [Visual Studio], debug configurations
 - project configurations, debug
 - debugging [C#], debugger settings
-- debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4310b9e84986ef50f735f0e7ddf6813d9c6fd60d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: d588f43271b127c675a6ec2fdf9e55ef388eadf2
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per le configurazioni di debug C#
 È possibile modificare le impostazioni di progetto per una configurazione di debug c# nella **pagine delle proprietà** finestra, come descritto in [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). Le tabelle seguenti illustrano la posizione in cui sono disponibili le impostazioni correlate al debugger il **pagine delle proprietà** finestra.  
@@ -48,7 +46,7 @@ ms.lasthandoff: 11/11/2017
 |**Directory di lavoro**|Specifica la cartella di lavoro del programma sottoposto a debug. In [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] la cartella di lavoro è la cartella dalla quale viene avviata l'applicazione, che per impostazione predefinita è \bin\debug.|  
 |**Usa computer remoto**|Il nome di un computer remoto in cui l'applicazione verrà eseguita ai fini del debug o [nome di server Msvsmon](../debugger/remote-debugging.md). Il percorso del file EXE sul computer remoto è specificato dalla proprietà Percorso output nella cartella Proprietà di configurazione, categoria Compila. Il percorso deve essere una directory condivisibile del computer remoto.|
 |**Abilita debug codice non gestito**|Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso.|  
-|**Abilitare il debug di SQL Server**|Consente di eseguire il debug di oggetti di database di SQL Server.|  
+|**Abilita debug SQL Server**|Consente di eseguire il debug di oggetti di database di SQL Server.|  
   
 ##  <a name="BKMK_Build_tab"></a>Scheda Compila  
   

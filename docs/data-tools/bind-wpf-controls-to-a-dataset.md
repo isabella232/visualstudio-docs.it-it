@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare i controlli WPF a un set di dati
 In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i controlli associati a dati. I controlli vengono associati a record di prodotto incapsulati in un set di dati. Si aggiungeranno inoltre i pulsanti per scorrere i prodotti e salvare le modifiche ai record di prodotto.  
@@ -50,8 +50,6 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:  
   
 -   Set di dati e oggetti TableAdapter. Per ulteriori informazioni, vedere [strumenti Dataset in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) e [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   Uso di WPF Designer. Per ulteriori informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +255,4 @@ Aggiungere il codice che consente agli utenti di salvare le modifiche ai record 
 ## <a name="see-also"></a>Vedere anche
 [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-[WPF e Silverlight Designer Panoramica](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
 [Cenni preliminari sull'associazione dati](/dotnet/framework/wpf/data/data-binding-overview)

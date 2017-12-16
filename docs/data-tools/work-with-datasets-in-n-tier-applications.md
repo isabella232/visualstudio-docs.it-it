@@ -23,11 +23,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 85062fe6ea82a73fbc2d64e1d1ce9136d16831cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilizzare i set di dati nelle applicazioni a più livelli
 *Applicazioni dati a più livelli* sono applicazioni mirate ai dati separate in più livelli logici (o *livelli*). In altre parole, un'applicazione dati a più livelli è un'applicazione separata in più progetti, con il livello di accesso ai dati, il livello di logica di business e il livello di presentazione, ciascuno in un progetto distinto. Per ulteriori informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).  
@@ -51,4 +51,4 @@ Supporto di più livelli nei dataset tipizzati consente lo sviluppo iterativo de
 [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
 [Creare e configurare gli oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md)  
-[A più livelli e applicazioni Remote con LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+[Applicazioni a più livelli e remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

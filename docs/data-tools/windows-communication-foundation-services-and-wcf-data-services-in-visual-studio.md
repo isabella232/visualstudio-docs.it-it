@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 Visual Studio fornisce strumenti per l'utilizzo con Windows Communication Foundation (WCF) e [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], le tecnologie Microsoft per la creazione di applicazioni distribuite. In questo argomento viene fornita un'introduzione ai servizi da un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prospettiva. Per la documentazione completa, vedere [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
@@ -243,7 +243,6 @@ Per evitare questo problema, i tipi negli assembly di riferimento vengono condiv
 ||[Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Viene illustrato come utilizzare e fare riferimento [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md)|Presenta alcuni errori comuni che possono verificarsi con riferimenti a servizi e come evitarli.|  
 |[Debug dei servizi WCF](../debugger/debugging-wcf-services.md)|Descrive i problemi di debug comuni e le tecniche che possono verificarsi durante il debug dei servizi WCF.|  
-|[Panoramica sulle servizio di autenticazione di Windows Communication Foundation](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Viene descritto come usare WCF per fornire un servizio di ruolo per un sito Web.|  
 |[Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti.|  
 |[Configura riferimento a servizio (finestra di dialogo)](../data-tools/configure-service-reference-dialog-box.md)|Vengono descritti gli elementi dell'interfaccia utente di **Configura riferimento a servizio** la finestra di dialogo.|  
   

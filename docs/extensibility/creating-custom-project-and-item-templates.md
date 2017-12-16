@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Creazione di un progetto personalizzato e modelli di elemento
 Visual Studio SDK include modelli di progetto che creano un modello di progetto personalizzato e un modello di elemento personalizzati. Questi modelli includono alcune sostituzioni di parametro comune e compilare come file zip. Non vengono distribuiti automaticamente e non sono disponibili nell'istanza sperimentale. È necessario copiare il file zip al file nel percorso è  
@@ -79,7 +79,7 @@ Visual Studio SDK include modelli di progetto che creano un modello di progetto 
   
 4.  Compilare la soluzione, quindi premere F5. Viene visualizzata l'istanza sperimentale.  
   
-5.  Per un progetto di modello di progetto, si dovrebbe vedere il modello di progetto elencato nel **nuovo progetto** finestra di dialogo (**File / nuovo / progetto**), nel nodo Visual Basic o Visual c#. Per un progetto di modello di elemento, verrà visualizzato il modello di elemento elencato nella finestra di dialogo Aggiungi nuovo elemento (nel **Esplora**, selezionare il nodo del progetto e scegliere **Aggiungi / nuovo elemento**).  
+5.  Per un progetto di modello di progetto, si dovrebbe vedere il modello di progetto elencato nel **nuovo progetto** finestra di dialogo (**File > Nuovo > progetto**), nel nodo Visual Basic o Visual c#. Per un progetto di modello di elemento, verrà visualizzato il modello di elemento elencato nella finestra di dialogo Aggiungi nuovo elemento (nel **Esplora**, selezionare il nodo del progetto e scegliere **Aggiungi / nuovo elemento**).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti ai modelli di Visual Studio](../ide/visual-studio-template-reference.md)

@@ -17,11 +17,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procedura dettagliata: Creazione di un'applicazione Shell isolata di base
 Questa procedura dettagliata viene illustrato come creare una soluzione shell isolata, personalizzare la finestra dello strumento informazioni e creare un programma di installazione che consente di installare la shell isolata.  
@@ -78,7 +78,7 @@ Questa procedura dettagliata viene illustrato come creare una soluzione shell is
   
 3.  Compilare la soluzione e avviare il debug.  
   
-4.  In **vista o altre finestre**, fare clic su **Browser Web**. Il **Web Browser** finestra consente di visualizzare la home page di Microsoft Corporation.  
+4.  In **Vista > altre finestre**, fare clic su **Browser Web**. Il **Web Browser** finestra consente di visualizzare la home page di Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Rimuovere il comando di stampa  
  Il file vsct in un progetto di interfaccia utente della shell isolata è costituito da un insieme di dichiarazioni del modulo di `<Define name=No_` *elemento*`>`, dove *elemento* è uno dei comandi e menu standard di Visual Studio.  
@@ -101,7 +101,7 @@ Questa procedura dettagliata viene illustrato come creare una soluzione shell is
   
 4.  Consente di rimuovere il comando di stampa.  
   
-5.  Avviare il debug dell'applicazione shell isolata. Verificare che il **File / stampa** comando non viene più visualizzato.  
+5.  Avviare il debug dell'applicazione shell isolata. Verificare che il **File > Stampa** comando non viene più visualizzato.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Rimozione di funzionalità da Shell isolata  
  È possibile rimuovere alcuni dei pacchetti che vengono caricati con Visual Studio, modificando il file .pkgundef se non si desidera tali funzionalità nell'applicazione shell isolata personalizzato. Specificare il pacchetto in una delle sottochiavi della chiave del Registro di sistema \Packages $RootKey$.  
@@ -147,7 +147,7 @@ Questa procedura dettagliata viene illustrato come creare una soluzione shell is
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Avviare il debug e nell'applicazione shell isolata, aprire il **Guida informazioni su** casella. Si noterà che le stringhe modificate. Il titolo degli argomenti della Guida/informazioni su casella è lo stesso come il `AssemblyTitle` valore nel file AssemblyInfo.cs.  
+4.  Avviare il debug e nell'applicazione shell isolata, aprire il **Guida > su** casella. Si noterà che le stringhe modificate. Il titolo degli argomenti della Guida/informazioni su casella è lo stesso come il `AssemblyTitle` valore nel file AssemblyInfo.cs.  
   
 5.  Le proprietà del **Guida/informazioni su** casella stessa si trovano nel file MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Per modificare la larghezza della Guida/informazioni su casella, passare al `AboutDialogStyle` blocco e impostare il `Width` proprietà 200:  
   

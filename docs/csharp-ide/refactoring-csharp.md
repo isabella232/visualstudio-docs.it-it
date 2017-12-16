@@ -1,5 +1,5 @@
 ---
-title: "Refactoring di funzionalità (c#) di Visual Studio | Documenti Microsoft"
+title: "Refactoring di funzionalità in Visual Studio c# | Documenti Microsoft"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>Funzionalità di refactoring per c# #
+# <a name="refactoring-features-in-c"></a>Funzionalità di refactoring di c# #
 
-Refactoring è il processo di miglioramento del codice dopo che è stata scritta. Refactoring modifica la struttura interna del codice senza modificarne il comportamento. Le seguenti funzionalità di refactoring sono disponibili in Visual Studio per c#:
+Refactoring è il processo di modifica della struttura interna del codice senza modificarne il comportamento. Refactoring viene spesso utilizzato per rendere il codice più leggibile, gestibile e affidabile.
+
+Le seguenti funzionalità di refactoring sono disponibili in Visual Studio per c#:
 
 * [Cambia firma metodo](refactoring/change-method-signature.md)
 * [Convertire il metodo Get in proprietà o una proprietà in metodo Get](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ Refactoring è il processo di miglioramento del codice dopo che è stata scritta
 
 ## <a name="see-also"></a>Vedere anche
 
-[Using the Visual Studio Development Environment for C#](using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)  
+[Refactoring, generazione di codice e azioni rapide in Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Effettuare il refactoring in Visual Basic](../vb-ide/refactoring-vb.md)  
+[Using the Visual Studio Development Environment for C#](using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)

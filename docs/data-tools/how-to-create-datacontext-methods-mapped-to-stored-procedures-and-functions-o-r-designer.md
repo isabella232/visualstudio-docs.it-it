@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a162c9cb7cf7febf6e3b6e95e927a31b6591b027
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 18bf9785ddd62bf7924ebb3eb71b27cd822e3af4
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procedura: creare metodi DataContext mappati a stored procedure e funzioni (O/R Designer)
 Stored procedure e funzioni possono essere aggiunti al [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] come <xref:System.Data.Linq.DataContext> metodi. La chiamata al metodo e passando i parametri obbligatori viene eseguita la stored procedure o funzione nel database e restituisce i dati nel tipo restituito del <xref:System.Data.Linq.DataContext> metodo. Per informazioni dettagliate su <xref:System.Data.Linq.DataContext> metodi, vedere [metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
@@ -57,4 +57,4 @@ Stored procedure e funzioni possono essere aggiunti al [!INCLUDE[vs_ordesigner_s
  [Procedura dettagliata: Creazione di classi LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  [Introduzione a LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Procedura: Scrivere query LINQ in C#](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [LINQ in C#](/dotnet/csharp/linq/linq-in-csharp)

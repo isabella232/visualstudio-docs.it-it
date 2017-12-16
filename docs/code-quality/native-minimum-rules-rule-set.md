@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4a06336ff04591d2c3006bdb34b7169b6ae078
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb6d83004414abd530a8274f5338b134de2a5403
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.  
@@ -59,7 +59,6 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C6504](../code-quality/c6504.md)|Null su non puntatore|  
 |[C6505](../code-quality/c6505.md)|MustCheck su nullo|  
 |[C6506](../code-quality/c6506.md)|Dimensioni buffer su non puntatore o matrice|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|Errata corrispondenza null al livello di dereferenziazione zero|  
 |[C6508](../code-quality/c6508.md)|Accesso in scrittura a costante|  
 |[C6509](../code-quality/c6509.md)|Restituzione utilizzati in precondizione|  
 |[C6510](../code-quality/c6510.md)|Null terminato su non puntatore|  
@@ -70,12 +69,8 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C6516](../code-quality/c6516.md)|Nessuna proprietà su attributo|  
 |[C6517](../code-quality/c6517.md)|Dimensioni valide su buffer non leggibile|  
 |[C6518](../code-quality/c6518.md)|Dimensioni scrivibili su buffer non scrivibile|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Annotazione non valida: il valore della proprietà 'NeedsRelease' deve essere Yes o No|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Deferenziazione stringa dimensioni non valida|  
 |[C6522](../code-quality/c6522.md)|Tipo stringa dimensioni non valida|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Parametro stringa dimensioni non valido|  
 |[C6525](../code-quality/c6525.md)|Percorso irraggiungibile stringa dimensioni non valida|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Tipo buffer stringa dimensioni non valido|  
 |[C6527](../code-quality/c6527.md)|Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void|  
 |[C6530](../code-quality/c6530.md)|Stile stringa formato non riconosciuto|  
 |[C6540](../code-quality/c6540.md)|L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec|  
@@ -135,8 +130,7 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C28253](../code-quality/c28253.md)|Annotazione incoerente per la funzione: il parametro presenta altre annotazioni su questa istanza.|  
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() non è supportato nelle annotazioni|  
 |[C28262](../code-quality/c28262.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione|  
-|[C28263](../code-quality/c28263.md)|Errore di sintassi nell'annotazione condizionale rilevato nell'oggetto annotazione intrinseco|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|I valori degli elenchi di risultati devono essere costanti.|  
+|[C28263](../code-quality/c28263.md)|Errore di sintassi nell'annotazione condizionale rilevato nell'oggetto annotazione intrinseco| 
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|  
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|  
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|  

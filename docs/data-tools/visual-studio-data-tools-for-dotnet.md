@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Strumenti di dati di Visual Studio per .NET
-Visual Studio e .NET Framework forniscono insieme completo di API e gli strumenti di supporto per la connessione a database, modellazione dei dati in memoria e la visualizzazione dei dati nell'interfaccia utente. Le classi di .NET Framework che forniscono funzionalità di accesso ai dati sono note come [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, insieme ai dati degli strumenti in Visual Studio, è stata originariamente progettata principalmente per supportare i database relazionali e XML. Oggi, molti fornitori di database NoSQL, o di terze parti, offrono provider ADO.NET.  
+Visual Studio e .NET Framework forniscono insieme completo di API e gli strumenti di supporto per la connessione a database, modellazione dei dati in memoria e la visualizzazione dei dati nell'interfaccia utente. Le classi di .NET Framework che forniscono funzionalità di accesso ai dati sono note come [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, insieme ai dati degli strumenti in Visual Studio, è stata originariamente progettata principalmente per supportare i database relazionali e XML. Oggi, molti fornitori di database NoSQL, o di terze parti, offrono provider ADO.NET.  
   
 [.NET core](https://www.dotnetfoundation.org/netcore) supporta ADO.NET, ad eccezione di set di dati e i tipi correlati. Se si è destinati a .NET Core e richiede un livello di mapping relazionale a oggetti (ORM), utilizzare [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
   
@@ -39,7 +39,7 @@ Il flusso di lavoro tipico è la seguente:
   
 5.  Aggiungere codice personalizzato per operazioni come le regole di business, ricerca e la convalida dei dati, o per sfruttare i vantaggi di funzionalità personalizzata che espone il database sottostante.  
   
-È possibile ignorare il passaggio 3 e un'applicazione .NET per inviare comandi direttamente a un database, anziché utilizzare un modello di programmazione. In questo caso, si troverà la relativa documentazione: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Si noti che è comunque possibile utilizzare la configurazione guidata origine dati e le finestre di progettazione per generare il codice di associazione dati per popolare gli oggetti in memoria e quindi controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.
+È possibile ignorare il passaggio 3 e un'applicazione .NET per inviare comandi direttamente a un database, anziché utilizzare un modello di programmazione. In questo caso, si troverà la relativa documentazione: [ADO.NET](/dotnet/framework/data/adonet/index). Si noti che è comunque possibile utilizzare la configurazione guidata origine dati e le finestre di progettazione per generare il codice di associazione dati per popolare gli oggetti in memoria e quindi controlli dell'interfaccia utente di eseguire l'associazione dati a tali oggetti.
   
 ## <a name="see-also"></a>Vedere anche
 [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

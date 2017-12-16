@@ -13,41 +13,39 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8ed511eed7b0ace46bbc61c1d486ade608d4b5a5
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c02ae1ba7091871f92d1fdf00f55f7d0ded6024f
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
-In questo argomento vengono descritte le opzioni per l'aggiornamento del file di database (con estensione mdf) dopo aver installato una versione più recente di Visual Studio. Include istruzioni per le attività seguenti:  
-  
--   Aggiornamento di un file di database per l'utilizzo di una versione più recente di SQL Server Express LocalDB  
-  
--   Aggiornamento di un file di database per l'utilizzo di una versione più recente di SQL Server Express  
-  
--   Utilizzare un file di database in Visual Studio, ma mantenere la compatibilità con una versione precedente di SQL Server Express o LocalDB  
-  
--   Assicurarsi di SQL Server Express il motore di database predefinito  
-  
-È possibile utilizzare Visual Studio per aprire un progetto che contiene un file di database (con estensione mdf) che è stato creato con una versione precedente di SQL Server Express o LocalDB. Tuttavia, per continuare a sviluppare il progetto in Visual Studio, è necessario disporre di tale versione di SQL Server Express o LocalDB installato nello stesso computer di Visual Studio oppure è necessario aggiornare il file di database. Se si aggiorna il file di database, non sarà in grado di accedervi tramite le versioni precedenti di SQL Server Express o LocalDB.  
-  
-Potrebbe anche essere richiesto per eseguire l'aggiornamento di un file di database che è stato creato tramite una versione precedente di SQL Server Express o LocalDB se la versione del file non è compatibile con l'istanza di SQL Server Express o LocalDB attualmente installata. Per risolvere il problema, Visual Studio verrà richiesto di aggiornare il file.  
-  
+
+In questo argomento vengono descritte le opzioni per l'aggiornamento di un file di database (con estensione mdf) dopo aver installato una versione più recente di Visual Studio. Include istruzioni per le attività seguenti:
+
+- Aggiornamento di un file di database per l'utilizzo di una versione più recente di SQL Server Express LocalDB
+
+- Aggiornamento di un file di database per l'utilizzo di una versione più recente di SQL Server Express
+
+- Utilizzare un file di database in Visual Studio, ma mantenere la compatibilità con una versione precedente di SQL Server Express o LocalDB
+
+- Assicurarsi di SQL Server Express il motore di database predefinito
+
+È possibile utilizzare Visual Studio per aprire un progetto che contiene un file di database (con estensione mdf) che è stato creato con una versione precedente di SQL Server Express o LocalDB. Tuttavia, per continuare a sviluppare il progetto in Visual Studio, è necessario disporre di tale versione di SQL Server Express o LocalDB installato nello stesso computer di Visual Studio oppure è necessario aggiornare il file di database. Se si aggiorna il file di database, non sarà in grado di accedervi tramite le versioni precedenti di SQL Server Express o LocalDB.
+
+Potrebbe anche essere richiesto per eseguire l'aggiornamento di un file di database che è stato creato tramite una versione precedente di SQL Server Express o LocalDB se la versione del file non è compatibile con l'istanza di SQL Server Express o LocalDB attualmente installata. Per risolvere il problema, Visual Studio verrà richiesto di aggiornare il file.
+
 > [!IMPORTANT]
-> È consigliabile eseguire il backup del file di database prima di eseguirne l'aggiornamento.  
-  
+> È consigliabile eseguire il backup del file di database prima di eseguirne l'aggiornamento.
+
 > [!WARNING]
 > Se si aggiorna un file con estensione mdf che è stato creato in LocalDB 2014 (V12) a 32 bit a LocalDB 2016 (V13) o versione successiva, non sarà in grado di aprire nuovamente il file nella versione a 32 bit del database locale.
-  
-Prima di aggiornare un database, considerare i seguenti criteri:  
+
+Prima di aggiornare un database, considerare i seguenti criteri:
   
 -   Se si desidera lavorare sul progetto in una versione precedente sia una versione più recente di Visual Studio, non eseguire l'aggiornamento.  
   
@@ -116,4 +114,5 @@ Prima di aggiornare un database, considerare i seguenti criteri:
     SQL Server Express è il motore di database predefinito per le applicazioni.
 
 ## <a name="see-also"></a>Vedere anche
+
 [Accesso ai dati in Visual Studio](accessing-data-in-visual-studio.md)

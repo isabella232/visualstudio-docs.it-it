@@ -23,11 +23,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62a8be3b1a1c98a330efeb26d9a84e74f2334423
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4b383deae8262f9fb53cf4494ef8ce8d65f5ce02
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Hook di allocazione e allocazioni di memoria di runtime C
 Una restrizione molto importante che riguarda le funzioni hook di allocazione è che esse devono esplicitamente ignorare i blocchi `_CRT_BLOCK` (le allocazioni di memoria effettuate internamente dalle funzioni dalla libreria di runtime del linguaggio C) se tali blocchi effettuano chiamate a funzioni della libreria di runtime del linguaggio C che allocano memoria interna. È possibile far sì che i blocchi `_CRT_BLOCK` vengano ignorati includendo, all'inizio della funzione hook di allocazione, un codice del seguente tipo:  
@@ -42,5 +42,4 @@ if ( nBlockUse == _CRT_BLOCK )
  Se si esaminano i file di origine della libreria run-time, si noterà che l'allocazione predefinita funzione hook, **CrtDefaultAllocHook** (che restituisce semplicemente **TRUE**), si trova in un file separato propri, DBGHOOK. C. Se si desidera l'hook di allocazione di essere chiamata anche per le allocazioni eseguite dal codice di avvio in fase di esecuzione che viene eseguito prima dell'applicazione **principale** funzione, è possibile sostituire questa funzione predefinita con uno proprio, anziché utilizzando [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Scrittura di funzioni Hook di debug](../debugger/debug-hook-function-writing.md)   
- [Esempio crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
+ [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)   

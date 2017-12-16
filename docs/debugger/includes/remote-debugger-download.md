@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 1.  Nel dispositivo o server computer che si desidera eseguire il debug (anziché il computer che esegue Visual Studio), ottenere la versione corretta di remote tools.
 
     |Versione|Collegamento|Note|
     |-|-|-|
-    |Visual Studio 2017 Update 4|[Strumenti remoti](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Scaricare sempre la versione corrispondente di sistema operativo del dispositivo (x86 o x64). Per i browser meno recenti, utilizzare questi collegamenti diretti: [Remote Tools (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409) e [Remote Tools (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409).|
-    |Visual Studio 2017, (precedente)|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials disponibile o è possibile accedere con una sottoscrizione valida di Visual Studio. Per i browser meno recenti, è necessario aggiungere nuovi siti attendibili se richiesto.|
-    |Visual Studio 2015 Update 3|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials disponibile o è possibile accedere con una sottoscrizione valida di Visual Studio. Per i browser meno recenti, è necessario aggiungere nuovi siti attendibili se richiesto.|
-    |Visual Studio 2015 (precedente)|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, accedere al gruppo di Visual Studio Dev Essentials disponibile o è possibile accedere con una sottoscrizione valida di Visual Studio. Per i browser meno recenti, è necessario aggiungere nuovi siti attendibili se richiesto.|
+    |Visual Studio 2017 versione 15.5|[Strumenti remoti](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Scaricare sempre la versione corrispondente di sistema operativo del dispositivo (x86 o x64). Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
+    |Visual Studio 2017, (precedente)|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Sono disponibili da My.VisualStudio.com strumenti remoti per le versioni precedenti di Visual Studio 2017. Se richiesto, il gruppo di Visual Studio Dev Essentials libero join o accedere con la sottoscrizione di Visual Studio ID. Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
+    |Visual Studio 2015 Update 3|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, il gruppo di Visual Studio Dev Essentials libero join o accedere con la sottoscrizione di Visual Studio ID. Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
+    |Visual Studio 2015 (precedente)|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, il gruppo di Visual Studio Dev Essentials libero join o accedere con la sottoscrizione di Visual Studio ID. Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
     |Visual Studio 2013|[Strumenti remoti](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Scaricare una pagina nella documentazione di Visual Studio 2013|
     |Visual Studio 2012|[Strumenti remoti](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Scaricare una pagina nella documentazione di Visual Studio 2012|
   
