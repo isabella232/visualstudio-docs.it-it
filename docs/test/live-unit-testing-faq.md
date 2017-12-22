@@ -11,11 +11,11 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a585310f19a03524d73deeb863b080d1d335c6c
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Domande frequenti su Live Unit Testing
 
@@ -226,7 +226,9 @@ Live Unit Testing avvia una compilazione ogni volta che rileva una modifica nei 
 
 **Risposta:**
 
-Live Unit Testing attualmente non funziona bene con la funzionalità di caricamento della soluzione Lightweight. Funziona solo dopo il caricamento di almeno uno dei progetti di test. Fino ad allora non funzionerà perché attualmente Live Unit Testing è dipendente da almeno uno dei progetti di test che fanno riferimento a un adattatore di test (MSTest, xUnit o NUnit).
+Live Unit Testing attualmente non funziona bene con la funzionalità di caricamento leggero delle soluzioni. Funziona solo dopo il caricamento di almeno uno dei progetti di test. Fino ad allora non funzionerà perché Live Unit Testing è dipendente dal caricamento di almeno uno dei progetti di test che fanno riferimento a un adattatore di test (MSTest, xUnit o NUnit).
+
+Nota: la funzionalità di caricamento leggero delle soluzioni non è più disponibile in Visual Studio 2017 versione 15.5 e versioni successive. In Visual Studio 15.5 e versioni successive le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento leggero delle soluzioni.
  
 ## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>Perché Live Unit Testing non acquisisce le informazioni di code coverage da un nuovo processo creato da un test?
  

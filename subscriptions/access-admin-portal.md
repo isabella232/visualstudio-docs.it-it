@@ -5,21 +5,21 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Informazioni su come accedere al portale di amministrazione
+Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 89661c12a820d2a7aa3bed562a5efec141dcf01a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="accessing-the-visual-studio-subsubscriptions-administrator-portal"></a>Accesso al portale di amministrazione delle sottoscrizioni di Visual Studio
+# <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Accesso al portale di amministrazione delle sottoscrizioni di Visual Studio
 ## <a name="for-mpsa"></a>Per MPSA
 Per accedere al portale di amministrazione delle sottoscrizioni di Visual Studio, è necessario essere configurati come amministratore nel portale di Microsoft Business Center. 
 
-Per altre informazioni su come ottenere la configurazione di amministratore, fare riferimento alla [guida introduttiva per la gestione degli utenti](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Se si è già stati configurati come amministratore, è possibile passare direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).
+Per altre informazioni su come ottenere la configurazione di amministratore, fare riferimento alla [guida introduttiva per la gestione degli utenti](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Se si è già stati configurati come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio.
 
 ## <a name="for-volume-licensing-vl"></a>Per i contratti multilicenza
 A partire dal 1 marzo 2017, i clienti per cui è ancora in corso il processo di onboarding e migrazione nel portale dovranno gestire le sottoscrizioni in [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx). 
@@ -30,9 +30,9 @@ Per altre informazioni sulla gestione delle sottoscrizioni in VLSC consultare qu
 
 Il contatto principale o il contatto notifiche per il contratto multilicenza dell'organizzazione dovrà eseguire alcune operazioni per configurare un utente come amministratore. 
 
-Per altre informazioni su come configurare un amministratore, guardare [questo video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) e vedere questi articoli relativi a [onboarding e gestione degli amministratori per il portale di amministrazione delle sottoscrizioni di Visual Studio](https://go.microsoft.com/fwlink/?linkid=839391). 
+Per altre informazioni su come configurare un amministratore, guardare [questo video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) e vedere questi articoli relativi a [onboarding e gestione degli amministratori](https://go.microsoft.com/fwlink/?linkid=839391) per il portale di amministrazione delle sottoscrizioni di Visual Studio. 
 
-Se si è già stati configurati come amministratore, è possibile passare direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).
+Se si è già stati configurati come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio.
 
 ## <a name="for-cloud-subscriptions"></a>Per sottoscrizioni cloud
 Quando si acquistano sottoscrizioni cloud di Visual Studio, si viene automaticamente configurati come amministratore per le sottoscrizioni.  Se le sottoscrizioni sono già state acquistate, è possibile gestirle all'indirizzo [https://manage.visualstudio.com](https://manage.visualstudio.com).

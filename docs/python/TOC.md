@@ -1,6 +1,6 @@
 # [Panoramica](python-in-visual-studio.md)
 # [Installazione](installation.md)
-# Guide introduttive
+# Guide rapide introduttive
 ## [Creare un progetto da un codice esistente](quickstart-01-project-from-existing.md)
 ## [Creare un progetto da un modello](quickstart-02-project-from-template.md)
 ## [Creare un progetto da un repository](quickstart-03-project-from-repository.md)
@@ -21,7 +21,7 @@
 ### [Modello del servizio cloud di Azure](template-azure-cloud-service.md)
 ## [Azure SDK per Python](azure-sdk-for-python.md)
 # Procedure
-## [Modifica del codice](code-editing.md)
+## [Editing R code in Visual Studio](code-editing.md) (Modifica di codice R in Visual Studio)
 ### [Formattazione del codice](code-formatting.md)
 ### [Refactoring del codice](code-refactoring.md)
 ### [Uso di PyLint](code-pylint.md)
@@ -35,9 +35,9 @@
 ### [Debug remoto di Azure](debugging-azure-remote.md)
 ### [Risoluzione dei problemi del debug remoto di Azure](debugging-azure-remote-troubleshooting.md)
 ## Interazione con C++
-### [Creazione di un'estensione di C++ per Python](cpp-and-python.md)
+### [Creazione di un'estensione C++ per Python](cpp-and-python.md)
 ### [Debug in modalità mista di Python/C++](debugging-mixed-mode.md)
-### [Debug in modalità mista dei simboli](debugging-symbols-for-mixed-mode.md)
+### [Simboli per il debug in modalità mista](debugging-symbols-for-mixed-mode.md)
 ## [Profilatura](profiling.md)
 ## [Testing unità](unit-testing.md)
 ## [Uso dell'estensione Cookiecutter](cookiecutter.md)

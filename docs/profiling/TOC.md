@@ -1,7 +1,16 @@
-# [Tour delle funzionalità di profilatura](profiling-feature-tour.md)
-## [Guida per principianti alla profilatura delle prestazioni](beginners-guide-to-performance-profiling.md)
-## [Novità negli strumenti di profilatura](what-s-new-in-profiling-tools.md)
+
+# [Documentazione di profilatura](index.md)
+# Panoramica
+## [Tour delle funzionalità di profilatura](profiling-feature-tour.md)
+# Guide rapide introduttive
+## [Analizzare l'utilizzo della CPU (gestita)](quickstart-cpu-usage-managed.md)
+## [Analizzare l'utilizzo della CPU (nativa)](quickstart-cpu-usage-native.md)
+## [Analizzare l'utilizzo della CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Esercitazioni
+## [Profilare le prestazioni delle applicazioni in Visual Studio](beginners-guide-to-performance-profiling.md)
+# Concetti
 ## [Eseguire gli strumenti di profilatura con o senza il debugger](running-profiling-tools-with-or-without-the-debugger.md)
+# Guide pratiche
 ## [Analizzare l'utilizzo della memoria](memory-usage.md)
 ### [Personalizzare gli eventi dell'heap ETW nativi](custom-native-etw-heap-events.md)
 ### [Utilizzo della memoria senza il debugger](memory-usage-without-debugging2.md)
@@ -366,4 +375,6 @@
 ##### [Funzione CvWriteFlag](cvwriteflag-function.md)
 ##### [Funzione CvWriteMessage](cvwritemessage-function.md)
 ### [Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analizzare il consumo di energia nelle app UWP](analyze-energy-use-in-store-apps.md)
+## [Analizzare il consumo di energia nelle app dello Store](analyze-energy-use-in-store-apps.md)
+# Risorse
+## [Novità negli strumenti di profilatura](what-s-new-in-profiling-tools.md)

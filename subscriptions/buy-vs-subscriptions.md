@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Esplorare le opzioni di acquisto per le sottoscrizioni di Visual Studio
+Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c751048084e7f5e6ae65aee5b5fa52cff84c4439
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d78531fd3635c010f83a4ebe3c446c8c4c33e943
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 #   <a name="how-to-buy-a-subscription"></a>Come acquistare una sottoscrizione
 Esistono tre modi per acquistare sottoscrizioni di Visual Studio.  
@@ -27,9 +27,9 @@ Esistono tre modi per acquistare sottoscrizioni di Visual Studio.
 ### <a name="before-you-start"></a>Prima di iniziare
 
 *   Per fatturare gli acquisti, è necessaria un [sottoscrizione di Azure](https://azure.microsoft.com/en-us/pricing/purchase-options/). È possibile [iscriversi](https://account.windowsazure.com/Subscriptions) prima o durante il primo acquisto in Visual Studio Marketplace.
-Informazioni sulle [sottoscrizioni di Azure](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) idonee per gli acquisti da Visual Studio Marketplace. 
+[Informazioni](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) sulle sottoscrizioni di Azure idonee per gli acquisti da Visual Studio Marketplace. 
 
-*   Per iscriversi per la sottoscrizione di Azure ed effettuare acquisti da Visual Studio Marketplace, è necessario un [account Microsoft "personale"](https://www.microsoft.com/account) o un ["account aziendale o dell'istituto di istruzione"](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/), nel caso di acquisti per un'organizzazione che gestisce le identità con Azure Active Directory (Azure AD).
+*   Per iscriversi per la sottoscrizione di Azure ed effettuare acquisti da Visual Studio Marketplace, è necessario un [account Microsoft](https://www.microsoft.com/account) "personale" o un ["account aziendale o dell'istituto di istruzione"](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/), nel caso di acquisti per un'organizzazione che gestisce le identità con Azure Active Directory (Azure AD).
 
 ### <a name="buy-subscriptions"></a>Acquistare sottoscrizioni
 
@@ -66,7 +66,7 @@ O iscriversi per una nuova sottoscrizione, se non è già disponibile.
 <a name="manage-subscriptions"></a>
 ###  <a name="manage-purchased-visual-studio-subscriptions-as-administrator"></a>Gestire le sottoscrizioni di Visual Studio acquistate come amministratore
 
-Per visualizzare tutte le sottoscrizioni di Visual Studio acquistate da Visual Studio Marketplace e le relative assegnazioni agli utenti, modificare le sottoscrizioni o annullarle come amministratore delle sottoscrizioni, passare al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/cloud) e accedere con l'identità usata per l'acquisto delle sottoscrizioni in questione.
+Per visualizzare tutte le sottoscrizioni di Visual Studio acquistate da Visual Studio Marketplace e le relative assegnazioni agli utenti, modificare le sottoscrizioni o annullarle come amministratore delle sottoscrizioni, passare al [portale di amministrazione](https://manage.visualstudio.com/cloud) delle sottoscrizioni di Visual Studio e accedere con l'identità usata per l'acquisto delle sottoscrizioni in questione.
 
 *   Per modificare il numero di sottoscrizioni acquistate:
 
@@ -76,11 +76,11 @@ Per visualizzare tutte le sottoscrizioni di Visual Studio acquistate da Visual S
 
 ### <a name="view-visual-studio-subscriptions-assigned-to-you"></a>Visualizzare le sottoscrizioni di Visual Studio assegnate
 
-Per visualizzare le sottoscrizioni di Visual Studio assegnate e i relativi vantaggi, passare al portale delle sottoscrizioni di Visual Studio (```https://my.visualstudio.com```).
+Per visualizzare le sottoscrizioni di Visual Studio assegnate e i relativi vantaggi, passare al portale delle sottoscrizioni di Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com).
 
-<img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
-<img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
 ### <a name="marketplace-and-billing-qa"></a>Domande e risposte su Marketplace e fatturazione
 
@@ -89,23 +89,23 @@ Vedere le [domande e risposte su Marketplace e a fatturazione](/vsts/marketplace
 ## <a name="buying-standard-subscriptions-through-the-microsoft-store"></a>Acquisto di sottoscrizioni standard tramite Microsoft Store
 Le sottoscrizioni standard di Visual Studio sono disponibili tramite Microsoft Store.  Per acquistare o rinnovare una sottoscrizione:
 
-1. Connettersi a [Microsoft Store](https://www.microsoft.com).
+1. Connettersi a [Microsoft Store](https://www.microsoft.com/store).
 2. Fare clic sulla scheda **Software**.
 3. Selezionare **Software professionale**.
 
-<img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
 
 4. Nell'elenco **Acquista software professionale** scegliere **Visual Studio**.
 
-<img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
 
 5. Nell'elenco **Acquista Visual Studio** scegliere la sottoscrizione che si vuole acquistare. (Visual Studio Professional 2017 è una licenza autonoma per l'IDE e non include una sottoscrizione.)
 
-<img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
 
 6. Nella pagina di descrizione del prodotto è possibile scegliere se acquistare una nuova sottoscrizione o rinnovarne una esistente.  Selezionare il tipo di sottoscrizione desiderato e aggiungerla al carrello. 
 
-<img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
 
 7. Nel carrello fare clic sul pulsante **Completa transazione** per passare alla pagina **Controlla ed effettua l'ordine**.  (Per continuare, potrebbe essere necessario accedere all'account Microsoft personale.) 
 
@@ -138,5 +138,5 @@ Per attivare la sottoscrizione:
 
 
 Le organizzazioni che vogliono usufruire dei vantaggi di più sottoscrizioni possono acquistare le licenze tramite vari programmi per contratti multilicenza.  La vendita dei contratti multilicenza avviene tramite i partner Microsoft autorizzati.  
-Informazioni su come [acquistare prodotti tramite contratti multilicenza](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx). Vedere le [domande e risposte su Marketplace e a fatturazione](/vsts/marketplace/marketplace-billing-qa) per trovare risposte alle domande più frequenti su Visual Studio Marketplace e la fatturazione di Azure. 
+Informazioni su come acquistare prodotti tramite [contratti multilicenza](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx). Vedere le [domande e risposte su Marketplace e a fatturazione](/vsts/marketplace/marketplace-billing-qa) per trovare risposte alle domande più frequenti su Visual Studio Marketplace e la fatturazione di Azure. 
 

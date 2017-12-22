@@ -10,11 +10,11 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
@@ -32,6 +32,8 @@ Visual Studio Tools for AI è integrato con Azure Machine Learning per facilitar
 
 ![Esplorazione degli esempi](media\about\gallery.png)
 
+[Altre informazioni sulla creazione di progetti dalla raccolta di esempi](create-project-gallery.md)
+
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Scalabilità orizzontale del training dei modelli di apprendimento avanzato e/o inferenza nel cloud
 Questa estensione rende più facile eseguire il training di modelli nel computer locale oppure è possibile inviare processi al cloud tramite l'integrazione con Azure Machine Learning. Si possono inviare processi a destinazioni di calcolo diverse, come cluster Spark, macchine virtuali con GPU di Azure e altro ancora  
  
@@ -39,7 +41,7 @@ Questa estensione rende più facile eseguire il training di modelli nel computer
 
 [Altre informazioni sui modelli di training nel cloud](tensorflow-vm.md) 
 
-## <a name="supported-operating-systems"></a>Sistemi operativi supportati
+## <a name="supported-operating-systems"></a>Supported Operating Systems
 Questa estensione supporta attualmente i sistemi operativi Windows a 64 bit
 
 # <a name="support"></a>Supporto

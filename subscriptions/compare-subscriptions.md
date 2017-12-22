@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Confrontare le funzionalità e i vantaggi delle sottoscrizioni standard e cloud di Visual Studio"
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Confrontare le opzioni per le sottoscrizioni di Visual Studio
 
@@ -24,7 +24,7 @@ Esiste una sottoscrizione per ogni esigenza degli utenti finali, siano essi stud
 
 **Visual Studio Enterprise:** con Visual Studio è facile sviluppare software di alta qualità in PC e Mac, indipendentemente dal fatto che sia destinato a telefoni, desktop o al cloud. Le sottoscrizioni includono praticamente tutto il software Microsoft, nonché i crediti Azure, i corsi Pluralsight, il supporto tecnico e altro ancora.
 
-**Visual Studio Professional:** strumenti e servizi di sviluppo professionali per creare qualsiasi app per qualsiasi piattaforma. Collaborare più facilmente e aumentare la produttività, sia lavorando in autonomia che all'interno di un piccolo team.
+**Visual Studio Professional:** ottenere strumenti e servizi di sviluppo professionali per creare qualsiasi app per qualsiasi piattaforma. Collaborare più facilmente e aumentare la produttività, sia lavorando in autonomia che all'interno di un piccolo team.
 
 **Visual Studio Test Professional:** promuovere qualità e collaborazione in tutte le fasi del processo di sviluppo, con strumenti di test completi e i vantaggi della sottoscrizione standard che includono il principale software di Microsoft, crediti mensili di Azure, formazione tecnica, supporto professionale e altro ancora.
 
@@ -33,7 +33,7 @@ Esiste una sottoscrizione per ogni esigenza degli utenti finali, siano essi stud
 **Visual Studio Dev Essentials:** tutto quello che serve per sviluppare e distribuire app per qualsiasi piattaforma. Con strumenti avanzati, le potenzialità del cloud, risorse di formazione e supporto, questo è il programma gratuito dedicato agli sviluppatori più completo di sempre.  
 
 ## <a name="subscription-types"></a>Tipi di sottoscrizione
-**Sottoscrizioni standard:** disponibili tramite i rivenditori nei contratti multilicenza Microsoft pluriennali e direttamente tramite Microsoft Store online.  Queste sottoscrizioni includono licenze perpetue per Visual Studio. 
+**Sottoscrizioni standard:** disponibili tramite i rivenditori nei contratti multilicenza Microsoft pluriennali e direttamente tramite Microsoft Store online.  Le sottoscrizioni standard includono licenze perpetue per Visual Studio. 
 
 **Sottoscrizioni cloud:** con le sottoscrizioni cloud è possibile accedere a Visual Studio, Visual Studio Team Services e ottenere altri vantaggi per i sottoscrittori senza un contratto a lungo termine.  È possibile attivare la sottoscrizione su base mensile o annuale. La fatturazione viene gestita tramite la sottoscrizione di Microsoft Azure. 
 
@@ -45,7 +45,7 @@ Esiste una sottoscrizione per ogni esigenza degli utenti finali, siano essi stud
 - [Microsoft Certified Trainer:](https://www.microsoft.com/en-us/learning/mct-certification.aspx) un programma su misura per fornire accesso esclusivo a risorse che consentono di sviluppare ulteriormente l'esperienza tecnica e le competenze di formatori.
 
 ## <a name="visual-studio-licensing"></a>Licenze per Visual Studio
-Le sottoscrizioni di Visual Studio, definite in precedenza abbonamenti MSDN, sono concesse in licenza in base ai singoli utenti. Un unico utente può usare il software per progettare, sviluppare, testare o mostrare i propri programmi su un numero illimitato di dispositivi. Una sottoscrizione di Visual Studio consente anche all'utente con licenza di valutare il software e simulare gli ambienti dei clienti per diagnosticare i problemi correlati ai programmi specifici.
+Le sottoscrizioni di Visual Studio sono concesse in licenza ai singoli utenti. Un unico utente può usare il software per progettare, sviluppare, testare o mostrare i propri programmi su un numero illimitato di dispositivi. Una sottoscrizione di Visual Studio consente anche all'utente con licenza di valutare il software e simulare gli ambienti dei clienti per diagnosticare i problemi correlati ai programmi specifici.
 
 I sottoscrittori di Visual Studio sono anche autorizzati ad eseguire il software per sottoscrittori, ad eccezione di Windows e Windows Server, nelle macchine virtuali di Microsoft Azure, ottenendo quindi maggiore flessibilità per lo sviluppo e il test delle applicazioni. Il costo della licenza di Windows Server o Windows è incluso nella tariffa della macchina virtuale Windows.
 
@@ -58,7 +58,7 @@ Una licenza di sottoscrizione di Visual Studio consente anche agli utenti finali
 ## <a name="additional-information"></a>Informazioni aggiuntive
 [Download del white paper sulle licenze per Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[Confrontare le opzioni e i prezzi delle sottoscrizioni](https://www.visualstudio.com/pricing)
+[Confrontare le opzioni e i prezzi delle sottoscrizioni](https://www.visualstudio.com/vs/pricing)
 
 [Confrontare le funzionalità dell'IDE di Visual Studio](https://www.visualstudio.com/vs/compare/)
 
