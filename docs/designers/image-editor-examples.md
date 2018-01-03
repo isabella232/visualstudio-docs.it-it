@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b69e225bf4d7273e4e9ff1a33a1b5c4e8e332ebf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c257b39f6bb320ce39ca34278d6eff29a3f4615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor-examples"></a>Esempi dell'editor immagini
 Gli articoli di questa sezione della documentazione contengono esempi che illustrano l'uso dell'editor di immagini.  

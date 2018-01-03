@@ -1,7 +1,7 @@
 ---
-title: Esecuzione di unit test di una DLL di Visual C++ per le app UWP | Microsoft Docs
+title: Come testare una libreria di collegamento dinamico di Visual C++ per le app UWP | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -9,43 +9,42 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: "13"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 4fc133d96f8306b46e4d820b6f7256db8c471122
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Esecuzione di unit test di una DLL di Visual C++ per le app UWP
-Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. La DLL RooterLib ricorda vagamente la teoria dei limiti di calcolo, implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app UWP che mostra a un utente il lato divertente della matematica.  
+# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Come testare una libreria di collegamento dinamico di Visual C++ per le app UWP 
+In questo argomento viene descritto come creare unit test per una libreria di collegamento dinamico di Visual C++ per le app della piattaforma UWP (Universal Windows Platform) con il framework di test Microsoft per C++. La libreria di collegamento RooterLib rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app UWP che mostra a un utente il lato divertente della matematica.  
   
  Questo argomento illustra come usare unit test come primo passaggio dell'attività di sviluppo Secondo questo approccio devi innanzitutto scrivere un metodo di test che verifica il comportamento specifico del sistema che stai testando, quindi scriverai il codice che supera il test. Apportando modifiche nell'ordine in cui sono presentate le procedure riportate di seguito, è possibile invertire questa strategia scrivendo prima il codice da testare e quindi gli unit test.  
   
  In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. Puoi anche includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL. Per suggerimenti sulla struttura da usare, vedere [Aggiunta di unit test alle applicazioni C++ esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
- Questo argomento descrive come eseguire le attività seguenti:  
+##  <a name="In_this_topic"></a> Contenuto dell'argomento  
+
+ [Creare la soluzione e il progetto di unit test](#Create_the_solution_and_the_unit_test_project)  
   
- [Creare la soluzione e il progetto unit test](#BKMK_Create_the_solution_and_the_unit_test_project)  
+ [Verificare che i test siano eseguiti in Esplora test](#Verify_that_the_tests_run_in_Test_Explorer)  
   
- [Verificare che i test siano eseguiti in Esplora test](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
+ [Aggiungere il progetto di DLL alla soluzione](#Add_the_DLL_project_to_the_solution)  
   
- [Aggiungere il progetto di DLL alla soluzione](#BKMK_Add_the_DLL_project_to_the_solution)  
+ [Definire le funzioni DLL visibili al codice di test](#make_the_dll_functions_visible_to_the_test_code)  
   
- [Abbinare il progetto di test al progetto di DLL](#BKMK_Couple_the_test_project_to_the_dll_project)  
+ [Incrementare i test in maniera iterativa e fare in modo che siano superati](#Iteratively_augment_the_tests_and_make_them_pass)  
   
- [Incrementare i test in maniera iterativa e fare in modo che siano superati](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
+ [Eseguire il debug di un test non superato](#Debug_a_failing_test)  
   
- [Eseguire il debug di un test non superato](#BKMK_Debug_a_failing_test)  
+ [Effettuare il refactoring del codice senza modificare i test](#Refactor_the_code_without_changing_tests)  
   
- [Effettuare il refactoring del codice senza modificare i test](#BKMK_Refactor_the_code_without_changing_tests)  
-  
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto unit test  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto unit test  
   
 1.  Scegliere **Nuovo** dal menu **File**, quindi **Nuovo progetto**.  
   
-2.  Nella finestra di dialogo Nuovo progetto espandere **Installati**, espandere **Visual C++** e quindi scegliere **Universale di Windows**. Scegli quindi **Libreria unit test (Universale di Windows)** nell'elenco di modelli di progetto.  
+2.  Nella finestra di dialogo Nuovo progetto espandere **Installato**, espandere **Visual C++** e quindi scegliere **Piattaforma UWP**. Scegliere quindi **Unit Test Library (UWP apps)** (Libreria unit test (applicazioni piattaforma UWP)) dall'elenco di modelli di progetto.  
   
      ![Creare una libreria unit test in C&#43;&#43;](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
@@ -67,7 +66,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. 
   
          Quando vengono eseguiti i test, viene creata un'istanza di ogni classe di test. I metodi di test vengono chiamati in un ordine non specificato. È possibile definire metodi speciali che vengono richiamati prima e dopo ogni modulo, classe, o metodo. Per altre informazioni, vedere [Uso di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) in MSDN Library.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificare che i test siano eseguiti in Esplora test  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificare che i test siano eseguiti in Esplora test  
   
 1.  Inserire il codice di test:  
   
@@ -86,7 +85,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. 
   
      ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Aggiungere il progetto di DLL alla soluzione  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> Aggiungere il progetto di DLL alla soluzione  
   
 1.  In Esplora soluzioni scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Aggiungi nuovo progetto**.  
   
@@ -146,7 +145,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. 
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Abbinare il progetto di test al progetto di DLL  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Definire le funzioni DLL visibili al codice di test  
   
 1.  Aggiungere RooterLib al progetto RooterLibTests.  
   
@@ -199,7 +198,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. 
   
  È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare i test in maniera iterativa e farli passare  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentare i test in maniera iterativa e farli passare  
   
 1.  Aggiungere un nuovo test:  
   
@@ -260,7 +259,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. 
 > [!TIP]
 >  Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Debug di un test non superato  
+##  <a name="Debug_a_failing_test"></a> Debug di un test non superato  
   
 1.  Aggiungere un altro test a **unittest1.cpp**:  
   
@@ -330,7 +329,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app UWP. 
   
  ![Tutti i test superati](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Eseguire il refactoring del codice senza modificare i test  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Eseguire il refactoring del codice senza modificare i test  
   
 1.  Semplificare il calcolo centrale nella funzione `SquareRoot`:  
   

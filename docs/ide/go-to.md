@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a  
 I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata nel codice allo scopo di individuare rapidamente elementi specifici. Da una semplice interfaccia unificata è possibile passare a una riga, a un tipo, a un simbolo o a un file specifico e ad altro ancora. Questa funzionalità esiste in Visual Studio 2017 e versioni successive.  
@@ -57,7 +58,7 @@ Prefisso | Icona | Metodo rapido | Descrizione
 \#      | ![Icona Simbolo](media/gotoall_symbolicon.png) | CTRL+1, CTRL+S | Consente di passare al simbolo specificato
 f      | ![Icona File](media/gotoall_fileicon.png)     | CTRL+1, CTRL+F | Consente di passare al file specificato
 m      | ![Icona del membro](media/gotoall_membericon.png) | CTRL+1, CTRL+M | Consente di passare al membro specificato
-u      | ![Icona Tipo](media/gotoall_typeicon.png)     | CTRL+1, CTRL+T | Consente di passare al tipo specificato
+t      | ![Icona Tipo](media/gotoall_typeicon.png)     | CTRL+1, CTRL+T | Consente di passare al tipo specificato
 :      | ![Icona Riga](media/gotoall_lineicon.png)     | CTRL+G         | Consente di passare al numero di riga specificato
 
 #### <a name="filter-to-a-specific-location"></a>Filtrare in base a una posizione specifica    
@@ -83,5 +84,5 @@ Mostra dettagli    | Visualizza informazioni relative a progetto, file, riga e r
 Centra la finestra   | Sposta la finestra al centro della parte superiore dell'editor di codice anziché in alto a destra   
 
 ## <a name="see-also"></a>Vedere anche  
-[Spostamento nel codice](../ide/navigating-code.md)  
+[Esplorazione del codice](../ide/navigating-code.md)  
 [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)  

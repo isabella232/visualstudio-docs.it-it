@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: unity
+ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro delle modifiche (Visual Studio Tools per Unity)
 Registro delle modifiche di Visual Studio Tools per Unity.  
@@ -149,7 +150,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunto il supporto per il nuovo runtime di Unity, compatibile con .NET 4.6 / C# 6.
 
--   **Generazione del progetto:**  
+-   **Project Generation:**  
 
     -   Aggiunta del supporto per il profilo .NET 4.6.
 
@@ -165,7 +166,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Corretta la posizione del cursore dopo l'inserimento del metodo con completamento automatico.
 
--   **Generazione del progetto:**  
+-   **Project Generation:**  
 
     -   Eliminata la post-elaborazione della versione dell'assembly.
 
@@ -198,7 +199,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunto un avviso in caso di punto di interruzione non associabile (quando non viene trovato alcun percorso di origine corrispondente).
 
--   **Generazione del progetto:**  
+-   **Project Generation:**  
 
     -   Corretta la generazione di file csproj con caratteri speciali/localizzati.
 
@@ -243,7 +244,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Aggiunti messaggi di errore più efficaci quando un tipo è previsto o non trovato.
 
--   **Generazione del progetto:**  
+-   **Project Generation:**  
 
     -   Rimosso il suffisso CSharp dai nomi di progetto.
 
@@ -271,7 +272,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
     -   Corretto il supporto per il debug dei frame di iteratore con il nuovo compilatore C#.
 
--   **Generazione del progetto:**  
+-   **Project Generation:**  
 
     -   Corretto il bug che impediva la compilazione quando si usava Unity Web Player.
 

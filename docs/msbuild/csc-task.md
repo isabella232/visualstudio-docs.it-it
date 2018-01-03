@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Attività Csc
 Esegue il wrap di CSC.exe e produce file eseguibili (con estensione EXE), librerie a collegamento dinamico (con estensione DLL) o moduli di codice (con estensione NETMODULE). Per altre informazioni su CSC.exe, vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -63,6 +63,7 @@ Esegue il wrap di CSC.exe e produce file eseguibili (con estensione EXE), librer
 |`NoWin32Manifest`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, non includere il manifesto Win32 predefinito.|  
 |`Optimize`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, abilita le ottimizzazioni. Se `false`, disabilita le ottimizzazioni. Per altre informazioni, vedere [/optimize (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Parametro di ouput facoltativo `String`.<br /><br /> Specifica il nome del file di output. Per altre informazioni, vedere [/out (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
+|`OutputRefAssembly`|Parametro `String` facoltativo.<br /><br /> Specifica il nome del file di assembly di riferimento di output. Per altre informazioni, vedere [/refout (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
 |`PdbFile`|Parametro `String` facoltativo.<br /><br /> Specifica il nome file delle informazioni di debug. Il nome predefinito è il nome file di output con estensione PDB.|  
 |`Platform`|Parametro `String` facoltativo.<br /><br /> Specifica la piattaforma del processore da impostare come destinazione del file di output. Il valore di questo parametro può essere `x86`, `x64` o `anycpu`. Il valore predefinito è `anycpu`. Per altre informazioni, vedere [/platform (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica l'attività per importare informazioni di tipi pubblico dagli elementi specificati nel progetto corrente. Per altre informazioni, vedere [/reference (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> È possibile specificare un alias di riferimento [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] in un file [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aggiungendo i metadati `Aliases` all'elemento originale di "riferimento". Ad esempio, per impostare l'alias "LS1" nella riga di comando CSC seguente:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> è necessario usare:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  

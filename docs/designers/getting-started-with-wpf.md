@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c1f81d33e4efb5cc084001b2b754cfa845c91d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93770832d37bc9df5b4ee5e27dda03821f0bc058
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-wpf"></a>Introduzione a WPF
 Windows Presentation Foundation (WPF) è un framework dell'interfaccia utente che crea applicazioni client desktop. La piattaforma di sviluppo WPF supporta un'ampia serie di funzionalità di sviluppo di applicazioni, incluso un modello dell'applicazione, le risorse, i controlli, la grafica, il layout, l'associazione dati, i documenti e la sicurezza. È un subset di .NET Framework, pertanto se in precedenza si sono sviluppate applicazioni con .NET Framework usando ASP.NET o Windows Form, l'esperienza di programmazione dovrebbe essere familiare. In WPF viene usato il linguaggio Extensible Application Markup Language (XAML) per fornire un modello dichiarativo per la programmazione di applicazioni. Questa sezione contiene argomenti introduttivi all'uso di WPF.  
@@ -27,8 +28,8 @@ Windows Presentation Foundation (WPF) è un framework dell'interfaccia utente ch
 |-|-|  
 |Passare subito a...|[Procedura dettagliata: Applicazione desktop WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)|  
 | Voglio confrontare strumenti di progettazione XAML... |[Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md)|  
-|Nuovi utenti di .NET?|[Cenni preliminari su .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Concetti di base sulle applicazioni](/dotnet/standard/application-essentials)<br /><br /> [Guida introduttiva a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|  
-|Altre informazioni su WPF...|[Introduzione a WPF](../designers/introduction-to-wpf.md)<br /><br /> [Cenni preliminari su XAML (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Controlli](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [Cenni preliminari sull'associazione dati](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
+|Nuovi utenti di .NET?|[Cenni preliminari su .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Concetti di base sulle applicazioni](/dotnet/standard/application-essentials)<br /><br /> [Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) (Introduzione a Visual C# e Visual Basic)|  
+|Altre informazioni su WPF...|[Introduzione a WPF](../designers/introduction-to-wpf.md)<br /><br /> [Cenni preliminari su XAML (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Controlli](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [Panoramica sul data binding](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Data binding WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
 |Per gli sviluppatori Windows Form|[Controlli Windows Form e controlli WPF equivalenti](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Interoperatività di WPF e Windows Form](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f7f2914b59025d3cf1dc82d43191f43ec7b0115
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5ab19af1e746bdee9c4ec933507ac3092b0e82a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Esegue il comando specificato dopo l'avvio dell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -48,4 +49,4 @@ devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
   
 ## <a name="see-also"></a>Vedere anche  
  [Devenv Command Line Switches](../../ide/reference/devenv-command-line-switches.md)  (Opzioni della riga di comando di Devenv)  
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio)
+ [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Tasti di scelta rapida in Blend
 ## <a name="project-shortcuts"></a>Tasti di scelta rapida per i progetti  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="view-shortcuts"></a>Tasti di scelta rapida per le visualizzazioni  
   
-|Operazione da eseguire|Seguire questa procedura|  
+|Operazione da eseguire|Eseguire questa operazione|  
 |----------------|-------------|  
 |Spostarsi tra le visualizzazioni **Progettazione**, **Codice** e **Doppia visualizzazione**|F11|  
 |Ingrandire la tavola da disegno|CTRL+SEGNO DI UGUALE|  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="workspace-shortcuts"></a>Tasti di scelta rapida per l'area di lavoro  
   
-|Operazione da eseguire|Seguire questa procedura|  
+|Operazione da eseguire|Eseguire questa operazione|  
 |----------------|-------------|  
 |Spostarsi tra le aree di lavoro **Animazione** e **Progettazione**|CTRL+F11|  
 |Visualizzare o nascondere il pannello **Asset**|CTRL+PUNTO|  

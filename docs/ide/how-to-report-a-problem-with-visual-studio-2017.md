@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Come segnalare un problema con Visual Studio 2017
 Se si verifica un problema con Visual Studio, è importante segnalarlo a Microsoft. Di seguito viene illustrato come segnalare il problema in modo che Microsoft possa diagnosticarlo e risolverlo.  
@@ -65,6 +65,12 @@ I file di traccia e di dump di heap sono utili per diagnosticare i problemi. Sia
 ## <a name="submit-the-report"></a>Inviare il report  
 ###  <a name="submit_the_report"></a>  
  Fare clic sul pulsante **Invia** per inviare il report, insieme a eventuali immagini, tracce o file dump. Se il pulsante **Invia** è disattivato, verificare di aver specificato un titolo e una descrizione per il report.  
+
+## <a name="alternate-reporting"></a>Creazione report alternativa
+###  <a name="alternate_reporting"></a>  
+ Se non è possibile completare l'installazione di Visual Studio o non si riesce ad accedere allo strumento per il feedback all'interno di Visual Studio, lo strumento per il feedback è anche disponibile tramite il programma di installazione di Visual Studio. Fare clic sull'icona per l'invio di commenti e suggerimenti in alto a destra del programma di installazione di Visual Studio e seguire i passaggi descritti in questo articolo.
+
+ ![È possibile usare il pulsante Commenti e suggerimenti nel programma di installazione di Visual Studio per aprire lo strumento per il feedback](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>Vedere anche  
  [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)

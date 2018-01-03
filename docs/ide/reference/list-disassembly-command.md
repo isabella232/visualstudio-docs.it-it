@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f37d62a906a0f528a821586470615a63f055af23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c6a704ac783f4efc300de26c2a5e987f82fc2e9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
 Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.  
@@ -37,22 +38,22 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  Ogni opzione può essere richiamata usando la forma completa o una forma breve.  
   
  /count: `number` [or] /c: `number` [or] /length: `number` [or] /l: `number`  
- Parametro facoltativo. Numero di istruzioni da visualizzare. Il valore predefinito è 8.  
+ Facoltativo. Numero di istruzioni da visualizzare. Il valore predefinito è 8.  
   
  /endaddress: `expression` [or] /e: `expression`  
- Parametro facoltativo. Indirizzo in corrispondenza del quale interrompere il disassembly.  
+ Facoltativo. Indirizzo in corrispondenza del quale interrompere il disassembly.  
   
  /codebytes:`yes`&#124;`no` [or] /bytes:`yes`&#124;`no` [or] /b:`yes`&#124;`no`  
- Parametro facoltativo. Indica se visualizzare i byte di codice. Il valore predefinito è `no`.  
+ Facoltativo. Indica se visualizzare i byte di codice. Il valore predefinito è `no`.  
   
  /source:`yes`&#124;`no` [or] /s:`yes`&#124;`no`  
- Parametro facoltativo. Indica se visualizzare il codice sorgente. Il valore predefinito è `no`.  
+ Facoltativo. Indica se visualizzare il codice sorgente. Il valore predefinito è `no`.  
   
  /symbolnames:`yes`&#124;`no` [or] /names:`yes`&#124;`no` [or] /n:`yes`&#124;`no`  
- Parametro facoltativo. Indica se visualizzare i nomi dei simboli. Il valore predefinito è `yes`.  
+ Facoltativo. Indica se visualizzare i nomi dei simboli. Il valore predefinito è `yes`.  
   
  [/linenumbers:`yes`&#124;`no`]  
- Parametro facoltativo. Abilita la visualizzazione dei numeri di riga associati al codice sorgente. L'opzione /source deve avere un valore di `yes` per usare l'opzione /linenumbers.  
+ Facoltativo. Abilita la visualizzazione dei numeri di riga associati al codice sorgente. L'opzione /source deve avere un valore di `yes` per usare l'opzione /linenumbers.  
   
 ## <a name="example"></a>Esempio  
   
@@ -66,4 +67,4 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio)
+ [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

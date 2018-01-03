@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tasti di scelta rapida (visualizzatore della Guida)
 È possibile spostarsi in Microsoft Help Viewer usando i tasti di scelta rapida elencati nella tabella seguente:  
@@ -105,14 +106,14 @@ ms.lasthandoff: 11/07/2017
 |**Tasto o combinazione di tasti**|**Azione**|  
 |ALT+D|Impostare l'origine dell'installazione sul disco.|  
 |ALT+O|Impostare l'origine dell'installazione su online.|  
-|Tab|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|  
-|Tab|Passare lo stato attivo al pulsante **Sposta**.|  
+|Scheda|Passare lo stato attivo alla casella di testo **Percorso archivio locale**.|  
+|Scheda|Passare lo stato attivo al pulsante **Sposta**.|  
 |ALT+V|Aprire la finestra di dialogo **Sposta contenuto**.|  
 |CTRL+ALT+F|Passare lo stato attivo alla casella di testo **Filtra documentazione**.|  
-|Tab|Passare lo stato attivo all'elenco della documentazione.|  
+|Scheda|Passare lo stato attivo all'elenco della documentazione.|  
 |FRECCIA SU e FRECCIA GIÙ|Scorrere l'elenco della documentazione.|  
 |Spazio|Aggiungere un elemento all'elenco **Modifiche in sospeso**.|  
-|Tab|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|  
+|Scheda|Passare lo stato attivo all'elenco **Modifiche in sospeso**.|  
 |FRECCIA SU e FRECCIA GIÙ|Scorrere l'elenco **Modifiche in sospeso**.|  
 |Spazio|Rimuovere un elemento dall'elenco **Modifiche in sospeso**.|  
 |ALT+T|Applicare tutte le modifiche in sospeso.|

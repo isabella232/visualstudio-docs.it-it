@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4f3388d7484021bd4c12e4a7273b312190bd6dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: individuare e organizzare modelli di progetto e modelli di elementi
 I file di modello devono essere inseriti in un percorso riconosciuto da Visual Studio, in modo che siano visualizzati nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento**. Per i modelli è possibile creare sottocategorie personalizzate che verranno poi visualizzate nell'interfaccia utente.  

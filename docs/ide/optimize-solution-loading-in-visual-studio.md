@@ -1,32 +1,22 @@
 ---
-title: Ottimizzare il caricamento delle soluzioni in Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: "4"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-f1_keywords: vs.performancecenter
-ms.technology: vs-ide-general
-ms.openlocfilehash: 2102fc026b566c89108f0d74dcf604020653e358
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
+---
+titolo: "Ottimizzare il caricamento delle soluzioni in Visual Studio | Microsoft Docs" ms.custom: "" ms.date: 08/31/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "ora di avvio [Visual Studio]"
+  - "ottimizzazione dell'ora di avvio [Visual Studio]"
+  - "accelerare i tempi di avvio [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
 ---
 # <a name="optimize-solution-loading-in-visual-studio"></a>Ottimizzare il caricamento delle soluzioni in Visual Studio
 Molte soluzioni contengono un numero elevato di progetti che influisce sul tempo di caricamento delle soluzioni. Negli ambienti di team, tuttavia, gli sviluppatori lavorano in genere su un sottoinsieme di progetti senza la necessità di caricare tutti i singoli progetti.
 
-Visual Studio 2017 supporta il **caricamento leggero delle soluzioni**. Quando la modalità di caricamento leggero delle soluzioni è abilitata, Visual Studio 2017 carica un piccolo sottoinsieme di progetti anziché caricare tutti i progetti di una soluzione di grandi dimensioni. La maggior parte delle funzionalità IDE di uso comune possono essere usate in modalità di caricamento leggero delle soluzioni consentendo di compilare ed eseguire le ricerche e il debug nell'intera soluzione. La principale funzionalità non supportata in modalità di caricamento leggero delle soluzioni è Modifica e continuazione.
+Visual Studio 2017 supporta il **caricamento leggero delle soluzioni**. Quando la modalità di caricamento leggero delle soluzioni è abilitata, Visual Studio 2017 carica un piccolo sottoinsieme di progetti anziché caricare tutti i progetti di una soluzione di grandi dimensioni. La maggior parte delle funzionalità IDE di uso comune possono essere usate in modalità di caricamento leggero delle soluzioni consentendo di compilare ed eseguire le ricerche e il debug nell'intera soluzione. La principale funzionalità non supportata in modalità di caricamento leggero delle soluzioni è Modifica e continuazione.  
 
 > [!NOTE]
 > Questo contenuto si applica a Visual Studio 2017 Update 3
@@ -54,16 +44,13 @@ Le sezioni seguenti descrivono come abilitare il caricamento leggero delle soluz
 
 ## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>Funzionamento del caricamento leggero delle soluzioni
 
-Quando si carica la soluzione, Visual Studio carica solo i progetti aperti precedentemente. Tutti gli altri progetti sono visibili in Esplora soluzioni ma non vengono caricati. Quando si espande un progetto o si fa clic con il pulsante destro del mouse su un progetto, Visual Studio carica automaticamente il progetto. Il caricamento automatico dei progetti richiede in genere meno di un secondo, ma può risultare più lungo per alcuni progetti.
-Visual Studio abilita tuttavia le funzionalità IDE come la ricerca, il debug, la compilazione e il controllo del codice sorgente disponibili nell'intera soluzione. È possibile, ad esempio, effettuare una ricerca nell'intera soluzione anche se sono stati caricati soltanto alcuni progetti in modalità di caricamento leggero. 
+Quando si carica la soluzione, Visual Studio carica solo i progetti aperti precedentemente. Tutti gli altri progetti sono visibili in Esplora soluzioni ma non vengono caricati. Quando si espande un progetto o si fa clic con il pulsante destro del mouse su un progetto, Visual Studio carica automaticamente il progetto. Il caricamento automatico dei progetti richiede in genere meno di un secondo, ma può risultare più lungo per alcuni progetti. Visual Studio abilita tuttavia le funzionalità IDE come la ricerca, il debug, la compilazione e il controllo del codice sorgente disponibili nell'intera soluzione. È possibile, ad esempio, effettuare una ricerca nell'intera soluzione anche se sono stati caricati soltanto alcuni progetti in modalità di caricamento leggero. 
 
 Quando si espandono più progetti, Visual Studio memorizza l'elenco dei progetti espansi. Quando la soluzione viene riaperta, Visual Studio carica automaticamente i progetti espansi in precedenza.
 
 ## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio offre agli sviluppatori vantaggi significativi in termini di prestazioni
 
 In base ai dati di telemetria di Visual Studio, la modalità di caricamento leggero delle soluzioni offre vantaggi significativi per le soluzioni di grandi dimensioni con più di 30 progetti. Per questa ragione si consiglia agli sviluppatori che usano soluzioni di grandi dimensioni di provare la modalità di caricamento leggero delle soluzioni. La maggior parte degli sviluppatori che prova per la prima volta la modalità di caricamento leggero delle soluzioni finisce con l'usarla regolarmente. 
-
-I dati di telemetria relativi all'utilizzo di Visual Studio vengono costantemente tenuti sotto controllo per migliorare l'euristica e offrire la modalità di caricamento leggero delle soluzioni agli sviluppatori che potrebbero trarne maggiori vantaggi. 
 
 ## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio suggerisce l'attivazione del caricamento leggero delle soluzioni in base all'euristica
 
@@ -131,4 +118,4 @@ Per alcune funzionalità, Visual Studio carica automaticamente l'intera soluzion
 Diverse innovazioni ottimizzano le prestazioni del tempo di caricamento delle soluzioni per gli sviluppatori. Poiché si tratta di una nuova funzionalità, i suggerimenti dei clienti vengono esaminati attentamente e vengono risolti i problemi noti. Grazie per la collaborazione. È possibile contattare il team di ottimizzazione del caricamento delle soluzioni all'indirizzo lslsupport@microsoft.com
 
 ## <a name="see-also"></a>Vedere anche
-[Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+[Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)  

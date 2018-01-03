@@ -1,62 +1,27 @@
----
-title: Creare un progetto in Strumenti di Visual Studio per AI
-description: Creare un progetto usando un campione dalla raccolta di Azure Machine Learning
-keywords: ai, visual studio, azure machine learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
-ms.date: 11/13/2017
-ms.topic: how to article
-ms.technology: visual studio
-ms.devlang: multiple
-ms.service: multiple
-ms.openlocfilehash: 2d8b5f1d06d31eaba9c75e0f0515b2526fc7efdf
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
----
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Creare un progetto AI dalla raccolta di Azure Machine Learning in Visual Studio
+# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Creare un progetto AI da un modello in Visual Studio
 
-Azure Machine Learning è integrato con Strumenti di Visual Studio per AI. È possibile usarlo per inviare processi di machine learning a destinazioni di calcolo remote come macchine virtuali di Azure, cluster Spark e così via. Vedere altre informazioni su [Sperimentazione di Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile creare un nuovo progetto Python usando una varietà di modelli.
 
-Dopo aver [installato Strumenti di Visual Studio per AI](installation.md) è facile creare un nuovo progetto Python usando i file recipe predefiniti nella raccolta di esempio Azure Machine Learning.
+1. Avviare Visual Studio.
 
-> ! Deve essere installato Azure Machine Learning Workbench. Per installarlo, vedere la [guida introduttiva all'installazione di Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+1. Selezionare **File > Nuovo > progetto** (Ctrl+Shift+N). Nel finestra di dialogo **Nuovo progetto** cercare "**AI Tools**" (Strumenti AI) e selezionare il modello desiderato. Si noti che la selezione di un modello visualizza una breve descrizione di ciò che offre tale modello. 
 
-1. Avviare Visual Studio. Aprire **Esplora Server** scegliendo il menu **AI Tools** (Strumenti AI) e quindi **Select Cluster** (Seleziona cluster).  
+    ![Finestra di dialogo VS2017 Nuovo progetto con modelli Python](media\create-project\new-ai-project.png)
 
-    ![Selezione di cluster](media\create-project\select-cluster.png)
+1. Per questa Guida rapida, selezionare il modello "**TensorFlow Application**" (Applicazione TensorFlow), assegnare al progetto un nome (ad esempio, "MNIST") e un percorso e selezionare **OK**. 
 
-1. Accedere alla sottoscrizione di Azure Machine Learning facendo clic con il pulsante destro del mouse sul nodo **Azure Machine Learning** in Esplora server, quindi selezionare **Accesso** e seguire le istruzioni.
+1. Visual Studio crea il file di progetto (un file `.pyproj` su disco) insieme a qualsiasi altro file, come descritto nel modello. Con il modello "TensorFlow Application", il progetto contiene un file con lo stesso nome del progetto. Il file è aperto nell'editor di Visual Studio per impostazione predefinita.
 
-    ![Accesso](media\create-project\azureml-login.png)
- 
-2. Selezionare **AI Tools (Strumenti AI) > Azure Machine Learning Sample Gallery (Raccolta di campioni di Azure Machine Learning)**. 
-    
-    ![Raccolta di campioni](media\create-project\gallery.png)
+    ![Progetto risultante quando si usa il modello di applicazione Python](media\create-project\new-tensorflowapp.png)
 
-1. Per questa guida rapida, selezionare il campione "**MNIST using TensorFlow**" e fare clic su **Installa**. Specificare 
-2.
- - **Gruppo di risorse**: gruppo di risorse di Azure in cui verranno archiviati i metadati
- - **Account**: account di prova di Azure Machine Learning
- - **Area di lavoro**: area di lavoro di Azure Machine Learning
- - **Tipo di progetto**: framework di machine learning. In questo caso scegliere **TensorFlow**
- - **Aggiungi a soluzione**: determina se aggiungere il progetto alla soluzione di Visual Studio corrente o se creare e aprire una nuova soluzione
- - **Percorso progetto**: percorso in cui salvare il codice
- - **Nome progetto**: digitare **TensorFlowMNIST**
-   
+1. Si noti che il codice importa già diverse librerie, tra cui TensorFlow e NumPy, nonché librerie di sistema e del sistema operativo. Avvia inoltre l'applicazione con alcuni argomenti di input per consentire di cambiare facilmente il percorso dei dati di training di input, dei modelli di output e dei file di log. Questi parametri sono utili quando si inviano processi a più contesti di calcolo, ad esempio una directory diversa nell'ambiente di sviluppo locale o una condivisione file di Azure. 
 
-    ![Progetto risultante quando si usa il modello di applicazione Python](media\create-project\new-AzureSampleProject.png)
+1. Per il progetto sono anche state create alcune proprietà che semplificano il debug dell'applicazione passando automaticamente gli argomenti della riga di comando a questi parametri di input. **Fare clic con il pulsante destro del mouse** sul progetto e selezionare **Proprietà** 
 
-1. Visual Studio crea il file di progetto (un file `.pyproj` su disco) e gli altri file definiti nel campione. Con il modello "MNIST" il progetto contiene più file.
+    ![Proprietà](media\create-project\project-properties.png)
 
-    ![mnist](media\create-project\azml-mnist.png)
+1. Fare clic sulla scheda **Debug** per vedere gli argomenti di script aggiunti automaticamente. È possibile modificarli in base alle proprie esigenze a seconda della posizione dei dati di input e della posizione di archiviazione preferita per i dati di output.
 
-1. Inviare il processo ad Azure Machine Learning. 
+    ![Proprietà](media\create-project\/project-properties_1.png)
 
-    ![mnist](media\create-project\submit-azml.png)
-
-1. Eseguire in un contenitore Docker o nel computer locale
-
-    ![mnist](media\create-project\azml-local.png)
+1. Eseguire il programma premendo Ctrl+F5 o selezionando **Debug > Avvia senza eseguire debug** del menu. I risultati vengono visualizzati nella finestra della console.

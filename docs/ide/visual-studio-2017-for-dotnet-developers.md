@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6fe98cea71bb49ea3e705a22cb696184966ea0ed
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 per sviluppatori .NET
 
@@ -69,6 +69,8 @@ Se il servizio è in esecuzione in Azure, con Visual Studio 2017 Enterprise è p
 
 Usare Git o il controllo della versione di Team Foundation per archiviare e aggiornare il codice in Visual Studio. All'interno dell'editor, è possibile organizzare le modifiche locali con Team Explorer e usare la barra di stato per tenere traccia di commit e modifiche in sospeso. È anche possibile configurare l'integrazione e il recapito continui all'interno di Visual Studio con l'estensione [Strumenti di recapito continuo per Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) per adottare il flusso di lavoro di sviluppo agile.
 
+![Controllo del codice sorgente in Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png "VSIDE_Productivity_SourceControl")
+
 ## <a name="extensibility"></a>Extensibility
 [Documentazione: Estensione di Visual Studio](../extensibility/index.md)
 
@@ -79,8 +81,10 @@ Visual Studio offre un ampio ecosistema di estensioni che è possibile installar
 ## <a name="popular-extensions--shortcuts"></a>Estensioni e collegamenti più diffusi
 Se fino a questo momento si è usato un altro ambiente IDE o di stesura di codice, può essere utile installare una di queste estensioni:
 - [Emulazione Emacs](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.Emacsemulation)
-- [HotKeys per Visual Studio (IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
+- [HotKeys per Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
+
+Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio. Si noti che alcune estensioni annullano le combinazioni di tasti di scelta rapida: per usare i comandi riportati in seguito, è necessario ripristinarle. Per ripristinare i tasti di scelta rapida per le impostazioni predefinite di Visual Studio, passare a **Strumenti > Importa/Esporta impostazioni > Reimposta tutte le impostazioni**.
 
 | Tasti di scelta rapida (tutti i profili) | Comando | Descrizione |
 |-|-|-| 
@@ -93,6 +97,6 @@ Se fino a questo momento si è usato un altro ambiente IDE o di stesura di codic
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **Ctrl+F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
 | **Ctrl+K,D** (profilo predefinito) o **Ctrl+E,D** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
-| **Ctrl+\,E** (profilo predefinito) o **Ctrl+W,E** (profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
+| **CTRL+\\,E** (profilo predefinito) o **CTRL+W,E** (profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
 
 

@@ -11,11 +11,12 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 653d02466e608d8d2c2955da8fec987c50517382
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 6fe43af670320a5832765faf25294a46b8f98d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Refactoring, generazione di codice e azioni rapide in Visual Studio
 
@@ -52,4 +53,4 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 ## <a name="see-also"></a>Vedere anche
 
 [IDE di Visual Studio](../ide/visual-studio-ide.md)  
-[Scrittura di codice nell'Editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+[Writing Code in the Code and Text Editor](../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice nell'Editor di testo e del codice)

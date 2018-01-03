@@ -44,11 +44,12 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Proprietà dei progetti Clang (Android C++)
 
@@ -57,7 +58,7 @@ Proprietà | Descrizione | Scelte
 Directory di inclusione aggiuntive | Specifica una o più directory da aggiungere al percorso di inclusione. Usare il punto e virgola (;) come delimitatore per più percorsi. (-I[path]).
 Formato informazioni di debug | Specifica il tipo di informazioni di debug generate dal compilatore. | **Nessuno**: non produce informazioni di debug, quindi la compilazione può risultare più veloce.<br>**Informazioni di debug complete (DWARF2)**: genera informazioni di debug DWARF2.<br>**Informazioni su numero di riga**: genera solo le informazioni sul numero riga.<br>
 Nome file oggetto | Consente di specificare un nome usato per eseguire l'override del nome del file oggetto predefinito. Può essere un nome di file o di directory. (/Fo[name]).
-Livello avvisi | Specifica il grado di severità del controllo effettuato dal compilatore per individuare gli errori del codice.  È possibile contrassegnare altre opzioni direttamente da Opzioni aggiuntive. (/w, /Weverything). | **Disattiva tutti gli avvisi**: disabilita tutti gli avvisi del compilatore.<br>**Abilita tutti gli avvisi**: abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita.<br>
+Livello avvisi | Specifica il grado di severità del controllo effettuato dal compilatore per trovare gli errori del codice.  È possibile contrassegnare altre opzioni direttamente da Opzioni aggiuntive. (/w, /Weverything). | **Disattiva tutti gli avvisi**: disabilita tutti gli avvisi del compilatore.<br>**Abilita tutti gli avvisi**: abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita.<br>
 Considera gli avvisi come errori | Considera tutti gli avvisi del compilatore come errori. Per un nuovo progetto, potrebbe essere preferibile usare /WX in tutte le compilazioni. La risoluzione degli avvisi garantirà il minor numero possibile di errori del codice di difficile individuazione.
 Abilita modalità dettagliata | Visualizza i comandi da eseguire e usa l'output dettagliato.
 Ottimizzazione | Specifica il livello di ottimizzazione per l'applicazione. | **Personalizzato**: consente di personalizzare l'ottimizzazione.<br>**Disabilitato**: disabilita l'ottimizzazione.<br>**Riduci dimensione**: ottimizza in base alla dimensione.<br>**Ottimizza velocità**: ottimizza in base alla velocità.<br>**Ottimizzazione completa**: ottimizzazioni onerose.<br>
@@ -71,7 +72,7 @@ ABI a virgola mobile | Opzione da selezionare per scegliere l'ABI a virgola mobi
 Controllo di sicurezza | Il controllo di sicurezza facilita il rilevamento di sovraccarichi del buffer di stack, un attacco comunemente tentato alla sicurezza di un programma. (fstack-protector). | **Disabilita controllo di sicurezza**: consente di disabilitare il controllo di sicurezza.<br>**Abilita controllo di sicurezza**: consente di abilitare il controllo di sicurezza. (fstack-protector)<br>
 Codice indipendente dalla posizione | Genera codice indipendente dalla posizione per l'uso in una libreria condivisa.
 Usa enum brevi | Il tipo enum usa solo il numero di byte richiesti dall'insieme di possibili valori di input.
-Abilita informazioni sui tipi in fase di esecuzione | Aggiunge codice per il controllo dei tipi di oggetti C++ in fase di esecuzione (informazioni sui tipi in fase di esecuzione).     (frtti, fno-rtti)
+Abilita informazioni sui tipi in fase di esecuzione | Aggiunge codice per il controllo dei tipi di oggetto C++ in fase di esecuzione (informazioni sui tipi in fase di esecuzione).     (frtti, fno-rtti)
 Standard del linguaggio C | Determina lo standard del linguaggio C. | **Default**<br>**C89**: standard del linguaggio C89.<br>**C99**: standard del linguaggio C99.<br>**C11**: standard del linguaggio C11.<br>**C99 (dialetto GNU)**: standard del linguaggio C99 (dialetto GNU).<br>**C11 (dialetto GNU)**: standard del linguaggio C11 (dialetto GNU).<br>
 Standard del linguaggio C++ | Determina lo standard del linguaggio C++. | **Default**<br>**C++03**: standard del linguaggio C++03.<br>**C++11**: standard del linguaggio C++11.<br>**C++14**: standard del linguaggio C++14.<br>**C++03 (dialetto GNU)**: standard del linguaggio C++03 (dialetto GNU).<br>**C++11 (dialetto GNU)**: standard del linguaggio C++11 (dialetto GNU).<br>**C++14 (dialetto GNU)**: standard del linguaggio C++14 (dialetto GNU).<br>
 Definizioni del preprocessore | Definisce i simboli di pre-elaborazione per il file di origine. (-D)

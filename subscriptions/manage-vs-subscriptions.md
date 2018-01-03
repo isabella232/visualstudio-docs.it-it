@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio.
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 ## <a name="signing-in-to-the-portal"></a>Accesso al portale
@@ -31,7 +31,7 @@ Se la sottoscrizione di Visual Studio è stata acquistata tramite Microsoft Stor
 #### <a name="workschool-accounts"></a>Account aziendale o dell'istituto di istruzione
 Se la sottoscrizione è stata offerta dall'azienda o dall'istituto di istruzione, l'utente avrà ricevuto un messaggio di benvenuto.  
 1.  Visitare il [Portale sottoscrittore](https://my.visualstudio.com/)
-2.  Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nella **Lettera di benvenuto** al sottoscrittore. Se la **Lettera di benvenuto** non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
+2.  Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nella **Lettera di benvenuto** al sottoscrittore. Se la Lettera di benvenuto non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
 3.  Fare clic su **Continua**
 4.  Si verrà reindirizzati alla pagina di accesso aziendale.
 5.  Immettere la password.
@@ -44,12 +44,12 @@ Se l'organizzazione ha Azure Active Directory ma l'utente non possiede un accoun
 1.  Visitare il [Portale sottoscrittore](https://my.visualstudio.com)
 2.  Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nella **Lettera di benvenuto** al sottoscrittore.  Se il messaggio di benvenuto non è stato ricevuto, controllare nelle cartelle di posta indesiderata.
 3.  Fare clic su **Continua**
-4.  Si verrà reindirizzati a una **pagina di decisione**.   Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è assegnata a un account **aziendale o dell'istituto di istruzione** associato a un tenant di Azure Active Directory (AAD).  Selezionare **Personale** se la sottoscrizione è associata a un indirizzo di posta elettronica **Aziendale** ma anche è stata convertita in un account Microsoft (MSA) **Personale**
+4.  Si verrà reindirizzati a una **pagina di decisione**.   Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è assegnata a un account **aziendale o dell'istituto di istruzione** associato a un tenant di Azure Active Directory (AAD).  Selezionare **Personale** se la sottoscrizione è associata a un indirizzo di posta elettronica **aziendale** ma è stata anche convertita in un account Microsoft (MSA) **personale**
 5.  Immettere la password
 6.  Fai clic su **Accedi** 
 
 ### <a name="managing-multiple-subscriptions"></a>Gestione di più sottoscrizioni
-Il portale personale riunisce tutti i programmi e le sottoscrizioni di Visual Studio in una singola esperienza del portale migliorata.  Ad esempio, l'utente potrebbe avere una sottoscrizione standard per il lavoro, come Visual Studio Enterprise, e una sottoscrizione mensile di Visual Studio Professional o l'appartenenza a Visual Studio Dev Essentials da usare a casa. 
+Il portale sottoscrizioni di Visual Studio riunisce tutti i programmi e le sottoscrizioni di Visual Studio in una singola esperienza del portale migliorata.  Ad esempio, l'utente potrebbe avere una sottoscrizione standard per il lavoro, come Visual Studio Enterprise, e una sottoscrizione mensile di Visual Studio Professional o l'appartenenza a Visual Studio Dev Essentials da usare a casa. 
 #### <a name="which-subscription-am-i-using"></a>Quale sottoscrizione sto usando?
 La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di colore blu della pagina Vantaggi.  Viene anche visualizzata in alto a destra della pagina.
 
@@ -64,9 +64,9 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 #### <a name="if-your-subscription-is-not-visible"></a>Se la sottoscrizione non è visibile...
 - Potrebbe essere scaduta.  Solo le sottoscrizioni attive vengono visualizzate nel Portale sottoscrittore.
 - Potrebbe essere associata a un indirizzo e-mail diverso. Ad esempio, se si accede alla sottoscrizione Visual Studio Professional con il proprio indirizzo e-mail aziendale/dell'istituto di istruzione e si ha un'appartenenza a Visual Studio Dev Essentials associata al proprio account Microsoft, verrà visualizzata solo la sottoscrizione corrispondente all'indirizzo e-mail usato per accedere al Portale sottoscrittore.  Per visualizzare l'altra sottoscrizione, sarà necessario disconnettersi e quindi accedere con l'altro indirizzo e-mail.
-- Se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore potrebbe non aver assegnato una sottoscrizione all'utente.  
+- Se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore potrebbe non aver assegnato una sottoscrizione all'utente o aver riassegnato la sua sottoscrizione a un altro utente.  
 
-#### <a name="renewing-my-subscriptions"></a>Rinnovo delle sottoscrizioni personali
+### <a name="renewing-my-subscriptions"></a>Rinnovo delle sottoscrizioni personali
 **Sottoscrizioni standard**
 - Microsoft Store: se è stata acquistata una sottoscrizione da [Microsoft Store](http://www.microsoft.com/store), è possibile anche rinnovarla. 
 - Contratti multilicenza: se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore deve contattare un rivenditore per rinnovare le sottoscrizioni.
@@ -81,7 +81,7 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 
 **Visual Studio Dev Essentials**: Dev Essentials è un programma gratuito e le appartenenze non scadono.  
 
-#### <a name="transferring-subscriptions"></a>Trasferimento di sottoscrizioni
+### <a name="transferring-subscriptions"></a>Trasferimento di sottoscrizioni
 Se la sottoscrizione è stata acquistata tramite i contratti multilicenza Microsoft ed è necessario riassegnarla a un altro membro dell'organizzazione, l'amministratore dovrà eseguire questa operazione per conto dell'utente. Le sottoscrizioni vendute al dettaglio possono essere trasferite a terze parti contattando il servizio clienti.  Non è possibile trasferire abbonamenti gratuiti o non destinati alla divulgazione. 
 
 
@@ -91,7 +91,7 @@ Se la sottoscrizione è stata acquistata tramite i contratti multilicenza Micros
 È possibile modificare facilmente le informazioni di contatto e le preferenze nel profilo personale.  
 1.  Fare clic sul nome nell'angolo superiore destro del Portale sottoscrittore.
 2.  Fai clic sul pulsante **Modifica profilo**.
-3.  Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto.  Nella scheda "Preferenze" è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.  
+3.  Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto.  Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.  
 4.  Dopo aver completato le modifiche, fare clic su **Salva**. 
 5.  Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi. 
 

@@ -1,7 +1,7 @@
 ---
 title: Ottimizzare le prestazioni di Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: d1058ca5762db28f0afc678a9d31cc6f0f3be6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
 Visual Studio è progettato per essere avviato nel modo più rapido ed efficiente possibile. Tuttavia, alcune estensioni di Visual Studio e le finestre degli strumenti possono influenzare negativamente i tempi di avvio quando vengono caricate. È possibile controllare il comportamento delle estensioni e delle finestre degli strumenti lente nella finestra di dialogo **Gestisci prestazioni di Visual Studio**. Per suggerimenti generali su come migliorare le prestazioni, vedere [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).  
@@ -66,17 +66,8 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 
     ![Gestisci prestazioni di Visual Studio - visualizzazione delle finestre degli strumenti](../ide/media/vside_perfdialog_toolwindows.png)
 
-## <a name="speed_up_solution_load"></a>Caricare più rapidamente soluzioni di grandi dimensioni in Visual Studio 2017
-
-Visual Studio 2017 introduce una nuova funzionalità denominata caricamento leggero delle soluzioni che riduce la quantità di tempo e memoria necessaria per caricare soluzioni di grandi dimensioni nell'IDE. Se si possiede una soluzione di grandi dimensioni contenente molti progetti C#, VB o C++, è probabile che l'abilitazione del caricamento leggero soluzioni produca sostanziali vantaggi in termini di prestazioni. Per informazioni dettagliate sui vantaggi di cui è possibile usufruire usando questa funzionalità, vedere [Ottimizzare il caricamento delle soluzioni](../ide/optimize-solution-loading-in-visual-studio.md).
-
-### <a name="enable-or-disable-lightweight-solution-load"></a>Abilitare o disabilitare il caricamento leggero delle soluzioni
-
-È possibile fare clic con il pulsante destro del mouse sul nome della soluzione in Esplora soluzioni e selezionare **Abilita il caricamento leggero delle soluzioni**. Dopo aver selezionato l'opzione, è necessario chiudere e riaprire la soluzione per attivare il carico leggero delle soluzioni.
-
-![Esplora soluzioni](../ide/media/VSIDE_LSL_Solution_Setting.png)
-
-Per configurare le impostazioni globali per il carico leggero delle soluzioni, vedere [Ottimizzare il caricamento delle soluzioni](../ide/optimize-solution-loading-in-visual-studio.md#global_solution_load_settings).
+> [!NOTE]
+> Nelle versioni di Visual Studio precedenti alla versione 15.5 è presente una funzionalità denominata **caricamento leggero soluzioni**. Questa funzionalità non è più disponibile in Visual Studio 2017 versione 15.5 e versioni successive. In Visual Studio versione 15.5 e versioni successive le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento leggero soluzioni.  
 
 ## <a name="see-also"></a>Vedere anche
 [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

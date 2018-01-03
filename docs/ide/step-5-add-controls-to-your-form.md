@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 879af047f09e34cf2d0f56e15ba786f7bb0562e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7cf60293ca2d0a0ebd18dc9715d2954bd1128b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: aggiungere controlli al form
 In questo passaggio si aggiungono controlli, ad esempio un controllo `PictureBox` e un controllo `CheckBox`, al form. Si aggiungeranno quindi pulsanti al form.  

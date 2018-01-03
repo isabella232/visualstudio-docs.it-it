@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 È possibile trovare e sostituire testo nell'editor di codice di Visual Studio e in alcune finestre di output basate su testo, quali le finestre di **Risultati ricerca**, usando il controllo **Trova e sostituisci** o **Find/Replace in Files** (Trova/Sostituisci nei file). È inoltre possibile eseguire la ricerca e sostituzione in alcune finestre di progettazione, quali la finestra di progettazione XAML, Progettazione Windows Form e le finestre degli strumenti  

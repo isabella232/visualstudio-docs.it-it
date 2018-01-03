@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1ff32914b523b2b515a3d4175e4b3f76ad7ecefd
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c18eadd6cfcdf6fc77b204f78654126ceb1862db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-r-in-visual-studio"></a>Utilizzo di R in Visual Studio
 
@@ -37,13 +38,13 @@ Usare i collegamenti seguenti per saperne di più sulle funzionalità correlate 
 | Funzionalità | Descrizione | Documentazione generale su Visual Studio | 
 | --- | --- | --- |
 | [Sistema del progetto di Visual Studio](projects.md) | È possibile organizzare e gestire i file correlati in una pratica struttura e sfruttare gli utili modelli per elementi quali il codice R, la documentazione R e R Markdown, nonché per le query SQL e le stored procedure. È inoltre possibile sfruttare la funzionalità di [gestione pacchetti](package-manager.md) e l'[integrazione con SQL Server](sql-server.md).  | [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Area di lavoro](workspaces.md) | RTVS supporta l'associazione ad aree di lavoro locali e remote, consentendo all'utente di sviluppare localmente codice R con set di dati di dimensioni ridotte e quindi di eseguire facilmente tale codice su computer più potenti basati su cloud con set di dati molto più grandi. | n/d |
+| [Area di lavoro](workspaces.md) | RTVS supporta l'associazione ad aree di lavoro locali e remote, consentendo all'utente di sviluppare localmente codice R con set di dati di dimensioni ridotte e quindi di eseguire facilmente tale codice su computer più potenti basati su cloud con set di dati molto più grandi. | N/D |
 | [Opzioni di R Tools](options.md) | Consentono di controllare i diversi aspetti di RTVS. | [Finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Modifica avanzata, IntelliSense e frammenti di codice](code-editing.md) | Sono inclusi colorazione della sintassi, [IntelliSense](code-intellisense.md) in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, accesso alle definizioni, opzione per trovare tutti i riferimenti, [frammenti di codice](code-snippets.md) e altro ancora. | [Scrittura di codice nell'Editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [R Markdown](rmarkdown.md) | I documenti R Markdown consentono di condividere i risultati dei dati, con codice R integrato all'interno di blocchi di codice markdown. | n/d |
-| [Finestra interattiva](interactive-repl.md) | Fornisce un'esperienza completa di REPL per R con la possibilità di eseguire facilmente il codice in un file di origine nella finestra interattiva. | n/d |
-| [Visualizzazione dei dati](visualizing-data.md) | La creazione di tracciati è parte integrante dell'esperienza R e RTVS supporta diverse finestre dei tracciati indipendenti, ciascuna delle quali con la propria cronologia e la possibilità di spostare tracciati da una finestra all'altra. I tracciati possono essere salvati in bitmap e file PDF oppure copiati negli Appunti come bitmap o metafile.  | n/d |
-| [Variable Explorer](variable-explorer.md) | Consente di esaminare le variabili in ambiti globali o specifici del pacchetto, con la possibilità di visualizzare tabelle ordinabili ed eseguire l'esportazione in CSV. | n/d |
+| [Modifica avanzata, IntelliSense e frammenti di codice](code-editing.md) | Sono inclusi colorazione della sintassi, [IntelliSense](code-intellisense.md) in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, accesso alle definizioni, opzione per trovare tutti i riferimenti, [frammenti di codice](code-snippets.md) e altro ancora. | [Writing Code in the Code and Text Editor](../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice nell'Editor di testo e del codice) |
+| [R Markdown](rmarkdown.md) | I documenti R Markdown consentono di condividere i risultati dei dati, con codice R integrato all'interno di blocchi di codice markdown. | N/D |
+| [Finestra interattiva](interactive-repl.md) | Fornisce un'esperienza completa di REPL per R con la possibilità di eseguire facilmente il codice in un file di origine nella finestra interattiva. | N/D |
+| [Visualizzazione dei dati](visualizing-data.md) | La creazione di tracciati è parte integrante dell'esperienza R e RTVS supporta diverse finestre dei tracciati indipendenti, ciascuna delle quali con la propria cronologia e la possibilità di spostare tracciati da una finestra all'altra. I tracciati possono essere salvati in bitmap e file PDF oppure copiati negli Appunti come bitmap o metafile.  | N/D |
+| [Variable Explorer](variable-explorer.md) | Consente di esaminare le variabili in ambiti globali o specifici del pacchetto, con la possibilità di visualizzare tabelle ordinabili ed eseguire l'esportazione in CSV. | N/D |
 | [Debug con funzionalità complete](debugging.md) | Include l'integrazione con la finestra interattiva. | [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
 Vedere anche [Domande frequenti](faq.md).

@@ -9,38 +9,45 @@ ms.topic: article
 dev_langs:
 - CSharp
 - VB
-helpviewer_keywords: editor
+helpviewer_keywords:
+- coding conventions [EditorConfig]
+- EditorConfig coding conventions
+- language conventions [EditorConfig]
+- formatting conventions [EditorConfig]
 ms.assetid: 
 caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: f59065777de938c07a88d722cabdba82d6b19c02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
-L'uso di un file [EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) consente di definire e mantenere uno stile di codice coerente nella propria codebase. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. I file EditorConfig consentono di abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare la convenzione tramite un livello di gravità. Per altre informazioni su come usare EditorConfig per garantire la coerenza nella propria codebase, vedere [Creare impostazioni personalizzate e portabili per l'editor](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options). Per un esempio, è inoltre possibile esaminare il [file .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig).  
 
-Esistono tre categorie di convenzioni per la scrittura del codice .NET supportate:  
+L'uso di un file [EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) consente di definire e mantenere uno stile di codice coerente nella propria codebase. EditorConfig include diverse proprietà di formattazione di base, ad esempio `indent_style` e `indent_size`. In Visual Studio è possibile configurare le impostazioni delle convenzioni per la scrittura del codice .NET anche usando un file EditorConfig. I file EditorConfig consentono di abilitare o disabilitare singole convenzioni per la scrittura del codice .NET e di configurare il livello in base al quale applicare la convenzione tramite un livello di gravità. Per altre informazioni su come usare EditorConfig per garantire la coerenza nella propria codebase, vedere [Creare impostazioni personalizzate e portabili per l'editor](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options). Per un esempio, è inoltre possibile esaminare il [file .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig).
+
+Esistono tre categorie di convenzioni per la scrittura del codice .NET supportate:
+
 - [Convenzioni del linguaggio](#language-conventions)  
    Regole relative al linguaggio C# o Visual Basic. Ad esempio, è possibile specificare regole relative all'uso di `var` o di tipi espliciti quando si definiscono le variabili oppure alla preferenza di membri con corpo di espressione.  
 - [Convenzioni di formattazione](#formatting-conventions)  
    Regole relative al layout e alla struttura del codice per renderlo più facile da leggere. Ad esempio, è possibile specificare regole per le parentesi graffe di Allman o la preferenza di spazi nei blocchi di controllo.  
-- [Convenzioni di denominazione](#naming-conventions)  
+- [Convenzioni di denominazione](../ide/editorconfig-naming-conventions.md)  
    Regole relative alla denominazione degli elementi di codice. Ad esempio, è possibile specificare che i metodi `async` devono terminare con "Async".  
 
-## <a name="language-conventions"></a>Convenzioni del linguaggio  
-Le regole per le convenzioni del linguaggio hanno il formato seguente:  
+## <a name="language-conventions"></a>Convenzioni del linguaggio
 
-`options_name = false|true : none|suggestion|warning|error`  
+Le regole per le convenzioni del linguaggio hanno il formato seguente:
 
-Per ogni regola di convenzione del linguaggio è necessario specificare **true** (preferire questo stile) o **false** (non preferire questo stile) e un livello di **gravità**. La gravità specifica il livello di imposizione per lo stile.  
+`options_name = false|true : none|suggestion|warning|error`
 
-Nella tabella seguente sono elencati i valori di gravità possibili e i relativi effetti:  
+Per ogni regola di convenzione del linguaggio è necessario specificare **true** (preferire questo stile) o **false** (non preferire questo stile) e un livello di **gravità**. La gravità specifica il livello di imposizione per lo stile.
+
+Nella tabella seguente sono elencati i valori di gravità possibili e i relativi effetti:
 
 Gravità | Effetto
 :------- | ------
@@ -60,6 +67,10 @@ L'elenco seguente illustra le regole di convenzione del linguaggio consentite:
     - [Parole chiave del linguaggio anziché nomi dei tipi di framework per i riferimenti ai tipi](#language_keywords)
         - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
         - dotnet\_style\_predefined\_type\_for\_member_access
+    - [Preferenze del modificatore](#normalize_modifiers)
+        - dotnet\_style\_require\_accessibility_modifiers
+        - csharp\_preferred\_modifier_order
+        - visual\_basic\_preferred\_modifier_order
     - [Preferenze a livello di espressione](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
@@ -85,14 +96,17 @@ L'elenco seguente illustra le regole di convenzione del linguaggio consentite:
         - csharp\_style\_inlined\_variable_declaration
     - [Preferenze a livello di espressione](#expression_level_csharp)
         - csharp\_prefer\_simple\_default_expression
+        - csharp\_style\_deconstructed\_variable_declaration
+        - csharp\_style\_pattern\_local\_over\_anonymous_function
     - [Preferenze controllo "Null"](#null_checking)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [Preferenze per i blocchi di codice](#code_block)
         - csharp\_prefer_braces
 
-### <a name="net-code-style-settings"></a>Impostazioni di stile del codice .NET  
-Le regole di stile illustrate in questa sezione sono applicabili a C# e Visual Basic. Per vedere esempi di codice nel linguaggio di programmazione preferito, selezionarlo nel menu a discesa **Linguaggio** nell'angolo superiore destro della finestra del browser.  
+### <a name="net-code-style-settings"></a>Impostazioni di stile del codice .NET
+
+Le regole di stile illustrate in questa sezione sono applicabili a C# e Visual Basic. Per vedere esempi di codice nel linguaggio di programmazione preferito, selezionarlo nel menu a discesa **Linguaggio** nell'angolo superiore destro della finestra del browser.
 
 #### <a name="this_and_me">Qualificatori "This." e "Me."</a>
 È possibile applicare questa regola di stile (ID regola IDE0003 e IDE0009) a campi, proprietà, metodi o eventi. Il valore **true** indica la preferenza a far precedere il simbolo del codice da `this.` in C# o da `Me.` in Visual Basic. Il valore **false** indica la preferenza a _non_ far precedere l'elemento di codice da `this.` o da `Me.`.  
@@ -101,10 +115,10 @@ Nella tabella seguente sono riportati i nomi delle regole, i linguaggi di progra
 
 | Nome regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_qualification_for_field | C# e Visual Basic | false:none | Visual Studio 2017 RTW |
-| dotnet_style_qualification_for_property | C# e Visual Basic | false:none | Visual Studio 2017 RTW |
-| dotnet_style_qualification_for_method | C# e Visual Basic | false:none | Visual Studio 2017 RTW |
-| dotnet_style_qualification_for_event | C# e Visual Basic | false:none | Visual Studio 2017 RTW |   
+| dotnet_style_qualification_for_field | C# e Visual Basic | false:none | Visual Studio 2017 |
+| dotnet_style_qualification_for_property | C# e Visual Basic | false:none | Visual Studio 2017 |
+| dotnet_style_qualification_for_method | C# e Visual Basic | false:none | Visual Studio 2017 |
+| dotnet_style_qualification_for_event | C# e Visual Basic | false:none | Visual Studio 2017 |   
 
 **dotnet\_style\_qualification\_for_field**  
 Quando questa regola è impostata su **true** indica la preferenza a far precedere i campi da `this.` in C# o da `Me.` in Visual Basic.  
@@ -208,8 +222,8 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 e IDE0014 | C# e Visual Basic | true:none | Visual Studio 2017 RTW |
-| dotnet_style_predefined_type_for_member_access | IDE0013 e IDE0015 | C# e Visual Basic | true:none | Visual Studio 2017 RTW |  
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 e IDE0014 | C# e Visual Basic | true:none | Visual Studio 2017 |
+| dotnet_style_predefined_type_for_member_access | IDE0013 e IDE0015 | C# e Visual Basic | true:none | Visual Studio 2017 |  
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**  
 Quando questa regola è impostata su **true** indica la preferenza per la parola chiave per variabili locali, parametri dei metodi e membri delle classi rispetto al nome del tipo per i tipi con una parola chiave che li rappresenta.  
@@ -262,6 +276,87 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ``` 
 
+#### <a name="normalize_modifiers">Preferenze del modificatore</a>  
+Le regole di stile in questa sezione riguardano le preferenze del modificatore, inclusa la richiesta di modificatori dell'accessibilità e la specifica dell'ordinamento preferito dei modificatori.  
+
+Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, i linguaggi di programmazione applicabili, i valori predefiniti e la prima versione supportata di Visual Studio:  
+
+| Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
+| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# e Visual Basic | for_non_interface_members:none | Visual Studio 2017 versione 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:none | Visual Studio 2017 versione 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:none | Visual Studio 2017 versione 15.5 |
+
+**dotnet\_style\_require\_accessibility_modifiers**  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| always | Preferisce i modificatori dell'accessibilità da specificare |
+| for_non_interface_members | Preferisce modificatori dell'accessibilità da dichiarare, fatta eccezione per i membri di interfaccia pubblica. Questa impostazione non è attualmente diversa da **always** e funzionerà da strumento di correzione futuro se C# aggiungerà metodi di interfaccia predefiniti. |
+| never | Non preferisce i modificatori dell'accessibilità da specificare | 
+
+Esempi di codice:  
+
+```csharp
+// dotnet_style_require_accessibility_modifiers = always
+// dotnet_style_require_accessibility_modifiers = for_non_interface_members
+class MyClass 
+{
+    private const string thisFieldIsConst= "constant";
+}
+
+// dotnet_style_require_accessibility_modifiers = never
+class MyClass 
+{
+    const string thisFieldIsConst= "constant";
+}
+```
+
+**csharp_preferred_modifier_order**  
+Quando questa regola è impostata su un elenco di modificatori, p l'ordinamento specificato.  
+Quando questa regola viene omessa dal file, non preferisce un ordine di modificatori.
+
+Esempi di codice:  
+
+```csharp
+// csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async
+class MyClass 
+{
+    private static readonly int _daysInYear = 365;
+}
+```
+
+**visual_basic_preferred_modifier_order**  
+Quando questa regola è impostata su un elenco di modificatori, p l'ordinamento specificato.  
+Quando questa regola viene omessa dal file, non preferisce un ordine di modificatori.
+
+Esempi di codice:  
+
+```vb
+' visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async
+Public Class MyClass
+    Private Shared ReadOnly daysInYear As Int = 365
+End Class
+
+```
+
+Queste regole possono essere visualizzate in un file .editorconfig come indicato di seguito:  
+
+```
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_require_accessibility_modifiers = always:suggestion
+
+# CSharp code style settings:
+[*.cs]
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+
+# Visual Basic code style settings:
+[*.vb]
+visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
+``` 
+
 #### <a name="expression_level">Preferenze a livello di espressione</a>  
 Le regole di stile illustrate in questa sezione riguardano le preferenze a livello di espressione, tra cui l'uso di inizializzatori di oggetto, inizializzatori di insieme, nomi di tupla espliciti, espressioni di unione Null rispetto a operatori ternari, e dell'operatore condizionale Null.  
 
@@ -269,11 +364,11 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_object_initializer | IDE0017 | C# e Visual Basic | true:suggestion | Visual Studio 2017 RTW |
-| dotnet_style_collection_initializer | IDE0028 | C# e Visual Basic | true:suggestion | Visual Studio 2017 RTW |
-| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ e Visual Basic 15+ | true:suggestion | Visual Studio 2017 RTW |
-| dotnet_style_coalesce_expression | IDE0029 | C# e Visual Basic | true:suggestion | Visual Studio 2017 RTW |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0+ e Visual Basic 14+ | true:suggestion | Visual Studio 2017 RTW | 
+| dotnet_style_object_initializer | IDE0017 | C# e Visual Basic | true:suggestion | Visual Studio 2017 |
+| dotnet_style_collection_initializer | IDE0028 | C# e Visual Basic | true:suggestion | Visual Studio 2017 |
+| dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ e Visual Basic 15+ | true:suggestion | Visual Studio 2017 |
+| dotnet_style_coalesce_expression | IDE0029 | C# e Visual Basic | true:suggestion | Visual Studio 2017 |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ e Visual Basic 14+ | true:suggestion | Visual Studio 2017 | 
 
 **dotnet\_style\_object_initializer**  
 Quando questa regola è impostata su **true** indica la preferenza a inizializzare gli oggetti usando gli inizializzatori di oggetto, laddove possibile.  
@@ -406,10 +501,11 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-``` 
+```
 
-### <a name="c-code-style-settings"></a>Impostazioni di stile del codice C#  
-Le regole di stile illustrate in questa sezione sono applicabili solo a C#.  
+### <a name="c-code-style-settings"></a>Impostazioni di stile del codice C#
+
+Le regole di stile illustrate in questa sezione sono applicabili solo a C#.
 
 #### <a name="var">Tipi impliciti ed espliciti</a>
 Le regole di stile illustrate in questa sezione (ID regola IDE0007 e IDE0008) riguardano l'uso della parola chiave [var](/dotnet/csharp/language-reference/keywords/var) rispetto a un tipo esplicito in una dichiarazione di variabile. Questa regola può essere applicata separatamente ai tipi predefiniti, quando il tipo è apparente, e altrove.  
@@ -418,9 +514,9 @@ Nella tabella seguente sono riportati i nomi delle regole, i linguaggi di progra
 
 | Nome regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_var_for_built_in_types | C# | true:none | Visual Studio 2017 RTW |
-| csharp_style_var_when_type_is_apparent | C# | true:none | Visual Studio 2017 RTW |
-| csharp_style_var_elsewhere | C# | true:none | Visual Studio 2017 RTW |
+| csharp_style_var_for_built_in_types | C# | true:none | Visual Studio 2017 |
+| csharp_style_var_when_type_is_apparent | C# | true:none | Visual Studio 2017 |
+| csharp_style_var_elsewhere | C# | true:none | Visual Studio 2017 |
 
 **csharp\_style\_var\_for\_built\_in_types**  
 Quando questa regola è impostata su **true** indica la preferenza a usare `var` per dichiarare le variabili con tipi di sistema predefiniti, ad esempio `int`.  
@@ -481,96 +577,126 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | Visual Studio 2017 RTW |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | Visual Studio 2017 RTW |
-| csharp_style_expression_bodied_operators | IDE0023 e IDE0024 | C# 7.0+ | false:none | Visual Studio 2017 RTW |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:none | Visual Studio 2017 RTW |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:none | Visual Studio 2017 RTW |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:none | Visual Studio 2017 RTW |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | never:none | Visual Studio 2017 versione 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | never:none | Visual Studio 2017 versione 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 e IDE0024 | C# 7.0+ | never:none | Visual Studio 2017 versione 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | when_possible:none | Visual Studio 2017 versione 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | when_possible:none | Visual Studio 2017 versione 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | when_possible:none | Visual Studio 2017 versione 15.3 |  
 
 **csharp\_style\_expression\_bodied_methods**  
-Quando questa regola è impostata su **true** indica la preferenza di membri con corpo di espressione per i metodi.  
-Quando questa regola è impostata su **false** indica di non preferire i membri con corpo di espressione per i metodi.  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| when_possible | Preferisce membri con corpo di espressione per i metodi |
+| when_on_single_line | Preferisce membri con corpo di espressione per i metodi quando sono a riga singola |
+| never | Preferisce corpi di blocco per i metodi | 
 
 Esempi di codice:  
 
 ```csharp
-// csharp_style_expression_bodied_methods = true
+// csharp_style_expression_bodied_methods = when_possible
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = false
+// csharp_style_expression_bodied_methods = never
 public int GetAge() { return this.Age; }
 ```  
 
 **csharp\_style\_expression\_bodied_constructors**  
-Quando questa regola è impostata su **true** indica la preferenza di membri con corpo di espressione per i costruttori.  
-Quando questa regola è impostata su **false** indica di non preferire i membri con corpo di espressione per i costruttori.  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| when_possible | Preferisce membri con corpo di espressione per i costruttori |
+| when_on_single_line | Preferisce membri con corpo di espressione per i costruttori quando sono a riga singola |
+| never | Preferisce corpi di blocco per i costruttori |  
 
 Esempi di codice:  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = true
+// csharp_style_expression_bodied_constructors = when_possible
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = false
+// csharp_style_expression_bodied_constructors = never
 public Customer(int age) { Age = age; }
 ```  
 
 **csharp\_style\_expression\_bodied_operators**  
-Quando questa regola è impostata su **true** indica la preferenza di membri con corpo di espressione per gli operatori.  
-Quando questa regola è impostata su **false** indica di non preferire i membri con corpo di espressione per gli operatori.  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| when_possible | Preferisce membri con corpo di espressione per gli operatori |
+| when_on_single_line | Preferisce membri con corpo di espressione per gli operatori quando sono a riga singola |
+| never | Preferisce corpi di blocco per gli operatori |  
 
 Esempi di codice:  
 
 ```csharp
-// csharp_style_expression_bodied_operators = true
+// csharp_style_expression_bodied_operators = when_possible
 public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = false
+// csharp_style_expression_bodied_operators = never
 public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **csharp\_style\_expression\_bodied_properties**  
-Quando questa regola è impostata su **true** indica la preferenza di membri con corpo di espressione per le proprietà.  
-Quando questa regola è impostata su **false** indica di non preferire i membri con corpo di espressione per le proprietà.  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| when_possible | Preferisce membri con corpo di espressione per le proprietà |
+| when_on_single_line | Preferisce membri con corpo di espressione per le proprietà quando sono a riga singola |
+| never | Preferisce corpi di blocco per le proprietà |  
 
 Esempi di codice:  
 
 ```csharp
-// csharp_style_expression_bodied_properties = true
+// csharp_style_expression_bodied_properties = when_possible
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = false
+// csharp_style_expression_bodied_properties = never
 public int Age { get { return _age; }}
 ```  
 
 **csharp\_style\_expression\_bodied_indexers**  
-Quando questa regola è impostata su **true** indica la preferenza di membri con corpo di espressione per gli indicizzatori.  
-Quando questa regola è impostata su **false** indica di non preferire i membri con corpo di espressione per gli indicizzatori.  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| when_possible | Preferisce membri con corpo di espressione per gli indicizzatori |
+| when_on_single_line | Preferisce membri con corpo di espressione per gli indicizzatori quando sono a riga singola |
+| never | Preferisce corpi di blocco per gli indicizzatori | 
 
 Esempi di codice:  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = true
+// csharp_style_expression_bodied_indexers = when_possible
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = false
+// csharp_style_expression_bodied_indexers = never
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **csharp\_style\_expression\_bodied_accessors**  
-Quando questa regola è impostata su **true** indica la preferenza di membri con corpo di espressione per le funzioni di accesso.  
-Quando questa regola è impostata su **false** indica di non preferire i membri con corpo di espressione per le funzioni di accesso.  
+Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:  
+
+| Valore | Descrizione |
+| ----- |:----------- |
+| when_possible | Preferisce membri con corpo di espressione per le funzioni di accesso |
+| when_on_single_line | Preferisce membri con corpo di espressione per le funzioni di accesso quando sono a riga singola |
+| never | Preferisce corpi di blocco per le funzioni di accesso | 
 
 Esempi di codice:  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = true
+// csharp_style_expression_bodied_accessors = when_possible
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = false
+// csharp_style_expression_bodied_accessors = never
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -579,12 +705,12 @@ Esempio di file .editorconfig:
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
-csharp_style_expression_bodied_properties = true:none
-csharp_style_expression_bodied_indexers = false:none
-csharp_style_expression_bodied_accessors = false:none
+csharp_style_expression_bodied_methods = never:none
+csharp_style_expression_bodied_constructors = never:none
+csharp_style_expression_bodied_operators = never:none
+csharp_style_expression_bodied_properties = when_possible:suggestion
+csharp_style_expression_bodied_indexers = when_possible:suggestion
+csharp_style_expression_bodied_accessors = when_possible:suggestion
 ```  
 
 #### <a name="pattern_matching">Criteri di ricerca</a>
@@ -594,8 +720,8 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
-| csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
+| csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
+| csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
 
 **csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check**  
 Quando questa regola è impostata su **true** indica la preferenza dei criteri di ricerca rispetto alle espressioni `is` con i cast di tipo.  
@@ -642,7 +768,7 @@ Nella tabella seguente sono riportati il nome della regola, l'ID della regola, l
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | -------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
+| csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
 
 **csharp\_style\_inlined\_variable_declaration**  
 Quando questa regola è impostata su **true** indica la preferenza di dichiarare le variabili `out` inline nell'elenco di argomenti di una chiamata al metodo, laddove possibile.  
@@ -654,7 +780,7 @@ Esempi di codice:
 // csharp_style_inlined_variable_declaration = true
 if (int.TryParse(value, out int i) {...}
 
-// csharp_style_inlined_variable_declaration = fale
+// csharp_style_inlined_variable_declaration = false
 int i;
 if (int.TryParse(value, out i) {...}
 ```
@@ -668,15 +794,19 @@ csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
 #### <a name="expression_level_csharp">Preferenze a livello di espressione</a>
-Questa regola di stile riguarda l'uso del [valore letterale `default` per le espressioni con valore predefinito](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) quando il compilatore è in grado di eseguire l'inferenza del tipo dell'espressione.  
+Le regole di stile in questa sezione riguardano le preferenze a livello di espressione, incluso l'uso di [espressioni predefinite](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), variabili decostruite e funzioni locali su funzioni anonime.  
 
 Nella tabella seguente sono riportati il nome della regola, l'ID della regola, le versioni dei linguaggi applicabili, i valori predefiniti e la prima versione supportata di Visual Studio:  
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | Visual Studio 2017 versione 15.3 |
+| csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | true:suggestion | Visual Studio 2017 versione 15.5 |
+| csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0+ | true:suggestion | Visual Studio 2017 versione 15.5 |
 
 **csharp\_prefer\_simple\_default_expression**  
+Questa regola di stile riguarda l'uso del [valore letterale `default` per le espressioni con valore predefinito](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) quando il compilatore è in grado di eseguire l'inferenza del tipo dell'espressione.  
+
 Quando questa regola è impostata su **true** indica la preferenza di `default` rispetto a `default(T)`.  
 Quando questa regola è impostata su **false** indica la preferenza di `default(T)` rispetto a `default`.  
 
@@ -690,12 +820,57 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
+**csharp\_style\_deconstructed\_variable_declaration**  
+Quando questa regola è impostata su **true**, preferisce la dichiarazione di variabili decostruite.  
+Quando questa regola è impostata su **false**, non preferisce la dichiarazione di variabili decostruite.  
+
+Esempi di codice:  
+
+```csharp 
+// csharp_style_deconstructed_variable_declaration = true
+var (name, age) = GetPersonTuple();
+Console.WriteLine($"{name} {age}");
+
+(int x, int y) = GetPointTuple();
+Console.WriteLine($"{x} {y}");
+
+// csharp_style_deconstructed_variable_declaration = false
+var person = GetPersonTuple();
+Console.WriteLine($"{person.name} {person.age}");
+
+(int x, int y) point = GetPointTuple();
+Console.WriteLine($"{point.x} {point.y}");
+```
+
+**csharp\_style\_pattern\_local\_over\_anonymous_function**  
+Quando questa regola è impostata su **true**, preferisce le funzioni locali alle funzioni anonime.  
+Quando questa regola è impostata su **false**, preferisce le funzioni anonime alle funzioni locali.  
+
+Esempi di codice:  
+
+```csharp 
+// csharp_style_pattern_local_over_anonymous_function = true
+int fibonacci(int n)
+{
+    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+}
+
+// csharp_style_pattern_local_over_anonymous_function = false
+Func<int, int> fibonacci = null;
+fibonacci = (int n) =>
+{
+    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
+```
+
 Esempio di file .editorconfig:  
 
 ```
 # CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ``` 
 
 #### <a name="null_checking">Preferenze controllo "Null"</a>
@@ -705,8 +880,8 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 | Nome regola | ID regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_throw_expression | IDE0016 | C# 7.0+ | true:suggestion | Visual Studio 2017 RTW |
-| csharp_style_conditional_delegate_call | IDE0041 | C# 6.0+ | true:suggestion | Visual Studio 2017 RTW |
+| csharp_style_throw_expression | IDE0016 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
+| csharp_style_conditional_delegate_call | IDE0041 | C# 6.0+ | true:suggestion | Visual Studio 2017 |
 
 **csharp\_style\_throw_expression**  
 Quando questa regola è impostata su **true** indica la preferenza a usare le espressioni `throw` anziché le istruzioni `throw`.  
@@ -778,13 +953,14 @@ csharp_prefer_braces = true:none
 ```
 
 ## <a name="formatting-conventions"></a>Convenzioni di formattazione
-La maggior parte delle regole per le convenzioni di formattazione ha il formato seguente:  
 
-`rule_name = false|true`  
+La maggior parte delle regole per le convenzioni di formattazione ha il formato seguente:
 
-Specificare **true** (preferire questo stile) o **false** (non preferire questo stile). Non specificare un livello di gravità. Per alcune regole, anziché true o false, è necessario specificare altri valori per descrivere quando e dove applicare la regola.  
+`rule_name = false|true`
 
-Nell'elenco seguente sono illustrate le regole delle convenzioni di formattazione disponibili in Visual Studio:  
+Specificare **true** (preferire questo stile) o **false** (non preferire questo stile). Non specificare un livello di gravità. Per alcune regole, anziché true o false, è necessario specificare altri valori per descrivere quando e dove applicare la regola.
+
+Nell'elenco seguente sono illustrate le regole delle convenzioni di formattazione disponibili in Visual Studio:
 
 - Impostazioni di formattazione .NET
     - [Organizzare direttive using](#usings)
@@ -813,7 +989,8 @@ Nell'elenco seguente sono illustrate le regole delle convenzioni di formattazion
         - csharp_preserve_single_line_blocks
 
 ### <a name="net-formatting-settings"></a>Impostazioni di formattazione .NET
-Le regole di formattazione illustrate in questa sezione sono applicabili a C# e Visual Basic.  
+
+Le regole di formattazione illustrate in questa sezione sono applicabili a C# e Visual Basic.
 
 #### <a name="usings">Organizzare direttive using</a>
 Questa regola di formattazione riguarda il posizionamento delle direttive using System.* rispetto ad altre direttive using.  
@@ -850,8 +1027,9 @@ Esempio di file .editorconfig:
 dotnet_sort_system_directives_first = true
 ``` 
 
-### <a name="csharp_formatting">Impostazioni di formattazione C#</a>  
-Le regole di formattazione illustrate in questa sezione si applicano solo al codice C#.  
+### <a name="c-formatting-settings"></a>Impostazioni di formattazione C#
+
+Le regole di formattazione illustrate in questa sezione si applicano solo al codice C#.
 
 #### <a name="newline">Opzioni dei caratteri di nuova riga</a>  
 Queste regole di formattazione riguardano l'uso di nuove righe per formattare il codice.  
@@ -1192,11 +1370,11 @@ Nella tabella seguente sono riportati i nomi delle regole, i linguaggi applicabi
 
 | Nome regola | Linguaggi applicabili | Impostazione predefinita di Visual Studio | Versione supportata |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | false | Visual Studio 2017 versione 15.3  |
+| csharp_space_after_cast |  C# | False | Visual Studio 2017 versione 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | Visual Studio 2017 versione 15.3  |
-| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | false | Visual Studio 2017 versione 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | false | Visual Studio 2017 versione 15.3  |
-| csharp_space_between_parentheses |  C# | false | Visual Studio 2017 versione 15.3  |
+| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | False | Visual Studio 2017 versione 15.3  |
+| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | Visual Studio 2017 versione 15.3  |
+| csharp_space_between_parentheses |  C# | False | Visual Studio 2017 versione 15.3  |
 
 **csharp\_space\_after_cast**  
 Quando questa regola è impostata su **true** è necessario uno spazio tra il cast e il valore.  
@@ -1337,70 +1515,11 @@ Esempio di file .editorconfig:
 [*.cs]
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
-```
-
-## <a name="naming-conventions"></a>Convenzioni di denominazione  
-Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi asincroni devono terminare con "Async". Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata.  
-
-Per ogni regola delle convenzioni di denominazione, identificata da **namingRuleTitle**, è necessario specificare i **simboli** a cui si applica, uno **stile** di denominazione e una **gravità**:  
-  
-`dotnet_naming_rule.<namingRuleTitle>.symbols = <symbolTitle>`  
-`dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`  
-`dotnet_naming_rule.<namingRuleTitle>.severity = none|suggestion|warning|error`  
-
-### <a name="symbols"></a>Simboli
-Identificare un gruppo di simboli a cui applicare una regola di denominazione con questa proprietà: `dotnet_naming_rule.<namingRuleTitle>.symbols = <symbolTitle>`. Specificare il tipo di simboli, i modificatori e i livelli di accessibilità inclusi nel gruppo usando le proprietà seguenti:  
-
-| Proprietà | Valori possibili |
-| ------------- |:-------------:|
-| dotnet\_naming\_symbols.\<symbolTitle\>.applicable\_kinds | *, class, struct, interface, enum, property, method, field, event, namespace, delegate, type_parameter |
-| dotnet\_naming\_symbols.\<symbolTitle\>.applicable_accessibilities | *, public, internal (C#), friend (Visual Basic), private, protected, protected\_internal (C#), protected\_friend (Visual Basic) |
-| dotnet\_naming\_symbols.\<symbolTitle\>.required\_modifiers | abstract (C#), must_inherit (Visual Basic), async, const, readonly, static (C#), shared (Visual Basic) |  
-
-### <a name="style"></a>Stile
-Identificare lo stile di denominazione da applicare a un gruppo di simboli con questa proprietà: `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`.  
-
-Specificare lo stile di denominazione usando una o più delle proprietà seguenti:  
-
-|  Proprietà | Valori possibili |
-| ------------- |:-------------:|
-| dotnet_naming_style.\<styleTitle\>.required_prefix | Caratteri necessari che devono essere visualizzati all'inizio dell'identificatore. |  
-| dotnet_naming_style.\<styleTitle\>.required_suffix | Caratteri necessari che devono essere visualizzati alla fine dell'identificatore. |  
-| dotnet_naming_style.\<styleTitle\>.word_separator | Carattere necessario tra le parole nell'identificatore. | 
-| dotnet_naming_style.\<styleTitle\>.capitalization | pascal_case, camel_case, first_word_upper, all_upper, all_lower |
-
-> [!NOTE]
-> Nell'ambito dello stile di denominazione è necessario specificare uno stile per le maiuscole/minuscole. In caso contrario, lo stile di denominazione verrà ignorato.  
-
-#### <a name="severity"></a>Gravità
-Identificare il livello di gravità per una regola di denominazione con questa proprietà: `dotnet_naming_rule.<namingRuleTitle>.severity`.  
-
-Nella tabella seguente sono riportate le opzioni per il valore del livello di gravità:  
-
-Gravità | Effetto
------------- | -------------
-none o silent | Quando lo stile non viene rispettato, non viene visualizzato alcun avviso all'utente. Tuttavia, le funzionalità di generazione del codice generano il nuovo codice in questo stile.  
-suggestion | Quando lo stile non viene rispettato, viene visualizzato un suggerimento all'utente: i primi due caratteri vengono sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.  
-avviso | Quando lo stile non è rispettato, viene visualizzato un avviso del compilatore.  
-errore | Quando lo stile non è rispettato, viene visualizzato un errore del compilatore.   
-
-### <a name="example-editorconfig-file-with-naming-conventions"></a>Esempio di file .editorconfig con le convenzioni di denominazione
-```
-# Dotnet Naming Conventions
-[*.{cs,vb}] 
-dotnet_naming_rule.async_methods_end_in_async.symbols  = any_async_methods
-dotnet_naming_rule.async_methods_end_in_async.style    = end_in_async
-dotnet_naming_rule.async_methods_end_in_async.severity = suggestion
-
-dotnet_naming_symbols.any_async_methods.applicable_kinds           = method
-dotnet_naming_symbols.any_async_methods.applicable_accessibilities = *
-dotnet_naming_symbols.any_async_methods.required_modifiers         = async
-
-dotnet_naming_style.end_in_async.required_suffix = Async
-dotnet_naming_style.end_in_async.capitalization  = pascal_case
 ``` 
 
 ## <a name="see-also"></a>Vedere anche
+
 [Azioni rapide](../ide/quick-actions.md)  
-[Creare impostazioni personalizzate e portabili per l'editor](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options)  
+[.NET naming conventions for EditorConfig](../ide/editorconfig-naming-conventions.md) (Convenzioni di denominazione .NET per EditorConfig)  
+[Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)  
 [File .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)  

@@ -1,5 +1,5 @@
 ---
-title: Suggerimenti su Visual Studio | Microsoft Docs
+title: Tasti di scelta rapida in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
-È possibile spostarsi più facilmente in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] utilizzando i tasti di scelta rapida descritti in questo argomento. Questo argomento include solo un sottoinsieme dei tasti di scelta rapida disponibili. Per un elenco completo, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md).  
 
-##  <a name="BKMK_WindowMgmt"></a> Gestione delle finestre  
+È possibile spostarsi più facilmente in Visual Studio usando i tasti di scelta rapida descritti in questo argomento. Questo argomento include solo un sottoinsieme dei tasti di scelta rapida disponibili. Per un elenco completo, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md).
+
+##  <a name="BKMK_WindowMgmt"></a> Gestione delle finestre
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 |Visualizzare l'elenco di file aperti|CTRL+ALT+freccia GIÙ|  
 |Visualizzare tutte le finestre mobili|CTRL+MAIUSC+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a> Tasti di scelta rapida della finestra  
+##  <a name="BKMK_WindowShortcuts"></a> Tasti di scelta rapida della finestra
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |Avviare una nuova istanza|Win+MAIUSC+n|  
 |Spostarsi tra le finestre|Win+n|  
 
-##  <a name="BKMK_Search"></a> Ricerca in Visual Studio  
+##  <a name="BKMK_Search"></a> Ricerca in Visual Studio
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |Definire ambito risultati di Avvio veloce|-   @opt Opzioni<br />-   @cmd Comandi<br />-   @mru Usati più di recente<br />-   @doc Documenti aperti|  
 |Opzioni di ricerca negli strumenti|CTRL+E|  
 
-##  <a name="BKMK_EditorFind"></a> Ricerca nell'editor  
+##  <a name="BKMK_EditorFind"></a> Ricerca nell'editor
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |Cerca nei file|CTRL+MAIUSC+F|  
 |Sostituisci nei file|CTRL+MAIUSC+H|  
 
-##  <a name="BKMK_CodeEditor"></a> Editor di codice  
+##  <a name="BKMK_CodeEditor"></a> Editor di codice
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 |Spostarsi tra più risultati|F8 e MAIUSC+F8|  
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|MAIUSC+ESC|  
 
-##  <a name="BKMK_Toolbars"></a> Barre degli strumenti  
+##  <a name="BKMK_Toolbars"></a> Barre degli strumenti
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 |Modalità comando casella di testo Trova|Digitare ">"|  
 |Creare nuovi alias|Comando >alias NewAlias|  
 
-##  <a name="BKMK_Debugging"></a> Debug  
+##  <a name="BKMK_Debugging"></a> Debug
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ ms.lasthandoff: 10/31/2017
 |Cancellare il buffer della finestra di controllo immediato|>cls|  
 |Valore di stampa della finestra di controllo immediato|?varname|  
 
-##  <a name="BKMK_ALM"></a> Gestione del ciclo di vita delle applicazioni  
- Vedere [Scelte rapide da tastiera: Visual Studio Online, portale Web TFS e Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_ALM"></a> Gestione del ciclo di vita delle applicazioni
 
-## <a name="see-also"></a>Vedere anche  
- [Blog di Visual Studio](http://blogs.msdn.com/b/visualstudio)   
- [Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)   
- [Casella degli strumenti di Visual Studio su Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Bug di connessione di Visual Studio](http://connect.microsoft.com/VisualStudio)
+Vedere [Scelte rapide da tastiera: Visual Studio Online, portale Web TFS e Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+
+## <a name="see-also"></a>Vedere anche
+
+[Blog di Visual Studio](http://blogs.msdn.com/b/visualstudio)  
+[Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)  
+[Casella degli strumenti di Visual Studio su Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Bug di connessione di Visual Studio](http://connect.microsoft.com/VisualStudio)
