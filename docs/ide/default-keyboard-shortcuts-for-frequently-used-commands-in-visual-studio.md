@@ -7,42 +7,34 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ad9a9e8851d428010d7116ba94cc08ced211740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
-È possibile accedere ai comandi utilizzati più di frequente in Visual Studio scegliendo questi tasti di scelta rapida predefiniti. Per un elenco completo dei comandi con tasti di scelta rapida predefiniti, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
-  
+
+È possibile accedere ai comandi utilizzati più di frequente in Visual Studio scegliendo questi tasti di scelta rapida predefiniti. Per un elenco completo dei comandi con tasti di scelta rapida predefiniti, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
 > [!NOTE]
->  È possibile cercare il tasto di scelta rapida per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**.  
-  
- **Contenuto dell'argomento**  
-  
-||||||  
-|-|-|-|-|-|  
-|[Compila](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Modifica](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Progetto](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Strumenti](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Finestra](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|  
-|[Debug](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[File](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refactoring](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Visualizza](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||  
-  
-##  <a name="bkmk_build"></a> Compila  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+> È possibile cercare il tasto di scelta rapida per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**.
+
+## <a name="build"></a>Compilazione
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Build.BuildSolution|CTRL+MAIUSC+B [Globale]|  
 |Build.Cancel|CTRL+INTERR [Globale]|  
 |Build.Compile|CTRL+F7 [Globale]|  
 |Build.RunCodeAnalysisonSolution|ALT+F11 [Globale]|  
-  
-##  <a name="bkmk_debug"></a> Debug  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+
+## <a name="debug"></a>Debug
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Debug.BreakatFunction|CTRL+B [Globale]|  
 |Debug.BreakAll|CTRL+ALT+INTERR [Globale]|  
@@ -59,10 +51,10 @@ ms.lasthandoff: 10/31/2017
 |Debug.StepOver|F10 [Globale]|  
 |Debug.StopDebugging|MAIUSC+F5 [Globale]|  
 |Debug.ToggleBreakpoint|F9 [Globale]|  
-  
-##  <a name="bkmk_edit"></a> Modifica  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+
+## <a name="edit"></a>Modifica
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Edit.BreakLine|INVIO [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o MAIUSC+INVIO [Editor di testo]|  
 |Edit.CollapsetoDefinitions|CTRL+M, CTRL+O [Editor di testo]|  
@@ -110,10 +102,10 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |Edit.Undo|CTRL+Z [Globale]<br /><br /> o ALT+BACKSPACE [Globale]|  
 |Edit.WordDeleteToEnd|CTRL+CANC [Editor di testo]|  
 |Edit.WordDeleteToStart|CTRL+BACKSPACE [Editor di testo]|  
-  
-##  <a name="bkmk_file"></a> File  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+
+## <a name="file"></a>File
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |File.Exit|ALT+F4 [Globale]|  
 |File.NewFile|CTRL+N [Globale]|  
@@ -126,29 +118,29 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |File.SaveAll|CTRL+MAIUSC+S [Globale]|  
 |File.SaveSelectedItems|CTRL+S [Globale]|  
 |File.ViewinBrowser|CTRL+MAIUSC+W [Globale]|  
-  
-##  <a name="bkmk_project"></a> Progetto  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+
+## <a name="project"></a>Progetto
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Project.AddExistingItem|MAIUSC+ALT+A [Globale]|  
 |Project.AddNewItem|CTRL+MAIUSC+A [Globale]|  
-  
-##  <a name="bkmk_refactor"></a> Refactoring  
-  
+
+## <a name="refactor"></a>Refactoring del codice
+
 |Comando|Tasto di scelta rapida [Contesto]|  
 |-------------|-----------------------------------|  
 |Refactor.ExtractMethod|CTRL+R, CTRL+M [Globale]|  
-  
-##  <a name="bkmk_tools"></a> Strumenti  
-  
+
+## <a name="tools"></a>Strumenti
+
 |Comando|Tasto di scelta rapida [Contesto]|  
 |-------------|-----------------------------------|  
 |Tools.AttachtoProcess|CTRL+Alt+P [Globale]|  
-  
-##  <a name="bkmk_view"></a> Visualizza  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+
+## <a name="view"></a>Visualizza
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |View.ClassView|CTRL+MAIUSC+C [Globale]|  
 |View.EditLabel|F2 [Globale]|  
@@ -166,13 +158,17 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|
 |View.Toolbox|CTRL+ALT+X [Globale]|  
 |View.ViewCode|INVIO [Diagramma classi]<br /><br /> o F7 [Progettazione impostazioni]|  
 |View.ViewDesigner|MAIUSC+F7 [Visualizzazione Origine editor HTML]|  
-  
-##  <a name="bkmk_window"></a> Finestra  
-  
-|Comandi:|Tasti di scelta rapida [Contesti]|  
+
+## <a name="window"></a>Finestra
+
+|Comandi|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Window.ActivateDocumentWindow|ESC [Globale]|  
 |Window.CloseDocumentWindow|CTRL+F4 [Globale]|  
 |Window.NextDocumentWindow|CTRL+F6 [Globale]|  
 |Window.NextDocumentWindowNav|CTRL+TAB [Globale]|  
 |Window.NextSplitPane|F6 [Globale]|
+
+## <a name="see-also"></a>Vedere anche
+
+[Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

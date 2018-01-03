@@ -25,29 +25,29 @@ helpviewer_keywords:
 - Visual Studio, toolbox
 - toolbox, tabs
 - toolbox
-ms.assetid: 82e7cb43-4d0b-4e17-b7b0-43f96c22c3c2
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0945c5618e457005c0fba7e229b8e530efe6c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9290f2dbaae27bef7934d8fd619b4ee5355f4ec3
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-toolbox"></a>Utilizzo della Casella degli strumenti
-È possibile usare la casella degli strumenti per aggiungere controlli e altri elementi al progetto. È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.  
-  
- La casella degli strumenti viene visualizzata insieme alle visualizzazioni delle finestre di progettazione, ad esempio la visualizzazione Progettazione di un file XAML. La casella degli strumenti visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente.  
-  
- La versione di.NET Framework di destinazione del progetto influisce sul set di controlli visibili nella casella degli strumenti. Per impostazione predefinita, i progetti [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] hanno come destinazione .NET Framework 4.5.1. È possibile impostare come destinazione del progetto una versione diversa di .NET Framework selezionando il nodo del progetto in **Esplora soluzioni** e quindi passando a **Properties/Application/Target Framework**.  
-  
-## <a name="managing-the-toolbox-and-its-controls"></a>Gestione della casella degli strumenti e dei relativi controlli  
- Per impostazione predefinita, la casella degli strumenti viene compressa lungo la parte sinistra dell'IDE di Visual Studio e viene visualizzata quando il cursore viene spostato su di essa. È possibile bloccare la casella degli strumenti, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della casella degli strumenti e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la casella degli strumenti facendo clic con il pulsante destro del mouse sulla barra degli strumenti della casella degli strumenti e selezionando una delle opzioni.  
-  
- È possibile riordinare gli elementi di una scheda della casella degli strumenti o aggiungere schede ed elementi personalizzati usando i seguenti comandi del menu di scelta rapida:  
-  
+
+È possibile usare la casella degli strumenti per aggiungere controlli e altri elementi al progetto. È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.
+
+La casella degli strumenti viene visualizzata insieme alle visualizzazioni delle finestre di progettazione, ad esempio la visualizzazione Progettazione di un file XAML. La casella degli strumenti visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente.
+
+La versione di.NET Framework di destinazione del progetto influisce sul set di controlli visibili nella casella degli strumenti. È possibile impostare come destinazione del progetto una versione diversa di .NET Framework selezionando il nodo del progetto in **Esplora soluzioni** e quindi passando a **Properties/Application/Target Framework**.
+
+## <a name="managing-the-toolbox-and-its-controls"></a>Gestione della casella degli strumenti e dei relativi controlli
+
+Per impostazione predefinita, la casella degli strumenti viene compressa lungo la parte sinistra dell'IDE di Visual Studio e viene visualizzata quando il cursore viene spostato su di essa. È possibile bloccare la casella degli strumenti, facendo clic sull'icona **Blocca** nella barra degli strumenti della casella degli strumenti, in modo che resti aperta quando il cursore viene spostato. È anche possibile disancorare la finestra della casella degli strumenti e trascinarla in qualsiasi posizione sullo schermo. È possibile ancorare, disancorare e nascondere la casella degli strumenti facendo clic con il pulsante destro del mouse sulla barra degli strumenti della casella degli strumenti e selezionando una delle opzioni.
+
+È possibile riordinare gli elementi di una scheda della casella degli strumenti o aggiungere schede ed elementi personalizzati usando i seguenti comandi del menu di scelta rapida:
+
 -   **Rinomina elemento**: rinomina l'elemento selezionato.  
   
 -   **Mostra tutto**: visualizza tutti i controlli possibili, non solo quelli applicabili alla finestra di progettazione corrente.  
@@ -65,6 +65,11 @@ ms.lasthandoff: 10/31/2017
 -   **Sposta su**: sposta l'elemento selezionato verso l'alto.  
   
 -   **Sposta giù**: sposta l'elemento selezionato verso il basso.  
-  
-## <a name="creating-and-distributing-custom-toolbox-controls"></a>Creare e distribuire controlli della casella degli strumenti personalizzati  
- È possibile creare un controllo della casella degli strumenti personalizzato in Visual Basic o in Visual C# iniziando con un modello di progetto basato su [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md). È quindi possibile distribuire il controllo ai colleghi del team o pubblicarlo sul Web usando il [programma di installazione dei controlli della casella degli strumenti ](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Creare e distribuire controlli della casella degli strumenti personalizzati
+
+È possibile creare un controllo della casella degli strumenti personalizzato in Visual Basic o in Visual C# iniziando con un modello di progetto basato su [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) o [Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md). È quindi possibile distribuire il controllo ai colleghi del team o pubblicarlo sul Web usando il [programma di installazione dei controlli della casella degli strumenti ](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+
+## <a name="see-also"></a>Vedere anche
+
+[Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -5,22 +5,22 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Informazioni su come gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale dell'amministratore.
+Description: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 71927765ace09f898421935416aa4c7e7110dc04
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cf44f74b32bd830c613adcc1ee35a95b97636772
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del portale di amministrazione delle sottoscrizioni di Visual Studio
 
 Tenere a mente quanto segue durante l'uso del Portale di amministrazione delle sottoscrizioni di Visual Studio:
  
 - **Le sottoscrizioni di Visual Studio sono concesse in licenza ai singoli utenti.** Ogni abbonato può usare il software su un numero indefinito di computer in base alle esigenze di sviluppo e test. 
-- **Assegnare solo un livello di abbonamento per ogni abbonato,** in base all'abbonamento Visual Studio acquistato dall'organizzazione. Qualora esistano abbonati a cui sono stati assegnati più livelli di abbonamento, modificare le impostazioni in modo che ne abbiano solo uno. 
+- **Assegnare solo un livello di sottoscrizione per ogni sottoscrittore,** in base alla sottoscrizione di Visual Studio acquistata dall'organizzazione. Qualora esistano abbonati a cui sono stati assegnati più livelli di abbonamento, modificare le impostazioni in modo che ne abbiano solo uno. 
 - **Sarà necessario aggiornare il livello di abbonamento di un individuo** nel momento in cui l'abbonamento viene aggiornato (successivamente all'acquisto di una licenza "step-up") o rinnovato a un livello inferiore. 
 - **Non condividere gli abbonamenti tra più abbonati.** Assegnare una sottoscrizione per chiunque usi uno o tutti i vantaggi dell'abbonamento (software per sviluppo e test, Microsoft Azure, e-learning e così via). 
 
@@ -35,16 +35,16 @@ Esistono due diversi ruoli nel nuovo Portale di amministrazione delle sottoscriz
 ### <a name="onboarding"></a>Onboarding
 Quando l'organizzazione è pronta per il processo di onboarding nel portale di amministrazione di Visual Studio, i contatti principali e per le comunicazioni riceveranno una e -mail con una richiesta per il completamento del processo. I dettagli riportati di seguito rappresentano i passaggi necessari per l'onboarding nel nuovo portale. Per una procedura dettagliata del processo, vedere il [video per l'oboarding degli amministratori](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) oppure [l'articolo del supporto tecnico relativo al ](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processo di migrazione per gli amministratori delle sottoscrizioni di Visual Studio").   
 1.  **Individuazione del PCN e accesso:**
-- I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica un collegamento e le ultime tre cifre del numero PCN. * 
-- Per ottenere il PCN completo, il contatto principale deve accedere a VLSC (le istruzioni per l'individuazione del PCN sono reperibili qui). 
-- Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Potranno accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AAD) o con un Account Microsoft (MSA) se l'organizzazione non è presente in AAD. 
-- Successivamente, sarà necessario immettere il PCN. 
+    - I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica un collegamento e le ultime tre cifre del numero PCN. * 
+    - Per ottenere il PCN completo, il contatto principale deve accedere a VLSC (le istruzioni per l'individuazione del PCN sono reperibili qui). 
+    - Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Potranno accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AAD) o con un Account Microsoft (MSA) se l'organizzazione non è presente in AAD. 
+    - Successivamente, sarà necessario immettere il PCN. 
 2.  **Impostare gli amministratori.** Dopo aver immesso il PCN, saranno registrati come amministratori con privilegi elevati nel nuovo sistema e saranno in grado di aggiungere altri amministratori con privilegi elevati e amministratori (precedentemente noti come gestori degli abbonamenti). Per evitare di perdere l'accesso,il processo deve essere completato prima della data di migrazione dell'organizzazione. 
 3.  **Accesso al nuovo portale per la gestione delle sottoscrizioni.**  Una volta eseguita la migrazione dell'organizzazione, i nuovi amministratori e amministratoti con privilegi elevati registrati, riceveranno dei messaggi di posta elettronica per effettuare l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.  
 
 * *Nota: se i contatti principali o per le comunicazioni ricevono più di un messaggio di posta elettronica, ciò significa che hanno più PCN. È necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.*
 
-Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Per i passaggi per individuare il contatto principale/per le comunicazioni in VLSC, vedere [questo articolo](http://www.visualstudio.com/subscriptions/support/#!articles/962-6707-how-do-i-locate-my-primary-contact "Come individuare il contatto principale?").
+Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Per i passaggi per individuare il contatto principale/per le comunicazioni in VLSC, vedere [questo articolo](https://www.visualstudio.com/subscriptions/support/locate-primary-contact/ "Come individuare il contatto principale?").
 Se si è già stati impostati come amministratore, è possibile passare direttamente al [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Informazioni sulla pagina dei sottoscrittori
@@ -61,9 +61,11 @@ Dopo aver assegnato le sottoscrizioni, la scheda Subscribers (Sottoscrittori) of
 - Un campo facoltativo per un altro indirizzo e-mail usato per le comunicazioni di accesso. 
 
 Sul lato sinistro della pagina è possibile visualizzare informazioni aggiuntive sul numero di licenze acquistate, assegnate e ancora disponibili nella propria organizzazione per ogni contratto.
+
 ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Informazioni sulla pagina relativa ai dettagli
-Per altre informazioni sul contratto visualizzato, selezionare la scheda dettagli. Visualizza lo stato del contratto, dell'account di acquisto, i dettagli dell'organizzazione, i contatti principali (VLSC), gli amministratori con privilegi elevati (se disponibile) e altre informazioni di acquisto. 
+Per altre informazioni sul contratto visualizzato, selezionare la scheda dettagli. Visualizza lo stato del contratto, dell'account di acquisto, i dettagli dell'organizzazione, i contatti principali (VLSC), gli amministratori con privilegi elevati (se disponibile) e altre informazioni di acquisto.
+
 ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
 

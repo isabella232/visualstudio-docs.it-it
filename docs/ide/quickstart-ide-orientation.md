@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
-In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio verranno presentati alcuni dei menu, delle finestre e altre funzionalità dell'interfaccia utente.
+In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio verranno presentati alcuni menu, finestre e altre funzionalità dell'interfaccia utente.
 
 ## <a name="start-page"></a>Pagina iniziale
 
@@ -94,8 +94,10 @@ Sono state presentate solo alcune delle funzionalità dell'IDE di Visual Studio 
 
 - Consultare la sezione Elementi generali dell'interfaccia utente della documentazione di Visual Studio, che illustra in modo più approfondito finestre come l'[Elenco errori](../ide/reference/error-list-window.md), la [finestra di output](../ide/reference/output-window.md), la [finestra Proprietà](../ide/reference/properties-window.md) e la [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md)
 
-- In [Panoramica delle funzionalità dell'IDE di Visual Studio](../ide/visual-studio-ide.md) è possibile esplorare in maggiore dettaglio l'IDE e persino cimentarsi con il debug.
+- Per esplorare in maggior dettaglio l'IDE ed esercitarsi con il debug, vedere [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida introduttiva: Personalizzazione dell'IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Guida introduttiva: Personalizzazione dell'IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)  
+[Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)  

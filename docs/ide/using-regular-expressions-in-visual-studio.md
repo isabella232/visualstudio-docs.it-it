@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Utilizzo delle espressioni regolari in Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa espressioni regolari di .NET Framework per trovare e sostituire il testo. Per altre informazioni sulle espressioni regolari di .NET, vedere [Espressioni regolari di .NET Framework](/dotnet/standard/base-types/regular-expressions).  
-  
- Prima di Visual Studio 2012, Visual Studio usava la sintassi personalizzata di espressione regolare nelle finestre Trova e sostituisci. Per una spiegazione su come convertire alcuni dei simboli di espressione regolare di uso più comune nelle versioni .NET, vedere le [conversioni delle espressioni regolari in Visual Studio](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx).  
-  
+
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa espressioni regolari di .NET Framework per trovare e sostituire il testo. Per altre informazioni sulle espressioni regolari di .NET, vedere [Espressioni regolari di .NET Framework](/dotnet/standard/base-types/regular-expressions).
+
 > [!TIP]
->  Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di.NET.  
+> Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di.NET.
+
+## <a name="replacement-patterns"></a>Modelli di sostituzione
+
+Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](/dotnet/standard/base-types/substitutions-in-regular-expressions). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
   
-> [!TIP]
->  Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](/dotnet/standard/base-types/substitutions-in-regular-expressions). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.  
-  
-## <a name="regular-expressions-in-visual-studio"></a>Uso delle espressioni regolari in Visual Studio  
- Ecco alcuni esempi.  
-  
-|Scopo|Espressione|Esempio|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>Esempi di espressioni regolari
+
+Ecco alcuni esempi:
+
+|Scopo|Espressione|Esempio|
+|-------------|----------------|-------------|
 |Trovare la corrispondenza con qualsiasi carattere singolo (tranne un'interruzione di riga)|.|`a.o` trova "aro" in "around" e "abo" in "about", ma non "acro" in "across".|  
 |Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile)|*|`a*r` trova "r" in "rack", "ar" in "ark" e "aar" in "aardvark"|  
 |Trovare la corrispondenza con qualsiasi carattere zero o più volte (carattere jolly *)|.*|c.*e trova "cke" in "racket", "comme" in "comment" e "code" in "code"|  
@@ -72,6 +70,7 @@ ms.lasthandoff: 10/31/2017
 |Trovare la corrispondenza con una stringa tra virgolette|((\\".+?\\")&#124;('.+?'))|Trova qualsiasi stringa racchiusa tra virgolette singole o doppie.|  
 |Trovare la corrispondenza con un numero esadecimale|\b0[xX]([0-9a-fA-F]\)\b|Trova "0xc67f", ma non "0xc67fc67f".|  
 |Trovare la corrispondenza con numeri interi e decimali|\b[0-9]*\\.\*[0-9]+\b|Trova "1.333".|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>Vedere anche
+
+[Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)

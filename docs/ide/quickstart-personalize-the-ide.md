@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio
 
@@ -79,11 +79,13 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 1. In **Ambiente** scegliere la categoria **Tipi di carattere e colori**.
 
-   Si noti che il testo sotto **Mostra impostazioni per** indica **Editor di testo**, ovvero proprio l'elemento al quale si vuole applicare la modifica. Si può espandere l'elenco a discesa per visualizzare l'elenco completo delle posizioni in cui è possibile personalizzare i tipi di carattere e il colore del testo.
+   Si noti che il testo sotto **Mostra impostazioni per** indica **Editor di testo**, ovvero l'elemento al quale si vuole applicare la modifica. Si può espandere l'elenco a discesa per visualizzare l'elenco completo delle posizioni in cui è possibile personalizzare i tipi di carattere e il colore del testo.
 
 1. Per modificare il colore del testo dei numeri di riga, in **Elementi visualizzati** scegliere **Numero di riga**. Nella casella **Primo piano elemento** scegliere **Verde oliva**.
 
    ![Finestra di dialogo Opzioni, categoria Tipi di carattere e colori](media/quickstart-personalize-line-number-color.png)
+
+   Alcuni linguaggi dispongono di impostazioni proprie per i tipi di carattere e i colori. Se ad esempio uno sviluppatore C++ desidera modificare il colore utilizzato per le funzioni, può cercare **Funzioni C++** nell'elenco **Elementi visualizzati**.
 
 1. Prima uscire dalla finestra di dialogo, verrà modificato anche il colore degli attributi XML. Nell'elenco **Elementi visualizzati** scorrere verso il basso fino ad **Attributo XML** e selezionarlo. Nella casella **Primo piano elemento** scegliere **Verde limone**. Scegliere **OK** per salvare le selezioni e chiudere la finestra di dialogo.
 
@@ -96,6 +98,8 @@ Sono stati presentati solo un paio di modi per personalizzare i colori in Visual
 ## <a name="see-also"></a>Vedere anche
 
 [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)  
+[Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)  
 [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
 [Personalizzazione dell'editor](../ide/customizing-the-editor.md)  
 [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
