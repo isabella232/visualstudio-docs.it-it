@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
 
@@ -289,8 +290,8 @@ Questa procedura è stata convalidata per i sistemi operativi indicati di seguit
     |Argomento di vcvarsall.bat|Compilatore|Architettura del computer di compilazione|Architettura dell'output di compilazione|  
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (valore predefinito)|Nativo a 32 bit|x86, x64|x86|  
-    |x86_amd64|x64 incrociato|x86, x64|x64|  
-    |amd64|x64 nativo|x64|x64|  
+    |x86_amd64|x64 incrociato|x86, x64|X64|  
+    |amd64|x64 nativo|X64|X64|  
   
      Se vcvarsall.bat viene eseguito correttamente, ovvero se non viene visualizzato alcun messaggio di errore, è possibile ignorare il passaggio successivo e passare alla sezione [Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) di questo documento.  
   

@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 12/07/2017
 
 ## <a name="build"></a>Compilazione
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Build.BuildSolution|CTRL+MAIUSC+B [Globale]|  
 |Build.Cancel|CTRL+INTERR [Globale]|  
@@ -34,7 +35,7 @@ ms.lasthandoff: 12/07/2017
 
 ## <a name="debug"></a>Debug
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Debug.BreakatFunction|CTRL+B [Globale]|  
 |Debug.BreakAll|CTRL+ALT+INTERR [Globale]|  
@@ -52,9 +53,9 @@ ms.lasthandoff: 12/07/2017
 |Debug.StopDebugging|MAIUSC+F5 [Globale]|  
 |Debug.ToggleBreakpoint|F9 [Globale]|  
 
-## <a name="edit"></a>Modifica
+## <a name="edit"></a>Edit
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Edit.BreakLine|INVIO [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o MAIUSC+INVIO [Editor di testo]|  
 |Edit.CollapsetoDefinitions|CTRL+M, CTRL+O [Editor di testo]|  
@@ -105,7 +106,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="file"></a>File
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |File.Exit|ALT+F4 [Globale]|  
 |File.NewFile|CTRL+N [Globale]|  
@@ -121,12 +122,12 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="project"></a>Progetto
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Project.AddExistingItem|MAIUSC+ALT+A [Globale]|  
 |Project.AddNewItem|CTRL+MAIUSC+A [Globale]|  
 
-## <a name="refactor"></a>Refactoring del codice
+## <a name="refactor"></a>Refactoring
 
 |Comando|Tasto di scelta rapida [Contesto]|  
 |-------------|-----------------------------------|  
@@ -140,7 +141,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="view"></a>Visualizza
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |View.ClassView|CTRL+MAIUSC+C [Globale]|  
 |View.EditLabel|F2 [Globale]|  
@@ -159,9 +160,9 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|
 |View.ViewCode|INVIO [Diagramma classi]<br /><br /> o F7 [Progettazione impostazioni]|  
 |View.ViewDesigner|MAIUSC+F7 [Visualizzazione Origine editor HTML]|  
 
-## <a name="window"></a>Finestra
+## <a name="window"></a>Window
 
-|Comandi|Tasti di scelta rapida [Contesti]|  
+|Comandi:|Tasti di scelta rapida [Contesti]|  
 |--------------|-------------------------------------|  
 |Window.ActivateDocumentWindow|ESC [Globale]|  
 |Window.CloseDocumentWindow|CTRL+F4 [Globale]|  

@@ -15,11 +15,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b7176a0aed65a9595730247d857dc0c263dc0cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc01c0d5a2b4ad53f1384640e06b9637cd7fbe0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-editor"></a>Editor dei modelli
 In questo documento viene descritto come utilizzare l'editor modello di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per visualizzare, creare e modificare modelli 3D.  
@@ -46,7 +47,7 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
   
 3.  Specificare il **Nome** del file del modello e il **Percorso** in cui verrà creato.  
   
-4.  Scegliere il pulsante **Aggiungi** .  
+4.  Scegliere il pulsante **Aggiungi**.  
   
 ### <a name="axis-orientation"></a>Orientamento asse  
  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è supportato qualsiasi orientamento dell'asse 3D e vengono caricate le informazioni di orientamento dell'asse dai formati del file di modello che lo supportano. Se non viene specificato alcun orientamento di asse, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene utilizzato il sistema di coordinate di destra per impostazione predefinita. L'**indicatore di asse** mostra l'orientamento dell'asse corrente nell'angolo inferiore destro dell'area di progettazione. Nell'**indicatore di asse** il rosso rappresenta l'asse x, il verde indica l'asse y e il blu indica l'asse z.  
@@ -299,7 +300,7 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
 |Passare alla modalità di selezione delle facce|CTRL+L, CTRL+3|  
 |Passare alla modalità di selezione degli oggetti|CTRL+L, CTRL+4|  
 |Passare alla modalità orbita (fotocamera)|CTRL+G, CTRL+O|  
-|Selezionare l'oggetto successivo nella scena|Tab|  
+|Selezionare l'oggetto successivo nella scena|Scheda|  
 |Selezionare l'oggetto precedente nella scena|MAIUSC+TAB|  
 |Modifica l'oggetto selezionato in base allo strumento corrente.|Tasti freccia|  
 |Disattivare il manipolatore corrente|Q|  

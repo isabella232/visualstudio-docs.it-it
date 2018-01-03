@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9a719e39506e080ce55bad45124e34d79dbbfac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7218b5bdcc95ed5db7f87c6fb17230895db579cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-parameters"></a>Parametri di template
 Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti di chiavi del modello, ad esempio i nomi delle classi e degli spazi dei nomi, quando viene creata un'istanza del modello. Questi parametri vengono sostituiti dalla procedura guidata di creazione modelli eseguita in background quando un utente fa clic su **OK** nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento**.  

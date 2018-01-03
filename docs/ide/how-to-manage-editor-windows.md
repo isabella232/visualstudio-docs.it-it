@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad433ea0b1627d3e3ddcd80640f21a519d0264de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: gestire le finestre dell'editor
 È possibile lavorare sul codice in diverse posizioni contemporaneamente. A tale scopo, suddividere una finestra dell'editor o aprire più istanze delle finestre dell'editor.  

@@ -17,17 +17,18 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c3825c151190641b1cc9d9815f4916ccded423a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7451a5b18b0879a64d92525d5b72a6f4c1ec8cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Numero elevato di campioni del kernel
 |||  
 |-|-|  
 |ID regola|DA0003|  
-|Categoria|Uso degli strumenti di profilatura|  
+|Category|Uso degli strumenti di profilatura|  
 |Metodi di profilatura|Campionamento|  
 |Messaggio|È presente un numero elevato di campioni in modalità kernel. Questa circostanza potrebbe indicare un volume elevato di attività I/O oppure un rapporto elevato di cambi di contesto. Si consiglia di profilare nuovamente l'applicazione utilizzando la modalità strumentazione.|  
 |Tipo regola|Informazioni|  

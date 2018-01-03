@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>Visualizzazione Riepilogo: visualizzazione dei conflitti tra le risorse
 La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione in cui un thread o un processo in attesa di accedere a una risorsa è stato sospeso.  
@@ -34,7 +35,7 @@ La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|Nome della risorsa.|  
+|**Name**|Nome della risorsa.|  
 |**% conflitti**|Percentuale di tutti gli eventi di conflitto nei dati di profilatura che rappresentano conflitti per questa risorsa.|  
   
 ## <a name="most-contended-thread"></a>Thread con più conflitti  
@@ -45,5 +46,5 @@ La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione
 |Colonna|Descrizione|  
 |------------|-----------------|  
 |**ID**|L'identificatore del thread.|  
-|**Nome**|Nome del processo proprietario del thread.|  
+|**Name**|Nome del processo proprietario del thread.|  
 |**% conflitti**|Percentuale di tutti gli eventi di conflitto nei dati di profilatura che rappresentano conflitti per questa risorsa.|

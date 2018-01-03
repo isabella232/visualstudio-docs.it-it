@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 I frammenti di codice IntelliSense sono parti di codice già create e pronte per essere inserite nell'applicazione con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questi frammenti di codice consentono di incrementare la produttività riducendo la quantità di tempo dedicata alla digitazione di codice ripetitivo o alla ricerca di esempi. È possibile usare l'XML Schema dei frammenti di codice IntelliSense per creare frammenti di codice personali e aggiungerli ai frammenti di codice già inclusi in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

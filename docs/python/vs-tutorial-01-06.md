@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-working-with-git"></a>Passaggio 6: Uso di Git
 
@@ -48,7 +49,6 @@ Questo argomento descrive la creazione di un repository Git locale per un proget
 
 Per le esercitazioni sugli approfondimenti sull'uso di Git, vedere [Condividere il codice con Visual Studio 2017 e VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
 
-
 ## <a name="tutorial-review"></a>Revisione dell'esercitazione
 
 È stata completata questa esercitazione di Python in Visual Studio. In questa esercitazione si è appreso come:
@@ -62,7 +62,7 @@ Per le esercitazioni sugli approfondimenti sull'uso di Git, vedere [Condividere 
 
 Da qui è possibile esaminare i concetti e le guide sulle procedure, incluse le seguenti:
 
-- [Creazione di un'estensione di C++ per Python](cpp-and-python.md)
+- [Creazione di un'estensione C++ per Python](cpp-and-python.md)
 - [Pubblicazione nel servizio app di Azure](publishing-to-azure.md)
 - [Profilatura](profiling.md)
 - [Testing unità](unit-testing.md)

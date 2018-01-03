@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 Esplora Test consente di eseguire unit test da Visual Studio o progetti unit test di terze parti, raggruppare i test in categorie, filtrare l'elenco dei test, nonché creare, salvare ed eseguire playlist di test. È anche possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test.  
@@ -73,7 +74,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
   
  ![Torna all'inizio](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests_after_every_build"></a> Eseguire i test dopo ogni compilazione  
+###  <a name="BKMK_Run_tests_after_every_build"></a> Eseguire test dopo ogni compilazione  
   
 > [!WARNING]
 >  L'esecuzione di unit test dopo ogni compilazione è supportata in Visual Studio Enterprise.  
@@ -189,7 +190,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 FilterName:"Criteria" -FilterName:"SubsetCriteria"  
 ```  
   
- Di seguito è riportato un esempio:  
+ Ad esempio,  
   
 ```  
 FullName:"MyClass" - FullName:"PerfTest"  

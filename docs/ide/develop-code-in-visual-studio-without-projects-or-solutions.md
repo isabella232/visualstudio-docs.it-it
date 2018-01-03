@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni  
 In Visual Studio 2017 è possibile aprire codice da quasi qualsiasi tipo di progetto basato su directory in Visual Studio senza la necessità di un file di soluzione o progetto. Questo significa, ad esempio, che è possibile trovare un progetto di codice in GIT, clonarlo e quindi aprirlo direttamente in Visual Studio e avviare l'attività di sviluppo senza dover creare una soluzione o un progetto.  
@@ -111,7 +112,7 @@ Visual Studio supporta attualmente il debug per i linguaggi seguenti:
 
 1. Nel menu di scelta rapida di un file JavaScript in Esplora soluzioni scegliere il comando **Imposta come elemento di avvio**.  
 
-1. Scegliere il tasto **F5** per avviare il debug.  
+1. Premere il tasto **F5** per avviare il debug.  
 
 ### <a name="to-debug-msbuild-projects"></a>Per eseguire il debug di progetti MSBuild  
 1. Nel menu di Visual Studio scegliere **Debug**. Nel menu a discesa scegliere il progetto o selezionare il progetto o file da visualizzare come elemento di avvio in Esplora soluzioni.  

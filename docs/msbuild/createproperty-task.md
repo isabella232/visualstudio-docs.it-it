@@ -21,17 +21,18 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a585c0c3065d16000737ebfd5c42e3f020c0074a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ae7e6d5203ac4f2b6ff58a19d4938180b7a11c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createproperty-task"></a>Attività CreateProperty
 Popola le proprietà con i valori passati. In questo modo i valori vengono copiati da una proprietà o una stringa a un'altra.  
   
 ## <a name="attributes"></a>Attributi  
- Nella tabella che segue vengono descritti i parametri dell'attività `CreateProperty`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `CreateProperty` .  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  

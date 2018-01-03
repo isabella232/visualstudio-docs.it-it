@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Ricerca di argomenti tramite l'indice del visualizzatore della Guida
 L'indice contiene un elenco di parole chiave associate agli argomenti del contenuto installato. È possibile che a ogni argomento sia associata più di una parola chiave e che ogni parola chiave sia associata a più di un argomento. Usare questo indice nello stesso modo in cui si consulta l'indice di un libro.  

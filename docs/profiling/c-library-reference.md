@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 690c1cf6ff64e71bcf9ad96ab5cb2c9f472d9855
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>riferimento alla libreria C
 In questa sezione sono contenute informazioni di riferimento per l'SDK del visualizzatore di concorrenza.  
@@ -25,7 +26,7 @@ In questa sezione sono contenute informazioni di riferimento per l'SDK del visua
 > [!NOTE]
 >  Lo standard del linguaggio C si riserva l'uso di identificatori che iniziano con un carattere di sottolineatura (`_`) per le implementazioni come le librerie. Non usare nomi che iniziano con un carattere di sottolineatura nel codice. Il comportamento degli elementi di codice i cui nomi seguono questa convenzione non è garantito ed è soggetto a modifiche nelle future versioni. Per questi motivi, tali elementi di codice vengono omessi da questa documentazione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Funzione CvCreateDefaultMarkerSeriesOfDefaultProvider](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
   
  [Funzione CvCreateMarkerSeries](../profiling/cvcreatemarkerseries-function.md)  

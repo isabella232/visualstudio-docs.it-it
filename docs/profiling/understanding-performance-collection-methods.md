@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è possibile usare per raccogliere dati sulle prestazioni. In questo argomento vengono descritti i diversi metodi e vengono suggeriti alcuni scenari in cui può risultare appropriata la raccolta dei dati con un particolare metodo.  
@@ -53,7 +54,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)  
   
- [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)  
+ [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)  
   
 ##  <a name="instrumentation"></a> Strumentazione  
  Il metodo di profilatura della strumentazione raccoglie informazioni dettagliate sugli intervalli per le chiamate di funzione in un'applicazione sottoposta a profilatura. La profilatura della strumentazione è utile per le operazioni seguenti:  
@@ -93,7 +94,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
  [Visualizzazioni dei dati su conflitti tra risorse](../profiling/resource-contention-data-views.md)  
   
- [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md)  
+ [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)  
   
 ##  <a name="net_memory"></a> Memoria .NET  
  Il metodo di profilatura dell'allocazione della memoria .NET interrompe il processore del computer a ogni allocazione di un oggetto .NET Framework in un'applicazione sottoposta a profilatura. Quando vengono raccolti anche dati sulla durata degli oggetti, il profiler interrompe il processore dopo ogni operazione di Garbage Collection di .NET Framework.  

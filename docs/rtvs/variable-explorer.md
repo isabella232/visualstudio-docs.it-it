@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 La finestra Esplora variabili viene visualizzata come segue:
 
 ![Finestra Esplora variabili in Visual Studio](media/variable-explorer-window.png)
 
 Se nella sessione è stato definito un dataframe R più complesso, è possibile spostarsi all'interno dei dati. Dopo aver eseguito `cars <- mtcars` è possibile spostarsi all'interno del set di dati espandendo i diversi nodi in Esplora variabili:
- 
+
 ![Visualizzazione espansa di Esplora variabili](media/variable-explorer-expanded-results.png)
- 
+
 Per eliminare variabili, fare clic con il pulsante destro del mouse e selezionare **Elimina** oppure selezionare la variabile da eliminare e premere Canc.
 
 È anche possibile cercare un'osservazione in un dataframe tramite la ricerca incrementale. Prima espandere i nodi del dataframe in cui si vuole eseguire la ricerca e quindi immettere i termini di ricerca nella relativa casella.
 
 ## <a name="details-table-view"></a>Vista (tabella) dei dettagli
 
-Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di dati complesso come tabella separata selezionando l'icona della lente di ingrandimento oppure facendo clic con il pulsante destro del mouse e selezionando **Mostra dettagli**. 
+Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di dati complesso come tabella separata selezionando l'icona della lente di ingrandimento oppure facendo clic con il pulsante destro del mouse e selezionando **Mostra dettagli**.
 
 ![Vista tabella di Esplora variabili](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ Per impostazione predefinita, all'apertura l'ambito di Esplora variabili è l'am
 ![Esplora variabili con un dataframe durante il debug](media/variable-explorer-as-locals-window.png)
 
 Esplora variabili modifica automaticamente l'ambito di funzione man mano che scorre il codice nel debugger, ad esempio mostrando le variabili locali di una funzione.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importazione di dati in Esplora variabili
 

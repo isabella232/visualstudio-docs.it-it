@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ae2bfdc41e3ce9901f91887f805298f13aa4fe8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measure-mode-onoff"></a>Modalità misurazione attiva/non attiva
 Tramite questo strumento è possibile misurare con precisione un periodo di tempo nella sequenza temporale. Per abilitare la modalità misurazione, fare clic sul pulsante di misurazione (con un'icona a forma di righello) e quindi trascinare nella sequenza temporale. Durante il trascinamento, si noti che l'area sotto il puntatore viene evidenziata in giallo e il tempo misurato viene visualizzato sulla barra degli strumenti a destra del pulsante. Questo valore viene calcolato in modo dinamico durante il trascinamento in modo da poter determinare immediatamente il tempo richiesto per un particolare evento. Quando si rilascia il pulsante del mouse, il valore rimane visibile.  

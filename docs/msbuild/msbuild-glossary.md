@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dccc0592d050a07f3682834b6f2a66e2f8c6eb7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdbe7702711c5196de42d18379d6870ca54f4dcd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
 Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i relativi componenti.  
@@ -101,7 +102,7 @@ Questi termini vengono usati per descrivere Microsoft Build Engine (MSBuild) e i
  Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [Funzioni di proprietà](../msbuild/property-functions.md).  
   
  funzione di proprietà, annidata  
- Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Di seguito è riportato un esempio:  
+ Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio,  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   

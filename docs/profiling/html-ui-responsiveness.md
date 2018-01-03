@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -324,13 +325,13 @@ if (performance.mark && performance.measure) {
   
 -   **Decodifica immagine.** Indica il tempo impiegato per la decompressione e la decodifica delle immagini.  
   
- Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, è possibile usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per altre informazioni, vedere [Memoria JavaScript](../profiling/javascript-memory.md).  
+ Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, è possibile usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per ulteriori informazioni, vedi [Memoria JavaScript](../profiling/javascript-memory.md).  
   
  Per le altre categorie di eventi, è possibile che si identifichino gli effetti collaterali della piattaforma che derivano dall'aggiunta di funzionalità all'app, ma in questi casi è possibile che non si riesca a risolvere i problemi di prestazioni specifici tramite il profiler della velocità di risposta dell'interfaccia utente.  
   
  Questa tabella mostra gli eventi e le relative descrizioni:  
   
-|Evento|Categoria di eventi|Quando si verifica|  
+|event|Categoria di eventi|Quando si verifica|  
 |-----------|--------------------|-----------------|  
 |Analisi CSS|Caricamento|È stato rilevato nuovo contenuto CSS e ne è stata tentata l'analisi.|  
 |Analisi HTML|Caricamento|È stato rilevato nuovo contenuto HTML ed è stata tentata l'analisi del contenuto nei nodi e l'inserimento del contenuto nell'albero DOM.|  

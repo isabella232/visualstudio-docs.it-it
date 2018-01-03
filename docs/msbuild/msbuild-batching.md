@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una sola volta per ogni batch.  
@@ -88,13 +89,13 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
  Per un altro esempio di suddivisione in batch della destinazione, vedere [Metadati degli elementi nell'esecuzione in batch delle destinazioni](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Funzioni delle proprietà che usano i metadati  
- La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Di seguito è riportato un esempio:  
+ La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio,  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  usa <xref:System.IO.Path.Combine%2A> per combinare un percorso di cartella radice con un percorso di elemento Compile.  
   
- Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati.  Di seguito è riportato un esempio:  
+ Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati.  Ad esempio,  
   
  `%(Compile.FullPath.Substring(0,3))`  
   

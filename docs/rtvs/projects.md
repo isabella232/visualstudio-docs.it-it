@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Creazione di progetti R in Visual Studio
 
@@ -43,11 +44,11 @@ Il file `rproject.rproj` consente di gestire alcune impostazioni di progetto spe
 | Proprietà | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Versione | 1.0 | La versione di R Tools per Visual Studio usata per creare il progetto. |
-| RestoreWorkspace | Default | Carica automaticamente le variabili precedenti dell'area di lavoro dal file `.RData` nella directory del progetto. |
-| SaveWorkspace | Default | Salva le variabili correnti dell'area di lavoro per il file `.RData` nella directory del progetto quando quest'ultimo viene chiuso. |
-| AlwaysSaveHistory | Default | Salva la cronologia corrente della finestra interattiva per il file `.RHistory` nella directory del progetto quando quest'ultimo viene chiuso. |
-| EnableCodeIndexing | Sì | Determina se eseguire un'attività di indicizzazione in background per velocizzare le ricerche di codice. |
-| UseSpacesForTab | Sì | Determina se inserire spazi (Sì) o un carattere di tabulazione (No) quando viene premuto Tab nell'editor. |
+| RestoreWorkspace | Impostazione predefinita | Carica automaticamente le variabili precedenti dell'area di lavoro dal file `.RData` nella directory del progetto. |
+| SaveWorkspace | Impostazione predefinita | Salva le variabili correnti dell'area di lavoro per il file `.RData` nella directory del progetto quando quest'ultimo viene chiuso. |
+| AlwaysSaveHistory | Impostazione predefinita | Salva la cronologia corrente della finestra interattiva per il file `.RHistory` nella directory del progetto quando quest'ultimo viene chiuso. |
+| EnableCodeIndexing | Yes | Determina se eseguire un'attività di indicizzazione in background per velocizzare le ricerche di codice. |
+| UseSpacesForTab | Yes | Determina se inserire spazi (Sì) o un carattere di tabulazione (No) quando viene premuto Tab nell'editor. |
 | NumSpacesForTab | 2 | Il numero di spazi da inserire se UseSpacesForTab è impostato su Sì. |
 | Codifica | UTF-8 | La codifica predefinita per i file `.R`. |
 | RnwWeave | Sweave | Pacchetto da usare per la composizione di un file Rnw. |
@@ -66,7 +67,7 @@ Se si vuole gestire all'interno di un progetto una cartella di file `.R` esisten
 
 Per aprire le pagine delle proprietà del progetto, fare clic con il pulsante destro del mouse su **Esplora soluzioni** e selezionare **Proprietà** oppure scegliere la voce di menu **Progetto > Proprietà (nome progetto)...*. La finestra visualizzata riporta le proprietà del progetto:
 
-| Tab | Proprietà | Descrizione |
+| Scheda | Proprietà | Descrizione |
 | --- | --- | --- |
 | Esegui | File di avvio | Il nome del file che viene eseguito con il comando **Source startup file** (File di avvio di origine), F5, **Debug > Avvio del debug** o **Debug > Avvia senza eseguire debug**. Facendo clic con il pulsante destro del mouse sul file nel progetto e selezionando **Imposta come script R di avvio**, il file viene impostato anche come file di avvio. |
 | | Ripristina R interattivo durante l'esecuzione | Cancella tutte le variabili dall'area di lavoro della finestra interattiva quando si esegue il progetto. Questa operazione garantisce che non ci sia contenuto residuo dell'area di lavoro dall'esecuzione precedente. |
@@ -106,7 +107,6 @@ RTVS include diversi modelli per tipi di file specifici. È possibile accedere a
 | Documentazione di R (set di dati) | File di documentazione di R contenente molti campi con commenti di descrizione di un set di dati. |
 | Query SQL | File `.sql` vuoto. Vedere [SQL Server integration](sql-server.md) (Integrazione con SQL Server). |
 | Stored procedure con R | File R con una query SQL figlio e un file modello di stored procedure figlio. Vedere [SQL Server integration](sql-server.md) (Integrazione con SQL Server). |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Usare più tipi di progetto in Visual Studio
 

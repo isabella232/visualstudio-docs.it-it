@@ -603,11 +603,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c795dca53bec8191cdb9e2d61fa49ec03d84fa66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-msbuild-resources"></a>Risorse aggiuntive per MSBuild
 Se si sta tentando di risolvere un problema e non si riescono a trovare le informazioni necessarie nella documentazione, è possibile consultare altre risorse, ad esempio articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.  

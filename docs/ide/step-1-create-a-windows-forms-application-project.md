@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4878b71317e67c152c45d58168531f1039128f0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4714399d1ea7b17f1d79858185157e9c11902d7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: creare un progetto di Windows Forms Application
 Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella creazione di un progetto di Windows Forms Application.  
@@ -63,7 +64,7 @@ Finestra IDE
   
      In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, come illustrato nella figura seguente.  
   
-     ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png "Express_IconSaveAll")  
+     ![Pulsante sulla barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png "Express_IconSaveAll")  
 Pulsante della barra degli strumenti Salva tutto  
   
      In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.  

@@ -12,11 +12,12 @@ ms.assetid: EBAA2E04-A97A-4047-B739-8DBA7F2D5074
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fdcca04c9dd06132496912f4df30e3d86d24d42a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 15a2852d657e1c10652d99c25401db5ab76a2feb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-test-agents"></a>Installare e configurare agenti di test
 

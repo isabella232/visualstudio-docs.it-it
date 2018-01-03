@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 L'opzione **Casella degli strumenti** visualizza le icone per i controlli e altri elementi che è possibile aggiungere ai progetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per aprire la **Casella degli strumenti**, scegliere **Casella degli strumenti** dal menu **Visualizza**. È possibile ancorare la **Casella degli strumenti** ed è possibile bloccarla aperta o impostarla su **Nascondi automaticamente**.  
@@ -33,7 +34,7 @@ L'opzione **Casella degli strumenti** visualizza le icone per i controlli e altr
  La **Casella degli strumenti** visualizza solo gli elementi appropriati per il tipo di file che si sta usando. È possibile cercare all'interno della casella degli strumenti per restringere ulteriormente gli elementi visualizzati. Se il progetto richiede un controllo non supportato dal profilo client, è possibile impostare il progetto per l'intero framework di destinazione modificando le proprietà del progetto.  
   
 > [!NOTE]
->  Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="help-on-toolbox-tabs"></a>Guida sulle schede della casella degli strumenti  
  I documenti seguenti includono altre informazioni su specifiche schede della **Casella degli strumenti**.  

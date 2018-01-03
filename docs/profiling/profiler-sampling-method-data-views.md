@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.  
@@ -27,7 +28,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 > [!NOTE]
 >  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Visualizzazione Riepilogo](../profiling/summary-view-sampling-data.md)  
  Elenca le funzioni eseguite più di frequente al momento della raccolta dei campioni e le funzioni che eseguivano la maggior parte del lavoro individuale.  
   
@@ -43,13 +44,13 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)  
  Organizza la profilatura in base alle funzioni ed elenca le funzioni in esecuzione al momento della raccolta dei campioni.  
   
- [Righe (visualizzazione)](../profiling/lines-view-sampling-data.md)  
+ [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)  
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.  
   
- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
+ [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  [Visualizzazione Processo](../profiling/process-view.md)  
  Elenca l'ora di inizio e di fine di processi e thread.  
   
@@ -60,7 +61,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)  
+ [Instrumentation Method Data Views](../profiling/instrumentation-method-data-views.md) (Visualizzazioni dei dati del metodo di strumentazione)  
  Informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler generati tramite il metodo di strumentazione.  
   
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  

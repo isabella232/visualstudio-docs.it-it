@@ -12,16 +12,17 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206049d850b1f2f3c6b225b0c0d9c51d2a449a07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01f10f3d9c2f0f61708c14f2d7a8307f9db850f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-profiling-tools-reference"></a>Riferimenti agli strumenti di profilatura della riga di comando
 Gli strumenti per le prestazioni della riga di comando consentono ai programmatori di profilare le proprie applicazioni al prompt dei comandi. I seguenti strumenti di profilatura da riga di comando consentono di profilare il codice al prompt dei comandi.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [VSInstr](../profiling/vsinstr.md)  
  Elenca le opzioni di strumentazione di VSInstr.exe.  
   

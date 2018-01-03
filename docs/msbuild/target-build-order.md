@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7768d6ba35c2116c658dcd1b7968080932b99543
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. È possibile usare questi attributi per specificare l'ordine in cui vengono eseguite le destinazioni:  
@@ -70,7 +71,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
  Se non sono presenti destinazioni iniziali, destinazioni predefinite o destinazioni della riga di comando, MSBuild esegue la prima destinazione rilevata nel file di progetto o nei file di progetto importati.  
   
 ## <a name="target-dependencies"></a>Dipendenze tra destinazioni  
- Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Di seguito è riportato un esempio:  
+ Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Ad esempio,  
   
 ```xml  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  

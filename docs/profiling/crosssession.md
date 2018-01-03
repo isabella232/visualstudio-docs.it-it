@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 196107019a43f8f76beeb55cde6a56034375b9d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 079e0ec1b2bad2ca01a698c474c37de6d5d7dfd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crosssession"></a>CrossSession
 L'opzione **CrossSession** di VSPerfCmd.exe consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.  
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Nessuno  
+ nessuno  
   
 ## <a name="valid-options"></a>Opzioni valide  
  Per abilitare la profilatura in un'altra sessione, l'opzione **CrossSession** deve essere specificata con l'opzione **Start**. **CrossSession** deve essere specificata anche in tutti i comandi **Attach e Detach** di **VSPerfCmd**.  
@@ -42,7 +43,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  Avvia la profilatura dei processi specificati.  
   
  **Detach**[**:***PID*[,*PID*]]  
- Interrompe la profilatura dei processi specificati.  
+ Arresta la profilatura dei processi specificati.  
   
 ## <a name="example"></a>Esempio  
  In questo esempio l'opzione **CrossSession** viene usata per connettersi a un'applicazione che è stata avviata in un'altra sessione di console.  

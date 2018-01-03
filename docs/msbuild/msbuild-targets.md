@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29c9397ea886024c894b977f05ec83f8d7c70f60
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1055a11a428d477ef44645fbc85d3f281b523357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 Le destinazioni raggruppano le attività in un determinato ordine e consentono di suddividere il processo di compilazione in unità più piccole. Ad esempio, una destinazione può eliminare tutti i file presenti nella directory di output per preparare la compilazione, mentre un'altra compila gli input per il progetto e li inserisce nella directory vuota. Per altre informazioni sulle attività, vedere [Attività](../msbuild/msbuild-tasks.md).  
@@ -31,7 +32,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>  
 ```  
   
- Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Di seguito è riportato un esempio:  
+ Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio,  
   
 ```xml  
 <Target Name="AfterBuild" >  
@@ -62,7 +63,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
  Per dettagli e altre informazioni sull'ordine di compilazione delle destinazioni, vedere [Ordine di compilazione delle destinazioni](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione  
- Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(metadati). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Di seguito è riportato un esempio:  
+ Un elemento di destinazione può avere un attributo `Outputs` che specifica i metadati nel formato %(metadati). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,  
   
 ```xml  
 <ItemGroup>  

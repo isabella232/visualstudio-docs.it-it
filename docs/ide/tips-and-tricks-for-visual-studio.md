@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 23cd5cf58585c8ba1397552d20cb519c1f62c236
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
 
@@ -113,7 +114,7 @@ ms.lasthandoff: 12/07/2017
 |Imposta istruzione successiva|Ctrl+Maiusc+F10|  
 |Imposta e Attiva/disattiva punto di interruzione|F9|  
 |Disattiva punto di interruzione|Ctrl+F9|  
-|Finestra di controllo immediato|CTRL+ALT+I|  
+|Controllo immediato (finestra)|CTRL+ALT+I|  
 |Modalità di comando Finestra di controllo immediato|Digitare ">"|  
 |Cancellare il buffer della finestra di controllo immediato|>cls|  
 |Valore di stampa della finestra di controllo immediato|?varname|  

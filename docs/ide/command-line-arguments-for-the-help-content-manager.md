@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per la Gestione contenuto della Guida
 È possibile specificare come distribuire e gestire il contenuto della Guida locale usando gli argomenti della riga di comando per Gestione contenuto della Guida (HlpCtntMgr.exe). È necessario eseguire gli script per questo strumento da riga di comando con le autorizzazioni di amministratore e non è possibile eseguire questi script come servizio. Usando questo strumento è possibile eseguire le seguenti attività:  
@@ -46,8 +47,8 @@ La tabella seguente definisce le opzioni e gli argomenti che è possibile usare 
   
 |Opzione|Obbligatorio?|Argomenti|  
 |------------|---------------|---------------|  
-|/operation|Sì|-   **Install**: aggiunge i libri dell'origine dell'installazione specificata all'archivio del contenuto locale.<br />     Questa opzione richiede l'argomento /booklist, l'argomento /sourceURI o entrambi. Se non si specifica l'argomento /sourceURI, come origine dell'installazione viene usato l'URI predefinito di Visual Studio. Se non si specifica l'argomento /booklist, vengono installati tutti i libri in /sourceUri.<br />-   **Uninstall**: rimuove dall'archivio del contenuto locale i libri specificati.<br />     Questa opzione richiede l'argomento /booklist o l'argomento /sourceURI.  Se si specifica l'argomento /sourceURI, vengono rimossi tutti i libri e l'argomento /booklist viene ignorato.<br />-   **Move**: sposta l'archivio locale nel percorso specificato. Il percorso dell'archivio locale predefinito viene impostato come directory in %ProgramData%<br />     Questa opzione richiede gli argomenti /locationPath e /catalogName. Nel registro eventi vengono registrati messaggi di errore se si specifica un percorso non valido o se lo spazio libero sull'unità non è sufficiente per il contenuto.<br />-   **Refresh**: aggiorna gli argomenti modificati dopo l'installazione o aggiornati più di recente.<br />     Questa opzione richiede l'argomento /sourceURI.|  
-|/catalogName|Sì|Specifica il nome del catalogo del contenuto.|  
+|/operation|Yes|-   **Install**: aggiunge i libri dell'origine dell'installazione specificata all'archivio del contenuto locale.<br />     Questa opzione richiede l'argomento /booklist, l'argomento /sourceURI o entrambi. Se non si specifica l'argomento /sourceURI, come origine dell'installazione viene usato l'URI predefinito di Visual Studio. Se non si specifica l'argomento /booklist, vengono installati tutti i libri in /sourceUri.<br />-   **Uninstall**: rimuove dall'archivio del contenuto locale i libri specificati.<br />     Questa opzione richiede l'argomento /booklist o l'argomento /sourceURI.  Se si specifica l'argomento /sourceURI, vengono rimossi tutti i libri e l'argomento /booklist viene ignorato.<br />-   **Move**: sposta l'archivio locale nel percorso specificato. Il percorso dell'archivio locale predefinito viene impostato come directory in %ProgramData%<br />     Questa opzione richiede gli argomenti /locationPath e /catalogName. Nel registro eventi vengono registrati messaggi di errore se si specifica un percorso non valido o se lo spazio libero sull'unità non è sufficiente per il contenuto.<br />-   **Refresh**: aggiorna gli argomenti modificati dopo l'installazione o aggiornati più di recente.<br />     Questa opzione richiede l'argomento /sourceURI.|  
+|/catalogName|Yes|Specifica il nome del catalogo del contenuto.|  
 |/locale|No|Specifica le impostazioni locali del prodotto usate per visualizzare e gestire il contenuto per l'istanza corrente del visualizzatore della Guida. Ad esempio, è possibile specificare `EN-US` per Inglese (Stati Uniti).<br /><br /> Se non si specificano le impostazioni locali, vengono usate quelle del sistema operativo. Se tali impostazioni locali non possono essere determinate, viene usato `EN-US`.<br /><br /> Se si specificano impostazioni locali non valide, nel log eventi viene registrato un messaggio di errore.|  
 |/e|No|Eleva Gestione contenuto della Guida ai privilegi amministrativi se l'utente corrente dispone di credenziali amministrative.|  
 |/sourceURI|No|Specifica l'URL da cui viene installato il contenuto l'installazione (API del servizio) o il percorso del file di installazione del contenuto (msha). L'URL può fare riferimento al gruppo di prodotti (nodo di primo livello) o ai libri del prodotto (nodo di livello foglia) in un endpoint di stile di Visual Studio 2010. Non è necessario includere una barra (/) alla fine dell'URL. Se si include una barra finale, verrà gestita in modo appropriato.<br /><br /> Nel log eventi viene registrato un messaggio di errore se il file specificato non viene trovato, non è valido o non è accessibile oppure se una connessione a Internet non è disponibile o viene interrotta durante la gestione del contenuto.|  
@@ -89,5 +90,5 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
   
 ## <a name="see-also"></a>Vedere anche  
 [Guida dell'amministratore di Help Viewer](../ide/help-viewer-administrator-guide.md)  
-[Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md)  
+[Ovverride di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

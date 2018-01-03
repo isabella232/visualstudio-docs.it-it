@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0223d57cf4c16166149b1fc9e8903f563b724d20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23b4f8a116287d7bfe524173f9f88040ba5f1100
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setenv-task"></a>Attività SetEnv
 Imposta o elimina il valore di una variabile di ambiente specificata.  
@@ -36,7 +37,7 @@ Imposta o elimina il valore di una variabile di ambiente specificata.
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
-|**Nome**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|  
+|**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|  
 |**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|  
 |**Prefix**|Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, concatena il valore del parametro **Value** prima del valore della variabile di ambiente specificato dal parametro **Name** e quindi assegna il risultato alla variabile di ambiente. Se `false`, assegna solo il valore del parametro **Value** alla variabile di ambiente.|  
 |**Destinazione**|Parametro **String** facoltativo.<br /><br /> Specifica il percorso di archiviazione di una variabile di ambiente. Specificare "`User`" o "`Machine`".<br /><br /> Per altre informazioni, vedere "Enumerazione EnvironmentVariableTarget" sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  

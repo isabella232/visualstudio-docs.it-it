@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-content-manager-overrides"></a>Ovverride di Gestione contenuto della Guida
 È possibile modificare il comportamento predefinito di Help Viewer e le funzionalità correlate alla Guida nell'IDE di Visual Studio. Alcune opzioni vengono specificate mediante la creazione di un file con estensione [pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) per impostare vari valori di chiavi del Registro di sistema. Altre vengono impostate direttamente nel Registro di sistema.
@@ -34,9 +35,9 @@ ms.lasthandoff: 11/07/2017
 ### <a name="registry-key-values"></a>Valori delle chiavi del Registro di sistema
 |Valore della chiave del Registro di sistema|Tipo|Dati|Descrizione|  
 |------------------|----|----|-----------|  
-|NewContentAndUpdateService|string|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint di servizio univoco|
+|NewContentAndUpdateService|stringa|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint di servizio univoco|
 |UseOnlineHelp|dword|`0` per specificare la Guida locale, `1` per specificare la Guida online|Impostare la Guida online o offline come predefinita|
-|OnlineBaseUrl|string|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint F1 univoco|
+|OnlineBaseUrl|stringa|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint F1 univoco|
 |OnlineHelpPreferenceDisabled|dword|`0` per abilitare o `1` per disabilitare l'opzione di preferenza della Guida online|Disabilitare l'opzione di preferenza della Guida online|
 |DisableManageContent|dword|`0` per abilitare o `1` per disabilitare la scheda **Gestisci contenuto** in Help Viewer|Disabilitare la scheda Gestisci contenuto|
 |DisableFirstRunHelpSelection|dword|`0` per abilitare o `1` per disabilitare le funzionalità della Guida configurate al primo avvio di Visual Studio|Disabilitare l'installazione del contenuto al primo avvio di Visual Studio|

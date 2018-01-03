@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16df4a6823bfb23847cd49b97d7b4a29edf0fa4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da3598568d0f607e37a3d42fbb080f0a70dfda57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-zoom-tool"></a>Strumento di zoom della visualizzazione Core
 Il controllo Zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale in modo da potersi concentrare sulle aree di particolare interesse. Il controllo fa zoom in avanti al centro della visualizzazione corrente, quindi è opportuno regolare la visualizzazione prima di ingrandire.  
@@ -30,4 +31,4 @@ Il controllo Zoom è un dispositivo di scorrimento che consente di ingrandire e 
 -   Zoom avanti e indietro: passare il mouse sulla sequenza temporale e quindi premere CTRL mentre si muove la rotellina del mouse.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazione Core](../profiling/cores-view.md)
+ [Cores View](../profiling/cores-view.md) (Visualizzazione Core)

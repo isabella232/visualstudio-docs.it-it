@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30a37f5003d407edb46ab3d4475b99f5bbe54ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7fcef6ffd829ea999c1ed8d62d34083f5adab46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disk-operations-report-threads-view"></a>Report delle operazioni su disco (visualizzazione Thread)
 Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco.  
@@ -44,4 +45,4 @@ Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O esegu
 -   Latenza di scrittura in millisecondi  
   
 ## <a name="see-also"></a>Vedere anche  
- [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione thread)
+ [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione Thread)

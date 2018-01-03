@@ -12,16 +12,17 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f009537fb3bd3920f5b3e81c65570c7119b59c4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb05851313626884b817aac3368fa9fb1793b97d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>Esempio di data binding WPF tramite LINQ to XML
 Contenuto della sezione è incluso un esempio di WPF (Windows Presentation Foundation) che associa i componenti dell'interfaccia utente a un'origine dati XML incorporata. Il nome di questo esempio e del progetto di Visual Studio che lo contiene è *LinqToXmlDataBinding*.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  

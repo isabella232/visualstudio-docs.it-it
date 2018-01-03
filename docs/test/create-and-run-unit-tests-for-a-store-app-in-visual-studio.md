@@ -12,11 +12,12 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: "26"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5a6a1a314e837b441e2fc563baabf935659adcf8
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Creare ed eseguire unit test per un'app UWP in Visual Studio
 Gli strumenti di unit test di Visual Studio sono progettati per offrire supporto a sviluppatori e team che integrano gli unit test nelle attività di sviluppo del software. Gli unit test offrono a sviluppatori e tester un metodo efficace e gestibile per la ricerca di errori logici nei metodi delle classi nei progetti Visual C#, Visual Basic e Visual C++.  
@@ -30,7 +31,7 @@ Gli strumenti di unit test di Visual Studio sono progettati per offrire supporto
 >   
 >  Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md) in MSDN Library.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Unit test di codice C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  
   
  [Unit test di una DLL C++](../test/unit-testing-a-visual-cpp-dll-for-store-apps.md)  

@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>Panoramica delle funzionalità di profilatura
 
@@ -153,14 +154,14 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |----------------------|---------------------|------------------------------|-------------|  
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|  
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì (no per .NET Core/ASP.NET Core)|  
-|[Utilizzo GPU](../debugger/gpu-usage.md)|sì|sì|no|  
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|no|  
+|[Utilizzo GPU](../debugger/gpu-usage.md)|sì|sì|No|  
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|  
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|  
-|[Esplora prestazioni](../profiling/performance-explorer.md)|sì|no|sì (no per ASP.NET Core)|  
+|[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì (no per ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|
-|[Utilizzo della rete](../profiling/network-usage.md)|no|sì|no| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|Sì per HTML, no per XAML|no|  
-|[Memoria JavaScript](../profiling/javascript-memory.md)|no|Sì per HTML, no per XAML|no|  
+|[Utilizzo della rete](../profiling/network-usage.md)|No|sì|No| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|Sì per HTML, no per XAML|No|  
+|[Memoria JavaScript](../profiling/javascript-memory.md)|No|Sì per HTML, no per XAML|No|  
 
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)

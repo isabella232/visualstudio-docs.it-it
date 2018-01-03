@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: cd7e50a44e5d53653f233372b643c31fe58aedc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 129f9c9235035e828e1825898aac89eaf8cd1388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Recupero di log di compilazione con MSBuild
 Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazione si vogliono esaminare e se salvare i dati di compilazione in uno o più file. È anche possibile specificare un logger personalizzato per raccogliere i dati di compilazione. Per informazioni sulle opzioni della riga di comando di MSBuild, non illustrate in questo argomento, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  
@@ -57,7 +58,7 @@ msbuild MyProject.proj /t:go /fileLogger
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
- Per altre informazioni, vedere [Informazioni di riferimento sulla riga di comando](../msbuild/msbuild-command-line-reference.md).  
+ Per altre informazioni, vedere [Command-Line Reference](../msbuild/msbuild-command-line-reference.md) (Informazioni di riferimento sulla riga di comando).  
   
 ## <a name="saving-the-log-output-to-multiple-files"></a>Salvataggio dell'output del log in più file  
  L'esempio seguente salva l'intero log in `msbuild1.log`, gli errori soltanto in `JustErrors.log` e gli avvisi soltanto in `JustWarnings.log`. L'esempio usa numeri di file per ognuno dei tre file. I numeri di file vengono specificati subito dopo le opzioni **/fl** e **/flp**, ad esempio `/fl1` e `/flp1`.  

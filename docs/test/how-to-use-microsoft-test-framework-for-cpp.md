@@ -11,11 +11,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: "11"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2905f606d47eff8c210ccd66adfd983c11c65a98
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 37356782854b9bbc45787fea727643f6d244f04d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio 
 
@@ -60,7 +61,7 @@ Usare i metodi statici nella classe [Assert](microsoft-visualstudio-testtools-cp
   ![Finestra di output di C++ con messaggi di test](media/cpp-test-output-window.png "Finestra di output")
 
 ## <a name="define-traits-to-enable-grouping"></a>Definire i tratti per abilitare il raggruppamento
-È possibile definire i tratti nei metodi di test che consentono di classificare e raggruppare i test in **Esplora test**. Per definire un tratto, usare la macro `TEST_METHOD_ATTRIBUTE` . Ad esempio, per definire un tratto denominato `TEST_MY_TRAIT`:  
+È possibile definire i tratti nei metodi di test che consentono di classificare e raggruppare i test in **Esplora test**. Per definire un tratto, usare la macro `TEST_METHOD_ATTRIBUTE`. Ad esempio, per definire un tratto denominato `TEST_MY_TRAIT`:  
   
 ```cpp  
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)  

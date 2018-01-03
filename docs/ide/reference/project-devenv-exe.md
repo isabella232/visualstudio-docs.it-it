@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06d788e672cbda254ad95b2b36c650e59d3a3314
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 16cd05607bfd6a3bec2bee143b8f735220a5b643
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Identifica un singolo progetto all'interno della configurazione della soluzione specificata da compilare, pulire, ricompilare o distribuire.  
@@ -56,10 +57,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
  Obbligatorio. Il percorso completo e il nome del file della soluzione.  
   
  /project `ProjName`  
- Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il percorso relativo del file di progetto dalla cartella `SolutionName` il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.  
+ Facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il percorso relativo del file di progetto dalla cartella `SolutionName` il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.  
   
  /projectconfig `ProjConfigName`  
- Parametro facoltativo. Il nome della configurazione della build di un progetto da applicare al `/project` denominato.  
+ Facoltativo. Il nome della configurazione della build di un progetto da applicare al `/project` denominato.  
   
 ## <a name="remarks"></a>Note  
   

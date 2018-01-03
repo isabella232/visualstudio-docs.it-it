@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f0090c5c7cceabdfc8fde313b7d3ad23337ad409
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5f8f5b3baa26bf9c17b016c2a480443af3990256
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Guida rapida: creare un progetto Python a partire da un codice esistente
 
@@ -27,8 +28,7 @@ Dopo aver [installato il supporto Python in Visual Studio 2017](installation.md)
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. Se necessario, eseguire il programma premendo Ctrl+F5 o selezionando **Debug > Avvia senza eseguire debug**. 
-
+8. Se necessario, eseguire il programma premendo CTRL+F5 o selezionando **Debug > Avvia senza eseguire debug**. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

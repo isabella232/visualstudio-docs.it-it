@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 Questo documento descrive come usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per creare, modificare ed esportare effetti visivi personalizzati noti come *shader*.  
@@ -47,7 +48,7 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
 3.  Specificare il **Nome** del file shader e il **percorso** in cui crearlo.  
   
-4.  Scegliere il pulsante **Aggiungi** .  
+4.  Scegliere il pulsante **Aggiungi**.  
   
 ### <a name="the-default-shader"></a>Shader predefinito  
  Ogni volta che si crea uno shader DGSL, viene inizialmente definito come uno shader minimo con un solo nodo **Colore punto** collegato al nodo **Colore finale**. Sebbene questo shader sia completo e funzionale, non fa molto. Per creare uno shader funzionante, quindi, come primo passaggio è spesso necessario eliminare il nodo **Colore punto** o scollegarlo dal nodo **Colore finale** per fare spazio ad altri nodi.  
@@ -185,6 +186,6 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Uso di risorse tridimensionali per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a cui attingere per poter utilizzare trame e immagini, modelli 3D ed effetti shader.|  
+|[Working with 3-D Assets for Games and Apps](../designers/working-with-3-d-assets-for-games-and-apps.md) (Uso di risorse 3D per giochi e app)|Fornisce una panoramica degli strumenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a cui attingere per poter utilizzare trame e immagini, modelli 3D ed effetti shader.|  
 |[Editor immagini](../designers/image-editor.md)|Descrive come utilizzare l'editor di immagini di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con trame e immagini.|  
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per lavorare con modelli 3D.|

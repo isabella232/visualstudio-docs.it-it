@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Passaggio 5: Installazione dei pacchetti nell'ambiente Python
 
@@ -48,23 +49,22 @@ La community degli sviluppatori di Python produce migliaia di pacchetti utili ch
 
 1. Creare un nuovo progetto con **File > Nuovo > Progetto**, selezionando il modello "Applicazione Python". Nel file di codice che viene visualizzato incollare il codice seguente che crea una cosinusoide come nei passaggi dell'esercitazione precedente, questa volta tracciata graficamente:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Eseguire il programma con (F5) o senza il debugger (Ctrl+F5) per visualizzare l'output:
 
   ![Output di esempio matplotlib](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -72,4 +72,5 @@ La community degli sviluppatori di Python produce migliaia di pacchetti utili ch
 > [Uso di Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Approfondimenti
+
 - [Ambienti Python](python-environments.md)

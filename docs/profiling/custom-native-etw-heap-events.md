@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 
@@ -92,7 +93,7 @@ Questa libreria può essere usata facilmente in C e C++.
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   o
+   oppure
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -158,5 +159,5 @@ Come con l'heap standard di Windows, è possibile usare questo strumento per con
 > Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni** set di strumenti, che viene abilitato dall'opzione di menu **Debug > Profiler prestazioni** o dalla combinazione di tasti **Alt+F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug > Windows > Mostra strumenti di diagnostica** o la combinazione di tasti **Ctrl+Alt+F2**, contiene questa funzionalità.
 
 ## <a name="see-also"></a>Vedere anche
-[Strumenti di profilatura](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+[Profiling Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools) (Strumenti di profilatura)  
 [Utilizzo memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

@@ -15,16 +15,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="resource-contention-data-views"></a>Visualizzazioni dei dati sui confitti di risorse
+# <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Visualizzazione Riepilogo: dati su conflitti del profiler](../profiling/resource-contention-data-views.md)  
  Visualizza una sequenza temporale grafica dei dati di profilatura ed elenca le funzioni e le risorse che hanno partecipato alla maggior parte degli eventi di blocco.  
   
@@ -49,15 +50,15 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
  [Visualizzazione dei conflitti di risorse](../profiling/resource-contentions-view-contention-data.md)  
  Elenca i dati sui conflitti di risorse in base alla risorsa bloccata.  
   
- [Righe (visualizzazione)](../profiling/lines-view-contention-data.md)  
+ [Visualizzazione Righe](../profiling/lines-view-contention-data.md)  
  Elenca i dati sui conflitti di risorse in base alla riga del codice sorgente.  
   
- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Elenca i conflitti di risorse in base all'istruzione.  
   
  [Visualizzazione Processo](../profiling/process-view-contention-data.md)  
  Elenca i conflitti di risorse in base a processo e thread.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)  
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.

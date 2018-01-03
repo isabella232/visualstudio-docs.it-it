@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-your-build"></a>Personalizzare la compilazione
 Nelle versioni di MS Build precedenti alla versione 15, per specificare una nuova proprietà personalizzata per i progetti nella soluzione, è necessario aggiungere manualmente un riferimento a tale proprietà per ogni file di progetto della soluzione. Oppure, è necessario definire la proprietà in un file PROPS e quindi importare in modo esplicito il file PROPS in ogni progetto della soluzione, tra le altre cose.
@@ -87,7 +88,7 @@ Per consentire a MSBuild di unire correttamente i file "interni" (`2-src` e `2-t
 L'approccio generale di MSBuild può essere riepilogato come segue:
 
 - Per ogni progetto MSBuild trova il primo `Directory.Build.props` procedendo verso l'alto nella struttura della soluzione, lo unisce ai valori predefiniti e interrompe l'analisi
-- Se si vogliono rilevare e unire più livelli, usare [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (illustrato in precedenza) per importare il file "esterno" dal file "interno"
+- Se si vogliono rilevare e unire più livelli, usare [`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (illustrato in precedenza) per importare il file "esterno" dal file "interno"
 - Se il file "esterno" non importa a sua volta un elemento situato a un livello superiore, l'analisi si interrompe qui
 - Per controllare il processo di analisi/unione, usare `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`
 

@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd4b344860190d0dcfc01adf6ccf553d34c5b038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5982cfd7b9201008f4ecc5930041200fd4980dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Pulisce tutti i file intermedi e le directory di output.  
@@ -37,10 +38,10 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  Obbligatorio. Percorso completo e nome del file di soluzione o di progetto.  
   
  /project `ProjName`  
- Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il percorso relativo del file di progetto dalla cartella `SolutionName` il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.  
+ Facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il percorso relativo del file di progetto dalla cartella `SolutionName` il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.  
   
  /projectconfig `ProjConfigName`  
- Parametro facoltativo. Nome della configurazione della build di un progetto da usare durante la pulizia dell'elemento `/project` specificato.  
+ Facoltativo. Nome della configurazione della build di un progetto da usare durante la pulizia dell'elemento `/project` specificato.  
   
 ## <a name="remarks"></a>Note  
  Questa opzione esegue la stessa funzione del comando di menu **Pulisci soluzione** nell'ambiente di sviluppo integrato (IDE).  

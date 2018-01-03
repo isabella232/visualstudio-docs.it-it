@@ -19,16 +19,17 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ec355d4798da9a5134396801d744623fffc2da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 È possibile archiviare versioni diverse delle proprietà di soluzione e progetto che si applicano a piattaforme di destinazione diverse. Ad esempio, è possibile creare una configurazione di debug che ha come destinazione una piattaforma x86 e una configurazione di debug che ha come destinazione una piattaforma x64. È possibile modificare rapidamente la piattaforma attiva in modo da creare con facilità più configurazioni.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)  
  Viene illustrato come configurare un progetto per una determinata piattaforma di destinazione.  
   

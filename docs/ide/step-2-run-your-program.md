@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0c50254bc632bce298e547e5599adeb99d593da7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b85460ad7edf7163a8a53c7c4706790f493b58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: eseguire il programma
 Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.  
@@ -48,9 +49,9 @@ Barra degli strumenti di debug
   
 4.  Utilizzare uno dei metodi seguenti per arrestare il programma.  
   
-    -   Sulla barra degli strumenti scegliere il pulsante**Termina debug**.  
+    -   Sulla barra degli strumenti scegliere il pulsante **Termina debug**.  
   
-    -   Sulla barra del menu scegliere **Debug**, **Interrompi debug**.  
+    -   Sulla barra del menu scegliere **Debug**, **Termina debug**.  
   
     -   Scegliere il pulsante X nell'angolo superiore della finestra **Form1**.  
   

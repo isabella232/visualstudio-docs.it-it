@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d0346732de89fcc08c0f3604e8a66fa1fd7acdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati temporali e di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. I dati di profilatura per le funzioni del modulo sono elencati sotto il nodo del modulo.  
@@ -26,7 +27,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|Nome della funzione o del modulo.|  
+|**Name**|Nome della funzione o del modulo.|  
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|  
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|  
 |**File di origine**|File di origine che contiene la definizione di questa funzione.|  
@@ -102,4 +103,4 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)   
- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
+ [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 734d0531cf1fbbbc2f7924cb1743cabf9e4a9578
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-performance-data-files"></a>Confronto di file di dati sulle prestazioni
 La funzionalità di confronto tra file di dati offerta dagli strumenti per la profilatura consente di selezionare due file di rapporto con estensione vsp o vsps e generare un rapporto in cui siano indicate le differenze, la regressione delle prestazioni e i miglioramenti registrati tra una sessione di profilatura e l'altra.  
@@ -34,5 +35,5 @@ La funzionalità di confronto tra file di dati offerta dagli strumenti per la pr
   
  È possibile impostare una soglia per ridurre il rumore ed escludere qualsiasi dato nella visualizzazione tabella di confronto delle righe che non sono state modificate in base un valore specificato.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [How to: Compare Performance Data Files](../profiling/how-to-compare-performance-data-files.md) (Procedura: Confrontare i file di dati sulle prestazioni)

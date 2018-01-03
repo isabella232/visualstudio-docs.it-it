@@ -16,16 +16,17 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni generati dal sistema operativo (contatori Windows) e dati sulle prestazioni generati dal processore (contatori CPU).  
   
- **Requirements**  
+ **Requisiti**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -95,7 +96,7 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
   
          **Nota** Fare clic su **Annulla** per tornare alla configurazione di campionamento precedente.  
   
-     -oppure-  
+     oppure  
   
     -   Selezionare **Contatori CPU** e quindi **Raccogli contatori CPU**. I contatori CPU sono elencati in **Contatori disponibili**.  
   
@@ -132,4 +133,4 @@ Il profiler di Visual Studio consente di raccogliere dati sulle prestazioni gene
  [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
  [How to: Choose Sampling Events](../profiling/how-to-choose-sampling-events.md)  (Procedura: Scegliere eventi di campionamento)  
  [How to: Collect CPU Counter Data](../profiling/how-to-collect-cpu-counter-data.md)  (Procedura: Raccogliere i dati dei contatori CPU)  
- [How to: Collect Windows Counter Data](../profiling/how-to-collect-windows-counter-data.md) (Procedura: Raccogliere i dati dei contatori Windows)
+ [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 5ce79d4e8ff2056b5d713eaa781b22359141c9b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida rapida: Clonazione di un repository del codice Python in Visual Studio
 
@@ -26,24 +27,24 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installation.
 
 2. Avviare Visual Studio.
 
-3. Selezionare **Visualizza > Team Explorer...**  per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub Visual Studio Team Services o clonare un repository.
+3. Selezionare **Visualizza > Team Explorer** per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o a Visual Studio Team Services oppure clonare un repository.
 
-    ![Visualizzazione della finestra Team explorer di Visual Studio Team Services, GitHub e clonazione di un repository](media/team-explorer.png)
+    ![Finestra Team Explorer che mostra Visual Studio Team Services, GitHub e la clonazione di un repository](media/team-explorer.png)
 
-4. Nel campo URL **Repository Git locali**, immettere `https://github.com/gregmalcolm/python_koans`, immettere una cartella per i file duplicati e selezionare **Clona**.
+4. Nel campo URL in **Repository Git locali** immettere `https://github.com/gregmalcolm/python_koans`, immettere una cartella per i file clonati e selezionare **Clona**.
 
     > [!Tip]
-    > La cartella specificata in Team Explorer è specifica per ricevere i file clonati. A differenza del comando `git clone`, la creazione di un clone in Team Explorer non crea automaticamente una sottocartella con il nome del repository.
+    > La cartella immessa in Team Explorer è specifica per ricevere i file clonati. A differenza del comando `git clone`, la creazione di un clone in Team Explorer non crea automaticamente una sottocartella con il nome del repository.
 
-5. Al termine della clonazione, fare doppio clic sulla cartella del repository nella parte inferiore di Team Explorer per passare al dashboard del repository. In **Soluzioni**selezionare **Nuovo...** .
+5. Al termine della clonazione, fare doppio clic sulla cartella del repository nella parte inferiore di Team Explorer per passare al dashboard del repository. In **Soluzioni** selezionare **Nuovo**.
 
     ![Finestra Team explorer, creazione di un nuovo progetto da un clone](media/team-explorer-new-project.png)
 
 6. Nella finestra di dialogo **Nuovo progetto** visualizzata, selezionare "Da codice Python esistente", specificare un nome per il progetto, impostare **Percorso** nella stessa cartella del repository, selezionare **OK**. Nella procedura guidata visualizzata, selezionare **Fine**.
 
-7. Selezionare **Vista > Esplora soluzioni** dal menu.
+7. Selezionare **Visualizza > Esplora soluzioni** dal menu.
 
-8. In Esplora soluzioni espandere il nodo `python3`, fare clic con il pulsante destro del mouse su `contemplate_koans.py` e selezionare **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
+8. In Esplora soluzioni espandere il nodo `python3`, fare clic con il pulsante destro del mouse su `contemplate_koans.py` e scegliere **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
 
 9. Dal menu selezionare **Progetto > Proprietà**, selezionare la scheda **Generale** e impostare come **directory di lavoro** "python3". Questo è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro per la radice del progetto anziché per il percorso del file di avvio (`python3\contemplate_koans.py`, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file `koans.txt` nella cartella di lavoro, pertanto se non si modifica questo valore viene visualizzato un errore di runtime.
 

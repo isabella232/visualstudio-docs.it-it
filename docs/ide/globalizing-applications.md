@@ -16,16 +16,17 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7edc6e37b21b8810e8967c160e44e82c0903b24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc3da69cd89421ed3f8b04f5c47a190d8453411d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-applications"></a>Globalizzazione di applicazioni
 Globalizzazione è il processo di progettazione e sviluppo di un prodotto software per il funzionamento in più impostazioni cultura. Questa sezione si applica alle pagine di Windows Form e Web Form.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Classi specifiche delle impostazioni cultura per Windows Form e Web Form globali](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
  Illustra classi che formattano date, ora, numeri, valuta e altre informazioni in base alle impostazioni cultura.  
   

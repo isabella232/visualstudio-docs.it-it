@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a54023892d1432639fd1211273195b941e8f081
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 122a5029c5518d7a4778c4d4732f7ebac9b23683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE).  
@@ -37,10 +38,10 @@ View.ShowWebBrowser URL [/new][/ext]
   
 ## <a name="switches"></a>Opzioni  
  /new  
- Parametro facoltativo. Specifica che la pagina venga visualizzata in una nuova istanza del Web browser.  
+ Facoltativo. Specifica che la pagina venga visualizzata in una nuova istanza del Web browser.  
   
  /ext  
- Parametro facoltativo. Specifica che la pagina venga visualizzata nel Web browser predefinito all'esterno dell'IDE.  
+ Facoltativo. Specifica che la pagina venga visualizzata nel Web browser predefinito all'esterno dell'IDE.  
   
 ## <a name="remarks"></a>Note  
  L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.  
@@ -56,4 +57,4 @@ View.ShowWebBrowser URL [/new][/ext]
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio)
+ [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

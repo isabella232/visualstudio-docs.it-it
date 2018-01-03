@@ -19,17 +19,18 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfc7d33396825263a5fd846c62426fa67509e0da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e11b053b867679f65052af5dea93799e4b356892
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versione CLR non supportata
 |||  
 |-|-|  
 |ID regola|DA0029|  
-|Categoria|Uso degli strumenti di profilatura|  
+|Category|Uso degli strumenti di profilatura|  
 |Metodo di profilatura|Profilatura dalla riga di comando|  
 |Messaggio|È stata rilevata una versione CLR non supportata durante la raccolta. È possibile che i simboli gestiti non vengano risolti correttamente.|  
 |Tipo regola|Informazioni.|  

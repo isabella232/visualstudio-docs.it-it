@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bb2da222b566362a069eaa9ab59d959a0c5b71d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 074ae2e5484833eb5ffaf3d3346d7d232c62e23f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procedura: Filtrare visualizzazioni report degli strumenti per la profilatura per visualizzare Just My Code
 Visual Studio 2010 Premium fornisce un filtro per i rapporti di prestazioni in modo che venga visualizzato solo il codice che è stato implementato. Questa funzionalità, denominata Just My Code, è abilitata per impostazione predefinita. Viene configurata tramite l'opzione **Just My Code** nella finestra di dialogo **Opzioni**.  

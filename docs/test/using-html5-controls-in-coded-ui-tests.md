@@ -11,11 +11,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3e2e14748e27d965762b3245908382b278e6e132
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9430c70bdb6120e4d79dfb93c1308ce1b313515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10.  
@@ -46,7 +47,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
   
  ![Controllo Audio HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
-|Azione|Registrazione|Codice generato|  
+|Operazione|Registrazione|Codice generato|  
 |------------|---------------|--------------------|  
 |**Riprodurre audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Riprodurre audio \<nome> a partire dalla posizione 00:00:00|HtmlAudio.Play(TimeSpan)|  
 |**Ricercare un punto specifico dell'audio**|Ricercare nell'audio \<nome> la posizione 00:01:48|HtmlAudio.Seek(TimeSpan)|  
@@ -89,7 +90,7 @@ string Volume
   
  ![Controllo Video HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
-|Azione|Registrazione|Codice generato|  
+|Operazione|Registrazione|Codice generato|  
 |------------|---------------|--------------------|  
 |**Riprodurre video**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida dei controlli.|Riprodurre il video \<nome> a partire dalla posizione 00:00:00|HtmlVideo.Play(TimeSpan)|  
 |**Ricercare un punto specifico nel video**|Ricercare nel video \<nome> la posizione 00:01:48|HtmlVideo.Seek(TimeSpan)|  
@@ -119,7 +120,7 @@ string VideoWidth
   
  ![Controllo Slider HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
-|Azione|Registrazione|Codice generato|  
+|Operazione|Registrazione|Codice generato|  
 |------------|---------------|--------------------|  
 |**Impostare una posizione nel dispositivo di scorrimento**|Impostare la posizione su \<x> nel dispositivo di scorrimento \<nome>|HtmlSlider.ValueAsNumber=\<x>|  
   

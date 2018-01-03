@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1168fb27330f49a714e64478fc7ab167569dadb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="status"></a>Status
 L'opzione **Status** di VSPerfCmd.exe visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.  
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Status
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Nessuno  
+ nessuno  
   
 ## <a name="remarks"></a>Note  
  L'opzione **Status** consente di visualizzare le informazioni sullo stato seguenti per il profiler.  

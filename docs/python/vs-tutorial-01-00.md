@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 33b93cb7-d826-4206-894a-fcfab32e7e76
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e37421ea74b1bfa2d8dc5dbb53eb5a981f7e62ca
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: python
+ms.openlocfilehash: e0a9719ba9b686586ef13f13fbcaeb0c6de6c9ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="see-also"></a>Vedere anche
 
 - [Creazione di un ambiente per un interprete esistente Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Installazione del supporto Python in Visual Studio 2015 e precedenti](installation.md).
+- [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installation.md).
 - [Percorsi di installazione](installation.md#install-locations).
 
 <iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

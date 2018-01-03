@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 094e3968b527261125753002d9b6a31c7bd5d244
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolveassemblyreference-task"></a>Attività ResolveAssemblyReference
 Determina tutti gli assembly che dipendono dall'assembly specificato. Sono incluse le dipendenze di secondo e `n`ordine.  
@@ -54,7 +55,7 @@ Determina tutti gli assembly che dipendono dall'assembly specificato. Sono inclu
 |`FindSatellites`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, vengono trovati gli assembly satellite. Il valore predefinito è `true.`|  
 |`FindSerializationAssemblies`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, l'attività cerca gli assembly di serializzazione. Il valore predefinito è `true`.|  
 |`FullFrameworkAssemblyTables`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica gli elementi con metadati "FrameworkDirectory" per associare un elenco redist a una determinata directory del framework. Se l'associazione non viene eseguita, verrà registrato un errore. La logica di risoluzione dei riferimenti agli assembly usa la directory del framework di destinazione se non è impostato un oggetto FrameworkDirectory.|  
-|`FullFrameworkFolders`|Parametro facoltativo <xref:System.String?displayProperty=fullName>`[]`.<br /><br /> Specifica il set di cartelle che contengono una directory RedistList. Questa directory rappresenta il framework completo per un profilo client specificato, ad esempio %programfiles%\reference assemblies\microsoft\framework\v4.0.|  
+|`FullFrameworkFolders`|Parametro <xref:System.String?displayProperty=fullName>`[]` facoltativo.<br /><br /> Specifica il set di cartelle che contengono una directory RedistList. Questa directory rappresenta il framework completo per un profilo client specificato, ad esempio %programfiles%\reference assemblies\microsoft\framework\v4.0.|  
 |`FullTargetFrameworkSubsetNames`|Parametro `String[]` facoltativo.<br /><br /> Contiene un elenco di nomi di subset del framework di destinazione. Se un nome di subset nell'elenco corrisponde a uno nella proprietà del nome `TargetFrameworkSubset` , il sistema esclude il subset del framework di destinazione specifico in fase di compilazione.|  
 |`IgnoreDefaultInstalledAssemblyTables`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, l'attività cerca e usa tabelle di assembly installate aggiuntive (o "elenchi redist") che si trovano nella directory \RedistList in `TargetFrameworkDirectories`. Il valore predefinito è `false.`|  
 |`IgnoreDefaultInstalledAssemblySubsetTables`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, l'attività cerca e usa tabelle di subset di assembly installate aggiuntive (o "elenchi di subset") che si trovano nella directory \SubSetList in `TargetFrameworkDirectories`. Il valore predefinito è `false.`|  

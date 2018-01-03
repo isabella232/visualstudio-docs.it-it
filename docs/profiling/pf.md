@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7911a505494c3af0c047208660671ec3f5a8c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 548a4cedf715faf998912500bf3e2390ac07070b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pf"></a>PF
 L'opzione **PF** di VSPerfCmd.exe imposta l'evento di profilatura campionato per gli errori di pagina e modifica facoltativamente il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.  

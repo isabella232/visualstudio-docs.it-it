@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funzionalità disponibile nel visualizzatore di concorrenza. Tramite questa visualizzazione, è possibile identificare se i thread sono in esecuzione o se sono bloccati a causa di operazioni di sincronizzazione, di I/O oppure per altri motivi.  
@@ -148,4 +149,4 @@ Visualizzazione Thread
  Questa scheda mostra i processi e i thread coinvolti in operazioni di I/O su disco per conto del processo corrente, i file interessati (ad esempio, le DLL che sono state caricate), il numero di byte letti e altre informazioni. È possibile usare questo rapporto per valutare il tempo impiegato nell'accesso ai file durante l'esecuzione, specialmente se il processo sembra presentare vincoli di I/O. Per altre informazioni, vedere [Rapporto delle operazioni su disco](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md)
+ [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)

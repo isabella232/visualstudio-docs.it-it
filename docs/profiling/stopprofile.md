@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9b1ee49278ff48e40d7130fe2c4d9933467f22a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36da7be52d9b40c8f2e8c837bb137e8e1d9c296f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stopprofile"></a>StopProfile
 La funzione `StopProfile` imposta il contatore su 0 (OFF) per il livello di profilatura specificato.  
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
  Identificatore del processo o del thread generato dal sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
- La funzione indica esito l'esito positivo o negativo tramite l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
+ La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
 |Enumerator|Descrizione|  
 |----------------|-----------------|  

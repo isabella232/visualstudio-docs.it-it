@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 Il visualizzatore della Guida consente di gestire le installazioni della Guida locale per gli ambienti di rete con o senza accesso a Internet. Il contenuto della Guida locale viene configurato per ogni singolo computer. Per impostazione predefinita, gli utenti devono disporre dei diritti di amministratore per aggiornare l'installazione della Guida locale.  
@@ -144,6 +145,6 @@ Prima di poter creare il set di contenuti di base, è necessario disinstallare t
   
 ## <a name="see-also"></a>Vedere anche
 [Argomenti della riga di comando per Gestione contenuto della Guida](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md)  
+[Ovverride di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
 [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

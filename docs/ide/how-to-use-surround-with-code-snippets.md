@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 775cafd5f8fc5bb2908447d7f34b13e0377d6711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: utilizzare frammenti di codice racchiusi
 Nelle procedure illustrate di seguito viene descritto come usare frammenti di codice racchiusi. I frammenti di codice racchiusi sono disponibili in tre modi: tramite un tasto di scelta rapida, dal menu Modifica e tramite il menu di scelta rapida.  

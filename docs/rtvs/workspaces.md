@@ -8,16 +8,16 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 559f5832be6d4fa87be39941401f2222e075b7a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-science
+ms.openlocfilehash: 4e2cfe9faba79f955146bf929c4c8c1238d14fb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Controllo della posizione di esecuzione del codice R con le aree di lavoro
 
@@ -29,7 +29,7 @@ Per aprire la finestra **Aree di lavoro** usare il comando **R Tools > Finestre 
 
 In questa finestra il segno di spunta verde indica l'area di lavoro attiva alla quale è associato RTVS. Selezionare una freccia blu per impostare l'area di lavoro attiva. L'icona delle impostazioni (a forma di ingranaggio) sulla destra di ogni area di lavoro consente di modificarne il nome, il percorso e gli argomenti della riga di comando. La X rossa rimuove un'area di lavoro aggiunta manualmente.
 
-Contenuto dell'argomento:
+In questo argomento
 
 - [Salvataggio e reimpostazione di un'area di lavoro](#saving-and-resetting-a-workspace)
 - [Aree di lavoro locali](#local-workspaces)

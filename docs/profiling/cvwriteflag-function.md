@@ -22,11 +22,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b93fc7f8ce9b031b4ddb650c09b570ecb29a727
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7d40b0072228c649bc6b7774fda9a4cc14fee410
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvwriteflag-function"></a>Funzione CvWriteFlag
 Scrive un flag nel file di traccia del visualizzatore di concorrenza.  

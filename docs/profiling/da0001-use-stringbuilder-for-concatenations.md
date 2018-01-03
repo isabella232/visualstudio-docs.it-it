@@ -17,17 +17,18 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f38c4b2a3e3595666d44dab4b1e68cace3fafcf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e7393d3a42193c5d25eadc40fcbc02a38cfcdfd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizzare StringBuilder per le concatenazioni
 |||  
 |-|-|  
 |ID regola|DA0001|  
-|Categoria|Uso di .NET Framework|  
+|Category|Uso di .NET Framework|  
 |Metodi di profilatura|Campionamento<br /><br /> Strumentazione|  
 |Messaggio|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
 |Tipo messaggio|Avviso|  

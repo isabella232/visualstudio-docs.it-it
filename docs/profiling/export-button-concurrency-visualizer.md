@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c16186c54d423791f952f7aba558e056037b596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 679a5437976404bfd085897ad17910b8241a973e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="export-button-concurrency-visualizer"></a>Pulsante Esporta (visualizzatore di concorrenze)
 Il pulsante **Esporta** consente di esportare lo stack di chiamate come file CSV per i propri record o per l'uso con un altro strumento, ad esempio Microsoft Excel.  

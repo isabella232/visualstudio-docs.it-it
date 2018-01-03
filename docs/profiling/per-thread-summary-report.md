@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b90a6ed225e358aa47d91cdacec964b5090dedf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 033d24c2df6e1e483028c6c4ea2d161a9e99a983
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="per-thread-summary-report"></a>Report di riepilogo per thread
 Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non nascosto per ciascuna categoria di attività durante l'intervallo di tempo attualmente visibile. "Esecuzione" indica che il thread è in esecuzione; tutte le altre categorie indicano che il thread è in attesa.  
@@ -31,4 +32,4 @@ Questo grafico a barre mostra la percentuale di tempo usata da ogni thread non n
  [Tempo di sospensione](../profiling/sleep-time.md)   
  [Tempo di sincronizzazione](../profiling/synchronization-time.md)   
  [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)   
- [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
+ [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione Thread)

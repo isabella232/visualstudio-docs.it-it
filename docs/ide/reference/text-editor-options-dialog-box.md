@@ -24,16 +24,17 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 423b2537b425066ca490eb8ae3c20d17fbc31253
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80668df65b1250eb579597653cf32ab79d30218c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-editor-options-dialog-box"></a>Finestra di dialogo Opzioni editor di testo
 Le opzioni dell'editor nella finestra di dialogo **Opzioni** consentono di personalizzare in modi diversi l'aspetto e il comportamento dell'editor.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Modificare i tipi di carattere e i colori usati nell'editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Illustra come modificare i tipi di carattere e i colori dell'editor.  
   
@@ -79,7 +80,7 @@ Le opzioni dell'editor nella finestra di dialogo **Opzioni** consentono di perso
  [Opzioni, Editor di testo, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Illustra le opzioni IntelliSense C#.  
   
- [Opzioni, Editor di testo, JavaScript, formattazione](../../ide/reference/options-text-editor-javascript-formatting.md)  
+ [Opzioni, Editor di testo, JavaScript, Formattazione](../../ide/reference/options-text-editor-javascript-formatting.md)  
  Illustra le opzioni di formattazione JavaScript.  
   
  [Opzioni, Editor di testo, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  

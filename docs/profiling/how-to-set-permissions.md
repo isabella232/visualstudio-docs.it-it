@@ -18,18 +18,19 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f67dd4b1c6717dfaf48ada0f093a845899e16c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 Questo argomento descrive il modo in cui un amministratore di un computer concede le autorizzazioni di sicurezza necessarie per la profilatura a un utente o un gruppo che non dispone di autorizzazioni di amministratore per quel computer.  
   
  Secondo un principio di base della sicurezza, le applicazioni devono essere eseguite con le autorizzazioni strettamente necessarie. Questo principio vale anche per gli utenti. Se gli utenti sono in grado di operare in modo efficace con i privilegi del gruppo Users anziché con quelli del gruppo Administrators, non è necessario concedere loro le autorizzazioni specifiche degli amministratori. La prima procedura, "Per creare un account utente con autorizzazioni utente", descrive come creare un account utente per un membro del gruppo Users.  
   
- **Requirements**  
+ **Requisiti**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -127,6 +128,6 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
  Dopo aver effettuato l'accesso, gli utenti specificati saranno in grado di usare gli strumenti di profilatura senza autorizzazioni di amministratore.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
+ [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)

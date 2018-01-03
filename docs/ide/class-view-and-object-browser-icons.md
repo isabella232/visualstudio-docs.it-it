@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -35,12 +36,12 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Icona Classe](../ide/media/vxclass_icon.gif "vxClass_Icon")|Classe|![Simbolo Operatore](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Operatore|  
 |![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interfaccia|![Simbolo Proprietà](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Proprietà|
 |![Simbolo Struttura](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif "vxField_Icon")|Campo o variabile|  
-|![Simbolo Unione](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Unione|![Simbolo Evento](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Evento|  
+|![Simbolo Unione](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Unione|![Simbolo Evento](../ide/media/vxevent_icon.gif "vxEvent_Icon")|event|  
 |![Simbolo Enumerazione](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Icona Costante](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Costante|  
 |![Simbolo Definizione di tipo](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![Simbolo Elemento di enumerazione](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|Elemento di enumerazione|  
 |![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Modulo|![Simbolo Elemento mappa](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Elemento mappa|  
 |![Simbolo Metodo di estensione](../ide/media/extensionmethod.gif "ExtensionMethod")|Metodo di estensione|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Dichiarazione esterna|  
-|![Simbolo Delegato](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|Delegato|![Icona di errore per Visualizzazione classi e Visualizzatore oggetti](../ide/media/erroricon.gif "ErrorIcon")|Errore|  
+|![Simbolo Delegato](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|delegato|![Icona di errore per Visualizzazione classi e Visualizzatore oggetti](../ide/media/erroricon.gif "ErrorIcon")|Error|  
 |![Simbolo Eccezione](../ide/media/vxexception_icon.gif "vxException_Icon")|Eccezione|![Simbolo Modello](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Modello|  
 |![Simbolo Mappa](../ide/media/vxmap_icon.gif "vxMap_Icon")|Mappa|![Simbolo di errore con punto esclamativo](../ide/media/vxerror_icon.gif "vxError_Icon")|Sconosciuto|  
 |![Simbolo Inoltro dei tipi](../ide/media/ob_type_forward.gif "ob_type_forward")|Inoltro del tipo|||  

@@ -12,11 +12,12 @@ helpviewer_keywords: Find/Command box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fa54e65ed581d547d7e4a0c6c5d1c1e0908c0ca
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="findcommand-box"></a>Trova/Comando (casella)
 
@@ -30,7 +31,7 @@ La casella **Trova/Comando** memorizza gli ultimi 20 elementi immessi e li visua
 
 ## <a name="searching-for-text"></a>Ricerca di testo
 
-Per impostazione predefinita, quando si specifica il testo nella casella **Trova/Comando** e si preme il tasto **Invio**, Visual Studio esegue la ricerca nella finestra del documento o dello strumento corrente usando le opzioni specificate nella finestra di dialogo **Cerca nei file**. Per altre informazioni, vedere [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
+Per impostazione predefinita, quando si specifica il testo nella casella **Trova/Comando** e si preme il tasto **Invio**, Visual Studio esegue la ricerca nella finestra del documento o dello strumento corrente usando le opzioni specificate nella finestra di dialogo **Cerca nei file**. Per altre informazioni, vedere [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Immissione di comandi
 

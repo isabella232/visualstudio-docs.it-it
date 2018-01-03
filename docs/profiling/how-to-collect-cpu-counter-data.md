@@ -16,16 +16,17 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 856ffdc2bc2e33dec6e7ff531b9ce5582fc9b3db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13bba809b77286cd4a6eea4efa41b69c317d23d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 Un contatore di eventi CPU viene usato per raccogliere i dati relativi alle prestazioni dell'hardware. Questo argomento illustra come raccogliere i dati del contatore degli eventi quando si usa il metodo di profilatura della strumentazione.  
   
- **Requirements**  
+ **Requisiti**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -65,7 +66,7 @@ Un contatore di eventi CPU viene usato per raccogliere i dati relativi alle pres
     >  L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona la casella di controllo **Raccogli contatori CPU**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
+ [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)   
  [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)   
  [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)

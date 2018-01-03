@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa005388b0b8ec79e2647cc269ff20868ca647e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7744feca20a14a85c7a035a9b74ed415a43553b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -41,17 +42,17 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È necessario specificare un percorso completo se il file specificato non si trova in una delle directory incluse nella variabile di ambiente PATH.  
   
  `args`  
- Parametro facoltativo. Argomenti da passare al programma richiamato.  
+ Facoltativo. Argomenti da passare al programma richiamato.  
   
 ## <a name="switches"></a>Opzioni  
  /commandwindow [oppure] /command [oppure] /c [oppure] /cmd  
- Parametro facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.  
+ Facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.  
   
  /dir:`folder` [oppure] /d: `folder`  
- Parametro facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.  
+ Facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.  
   
  /outputwindow [oppure] /output [oppure] /out [oppure] /o  
- Parametro facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.  
+ Facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.  
   
 ## <a name="remarks"></a>Note  
  Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.  
@@ -86,4 +87,4 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Finestra di output](../../ide/reference/output-window.md)   
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio)
+ [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

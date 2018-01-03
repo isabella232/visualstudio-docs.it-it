@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e93d1f3e49384097cdadf6623dae2415fe63cd18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a5994739df03752521b60ac4f415323c6bc4a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-starter-kits"></a>Procedura: creare starter kit
 Gli starter kit contengono il codice di un'applicazione completa e la documentazione su come modificare o espandere l'applicazione. La creazione di uno starter kit è simile alla creazione di un normale modello di progetto con l'unica differenza che lo starter kit contiene i file della documentazione configurati per essere aperti quando viene creato un progetto basato sullo starter kit.  

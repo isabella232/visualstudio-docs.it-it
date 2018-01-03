@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da35bb6f685455e280609252561c8a676f37230c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b31f426720cf410d45bf28be3b0278fe6af2bc38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-performance-tools-report-views"></a>Personalizzazione delle visualizzazioni dei report sugli strumenti delle prestazioni
 In questa sezione viene descritto come personalizzare i report generati con gli strumenti di profilatura [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -33,7 +34,7 @@ In questa sezione viene descritto come personalizzare i report generati con gli 
 |**Filtrare la data in una visualizzazione report**: è possibile limitare i dati visualizzati in un report a un intervallo di tempo di esecuzione della profilatura. È possibile specificare un intervallo di tempo nel grafico della cronologia della visualizzazione Riepilogo oppure è possibile specificare l'intervallo di tempo in una query definita nel filtro di visualizzazione del report. È anche possibile filtrare i report per visualizzare solo le funzioni definite nei file di codice.|-   [Filtrare le visualizzazioni report](../profiling/filtering-report-views.md)<br />-   [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Procedura: Filtrare le visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md)|  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)  
+ [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)  
  Descrive le visualizzazioni che è possibile usare per analizzare i dati di profilatura.  
   
 ## <a name="see-also"></a>Vedere anche  

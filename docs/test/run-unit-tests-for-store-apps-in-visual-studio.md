@@ -11,11 +11,12 @@ ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: ad5a81a8b80ffb5a25a04d3aa83811e90c2785e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Eseguire unit test per le app UWP in Visual Studio
 Questo argomento descrive come eseguire unit test tramite Esplora test in Microsoft Visual Studio  
@@ -28,8 +29,8 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 >   
 >  Per altre informazioni, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md) in MSDN Library.  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
- [Framework di unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)  
+##  <a name="BKMK_In_this_topic"></a> In questo argomento  
+ [Framework unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Esecuzione di test in Esplora test](#BKMK_Running_tests_in_Test_Explorer)  
   

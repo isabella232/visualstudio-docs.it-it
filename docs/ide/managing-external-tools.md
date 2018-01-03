@@ -12,11 +12,12 @@ helpviewer_keywords: external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65cd18ea74ced278d53841cb8204f7cc4d163dc3
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -50,7 +51,7 @@ Il menu **Strumenti** include alcuni strumenti predefiniti, ad esempio:
 
 Di seguito è riportato un elenco completo di argomenti che possono essere usati per la definizione di uno strumento esterno:
 
-|Nome|Argomento|Descrizione|  
+|nome|Argomento|Descrizione|  
 |----------|--------------|-----------------|  
 |Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|  
 |Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|  

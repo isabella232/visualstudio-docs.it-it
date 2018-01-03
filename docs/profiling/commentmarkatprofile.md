@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f8c51fc0f1009316f406a45c62e95f24397fef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f196a9e2c5951037c215dfd69fd29864b72cd41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Il metodo `CommentMarkAtProfile` inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file VSP. Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.  
@@ -77,7 +78,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |**Unicode**|Implementato come CommentMarkAtProfileW (Unicode) e CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Esempio  
- Il codice seguente illustra l'uso della chiamata della funzione generica CommentMarkAtProfile. Nell'esempio si presuppone l'uso di macro di stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la versione ANSI della funzione.  
+ Il codice seguente illustra l'uso della chiamata della funzione generica CommentMarkAtProfile. Nell'esempio si presuppone l'uso di macro stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la funzione abilitata per ANSI.  
   
 ```  
 void ExerciseCommentMarkAtProfile(void)  

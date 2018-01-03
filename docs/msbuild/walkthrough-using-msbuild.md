@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9500cdb26b51d3a91b9565c7ef0353907e9afe7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-msbuild"></a>Procedura dettagliata: utilizzo di MSBuild
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:  
@@ -174,7 +175,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 </PropertyGroup>  
 ```  
   
- Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Di seguito è riportato un esempio:  
+ Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio,  
   
 ```xml  
 <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
@@ -229,7 +230,7 @@ $(PropertyName)
 >  Se non si visualizzano queste righe, è probabile che si sia dimenticato di salvare il file di progetto nell'editor di codice. Salvare il file e riprovare.  
   
 ### <a name="conditional-properties"></a>Proprietà condizionali  
- Diverse proprietà, ad esempio Configuration, sono definite in modo condizionale, vale a dire che l'attributo Condition è presente nell'elemento della proprietà. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Di seguito è riportato un esempio:  
+ Diverse proprietà, ad esempio Configuration, sono definite in modo condizionale, vale a dire che l'attributo Condition è presente nell'elemento della proprietà. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio,  
   
 ```xml  
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -296,7 +297,7 @@ $(PropertyName)
 ## <a name="build-items"></a>Elementi di compilazione  
  Un elemento è un'informazione, in genere un nome file, usata come input per il sistema di compilazione. Ad esempio, una raccolta di elementi che rappresentano file di origine potrebbe venire passata a un'attività denominata Compile per compilarli in un assembly.  
   
- Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Di seguito è riportato un esempio:  
+ Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio,  
   
 ```xml  
 <ItemGroup>  
@@ -389,7 +390,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude e caratteri jolly  
- È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Di seguito è riportato un esempio:  
+ È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio,  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -403,7 +404,7 @@ $(PropertyName)
   
  aggiunge tutti i file con estensione ".jpeg" nella cartella images e in tutte le sottocartelle al tipo di elemento Photos. Per altri esempi, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).  
   
- Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Di seguito è riportato un esempio:  
+ Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio,  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -424,7 +425,7 @@ $(PropertyName)
   
  aggiunge tutti i file con estensione ".cs" al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa "Designer". Per altri esempi, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
   
- L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Di seguito è riportato un esempio:  
+ L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,  
   
 ```xml  
 <Compile Include="*.cs" />  

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3378a554a9e576bde011a70916c48597218bb512
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 09141b10ab9ee39568176fa7252a503bdaa747dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatori logici e avanzati nelle espressioni di ricerca
 È possibile usare gli operatori logici e gli operatori di ricerca avanzati per perfezionare la ricerca del contenuto della Guida in Help Viewer.
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="logical-operators"></a>Operatori logici
 Gli operatori logici specificano in che modo più termini di ricerca debbano essere combinati in una query di ricerca. La tabella seguente illustra gli operatori logici AND, OR, NOT e NEAR.
   
-|Per cercare|Usare|Esempio|Risultato|  
+|Per cercare|Usa|Esempio|Risultato|  
 |-------------------|---------|-------------|------------|  
 |Entrambi i termini nello stesso articolo|AND|DIB AND tavolozza|Argomenti che contengono sia "DIB" che "tavolozza".|  
 |Uno dei termini in un articolo|OR|raster OR vettore|Argomenti che contengono "raster" o "vettore".|  
@@ -40,7 +41,7 @@ Gli operatori logici specificano in che modo più termini di ricerca debbano ess
 ## <a name="advanced-operators"></a>Operatori avanzati
 Gli operatori di ricerca avanzati consentono di affinare la ricerca di contenuto specificando l'area di un articolo in cui cercare il termine. La tabella seguente descrive i quattro operatori di ricerca avanzata disponibili.
 
-|Per cercare|Usare|Esempio|Risultato|  
+|Per cercare|Usa|Esempio|Risultato|  
 |-------------------|---------|-------------|------------|  
 |Un termine nel titolo dell'articolo|title:|title:binaryreader|Argomenti che contengono "binaryreader" nei titoli.|  
 |Un termine in un esempio di codice|code:|code:readdouble|Argomenti che contengono "readdouble" in un esempio di codice.|  

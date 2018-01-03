@@ -21,17 +21,18 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 036f519529f0226c56b711096abc91e4ebf97d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatebootstrapper-task"></a>Attività GenerateBootstrapper
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `GenerateBootstrapper`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateBootstrapper` .  
   
 -   `ApplicationFile`  
   
@@ -65,7 +66,7 @@ Consente di rilevare, scaricare e installare automaticamente un'applicazione e i
   
 -   `BootstrapperItems`  
   
-     Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.  
+     Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.  
   
      Specifica i prodotti da compilare nel programma di avvio automatico. Gli elementi passati a questo parametro devono avere la sintassi seguente:  
   

@@ -8,16 +8,16 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ebaacfba-12a1-45da-9817-c0937ca38acc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 39f21b73389285ab3114950bee8d84ad2837e206
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: data-science
+ms.openlocfilehash: 747744ca3a0d01b09cbba53a499902f13f3e8b51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>R Tools per Visual Studio
 

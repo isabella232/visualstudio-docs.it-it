@@ -12,11 +12,12 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: f384722161ff46a193c1492698ab9ef7543eaefc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Strumenti di test, scenari e funzionalità per sviluppatori
 
@@ -88,14 +89,14 @@ Esplora test consente agli sviluppatori di creare, gestire e ottenere il massimo
 
 * [Eseguire unit test del codice](unit-test-your-code.md)
 * [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md)
-* [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+* [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 * [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md)
 
 Visual Studio è anche estendibile e consente l'uso di adattatori di unit test di terze parti come NUnit e xUnit.net. Inoltre, la funzionalità di clonazione del codice implica la produzione di software di qualità elevata poiché consente di identificare i blocchi di codice semanticamente simile che possono essere candidati per le normali operazioni di refactoring o correzione di bug.
 
 ![Integrazione con test di terze parti](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 
 * [Introduzione agli unit test](getting-started-with-unit-testing.md)
 * [Post di blog su come velocizzare l'esecuzione di unit test in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

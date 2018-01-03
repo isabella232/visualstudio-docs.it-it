@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite strumentazione
 In questa procedura dettagliata viene descritto come eseguire la profilatura di un'applicazione autonoma [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] per raccogliere informazioni dettagliate sugli intervalli e dati sul numero di chiamate tramite il metodo di strumentazione degli strumenti di profilatura. In questa procedura dettagliata, si completeranno le attività seguenti:  
@@ -128,4 +129,4 @@ In questa procedura dettagliata viene descritto come eseguire la profilatura di 
  [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)   
- [Visualizzazioni dei rapporti di prestazioni](../profiling/performance-report-views.md)
+ [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)

@@ -15,23 +15,24 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 595297dbafb35ed8b3bb376ce5ddfee484ac2442
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: caf3c6168e81b7384fbf056f5365614950b24ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Visualizzazione Riepilogo](../profiling/summary-view-instrumentation-data.md)  
  Elenca le funzioni che hanno richiesto la maggiore quantità di tempo e le funzioni che hanno eseguito la maggior parte del lavoro individuale.  
   
  [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.  
   
- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)  
+ [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)  
  Organizza i dati di profilatura per modulo e li elenca per le funzioni nel modulo.  
   
  [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)  
@@ -40,7 +41,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  [Visualizzazione Funzioni](../profiling/functions-view-instrumentation-data.md)  
  Elenca i dati di profilatura per funzione.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)  
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.  
   

@@ -11,11 +11,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 6f7b32031d99b6286595ca5ef05215fc88b20ea2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli UWP per il test
 Per eseguire test codificati dell'interfaccia utente per un'applicazione UWP basata su XAML, è necessario disporre di una proprietà di automazione univoca che identifichi ogni controllo.  

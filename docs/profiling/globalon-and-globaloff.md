@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26a85326dec53adce4ac9c5b1bdedaca1e38beec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9998f0f4d46a37b1eccd3cdf5dc48dd994f651a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
 Le opzioni **GlobalOff** e **GlobalOn** di VSPerfCmd.exe consentono di sospendere e riprendere la profilatura per tutti i processi e i thread in una sessione di profilatura da riga di comando.  
@@ -46,13 +47,13 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Nessuno  
+ nessuno  
   
 ## <a name="valid-options"></a>Opzioni valide  
  **GlobalOn** e **GlobalOff** possono essere specificate su righe di comando che contengono anche le opzioni seguenti.  
   
  **Start:** `Method`  
- Inizializza la sessione del profiler della riga di comando e imposta il metodo di profilatura specificato.  
+ Inizializza la sessione del profiler da riga di comando e imposta il metodo di profilatura specificato.  
   
  **Launch:** `AppName`  
  Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.  

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4beda1530fb36b4cad751c143a3a3962029f2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-categories-are-present"></a>Più categorie presenti
 La sezione selezionata contiene più di un tipo di attività per un intervallo di tempo specificato. Si noti che vengono visualizzati due colori, uno impilato verticalmente sull'altro. Questi colori rappresentano solo le prime due attività più frequenti nell'intervallo di tempo specificato. Le frequenze di queste due attività sono rappresentate in relazione l'una all'altra come terzi o metà della barra verticale. Per visualizzare ulteriori dettagli, provare fare zoom avanti in questa sezione della visualizzazione dei thread.  

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9273cd908a8948b47b818e9c4333cb8bd70fe094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53c45ccf528375bc31b4d61fd6af0193aa295e6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-command"></a>Comando Vai a
 Sposta il cursore sulla riga specificata.  
@@ -33,7 +34,7 @@ Edit.GoTo [linenumber]
   
 ## <a name="arguments"></a>Argomenti  
  `linenumber`  
- Parametro facoltativo. Valore integer che rappresenta il numero della riga a cui passare.  
+ Facoltativo. Valore integer che rappresenta il numero della riga a cui passare.  
   
 ## <a name="remarks"></a>Note  
  La numerazione delle righe inizia da uno. Se il valore di `linenumber` è minore di uno, viene visualizzata la prima riga. Se il valore di `linenumber` è maggiore del numero dell'ultima riga, viene visualizzata l'ultima riga.  
@@ -52,4 +53,4 @@ Edit.GoTo [linenumber]
  [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
  [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
  [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio)
+ [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

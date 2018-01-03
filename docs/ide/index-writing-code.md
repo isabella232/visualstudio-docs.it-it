@@ -6,11 +6,12 @@ ms.topic: landing-page
 title: Documentazione per la scrittura e la gestione del codice con Visual Studio | Microsoft Docs
 description: Informazioni su come usare l'editor del codice e altri strumenti in Visual Studio per scrivere, esplorare, gestire e migliorare il codice.
 ms.technology: vs-ide-general
-ms.openlocfilehash: bc08b4822f411587db76f648e2b3ba508d513fb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-and-manage-code-using-visual-studio-documentation"></a>Documentazione per la scrittura e la gestione del codice con Visual Studio
 
@@ -165,7 +166,7 @@ Informazioni su come usare l'editor del codice e altri strumenti in Visual Studi
 
 ---
 
-<h2>Riferimento</h2>
+<h2>Riferimenti</h2>
 <ul class="panelContent cardsW">
     <li>
         <div class="cardSize">

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3170c28527aa4ecfe335a946624ad95489b75280
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d2dfd25176ef6931fbebab9704b41abe716c599
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizzazione di modelli di progetto e modelli di elementi
 Dopo aver creato i modelli di progetti ed elementi è possibile personalizzarli ulteriormente in modo da soddisfare le proprie esigenze.  

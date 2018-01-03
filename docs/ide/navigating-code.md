@@ -21,11 +21,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c4c7613cca7f9dec7c2db7ceffef1cc542cfa61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b81517d8d8e0cc6dd1386525f7a2129ed18851c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-code"></a>Spostamento nel codice  
 Visual Studio offre diversi modi per spostarsi all'interno del codice nell'editor. Questo argomento contiene un riepilogo dei vari metodi di passaggio da una parte all'altra del codice e indica i collegamenti ad argomenti che scendono più in dettaglio.  
@@ -135,4 +136,4 @@ Per una panoramica del codice, è possibile usare la barra di scorrimento avanza
 È possibile trovare informazioni relative a codice specifico, ad esempio modifiche, autori delle modifiche, riferimenti, bug, elementi di lavoro, revisioni del codice e stato dello unit test quando si usa CodeLens nell'editor del codice. CodeLens funziona come una visualizzazione preliminare quando si usa Visual Studio Enterprise con Team Foundation Server. Vedere [Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md).  
 
 ## <a name="see-also"></a>Vedere anche  
-[Scrittura di codice nell'editor di testo e di codice](../ide/writing-code-in-the-code-and-text-editor.md) 
+[Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md) 

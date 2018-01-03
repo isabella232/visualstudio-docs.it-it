@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4ab874a59ad67e42e29270ac5f3da45816177a4
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -81,4 +82,4 @@ Passare a **Esplora Server** destro del mouse sul nodo di Azure e scegliere Nuov
 
 ## <a name="see-also"></a>Vedere anche
 
-[Risorse Internet usate da Visual Studio](../ide/connected-environment.md)
+[Accedere a Visual Studio](signing-in-to-visual-studio.md)

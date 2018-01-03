@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Debug di R in Visual Studio
 
@@ -57,12 +58,12 @@ Quando il debugger si arresta, viene arrestato anche il prompt del browser di am
 
 Il browser ambiente supporta un numero di comandi speciali:
 
-| Comando | Descrizione | 
+| Comando | Descrizione |
 | --- | --- |
 | n | next: esegue l'istruzione successiva nel file di codice (uguale a step over). |
-| s | step into: esegue l'istruzione successiva nel file di codice, passando all'ambito della funzione se l'istruzione successiva è una chiamata di funzione. | 
+| s | step into: esegue l'istruzione successiva nel file di codice, passando all'ambito della funzione se l'istruzione successiva è una chiamata di funzione. |
 | f | finish: esegue il resto dell'ambito della funzione corrente e restituisce al chiamante (uguale a step out). |
-| c, cont | continue: esegue il programma fino al punto di interruzione successivo. | 
+| c, cont | continue: esegue il programma fino al punto di interruzione successivo. |
 | Q | quits: termina la sessione di debug. |
 | dove | show stack: consente di visualizzare lo stack di chiamate nella finestra interattiva. |
 | guida | show help: consente di visualizzare le chiamate disponibili nella finestra interattiva. |

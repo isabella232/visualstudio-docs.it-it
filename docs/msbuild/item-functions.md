@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>Funzioni degli elementi
 A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in grado di chiamare le funzioni di elementi per ottenere informazioni sugli elementi del progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi.  
@@ -62,7 +63,7 @@ A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in g
 |`Reverse`|`@(MyItem->Reverse())`|Restituisce gli elementi in ordine inverso.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Restituisce `boolean` per indicare se un elemento ha il valore e il nome dei metadati specificati. Nel confronto non viene fatta distinzione tra maiuscole e minuscole.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Restituisce gli elementi con i metadati cancellati. Viene mantenuto solo `itemspec`.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Restituisce gli elementi con il nome dei metadati specificato. Nel confronto non viene fatta distinzione tra maiuscole e minuscole.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Restituisce gli elementi con il nome dei metadati specificato. Nel confronto non viene fatta distinzione tra maiuscole e minuscole.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Restituisce i valori dei metadati con il nome dei metadati specificato.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Restituisce gli elementi con il nome e il valore dei metadati specificati. Nel confronto non viene fatta distinzione tra maiuscole e minuscole.|  
   
