@@ -1,63 +1,66 @@
 ---
-Title: Assegnare licenze alle sottoscrizioni di Visual Studio
+Title: Assign licenses to Visual Studio Subscriptions
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
+Description: Learn how administrators can assign licenses to subscribers
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: e2a32e911c85603b2d08adb0edad76bcfbc6d6ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d9d26c9519ec5cca1f7127f93d9d1ab60378ad3f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Assegnazione di licenze sul portale di amministrazione delle sottoscrizioni di Visual Studio
 ## <a name="assigning-a-single-user"></a>Assegnazione di un singolo utente
-Se si dispone di licenze disponibili per le sottoscrizioni di Visual Studio, è possibile assegnare queste licenze a nuovi utenti per consentire loro di accedere ai vantaggi di sottoscrizione. 
+Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile assegnare queste licenze a nuovi utenti per consentire loro di accedere ai vantaggi delle sottoscrizioni. 
 1.  Per assegnare un singolo sottoscrittore di Visual Studio, nella parte superiore della tabella, fare clic su **Aggiungi**.
 
-![Aggiungi sottoscrittore](_img\assign-license-add\assign-license-add.png)
+    ![Aggiungi sottoscrittore](_img\assign-license-add\assign-license-add.png)
 
 2.  Immettere le informazioni nei campi del modulo per il nuovo sottoscrittore. Se l'organizzazione usa Azure Active Directory, questo campo funge da funzione di ricerca per trovare i contatti nella directory corrente per poter selezionare l'utente corretto nei risultati della ricerca. Una volta selezionata la persona, vengono compilati automaticamente i campi relativi a nome, indirizzo di posta elettronica di accesso e per le notifiche, come visualizzato di seguito. 
 
 Se l'organizzazione ha un indirizzo di posta elettronica diverso per ricevere gli email rispetto a quello da utilizzare per l'accesso, l'utente ha la possibilità di indicarlo qui. Selezionare il collegamento ipertestuale che indica "L'indirizzo di posta elettronica per le comunicazioni è diverso da quello per l'accesso?". 
 
-Se si desidera che il sottoscrittore sia in grado di accedere al [Portale Sottoscrizioni di Visual Studio](https:/my.visualstudio.com) e abbia accesso ai download del software e a tutti gli altri servizi e risorse di sottoscrizione (compreso il training, il supporto tecnico e altri elementi di Microsoft Azure, Visual Studio Team Services, Xamarin e Pluralsight), assicurarsi di lasciare selezionata la casella dei download. Se si sceglie di deselezionare questa casella, l'utente non avrà accesso ai download del software, ma non verrà modificato l'accesso a tutti gli altri vantaggi inclusi nella sottoscrizione. Al termine, fare clic su **Aggiungi**.
+Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https:/my.visualstudio.com), assicurarsi di lasciare selezionata la casella di controllo Download. Se si sceglie di deselezionare questa casella, l'utente non avrà accesso ai download del software, ma potrà comunque accedere a tutti gli altri vantaggi inclusi nella sottoscrizione. Al termine, fare clic su **Aggiungi**.
 
-![Immettere le informazioni relative al sottoscrittore](_img\assign-license-add\add-subscriber-1.png)
-![Immettere le informazioni relative al sottoscrittore](_img\assign-license-add\add-subscriber-2.png)
+  ![Immettere le informazioni sul sottoscrittore](_img\assign-license-add\add-subscriber-1.png)
 
-3.  Dopo aver aggiunto il sottoscrittore, viene inviato automaticamente al nuovo sottoscrittore un messaggio di posta elettronica di assegnazione, con altre istruzioni. È possibile inviare nuovamente il messaggio di posta elettronica di assegnazione in qualunque momento facendo clic sul pulsante Invia di nuovo nel menu superiore.
+  ![Immettere le informazioni sul sottoscrittore](_img\assign-license-add\add-subscriber-2.png)
 
-![Sottoscrittore aggiunto](_img\assign-license-add\add-subscriber-complete.png)
+3.  Dopo aver aggiunto il sottoscrittore, viene inviato automaticamente al nuovo sottoscrittore un messaggio di posta elettronica di assegnazione, con altre istruzioni. È possibile inviare nuovamente il messaggio di posta elettronica di assegnazione in qualunque momento selezionando il sottoscrittore e facendo clic sul pulsante **Invia di nuovo** nel menu superiore.
+
+    ![Sottoscrittore aggiunto](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Assegnazioni in blocco
 1.  Per aggiungere contemporaneamente più sottoscrittori, passare alla scheda Sottoscrittori. Nella barra multifunzione in alto, fare clic su **Aggiungi in blocco**. 
 
-![Aggiungi in blocco](_img\assign-license-add\bulk-assign-add.png)
+    ![Aggiungi in blocco](_img\assign-license-add\bulk-assign-add.png)
 
 2. L'assegnazione in blocco usa un modello di Microsoft Excel per caricare i sottoscrittori. Nella finestra di dialogo Upload Multiple Subscriber (Carica più sottoscrittori), fare clic su **Download** per scaricare il modello. Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
-!Upload Multiple Subscribers](_img\assign-license-add\bulk-assign-upload.png)
+
+![Carica più sottoscrittori](_img\assign-license-add\bulk-assign-upload.png)
+
 3.  Nel foglio di calcolo Excel, compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. Il riferimento è un campo facoltativo. Se una parte del modello è stata compilata in modo errato, si dovrebbe visualizzare un messaggio di errore che descrive il problema. Salvare il file sul disco rigido al termine dell'operazione.
 **Per garantire un caricamento senza errori, osservare le procedure consigliate seguenti:**
-- Verificare che nessuno dei campi modulo contenga virgole.
-- Rimuovere gli spazi prima e dopo i campi del modulo, ad esempio i nomi degli utenti.
-- Assicurarsi che i nomi degli utenti non contengano spazi aggiuntivi tra i nomi e cognomi composti da due parti (ad esempio il nome composto "Maria Giovanna" non deve essere digitato come "Maria  Giovanna" perché il sistema non annullerà lo spazio aggiuntivo)
+    - Verificare che nessuno dei campi modulo contenga virgole.
+    - Rimuovere gli spazi prima e dopo i campi del modulo, ad esempio i nomi degli utenti.
+    - Assicurarsi che i nomi degli utenti non contengano spazi aggiuntivi tra i nomi e cognomi composti da due parti (ad esempio il nome composto "Maria Giovanna" non deve essere digitato come "Maria  Giovanna" perché il sistema non annullerà lo spazio aggiuntivo)
 
-![Modello di aggiunta in blocco](_img\assign-license-add\bulk-template.png)
+    ![Modello di aggiunta in blocco](_img\assign-license-add\bulk-template.png)
 
 4.  Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Upload Multiple Subscribers (Carica più sottoscrittori), fare clic su **Sfoglia**. Andare al file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo. 
 
-![Caricamento di utenti in blocco](_img\assign-license-add\bulk-assign-upload-2.png)
+    ![Caricamento di utenti in blocco](_img\assign-license-add\bulk-assign-upload-2.png)
 
 Se il modello contiene errori, il caricamento avrà esito negativo e verranno visualizzati gli errori in modo da poter correggere il modello e tentare nuovamente il caricamento in blocco.
 
-![Caricamento non riuscito](_img\assign-license-add\bulk-assign-upload-fail.png)
+   ![Caricamento non riuscito](_img\assign-license-add\bulk-assign-upload-fail.png)
 
 Quando il caricamento ha esito positivo, viene visualizzato l'elenco di sottoscrittori e un messaggio di conferma.
 
-![Caricamento completato](_img\assign-license-add\bulk-assign-upload-complete.png)
+   ![Caricamento completato](_img\assign-license-add\bulk-assign-upload-complete.png)
