@@ -3,11 +3,11 @@ layout: LandingPage
 title: Profilatura delle app con Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per la profilatura delle prestazioni di applicazioni, servizi e strumenti nel linguaggio preferito.
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 763740cd5f0f7e6da935dfd92418067f12a204c2
+ms.sourcegitcommit: 8dfdbe6dc01331c811707be2057b65c0b1f67e40
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="profiling-in-visual-studio"></a>Profilatura in Visual Studio
 
@@ -151,7 +151,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analizzare il consumo di energia (app dello Store)</h3>
+                        <h3>Analizzare il consumo di energia (app UWP)</h3>
                     </div>
                 </div>
             </div>
