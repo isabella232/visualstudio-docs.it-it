@@ -5,7 +5,7 @@
       "docset_name": "docs",
       "build_source_folder": "docs",
       "build_output_subfolder": "vsdocsdocs",
-      "locale": "en-us",
+      "locale": "it-it",
       "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -21,7 +21,7 @@
       "docset_name": "mac",
       "build_source_folder": "mac",
       "build_output_subfolder": "mac",
-      "locale": "en-us",
+      "locale": "it-it",
       "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -36,7 +36,7 @@
       "docset_name": "scripting-docs",
       "build_source_folder": "scripting-docs",
       "build_output_subfolder": "scripting-docs",
-      "locale": "en-us",
+      "locale": "it-it",
       "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
