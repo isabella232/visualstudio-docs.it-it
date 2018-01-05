@@ -339,7 +339,7 @@
 #### [Visualizzazione processi](processes-view.md)
 ##### [Procedura: Cercare un processo nella visualizzazione processi](how-to-search-for-a-process-in-processes-view.md)
 ##### [Procedura: Visualizzare le proprietà del processo](how-to-display-process-properties.md)
-#### [Threads View](threads-view.md) (Visualizzazione Thread)
+#### [Visualizzazione Thread](threads-view.md)
 ##### [Procedura: Cercare un thread nella visualizzazione thread](how-to-search-for-a-thread-in-threads-view.md)
 ##### [Procedura: Visualizzare le proprietà thread](how-to-display-thread-properties.md)
 ### [riferimenti per Spy++](spy-increment-reference.md)
