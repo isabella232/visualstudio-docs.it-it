@@ -3,11 +3,11 @@ layout: LandingPage
 title: Debug delle app in Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per eseguire il debug di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 87f55a02e4e37d4daa8da0282182f7e3a45a0efa
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Debug in Visual Studio
 
@@ -69,7 +69,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -179,7 +179,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
 </ul>
 
 <hr>
-<h2>Riferimento</h2>
+<h2>Riferimenti</h2>
 
 <ul class="panelContent cardsW">
     <li>
