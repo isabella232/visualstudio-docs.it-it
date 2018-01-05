@@ -18,19 +18,20 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 681785bad04a9f16ca68a1f619700e143c01cb58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1b11db50a4e6104c09a65ebe9e7616d223ef3ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Non rilevare tipi di eccezione generali
 |||  
 |-|-|  
 |TypeName|DoNotCatchGeneralExceptionTypes|  
 |CheckId|CA1031|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Design|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un'eccezione generale come <xref:System.Exception?displayProperty=fullName> o <xref:System.SystemException?displayProperty=fullName> viene rilevata in un `catch` istruzione o una clausola catch generale, ad esempio `catch()` viene utilizzato.  

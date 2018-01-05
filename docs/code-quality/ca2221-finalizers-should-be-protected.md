@@ -18,19 +18,20 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ff2d5cd64a77f09437a07b446f486e1c2dd5024
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db43ff5961b50f449fd5ae2535e94abb2e57ece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: I finalizzatori devono essere protetti
 |||  
 |-|-|  
 |TypeName|FinalizersShouldBeProtected|  
 |CheckId|CA2221|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un tipo pubblico implementa un finalizzatore che non specifica della famiglia di accesso (protetto).  
@@ -81,4 +82,4 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

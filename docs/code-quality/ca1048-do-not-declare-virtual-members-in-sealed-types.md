@@ -18,19 +18,20 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1f4456a65eb78ce64ad4c5bbfb4695ba0da3e64
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb13b2b74ca86101949275e418968e577ca2b7c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Non dichiarare membri virtuali nei tipi sealed
 |||  
 |-|-|  
 |TypeName|DoNotDeclareVirtualMembersInSealedTypes|  
 |CheckId|CA1048|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Design|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un tipo pubblico è sealed e dichiara un metodo che è sia `virtual` (`Overridable` in Visual Basic) e non finale. Questa regola segnala violazioni per i tipi delegati, che devono seguire questo modello.  

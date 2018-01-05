@@ -18,19 +18,20 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dd92619a652255f67c1e1558c40ea05840cd0eb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95e4b0841cfed5ae5ba2428a9a38da2ab43b8527
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: I punti di ingresso P/Invoke devono esistere
 |||  
 |-|-|  
 |TypeName|PInvokeEntryPointsShouldExist|  
 |CheckId|CA1400|  
-|Categoria|Microsoft.Interoperability|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Interoperability|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un metodo pubblico o protetto è contrassegnato con il <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Non è possibile individuare la libreria non gestita né associare il metodo a una funzione nella libreria. Se non è possibile trovare il nome del metodo esattamente come specificato, la ricerca di versioni ANSI o caratteri "wide" del metodo aggiungendo il nome del metodo con 'A' o 'W'. Se viene trovata alcuna corrispondenza, la regola tenta di individuare una funzione usando il formato del nome di stdcall (_MyMethod@12, dove 12 rappresenta la lunghezza degli argomenti). Se viene trovata alcuna corrispondenza e il nome del metodo inizia con '#', viene cercata la funzione come un riferimento ordinale anziché un riferimento al nome.  

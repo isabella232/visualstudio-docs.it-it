@@ -18,19 +18,20 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63cd84136861b80617285a5f7f03ff4767efddca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c12d90fe9ae453f3b02c9e6c3f961e54084081aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Chiamare GetLastError immediatamente dopo P/Invoke
 |||  
 |-|-|  
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|  
 |CheckId|CA1404|  
-|Categoria|Microsoft.Interoperability|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Interoperability|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Viene eseguita una chiamata per il <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> metodo o Win32 equivalente `GetLastError` funzione e la chiamata immediatamente precedente non è una piattaforma invoke (metodo).  

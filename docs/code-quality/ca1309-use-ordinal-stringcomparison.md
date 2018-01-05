@@ -18,19 +18,20 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba777ea4cd272a1392413a2ecbb52b9f45a3d71b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cf913eea3f156595c9b9194b3d8a74e71b848367
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Utilizza StringComparison ordinale
 |||  
 |-|-|  
 |TypeName|UseOrdinalStringComparison|  
 |CheckId|CA1309|  
-|Categoria|Microsoft.Globalization|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Globalization|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Non è impostata un'operazione di confronto di stringhe tra il <xref:System.StringComparison> parametro a **ordinale** o **OrdinalIgnoreCase**.  

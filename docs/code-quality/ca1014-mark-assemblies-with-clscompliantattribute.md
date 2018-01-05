@@ -18,19 +18,20 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44ce0dc31fc8e1d9acd2a2f93ca53fd1aeca3ee9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: d68fa549775b3e3a4a6831e3fb82188367725d0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Contrassegnare gli assembly con CLSCompliantAttribute
 |||  
 |-|-|  
 |TypeName|MarkAssembliesWithClsCompliant|  
 |CheckId|CA1014|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Design|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un assembly non ha il <xref:System.CLSCompliantAttribute?displayProperty=fullName> applicato l'attributo.  

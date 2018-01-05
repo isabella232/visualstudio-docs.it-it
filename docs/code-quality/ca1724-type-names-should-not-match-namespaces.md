@@ -18,19 +18,20 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 556fd9eee1bc453d4f9782459050367e18a3193b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f138958ce2dc83b7d258fbdb16986841e92d3484
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: I nomi dei tipi non devono corrispondere agli spazi dei nomi
 |||  
 |-|-|  
 |TypeName|TypeNamesShouldNotMatchNamespaces|  
 |CheckId|CA1724|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. naming|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un nome di tipo corrisponde a un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] spazi dei nomi in un confronto tra maiuscole e minuscole.  

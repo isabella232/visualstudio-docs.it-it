@@ -18,19 +18,20 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4ce736aa64cba9d66d770f3c4297c1685d690f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b47c5f2297d9b13e33dc064a203bfd84ce2d196f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Specificare MessageBoxOptions
 |||  
 |-|-|  
 |TypeName|SpecifyMessageBoxOptions|  
 |CheckId|CA1300|  
-|Categoria|Microsoft.Globalization|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Globalization|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un metodo chiama l'overload del metodo di <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> metodo che non accetta un <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argomento.  

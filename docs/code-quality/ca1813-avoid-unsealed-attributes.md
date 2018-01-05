@@ -18,19 +18,20 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5aec235494b29a21eb5a3c2de39a6933e04b0ebe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ad548bd51985484ebcb39cb6022e994a5e0534a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitare attributi non sealed
 |||  
 |-|-|  
 |TypeName|AvoidUnsealedAttributes|  
 |CheckId|CA1813|  
-|Categoria|Microsoft. Performance|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Performance|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un tipo pubblico eredita da <xref:System.Attribute?displayProperty=fullName>, non è astratta e non è bloccato (`NotInheritable` in Visual Basic).  

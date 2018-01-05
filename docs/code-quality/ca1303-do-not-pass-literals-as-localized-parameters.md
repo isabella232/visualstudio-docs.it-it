@@ -19,19 +19,20 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce6ed64a6991342b4dc1506b8384f7691cc90b8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 361155e9d46e4f71ddc61775f56105cedb5d18b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Non passare valori letterali come parametri localizzati
 |||  
 |-|-|  
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|  
 |CheckId|CA1303|  
-|Categoria|Microsoft.Globalization|  
-|Breaking Change|Non importante|  
+|Category|Microsoft.Globalization|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un metodo passa una stringa letterale come parametro a un costruttore o un metodo di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] libreria di classi e questa stringa deve essere localizzabile.  

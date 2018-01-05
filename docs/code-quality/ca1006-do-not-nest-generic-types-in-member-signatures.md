@@ -18,25 +18,26 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2ec28ce2cfe1e8c0de622a0f35d37ddd82e1be7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd72555ff9877c9142057f04b9ff5881a4fe5932
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Non annidare tipi generici nelle firme dei membri
 |||  
 |-|-|  
 |TypeName|DoNotNestGenericTypesInMemberSignatures|  
 |CheckId|CA1006|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Design|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un membro visibile esternamente contiene una firma che contiene un argomento tipo annidato.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- Un argomento di tipo annidato è un argomento di tipo che è anche un tipo generico. Per chiamare un membro la cui firma contiene un argomento di tipo annidato, l'utente deve creare un'istanza su un tipo generico e passare il tipo al costruttore di un secondo tipo generico. La sintassi e la procedura necessarie sono complesse ed è opportuno evitarle.  
+ Un argomento di tipo annidato è un argomento di tipo che è anche un tipo generico. Per chiamare un membro la cui firma contiene un argomento tipo annidato, l'utente deve creare un'istanza su un tipo generico e passare il tipo al costruttore di un secondo tipo generico. La sintassi e la procedura necessarie sono complesse ed è opportuno evitarle.  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Per correggere una violazione di questa regola, modificare la progettazione per rimuovere l'argomento di tipo annidato.  

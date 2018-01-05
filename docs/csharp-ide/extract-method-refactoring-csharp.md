@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e85e745241d8fa880098b73a6306cbca3f19da70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 18fc4c20b39341f884fb23b51822ce7f6e427007
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-method-refactoring-c"></a>Refactoring Estrai Metodo (C#)
 **Estrai metodo** è un'operazione di refactoring che fornisce un modo semplice per creare un nuovo metodo da un frammento di codice in un membro esistente.  

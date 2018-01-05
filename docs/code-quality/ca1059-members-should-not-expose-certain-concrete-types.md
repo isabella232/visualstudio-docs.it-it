@@ -18,19 +18,20 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5b8b4a50ce23a7ed50f2e608334f9b438a0b090
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eae9070d76312fa4840f2cf8724a74a2cde4f7b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: I membri non devono esporre tipi concreti specifici
 |||  
 |-|-|  
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|  
 |CheckId|CA1059|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Design|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un membro visibile esternamente è un tipo concreto specifico o espone tipi concreti specifici tramite uno dei relativi parametri o valore restituito. Attualmente, questa regola segnala l'esposizione dei tipi concreti seguenti:  

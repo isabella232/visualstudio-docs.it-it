@@ -18,19 +18,20 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3b677f4cde4a38b2e682e36090e7a86f68e4fc5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2a3cf9ecfc25fc14fafceb1f36d8a02756e739b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Gli indicizzatori non devono essere multidimensionali
 |||  
 |-|-|  
 |TypeName|IndexersShouldNotBeMultidimensional|  
 |CheckId|CA1023|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Design|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un tipo pubblico o protetto contiene un indicizzatore pubblico o protetto che utilizza più di un indice.  

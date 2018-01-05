@@ -13,18 +13,19 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>errori di FxCopCmd
 FxCopCmd non considera tutti gli errori irreversibili. Se FxCopCmd dispone di informazioni sufficienti per eseguire un'analisi parziale, esegue l'analisi e segnala gli errori che si sono verificati. Il codice di errore è un intero a 32 bit, contiene una combinazione bit per bit di valori numerici che corrispondono agli errori.  
   
  Nella tabella seguente vengono descritti i codici di errore restituiti da FxCopCmd:  
   
-|Errore|Valore numerico|  
+|Error|Valore numerico|  
 |-----------|-------------------|  
 |Senza errori|0x0|  
 |Errore di analisi|0x1|  

@@ -18,19 +18,20 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7c2ba5f81cadb8940c519174bec7cf76cbf8500
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 101aa7852b9c6b163e6f18268e5c9ebb6e691760
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Non utilizzare nomi di tipo come prefisso nei valori di enumerazione
 |||  
 |-|-|  
 |TypeName|DoNotPrefixEnumValuesWithTypeName|  
 |CheckId|CA1712|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. naming|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un'enumerazione contiene un membro il cui nome inizia con il nome del tipo dell'enumerazione.  

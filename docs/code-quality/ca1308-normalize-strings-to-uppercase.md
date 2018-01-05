@@ -18,19 +18,20 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c9746d150fb2a47b1ce874ad003afd86d178e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9064ca9861f609499971b9f5188f5b0006458c15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizzare le stringhe in lettere maiuscole
 |||  
 |-|-|  
 |TypeName|NormalizeStringsToUppercase|  
 |CheckId|CA1308|  
-|Categoria|Microsoft.Globalization|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Globalization|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un'operazione normalizza stringa in caratteri minuscoli.  

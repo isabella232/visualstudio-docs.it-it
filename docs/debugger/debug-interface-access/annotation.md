@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 330b675f0bf6f9b656b6bb9742560e8da09477d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bea3b3b4e2ceb6f7b2cf5c4b8ccc457a7adc6fe9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotation"></a>Annotazione
 Un codice di programma di percorso può essere annotato con un `SymTagAnnotation` simbolo.  

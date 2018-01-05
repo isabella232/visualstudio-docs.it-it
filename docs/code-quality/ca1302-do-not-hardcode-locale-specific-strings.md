@@ -18,19 +18,20 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a6fc1bac1b13d432f395842c7de4ce6250dd708
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9fc94331b95f70f5ee73eae24172f1930d0ab8bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Non impostare come hardcoded le stringhe delle impostazioni locali
 |||  
 |-|-|  
 |TypeName|DoNotHardcodeLocaleSpecificStrings|  
 |CheckId|CA1302|  
-|Categoria|Microsoft.Globalization|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Globalization|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un metodo utilizza un valore letterale stringa che rappresenta una parte del percorso di determinate cartelle di sistema.  

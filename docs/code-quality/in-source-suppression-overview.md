@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Panoramica dell'eliminazione nell'origine
 Eliminazione in origine è la possibilità di eliminare o ignorare le violazioni di analisi del codice nel codice gestito mediante l'aggiunta di **SuppressMessage** attributo per i segmenti di codice che provocano le violazioni. Il **SuppressMessage** è un attributo condizionale incluso nei metadati dell'assembly del codice gestito solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase di compilazione.  
@@ -72,18 +73,18 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
     -   Tipo  
   
-    -   Membro  
+    -   Member  
   
 -   **Destinazione** : identificatore utilizzato per specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome completo di elementi.  
   
 ## <a name="suppressmessage-usage"></a>Utilizzo di SuppressMessage  
  Avvisi dell'analisi del codice vengono eliminati al livello a cui un'istanza di **SuppressMessage** attributo viene applicato. Lo scopo di questo è strettamente accoppiato le informazioni di eliminazione per il codice in cui si verifica la violazione.  
   
- Il formato generale dell'eliminazione include la categoria della regola e un identificatore di regola che contiene una rappresentazione leggibile facoltativa del nome della regola. Di seguito è riportato un esempio:  
+ Il formato generale dell'eliminazione include la categoria della regola e un identificatore di regola che contiene una rappresentazione leggibile facoltativa del nome della regola. Ad esempio,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- Se non esistono motivi di prestazioni strict per ridurre al minimo i metadati di eliminazione nell'origine, il nome della regola può essere omesso. La categoria della regola e il relativo ID regola insieme costituiscono un sufficientemente identificatore univoco della regola. Di seguito è riportato un esempio:  
+ Se non esistono motivi di prestazioni strict per ridurre al minimo i metadati di eliminazione nell'origine, il nome della regola può essere omesso. La categoria della regola e il relativo ID regola insieme costituiscono un sufficientemente identificatore univoco della regola. Ad esempio,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   

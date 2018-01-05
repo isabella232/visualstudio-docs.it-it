@@ -18,25 +18,26 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0cefdb203011a24769b5b180a442d22a90d0b5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20538a6729b1221d4559e65eae957b0125df7e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Le raccolte devono implementare un'interfaccia generica
 |||  
 |-|-|  
 |TypeName|CollectionsShouldImplementGenericInterface|  
 |CheckId|CA1010|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Design|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Implementa un tipo visibile esternamente il <xref:System.Collections.IEnumerable?displayProperty=fullName> interfaccia ma non implementa il <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfaccia la destinazione dell'assembly contenente [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Questa regola ignora i tipi che implementano <xref:System.Collections.IDictionary?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- Per ampliare la possibilità di utilizzo di una raccolta, implementare una delle interfacce di raccolte generiche. La raccolta può quindi essere utilizzata per popolare tipi di raccolte generiche, ad esempio:  
+ Per ampliare la possibilità di utilizzo di una raccolta, implementare una delle interfacce di raccolta generiche. La raccolta può quindi essere utilizzata per popolare tipi di raccolte generiche, ad esempio:  
   
 -   <xref:System.Collections.Generic.List%601?displayProperty=fullName>  
   

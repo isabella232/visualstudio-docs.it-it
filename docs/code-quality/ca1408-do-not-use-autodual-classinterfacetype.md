@@ -18,19 +18,20 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 47b872afd70a357938b8a9fd3fc7ecf7b180f77b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: ad19c3fa245998d57542a5dfe1b9da0c61984626
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Non utilizzare AutoDual ClassInterfaceType
 |||  
 |-|-|  
 |TypeName|DoNotUseAutoDualClassInterfaceType|  
 |CheckId|CA1408|  
-|Categoria|Microsoft.Interoperability|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Interoperability|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un tipo visibile modello COM (Component Object) è contrassegnato con il <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo impostato sul `AutoDual` valore <xref:System.Runtime.InteropServices.ClassInterfaceType>.  

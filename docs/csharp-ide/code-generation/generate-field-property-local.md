@@ -11,11 +11,12 @@ ms.assetid: c11888e0-31b1-44cc-9037-98d3f8b3623b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7304ad001b5e5c26594c147f4ffc416c9ee539c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 85d15d28fae994f029e678183d2f08d561c70f1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-field-property-or-local-in-c"></a>Generare un campo, proprietà o locale in c# #
 **Novità:** consente di generare immediatamente il codice per un campo in precedenza non dichiarato, proprietà o locale. 
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Vedere anche  
 [Code Generation (C#)](../code-generation-csharp.md) (Generazione di codice (C#))  
-[Preview Changes](../../ide/preview-changes.md) (Visualizzare l'anteprima delle modifiche) 
+[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md) 

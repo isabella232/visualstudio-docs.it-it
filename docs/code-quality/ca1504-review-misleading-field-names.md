@@ -18,19 +18,20 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d03c07b48b2cfbfc19fcb9aa2ac4353ddf87a8a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc1317380eab4a63a7c60557fbec258485768885
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Controllare i nomi dei campi fuorvianti
 |||  
 |-|-|  
 |TypeName|ReviewMisleadingFieldNames|  
 |CheckId|CA1504|  
-|Categoria|Microsoft.Maintainability|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Maintainability|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Il nome di un campo di istanza inizia con "s _" o il nome di un `static` (`Shared` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo inizia con "m _".  

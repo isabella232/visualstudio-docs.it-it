@@ -18,24 +18,25 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac50c390ca7a45cf5ef28f2d82d1f75fc5e2c1a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. naming|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Il nome di un parametro in un membro visibile esternamente contiene un nome di tipo di dati.  
   
- -oppure-  
+ oppure  
   
  Il nome di un membro visibile esternamente contiene un nome di tipo di dati specifico del linguaggio.  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Senza segno  
   
--   Con segno  
+-   Firmato  
   
 -   Float  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  Inoltre, i nomi di parametro vengono inoltre confrontati con i seguenti nomi di tipo di dati indipendenti dal linguaggio e minuscole:  
   
--   Oggetto  
+-   Object  
   
 -   obj  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Char  
   
--   String  
+-   Stringa  
   
 -   SByte  
   
@@ -124,9 +125,9 @@ ms.lasthandoff: 10/31/2017
   
 -   Double  
   
--   Decimal  
+-   Decimale  
   
--   Guid  
+-   GUID  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  **Se viene generato con un parametro:**  

@@ -18,19 +18,20 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c2cd6c6cfd06be965581d422b835014f09dd96b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d7eb4db46697e7f4cbb54d9ee11e4289b5a2ba2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Non nascondere i metodi di una classe base
 |||  
 |-|-|  
 |TypeName|DoNotHideBaseClassMethods|  
 |CheckId|CA1061|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Design|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un tipo derivato dichiara un metodo con lo stesso nome e con lo stesso numero di parametri come uno dei relativi metodi base; uno o più dei parametri è un tipo di base del parametro corrispondente nel metodo di base; e i parametri rimanenti sono tipi che corrispondono ai parametri corrispondenti nel metodo di base.  

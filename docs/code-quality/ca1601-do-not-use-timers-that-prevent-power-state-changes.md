@@ -18,19 +18,20 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5fc42c15beda68472f4a980fe96b0055b70a01cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4fb8ef82581f60cea3eb121e3d0c68fbffa82d8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Non utilizzare i timer che impediscono le modifiche allo stato di potenza
 |||  
 |-|-|  
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|  
 |CheckId|CA1601|  
-|Categoria|Microsoft.Mobility|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Mobility|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un timer è un intervallo impostato su cui si verificano più di una volta al secondo.  

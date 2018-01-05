@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 1bb1b91894fc562b7080a8225b69b3703948a604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilizzare i set di dati nelle applicazioni a più livelli
 *Applicazioni dati a più livelli* sono applicazioni mirate ai dati separate in più livelli logici (o *livelli*). In altre parole, un'applicazione dati a più livelli è un'applicazione separata in più progetti, con il livello di accesso ai dati, il livello di logica di business e il livello di presentazione, ciascuno in un progetto distinto. Per ulteriori informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).  
@@ -36,7 +37,7 @@ I dataset tipizzati sono stati migliorati in modo da poter generare classi Table
   
 Supporto di più livelli nei dataset tipizzati consente lo sviluppo iterativo dell'architettura dell'applicazione in una progettazione a più livelli. Rimuove inoltre la necessità di separare manualmente il codice in più di un progetto. Avviare la progettazione del livello dati utilizzando il **Progettazione Dataset**. Quando è pronti per eseguire l'architettura dell'applicazione a una progettazione a n livelli, impostare il **progetto DataSet** proprietà di un set di dati per generare la classe di dataset in un progetto separato.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
 <xref:System.Data.DataSet>  
 <xref:System.Data.TypedTableBase%601>  
   

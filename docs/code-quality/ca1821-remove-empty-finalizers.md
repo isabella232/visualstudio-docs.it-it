@@ -16,19 +16,20 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe1c05ff76a2b4c37296ef6a534e37a5d1229b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 98aebdcc889cdd3bd2bbe124b00a572e066b0e4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Rimuovere i finalizzatori vuoti
 |||  
 |-|-|  
 |TypeName|RemoveEmptyFinalizers|  
 |CheckId|CA1821|  
-|Categoria|Microsoft. Performance|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Performance|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un tipo implementa un finalizzatore, è vuoto, chiama solo il finalizzatore del tipo di base o chiama solo metodi emessi in modo condizionale.  

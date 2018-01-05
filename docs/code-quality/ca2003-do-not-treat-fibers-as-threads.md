@@ -18,19 +18,20 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ca9b0649950be50dcff5103258d60f6f924f12a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5afde6273a7730804746fe03446ea4c16c415302
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Non considerare i fiber come i thread
 |||  
 |-|-|  
 |TypeName|DoNotTreatFibersAsThreads|  
 |CheckId|CA2003|  
-|Categoria|Microsoft.Reliability|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Reliability|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un thread gestito viene considerato come un thread Win32.  

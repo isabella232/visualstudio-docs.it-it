@@ -18,19 +18,20 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11e50cb87364a85d0c97ae5e566b1209696febbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 066c78158b688db8164a5ebf23dbe957c7c324ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Gli assembly devono avere nomi sicuri validi
 |||  
 |-|-|  
 |TypeName|AssembliesShouldHaveValidStrongNames|  
 |CheckId|CA2210|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Design|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un assembly non è firmato con un nome sicuro, non è possibile verificare il nome sicuro o il nome sicuro non sarebbe valido senza le impostazioni del Registro di sistema corrente del computer.  

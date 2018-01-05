@@ -18,19 +18,20 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c45ca232b555af1441502586a38c80f43c41edc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a643d71e334d7a9228afbb9ba95df2f4cbb558c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitare complessità eccessiva
 |||  
 |-|-|  
 |TypeName|AvoidExcessiveComplexity|  
 |CheckId|CA1502|  
-|Categoria|Microsoft.Maintainability|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Maintainability|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un metodo presenta una complessità ciclomatica eccessiva.  

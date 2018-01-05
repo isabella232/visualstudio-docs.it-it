@@ -18,19 +18,20 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bfacf70dd1d23d0596815ad2f9fa3f51986aaad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d044f09ca26b65506bcfb7466f59da73acfad1e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testare le stringhe vuote utilizzando la lunghezza di stringa
 |||  
 |-|-|  
 |TypeName|TestForEmptyStringsUsingStringLength|  
 |CheckId|CA1820|  
-|Categoria|Microsoft. Performance|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Performance|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Una stringa viene confrontata con la stringa vuota usando <xref:System.Object.Equals%2A?displayProperty=fullName>.  

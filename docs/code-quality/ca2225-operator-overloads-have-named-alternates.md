@@ -18,19 +18,20 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d15e5ec123e645a7607f16b6020487d4c0fc2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f8c7b71fc964f898aefc5e243c787be71a8a063a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Gli overload degli operatori hanno alternative con nome
 |||  
 |-|-|  
 |TypeName|OperatorOverloadsHaveNamedAlternates|  
 |CheckId|CA2225|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  È stato rilevato un overload di operatore e il metodo alternativo denominato previsto non è stato trovato.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
 |true|IsTrue|N/D|IsTrue (proprietà)|  
 |-(unario)|N/D|-|Negare|  
 |+ (unario)|N/D|+|Plus|  
-|false|IsFalse|False|IsTrue (proprietà)|  
+|False|IsFalse|False|IsTrue (proprietà)|  
   
  N/d = = Impossibile eseguire l'overload nella lingua selezionata.  
   

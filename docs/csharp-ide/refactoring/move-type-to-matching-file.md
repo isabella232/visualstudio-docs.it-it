@@ -11,11 +11,12 @@ ms.assetid: 40f58c34-c50f-4297-91b2-2e243380dcc9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9fa5a15f9c8e688c973594309efbfa6cb5d10e8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 647805f5823eaade0b1cfaadf528a17f9c2f525d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="move-a-type-to-a-matching-file-in-c"></a>Spostare un tipo di un file corrispondente nel linguaggio c# #
 **Novità:** consente di spostare il tipo selezionato in un file distinto con lo stesso nome.

@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4836bdb470bf993bdc6f2b8f581859030016600
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 206d93d748a1d1033df48f9156997bd37b27f482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Tramite l'ambiente di sviluppo di Visual Studio per c# #
 Ambiente di sviluppo integrato (IDE) di Visual Studio è una raccolta di strumenti di sviluppo esposti tramite una comune interfaccia utente. Alcuni degli strumenti sono condivisi con altri linguaggi di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mentre altri, ad esempio il compilatore C#, sono esclusivi di Visual C#. In questo argomento vengono forniti i collegamenti ai più importanti strumenti di Visual C#.  
@@ -31,7 +32,7 @@ Ambiente di sviluppo integrato (IDE) di Visual Studio è una raccolta di strumen
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Viene fornita una panoramica delle numerose funzionalità e degli strumenti inclusi in Visual Studio per lo sviluppo di applicazioni.|  
+|[Procedura dettagliata: Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Viene fornita una panoramica delle numerose funzionalità e degli strumenti inclusi in Visual Studio per lo sviluppo di applicazioni.|  
 |[Creazione di soluzioni e progetti](../ide/creating-solutions-and-projects.md)|Viene descritto come creare un progetto in cui sono contenuti tutti i file di codice sorgente, i file di risorse quali icone, riferimenti a file esterni e dati di configurazione come le impostazioni del compilatore.|  
 |[Writing Code](../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)|Vengono descritti gli strumenti di Visual Studio che consentono di modificare testo, codice e markup, di inserire e configurare controlli e altri oggetti e spazi dei nomi e di aggiungere riferimenti a componenti e risorse esterne.|  
 |[IntelliSense per Visual C#](../ide/visual-csharp-intellisense.md)|Vengono forniti collegamenti ad argomenti che descrivono Visual c#-funzionalità specifiche, ad esempio automatico generazione di codice e IntelliSense per i membri utilizzati più di recente.|  
@@ -42,7 +43,7 @@ Ambiente di sviluppo integrato (IDE) di Visual Studio è una raccolta di strumen
 |[Metadati come origine](../csharp-ide/metadata-as-source.md)|Viene descritto in che modo l'IDE consente di visualizzare i metadati come codice sorgente.|  
 |[Refactoring (C#)](../csharp-ide/refactoring-csharp.md)|Viene fornito un elenco delle operazioni di refactoring che permettono di modificare il codice senza influire sul comportamento dell'applicazione.|  
 |[Code Generation (C#)](../csharp-ide/code-generation-csharp.md) (Generazione di codice (C#))|Elenca gli strumenti di generazione di codice che consente di scrivere parti di codice per l'utente.|  
-|[Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)|Viene spiegato come configurare il debug, la versione e speciali build della soluzione di Visual Studio.|  
+|[Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)|Viene spiegato come configurare il debug, la versione e speciali build della soluzione di Visual Studio.|  
 |[Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)|Viene descritto come eseguire il Debugger di Visual Studio per risolvere errori semantici e logici.|  
 |[Gestione delle risorse delle applicazioni (.NET)](../ide/managing-application-resources-dotnet.md)|Viene illustrato come aggiungere o modificare le risorse del progetto, ad esempio stringhe, immagini, icone, audio e file.|  
 |[Dotfuscator Community Edition (CE)](../ide/dotfuscator/index.md)|Illustra come configurare e iniziare a usare la versione gratuita di PreEmptive Protection - Dotfuscator Community Edition per proteggere gli assembly .NET da attacchi di reverse engineering e da usi non autorizzati, ad esempio il debug non autorizzato.|  

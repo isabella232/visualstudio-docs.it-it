@@ -18,19 +18,20 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Contrassegnare gli argomenti P/Invoke booleani con MarshalAs
 |||  
 |-|-|  
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|  
 |CheckId|CA1414|  
-|Categoria|Microsoft.Interoperability|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Interoperability|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un metodo di PInvoke dichiarazione include un <xref:System.Boolean?displayProperty=fullName> parametro o valore restituito ma la <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> attributo non viene applicato il valore restituito o parametro.  

@@ -18,19 +18,20 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9edc52bbc1cd05ed1a3a726dcfb49f26574ccc1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b1bacff8f97a27a02ccdf8e6f6047bfd6ad9c90b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Dichiarare correttamente i P/Invoke
 |||  
 |-|-|  
 |TypeName|DeclarePInvokesCorrectly|  
 |CheckId|CA1415|  
-|Categoria|Microsoft.Interoperability|  
-|Breaking Change|Non sostanziale - Se P/Invoke che dichiara il parametro non è visibile all'esterno dell'assembly. Sostanziale - Se P/Invoke che dichiara il parametro è visibile all'esterno dell'assembly.|  
+|Category|Microsoft.Interoperability|  
+|Modifica importante|Non sostanziale - Se P/Invoke che dichiara il parametro non è visibile all'esterno dell'assembly. Sostanziale - Se P/Invoke che dichiara il parametro è visibile all'esterno dell'assembly.|  
   
 ## <a name="cause"></a>Causa  
  Un metodo di PInvoke è dichiarato in modo non corretto.  

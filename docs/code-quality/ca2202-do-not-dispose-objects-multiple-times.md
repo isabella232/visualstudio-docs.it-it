@@ -17,19 +17,20 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3439739626a81636020a6b645ba5820a59747f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Non eliminare oggetti più volte
 |||  
 |-|-|  
 |TypeName|DoNotDisposeObjectsMultipleTimes|  
 |CheckId|CA2202|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Implementazione di un metodo contiene percorsi del codice che potrebbero comportare più chiamate a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> o a un equivalente di Dispose, ad esempio un metodo Close () per alcuni tipi, sullo stesso oggetto.  
@@ -86,4 +87,4 @@ finally
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

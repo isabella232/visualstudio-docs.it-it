@@ -18,19 +18,20 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4dee5b21724944ea26e89c2cd1ace556f1377848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0b4b154d6e959e636ee75481816a2424d5ea2e18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 |||  
 |-|-|  
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|  
 |CheckId|CA1701|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. naming|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Una stringa di risorsa contiene una parola composta non sembra essere digitati correttamente.  

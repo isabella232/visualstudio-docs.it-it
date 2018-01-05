@@ -12,18 +12,19 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a38494b21c87e249317b0a55fbdffa95702404cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Creazione di set di regole di analisi del codice personalizzati
 Per applicare regole di analisi del codice a un progetto di codice gestito, che specifica un set di regole che contiene una o più regole. Set di regole standard Microsoft forniscono gruppi di regole che sono organizzati in base alla funzione e la profondità. Ad esempio, le regole Microsoft base progettazione le linee guida e le regole di progettazione le linee guida Microsoft estesi contengono regole incentrate su usabilità e dei problemi di gestibilità, con particolare attenzione alle regole di denominazione nel set di regole estese.  
   
  È inoltre possibile creare un set di regole personalizzate che combina due o più standard set di regole o che specifica le regole in uno o più set di regole standard. Si salva una regola personalizzata imposta su un file con estensione ruleset ed è possibile specificarli in più progetti di codice.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Creare un set di regole personalizzato](../code-quality/how-to-create-a-custom-rule-set.md)  
  Viene descritto come creare una regola personalizzata impostata modificando una o più set di regole standard.  
   

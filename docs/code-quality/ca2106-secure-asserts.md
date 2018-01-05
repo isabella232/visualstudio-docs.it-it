@@ -18,19 +18,20 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 321d00f13ebc891070549778239fec60201d03c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33e200b06ed9bb0999116ea91a64b06aaa879067
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Asserzioni protette
 |||  
 |-|-|  
 |TypeName|SecureAsserts|  
 |CheckId|CA2106|  
-|Categoria|Microsoft.Security|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Security|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un metodo asserisce un'autorizzazione e non vengono eseguiti controlli di sicurezza sul chiamante.  

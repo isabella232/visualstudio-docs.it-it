@@ -11,11 +11,12 @@ ms.assetid: 0182179f-f74f-47a2-a1dc-b60c86f9abaf
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6e9ed28a42aa3d7521a059b668eed8ae1d28b8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 0a2d04c6582153e75f28b970e90c3475e1affb65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inline-a-temporary-variable-with-c"></a>Inline una variabile temporanea con c# #
 **Novità:** consente di rimuovere l'utilizzo di una variabile temporanea e sostituirlo con il codice effettivo.

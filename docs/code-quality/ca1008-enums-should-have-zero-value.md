@@ -18,18 +18,19 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 84c43a95cd607a13a302e2247cacb091a39a3070
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8aab8c294e9db20e78f653a52875c5f20b1b63c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Gli enum devono avere valore zero
 |||  
 |-|-|  
 |TypeName|EnumsShouldHaveZeroValue|  
 |CheckId|CA1008|  
-|Categoria|Microsoft. Design|  
+|Category|Microsoft. Design|  
 |Modifica importante|Non sostanziale - Quando viene richiesto di aggiungere un **Nessuno** valore a un'enumerazione non flag. Sostanziale - Quando viene richiesto di rinominare o rimuovere eventuali valori di enumerazione.|  
   
 ## <a name="cause"></a>Causa  

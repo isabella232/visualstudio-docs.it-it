@@ -22,16 +22,17 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Rimuovere avvisi tramite l'attributo SuppressMessage
 Spesso è utile indicare che l'avviso è applicabile per consentire ai membri del team di sapere che il codice è stato rivisto e che è stato rilevato che il messaggio di avviso deve essere eliminata. Eliminazione nell'origine (ISS) consente allo sviluppatore di inserire l'attributo che consente di eliminare un avviso in corrispondenza della posizione che ha generato l'avviso. È possibile aggiungere l'attributo ISS direttamente al file di origine oppure è possibile utilizzare i menu di scelta rapida di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |||  
 |-|-|  

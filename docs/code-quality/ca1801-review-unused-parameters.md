@@ -19,19 +19,20 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1bb8c38d1436ca687664f92bfe0ba6db1ccf68ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d3e2fa88f2dc2779ef352b4d16d5b65c12656797
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Rivedere i parametri inutilizzati
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dalle modifiche apportate.<br /><br /> Non sostanziale - Se si modifica il membro per usare il parametro all'interno del corpo.<br /><br /> Sostanziale - Se si rimuove il parametro e è visibile all'esterno dell'assembly.|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dalle modifiche apportate.<br /><br /> Non sostanziale - Se si modifica il membro per usare il parametro all'interno del corpo.<br /><br /> Sostanziale - Se si rimuove il parametro e è visibile all'esterno dell'assembly.|  
   
 ## <a name="cause"></a>Causa  
  Una firma di metodo include un parametro non utilizzato nel corpo del metodo. Questa regola esamina i metodi seguenti:  

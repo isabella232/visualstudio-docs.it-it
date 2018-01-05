@@ -21,19 +21,20 @@ manager: ghogen
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 1d59983639284fb8a6134a73ea58e09c6d49b183
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 260ced17d030d083854022ff3d1812184700d20d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Non eseguire il cast inutilmente
 |||  
 |-|-|  
 |TypeName|DoNotCastUnnecessarily|  
 |CheckId|CA1800|  
-|Categoria|Microsoft. Performance|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Performance|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
 Un metodo esegue cast duplicati su uno dei relativi argomenti o variabili locali.

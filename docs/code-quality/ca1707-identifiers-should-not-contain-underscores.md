@@ -18,19 +18,20 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 437085b76e1f9595c6db70fce798942df85a0292
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 582b7c95663633a4aada6a479a17306354c16b7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Gli identificatori non devono contenere caratteri di sottolineatura
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainUnderscores|  
 |CheckId|CA1707|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Sostanziale - Quando generato su assembly<br /><br /> Non sostanziale - Quando generato su parametri di tipo|  
+|Category|Microsoft. naming|  
+|Modifica importante|Sostanziale - Quando generato su assembly<br /><br /> Non sostanziale - Quando generato su parametri di tipo|  
   
 ## <a name="cause"></a>Causa  
  Il nome di un identificatore contiene il carattere di sottolineatura (_).  

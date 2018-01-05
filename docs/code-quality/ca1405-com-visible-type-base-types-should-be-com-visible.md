@@ -18,19 +18,20 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cceaee755af5269e266ca57e3644213e939c0ead
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 86e12b30f27478ec8426dc152dbbfd784edad412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: I tipi di base del tipo visibile a COM devono essere visibili a COM
 |||  
 |-|-|  
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|  
 |CheckId|CA1405|  
-|Categoria|Microsoft.Interoperability|  
-|Breaking Change|DependsOnFix|  
+|Category|Microsoft.Interoperability|  
+|Modifica importante|DependsOnFix|  
   
 ## <a name="cause"></a>Causa  
  Un tipo visibile modello COM (Component Object) deriva da un tipo che non è visibile a COM.  

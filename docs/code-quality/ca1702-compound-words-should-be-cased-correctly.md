@@ -18,19 +18,20 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c8606656b7ffe5f64c4c162b85d24bdbd9b1de0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d410f3796cdb30a620f0e0260f8cd529a4428831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 |||  
 |-|-|  
 |TypeName|CompoundWordsShouldBeCasedCorrectly|  
 |CheckId|CA1702|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Interruzione quando viene generato per gli assembly.<br /><br /> Non sostanziale - Quando generato su parametri di tipo.|  
+|Category|Microsoft. naming|  
+|Modifica importante|Interruzione quando viene generato per gli assembly.<br /><br /> Non sostanziale - Quando generato su parametri di tipo.|  
   
 ## <a name="cause"></a>Causa  
  Il nome di un identificatore contiene più parole e almeno una delle parole sembra essere una parola composta non è stata definita correttamente.  
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vedere anche  
  [Convenzioni di denominazione](/dotnet/standard/design-guidelines/naming-guidelines)   
- [Convenzioni di lettere maiuscole/minuscole](/dotnet/standard/design-guidelines/capitalization-conventions)
+ [Convenzioni per l'uso di maiuscole e minuscole](/dotnet/standard/design-guidelines/capitalization-conventions)

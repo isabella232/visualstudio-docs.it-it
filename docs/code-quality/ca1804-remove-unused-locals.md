@@ -18,19 +18,20 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9217f3109c6ef03de33e444e723caa585d065efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d75bc10407e9eae1c23ad06fdc2bd9515bdd505f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: rimuovere locali non utilizzati
 |||  
 |-|-|  
 |TypeName|RemoveUnusedLocals|  
 |CheckId|CA1804|  
-|Categoria|Microsoft. Performance|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Performance|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un metodo dichiara una variabile locale, ma non utilizzare la variabile tranne probabilmente come destinatario di un'istruzione di assegnazione. Per l'analisi da questa regola, l'assembly testato deve essere compilato con informazioni di debug e il file di database (con estensione pdb) del programma associato deve essere disponibile.  

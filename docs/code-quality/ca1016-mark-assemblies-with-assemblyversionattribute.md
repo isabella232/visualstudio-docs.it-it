@@ -18,19 +18,20 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 414a533e781be82cd0ffef1e9db234738ef07f16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b716a809f1d2a5bcf73b9dda77b94d637b2e8493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Contrassegnare gli assembly con AssemblyVersionAttribute
 |||  
 |-|-|  
 |TypeName|MarkAssembliesWithAssemblyVersion|  
 |CheckId|CA1016|  
-|Categoria|Microsoft. Design|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Design|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  L'assembly non ha un numero di versione.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Numero di versione  
   
--   Impostazioni cultura  
+-   culture  
   
 -   Chiave pubblica (per assembly con nome sicuro).  
   

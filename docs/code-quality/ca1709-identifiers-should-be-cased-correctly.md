@@ -18,19 +18,20 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9332359228d657e9155996443822a5d1c11ad01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f563ca87212b6f4af45f68987469b0c1370a7a18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldBeCasedCorrectly|  
 |CheckId|CA1709|  
-|Categoria|Microsoft. naming|  
-|Breaking Change|Sostanziale - Quando generato su assembly, spazi dei nomi, tipi, membri e parametri.<br /><br /> Non sostanziale - Quando generato su parametri di tipo generico.|  
+|Category|Microsoft. naming|  
+|Modifica importante|Sostanziale - Quando generato su assembly, spazi dei nomi, tipi, membri e parametri.<br /><br /> Non sostanziale - Quando generato su parametri di tipo generico.|  
   
 ## <a name="cause"></a>Causa  
  Il nome di un identificatore non è definito correttamente.  

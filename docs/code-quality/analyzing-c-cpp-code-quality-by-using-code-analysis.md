@@ -20,16 +20,17 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9694985711ee8bc9b46725214ecc6df2d5020b1d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: e1f714756d13fd4606362f8923f4746a5a85c8ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Verifica della qualità del codice C/C++ tramite analisi del codice
 È possibile migliorare il codice C/C++ tramite l'analisi codice in Visual Studio per individuare e correggere difetti del codice.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |||  
 |-|-|  
@@ -44,5 +45,5 @@ ms.lasthandoff: 11/15/2017
 |[Avvisi dell'analisi codice per C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)|Elenca e descrive gli avvisi dell'analisi codice.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Analisi della qualità dell'applicazione](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
+ [Analisi della qualità delle applicazioni](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

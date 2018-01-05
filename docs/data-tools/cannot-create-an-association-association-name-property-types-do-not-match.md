@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c950abb08e937ded4511408367f7163f3b2e16de
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: be8bbbec67b70576aa3a059dd400d46c92137ab9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossibile creare un'associazione &lt;il nome dell'associazione&gt; -proprietà hanno tipi non corrispondenti
 Impossibile creare un'associazione \<nome associazione >-proprietà hanno tipi non corrispondenti. Proprietà non hanno tipi corrispondenti: \<nomi proprietà >.  
@@ -36,6 +37,6 @@ Impossibile creare un'associazione \<nome associazione >-proprietà hanno tipi n
 4.  Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche
-[Messaggi O/R Designer](../data-tools/o-r-designer-messages.md)  
+[Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
 [Procedura: creare un'associazione tra classi LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) 
