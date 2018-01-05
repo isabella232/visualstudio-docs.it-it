@@ -21,7 +21,7 @@
 ### [Modello del servizio cloud di Azure](template-azure-cloud-service.md)
 ## [Azure SDK per Python](azure-sdk-for-python.md)
 # Procedure
-## [Editing R code in Visual Studio](code-editing.md) (Modifica di codice R in Visual Studio)
+## [Modifica di codice R in Visual Studio](code-editing.md)
 ### [Formattazione del codice](code-formatting.md)
 ### [Refactoring del codice](code-refactoring.md)
 ### [Uso di PyLint](code-pylint.md)

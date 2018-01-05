@@ -44,7 +44,7 @@
 ##### [Protezione tramite password di documenti di Office](password-protection-on-office-documents.md)
 ##### [Procedura: Aprire soluzioni Office senza eseguire codice](how-to-open-office-solutions-without-running-code.md)
 ### [Sviluppo di soluzioni Office](developing-office-solutions.md)
-#### [Writing Code in Office Solutions](writing-code-in-office-solutions.md) (Scrittura di codice nelle soluzioni Office)
+#### [Scrittura di codice nelle soluzioni Office](writing-code-in-office-solutions.md) 
 ##### [Parametri facoltativi nelle soluzioni Office](optional-parameters-in-office-solutions.md)
 ##### [Associazione tardiva nelle soluzioni Office](late-binding-in-office-solutions.md)
 ##### [Accesso globale a oggetti nei progetti di Office](global-access-to-objects-in-office-projects.md)
