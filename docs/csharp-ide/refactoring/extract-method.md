@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractmethod
 dev_langs: csharp
-ms.openlocfilehash: 3890d427ed2888647675a241f4e62a5635d7308c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 44a5dd2da4cd19a532e8e6cc9f21ef48b2585fe4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-a-method-in-c"></a>Estrarre un metodo in c# #
 **Novità:** consente di trasformare un frammento di codice in un metodo.
@@ -53,4 +54,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Vedere anche  
 [Refactoring (C#)](../refactoring-csharp.md)  
-[Preview Changes](../../ide/preview-changes.md) (Visualizzare l'anteprima delle modifiche)
+[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

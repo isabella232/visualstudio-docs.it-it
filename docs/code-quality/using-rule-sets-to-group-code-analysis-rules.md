@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Utilizzo di set di regole per raggruppare regole di analisi del codice
 Quando si configurano l'analisi del codice in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], è possibile scegliere da un elenco di predefinite Microsoft *set di regole*. Un set di regole è un raggruppamento logico di regole di analisi del codice che identificano i problemi di destinazione e specifiche condizioni. Ad esempio, è possibile applicare un set di regole è progettato per l'analisi codice per le API disponibile pubblicamente oppure è possibile applicare un set di regole che include solo le regole minime consigliate. È inoltre possibile applicare un set di regole che include tutte le regole.  

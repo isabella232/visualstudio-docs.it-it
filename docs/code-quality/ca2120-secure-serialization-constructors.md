@@ -18,19 +18,20 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e1896bc8f2c9c15c4aa7b9c7ec323412d494db0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e28d76315b3ef5844bd9b525764e6f5a5111ef56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteggere i costruttori di serializzazione
 |||  
 |-|-|  
 |TypeName|SecureSerializationConstructors|  
 |CheckId|CA2120|  
-|Categoria|Microsoft.Security|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Security|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Il tipo implementa il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia, non è un delegato o un'interfaccia e viene dichiarata in un assembly che consente ai chiamanti parzialmente attendibili. Il tipo ha un costruttore che accetta un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> oggetto e un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> oggetto (la firma del costruttore di serializzazione). Questo costruttore non è protetto da un controllo di sicurezza, ma uno o più costruttori regolari nel tipo sono protetti.  

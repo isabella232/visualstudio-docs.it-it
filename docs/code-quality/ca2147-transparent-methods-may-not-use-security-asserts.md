@@ -19,19 +19,20 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4893dbf799a964024fef59b7b0092b3066e8fdd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38ac5492c987515c7c6504c91d2e035f8b8645ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Il codice Transparent non può utilizzare asserzioni di sicurezza
 |||  
 |-|-|  
 |TypeName|SecurityTransparentCodeShouldNotAssert|  
 |CheckId|CA2147|  
-|Categoria|Microsoft.Security|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Security|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Il codice contrassegnato come <xref:System.Security.SecurityTransparentAttribute> non vengono concesse autorizzazioni sufficienti per l'asserzione.  

@@ -18,19 +18,20 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ecb9934ddefe0458f2974af0d73560532a17cc07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 75f16ce8a3158e9340c3215968f8df0170ab2c44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute
 |||  
 |-|-|  
 |TypeName|MarkISerializableTypesWithSerializable|  
 |CheckId|CA2237|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Implementa un tipo visibile esternamente il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia e il tipo non è contrassegnato con il <xref:System.SerializableAttribute?displayProperty=fullName> attributo. La regola ignora i tipi derivati il cui tipo di base non è serializzabile.  

@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ed81f6f0fbcc2e72fd57d7706b051dcdf7bea75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e3e606a86f5989ca928e0b093b564f997f92a559
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring Estrai interfaccia (C#)
 Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice per creare una nuova interfaccia con membri che provengono da un'interfaccia, una struct o una classe esistente.  

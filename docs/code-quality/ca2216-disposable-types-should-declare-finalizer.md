@@ -18,19 +18,20 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 087df27916465b3ddba0b8e2c92bacf89dd33c1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65332b37da874ce3475bb166b29c47ccc5a5870d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi Disposable devono dichiarare un finalizzatore
 |||  
 |-|-|  
 |TypeName|DisposableTypesShouldDeclareFinalizer|  
 |CheckId|CA2216|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName>e include campi che suggeriscono l'utilizzo delle risorse non gestite, non implementa un finalizzatore, come descritto dalla <xref:System.Object.Finalize%2A?displayProperty=fullName>.  
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0659b9ec82353e3c658f1ba89f07fad197dd8670
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 791de4f70113df3759e920591ec94da5108eec9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: I metodi Dispose devono chiamare il metodo Dispose della classe base
 |||  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|  
 |CheckId|CA2215|  
 |Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> eredita da un tipo che implementa anche <xref:System.IDisposable>. Il <xref:System.IDisposable.Dispose%2A> non chiamata al metodo del tipo che ereditano il <xref:System.IDisposable.Dispose%2A> metodo del tipo padre.  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

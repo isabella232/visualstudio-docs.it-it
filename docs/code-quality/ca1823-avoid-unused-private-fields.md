@@ -18,19 +18,20 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f4be67d74c3b0b01092d43d70c3c37a776def14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8843db809184afee02a104b719392da75b14bec3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitare campi privati non utilizzati
 |||  
 |-|-|  
 |TypeName|AvoidUnusedPrivateFields|  
 |CheckId|CA1823|  
-|Categoria|Microsoft. Performance|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft. Performance|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Questa regola viene segnalata quando un campo privato nel codice esiste ma non viene utilizzato da qualsiasi percorso di codice.  

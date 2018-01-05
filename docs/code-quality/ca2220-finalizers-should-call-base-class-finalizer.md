@@ -18,19 +18,20 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa5ed3329d4168a0781243a4faf021de3488e77c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 46427cffe64c6c81e0f262520a61c1b1ea01fff8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: I finalizzatori devono chiamare il finalizzatore della classe base
 |||  
 |-|-|  
 |TypeName|FinalizersShouldCallBaseClassFinalizer|  
 |CheckId|CA2220|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un tipo che esegue l'override <xref:System.Object.Finalize%2A?displayProperty=fullName> non chiama il <xref:System.Object.Finalize%2A> metodo nella classe base.  
@@ -50,4 +51,4 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

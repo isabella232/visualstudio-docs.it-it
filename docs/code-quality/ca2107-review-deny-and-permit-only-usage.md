@@ -18,19 +18,20 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 3d6f514546c298a134785740fe7bbf948031bc74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'utilizzo di Deny e PermitOnly
 |||  
 |-|-|  
 |TypeName|ReviewDenyAndPermitOnlyUsage|  
 |CheckId|CA2107|  
-|Categoria|Microsoft.Security|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Security|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un metodo contiene un controllo di sicurezza che specifica l'azione di sicurezza PermitOnly o Deny.  

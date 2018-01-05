@@ -18,16 +18,17 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2644275459343f0b30023439002d2fa83bb97c8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: baf04adf4589f0809db6a2de2bedcc0efd0f6fcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-warnings"></a>avvisi di prestazioni
 Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |Regola|Descrizione|  
 |----------|-----------------|  
