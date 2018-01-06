@@ -20,11 +20,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a29eee363f3ad886d9ea6a13ee43475fba2e9448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a32ceee7609fca96f27388839415ec5ac4d219de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>Requisiti per lo sviluppo di soluzioni SharePoint
   È necessario installare i seguenti prerequisiti nel sistema prima di poter usare gli strumenti di sviluppo di soluzioni SharePoint inclusi in Visual Studio:  

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d9651c320e574c8db9fcafcb6e98f13e45eac1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4e0c55a6d4ea86693f93e8b3eb97f16e0a37e8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="safecontrol-element"></a>Elemento SafeControl
   Rappresenta un controllo ASPX o una Web Part che è designato come protetto per qualsiasi utente di accedere in qualsiasi pagina ASPX nel sito di SharePoint.  
@@ -46,8 +47,8 @@ ms.lasthandoff: 10/31/2017
 |**Assembly**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome dell'assembly in cui è definito il controllo ASPX o una Web Part. Per impostazione predefinita, questo attributo viene utilizzato il **$SharePoint.Project.AssemblyFullName$** parametro sostituibile per il nome dell'assembly. Per ulteriori informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).|  
 |**IsSafe**|Parametro facoltativo **xs: Boolean** attributo.<br /><br /> Specifica se il controllo ASPX o una Web Part è sicuro per gli utenti non attendibili di accedere.|  
 |**IsSafeAgainstScript**|Parametro facoltativo **xs: Boolean** attributo.<br /><br /> Specifica se gli utenti non attendibili è possono visualizzare o modificare le proprietà del controllo ASPX o Web Part.|  
-|**Nome**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome di questa voce di controllo sicure nella raccolta.|  
-|**Namespace**|Parametro facoltativo **xs: String** attributo.<br /><br /> Lo spazio dei nomi del controllo ASPX o Web Part.|  
+|**Name**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome di questa voce di controllo sicure nella raccolta.|  
+|**Spazio dei nomi**|Parametro facoltativo **xs: String** attributo.<br /><br /> Lo spazio dei nomi del controllo ASPX o Web Part.|  
 |**TypeName**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome del tipo di controllo ASPX o Web Part.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Spazio dei nomi**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Nome dello schema**|Schema di elemento di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  

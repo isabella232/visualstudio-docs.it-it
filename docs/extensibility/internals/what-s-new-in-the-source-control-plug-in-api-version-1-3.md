@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd0c23258034fb99f5e2e4e0c86ca9e61c3d68ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac92c327a5eb4e51c7e6c22a73fb331843adc99f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Novità &#39; s New in origine controllo plug-in API versione 1.3
 L'API di plug-in controllo origine versione 1.3 introduce le nuove funzioni seguenti per fornire un controllo più avanzata.  

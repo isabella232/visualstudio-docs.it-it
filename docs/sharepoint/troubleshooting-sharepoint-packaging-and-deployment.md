@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Risoluzione dei problemi relativi alla creazione di pacchetti e alla distribuzione di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |Automatic|I conflitti vengono rilevati e risolti automaticamente.|  
 |Prompt|I conflitti vengono rilevati e segnalati allo sviluppatore prima di essere risolti.|  
-|None|I conflitti non vengono rilevati.|  
+|nessuno|I conflitti non vengono rilevati.|  
   
 ## <a name="differences-between-f5-deployment"></a>Differenze rispetto alla distribuzione tramite il tasto F5  
  Quando si utilizza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per distribuire il progetto SharePoint nel server SharePoint locale per il test e l'esecuzione del debug, in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono eseguiti alcuni passaggi aggiuntivi.  

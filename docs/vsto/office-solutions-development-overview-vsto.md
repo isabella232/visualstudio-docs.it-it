@@ -18,13 +18,14 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="office-solutions-development-overview-vsto"></a>Cenni preliminari sullo sviluppo di soluzioni Office (VSTO)
+# <a name="office-solutions-development-overview-vsto"></a>Panoramica dello sviluppo di soluzioni Office (VSTO)
   Usando Microsoft Office come front-end per soluzioni, è possibile sfruttare i classici strumenti e interfacce utente di Microsoft Office, quali le funzionalità di elaborazione di testo, di analisi dei dati di Excel e di gestione della posta elettronica di Outlook. È possibile sviluppare soluzioni in Visual Studio per personalizzare le applicazioni di Office e aggiungere le funzionalità specifiche necessarie per i processi aziendali. Ad esempio, è possibile trasformare Word in un generatore di contratti che assembla contratti da parti preesistenti che possono essere rese modificabili o meno. Excel consente di creare un foglio di lavoro automatizzato relativo al budget, personalizzato per progetti diversi. Gli utenti possono inoltre usare soluzioni Office offline che rendono le soluzioni complesse più pratiche di quanto sarebbero se si utilizzasse un'architettura basata su Web.  
   
  In questo argomento viene fornita una panoramica dei tipi di soluzioni Office che è possibile creare tramite i modelli di Visual Studio Tools per Office (VSTO) disponibili negli strumenti di sviluppo di Office in Visual Studio. Per informazioni generali sullo sviluppo con Office, vedere [Office Developer Center](https://dev.office.com/).  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  Per altre informazioni sull'utilizzo di assembly di interoperabilità primari in soluzioni VSTO per Office, vedere gli argomenti seguenti:  
   
--   [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md) (Scrittura di codice nelle soluzioni Office)  
+-   [Scrittura di codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
   
 -   [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)  
   

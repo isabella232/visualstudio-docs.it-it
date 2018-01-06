@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 764b6ff8b19711cb05f34c9bf652956057318346
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff198f5c4b574bf3a27ae1ee8fb6ffdd482c7f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extern-element"></a>Elemento extern
 L'elemento Extern fa riferimento a tutti i file esterni intestazione (h) di tipo merge con il file con estensione vsct in fase di compilazione. I file da unire devono trovarsi nel percorso di inclusione specificato per il compilatore VSCT o a cui fa riferimento un [elemento Include](../extensibility/include-element.md). I file potrebbero essere altri file con estensione vsct o file di intestazione C++.  
@@ -44,8 +45,8 @@ Elemento extern
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |href|Obbligatorio. Il percorso al file di intestazione:<br /><br /> href="stdidcmd.h"|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-|language|Parametro facoltativo. La lingua predefinita di tutte [ \<stringhe >](../extensibility/strings-element.md) elementi della tabella di comando:<br /><br /> Language = "en-us"|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|language|Facoltativo. La lingua predefinita di tutte [ \<stringhe >](../extensibility/strings-element.md) elementi della tabella di comando:<br /><br /> Language = "en-us"|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   

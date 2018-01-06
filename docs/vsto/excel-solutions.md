@@ -31,11 +31,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46f484bc9dc597bc43ea4e7e2474d5b7efcb1f3c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f12823ecb3fdc8d90d9f7c3651c6e04e6b0f6635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-solutions"></a>Soluzioni Excel
   Visual Studio fornisce modelli di progetto che è possibile usare per creare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per Microsoft Office Excel. È possibile usare queste soluzioni per automatizzare Excel, estenderne le funzionalità e personalizzarne l'interfaccia utente. Per ulteriori informazioni sulle differenze tra personalizzazioni a livello di documento e componenti aggiuntivi VSTO, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -116,14 +117,14 @@ ms.lasthandoff: 10/31/2017
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Excel Object Model Overview](../vsto/excel-object-model-overview.md)|Fornisce una panoramica dei tipi principali forniti dal modello a oggetti di Excel..|  
+|[Excel Object Model Overview](../vsto/excel-object-model-overview.md)|Fornisce una panoramica dei tipi principali forniti dal modello a oggetti di Excel.|  
 |[Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)|Fornisce informazioni sugli oggetti estesi (forniti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) che è possibile usare nelle soluzioni Excel.|  
 |[Globalizzazione e localizzazione di soluzioni di Excel](../vsto/globalization-and-localization-of-excel-solutions.md)|Contiene considerazioni speciali per le soluzioni Excel eseguite in computer che hanno impostazioni di Windows non in inglese.|  
 |[Panoramica dei controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Descrive come è possibile aggiungere controlli Windows Form ai fogli di lavoro di Excel.|  
 |[Procedura dettagliata: creazione della prima personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|  
 |[Procedura dettagliata: creazione del primo componente aggiuntivo VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)|Mostra come creare un componente aggiuntivo VSTO di base per Excel.|  
 |[Procedura dettagliata: aggiunta di controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)|Illustra come aggiungere un pulsante di Windows Form, <xref:Microsoft.Office.Tools.Excel.NamedRange>e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di esecuzione con un componente aggiuntivo VSTO.|
-|[Informazioni sulla creazione condivisa e i componenti aggiuntivi](./understanding-coauthoring-and-addins.md)|Descrive le regolazioni che potrebbe essere necessario apportare alle soluzioni per supportare creazione condivisa.|  
+|[Informazioni sulla creazione condivisa e sui componenti aggiuntivi](./understanding-coauthoring-and-addins.md)|Descrive le regolazioni che potrebbe essere necessario apportare alle soluzioni per supportare creazione condivisa.|  
 |[Excel 2010 nello sviluppo per Office](http://go.microsoft.com/fwlink/?LinkId=199011)|Fornisce collegamenti ad articoli e documentazione di riferimento sullo sviluppo di soluzioni Excel. Gli articoli non sono specifici per lo sviluppo di Office usando Visual Studio.|  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID di barre degli strumenti di Visual Studio
 In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi in ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nel file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per ulteriori informazioni, vedere [IDE-Defined comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -55,7 +56,7 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
 |ToolBar|Id|  
 |-------------|--------|  
 |Aggiungi comando|IDM_VS_TOOL_ADDCOMMAND|  
-|Non definito|IDM_VS_TOOL_UNDEFINED|  
+|Undefined|IDM_VS_TOOL_UNDEFINED|  
 |XML Schema|IDM_VS_TOOL_SCHEMA|  
 |Dati XML|IDM_VS_TOOL_DATA|  
   
@@ -64,28 +65,28 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
   
 ### <a name="standard-toolbar-groups"></a>Gruppi della barra degli strumenti standard  
   
-|Nome|Id|  
+|nome|Id|  
 |----------|--------|  
 |Salva/Apri|IDG_VS_TOOLSB_SAVEOPEN|  
 |Taglia o copia|IDG_VS_TOOLSB_CUTCOPY|  
 |Annullamento/ripristino|IDG_VS_TOOLSB_UNDOREDO|  
 |Esegui/compilazione|IDG_VS_TOOLSB_RUNBUILD|  
 |Cerca|IDG_VS_TOOLSB_SEARCH|  
-|Windows|IDG_VS_TOOLSB_WINDOWS|  
+|WINDOWS|IDG_VS_TOOLSB_WINDOWS|  
 |Nuove finestre|IDG_VS_TOOLSB_NEWWINDOWS|  
 |Caricamento/salvataggio|IDG_VS_WINDOWUI_LOADSAVE|  
 |misuratore|IDG_VS_TOOLSB_GAUGE|  
   
 ### <a name="build-toolbar-groups"></a>Creazione di gruppi della barra degli strumenti  
   
-|Nome|Id|  
+|nome|Id|  
 |----------|--------|  
 |Barra di compilazione|IDG_VS_BUILDBAR|  
 |Annulla|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>Gruppi della barra degli strumenti Editor di testo  
   
-|Nome|Id|  
+|nome|Id|  
 |----------|--------|  
 |Completamento|IDM_VS_TOOL_TEXTEDITOR|  
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,16 +95,16 @@ In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi 
   
 ### <a name="debug-toolbar-groups"></a>Gruppi della barra degli strumenti di debug  
   
-|Nome|Id|  
+|nome|Id|  
 |----------|--------|  
 |Esecuzione|IDM_DEBUG_TOOLBAR|  
 |Esecuzione di istruzioni|IDG_DEBUG_TOOLBAR_STEPPING|  
 |Espressioni di controllo|IDG_DEBUG_TOOLBAR_WATCH|  
-|Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
+|WINDOWS|IDG_DEBUG_TOOLBAR_WINDOWS|  
   
 ### <a name="debug-location-toolbar-groups"></a>Gruppi della barra degli strumenti posizione di debug  
   
-|Nome|Id|  
+|nome|Id|  
 |----------|--------|  
 |Posizione di debug|IDG_DEBUG_CONTEXT_TOOLBAR|  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio, o si vuole elementi dell'interfaccia siano coerenti con funzionalità simili, utilizzare nomi di token esistenti in file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.  
@@ -52,7 +53,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Pulsante | `CommonControls.Button` |
+| Button | `CommonControls.Button` |
 | Bordo del pulsante | `CommonControls.ButtonBorder` |
 
 **Button: stato predefinito**
@@ -61,7 +62,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 
 | Elemento | Nome token: Category.color | 
 | --- | --- | 
-| Pulsante | `CommonControls.ButtonDefault` |
+| Button | `CommonControls.ButtonDefault` |
 | Bordo del pulsante | `CommonControls.ButtonBorderDefault` |
 
 **Button: stato disabilitato**  
@@ -70,7 +71,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Pulsante | `CommonControls.ButtonDisabled` |
+| Button | `CommonControls.ButtonDisabled` |
 | Bordo del pulsante | `CommonControls.ButtonBorderDisabled` |
 
 **: Pulsante stato del mouse**  
@@ -79,7 +80,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Pulsante | `CommonControls.ButtonHover` |
+| Button | `CommonControls.ButtonHover` |
 | Bordo del pulsante | `CommonControls.ButtonBorderHover` |
 
 **Button: stato premuto**  
@@ -88,7 +89,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Pulsante | `CommonControls.ButtonPressed` |
+| Button | `CommonControls.ButtonPressed` |
 | Bordo del pulsante | `CommonControls.ButtonBorderPressed` |
 
 **Pulsante: dello stato attivo**  
@@ -97,7 +98,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Pulsante | `CommonControls.ButtonFocused` |
+| Button | `CommonControls.ButtonFocused` |
 | Bordo del pulsante | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>Controlli casella di controllo  
@@ -180,7 +181,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 | Bordo | `CommonControls.ComboBoxBorder` |
 | Testo | `CommonControls.ComboBoxText` |
 | Separatore | `CommonControls.ComboBoxSeparator` |
-| Icona | `CommonControls.ComboBoxGlyph` |
+| Glifo | `CommonControls.ComboBoxGlyph` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackground` |
 
 **Elenchi a discesa e combinata caselle: nello stato disabilitato**  
@@ -193,7 +194,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 | Bordo | `CommonControls.ComboBoxBorderDisabled` |
 | Testo | `CommonControls.ComboBoxTextDisabled` |
 | Separatore | `CommonControls.ComboBoxSeparatorDisabled` |
-| Icona | `CommonControls.ComboBoxGlyphDisabled` |
+| Glifo | `CommonControls.ComboBoxGlyphDisabled` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundDisabled` |
 
 **Elenchi a discesa e combinata caselle: passare il mouse di stato**  
@@ -206,7 +207,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 | Bordo | `CommonControls.ComboBoxBorderHover` |
 | Testo | `CommonControls.ComboBoxTextHover` |
 | Separatore | `CommonControls.ComboBoxSeparatorHover` |
-| Icona | `CommonControls.ComboBoxGlyphHover` |
+| Glifo | `CommonControls.ComboBoxGlyphHover` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundHover` |
 
 **Elenchi a discesa e combinata caselle: stati**  
@@ -219,7 +220,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 | Bordo | `CommonControls.ComboBoxBorderPressed` |
 | Testo | `CommonControls.ComboBoxTextPressed` |
 | Separatore | `CommonControls.ComboBoxSeparatorPressed` |
-| Icona | `CommonControls.ComboBoxGlyphPressed` |
+| Glifo | `CommonControls.ComboBoxGlyphPressed` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundPressed` |
 
 **Elenchi a discesa e combinata le finestre di visualizzazione elemento elenco: stati**  
@@ -243,7 +244,7 @@ Quando si utilizza una barra dei comandi di Visual Studio standard nella propria
 | Bordo | `CommonControls.ComboBoxBorderFocused` |
 | Testo | `CommonControls.ComboBoxTextFocused` |
 | Separatore | `CommonControls.ComboBoxSeparatorFocused` |
-| Icona | `CommonControls.ComboBoxGlyphFocused` |
+| Glifo | `CommonControls.ComboBoxGlyphFocused` |
 | Sfondo del glifo | `CommonControls.ComboBoxGlyphBackgroundFocused` |
 
 **Elenchi a discesa e combinata caselle: selezione di input di testo**  
@@ -302,7 +303,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 | --- | --- |
 | Sfondo | Trasparente |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Elencare gli elementi di visualizzazione: lo stato attivo**
 
@@ -310,7 +311,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 | --- | --- |
 | Sfondo | `TreeView.SelectedItemActive` |
 | Primo piano (testo) | `TreeView.SelectedItemActiveText` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Elencare gli elementi di visualizzazione: stato inattivo**
 
@@ -318,7 +319,7 @@ Le intestazioni di colonna sono costituite da uno sfondo, un bordo, il testo del
 | --- | --- |
 | Sfondo | `TreeView.SelectedItemInactive` |
 | Primo piano (testo) | `TreeView.SelectedItemInactiveText` |
-| Bordo | Nessuno |  
+| Bordo | nessuno |  
 
 ### <a name="ui-text"></a>Testo dell'interfaccia utente
 
@@ -650,7 +651,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Sfondo | `SearchControl.FocusedBackground` |
 | Primo piano (testo) | `SearchControl.FocusedBackground` |
 | Bordo | `SearchControl.FocusedBorder` |
-| Separator | `SearchControl.FocusedDropDownSeparator` |
+| Separatore | `SearchControl.FocusedDropDownSeparator` |
 
 **Campo di input di ricerca con stato non attivo, attivo**
 
@@ -661,7 +662,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Sfondo | `SearchControl.SearchActiveBackground` |
 | Primo piano (testo) | `SearchControl.SearchActiveBackground` |
 | Bordo | `SearchControl.UnfocusedBorder` |
-| Separator | `SearchControl.DropDownSeparator` |
+| Separatore | `SearchControl.DropDownSeparator` |
 
 **Campo di input di ricerca con stato non attivo e inattivo**
 
@@ -672,7 +673,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Sfondo | `SearchControl.Unfocused` |
 | Primo piano (testo) | `SearchControl.Unfocused` |
 | Bordo | `SearchControl.UnfocusedBorder` |
-| Separator | `SearchControl.DropDownSeparator` |
+| Separatore | `SearchControl.DropDownSeparator` |
 
 **Campo di input di ricerca evidenziato (solo testo)**
 
@@ -682,8 +683,8 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | --- | --- |
 | Sfondo | `SearchControl.Selection` |
 | Primo piano (testo) | `SearchControl.FocusedBackground` |
-| Bordo | Nessuno |
-| Separator | `SearchControl.FocusedDropDownSeparator` |
+| Bordo | nessuno |
+| Separatore | `SearchControl.FocusedDropDownSeparator` |
 
 **Campo di input di ricerca disabilitato**
 
@@ -694,7 +695,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 | Sfondo | `SearchControl.Disabled` |
 | Primo piano (testo) | `SearchControl.Disabled` |
 | Bordo | `SearchControl.DisabledBorder` |
-| Separator | `SearchControl.DropDownSeparator` |
+| Separatore | `SearchControl.DropDownSeparator` |
 
 **Pulsante di azione di ricerca con stato attivo**
 
@@ -702,7 +703,7 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo Cerca) | `SearchControl.SearchGlyph` |
 | Primo piano (glifo Arresta) | `SearchControl.StopGlyph` |
 | Primo piano (glifo Cancella) | `SearchControl.ClearGlyph` |
@@ -736,9 +737,9 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `SearchControl.ActionButtonDisabledGlyph` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Pulsante di menu a discesa di ricerca con stato attivo**
 
@@ -776,9 +777,9 @@ Una casella di ricerca può avere diversi stati, alcuni dei quali si escludono a
 
 | Elemento | Nome token: Category.color |
 | --- | --- |  
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `SearchControl.DisabledDownButtonGlyph` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 #### <a name="search-drop-down-lists"></a>Elenchi a discesa di ricerca  
 Il menu di riepilogo a discesa di casella di ricerca è in grado di essere leggermente più complesso rispetto ad altri menu a discesa in Visual Studio. Le sezioni "Opzioni di ricerca" e il "ricerche suggerite" possono essere visualizzati singolarmente o insieme nel menu, e ciascuna di esse è colorata separatamente. Una linea separa le due sezioni quando sono visualizzate insieme e un bordo circonda l'intero menu a discesa.  
@@ -876,7 +877,7 @@ Diverse finestre, tra cui Esplora soluzioni, Esplora Server e visualizzazione cl
 | Sfondo | `TreeView.Background` |
 | Primo piano (testo) | `TreeView.Background` |
 | Primo piano (glifo) | `TreeView.Glyph` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Elemento della visualizzazione struttura ad albero: passare il mouse di stato**
 
@@ -887,7 +888,7 @@ Diverse finestre, tra cui Esplora soluzioni, Esplora Server e visualizzazione cl
 | Sfondo | `TreeView.Background` |  
 | Primo piano (testo) | `TreeView.Background` |
 | Primo piano (glifo) | `TreeView.GlyphMouseOver` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Elemento della visualizzazione struttura ad albero: trascinare sullo stato**
 
@@ -898,7 +899,7 @@ Diverse finestre, tra cui Esplora soluzioni, Esplora Server e visualizzazione cl
 | Sfondo | `TreeView.DragOverItem` |
 | Primo piano (testo) | `TreeView.DragOverItem` |
 | Primo piano (glifo) | `TreeView.DragOverItemGlyph` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Elemento della visualizzazione struttura ad albero: selezionata, con stato attivo dello stato**
 
@@ -920,7 +921,7 @@ Diverse finestre, tra cui Esplora soluzioni, Esplora Server e visualizzazione cl
 | Sfondo | `TreeView.SelectedItemInactive` |
 | Primo piano (testo) | `TreeView.SelectedItemInactive` |
 | Primo piano (glifo) | `TreeView.SelectedItemInactiveGlyph` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Elemento della visualizzazione struttura ad albero: al passaggio del mouse, selezionato e lo stato attivo**
 
@@ -942,7 +943,7 @@ Diverse finestre, tra cui Esplora soluzioni, Esplora Server e visualizzazione cl
 | Sfondo | `TreeView.SelectedItemInactive` |
 | Primo piano (testo) | `TreeView.SelectedItemInactive` |
 | Primo piano (glifo) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 ## <a name="shell-appearance"></a>Aspetto della shell
 
@@ -1011,7 +1012,7 @@ La finestra Progettazione manifesto è stata progettata come strumento per sempl
 | Elemento | Nome token: Category.color |
 | --- | --- |
 | Sfondo | `ManifestDesigner.TabActive` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Riquadro di descrizione selezionato progettazione manifesto: stato predefinito**
 
@@ -1068,10 +1069,10 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | In primo piano (testo) | `Environment.CommandBarTextActive` |
 | In primo piano (glifo) | `Environment.CommandBarMenuGlyph` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 **Titolo menu: passare il mouse di stato**  
 
@@ -1105,10 +1106,10 @@ I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo,
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (testo) | `Environment.CommandBarTextInactive` |
 | Primo piano (glifo) | `Environment.CommandBarTextInactive` |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 
 #### <a name="menu-items"></a>Voci di menu
 Una singola voce di menu è costituita dal testo del menu e da un'icona facoltativa, una casella di controllo o un glifo del sottomenu. Il colore di sfondo e del testo cambiano al passaggio del mouse. Questo token di colore è una coppia sfondo/primo piano.  
@@ -1332,7 +1333,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Sfondo | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(Sfumatura per questo token non utilizzato nell'interfaccia utente con temi) |
 | Primo piano (testo) | `Environment.ComboBoxMouseOverText` |
 | Bordo | `Environment.ComboBoxMouseOverBorder` |
-| Separator | `Environment.ComboBoxMouseOverSeparator` |
+| Separatore | `Environment.ComboBoxMouseOverSeparator` |
 
  **Pulsante di comando della barra dei menu a discesa: passare il mouse di stato**  
 
@@ -1362,7 +1363,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Sfondo | `Environment.ComboBoxFocusedBackground` |
 | Primo piano (testo) | `Environment.ComboBoxFocusedText` |
 | Bordo | `Environment.ComboBoxFocusedBorder` |
-| Separator | `Environment.ComboBoxFocusedButtonSeparator` |
+| Separatore | `Environment.ComboBoxFocusedButtonSeparator` |
 
 **Pulsante di comando della barra dei menu a discesa: con stato attivo dello stato**  
 
@@ -1382,7 +1383,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Sfondo | `Environment.ComboBoxMouseDownBackground` |
 | Primo piano (testo) | `Environment.ComboBoxMouseDownText` |
 | Bordo | `Environment.ComboBoxMouseDownBorder` |
-| Separator | `Environment.ComboBoxMouseDownSeparator` |
+| Separatore | `Environment.ComboBoxMouseDownSeparator` |
 
 **Pulsante di comando della barra dei menu a discesa: stati**
 
@@ -1410,7 +1411,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
 ####  <a name="BKMK_CommandDropDown"></a>Elenchi a discesa barra dei comandi
@@ -1442,7 +1443,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (glifo) | `Environment.DropDownGlyph` |
 
 **Elenco elenco a discesa sulla barra dei comandi: stato predefinito**
@@ -1465,7 +1466,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Sfondo | `Environment.DropDownMouseOverBackgroundBegin`<br />(Sfumatura per questo token non utilizzato nell'interfaccia utente con temi) |
 | Primo piano (testo) | `Environment.DropDownMouseOverText` |
 | Bordo | `Environment.DropDownMouseOverBorder` |
-| Separator | `Environment.DropDownButtonMouseOverSeparator` |
+| Separatore | `Environment.DropDownButtonMouseOverSeparator` |
 
 **Pulsante di comando della barra dei menu a discesa: passare il mouse di stato**  
 
@@ -1495,7 +1496,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 | Sfondo | `Environment.DropDownMouseDownBackground` |
 | Primo piano (testo) | `Environment.DropDownMouseDownText` |
 | Bordo | `Environment.DropDownMouseDownBorder` |
-| Separator | `Environment.DropDownButtonMouseDownSeparator` |
+| Separatore | `Environment.DropDownButtonMouseDownSeparator` |
 
 **Pulsante di comando della barra dei menu a discesa: stati**
 
@@ -1542,11 +1543,11 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 
 | Elemento | Nome token: Category.color |
 | --- | --- |
-| Sfondo | Nessuno |
+| Sfondo | nessuno |
 | Primo piano (testo) | `Environment.CommandBarTextActive` |
 | Primo piano (glifo) | `Environment.CommandBarSplitButtonGlyph` |
 | Bordo | N/D |
-| Separator | N/D |
+| Separatore | N/D |
 
 **Pulsante di menu combinato della barra di comando: lo stato di passaggio del mouse**  
 
@@ -1558,7 +1559,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 | Primo piano (testo) | `Environment.CommandBarTextHover` |
 | Primo piano (glifo) | `Environment.CommandBarSplitButtonMouseOverGlyph` |
 | Bordo | `Environment.CommandBarBorder` |
-| Separator | `Environment.CommandBarSplitButtonSeparator` |
+| Separatore | `Environment.CommandBarSplitButtonSeparator` |
 
 **Pulsante di menu combinato barra dei comandi: stati**  
 
@@ -1570,7 +1571,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 | Primo piano (testo) | `Environment.CommandBarTextMouseDown` |
 | Primo piano (glifo) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | Bordo | `Environment.CommandBarBorder` |
-| Separator | N/D |
+| Separatore | N/D |
 
 **Pulsante di menu combinato barra dei comandi: nello stato disabilitato**
 
@@ -1582,7 +1583,7 @@ I pulsanti di menu combinato condividono molti nomi di token con altri controlli
 | Primo piano (testo) | `Environment.ComboBoxItemTextInactive` |
 | Primo piano (glifo) | `Environment.CommandBarTextInactive` |
 | Bordo | N/D |
-| Separator | N/D |
+| Separatore | N/D |
 
 #### <a name="command-bar-more-options-and-overflow-buttons"></a>Pulsanti di comando della barra "Altre opzioni" e "Overflow"  
 Il pulsante "Altre opzioni" viene usato quando un gruppo della barra dei comandi può essere personalizzato aggiungendo o rimuovendo pulsanti della barra dei comandi correlati. Il pulsante "Overflow" viene visualizzato quando una barra dei comandi è troncata a causa della mancanza di spazio orizzontale e, dopo avervi fatto clic sopra, mostra un menu che contiene i pulsanti della barra dei comandi che non possono essere visualizzati. I colori per questi due pulsanti sono controllati dallo stesso set di nomi di token.  
@@ -2033,7 +2034,7 @@ Casella degli strumenti è uno delle finestre degli strumenti comuni utilizzate 
 | --- | --- |
 | Sfondo | `Environment.ToolboxContent`<br />(Intestazioni) |
 | Sfondo | `Environment.ToolWindowBackground`<br />(Singoli elementi o intera finestra se i controlli non disponibili) |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 | Primo piano (glifo) | `Environment.ToolboxContent` |
 | Primo piano (testo) | `Environment.ToolboxContent` |
 
@@ -2044,7 +2045,7 @@ Casella degli strumenti è uno delle finestre degli strumenti comuni utilizzate 
 | Elemento | Nome token: Category.color |
 | --- | --- |
 | Sfondo | `Environment.ToolboxContentMouseOver`<br />(Solo singoli elementi) |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 | Primo piano (testo) | `Environment.ToolboxContentMouseOver`<br />(Solo singoli elementi) |
 
 **I nodi della casella degli strumenti selezionati: con stato attivo dello stato**
@@ -2069,7 +2070,7 @@ Casella degli strumenti è uno delle finestre degli strumenti comuni utilizzate 
 | Elemento | Nome token: Category.color |
 | --- | --- |
 | Sfondo | `TreeView.SelectedItemInactive`<br />Da [visualizzazione ad albero](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria |
-| Bordo | Nessuno |
+| Bordo | nessuno |
 | Primo piano (glifo) | `TreeView.SelectedItemInactive`<br />Da [visualizzazione ad albero](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria |
 | Primo piano (testo) | `TreeView.SelectedItemInactive`<br />Da [visualizzazione ad albero](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) categoria |
 

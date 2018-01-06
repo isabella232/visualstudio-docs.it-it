@@ -19,11 +19,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 031894a3307a40af981ad974898ae819ba68d24a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7968fe71fffb736a6e86319339f3cc7823480403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: cercare testo negli intervalli dei fogli di lavoro a livello di codice
   Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo il <xref:Microsoft.Office.Interop.Excel.Range> oggetto consente di cercare testo all'interno dell'intervallo. Questo testo può essere anche una delle stringhe di errore che possono essere visualizzati in una cella di foglio di lavoro, ad esempio `#NULL!` o `#VALUE!`. Per ulteriori informazioni sulle stringhe di errore, vedere [i valori delle celle errore](http://msdn.microsoft.com/library/office/ff839168.aspx).  

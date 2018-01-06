@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8afe8ed1d59f8daec34a99b1479079a69a1bc740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint
   È possibile utilizzare il **modello di integrazione applicativa dei dati di Business** elemento di progetto per creare un modello per il servizio di integrazione applicativa dei dati (BDC) in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando l'elemento del progetto, i dati nel modello non viene visualizzati agli utenti. È inoltre necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.  
@@ -241,7 +242,7 @@ ms.lasthandoff: 10/31/2017
   
 14. Verificare che il **Elenca** sezione nell'area avvio veloce non contiene ancora un elenco che è basato sul modello di integrazione applicativa dei dati predefinita nel progetto. È innanzitutto necessario creare un elenco di dati esterni, tramite l'interfaccia utente di SharePoint o tramite l'estensione di elemento di progetto.  
   
-15. Chiudere il browser web.  
+15. Chiudere il Web browser.  
   
 16. Nell'istanza di Visual Studio con il progetto aperto TestBDCModel, aprire il menu di scelta rapida per il **TestBDCModel** nodo **Esplora soluzioni**, quindi scegliere **generare dati esterni Elenco**.  
   
@@ -259,7 +260,7 @@ ms.lasthandoff: 10/31/2017
   
      Il **modello di integrazione applicativa dei dati di Business** modello di progetto genera il modello di integrazione applicativa dei dati predefinito che fornisce tutti i dati.  
   
-22. Chiudere il browser web.  
+22. Chiudere il Web browser.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Pulizia dei Computer di sviluppo  
  Dopo aver completato il test dell'estensione dell'elemento di progetto, rimuovere l'elenco esterno e il modello di integrazione applicativa dei dati dal sito di SharePoint e rimuovere l'estensione di elemento di progetto da Visual Studio.  
@@ -274,7 +275,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  In **autorizzazioni e gestione**, scegliere **eliminare questo elenco**, quindi scegliere **OK** per confermare che si desidera inviare l'elenco nel Cestino.  
   
-5.  Chiudere il browser web.  
+5.  Chiudere il Web browser.  
   
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Per rimuovere il modello di integrazione applicativa dei dati dal sito di SharePoint  
   

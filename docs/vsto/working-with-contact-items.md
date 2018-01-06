@@ -20,16 +20,17 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3536c224498603eb4013c06b44dc0082337b4bdf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 378b33e7396678273a8aa14eb96e355117ce1f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-contact-items"></a>Uso dei contatti
   La classe <xref:Microsoft.Office.Interop.Outlook.ContactItem> contiene i metodi e le proprietà usati per eseguire attività con i contatti.  
   
-|Attività|Procedura|  
+|Attività|Routine|  
 |----------|---------------|  
 |Richiamare tutti i contatti il cui cognome contiene una stringa specificata.|[Procedura: Accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)|  
 |Cercare un contatto in base al nome e al cognome.|[Procedura: Eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|  

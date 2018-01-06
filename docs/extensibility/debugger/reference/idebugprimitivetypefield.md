@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 817f788c90eea9d52d5579aa7f2d6a73ea129eb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e18b62d8d655729e47a2616d8a5eae9dae19e76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 Rappresenta un valore di enumerazione di tipo primitivo da un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia.  

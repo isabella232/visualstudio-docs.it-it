@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Guida introduttiva a servizio di linguaggio e le estensioni di Editor
 Per aggiungere funzionalità del linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e le lampadine proprio linguaggio di programmazione o a qualsiasi tipo di contenuto, è possibile utilizzare le estensioni di editor. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio testo colorazione, margini, aree di controllo e altri elementi visivi. È inoltre possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni di testo in cui viene visualizzato il contenuto.  
@@ -75,7 +76,7 @@ Per aggiungere funzionalità del linguaggio, ad esempio la struttura, corrispond
 ## <a name="managing-extensions"></a>Gestione delle estensioni  
  Estensioni di Visual Studio sono elencate nel **estensioni e aggiornamenti** (sul **strumenti** menu). Se si sta testando un'estensione nell'istanza sperimentale, è elencato nel **estensioni e aggiornamenti** nell'istanza sperimentale, ma non è elencato nell'istanza di sviluppo.  
   
- Per ulteriori informazioni, vedere [ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Utilizzo di modelli per creare estensioni dell'Editor  
  È possibile utilizzare modelli di editor per creare estensioni MEF che consentono di personalizzare i classificatori, aree di controllo e i margini. Sono disponibili modelli per progetti c# e Visual Basic. Per ulteriori informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  

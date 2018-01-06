@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Visualizzare gli snapshot utilizzando IntelliTrace passaggio-back
-Passaggio di IntelliTrace-back automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro per i punti di interruzione precedente o passaggi e visualizzare lo stato dell'applicazione è stato in precedenza. Passaggio back IntelliTrace è possibile risparmiare tempo quando si desidera visualizzare lo stato applicazione precedente ma si desidera riavviare il debug o ricreare lo stato dell'app desiderata.
+Passaggio di IntelliTrace-back automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
 Passaggio di IntelliTrace-back è disponibile a partire da Visual Studio Enterprise 2017 versione 15,5 e versioni successive e richiede l'aggiornamento Aniversary di Windows 10 o versione successiva. La funzionalità è attualmente supportata per il debug di ASP.NET, Windows Form, WPF, le applicazioni console gestito e librerie di classi gestite. Debug di applicazioni ASP.NET di base, .NET Core o UWP non è attualmente supportato. 
   
@@ -38,7 +39,7 @@ Per motivi di prestazioni gli snapshot non vengono intraprese quando esegue l'is
 
 ## <a name="navigate-and-view-snapshots"></a>Esplorare e visualizzare gli snapshot
 
-È possibile spostarsi tra gli eventi utilizzando il **passo indietro (Alt + [)** e **passo avanti (Alt +])** pulsanti sulla barra degli strumenti di Debug. Questi pulsanti passare gli eventi che vengono visualizzati di **eventi** nella scheda il **finestra Strumenti di diagnostica**. L'accesso in avanti o indietro a un evento automaticamente Attiva debug cronologico dell'evento selezionato.
+È possibile spostarsi tra gli eventi utilizzando il **passo indietro (Alt + [)** e **passo avanti (Alt +])** pulsanti sulla barra degli strumenti di Debug. Questi pulsanti passare gli eventi che vengono visualizzati di **eventi** nella scheda il **finestra Strumenti di diagnostica**. Lo spostamento indietro o in avanti su un evento attiva automaticamente il debug cronologico per l'evento selezionato.
 
 ![Passo indietro pulsanti Avanti e indietro](../debugger/media/intellitrace-step-back-icons-description.png "pulsanti passo indietro e Avanti di un passaggio")
 
@@ -79,20 +80,20 @@ L'impatto sulle prestazioni di debug passo a passo generale dipende dall'applica
 ## <a name="known-issues"></a>Problemi noti  
 * Se si utilizza la modalità di eventi e le istantanee di IntelliTrace nelle versioni di Windows precedente a Windows 10 rientrano creatori di aggiornamento (RS3) e se la piattaforma di destinazione di debug dell'applicazione è impostata su x86, IntelliTrace non istantanee.
 
-    Soluzione temporanea:
+    Soluzione alternativa:
     * Installare o eseguire l'aggiornamento a Windows 10 rientrano creatori di aggiornamento (RS3). 
     * In alternativa: 
         1. Installare il componente Set di strumenti VC++ 2015.3 versione 140 per desktop (x86, x64) dal programma di installazione di Visual Studio.
         2. Compilare l'applicazione di destinazione.
         3. Dalla riga di comando, utilizzare lo strumento editbin per impostare il `Largeaddressaware` flag per l'eseguibile di destinazione. Ad esempio, è possibile utilizzare questo comando (dopo aver aggiornato il percorso): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Per avviare il debug, premere **F5**. A questo punto, di snapshot in punti di interruzione e i passaggi del debugger.
+        4. Premere **F5** per avviare il debug. A questo punto, di snapshot in punti di interruzione e i passaggi del debugger.
 
         > [!Note]
         > Il `Largeaddressaware` flag deve essere impostato ogni volta che il file eseguibile viene ricompilato con le modifiche.
 
 * Quando viene eseguito uno snapshot del processo dell'applicazione in un'applicazione che utilizza un file mappato alla memoria persistente, il processo con lo snapshot contiene un blocco esclusivo sul file mappato alla memoria (anche dopo il processo padre ha rilasciato il blocco). Altri processi sono ancora in grado di leggere, ma non scrivere al file mappato alla memoria.
 
-    Soluzione temporanea:
+    Soluzione alternativa:
     * Deselezionare tutti gli snapshot e di terminare la sessione di debug. 
 
 * Quando si salva un file con **Debug > IntelliTrace > sessione di IntelliTrace Salva** in modalità di eventi e gli snapshot, i dati aggiuntivi acquisiti da snapshot non sono disponibili nel file. iTrace. Nel punto di interruzione e il passaggio degli eventi, vedere le stesse informazioni come se il file è stato salvato in modalità solo gli eventi di IntelliTrace. 

@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a40d2b8c108d7180ffc68ac2eee6811d49b21c08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 250f1d7769f6035e015eeb7247c439b27f913b78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribuzione di applicazioni Shell isolata
 Per creare un'applicazione shell isolata, è necessario installare Visual Studio e Visual Studio SDK. Per distribuire l'applicazione per le macchine di altri utenti o clienti, è necessario includere un pacchetto ridistribuibile speciale per la shell isolata.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Prerequisiti per la distribuzione di applicazioni Isolated Shell  
   
-|Nome|Descrizione|  
+|nome|Descrizione|  
 |----------|-----------------|  
 |Visual Studio SDK|il SDK è necessario per sviluppare e testare le estensioni di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È anche possibile utilizzare il SDK per creare un'istanza personalizzata della shell di Visual Studio isolated.<br /><br /> Visual Studio è un prerequisito per il SDK.|  
 |Shell Redistributable isolata di Microsoft Visual Studio|Il pacchetto ridistribuibile di includere nel programma di installazione quando si compila un ambiente di strumenti di Visual Studio shell isolata. Il pacchetto ridistribuibile di Shell isolato include .NET Framework 4.5.|  

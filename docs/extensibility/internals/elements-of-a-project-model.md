@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-a-project-model"></a>Elementi di un modello di progetto
 Le interfacce e implementazioni di tutti i progetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] condividono una struttura di base: il modello di progetto per il tipo di progetto. Nel modello di progetto che è il pacchetto VSPackage si sta sviluppando, creare oggetti conformi con le decisioni di progettazione e interagiscono con la funzionalità globale fornita dall'IDE. Anche se il controllo il mantenimento di un elemento di progetto, ad esempio, non si controlla la notifica che un file deve essere resa persistente. Quando un utente inserisce lo stato attivo su un elemento di progetto aperto e sceglie **salvare** sul **File** menu il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barra, codice del tipo di progetto devono intercettare il comando dall'IDE, mantenere il file, e Invia notifica all'IDE che non viene modificato il file.  

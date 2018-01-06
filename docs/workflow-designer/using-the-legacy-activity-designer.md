@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 65510d727fdf0640ca8efa646a14d0814951cd4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d8288db6ddca4041a409b435ccd730d0b15b013b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilizzo dell'ActivityDesigner legacy
 In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] legacy. Usare la finestra di progettazione legacy quando si fa riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o a [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -49,7 +50,7 @@ In questo argomento viene descritto come usare ActivityDesigner in [!INCLUDE[wfd
   
 |Proprietà|Commenti|  
 |--------------|--------------|  
-|**Nome**|Nome dell’attività.|  
+|**Name**|Nome dell’attività.|  
 |**Classe di base**|Classe base dalla quale è derivata l’attività. La classe base predefinita è [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). Nel **proprietà** finestra, fare clic su di **di una classe Base** i puntini di sospensione **[…]**  per selezionare un'altra classe base di [Cerca e seleziona una casella di dialogo tipo .NET (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
 |**Descrizione**|Descrizione dell'attività definita dall'utente.|  
 |**Enabled**|Impostare su **True** per impostazione predefinita per consentire l'esecuzione dell'attività e la convalida. Impostare su **False** per disabilitare l'esecuzione dell'attività e la convalida. Per informazioni sulla convalida e l'esecuzione dell'attività, vedere [sviluppo di attività del flusso di lavoro](http://go.microsoft.com/fwlink?LinkID=65024).|  

@@ -11,16 +11,17 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c691e4dc60afca2d56a63af8572d75b02e970e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="primitives-activity-designers"></a>ActivityDesigner Primitive
 Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Gli argomenti contenuti in questa sezione forniscono istruzioni sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Assegnare](../workflow-designer/assign-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.Assign>.  
   
@@ -33,7 +34,7 @@ Gli ActivityDesigner primitivi consentono di creare e configurare diverse attivi
  [WriteLine](../workflow-designer/writeline-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.WriteLine>.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)  

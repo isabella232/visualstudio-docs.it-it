@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
-Il **attività** finestra simile di **thread** finestra, ad eccezione del fatto che mostra informazioni sugli <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), o [winjs. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) oggetti anziché ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread. 
+Il **attività** finestra simile di **thread** finestra, ad eccezione del fatto che mostra informazioni sugli <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [winjs. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) oggetti anziché ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread. 
   
  Nel codice gestito, è possibile utilizzare il **attività** finestra quando si lavora con <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti o con il **await** e **async** parole chiave (**Await** e **Async** in Visual Basic). Per ulteriori informazioni sulle attività nel codice gestito, vedere [programmazione parallela](/dotnet/standard/parallel-programming/index).  
   
@@ -60,7 +61,7 @@ Il **attività** finestra simile di **thread** finestra, ad eccezione del fatto 
 |**Stato restituito**|Stato dell'attività quando è stata completata. I valori di stato restituito sono **successo**, **annullato**, e **errore**.|  
 |**AppDomain**|Dominio applicazione nel quale viene eseguita l'attività, in caso di codice gestito.|  
 |**task_group**|Per il codice nativo, l'indirizzo del [task_group](/cpp/parallel/concrt/reference/task-group-class.mdd) che ha pianificato l'attività. Per gli agenti asincroni e le attività leggere, questa colonna viene impostata su 0.|  
-|Processo|ID del processo in cui viene eseguita l'attività.|  
+|Process|ID del processo in cui viene eseguita l'attività.|  
 |Stato Async|Per il codice gestito, lo stato dell'attività. Per impostazione predefinita, questa colonna è nascosta. Per visualizzarla, aprire il menu di scelta rapida per una delle intestazioni di colonna. Scegliere **colonne**, **AsyncState**.|  
   
  Per aggiungere colonne alla visualizzazione, fare clic con il pulsante destro del mouse su un'intestazione di colonna e selezionare le colonne desiderate. Per rimuovere le colonne, annullare le selezioni. È possibile inoltre riordinare le colonne trascinandole a sinistra o a destra. Nell'illustrazione seguente viene mostrato il menu di scelta rapida delle colonne.  

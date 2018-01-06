@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: acdc524b00baaf0de52ad30ea7abad82dc57651b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5ff5f5bafec14099e5b10b9861be5936b75009
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="group-element"></a>Elemento Group
 Definisce un gruppo di comando di VSPackage.  
@@ -41,14 +42,14 @@ Definisce un gruppo di comando di VSPackage.
 |---------------|-----------------|  
 |guid|Obbligatorio. GUID dell'identificatore di comando/ID GUID.|  
 |ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|  
-|priority|Parametro facoltativo. Un valore numerico che specifica la priorità.|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|priority|Facoltativo. Un valore numerico che specifica la priorità.|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Padre|Parametro facoltativo. L'elemento padre del pulsante.|  
+|Padre|Facoltativo. L'elemento padre del pulsante.|  
 |Annotazione|Commento facoltativo.|  
   
 ### <a name="parent-elements"></a>Elementi padre  

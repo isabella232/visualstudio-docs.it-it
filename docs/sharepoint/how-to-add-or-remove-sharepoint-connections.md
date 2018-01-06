@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 775f342463e32d73cfaee6e492c1417753ec159f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3773364467ba79cb17e71feb4c1c17feded750f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procedura: aggiungere o rimuovere connessioni di SharePoint
   Esplora server consente di esplorare i siti di SharePoint, nonché connessioni dati. Tuttavia, prima di poterne visualizzare il contenuto di un sito di SharePoint è necessario aggiungerla al **connessioni di SharePoint** nodo.  

@@ -13,16 +13,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizzazione di menu e controlli di Editor utilizzando l'API Legacy
 Un servizio di linguaggio o una visualizzazione di testo è possibile controllare il menu di scelta rapida e i controlli nell'editor. Le pagine di questa sezione viene illustrato come utilizzare queste funzionalità.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Barra dei menu a discesa](../extensibility/drop-down-bar.md)  
  Descrive la barra dei menu a discesa e vengono fornite istruzioni per implementarlo.  
   

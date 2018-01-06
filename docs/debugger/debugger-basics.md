@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Nozioni di base sul debugger
 Il debugger di Visual Studio debugger consente di osservare il comportamento del programma in fase di esecuzione e di individuazione di errori logici. Il debugger può essere usato con tutti i linguaggi di programmazione di Visual Studio e con le relative librerie associate. Con il debugger, è possibile interrompere l'esecuzione per esaminare il codice e valutare variabili nell'applicazione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
  [Introduzione al debugger](../debugger/getting-started-with-the-debugger.md)  
  Viene illustrato come utilizzare le funzionalità del debugger per eseguire il debug delle applicazioni.  
-
- [Guardare un video del debugger](../debugger/getting-started-with-the-debugger.md#video)  
- Di seguito viene illustrato come utilizzare le funzionalità del debugger per il debug delle applicazioni.
   
  [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md)  
  Descrive come spostarsi nel codice con il debugger.  

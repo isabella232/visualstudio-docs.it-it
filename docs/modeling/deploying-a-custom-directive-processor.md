@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in un computer qualsiasi, è necessario registrarlo da uno dei metodi descritti in questo argomento.  
@@ -184,7 +185,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
  Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:  
   
-|Nome|Tipo|Dati|  
+|nome|Tipo|Dati|  
 |----------|----------|----------|  
 |(Predefinito)|REG_SZ|(valore non impostato)|  
 |Classe|REG_SZ|**\<Nome Namespace >. \<Nome classe >**|  
@@ -192,7 +193,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:  
   
-|Nome|Tipo|Dati|  
+|nome|Tipo|Dati|  
 |----------|----------|----------|  
 |(Predefinito)|REG_SZ|(valore non impostato)|  
 |Classe|REG_SZ|\<**Il nome completo della classe**>|  

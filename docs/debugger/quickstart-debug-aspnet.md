@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba7735dd44d029889c57d151e6fba39ba7b2df
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: aspnet
+ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Eseguire il debug di ASP.NET con il debugger di Visual Studio
 

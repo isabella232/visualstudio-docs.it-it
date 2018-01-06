@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Distribuzione, pubblicazione e aggiornamento dei pacchetti delle soluzioni SharePoint
   Dopo aver sviluppato una soluzione di SharePoint in Visual Studio, è possibile distribuire il file di pacchetto (con estensione wsp) in un server SharePoint locale o pubblicarla in un server SharePoint locale o remoto. Se si distribuisce i file, è possibile personalizzare la modalità in cui vengono distribuiti i file del pacchetto (con estensione wsp).  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 |Configurazione della distribuzione|Descrizione|  
 |------------------------------|-----------------|  
-|Predefinito|La configurazione di distribuzione predefinita. Vengono eseguiti i passaggi di distribuzione seguenti:<br /><br /> 1.  Eseguire il comando di pre-distribuzione.<br />2.  Riciclare il pool di applicazioni IIS.<br />3.  Ritira soluzione.<br />4.  Aggiungere una soluzione.<br />5.  Attivare le funzionalità.<br />6.  Eseguire il comando di post-distribuzione.<br /><br /> Quando si disinstalla un pacchetto, vengono eseguite le seguenti operazioni di ritiro.<br /><br /> 1.  Riciclare il pool di applicazioni IIS.<br />2.  Ritira soluzione.|  
+|Impostazione predefinita|La configurazione di distribuzione predefinita. Vengono eseguiti i passaggi di distribuzione seguenti:<br /><br /> 1.  Eseguire il comando di pre-distribuzione.<br />2.  Riciclare il pool di applicazioni IIS.<br />3.  Ritira soluzione.<br />4.  Aggiungere una soluzione.<br />5.  Attivare le funzionalità.<br />6.  Eseguire il comando di post-distribuzione.<br /><br /> Quando si disinstalla un pacchetto, vengono eseguite le seguenti operazioni di ritiro.<br /><br /> 1.  Riciclare il pool di applicazioni IIS.<br />2.  Ritira soluzione.|  
 |Nessuna attivazione|Questa configurazione di distribuzione esegue le stesse operazioni come la configurazione predefinita, ma ignora il passaggio di attivazione.|  
   
  È possibile creare le proprie configurazioni di distribuzione per completare un singolo passaggio o modificare l'ordine dei passaggi del processo di distribuzione. Per ulteriori informazioni, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  

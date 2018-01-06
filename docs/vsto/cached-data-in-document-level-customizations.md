@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f90aeb03dd62d76064124e9870a5a4dbcd250621
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: deb63265b65a382132d3ef957ad67ddd1bccb438
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dati memorizzati nella cache nelle personalizzazioni a livello di documento
   Un obiettivo principale di personalizzazioni a livello di documento è per separare i dati dalla visualizzazione nei documenti di Office. Dati fa riferimento alle informazioni archiviate nel documento, inclusi i numeri e testo. Vista fa riferimento per l'interfaccia utente e il modello a oggetti di Microsoft Office Word e Microsoft Office Excel.  

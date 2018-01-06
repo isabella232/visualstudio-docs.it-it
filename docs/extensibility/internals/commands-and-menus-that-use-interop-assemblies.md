@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee9fa1faa52afb2ea6d8154b4767fcab2cee0981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d89b698a97d1793b3c5255966d9eca35ec1b78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>I comandi e menu che utilizzano gli assembly di interoperabilità
 Un VSPackage che implementa i comandi di menu e barra degli strumenti tramite assembly di interoperabilità deve:  
@@ -34,7 +35,7 @@ Un VSPackage che implementa i comandi di menu e barra degli strumenti tramite as
   
  Di seguito viene descritto come eseguire queste attività.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Determinazione dello stato dei comandi in base agli assembly di interoperabilità](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
  Viene descritto come un pacchetto VSPackage notifica all'IDE relative ai comandi supporta e che sono attualmente abilitate.  
   

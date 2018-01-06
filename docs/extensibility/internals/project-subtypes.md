@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84d2700e1dfb5d66fb2df6376db9e0ce5352ad4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes"></a>Sottotipi di progetto
 Sottotipi di progetto consentono di personalizzare o flavor il comportamento dei sistemi di progetto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Le personalizzazioni includono il salvataggio di dati aggiuntivi nel file di progetto, aggiungendo o filtrando gli elementi il **Aggiungi nuovo elemento** nella finestra di dialogo controllo modalità di debug e di distribuito, assembly e il progetto di estensione **proprietà Pagine** la finestra di dialogo. I pacchetti VSPackage implementare sottotipi di progetto utilizzando l'aggregazione COM.  
@@ -27,7 +28,7 @@ Sottotipi di progetto consentono di personalizzare o flavor il comportamento dei
 > [!NOTE]
 >  Il sistema di progetto Visual C++ non supporta sottotipi di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]stesso Usa sottotipi di progetto per implementare progetti SQL Server e Smart Device.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Progettazione di sottotipi di progetto](../../extensibility/internals/project-subtypes-design.md)  
  Viene descritto il concetto di sottotipi di progetto.  
   

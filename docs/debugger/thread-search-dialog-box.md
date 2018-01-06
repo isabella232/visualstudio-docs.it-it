@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9887fef89ea78665a64eead02f4d7ea11a28d890
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f6cf674581b4e4368aab87e7ddd6c64096efe5e
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="thread-search-dialog-box"></a>Finestra di dialogo Ricerca thread
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico in [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un **thread** finestra di visualizzazione. Scegliere quindi **trova Thread** dal **ricerca** menu.  
@@ -43,7 +44,7 @@ Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per 
  [Ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Viene illustrato come trovare un thread specifico nella visualizzazione thread.  
   
- [Threads View](../debugger/threads-view.md) (Visualizzazione Thread)  
+ [Visualizzazione Thread](../debugger/threads-view.md)  
  Visualizza una struttura di thread attivi  
   
  [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)  

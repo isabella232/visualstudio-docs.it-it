@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: creazione di un flusso di lavoro con form di associazione e di avvio
   Questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenza base che include l'utilizzo di form di associazione e di avvio. Si tratta di form ASPX che consentono di parametri da aggiungere a un flusso di lavoro quando è associata prima dall'amministratore di SharePoint (form di associazione) e quando il flusso di lavoro viene avviato dall'utente (form di avvio).  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Se una dipendente nota spese totale supera limite predefinito dell'amministratore, viene creata un'attività per il responsabile di approvare la nota spese. Tuttavia, se nota spese totale un dipendente è minore o uguale al limite di spesa, viene scritto un messaggio di approvazione automatica all'elenco di cronologia del flusso di lavoro.  
   
- In questa procedura dettagliata vengono illustrate le attività seguenti:  
+ Questa procedura dettagliata illustra le attività seguenti:  
   
 -   Creazione di un progetto di flusso di lavoro sequenziale definizione di elenco SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
      Il **Personalizzazione guidata SharePoint** viene visualizzato.  
   
-10. Nel **specificare il nome del flusso di lavoro per il debug** accettare il nome predefinito (**ExpenseReport - Workflow1**). Mantenere il valore predefinito del tipo di modello del flusso di lavoro (**flusso di lavoro elenco)**. Scegliere il **Avanti** pulsante.  
+10. Nel **specificare il nome del flusso di lavoro per il debug** accettare il nome predefinito (**ExpenseReport - Workflow1**). Mantenere il valore predefinito del tipo di modello del flusso di lavoro (**flusso di lavoro elenco)**. Fare clic su **Avanti**.  
   
 11. Nel **si desidera che Visual Studio per associare automaticamente il flusso di lavoro in una sessione di debug?** pagina, deselezionare la casella che consente di associare automaticamente il modello di flusso di lavoro se è selezionata.  
   

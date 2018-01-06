@@ -18,11 +18,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d6fa02174a8b334b404a0a4ea84ee0e8089c584
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35f5a865faafc730a13f5d0cd3a432a724434dde
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un documento mediante pulsanti di opzione
   Questa procedura dettagliata illustra come usare i pulsanti di opzione in una personalizzazione a livello di documento per Microsoft Office Word, per consentire agli utenti di selezionare stili del grafico nel documento.  
@@ -96,28 +97,28 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**Istogramma**|  
+    |**Name**|**Istogramma**|  
     |**per**|**Istogramma**|  
   
 3.  Aggiungere un secondo **pulsante di opzione** all'utente e modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**barChart**|  
+    |**Name**|**barChart**|  
     |**per**|**Grafico a barre**|  
   
 4.  Aggiungere un terzo **pulsante di opzione** all'utente e modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**lineChart**|  
+    |**Name**|**lineChart**|  
     |**per**|**Grafico a linee**|  
   
 5.  Aggiungere un quarto **pulsante di opzione** all'utente e modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**opzione areaBlockChart**|  
+    |**Name**|**opzione areaBlockChart**|  
     |**per**|**Grafico ad area**|  
   
 ## <a name="adding-references"></a>Aggiunta di riferimenti  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b435c4e44391bbf477ed94fa96ee382613290530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35d33f0c440bce6d83c8a4712f0059d7f51a0ff0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="define-element"></a>Definire l'elemento
 Definisce una coppia di nome e il valore di simbolo. Questo simbolo può essere valutato da attributi condizionali. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md). Vedere anche il [simboli elemento](../extensibility/symbols-element.md).  
@@ -38,8 +39,8 @@ Definisce una coppia di nome e il valore di simbolo. Questo simbolo può essere 
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |name|Obbligatorio. Il nome del simbolo:<br /><br /> nome = "Modalità"|  
-|valore|Obbligatorio. Il valore del simbolo:<br /><br /> valore = "Standard"|  
-|Condizione|Parametro facoltativo. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|predefinito|Obbligatorio. Il valore del simbolo:<br /><br /> valore = "Standard"|  
+|Condizione|Facoltativo. Per ulteriori informazioni, vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  

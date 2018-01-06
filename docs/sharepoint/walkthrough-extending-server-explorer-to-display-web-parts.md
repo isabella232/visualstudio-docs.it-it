@@ -20,11 +20,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0dce1b5ecafbccfdf9816bbc4ef3e8fee3e5c2fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8fea089340c0d51fb5b88bf20d5521defc5dcc71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estensione di Esplora server per visualizzare web part
   In Visual Studio, è possibile utilizzare il **connessioni di SharePoint** nodo di **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata, è possibile estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuno connesso a un sito di SharePoint.  

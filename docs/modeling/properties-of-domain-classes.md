@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e9bed31caa63a12677e7b9798e6cf72524500c21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e38000dea9c20f8458fd0f899d43ea8f7c9eb7db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-classes"></a>Proprietà delle classi di dominio
 Classi di dominio includono le proprietà nella tabella seguente. Per informazioni sulle classi di dominio, vedere [informazioni sui modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -29,7 +30,7 @@ Classi di dominio includono le proprietà nella tabella seguente. Per informazio
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla classe di dominio (`none`, `abstract` o `sealed`).|`none`|  
 |Classe di base|Se questa classe di dominio è derivata, il nome della classe di base.|\<Nessuno >|  
-|Nome|Il nome di questa classe di dominio.|Nome corrente|  
+|nome|Il nome di questa classe di dominio.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi di questa classe di dominio.|Spazio dei nomi corrente|  
 |Note|Note informale che sono associate a questa classe di dominio.|\<Nessuno >|  
 |Descrizione|La descrizione che viene utilizzata per documentare l'interfaccia utente della finestra di progettazione generato.|\<Nessuno >|  

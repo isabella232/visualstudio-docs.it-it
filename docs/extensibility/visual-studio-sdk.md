@@ -17,11 +17,12 @@ caps.latest.revision: "56"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbf9ab21b494bfc8b26251a8bdb79c16f81dc05d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: vssdk
+ms.openlocfilehash: bf8c558d01538d477aee3670b3c119d72a83878d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o integrare le nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti, oltre che con Visual Studio Marketplace. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:  
@@ -56,7 +57,7 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o inte
  Sfruttare il [servizio immagini e catalogo](../extensibility/image-service-and-catalog.md) per la gestione di ottima qualità dell'immagine e il supporto per valori DPI alti e temi.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Ricerca e l'installazione delle estensioni di Visual Studio esistenti  
- È possibile trovare le estensioni di Visual Studio nel **estensioni e aggiornamenti** nella finestra di dialogo di **strumenti** menu. Per ulteriori informazioni, vedere [ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). È anche possibile trovare estensioni di [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
+ È possibile trovare le estensioni di Visual Studio nel **estensioni e aggiornamenti** nella finestra di dialogo di **strumenti** menu. Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). È anche possibile trovare estensioni di [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Riferimenti di Visual Studio SDK  
  È possibile trovare il riferimento API di Visual Studio SDK a [riferimenti di Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  

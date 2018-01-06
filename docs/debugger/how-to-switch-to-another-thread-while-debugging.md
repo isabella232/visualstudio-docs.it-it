@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Procedura: passare a un altro Thread durante il debug in Visual Studio
 Quando si esegue il debug di un'applicazione multithreading, è possibile utilizzare uno dei diversi metodi per passare dal thread che sta utilizzando un altro thread.
 
 > [!NOTE]
-> Se si desidera controllare l'ordine in cui eseguono i thread, è necessario [bloccare e sbloccare i thread](/debugger/get-started-debugging-multithreaded-apps.md).
+> Se si desidera controllare l'ordine in cui eseguono i thread, è necessario [bloccare e sbloccare i thread](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Quando si esaminano i thread nell'editor di codice e le diverse finestre di debug con multithreading, la freccia gialla indica che il thread corrente. Una freccia verde ricurva indica che un thread non correnti è il contesto di debug corrente.
   

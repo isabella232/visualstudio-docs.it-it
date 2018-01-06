@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 88ae1fb937f5f86aa767a2de8d1978ea160f6d15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72e64d9a0e254ce34cea76eca8617dee71573dd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 È possibile utilizzare forme di immagine per specificare la visualizzazione di classi di dominio in una finestra di progettazione generato. Definire una forma di immagine impostando il `Image` proprietà della classe in un file di immagine predefinita. Sono supportati i formati seguenti:  
@@ -57,11 +58,11 @@ ms.lasthandoff: 10/27/2017
 |Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questa forma.|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma immagine (`none`, `abstract` o `sealed`).|nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma immagine (`none`, `abstract` o `sealed`).|none|  
 |Forma di immagine di base|Classe di base di questa forma.|(nessuno)|  
-|Nome|Il nome della forma.|Nome corrente|  
+|nome|Il nome della forma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questa forma.|Spazio dei nomi corrente|  
-|ToolTip (tipo)|La posizione in cui è definita la descrizione comando (fissata, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|nessuno|  
+|ToolTip (tipo)|La posizione in cui è definita la descrizione comando (fissata, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|none|  
 |Note|Note informale che sono associate a questa forma.|\<Nessuno >|  
 |Altezza iniziale|L'altezza iniziale di questa forma, espressa in pollici.|1|  
 |Larghezza iniziale|Larghezza iniziale della forma in pollici.|1,5|  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/27/2017
 |Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generato per questa forma.|\<Nessuno >|  
 |Testo della descrizione comando fisso|Il testo che viene utilizzato per una descrizione di comandi predefinito.|\<Nessuno >|  
 |Parola chiave della Guida|La parola chiave che viene utilizzata per l'indice della Guida F1 per questo elemento.|\<Nessuno >|  
-|Immagine|Il percorso del file di immagine che viene utilizzato per questa forma.|\<Nessuno >|  
+|Image|Il percorso del file di immagine che viene utilizzato per questa forma.|\<Nessuno >|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

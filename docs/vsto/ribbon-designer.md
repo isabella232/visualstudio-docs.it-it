@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
   La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede personalizzate, gruppi e controlli alla barra multifunzione di un'applicazione di Microsoft Office.  
@@ -141,7 +142,7 @@ ms.lasthandoff: 10/31/2017
 ###  <a name="AddControlsToGroups"></a>Aggiunta di controlli ai gruppi  
  Aggiungere uno o più controlli a un gruppo. Nella tabella seguente viene descritto ogni controllo.  
   
-|Controllo|Descrizione|  
+|Control|Descrizione|  
 |-------------|-----------------|  
 |**Casella**|Un contenitore che organizza i controlli in un gruppo. È possibile aggiungere controlli a una casella ad eccezione di un separatore, un gruppo o una scheda. Una casella può essere orizzontale o verticale.|  
 |**Pulsante**|Un pulsante che avvia un'azione. È possibile aggiungere un pulsante a un gruppo, un gruppo di pulsanti, un elenco a discesa, una raccolta, un menu o un pulsante di menu combinato.|  

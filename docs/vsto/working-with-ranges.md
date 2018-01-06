@@ -20,16 +20,17 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64bac205a64eaf321bb0144d9f81edfa065b9029
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d585c6019455fae5305a848ef62c74cfedf6b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-ranges"></a>Utilizzo degli intervalli
   Le classi <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Interop.Excel.Range> contengono i metodi e le proprietà usati per eseguire attività con intervalli.  
   
-|Attività|Procedura|  
+|Attività|Routine|  
 |----------|---------------|  
 |Accesso a un intervallo e impostazione del valore.|[Procedura: Fare riferimento agli intervalli dei fogli di lavoro nel codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|  
 |Riempimento di un intervallo in base a un valore iniziale.|[Procedura: Riempire automaticamente gli intervalli con dati modificati in modo incrementale a livello di codice](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |Applicazione di stili alle celle di un'area.|[Procedura: Applicare stili agli intervalli nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|  
 |Ricerca di testo negli intervalli dei fogli di lavoro.|[Procedura: Cercare testo negli intervalli dei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|  
 |Applicazione di colore al testo in un intervallo di celle.|[Procedura: Applicare il colore a intervalli di Excel a livello di codice](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|  
-|Esecuzione di calcoli in Excel a livello di codice.|[Procedura: eseguire calcoli in Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
+|Esecuzione di calcoli in Excel a livello di codice.|[Procedura: Eseguire calcoli in Excel a livello di codice](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
 |Visualizzazione di una stringa in una cella.|[Procedura: Visualizzare una stringa in una cella del foglio di lavoro a livello di codice](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|  
   
  Per altre informazioni sulle attività e sul modello a oggetti di Excel, vedere [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  

@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5637a449ea40f6e4f910e061c7e2e324c91ae70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c099f73e98542c29718efc4158593da35d333abd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `appAddin` dello spazio dei nomi `vstov4` archivia informazioni specifiche della personalizzazione per i componenti aggiuntivi VSTO.  
@@ -52,10 +53,10 @@ ms.lasthandoff: 10/31/2017
  L'elemento `appAddin` ha gli elementi figlio seguenti.  
   
 ### <a name="friendlyname"></a>friendlyName  
- Parametro facoltativo. Il `friendlyName` elemento è descritto nel [&#60; friendlyName &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il `friendlyName` elemento è descritto nel [&#60; friendlyName &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Descrizione  
- Parametro facoltativo. Il `description` elemento è descritto nel [&#60; descrizione &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/description-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il `description` elemento è descritto nel [&#60; descrizione &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
  Obbligatorio solo per i componenti aggiuntivi VSTO di Outlook che includono aree di modulo. Il `formRegions` elemento è descritto nel [&#60; formRegions &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/formregions-element-office-development-in-visual-studio.md).  

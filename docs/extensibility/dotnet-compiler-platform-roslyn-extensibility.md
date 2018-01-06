@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f9811440146e1d758158a64fd227ba0a2c2e1e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b292593c6a6c426bb184acd67a920b5e76e3a51f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET compiler Platform (&quot;Roslyn&quot;) estendibilità
 La missione principali di .NET Compiler Platform ("Roslyn") è aprendo i compilatori c# e Visual Basic che consente di strumenti e agli sviluppatori di condividere i compilatori di informazioni dettagliate sui programmi. Strumenti di analisi codice migliorare la qualità del codice e generatori di aiuto nella costruzione di applicazione del codice. Strumenti di ottenere in modo più semplice, sono necessario accedere a maggiore della conoscenza di codice completo che solo i compilatori di. Anziché essere opachi traduttori (codice sorgente e il codice oggetto out), i compilatori di Roslyn offrono API che è possibile utilizzare per le attività correlate al codice, in strumenti e delle applicazioni.  

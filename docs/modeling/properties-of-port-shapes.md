@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6a645957ce06f77fe9cfb9d3bc3475a21a4213d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3cc8f57b0615be6255425e396f0fc4ea3e763810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-port-shapes"></a>Proprietà delle forme delle porte
 È possibile utilizzare le forme porta per rappresentare le classi di dominio nella finestra di progettazione generato.  
@@ -40,11 +41,11 @@ ms.lasthandoff: 10/27/2017
 |Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questa forma.|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla porta (`none`, `abstract` o `sealed`).|nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla porta (`none`, `abstract` o `sealed`).|none|  
 |Porta di base|Classe di base di questa forma.|(nessuno)|  
-|Nome|Il nome della forma.|Nome corrente|  
+|nome|Il nome della forma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questa forma.|Spazio dei nomi corrente|  
-|Tipo di strumento di suggerimento|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|nessuno|  
+|Tipo di strumento di suggerimento|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|none|  
 |Note|Note informale che sono associate a questa forma.|\<Nessuno >|  
 |Altezza iniziale|L'altezza iniziale di questa forma, espressa in pollici.|1|  
 |Larghezza iniziale|Larghezza iniziale della forma in pollici.|1,5|  

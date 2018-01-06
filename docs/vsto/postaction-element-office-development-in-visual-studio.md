@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 581ef7bafc075419df8e2dfb1731b334a9564455
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d42476d7298025fb18a703f027a2a870faf204a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `postAction` dello spazio dei nomi `vstav3` contiene gli elementi `entrypoint` e tutti gli elementi `postActionData` associati alle azioni post-distribuzione, che vengono eseguite dopo l'installazione delle soluzioni Office.  
@@ -47,10 +48,10 @@ ms.lasthandoff: 10/31/2017
  `postAction` presenta gli elementi seguenti:  
   
 ### <a name="entrypoint"></a>entrypoint  
- Parametro facoltativo. Il ruolo del `entryPoint` elemento il `vstav3` dello spazio dei nomi è definito in [&#60; entryPoints &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il ruolo del `entryPoint` elemento il `vstav3` dello spazio dei nomi è definito in [&#60; entryPoints &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactiondata"></a>postActionData  
- Parametro facoltativo. Il ruolo del `postActionData` elemento il `vstav3` dello spazio dei nomi è definito in [&#60; postActionData &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il ruolo del `postActionData` elemento il `vstav3` dello spazio dei nomi è definito in [&#60; postActionData &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione  
   

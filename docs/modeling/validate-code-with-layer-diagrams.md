@@ -23,11 +23,12 @@ caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1e9041c397b121a5919ad370ccb7020c229e9b61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con diagrammi di dipendenza
 
@@ -49,7 +50,7 @@ Per assicurarsi che non siano in conflitto con la progettazione codice, è possi
   
      Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.  
   
- **Requirements**  
+ **Requisiti**  
   
 -   Visual Studio  
   
@@ -121,7 +122,7 @@ In questa versione di Visual Studio, convalida della dipendenza si verifica in t
 2.  Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.  
   
     > [!NOTE]
-    >  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Questo errore si verifica quando il codice ha una dipendenza su un assembly che non viene specificato per il diagramma di dipendenze o al codice manca una dipendenza specificata nel diagramma di dipendenza. Esaminare la mappa codice o il codice per determinare se la dipendenza deve esistere. Per ulteriori informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
+    >  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Questo errore si verifica quando il codice ha una dipendenza su un assembly che non viene specificato per il diagramma di dipendenze o al codice manca una dipendenza specificata nel diagramma di dipendenza. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per ulteriori informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Per gestire gli errori, vedere [gestire errori di convalida](#ManageErrors).  
   

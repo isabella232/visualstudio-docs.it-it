@@ -15,16 +15,17 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffbfb131eedb316c321bbf955ec7cc2951c71b8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90f3d2347f8bf37173f3eb257293b71d706eb0a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-in-vspackages"></a>Routing dei comandi in VSPackage
 Un comando viene instradato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in base al contesto in cui viene eseguito. Nel contesto globale viene indirizzato dal contesto iniziale verso l'esterno.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Algoritmo di routing](../../extensibility/internals/command-routing-algorithm.md)  
  Descrive l'ordine di risoluzione di routing di comandi.  
   

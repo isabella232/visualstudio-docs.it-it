@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   Parametri sostituibili, o *token*, può essere utilizzato nei file di progetto per fornire valori per gli elementi di soluzione SharePoint i cui valori effettivi non sono noti in fase di progettazione. La relativa funzione è simile a quella dei token del modello standard di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per ulteriori informazioni, vedere [parametri di modello](/visualstudio/ide/template-parameters).  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>Elenco di token  
  Nella tabella seguente sono elencati i token disponibili.  
   
-|Nome|Descrizione|  
+|nome|Descrizione|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|Il nome del file di progetto che lo contiene, ad esempio, "NewProj".|  
 |$SharePoint.Project.FileNameWithoutExtension$|Il nome del file di progetto contenitore senza l'estensione del nome file. Ad esempio, "NewProj".|  

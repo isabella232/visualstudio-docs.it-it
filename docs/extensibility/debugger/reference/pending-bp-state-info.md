@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 909385cbf2b5fceb8d55ebe24aba763ccdf7e98a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dae98128d6f56399a2228fd00ec5a5402cd07f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 Contiene informazioni sullo stato di un punto di interruzione che è possibile associare a un percorso di codice.  

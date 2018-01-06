@@ -11,11 +11,12 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8a7658ff8e2f573f2da6ff3197b6a11f3b3a0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4a384eb3e75a499eb2a35c747f003846580738e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-an-override-in-visual-basic"></a>Generare una sostituzione in Visual Basic
 **Novità:** consente di generare immediatamente il codice per un qualsiasi metodo che può essere sottoposto a override da una classe base. 

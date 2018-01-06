@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 93e4393a7b6731a10a00dc309353dba5870c269f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 L'API immutabilità del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK consente a un programma di blocco o parte di un modello di linguaggio specifico di dominio (DSL) in modo che può essere letto ma non è stato modificato. Questa opzione di sola lettura, ad esempio, può essere utilizzata in modo che un utente è possibile chiedere ai colleghi di aggiungere annotazioni e verificare un modello DSL ma può impedire il Modifica originale.  
@@ -80,7 +81,7 @@ partition.SetLocks(Locks.Delete);
   
 |Valore|Vale a dire se `IsLocked(Value)` è true|  
 |-----------|------------------------------------------|  
-|Nessuno|Nessuna restrizione.|  
+|nessuno|Nessuna restrizione.|  
 |Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Questa opzione non viene applicata alle proprietà che vengono generate dal ruolo di una classe di dominio in una relazione.|  
 |Aggiunta|Impossibile creare nuovi elementi e i collegamenti in una partizione o l'archivio.<br /><br /> Non applicabile a `ModelElement`.|  
 |Move|Elemento non può essere spostato tra partizioni se `element.IsLocked(Move)` è true, o se `targetPartition.IsLocked(Move)` è true.|  

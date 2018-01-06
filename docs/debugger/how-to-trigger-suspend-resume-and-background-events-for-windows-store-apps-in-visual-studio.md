@@ -18,20 +18,21 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospendere, riprendere e gli eventi in background durante il debug di App UWP in Visual Studio
 Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) controlla lo stato di esecuzione dell'app, cioè avvio, sospensione, ripresa e terminazione, in risposta alle azioni dell'utente e allo stato del dispositivo. Quando esegui il debug, Windows disabilita questi eventi di attivazione. In questo argomento viene descritto come generare tali eventi nel debugger.  
   
  Viene inoltre descritto come eseguire il debug di **attività in background**. Le attività in background consentono di eseguire determinate operazioni in un processo in background, anche quando l'app non è in esecuzione. Puoi utilizzare il debugger per attivare la modalità di debug dell'app, quindi avviare l'attività in background ed eseguire il debug, senza avviare l'interfaccia utente.  
   
- Per ulteriori informazioni su Process Lifetime Management e in background attività vedere [avvio, ripresa, il multitasking e](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Per ulteriori informazioni su Process Lifetime Management e in background attività vedere [avvio, ripresa, il multitasking e](/windows/uwp/launch-resume/index).  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
+##  <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Attivare gli eventi di Process Lifetime Management](#BKMK_Trigger_Process_Lifecycle_Management_events)  
   
  [Attivare attività in background](#BKMK_Trigger_background_tasks)  
@@ -124,7 +125,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
 4.  Scegli il log **Diagnostica** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Test di App UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Test delle app UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Ciclo di vita dell'applicazione](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [Avvio ripresa e multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

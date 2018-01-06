@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54b15d849efacb681eb8b4238cd067144bc67342
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78993e12c1ab4098e20aad243faaa487ff0ea35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parametri del punto di ingresso Shell isolata (C++)
 Quando si avvia un'applicazione basata su shell di Visual Studio, chiama il punto di ingresso di avvio di shell di Visual Studio. Le impostazioni seguenti possono essere sostituite nella chiamata al punto di ingresso di avvio della shell. Per una descrizione di ogni impostazione, vedere [. File pkgdef](modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  

@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7481531c910ddf668ce911ae37215545b77903
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d52a9dbed6cec64426247a0b92bff2b8ec98ec97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Scrittura di un analizzatore di espressioni di Common Language Runtime
 > [!IMPORTANT]
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  Alcuni aspetti del debug pacchetto Visual Studio devono interpretare il codice nel contesto del linguaggio di programmazione. Ad esempio, quando si interrompe esecuzione in un punto di interruzione, tutte le espressioni che l'utente ha digitato in un **espressioni di controllo** finestra deve essere valutata e deve essere visualizzata. Inoltre, l'utente può modificare il valore di una variabile locale, digitare un'espressione in un **espressioni di controllo** finestra o nel **immediato** finestra.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Common Language Runtime e valutazione delle espressioni](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
  Viene illustrato che quando si integra il linguaggio di programmazione proprietario nell'IDE di Visual Studio, la scrittura di un EE in grado di valutazione di espressioni all'interno del contesto del linguaggio proprietaria consente di compilare in Microsoft intermediate language (MSIL) senza scrivere un motore di debug.  
   

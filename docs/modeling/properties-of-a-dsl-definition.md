@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le proprietà di definizione, ad esempio numerazione delle versioni. Cui vengono visualizzate le proprietà di DslDefinition il **proprietà** finestra quando si fa clic su un'area vuota del diagramma nel *Domain-Specific Language progettazione*.  
@@ -30,7 +31,7 @@ Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le pro
 |Modificatore di accesso|Determina se il modificatore di accesso per la classe di dominio è pubblica o interna.|public|  
 |Attributi personalizzati|Personalizzati definiti attributi per la classe di dominio.<br /><br /> **Nota** usare il pulsante Sfoglia per aggiungere un attributo.|\<Nessuno >|  
 |Nome società|Il nome del nome della società corrente nel Registro di sistema.|Nome della società corrente|  
-|Nome|Il nome di questa classe di dominio.|Nome corrente|  
+|nome|Il nome di questa classe di dominio.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi associato a questa classe di dominio.|Spazio dei nomi corrente|  
 |Guid del pacchetto|Guid per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pacchetto generato per questo linguaggio DSL.|\<Nessuno >|  
 |Pacchetto Namespace|Lo spazio dei nomi per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pacchetto generato per questo linguaggio DSL.|\<Nessuno >|  
@@ -42,7 +43,7 @@ Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le pro
 |Compilazione|Il numero di build incrementali per questa definizione di linguaggio specifico di dominio.|0|  
 |Numero di versione principale|Il numero di build principale incrementali per questa definizione di linguaggio specifico di dominio.|1|  
 |Versione secondaria|Il numero di build secondaria incrementali per questa definizione di linguaggio specifico di dominio.|0|  
-|Revision|Revisione incrementale numero di build per questa definizione di linguaggio specifico di dominio.|0|  
+|Revisione|Revisione incrementale numero di build per questa definizione di linguaggio specifico di dominio.|0|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

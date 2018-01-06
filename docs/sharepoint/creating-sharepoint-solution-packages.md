@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Creazione di pacchetti delle soluzioni SharePoint
   Utilizzando la finestra di progettazione del pacchetto, è possibile creare e personalizzare i pacchetti di distribuzione. Ad esempio, è possibile aggiungere elementi di progetto SharePoint e le funzionalità, reimpostare il server IIS, impostare gli ambiti di attivazione di funzionalità e identificare le dipendenze di funzionalità. Inoltre, la finestra di progettazione genera un manifesto del file XML che descrive ogni pacchetto.  
@@ -39,11 +40,11 @@ ms.lasthandoff: 10/31/2017
   
 |Proprietà della finestra di progettazione del pacchetto|Descrizione dell'impostazione predefinita|  
 |-------------------------------|------------------------------------|  
-|Nome|Obbligatorio. Il nome predefinito del pacchetto è impostato su *ProjectName*.|  
-|Server Web di reimpostazione|Parametro facoltativo. Selezionare se si desidera riavviare il server Web dopo aver installato il file con estensione wsp nel server SharePoint.|  
+|nome|Obbligatorio. Il nome predefinito del pacchetto è impostato su *ProjectName*.|  
+|Server Web di reimpostazione|Facoltativo. Selezionare se si desidera riavviare il server Web dopo aver installato il file con estensione wsp nel server SharePoint.|  
 |Tipo di Server di distribuzione|Obbligatorio. Per impostazione predefinita, l'ambito è impostato su ApplicationServer.<br /><br /> Server applicazioni: Descrive un server che ospita i servizi.<br /><br /> WebFrontEnd: Descrive un server che ospita i siti Web.|  
 |Elementi nella soluzione|Tutti gli elementi di progetto SharePoint e le funzionalità che possono essere aggiunto al pacchetto.|  
-|Elementi nel pacchetto|Parametro facoltativo. Tutti gli elementi di SharePoint e le funzionalità che si desidera distribuire nel pacchetto.|  
+|Elementi nel pacchetto|Facoltativo. Tutti gli elementi di SharePoint e le funzionalità che si desidera distribuire nel pacchetto.|  
   
 ## <a name="configuring-the-packaging-process"></a>Configurazione del processo di creazione di pacchetti  
  Dopo aver sviluppato le soluzioni SharePoint in Visual Studio, è possibile personalizzare la modalità in cui sono inclusi i progetti.  

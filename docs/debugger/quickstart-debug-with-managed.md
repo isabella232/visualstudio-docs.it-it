@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545241d254d8ea2d2532ee8590e8e1867d635592
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Eseguire il debug con codice gestito utilizzando il debugger di Visual Studio
 
@@ -29,7 +30,7 @@ Il debugger di Visual Studio fornisce molte funzionalità avanzate che consenton
 
 2. In **Visual c#** o **Visual Basic**, scegliere **.NET Core**, quindi nel riquadro centrale scegliere **applicazione Console (.NET Core)**.
 
-     Se non viene visualizzato il **applicazione Console (.NET Core)** modello di progetto, fare clic sul **aprire Visual Studio Installer** collegamento nel riquadro sinistro della finestra il **nuovo progetto** la finestra di dialogo. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **lo sviluppo desktop .NET** e **.NET Core** carico di lavoro, quindi scegliere **modifica**.
+     Se non viene visualizzato il modello di progetto **Console App (.NET Core)** (App console (.NET Core)), fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il **lo sviluppo desktop .NET** e **.NET Core** carico di lavoro, quindi scegliere **modifica**.
 
 3. Digitare un nome come **MyDbgApp** e fare clic su **OK**.
 

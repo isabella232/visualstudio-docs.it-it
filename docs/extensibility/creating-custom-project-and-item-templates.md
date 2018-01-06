@@ -12,21 +12,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 3677dd4ad6177f4085c907d1fceaaf37978bf769
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Creazione di un progetto personalizzato e modelli di elemento
-Visual Studio SDK include modelli di progetto che creano un modello di progetto personalizzato e un modello di elemento personalizzati. Questi modelli includono alcune sostituzioni di parametro comune e compilare come file zip. Non vengono distribuiti automaticamente e non sono disponibili nell'istanza sperimentale. È necessario copiare il file zip al file nel percorso è  
+
+Visual Studio SDK include modelli di progetto che creano un modello di progetto personalizzato e un modello di elemento personalizzati. Questi modelli includono alcune sostituzioni di parametro comune e compilare come file zip. Non vengono distribuiti automaticamente e non sono disponibili nell'istanza sperimentale. È necessario copiare il file zip generati alla directory di modello di utente.
   
- I modelli di creazione del modello consentono di includere modelli nelle estensioni di dimensioni maggiori. Ciò consente di implementare il controllo della versione nel file di origine e creare un gruppo di progetti di modello in un pacchetto VSIX.  
+I modelli di creazione del modello consentono di includere modelli nelle estensioni di dimensioni maggiori. Ciò consente di implementare il controllo della versione nel file di origine e creare un gruppo di progetti di modello in un pacchetto VSIX.  
   
- Per gli scenari di creazione di modelli di base, è necessario utilizzare il **Esporta modello** guidata, l'output in un file compresso. Per ulteriori informazioni sulla creazione di modelli di base, vedere [creazione Project and Item Templates](../ide/creating-project-and-item-templates.md).  
-  
- A partire da Visual Studio 2017, l'analisi per un progetto personalizzato e modelli di elementi verrà non verrà eseguita. Al contrario, l'estensione è necessario fornire file manifesto che descrivono il percorso di installazione di questi modelli. Per aggiornare le estensioni VSIX, è possibile utilizzare Visual Studio 2017. Se si distribuisce l'estensione usando un file MSI, è necessario generare manualmente i file manifesto del modello. Per ulteriori informazioni, vedere [aggiornamento progetto personalizzato e i modelli di Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schema del modello di manifesto è documentato [Visual Studio modello Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).  
-  
+È anche possibile configurare un modello per installare i pacchetti NuGet. Per ulteriori informazioni, vedere [pacchetti NuGet in modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates).
+
+Per gli scenari di creazione di modelli di base, è necessario utilizzare il **Esporta modello** guidata, l'output in un file compresso. Per ulteriori informazioni sulla creazione di modelli di base, vedere [creazione Project and Item Templates](../ide/creating-project-and-item-templates.md).  
+
+> [!NOTE]
+> A partire da Visual Studio 2017, l'analisi per un progetto personalizzato e modelli di elementi verrà non verrà eseguita. Al contrario, l'estensione è necessario fornire file manifesto che descrivono il percorso di installazione di questi modelli. Per aggiornare le estensioni VSIX, è possibile utilizzare Visual Studio 2017. Se si distribuisce l'estensione usando un file MSI, è necessario generare manualmente i file manifesto del modello. Per ulteriori informazioni, vedere [aggiornamento progetto personalizzato e i modelli di Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schema del modello di manifesto è documentato [Visual Studio modello Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
 ## <a name="creating-a-project-template"></a>Creazione di un modello di progetto  
   
 1.  Creare un progetto di modello di progetto. È possibile trovare il modello di progetto di **nuovo progetto** finestra di dialogo, in Visual Basic o Visual c# **estendibilità** cartella.  
@@ -81,5 +86,7 @@ Visual Studio SDK include modelli di progetto che creano un modello di progetto 
   
 5.  Per un progetto di modello di progetto, si dovrebbe vedere il modello di progetto elencato nel **nuovo progetto** finestra di dialogo (**File > Nuovo > progetto**), nel nodo Visual Basic o Visual c#. Per un progetto di modello di elemento, verrà visualizzato il modello di elemento elencato nella finestra di dialogo Aggiungi nuovo elemento (nel **Esplora**, selezionare il nodo del progetto e scegliere **Aggiungi / nuovo elemento**).  
   
-## <a name="see-also"></a>Vedere anche  
- [Riferimenti ai modelli di Visual Studio](../ide/visual-studio-template-reference.md)
+## <a name="see-also"></a>Vedere anche
+
+[Riferimento al modello di Visual Studio](../ide/visual-studio-template-reference.md)  
+[Pacchetti NuGet in modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

@@ -16,18 +16,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 492b86581f567aa6bcca7f782e588ca82f1878f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 30b81a0926ebb984aab852b53c081742ea44f391
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Riferimento (API di debug di Visual Studio)
 I riferimenti di Visual Studio Debugging SDK descrivono il modello di base per l'architettura della fase di esecuzione e funzionalità del debugger e i relativi componenti. La documentazione presupposti con il minor numero possibile di componenti e interfacce che descrive, a parte il comportamento che viene definito tramite le interfacce.  
   
  L'obiettivo della sezione di riferimento è per fornire supporto per diversi di un set di lingue, i tempi di esecuzione e i sistemi operativi possibili.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
  Contiene la documentazione per le interfacce, enumeratori e strutture di API di debug di Visual Studio.  
   

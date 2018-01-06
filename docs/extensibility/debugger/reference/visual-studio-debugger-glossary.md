@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c4b91633c94b899157cef5418be0ac8a4d784f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossario di Debugger di Visual Studio
 Di seguito sono termini usati nel [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugging SDK.  
@@ -40,7 +41,7 @@ Di seguito sono termini usati nel [!INCLUDE[vsprvs](../../../code-quality/includ
  motore di debug (Germania)  
  Un componente che consente il debug di un'architettura della fase di esecuzione. Un motore di debug funziona in combinazione con il sistema operativo o un interprete e fornisce servizi di debug, ad esempio la valutazione di espressioni, i punti di interruzione e controllo di esecuzione.  
   
- contesto di documento  
+ contesto del documento  
  Fornisce un'astrazione di una posizione in un documento di file di origine nota al motore di debug. Per la maggior parte delle lingue, un contesto di documento è una posizione in un file di origine. Per le lingue utilizzate, per cui il file di origine potrebbe non essere testo, un contesto di documento potrebbe essere rappresentato da un altro modo. Vedere anche *posizione documento*.  
   
  posizione di documento  

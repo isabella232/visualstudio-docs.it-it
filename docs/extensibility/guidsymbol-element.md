@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dcad9882b1c72c15837529d736eeabff58f3826
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5089d87156bd5eb191176fe73ab19a01d497b90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 Il `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta un menu, gruppo o comando. L'ID proviene da un `IDSymbol` elemento il `GuidSymbol` elemento. Il `GuidSymbol` elemento ha un `name` attributo che fornisce un nome descrittivo per il GUID, contenute nel `value` attributo.  
@@ -41,7 +42,7 @@ Il `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta 
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |name|Obbligatorio. Nome del simbolo GUID.|  
-|valore|Obbligatorio. GUID del simbolo GUID.|  
+|predefinito|Obbligatorio. GUID del simbolo GUID.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   

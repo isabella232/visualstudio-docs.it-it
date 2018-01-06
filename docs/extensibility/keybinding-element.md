@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>Tasto di scelta rapida elemento
 L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.  
@@ -43,11 +44,11 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 |ID|Obbligatorio.|  
 |editor|Obbligatorio. L'editor GUID indica il contesto di modifica per il quale sarà attivo il tasto di scelta rapida. Il valore di ambito di associazione globale è "guidVSStd97".|  
 |key1|Obbligatorio. I valori validi includono tutti possibile digitare caratteri alfanumerici e i valori esadecimali a due cifre preceduti da 0x e [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|MOD1|Parametro facoltativo. Qualsiasi combinazione di MAIUSC separate da spazio CTRL e ALT.|  
-|key2|Parametro facoltativo. I valori validi includono tutti possibile digitare caratteri alfanumerici e i valori esadecimali a due cifre preceduti da 0x e [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
-|MOD2|Parametro facoltativo. Qualsiasi combinazione di MAIUSC separate da spazio CTRL e ALT.|  
-|emulatore|Parametro facoltativo.|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|MOD1|Facoltativo. Qualsiasi combinazione di MAIUSC separate da spazio CTRL e ALT.|  
+|key2|Facoltativo. I valori validi includono tutti possibile digitare caratteri alfanumerici e i valori esadecimali a due cifre preceduti da 0x e [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|MOD2|Facoltativo. Qualsiasi combinazione di MAIUSC separate da spazio CTRL e ALT.|  
+|emulatore|Facoltativo.|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   

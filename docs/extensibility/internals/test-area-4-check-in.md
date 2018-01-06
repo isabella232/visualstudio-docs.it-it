@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3694e8f4a8cdbdac147df3d6e60324888bccf048
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-4-check-in"></a>Area test 4: Check-In
 Questa area di plug-in test di controllo del codice sorgente include gli elementi aggiornati di invio all'archivio delle versioni tramite il **Archivia** comando.  
@@ -48,7 +49,7 @@ Questa area di plug-in test di controllo del codice sorgente include gli element
 ### <a name="case-4a-modified-items"></a>Caso 4a: elementi modificati  
  Descrive l'utilizzo di controllo nell'azione per aggiornare un file di controllo del codice sorgente che è stato modificato.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Modificare un file di testo che è stato estratto, archiviare solo i file (**Archivia** la finestra di dialogo)|1.  Creare un nuovo progetto con un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre e modificare il file di testo.<br />4.  Check-in tramite la finestra di dialogo Archivia (**File**, **controllo del codice sorgente**, **Archivia**).|Comportamento previsto comune.|  
 |Modificare un file di testo che è stato estratto, archiviare solo i file (**archiviazioni in sospeso** finestra)|1.  Creare un nuovo progetto con un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre e modificare il file di testo.<br />4.  Archiviare tramite il **archiviazioni in sospeso** finestra.|Comportamento previsto comune.|  
@@ -56,7 +57,7 @@ Questa area di plug-in test di controllo del codice sorgente include gli element
 ### <a name="case-4b-adding-files"></a>Caso 4b: aggiunta di file  
  Quando si aggiunge un file a un progetto o un elemento a una soluzione, necessario modificare anche il progetto o soluzione. In questo modo il file padre anche estratto e deve essere archiviato per completare l'aggiunta.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Aggiungere un file di testo e archivia i file (**Archivia** la finestra di dialogo)|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file di testo al progetto.<br />4.  Se richiesto, accettare check-out del progetto.<br />5.  Selezionare la soluzione in **Esplora**.<br />6.  Archivia dal **Archivia** la finestra di dialogo.|Comportamento previsto comune.|  
 |Aggiungere un file di testo e archivia i file (**archiviazioni in sospeso** finestra)|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file di testo al progetto.<br />4.  Se richiesto, accettare check-out del progetto.<br />5.  Controllare nella soluzione da **archiviazioni in sospeso** finestra.|Comportamento previsto comune|  
@@ -64,7 +65,7 @@ Questa area di plug-in test di controllo del codice sorgente include gli element
 ### <a name="case-4c-adding-projects"></a>Caso c 4: aggiunta di progetti  
  Quando si aggiunge un progetto a una soluzione, necessario modificare anche la soluzione. In questo modo il file di soluzione inoltre estratto e deve essere archiviato per completare l'aggiunta.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Aggiungere un progetto a una soluzione vuota nel controllo del codice sorgente (**Archivia** la finestra di dialogo)|1.  Creare una soluzione vuota.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto.<br />4.  Se richiesto, accettare check-out della soluzione.<br />5.  Archivia dal **Archivia** la finestra di dialogo.|Comportamento previsto comune.|  
 |Aggiungere un progetto a una soluzione vuota nel controllo del codice sorgente (**archiviazioni in sospeso** finestra)|1.  Creare una soluzione vuota.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto.<br />4.  Se richiesto, accettare check-out della soluzione.<br />5.  Controllare nella soluzione da **archiviazioni in sospeso** finestra.|Comportamento previsto comune.|  

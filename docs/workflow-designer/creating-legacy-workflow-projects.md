@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 02f3d66b7d519546f1da89bb323ec9ab740628f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 44b938467454d73c460cc9276b46bc165d36bcee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-legacy-workflow-projects"></a>Creazione di progetti flusso di lavoro legacy
 Contenuto della sezione viene descritto come creare progetti flusso di lavoro usando la [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] legacy fornita da Visual Studio 2010. La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy è destinata a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Sono incluse informazioni su come usare i modelli del progetto di flusso di lavoro elencati nella tabella seguente.  
@@ -33,7 +34,7 @@ Contenuto della sezione viene descritto come creare progetti flusso di lavoro us
 |Libreria del flusso di lavoro di una macchina a stati|Progetto per la creazione di una libreria del flusso di lavoro della macchina a stati.|  
 |Progetto del flusso di lavoro vuoto|Progetto vuoto per la creazione di un'applicazione del flusso di lavoro.|  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Creare progetti di flusso di lavoro (legacy)](../workflow-designer/how-to-create-workflow-projects-legacy.md)  
   
  [Procedura: Creare applicazioni console del flusso di lavoro sequenziale (legacy)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)  

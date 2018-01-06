@@ -18,11 +18,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99380078b2fc49bcc5e1efb7a36ac7f28028a0d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec4ca6100b3b0587e7e4dba5a56ceca4e5d5534c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-project-system"></a>Estensione del sistema di progetto SharePoint
   È possibile creare soluzioni di SharePoint utilizzando un set di modelli di progetto e modelli di elementi in Visual Studio. Questi modelli di soddisfano i requisiti di numerosi scenari di sviluppo, ma è possibile individuare alcuni casi in cui non dispongono della funzionalità desiderata. In questi casi, è possibile estendere il sistema di progetto SharePoint.  

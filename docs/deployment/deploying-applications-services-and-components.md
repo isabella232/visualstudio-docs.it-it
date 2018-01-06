@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -43,7 +44,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
-- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ tramite la distribuzione locale o collegamento statico. Per ulteriori informazioni, vedere [la distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ tramite la distribuzione locale o collegamento statico. Per ulteriori informazioni, vedere [la distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Pubblicazione sul Web o di distribuire in una condivisione di rete
 
@@ -55,7 +56,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
     È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per ulteriori informazioni, vedere [servizi e applicazioni web ASP.NET distribuzione](http://www.asp.net/aspnet/overview/deployment).
 
-- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ utilizzando la distribuzione centrale. Per ulteriori informazioni, vedere [la distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ utilizzando la distribuzione centrale. Per ulteriori informazioni, vedere [la distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 - **Desktop Windows** è possibile pubblicare un'applicazione desktop di Windows in un server web o una condivisione di file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per ulteriori informazioni, vedere [distribuire un'applicazione desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) e [distribuire un'applicazione nativa utilizzando ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -72,7 +73,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
     > [!NOTE]
     > Se si dispone già di un account Azure, è possibile [iscriverti qui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-- Altri **servizi di Azure**: vedere la specifica [servizio Azure](https://docs.microsoft.com/azure/#pivot=products) documentazione per diverse opzioni di distribuzione che possono essere supportati da Visual Studio.
+- Altri **servizi di Azure**: vedere la specifica [servizio Azure](/azure/#pivot=products) documentazione per diverse opzioni di distribuzione che possono essere supportati da Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
 

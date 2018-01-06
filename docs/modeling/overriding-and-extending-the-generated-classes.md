@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 81f218f9c0d9cd5d9c6abf8f4f9f0fb78181f4f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d794edbb4f554e71e5d65a3e48e5393be61896a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Override ed estensione delle classi generate
 La definizione DSL è una piattaforma in cui è possibile compilare un potente set di strumenti che dipendono da un linguaggio specifico di dominio. Eseguendo l'override e di estendere le classi generate dalla definizione del linguaggio DSL è possono eseguire molte estensioni e gli adeguamenti. Tali classi includono non solo le classi di dominio che è stato definito in modo esplicito nel diagramma della definizione DSL, ma anche altre classi che definiscono la casella degli strumenti, Esplora, la serializzazione e così via.  

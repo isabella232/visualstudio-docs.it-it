@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: modifica della formattazione dei documenti mediante i controlli CheckBox
   Questa procedura dettagliata viene illustrato come utilizzare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**applyBoldFont**|  
+    |**Name**|**applyBoldFont**|  
     |**per**|**Grassetto**|  
   
 4.  Premere **invio** per spostare il cursore sotto la prima casella di controllo.  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**applyItalicFont**|  
+    |**Name**|**applyItalicFont**|  
     |**per**|**Corsivo**|  
   
 6.  Premere **invio** per spostare il cursore sotto la casella di controllo secondo.  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**applyUnderlineFont**|  
+    |**Name**|**applyUnderlineFont**|  
     |**per**|**Carattere di sottolineatura**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>Per aggiungere testo e un controllo Bookmark  

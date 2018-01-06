@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 185e513f1d9733c071ecacb65f67f2530e43cdc3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d0114692af0c470a3f2aab181219394a54571d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Edizioni di Visual Studio per la visualizzazione &amp; SDK di modellazione
 Di seguito sono riportati gli elenchi delle versioni di Visual Studio che sono supportati con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e la distribuzione. Per ulteriori informazioni su queste edizioni, vedere Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).  

@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 602615426a8aeca118f6faba65e21778136b0ce6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 712820c973518de08223741ea0755a3641a0e541
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procedura dettagliata: importare gli elementi da un sito di SharePoint esistente
   Questa procedura dettagliata viene illustrato come importare elementi da un sito di SharePoint esistente in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-create-and-customize-a-sharepoint-site"></a>Per creare e personalizzare un sito di SharePoint  
   
-1.  Aprire un sito di SharePoint utilizzando un Web browser, ad esempio http://*nome sistema*/SitePages/Home.aspx..  
+1.  Aprire un sito di SharePoint utilizzando un Web browser, ad esempio http://*nome sistema*/SitePages/Home.aspx.  
   
 2.  Creare un sito secondario dal sito di SharePoint principale aprendo il **Azioni sito** menu e scegliendo **nuovo sito**.  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Nel **titolo** immettere **prova colonna sito 1**, nel **nome URL** immettere **columntest1**; lasciare le altre impostazioni in base all'impostazione predefinita valori. e quindi scegliere il **crea** pulsante.  
   
-5.  Dopo la creazione del sito, passare nel browser al sito principale, http://*nome sistema*/SitePages/Home.aspx..  
+5.  Dopo la creazione del sito, passare nel browser al sito principale, http://*nome sistema*/SitePages/Home.aspx.  
   
 6.  Nuovamente, creare un sito secondario vuoto dal sito di SharePoint principale aprendo il **Azioni sito** menu, scegliendo **nuovo sito**e quindi scegliendo il **sito vuoto** tipo.  
   

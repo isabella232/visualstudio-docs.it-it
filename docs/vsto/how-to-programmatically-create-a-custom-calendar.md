@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 824388d1324095ed8296fd89c71b955967c9bfb2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5f8b606008c66e2c0c173351d5e3d31c808c996
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Procedura: creare un calendario personalizzato a livello di codice
   Questo esempio viene creata una nuova cartella Calendario denominata **PersonalCalendar**, quindi crea un nuovo elemento appuntamento e lo aggiunge alla cartella Calendario. Il codice visualizza quindi la cartella Calendario.  

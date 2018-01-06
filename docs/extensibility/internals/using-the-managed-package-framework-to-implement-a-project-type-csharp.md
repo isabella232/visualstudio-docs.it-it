@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16e1d301e5a3977f656c52f9c97eb43ee216075f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 108ace4286ae896f38d7f19fea00873e7ca89e9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Utilizzando il Framework di pacchetto gestito per implementare un tipo di progetto (c#)
 Il Framework di pacchetto gestito (MPF) fornisce le classi c# è possibile utilizzare o ereditare da per implementare i propri tipi di progetto. Il Framework MPF implementa molte delle interfacce di che Visual Studio prevede un tipo di progetto per fornire, permettendo a concentrarsi sull'implementazione delle indicazioni del tipo di progetto.  

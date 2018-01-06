@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novità &#39; s New in Visual Studio 2015 SDK
 Visual Studio SDK include le seguenti funzionalità nuove e aggiornate per Visual Studio 2015, Visual Studio 2015 aggiornate e Visual Studio 2017.  
@@ -53,7 +54,7 @@ Visual Studio SDK include le seguenti funzionalità nuove e aggiornate per Visua
  Per C++, la procedura guidata VSPackage supporta i comandi di menu e finestre degli strumenti editor personalizzati. Cercare nel **nuovo progetto** nella finestra di dialogo **Visual C++ / Extensibility**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Assembly di riferimento SDK di Visual Studio tramite NuGet  
- Per garantire una maggiore portabilità e la condivisione dei progetti di estendibilità, è possibile utilizzare le versioni di NuGet di assembly di riferimento di Visual Studio SDK.  Questi sono disponibili in [nuget.org](http://www.nuget.org) pubblicati da [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) e possono essere facilmente aggiunte al progetto o soluzione tramite Visual Studio **fa riferimento / gestione NuGet Pacchetti** finestra di dialogo. È possibile aggiungere singoli riferimenti agli assembly di estendibilità specifico o aggiungere tutto il SDK di Visual Studio di fa riferimento ad assembly in una sola volta tramite il SDK di Visual Studio [pacchetto Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Per ulteriori informazioni su NuGet, vedere il [documentazione di NuGet](http://docs.microsoft.com/NuGet) e [UI Package Manager](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) argomenti.  
+ Per garantire una maggiore portabilità e la condivisione dei progetti di estendibilità, è possibile utilizzare le versioni di NuGet di assembly di riferimento di Visual Studio SDK.  Questi sono disponibili in [nuget.org](http://www.nuget.org) pubblicati da [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) e possono essere facilmente aggiunte al progetto o soluzione tramite Visual Studio **fa riferimento / gestione NuGet Pacchetti** finestra di dialogo. È possibile aggiungere singoli riferimenti agli assembly di estendibilità specifico o aggiungere tutto il SDK di Visual Studio di fa riferimento ad assembly in una sola volta tramite il SDK di Visual Studio [pacchetto Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Per ulteriori informazioni su NuGet, vedere il [documentazione di NuGet](/NuGet) e [UI Package Manager](/NuGet/Tools/Package-Manager-UI) argomenti.  
   
  Quando si utilizzano le versioni di NuGet di assembly di riferimento di Visual Studio SDK, un altro utente non è necessario installare il SDK di Visual Studio per aprire e compilare il progetto.  Gli strumenti di compilazione di VS SDK e gli assembly di riferimento NuGet verranno installati automaticamente nel proprio computer per il progetto.  
   

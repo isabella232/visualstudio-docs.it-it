@@ -20,18 +20,19 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e49e8d50905dc0bb0b3c104a7133fe7435e2e944
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 161d1d1e6b48de029124290ff38d04427c543b6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-application-page"></a>Procedura dettagliata: creazione di una pagina di un'applicazione SharePoint
   Una pagina dell'applicazione è un tipo speciale di una pagina ASP.NET. Le pagine dell'applicazione includono contenuto che viene unito con una pagina master di SharePoint. Per ulteriori informazioni, vedere [la creazione di pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
  Questa procedura dettagliata viene illustrato come creare una pagina dell'applicazione e quindi eseguire il debug tramite un sito di SharePoint locale. Questa pagina vengono visualizzati tutti gli elementi di ogni utente ha creato o modificato in tutti i siti nella server farm.  
   
- In questa procedura dettagliata vengono illustrate le attività seguenti:  
+ Questa procedura dettagliata illustra le attività seguenti:  
   
 -   Creazione di un progetto SharePoint.  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 -   La pagina dell'applicazione di test.  
   
 > [!NOTE]  
->  Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  

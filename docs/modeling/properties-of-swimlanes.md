@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1b8eacf8fdd74fc9fe0703dc50beb46a2442e939
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f43af2ef4a3a13952fb04c594db336afcb97afbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-swimlanes"></a>Proprietà delle corsie
 È possibile aggiungere le corsie a un diagramma. Le corsie dividono un diagramma in aree verticale o orizzontale. È possibile definire altre forme da visualizzare all'interno delle corsie. Per ulteriori informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -36,9 +37,9 @@ ms.lasthandoff: 10/27/2017
 |Attributi personalizzati|Consente di aggiungere attributi alla classe di codice che viene generata da questa corsia.|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di origine di codice che viene generata dalla corsia (`none`, `abstract` o `sealed`).|nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di origine di codice che viene generata dalla corsia (`none`, `abstract` o `sealed`).|none|  
 |Base corsia|Classe di base di questa corsia.|(nessuno)|  
-|Nome|Il nome di questa corsia.|Nome corrente|  
+|nome|Il nome di questa corsia.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questa corsia.|Spazio dei nomi corrente|  
 |ToolTip (tipo)|La modalità in cui è definita la descrizione comando (`fixed`, `variable`, o `none`). Se `fixed`, quindi il valore di `Fixed Tooltip Text` proprietà viene utilizzata; se `variable`, quindi la descrizione comandi è definita nel codice personalizzato.|\<Nessuno >|  
 |Note|Note informale che sono associate a questa corsia.|\<Nessuno >|  

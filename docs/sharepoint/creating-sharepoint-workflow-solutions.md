@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fornisce strumenti che consentono di creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti e voci di elenco in un sito Web di SharePoint. Gli elementi forniti prevedono una finestra di progettazione, un set di controlli dell'attività e i riferimenti all'assembly necessari. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]include anche il **Personalizzazione guidata SharePoint**, per creare e configurare i flussi di lavoro.  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="collecting-information-during-the-workflow"></a>Raccolta delle informazioni durante il flusso di lavoro  
  È possibile raccogliere informazioni dagli utenti in determinati momenti nel flusso di lavoro. È possibile raccogliere informazioni tramite moduli o le proprietà dell'elemento.  
   
-### <a name="forms"></a>Form  
+### <a name="forms"></a>Moduli  
  I moduli sono come le finestre di dialogo contenenti domande che consentono agli utenti di fornire risposte.  
   
  Esistono quattro tipi di form che può essere usato in un flusso di lavoro:  

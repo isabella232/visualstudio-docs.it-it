@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 121544050a4bc17bbf616b1a2c7b9a90f98f9c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13951a42b5a0fe6874c713bea3025e232b259b6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfacce (debug di Visual Studio)
 I metodi sono elencati in ordine alfabetico in ogni interfaccia nella tabella del contenuto e nella pagina dell'interfaccia nell'ordine Vtable.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)  
  Descrive le interfacce utilizzate nel motore di debug.  
   

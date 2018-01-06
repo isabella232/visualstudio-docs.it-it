@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: creazione di un elenco esterno in SharePoint tramite il servizio di integrazione applicativa dei dati
   Il servizio di integrazione applicativa dei dati (BDC) consente di visualizzare i dati aziendali da applicazioni server back-end, servizi Web e database SharePoint.  
@@ -199,11 +200,11 @@ ms.lasthandoff: 10/31/2017
   
 10. Ripetere il passaggio 6 per creare un descrittore di tipo per ognuno dei seguenti campi.  
   
-    |Nome|Nome tipo|  
+    |nome|Nome tipo|  
     |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
-    |Phone|System.String|  
+    |Telefono|System.String|  
     |emailAddress|System.String|  
     |EmailPromotion|System.Int32|  
     |NameStyle|System.Boolean|  
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>Per testare il progetto  
   
-1.  Scegliere il **F5** chiave.  
+1.  Premere **F5**.  
   
      Apre il sito di SharePoint.  
   

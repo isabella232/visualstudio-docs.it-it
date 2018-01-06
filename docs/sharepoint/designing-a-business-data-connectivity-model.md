@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Progettazione di un modello di integrazione applicativa dei dati
   È possibile sviluppare un modello per il servizio di integrazione applicativa dei dati (BDC) mediante l'aggiunta di metodi e le entità in un file di modello. Un'entità descrive una raccolta di campi dati. Ad esempio, un'entità può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio aggiunta, eliminazione o aggiornamento dei dati rappresentati dalle entità. Per ulteriori informazioni, vedere [l'integrazione di dati di Business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
 |Attività|Opzione|  
 |----------|------------|  
-|Per distribuire i modelli per il servizio di integrazione applicativa dei dati.|Modifica|  
+|Per distribuire i modelli per il servizio di integrazione applicativa dei dati.|Edit|  
 |Per creare elenchi e le Web part tramite esterno tipi di contenuto (entità) nel modello.|Selezione nei client|  
 |Per creare, leggere, aggiornare ed eliminare dati di entità.|Esegui|  
   

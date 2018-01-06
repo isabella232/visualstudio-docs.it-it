@@ -13,16 +13,17 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c28fbedddcd5a3d7bb80f1c14cd9a7f2ffe89eb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0435225f30f5f596aed4631f0130b94cd3b273ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Testo della struttura e nascosto in un servizio di linguaggio Legacy
 Struttura consente di comprimere una sequenza di righe di testo in una singola riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che può essere visualizzato o nascosto.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Fornire il supporto per la struttura in un servizio di linguaggio legacy](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  Viene illustrato come implementare  
   

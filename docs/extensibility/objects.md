@@ -13,16 +13,17 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7c42521915574952649776894ddc660e8e49c11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c79183861539849a04e4936ed9b0f16092963496
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="objects"></a>Oggetti
 Le informazioni di riferimento seguenti vengono illustrati gli oggetti utilizzati per creare un'istanza dell'editor di testo di base.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Oggetto VSCodeWindow](../extensibility/vscodewindow-object.md)  
  Viene descritto l'oggetto finestra di codice, una finestra del documento specializzato che è possibile includere uno o più visualizzazioni di testo.  
   

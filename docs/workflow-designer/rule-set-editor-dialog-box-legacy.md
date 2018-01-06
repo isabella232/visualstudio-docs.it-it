@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6ac342921696cb2a88426e2fd1f1ddee79e9341c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1c0b55f1539526e9386df2d6de050c14fb8f59cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
 Questo argomento viene descritto come utilizzare il **Editor Set di regole** nella finestra di dialogo legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -39,7 +40,7 @@ Questo argomento viene descritto come utilizzare il **Editor Set di regole** nel
 |**Aggiungi regola**|Aggiunge una nuova definizione della regola nuova nell’insieme di regole.|  
 |**Eliminazione**|Elimina la regola selezionata dall’insieme di regole.|  
 |**Il concatenamento**|Specifica quale tipo di concatenamento diretto usare con l’insieme di regole. Le opzioni disponibili sono:<br /><br /> -   **Concatenamento completo**, che consente di utilizzare meccanismi di concatenamento diretto tutti: implicito, con attribuzione del metodo ed esplicito usando un **aggiornamento** (funzione).<br />-   **Sequenziale**, che specifica di non usare alcun concatenamento diretto.<br />-   **Solo aggiornamento esplicito**, che specifica di eseguire soltanto concatenamento diretto sulle **aggiornamento** azioni.<br /><br /> Per ulteriori informazioni sul concatenamento diretto, vedere [utilizzo dell'attività PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
-|**Nome**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per nome.|  
+|**Name**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per nome.|  
 |**Priorità**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per priorità.|  
 |**Rivalutazione**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per tipo di rivalutazione.|  
 |**Anteprima della regola**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per anteprima di una condizione della regola e delle azioni.|  

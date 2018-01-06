@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: accedere ai tipi di carattere incorporati e una combinazione di colori
 Ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associata a una finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.  
@@ -58,9 +59,9 @@ Ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tip
   
 2.  Popolare il Registro di sistema per l'utilizzo di tipi di carattere azionari e combinazione di colori con quattro valori:  
   
-    |Nome|Tipo|Dati|Descrizione|  
+    |nome|Tipo|Dati|Descrizione|  
     |----------|----------|----------|-----------------|  
-    |Categoria|REG_SZ|GUID|Un GUID arbitrario che identifica una categoria che contiene lo schema di carattere e colori predefinito.|  
+    |Category|REG_SZ|GUID|Un GUID arbitrario che identifica una categoria che contiene lo schema di carattere e colori predefinito.|  
     |Pacchetto|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Questo GUID è usato da tutti i pacchetti VSPackage che utilizzano le configurazioni predefinite di carattere e colori.|  
     |Elemento NameID|REG_DWORD|Id|L'ID di risorsa di un nome di categoria localizzabile nel pacchetto VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|Il GUID del pacchetto VSPackage che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.|  

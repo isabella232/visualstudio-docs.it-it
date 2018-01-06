@@ -16,18 +16,19 @@ caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi dipendenza dal codice
 Per visualizzare l'architettura di alto livello, logica del sistema software, creare un *diagramma dipendenze* in Visual Studio. Per assicurarsi che il codice rimanga coerenza con la progettazione, è possibile convalidare il codice con un diagramma di dipendenze. È possibile creare diagrammi di dipendenza per i progetti Visual c# .NET e Visual Basic .NET. Per le versioni di Visual Studio che supportano questa funzionalità, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
  ![Creare un diagramma di dipendenza](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
   
- Un diagramma di dipendenza consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici e astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali elementi eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare l'esistenti o *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono utilizzare o utilizzano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.  
+ Un diagramma di dipendenza consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici e astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali artefatti eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare l'esistenti o *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono utilizzare o utilizzano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.  
   
  [Video: Convalidare le dipendenze di architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
   
@@ -49,7 +50,7 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
 4.  In **aggiungere al progetto di modello**, individuare e selezionare un progetto di modello esistente nella soluzione.  
   
-     -oppure-  
+     oppure  
   
      Scegliere **creare un nuovo progetto di modellazione** per aggiungere un nuovo progetto di modellazione per la soluzione.  
   
@@ -111,7 +112,7 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
   
      **Esplora livello** vengono visualizzati i collegamenti di artefatto per il livello selezionato.  
   
-2.  Utilizzare le seguenti attività per gestire tali collegamenti:  
+2.  Usare le seguenti attività per gestire tali collegamenti:  
   
 |**Per**|**In Esplora livello**|  
 |------------|---------------------------|  

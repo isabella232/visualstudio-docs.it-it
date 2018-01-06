@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d926a498549e868e478d83b7930f5e569f49ce20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d41c1bf063ea074df217934a00f73291a10e051d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-error-markers"></a>Procedura: implementare i marcatori di errore
 Marcatori di errore (o una sottolineatura ondulata di colore rossa) è più difficili le personalizzazioni di editor di testo per implementare. Tuttavia, i vantaggi che offrono agli utenti di un VSPackage possono superano di gran lunga il costo per fornire loro. Marcatori di errore contrassegnare leggermente il testo che il parser del linguaggio considera non corretto con una riga rossa ondulata o ondulata di colore. Questo indicatore consente ai programmatori visualizzando visivamente il codice non corretto.  

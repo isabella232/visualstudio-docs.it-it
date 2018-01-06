@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.encapsulatefield
 dev_langs: VB
-ms.openlocfilehash: 9575ad83ead4960016ba7814642cacb1db04ea4d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0f6f47dfd6ef2bbbd8d3c1e8aac60a3fa1621dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-a-field-in-visual-basic"></a>Incapsula un campo in Visual Basic
 **Novità:** consente di trasformare un campo in una proprietà e aggiornare tutti gli utilizzi di quel campo, utilizzare la proprietà appena creata.
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Vedere anche  
 [Refactoring (Visual Basic)](../refactoring-vb.md)  
-[Preview Changes](../../ide/preview-changes.md) (Visualizzare l'anteprima delle modifiche)
+[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

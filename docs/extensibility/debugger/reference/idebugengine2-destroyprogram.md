@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7efe7c8c4d917e6dd1868625ca1d80996176acb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 066a8a3cf9fb4f9c39d36cfa4ea386e06cbba831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informa un motore di debug (DE) che il programma specificato è stato insolitamente terminato e che la Germania necessario pulire tutti i riferimenti al programma e la trasmissione di un programma evento di eliminazione.  

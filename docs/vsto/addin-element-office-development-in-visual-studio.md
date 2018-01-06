@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d083ff3a6c39b0d399b641db7e3a33d4f200e7bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b4f455ad27966f5ac3c5dba6c3ac276670f74b26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;componente aggiuntivo&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `addin` dello spazio dei nomi `vstav3` contiene informazioni specifiche per i componenti aggiuntivi VSTO di Microsoft Office e le personalizzazioni a livello di documento sviluppate con Visual Studio.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
  Obbligatorio. Il `update` elemento è descritto [&#60; aggiornamento &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/update-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactions"></a>postActions  
- Parametro facoltativo. Il `postActions` elemento è descritto [&#60; postActions &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il `postActions` elemento è descritto [&#60; postActions &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/postactions-element-office-development-in-visual-studio.md).  
   
 ### <a name="application"></a>applicazione  
  Obbligatorio. Il `application` elemento è descritto [&#60; applicazione &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/application-element-office-development-in-visual-studio.md).  

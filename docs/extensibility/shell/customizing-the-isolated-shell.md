@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98cf51c539f34b3ad0a843a055603bd5480d2b24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9f5a6059d36493c93ceae249879530e49182acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-isolated-shell"></a>Personalizzazione Shell isolata
 Modificando i vari aspetti dell'interfaccia utente di Visual Studio e limitando i comandi e le funzionalità incluse in un'applicazione specializzata, è possibile personalizzare l'applicazione di Visual Studio isolated shell.  

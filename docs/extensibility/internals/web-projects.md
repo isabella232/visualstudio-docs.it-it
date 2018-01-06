@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dbfdffa02a4bca9f145a2f20e3d2af31b8bcd97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91201eb42d711a09caadad3ef6bf663b23d6c099
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-projects"></a>Progetti Web
 Un sistema di progetto Web è un sistema di progetto che consente di creare progetti Web. Progetti Web consentono di creare applicazioni Web. È possibile programmare una pagina Web con linguaggi di programmazione tradizionali, ad esempio [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], per raccogliere ed elaborare le informazioni da un utente, archiviarlo in un database e così via. Pagine Web con codice associato vengono chiamate smart pagine Web.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Essentials](../../extensibility/internals/web-project-essentials.md)  
  Visualizza gli elementi importanti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti Web.  
   

@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Strumenti di Entity Framework in Visual Studio
-Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di lavorare con dati relazionali utilizzando oggetti specifici del dominio. Elimina la necessità per la maggior parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere. Entity Framework è il mapping relazionale a oggetti consigliato (ORM) tecnologia per le nuove applicazioni .NET.  
+Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di lavorare con dati relazionali utilizzando oggetti specifici del dominio. In questo modo la maggior parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere non è più necessaria. Entity Framework è il mapping relazionale a oggetti consigliato (ORM) tecnologia per le nuove applicazioni .NET.  
   
-Strumenti di Entity Framework sono progettati per facilitare la compilazione di applicazioni Entity Framework (EF). La documentazione completa per Entity Framework è qui: [EF Core e 6 EF](https://docs.microsoft.com/ef/).  
+Strumenti di Entity Framework sono progettati per facilitare la compilazione di applicazioni Entity Framework (EF). La documentazione completa per Entity Framework è qui: [EF Core e 6 EF](/ef/).  
   
 Con strumenti di Entity Framework, è possibile creare un *modello concettuale* da un oggetto esistente del database e quindi graficamente visualizzare e modificare il modello concettuale. È inoltre possibile creare prima graficamente un modello concettuale e successivamente generare un database di supporto al modello. In entrambi i casi, è possibile aggiornare automaticamente il modello quando viene modificato il database sottostante e generare automaticamente codice del livello oggetti per l'applicazione. La generazione del database e del codice del livello oggetti è personalizzabile.  
   

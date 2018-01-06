@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: creazione di un passaggio di distribuzione personalizzato per progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include numerosi passaggi di distribuzione predefinite, ma è anche possibile creare una propria.  
@@ -349,7 +350,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Verificare che il progetto venga compilato correttamente, che consente di aprire il browser al sito di SharePoint, che il **Elenca** include il nuovo elemento nella barra Avvio veloce **dipendenti** elenco e che il  **I dipendenti** elenco include la voce per Jim Hance.  
   
-5.  Chiudere il browser web.  
+5.  Chiudere il Web browser.  
   
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Per modificare la definizione e l'istanza di elenco e rieseguire la distribuzione  
   

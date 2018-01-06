@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Panoramica di funzionalità del Debugger di Visual Studio
 
@@ -192,6 +193,26 @@ L'Helper di eccezione è un'ottima funzionalità che consentono di eseguire il d
 > L'Helper eccezioni sostituisce le informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Espandere il **impostazioni eccezioni** nodo per visualizzare ulteriori opzioni gestire questo tipo di eccezione, ma è necessario modificare alcun valore per questa presentazione.
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debug di applicazioni ASP.NET in tempo reale in Azure App Service
+
+il **Debugger Snapshot** un'istantanea delle applicazioni in produzione quando viene eseguito codice che si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
+
+![Avviare il debugger snapshot](../debugger/media/snapshot-launch.png "avviare il debugger di snapshot")
+
+Raccolta di snapshot è disponibile per le applicazioni ASP.NET in esecuzione in Azure App Service. Applicazioni ASP.NET devono essere in esecuzione su .NET Framework 4.6.1 o versioni successive, e le applicazioni ASP.NET di base devono essere in esecuzione su .NET Core 2.0 o versione successiva in Windows.
+
+Per ulteriori informazioni, vedere [Debug in tempo reale delle App ASP.NET utilizzando il Debugger Snapshot](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Visualizzare gli snapshot con IntelliTrace. passaggio-back (Visual Studio Enterprise)
+
+**Passaggio di IntelliTrace-back** automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
+
+È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
+
+![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti passo indietro e Avanti")  
+
+Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 ## <a name="more-features-to-look-at"></a>Più funzionalità da esaminare
 

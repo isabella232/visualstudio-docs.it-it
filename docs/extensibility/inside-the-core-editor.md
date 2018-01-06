@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50db39e9a6b864df8876054b455b169531260a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4612f5779d6177d58cef7f087ef6e11bbe4ebd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-core-editor"></a>Nell'Editor di componenti di base
 Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale è un set di diversi componenti che consentono di modificare ed eseguire query su informazioni testuali. Se l'editor di componenti di base è stato personalizzato utilizzando l'API legacy, è possibile continuare a usare queste personalizzazioni, verranno instradate tramite le schede dell'editor. Si consiglia, tuttavia, che si adattano le personalizzazioni per il nuovo editor API.  
@@ -36,7 +37,7 @@ Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale �
   
 -   Integrazione con servizi di linguaggio  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Creazione di istanze di Editor di componenti di base tramite l'API Legacy](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
  Vengono fornite istruzioni dettagliate su come usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> per creare un'istanza di base dell'editor.  
   

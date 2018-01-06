@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50077e430d6d9f273dd4cd3e247de3df043804c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80d0438e7c7dfb7fd346dc5faae6f364279658ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
 L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir%\Xml\Schemas. La cache degli schemi include schemi XML noti che vengono usati per IntelliSense e per la convalida di documenti XML.  
@@ -40,7 +41,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
   
     -   Selezionare uno schema elencato nella **schemi XML** finestra di dialogo, fare clic su di **utilizzare** colonna e quindi selezionare **utilizzano questo schema**.  
   
-     -oppure-  
+     oppure  
   
     -   Selezionare più schemi elencati nella **schemi XML** finestra di dialogo, fare clic e scegliere **utilizzano questo schema**.  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8f78a12aa70c3c7042a821a737485da963f7a56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a6917a8909bed30319d104f45398409b4ba367f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-features"></a>Creazione di funzionalità SharePoint
   È possibile utilizzare una funzionalità di SharePoint per raggruppare gli elementi di progetto SharePoint correlati per semplificare la distribuzione. È possibile creare funzionalità, impostare gli ambiti e contrassegnare altre funzionalità come dipendenze utilizzando la finestra di progettazione di funzionalità di SharePoint. La finestra di progettazione genera inoltre un manifesto, ovvero un file XML che descrive ogni funzionalità.  
@@ -44,8 +45,8 @@ ms.lasthandoff: 10/31/2017
   
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
-|Titolo|Parametro facoltativo. Il titolo predefinito della funzionalità è impostato su *SolutionName**FeatureName*.|  
-|Descrizione|Parametro facoltativo. Descrizione della funzionalità di SharePoint.|  
+|Titolo|Facoltativo. Il titolo predefinito della funzionalità è impostato su *SolutionName**FeatureName*.|  
+|Descrizione|Facoltativo. Descrizione della funzionalità di SharePoint.|  
 |Ambito|Obbligatorio. Se una funzionalità viene creata utilizzando **Esplora**, per impostazione predefinita, l'ambito è impostato sul Web.<br /><br /> -Farm: Attivare una funzionalità per un'intera server farm.<br /><br /> -Sito: Attivare una funzionalità per tutti i siti web in una raccolta siti.<br /><br /> -Web: Attivare una funzionalità per un sito web specifico.<br /><br /> -WebApplication: Attivare una funzionalità per tutti i siti web in un'applicazione web.|  
 |Elementi nella soluzione|Tutti gli elementi di SharePoint che può essere aggiunto alla funzionalità.|  
 |Elementi nella funzionalità|Gli elementi di progetto SharePoint che sono stati aggiunti alla funzionalità.|  

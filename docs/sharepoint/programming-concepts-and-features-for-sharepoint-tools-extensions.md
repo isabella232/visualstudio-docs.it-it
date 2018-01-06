@@ -16,16 +16,17 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d6f3ae5608d8092fbeb065867ae04db4e04c95
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7030893cfb108a497ec167586fb90f5e88e61003
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint
   Esistono diversi concetti di programmazione e funzionalità correlate agli strumenti di SharePoint in Visual Studio. Questi concetti e funzionalità svolgono un ruolo importante nella maggior parte delle estensioni degli strumenti di SharePoint.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Chiamate ai modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
  Confronta l'utilizzo del client di SharePoint e i modelli a oggetti server SharePoint dalle estensioni degli strumenti di SharePoint e vengono fornite informazioni su come creare *i comandi di SharePoint* per effettuare chiamate nel modello a oggetti di SharePoint server.  
   

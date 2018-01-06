@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C# #
 Questa procedura dettagliata viene illustrato come scrivere un visualizzatore semplice usando c#. Il visualizzatore che si creerà in questa procedura dettagliata consente di visualizzare il contenuto di una stringa utilizzando una finestra di messaggio Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile in sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
@@ -69,7 +66,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 6.  In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `using`:  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  In DebuggerSide.cs, passare alla riga di codice seguente:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  Modificare il codice per:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 -   In `public class DebuggerSide`, aggiungere il seguente **metodo:**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -113,7 +110,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 4.  In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `using`:  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  Nel metodo `Show` aggiungere la riga di codice seguente:  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  Aggiungere il seguente codice di attributo a DebuggerSide.cs, dopo il `using` istruzioni ma prima che `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  Nel **compilare** menu, scegliere **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
@@ -153,7 +150,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  Aggiungere il metodo seguente alla classe `public DebuggerSide`:  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -203,13 +200,13 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 3.  In TestConsole.cs aggiungere il codice seguente per il `using` istruzioni:  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  Nel metodo `Main` aggiungere il codice seguente:  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  

@@ -15,11 +15,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5072aef90e08d645bff2a1bb6800e409e7d2104
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cc4913141350b0e0efa65ec0b4db913b578460b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-extensibility"></a>Estensibilità di servizio di linguaggio legacy
 Un servizio di linguaggio fornisce il supporto di specifiche della lingua per la modifica del codice sorgente nell'IDE.  
@@ -28,7 +29,7 @@ Un servizio di linguaggio fornisce il supporto di specifiche della lingua per la
   
  Questa sezione illustra la struttura e l'implementazione di un servizio di linguaggio legacy.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Migrazione di un servizio di linguaggio Legacy](../../extensibility/internals/migrating-a-legacy-language-service.md)  
  Viene illustrato come aggiornare un servizio di linguaggio da Visual Studio 2008 alla versione più recente.  
   

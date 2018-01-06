@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>Creazione di un progetto flusso di lavoro
 Grazie ai modelli di progetto di [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] è possibile creare flussi di lavoro, servizi flusso di lavoro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], attività personalizzate e ActivityDesigner personalizzati. Questa sezione descrive come creare librerie e applicazioni con i modelli di progetto disponibili in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -28,7 +29,7 @@ Grazie ai modelli di progetto di [!INCLUDE[indigo1](../workflow-designer/include
   
  Nell'ultimo argomento viene descritto come aggiungere attività del flusso di lavoro, finestre di progettazione e servizi o altri elementi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a un progetto flusso di lavoro (o altro) esistente.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Creare un'applicazione console flusso di lavoro](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  Viene descritto come creare un'applicazione console flusso di lavoro.  
   

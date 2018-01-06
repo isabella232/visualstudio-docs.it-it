@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9631f2206705ef6daf36b355aa6cb1d5be6458d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9842527f90d9b2df7308f1e80e337de2848d9179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Chiamato dal debugger sullo stack frame corrente quando desidera intercettare l'eccezione corrente.  
@@ -51,7 +52,7 @@ int InterceptCurrentException(
   
  Di seguito sono la restituzione di errori più comuni.  
   
-|Errore|Descrizione|  
+|Error|Descrizione|  
 |-----------|-----------------|  
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Non è possibile intercettare l'eccezione corrente.|  
 |`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Il frame di esecuzione corrente non è stata ancora ricerca per un gestore.|  

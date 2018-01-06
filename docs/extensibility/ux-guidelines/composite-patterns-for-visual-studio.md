@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Modelli compositi combinano elementi di progettazione e l'interazione in configurazioni distinte. Alcuni dei più importanti compositi modelli in Visual Studio per quanto riguarda la coerenza includono:  
@@ -345,7 +346,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
 |Input|Risultato|  
 |-----------|------------|  
-|Tab|Sposta l'indicatore di stato attivo tra l'ordine logico di oggetti nell'editor. È possibile da sinistra a destra o alto verso il basso in base alle **TabIndex** (o equivalente) valore della proprietà, ordine di creazione di un oggetto e lo scopo complessivo dell'editor. Maiusc + Tab inverte la direzione dell'indicatore di stato attivo.|  
+|Scheda|Sposta l'indicatore di stato attivo tra l'ordine logico di oggetti nell'editor. È possibile da sinistra a destra o alto verso il basso in base alle **TabIndex** (o equivalente) valore della proprietà, ordine di creazione di un oggetto e lo scopo complessivo dell'editor. Maiusc + Tab inverte la direzione dell'indicatore di stato attivo.|  
 |BARRA SPAZIATRICE|Attiva la modalità Panoramica mentre tasto di scelta rapida viene mantenuto. Input del mouse aggiuntivi è necessario per eseguire la traslazione alla posizione del riquadro di visualizzazione.|  
 |CTRL+BARRA SPAZIATRICE|Attiva la modalità zoom mentre tasto di scelta rapida viene mantenuto. Input del mouse aggiuntive deve aumentare e diminuire il fattore di zoom.|  
 |Ctrl + Alt + segno meno|Consente di ridurre il fattore di zoom di un livello.|  
@@ -438,11 +439,11 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
  Le selezioni negli elenchi possono essere contigui, non contiguo, o area geografica. Quando selezioni multiple sono consentite, contigui e non contiguo selezione sempre deve essere supportate, mentre il supporto per le selezioni area (casella) è facoltativo. Selezioni area vengono avviate mediante il trascinamento nello spazio vuoto del corpo dell'elenco.  
   
-|Oggetto|Selection|  
+|Object|Selection|  
 |------------|---------------|  
-|Elenco|Contigue|Sempre supportate (quando sono consentita la selezione multipla).|  
-|Elenco|Non contigue|Sempre supportate (quando sono consentita la selezione multipla).|  
-|Elenco|Region|Supporto facoltativo. Avviata trascinando il puntatore del mouse nello spazio vuoto del corpo dell'elenco.|  
+|List|Contigue|Sempre supportate (quando sono consentita la selezione multipla).|  
+|List|Non contigue|Sempre supportate (quando sono consentita la selezione multipla).|  
+|List|Region|Supporto facoltativo. Avviata trascinando il puntatore del mouse nello spazio vuoto del corpo dell'elenco.|  
   
  Fare clic su una sola volta in un elenco selezionare la riga in cui si è verificato il clic. Se l'utente di fare clic su una cella di elenco che supporta la modifica sul posto, la cella viene attivata anche immediatamente per la modifica sul posto. In caso contrario, l'intera riga immediatamente sia selezionata e Mostra evidenziazione.  
   
@@ -479,12 +480,12 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 ### <a name="overview"></a>Panoramica  
  Anche se ogni componente del software in Visual Studio è in genere responsabile per il proprio stato e la persistenza, Visual Studio Salva automaticamente le impostazioni in alcuni casi, ad esempio con posizioni e le dimensioni di finestra. Nella tabella seguente è una combinazione di impostazioni che richiedono un utente esplicito o programmato azione da intraprendere e le impostazioni salvate automaticamente.  
   
-|Oggetto|Gli elementi da salvare|Quando salvare|Percorso di salvataggio|  
+|Object|Gli elementi da salvare|Quando salvare|Percorso di salvataggio|  
 |------------|------------------|------------------|-------------------|  
 |Oggetto selezionabile (ad esempio, una riga di codice)|Un punto di interruzione su una riga di codice<br /><br /> Un collegamento utente associato alla riga di codice|Quando il progetto viene salvato|Il **opzioni utente (con estensione suo)** file per il progetto|  
 |Finestra di dialogo|La posizione della finestra di dialogo, se è stato spostato<br /><br /> La vista che l'utente dell'ultimo utilizzo nella finestra di dialogo|Quando si chiude la finestra di dialogo<br /><br /> Quando la sessione di Visual Studio termina|In memoria<br /><br /> Nel Registro di sistema **HKEY_Current_User**|  
 |Window|Le dimensioni e la posizione della finestra|Quando si chiude la finestra<br /><br /> Quando viene modificata la modalità di Visual Studio<br /><br /> Quando la sessione di Visual Studio termina|Il **opzioni utente (con estensione suo)** file per il progetto<br /><br /> File di opzioni personalizzate per le impostazioni della finestra|  
-|Documento|La selezione corrente nel documento<br /><br /> La visualizzazione del documento<br /><br /> L'ultimo diverse posizioni visitato dall'utente|Quando il documento viene salvato|Il **opzioni utente (con estensione suo)** file per il progetto|  
+|Document|La selezione corrente nel documento<br /><br /> La visualizzazione del documento<br /><br /> L'ultimo diverse posizioni visitato dall'utente|Quando il documento viene salvato|Il **opzioni utente (con estensione suo)** file per il progetto|  
 |Progetto|Riferimenti ai file<br /><br /> Riferimenti a directory sul disco<br /><br /> Riferimenti agli altri software<br /><br /> Componenti<br /><br /> Informazioni sullo stato relative al progetto stesso|Quando il progetto viene salvato|Il file di progetto|  
 |Soluzione|Riferimenti ai progetti<br /><br /> Riferimenti ai file|Quando viene salvata il progetto o soluzione|Il **soluzione (sln)** file|  
 |Le impostazioni in **strumenti > Opzioni**|Personalizzazioni tastiera<br /><br /> Personalizzazioni della barra degli strumenti<br /><br /> Combinazioni di colori|Quando il **strumenti > Opzioni** finestra di dialogo viene chiusa<br /><br /> Quando la sessione di Visual Studio termina|Nel Registro di sistema **HKEY_Current_User**|  

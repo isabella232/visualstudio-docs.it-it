@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare e la ricerca di manifesti dell'immagine, consentendo all'utente di modificarli in modo identico a Visual Studio. L'utente può modificare in background, le dimensioni, DPI, contrasto elevato e altre impostazioni. Inoltre, lo strumento visualizza le informazioni di caricamento per ogni manifesto immagine e visualizza le informazioni di origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:  
@@ -74,7 +75,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |-|-|  
 |**Sottoelemento**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'utilizzo nel manifesto corrente.|  
-|Guid|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID.|  
+|GUID|Il simbolo rappresenta un GUID e deve corrispondere la formattazione di GUID.|  
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo.|  
 |Stringa|Il simbolo rappresenta un valore stringa arbitraria.|  
   
@@ -115,7 +116,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Guid|[Obbligatorio] La parte GUID del moniker di immagini|  
+|GUID|[Obbligatorio] La parte GUID del moniker di immagini|  
 |Id|[Obbligatorio] La porzione dell'ID del moniker immagine|  
 |AllowColorInversion|[Facoltativo, valore predefinito true] Indica se l'immagine può avere i colori invertiti a livello di codice quando viene utilizzata su uno sfondo scuro.|  
   
@@ -171,7 +172,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Guid|[Obbligatorio] La parte GUID del moniker di immagini|  
+|GUID|[Obbligatorio] La parte GUID del moniker di immagini|  
 |Id|[Obbligatorio] La porzione dell'ID del moniker immagine|  
 |Altre informazioni|[Impostazione predefinita è false, facoltativo] Indica se il moniker dell'immagine fa riferimento a un'immagine nel manifesto corrente.|  
   

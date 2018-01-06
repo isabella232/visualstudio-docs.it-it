@@ -11,16 +11,17 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 937327ee424d374fa91db223f64e68182e47e5c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7721d4769038a2593d42a3ff4dee3125e1d4fa9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-handling-activity-designers"></a>ActivityDesigner Gestione errori
 L'ActivityDesigner Error Handling viene usato per la gestione degli errori in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Gli argomenti contenuti in questa sezione forniscono istruzioni sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Rethrow](../workflow-designer/rethrow-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.Rethrow>.  
   
@@ -30,6 +31,6 @@ L'ActivityDesigner Error Handling viene usato per la gestione degli errori in [!
  [TryCatch](../workflow-designer/trycatch-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.TryCatch>.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
   
 ## <a name="related-sections"></a>Sezioni correlate

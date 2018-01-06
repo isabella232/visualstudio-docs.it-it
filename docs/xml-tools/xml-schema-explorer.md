@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fa99ea63f9af2c69519691add827053b3059ac0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML per consentire di usare gli schemi XML Schema Definition Language (XSD). Quando si apre un file di XML Schema, il **Set di schemi** nodo viene visualizzato in XML Schema Explorer. In XML Schema Explorer vengono visualizzati anche tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione e qualsiasi file a cui viene fatto riferimento tramite un'istruzione `include` o `import`.  
@@ -80,7 +81,7 @@ Di seguito viene riportato un esempio di struttura ad albero:
   
  Non è possibile trascinare nodi locali o importazioni.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 -   [Ricerche nel set di schemi](../xml-tools/searching-the-schema-set.md)  
   

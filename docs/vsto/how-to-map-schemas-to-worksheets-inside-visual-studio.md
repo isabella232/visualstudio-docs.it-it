@@ -20,11 +20,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c09c99bc5d8bc964ae3afd82fe7a4a9fd5764edd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2dc089fb2c4ae2714a0b94d7756aaa432406ef74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedura: mappare schemi a fogli di lavoro in Visual Studio
   È possibile eseguire il mapping uno schema XML a un foglio di lavoro mentre il foglio di lavoro è aperta in Visual Studio. Utilizzare gli stessi strumenti di Microsoft Office Excel utilizzata per la cartella di lavoro è aperto all'esterno di Visual Studio. Se si esegue il mapping dello schema al foglio di lavoro prima o dopo aver creato la soluzione di Excel, il progetto di Office crea gli stessi oggetti.  

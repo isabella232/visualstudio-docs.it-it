@@ -15,16 +15,17 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c900b2f266be4ea88921b5f7cd0db02991a091
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-reference"></a>Riferimenti di Visual Studio SDK
 In questa sezione contiene informazioni su spazi dei nomi Visual Studio, i relativi spazi dei nomi e altre aree di interesse per gli sviluppatori che utilizzano Visual Studio SDK.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
  Interfacce di interoperabilità legacy usate per i servizi di editor e della lingua.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2dedd54aa1db26e38b6f212c616bd38c09018961
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementazione di elementi visualizzati e categorie personalizzate
 Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del testo per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) tramite le categorie personalizzate e di elementi visualizzati.  
@@ -54,9 +55,9 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
   
 -   Popolare il Registro di sistema con due valori:  
   
-    |Nome|Tipo|Dati|Descrizione|  
+    |nome|Tipo|Dati|Descrizione|  
     |----------|----------|----------|-----------------|  
-    |Categoria|REG_SZ|GUID|Un GUID creato per identificare la categoria.|  
+    |Category|REG_SZ|GUID|Un GUID creato per identificare la categoria.|  
     |Pacchetto|REG_SZ|GUID|Il GUID del servizio VSPackage che supporta la categoria.|  
   
  Il servizio specificato nel Registro di sistema deve fornire un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> per la categoria corrispondente.  
@@ -69,9 +70,9 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
   
 -   Popolare il Registro di sistema con due valori:  
   
-    |Nome|Tipo|Dati|Descrizione|  
+    |nome|Tipo|Dati|Descrizione|  
     |----------|----------|----------|-----------------|  
-    |Categoria|REG_SZ|GUID|Un GUID creato per identificare il gruppo.|  
+    |Category|REG_SZ|GUID|Un GUID creato per identificare il gruppo.|  
     |Pacchetto|REG_SZ|GUID|Il GUID del servizio che supporta la categoria.|  
   
  Il servizio specificato nel Registro di sistema deve fornire un'implementazione di `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` per il gruppo corrispondente.  
@@ -116,7 +117,7 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
   
      L'IDE chiama il metodo appropriato, le modifiche apportate dall'utente di seguenti il **tipi di carattere e colori** pagina. Ad esempio, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> metodo se si seleziona un nuovo tipo di carattere.  
   
-     -oppure-  
+     oppure  
   
 -   L'IDE per le modifiche di polling.  
   

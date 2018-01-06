@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procedura dettagliata: generazione di codice tramite modelli di testo
 La generazione del codice consente di creare codice di programma fortemente tipizzato e al tempo stesso facilmente modificato quando viene modificato il modello di origine. Ciò si differenzia dalla tecnica alternativa di scrivere un programma completamente generico che accetta un file di configurazione, che è più flessibile, ma genera codice più difficile da leggere e modificare e caratterizzato da prestazioni inferiori. Questa procedura dettagliata illustra tale vantaggio.  

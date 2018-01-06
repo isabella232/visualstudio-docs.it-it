@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 98811cc3e7830dfcbf548bc34c5b3ee268e6f858
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generazione di codice da un linguaggio specifico di dominio
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente strumento per generare codice, documenti, file di configurazione e altri elementi da dati rappresentati nei modelli. Utilizzando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], è possibile creare un set di classi che rappresentano i dati, è possibile scrivere modelli di testo nelle classi i cui nomi e le proprietà riflettono i dati.  
@@ -36,7 +37,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente st
   
  In questa sezione vengono illustrati alcuni modi per creare, modificare ed eseguire il debug di modelli di testo utilizzati in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md)  
   
  Fornisce informazioni di base che fa riferimento al linguaggio specifico di dominio nei modelli di testo.  
@@ -53,7 +54,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce un potente st
   
  Descrive il file di comando che esegue il file eseguibile TextTransform nella riga di comando per i modelli di testo che fanno riferimento a linguaggi specifici di dominio.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)  
   
  Fornisce la sintassi delle direttive di modello di testo e blocchi di controllo.  

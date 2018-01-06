@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>In un servizio di linguaggio Legacy colorazione sintassi
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilizza un servizio di colori per identificare gli elementi del linguaggio e visualizzarli con i colori specificati in un editor.  
@@ -65,7 +66,7 @@ Modello semplice rappresentazione
 > [!NOTE]
 >  Oltre a usare una rappresentazione di servizio di linguaggio, un VSPackage può usare anche il generico [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] colore meccanismo di testo. Per ulteriori informazioni su questo meccanismo, vedere [utilizzando tipi di carattere e colori](../../extensibility/using-fonts-and-colors.md).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Implementazione della colorazione della sintassi](../../extensibility/internals/implementing-syntax-coloring.md)  
  Viene illustrato come un editor accede a un servizio di linguaggio colorazione della sintassi e il servizio di linguaggio deve implementare per supportare la sintassi della colorazione.  
   

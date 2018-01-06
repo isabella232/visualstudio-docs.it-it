@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28b66dea8440c969926abd3892739f4e041b064
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fbba5070af77e1509ed3b3840a2045ae0f2c12b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-and-providing-services"></a>Utilizzando e servizi
 Un servizio è un contratto tra due pacchetti VSPackage. Un VSPackage offre un set specifico di interfacce per un altro VSPackage da utilizzare. Ad esempio, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre il <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> del servizio a qualsiasi VSPackage carica. Questo servizio fornisce il <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaccia, che consente di scrivere nel log attività. Per ulteriori informazioni, vedere [procedura: utilizzare il registro attività](../extensibility/how-to-use-the-activity-log.md).  
@@ -35,7 +36,7 @@ Un servizio è un contratto tra due pacchetti VSPackage. Un VSPackage offre un s
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Fornisce la funzionalità correlate all'interfaccia utente nell'IDE, ad esempio la possibilità di creare strumenti e finestre di documento e windowing di base.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Fornisce funzionalità base associate alla soluzione, ad esempio la possibilità di enumerare i progetti, creare nuovi progetti e monitorare le modifiche del progetto.|  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Nozioni fondamentali sui servizi](../extensibility/internals/service-essentials.md)  
  Visualizza gli elementi importanti di un servizio di Visual Studio.  
   

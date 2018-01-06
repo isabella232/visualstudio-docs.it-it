@@ -14,11 +14,12 @@ caps.latest.revision: "25"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: fae53e45b231292df8b7a6ae8bf4f2babc5d9e88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f5cb41ab9a68e567d7c6b64243c6cec017835088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Risolvere i problemi relativi a estensioni per diagrammi di dipendenza
 Questo argomento risolve alcuni problemi che possono verificarsi quando si creano estensioni del modello di livello.  

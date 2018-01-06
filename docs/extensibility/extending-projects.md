@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051043583b4be3ce795fab544156c7a1f94d88c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-projects"></a>Estensione di progetti
 Progetti e soluzioni sono le modalità di che Visual Studio consente di organizzare i file di codice e risorse in unità di compilazione e distribuzione. È possibile trovare ulteriori informazioni sui progetti in [progetti (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -28,7 +29,7 @@ Progetti e soluzioni sono le modalità di che Visual Studio consente di organizz
   
  Negli argomenti di questa sezione viene descritto come creare progetti personalizzati e come gestire diversi tipi di soluzioni di Visual Studio.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Viene descritto come creare un sistema di progetto personalizzati.  
   

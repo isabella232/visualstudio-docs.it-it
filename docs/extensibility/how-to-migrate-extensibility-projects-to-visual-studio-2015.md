@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
 Di seguito viene illustrato come aggiornare l'estensione.  
@@ -45,7 +46,7 @@ Di seguito viene illustrato come aggiornare l'estensione.
   
 2.  Rimuovere gli assembly di riferimento di VS SDK dal progetto selezionandoli, fare clic destro e **rimuovere**.  
   
-3.  Aggiungere le versioni di NuGet di assembly di riferimento di Visual Studio SDK.  Mentre si trovano ancora nella **i riferimenti di Esplora soluzioni** nodo, aprire il **Gestisci pacchetti NuGet...**  finestra di dialogo.  Se si desidera approfondire la conoscenza di questa finestra di dialogo, vedere [UI Package Manager](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Gli assembly di riferimento di VS SDK vengono pubblicati su [nuget.org](http://www.nuget.org) da [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Aggiungere le versioni di NuGet di assembly di riferimento di Visual Studio SDK.  Mentre si trovano ancora nella **i riferimenti di Esplora soluzioni** nodo, aprire il **Gestisci pacchetti NuGet...**  finestra di dialogo.  Se si desidera approfondire la conoscenza di questa finestra di dialogo, vedere [UI Package Manager](/NuGet/Tools/Package-Manager-UI). Gli assembly di riferimento di VS SDK vengono pubblicati su [nuget.org](http://www.nuget.org) da [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Utilizzando **nuget.org** come il **origine pacchetto**, cercare il nome del pacchetto NuGet che corrisponde all'assembly di riferimento desiderato (ad esempio: 14.0) e installarlo nel progetto.  NuGet può aggiungere più assembly di riferimento per soddisfare le dipendenze dell'assembly iniziale.  
   

@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cef54d281555f49806ed59ad1627460a7752954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creazione di un sistema di progetto di base, parte 2
 La prima procedura dettagliata di questa serie, [la creazione di un sistema di progetto, parte 1 base](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema di progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.  
@@ -282,7 +283,7 @@ ZipProjects:
   
 -   $ $safeprojectname è il nome specificato da un utente di **nuovo progetto** la finestra di dialogo, modificata per rimuovere i caratteri non sicuri e gli spazi.  
   
- Per un elenco completo dei parametri di modello, vedere [parametri di modello](../ide/template-parameters.md).  Se si desidera creare i propri parametri di modello personalizzato, vedere [NIB: procedura: passare parametri personalizzati ai modelli](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Per un elenco completo dei parametri dei modelli, vedere [Parametri di modelli](../ide/template-parameters.md).  Se si desidera creare i propri parametri di modello personalizzato, vedere [NIB: procedura: passare parametri personalizzati ai modelli](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Per sostituire i parametri di modello di progetto  
   

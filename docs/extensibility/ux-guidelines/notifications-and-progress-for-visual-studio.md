@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Le notifiche e l'avanzamento di Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Sistemi di notifica  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="choosing-the-right-method"></a>Scelta del metodo  
  Utilizzare questa tabella per agevolare la scelta del metodo per notificare all'utente del messaggio.  
   
-|Metodo|Uso|Non utilizzare|  
+|Metodo|Usa|Non utilizzare|  
 |------------|---------|----------------|  
 |[Finestre di messaggio di errore modale](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Utilizzarlo quando è necessaria una risposta dell'utente prima di procedere.|Non utilizzare quando non è necessario bloccare l'utente e interrompere il flusso. Evitare di utilizzare le finestre di dialogo modale se è possibile visualizzare il messaggio in un altro modo meno intrusiva.|  
 |[Barra di stato IDE](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Utilizzare quando si verifica informazioni testuali ambiente sullo stato di un processo.|Non utilizzare da soli. Utilizzate in combinazione con un altro meccanismo di feedback.|  

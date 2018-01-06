@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimenti dello Schema manifesto dei modelli di Visual Studio
 Questo schema viene descritto il formato dei file manifesto (.vstman) modello Visual Studio generati per i modelli di progetto o un elemento di Visual Studio e descrive il percorso e altre informazioni rilevanti relative al modello.  
@@ -32,7 +33,7 @@ Questo schema viene descritto il formato dei file manifesto (.vstman) modello Vi
   
 -   **Versione**: una stringa che rappresenta la versione del manifesto del modello. Obbligatorio.  
   
--   **Impostazioni locali**: stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli, è necessario utilizzare un manifesto distinto per ognuna delle impostazioni locali. Parametro facoltativo.  
+-   **Impostazioni locali**: stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli, è necessario utilizzare un manifesto distinto per ognuna delle impostazioni locali. Facoltativo.  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -70,11 +71,11 @@ Questo schema viene descritto il formato dei file manifesto (.vstman) modello Vi
   
 -   **RelativePath**: il percorso del modello. Può esistere solo una voce per ogni percorso, il primo criterio avrà la precedenza per tutti i manifesti.  
   
--   **LocalizedName**: A **NameDescriptionIcon** elemento che specifica il nome localizzato. Parametro facoltativo.  
+-   **LocalizedName**: A **NameDescriptionIcon** elemento che specifica il nome localizzato. Facoltativo.  
   
--   **SortOrder** : una stringa che specifica il tipo di ordinamento. Parametro facoltativo.  
+-   **SortOrder** : una stringa che specifica il tipo di ordinamento. Facoltativo.  
   
--   **ParentFolderOverrideName**: il nome della cartella padre sottoposto a override. Parametro facoltativo. L'elemento ha un **nome** attributo, ovvero un valore stringa che specifica il nome.  
+-   **ParentFolderOverrideName**: il nome della cartella padre sottoposto a override. Facoltativo. L'elemento ha un **nome** attributo, ovvero un valore stringa che specifica il nome.  
   
 ### <a name="parent-element"></a>Elemento padre  
  **VSTemplateManifest**  
@@ -84,9 +85,9 @@ Questo schema viene descritto il formato dei file manifesto (.vstman) modello Vi
   
 ### <a name="attributes"></a>Attributi  
   
--   **Pacchetto**: un valore stringa che specifica il pacchetto. Parametro facoltativo.  
+-   **Pacchetto**: un valore stringa che specifica il pacchetto. Facoltativo.  
   
--   **ID**: un valore stringa che specifica l'ID. Parametro facoltativo.  
+-   **ID**: un valore stringa che specifica l'ID. Facoltativo.  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  

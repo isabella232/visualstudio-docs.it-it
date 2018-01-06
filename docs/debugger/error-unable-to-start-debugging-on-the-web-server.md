@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: impossibile avviare il debug sul server Web
 
@@ -119,7 +119,7 @@ Dopo avere eseguito i passaggi descritti in questa sezione per risolvere il prob
 
 * Controllare la configurazione del Pool di applicazioni, correggere l'errore, se necessario e quindi riprovare.
 
-    Il Pool di applicazioni può essere configurato per una versione di ASP.NET che non corrisponde a progetto di Visual Studio. Aggiornare la versione ASP.NET nel Pool di applicazioni e riavviarlo. Per informazioni dettagliate, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Il Pool di applicazioni può essere configurato per una versione di ASP.NET che non corrisponde a progetto di Visual Studio. Aggiornare la versione ASP.NET nel Pool di applicazioni e riavviarlo. Per informazioni dettagliate, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Inoltre, se le credenziali di password sono stati modificati, potrebbe essere necessario aggiornarli nel Pool di applicazioni o nel sito Web.  Nel Pool di applicazioni, aggiornare le credenziali in **impostazioni avanzate > modello di processo > identità**. Per il sito Web, aggiornare le credenziali in **impostazioni di base > Connetti come...** . Riavviare il Pool di applicazioni.
     
@@ -129,7 +129,7 @@ Dopo avere eseguito i passaggi descritti in questa sezione per risolvere il prob
 
 * Assicurarsi che sia installata la versione corretta di ASP.NET in IIS.
 
-    Le versioni non corrispondenti di ASP.NET in IIS e nel progetto di Visual Studio possono causare questo problema. Si potrebbe essere necessario impostare la versione del framework in Web. config. Per installare ASP.NET in IIS, usare il [installazione guidata piattaforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Vedere anche [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oppure, per ASP.NET Core, [Host su Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Le versioni non corrispondenti di ASP.NET in IIS e nel progetto di Visual Studio possono causare questo problema. Si potrebbe essere necessario impostare la versione del framework in Web. config. Per installare ASP.NET in IIS, usare il [installazione guidata piattaforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Vedere anche [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) oppure, per ASP.NET Core, [Host su Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Risolvere gli errori di autenticazione se si usa solo l'indirizzo IP
 
@@ -155,7 +155,7 @@ Se la configurazione di IIS non causa il problema, provare questi passaggi:
 
      Se IIS non è installato correttamente, dovrebbero essere visualizzati degli errori quando si digita `http://localhost` in un browser.
      
-     Per ulteriori informazioni sulla distribuzione in IIS, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) e, per ASP.NET Core, [Host su Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Per ulteriori informazioni sulla distribuzione in IIS, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) e, per ASP.NET Core, [Host su Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Creare un'applicazione ASP.NET di base sul server oppure utilizzare un file Web. config di base.
 

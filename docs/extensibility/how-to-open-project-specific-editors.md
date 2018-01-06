@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>Procedura: apertura degli editor specifici del progetto
 Se un file di elemento aperto da un progetto è intrinsecamente associato a specifico editor per il progetto, il progetto è necessario aprire il file utilizzando un editor specifico del progetto. Il file non può essere delegato down il meccanismo dell'IDE per la selezione di un editor. Anziché utilizzare un editor di bitmap standard, ad esempio, è possibile utilizzare questa opzione editor specifici del progetto per specificare un editor di bitmap specifico che riconosce le informazioni nel file che è univoco per il progetto.  

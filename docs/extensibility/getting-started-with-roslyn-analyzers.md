@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Introduzione a Roslyn analizzatori
 Con gli analizzatori di codice in tempo reale, basato sul progetto in Visual Studio, gli autori di API possono essere spedite analisi del codice specifico di dominio come parte di ai pacchetti NuGet.  Poiché gli analizzatori sono supportati da .NET Compiler Platform (nome in codice "Roslyn"), mentre si digita, anche prima di aver la riga (non più in attesa per compilare il codice per individuare problemi) possono produrre gli avvisi nel codice.  Gli analizzatori possono verificarsi anche una correzione automatica di codice tramite il prompt dei comandi di Visual Studio lampadina per consentirne la immediatamente il codice di pulizia  

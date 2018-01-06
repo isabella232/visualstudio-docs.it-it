@@ -26,11 +26,12 @@ caps.latest.revision: "58"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: cc4455d507265376b9f208d8f351472ee6968c45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3f4a6e3ba2eafa281fda8557f48c0886aff89105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software.

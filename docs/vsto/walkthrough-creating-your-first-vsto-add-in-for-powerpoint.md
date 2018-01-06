@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Procedura dettagliata: Creazione del primo componente aggiuntivo VSTO per PowerPoint
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office PowerPoint. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali presentazioni siano aperte. Per ulteriori informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Scrittura di codice che usa il modello a oggetti di PowerPoint per aggiungere una casella di testo a ogni nuova diapositiva.  
   
--   Compilazione ed esecuzione del progetto a scopo di test.  
+-   Creazione ed esecuzione del progetto a scopo di test.  
   
 -   Pulizia del progetto, in modo che il componente aggiuntivo VSTO non venga più eseguito automaticamente nel computer di sviluppo.  
   
@@ -73,13 +74,13 @@ ms.lasthandoff: 10/31/2017
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Scrittura del codice che aggiunge testo a ogni nuova diapositiva  
  Aggiungere quindi codice al file di codice ThisAddIn. Il nuovo codice usa il modello a oggetti di PowerPoint per aggiungere una casella di testo a ogni nuova diapositiva. Per impostazione predefinita, il file di codice ThisAddIn contiene il seguente codice generato:  
   
--   Una definizione parziale della classe `ThisAddIn`. Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di PowerPoint. Per altre informazioni, vedere [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Il resto della classe `ThisAddIn` viene definito in un file di codice nascosto che l'utente non deve modificare.  
+-   Una definizione parziale della classe `ThisAddIn` . Questa classe fornisce un punto di ingresso per il codice e fornisce l'accesso al modello a oggetti di PowerPoint. Per altre informazioni, vedere [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). Il resto della classe `ThisAddIn` viene definito in un file di codice nascosto che l'utente non deve modificare.  
   
 -   I gestori eventi `ThisAddIn_Startup` e `ThisAddIn_Shutdown` . Questi gestori eventi vengono chiamati quando PowerPoint carica e scarica il componente aggiuntivo VSTO. Usare questi gestori eventi per inizializzare il componente aggiuntivo VSTO al momento del caricamento e per eseguire la pulizia delle risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Per altre informazioni, vedere [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
 #### <a name="to-add-a-text-box-to-each-new-slide"></a>Per aggiungere una casella di testo a ogni nuova diapositiva  
   
-1.  Nel file di codice ThisAddIn aggiungere il codice seguente alla classe `ThisAddIn`. Questo codice definisce un gestore eventi per l'evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> dell'oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
+1.  Nel file di codice ThisAddIn, aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice definisce un gestore eventi per l'evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> dell'oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
   
      Quando l'utente aggiunge una nuova diapositiva alla presentazione attiva, il gestore eventi aggiunge una casella di testo nella parte superiore della nuova diapositiva, quindi aggiunge il testo nella casella di testo.  
   
@@ -92,9 +93,9 @@ ms.lasthandoff: 10/31/2017
   
  Per modificare tutte le nuove diapositive, negli esempi di codice precedenti vengono usati i seguenti oggetti:  
   
--   Il campo `Application` della classe `ThisAddIn`. Il campo `Application` restituisce un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application> che rappresenta l'istanza corrente di PowerPoint.  
+-   Il campo `Application` della classe `ThisAddIn` . Il campo `Application` restituisce un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Application> che rappresenta l'istanza corrente di PowerPoint.  
   
--   Il parametro `Sld` del gestore eventi dell'evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>. Il parametro `Sld` è un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Slide> che rappresenta la nuova diapositiva. Per ulteriori informazioni, vedere [soluzioni PowerPoint](../vsto/powerpoint-solutions.md).  
+-   Il parametro `Sld` del gestore eventi relativo all'evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>. Il parametro `Sld` è un oggetto <xref:Microsoft.Office.Interop.PowerPoint.Slide> che rappresenta la nuova diapositiva. Per ulteriori informazioni, vedere [soluzioni PowerPoint](../vsto/powerpoint-solutions.md).  
   
 ## <a name="testing-the-project"></a>Test del progetto  
  Quando si compila e si esegue il progetto, verificare che la casella di testo venga visualizzata nelle nuove diapositive aggiunte a una presentazione.  

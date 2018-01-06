@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf4c3b0f494a5825820b8f794ccaf5dc727786e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bfdefc3202a026516edb3f9221e0626e1a83b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-events"></a>L'invio di eventi
 Il meccanismo per la comunicazione tra il debugger e il motore di debug (DE) è un modello di eventi in base a DCOM. Gli eventi vengono inviati come oggetti COM, e ogni evento dispone di parametri che specificano le operazioni seguenti:  
@@ -32,7 +33,7 @@ Il meccanismo per la comunicazione tra il debugger e il motore di debug (DE) è 
   
  Tutti gli eventi di debug vengono inviati utilizzando il metodo [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Origini evento](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
  Vengono illustrati due origini di eventi: il motore di debug (DE) e la sessione di debug manager (SDM).  
   

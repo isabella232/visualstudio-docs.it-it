@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>Cenni preliminari sulle opzioni di configurazione
 I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può supportare più configurazioni che possono essere compilate in fase di debug, esecuzione e/o distribuiti. Una configurazione è un tipo di compilazione descritto, con un set denominato di proprietà, in genere le opzioni del compilatore e percorsi dei file. Per impostazione predefinita, le nuove soluzioni contengono due configurazioni, Debug e rilascio. Possono applicare queste configurazioni utilizzando le impostazioni predefinite o modificare per soddisfare i requisiti della soluzione e/o di progetto specifici. Alcuni pacchetti possono essere compilati in due modi: come un editor di ActiveX o come un componente sul posto. I progetti non è necessario supportare più configurazioni, è tuttavia. Se è disponibile solo una configurazione, viene eseguito il mapping di tale configurazione in tutte le configurazioni di soluzione.  
@@ -35,7 +36,7 @@ I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può 
 |Nome della configurazione|Piattaforma, Win32|Piattaforma: Win64|  
 |------------------------|----------------------|----------------------|  
 |Debug|\<Eseguire il debug Win32 Impostazioni >|\<Debug impostazioni Win64 >|  
-|Versione|\<Versione Win32 Impostazioni >|\<Versione Win64 Impostazioni >|  
+|Rilascio|\<Versione Win32 Impostazioni >|\<Versione Win64 Impostazioni >|  
 |MyConfig|N/D|\<Impostazioni MyConfig Win64 >|  
   
 > [!NOTE]

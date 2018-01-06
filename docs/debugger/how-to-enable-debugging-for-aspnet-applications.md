@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debug di applicazioni ASP.NET in Visual Studio
 
@@ -37,7 +38,7 @@ Per seguire le istruzioni in questo argomento, è necessario:
 
 - IIS Express, incluso per impostazione predefinita in Visual Studio 2012 e versioni successive
 
-    -oppure-
+    oppure
 
 - Una variabile locale IIS web server (versione 8.0 o versioni successive) che è configurato correttamente ed eseguire l'applicazione ASP.NET senza errori.
 
@@ -124,7 +125,7 @@ Per il debug su un server web locale, impostare le proprietà del progetto. Per 
 
 2. Se si sceglie un server esterno (personalizzato), immettere l'URL corretto nel **URL progetto** (o **URL di Base**) campo.
 
-    Se il server esterno IIS locale, IIS deve essere installato e configurato correttamente. Ad esempio, la versione corretta di ASP.NET deve essere configurata in IIS. Per ulteriori informazioni, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Se si desidera testare la distribuzione, nonché il debug, vedere [distribuzione per eseguire il test](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Se il server esterno IIS locale, IIS deve essere installato e configurato correttamente. Ad esempio, la versione corretta di ASP.NET deve essere configurata in IIS. Per ulteriori informazioni, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Se si desidera testare la distribuzione, nonché il debug, vedere [distribuzione per eseguire il test](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Se il server esterno [remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), connettersi al processo invece e queste impostazioni di progetto non vengono utilizzate per il debug.
 
@@ -134,7 +135,7 @@ Per IIS Express, non è necessario configurare il server web (ignorare questa se
 
 Se si utilizza il server web IIS locale, seguire questi passaggi.
 
-1. Assicurarsi che IIS sia installato correttamente. Per ulteriori informazioni, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Assicurarsi che IIS sia installato correttamente. Per ulteriori informazioni, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Assicurarsi di installare la versione corretta di ASP.NET sul server. Utilizzare l'installazione guidata piattaforma Web (WebPI) per installare ASP.NET 4.5 (scegliere il nodo del Server in Windows Server 2012 R2, **ottenere nuovi componenti della piattaforma Web** e quindi cercare ASP.NET). Per installare ASP.NET Core, vedere [la pubblicazione in IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -230,5 +231,5 @@ Ad esempio, è possibile specificare `debug="true"` in www.microsoft.com/aaa/Web
 [Eseguire il debug di applicazioni Web distribuite](debugging-deployed-web-applications.md)   
 [Procedura dettagliata: Debug di un Web Form](walkthrough-debugging-a-web-form.md)   
 [Procedura: Debug di eccezioni ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Debug di applicazioni Web: errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)
+[Eseguire il debug di applicazioni Web: errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)
   

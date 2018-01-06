@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Cenni preliminari sul riquadro delle azioni
   Un riquadro azioni è personalizzabile **azioni documenti** riquadro attività associato a un documento di Microsoft Office Word specifico o una cartella di lavoro di Microsoft Office Excel. È ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività predefiniti come il **origine XML** riquadro in Excel o **stili e formattazione** riquadro attività in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 |FromLeft|Sovrapposizione dal lato sinistro del riquadro azioni.|  
 |FromRight|Sovrapposizione dal lato destro del riquadro azioni.|  
 |FromTop|Sovrapposizione dall'alto del riquadro azioni.|  
-|Nessuno|Nessun ordine di sovrapposizione definito. L'ordine è controllato dallo sviluppatore.|  
+|nessuno|Nessun ordine di sovrapposizione definito. L'ordine è controllato dallo sviluppatore.|  
   
  Il codice seguente imposta la proprietà <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> per ordinare i controlli utente dall'alto del riquadro azioni.  
   

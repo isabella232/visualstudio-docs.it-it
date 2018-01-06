@@ -20,11 +20,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28ed2ff2d68dc5a23cfceeb5d5f0eab6dea35eb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procedura dettagliata: Aggiunta di controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi documento di Microsoft Office Word aperto usando un componente aggiuntivo VSTO. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti di aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.  
@@ -84,14 +85,14 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**addButtonCheckBox**|  
+    |**Name**|**addButtonCheckBox**|  
     |**Etichetta**|**Pulsante Aggiungi**|  
   
 9. Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**addRichTextCheckBox**|  
+    |**Name**|**addRichTextCheckBox**|  
     |**Etichetta**|**Add Rich Text Control**|  
   
 10. Nella finestra di progettazione della barra multifunzione fare doppio clic su **Aggiungi pulsante**.  

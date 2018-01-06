@@ -29,11 +29,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7dd65878844e5c903b18c08e6dd5455f3dccb91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e8c9a3e0abdf478d6280795cd17b9b9a0bea0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Combinazione di VBA con le personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.  
@@ -147,7 +148,7 @@ Sub MyMacro()
 End Sub  
 ```  
   
- Questa proprietà rappresenta un modo più pratico per effettuare chiamate nell'assembly di personalizzazione rispetto all'utilizzo diretto del metodo `GetManagedClass` . `CallVSTOAssembly` restituisce un oggetto che rappresenta la classe di elementi host esposta a VBA. I membri e i parametri del metodo dell'oggetto restituito sono visualizzati in IntelliSense.  
+ Questa proprietà rappresenta un modo più pratico per effettuare chiamate nell'assembly di personalizzazione rispetto all'utilizzo diretto del metodo `GetManagedClass`. `CallVSTOAssembly` restituisce un oggetto che rappresenta la classe di elementi host esposta a VBA. I membri e i parametri del metodo dell'oggetto restituito sono visualizzati in IntelliSense.  
   
  La proprietà `CallVSTOAssembly` dispone di una dichiarazione che è simile al codice seguente. Tale codice presuppone che sia stata esposta a VBA la classe di elementi host `Sheet1` in un progetto di cartella di lavoro di Excel denominato `ExcelWorkbook1` .  
   
@@ -246,7 +247,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
  Nella tabella seguente sono elencati alcuni errori comuni e i suggerimenti per correggerli.  
   
-|Errore|Suggerimento|  
+|Error|Suggerimento|  
 |-----------|----------------|  
 |Dopo aver impostato la proprietà **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** , un messaggio di errore indica che il documento non contiene un progetto VBA o che non si dispone delle autorizzazioni per accedere al progetto VBA nel documento.|Assicurarsi che il documento nel progetto contenga almeno una macro VBA, che il progetto VBA sia sufficientemente attendibile per essere eseguito e che non sia protetto da una password.|  
 |Dopo aver impostato la proprietà **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** , un messaggio di errore indica che la dichiarazione <xref:System.Runtime.InteropServices.GuidAttribute> manca o è danneggiata.|Assicurarsi che la dichiarazione <xref:System.Runtime.InteropServices.GuidAttribute> si trovi nel file AssemblyInfo.cs o AssemblyInfo.vb del progetto e che tale attributo sia impostato su un GUID valido.|  

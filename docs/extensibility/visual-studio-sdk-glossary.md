@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9bf6b39d74e88289d9521216f98aa3195e30d6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 Il glossario includono le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentazione.  
@@ -63,7 +64,7 @@ Il glossario includono le definizioni dei termini utilizzati nel [!INCLUDE[vsips
  Interfaccia di programmazione che consente agli utenti di modificare gli elementi dell'interfaccia utente (Form, pulsanti e altri controlli).  
   
  DocData  
- Un oggetto COM che incapsula i dati sottostanti di un documento in un mondo in cui è presente una separazione documento/visualizzazione (ad esempio, in caso di editor di testo, questo sarebbe il buffer di testo sottostante tutte le visualizzazioni di editor di testo). Se il EditorFactory non fornisce questo oggetto, l'IDE verrà produrre uno per suo conto. La responsabilità di questo oggetto consiste nel gestire la persistenza dei dati e la semantica di condivisione per più viste su questo stesso `DocData`. Se il `DocData` oggetto supporta la `IOleCommandTarget` interfaccia, verrà incluso nel routing dei comandi di UIShell il..  
+ Un oggetto COM che incapsula i dati sottostanti di un documento in un mondo in cui è presente una separazione documento/visualizzazione (ad esempio, in caso di editor di testo, questo sarebbe il buffer di testo sottostante tutte le visualizzazioni di editor di testo). Se il EditorFactory non fornisce questo oggetto, l'IDE verrà produrre uno per suo conto. La responsabilità di questo oggetto consiste nel gestire la persistenza dei dati e la semantica di condivisione per più viste su questo stesso `DocData`. Se il `DocData` oggetto supporta la `IOleCommandTarget` interfaccia, verrà incluso nel routing dei comandi di UIShell il.  
   
  DocObject  
  Tecnologia usata per ospitare l'interfaccia utente in un intervallo fornito dall'host. In particolare, questo termine si riferisce a qualsiasi incorporamento che supporta il `IOleDocument` e le relative interfacce. Questa tecnologia ha molte applicazioni potenziali, ad esempio un dettaglio di implementazione di documenti di COM, le finestre degli strumenti in Visual Basic 5.0, finestre di progettazione ActiveX in Visual Basic 6.0 e così via.  

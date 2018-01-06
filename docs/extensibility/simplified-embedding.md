@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 183dc4ad9d7ea1a2f6855be050ad8459a3f801ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="simplified-embedding"></a>Semplificato incorporamento
 Incorporamento semplificato è abilitato in un editor, quando il relativo oggetto visualizzazione del documento è definito come padre (vale a dire un elemento figlio di apportare) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia viene implementata per gestire i comandi della finestra. Editor di incorporamento semplificato non possono ospitare controlli attivi. Nella figura seguente, vengono visualizzati gli oggetti utilizzati per creare un editor con incorporamento semplificato.  
@@ -30,7 +31,7 @@ Editor con incorporamento semplificato
   
  Sono contenute tutte le interfacce implementate per creare un editor con incorporamento semplificato nel `CYourEditorDocument` oggetto. Tuttavia, per supportare più visualizzazioni dei dati del documento, dividere le interfacce in oggetti separati di dati e la visualizzazione, come indicato nella tabella seguente.  
   
-|Interfaccia|Percorso dell'interfaccia|Uso|  
+|Interfaccia|Percorso dell'interfaccia|Usa|  
 |---------------|---------------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Visualizza|Fornisce una connessione alla finestra padre.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Visualizza|Gestisce i comandi.|  

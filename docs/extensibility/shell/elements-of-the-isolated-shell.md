@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32ca2aa4c3c37a4ff407ec06031ec8db16b54ea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82379a840010ebae434f8ad1a03c12793fe10ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementi della Shell isolata
 È possibile modificare il punto di ingresso dell'applicazione di applicazione shell isolata e vsct,. pkgdef, and.pkgundef file, impostazioni del Registro di sistema e le impostazioni di runtime.  

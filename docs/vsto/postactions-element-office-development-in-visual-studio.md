@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 282a1bff821ee032d0d08038858c3a04fc7796ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3635a92f40f2ed313ca08dcc6357900ac002a60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `postActions` dello spazio dei nomi `vstav3` contiene tutti gli elementi `postAction` che descrivono le azioni post-distribuzione, che vengono eseguite dopo l'installazione delle soluzioni Office.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  `postActions` presenta l'elemento seguente:  
   
 ### <a name="postaction"></a>postAction  
- Parametro facoltativo. Il ruolo del `postAction` elemento il `vstav3` dello spazio dei nomi è definito in [&#60; postAction &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/postaction-element-office-development-in-visual-studio.md).  
+ Facoltativo. Il ruolo del `postAction` elemento il `vstav3` dello spazio dei nomi è definito in [&#60; postAction &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/postaction-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Esempio di azione post-distribuzione  
   

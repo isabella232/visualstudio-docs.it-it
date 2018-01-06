@@ -10,16 +10,17 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: ad07ac5eba9e8579ae08f5ba1b242f3bc5483a5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d4c8dbac90e3d1e3ec10314debf0a288ad48053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] include alcuni ActivityDesigner che è possibile usare per la costruzione di flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e viene fornito materiale sussidiario sulle relative modalità di utilizzo.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [StateMachine](../workflow-designer/statemachine-activity-designer.md)  
  Contiene una raccolta di stati e modella i flussi di lavoro usando il paradigma comune della macchina a stati.  
   
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/27/2017
  [Transizione](../workflow-designer/transition-activity-designer.md)  
  Rappresenta la transizione tra due stati.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  <xref:System.Activities.Statements.StateMachine>  
   
  <xref:System.Activities.Statements.State>  

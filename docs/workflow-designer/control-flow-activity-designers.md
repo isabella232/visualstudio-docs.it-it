@@ -11,16 +11,17 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7453a61f599b8d3e051fea1c016d914814ec7fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-flow-activity-designers"></a>ActivityDesigner Flusso di controllo
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] include alcune attività fornite dal sistema che è possibile usare per la costruzione di flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e viene fornito materiale sussidiario sulle relative modalità di utilizzo.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Esegue l'attività contenuta nel rispettivo corpo almeno una volta, fino a che una condizione specificata restituisce **true**.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/27/2017
  [While](../workflow-designer/while-activity-designer.md)  
  Esegue l'attività contenuta nel rispettivo corpo, mentre una condizione specificata restituisce **true**.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  <xref:System.Activities.Activity>  
   
  <xref:System.Activities.Statements.DoWhile>  

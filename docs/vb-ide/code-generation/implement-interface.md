@@ -11,11 +11,12 @@ ms.assetid: bebff2ad-25b6-4adc-8762-60d23bdd639a
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932cfb092d4106d9afa323aa3689a813ec2dde03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4a8a6c2e5edf0acc7382a5099afbbe953ceae2a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implement-an-interface-in-visual-basic"></a>Implementare un'interfaccia in Visual Basic
 **Novità:** consente di generare immediatamente il codice necessario per implementare un'interfaccia. 
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Vedere anche  
 [Code Generation (Visual Basic)](../code-generation-vb.md) (Generazione di codice (Visual Basic))  
-[Preview Changes](../../ide/preview-changes.md) (Visualizzare l'anteprima delle modifiche)
+[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

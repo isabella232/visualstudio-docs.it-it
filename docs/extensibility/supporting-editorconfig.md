@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111e53ad9beec3a5f5ef013b996a541ea0fa1e72
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: vssdk
+ms.openlocfilehash: 9b38601953fd5b1c80e5eeffd75c2fdc2608fc73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Supporto EditorConfig per il servizio di linguaggio
 
@@ -27,11 +28,11 @@ Nella maggior parte dei casi, quando si implementa un servizio di linguaggio di 
 
 Di seguito sono le modifiche necessarie per aggiornare un servizio di linguaggio per il supporto di file EditorConfig, sostituendo globale _specifici della lingua_ con un _contestuali_ opzione:
 
-## <a name="indent-style"></a>Stile di rientro
+## <a name="indent-style"></a>Stile rientro
 
 Opzioni specifiche del linguaggio | Opzioni di scelta rapida
 -------|--------
-Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|! textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>! textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
+Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|!textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>!textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
 
 ## <a name="indent-size"></a>Dimensione rientro
 

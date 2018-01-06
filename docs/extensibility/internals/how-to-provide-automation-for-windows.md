@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 945eeb8b81ecb26d43da9528db154d133c4f868c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17cf60573b6feb9fd317116eec4639dbf88f6089
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procedura: fornire l'automazione per Windows
 È possibile fornire l'automazione per documenti e finestre. Fornisce l'automazione è consigliabile ogni volta che si desidera rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non esiste ancora fornisce un oggetto di automazione pronti all'uso, come invece avviene con un elenco di attività.  

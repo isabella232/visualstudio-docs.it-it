@@ -15,16 +15,17 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0201d2f282365a028b6251324b07276c995621ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1d0c9e684312468011f63bdfbb72d1cdadba6b08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-project-and-project-item-templates"></a>Aggiunta di progetto e i modelli di progetto
 Quando si creano tipi di progetto, è necessario fornire il supporto per l'aggiunta di nuovi progetti ed elementi di progetto con lo standard [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestre di dialogo (IDE) di ambiente di sviluppo integrato. Negli argomenti seguenti vengono illustrano diverse tecniche per l'aggiunta di progetti ed elementi di progetto.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Contesto di progetto](../../extensibility/internals/project-context.md)  
  Viene illustrato che il progetto non offre la maggior parte delle informazioni di contesto per ciò che accade realmente nell'ambiente.  
   

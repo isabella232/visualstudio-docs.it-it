@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Utilizzo degli elementi di posta
   La <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contiene i metodi e le proprietà utilizzati per eseguire attività con messaggi di posta elettronica.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Attività|Routine|  
 |----------|---------------|  
 |Creare un messaggio di posta elettronica.|[Procedura: Creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Invio di un messaggio di posta elettronica|[Procedura: invio di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Invio di un messaggio di posta elettronica|[Procedura: Inviare messaggi di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Rispondere a nuovi messaggi di posta elettronica con un'azione personalizzata.|[Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Salvare gli allegati.|[Procedura: Salvare allegati da elementi di posta elettronica di Outlook a livello di codice](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Aggiungere gli allegati|[Procedura: Allegare file a elementi di posta elettronica di Outlook a livello di codice](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 818b56963c4733ef9bcf826b14df5a703c44e429
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de947d7d6bf6688381f5026d68d4a007dd40e026
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="include-element"></a>L'elemento di inclusione
 L'elemento di inclusione specifica un file che può trovarsi in fornito includere percorso per l'inserimento nel file corrente.  Tutti i simboli e i tipi definiti diventerà parte del risultato compilato.  
@@ -39,7 +40,7 @@ L'elemento di inclusione specifica un file che può trovarsi in fornito includer
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |href|Obbligatorio. Il percorso al file di intestazione:<br /><br /> href="stdidcmd.h"|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
