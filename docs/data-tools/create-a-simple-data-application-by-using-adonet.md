@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05a0a339b413495aadfa397e5fec3b826f920026
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 Quando si crea un'applicazione che modifica i dati in un database, eseguire le attività di base, ad esempio si definiscono le stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di una semplice applicazione di Windows Form "form su dati" utilizzando Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi i set di dati, LINQ to SQL ed Entity Framework, infine eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.  
@@ -98,9 +99,9 @@ Creare il database di esempio attenendosi alla procedura seguente:
   
 |Controlli per il form Navigazione|Proprietà|  
 |--------------------------------------|----------------|  
-|Pulsante|Name = btnGoToAdd|  
-|Pulsante|Name = btnGoToFillOrCancel|  
-|Pulsante|Name = btnExit|  
+|Button|Name = btnGoToAdd|  
+|Button|Name = btnGoToFillOrCancel|  
+|Button|Name = btnExit|  
   
  **Form NewCustomer**  
   
@@ -110,12 +111,12 @@ Creare il database di esempio attenendosi alla procedura seguente:
 |---------------------------------------|----------------|  
 |TextBox|Name = txtCustomerName|  
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|  
-|Pulsante|Name = btnCreateAccount|  
+|Button|Name = btnCreateAccount|  
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|  
 |DateTimePicker|Format = Short<br /><br /> Nome = dtpOrderDate|  
-|Pulsante|Name = btnPlaceOrder|  
-|Pulsante|Name = btnAddAnotherAccount|  
-|Pulsante|Name = btnAddFinish|  
+|Button|Name = btnPlaceOrder|  
+|Button|Name = btnAddAnotherAccount|  
+|Button|Name = btnAddFinish|  
   
  **Form FillOrCancel**  
   
@@ -127,9 +128,9 @@ Creare il database di esempio attenendosi alla procedura seguente:
 |Pulsante|Name = btnFindByOrderID|  
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|  
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|  
-|Pulsante|Name = btnCancelOrder|  
-|Pulsante|Name = btnFillOrder|  
-|Pulsante|Name = btnFinishUpdates|  
+|Button|Name = btnCancelOrder|  
+|Button|Name = btnFillOrder|  
+|Button|Name = btnFinishUpdates|  
   
 ##  <a name="BKMK_storetheconnectionstring"></a>Archiviare la stringa di connessione  
  Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file app. config nel progetto e creare un metodo che restituisce la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.  

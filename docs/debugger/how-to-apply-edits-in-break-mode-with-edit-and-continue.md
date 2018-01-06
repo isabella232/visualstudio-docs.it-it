@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e925ab0f989a0d817ce7aaa7ca1d15171555f27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 54fb069f5328dd9bc7cabab16c0688109312dfd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: applicare modifiche in modalità di interruzione con Modifica e continuazione
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.  
@@ -42,11 +43,11 @@ Per le limitazioni sull'utilizzo di modifica e continuazione durante il debug, v
   
     -   Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal **Debug** menu e attendere che l'applicazione raggiunga il punto di interruzione.  
   
-         -oppure-  
+         oppure  
   
     -   Avviare il debug e quindi selezionare **Interrompi tutto** dal **Debug** menu.  
   
-         -oppure-  
+         oppure  
   
     -   Quando si verifica un'eccezione, scegliere **Abilita modifica** sul**eccezioni**.  
   

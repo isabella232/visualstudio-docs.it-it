@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 Analisi del codice dei criteri di archiviazione specificano un set di regole che i membri di un progetto team devono eseguire sul codice sorgente prima che venga verificata controllo della versione. Microsoft fornisce un set di standard *set di regole* tale analisi del codice del gruppo di regole in aree funzionali. *Set di regole di criteri di archiviazione personalizzato* specificare un set di regole di analisi del codice che sono specifiche per un progetto team. Un set di regole viene archiviato in un file con estensione ruleset.  

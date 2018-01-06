@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare i dati con DBDirect di TableAdapter metodi
 Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente in un database utilizzando i metodi DBDirect di un oggetto TableAdapter. I metodi DBDirect di un oggetto TableAdapter forniscono un elevato livello di controllo degli aggiornamenti del database. È possibile usarli per eseguire istruzioni SQL specifiche e stored procedure chiamando i singoli `Insert`, `Update`, e `Delete` metodi in base alle esigenze dell'applicazione (a differenza di overload `Update` metodo che esegue l'aggiornamento Istruzioni INSERT e DELETE in un'unica chiamata).  
@@ -88,7 +89,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
   
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
-         -oppure-  
+         oppure  
   
     -   Selezionare **nuova connessione** per avviare il **Aggiungi/Modifica connessione** la finestra di dialogo.  
   
@@ -117,9 +118,9 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
   
 2.  Impostare le seguenti **nome** e **testo** proprietà su ogni pulsante.  
   
-    |Nome|Testo|  
+    |nome|Testo|  
     |----------|----------|  
-    |`InsertButton`|**Inserimento**|  
+    |`InsertButton`|**Inserisci**|  
     |`UpdateButton`|**Aggiornamento**|  
     |`DeleteButton`|**Eliminazione**|  
   

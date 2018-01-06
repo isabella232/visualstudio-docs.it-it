@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0091e17cf24a9476dde84cf2d8ad1a34f94e2cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 *Aggiornamento gerarchico* si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati di due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento alle regole di coerenza fornite dai vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per ulteriori informazioni sulle relazioni nei set di dati, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md)  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
 Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correlata prima di salvare i dati in un database, potrebbe anche essere necessario eseguire il commit dei record padre appena creati prima di aggiungere i nuovi record figlio in un set di dati. In altre parole, potrebbe essere necessario aggiungere il nuovo record padre (Customer) al set di dati affinché i vincoli di chiave esterna consentano l'aggiunta dei nuovi record figli (Orders) al set di dati. A tale scopo, è possibile usare l'evento figlio `BindingSource.AddingNew`.  
   
 > [!NOTE]
->  Se è necessario eseguire il commit di nuovi record padre dipende dal tipo di controllo che viene utilizzata per associare all'origine dati. In questa procedura dettagliata utilizzare singoli controlli per l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre sono stati invece visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>questo aggiuntiva <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per il record padre non è necessario chiamare. perché la funzionalità di data-binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.  
+>  Se è necessario eseguire il commit di nuovi record padre dipende dal tipo di controllo che viene utilizzata per associare all'origine dati. In questa procedura dettagliata utilizzare singoli controlli per l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre sono stati invece visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>questo aggiuntiva <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per il record padre non è necessario chiamare. perché la funzionalità di data binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Per aggiungere il codice per eseguire il commit dei record padre nel set di dati prima dell'aggiunta dei nuovi record figlio  
   
@@ -113,7 +114,7 @@ Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correl
   
  Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterManager` classe:  
   
-|Membro|Descrizione|  
+|Member|Descrizione|  
 |------------|-----------------|  
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|  
 |Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Valore booleano.|  

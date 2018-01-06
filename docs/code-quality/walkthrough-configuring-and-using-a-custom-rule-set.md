@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 Questa procedura dettagliata viene illustrato come utilizzare gli strumenti di analisi codice che sono stati configurati per l'utilizzo di un oggetto personalizzato *set di regole* in una libreria di classi. È possibile selezionare un set di regole correlato al tipo di progetto che è stato specificato per la soluzione, oppure è possibile selezionare il set di regole alternativi per soddisfare esigenze specifiche, ad esempio l'analisi del codice legacy per i problemi che possono essere risolti in modo che non determina interruzione. In entrambi i casi, i set di regole possono essere personalizzati anche per ottimizzare per i requisiti del progetto.  
@@ -40,7 +41,7 @@ Questa procedura dettagliata viene illustrato come utilizzare gli strumenti di a
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
+-   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Regola di utilizzo di set con l'analisi del codice  
  Innanzitutto, creare una libreria di classi semplice.  

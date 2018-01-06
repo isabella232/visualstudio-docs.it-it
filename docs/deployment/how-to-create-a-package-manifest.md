@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 92182b9b6c6b2b2759b77e7b14d71dfd40379fc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 463286eb8360b728b3b7e3ce9396c9f4b7e11305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: creare un manifesto di pacchetto
 Per distribuire i prerequisiti per l'applicazione, è possibile utilizzare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ciascuna lingua. Le funzionalità condivise tra le diverse versioni localizzate devono andare nel manifesto del prodotto.  
@@ -37,11 +38,11 @@ Per distribuire i prerequisiti per l'applicazione, è possibile utilizzare un pa
   
 #### <a name="to-create-the-package-manifest"></a>Per creare il manifesto di pacchetto  
   
-1.  Creare una directory per il pacchetto del programma di avvio automatico. In questo esempio viene utilizzato c:\package..  
+1.  Creare una directory per il pacchetto del programma di avvio automatico. In questo esempio viene utilizzato c:\package.  
   
 2.  Creare una sottodirectory con il nome delle impostazioni locali, ad esempio en per la lingua inglese.  
   
-3.  In Visual Studio, creare un file XML denominato `package.xml`e salvarlo nella cartella c:\package\en..  
+3.  In Visual Studio, creare un file XML denominato `package.xml`e salvarlo nella cartella c:\package\en.  
   
 4.  Aggiungere codice XML per elencare il nome del pacchetto, le impostazioni cultura per il manifesto di pacchetto di aggiornamento e il contratto di licenza facoltativo. Il codice XML seguente utilizza le variabili `DisplayName` e `Culture`, che sono definite in un elemento successivo.  
   

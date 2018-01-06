@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere i dati XML in un set di dati
 ADO.NET fornisce semplici metodi per lavorare con i dati XML. In questa procedura dettagliata, si crea un'applicazione Windows che carica i dati XML in un set di dati. Il set di dati viene visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo. Infine, uno schema XML in base al contenuto del file XML viene visualizzato in una casella di testo.  
@@ -165,13 +166,13 @@ ADO.NET fornisce semplici metodi per lavorare con i dati XML. In questa procedur
   
 3.  Impostare le proprietà seguenti:  
   
-    |Controllo|Proprietà|Impostazione|  
+    |Control|Proprietà|Impostazione|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**Barre di scorrimento**|**Verticale**|  
-    |`Button1`|**Nome**|`ReadXmlButton`|  
+    |`Button1`|**Name**|`ReadXmlButton`|  
     ||**per**|`Read XML`|  
-    |`Button2`|**Nome**|`ShowSchemaButton`|  
+    |`Button2`|**Name**|`ShowSchemaButton`|  
     ||**per**|`Show Schema`|  
   
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Creare il set di dati che riceve i dati XML  

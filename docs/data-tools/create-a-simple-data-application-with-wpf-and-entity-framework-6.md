@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF e di Entity Framework 6
 Questa procedura dettagliata viene illustrato come creare un'applicazione di base "form su dati" in Visual Studio con LocalDB di SQL Server, il database Northwind, Entity Framework 6 e Windows Presentation Foundation. Viene illustrato come eseguire l'associazione dati di base con una visualizzazione master-Details e include anche un personalizzati "associazione Navigatore" con i pulsanti "Sposta avanti", "Move Previous," "Sposta all'inizio," "Sposta alla fine," "Aggiorna" e "Delete".  
@@ -422,7 +423,7 @@ Aggiungere questi metodi del gestore della classe MainWindow in MainWindow.xaml.
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
-Per avviare il debug, premere **F5**. Si dovrebbe essere dati del cliente e ordine popolati nella griglia e i pulsanti di navigazione devono funzionare come previsto. Fare clic su "Commit" per aggiungere un nuovo cliente o un ordine per il modello dopo aver immesso i dati. Fare clic su "Annulla" per eseguire il backup da un nuovo cliente o un nuovo modulo d'ordine senza salvare i dati. È possibile apportare modifiche agli ordini direttamente nelle caselle di testo e i clienti esistenti e tali modifiche vengono scritte automaticamente il modello.  
+Premere **F5** per avviare il debug. Si dovrebbe essere dati del cliente e ordine popolati nella griglia e i pulsanti di navigazione devono funzionare come previsto. Fare clic su "Commit" per aggiungere un nuovo cliente o un ordine per il modello dopo aver immesso i dati. Fare clic su "Annulla" per eseguire il backup da un nuovo cliente o un nuovo modulo d'ordine senza salvare i dati. È possibile apportare modifiche agli ordini direttamente nelle caselle di testo e i clienti esistenti e tali modifiche vengono scritte automaticamente il modello.  
   
 ## <a name="see-also"></a>Vedere anche
 [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  

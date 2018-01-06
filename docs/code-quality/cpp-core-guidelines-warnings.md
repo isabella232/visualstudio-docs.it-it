@@ -11,11 +11,12 @@ author: mblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 65f4e7ed865a3a620d58b45580914d6e0b589660
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilizzando i controlli della linee guida di base di C++
 Le linee guida componenti di base di C++ sono un set portabile di linee guida, regole e procedure consigliate sulla codifica in C++ creati dai progettisti e gli esperti di C++. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. Correttori ortografici delle linee guida per i componenti di base vengono installati per impostazione predefinita in Visual Studio 2017 e sono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
@@ -62,7 +63,7 @@ int main()
   
 -   C26485 è regola Bounds.3: nessun decadimento a puntatore, matrice.  
   
--   C26481 è regola Bounds.1: non utilizzare l'aritmetica dei puntatori. In alternativa, usare `span` .  
+-   C26481 è regola Bounds.1: non utilizzare l'aritmetica dei puntatori. In alternativa, usare `span`.  
   
  Se il ruleSet di analisi codice C++ Core controllare installato e abilitato quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Di seguito è riportato l'output di compilazione del codice di esempio:  
   

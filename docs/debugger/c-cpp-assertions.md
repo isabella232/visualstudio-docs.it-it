@@ -32,11 +32,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eaa6ba7a5ba88d3a7f5ff2b8f9f7571c26a3baf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cc-assertions"></a>Asserzioni C/C++
 Un'istruzione di asserzione specifica una condizione che si prevede abbia valore true in un punto del programma. Se tale condizione non è true, l'asserzione ha esito negativo, viene interrotta l'esecuzione del programma e [finestra di dialogo Asserzione non riuscita](../debugger/assertion-failed-dialog-box.md) viene visualizzato.  
@@ -53,7 +54,7 @@ Un'istruzione di asserzione specifica una condizione che si prevede abbia valore
   
  È possibile utilizzare le asserzioni per rilevare errori logici, controllare i risultati di un'operazione e verificare le condizioni di errore che avrebbero dovuto essere gestite.  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
+##  <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Funzionamento di asserzioni](#BKMK_How_assertions_work)  
   
  [Asserzioni nelle build di Debug e rilascio](#BKMK_Assertions_in_Debug_and_Release_builds)  
@@ -81,7 +82,7 @@ Un'istruzione di asserzione specifica una condizione che si prevede abbia valore
   
  Usare le asserzioni per rilevare errori durante lo sviluppo. Come regola, utilizzare un'asserzione per ogni presupposto. Ad esempio, se si presuppone che un argomento non è NULL, utilizzare un'asserzione per testare questo presupposto.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>Asserzioni nelle build di Debug e rilascio  
  Le istruzioni di asserzione compilare solo se `_DEBUG` è definito. In caso contrario, il compilatore considera asserzioni come istruzioni null. Pertanto, le istruzioni di asserzione non impongano alcun overhead o costano nella versione finale del programma, prestazioni e consentono di evitare l'utilizzo di `#ifdef` direttive.  
@@ -105,7 +106,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
   
  `VERIFY`chiamate `myFnctn` nelle versioni di Debug e di rilascio, è possibile utilizzare. Se tuttavia si utilizza `VERIFY` impone l'overhead di una chiamata di funzione non necessari nella versione di rilascio.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_CRT_assertions"></a>Asserzioni CRT  
  Il CRTDBG. H definisce le [macro Assert e ASSERTE](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) per il controllo delle asserzioni.  
@@ -157,7 +158,7 @@ _ASSERTE(_CrtIsValidPointer( myData );
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
 ```  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_MFC_assertions"></a>Asserzioni MFC  
  MFC definisce il [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) macro per il controllo delle asserzioni. Definisce inoltre la `MFC ASSERT_VALID` e `CObject::AssertValid` metodi per controllare lo stato interno di un `CObject`-oggetto derivato.  
@@ -269,7 +270,7 @@ void CMyData::AssertValid( ) const
 ###  <a name="BKMK_Limitations_of_AssertValid"></a>Limitazioni di AssertValid  
  Generazione di un'asserzione indica che l'oggetto non è corretto e che l'esecuzione verrà interrotta. Tuttavia, una mancanza di asserzione indica solo che è stato rilevato alcun problema, ma l'oggetto potrebbe non essere valido.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Using_assertions"></a>Utilizzo di asserzioni  
   
@@ -291,7 +292,7 @@ _ASSERT(numMols >= 0);
   
  Queste istruzioni non esegue alcuna operazione se il programma funzioni correttamente. Se a causa di un errore logico `numMols` per essere minore di zero, tuttavia, l'asserzione interromperà l'esecuzione del programma e visualizza il [la finestra di dialogo di errore di asserzione](../debugger/assertion-failed-dialog-box.md).  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Checking_results_"></a>Controllo dei risultati  
  Asserzioni risultano utili per il test di operazioni i cui risultati non sono evidenti da un controllo visivo rapido.  
@@ -314,7 +315,7 @@ _ASSERT(iMols<=numMols); // CRT version
   
  Il numero di molecole conteggiato da `iMols` deve sempre essere minore o uguale al numero totale di molecole, `numMols`. Esame visivo del ciclo non mostra che questo necessariamente sarà il caso, in modo dopo il ciclo viene utilizzata un'istruzione di asserzione per verificare tale condizione.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Testing_error_conditions_"></a>Errori non gestiti  
  È possibile utilizzare le asserzioni per verificare le condizioni di errore in un punto nel codice in cui gli eventuali errori dovrebbero essere stati gestiti. Nell'esempio seguente, una routine grafica restituisce zero per l'esito positivo o un codice di errore.  
@@ -344,7 +345,7 @@ _ASSERT(!myErr); // Don't do this, either!
   
  Questo codice si basa sull'istruzione di asserzione per gestire la condizione di errore. Di conseguenza, qualsiasi codice di errore restituito da `myGraphRoutine` non verrà gestito nel codice della versione finale.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

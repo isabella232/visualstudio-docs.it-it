@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: 1e1e30400a630c7a5b01438e521b651f25ab3137
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Controllare l'esecuzione di un'app UWP in una sessione di debug di Visual Studio (JavaScript)
 Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio e come visualizzare lo stato del programma in una sessione.  

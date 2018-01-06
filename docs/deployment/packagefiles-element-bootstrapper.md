@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 25ba72b511782c450b882826a3e3af94a14f6e20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` elementi, che definiscono i pacchetti di installazione eseguiti come risultato del `Command` elemento.  
@@ -48,7 +49,7 @@ Il `PackageFiles` elemento contiene `PackageFile` elementi, che definiscono i pa
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|Parametro facoltativo. Se impostato su `false`, il programma di installazione scaricherà solo file a cui fa riferimento il `Command` elemento. Se impostato su `true`, tutti i file verranno scaricati.<br /><br /> Se impostato su `IfNotHomesite`, il programma di installazione si comporterà come se `False` se `ComponentsLocation` è impostato su `HomeSite`e in caso contrario si comporterà come se `True`. Questa impostazione può essere utile per consentire i pacchetti che sono a loro volta programmi di avvio automatico eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|  
+|`CopyAllPackageFiles`|Facoltativo. Se impostato su `false`, il programma di installazione scaricherà solo file a cui fa riferimento il `Command` elemento. Se impostato su `true`, tutti i file verranno scaricati.<br /><br /> Se impostato su `IfNotHomesite`, il programma di installazione si comporterà come se `False` se `ComponentsLocation` è impostato su `HomeSite`e in caso contrario si comporterà come se `True`. Questa impostazione può essere utile per consentire i pacchetti che sono a loro volta programmi di avvio automatico eseguire il proprio comportamento in uno scenario HomeSite.<br /><br /> Il valore predefinito è `true`.|  
   
 ## <a name="packagefile"></a>PackageFile  
  Il `PackageFile` è un elemento figlio del `PackageFiles` elemento. Oggetto `PackageFiles` l'elemento deve avere almeno un `PackageFile` elemento.  
@@ -58,10 +59,10 @@ Il `PackageFiles` elemento contiene `PackageFile` elementi, che definiscono i pa
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Il nome del file del pacchetto. Si tratta del nome che il `Command` elemento farà riferimento al momento della definizione di condizioni di installazione di un pacchetto. Questo valore viene inoltre utilizzato come chiave nel `Strings` tabella per recuperare il nome localizzato strumenti, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà utilizzato per descrivere il pacchetto.|  
-|`HomeSite`|Parametro facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione.|  
-|`CopyOnBuild`|Parametro facoltativo. Specifica se il programma di avvio automatico deve copiare il file del pacchetto sul disco in fase di compilazione. Il valore predefinito è true.|  
+|`HomeSite`|Facoltativo. Il percorso del pacchetto nel server remoto, se non è incluso con il programma di installazione.|  
+|`CopyOnBuild`|Facoltativo. Specifica se il programma di avvio automatico deve copiare il file del pacchetto sul disco in fase di compilazione. Il valore predefinito è true.|  
 |`PublicKey`|La chiave crittografata pubblica del firmatario certificato del pacchetto. Obbligatorio se `HomeSite` è utilizzata; in caso contrario, facoltativo.|  
-|`Hash`|Parametro facoltativo. Un hash SHA1 del file del pacchetto. Viene utilizzato per verificare l'integrità del file al momento dell'installazione. Se non è possibile calcolare l'hash identico dal file di pacchetto, il pacchetto non essere installato.|  
+|`Hash`|Facoltativo. Un hash SHA1 del file del pacchetto. Viene utilizzato per verificare l'integrità del file al momento dell'installazione. Se non è possibile calcolare l'hash identico dal file di pacchetto, il pacchetto non essere installato.|  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente definisce pacchetti per il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pacchetto ridistribuibile e le relative dipendenze, ad esempio il programma di installazione di Windows.  

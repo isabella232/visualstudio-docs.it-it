@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Progetti di database e applicazioni livello dati in Visual Studio  
 È possibile utilizzare i progetti di database per creare nuovi database, le nuove applicazioni livello dati (DAC) e per aggiornare i database esistenti e le applicazioni livello dati. I progetti di database e progetti di applicazione livello dati consentono di applicare tecniche di gestione del progetto e del controllo di versione per le attività di sviluppo di database in modo che tali tecniche vengono applicate al codice gestito o nativo. Per aiutare il team di sviluppo gestire le modifiche al database e server di database creando un *progetto DAC*, *progetto di database*, o un *progetto server* e applicarlo nel controllo della versione. I membri del team possono quindi estrarre i file per apportare, compilare e testare le modifiche in un *ambiente di sviluppo isolato*, o sandbox, prima di condividerli con il team. Per garantire la qualità del codice, il team possa completare e verificare tutte le modifiche per una particolare versione del database in un ambiente di gestione temporanea prima di distribuire le modifiche nell'ambiente di produzione.  

@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a6c32f906ca3edfa8afb27937f859d93c8428168
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilizzando i controlli della linee guida di base di C++
 Le linee guida componenti di base di C++ sono un set portabile di linee guida, regole e procedure consigliate sulla codifica in C++ creati dai progettisti e gli esperti di C++. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. Correttori ortografici delle linee guida per i componenti di base vengono installati per impostazione predefinita in Visual Studio 2017 e sono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
@@ -63,7 +64,7 @@ int main()
   
 -   C26485 è regola Bounds.3: nessun decadimento a puntatore, matrice.  
   
--   C26481 è regola Bounds.1: non utilizzare l'aritmetica dei puntatori. In alternativa, usare `span` .  
+-   C26481 è regola Bounds.1: non utilizzare l'aritmetica dei puntatori. In alternativa, usare `span`.  
   
  Se il ruleSet di analisi codice C++ Core controllare installato e abilitato quando si compila questo codice, i primi due avvisi vengono visualizzati, ma il terzo viene eliminato. Di seguito è riportato l'output di compilazione del codice di esempio:  
   
@@ -95,7 +96,7 @@ A partire da Visual Studio 2017 versione 15.3, i set di regole supportati sono:
 
   - **Regole di tipo** imporre la [digitare profilo delle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-  **Visual Studio 2017 versione 15,5**:
+  **Visual Studio 2017 versione 15.5**:
   - **Classe di regole** alcune regole incentrate su corretto utilizzo di metodi speciali e virtuali specifiche. Questo è un subset di controlli consigliati per [classi e le gerarchie di classi](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
   - **Regole di concorrenza** una singola regola che rileva gli oggetti dichiarati badlyly guard. Per ulteriori informazioni vedere [linee guida relative alla concorrenza](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Regole della dichiarazione** un paio di regole di [interfacce linee guida](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) quali lo stato attivo sulle variabili globali vengono dichiarati.  

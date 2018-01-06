@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e928d396db2029bc4d2e659c869fd74e0df3191
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 920706adb86d79e635e4f5289ca010e03282853e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-concepts"></a>Concetti di debugger
 Per compilare il pacchetto di debug di Visual Studio, è necessario avere familiarità con i concetti dell'architettura della progettazione del pacchetto.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Sessione di debug](../../extensibility/debugger/debug-session.md)  
  Viene illustrato il ruolo di una sessione nell'architettura di debug.  
   

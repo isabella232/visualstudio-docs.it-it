@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare i controlli ai dati in Visual Studio
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dei dati ai controlli. È possibile creare questi controlli con associazione a dati trascinando elementi dal **origini dati** finestra in un'area di progettazione o controlli su una superficie in Visual Studio.  
@@ -33,12 +34,12 @@ ms.lasthandoff: 10/31/2017
   
 |Origine dati|Supporto di trascinamento e rilascio in **Progettazione Windows Form**|Supporto di trascinamento e rilascio in **WPF Designer**|Supporto di trascinamento e rilascio in **Silverlight Designer**|  
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|  
-|Set di dati|Sì|Sì|No|  
-|Entity Data Model|Sì<sup>1</sup>|Sì|Sì|  
+|Set di dati|Yes|Sì|No|  
+|Entity Data Model|Sì<sup>1</sup>|Yes|Yes|  
 |Classi LINQ to SQL|Non<sup>2</sup>|Non<sup>2</sup>|Non<sup>2</sup>|  
-|Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services e i servizi web)|Sì|Sì|Sì|  
-|Oggetto|Sì|Sì|Sì|  
-|SharePoint|Sì|Sì|Sì|  
+|Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services e i servizi web)|Yes|Sì|Yes|  
+|Object|Yes|Sì|Yes|  
+|SharePoint|Yes|Sì|Yes|  
   
  1. Generare il modello utilizzando il **Entity Data Model** procedura guidata, quindi trascinare tali oggetti nella finestra di progettazione.  
   

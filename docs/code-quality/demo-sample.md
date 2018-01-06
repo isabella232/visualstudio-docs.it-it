@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 32d129e0e895978d50753feedad7940f385ed715
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 6ce56a055792d1360b78dda8295e9ee4d39a0b98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="demo-sample"></a>Esempio dimostrativo
 Procedure riportate di seguito viene illustrato come creare l'esempio per [procedura dettagliata: analisi di codice C/C++ per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Creano le procedure:  

@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvataggio di dati in una transazione
 Questa procedura dettagliata viene illustrato come salvare dati in una transazione utilizzando il <xref:System.Transactions> dello spazio dei nomi. In questa procedura dettagliata si creerà un'applicazione Windows Form. Utilizzare la configurazione guidata origine dati per creare un set di dati per le due tabelle nel database di esempio Northwind. Viene aggiunta a controlli con associazione dati a un Windows form, e che si desidera modificare il codice di BindingNavigator pulsante Salva aggiornare il database all'interno di un TransactionScope.  
@@ -77,7 +78,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
   
     -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
-         -oppure-  
+         oppure  
   
     -   Selezionare **nuova connessione** per avviare il **Aggiungi/Modifica connessione** finestra di dialogo e creare una connessione al database Northwind.  
   

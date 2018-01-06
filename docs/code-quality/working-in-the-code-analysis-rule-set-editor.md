@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c832b29512bfd7339ab60044ece81f1626be9bc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilizzo dell'editor set di regole di analisi del codice
 Editor set di regole di analisi del codice consente di specificare le regole che sono inclusi in un set di regole personalizzate e di specificare l'azione. È inoltre possibile specificare l'azione da intraprendere quando l'analisi del codice rileva una violazione della regola.  
@@ -63,8 +64,8 @@ Editor set di regole di analisi del codice consente di specificare le regole che
 |-----------|-----------------|  
 |**ID**|Identificatore della regola.|  
 |**Categoria**|Oltre all'appartenenza a set di regole, regole di analisi del codice vengono raggruppate per categoria. Per ulteriori informazioni, vedere [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Nome**|Il titolo della regola.|  
-|**Namespace**|Lo spazio dei nomi della regola.|  
+|**Name**|Il titolo della regola.|  
+|**Spazio dei nomi**|Lo spazio dei nomi della regola.|  
 |**Tipo di destinazione**|Indica se la regola per nativo, gestito o codice di database.|  
 |**Azione**|L'azione eseguita quando la regola viene violata in un'esecuzione dell'analisi codice.<br /><br /> **Avviso** -genera un avviso.<br /><br /> **Errore** -genera un errore.<br /><br /> **Nessuna** -disabilita la regola.<br /><br /> È possibile modificare il campo dell'azione. Impostazione del valore su None è equivale a deselezionare la casella di controllo per la regola.|  
 |**Set di regole di origine**|Il set di regole che contiene la regola.|  

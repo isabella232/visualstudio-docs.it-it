@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68524053107052094d53b21cac93fbbc053881dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 Il set di regole regole estese di correttezza Microsoft ottimizza la logica e i framework utilizzo gli errori restituiti dall'analisi del codice. Attenzione è rivolta a scenari specifici, ad esempio l'interoperabilità COM e applicazioni per dispositivi mobili. È consigliabile inclusi in questo set di regole se uno di questi scenari si applica al progetto o per individuare ulteriori problemi nel progetto.  

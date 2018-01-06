@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d5d929f41a40d986aafa8150e68fadcb46f3469
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1bd9c94b99b4881167d7ae434691ffd08666ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - membri interni
 Contiene le proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> oggetto.  
@@ -41,7 +42,7 @@ Contiene le proprietà aggiuntive per un <xref:System.Threading.Tasks.Task> ogge
   
 ### <a name="fields"></a>Campi  
   
-|Nome|Descrizione|  
+|nome|Descrizione|  
 |----------|-----------------|  
 |[m_children](../../extensibility/debugger/m-children-field.md)|L'elenco di attività figlio che sono registrati con questa attività.|  
   

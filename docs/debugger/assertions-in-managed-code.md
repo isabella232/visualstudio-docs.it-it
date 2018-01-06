@@ -26,16 +26,17 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 283903076a5f6e465f3cb87be7d6710af8d914ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e60235e497f770d7e8ce30e27c3a86143f7144e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assertions-in-managed-code"></a>Asserzioni nel codice gestito
 Un'asserzione, o istruzione `Assert`, verifica una condizione specificata come argomento dell'istruzione `Assert`. Se la condizione restituisce true, non viene eseguita alcuna azione. Se restituisce false, l'asserzione ha esito negativo. Se l'esecuzione avviene all'interno di una build di debug, viene attivata la modalità di interruzione.  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
+##  <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Le asserzioni nel Namespace di System. Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Metodo debug. Assert](#BKMK_The_Debug_Assert_method)  
@@ -55,7 +56,7 @@ Un'asserzione, o istruzione `Assert`, verifica una condizione specificata come a
   
  C++ non supporta i metodi della classe <xref:System.Diagnostics.Debug>. È possibile ottenere lo stesso effetto utilizzando la <xref:System.Diagnostics.Trace> classe con la compilazione condizionale, ad esempio `#ifdef DEBUG`... `#endif`.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_Debug_Assert_method"></a>Metodo debug. Assert  
  Utilizzare il metodo <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> per verificare le condizioni che devono restituire true se il codice è corretto. Si supponga, ad esempio, di aver scritto una funzione di divisione per interi. In base alle regole matematiche, il divisore non può mai essere zero. A tale scopo, utilizzare un'asserzione:  
@@ -109,7 +110,7 @@ savingsAccount.Withdraw ( amount );
   
  A differenza dalle chiamate a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, le chiamate a <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> comportano un sovraccarico nella versione di rilascio.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Side_effects_of_Debug_Assert"></a>Effetti collaterali di debug. Assert  
  Quando si utilizza <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>, assicurarsi che il codice contenuto in `Assert` non modifichi i risultati del programma se `Assert` viene rimosso. In caso contrario, si potrebbe introdurre accidentalmente un bug che si manifesta solo nella versione di rilascio del programma. Prestare particolare attenzione alle asserzioni contenenti chiamate di funzioni o procedure, come quella del seguente esempio:  
@@ -138,7 +139,7 @@ Debug.Assert ( temp != 0 );
   
  Anche quando si utilizza <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, evitare di inserire chiamate di funzione all'interno di un'istruzione `Assert`. Queste chiamate non dovrebbero presentare rischi in quanto le istruzioni <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> non vengono eliminate nella build di rilascio. Se tuttavia si cerca di evitare sempre tali costrutti, è meno probabile che si commetta un errore quando si utilizza <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Trace_and_Debug_Requirements"></a>Requisiti di traccia e Debug  
  Se si crea un progetto utilizzando le procedure guidate di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], per impostazione predefinita il simbolo TRACE viene definito in entrambe le configurazioni di rilascio e di debug. Il simbolo DEBUG viene definito per impostazione predefinita solo nella build di debug.  
@@ -197,7 +198,7 @@ Debug.Assert ( stacksize > 100, "Out of stack space" , "Failed in inctemp" );
 Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );   
 ```  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a>Personalizzazione del comportamento Assert  
  Se si esegue l'applicazione in modalità interfaccia utente, il `Assert` metodo visualizza il **asserzione non riuscita** la finestra di dialogo quando la condizione ha esito negativo. Le azioni che si verificano quando un errore di asserzione sono controllate dal <xref:System.Diagnostics.Debug.Listeners%2A> o <xref:System.Diagnostics.Trace.Listeners%2A> proprietà.  
@@ -210,7 +211,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  Per ulteriori informazioni, vedere [listener di traccia](/dotnet/framework/debug-trace-profile/trace-listeners).  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Setting_assertions_in_configuration_files"></a>Impostazione di asserzioni nei file di configurazione  
  Le asserzioni possono essere impostate sia nel file di configurazione del programma sia nel codice. Per altre informazioni, vedere <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  

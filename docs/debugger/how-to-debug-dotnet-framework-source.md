@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: debug del codice sorgente di .NET Framework
 La versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce nuove funzionalità per [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] il debug. Per eseguire il debug [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] origine, è necessario avere accesso ai simboli per il codice di debug. È inoltre necessario attivare l'esecuzione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] origine.  
@@ -57,7 +58,7 @@ La versione più recente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md
   
      Se non si sceglie di scaricare ora i simboli, questi ultimi verranno scaricati automaticamente al successivo avvio del debug del programma.  
   
-7.  Fare clic su **OK** per chiudere la **opzioni** la finestra di dialogo.  
+7.  Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Per caricare simboli di Framework utilizzando la finestra Moduli  
   

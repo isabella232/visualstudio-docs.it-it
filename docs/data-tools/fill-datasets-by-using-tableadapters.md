@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati utilizzando gli oggetti TableAdapter
 Un componente TableAdapter viene compilato un set di dati con i dati dal database, in base a uno o più query o stored procedure specificate. Inoltre è possibile eseguire gli oggetti TableAdapter aggiunge, aggiornamenti ed eliminazioni per rendere permanenti le modifiche apportate al set di dati nel database. È inoltre possibile emettere comandi globali che sono correlati a qualsiasi tabella specifica.  
@@ -84,7 +85,7 @@ Un componente TableAdapter viene compilato un set di dati con i dati dal databas
   
  Di seguito sono utilizzati i metodi e alle proprietà degli oggetti TableAdapter:  
   
-|Membro|Descrizione|  
+|Member|Descrizione|  
 |------------|-----------------|  
 |`TableAdapter.Fill`|Popola una tabella dati associata dell'oggetto TableAdapter con i risultati del comando SELECT dell'oggetto TableAdapter.|  
 |`TableAdapter.Update`|Invia modifiche al database e restituisce un intero che rappresenta il numero di righe interessate dall'aggiornamento. Per ulteriori informazioni, vedere [aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|  
@@ -117,7 +118,7 @@ Un componente TableAdapter viene compilato un set di dati con i dati dal databas
   
  Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterManager` classe:  
   
-|Membro|Descrizione|  
+|Member|Descrizione|  
 |------------|-----------------|  
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|  
 |Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Valore booleano.|  
