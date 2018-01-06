@@ -19,16 +19,17 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4cfe5caa65246773759c4de7512fd41aa9e88023
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 898acac30776a4b189433440c9bb713a00561029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-reference"></a>Riferimenti di ClickOnce
 Le pagine seguenti vengono descritti la struttura dei file XML utilizzato per rappresentare le applicazioni ClickOnce.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)  
  Elenca e descrive gli elementi e attributi che costituiscono un manifesto dell'applicazione.  
   
@@ -41,7 +42,7 @@ Le pagine seguenti vengono descritti la struttura dei file XML utilizzato per ra
  [Riferimenti alle API non gestite ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
  Gli elenchi di API pubbliche non gestite da dfshim.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)  

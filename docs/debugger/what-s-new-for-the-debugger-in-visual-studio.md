@@ -22,32 +22,33 @@ caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a08c56ae60822e6d4183e5789c68cbe383b4dd5
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità relative al Debugger di[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Il debugger include le nuove funzionalità:
 
-- Novità di 15,5, il **Debugger Snapshot** un'istantanea delle applicazioni in produzione quando viene eseguito codice che si è interessati. Per indicare al debugger di eseguire uno snapshot, impostare snappoints e logpoints nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Il Debugger Snapshot consentono di ridurre notevolmente il tempo che necessario per risolvere i problemi che si verificano negli ambienti di produzione.
+- Novità di 15,5, il **Debugger Snapshot** un'istantanea delle applicazioni in produzione quando viene eseguito codice che si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
-    Raccolta di snapshot è disponibile per le seguenti App web in esecuzione in Azure App Service:
+    La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
 
-    * Le applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
-    * Applicazioni ASP.NET Core in esecuzione su .NET Core 2.0 o versione successiva in Windows.
+    * Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
+    * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
 
     Per ulteriori informazioni, vedere [Debug in tempo reale delle App ASP.NET utilizzando il Debugger Snapshot](../debugger/debug-live-azure-applications.md).
 
-- Novità di 15,5 solo in Visual Studio Enterprise **IntelliTrace passaggio-back** automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro per i punti di interruzione precedente o passaggi e visualizzare lo stato dell'applicazione è stato in precedenza. Passaggio back IntelliTrace è possibile risparmiare tempo quando si desidera visualizzare lo stato applicazione precedente ma si desidera riavviare il debug o ricreare lo stato dell'app desiderata.
+- Novità di 15,5 solo in Visual Studio Enterprise **IntelliTrace passaggio-back** automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
-    È possibile esplorare e visualizzare gli snapshot tramite il **passo indietro** e **passo avanti** pulsanti sulla barra degli strumenti di Debug. Questi pulsanti passare gli eventi che vengono visualizzati di **eventi** nella scheda il **strumenti di diagnostica** finestra.
+    È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
     ![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti passo indietro e Avanti")
 
-    Per ulteriori informazioni, vedere il [visualizzare snapshot tramite IntelliTrace passaggio-back](../debugger/how-to-use-intellitrace-step-back.md) pagina.
+    Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 - Il **supporto eccezioni** sostituisce le informazioni sulle eccezioni e visualizzato in una finestra di dialogo non modale in cui si è verificato l'errore. Il **supporto eccezioni** fornisce un accesso più rapido per eventuali eccezioni interne, analisi aggiuntive per il debugger (se disponibile) e l'accesso immediato al **impostazioni eccezioni** per l'eccezione. L'Helper eccezioni possono anche essere trascinata in una vista mobile, se è bloccato da un elemento che si desidera visualizzare.
 

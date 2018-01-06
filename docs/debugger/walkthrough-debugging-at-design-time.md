@@ -23,14 +23,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d497535f8511c3f9e6c55e80157507ed36184b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5869279a7bafb11368b7fb232e6ca68ca7d98478
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>Procedura dettagliata: debug in fase di progettazione
-È possibile utilizzare Visual Studio **immediato** finestra per eseguire una funzione o una subroutine quando l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio interromperà l'esecuzione al momento appropriato. È quindi possibile utilizzare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
+È possibile utilizzare Visual Studio **immediato** finestra per eseguire una funzione o una subroutine quando l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio interromperà l'esecuzione al momento appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
   
  La procedura seguente viene illustrato come utilizzare questa funzionalità.  
   

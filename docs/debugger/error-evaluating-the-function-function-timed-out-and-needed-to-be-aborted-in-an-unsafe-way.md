@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.unsafe_func_eval_abort
-ms.assetid: 0a9f70ed-21ad-4a10-8535-b9c5885ad8f4
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 722abd91cb9f97aab67d0d9a5e77ff9e3a4f080d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff5dedb9bf0ffe44ec1a7c031d4c1d0eeeea08ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: Valutare la funzione &#39; function &#39; timeout e deve essere interrotto in modo non protetto
 
@@ -35,9 +35,9 @@ Esistono tre possibili soluzioni al problema.
 Il messaggio di errore indicherà il nome della funzione, che il debugger ha tentato di chiamare. Se è possibile modificare questa funzione, è possibile impedire al debugger di chiamare il metodo Get della proprietà o il metodo ToString. Provare una delle operazioni seguenti:
  
 * Modificare il metodo a un altro tipo di codice, oltre a una metodo Get della proprietà o metodo ToString e il problema non verrà più visualizzato.
-    -oppure-
+    oppure
 * (Per ToString) Definire un attributo DebuggerDisplay sul tipo e consentire al debugger di restituire un valore diverso da ToString.
-    -oppure-
+    oppure
 * (Per un getter di proprietà) Inserire il `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attributo sulla proprietà. Può essere utile se si dispone di un metodo che debba rimanere una proprietà per motivi di compatibilità delle API, ma deve essere effettivamente un metodo.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Soluzione #2: Ha il codice di destinazione chiedere il debugger per interrompere la valutazione

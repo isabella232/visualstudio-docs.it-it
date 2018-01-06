@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Accesso ai Buffer di testo tramite l'API Legacy
 Il testo è responsabile della gestione dei flussi di testo e salvataggio permanente di file. Anche se il buffer può leggere o scrivere altri formati, tutte le normali comunicazioni con il buffer viene eseguita utilizzando Unicode. Nelle API legacy, con il buffer di testo è possibile utilizzare uno - o un sistema di coordinate bidimensionale per identificare le posizioni di caratteri nel buffer.  
@@ -32,7 +33,7 @@ Oggetto buffer di testo
   
  Il testo responsabilità secondo del buffer è la persistenza di file. A tale scopo, l'oggetto di buffer di testo implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> e opera come il componente di oggetto dati di documento per gli elementi di progetto e altri componenti dell'ambiente coinvolte nella persistenza. Per ulteriori informazioni, vedere [di apertura e salvataggio di elementi di progetto](../extensibility/internals/opening-and-saving-project-items.md).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [La modifica delle impostazioni di visualizzazione tramite l'API Legacy](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
  Viene illustrato come modificare le impostazioni di visualizzazione utilizzando l'API legacy.  
   

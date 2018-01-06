@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4db0446a0adeaeee3d3a3fc1c5ae6ee02594f34
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 42e8780312296bd038a0bfe5ed2911dab9940ea7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitmaps-element"></a>Elemento bitmap
 Gruppi [elemento Bitmap](../extensibility/bitmap-element.md) elementi.  
@@ -40,7 +41,7 @@ Gruppi [elemento Bitmap](../extensibility/bitmap-element.md) elementi.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   

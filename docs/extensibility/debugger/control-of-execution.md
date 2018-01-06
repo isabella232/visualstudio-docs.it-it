@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d888e9b50d18b4a9d46a8914381db27f09698d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-of-execution"></a>Controllo di esecuzione
 Il motore di debug (DE) in genere uno dei seguenti eventi Invia come ultimo evento di avvio:  
@@ -41,11 +42,11 @@ Il motore di debug (DE) in genere uno dei seguenti eventi Invia come ultimo even
   
 5.  Se si sceglie di eseguire l'istruzione, in o da una funzione, l'IDE si comporta la sessione di debug per chiamare il programma `Step` metodo, passando l'unità di passaggio (istruzione, istruzione o riga) e il tipo di passaggio, vale a dire se eseguire l'istruzione, in , o dalla funzione. Una volta completato il passaggio, la Germania invia un evento di completamento del passaggio per la sessione di debug, ovvero un evento di arresto.  
   
-     -oppure-  
+     oppure  
   
      Se si sceglie di continuare l'esecuzione dal puntatore all'istruzione corrente, l'IDE si comporta la sessione di debug per chiamare il programma **Execute** metodo. Il programma riprende l'esecuzione finché incontra la condizione di interruzione successiva.  
   
-     -oppure-  
+     oppure  
   
      Se la sessione di debug per ignorare un evento di arresto particolare, la sessione di debug chiama il programma **continua** metodo. Se il programma è stato l'esecuzione di istruzioni in su o da una funzione quando si è verificato la condizione di interruzione, quindi continua il passaggio.  
   

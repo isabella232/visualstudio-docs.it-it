@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36c3158542dff52a2e1ca350e49be254219183c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df8fc9ee13a721f98a942a3bb6d10f6c8d844ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Procedura: cercare un thread nella visualizzazione messaggi
 È possibile cercare un messaggio specifico nella visualizzazione dei messaggi tramite il relativo handle, un tipo o un ID messaggio come criterio di ricerca. Uno di questi, o una combinazione, saranno i criteri di ricerca valido. Inoltre possibile specificare la direzione iniziale della ricerca. I campi nella finestra di dialogo vengono precaricati con gli attributi del messaggio attualmente selezionato.  

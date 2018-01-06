@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>Eseguire app di Windows Phone 8.1 nell'emulatore
 L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente di eseguire debug e test di app Windows Phone nel computer senza un dispositivo fisico. Puoi simulare eventi comuni di tocco e rotazione e scegliere le dimensioni fisiche dello schermo e la risoluzione che vuoi emulare. Puoi anche testare numerose funzionalità comuni, come posizione, rete, notifiche, sensori, accelerometro e scheda SD opzionale.  
@@ -37,7 +38,7 @@ Insieme a Visual Studio, l'emulatore offre un ambiente completo in cui puoi prog
   
  Quando esegui un'app Windows Phone per la prima volta nell'emulatore Windows Phone, si verificano gli eventi seguenti:  
   
-1.  L'emulatore viene avviato.  
+1.  L'emulatore si avvia.  
   
 2.  L'emulatore carica il sistema operativo Windows Phone.  
   

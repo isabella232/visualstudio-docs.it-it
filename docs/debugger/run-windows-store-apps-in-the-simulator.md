@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Eseguire App UWP e Windows 8.1 nel simulatore
 Il simulatore di Visual Studio per App UWP e Windows 8.1 è un'applicazione desktop che simula un'app UWP o Windows 8.1. È possibile eseguire applicazioni scegliere le dimensioni fisiche dello schermo e la risoluzione che vuoi emulare. È anche possibile simulare i comuni eventi di tocco e rotazione e le proprietà di connessione di rete.
@@ -146,7 +147,7 @@ Il simulatore di Visual Studio per App UWP e Windows 8.1 è un'applicazione desk
   
  [Come rispondere agli eventi di sistema con attività in background](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Come attivare sospendere, riprendere, eventi e background nelle App UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Come attivare eventi di sospensione, ripresa e background nelle app UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Spostarsi nel simulatore con la tastiera  
  È possibile passare la barra degli strumenti del simulatore premendo **CTRL + ALT + freccia** per spostare lo stato attivo dalla finestra del simulatore alla barra degli strumenti del simulatore. Utilizza **Freccia su** e **Freccia giù** per spostarti tra i pulsanti della barra degli strumenti.  

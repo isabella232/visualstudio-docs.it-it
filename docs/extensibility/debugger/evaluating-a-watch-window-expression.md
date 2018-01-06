@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03a74bf73f457009a6f17f8e7bdda8e4e7b9e35f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-window-expression"></a>La valutazione di un'espressione di finestra di controllo
 > [!IMPORTANT]
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  Non è necessario per un EE rispettare questo processo in due passaggi anche se Visual Studio si presuppone che questo oggetto. l'analizzatore di Espressioni può analizzare e valutare nello stesso passaggio quando [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) viene chiamato (questo è l'esempio MyCEE funzionamento, ad esempio). Se la lingua può creare espressioni complesse, si desidera separare il passaggio di analisi del passaggio di valutazione. Ciò può migliorare le prestazioni nel debugger di Visual Studio quando molte espressioni di controllo vengono visualizzate.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Implementazione di esempio di valutazione delle espressioni](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
  Utilizza l'esempio MyCEE per scorrere il processo di valutazione dell'espressione.  
   

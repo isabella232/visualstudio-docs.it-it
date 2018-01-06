@@ -20,13 +20,14 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d945c28e7fe703c80776a5f1ff124ab6e0a8bf9
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="remote-debugging"></a>Debug remoto
+# <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
 
 Per istruzioni dettagliate sul debug remoto, vedere gli argomenti.
@@ -74,7 +75,7 @@ Se sufficiente desidera scaricare e installare il debugger remoto e non necessar
 ### <a name="configure_msvsmon"></a>Configurare il debugger remoto  
 È possibile modificare alcuni aspetti della configurazione del debugger remoto dopo che è stata avviata per la prima volta.
   
--   Se è necessario aggiungere le autorizzazioni per altri utenti per connettersi al debugger remoto, scegliere **strumenti > autorizzazioni**. È necessario disporre dei privilegi di amministratore per concedere o negare autorizzazioni.
+-   Se è necessario aggiungere le autorizzazioni per altri utenti per connettersi al debugger remoto, scegliere **strumenti > autorizzazioni**. È necessario avere privilegi di amministratore per concedere o negare autorizzazioni.
 
      > [!IMPORTANT] 
      > È possibile eseguire il debugger remoto con un account utente diverso dall'account utente in uso nel computer di Visual Studio, ma è necessario aggiungere l'account utente diverso alle autorizzazioni del debugger remoto. 

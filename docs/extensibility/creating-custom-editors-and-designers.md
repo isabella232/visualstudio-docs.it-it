@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>Creazione di finestre di progettazione ed editor personalizzati
 Ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi tipi di editor:  
@@ -72,7 +73,7 @@ Ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi tipi
   
      Se può essere incorporato, è necessario creare una finestra host per l'editor esterno e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo e impostare il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valore di enumerazione `DP_External`. Se l'editor non può essere incorporato, l'IDE crea automaticamente una finestra separata per tale.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura dettagliata: Creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Viene illustrato come creare un editor personalizzato.  
   

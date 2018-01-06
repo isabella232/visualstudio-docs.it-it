@@ -23,11 +23,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0696a9e45727c5d62f275d0574d5ec54e378038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7d0aaa97009662000bf1376c1684d9ca41a7133a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-multiple-processes"></a>Procedura: eseguire il debug di più processi
 Di seguito viene illustrato come avviare il debug di processi, passaggio tra processi, interrompere e continuare l'esecuzione, esaminare l'origine, interrompere il debug e terminare o disconnettersi dai processi.  
@@ -67,7 +68,7 @@ Di seguito viene illustrato come avviare il debug di processi, passaggio tra pro
 >   
 >  -   Connettersi al processo figlio dopo averlo avviato.  
 >   
->      -oppure-  
+>      oppure  
 > -   Configurare Windows per avviare automaticamente il processo figlio in una nuova istanza del debugger.  
   
 ###  <a name="BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution"></a>Avviare il debug di più processi in una soluzione di Visual Studio  

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Visualizzazione thread e le attività tramite la finestra Stack in parallelo
 Il **stack in parallelo** finestra è utile quando si esegue il debug di applicazioni multithreading. Il relativo **visualizzazione thread** Mostra informazioni sullo stack di chiamate per tutti i thread nell'applicazione. Consente di navigare tra i thread e gli stack frame nei thread. Nel codice gestito, il **visualizzazione attività** Mostra stack di chiamate di <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti. Nel codice nativo, il **visualizzazione attività** Mostra stack di chiamate di [gruppi di attività](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [gli algoritmi paralleli](/cpp/parallel/concrt/parallel-algorithms), [agenti asincroni](/cpp/parallel/concrt/asynchronous-agents)e [attività leggere](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -61,9 +62,9 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug di applica
   
  ![Barra degli strumenti nella finestra Stack in parallelo](../debugger/media/parallel_stackstoolbar.png "Parallel_StacksToolbar")  
   
-|Lettera di riferimento|Controllo|Descrizione|  
+|Lettera di riferimento|Control|Descrizione|  
 |--------------------|-------------|-----------------|  
-|A|Casella combinata Thread/Attività|Consente di passare dalla visualizzazione degli stack di chiamate dei thread alla visualizzazione degli stack di chiamate delle attività e viceversa. Per ulteriori informazioni, vedere Visualizzazione Attività e Visualizzazione Thread.|  
+|A|Casella combinata Thread/Attività|Consente di passare dalla visualizzazione degli stack di chiamate dei thread alla visualizzazione degli stack di chiamate delle attività e viceversa. Per altre informazioni, vedere Visualizzazione Attività e Visualizzazione Thread.|  
 |B|Mostra solo con contrassegno|Mostra gli stack di chiamate per i thread contrassegnati in altre finestre di debug, ad esempio il **thread GPU** finestra e **espressioni di controllo parallelo** finestra.|  
 |C|Attiva/Disattiva visualizzazione metodo|Consente di passare dalla Visualizzazione stack alla Visualizzazione metodo e viceversa. Per ulteriori informazioni, vedere Visualizzazione metodo.|  
 |D|Scorrimento automatico a stack frame corrente|Scorre automaticamente il diagramma in modo da visualizzare lo stack frame corrente. Questa funzionalità è utile quando si modifica lo stack frame corrente da altre finestre o quando si raggiunge un nuovo punto di interruzione nei diagrammi di grandi dimensioni.|  
@@ -86,7 +87,7 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug di applica
 |Vai a disassembly|Consente di passare al percorso nella finestra Disassembly che corrisponde allo stack frame sul quale l'utente ha fatto clic con il pulsante destro del mouse.|  
 |Mostra codice esterno|Mostra o nasconde il codice esterno.|  
 |Visualizzazione esadecimale|Consente di passare dalla visualizzazione decimale a quella esadecimale e viceversa.|  
-|Informazioni sul caricamento dei simboli|Consente di visualizzare la finestra di dialogo corrispondente.|  
+|Informazioni sul caricamento simboli|Consente di visualizzare la finestra di dialogo corrispondente.|  
 |Impostazioni simboli|Consente di visualizzare la finestra di dialogo corrispondente.|  
   
 ## <a name="tasks-view"></a>Visualizzazione attività  

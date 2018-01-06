@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81a7edd908da5953e04e68a1a903ed585f1ec6b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi grafici
 Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio consente di mappare la relazione tra gli eventi di grafica problematici e il codice sorgente dell'app.  
@@ -36,7 +37,7 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Nome**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
+|**Name**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
 |**File**|Nome del file di codice sorgente o di libreria contenente il sito di chiamata.|  
 |**Percorso**|Numero di riga del sito di chiamata.|  
   

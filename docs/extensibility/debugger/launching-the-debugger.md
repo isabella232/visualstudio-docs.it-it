@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23fd772b74c4caafbde37541933c38e306f9dc75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7b5b596f553c0f84c9306bba010d2b97a33e1a16
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-the-debugger"></a>Avvio del Debugger
 Avvio del debugger richiede l'invio la corretta sequenza di metodi ed eventi con i relativi attributi appropriati.  
@@ -34,7 +35,7 @@ Avvio del debugger richiede l'invio la corretta sequenza di metodi ed eventi con
   
      Se `S_FALSE` viene restituito, il motore di debug (DE) da caricare in fase di macchina virtuale.  
   
-     -oppure-  
+     oppure  
   
      Se `S_OK` viene restituito, viene caricata la Germania in-process del messaggio SDM. Il SDM esegue quindi le attività seguenti:  
   

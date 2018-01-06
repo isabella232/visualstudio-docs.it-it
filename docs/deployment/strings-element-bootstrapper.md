@@ -21,11 +21,12 @@ caps.latest.revision: "4"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Stringhe&gt; elemento (programma di avvio automatico)
 Definisce le stringhe localizzate per i nomi dei prodotti, nomi di pacchetto e i messaggi di errore di installazione.  
@@ -44,7 +45,7 @@ Definisce le stringhe localizzate per i nomi dei prodotti, nomi di pacchetto e i
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `Strings` è un elemento figlio del `Package` elemento. Non dispone di attributi.  
   
-## <a name="string"></a>String  
+## <a name="string"></a>Stringa  
  Il `String` è un elemento figlio del `Strings` elemento. Oggetto `Strings` elemento può avere uno o più `String` elementi.  
   
  `String`presenta l'attributo seguente.  

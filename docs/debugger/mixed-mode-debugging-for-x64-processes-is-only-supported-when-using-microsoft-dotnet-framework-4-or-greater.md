@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c9961f9bbe0540b6b4dee04bd9446571e1f32f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto per il debug in modalità mista di processi x64. Ciò significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.  
@@ -31,11 +32,11 @@ Le versioni di .NET Framework precedenti alla 4 non forniscono alcun supporto pe
   
 -   Aggiornare il progetto per l'utilizzo di Microsoft .NET Framework 4 o versione successiva.  
   
-     -oppure-  
+     oppure  
   
      Eseguire il debug del codice gestito e del codice nativo in sessioni di debug separate.  
   
-     -oppure-  
+     oppure  
   
      Eseguire il debug del codice misto come processo a 32 bit, come descritto nelle procedure che seguono.  
   

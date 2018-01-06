@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Informazioni sulle finestre del Debugger in Visual Studio
 È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione di arresto, fare clic su **Debug > Windows**.  

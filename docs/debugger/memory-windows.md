@@ -26,11 +26,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5c6f422e980a585b9cbac3c0b59ad8d981aba93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96a4dc22f4f5c96d3dd9d40a565c2656ffe6e283
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Utilizzare le finestre di memoria nel Debugger di Visual Studio
 Il **memoria** finestra fornisce una visualizzazione nello spazio di memoria utilizzata dall'applicazione. Il **espressioni di controllo** finestra **controllo immediato** nella finestra di dialogo **Auto** finestra e **variabili locali** finestra Mostra il contenuto delle variabili, che sono archiviati in percorsi specifici in memoria. Ma la **memoria** finestra viene fornita un'immagine. Questa visualizzazione può essere opportuna quando si intende esaminare grandi porzioni di dati, ad esempio buffer o stringhe di notevoli dimensioni, che non vengono visualizzate adeguatamente nella altre finestre. Tuttavia, il **memoria** finestra non è limitata alla visualizzazione dei dati. Nella finestra Memoria viene visualizzato ogni tipo di contenuto dello spazio di memoria, sia che si tratti di dati, di codice o di contenuto eliminato e collocato casualmente in spazio di memoria non assegnato.  
@@ -59,7 +60,7 @@ Il **memoria** finestra fornisce una visualizzazione nello spazio di memoria uti
 ## <a name="selecting-a-memory-location"></a>Selezione di un indirizzo di memoria  
  Se si desidera spostarsi immediatamente in una posizione selezionata in memoria, è possibile farlo tramite un'operazione di trascinamento e rilascio o modificando il valore di **indirizzo** casella. Il **indirizzo** casella accetta non solo valori numerici, ma anche espressioni che restituiscono indirizzi. Per impostazione predefinita, il **memoria** finestra considera un **indirizzo** espressione come un'espressione attiva, rivalutata durante l'esecuzione del programma. Le espressioni attive possono rivelarsi molto utili. Ad esempio, possono essere utilizzate per visualizzare la memoria selezionata da un puntatore.  
   
-#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Per selezionare un indirizzo di memoria mediante trascinamento della selezione  
+#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Per selezionare un indirizzo di memoria mediante trascinamento e rilascio  
   
 1.  Da qualsiasi finestra selezionare un indirizzo di memoria o una variabile puntatore contenente un indirizzo di memoria.  
   

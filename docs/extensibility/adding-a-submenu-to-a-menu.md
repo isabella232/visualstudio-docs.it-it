@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a77cd9504dffc50fd3a3be021cb4e379378f9ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Aggiunta di un sottomenu a un Menu
 Questa procedura dettagliata si basa sulla dimostrazione in [aggiunta di un Menu alla barra dei Menu di Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) viene mostrato come aggiungere un sottomenu di **TestMenu** menu.  

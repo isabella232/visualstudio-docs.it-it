@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy
 È possibile configurare le applicazioni ClickOnce per aggiornare automaticamente quando gli assembly con le versioni più recenti di file e le versioni di assembly disponibili. Per assicurarsi che i clienti di consenso per questo comportamento, è possibile visualizzare un prompt di privacy a essi. Quindi, è possibile scegliere se concedere l'autorizzazione per l'applicazione per aggiornare automaticamente. Se l'applicazione non è consentito l'aggiornamento automatico, non viene installato.  
@@ -151,7 +152,7 @@ ms.lasthandoff: 10/27/2017
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Passaggio 1: Creare la directory del programma di avvio automatico  
   
-1.  Creare una directory denominata **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages..  
+1.  Creare una directory denominata **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
     >  Privilegi di amministratore per creare la cartella potrebbe essere necessario.  

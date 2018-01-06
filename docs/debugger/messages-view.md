@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>Visualizzazione messaggi
 Ogni finestra è presente un flusso di messaggi associati. Questo flusso di messaggi viene visualizzata una finestra di visualizzazione di messaggi. Vengono visualizzati gli handle di finestra, codice del messaggio e messaggio. È possibile creare una visualizzazione di messaggi per un thread o processo. Ciò consente di visualizzare i messaggi inviati a tutte le finestre di proprietà di un determinato processo o thread, è particolarmente utile per l'acquisizione di messaggi di inizializzazione della finestra.  
@@ -48,7 +49,7 @@ Visualizzazione messaggi di Spy++
   
 6.  Quando un numero sufficiente di messaggi, scegliere **Arresta registrazione** dal **messaggi** menu.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Controllo della visualizzazione messaggi](../debugger/how-to-control-messages-view.md)  
  Viene illustrato come gestire la visualizzazione messaggi.  
   

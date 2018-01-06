@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0d7f7ccb9b752af4789b757fb1a3ed2ae5d29e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10e50e8afde8bd4d5669ee899a061b708377f28f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-help"></a>Guida di Spy++
 La documentazione per l'utilità di Spy + + include due gruppi di argomenti generali su con Spy + + e le visualizzazioni di Spy + +. Questi sono seguiti da riferimento Spy + +, che fornisce ulteriori dettagli su ogni menu disponibili comando e finestra di dialogo.  

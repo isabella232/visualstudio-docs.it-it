@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7952392b55f351332ba8163fe1bd4c04c3883d87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98be0e0eec66d1829569f88b38f710ddc616be85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Utilizzata per impostare i punti di interruzione di dati che si basano su una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71f678852b4d16d0b7c6f150abae03c6c4cdcad4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5b0783cd011c91b9592479c7b64c6cb6a1afaa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Collegamento e scollegamento di un programma
 Per collegare il debugger richiede l'invio la corretta sequenza di metodi ed eventi con gli attributi appropriati.  

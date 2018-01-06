@@ -12,16 +12,17 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f713a1ced59ea1ed0eaf01a3d9630aa96e4c6bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica della grafica di Visual Studio
 Visual Studio *diagnostica della grafica* è un set di strumenti per la registrazione e quindi analizzare i problemi di prestazioni e di rendering nelle App Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.  
   
-## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Uso della diagnostica grafica per eseguire il debug dei problemi di rendering  
+## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Uso della diagnostica della grafica per eseguire il debug dei problemi di rendering  
  Eseguire il debug dei problemi di rendering in un'applicazione con contenuti grafici avanzati non è semplice come avviare un debugger ed eseguire codice istruzione per istruzione. In ogni frame vengono prodotte centinaia di migliaia di pixel univoci, ciascuno in base a un set complesso di stati, dati, parametri e codice. Di questi, probabilmente solo pochi presenteranno il problema che si tenta di diagnosticare. Come se non bastasse, il codice che genera ciascun pixel viene eseguito in hardware specializzato che elabora centinaia di pixel in parallelo. Gli strumenti e le tecniche tradizionali di debug, difficili da sfruttare anche in codice con pochi thread, sono inefficaci di fronte a una quantità eccessiva di dati.  
   
  Gli strumenti di diagnostica grafica in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sono progettati per individuare i problemi di rendering a partire dagli elementi visivi che indicano il problema e quindi risalendo all'origine concentrandosi solo sul codice di shader pertinente, le fasi della pipeline, le chiamate di disegno, le risorse e lo stato del dispositivo nel codice sorgente dell'app.  
@@ -38,7 +39,7 @@ Visual Studio *diagnostica della grafica* è un set di strumenti per la registra
  In [!INCLUDE[win81](../includes/win81_md.md)], DirectX 11.2 introduce nuove funzionalità che includono supporto per l'acquisizione di informazioni grafiche tramite il relativo runtime. [!INCLUDE[win81](../includes/win81_md.md)]Usa la nuova acquisizione basata su runtime, noto come *acquisizione affidabile*, esclusivamente per tutte le versioni di DirectX che [!INCLUDE[win81](../includes/win81_md.md)] supporta. L'acquisizione affidabile supporta anche nuove funzionalità di Direct3D 11.2.  
   
 ### <a name="limited-direct2d-support"></a>Supporto Direct2D limitato  
- Poiché Direct2D è un'API modalità utente basata su Direct3D, è possibile utilizzare diagnostica della grafica per eseguire il debug dei problemi di rendering nelle App che usano Direct2D. Tuttavia, poiché vengono registrati solo gli eventi Direct3D, anziché gli eventi Direct2D di livello superiore, gli eventi Direct2D non verranno visualizzati nell'elenco eventi grafici. Inoltre, poiché la relazione tra gli eventi Direct2D e gli eventi Direct3D risultanti non è sempre chiara, usare la diagnostica grafica per eseguire il debug dei problemi di rendering nelle app che usano Direct2D non è semplice. È comunque possibile usare la diagnostica grafica per ottenere informazioni sui problemi di rendering di livello inferiore nelle app che usano Direct2D.  
+ Poiché Direct2D è un'API modalità utente basata su Direct3D, è possibile utilizzare diagnostica della grafica per eseguire il debug dei problemi di rendering nelle App che usano Direct2D. Tuttavia, poiché vengono registrati solo gli eventi Direct3D, anziché gli eventi Direct2D di livello superiore, gli eventi Direct2D non verranno visualizzati nell'elenco eventi grafici. Inoltre, poiché la relazione tra gli eventi Direct2D e gli eventi Direct3D risultanti non è sempre chiara, usare la diagnostica grafica per eseguire il debug dei problemi di rendering nelle app che usano Direct2D non è semplice. È comunque possibile usare la diagnostica della grafica per ottenere informazioni sui problemi di rendering di livello inferiore nelle app che usano Direct2D.  
   
 ## <a name="graphics-diagnostics-features-in-visual-studio"></a>Funzionalità di diagnostica grafica in Visual Studio  
  Diagnostica della grafica offre un'interfaccia dedicata, la finestra analizzatore grafica - per la diagnosi dei problemi di rendering, ma aggiunge inoltre alcuni strumenti all'interfaccia di Visual Studio.  

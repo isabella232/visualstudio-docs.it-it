@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.  
@@ -225,7 +226,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Colonna**|**Mostra**|  
 |----------------|-------------------|  
 |**ID**|Numero ID del thread|  
-|**Nome**|Nome del thread. Thread senza nome vengono visualizzati come "\<Nessun nome >".|  
+|**Name**|Nome del thread. Thread senza nome vengono visualizzati come "\<Nessun nome >".|  
 |**Ora di inizio**|Ora di creazione del thread|  
 |**Ora di fine**|Ora di completamento del thread|  
   

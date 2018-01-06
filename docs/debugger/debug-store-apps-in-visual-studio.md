@@ -17,16 +17,17 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3920bfbd5b1ddbddc3166118ead0c7d0fefff8d8
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8684a1220b871e2c77f8c0229cddd807a6031cd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-in-visual-studio"></a>Debug di App UWP in Visual Studio
 Il debugger di Visual Studio consente di controllare l'esecuzione di un programma e di esaminarne lo stato. È possibile utilizzare il debugger per individuare la causa di errori nelle App UWP e per comprendere esattamente il funzionamento dell'app. Quando sospendi (interrompi) l'esecuzione nel debugger, Visual Studio mostra il file di origine che contiene il codice in esecuzione ed evidenzia l'istruzione in esecuzione. Puoi esaminare i valori delle variabili, lo stack di chiamate delle funzioni in esecuzione e altri aspetti dello stato del programma. Puoi continuare a eseguire (esaminare) il programma un'istruzione alla volta per verificare come le istruzioni cambiano i valori del programma. Nelle app scritte in JavaScript, puoi esaminare e modificare il DOM della pagina.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
   
 |||  
 |-|-|  

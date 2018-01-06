@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41fd9fcee2d0ae954f5ec234bf23cbefd5ccd6da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Descrizione&gt; elemento (distribuzione di ClickOnce)
 Identifica le informazioni sull'applicazione utilizzate per creare una shell e un **Aggiungi / Rimuovi programmi** nel Pannello di controllo.  
@@ -46,8 +47,8 @@ Identifica le informazioni sull'applicazione utilizzate per creare una shell e u
 |---------------|-----------------|  
 |`publisher`|Obbligatorio. Identifica il nome della società utilizzato per il posizionamento delle icone nelle finestre **avviare** menu e **Aggiungi / Rimuovi programmi** nel Pannello di controllo, quando la distribuzione è configurata per l'installazione.|  
 |`product`|Obbligatorio. Identifica il nome del prodotto completo. Utilizzato come il titolo dell'icona di cui è installato in Windows **avviare** menu.|  
-|`suiteName`|Parametro facoltativo. Identifica una sottocartella all'interno di `publisher` cartella nelle finestre **avviare** menu.|  
-|`supportUrl`|Parametro facoltativo. Specifica un URL di supporto disponibile nella finestra di **Aggiungi / Rimuovi programmi** nel Pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto di applicazioni in Windows **avviare** menu quando la distribuzione è configurata per l'installazione.|  
+|`suiteName`|Facoltativo. Identifica una sottocartella all'interno di `publisher` cartella nelle finestre **avviare** menu.|  
+|`supportUrl`|Facoltativo. Specifica un URL di supporto disponibile nella finestra di **Aggiungi / Rimuovi programmi** nel Pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto di applicazioni in Windows **avviare** menu quando la distribuzione è configurata per l'installazione.|  
   
 ## <a name="remarks"></a>Note  
  L'elemento description è obbligatorio in tutte le configurazioni di distribuzione.  

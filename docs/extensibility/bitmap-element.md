@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 223342709dbe97fe38fb7a495ce482ae70e1c807
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb265aabdb4feda05512e036cda19abc574e2fd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitmap-element"></a>Elemento bitmap
 Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.  
@@ -41,7 +42,7 @@ Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.
 |resID|ID dell'identificatore di comando/ID GUID. È necessario il resID o l'attributo href.<br /><br /> L'attributo resID è un ID di risorsa numero intero che determina la striscia di bitmap che deve essere caricato durante l'unione di tabella di comando.  Durante il caricamento di tabella del comando, la bitmap specificata dall'ID di risorsa verrà caricata dalla risorsa dello stesso modulo.|  
 |usedList|Obbligatorio se è presente l'attributo resID. Consente di selezionare le immagini disponibili nella striscia di bitmap.|  
 |href|Percorso alla bitmap. È necessario il resID o l'attributo href.<br /><br /> Il percorso di inclusione viene cercato il file di immagine indicato, che è incorporato nel file binario risulta.  Durante l'unione di tabella di comando, l'immagine viene copiata e nessuna ricerca di risorse aggiuntive o il carico è necessario.  Se l'attributo usedList non è presente, sono disponibili tutte le immagini nell'elenco. **Nota:** immagini possono essere fornite in uno dei diversi formati che includono i file con estensione bmp, PNG e GIF.  Le versioni precedenti del compilatore non supportano le immagini bitmap a 32 bit che contiene informazioni alfa per la trasparenza parziale. La soluzione alternativa per queste versioni consiste nell'utilizzare il formato. PNG.|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  

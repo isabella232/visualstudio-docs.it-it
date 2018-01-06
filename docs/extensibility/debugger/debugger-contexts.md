@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 809f0f50ace62253371d4fd14425bb870a3be633
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f36df39cf29ff298a327ec6e6d4bb02ff53485a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-contexts"></a>Contesti di debugger
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, il motore di debug (DE) opera contemporaneamente in contesti diversi, come indicato di seguito:  
@@ -28,7 +29,7 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, il motore
   
 -   Il contesto di valutazione espressione, che descrive il contesto nel quale espressione valutazione verrà eseguita.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Contesto del codice](../../extensibility/debugger/code-context.md)  
  Descrive il contesto del codice come un indirizzo nel flusso di istruzioni del programma odierna in fase di esecuzione le architetture e lingue utilizzate, in codice non può essere rappresentato da istruzioni, ma alcuni altri mezzi.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f170efc945f92d13eda61830ef682ab4cd8fc755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9980232a7927bf1ae2df9d5f6329a57a031d3f56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combo-element"></a>Elemento combinata
 Definisce i comandi che vengono visualizzati in una casella combinata. Esistono quattro tipi di caselle combinate, come indicato di seguito: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.  
@@ -45,15 +46,15 @@ Definisce i comandi che vengono visualizzati in una casella combinata. Esistono 
 |ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|  
 |defaultWidth|Obbligatorio. Valore intero che specifica una larghezza in pixel della casella combinata.|  
 |idCommandList|Obbligatorio. Un ID che viene inviato alla destinazione del comando attivo per recuperare l'elenco di elementi da visualizzare nella casella combinata. L'ID sarà nello stesso ambito GUID del controllo.|  
-|priority|Parametro facoltativo. Un valore numerico che specifica la priorità.|  
-|tipo|Parametro facoltativo. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non è specificato, utilizza pulsante.<br /><br /> DropDownCombo<br /> Il pacchetto VSPackage è responsabile per la compilazione nel contenuto di questa casella combinata. L'utente non è possibile digitare un valore nella casella di testo di questo elenco a discesa.<br /><br /> DynamicCombo<br /> Il pacchetto VSPackage è responsabile per la compilazione nel contenuto di questa casella combinata. L'utente può modificare questo combinata e anche selezionare elementi in essa contenuti.<br /><br /> IndexCombo<br /> Lo stesso come DynamicCombo eccezione del fatto che genera l'indice dell'elemento anziché il testo.<br /><br /> MRUCombo<br /> Compilato tramite l'ambiente di sviluppo integrato (IDE) per conto di VSPackage.  L'utente può modificare in questa casella combinata. Nell'IDE vengono mantenuti fino alle voci di 16 per ogni casella combinata.<br /><br /> Quando l'utente seleziona un elemento nella casella combinata o immette un nuovo valore, l'IDE di notifica a VSPackage appropriato.|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|priority|Facoltativo. Un valore numerico che specifica la priorità.|  
+|tipo|Facoltativo. Valore enumerato che specifica il tipo di pulsante.<br /><br /> Se non è specificato, utilizza pulsante.<br /><br /> DropDownCombo<br /> Il pacchetto VSPackage è responsabile per la compilazione nel contenuto di questa casella combinata. L'utente non è possibile digitare un valore nella casella di testo di questo elenco a discesa.<br /><br /> DynamicCombo<br /> Il pacchetto VSPackage è responsabile per la compilazione nel contenuto di questa casella combinata. L'utente può modificare questo combinata e anche selezionare elementi in essa contenuti.<br /><br /> IndexCombo<br /> Lo stesso come DynamicCombo eccezione del fatto che genera l'indice dell'elemento anziché il testo.<br /><br /> MRUCombo<br /> Compilato tramite l'ambiente di sviluppo integrato (IDE) per conto di VSPackage.  L'utente può modificare in questa casella combinata. Nell'IDE vengono mantenuti fino alle voci di 16 per ogni casella combinata.<br /><br /> Quando l'utente seleziona un elemento nella casella combinata o immette un nuovo valore, l'IDE di notifica a VSPackage appropriato.|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Padre|Parametro facoltativo. L'elemento padre del pulsante.|  
+|Padre|Facoltativo. L'elemento padre del pulsante.|  
 |CommandFlag|Obbligatorio. Vedere [comando Flag elemento](../extensibility/command-flag-element.md). Come indicato di seguito sono riportati i valori CommandFlag validi per un pulsante.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Filtro tasti<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Stringhe|Obbligatorio. Vedere [stringhe elemento](../extensibility/strings-element.md). L'elemento ButtonText figlio deve essere definito.|  
 |Annotazione|Commento facoltativo.|  

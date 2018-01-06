@@ -15,16 +15,17 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdf541fb064064322679db6f381576a741af75a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-views"></a>Visualizzazioni di Spy++
 Spy + + consente di visualizzare visualizzazioni di struttura ad albero di windows, i messaggi, processi e thread disponibili nel computer.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [visualizzazione finestre](../debugger/windows-view.md)  
  Consente di visualizzare una visualizzazione albero dei controlli e finestre disponibili.  
   
@@ -34,7 +35,7 @@ Spy + + consente di visualizzare visualizzazioni di struttura ad albero di windo
  [Visualizzazione processi](../debugger/processes-view.md)  
  Consente di visualizzare una visualizzazione albero dei processi attivi.  
   
- [Threads View](../debugger/threads-view.md) (Visualizzazione Thread)  
+ [Visualizzazione Thread](../debugger/threads-view.md)  
  Visualizza una struttura di thread attivi.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

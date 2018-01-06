@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. È possibile pubblicare l'applicazione tramite la pubblicazione guidata. proprietà aggiuntive relative alla pubblicazione sono disponibili per il **pubblica** pagina del **Progettazione progetti**. Per ulteriori informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).  
@@ -78,7 +79,7 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
   
      Verrà visualizzata la Pubblicazione guidata.  
   
-3.  Nel **in cui si desidera pubblicare l'applicazione?** pagina, immettere il percorso del file o un percorso FTP in cui verrà pubblicata l'applicazione, ad esempio d:\deploy.. Quindi fare clic su **Avanti** per continuare.  
+3.  Nel **in cui si desidera pubblicare l'applicazione?** pagina, immettere il percorso del file o un percorso FTP in cui verrà pubblicata l'applicazione, ad esempio d:\deploy. Quindi fare clic su **Avanti** per continuare.  
   
 4.  Nel **come gli utenti installeranno l'applicazione?** pagina, fare clic su un **CD-ROM o DVD-ROM**, quindi fare clic su **Avanti**.  
   

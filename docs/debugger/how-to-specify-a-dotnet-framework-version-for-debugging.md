@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ace7dcdf236a551725dcc60e211ca98e3753e5cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 69fa33ac76f39f7f37cc9aa84d61fd3cf7b0fe45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procedura: specificare una versione di .NET Framework per il debug
 Il debugger di [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] supporta il debug delle versioni precedenti di Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], oltre che della versione corrente. Se si avvia un'applicazione da Visual Studio, il debugger è sempre di identificare la versione corretta del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] per l'applicazione a cui si esegue il debug. Se l'applicazione è già in esecuzione e si utilizza **allegarvi**, il debugger potrebbe non essere sempre in grado di identificare una versione precedente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. In questo caso, verrà visualizzato un messaggio di errore simile al seguente:  

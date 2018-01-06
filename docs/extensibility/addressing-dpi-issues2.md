@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>Risolvere i problemi DPI
 Un numero crescente di dispositivi è distribuiti con schermate "ad alta risoluzione". Queste schermate vengono visualizzate in genere sono più di 200 pixel per pollice (PPID). Utilizzo di un'applicazione in questi computer richiederà il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire da 2014, la destinazione principale per gli schermi ad alta densità è mobile computing dispositivi (telefoni, Tablet e portatili conchiglia).  

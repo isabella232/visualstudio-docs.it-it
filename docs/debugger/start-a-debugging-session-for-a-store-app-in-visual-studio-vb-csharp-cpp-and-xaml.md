@@ -37,11 +37,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5c7cf9a5329e1b77d8669568434357deb2dd131
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d99458d8afd6d4789d7827404f38d6dcfea76012
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio-vb-c-c-and-xaml"></a>Avviare una sessione di debug per un'app UWP in Visual Studio (VB, c#, C++ e XAML)
 ![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -51,7 +52,7 @@ ms.lasthandoff: 11/11/2017
 > [!NOTE]
 >  Per le app scritte in JavaScript e HTML Vedi [avviare una sessione di debug (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
+##  <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Il modo più semplice per avviare il debug](#BKMK_The_easy_way_to_start_debugging)  
   
  [Configurare la sessione di debug](#BKMK_Configure_the_debugging_session)  
@@ -324,7 +325,7 @@ ms.lasthandoff: 11/11/2017
   
  Visual Studio collega il debugger al processo. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina.  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

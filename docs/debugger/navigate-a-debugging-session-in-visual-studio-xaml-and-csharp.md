@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: d5fa005273ada8869da467c9db97e0263f43f555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Esplorare una sessione di debug in Visual Studio (Xaml e C#)
 Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Visual Studio e come visualizzare e modificare lo stato del programma in una sessione.  
@@ -100,7 +101,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
   
  Passare il mouse sulla variabile `a`. Notare il nome, il valore e il tipo di dati. Passare il mouse sulla variabile `methodTrack`. Anche in questo caso sono indicati il nome, il valore e il tipo di dati.  
   
- **Esaminare i valori delle variabili nella finestra Variabili locali.** On the **Debug** dal menu **Debug**e quindi **Variabili locali**. (Tastiera: ALT+4).  
+ **Esaminare i valori delle variabili nella finestra Variabili locali.** Nella finestra di dialogo **Debug** dal menu **Debug**e quindi **Variabili locali**in questo argomento. (Tastiera: ALT+4).  
   
  ![Finestra variabili locali](../debugger/media/dbg_basics_localswindow.png "DBG_Basics_LocalsWindow")  
   
@@ -158,11 +159,11 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
   
  ![Chiama metodo Example3 da metodo Demo](../debugger/media/dbg_basics_callexample3.png "DBG_Basics_CallExample3")  
   
- **Eseguire fino al punto di interruzione.** Avviare la sessione di debug scegliendo **Avvia debug** dal menu **Debug** (tastiera: F5). Il debugger sospende l'esecuzione in corrispondenza del punto di interruzione nel metodo MainPage.  
+ **Eseguire fino al punto di interruzione.** Avviare la sessione di debug scegliendo **Avvia debug** on the **Debug** (tastiera: F5). Il debugger sospende l'esecuzione in corrispondenza del punto di interruzione nel metodo MainPage.  
   
  **Eseguire un'istruzione nel metodo Example3.** Scegliere **Debug** dal menu **Debug** (tastiera: F11) per passare al punto di ingresso del metodo Example3. Continuare a eseguire istruzioni nel metodo fino a completare l'iterazione di uno o due cicli del blocco `for` . Si noti che l'esecuzione di tutte e 1000 le iterazioni richiederebbe molto tempo.  
   
- **Impostare un punto di interruzione condizionale.** Nella barra di navigazione a sinistra della finestra del codice fare clic con il pulsante destro del mouse sulla riga `x += i;` e quindi scegliere **Condizione**. Selezionare la casella di controllo **Condizione** e quindi digitare `i == 500;` nella casella di testo. Scegliere l'opzione **È true** e quindi **OK**. Il punto di interruzione consente di controllare il valore alla 500a iterazione del ciclo `for`.  
+ **Impostare un punto di interruzione condizionale.** Nella barra di navigazione a sinistra della finestra del codice fare clic con il pulsante destro del mouse sulla riga `x += i;` e quindi scegliere **Condizione**. Selezionare la casella di controllo **Condizione** e quindi digitare `i == 500;` nella casella di testo. Scegliere l'opzione **È true** e quindi **OK**. Il punto di interruzione consente di controllare il valore alla 500a iterazione del ciclo `for` .  
   
  ![Finestra di dialogo Condizione punto di interruzione](../debugger/media/dbg_basics_breakpointcondition.png "DBG_Basics_BreakpointCondition")  
   
@@ -194,7 +195,7 @@ Questa guida introduttiva illustra come spostarsi nelle sessioni di debug di Vis
   
  ![Chiama metodo Example4 da metodo Demo](../debugger/media/dbg_basics_callexample4.png "DBG_Basics_CallExample4")  
   
- **Eseguire fino all'eccezione.** Avviare la sessione di debug scegliendo **Avvia debug** dal menu **Debug** (tastiera: F5). Premere di nuovo F5 per riprendere l'esecuzione. Il debugger sospende l'esecuzione in corrispondenza dell'eccezione nel metodo Example4 e visualizza una finestra di dialogo dell'eccezione.  
+ **Eseguire fino all'eccezione.** Avviare la sessione di debug scegliendo **Avvia debug** on the **Debug** (tastiera: F5). Premere di nuovo F5 per riprendere l'esecuzione. Il debugger sospende l'esecuzione in corrispondenza dell'eccezione nel metodo Example4 e visualizza una finestra di dialogo dell'eccezione.  
   
  ![La finestra di dialogo eccezione](../debugger/media/dbg_basics_exceptiondlg.png "DBG_Basics_ExceptionDlg")  
   

@@ -24,11 +24,12 @@ caps.latest.revision: "135"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f009abffb1c956a0f7c57315181234fbea2fc1c
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace"></a>IntelliTrace
 È possibile ridurre il tempo richiesto per eseguire il debug dell'applicazione quando si usa IntelliTrace per registrare e tenere traccia della cronologia di esecuzione del codice. È possibile trovare facilmente i bug perché IntelliTrace consente di:  
@@ -139,9 +140,9 @@ ms.lasthandoff: 11/15/2017
   
      Vedere:  
   
-    -   [Utilizzare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+    -   [Usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Utilizzare i dati di IntelliTrace salvato](../debugger/using-saved-intellitrace-data.md)  
+    -   [Usare i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  
   
     -   [Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)  
  
@@ -177,14 +178,14 @@ ms.lasthandoff: 11/15/2017
   
  La raccolta di informazioni sulle chiamate potrebbe rallentare significativamente l'applicazione. Potrebbero inoltre aumentare le dimensioni di ogni file di log IntelliTrace (file con estensione iTrace) salvato nel disco. Per ridurre al minimo questi effetti, raccogliere le informazioni sulle chiamate solo per i moduli desiderati.  Per modificare le dimensioni massime del file. iTrace, passare a **strumenti**, **opzioni**, **IntelliTrace**, **avanzate**. 
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Includere i dati di traccia diagnostica nei bug difficili da riprodurre](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)  
   
- [Utilizzare i dati di IntelliTrace salvato](../debugger/using-saved-intellitrace-data.md)  
+ [Usare i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blog  
  [Visual Studio ALM e Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)  

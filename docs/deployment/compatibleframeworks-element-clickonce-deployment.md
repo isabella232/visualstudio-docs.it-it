@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: bb8c31d37bd37f4e2db8415ef1815caec0ec185a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 955e29add1990793711dd69fffbd2306ce61407d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (distribuzione di ClickOnce)
 Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione.  
@@ -49,7 +50,7 @@ Identifica le versioni di .NET Framework in cui è possibile installare ed esegu
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`S` `upportUrl`|Parametro facoltativo. Specifica un URL in cui può essere scaricata la versione di .NET Framework compatibile preferita.|  
+|`S` `upportUrl`|Facoltativo. Specifica un URL in cui può essere scaricata la versione di .NET Framework compatibile preferita.|  
   
 ## <a name="framework"></a>framework  
  Obbligatorio. Nella tabella seguente vengono elencati gli attributi che il `framework` supportato dall'elemento.  

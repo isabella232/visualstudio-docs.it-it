@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5281d53f213d2cb09f470484ddca2fbaa8cb4601
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
 Il `Package` è l'elemento XML di primo livello all'interno di un file del pacchetto.  
@@ -149,7 +150,7 @@ Il `Package` è l'elemento XML di primo livello all'interno di un file del pacch
 |---------------|-----------------|  
 |`Culture`|Obbligatorio. Definisce le impostazioni cultura per il pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione.|  
 |`Name`|Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questo attributo è una chiave nel `Strings` elemento, che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`.|  
-|`LicenseAgreement`|Parametro facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza con l'utente finale (EULA).  Questo file può essere testo normale (con estensione txt) in formato testo. RTF (Rich Text)|  
+|`LicenseAgreement`|Facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza con l'utente finale (EULA).  Questo file può essere testo normale (con estensione txt) in formato testo. RTF (Rich Text)|  
   
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente viene illustrato un file di pacchetto completo per la ridistribuzione di [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  

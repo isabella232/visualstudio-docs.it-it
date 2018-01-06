@@ -13,18 +13,19 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-descriptions"></a>Descrizioni degli eventi
 Ogni tipo di evento con uno scopo specifico.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Gli eventi e i motivi per l'utilizzo  
   
-|Evento|Descrizione|  
+|event|Descrizione|  
 |-----------|-----------------|  
 |Attivare gli eventi del documento|Si verifica quando il motore di debug (DE) richiede l'IDE di apertura o di un documento di portare in primo piano.|  
 |Punto di interruzione associato o eventi di errore di punto di interruzione|Inviato quando è associato un punto di interruzione o non è possibile associare un punto di interruzione e viene restituito un errore.|  

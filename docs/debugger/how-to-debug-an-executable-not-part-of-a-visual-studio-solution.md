@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be07be0e1374360a96b6672b095dcc039c6bb4f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ded5dfaec889e32bbf4c65f8e6a2335fd8c97a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Procedura: Debug di un eseguibile che non fa parte di una soluzione di Visual Studio
 In alcuni casi, si desidera eseguire il debug di un file eseguibile (file .exe) che non fa parte di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto. ossia di un eseguibile creato all'esterno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ricevuto da un altro sviluppatore.  

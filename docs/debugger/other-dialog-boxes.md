@@ -15,16 +15,17 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78e786b27ebe2847bc9327f673d2cbd780179efa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8319db245e0cef0f23cf699e3345f783a2d02f59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="other-dialog-boxes"></a>Altre finestre di dialogo
 Queste finestre di dialogo visualizzano informazioni sul programma Spy + +.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Informazioni su Microsoft Spy++](../debugger/about-microsoft-spy-increment.md)  
  Informazioni sulla proprietà del programma di Spy + +.  
   

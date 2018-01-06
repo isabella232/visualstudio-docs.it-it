@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a958e6f6aa815b7d5726c2c441876331fba56b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalizzazione di codice Windows tramite l'API Legacy
 Una finestra del codice è un oggetto finestra di documento che supporta uno o più visualizzazioni di testo. Esattamente le stesse funzionalità di una finestra del codice dipendono dal servizio di linguaggio associato. In modalità interfaccia a documenti multipli (MDI), la finestra del codice è il frame MDI figlio.  
@@ -31,7 +32,7 @@ Finestra del codice
   
  Il servizio di linguaggio implementa la gestione di finestre del codice ed è responsabile per la gestione di aree di controllo, ad esempio una barra di menu a discesa. Il finestra di codice chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> metodo durante l'inizializzazione di finestra di codice. Quando viene effettuata la chiamata, il servizio di linguaggio è possibile aggiungere una barra dei menu a discesa o una barra dei pulsanti (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) alla finestra del codice.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  `Customizing Code Windows by Using the Legacy API`  
  Viene descritto come personalizzare finestre del codice tramite l'API legacy.  
   

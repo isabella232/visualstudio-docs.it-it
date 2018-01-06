@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b17492b0cc8531ac892bf8ead1c309f403d1da48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c9f2374af403c37f18d1aa91700e51bd038a71c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buttontext-element"></a>Elemento ButtonText
 Questo campo consente di specificare il testo visualizzato in diversi menu. Per impostazione predefinita, il `ButtonText` elemento compare in un controller di menu. Il `ButtonText` elemento diventa il valore predefinito anche se gli altri campi di testo sono vuoti. Il `ButtonText` elemento non può essere vuoto, anche se sono specificati gli altri campi di testo.  

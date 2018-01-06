@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>Creazione di una categoria di impostazioni
 In questa procedura dettagliata creare una categoria di impostazioni di Visual Studio e utilizzarlo per i valori per salvare e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzati come "punto di impostazioni personalizzate;" vale a dire come una casella di controllo di **Importa / Esporta impostazioni** procedura guidata. (È possibile visualizzarla nella **strumenti** menu.) Le impostazioni vengono salvate o ripristinate come una categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -38,7 +39,7 @@ In questa procedura dettagliata creare una categoria di impostazioni di Visual S
   
 2.  Aprire il file VSPackage.resx e aggiungere queste tre stringhe di risorse:  
   
-    |Nome|Valore|  
+    |nome|Valore|  
     |----------|-----------|  
     |106|La categoria|  
     |107|Impostazioni personali|  

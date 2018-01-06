@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: aefb619487fba984e8f625dfe414c2f514f28c70
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6e0134b0a0a6151b6ae6544f1ad8272a6d4cac47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
 La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione sono **x86** per piattaforme a 32 bit, **x64** per computer che supportano il set di istruzioni AMD64 ed EM64T e **Itanium** per il processore Itanium a 64 bit.  
@@ -42,9 +43,9 @@ La distribuzione ClickOnce supporta l'installazione di applicazioni su piattafor
 |Librerie di runtime di Visual C++ 2010 (IA64)|No|Sì|  
 |Librerie di runtime di Visual C++ 2010 (x64)|Sì|No|  
 |Microsoft .NET Framework 4 (x86 e x64)|Sì||  
-|Microsoft .NET Framework 4 Client Profile (x86 e x64)|Sì||  
+|Microsoft .NET Framework 4 Client Profile (x86 e x64)|Yes||  
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)   
- [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Applicazioni a 64 bit](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

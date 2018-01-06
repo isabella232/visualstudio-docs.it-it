@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Procedura: eseguire il Debug da un progetto DLL in Visual Studio
 Per eseguire il debug di un progetto di DLL è possibile specificare l'applicazione chiamante nelle proprietà del progetto del progetto DLL e quindi è possibile avviare il debug dal progetto di DLL stessa. Per utilizzare questo metodo, l'applicazione deve chiamare la DLL e la DLL deve trovarsi nel percorso in cui l'applicazione prevede per individuarlo, (in caso contrario, l'applicazione potrebbe rilevare una versione differente della DLL e caricare che invece e non raggiunto i punti di interruzione). Per altri metodi di debug di DLL, vedere [progetti DLL di debug](../debugger/debugging-dll-projects.md).
@@ -85,6 +86,6 @@ Il layout e il contenuto delle pagine delle proprietà di C++ sono diversi da qu
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di progetti di DLL](../debugger/debugging-dll-projects.md)   
- [Configurazioni di Debug di impostazioni di progetto per c#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configurazione di Debug di impostazioni di progetto per Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

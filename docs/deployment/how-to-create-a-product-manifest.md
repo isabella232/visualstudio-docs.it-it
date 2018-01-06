@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 36f1c1d5255233f57f7c2e266fe26fd8cbf789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 071bfa46df7e11f760bc32cda0a732388835d2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ciascuna lingua. Il manifesto del pacchetto contiene gli aspetti specifici di localizzazione del pacchetto. Ciò include stringhe, i contratti di licenza dell'utente finale e i language pack.  
@@ -37,9 +38,9 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 #### <a name="to-create-the-product-manifest"></a>Per creare il manifesto del prodotto  
   
-1.  Creare una directory per il pacchetto del programma di avvio automatico. In questo esempio viene utilizzato c:\package..  
+1.  Creare una directory per il pacchetto del programma di avvio automatico. In questo esempio viene utilizzato c:\package.  
   
-2.  In Visual Studio, creare un nuovo file XML denominato `product.xml`e salvarlo nella cartella c:\package..  
+2.  In Visual Studio, creare un nuovo file XML denominato `product.xml`e salvarlo nella cartella c:\package.  
   
 3.  Aggiungere il seguente codice XML per descrivere il codice di prodotto e lo spazio dei nomi XML per il pacchetto. Sostituire il codice prodotto con un identificatore univoco per il pacchetto.  
   
@@ -65,7 +66,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
     </PackageFiles>  
     ```  
   
-6.  Copiare o spostare il file CorePackage. msi nella cartella c:\package..  
+6.  Copiare o spostare il file CorePackage. msi nella cartella c:\package.  
   
 7.  Aggiungere codice XML per installare il pacchetto utilizzando i comandi di avvio automatico. Aggiunge automaticamente il programma di avvio automatico di **/qn** flag per il file con estensione msi, che consente l'installazione invisibile all'utente. Se il file è un .exe, il programma di avvio viene eseguito il file .exe mediante la shell. Il codice XML seguente non Mostra argomenti per CorePackage. msi, ma è possibile inserire l'attributo di argomenti argomento della riga di comando.  
   

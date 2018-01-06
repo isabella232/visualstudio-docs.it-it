@@ -22,21 +22,22 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e635a47553cdb0eef1b690e64323ca20188b476
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
 In questa sezione viene illustrato come eseguire il debug di diversi tipi di applicazioni Web.  
   
-## <a name="in-this-section"></a>Contenuto della sezione   
+## <a name="in-this-section"></a>In questa sezione   
  [Debug di script sul lato client](../debugger/client-side-script-debugging.md)  
  Vengono descritti il testing di script e script sul lato client in pagine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
+ [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  Vengono descritti i passaggi necessari per attivare il debug di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  

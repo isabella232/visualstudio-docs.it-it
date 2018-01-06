@@ -22,18 +22,19 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c5698fef83134e9cdd7451a1ec43ace33dbb463
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8cc51e55af477edfac65b79ca29e26b720510c55
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparazione al debug: tipi di progetto Visual C++
 In questa sezione viene descritto come eseguire il debug dei tipi di progetto di base creati mediante i modelli di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
   
  Si noti che i tipi di progetto che consentono di creare DLL come output sono state suddivise in [progetti DLL di debug](../debugger/debugging-dll-projects.md) a causa di presentano le caratteristiche comuni.  
   
-##  <a name="BKMK_In_this_topic"></a> Contenuto dell'argomento  
+##  <a name="BKMK_In_this_topic"></a> In questo argomento  
  [Impostazioni consigliate delle proprietà](#BKMK_Recommended_Property_Settings)  
   
  [Progetti Win32](#BKMK_Win32_Projects)  

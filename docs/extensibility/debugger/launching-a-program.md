@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>Un programma di avvio
 Gli utenti che desiderano eseguire il debug di un programma è possono premere F5 per eseguire il debugger dall'IDE. Si inizia una serie di eventi che implicano l'IDE per la connessione a un motore di debug (DE), che a sua volta connesso, o collegato, per il programma come indicato di seguito:  
@@ -28,7 +29,7 @@ Gli utenti che desiderano eseguire il debug di un programma è possono premere F
   
 2.  Se viene specificato un Germania, la Germania chiama il sistema operativo per avviare il programma. Avvio del programma, di conseguenza l'ambiente in fase di esecuzione del programma viene caricato. Ad esempio, se un programma viene scritto in codice MSIL, common language runtime verrà richiamato per eseguire il programma.  
   
-     -oppure-  
+     oppure  
   
      Se non viene specificato un Germania, la porta chiama il sistema operativo per avviare il programma, causando l'ambiente in fase di esecuzione del programma da caricare.  
   
@@ -52,7 +53,7 @@ Gli utenti che desiderano eseguire il debug di un programma è possono premere F
   
  Se `GUID_NULL` viene passato, quindi la porta avvia il programma. Quando il programma è in esecuzione, l'ambiente di runtime crea un `IDebugProgramNode2` interfaccia per descrivere il programma e lo passa al `IDebugPortNotify2::AddProgramNode`. Questa notifica la porta che il programma è in esecuzione. Quindi il SDM collega il motore di debug per il programma in esecuzione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Notifica della porta](../../extensibility/debugger/notifying-the-port.md)  
  Viene illustrato cosa accade dopo un programma viene avviato e la porta di notifica.  
   

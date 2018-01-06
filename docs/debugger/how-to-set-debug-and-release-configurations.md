@@ -34,11 +34,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Procedura: impostazione del debug e rilascio di configurazioni in Visual Studio
 Progetti di Visual Studio installata versione separata e configurazioni per il programma di debug. Come indicato dai nomi, la versione di debug viene compilata per eseguire il debug, mentre quella di rilascio viene compilata per la distribuzione finale.  
@@ -47,7 +48,7 @@ La configurazione di debug del programma è compilata con le informazioni comple
   
 La configurazione di rilascio del programma non contiene alcuna informazione di debug sui simboli ed è perfettamente ottimizzata. Eseguire il debug in file con estensione pdb, è possibile generare informazioni [a seconda delle opzioni del compilatore](#BKMK_symbols_release) utilizzati. Creazione di file con estensione PDB può rivelarsi molto utile se successivamente sarà necessario eseguire il debug della versione di rilascio.  
   
-Per ulteriori informazioni sulle configurazioni della build, vedere [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md).  
+Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).  
   
 È possibile modificare la configurazione della build dal **compilare** menu, dalla barra degli strumenti o nelle pagine delle proprietà del progetto. Pagine delle proprietà del progetto sono specifici del linguaggio. La procedura riportata di seguito viene illustrato come modificare la configurazione di compilazione dal menu e barra degli strumenti. Per ulteriori informazioni su come modificare la configurazione di compilazione di progetti in linguaggi diversi, vedere la sezione Vedere anche.  
   
@@ -116,7 +117,7 @@ Per informazioni dettagliate sulle impostazioni di progetto per le configurazion
  [Specificare i file di simboli (PDB) e i file di origine nel debugger di Visua Studio](../debugger/debugger-settings-and-preparation.md)  
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Configurazioni di Debug di impostazioni di progetto per c#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configurazione di Debug di impostazioni di progetto per Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)   
  [Eseguire il debug e il rilascio delle configurazione del progetto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)

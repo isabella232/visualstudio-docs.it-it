@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eb280684f0c06391bc6c0596093c01f260f685d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a649b7375575b43be662991b4a1a4cc4930eb9a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto di ingresso&gt; elemento (applicazione ClickOnce)
 Identifica l'assembly che deve essere eseguito quando questa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene eseguita in un computer client.  
@@ -60,7 +61,7 @@ Identifica l'assembly che deve essere eseguito quando questa [!INCLUDE[ndpteccli
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`name`|Parametro facoltativo. Questo valore non è utilizzato da .NET Framework.|  
+|`name`|Facoltativo. Questo valore non è utilizzato da .NET Framework.|  
   
  `entryPoint`presenta gli elementi seguenti:  
   
@@ -78,14 +79,14 @@ Identifica l'assembly che deve essere eseguito quando questa [!INCLUDE[ndpteccli
 |`parameters`|Obbligatorio. Descrive l'azione da intraprendere con il punto di ingresso. L'unico valore valido è `run`; se viene fornita una stringa vuota, `run` verrà utilizzato.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- Parametro facoltativo. Se incluso, specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.  
+ Facoltativo. Se incluso, specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.  
   
  Se questo elemento è presente, il `assemblyIdentity` e `commandLine` elementi non possono essere presenti. In tal caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] genererà un errore di convalida durante l'installazione.  
   
  Questo elemento dispone di alcun attributo e nessun elemento figlio.  
   
 ## <a name="customux"></a>customUX  
- Parametro facoltativo. Specifica che l'applicazione è installato e gestita da un programma di installazione personalizzato e non creare una voce di menu Start, scelta rapida o aggiungere o rimuovere la voce di programmi.  
+ Facoltativo. Specifica che l'applicazione è installato e gestita da un programma di installazione personalizzato e non creare una voce di menu Start, scelta rapida o aggiungere o rimuovere la voce di programmi.  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  

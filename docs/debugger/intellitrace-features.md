@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto: IntelliTrace viene attivato per impostazione predefinita ed è possibile visualizzare le informazioni di registrazione di IntelliTrace nel nuovo **strumenti di diagnostica** finestra di sotto di **eventi** scheda. Selezionare un evento e fare clic su **attivare debug cronologico** per visualizzare gli stack di chiamate e variabili locali registrati per questo evento.  

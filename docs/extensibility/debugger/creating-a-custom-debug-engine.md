@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb5971bf86c6b97d38daaf86f3a093da196020da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edee6528919cfe28c542be850b9a104188ce403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-debug-engine"></a>Creazione di un motore di Debug personalizzati
 Un motore di debug (DE) è un componente che consente il debug di architetture in fase di esecuzione specifiche. È in genere solo un'implementazione DE per ogni ambiente di runtime.  
@@ -42,7 +43,7 @@ Un motore di debug (DE) è un componente che consente il debug di architetture i
   
 5.  Chiusura e disconnessione  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Registrazione di un motore di debug personalizzato](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
  Illustra i passaggi necessari per registrare un motore di debug con Visual Studio in modo che può essere utilizzato.  
   

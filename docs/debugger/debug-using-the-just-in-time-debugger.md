@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug utilizzando il Debugger JIT di Visual Studio
 Il debug Just-In-Time avvia Visual Studio automaticamente quando si verifica un'eccezione o un arresto anomalo in un'applicazione che è in esecuzione all'esterno di Visual Studio. Ciò consente di testare l'applicazione quando Visual Studio non è in esecuzione e avviare il debug con Visual Studio quando si verifica un problema.
@@ -122,7 +123,7 @@ static void Main(string[] args)
 > [!IMPORTANT]
 >  Affinché questa procedura per utilizzare un [configurazione release](../debugger/how-to-set-debug-and-release-configurations.md), è necessario disattivare [Just My Code](../debugger/just-my-code.md). In Visual Studio, fare clic su **strumenti > Opzioni**. Nel **opzioni** finestra di dialogo Seleziona **debug**. Rimuovere il segno di spunta da **Abilita Just My Code**.  
   
- Compilare la soluzione (in Visual Studio, scegliere **compilazione > Ricompila soluzione**). È possibile scegliere di Debug o la configurazione di rilascio (scegliere **Debug** per l'esperienza di debug completo). Per ulteriori informazioni sulle configurazioni della build, vedere [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md).  
+ Compilare la soluzione (in Visual Studio, scegliere **compilazione > Ricompila soluzione**). È possibile scegliere di Debug o la configurazione di rilascio (scegliere **Debug** per l'esperienza di debug completo). Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).  
   
  Il processo di compilazione crea un file eseguibile ThrowsNullException.exe. È possibile trovarlo sotto la cartella in cui è stato creato il progetto c#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** o **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "105"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f87ccebc342e6b5b03d40aab789ff80496a96d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Uso dell'agente di raccolta autonomo IntelliTrace
 L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati diagnostici di IntelliTrace per le app nei server di produzione o in altri ambienti senza installare Visual Studio nel computer di destinazione e senza cambiare l'ambiente del sistema di destinazione. L'agente di raccolta autonomo IntelliTrace funziona nelle app Web, SharePoint, WPF e Windows Form. Al termine della raccolta dei dati, eliminare semplicemente l'agente di raccolta per disinstallarlo.  
@@ -30,7 +31,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 >   
 >  È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità**Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Vedere [tramite Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).  
   
- **Requirements**  
+ **Requisiti**  
   
 -   .NET Framework 3.5, 4 o 4.5  
   
@@ -69,7 +70,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
   
 5.  [Raccogliere i dati da un'applicazione Web o da un'applicazione SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     -oppure-  
+     oppure  
   
      [Raccogliere i dati da un'app gestita](#BKMK_Collect_Data_from_Executables)  
   
@@ -190,7 +191,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
   
              `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-         -oppure-  
+         oppure  
   
     -   Per configurare le autorizzazioni con Esplora risorse (o Esplora file):  
   
@@ -367,7 +368,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
   
      Sì. Per ridurre l'impatto sulle prestazioni, IntelliTrace limita la raccolta dei dati ai valori dei tipi di dati primitivi passati e restituiti dai metodi e ai valori dei tipi di dati primitivi nei campi degli oggetti di primo livello passati e restituiti dai metodi.  
   
-     Ad esempio, si supponga di avere una firma del metodo `AlterEmployee` che accetta un numero intero `id` e un oggetto `Employee` `oldemployee`:  
+     Ad esempio, si supponga di avere una firma del metodo `AlterEmployee` che accetta un `id` Integer e un oggetto `Employee``oldemployee`:  
   
      `public Employee AlterEmployee(int id, Employee oldemployee)`  
   

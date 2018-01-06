@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2fccf1b0c9d7a67ca1eeb6058c1294cea2f2005a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cac7764a941e88dd3901a3280e78717955e86b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedura: specificare i file di log dettagliati per le distribuzioni ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]gestisce i file di log attività per tutte le distribuzioni. Questi registri documentare i dettagli relativi a installazione, l'inizializzazione, aggiornamento e disinstallazione di un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per aumentare il livello di dettaglio che [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scritture nei file di log, utilizzare l'Editor del Registro di sistema (**regedit.exe**) per specificare il livello di dettaglio.  

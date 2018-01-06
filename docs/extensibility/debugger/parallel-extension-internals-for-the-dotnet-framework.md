@@ -13,16 +13,17 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed417d9f63a90d539d104fb209b58703d10ccef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4cc64270cabb3e30ee3c13a1617222349e7b3677
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Elementi interni di estensione parallela per .NET Framework
 In questa sezione vengono descritti i tipi interni, metodi e campi delle classi che consentono di implementano un debugger personalizzato per le estensioni parallele di .NET Framework.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)  
  Vengono descritti i membri dati interni del <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe.  
   

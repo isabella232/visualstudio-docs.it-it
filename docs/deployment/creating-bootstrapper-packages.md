@@ -24,11 +24,12 @@ caps.latest.revision: "45"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8d02aa039299c5f4f31d1fa0f9e0b48b8bbeb351
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-bootstrapper-packages"></a>Creazione di programmi di avvio automatico
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (.msi) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  
@@ -125,7 +126,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [La finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md)   
  [Prodotti e i riferimenti allo Schema di pacchetto](../deployment/product-and-package-schema-reference.md)   
  [Utilizzare Visual Studio 2005 Bootstrapper per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)

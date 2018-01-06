@@ -13,16 +13,17 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>Attività di debug
 Per eseguire il debug di un programma, deve essere avviato e deve essere associato un motore di debug (DE), altrimenti la Germania deve essere collegato a un programma avviato in precedenza. Una volta collegato, la Germania necessario generare determinati eventi di avvio. In risposta, il pacchetto di debug tenta di associare i punti di interruzione impostati nell'IDE. Quando il programma raggiunge un punto di interruzione associato, interrompe e attende l'input dell'utente.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Problemi di sicurezza](../../extensibility/debugger/security-issues.md)  
  Vengono illustrati i passaggi di sicurezza necessari per eseguire il debug di un programma.  
   

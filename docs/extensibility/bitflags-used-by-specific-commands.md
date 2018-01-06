@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit utilizzati dai comandi specifici
 Il comportamento di un numero di funzioni nell'API di plug-in del controllo origine può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. Il flag di bit diversi usato dall'API plug-in controllo di origine sono descritte in dettaglio in questo caso, raggruppati per la funzione in cui vengono utilizzati.  
@@ -36,7 +37,7 @@ Il comportamento di un numero di funzioni nell'API di plug-in del controllo orig
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|È previsto il plug-in controllo del codice sorgente di rilevare automaticamente se il file è di tipo testo o binario.|  
 |`SCC_FILETYPE_TEXT`|0x01|Tipo di file è testo.|  
-|`SCC_FILETYPE_BINARY`|0x04|Tipo di file è binario. **Nota:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` si escludono a vicenda.   Impostare uno o nessuno.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo di file è binario. **Nota:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` si escludono a vicenda. Impostare uno o nessuno.|  
 |`SCC_ADD_STORELATEST`|0x02|Archiviare una versione più recente (nessun delta).|  
   
 ## <a name="diff-flags"></a>Flag di confronto  

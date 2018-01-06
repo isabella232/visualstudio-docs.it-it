@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a532c2e238528ea32492aae22b001ab0955f8c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Procedura dettagliata: Debug di un'applicazione parallela in Visual Studio
 Questa procedura dettagliata viene illustrato come utilizzare il **attività in parallelo** e **stack in parallelo** windows per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento di runtime del codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Dopo il codice si interrompe, la procedura dettagliata viene illustrato come utilizzare il **attività in parallelo** e **stack in parallelo** windows esaminarlo.  
@@ -289,7 +290,7 @@ Questa procedura dettagliata viene illustrato come utilizzare il **attività in 
   
      ![Nella finestra attività in attività raggruppate](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     È anche possibile raggruppare in base alle altre colonne. Raggruppando le attività, è possibile concentrarsi su un sottoinsieme di attività. Ogni gruppo comprimibile presenta un conteggio degli elementi raggruppati insieme. È anche possibile contrassegnare rapidamente tutti gli elementi nel gruppo facendo clic di **Flag** pulsante a destra del **Comprimi** pulsante.  
+     È anche possibile raggruppare in base alle altre colonne. Raggruppando le attività, è possibile concentrarsi su un subset di attività. Ogni gruppo comprimibile presenta un conteggio degli elementi raggruppati insieme. È anche possibile contrassegnare rapidamente tutti gli elementi nel gruppo facendo clic di **Flag** pulsante a destra del **Comprimi** pulsante.  
   
      ![Raggruppati stack nella finestra Stack in parallelo in](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
   

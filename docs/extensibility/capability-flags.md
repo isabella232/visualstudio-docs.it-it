@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capability-flags"></a>Flag di capacità
 Il SCC_CAP_*xxx* flag sono flag di bit utilizzati per indicare le funzionalità di un plug-in controllo del codice sorgente. Il SCC_EXCAP_*xxx* flag sono incrementali flag che indicano funzionalità estese e risolvere in valori integer.  

@@ -31,11 +31,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdbc4c62b599ac19ff5bf6b6b0eedf862cc1b77d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Consente di visualizzare lo stack di chiamate e utilizzare la finestra Stack di chiamate nel debugger di Visual Studio
 
@@ -136,7 +137,7 @@ Vedere [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-
   
 4.  Digitare il percorso di directory del simbolo sul computer del quale si esegue il debug. Per il debug locale e remoto, si tratta di un percorso nel computer locale.
   
-5.  Fare clic su **OK** per chiudere la **opzioni** la finestra di dialogo.  
+5.  Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Codice misto e informazioni mancanti nella finestra Stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  

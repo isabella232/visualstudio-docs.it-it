@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8795ba56833282bac600db79ba33da70aa6c3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creazione di un controllo casella degli strumenti di Windows Form
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (VS SDK) consente di creare un controllo che viene aggiunto automaticamente al **della casella degli strumenti** quando l'estensione è installata. In questo argomento viene illustrato come utilizzare il modello per creare un controllo semplice contatore che è possibile distribuire ad altri utenti.  
@@ -54,10 +55,10 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 5.  Nel **proprietà** finestra, impostare i valori seguenti per i controlli nell'area di progettazione.  
   
-    |Controllo|Proprietà|Valore|  
+    |Control|Proprietà|Valore|  
     |-------------|--------------|-----------|  
     |`Label1`|**per**|""|  
-    |`Button1`|**Nome**|btnReset|  
+    |`Button1`|**Name**|btnReset|  
     |`Button1`|**per**|Reimposta|  
   
 ### <a name="coding-the-user-control"></a>Codifica del controllo utente  

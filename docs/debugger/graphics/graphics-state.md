@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f308de55d9170b2247114ea96f611dd8e1af9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-state"></a>Stato grafica
 La finestra Stato in Diagnostica della grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.  
@@ -52,7 +53,7 @@ La finestra Stato in Diagnostica della grafica di Visual Studio consente di comp
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|Nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> Nel **visualizzazione dello stato di input API** e **visualizzazione stato logico** stati, i nomi sono rientrati per mostrare la relazione gerarchica tra stati.<br /><br /> Nel **visualizzazione stato bloccato** stato, vengono visualizzati nomi completi in un elenco semplice.|  
+|nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> Nel **visualizzazione dello stato di input API** e **visualizzazione stato logico** stati, i nomi sono rientrati per mostrare la relazione gerarchica tra stati.<br /><br /> Nel **visualizzazione stato bloccato** stato, vengono visualizzati nomi completi in un elenco semplice.|  
 |Valore|Valore dell'elemento di stato.|  
 |Tipo|Tipo dell'elemento di stato.|  
   

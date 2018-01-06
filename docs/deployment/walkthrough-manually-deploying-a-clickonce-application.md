@@ -24,11 +24,12 @@ caps.latest.revision: "49"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce
 Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario utilizzare funzionalità avanzate di distribuzione, ad esempio la distribuzione di applicazioni attendibili, è necessario utilizzare lo strumento da riga di comando Mage.exe per creare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. Questa procedura dettagliata viene descritto come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione utilizzando la versione della riga di comando (Mage.exe) o la versione di grafica (MageUI.exe) dello strumento di modifica e la generazione del manifesto.  
@@ -162,7 +163,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
 13. Se si dispone di un certificato archiviato come file nel file system, utilizzare il **firma con file di certificato** opzione e selezionare il certificato dal file system con i puntini di sospensione (**...** ) pulsante. Quindi digitare la password del certificato.  
   
-     -oppure-  
+     oppure  
   
      Se il certificato si trova in un archivio certificati accessibile dal computer, selezionare il **firma con certificato archiviato** opzione e selezionare il certificato dall'elenco fornito.  
   
@@ -190,7 +191,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
 25. Se si dispone di un certificato archiviato come file nel file system, utilizzare il **firma con file di certificato** opzione e selezionare il certificato dal file system con i puntini di sospensione (**...** ) pulsante. Quindi digitare la password del certificato.  
   
-     -oppure-  
+     oppure  
   
      Se il certificato si trova in un archivio certificati accessibile dal computer, selezionare il **firma con certificato archiviato** opzione e selezionare il certificato dall'elenco fornito.  
   

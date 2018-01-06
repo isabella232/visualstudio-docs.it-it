@@ -15,18 +15,19 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funzioni di callback implementate dall'IDE
 Per rendere l'integrazione con l'ambiente di sviluppo integrato (IDE) come trasparente come possibili e per fornire un'esperienza unificata per l'utente finale, il plug-in controllo del codice sorgente possa utilizzare funzioni di callback che vengono implementate dall'IDE. Il plug-in può chiamare queste funzioni in momenti appropriati durante un'operazione di controllo del codice sorgente per passare informazioni a IDE; l'IDE quindi possibile visualizzare queste informazioni come gli elementi incorporati nell'interfaccia utente nativa. L'utente avrà un'esperienza meno frammentata in questo scenario rispetto a se il plug-in utilizzati la propria interfaccia utente.  
   
  Il file di intestazione richiesta è scc.h. Il percorso predefinito è \Program Files\VSIP 8.0\EnvSDK\common\inc\\. È anche nella cartella VSIP con l'esempio di plug-in controllo di origine a \Program Files\VSIP 8.0\MSSCCI\\.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
  Viene descritta la funzione di callback che viene utilizzata da [SccOpenProject](../extensibility/sccopenproject-function.md) per visualizzare i messaggi dal plug-in tramite l'IDE di controllo del codice sorgente.  
   

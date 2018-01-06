@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b32af95cb319d72508c557e70ef9eddbee25d841
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6cc67f446c2b7f6ee428184395ef0230864dc7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni nel **opzioni** la finestra di dialogo.  

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41a601febff80b002512a3783d8405dc42e5d766
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: specificare il percorso da cui gli utenti finali eseguiranno l'installazione
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, il percorso in cui gli utenti accedere per scaricare e installare l'applicazione non è necessariamente il percorso in cui è inizialmente a pubblicare l'applicazione. Ad esempio, in alcune organizzazioni uno sviluppatore può pubblicare un'applicazione a un server di gestione temporanea e quindi un amministratore sposterebbe l'applicazione a un server Web.  
@@ -45,6 +46,6 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 3.  Nel campo URL di installazione, immettere il percorso di installazione utilizzando un URL completo, utilizzando il formato http://www.microsoft.com/ApplicationName o un percorso UNC nel formato \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: specificare in Visual Studio copierà i file](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

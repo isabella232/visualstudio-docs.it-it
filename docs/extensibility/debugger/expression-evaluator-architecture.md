@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6805b97da8e8f742b1b6c0bb3298e9324bb1f72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-architecture"></a>Architettura dell'analizzatore di espressioni
 > [!IMPORTANT]
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  Vedere [visualizzazione variabili locali](../../extensibility/debugger/displaying-locals.md) per ulteriori informazioni su questo processo di visualizzazione dei valori delle variabili. Vedere [la modifica del valore locale di](../../extensibility/debugger/changing-the-value-of-a-local.md) per ulteriori informazioni sul modo in cui viene modificato un valore della variabile.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)  
  Fornisce gli argomenti passati quando la Germania chiama l'analizzatore di Espressioni.  
   

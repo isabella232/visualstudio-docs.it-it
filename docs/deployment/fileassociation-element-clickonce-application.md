@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (applicazione ClickOnce)
 Identifica un'estensione di file da associare all'applicazione.  
@@ -41,7 +42,7 @@ Identifica un'estensione di file da associare all'applicazione.
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `fileAssociation` elemento è facoltativo. L'elemento ha gli attributi seguenti.  
+ L'elemento `fileAssociation` è facoltativo. L'elemento ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  

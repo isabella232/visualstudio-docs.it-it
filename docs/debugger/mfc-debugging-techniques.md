@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274cd182fa3b9eab23c151a4143c935c24f68fea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.  
@@ -482,7 +483,7 @@ pMyPerson->Dump( afxDump );
   
  In alternativa alla tecnica descritta in questo argomento è possibile usare un makefile esterno per definire singole opzioni per ciascun file. In tal caso, per collegarsi alle librerie di debug MFC, sarà necessario definire il flag [_DEBUG](/cpp/c-runtime-library/debug) per ciascun modulo. Per utilizzare le librerie di rilascio MFC, è necessario definire NDEBUG. Per altre informazioni sulla scrittura di makefile esterni, vedere [Riferimenti a NMAKE](/cpp/build/running-nmake).  
   
- [Contenuto dell'argomento](#BKMK_In_this_topic)  
+ [In questo argomento](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di Visual C++](../debugger/debugging-native-code.md)

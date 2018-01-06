@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Procedura: utilizzare la finestra Thread GPU
 Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per ulteriori informazioni sulle applicazioni in esecuzione sulla GPU, vedere [C++ AMP Panoramica](/cpp/parallel/amp/cpp-amp-overview).  
@@ -64,7 +65,7 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
   
 5.  Impostare un punto di interruzione nel codice della GPU.  
   
-6.  Nella barra dei menu, scegliere **Debug**, **Avvia debug**. Attendere che l'applicazione raggiunga il punto di interruzione.  
+6.  Nella barra dei menu scegliere **Debug**, **Avvia debug**. Attendere che l'applicazione raggiunga il punto di interruzione.  
   
 7.  Una barra dei menu scegliere **Debug**, **Windows**, **thread GPU**.  
   

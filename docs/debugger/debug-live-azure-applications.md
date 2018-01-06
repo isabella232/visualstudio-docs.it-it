@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug in tempo reale delle app di Azure ASP.NET utilizzando il Debugger di Snapshot
 
-Quando viene eseguito codice che si è interessati, il Debugger di Snapshot crea uno snapshot delle applicazioni in produzione. Per indicare al debugger di eseguire uno snapshot, impostare snappoints e logpoints nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Il Debugger Snapshot consentono di ridurre notevolmente il tempo che necessario per risolvere i problemi che si verificano negli ambienti di produzione.
+Quando viene eseguito codice che si è interessati, il Debugger di Snapshot crea uno snapshot delle applicazioni in produzione. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
 Snappoints e logpoints sono simili ai punti di interruzione. A differenza dei punti di interruzione, snappoints non arrestano l'applicazione quando raggiunto. In genere, l'acquisizione dello snapshot in un snappoint accetta 10-20 millisecondi. 
 
-Raccolta di snapshot è disponibile per le seguenti App web in esecuzione in Azure App Service:
+La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
 
-- Le applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
-- Applicazioni ASP.NET Core in esecuzione su .NET Core 2.0 o versione successiva in Windows.
+- Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
+- Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
 
 Inoltre, il Debugger dello Snapshot è disponibile solo per Visual Studio 2017 Enterprise 15,5 o versione successiva e piani di servizio App di base o versione successiva. 
 

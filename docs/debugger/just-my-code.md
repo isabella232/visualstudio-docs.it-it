@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Specificare se eseguire il debug solo il codice utente con Just My Code in Visual Studio
 È possibile configurare Visual Studio per automaticamente l'istruzione/routine di sistema, framework e altre chiamate non dell'utente e si comprimono tali chiamate nella finestra stack di chiamate. La funzionalità che abilita o disabilita questo comportamento viene chiamata *Just My Code*. In questo argomento viene illustrato come utilizzare Just My Code in progetti c#, Visual Basic, C++ e JavaScript.
@@ -123,7 +124,7 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
 |-------------|-----------------|  
 |Funzione|Obbligatorio. Specifica una o più funzioni come funzioni non utente.|  
 |`Name`|Obbligatorio. Espressione regolare formattata in base a ECMA-262 che specifica il nome completo della funzione da mettere in corrispondenza. Ad esempio:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al debugger che tutti i metodi in `MyNS::MyClass` devono essere considerati codice non utente. La corrispondenza prevede la distinzione tra maiuscole e minuscole.|  
-|`Module`|Parametro facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|  
+|`Module`|Facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|  
 |`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> -   `NoStepInto`-indica al debugger di eseguire la funzione corrispondente.<br />-   `StepInto`-indica al debugger di eseguire le funzioni corrispondenti, eseguendo l'override di qualsiasi altro `NoStepInto` per le funzioni corrispondenti.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personalizzare il comportamento dello stack di chiamate  
@@ -159,8 +160,8 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile utilizzare i caratteri jolly di Windows `?` (carattere zero o uno) e `*` (zero o più caratteri). Di seguito è riportato un esempio:<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella in `\3rdParty\UtilLibs` di qualsiasi unità come codice esterno.|  
-|`Company`|Parametro facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|  
+|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile utilizzare i caratteri jolly di Windows `?` (carattere zero o uno) e `*` (zero o più caratteri). Ad esempio,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella in `\3rdParty\UtilLibs` di qualsiasi unità come codice esterno.|  
+|`Company`|Facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|  
   
  **Attributi dell'elemento file**  
   
@@ -173,7 +174,7 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Nome completo della funzione da considerare come codice esterno.|  
-|`Module`|Parametro facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|  
+|`Module`|Facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|  
 |`ExceptionImplementation`|Se impostato su `true`, lo stack di chiamate mostra la funzione che ha generato l'eccezione anziché questa funzione.|  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a>Just My Code in JavaScript  

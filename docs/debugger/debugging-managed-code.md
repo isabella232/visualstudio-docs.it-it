@@ -21,16 +21,17 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>Debug del codice gestito
 In questa sezione vengono descritti alcuni problemi di debug comuni e vengono illustrate varie tecniche per le applicazioni gestite, ovvero scritte in linguaggi compatibili con Common Language Runtime, ad esempio Visual Basic, C# e C++. Le tecniche descritte sono di livello avanzato. Per ulteriori informazioni, vedere [utilizzando il Debugger](../debugger/debugger-basics.md).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Messaggi diagnostici nella finestra di output](../debugger/diagnostic-messages-in-the-output-window.md)  
  Viene descritto il <xref:System.Diagnostics.Debug> e <xref:System.Diagnostics.Trace> classi, con cui è possibile scrivere messaggi in fase di esecuzione per il **Output** finestra. Queste classi includono metodi di output che supportano l'output di informazioni senza interruzione dell'esecuzione e l'output di informazioni con interruzione dell'esecuzione se non viene rispettata una condizione specificata.  
   
@@ -49,7 +50,7 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  [Debug in modalità mista](../debugger/debugging-mixed-mode-applications.md)  
  Viene descritto il debug di applicazioni in modalità mista, ovvero qualsiasi applicazione nella quale vengono combinati codice nativo e codice gestito.  
   
- [Errore: Eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Viene descritto un messaggio di errore che si verifica se si tenta di eseguire il debug di codice gestito su un [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], o il sistema di Windows NT che è stato avviato in modalità di debug.  
   
  [Debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md)  

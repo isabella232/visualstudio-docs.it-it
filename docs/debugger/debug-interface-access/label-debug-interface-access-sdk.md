@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4afc3f990a06864157bf121f9c43ea2f8d5ea2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 090ed3ca526a2fb7d36a2b6c81d2563ba254dc07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="label-debug-interface-access-sdk"></a>Etichetta (Debug Interface Access SDK)
 Una posizione nel codice programma è identificata da un `SymTagLabel` simbolo.  

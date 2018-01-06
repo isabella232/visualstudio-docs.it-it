@@ -13,16 +13,17 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1c38c110e9499936a24c33432180adf18209bf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a581c5a9ae56f52727c011db1de2ad35a5ba3592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Abilitazione di un programma da sottoporre a debug
 Prima che il motore di debug (DE) può eseguire il debug di un programma, è necessario avviare la Germania o collegarlo a un programma esistente.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Recupero di una porta](../../extensibility/debugger/getting-a-port.md)  
  Viene descritto come ottenere una porta come il primo passaggio per abilitare un programma da sottoporre a debug.  
   

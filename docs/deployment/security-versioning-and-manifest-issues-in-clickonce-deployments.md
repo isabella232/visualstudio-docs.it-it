@@ -27,11 +27,12 @@ caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 603ff665e2c01abe62954e4e65e49a095d358b29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 53f9c0114573c6f08a2d9219e4dd2028ffe9ac7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 Esistono una serie di problemi con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] protezione, controllo delle versioni dell'applicazione e manifesto sintassi e semantica che può causare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione non corretta.  

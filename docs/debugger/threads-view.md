@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>Visualizzazione Thread
 La visualizzazione dei thread è un semplice elenco di tutti i thread associati alle finestre nel sistema. Vengono visualizzati l'ID del Thread e nome del modulo per ogni thread. I processi non vengono inclusi, ma è possibile trovare facilmente il processo a cui appartiene un thread selezionato.  
@@ -34,7 +35,7 @@ Visualizzazione Thread di Spy++
   
  La seguente figura mostra la visualizzazione dei thread.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Viene illustrato come trovare un thread specifico nella visualizzazione thread.  
   

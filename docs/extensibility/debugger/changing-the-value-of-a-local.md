@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78affeb358200599d925b9b70df3ae945759054c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03e6acb4ee9756d0bbb14a6e3667375d32cafba9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-value-of-a-local"></a>Modifica del valore di una variabile locale
 > [!IMPORTANT]
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
  Questa procedura viene utilizzata anche per modificare il valore di una variabile nel **espressioni di controllo** finestra ma il `IDebugProperty2` oggetto associato al valore della variabile locale che viene usata invece del `IDebugProperty2` oggetto associato a locale se stesso.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Implementazione di esempio di modifica dei valori](../../extensibility/debugger/sample-implementation-of-changing-values.md)  
  Utilizza l'esempio MyCEE per scorrere il processo di modifica dei valori.  
   

@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7afce4f676f6bcc61066d168dab743571c4bddc6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65c0b43f4c7f464a96161527f378dfeebc81aa43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedura: eseguire il debug di codice assembly inline
 > [!NOTE]
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  Il debugger fornisce due finestre di debug codice assembly inline, il **Disassembly** finestra e **registra** finestra.  
   
-## <a name="procedure"></a>Procedura  
+## <a name="procedure"></a>Routine  
   
 #### <a name="to-debug-inline-assembly-code"></a>Per eseguire il debug di codice assembly inline  
   
