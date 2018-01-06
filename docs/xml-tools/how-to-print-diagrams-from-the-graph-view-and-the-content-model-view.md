@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ab99d27af2ecb9fef24084b41a326c66c828d4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c88f2efd3e7494fdec5d0cfaee8ecb492c43603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procedura: stampare i diagrammi dalla visualizzazione grafico e dalla visualizzazione modello di contenuto
 In questo argomento viene descritto come stampare un diagramma dalla visualizzazione grafico o dalla visualizzazione modello di contenuto.  

@@ -11,20 +11,21 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bad24eb3693988c8d4f51f347a8473856dd1d224
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migration-activity-designers"></a>ActivityDesigner Migrazione
 Gli ActivityDesigner Migration vengono usati per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Gli argomenti contenuti in questa sezione forniscono istruzioni sull'utilizzo degli ActivityDesigner di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Interoperabilità](../workflow-designer/interop-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.Interop>.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  Per gli altri tipi di ActivityDesigner, vedere gli argomenti seguenti.  

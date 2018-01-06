@@ -18,16 +18,17 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3d83847341e7689b34edb0a4582225886e5eebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cfab2572544a89f0f5f353998e68093369d626f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-workbooks"></a>Uso delle cartelle di lavoro
   La classe <xref:Microsoft.Office.Tools.Excel.Workbook> e <xref:Microsoft.Office.Interop.Excel.Workbooks> contiene i metodi e le proprietà usati per eseguire attività con le cartelle di lavoro.  
   
-|Attività|Procedura|  
+|Attività|Routine|  
 |----------|---------------|  
 |Creare una nuova cartella di lavoro.|[Procedura: Creare nuove cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-create-new-workbooks.md)|  
 |Aprire una cartella di lavoro specificata.|[Procedura: Aprire cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-workbooks.md)|  

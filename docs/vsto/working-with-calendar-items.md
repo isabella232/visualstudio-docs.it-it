@@ -23,16 +23,17 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc1cacd824e6dda08dbee555b80cdff9a1e0356d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45117a5fd69705241c7e35dde66270deddca380e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-calendar-items"></a>Uso degli elementi di calendario
   La classe <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> contiene i metodi e le proprietà usati per eseguire attività con gli elementi di calendario.  
   
-|Attività|Procedura|  
+|Attività|Routine|  
 |----------|---------------|  
 |Creare un appuntamento e aggiungere i destinatari.|[Procedura: Creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)|  
 |Eliminare un'istanza di un appuntamento ricorrente.|[Procedura: Eliminare appuntamenti a livello di codice](../vsto/how-to-programmatically-delete-appointments.md)|  

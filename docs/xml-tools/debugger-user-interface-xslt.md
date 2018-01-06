@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 422dd91a5b8e22bb9859d8ffa10160bdbe77a021
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1071db6a7a8205ef337737473a18d1a6c31af43c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 In questo argomento vengono descritte le finestre di dialogo e altre finestre del debugger. Vengono illustrati solo gli elementi dell'interfaccia utente che presentano un comportamento di debug specifico per XSLT.  
@@ -26,7 +27,7 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
 ## <a name="locals-window"></a>Finestra Variabili locali  
  Nella finestra Variabili locali vengono visualizzate le informazioni sulle variabili definite nel foglio di stile. La finestra Variabili locali contiene tre colonne di informazioni:  
   
- **Nome**  
+ **Name**  
  Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente. I set di nodi dispongono di un controllo albero in cui è possibile eseguire il drill-down per visualizzare le sottocartelle.  
   
  **Valore**  

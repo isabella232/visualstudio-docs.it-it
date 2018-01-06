@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: dc005e282e7581aa2af5cba7da3a23040bf9d8b1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ba4078a903c1e30b968928e13c8d160c898bbf0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti
 Questa scheda della finestra di **Scegli elementi della casella degli strumenti** la finestra di dialogo Visualizza un elenco di [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] attività, modelli e gli elementi disponibili. Per visualizzare l'elenco, selezionare **Scegli elementi della casella degli strumenti** dal **strumenti** menu o facendo clic con il **della casella degli strumenti** e selezionando **Scegli elementi**per visualizzare il **Scegli elementi della casella degli strumenti** la finestra di dialogo e quindi selezionare il **System. Activities** scheda. Predefinita, l'elenco contiene le attività del flusso di lavoro dagli assembly System. Activities System.ServiceModel.Activities e System.Activities.Core.Presentation. Tuttavia, solo fornito dal sistema attività visualizzate e le attività aggiunte mediante altri assembly visualizzati di **della casella degli strumenti** sono selezionate per impostazione predefinita. Aggiunti di recente le attività vengono controllate automaticamente e vengono visualizzati di **della casella degli strumenti** quando fa clic su **OK** nella finestra di dialogo. Inoltre, questi elementi vengono visualizzati nel **della casella degli strumenti** in una nuova categoria che corrisponde allo spazio dei nomi in cui si trova l'attività di elemento o il modello.  

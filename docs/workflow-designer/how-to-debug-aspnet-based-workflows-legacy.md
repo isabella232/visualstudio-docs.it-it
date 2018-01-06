@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0eb248f04119f8f0ad70b9a09a4fb22c73399233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: aspnet
+ms.openlocfilehash: 36905d8716b2f6a0fd961f668b7b5ca7c3ef623d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Procedura: eseguire il debug di flussi di lavoro basati su ASP.NET (legacy)
 In questo argomento viene descritto come eseguire il debug di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] basate su [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] che fanno riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] legacy.  

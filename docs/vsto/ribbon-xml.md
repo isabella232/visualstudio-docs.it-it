@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
   L'elemento Barra multifunzione (XML) consente di personalizzare una barra multifunzione tramite XML. Usare l'elemento Barra multifunzione (XML) se si desidera personalizzare la barra multifunzione in un modo non supportato dall'elemento Barra multifunzione (finestra di progettazione visiva). Per un confronto tra operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|Identifica un metodo che viene chiamato quando l'applicazione carica la barra multifunzione.|  
 |**idMso**|**scheda**|Identifica una scheda predefinita da visualizzare nella barra multifunzione.|  
-|**id**|**group**|Identifica il gruppo.|  
+|**ID**|**group**|Identifica il gruppo.|  
 |**etichetta**|**group**|Specifica il testo visualizzato nel gruppo.|  
   
  Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli elementi e degli attributi disponibili, vedere l'articolo tecnico [Personalizzazione dell'interfaccia utente della barra multifunzione di Office (2007) per sviluppatori (parte 2 di 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|`GetCustomUI`|Restituisce il contenuto del file XML della barra multifunzione. Le applicazioni di Microsoft Office chiamano questo metodo per ottenere una stringa XML che definisce l'interfaccia utente della barra multifunzione personalizzata. Questo metodo implementa il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` deve essere implementato solo per restituire il contenuto del file XML della barra multifunzione e non deve essere utilizzato per inizializzare il componente aggiuntivo VSTO.   In particolare, non tentare di visualizzare finestre di dialogo o altre finestre nell'implementazione di `GetCustomUI` . In caso contrario, la barra multifunzione personalizzata potrebbe non funzionare correttamente. Se è necessario eseguire codice per l'inizializzazione del componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` .|  
+|`GetCustomUI`|Restituisce il contenuto del file XML della barra multifunzione. Le applicazioni di Microsoft Office chiamano questo metodo per ottenere una stringa XML che definisce l'interfaccia utente della barra multifunzione personalizzata. Questo metodo implementa il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` deve essere implementato solo per restituire il contenuto del file XML della barra multifunzione e non deve essere utilizzato per inizializzare il componente aggiuntivo VSTO. In particolare, non tentare di visualizzare finestre di dialogo o altre finestre nell'implementazione di `GetCustomUI` . In caso contrario, la barra multifunzione personalizzata potrebbe non funzionare correttamente. Se è necessario eseguire codice per l'inizializzazione del componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` .|  
 |`OnLoad`|Assegna il parametro <xref:Microsoft.Office.Core.IRibbonControl> al campo `ribbon` . Le applicazioni di Microsoft Office chiamano questo metodo per caricare la barra multifunzione personalizzata. È possibile usare questo campo per aggiornare dinamicamente la barra multifunzione personalizzata. Per altre informazioni, vedere l'articolo tecnico [Personalizzazione dell'interfaccia utente della barra multifunzione di Office (2007) per sviluppatori (parte 1 di 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Chiamato dal metodo `GetCustomUI` per ottenere il contenuto del file XML della barra multifunzione.|  
   

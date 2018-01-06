@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitazioni dei controlli Windows Form nei documenti di Office
   Esistono alcune differenze tra i controlli Windows Form che vengono aggiunti ai documenti di Microsoft Office Word o fogli di lavoro di Microsoft Office Excel e controlli Windows Form che vengono aggiunti a un Windows Form. Ad esempio, quando si aggiunge un <xref:Microsoft.Office.Tools.Word.Controls.Button> controllo a un documento, proprietà, ad esempio <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, e <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> non funzionano come previsto.  

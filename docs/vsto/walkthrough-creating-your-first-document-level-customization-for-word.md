@@ -19,11 +19,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c7992f36f82d7caf56b09b0f6887eed363b6665
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d732f16d6794fbe59dd6f67fa904fcee916ce69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Procedura dettagliata: creazione di una personalizzazione a livello di documento per Word
   Questa procedura dettagliata introduttiva mostra come creare una personalizzazione a livello di documento per Microsoft Office Word. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre un documento specifico. Una personalizzazione a livello di documento non può essere usata per apportare modifiche a un'intera applicazione, ad esempio per visualizzare una nuova scheda della barra multifunzione quando si apre un documento qualsiasi.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Scrittura di codice che usa il modello a oggetti di Word per aggiungere testo al documento personalizzato quando quest'ultimo viene aperto.  
   
--   Compilazione ed esecuzione del progetto a scopo di test.  
+-   Creazione ed esecuzione del progetto a scopo di test.  
   
 -   Pulizia del progetto per rimuovere dal computer di sviluppo le impostazioni di sicurezza e i file di compilazione non necessari.  
   

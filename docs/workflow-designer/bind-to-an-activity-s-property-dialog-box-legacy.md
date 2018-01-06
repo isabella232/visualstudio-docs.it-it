@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ffb172b551018ae7352edb7dd9fed44824a794ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ed372e54e0e40d06dbd1ecf818f507c1a425ad03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Associazione a un'attività &#39; finestra di dialogo proprietà s (Legacy)
 Questo argomento viene descritto come utilizzare il **associare alla proprietà di un'attività** nella finestra di dialogo legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

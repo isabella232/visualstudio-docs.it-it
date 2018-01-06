@@ -20,11 +20,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: inserimento di testo in un documento da un riquadro azioni
   Questa procedura dettagliata viene illustrato come creare un riquadro azioni in un documento di Microsoft Office Word. Nel riquadro azioni contiene due controlli per la raccolta di input e quindi inviano il testo al documento.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 -   Visualizzazione del riquadro azioni all'apertura dell'applicazione.  
   
 > [!NOTE]  
->  Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      **21 marzo 2008.**  
   
-     **Nome**  
+     **Name**  
   
      **Indirizzo**  
   
@@ -115,7 +116,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**getName**|  
+    |**Name**|**getName**|  
     |**Dimensione**|**130, 20**|  
   
 5.  Aggiungere un secondo **etichetta** al controllo del riquadro azioni e modificare il **testo** proprietà **indirizzo**.  
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**getAddress**|  
+    |**Name**|**getAddress**|  
     |**Accetta restituito**|**True**|  
     |**Multiline**|**True**|  
     |**Dimensione**|**130, 40**|  
@@ -133,8 +134,8 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**addText**|  
-    |**per**|**Inserimento**|  
+    |**Name**|**addText**|  
+    |**per**|**Inserisci**|  
   
 ## <a name="adding-code-to-insert-text-into-the-document"></a>Aggiungere il codice per inserire il testo nel documento  
  Nel riquadro azioni, scrivere codice che inserisce il testo delle caselle di testo appropriato <xref:Microsoft.Office.Tools.Word.Bookmark> controlli nel documento. È possibile utilizzare la `Globals` classe per accedere ai controlli nel documento dai controlli nel riquadro azioni. Per ulteriori informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  

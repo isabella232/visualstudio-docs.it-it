@@ -37,11 +37,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1516922d91bf517f2bf9e9512d6c5a00cb1ae868
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0dfc26627bbeaaaea66fb942e87238814bd02fd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-vsto-add-ins"></a>Programmazione di componenti aggiuntivi VSTO
   Quando si estende un'applicazione di Microsoft Office creando un componente aggiuntivo VSTO, si scrive il codice direttamente per la classe `ThisAddIn` nel progetto. È possibile usare questa classe per eseguire attività quali l'accesso al modello a oggetti dell'applicazione host di Microsoft Office, la personalizzazione dell'interfaccia utente dell'applicazione e l'esposizione di oggetti nel componente aggiuntivo VSTO ad altre soluzioni Office.  
@@ -155,6 +156,6 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [Personalizzazione delle funzionalità dell'interfaccia utente usando le interfacce di estensibilità](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
  [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md) (Scrittura di codice nelle soluzioni Office)  
+ [Scrittura di codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
   
   

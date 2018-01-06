@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: Aggiunta di controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi foglio di lavoro aperto mediante un componente aggiuntivo VSTO per Excel. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti l'aggiunta di oggetti <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro. Per informazioni, vedere [aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -76,21 +77,21 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**Pulsante**|  
+    |**Name**|**Pulsante**|  
     |**Etichetta**|**Pulsante**|  
   
 6.  Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**NamedRange**|  
+    |**Name**|**NamedRange**|  
     |**Etichetta**|**NamedRange**|  
   
 7.  Aggiungere una terza casella di controllo per **group1**e quindi modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**ListObject**|  
+    |**Name**|**ListObject**|  
     |**Etichetta**|**ListObject**|  
   
 ## <a name="adding-controls-to-the-worksheet"></a>Aggiunta di controlli al foglio di lavoro  

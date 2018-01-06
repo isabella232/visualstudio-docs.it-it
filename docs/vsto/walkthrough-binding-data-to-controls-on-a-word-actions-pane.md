@@ -22,11 +22,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a70bd325a5a9e20f9a67e59f81c63ce4b1ddcc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: be9a2b19a8c9c34390a359fd8e3350d6af654fde
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-binding-data-to-controls-on-a-word-actions-pane"></a>Procedura dettagliata: associazione di dati a controlli in un riquadro delle azioni di Word
   Questa procedura dettagliata viene illustrata l'associazione di dati a controlli in un riquadro azioni in Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 -   Visualizzare il riquadro azioni all'apertura dell'applicazione.  
   
 > [!NOTE]  
->  Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -135,8 +136,8 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**Inserimento**|  
-    |**per**|**Inserimento**|  
+    |**Name**|**Inserisci**|  
+    |**per**|**Inserisci**|  
   
 12. Ridimensionare il controllo utente per contenere i controlli.  
   

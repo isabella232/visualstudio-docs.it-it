@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a0868c898b9713bec07939a2e0404eb17d988ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d01c39479918b95203a7dacdba17c1ff9d1ec9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer"></a>Progettazione XML Schema
 Progettazione XML Schema (Progettazione XSD) è un strumento grafico che consente di visualizzare un set di schemi a livelli diversi di astrazione. Progettazione XSD è costituito dai seguenti componenti principali:  
@@ -29,7 +30,7 @@ Progettazione XML Schema (Progettazione XSD) è un strumento grafico che consent
   
 -   Il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) fornisce una rappresentazione grafica dei dettagli dei nodi di schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)  
  Viene fornita una panoramica di XML Schema Explorer e di come consente di lavorare con gli schemi XML Schema Definition Language (XSD).  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03d9cb39384e60a1b4e2bd1af880f775c2a64ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c5b1b933f7e4c24b42449cf93e2b4778ec788fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (XSD). Quando si crea un nuovo file XSD, inizialmente verrà visualizzata la visualizzazione iniziale.  

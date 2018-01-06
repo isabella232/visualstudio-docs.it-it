@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8696e7ffb4120bae12538a03b77d62c0d091a7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Distribuire un'app web o .NET Core in una cartella locale utilizzando lo strumento di pubblicazione di Visual Studio
 
@@ -65,6 +66,6 @@ Distribuire i file pubblicati con il metodo desiderato. Ad esempio, è possibile
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Distribuire un'applicazione di base .NET con lo strumento di pubblicazione](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs)
-- [Pacchetto di un'applicazione desktop per Microsoft Store (Bridge Desktop)](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-- (.NET) [Distribuire .NET Framework e applicazioni](https://docs.microsoft.com/en-us/dotnet/framework/deployment/)
+- [Distribuire un'applicazione .NET Core con lo strumento di pubblicazione](/dotnet/core/deploying/deploy-with-vs)
+- [Creare un pacchetto dell'applicazione desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+- (.NET) [Distribuire .NET Framework e applicazioni](/dotnet/framework/deployment/)

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: eda078bdfc0eae8861ac4e70b0f1f73a399f994c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7faec3b7a6bf33886928034e1f68ab31c7a60b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro legacy
 La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o a [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -36,7 +37,7 @@ La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy fornita da 
 |Scorrimento automatico|Se si ha un grande flusso di lavoro, è necessario posizionare un'attività oltre la visualizzazione visibile dell'area di progettazione. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di trascinare un'attività verso il bordo dell'area di progettazione nel punto più vicino a dove si desidera inserire l'attività. La visualizzazione dell'area di progettazione scorre automaticamente in quella direzione.|  
 |Smart tag|Le attività la cui configurazione non è completa o valida sono contrassegnate da un'icona di punto esclamativo. È possibile fare clic sull'icona e visualizzare un elenco a discesa di richieste di configurazione esistenti sull'attività. È quindi possibile utilizzare il **proprietà** finestra per configurare l'attività in modo appropriato. Quando tutte le proprietà sono valide per l'attività, l'icona di punto esclamativo scompare.|  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Finestre del flusso di lavoro di Visual Studio (legacy)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
   
  [Creazione di progetti flusso di lavoro legacy](../workflow-designer/creating-legacy-workflow-projects.md)  

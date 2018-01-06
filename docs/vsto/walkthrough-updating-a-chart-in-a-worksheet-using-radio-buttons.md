@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione
   Questa procedura dettagliata viene illustrato l'utilizzo di pulsanti di opzione in un foglio di lavoro di Microsoft Office Excel per consentire all'utente un modo per passare rapidamente tra le opzioni di base. In questo caso, le opzioni di modificare lo stile di un grafico.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 -   Modifica dello stile del grafico quando si seleziona un'opzione.  
   
 > [!NOTE]  
->  Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**dataChart**|  
+    |**Name**|**dataChart**|  
     |**HasLegend**|**false**|  
   
 ## <a name="adding-controls"></a>Aggiunta di controlli  
@@ -138,28 +139,28 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**Istogramma**|  
+    |**Name**|**Istogramma**|  
     |**per**|**Istogramma**|  
   
 3.  Aggiungere un secondo pulsante di opzione nel controllo utente e modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**barChart**|  
+    |**Name**|**barChart**|  
     |**per**|**Grafico a barre**|  
   
 4.  Aggiungere un terzo pulsante di opzione nel controllo utente e modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**lineChart**|  
+    |**Name**|**lineChart**|  
     |**per**|**Grafico a linee**|  
   
 5.  Aggiungere un quarto pulsante di opzione nel controllo utente e modificare le proprietà seguenti.  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**opzione areaBlockChart**|  
+    |**Name**|**opzione areaBlockChart**|  
     |**per**|**Grafico ad area**|  
   
  Successivamente, scrivere il codice per aggiornare il grafico quando si fa clic sul pulsante di opzione.  

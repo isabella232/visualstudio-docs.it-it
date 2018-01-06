@@ -19,11 +19,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: modifica della formattazione dei fogli di lavoro mediante i controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base dell'uso di caselle di controllo in un foglio di lavoro di Microsoft Office Excel per modificare la formattazione. Utilizzare gli strumenti di sviluppo per Office in Visual Studio per creare e aggiungere codice al progetto. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli di Excel in [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 -   Testare il progetto.  
   
 > [!NOTE]  
->  Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
@@ -72,21 +73,21 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**applyBoldFont**|  
+    |**Name**|**applyBoldFont**|  
     |**per**|**Grassetto**|  
   
 5.  Trascinare una seconda casella di controllo accanto a celle o **B4** e modificare le proprietà seguenti:  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**applyItalicFont**|  
+    |**Name**|**applyItalicFont**|  
     |**per**|**Corsivo**|  
   
 6.  Trascinare una terza casella di controllo accanto a celle o **B6** e modificare le proprietà seguenti:  
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**applyUnderlineFont**|  
+    |**Name**|**applyUnderlineFont**|  
     |**per**|**Carattere di sottolineatura**|  
   
 7.  Selezionare tutti i controlli casella di controllo tre tenendo premuto il tasto CTRL.  
@@ -116,7 +117,7 @@ ms.lasthandoff: 10/31/2017
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Nome**|**textFont**|  
+    |**Name**|**textFont**|  
     |**Value2**|**Fare clic su una casella di controllo per modificare la formattazione del testo.**|  
   
  Successivamente, scrivere il codice per formattare il testo quando si seleziona un'opzione.  

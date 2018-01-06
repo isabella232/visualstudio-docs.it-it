@@ -14,18 +14,19 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f83c2055ce8e8872b32bb7e7ab735a04bffcd553
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcaa711d1241056eff486e0984cf9326555b9eb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="workflow-designer-ui-help"></a>Guida dell'interfaccia utente della finestra di progettazione dei flussi di lavoro
 Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al contesto di [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Quando si utilizza [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], è possibile accedere a questi argomenti dall'interfaccia utente premendo **F1** quando un [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] la finestra di dialogo è aperta.  
   
  Nella sezione sono inoltre contenuti diversi argomenti relativi alla navigazione e ai messaggi di errore.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Finestra di dialogo Cerca e seleziona un tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
   
  [Finestra di dialogo Definizione di CorrelatesOn](../workflow-designer/correlateson-definition-dialog-box.md)  

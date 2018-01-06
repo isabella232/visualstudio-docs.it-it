@@ -19,11 +19,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbc6f8876236d1a056874500aea4878f9643f91b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 06a2488606b93040cf897ac510455b8a9ef74ce2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedura: gestire il layout di controllo dei riquadri delle azioni
   Un riquadro azioni è ancorato a destra di un documento o foglio di lavoro per impostazione predefinita. Tuttavia, può essere ancorato a sinistra, superiore o inferiore. Se si usano più controlli utente, è possibile scrivere codice per sovrapporre correttamente i controlli nel riquadro azioni. Per altre informazioni, vedere [Actions Pane Overview](../vsto/actions-pane-overview.md).  

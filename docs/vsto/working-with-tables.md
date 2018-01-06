@@ -20,16 +20,17 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3723d4612df985b1ddd9bd31188596ebefc3548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-tables"></a>Uso delle tabelle
   Gli argomenti in questa sezione forniscono routine dettagliate ed esempi di codice per l'uso di modello a oggetti di Microsoft Office Word da usare con tabelle in progetti di Office. In alcuni casi, le modalità con le quali si eseguono queste attività nei componenti aggiuntivi VSTO sono diverse da quelle usate nelle personalizzazioni a livello di documento.  
   
-|Attività|Procedura|  
+|Attività|Routine|  
 |----------|---------------|  
 |Creare una tabella, applicare uno stile e accedere alla tabella nel codice.|[Procedura: Creare tabelle di Word a livello di codice](../vsto/how-to-programmatically-create-word-tables.md)|  
 |Creare una tabella, formattarla e inserire dati nelle celle.|[Procedura: Popolare tabelle di Word con le proprietà documento a livello di codice](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|  

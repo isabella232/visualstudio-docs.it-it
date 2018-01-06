@@ -11,16 +11,17 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d761023ab8b933283a2b7f340039f9e7e63acb8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 63f49363ae60ce5188889e4b6bad7f7d491e2949
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="transaction-activity-designers"></a>ActivityDesigner Transaction
 Gli ActivityDesigner Transaction vengono usati per creare e configurare attività transazionali quali compensazione e conferma. Gli argomenti contenuti in questa sezione, ed elencati nella tabella seguente, forniscono istruzioni sull'utilizzo degli ActivityDesigner e dei modelli di progettazione in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.CancellationScope>.  
   
@@ -36,6 +37,6 @@ Gli ActivityDesigner Transaction vengono usati per creare e configurare attivit�
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)  
  Consente di creare e configurare un'attività <xref:System.Activities.Statements.TransactionScope>.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
   
 ## <a name="related-sections"></a>Sezioni correlate

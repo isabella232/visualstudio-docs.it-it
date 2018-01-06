@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Sviluppo di applicazioni con Progettazione flussi di lavoro
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] nella versione [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../test/includes/crabout_md.md)]flussi di lavoro, vedere il [Windows Workflow Foundation &#91;. NET Framework 4 &#93; ](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/27/2017
   
 -   Il **Aggiungi riferimento al servizio...**  funzionalità consente di generare automaticamente le attività che accedere ai servizi Web.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Uso di Progettazione flussi di lavoro](../workflow-designer/using-the-workflow-designer.md)  
  Viene illustrato come creare nuove attività e progetti flusso di lavoro usando le finestre di progettazione incorporate e come usare gli altri strumenti forniti dalla finestra di progettazione per gestire argomenti, variabili, espressioni, importazioni e navigazioni.  
   
@@ -69,5 +70,5 @@ ms.lasthandoff: 10/27/2017
  [Riallocazione della finestra di progettazione &#91; Esempi di WF &#93;](http://msdn.microsoft.com/Library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  In questo esempio viene illustrato come creare il layout WPF per contenere la finestra di progettazione.  
   
- [Gli ActivityDesigner personalizzati](/dotnet/framework/windows-workflow-foundation/samples/custom-activity-designers)  
+ [ActivityDesigner personalizzati](/dotnet/framework/windows-workflow-foundation/samples/custom-activity-designers)  
  Contenuto della sezione sono contenuti esempi di attività in cui vengono usate finestre di progettazione personalizzate da visualizzare nella progettazione flussi di lavoro.

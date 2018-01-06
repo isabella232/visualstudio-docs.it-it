@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>Editor XML
 L'editor XML è basato sull'editor di testo di [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio e include il supporto aggiuntivo per i linguaggi XML. Nell'editor XML sono incluse le seguenti funzionalità:  
@@ -54,7 +55,7 @@ L'editor XML viene richiamato per estensioni di file note, quali .xml, .xsd,.xsl
   
 -   XML Schema Explorer.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Convalida di documenti XML](../xml-tools/xml-document-validation.md)  
  Vengono descritte le funzionalità di verifica della sintassi e di convalida.  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c3f1572306dfe26d50d51ba0e83037debaf1c7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b4bec723bda86dae2e700da89139329c494c3dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedura: aggiungere nodi all'area di lavoro dalla visualizzazione iniziale
 In questo argomento viene descritto come aggiungere nodi globali per il [area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) dal [visualizzazione iniziale](../xml-tools/start-view.md).  

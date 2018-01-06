@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
@@ -68,7 +69,7 @@ Eseguire la procedura seguente:
 - Debug di snapshot con più client di Visual Studio con lo stesso servizio App non è attualmente supportato.
 - Ottimizzazioni IL Roslyn non sono completamente supportate nei progetti ASP.NET Core. Per alcuni progetti ASP.NET Core, potrebbe non essere in grado di visualizzare alcune variabili o utilizzare alcune variabili nelle istruzioni condizionali. 
 - Variabili speciali, ad esempio *$FUNCTION* o *$CALLER*, non può essere valutato nelle istruzioni condizionali o logpoints per i progetti ASP.NET Core.
-- Debug di snapshot non funziona in servizi di App che hanno [memorizzazione nella cache locale](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) acceso.
+- Debug di snapshot non funziona in servizi di App che hanno [memorizzazione nella cache locale](/azure/app-service/app-service-local-cache) acceso.
 - Debug di App per le API di snapshot non è attualmente supportato.
 
 ## <a name="see-also"></a>Vedere anche

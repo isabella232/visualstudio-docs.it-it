@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a432dabb09f3242ff3ba73527b86aac45e609588
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cd765b36024048a4bba5680a0fdc2445a1cc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'editor XML
 L'editor XML consente di associare un foglio di stile XSLT a un documento XML, eseguire la trasformazione e visualizzare l'output. L'output risultante dalla trasformazione XSLT viene visualizzato in una nuova finestra del documento.  
@@ -33,7 +34,7 @@ L'editor XML consente di associare un foglio di stile XSLT a un documento XML, e
   
     -   Aggiungere un'istruzione di elaborazione `xml-stylesheet` al documento XML. Ad esempio, aggiungere la seguente riga `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` al prologo del documento.  
   
-         -oppure-  
+         oppure  
   
     -   Aggiungere il foglio di stile XSLT utilizzando il **proprietà** finestra. Nel documento **finestra proprietà**, fare clic su di **Sfoglia** pulsante per la **Stylesheet** campo, selezionare il foglio di stile XSLT e fare clic su **aprire**.  
   
