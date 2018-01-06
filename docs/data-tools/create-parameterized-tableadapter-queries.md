@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b80f370f670f4dff4b65d7c0e7658f855d5e573
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 65c4ab52ead981d54cf9b0c64c7a3c1c941de5b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Creare query TableAdapter con parametri
 Una query con parametri restituisce dati che soddisfano le condizioni di una clausola WHERE all'interno della query. Ad esempio, è possibile aggiungere un parametro a un elenco di clienti in modo da visualizzare solo i clienti di una determinata città aggiungendo `WHERE City = @City` alla fine dell'istruzione SQL che restituisce un elenco di clienti.  
@@ -45,7 +46,7 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
   
 -   Creare un nuovo oggetto TableAdapter aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati. Per ulteriori informazioni, vedere [creare e configurare gli oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
-     -oppure-  
+     oppure  
   
 -   Aggiungere una query a un oggetto TableAdapter esistente aggiungendo all'istruzione SQL una clausola WHERE con i parametri desiderati.
   
@@ -70,7 +71,7 @@ Una query con parametri restituisce dati che soddisfano le condizioni di una cla
   
 4.  Digitare un nome nella **nuovo nome query** casella se si sta creando una nuova query.  
   
-     -oppure-  
+     oppure  
   
      Selezionare una query di **nome query esistente** casella.  
   

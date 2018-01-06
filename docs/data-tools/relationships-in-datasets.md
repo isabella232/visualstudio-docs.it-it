@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra i set di dati
 Tabelle di set di dati che contengono dati correlati utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati utilizzando il **configurazione guidata origine dati**, o **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto.  
@@ -58,7 +59,7 @@ Come parte del vincolo di chiave esterna, è possibile specificare regole di int
   
 Vengono specificate le regole che è possibile apportare nel <xref:System.Data.Rule> enumerazione ed elencate nella tabella seguente.  
   
-|Regola del vincolo di chiave esterna|Azione|  
+|Regola del vincolo di chiave esterna|Operazione|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule.Cascade>|La modifica (aggiornamento o eliminazione) apportata al record padre è effettuata anche nel record correlati nella tabella figlio.|  
 |<xref:System.Data.Rule.SetNull>|Record figlio non vengono eliminati, ma la relativa chiave esterna viene impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", che è non disponibile alcuna relazione con i record padre. **Nota:** usando questa regola può generare dati non validi nella tabella figlio.|  

@@ -12,11 +12,12 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 dev_langs: csharp
-ms.openlocfilehash: d4dfc63000fe6f66135d452b9a64e14dc05101d9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: e57db74ea431d9090df1dc34fd3cff3cf03dd475
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remove-unreachable-code-in-c"></a>Rimuovere codice non eseguibile in c# #
 **Novità:** rimuove il codice che non verrà mai eseguito.
@@ -59,4 +60,4 @@ private void Method()
 
 ## <a name="see-also"></a>Vedere anche  
 [Refactoring (C#)](../refactoring-csharp.md)  
-[Preview Changes](../../ide/preview-changes.md) (Visualizzare l'anteprima delle modifiche)
+[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

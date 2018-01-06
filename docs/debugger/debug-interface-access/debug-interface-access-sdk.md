@@ -17,16 +17,17 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e404f0b893453fa319d5c4df97319f8e77720805
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 Il Microsoft Debug interfaccia Access Software Development Kit (DIA SDK) fornisce l'accesso alle informazioni archiviate nei file di programma del database (con estensione pdb) generati dagli strumenti di post-compilazione Microsoft di debug. Poiché il formato del file PDB generato dagli strumenti di post-compilazione sottoposto a revisione costante, esponendo il formato risulta poco pratico. Tramite l'API di DIA, è possibile sviluppare applicazioni in cui cercare e visualizzare le informazioni di debug archiviate in un file con estensione pdb. Tali applicazioni, ad esempio, potrebbero segnalare informazioni sullo stack di traccia-back e analizzare i dati sulle prestazioni.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Introduzione](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
  Offre una panoramica di DIA SDK e specifica in cui è installato il DIA SDK nonché l'intestazione obbligatoria e i file di libreria.  
   

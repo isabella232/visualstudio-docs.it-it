@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: b7187ef8d3342ad050c66debf939e9c6a6213957
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Creazione e utilizzo di criteri di archiviazione di analisi codice
 Quando si utilizza controllo versione di Team Foundation (TFVC), è possibile creare un criterio di controllo dell'analisi codice per .NET Framework e progetti in codice nativo (C/C++) in un progetto team. È possibile utilizzare i criteri di controllo dell'analisi codice per controllare e migliorare la qualità del codice che viene archiviato nella codebase.  
@@ -29,7 +30,7 @@ Quando si utilizza controllo versione di Team Foundation (TFVC), è possibile cr
   
  Per creare codice criteri di archiviazione dell'analisi utilizzando le impostazioni del progetto Team di [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]. Criteri di archiviazione vengono specificati e applicati per un progetto team, ma esecuzioni dell'analisi del codice sono configurate ed eseguite per singoli progetti di codice nei computer di sviluppo locale. In questa sezione viene descritto come specificare i criteri analisi codice controllo-per un progetto team e come implementare i criteri di analisi codice personalizzati per codice gestito.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  Vengono illustrati i passaggi che consentono di impostare e modificare i criteri di analisi codice per un progetto team.  
   

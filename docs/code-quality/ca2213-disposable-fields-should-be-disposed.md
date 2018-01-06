@@ -18,19 +18,20 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77cd32f97e3798362371fc21f8b38c14ce22c7fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4da3299e839be08a5ff11792aa2c80a364349b18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: I campi Disposable devono essere eliminati
 |||  
 |-|-|  
 |TypeName|DisposableFieldsShouldBeDisposed|  
 |CheckId|CA2213|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> dichiara i campi di tipi che implementano anche <xref:System.IDisposable>. Il <xref:System.IDisposable.Dispose%2A> metodo del campo non viene chiamato dal <xref:System.IDisposable.Dispose%2A> metodo del tipo dichiarante.  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

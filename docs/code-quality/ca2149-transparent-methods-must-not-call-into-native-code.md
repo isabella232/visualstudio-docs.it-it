@@ -13,19 +13,20 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 937b6c203b7ee5a2dbe2c77ba1c67ca7500c1fa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 9377a30d2fc56c8acef16b6bcf1187d0e9fa8741
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: I metodi Transparent non devono effettuare chiamate nel codice nativo
 |||  
 |-|-|  
 |TypeName|TransparentMethodsMustNotCallNativeCode|  
 |CheckId|CA2149|  
-|Categoria|Microsoft.Security|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft.Security|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un metodo chiama una funzione nativa tramite uno stub di metodo, ad esempio P/Invoke.  

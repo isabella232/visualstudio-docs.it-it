@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 86f0e451fe81875868db0d6ddcd9cead790800d3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità Visual Studio crea le didascalie per controlli associati a dati
 Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md) in una finestra di progettazione, tenere presente che in: i nomi di colonna nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole risultano concatenate. È possibile personalizzare il modo in cui vengono create le etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** i valori in il **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data progettisti** chiave del Registro di sistema.  

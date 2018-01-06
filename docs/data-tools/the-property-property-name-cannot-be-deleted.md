@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b3a896e64e048a5104bca84b726c730d4d9d524a
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5bba0739a35dbc90c0c9141619c54b93f653d482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>La proprietà &lt;nome della proprietà&gt; non può essere eliminato
 La proprietà \<nome proprietà > non può essere eliminato perché è impostato come il **proprietà Discriminator** per l'ereditarietà tra \<nome classe > e \<nome classe >  
@@ -34,5 +35,5 @@ La proprietà \<nome proprietà > non può essere eliminato perché è impostato
 3.  Provare a eliminare nuovamente la proprietà.  
   
 ## <a name="see-also"></a>Vedere anche
-[Messaggi O/R Designer](../data-tools/o-r-designer-messages.md)  
+[Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

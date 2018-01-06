@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1c6ac08b47bd5ad5e6dd84bbf78496c421a21a6
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 Il linguaggio di annotazione del codice sorgente Microsoft (SAL) fornisce un set di annotazioni che è possibile utilizzare per descrivere come una funzione utilizza i relativi parametri, le ipotesi su cui fa su di essi e le garanzie che rende quando viene completato. Le annotazioni sono definite nel file di intestazione `<sal.h>`. Analisi codice di Visual Studio per C++ Usa le annotazioni SAL per modificare l'analisi di funzioni. Per ulteriori informazioni su SAL 2.0 per lo sviluppo di driver di Windows, vedere [SAL 2.0 annotazioni per i driver di Windows](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -84,7 +85,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Nozioni di base SAL  
  SAL definisce quattro tipi di base di parametri, che sono classificati in base al modello di utilizzo.  
   
-|Categoria|Annotazione parametro|Descrizione|  
+|Category|Annotazione parametro|Descrizione|  
 |--------------|--------------------------|-----------------|  
 |**Chiamata di funzione di input**|`_In_`|Dati viene passati alla funzione chiamata e viene considerati come di sola lettura.|  
 |**Chiamata alla funzione input e output al chiamante**|`_Inout_`|Dati utilizzabili viene passati alla funzione e potenzialmente viene modificati.|  

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d91ff5c65b1d2e43b3e1ee1d1314c252daeeb276
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7b18e64c01c8540b3f3188c06eae7286cf5f3647
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata
 Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata. È stata invece usata la stringa di connessione del file .dbml.  
@@ -28,5 +29,5 @@ Nel file di impostazioni dell'applicazione la proprietà di connessione manca o 
 -   Fare clic su **OK**. Le informazioni di connessione contenute nel file .dbml vengono aggiunte alle impostazioni dell'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche
-[Messaggi O/R Designer](../data-tools/o-r-designer-messages.md)  
+[Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

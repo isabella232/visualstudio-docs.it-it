@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0c83367d383ab72194e5f83609b0f93d8602fdcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 Nel contesto di strumenti di dati .NET in Visual Studio, il termine *origine dati* fa riferimento a oggetti .NET che si connettono a un archivio dati e di espongono i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **origini dati** finestra. Questo tipo di origine dati può essere:  

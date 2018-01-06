@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdba59674b53f82707a586aa3f94695666db695e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 78b9d5a2c2f147ade02e3123e2e5c08f130b29de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 Consente di espandere il set di regole regole estese progettazione Microsoft delle linee guida per le regole di progettazione di base delle linee guida per ottimizzare i problemi di usabilità e manutenibilità segnalati. Aggiuntivo attenzione è rivolta alle convenzioni di denominazione. È consigliabile inclusi in questo set di regole se il progetto contiene codice di libreria o se si desidera applicare gli standard ottimali per la scrittura di codice che è facile da gestire.  

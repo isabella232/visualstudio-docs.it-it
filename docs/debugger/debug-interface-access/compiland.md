@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a93cc4b98d46989aedfb212a54e6a5df5692ad59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compiland"></a>Compilando
 È presente `SymTagCompiland` simbolo per ogni modulo collegato al file .exe. Informazioni di modulo viene suddiviso tra i simboli con un `SymTagCompiland` tag, che può essere recuperato senza caricare i simboli compilando aggiuntive, i simboli con un `SymTagCompilandDetails` tag, che potrebbe richiedere il caricamento dei simboli aggiuntivi.  

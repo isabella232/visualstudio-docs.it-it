@@ -18,19 +18,20 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca904e9259855127825b594db80cdc3524d53ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e3fa59585a5233bbebde7df0d074d303285c616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementare correttamente i metodi di serializzazione
 |||  
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Sostanziale - Se il metodo è visibile all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il metodo non è visibile all'esterno dell'assembly.|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Sostanziale - Se il metodo è visibile all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il metodo non è visibile all'esterno dell'assembly.|  
   
 ## <a name="cause"></a>Causa  
  Un metodo che gestisce un evento di serializzazione non dispone della visibilità, del tipo restituito o della firma corretta.  

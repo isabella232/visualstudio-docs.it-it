@@ -19,19 +19,20 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81c553a9ae45ed44e8c5d96f49f2063e6383e5ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 57b499756292a62c64b44f864042ffa740a14016
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminare gli oggetti prima di perdere l'ambito
 |||  
 |-|-|  
 |TypeName|DisposeObjectsBeforeLosingScope|  
 |CheckId|CA2000|  
-|Categoria|Microsoft.Reliability|  
-|Breaking Change|Non sostanziale|  
+|Category|Microsoft.Reliability|  
+|Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
  Un oggetto locale di un <xref:System.IDisposable> tipo viene creato ma l'oggetto non viene eliminato prima di tutti i riferimenti all'oggetto siano esterni all'ambito.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 -   L'inizializzazione dei membri di un oggetto eliminabile non deve essere eseguita nel costruttore dell'utilizzo di un'istruzione.  
   
--   Costruttori protetti solo da un gestore di eccezioni di annidamento. Di seguito è riportato un esempio:  
+-   Costruttori protetti solo da un gestore di eccezioni di annidamento. Ad esempio,  
   
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -166,4 +167,4 @@ End Function
 
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.IDisposable>   
- [Modello Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

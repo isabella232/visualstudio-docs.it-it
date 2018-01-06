@@ -18,19 +18,20 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b76453fe2283acace75cddbbdc3ccb08864c60c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10b3667a8147b0eea77f79735fca465401f7c436
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Non contrassegnare le enumerazioni con FlagsAttribute
 |||  
 |-|-|  
 |TypeName|DoNotMarkEnumsWithFlags|  
 |CheckId|CA2217|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Un'enumerazione visibile esternamente è contrassegnata con <xref:System.FlagsAttribute> e ne ha uno o più valori che non sono potenze di due o una combinazione degli altri valori definiti nell'enumerazione.  

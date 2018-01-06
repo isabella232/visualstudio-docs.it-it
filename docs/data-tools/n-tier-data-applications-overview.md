@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 894e3f7d2ad605aa1e8b8a52a72cd8f83dc90192
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
 *A più livelli* le applicazioni di dati sono dati applicazioni separate in più *livelli*. Acronimo di "applicazioni distribuite" e "applicazioni multilivello", le applicazioni a più livelli separano l'elaborazione in livelli discreti che vengono distribuite tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario una netta separazione tra i vari livelli che costituiscono l'applicazione.  

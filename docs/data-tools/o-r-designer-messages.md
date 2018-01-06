@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="or-designer-messages"></a>Messaggi di O/R Designer
 In questo argomento vengono elencati i messaggi che è possibile rilevare quando si usa Progettazione relazionale oggetti.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Impossibile creare un'associazione \<nome associazione >-proprietà elencata due volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
  [Impossibile creare un'associazione \<nome associazione >-proprietà hanno tipi non corrispondenti](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
@@ -54,7 +55,7 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
   
  [È stato selezionato un oggetto di database da un provider di database non supportato](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  <xref:System.Data.Linq>  
   
 ## <a name="related-sections"></a>Sezioni correlate  

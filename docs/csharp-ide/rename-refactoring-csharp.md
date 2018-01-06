@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>Refactoring di ridenominazione (C#)
 **Rinominare** è una funzionalità dell'ambiente di sviluppo integrato (IDE) di Visual Studio che fornisce un modo semplice per rinominare gli identificatori per i simboli del codice, ad esempio campi, le variabili locali, metodi, gli spazi dei nomi, proprietà e tipi di refactoring. **Rinominare** può essere utilizzato per modificare i nomi nei commenti e nelle stringhe e modificare le dichiarazioni e le chiamate di un identificatore.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Digitare il tasto di scelta rapida **Maiusc + Alt + F10** per visualizzare il menu di azioni rapide.  
   
-     -oppure-  
+     oppure  
   
      Fare clic sul triangolo nero accanto la lampadina per visualizzare il menu di azioni rapide.  
   

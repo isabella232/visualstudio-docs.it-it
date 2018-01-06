@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d9c0fa3846380b58e78b449083eab486954fd8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 86a7a4c253aa9bdd2d311d72f40e8b9374a37ff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Utilizzo di un modello concettuale (WCF Data Services)
 Quando si utilizza un modello concettuale per descrivere i dati in un database, è possibile eseguire query dei dati tramite gli oggetti invece di dover convertire avanti e indietro tra uno schema di database e un modello a oggetti.  
@@ -30,7 +31,7 @@ Quando si utilizza un modello concettuale per descrivere i dati in un database, 
 |Argomento|Descrizione|  
 |-----------|-----------------|  
 |[Procedura: Eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Viene illustrato come eseguire una query di un servizio dati da un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dell'applicazione.|  
-|[Procedura: proiettare risultati di Query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati.|  
+|[Procedura: proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati.|  
   
  Quando si utilizza un modello concettuale, è possibile definire il tipo di dati è valido nella lingua corrispondente al dominio. È possibile definire i dati validi nel modello oppure è possibile aggiungere la convalida per le operazioni eseguite su un'entità o un servizio dati.  
   

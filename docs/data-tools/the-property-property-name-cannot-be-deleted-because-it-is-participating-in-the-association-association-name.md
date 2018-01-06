@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 150d176c105e8368fc97f36a19774824dcb91c3e
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 44a83e15cd712fb98c697b68b1dccaea5d0caf99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>La proprietà &lt;nome della proprietà&gt; non può essere eliminato perché è inclusa nell'associazione &lt;il nome dell'associazione&gt;
 La proprietà selezionata viene impostata come la **proprietà associazione** per l'associazione tra le classi indicate nel messaggio di errore. Le proprietà non possono essere eliminate se partecipano a un'associazione tra classi di dati.  
@@ -34,5 +35,5 @@ La proprietà selezionata viene impostata come la **proprietà associazione** pe
 4.  Provare a eliminare nuovamente la proprietà.  
   
 ## <a name="see-also"></a>Vedere anche
-[Messaggi O/R Designer](../data-tools/o-r-designer-messages.md)  
+[Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

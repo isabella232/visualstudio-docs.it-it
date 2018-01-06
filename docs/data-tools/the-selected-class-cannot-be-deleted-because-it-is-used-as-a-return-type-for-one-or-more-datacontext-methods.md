@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 865c8f9fa91c24eed1e10bde68b239932237a62b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 78107218af8c4b32e1cace3137fa15fe31fcbc52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Impossibile eliminare la classe selezionata perché è utilizzata come tipo restituito per uno o più metodi DataContext
 Il tipo restituito di uno o più metodi <xref:System.Data.Linq.DataContext> rappresenta la classe di entità selezionata. L'eliminazione di una classe di entità usata come tipo restituito di un metodo <xref:System.Data.Linq.DataContext> determinerà l'esito negativo della compilazione del progetto. Per eliminare la classe di entità selezionata, identificare i metodi <xref:System.Data.Linq.DataContext> che l'usano e impostare i relativi tipi restituiti su una classe di entità diversa.  
@@ -30,5 +31,5 @@ Il tipo restituito di uno o più metodi <xref:System.Data.Linq.DataContext> rapp
 2.  Impostare il **Return Type** su una classe di entità diversa oppure eliminare il <xref:System.Data.Linq.DataContext> metodo dal riquadro dei metodi.  
   
 ## <a name="see-also"></a>Vedere anche
-[Messaggi O/R Designer](../data-tools/o-r-designer-messages.md)  
+[Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)  
 [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

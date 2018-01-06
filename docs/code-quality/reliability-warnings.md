@@ -17,16 +17,17 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3ac06911009a24640031fd3a2306110f289014f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 336548a51b6ee388f81602abca5a1d0421864c18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reliability-warnings"></a>avvisi di affidabilità
 Avvisi di affidabilità supportano l'affidabilità di applicazioni e librerie, ad esempio di utilizzo della memoria e thread corretto.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |Regola|Descrizione|  
 |----------|-----------------|  

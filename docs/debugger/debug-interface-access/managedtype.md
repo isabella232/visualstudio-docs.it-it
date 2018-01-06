@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7453ec94f2a5daa160559d17fe1c4502191d366
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 4ba534199433390adfd12babf5bd28449e838ffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managedtype"></a>ManagedType
 Un tipo gestito (qualsiasi simbolo definito da metadati o nativo alle funzionalità di gestione della memoria e risorse di linguaggi come c#) è identificato da un `SymTagManagedType` simbolo.  

@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante la compilazione di un set di dati
 Se un set di dati contiene i vincoli (ad esempio i vincoli di chiave esterna), possono generare errori relativi all'ordine delle operazioni che vengono eseguite a fronte del set di dati. Ad esempio, il caricamento dei record figlio prima del caricamento correlati record padre possono violano un vincolo e causare un errore. Non appena si carica un record figlio, il vincolo di verifica per il record padre correlate e genera un errore.  

@@ -17,26 +17,27 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 56063dd3ff23088bb62d07ecde3d41c941a7fa2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ed7e9109e36255a8c8390d26455d6c3c568e550
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="design-warnings"></a>Avvisi di progettazione
 Progettazione di avvisi supportano la conformità alle linee guida di progettazione di .NET Framework.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
   
 |Regola|Descrizione|  
 |----------|-----------------|  
-|[CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento di tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento tipo è diversa e può generare confusione.|  
+|[CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento tipo è diversa e può generare confusione.|  
 |[CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Una classe dichiara e implementa un campo di istanza che è un tipo System. IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable.|  
 |[CA1002: Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)|Collections < (di \<(T >) >) è una raccolta generica progettata per prestazioni ottimali, non per l'ereditarietà. List, pertanto, non contiene membri virtuali. Devono invece essere esposte le raccolte generiche che sono state progettate per l'ereditarietà.|  
 |[CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003-use-generic-event-handler-instances.md)|Un tipo contiene un delegato che restituisce void, la cui firma contiene due parametri (il primo è un oggetto e il secondo è un tipo assegnabile a EventArgs) la destinazione dell'assembly contenente [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].|  
 |[CA1004: I metodi generici devono specificare parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Per inferenza si intende la procedura con cui viene determinato l'argomento tipo di un metodo generico in base al tipo di argomento passato al metodo, piuttosto che in base alla specifica esplicita dell'argomento tipo. Per consentire l'inferenza, la firma di parametro di un metodo generico deve includere un parametro dello stesso tipo del parametro di tipo relativo al metodo. In tal caso non è necessario specificare l'argomento di tipo. Quando si utilizza l'inferenza per tutti i parametri di tipo, la sintassi per chiamare metodi di istanza generici e non generici è identica; Ciò semplifica l'usabilità dei metodi generici.|  
 |[CA1005: Evitare un uso eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Quanto più è alto il numero di parametri di tipo contenuti, maggiore è la difficoltà di sapere e ricordare cosa rappresenta ciascun parametro. È in genere ovvio con un parametro di tipo, come in List\<T > e in alcuni casi con due parametri di tipo, come in Dictionary\<TKey, TValue >. Tuttavia, se il numero dei parametri di tipo è superiore a due, il livello di difficoltà sarà troppo elevato per la maggior parte degli utenti.|  
-|[CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Un argomento tipo annidato è un argomento tipo che è anche un tipo generico. Per chiamare un membro la cui firma contiene un argomento di tipo annidato, l'utente deve creare un'istanza su un tipo generico e passare il tipo al costruttore di un secondo tipo generico. La sintassi e la procedura necessarie sono complesse ed è opportuno evitarle.|  
+|[CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Un argomento tipo annidato è un argomento tipo che è anche un tipo generico. Per chiamare un membro la cui firma contiene un argomento tipo annidato, l'utente deve creare un'istanza su un tipo generico e passare il tipo al costruttore di un secondo tipo generico. La sintassi e la procedura necessarie sono complesse ed è opportuno evitarle.|  
 |[CA1007: Usare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)|Un metodo visibile esternamente contiene un parametro per riferimento di tipo System.Object. L'utilizzo di un metodo generico consente di passare al metodo tutti i tipi, soggetti a vincoli, senza prima eseguire il cast del tipo al tipo di parametro per riferimento.|  
 |[CA1008: Gli enum devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)|Il valore predefinito di un'enumerazione non inizializzata, come altri tipi di valore, è zero. Un'enumerazione senza attributi flag definisce un membro con valore pari a zero, in modo che il valore predefinito è un valore valido dell'enumerazione. Se un'enumerazione a cui è applicato l'attributo FlagsAttribute definisce un membro con valore zero, il relativo nome deve essere "None" per indicare che nell'enumerazione non è stato impostato alcun valore.|  
 |[CA1009: Dichiarare correttamente i gestori eventi](../code-quality/ca1009-declare-event-handlers-correctly.md)|I metodi di gestione eventi accettano due parametri. Il primo è di tipo System.Object ed è denominato "sender". Corrisponde all'oggetto che ha generato l'evento. Il secondo parametro è di tipo System.EventArgs ed è denominato "e". Questi sono i dati associati all'evento. I metodi del gestore eventi non restituiscono un valore. Nel linguaggio di programmazione C# il tipo restituito è void.|  

@@ -18,19 +18,20 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df23ab2259bc8042b9a9782ff9f7a15ac349a1c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8a1835c5e600320ec8b36102e4749d92cf21eae1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Le proprietà di raccolte devono essere in sola lettura
 |||  
 |-|-|  
 |TypeName|CollectionPropertiesShouldBeReadOnly|  
 |CheckId|CA2227|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Interruzione|  
+|Category|Microsoft. Usage|  
+|Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Una proprietà modificabile visibile esternamente è un tipo che implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Set di autorizzazioni, matrici e indicizzatori (proprietà con il nome 'Item') vengono ignorati dalla regola.  

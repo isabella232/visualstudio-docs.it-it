@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 19d8761abea6934c59673c332ea09e8a0b4e6997
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Applicare codice di facile manutenibilità con criteri di archiviazione dell'analisi del codice
 Gli sviluppatori possono utilizzare lo strumento di metrica del codice per misurare la complessità e della manutenibilità del codice, ma non possono richiamare la metrica del codice come parte di un criterio di controllo. Tuttavia, un team è possibile abilitare le regole di analisi del codice che verifica la conformità del codice standard di metrica del codice e applicano le regole tramite criteri di archiviazione. Per ulteriori informazioni sulla metrica del codice, vedere il [valori della metrica del codice](../code-quality/code-metrics-values.md).  
