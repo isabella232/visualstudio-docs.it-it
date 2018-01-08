@@ -23,7 +23,7 @@
       "build_output_subfolder": "mac",
       "locale": "it-it",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -38,7 +38,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "it-it",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -54,7 +54,7 @@
       "locale": "it-it",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
