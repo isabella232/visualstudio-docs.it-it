@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7768465f46e5344b88da9006a7de2396e3b75ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 150c8794fb35ca017be7e0873dc0d1b84ebfc38c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Interfaccia IWefDebuggingSupport
   Implementata da un ambiente di debug, ad esempio Visual Studio, per semplificare il debug di App per Office. L'applicazione di Office, ad esempio Word o Excel, ottiene l'interfaccia da Visual Studio e quindi chiama i metodi dell'interfaccia in determinati momenti durante la sessione di debug.  
@@ -43,7 +44,7 @@ interface IWefDebuggingSupport : IUnknown
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono elencati i metodi che definisce l'interfaccia IWefDebuggingSupport.  
   
-|Nome|Descrizione|  
+|nome|Descrizione|  
 |----------|-----------------|  
 |[Metodo GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Ottiene informazioni sulle App per Office che devono essere inseriti automaticamente durante il debug.|  
 |[Metodo SetWefProcessId](../vsto/setwefprocessid-method.md)|Fornisce l'identificatore di processo che verrà eseguito il contenuto Web estensioni Framework (WEF).|  

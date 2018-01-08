@@ -7,6 +7,8 @@
 ## [Eseguire il debug di un'app ASP.NET](quickstart-debug-aspnet.md)
 # Esercitazioni
 ## [Informazioni sul debug tramite Visual Studio](getting-started-with-the-debugger.md)
+## [Eseguire il debug di un'app Azure attiva](debug-live-azure-applications.md)
+## [Debug di ASP.NET in IIS o IIS Express](how-to-enable-debugging-for-aspnet-applications.md)
 ## [Eseguire il debug remoto di un progetto C#](remote-debugging-csharp.md)
 ## [Eseguire il debug remoto di un progetto C++](remote-debugging-cpp.md)
 ## [Eseguire il debug remoto di ASP.NET Core in un computer IIS](remote-debugging-aspnet-on-a-remote-iis-computer.md)
@@ -61,7 +63,6 @@
 ### [Eseguire il debug con il debugger JIT](debug-using-the-just-in-time-debugger.md)
 #### [Procedura: Rispondere al debugger JIT](just-in-time-debugging-in-visual-studio.md)
 ## Configurare il debug
-### [Eseguire il debug del codice utente](just-my-code.md)
 ### [Gestire le eccezioni con il debugger](managing-exceptions-with-the-debugger.md)
 #### [Continuare l'esecuzione dopo un'eccezione](continuing-execution-after-an-exception.md)
 #### [Procedura: Esaminare il codice di sistema dopo un'eccezione](how-to-examine-system-code-after-an-exception.md)
@@ -70,6 +71,7 @@
 ##### [Procedura: Scrivere una funzione per la segnalazione degli errori di runtime](how-to-write-a-run-time-error-reporting-function.md)
 ##### [Usare i controlli di runtime senza la libreria di runtime del linguaggio C](using-run-time-checks-without-the-c-run-time-library.md)
 ### [Specificare file di simboli (PDB) e di origine nel debugger di Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+### [Eseguire il debug del codice utente](just-my-code.md)
 ### [Impostazioni del debugger e preparazione](debugger-settings-and-preparation.md)
 #### [Impostazioni di progetto correlate al debugger](debugger-project-settings.md)
 ##### [Procedura: Specificare le impostazioni del debugger](how-to-specify-debugger-settings.md)
@@ -274,7 +276,7 @@
 ## [Usare i file di dump](using-dump-files.md)
 ### [API di estensibilità del riepilogo file dump](dump-file-summary-extensibility-api.md)
 ## [Sicurezza del debugger](debugger-security.md)
-# Riferimento
+# Riferimenti
 ## [Riferimenti dell'interfaccia utente di debug](debugging-user-interface-reference.md)
 ### [Finestra di dialogo Seleziona punti di interruzione](choose-breakpoints-dialog-box.md)
 ### [Finestra di dialogo Configura firewall per debug remoto](configure-firewall-for-remote-debugging-dialog-box.md)

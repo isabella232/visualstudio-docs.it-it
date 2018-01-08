@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 848fc50b8886cc736c5a7a856beec238c084d879
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3dca463352d5e698b74ecc6bda2a1579e3290513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Procedura: includere file mediante un modulo
   *I moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli) sono contenitori che consentono di distribuire i file, ad esempio pagine master ASPX, file di testo o immagini in SharePoint.  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
   
      Quando si aggiunge un file al progetto, viene automaticamente aggiunta una voce per tale file Elements.xml del modulo. Quando viene distribuito il progetto, i file vengono copiati nel server SharePoint, rispetto alla directory radice del progetto, specificata dal **File** dell'elemento **Url** attributo, ad esempio `Url="Module1/New Folder/SomeFile.doc`. Se si desidera modificare il percorso di distribuzione per un file, di spostare in un'altra cartella **Esplora** o modificare il relativo **Url** impostazione.  
   
-8.  Per qualsiasi file che si desidera visualizzare in una raccolta documenti, aggiungere il `Type="GhostableInLibrary"` attributo per la voce nel file Elements.xml. Di seguito è riportato un esempio:  
+8.  Per qualsiasi file che si desidera visualizzare in una raccolta documenti, aggiungere il `Type="GhostableInLibrary"` attributo per la voce nel file Elements.xml. Ad esempio,  
   
     ```  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  

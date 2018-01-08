@@ -27,11 +27,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 513b2216a99f37ba3aff1174965470b20921072f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc29b307f6459e3a5841ae1dd1c60ae9ab9ed152
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelli di progetto e di elementi di progetto SharePoint
   Le sezioni seguenti vengono descritti il progetto SharePoint disponibili e modelli e le modalità di utilizzo dell'elemento di progetto. 
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
   
  L'elemento di progetto ricevitore di eventi crea un **ricevitore di eventi** cartella con un singolo file di classe contiene gestori eventi per tutti gli eventi specificato al momento della creazione del progetto nel **personalizzazione di SharePoint Procedura guidata**. La classe del ricevitore di eventi può gestire eventi che si verificano nel sito di SharePoint quando elementi quali file, campi, gli elementi, elenchi, gli allegati, web part e flussi di lavoro vengono aggiunti, aggiornati, eliminati o rimosso. Per ulteriori informazioni, vedere [procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md) e [blocco predefinito: gestione degli eventi](http://go.microsoft.com/fwlink/?LinkId=179416).  
   
-### <a name="list"></a>Elenco  
+### <a name="list"></a>List  
  Un elenco è un'istanza di una riutilizzabili base SharePoint definizione di elenco, ad esempio un calendario o un elenco di attività. Dopo aver aggiunto un elenco per la soluzione, la finestra di progettazione di elenco consente di aggiungere all'elenco di colonne del sito e creare le colonne dell'elenco personalizzato. Incluse le colonne del sito da tipi di contenuto. È possibile specificare il *vista* per l'elenco, che determina le colonne che verranno visualizzati nell'elenco. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una colonna del sito, tipo di contenuto e l'elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [blocco predefinito: elenchi e raccolte documenti](http://go.microsoft.com/fwlink/?LinkId=179421).  
   
 ### <a name="module"></a>Modulo  

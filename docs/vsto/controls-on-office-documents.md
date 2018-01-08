@@ -21,11 +21,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c626839b852098f6bae6093a424a786a74522fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3a8a8f3bd66ef6f70f8775c1ed064df61b0e9e52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controls-on-office-documents"></a>Controlli nei documenti di Office
   È possibile usare gli strumenti di sviluppo di Office inclusi in Visual Studio per aggiungere controlli Windows Form e *controlli host* ai documenti Word e ai fogli di lavoro di Excel. I controlli host rappresentano oggetti che estendono i vari oggetti dell'interfaccia utente nei modelli a oggetti di Word ed Excel.  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
  Quando si sviluppano progetti a livello di documento per Excel o Word, è possibile aggiungere questi controlli a livello di codice in fase di esecuzione oppure è possibile usare la finestra di progettazione di Visual Studio per aggiungere questi controlli nel documento o nella cartella di lavoro nel progetto in fase di creazione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)  
  In questo articolo vengono descritte le funzionalità di elementi host e controlli host, ad esempio, la programmazione per eventi, i controlli di associazione a dati. Inoltre, viene descritto in che modo i controlli differiscono rispetto agli oggetti nativi.  
   

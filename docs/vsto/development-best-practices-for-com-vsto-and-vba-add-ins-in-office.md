@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Procedure consigliate di sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sta sviluppando COM, componenti aggiuntivi VSTO o VBA per Office, seguire le procedure consigliate di sviluppo descritte in questo articolo.   In modo da garantire:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Ridotta complessità della distribuzione di componenti aggiuntivi a utenti e gli amministratori IT.
 -  Non si verificano errori di runtime o l'installazione non intenzionali del componente aggiuntivo.
 
->Nota: L'utilizzo di [Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) per preparare il computer, VSTO o VBA aggiuntivo per Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti in Office Store o di Windows Store. 
+>Nota: L'utilizzo di [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) per preparare il computer, VSTO o VBA aggiuntivo per Windows Store non è supportato. Componenti aggiuntivi COM, VSTO e VBA non possono essere distribuiti in Office Store o di Windows Store. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Non verificare durante l'installazione di Office  
  Non è consigliabile che il componente aggiuntivo di rilevare se è installato Office durante il processo di installazione. Se non è installato Office, è possibile installare il componente aggiuntivo e l'utente sarà in grado di accedervi dopo l'installazione di Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Utilizzare i tipi di interoperabilità incorporati (NoPIA)  
-Se la soluzione viene utilizzato .NET 4.0 o versioni successive, utilizzare tipi di interoperabilità incorporati (NoPIA) invece che a seconda di Office primario interoperabilità assembly (PIA) redistributable. Riduce le dimensioni di installazione della soluzione mediante l'incorporamento dei tipi e assicura la compatibilità futura. Office 2010 è stata l'ultima versione di Office inclusi assembly di interoperabilità primario ridistribuibile. Per ulteriori informazioni, vedere [procedura dettagliata: incorporamento delle informazioni sui tipi da assembly di Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalenza del tipo e i tipi di interoperabilità incorporati](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Se la soluzione viene utilizzato .NET 4.0 o versioni successive, utilizzare tipi di interoperabilità incorporati (NoPIA) invece che a seconda di Office primario interoperabilità assembly (PIA) redistributable. Riduce le dimensioni di installazione della soluzione mediante l'incorporamento dei tipi e assicura la compatibilità futura. Office 2010 è stata l'ultima versione di Office inclusi assembly di interoperabilità primario ridistribuibile. Per ulteriori informazioni, vedere [procedura dettagliata: incorporamento delle informazioni sui tipi da assembly di Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalenza del tipo e i tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
 
 Se la soluzione Usa una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'utilizzo di .NET 4.0 o versione successiva. L'utilizzo di .NET 4.0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
   
@@ -66,4 +67,4 @@ Per fornire istruzioni di supporto per le applicazioni client di Office (ad esem
 >Importante: Microsoft gestisce un elenco di componenti aggiuntivi supportati per i report di conformità, le informazioni di contatto ISV. Per ottenere il componente aggiuntivo elencato, vedere [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utilizzare Monitor di processo per eseguire il debug di installazione o il caricamento di problemi
-Se il componente aggiuntivo presenta problemi di compatibilità durante l'installazione o di carico, potrebbe essere correlati per i problemi di accesso ai file o del Registro di sistema. Utilizzare [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) o uno strumento di debug simile per accedere e confrontare il comportamento in un ambiente di lavoro per identificare il problema. 
+Se il componente aggiuntivo presenta problemi di compatibilità durante l'installazione o di carico, potrebbe essere correlati per i problemi di accesso ai file o del Registro di sistema. Utilizzare [Process Monitor](/sysinternals/downloads/procmon) o uno strumento di debug simile per accedere e confrontare il comportamento in un ambiente di lavoro per identificare il problema.

@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Generare una classe o un tipo in Visual Basic
 **Novità:** consente di generare immediatamente il codice per una classe o tipo. 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Accedi a | Impostare il tipo di *predefinito*, *interno* o *pubblica* accesso.
    Kind | Può essere impostata come *classe* o *struct*.
-   Nome | Questo non può essere modificato e sarà il nome che già digitato.
+   nome | Questo non può essere modificato e sarà il nome che già digitato.
    Progetto | Se sono presenti più progetti nella soluzione, è possibile scegliere il percorso di classe/struttura TTL.
    Nome file | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
 
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Vedere anche  
 [Code Generation (Visual Basic)](../code-generation-vb.md) (Generazione di codice (Visual Basic))  
-[Preview Changes](../../ide/preview-changes.md) (Visualizzare l'anteprima delle modifiche)
+[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

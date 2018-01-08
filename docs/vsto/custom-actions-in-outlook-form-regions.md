@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74c688d0430b95c54f1f871ad6f82fde6fa781ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree di modulo di Outlook
   Azioni visualizzano i pulsanti che consentono agli utenti di rispondere a un elemento di Microsoft Office Outlook. Per rispondere a un elemento di posta elettronica, ad esempio, gli utenti fanno clic il **risposta**, **Rispondi a tutti**, o **Avanti** pulsanti di azione. Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento utilizzando le informazioni dell'elemento originale.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |**Corpo**|Specifica il modo in cui viene aggiunto il corpo dell'elemento originale nel modulo di destinazione.|  
 |**Enabled**|Indica se l'azione personalizzata è abilitata. Se questa proprietà è impostata su **false**, l'azione personalizzata è disabilitata.|  
 |**Metodo**|Specifica il tipo di risposta disponibile quando viene eseguita l'azione personalizzata. L'azione personalizzata può inviare il modulo, aprire il form o richiedere all'utente se si desidera inviare o aprire il form.|  
-|**Nome**|Specifica il nome interno che è possibile utilizzare per fare riferimento a questa azione personalizzata nel codice.|  
+|**Name**|Specifica il nome interno che è possibile utilizzare per fare riferimento a questa azione personalizzata nel codice.|  
 |**ShowOnRibbon**|Indica se visualizzare l'azione personalizzata sulla barra multifunzione dell'elemento originale.|  
 |**SubjectPrefix**|Specifica il testo che viene inserito all'inizio della riga dell'oggetto del modulo di destinazione.|  
 |**TargetForm**|Specifica il nome della classe messaggio del modulo di destinazione. Ad esempio, digitare **IPM. Attività** per aprire un modulo di attività.|  

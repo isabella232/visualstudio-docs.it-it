@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localizzazione di soluzioni SharePoint
   Il processo di preparazione delle applicazioni in modo che possono essere utilizzati in tutto il mondo è noto come localizzazione. Localizzazione è conversione di risorse a una lingua specifica. Per ulteriori informazioni, vedere [globalizzazione e localizzazione di applicazioni](/visualstudio/ide/globalizing-and-localizing-applications). In questo argomento viene fornita una panoramica su come localizzare una soluzione di SharePoint.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
 |Tipo di File di risorse|Descrizione|  
 |------------------------|-----------------|  
-|Predefinito|Noto anche come risorse di fallback, file di risorse predefiniti contengono stringhe localizzate per le impostazioni cultura predefinite, ad esempio inglese. Vengono utilizzati se non viene trovati alcun file di risorse localizzati per la lingua specificata. Risorse predefinite non dispone di file separati, si trovano nell'assembly principale dell'applicazione.|  
+|Impostazione predefinita|Noto anche come risorse di fallback, file di risorse predefiniti contengono stringhe localizzate per le impostazioni cultura predefinite, ad esempio inglese. Vengono utilizzati se non viene trovati alcun file di risorse localizzati per la lingua specificata. Risorse predefinite non dispone di file separati, si trovano nell'assembly principale dell'applicazione.|  
 |Indipendente dal linguaggio|Un file di risorse contenente stringhe localizzate per una lingua, ma non una lingua specifica. Ad esempio, "fr" per il francese.|  
 |Specifica del linguaggio|Un file di risorse contenente stringhe localizzate per una lingua e impostazioni cultura. Ad esempio, "fr-CA" per il francese canadese.|  
   

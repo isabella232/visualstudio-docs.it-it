@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7995b6768ae188484c15a3b1d3157df116ca481
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 67b35bb60224ce8c10136314ce2d42635d80c5c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Procedura: aggiungere elementi a un progetto SharePoint
   Soluzioni di SharePoint contengono uno o più progetti, ognuno dei quali contiene più elementi di progetto SharePoint. Dopo avere aperto o creato una soluzione di SharePoint, è possibile aggiungere elementi nuovi o esistenti a questi progetti. Ad esempio, nuovi progetti di flusso di lavoro forniti con un modulo predefinito denominato default.aspx, ma è possibile sostituire tale form con un modulo nuovo o diverso o aggiungere un altro form ASPX.  

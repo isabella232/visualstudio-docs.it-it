@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b7a24c793755cdd5102407d1a3a5cbfad103c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: creare un'attività personalizzata per un flusso di lavoro del sito
   Questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Flussi di lavoro a livello di sito si applicano all'intero sito, non solo un elenco nel sito). L'attività personalizzata consente di creare un elenco di annunci di backup e quindi copia il contenuto dell'elenco di annunci al suo interno.  
@@ -91,7 +92,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Nella barra dei menu, scegliere **progetto**, **Aggiungi nuovo elemento** per visualizzare il **Aggiungi nuovo elemento** la finestra di dialogo.  
   
-2.  Nel **modelli installati** visualizzazione ad albero, scegliere il **codice** nodo, quindi scegliere il **classe** modello nell'elenco dei modelli di elemento di progetto. Utilizzare il nome predefinito Class1. Scegliere il pulsante **Aggiungi** .  
+2.  Nel **modelli installati** visualizzazione ad albero, scegliere il **codice** nodo, quindi scegliere il **classe** modello nell'elenco dei modelli di elemento di progetto. Utilizzare il nome predefinito Class1. Scegliere il pulsante **Aggiungi**.  
   
 3.  Sostituire tutto il codice in Class1 con quanto segue:  
   

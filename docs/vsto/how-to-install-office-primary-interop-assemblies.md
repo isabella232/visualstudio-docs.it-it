@@ -18,11 +18,12 @@ caps.latest.revision: "61"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14ce408395cc992e83cb26aecbc2e4ab428428ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3368e3176badf8aa1bf1eebe6453674380de46f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Procedura: installare assembly di interoperabilità primari di Office
   Quando si installa Office, installare gli assembly di interoperabilità primari (PIA) di Microsoft Office.  
