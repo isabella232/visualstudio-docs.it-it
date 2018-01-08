@@ -15,18 +15,19 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5061a52de32f699bbe234f729bb4f852ee966933
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9f4d45c3fccebed9febc2ea722981f597896ace
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>L'installazione di pacchetti VSPackage con Windows Installer
 L'integrazione di VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] richiede più di un semplice copia i file nel computer dell'utente. Programma di installazione del VSPackage è necessario installare il pacchetto VSPackage e i relativi file dipendenti e registrare e integrarli in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Il pacchetto VSPackage può sfruttare le funzionalità di integrazione, ad esempio la visualizzazione di un'icona nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] iniziale dello schermo e la finestra di dialogo informazioni su.  
   
  File di Microsoft Windows Installer sono il modo consigliato per distribuire i VSPackage. Eseguire i pacchetti di Windows Installer da utilizzare in qualsiasi sistema operativo Windows supportato da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per ulteriori informazioni, vedere [Windows Installer](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Nozioni di base su Windows Installer](../../extensibility/internals/windows-installer-basics.md)  
  Viene fornita una panoramica di Windows Installer.  
   

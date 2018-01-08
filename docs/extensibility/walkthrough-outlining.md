@@ -13,11 +13,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: struttura
 È possibile implementare una funzionalità basata su linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, è possibile definire il tipo di estensione e il contenuto di nome file e applicare la definizione dell'area a solo a quel tipo o è possibile applicare le definizioni di area per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata viene illustrato come definire e visualizzare le aree della struttura.  

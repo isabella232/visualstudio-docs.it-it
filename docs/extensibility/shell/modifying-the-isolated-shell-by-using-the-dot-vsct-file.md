@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdaab4c5c9f0ee5522ae372e4a0cd94fb113eed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631aaaf4bf3d36cf5b83c8e67791c453cdfed925
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>Modifica la Shell isolata tramite il. File Vsct
 Il progetto di interfaccia utente per un progetto di Visual Studio shell isolata contiene un file vsct che consente di specificare quali gruppi di applicazioni e singoli comandi sono disponibili nell'applicazione. Di seguito è un estratto da un file con estensione vsct non modificato.  

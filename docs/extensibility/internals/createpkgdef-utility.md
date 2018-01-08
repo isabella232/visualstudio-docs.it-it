@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 Accetta un file DLL per un'estensione di Visual Studio come un parametro e crea un file. pkgdef che accompagnano il file DLL. Il file. pkgdef contiene tutte le informazioni che verrebbero scritto nel Registro di sistema in caso contrario è installata l'estensione.  
@@ -40,7 +41,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  Obbligatorio. Imposta il nome del file di output. pkgdef per`FileName`.  
   
  /codebase  
- Parametro facoltativo. Registrazione forza con l'utilità della CodeBase.  
+ Facoltativo. Registrazione forza con l'utilità della CodeBase.  
   
  /assembly  
  Registrazione forza con l'utilità di Assembly.  

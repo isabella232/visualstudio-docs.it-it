@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>Proprietà di diagrammi
 È possibile impostare le proprietà che specificano come diagrammi verranno visualizzato nella finestra di progettazione generato. Ad esempio, è possibile specificare un colore predefinito per il testo nel diagramma.  
@@ -34,9 +35,9 @@ ms.lasthandoff: 10/27/2017
 |Attributi personalizzati|Consente di aggiungere attributi alla classe il codice generato.|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal diagramma (`none`, `abstract` o `sealed`).|Nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal diagramma (`none`, `abstract` o `sealed`).|nessuno|  
 |Diagramma di base|Classe di base di questo diagramma.|(nessuno)|  
-|Nome|Il nome di questo diagramma.|Nome corrente|  
+|nome|Il nome di questo diagramma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questo diagramma.|Spazio dei nomi corrente|  
 |Classe rappresentata|La classe di dominio radice che rappresenta questo diagramma.|Classe radice corrente, se applicabile|  
 |Note|Note informale che sono associate a questo elemento.|\<Nessuno >|  

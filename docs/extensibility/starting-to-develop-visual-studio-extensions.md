@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Iniziando a sviluppare estensioni di Visual Studio
 Se è mai stata scritta un'estensione di Visual Studio prima di, è probabile che alcune domande. È stata elencate alcune di quelle più comuni. Se le informazioni che si sta cercando non viene visualizzato, utilizzare i pulsanti di commenti e suggerimenti (**questa pagina è stata utile?** nella parte inferiore dello schermo) per chiedere a quello desiderato.  
@@ -89,4 +90,4 @@ Se è mai stata scritta un'estensione di Visual Studio prima di, è probabile ch
 ## <a name="how-can-i-distribute-my-extension"></a>Come è possibile distribuire l'estensione?  
  È possibile installare l'estensione in un altro computer o inviarlo ai tuoi amici come un file con estensione VSIX, che viene installato facendo doppio clic. È possibile trovare ulteriori informazioni sui pacchetti VSIX [Shipping estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  
   
- È anche possibile pubblicare l'estensione di Visual Studio Marketplace, che rende visibili a un numero elevato di clienti di Visual Studio. Per un esempio di creazione del pacchetto un'estensione per il Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per ulteriori informazioni sui requisiti necessari per pubblicare in Marketplace, vedere [prodotti e le estensioni per Visual Studio](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview).
+ È anche possibile pubblicare l'estensione di Visual Studio Marketplace, che rende visibili a un numero elevato di clienti di Visual Studio. Per un esempio di creazione del pacchetto un'estensione per il Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per ulteriori informazioni sui requisiti necessari per pubblicare in Marketplace, vedere [prodotti e le estensioni per Visual Studio](/vsts/integrate/ide/extensions/overview).

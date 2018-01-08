@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2217b77116ea561c32e96fcb7b92b520e680025
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c52a71ebb521f84f96bead09502389f6b395e90c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-custom-start-pages"></a>Distribuzione di pagine iniziali personalizzate
 È possibile distribuire pagine iniziali personalizzate utilizzando la distribuzione VSIX oppure copiando i file nelle posizioni corrette nel computer di destinazione.  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Se la pagina iniziale richiede l'assembly, copiarli e incollarli in... \\ *Cartella di installazione di visual Studio*\Common7\IDE\PrivateAssemblies.\\.  
   
-3.  Nel **Personalizza pagina iniziale** elenco il **avvio** opzioni pagina, selezionare la nuova pagina iniziale. Per ulteriori informazioni, vedere [personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md).  
+3.  Nel **Personalizza pagina iniziale** elenco il **avvio** opzioni pagina, selezionare la nuova pagina iniziale. Per altre informazioni, vedere [Personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md)   

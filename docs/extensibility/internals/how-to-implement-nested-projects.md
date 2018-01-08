@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: implementare progetti annidati
 Quando si crea un tipo di progetto annidato sono sono un alcuni passaggi aggiuntivi che devono essere implementati. Un progetto padre assume alcune delle responsabilità stessa con la soluzione per i progetti nidificati (figlio). Il progetto principale è un contenitore di progetti è simili a una soluzione. In particolare, sono disponibili diversi eventi che devono essere generati per la soluzione e per i progetti padre per compilare la gerarchia di progetti annidati. Questi eventi sono descritte nel processo seguente per la creazione di progetti annidati.  

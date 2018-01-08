@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: vssdk
+ms.openlocfilehash: 40e795238e46885707cfd6eff715a27a5f53f85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Utilizzo di colore in Visual Studio  
@@ -293,7 +294,7 @@ Molti elementi dell'interfaccia utente comuni sono già definiti colori a contra
 | --- | --- |
 | ActiveCaption | -Active IDE e icone di finestra rafted pulsante al passaggio del mouse e premere<br />-Sfondo della barra del titolo per IDE e rafted windows<br />-Sfondo della barra di stato predefinito |
 | ActiveCaptionText | -Active IDE e rafted windows per il colore della barra del titolo (testo e icone)<br />-In background e il bordo dei pulsanti finestra attiva nel passaggio del mouse e premere |
-| Controllo | -Casella combinata elenco a discesa e ricerca controllare l'impostazione predefinita e in background, incluso il pulsante di menu a discesa disabilitato<br />-Lo sfondo di pulsante di ancoraggio destinazione<br />-Sfondo della barra dei comandi<br />-Sfondo della finestra strumento |
+| Control | -Casella combinata elenco a discesa e ricerca controllare l'impostazione predefinita e in background, incluso il pulsante di menu a discesa disabilitato<br />-Lo sfondo di pulsante di ancoraggio destinazione<br />-Sfondo della barra dei comandi<br />-Sfondo della finestra strumento |
 | ControlDark | -Sfondo IDE<br />-Menu e comandi il separatore barra<br />: Bordo barra dei comandi<br />-Shadows menu<br />-Strumento bordo predefinito e al passaggio del mouse sulla scheda della finestra e il separatore<br />-Documento e lo sfondo di pulsante di overflow<br />-Bordo glifo di ancoraggio destinazione |
 | ControlDarkDark |Finestra della scheda di documento con stato non attivo e selezionato |
 | ControlLight |-Bordo sottoscheda Nascondi automaticamente<br />-Bordo dell'elenco combinata casella e l'elenco a discesa<br />-Ancorare bordo e uno sfondo di destinazione |
@@ -337,9 +338,9 @@ Creare un tipo speciale di voce del Registro di sistema categoria `[HKLM\SOFTWAR
   
 Popolare il Registro di sistema con due valori:  
 
-| Nome | Tipo | Dati | Descrizione |
+| nome | Tipo | Dati | Descrizione |
 | --- | --- | --- | --- |
-| Categoria | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
+| Category | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | Il GUID del servizio che supporta la categoria di VSPackage |
   
  Il servizio specificato nel Registro di sistema deve fornire un'implementazione di [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) per la categoria corrispondente.  
@@ -349,9 +350,9 @@ Creare un tipo speciale di voce del Registro di sistema categoria `[HKLM\SOFTWAR
   
 Popolare il Registro di sistema con due valori:
 
-| Nome | Tipo | Dati | Descrizione |
+| nome | Tipo | Dati | Descrizione |
 |--- | --- | --- | --- |
-| Categoria | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
+| Category | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | Il GUID del servizio che supporta la categoria di VSPackage |
   
 Il servizio specificato nel Registro di sistema deve fornire un'implementazione di `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` per il gruppo corrispondente.

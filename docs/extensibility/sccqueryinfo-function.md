@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5c2e974fe2cd0f6d95b97bba0ba2ffa22c1095e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo (funzione)
 Questa funzione Ottiene informazioni sullo stato per un set di file selezionati nel controllo del codice sorgente.  

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9a33e8386dcdc2cbf79d057cc454a959b1c06b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornisce il supporto di annullamento per le finestre di progettazione
 Finestre di progettazione, ad esempio editor, in genere necessario supportare le operazioni di annullamento in modo che gli utenti possono invertire le modifiche apportate di recente quando si modifica un elemento di codice.  

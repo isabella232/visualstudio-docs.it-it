@@ -16,16 +16,17 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 002d9f2bb9a70d3f223b13d505639089005a09ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 846f0bff11c557164ff101d0b5beb1950fded62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchies-and-selection"></a>Le gerarchie e la selezione
 Quando si personalizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario comprendere come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le gerarchie, ad esempio progetti e come viene utilizzato il contesto di selezione per determinare ciò che viene visualizzato all'utente. In questa sezione vengono illustrati i concetti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerarchie e selezione.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
  Descrive le gerarchie di progetto e il concetto generale di gerarchie.  
   

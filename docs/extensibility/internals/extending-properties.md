@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abf254aa21be5ec4b7401e21afa5f9bcca00e011
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties"></a>Estensione delle proprietà
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **proprietà** finestra è un visualizzatore di proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. Il **proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
@@ -29,7 +30,7 @@ Finestra Proprietà
   
  In questa sezione vengono fornite informazioni dettagliate relative alle singole aree del **proprietà** finestra e le interfacce che è necessario implementare e chiamare per popolare la finestra.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Panoramica della finestra Proprietà](../../extensibility/internals/properties-window-overview.md)  
  Viene illustrato lo scopo del **proprietà** finestra rispetto alla finestra degli strumenti e finestra del documento.  
   
@@ -52,7 +53,7 @@ Finestra Proprietà
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
  Vengono illustrati i progetti come i blocchi predefiniti del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)  
+ [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)  
  Descrive come è possibile utilizzare il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] piattaforma per il test e debug di applicazioni durante la compilazione.  
   
  [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)  

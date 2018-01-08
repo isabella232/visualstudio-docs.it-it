@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo
 Il processo di aggiunta di elementi di **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, la sezione AddItemTemplates contiene il percorso e nome della directory degli elementi disponibili nel **Aggiungi nuovo elemento** la finestra di dialogo vengono inseriti.  
@@ -37,7 +38,7 @@ Il processo di aggiunta di elementi di **Aggiungi nuovo elemento** viene avviata
   
  "SortPriority" = dword:00000064  
   
-|Nome|Tipo|Dati (dal file con estensione RGS)|Descrizione|  
+|nome|Tipo|Dati (dal file con estensione RGS)|Descrizione|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (Impostazione predefinita)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|ID di risorsa per **Aggiungi elemento** modelli.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Percorso degli elementi di progetto visualizzati nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata.|  

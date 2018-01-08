@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 503f171b2af5e06fd3c890caf07525ba880d0658
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e974c768f9bf73b92cb974875654846a267bb893
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 Connettori rappresentano le relazioni di dominio in una finestra di progettazione generato.  
@@ -29,17 +30,17 @@ Connettori rappresentano le relazioni di dominio in una finestra di progettazion
 |--------------|-----------------|-------------|  
 |Colore|Il colore di questo connettore.|Nero|  
 |Stile tratteggio|Lo stile di tratteggio per la riga per il connettore (solido, trattino, punto, Trattopunto, Trattopuntopunto o personalizzato).|Tinta unita|  
-|Stile estremità di origine|Lo stile di fine di origine per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|  
-|Stile estremità di destinazione|Lo stile di fine della destinazione per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|  
+|Stile estremità di origine|Lo stile di fine di origine per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|nessuno|  
+|Stile estremità di destinazione|Lo stile di fine della destinazione per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|nessuno|  
 |Colore del testo|Colore utilizzato per gli elementi Decorator testo associati a questo connettore.|Nero|  
 |Thickness|Lo spessore della linea per questo connettore, misurata in pollici.|0.03125|  
 |Modificatore di accesso|Il livello di accesso della classe (`public` o `internal`).|Public|  
 |Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questo connettore.|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal connettore (`none`, `abstract` o `sealed`).|nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal connettore (`none`, `abstract` o `sealed`).|none|  
 |Connettore di base|Classe di base di questo connettore.|(nessuno)|  
-|Nome|Il nome di questo connettore.|Nome corrente|  
+|nome|Il nome di questo connettore.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questo connettore.|Spazio dei nomi corrente|  
 |ToolTip (tipo)|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|\<Nessuno >|  
 |Note|Note informale che sono associate a questo connettore.|\<Nessuno >|  

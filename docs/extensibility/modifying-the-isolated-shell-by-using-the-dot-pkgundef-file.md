@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b4c0f46924c2c828158960a924faa031be0fd14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfe0e4b39e96d98718ff98025add521a678699ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>Modifica la Shell isolata tramite il. File Pkgundef
 È possibile modificare il file .pkgundef per escludere le voci del Registro di sistema da un'applicazione shell isolata. In genere, la prima volta che viene avviata un'applicazione in un computer, la shell di Visual Studio copia le voci del Registro di sistema di Visual Studio esistenti per la chiave del Registro di sistema radice per l'applicazione. Sono inclusi tutti i riferimenti ai pacchetti VSPackage attualmente installati.  

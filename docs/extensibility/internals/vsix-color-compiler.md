@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>Compilatore colori VSIX
 Lo strumento compilatore di Visual Studio estensione colore è un'applicazione console che accetta un file XML che rappresenta i colori per i temi di Visual Studio esistenti e vengono convertiti in un. pkgdef file in modo che è possono utilizzare i colori in Visual Studio. Poiché è facile confrontare le differenze tra i file con estensione XML, questo strumento è utile per la gestione di colori personalizzati nel controllo del codice sorgente. Anche possibile eseguire l'hook negli ambienti di compilazione in modo che l'output della compilazione è un file. pkgdef valido.  
@@ -55,7 +56,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Nome|[Obbligatorio] Il nome del tema|  
+|nome|[Obbligatorio] Il nome del tema|  
 |GUID|[Obbligatorio] GUID del tema (deve corrispondere la formattazione di GUID)|  
   
  Quando si creano i colori personalizzati per Visual Studio, i colori devono essere definiti per i seguenti temi. Se è presente alcun colore per un particolare tema, Visual Studio tenta di caricare i colori mancanti dal tema chiaro.  
@@ -81,7 +82,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Nome|[Obbligatorio] Il nome della categoria|  
+|nome|[Obbligatorio] Il nome della categoria|  
 |GUID|[Obbligatorio] GUID della categoria (deve corrispondere la formattazione di GUID)|  
   
  **Colore**  
@@ -98,7 +99,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Nome|[Obbligatorio] Il nome del colore|  
+|nome|[Obbligatorio] Il nome del colore|  
   
  **Sfondo e/o primo piano**  
   

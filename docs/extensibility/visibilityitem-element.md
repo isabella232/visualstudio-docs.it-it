@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>Elemento VisibilityItem
 Il `VisibilityItem` elemento determina la visibilità statica di comandi e le barre degli strumenti. Ogni voce identifica un comando o i menu, nonché un contesto di interfaccia utente del comando associato. Visual Studio rileva i comandi, menu e barre degli strumenti e la visibilità, senza caricare i pacchetti VSPackage che definiscono. L'IDE Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodo per determinare se un contesto di comando dell'interfaccia utente è attivo.  
@@ -49,10 +50,10 @@ Il `VisibilityItem` elemento determina la visibilità statica di comandi e le ba
 |guid|Obbligatorio. Il GUID dell'identificatore di comando/ID GUID.|  
 |ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|  
 |contesto|Obbligatorio. Il contesto dell'interfaccia utente in cui il comando è visibile.|  
-|Condizione|Parametro facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
- None  
+ nessuno  
   
 ### <a name="parent-elements"></a>Elementi padre  
   

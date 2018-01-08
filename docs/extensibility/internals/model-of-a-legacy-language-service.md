@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio Legacy
 Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene utilizzato per fornire l'editor con informazioni specifiche per tale lingua. Ad esempio, l'editor deve conoscere le parole chiave del linguaggio e elementi per supportare la colorazione della sintassi.  
@@ -42,7 +43,7 @@ Modello di servizio di linguaggio di base
   
  Nella tabella seguente viene fornita una panoramica degli oggetti nel modello.  
   
-|Componente|Oggetto|Funzione|  
+|Componente|Object|Funzione|  
 |---------------|------------|--------------|  
 |Buffer del testo|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Un flusso di testo Unicode lettura/scrittura. È possibile che il testo da utilizzare altre codifiche.|  
 |Finestra del codice|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Una finestra del documento che contiene uno o più visualizzazioni di testo. Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è in modalità interfaccia a documenti multipli (MDI), la finestra del codice è un figlio MDI.|  

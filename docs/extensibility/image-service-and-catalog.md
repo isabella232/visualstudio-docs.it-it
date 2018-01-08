@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento contiene informazioni e procedure consigliate per adottare il servizio immagini di Visual Studio e il catalogo di immagini introdotta in Visual Studio 2015.  
@@ -108,7 +109,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
 |-|-|  
 |**Sottoelemento**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'utilizzo nel manifesto corrente|  
-|Guid|Il simbolo rappresenta un GUID e deve corrispondere a GUID formattazione|  
+|GUID|Il simbolo rappresenta un GUID e deve corrispondere a GUID formattazione|  
 |Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
 |Stringa|Il simbolo rappresenta un valore stringa arbitrario|  
   
@@ -149,7 +150,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Guid|[Obbligatorio] La parte GUID del moniker di immagini|  
+|GUID|[Obbligatorio] La parte GUID del moniker di immagini|  
 |Id|[Obbligatorio] La porzione dell'ID del moniker immagine|  
 |AllowColorInversion|[Facoltativo, valore predefinito true] Indica se l'immagine può avere i colori invertiti a livello di codice quando viene utilizzata su uno sfondo scuro.|  
   
@@ -206,7 +207,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Guid|[Obbligatorio] La parte GUID del moniker di immagini|  
+|GUID|[Obbligatorio] La parte GUID del moniker di immagini|  
 |Id|[Obbligatorio] La porzione dell'ID del moniker immagine|  
 |Altre informazioni|[Impostazione predefinita è false, facoltativo] Indica se il moniker dell'immagine fa riferimento a un'immagine nel manifesto corrente.|  
   
@@ -950,7 +951,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
         |GlyphGroupError||StatusError|  
         |GlyphBscFile||ClassFile|  
-        |GlyphAssembly||Riferimento|  
+        |GlyphAssembly||Riferimenti|  
         |GlyphLibrary||Libreria|  
         |GlyphVBProject||VBProjectNode|  
         |GlyphCoolProject||CSProjectNode|  
@@ -967,7 +968,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphRecursion||Ricorsione|  
         |GlyphXmlItem||Tag|  
         |GlyphJSharpProject||DocumentCollection|  
-        |GlyphJSharpDocument||Documento|  
+        |GlyphJSharpDocument||Document|  
         |GlyphForwardType||GoToNext|  
         |GlyphCallersGraph||Callto://|  
         |GlyphCallGraph||CallFrom|  

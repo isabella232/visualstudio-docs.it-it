@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-from-resources"></a>Manifesto da risorse
 Il manifesto dallo strumento di risorse è un'applicazione console che accetta un elenco di risorse immagine (file con estensione PNG o XAML) e genera un file .imagemanifest che consente le immagini da utilizzare con il servizio di immagini di Visual Studio. Inoltre, questo strumento può essere utilizzato per aggiungere immagini a un .imagemanifest esistente. Questo strumento è utile per aggiungere supporto per immagini a un'estensione di Visual Studio ad alta risoluzione e temi. Il file generato .imagemanifest deve essere incluso in e distribuito come parte di un'estensione di Visual Studio (VSIX).  
@@ -35,7 +36,7 @@ Il manifesto dallo strumento di risorse è un'applicazione console che accetta u
 |/manifest|Nome da assegnare al file .imagemanifest generato. Possono anche includere un percorso assoluto o relativo per creare il file in un percorso diverso. Il nome predefinito corrisponde al nome di assembly.<br /><br /> Impostazione predefinita: \<Directory corrente >\\< Assembly\>.imagemanifest|Facoltativo|  
 |/guidName|Il nome da assegnare al simbolo GUID per tutte le immagini nel manifesto generato.<br /><br /> Predefinito: AssetsGuid|Facoltativo|  
 |/rootPath|Il percorso radice che devono essere rimosse prima di creare gli URI di risorsa gestita. (Questo flag è per consentire ai casi in cui lo strumento Ottiene errato, a causa di risorse a non riuscire a caricare il percorso URI relativo).<br /><br /> Impostazione predefinita: \<Directory corrente >|Facoltativo|  
-|/Recursive|L'impostazione di questo flag indica che lo strumento in modo ricorsivo tutte le directory di ricerca nell'argomento /Resources.. L'omissione di questo flag comporterà una ricerca di top-livello solo delle directory.|Facoltativo|  
+|/Recursive|L'impostazione di questo flag indica che lo strumento in modo ricorsivo tutte le directory di ricerca nell'argomento /Resources. L'omissione di questo flag comporterà una ricerca di top-livello solo delle directory.|Facoltativo|  
 |/isNative|Impostare questo flag quando l'argomento di assembly è un percorso per un assembly nativo. Quando l'argomento di assembly è il nome di un assembly gestito, omettere questo flag. (Vedere la sezione Note per ulteriori informazioni su questo flag).|Facoltativo|  
 |/newGuids|Impostare questo flag indica allo strumento per creare un nuovo valore per il simbolo GUID delle immagini anziché nel manifesto esistente con quello di unione.|Facoltativo|  
 |/newIds|Impostare questo flag indica allo strumento per creare nuovi valori di ID simbolo per ogni immagine anziché l'unione di valori del manifesto esistente.|Facoltativo|  

@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4f74912dc5233cd62a4d35465d34c70e376c1df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-in-vspackages"></a>Risorse nei pacchetti VSPackage
 È possibile incorporare le risorse localizzate in nativa dell'interfaccia utente DLL satellite, le DLL satellite gestite, o in un pacchetto VSPackage gestito se stesso.  

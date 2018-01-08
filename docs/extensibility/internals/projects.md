@@ -18,16 +18,17 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c175d85b55734df841f30d131639c3bfeed40361
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projects"></a>Progetti
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare i file del codice sorgente e altre risorse che vengono visualizzati in **Esplora**. In genere, i progetti sono file (ad esempio, un file con estensione csproj per un progetto c#) che archiviano i riferimenti ai file del codice sorgente e alle risorse come file bitmap. Progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente, i riferimenti a servizi Web e database e altre risorse. Pacchetti VSPackage possono estendere il sistema del progetto di Visual Studio in tre modi principali: *tipi di progetto*, *sottotipi di progetto*, e *strumenti personalizzati*.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
  *Tipi di progetto* aggiungere il supporto per nuovi tipi di progetti, ad esempio linguaggi di programmazione. Ad esempio, ogni linguaggio che supporta Visual Studio ha un proprio tipo di progetto e l'esempio di integrazione di IronPython include un tipo di progetto per la lingua di IronPython. È necessario creare un tipo di progetto per linguaggi diversi da c# o Visual Basic per personalizzare come elementi sono compilati, eseguire il debug, distribuiti e visualizzati in **Esplora**. Per ulteriori informazioni, vedere [tipi di progetto](../../extensibility/internals/project-types.md).  
   

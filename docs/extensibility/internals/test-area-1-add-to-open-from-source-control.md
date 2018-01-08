@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 Questo controllo del codice sorgente plug-in di test viene illustrata l'area immissione soluzioni o progetti nel controllo del codice sorgente e vengono recuperati dal controllo del codice sorgente.  
@@ -60,7 +61,7 @@ Questo controllo del codice sorgente plug-in di test viene illustrata l'area imm
 ### <a name="case-1a-add-solution-to-source-control"></a>Caso 1a: Aggiungi soluzione al controllo del codice sorgente  
  Questo test case è incentrata sull'aggiunta di soluzioni al controllo del codice sorgente.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Aggiungere una soluzione contenente un progetto di client di controllo del codice sorgente|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|Soluzione/progetto è stato aggiunto al controllo del codice sorgente.|  
 |Aggiungere una soluzione contenente un File System o un progetto Web IIS locale al controllo del codice sorgente|1.  Creare un File System o un progetto Web IIS locale (clic sul pulsante Sfoglia per puntare al percorso del progetto; il percorso determina il tipo di progetto Web viene creato).<br />2.  Aggiungere la soluzione al controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|Soluzione/progetto è stato aggiunto al controllo del codice sorgente.|  
@@ -71,7 +72,7 @@ Questo controllo del codice sorgente plug-in di test viene illustrata l'area imm
 ### <a name="case-1b-open-solution-from-source-control"></a>1b case. Apri soluzione dal controllo del codice sorgente  
  Questo test case è incentrata sull'apertura di soluzioni dal controllo del codice sorgente.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Aprire una soluzione contenente un progetto client dal controllo del codice sorgente|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|Soluzione/progetto aperto dal controllo del codice sorgente.|  
 |Aprire una soluzione contenente un locale o un progetto Web di IIS dal controllo del codice sorgente|1.  Creare un progetto Web di IIS locale.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Aprire la soluzione dal controllo del codice sorgente in un nuovo percorso.|Soluzione/progetto aperto dal controllo del codice sorgente.|  
@@ -80,7 +81,7 @@ Questo controllo del codice sorgente plug-in di test viene illustrata l'area imm
 ### <a name="case-1c-add-solution-from-source-control"></a>Caso c 1: aggiungere una soluzione dal controllo del codice sorgente  
  Questo test case è incentrata sull'aggiunta di soluzioni dal controllo del codice sorgente.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Aggiungere alla soluzione vuota, ovvero una singolo progetto soluzione|1.  Creare una singolo progetto soluzione.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare una seconda soluzione vuota.<br />5.  Aggiungere la soluzione in precedenza è controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato **Esplora** e viene archiviato.|  
 |Aggiungere alla soluzione con singolo progetto, ovvero unico progetto|1.  Creare una soluzione con un singolo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare una seconda soluzione vuota.<br />5.  Aggiungere la soluzione in precedenza è controllata dal controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato **Esplora** e viene archiviato.|  

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010ec576fe8d1cd52c82165793324eede0da9e6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio Legacy
 Struttura consente di comprimere un programma complesso in un panoramica o struttura. Ad esempio, in c# tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Inoltre, strutture e classi possono essere compressi per mostrare solo i nomi delle classi e strutture. All'interno di un singolo metodo, una logica complessa può essere compressi per mostrare il flusso complessivo mostrando solo la prima riga di istruzioni, ad esempio `foreach`, `if`, e `while`.  

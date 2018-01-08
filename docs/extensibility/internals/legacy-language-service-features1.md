@@ -13,16 +13,17 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc29529c7ba499cdc7291078774b9f546a3a08ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 12acd0690c11e61baedf358dec193e4f6da601e8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-features"></a>Funzionalità del linguaggio legacy
 Un servizio di linguaggio di pacchetto gestito (MPF) framework può supportare uno o più [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità, ad esempio l'evidenziazione della sintassi, IntelliSense e convalida del punto di interruzione. Ogni funzionalità può essere implementata indipendente dagli altri, ma tutti richiedono un parser e uno scanner, ad eccezione di evidenziazione della sintassi, che richiede solo uno scanner.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Corrispondenza parentesi graffe in un servizio di linguaggio legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
  Vengono descritte le funzionalità necessarie per supportare la coppia di lingue corrispondenti, noto anche come corrispondenza parentesi graffe.  
   

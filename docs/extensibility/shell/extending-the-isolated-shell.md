@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063a569ff047b3febd2608cb3c1e0003f40f7785
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 04257a6ea4bfb3dbe788ba48ee3077b1847b000d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-isolated-shell"></a>Estensione Shell isolata
 È possibile estendere la shell di Visual Studio isolated mediante l'aggiunta di un pacchetto VSPackage, un componente Managed Extensibility Framework (MEF) o un progetto VSIX generico per l'applicazione shell isolata.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  Aggiungere un progetto di pacchetto di Visual Studio denominato `MenuCommandsPackage`.  
   
-2.  Nel **informazioni VSPackage di base** pagina della procedura guidata, impostare **nome società** a `Fabrikam` e **nome VSPackage** a `FabrikamMenuCommands`. Scegliere il **Avanti** pulsante.  
+2.  Nel **informazioni VSPackage di base** pagina della procedura guidata, impostare **nome società** a `Fabrikam` e **nome VSPackage** a `FabrikamMenuCommands`. Fare clic su **Avanti**.  
   
 3.  Nella pagina successiva, selezionare **comando di Menu** e quindi scegliere **Avanti**.  
   

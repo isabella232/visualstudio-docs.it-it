@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74fa1e1d23725af1041d9c635a768b7667b3b888
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2159e0be2f54929e28a45215588515a522b542e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrata)
 La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (IDE), debugger e l'integrazione del controllo codice sorgente. Nessun linguaggio di programmazione è incluso. Tuttavia, la shell integrata fornisce un framework che consente di aggiungere i linguaggi di programmazione.  
@@ -46,7 +47,7 @@ La shell integrata di Visual Studio include l'ambiente di sviluppo integrato (ID
 |Debugger|-Debug locale. Vedere la nota 2.<br />-Il debug gestito<br />-Debug locale<br />-Connetti a processo locale<br />-Connetti a processo remoto<br />-Delegato anonimo<br />-Domini applicazione<br />-Debug ASPX<br />-Gli attributi<br />-Interrompere la valutazione con Func<br />-I punti di interruzione<br />-Vincoli punto di interruzione<br />-Stack di chiamate<br />-   **Comando** finestra<br />-Debug Cross-thread<br />-I suggerimenti dati<br />-Visualizzatore dati<br />-Supporto del debugger per assistenti al debug gestiti (MDA)<br />-Supporto del debugger per server d'inoltro<br />-Supporto DTEEvents per OTB<br />-Gestore di JMC istruzioni<br />-Test AppID debugger (DBGCLR)<br />-Profilo debugger<br />-Del debugger strumenti e opzioni<br />-Debug iteratore<br />-Valutazione delle espressioni fase di progettazione<br />-C# l'analizzatore di espressioni<br />-Disassembly<br />-Modifica e continuazione<br />-Windows dell'analizzatore di espressioni expression (espressioni di controllo, variabili locali, Auto)<br />-Supporto eccezioni<br />: Eccezioni<br />-Esecuzione<br />- Generics<br />-Recupero origine corretta<br />-Debug/Cluster HPC<br />-Integrato debug multilingue<br />-Debug interoperabilità<br />Debug just-in-time<br />-Debug locale<br />-Il debug gestito<br />-Controllo manuale (finestra processi)<br />-Memoria<br />-Supporto miniDump<br />-I moduli<br />-Debug multiprocesso<br />-Debug nativo<br />-Supporto del motore di debug nuovo<br />-Il debug del codice ottimizzato<br />-La finestra di output applicazione di filtri<br />-Processo di hosting per il debug gestito<br />-Processi<br />-Controllo immediato<br />-Registri<br />-Registri nello stack<br />-Debug remote<br />-I valori restituiti<br />: Il debug degli script<br />-Supporto del servizio origine<br />-Sicurezza<br />Side-by-side<br />-SQL<br />: Server di simboli<br />-Punti di traccia<br />-Thread<br />-Visualizzazioni<br />-Debugger di extensible Stylesheet Language Transformations (XSLT)|  
 |Supporto a 64 bit|-debug a 64 bit per codice gestito e nativo, tutte le lingue<br />-supporto x64 nativo|  
 |Controllo del codice sorgente (SCC)|-Integrazione di controllo del codice sorgente di base. Vedere la nota 3.<br />-Strumenti e le opzioni di verifica|  
-|Extensibility|-Utilizzo VSPackage e MEF componenti|  
+|Estendibilità|-Utilizzo VSPackage e MEF componenti|  
   
 ## <a name="notes"></a>Note  
   

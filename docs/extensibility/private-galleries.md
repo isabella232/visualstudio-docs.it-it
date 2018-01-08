@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c58ce16489c02475a7d76327e9df19a6022109a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5226ff7a4ed77333d2a6f9287f129c6a6d754cac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="private-galleries"></a>Private Galleries
 È possibile condividere i controlli, modelli e strumenti che si sviluppano inserendoli in un *raccolta privata* sulla rete intranet per l'organizzazione, come indicato di seguito:  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Nel **ambiente** nodo, seleziona **estensioni e aggiornamenti**.  
   
-3.  Scegliere il pulsante **Aggiungi** .  
+3.  Scegliere il pulsante **Aggiungi**.  
   
 4.  Nel **nome** immettere un nome per la raccolta privata, ad esempio, `My Gallery`.  
   

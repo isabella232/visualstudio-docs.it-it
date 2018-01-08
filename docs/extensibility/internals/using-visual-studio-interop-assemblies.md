@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 298caf0b1c65ecb3612b927859b4d7d01720fc27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Tramite assembly di interoperabilità di Visual Studio
 Assembly di interoperabilità Visual Studio consentono alle applicazioni gestite per l'accesso alle interfacce COM che forniscono l'estensibilità di Visual Studio. Esistono alcune differenze tra le interfacce COM e le versioni di interoperabilità. Ad esempio, HRESULT in genere vengono rappresentati come valori int e devono essere gestiti nello stesso modo come eccezioni, e i parametri (in particolare i parametri out) vengono considerati in modo diverso.  

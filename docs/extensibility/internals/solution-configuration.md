@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 Le configurazioni di soluzione archiviano le proprietà a livello di soluzione. Indicano il comportamento del **avviare** chiave (F5) e **compilare** comandi. Per impostazione predefinita, questi comandi compilare e avviare la configurazione di debug. Entrambi i comandi vengono eseguite nel contesto di una configurazione di soluzione. Ciò significa che l'utente potrà quindi aspettarsi F5 per avviare e qualsiasi soluzione attiva viene configurata tramite le impostazioni di compilazione. L'ambiente è progettato per ottimizzare per soluzioni anziché ai progetti per quanto riguarda la creazione e l'esecuzione.  
@@ -51,7 +52,7 @@ Le configurazioni di soluzione archiviano le proprietà a livello di soluzione. 
   
      Specifica se il progetto viene compilato dalla configurazione della soluzione corrente. Progetti non selezionati non vengono generati quando vengono richiamati i comandi di compilazione a livello di soluzione nonostante tutte le dipendenze di progetto che contengono. Progetti non selezionati per essere compilato sono ancora inclusi nel debug, esecuzione, l'assemblaggio e distribuzione della soluzione.  
   
--   Distribuisci  
+-   Distribuzione  
   
      Specifica se il progetto verrà distribuito quando vengono utilizzati i comandi di avvio o distribuire con la configurazione di compilazione della soluzione selezionata. La casella di controllo per questo campo sarà disponibile se il progetto supporta la distribuzione mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia relativo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> oggetto.  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4fef2c76364c1ca1398aef3b94226e7a9a365cf1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandi che devono essere eseguiti dopo l'installazione
 Se si distribuisce l'estensione tramite un file con estensione msi, è necessario eseguire `devenv /setup` come parte dell'installazione nell'ordine per Visual Studio individuare le estensioni.  
@@ -30,7 +31,7 @@ Se si distribuisce l'estensione tramite un file con estensione msi, è necessari
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Righe della tabella RegLocator individuare devenv.exe da diverse versioni di Visual Studio  
   
-|Signature_|radice|Chiave|Nome|Tipo|  
+|Signature_|radice|Chiave|nome|Tipo|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
@@ -59,7 +60,7 @@ Se si distribuisce l'estensione tramite un file con estensione msi, è necessari
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>CustomAction righe della tabella per l'esecuzione di devenv.exe  
   
-|Azione|Tipo|Origine|destinazione|  
+|Operazione|Tipo|Origine|destinazione|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|  
@@ -75,7 +76,7 @@ Se si distribuisce l'estensione tramite un file con estensione msi, è necessari
   
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Nella tabella per pianificare le azioni personalizzate devenv.exe InstallExecuteSequence  
   
-|Azione|Condizione|Sequence|  
+|Operazione|Condizione|Sequence|  
 |------------|---------------|--------------|  
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|  
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|  

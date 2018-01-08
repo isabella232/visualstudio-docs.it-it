@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fc82041f8ab2790c63c271f85d573a3105ab8b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e02d4ad31a4877dd88dca941c06e38f7eeac82f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-xml-schema-reference"></a>Riferimento allo Schema XML VSCT
 Fornisce una tabella di elementi dello schema di comando del compilatore di tabella, con figlio consentito elementi e attributi per ognuno.  

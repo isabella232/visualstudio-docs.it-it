@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f4056e778e7d8f6aa62e84b03897c810160fa41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e80b947b2d4d20692e0abceae0ffa36e64f2b0df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolata di Visual Studio
 La shell isolata di Visual Studio consente di creare applicazioni autonome che è possono eseguire side-by-side con altre versioni di Visual Studio. È principalmente per ospitare strumenti specializzati che è possono utilizzare i servizi di Visual Studio, ma anche avere un aspetto personalizzato e personalizzazione. Funzionalità di Visual Studio e i gruppi di comandi di menu possono essere facilmente attivati e disattivati. I titoli di applicazioni, applicazione icone e schermate iniziali sono completamente personalizzabili. Per un elenco delle funzionalità personalizzabile, vedere [personalizzazione Shell isolata](customizing-the-isolated-shell.md).  
@@ -62,7 +63,7 @@ La shell isolata di Visual Studio consente di creare applicazioni autonome che �
 |Debug|Analizzatore di espressioni c#<br /><br /> Il debug locale<br /><br /> Il debug gestito<br /><br /> Modifica e continuazione<br /><br /> Debug di cross-thread<br /><br /> Visualizzazioni<br /><br /> DataTips<br /><br /> Debug nativo<br /><br /> Il debug degli script<br /><br /> Debug di interoperabilità<br /><br /> Il debug Just-in-time (JIT)<br /><br /> Debug multiprocesso<br /><br /> Il debug di XSLT<br /><br /> Connetti a processo locale<br /><br /> Punti di traccia<br /><br /> Vincoli di punto di interruzione|  
 |Dati|Esplora server (semplificato - solo i dati)<br /><br /> Associare dati ai dati locali (. MDF o. MDB)<br /><br /> Associazione dati per oggetto<br /><br /> Associazione dei dati al servizio Web<br /><br /> Set completo di controlli dati<br /><br /> Editor XML<br /><br /> Associazione dei dati al server di database locale<br /><br /> Finestra Origini dati|  
 |Web|Editor HTML<br /><br /> Web browser<br /><br /> Progettazione Web Form<br /><br /> Progetto di sito Web<br /><br /> Progetto di applicazione Web|  
-|Extensibility|Utilizza i componenti di VSPackage e MEF|  
+|Estendibilità|Utilizza i componenti di VSPackage e MEF|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Shell (isolata o integrata)](shell-isolated-or-integrated.md)

@@ -13,16 +13,17 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 985a174955ac96c37cc4f50e4550f7186d3f80c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 672ce7f47dc8478343f336ed06757af109a5ecce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control"></a>Controllo del codice sorgente
 In questa sezione vengono descritte le opzioni per l'implementazione del controllo del codice sorgente come una funzionalità integrata di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], tramite un plug-in controllo del codice sorgente o di un controllo del codice sorgente VSPackage.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Essentials](../../extensibility/internals/source-control-integration-essentials.md)  
  Visualizza le informazioni importanti che è necessario disporre per iniziare a lavorare con controllo del codice sorgente.  
   

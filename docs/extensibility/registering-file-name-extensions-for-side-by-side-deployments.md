@@ -13,16 +13,17 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42c1c573554ee6d92b3967517bdcdf0f3106ce61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 457f9e5303c71d73467815b581c091dc239c1b63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Registrazione di estensioni di File per le distribuzioni Side-By-Side
 Per pacchetti VSPackage distribuiti in un ambiente side-by-side, è necessario registrare le estensioni di file per associare i file con la versione corretta di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. A meno che non si utilizza un'estensione di file specifici della versione, la registrazione consente agli utenti di aprire il progetto e file di elementi in una versione appropriata di progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Informazioni sulle estensioni di file](../extensibility/about-file-name-extensions.md)  
  Viene descritto come estensioni di file registrate.  
   

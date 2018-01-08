@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Utilizzo degli indicatori di testo con l'API Legacy
 Un indicatore di testo è un intervallo di testo in un buffer che può influenzare la visualizzazione a virgola mobile e il comportamento di un'area di testo. Marcatori di includono i punti di interruzione, segnalibri, sottolineature ondulate di colore e le aree di sola lettura. I marcatori di testo sono fondamentalmente diversi da colorazione della sintassi. La colorazione della sintassi è un modo rapido per comunicare la sintassi del linguaggio che è associata a un'area di testo. La colorazione della sintassi in genere è richiesta quando Windows ridisegna la schermata, quando la velocità è importante. La colorazione della sintassi cambia solo il colore del testo. Marcatori di testo è possono modificare molte altre proprietà di testo. Marcatori di testo è possono "float" e applicare un comportamento speciale e la colorazione.  
@@ -38,7 +39,7 @@ Un indicatore di testo è un intervallo di testo in un buffer che può influenza
 |[Nell'Editor di componenti di base](../extensibility/inside-the-core-editor.md)|Vengono descritte le funzionalità dell'editor di componenti di base e vengono fornite informazioni dettagliate su come personalizzare l'editor di componenti di base.|  
 |[Funzionalità dell'editor](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Vengono descritte le funzionalità disponibili nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale.|  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
  Fornisce un meccanismo uniforme per ottenere informazioni su un tipo di marcatore di testo specifico, se predefiniti dall'editor o registrato da un pacchetto VSPackage.  
   

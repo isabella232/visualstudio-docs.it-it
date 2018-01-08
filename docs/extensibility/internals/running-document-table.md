@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf66dce40cda2d72757c3a2fe141ed023b286d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-document-table"></a>Tabella documenti in esecuzione
 L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura interna denominata tabella document (RDT) in esecuzione. Questo elenco include tutti i documenti aperti in memoria, indipendentemente dal fatto che tali documenti sono in corso di modifica. Un documento è un elemento in modo permanente, inclusi i file in un progetto o file di progetto principale (ad esempio, un file con estensione vcxproj).  

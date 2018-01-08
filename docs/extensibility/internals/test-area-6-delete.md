@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a8949135bb7354ba0279ac1b6c2f0ba99fb1b2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 204038ac7a86c0b458ea08c2f4bd2c6a4dffe7cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-6-delete"></a>Test Area 6: eliminare
 Questa area di plug-in test di controllo del codice sorgente vengono illustrate le azioni di eliminazione.  
@@ -47,7 +48,7 @@ Questa area di plug-in test di controllo del codice sorgente vengono illustrate 
   
 -   L'elemento è ancora presente all'interno dell'archivio del controllo origine, anche dopo l'eliminazione e deve essere eliminato manualmente.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Eliminare un progetto client|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Rimuovere l'intero progetto dalla soluzione|Comportamento previsto comune.|  
 |Eliminare un file vuoto|1.  Creare un progetto client.<br />2.  Aggiungere un file di zero byte per il progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Selezionare il file, eliminarlo.|Comportamento previsto comune.|  

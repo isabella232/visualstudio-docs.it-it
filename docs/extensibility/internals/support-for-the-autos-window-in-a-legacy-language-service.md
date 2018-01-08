@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c824845d4cbdb58241c088c1cb30259d3c298f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: db6be625c671a508be3c2fd2f1697282af282bdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Supporto per la finestra Auto in un servizio di linguaggio Legacy
 Il **Auto** finestra vengono visualizzate le espressioni, ad esempio variabili e parametri che sono nell'ambito quando il programma in fase di debug è stato sospeso (a causa di un punto di interruzione o un'eccezione). Le espressioni possono includere variabili, locale o globale e i parametri che sono stati modificati nell'ambito locale. Il **Auto** finestra può includere anche creazioni di istanza di una classe, struttura o un altro tipo. Tutto ciò che un analizzatore di espressioni può valutare potenzialmente possono essere visualizzati nel **Auto** finestra.  

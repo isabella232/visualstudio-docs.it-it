@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8490ddefaca1d170c1dbf379364cdf91b41b7803
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4e81409f8ac93c80bf16b5040c6f388b64ffabbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-editor-and-language-services"></a>Estensione dell'Editor e i servizi di linguaggio
 È possibile estendere la maggior parte delle funzionalità dell'editor di codice di Visual Studio e aggiungere funzionalità del linguaggio (ad esempio IntelliSense) per il proprio editor.  Per un elenco completo di ciò che è possibile estendere, vedere [servizio di linguaggio e i punti di estensione di Editor](../extensibility/language-service-and-editor-extension-points.md).  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 |[Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe](../extensibility/walkthrough-displaying-matching-braces.md)|Viene illustrato come evidenziare parentesi graffe corrispondenti.|  
 |[Procedura dettagliata: Visualizzazione delle informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Viene illustrato come visualizzare i popup informazioni rapide che descrivono gli elementi di codice, ad esempio proprietà, metodi ed eventi.|  
 |[Procedura dettagliata: Visualizzazione della funzionalità di supporto alla firma](../extensibility/walkthrough-displaying-signature-help.md)|Viene illustrato come visualizzare i popup che offrono informazioni relative a numero e tipi di parametri in una firma.|  
-|[Walkthrough: Displaying Statement Completion](../extensibility/walkthrough-displaying-statement-completion.md) (Procedura dettagliata: Visualizzazione del completamento istruzioni)|Viene illustrato come implementare il completamento delle istruzioni.|  
+|[Procedura dettagliata: Visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)|Viene illustrato come implementare il completamento delle istruzioni.|  
 |[Procedura dettagliata: Implementazione di frammenti di codice](../extensibility/walkthrough-implementing-code-snippets.md)|Viene illustrato come implementare l'espansione del frammento di codice.|  
 |[Procedura dettagliata: Visualizzazione dei suggerimenti delle icone lampadina](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Viene illustrato come visualizzare le lampadine per i suggerimenti di codice.|  
 |[Procedura dettagliata: Uso di un comando della shell con un'estensione dell'editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Viene illustrato come associare un comando di menu in un pacchetto VSPackage a un componente MEF.|  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Vengono fornite informazioni su Managed Extensibility Framework (MEF).|  
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Vengono fornite informazioni su Windows Presentation Foundation (WPF).|  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  L'editor di Visual Studio include i seguenti spazi dei nomi.  
   
  <xref:Microsoft.VisualStudio.Language.Intellisense>  

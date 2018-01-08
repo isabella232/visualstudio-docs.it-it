@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a34a964450931071a290764074f4e955fe19aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support"></a>Sito Web di supporto
 Un sistema di progetto di sito Web è un sistema di progetto che consente di creare progetti Web. Progetti Web consentono di creare applicazioni Web. Un progetto di sito Web genera un file eseguibile per ogni pagina Web che contiene il codice associato. File eseguibile aggiuntivi vengono generati dal file di codice sorgente nella cartella /App_Code.  
@@ -30,7 +31,7 @@ Un sistema di progetto di sito Web è un sistema di progetto che consente di cre
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  
 ```  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Modelli di supporto per siti Web](../../extensibility/internals/web-site-support-templates.md)  
  Vengono elencati i modelli che è possibile utilizzare per creare nuovi progetti di sito Web e gli elementi associati.  
   

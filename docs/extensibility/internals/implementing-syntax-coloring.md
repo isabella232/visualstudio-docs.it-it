@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione di colorazione della sintassi
 Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di colori e restituisce i tipi di token corrispondenti a questi elementi colorabili. Il parser deve restituire i tipi di token che appartengono a un elenco di colori. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Consente di visualizzare ogni elemento colorabile predefinito nella finestra del codice in base agli attributi assegnati per l'oggetto di rappresentazione per il tipo di token appropriato.  

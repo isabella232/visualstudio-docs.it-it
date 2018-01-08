@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05805e5cf4b21f4c7d233cab7dd8421ee76f626f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-overview"></a>Cenni preliminari sul servizio di linguaggio legacy
 Un servizio di linguaggio fornisce il supporto di editor che consente di implementare determinati [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio del file system distribuito (MPF, Managed Package Framework) forniscono il supporto completo per le funzionalità di frequente e supporto parziale per altre funzionalità.  

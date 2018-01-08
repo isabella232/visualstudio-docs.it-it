@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13f4d254027fe168018fe597f772518bd8ac6b94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Che contribuiscono a di dialogo Aggiungi nuovo elemento
 Un sottotipo di progetto può fornire una nuova directory completezza di elementi per il **Aggiungi nuovo elemento** la finestra di dialogo registrando **Aggiungi elemento** modelli sotto il `Projects` sottochiave del Registro di sistema.  

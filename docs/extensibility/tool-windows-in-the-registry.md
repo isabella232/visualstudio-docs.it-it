@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b4415a24a7440a2d3725fb1183863e7a337bbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d3277a4e24b12d409654548b5670a4d47fa9539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-windows-in-the-registry"></a>Finestre degli strumenti nel Registro di sistema
 Pacchetti VSPackage che forniscono le finestre degli strumenti è necessario registrare con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] come strumento di provider di finestra. Finestre degli strumenti create utilizzando il modello di pacchetto di Visual Studio per tale scopo, per impostazione predefinita. Provider di finestra di strumento dispone di chiavi di registro di sistema che specificano gli attributi di visibilità, ad esempio dimensione predefinita della finestra dello strumento e la posizione, il GUID della finestra che viene utilizzato come il riquadro della finestra dello strumento e lo stile di ancoraggio.  

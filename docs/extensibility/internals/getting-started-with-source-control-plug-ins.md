@@ -15,18 +15,19 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ccbc7536a899226b7f2d9433b6c451df33bbde5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 197cc0f0997e80d6cae277c4b19c5bbc82dce805
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Introduzione al Plug-in del controllo codice sorgente
 Per creare plug-in un controllo del codice sorgente, è necessario creare una DLL che implementa le funzioni definite nell'API di plug-in controllo di origine, quindi registrare la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per renderlo disponibile per l'utilizzo nel controllo di versione del codice sorgente.  
   
  Tre versioni dell'API di plug-in controllo di origine (versioni 1.1, 1.2 e 1.3) sono disponibili per i plug-in del controllo codice sorgente. L'API plug-in controllo origine documentato qui è la versione 1.3. È stato progettato per essere completamente compatibili con plug-in del controllo codice sorgente che supporta le versioni 1.1 e 1.2. Il [novità nella versione 1.3 di origine controllo plug-in API](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) sezione illustra nel dettaglio le nuove funzionalità supportate nella versione più recente dell'API plug-in controllo di origine.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  Viene descritto come rendere le voci del Registro di sistema necessarie per collegare un controllo del codice sorgente DLL.  
   

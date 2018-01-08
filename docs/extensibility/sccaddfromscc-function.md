@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5027e765e12ff483a9a27795990f0ddfbb479a5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc (funzione)
 Questa funzione consente di individuare i file già presenti nel sistema di controllo di origine e successivamente rendere tali parte i file del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comune nel progetto corrente senza la copia del file. La matrice restituita di file, `lplpFileNames`, contiene l'elenco di file che l'utente desidera aggiungere al progetto IDE.  

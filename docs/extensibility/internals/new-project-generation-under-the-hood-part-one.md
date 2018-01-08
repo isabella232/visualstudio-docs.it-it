@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nuova generazione del progetto: Dietro le quinte, parte 1
 Mai pensato di come creare un tipo di progetto? Chiedere a ciò che effettivamente si verifica quando si crea un nuovo progetto? Si analizzerà dietro le quinte e vedere cosa accade veramente in.  
@@ -91,7 +92,7 @@ devenv /installvstemplates
  Minore è il numero di priorità, maggiore è la posizione nell'albero.  
   
 ##### <a name="developeractivity"></a>DeveloperActivity  
- Se questa sottochiave è presente, la posizione del nodo radice è controllata nella finestra di dialogo Impostazioni per sviluppatori. Di seguito è riportato un esempio:  
+ Se questa sottochiave è presente, la posizione del nodo radice è controllata nella finestra di dialogo Impostazioni per sviluppatori. Ad esempio,  
   
  REG_SZ DeveloperActivity VC #  
   

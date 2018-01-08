@@ -18,16 +18,17 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-fonts-and-colors"></a>Utilizzo di tipi di carattere e colori
 Il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornisce il supporto per l'utilizzo di tipi di carattere e colori per visualizzare il testo.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Panoramica di colore e tipo di carattere](../extensibility/font-and-color-overview.md)  
  Vengono illustrate le impostazioni di carattere e colori testo nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Inoltre vengono presentati i concetti di categorie e di elementi visualizzati e viene descritto come i pacchetti VSPackage e l'editor di componenti di base utilizzare attributi di testo.  
   
@@ -45,7 +46,7 @@ Il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornisce il supp
  [Procedura: accedere ai tipi di carattere incorporati e una combinazione di colori](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Viene descritto come definire e registrare una categoria utilizzando colori e tipi di carattere incorporati e avviare l'utilizzo di fornita dal sistema di tipi di carattere e colori.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
  Fornisce un'istanza del `IVsFontAndColorDefaults` o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interfaccia che corrisponde a un particolare elemento nel **Mostra impostazioni per** nell'elenco di **tipi di carattere e colori** pagina della finestra di **Opzioni** la finestra di dialogo.  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35b36c357c9b98d81627eea0d511b0b4fd49f693
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88720010c178fb1ca3a4c2425002f5f34e26e777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-display-grid"></a>Griglia di visualizzazione delle proprietà
 Il **proprietà** finestra vengono visualizzati i campi all'interno di una griglia. La colonna a sinistra contiene i nomi delle proprietà; la colonna di destra contiene i valori delle proprietà.  

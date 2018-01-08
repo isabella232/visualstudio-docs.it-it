@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab02b65e4a40f15da857038a45d9bcc2b88b1b83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: installare un plug-in controllo del codice sorgente
 Creazione di plug-in un controllo origine prevede tre passaggi:  
@@ -40,7 +41,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
   
 1.  Aggiungere due voci nella chiave HKEY_LOCAL_MACHINE nella sottochiave SOFTWARE che specifica la sottochiave nome società aggiungendo la sottochiave nome prodotto. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\\*[nome società]*\\*[nome prodotto]*\\*[entry]* = valore. Le due voci vengono sempre chiamate SCCServerName e SCCServerPath. Ognuno è una stringa normale.  
   
-     Ad esempio, se il nome della società è Microsoft e il controllo del codice sorgente denominato SourceSafe, tale percorso del Registro di sistema è HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe.. Questa sottochiave, la prima voce, SCCServerName, è una stringa leggibile dall'utente denominazione del prodotto. La seconda voce, SCCServerPath, è il percorso completo all'origine del controllo DLL plug-in cui deve connettersi l'IDE. Nelle sezioni che seguono vengono fornite le voci del Registro di sistema di esempio:  
+     Ad esempio, se il nome della società è Microsoft e il controllo del codice sorgente denominato SourceSafe, tale percorso del Registro di sistema è HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe. Questa sottochiave, la prima voce, SCCServerName, è una stringa leggibile dall'utente denominazione del prodotto. La seconda voce, SCCServerPath, è il percorso completo all'origine del controllo DLL plug-in cui deve connettersi l'IDE. Nelle sezioni che seguono vengono fornite le voci del Registro di sistema di esempio:  
   
     |Voce del Registro di sistema di esempio|Valore di esempio|  
     |---------------------------|------------------|  

@@ -18,16 +18,17 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08502ab2e1161d753323642589ed00b00ed94ad2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95675f420284b9d67a6d36ac30b3e71f085e565
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Ottimizzazione di Menu e comandi della barra degli strumenti
 L'aggiunta di pacchetti VSPackage e i comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe causare una talmente dell'interfaccia utente. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce metodi per ridurre al minimo la confusione comando dell'interfaccia utente.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Miglioramento della disponibilità dei comandi](../../extensibility/internals/making-commands-available.md)  
  Fornisce linee guida generali per ridurre al minimo affollare del [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente quando si aggiungono pacchetti VSPackage.  
   

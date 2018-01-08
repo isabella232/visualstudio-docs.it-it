@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Interazioni di finestra  
@@ -344,7 +345,7 @@ Per ottenere una progettazione ottimale e funzionalità con le finestre di dialo
   
 Per linee guida di layout specifiche, vedere [Layout per Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
-#### <a name="size"></a>Dimensioni  
+#### <a name="size"></a>Dimensione  
 Le finestre di dialogo deve adattarsi all'interno di una risoluzione dello schermo di 1024 x 768 minimo e dimensioni di finestra di dialogo iniziale non devono superare i 900 x 700 pixel. Le finestre di dialogo possono essere ridimensionati, ma non è un requisito.  
   
 Esistono due indicazioni seguenti per le finestre di dialogo ridimensionabili:  
@@ -502,56 +503,56 @@ L'utente deve essere sempre in grado di determinare l'effetto di un'operazione d
 #### <a name="reference-based-projects"></a>progetti di tipo riferimento  
  Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine selezionato per i progetti di destinazione in base a cui fa riferimento:  
   
-| Modificatore | Categoria | Elemento di origine: / collegamento di riferimento | Elemento di origine: fisico elemento o un file system (`CF_HDROP`) |  
+| Modificatore | Category | Elemento di origine: / collegamento di riferimento | Elemento di origine: fisico elemento o un file system (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
-| Nessun modificatore | Azione | Move | Collegamento |  
+| Nessun modificatore | Operazione | Move | Collegamento |  
 | Nessun modificatore | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
 | Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Mantiene l'elemento originale |  
 | Nessun modificatore | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
-| Maiusc + trascinamento | Azione | Move | Nessun rilascio |  
+| Maiusc + trascinamento | Operazione | Move | Nessun rilascio |  
 | Maiusc + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Nessun rilascio |  
 | Maiusc + trascinamento | Origine | Elimina riferimento all'elemento originale | Nessun rilascio |  
 | Maiusc + trascinamento | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | Nessun rilascio |  
-| CTRL + trascinare | Azione | Copia | Nessun rilascio |  
+| CTRL + trascinare | Operazione | Copia | Nessun rilascio |  
 | CTRL + trascinare | destinazione | Aggiunge il riferimento alla voce originale | Nessun rilascio |  
 | CTRL + trascinare | Origine | Mantiene il riferimento all'elemento originale | Nessun rilascio |  
 | CTRL + trascinare | Risultato | `DROPEFFECT_COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | Nessun rilascio |  
-| CTRL + MAIUSC + trascinamento | Azione | Collegamento | Collegamento |  
+| CTRL + MAIUSC + trascinamento | Operazione | Collegamento | Collegamento |  
 | CTRL + MAIUSC + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
 | CTRL + MAIUSC + trascinamento | Origine | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |  
 | CTRL + MAIUSC + trascinamento | Risultato | `DROPEFFECT_LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
 | CTRL + MAIUSC + trascinamento | Nota | Come il comportamento di trascinamento e rilascio per i tasti di scelta rapida in Esplora risorse. ||  
-| Taglia e Incolla | Azione | Move | Collegamento |  
+| Taglia e Incolla | Operazione | Move | Collegamento |  
 | Taglia e Incolla | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
 | Taglia e Incolla | Origine | Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale |  
 | Taglia e Incolla | Risultato | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento rimane nella posizione originale nel servizio di archiviazione |  
-| Copiare e incollare | Azione | Copia | Collegamento |  
+| Copiare e incollare | Operazione | Copia | Collegamento |  
 | Copiare e incollare | Origine | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
 | Copiare e incollare | Risultato | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |  
-| Copiare e incollare | Azione | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento rimane nella posizione originale nel servizio di archiviazione |  
+| Copiare e incollare | Operazione | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento rimane nella posizione originale nel servizio di archiviazione |  
   
 #### <a name="directory-based-projects"></a>Progetti basati su directory  
 Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine selezionato per i progetti basati su directory di destinazione:  
   
-| Modificatore | Categoria | Elemento di origine: / collegamento di riferimento | Elemento di origine: fisico elemento o un file system (`CF_HDROP`) |  
+| Modificatore | Category | Elemento di origine: / collegamento di riferimento | Elemento di origine: fisico elemento o un file system (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
-| Nessun modificatore | Azione | Move | Move |  
+| Nessun modificatore | Operazione | Move | Move |  
 | Nessun modificatore | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
 | Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Elimina riferimento all'elemento originale | | Nessun modificatore | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
-| Maiusc + trascinamento | Azione | Move | Move |  
+| Maiusc + trascinamento | Operazione | Move | Move |  
 | Maiusc + trascinamento | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
 | Maiusc + trascinamento | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale |
 | Maiusc + trascinamento | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
-| CTRL + trascinare | Azione | Copia | Copia |  
+| CTRL + trascinare | Operazione | Copia | Copia |  
 | CTRL + trascinare | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
 | CTRL + trascinare | Origine | Mantiene il riferimento all'elemento originale | Mantiene il riferimento all'elemento originale |  
 | CTRL + trascinare | Risultato | `DROPEFFECT_COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
 | CTRL + MAIUSC + trascinamento | | Nessun rilascio | Nessun rilascio |  
-| Taglia e Incolla | Azione | Move | Move |  
+| Taglia e Incolla | Operazione | Move | Move |  
 | Taglia e Incolla | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
 | Taglia e Incolla | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale |  
 | Taglia e Incolla | Risultato | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento viene eliminato dalla posizione originale nel servizio di archiviazione |  
-| Copiare e incollare | Azione | Copia | Copia |  
+| Copiare e incollare | Operazione | Copia | Copia |  
 | Copiare e incollare | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |  
 | Copiare e incollare | Origine | Mantiene l'elemento originale | Mantiene l'elemento originale |  
 | Copiare e incollare | Risultato | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento rimane nell'archivio di aggiuntivi percorso originale |
@@ -559,29 +560,29 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilasci
 #### <a name="mixed-target-projects"></a>Progetti di destinazione mista  
 Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine selezionato per i progetti di destinazione mista:  
   
-| Modificatore | Categoria | Elemento di origine: / collegamento di riferimento | Elemento di origine: fisico elemento o un file system (`CF_HDROP`) |  
+| Modificatore | Category | Elemento di origine: / collegamento di riferimento | Elemento di origine: fisico elemento o un file system (`CF_HDROP`) |  
 | --- | --- | --- | --- |
-| Nessun modificatore | Azione | Move | Move |
+| Nessun modificatore | Operazione | Move | Move |
 | Nessun modificatore | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Elimina riferimento all'elemento originale |
 | Nessun modificatore | Risultato | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
-| Maiusc + trascinamento | Azione | Move | Move |
+| Maiusc + trascinamento | Operazione | Move | Move |
 | Maiusc + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | Maiusc + trascinamento | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale | 
 | Maiusc + trascinamento | Risultato | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
-| CTRL + trascinare | Azione | Copia | Copia |
+| CTRL + trascinare | Operazione | Copia | Copia |
 | CTRL + trascinare | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | CTRL + trascinare | Origine | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |
 | CTRL + trascinare | Risultato | `DROPEFFECT_ COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |
-| CTRL + MAIUSC + trascinamento | Azione | Collegamento | Collegamento |
+| CTRL + MAIUSC + trascinamento | Operazione | Collegamento | Collegamento |
 | CTRL + MAIUSC + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge riferimento all'elemento di origine originale |
 | CTRL + MAIUSC + trascinamento | Origine | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |
 | CTRL + MAIUSC + trascinamento | Risultato | `DROPEFFECT_ LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |
-| Taglia e Incolla | Azione | Move | Move |
+| Taglia e Incolla | Operazione | Move | Move |
 | Taglia e Incolla | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |
 | Taglia e Incolla | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale |
 | Taglia e Incolla | Risultato | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
-| Copiare e incollare | Azione | Copia | Copia |
+| Copiare e incollare | Operazione | Copia | Copia |
 | Copiare e incollare | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | Copiare e incollare | Origine | Mantiene l'elemento originale | Mantiene l'elemento originale |
 | Copiare e incollare | Risultato | Elemento rimane nella posizione originale nel servizio di archiviazione | Elemento rimane nella posizione originale nel servizio di archiviazione |

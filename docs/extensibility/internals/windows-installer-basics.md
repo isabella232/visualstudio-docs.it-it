@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e46f5a3b4dd320ce71dfeea1a9d4fd4650e5c3d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1a9f895db0d202dd573e7c665b1185f6e3f4b751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-installer-basics"></a>Nozioni fondamentali di Windows Installer
 Windows Installer installa e rimuove le applicazioni o i prodotti software sul computer dell'utente, queste attività in unità denominate, talvolta denominati WICs o solo i componenti, i componenti di Windows Installer. Un GUID identifica ogni WIC, ovvero l'unità fondamentale di installazione e conteggio dei riferimenti per le installazioni tramite Windows Installer.  

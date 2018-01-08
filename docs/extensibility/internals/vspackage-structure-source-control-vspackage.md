@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f8422e4333c1f1ccffc928ce9a43e4afa53cc7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struttura VSPackage (origine controllo VSPackage)
 Origine controllo pacchetto SDK fornisce indicazioni per la creazione di un VSPackage che consentono a un implementatore di controllo di origine per integrare la propria funzionalità di controllo di origine con il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente. Un VSPackage è un componente COM che in genere viene caricato su richiesta per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) in base ai servizi che vengono annunciati dal pacchetto in relative voci del Registro di sistema. Ogni pacchetto VSPackage deve implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Un VSPackage in genere utilizza i servizi offerti dal [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE e proffers alcuni servizi propri.  
@@ -45,7 +46,7 @@ Origine controllo pacchetto SDK fornisce indicazioni per la creazione di un VSPa
   
 -   Soluzioni  
   
--   Windows  
+-   WINDOWS  
   
 -   La tabella documenti in esecuzione  
   

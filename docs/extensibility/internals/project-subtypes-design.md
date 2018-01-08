@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70d16c90ad8ef4837ad9d131e46ed2027dd6c543
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes-design"></a>Sottotipi di progetto
 Sottotipi di progetto consentono VSPackage estendono progetti basati su Microsoft Build Engine (MSBuild). L'utilizzo di aggregazioni consente di riutilizzare la maggior parte del sistema del progetto principale gestite implementata in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ancora comunque personalizzare il comportamento per un determinato scenario.  

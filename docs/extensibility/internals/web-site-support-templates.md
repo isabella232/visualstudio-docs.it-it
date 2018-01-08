@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4e3d64f77064c04e131853786495c921711f2d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b17674b8cd5058ec20db4c483b2c3508aa275b29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-templates"></a>Modelli di supporto di siti Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]I modelli di progetto e di elemento di siti Web forniscono stub riutilizzabili e personalizzabili sito progetto e di elemento che consente di accelerare il processo di sviluppo, eliminando la necessità di creare nuovi progetti di sito Web e gli elementi da zero. Per ulteriori informazioni su [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelli, vedere [creazione Project and Item Templates](../../ide/creating-project-and-item-templates.md).  

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac781256ee78becf3b0cfdffbbec6f0c6bc30225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-project-essentials"></a>Essentials progetto Web
 Progetti Web creano applicazioni Web. È possibile utilizzare un progetto Web per creare un'applicazione Web che include pagine Web smart. Una pagina Web smart ha codice lato server che esegue il rendering della pagina Web richiesta.  

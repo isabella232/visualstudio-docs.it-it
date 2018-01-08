@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossario di plug-in controllo di origine
 I seguenti termini utili e le definizioni relative alla documentazione di SDK di plug-in controllo di origine.  
@@ -64,7 +65,7 @@ I seguenti termini utili e le definizioni relative alla documentazione di SDK di
  Repository  
  La copia master in un controllo origine sistema archivia la cronologia delle revisioni completo del progetto. Ogni progetto dispone di esattamente un repository.  
   
- Revision  
+ Revisione  
  Una modifica eseguito il commit nella cronologia di un file o set di file. Una revisione è uno snapshot in un progetto in continua evoluzione.  
   
 ## <a name="see-also"></a>Vedere anche  

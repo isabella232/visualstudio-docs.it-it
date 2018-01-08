@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea2f1808adcb7c8c79d2139e89e31f21a85cb694
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-element"></a>Elemento di stringhe
 L'elemento di stringhe deve contenere almeno un **ButtonText** elemento figlio. Tutti gli altri elementi figlio sono facoltativi. I caratteri XML non valido, ad esempio '&' e ' <' devono essere codificati come entità ('&amp;'e'&lt;' e così via).  
@@ -42,7 +43,7 @@ L'elemento di stringhe deve contenere almeno un **ButtonText** elemento figlio. 
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|language|Parametro facoltativo. Language = ".".|  
+|language|Facoltativo. Language = ".".|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   

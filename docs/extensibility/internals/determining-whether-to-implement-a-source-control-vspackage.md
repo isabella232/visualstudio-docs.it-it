@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88281496c2e8350f910feda7934e2b55a494243b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Per determinare se implementare un controllo di origine pacchetto VSPackage
 In questa sezione vengono illustrate le scelte del plug-in del controllo origine e di controllo del codice sorgente VSPackage per l'estensione di controllo del codice sorgente soluzioni e fornisce linee guida generali sulla scelta di un percorso di integrazione adatto.  

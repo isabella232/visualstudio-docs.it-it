@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c03df6edc54948060fa3b1f8eee264646a80f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Supporto di più versioni di Visual Studio
 Il termine *side-by-side* significa che è possibile installare e gestire più versioni di un prodotto nello stesso computer. Per pacchetti VSPackage, che significa che un utente può avere più versioni di Visual Studio installate nello stesso computer. Tuttavia, è possibile avere versioni side-by-side di VSPackage caricati in un'unica versione di Visual Studio.  
@@ -41,7 +42,7 @@ Il termine *side-by-side* significa che è possibile installare e gestire più v
     > [!NOTE]
     >  Installare una versione di Visual Studio installa anche una versione corrispondente di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Ad esempio, l'installazione di Visual Studio 2010 e Visual Studio 2012 nello stesso computer viene installato anche le versioni 4.0 e 4.5 di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], rispettivamente.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Scelta tra pacchetti VSPackage condivisi e con versione](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
  Viene descritto come risolvere i problemi di side-by-side in VSPackage.  
   

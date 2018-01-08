@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b05ff310a2e0c478b6f9be766f27731ca9f8f9ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d161b078e4001ea7f02311bbcefe4c7f1eb6b7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-event-types"></a>Tipi di eventi supportati
 Il debug di Visual Studio supporta attualmente i tipi di evento seguente:  
@@ -55,23 +56,23 @@ Il debug di Visual Studio supporta attualmente i tipi di evento seguente:
 > [!NOTE]
 >  Il [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfaccia è obbligatoria per tutti gli eventi.  
   
-|Evento|IDebugProgram2|IDebugThread2|Eventi di arresto|  
+|event|IDebugProgram2|IDebugThread2|Eventi di arresto|  
 |-----------|--------------------|-------------------|---------------------|  
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
-|[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obbligatorio|Obbligatorio|Sì|  
+|[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obbligatorio|Obbligatorio|Yes|  
 |[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
 |[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
-|[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Obbligatorio|Obbligatorio|Sì|  
+|[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Obbligatorio|Obbligatorio|Yes|  
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Obbligatorio|Obbligatorio|No|  
 |[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Non è consentito|Non è consentito|No|  
 |[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Non è consentito|Non è consentito|No|  
-|[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Obbligatorio|Obbligatorio|Sì|  
+|[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Obbligatorio|Obbligatorio|Yes|  
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|Può essere|  
-|[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Obbligatorio|Obbligatorio|Sì|  
+|[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Obbligatorio|Obbligatorio|Yes|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|Può essere|  
-|[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|Obbligatorio|Obbligatorio|Sì|  
-|[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|Obbligatorio|Obbligatorio|Sì|  
+|[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|Obbligatorio|Obbligatorio|Yes|  
+|[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|Obbligatorio|Obbligatorio|Yes|  
 |[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|Può essere|  
 |[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|Obbligatorio|È consentito, ma non obbligatorio|No|  
 |[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
@@ -80,8 +81,8 @@ Il debug di Visual Studio supporta attualmente i tipi di evento seguente:
 |[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|Obbligatorio|È consentito, ma non obbligatorio|No|  
 |[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|Obbligatorio|È consentito, ma non obbligatorio|No|  
 |[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
-|IDebugStopCompleteEvent2|Obbligatorio|Obbligatorio|Sì|  
-|[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|Obbligatorio|Obbligatorio|Sì|  
+|IDebugStopCompleteEvent2|Obbligatorio|Obbligatorio|Yes|  
+|[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|Obbligatorio|Obbligatorio|Yes|  
 |[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|È consentito, ma non obbligatorio|È consentito, ma non obbligatorio|No|  
 |[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|Obbligatorio|Obbligatorio|No|  
 |[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|Obbligatorio|Obbligatorio|No|  

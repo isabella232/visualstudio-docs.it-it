@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09e96719bd7d9a2091bf31dc343036f0312c02fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-essentials"></a>Origine di controllo di integrazione di Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]supporta due tipi di integrazione del controllo codice sorgente: plug-in controllo di origine che fornisce funzionalità di base e viene compilato utilizzando l'API plug-in controllo origine (precedentemente noto come API MSSCCI) e una soluzione di integrazione del controllo origine dati basata su VSPackage che fornisce la funzionalità più affidabile.  

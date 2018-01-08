@@ -15,16 +15,17 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a3c41646fa7424197325c48b4cd40bc7a9eb8ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b04ebb2fd28c808c742897bbf4ceb94505641e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-types"></a>Tipi di progetto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]include diversi tipi di progetto per lingue quali [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]consente anche di creare i propri tipi di progetto.  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Essentials](../../extensibility/internals/project-type-essentials.md)  
  Visualizza le informazioni importanti che è necessario disporre per iniziare a lavorare con i tipi di progetto.  
   

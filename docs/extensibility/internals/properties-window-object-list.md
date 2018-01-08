@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad79623bbc721c67c19a37436d2bf5e64b93c59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feec1e85287b3a1c24ce3c328227ba0455ae044b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-object-list"></a>Elenco di oggetti finestra delle proprietà
 Nell'elenco di oggetti nel **proprietà** finestra è un elenco di riepilogo a discesa che consente di modificare la selezione ad altri oggetti disponibili all'interno di uno o più finestre selezionate. Selezione di un oggetto diverso da all'interno dell'elenco genera una chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> per informare l'ambiente che è stato selezionato un nuovo oggetto. Le informazioni visualizzate nel **proprietà** finestra viene quindi modificata per visualizzare le proprietà associate all'oggetto selezionato.  

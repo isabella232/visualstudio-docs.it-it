@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5907f540e5f81e26b7d184352e3c38531ec5da66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb69380913f188031c97b46530ea2659fc05fe30
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-automation-model"></a>Che contribuiscono al modello di automazione
 Visual Studio fornisce un set di interfacce di automazione per personalizzare l'ambiente. Il modello di automazione è il modello a oggetti che consente agli utenti di creare componenti aggiuntivi di Visual Studio ed estensioni.  
@@ -26,7 +27,7 @@ Visual Studio fornisce un set di interfacce di automazione per personalizzare l'
   
  Per rendere l'utente finale esperienza coerente, è possibile seguire una serie di linee guida quando si progetta il pacchetto VSPackage in modo che il modello di automazione per il pacchetto VSPackage segue le idee in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Panoramica del modello di automazione](../../extensibility/internals/automation-model-overview.md)  
  Definisce il modello di automazione come correlati a un gruppo di oggetti che controllano i principali aspetti dell'ambiente comune. Questo set di oggetti è raffigurato in un diagramma del modello di automazione.  
   
@@ -57,7 +58,7 @@ Visual Studio fornisce un set di interfacce di automazione per personalizzare l'
  [Automazione per la configurazione e per gli oggetti SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)  
  Vengono fornite informazioni sull'automazione per le opzioni di configurazione e l'automazione per gli elementi selezionati.  
   
-## <a name="reference"></a>Riferimento  
+## <a name="reference"></a>Riferimenti  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
  Fornisce un esempio di codice che illustra come fa parte di un pacchetto VSPackage nel modello a oggetti di automazione DTE. Vengono elencati parametri, valori restituiti e osservazioni selezionati.  
   

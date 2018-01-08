@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf74110cf42daa51521cc7ea706c1b951b23deb8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione di estensioni di Visual Studio
 Dopo aver completato lo sviluppo dell'estensione, installarlo in altri computer, condividerle con colleghi e amici o pubblicarla in Visual Studio Marketplace. In questa sezione è spiegare tutte le operazioni necessarie per pubblicare e gestire l'estensione: utilizzo di file. VSIX, pubblicazione, localizzazione e l'aggiornamento.  
@@ -33,12 +34,12 @@ Dopo aver completato lo sviluppo dell'estensione, installarlo in altri computer,
  Il formato VSIX non supporta l'installazione di frammenti di codice. Non supporta inoltre i alcuni altri scenari quali la scrittura in Global Assembly Cache (GAC) o nel Registro di sistema. Se è necessario scrivere nella Global Assembly Cache o l'installazione del Registro di sistema, è necessario utilizzare il programma di installazione di Windows. Per ulteriori informazioni, vedere [preparazione estensioni per la distribuzione di Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md).  
   
 ## <a name="publishing-your-extension-to-the-visual-studio-marketplace"></a>Pubblicare l'estensione di Visual Studio Marketplace  
- È possibile distribuire l'estensione ad altre persone sufficiente mailing tali file. VSIX o inserire in un server. Ma il modo migliore per ottenere il codice in mani di molti utenti viene inserita la [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Sono disponibili agli utenti di Visual Studio tramite le estensioni di Visual Studio Marketplace **estensioni e aggiornamenti**. Per ulteriori informazioni, vedere [ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ È possibile distribuire l'estensione ad altre persone sufficiente mailing tali file. VSIX o inserire in un server. Ma il modo migliore per ottenere il codice in mani di molti utenti viene inserita la [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Sono disponibili agli utenti di Visual Studio tramite le estensioni di Visual Studio Marketplace **estensioni e aggiornamenti**. Per altre informazioni, vedere [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
  Per un esempio completo che illustra come caricare un'estensione di Visual Studio Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).  
   
 ## <a name="private-galleries"></a>Private Galleries  
- Durante lo sviluppo di controlli, i modelli e strumenti, è possibile condividerli con l'organizzazione inviando messaggi a una raccolta sulla rete intranet privata. Per ulteriori informazioni, vedere [gallerie Private](../extensibility/private-galleries.md).  
+ Durante lo sviluppo di controlli, i modelli e strumenti, è possibile condividerli con l'organizzazione inviando messaggi a una raccolta sulla rete intranet privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).  
   
 ## <a name="localizing-your-extension"></a>L'estensione di localizzazione  
  Se si prevede di rilasciare l'estensione nelle diverse impostazioni locali, è consigliabile, localizzazione. Per informazioni approfondite, vedere [localizzazione pacchetti VSIX](../extensibility/localizing-vsix-packages.md).  

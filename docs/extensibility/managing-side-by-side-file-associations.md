@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfb3bcca8c56ebefa665e44384df0751e71f6591
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d0a6f8ec88a49b785b771aef51dc25b5646ffda
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-side-by-side-file-associations"></a>La gestione delle associazioni di File Side-by-Side
 Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere come gestire le installazioni side-by-side in cui una particolare versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve essere richiamato per aprire un file. Formati di file compatibile composta il problema.  
@@ -51,7 +52,7 @@ Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere 
   
     ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella CustomAction determinano la versione più recente di Visual Studio  
   
-    |Azione|Tipo|Origine|destinazione|  
+    |Operazione|Tipo|Origine|destinazione|  
     |------------|----------|------------|------------|  
     |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
     |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
@@ -59,7 +60,7 @@ Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere 
   
     ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Righe della tabella InstallExecuteSequence che determinano la versione più recente di Visual Studio  
   
-    |Azione|Condizione|Sequence|  
+    |Operazione|Condizione|Sequence|  
     |------------|---------------|--------------|  
     |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 E NON (DEVENV_EXE_2003 O DEVENV_EXE_2005)|410|  
     |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NON DEVENV_EXE_2005|420|  

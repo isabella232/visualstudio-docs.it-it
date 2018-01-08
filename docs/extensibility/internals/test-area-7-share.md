@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f61a9917d484499e3cfd641f581859de01663bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-7-share"></a>Test Area 7: condivisione
 Test responsabilità Condivisione elementi tra i percorsi tramite la **condivisione** comando.  
@@ -52,7 +53,7 @@ Test responsabilità Condivisione elementi tra i percorsi tramite la **condivisi
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'area di test di condivisione.  
   
-|Azione|Passi di test|Per verificare i risultati previsti|  
+|Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Condividere un file da un progetto caricato nel controllo del codice sorgente in un altro progetto caricato|1.  Creare un nuovo progetto.<br />2.  Aggiungere un secondo progetto alla soluzione.<br />3.  Creare un file nel progetto secondo con un nome che non è nel primo progetto.<br />4.  Aggiungere la soluzione al controllo del codice sorgente.<br />5.  Selezionare il primo progetto.<br />6.  Aprire **condivisione** la finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />7.  Condividere il file dal progetto secondo al primo progetto.<br />8.  Accettare **Estrai** se richiesto.|Comportamento previsto comune.|  
 |Condividere un file da un progetto a un altro|1.  Creare un nuovo progetto.<br />2.  Aggiungerlo al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare un secondo progetto (nuova soluzione).<br />5.  Aggiungere la soluzione al controllo del codice sorgente.<br />6.  Selezionare il progetto.<br />7.  Aprire il **condivisione** la finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />8.  Condividere un file dal progetto già aggiunto al progetto aperto.<br />9. Accettare **Estrai** se richiesto.|Comportamento previsto comune.|  

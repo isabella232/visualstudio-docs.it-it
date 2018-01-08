@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti di controllo di origine
 Il modello seguente rappresenta un esempio di implementazione di un controllo di origine. Nel modello, vengono visualizzati le interfacce che è necessario implementare e i servizi di ambiente che è necessario chiamare. Ad esempio tutti i servizi, è effettivamente possibile chiamare i metodi di una determinata interfaccia che è possibile ottenere tramite il servizio. I nomi delle classi vengono identificati per rendere più semplice visualizzare l'esecuzione del controllo del codice sorgente.  
@@ -28,7 +29,7 @@ Progetto di controllo di origine di esempio
 ## <a name="interfaces"></a>Interfacce  
  È possibile implementare il codice sorgente per i nuovi tipi di progetto in Visual Studio usando l'elenco delle interfacce illustrato nella tabella seguente.  
   
-|Interfaccia|Uso|  
+|Interfaccia|Usa|  
 |---------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chiamato da editor prima di non salvare o modifica (modificato) dei file e progetti. Questa interfaccia è possibile accedere tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chiamato dai progetti per richiedere l'autorizzazione per aggiungere, rimuovere o rinominare un file o directory. Questa interfaccia viene anche chiamata da progetti per informare l'ambiente quando un componente approvati, rimuovere o rinominare l'azione è stata completata. È possibile accedere tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> servizio.|  

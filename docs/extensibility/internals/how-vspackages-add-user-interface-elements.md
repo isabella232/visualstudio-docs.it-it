@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171a31147aec5c0477d6a23e73dc0e66693b534d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come VSPackage aggiungono elementi dell'interfaccia utente
 Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esempio, menu, barre degli strumenti e finestre degli strumenti di Visual Studio tramite il file con estensione vsct.  
@@ -197,7 +198,7 @@ priority="0x0100" type="Menu">
 |Menu|[Elemento menu](../../extensibility/menus-element.md), l'IDE, altri pacchetti VSPackage|da 1 a  *n*  gruppi|0 per  *n*  gruppi|  
 |ToolBar|[Elemento menu](../../extensibility/menus-element.md), l'IDE, altri pacchetti VSPackage|L'elemento stesso|0 per  *n*  gruppi|  
 |MenuItem|[I pulsanti elemento](../../extensibility/buttons-element.md), l'IDE, altri pacchetti VSPackage|da 1 a  *n*  gruppi, l'elemento stesso|-0 per  *n*  gruppi|  
-|Pulsante|[I pulsanti elemento](../../extensibility/buttons-element.md), l'IDE, altri pacchetti VSPackage|da 1 a  *n*  gruppi, l'elemento stesso||  
+|Button|[I pulsanti elemento](../../extensibility/buttons-element.md), l'IDE, altri pacchetti VSPackage|da 1 a  *n*  gruppi, l'elemento stesso||  
 |combinata|[Elemento casella combinata](../../extensibility/combos-element.md), l'IDE, altri pacchetti VSPackage|da 1 a  *n*  gruppi, l'elemento stesso||  
   
 ### <a name="menu-command-and-group-placement"></a>Menu, comandi e posizionamento del gruppo  

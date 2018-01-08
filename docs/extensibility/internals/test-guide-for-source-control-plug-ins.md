@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55783b604e929d2e5d4cdc613befa2fbec42aec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per i test per i Plug-in del controllo codice sorgente
 In questa sezione vengono fornite indicazioni per il test di controllo del codice sorgente plug-in con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Viene fornita una panoramica completa delle aree più comuni di test, nonché alcune delle aree più complesse che possono causare problemi. Questa panoramica non intende essere un elenco completo dei test case.  

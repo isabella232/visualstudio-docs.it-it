@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfe7da717a59b114052080048e97b1d6fcdd425
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdiff-function"></a>SccDiff (funzione)
 Questa funzione consente di visualizzare (o facoltativamente solo Cerca) le differenze tra il file corrente (su disco locale) e la relativa ultima versione archiviata nell'origine del sistema di controllo.  

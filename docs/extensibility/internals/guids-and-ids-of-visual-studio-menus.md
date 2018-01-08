@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e ID dei menu di Visual Studio
 In questo argomento enumera i valori GUID e ID dei menu e gruppi nella barra dei menu di Visual Studio. Questi valori sono definiti nel file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per ulteriori informazioni, vedere [IDE-Defined comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -110,7 +111,7 @@ In questo argomento enumera i valori GUID e ID dei menu e gruppi nella barra dei
 |Codice del modulo|IDG_VS_VIEW_FORMCODE|  
 |Browser|IDG_VS_VIEW_BROWSER|  
 |Definire le visualizzazioni|IDG_VS_VIEW_DEFINEVIEWS|  
-|Windows|IDG_VS_VIEW_WINDOWS|  
+|WINDOWS|IDG_VS_VIEW_WINDOWS|  
 |Architettura di Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
 |Windows dell'organizzazione|IDG_VS_VIEW_ORG_WINDOWS|  
 |Browser del codice|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
@@ -132,7 +133,7 @@ In questo argomento enumera i valori GUID e ID dei menu e gruppi nella barra dei
 |Aggiunta|IDG_VS_PROJ_ADD|  
 |Cartella|IDG_VS_PROJ_FOLDER|  
 |Scarica/ricarica|IDG_VS_PROJ_UNLOADRELOAD|  
-|Riferimento|IDG_VS_PROJ_REFERENCE|  
+|Riferimenti|IDG_VS_PROJ_REFERENCE|  
 |Opzioni|IDG_VS_PROJ_OPTIONS|  
 |Impostazioni|IDG_VS_PROJ_SETTINGS|  
   
@@ -167,7 +168,7 @@ In questo argomento enumera i valori GUID e ID dei menu e gruppi nella barra dei
 |Dock/Nascondi|IDG_VS_DOCKHIDE|  
 |Disponi|IDG_VS_WINDOW_ARRANGE|  
 |Navigazione|IDG_VS_WINDOW_NAVIGATION|  
-|Elenco|IDG_VS_WINDOW_LIST|  
+|List|IDG_VS_WINDOW_LIST|  
   
 ### <a name="help-menu-groups"></a>Gruppi di Menu della Guida  
   
