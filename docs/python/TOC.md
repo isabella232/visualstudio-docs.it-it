@@ -20,7 +20,7 @@
 ### [Modelli di progetti Web Django](template-django.md)
 ### [Modello del servizio cloud di Azure](template-azure-cloud-service.md)
 ## [Azure SDK per Python](azure-sdk-for-python.md)
-# Procedure
+# Guide pratiche
 ## [Modifica di codice R in Visual Studio](code-editing.md)
 ### [Formattazione del codice](code-formatting.md)
 ### [Refactoring del codice](code-refactoring.md)
@@ -41,5 +41,5 @@
 ## [Profilatura](profiling.md)
 ## [Testing unità](unit-testing.md)
 ## [Uso dell'estensione Cookiecutter](cookiecutter.md)
-# Riferimento
+# Riferimenti
 ## [Opzioni](options.md)
