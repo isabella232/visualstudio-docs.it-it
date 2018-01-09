@@ -15,7 +15,7 @@
 ## [Installare Help Viewer](ide/microsoft-help-viewer-installation.md)
 ## [Riparare Visual Studio](install/repair-visual-studio.md)
 ## [Disinstallare Visual Studio](install/uninstall-visual-studio.md)
-## [Guida dell'amministratore di Visual Studio](install/visual-studio-administrator-guide.md)
+## [Guida di Visual Studio Administrator](install/visual-studio-administrator-guide.md)
 ### Usare la riga di comando
 #### [Usare i parametri della riga di comando per installare Visual Studio](install/use-command-line-parameters-to-install-visual-studio.md)
 #### [Esempi di parametri della riga di comando](install/command-line-parameter-examples.md)
@@ -35,8 +35,8 @@
 #### [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](install/tools-for-managing-visual-studio-instances.md)
 ### [Guida dell'amministratore di Help Viewer](ide/help-viewer-administrator-guide.md)
 #### [Argomenti della riga di comando per Gestione contenuto della Guida](ide/command-line-arguments-for-the-help-content-manager.md)
-#### [Override di Gestione contenuto della Guida](ide/help-content-manager-overrides.md)
-### Riferimento
+#### [Ovverride di Gestione contenuto della Guida](ide/help-content-manager-overrides.md)
+### Riferimenti
 #### [ID dei carichi di lavoro e dei componenti di Visual Studio](install/workload-and-component-ids.md)
 #### [Numeri di build e date di rilascio di Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
 ## [Installare Build Tools in un contenitore](install/build-tools-container.md)
@@ -254,23 +254,23 @@
 ### [Globalizzazione di applicazioni](ide/globalizing-applications.md)
 #### [Classi specifiche delle impostazioni cultura per Windows Form e Web Form globali](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Creazione di applicazioni in lingue bidirezionali](ide/creating-applications-in-bi-directional-languages.md)
-# Riferimento
+# Riferimenti
 ## [Novità](ide/whats-new-in-visual-studio.md)
-## Riferimenti ai modelli di Visual Studio
-### [Riferimento allo schema di modello...](extensibility/visual-studio-template-schema-reference.md)
-### [Parametri di modelli](ide/template-parameters.md)
-### [Creazione di modelli di progetti e di elementi](ide/creating-project-and-item-templates.md)
+## [Modelli di progetti e di elementi](ide/creating-project-and-item-templates.md)
+### [Individuare e organizzare modelli di progetti ed elementi](ide/how-to-locate-and-organize-project-and-item-templates.md)
+### [Personalizzare modelli di progetto e modelli di elementi](ide/customizing-project-and-item-templates.md)
+#### [Aggiornare i modelli esistenti](ide/how-to-update-existing-templates.md)
+#### [Sostituire i parametri di un modello](ide/how-to-substitute-parameters-in-a-template.md)
+### Creare nuovi modelli di progetto e di elementi
 #### [Creare modelli di progetto](ide/how-to-create-project-templates.md)
 #### [Creare modelli per più progetti](ide/how-to-create-multi-project-templates.md)
 #### [Creare modelli di elementi](ide/how-to-create-item-templates.md)
 #### [Creare modelli di elementi a più file](ide/how-to-create-multi-file-item-templates.md)
-#### [Creare manualmente modelli Web](ide/how-to-manually-create-web-templates.md)
+#### [Creare modelli Web](ide/how-to-manually-create-web-templates.md)
 #### [Creare starter kit](ide/how-to-create-starter-kits.md)
-#### [Individuare e organizzare modelli di progetti ed elementi](ide/how-to-locate-and-organize-project-and-item-templates.md)
-#### [Personalizzazione di modelli di progetto e modelli di elementi](ide/customizing-project-and-item-templates.md)
-##### [Aggiornare i modelli esistenti](ide/how-to-update-existing-templates.md)
-##### [Sostituire i parametri di un modello](ide/how-to-substitute-parameters-in-a-template.md)
-#### [Risolvere problemi relativi ai modelli](ide/how-to-troubleshoot-templates.md)
+### [Parametri di modelli](ide/template-parameters.md)
+### [Riferimento allo schema di modello (estendibilità)](extensibility/visual-studio-template-schema-reference.md)
+### [Risolvere problemi relativi ai modelli](ide/how-to-troubleshoot-templates.md)
 ## Elementi dell'interfaccia utente generali
 ### [Gerarchia di chiamata](ide/reference/call-hierarchy.md)
 ### [Scegli elementi della Casella degli strumenti, Componenti WPF](ide/reference/choose-toolbox-items-wpf-components.md)
@@ -420,7 +420,7 @@
 # Risorse
 ## [Come segnalare un problema con Visual Studio](ide/how-to-report-a-problem-with-visual-studio-2017.md)
 ## [Risorse per la risoluzione dei problemi relativi a errori IDE](ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
-## [Comunicazioni con Microsoft](ide/talk-to-us.md)
+## [Talk to Us](ide/talk-to-us.md) (Comunicazioni con Microsoft)
 ## [Microsoft Help Viewer](ide/microsoft-help-viewer.md)
 ### [Installare e gestire il contenuto locale](ide/install-and-manage-local-content.md)
 ### Ricerca di argomenti in Help Viewer
