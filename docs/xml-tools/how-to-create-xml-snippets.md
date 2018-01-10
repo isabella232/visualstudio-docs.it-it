@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'editor comprende un frammento di codice XML, denominato "Snippet", ovvero un frammento standard per la creazione di nuovi frammenti di codice XML.  
@@ -54,7 +54,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  Il `Expansion` tipo determina se il frammento di codice viene visualizzato quando si richiama il **Inserisci frammento di codice** comando. Il `SurroundsWith` tipo determina se il frammento di codice viene visualizzato quando si richiama il **Racchiudi** comando.  
   
@@ -72,7 +72,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  L'elemento `Code` comprende tre variabili.  
   
@@ -88,7 +88,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  Il valore dell'elemento nome viene contrassegnato come area modificabile.  
   
@@ -100,7 +100,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  I valori formali possono anche fare riferimento a funzioni. L'Editor XML include una funzione denominata **LookupPrefix**. Il **LookupPrefix** funzione Cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML che questo frammento viene richiamato da e restituisce il prefisso dello spazio dei nomi definito per tale spazio dei nomi, se presente, e include i due punti (:) in tale nome. Di seguito è riportato un esempio di un `Literal` elemento che utilizza il **LookupPrefix** (funzione).  
   
@@ -109,7 +109,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  La variabile $prefix$ può quindi essere usata in altri punti all'interno del frammento di codice XML.  
   

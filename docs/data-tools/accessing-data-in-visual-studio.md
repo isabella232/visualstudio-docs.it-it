@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 3e147307514656a693d47d24a8017b1b4ebbf182
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>L'accesso ai dati in Visual Studio
 
@@ -140,7 +140,7 @@ Viene descritto come creare applicazioni di dati che consentono agli sviluppator
 [WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
 Viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati sul web o una rete intranet che implementano il [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Dati nelle soluzioni Office](/office-dev/office-dev/data-in-office-solutions)  
+[Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)  
 Contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
 
 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  
