@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce432a20aa451807058fc83432705e5b32440b63
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-6-working-with-git"></a>Passaggio 6: Uso di Git
 
@@ -47,7 +47,7 @@ Questo argomento descrive la creazione di un repository Git locale per un proget
 
 ## <a name="going-deeper"></a>Approfondimenti
 
-Per le esercitazioni sugli approfondimenti sull'uso di Git, vedere [Condividere il codice con Visual Studio 2017 e VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
+Per le esercitazioni sugli approfondimenti sull'uso di Git, vedere [Condividere il codice con Visual Studio 2017 e VSTS Git](/vsts/git/share-your-code-in-git-vs-2017)
 
 ## <a name="tutorial-review"></a>Revisione dell'esercitazione
 

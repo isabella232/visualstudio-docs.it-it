@@ -8,15 +8,14 @@ ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing FAQ
-ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: 6845c97f906e19ed86b0baec5fa23b6bdca73632
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e2e219dae6d7e99f6c5e6ef394a31bbeb436c573
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Domande frequenti su Live Unit Testing
 
@@ -229,7 +228,7 @@ Live Unit Testing avvia una compilazione ogni volta che rileva una modifica nei 
 
 Live Unit Testing attualmente non funziona bene con la funzionalità di caricamento leggero delle soluzioni. Funziona solo dopo il caricamento di almeno uno dei progetti di test. Fino ad allora non funzionerà perché Live Unit Testing è dipendente dal caricamento di almeno uno dei progetti di test che fanno riferimento a un adattatore di test (MSTest, xUnit o NUnit).
 
-Nota: la funzionalità di caricamento leggero delle soluzioni non è più disponibile in Visual Studio 2017 versione 15.5 e versioni successive. In Visual Studio 15.5 e versioni successive le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento leggero delle soluzioni.
+Nota: la funzionalità di caricamento leggero delle soluzioni non è più disponibile in Visual Studio 2017 versione 15.5 e versioni successive. In Visual Studio versione 15.5 e versioni successive le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento leggero soluzioni.
  
 ## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>Perché Live Unit Testing non acquisisce le informazioni di code coverage da un nuovo processo creato da un test?
  

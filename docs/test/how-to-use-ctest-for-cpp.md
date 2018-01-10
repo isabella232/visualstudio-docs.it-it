@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a8b30934-5f38-4a18-8819-263e0733cdbe
-caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 1b471b90748442369cd9cf917e65fd283c5c52ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: 989f2b06df55fd0927863fe7e5603d3d0ec90b06
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Come usare CTest per C++ in Visual Studio
 CMake, che include CTest, è integrato nell'IDE di Visual Studio come componente del carico di lavoro **Sviluppo di applicazioni desktop con C++**. Per installarlo nel computer, aprire il programma di installazione di Visual Studio e trovare [CMake Tools per Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) (Strumenti CMake per Visual C++) nell'elenco dei componenti del carico di lavoro.

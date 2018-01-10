@@ -4,20 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: unit tests
-ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
-caps.latest.revision: "26"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e809cdbdce23d6bfafcfae2501a25c982455ba46
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Creare ed eseguire unit test per un'app UWP in Visual Studio
 Gli strumenti di unit test di Visual Studio sono progettati per offrire supporto a sviluppatori e team che integrano gli unit test nelle attività di sviluppo del software. Gli unit test offrono a sviluppatori e tester un metodo efficace e gestibile per la ricerca di errori logici nei metodi delle classi nei progetti Visual C#, Visual Basic e Visual C++.  

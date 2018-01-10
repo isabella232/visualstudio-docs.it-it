@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: xamarin
-ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) con app Xamarin
 Xamarin consente di compilare le app per dispositivi mobili multipiattaforma destinate ad Android, iOS e Windows con C#, .NET e Visual Studio. Xamarin consente di condividere la maggior parte del codice tra le piattaforme e solo una piccola percentuale di codice rimane specifica della piattaforma. Per altre informazioni su Xamarin, vedere [Visual Studio e Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -80,9 +80,8 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |Definizioni di compilazione con pre e post script|Yes||  
 |Integrazione continuata incluse le archiviazioni gestite|Yes|Archiviazioni gestite per TFVC solo quando Git elabora un modello di richiesta di pull anziché le archiviazioni.|  
   
-## <a name="testing"></a>Test  
- Collegamento di riferimento: **[Test dell'applicazione](/devops-test-docs/test/test-apps-early-and-often)**  
-  
+## <a name="testing"></a>Test
+
 |Funzionalità|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Pianificazione dei test, creazione di test case e organizzazione di gruppi di test|Yes||  

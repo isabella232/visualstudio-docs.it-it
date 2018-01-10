@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestione di Python nel servizio app di Azure
 
@@ -47,20 +47,19 @@ Il supporto di Python personalizzabile nel servizio app di Azure viene offerto c
 1. Selezionare l'estensione, accettare le condizioni legali e quindi selezionare **OK**.
 1. Nel portale viene visualizzata una notifica al termine dell'installazione.
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Scelta di una versione di Python tramite Azure Resource Manager
 
 Se si distribuisce un servizio app con un modello di Azure Resource Manager, aggiungere l'estensione del sito come risorsa. L'estensione viene visualizzata come risorsa annidata con il tipo `siteextensions` e il nome da [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Ad esempio, dopo l'aggiunta di un riferimento a `python361x64` (Python 3.6.1 x64), il modello potrebbe essere simile al seguente (alcune proprietà sono state omesse):
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -99,8 +98,8 @@ Questa azione apre la pagina di descrizione dell'estensione contenente il percor
 In caso di difficoltà a visualizzare il percorso per l'estensione, è possibile trovarlo manualmente tramite la console:
 
 1. Nella pagina del servizio App selezionare **Strumenti di sviluppo > Console**.
-2. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio `Python361x64`.
-3. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga `python.exe` e altri file di interprete.
+1. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio `Python361x64`.
+1. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga `python.exe` e altri file di interprete.
 
 ### <a name="configuring-the-fastcgi-handler"></a>Configurazione del gestore FastCGI
 
@@ -126,6 +125,7 @@ FastCGI è un'interfaccia che funziona a livello di richiesta. IIS riceve le con
 ```
 
 Le `<appSettings>` definite di seguito sono disponibili come variabili di ambiente per l'app:
+
 - Il valore per `PYTHONPATH` può essere esteso liberamente, ma deve includere la directory radice dell'app.
 - `WSGI_HANDLER` deve puntare a un'app WSGI importabile dall'app.
 - `WSGI_LOG` è facoltativo ma consigliato per il debug dell'app. 
@@ -172,33 +172,32 @@ Per installare i pacchetti direttamente nell'ambiente server, usare uno dei meto
 | Bundle con app | Installare i pacchetti direttamente nel progetto e quindi distribuirli al servizio app come se facessero parte dell'app. A seconda di quante dipendenze sono presenti e della loro frequenza di aggiornamento, questo metodo può essere il modo più semplice per ottenere una distribuzione funzionante. Tenere presente che queste librerie devono corrispondere alla versione di Python nel server. In caso contrario verranno visualizzati errori sconosciuti dopo la distribuzione. Tuttavia, dato che le versioni di Python nelle estensioni del sito del servizio app sono esattamente le stesse rilasciate su python.org, è possibile ottenere facilmente una versione compatibile per la distribuzione locale. |
 | Ambienti virtuali | Non supportato. Ricorrere invece alla creazione di bundle e impostare la variabile di ambiente `PYTHONPATH` in modo che punti al percorso dei pacchetti. |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Console Kudu del Servizio app di Azure
 
 La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l'accesso diretto da riga di comando con privilegi elevati al server del servizio app e al relativo file system. Oltre a essere un utile strumento di debug, supporta operazioni CLI, come l'installazione dei pacchetti.
 
 1. Aprire Kudu dalla pagina del servizio app nel portale di Azure: selezionare **Strumenti di sviluppo > Strumenti avanzati** e quindi selezionare **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
 
-    ![Console Kudu per il servizio app di Azure](media/python-on-azure-console01.png)    
+    ![Console Kudu per il servizio app di Azure](media/python-on-azure-console01.png)
 
-2. Selezionare **Console di debug > CMD** per aprire la console, in cui è possibile esplorare l'installazione di Python e vedere quali librerie sono già presenti.
+1. Selezionare **Console di debug > CMD** per aprire la console, in cui è possibile esplorare l'installazione di Python e vedere quali librerie sono già presenti.
 
-3. Per installare un singolo pacchetto:
+1. Per installare un singolo pacchetto:
 
     a. Passare alla cartella di installazione di Python in cui si vuole installare il pacchetto, ad esempio `d:\home\python361x64`.
-     
+
     b. Usare `python.exe -m pip install <package_name>` per installare un pacchetto.
-    
+
     ![Esempio di installazione di Bottle tramite la console Kudu per il Servizio app di Azure](media/python-on-azure-console02.png)
-    
-4. Se è già stato distribuito un file `requirements.txt` per l'app nel server, installare tutti questi requisiti come indicato di seguito:
+
+1. Se è già stato distribuito un file `requirements.txt` per l'app nel server, installare tutti questi requisiti come indicato di seguito:
 
     a. Passare alla cartella di installazione di Python in cui si vuole installare il pacchetto, ad esempio `d:\home\python361x64`.
-    
+
     b. Eseguire il comando `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
-    
+
     È consigliabile usare `requirements.txt` perché è facile riprodurre l'esatto set di pacchetti sia in locale che nel server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a `requirements.txt` e di eseguire nuovamente il comando.
-    
+
 > [!Note]
 > Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestione dei pacchetti necessari](python-environments.md#managing-required-packages)
 
@@ -213,7 +212,6 @@ Anziché usare la console Kudu tramite il portale di Azure, è possibile eseguir
 }
 ```
 
-Per informazioni sui comandi e l'autenticazione, vedere la [documentazione di Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). 
+Per informazioni sui comandi e l'autenticazione, vedere la [documentazione di Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-È anche possibile visualizzare le credenziali con il comando `az webapp deployment list-publishing-profiles` tramite l'interfaccia della riga di comando di Azure (vedere [az webapp deployment](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles)). È anche disponibile in [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) una libreria helper per la pubblicazione dei comandi Kudu.
-
+È anche possibile visualizzare le credenziali con il comando `az webapp deployment list-publishing-profiles` tramite l'interfaccia della riga di comando di Azure (vedere [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). È anche disponibile in [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) una libreria helper per la pubblicazione dei comandi Kudu.

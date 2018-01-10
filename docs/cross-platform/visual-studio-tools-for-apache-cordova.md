@@ -1,6 +1,6 @@
 ---
 title: Strumenti di Visual Studio per Apache Cordova | Microsoft Docs
-redirect_url: https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/
+redirect_url: /visualstudio/cross-platform/tools-for-cordova/
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: cordova
-ms.openlocfilehash: 0df91521f768a2389655339472c6d4a896347053
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2050e97f9f43aa96ae85512c7a3b7e1de0e3c378
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Strumenti di Visual Studio per Apache Cordova
 Compilare app eseguite in dispositivi iOS, Android e Windows e condividere quasi il 100% del codice. Compilare le app con le tecnologie Web preferite. Apache Cordova offre accesso nativo alle funzionalità del dispositivo, ad esempio la fotocamera di un telefono, ed è completamente gratuito. Visual Studio aggiunge queste altre funzionalità per rendere ancora più semplice la compilazione dell'app:  

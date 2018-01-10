@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aggiornato per la [versione 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -224,7 +224,7 @@ Oltre a semplificare la distribuzione delle app, Windows 10 Fall Creators Update
 * **Il meglio di UWP e Win32** <br/>
 È stata migliorata la piattaforma Windows 10 con [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) per migliorare Windows 10 per tutti gli sviluppatori .NET, indipendentemente dal fatto che concentrino le loro attività in UWP, WPF, Windows Form o Xamarin. Con il nuovo tipo di progetto per pacchetti di app in Visual Studio 2017 versione 15.5, è possibile creare pacchetti di app Windows per i progetti WPF o Windows Form, esattamente come per i progetti UWP. Dopo aver creato il pacchetto dell'app, diventano disponibili tutti i vantaggi per la distribuzione di app Windows 10 ed è possibile scegliere Microsoft Store (per le app consumer) o Microsoft Store per le aziende e gli istituti di istruzione. Dato che le app in pacchetto hanno accesso sia alla superficie API UWP completa che alle API Win32 su desktop, è ora possibile modernizzare le applicazioni Windows Form e WPF gradualmente con le API UWP e le funzionalità di Windows 10. Inoltre, è possibile includere componenti Win32 nelle applicazioni UWP che possono così essere usate nel desktop con tutte le funzionalità Win32. 
 
-Per altre informazioni sulla piattaforma UWP, vedere la pagina [Sviluppare app per la piattaforma UWP (Universal Windows Platform)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp).
+Per altre informazioni sulla piattaforma UWP, vedere la pagina [Sviluppare app per la piattaforma UWP (Universal Windows Platform)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
 
 ## <a name="mobile-app-development"></a>Sviluppo di app per dispositivi mobili
 ### <a name="xamarin"></a>Xamarin
@@ -271,7 +271,7 @@ E include attualmente il supporto di Docker.
 
 **Novità nella versione 15.3**: Visual Studio 2017 versione 15.3 supporta lo sviluppo di .NET Core 2.0. L'uso di .NET Core 2.0 richiede il download e l'installazione separati di SDK 2.0 di .NET Core.  
 
-Per altre informazioni, vedere la pagina della [Guida .NET Core](https://docs.microsoft.com/dotnet/core/index).
+Per altre informazioni, vedere la pagina della [Guida .NET Core](/dotnet/core/index).
 
 ## <a name="games-development"></a>Sviluppo di giochi
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity

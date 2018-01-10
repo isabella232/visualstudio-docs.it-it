@@ -13,11 +13,11 @@ author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload: unity
-ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e68024333084b6166305266dd061ef32bc0e14a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con app Unity
 Lo sviluppo di app per piattaforme moderne comporta molte più attività rispetto alla semplice scrittura di codice. Queste attività definite DevOps (Development + Operations) si estendono per il ciclo di vita completo di un'app e includono pianificazione e tracciatura del lavoro, progettazione e implementazione di codice, gestione di un repository di codice sorgente, esecuzione di compilazioni, gestione di integrazioni e distribuzioni continue, test (tra cui unit test e test dell'interfaccia utente), esecuzione di varie forme di diagnostica in ambienti di sviluppo e produzione e monitoraggio delle prestazioni delle app e comportamenti dell'utente in tempo reale tramite telemetria e analisi dei dati.  
@@ -84,8 +84,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 |Definizioni di compilazione con pre e post script|Yes|Per gli script pre- e post-compilazione è anche possibile configurare una definizione di compilazione personalizzata che usa la riga di comando di Unity per eseguire una compilazione.|  
 |Integrazione continuata incluse le archiviazioni gestite|Yes|Archiviazioni gestite per TFVC solo quando Git elabora un modello di richiesta di pull anziché le archiviazioni.|  
 
-## <a name="testing"></a>Test  
- Collegamento di riferimento: **[Test dell'applicazione](/devops-test-docs/test/test-apps-early-and-often)**  
+## <a name="testing"></a>Test
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
@@ -96,8 +95,9 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 |[Eseguire unit test del codice](../test/unit-test-your-code.md)|In Unity, ma non Visual Studio.|Unity offre un proprio framework di unit test come parte di [Unity Test Tools](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). I risultati degli unit test vengono segnalati in Unity e non saranno rilevati in Visual Studio.|  
 |[Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)|No|I test codificati dell'interfaccia utente si basano su controlli leggibili nell'interfaccia utente dell'app. Le app Unity sono di natura grafica e il contenuto non può quindi essere letto dagli strumenti di test codificato dell'interfaccia utente.|  
 
-## <a name="improve-code-quality"></a>Migliorare la qualità del codice  
- Collegamento di riferimento: **[Migliorare la qualità del codice](/visualstudio/test/improve-code-quality)**  
+## <a name="improve-code-quality"></a>Migliorare la qualità del codice
+
+Collegamento di riferimento: **[Migliorare la qualità del codice](/visualstudio/test/improve-code-quality)**  
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  

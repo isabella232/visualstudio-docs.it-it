@@ -28,11 +28,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c40be53bb72d0d61b0455c2f42afcb128e0d511f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c958958ca3b0621a4e348ebcbc4cffaf35d3cce9
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 
@@ -51,7 +51,7 @@ Per ottenere le informazioni necessarie, TypeScript usa diverse fonti:
 
 - [IntelliSense basato sull'inferenza del tipo](#TypeInference)
 - [IntelliSense basato su JSDoc](#JsDoc)
-- [IntelliSense basato su file dichiarazione TypeScript](#TSDeclFiles)
+- [IntelliSense basato su file dichiarazione TypeScript](#TsDeclFiles)
 - [Acquisizione automatica delle definizioni dei tipi](#Auto)
 
 ### <a name="TypeInference"></a>IntelliSense basato sull'inferenza del tipo

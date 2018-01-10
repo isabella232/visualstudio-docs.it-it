@@ -11,16 +11,15 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: "32"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 Questa procedura dettagliata illustra come usare un'origine dati definita in un file app.config per gli unit test. Viene mostrato come creare un file app.config che definisce un'origine dati che può essere usata dalla classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Le attività incluse nella procedura dettagliata sono le seguenti:  
@@ -269,8 +268,8 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 > [!IMPORTANT]
 >  Distribuire gli elementi come origini dati in modo che siano accessibili al test nella directory di distribuzione.  
   
-## <a name="see-also"></a>Vedere anche  
- [Eseguire unit test del codice](../test/unit-test-your-code.md)   
- [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Test dell'applicazione](/devops-test-docs/test/test-apps-early-and-often)   
- [Procedura: Creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md)
+## <a name="see-also"></a>Vedere anche
+
+[Eseguire unit test del codice](../test/unit-test-your-code.md)  
+[Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
+[Procedura: Creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md)

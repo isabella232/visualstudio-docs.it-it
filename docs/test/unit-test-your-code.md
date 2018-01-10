@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Eseguire unit test del codice
 Gli unit test rappresentano per sviluppatori e tester un modo rapido per verificare la presenza di errori di logica nei metodi delle classi in progetti [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] e [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -55,15 +54,6 @@ Gli unit test rappresentano per sviluppatori e tester un modo rapido per verific
 |**Estendere il tipo di unit test:** è possibile aggiungere ai test funzionalità che possono non essere presenti nel framework di unit test. Ad esempio, è possibile aggiungere una proprietà di test che specifica se un test deve essere eseguito o meno come utente normale. Oppure è possibile estendere il framework per aggiungere attributi di riga a un metodo e utilizzare i dati in tale riga all'interno del test.|Per codice di esempio su come estendere il framework per unit test, visitare il [sito Web Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591) seguente.|  
 |**Impostare le opzioni di test:** ad esempio, è possibile specificare dove archiviare i risultati dei test.|[Configurazione di unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>Attività correlate  
- [Revisione dei risultati dei test in Microsoft Test Manager](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Vengono descritti i risultati dei test e le relative modalità di utilizzo, ad esempio come visualizzarli, salvarli ed eliminarli.  
-  
- [Esecuzione di test di sistema mediante Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Fornisce collegamenti alle informazioni sull'utilizzo di Visual Studio rispetto all'utilizzo di  [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] per eseguire test automatizzati.  
-  
 ## <a name="reference"></a>Riferimenti  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Viene descritto lo spazio dei nomi UnitTesting, che rende disponibili attributi, eccezioni, asserzioni e altre classi che supportano il testing unità.  
@@ -85,6 +75,6 @@ Gli unit test rappresentano per sviluppatori e tester un modo rapido per verific
 ### <a name="reference"></a>Riferimento  
  [Indice dei contenuti relativi agli unit test](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>Vedere anche  
- [Migliorare la qualità del codice](/visualstudio/test/improve-code-quality)   
- [Test dell'applicazione](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Vedere anche
+
+[Migliorare la qualità del codice](/visualstudio/test/improve-code-quality)

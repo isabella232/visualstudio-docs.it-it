@@ -12,16 +12,15 @@ helpviewer_keywords:
 - Assert statements
 - unit tests, Assert statements
 - unit tests, Assert classes
-ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
-caps.latest.revision: "27"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d1b4889ac9dc5ad4ca70c054c7a0698cd44174ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: f2d0e0020ae26a3a2331643f74f436441612b9fc
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-the-assert-classes"></a>Utilizzo di classi Assert
 Usare le classi Assert dello spazio dei nomi UnitTestingFramework per verificare funzionalità specifiche. Un metodo di unit test verifica il codice di un metodo nel codice di sviluppo, ma segnala la correttezza del comportamento del codice soltanto se sono state incluse istruzioni Assert.  

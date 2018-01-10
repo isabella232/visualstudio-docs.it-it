@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente
 Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoint è possibile verificare che l'intera applicazione, inclusi i controlli per l'interfaccia utente, siano correttamente funzionanti. I test codificati dell'interfaccia utente possono inoltre convalidare i valori e la logica dell'interfaccia utente.  
@@ -144,10 +143,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Forum  
  [Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>Vedere anche  
- [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)   
- [Esecuzione di test di carico e delle prestazioni Web nelle applicazioni di SharePoint 2010 e 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Creare soluzioni di SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Verifica e debug del codice di SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [Compilazione e debug delle soluzioni SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Profilatura delle prestazioni di applicazioni di SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>Vedere anche
+
+[Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)  
+[Creare soluzioni di SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
+[Verifica e debug del codice di SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+[Compilazione e debug delle soluzioni SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+[Profilatura delle prestazioni di applicazioni di SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)

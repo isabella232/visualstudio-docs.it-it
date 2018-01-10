@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni  
 In Visual Studio 2017 è possibile aprire codice da quasi qualsiasi tipo di progetto basato su directory in Visual Studio senza la necessità di un file di soluzione o progetto. Questo significa, ad esempio, che è possibile trovare un progetto di codice in GIT, clonarlo e quindi aprirlo direttamente in Visual Studio e avviare l'attività di sviluppo senza dover creare una soluzione o un progetto.  
@@ -172,7 +172,7 @@ Questa procedura illustra come aggiungere due attività di compilazione personal
 
   ![Comando per l'attività di compilazione personalizzata](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Aggiungere le attività di compilazione seguenti al file tasks.vs.json. Per questo esempio verranno aggiunte due attività: una denominata "makefile-build" che usa il comando nMake per compilare il progetto e l'altra denominata makefile-clean che chiama il comando nMake con l'argomento "clean". Queste attività devono essere aggiunte all'interno della matrice "tasks" esistente. Si noti che questi sono solo esempi di attività di compilazione. Per consentirne il funzionamento, è necessario che nel sistema sia installato il carico di lavoro contenente [nMake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference).  
+1. Aggiungere le attività di compilazione seguenti al file tasks.vs.json. Per questo esempio verranno aggiunte due attività: una denominata "makefile-build" che usa il comando nMake per compilare il progetto e l'altra denominata makefile-clean che chiama il comando nMake con l'argomento "clean". Queste attività devono essere aggiunte all'interno della matrice "tasks" esistente. Si noti che questi sono solo esempi di attività di compilazione. Per consentirne il funzionamento, è necessario che nel sistema sia installato il carico di lavoro contenente [nMake](/cpp/build/nmake-reference).
 
   ```xml
   {

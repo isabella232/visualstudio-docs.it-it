@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88d34f29593af6e15a30c45f44793c60794ebb24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, Scheda HTML
 La scheda **HTML** della casella degli strumenti contiene componenti utili nelle pagine Web e nei Web Form. Per visualizzare questa scheda, aprire un documento per la modifica nella finestra di progettazione HTML. Scegliere **Casella degli strumenti** dal menu **Visualizza** e quindi fare clic sulla scheda **HTML** della casella degli strumenti.  
@@ -86,7 +86,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ```  
 
 > [!IMPORTANT]
->  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).  
+>  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).  
 
  **Input (File)**  
  ![Campo File pagina HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -100,7 +100,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ```  
 
 > [!IMPORTANT]
->  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).  
+>  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).  
 
  **Input (Password)**  
  ![Campo password Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -114,7 +114,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ```  
 
 > [!IMPORTANT]
->  Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere "Securing Connections with SSL" (Protezione delle connessioni con SSL) in [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guida operativa di IIS). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).  
+>  Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere "Securing Connections with SSL" (Protezione delle connessioni con SSL) in [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guida operativa di IIS). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).  
 
  **Input (Casella di controllo)**  
  ![Opzione Checkbox casella degli strumenti pagina Web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -161,7 +161,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ```  
 
 > [!IMPORTANT]
->  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).  
+>  È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).  
 
  **Tabella**  
  ![Screenshot HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

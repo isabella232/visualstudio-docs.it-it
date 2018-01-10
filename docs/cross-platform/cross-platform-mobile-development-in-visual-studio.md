@@ -13,11 +13,11 @@ author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f6e8eb7d7349bc88a54707c68a4e505d3f6720b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12acc12559b4295958906fd182c381933bb5d45
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo di app per dispositivi mobili multipiattaforma in Visual Studio
 È possibile compilare app per i dispositivi Android, iOS e Windows usando Visual Studio.  Durante la progettazione delle app, usare gli strumenti in Visual Studio per aggiungere facilmente i servizi connessi, ad esempio Office 365, Servizi app di Azure e Application Insights.
@@ -118,7 +118,7 @@ ms.lasthandoff: 12/22/2017
 |**Altre informazioni**|
 |--------------------|
 |[Installare Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Introduzione a Visual Studio Tools per Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
+|[Introduzione a Visual Studio Tools per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
 |[Informazioni sull'emulatore di Visual Studio per Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a>Compilare un'app per Android e Windows (C++)

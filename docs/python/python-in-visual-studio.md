@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 8cd00fe33cf463227dd09f93047350a96cee3b92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Uso di Python in Visual Studio
 
@@ -55,7 +55,7 @@ Per un video introduttivo, vedere il breve corso [Python Tools for Visual Studio
 
 **D. Il supporto di Python è disponibile in Visual Studio per Mac?**
 
-Un  Non in questo momento, sebbene sia richiesto in [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). La documentazione di [Visual Studio per Mac](https://docs.microsoft.com/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
+Un  Non in questo momento, sebbene sia richiesto in [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
 
 **D. Cosa si può usare per compilare un'interfaccia utente con Python?**
 

@@ -12,16 +12,15 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
-caps.latest.revision: "21"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: dfb7d875c922b8ed9e86ae05e2d129bc21a3ea8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 82ba9f9419964d9c626a81f78cf7f8ccace57320
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Procedura dettagliata: creazione ed esecuzione di unit test per app UWP
 In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] gestite e i modelli della libreria di unit test per Visual C#, Visual Basic e Visual C++.  

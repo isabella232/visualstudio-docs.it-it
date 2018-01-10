@@ -4,19 +4,18 @@ ms.custom:
 ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: "13"
 ms.author: mblome
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: cad1d4dd670f83c9dcb168127ecbe44f8687f09a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikeblome
+ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Come testare una libreria di collegamento dinamico di Visual C++ per le app UWP 
 In questo argomento viene descritto come creare unit test per una libreria di collegamento dinamico di Visual C++ per le app della piattaforma UWP (Universal Windows Platform) con il framework di test Microsoft per C++. La libreria di collegamento RooterLib rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app UWP che mostra a un utente il lato divertente della matematica.  
