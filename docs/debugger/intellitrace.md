@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 È possibile ridurre il tempo richiesto per eseguire il debug dell'applicazione quando si usa IntelliTrace per registrare e tenere traccia della cronologia di esecuzione del codice. È possibile trovare facilmente i bug perché IntelliTrace consente di:  
@@ -47,7 +47,7 @@ ms.lasthandoff: 12/22/2017
 |||  
 |-|-|  
 |**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> -Mostra gli eventi passati.<br />-Mostra me chiamare informazioni con gli eventi passati.<br />-Salva la sessione di IntelliTrace.<br />-Controllare i dati raccolti da IntelliTrace.|-   [Procedura dettagliata: Utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Il debug cronologico](../debugger/historical-debugging.md)<br />-   [Visualizzare gli snapshot utilizzando IntelliTrace passaggio-back](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Raccogliere dati IntelliTrace durante una sessione di test in Test Manager**|-   [Raccogliere più dati di diagnostica durante i test manuali](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Raccogliere dati IntelliTrace durante una sessione di test in Test Manager**|-   [Raccogliere più dati di diagnostica durante i test manuali](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Raccogliere dati IntelliTrace dalle applicazioni distribuite**|-   [Tramite l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Avviare il debug da un file di log IntelliTrace (file con estensione iTrace).**|-   [Utilizzando i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/22/2017
   
 -   L'applicazione si arresta in modo anomalo in un computer utilizzato per i test, ma viene eseguita correttamente in un computer di sviluppo.  
   
-     È possibile raccogliere dati IntelliTrace da Microsoft Test Manager, salvare i dati in un file .iTrace e allegarlo a un elemento di lavoro Team Foundation Server per analizzarlo in un secondo momento. Vedere [raccogliere più dati di diagnostica durante i test manuali](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) e [utilizzare dati di IntelliTrace salvato](../debugger/using-saved-intellitrace-data.md).  
+     È possibile raccogliere dati IntelliTrace da Microsoft Test Manager, salvare i dati in un file .iTrace e allegarlo a un elemento di lavoro Team Foundation Server per analizzarlo in un secondo momento. Vedere [raccogliere più dati di diagnostica durante i test manuali](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) e [utilizzare dati di IntelliTrace salvato](../debugger/using-saved-intellitrace-data.md).  
   
 -   Un bug o un arresto anomalo si verifica in un'applicazione distribuita.  
   
@@ -180,8 +180,6 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="in-this-section"></a>Contenuto della sezione  
  [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Includere i dati di traccia diagnostica nei bug difficili da riprodurre](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)  
   
