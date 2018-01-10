@@ -60,7 +60,7 @@
 ### [Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe](walkthrough-displaying-matching-braces.md)
 ### [Procedura dettagliata: Visualizzazione delle informazioni rapide](walkthrough-displaying-quickinfo-tooltips.md)
 ### [Procedura dettagliata: Visualizzazione della funzionalità di supporto alla firma](walkthrough-displaying-signature-help.md)
-### [Walkthrough: Displaying Statement Completion](walkthrough-displaying-statement-completion.md) (Procedura dettagliata: Visualizzazione del completamento istruzioni)
+### [Procedura dettagliata: Visualizzazione del completamento istruzioni](walkthrough-displaying-statement-completion.md)
 ### [Procedura dettagliata: Implementazione di frammenti di codice](walkthrough-implementing-code-snippets.md)
 ### [Procedura dettagliata: Visualizzazione dei suggerimenti delle icone lampadina](walkthrough-displaying-light-bulb-suggestions.md)
 ### [Procedura dettagliata: Uso di un comando della shell con un'estensione dell'editor](walkthrough-using-a-shell-command-with-an-editor-extension.md)
