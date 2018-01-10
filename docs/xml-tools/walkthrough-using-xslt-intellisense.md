@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a26ca0228a869d36daf427f4ba90fd1b17abeaf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Procedura dettagliata: utilizzo di XSLT IntelliSense
 Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completare automaticamente il valore di alcuni attributi.  
@@ -26,7 +26,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
   
 1.  Creare un nuovo file XSLT e copiarvi il seguente codice:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
     <!-- These 2 elements effectively assign  
          $messages = resources/en.xml/<messages>,  
@@ -46,22 +46,22 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
       </xsl:message>  
     </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Posizionare il cursore dopo `<xsl:template name="msg23" match="msg23">` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl:call-template`:  
   
-    ```  
+    ```xml
     <xsl:call-template name="localized-message">  
     </xsl:call-template>  
-    ```  
+    ```
   
      L'elenco dei nomi di modello viene visualizzato nell'attributo `name=""` dell'elemento `xsl:call-template` durante la digitazione.  
   
 3.  Posizionare il cursore dopo `<xsl:call-template name="localized-message">` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl:with-param`:  
   
-    ```  
+    ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
-    ```  
+    ```
   
      L'elenco dei nomi di parametro viene visualizzato nell'attributo `name=""` dell'elemento `xsl:with-param`.  
   
@@ -69,7 +69,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
   
 1.  Creare un nuovo file XSLT e copiarvi il seguente codice:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
       <xsl:template match="/">  
         <HTML>  
@@ -112,13 +112,13 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
         </TD>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Posizionare il cursore dopo `<xsl:apply-templates select="phone" />` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl: apply-templates`:  
   
-    ```  
+    ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">  
-    ```  
+    ```
   
      L'elenco delle modalità modello viene visualizzato nell'attributo `mode=""` dell'elemento `xsl:apply-templates`.  
   
@@ -126,7 +126,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
   
 1.  Creare un nuovo file XSLT e copiarvi il seguente codice:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
     version="1.0">  
       <xsl:param name="browser" select="'InternetExplorer'"/>  
@@ -153,15 +153,16 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
         </alt:stylesheet>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Posizionare il cursore dopo `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl:namespace-alias`:  
   
-    ```  
+    ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
-    ```  
+    ```
   
      Notare come l'elenco dei prefissi viene visualizzato negli attributi `stylesheet-prefix` e `result-prefix` dell'elemento `xsl:namespace-alias`.  
   
-## <a name="see-also"></a>Vedere anche  
- [Funzionalità IntelliSense dell'editor XML](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Vedere anche
+
+[Funzionalità IntelliSense dell'editor XML](../xml-tools/xml-editor-intellisense-features.md)

@@ -13,14 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 198047196ba6f58c69736ef67352267845047b52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c6dc55e2acee733538121bf5aac51b935e2d86d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedura: abilitare e disabilitare l'analisi automatica del codice gestito
-È possibile configurare l'analisi del codice da eseguire prima di ogni compilazione di un progetto di codice gestito. È possibile impostare diverse proprietà di analisi del codice per ogni [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] configurazione.  
+È possibile configurare l'analisi del codice da eseguire dopo ogni compilazione di un progetto di codice gestito. È possibile impostare diverse proprietà di analisi del codice per ogni [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] configurazione.  
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Per abilitare o disabilitare l'analisi automatica del codice  
   

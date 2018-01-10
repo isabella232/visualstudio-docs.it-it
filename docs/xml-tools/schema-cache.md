@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>Cache degli schemi
 L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoot%\Xml\Schemas. La cache degli schemi è globale per tutti gli utenti di un computer e include gli schemi XML standard usati per la convalida dei documenti IntelliSense e XML.  
@@ -54,13 +54,13 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
   
  L'editor XML supporta inoltre un numero illimitato di file del catalogo degli schemi nella directory della cache. Per i cataloghi degli schemi è possibile scegliere altre posizioni per gli schemi che si desidera tenere sempre ben presenti nell'editor. Il file catalog.xsd definisce il formato del file di catalogo ed è incluso nella directory della cache degli schemi. Il file catalog.xml è il catalogo predefinito e contiene collegamenti ad altri schemi nella %InstallDir%. Di seguito sono riportati esempi del file catalog.xml:  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  L'attributo `href` può essere un qualsiasi percorso di file o URL di tipo http che fa riferimento allo schema. Il percorso del file può essere relativo al documento catalogo. Le seguenti variabili, delimitate da %%, sono riconosciute dall'editor e verranno espanse nel percorso:  
   
@@ -82,25 +82,25 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
   
 Nel documento catalogo può essere incluso un elemento `Catalog` che fa riferimento ad altri cataloghi. È possibile usare l'elemento `Catalog` per scegliere un catalogo centrale condiviso dal team o dalla società o un catalogo online condiviso con i partner commerciali. L'attributo `href` è il percorso del file o l'URL di tipo http per gli altri cataloghi. Di seguito è riportato un esempio dell'elemento `Catalog`:  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  Con il catalogo è inoltre possibile controllare in che modo gli schemi vengono associati ai documenti XML usando l'elemento speciale `Association`. Questo elemento consente di associare gli schemi che non dispongono di uno spazio dei nomi di destinazione con una determinata estensione di file. Questo può risultare utile in quanto l'editor XML non esegue l'associazione automatica degli schemi che non presentano un attributo `targetNamespace`. Nell'esempio seguente l'elemento `Association` associa lo schema dotNetConfig con tutti i file che presentano l'estensione "config":  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>Schemi localizzati  
  In molti casi il file catalog.xml non contiene voci per gli schemi localizzati. È possibile aggiungere ulteriori voci al file catalog.xml che fanno riferimento alla directory degli schemi localizzati.  
   
  Nell'esempio seguente è stato creato un nuovo elemento `Schema` che usa la variabile % LCID% per fare riferimento allo schema localizzato.  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>Modifica del percorso della cache degli schemi  
  È possibile personalizzare il percorso per la cache dello schema tramite il **varie** pagina Opzioni. Se si dispone di una directory di schemi preferiti, è possibile configurare l'editor in modo da usare solo questi schemi.  
