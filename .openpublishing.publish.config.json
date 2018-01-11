@@ -2,19 +2,23 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
+      "docset_name": "connected-environment",
+      "build_source_folder": "connected-environment",
+      "build_output_subfolder": "connected-environment",
+      "locale": "it-it",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "docs",
       "build_source_folder": "docs",
       "build_output_subfolder": "vsdocsdocs",
       "locale": "it-it",
       "monikers": [],
       "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "LandingData": "Content",
-        "APIConnector": "Content"
-      },
       "template_folder": "_themes"
     },
     {
@@ -24,11 +28,6 @@
       "locale": "it-it",
       "monikers": [],
       "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     },
@@ -39,11 +38,6 @@
       "locale": "it-it",
       "monikers": [],
       "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     },
@@ -55,30 +49,26 @@
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
       "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": ["live"],
-  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/visualstudio-docs.it-it",
+  "branches_to_filter": [
+    "live"
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.it-it",
   "git_repository_branch_open_to_public_contributors": "live",
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.it-it",   
   "continue_with_document_error": true,
- "skip_source_output_uploading": false,
+  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {
-   "live-sxs": "live"
-},
+    "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-     "url": "https://github.com/Microsoft/templates.docs.msft.it-it", 
+      "url": "https://github.com/Microsoft/templates.docs.msft.it-it",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -88,6 +78,15 @@
       "branch": "master"
     },
     {
+      "path_to_root": "dotnet-xref",
+      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    },
+    {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/visualstudio-docs-pr",
       "branch": "live",
@@ -95,16 +94,6 @@
         "live": "live",
         "master": "master"
       }
-    },
-  {
-      "path_to_root": "dotnet-xref",
-      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
-      "branch": "live",
-      "branch_mapping": {
-        "live": "live",
-        "master": "master",
-       "live-sxs" : "live" 
-     }
     }
   ],
   "branch_target_mapping": {
