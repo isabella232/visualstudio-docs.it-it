@@ -11,11 +11,12 @@ ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: 73bf7daf0a09ead0277e8c5c273c275cd2006ed9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 6edcc59a2d726fbd76fee86b750f21dc468b727e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="known-issues-for-containers"></a>Problemi noti dei contenitori
 
@@ -50,3 +51,4 @@ Ecco alcune altre opzioni di supporto:
 
 * [Installare Build Tools in un contenitore](build-tools-container.md)
 * [Esempio avanzato per i contenitori](advanced-build-tools-container.md)
+* [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)

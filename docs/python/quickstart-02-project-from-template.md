@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3f4b66c5-3ad8-4067-90cd-0100205700a7
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 77e630f7ebfe5739010291ffc62e23a695c40807
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: ee329df0bda8869215969941024deba6d94743fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida rapida: creare un progetto Python da un modello in Visual Studio
 
@@ -25,7 +25,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installation.
 
 1. Avviare Visual Studio.
 
-1. Selezionare **File > Nuovo > progetto** (Ctrl+Shift+N). Nel finestra di dialogo **Nuovo progetto**, cercare "Python" e selezionare il modello desiderato. Si noti che la selezione di un modello visualizza una breve descrizione di ciò che offre tale modello. (Vedere anche [Progetti Python](python-projects.md#project-templates)).
+1. Selezionare **File > Nuovo > progetto** (Ctrl+Shift+N). Nel finestra di dialogo **Nuovo progetto**, cercare "Python" e selezionare il modello desiderato. Si noti che la selezione di un modello visualizza una breve descrizione di ciò che offre tale modello. Vedere anche [Progetti Python](python-projects.md#project-templates).
 
     ![Finestra di dialogo VS2017 Nuovo progetto con modelli Python](media/projects-new-project-dialog2.png)
 
@@ -85,7 +85,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installation.
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: uso di Python in Visual Studio](vs-tutorial-01-01.md)
+> [Esercitazione: Uso di Python in Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>Vedere anche
 

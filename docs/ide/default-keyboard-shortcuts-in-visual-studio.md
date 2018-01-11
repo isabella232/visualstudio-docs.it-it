@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 Per altre informazioni sull'accessibilità dalla tastiera, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: Usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -214,7 +215,7 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 |Edit.Replace|CTRL+H|  
 |Edit.ReplaceinFiles|CTRL+MAIUSC+H|  
 |Edit.SelectAll|CTRL+A|  
-|Edit.SelectNextControl|Tab|  
+|Edit.SelectNextControl|Scheda|  
 |Edit.SelectPreviousControl|MAIUSC+TAB|  
 |Edit.ShowTileGrid|INVIO|  
 |Edit.SizeControlDown|CTRL+MAIUSC+Freccia GIÙ|  
@@ -378,12 +379,12 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 |View.CallHierarchy|CTRL+ALT+K|  
 |View.ClassView|CTRL+MAIUSC+C|  
 |View.ClassViewGoToSearchCombo|CTRL+K, CTRL+V|  
-|View.CodeDefinitionWindow|CTRL+\\, D<br /><br /> o<br /><br /> CTRL+\\, CTRL+D|  
+|View.CodeDefinitionWindow|CTRL+\\, D<br /><br /> oppure<br /><br /> CTRL+\\, CTRL+D|  
 |View.CommandWindow|CTRL+ALT+A|  
 |View.DataSources|MAIUSC+ALT+D|  
 |View.DocumentOutline|CTRL+ALT+T|  
 |View.EditLabel|F2|  
-|View.ErrorList|CTRL+\\, E<br /><br /> o<br /><br /> CTRL+\\, CTRL+E|  
+|View.ErrorList|CTRL+\\, E<br /><br /> oppure<br /><br /> CTRL+\\, CTRL+E|  
 |View.F#Interactive|CTRL+ALT+F|  
 |View.FindSymbolResults|Ctrl+Alt+F12|  
 |View.Forward|ALT+Freccia DESTRA|  
@@ -404,7 +405,7 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 |View.ShowSmartTag|MAIUSC+ALT+F10<br /><br /> oppure<br /><br /> CTRL+.|  
 |View.SolutionExplorer|CTRL+ALT+L|  
 |View.SQLServerObjectExplorer|CTRL+\\, CTRL+S|  
-|View.TaskList|CTRL+\\, T<br /><br /> o<br /><br /> CTRL+\\, CTRL+T|  
+|View.TaskList|CTRL+\\, T<br /><br /> oppure<br /><br /> CTRL+\\, CTRL+T|  
 |View.TfsTeamExplorer|CTRL+\\, CTRL+M|  
 |View.Toolbox|CTRL+ALT+X|  
 |View.UMLModelExplorer|CTRL+\\, CTRL+U|  
@@ -544,7 +545,7 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 
 |Comandi:|Tasti di scelta rapida|  
 |--------------|------------------------|  
-|Debug.Graphics.CaptureFrame|Nessuno|  
+|Debug.Graphics.CaptureFrame|nessuno|  
 |Graphics.MovePixelSelectionDown|MAIUSC+ALT+Freccia GIÙ|  
 |Graphics.MovePixelSelectionLeft|MAIUSC+ALT+Freccia SINISTRA|  
 |Graphics.MovePixelSelectionRight|MAIUSC+ALT+Freccia DESTRA|  
@@ -716,7 +717,7 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 |Edit.CharLeftExtend|MAIUSC+Freccia SINISTRA|  
 |Edit.CharRight|Freccia DESTRA|  
 |Edit.CharRightExtend|MAIUSC+Freccia DESTRA|  
-|Edit.InsertTab|Tab|  
+|Edit.InsertTab|Scheda|  
 |Edit.LineDown|Freccia GIÙ|  
 |Edit.LineDownExtend|MAIUSC+Freccia GIÙ|  
 |Edit.LineUp|Freccia SU|  
@@ -1047,7 +1048,7 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 |Edit.DocumentEndExtend|MAIUSC+FINE|  
 |Edit.DocumentStart|Home|  
 |Edit.DocumentStartExtend|MAIUSC+HOME|  
-|Edit.InsertTab|Tab|  
+|Edit.InsertTab|Scheda|  
 |Edit.LineDown|Freccia GIÙ|  
 |Edit.LineDownExtend|MAIUSC+Freccia SU|  
 |Edit.LineUp|Freccia SU|  

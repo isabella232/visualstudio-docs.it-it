@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Passaggio 2: Scrittura ed esecuzione del codice
 
@@ -41,14 +42,14 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
     ```
 
 1. Si noti la colorazione della sintassi che consente di distinguere l'istruzione `print` dall'argomento `"Hello Visual Studio"`. Eliminare temporaneamente anche l'ultimo elemento `"` sulla stringa. Si noti come Visual Studio visualizza una sottolineatura rossa per il codice che contiene errori di sintassi. Quindi sostituire `"` per correggere il codice.
- 
+
     ![Colorazione della sintassi ed evidenziazione degli errori di IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti > Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** e **Editor di testo**. Per impostazione predefinita verrà visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo. 
 
 1. Successivamente a questo punto eseguire il codice già scritto premendo Ctrl+F5 o selezionando la voce del menu **Debug > Avvia senza eseguire debug**. Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
- 
+
 1. Quando si esegue il programma, viene visualizzata una finestra di console con i risultati, come se fosse stato eseguito un interprete Python con `PythonApplication1.py` dalla riga di comando. Premere un tasto per chiudere la finestra e tornare all'editor di Visual Studio.
 
     ![Output per la prima esecuzione del programma](media/vs-getting-started-python-07-output.png)
@@ -70,8 +71,8 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
 1. Completare l'importazione dei membri `sin`, `cos` e `radians`, osservando i completamenti automatici disponibili per ogni membro. Al termine, il codice dovrebbe essere simile al seguente:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
@@ -80,22 +81,20 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
 1. Aggiungere altro codice per visualizzare i valori di coseno per 360 gradi:
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Eseguire ancora il programma premendo Ctrl+F5 o scegliendo **Debug > Avvia senza eseguire debug**. Al termine, chiudere la finestra di output.
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
 > [Uso della finestra interattiva REPL](vs-tutorial-01-03.md)
 
-
 ## <a name="going-deeper"></a>Approfondimenti
 
-- [Modifica del codice](code-editing.md)
+- [Editing R code in Visual Studio](code-editing.md) (Modifica di codice R in Visual Studio)
 - [Formattazione del codice](code-formatting.md)
 - [Refactoring del codice](code-refactoring.md)
 - [Uso di PyLint](code-pylint.md)

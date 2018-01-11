@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Passaggio 3: Uso della finestra interattiva REPL
 
@@ -47,7 +48,7 @@ La *finestra interattiva* di Visual Studio per Python offre un'esperienza comple
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +63,8 @@ La *finestra interattiva* di Visual Studio per Python offre un'esperienza comple
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Incollare più righe di codice tramite l'invio alla finestra interattiva](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +83,13 @@ La *finestra interattiva* di Visual Studio per Python offre un'esperienza comple
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Per copiare il contenuto esatto di una finestra interattiva, compresi output e prompt, usare il comando standard **Copia**.
 
 1. Le modifiche appena apportate consentono di usare l'ambiente REPL rapido della finestra interattiva per elaborare i dettagli di una piccola parte di codice e aggiungerla facilmente al file di origine del progetto. Quando si esegue nuovamente il codice con Ctrl+F5 (o **Debug > Avvia senza eseguire debug**), viene visualizzato il risultati desiderato.
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 

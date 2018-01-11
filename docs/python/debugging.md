@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7a6aac76bc3830dd6c003c9834b242c6d79f7821
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -27,7 +27,7 @@ Per una panoramica del debug, vedere [Debugging Python](https://mva.microsoft.co
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
 
-Contenuto dell'argomento:
+In questo argomento
 
 - [Debug di base](#basic-debugging)
 - [Opzioni di debug del progetto](#project-debugging-options)

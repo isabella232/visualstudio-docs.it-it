@@ -33,11 +33,12 @@ f1_keywords:
 - VC.Project.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.AdditionalDependencies
 - VC.Project.VCLinkerTool.LibraryDependencies
-ms.openlocfilehash: 0e7b1d5b417250282092a780afc30aee965e4dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: f74ad5934d48c941195da30d9228c35483479f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-linker-properties-android-c"></a>Proprietà dei linker Clang (Android C++)
 

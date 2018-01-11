@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c9c53f76-d0ef-4095-8b39-b7eb9bb33aba
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3ce10862b3d71be43a86c1a98a9edf822ac9baf6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-projects"></a>Progetti Python
 
@@ -29,7 +29,7 @@ I progetti vengono inoltre sempre gestiti all'interno di una *soluzione* Visual 
 
 In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per configurare rapidamente numerose strutture di applicazione, incluso un modello per creare un progetto da un albero delle cartelle esistente e un modello per creare un progetto pulito e vuoto. Per un indice, vedere [Modelli di progetto](#project-templates) di seguito.
 
-Contenuto dell'argomento:
+In questo argomento
 
 - [Aggiunta di file, assegnazione di un file di avvio e impostazione degli ambienti](#adding-files-assigning-a-startup-file-and-setting-environments)
 - [Modelli di progetto](#project-templates)
@@ -145,6 +145,6 @@ Dal momento che i riferimenti in IronPython non sono disponibili fino a quando n
 
 ### <a name="webpi-projects"></a>Progetti WebPI
 
-È possibile aggiungere riferimenti alle voci di prodotto WebPI per la distribuzione nel servizio cloud di Microsoft Azure in cui è possibile installare componenti aggiuntivi tramite il feed WebPI. Per impostazione predefinita, il feed visualizzato è specifico di Python e include Django, CPython e altri componenti di base. È inoltre possibile selezionare un feed personalizzato, come illustrato di seguito. Durante la pubblicazione in Microsoft Azure, un'attività di installazione installerà tutti i prodotti di riferimento.
+È possibile aggiungere riferimenti alle voci di prodotto WebPI per la distribuzione nei servizi cloud di Microsoft Azure in cui è possibile installare componenti aggiuntivi tramite il feed WebPI. Per impostazione predefinita, il feed visualizzato è specifico di Python e include Django, CPython e altri componenti di base. È inoltre possibile selezionare un feed personalizzato, come illustrato di seguito. Durante la pubblicazione in Microsoft Azure, un'attività di installazione installerà tutti i prodotti di riferimento.
 
 ![Riferimenti WebPI](media/projects-webPI-components.png)

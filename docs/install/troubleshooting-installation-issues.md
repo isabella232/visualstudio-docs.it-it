@@ -1,10 +1,10 @@
 ---
 title: Risoluzione dei problemi relativi all'installazione | Microsoft Docs
 description: "Non sempre tutto funziona correttamente. Se l'installazione o l'aggiornamento di Visual Studio ha esito negativo, questa pagina può risultare utile."
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,14 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 9cd0a1b21cf7a61c9340c36be5db419d71c36e1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Risoluzione dei problemi di installazione e aggiornamento di Visual Studio 2017
 
@@ -37,7 +38,8 @@ Cercare il messaggio di errore nella [community degli sviluppatori di Visual Stu
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Passaggio 3: Eliminare la directory del programma di installazione di Visual Studio per correggere i problemi di aggiornamento
 Il programma di bootstrap dell'installazione di Visual Studio è un file eseguibile di piccole dimensioni che consente di installare gli elementi restanti del programma di installazione di Visual Studio. Eliminando i file del programma di installazione di Visual Studio ed eseguendo nuovamente il programma di bootstrap, è possibile risolvere alcuni problemi di aggiornamento.
 
-**Nota:** eseguendo le azioni seguenti vengono reinstallati i file del programma di installazione di Visual Studio e vengono reimpostati i metadati di installazione.
+>[!NOTE]
+Eseguendo le azioni seguenti vengono reinstallati i file del programma di installazione di Visual Studio e vengono reimpostati i metadati di installazione.
 
 1. Chiudere il programma di installazione di Visual Studio.
 2. Eliminare la directory del programma di installazione di Visual Studio. In genere, la directory è `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -57,7 +59,7 @@ In alcune situazioni, ad esempio quando sono presenti file danneggiati, può ess
 Come ultima risorsa, è possibile [rimuovere Visual Studio](remove-visual-studio.md) per eliminare tutti i file di installazione e le informazioni sul prodotto.
 
 1. Seguire le istruzioni in [Remove Visual Studio](remove-visual-studio.md) (Rimuovere Visual Studio).
-2. Eseguire nuovamente il programma di avvio automatico descritto in [Passaggio 3: Eliminare la directory del programma di installazione di Visual Studio per correggere i problemi di aggiornamento](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Eseguire nuovamente il programma di avvio automatico descritto in [Passaggio 3: Eliminare la directory del programma di installazione di Visual Studio per correggere i problemi di aggiornamento](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Provare di nuovo a installare o ad aggiornare Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Passaggio 6: Contattare Microsoft (facoltativo)
@@ -88,15 +90,15 @@ Per raccogliere i log:
 
 ## <a name="more-support-options"></a>Altre opzioni di supporto
 
-È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
+Se nessuno dei passaggi illustrati in precedenza consente di eseguire l'installazione correttamente, contattare Microsoft tramite chat attiva per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni:
-
+* È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
 * È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte.
 * È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).  Per questa opzione è necessario un account [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vedere anche
-* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
+* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Remove Visual Studio 2017](remove-visual-studio.md) (Rimuovere Visual Studio 2017)

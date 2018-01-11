@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5d022864609dca3aeaa2a759ea05e1f37abd203f
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 7449e6037300eab33d89f32f98d58a5e265ad21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Creazione di tracciati visivi dei dati con R
 
@@ -24,7 +25,7 @@ Il tracciato è una parte fondamentale del flusso di lavoro di un data scientist
 
 ![Immagine banner tracciato](media/plotting-hero-image.png)
 
-Contenuto dell'argomento:
+In questo argomento
 
 - [Finestra dei tracciati](#the-plot-window)
 - [Più finestre dei tracciati](#multiple-plot-windows)
@@ -55,7 +56,7 @@ In tutti i casi il ridimensionamento di una finestra dei tracciati esegue nuovam
 
 La barra degli strumenti della finestra dei tracciati contiene i comandi applicabili, la maggior parte dei quali sono disponibili anche tramite il menu **R Tools > Tracciati**.
 
-| Pulsante | Comando | Descrizione | 
+| Button | Comando | Descrizione | 
 | --- | --- | --- |
 | ![Pulsante Nuova finestra dei tracciati](media/plotting-toolbar-01-new-plot-window.png) | Nuova finestra dei tracciati | Crea una finestra dei tracciati separata con la propria cronologia. Vedere [Più finestre dei tracciati](#multiple-plot-windows). |
 | ![Pulsante di attivazione della finestra dei tracciati](media/plotting-toolbar-02-activate-plot-window.png) | Attiva finestra dei tracciati | Imposta la finestra dei tracciati corrente come finestra attiva, in modo che i comandi `plot` successivi vengano sottoposti a rendering per quella finestra. Vedere [Più finestre dei tracciati](#multiple-plot-windows). Vedere [Più finestre dei tracciati](#multiple-plot-windows). |

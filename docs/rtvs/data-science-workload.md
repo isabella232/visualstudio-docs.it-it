@@ -14,11 +14,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5e7738d03fa0c9b8b460fe1b2fb4bc17076fa3b5
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati
 
@@ -26,7 +27,7 @@ Il carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati in
 
 - [R e Microsoft R Client](../rtvs/index.md)
 - [Python e Anaconda](../python/python-in-visual-studio.md)
-- [F# con .NET Framework](https://docs.microsoft.com/dotnet/fsharp/)
+- [F# con .NET Framework](/dotnet/fsharp/)
 
 ![Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati nel programma di installazione di Visual Studio](media/data-science-workload.png)
 

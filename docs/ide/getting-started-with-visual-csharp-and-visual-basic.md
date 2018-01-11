@@ -1,36 +1,25 @@
 ---
-title: Introduzione a Visual C# e Visual Basic con Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
-ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: "13"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/quickstart-visual-basic-console
+ms.openlocfilehash: 584510fdc81abd52be390759beef0ac5d412700e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
+---
+titolo: "Introduzione a Visual C# e Visual Basic con Visual Studio | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: "vs-acquisition" ms.tgt_pltfrm: "" ms.topic: "get-started-article" helpviewer_keywords: 
+  - "esercitazione di C#"
+  - "esercitazione di Visual Basic"
+  - "informazioni su VB"
+  - "esercitazione di VB"
+  - "informazioni su C#"
+  - "informazioni su Visual Basic" autore: "TerryGLee": "tglee" manager: ghogen
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Introduzione a Visual C# e Visual Basic con Visual Studio
 Documentazione di riferimento ideale per chi non ha familiarità con Visual C# o Microsoft Visual Basic. La Guida introduttiva è composta da una serie di lezioni sequenziali contenenti informazioni introduttive su Visual C# e Visual Basic che consentono di scrivere ottimi programmi software divertendosi.  
   
  Per altre informazioni su Visual C++, vedere [Risorse di Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Procedura dettagliata: Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  Identificare le finestre di base in IDE di Visual Studio, ottimizzare l'esperienza di sviluppo configurando un'impostazione, quindi compilare un programma semplice.  
   

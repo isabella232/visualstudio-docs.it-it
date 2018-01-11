@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Applicazione desktop WPF
 Questa procedura dettagliata fornisce un'introduzione allo sviluppo di Windows Presentation Foundation (WPF). Verrà creata un'applicazione di base che include gli elementi comuni alla maggior parte delle applicazioni desktop WPF: markup XAML, code-behind, definizioni delle applicazioni, controlli, layout, data binding e stili.  
@@ -268,7 +269,7 @@ In questa sezione verrà creata l'infrastruttura dell'applicazione, che include 
   
 1.  Scegliere l'immagine seguente e salvarla come `watermark.png`.  
   
-     ![Immagine filigrana per la procedura dettagliata](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Immagine filigrana per la procedura dettagliata](../designers/media/wpf_watermark.png "Filigrana")  
   
     > [!NOTE]
     >  In alternativa, è possibile creare una propria immagine e salvarla come `watermark.png`.  
@@ -851,40 +852,40 @@ In questa sezione verrà creata l'infrastruttura dell'applicazione, che include 
 ##  <a name="Best_Practices"></a> Procedure consigliate  
  Questo esempio illustra le nozioni di base di WPF e, di conseguenza, non segue le procedure consigliate per lo sviluppo di applicazioni. Per una descrizione completa delle procedure guidate di sviluppo di applicazioni di WPF e .NET Framework, vedere gli argomenti seguenti:  
   
--   Accessibilità: [Procedure consigliate per l'accesso facilitato](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Accessibilità: [Procedure consigliate per l'accesso facilitato](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Sicurezza: [Sicurezza di Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Sicurezza: [Sicurezza di Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
--   Localizzazione: [Panoramica della globalizzazione e localizzazione WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Localizzazione: [Panoramica della globalizzazione e localizzazione WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Prestazioni: [Ottimizzazione delle prestazioni di applicazioni WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Prestazioni: [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> Argomenti successivi  
  A questo punto si hanno diverse tecniche a disposizione per creare un'applicazione desktop con WPF. Dovrebbe essere stata acquisita una conoscenza di base dei componenti fondamentali di un'applicazione WPF con associazione ai dati. Questo argomento non è esaustivo, ma intende fornire all'utente le informazioni e gli strumenti per approfondire autonomamente le numerose opzioni di cui dispone, che vanno oltre le tecniche descritte nell'argomento.  
   
  Per altre informazioni sull'architettura WPF e i modelli di programmazione, vedere gli argomenti seguenti:  
   
--   [Architettura WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Architettura WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [Panoramica di XAML](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [Panoramica di XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Panoramica sulle proprietà di dipendenza](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Panoramica sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Sistema di layout](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Sistema di layout](/dotnet/framework/wpf/advanced/layout)  
   
--   [Stili e modelli](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Stili e modelli](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Per altre informazioni sulla creazione di applicazioni, vedere gli argomenti seguenti:  
   
--   [Panoramica sullo sviluppo di applicazioni](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Panoramica sullo sviluppo di applicazioni](/dotnet/framework/wpf/app-development/index)  
   
--   [Panoramica sui controlli](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Panoramica sui controlli](/dotnet/framework/wpf/controls/index)  
   
--   [Panoramica sul data binding](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Panoramica sul data binding](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [Panoramica sui grafici, l'animazione e gli elementi multimediali di WPF](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Panoramica sui grafici, l'animazione e gli elementi multimediali di WPF](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Documenti in WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Documenti in WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Vedere anche  
-[Creare applicazioni desktop moderne con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md) (Creare moderne applicazioni desktop con Windows Presentation Foundation)

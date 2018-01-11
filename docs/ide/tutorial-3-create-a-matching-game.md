@@ -12,13 +12,14 @@ caps.latest.revision: "13"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e4e09e0957ab9aa412d8bd8fc1ea2494c9fb5553
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5625ae1e666e6e59873d030e6732ef3ef3e6a35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: creare un gioco di abbinamenti
+# <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste. Vengono illustrate le seguenti procedure:  
   
 -   Archiviare oggetti, ad esempio icone, in un oggetto `List`.  

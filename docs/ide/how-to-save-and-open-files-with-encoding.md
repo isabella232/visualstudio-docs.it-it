@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procedura: salvare e aprire file con codifica
 È possibile salvare i file con una codifica dei caratteri specifica per supportare le lingue bidirezionali. È anche possibile specificare una codifica all'apertura di un file, in modo che Visual Studio visualizzi il file correttamente.  
@@ -58,6 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  Seguire i passaggi 2 e 3 della procedura precedente.  
   
-## <a name="see-also"></a>Vedere anche  
- [Globalizzazione di Windows Form e codifica](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
- [Globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>Vedere anche
+[Codifiche e interruzioni di riga](encodings-and-line-breaks.md)  
+[Globalizzazione di Windows Form e codifica](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[Globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md)

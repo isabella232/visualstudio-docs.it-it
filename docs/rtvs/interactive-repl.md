@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-r-interactive-window"></a>Uso della finestra R interattivo
 
@@ -60,21 +61,20 @@ Ecco la finestra interattiva con relativa barra degli strumenti:
 
 Di seguito vengono illustrati i comandi della barra degli strumenti, la maggior parte dei quali hanno combinazioni di tasti e sono anche disponibili nei menu **R Tools > Sessione** e **R Tools > Directory di lavoro** (oppure come indicato):
 
-| Pulsante | Comando | Combinazione di tasti | Descrizione | 
+| Button | Comando | Combinazione di tasti | Descrizione | 
 | --- | --- | --- | --- |
 | ![Pulsante Reimposta](media/repl-toolbar-01-reset.png) | Reimposta | Ctrl+Maiusc+F10 | Reimposta la sessione della finestra interattiva, cancellando tutte le variabili e la cronologia. |
 | ![Pulsante Cancella](media/repl-toolbar-02-clear.png) | Cancella | CTRL+L | Cancella l'output visualizzato nella finestra interattiva. Non ha alcun effetto sulle variabili della sessione o sulla cronologia. |
 | ![Pulsanti Cronologia](media/repl-toolbar-03-history.png) | Comando Cronologia precedente<br/>Comando Cronologia successiva | Freccia SU, Freccia GIÙ<br/>ALT+ freccia SU , ALT-freccia GIÙ | Scorre la cronologia, con determinati comportamenti per i blocchi di codice su più righe. Vedere [Cronologia](#history). |
-| ![Pulsante Carica area di lavoro](media/repl-toolbar-04-load-workspace.png) | Carica area di lavoro | n/d | Carica un'area di lavoro precedentemente salvata (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
-| ![Pulsante Salva area di lavoro come](media/repl-toolbar-05-save-workspace-as.png)| Salva area di lavoro come | n/d | Salva lo stato corrente della sessione come area di lavoro (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
+| ![Pulsante Carica area di lavoro](media/repl-toolbar-04-load-workspace.png) | Carica area di lavoro | N/D | Carica un'area di lavoro precedentemente salvata (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
+| ![Pulsante Salva area di lavoro come](media/repl-toolbar-05-save-workspace-as.png)| Salva area di lavoro come | N/D | Salva lo stato corrente della sessione come area di lavoro (vedere [Aree di lavoro e sessioni](#workspaces-and-sessions). |
 | ![Pulsante Script R di origine](media/repl-toolbar-06-source-r-script.png) | Script R di origine | CTRL+MAIUSC+S | Chiama `source` con lo script R attualmente attivo nell'editor di Visual Studio, che esegue il codice.  Questo pulsante viene visualizzato solo se è aperto un file R nell'editor di Visual Studio. | 
 | ![Pulsante Script R di origine con eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script R di origine con eco | CTRL+MAIUSC+INVIO | È simile allo script R di origine, ma visualizza il contenuto dello script nella finestra interattiva. | 
 | ![Pulsante Interrompi R](media/repl-toolbar-08-interrupt-r.png)| Interrompi R | ESC | Arresta qualsiasi codice in esecuzione nella finestra interattiva, ad esempio il ciclo `while` illustrato nella schermata all'inizio di questa sezione. |
-| ![Pulsante Collega debugger](media/repl-toolbar-09b-attach-debugger.png)| Collega debugger | n/d | Disponibile anche tramite il comando **Debug > Collega a R interattivo**. | 
+| ![Pulsante Collega debugger](media/repl-toolbar-09b-attach-debugger.png)| Collega debugger | N/D | Disponibile anche tramite il comando **Debug > Collega a R interattivo**. | 
 | ![Pulsante Imposta la directory di lavoro sul percorso del file di origine](media/repl-toolbar-10-set-working-directory-source.png)| Imposta la directory di lavoro sul percorso del file di origine | Ctrl+Maiusc+E | Imposta la directory di lavoro sul file di origine più recentemente caricato nella finestra interattiva tramite `source`. Vedere [Directory di lavoro](#working-directory). |
 | ![Pulsante Imposta la directory di lavoro sul percorso del progetto](media/repl-toolbar-11-set-working-directory-to-project.png) | Imposta la directory di lavoro sul percorso del progetto | CTRL+MAIUSC+P | Imposta la directory di lavoro sulla radice del progetto attualmente caricato in Visual Studio. Vedere [Directory di lavoro](#working-directory). |
-| (Campo testo) | Seleziona directory di lavoro | n/d | Campo di input diretto per la directory di lavoro. Vedere [Directory di lavoro](#working-directory). |
-
+| (Campo testo) | Seleziona directory di lavoro | N/D | Campo di input diretto per la directory di lavoro. Vedere [Directory di lavoro](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Aree di lavoro e sessioni
 
@@ -88,12 +88,10 @@ Per ricaricare un'area di lavoro salvata in precedenza, selezionare il pulsante 
 
 Il pulsante **Reimposta** o il comando **R Tools > Sessione > Reimposta** cancella il contesto della sessione. Se si usa una sessione remota, la procedura di reimpostazione elimina anche il profilo utente nel computer remoto per cancellare tutti i file in esso archiviati. Vedere [Aree di lavoro](workspaces.md#directories-on-local-and-remote-computers).
 
-
 ## <a name="working-directory"></a>Directory di lavoro
 
 Gli sviluppatori vogliono in genere modificare la directory di lavoro durante una sessione interattiva. I diversi comandi disponibili sulla barra degli strumenti, il menu **R Tools > Directory di lavoro** e i menu di scelta rapida del progetto consentono di impostare facilmente una directory di lavoro sul percorso di un file di origine, sul percorso del progetto o su qualsiasi altro percorso arbitrario. In questo modo è possibile evitare di digitare percorsi completi o percorsi lunghi quando si fa riferimento ai file.
 
- 
 ## <a name="history"></a>Cronologia
 
 Ogni riga immessa nella finestra interattiva, incluse le righe inviate da un editor, viene mantenuta nella cronologia di REPL. È quindi possibile spostarsi nella cronologia con la freccia GIÙ o SU, come avviene nella riga di comando.

@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f57cfea2655061985f58692c2d6c47c6433230bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de2af589a92e401ecf549726dea1a5ae300a20bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 Blend per Visual Studio consente di progettare applicazioni Windows e Web basate su XAML. Offre la stessa esperienza di progettazione XAML di base disponibile in Visual Studio e aggiunge finestre di progettazione visive per attività avanzate, quali animazioni e comportamenti. Per un confronto tra gli strumenti, vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md).
@@ -97,7 +98,7 @@ Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti al
   
  ![Pannello Proprietà](../designers/media/blend5_properties_panel.png "Blend5_properties_panel")  
   
- **Categorie** Consente di espandere e comprimere le categorie delle proprietà. Fare clic su **Espandi** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") o  **Comprimi** ![Collapse](../designers/media/b5_collapse_button.png "b5_collapse_button") per visualizzare o nascondere i dettagli della categoria.  
+ **Categorie** Consente di espandere e comprimere le categorie delle proprietà. Fare clic su **Espandi** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") e **Comprimi** ![Comprimi](../designers/media/b5_collapse_button.png "b5_collapse_button") per visualizzare o nascondere i dettagli della categoria.  
   
 |||  
 |-|-|  

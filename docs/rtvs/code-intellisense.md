@@ -1,5 +1,5 @@
 ---
-title: IntelliSense per codice R per Visual Studio | Documenti di Microsoft
+title: IntelliSense per codice R in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,28 +12,29 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: a54ebc3abb5f63e2503f48e050e5b9d3e3546abb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 Visual Studio IntelliSense visualizza informazioni sulle funzioni che è possibile chiamare, sui membri di oggetti, sugli argomenti della funzione e sui [frammenti di codice](code-snippets.md) direttamente durante la scrittura del codice. Visualizza anche i possibili completamenti durante la digitazione e completa quando si preme TAB o INVIO (vedere le [opzioni dell'editor](code-editing.md#editor-options) nella scheda **Avanzate**). Intellisense è disponibile sia nell'editor che nella[ finestra interattiva](interactive-repl.md).
 
-![Visualizzazione di una firma della funzione di IntelliSense](media/intellisense-function-signature.png) 
+![Visualizzazione di una firma della funzione di IntelliSense](media/intellisense-function-signature.png)
 
 Durante la digitazione di una funzione o di un'altra istruzione, IntelliSense offre menu di completamento automatico (con distinzione tra maiuscole e minuscole) filtrato in base ai valori che sono già stati immessi:
 
 ![Menu di completamento automatico di IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Premendo TAB (o INVIO o BARRA SPAZIATRICE a seconda delle opzioni impostate) è possibile inserire l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione. 
+Premendo TAB (o INVIO o BARRA SPAZIATRICE a seconda delle opzioni impostate) è possibile inserire l'elemento selezionato nell'elenco a discesa. È possibile modificare la selezione con i tasti di direzione.
 
 IntelliSense offre anche suggerimenti per i membri di oggetti R:
- 
+
 ![Suggerimenti di IntelliSense per i membri di un oggetto](media/intellisense-auto-complete-r-objects.png)
- 
+
 Se si preme ESC, l'intero menu scompare. È possibile ripristinarlo premendo CTRL+BARRA SPAZIATRICE.
 
 Se si digita il segno di `(` aperta per una chiamata di funzione viene inserito il segno di `)` chiusa e viene ripristinato il supporto per la firma come illustrato in precedenza:

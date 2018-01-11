@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 230362695dd9f099c15eb1113e1eb121418b0c41
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedura: Sbloccare Visual Studio
 
@@ -68,9 +69,9 @@ Se non si immettono di nuovo le credenziali, il token inizia a diventare obsolet
 
 ### <a name="update-expired-licenses"></a>Aggiornare le licenze scadute
 
- Se l'abbonamento è completamente scaduto e non si dispone più dei diritti di accesso a Visual Studio, è necessario rinnovare l'abbonamento o aggiungere un altro account con abbonamento. Per visualizzare altre informazioni sulla licenza in uso, passare a **File**, **Impostazioni account** e quindi verificare le informazioni sulla licenza nella parte destra della finestra di dialogo. Se si ha un altro abbonamento associato a un account diverso, aggiungere l'account all'elenco **Tutti gli account** sul lato sinistro della finestra di dialogo selezionando il collegamento **Aggiungi un account**.
+ Se l'abbonamento è completamente scaduto e non si hanno più i diritti di accesso a Visual Studio, è necessario rinnovare l'abbonamento o aggiungere un altro account con abbonamento. Per visualizzare altre informazioni sulla licenza in uso, passare a **File**, **Impostazioni account** e quindi verificare le informazioni sulla licenza nella parte destra della finestra di dialogo. Se si ha un altro abbonamento associato a un account diverso, aggiungere l'account all'elenco **Tutti gli account** sul lato sinistro della finestra di dialogo selezionando il collegamento **Aggiungi un account**.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Accesso a Visual Studio)  
-[Risorse Internet usate da Visual Studio](../ide/connected-environment.md)
+* [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Accesso a Visual Studio)
+ 

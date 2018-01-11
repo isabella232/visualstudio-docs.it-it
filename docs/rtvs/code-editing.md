@@ -12,17 +12,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 013c32cb1567b3a4830a5c63059b14ea23df5427
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Modifica del codice R in Visual Studio
 
 R Tools per Visual Studio (RTVS) si adatta allo strumento di modifica di Visual Studio in particolare per quanto riguarda il codice R, mantenendo tutte le funzionalità e la possibilità di usare le estensioni. Se si preferiscono i tasti di scelta rapida VIM, è ad esempio possibile installare l'[estensione VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) gratuita da Visual Studio Gallery.
 
-Contenuto dell'argomento:
+In questo argomento
 
 - [Evidenziazione della sintassi](#syntax-highlighting)
 - [Modifica e organizzazione del codice](#editing-and-organizing-code)
@@ -34,7 +35,7 @@ Contenuto dell'argomento:
 
 Vedere anche gli argomenti su [IntelliSense](code-intellisense.md), [linting](code-linting.md), [frammenti di codice](code-snippets.md) e [R Markdown](rmarkdown.md).
 
-## <a name="syntax-highlighting"></a>Evidenziazione della sintassi 
+## <a name="syntax-highlighting"></a>Evidenziazione della sintassi
 
 Oltre ad applicare un colore alle diverse parti del codice, ad esempio stringhe, commenti e parole chiave, RTVS evidenzia e abilita anche i collegamenti nei commenti:
 
@@ -67,7 +68,7 @@ Le aree di codice comprimibili consentono di nascondere temporaneamente parte de
 Per creare un'area personalizzata, racchiudere il codice interessato con commenti che terminano con `---`. Il piccolo controllo + /- a sinistra del codice consente di espandere e comprimere le aree:
 
 ![Creazione di un'area comprimibile con commenti](media/editing-collapsible-regions.gif)
- 
+
 Per impostazione predefinita, Visual Studio inserisce gli spazi quando si preme TAB. Anche in questo caso è possibile modificare tale comportamento, seguendo le istruzioni descritte in [Opzioni, Editor di testo, Tutti i linguaggi](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Esplorazione del codice
@@ -126,7 +127,7 @@ Le opzioni contenute nelle schede **Generale**, **Barre di scorrimento** e **Tab
 
 Le opzioni nella scheda **R > Avanzate** sono specifiche di RTVS:
 
-| Gruppo | Opzione | Default | Descrizione |
+| Gruppo | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- | --- |
 | Formattazione | Formattazione automatica | Attivato | Riformatta il codice durante la digitazione. Non condiziona i comandi **Formatta selezione** o **Formatta documento**. |
 | | Parentesi graffe espanse | Disattivato | Inserisce una { aperta in una nuova riga. |

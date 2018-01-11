@@ -1,7 +1,7 @@
 ---
 title: Versione corrente di R Tools per Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
@@ -12,17 +12,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 835a854e4b5540910b5d6a6bae2e3bf89748c860
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 11bad9be7d64d0760b1e7a3d138b8770f0459899
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rtvs-current-version"></a>Versione corrente di RTVS
 
-Al momento dell'ultimo aggiornamento di questa pagina, la versione più recente di R Tools per Visual Studio (RTVS) era **1.3.31108.1213**. La versione dell'utente può variare in base alla versione di Visual Studio e all'uso di un eventuale canale di anteprima.
+Al momento dell'ultimo aggiornamento di questa pagina, la versione più recente di R Tools per Visual Studio (RTVS) è **1.0.31108.1213**. La versione dell'utente può variare in base alla versione di Visual Studio e all'uso di un eventuale canale di anteprima.
 
-Per controllare la versione, accedere a **Guida > Informazioni su** in Visual Studio e scorrere verso il basso fino alla voce **R Tools per Visual Studio**: 
+Per controllare la versione, accedere a **Guida > Informazioni su** in Visual Studio e scorrere verso il basso fino alla voce **R Tools per Visual Studio**:
 
 ![Controllo della versione RTVS in Visual Studio (VS2017)](media/current-version.png)
 

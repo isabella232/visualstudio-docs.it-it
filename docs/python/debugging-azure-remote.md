@@ -1,5 +1,5 @@
 ---
-title: Debug remoto in Azure con Python in Visual Studio | Microsoft Docs
+title: Debug remoto di Azure con Python in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: c9ac484d90d7c80cbff0e20f33ede099b36c9786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Debug remoto di codice Python in Azure
 
@@ -28,7 +29,7 @@ Dato che il debug remoto di Azure usa WebSocket, è necessario abilitare i socke
 
 Dopo aver distribuito correttamente il progetto e aver abilitato WebSocket, è possibile collegarsi al servizio app da **Esplora server** in Visual Studio (**Visualizza > Esplora server**). Individuare il sito in **Azure > Servizio app** e il gruppo di risorse applicabile, fare clic con il pulsante destro del mouse e scegliere **Collega debugger (Python)**. Il comando **Collega debugger** è per le applicazioni .NET in esecuzione in IIS e risulta utile solo se si ospita codice .NET insieme all'app Python.
 
-Visual Studio potrebbe indirizzare a un set di istruzioni per il collegamento diretto, come descritto di seguito in [Collegamento senza Esplora server](#attaching-without-server-explorer). Se non viene visualizzato il comando **Collega debugger (Python)** o Visual Studio non riesce a collegarsi al sito, vedere [Risoluzione dei problemi di debug remoto in Azure](debugging-azure-remote-troubleshooting.md).
+Visual Studio potrebbe indirizzare a un set di istruzioni per il collegamento diretto, come descritto di seguito in [Collegamento senza Esplora server](#attaching-without-server-explorer). Se il comando **Collega debugger (Python)** non viene visualizzato o Visual Studio non riesce a collegarsi al sito, vedere [Risoluzione dei problemi di debug remoto di Azure](debugging-azure-remote-troubleshooting.md).
 
 Se il collegamento ha esito positivo, Visual Studio passa a una vista del debugger. La barra degli strumenti indica il processo sottoposto a debug, ad esempio un URI `wss://`:
 

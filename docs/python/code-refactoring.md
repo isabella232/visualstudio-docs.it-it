@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>Refactoring del codice Python
 
@@ -25,9 +26,10 @@ Visual Studio offre diversi comandi per la trasformazione e la pulizia automatic
 - [Rinomina](#rename) consente di modificare un nome di classe, metodo o variabile selezionato
 - [Estrai metodo](#extract-method) consente di creare un nuovo metodo dal codice selezionato
 - [Aggiungi importazione](#add-import) fornisce uno smart tag per aggiungere un'importazione mancante
-- [Rimuovi importazioni](#remove-imports) consente di rimuovere le importazioni inutilizzate
+- [Rimuovi importazioni](#remove-unused-imports) consente di rimuovere le importazioni inutilizzate
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>Rinomina
 
 1. Fare clic con il pulsante destro del mouse sull'identificatore che si vuole rinominare e scegliere **Rinomina** oppure posizionare il cursore su tale identificatore e scegliere i comandi **Modifica > Refactoring > Rinomina** (F2).
@@ -70,6 +72,7 @@ Analogamente, Visual Studio filtra le funzioni importate da altri moduli o dallo
 Infine, Visual Studio esclude l'importazione se un elemento viene normalmente escluso, ma ha altri valori che verrebbero inclusi, ad esempio perché al nome è stato assegnato un valore nel modulo. Questo comportamento presuppone che il valore non debba essere esportato perché è definito in un altro modulo ed è pertanto probabile che l'assegnazione aggiuntiva sia un valore fittizio, anch'esso non esportato.
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Rimuovi importazioni
 
 Durante la scrittura del codice è facile ritrovarsi con istruzioni `import` per moduli che non vengono usati affatto. Dato che Visual Studio analizza il codice, può determinare automaticamente se un'istruzione `import` è necessaria verificando se il nome importato viene usato nell'ambito dell'istruzione.

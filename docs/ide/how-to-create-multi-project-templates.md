@@ -16,61 +16,18 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d4ffd6c3aa23ebc2b801de2d581876ff5afd480
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac7701e3e4dc11bc5634436c3e6f831f6711e514
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: creare modelli basati su più progetti
 I modelli multiprogetto fungono da contenitori per due o più progetti. Quando un progetto basato su un modello per più progetti viene creato nella finestra di dialogo **Nuovo progetto**, ogni progetto del modello viene aggiunto alla soluzione.  
-  
- Un modello per più progetti deve includere gli elementi seguenti, compressi in un file con estensione zip:  
-  
--   Un file radice con estensione vstemplate per l'intero modello per più progetti. Il file con estensione vstemplate contiene i metadati visualizzati dalla finestra di dialogo **Nuovo progetto** e specifica la posizione dei file con estensione vstemplate per i progetti del modello. Questo file deve trovarsi nella radice del file con estensione zip.  
-  
--   Una o più cartelle che contengono i file necessari per un modello di progetto completo. Sono inclusi tutti i file di codice per il progetto e un file con estensione vstemplate per il progetto.  
-  
- Ad esempio, il file con estensione zip di un modello per più progetti con due progetti può includere i file e le directory seguenti:  
-  
- MultiProjectTemplate.vstemplate  
-  
- \Project1\Project1.vstemplate  
-  
- \Project1\Project1.vbproj  
-  
- \Project1\Class.vb  
-  
- \Project2\Project2.vstemplate  
-  
- \Project2\Project2.vbproj  
-  
- \Project2\Class.vb  
-  
- Il file radice con estensione vstemplate per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:  
-  
--   L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup`. Ad esempio:  
-  
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
-  
--   L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione vstemplate dei progetti inclusi. Ad esempio:  
-  
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
-  
+
+ Un modello per più progetti è costituito da un modello per due o più progetti e da un modello radice di tipo `ProjectGroup`.
+
  I modelli per più progetti si differenziano dai modelli normali anche nel comportamento. I modelli per più progetti presentano le caratteristiche specifiche seguenti:  
   
 -   Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti tramite la finestra di dialogo **Nuovo progetto**. Usare l'attributo `ProjectName` nell'elemento `ProjectTemplateLink` per specificare il nome di ogni progetto. Per altre informazioni, vedere il primo esempio della sezione seguente.  
@@ -79,13 +36,82 @@ I modelli multiprogetto fungono da contenitori per due o più progetti. Quando u
   
 ### <a name="to-create-a-multi-project-template"></a>Per creare un modello per più progetti  
   
-1.  Creare i progetti da includere nel modello per più progetti.  
+1.  Creare i progetti da includere nel modello per più progetti:
+    1.  Creare un progetto.  
   
-2.  Creare i file con estensione vstemplate per ogni progetto. Per altre informazioni, vedere [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md).  
+    > [!NOTE]
+    >  Quando si assegna il nome a un progetto che fungerà da origine per un modello, usare solo caratteri di identificatore validi. Un modello esportato da un progetto con nome contenente caratteri non validi può causare errori di compilazione nei progetti futuri basati sul modello. Per altre informazioni sui caratteri di identificatore valido, vedere [Declared Element Names](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names) (Nomi di elementi dichiarati).  
   
+    2.  Modificare il progetto finché non è pronto per l'esportazione come modello.  
+  
+    3.  Modificare in base alle esigenze i file del codice per indicare dove deve essere applicata la sostituzione dei parametri. Per altre informazioni sulla sostituzione dei parametri, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).  
+  
+    4.  Nel menu **Progetto** scegliere**Esporta modello**. Verrà aperta l'**Esportazione guidata modelli**.  
+  
+    5.  Fare clic su **Modello di progetto**.  
+  
+    6.  Se la soluzione corrente contiene più progetti, selezionare i progetti da esportare in un modello.  
+  
+    7.  Scegliere **Avanti**.  
+  
+    8.  Selezionare un'icona e un'immagine di anteprima per il modello. Queste verranno visualizzate nella finestra di dialogo **Nuovo progetto**.  
+  
+    9. Immettere un nome e una descrizione per il modello.  
+  
+    10. Scegliere **Fine**. Il progetto verrà esportato in un file con estensione zip, inserito nel percorso di output specificato e, se questa azione è stata selezionata, importato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+  
+2.  Estrarre il file con estensione vstemplate dal file ZIP generato nella stessa directory del file di progetto usato per esportare il modello.
+
 3.  Creare un file radice con estensione vstemplate per i metadati del modello per più progetti. Per altre informazioni, vedere il primo esempio della sezione seguente.  
   
 4.  Selezionare i file e le cartelle da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione, scegliere **Invia a** e quindi **Cartella compressa**. I file e le cartelle vengono compressi in un file con estensione zip.  
+  
+> [NOTA!] Un modello per più progetti deve includere gli elementi seguenti, compressi in un file con estensione zip:  
+>   
+> -   Un file radice con estensione vstemplate per l'intero modello per più progetti. Il file con estensione vstemplate contiene i metadati visualizzati dalla finestra di dialogo **Nuovo progetto** e specifica la posizione dei file con estensione vstemplate per i progetti del modello. Questo file deve trovarsi nella radice del file con estensione zip.  
+>   
+> -   Una o più cartelle che contengono i file necessari per un modello di progetto completo. Sono inclusi tutti i file di codice per il progetto e un file con estensione vstemplate per il progetto.  
+>   
+> Ad esempio, il file con estensione zip di un modello per più progetti con due progetti può includere i file e le directory seguenti:  
+>   
+>  MultiProjectTemplate.vstemplate  
+>   
+>  \Project1\Project1.vstemplate  
+>   
+>  \Project1\Project1.vbproj  
+>   
+>  \Project1\Class.vb  
+>   
+>  \Project2\Project2.vstemplate  
+>   
+>  \Project2\Project2.vbproj  
+>   
+>  \Project2\Class.vb  
+>   
+>  Il file radice con estensione vstemplate per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:  
+>   
+> -   L'attributo `Type` dell'elemento `VSTemplate` contiene il valore `ProjectGroup`. Ad esempio:  
+>   
+>     ```  
+>     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+>         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+>     ```  
+>   
+> -   L'elemento `TemplateContent` contiene un elemento `ProjectCollection` che ha uno o più elementi `ProjectTemplateLink` che definiscono i percorsi dei file con estensione vstemplate dei progetti inclusi. Ad esempio:  
+>   
+>     ```  
+>     <TemplateContent>  
+>         <ProjectCollection>  
+>             <ProjectTemplateLink>  
+>                 Project1\Project1.vstemplate  
+>             </ProjectTemplateLink>  
+>             <ProjectTemplateLink>  
+>                 Project2\Project2.vstemplate  
+>             </ProjectTemplateLink>  
+>         </ProjectCollection>  
+>     </TemplateContent>  
+>     ```  
+>   
   
 5.  Inserire il file di modello con estensione zip nella directory dei modelli di progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per impostazione predefinita, la directory è \Documenti\Visual Studio *Versione*\Templates\ProjectTemplates\\.  
   

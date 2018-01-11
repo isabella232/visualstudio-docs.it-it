@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Convenzioni di denominazione per EditorConfig
 
@@ -43,7 +44,7 @@ Per descrivere il tipo di simboli a cui applicare la regola di denominazione, sp
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-I valori consentiti sono elencati di seguito ed è possibile specificare più valori separandoli con una virgola.
+L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
 - \* (usare questo valore per specificare tutti i simboli)
 - classe
@@ -63,7 +64,7 @@ Per descrivere i livelli di accessibilità dei simboli a cui si vuole applicare 
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-I valori consentiti sono elencati di seguito ed è possibile specificare più valori separandoli con una virgola.
+L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
 - \* (usare questo valore per specificare tutti i livelli di accessibilità)
 - public
@@ -81,16 +82,15 @@ Per descrivere i modificatori dei simboli a cui si vuole applicare la regola di 
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-I valori consentiti sono elencati di seguito ed è possibile specificare più valori separandoli con una virgola.
+L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
-- \* (usare questo valore per specificare tutti i modificatori)
 - abstract o must_inherit
 - async
 - const
 - readonly
 - static o shared
 
-Se si omette questa proprietà, la regola di denominazione verrà applicata a tutti i modificatori.
+`required_modifiers` è una proprietà facoltativa. Se si omette questa proprietà, la regola di denominazione verrà applicata a tutti i modificatori.
 
 ## <a name="style"></a>Stile
 
@@ -145,7 +145,7 @@ Nella tabella seguente sono riportati i valori consentiti per la gravità, con i
 
 Gravità | Effetto
 ------------ | -------------
-none o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente seguirà comunque questo stile.
+none o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
 avviso | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'Elenco errori.
 errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'Elenco errori.
@@ -155,7 +155,7 @@ errore | Se questo stile non viene rispettato, viene visualizzato un errore del 
 
 ## <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio di file EDITORCONFIG contenente una convenzione di denominazione che specifica che i nomi di proprietà, metodi, campi, eventi e delegati pubblici devono avere la prima lettera maiuscola. Si noti che questa convenzione di denominazione specifica più tipi di simboli a cui applicare la regola, usando una virgola per separare i valori.
+Il file EDITORCONFIG seguente contiene una convenzione di denominazione che specifica che i nomi di proprietà, metodi, campi, eventi e delegati pubblici devono avere la prima lettera maiuscola. Si noti che questa convenzione di denominazione specifica più tipi di simboli a cui applicare la regola, usando una virgola per separare i valori.
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

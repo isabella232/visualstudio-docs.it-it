@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e7638f1f8134ded87f2bde1f9617757e6ad536b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9845a7db8d71e802cc24160d16e5382717c0c28b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Selezione diretta in Blend
-Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per modificare la forma di un tracciato esistente con lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362"). Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna**.  
+Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile usare per modificare la forma di un tracciato esistente con lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362"). Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna**.  
   
 |Per|Eseguire questa operazione|Puntatore|  
 |-----------------------|-------------|-------------|  

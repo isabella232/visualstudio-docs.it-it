@@ -1,5 +1,5 @@
 ---
-title: Modello di progetto Web per Python in Visual Studio | Microsoft Docs
+title: Modelli di progetto Web per Python in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -8,20 +8,20 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-web-project-templates"></a>Modelli di progetti Web Python
 
-Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. È anche possibile usare il modello generico "Progetto Web" per altri framework, ad esempio Pyramid.
+Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. È anche possibile usare il modello generico **Progetto Web** per altri framework, come ad esempio Pyramid.
 
 Visual Studio non include i framework, che devono essere installati separatamente. A tale scopo, fare clic con il pulsante destro del mouse sul progetto e scegliere **Python > Install/upgrade framework** (Installa/Aggiorna framework).
 
@@ -37,7 +37,7 @@ Quando si crea un progetto da un modello specifico del framework, viene visualiz
 
 Durante la distribuzione nel servizio app di Microsoft Azure, selezionare una versione di Python come [estensione sito](https://aka.ms/PythonOnAppService) e installare manualmente i pacchetti. Dal momento poi che il servizio app di Azure **non** installa automaticamente i pacchetti da un file `requirements.txt` quando viene distribuito da Visual Studio, attenersi ai dettagli di configurazione illustrati in [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Il servizio cloud di Microsoft Azure invece *supporta* il file `requirements.txt`. Per dettagli, vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md).
+I servizi cloud di Microsoft Azure invece *supportano* il file `requirements.txt`. Per dettagli, vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md).
 
 ## <a name="debugging"></a>Debug
 
@@ -63,12 +63,12 @@ Per specificare qualsiasi proprietà di progetto o variabile di ambiente, è pos
 > [!Note]
 > I valori in **Comando esegui server** vengono usati con il comando **Debug > Avvia server** oppure quando si preme CTRL+F5. I valori nel gruppo **Comando debug server** vengono usati con il comando **Debug > Avvia il server di debug** oppure quando si preme F5.
 
-
 ### <a name="sample-bottle-configuration"></a>Esempio di configurazione di Bottle
 
-Il modello di progetto Web Bottle include codice boilerplate che esegue la configurazione necessaria. Un'app Bottle importata potrebbe però non includere questo codice. In questo caso, le impostazioni seguenti consentono di avviare l'app usando il modulo `bottle` installato:
+Il modello **Progetto Web Bottle** include codice boilerplate che esegue la configurazione necessaria. Un'app Bottle importata potrebbe però non includere questo codice. In questo caso, le impostazioni seguenti consentono di avviare l'app usando il modulo `bottle` installato:
 
 - Gruppo **Comando esegui server**:
+
     - **Comando**: `bottle` (modulo)
     - **Argomenti**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -83,6 +83,7 @@ L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da riga di comando `pcreate`. L'app creata può quindi essere importata usando il modello [Da codice Python esistente](python-projects.md#creating-a-project-from-existing-files). Successivamente, selezionare la personalizzazione **Progetto Web generico** per configurare le opzioni. In queste impostazioni si presuppone che Pyramid sia installato in un ambiente virtuale nel percorso `..\env`.
 
 - Gruppo **Debug**:
+
     - **Porta server**: 6543 (o qualunque altra sia configurata nei file con estensione ini)
 
 - Gruppo **Comando esegui server**:
@@ -95,7 +96,6 @@ Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da
 
 > [!Tip]
 > Sarà probabilmente necessario configurare la proprietà **Directory di lavoro** del progetto perché le app Pyramid si trovano in genere a un livello di directory inferiore rispetto alla parte superiore dell'albero di origine.
-
 
 ### <a name="other-configurations"></a>Altre configurazioni
 
@@ -169,6 +169,6 @@ Se si aggiunge il modello `web.config` di debug al progetto e si intende usare i
 
 ![Modifica della configurazione di pubblicazione](media/template-web-publish-config.png)
 
-Il comando **Converti in progetto servizio cloud di Microsoft Azure** (immagine seguente) consente di aggiungere un progetto di servizio cloud alla soluzione. Questo progetto include le impostazioni di distribuzione e la configurazione per i servizi e le macchine virtuali da usare. Usare il comando **Pubblica** nel progetto cloud per eseguire la distribuzione nel servizio cloud. Con il comando **Pubblica** nel progetto Python la distribuzione viene ancora eseguita nei siti Web. Per altre informazioni, vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md).
+Il comando **Converti in progetto servizio cloud di Microsoft Azure** (immagine seguente) consente di aggiungere un progetto di servizio cloud alla soluzione. Questo progetto include le impostazioni di distribuzione e la configurazione per i servizi e le macchine virtuali da usare. Usare il comando **Pubblica** nel progetto cloud per eseguire la distribuzione nei servizi cloud. Con il comando **Pubblica** nel progetto Python la distribuzione viene ancora eseguita nei siti Web. Per altre informazioni, vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md).
 
 ![Comando Converti in progetto servizio cloud di Microsoft Azure](media/template-web-convert-menu.png)

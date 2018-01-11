@@ -11,52 +11,49 @@ helpviewer_keywords:
 - application properties [Visual Studio]
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c5753d12f8926653bcc655e403be20910472fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 203b8dad25cd7d6128cff54ac0f2c24c78fba680
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="application-properties"></a>Application Properties
-È possibile impostare le proprietà generali delle applicazioni per Visual Basic, C# e F#, ad esempio il tipo di applicazione, l'oggetto di avvio e le informazioni sull'assembly, nel riquadro **Applicazione** di **Progettazione progetti**.  
-  
- Nel riquadro **Applicazione** è possibile eseguire le attività seguenti:  
-  
+# <a name="application-properties"></a>Proprietà dell'applicazione
+
+È possibile impostare le proprietà generali delle applicazioni per Visual Basic, C# e F#, ad esempio il tipo di applicazione, l'oggetto di avvio e le informazioni sull'assembly, nel riquadro **Applicazione** di **Progettazione progetti**.
+
+Nel riquadro **Applicazione** è possibile eseguire le attività seguenti:
+
 -   Specificare le informazioni dell'assembly  
-  
+
 -   Specificare una schermata iniziale per un'applicazione  
-  
+
 -   Specificare gli eventi a livello di applicazione  
-  
+
 -   Modificare un nome di assembly  
-  
+
 -   Modificare lo spazio dei nomi per un'applicazione  
-  
+
 -   Modificare il tipo di applicazione  
-  
+
 -   Modificare l'oggetto di avvio per un'applicazione  
-  
+
 -   Specificare l'icona di un'applicazione  
-  
+
 -   Abilitare gli stili di visualizzazione di Windows XP  
-  
+
 -   Specificare il comportamento della creazione di istanze per un'applicazione  
-  
+
 -   Abilitare l'autenticazione utente personalizzata  
-  
--   Specificare il comportamento di arresto di un'applicazione  
-  
- Le attività disponibili per l'applicazione dipendono dal linguaggio di sviluppo usato.  
-  
-## <a name="in-this-section"></a>Contenuto della sezione  
+
+-   Specificare il comportamento di arresto di un'applicazione
+
+## <a name="see-also"></a>Vedere anche
+
  [Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
-  
-## <a name="see-also"></a>Vedere anche  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  (Pagina Applicazione, Creazione progetti (Visual Basic))  
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

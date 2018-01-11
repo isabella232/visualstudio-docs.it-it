@@ -1,7 +1,7 @@
 ---
 title: Panoramica dell'ambiente IDE di Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Panoramica dell'ambiente IDE di Visual Studio
 
@@ -35,19 +36,41 @@ L'ambiente IDE (Interactive Development Environment) di Visual Studio è un ambi
 
 ### <a name="create-cloud-apps-for-azure"></a>Creare app cloud per Azure
 
-Visual Studio offre un gruppo di strumenti che consentono di creare facilmente applicazioni abilitate per il cloud con tecnologia Microsoft Azure. È possibile gestire la configurazione, la compilazione, il debug, l'inserimento in pacchetti e la distribuzione di applicazioni e servizi in Microsoft Azure direttamente dall'IDE. Si possono sfruttare i servizi di Azure per le proprie app usando Servizi connessi. Per ottenere gli strumenti di Azure per .NET, selezionare il carico di lavoro **Sviluppo di Azure** quando si installa Visual Studio. Per altre informazioni, vedere [Visual Studio Tools per Azure](https://www.visualstudio.com/vs/azure-tools/).
+Visual Studio offre un gruppo di strumenti che consentono di creare facilmente applicazioni abilitate per il cloud con tecnologia Microsoft Azure. È possibile gestire la configurazione, la compilazione, il debug, l'inserimento in pacchetti e la distribuzione di applicazioni e servizi in Microsoft Azure direttamente dall'IDE. Per ottenere gli strumenti di Azure per .NET, selezionare il carico di lavoro **Sviluppo di Azure** quando si installa Visual Studio. Per altre informazioni, vedere [Visual Studio Tools per Azure](https://www.visualstudio.com/vs/azure-tools/).
+
+È possibile sfruttare i servizi di Azure per le app usando servizi connessi, ad esempio:
+
+- [Servizi mobili di Azure](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Archiviazione di Azure](http://azure.microsoft.com/documentation/services/storage/)
+
+[HockeyApp](https://www.visualstudio.com/hockey-app/) consente di distribuire versioni beta, raccogliere segnalazioni di arresti anomali in tempo reale e ottenere commenti da utenti reali. È inoltre possibile integrare le API REST di Office 365 nella propria app per connettersi a dati archiviati nel cloud. Per altre informazioni, vedere [questi esempi in GitHub](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) consente di rilevare e diagnosticare i problemi di qualità delle app e dei servizi Web. Application Insights consente anche di comprendere l'uso effettivo dell'app da parte degli utenti, rendendo quindi possibile l'ottimizzazione dell'esperienza utente.
 
 ### <a name="create-apps-for-the-web"></a>Creare app per il Web
 
-Il mondo moderno è dominato dal Web e Visual Studio può essere utile per scrivere app per questa piattaforma. È possibile creare app Web con ASP.NET, Node.js, Python, JavaScript e TypeScript. Visual Studio riconosce framework Web quali Angular, jQuery, Express e altri. ASP.NET Core e .NET Core supportano i sistemi operativi Windows, Mac e Linux. Per altre informazioni, vedere [Strumenti Web moderni](https://www.visualstudio.com/vs/modern-web-tooling/).
+Il mondo moderno è dominato dal Web e Visual Studio può essere utile per scrivere app per questa piattaforma. È possibile creare app Web con ASP.NET, Node.js, Python, JavaScript e TypeScript. Visual Studio riconosce framework Web quali Angular, jQuery, Express e altri. ASP.NET Core e .NET Core supportano i sistemi operativi Windows, Mac e Linux. [ASP.NET Core](http://www.asp.net/core/overview) è un aggiornamento principale per MVC, WebAPI e SignalR e viene eseguito in Windows, Mac e Linux.  ASP.NET Core è stato completamente riprogettato per fornire uno stack .NET pulito e componibile per la compilazione di moderni servizi e app Web basati sul cloud.
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>Scrivere codice in un ambiente di modifica di alto livello
+Per altre informazioni, vedere [Strumenti Web moderni](https://www.visualstudio.com/vs/modern-web-tooling/).
 
-Visual Studio consente di scrivere codice rapidamente e facilmente grazie a funzionalità quali colorazione della sintassi, completamento delle istruzioni, IntelliSense (descrizioni popup dell'elemento di codice selezionato), strutturazione del codice, punti di interruzione per il debug e molto altro ancora.
+### <a name="build-cross-platform-apps-and-games"></a>Creare app e giochi multipiattaforma
 
-![Esempio di codice JavaScript](../ide/media/vside_tour_javascript_example.gif)
+È possibile usare Visual Studio per creare app e giochi per Android, iOS, Linux, Windows e altri dispositivi. Altre informazioni sullo [sviluppo per dispositivi mobili multipiattaforma](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Le app di Windows universali consentono di sfruttare il codice su più piattaforme. Per altre informazioni, vedere [App di Windows universali](https://dev.windows.com/en-us/windows-apps).
 
-Per altre informazioni, vedere [Scrittura di codice nell'Editor di testo e del codice](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
+Scegliere gli strumenti necessari in base ai requisiti dell'app e al linguaggio che si vuole usare:
+
+- [Xamarin per Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): una codebase comune in C# per tutti i dispositivi.
+
+- [Strumenti di Visual Studio per Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md): una codebase comune per HTML, CSS e JavaScript o Typescript.
+
+- [Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md): sviluppo di giochi 2D/3D in C#.
+
+- [C++ per lo sviluppo multipiattaforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): app e librerie di codice condiviso in C++.
+
+- [Visual Studio Emulator for Android](../cross-platform/visual-studio-emulator-for-android.md): eseguire il debug e testare le applicazioni Android indipendentemente dall'IDE.
+
+[Creare giochi con Visual Studio](https://www.visualstudio.com/vs/game-development/) tramite strumenti di sviluppo di giochi come DirectX, Unity, Unreal, Cocos e altri ancora.
 
 Visual Studio può essere utile per molte altre operazioni. Per un elenco più completo, vedere [IDE di Visual Studio](https://www.visualstudio.com/vs/).
 
@@ -63,7 +86,7 @@ Per seguire la procedura per la creazione di un programma riportata di seguito, 
 
 Oltre a un miglioramento delle prestazioni di installazione, Visual Studio 2017 garantisce tempi più brevi di avvio dell'ambiente IDE e di caricamento delle soluzioni.
 
-Per altre informazioni sull'installazione di Visual Studio nel sistema, vedere [Installare Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).  
+Per altre informazioni sull'installazione di Visual Studio nel sistema, vedere [Installare Visual Studio 2017](../install/install-visual-studio.md).
 
 ## <a name="sign-in"></a>Accedi
 
@@ -129,7 +152,7 @@ Per apprendere qualcosa, le prove pratiche rappresentano sempre un buon metodo. 
 
 1. Per interrompere l'esecuzione del programma, scegliere il pulsante Arresta (![pulsante Arresta](../ide/media/VSIDE_StopButton.png)) sulla barra degli strumenti.
 
-Ecco quello che è stato fatto finora: creazione di un nuovo progetto universale di Windows C# in Visual Studio, visualizzazione del relativo codice, aggiunta di un controllo nella finestra di progettazione, modifica del codice XAML e infine esecuzione del progetto. Il processo è stato semplificato per gli scopi di questo esempio, ma mostra comunque alcune parti comuni dell'IDE di Visual Studio che verranno usate per lo sviluppo di app personalizzate. Per altri dettagli su questo esempio, vedere [Creare un'app Hello, world (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+Ecco quello che è stato fatto finora: creazione di un nuovo progetto universale di Windows C# in Visual Studio, visualizzazione del relativo codice, aggiunta di un controllo nella finestra di progettazione, modifica del codice XAML e infine esecuzione del progetto. Il processo è stato semplificato per gli scopi di questo esempio, ma mostra comunque alcune parti comuni dell'IDE di Visual Studio che verranno usate per lo sviluppo di app personalizzate. Per altri dettagli su questo esempio, vedere [Creare un'app Hello, world (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
 
 ## <a name="debug-test-and-improve-your-code"></a>Eseguire il debug del codice, testarlo e migliorarlo
 
@@ -153,7 +176,7 @@ Per offrire una panoramica visiva di Visual Studio ad alto livello, l'immagine s
 
 - La finestra [Output](../ide/reference/output-window.md) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni messaggio viene visualizzato in una scheda separata.
 
-- [Team Explorer](/vsts/user-guide/work-team-explorer) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)]  (/vsts/tfvc/overview).
+- [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/vsts/tfvc/overview).
 
 - [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) consente di visualizzare e gestire le risorse di Azure, ad esempio macchine virtuali, tabelle, database SQL e altro ancora. Se una particolare operazione richiede il portale di Azure, Cloud Explorer specifica i collegamenti che consentono di accedere ai percorsi da seguire nel portale di Azure.
 
@@ -161,7 +184,7 @@ Per offrire una panoramica visiva di Visual Studio ad alto livello, l'immagine s
 
 Di seguito sono illustrate alcune altre funzionalità di produttività comuni in Visual Studio:
 
-- La casella di ricerca [Avvio veloce](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. È sufficiente immettere il nome di quello che si sta cercando e Visual Studio elenca i risultati che consentono di passare direttamente alla destinazione corretta. In Avvio veloce vengono visualizzati anche collegamenti per avviare il programma di installazione di Visual Studio per qualsiasi carico di lavoro o singolo componente.
+- La casella di ricerca [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. È sufficiente immettere il nome di quello che si sta cercando e Visual Studio elenca i risultati che consentono di passare direttamente alla destinazione corretta. In Avvio veloce vengono visualizzati anche collegamenti per avviare il programma di installazione di Visual Studio per qualsiasi carico di lavoro o singolo componente.
 
   ![Casella di ricerca di Avvio veloce](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -173,7 +196,7 @@ Di seguito sono illustrate alcune altre funzionalità di produttività comuni in
 
   ![Elenco dei membri di Visual Studio](../ide/media/vs2017_Intellisense.png)
 
-- Le **linee a zigzag** sono sottolineature rosse ondulate che segnalano errori o problemi potenziali nel codice in tempo reale durante la digitazione e consentono di risolverli immediatamente senza attendere che vengano rilevati durante la fase di compilazione o di esecuzione. Se si passa il mouse su una linea a zigzag, vengono visualizzate informazioni aggiuntive sull'errore. Sul margine sinistro può essere visualizzata anche una lampadina con i suggerimenti su come risolvere l'errore. Per altre informazioni, vedere [Eseguire azioni rapide con le lampadine](../ide/perform-quick-actions-with-light-bulbs.md).
+- Le **linee a zigzag** sono sottolineature rosse ondulate che segnalano errori o problemi potenziali nel codice in tempo reale durante la digitazione e consentono di risolverli immediatamente senza attendere che vengano rilevati durante la fase di compilazione o di esecuzione. Se si passa il mouse su una linea a zigzag, vengono visualizzate informazioni aggiuntive sull'errore. Sul margine sinistro può essere visualizzata anche una lampadina con i suggerimenti su come risolvere l'errore. Per altre informazioni, vedere [Azioni rapide](../ide/quick-actions.md).
 
  ![Linee a zigzag](../ide/media/vs2017_squiggle.png)
 
@@ -199,7 +222,7 @@ Di seguito sono illustrate alcune altre funzionalità di produttività comuni in
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gestire il codice sorgente e collaborare con altri utenti
 
-È possibile gestire il codice sorgente in repository GIT ospitati da qualsiasi provider, incluso GitHub. In alternativa, è possibile usare [Visual Studio Team Services (VSTS) ](/vsts/index) per gestire il codice insieme ai bug e agli elementi di lavoro per l'intero progetto. Per altre informazioni sulla gestione dei repository GIT in Visual Studio con Team Explorer, vedere [Get Started with Git and Team Services](/vsts/git/gitquickstart?tabs=visual-studio) (Introduzione a GIT e Team Services). Visual Studio include anche altre funzionalità predefinite di controllo del codice sorgente. Per altre informazioni su tali funzionalità, vedere il post di blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuove funzionalità GIT in Visual Studio 2017).
+È possibile gestire il codice sorgente in repository GIT ospitati da qualsiasi provider, incluso GitHub. In alternativa, è possibile usare [Visual Studio Team Services (VSTS) ](/vsts/index) per gestire il codice insieme ai bug e agli elementi di lavoro per l'intero progetto. Per altre informazioni sulla gestione dei repository Git in Visual Studio tramite Team Explorer, vedere [Get Started with Git and Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) (Introduzione a Git e a Team Services (VSTS)). Visual Studio include anche altre funzionalità predefinite di controllo del codice sorgente. Per altre informazioni su tali funzionalità, vedere il post di blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuove funzionalità GIT in Visual Studio 2017).
 
 Visual Studio Team Services è un servizio basato sul cloud progettato per ospitare progetti software e consentire la collaborazione in team. Visual Studio Team Services supporta sistemi Git e di controllo del codice sorgente di Team Foundation, nonché metodologie di sviluppo Scrum, CMMI e Agile. Controllo della versione di Team Foundation (TFVC) usa un unico repository del server centralizzato per tenere traccia e gestire le versioni dei file. Le modifiche locali vengono sempre archiviate nel server centrale, in modo che gli altri sviluppatori possano disporre delle modifiche più recenti.
 
@@ -211,7 +234,7 @@ L'immagine seguente mostra la finestra Team Explorer per una soluzione ospitata 
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Per la documentazione di Visual Studio Team Services e Team Foundation Server, vedere [Visual Studio Team Services](/vsts/index).
+È anche possibile automatizzare il processo di compilazione per compilare il codice che gli sviluppatori del team hanno archiviato nel controllo della versione. È possibile ad esempio compilare uno o più progetti di notte o ogni volta che il codice viene controllato. Per altre informazioni, vedere [Integrazione continua su qualsiasi piattaforma](https://www.visualstudio.com/en-us/docs/build/overview).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Connettersi ai servizi, ai database e alle risorse basate su cloud
 
@@ -225,17 +248,22 @@ Scegliendo un servizio nella pagina **Servizi connessi** viene avviata la proced
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Office 365 e in siti Web. Per aprire Esplora server, scegliere **Visualizza**, **Esplora server** dal menu principale. Per altre informazioni su Esplora server, vedere [Add new connections](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) (Aggiungere nuove connessioni).
+**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Office 365 e in siti Web. Per aprire Esplora server, scegliere **Visualizza**, **Esplora server** dal menu principale. Per altre informazioni su Esplora server, vedere [Add new connections](../data-tools/add-new-connections.md) (Aggiungere nuove connessioni).
 
-[SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
+[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
 **Esplora oggetti di SQL Server** in Visual Studio offre una visualizzazione degli oggetti di database simile a quella di SQL Server Management Studio. Esplora oggetti di SQL Server consente di eseguire operazioni semplici di progettazione e amministrazione dei database, tra cui la modifica dei dati di tabelle, il confronto di schemi, l'esecuzione di query usando i menu di scelta rapida direttamente da Esplora oggetti di SQL Server e altro ancora.
 
 ![Esplora oggetti di SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Estendere Visual Studio
+Se Visual Studio non include la funzionalità esatta di cui si ha bisogno, è possibile aggiungerla. È possibile personalizzare l'IDE in base al flusso e allo stile di lavoro personali, aggiungere il supporto per strumenti esterni non ancora integrati in Visual Studio e modificare le funzionalità esistenti per aumentare la produttività. Per trovare la versione più recente degli strumenti di estendibilità di Visual Studio (VS SDK), vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Se Visual Studio non include la funzionalità esatta di cui si ha bisogno, è possibile aggiungerla. È possibile personalizzare l'IDE in base al flusso e allo stile di lavoro personali, aggiungere il supporto per strumenti esterni non ancora integrati in Visual Studio e modificare le funzionalità esistenti per aumentare la produttività. Visual Studio offre strumenti, controlli e modelli resi disponibili da Microsoft, dai partner e dalla community. Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+È possibile usare .NET Compiler Platform (Roslyn) per scrivere i propri analizzatori di codice e generatori di codice. Tutto ciò che serve è disponibile nella pagina di [Roslyn](https://github.com/dotnet/Roslyn).
+
+Cercare le [estensioni esistenti](https://marketplace.visualstudio.com/vs) per Visual Studio create dagli sviluppatori Microsoft, nonché dalla community di sviluppo.
+
+Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Altre informazioni e novità
 

@@ -5,72 +5,89 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio 2017
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | Rilascio | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 Anteprima 1.1 | Anteprima | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | Rilascio | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 Anteprima 1.0 | Anteprima | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | Rilascio | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | Rilascio | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 Anteprima 5.0 | Anteprima | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | Rilascio | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 Anteprima 4.0 | Anteprima | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | Rilascio | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | Rilascio | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | Rilascio | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 Anteprima 3.0 | Anteprima | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | Rilascio | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 Anteprima 2.0 | Anteprima | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | Rilascio | 10/19/2017 | 15.4.27004.2005 |
 | 15.5 Preview 1 | Anteprima | 11/10/2017 | 15.0.27009.1 |
-| 15.4 | Versione | 09/10/2017 | 15.0.27004.20002 |
+| 15.4 | Rilascio | 09/10/2017 | 15.0.27004.20002 |
 | 15.4 Preview 6 | Anteprima | 09/10/2017| 15.0.27004.20002 |
 | 15.4 Preview 5 | Anteprima | 06/10/2017 | 15.0.27004.2000 |
 | 15.4 Preview 4 | Anteprima | 02/10/2017 | 15.0.26929.2 |
 | 15.4 Preview 3 | Anteprima | 21/09/2017 | 15.0.26923.00 |
-| 15.3.5 | Versione | 19/09/2017 | 15.0.26730.16 |
-| 15.0.5 | Versione | 18/09/2017 | 15.0.26228.16 |
-| 15.3.4 | Versione | 12/09/2017 | 15.0.26730.15 |
+| 15.3.5 | Rilascio | 19/09/2017 | 15.0.26730.16 |
+| 15.0.5 | Rilascio | 18/09/2017 | 15.0.26228.16 |
+| 15.3.4 | Rilascio | 12/09/2017 | 15.0.26730.15 |
 | 15.4 Preview 2 | Anteprima | 11/09/2017 | 15.0.26906.1 |
-| 15.3.3| Versione | 29/08/2017 | 15.0.26730.12 |
+| 15.3.3| Rilascio | 29/08/2017 | 15.0.26730.12 |
 | 15.4 Preview 1 | Anteprima | 24/08/2017 | 15.0.26823.01 |
-| 15.3.2 | Versione | 22/08/2017 | 15.0.26730.10 |
-| 15.3.1 | Versione | 18/08/2017 | 15.0.26730.08 |
+| 15.3.2 | Rilascio | 22/08/2017 | 15.0.26730.10 |
+| 15.3.1 | Rilascio | 18/08/2017 | 15.0.26730.08 |
 | 15.3.1 Preview 1 | Anteprima | 18/08/2017 | 15.0.26730.08 |
-| 15.3.1  | Versione | 18/08/2017 | 15.0.26730.08 |
-| 15.4 Preview 1 | Anteprima | 22/08/2017 | n/d |
-| 15.3 | Versione | 14/08/2017 | 15.0.26730.3 |
+| 15.3.1  | Rilascio | 18/08/2017 | 15.0.26730.08 |
+| 15.4 Preview 1 | Anteprima | 24/08/2017 | 15.4.26823.1 |
+| 15.3 | Rilascio | 14/08/2017 | 15.0.26730.3 |
 | 15.3 Preview 7.1 | Anteprima | 11/08/2017 | 15.0.26730.3 |
 | 15.3 Preview 7 | Anteprima | 01/08/2017 | 15.0.26730.0 |
 | 15.3 Preview 6 | Anteprima | 26/07/2017 | 15.0.26724.1 |
 | 15.3 Preview 5 | Anteprima | 24/07/2017 | 15.0.26720.02 |
-| 15.2.6  | Versione | 17/07/2017 | 15.0.26430.16 |
+| 15.2.6  | Rilascio | 17/07/2017 | 15.0.26430.16 |
 | 15.3 Preview 4 | Anteprima | 12/07/2017 | 15.0.26711.1 |
-| 15.2.5  | Versione | 06/07/2017 | 15.0.26430.15 |
+| 15.2.5  | Rilascio | 06/07/2017 | 15.0.26430.15 |
 | 15.3 Preview 3 | Anteprima | 26/06/2017 | 15.0.26621.2 |
-| 15.2.4  | Versione | 21/06/2017 | 15.0.26430.14 |
+| 15.2.4  | Rilascio | 21/06/2017 | 15.0.26430.14 |
 | 15.3 Preview 2.1 | Anteprima | 20/06/2017 | 15.0.26608.5 |
-| 15.2.3  | Versione | 09/06/2017 | 15.0.26430.13 |
+| 15.2.3  | Rilascio | 09/06/2017 | 15.0.26430.13 |
 | 15.3 Preview 2 | Anteprima | 08/06/2017 | 15.0.26606.0 |
-| 15.2.2  | Versione | 30/05/2017 | 15.0.26430.12 |
-| 15.0.4  | Versione | 23/05/2017 | 15.0.26228.13 |
-| 15.2.1  | Versione | 12/05/2017 | 15.0.26430.6 |
+| 15.2.2  | Rilascio | 30/05/2017 | 15.0.26430.12 |
+| 15.0.4  | Rilascio | 23/05/2017 | 15.0.26228.13 |
+| 15.2.1  | Rilascio | 12/05/2017 | 15.0.26430.6 |
 | 15.3 Preview 1.1 | Anteprima | 11/05/2017 | 15.0.26510.0 |
 | 15.3 Preview 1 | Anteprima | 10/05/2017 | 15.0.26507.0 |
-| 15.2 | Versione | 10/05/2017 | 15.0.26430.4 |
+| 15.2 | Rilascio | 10/05/2017 | 15.0.26430.4 |
 | 15.2 Preview 4 | Anteprima | 03/05/2017 | 15.0.26430.1 |
 | 15.2 Preview 3 | Anteprima| 26/04/2017 | 15.0.26424.2 |
 | 15.2 Preview 2 | Anteprima | 20/04/2017 | 15.0.26419.1 |
 | 15.2 Preview 1 | Anteprima | 17/04/2017 | 15.0.26412.1 |
-| 15.1.2  | Versione | 17/04/2017 | 15.0.26403.7 |
-| 15.1.1 | Versione | 10/04/2017 | 15.0.26403.3 |
-| 15.1 | Versione | 05/04/2017 | 15.0.26403.0 |
-| 15.0.3  | Versione | 31/03/2017 | 15.0.26228.12 |
-| 15.0.2 | Versione | 28/03/2017 | 15.0.26228.10 |
+| 15.1.2  | Rilascio | 17/04/2017 | 15.0.26403.7 |
+| 15.1.1 | Rilascio | 10/04/2017 | 15.0.26403.3 |
+| 15.1 | Rilascio | 05/04/2017 | 15.0.26403.0 |
+| 15.0.3  | Rilascio | 31/03/2017 | 15.0.26228.12 |
+| 15.0.2 | Rilascio | 28/03/2017 | 15.0.26228.10 |
 | 15.1 Preview 3 | Anteprima | 27/03/2017 | 15.0.26323.1 |
 | 15.1 Preview 2 | Anteprima | 16/03/2017 | 15.0.26315.0 |
-| 15.0.1  | Versione | 14/03/2017 | 15.0.26228.9 |
+| 15.0.1  | Rilascio | 14/03/2017 | 15.0.26228.9 |
 | 15.1 Preview 1 | Anteprima | 07/03/2017 | 15.0.26304.0 |
-| 15.0.0 | Versione | 07/03/2017 | 15.0.26228.4 |
+| 15.0.0 | Rilascio | 07/03/2017 | 15.0.26228.4 |
 
 ## <a name="get-support"></a>Supporto
 Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

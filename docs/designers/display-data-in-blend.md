@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1097a5724e1fcab96be99c58532e15fedd59da30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a48416fc2508240cd03e545c0b798d3d24ab6f6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-data-in-blend"></a>Visualizzare dati in Blend
 È possibile visualizzare dati di esempio nella finestra di progettazione durante la personalizzazione del layout delle pagine. È possibile generare dati di esempio da zero o usando una classe esistente. È inoltre possibile connettersi a *dati dinamici* che verranno visualizzati nell'app durante l'esecuzione.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
   
- Se si vuole che i dati di esempio vengano visualizzati nelle pagine quando si esegue l'app, scegliere **Opzioni origine dati** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")e quindi **Abilita quando l'applicazione è in esecuzione**.  
+ Se si vuole che i dati di esempio vengano visualizzati nelle pagine quando si esegue l'app, scegliere **Opzioni origine dati** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d") e quindi **Abilita quando l'applicazione è in esecuzione**.  
   
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   

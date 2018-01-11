@@ -1,5 +1,5 @@
 ---
-title: 'Quickstart: Create a Python Projects from a Cookiecutter template in Visual Studio (Guida rapida: Creare un progetto Python a partire da un modello Cookiecutter in Visual Studio) | Microsoft Docs'
+title: 'Guida introduttiva: Creare un progetto Python a partire da un modello Cookiecutter in Visual Studio | Microsoft Docs'
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 876fdbd4507fd7ed55e7b29834d4a3bc5e68dfad
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: d0b21c78ab31c093ef48300ac746c3c2fd7d6778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida rapida: creare un progetto da un modello di Cookiecutter
 
@@ -38,10 +39,9 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installation.
 
 1. Una volta completato il processo, viene visualizzato il messaggio "I file sono stati creati". Selezionare il comando **Apri in Esplora soluzioni** per aprire il progetto.
 
-1. Premere Ctrl+F5 o scegliere **Debug > Avvia senza eseguire debug** per eseguire il programma. 
+1. Premere CTRL+F5 o scegliere **Debug > Avvia senza eseguire debug** per eseguire il programma. 
 
     ![Output del progetto del modello python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 
