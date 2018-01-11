@@ -4,7 +4,7 @@ description: Descrive il funzionamento del programma di installazione di Visual 
 ms.date: 08/30/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,20 +12,21 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 57665c39c875b57a1e90c4f57de68f069823cc86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Installare Visual Studio 2017 in ambienti di rete con larghezza di banda ridotta o non affidabili
 
 È consigliabile provare il nuovo &mdash;programma di installazione Web di Visual Studio, che garantisce risultati molto soddisfacenti nella maggior parte delle situazioni.
 
  > [!div class="button"]
- > [Scaricare Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Scarica Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
 <br/>
 
 Tuttavia, se la connessione Internet non è disponibile o affidabile, è possibile usare la riga di comando per creare una cache locale dei file necessari per completare un'installazione offline. Ecco come fare.
@@ -106,7 +107,13 @@ Usare questo comando per eseguire l'installazione:
 | zh-TW | Cinese tradizionale |
 
 ## <a name="get-support"></a>Supporto
-Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce,per suggerimenti per la risoluzione dei problemi vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). È anche possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nell'IDE di Visual Studio o condividere un suggerimento su [UserVoice](https://visualstudio.uservoice.com/forums/121579). È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte. È anche possibile comunicare con Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio) (è necessario un account [GitHub](https://github.com/)).
+Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Ecco alcune altre opzioni di supporto:
+* È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
+* È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte.
+* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).  Per questa opzione è necessario un account [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vedere anche
 * [Installare Visual Studio](install-visual-studio.md)

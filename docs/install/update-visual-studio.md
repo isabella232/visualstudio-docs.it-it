@@ -1,7 +1,7 @@
 ---
 title: Aggiornare Visual Studio 2017 | Microsoft Docs
 description: Informazioni dettagliate su come aggiornare Visual Studio.
-ms.date: 11/08/2017
+ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - update Visual Studio
 - change visual studio
 - changing Visual Studio
-ms.assetid: db005b65-d233-4471-b337-551fb3fa2464
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 472b14cc16c7dc8c3a0a9bb21ac7d64a858d0094
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aggiornare Visual Studio 2017 alla versione più recente
 Visual Studio viene spesso aggiornato per estenderne le funzionalità e correggere i problemi segnalati dagli utenti. È consigliabile eseguire gli aggiornamenti per essere certi di usare sempre la [versione più recente e ottimizzata di Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history). Ecco come fare.
@@ -30,19 +30,35 @@ Visual Studio viene spesso aggiornato per estenderne le funzionalità e corregge
 ## <a name="update-by-using-the-notifications-hub"></a>Eseguire gli aggiornamenti tramite l'hub Notifiche
 1. Quando sono disponibili aggiornamenti, viene visualizzato un flag di notifica in Visual Studio.
 
-  ![Aggiornare Visual Studio 2017 tramite l'hub Notifiche](media/notification-flag.png "Flag di notifica in Visual Studio")
+  ![Aggiornare Visual Studio 2017 tramite l'hub di notifica](media/notification-flag.png "Flag di notifica aggiornamento in Visual Studio")
 
-  Toccare o fare clic sul flag di notifica per aprire l'hub **Notifiche**.
+  Scegliere il flag di notifica per aprire l'hub **di notifica**.
 
   ![Aggiornare Visual Studio 2017 tramite l'hub Notifiche](media/notifications-hub.png "Hub Notifiche in Visual Studio")
 
-2. Toccare o fare clic su **"Visual Studio Update" è disponibile** per aprire la finestra di dialogo **Estensioni e aggiornamenti**.
+2. Scegliere **"Visual Studio Update" è disponibile**. Verrà aperta la finestra di dialogo **Estensioni e aggiornamenti**.
 
   ![Aggiornare Visual Studio 2017 tramite l'hub Notifiche](media/notifications-hub-select.png "Hub Notifiche in Visual Studio")
 
-3. Nella finestra di dialogo **Estensioni e aggiornamenti** toccare o fare clic sul pulsante **Aggiorna**.
+3. Nella finestra di dialogo **Estensioni e aggiornamenti** scegliere il pulsante **Aggiorna**.
 
   ![Aggiornare Visual Studio 2017 tramite l'hub Notifiche](media/notifications-extensions-and-updates.png "Finestra di dialogo Estensioni e aggiornamenti in Visual Studio")
+
+### <a name="more-about-visual-studio-notifications"></a>Altre informazioni sulle notifiche di Visual Studio
+
+Visual Studio invia una notifica all'utente quando è disponibile un aggiornamento di Visual Studio stesso o di uno o più componenti, nonché quando si verificano eventi specifici nell'ambiente di Visual Studio.
+
+* Se il flag di notifica è giallo, un aggiornamento del prodotto Visual Studio è disponibile per l'installazione.
+* Se il flag di notifica è rosso, la licenza presenta un problema.
+* Se il flag di notifica è nero, sono presenti messaggi informativi o facoltativi.
+
+Scegliere il flag di notifica per aprire l'hub di **notifica** e quindi scegliere le notifiche su cui si vuole agire. In alternativa, è possibile scegliere di ignorare o eliminare una notifica.
+
+ ![Visualizzare un messaggio informativo o facoltativo nell'hub di notifica](media/notification-flag-optional.png "Flag di notifica di messaggi informativi o facoltativi in Visual Studio")
+
+Se si sceglie di ignorare una notifica, questa non viene più visualizzata da Visual Studio. Se si vuole reimpostare l'elenco delle notifiche ignorate, fare clic sul pulsante **Impostazioni** nell'hub di notifica.
+
+   ![Scegliere il pulsante Impostazioni nell'hub di notifica per visualizzare le opzioni di notifica](media/vs-notifications-hub-settings-button.png "Scegliere il pulsante Impostazioni nell'hub di notifica per visualizzare le opzioni di notifica")
 
 ## <a name="update-by-using-the-visual-studio-installer"></a>Eseguire gli aggiornamenti tramite il programma di installazione di Visual Studio
 1.  Aprire il programma di installazione. Prima di continuare, potrebbe essere necessario aggiornare il programma di installazione. In tal caso, verrà richiesto di effettuare questa operazione.
@@ -53,7 +69,7 @@ Visual Studio viene spesso aggiornato per estenderne le funzionalità e corregge
 
 3.  Se è disponibile un aggiornamento, verrà visualizzato un pulsante **Aggiorna**. La verifica della disponibilità di un aggiornamento potrebbe richiedere alcuni secondi.
 
-  Toccare o fare clic sul pulsante **Aggiorna** per installare gli aggiornamenti.
+  Scegliere il pulsante **Aggiorna** per installare gli aggiornamenti.
 
      ![Aggiornare Visual Studio 2017 tramite il programma di installazione di Visual Studio](media/update-visual-studio.png "Aggiornare Visual Studio 2017 tramite il programma di installazione di Visual Studio")
 
@@ -70,4 +86,4 @@ Ecco alcune altre opzioni di supporto:
 * [Installare Visual Studio 2017](install-visual-studio.md)
 * [Modificare Visual Studio 2017](modify-visual-studio.md)
 * [Disinstallare Visual Studio 2017](uninstall-visual-studio.md)
-* [Guida dell'amministratore per Visual Studio 2017](visual-studio-administrator-guide.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)

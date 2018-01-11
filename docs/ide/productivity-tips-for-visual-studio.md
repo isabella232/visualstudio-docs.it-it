@@ -7,45 +7,29 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 803a1a94fe3eaa1bc63d59e9de2a42711f502262
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 5e257d8d90d21c4298b92f7bc4b923ed5a720c85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
-Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il debug del codice in Visual Studio in modo più rapido ed efficiente. Per altre informazioni sui tasti di scelta rapida comuni, vedere [Tips and Tricks](../ide/tips-and-tricks-for-visual-studio.md) (Suggerimenti). Per un elenco più completo vedere [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) (Identificazione e personalizzazione dei tasti di scelta rapida) e [Default Keyboard Shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md) (Tasti di scelta rapida predefiniti).
+Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il debug del codice in Visual Studio in modo più rapido ed efficiente.
+
+Per altre informazioni sui tasti di scelta rapida comuni, vedere [Tips and Tricks](../ide/tips-and-tricks-for-visual-studio.md) (Suggerimenti). Per un elenco più completo vedere [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) (Identificazione e personalizzazione dei tasti di scelta rapida) e [Default Keyboard Shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md) (Tasti di scelta rapida predefiniti).
 
 ## <a name="accessing-visual-studio-tools"></a>Accesso agli strumenti di Visual Studio
 
-È possibile accedere facilmente al prompt dei comandi per gli sviluppatori o a un altro strumento se lo si aggiunge nella schermata iniziale o nella barra delle applicazioni.
+È possibile accedere rapidamente al prompt dei comandi per gli sviluppatori o a un altro strumento di Visual Studio se lo si aggiunge nel menu di avvio o nella barra delle applicazioni.
 
-1. Nella schermata iniziale immettere `Visual Studio Tools` e quindi premere **INVIO**.
+1. In Esplora risorse, passare a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
 
-1. In **Esplora file** aprire il menu di scelta rapida per l'elemento desiderato:
-
-    - Notifiche di compilazione
-
-    - Debuggable Package Manager
-
-    - Prompt dei comandi per gli sviluppatori per VS2013
-
-    - Microsoft Feedback Client 2013
-
-    - Prompt dei comandi degli strumenti ARM di VS2013
-
-    - Prompt dei comandi degli strumenti di VS2013 x64
-
-    - Prompt dei comandi degli strumenti nativi di VS2013 x64
-
-    - Prompt dei comandi degli strumenti nativi di VS2013 x86
-
-1. Scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
+1. Fare clic con il pulsante destro del mouse o aprire il menu di scelta rapida per visualizzare il **prompt dei comandi per sviluppatori**, quindi scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
 
 ## <a name="writing-code"></a>Scrittura di codice
 
@@ -91,11 +75,11 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
 - **Visualizzazione dei soli errori da risolvere**. Se si sceglie il pulsante **Filtro** nella barra degli strumenti **Elenco errori**, è possibile ridurre il numero di errori visualizzati nella finestra **Elenco errori**. È possibile visualizzare solo gli errori nei file aperti nell'editor, solo gli errori nel file corrente o solo gli errori nel progetto corrente. È inoltre possibile eseguire ricerche nella finestra Elenco errori per trovare errori specifici.
 
-- **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella [Avvio veloce, Ambiente, finestra di dialogo Opzioni](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave per gli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
+- **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave per gli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
 
-     ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-     **Avvio veloce** consente di visualizzare i collegamenti alla finestra di dialogo **Nuovo progetto**, alla finestra di dialogo **Aggiungi nuovo elemento** e alla pagina Progetti e soluzioni nella finestra di dialogo **Opzioni**. I risultati di Avvio veloce possono anche includere file di progetto e finestre degli strumenti.
+    **Avvio veloce** consente di visualizzare i collegamenti alla finestra di dialogo **Nuovo progetto**, alla finestra di dialogo **Aggiungi nuovo elemento** e alla pagina Progetti e soluzioni nella finestra di dialogo **Opzioni**. I risultati di Avvio veloce possono anche includere file di progetto e finestre degli strumenti.
 
 ## <a name="debugging-code"></a>Debug del codice
 
@@ -103,11 +87,11 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
 - **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova nella barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente il browser usato durante il debug o la visualizzazione delle pagine.
 
-     ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **Impostazione di punti di interruzione temporanei**. È possibile creare un punto di interruzione temporaneo nella riga di codice corrente e avviare contemporaneamente il debugger. Quando si raggiunge la riga di codice, viene attivata la modalità di interruzione del debugger. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger).
 
-     Per usare questa funzionalità, scegliere la combinazione di tasti **CTRL** + **F10** o aprire il menu di scelta rapida per la riga di codice in corrispondenza della quale si intende interrompere l'esecuzione e quindi scegliere **Esegui fino al cursore**.
+    Per usare questa funzionalità, scegliere la combinazione di tasti **CTRL** + **F10** o aprire il menu di scelta rapida per la riga di codice in corrispondenza della quale si intende interrompere l'esecuzione e quindi scegliere **Esegui fino al cursore**.
 
 - **Spostamento del punto di esecuzione durante il debug**. È possibile spostare il punto di esecuzione corrente in un'altra sezione del codice e quindi riavviare il debug da tale punto. Questa tecnica è utile se si desidera eseguire il debug di una sezione di codice senza dover ricreare tutti i passaggi necessari per raggiungere la sezione. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger).
 

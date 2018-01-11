@@ -18,11 +18,12 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: a936c7fb80dbbe6305732a26b5e0a09a737bf3a3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -42,7 +43,7 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 
 ## <a name="general-options"></a>Opzioni generali
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Mostra la finestra di output durante la creazione degli ambienti virtuali| Attivato | Deselezionare per impedire che venga visualizzata la finestra di output. |
 | Mostra la finestra di output durante l'installazione o la rimozione di pacchetti | Attivato |  Deselezionare per impedire che venga visualizzata la finestra di output. |
@@ -53,13 +54,13 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 | Avvisa quando non è possibile trovare il modulo importato | Attivato | Deselezionare questa opzione per non visualizzare gli avvisi quando si è certi che un modulo importato non è attualmente disponibile, ma non influisce comunque sul funzionamento del codice. |
 | Segnala rientro incoerente come | Avvisi | Poiché l'interprete di Python dipende fortemente da un rientro corretto per determinare l'ambito, Visual Studio per impostazione predefinita genera dei messaggi di avviso quando rileva rientri incoerenti che potrebbero indicare errori di codifica. Per maggiore precisione, impostare su *Errori*, opzione che provoca la chiusura del programma in casi di questo tipo. Per disabilitare completamente questo comportamento, selezionare *No*. |
 | Controlla disponibilità di sondaggi/novità | Una volta alla settimana | Imposta la frequenza con cui si consente a Visual Studio di aprire una finestra contenente una pagina web con sondaggi e notizie relativi a Python, qualora disponibili. Le opzioni sono *Mai*, *Una volta al giorno*, *Una volta alla settimana* e *Una volta al mese*. |
-| Ripristina tutte le finestre di dialogo nascoste in modo permanente (pulsante) | n/d | Diverse finestre di dialogo presentano opzioni quali **Non visualizzare più questo messaggio**. Usare questo pulsante per cancellare tali opzioni e visualizzare nuovamente le finestre di dialogo. |
+| Ripristina tutte le finestre di dialogo nascoste in modo permanente (pulsante) | N/D | Diverse finestre di dialogo presentano opzioni quali **Non visualizzare più questo messaggio**. Usare questo pulsante per cancellare tali opzioni e visualizzare nuovamente le finestre di dialogo. |
 
 ![Finestra di dialogo Opzioni di Python, scheda Generale](media/options-general.png)
 
 ## <a name="debugging-options"></a>Opzioni di debug
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Chiedi conferma prima dell'esecuzione quando sono presenti errori | Attivato | Se impostato, viene chiesto di confermare che si desidera eseguire il codice contenente errori. Deselezionare questa opzione per disabilitare l'avviso. |
 | Attendi input quando il processo viene chiuso in modo anomalo<br/><br/>Attendi input quando il processo viene chiuso normalmente | Attivato (per entrambi) | Un programma Python avviato da Visual Studio viene eseguito nella propria finestra della console. Per impostazione predefinita, la finestra attende che venga premuto un tasto prima di chiudere il programma, indipendentemente dalla modalità con cui viene chiuso il programma. Per rimuovere il prompt e chiudere la finestra automaticamente, deselezionare una o entrambe le opzioni. |
@@ -72,19 +73,19 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 
 ## <a name="diagnostics-options"></a>Opzioni di diagnostica
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Includi log di analisi | Attivato | Include log dettagliati relativi all'analisi di ambienti Python installati durante il salvataggio della diagnostica in un file o la copia negli Appunti tramite i pulsanti. Questa opzione può aumentare notevolmente le dimensioni del file generato, ma spesso è necessaria per diagnosticare problemi di IntelliSense. |
-| Salva diagnostica nel file (pulsante) | n/d | Richiede un nome di file, quindi salva il log in un file di testo. |
-| Copia diagnostica negli Appunti (pulsante) | n/d | Inserisce l'intero contenuto del log negli Appunti. Questa operazione potrebbe richiedere tempo a seconda delle dimensioni del log. |
+| Salva diagnostica nel file (pulsante) | N/D | Richiede un nome di file, quindi salva il log in un file di testo. |
+| Copia diagnostica negli Appunti (pulsante) | N/D | Inserisce l'intero contenuto del log negli Appunti. Questa operazione potrebbe richiedere tempo a seconda delle dimensioni del log. |
 
 ![Finestra di dialogo Opzioni di Python, scheda Diagnostica](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Opzioni della finestra interattiva
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
-| Script | n/d | Specifica una cartella generale per gli script di avvio valida per le finestre interattive per tutti gli ambienti. Vedere [Script di avvio](python-environments.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
+| Script | N/D | Specifica una cartella generale per gli script di avvio valida per le finestre interattive per tutti gli ambienti. Vedere [Script di avvio](python-environments.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
 | Spostarsi nella cronologia con le frecce su/giù | Attivato | Usare i tasti freccia per spostarsi nella cronologia, nella finestra interattiva. Deselezionare questa impostazione per usare i tasti freccia per spostarsi invece all'interno dell'output della finestra interattiva. |
 | Modalità di completamento | Valutare unicamente le espressioni senza chiamate di funzione | Il processo di determinazione dei membri disponibili su un'espressione nella finestra interattiva può richiedere la valutazione dell'espressione incompleta corrente, con la conseguente chiamata ripetuta di effetti collaterali o funzioni. L'impostazione predefinita, *Valuta solo le espressioni senza chiamate di funzione* esclude le espressioni che sembrano chiamare una funzione, ma valuta altre espressioni. Ad esempio, valuta `a.b` ma non `a().b`.  *Non valutare mai le espressioni* evita tutti gli effetti collaterali e usa solo il motore di IntelliSense normale per i suggerimenti. *Valuta tutte le espressioni* valuta l'espressione completa per ottenere suggerimenti, indipendentemente dagli effetti collaterali. |
 | Nascondi suggerimenti analisi statica | Disattivato | Se è impostata questa opzione, vengono visualizzati solo i suggerimenti ottenuti dalla valutazione dell'espressione. Se è associata alla modalità di completamento *Non valutare mai le espressioni*, non viene visualizzato alcun completamento utile nella finestra interattiva. |
@@ -95,7 +96,7 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 
 ### <a name="completion-results"></a>Risultati del completamento
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Il completamento dei membri visualizza l'intersezione dei membri | Disattivato | Se l'opzione è impostata, vengono visualizzati solo i completamenti supportati da tutti i tipi possibili. |
 | Elenco di filtri in base alla stringa di ricerca | Attivato | Applica il filtro dei suggerimenti di completamento durante la digitazione (l'opzione è selezionata per impostazione predefinita). |
@@ -103,7 +104,7 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 
 ### <a name="selection-in-completion-list"></a>Selezione negli elenchi di completamento
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Commit alla digitazione dei caratteri seguenti | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
 | Immetti completamento corrente dei commit | Attivato | Se questa opzione è impostata, il tasto INVIO sceglie e applica il completamento attualmente selezionato in modo analogo ai caratteri riportati sopra (ma ovviamente, non esiste un carattere per il tasto Invio, pertanto non può entrare direttamente in tale elenco). |
@@ -111,7 +112,7 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 
 ### <a name="miscellaneous-options"></a>Altre opzioni
 
-| Opzione | Default | Descrizione |
+| Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Attiva modalità struttura all'apertura del file | Attivato | Attiva automaticamente la funzionalità di struttura nell'editor di Visual Studio all'apertura di un file di codice Python. |
 | Paste removed REPL prompts (Incolla prompt REPL rimossi) | Attivato | Rimuove >>> e ... dal testo incollato, consentendo il trasferimento agevole del codice dalla finestra interattiva all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |

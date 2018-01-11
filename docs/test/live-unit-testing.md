@@ -8,14 +8,14 @@ ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
-ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing con Visual Studio 2017
 
@@ -60,7 +60,7 @@ In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe e
 
 Per configurare Live Unit Testing, selezionare **Strumenti**, **Opzioni** dal menu di primo livello di Visual Studio e quindi scegliere **Live Unit Testing** nel riquadro di sinistra della finestra di dialogo **Opzioni**. La figura seguente illustra le opzioni di configurazione di Live Unit Testing disponibili nella finestra di dialogo.
 
-  ![Immagine](./media/lut-options.png)
+  ![Image](./media/lut-options.png)
 
 Le opzioni configurabili includono:
 
@@ -105,27 +105,27 @@ Per abilitare Live Unit Testing, selezionare **Test**, **Live Unit Testing**, **
 
 Dopo l'abilitazione, Live Unit Testing aggiorna le singole righe di codice nell'editor di Visual Studio in modo da indicare se il codice scritto è coperto da unit test e se i test coperti vengono superati.  La figura seguente mostra le righe di codice con test superati e non superati, nonché le righe di codice non coperte dai test. Le righe contraddistinte da un segno di spunta "✓" verde sono coperte solo da test superati, quelle contraddistinte da una "x" rossa sono coperte da uno o più test non superati, mentre quelle contraddistinte da un simbolo "➖" blu non sono coperte da alcun test.
 
-  ![Immagine](./media/lut-codewindow.png)
+  ![Image](./media/lut-codewindow.png)
 
 La visualizzazione del code coverage di Live Unit Testing viene aggiornata immediatamente quando si modifica il codice nell'editor del codice. Durante l'elaborazione delle modifiche, la visualizzazione cambia per indicare che i dati non sono aggiornati e viene aggiunta l'immagine di un timer rotondo sotto i test superati, non superati e non coperti, come illustrato nella figura seguente.
 
-  ![Immagine](./media/lut-codeupdating.png)
+  ![Image](./media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>Recupero delle informazioni su test superati o non superati
 
 Per visualizzare il numero di test eseguiti su una certa riga, è possibile passare il puntatore sul simbolo di test superato o non superato nella finestra del codice. Se si fa clic sul simbolo, verrà visualizzato lo stato dei singoli test, come illustrato nella figura seguente:
  
-  ![Immagine](./media/lut-failedinfo.png) 
+  ![Image](./media/lut-failedinfo.png) 
 
-Oltre a fornire i nomi e i risultati dei test, la descrizione comando consente di eseguire di nuovo il set di test, oltre a eseguire il set di test usando il debugger. Se si selezionano uno o più test nella descrizione comando, è anche possibile eseguire o sottoporre a debug solo tali test. Ciò consente di eseguire il debug dei test senza uscire dalla finestra del codice. Durante il debug, oltre a osservare eventuali punti di interruzione già configurati, l'esecuzione del programma viene sospesa quando il debugger esegue un metodo [`Assert`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) che restituisce un risultato imprevisto. 
+Oltre a fornire i nomi e i risultati dei test, la descrizione comando consente di eseguire di nuovo il set di test, oltre a eseguire il set di test usando il debugger. Se si selezionano uno o più test nella descrizione comando, è anche possibile eseguire o sottoporre a debug solo tali test. Ciò consente di eseguire il debug dei test senza uscire dalla finestra del codice. Durante il debug, oltre a osservare eventuali punti di interruzione già configurati, l'esecuzione del programma viene sospesa quando il debugger esegue un metodo [`Assert`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) che restituisce un risultato imprevisto. 
 
 Quando si passa il puntatore su un test non superato nella descrizione comando, questa si espande e visualizza informazioni aggiuntive sull'errore, come illustrato nell'immagine seguente. Fare doppio clic sul test non superato nella descrizione comando per visualizzarlo.
 
-  ![Immagine](./media/lut-failedmsg.png) 
+  ![Image](./media/lut-failedmsg.png) 
 
 Quando si passa al test non riuscito, Live Unit Testing indica anche visivamente nella firma del metodo i test con esito positivo (indicati da un becher mezzo pieno con un simbolo "✓" verde), i test con esito negativo (indicati da un becher mezzo pieno con un simbolo "🞩" rosso) o i test non interessati da Live Unit Testing (indicati da un becher mezzo pieno con un simbolo "➖" blu). I metodi non di test non sono decorati con simboli. La figura seguente illustra tutti e quattro i tipi di metodi.
  
-  ![Immagine](media/lut-testsource.png)
+  ![Image](media/lut-testsource.png)
  
 ## <a name="diagnosing-and-correcting-test-failures"></a>Diagnosi e correzione degli errori di test
 
@@ -142,7 +142,7 @@ L'errore di test illustrato nella figura precedente, ad esempio, è stato causat
 
 Come si può notare, nella finestra **Esplora test** alcuni test sono visualizzati in modo attenuato. Ad esempio, quando si abilita Live Unit Testing dopo l'apertura di un progetto salvato in precedenza, la finestra **Esplora test** mostra come attenuati tutti i test tranne quello con esito negativo, come illustrato nella figura seguente. In questo caso, Live Unit Testing ha ripetuto l'esecuzione del test con esito negativo, ma non ha ripetuto l'esecuzione dei test con esito positivo, perché i dati salvati in modo permanente di Live Unit Testing indicano che non sono state apportate modifiche dopo l'ultima esecuzione con esito positivo dei test.
 
-  ![Immagine](media/lut-test-explorer.png)
+  ![Image](media/lut-test-explorer.png)
 
 È possibile ripetere l'esecuzione di eventuali test visualizzati in modo attenuato selezionando le opzioni **Esegui tutto** o **Esegui** dal menu **Esplora test** oppure selezionando uno o più test nel menu **Esplora test**, facendo clic con il pulsante destro del mouse e quindi scegliendo **Esegui test selezionati** o **Esegui debug test selezionati** dal menu di scelta rapida. Quando i test vengono eseguiti, vengono visualizzati nella parte superiore.
 

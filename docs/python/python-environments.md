@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-environments"></a>Ambienti Python
 
