@@ -16,17 +16,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-ms.assetid: 3dd62654-ada2-468f-b7da-eb5704a2ff7a
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28be854f01234783ff9873753eb88ca92bc192d6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: creazione di una web part per SharePoint tramite una finestra di progettazione
   Se si crea una web part per un sito di SharePoint, gli utenti possono modificare direttamente il contenuto, l'aspetto e il comportamento delle pagine del sito utilizzando un browser. Questa procedura dettagliata viene illustrato come creare una web part visivamente tramite SharePoint **Web Part visiva** modello di progetto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

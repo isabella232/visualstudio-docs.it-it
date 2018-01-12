@@ -12,12 +12,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilizzando i controlli della linee guida di base di C++
 Le linee guida componenti di base di C++ sono un set portabile di linee guida, regole e procedure consigliate sulla codifica in C++ creati dai progettisti e gli esperti di C++. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. Correttori ortografici delle linee guida per i componenti di base vengono installati per impostazione predefinita in Visual Studio 2017 e sono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
@@ -86,7 +85,7 @@ Come vengono aggiunte nuove regole per il controllo di linee guida di base C++, 
 A partire da Visual Studio 2017 versione 15.3, i set di regole supportati sono: 
   - **Le regole di puntatore proprietario** applicare [gestione delle risorse di controlli correlati al proprietario<T> dalle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regole const** applicare [controlli correlati const dalle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+  - **Regole const** applicare [controlli correlati const dalle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).  
 
   - **Le regole di puntatore non elaborato** applicare [gestione delle risorse Controlla puntatori correlati a non elaborato dalle linee guida di base C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
@@ -98,11 +97,14 @@ A partire da Visual Studio 2017 versione 15.3, i set di regole supportati sono:
 
   **Visual Studio 2017 versione 15.5**:
   - **Classe di regole** alcune regole incentrate su corretto utilizzo di metodi speciali e virtuali specifiche. Questo è un subset di controlli consigliati per [classi e le gerarchie di classi](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
-  - **Regole di concorrenza** una singola regola che rileva gli oggetti dichiarati badlyly guard. Per ulteriori informazioni vedere [linee guida relative alla concorrenza](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
+  - **Regole di concorrenza** una singola regola che rileva gli oggetti dichiarati in modo errato guard. Per ulteriori informazioni, vedere [linee guida relative alla concorrenza](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Regole della dichiarazione** un paio di regole di [interfacce linee guida](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) quali lo stato attivo sulle variabili globali vengono dichiarati.  
   - **Funzione regole** due controlli che consentono di adozione del `noexcept` identificatore. Questa è una parte delle linee guida per [deselezionare funzione progettazione e implementazione](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions). 
   - **Regole di puntatore condiviso** come parte di [la gestione delle risorse](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) imposizione delle linee guida, abbiamo aggiunto alcune regole specifiche per i puntatori condivisi vengono passate in funzioni o utilizzate in locale.  
-  - **Le regole di stile** un controllo semplice, ma importante, che esclude l'utilizzo di [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Questo è il primo passaggio per il miglioramento del codice di stile e l'utilizzo di espressioni e istruzioni di C++. 
+  - **Le regole di stile** un controllo semplice, ma importante che esclude l'utilizzo di [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Questo è il primo passaggio per il miglioramento del codice di stile e l'utilizzo di espressioni e istruzioni di C++.  
+  
+  **Visual Studio 2017 versione 15.6**:
+  - **Regole aritmetiche** regole per rilevare l'aritmetica [overflow](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [operazioni unsigned firmato](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) e [bit manipolazione](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
 
  È possibile scegliere di limitare gli avvisi per uno o alcuni dei gruppi. Il **minimo Native** e **consigliato Native** regola imposta include regole di controllo di base C++ oltre agli altri controlli di PREfast. Per visualizzare il disponibili set di regole, aprire la finestra di dialogo proprietà del progetto, selezionare **codice Analysis\General**, aprire l'elenco a discesa nel **set di regole** casella combinata e selezione **scegliere più set di regole** . Per ulteriori informazioni sull'utilizzo di set di regole in Visual Studio, vedere [utilizzando il set di regole per raggruppare regole di analisi codice](using-rule-sets-to-group-code-analysis-rules.md).
@@ -120,7 +122,7 @@ CPPCORECHECK_UNIQUE_POINTER_WARNINGS
 CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
-Queste macro corrispondono al set di regole ed espandono in un elenco separato da spazi di numeri di avviso. Usando i costrutti di pragma appropriato, è possibile configurare il set di regole valido interessante per un progetto o una sezione di codice. Nell'esempio seguente, l'analisi del codice viene segnalata solo modificatori di costanti mancante:
+Queste macro corrispondono al set di regole ed espandono in un elenco separato da spazi di numeri di avviso. Usando i costrutti di pragma appropriato, è possibile configurare il set di regole valido interessante per un progetto o una sezione di codice. Nell'esempio seguente, l'analisi del codice avvisa solo modificatori di costanti mancante:
 
 ```cpp
 #include <CppCoreCheck\Warnings.h>
@@ -129,8 +131,7 @@ Queste macro corrispondono al set di regole ed espandono in un elenco separato d
 ```
 
 ## <a name="attributes"></a>Attributi
- Il compilatore Microsoft Visual C++ ha un supporto limitato per il GSL esclusione di attributo.
-E può essere utilizzato per eliminare gli avvisi in espressioni e istruzioni di blocco all'interno di una funzione.
+ Il compilatore Microsoft Visual C++ ha un supporto limitato per il GSL esclusione di attributo. E può essere utilizzato per eliminare gli avvisi in espressioni e istruzioni di blocco all'interno di una funzione.
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -164,10 +165,10 @@ E può essere utilizzato per eliminare gli avvisi in espressioni e istruzioni di
  È possibile utilizzare l'opzione della riga di comando per disabilitare temporaneamente tutte le analisi del codice per un file specificando `/analyze-`. Viene prodotto un avviso *D9025 override '/ANALYZE' con ' /ANALYZE -'*, ricordare di abilitare di nuovo l'analisi del codice in un secondo momento.
 
  ## <a name="corecheck_per_file"></a>Abilitare il controllo di linee guida Core C++ nel file di progetto specifico
-In alcuni casi può essere utile per l'analisi del codice con stato attivo e ancora usare IDE di Visual Studio. Di seguito è riportato uno scenario di esempio che può essere usato per progetti di grandi dimensioni per risparmiare tempo di compilazione e per renderne più semplice per i risultati del filtro:
+In alcuni casi può essere utile per l'analisi del codice con stato attivo, continuando a utilizzare l'IDE di Visual Studio. Per risparmiare tempo di compilazione e per renderne più semplice per i risultati del filtro, è possibile utilizzare lo scenario di esempio seguente per progetti di grandi dimensioni:
 
 1.  Nella shell dei comandi impostare la `esp.extension` e `esp.annotationbuildlevel` le variabili di ambiente.
-2.  Avviare Visual Studio dalla shell dei comandi da cui ereditare queste variabili.
+2.  Per ereditare queste variabili, avviare Visual Studio dalla shell dei comandi. 
 3.  Caricare il progetto e aprirne le relative proprietà.
 4.  Abilita analisi codice, selezionare i set di regole appropriate, ma non abilita le estensioni di analisi codice.
 5.  Passare al file di cui che si desidera analizzare con il controllo di linee guida di base C++ e aprirne le relative proprietà.
@@ -205,20 +206,20 @@ Assicurarsi di aggiungere queste proprietà prima di importare il file Microsoft
 </ItemGroup>
 ```
 
-Se non si desidera modificare il file di progetto, è possibile passare le proprietà nella riga di comando:
+Se non si desidera modificare il file di progetto, è possibile passare le proprietà della riga di comando:
 
 ```cmd
 msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSet=CppCoreCheckRules.ruleset ...
 ```
 
 ### <a name="non-msbuild-projects"></a>Progetti non MSBuild
-Se si utilizza un sistema di compilazione che non si basa su MSBuild è comunque possibile eseguire il controllo, ma è necessario acquisire familiarità con alcuni elementi interni della configurazione del motore di analisi del codice. Si noti che questi elementi interni non sono garantiti devono essere supportati in futuro.
+Se si utilizza un sistema di compilazione che non si basa su MSBuild è comunque possibile eseguire il controllo, ma è necessario acquisire familiarità con alcuni elementi interni della configurazione del motore di analisi del codice. Questi elementi interni non sono garantiti devono essere supportati in futuro.
 
-È necessario impostare alcune variabili di ambiente e usare le opzioni della riga di comando appropriate per il compilatore. È preferibile utilizzare nell'ambiente di "strumenti prompt dei comandi nativi" in modo che non è necessario eseguire la ricerca di percorsi specifici per il compilatore, includere le directory e così via.
+È necessario impostare alcune variabili di ambiente e utilizzare le opzioni della riga di comando appropriate per il compilatore. È preferibile utilizzare nell'ambiente di "strumenti prompt dei comandi nativi" in modo che non è necessario eseguire la ricerca di percorsi specifici per il compilatore, includere le directory e così via.
 
 1.  **Variabili di ambiente**
   - `set esp.extensions=cppcorecheck.dll`Ciò indica al motore di caricare il modulo di linee guida di base di C++.
-  - `set esp.annotationbuildlevel=ignore`Disabilita la logica che elabora le annotazioni SAL. Le annotazioni non influiscono sull'analisi del codice in C++ Core linee guida verifica ancora loro la trasformazione abbia tempo (in alcuni casi molto tempo). Questa impostazione è facoltativo ma consigliato.
+  - `set esp.annotationbuildlevel=ignore`Disabilita la logica che elabora le annotazioni SAL. Le annotazioni non influiscono sull'analisi del codice nel controllo di linee guida di base C++, ma l'elaborazione richiede tempo (talvolta ora estesa). Questa impostazione è facoltativo ma consigliato.
   - `set caexcludepath=%include%`Si consiglia di disabilitare gli avvisi che attivano le intestazioni standard. È possibile aggiungere altri percorsi, ad esempio il percorso per le intestazioni comuni nel progetto.
 2.  **Opzioni della riga di comando**
   - `/analyze`Abilita l'analisi del codice (è consigliabile utilizzare anche /analyze: solo e /analyze: quiet).

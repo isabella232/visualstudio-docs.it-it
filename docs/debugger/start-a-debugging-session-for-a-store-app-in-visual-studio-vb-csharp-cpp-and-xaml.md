@@ -1,7 +1,7 @@
 ---
-title: Avviare una sessione di debug per un'app UWP in Visual Studio (VB, c#, C++ e XAML) | Documenti Microsoft
+title: Avviare una sessione di debug per un'app UWP in Visual Studio | Documenti Microsoft
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -38,54 +38,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: d99458d8afd6d4789d7827404f38d6dcfea76012
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 367fc334d0268a73e8ad1a33ebdc6e74036ddc86
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
-# <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio-vb-c-c-and-xaml"></a>Avviare una sessione di debug per un'app UWP in Visual Studio (VB, c#, C++ e XAML)
-![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Avviare una sessione di debug per un'app UWP in Visual Studio
   
- In questo argomento viene descritto come avviare una sessione di debug per App UWP scritte in XAML e Visual C++, Visual c# o Visual Basic. Il debug di un'app comporta sia la configurazione della la sessione di debug che la scelta della modalità di avvio dell'app.  
-  
-> [!NOTE]
->  Per le app scritte in JavaScript e HTML Vedi [avviare una sessione di debug (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).  
-  
-##  <a name="BKMK_In_this_topic"></a> In questo argomento  
- [Il modo più semplice per avviare il debug](#BKMK_The_easy_way_to_start_debugging)  
-  
- [Configurare la sessione di debug](#BKMK_Configure_the_debugging_session)  
-  
--   [Aprire la pagina delle proprietà di debug per il progetto](#BKMK_Open_the_debugging_property_page_for_the_project)  
-  
--   [Scegliere le opzioni di configurazione della compilazione](#BKMK_Choose_the_build_configuration_options)  
-  
--   [Scegliere la destinazione di distribuzione](#BKMK_Choose_the_deployment_target)  
-  
--   [Scegliere il debugger da utilizzare](#BKMK_Choose_the_debugger_to_use)  
-  
--   [(Facoltativo) Ritardare l'avvio della sessione di debug](#BKMK__Optional__Delay_starting_the_debug_session)  
-  
--   [(Facoltativo) Disabilitare i loopback di rete](#BKMK__Optional__Disable_network_loopbacks)  
-  
--   [(Facoltativo) Reinstallare l'app all'avvio del debug](#BKMK__Optional__Reinstall_the_app_when_you_start_debugging)  
-  
--   [(Facoltativo) Disabilitare il requisito di autenticazione per avviare il debugger remoto](#BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger)  
-  
- [Avviare la sessione di debug](#BKMK_Start_the_debugging_session)  
-  
--   [Avviare i debug (F5)](#BKMK_Start_debugging__F5_)  
-  
--   [Avviare il debug (F5) ma ritardare l'avvio dell'app](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
-  
--   [Avviare un'app installata nel debugger](#BKMK_Start_an_installed_app_in_the_debugger)  
-  
--   [Collegare il debugger a un'app in esecuzione](#BKMK_Attach_the_debugger_to_a_running_app_)  
-  
-    -   [Impostare l'esecuzione dell'app in modalità debug](#BKMK_Set_the_app_to_run_in_debug_mode)  
-  
-    -   [Collegare il debugger](#BKMK_Attach_the_debugger)  
+ In questo argomento viene descritto come avviare una sessione di debug per App UWP scritte in XAML e Visual C++, Visual c# o Visual Basic e per le app UWP scritte in HTML e JavaScript. Il debug di un'app comporta sia la configurazione della la sessione di debug che la scelta della modalità di avvio dell'app.  
   
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a> Il modo più semplice per avviare il debug  
   
@@ -93,94 +54,63 @@ ms.lasthandoff: 12/22/2017
   
 2.  Premi F5.  
   
- Visual Studio compila e avvia l'app con il debugger collegato. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina. Per ulteriori informazioni, vedere [esplorare una sessione di debug (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .  
+ Visual Studio compila e avvia l'app con il debugger collegato. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina.  
   
-##  <a name="BKMK_Configure_the_debugging_session"></a> Configurare la sessione di debug  
+##  <a name="BKMK_Choose_the_build_configuration_options"></a> Scegliere le opzioni di configurazione della compilazione  
   
-###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Aprire la pagina delle proprietà di debug per il progetto  
+1.   Dall'elenco a discesa elenco accanto al **Avvia debug** pulsante del debugger **Standard** sulla barra degli strumenti, scegliere **Debug**.  
+  
+2.  Dall'elenco **Piattaforma** seleziona la piattaforma di destinazione per cui eseguire la compilazione.  
+  
+##  <a name="BKMK_Choose_the_deployment_target"></a> Scegliere la destinazione di distribuzione  
+  
+È possibile distribuire ed eseguire il debug di un'app UWP in computer di Visual Studio, un dispositivo connesso, il simulatore di Visual Studio nel computer locale, un dispositivo remoto o un emulatore. Selezionare la destinazione di distribuzione dall'elenco a discesa a destra del **piattaforma** destinazione del debugger **Standard** barra degli strumenti.
+  
+![Selezionare una destinazione di distribuzione](../debugger/media/vsrun_select_target_device.png)  
+  
+Scegli una delle seguenti opzioni:  
+  
+|||  
+|-|-|  
+|**Computer locale**|Esegue il debug dell'app nella sessione corrente nel computer locale.|  
+|**Simulatore**|Eseguire il debug dell'app nel simulatore di Visual Studio per UWP e [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app. Il simulatore è una finestra del Desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e rotazione del dispositivo, che potrebbe non essere disponibile nel computer locale. Questa opzione è disponibile solo se l'app **minima piattaforma di destinazione. Versione** è minore o uguale al sistema operativo nel computer di sviluppo. Vedere [UWP eseguire app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Computer remoto**|Esegue il debug dell'app in un dispositivo connesso al computer locale su una rete Intranet o collegato direttamente tramite un cavo Ethernet. Per eseguire il debug in modalità remota, Remote Tools per Visual Studio deve essere installato e in esecuzione sul dispositivo remoto. Vedere [App UWP eseguire in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
+|**Dispositivo**|Eseguire il debug dell'app in un dispositivo USB-connected. Il dispositivo deve essere sbloccato dallo sviluppatore e avere la schermata sbloccata.|  
+|**Emulatore di dispositivi mobili**|Avviare un emulatore con la configurazione specificata nel nome dell'emulatore, distribuire l'app e avviare il debug. Gli emulatori sono disponibili solo in computer abilitato Hyper-V che eseguono Windows 8.1 o versioni successive.|  
+
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Scegliere le opzioni di debug aggiuntive  
+
+Se è necessario configurare le opzioni di debug aggiuntive, aprire la pagina delle proprietà per il progetto.
   
 1.  Selezionare il progetto in Esplora soluzioni. Scegli **Proprietà**dal menu di scelta rapida.  
   
-2.  In questo modo si apre la pagina delle proprietà di debug per il progetto:  
+2.  Eseguire questa operazione per aprire la pagina delle proprietà debug del progetto:  
   
     -   Per le app Visual C# e Visual Basic scegli **Debug**.  
   
-         ![C &#35; &#47; Pagina delle proprietà debug progetto VB](../debugger/media/dbg_csvb_debugpropertypage.png "DBG_CsVb_DebugPropertyPage")  
+         ![C &#35; &#47; Pagina delle proprietà debug progetto VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
-    -   Per le app Visual C++ espandi il nodo **Proprietà di configurazione**  , quindi scegli **Debug**.  
+    -   Per le app Visual C++ e JavaScript Espandi il **le proprietà di configurazione** nodo e quindi scegliere **debug**.  
   
-         ![C &#43; &#43; Pagina delle proprietà di debug dell'app di piattaforma UWP](../debugger/media/dbg_cpp_debugpropertypage.png "DBG_CPP_DebugPropertyPage")  
-  
-###  <a name="BKMK_Choose_the_build_configuration_options"></a> Scegliere le opzioni di configurazione della compilazione  
-  
-1.  Dall'elenco **Configurazione** scegli **Debug** o **Debug (attivo)**.  
-  
-2.  Dall'elenco **Piattaforma** seleziona la piattaforma di destinazione per cui eseguire la compilazione. Nella maggior parte dei casi, **Qualsiasi CPU** (**Tutte le piattaforme** in Visual C++) rappresenta la scelta ottimale.  
-  
-###  <a name="BKMK_Choose_the_deployment_target"></a> Scegliere la destinazione di distribuzione  
- ![Si applica solo a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
-  
- È possibile distribuire ed eseguire il debug di un'app UWP nel computer Visual Studio, nel simulatore di Visual Studio nel computer locale o in un dispositivo remoto.  
-  
--   Per le app Visual Basic e C# scegli la destinazione dall'elenco **Dispositivo di destinazione** nella pagina delle proprietà **Debug** del progetto.  
-  
--   Per le app C++ scegli la destinazione dall'elenco **Debugger da avviare** nella pagina delle proprietà **Debug** :  
-  
- Scegli una delle seguenti opzioni:  
-  
-|||  
-|-|-|  
-|**Computer locale**|Esegue il debug dell'app nella sessione corrente nel computer locale. Vedere [App UWP eseguire nel computer locale](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-|**Simulatore**|Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] . Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Vedere [UWP eseguire app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
-|**Computer remoto**|Esegue il debug dell'app in un dispositivo connesso al computer locale su una rete Intranet o collegato direttamente tramite un cavo Ethernet. Per eseguire il debug in modalità remota, Visual Studio Remote Tools deve essere installato e in esecuzione sul dispositivo remoto. Vedere [App UWP eseguire in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
-  
- Se scegli **Computer remoto**, specifica il nome o l'indirizzo IP del computer remoto nei modi seguenti:  
-  
--   Immetti il nome o l'indirizzo IP del computer remoto.  
-  
-    -   Per le app C# e Visual Basic, immetti il nome o l'indirizzo IP nella casella **Computer remoto** .  
-  
-    -   Per le app C++, immetti il nome o l'indirizzo IP nella casella **Nome computer** .  
-  
--   Scegli il computer remoto nella finestra di dialogo **Seleziona connessione debugger remoto** .  
-  
-     Per aprire la finestra di dialogo:  
-  
-    -   Per le app C# e Visual Basic scegli **Trova**.  
-  
-    -   Per le app C++, scegliere la freccia rivolta verso il basso nel **nome macchina** e scegliere  **\<trova... >**.  
-  
-     ![Finestra di dialogo Seleziona connessione Debugger remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
-  
-    > [!NOTE]
-    >  Nella finestra di dialogo **Seleziona connessione debugger remoto** sono visualizzati i computer sulla subnet locale e i computer collegati direttamente al computer che esegue Visual Studio tramite un cavo Ethernet. Per specificare un altro computer, immetti il nome nella casella **Nome computer** .  
-  
- ![Si applica solo a Windows Phone](../debugger/media/phone_only_content.png "phone_only_content")  
-  
- È possibile distribuire ed eseguire il debug di un'app di Windows Phone in un dispositivo o in uno degli emulatori del telefono di Visual Studio. Seleziona il dispositivo o l'emulatore nell'elenco **Dispositivo di destinazione** .  
-  
+         ![C &#43; &#43; Pagina delle proprietà Debug app UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
+
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Scegliere il debugger da utilizzare  
- Per impostazione predefinita, Visual Studio esegue il debug del codice gestito nelle app Visual Basic e C#.  
+Per impostazione predefinita, Visual Studio esegue il debug del codice gestito nelle app Visual Basic e C#. Per le applicazioni C# e Visual Basic puoi scegliere di eseguire il debug di codice nativo e gestito C/C++ nell'app. Nelle App C++, Visual Studio esegue il debug del codice nativo per impostazione predefinita. Nelle App JavaScript, Visual Studio esegue il debug di script per impostazione predefinita. 
   
- Per le applicazioni C# e Visual Basic puoi scegliere di eseguire il debug di codice nativo e gestito C/C++ nell'app. Seleziona la casella di controllo **Abilita debug codice non gestito** per includere il codice nativo nella sessione di debug.  
+Per le app C++ e JavaScript, è possibile scegliere di eseguire il debug di tipi di codice specifici presenti nei componenti dell'app al posto o in aggiunta al codice nativo. Specifica il codice per cui eseguire il debug nell'elenco **Tipo di debugger** nella pagina delle proprietà **Debug** del progetto dell'app.  
   
- Per impostazione predefinita, Visual Studio esegue il debug del codice nativo nell'app C++.  
-  
- Per le app C++, puoi scegliere di eseguire il debug dei tipi di codice specifici presenti nei componenti dell'app al posto o in aggiunta al codice nativo. Specifica il codice per cui eseguire il debug nell'elenco **Tipo di debugger** nella pagina delle proprietà **Debug** del progetto dell'app.  
-  
- Scegli uno di questi debugger dall'elenco **Processo applicativo** :  
+Scegli uno di questi debugger dall'elenco **Processo applicativo** :  
   
 |||  
 |-|-|  
-|**Solo script**|Esegue il debug del codice JavaScript nell'app. Il codice gestito e il codice nativo vengono ignorati.|  
-|**Solo nativo**|Esegue il debug del codice C/C++ nativo nell'app. Il codice gestito e il codice JavaScript vengono ignorati.|  
 |**Solo gestito**|Esegue il debug del codice gestito nell'app. Il codice JavaScript e il codice C/C++ nativo vengono ignorati.|  
-|**Misto (gestito e nativo)**|Esegue il debug sia del codice C++ nativo e del codice gestito nell'app. Il codice JavaScript viene ignorato.|  
-|**Solo GPU**|Esegue il debug del codice C++ nativo eseguito su un'unità di elaborazione grafica (GPU).|  
-  
- ![Si applica solo a Windows Phone](../debugger/media/phone_only_content.png "phone_only_content")  
-  
- Per le app di Windows Phone, è anche possibile scegliere il debugger da usare per i processi in background dal **processo attività in Background**.  
+|**Solo nativo**|Esegue il debug del codice C/C++ nativo nell'app. Il codice gestito e il codice JavaScript vengono ignorati.|  
+|**Misto (gestito e nativo)**|Esegue il debug sia del codice C++ nativo e del codice gestito nell'app. Il codice JavaScript viene ignorato. In progetti C++, questa opzione è denominata **(gestito e nativo)**.|  
+|**Solo script**|Esegue il debug del codice JavaScript nell'app. Il codice gestito e il codice nativo vengono ignorati.|  
+|**Script e Native**|Eseguire il debug di codice C/C++ nativo e il codice JavaScript nell'app. Il codice gestito viene ignorato. Disponibile solo progetti C++.|  
+|**Solo GPU (C++ AMP)**|Esegue il debug del codice C++ nativo eseguito su un'unità di elaborazione grafica (GPU). Disponibile solo progetti C++.|  
+
+Le app c# e Visual Basic, è inoltre possibile impostare lo stesso **tipo di Debugger** i valori per qualsiasi attività in background che fanno parte del progetto.
   
 ###  <a name="BKMK__Optional__Delay_starting_the_debug_session"></a> (Facoltativo) Ritardare l'avvio della sessione di debug  
  Per impostazione predefinita, Visual Studio avvia immediatamente l'app quando avvii il debug. Puoi anche avviare una sessione di debug ma ritardare l'avvio dell'app. Quando scegli questa opzione, l'app viene aperta nel debugger quando viene avviata dalla schermata Start o tramite un contratto di attivazione oppure quando viene avviata da un altro processo o metodo. Puoi ritardare l'avvio dell'app anche quando vuoi eseguire il debug di un'attività in background mentre l'app stessa non è in esecuzione.  
@@ -189,37 +119,35 @@ ms.lasthandoff: 12/22/2017
   
 -   Per le app Visual C# e Visual Basic seleziona **Non eseguire il codice utente, ma eseguine il debug all'avvio** nella pagina delle proprietà **Debug** .  
   
--   Per le app Visual C++ scegli **Sì** dall'elenco **Avvia applicazione** nella pagina delle proprietà **Debug** .  
+-   Per le app Visual C++ e JavaScript, scegliere **Sì** dal **Avvia applicazione** elenco il **debug** pagina delle proprietà.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (Facoltativo) Disabilitare i loopback di rete  
- ![Si applica solo a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Per motivi di sicurezza, un'app UWP che viene installata in modalità standard non è possibile effettuare chiamate di rete per il dispositivo in che cui è installata. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a Microsoft Store, è consigliabile testare l'app senza l'esenzione.  
   
  Per rimuovere l'esenzione relativa al loopback della rete:  
   
--   Per le app Visual C# e Visual Basic, deseleziona la casella di controllo **Consenti loopback della rete locale** nella pagina delle proprietà **Debug** .  
+-   Per le app Visual c# e Visual Basic, deseleziona la **Consenti loopback della rete locale** casella di controllo di **Debug** pagina delle proprietà.  
   
--   Per le app Visual C++ scegli **No** dall'elenco **Consenti loopback della rete locale** nella pagina delle proprietà **Debug** .  
+-   Per le app Visual C++ e JavaScript, scegliere **n** dal **Consenti Loopback della rete locale** elenco il **debug** pagina delle proprietà.  
   
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> (Facoltativo) Reinstallare l'app all'avvio del debug  
- Per diagnosticare i problemi di installazione e configurazione iniziale dell'app in Visual C# o Visual Basic, scegli **Disinstalla e reinstalla il pacchetto** nella pagina delle proprietà **Debug**  per ricreare un'installazione originale all'avvio del debug. Questa opzione non è disponibile per i progetti Visual C++.  
+ Per diagnosticare i problemi di installazione e configurazione iniziale dell'app in Visual C# o Visual Basic, scegli **Disinstalla e reinstalla il pacchetto** nella pagina delle proprietà **Debug**  per ricreare un'installazione originale all'avvio del debug. Questa opzione non è disponibile per i progetti Visual C++ e JavaScript.  
   
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> (Facoltativo) Disabilitare il requisito di autenticazione per avviare il debugger remoto  
- ![Si applica solo a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
- Per impostazione predefinita, è necessario fornire le credenziali per eseguire il debugger remoto.  
+ Per impostazione predefinita, è necessario fornire le credenziali per eseguire il debugger remoto quando si seleziona **computer remoto** come destinazione di distribuzione.
   
 > [!IMPORTANT]
->  È possibile scegliere di eseguire il debugger remoto in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.  
+>  È possibile scegliere di eseguire il debugger remoto senza autenticazione, ma è fortemente sconsigliata. perché priva di qualsiasi sicurezza di rete. Non selezionare Nessuna autenticazione solo se si è certi che la rete non è soggetta a rischi da traffico ostile o codice dannoso.  
   
  Per rimuovere il requisito di autenticazione:  
   
-1.  Per le app Visual C# e Visual Basic, deseleziona la casella di controllo **Usa autenticazione** nella pagina delle proprietà **Debug** .  
+1.  Per le app Visual c# e Visual Basic, selezionare **computer remoto** come il **dispositivo di destinazione** sul **Debug** pagina delle proprietà e quindi impostare **modalità di autenticazione**  a **Nessuno** o **Universal (protocollo non crittografato)**.
   
-2.  Per le app Visual C++ scegli **No** dall'elenco **Richiedi autenticazione** nella pagina delle proprietà **Debug** .  
-  
- [In questo argomento](#BKMK_In_this_topic)  
+2.  Per le app Visual C++ e JavaScript, selezionare **computer remoto** come il **dispositivo di destinazione** sul **debug** pagina delle proprietà e quindi impostare **richiedono Autenticazione** a **Nessuno** o **Universal (protocollo non crittografato)**.  
+
+    **Universal (protocollo non crittografato)** viene utilizzato quando si distribuisce in un dispositivo remoto. Attualmente è per i dispositivi IoT, dispositivi Xbox e HoloLens dispositivi, nonché creatori di aggiornamento o PC più recente. Universal (protocollo non crittografato) deve essere utilizzato solo su reti attendibili. La connessione di debug è protetto da utenti malintenzionati in grado di intercettare e modificare i dati passati tra lo sviluppo e il computer remoto.  
   
 ##  <a name="BKMK_Start_the_debugging_session"></a> Avviare la sessione di debug  
   
@@ -227,13 +155,13 @@ ms.lasthandoff: 12/22/2017
  Quando si sceglie **Avvia debug** (tastiera: F5) sul **Debug** menu, Visual Studio avvia l'app con il debugger collegato. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione o l'app termina.  
   
 ###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Avviare il debug (F5) ma ritardare l'avvio dell'app  
- Puoi impostare l'app per l'esecuzione in modalità di debug, ma avviarla con un metodo diverso dal debugger. Ad esempio, puoi decidere di eseguire il debug dell'avvio dell'app dal menu Start o di eseguire il debug di un processo in background nell'app senza avviare l'app. Per ritardare l'avvio dell'app, procedi come indicato di seguito:  
+ Puoi impostare l'app per l'esecuzione in modalità di debug, ma avviarla con un metodo diverso dal debugger. Ad esempio, è necessario per il debug dell'avvio dell'app dal menu Start o eseguire il debug di un processo in background nell'app senza avviare l'app. Per ritardare l'avvio dell'app, eseguire questa operazione:  
   
--   Nella pagina delle proprietà **Debug** dell'app (**Debug** in Visual C++)  
+-   Nel **Debug** pagina delle proprietà dell'app (**debug** in Visual C++ e JavaScript)  
   
     -   Per le app Visual C# e Visual Basic, scegli **Non eseguire il codice utente, ma eseguine il debug all'avvio**.  
   
-    -   Per le app Visual C++ scegli **Sì** dall'elenco **Avvia applicazione** .  
+    -   Per le app Visual C++ e JavaScript, scegliere **Sì** dal **Avvia applicazione** elenco.  
   
 -   Scegliere **Avvia debug** sul **Debug** menu (tastiera: F5).  
   
@@ -244,35 +172,21 @@ ms.lasthandoff: 12/22/2017
  . Per ulteriori informazioni sul debug di attività in background, vedere [Trigger sospendere, riprendere e gli eventi per App UWP in background)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
 ###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Avviare un'app installata nel debugger  
- Quando avvii il debug utilizzando F5, Visual Studio compila e distribuisce l'app, la imposta per l'esecuzione in modalità debug, quindi la avvia. Per avviare un'app già installata in un dispositivo, utilizza la finestra di dialogo Debug pacchetto applicazione installato. Questa è una procedura utile per il debug di un'app installata da Windows Store o quando disponi dei file di origine dell'app, ma non di un progetto di Visual Studio per l'app. Ad esempio, potresti disporre di un sistema di compilazione personalizzato che non utilizza progetti o soluzioni di Visual Studio.  
+Quando avvii il debug utilizzando F5, Visual Studio compila e distribuisce l'app, la imposta per l'esecuzione in modalità debug, quindi la avvia. Per avviare un'app già installata in un dispositivo, usare il **Debug pacchetto applicazione installato** la finestra di dialogo. Questa procedura è utile quando è necessario eseguire il debug di un'app installata da Microsoft Store o quando Disponi dei file di origine per l'app, ma non è un progetto di Visual Studio per l'app. Ad esempio, potresti disporre di un sistema di compilazione personalizzato che non utilizza progetti o soluzioni di Visual Studio.  
   
- L'app può essere installata nel dispositivo locale oppure in un dispositivo remoto.  Puoi avviare l'app immediatamente oppure impostarla per l'esecuzione nel debugger quando viene avviata da un altro processo o metodo, ad esempio dal menu Start o da un contratto di attivazione. Puoi anche impostarne l'esecuzione in modalità debug per eseguire il debug di un processo in background senza avviare l'app. Per ulteriori informazioni, vedere [Trigger sospendere, riprendere e gli eventi per App UWP in background)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+L'app può essere installata nel dispositivo locale oppure in un dispositivo remoto.  Puoi avviare l'app immediatamente oppure impostarla per l'esecuzione nel debugger quando viene avviata da un altro processo o metodo, ad esempio dal menu Start o da un contratto di attivazione. Puoi anche impostarne l'esecuzione in modalità debug per eseguire il debug di un processo in background senza avviare l'app. Per ulteriori informazioni, vedere [Trigger sospendere, riprendere e gli eventi per App UWP in background)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
- Per impostare l'esecuzione di un'app installata in modalità debug, procedi come indicato di seguito:  
-  
+Per avviare un'app installata nel debugger, scegliere **Debug**, quindi **altre destinazioni debug**e quindi **Debug pacchetto applicazione installato**. Per ulteriori istruzioni, vedere [eseguire il Debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
+
 > [!NOTE]
->  L'app non deve essere in esecuzione all'avvio della procedura.  
+> Per Windows 8.1, scegliere **Debug**, quindi scegliere **Debug pacchetto applicazione installato**.
+
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Collegare il debugger a un'app UWP in esecuzione  
+
+Per eseguire il debug di un'app UWP in esecuzione, scegliere **Debug**, quindi **altre destinazioni debug**e quindi **Debug pacchetto applicazione installato**. Per ulteriori istruzioni, vedere [eseguire il Debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
   
-1.  Scegli **Debug pacchetto applicazione installato** dal menu **Debug pacchetto applicazione installato Installed App Package**.  
-  
-2.  Scegli una delle opzioni seguenti dall'elenco:  
-  
-    |||  
-    |-|-|  
-    |**Computer locale**|Esegue il debug dell'app nella sessione corrente nel computer locale. Vedere [App UWP eseguire nel computer locale](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
-    |**Simulatore**|Esegue il debug dell'app nel simulatore di Visual Studio per le app in [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] . Il simulatore è una finestra del desktop che consente di eseguire il debug delle funzionalità del dispositivo, ad esempio i movimenti tocco e la rotazione del dispositivo, che non sono disponibile nel computer locale. Vedere [UWP eseguire app nel simulatore](../debugger/run-windows-store-apps-in-the-simulator.md).|  
-    |**Computer remoto**|Esegue il debug dell'app in un dispositivo connesso al computer locale su una rete Intranet o collegato direttamente tramite un cavo Ethernet. Per eseguire il debug in modalità remota, Visual Studio Remote Tools deve essere installato e in esecuzione sul dispositivo remoto. Vedere [App UWP eseguire in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
-  
-3.  Scegli l'app dall'elenco **Pacchetti applicazione installati** .  
-  
-4.  Scegli il motore di debug da utilizzare dall'elenco **Esegui il debug di questi tipi di codice** .  
-  
-5.  (Facoltativo) Scegli **Non eseguire il codice utente, ma eseguine il debug all'avvio** per il debug dell'app all'avvio tramite un altro metodo o per il debug di un processo in background.  
-  
- Quando fai clic su **Start**l'app viene avviata o impostata per l'esecuzione in modalità debug.  
-  
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Collegare il debugger a un'app in esecuzione  
- Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , devi utilizzare Debuggable Package Manager per impostare l'esecuzione dell'app in modalità debug. Debuggable Package Manager viene installato con Visual Studio Remote Tools.  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Collegare il debugger a un'app di in esecuzione Windows 8. x
+ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , devi utilizzare Debuggable Package Manager per impostare l'esecuzione dell'app in modalità debug. Debuggable Package Manager viene installato con Remote Tools per Visual Studio.  
   
  Il collegamento del debugger a un'app è utile quando devi eseguire il debug di un'app già installata, ad esempio un'app installata da [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]. Il collegamento è necessario quando disponi dei file di origine dell'app, ma non di un progetto di Visual Studio per l'app. Ad esempio, potresti disporre di un sistema di compilazione personalizzato che non utilizza progetti o soluzioni di Visual Studio.  
   
@@ -286,7 +200,7 @@ ms.lasthandoff: 12/22/2017
   
 ####  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Impostare l'esecuzione dell'app in modalità debug  
   
-1.  Installa Visual Studio Remote Tools sul dispositivo in cui è installata l'app. Vedere [Installazione di Strumenti remoti](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).  
+1.  Installare Remote Tools per Visual Studio sul dispositivo in cui è installata l'app. Vedere [installazione di remote tools](../debugger/remote-debugging.md).  
   
 2.  Nella schermata Start cerca `Debuggable Package Manager` e avvialo.  
   
@@ -320,13 +234,15 @@ ms.lasthandoff: 12/22/2017
     -   Scegli **Esegui il debug di questi tipi di codice** , quindi scegli uno o più tipi dall'elenco.  
   
 4.  Nell'elenco **Processi disponibili**  scegli il processo dell'app.  
+
+    > [!NOTE]
+    >  A differenza di altri tipi di app, App JavaScript eseguito in un'istanza del processo wwahost.exe. Se vengono eseguite altre app JavaScript quando colleghi il debugger all'app, dovrai conoscere l'ID processo numerico (PID) del processo wwahost.exe in cui viene eseguita l'app.  
+    >   
+    >  Il modo più semplice per gestire questa situazione consiste nel chiudere tutte le altre app JavaScript. Altrimenti, puoi aprire Gestione attività di Windows prima di avviare l'app e annotare gli ID dei processi wwahost.exe. Quando si specifica il processo per allegare nella **processi disponibili** wwahost.exe dell'app nella finestra di dialogo avrà un id diverso da quelli annotati.  
   
 5.  Scegliere **Connetti**.  
   
  Visual Studio collega il debugger al processo. L'esecuzione continua fino a raggiungere un punto di interruzione. Sospendi manualmente l'esecuzione e si verifica un'eccezione non gestita o l'app termina.  
   
- [In questo argomento](#BKMK_In_this_topic)  
-  
 ## <a name="see-also"></a>Vedere anche  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Esplorare una sessione di debug (Xaml e c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)
+ [Debug delle App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - shortcut keys [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], shortcut keys
 - accessibility [Office development in Visual Studio]
-ms.assetid: 48efcf1f-ca49-47ce-99f0-cc99f051aeae
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 567ab9cffbd4546e276fcfd55af773e99fe07d34
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
   Microsoft Visual Studio e Microsoft Office includono molte funzionalità di accessibilità che consentono di creare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard. Microsoft pubblica linee guida per l'accesso facilitato sul Web. Per informazioni dettagliate, vedere il [sito Web di accessibilità](http://go.microsoft.com/fwlink/?LinkID=37113).  

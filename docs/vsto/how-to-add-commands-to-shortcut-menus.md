@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-ms.assetid: 9a848817-db11-4294-8f6f-9181ab87aadd
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fa5578a25b6bb877f241b9a5c8b7ccd876e7b773
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 361809dd94ae1419c5c6d2d06470d4d8d025cecf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: Aggiungere comandi a menu di scelta rapida
   Questo argomento illustra come aggiungere comandi a un menu di scelta rapida in un'applicazione di Office con un componente aggiuntivo VSTO.  

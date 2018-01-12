@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, fare clic su **Debug > Connetti a processo** (o premere **CTRL + ALT + P**) per aprire la **Connetti a processo** la finestra di dialogo.
@@ -145,12 +145,9 @@ Per alcuni tipi di app (ad esempio le app UWP), è non connettersi direttamente 
 |Eseguire il debug remoto ASP.NET 4 o 4.5 in un server IIS|Utilizzare gli strumenti remoti e connettersi al processo|w3wp.exe|Vedere [ASP.NET di debug remoto in un computer remoto di IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Eseguire il debug remoto ASP.NET Core in un server IIS|Utilizzare gli strumenti remoti e connettersi al processo|dotnet.exe|Per la distribuzione di app, vedere [pubblica in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per il debug, vedere [remoto il debug di ASP.NET Core in un computer remoto di IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Eseguire il debug di altri tipi di app supportata in un processo del server|Utilizzare gli strumenti remoti (se è remoto i server) e connettersi al processo|Iexplore.exe o altri processi|Se necessario, utilizzare Gestione attività per identificare il processo. Vedere [il debug remoto](../debugger/remote-debugging.md) e nelle sezioni successive di questo argomento|
-|Debug remoto di un'applicazione desktop di Windows|F5 e remote Tools|N/D| Vedere [debug remoto](../debugger/remote-debugging.md)|
+|Debug remoto di un'applicazione desktop di Windows|Remote tools e F5|N/D| Vedere [debug remoto](../debugger/remote-debugging.md)|
 |Un'app UWP (Universal), OneCore, HoloLens e IoT di debug remoto|Eseguire il debug pacchetto applicazione installata|N/D|Vedere [eseguire il Debug di un pacchetto dell'App installato](debug-installed-app-package.md) anziché **Connetti a processo**|
-|Debug di un'app di App di Windows universale (UWP), OneCore, HoloLens e IoT che non è stato avviato da Visual Studio|Eseguire il debug pacchetto applicazione installata|N/D|Vedere [eseguire il Debug di un pacchetto dell'App installato](debug-installed-app-package.md) anziché **Connetti a processo**|
-  
-> [!WARNING]
->  Per connetterti a UWP scritte in JavaScript, è necessario abilitare il debug dell'app. Vedere [collegare il debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) in Windows Dev Center.  
+|Debug di un'app di App di Windows universale (UWP), OneCore, HoloLens e IoT che non è stato avviato da Visual Studio|Eseguire il debug pacchetto applicazione installata|N/D|Vedere [eseguire il Debug di un pacchetto dell'App installato](debug-installed-app-package.md) anziché **Connetti a processo**|  
   
 > [!NOTE]
 >  Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) .

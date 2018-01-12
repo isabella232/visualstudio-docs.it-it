@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospendere, riprendere e gli eventi in background durante il debug di App UWP in Visual Studio
 Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) controlla lo stato di esecuzione dell'app, cioè avvio, sospensione, ripresa e terminazione, in risposta alle azioni dell'utente e allo stato del dispositivo. Quando esegui il debug, Windows disabilita questi eventi di attivazione. In questo argomento viene descritto come generare tali eventi nel debugger.  
@@ -109,7 +109,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
      ![Sospendere, riprendere, terminare e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Attivare gli eventi di Process Lifecycle Management e le attività in background da un'app installata  
- Utilizza la finestra di dialogo Debug pacchetto applicazione installato per caricare un'app già installata nel debugger. Ad esempio, è possibile eseguire il debug di un'app installata da Microsoft Store o debug di un'app quando si dispone di file di origine per l'app, ma non a un progetto di Visual Studio per l'app. La finestra di dialogo Debug pacchetto applicazione installato ti consente di avviare un'app in modalità debug nel computer Visual Studio o in un dispositivo remoto oppure impostare l'app per l'esecuzione in modalità debug, senza avviarla. Per ulteriori informazioni, vedi la sezione **Avviare un'app installata nel debugger** nelle versioni per [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) o [Visual C++, Visual C# e Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) di **Come avviare una sessione di debug** .  
+ Utilizza la finestra di dialogo Debug pacchetto applicazione installato per caricare un'app già installata nel debugger. Ad esempio, è possibile eseguire il debug di un'app installata da Microsoft Store o debug di un'app quando si dispone di file di origine per l'app, ma non a un progetto di Visual Studio per l'app. La finestra di dialogo Debug pacchetto applicazione installato ti consente di avviare un'app in modalità debug nel computer Visual Studio o in un dispositivo remoto oppure impostare l'app per l'esecuzione in modalità debug, senza avviarla. Vedere il **avviare un'app installata nel debugger** sezione [avviare una sessione di debug in un'app UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  Una volta caricata l'app nel debugger, puoi utilizzare una qualsiasi tra le procedure descritte sopra.  
   

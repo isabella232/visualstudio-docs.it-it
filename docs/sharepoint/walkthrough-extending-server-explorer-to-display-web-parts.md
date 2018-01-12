@@ -15,17 +15,15 @@ helpviewer_keywords:
 - SharePoint commands
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-ms.assetid: 5b1f104a-0eaf-4929-9f1f-d7afcfc8b707
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8fea089340c0d51fb5b88bf20d5521defc5dcc71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estensione di Esplora server per visualizzare web part
   In Visual Studio, è possibile utilizzare il **connessioni di SharePoint** nodo di **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata, è possibile estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuno connesso a un sito di SharePoint.  

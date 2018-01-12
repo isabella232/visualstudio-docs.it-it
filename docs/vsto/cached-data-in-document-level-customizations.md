@@ -18,17 +18,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], cache
 - data [Office development in Visual Studio], document-level solutions
 - document-level customizations [Office development in Visual Studio], data model
-ms.assetid: 84808462-2c5d-4dc8-ab69-491d492b4a51
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: deb63265b65a382132d3ef957ad67ddd1bccb438
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dati memorizzati nella cache nelle personalizzazioni a livello di documento
   Un obiettivo principale di personalizzazioni a livello di documento è per separare i dati dalla visualizzazione nei documenti di Office. Dati fa riferimento alle informazioni archiviate nel documento, inclusi i numeri e testo. Vista fa riferimento per l'interfaccia utente e il modello a oggetti di Microsoft Office Word e Microsoft Office Excel.  

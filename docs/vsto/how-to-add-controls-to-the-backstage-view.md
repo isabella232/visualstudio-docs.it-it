@@ -20,17 +20,15 @@ helpviewer_keywords:
 - Office button
 - Ribbon, menus
 - Microsoft Office Menu
-ms.assetid: 4fda1278-9aea-4d54-928a-269a81584494
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: add11e32bfdac58d0fc2f057a1ce72e0aece3c7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a58b9b59dd3625b3b9b7d8e9e3e77964eb0f2a5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Procedura: aggiungere controlli alla visualizzazione Backstage
   È possibile utilizzare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si fa clic il **File** scheda quando si esegue l'applicazione, i controlli aggiunti per il **File** scheda vengono visualizzati un gruppo denominato  **Componenti aggiuntivi**.  

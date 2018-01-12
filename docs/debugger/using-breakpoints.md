@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizzare i punti di interruzione nel Debugger di Visual Studio
 È possibile impostare i punti di interruzione quando si desidera arrestare l'esecuzione del debugger, ad esempio per visualizzare lo stato delle variabili di codice o per esaminare lo stack di chiamate. I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore.  
@@ -232,7 +232,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="export-and-import-breakpoints"></a>Esportare e importare punti di interruzione  
  È possibile esportare un punto di interruzione in un file XML facendo clic con il pulsante destro del mouse sul punto di interruzione e selezionando **Esporta**. Il file viene salvato per impostazione predefinita nella directory della soluzione. Per importare i punti di interruzione, aprire la finestra **Punti di interruzione** (**CTRL+ALT+B**) e nella barra degli strumenti fare clic sulla freccia rivolta verso destra (la descrizione comando è **Importa i punti di interruzione da un file**).  
   
-## <a name="troubleshoot-breakpoints"></a>Risolvere problemi relativi ai punti di interruzione  
+## <a name="troubleshoot"></a>Risoluzione dei problemi dei punti di interruzione 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Un punto di interruzione è stato eliminato ma si continua a raggiungerlo quando si avvia nuovamente il debug  
  Se un punto di interruzione è stato eliminato durante il debug, in alcuni casi è possibile raggiungerlo nuovamente la volta successiva che si avvia il debug. Per evitare di raggiungere il punto di interruzione, accertarsi che tutte le istanze del punto di interruzione vengano rimosse dalla finestra **Punti di interruzione** .  

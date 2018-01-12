@@ -27,17 +27,15 @@ helpviewer_keywords:
 - Sheet2 class
 - document-level customizations [Office development in Visual Studio], programming
 - application development [Office development in Visual Studio], document-level customizations
-ms.assetid: 6c421055-7bea-4db4-a4c9-539b8c78d4ee
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 68d0cfbc96b72208eee26f3cc75dd9a19d1b63fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="programming-document-level-customizations"></a>Programmazione delle personalizzazioni a livello di documento
   Quando si estende Microsoft Office Word o Microsoft Office Excel usando una personalizzazione a livello di documento è possibile eseguire le attività seguenti:  
@@ -58,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
  Alcuni aspetti della scrittura del codice nei progetti a livello di documento presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze sono causate dalla modalità di esposizione dei modelli a oggetti di Office al codice gestito. Per altre informazioni, vedere [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
- Per informazioni generali sulle personalizzazioni a livello di documento e altri tipi di soluzioni è possibile creare tramite gli strumenti di sviluppo per Office in Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office & #40; VSTO & #41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Per informazioni generali sulle personalizzazioni a livello di documento e altri tipi di soluzioni è possibile creare tramite gli strumenti di sviluppo per Office in Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Uso delle classi generate nei progetti a livello di documento  
  Quando si crea un progetto a livello di documento, in Visual Studio viene generata automaticamente nel progetto una classe utilizzabile come base iniziale di scrittura del codice. Visual Studio genera classi differenti per Word ed Excel:  

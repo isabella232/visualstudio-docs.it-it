@@ -20,17 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-ms.assetid: fe79b99a-cb7c-4a14-8d9f-bce0c0805ba0
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb0dce0aa162260ca784593ec34ee5c39acd1f31
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fornisce strumenti che consentono di creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti e voci di elenco in un sito Web di SharePoint. Gli elementi forniti prevedono una finestra di progettazione, un set di controlli dell'attività e i riferimenti all'assembly necessari. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]include anche il **Personalizzazione guidata SharePoint**, per creare e configurare i flussi di lavoro.  

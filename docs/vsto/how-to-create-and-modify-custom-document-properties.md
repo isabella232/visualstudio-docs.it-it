@@ -14,17 +14,15 @@ helpviewer_keywords:
 - custom document properties
 - documents [Office development in Visual Studio], properties
 - document properties [Office development in Visual Studio]
-ms.assetid: 99d9dfaf-891f-4f3b-a580-67362afdaf34
-caps.latest.revision: "47"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1ab68f9bd5c6a6bc1176fc211b99ad1de777ca38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5d081beb3422126f6ccf7484cb08e7fa43da8874
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Procedura: Creare e modificare proprietà personalizzate di un documento
   Le applicazioni di Microsoft Office elencate in precedenza forniscono proprietà incorporate che vengono archiviate con i documenti. Inoltre, è possibile creare e modificare le proprietà personalizzate del documento se si vuole archiviare informazioni aggiuntive con il documento.  

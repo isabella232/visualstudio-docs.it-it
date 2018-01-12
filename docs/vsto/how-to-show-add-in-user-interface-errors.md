@@ -15,17 +15,15 @@ helpviewer_keywords:
 - errors [Office development in Visual Studio], user interface errors
 - user interfaces [Office development in Visual Studio], errors
 - application-level add-ins [Office development in Visual Studio], user interface errors
-ms.assetid: aa82cc04-e616-4501-940c-79d11fb393cc
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ce5204855cd6ebe468d652b8420cddc7fd19a1a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo
   Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente di Microsoft Office e non riesce, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. Questi messaggi possono essere usati per stabilire perché non viene visualizzata una barra multifunzione personalizzata o perché viene visualizzata una barra multifunzione ma senza controlli.  

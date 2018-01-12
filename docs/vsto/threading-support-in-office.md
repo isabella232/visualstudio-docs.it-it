@@ -15,17 +15,15 @@ helpviewer_keywords:
 - threading [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], threading support
 - object models [Office development in Visual Studio], threading support
-ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2157
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c06e88c90116040fa3e9448368d32953095f889e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3383e3767c97efad9177f0e361524137ea5d66a8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="threading-support-in-office"></a>Supporto del threading in Office
   In questo argomento vengono fornite informazioni sulle modalità di supporto del threading nel modello a oggetti Microsoft Office. Il modello a oggetti Office non è thread-safe, ma è possibile utilizzare più thread in una soluzione Office. Le applicazioni di Office sono server modello COM (Component Object). COM consente ai client di chiamare server COM con thread arbitrari. Per i server COM che non sono thread-safe, COM fornisce un meccanismo per la serializzazione di chiamate simultanee in modo che un solo thread logico viene eseguito nel server in qualsiasi momento. Questo meccanismo è noto come modello di apartment a thread singolo (STA). Poiché le chiamate vengono serializzate, i chiamanti potrebbero essere bloccati per periodi di tempo, mentre il server è occupato o si sta gestendo altre chiamate in un thread in background.  

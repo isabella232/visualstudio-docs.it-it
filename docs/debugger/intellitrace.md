@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 È possibile ridurre il tempo richiesto per eseguire il debug dell'applicazione quando si usa IntelliTrace per registrare e tenere traccia della cronologia di esecuzione del codice. È possibile trovare facilmente i bug perché IntelliTrace consente di:  
@@ -56,7 +56,7 @@ ms.lasthandoff: 01/09/2018
 |||  
 |-|-|  
 |**Supportato**|-Visual Basic e Visual c# applicazioni che utilizzano .NET Framework 2.0 o versioni successive.<br />     È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br />     Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Per eseguire il debug di applicazioni di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Supporto limitato**|-.NET core e le applicazioni ASP.NET Core è supportate solo per gli eventi<br />-App F # su base sperimentale<br />-App Windows Store supportate solo per gli eventi|  
+|**Supporto limitato**|-.NET core e le applicazioni ASP.NET Core è supportate solo per gli eventi<br />-App F # su base sperimentale<br />-Le app UWP supportate solo per gli eventi|  
 |**Non è supportato**|-C++, altri linguaggi e script<br />-Servizi, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] App|  
   
 > [!NOTE]

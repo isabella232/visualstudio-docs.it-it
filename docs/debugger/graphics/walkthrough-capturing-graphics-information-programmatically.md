@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: cattura programmatica delle informazioni grafica
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.  
@@ -42,7 +42,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/inc
 -   Acquisizione di informazioni grafiche  
   
 > [!NOTE]
->  Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per fornire funzionalità di acquisizione, Windows 8.1 supporta direttamente l'acquisizione mediante Direct3D 11.2. Di conseguenza, per l'acquisizione a livello di codice in Windows 8.1 non è più necessario installare Remote Tools.  
+>  Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per Visual Studio per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per fornire funzionalità di acquisizione, Windows 8.1 supporta direttamente l'acquisizione mediante Direct3D 11.2. Di conseguenza, non è necessario installare Remote Tools per Visual Studio per l'acquisizione a livello di codice in Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparazione dell'app per usare l'acquisizione a livello di codice  
  Per usare l'acquisizione a livello di codice nell'app, deve includere le intestazioni necessarie. Queste intestazioni fanno parte di Windows 8.1 SDK.  
@@ -183,10 +183,10 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/inc
   
      Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
   
- Per [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] App, il percorso della directory temporanea è specifico di ogni utente e l'applicazione e in genere si trova in un percorso, ad esempio C:\users\\*username*\AppData\Local\Packages\\ *nome famiglia pacchetto*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico di ogni utente e in genere si trova in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp\\.  
+ Per la piattaforma UWP e [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] App, il percorso della directory temporanea è specifico di ogni utente e l'applicazione e in genere si trova in un percorso, ad esempio C:\users\\*username*\AppData\Local\Packages\\ *nome famiglia pacchetto*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico di ogni utente e in genere si trova in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  
+>  Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che UWP e [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] App hanno più restrizioni rispetto alle App desktop in cui è possibile scrivere dati e si potrebbe richiedere configurazioni aggiuntive per scrivere in determinati percorsi.  
   
 ### <a name="capturing-the-graphics-information"></a>Acquisizione delle informazioni grafiche  
  Dopo aver preparato l'app per l'acquisizione a livello di codice e aver facoltativamente configurato il percorso e il nome del file di log della grafica, compilare l'applicazione ed eseguirla o eseguire il debug per acquisire i dati; non avviare la diagnostica grafica da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] quando si usa l'API di acquisizione a livello di codice. Il log di grafica viene scritto nel percorso specificato. Se si vuole conservare questa versione del log, spostarlo in un altro percorso. In caso contrario, verrà sovrascritto quando si esegue nuovamente l'app.  

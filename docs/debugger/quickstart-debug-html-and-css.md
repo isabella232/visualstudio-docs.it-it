@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Debug di HTML e CSS nelle app di Windows 8.1 e UWP
 ![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Per le app JavaScript, Visual Studio offre un'esperienza di debug completa che include funzionalità note agli sviluppatori di Visual Studio e Internet Explorer. Queste funzionalità sono supportate per [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], le app di Windows Phone e App create con Visual Studio Tools per Apache Cordova.  
+ Per le app JavaScript, Visual Studio offre un'esperienza di debug completa che include funzionalità note agli sviluppatori di Visual Studio e Internet Explorer. Queste funzionalità sono supportate per App UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], le app di Windows Phone e App create con Visual Studio Tools per Apache Cordova.  
   
  Usando il modello di debug interattivo fornito dagli strumenti di ispezione DOM, è possibile visualizzare e modificare il codice HTML e CSS sottoposto a rendering. È possibile eseguire tutte queste operazioni senza arrestare e riavviare il debugger.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Per un esempio che illustra come selezionare elementi mediante il **elemento Select** pulsante, vedere [gli stili di Debug CSS utilizzando DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
- Gli strumenti di Visual Studio per JavaScript, DOM Explorer e la finestra Console JavaScript sono supportati nelle piattaforme seguenti:  
+ DOM Explorer e la finestra JavaScript Console sono supportati nelle piattaforme seguenti:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]e Windows Phone App scritte in JavaScript e HTML  
+-   App UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] e Windows Phone App scritte in JavaScript e HTML  
   
 -   Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

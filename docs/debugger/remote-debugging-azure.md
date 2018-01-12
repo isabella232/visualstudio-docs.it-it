@@ -16,11 +16,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 8d0163d9834a56735daf67050dbf3b8e74011dc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS e Azure in Visual Studio 2017
 È possibile distribuire un'applicazione Web ASP.NET in un computer Windows Server con IIS e configurarlo per il debug remoto. Questa guida viene illustrato come impostare e configurare un'applicazione ASP.NET Core 2017 di Visual Studio, distribuirlo in IIS utilizzando Azure e collegare il debugger remoto da Visual Studio.
