@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-ms.assetid: b0df5b0e-5fa0-43d8-a339-6d92f1276764
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a792ab750decf1a14b589116d886c847b3ddd478
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72a99a082fb1626013be6fa0ac5c759a43fd58a7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procedura dettagliata: Creare un progetto di definizione di sito di base
   Questa procedura dettagliata viene illustrato come creare una definizione di sito di base che contiene una Web part visiva con alcuni controlli su di esso. Per maggiore chiarezza, la Web part visiva che crei dispone solo di alcuni controlli. Tuttavia, è possibile creare definizioni di sito di SharePoint più sofisticate che includono altre funzionalità.  

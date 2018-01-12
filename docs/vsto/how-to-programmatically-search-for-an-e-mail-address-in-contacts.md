@@ -14,17 +14,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], searching
 - contacts [Office development in Visual Studio], searching
 - searching contacts
-ms.assetid: e973a407-8b94-45c7-acdf-fe330115fb33
-caps.latest.revision: "25"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 57c0cac0dd2b22b38284caec0a2bfb40d6e5b101
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9ab451d433536c7ebf5931aa2c971b08ed5c09b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>Procedura: Eseguire la ricerca di un indirizzo di posta elettronica nei contatti a livello di codice
   Questo esempio cerca una cartella Contatti per i contatti con il nome dominio **example.com** nei relativi indirizzi di posta elettronica.  

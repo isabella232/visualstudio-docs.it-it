@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-ms.assetid: b38c3a35-8b4a-4e86-8475-88fa8a873a5d
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fe976923c77902a4e3e42fc634a3227cadccdfc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1653b0e903fd931d5df4b1dcce4dcbd99fbbae37
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: associare estensioni di codice gestito a documenti
   È possibile collegare un assembly di personalizzazione di un documento esistente di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file supportato dai progetti di Microsoft Office e strumenti di sviluppo in Visual Studio. Per ulteriori informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).  

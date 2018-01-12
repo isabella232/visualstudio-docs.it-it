@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4069290a8a788bd4c36166a3d7720f61f263d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d08fd52f501ed962f50c232d579171fc52dd2b19
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer remoto con IIS in Visual Studio 2017
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'App in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.

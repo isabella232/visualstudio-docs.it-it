@@ -14,17 +14,15 @@ helpviewer_keywords:
 - custom calendars [Office development in Visual Studio]
 - calendars [Office development in Visual Studio], custom
 - appointments [Office development in Visual Studio]
-ms.assetid: 8272b53f-4cf0-46ee-b80e-93aa680cd9f5
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f5f8b606008c66e2c0c173351d5e3d31c808c996
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 131b4a5e724ab5a9b4d98141a7a203a12e8e811d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Procedura: creare un calendario personalizzato a livello di codice
   Questo esempio viene creata una nuova cartella Calendario denominata **PersonalCalendar**, quindi crea un nuovo elemento appuntamento e lo aggiunge alla cartella Calendario. Il codice visualizza quindi la cartella Calendario.  

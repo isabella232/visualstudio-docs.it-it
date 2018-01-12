@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 dev_langs:
 - FSharp
 - VB
@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -50,7 +50,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, e **.NET Core**: È possibile utilizzare lo strumento di pubblicazione per distribuire un sito Web tramite FTP o distribuzione Web. Per ulteriori informazioni, vedere [distribuzione a un sito web](quickstart-deploy-to-a-web-site.md).
 
-    In Esplora soluzioni, fare clic sul progetto e scegliere **pubblica**. Nello strumento di pubblicazione, scegliere l'opzione desiderato e quindi seguire i passaggi di configurazione.
+    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nello strumento di pubblicazione, scegliere l'opzione desiderato e quindi seguire i passaggi di configurazione.
 
     ![Scegliere IIS, FTP e così via.](../deployment/media/quickstart-publish-iis-ftp.png)
 
@@ -62,7 +62,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 ### <a name="publish-to-azure"></a>Pubblicare in Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node.js e .NET Core** applicazioni web: È possibile utilizzare lo strumento di pubblicazione per distribuire rapidamente applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni, fare clic sul progetto e scegliere **pubblica**. Nella finestra di dialogo Pubblica scegliere **servizio App di Microsoft Azure** o **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
+- **ASP.NET, ASP.NET Core, Python, Node.js e .NET Core** applicazioni web: È possibile utilizzare lo strumento di pubblicazione per distribuire rapidamente applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nella finestra di dialogo Pubblica scegliere **servizio App di Microsoft Azure** o **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
 
     ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-azure.png "scegliere servizio App di Azure")
 

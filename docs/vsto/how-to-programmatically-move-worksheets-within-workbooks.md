@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, moving
 - workbooks, moving worksheets in
-ms.assetid: a010a633-412e-4299-9587-cacb035842c1
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a69000c4e5c97193c911ab3d9e5b97978196ab0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f0869ad6a63e4a499d9fdca2cbaa538d11eef0d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Procedura: Spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice
   A livello di codice è possibile modificare la posizione dei fogli di lavoro rispetto ad altri fogli in una cartella di lavoro. Se non si specifica una posizione per il foglio spostato, Excel crea una nuova cartella di lavoro per contenerlo.  

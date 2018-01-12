@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire le app UWP da Visual Studio
 ![Si applica solo a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 In un dispositivo remoto Windows 10, è necessario abilitare [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development). Nei dispositivi Windows 10 che eseguono l'aggiornamento del creatore o versione successiva, gli strumenti remoti vengono installati automaticamente quando si distribuisce l'app. Per ulteriori informazioni, vedere [eseguire il Debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> In Windows 8.1 e versioni di aggiornamento di pre-del creatore di Windows 10, Visual Studio Remote Tools deve essere installata nel dispositivo remoto e il debugger remoto deve essere in esecuzione. In Windows 8.1, è necessario installare anche una licenza per sviluppatori.
+> In Windows 8.1 e versioni di aggiornamento di pre-del creatore di Windows 10, Remote Tools per Visual Studio deve essere installato nel dispositivo remoto e il debugger remoto deve essere in esecuzione. In Windows 8.1, è necessario installare anche una licenza per sviluppatori.
   
 La distribuzione usa il canale di rete del debugger remoto per inviare i file dell'app al dispositivo remoto.  
   
@@ -101,7 +101,7 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
  Di seguito sono indicate le opzioni di distribuzione che puoi impostare nella pagina delle proprietà Debug del progetto di avvio.  
   
  **Consenti loopback della rete locale**  
- Per motivi di sicurezza, a un'app [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] installata in modalità standard non è consentito effettuare chiamate di rete al dispositivo su cui è installata. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.  
+ Per motivi di sicurezza UWP o [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app installata in modalità standard non è consentito effettuare chiamate di rete per il dispositivo in cui è installata. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.  
   
  Per rimuovere l'esenzione relativa al loopback della rete:  
   

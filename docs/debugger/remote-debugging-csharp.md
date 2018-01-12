@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug di un progetto c# o Visual Basic in Visual Studio Remote
 Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
@@ -40,7 +40,7 @@ Il debugger remoto è supportata in Windows 7 e versioni successive (non phone) 
 > [!NOTE]
 > Il debug tra due computer connessi tramite un proxy non è supportato. Il debug tramite una connessione di larghezza di banda ridotta, ad esempio di connessione remota a Internet, ad alta latenza o tramite Internet tra paesi non è consigliato e potrebbe non funzionare oppure essere inaccettabile.
   
-## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare Remote Tools
+## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare remote tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

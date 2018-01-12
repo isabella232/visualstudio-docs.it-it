@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Generare un costruttore in c# #
 **Novità:** consente di generare immediatamente il codice per un nuovo costruttore in una classe. 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![Generare il risultato di costruttore](media/constructor_result.png)
 
-## <a id="selection"></a>Aggiungere un parametro al costruttore esistente
+## <a id="addparameter"></a>Aggiungere un parametro al costruttore esistente
 1. Aggiungere un parametro a un'istanza di oggetto esistente.
 
 1. Posizionare il cursore sulla riga in cui è presente una sottolineatura ondulata rossa che indica è stato usato un costruttore che non esiste ancora.

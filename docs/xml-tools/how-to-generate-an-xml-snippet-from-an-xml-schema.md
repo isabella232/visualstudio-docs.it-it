@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da XML Schema
 L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, premere TAB per inserire nell'elemento i dati XML generati dalle informazioni sullo schema per quel determinato elemento.  
@@ -138,7 +138,7 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ### <a name="output"></a>Output  
  Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Gli elementi contrassegnati come `bold` indicano i campi modificabili nel frammento XML.  
@@ -152,7 +152,7 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
     <Type>Voice</Type>  
   </Phone>  
 </Contact>  
-```  
+```
   
 ## <a name="see-also"></a>Vedere anche  
  [Frammenti di codice XML](../xml-tools/xml-snippets.md)   

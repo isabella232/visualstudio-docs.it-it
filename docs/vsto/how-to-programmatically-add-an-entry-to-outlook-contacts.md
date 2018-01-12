@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: contacts [Office development in Visual Studio], creating
-ms.assetid: 722ed0fa-116e-4eb5-9d86-586ed4ca7d6b
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2e72b3391660c3eb4d132b549666695cbf5e4ced
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6197970a4d3ff8d1f1cdd2e949d816d5eb4d6338
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Procedura: aggiungere una voce ai contatti di Outlook a livello di codice
   In questo esempio viene creato un nuovo contatto e inserisce i dati nel nuovo contatto.  

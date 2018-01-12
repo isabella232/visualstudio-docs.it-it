@@ -14,17 +14,15 @@ helpviewer_keywords:
 - XML schemas [Office development in Visual Studio], mapping
 - mappings [Office development in Visual Studio], XML schemas to Word documents
 - Word [Office development in Visual Studio], mapping XML schemas
-ms.assetid: 9bfb3c7b-6392-45bd-b4c1-b2012b9ded69
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c185e44cb01fd1908a477f5e9b7ef096472f4b00
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65ecd3adbeb6f554a901345c2fa5dbf8359a1428
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Procedura: effettuare il mapping degli schemi a documenti di Word in Visual Studio
   **Importante** le informazioni in questo argomento relative a Microsoft Word sono presentata esclusivamente per il vantaggio e l'uso di singoli utenti e organizzazioni che si trovano di fuori degli Stati Uniti e dei relativi territori o che utilizzano o lo sviluppo i programmi eseguibili in, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft prima di gennaio 2010, Microsoft la rimozione di un'implementazione di una particolare funzionalità correlata a XML personalizzato da Microsoft Word. Queste informazioni relative a Microsoft Word potrebbero non essere lette o utilizzate dal singoli individui o organizzazioni negli Stati Uniti o relativi territori, che utilizza o lo sviluppo di programmi eseguibili in, i prodotti di Microsoft Word che sono stati concessi in licenza da Microsoft dopo il 10 gennaio 2010 ; tali prodotti non si comporterà come prodotti con licenza prima di tale data o acquistati e concesso in licenza di fuori degli Stati Uniti.  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], unread mail
 - unread e-mail
 - mail items [Office development in Visual Studio], unread mail
-ms.assetid: 4ccfb146-4579-47b4-ab55-b49b02cdc726
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 00d91f47b33a36e95a82f8b483483ed4da733db8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50952f10c22ed7b71f0a1d74af874f1ec52d3905
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procedura: Recuperare messaggi non letti dalla Posta in arrivo a livello di codice
   Questo esempio richiama messaggi di posta elettronica non letta dalla **Posta in arrivo** di Outlook e visualizza il numero di elementi.  

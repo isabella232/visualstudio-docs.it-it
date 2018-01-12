@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -35,15 +35,15 @@ Per istruzioni dettagliate sul debug remoto, vedere gli argomenti.
 |Scenario|Collegamento|
 |-|-|-|
 |ASP.NET|[Il debug di ASP.NET Core remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) o [ASP.NET del debug remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|In c# o Visual Basic|[Il debug di un progetto c# o Visual Basic remoto](remote-debugging-csharp.md)|
-|C++|[Debug remoto di un progetto C++](remote-debugging-cpp.md)|
-|App di Windows universale (UWP)|[Eseguire il debug di un pacchetto dell'app installato](debug-installed-app-package.md)|
+|In c# o Visual Basic|[Il debug di un progetto c# o Visual Basic remoto](../debugger/remote-debugging-csharp.md)|
+|C++|[Debug remoto di un progetto C++](../debugger/remote-debugging-cpp.md)|
+|App di Windows universale (UWP)|[Eseguire App UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) e [eseguire il Debug di un pacchetto dell'app installata](../debugger/debug-installed-app-package.md)|
 |Azure|[ASP.NET di debug remoto in Azure](remote-debugging-azure.md)|
 |Azure Service Fabric|[Debug di un'applicazione di Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Se sufficiente desidera scaricare e installare il debugger remoto e non necessario istruzioni aggiuntive per lo scenario, seguire i passaggi descritti in questo articolo.
   
-## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare Remote Tools  
+## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare remote tools  
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

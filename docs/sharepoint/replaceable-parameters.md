@@ -17,17 +17,15 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-ms.assetid: 3c46bbb1-0a98-495c-9fd1-dc57a6aedc11
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa002f58ffd749cef9a4cbf9b536a36d7901b105
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   Parametri sostituibili, o *token*, può essere utilizzato nei file di progetto per fornire valori per gli elementi di soluzione SharePoint i cui valori effettivi non sono noti in fase di progettazione. La relativa funzione è simile a quella dei token del modello standard di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per ulteriori informazioni, vedere [parametri di modello](/visualstudio/ide/template-parameters).  

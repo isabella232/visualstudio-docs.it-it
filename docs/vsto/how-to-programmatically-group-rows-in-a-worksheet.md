@@ -20,17 +20,15 @@ helpviewer_keywords:
 - worksheets, ungrouping rows and columns
 - rows [Office development in Visual Studio], ungrouping
 - columns [Office development in Visual Studio], ungrouping
-ms.assetid: 48037dca-35a2-4df2-918b-6a9f568fae91
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f17c90fb5f10dfdc0658f9176e0e15cedcc6f1d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eeea3e917d79bd9838bbaf3ec3338129b70354ff
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Procedura: raggruppare righe in un foglio di lavoro a livello di codice
   È possibile raggruppare una o più righe intere. Per creare un gruppo in un foglio di lavoro, utilizzare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo di Excel nativo.  

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>Frammenti di codice XML
 L'Editor XML offre una funzionalità denominata *frammenti XML*, che consente di compilare più rapidamente i file XML. È possibile riutilizzare i frammenti di codice XML inserendoli nei file. È possibile inoltre generare dati XML basati su uno schema XSD (XML Schema Definition Language).  
@@ -37,7 +37,7 @@ L'Editor XML offre una funzionalità denominata *frammenti XML*, che consente di
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  È possibile inserire i frammenti di codice in due modi diversi: Il **Inserisci frammento di codice** comando consente di inserire il frammento XML nella posizione del cursore. Il **Racchiudi** comando esegue il wrapping il frammento XML nel testo selezionato. Entrambi i comandi sono disponibili dal **IntelliSense** sottomenu di sotto di **modifica** dal menu o dal menu di scelta rapida dell'editor.  
   

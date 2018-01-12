@@ -14,17 +14,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, URL picker
 - SharePoint development in Visual Studio, designer
-ms.assetid: 33f8f521-e1f8-4242-a580-8a4bd9cb5ddc
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c475b44b15b206464e2a910cc410964906706bd6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65851596d7a9df1ec7da9106891dff6471f1afb6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Finestra di dialogo di selezione URL (sviluppo per SharePoint in Visual Studio)
   Nella finestra di dialogo di selezione URL è possibile scegliere i file come file di pagina master o file di immagine posizionati nel progetto o nel server locale in cui è in esecuzione SharePoint.  

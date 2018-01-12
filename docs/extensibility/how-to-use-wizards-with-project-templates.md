@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: utilizzare procedure guidate con modelli di progetto
 In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> che, se implementata, consente di eseguire il codice personalizzato quando un utente crea un progetto da un modello.  
@@ -198,6 +198,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  
@@ -231,13 +232,13 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
 10. Estrarre la chiave pubblica dal file snk. Nella finestra di comando, digitare  
   
-     **\<percorso di sn.exe > \sn.exe - p key.snk outfile.key.**  
+     **\<percorso di sn.exe > \sn.exe -p key.snk outfile.key.**  
   
      Non dimenticare di racchiudere il percorso di sn.exe tra virgolette se sono presenti spazi dei nomi di directory.  
   
 11. Ottenere il token di chiave pubblica dal file di output:  
   
-     **\<percorso di sn.exe > \sn.exe - outfile.key t.**  
+     **\<percorso di sn.exe > \sn.exe -t outfile.key.**  
   
      Nuovamente, non dimenticare le virgolette. Verrà visualizzata una riga nell'output simile al seguente  
   

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - solutions [Office development in Visual Studio], configuration files
 - configuration files [Office development in Visual Studio]
-ms.assetid: f123838f-957a-4cf5-acc0-0cc0f4c2aea2
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d7b8c8c9ca6dd964a58aa65b901d9219732179f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6f604fa40a9816d5e46593bc50fcb91f82d13325
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedura: definire le informazioni di configurazione per una soluzione Office
   È possibile utilizzare i file di configurazione per configurare le impostazioni specifiche per le soluzioni Office. È possibile specificare impostazioni quali criteri di associazione degli assembly, oggetti remoti, debug e le impostazioni di traccia.  
