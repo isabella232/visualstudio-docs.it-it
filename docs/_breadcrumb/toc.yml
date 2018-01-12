@@ -4,7 +4,7 @@
   items:
     - name: Visual Studio
       tocHref: /visualstudio/
-      topicHref: /visualstudio/index
+      topicHref: /visualstudio/ide/
       items:
         - name: Qualità del codice
           tocHref: /visualstudio/code-quality/
@@ -34,7 +34,7 @@
         - name: Finestre di progettazione
           tocHref: /visualstudio/designers/
           topicHref: /visualstudio/designers/designing-user-interfaces
-        - name: Extensibility
+        - name: Estendibilità
           tocHref: /visualstudio/extensibility/
           topicHref: /visualstudio/extensibility/index
           items:
@@ -45,7 +45,7 @@
               tocHref: /visualstudio/extensibility/debugger/
               topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
               items:
-                - name: Riferimento
+                - name: Riferimenti
                   tocHref: /visualstudio/extensibility/debugger/reference/
                   topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
             - name: Linee guida sull'esperienza utente
