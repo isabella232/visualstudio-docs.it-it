@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi di dipendenza
 È possibile definire i comandi di menu di scelta e gestori movimenti nei diagrammi di dipendenza in Visual Studio. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) che è possibile distribuire ad altri utenti di Visual Studio.  
@@ -45,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
 3.  Per testare l'estensione, premere **CTRL+F5** o **F5**.  
   
-     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In questo caso, creare un diagramma di dipendenza. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.  
+     Avvia un'istanza sperimentale di Visual Studio. In questo caso, creare un diagramma di dipendenza. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.  
   
 4.  Chiudere l'istanza sperimentale e modificare il codice di esempio. Per ulteriori informazioni, vedere [Naviga e aggiornare i modelli nel codice programma dei livelli](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
      [Definizione di un gestore movimenti](#gesture)  
   
-6.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o in un altro computer, trovare il file **.vsix** in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+6.  Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** file **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Aggiunta di un comando o movimento a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori.
@@ -104,9 +102,9 @@ ms.lasthandoff: 12/22/2017
   
      Vedere anche [Naviga e aggiornare i modelli nel codice programma dei livelli](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Per testare la funzionalità, premere CTRL+F5 o F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In questa istanza, creare o aprire un diagramma di dipendenza.  
+2.  Per testare la funzionalità, premere CTRL+F5 o F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza, creare o aprire un diagramma di dipendenza.  
   
-3.  Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
+3.  Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** file nel **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse  
   
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   

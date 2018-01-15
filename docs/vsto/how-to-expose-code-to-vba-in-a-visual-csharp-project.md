@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a4794f1cde57f365ec4ec98251763e8d0e839ae0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 0be62faf81fc9d7da60a03596c25cc01a9bf0eac
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Procedura: esporre il codice a VBA in un progetto Visual C#
   Se si desidera che i due tipi di codice per interagire tra loro, è possibile esporre codice in un progetto di Visual Basic in Visual c# per il codice Applications (VBA).  
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/10/2018
   
      Per altre informazioni sugli elementi host, vedere [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Estrarre un'interfaccia dalla classe che si sta esponendo a VBA. Nel **Estrai interfaccia** finestra di dialogo, selezionare i membri pubblici che si desidera includere nella dichiarazione di interfaccia. Per ulteriori informazioni, vedere [Estrai interfaccia Refactoring &#40; C &#35; &#41; ](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  Estrarre un'interfaccia dalla classe che si sta esponendo a VBA. Nel **Estrai interfaccia** finestra di dialogo, selezionare i membri pubblici che si desidera includere nella dichiarazione di interfaccia. Per ulteriori informazioni, vedere [Estrai interfaccia Refactoring](../ide/reference/extract-interface-csharp.md).
   
 7.  Aggiungere il **pubblica** parola chiave per la dichiarazione di interfaccia.  
   

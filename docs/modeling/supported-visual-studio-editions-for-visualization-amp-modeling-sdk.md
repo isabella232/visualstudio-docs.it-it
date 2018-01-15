@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language Tools, supported Visual Studio editions
-ms.assetid: 7c313ba0-031d-45b8-8220-eead61754747
-caps.latest.revision: "27"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0d0114692af0c470a3f2aab181219394a54571d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de3c25f54bcfbf89ec5f4482a67741f9834222e0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Edizioni di Visual Studio per la visualizzazione &amp; SDK di modellazione
 Di seguito sono riportati gli elenchi delle versioni di Visual Studio che sono supportati con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e la distribuzione. Per ulteriori informazioni su queste edizioni, vedere Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).  

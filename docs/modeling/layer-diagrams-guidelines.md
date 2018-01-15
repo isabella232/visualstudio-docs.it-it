@@ -11,17 +11,15 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
-caps.latest.revision: "55"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammi di dipendenza: linee guida
 Vengono descritti l'architettura dell'app a un livello elevato creando *diagrammi dipendenza* in Visual Studio. Assicurarsi che il codice rimanga coerenza con la progettazione convalidando il codice con un diagramma di dipendenze. È anche possibile includere la convalida dei livelli nel processo di compilazione. Vedere [Video di Channel 9: progettazione e convalidare l'architettura con diagrammi di dipendenza](http://go.microsoft.com/fwlink/?LinkID=252073).  

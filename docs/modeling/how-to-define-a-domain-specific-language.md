@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.  
@@ -122,7 +120,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 -   La classe principale viene visualizzata in alto a sinistra del diagramma, definizione DSL in **classi e relazioni**. Rinominarla con un nome diverso dal linguaggio DSL. Ad esempio, un linguaggio DSL denominato **MusicLibrary** potrebbe essere una classe di primo livello denominata **musica**.  
   
--   La classe diagramma viene visualizzata in basso a destra del diagramma, definizione DSL nel **elementi del diagramma** colonna. Per visualizzarla, potrebbe essere necessario scorrere verso destra. In genere è denominato *YourDsl***diagramma**.  
+-   La classe diagramma viene visualizzata in basso a destra del diagramma, definizione DSL nel **elementi del diagramma** colonna. Per visualizzarla, potrebbe essere necessario scorrere verso destra. In genere è denominato * YourDsl ***diagramma**.  
   
 -   Se è stata utilizzata la **flusso attività** modello e si desidera creare diagrammi con le corsie, mantenere e rinominare la classe di dominio attore e la forma ActorSwimlane.  
   
@@ -223,11 +221,11 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza della [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in modalità sperimentale. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire o creare un file con l'estensione di file del linguaggio DSL.  
   
-3.  **Aprire Esplora risorse.** AT il lato del diagramma è la finestra di Esplora linguaggio in cui è in genere denominata *YourLanguage* Explorer. Se questa finestra non è visibile, potrebbe essere in una scheda sotto Esplora soluzioni. Se si riesce a trovare, sul **vista** dal menu **altre finestre**, quindi fare clic su *YourLanguage***Esplora**.  
+3.  **Aprire Esplora risorse.** AT il lato del diagramma è la finestra di Esplora linguaggio in cui è in genere denominata *YourLanguage* Explorer. Se questa finestra non è visibile, potrebbe essere in una scheda sotto Esplora soluzioni. Se si riesce a trovare, nel **vista** dal menu **altre finestre**, quindi fare clic su * YourLanguage ***Esplora**.  
   
      La finestra di esplorazione contiene una visualizzazione struttura ad albero del modello.  
   
-4.  **Creare nuovi elementi.** Il nodo radice nella parte superiore destro e quindi fare clic su **Aggiungi nuovo***YourClass*.  
+4.  **Creare nuovi elementi.** Il nodo radice nella parte superiore destro e quindi fare clic su **Aggiungi nuovo * * * YourClass*.  
   
      Una nuova istanza della classe appare nella finestra di esplorazione linguaggio.  
   
@@ -623,7 +621,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 |In Esplora DSL, non è possibile aggiungere un elemento a una raccolta. Ad esempio, quando si fa clic con il pulsante destro del mouse su Strumenti, nel menu manca un comando "Aggiungi strumento".<br /><br /> Nella finestra di esplorazione del linguaggio DSL, non è possibile aggiungere un elemento a un elenco.|Fare clic con il pulsante destro del mouse sull'elemento sopra il nodo con cui si sta provando. Quando si vuole aggiungere un elemento a un elenco, il comando Aggiungi non è nel nodo dell'elenco, ma nel proprietario.|  
 |È stata creata una classe di dominio, ma non è possibile creare le istanze nella finestra di esplorazione linguaggio.|Ogni classe di dominio, tranne quella radice, deve essere la destinazione di una relazione di incorporamento.|  
 |Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo.|Nella definizione del linguaggio DSL, selezionare una proprietà della classe di dominio e nella proprietà finestra, impostare **è il nome di elemento** su true.|  
-|Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Il pulsante destro l'elemento del progetto, fare clic su **Apri con** e selezionare *YourLanguage***progettazione (impostazione predefinita)**.|  
+|Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Il pulsante destro l'elemento del progetto, fare clic su **Apri con** e selezionare * YourLanguage ***progettazione (impostazione predefinita)**.|  
 |La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly.|Controllare e aggiornare **DslPackage\GeneratedCode\Package.tt** per ulteriori informazioni, vedere [procedura: modificare Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In finestre del menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta il Microsoft Visual Studio istanza sperimentale**.<br />2.  Nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **compilare** menu, fare clic su **Ricompila soluzione**.|  
   

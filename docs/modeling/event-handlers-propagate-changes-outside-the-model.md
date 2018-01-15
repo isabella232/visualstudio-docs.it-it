@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 In Visualization and Modeling SDK, è possibile definire i gestori di eventi di archivio per propagare le modifiche alle risorse all'esterno di archivio, ad esempio non archiviare variabili, i file, i modelli in altri archivi o altri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensioni. Dopo la fine della transazione in cui si è verificato l'evento trigger vengono eseguiti i gestori di eventi di archivio. Vengono inoltre eseguite in un'operazione di annullamento o ripetizione. Diversamente dalle regole di archivio, di conseguenza, gli eventi di archiviazione sono più utili per l'aggiornamento dei valori che non rientrano nell'archivio. A differenza degli eventi di .NET, gestori di eventi di archivio vengono registrati per l'ascolto su una classe: non è necessario registrare un gestore separato per ogni istanza. Per ulteriori informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [propagazione delle modifiche e risposta agli](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ In Visualization and Modeling SDK, è possibile definire i gestori di eventi di 
   
     -   `ElementDeleted`-attivata dopo un elemento del modello, relazione, forma o il connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma non avrà Nessuna relazione agli altri elementi.  
   
-2.  Aggiungere una definizione di classe parziale per *YourDsl***DocData** in un file di codice separato nella **DslPackage** progetto.  
+2.  Aggiungere una definizione di classe parziale per *YourDsl * * * DocData** in un file di codice separato nella **DslPackage** progetto.  
   
 3.  Scrivere il codice dell'evento come un metodo, come nell'esempio seguente. Può essere `static`, a meno che non si desidera accedere a `DocData`.  
   

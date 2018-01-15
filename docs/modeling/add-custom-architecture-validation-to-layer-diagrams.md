@@ -13,11 +13,11 @@ author: alexhomer1
 ms.author: ahomer
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.openlocfilehash: b267c0f801ddb4faf7fbca561c893e7296bb0a8e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiunta di convalida dell'architettura personalizzati a diagrammi di dipendenza
 In Visual Studio, gli utenti possono convalidare il codice sorgente in un progetto rispetto a un modello di livello in modo da poter verificare che il codice sorgente sia conforme alla dipendenze in un diagramma di dipendenze. Benché sia disponibile un algoritmo di convalida standard, è possibile definire estensioni di convalida personalizzate.  
@@ -59,7 +59,7 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
     > [!NOTE]
     >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
-5.  Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o in un altro computer, trovare il file **.vsix** in **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+5.  Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** file **bin\\\***. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Aggiunta di validator dei livelli a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. 
@@ -116,7 +116,7 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
     > [!NOTE]
     >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
-8.  Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
+8.  Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** file nel **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
   
      Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
@@ -150,7 +150,7 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
   
  Quando l'utente richiama il comando di menu **Convalida architettura** , il sistema di runtime dei livelli analizza i livelli e i rispettivi elementi per generare un grafico. Il grafico è costituito da quattro parti:  
   
--   I modelli di livello della soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che sono rappresentati come nodi e collegamenti nel grafico.  
+-   I modelli di livello della soluzione Visual Studio che sono rappresentati come nodi e collegamenti nel grafico.  
   
 -   Il codice, gli elementi di progetto e altri elementi definiti nella soluzione e rappresentati come nodi, insieme ai collegamenti che rappresentano le dipendenze individuate dal processo di analisi.  
   
@@ -190,7 +190,7 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
  I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".  
   
 ##  <a name="debugging"></a> Debug della convalida  
- Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.  
+ Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Eseguire il test con una soluzione che contiene dipendenze  
  La convalida non viene eseguita se non sono presenti le caratteristiche seguenti:  
@@ -199,7 +199,7 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
   
 -   Alcuni livelli nel modello sono associati a elementi del codice.  
   
- Quando si avvia un'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per la prima volta per testare l'estensione di convalida, aprire o creare una soluzione che abbia queste caratteristiche.  
+ La prima volta che si avvia un'istanza sperimentale di Visual Studio per testare l'estensione di convalida, aprire o creare una soluzione che abbia queste caratteristiche.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Eseguire Pulisci soluzione prima di Convalida architettura  
  Ogni volta che si aggiorna il codice di convalida, usare il comando **Pulisci soluzione** del menu **Compila** nella soluzione sperimentale prima di testare il comando Convalida. Questa operazione è necessaria perché i risultati della convalida vengono memorizzati nella cache. Se il diagramma di dipendenze di test o il relativo codice di avere non aggiornato, i metodi di convalida non essere eseguiti.  
@@ -207,9 +207,9 @@ In Visual Studio, gli utenti possono convalidare il codice sorgente in un proget
 ### <a name="launch-the-debugger-explicitly"></a>Avviare il debugger in modo esplicito  
  La convalida viene eseguita in un processo separato. Di conseguenza, i punti di interruzione nel metodo di convalida non verranno attivati. È necessario connettere il debugger al processo in modo esplicito all'avvio della convalida.  
   
- Per connettere il debugger al processo di convalida, inserire una chiamata a `System.Diagnostics.Debugger.Launch()` all'avvio del metodo di convalida. Quando viene visualizzata la finestra di dialogo di debug, selezionare l'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Per connettere il debugger al processo di convalida, inserire una chiamata a `System.Diagnostics.Debugger.Launch()` all'avvio del metodo di convalida. Quando viene visualizzata la finestra di dialogo Debug, selezionare l'istanza principale di Visual Studio.  
   
- In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e scegliere **Connetti a processo** dal menu **Debug**. Selezionare il processo denominato **Graphcmd.exe**.  
+ In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di Visual Studio e scegliere il **Debug** dal menu **Connetti a processo**. Selezionare il processo denominato **Graphcmd.exe**.  
   
  Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire debug**).  
   

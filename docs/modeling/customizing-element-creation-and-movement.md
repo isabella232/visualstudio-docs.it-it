@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords: Domain-Specific Language, element merge directives
-ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
-caps.latest.revision: "36"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e8de9588e263d392252134a470312a9dc4f4b648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 È possibile consentire a un elemento essere trascinato su un altro, dalla casella degli strumenti o in un'Incolla o dell'operazione di spostamento. È possibile disporre gli elementi spostati collegati a elementi di destinazione, utilizzando le relazioni che specificano.  

@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, programming domain models
-ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
-caps.latest.revision: "26"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 18381aef265935cf927940f82dd0a47ee8197222
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e210b786fab418a84ae6bee70809a68a2dedfa71
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Esplorazione e aggiornamento di un modello nel codice del programma
 È possibile scrivere codice per creare ed eliminare gli elementi del modello, impostarne le proprietà, creare ed eliminare collegamenti tra elementi. All'interno di una transazione, è necessario configurare tutte le modifiche. Se gli elementi vengono visualizzati in un diagramma, il diagramma verrà "correggere" automaticamente alla fine della transazione.  

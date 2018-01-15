@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 63279da9-69ac-49ad-ac7d-43957c45e0ce
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dc5a0429ef4eeedae715538ef6ffaac787f3ebd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5cc9bf7e3a898e423040a12c88312e449c6f8983
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Riferimento API per modelli di testo T4
 L'API del modello di testo consente di richiamare e personalizzare la trasformazione di [modelli di testo](../modeling/code-generation-and-t4-text-templates.md).  

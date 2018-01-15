@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language Tools, DSL Explorer
-ms.assetid: ca0e8550-bb55-4218-92e2-f79ab5308d4f
-caps.latest.revision: "11"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3c0b3348625fef20c89367bd184a9d1b006b9132
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 34d2008b4316d75d37292b5baa456bf9cdc65e15
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
 Il **Esplora DSL** consente di visualizzare tipi diversi di informazioni in una visualizzazione albero. Per ulteriori informazioni sulla maggior parte degli elementi in Esplora DSL, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).  

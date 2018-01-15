@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
-caps.latest.revision: "74"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e50e433ea3f954efd085a02a3e29a0eff958da0c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: creazione di un processore di direttiva personalizzato
 *Processori di direttiva* funzionano aggiungendo codice per il *classe della trasformazione generata*. Se si chiama un *direttiva* da un *modello di testo*, il resto del codice che scrive nel modello di testo può basarsi sulle funzionalità che la direttiva fornisce.  

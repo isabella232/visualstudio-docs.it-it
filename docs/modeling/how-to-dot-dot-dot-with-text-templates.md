@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: d1ac2509-0479-47eb-809c-1f171245d0b6
-caps.latest.revision: "11"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 351b9025ba4631a515f1f6cf627e27e6afb3cc88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fdbed997737b772b22d88b0542d212214e2b808f
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 Modelli di testo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] forniscono un modo utile per la generazione di testo di qualsiasi tipo. È possibile utilizzare modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare alcuni del codice del progetto. Questo argomento vengono riepilogati più di frequente richiesto "How do I …?" domande.  

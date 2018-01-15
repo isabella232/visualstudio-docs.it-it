@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 590c9a69-4e22-4841-bb23-f32e80ec1e76
-caps.latest.revision: "8"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c5dace5862354c26a22b65b3f471163e50738c7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dcea7eb5b87aa70f1c67b45ef4c111cfa71358fc
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
 Il Visual Studio SDK di visualizzazione e modellazione fornisce la piattaforma in cui vengono compilati gli strumenti di linguaggi specifici di dominio (DSL).  

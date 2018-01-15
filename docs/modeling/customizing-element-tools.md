@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6dac48b6-db68-4bcd-8aa2-422c2ad5d28b
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2571fd137875a0971b7a9e4364849a3105ca220a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec997cfe101c5148f901c23356592016b72d4791
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-element-tools"></a>Personalizzazione di strumenti elemento
 In alcune definizioni DSL, un singolo concetto è rappresentare come un gruppo di elementi. Ad esempio, se si crea un modello in cui un componente dispone di un set fisso di porte, è necessario sempre le porte da creare contemporaneamente il proprio componente padre. Pertanto, è necessario personalizzare lo strumento di creazione di elemento in modo che crei un gruppo di elementi invece di uno solo. A tale scopo, è possibile personalizzare il tipo di inizializzazione lo strumento di creazione di elemento.  

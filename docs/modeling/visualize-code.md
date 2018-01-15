@@ -11,17 +11,15 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
-caps.latest.revision: "47"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 50904fd36dc3a4f009b87b9daa5c603fdee702ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3272195d1099ea851cbabf32c845ce2d46a697c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="visualize-code"></a>Visualizzare il codice
 È possibile usare gli strumenti di visualizzazione e modellazione di Visual Studio per comprendere più facilmente il codice esistente e descrivere l'applicazione. In questo modo è possibile avere un'indicazione visiva dell'impatto che le modifiche potrebbero avere sul codice e valutare il lavoro e i rischi risultanti da tali modifiche. Ad esempio:  

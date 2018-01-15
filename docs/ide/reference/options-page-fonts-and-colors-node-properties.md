@@ -41,7 +41,7 @@ Questo documento descrive le proprietà di tipi di carattere e colori per una fi
 |Nome degli elementi delle proprietà|Valore|Descrizione|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (String)|Il tipo di carattere da usare, ad esempio "Courier New".|  
-|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo.|  
+|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>) |Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo. |  
 |FontSize|Get/Set (Short)|La dimensione del carattere da usare, in punti. Ad esempio, 10 o 12.|  
   
 ## <a name="see-also"></a>Vedere anche  

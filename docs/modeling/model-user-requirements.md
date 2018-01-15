@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 Visual Studio facilita la comprensione, la discussione e la comunicazione delle esigenze degli utenti mediante la creazione di diagrammi delle attività e del ruolo che il sistema svolge per il raggiungimento degli obiettivi. Un modello di requisiti è un set di tali diagrammi, ognuno dei quali è incentrato su un aspetto diverso delle esigenze degli utenti. Per una dimostrazione video, vedere: [Modellazione del dominio aziendale](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
@@ -61,7 +59,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.  
   
- Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *statico**regole business* come commenti associati alle relative classi di un diagramma classi concettuali. Ad esempio:  
+ Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *statico * * le regole di business* come commenti associati alle relative classi di un diagramma classi concettuali. Ad esempio:  
   
  ![Regola nel commento associato alla classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

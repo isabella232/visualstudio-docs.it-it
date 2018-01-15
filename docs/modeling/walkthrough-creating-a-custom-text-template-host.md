@@ -9,20 +9,18 @@ ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
-caps.latest.revision: "51"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bc8bcec7b5484ad1065539b5860bae115dcb4fd0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procedura dettagliata: creazione di un host del modello di testo personalizzato
-Oggetto *modello di testo**host* fornisce un ambiente che consente di *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore o *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per ulteriori informazioni, vedere [il processo di trasformazione di modello di testo](../modeling/the-text-template-transformation-process.md).  
+Oggetto *modello di testo * * host* fornisce un ambiente che consente di *motore di trasformazione del modello di testo* per l'esecuzione. L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore o *processore di direttiva* che necessita di un file o un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per ulteriori informazioni, vedere [il processo di trasformazione di modello di testo](../modeling/the-text-template-transformation-process.md).  
   
  È possibile scrivere un host personalizzato se si desidera utilizzare il *trasformazione del modello di testo* funzionalità dall'esterno [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Per la documentazione dei singoli metodi, vedere <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

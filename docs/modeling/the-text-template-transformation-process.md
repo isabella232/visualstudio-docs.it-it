@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, transformation process
-ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
-caps.latest.revision: "30"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 69f0285746709bd34914362912332d46731179c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 469d2460bab93c73c227b08aeb763e6bfe18261e
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile utilizzare modelli di testo per generare il codice Visual Basic o c# oppure è possibile generare un report HTML.  

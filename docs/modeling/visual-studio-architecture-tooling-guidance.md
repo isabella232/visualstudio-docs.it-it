@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fce6b398-935e-4241-bdf4-875d09ff57c7
-caps.latest.revision: "10"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dcedff359d3f602096508c2123988cd31453e471
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d45bc500004c0014e2d2d27a427198eef888ecaa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Documentazione Visual Studio Architecture Tooling Guidance
 Questo Architecture Tooling Guidance è un pacchetto scaricabile di istruzioni pratiche sull'utilizzo degli strumenti di modellazione in Visual Studio 2010. Viene fornita una panoramica di come utilizzare gli strumenti di modellazione in modo integrato e vengono illustrati gli scenari più comuni in cui vengono utilizzati gli strumenti.  

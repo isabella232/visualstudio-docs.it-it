@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
 Questo argomento illustra i concetti di base per la definizione e utilizzo di un linguaggio specifico di dominio (DSL) creato con il SDK di modellazione per Visual Studio.  
@@ -143,7 +141,7 @@ Questo argomento illustra i concetti di base per la definizione e utilizzo di un
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>Il contenuto di un modello  
- Il contenuto di un file che è un'istanza di un linguaggio DSL viene chiamato un *modello*. Il modello contiene *modello**elementi* e *collegamenti* tra gli elementi. La definizione DSL specifica i tipi di elementi del modello e i collegamenti possono esistere nel modello. Ad esempio, in un linguaggio DSL creato dal modello di lingua minimo, è un tipo di elemento del modello e un tipo di collegamento.  
+ Il contenuto di un file che è un'istanza di un linguaggio DSL viene chiamato un *modello*. Il modello contiene *modello * * elementi* e *collegamenti* tra gli elementi. La definizione DSL specifica i tipi di elementi del modello e i collegamenti possono esistere nel modello. Ad esempio, in un linguaggio DSL creato dal modello di lingua minimo, è un tipo di elemento del modello e un tipo di collegamento.  
   
  La definizione DSL è possibile specificare come il modello viene visualizzato in un diagramma. È possibile scegliere tra una varietà di stili di forme e connettori. È possibile specificare che alcune forme all'interno di altre forme.  
   

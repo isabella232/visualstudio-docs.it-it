@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
-Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in un computer qualsiasi, è necessario registrarlo da uno dei metodi descritti in questo argomento.  
+Per utilizzare un processore di direttiva personalizzato in Visual Studio in qualsiasi computer, è necessario registrarlo da uno dei metodi descritti in questo argomento.  
   
  I metodi alternativi sono i seguenti:  
   
@@ -30,7 +28,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
 -   Impostare una chiave del Registro di sistema. In questo metodo, si aggiunge una voce del Registro di sistema per il processore di direttiva.  
   
- È necessario utilizzare uno di questi metodi solo se si desidera trasformare il modello di testo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Se si utilizza un host personalizzato nella propria applicazione, l'host personalizzato è responsabile dell'individuazione dei processori di direttive per ciascuna direttiva.  
+ È necessario utilizzare uno di questi metodi solo se si desidera trasformare il modello di testo in Visual Studio o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Se si utilizza un host personalizzato nella propria applicazione, l'host personalizzato è responsabile dell'individuazione dei processori di direttive per ciascuna direttiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Distribuzione di un processore di direttiva in un pacchetto VSIX  
  È possibile aggiungere un processore di direttiva personalizzato a un [Visual Studio Extension (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
@@ -47,7 +45,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Per sviluppare un processore di direttiva personalizzato in un progetto VSIX  
   
-1.  Creare un progetto VSIX in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1.  Creare un progetto VSIX in Visual Studio.  
   
     -   Nel **nuovo progetto** finestra di dialogo espandere **Visual Basic** o **Visual c#**, quindi espandere **estendibilità**. Fare clic su **progetto VSIX**.  
   
@@ -108,15 +106,15 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
 2.  Se si desidera installare il processore di direttiva in un altro computer, copiare il file .vsix nell'altro computer.  
   
-3.  Fare doppio clic sul file .vsix. Verrà visualizzato [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension Installer.  
+3.  Fare doppio clic sul file .vsix. Verrà visualizzata la finestra di Visual Studio Extension Installer.  
   
-4.  Riavviare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Si sarà ora in grado di eseguire modelli di testo che contengono direttive che si riferiscono al processore di direttiva personalizzato. Ogni direttiva è nel seguente formato:  
+4.  Riavviare Visual Studio. Si sarà ora in grado di eseguire modelli di testo che contengono direttive che si riferiscono al processore di direttiva personalizzato. Ogni direttiva è nel seguente formato:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Per disinstallare o disabilitare temporaneamente il processore di direttiva personalizzato  
   
-1.  Nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **strumenti** menu, fare clic su **Extension Manager**.  
+1.  In Visual Studio **strumenti** menu, fare clic su **Extension Manager**.  
   
 2.  Selezionare il progetto VSIX che contiene il processore di direttiva e quindi fare clic su **Disinstalla** o **disabilitare**.  
   
@@ -169,7 +167,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Se si desidera installare il processore di direttiva nella versione sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], inserire "Exp" dopo "11.0".  
+     Se si desidera installare il processore di direttiva nella versione sperimentale di Visual Studio, inserire "Exp" dopo "11.0".  
   
 3.  Aggiungere una chiave del Registro di sistema che abbia lo stesso nome della classe del processore di direttiva.  
   

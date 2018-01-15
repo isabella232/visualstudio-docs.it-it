@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizzazione del comportamento di eliminazione
 L'eliminazione di un elemento in genere determina l'eliminazione anche degli elementi correlati. Tutte le relazioni a esso connesse ed eventuali elementi figlio vengono eliminati. Questo comportamento è denominato *propagazione eliminazioni*. È possibile personalizzare la propagazione dell'eliminazione, ad esempio per fare in modo che vengano eliminati altri elementi correlati. Scrivendo codice programma, è possibile far dipendere la propagazione dell'eliminazione dallo stato del modello. È inoltre possibile fare in modo che un'eliminazione comporti altre modifiche.  
@@ -78,7 +76,7 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
 >  Per aggiungere il codice del programma alla definizione DSL, creare un file di codice nel **Dsl** del progetto e scrivere le definizioni parziali per estendere le classi nella cartella del codice generato. Per ulteriori informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a>Definizione di una chiusura Delete  
- L'operazione di eliminazione utilizza la classe *YourModel***DeleteClosure** per determinare quali elementi da eliminare, dato una selezione iniziale. Chiama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` ripetutamente, verificando il grafico delle relazioni. È possibile eseguire l'override di questi metodi. ShouldVisitRolePlayer viene fornito con l'identità di un collegamento e l'elemento in corrispondenza di uno dei ruoli predefiniti del collegamento. Deve restituire uno dei valori seguenti:  
+ L'operazione di eliminazione utilizza la classe *YourModel * * * DeleteClosure** per determinare quali elementi da eliminare, dato una selezione iniziale. Chiama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` ripetutamente, verificando il grafico delle relazioni. È possibile eseguire l'override di questi metodi. ShouldVisitRolePlayer viene fornito con l'identità di un collegamento e l'elemento in corrispondenza di uno dei ruoli predefiniti del collegamento. Deve restituire uno dei valori seguenti:  
   
 -   **VisitorFilterResult.Yes**: l'elemento deve essere eliminato e il walker deve continuare a provare l'elemento di altri collegamenti.  
   

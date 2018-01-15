@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1f64368c90f6d77be24271eeaac96cc6b5624f67
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4a746d3b2c913025bb9fc84b4f3fec34fe2bc7cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 È possibile estendere il linguaggio specifico di dominio (DSL) mediante Managed Extensibility Framework (MEF). Si o altri sviluppatori sarà in grado di scrivere le estensioni per il linguaggio DSL senza modificare la definizione DSL e il codice programma. Tali estensioni includono comandi di menu, gestori di trascinamento e rilascio e la convalida. Gli utenti saranno in grado di installare il modello DSL e, facoltativamente, installare le estensioni per tale.  

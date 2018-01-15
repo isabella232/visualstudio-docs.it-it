@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
-Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe codice. In questo modo è possibile vedere il funzionamento complessivo del codice senza leggere file e righe di codice.  
-  
- ![Visualizzare le dipendenze nelle soluzioni](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Ecco alcuni video**:  
-  
--   [Comprensione delle dipendenze del codice tramite la visualizzazione](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Visualizza l'impatto di una modifica](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Informazioni sul codice complesso con mappe codice](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a> Introduzione all'uso delle mappe codice  
- **Per usare le mappe codice saranno necessari**:  
+
+Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe codice. In questo modo è possibile vedere il funzionamento complessivo del codice senza leggere file e righe di codice.
+
+![Visualizzare le dipendenze nelle soluzioni](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Ecco alcuni video**:
+
+- [Comprensione delle dipendenze del codice tramite la visualizzazione](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Visualizza l'impatto di una modifica](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Informazioni sul codice complesso con mappe del codice](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a> Introduzione all'uso delle mappe codice
+
+**Per usare le mappe codice saranno necessari**:
   
 -   Visual Studio Enterprise per creare mappe codice tramite l'editor di codice, Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti.  
   
@@ -171,7 +171,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
   
 10. Un altro modo per concentrarsi sulla mappa di soluzione complessa consiste nel generare una nuova mappa contenente gli elementi selezionati da una mappa esistente. Tenere premuto **CTRL** durante la selezione di elementi su cui si vuole concentrarsi, aprire il menu di scelta rapida e scegliere **Nuovo grafico dalla selezione**.  
   
-     ![Mostra gli elementi selezionati in una nuova mappa codice](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Mostra gli elementi selezionati in una nuova mappa codice](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Il contesto contenitore viene trasferito alla nuova mappa. Nascondere le cartelle della soluzione e tutti gli altri contenitori che non si vuole visualizzare tramite il **filtri** riquadro.  
   

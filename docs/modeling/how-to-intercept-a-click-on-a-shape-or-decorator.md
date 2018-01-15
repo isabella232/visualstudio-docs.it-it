@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, programming domain models
-ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
-caps.latest.revision: "21"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 52ecb40d98a352e629ac234be294c972126b4d68
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bb463fb8f6a668a082f5f1852673a387a4cd720
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 Le procedure seguenti viene illustrato come intercettare un clic su una forma o un elemento decorator icona. È possibile intercettare fa clic su, fa doppio clic, trascina, e altre azioni e rendere l'elemento di rispondere.  

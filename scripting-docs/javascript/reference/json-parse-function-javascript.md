@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>Funzione JSON.parse (JavaScript)
 Converte una stringa JSON (JavaScript Object Notation) in un oggetto.  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Assicurarsi che l'argomento `text` sia stato serializzato da un'implementazione conforme a JSON come `JSON.stringify`.  
   
--   Eseguire l'argomento `text` in un validator JSON come [JSLint](http://www.jslint.com/) per identificare gli errori di sintassi.  
+-   Eseguire il `text` argomento in un validator JSON come [JSLint](http://www.jslint.com/) o [JSON in formato CSV](https://json-csv.com) per identificare gli errori di sintassi.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente si utilizza `JSON.parse` per convertire una stringa JSON in un oggetto.  
