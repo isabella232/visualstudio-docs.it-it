@@ -1,40 +1,36 @@
 ---
-title: Vantaggio Visual Studio Team Services
+title: VSTS per sottoscrittori di Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Visual Studio Team Services (VSTS) benefit included in your Visual Studio subscription.
+Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 72579bda7fdaa16c40759f1bc20504f035ffa7c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c2545855f7e5226a1a679d5d8b558f1964fe72b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="activating-the-visual-studio-team-services-vsts-benefit-in-visual-studio-subscriptions"></a>Attivazione del vantaggio Visual Studio Team Services (VSTS) nelle sottoscrizioni di Visual Studio
 
-La maggior parte delle sottoscrizioni di Visual Studio include l'accesso a Visual Studio Team Services (VSTS).  È il complemento perfetto per l'ambiente IDE. Offre infatti un repository Git gratuito, strumenti di pianificazione Agile e hosting di build in qualsiasi linguaggio.  
+Quando si accede a Visual Studio Team Services usando la stessa identità usata per attivare la sottoscrizione di Visual Studio, l'identità viene riconosciuta automaticamente. Questo procedimento funziona sia per l'identità primaria usata quando si accede al Portale sottoscrittore, sia per eventuali identità alternative configurate per la sottoscrizione di Visual Studio. VSTS supporta sia gli account Microsoft (ad esempio @outlook.com), sia gli account aziendali o dell'istituto di istruzione (che usano Azure Active Directory gestito dall'organizzazione). È possibile usare sia l'identità primaria, sia le identità alternative in Visual Studio Team Services e unire qualsiasi numero di account VSTS come membri.
 
-Per usare VSTS è necessario un account. È possibile accedere con un account esistente o crearne uno nuovo.  Per creare un nuovo account:
-1.  Fare clic sul collegamento "Inizia subito" nella parte inferiore del riquadro del vantaggio.   
+# <a name="vsts-features-included-by-visual-studio-subscription-level"></a>Funzionalità di VSTS incluse nel livello di sottoscrizione di Visual Studio
 
-    ![Riquadro del vantaggio VSTS](_img\vs-vsts\vs-vsts-tile.png)
+Queste funzionalità di VSTS sono incluse nelle sottoscrizioni seguenti: 
+- Visual Studio Enterprise: [Basic](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web), [Gestione pacchetti](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- Visual Studio Professional: [Basic](https://www.visualstudio.com/team-services/compare-features/)
+- Piattaforme MSDN: [Basic](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- Visual Studio Test Professional: [Basic](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
-2.  Immettere un nome per il sito del progetto VSTS.  
-3.  Scegliere se usare **Git** o il **controllo della versione di Team Foundation** per gestire il progetto.  Questa è una scelta permanente per ogni progetto team creato, ma si possono usare progetti team TFVC e Git nella stessa raccolta di progetti team.  In caso di incertezze: 
-- Git: Git è un sistema di controllo della versione decentralizzato. Ogni sviluppatore ha una copia dell'intero repository di origine nel computer di sviluppo. Gli sviluppatori possono eseguire il commit di ciascun insieme di modifiche nel computer di sviluppo ed eseguire operazioni di controllo della versione quali la cronologia e il confronto senza connessione di rete.  [Altre informazioni su Git](https://www.visualstudio.com/en-us/docs/git/gitquickstart)
-- Controllo della versione di Team Foundation: il controllo della versione di Team Foundation è un sistema di controllo della versione centralizzato. In genere, i membri del team hanno una sola versione di ogni file nel computer di sviluppo. I dati cronologici vengono gestiti solo sul server. I branch sono basati sul percorso e creati nel server. [Altre informazioni](https://www.visualstudio.com/en-us/docs/tfvc/overview) sul controllo della versione di Team Foundation.
- 
-4.  Fare clic su **Modifica dettagli** per personalizzare le opzioni relative al nome del progetto, alla modalità di organizzazione del lavoro (Agile, Scrum, CMMI), alla posizione in cui ospitare i progetti e alla modalità di condivisione del lavoro con altri utenti.  Fare clic su "Continua".
+Queste funzionalità di Visual Studio Team Services sono incluse per tutte le sottoscrizioni a pagamento, [sia cloud che standard](https://www.visualstudio.com/vs/pricing/), oltre che per le sottoscrizioni offerte agli startup nel [programma BizSpark](https://bizspark.microsoft.com/) e ai partner con una [ competenza](https://partner.microsoft.com/membership/competencies) in Microsoft Partner Network. VSTS non è incluso per il [Microsoft Action Pack](https://partner.microsoft.com/membership/action-pack) o per il [programma Imagine](https://imagine.microsoft.com/) per studenti e istituzioni accademiche, anche se chiunque può creare un account VSTS gratuitamente con fino a 5 membri del team.
 
-    ![Dettagli del progetto nel vantaggio Visual Studio Team Services](_img\vs-vsts\vs-vsts-project-details.png)
+# <a name="create-your-vsts-account"></a>Creare il proprio account VSTS
 
-5.  La creazione dell'account richiede un attimo. Subito dopo verrà visualizzata la pagina di VSTS per il primo progetto con il nome specificato.  A questo punto è tutto pronto per iniziare a usare Visual Studio Team Services.
+Per usare Visual Studio Team Services, è necessario creare un account o essere aggiunti come membri in un account di proprietà di un altro utente. La creazione di un account VSTS è gratuita ed è possibile creare più account VSTS. 
 
-Si riceverà anche un messaggio di posta elettronica di conferma della creazione dell'account  con l'URL e i dati di accesso dell'account e gli indirizzi di posta elettronica preferiti.  
-
-![Messaggio di benvenuto del vantaggio VSTS](_img\vs-vsts\vs-vsts-welcome.png)
+[Come iscriversi per Visual Studio Team Services](https://docs.microsoft.com/vsts/accounts/index)

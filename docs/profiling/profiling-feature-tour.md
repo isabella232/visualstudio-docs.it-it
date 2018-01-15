@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Panoramica delle funzionalità di profilatura
 
@@ -147,7 +147,8 @@ Se sono necessarie funzionalità, ad esempio la strumentazione, che non sono att
 
 ![Strumento Esplora prestazioni](../profiling/media/prof-tour-performance-explorer.png "Esplora prestazioni")
 
-## <a name="which-tool-should-i-use"></a>Quale strumento utilizzare?  
+## <a name="tool_support_info"></a>Quale strumento si deve usare?  
+
 Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Studio e i diversi tipi di progetto con cui possono essere usati:
   
 |Strumento di prestazioni|Desktop di Windows|Windows Store/universale|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|  
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|  
 |[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì (no per ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET e Visual Studio Enterprise|Solo .NET e Visual Studio Enterprise|Solo .NET e Visual Studio Enterprise|
 |[Utilizzo della rete](../profiling/network-usage.md)|No|sì|No| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|Sì per HTML, no per XAML|No|  
 |[Memoria JavaScript](../profiling/javascript-memory.md)|No|Sì per HTML, no per XAML|No|  

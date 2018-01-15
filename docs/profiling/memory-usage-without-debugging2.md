@@ -12,19 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="memory-usage-without-the-debugger"></a>Utilizzo della memoria senza il debugger
+# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger di Visual Studio
 È possibile usare lo strumento **Utilizzo memoria** senza debug per eseguire le operazioni seguenti:  
   
 -   Monitorare l'uso della memoria delle tue app direttamente in Visual Studio mentre sviluppi uno scenario.  

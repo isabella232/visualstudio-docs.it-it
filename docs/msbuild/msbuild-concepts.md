@@ -14,11 +14,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e57abdc78bc5b5844959fe2e3077688ec496df49
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a428fa303fc3f4ad60599155b0663370f823210
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="msbuild-concepts"></a>Concetti relativi a MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornisce un XML Schema di base che è possibile usare per controllare come la piattaforma di compilazione compila il software. Per specificare i componenti nella compilazione e come devono essere compilati, usare queste quattro parti di MSBuild: proprietà, elementi, attività e destinazioni.  
@@ -28,9 +28,9 @@ ms.lasthandoff: 12/22/2017
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Proprietà di MSBuild](../msbuild/msbuild-properties.md)|Introduce proprietà e raccolte di proprietà. Le proprietà sono coppie di chiave/valore che è possibile usare per configurare le compilazioni.|  
-|[Elementi](../msbuild/msbuild-items.md)|Descrive i concetti generali su cui si basa il formato di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e le interazioni fra le singole parti del formato.|  
-|[Destinazioni](../msbuild/msbuild-targets.md)|Spiega come raggruppare le attività in un dato ordine e consentire che determinate sezioni del processo di compilazione vengano richiamate dalla riga di comando.|  
-|[Attività](../msbuild/msbuild-tasks.md)|Mostra come creare un'unità di codice eseguibile che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può usare per eseguire operazioni di compilazione atomiche.|  
+|[Elementi MSBuild](../msbuild/msbuild-items.md)|Presenta gli elementi e le raccolte di elementi. Gli elementi sono input nel sistema di compilazione e, in genere, rappresentano i file.|  
+|[Destinazioni di MSBuild](../msbuild/msbuild-targets.md)|Spiega come raggruppare le attività in un dato ordine e consentire che determinate sezioni del processo di compilazione vengano richiamate dalla riga di comando.|  
+|[Attività MSBuild](../msbuild/msbuild-tasks.md)|Mostra come creare un'unità di codice eseguibile che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può usare per eseguire operazioni di compilazione atomiche.|  
 |[Confronto di proprietà ed elementi](../msbuild/comparing-properties-and-items.md)|Confronta le proprietà e gli elementi di MSBuild. Entrambi vengono usati per trasmettere informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.|  
 |[Caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md)|Illustra come usare caratteri di escape per alcuni caratteri che in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sono riservati a contesti specifici.|  
 |[Procedura dettagliata: creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo.|  

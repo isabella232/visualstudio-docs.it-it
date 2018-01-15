@@ -19,14 +19,14 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
-In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file microsoft.build.commontypes.xsd.  
+In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file Microsoft.Build.CommonTypes.xsd.  
   
 ## <a name="common-items"></a>Elementi comuni  
  Di seguito è riportato l'elenco di tutti gli elementi comuni dei progetti.  
@@ -34,7 +34,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Riferimenti  
  Rappresenta un riferimento all'assembly (gestito) nel progetto.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |HintPath|Stringa facoltativa. Percorso relativo o assoluto dell'assembly.|  
 |nome|Stringa facoltativa. Il nome visualizzato dell'assembly, ad esempio "System.Windows.Forms".|  
@@ -46,7 +46,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comreference"></a>COMReference  
  Rappresenta un riferimento a un oggetto COM (non gestito) nel progetto.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del componente|  
 |GUID|Stringa facoltativa. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference  
  Rappresenta un elenco di librerie dei tipi per la destinazione ResolvedComreference.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |WrapperTool|Stringa facoltativa. Il nome dello strumento wrapper usato per il componente, ad esempio, "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Rappresenta un file manifesto nativo o un riferimento a tale file.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |nome|Stringa obbligatoria. Il nome base del file manifesto.|  
 |HintPath|Stringa obbligatoria. Il percorso relativo del file manifesto.|  
@@ -74,7 +74,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference  
  Rappresenta un riferimento a un altro progetto.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del riferimento.|  
 |Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile  
  Rappresenta i file di origine per il compilatore.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |AutoGen|Valore booleano facoltativo. Indica se il file è stato generato per il progetto dall'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
@@ -94,7 +94,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Rappresenta le risorse da incorporare nell'assembly generato.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
@@ -108,7 +108,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Content  
  Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
@@ -123,7 +123,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="none"></a>nessuno  
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.  
   
-|Nome elemento|Descrizione|  
+|Nome metadati degli elementi|Descrizione|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
