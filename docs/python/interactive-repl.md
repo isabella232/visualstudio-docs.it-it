@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso della finestra interattiva di Python
 
@@ -48,7 +48,7 @@ Passare prima alla finestra Ambienti Python (**Visualizza > Altre finestre > Amb
 
 ![Collegamento Finestra interattiva nella finestra Ambienti Python](media/interactive-window-opening.png)
 
-In seguito, nella parte inferiore del menu **Visualizza > Altre finestre**, è presente un comando ** Finestra interattiva Python** per l'ambiente predefinito oltre a un comando per passare alla finestra degli ambienti:
+In seguito, nella parte inferiore del menu **Visualizza > Altre finestre** è presente un comando **Finestra Python interattivo** per l'ambiente predefinito oltre a un comando per passare alla finestra degli ambienti:
 
 ![Voci di menu relative alla finestra interattiva in Visualizza > Altre finestre](media/interactive-window-menu.png)
 

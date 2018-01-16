@@ -1,7 +1,7 @@
 ---
 title: Opzioni di Python in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -40,6 +40,8 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 - [Opzioni di diagnostica](#diagnostics-options)
 - [Opzioni della finestra interattiva](#interactive-windows-options)
 - [Opzioni avanzate dell'editor di Python](#advanced-python-editor-options)
+
+Si noti che il gruppo **Sperimentale** contiene le opzioni per le funzionalità che sono ancora in fase di sviluppo e che non sono documentate qui. Sono spesso discusse in post nel [blog Python engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/) (Progettazione Python in Microsoft).
 
 ## <a name="general-options"></a>Opzioni generali
 
@@ -69,7 +71,6 @@ Le opzioni specifiche sono descritte nelle sezioni seguenti:
 | Abilita il debug della libreria standard Python | Disattivato | Consente di eseguire il codice sorgente della libreria standard durante il debug, ma aumenta il tempo necessario all'avvio del debugger.|
 
 ![Finestra di dialogo Opzioni di Python, scheda Debug](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Opzioni di diagnostica
 

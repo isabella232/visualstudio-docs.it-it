@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Progetti Python
 
-Per definire le applicazioni Python, si usano in genere solo file e cartelle, ma questa struttura può diventare complessa se le dimensioni delle applicazioni aumentano e interessano magari anche file generati automaticamente, JavaScript per le applicazioni Web e così via. Per gestire questa complessità, è possibile creare progetti di Visual Studio per applicazioni Python. Un progetto Python (un file `.pyproj`) identifica tutti i file di origine e di contenuto associati al progetto, contiene le informazioni di compilazione relative a ogni file, gestisce le informazioni per l'integrazione con sistemi di controllo del codice sorgente e consente di organizzare l'applicazione in componenti logici.
+Per definire le applicazioni Python, si usano in genere solo file e cartelle, ma questa struttura può diventare complessa se le dimensioni delle applicazioni aumentano e interessano magari anche file generati automaticamente, JavaScript per le applicazioni Web e così via. Un progetto di Visual Studio aiuta a gestire questa complessità. Il progetto (un file `.pyproj`) identifica tutti i file di origine e di contenuto associati al progetto, contiene le informazioni di compilazione relative a ogni file, gestisce le informazioni per l'integrazione con sistemi di controllo del codice sorgente e consente di organizzare l'applicazione in componenti logici.
 
 I progetti vengono inoltre sempre gestiti all'interno di una *soluzione* Visual Studio, che può contenere un numero qualsiasi di progetti che fanno riferimento l'uno all'altro. Un progetto Python può ad esempio fare riferimento a un progetto C++ per un modulo di estensione, in modo tale che Visual Studio compili automaticamente il progetto C++, se necessario, quando si avvia il debug del progetto Python. Per informazioni di carattere generale, vedere [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).
 
@@ -38,7 +38,7 @@ In questo argomento
 
 <a name="lightweight-usage-project-free"</a>
 > [!Tip]
-> Visual Studio viene eseguito correttamente con il codice Python anche senza un progetto. È infatti possibile aprire un file Python e usare le funzionalità IntelliSense, di completamento automatico e di debug facendo clic con il pulsante destro del mouse nell'editor e selezionando **Avvia eseguendo il debug/Avvia senza eseguire il debug**. Dal momento che tale codice usa sempre l'ambiente globale predefinito, è però possibile notare completamenti non corretti o completamenti errati se il codice è destinato a un ambiente diverso. Visual Studio inoltre analizza tutti i file e tutti i pacchetti presenti nella cartella da cui viene aperto il singolo file e questo potrebbe causare un notevole consumo del tempo della CPU.
+> Visual Studio viene eseguito correttamente con il codice Python anche senza un progetto. È infatti possibile aprire un file Python e usare le funzionalità IntelliSense, di completamento automatico e di debug facendo clic con il pulsante destro del mouse nell'editor e selezionando **Start [with | without] Debugging** (Avvia eseguendo debug/Avvia senza eseguire debug). Dal momento che tale codice usa sempre l'ambiente globale predefinito, è però possibile notare completamenti non corretti o completamenti errati se il codice è destinato a un ambiente diverso. Visual Studio inoltre analizza tutti i file e tutti i pacchetti presenti nella cartella da cui viene aperto il singolo file e questo potrebbe causare un notevole consumo del tempo della CPU.
 >
 > Creare un progetto di Visual Studio da codice esistente è davvero semplicissimo, come descritto più avanti in [Creazione di un progetto da file esistenti](#creating-a-project-from-existing-files).
 
@@ -62,15 +62,16 @@ Un nuovo progetto è sempre associato all'ambiente Python globale predefinito. P
 ![Attivazione di un ambiente per un progetto Python](media/projects-activate-environment.png)
 
 <a name="project-types"</a>
+
 ## <a name="project-templates"></a>Modelli di progetto
 
-In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu **File > Nuovo > Progetto** oppure fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere **Aggiungi > Nuovo progetto**. In entrambi i casi verrà visualizzata la finestra di dialogo **Nuovo progetto** illustrata di seguito. Per visualizzare modelli specifici di Python, cercare "Python" o selezionare il nodo **Modelli > Altri linguaggi > Python**:
+In Visual Studio sono disponibili diverse opzioni per configurare un progetto Python, sia partendo da zero che da codice esistente. Per usare un modello, selezionare il comando di menu **File > Nuovo > Progetto** oppure fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere **Aggiungi > Nuovo progetto**. In entrambi i casi verrà visualizzata la finestra di dialogo **Nuovo progetto** illustrata di seguito. Per visualizzare modelli specifici di Python, cercare "Python" o selezionare il nodo **Installati > Python**:
 
 ![Finestra di dialogo Nuovo progetto con modelli Python](media/projects-new-project-dialog.png)
 
 La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 (non tutti i modelli sono disponibili nelle versioni precedenti):
 
-| Modello | Descrizione | 
+| Modello | Descrizione |
 | --- | --- |
 | [Da codice Python esistente](#creating-a-project-from-existing-files) | Crea un progetto di Visual Studio da codice Python esistente in una struttura di cartelle.  |
 | Applicazione Python | Struttura di progetto di base per una nuova applicazione Python che contiene un solo file di origine vuoto. Per impostazione predefinita, il progetto viene eseguito nell'interprete della console dell'ambiente globale predefinito, che è possibile modificare [assegnando un altro ambiente](python-environments.md#project-specific-environments). |

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -31,7 +31,7 @@ In questo argomento
 
 - [Debug di base](#basic-debugging)
 - [Opzioni di debug del progetto](#project-debugging-options)
-- [Finestra Debug interattivo](#the-debug-interactive-window)
+- [Finestra Interattiva e finestra Controllo immediato](#immediate-and-interactive-windows)
 
 Vedere anche gli argomenti seguenti sul debug nei vari scenari:
 
@@ -163,6 +163,7 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 | Variabili di ambiente | In questa casella di testo su più righe è possibile aggiungere voci in formato `NAME=VALUE`. Poiché questa impostazione viene applicata per ultima, dopo tutte le variabili di ambiente globali esistenti e dopo aver impostato `PYTHONPATH` in base all'impostazione Percorsi di ricerca, può essere usata per eseguire l'override manuale di una di queste altre variabili. |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Finestra Interattiva e finestra Controllo immediato
 
 Durante una sessione di debug è possibile usare due finestre interattive: la finestra Controllo immediato standard di Visual Studio e la finestra Debug interattivo Python.
