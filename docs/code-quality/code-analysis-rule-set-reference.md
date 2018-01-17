@@ -14,14 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
-Quando si configura l'analisi del codice gestito in progetti di codice [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]viene visualizzata con un elenco di incorporato *set di regole*. È possibile utilizzare uno dei set di regole standard oppure è possibile personalizzare una set di regole per soddisfare i requisiti del progetto.  
+Quando si configura l'analisi del codice gestito in progetti di codice [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] viene visualizzata con un elenco di incorporato *set di regole*. È possibile utilizzare uno dei set di regole standard oppure è possibile personalizzare una set di regole per soddisfare i requisiti del progetto.  
   
 ## <a name="available-rule-sets"></a>Set di regole disponibili  
  Nella tabella seguente sono elencati i set di regole predefiniti:  
