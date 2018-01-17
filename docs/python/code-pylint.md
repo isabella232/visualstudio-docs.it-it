@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: f5e915e5f1ba642449cb1232d94699069996f6b7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>Uso di PyLint per controllare il codice Python
 
@@ -46,7 +48,7 @@ Ad esempio, per eliminare gli avvisi "missing docstring" illustrati nella figura
 
 1. Nella riga di comando passare alla radice del progetto, che contiene il file `.pyproj`, ed eseguire il comando seguente per generare un file di configurazione commentato:
 
-   ```bash
+   ```command
    pylint --generate-rcfile > .pylintrc
    ```
 
@@ -57,7 +59,4 @@ Ad esempio, per eliminare gli avvisi "missing docstring" illustrati nella figura
 1. Salvare il file `.pylintrc` ed eseguire di nuovo PyLint per verificare che gli avvisi ora sono soppressi.
 
 > [!Tip]
-> Per usare un file `.pylintrc` da una condivisione di rete, creare una variabile di ambiente denominata `PYLINTRC` con il valore del nome file nella condivisione di rete con un percorso UNC o una lettera di unità mappata. Ad esempio:
-> ```
-> PYLINTRC=\\myshare\python\.pylintrc
-> ```
+> Per usare un file `.pylintrc` da una condivisione di rete, creare una variabile di ambiente denominata `PYLINTRC` con il valore del nome file nella condivisione di rete con un percorso UNC o una lettera di unità mappata. Ad esempio `PYLINTRC=\\myshare\python\.pylintrc`.

@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 8e7773854cb3d088e2c496da2e208f46185bddce
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Passaggio 3: Uso della finestra interattiva REPL
 
@@ -32,7 +34,7 @@ La *finestra interattiva* di Visual Studio per Python offre un'esperienza comple
     ![Finestra interattiva di Python e trascinamento per ridimensionarla](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > In Visual Studio è possibile ridimensionare tutte le finestre trascinando i separatori confinanti. È anche possibile trascinare le finestre in modo indipendente dal frame di Visual Studio e ridisporle come si vuole all'interno della cornice. Per altre informazioni, vedere <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">Personalizzazione del layout delle finestre</a>.
+    > In Visual Studio è possibile ridimensionare tutte le finestre trascinando i separatori confinanti. È anche possibile trascinare le finestre in modo indipendente dal frame di Visual Studio e ridisporle come si vuole all'interno della cornice. Per altre informazioni, vedere [Personalizzazione del layout delle finestre](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Immettere alcune istruzioni (ad esempio `print("Hello, Visual Studio")`) ed espressioni (ad esempio `123/456`) per visualizzare i risultati immediati:
 

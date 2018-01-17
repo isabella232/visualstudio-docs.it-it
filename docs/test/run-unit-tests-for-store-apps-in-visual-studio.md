@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: uwp
 author: gewarren
-ms.openlocfilehash: b1cc13dfd81876f647178ebf3702c778cabb533e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Eseguire unit test per le app UWP in Visual Studio
 Questo argomento descrive come eseguire unit test tramite Esplora test in Microsoft Visual Studio  
@@ -55,7 +55,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Esecuzione di test in Esplora test  
  Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.  
   
- ![Esplora unit test](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi predefiniti **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile modificare la modalità con cui Esplora test raggruppa i test.  
   

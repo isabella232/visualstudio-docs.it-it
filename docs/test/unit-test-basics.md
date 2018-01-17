@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 492aaa5190bb0b24e7077d3523197ff4eff6ba49
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 17029522cae96200b7bc28b0f917cc5d33f6c673
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 Per controllare che il codice funzioni come previsto, creare ed eseguire unit test. Si parla di unit test in quanto le funzionalità del programma vengono scomposte in comportamenti discreti testabili come singole *unità*. Esplora test di Visual Studio offre un modo flessibile ed efficiente per eseguire gli unit test e visualizzarne i risultati in Visual Studio. Visual Studio installa i framework per unit test Microsoft per codice gestito e nativo. Usare un *framework di unit test* per creare unit test, eseguirli e creare report con i relativi risultati. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Visual Studio Enterprise può eseguire questa operazione automaticamente con [Live Unit Testing](live-unit-testing-intro.md), che rileva i test interessati dalle modifiche del codice e li esegue in background durante la digitazione.
@@ -219,7 +219,7 @@ public void My_Test ()
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Eseguire test in Esplora test  
  Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.  
   
- ![Esplora unit test](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Durante l'esecuzione, la scrittura e la nuova esecuzione di test, la visualizzazione predefinita di Esplora test mostra i risultati in gruppi di **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile scegliere un'intestazione di gruppo per aprire la visualizzazione che mostra tutti i test disponibili nel gruppo.  
   
@@ -286,7 +286,6 @@ public void My_Test ()
  Per creare un test basato sui dati per il metodo `AddIntegerHelper` , è necessario creare prima di tutto un database di Access con nome `AccountsTest.accdb` e una tabella con nome `AddIntegerHelperData`. La tabella `AddIntegerHelperData` definisce colonne per specificare il primo e il secondo operando dell'addizione e una colonna per specificare il risultato previsto. I valori appropriati vengono inseriti in alcune righe.  
   
 ```csharp  
-  
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
     "AddIntegerHelperData"  
@@ -300,8 +299,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
     int expected = Convert.ToInt32(TestContext.DataRow["Sum"]);  
     int actual = target.AddIntegerHelper(x, y);  
     Assert.AreEqual(expected, actual);  
-}  
-  
+}
 ```  
   
  Il metodo con attributi viene eseguito una volta per ogni riga della tabella. In caso di esito negativo di una delle iterazioni, Esplora test segnala un errore di test per il metodo. Nel riquadro dei dettagli dei risultati del test per il metodo è mostrato il metodo di stato relativo all'esito positivo/negativo per ogni riga di dati.  

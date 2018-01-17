@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>Gestione delle risorse delle applicazioni (.NET)
 
@@ -48,7 +48,6 @@ Selezionare la scheda **Risorse** . È possibile aggiungere un file RESX, se non
 Le risorse vengono gestite in modo diverso nei progetti .NET rispetto ad altri tipi di progetto. Per altre informazioni sulle risorse in:
 
 - app della piattaforma UWP (Universal Windows Platform), vedere [Risorse dell'app e sistema di gestione delle risorse](/windows/uwp/app-resources/)
-- app di Windows 8.x, vedere [Definizione delle risorse delle app (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - progetti C++, vedere [Utilizzo di file di risorse](/cpp/windows/working-with-resource-files) e [Procedura: creare una risorsa](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Vedere anche

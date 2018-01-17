@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: df8e23f0544571aa07e8b013c62922e1a69868d2
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Debug remoto di codice Python in Linux
 
@@ -36,9 +38,9 @@ Per eseguire questa procedura dettagliata sono necessari gli elementi seguenti:
 - Un computer remoto che esegue Python in un sistema operativo come Mac OSX o Linux.
 - La porta 5678 (in ingresso) deve essere aperta nel firewall di tale computer, in base all'impostazione predefinita per il debug remoto.
 
-È possibile creare facilmente [macchine virtuali Linux in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) e [accedervi usando Desktop remoto](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) da Windows. L'uso di Ubuntu per la macchina virtuale è comodo perché Python è installato per impostazione predefinita. Se si preferisce scegliere un altro percorso di download per Python, vedere l'elenco di opzioni in [Selezione e installazione di interpreti Python](python-environments.md#selecting-and-installing-python-interpreters).
+È possibile creare facilmente [macchine virtuali Linux in Azure](/azure/virtual-machines/linux/creation-choices) e [accedervi usando Desktop remoto](/azure/virtual-machines/linux/use-remote-desktop) da Windows. L'uso di Ubuntu per la macchina virtuale è comodo perché Python è installato per impostazione predefinita. Se si preferisce scegliere un altro percorso di download per Python, vedere l'elenco di opzioni in [Selezione e installazione di interpreti Python](python-environments.md#selecting-and-installing-python-interpreters).
 
-Per informazioni dettagliate sulla creazione di una regola del firewall per una macchina virtuale di Azure, vedere [Apertura di porte su una VM tramite il portale di Azure](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Per informazioni dettagliate sulla creazione di una regola del firewall per una macchina virtuale di Azure, vedere [Apertura di porte su una VM tramite il portale di Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Preparazione dello script per il debug
 
@@ -132,14 +134,13 @@ In questa procedura viene impostato un semplice punto di interruzione per arrest
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Protezione della connessione del debugger con SSL
 
 Per impostazione predefinita, la connessione al server di debug remoto di ptvsd è protetta solo dal segreto e tutti i dati vengono passati come testo normale. Per proteggere maggiormente la connessione, ptvsd supporta SSL, che deve essere impostato come indicato di seguito:
 
 1. Nel computer remoto generare un certificato autofirmato separato e i file di chiave usando il comando openssl:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -152,8 +153,8 @@ Per impostazione predefinita, la connessione al server di debug remoto di ptvsd 
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    È anche possibile apportare la stessa modifica nel file di codice nel computer locale, ma poiché il codice non viene effettivamente eseguito, non è strettamente necessario.    
+
+    È anche possibile apportare la stessa modifica nel file di codice nel computer locale, ma poiché il codice non viene effettivamente eseguito, non è strettamente necessario.
 
 1. Riavviare il programma Python nel computer remoto, in modo che sia pronto per il debug.
 

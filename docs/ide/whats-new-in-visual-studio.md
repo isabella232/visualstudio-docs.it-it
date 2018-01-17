@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aggiornato per la [versione 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -127,7 +127,7 @@ Il refactoring è il processo di miglioramento del codice dopo la scrittura. Il 
 *   Convertire if-to-switch
 *   Rimuovere la variabile non usata
 
-Per altre informazioni, vedere [Azioni rapide](../ide/quick-actions.md#common-quick-actions).
+Per altre informazioni, vedere [Azioni rapide](../ide/common-quick-actions.md).
 
 #### <a name="interact-with-git"></a>Interagire con Git
 Quando si lavora con un progetto in Visual Studio, è possibile configurare il codice ed eseguirne rapidamente il commit e la pubblicazione in un servizio GIT. È anche possibile gestire i repository GIT tramite i menu visualizzati facendo clic sui pulsanti nell'angolo inferiore destro dell'IDE.

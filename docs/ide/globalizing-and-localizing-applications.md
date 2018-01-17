@@ -20,18 +20,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7db5fbeee13d5342869c29beb37a8230e0e2396
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizzazione e localizzazione di applicazioni
+
 Se si prevede di distribuire l'applicazione a un pubblico internazionale, è necessario tener presente molti aspetti durante le fasi di progettazione e sviluppo. Anche nel caso in cui non si pianifica una distribuzione internazionalizzata dell'applicazione, è meglio considerare questi aspetti in anticipo per semplificare eventuali modiche future nelle versioni dell'applicazione. I servizi integrati in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] rendono più semplice lo sviluppo di una singola applicazione che è possibile adattare a diverse impostazioni locali usando lo sviluppo gestito con Visual Studio.  
   
  Visual Studio è stato progettato per semplificare lo sviluppo di applicazioni internazionali usando i servizi incorporati in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Le pagine seguenti illustreranno le funzionalità di internazionalizzazione incorporate in Visual Studio.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>In questa sezione
+
  [Introduzione alle applicazioni internazionali basate su .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Illustra i concetti relativi allo sviluppo di software per un mercato internazionale tramite Visual Studio e [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -41,12 +43,7 @@ Se si prevede di distribuire l'applicazione a un pubblico internazionale, è nec
  [Globalizzazione di applicazioni](../ide/globalizing-applications.md)  
  Offre collegamenti a pagine sulla creazione di applicazioni che supportano più impostazioni cultura.  
   
-## <a name="related-sections"></a>Sezioni correlate  
- [Globalizzazione dell'app (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
- Contiene procedure e linee guida che consentono di globalizzare e localizzare un'app di Windows 8.1 creata con HTML.  
-  
- [Globalizzazione dell'app (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
- Contiene procedure e linee guida che consentono di globalizzare e localizzare un'app di Windows 8.1 creata con XAML.  
+## <a name="related-sections"></a>Sezioni correlate
   
  [Procedure consigliate per lo sviluppo di applicazioni internazionali](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Offre informazioni sulla programmazione per un pubblico internazionale.  
