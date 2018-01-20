@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifiche al codice supportate (c# e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -86,7 +86,7 @@ Nella tabella seguente mostra le modifiche che potrebbero essere apportate in c#
 
 ## <a name="unsupported-app-scenarios"></a>Scenari di app non supportato
 
-Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5, Windows Phone e Windows Phone emulatore e Windows 8.1.
+Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5 e Windows 8.1.
 
 > [!NOTE]
 > App supportate includono UWP in x86 e x64 App destinate a .NET Framework 4.6 e Windows 10 desktop o versioni successive (.NET Framework è solo una versione desktop).

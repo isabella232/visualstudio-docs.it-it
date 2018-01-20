@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
@@ -71,6 +71,17 @@ Eseguire la procedura seguente:
 - Variabili speciali, ad esempio *$FUNCTION* o *$CALLER*, non può essere valutato nelle istruzioni condizionali o logpoints per i progetti ASP.NET Core.
 - Debug di snapshot non funziona in servizi di App che hanno [memorizzazione nella cache locale](/azure/app-service/app-service-local-cache) acceso.
 - Debug di App per le API di snapshot non è attualmente supportato.
+
+## <a name="site-extension-upgrade"></a>Aggiornamento di estensione del sito
+
+Debug di snapshot e Application Insights dipendono da un ICorProfiler Carica nel processo del sito che causa problemi di blocco del file durante l'aggiornamento. Si consiglia di questo processo per verificare che sia presente alcun tempo di inattività per il sito di produzione.
+
+- Creare un [Slot di distribuzione](/azure/app-service/web-sites-staged-publishing) all'interno del servizio App e il sito è stato distribuito nello slot.
+- Scambiare lo Slot di produzione da Cloud Explorer in Visual Studio o dal portale di Azure.
+- Arrestare il sito di Slot. L'operazione richiederà alcuni secondi per terminare il processo w3wp.exe di sito da tutte le istanze.
+- Aggiornare l'estensione di uno Slot del sito dal sito Kudu o il portale di Azure (*Pannello di servizio App > Strumenti di sviluppo > estensioni > aggiornamento*).
+- Avviare il sito di Slot. Si consiglia di visitare il sito per il riscaldamento nuovamente.
+- Scambiare lo Slot di produzione.
 
 ## <a name="see-also"></a>Vedere anche
 

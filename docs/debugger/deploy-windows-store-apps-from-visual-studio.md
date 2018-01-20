@@ -1,7 +1,7 @@
 ---
 title: Distribuire le app UWP da Visual Studio | Documenti Microsoft
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire le app UWP da Visual Studio
-![Si applica solo a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  La funzionalità di distribuzione di Visual Studio compila e registra App UWP che vengono create con Visual Studio su un dispositivo di destinazione. Il modo in cui viene registrata l'app è determinato dal tipo di dispositivo, ovvero se è locale o remoto:  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 In un dispositivo remoto Windows 10, è necessario abilitare [modalità sviluppatore](/windows/uwp/get-started/enable-your-device-for-development). Nei dispositivi Windows 10 che eseguono l'aggiornamento del creatore o versione successiva, gli strumenti remoti vengono installati automaticamente quando si distribuisce l'app. Per ulteriori informazioni, vedere [eseguire il Debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> In Windows 8.1 e versioni di aggiornamento di pre-del creatore di Windows 10, Remote Tools per Visual Studio deve essere installato nel dispositivo remoto e il debugger remoto deve essere in esecuzione. In Windows 8.1, è necessario installare anche una licenza per sviluppatori.
+> Nelle versioni di aggiornamento di pre-del creatore di Windows 10, Remote Tools per Visual Studio deve essere installato nel dispositivo remoto e il debugger remoto deve essere in esecuzione.
   
 La distribuzione usa il canale di rete del debugger remoto per inviare i file dell'app al dispositivo remoto.  
   
@@ -117,5 +115,6 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 -   Nella pagina delle proprietà Debug in JavaScript e C++ imposta il valore di **Avvia applicazione** su **Sì**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).   
+ [Opzioni di distribuzione remota avanzate](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Eseguire il debug di un pacchetto dell'app installata](../debugger/debug-installed-app-package.md)   
  [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

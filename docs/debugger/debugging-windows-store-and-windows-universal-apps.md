@@ -1,7 +1,7 @@
 ---
-title: Eseguire il debug di App di Windows 8.1 e UWP | Documenti Microsoft
+title: Eseguire il debug di App UWP - Visual Studio | Documenti Microsoft
 ms.custom: 
-ms.date: 07/18/2017
+ms.date: 01/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
 caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload: uwp
+ms.openlocfilehash: de37ef22b9b8ebe8dbcfde9abae4d2acaab2cc2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-universal-windows-apps-uwp"></a>Eseguire il debug di App di Windows universale (UWP)
-Il debugger di Visual Studio fornisce supporto completo per il debug di App UWP e Windows 8.1.  
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Eseguire il debug di App di Windows universale (UWP) in Visual Studio
+
+Il debugger di Visual Studio fornisce supporto completo per il debug di App UWP. 
   
-Per eseguire il debug delle app di Windows Phone 8, vedere [debug delle App per Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
+Per eseguire il debug di App di Windows 8.1, vedere [Debug di applicazioni Store in Visual Studio](https://msdn.microsoft.com/en-us/library/hh441472.aspx). Per eseguire il debug delle app di Windows Phone 8, vedere [debug delle App per Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572(v=vs.105).aspx).  
   
 |||  
 |-|-|  

@@ -1,5 +1,5 @@
 ---
-title: Eseguire App UWP e Windows 8.1 nel simulatore | Documenti Microsoft
+title: Eseguire App UWP nel simulatore | Documenti Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -18,26 +18,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: a3fbe1b7c138f24167e587109fbb5f524b6b9019
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Eseguire App UWP e Windows 8.1 nel simulatore
-Il simulatore di Visual Studio per App UWP e Windows 8.1 è un'applicazione desktop che simula un'app UWP o Windows 8.1. È possibile eseguire applicazioni scegliere le dimensioni fisiche dello schermo e la risoluzione che vuoi emulare. È anche possibile simulare i comuni eventi di tocco e rotazione e le proprietà di connessione di rete.
+# <a name="run-uwp-apps-in-the-simulator"></a>Eseguire App UWP nel simulatore
+Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula un'app UWP. In genere, è possibile eseguire il debug sul computer locale, un dispositivo collegato o un computer remoto. Tuttavia, in alcuni scenari, si consiglia di utilizzare il simulatore di Visual Studio per emulare dello schermo fisico di diverse dimensioni e la risoluzione. È anche possibile simulare i comuni eventi di tocco e rotazione e le proprietà di connessione di rete.
   
  Il simulatore offre un ambiente in cui è possibile progettare, sviluppare, eseguire il debug e testare le app UWP. Tuttavia, prima di pubblicare l'app in Microsoft Store, è necessario testare l'app in un dispositivo reale.  
   
  Il simulatore di Visual Studio per App UWP non eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, può influenzare l'intero computer.  
   
- Per altre informazioni su Windows Phone vedi [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) .  
-  
 > [!IMPORTANT]
->  Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione. Se è necessario eseguire questo tipo di simulazione, si può usare il simulatore di Visual Studio 2013 in Windows 8.1 o sistemi operativi precedenti.  
+>  Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Impostare il simulatore come destinazione  
- Per eseguire l'app UWP nel simulatore, scegli **simulatore** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante del debugger **Standard** barra degli strumenti.  
+ Per eseguire l'app UWP nel simulatore, scegli **simulatore** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante del debugger **Standard** barra degli strumenti. Questa opzione è disponibile solo se l'app **minima piattaforma di destinazione. Versione** è minore o uguale al sistema operativo nel computer di sviluppo. 
   
  ![L'esecuzione nel simulatore](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   

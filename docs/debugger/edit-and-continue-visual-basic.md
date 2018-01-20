@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifica e continuazione (Visual Basic)
 Modifica e continuazione è una funzionalità per il debug di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] che consente di apportare modifiche al codice mentre viene eseguito in modalità di interruzione. Dopo aver applicato le modifiche al codice, è possibile riprendere l'esecuzione del codice con le nuove modifiche già inserite e verificarne l'effetto.  
@@ -42,7 +42,7 @@ Modifica e continuazione è una funzionalità per il debug di [!INCLUDE[vbprvb](
  Modifica e continuazione è supportata nelle App UWP per Windows 10 e x86 e x64 App destinate a .NET Framework 4.6 desktop o versioni successive (.NET Framework è solo una versione desktop).
 
  > [!NOTE]
- > Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5, Windows Phone e Windows Phone emulatore e Windows 8.1.
+ > Piattaforme e applicazioni non supportate includono ASP.NET 5, Silverlight 5 e Windows 8.1.
   
  Modifica e continuazione non è supportato quando si avvia il debug con **Connetti a processo**. Modifica e continuazione non è supportato per codice ottimizzato o una combinazione di codice gestito e nativo. Per ulteriori informazioni, vedere [modifiche al codice supportate (c# e Visual Basic](../debugger/supported-code-changes-csharp.md).
   

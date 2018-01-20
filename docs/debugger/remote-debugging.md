@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -34,12 +34,11 @@ Per istruzioni dettagliate sul debug remoto, vedere gli argomenti.
 
 |Scenario|Collegamento|
 |-|-|-|
-|ASP.NET|[Il debug di ASP.NET Core remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) o [ASP.NET del debug remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|In c# o Visual Basic|[Il debug di un progetto c# o Visual Basic remoto](../debugger/remote-debugging-csharp.md)|
-|C++|[Debug remoto di un progetto C++](../debugger/remote-debugging-cpp.md)|
+|Azure|[Debug di ASP.NET in Azure App Service (Snapshot Debugger)](../debugger/debug-live-azure-applications.md), [remoto di eseguire il debug ASP.NET in Azure](../debugger/remote-debugging-azure.md), o [Debug di un'applicazione Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|ASP.NET|[Eseguire il debug remoto ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) o [ASP.NET di eseguire il Debug remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|In c# o Visual Basic|[Debug remoto di un progetto c# o Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C++|[Eseguire il debug remoto di un progetto C++](../debugger/remote-debugging-cpp.md)|
 |App di Windows universale (UWP)|[Eseguire App UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) e [eseguire il Debug di un pacchetto dell'app installata](../debugger/debug-installed-app-package.md)|
-|Azure|[ASP.NET di debug remoto in Azure](remote-debugging-azure.md)|
-|Azure Service Fabric|[Debug di un'applicazione di Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Se sufficiente desidera scaricare e installare il debugger remoto e non necessario istruzioni aggiuntive per lo scenario, seguire i passaggi descritti in questo articolo.
   

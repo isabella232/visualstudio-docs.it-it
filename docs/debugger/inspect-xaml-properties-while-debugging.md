@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 È possibile ottenere una visualizzazione in tempo reale sul codice XAML in esecuzione con il **albero elementi visivi attivi** e **Esplora proprietà attive**. Questi strumenti offrono una visualizzazione albero degli elementi dell'interfaccia utente dell'applicazione XAML in esecuzione e mostrano le proprietà di runtime di qualsiasi elemento dell'interfaccia utente selezionato.  
@@ -27,7 +27,6 @@ ms.lasthandoff: 12/22/2017
 |Tipo di app|Sistema operativo e strumenti|  
 |-----------------|--------------------------------|  
 |Applicazioni Windows Presentation Foundation (4.0 e versioni successive)|Windows 7 e versioni successive|  
-|Windows 8.1 e Windows Phone 8.1 App|Windows 10 e versioni successive, con la [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |App di Windows universale|Windows 10 e versioni successive, con la [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Visualizzazione degli elementi nella finestra Struttura ad albero visuale attiva  

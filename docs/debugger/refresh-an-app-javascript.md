@@ -1,5 +1,5 @@
 ---
-title: Aggiornare un'App di Windows 8.1 UWP | Documenti Microsoft
+title: Aggiornare un'app UWP | Documenti Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>Aggiornare un UWP o un'App di Windows 8.1
-![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Aggiornare un'app UWP in Visual Studio
   
- È possibile apportare modifiche al codice mentre si sta eseguendo il debug e quindi aggiornarla un'app UWP con JavaScript scegliendo il **Aggiorna applicazione Windows** pulsante il **Debug** barra degli strumenti. Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per le app UWP e Windows 8.1.  
+ È possibile apportare modifiche al codice mentre si sta eseguendo il debug e quindi aggiornarla un'app UWP con JavaScript scegliendo il **Aggiorna applicazione Windows** pulsante il **Debug** barra degli strumenti. Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per App UWP.  
   
  L'aggiornamento non mantiene lo stato dell'app né riflette le seguenti modifiche nell'app:  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>Per aggiornare un'app  
   
-1.  In Visual Studio crea un nuovo progetto usando il modello di progetto Applicazione di navigazione.  
-  
-     Può trattarsi di app UWP o un'app di Windows 8.1.  
-  
-2.  Con il modello aperto in Visual Studio, seleziona una destinazione di debug.  
-  
-     Se un progetto Windows Phone è il tuo attuale progetto di avvio, seleziona un'emulatore Windows Phone come destinazione di debug. In caso contrario, selezionare **simulatore** o **computer locale**.  
+1.  Con il progetto UWP aperto in Visual Studio, selezionare **computer locale** come destinazione di debug.
   
      ![Elenco di destinazione di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  Premi F5 per eseguire l'app in modalità debug.  
   
-4.  Passa a Visual Studio. Premi F12.  
+4.  Passa a Visual Studio. 
   
-5.  In **Esplora**nella **pagine** > **home** Apri cartella Home.HTML.  
-  
-6.  Modificare il testo del titolo della pagina da  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     in un altro titolo, ad esempio:  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  Nella home page dell'app UWP, modificare alcune HTML.
   
 7.  Fare clic su di **Aggiorna applicazione Windows** pulsante, che ha un aspetto simile: ![pulsante di aggiornamento Windows app](../debugger/media/js_refresh.png "JS_Refresh"). o premi F4.  
   
-8.  Torna all'app. L'app viene ricaricata senza riavviare il debugger e viene visualizzato il nuovo titolo della pagina.  
+8.  Torna all'app. L'app viene ricaricata e aggiornato HTML viene utilizzato per eseguire il rendering dell'app.
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

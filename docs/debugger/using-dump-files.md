@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Utilizzo di file Dump con Visual Studio
 File di dump con o senza heap; creare un file di dump. Aprire un file di dump. trovare i file binari, del file pdb e file di origine per un file di dump.
@@ -56,11 +56,11 @@ File di dump con o senza heap; creare un file di dump. Aprire un file di dump. t
   
 -   Visual Studio può eseguire il debug dei file dump delle app native di dispositivi ARM. Visual Studio può inoltre eseguire il debug dei file dump di app gestite di dispositivi ARM, ma solo nel debugger nativo.  
   
--   Per eseguire il debug [in modalità kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dump file in Visual Studio 2013, scaricare il [Windows 8.1 versione di strumenti di debug per Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Vedere [il debug del Kernel in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Per eseguire il debug [in modalità kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) file dump, scaricare gli strumenti di debug per Windows che fa parte di [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio non è possibile eseguire il debug di file dump salvati nel formato dump precedente noto come un [dump completo in modalità utente](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Si noti che un dump completo in modalità utente non corrisponde a un dump con heap.  
   
--   Eseguire il debug con il [SOS.dll (estensione del debugger SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio, è necessario installare lo strumenti di debug per Windows che fa parte di Windows Driver Kit (WDK). Vedere [Windows 8.1 Preview: scaricare Kit, bit e strumenti](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Eseguire il debug con il [SOS.dll (estensione del debugger SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) in Visual Studio, è necessario installare gli strumenti di debug per Windows che fa parte di [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Creare un file dump  
  Per creare un file dump con Visual Studio:  

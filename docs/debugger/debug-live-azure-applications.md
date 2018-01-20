@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug in tempo reale delle app di Azure ASP.NET utilizzando il Debugger di Snapshot
 
@@ -47,9 +47,12 @@ Inoltre, il Debugger dello Snapshot è disponibile solo per Visual Studio 2017 E
 
    ![Avviare il debugger snapshot](../debugger/media/snapshot-launch.png "avviare il debugger di snapshot")
 
-    La prima volta che si seleziona **collega Debugger Snapshot**, viene chiesto di installare il Debugger di Snapshot del servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure. 
+    La prima volta che si seleziona **collega Debugger Snapshot**, viene chiesto di installare l'estensione del Debugger di Snapshot del sito del servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure. 
 
    Visual Studio è in modalità di debug di snapshot.
+
+    > [!NOTE]
+    > L'estensione del sito di Application Insights supporta anche il debug dello Snapshot. Se si verifica un messaggio di errore "sito estensione aggiornato", vedere [risoluzione dei problemi noti per il debug di snapshot e suggerimenti](../debugger/debug-live-azure-apps-troubleshooting.md) per l'aggiornamento dei dettagli.
 
    ![Modalità di debug snapshot](../debugger/media/snapshot-message.png "modalità di debug di Snapshot")
 
@@ -130,7 +133,7 @@ Oltre a creare uno snapshot quando viene raggiunto un snappoint, è inoltre poss
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Per informazioni su come controllare le variabili durante la visualizzazione di uno snapshot, vedere [Debbuger funzionalità presentazione](../debugger/debugger-feature-tour.md).
+- Per informazioni su come controllare le variabili durante la visualizzazione di uno snapshot, vedere [Debugger funzionalità presentazione](../debugger/debugger-feature-tour.md).
 - Visualizzazione di [domande frequenti relative al debug snapshot](../debugger/debug-live-azure-apps-faq.md).
 - Visualizzazione [risoluzione dei problemi noti per il debug di snapshot e suggerimenti](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Se si desidera visualizzare gli snapshot in Application Insights quando l'applicazione raggiunge un'eccezione, è possibile farlo. Per ulteriori informazioni, vedere [Debug snapshot in caso di eccezioni nelle applicazioni .NET](/azure/application-insights/app-insights-snapshot-debugger). Application Insights supporta le applicazioni di Service Fabric oltre a servizio App di Azure.

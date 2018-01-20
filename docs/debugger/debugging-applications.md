@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Debug di applicazioni 
 Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. Diversi tipi di applicazioni e linguaggi richiedono impostazioni e tecniche diverse e presentano problemi diversi che devono essere sottoposti a debug.  
@@ -31,7 +31,7 @@ Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. 
   
 |||  
 |-|-|  
-|[Eseguire il debug di App di Windows 8.1 e UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Viene descritto come eseguire il debug di App UWP.|  
+|[Eseguire il debug di app UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Viene descritto come eseguire il debug di App UWP.|  
 |[Eseguire il debug del codice gestito](../debugger/debugging-managed-code.md)|Viene descritto come eseguire il debug di codice gestito (Visual c#, Visual Basic e F3).|  
 |[Eseguire il debug di codice nativo](../debugger/debugging-native-code.md)|Viene descritto come eseguire il debug di tipi diversi di applicazioni C++ native.|  
 |[Eseguire il debug del codice GPU](../debugger/debugging-gpu-code.md)|Viene descritto come eseguire il debug di codice C++ in esecuzione nell'unità di elaborazione grafica (GPU).|  

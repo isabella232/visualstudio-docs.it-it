@@ -1,5 +1,5 @@
 ---
-title: 'Guida introduttiva: Eseguire il Debug di JavaScript con la console | Documenti Microsoft'
+title: Eseguire il debug di JavaScript con la console | Documenti Microsoft
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,31 +8,25 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.JavaScriptConsole
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>Guida introduttiva: Eseguire il debug di JavaScript con la console
-![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript con la console in Visual Studio
   
- È possibile utilizzare la finestra JavaScript Console per interagire con ed eseguire il debug di App UWP compilate tramite JavaScript. Queste funzionalità sono supportate per App UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] App, App di Windows Phone e App create con Visual Studio Tools per Apache Cordova. Per informazioni di riferimento sui comandi della console, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ È possibile utilizzare la finestra JavaScript Console per interagire con ed eseguire il debug di App UWP compilate tramite JavaScript. Queste funzionalità sono supportate per App UWP e App create con Visual Studio Tools per Apache Cordova. Per informazioni di riferimento sui comandi della console, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  La finestra Console JavaScript ti permette di:  
   
@@ -48,36 +42,26 @@ ms.lasthandoff: 01/10/2018
   
 -   Eseguire altre attività, come cancellare lo schermo. Per un elenco completo di comandi, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md) .  
   
- In questo argomento  
-  
--   [Debug mediante la finestra Console JavaScript](#InteractiveConsole)  
-  
--   [Debug interattivo e modalità di interruzione](#InteractiveDebuggingBreakMode)  
-  
--   [Modalità a riga singola e modalità multiriga nella finestra Console JavaScript](#SinglelineMultilineMode)  
-  
--   [Passaggio a un contesto di esecuzione di script diverso](#Switching)  
-  
 > [!TIP]
->  Se la finestra Console JavaScript è chiusa, scegliere **Debug**>**Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
+>  Se la finestra JavaScript Console è chiusa, scegli **Debug**> **Windows** > **JavaScript Console** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
   
  Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedere [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e l'impostazione di punti di interruzione, di debug JavaScript, vedere [Guida introduttiva: eseguire il Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [Debug delle App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Debug mediante la finestra Console JavaScript  
  La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.  
   
-> [!CAUTION]
+> [!NOTE]
 >  In questo caso l'applicazione di esempio è un'app UWP. Tuttavia, le funzioni della console descritte in questo articolo si applicano anche alle app create con Visual Studio Tools per Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Per eseguire il debug di codice JavaScript nell'app FlipView  
   
 1.  Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
   
-2.  Scegliere **JavaScript** > **Applicazioni Windows Store**, scegliere **Applicazioni Windows** o **Applicazioni Windows Phone**e quindi scegliere **Applicazione vuota**.  
+2.  Scegliere **JavaScript** > **universali di Windows**, quindi scegliere **WinJS App**.  
   
 3.  Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
   
-4.  Nell'elemento BODY di default.html sostituire il codice HTML esistente con il seguente codice:  
+4.  Nell'elemento BODY di index. HTML, sostituire il codice HTML esistente con questo codice:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -133,9 +117,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
         };  
   
@@ -153,7 +137,7 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-7.  Se non hai ancora selezionato la destinazione di debug, scegli **Simulatore** o, per Windows Phone, **Emulator 8.1 WVGA 4 inch 512MB** nell'elenco a discesa accanto al pulsante **Dispositivo** sulla barra degli strumenti **Debug** :  
+7.  Se una destinazione di debug non è già selezionata, scegliere **computer locale** dall'elenco a discesa elenco accanto al **dispositivo** pulsante il **Debug** barra degli strumenti:  
   
      ![Elenco di destinazione di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -161,7 +145,7 @@ ms.lasthandoff: 01/10/2018
   
      L'app viene eseguita, ma mancano le immagini. Gli errori APPHOST della finestra Console JavaScript indicano che mancano le immagini.  
   
-9. Con il `FlipView` app in esecuzione nel simulatore o nell'emulatore Windows Phone, digita `Data.items` nella richiesta di input della finestra di console (accanto al ">>" simbolo) e premere INVIO.  
+9. Con il `FlipView` app in esecuzione, tipo `Data.items` nella richiesta di input della finestra di console (accanto al ">>" simbolo) e premere INVIO.  
   
      Nella finestra della console apparirà un visualizzatore per l'oggetto `items` . Questo indica che è stata creata un'istanza dell'oggetto `items` , che è disponibile nel contesto dello script corrente. Nella finestra della console è possibile fare clic sui nodi di un oggetto per visualizzare i valori delle proprietà (o usare i tasti di direzione). Come si può vedere nella figura, se si fa clic sull'oggetto `items._data` , i riferimenti relativi all'origine delle immagini non sono corretti, come previsto. Le immagini predefinite (logo.png) sono ancora presenti nell'oggetto e vi sono immagini mancanti frammiste alle immagini previste.  
   
@@ -174,9 +158,9 @@ ms.lasthandoff: 01/10/2018
 11. Per risolvere il problema in modo interattivo senza interrompere la sessione di debug, aprire default.js e selezionare il codice seguente dalla funzione `updateImages` :  
   
     ```javascript  
-    pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
      Copiare e incollare il codice nella richiesta di input della console JavaScript.  
@@ -187,9 +171,9 @@ ms.lasthandoff: 01/10/2018
 12. Correggi le chiamate di funzione `push` nella richiesta, sostituendo `pages.push` con `Data.items.setAt`. Il codice corretto dovrebbe essere analogo al seguente:  
   
     ```javascript  
-    Data.items.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    Data.items.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    Data.items.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    Data.items.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    Data.items.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    Data.items.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
     > [!TIP]
@@ -201,7 +185,7 @@ ms.lasthandoff: 01/10/2018
   
 15. Digitare `Data.items.length = 3` al prompt, quindi premere INVIO. Verranno così rimossi gli elementi estranei dai dati.  
   
-16. Controllare di nuovo il simulatore o l'emulatore Windows Phone. Si noterà che le immagini corrette sono contenute nelle pagine corrette di `FlipView` .  
+16. Controllare di nuovo l'app e si noterà che le immagini corrette sono su corrette `FlipView` pagine.  
   
 17. In DOM Explorer, è possibile visualizzare l'elemento DIV aggiornato e spostarsi nel sottoalbero per individuare gli elementi IMG previsti.  
   
@@ -218,7 +202,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Nel file default.html dell'app `FlipView` precedentemente creato, aprire il menu di scelta rapida per la funzione `updateImages()` e quindi scegliere **Punto di interruzione** > **Inserisci punto di interruzione**.  
   
-2.  Seleziona **Computer locale** o **Emulator 8.1 WVGA 4 inch 512MB** nell'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Debug** .  
+2.  Scegliere **computer locale** nell'elenco a discesa elenco accanto al **Avvia debug** pulsante il **Debug** barra degli strumenti.  
   
 3.  Scegliere **Debug** > **Avvia debug**o premere F5.  
   
@@ -239,7 +223,7 @@ ms.lasthandoff: 01/10/2018
 6.  Copia una riga della funzione dalla finestra di output alla richiesta di input e modifica il valore di indice in 3:  
   
     ```javascript  
-    pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.setAt(3, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
     ```  
   
 7.  Premere INVIO per eseguire la riga di codice.  
@@ -264,16 +248,7 @@ ms.lasthandoff: 01/10/2018
   
  ![Selezione nella finestra della console JavaScript di destinazione](../debugger/media/js_console_target.png "JS_Console_Target")  
   
- Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.  
-  
-##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
- La finestra Console JavaScript è supportata nelle piattaforme seguenti:  
-  
--   App UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]e Windows Phone App scritte in JavaScript e HTML  
-  
--   Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../debugger/includes/win8_md.md)]  
+ Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.   
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

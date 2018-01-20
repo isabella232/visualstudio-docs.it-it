@@ -1,5 +1,5 @@
 ---
-title: Debug di HTML e CSS (app di Windows 8.1 e UWP) | Documenti Microsoft
+title: Debug di HTML e CSS nelle App UWP | Documenti Microsoft
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Debug di HTML e CSS nelle app di Windows 8.1 e UWP
-![Si applica a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debug di HTML e CSS nelle App UWP in Visual Studio
   
- Per le app JavaScript, Visual Studio offre un'esperienza di debug completa che include funzionalità note agli sviluppatori di Visual Studio e Internet Explorer. Queste funzionalità sono supportate per App UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], le app di Windows Phone e App create con Visual Studio Tools per Apache Cordova.  
+ Per le app JavaScript, Visual Studio offre un'esperienza di debug completa che include funzionalità note agli sviluppatori di Visual Studio e Internet Explorer. Queste funzionalità sono supportate per App UWP e App create con Visual Studio Tools per Apache Cordova.  
   
  Usando il modello di debug interattivo fornito dagli strumenti di ispezione DOM, è possibile visualizzare e modificare il codice HTML e CSS sottoposto a rendering. È possibile eseguire tutte queste operazioni senza arrestare e riavviare il debugger.
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.  
   
-2.  Scegliere **JavaScript** > **Store**, quindi scegliere **Applicazioni Windows** o **Applicazioni Windows Phone**e infine fare clic su **Applicazione vuota**.  
+2.  Scegliere **JavaScript** > **universali di Windows**, quindi scegliere **WinJS App**.  
   
 3.  Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.  
   
-4.  Nell'elemento BODY del file default.html aggiungere il codice seguente:  
+4.  Nell'elemento BODY di index.html, aggiungere questo codice:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     L'illustrazione seguente mostra cosa accade se si esegue questa app nell'emulatore Windows Phone (è simile nel simulatore). Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.  
+     Nella figura seguente mostra cosa accade se Esegui questa app. Tuttavia, per ottenere questo stato dell'app occorre prima risolvere diversi bug.  
   
      ![App FlipView con i risultati previsti](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Scegliere **Simulatore** o **Emulatore 8.1 WVGA 4 pollici 512 MB** dall'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Debug** :  
+7.  Scegliere **computer locale** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante il **Debug** barra degli strumenti:  
   
      ![Elenco di destinazione di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Scegliere **Debug** > **Avvia debug**o premere F5 per eseguire l'app in modalità debug.  
   
-     L'app viene eseguita nel simulatore o nell'emulatore Windows Phone, ma la schermata sarà per lo più vuota perché gli stili presentano alcuni bug. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.  
-  
-9. Se si esegue l'app nel simulatore, scegliere il comando della barra degli strumenti **Cambia risoluzione** a destra del simulatore per configurare una risoluzione pari a 1280 x 800. In questo modo, i valori mostrati nei passaggi seguenti corrisponderanno a quelli visibili nel simulatore.  
+     L'app viene eseguita, ma vedrai una schermata per lo più vuota perché gli stili presentano alcuni bug. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.  
   
 10. Passare a Visual Studio e scegliere la scheda **DOM Explorer** .  
   
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. Nella finestra principale di DOM Explorer fare doppio clic sullo stile inline per l'altezza e la larghezza dell'elemento DIV `fView` . Ora è possibile modificare i valori qui. In questo scenario si vuole rimuoverli completamente.  
   
-15. Selezionare `width: 100px;height: 100px;`, premere CANC e quindi INVIO. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nel simulatore o nell'emulatore Windows Phone, anche se non è stata arrestata la sessione di debug.  
+15. Nella finestra principale, fare doppio clic su `width: 100px;height: 100px;`, premere il **eliminare** chiave e quindi premere **invio**. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nell'app, anche se non hai arrestato la sessione di debug.  
   
     > [!IMPORTANT]
     >  Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata**e **Layout** . Per altre informazioni, vedere [gli stili di Debug CSS utilizzando DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) e [Debug layout utilizzando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Passare all'app selezionando il simulatore o l'emulatore Windows Phone oppure usando ALT+TAB.  
+16. Passa all'app selezionandolo oppure usando Alt + Tab.  
   
      Il controllo `FlipView` sembra più grande delle dimensioni dello schermo del simulatore o dell'emulatore Windows Phone. Non si tratta del risultato desiderato. Per controllare, passare di nuovo a Visual Studio.  
   
-17. In DOM Explorer selezionare di nuovo la scheda **Calcolata** e aprire la regola dell'altezza. L'elemento fView mostra ancora un valore 100%, come previsto dal CSS, ma il valore calcolato è uguale all'altezza dello schermo del simulatore, ad esempio 800px o 667,67px, che non è auspicabile per questa app. Per esaminare il problema, è possibile rimuovere l'altezza e la larghezza per l'elemento DIV `fView` .  
+17. In DOM Explorer selezionare di nuovo la scheda **Calcolata** e aprire la regola dell'altezza. L'elemento fView Mostra ancora un valore pari al 100%, come previsto dal CSS, ma il valore calcolato è uguale all'altezza dello schermo dell'applicazione (ad esempio 800px, 667.67px o un altro valore), ovvero non è auspicabile per questa applicazione. Esaminare i passaggi successivi si rimuove l'altezza e larghezza per il `fView` elemento DIV.  
   
 18. Nella scheda **Stili** deselezionare le proprietà height e width per il selettore CSS `#fView` .  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. Per analizzare il problema, passa a Visual Studio e scegli la **Layout** scheda per esaminare il modello di riquadro dell'elemento.  
   
-     Nella scheda **Layout** vendono visualizzati i seguenti valori:  
+     Nel **Layout** scheda, verrà visualizzato quanto segue:  
   
-    -   Per il simulatore, 320px (offset) e 320px (margine).  
+    -   255px (Offset) e 255px (margine) o valori simili, a seconda della risoluzione del dispositivo. 
   
-    -   Per l'emulatore Windows Phone, 100px (offset) e 100px (margine).  
-  
-     La figura seguente mostra come appare la scheda **Layout** se si usa l'emulatore Windows Phone (100px per offset e margine).  
+     La figura seguente mostra come **Layout** scheda appare se si usa un emulatore con 100px per offset e margine).  
   
      ![Scheda Layout di DOM Explorer](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.  
   
- Per un esempio che illustra come selezionare elementi mediante il **elemento Select** pulsante, vedere [gli stili di Debug CSS utilizzando DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
-  
-##  <a name="BrowserSupport"></a> Supporto di browser e piattaforme  
- DOM Explorer e la finestra JavaScript Console sono supportati nelle piattaforme seguenti:  
-  
--   App UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] e Windows Phone App scritte in JavaScript e HTML  
-  
--   Internet Explorer 11 in esecuzione in [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 in esecuzione in [!INCLUDE[win8](../debugger/includes/win8_md.md)]  
-  
- [Qui](http://go.microsoft.com/fwlink/?LinkID=232448) è possibile scaricare [!INCLUDE[win8](../debugger/includes/win8_md.md)] e Visual Studio.  
-  
 ## <a name="see-also"></a>Vedere anche  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Eseguire il debug degli stili CSS utilizzando DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Eseguire il debug di layout utilizzando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [Visualizzare listener di eventi DOM](../debugger/view-dom-event-listeners.md)   
  [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Eseguire il debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
