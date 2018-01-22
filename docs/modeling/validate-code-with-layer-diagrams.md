@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 02c983fb7cd797be377f8821c46b2d7dc38450f9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con diagrammi di dipendenza
 
@@ -218,7 +218,7 @@ In questa versione di Visual Studio, convalida della dipendenza si verifica in t
   
  Per ulteriori informazioni sugli errori di convalida, vedere [individuare e risolvere gli errori di convalida livello](#UnderstandingValidationErrors). Per altre informazioni su [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], vedere:  
   
--   [Compilare l'applicazione](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [Compilazione e versione](/vsts/build-release/index)  
   
 -   [Utilizzare il modello predefinito per il processo di compilazione](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
@@ -248,7 +248,7 @@ In questa versione di Visual Studio, convalida della dipendenza si verifica in t
   
 |**Sintassi**|**Descrizione**|  
 |----------------|---------------------|  
-|*Artefatton*(*Tipoartefatton*)|*Artefatton* è un elemento che è associato a un livello nel diagramma di dipendenza.<br /><br /> *Tipoelementon* è il tipo di *Artefatton*, ad esempio un **classe** o **metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|  
+|*ArtifactN*(*ArtifactTypeN*)|*Artefatton* è un elemento che è associato a un livello nel diagramma di dipendenza.<br /><br /> *Tipoelementon* è il tipo di *Artefatton*, ad esempio un **classe** o **metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|  
 |*NamespaceNameN*|Nome di uno spazio dei nomi.|  
 |*LayerNameN*|Il nome di un livello nel diagramma di dipendenza.|  
 |*Tipodipendenza*|Il tipo di relazione di dipendenza tra *Elemento1* e *elemento2*. Ad esempio, *Elemento1* ha un **chiamate** relazione con *elemento2*.|  

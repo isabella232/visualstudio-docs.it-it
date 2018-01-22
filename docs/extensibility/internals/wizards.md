@@ -1,5 +1,5 @@
 ---
-title: Procedure guidate | Documenti Microsoft
+title: Wizards | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -14,11 +14,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wizards"></a>Procedure guidate
 Dopo aver creato una procedura guidata, in genere da aggiungere per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrato (IDE) di ambiente di sviluppo in modo che altri utenti possono utilizzarlo. La procedura Aggiunta guidata viene quindi visualizzata nel **Aggiungi nuovo progetto** o **Aggiungi nuovo elemento** finestre di dialogo. Per visualizzare il **Aggiungi nuovo progetto** o **Aggiungi nuovo elemento** finestra di dialogo finestre, fare doppio clic su una soluzione aperta in **Esplora**, scegliere **Aggiungi**, e quindi fare clic su **nuovo progetto** o **nuovo elemento**.  
@@ -50,9 +50,6 @@ Dopo aver creato una procedura guidata, in genere da aggiungere per il [!INCLUDE
 ## <a name="related-sections"></a>Sezioni correlate  
  [Tipi di progetto](../../extensibility/internals/project-types.md)  
  Vengono forniti collegamenti ad argomenti aggiuntivi che offrono informazioni su come progettare nuovi tipi di progetto.  
-  
- [Procedura dettagliata: Creazione di una procedura guidata](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- Viene illustrato come creare una procedura guidata.  
   
  [Estensione dei progetti](../../extensibility/extending-projects.md)  
  Viene descritto come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti e soluzioni per organizzare i file di codice e file di risorse e come implementare il codice sorgente.

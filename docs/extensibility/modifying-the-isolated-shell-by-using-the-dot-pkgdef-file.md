@@ -1,4 +1,5 @@
 ---
+redirect_url: shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file
 title: Modifica la Shell isolata tramite il. File pkgdef | Documenti Microsoft
 ms.custom: 
 ms.date: 11/04/2016
@@ -13,8 +14,7 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 37c517792055c1d4a2026eef5171325622fec661
+ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
@@ -49,7 +49,7 @@ Il file. pkgdef supporta le impostazioni che è possibile utilizzare per persona
   
  È possibile aggiungere commenti al file. pkgdef. Un commento a riga singola con due barre come i primi due caratteri.  
   
- Per un elenco di stringhe di sostituzione, vedere [sostituzione utilizzare stringhe. Pkgdef e. File Pkgundef](substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
+ Per un elenco di stringhe di sostituzione, vedere [sostituzione utilizzare stringhe. Pkgdef e. File Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
   
  Nelle sezioni seguenti vengono descritti i valori del Registro di sistema che influiscono sul comportamento della shell di Visual Studio in modalità isolata. È inoltre possibile definire i valori del Registro di sistema aggiuntive per l'applicazione in questo file.  
   
@@ -68,12 +68,12 @@ Il file. pkgdef supporta le impostazioni che è possibile utilizzare per persona
 |AppName|stringa|Nome dell'applicazione. Il nome viene visualizzato nella barra del titolo della finestra dell'applicazione.<br /><br /> Il valore predefinito è il nome del file di soluzione dell'applicazione.|  
 |CommandLineLogo|stringa|Il testo dell'intestazione quando l'applicazione viene eseguita in una finestra della console. Questa impostazione influisce solo sulle applicazioni che supportano operazioni di compilazione da riga di comando.<br /><br /> Il valore predefinito è "*companyName * * solutionName* versione 1.0.", dove *companyName* è il nome della società fornito durante l'installazione di Windows, e *solutionName*è il nome del file di soluzione dell'applicazione.|  
 |DefaultDebugEngine|stringa|Il GUID dell'oggetto default motore da utilizzare per l'applicazione di debug.<br /><br /> Nota: Un GUID vuoto (tutti zeri) indica che l'applicazione non specifica un motore di debug predefinito. In questo modo il debugger selezionare il motore di debug da usare.<br /><br /> Il valore predefinito è "{00000000-0000-0000-0000-000000000000}".|  
-|DefaultHomePage|stringa|L'URL di pagina iniziale predefinito per la finestra del Web browser interna.<br /><br /> Se il **Home page** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. Per ulteriori informazioni, vedere [Web Browser, ambiente, finestra di dialogo Opzioni](../../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Il valore predefinito è l'URL della società fornita durante l'installazione di Windows.|  
+|DefaultHomePage|stringa|L'URL di pagina iniziale predefinito per la finestra del Web browser interna.<br /><br /> Se il **Home page** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. Per ulteriori informazioni, vedere [Web Browser, ambiente, finestra di dialogo Opzioni](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Il valore predefinito è l'URL della società fornita durante l'installazione di Windows.|  
 |DefaultProjectsLocation|stringa|Il percorso completo della cartella di progetti predefinita. Ad esempio,<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Se il **percorso progetti di Visual Studio** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. <br /><br /> Il valore predefinito è "$ $MyDocuments\\*solutionName*", dove *solutionName* è il nome del file di soluzione dell'applicazione.|  
-|DefaultSearchPage|stringa|L'URL di pagina di ricerca predefinito per la finestra del browser Web interna.<br /><br /> Se il **pagina ricerca** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. Per ulteriori informazioni, vedere [Web Browser, ambiente, finestra di dialogo Opzioni](../../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Il valore predefinito è "http://search.live.com".|  
+|DefaultSearchPage|stringa|L'URL di pagina di ricerca predefinito per la finestra del browser Web interna.<br /><br /> Se il **pagina ricerca** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. Per ulteriori informazioni, vedere [Web Browser, ambiente, finestra di dialogo Opzioni](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> Il valore predefinito è "http://search.live.com".|  
 |DefaultUserFilesFolderRoot|stringa|Il nome della cartella utente relativo all'utente corrente cartella documenti del.<br /><br /> Il valore predefinito è il nome del file di soluzione dell'applicazione.|  
 |DisableOutputWindow|dword|Indica se la shell isolata deve considerare la finestra di output come disabilitato.<br /><br /> Se questo valore è impostato su true, Visual Studio non verrà visualizzato l'output di manager di compilazione soluzioni nel **Output** finestra e nasconde il **Mostra finestra di Output a inizio compilazione** casella di controllo di  **Progetti e soluzioni** categoria di **opzioni** la finestra di dialogo.<br /><br /> Il valore predefinito è false.|  
-|HideMiscellaneousFilesByDefault|dword|True per nascondere il **file esterni** cartella per impostazione predefinita in **Esplora**; in caso contrario, false.<br /><br /> Se il **Mostra file esterni in Esplora soluzioni** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. Per ulteriori informazioni, vedere [documenti, ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> Il valore predefinito è false.|  
+|HideMiscellaneousFilesByDefault|dword|True per nascondere il **file esterni** cartella per impostazione predefinita in **Esplora**; in caso contrario, false.<br /><br /> Se il **Mostra file esterni in Esplora soluzioni** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione. Per ulteriori informazioni, vedere [documenti, ambiente, finestra di dialogo Opzioni](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> Il valore predefinito è false.|  
 |HideSolutionConcept|dword|True per creare progetti di tutti i progetti in modalità autonoma e per nascondere la soluzione e i comandi relativi alle soluzioni per i progetti autonomi per impostazione predefinita. in caso contrario, false.<br /><br /> Se il **Mostra sempre soluzione** opzione è disponibile nell'applicazione, quindi questa impostazione influisce anche lo stato predefinito dell'opzione.<br /><br /> Il valore predefinito è false.|  
 |NewProjDlgInstalledTemplatesHdr|stringa|Il nome per l'intestazione di modelli di Visual Studio nstalled nel **modelli** nell'elenco di **nuovo progetto** la finestra di dialogo. Si tratta di una stringa o un identificatore di risorsa localizzabile che viene caricato dal pacchetto di interfaccia utente dell'applicazione.<br /><br /> Il valore predefinito è "*solutionName* modelli installati", dove *solutionName* è il nome del file di soluzione dell'applicazione.|  
 |NewProjDlgSlnTreeNodeTitle|stringa|Il nome per il **soluzioni di Visual Studio** nodo il **tipi di progetto** ad albero nel **nuovo progetto** la finestra di dialogo. Si tratta di una stringa o un identificatore di risorsa localizzabile che viene caricato dal pacchetto di interfaccia utente dell'applicazione.<br /><br /> Il valore predefinito è "*solutionName* modelli installati", dove *solutionName* è il nome del file di soluzione dell'applicazione.|  
@@ -122,12 +122,12 @@ Il file. pkgdef supporta le impostazioni che è possibile utilizzare per persona
 ## <a name="package-menu-item-settings"></a>Impostazioni di voce di Menu pacchetto  
  La chiave del Registro di sistema [$RootKey$ \Menus] definisce i file di risorse dell'interfaccia utente per l'applicazione.  
   
- Valori di voci di menu hanno il formato "{*vsUiPackageGuid*}"=" *resourceId*, *versionNumber*", dove *vsUiPackageGuid* è il GUID del il pacchetto dell'interfaccia utente dell'applicazione, *resourceId* è l'identificatore di risorsa della risorsa che contiene gli elementi dell'interfaccia utente, CTMENU e *versionNumber* è un numero di versione virtuale per il CTMENU risorsa. Per ulteriori informazioni, vedere [Assembly di interoperabilità la registrazione di gestori di comandi](../internals/registering-interop-assembly-command-handlers.md).  
+ Valori di voci di menu hanno il formato "{*vsUiPackageGuid*}"=" *resourceId*, *versionNumber*", dove *vsUiPackageGuid* è il GUID del il pacchetto dell'interfaccia utente dell'applicazione, *resourceId* è l'identificatore di risorsa della risorsa che contiene gli elementi dell'interfaccia utente, CTMENU e *versionNumber* è un numero di versione virtuale per il CTMENU risorsa. Per ulteriori informazioni, vedere [Assembly di interoperabilità la registrazione di gestori di comandi](../extensibility/internals/registering-interop-assembly-command-handlers.md).  
   
  Per impostazione predefinita, viene creata una voce di menu nel file. pkgdef per il pacchetto di applicazione dell'interfaccia utente.  
   
  Per ogni pacchetto che fornisce le voci di menu e che viene distribuito come parte dell'applicazione, aggiungere una voce di menu per il pacchetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Personalizzazione Shell isolata](customizing-the-isolated-shell.md)   
- [. File Pkgundef](modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [Personalizzazione Shell isolata](../extensibility/customizing-the-isolated-shell.md)   
+ [. File Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)

@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>Protocollo di lingua del Server
 
@@ -39,11 +39,11 @@ Ora è stato migliorato il LSP e oggi si trova alla versione 3.0. Viene avviato 
 
 Intorno all'ora, Microsoft iniziato a lavorare su un server di linguaggio TypeScript, con il concetto di supportare TypeScript negli editor Emacs e testo Sublime. In questa implementazione, un editor comunica attraverso stdin/stdout con il processo server TypeScript e Usa un payload JSON ispirata il protocollo di debugger V8 per richieste e risposte. Il server di TypeScript è stato integrato nel plug-in Sublime TypeScript e il codice di Visual Studio per la modifica di TypeScript RTF.
 
-Dopo aver integrato due server di lingua diversa, il team di Visual Studio Code è iniziato a esplorare un protocollo server linguaggio comune per gli editor e IDE. Un protocollo comune consente a un provider del linguaggio creare un server singolo linguaggio che può essere utilizzato da diversi IDE. Un consumer di server di linguaggio dovrà implementare solo il lato client del protocollo una sola volta. Ciò comporta una situazione vincenti per il provider del linguaggio e il consumer di linguaggio.
+Dopo l'integrazione di due server lingua diversa, il team di Visual Studio Code è iniziato a esplorare un protocollo server linguaggio comune per gli editor e IDE. Un protocollo comune consente a un provider del linguaggio creare un server singolo linguaggio che può essere utilizzato da diversi IDE. Un consumer di server di linguaggio dovrà implementare solo il lato client del protocollo una sola volta. Ciò comporta una situazione vincenti per il provider del linguaggio e il consumer di linguaggio.
 
-Avviato con il protocollo di lingua utilizzato dal server TypeScript, è più generale e indipendente dalla lingua. Il protocollo di stato con altre funzionalità del linguaggio mediante il linguaggio di Visual Studio Code API per ispirato. Il protocollo stesso viene eseguito con RPC JSON per la chiamata remota a causa di raccolte semplicità e supporto per molti linguaggi di programmazione.
+Il protocollo di lingua server avviato con il protocollo utilizzato dal server di TypeScript, espanderlo con altre funzionalità del linguaggio ispirata API del linguaggio di Visual Studio Code. Il protocollo viene eseguito con RPC JSON per la chiamata remota a causa di sua semplicità e librerie esistenti.
 
-Dogfooded di team il protocollo mediante l'implementazione di più server di linguaggio linter di Visual Studio Code. Un server di linguaggio linter risponde alle richieste per lint (analisi) un file e restituisce un set di errori e avvisi rilevati. L'obiettivo era lint un file come le modifiche dell'utente in un documento, il che significa che non vi siano molte richieste linting durante una sessione dell'editor. Questa soluzione era sensata per mantenere un server di backup e in esecuzione in modo che un nuovo processo linting non ha bisogno di essere avviato per la modifica di ogni utente. Sono stati implementati diversi server linter, tra cui Visual Studio Code ESLint e TSLint estensioni. Questi due server linter sono sia implementato in TypeScript/JavaScript ed eseguire in Node.js. Condividono una libreria che implementa la parte di client e server del protocollo.
+Visual Studio un file di codice il protocollo mediante l'implementazione di più server di linguaggio linter che risponde alle richieste da lint (analisi) un prototipo di team e restituisce un set di errori e avvisi rilevati. L'obiettivo era lint un file come le modifiche dell'utente in un documento, il che significa che non vi siano molte richieste linting durante una sessione dell'editor. Questa soluzione era sensata per mantenere un server di backup e in esecuzione in modo che un nuovo processo linting non sono necessarie per l'avvio per ogni modifica utente. Sono stati implementati diversi server linter, tra cui Visual Studio Code ESLint e TSLint estensioni. Questi due server linter sono sia implementato in TypeScript/JavaScript ed eseguire in Node.js. Condividono una libreria che implementa la parte di client e server del protocollo.
 
 ## <a name="how-the-lsp-works"></a>Funzionamento di LSP
 

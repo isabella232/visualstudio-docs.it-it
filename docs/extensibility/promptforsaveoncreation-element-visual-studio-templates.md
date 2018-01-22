@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelli di Visual Studio)
 Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il **nuovo progetto** la finestra di dialogo quando si crea un progetto. Se questo elemento è impostato su `true`, quindi all'utente viene richiesto per il salvataggio percorso; se `false`, quindi non vengono visualizzate. (Ovvero, un progetto temporaneo viene creato.)  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -57,7 +57,7 @@ Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il 
 ## <a name="remarks"></a>Note  
  `PromptForSaveOnCreation` è un elemento facoltativo. Il valore predefinito è `false`.  
   
- Progetti temporanei sono progetti che è possibile creare e modificare senza salvare il contenuto del progetto su disco. Per ulteriori informazioni, vedere [progetti temporanei NIB](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Progetti temporanei sono progetti che è possibile creare e modificare senza salvare il contenuto del progetto su disco.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente imposta il valore di `PromptForSaveOnCreation` uguale a `false`, che specifica il progetto da creare un progetto temporaneo.  

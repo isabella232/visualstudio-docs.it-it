@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per la proprietà di configurazione e di progetto
 Il **proprietà** finestra il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di progetto e la configurazione. È possibile fornire una pagina delle proprietà per un tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.  
@@ -30,7 +30,7 @@ Il **proprietà** finestra il [!INCLUDE[vsprvs](../../code-quality/includes/vspr
  Il Framework di pacchetto gestito per i progetti (MPFProj) fornisce le classi di supporto per la creazione e gestione di nuovo sistema di progetto. È possibile trovare l'origine istruzioni di compilazione e codice in [MPF per i progetti di Visual Studio 2013 -](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Persistenza del progetto e proprietà di configurazione  
- Proprietà progetto e di configurazione sono persistenti in un file di progetto che ha un'estensione di file associato al tipo di progetto, ad esempio, con estensione csproj, vbproj e .myproj. In genere, i progetti di utilizzano un file di modello per generare il file di progetto. Tuttavia, esistono effettivamente diversi modi per associare tipi di progetto e modelli. Per ulteriori informazioni, vedere [NIB: modelli di Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) e [descrizione del modello di Directory (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Proprietà progetto e di configurazione sono persistenti in un file di progetto con qualsiasi estensione di file associato al tipo di progetto, ad esempio, con estensione csproj, vbproj e .myproj. In genere, i progetti di utilizzano un file di modello per generare il file di progetto. Tuttavia, esistono effettivamente diversi modi per associare tipi di progetto e modelli. Per ulteriori informazioni, vedere [descrizione del modello di Directory (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
  Proprietà progetto e di configurazione vengono create aggiungendo elementi al file del modello. Queste proprietà sono quindi disponibili per qualsiasi progetto creato utilizzando il tipo di progetto che utilizza il modello. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]progetti e il MPFProj utilizzano entrambi la [non incluso nella Build: Cenni preliminari su MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schema per i file di modello. Tali file hanno una sezione PropertyGroup per ogni configurazione. In genere, le proprietà dei progetti sono persistenti nella prima sezione PropertyGroup, che dispone di un argomento Configuration impostato su una stringa null.  
   

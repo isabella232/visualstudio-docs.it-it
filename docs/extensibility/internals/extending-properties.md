@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Estensione delle proprietà
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **proprietà** finestra è un visualizzatore di proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. Il **proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  
   
- Il **proprietà** finestra, che può essere aperta, premere F4 sulla tastiera, oppure selezionando **finestra proprietà** sul **vista** menu, viene utilizzato per visualizzare e modificare proprietà in fase di progettazione indipendenti dalla configurazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associata a soluzioni e progetti, vengono visualizzate in [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per ulteriori informazioni, vedere [proprietà NIB: progetto](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [opzioni di configurazione Gestione](../../extensibility/internals/managing-configuration-options.md), e [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Il **proprietà** finestra, che può essere aperta, premere F4 sulla tastiera, oppure selezionando **finestra proprietà** sul **vista** menu, viene utilizzato per visualizzare e modificare proprietà in fase di progettazione indipendenti dalla configurazione e gli eventi degli oggetti selezionati. Proprietà dipendenti dalla configurazione, associata a soluzioni e progetti, vengono visualizzate in [pagine delle proprietà](../../extensibility/internals/property-pages.md). Per ulteriori informazioni, [la gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Panoramica della finestra proprietà](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Finestra Proprietà  

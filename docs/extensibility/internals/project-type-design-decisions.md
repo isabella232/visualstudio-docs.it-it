@@ -18,11 +18,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6649bd45aba299514b40e74b5683368bfd92b41
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione di tipo di progetto
 Prima di creare un nuovo tipo di progetto, è necessario prendere decisioni di progettazione diverse per quanto riguarda il tipo di progetto. È necessario decidere quali tipi di elementi che contengono i progetti, come i file di progetto verranno resi persistenti e il modello di impegno verrà utilizzato.  
@@ -32,7 +32,7 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere decisioni di p
   
  Gli elementi in un progetto possono essere file, o possono essere oggetti più astratti, ad esempio gli oggetti in un database repository o le connessioni dati attraverso la rete Internet. Se gli elementi sono file, il progetto può essere basato sul riferimento o un progetto basato su directory.  
   
- Nei progetti di riferimento basati su elementi possono comparire in più di un progetto. Tuttavia, il file effettivo che rappresenta un elemento si trova in una directory solo. Nei progetti di directory basato su tutti gli elementi di progetto esistono nella struttura di directory. Per ulteriori informazioni, vedere [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Nei progetti di riferimento basati su elementi possono comparire in più di un progetto. Tuttavia, il file effettivo che rappresenta un elemento si trova in una directory solo. Nei progetti di directory basato su tutti gli elementi di progetto esistono nella struttura di directory.  
   
  Gli elementi locali vengono archiviati nello stesso computer in cui è installata l'applicazione. Elementi remoti possono essere archiviati in un server separato in una rete locale o in un' posizione su Internet.  
   
@@ -62,7 +62,6 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere decisioni di p
   
 ## <a name="see-also"></a>Vedere anche  
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: gestione degli elementi nei progetti](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Persistenza del progetto](../../extensibility/internals/project-persistence.md)   
  [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)   
