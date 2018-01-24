@@ -14,20 +14,20 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: ebb3acfb9fcd49a682e888058b71adbd4119429a
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: 0b7f49708c00bd02fb8c74bc3ed6258d41729bf2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Strumenti di dati di Visual Studio per C++
 
-C++ nativo può spesso fornire la velocità delle prestazioni quando si accede a origini dati. Tuttavia, dati gli strumenti per le applicazioni C++ in Visual Studio non avanzati, come nel caso di applicazioni .NET. Ad esempio, è Impossibile utilizzare le finestre di origini dati di trascinamento della selezione di origini dati in un'area di progettazione di C++. Se è necessario un livello relazionale a oggetti, è necessario scrivere la propria oppure usare un prodotto di terze parti.  Lo stesso vale per la funzionalità di associazione dati, sebbene le applicazioni che utilizzano la libreria Microsoft Foundation Class è possono utilizzare alcune classi di database, insieme a documenti e visualizzazioni, per archiviare i dati in memoria e la visualizza all'utente. Per ulteriori informazioni, vedere [accesso ai dati in Visual C++](/cpp/data/data-access-in-cpp).  
-  
-Per connettersi al database SQL, è possono utilizzare le applicazioni C++ native i driver ODBC e OLE DB e il provider ADO che sono inclusi in Windows. Questi possono connettersi a qualsiasi database che supporta tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornita per compatibilità con le versioni precedenti. Per ulteriori informazioni su queste tecnologie di dati, vedere [Windows Data Access Components](https://msdn.microsoft.com/en-us/library/windows/desktop/aa968814.aspx).  
-  
-Per sfruttare le funzionalità personalizzate in SQL Server 2005 e versioni successive, usare il [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Il client nativo contiene anche il driver ODBC di SQL Server e il provider OLE DB per SQL Server in una libreria a collegamento dinamico (DLL). Applicazioni che usano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server è supportata.  SQL Server Native Client viene installato con SQL Server Data Tools. La Guida di programmazione è qui: [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client-programming).  
-  
+C++ nativo può spesso fornire la velocità delle prestazioni quando si accede a origini dati. Tuttavia, dati gli strumenti per le applicazioni C++ in Visual Studio non avanzati, come nel caso di applicazioni .NET. Ad esempio, è Impossibile utilizzare le finestre di origini dati di trascinamento della selezione di origini dati in un'area di progettazione di C++. Se è necessario un livello relazionale a oggetti, è necessario scrivere la propria oppure usare un prodotto di terze parti.  Lo stesso vale per la funzionalità di associazione dati, sebbene le applicazioni che utilizzano la libreria Microsoft Foundation Class è possono utilizzare alcune classi di database, insieme a documenti e visualizzazioni, per archiviare i dati in memoria e la visualizza all'utente. Per ulteriori informazioni, vedere [accesso ai dati in Visual C++](/cpp/data/data-access-in-cpp).
+
+Per connettersi al database SQL, è possono utilizzare le applicazioni C++ native i driver ODBC e OLE DB e il provider ADO che sono inclusi in Windows. Questi possono connettersi a qualsiasi database che supporta tali interfacce. Il driver ODBC è lo standard. OLE DB viene fornita per compatibilità con le versioni precedenti. Per ulteriori informazioni su queste tecnologie di dati, vedere [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814.aspx).
+
+Per sfruttare le funzionalità personalizzate in SQL Server 2005 e versioni successive, usare il [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Il client nativo contiene anche il driver ODBC di SQL Server e il provider OLE DB per SQL Server in una libreria a collegamento dinamico (DLL). Applicazioni che usano API in codice nativo (ODBC, OLE DB e ADO) per Microsoft SQL Server è supportata.  SQL Server Native Client viene installato con SQL Server Data Tools. La Guida di programmazione è qui: [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client-programming).
+
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Per la connessione a localDB mediante ODBC e SQL Native Client da un'applicazione C++  
   
 1.  Installare SQL Server Data Tools.  
@@ -42,14 +42,16 @@ Per sfruttare le funzionalità personalizzate in SQL Server 2005 e versioni succ
   
      ![SQL Server Management Studio Collega database](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS Collega database")  
   
-4.  Scaricare l'esempio di SDK di Windows di ODBC e decomprimerlo in una nuova posizione. Questo esempio mostra i comandi di base di ODBC utilizzata per connettersi a un database e di eseguire query e comandi. Maggiori informazioni su queste funzioni nel [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/en-us/library/windows/desktop/ms710252.aspx). Quando si carica innanzitutto la soluzione (si trova nella cartella C++), Visual Studio offre aggiornare la soluzione per la versione corrente di Visual Studio. Scegliere **Sì**.  
+4.  Scaricare l'esempio di SDK di Windows di ODBC e decomprimerlo in una nuova posizione. Questo esempio mostra i comandi di base di ODBC utilizzata per connettersi a un database e di eseguire query e comandi. Maggiori informazioni su queste funzioni nel [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Quando si carica innanzitutto la soluzione (si trova nella cartella C++), Visual Studio offre aggiornare la soluzione per la versione corrente di Visual Studio. Scegliere **Sì**.
   
-5.  Per utilizzare il client nativo, è necessario un file di intestazione e un file lib. Questi file contengono le funzioni e le definizioni specifiche di SQL Server, oltre a funzioni ODBC definite in SQL. In **progetto** > **proprietà** > **directory di VC + +**, aggiungere le seguenti directory di inclusione:  
-  
- **\<unità di sistema >: \Programmi\Microsoft SQL Server\110\SDK\Include** e la directory di libreria:  
-  
- **c:\Program Files\Microsoft SQL Server\110\SDK\Lib**  
-  
+5.  Per utilizzare il client nativo, è necessario un file di intestazione e un file lib. Questi file contengono le funzioni e le definizioni specifiche di SQL Server, oltre a funzioni ODBC definite in SQL. In **progetto** > **proprietà** > **directory di VC + +**, aggiungere le seguenti directory di inclusione:
+
+**%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
+
+E la directory di libreria:
+
+**%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
+
 6.  Aggiungere le righe seguenti in odbcsql.cpp. Il #define impedisce irrilevanti definizioni OLE DB che si sta compilando.  
   
     ```cpp

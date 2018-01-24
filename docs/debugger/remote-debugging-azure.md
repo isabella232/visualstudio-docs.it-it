@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS e Azure in Visual Studio 2017
-Per il servizio App di Azure, è consigliabile eseguire il debug utilizzando il [Debugger Snapshot](../debugger/debug-live-azure-applications.md) oppure è possibile seguire le istruzioni in questo argomento per collegare il debugger di Visual Studio. Se si esegue Windows Server con IIS su una macchina virtuale di Azure, è possibile impostarlo per il debug remoto. Questa guida viene illustrato come impostare e configurare un'applicazione ASP.NET Core 2017 di Visual Studio, distribuirlo in IIS utilizzando Azure e collegare il debugger remoto da Visual Studio.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio 2017
+
+Questa guida viene illustrato come impostare e configurare un'applicazione ASP.NET Core 2017 di Visual Studio, distribuirlo in IIS utilizzando Azure e collegare il debugger remoto da Visual Studio.
+
+Il metodo consigliato per eseguire il debug remoto in Azure dipende dallo scenario:
+
+* Per eseguire il debug ASP.NET Core servizio App di Azure, vedere [App Azure Debug tramite il Debugger Snapshot](../debugger/debug-live-azure-applications.md). Questo è il metodo consigliato.
+* Per eseguire il debug ASP.NET Core nel servizio App di Azure utilizzando le funzionalità di debug più tradizionale, attenersi alla procedura descritta in questo argomento (vedere la sezione [eseguire il debug remoto in Azure App Service](#remote_debug_azure_app_service)).
+
+    In questo scenario, è necessario distribuire l'app da Visual Studio in Azure, ma non è necessario installare manualmente o configurare IIS o il debugger remoto (questi componenti sono rappresentati con linee tratteggiate), come illustrato nella figura seguente.
+
+    ![I componenti del debugger remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* Per eseguire il debug di IIS su una macchina virtuale di Azure, attenersi alla procedura descritta in questo argomento (vedere la sezione [eseguire il Debug remoto in una macchina virtuale di Azure](#remote_debug_azure_vm)). In questo modo è possibile utilizzare una configurazione personalizzata di IIS, ma i passaggi di installazione e distribuzione sono più complessi.
+
+    Per una macchina virtuale di Azure, è necessario distribuire l'app da Visual Studio in Azure ed è inoltre necessario installare manualmente il ruolo IIS e il debugger remoto, come illustrato nella figura seguente.
+
+    ![I componenti del debugger remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Per eseguire il debug ASP.NET Core in Azure Service Fabric, vedere [Debug di un'applicazione di Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Assicurarsi di eliminare le risorse di Azure che crei dopo aver completato i passaggi in questa esercitazione. In questo modo che è possibile evitare di incorrere in costi non necessari.
 
-In questo argomento viene illustrato come:
-
-* Eseguire il debug remoto ASP.NET Core in un servizio App di Azure
-
-* Eseguire il debug remoto ASP.NET Core in una macchina virtuale di Azure
-
-Per il servizio App di Azure, è necessario distribuire l'app da Visual Studio in Azure, ma non è necessario installare manualmente o configurare IIS o il debugger remoto (questi componenti sono rappresentati con linee tratteggiate), come illustrato nella figura seguente.
-
-![I componenti del debugger remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Per una macchina virtuale di Azure, è necessario distribuire l'app da Visual Studio in Azure ed è inoltre necessario installare manualmente il ruolo IIS e il debugger remoto, come illustrato nella figura seguente.
-
-![I componenti del debugger remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Per eseguire il debug ASP.NET Core in Azure Service Fabric, vedere [Debug di un'applicazione di Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Requisiti
 
@@ -61,11 +63,11 @@ Il debug tra due computer connessi tramite un proxy non è supportato. Il debug 
 
 4. Aprire il file About.cshtml.cs e impostare un punto di interruzione nella `OnGet` (metodo) (nei modelli meno recenti, aprire HomeController.cs invece e impostare il punto di interruzione nel `About()` (metodo)).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Eseguire il Debug remoto di ASP.NET Core in un servizio App di Azure
+## <a name="remote_debug_azure_app_service"></a>Eseguire il Debug remoto di ASP.NET Core in un servizio App di Azure
 
 Da Visual Studio, è possibile pubblicare rapidamente e debug dell'app a un'istanza di IIS completo. Tuttavia, la configurazione di IIS è preimpostata e non è possibile personalizzare. Per istruzioni dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure utilizzando Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Se è necessario il possibilità di personalizzare IIS, provare a debug un [macchina virtuale di Azure](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>Per distribuire l'app ed eseguire il debug remoto
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Per distribuire l'app ed eseguire il debug remoto tramite Esplora Server
 
 1. In Visual Studio, fare doppio clic sul nodo del progetto e scegliere **pubblica**.
 
@@ -73,7 +75,7 @@ Da Visual Studio, è possibile pubblicare rapidamente e debug dell'app a un'ista
 
     Per istruzioni dettagliate, vedere [distribuire un'app web ASP.NET Core in Azure utilizzando Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. In **Esplora Server**, fare doppio clic sull'istanza del servizio App e scegliere **collega Debugger**.
+3. Aprire **Esplora Server** (**vista** > **Esplora Server**), fare doppio clic sull'istanza del servizio App e scegliere **collega Debugger**.
 
 4. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **su** pagina.
 
@@ -81,7 +83,7 @@ Da Visual Studio, è possibile pubblicare rapidamente e debug dell'app a un'ista
 
     La procedura è terminata. Il resto dei passaggi in questo argomento si applicano al debug remoto in una macchina virtuale di Azure.
 
-## <a name="BKMK_azure_vm"></a>Eseguire il Debug remoto di ASP.NET Core in una macchina virtuale di Azure
+## <a name="remote_debug_azure_vm"></a>Eseguire il Debug remoto di ASP.NET Core in una macchina virtuale di Azure
 
 È possibile creare una macchina virtuale di Azure per Windows Server e quindi installare e configurare IIS e gli altri componenti software necessari. Questo richiede più tempo rispetto alla distribuzione a un servizio App di Azure è necessario seguire i passaggi rimanenti in questa esercitazione.
 

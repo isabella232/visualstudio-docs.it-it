@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
-Il **Configura riferimento a servizio** la finestra di dialogo consente di configurare il comportamento di [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] servizi.  
-  
+
+Il **Configura riferimento a servizio** la finestra di dialogo consente di configurare il comportamento dei servizi Windows Communication Foundation (WCF).
+
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Per l'accesso di **Configura riferimento a servizio** nella finestra di dialogo scelta di un servizio fa riferimento nella **Esplora** e scegliere **Configura riferimento a servizio**. È possibile accedere anche la finestra di dialogo, fare clic su di **avanzate** pulsante il **dialogo Aggiungi riferimento al servizio**.  
-  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+
+Per l'accesso di **Configura riferimento a servizio** nella finestra di dialogo scelta di un servizio fa riferimento nella **Esplora** e scegliere **Configura riferimento a servizio**. È possibile accedere anche la finestra di dialogo, fare clic su di **avanzate** pulsante il **dialogo Aggiungi riferimento al servizio**.
+
 ## <a name="task-list"></a>Elenco attività  
   
 -   Per modificare l'indirizzo in cui è ospitato un servizio WCF, immettere il nuovo indirizzo nel **indirizzo** campo.  
@@ -86,16 +87,15 @@ Il **Configura riferimento a servizio** la finestra di dialogo consente di confi
  **Elenco di assembly di riferimento**  
  Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando **Riutilizza tipi negli assembly di riferimento specificati** è selezionata, singoli assembly può essere selezionato o deselezionato.  
   
- **Aggiungi riferimento Web**  
- Consente di visualizzare il [Web dialogo Aggiungi riferimento](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Usare questa opzione solo per i progetti destinati alla versione 2.0 di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-> [!NOTE]
->  Il **Aggiungi riferimento Web** pulsante è disponibile solo quando il **Configura riferimento a servizio** da cui viene visualizzata la finestra di dialogo di **dialogo Aggiungi riferimento al servizio**.  
-  
-## <a name="see-also"></a>Vedere anche  
+ **Aggiungi riferimento Web** consente di visualizzare la finestra di dialogo Aggiungi riferimento Web.
 
- [Procedura: aggiungere un riferimento a un servizio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Usare questa opzione solo per i progetti destinati alla versione 2.0 di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+
+> [!NOTE]
+> Il **Aggiungi riferimento Web** pulsante è disponibile solo quando il **Configura riferimento a servizio** da cui viene visualizzata la finestra di dialogo di **dialogo Aggiungi riferimento al servizio**.
+
+## <a name="see-also"></a>Vedere anche
+
+[Procedura: aggiungere un riferimento a un servizio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4847cd5a1721376e0ca9222be0390e3c7aad2926
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6672922343ef6c0b56dd91eb358cf2fcd7ac6090
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: non usare algoritmi di crittografia vulnerabili
 |||  
@@ -45,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Per la crittografia TripleDES, usare la crittografia <xref:System.Security.Cryptography.Aes> .  
   
--   Per le funzioni hash SHA1 o RIPEMD160, usare quelle nella famiglia [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+-   Per le funzioni hash SHA1 o RIPEMD160, usare quelle nella [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) famiglia (ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  Escludere un avviso da questa regola quando il livello di protezione necessario per i dati non richiede una garanzia di sicurezza.  

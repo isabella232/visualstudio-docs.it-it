@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 Quando si crea un'applicazione che modifica i dati in un database, eseguire le attività di base, ad esempio si definiscono le stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di una semplice applicazione di Windows Form "form su dati" utilizzando Visual c# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi i set di dati, LINQ to SQL ed Entity Framework, infine eseguire i passaggi che sono molto simili a quelli illustrati in questo articolo.  
@@ -47,7 +47,7 @@ Quando si crea un'applicazione che modifica i dati in un database, eseguire le a
   
 -   Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di edizioni di SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+-   SQL Server Express LocalDB. Se non si dispone di SQL Server Express LocalDB, è possibile installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 In questo argomento si presuppone che si ha familiarità con la funzionalità di base dell'IDE di Visual Studio e può creare un'applicazione Windows Form, aggiungere form al progetto, inserire i pulsanti e altri controlli nel form, impostare le proprietà di controlli e semplici eventi di codice. Se non si ha familiarità con queste attività, si consiglia di completare il [Guida introduttiva a Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) argomento prima di iniziare questa procedura dettagliata.  
   

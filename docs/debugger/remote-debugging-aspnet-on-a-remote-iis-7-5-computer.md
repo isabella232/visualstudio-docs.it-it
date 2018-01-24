@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il Debug remoto ASP.NET in un Computer remoto con IIS
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'App in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
 
 ![I componenti del debugger remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Questa guida viene illustrato come impostare e configurare un'applicazione di Visual Studio 2017 ASP.NET MVC 4.5.2, distribuirlo in IIS e collegare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET Core, vedere [remoto il Debug di ASP.NET Core in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). È anche possibile distribuire ed eseguire il debug in IIS utilizzando Azure. Per ulteriori informazioni, vedere [eseguire il debug remoto in Azure](../debugger/remote-debugging-azure.md).
+Questa guida viene illustrato come impostare e configurare un'applicazione di Visual Studio 2017 ASP.NET MVC 4.5.2, distribuirlo in IIS e collegare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET Core, vedere [remoto il Debug di ASP.NET Core in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Per il servizio App di Azure, è possibile distribuire facilmente ed eseguire il debug in un'istanza preconfigurata di IIS utilizzando la [Debugger Snapshot](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 richiesto) o da [per collegare il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
 
 Queste procedure sono state testate su queste configurazioni del server:
 * Windows Server 2012 R2 e IIS 8 (per Windows Server 2008 R2, i passaggi di server sono diversi)
@@ -50,10 +50,10 @@ Il debugger remoto è supportato in Windows Server a partire da Windows Server 2
 
 A seconda delle impostazioni di sicurezza, è possibile risparmiare tempo aggiungere i seguenti siti attendibili del browser in modo che è possibile scaricare facilmente il software descritto in questa esercitazione. Potrebbe essere necessario accedere a questi siti:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Se si utilizza Internet Explorer, è possibile aggiungere siti attendibili, passare a **Opzioni Internet > sicurezza > siti attendibili > siti**. Questi passaggi sono diversi per gli altri browser. (Se è necessario scaricare una versione precedente del debugger remoto da my.visualstudio.com, alcuni siti attendibili aggiuntivi sono obbligatorio per l'accesso).
 
@@ -70,7 +70,7 @@ Se si desiderano informazioni più dettagliate per installare ASP.NET in IIS, ve
     > [!NOTE]
     > Se si utilizza Windows Server 2008 R2, installare ASP.NET 4 invece con il seguente comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Riavviare il sistema (o eseguire **net stop stato /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema).
 
