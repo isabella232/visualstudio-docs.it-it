@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 57bc02e04f4e30e0284bacbb98ec6bfe1defaa72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
@@ -55,19 +55,19 @@ Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul no
 
 ### <a name="project-references"></a>Riferimenti al progetto
 
-I progetti della piattaforma UWP (Universal Windows Platform) possono creare riferimenti ad altri progetti UWP nella soluzione oppure a progetti o file binari di Windows 8.1, purché tali progetti non usino API deprecate in Windows 10. Per altre informazioni vedere la pagina relativa al [passaggio da Windows Runtime 8 alla piattaforma UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+I progetti della piattaforma UWP (Universal Windows Platform) possono creare riferimenti ad altri progetti UWP nella soluzione oppure a progetti o file binari di Windows 8.1, purché tali progetti non usino API deprecate in Windows 10. Per altre informazioni vedere la pagina relativa al [passaggio da Windows Runtime 8 alla piattaforma UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
 Se si sceglie di impostare di nuovo Windows 8.1 come destinazione dei progetti di Windows 10, vedere [Conversione, migrazione e aggiornamento dei progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ### <a name="extension-sdk-references"></a>Riferimenti all'SDK di estensione
 
-Le app Visual Basic, C#, C++ e JavaScript della piattaforma UWP (Universal Windows Platform) possono fare riferimento agli SDK di estensione destinati a [!INCLUDE[win81](../debugger/includes/win81_md.md)], purché tali SDK non usino API deprecate in Windows 10. Controllare il sito del fornitore dell'SDK di estensione per verificare se le app UWP possono farvi riferimento.
+Le app Visual Basic, C#, C++ e JavaScript della piattaforma UWP (Universal Windows Platform) possono fare riferimento agli SDK di estensione destinati a Windows 8.1, purché tali SDK non usino API deprecate in Windows 10. Controllare il sito del fornitore dell'SDK di estensione per verificare se le app UWP possono farvi riferimento.
 
 Se si determina che l'SDK di estensione a cui fa riferimento l'app non è supportato, è necessario eseguire i passaggi seguenti:
 
-1. Controllare il nome del progetto che causa l'errore. La piattaforma di destinazione del progetto è inserita tra parentesi accanto al nome del progetto. Ad esempio, **NomeProgettoPersonale (Windows 8.1)** significa che il progetto **NomeProgettoPersonale** è destinato alla versione della piattaforma [!INCLUDE[win81](../debugger/includes/win81_md.md)].
+1. Controllare il nome del progetto che causa l'errore. La piattaforma di destinazione del progetto è inserita tra parentesi accanto al nome del progetto. Ad esempio, **NomeProgettoPersonale (Windows 8.1)** significa che il progetto **NomeProgettoPersonale** è destinato alla versione della piattaforma Windows 8.1.
 
-2. Andare al sito del fornitore proprietario dell'SDK di estensione non supportato e installare la versione dell'SDK di estensione con dipendenze compatibili con la versione della piattaforma di destinazione del progetto.
+1. Andare al sito del fornitore proprietario dell'SDK di estensione non supportato e installare la versione dell'SDK di estensione con dipendenze compatibili con la versione della piattaforma di destinazione del progetto.
 
     > [!NOTE]
     > Un modo per sapere se un SDK di estensione ha dipendenze da altri SDK di estensione è verificare in **Gestione riferimenti**. Riavviare Visual Studio, creare un nuovo progetto di app UWP in C#, quindi fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi riferimento**. Passare alla scheda **Windows**, quindi alla sottoscheda **Estensioni** e selezionare l'SDK di estensione. Esaminare il riquadro destro di **Gestione riferimenti**. Se dispone di dipendenze, risulteranno elencate.
@@ -75,13 +75,13 @@ Se si determina che l'SDK di estensione a cui fa riferimento l'app non è suppor
     > [!IMPORTANT]
     > Se il progetto è destinato a Windows 10 e l'SDK di estensione installato in precedenza ha una dipendenza da Microsoft Visual C++ Runtime Package, la versione di Microsoft Visual C++ Runtime Package compatibile con Windows 10 è v14.0 e viene installata con Visual Studio.
 
-3. Se l'SDK di estensione installato in precedenza ha dipendenze da altri SDK di estensione, andare ai siti dei fornitori proprietari delle dipendenze e installare le versioni di queste dipendenze compatibili con la versione della piattaforma di destinazione del progetto.
+1. Se l'SDK di estensione installato in precedenza ha dipendenze da altri SDK di estensione, andare ai siti dei fornitori proprietari delle dipendenze e installare le versioni di queste dipendenze compatibili con la versione della piattaforma di destinazione del progetto.
 
-4. Riavviare Visual Studio e aprire l'app.
+1. Riavviare Visual Studio e aprire l'app.
 
-5. Fare clic con il pulsante destro del mouse sul nodo **Riferimenti** del progetto che ha causato l'errore e scegliere **Aggiungi riferimento**.
+1. Fare clic con il pulsante destro del mouse sul nodo **Riferimenti** del progetto che ha causato l'errore e scegliere **Aggiungi riferimento**.
 
-6. Fare clic sulla scheda **Windows** e sulla sottoscheda **Estensioni** , quindi deselezionare le caselle di controllo per gli SDK di estensione precedenti e selezionare le caselle di controllo per i nuovi SDK di estensione. Fare clic su **OK**.
+1. Fare clic sulla scheda **Windows** e sulla sottoscheda **Estensioni** , quindi deselezionare le caselle di controllo per gli SDK di estensione precedenti e selezionare le caselle di controllo per i nuovi SDK di estensione. Fare clic su **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Aggiunta di un riferimento in fase di progettazione
 

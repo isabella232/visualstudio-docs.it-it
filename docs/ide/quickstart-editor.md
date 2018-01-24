@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Guida introduttiva: Scrittura di codice nell'editor
 
@@ -135,7 +135,7 @@ L'editor di Visual Studio semplifica l'ispezione della definizione di un tipo, u
 
 ## <a name="refactoring-a-name"></a>Refactoring di un nome
 
-Quando si inizia a creare codice è facile commettere errori e quindi dover modificare il nome di una variabile o di un metodo. Ora si userà la funzionalità [refactoring](../ide/refactoring-code-generation-quick-actions.md#refactoring) di Visual Studio per rinominare la variabile `_words` come `words`.
+Quando si inizia a creare codice è facile commettere errori e quindi dover modificare il nome di una variabile o di un metodo. Ora si userà la funzionalità [refactoring](../ide/refactoring-in-visual-studio.md) di Visual Studio per rinominare la variabile `_words` come `words`.
 
 1. Posizionare il cursore sulla definizione della variabile `words`, quindi scegliere **Rinomina** dal menu di scelta rapida o dal menu a comparsa oppure premere **CTRL**+**R**, **CTRL**+**R**.
 
@@ -161,5 +161,5 @@ Questa guida introduttiva per l'editor di Visual Studio è stata completata. Ora
 [Frammenti di codice](../ide/code-snippets.md)  
 [Struttura](../ide/outlining.md)  
 [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)  
-[Refactoring](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Utilizzo di IntelliSense](../ide/using-intellisense.md)  
+[Refactoring](../ide/refactoring-in-visual-studio.md)  
+[Utilizzo di IntelliSense](../ide/using-intellisense.md)

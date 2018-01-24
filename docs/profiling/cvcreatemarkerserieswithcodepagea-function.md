@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6e435e702b25bd3abaacd4a789d635901617a611
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d40f895133ce4fc36a40292d7931c47dd166e8e4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>Funzione CvCreateMarkerSeriesWithCodePageA
-Crea una serie di marcatori per un provider e una tabella codice specifici. Questa funzione può essere usata per specificare la tabella codici in modo esplicito per il testo scritto da funzioni ANSI dell'API dei marcatori. L'impostazione della tabella codici può risultare utile nel caso in cui la traccia venga acquisita e quindi analizzata in computer diversi con impostazioni locali/linguaggi diversi. Per impostazione predefinita viene usata la tabella codici restituita dalla funzione GetACP().  
+Crea una serie di marcatori per un provider e una tabella codici specificati. Questa funzione può essere usata per specificare la tabella codici in modo esplicito per il testo scritto da funzioni ANSI dell'API dei marcatori. L'impostazione della tabella codici può risultare utile nel caso in cui la traccia venga acquisita e quindi analizzata in computer diversi con impostazioni locali/linguaggi diversi. Per impostazione predefinita viene usata la tabella codici restituita dalla funzione GetACP().  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -55,4 +55,4 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
  **Intestazione:** cvmarkers.h  
   
 ## <a name="see-also"></a>Vedere anche  
- [C++ Library Reference](../profiling/cpp-library-reference.md) (Riferimento alla libreria C++)
+ [Riferimento alla libreria C++](../profiling/cpp-library-reference.md)

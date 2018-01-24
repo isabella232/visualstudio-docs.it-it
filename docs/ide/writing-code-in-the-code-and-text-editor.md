@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Scrivere codice nell'editor del codice
 L'editor di Visual Studio include diverse funzionalità che semplificano la scrittura e la gestione di codice e testo. È possibile espandere e comprimere diversi blocchi di codice usando la struttura. Per altre informazioni sul codice, usare IntelliSense, **Visualizzatore oggetti** e Gerarchia di chiamata. Per trovare il codice, è possibile usare funzionalità quali **Vai a**, **Vai a definizione** e **Trova tutti i riferimenti**. È possibile inserire i blocchi di codice con i frammenti di codice e generare il codice usando funzionalità come **Generazione dall'utilizzo**. Se non si è mai usato l'editor di Visual Studio, vedere [Modifica del codice](https://www.visualstudio.com/features/ide-vs) per una rapida panoramica.  
@@ -130,9 +130,10 @@ Per trovare i riferimenti a particolari elementi del codice presenti nella codeb
 ## <a name="customize-the-editor"></a>Personalizzare l'editor  
 È possibile condividere le impostazioni di Visual Studio con un altro sviluppatore, renderle conformi a uno standard o ripristinare le impostazioni predefinite con il comando **Importazione/Esportazione guidata delle impostazioni** nel menu **Strumenti**. Nell'**Importazione/Esportazione guidata delle impostazioni** è possibile modificare impostazioni generali selezionate oppure impostazioni specifiche di un linguaggio e di un progetto.
 
-Per definire i nuovi tasti di scelta o ridefinire quelli esistenti, passare a **Strumenti**, **Opzioni**, **Ambiente**, **Tastiera**. Per altre informazioni sui tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Per definire i nuovi tasti di scelta o ridefinire quelli esistenti, passare a **Strumenti**, **Opzioni**, **Ambiente**, **Tastiera**. Per altre informazioni sui tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Per altre informazioni sulla personalizzazione dell'editor, vedere [Personalizzazione dell'editor](../ide/customizing-the-editor.md). Per informazioni sulle opzioni dell'editor specifiche di un linguaggio, vedere [Using the Visual Studio Development Environment for C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#) e [Opzioni, Editor di testo, JavaScript, Formattazione](../ide/reference/options-text-editor-javascript-formatting.md).
+Per altre informazioni sulla personalizzazione dell'editor, vedere [Personalizzazione dell'editor](../ide/customizing-the-editor.md). Per le opzioni dell'editor specifiche per JavaScript, vedere [Opzioni, Editor di testo, JavaScript, Formattazione](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Vedere anche  
- [IDE di Visual Studio](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Vedere anche
+
+[IDE di Visual Studio](../ide/visual-studio-ide.md)

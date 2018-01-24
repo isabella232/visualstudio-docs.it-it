@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestione di Python nel servizio app di Azure
 
 Il [servizio app di Azure](https://azure.microsoft.com/services/app-service/) è un'offerta di tipo piattaforma distribuita come servizio per le app Web, siano esse siti accessibili tramite un browser, API REST usate dai client o elaborazioni attivate da eventi. Il servizio app supporta pienamente l'uso di Python per implementare le app.
 
-Il supporto di Python personalizzabile nel servizio app di Azure viene offerto come un *set di estensioni del sito* del servizio app, ognuna contenente una versione specifica del runtime di Python. È quindi possibile installare tutti i pacchetti desiderati direttamente in tale ambiente, come descritto in questo argomento. Personalizzando l'ambiente nel servizio app stesso, non è necessario gestire i pacchetti nei progetti di app Web o caricarli con il codice dell'app. 
+Il supporto di Python personalizzabile nel servizio app di Azure viene offerto come un *set di estensioni del sito* del servizio app, ognuna contenente una versione specifica del runtime di Python. È quindi possibile installare tutti i pacchetti desiderati direttamente in tale ambiente, come descritto in questo argomento. Personalizzando l'ambiente nel servizio app stesso, non è necessario gestire i pacchetti nei progetti di app Web o caricarli con il codice dell'app.
 
 > [!Tip]
 > Anche se il servizio app per impostazione predefinita include Python 2.7 e Python 3.4 installati nelle cartelle radice nel server, non è possibile personalizzare o installare i pacchetti in questi ambienti, né dipendere dalla loro presenza. È invece necessario affidarsi a un'estensione del sito sotto il proprio controllo, come descritto in questo argomento.
@@ -87,7 +88,7 @@ Per iniziare, trovare il percorso completo del file `python.exe` dell'estensione
 
 Un'estensione del sito di Python viene installata nel server in `d:\home` in una cartella appropriata per la versione e l'architettura di Python, tranne che in alcune versioni precedenti. Ad esempio, Python 3.6.1 x64 viene installato in `d:\home\python361x64`. Il percorso completo dell'interprete Python è quindi `d:\home\python361x64\python.exe`.
 
-Per visualizzare il percorso specifico nel servizio app, selezionare **Estensioni** nella pagina del servizio app e quindi selezionare l'estensione nell'elenco. 
+Per visualizzare il percorso specifico nel servizio app, selezionare **Estensioni** nella pagina del servizio app e quindi selezionare l'estensione nell'elenco.
 
 ![Elenco delle estensioni nel servizio app di Azure](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ L'interprete Python installato tramite un'estensione del sito è solo una parte 
 
 Per installare i pacchetti direttamente nell'ambiente server, usare uno dei metodi seguenti:
 
-| Metodi | Utilizzo | 
+| Metodi | Utilizzo |
 | --- | --- |
 | [Console Kudu del Servizio app di Azure](#azure-app-service-kudu-console) | I pacchetti vengono installati in modo interattivo. I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
 | [API REST Kudu](#kudu-rest-api) | Consente di automatizzare l'installazione dei pacchetti.  I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
@@ -199,7 +200,7 @@ La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l
     È consigliabile usare `requirements.txt` perché è facile riprodurre l'esatto set di pacchetti sia in locale che nel server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a `requirements.txt` e di eseguire nuovamente il comando.
 
 > [!Note]
-> Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestione dei pacchetti necessari](python-environments.md#managing-required-packages)
+> Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestione dei pacchetti necessari](python-environments.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>API REST Kudu
 

@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Progetti servizio cloud di Azure per Python
 
 Visual Studio include modelli per iniziare rapidamente a creare servizi cloud di Microsoft Azure con Python.
 
-Un [servizio cloud](http://go.microsoft.com/fwlink/?LinkId=306052) è costituito da un numero qualsiasi di *ruoli di lavoro* e *ruoli Web*, ognuno dei quali esegue un'attività distinta dal punto di vista concettuale, ma che può essere replicata separatamente in macchine virtuali a seconda delle esigenze di ridimensionamento. I ruoli Web offrono funzionalità di hosting per applicazioni Web front-end. Per quel che riguarda Python, per scrivere tale applicazione, supportata dal [modello Progetto Web](template-web.md), è possibile usare qualsiasi framework Web che supporta WSGI. I ruoli di lavoro sono destinati a processi a esecuzione prolungata che non interagiscono direttamente con gli utenti. Essi usano in genere le librerie di [dati](http://go.microsoft.com/fwlink/?LinkId=401571) e [servizi app](http://go.microsoft.com/fwlink/?LinkId=401572), che è possibile installare con `pip install`&nbsp;[`azure`](http://pypi.org/project/azure).
+Un [servizio cloud](http://go.microsoft.com/fwlink/?LinkId=306052) è costituito da un numero qualsiasi di *ruoli di lavoro* e *ruoli Web*, ognuno dei quali esegue un'attività distinta dal punto di vista concettuale, ma che può essere replicata separatamente in macchine virtuali a seconda delle esigenze di ridimensionamento. I ruoli Web offrono funzionalità di hosting per applicazioni Web front-end. Per quel che riguarda Python, per scrivere tale applicazione, supportata dal [modello Progetto Web](template-web.md), è possibile usare qualsiasi framework Web che supporta WSGI. I ruoli di lavoro sono destinati a processi a esecuzione prolungata che non interagiscono direttamente con gli utenti. Essi usano in genere le librerie di [dati](http://go.microsoft.com/fwlink/?LinkId=401571) e [servizi app](http://go.microsoft.com/fwlink/?LinkId=401572), che è possibile installare con [`pip install azure`](http://pypi.org/project/azure).
 
 Questo argomento contiene informazioni dettagliate sul modello di progetto e su altre opzioni di supporto in Visual Studio 2017 (le versioni precedenti sono simili, ma presentano alcune differenze). Per altre informazioni sull'uso di Azure da Python, visitare il [Centro per sviluppatori Python di Azure](http://go.microsoft.com/fwlink/?linkid=254360).
 
@@ -80,7 +81,7 @@ Per aprire la **Pubblicazione guidata**, selezionare il progetto di ruolo in Esp
 
 Il processo di pubblicazione prevede due fasi. Nella prima fase Visual Studio crea un singolo pacchetto contenente tutti i ruoli per il servizio cloud. Questo pacchetto corrisponde agli elementi distribuiti in Azure e consente di inizializzare una o più macchine virtuali per ogni ruolo e di distribuire l'origine.
 
-Via via che vengono attivate le singole macchine virtuali, esegue lo script `ConfigureCloudService.ps1` e installa le eventuali dipendenze. Per impostazione predefinita, questo script installa una versione recente di Python da [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) ed eventuali pacchetti specificati in un file `requirements.txt`. 
+Via via che vengono attivate le singole macchine virtuali, esegue lo script `ConfigureCloudService.ps1` e installa le eventuali dipendenze. Per impostazione predefinita, questo script installa una versione recente di Python da [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) ed eventuali pacchetti specificati in un file `requirements.txt`.
 
 Al termine i ruoli di lavoro eseguono `LaunchWorker.ps1`, che avvia l'esecuzione dello script Python. I ruoli Web inizializzano IIS e avviano la gestione delle richieste Web.
 
@@ -90,7 +91,7 @@ Per i servizi cloud lo script `ConfigureCloudService.ps1` usa `pip` per installa
 
 Si noti che le istanze del servizio cloud non includono compilatori C, di conseguenza tutte le librerie con estensioni C devono specificare file binari precompilati.
 
-pip e le relative dipendenze, oltre ai pacchetti in `requirements.txt`, vengono scaricati automaticamente e conteggiati ai fini dell'utilizzo della larghezza di banda addebitabile. Vedere [Gestione dei pacchetti necessari](python-environments.md#managing-required-packages) per informazioni dettagliate sulla gestione dei file `requirements.txt`.
+pip e le relative dipendenze, oltre ai pacchetti in `requirements.txt`, vengono scaricati automaticamente e conteggiati ai fini dell'utilizzo della larghezza di banda addebitabile. Vedere [Gestione dei pacchetti necessari](python-environments.md#managing-required-packages-requirementstxt) per informazioni dettagliate sulla gestione dei file `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -98,9 +99,9 @@ Se il ruolo Web o di lavoro non funziona correttamente dopo la distribuzione, ve
 
 - Il progetto Python includa una cartella bin\ con (almeno):
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1` (per i ruoli di lavoro)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1` (per i ruoli di lavoro)
+  - `ps.cmd`
 
 - Il progetto Python include un file `requirements.txt` che elenca tutte le dipendenze (o in alternativa, una raccolta di file wheel).
 - Abilitare Desktop remoto nel servizio cloud e analizzare i file di log.

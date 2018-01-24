@@ -18,19 +18,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
-Per motivi di sicurezza è necessario, quando possibile, eseguire Visual Studio come utente normale.  
+
+Per motivi di sicurezza è necessario, quando possibile, eseguire Visual Studio come utente normale.
 
 > [!WARNING]
->  Accertarsi inoltre di non compilare, avviare o eseguire il debug di una soluzione di Visual Studio che non provenga da una persona o un percorso attendibile.  
+> Accertarsi inoltre di non compilare, avviare o eseguire il debug di una soluzione di Visual Studio che non provenga da una persona o un percorso attendibile.
 
- È possibile usare quasi tutte le funzioni dell'IDE di Visual Studio come utente normale, tuttavia è necessario disporre delle autorizzazioni di amministratore per completare le seguenti attività:  
+È possibile usare quasi tutte le funzioni dell'IDE di Visual Studio come utente normale, tuttavia è necessario disporre delle autorizzazioni di amministratore per completare le seguenti attività:
 
 |Area|Attività|Per altre informazioni|  
 |----------|----------|--------------------------|  
@@ -50,25 +51,21 @@ Per motivi di sicurezza è necessario, quando possibile, eseguire Visual Studio 
 |Strumenti per le prestazioni|Profilatura di un'applicazione.|[Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Distribuzione|Distribuzione di un'applicazione Web in Internet Information Services (IIS) su un computer locale.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment](http://go.microsoft.com/fwlink/?LinkId=266478) (Distribuzione di un'applicazione Web ASP.NET a un provider di hosting usando Visual Studio o Visual Web Developer: distribuzione a IIS come ambiente di test)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Esecuzione di Visual Studio come amministratore  
- È possibile avviare Visual Studio con autorizzazioni amministrative ogni volta che si avvia l'IDE oppure modificare il collegamento dell'applicazione in modo che venga eseguita sempre con autorizzazioni amministrative. Per altre informazioni, vedere la Guida di Windows.  
+## <a name="running-visual-studio-as-an-administrator"></a>Esecuzione di Visual Studio come amministratore
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Per eseguire Visual Studio con autorizzazioni amministrative in [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] o [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
+È possibile avviare Visual Studio con autorizzazioni amministrative ogni volta che si avvia l'IDE oppure modificare il collegamento dell'applicazione in modo che venga eseguita sempre con autorizzazioni amministrative. Per altre informazioni, vedere la Guida di Windows.
 
-1.  Nella schermata **iniziale** digitare **Visual Studio**. Verrà visualizzata la versione o le versioni di Visual Studio installate.  
+### <a name="to-run-visual-studio-with-administrative-permissions"></a>Per eseguire Visual Studio con autorizzazioni amministrative
 
-2.  Selezionare la versione di Visual Studio che si desidera avviare, quindi visualizzare il menu di scelta rapida (nella parte inferiore dello schermo). Scegliere **Esegui come amministratore**.  
+Queste istruzioni sono relative a Windows 10. Sono simili per le altre versioni di Windows.
 
-     All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.  
+1. Aprire il menu **Start** e scorrere fino Visual Studio 2017.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Per eseguire Visual Studio con autorizzazioni amministrative in [!INCLUDE[win7](../debugger/includes/win7_md.md)] o [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
+1. Dal menu di scelta rapida o contestuale di **Visual Studio 2017** scegliere **Altro** > **Esegui come amministratore**.
 
-1.  Dal menu **Start** scegliere **Tutti i programmi**.  
+     All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
-2.  Nella cartella **Microsoft Visual Studio** *Versione* selezionare **Visual Studio** *Versione*, aprire il menu di scelta rapida e quindi selezionare **Esegui come amministratore**.  
+## <a name="see-also"></a>Vedere anche
 
-     All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.  
-
-## <a name="see-also"></a>Vedere anche  
- [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Installare Visual Studio](../install/install-visual-studio.md)
+[Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Installare Visual Studio](../install/install-visual-studio.md)

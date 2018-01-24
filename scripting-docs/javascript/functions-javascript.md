@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>Funzioni (JavaScript)
 Le funzioni [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] eseguono azioni; inoltre, possono restituire valori. In alcuni casi sono i risultati di calcoli o confronti. Le funzioni vengono chiamate anche "metodi globali".  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>Parametri rest  
- I parametri rest, specificati dall'operatore spread (), consentono di convertire in una matrice gli argomenti consecutivi in una chiamata di funzione.  
+ I parametri rest, specificati dall'operatore spread `...`, consentono di convertire in una matrice gli argomenti consecutivi in una chiamata di funzione.  
   
  I parametri REST eliminano la necessità dell'oggetto `arguments`. Altri parametri sono diversi dall'oggetto `arguments` in diversi modi, ad esempio:  
   

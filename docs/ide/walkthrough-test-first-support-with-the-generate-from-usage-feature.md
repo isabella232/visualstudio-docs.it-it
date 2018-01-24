@@ -1,7 +1,7 @@
 ---
-title: "Procedura dettagliata: sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo | Microsoft Docs"
+title: "Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo | Microsoft Docs"
 ms.custom: 
-ms.date: 10/9/2017
+ms.date: 10/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,19 +13,18 @@ ms.topic: article
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
-caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1906e55add4dfb4663e3c7da5e84d7538409db17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
+
 Questo argomento illustra come usare la funzionalità di [generazione dall'utilizzo](../ide/visual-csharp-intellisense.md#generate-from-usage), che supporta lo sviluppo di test preventivi.  
   
  Lo*sviluppo di test preventivi* è un approccio alla progettazione software in cui prima si scrivono unit test in base alle specifiche del prodotto e quindi si scrive il codice sorgente necessario per fare in modo che i test abbiano esito positivo. Visual Studio supporta lo sviluppo di test preventivi grazie alla generazione di nuovi tipi e membri nel codice sorgente quando si fa riferimento a essi per la prima volta nei test case, prima che vengano definiti.  

@@ -1,5 +1,6 @@
 ---
 title: 'Guida introduttiva: Creare per la prima volta un''app Web Python con Visual Studio | Microsoft Docs'
+description: Una breve introduzione all'uso di Python in Visual Studio che consente di creare un'app Web semplice tramite il framework Falcon.
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -67,7 +70,7 @@ In questa Guida introduttiva si usa la libreria Falcon per sperimentare il proce
 
 Per altre informazioni su Falcon, visitare [falconframework.org](https://falconframework.org/).
 
-Si noti che invece di installare le librerie nell'ambiente globale, gli sviluppatori in genere creano un "ambiente virtuale" in cui installare le librerie per un progetto specifico. Molti modelli di progetto Python in Visual Studio includono un file `requirements.txt` che elenca le librerie da cui dipende il modello. Se si crea un progetto da uno di questi modelli viene attivata automaticamente la creazione di un ambiente virtuale in cui vengono installate le librerie. Per altre informazioni, vedere [Python environments - Virtual environments](../python/python-environments.md#virtual-environments) (Ambienti Python - Ambienti virtuali).
+Si noti che invece di installare le librerie nell'ambiente globale, gli sviluppatori in genere creano un "ambiente virtuale" in cui installare le librerie per un progetto specifico. Molti modelli di progetto Python in Visual Studio includono un file `requirements.txt` che elenca le librerie da cui dipende il modello. Se si crea un progetto da uno di questi modelli viene attivata automaticamente la creazione di un ambiente virtuale in cui vengono installate le librerie. Per altre informazioni, vedere [Python environments - Virtual environments](../python/python-environments.md#creating-virtual-environments) (Ambienti Python - Ambienti virtuali).
 
 ## <a name="add-a-code-file"></a>Aggiungere un file di codice
 
