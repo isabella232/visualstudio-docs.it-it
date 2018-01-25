@@ -1,7 +1,7 @@
 ---
 title: Sviluppare per .NET Framework in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: c3d388238b443fcb717502a893a674f99a315f38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Panoramica del multitargeting di Visual Studio
 
@@ -71,9 +71,6 @@ Quando si crea un progetto, selezionare la versione [!INCLUDE[dnprdnshort](../co
 
 Per impostare come destinazione una versione di .NET Framework, è necessario prima installare i riferimenti dell'assembly appropriato. È possibile scaricare Developer Pack per versioni diverse di .NET Framework dalla pagina [.NET downloads](https://www.microsoft.com/net/download/windows) (Download di .NET).
 
-> [!NOTE]
-> Se si sviluppa per .NET Framework 4 o 3.5, per altre informazioni su Client Profile e sul relativo uso vedere [.NET Framework Client Profile](http://msdn.microsoft.com/library/cc656912\(v=vs.100\).aspx) nella documentazione di .NET Framework 4.
-
 La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in modo che non possano essere aggiunti a un progetto inavvertitamente. (Gli assembly di sistema sono file con estensione dll inclusi in una versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] del progetto su una in cui sia incluso il riferimento.  Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
@@ -85,5 +82,5 @@ Quando si definisce la destinazione di .NET Framework 3.5 o versioni successive,
 ## <a name="see-also"></a>Vedere anche
 
 [Multitargeting (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)  
-[Procedura: modificare il framework di destinazione e il set di strumenti della piattaforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)  
+[Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)  
 [Platform compatibility and system requirements](http://www.microsoft.com/visualstudio/eng/products/compatibility) (Requisiti di sistema e compatibilità delle piattaforme)

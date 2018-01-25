@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizzare i punti di interruzione nel Debugger di Visual Studio
 È possibile impostare i punti di interruzione quando si desidera arrestare l'esecuzione del debugger, ad esempio per visualizzare lo stato delle variabili di codice o per esaminare lo stack di chiamate. I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore.  
@@ -160,6 +160,9 @@ ms.lasthandoff: 01/10/2018
  Se si imposta una condizione del punto di interruzione con sintassi non valida, viene visualizzato un messaggio di avviso. Se viene specificata una condizione del punto di interruzione con sintassi valida ma con semantica non valida, viene visualizzato un messaggio di avviso la prima volta che si raggiunge il punto di interruzione. In entrambi i casi, il debugger interrompe l'esecuzione quando si raggiunge il punto di interruzione non valido. Il punto di interruzione viene ignorato solo se la condizione è valida e restituisce `false`.  
   
  La condizione può essere una qualsiasi espressione valida riconosciuta dal debugger. Per altre informazioni sulle espressioni valide, vedere [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> È possibile utilizzare **CTRL + INVIO** per chiudere la **impostazioni punto di interruzione** finestra.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Uso di ID oggetto in condizioni del punto di interruzione (C# e F#)  
  Possono esistere situazioni in cui si vuole osservare il comportamento di un oggetto specifico, ad esempio si potrebbe voler scoprire perché un oggetto è stato inserito più volte in una raccolta. In C# e F# è possibile creare ID oggetto per istanze specifiche dei [tipi riferimento](/dotnet/csharp/language-reference/keywords/reference-types) e usarle nelle condizioni del punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.  Per creare un ID oggetto, procedere come segue:  
@@ -232,20 +235,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="export-and-import-breakpoints"></a>Esportare e importare punti di interruzione  
  È possibile esportare un punto di interruzione in un file XML facendo clic con il pulsante destro del mouse sul punto di interruzione e selezionando **Esporta**. Il file viene salvato per impostazione predefinita nella directory della soluzione. Per importare i punti di interruzione, aprire la finestra **Punti di interruzione** (**CTRL+ALT+B**) e nella barra degli strumenti fare clic sulla freccia rivolta verso destra (la descrizione comando è **Importa i punti di interruzione da un file**).  
   
-## <a name="troubleshoot"></a>Risoluzione dei problemi dei punti di interruzione 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Un punto di interruzione è stato eliminato ma si continua a raggiungerlo quando si avvia nuovamente il debug  
- Se un punto di interruzione è stato eliminato durante il debug, in alcuni casi è possibile raggiungerlo nuovamente la volta successiva che si avvia il debug. Per evitare di raggiungere il punto di interruzione, accertarsi che tutte le istanze del punto di interruzione vengano rimosse dalla finestra **Punti di interruzione** .  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Il debugger non è in grado di individuare la versione corretta del file di origine di un punto di interruzione  
- Se un file di origine è stato modificato e l'origine non corrisponde più al codice di cui si esegue il debug, il debugger potrebbe non essere in grado di individuare il file di origine corrispondente a un punto di interruzione, sebbene tale file esista.  
-  
-1.  Se si desidera visualizzare il codice sorgente che non corrisponde alla versione in Visual Studio si esegue il debug, scegliere **Debug > Opzioni e impostazioni**. Nella pagina **Debug/Generale** deselezionare l'opzione **Richiedi corrispondenza esatta dei file di origine con la versione originale** .  
-  
-2.  È inoltre possibile associare il punto di interruzione al file di origine. Selezionare il punto di interruzione e scegliere **Condizioni** dal menu di scelta rapida. Selezionare **Il codice sorgente può essere diverso dalla versione originale** nella finestra di dialogo **Impostazioni del punto di interruzione** .  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>I punti di interruzione non funzionano in una DLL  
- Non è possibile impostare un punto di interruzione in un file di origine se le informazioni di debug per il modulo in cui si trova il codice non sono state caricate dal debugger. Uno dei sintomi è la visualizzazione di messaggi quali **Impossibile impostare il punto di interruzione**. Nella posizione relativa al punto di interruzione appare un'icona di interruzione di avviso. Tali punti di interruzioni di avviso, tuttavia, si trasformano in punti di interruzione effettivi al caricamento del codice. Per ulteriori informazioni sul caricamento simboli, vedere [specificare simboli (PDB) e file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Vedere anche  
- [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)
+[Risolvere i punti di interruzione nel Debugger di Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+[Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md)

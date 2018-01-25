@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida rapida: creare un progetto Python da un modello in Visual Studio
 
-Dopo aver [installato il supporto di Python in Visual Studio 2017](installation.md), è facile creare un nuovo progetto Python con una varietà di modelli.
+Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-python-support-in-visual-studio.md), è facile creare un nuovo progetto Python con una varietà di modelli.
 
 1. Avviare Visual Studio.
 
-1. Selezionare **File > Nuovo > progetto** (Ctrl+Shift+N). Nel finestra di dialogo **Nuovo progetto**, cercare "Python" e selezionare il modello desiderato. Si noti che la selezione di un modello visualizza una breve descrizione di ciò che offre tale modello. Vedere anche [Progetti Python](python-projects.md#project-templates).
+1. Selezionare **File > Nuovo > progetto** (Ctrl+Shift+N). Nel finestra di dialogo **Nuovo progetto**, cercare "Python" e selezionare il modello desiderato. Si noti che la selezione di un modello visualizza una breve descrizione di ciò che offre tale modello. Vedere anche [Progetti Python](managing-python-projects-in-visual-studio.md#project-templates).
 
     ![Finestra di dialogo VS2017 Nuovo progetto con modelli Python](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installation.
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Uso di Python in Visual Studio](vs-tutorial-01-01.md)
+> [Esercitazione: Uso di Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di un ambiente per un interprete esistente Python](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installation.md).
-- [Percorsi di installazione](installation.md#install-locations).
+- [Creazione di un ambiente per un interprete esistente Python](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installing-python-support-in-visual-studio.md).
+- [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations).

@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 5cd67d031cd41a1f36de68d7372fdfcfd6f8e476
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -45,9 +45,9 @@ Vedere anche gli argomenti seguenti sul debug nei vari scenari:
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python in Visual Studio supporta il debug senza un progetto. Aprire un file Python autonomo, fare clic con il pulsante destro del mouse nell'editor e scegliere **Avvia eseguendo il debug**. Visual Studio avvierà lo script con l'ambiente predefinito globale (vedere [Ambienti Python](python-environments.md)) e nessun argomento. Da questo momento però sono disponibili tutte le opzioni di debug.
+> Python in Visual Studio supporta il debug senza un progetto. Aprire un file Python autonomo, fare clic con il pulsante destro del mouse nell'editor e scegliere **Avvia eseguendo il debug**. Visual Studio avvierà lo script con l'ambiente predefinito globale (vedere [Ambienti Python](managing-python-environments-in-visual-studio.md)) e nessun argomento. Da questo momento però sono disponibili tutte le opzioni di debug.
 >
-> Per controllare l'ambiente e gli argomenti, creare un progetto per il codice. Questa operazione viene eseguita facilmente con il modello di progetto [Da codice Python esistente](python-projects.md#creating-a-project-from-existing-files).
+> Per controllare l'ambiente e gli argomenti, creare un progetto per il codice. Questa operazione viene eseguita facilmente con il modello di progetto [Da codice Python esistente](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files).
 
 <a name="debugging-with-a-project"></a>
 
@@ -58,7 +58,7 @@ Il flusso di lavoro del debug di base include l'impostazione dei punti di interr
 È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug > Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo F5. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in Esplora soluzioni) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in Proprietà progetto (vedere [Opzioni di debug del progetto](#project-debugging-options)). Se per qualche motivo non è stato impostato un file di avvio, tuttavia, viene visualizzata una finestra di output Python per un breve periodo di tempo. In questo caso, fare clic con il pulsante destro del mouse sul file appropriato e selezionare **Imposta come file di avvio**.
 
 > [!Note]
-> Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Ambienti Python](python-environments.md).
+> Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Ambienti Python](managing-python-environments-in-visual-studio.md).
 
 ### <a name="breakpoints"></a>Punti di interruzione
 

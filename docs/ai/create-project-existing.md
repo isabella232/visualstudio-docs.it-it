@@ -24,7 +24,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile agg
 8. Se necessario, eseguire il programma premendo CTRL+F5 o selezionando **Debug > Avvia senza eseguire debug**. 
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Uso di Python in Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Esercitazione: Uso di Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Vedere anche
 

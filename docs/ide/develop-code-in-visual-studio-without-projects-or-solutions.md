@@ -7,41 +7,32 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.texteditor
 dev_langs:
 - JScript
 - VB
 - CSharp
 helpviewer_keywords:
-- code, editing
-- code editor, syntax coloring
-- code editor [Visual Studio]
-- brace matching
-- code editor, line numbers
-- code editor, brace matching
-- line numbers
-- syntax coloring
-- code editor
-- code files
-- code
-ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
-caps.latest.revision: "44"
+- open folder [Visual Studio]
+- anycode [Visual Studio]
+- projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 252f09a8a2322bca4f94b9d631ca2c6da6b14824
+ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/18/2018
 ---
-# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni  
+# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
+
 In Visual Studio 2017 è possibile aprire codice da quasi qualsiasi tipo di progetto basato su directory in Visual Studio senza la necessità di un file di soluzione o progetto. Questo significa, ad esempio, che è possibile trovare un progetto di codice in GIT, clonarlo e quindi aprirlo direttamente in Visual Studio e avviare l'attività di sviluppo senza dover creare una soluzione o un progetto.  
 
 Non solo è possibile modificare il codice e compilarlo in Visual Studio, ma è anche possibile spostarsi al suo interno, ad esempio con il comando Passa a. Il codice verrà visualizzato con colorazione della sintassi e in molti casi supporta funzionalità per il completamento delle istruzioni di base e il debug, inclusi i punti di interruzione. Per alcuni linguaggi possono essere disponibili anche altre funzionalità. Per altre informazioni, vedere [Creare impostazioni personalizzate e portabili per l'editor](create-portable-custom-editor-options.md).  
 
-## <a name="open-code-anywhere"></a>Aprire il codice ovunque  
+## <a name="open-code-anywhere"></a>Aprire il codice ovunque
+
 È possibile aprire il codice in Visual Studio nei modi seguenti:  
 
 - Nella barra dei menu di Visual Studio scegliere **File**, **Apri**, **Cartella** e quindi passare al percorso del codice.  
@@ -52,7 +43,8 @@ Non solo è possibile modificare il codice e compilarlo in Visual Studio, ma è 
 
 - Aprire codice clonato da un repository di GitHub.  
 
-### <a name="to-open-code-from-a-cloned-github-repo"></a>Per aprire codice da un repository GitHub clonato  
+### <a name="to-open-code-from-a-cloned-github-repo"></a>Per aprire codice da un repository GitHub clonato
+
 L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il relativo codice in Visual Studio. Per eseguire questa procedura, è necessario disporre di un account GitHub e di GIT per Windows installato nel sistema. Per altre informazioni, vedere [Signing up for a new GitHub account](https://help.github.com/articles/signing-up-for-a-new-github-account/) (Registrarsi per un nuovo account GitHub) e [Git for Windows](https://git-for-windows.github.io/) (GIT per Windows).  
 
 1. Passare al repository da clonare su GitHub.  
@@ -88,7 +80,8 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 |---------|---------|
 |  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) su come clonare e aprire il codice da un repository di GitHub in Visual Studio. |
 
-## <a name="debug-your-code"></a>Eseguire il debug del codice  
+## <a name="debug-your-code"></a>Eseguire il debug del codice
+
 È possibile eseguire il debug del codice in Visual Studio senza un progetto o una soluzione. Per eseguire il debug di alcuni linguaggi, potrebbe essere necessario specificare un *file di avvio* valido nel progetto del codice, ad esempio uno script, un eseguibile o un progetto. Quando di esegue il debug del codice, Visual Studio esegue prima di tutto questo codice specificato.  
 
 Nella casella di riepilogo a discesa accanto al pulsante Avvia della barra degli strumenti sono elencati tutti gli elementi di avvio rilevati da Visual Studio, oltre agli elementi scelti in modo specifico in una cartella.  
@@ -107,31 +100,36 @@ Visual Studio supporta attualmente il debug per i linguaggi seguenti:
 
 - Qualsiasi eseguibile con file PDB (Python Debugger).  
 
-### <a name="to-debug-nodejs-and-python"></a>Per eseguire il debug di codice Node.js e Python:  
+### <a name="to-debug-nodejs-and-python"></a>Per eseguire il debug di codice Node.js e Python:
+
 1. Installare Node.js o Python Tools oppure Visual Studio 2017 e il runtime Node.js.  
 
 1. Nel menu di scelta rapida di un file JavaScript in Esplora soluzioni scegliere il comando **Imposta come elemento di avvio**.  
 
 1. Premere il tasto **F5** per avviare il debug.  
 
-### <a name="to-debug-msbuild-projects"></a>Per eseguire il debug di progetti MSBuild  
+### <a name="to-debug-msbuild-projects"></a>Per eseguire il debug di progetti MSBuild
+
 1. Nel menu di Visual Studio scegliere **Debug**. Nel menu a discesa scegliere il progetto o selezionare il progetto o file da visualizzare come elemento di avvio in Esplora soluzioni.  
 
 1. Premere il tasto **F5** per avviare il debug.  
 
-### <a name="to-debug-executable-files"></a>Per eseguire il debug di file eseguibili  
+### <a name="to-debug-executable-files"></a>Per eseguire il debug di file eseguibili
+
 1. Nel menu di Visual Studio scegliere **Debug**. Nel menu a discesa scegliere il progetto o selezionare il progetto o file da visualizzare come elemento di avvio in Esplora soluzioni.  
 
 1. Premere il tasto **F5** per avviare il debug.  
 
 ## <a name="enable-custom-build-tools"></a>Abilitare gli strumenti di compilazione personalizzati
+
 Visual Studio riconosce automaticamente molti linguaggi diversi per l'esecuzione, ma non tutti. Se Visual Studio riconosce il linguaggio, è possibile eseguire immediatamente il codice. Se si tenta di eseguire il codice, ma Visual Studio non sa come eseguirlo, viene visualizzata una barra informazioni che richiede di designare un file nella codebase come elemento di avvio.  
 
 Se tuttavia la codebase usa strumenti di compilazione personalizzati che Visual Studio non riconosce, probabilmente non sarà possibile eseguire il codice, né eseguirne il debug, in Visual Studio se non si completano alcuni passaggi aggiuntivi. È necessario specificare un tipo di file eseguibile valido, ad esempio un compilatore, insieme a eventuali parametri e argomenti personalizzati richiesti dal linguaggio. Per rendere possibile tutto ciò, Visual Studio include le *attività di compilazione*. È possibile creare un'attività di compilazione per specificare tutti gli elementi necessari per compilare ed eseguire il codice di un linguaggio.  
 
 È anche possibile creare attività di compilazione arbitrarie che possono eseguire praticamente qualsiasi operazione. Ad esempio, si può creare un'attività per elencare il contenuto di una cartella o rinominare un file. Si possono anche creare attività di compilazione personalizzate più specifiche, che eseguono operazioni come la compilazione del progetto con argomenti specifici. La procedura seguente illustra come creare entrambi i tipi di attività di compilazione.  
 
-#### <a name="to-create-an-arbitrary-build-task"></a>Per creare un'attività di compilazione arbitraria  
+#### <a name="to-create-an-arbitrary-build-task"></a>Per creare un'attività di compilazione arbitraria
+
 1. Scegliere il file o la cartella del progetto in Esplora soluzioni in cui si vuole includere l'attività e nel menu di scelta rapida (pulsante destro del mouse) del file o della cartella scegliere **Configura attività**.  
 
   ![Configura attività](./media/VSIDE_Code_Config_Task.png)
@@ -166,6 +164,7 @@ Se tuttavia la codebase usa strumenti di compilazione personalizzati che Visual 
 1. Scegliere il nuovo comando **List outputs** per eseguire l'attività.  
 
 ### <a name="to-create-a-custom-build-task"></a>Per creare un'attività di compilazione personalizzata
+
 Questa procedura illustra come aggiungere due attività di compilazione personalizzate che usano nMake per compilare e pulire il codice.  
 
 1. Scegliere un file del progetto in Esplora soluzioni da designare in seguito come elemento di avvio. Nel menu di scelta rapida (pulsante destro del mouse) del file scegliere **Configura attività**.  
@@ -222,15 +221,17 @@ Le attività di compilazione personalizzate possono essere aggiunte a singoli fi
 
 Visual Studio supporta la sostituzione VSCode `$variable` nella radice del file tasks.vs.json, oltre alle variabili di ambiente, come `$env.var`, o le chiavi.  
 
-## <a name="specify-build-output"></a>Specificare l'output della compilazione  
+## <a name="specify-build-output"></a>Specificare l'output della compilazione
+
 Se il progetto deve essere compilato, è possibile aggiungere un altro tag chiamato `output` nel file tasks.vs.json. Di seguito è riportato un esempio.  
 
 `"output": "${workspaceRoot}\\bin\\hellomake.exe"`
 
 La specifica del percorso di output consente di indicare a Visual Studio dove trovare l'output di compilazione del progetto.  
 
-## <a name="tasksvsjson-file-location"></a>Posizione del file tasks.vs.json  
-Per impostazione predefinita, il file tasks.vs.json si trova in una cartella nascosta denominata `.vs`. Per visualizzare i file nascosti in Visual Studio, scegliere il pulsante **Mostra tutti i file** sulla barra degli strumenti di Esplora soluzioni.  
+## <a name="tasksvsjson-file-location"></a>Posizione del file tasks.vs.json
+
+Per impostazione predefinita, il file tasks.vs.json si trova in una cartella nascosta denominata `.vs`. Per visualizzare i file nascosti in Visual Studio, scegliere il pulsante **Mostra tutti i file** sulla barra degli strumenti di Esplora soluzioni.
 
 ![Comando per l'attività di compilazione arbitraria](./media/VSIDE_Code_Tasks_FileLocation.png)
 
@@ -239,4 +240,5 @@ Il file tasks.vs.json è nascosto in quanto la maggior parte degli utenti prefer
 Nella cartella .vs potrebbero essere presenti altri file con estensione json, ma gli unici spostabili sono il file tasks.vs.json e il file launch.vs.json, se presente. Il file launch.vs.json configura il debugger di Visual Studio, mentre il file tasks.vs.json configura la compilazione in Visual Studio.  
 
 ## <a name="see-also"></a>Vedere anche
+
 [Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

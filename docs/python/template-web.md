@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Modelli di progetti Web Python
 
@@ -33,7 +33,7 @@ Un progetto creato da un modello (accessibile da **File > Nuovo > Progetto**), q
 
 I modelli Bottle, Flask e Django includono un sito di base contenente alcune pagine e file statici. Questo codice è sufficiente per avviare ed eseguire il debug del server in locale (in cui è necessario ottenere alcune impostazioni dall'ambiente) e per la distribuzione in Microsoft Azure (in cui è necessario specificare un oggetto [app WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
-Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](python-environments.md#global-and-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
+Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](managing-python-environments-in-visual-studio.md#global-and-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
 
 ![Finestra di dialogo in cui è possibile installare i pacchetti necessari per un modello di progetto](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 
 ### <a name="sample-pyramid-configuration"></a>Esempio di configurazione di Pyramid
 
-Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da riga di comando `pcreate`. L'app creata può quindi essere importata usando il modello [Da codice Python esistente](python-projects.md#creating-a-project-from-existing-files). Successivamente, selezionare la personalizzazione **Progetto Web generico** per configurare le opzioni. In queste impostazioni si presuppone che Pyramid sia installato in un ambiente virtuale nel percorso `..\env`.
+Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da riga di comando `pcreate`. L'app creata può quindi essere importata usando il modello [Da codice Python esistente](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files). Successivamente, selezionare la personalizzazione **Progetto Web generico** per configurare le opzioni. In queste impostazioni si presuppone che Pyramid sia installato in un ambiente virtuale nel percorso `..\env`.
 
 - Gruppo **Debug**:
   - **Porta server**: 6543 (o qualunque altra sia configurata nei file con estensione ini)

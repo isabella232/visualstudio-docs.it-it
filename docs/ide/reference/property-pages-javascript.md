@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6665452bd074c083216120732cff8a3f18a74dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e4f01a74a3246a326c1695371a303472901c9ea
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="property-pages-javascript"></a>Pagine proprietà, JavaScript
 L'opzione **Pagine delle proprietà** consente di accedere alle impostazioni del progetto. È possibile usare le pagine visualizzate in **Pagine delle proprietà** per modificare le proprietà del progetto.  
@@ -68,11 +68,11 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
  **Debugger da avviare**  
  Specifica l'host predefinito per il debugger.  
 
--   Selezionare **Computer locale** per avviare l'applicazione nel computer host di Visual Studio. Per altre informazioni, vedere [Esecuzione di app nel computer locale](http://go.microsoft.com/fwlink/?LinkId=234912).  
+-   Selezionare **Computer locale** per avviare l'applicazione nel computer host di Visual Studio. Per altre informazioni, vedere [Esecuzione di app nel computer locale](../../debugger/run-windows-store-apps-on-the-local-machine.md).  
 
--   Selezionare **Simulatore** per avviare l'applicazione nel simulatore. Per altre informazioni, vedere [Esecuzione di app nel simulatore](http://go.microsoft.com/fwlink/?LinkId=234913).  
+-   Selezionare **Simulatore** per avviare l'applicazione nel simulatore. Per altre informazioni, vedere [Esecuzione di app nel simulatore](../../debugger/run-windows-store-apps-in-the-simulator.md).  
 
--   Selezionare **Computer remoto** per avviare l'applicazione in un computer remoto. Per altre informazioni sul debug remoto, vedere [Esecuzione di app in un computer remoto](http://go.microsoft.com/fwlink/?LinkId=234914).  
+-   Selezionare **Computer remoto** per avviare l'applicazione in un computer remoto. Per altre informazioni sul debug remoto, vedere [Esecuzione di app in un computer remoto](../../debugger/run-windows-store-apps-on-a-remote-machine.md).  
 
 **Avvia applicazione**  
 Specifica se avviare l'applicazione quando si preme F5 o si fa clic su **Debug**, **Avvia debug**. Selezionare **Sì** per avviare l'applicazione, altrimenti selezionare **No**. Se si seleziona **No**, è comunque possibile eseguire il debug dell'applicazione usando un metodo diverso per avviarla.  

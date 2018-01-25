@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestione di Python nel servizio app di Azure
 
@@ -200,7 +200,7 @@ La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l
     È consigliabile usare `requirements.txt` perché è facile riprodurre l'esatto set di pacchetti sia in locale che nel server. Ricordarsi di visitare la console dopo la distribuzione di qualsiasi modifica apportata a `requirements.txt` e di eseguire nuovamente il comando.
 
 > [!Note]
-> Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestione dei pacchetti necessari](python-environments.md#managing-required-packages-requirementstxt).
+> Non è presente alcun compilatore C nel servizio app, pertanto è necessario installare il file wheel per tutti i pacchetti con moduli di estensione nativa. Molti pacchetti diffusi offrono i propri file wheel. Per i pacchetti che non li offrono, usare `pip wheel <package_name>` nel computer di sviluppo locale e quindi caricare il file wheel nel proprio sito. Per un esempio, vedere [Gestione dei pacchetti necessari](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>API REST Kudu
 

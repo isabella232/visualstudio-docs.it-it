@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
 In questa esercitazione per Visual Basic (VB), si userà Visual Studio per creare ed eseguire alcune app console diverse ed esplorare nello stesso tempo alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment)](visual-studio-ide.md) di Visual Studio.
@@ -82,11 +82,11 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
      Console.ReadKey(True)
     ```
 
-    Questo codice sostituisce le istruzioni [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1) e [Console.ReadKey]() esistenti.
+    Questo codice sostituisce le istruzioni <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> e <xref:System.Console.ReadKey%2A> esistenti.
 
  ![Finestra del codice con il codice di "What Is Your Name?"](../ide/media/vb-codewindow-what-name.png)
 
-3. Quando la finestra della console si apre, immettere il proprio nome. La finestra della console dovrebbe avere un aspetto simile allo screenshot seguente:       
+3. Quando la finestra della console si apre, immettere il proprio nome. La finestra della console dovrebbe avere un aspetto simile allo screenshot seguente:
 
    ![Finestra della console con "What is your name?", la data, l'ora della console e il messaggio Premere un tasto per continuare](../ide/media/vb-console-what-name.png)
 

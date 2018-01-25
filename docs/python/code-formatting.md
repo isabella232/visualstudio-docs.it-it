@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 96ef5d340a961671b199e521b2d6ee5d05794160
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="formatting-python-code"></a>Formattazione del codice Python
 
@@ -30,7 +30,7 @@ Visual Studio consente di riformattare rapidamente il codice in base a opzioni d
 
 Le opzioni vengono impostate mediante **Strumenti > Opzioni > Editor di testo > Python > Formattazione** e le relative schede annidate e per impostazione predefinita corrispondono a un superset della [guida di stile PEP 8](http://www.python.org/dev/peps/pep-0008/). La scheda **Generale** determina quando viene applicata la formattazione. Le impostazioni delle altre tre schede sono descritte in questo argomento.
 
-Il [supporto di Python in Visual Studio](installation.md) aggiunge anche l'utile comando [Riempi paragrafo di commento](#fill-comment-paragraph-command) al menu **Modifica > Avanzate** come descritto di seguito.
+Il [supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md) aggiunge anche l'utile comando [Riempi paragrafo di commento](#fill-comment-paragraph-command) al menu **Modifica > Avanzate** come descritto di seguito.
 
 ## <a name="spacing"></a>Spacing (Spaziatura)
 

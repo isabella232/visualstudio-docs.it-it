@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Configurazione degli unit test per il codice Python
 
@@ -35,7 +35,7 @@ Questo argomento illustra brevemente le funzionalità degli unit test in Visual 
 
 Per convenzione, Visual Studio identifica i test come metodi il cui nome inizia con `test`. Per vedere questo comportamento, attenersi alla procedura seguente:
 
-1. Aprire un [progetto Python](python-projects.md) caricato in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi > Nuovo elemento** e quindi selezionare **Unit test Python** seguito da **Aggiungi**.
+1. Aprire un [progetto Python](managing-python-projects-in-visual-studio.md) caricato in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi > Nuovo elemento** e quindi selezionare **Unit test Python** seguito da **Aggiungi**.
 
 1. Verrà creato un file `test1.py` contenente il codice che importa il modulo standard `unittest`, deriva una classe di test da `unittest.TestCase` e richiama `unittest.main()` se si esegue lo script direttamente:
 
@@ -92,7 +92,7 @@ Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fa
 
 ![Debug di un test](media/unit-test-debugging.png)
 
-A seconda della versione di Visual Studio, è anche possibile usare i comandi **Analizza code coverage per i test selezionati** ed **Esegui profilatura test**. Vedere la [matrice delle funzionalità](python-in-visual-studio.md#features-matrix).
+A seconda della versione di Visual Studio, è anche possibile usare i comandi **Analizza code coverage per i test selezionati** ed **Esegui profilatura test**. Vedere la [matrice delle funzionalità](overview-of-python-tools-for-visual-studio.md#features-matrix).
 
 ### <a name="known-issues"></a>Problemi noti
 

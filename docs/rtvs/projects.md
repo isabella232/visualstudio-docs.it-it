@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Creazione di progetti R in Visual Studio
 
@@ -119,6 +119,6 @@ Nell'esempio seguente la soluzione contiene un progetto R con un modello compila
 Il progetto evidenziato in grassetto è il progetto di "avvio" per la soluzione. Per cambiarlo, fare clic con il pulsante destro del mouse su un altro progetto e selezionare **Imposta come progetto di avvio**.
 
 > [!Note]
-> Al momento, a differenza di quanto avviene con Python (vedere [Creazione di un'estensione C++ per Python](../python/cpp-and-python.md)) non esiste alcuna integrazione esplicita tra R e i linguaggi C#/C++.  Sono tuttavia disponibili librerie che consentono di creare punti di comunicazione tra R e i linguaggi C# e C++.
+> Al momento, a differenza di quanto avviene con Python (vedere [Creazione di un'estensione C++ per Python](../python/working-with-c-cpp-python-in-visual-studio.md)) non esiste alcuna integrazione esplicita tra R e i linguaggi C#/C++.  Sono tuttavia disponibili librerie che consentono di creare punti di comunicazione tra R e i linguaggi C# e C++.
 
 Per altre informazioni sulla gestione di progetti e soluzioni in generale, vedere [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

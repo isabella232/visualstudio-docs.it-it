@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 
-Gli sviluppatori passano la maggior parte del tempo nell'editor di codice, quindi il [supporto per Python in Visual Studio](installation.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione. 
+Gli sviluppatori passano la maggior parte del tempo nell'editor di codice, quindi il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione. 
 
 In questo argomento
 
@@ -33,7 +33,7 @@ In questo argomento
 
 Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Scrittura di codice nell'Editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md). Vedere anche [Struttura](../ide/outlining.md) per informazioni su questa funzionalità che consente di concentrarsi su sezioni specifiche del codice. Il supporto di Python include l'uso del Visualizzatore oggetti di Visual Studio (**Visualizza > Altre finestre > Visualizzatore oggetti** o CTRL+W,J) per esaminare le classi definite in ogni modulo e le funzioni definite in tali classi. 
 
-L'editor è anche integrato con la finestra interattiva in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Vedere [Passaggio 3: Uso della finestra interattiva REPL](vs-tutorial-01-03.md) e [Uso della finestra interattiva - Comando per inviare codice alla finestra interattiva](interactive-repl.md#send-code-to-interactive-command) per informazioni dettagliate.
+L'editor è anche integrato con la finestra interattiva in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Vedere [Passaggio 3: Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Uso della finestra interattiva - Comando per inviare codice alla finestra interattiva](interactive-repl.md#send-code-to-interactive-command) per informazioni dettagliate.
 
 Per un'introduzione alla modifica del codice Python, vedere [Editing Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Modifica del codice Python) (Microsoft Virtual Academy, 2m30s):
 
@@ -41,7 +41,7 @@ Per un'introduzione alla modifica del codice Python, vedere [Editing Python Code
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Per migliorare le prestazioni, IntelliSense dipende dal database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, o nella scheda **IntelliSense** (vedere [Ambienti Python](python-environments.md)). 
+IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Per migliorare le prestazioni, IntelliSense dipende dal database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, o nella scheda **IntelliSense** (vedere [Ambienti Python](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Completamenti
 
