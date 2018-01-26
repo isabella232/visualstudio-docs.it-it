@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio
 
@@ -70,9 +70,7 @@ In questo caso si utilizzerà l'estensione predefinita VSPackage, ma gli stessi 
 
   ![Caricare in Marketplace](media/upload-to-marketplace.png)
 
-6. Scegliere il server di pubblicazione che si desidera utilizzare per caricare l'estensione.  È possibile modificare i server di pubblicazione facendo clic sul nome del server di pubblicazione nell'angolo superiore sinistro.
-
-  ![Server di pubblicazione modifica Marketplace](media/change-marketplace-publisher.png)
+6. Scegliere il server di pubblicazione che si desidera utilizzare per caricare l'estensione.  È possibile modificare i server di pubblicazione facendo clic sui nomi degli autori elencati a sinistra.  Fare clic su **nuova estensione** e selezionare **Visual Studio**.
 
 7. In **1: caricare l'estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o aggiungere un collegamento al proprio sito Web. In questo caso, si consente di caricare l'estensione, TestPublish.vsix.  Trascinare e rilasciare l'estensione o utilizzare il **fare clic su** collegamento per cercare il file.  L'estensione è reperibile nella cartella \bin\Release del progetto.  Scegliere **Continua**.
 
@@ -86,7 +84,7 @@ In questo caso si utilizzerà l'estensione predefinita VSPackage, ma gli stessi 
     
     * **ID VSIX** è l'identificatore univoco utilizzato per l'estensione Visual Studio.  È obbligatorio se si desidera avere l'estensione di essere aggiornato automaticamente.  Ciò viene popolato automaticamente dal file vsixmanifest.
     
-    * **Logo** che verrà usato per l'estensione.  Questo valore sarà popolato automaticamente dal file vsixmanifest se specificato.
+   * **Logo** che verrà usato per l'estensione.  Questo valore sarà popolato automaticamente dal file vsixmanifest se specificato.
     
     * **Breve descrizione** delle funzionalità dell'estensione.  Questo valore sarà popolato automaticamente dal file vsixmanifest.
     
@@ -108,12 +106,32 @@ In questo caso si utilizzerà l'estensione predefinita VSPackage, ma gli stessi 
     
     * **Consenti a domande e risposte per l'estensione** consentirà agli utenti di lasciare domande nella pagina di voce di estensione.
 
-9. Fare clic su **salvare e caricare**. Verrà visualizzata la pagina di gestione back per il server di pubblicazione.  L'estensione non è ancora stata pubblicata.  Per pubblicare il passaggio del mouse estensione sopra la voce dell'estensione e fare clic su **...**  e quindi **Rendi pubblico**.  È possibile visualizzare come l'estensione sarà simile in Marketplace selezionando **visualizzare i dettagli**.  Per i numeri di acquisizione, fare clic su **report**.  Per apportare modifiche per l'estensione, fare clic su **modifica*.
+9. Fare clic su **salvare e caricare**. Verrà visualizzata la pagina di gestione back per il server di pubblicazione.  L'estensione non è ancora stata pubblicata.  Per pubblicare l'estensione, fare clic sull'estensione e selezionare **Rendi pubblico**.  È possibile visualizzare come l'estensione sarà simile in Marketplace selezionando **estensione visualizzazione**.  Per i numeri di acquisizione, fare clic su **report**.  Per apportare modifiche per l'estensione, fare clic su **modifica*.
 
   ![Voce Menu dell'estensione](media/extension-entry-menu.png)
 
 10. Dopo aver fatto clic **Rendi pubblico**, l'estensione è ora pubblica.  Ricerca di Visual Studio Marketplace per l'estensione.
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Aggiungere altri utenti per gestire l'Account del server di pubblicazione
+
+Marketplace supporta la concessione di autorizzazioni aggiuntive agli utenti per accedere e gestire un account del server di pubblicazione.
+
+1. Selezionare l'account del server di pubblicazione che si desidera aggiungere ulteriori utenti.
+
+2. Selezionare **membri** e fare clic su **Aggiungi**
+
+  ![Aggiungi utente](media/add-users.png)
+
+3. È quindi possibile specificare l'indirizzo di posta elettronica dell'utente che si desidera aggiungere e concedere il corretto livello di accesso in **selezionare un ruolo**.  È possibile scegliere uno degli elementi seguenti:
+
+  * **Creatore**: l'utente può pubblicare estensioni, ma non è possibile visualizzare o gestire estensioni pubblicate da altri utenti.
+  
+  * **Lettore**: l'utente possa visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
+  
+  * **Collaboratore**: l'utente può pubblicare e gestire le estensioni, ma non può modificare le impostazioni di pubblicazione o gestire l'accesso.
+  
+  * **Proprietario**: l'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione del Marketplace di Visual Studio
 
 Ora che viene pubblicato l'estensione, installarlo in Visual Studio e testarlo.
@@ -126,7 +144,7 @@ Ora che viene pubblicato l'estensione, installarlo in Visual Studio e testarlo.
 
 4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.
 
-## <a name="removing-the-extension"></a>Rimozione dell'estensione
+## <a name="remove-the-extension"></a>Rimuovere l'estensione.
 
 È possibile rimuovere l'estensione di Visual Studio Marketplace e dal computer.
 
@@ -136,7 +154,7 @@ Ora che viene pubblicato l'estensione, installarlo in Visual Studio e testarlo.
 
 2. Nell'angolo superiore destro, fare clic su **pubblica** estensioni.  Selezionare il server di pubblicazione utilizzato per pubblicare TestPublish.  Viene visualizzato l'elenco per TestPublish.
 
-3. Passare il mouse sopra la voce di estensione e fare clic su **...**  e **rimuovere...** Verrà richiesto di confermare se si desidera rimuovere l'estensione.  Fare clic su **OK**.
+3. Fare doppio clic sulla voce di estensione e fare clic su **rimuovere** verrà richiesto di confermare se si desidera rimuovere l'estensione.  Fare clic su **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Per rimuovere l'estensione dal computer
 

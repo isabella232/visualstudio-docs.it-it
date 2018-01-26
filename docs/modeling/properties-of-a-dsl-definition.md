@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6a3b1dc2966f2fd07c8f0462ebb47bebf25b843c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 793d4becea65caca5bf127707c96c44de028fd3d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le proprietà di definizione, ad esempio numerazione delle versioni. Cui vengono visualizzate le proprietà di DslDefinition il **proprietà** finestra quando si fa clic su un'area vuota del diagramma nel *Domain-Specific Language progettazione*.  
@@ -44,4 +44,4 @@ Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le pro
 |Revisione|Revisione incrementale numero di build per questa definizione di linguaggio specifico di dominio.|0|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 Per eseguire il debug di XSLT è possibile usare il debugger di Visual Studio. Il debugger supporta l'impostazione dei punti di interruzione, la visualizzazione degli stati di esecuzione di XSLT e così via. Il debug di XSLT è disponibile in Visual Studio Team System e Professional Edition.  
@@ -57,5 +57,5 @@ Per eseguire il debug di XSLT è possibile usare il debugger di Visual Studio. I
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Viene descritto il debugger di Visual Studio.  
   
- [Riferimenti di XSLT](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Riferimenti di XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Viene fornito materiale di riferimento per elementi e funzioni XSLT.

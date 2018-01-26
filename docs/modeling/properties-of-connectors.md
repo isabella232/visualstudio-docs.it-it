@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7874e3017c714f41a660f96bedbb126fe121086e
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 892f9b3cacd5e2c0c33373ca5ec065ba436ffe59
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 Connettori rappresentano le relazioni di dominio in una finestra di progettazione generato.  
@@ -50,4 +50,4 @@ Connettori rappresentano le relazioni di dominio in una finestra di progettazion
 |Parola chiave della Guida|La parola chiave che viene utilizzata per l'indice della Guida F1 per questo elemento.|\<Nessuno >|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 Visual Studio di modellazione e SDK di visualizzazione (VMSDK) garantisce livelli diversi in cui è possibile definire gli strumenti di modellazione seguenti:  
@@ -55,7 +55,7 @@ Visual Studio di modellazione e SDK di visualizzazione (VMSDK) garantisce livell
 |Eliminare o reimpostato Ricollega elementi correlati quando viene eliminato un elemento.|Impostare il **propaga eliminare** valore di un ruolo della relazione. Per gli effetti più complessi, eseguire l'override `ShouldVisitRelationship` e `ShouldVisitRolePlayer` metodi di `MyDslDeleteClosure` , definita in **DomainModel.cs**<br /><br /> Vedere [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)|  
 |Mantenere il layout di forma e aspetto nella copia e trascinamento.|Aggiungere le forme e connettori copiato `ElementGroupPrototype`. È il metodo più semplice per eseguire l'override`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|  
 |Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.|Eseguire l'override `ClipboardCommandSet.ProcessOnCopy()` per utilizzare la versione del percorso specifica `ElementOperations.Merge().` vedere [personalizzazione copia comportamento](../modeling/customizing-copy-behavior.md).|  
-|Creare collegamenti aggiuntivi quando si incolla|Eseguire l'override ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Creare collegamenti aggiuntivi quando si incolla|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Abilita trascinamento della selezione dal diagramma, altri DSL e Windows elementi|Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Consentire una forma o dello strumento è possibile trascinare una forma figlio, ad esempio una porta, come se si sono stato trascinato l'elemento padre.|Definire una direttiva di elemento di tipo Merge per la classe di oggetto di destinazione, per l'inoltro dall'oggetto rilasciato per l'elemento padre. Vedere [personalizzazione la creazione degli elementi e lo spostamento](../modeling/customizing-element-creation-and-movement.md).|  
 |Consentire una forma o lo strumento è possibile trascinare una forma e collegamenti aggiuntivi o gli oggetti creati. Ad esempio, per consentire un commento a trascinare un elemento a cui è possibile collegare.|Definire una direttiva di elemento di tipo Merge per la classe di dominio di destinazione e definire i collegamenti da generare. In scenari complessi, è possibile aggiungere codice personalizzato. Vedere [personalizzazione la creazione degli elementi e lo spostamento](../modeling/customizing-element-creation-and-movement.md).|  
@@ -70,10 +70,10 @@ Visual Studio di modellazione e SDK di visualizzazione (VMSDK) garantisce livell
 |Integrare DSL diversi in modo che funzionino come parte di un'applicazione.|Vedere [l'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Consentire il modello DSL possono essere estesi da terze parti e l'estensione di controllo.|[Estendere il DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Condivisione di classi tra DSL usando una libreria DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definizione di un criterio di blocco per creare segmenti di sola lettura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>Vedere anche  
- [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>Vedere anche
+
+[Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)   
+[Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

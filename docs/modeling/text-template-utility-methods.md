@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
-Esistono diversi metodi che sono sempre disponibili quando si scrive codice in un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modello di testo. Questi metodi sono definiti in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Esistono diversi metodi che sono sempre disponibili quando si scrive codice in un modello di testo di Visual Studio. Questi metodi sono definiti in <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  È inoltre possibile utilizzare altri metodi e i servizi forniti dall'ambiente host in un modello di testo (non pre-elaborato) regolare. Ad esempio, può risolvere i percorsi di file, registrare gli errori e ottenere servizi forniti da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e qualsiasi pacchetto caricato.  Per ulteriori informazioni, vedere [l'accesso a Visual Studio da un modello di testo](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> È inoltre possibile utilizzare altri metodi e i servizi forniti dall'ambiente host in un modello di testo (non pre-elaborato) regolare. Ad esempio, può risolvere i percorsi di file, registrare gli errori e ottenere servizi forniti da Visual Studio e qualsiasi pacchetto caricato. Per ulteriori informazioni, vedere [l'accesso a Visual Studio da un modello di testo](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Metodi di scrittura  
- È possibile utilizzare il `Write()` e `WriteLine()` metodi per aggiungere testo all'interno di un blocco di codice standard, anziché utilizzare un blocco di codice di espressione. I seguenti blocchi di codice che seguono sono funzionalmente equivalenti.  
+## <a name="write-methods"></a>Metodi di scrittura
+
+È possibile utilizzare il `Write()` e `WriteLine()` metodi per aggiungere testo all'interno di un blocco di codice standard, anziché utilizzare un blocco di codice di espressione. I seguenti blocchi di codice che seguono sono funzionalmente equivalenti.  
   
-##### <a name="code-block-with-an-expression-block"></a>Blocco di codice con un blocco di espressione  
+### <a name="code-block-with-an-expression-block"></a>Blocco di codice con un blocco di espressione  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Blocco di codice utilizzando WriteLine)  
+### <a name="code-block-using-writeline"></a>Blocco di codice utilizzando WriteLine)  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Metodi di rientro  
+## <a name="indentation-methods"></a>Metodi di rientro
+
  È possibile utilizzare i metodi di rientro per formattare l'output del modello di testo. Il <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe dispone di un `CurrentIndent` proprietà stringa che mostra il rientro corrente nel modello di testo e un `indentLengths` campo che rappresenta un elenco dei rientri che sono stati aggiunti. È possibile aggiungere un rientro con il `PushIndent()` (metodo) e sottrazione di un rientro con il `PopIndent()` metodo. Se si desidera rimuovere tutti i rientri, utilizzare il `ClearIndent()` metodo. Blocco di codice seguente viene illustrato come utilizzare questi metodi:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Errore e i metodi di avviso  
- È possibile utilizzare i metodi di utilità di errore e avviso per aggiungere i messaggi di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenco errori. Il codice seguente, ad esempio, aggiungerà un messaggio di errore per l'elenco degli errori.  
+ Per aggiungere i messaggi per l'elenco di errori di Visual Studio, è possibile utilizzare metodi di utilità di avviso e di errore. Il codice seguente, ad esempio, aggiungerà un messaggio di errore per l'elenco degli errori.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello che è in esecuzione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile eseguire il cast `this.Host` a `IServiceProvider` per accedere ai servizi, ad esempio l'IDE. Ad esempio:  
+ Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello di cui è in esecuzione in Visual Studio, è possibile eseguire il cast `this.Host` a `IServiceProvider` per accedere ai servizi, ad esempio l'IDE. Ad esempio:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

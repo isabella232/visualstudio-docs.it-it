@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 08517439e2b99ca9ceba29ad3c7558494cf6bb47
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 42c873fc8c7991d5397d611c0aa6009bfc1720c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 In Visual Studio è possibile usare un modello che consenta di comprendere e modificare un sistema, un'applicazione o un componente. Un modello consente di visualizzare l'ambiente in cui opera il sistema, chiarire le esigenze degli utenti, definire l'architettura del sistema, analizzare il codice e assicurarsi che soddisfi i requisiti. Vedere [Video di Channel 9: migliorare l'architettura tramite la modellazione](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -130,12 +130,13 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
-## <a name="see-also"></a>Vedere anche  
- [Utilizzare i modelli in fase di sviluppo Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
- [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
- [Architettura dell'applicazione del modello](../modeling/model-your-app-s-architecture.md)   
- [Sviluppare test da un modello](../modeling/develop-tests-from-a-model.md)   
- [Strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)
+## <a name="see-also"></a>Vedere anche
+
+[Utilizzare i modelli in fase di sviluppo Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
+[Modellare i requisiti utente](../modeling/model-user-requirements.md)   
+[Architettura dell'applicazione del modello](../modeling/model-your-app-s-architecture.md)   
+[Sviluppare test da un modello](../modeling/develop-tests-from-a-model.md)   
+[Strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

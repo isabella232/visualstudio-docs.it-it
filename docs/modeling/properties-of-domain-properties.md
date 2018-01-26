@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: feb94d543845e41027fc003188b013b05b75703a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d48e7094b61c07e3d2e3181010c823c457ae959a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-domain-properties"></a>Proprietà delle proprietà di dominio
 Oggetto *proprietà dominio* è una funzionalità di un elemento del modello che può contenere un valore. Ad esempio, la classe di dominio `Person` potrebbe includere le proprietà `Name` e `BirthDate`. Nella definizione DSL, le proprietà di dominio sono elencate nella casella della classe di dominio sul diagramma e sotto la classe di dominio in DSL Explorer. Per ulteriori informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -43,11 +43,11 @@ Oggetto *proprietà dominio* è una funzionalità di un elemento del modello che
 |**Può essere esaminato**|Se `True`, la proprietà di dominio è visualizzata dall'utente nella finestra delle proprietà quando i modelli di questo DSL sono aperti.<br /><br /> Se `False`, la proprietà di dominio è nascosta nell'interfaccia utente.<br /><br /> Se si desidera impostare la proprietà dominio visibili ma in sola lettura, impostare **è dell'interfaccia utente di sola lettura**.|`True`|  
 |**Nome di elemento**|Se `True`, questa proprietà di dominio verrà visualizzata come nome del relativo elemento modello in DSL Explorer.<br /><br /> I nuovi elementi modello riceveranno un valore predefinito univoco per questa proprietà. Se si desidera controllare la modalità di generazione di questi valori, impostare **il Provider di nomi di elemento**.|`False`|  
 |**Interfaccia utente in sola lettura**|Se `True`, il valore della proprietà di dominio non può essere modificato tramite l'interfaccia utente. Può comunque essere impostato da programmi e sarà visibile nella finestra Proprietà.<br /><br /> Se si desidera nascondere le proprietà del dominio da parte dell'utente, impostare **è esplorabile**. Se si desidera controllare l'accesso tramite i programmi, impostare **modificatore di accesso Setter**.|`False`|  
-|**Tipo**|Il tipo di proprietà di dominio (`Normal`, `Calculated` o `CustomStorage`). Per ulteriori informazioni, vedere [calcolate e le proprietà di archiviazione personalizzato](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|  
+|**Kind**|Il tipo di proprietà di dominio (`Normal`, `Calculated` o `CustomStorage`). Per ulteriori informazioni, vedere [calcolate e le proprietà di archiviazione personalizzato](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|  
 |**Name**|Nome di questa proprietà di dominio. Deve essere un identificatore valido, ad esempio **SongTitle**.|\<Nessuno >|  
 |**Note**|Note informali associate alla proprietà di dominio.|\<Nessuno >|  
 |**Modificatore di accesso Setter**|Modificatore di accesso per il metodo Set. Consente di controllare l'ambito nel quale il codice programma può impostare la proprietà.|`public`|  
 |**Type**|Tipo di proprietà. Per aggiungere all'elenco dei tipi disponibili, la radice del linguaggio DSL in Esplora DSL di mouse e scegliere **aggiungere tipo esterno**.|`String`|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

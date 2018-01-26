@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 8ad4a4141d27c9250d53a567ac09b1c5ffa05f49
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare gli strumenti di visualizzazione e di modellazione in Visual Studio.
@@ -485,11 +485,10 @@ Gli elementi dei diagrammi di dipendenza si trovano nel progetto di modello, ma 
 |------------------|---------------|  
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>Vedere anche  
- [Visualizzare il codice](../modeling/visualize-code.md)   
- [Utilizzare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)   
- [Utilizzare i modelli in fase di sviluppo Agile](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>Vedere anche
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Visualizzare il codice](../modeling/visualize-code.md)   
+[Utilizzare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)   
+[Utilizzare i modelli in fase di sviluppo Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
  

@@ -14,24 +14,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e3ab33282c89617a74cc80623040ffc9176b761a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 953be16c3bf48a865acf131a2fd8fe02085b0637
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 È possibile utilizzare forme di immagine per specificare la visualizzazione di classi di dominio in una finestra di progettazione generato. Definire una forma di immagine impostando il `Image` proprietà della classe in un file di immagine predefinita. Sono supportati i formati seguenti:  
   
 -   .gif  
   
--   jpg  
+-   .jpg  
   
--   . JPEG  
+-   .jpeg  
   
--   file con estensione bmp  
+-   .bmp  
   
--   WMF  
+-   .wmf  
   
 -   EMF  
   
@@ -72,4 +72,4 @@ ms.lasthandoff: 01/13/2018
 |Image|Il percorso del file di immagine che viene utilizzato per questa forma.|\<Nessuno >|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in un Computer remoto con IIS in Visual Studio 2017
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'App in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
 
 ![I componenti del debugger remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Questa guida viene illustrato come impostare e configurare un Core di ASP.NET di Visual Studio 2017, distribuirlo in IIS e collegare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET 4.5.2, vedere [ASP.NET di eseguire il Debug remoto in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). È anche possibile distribuire ed eseguire il debug in IIS utilizzando Azure. Per il servizio App di Azure, è possibile distribuire facilmente ed eseguire il debug in un'istanza preconfigurata di IIS utilizzando la [Debugger Snapshot](../debugger/debug-live-azure-applications.md) o [per collegare il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
+Questa guida viene illustrato come impostare e configurare un Core di ASP.NET di Visual Studio 2017, distribuirlo in IIS e collegare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET 4.5.2, vedere [ASP.NET di eseguire il Debug remoto in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). È anche possibile distribuire ed eseguire il debug in IIS utilizzando Azure. Per il servizio App di Azure, è possibile distribuire facilmente ed eseguire il debug in un'istanza preconfigurata di IIS e il debugger remoto utilizzando il [Debugger Snapshot](../debugger/debug-live-azure-applications.md) o [per collegare il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
 
 Queste procedure sono state testate su queste configurazioni del server:
 * Windows Server 2012 R2 e IIS 8

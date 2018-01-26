@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c1a163e50e2f237430ba13d57a76cfc0d6b1d67
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 1fcba975443deb768a2b3de36bd2744183cdcf40
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Strumenti di linguaggio specifico di dominio (strumenti DSL), che sono ospitati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consentono progettare un linguaggio specifico di dominio e quindi generare tutto ciò che gli utenti devono disporre per creare i modelli basati sulla lingua.  
@@ -51,7 +51,7 @@ Strumenti di linguaggio specifico di dominio (strumenti DSL), che sono ospitati 
   
  La procedura guidata crea un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione che include i progetti seguenti:  
   
--   DSL  
+-   Dsl  
   
      Il progetto Dsl definisce il linguaggio specifico di dominio e dei relativi strumenti di modificare e di elaborazione.  
   
@@ -77,4 +77,4 @@ Strumenti di linguaggio specifico di dominio (strumenti DSL), che sono ospitati 
   
 ## <a name="see-also"></a>Vedere anche  
  [L'istanza sperimentale](../extensibility/the-experimental-instance.md)   
- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

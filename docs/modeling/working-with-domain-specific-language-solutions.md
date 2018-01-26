@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilizzo di soluzioni per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato utilizzando un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione. In questa sezione è su come configurare e personalizzare la soluzione.  
@@ -47,5 +47,5 @@ Un linguaggio specifico di dominio (DSL) viene creato utilizzando un [!INCLUDE[v
  [Procedura: Estendere la finestra di progettazione di linguaggio specifico di dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  È possibile personalizzare la finestra di progettazione DSL con i comandi di menu.  
   
- [Come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Per evitare di fare clic su Trasforma tutti i modelli, è possibile renderlo una parte della compilazione automatica.

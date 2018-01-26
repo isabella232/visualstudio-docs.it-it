@@ -19,27 +19,23 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
-Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.  
-  
- Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, che trova in questo sito: [Visualizaton e SDK di modellazione](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Per definire un linguaggio specifico di dominio (DSL), creare una soluzione di Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
+Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, che trova in questo sito: [Visualizaton e SDK di modellazione](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>Selezione di una soluzione di modello  
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |SDK di visualizzazione e modellazione di Visual Studio||  
 
@@ -47,7 +43,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- Per creare un nuovo linguaggio specifico di dominio, si crea una nuova soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con il modello di progetto Linguaggio specifico di dominio.  
+ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione di Visual Studio usando il modello di progetto di linguaggio specifico di dominio.  
   
 #### <a name="to-create-a-dsl-solution"></a>Per creare una soluzione DSL  
   
@@ -98,17 +94,17 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 ### <a name="test-the-solution"></a>Testare la soluzione  
  La soluzione per il modello offre un linguaggio DSL di lavoro, che è possibile modificare o usare così com'è.  
   
- Per testare la soluzione, premere F5 o CTRL+F5. Una nuova istanza di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si apre in modalità sperimentale.  
+ Per testare la soluzione, premere F5 o CTRL+F5. Una nuova istanza di Visual Studio apre in modalità sperimentale.  
   
- Nella nuova istanza di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], in Esplora soluzioni aprire il file di esempio. Si apre un diagramma, con una casella degli strumenti.  
+ Nella nuova istanza di Visual Studio, in Esplora soluzioni, aprire il file di esempio. Si apre un diagramma, con una casella degli strumenti.  
   
- Se si esegue una soluzione che è stato creato dal **Language minimo** modello, lo sperimentale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sarà simile all'esempio seguente:  
+ Se si esegue una soluzione che è stato creato dal **Language minimo** modello, l'istanza sperimentale di Visual Studio sarà simile all'esempio seguente:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  Sperimentare con gli strumenti. Creare elementi e connetterli.  
   
- Chiudere l'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Chiudere l'istanza sperimentale di Visual Studio.  
   
 > [!NOTE]
 >  Dopo aver modificato il linguaggio DSL, non sarà più possibile visualizzare le forme nel file di test di esempio. Sarà tuttavia possibile creare nuovi elementi.  
@@ -217,11 +213,11 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 ##### <a name="to-test-the-new-domain-classes"></a>Per testare le nuove classi di dominio  
   
-1.  **Fare clic su Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL. È possibile automatizzare questo passaggio. Per ulteriori informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Fare clic su Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL. È possibile automatizzare questo passaggio. Per ulteriori informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
-2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza della [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in modalità sperimentale. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire o creare un file con l'estensione di file del linguaggio DSL.  
+2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio, aprire o creare un file con l'estensione di tale linguaggio DSL.  
   
-3.  **Aprire Esplora risorse.** AT il lato del diagramma è la finestra di Esplora linguaggio in cui è in genere denominata *YourLanguage* Explorer. Se questa finestra non è visibile, potrebbe essere in una scheda sotto Esplora soluzioni. Se si riesce a trovare, nel **vista** dal menu **altre finestre**, quindi fare clic su * YourLanguage ***Esplora**.  
+3.  **Aprire Esplora risorse.** AT il lato del diagramma è la finestra di Esplora linguaggio in cui è in genere denominata *YourLanguage* Explorer. Se questa finestra non è visibile, potrebbe essere in una scheda sotto Esplora soluzioni. Se si riesce a trovare, sul **vista** dal menu **altre finestre**, quindi fare clic su *YourLanguage* **Esplora**.  
   
      La finestra di esplorazione contiene una visualizzazione struttura ad albero del modello.  
   
@@ -317,7 +313,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 1.  **Fare clic su Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL.  
   
-2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza della [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in modalità sperimentale. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire o creare un file con l'estensione di file del linguaggio DSL.  
+2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio, aprire o creare un file con l'estensione di tale linguaggio DSL.  
   
 3.  **Verificare che gli strumenti di elemento vengono visualizzati nella casella degli strumenti.**  
   
@@ -393,7 +389,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 1.  **Fare clic su Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL.  
   
-2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza della [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in modalità sperimentale. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire o creare un file con l'estensione di file del linguaggio DSL.  
+2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio, aprire o creare un file con l'estensione di tale linguaggio DSL.  
   
 3.  **Verificare che lo strumento di connessione visualizzato nella casella degli strumenti.**  
   
@@ -494,7 +490,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   
 1.  **Fare clic su Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni, per generare il codice della finestra di progettazione DSL.  
   
-2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza della [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in modalità sperimentale. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire o creare un file con l'estensione di file del linguaggio DSL.  
+2.  **Compilare ed eseguire del linguaggio DSL.** Premere F5 o CTRL + F5 per eseguire una nuova istanza di Visual Studio in modalità sperimentale. Nell'istanza sperimentale di Visual Studio, aprire o creare un file con l'estensione di tale linguaggio DSL.  
   
 3.  **Verificare che lo strumento viene visualizzato nella casella degli strumenti.**  
   
@@ -623,12 +619,10 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 |Nella finestra di esplorazione del linguaggio DSL, gli elementi vengono mostrati solo con i nomi di tipo.|Nella definizione del linguaggio DSL, selezionare una proprietà della classe di dominio e nella proprietà finestra, impostare **è il nome di elemento** su true.|  
 |Il linguaggio DSL si apre sempre nell'editor XML.|Ciò può verificarsi a causa di un errore durante la lettura del file. Tuttavia, anche dopo aver corretto l'errore, è necessario reimpostare in modo esplicito l'editor come finestra di progettazione DSL.<br /><br /> Il pulsante destro l'elemento del progetto, fare clic su **Apri con** e selezionare * YourLanguage ***progettazione (impostazione predefinita)**.|  
 |La casella degli strumenti del linguaggio DSL non viene visualizzata dopo aver cambiato i nomi degli assembly.|Controllare e aggiornare **DslPackage\GeneratedCode\Package.tt** per ulteriori informazioni, vedere [procedura: modificare Namespace di un linguaggio specifico di dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In finestre del menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta il Microsoft Visual Studio istanza sperimentale**.<br />2.  Nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **compilare** menu, fare clic su **Ricompila soluzione**.|  
+|La casella degli strumenti del linguaggio DSL non viene visualizzata, anche se il nome dell'assembly non è stato cambiato.<br /><br /> Oppure viene visualizzata una finestra di messaggio che segnala un errore nel caricamento di un'estensione.|Reimpostare l'istanza sperimentale e ricompilare la soluzione.<br /><br /> 1.  In finestre del menu Start, in **tutti i programmi**, espandere [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], quindi **strumenti**, quindi fare clic su **Reimposta il Microsoft Visual Studio istanza sperimentale**.<br />2.  In Visual Studio**compilare** menu, fare clic su **Ricompila soluzione**.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Introduzione a linguaggi specifici di dominio](../modeling/getting-started-with-domain-specific-languages.md)   
  [Creazione di un linguaggio specifico di dominio di Windows basata su form](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Creazione di un linguaggio specifico di dominio basato su WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
