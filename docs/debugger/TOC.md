@@ -18,6 +18,7 @@
 # Guide pratiche
 ## [Spostarsi nel codice con il debugger](navigating-through-code-with-the-debugger.md)
 ## [Usare i punti di interruzione](using-breakpoints.md)
+### [Risoluzione dei problemi dei punti di interruzione](troubleshooting-breakpoints.md)
 ## [Esaminare i dati](debugger-windows.md)
 ### [Esaminare le variabili](autos-and-locals-windows.md)
 ### [Impostare un'espressione di controllo nelle variabili](watch-and-quickwatch-windows.md)
