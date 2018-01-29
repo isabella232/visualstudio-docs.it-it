@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 09/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.remote.projnotconfigured
+f1_keywords:
+- vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "22"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Errore: il server Web non è configurato in modo corretto
 
@@ -39,7 +43,7 @@ Eseguire la procedura per risolvere il problema:
 
     Il percorso fisico può essere corretto se l'applicazione web è stato copiato in un computer diverso, rinominato manualmente o spostato. Reimpostare IIS, quindi riprovare.
 
-3. In Visual Studio, verificare che il server corretto sia selezionato nelle proprietà. (Aprire **proprietà > Web > server** o **proprietà > Debug** a seconda del tipo di progetto. Per un progetto di Web Form, aprire **pagine delle proprietà > Opzioni di avvio > Server**).
+3. Se esegue il debug in locale in Visual Studio, verificare che il server corretto sia selezionato nelle proprietà. (Aprire **proprietà > Web > server** o **proprietà > Debug** a seconda del tipo di progetto. Per un progetto di Web Form, aprire **pagine delle proprietà > Opzioni di avvio > Server**).
 
     Se si utilizza un server (personalizzato) esterno, ad esempio IIS, l'URL deve essere corretto. In caso contrario, selezionare IIS Express e riprovare.
 

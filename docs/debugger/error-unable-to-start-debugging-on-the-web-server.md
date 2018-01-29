@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: impossibile avviare il debug sul server Web
 
@@ -84,8 +86,10 @@ Il `Unable to start debugging on the Web server` messaggio è di tipo generico. 
 
 ## <a name="server_error"></a>Il server remoto ha restituito un errore
 
-Controllare il codice di errore che viene restituito nel messaggio per identificare la causa del problema. Ecco alcuni codici di errore comuni.
-- (403) accesso negato. Verificare che ci si connette per il tipo di server e l'URL (in **proprietà > Web > server** o **proprietà > Debug**, a seconda del tipo di progetto). Inoltre, verificare che i file Web. config del server include `debug=true` nell'elemento di compilazione. Se queste impostazioni sono già corrette, verificare che la cartella dell'applicazione Web disponga delle autorizzazioni di cartella corretta. Per ulteriori informazioni, vedere [controllare la configurazione di IIS](#vxtbshttpservererrorsthingstocheck).
+Controllare il [file di log IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) per codici secondari di errore e informazioni aggiuntive e questo IIS 7 [post di blog](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Inoltre, ecco alcuni dei codici di errore comuni e alcuni suggerimenti.
+- (403) accesso negato. Esistono molte possibili cause di questo errore, controllare il file di log e le impostazioni di sicurezza IIS per il sito web. Assicurarsi che i file Web. config del server include `debug=true` nell'elemento di compilazione. Assicurarsi che la cartella dell'applicazione Web abbia le autorizzazioni corrette e che la configurazione del Pool di applicazioni sia corretta (la password sia stato modificato). Vedere [controllare la configurazione di IIS](#vxtbshttpservererrorsthingstocheck). Se queste impostazioni sono corrette e si esegue il debug in locale, verificare anche che ci si connette per il tipo di server e l'URL (in **proprietà > Web > server** o **proprietà > Debug**, a seconda del tipo di progetto).
 - Server non disponibile (503). Il Pool di applicazioni potrebbe aver arrestato a causa di una modifica della configurazione o di errore. Riavviare il Pool di applicazioni.
 - (404) non trovato. Assicurarsi che il Pool di applicazioni è configurato per la versione corretta di ASP.NET.
 
@@ -125,7 +129,7 @@ Dopo avere eseguito i passaggi descritti in questa sezione per risolvere il prob
     
 * Controllare che la cartella dell'applicazione Web abbia le autorizzazioni appropriate.
 
-    Assicurarsi di fornire IIS_IUSRS, IUSR o utente specifico associato la lettura di Pool di applicazioni e i diritti per la cartella dell'applicazione Web di esecuzione. Risolvere il problema e riavviare il Pool di applicazioni.
+    Assicurarsi di assegnare IIS_IUSRS, IUSR, oppure l'utente specifico associato il [Pool di applicazioni](/iis/manage/configuring-security/application-pool-identities) di lettura ed esecuzione di diritti per la cartella dell'applicazione Web. Risolvere il problema e riavviare il Pool di applicazioni.
 
 * Assicurarsi che sia installata la versione corretta di ASP.NET in IIS.
 

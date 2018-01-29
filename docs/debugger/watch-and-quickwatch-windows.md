@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Impostare un'espressione di controllo per le variabili utilizzando espressioni di controllo e le finestre di controllo immediato in Visual Studio
-Quando si esegue il debug, è possibile utilizzare il **espressioni di controllo** (**Debug > Windows > espressioni di controllo > espressioni di controllo (1, 2, 3, 4)**) e **controllo immediato** (pulsante destro del mouse sulla variabile /  **Eseguire il debug > controllo immediato**) windows per controllare variabili ed espressioni.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta.
+Quando si esegue il debug, è possibile utilizzare il **espressioni di controllo** e **controllo immediato** windows per controllare variabili ed espressioni.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta. 
 
-Le finestre sono disponibili solo durante una sessione di debug. 
+Le finestre sono disponibili solo durante una sessione di debug. Per aprire la **espressioni di controllo** finestra, scegliere **Debug > Windows > espressioni di controllo > espressioni di controllo (1, 2, 3, 4)**). Per aprire la **controllo immediato** finestra, il pulsante destro del mouse sulla variabile e scegliere **controllo immediato** oppure scegliere **Debug > controllo immediato**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Osservazione di una singola variabile con Controllo immediato  
  È possibile usare la finestra **Controllo immediato** per osservare una singola variabile. Si supponga, ad esempio, di avere il codice seguente:  
@@ -54,7 +55,7 @@ static void Main(string[] args)
   
 2.  Avviare il debug. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione.  
   
-3.  Aprire la finestra **Controllo immediato** (fare clic con il pulsante destro del mouse su a, quindi scegliere **Controllo immediato**o **MAIUSC+F9**).
+3.  Aprire il **controllo immediato** finestra (fare clic su `a`, quindi scegliere **controllo immediato**, oppure selezionare `a` e premere **MAIUSC + F9**).
 
     Dovrebbe essere una variabile nel **valori** finestra, con un valore pari a 1.
 
