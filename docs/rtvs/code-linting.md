@@ -1,36 +1,41 @@
 ---
 title: Lint del codice con R Tools per Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 01/15/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
-f1_keywords: vs.toolsoptionspages.text_editor.r.lint
+f1_keywords:
+- vs.toolsoptionspages.text_editor.r.lint
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 76f4ceb040e62e4ebac46e8a791f5dac0d73aff5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: b7fcd958c1bed744f40c1a726e6bec4f86d307df
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Lint del codice R in Visual Studio
 
-Il termine lint indica un processo che analizza il codice per individuare potenziali errori, così come problemi di formattazione e altri elementi superflui nei file di codice, ad esempio spazi vuoti spuri. Il processo di lint favorisce anche il rispetto di determinate convenzioni per la scrittura del codice, ad esempio la denominazione degli identificatori, molto utili all'interno di team o in altre situazioni di sviluppo in collaborazione.
+Il termine lint indica un processo che analizza il codice per individuare potenziali errori, problemi di formattazione e altri elementi superflui nel codice, come spazi vuoti spuri. Il processo di lint favorisce anche il rispetto di determinate convenzioni per la scrittura del codice, ad esempio la denominazione degli identificatori, molto utili all'interno di team o in altre situazioni di sviluppo in collaborazione.
 
-R Tools for Visual Studio (RTVS) offre funzionalità di lint incorporate per R, con un comportamento controllabile tramite un'ampia gamma di opzioni. Queste opzioni sono disponibili in **Strumenti > Opzioni > Editor di testo > R > Lint**.
+R Tools for Visual Studio (RTVS) offre funzionalità di lint incorporate per R, con un comportamento controllabile tramite un'ampia gamma di opzioni descritte in questo articolo. Queste opzioni sono disponibili in **Strumenti > Opzioni > Editor di testo > R > Lint**.
 
-Il lint è disabilitato per impostazione predefinita. Per abilitare il lint, impostare l'opzione **Tutto > Abilita lint** su true. Le sezioni seguenti in questo argomento descrivono le altre opzioni di lint:
+Il lint è disabilitato per impostazione predefinita. Per abilitare il lint, impostare l'opzione **Tutto > Abilita lint** su true.
 
 Dopo l'abilitazione, il lint viene applicato nell'editor durante la digitazione. I problemi vengono segnalati tramite sottolineature ondulate verdi. Nella figura seguente, ad esempio, RTVS ha identificato sei problemi di lint, tra i quali l'uso di `=` invece di `<-` per un'assegnazione, la mancanza di spazio attorno agli argomenti della funzione, l'uso di identificatori con la notazione Pascal e con tutte maiuscole e l'uso di un punto e virgola. Posizionando il puntatore del mouse su un problema viene visualizzata una descrizione.
 
 ![Esempi di lint per il codice R](media/linting-01.png)
+
+È spesso necessario modificare le opzioni di lint a seconda delle esigenze di un progetto o un file. Ad esempio, il codice di esempio da un corso online potrebbe usare `=` invece di `<-` insieme agli identificatori con convenzione per le maiuscole/minuscole Pascal. Per questo codice verrebbero visualizzati avvisi di lint frequenti, perché le opzioni di lint predefinite contrassegnano questa convenzione per le maiuscole/minuscole. Durante l'utilizzo di tale codice è quindi possibile semplicemente disabilitare le opzioni anziché dedicare a tempo a correggere ogni istanza.
 
 ## <a name="assignment-group"></a>Gruppo Assegnazione
 

@@ -1,20 +1,20 @@
 ---
-title: Panoramica dell'ambiente IDE di Visual Studio | Microsoft Docs
+title: Panoramica di Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Panoramica dell'ambiente IDE di Visual Studio
 
@@ -96,7 +96,7 @@ Al primo avvio di Visual Studio, è possibile scegliere facoltativamente di acce
 
 Per apprendere qualcosa, le prove pratiche rappresentano sempre un buon metodo. In questa sezione viene descritta in dettaglio la procedura per creare un nuovo semplice programma.
 
-1. Aprire Visual Studio. Scegliere **File**, **Nuovo**, **Progetto** dal menu.
+1. Aprire Visual Studio. Scegliere **File** > **Nuovo** > **Progetto** dal menu.
 
   ![screenshot](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -104,11 +104,14 @@ Per apprendere qualcosa, le prove pratiche rappresentano sempre un buon metodo. 
 
 1. Verrà visualizzata la finestra di dialogo **Nuovo progetto** con vari modelli di progetto. Scegliere la categoria **Universale di Windows** in **Visual C#**, scegliere il modello **App vuota (Windows universale)** e quindi scegliere il pulsante **OK**.
 
-  ![screenshot](../ide/media/VSIDE_Tour_NewProject2.png)
+  > [!NOTE]
+  > Se non viene visualizzata la categoria **Universale di Windows** è necessario installare il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)**. A tale scopo, scegliere il collegamento **Apri il programma di installazione di Visual Studio** in basso a sinistra nella finestra di dialogo **Nuovo progetto**. Dopo l'apertura del **programma di installazione di Visual Studio** selezionare il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e quindi scegliere **Modifica**.
+
+  ![Modello di app vuota UWP](../ide/media/new-uwp-blank-app-template.png)
 
   Verrà così creato un nuovo progetto di app di Windows universale vuota usando i linguaggi di programmazione Visual C# e XAML. Attendere che Visual Studio completi la configurazione iniziale del progetto. Se viene richiesta qualsiasi informazione, per il momento accettare i valori predefiniti.
 
-1. Nella finestra di dialogo **Nuovo progetto Windows universale** accettare le impostazioni predefinite scegliendo **OK**.
+1. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** accettare le impostazioni predefinite scegliendo **OK**.
 
 1. Dovrebbe essere visualizzata entro breve una schermata simile allo screenshot seguente. I file del progetto sono elencati sul lato destro in una finestra denominata Esplora soluzioni.
 
@@ -140,7 +143,7 @@ Per apprendere qualcosa, le prove pratiche rappresentano sempre un buon metodo. 
 
   ![screenshot](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Avviare l'app. A tale scopo, scegliere il pulsante **Avvia** (![pulsante Avvia](../ide/media/VSIDE_StartButton.png)) sulla barra degli strumenti o il tasto **F5**. In alternativa, dal menu scegliere **Debug**, **Avvia debug**.
+1. Avviare l'app. A tale scopo, scegliere il pulsante **Avvia** (![pulsante Avvia](../ide/media/VSIDE_StartButton.png)) sulla barra degli strumenti o il tasto **F5**. In alternativa, dal menu scegliere **Debug** > **Avvia debug**.
 
   ![screenshot](../ide/media/VSIDE_Tour_RunButton.png)
 
@@ -248,7 +251,7 @@ Scegliendo un servizio nella pagina **Servizi connessi** viene avviata la proced
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Office 365 e in siti Web. Per aprire Esplora server, scegliere **Visualizza**, **Esplora server** dal menu principale. Per altre informazioni su Esplora server, vedere [Add new connections](../data-tools/add-new-connections.md) (Aggiungere nuove connessioni).
+**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Office 365 e in siti Web. Per aprire Esplora server, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni su Esplora server, vedere [Add new connections](../data-tools/add-new-connections.md) (Aggiungere nuove connessioni).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
@@ -257,6 +260,7 @@ Scegliendo un servizio nella pagina **Servizi connessi** viene avviata la proced
 ![Esplora oggetti di SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Estendere Visual Studio
+
 Se Visual Studio non include la funzionalità esatta di cui si ha bisogno, è possibile aggiungerla. È possibile personalizzare l'IDE in base al flusso e allo stile di lavoro personali, aggiungere il supporto per strumenti esterni non ancora integrati in Visual Studio e modificare le funzionalità esistenti per aumentare la produttività. Per trovare la versione più recente degli strumenti di estendibilità di Visual Studio (VS SDK), vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 È possibile usare .NET Compiler Platform (Roslyn) per scrivere i propri analizzatori di codice e generatori di codice. Tutto ciò che serve è disponibile nella pagina di [Roslyn](https://github.com/dotnet/Roslyn).

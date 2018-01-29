@@ -10,48 +10,43 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5e257d8d90d21c4298b92f7bc4b923ed5a720c85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
-Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il debug del codice in Visual Studio in modo più rapido ed efficiente.
+Questo argomento contiene vari suggerimenti per scrivere, esplorare ed eseguire il debug del codice in modo più rapido ed efficiente.
 
-Per altre informazioni sui tasti di scelta rapida comuni, vedere [Tips and Tricks](../ide/tips-and-tricks-for-visual-studio.md) (Suggerimenti). Per un elenco più completo vedere [Identifying and Customizing Keyboard Shortcuts](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) (Identificazione e personalizzazione dei tasti di scelta rapida) e [Default Keyboard Shortcuts](../ide/default-keyboard-shortcuts-in-visual-studio.md) (Tasti di scelta rapida predefiniti).
-
-## <a name="accessing-visual-studio-tools"></a>Accesso agli strumenti di Visual Studio
-
-È possibile accedere rapidamente al prompt dei comandi per gli sviluppatori o a un altro strumento di Visual Studio se lo si aggiunge nel menu di avvio o nella barra delle applicazioni.
-
-1. In Esplora risorse, passare a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
-
-1. Fare clic con il pulsante destro del mouse o aprire il menu di scelta rapida per visualizzare il **prompt dei comandi per sviluppatori**, quindi scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
+Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativi alla tastiera](../ide/tips-and-tricks-for-visual-studio.md). Per un elenco completo dei tasti di scelta rapida, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) e [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="writing-code"></a>Scrittura di codice
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Uso di applicazioni di esempio**. È possibile velocizzare lo sviluppo di applicazioni scaricando e installando applicazioni di esempio da [Microsoft Developer Network](https://code.msdn.microsoft.com/). È inoltre possibile capire un particolare concetto di programmazione o tecnologico, scaricando e esplorando un Pacchetto di esempi di un'area.
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, in **Visual Studio 2017 versione 15.6 Preview 2** e versioni successive, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o contrarre rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** e **Comprimi selezione** oppure premendo **CTRL**+**W** e **CTRL**+**MAIUSC**  + **W** (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive).
 
 - **Uso di IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) (Uso di IntelliSense).
 
 - **Modifica dell'inserimento automatico delle opzioni IntelliSense durante l'immissione del codice**. Se si attiva la modalità di suggerimento di IntelliSense, è possibile specificare che le opzioni IntelliSense vengano inserite solo se si scelgono in modo esplicito.
 
-     Per abilitare la modalità di suggerimento, scegliere la combinazione di tasti **CTRL** + **ALT** + **BARRA SPAZIATRICE** o scegliere **Modifica**, **IntelliSense**, **Attiva/disattiva modalità di terminazione** nella barra dei menu.
+     Per abilitare la modalità di suggerimento, scegliere la combinazione di tasti **CTRL**+**ALT**+**BARRA SPAZIATRICE** o scegliere **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** nella barra dei menu.
 
-- **Uso di frammenti di codice**. È possibile utilizzare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
+- **Uso di frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
-     Per inserire un frammento di codice, scegliere **Modifica**, **IntelliSense**, **Inserisci frammento di codice** nella barra dei menu o aprire il menu di scelta rapida in un file e scegliere **Inserisci frammento di codice**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
+     Per inserire un frammento di codice, scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** o **Racchiudi tra** o aprire il menu di scelta rapida in un file e scegliere **Snippet** > **Inserisci frammento** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
-- **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando l'icona Lampadina ![Icona Lampadina piccola](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o premendo **ALT+INVIO** o **CTRL+.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
+- **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando l'icona Lampadina ![Icona Lampadina piccola](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o premendo **ALT**+**INVIO** o **CTRL**+**.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
 
 - **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.
 
-    Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere **ALT+F12** o aprire il menu di scelta rapida per l'elemento e scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
+    Per aprire una definizione in una finestra popup, evidenziare l'elemento e quindi premere **ALT**+**F12** o aprire il menu di scelta rapida per l'elemento e scegliere **Visualizza definizione**. Per aprire una definizione in una finestra di codice separata, aprire il menu di scelta rapida per l'elemento e quindi scegliere **Vai a definizione**.
+
+- **Uso di applicazioni di esempio**. È possibile velocizzare lo sviluppo di applicazioni scaricando e installando applicazioni di esempio da [Microsoft Developer Network](https://code.msdn.microsoft.com/). È inoltre possibile capire un particolare concetto di programmazione o tecnologico, scaricando e esplorando un Pacchetto di esempi di un'area.
 
 ## <a name="navigating-within-your-code"></a>Spostamento all'interno del codice
 
@@ -59,11 +54,11 @@ Per altre informazioni sui tasti di scelta rapida comuni, vedere [Tips and Trick
 
 - **Inserimento di un segnalibro per le righe di codice**. È possibile utilizzare i segnalibri per passare rapidamente alle righe di codice specifiche in un file.
 
-    Per impostare un segnalibro scegliere **Modifica**, **Segnalibri**, **Attiva/disattiva segnalibro** nella barra dei menu. È possibile visualizzare tutti i segnalibri per una soluzione nella finestra **Segnalibri**. Per altre informazioni, vedere [Setting Bookmarks in Code](../ide/setting-bookmarks-in-code.md) (Impostazione di segnalibri nel codice).
+    Per impostare un segnalibro scegliere **Modifica** > **Segnalibri** > **Attiva/disattiva segnalibro** nella barra dei menu. È possibile visualizzare tutti i segnalibri per una soluzione nella finestra **Segnalibri**. Per altre informazioni, vedere [Setting Bookmarks in Code](../ide/setting-bookmarks-in-code.md) (Impostazione di segnalibri nel codice).
 
 - **Ricerca delle definizioni dei simboli in un file**. Sebbene sia possibile cercare all'interno di una soluzione definizioni di simboli e nomi file, i risultati della ricerca non includono gli spazi dei nomi o le variabili locali.
 
-   Per accedere a questa funzionalità, scegliere **Modifica**, **Passa a** nella barra dei menu.
+   Per accedere a questa funzionalità, scegliere **Modifica** > **Passa a** nella barra dei menu.
 
 - **Esplorazione della struttura generale del codice**. In **Esplora soluzioni** è possibile cercare e visualizzare le classi e i relativi tipi e membri nei progetti. È anche possibile cercare simboli, visualizzare la gerarchia di chiamata di un metodo, trovare i riferimenti dei simboli ed eseguire altre attività. Se si sceglie un elemento di codice in **Esplora soluzioni**, il file associato viene visualizzato nella scheda **Anteprima** e il cursore si sposta sull'elemento nel file. Per altre informazioni, vedere [Viewing the Structure of Code](../ide/viewing-the-structure-of-code.md) (Visualizzazione della struttura del codice).
 
@@ -91,7 +86,7 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
 - **Impostazione di punti di interruzione temporanei**. È possibile creare un punto di interruzione temporaneo nella riga di codice corrente e avviare contemporaneamente il debugger. Quando si raggiunge la riga di codice, viene attivata la modalità di interruzione del debugger. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger).
 
-    Per usare questa funzionalità, scegliere la combinazione di tasti **CTRL** + **F10** o aprire il menu di scelta rapida per la riga di codice in corrispondenza della quale si intende interrompere l'esecuzione e quindi scegliere **Esegui fino al cursore**.
+    Per usare questa funzionalità, scegliere la combinazione di tasti **CTRL**+**F10** o aprire il menu di scelta rapida per la riga di codice in corrispondenza della quale si intende interrompere l'esecuzione e quindi scegliere **Esegui fino al cursore**.
 
 - **Spostamento del punto di esecuzione durante il debug**. È possibile spostare il punto di esecuzione corrente in un'altra sezione del codice e quindi riavviare il debug da tale punto. Questa tecnica è utile se si desidera eseguire il debug di una sezione di codice senza dover ricreare tutti i passaggi necessari per raggiungere la sezione. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger).
 
@@ -105,9 +100,17 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
      Per altre informazioni su comandi aggiuntivi, vedere [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md) (Alias di comandi di Visual Studio).
 
+## <a name="accessing-visual-studio-tools"></a>Accesso agli strumenti di Visual Studio
+
+È possibile accedere rapidamente al prompt dei comandi per gli sviluppatori o a un altro strumento di Visual Studio se lo si aggiunge nel menu di avvio o nella barra delle applicazioni.
+
+1. In Esplora risorse, passare a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+
+1. Fare clic con il pulsante destro del mouse o aprire il menu di scelta rapida per visualizzare il **prompt dei comandi per sviluppatori**, quindi scegliere **Aggiungi a Start** o **Aggiungi alla barra delle applicazioni**.
+
 ## <a name="managing-files-toolbars-and-windows"></a>Gestione di file, barre degli strumenti e finestre
 
- In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che sia necessario lavorare in più file di codice e spostarsi tra diverse finestre degli strumenti. I suggerimenti riportati di seguito consentono di organizzare al meglio le attività da eseguire.
+In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che sia necessario lavorare in più file di codice e spostarsi tra diverse finestre degli strumenti. I suggerimenti riportati di seguito consentono di organizzare al meglio le attività da eseguire.
 
 - **Blocco della visualizzazione dei file usati di frequente nell'editor**. È possibile bloccare i file nel lato sinistro della scheda in modo che rimangano visibili indipendentemente dal numero di file aperti nell'editor.
 

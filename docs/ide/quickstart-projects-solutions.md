@@ -10,12 +10,13 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Guida introduttiva: Progetti e soluzioni
 
@@ -62,7 +63,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto "QuickDate" appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome **App.config**.
 
    > [!NOTE]
-   > Se **Visual C#** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro **Sviluppo per desktop .NET**. Per installarlo facilmente fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nella parte inferiore del riquadro sinistro. Viene aperto il **Programma di installazione di Visual Studio** nel quale è possibile scegliere il carico di lavoro appropriato e quindi il pulsante **Modifica**.
+   > Se **Visual C#** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro **Sviluppo per desktop .NET**. Per installarlo facilmente, scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo. Dopo l'avvio del **programma di installazione di Visual Studio**, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
 
    ![Collegamento Apri il programma di installazione di Visual Studio](media/quickstart-projects-open-installer.png)
 

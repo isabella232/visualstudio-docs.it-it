@@ -1,45 +1,51 @@
 ---
 title: "Debug in modalità mista per Python in Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 07/12/2017
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1a36b387ad9fd8a2212cfaceefbd454edf33dde
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: a8ad93cd9fd7e8f4e9e738fe22a460fe9d80fd32
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Debug di codice Python e C++ in contemporanea
 
-La maggior parte dei normali debugger Python supporta solo il debug di codice Python. Nella pratica, tuttavia, Python viene usato in combinazione con C o C++ in scenari che richiedono prestazioni elevate o la possibilità di richiamare direttamente le API della piattaforma. Per un esempio, vedere [Creazione di un'estensione C++ per Python](cpp-and-python.md). Quando si carica un progetto Python, Visual Studio offre funzionalità di debug in modalità mista simultanee e integrate per Python e C/C++ nativo, tra cui:
+La maggior parte dei normali debugger Python supporta solo il debug di codice Python. Nella pratica, tuttavia, Python viene usato in combinazione con C o C++ in scenari che richiedono prestazioni elevate o la possibilità di richiamare direttamente le API della piattaforma. Per una procedura dettagliata, vedere [Creazione di un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md).
+
+Visual Studio offre funzionalità di debug in modalità mista simultaneo integrato per codice Python e C/C++ nativo, a condizione di selezionare l'opzione **Strumenti di sviluppo nativi Python** per il carico di lavoro Sviluppo Python nel programma di installazione di Visual Studio.
+
+Le funzionalità di debug in modalità mista includono le seguenti, come illustrato in questo articolo:
 
 - Stack di chiamate combinato
 - Passaggio tra codice Python e codice nativo
 - Punti di interruzione in entrambi i tipi di codice
 - Visualizzazione delle rappresentazioni di Python di oggetti nei frame nativi e viceversa
+- Debug all'interno del contesto del progetto Python o del progetto C++
 
-![Debug in modalità mista](media/mixed-mode-debugging.png) 
+![Debug in modalità mista](media/mixed-mode-debugging.png)
 
-Per un'introduzione a compilazione, test e debug dei moduli C nativi con Visual Studio, vedere [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: creazione di moduli nativi) (youtube.com, 9m9s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
+Per un'introduzione video a compilazione, test e debug dei moduli C nativi con Visual Studio, vedere [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Approfondimento: creazione di moduli nativi) (youtube.com, 9m9s). Il video è applicabile sia a Visual Studio 2015 che a Visual Studio 2017.
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
 
 > [!Note]
 > Il debug in modalità mista non è disponibile in Python Tools for Visual Studio 1.x.
 
-## <a name="enabling-mixed-mode-debugging"></a>Abilitazione del debug in modalità mista
+## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Abilitare il debug in modalità mista in un progetto Python
 
 1. Fare clic con il pulsante destro del mouse sul progetto Python in Esplora soluzioni, scegliere **Proprietà**, selezionare la scheda **Debug** e quindi selezionare **Abilita debug codice nativo** . Questa opzione abilita la modalità mista per tutte le sessioni di debug.
 
@@ -48,7 +54,7 @@ Per un'introduzione a compilazione, test e debug dei moduli C nativi con Visual 
     > [!Tip]
     > Quando si abilita il debug del codice nativo, è possibile che la finestra di output di Python venga chiusa immediatamente al completamento del programma senza visualizzare il messaggio "Premere un tasto qualsiasi per continuare". Per specificare una pausa, aggiungere l'opzione `-i` al campo **Esegui > Argomenti dell'interprete** della scheda **Debug** quando si abilita il debug del codice nativo. Questo argomento fa passare l'interprete di Python in modalità interattiva al termine del codice e attende che vengano premuti CTRL+Z, INVIO per uscire.
 
-1. Quando si collega il debugger in modalità mista a un processo esistente (**Debug > Connetti a processo**), selezionare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice**. Impostare quindi l'opzione **Esegui il debug di questi tipi di codice** e selezionare sia **Nativo** che **Python** nell'elenco:
+1. Quando si collega il debugger in modalità mista a un processo esistente (**Debug > Connetti a processo**), usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice**. Impostare quindi l'opzione **Esegui il debug di questi tipi di codice** e selezionare sia **Nativo** che **Python** nell'elenco:
 
     ![Selezione dei tipi di codice nativo e Python](media/mixed-mode-debugging-code-type.png)
 
@@ -58,20 +64,29 @@ Per un'introduzione a compilazione, test e debug dei moduli C nativi con Visual 
 
 1. Quando si avvia il debug in modalità mista per la prima volta, è possibile che venga visualizzata una finestra di dialogo **Simboli Python necessari**(vedere [Simboli per il debug in modalità mista](debugging-symbols-for-mixed-mode.md)). È necessario installare i simboli una sola volta per qualsiasi ambiente Python specificato. I simboli vengono inclusi automaticamente se si installa il supporto di Python tramite il programma di installazione di Visual Studio 2017.
 
-1. Può anche essere necessario avere a disposizione il codice sorgente per Python. Per Python standard, visitare [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), scaricare l'archivio appropriato per la versione ed estrarlo in una cartella. È quindi possibile fare in modo che Visual Studio punti a file specifici nella cartella ogni volta che verrà richiesto.
+1. Per rendere disponibile il codice sorgente per Python standard durante il debug, visitare [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), scaricare l'archivio appropriato per la versione ed estrarlo in una cartella. È quindi possibile fare in modo che Visual Studio punti a file specifici nella cartella ogni volta che verrà richiesto.
 
-### <a name="enable-mixed-mode-debugging-in-a-c-project"></a>Abilitare il debug in modalità mista in un progetto C++
+## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Abilitare il debug in modalità mista in un progetto C/C++
 
-Il debug in modalità mista, come descritto in questo articolo, è abilitato solo se in Visual Studio è stato caricato un progetto Python. Tale progetto determina la modalità di debug di Visual Studio, rendendo disponibile l'opzione di modalità mista.
+Visual Studio 2017 (versione 15.5 e versioni successive) supporta il debug in modalità mista da un progetto C/C++, ad esempio quando si [incorpora codice Python in un'altra applicazione, come descritto in python.org](https://docs.python.org/3/extending/embedding.html). Per abilitare il debug in modalità mista, configurare il progetto C/C++ per avviare il "Debug Python/nativo":
 
-Se, tuttavia, è stato caricato un progetto C++, come avviene quando [Python viene incorporato in un'altra applicazione come descritto in python.org](https://docs.python.org/3/extending/embedding.html), Visual Studio usa il debugger C++ nativo che non supporta il debug in modalità mista. Tuttavia, è possibile collegare il debugger separatamente:
+1. Fare clic con il pulsante destro del mouse sul progetto C/C++ in Esplora soluzioni e scegliere **Proprietà**.
+1. Selezionare la scheda **Debug**, selezionare "Debug Python/nativo" in **Debugger da avviare** e selezionare **OK**.
+
+    ![Selezione del debugger Python/nativo in un progetto C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+Quando si usa questo metodo, tenere presente che non è possibile eseguire il debug dell'utilità di avvio di `py.exe` stessa, perché genera un processo figlio `python.exe` a cui non verrà collegato il debugger. Se si vuole avviare `python.exe` direttamente con argomenti, modificare l'opzione **Comando** nelle proprietà di Debug Python/nativo (illustrate nella figura precedente) per specificare il percorso completo di `python.exe`, quindi specificare gli argomenti in **Argomenti del comando**.
+
+### <a name="attaching-the-mixed-mode-debugger"></a>Collegare il debugger in modalità mista
+
+Per tutte le versioni precedenti di Visual Studio, il debug in modalità mista diretto viene abilitato solo quando si avvia un progetto Python in Visual Studio, perché i progetti C/C++ usano solo il debugger nativo. È comunque possibile collegare il debugger separatamente:
 
 1. Avviare il progetto C++ senza eseguire il debug (**Debug > Avvia senza eseguire debug** o CTRL + F5).
 1. Selezionare **Debug > Connetti a processo**. Nella finestra di dialogo visualizzata selezionare il processo appropriato, quindi usare il pulsante **Seleziona** per aprire la finestra di dialogo **Seleziona tipo di codice** in cui è possibile selezionare Python:
 
     ![Selezione di Python come tipo di debug quando si allega un debugger](media/mixed-mode-debugging-attach-type.png)
 
-1. Selezionare **OK** per chiudere la finestra di dialogo e quindi **Allega** per avviare il debugger. 
+1. Selezionare **OK** per chiudere la finestra di dialogo e quindi **Allega** per avviare il debugger.
 1. Potrebbe essere necessario introdurre una pausa o un ritardo nell'app C++ per assicurarsi che non chiami il codice Python di cui si vuole eseguire il debug prima di avere la possibilità di collegare il debugger.
 
 ## <a name="mixed-mode-specific-features"></a>Funzionalità specifiche della modalità mista
@@ -124,7 +139,7 @@ Tipi C che mostrano i nodi "[Python View]" (Visualizzazione Python), se abilitat
 
 Il nodo "[Python View]"(Visualizzazione Python) non viene visualizzato automaticamente per i tipi creati dall'utente. Quando si creano estensioni per Python 3. x, questo in genere non è un problema perché qualsiasi oggetto ha fondamentalmente un campo `ob_base` di uno dei tipi indicati in precedenza e quindi il nodo "[Vista Python]" viene visualizzato.
 
-Per Python 2. x, tuttavia, ogni tipo di oggetto dichiara in genere l'intestazione come raccolta di campi inline e non esiste alcuna associazione tra i tipi personalizzati creati e `PyObject` a livello del sistema dei tipi nel codice C/C++. Per abilitare i nodi "[Vista Python]"per questi tipi personalizzati, modificare `PythonDkm.natvis` nella [directory di installazione di Python Tools](installation.md#install-locations) e aggiungere un altro elemento nel codice XML per lo struct C o la classe C++.
+Per Python 2. x, tuttavia, ogni tipo di oggetto dichiara in genere l'intestazione come raccolta di campi inline e non esiste alcuna associazione tra i tipi personalizzati creati e `PyObject` a livello del sistema dei tipi nel codice C/C++. Per abilitare i nodi "[Vista Python]"per questi tipi personalizzati, modificare `PythonDkm.natvis` nella [directory di installazione di Python Tools](installing-python-support-in-visual-studio.md#install-locations) e aggiungere un altro elemento nel codice XML per lo struct C o la classe C++.
 
 Un'opzione alternativa (e migliore) consiste nel seguire la proposta [PEP 3123](http://www.python.org/dev/peps/pep-3123/) e usare un campo `PyObject ob_base;` esplicito invece di `PyObject_HEAD`, sebbene ciò non sia sempre possibile per motivi di compatibilità con le versioni precedenti.
 

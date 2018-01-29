@@ -12,13 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Convenzioni di denominazione per EditorConfig
 
@@ -74,7 +76,7 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - protected\_internal o protected_friend
 
 > [!NOTE]
-> È necessario specificare un livello di accessibilità come parte della convenzione di denominazione, in caso contrario la convenzione di denominazione potrebbe essere ignorata.
+> Non specificare un livello di accessibilità come parte della convenzione di denominazione, se l'accessibilità non è applicabile al tipo di simbolo di destinazione. Ad esempio, per i parametri non sono previsti livelli di accessibilità. Se si specifica un livello di accessibilità per una convenzione di denominazione di parametri, la regola di denominazione non funzionerà correttamente.
 
 ### <a name="symbol-modifiers"></a>Modificatori dei simboli
 

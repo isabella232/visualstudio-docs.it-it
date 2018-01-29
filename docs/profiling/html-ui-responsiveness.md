@@ -4,31 +4,29 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -42,9 +40,9 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 -   Gli aggiornamenti visivi che sono meno frequenti del previsto. Ciò si verifica se il thread UI è troppo occupato a mantenere una frequenza dei fotogrammi uniforme. Ad esempio, se il thread UI è occupato, i fotogrammi potrebbero essere rimossi. Il lavoro di alcuni thread non UI, ad esempio le richieste di rete, la decodifica delle immagini e i disegni, può anche limitare la frequenza degli aggiornamenti visivi. (Non tutti i disegni vengono eseguiti nel thread UI).  
   
 ##  <a name="RunningProfiler"></a> Eseguire lo strumento della velocità di risposta dell'interfaccia HTML  
- È possibile usare lo strumento Velocità di risposta interfaccia utente HTML quando un'app UWP o Windows 8.1 funzionante è aperta in Visual Studio o è installata in un computer che esegue Windows 8 o versioni successive.  
+ In presenza di un'app UWP funzionante aperta in Visual Studio, è possibile usare lo strumento Velocità di risposta interfaccia utente HTML.  
   
-1.  Se esegui l'app da Visual Studio, nell'elenco **Avvia debug** sulla barra degli strumenti **Standard** scegli una destinazione di distribuzione, ad esempio uno degli emulatori Windows Phone, **Computer locale**, **Simulatore**o **Computer remoto**.  
+1.  Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** sulla barra degli strumenti **Standard** scegliere una destinazione di distribuzione come **Computer locale** o **Dispositivo**.  
   
 2.  Scegliere **Profiler prestazioni** dal menu **Debug**.  
   

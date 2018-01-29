@@ -10,14 +10,18 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.openlocfilehash: cfcb85704302303704ef9b4bb1affc60031793d9
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+dev_langs:
+- CSharp
+ms.workload:
+- aspnet
+- dotnetcore
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida rapida: Usare Visual Studio per creare la prima app Web ASP.NET
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio, sarà possibile creare una semplice Applicazione Web ASP.NET Core C#. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
 
@@ -27,11 +31,11 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Il tipo d
 
 1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto...**.
+1. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
 1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual C#**, quindi selezionare **.NET Core**. Nel riquadro centrale, scegliere **Applicazione Web ASP.NET Core**, quindi scegliere **OK**.
 
-     Se non viene visualizzato il modello del progetto **.NET Core**, chiudere la finestra di dialogo **Nuovo progetto** e dalla barra dei menu in alto, scegliere **Strumenti**, **Ottieni strumenti e Funzionalità...**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
+     Se non viene visualizzata la categoria dei modelli di progetto **.NET Core** scegliere il collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 
      ![Carico di lavoro ASP.NET nel programma di installazione di Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
@@ -61,7 +65,7 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Il tipo d
  }
  ```
 
-1. Verranno visualizzate due sottolineature ondulate in **Ambiente** e **Stringa**, poiché questi tipi non sono inclusi nell'ambito. Aprire la barra degli strumenti **Elenco errori** per visualizzare gli errori. (Se non viene visualizzata la barra degli strumenti **Elenco errori**, scegliere **Visualizza**, **Elenco errori** dalla barra dei menu in alto.)
+1. Verranno visualizzate due sottolineature ondulate in **Ambiente** e **Stringa**, poiché questi tipi non sono inclusi nell'ambito. Aprire la barra degli strumenti **Elenco errori** per visualizzare gli errori. (Se non viene visualizzata la barra degli strumenti **Elenco errori**, scegliere **Visualizza** > **Elenco errori** dalla barra dei menu in alto.)
 
    ![Elenco errori](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -69,7 +73,7 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Il tipo d
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
-1. Premere **Ctrl+F5** per eseguire l'applicazione e aprirla in un Web browser.
+1. Premere **CTRL**+**F5** per eseguire l'applicazione e aprirla in un Web browser.
 
 1. Nella parte superiore del sito web, scegliere **Informazioni su** per visualizzare il messaggio della directory aggiunto in precedenza nel metodo `OnGet()` per la pagina **Informazioni su**.
 
@@ -82,5 +86,6 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 ## <a name="see-also"></a>Vedere anche
 
+[Introduzione a C# e ad ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)  
 [Introduzione a C# e Visual Basic con Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
 [Introduzione all'uso di pagine Razor in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)

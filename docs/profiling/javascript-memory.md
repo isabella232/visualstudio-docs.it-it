@@ -4,14 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: "49"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.
@@ -48,36 +46,14 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
   
      Gli oggetti non creati nel codice dell'app vengono esclusi dal filtro. Puoi anche filtrare i dati in base al nome dell'oggetto.  
   
- Per un'esercitazione che consente di eseguire in modo guidato il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
-  
- In questo argomento  
-  
- [Eseguire JavaScript Memory Analyzer](#Run)   
- [Controllare l'utilizzo della memoria](#Check)   
- [Isolate a memory leak](#Isolate)   
- [Visualizzare il riepilogo dell'utilizzo della memoria in tempo reale](#LiveMemory)   
- [View a snapshot summary](#SnapshotSummary)   
- [Visualizzare i dettagli dello snapshot](#SnapshotDetails)   
- [Visualizzare le differenze di uno snapshot](#SnapshotDiff)   
- [Visualizzare gli oggetti in base al dominatore](#FoldObjects)   
- [Filtrare i dati in base all'identificatore](#Filter)   
- [Trovare un oggetto nella struttura ad albero di oggetti](#ShowInRootsView)   
- [Visualizzare riferimenti a oggetti condivisi](#References)   
- [Mostrare oggetti incorporati](#BuiltInValues)   
- [Salvare file delle sessioni di diagnostica](#Save)   
- [Associate source code with memory usage data](#JSConsoleCommands)   
- [Suggerimenti per l'identificazione dei problemi di memoria](#Tips)  
-  
 ##  <a name="Run"></a> Eseguire JavaScript Memory Analyzer  
- È possibile usare Memory Analyzer quando un'app UWP funzionante è aperta in Visual Studio o installata in un computer che esegue [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versione successiva.  
+ È possibile usare l'analizzatore di memoria quando un'app UWP funzionante è aperta in Visual Studio.
   
 #### <a name="to-run-the-memory-analyzer"></a>Per eseguire l'analizzatore di memoria  
   
 1.  Aprire Visual Studio.  
   
-2.  Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** della barra degli strumenti **Standard** scegliere la destinazione del debug per il progetto: un emulatore Windows Phone o, per un'app UWP, **Computer locale**, **Simulatore**o **Computer remoto**.  
-  
-     Per ulteriori informazioni su queste opzioni, vedi [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** della barra degli strumenti **Standard** scegliere la destinazione di debug per il progetto, ovvero **Computer locale** o **Dispositivo**.  
   
 3.  Nella barra dei menu scegliere **Debug** e quindi **Profiler prestazioni...**.  
   
@@ -400,6 +376,3 @@ if (performance && performance.mark) {
          Questi comandi consentono di isolare i problemi che non possono essere isolati acquisendo manualmente uno snapshot heap.  
   
     -   Creare un oggetto test e analizzarlo nelle visualizzazioni di JavaScript Memory Analyzer, ad esempio la visualizzazione Tipi. Ad esempio, puoi collegare un oggetto di grandi dimensioni a un altro oggetto per vedere se un oggetto o un elemento specifico è stato sottoposto a Garbage Collection.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

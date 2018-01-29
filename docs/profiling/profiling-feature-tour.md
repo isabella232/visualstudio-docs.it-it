@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Panoramica delle funzionalità di profilatura
 
@@ -32,7 +35,7 @@ Durante il debug è possibile usare la finestra **Strumenti di diagnostica** per
 
 ![Visualizzazione di riepilogo di Strumenti diagnostici](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Riepilogo di Strumenti di diagnostica")
 
-La finestra **Strumenti di diagnostica** è spesso il modo migliore per profilare le app, ma è anche possibile effettuare una valutazione finale delle app. Per altre informazioni sui diversi approcci, vedere [Esecuzione degli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+La finestra **Strumenti di diagnostica** è spesso il modo migliore per profilare le app, ma per le build di versione è anche possibile effettuare un'analisi dopo che l'app è terminata. Per altre informazioni sui diversi approcci, vedere [Esecuzione degli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Per informazioni sugli strumenti di profilatura supportati per i diversi tipi di app, vedere [Quale strumento si deve usare?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
@@ -119,13 +122,13 @@ Quando si seleziona un periodo di tempo nei grafici e si sceglie **Visualizza de
 
 ## <a name="analyze-performance-javascript"></a>Analizzare le prestazioni (JavaScript)
 
-Per le app HTML universali di Windows è possibile usare lo strumento Memoria JavaScript e lo strumento Velocità di risposta interfaccia utente HTML.
+Per le app UWP è possibile usare lo strumento Memoria JavaScript e lo strumento Velocità di risposta interfaccia utente HTML.
 
 Lo strumento Memoria JavaScript è simile allo strumento Utilizzo memoria disponibile per altri tipi di applicazioni. È possibile usare questo strumento per comprendere in che modo viene usata la memoria e individuare le perdite di memoria nell'applicazione. Per maggiori dettagli sullo strumento, vedere [Memoria JavaScript](../profiling/javascript-memory.md).
 
 ![Strumento di profilatura Memoria JavaScript](../profiling/media/diagjsmemory.png "Finestra di dialogo dello strumento Memoria JavaScript")
 
-Per diagnosticare la velocità di risposta dell'interfaccia utente, i tempi di caricamento lenti e gli aggiornamenti visivi lenti nelle app HTML universali di Windows, usare lo strumento Velocità di risposta interfaccia utente HTML. L'uso è simile a quello dello strumento Sequenza temporale dell'applicazione per altri tipi di applicazioni. Per altre informazioni, vedere [Velocità di risposta dell'interfaccia utente HTML](../profiling/html-ui-responsiveness.md).
+Per diagnosticare la velocità di risposta dell'interfaccia utente, i tempi di caricamento lenti e gli aggiornamenti visivi lenti nelle app UWP, usare lo strumento Velocità di risposta interfaccia utente HTML. L'uso è simile a quello dello strumento Sequenza temporale dell'applicazione per altri tipi di applicazioni. Per altre informazioni, vedere [Velocità di risposta dell'interfaccia utente HTML](../profiling/html-ui-responsiveness.md).
 
 ![Strumento di profilatura Velocità di risposta interfaccia utente HTML](../profiling/media/diaghtmlresp.png "Finestra di dialogo dello strumento Velocità di risposta interfaccia utente HTML")
 
@@ -151,7 +154,7 @@ Se sono necessarie funzionalità, ad esempio la strumentazione, che non sono att
 
 Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Studio e i diversi tipi di progetto con cui possono essere usati:
   
-|Strumento di prestazioni|Desktop di Windows|Windows Store/universale|ASP.NET/ASP.NET Core|  
+|Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|  
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì (no per .NET Core/ASP.NET Core)|  
