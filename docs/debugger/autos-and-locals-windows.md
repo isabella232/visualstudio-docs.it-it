@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Controllare le variabili in auto e variabili locali Windows in Visual Studio
 Il **Auto** finestra (durante il debug **CTRL + ALT + V, A**, o **Debug > Windows > Auto**) e **variabili locali** finestra (durante il debug **CTRL + ALT + V, L**, o **Debug > Windows > variabili locali**) sono molto utili quando si desidera visualizzare i valori delle variabili durante il debug. La finestra **Variabili locali** mostra le variabili definite nell'ambito locale, che corrisponde in genere alla funzione o al metodo attualmente in esecuzione. La finestra **Auto** mostra le variabili usate attorno alla riga corrente (il punto in cui il debugger viene arrestato). Esattamente le variabili da visualizzare in questa finestra è diverso in lingue diverse. Vedere [What variables appear in the Autos Window?](#bkmk_whatvariables) più avanti.  
@@ -33,14 +35,14 @@ Per altre informazioni sul debug di base, vedere [Getting Started with the Debug
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Oggetti nelle finestre Variabili locali e Auto  
 Le matrici e gli oggetti vengono visualizzati nelle finestre Variabili locali e Auto come controlli ad albero. Fare clic sulla freccia a sinistra del nome della variabile per espandere la visualizzazione e mostrare i campi e le proprietà. Ecco un esempio di oggetto [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) nella finestra **Variabili locali** :  
   
-![Variabili locali &#45; FileStream](../debugger/media/locals-filestream.png "FileStream di variabili locali")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a> Quali variabili vengono visualizzate nella finestra Auto?  
  È possibile usare la finestra **Auto** nel codice C#, Visual Basic e C++. La finestra **Auto** non supporta JavaScript o F#.  
   
  In C# e Visual Basic la finestra **Auto** mostra tutte le variabili usate nella riga corrente o precedente. Se ad esempio si dichiarano quattro variabili impostate nel modo seguente:
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ Le matrici e gli oggetti vengono visualizzati nelle finestre Variabili locali e 
 
  Se si imposta un punto di interruzione nella riga `c = 3`e si esegue il debugger, quando l'esecuzione si arresta la finestra **Auto** risulterà analoga alla seguente:  
 
- ![Auto &#45; CSharp](../debugger/media/autos-csharp.png "Auto CSharp")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  Si noti che il valore di `c` è 0 perché la riga `c = 3` non è ancora stata eseguita.  
 
@@ -73,7 +75,7 @@ Le matrici e gli oggetti vengono visualizzati nelle finestre Variabili locali e 
 
  Se si imposta un punto di interruzione nella riga `e = 5;` e si esegue il debugger, quando l'esecuzione si arresta la finestra **Auto** risulterà analoga alla seguente:  
   
- ![Auto &#45; Cplus](../debugger/media/autos-cplus.png "Auto Cplus")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Si noti che la variabile e non è inizializzata perché il codice nella riga `e = 5;` non è ancora stato eseguito.  
   
@@ -84,7 +86,7 @@ Le matrici e gli oggetti vengono visualizzati nelle finestre Variabili locali e 
   
  Il codice C# seguente aggiunge i valori restituiti di due funzioni:  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  

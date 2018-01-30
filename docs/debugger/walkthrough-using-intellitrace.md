@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10d3e6b3e5b47fc481a573a365b4423e685625f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ebc3067ea154c8b9a5f6e180f397c5421f2be470
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Visualizzare gli eventi con IntelliTrace in Visual Studio
 È possibile usare IntelliTrace per raccogliere informazioni su eventi o categorie di eventi specifici o su singole chiamate di funzione oltre agli eventi. I passaggi seguenti illustrano come eseguire quest'operazione.  
@@ -33,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
 1.  Creare un'applicazione console C#. Aprire il file Program.cs e aggiungere l’istruzione `using` seguente:  
   
-    ```CSharp  
+    ```csharp  
     using System.IO;  
     ```  
   
 2.  Creare un <xref:System.IO.FileStream> nel metodo Main, leggere da esso, chiuderlo ed eliminare il file. Aggiungere un'altra riga per disporre di un posto per impostare un punto di interruzione:  
   
-    ```CSharp  
+    ```csharp  
     static void Main(string[] args)  
     {  
         FileStream fs = File.Create("WordSearchInputs.txt");  
@@ -66,13 +68,13 @@ ms.lasthandoff: 12/22/2017
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTrace &#45; Update1](../debugger/media/intellitrace-update1.png "Update1 di IntelliTrace")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 3.  Selezionare l'evento per espandere i dettagli.  
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![IntelliTraceUpdate1 &#45; SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
   
      È possibile scegliere il collegamento al percorso per aprire il file. Se il nome del percorso completo non è disponibile, viene visualizzata la finestra di dialogo **Apri file** .  
   
@@ -80,7 +82,7 @@ ms.lasthandoff: 12/22/2017
   
      La screenshot che segue è presa da Visual Studio 2015 Update 1.  
   
-     ![HistoricalDebugging &#45; Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
 4.  Se il bug non viene trovato, provare ad analizzare altri eventi. È anche possibile che IntelliTrace registri le informazioni sulle chiamate in modo da eseguire le chiamate alle funzioni. 
   

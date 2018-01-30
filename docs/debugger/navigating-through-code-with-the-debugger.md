@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il Debugger di Visual Studio
 Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il codice nel debugger e in questo modo sarà più veloce e semplice individuare e risolvere i problemi nell'app. Durante lo spostamento di codice nel debugger, è possibile controllare lo stato dell'app o altre informazioni sul relativo flusso di esecuzione.  
@@ -32,13 +35,13 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
  La freccia verde viene inoltre avviato il debugger (uguale a **F5**).  
   
- ![DBG &#95; Nozioni di base &#95; Inizio &#95; debug](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Alcuni metodi alternativi che è possibile avviare l'app con il debugger collegato includono **F11** ([passaggio nel codice](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([Esegui istruzione/routine di codice](#BKMK_Step_over_Step_out)), oppure utilizzando **Esegui fino al cursore**.  Vedere le altre sezioni in questo argomento per informazioni su operazioni di queste opzioni.  
   
  Quando esegue il debug, la riga gialla viene visualizzato il codice che verrà eseguita successivamente.  
   
- ![DBG &#95; Nozioni di base &#95; Interruzione &#95; Modalità](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Durante il debug, è possibile passare tra i comandi come **F5**, **F11** e usare altre funzionalità descritte in questo argomento (ad esempio, i punti di interruzione) per ottenere rapidamente il codice che si desidera esaminare.  
   
@@ -56,7 +59,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
 -   Il debugger esegue il codice un'istruzione alla volta anziché le righe fisiche. Ad esempio una clausola `if` può essere scritta in una riga:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  

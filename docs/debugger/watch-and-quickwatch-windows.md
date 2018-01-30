@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Le finestre sono disponibili solo durante una sessione di debug. Per aprire la *
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Osservazione di una singola variabile con Controllo immediato  
  È possibile usare la finestra **Controllo immediato** per osservare una singola variabile. Si supponga, ad esempio, di avere il codice seguente:  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a> Aggiornamento dei valori delle espressioni di controllo che non sono aggiornati  
  In determinate circostanze, è possibile visualizzare un'icona di aggiornamento (una freccia circolare) quando un'espressione viene valutata nel **espressioni di controllo** finestra.  Ad esempio, se è stata disattivata la valutazione delle proprietà (**strumenti > Opzioni > Debug > Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**), e si dispone di codice riportato di seguito:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  Nel codice seguente, un metodo crea un `Person` utilizzando una variabile locale, ma si desidera scoprire la `Person`del nome è in un metodo diverso:  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  

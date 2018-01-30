@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Iniziare con il Debugger di Visual Studio
 Il debugger di Visual Studio è facile da utilizzare in qualsiasi linguaggio. Di seguito viene illustrato come eseguire il debug di un semplice programma c#, ma è possibile applicare gli stessi passaggi al codice in altri linguaggi come C++ e JavaScript.
@@ -27,7 +29,7 @@ Per guardare un video che illustra la funzionalità simili, vedere [Introduzione
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Debug di un progetto c# di base  
  Iniziamo con una semplice applicazione console c# (**File > Nuovo > progetto**, quindi selezionare **Visual c#** e quindi **applicazione Console**). Se non si è mai lavorato con Visual Studio in precedenza, vedere [procedura dettagliata: creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Il **Main** metodo semplicemente aggiunge 1 a una variabile integer 10 volte e stampa il risultato nella console:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  È possibile passare il mouse su di **testInt** variabile per visualizzare il valore corrente in un suggerimento dati.  
   
- ![DBG &#95; Nozioni di base &#95; dati &#95; Suggerimenti](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  Sotto la finestra del codice dovrebbe essere il **Auto**, **variabili locali**, e **espressioni di controllo** windows. Tali finestre mostrano i valori correnti delle variabili al momento dell’esecuzione. Entrambi i **Auto** e **variabili locali** Mostra windows **testInt** con un valore di **10**.  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Per visualizzare la differenza tra **Esegui istruzione** e **Esegui istruzione/routine**, è necessario aggiungere un metodo che viene chiamato da un altro metodo. Aggiungere un metodo all’applicazione C# e chiamarlo dal metodo Main. Il codice dovrebbe apparire come segue:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

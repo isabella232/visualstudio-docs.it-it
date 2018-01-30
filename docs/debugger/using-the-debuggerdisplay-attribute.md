@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 08/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5221ba5a395e1cfbbe624b3d65e6762bedb8d2e1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11770efcc517b9ec713656f540d75b0a2c412ae7
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilizzo dell'attributo DebuggerDisplay
 Il [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controlla come un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.  
@@ -75,7 +77,7 @@ csc /t:library autoexp.cs
   
  Per ridurre i possibili problemi della valutazione dell'espressione, è possibile creare una proprietà privata che esegue l'operazione e restituisce una stringa. L'attributo DebuggerDisplay può quindi visualizzare il valore di tale proprietà privata. Nell'esempio seguente viene implementato questo modello:  
   
-```CSharp  
+```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
 {      
@@ -99,7 +101,7 @@ public sealed class MyClass
 |Chiave|"three"|oggetto {string}|  
 |Valore|3|oggetto {int}|  
   
-```CSharp  
+```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
 internal class KeyValuePairs  
 {  

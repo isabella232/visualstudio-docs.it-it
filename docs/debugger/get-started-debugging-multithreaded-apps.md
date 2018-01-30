@@ -4,7 +4,8 @@ ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: "38"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Introduzione al debug di un'applicazione multithreading in Visual Studio
 Visual Studio fornisce numerosi strumenti e gli elementi dell'interfaccia utente per eseguire il debug di applicazioni multithreading. In questa esercitazione viene illustrato come utilizzare gli indicatori dei thread, il **stack in parallelo** finestra il **espressioni di controllo parallelo** finestra punti di interruzione condizionali e i punti di interruzione di filtro. In questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di acquisire familiarità con le funzionalità per il debug di applicazioni multithreading.
@@ -199,7 +201,7 @@ Per iniziare questa esercitazione, è necessario un progetto di applicazione mul
   
 -   Nell'editor del codice sorgente, cercare il codice seguente: 
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     Console.WriteLine();  
     ```  
@@ -228,7 +230,7 @@ Per iniziare questa esercitazione, è necessario un progetto di applicazione mul
   
 4.  Nell'editor del codice sorgente, individuare la riga che contiene il punto di interruzione:  
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     ```  
   
