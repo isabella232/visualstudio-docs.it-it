@@ -366,6 +366,7 @@
 #### [Finestra di dialogo Opzioni di Finestra di progettazione XAML](ide/reference/xaml-designer.md)
 ### [Finestra di output](ide/reference/output-window.md)
 ### [Riferimenti alle proprietà di progetto](ide/reference/project-properties-reference.md)
+#### [Pagina Applicazione, Progettazione progetti (UWP)](ide/reference/application-page-project-designer-uwp.md)
 #### [Pagina Applicazione, Creazione progetti (Visual Basic)](ide/reference/application-page-project-designer-visual-basic.md)
 ##### [Finestra di dialogo Informazioni assembly](ide/reference/assembly-information-dialog-box.md)
 #### [Pagina Applicazione, Creazione progetti (C#)](ide/reference/application-page-project-designer-csharp.md)
