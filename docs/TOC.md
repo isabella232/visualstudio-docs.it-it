@@ -74,7 +74,6 @@
 ##### [Aggiungere riferimenti usando NuGet o SDK di estensione](ide/adding-references-using-nuget-versus-an-extension-sdk.md)
 ##### [Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)](ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 ##### [Risolvere i problemi relativi ai riferimenti interrotti](ide/troubleshooting-broken-references.md)
-#### [Proprietà dell'applicazione](ide/application-properties.md)
 #### [Gestire le risorse dell'applicazione (.NET)](ide/managing-application-resources-dotnet.md)
 #### [Gestire le impostazioni dell'applicazione](ide/managing-application-settings-dotnet.md)
 ##### [Aggiungere un file di configurazione applicazione a un progetto C#](ide/how-to-add-app-config-file.md)
