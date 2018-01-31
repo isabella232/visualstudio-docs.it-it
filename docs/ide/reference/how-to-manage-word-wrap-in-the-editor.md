@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,28 +13,28 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 75a82b2c3e3e251dbd53ae8d2fc67edabb33f830
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire la modalità A capo automatico nell'editor
-È possibile selezionare e deselezionare l'opzione **A capo automatico**. Se questa opzione è selezionata, la parte di una riga che si estende oltre la larghezza corrente della finestra dell'Editor del codice viene visualizzata nella riga successiva. Se questa opzione è deselezionata, ad esempio per facilitare l'uso della numerazione delle righe, è possibile visualizzare la parte finale delle righe lunghe scorrendo la finestra verso destra.  
-  
- Per altre informazioni, vedere [Procedura: Impostare le opzioni generali dell'editor](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
-  
+
+È possibile selezionare e deselezionare l'opzione **A capo automatico**. Se questa opzione è selezionata, la parte di una riga che si estende oltre la larghezza corrente della finestra dell'Editor del codice viene visualizzata nella riga successiva. Se questa opzione è deselezionata, ad esempio per facilitare l'uso della numerazione delle righe, è possibile visualizzare la parte finale delle righe lunghe scorrendo la finestra verso destra.
+
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="procedure"></a>Routine  
-  
-#### <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+
+## <a name="procedure"></a>Routine
+
+### <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico
   
 1.  Scegliere **Opzioni** dal menu **Strumenti**.  
   
@@ -52,7 +53,8 @@ ms.lasthandoff: 12/22/2017
     > [!NOTE]
     >  Questi indicatori promemoria non vengono aggiunti al codice ma vengono solo visualizzati.  
   
-## <a name="see-also"></a>Vedere anche  
- [Customizing the Editor](../../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  
- [Text Editor Options Dialog Box](../../ide/reference/text-editor-options-dialog-box.md)  (Finestra di dialogo Opzioni editor di testo)  
- [Writing Code](../../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)
+## <a name="see-also"></a>Vedere anche
+
+[Personalizzazione dell'editor](../../ide/customizing-the-editor.md)  
+[Editor di testo (finestra di dialogo Opzioni)](../../ide/reference/text-editor-options-dialog-box.md)  
+[Writing Code](../../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)

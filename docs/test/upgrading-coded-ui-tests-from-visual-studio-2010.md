@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aggiornamento dei test codificati dell'interfaccia utente da Visual Studio 2010
 I progetti di test contenenti test codificati dell'interfaccia utente creati in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 vengono ripristinati in modo invisibile all'utente all'apertura in Visual Studio 2012 o versioni successive. Se i progetti di test vengono archiviati nel controllo del codice sorgente, i file di progetto vengono estratti per questo ripristino. Una volta ripristinati, questi progetti di test contenenti test codificati dell'interfaccia utente possono essere usati sia in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 che in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +26,7 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio include più di un tipo di progetto di test. Un nuovo test codificato dell'interfaccia utente verrà creato in un tipo di progetto di test codificato dell'interfaccia utente. Per altre informazioni, vedere [Aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> Visual Studio include più di un tipo di progetto di test. Un nuovo test codificato dell'interfaccia utente verrà creato in un tipo di progetto di test codificato dell'interfaccia utente.
   
 > [!WARNING]
 >  I progetti di test di[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] contenenti test codificati dell'interfaccia utente devono essere ricompilati quando li si apre in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] o in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] affiancato a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -66,6 +67,5 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 ## <a name="see-also"></a>Vedere anche
 
 [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)  
 [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

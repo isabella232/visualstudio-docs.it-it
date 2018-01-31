@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilizzo dei diagrammi classi (Progettazione classi)
 I diagrammi classi consentono di comprendere la struttura delle classi dei progetti scritti da altri utenti oppure risalenti a molto tempo prima. È possibile usarli per personalizzare, condividere e presentare informazioni sui progetti ad altri utenti.  
@@ -39,6 +41,7 @@ Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in docu
 >  Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.
   
 ## <a name="see-also"></a>Vedere anche
-[Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)   
-[Procedura: personalizzare i diagrammi classi](how-to-customize-class-diagrams.md)   
-[Procedura: rimuovere le forme dei tipi dai diagrammi classi](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+
+[Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)  
+[Procedura: Personalizzare i diagrammi classi](how-to-customize-class-diagrams.md)  
+[Procedura: rimuovere le forme dei tipi dai diagrammi classi](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

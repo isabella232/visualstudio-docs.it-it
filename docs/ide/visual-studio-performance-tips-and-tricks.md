@@ -3,21 +3,24 @@ title: Suggerimenti sulle prestazioni di Visual Studio | Microsoft Docs
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -32,7 +35,7 @@ I suggerimenti per le prestazioni di Visual Studio si riferiscono a situazioni d
 
     Se si aggiorna il sistema da una versione di Windows a 32 bit a una versione a 64 bit, espandere la quantità di memoria virtuale disponibile per Visual Studio da 2 a 4 GB. Ciò consente a Visual Studio di gestire carichi di lavoro notevolmente più grandi anche tramite il processo a 32 bit.
 
-    Per altre informazioni, vedere [Limiti di memoria](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Uso di /LARGEADDRESSAWARE in Windows a 64 bit](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Per altre informazioni, vedere [Limiti di memoria](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Uso di /LARGEADDRESSAWARE in Windows a 64 bit](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Configurare soluzione e progetti
 
@@ -47,6 +50,7 @@ In caso di una soluzione molto grande con molti progetti, possono essere utili l
     È possibile suddividere la soluzione in diversi file di soluzione più piccoli con i progetti usati comunemente. Questo refactoring dovrebbe ridurre notevolmente utilizzo della memoria per il flusso di lavoro. Inoltre le soluzioni di dimensioni inferiori si caricano più velocemente.
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
+
 Se in genere si verificano problemi di memoria insufficiente durante le sessioni di debug, è possibile ottimizzare le prestazioni apportando una o più modifiche alla configurazione.
 
 - **Abilitare Just My Code**
@@ -74,6 +78,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
     Per altre informazioni, vedere [Strumenti di profilatura](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Disabilitare strumenti ed estensioni
+
 Alcuni strumenti o estensioni possono essere disattivati per migliorare le prestazioni.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Per imporre una Garbage Collection, usare il tasto di scelta rapida: **Ctrl+Alt+
 
 Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel proprio scenario, compilare un report tramite lo strumento per il feedback di Visual Studio poiché questo comportamento è in genere sintomo di un bug.
 
-Per una descrizione dettagliata del Garbage Collector di CLR, vedere [Nozioni fondamentali sulla Garbage Collection](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Per una descrizione dettagliata del Garbage Collector di CLR, vedere [Nozioni fondamentali sulla Garbage Collection](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Vedere anche  
- [IDE di Visual Studio](../ide/index.md)
+## <a name="see-also"></a>Vedere anche
+
+[IDE di Visual Studio](../ide/visual-studio-ide.md)

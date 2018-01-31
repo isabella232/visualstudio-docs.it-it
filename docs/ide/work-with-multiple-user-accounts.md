@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -52,7 +51,7 @@ Alla successiva apertura di Esplora Server, vengono visualizzate le risorse per 
 1. Scegliere il nodo del progetto in Esplora soluzioni e quindi **Aggiungi, Servizio connesso**. Viene visualizzata la procedura guidata **Aggiungi servizio connesso** con l'elenco dei servizi dell'account Azure associato all'ID di accesso di Visual Studio. Notare che non è necessario effettuare separatamente l'accesso ad Azure. Tuttavia, è necessario accedere ad altri account la prima volta che si tenta di accedere alle risorse da un determinato computer.
 
     > [!WARNING]
-    > Se è la prima volta che si crea un'app UWP in Visual Studio in un computer specifico, verrà richiesto di abilitare il dispositivo per la modalità di sviluppo passando a **Impostazioni &#124; Aggiornamento e sicurezza &#124; Per sviluppatori** nel proprio computer. Per altre informazioni, vedere [Abilitare il dispositivo per lo sviluppo](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).
+    > Se è la prima volta che si crea un'app UWP in Visual Studio in un computer specifico, verrà richiesto di abilitare il dispositivo per la modalità di sviluppo passando a **Impostazioni &#124; Aggiornamento e sicurezza &#124; Per sviluppatori** nel proprio computer. Per altre informazioni, vedere [Abilitare il dispositivo per lo sviluppo](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### <a name="access_azure"></a> Accedere ad Azure Active Directory in un progetto Web
 

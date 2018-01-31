@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.CannotShowBaseType
+f1_keywords:
+- vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - types [Visual Studio], visualizing
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fa9ab600c4f4be61a80b819fd20104a3639f0a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f9b5b4aed79dfbfda19020cfda17af68d7ae186c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Procedura: visualizzare i tipi esistenti (Progettazione classi)
 Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a un diagramma classi.  
@@ -33,7 +36,7 @@ Per progettare nuovi tipi nei diagrammi classi, vedere [How to: Create Types by 
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi  
   
-1.  In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [ (Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).  
+1.  In un progetto in Esplora soluzioni aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [(Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).  
   
 2.  Nel progetto in Esplora soluzioni trascinare un file di codice sorgente nel diagramma di classi.  
   
@@ -50,7 +53,7 @@ Per progettare nuovi tipi nei diagrammi classi, vedere [How to: Create Types by 
 È anche possibile visualizzare i tipi del progetto trascinando uno o più tipi dal nodo di progetto in Visualizzazione classi al diagramma classi.  
   
 > [!TIP]
->  Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**. Per altre informazioni sulla visualizzazione classi, vedere [Viewing Classes and Their Members](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333) (Visualizzazione delle classi e dei relativi membri).  
+> Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**.
   
 Per visualizzare i tipi nelle posizioni predefinite del diagramma, selezionare uno o più tipi in Visualizzazione classi, fare clic con il pulsante destro del mouse sui tipi selezionati e scegliere **Visualizza diagramma classi**.  
   
@@ -67,5 +70,5 @@ La prima volta che viene visualizzato un tipo nel diagramma, la relativa forma a
   
 ## <a name="see-also"></a>Vedere anche
 [Procedura: Visualizzare l'ereditarietà tra tipi](how-to-view-inheritance-between-types.md)   
-[Procedura: Personalizzare i diagrammi classi](how-to-customize-class-diagrams.md)   
+[Procedura: personalizzare i diagrammi classi](how-to-customize-class-diagrams.md)   
 [Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)
