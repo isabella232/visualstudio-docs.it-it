@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura guidata: analisi del codice C/C++ per l'identificazione degli errori
 Questa procedura dettagliata viene illustrato come analizzare il codice C/C++ per potenziali difetti del codice utilizzando lo strumento di analisi codice per il codice C/C++.  
@@ -85,9 +87,9 @@ Questa procedura dettagliata viene illustrato come analizzare il codice C/C++ pe
   
 3.  Risolvere il problema utilizzando la macro SUCCEEDED. Il codice sarà simile al codice seguente:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  Nel **elenco errori**, fare doppio clic sull'avviso seguente:  
   
@@ -95,17 +97,17 @@ Questa procedura dettagliata viene illustrato come analizzare il codice C/C++ pe
   
 5.  Risolvere il problema eseguendo il test di uguaglianza. Il codice dovrebbe essere simile al codice seguente:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Per considerare l'avviso come errore  
   
 1.  Nel file bug, aggiungere le seguenti `#pragma` istruzione all'inizio del file da considerare l'avviso C6001 come un errore:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Ricompilare il progetto CodeDefects.  
   
@@ -141,17 +143,14 @@ Questa procedura dettagliata viene illustrato come analizzare il codice C/C++ pe
   
 8.  Per risolvere il problema, utilizzare un'istruzione 'if' per verificare il valore restituito. Il codice sarà simile al codice seguente:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Ricompilare il progetto di annotazioni.  
   
@@ -161,15 +160,13 @@ Questa procedura dettagliata viene illustrato come analizzare il codice C/C++ pe
   
 1.  Annotare i parametri formali e il valore della funzione restituito `AddTail` utilizzando le condizioni di Pre e Post, come illustrato in questo esempio:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Ricompilare il progetto di annotazioni.  
   
@@ -181,19 +178,21 @@ Questa procedura dettagliata viene illustrato come analizzare il codice C/C++ pe
   
 4.  Per risolvere il problema, utilizzare un'istruzione 'if' per verificare il valore restituito. Il codice sarà simile al codice seguente:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Ricompilare il progetto di annotazioni.  
   
      Il progetto venga compilato senza errori o avvisi.  
   
-## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Vedere anche
+
+[Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Analisi del codice per C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

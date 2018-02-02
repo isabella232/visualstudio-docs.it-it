@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con diagrammi di dipendenza
 
@@ -54,7 +55,7 @@ Per assicurarsi che non siano in conflitto con la progettazione codice, è possi
   
 -   Visual Studio sul server Team Foundation Build in uso per convalidare il codice automaticamente con Team Foundation Build  
   
--   Una soluzione che include un progetto di modellazione con un diagramma di dipendenze. Questo diagramma dipendenza deve essere collegato agli elementi nei progetti Visual c# .NET o Visual Basic .NET che si desidera convalidare. Vedere [creare diagrammi dipendenza dal codice](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Una soluzione che include un progetto di modellazione con un diagramma di dipendenze. Questo diagramma dipendenza deve essere collegato agli elementi nei progetti c# o Visual Basic che si desidera convalidare. Vedere [creare diagrammi dipendenza dal codice](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ In questa versione di Visual Studio, convalida della dipendenza si verifica in t
 2.  Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.  
   
     > [!NOTE]
-    >  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Questo errore si verifica quando il codice ha una dipendenza su un assembly che non viene specificato per il diagramma di dipendenze o al codice manca una dipendenza specificata nel diagramma di dipendenza. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per ulteriori informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] potrebbe essere visualizzata una mappa del codice anziché l'origine dell'errore. Questo errore si verifica quando il codice ha una dipendenza su un assembly che non viene specificato per il diagramma di dipendenze o al codice manca una dipendenza specificata nel diagramma di dipendenza. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per ulteriori informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Per gestire gli errori, vedere [gestire errori di convalida](#ManageErrors).  
   

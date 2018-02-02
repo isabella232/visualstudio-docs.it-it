@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6ce56a055792d1360b78dda8295e9ee4d39a0b98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be42ed54e2c245a47e885fe8310c106c27ea82b2
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="demo-sample"></a>Esempio dimostrativo
 Procedure riportate di seguito viene illustrato come creare l'esempio per [procedura dettagliata: analisi di codice C/C++ per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Creano le procedure:  
@@ -69,7 +71,7 @@ Procedure riportate di seguito viene illustrato come creare l'esempio per [proce
   
 4.  Copiare il codice seguente e incollarlo il **bug** file nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor.  
   
-    ```  
+    ```cpp
     #include <windows.h>  
   
     //    
@@ -97,7 +99,7 @@ Procedure riportate di seguito viene illustrato come creare l'esempio per [proce
   
 8.  Copiare il codice seguente e incollarlo nel file Bug.h il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor.  
   
-    ```  
+    ```cpp
     #include <stdlib.h>  
     #include "Bug.h"  
   
@@ -183,7 +185,7 @@ Procedure riportate di seguito viene illustrato come creare l'esempio per [proce
   
 4.  Copiare il codice seguente e incollarlo il **Annotations. h** file nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor.  
   
-    ```  
+    ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>  
   
     struct LinkedList  
@@ -206,7 +208,7 @@ Procedure riportate di seguito viene illustrato come creare l'esempio per [proce
   
 8.  Copiare il codice seguente e incollarlo il **Annotations. cpp** file nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor.  
   
-    ```  
+    ```cpp
     #include <CodeAnalysis/SourceAnnotations.h>  
     #include <windows.h>  
     #include <stdlib.h>    

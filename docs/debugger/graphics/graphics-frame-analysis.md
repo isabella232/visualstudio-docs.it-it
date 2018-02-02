@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.  
@@ -147,37 +148,32 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 ### <a name="gpu-counters"></a>Contatori della GPU  
  Il supporto per i contatori hardware della GPU dipende dall'hardware.  
   
- Poiché nessuna GPU di computer attualmente offerta da Intel, AMD, o nVidia supporta in modo affidabile i contatori hardware della GPU, l'analisi dei frame non raccoglie i contatori corrispondenti. L'analisi dei frame, tuttavia, raccoglie i contatori hardware da queste GPU, che li supportano in modo affidabile:  
+ Poiché nessuna GPU di computer attualmente offerta da Intel, AMD, o nVidia supporta in modo affidabile i contatori hardware della GPU, l'analisi dei frame non raccoglie i contatori corrispondenti. Tuttavia, l'analisi dei Frame raccoglie i contatori hardware GPU seguenti, che li supporta in modo affidabile:  
   
--   SOC Qualcomm (tutti quelli che supportano Windows Phone)  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Nessun'altra piattaforma che supporta l'analisi dei frame raccoglie i contatori hardware della GPU.  
   
 > [!NOTE]
 >  Poiché i contatori hardware GPU sono risorse hardware, è possibile che siano necessari più passaggi per raccogliere il set completo di contatori hardware per ogni variante di rendering. Di conseguenza, l'ordine in cui i contatori GPU vengono raccolti non è specificato.  
   
-### <a name="windows-phone"></a>Windows Phone  
- I timestamp, le query di occlusione e i contatori hardware GPU sono supportati solo in più di Windows Phone forniti originariamente con Windows Phone 8.1 o Windows Phone 10. Questi elementi sono necessari all'analisi dei frame per la riproduzione del file di registro elementi grafici. Ricevitori di Windows Phone forniti originariamente con Windows Phone 8 non supportano l'analisi dei Frame, anche nel caso dei dispositivi che sono stati aggiornati a Windows Phone 8.1 o Windows Phone 10.  
-  
 ## <a name="unsupported-scenarios"></a>Scenari non supportati  
  Alcuni modi di usare l'analisi dei frame non sono supportati o non sono consigliati.  
-  
-### <a name="warp"></a>WARP  
- L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. L'esecuzione dell'analisi dei frame in dispositivi WARP è possibile, poiché l'emulatore di Windows Phone può essere eseguito su dispositivi WARP, ma non offre in genere risultati significativi, perché l'esecuzione di dispositivi WARP in una CPU di livello elevato è decisamente più lenta rispetto a quella delle GPU moderne meno efficienti. Le prestazioni dei dispositivi WARP, inoltre, possono presentare notevoli variazioni in base alla CPU specifica usata per l'esecuzione.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Riproduzione di acquisizioni con livello di funzionalità elevato su dispositivi di livello inferiore  
  Quando si riproduce in Analizzatore grafica un file di log di grafica che usa un livello di funzionalità superiore rispetto a quello supportato dal computer di riproduzione, si verificherà automaticamente il fallback su WARP. In analisi dei frame non si verifica esplicitamente il fallback su WARP ed è generato un errore. WARP è utile per esaminare la correttezza di un'app Direct3D, ma non per esaminarne le prestazioni.  
   
 > [!NOTE]
->  Anche se è importante tenere in considerazione le problematiche a livello di funzionalità, è possibile acquisire e riprodurre file di registro elementi grafici in diverse configurazioni e diversi dispositivi hardware. Ad esempio, è possibile acquisire informazioni sugli elementi grafici in un dispositivo Windows Phone e riprodurle in un computer desktop o viceversa. In entrambi i casi, il registro di elementi grafici non include API e non usa livelli di funzionalità non supportati nella macchina di riproduzione.  
+>  Anche se è importante tenere in considerazione le problematiche a livello di funzionalità, è possibile acquisire e riprodurre file di registro elementi grafici in diverse configurazioni e diversi dispositivi hardware. Il log di grafica è possibile riprodurre nuovamente a condizione che il file di log non include API e Usa i livelli di funzionalità non supportate nel computer di riproduzione.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versioni precedenti  
  Se l'app chiama l'API Direct3D 10, Analisi dei frame non sarà in grado di riconoscerla o di profilarla, anche se è riconosciuta e usata da altri strumenti di Analizzatore grafica.
   
 > [!NOTE]
 >  Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità.
+
+### <a name="warp"></a>WARP  
+ L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. Non è impedito l'esecuzione di analisi dei frame su dispositivi WARP, ma non è in genere un esercizio utile poiché in esecuzione su una CPU di fascia alta WARP è inferiore a anche il minor GPU moderne e le prestazioni di WARP possono variare notevolmente in base alla CPU specifica è in esecuzione.  
   
 ##  <a name="Variants"></a>Varianti  
  Ogni modifica apportata dall'analisi dei Frame al modo in cui viene eseguito il rendering di un frame durante la riproduzione è noto come un *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:  
@@ -185,9 +181,9 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 |Variante|Descrizione|  
 |-------------|-----------------|  
 |**Dimensione del 1x1 Viewport**|Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [variante delle dimensioni del riquadro di visualizzazione 1x1](1x1-viewport-size-variant.md)|  
-|**0 MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
-|**2 MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 2x in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
-|**4 MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 4x in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 2x in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 4x in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
 |**Filtraggio punti della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtraggio punti della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtraggio bilineare della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtraggio bilineare della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtraggio trilineare della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtraggio trilineare della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

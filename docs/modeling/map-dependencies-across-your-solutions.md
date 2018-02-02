@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 
@@ -63,13 +64,13 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
   
  **È possibile eseguire il mapping delle dipendenze per il codice nei seguenti linguaggi**:  
   
--   Visual C# .NET o Visual Basic .NET in una soluzione o in assembly (con estensione dll o exe)  
+-   Visual c# o Visual Basic in una soluzione o di assembly (con estensione dll o .exe)  
   
 -   Codice C o C++ nativo o gestito in progetti Visual C++, file di intestazione (.h o `#include`) o file binari  
   
 -   Progetti X++ e assembly creati da moduli .NET per Microsoft Dynamics AX  
   
- **Nota:** per progetti diversi da C# o Visual Basic .NET, sono disponibili meno opzioni per l'avvio di una mappa codice o per l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file da Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti.  
+ **Nota:** per progetti diversi da c# o Visual Basic, sono disponibili meno opzioni per l'avvio di una mappa del codice o l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. Tuttavia, è possibile trascinare e rilasciare singoli elementi di codice o file da Esplora soluzioni, Visualizzazione classi e Visualizzatore oggetti.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Per visualizzare tutte le dipendenze nella soluzione  
   
@@ -286,7 +287,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 ##  <a name="SeeSourceHeader"></a> Visualizzare le dipendenze tra i file di origine e i file di intestazione C e C++  
  Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione (**/FR**) su tali progetti. In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive. Se si nasconde il messaggio, è possibile visualizzarlo nuovamente. Impostare la seguente chiave del Registro di sistema su `0` o eliminare la chiave:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo potrebbe non essere possibile creare mappe codice per file di intestazione (con estensione h o `#include`) o finché il database IntelliSense non ha completato l'aggiornamento. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio. Per risolvere problemi o messaggi che vengono visualizzati perché determinate impostazioni di IntelliSense sono disattivate, vedere [Risoluzione dei problemi relativi alle mappe per il codice C e C++](#Troubleshooting).  
   
@@ -310,7 +311,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 |**Problema**|**Possibile causa**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  
 |Non è stato possibile generare la mappa codice.|Nessun progetto nella soluzione è stato compilato correttamente.|Correggere gli errori di compilazione che si sono verificati, quindi rigenerare la mappa.|  
-|Quando si prova a generare una mappa codice dal menu[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Architettura **,** smette di rispondere.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Architettura **Architettura** .|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|  
 |Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella finestra di dialogo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**di** .|Attivare le impostazioni per abilitarle.<br /><br /> Vedere [opzioni, Editor di testo, C/C++, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
 |Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.|  
 ||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.|  

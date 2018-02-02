@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,23 +15,24 @@ helpviewer_keywords:
 - CA2223
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5c8c0d70085f4f27dbaf26b412888415d9af666d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c72475c76a85216499a389d12f090ef302fc143
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: La differenza tra membri non deve limitarsi al tipo restituito
 |||  
 |-|-|  
 |TypeName|MembersShouldDifferByMoreThanReturnType|  
 |CheckId|CA2223|  
-|Category|Microsoft. Usage|  
+|Category|Microsoft.Usage|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -46,7 +48,7 @@ ms.lasthandoff: 12/22/2017
  Non escludere un avviso da questa regola.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola questa regola. Si noti che questa regola non può essere violata utilizzando c# o Visual Basic .NET.  
+ Nell'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola questa regola. Si noti che questa regola non può essere violata utilizzando c# o Visual Basic.  
   
 ```  
   

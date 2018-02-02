@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,23 +15,24 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Eseguire l'override di metodi su tipi confrontabili
 |||  
 |-|-|  
 |TypeName|OverrideMethodsOnComparableTypes|  
 |CheckId|CA1036|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
@@ -53,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  In c#, i token vengono utilizzati per rappresentare questi operatori sono i seguenti: = =,! =, \<, e >.  
   
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
- È possibile eliminare un avviso da questa regola se la violazione è causata da operatori mancanti e il linguaggio di programmazione non supporta l'overload degli operatori, come accade con Visual Basic .NET. È inoltre possibile eliminare un avviso per da questa regola quando viene generato per gli operatori di uguaglianza diverso op_Equality se si determina che implementa gli operatori non ha senso nel contesto di applicazione. Tuttavia, deve sempre essere op_Equality e l'operatore = =, se si esegue l'override di Object. Equals.  
+ È possibile eliminare un avviso da questa regola se la violazione è causata da operatori mancanti e il linguaggio di programmazione non supporta l'overload degli operatori, come accade con Visual Basic. È inoltre possibile eliminare un avviso per da questa regola quando viene generato per gli operatori di uguaglianza diverso op_Equality se si determina che implementa gli operatori non ha senso nel contesto di applicazione. Tuttavia, deve sempre essere op_Equality e l'operatore = =, se si esegue l'override di Object. Equals.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente contiene un tipo che implementa correttamente <xref:System.IComparable>. Commenti del codice identificano i metodi che soddisfano varie regole correlate a <xref:System.Object.Equals%2A> e <xref:System.IComparable> interfaccia.  

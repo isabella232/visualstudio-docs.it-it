@@ -5,20 +5,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Visual Studio shell, isolated mode, .pkgdef file
+helpviewer_keywords:
+- Visual Studio shell, isolated mode, .pkgdef file
 ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modifica la Shell isolata tramite il. File pkgdef
 Il file. pkgdef supporta le impostazioni che è possibile utilizzare per personalizzare un'applicazione shell isolata. Specifica valori che vengono creati quando un'applicazione è installata in un computer e di cui viene fatto riferimento dalla shell di Visual Studio quando avvia l'applicazione. Le impostazioni sono organizzate nel file in base alle chiavi del Registro di sistema applicabili.  

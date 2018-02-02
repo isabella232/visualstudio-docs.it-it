@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi dipendenza dal codice
-Per visualizzare l'architettura di alto livello, logica del sistema software, creare un *diagramma dipendenze* in Visual Studio. Per assicurarsi che il codice rimanga coerenza con la progettazione, è possibile convalidare il codice con un diagramma di dipendenze. È possibile creare diagrammi di dipendenza per i progetti Visual c# .NET e Visual Basic .NET. Per le versioni di Visual Studio che supportano questa funzionalità, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Creare un diagramma di dipendenza](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Un diagramma di dipendenza consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici e astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali artefatti eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare l'esistenti o *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono utilizzare o utilizzano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.  
-  
- [Video: Convalidare le dipendenze di architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Creare un diagramma di dipendenza  
- Prima di creare un diagramma di dipendenze, assicurarsi che la soluzione contiene un progetto di modellazione. 
-  
+
+Per visualizzare l'architettura di alto livello, logica del sistema software, creare un *diagramma dipendenze* in Visual Studio. Per assicurarsi che il codice rimanga coerenza con la progettazione, è possibile convalidare il codice con un diagramma di dipendenze. È possibile creare diagrammi di dipendenza per i progetti Visual c# e Visual Basic. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Creare un diagramma di dipendenza](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Un diagramma di dipendenza consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici e astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali artefatti eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare l'esistenti o *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono utilizzare o utilizzano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.
+
+[Video: Convalidare le dipendenze di architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Creare un diagramma di dipendenza
+
+Prima di creare un diagramma di dipendenze, assicurarsi che la soluzione contiene un progetto di modellazione.
+
 > [!IMPORTANT]
->  Non aggiungere, trascinare o copiare un diagramma di dipendenza esistente da un progetto di modellazione in un altro progetto di modellazione o in un'altra posizione nella soluzione. In questo modo i riferimenti del diagramma originale verranno mantenuti, anche se si modifica il diagramma. In caso contrario, il funzionamento della convalida dei livelli non sarà corretto e potrebbero verificarsi altri problemi, quali la mancanza di elementi o altri errori quando si tenta di aprire il diagramma.  
->   
->  In alternativa, è possibile aggiungere un nuovo diagramma di dipendenza al progetto di modello. copiare gli elementi dal diagramma di origine al nuovo diagramma Salvare il progetto di modello sia il nuovo diagramma di dipendenza.  
-  
+> Non aggiungere, trascinare o copiare un diagramma di dipendenza esistente da un progetto di modellazione in un altro progetto di modellazione o in un'altra posizione nella soluzione. In questo modo i riferimenti del diagramma originale verranno mantenuti, anche se si modifica il diagramma. In caso contrario, il funzionamento della convalida dei livelli non sarà corretto e potrebbero verificarsi altri problemi, quali la mancanza di elementi o altri errori quando si tenta di aprire il diagramma.
+>
+> In alternativa, è possibile aggiungere un nuovo diagramma di dipendenza al progetto di modello. copiare gli elementi dal diagramma di origine al nuovo diagramma Salvare il progetto di modello sia il nuovo diagramma di dipendenza.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Per aggiungere un nuovo diagramma di dipendenza a un progetto di modellazione  
   
 1.  Nel **architettura** menu, scegliere **nuovo diagramma dipendenza**.  

@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilizzando i controlli della linee guida di base di C++
 Le linee guida componenti di base di C++ sono un set portabile di linee guida, regole e procedure consigliate sulla codifica in C++ creati dai progettisti e gli esperti di C++. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. Correttori ortografici delle linee guida per i componenti di base vengono installati per impostazione predefinita in Visual Studio 2017 e sono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
@@ -191,7 +191,7 @@ In alcuni casi può essere utile per l'analisi del codice con stato attivo, cont
 ```
 Assicurarsi di aggiungere queste proprietà prima di importare il file Microsoft.Cpp.targets. È possibile selezionare i set di regole specifiche o creare un set di regole personalizzate o usare il set di regole predefinite che include altri controlli PREfast.
 
-È possibile eseguire il controllo di base C++ solo nei file specificati utilizzando lo stesso approccio come [descritto in precedenza](#coreckeck_per_file), ma l'utilizzo di file MSBuild. Per impostare le variabili di ambiente, è possono utilizzare il `BuildMacro` elemento:
+È possibile eseguire il controllo di base C++ solo nei file specificati utilizzando lo stesso approccio come [descritto in precedenza](#corecheck_per_file), ma l'utilizzo di file MSBuild. Per impostare le variabili di ambiente, è possono utilizzare il `BuildMacro` elemento:
 
 ```xml
 <ItemGroup>
