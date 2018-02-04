@@ -24,7 +24,7 @@
 ## Node.js
 ### [Pubblicare il sito Web di Azure tramite la distribuzione Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Eseguire la pubblicazione nel servizio app di Azure](/visualstudio/python/publishing-to-azure)
+### [Eseguire la pubblicazione nel servizio app di Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Guide pratiche
 ## [Sicurezza e distribuzione di ClickOnce](clickonce-security-and-deployment.md)
 ### [Scelta di una strategia di distribuzione ClickOnce](choosing-a-clickonce-deployment-strategy.md)
@@ -110,7 +110,7 @@
 #### [<PackageFiles> Elemento (programma di avvio automatico)](packagefiles-element-bootstrapper.md)
 #### [<Strings> Elemento (programma di avvio automatico)](strings-element-bootstrapper.md)
 #### [<Schedules> Elemento (programma di avvio automatico)](schedules-element-bootstrapper.md)
-# Riferimento
+# Riferimenti
 ## [Riferimenti di ClickOnce](clickonce-reference.md)
 ### [ClickOnce Application Manifest](clickonce-application-manifest.md)
 #### [ Elemento <assembly> (applicazione ClickOnce)](assembly-element-clickonce-application.md)
