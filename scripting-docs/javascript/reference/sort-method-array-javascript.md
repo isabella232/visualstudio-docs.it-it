@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>Metodo sort (Array) (JavaScript)
 Ordina un `Array`.  
@@ -40,7 +41,7 @@ arrayobj.sort(sortFunction)
  Obbligatorio. Qualsiasi oggetto `Array`.  
   
  `sortFunction`  
- Parametro facoltativo. Il nome della funzione utilizzata per determinare l'ordine degli elementi. Se omesso, gli elementi vengono ordinati in ordine crescente, ordine di caratteri ASCII.  
+ Facoltativo. Il nome della funzione utilizzata per determinare l'ordine degli elementi. Se omesso, gli elementi vengono ordinati in ordine crescente, ordine di caratteri ASCII.  
   
 ## <a name="return-value"></a>Valore restituito  
  Matrice ordinata.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Note  
  Il `sort` metodo ordinamenti di `Array` oggetto sul posto; no nuovi `Array` oggetto viene creato durante l'esecuzione.  
   
- Se una funzione di `sortFunction` argomento, essa dovrà restituire uno dei valori seguenti:  
+ `sortFunction`accetta due argomenti e deve restituire uno dei valori seguenti:  
   
--   Un valore negativo se il primo argomento passato è minore del secondo argomento.  
+-   Un valore negativo (minore di 0) se il primo argomento passato è minore rispetto al secondo argomento.  Il primo argomento è ordinato in un indice più basso.
   
--   Zero se i due argomenti sono equivalenti.  
+-   Zero (0) se i due argomenti sono equivalenti.  I due argomenti vengono ordinati in relazione gli altri elementi nella matrice, ma non vengono ordinati uno rispetto a altro.
   
--   Un valore positivo se il primo argomento è maggiore del secondo argomento.  
+-   Un valore positivo (maggiore di 0) se il primo argomento è maggiore del secondo argomento.  Il secondo argomento è ordinato in un indice più basso.
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come utilizzare il metodo `sort`.  
