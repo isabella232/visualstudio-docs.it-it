@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c49f6e8c5606845f41cc947029ac9405f97665f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d185801cc5bba355751147edb79b9c47d21f8eed
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="using-the-bind-method-javascript"></a>Utilizzo del metodo bind (JavaScript)
 Il metodo JavaScript `bind` può essere utilizzato in modi diversi. In genere, viene utilizzato per mantenere il contesto di esecuzione per una funzione in esecuzione in un altro contesto. `bind` crea una nuova funzione con lo stesso corpo della funzione originale. Il primo argomento passato a `bind` specifica il valore della parola chiave `this` nella funzione associata. È inoltre possibile passare argomenti aggiuntivi facoltativi a `bind`. Per esempi di altri utilizzi, vedere [Metodo bind (Function)](../../javascript/reference/bind-method-function-javascript.md). Per un esempio sull'uso di `bind` per applicare funzioni in modo parziale, vedere [Modelli e suggerimenti sulla programmazione asincrona in JavaScript per Hilo (Windows Store)](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx).  
@@ -59,8 +60,7 @@ function dataReadyHandler() {
 setTimeout(function () {  
     data = [0, 1, 2, 3];  
     document.dispatchEvent(dataReadyEvent);  
-    }, 5000);  
-}  
+    }, 5000);
   
 var dataObj = new DataObject();  
   
@@ -70,7 +70,7 @@ var dataObj = new DataObject();
   
 ```  
   
- Se si commenta la riga di codice che utilizza `bind`, si rimuove il commento dalla riga di codice che chiama `addEventListener` senza `bind`, quindi si riesegue il codice, la funzione `dataReadyHandler` avrà esito negativo. In `dataReadyHander`, ad esempio, `this.name` non sarà definito e `this.data()` restituirà un errore perché l'oggetto `this` non fa più riferimento all'oggetto dati.  
+ Se si commenta la riga di codice che utilizza `bind`, si rimuove il commento dalla riga di codice che chiama `addEventListener` senza `bind`, quindi si riesegue il codice, la funzione `dataReadyHandler` avrà esito negativo. In `dataReadyHandler`, ad esempio, `this.name` non sarà definito e `this.data()` restituirà un errore perché l'oggetto `this` non fa più riferimento all'oggetto dati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Metodo bind (Function)](../../javascript/reference/bind-method-function-javascript.md)

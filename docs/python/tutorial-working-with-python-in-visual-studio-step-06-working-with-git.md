@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>Passaggio 6: Uso di Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Visual Studio offre l'integrazione diretta con repository Git locali e che si trovano su servizi come GitHub e Visual Studio Team Services. L'integrazione include la clonazione di un repository, le modifiche di esecuzione del commit e la gestione dei rami.
 
-Questo argomento descrive la creazione di un repository Git locale per un progetto esistente. Per una panoramica sulla creazione di un progetto da un repository Git remoto, vedere [Guida introduttiva: clonare un repository di un codice Python in Visual Studio](quickstart-03-project-from-repository.md).
+Questo argomento descrive la creazione di un repository Git locale per un progetto esistente. Per una panoramica sulla creazione di un progetto da un repository Git remoto, vedere [Guida introduttiva: clonare un repository di un codice Python in Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Con un progetto aperto in Visual Studio, ad esempio il progetto del [passaggio precedente](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), fare clic col pulsante destro del mouse sulla soluzione e scegliere **Aggiungi soluzione al controllo del codice sorgente**. Visual Studio crea un repository Git locale che contiene il codice del progetto e visualizza i controlli correlati Git che vengono visualizzati anche nella parte inferiore della finestra di Visual Studio. I controlli visualizzano le esecuzioni di commit in sospeso, le modifiche, il nome del repository e il ramo. Passare il mouse sui controlli per visualizzare le informazioni aggiuntive.
 
@@ -67,6 +67,6 @@ Per le esercitazioni sugli approfondimenti sull'uso di Git, vedere [Condividere 
 Da qui è possibile esaminare i concetti e le guide sulle procedure, incluse le seguenti:
 
 - [Creazione di un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Pubblicazione nel servizio app di Azure](publishing-to-azure.md)
-- [Profilatura](profiling.md)
-- [Testing unità](unit-testing.md)
+- [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Profilatura](profiling-python-code-in-visual-studio.md)
+- [Testing unità](unit-testing-python-in-visual-studio.md)

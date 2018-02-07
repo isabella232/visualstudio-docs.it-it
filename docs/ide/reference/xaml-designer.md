@@ -4,23 +4,26 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
-ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: "1"
+ms.topic: reference
+f1_keywords:
+- VS.ToolsOptionsPages.XAMLDesigner
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
+
 Usare la pagina delle opzioni della **finestra di progettazione XAML** per specificare le modalità di formattazione di elementi e attributi nei documenti XAML. Per aprire questa pagina, scegliere **Opzioni** dal menu **Strumenti**. Per accedere alla pagina delle proprietà della **finestra di progettazione XAML**, scegliere il nodo **Finestra di progettazione XAML**. Le impostazioni della finestra di progettazione XAML vengono applicate quando si apre il documento. Quindi, se si apportano modifiche alle impostazioni, è necessario chiudere e riaprire Visual Studio per visualizzare le modifiche.
 
 > [!NOTE]
@@ -100,7 +103,7 @@ Usare queste impostazioni per determinare se viene eseguito il rendering degli e
 |**Rendering effetti**|Specifica se viene eseguito il rendering degli effetti quando si modificano i file XAML nella finestra di progettazione XAML usando Blend.|  
 |**Soglia zoom**|Specifica la percentuale di zoom con cui viene eseguito il rendering degli effetti quando la casella di controllo **Rendering effetti** è selezionata. Se si ingrandisce oltre questa impostazione, non viene più eseguito il rendering degli effetti nella finestra di progettazione XAML.|  
 
-## <a name="see-also"></a>Vedere anche  
- [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Procedura: Modificare le impostazioni di visualizzazione XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [Procedure dettagliate relative all'uso di XAML e del codice](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Vedere anche
+
+[XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)  
+[Procedura dettagliata: Prima applicazione desktop WPF](../../designers/walkthrough-my-first-wpf-desktop-application2.md)

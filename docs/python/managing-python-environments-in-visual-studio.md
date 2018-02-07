@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 146e3f80de674e6219d1f7c89ea4186b66ee310f
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-environments"></a>Ambienti Python
 
@@ -123,7 +123,7 @@ Include informazioni di base e comandi per l'ambiente:
 | --- | --- |
 | Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti) | Imposta l'ambiente attivo, facendo sì che Visual Studio non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
 | Visita il sito Web del server di distribuzione | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
-| Apri finestra interattiva | Apre la [finestra (REPL) interattiva](interactive-repl.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
+| Apri finestra interattiva | Apre la [finestra (REPL) interattiva](python-interactive-repl-in-visual-studio.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
 | Esplora gli script interattivi | Vedere [Script di avvio](#startup-scripts). |
 | Usa la modalità interattiva IPython | Se impostato, apre la finestra interattiva con IPython per impostazione predefinita. Questa inline abilitata viene tracciata come la sintassi estesa IPython quale `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Uso di IPython nella finestra interattiva](interactive-repl-ipython.md). |
 | Apri in PowerShell | Avvia l'interprete in una finestra di comando di PowerShell. |
@@ -137,7 +137,7 @@ Gli script di avvio contengono codice che la finestra interattiva carica ed eseg
 
 1. Quando si installa un ambiente, Visual Studio crea una cartella `Documents\Visual Studio 2017\Python Scripts\<environment>` dove &lt;environment&gt' corrisponde al nome dell'ambiente. È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra interattiva per tale ambiente, vengono caricati ed eseguiti tutti i file `.py` disponibili qui in ordine alfabetico.
 
-1. Il controllo **Script** nella scheda **Strumenti > Opzioni > Strumenti Python > 	Finestre interattive** (vedere [Opzioni delle finestre interattive](options.md#interactive-windows-options)) è destinato a specificare una cartella aggiuntiva per gli script di avvio che vengono caricati ed eseguiti in tutti gli ambienti. Tuttavia, questa funzionalità non è attualmente operativa.
+1. Il controllo **Script** nella scheda **Strumenti > Opzioni > Strumenti Python > 	Finestre interattive** (vedere [Opzioni delle finestre interattive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) è destinato a specificare una cartella aggiuntiva per gli script di avvio che vengono caricati ed eseguiti in tutti gli ambienti. Tuttavia, questa funzionalità non è attualmente operativa.
 
 ### <a name="configure-tab"></a>Scheda Configura
 
@@ -172,7 +172,7 @@ Nel secondo caso, poiché l'ambiente si trova in un'area protetta del file syste
 
 Selezionando **Eleva sempre quando si installano o rimuovono pacchetti** si impedisce la visualizzazione della finestra di dialogo per l'ambiente in questione. Per visualizzare nuovamente la finestra di dialogo, passare a **Strumenti > Opzioni > Strumenti Python > Generale** e selezionare il pulsante, **Ripristina tutte le finestre di dialogo nascoste in modo permanente**.
 
-In tale scheda, è anche possibile selezionare **Esegui sempre pip come amministratore** per eliminare la finestra di dialogo per tutti gli ambienti. Vedere [Opzioni - Scheda Generale](options.md#general-options).
+In tale scheda, è anche possibile selezionare **Esegui sempre pip come amministratore** per eliminare la finestra di dialogo per tutti gli ambienti. Vedere [Opzioni - Scheda Generale](python-support-options-and-settings-in-visual-studio.md#general-options).
 
 ### <a name="intellisense-tab"></a>Scheda IntelliSense
 
@@ -232,7 +232,7 @@ Uno degli svantaggi degli ambienti virtuali è che contengono percorsi di file h
 
 ## <a name="managing-required-packages-requirementstxt"></a>Gestione dei pacchetti necessari (requirements.txt)
 
-Se si condivide un progetto con altri utenti usando un sistema di compilazione oppure si intende [pubblicarlo in Microsoft Azure](template-azure-cloud-service.md), è necessario specificare i pacchetti esterni richiesti dal progetto. L'approccio consigliato prevede l'uso di un [file requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), che contiene un elenco dei comandi per pip e che consente di installare le versioni richieste di pacchetti dipendenti.
+Se si condivide un progetto con altri utenti usando un sistema di compilazione oppure si intende [pubblicarlo in Microsoft Azure](python-azure-cloud-service-project-template.md), è necessario specificare i pacchetti esterni richiesti dal progetto. L'approccio consigliato prevede l'uso di un [file requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), che contiene un elenco dei comandi per pip e che consente di installare le versioni richieste di pacchetti dipendenti.
 
 Dal punto di vista tecnico, per tenere traccia dei requisiti è possibile usare un qualsiasi nome file (usando `-r <full path to file>` quando si installa un pacchetto), ma Visual Studio fornisce supporto specifico per `requirements.txt`:
 

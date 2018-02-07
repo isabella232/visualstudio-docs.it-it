@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 
@@ -49,7 +50,7 @@ Per altre informazioni, vedere [Installazione del supporto di Python in Visual S
 
 1. Creare un nuovo progetto di Python in Visual Studio selezionando **File > Nuovo > Progetto**. Cercare "Python", selezionare il modello **Applicazione Python**, assegnare a questo un nome e un percorso appropriati e selezionare **OK**.
 
-1. Nel file `.py` del progetto, incollare il codice seguente che effettua il benchmark del calcolo di una tangente iperbolica, implementato senza usare la libreria matematica per un confronto più semplice. È anche possibile immettere il codice manualmente per provare alcune delle [funzionalità di modifica Python](code-editing.md).
+1. Nel file `.py` del progetto, incollare il codice seguente che effettua il benchmark del calcolo di una tangente iperbolica, implementato senza usare la libreria matematica per un confronto più semplice. È anche possibile immettere il codice manualmente per provare alcune delle [funzionalità di modifica Python](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -288,7 +289,7 @@ Visual Studio supporta il debug di codice Python e C++ insieme.
 
     ![Interruzione in un punto del codice C++](media/cpp-debugging.png)
 
-1. A questo punto è possibile eseguire il codice C++ istruzione per istruzione, esaminare le variabili e così via. Queste funzionalità sono descritte in dettaglio in [Debug di codice Python e C++ in contemporanea](debugging-mixed-mode.md).
+1. A questo punto è possibile eseguire il codice C++ istruzione per istruzione, esaminare le variabili e così via. Queste funzionalità sono descritte in dettaglio in [Debug di codice Python e C++ in contemporanea](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Approcci alternativi
 

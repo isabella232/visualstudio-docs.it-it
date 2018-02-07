@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
 Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate alla categoria **Debug**, `DTE.Properties("Debugging", <Property Page>)` della finestra di dialogo **Opzioni**.  
@@ -39,7 +41,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 |ShowAllMembers|Get/Set (Boolean)|Per gli oggetti non utente, determina se il debugger visualizza tutti i membri degli oggetti nelle finestre delle variabili. Questa opzione ha effetto solo se Just My Code è abilitato.|  
 |WarnIfNoUserCode|Get/Set (Boolean)|Determina se il debugger genera un avviso quando l'utente tenta di connettersi a un processo che non include il codice utente. Questa opzione ha effetto solo se Just My Code è abilitato.|  
 |EnablePropertyEvaluation|Get/Set (Boolean)|Determina se il debugger valuta automaticamente le proprietà e le chiamate a funzioni implicite nel codice gestito.|  
-|CallStringConversion|Get/Set (Boolean)|Determina se il debugger chiama in modo implicito una funzione di conversione delle stringhe su oggetti nelle finestre delle variabili. Questa opzione si applica solo al codice C# e JScript.|  
+|CallStringConversion|Get/Set (Boolean)|Determina se il debugger chiama in modo implicito una funzione di conversione delle stringhe su oggetti nelle finestre delle variabili.|  
 |EnableSourceServer|Get/Set (Boolean)|Determina se il debugger può accedere al codice da un server di origine.|  
 |PrintSourceServerDiagnostics|Get/Set (Boolean)|Determina se nella finestra di output vengono visualizzati messaggi diagnostici relativi al server di origine. Questa opzione non ha alcun effetto a meno che non sia abilitato l'accesso al server di origine.|  
 |HighlightEntireLine|Get/Set (Boolean)|Determina se il debugger evidenzia un'intera riga per i punti di interruzione e l'istruzione corrente.|  

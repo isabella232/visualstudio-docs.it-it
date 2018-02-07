@@ -5,22 +5,24 @@ ms.custom:
 ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: python
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-dev_langs: python
+dev_langs:
+- python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: a28c124ae560edca6451ed70d13c28b4138772d1
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -146,6 +148,6 @@ La procedura della Guida introduttiva è stata completata: si sono appresi alcun
 > [!div class="nextstepaction"]
 > [Esercitazione: Introduzione a Python in Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
-- Informazioni sui [modelli di app Web Python in Visual Studio](../python/template-web.md)
-- Informazioni su [debug Python](../python/debugging.md)
+- Informazioni sui [modelli di app Web Python in Visual Studio](../python/python-web-application-project-templates.md)
+- Informazioni su [debug Python](../python/debugging-python-in-visual-studio.md)
 - Altre informazioni sull'[ambiente IDE di Visual Studio](../ide/visual-studio-ide.md)
