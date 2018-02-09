@@ -1,5 +1,5 @@
 ---
-title: Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio | Visual Studio Marketplace
+title: Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,15 +9,15 @@ Description: Learn how to locate and download Microsoft products included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d5826576cb0e36c0c8a6a145bc6ed3f34d2d43cc
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.  
-È necessario aver eseguito l'accesso alla propria sottoscrizione per accedere alla scheda [Download](https://my.visualstudio.com/downloads). 
+È necessario aver eseguito l'accesso alla propria sottoscrizione per accedere alla scheda [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs). 
 
 ## <a name="product-availability"></a>Disponibilità dei prodotti
 In generale, tutti i prodotti commerciali e consumer di Microsoft utili per progetti di sviluppo software vengono resi disponibili ai sottoscrittori di Visual Studio. Con le sottoscrizioni di Visual Studio i prodotti rimangono in genere disponibili per il download per lungo tempo (anche dopo la scadenza del periodo di supporto tecnico esteso) per consentire ai clienti di sviluppare e testare applicazioni legacy prima di passare a piattaforme più recenti. In alcuni casi non è tuttavia possibile offrire specifici prodotti ai sottoscrittori, come indicato di seguito, benché Microsoft si impegni a ridurre al minimo tali circostanze.
@@ -34,10 +34,12 @@ I possibili motivi in seguito ai quali determinati prodotti potrebbero non esser
 ## <a name="what-do-i-get"></a>Che cosa si ottiene?
 Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'appartenenza ai programmi.  Per chi possiede una sottoscrizione standard di Visual Studio Enterprise, ad esempio, potrebbero essere disponibili download diversi da quelli di chi ha ottenuto la propria sottoscrizione tramite un programma Microsoft Partner Network o BizSpark.  Per altre informazioni sui download disponibili per ogni livello di sottoscrizione, scaricare l'elenco di [Prodotti per livello benefici](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Come trovare i download nel portale sottoscrittore? 
 Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Se ad esempio si possiede una sottoscrizione di Visual Studio Professional e un'appartenenza di Visual Studio Dev Essentials associate allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione di livello professionale, anche se si stanno visualizzando i vantaggi di Dev Essentials.  
 
-Quando si visita la pagina [Download](https://my.visualstudio.com/downloads/featured) è possibile osservare i download popolari organizzati in gruppi per tipo di prodotto.  È possibile selezionare uno dei download popolari visualizzati o cercare qualsiasi prodotto tramite la barra di ricerca nella parte superiore della pagina. 
+Quando si visita la pagina [Download](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) è possibile osservare i download popolari organizzati in gruppi per tipo di prodotto.  È possibile selezionare uno dei download popolari visualizzati o cercare qualsiasi prodotto tramite la barra di ricerca nella parte superiore della pagina. 
 
 ![Pagina dei download per i sottoscrittori](_img\subscriber-downloads\subscriber-downloads-resized.png)
 

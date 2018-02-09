@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 ## <a name="signing-in-to-the-portal"></a>Accesso al portale
@@ -31,7 +31,7 @@ Se la sottoscrizione di Visual Studio è stata acquistata tramite Microsoft Stor
 #### <a name="workschool-accounts"></a>Account aziendale o dell'istituto di istruzione
 Se la sottoscrizione è stata offerta dall'azienda o dall'istituto di istruzione, l'utente avrà ricevuto un messaggio di benvenuto.  
 1.  Visitare il [Portale sottoscrittore](https://my.visualstudio.com/)
-2.  Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nella **Lettera di benvenuto** al sottoscrittore. Se la Lettera di benvenuto non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
+2.  Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nel messaggio di posta elettronica di benvenuto al sottoscrittore. Se non si riceve il messaggio di posta elettronica di benvenuto, controllare nelle cartelle della posta indesiderata.
 3.  Fare clic su **Continua**
 4.  Si verrà reindirizzati alla pagina di accesso aziendale.
 5.  Immettere la password.
@@ -44,7 +44,7 @@ Se l'organizzazione ha Azure Active Directory ma l'utente non possiede un accoun
 1.  Visitare il [Portale sottoscrittore](https://my.visualstudio.com)
 2.  Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nella **Lettera di benvenuto** al sottoscrittore.  Se il messaggio di benvenuto non è stato ricevuto, controllare nelle cartelle di posta indesiderata.
 3.  Fare clic su **Continua**
-4.  Si verrà reindirizzati a una **pagina di decisione**.   Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è assegnata a un account **aziendale o dell'istituto di istruzione** associato a un tenant di Azure Active Directory (AAD).  Selezionare **Personale** se la sottoscrizione è associata a un indirizzo di posta elettronica **aziendale** ma è stata anche convertita in un account Microsoft (MSA) **personale**
+4.  Si verrà reindirizzati a una **pagina di decisione**.   Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è assegnata a un account **aziendale o dell'istituto di istruzione** associato a un tenant di Azure Active Directory (AAD).  Selezionare **Personale** se la sottoscrizione è associata a un indirizzo di posta elettronica **aziendale** ma è stata anche convertita in un account Microsoft (MSA) **personale**.
 5.  Immettere la password
 6.  Fai clic su **Accedi** 
 

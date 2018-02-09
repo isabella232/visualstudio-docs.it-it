@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -92,6 +92,6 @@ Se si modifica `newPropertyValue` in `m_property`, tutte le istanze di `newPrope
 [Procedura: Distribuire i frammenti di codice](../ide/how-to-distribute-code-snippets.md)  
 [Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)  
 [Risoluzione dei problemi relativi ai frammenti di codice](../ide/troubleshooting-snippets.md)  
-[Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md)  
+[Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)  
 [Frammenti di codice Visual C++](../ide/visual-cpp-code-snippets.md)  
 [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

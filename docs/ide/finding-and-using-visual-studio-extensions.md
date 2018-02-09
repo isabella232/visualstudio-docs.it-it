@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare altre estensioni di Visual Studio
 
@@ -31,7 +34,7 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
 È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per installare estensioni ed esempi di Visual Studio da siti Web e da altri percorsi e quindi abilitarli, disabilitarli, aggiornarli o disinstallarli (**Strumenti / Estensioni e aggiornamenti**oppure digitare **Estensioni** nella finestra **Avvio veloce** ). Nella finestra di dialogo vengono visualizzati anche gli aggiornamenti per le estensioni e gli esempi installati. È anche possibile scaricare estensioni da siti Web od ottenerle da altri sviluppatori.
 
 > [!NOTE]
-> A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Marketplace verranno aggiornate automaticamente.  È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
+> A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Marketplace vengono aggiornate automaticamente. È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
 
 ## <a name="finding-visual-studio-extensions"></a>Ricerca delle estensioni di Visual Studio
 
@@ -66,24 +69,26 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 > [!NOTE]
 > A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
 
-## <a name="extension-crash-notifications"></a>Notifiche di arresto anomalo dell'estensione
+## <a name="extension-crashunresponsiveness-notifications"></a>Notifiche di arresto anomalo o blocco di un'estensione
 
-In Visual Studio 2017 (versione 15.3 - anteprima), Visual Studio notifica l'utente se sospetta che un'estensione è stata interessata da un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, presenta una notifica con un messaggio simile a:
+Una novità di **Visual Studio 2017 versione 15.3** prevede che Visual Studio notifichi l'utente se sospetta che un'estensione è stata coinvolta in un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, visualizza una notifica.
 
-"Una sessione precedente è stata terminata in modo imprevisto. Per evitare problemi analoghi, provare a disabilitare l'estensione."
+Un'altra novità di **Visual Studio versione 15.6 preview 3** prevede che Visual Studio invii una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
 
-È possibile ignorare la notifica o eseguire una delle azioni seguenti:
+Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica o eseguire una delle azioni seguenti:
 
 - Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera è possibile riabilitare l'estensione nella finestra di dialogo **Estensioni e aggiornamenti**.
 
-- Scegliere **Don’t show again for this extension** (Non visualizzare più per questa estensione). L'IDE non visualizzerà più notifiche per gli arresti anomali del sistema associati a questa estensione, ma visualizzerà le notifiche per gli arresti anomali associati ad altre estensioni.
+- Scegliere **Non visualizzare più questo messaggio**. 
+  - Se la notifica riguarda un arresto anomalo in una sessione precedente, Visual Studio non visualizzerà più una notifica quando si verifica un arresto anomalo associato a questa estensione. Visual Studio visualizzerà comunque le notifiche in caso di blocco associabile all'estensione o per arresti anomali o blocchi che possono essere associati ad altre estensioni. 
+  - Se la notifica riguarda un blocco, l'IDE non visualizzerà più una notifica quando questa estensione è associata al blocco. Visual Studio visualizzerà comunque notifiche correlate all'arresto anomalo per questa estensione e correlate ad arresti anomali o blocchi per altre estensioni. 
 
-- Scegliere **Learn more** (Altre informazioni) per visualizzare questo argomento della Guida nel browser predefinito.
+- Scegliere **Altre informazioni** per visualizzare questa pagina.
 
-- Scegliere il pulsante **X** al termine della notifica per ignorarla. Se la stessa estensione è coinvolta in un arresto anomalo del sistema in una sessione futura, la notifica verrà visualizzata nuovamente.
+- Scegliere il pulsante **X** al termine della notifica per ignorarla. Verrà visualizzata una nuova notifica per le istanze future dell'estensione associata a un arresto anomalo o al blocco dell'interfaccia utente.
 
 > [!NOTE]
-> Una notifica di arresto anomalo del sistema indica solo che uno dei moduli dell'estensione era nello stack per l'arresto anomalo del sistema. Ciò non significa necessariamente che l'estensione stessa abbia causato l'arresto anomalo del sistema. È possibile che l'estensione abbia chiamato del codice che fa parte di Visual Studio e che tale codice abbia causato l'arresto anomalo del sistema. Tuttavia, la notifica può rivelarsi ancora utile se lo scenario che ha comportato l'arresto anomalo del sistema non è importante. In questo caso, la disabilitazione dell'estensione evita l'arresto anomalo del sistema in futuro senza influire sulla produttività.
+> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione abbia chiamato codice che fa parte di Visual Studio, che a sua volta ha causato il blocco dell'interfaccia utente o l'arresto anomalo. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività. 
 
 ## <a name="sample-master-copies-and-working-copies"></a>Copie master e copie di lavoro di esempio
 

@@ -11,17 +11,19 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
+
 Questa procedura dettagliata illustra come usare un'origine dati definita in un file app.config per gli unit test. Viene mostrato come creare un file app.config che definisce un'origine dati che può essere usata dalla classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Le attività incluse nella procedura dettagliata sono le seguenti:  
   
 -   Creazione di un file app.config.  
@@ -35,7 +37,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 -   Accesso alle origini dati tramite la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per completare questa procedura dettagliata, è necessario disporre di:  
+ Per completare questa procedura dettagliata, è necessario:  
   
 -   Visual Studio Enterprise  
   
@@ -148,20 +150,20 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- L'elemento `microsoft.visualstudio.testtools` dovrebbe essere simile al seguente:  
-  
-```  
+L'elemento `microsoft.visualstudio.testtools` dovrebbe essere simile al seguente:
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Il file app.config finale dovrebbe essere simile al seguente:  
-  
-```  
+```
+
+Il file app.config finale dovrebbe essere simile al seguente:
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +219,11 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Per creare uno unit test usando le origini dati in app.config  
   
-1.  Aggiungere uno unit test al progetto di test.  
-  
-     Per altre informazioni, vedere [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Aggiungere uno unit test al progetto di test.
   
 2.  Sostituire il contenuto generato automaticamente dello unit test con il codice seguente:  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +264,11 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 3.  Esaminare gli attributi DataSource. Notare i nomi delle impostazioni nel file app.config.  
   
 4.  Compilare la soluzione ed eseguire i test MyTestMethod e MyTestMethod2.  
-  
+
 > [!IMPORTANT]
->  Distribuire gli elementi come origini dati in modo che siano accessibili al test nella directory di distribuzione.  
-  
+> Distribuire gli elementi come origini dati in modo che siano accessibili al test nella directory di distribuzione.
+
 ## <a name="see-also"></a>Vedere anche
 
 [Eseguire unit test del codice](../test/unit-test-your-code.md)  
-[Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Procedura: Creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md)

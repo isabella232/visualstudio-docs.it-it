@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # Quali sono le opzioni di pubblicazione più adatte?
 
@@ -31,26 +34,22 @@ Dall'interno di Visual Studio le applicazioni Web possono essere pubblicate dire
 
 Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione esistente, importare un profilo esistente o crearne uno nuovo usando le opzioni descritte di seguito.
 
-## Servizio app di Azure
+## App Web di Servizio app di Azure
 
-[Servizio app di Azure](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) consente agli sviluppatori di creare rapidamente un'ampia gamma di servizi e applicazioni Web scalabili senza gestire l'infrastruttura.
+Le [app Web di Servizio app di Azure](/azure/app-service/app-service-web-overview) (o semplicemente app Web) consentono agli sviluppatori di creare rapidamente un'ampia gamma di servizi e applicazioni Web scalabili senza gestire l'infrastruttura.
 
-Per le applicazioni Web in particolare, un servizio app è un contenitore per un'[*app Web*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/) che si può paragonare a un host Web tradizionale. Vale a dire, un'app Web offre le risorse di elaborazione necessarie per eseguire il codice lato server e renderlo disponibile su Internet.
-
-Per determinare la potenza di calcolo di un'app Web, scegliere un [piano tariffario](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) per il servizio app che la contiene. È possibile fare in modo che più app Web (e altri tipi di app) condividano lo stesso servizio app senza modificare il piano tariffario. Ad esempio, è possibile ospitare app Web di sviluppo, gestione temporanea e produzione insieme nello stesso servizio app.
+Per determinare la potenza di calcolo di un'app Web, scegliere un [piano tariffario](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) per il servizio app che la contiene. È possibile fare in modo che più app Web (e altri tipi di app) condividano lo stesso servizio app senza modificare il piano tariffario. Ad esempio, è possibile ospitare app Web di sviluppo, gestione temporanea e produzione insieme nello stesso servizio app.
 
 Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azure, ma tali macchine vengono gestite automaticamente. A ogni app Web di un servizio app verrà assegnato un URL \*.azurewebsites.net univoco. Tutti i piani tariffari diversi da quello gratuito consentono l'assegnazione di nomi di dominio personalizzati al sito.
 
-### Quando scegliere Servizio App di Azure
+### Quando scegliere le app Web di Servizio App di Azure
 
 - Si vuole distribuire un'applicazione Web accessibile via Internet.
 - Si vuole adeguare automaticamente l'applicazione Web in base alla richiesta senza doverla ridistribuire.
 - Non si vuole gestire l'infrastruttura di server, inclusi gli aggiornamenti software.
 - Non sono necessarie personalizzazioni a livello di computer sui server che ospitano l'applicazione Web.
 
-
 > Per usare Servizio app di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
-
 
 ## Macchine virtuali di Azure
 

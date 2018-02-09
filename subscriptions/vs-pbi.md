@@ -1,29 +1,58 @@
 ---
-title: Vantaggio Power BI Pro
+title: Vantaggio Power BI Pro nelle sottoscrizioni di Visual Studio | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 1/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Power BI Pro subscription included with your Visual Studio subscription.
+Description: Learn about the Power BI Pro subscription included with selected Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 905ac7f211a419c1214338b600e08b1be8970b89
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: d7470903db579dff7a4bc0fd17a26e6b5494d675
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="activating-the-power-bi-pro-benefit-in-visual-studio-subscriptions"></a>Attivazione del vantaggio Power BI Pro nelle sottoscrizioni di Visual Studio
+# <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
-Power BI Pro consente di sviluppare, testare e distribuire componenti aggiuntivi per Office e SharePoint.  Include un sito per sviluppatori di SharePoint Online con un tenant. 
+## <a name="overview"></a>Panoramica
+Trasformare i dati in oggetti visivi avanzati da raccogliere e organizzare. 
 
+## <a name="eligibility"></a>Idoneità
+| Livello di sottoscrizione/Programma                                                  | Vantaggio               | Rinnovabile?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise Standard                                             | Included              |  Yes                                                               |
+| Visual Studio Enterprise (annuale)                                               | Included              |  Yes                                                               |
+| Visual Studio Enterprise (mensile)                                              | Non disponibile         |                                                                    |
+| Visual Studio Professional Standard                                           | Non disponibile         |                                                                    |
+| Visual Studio Professional (annuale)                                             | Non disponibile         |                                                                    | 
+| Visual Studio Professional (mensile)                                            | Non disponibile         |                                                                    |
+| Visual Studio Test Pro                                                        | Non disponibile         |                                                                    |
+| MSDN Platforms                                                                | Included              |  Yes                                                               |
+| Visual Studio Dev Essentials                                                  | Non disponibile         |                                                                    |
+| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Included              |  Yes                                                               |
+| Visual Studio Enterprise - FTE                                                | Non disponibile         |                                                                    |
+| Visual Studio Enterprise - Microsoft Partner Network                          | Non disponibile         |                                                                    |
+| Visual Studio Professional - Microsoft Partner Network                        | Non disponibile         |                                                                    |
+| Visual Studio Enterprise - Imagine (Standard)                                 | Non disponibile         |                                                                    |
+| Visual Studio Enterprise - Imagine (Premium)                                  | Non disponibile         |                                                                    |
+| Visual Studio Enterprise - BizSpark                                           | Included              |  Yes                                                               |
+| Microsoft Certified Trainer - Software & Services                             | Included              |  Yes                                                               |
+| Microsoft Certified Trainer - Developer Software & Services                   | Included              |  Yes                                                               |
+
+<sup>1</sup>  *Include Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
+
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+
+## <a name="activation-steps"></a>Procedura di attivazione
 Per usare Power BI Pro, è necessario configurare un account o accedere con un account esistente. 
-1.  Fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Si riceverà la notifica del recupero del codice.  Fare clic su **Attiva**. 
+1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+
+2.  Individuare il riquadro di Power BI Pro nella sezione Strumenti nella pagina Vantaggi. Fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Si riceverà la notifica del recupero del codice.  Fare clic su **Attiva**. 
 
     ![Riquadro del vantaggio Power BI Pro](_img\vs-pbi\vs-pbi-tile.png)  
-
 
 2. Se l'utente ha attivato in precedenza altri vantaggi specifici della sottoscrizione, ad esempio l'abbonamento a Office 365 Developer o a Enterprise Mobility + Security, può già avere un account.  Se viene trovato un account esistente, è possibile scegliere se aggiungere la sottoscrizione di Power BI Pro all'account esistente o registrare un nuovo account.  È consigliabile aggiungerla all'account esistente per accedere ai diversi vantaggi con un unico ID utente.  
 
@@ -64,3 +93,14 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 
 
 11. Ora che l'account di Power BI Pro è configurato, viene visualizzata l'interfaccia di amministrazione di Office 365, in cui è possibile gestire utenti e domini, installare il software di Office e trovare informazioni su Office 365.  I commenti  È tutto pronto per iniziare. 
+
+## <a name="faq"></a>Domande frequenti
+*Vedere qui per aggiornamenti*
+
+## <a name="support-resources"></a>Risorse di supporto
+-  Serve aiuto con Power BI Pro?  
+    - Vedere la [documentazione online](/power-bi/).
+    - Problemi durante l'iscrizione?  Vedere [Iscrizione a Power BI come utente singolo](/power-bi/service-self-service-signup-for-power-bi)
+    - Esplorare i problemi principali, ottenere assistenza dalla community o inviare un ticket di supporto nella [pagina del supporto tecnico](https://powerbi.microsoft.com/support/).
+-  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 

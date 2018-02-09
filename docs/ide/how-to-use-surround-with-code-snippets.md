@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Surround-with snippets
 - snippets [C#], using Surround With
 ms.assetid: 23e5288e-7897-417a-9ded-cf60dfc889ee
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b67cf22f38366625d8aa7ff59ad1603a24074882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d1cff0a8689635e55caf1e0ad1156fc97aa7bdbd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: utilizzare frammenti di codice racchiusi
 Nelle procedure illustrate di seguito viene descritto come usare frammenti di codice racchiusi. I frammenti di codice racchiusi sono disponibili in tre modi: tramite un tasto di scelta rapida, dal menu Modifica e tramite il menu di scelta rapida.  
@@ -60,5 +62,5 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
      In alternativa, è possibile digitare il nome del frammento di codice e premere TAB o INVIO.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md)   
+ [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)   
  [Selezione frammento di codice](../ide/reference/code-snippet-picker.md)

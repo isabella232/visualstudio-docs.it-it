@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 I frammenti di codice IntelliSense sono parti di codice già create e pronte per essere inserite nell'applicazione con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questi frammenti di codice consentono di incrementare la produttività riducendo la quantità di tempo dedicata alla digitazione di codice ripetitivo o alla ricerca di esempi. È possibile usare l'XML Schema dei frammenti di codice IntelliSense per creare frammenti di codice personali e aggiungerli ai frammenti di codice già inclusi in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -240,7 +242,7 @@ Sono disponibili tre attributi per l'elemento Code:
  Specifica una funzione da eseguire quando il valore letterale o l'oggetto ricevono lo stato attivo in Visual Studio.  
   
 > [!NOTE]
->  L'elemento `Function` è supportato solo nei frammenti di codice di Visual C#.  
+>  L'elemento `Function` è supportato solo nei frammenti di codice di C#.  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ Sono disponibili tre attributi per l'elemento Code:
   
 -   `Expansion`: consente di inserire il frammento di codice in corrispondenza della posizione del cursore.  
   
--   `Refactoring`: specifica che il frammento di codice viene usato durante il refactoring di Visual C#. Non è possibile usare il `Refactoring` nei frammenti di codice personalizzati.  
+-   `Refactoring`: specifica che il frammento di codice viene usato durante il refactoring di C#. Non è possibile usare il `Refactoring` nei frammenti di codice personalizzati.  
   
 ##  <a name="snippettypes"></a> Elemento SnippetTypes  
  Raggruppa singoli elementi `SnippetType`. Se l'elemento `SnippetTypes` non è presente, il frammento di codice può essere inserito ovunque nel codice.  

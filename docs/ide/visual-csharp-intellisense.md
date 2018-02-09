@@ -1,5 +1,5 @@
 ---
-title: IntelliSense per Visual C# | Microsoft Docs
+title: IntelliSense per C# | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
+# <a name="c-intellisense"></a>IntelliSense per C#
 
-IntelliSense per Visual C# è disponibile durante la codifica nell'editor e durante il debug nella finestra di comando [Modalità immediata](../ide/reference/immediate-window.md).
+IntelliSense per C# è disponibile durante la scrittura del codice nell'editor e durante il debug nella finestra di comando [Modalità immediata](../ide/reference/immediate-window.md).
 
 ## <a name="completion-lists"></a>Elenchi di completamento
 
-Gli elenchi di completamento di IntelliSense in Visual C# contengono token di Elenca membri, Completa parola e altri ancora. Forniscono funzionalità di accesso rapido a:
+Gli elenchi di completamento di IntelliSense in C# contengono token di Elenca membri, Completa parola e altri ancora. Forniscono funzionalità di accesso rapido a:
 
 - Membri di un tipo o spazio dei nomi
 
@@ -42,15 +43,15 @@ L’Elenco di completamento in C# può escludere i token irrilevanti e preselezi
 
 ## <a name="code-snippets-in-completion-lists"></a>Frammenti di codice negli elenchi di completamento
 
-In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut) del frammento di codice. Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).
+In C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [testo del collegamento](../ide/code-snippets-schema-reference.md#shortcut) del frammento di codice. Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in C#, vedere [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Parole chiave del linguaggio negli elenchi di completamento
 
-In Visual C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](/dotnet/csharp/language-reference/keywords/index).
+In C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Metodi Estensione negli elenchi di completamento
 
-In Visual C#, l'elenco di completamento include i metodi estensione che appartengono a un ambito.
+In C#, l'elenco di completamento include i metodi estensione che rientrano nell'ambito.
 
 > [!NOTE]
 > Nell'elenco di completamento non vengono visualizzati tutti i metodi di estensione degli oggetti <xref:System.String>.
@@ -59,9 +60,9 @@ I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per
 
 ## <a name="filtered-completion-lists"></a>Elenchi di completamento filtrati
 
-I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri. In Visual C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:
+I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri. In C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:
 
-- **Interfacce e classi di base**: IntelliSense rimuove automaticamente le voci dagli elenchi di completamento per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi base dall'elenco di completamento perché Visual C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.
+- **Interfacce e classi di base**: IntelliSense rimuove automaticamente le voci dagli elenchi di completamento per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi di base dall'elenco di completamento perché C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.
 
 - **Attributi**: quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo i tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.
 
