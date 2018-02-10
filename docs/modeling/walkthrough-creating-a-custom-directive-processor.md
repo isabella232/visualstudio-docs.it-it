@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e50e433ea3f954efd085a02a3e29a0eff958da0c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 94008906dbc38a22e0f27de1a13acbccae8df7a4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: creazione di un processore di direttiva personalizzato
 *Processori di direttiva* funzionano aggiungendo codice per il *classe della trasformazione generata*. Se si chiama un *direttiva* da un *modello di testo*, il resto del codice che scrive nel modello di testo può basarsi sulle funzionalità che la direttiva fornisce.  
@@ -88,9 +89,9 @@ End Property
   
 2.  Aggiungere riferimenti a questi assembly:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*,0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **TextTemplating. \*,0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
 3.  Sostituire il codice in **Class1** con il codice seguente. Questo codice definisce una classe CustomDirectiveProcessor che eredita dalla classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa i metodi necessari.  
   

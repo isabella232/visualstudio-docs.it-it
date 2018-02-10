@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 
@@ -106,7 +106,7 @@ Innanzitutto, creare una libreria di classi semplice.
   
 2.  Nella finestra Elenco errori, fare clic su **avvisi** e quindi fare clic su di **descrizione** intestazione di colonna per ordinare gli avvisi in ordine alfanumerico.  
   
-     In un'applicazione reale, vorrebbero correggere eventuali violazioni delle regole corrispondente a questo punto, o, facoltativamente, disattivare o eliminare una regola se è possibile determinare che non è necessario correggere. Per ulteriori informazioni, vedere [esclusione di avvisi mediante l'attributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     In un'applicazione reale, vorrebbero correggere eventuali violazioni delle regole corrispondente a questo punto, o, facoltativamente, disattivare o eliminare una regola se è possibile determinare che non è necessario correggere. Per ulteriori informazioni, vedere [esclusione di avvisi](../code-quality/in-source-suppression-overview.md).
   
 3.  Si noti gli avvisi CA1704. Tali violazioni di questa regola indicano che è "consigliabile fornire un nome più significativo per i parametri." È stato possibile risolvere il problema nel codice oppure è possibile disabilitare la regola, come illustrato nella procedura successiva.  
   

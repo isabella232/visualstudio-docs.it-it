@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a5351c359f708eeb1d2a9aa030f5b82337d38d56
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]deve essere già installato nel computer di destinazione.  
@@ -75,7 +76,7 @@ ms.lasthandoff: 01/13/2018
   
 1.  Impostare `InstalledByMsi` nel manifesto dell'estensione. Ciò impedisce il VSX viene installato e disinstallato tranne per il file MSI. Questo è importante se si include altri componenti in MSI.  
   
-    1.  Aprire DslPackage\source.extension.tt  
+    1.  Open DslPackage\source.extension.tt  
   
     2.  Inserire la riga seguente prima di `<SupportedProducts>`:  
   
@@ -101,7 +102,7 @@ ms.lasthandoff: 01/13/2018
   
 5.  Aggiungere **CreateMsiSetupProject.tt** al progetto Dsl.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]verrà creato un file denominato **CreateMsiSetupProject.vdproj**.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà creato un file denominato **CreateMsiSetupProject.vdproj**.  
   
 6.  In Esplora risorse, la copia Dsl\\vdproj in una nuova cartella denominata il programma di installazione.  
   

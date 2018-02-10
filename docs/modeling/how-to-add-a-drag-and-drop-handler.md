@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e0edadfeffa5d26ed3d1540d6ae15cda1648c809
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 61eff22f3a666f067f4a1eddd8ecab84429fea21
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
 È possibile aggiungere al linguaggio DSL gestori per gli eventi di trascinamento della selezione, in modo che gli utenti possano trascinare gli elementi sul diagramma da altri diagrammi o da altre parti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È possibile aggiungere gestori anche per eventi come il doppio clic. Insieme, i gestori di trascinamento e rilascio e fare doppio clic sono note come *gestori di movimento*.  

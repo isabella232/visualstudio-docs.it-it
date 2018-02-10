@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: UML, modeling architecture
+helpviewer_keywords:
+- UML, modeling architecture
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ce471f2229744c9ee72f16a3b784f9e09823375d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 3d77abff4595502ab27f56be10cb973361eef413
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="model-your-app39s-architecture"></a>Modello dell'applicazione &#39; architettura s
 Per garantire che il sistema software o l'applicazione soddisfa degli utenti è necessario, è possibile creare modelli in Visual Studio come parte della descrizione della struttura complessiva e il comportamento di sistema software o dell'applicazione. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.  

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Debug di un modello di testo T4
 È possibile impostare i punti di interruzione nei modelli di testo. Per eseguire il debug di un modello di testo in fase di progettazione, salvare il file di modello di testo e quindi scegliere **Debug modello T4** nel menu di scelta rapida del file in Esplora soluzioni. Per eseguire il debug di un modello di testo in fase di esecuzione, è sufficiente eseguire il debug dell'applicazione a cui appartiene.  
@@ -46,7 +47,7 @@ ms.lasthandoff: 01/13/2018
 |Il percorso '{0}' deve essere locale al computer o parte dell'area attendibile.|Si verifica quando una direttiva o una direttiva assembly fa riferimento a un file non presente nel computer locale o in area siti attendibili di rete.|Assicurarsi che la directory in cui la direttiva o direttive dell'assembly si trovano nell'area attendibile. È possibile aggiungere una directory di rete per l'area siti attendibili tramite Internet Explorer.|  
 |Più errori di sintassi, ad esempio "Non valido token ' catch'" o "uno spazio dei nomi non può contenere direttamente membri"|Troppe parentesi graffe di chiusura nel codice del modello. Il compilatore confonde con il codice di generazione standard.|Controllare il numero di parentesi graffe e le parentesi all'interno di delimitatori di codice di chiusura.|  
 |Cicli condizionali non compilato o eseguito correttamente. Ad esempio: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Questo codice genera sempre il valore di è. Solo "numero è:" è condizionale.|In c#, utilizzare sempre le parentesi graffe per racchiudere i blocchi di testo incorporati nelle istruzioni di controllo.|Aggiungere le parentesi graffe: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"Espressione troppo complessa" quando l'elaborazione di un modello in fase di progettazione o la compilazione di un modello di runtime (pre-elaborato).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]smette di funzionare quando si tenta di controllare il codice generato da un modello di runtime.|Blocco di testo è troppo lungo. Blocchi di testo T4 converte un'espressione di concatenazione di stringa, con una stringa letterale per ogni riga del modello. Blocchi di testo molto lunghi possono oltrepassare i limiti delle dimensioni del compilatore.|Suddividere il blocco di testo lungo con un blocco di espressione, ad esempio:<br /><br /> `<#= "" #>`|  
+|"Espressione troppo complessa" quando l'elaborazione di un modello in fase di progettazione o la compilazione di un modello di runtime (pre-elaborato).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] smette di funzionare quando si tenta di controllare il codice generato da un modello di runtime.|Blocco di testo è troppo lungo. Blocchi di testo T4 converte un'espressione di concatenazione di stringa, con una stringa letterale per ogni riga del modello. Blocchi di testo molto lunghi possono oltrepassare i limiti delle dimensioni del compilatore.|Suddividere il blocco di testo lungo con un blocco di espressione, ad esempio:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Correzioni e le descrizioni di avviso  
  Nella tabella seguente elenca gli avvisi più comuni insieme alle correzioni, se disponibile.  

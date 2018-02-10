@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, diagram
+helpviewer_keywords:
+- Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1742e157b987cf7ce25eb60dfa44ce6dad64d84d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 04da9b7cd82533601a77fcb434f4e7e835930245
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personalizzazione della presentazione nel diagramma
 Il diagramma è l'area di presentazione principale di una finestra di progettazione di linguaggio specifico di dominio. In genere, gli utenti usano il diagramma per costruire i modelli. È possibile personalizzare il diagramma come descritto negli argomenti seguenti.  

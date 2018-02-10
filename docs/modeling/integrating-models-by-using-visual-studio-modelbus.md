@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus fornisce un metodo per la creazione di collegamenti tra i modelli e da altri strumenti nei modelli. Ad esempio, è stato possibile collegare i modelli di linguaggio specifico di dominio (DSL) e i modelli UML. È anche possibile creare un set integrato di DSL.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fornisce un metodo per la creazione di collegamenti tra i modelli e da altri strumenti nei modelli. Ad esempio, è stato possibile collegare i modelli di linguaggio specifico di dominio (DSL) e i modelli UML. È anche possibile creare un set integrato di DSL.  
   
  ModelBus consente di creare un riferimento univoco a un modello o a un elemento specifico all'interno di un modello. Questo riferimento può essere archiviato all'esterno del modello, ad esempio in un elemento in un altro modello. Quando, ad esempio, in un momento successivo uno strumento vuole ottenere l'accesso all'elemento, l'infrastruttura ModelBus caricherà il modello appropriato e restituirà l'elemento. Se si vuole, è possibile mostrare il modello all'utente. Se non è possibile accedere al file nel percorso precedente, ModelBus chiederà all'utente di trovarlo. Se l'utente trova il file, ModelBus correggerà tutti i riferimenti al file in questione.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/13/2018
  Nella cartella `ModelBusAdapters\bin\*` sono contenuti gli assembly compilati dal progetto `Dsl` e dal progetto `ModelBusAdapters`. Per fare riferimento a questo linguaggio specifico di dominio da un altro linguaggio specifico di dominio, è necessario importare questi assembly.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Verificare che sia possibile fare riferimento agli elementi  
- Per impostazione predefinita, gli adattatori ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usano il GUID di un elemento per identificarlo. Questi identificatori devono quindi essere persistenti nel file del modello.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Gli adapter di ModelBus utilizzano il guid di un elemento per identificarlo, per impostazione predefinita. Questi identificatori devono quindi essere persistenti nel file del modello.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Per assicurarsi che gli ID degli elementi siano persistenti  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  Nel progetto di debug nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aggiungere i file che sono istanze di ogni DSL.  
   
     > [!NOTE]
-    >  ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può risolvere solo riferimenti a modelli appartenenti alla stessa soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus solo può risolvere i riferimenti per i modelli di elementi nello stesso [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.  
   
 4.  Creare alcuni elementi e collegamenti nell'istanza del DSL esposto e salvarlo.  
   

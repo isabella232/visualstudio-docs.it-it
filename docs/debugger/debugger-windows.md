@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Informazioni sulle finestre del Debugger in Visual Studio
-È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione di arresto, fare clic su **Debug > Windows**.  
+
+È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione di arresto, fare clic su **Debug > Windows**.
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ ms.lasthandoff: 02/01/2018
 |Stack in parallelo|CTRL+MAIUSC+D, S|[Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
 |Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Ottenere avviato il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Thread|CTRL+ALT+H|[Eseguire il debug utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
-|Moduli|CTRL+ALT+U|[Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)| 
+|Moduli|CTRL+ALT+U|[Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
 |Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)| 
-|Debug interattivo di Python|MAIUSC+ALT+I|[Introduzione a PTVS: Python interattivo](../python/python-interactive-repl-in-visual-studio.md)
+|Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
+|Debug interattivo di Python|MAIUSC+ALT+I|[REPL di Python interattivo](../python/interactive-repl.md)|
 |Console JavaScript|CTRL+ALT+V, C|[Guida introduttiva: Debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|
 |Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ ms.lasthandoff: 02/01/2018
 |Disassembly|CTRL+ALT+D|[Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
 |Registri|CTRL+ALT+G|[Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Vedere anche  
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+## <a name="see-also"></a>Vedere anche
+
+[Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)

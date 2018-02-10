@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.workload: multiple
-ms.openlocfilehash: b267c0f801ddb4faf7fbca561c893e7296bb0a8e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
-ms.translationtype: HT
+helpviewer_keywords:
+- dependency diagrams, adding custom validation
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiunta di convalida dell'architettura personalizzati a diagrammi di dipendenza
 In Visual Studio, gli utenti possono convalidare il codice sorgente in un progetto rispetto a un modello di livello in modo da poter verificare che il codice sorgente sia conforme alla dipendenze in un diagramma di dipendenze. Benché sia disponibile un algoritmo di convalida standard, è possibile definire estensioni di convalida personalizzate.  

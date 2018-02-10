@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 
@@ -53,7 +55,7 @@ Dopo aver definito un linguaggio DSL, è possibile distribuirlo ad altri utenti 
   
 In genere, un linguaggio specifico di dominio viene creato quando un team di sviluppo è necessario scrivere codice simile per diversi prodotti. Ad esempio, una società che è progettato per i sistemi di gestione dei bagagli potrebbe definire un linguaggio DSL traccia bagagli da cui è possibile generare parte del codice per ogni installazione. I vantaggi di DSL sono possibile riconosciute dai clienti, che il codice generato da quest'ultimo è affidabile, e che il sistema può essere aggiornato rapidamente se cambiano i requisiti dei clienti.  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]Consente di creare un linguaggio specifico di dominio che dispone della finestra di progettazione grafica e la propria notazione diagramma e quindi utilizzare il linguaggio per generare codice sorgente appropriato per ogni progetto.  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Consente di creare un linguaggio specifico di dominio che dispone della finestra di progettazione grafica e la propria notazione diagramma e quindi utilizzare il linguaggio per generare codice sorgente appropriato per ogni progetto.  
   
 ## <a name="domain-specific-development"></a>Sviluppo di DSL
 

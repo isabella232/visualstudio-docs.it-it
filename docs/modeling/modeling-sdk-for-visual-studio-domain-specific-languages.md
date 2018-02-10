@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
@@ -13,12 +12,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5452adbe6c6aecec3c043b8047a6d8202dfaf6ee
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 1edb30221d85f8e634a9d618d50cd1e0b772b69a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 Tramite il SDK di modellazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile creare strumenti di sviluppo basato su modello avanzato che consente di integrare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.  

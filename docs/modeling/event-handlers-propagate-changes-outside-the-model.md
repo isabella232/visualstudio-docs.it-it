@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 In Visualization and Modeling SDK, è possibile definire i gestori di eventi di archivio per propagare le modifiche alle risorse all'esterno di archivio, ad esempio non archiviare variabili, i file, i modelli in altri archivi o altri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensioni. Dopo la fine della transazione in cui si è verificato l'evento trigger vengono eseguiti i gestori di eventi di archivio. Vengono inoltre eseguite in un'operazione di annullamento o ripetizione. Diversamente dalle regole di archivio, di conseguenza, gli eventi di archiviazione sono più utili per l'aggiornamento dei valori che non rientrano nell'archivio. A differenza degli eventi di .NET, gestori di eventi di archivio vengono registrati per l'ascolto su una classe: non è necessario registrare un gestore separato per ogni istanza. Per ulteriori informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [propagazione delle modifiche e risposta agli](../modeling/responding-to-and-propagating-changes.md).  

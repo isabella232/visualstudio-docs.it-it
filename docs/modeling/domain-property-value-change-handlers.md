@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, overriding event handlers
+helpviewer_keywords:
+- Domain-Specific Language, overriding event handlers
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e85bcb3545cc35b42723290601aff39b50ba3dc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f874cd26e2c6fd3d4726284ba25454ac7de50d66
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestori di modifica del valore delle proprietà del dominio
 In un linguaggio specifico di dominio di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], quando il valore di una proprietà di dominio cambia, i metodi `OnValueChanging()` e `OnValueChanged()` vengono richiamati nel gestore delle proprietà di dominio. Per rispondere alla modifica, è possibile eseguire l'override di tali metodi.  

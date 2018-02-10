@@ -6,23 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: "80025080"
+f1_keywords:
+- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: "100"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>L'accesso ai dati in Visual Studio
 
@@ -86,11 +88,9 @@ Per un database essere utilizzabile in ADO.NET, deve avere un oggetto personaliz
 
 In .NET, sono disponibili tre opzioni per la modellazione e la modifica dei dati in memoria dopo avere recuperato da un'origine dati:
 
-[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
-La tecnologia Microsoft ORM preferita. È possibile utilizzare per la programmazione per dati relazionali come oggetti .NET di prima classe. Per le nuove applicazioni, deve essere la prima opzione predefinita quando è necessario un modello. È necessario supporto personalizzato dal provider ADO.NET sottostante.
+[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md) la tecnologia Microsoft ORM preferita. È possibile utilizzare per la programmazione per dati relazionali come oggetti .NET di prima classe. Per le nuove applicazioni, deve essere la prima opzione predefinita quando è necessario un modello. È necessario supporto personalizzato dal provider ADO.NET sottostante.
 
-[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
-Un mapping relazionale a oggetti di generazione precedente. Funziona anche per scenari meno complessi, ma non è più in fase di sviluppo attivo.
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) un mapping relazionale a oggetti di generazione precedente. Funziona anche per scenari meno complessi, ma non è più in fase di sviluppo attivo.
 
 [Set di dati](../data-tools/dataset-tools-in-visual-studio.md)  
 Più vecchi di tre tecnologie di modellazione. È progettato principalmente per lo sviluppo rapido di applicazioni "form su dati" in cui si sono non elaborazione enormi quantità di dati o l'esecuzione di query complesse o trasformazioni. Un oggetto set di dati è costituito da oggetti DataTable e DataRow logicamente di più oggetti .NET simili a oggetti di database SQL. Per le applicazioni relativamente semplici basate su origini dati SQL, i set di dati può essere ancora una buona scelta.
@@ -115,39 +115,31 @@ Per ulteriori informazioni sulla connessione ai database da app C++, vedere [Vis
 
 ## <a name="python"></a>Python
 
-Installare [Python Tools per Visual Studio](http://microsoft.github.io/PTVS/) insieme il framework di Python preferito per creare applicazioni di CPython o IronPython (.NET). Gli strumenti Python per il sito Web di Visual Studio ha diverse esercitazioni sulla connessione ai dati, tra cui [Django e Database SQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django e MySQL in Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) e [Bottle e MongoDB in Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+Installare [Python supporto in Visual Studio](../python/python-in-visual-studio.md) per creare applicazioni di Python. Documentazione di Azure presenta diverse esercitazioni sulla connessione ai dati, inclusi i seguenti:
+- [Django e Database SQL in Azure](/azure/app-service/app-service-web-get-started-python)
+- [Django e MySQL in Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
+- Lavorare con [BLOB](/azure/storage/blobs/storage-quickstart-blobs-python), [file](/azure/storage/files/storage-python-how-to-use-file-storage), [code](/azure/storage/queues/storage-python-how-to-use-queue-storage), e [tabelle (database di installazione)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Analitica, dispositivi e dati](https://msdn.microsoft.com/data-and-devices)  
-Fornisce un'introduzione al cloud intelligente di Microsoft, tra Cortana Analitica Suite e supporto per Internet delle cose.
+[Dati, i dispositivi e Analitica](https://msdn.microsoft.com/data-and-devices) viene fornita un'introduzione al cloud intelligente di Microsoft, tra Cortana Analitica Suite e supporto per Internet delle cose.
 
-[Archiviazione di Microsoft Azure](https://azure.microCsoft.com/documentation/services/storage/)  
-Descrive l'archiviazione di Azure e su come creare applicazioni usando i file, tabelle, code e BLOB di Azure.
+[Archiviazione di Microsoft Azure](https://azure.microCsoft.com/documentation/services/storage/) archiviazione di Azure viene descritto e illustrato come creare applicazioni usando i file, tabelle, code e BLOB di Azure.
 
-[Database SQL di Azure](https://azure.microsoft.com/documentation/services/sql-database/)  
-Viene descritto come connettersi al Database SQL di Azure, un database relazionale come servizio.
+[Database SQL di Azure](https://azure.microsoft.com/documentation/services/sql-database/) viene descritto come connettersi al Database SQL di Azure, un database relazionale come servizio.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
-Vengono descritti gli strumenti che semplificano la progettazione, l'esplorazione, test e distribuzione di database e applicazioni connesse a dati.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) vengono descritti gli strumenti che semplificano la progettazione, l'esplorazione, test e distribuzione di applicazioni connesse a dati e database.
 
-[ADO.NET](/dotnet/framework/data/adonet/index)  
-Descrive l'architettura ADO.NET e come utilizzare le classi ADO.NET per gestire i dati dell'applicazione e interagire con origini dati e XML.
+[ADO.NET](/dotnet/framework/data/adonet/index) descrive l'architettura ADO.NET e come utilizzare le classi ADO.NET per gestire i dati dell'applicazione e interagire con origini dati e XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
-Viene descritto come creare applicazioni di dati che consentono agli sviluppatori di programmare in base a un modello concettuale anziché direttamente in un database relazionale.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) viene descritto come creare applicazioni di dati che consentono agli sviluppatori di programmare in base a un modello concettuale anziché direttamente in un database relazionale.
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
-Viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati sul web o una rete intranet che implementano il [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati sul web o una rete intranet che implementano il [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)  
-Contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
+[Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md) contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  
-Descrive le funzionalità di query incorporate in c# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, i documenti XML, i set di dati e raccolte in memoria.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) vengono descritte le funzionalità di query incorporate in c# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, i documenti XML, i set di dati e raccolte in memoria.
 
-[Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  
-Viene illustrato l'uso di funzionalità XML di .NET Framework di dati, debug XSLT, XML e l'architettura di Query XML.
+[Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) illustra l'uso di funzionalità XML di .NET Framework di dati, debug XSLT, XML e l'architettura di Query XML.
 
-[Documenti e dati XML](/dotnet/standard/data/xml/index)  
-Viene descritto un set completo e integrato di classi che vengono usate con documenti e dati XML in .NET Framework.
+[Documenti e dati XML](/dotnet/standard/data/xml/index) viene fornita una panoramica di un set completo e integrato di classi che funzionano con documenti XML e i dati in .NET Framework.

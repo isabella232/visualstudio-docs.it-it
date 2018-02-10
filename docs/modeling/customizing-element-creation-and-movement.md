@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 È possibile consentire a un elemento essere trascinato su un altro, dalla casella degli strumenti o in un'Incolla o dell'operazione di spostamento. È possibile disporre gli elementi spostati collegati a elementi di destinazione, utilizzando le relazioni che specificano.  
@@ -37,7 +40,7 @@ ms.lasthandoff: 01/13/2018
   
  La responsabilità di un Taiwanese consiste nel decidere come un oggetto o un gruppo di oggetti deve essere unita in una determinata posizione nel modello. In particolare, decide le relazioni tra devono essere creata un'istanza per creare un collegamento nel modello del gruppo. È anche possibile personalizzare per impostare le proprietà e per creare oggetti aggiuntivi.  
   
- ![DSL &#45; Taiwanese &#95; Merge](../modeling/media/dsl-emd_merge.png "EMD_Merge di DSL")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 Il ruolo di una direttiva di elemento di tipo Merge  
   
  Quando si definisce una relazione di incorporamento, viene generato automaticamente un Taiwanese. Questa impostazione predefinita Taiwanese crea un'istanza della relazione, quando gli utenti di aggiungere nuove istanze figlio al padre. È possibile modificare questi EMDs predefinito, ad esempio aggiungendo codice personalizzato.  
@@ -47,7 +50,7 @@ Il ruolo di una direttiva di elemento di tipo Merge
 ## <a name="defining-an-element-merge-directive"></a>Definizione di una direttiva di tipo Merge di elemento  
  È possibile aggiungere le direttive di tipo merge di elemento per le classi di dominio, relazioni di dominio, forme, i connettori e diagrammi. È possibile aggiungere o trovarle in Esplora DSL sotto la classe di dominio di destinazione. La classe ricevente è la classe di dominio dell'elemento che è già nel modello e in cui verrà unito l'elemento nuovo o copiato.  
   
- ![DSL &#45; Taiwanese &#95; dettagli](../modeling/media/dsl-emd_details.png "EMD_Details di DSL")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  Il **indicizzazione classe** è la classe di dominio di elementi che possono essere unite nei membri della classe ricevente. Le istanze delle sottoclassi della classe di indicizzazione verranno unite anche da questo Taiwanese, a meno che non si imposta **si applica alle sottoclassi** su False.  
   

@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: dc7e620c04e31a063bbe8fada68527d391f0a903
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 L'API immutabilità del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK consente a un programma di blocco o parte di un modello di linguaggio specifico di dominio (DSL) in modo che può essere letto ma non è stato modificato. Questa opzione di sola lettura, ad esempio, può essere utilizzata in modo che un utente è possibile chiedere ai colleghi di aggiungere annotazioni e verificare un modello DSL ma può impedire il Modifica originale.  
