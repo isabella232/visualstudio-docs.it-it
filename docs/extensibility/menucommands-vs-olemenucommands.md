@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-caps.latest.revision: "46"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 1153d35c022f4734488e71c38f4dbc34418610f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>Confronto tra oggetti MenuCommand e OleMenuCommand
 È possibile creare comandi di menu derivandoli dall'oggetto <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e implementando i gestori eventi appropriati. Nella maggior parte dei casi, è possibile usare <xref:System.ComponentModel.Design.MenuCommand>, come avviene nel modello di progetto VSPackage, ma talvolta potrebbe essere necessario usare <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -80,7 +80,7 @@ ms.lasthandoff: 10/27/2017
   
     3.  Impostare l'attributo `type` . Nella maggior parte dei casi, il suo valore sarà `"Button"`. Per le descrizioni di altri tipi di pulsanti validi, vedere [Button Element](../extensibility/button-element.md).  
   
-5.  Nella definizione del pulsante creare un elemento [Strings](../extensibility/strings-element.md) che include un elemento [ButtonText](../extensibility/buttontext-element.md) per contenere il nome del menu come viene visualizzato nell'IDE e un elemento [CommandName](../extensibility/commandname-element.md) per contenere il nome del comando usato per accedere al menu nella finestra di **comando**.  
+5.  Nella definizione del pulsante creare un elemento [Strings](../extensibility/strings-element.md) che include un elemento [ButtonText](../extensibility/buttontext-element.md) per contenere il nome del menu come viene visualizzato nell'IDE e un elemento [CommandName](../extensibility/commandname-element.md) per contenere il nome del comando usato per accedere al menu nella finestra di  **comando**.  
   
      Se la stringa di testo del pulsante include il carattere "&", l'utente può aprire il menu premendo ALT più il carattere che segue immediatamente "&".  
   
