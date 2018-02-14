@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Introduzione a Node.js in Visual Studio
 In questa esercitazione per lo sviluppo in Node.js tramite Visual Studio si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app. Si esploreranno poi alcune funzionalità dell'ambiente IDE e si eseguirà l'app. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).  
@@ -134,6 +137,8 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
 
 1. Fare clic sui pulsanti per visualizzare immagini diverse.
 
+    ![App in esecuzione nel browser](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+
 1. Aprire la finestra interattiva di Node.js selezionando **Visualizza > Altre finestre > Finestra interattiva di Node.js**.
 
    ![Apertura della finestra interattiva di Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
@@ -144,7 +149,7 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
 
 1. Chiudere il Web browser.  
 
-## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
+## <a name="optional-publish-to-azure-app-service"></a>(Facoltativo) Pubblicare in Servizio app di Azure
 
 1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 

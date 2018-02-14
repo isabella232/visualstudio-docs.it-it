@@ -1,23 +1,26 @@
 ---
 title: Guida di R Tools per Visual Studio | Microsoft Docs
+description: "La Guida di R è integrata direttamente nella finestra interattiva in Visual Studio tramite il comando ?."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Guida di R Tools per Visual Studio
 
@@ -28,7 +31,7 @@ La Guida di R è integrata direttamente nella finestra interattiva in Visual Stu
 > [!Tip]
 > La finestra della Guida, come tutte le finestre di Visual Studio, può essere disposta e ancorata a seconda delle proprie preferenze. Vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Per aprire i risultati della Guida in un browser, selezionare il menu **R Tools > Opzioni** e impostare la proprietà **Browser della Guida di R** su `External`. Vedere [R Tools for Visual Studio options](options.md) (Opzioni di R Tools per Visual Studio).
+> Per aprire i risultati della Guida in un browser, selezionare il menu **R Tools > Opzioni** e impostare la proprietà **Browser della Guida di R** su `External`. Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
 
 Per eseguire ricerche nella Guida, usare il comando `??` seguito dal termine di ricerca. Se il termine di ricerca contiene spazi, usare le virgolette:
 
@@ -52,7 +55,7 @@ Gli sviluppatori spesso cercano nella documentazione di R informazioni sui nomi 
     ![Richiamare la Guida mediante il menu di scelta rapida visualizzato facendo clic con il pulsante destro del mouse](media/help-right-click.png)
 
 > [!Tip]
-> Per aprire la Guida integrata in un browser, selezionare **R Tools > Opzioni** e impostare **Web browser F1** su `External`. Vedere [R Tools for Visual Studio options](options.md) (Opzioni di R Tools per Visual Studio).
+> Per aprire la Guida integrata in un browser, selezionare **R Tools > Opzioni** e impostare **Web browser F1** su `External`. Vedere [R Tools for Visual Studio options](options-for-r-tools-in-visual-studio.md) (Opzioni di R Tools per Visual Studio).
 
 ## <a name="integrated-stackoverflow-search"></a>Ricerca di StackOverflow integrata
 
@@ -64,4 +67,4 @@ Oltre a eseguire ricerche nella documentazione di R, gli sviluppatori spesso cer
 
 ![Modifica dell'opzione Stringa di ricerca sul Web F1](media/options-dialog.png)
 
-Se si preferisce visualizzare i risultati in un browser, modificare l'opzione **Web browser F1** come descritto in [Opzioni](options.md).
+Se si preferisce visualizzare i risultati in un browser, modificare l'opzione **Web browser F1** come descritto in [Opzioni](options-for-r-tools-in-visual-studio.md).

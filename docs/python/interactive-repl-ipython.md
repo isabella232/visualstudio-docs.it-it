@@ -1,29 +1,31 @@
 ---
 title: REPL IPython in Visual Studio | Microsoft Docs
+description: "Utilizzo della finestra interattiva di Visual Studio in modalità IPython per un ambiente di sviluppo interattivo intuitivo e semplice da usare con funzionalità di elaborazione parallela interattiva."
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
-ms.devlang: python
+ms.technology:
+- devlang-python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33765a2c70f6c58759e2722b04d770b6f8822a6
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Uso di IPython nella finestra interattiva
 
-La finestra interattiva di Visual Studio in modalità IPython costituisce un ambiente di sviluppo interattivo avanzato e al contempo intuitiva avanzato e semplice da usare che include funzionalità di elaborazione parallela interattiva. In questo argomento viene illustrato l'uso di IPython nella finestra interattiva di Visual Studio, in cui sono anche disponibili tutte le funzionalità della [finestra interattiva](interactive-repl.md) normale.
+La finestra interattiva di Visual Studio in modalità IPython costituisce un ambiente di sviluppo interattivo avanzato e al contempo intuitiva avanzato e semplice da usare che include funzionalità di elaborazione parallela interattiva. In questo argomento viene illustrato l'uso di IPython nella finestra interattiva di Visual Studio, in cui sono anche disponibili tutte le funzionalità della [finestra interattiva](python-interactive-repl-in-visual-studio.md) normale.
 
 Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaconda](https://www.continuum.io), che include IPython e le librerie necessarie.
 
@@ -64,14 +66,14 @@ Per questa procedura dettagliata è necessario aver installato l'ambiente [Anaco
         xs = np.arange(20)
         ys = np.random.rand(20)
         # You can provide either a single color or an array. To demonstrate this,
-        # the first bar of each set will be colored cyan.
-        cs = [c] * len(xs) 
-        cs[0] = 'c' 
+        # the first bar of each set is colored cyan.
+        cs = [c] * len(xs)
+        cs[0] = 'c'
         ax.bar(xs, ys, zs=z, zdir='y', color=cs, alpha=0.8)
 
-    ax.set_xlabel('X') 
-    ax.set_ylabel('Y') 
-    ax.set_zlabel('Z') 
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
     plt.show()
     ```
 

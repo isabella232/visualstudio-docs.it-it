@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Passaggio 2: Scrittura ed esecuzione del codice
 
@@ -45,12 +45,12 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
     print("Hello, Visual Studio")
     ```
 
-1. Si noti la colorazione della sintassi che consente di distinguere l'istruzione `print` dall'argomento `"Hello Visual Studio"`. Eliminare temporaneamente anche l'ultimo elemento `"` sulla stringa. Si noti come Visual Studio visualizza una sottolineatura rossa per il codice che contiene errori di sintassi. Quindi sostituire `"` per correggere il codice.
+1. Si noti la colorazione della sintassi che consente di distinguere l'istruzione `print` dall'argomento `"Hello Visual Studio"`. Inoltre, eliminare temporaneamente l'ultimo elemento `"` nella stringa. Si noti come Visual Studio visualizza una sottolineatura rossa per il codice che contiene errori di sintassi. Quindi sostituire `"` per correggere il codice.
 
     ![Colorazione della sintassi ed evidenziazione degli errori di IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti > Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** e **Editor di testo**. Per impostazione predefinita verrà visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo. 
+    > Poiché l'ambiente di sviluppo è molto personale, Visual Studio offre un controllo completo sull'aspetto e sul comportamento di Visual Studio. Selezionare il comando del menu **Strumenti > Opzioni** ed esplorare le impostazioni nelle schede **Ambiente** e **Editor di testo**. Per impostazione predefinita viene visualizzato solo un numero limitato di opzioni. Per visualizzare tutte le opzioni per ogni linguaggio di programmazione, selezionare **Mostra tutte le impostazioni** nella parte inferiore della finestra di dialogo. 
 
 1. Successivamente a questo punto eseguire il codice già scritto premendo Ctrl+F5 o selezionando la voce del menu **Debug > Avvia senza eseguire debug**. Se sono ancora presenti errori nel codice Visual Studio genera degli avvisi.
 
@@ -80,7 +80,7 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
     ```
 
     > [!Tip]
-    > I completamenti si basano su sottostringhe durante la digitazione, cercando corrispondenze per parti di parole, lettere all'inizio delle parole e anche caratteri saltati. Per altri dettagli, vedere [Modifica del codice - Completamenti](code-editing.md#completions).
+    > I completamenti si basano su sottostringhe durante la digitazione, cercando corrispondenze per parti di parole, lettere all'inizio delle parole e anche caratteri saltati. Per altri dettagli, vedere [Modifica del codice - Completamenti](editing-python-code-in-visual-studio.md#completions).
 
 1. Aggiungere altro codice per visualizzare i valori di coseno per 360 gradi:
 
@@ -98,7 +98,7 @@ Anche se Esplora soluzioni si trova nell'area di gestione dei file di progetto, 
 
 ## <a name="going-deeper"></a>Approfondimenti
 
-- [Modifica di codice R in Visual Studio](code-editing.md)
-- [Formattazione del codice](code-formatting.md)
-- [Refactoring del codice](code-refactoring.md)
-- [Uso di PyLint](code-pylint.md)
+- [Modifica di codice R in Visual Studio](editing-python-code-in-visual-studio.md)
+- [Formattazione del codice](formatting-python-code.md)
+- [Refactoring del codice](refactoring-python-code.md)
+- [Uso di PyLint](linting-python-code.md)

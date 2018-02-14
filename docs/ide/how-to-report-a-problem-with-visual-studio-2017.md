@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Come segnalare un problema con Visual Studio 2017
 Se si verifica un problema con Visual Studio, è importante segnalarlo a Microsoft. Di seguito viene illustrato come segnalare il problema in modo che Microsoft possa diagnosticarlo e risolverlo.  
@@ -24,8 +25,9 @@ Se si verifica un problema con Visual Studio, è importante segnalarlo a Microso
 ## <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 Se non già stato fatto, effettuare l'accesso a Visual Studio prima di segnalare un problema. In questo modo, è possibile segnalare un problema e assegnare un voto o un commento. È anche possibile votare o commentare qualsiasi altro problema pubblicato.
 
-1.  Fare clic su **Accedi** sul lato destro dello strumento, come illustrato nello screenshot seguente.
-2.  Seguire le istruzioni visualizzate per accedere.
+1.  In Visual Studio selezionare **Guida** > **Invia commenti e suggerimenti** > **Segnala un problema**.
+2.  Se necessario, fare clic su **Accedi** sul lato destro dello strumento, come illustrato nello screenshot seguente.
+3.  Seguire le istruzioni visualizzate per accedere.
 
  ![Accedere per segnalare un problema](../ide/media/sign-in-new-ux.png "Accedere per segnalare un problema")  
 

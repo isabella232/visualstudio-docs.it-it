@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 8a6c2ba508afdd209713c8c1a514377e8e322868
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
 Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma generano esempi completi che è possibile usare per acquisire dimestichezza. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.  

@@ -1,27 +1,30 @@
 ---
 title: Esplora variabili in R Tools per Visual Studio | Microsoft Docs
+description: Esplora variabili in Visual Studio mostra tutte le variabili con un ambito specifico nella sessione corrente di R.
 ms.custom: 
-ms.date: 06/30/2017
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: 1d766d3ad6a48a46c3f781b8a87e5f388de93e74
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 
-La finestra **Esplora variabili**, che è possibile aprire tramite **R Tools > Finestre > Esplora variabili** (o CTRL+8 se si usa **R Tools > Impostazioni di Data Science**), mostra tutte le variabili di un ambito specifico nella sessione di R corrente. Se, ad esempio, dopo aver aperto Esplora variabili si immettono le righe seguenti nella [finestra interattiva](interactive-repl.md):
+La finestra **Esplora variabili**, che è possibile aprire tramite **R Tools > Finestre > Esplora variabili** (o CTRL+8 se si usa **R Tools > Impostazioni di Data Science**), mostra tutte le variabili di un ambito specifico nella sessione di R corrente. Se, ad esempio, dopo aver aperto Esplora variabili si immettono le righe seguenti nella [finestra interattiva](interactive-repl-for-r-in-visual-studio.md):
 
 ```R
 x <- 42

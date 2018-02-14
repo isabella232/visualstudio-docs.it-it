@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consente di comprendere meglio l'utilizzo hardware in generale da parte dell'app Direct3D. Può essere usato per determinare se le prestazioni dell'app sono basate sulla CPU o sulla GPU e per ottenere informazioni su come usare l'hardware della piattaforma in modo più efficiente. Utilizzo GPU supporta le app che usano Direct3D 12, Direct3D 11 e Direct3D 10. Non supporta altre API grafiche, come Direct2D o OpenGL.  
@@ -118,7 +118,7 @@ A partire da Visual Studio 2017, questi dati possono essere aperti con [GPUView]
 |**ID thread**|ID del thread da cui proviene l'evento.|  
   
 > [!IMPORTANT]
->  Per l'attribuzione degli eventi è necessario Windows 8.1. Se la GPU o il driver non supporta le funzionalità di strumentazione necessarie, tutti gli eventi vengono visualizzati come non attribuiti. Se si verifica questo problema, aggiornare il driver della GPU e riprovare. Per altre informazioni, vedere [Hardware e driver supportati](#hwsupport) più avanti.  
+>  Se la GPU o il driver non supporta le funzionalità di strumentazione necessarie, tutti gli eventi vengono visualizzati come non attribuiti. Se si verifica questo problema, aggiornare il driver della GPU e riprovare. Per altre informazioni, vedere [Hardware e driver supportati](#hwsupport) più avanti.  
   
 ## <a name="gpu-usage-settings"></a>Impostazioni di Utilizzo GPU  
  Si può configurare lo strumento Utilizzo GPU in modo da posticipare la raccolta di informazioni di profilatura, anziché iniziare a raccogliere le informazioni all'avvio dell'app. Poiché le dimensioni delle informazioni di profilatura possono essere notevoli, questo è utile quando si è certi che i rallentamenti nelle prestazioni dell'app compariranno solo in un momento successivo.  

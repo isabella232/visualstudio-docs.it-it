@@ -1,14 +1,16 @@
 ---
-title: Gestione di Python nel servizio app di Azure | Microsoft Docs
+title: Installazione di interpreti e librerie di Python in Servizio app di Azure | Microsoft Docs
+description: Come installare un interprete e librerie di Python in Servizio app di Azure e configurazione delle applicazioni Web per fare riferimento correttamente a tale interprete.
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestione di Python nel servizio app di Azure
 
@@ -131,7 +133,7 @@ Le `<appSettings>` definite di seguito sono disponibili come variabili di ambien
 - `WSGI_HANDLER` deve puntare a un'app WSGI importabile dall'app.
 - `WSGI_LOG` è facoltativo ma consigliato per il debug dell'app. 
 
-Vedere [Pubblicazione nel servizio app di Azure](publishing-to-azure.md) per altri dettagli sul contenuto di `web.config` per app Web Bottle, Flask e Django.
+Vedere [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) per altri dettagli sul contenuto di `web.config` per app Web Bottle, Flask e Django.
 
 ### <a name="configuring-the-httpplatform-handler"></a>Configurazione del gestore HttpPlatform
 
@@ -170,7 +172,7 @@ Per installare i pacchetti direttamente nell'ambiente server, usare uno dei meto
 | --- | --- |
 | [Console Kudu del Servizio app di Azure](#azure-app-service-kudu-console) | I pacchetti vengono installati in modo interattivo. I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
 | [API REST Kudu](#kudu-rest-api) | Consente di automatizzare l'installazione dei pacchetti.  I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
-| Bundle con app | Installare i pacchetti direttamente nel progetto e quindi distribuirli al servizio app come se facessero parte dell'app. A seconda di quante dipendenze sono presenti e della loro frequenza di aggiornamento, questo metodo può essere il modo più semplice per ottenere una distribuzione funzionante. Tenere presente che queste librerie devono corrispondere alla versione di Python nel server. In caso contrario verranno visualizzati errori sconosciuti dopo la distribuzione. Tuttavia, dato che le versioni di Python nelle estensioni del sito del servizio app sono esattamente le stesse rilasciate su python.org, è possibile ottenere facilmente una versione compatibile per la distribuzione locale. |
+| Bundle con app | Installare i pacchetti direttamente nel progetto e quindi distribuirli al servizio app come se facessero parte dell'app. A seconda di quante dipendenze sono presenti e della loro frequenza di aggiornamento, questo metodo può essere il modo più semplice per ottenere una distribuzione funzionante. Tenere presente che queste librerie devono corrispondere alla versione di Python nel server. In caso contrario vengono visualizzati errori sconosciuti dopo la distribuzione. Tuttavia, dato che le versioni di Python nelle estensioni del sito del servizio app sono esattamente le stesse rilasciate su python.org, è possibile ottenere facilmente una versione compatibile per la distribuzione locale. |
 | Ambienti virtuali | Non supportato. Ricorrere invece alla creazione di bundle e impostare la variabile di ambiente `PYTHONPATH` in modo che punti al percorso dei pacchetti. |
 
 ### <a name="azure-app-service-kudu-console"></a>Console Kudu del Servizio app di Azure

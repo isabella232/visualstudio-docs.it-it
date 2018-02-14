@@ -7,20 +7,22 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: unit testing, create unit tests
+helpviewer_keywords:
+- unit testing, create unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: cf851d9fbd32bfdd07c6e1a67517ddf38784799c
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
-Il comando **Crea unit test** di Visual Studio offre la possibilità di creare stub per il metodo di unit test. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa. 
+Il comando **Crea unit test** di Visual Studio offre la possibilità di creare stub per il metodo di unit test. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
 ## <a name="availability-and-extensions"></a>Disponibilità ed estensioni
 
@@ -63,8 +65,7 @@ Usare questa funzionalità ogni volta che è necessario creare unit test, ma in 
 
 Tuttavia, questa funzionalità può essere applicata anche alla situazione in cui lo sviluppatore inizia a scrivere e lo usa per l'avvio automatico della disciplina di unit test. All'interno del flusso di scrittura del codice, lo sviluppatore potrebbe voler creare rapidamente uno stub del metodo di unit test, con una classe di test e un progetto di test appropriati, per una parte specifica di codice. 
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="see-also"></a>Vedere anche
 
-Vedere il post di blog relativo alla [creazione di stub per il metodo di unit test con il comando "Crea unit test"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/).
-
-Altri post di blog sugli unit test sono reperibili [qui](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/).
+[Creare stub di metodo di unit test con il comando Crea unit test](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
+[Post di blog sul testing unità](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)

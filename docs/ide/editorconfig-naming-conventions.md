@@ -1,10 +1,9 @@
 ---
-title: Convenzioni di denominazione .NET per EditorConfig | Microsoft Docs
+title: Convenzioni di denominazione .NET per i file EditorConfig | Microsoft Docs
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -12,17 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>Convenzioni di denominazione per EditorConfig
+# <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
 Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi pubblici devono essere scritti in lettere maiuscole o che i metodi asincroni devono terminare con "Async". È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'Elenco errori o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
 

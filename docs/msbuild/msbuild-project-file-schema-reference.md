@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,18 +12,20 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords: MSBuild, file schema
+helpviewer_keywords:
+- MSBuild, file schema
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
-caps.latest.revision: "19"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 96676f23cd4741d084f25d1dad3c288b98bf023c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1911f7a6d5648c7940addf3301da2c818ad4f590
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Riferimenti dello schema del file di progetto MSBuild
 Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con gli attributi e gli elementi figlio disponibili.  
@@ -51,6 +53,7 @@ Fornisce una tabella di tutti gli elementi di XML Schema di [!INCLUDE[vstecmsbui
 |[Elemento ProjectExtensions (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Elemento Property (MSBuild)](../msbuild/property-element-msbuild.md)|--|Condizione|  
 |[Elemento PropertyGroup (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Proprietà*|Condizione|  
+|[Elemento Sdk (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|nome<br /><br /> Versione|  
 |[Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Attività*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Condizione<br /><br /> DependsOnTargets<br /><br /> Input<br /><br /> KeepDuplicateOutputs<br /><br /> nome<br /><br /> Output<br /><br /> Valore restituito|  
 |[Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md)|Output|Condizione<br /><br /> ContinueOnError<br /><br /> *Parametro*|  
 |[Elemento TaskBody (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Dati*|Valutare|  

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installazione del supporto di Python in Visual Studio in Windows
 
@@ -36,7 +36,7 @@ Per Visual Studio 2015 e versioni precedenti è anche necessario installare sepa
 Per testare rapidamente il supporto Python dopo aver eseguito la procedura di installazione, aprire la finestra interattiva di Python premendo ALT+I e quindi immettere `2+2`. Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 
 > [!Tip]
-> Il carico di lavoro Python include l'utile estensione Cookiecutter, che offre un'interfaccia utente grafica per individuare modelli, inserire opzioni del modello e creare progetti e file. Per informazioni dettagliate, vedere [Uso dell'estensione Cookiecutter](cookiecutter.md).
+> Il carico di lavoro Python include l'utile estensione Cookiecutter, che offre un'interfaccia utente grafica per individuare modelli, inserire opzioni del modello e creare progetti e file. Per informazioni dettagliate, vedere [Uso dell'estensione Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > Il supporto Python non è attualmente disponibile in Visual Studio per Mac, ma viene offerto su Mac e Linux tramite Visual Studio Code. Vedere le [domande e risposte](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -64,11 +64,11 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
     | Opzione | Descrizione |
     | --- | --- |
     | Distribuzioni di Python | Scegliere qualsiasi combinazione delle varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di installazione di Visual Studio in qualsiasi momento per aggiungere o rimuovere le distribuzioni. |
-    | Supporto modello Cookiecutter | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Uso dell'estensione Cookiecutter](cookiecutter.md). |
-    | Supporto Web Python | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](template-web.md). |
+    | Supporto modello Cookiecutter | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Uso dell'estensione Cookiecutter](using-python-cookiecutter-templates.md). |
+    | Supporto Web Python | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](python-web-application-project-templates.md). |
     | Supporto Python IoT | Supporta lo sviluppo di Windows IoT Core usando Python. |
     | Strumenti di sviluppo nativo Python | Installa il compilatore C++ e altri componenti necessari per sviluppare estensioni native per Python. Vedere [Creazione di un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md). Installare anche il carico di lavoro **Sviluppo di applicazioni desktop con C++** per il supporto completo di C++. |
-    | Strumenti di base di Servizi cloud di Azure | Offre supporto aggiuntivo per sviluppare servizi cloud di Microsoft Azure in Python. Vedere [Progetti servizio cloud di Azure per Python](template-azure-cloud-service.md). |
+    | Strumenti di base di Servizi cloud di Azure | Offre supporto aggiuntivo per sviluppare servizi cloud di Microsoft Azure in Python. Vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md). |
 
 1. Al termine dell'operazione, il programma di installazione specifica le opzioni per modificare, avviare, ripristinare o disinstallare Visual Studio. Il pulsante **Modifica** diventa **Aggiorna** quando sono disponibili aggiornamenti di Visual Studio per i componenti installati. L'opzione di modifica diventa disponibile nel menu a discesa. È anche possibile avviare Visual Studio e il programma di installazione dal menu Start di Windows eseguendo una ricerca su "Visual Studio".
 

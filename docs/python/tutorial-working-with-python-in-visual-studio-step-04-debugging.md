@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Passaggio 4: Esecuzione del codice nel debugger
 
@@ -96,7 +96,7 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 
 1. Continuare a usare Esegui istruzione fino a quando non si è nuovamente in `make_dot_string`. Quindi usare **Esci da istruzione/routine**. Si noti che si è fatto ritorno al ciclo `for`. Con Esci da istruzione/routine, il debugger esegue il resto della funzione e quindi si sospende automaticamente nel codice chiamante. Ciò è molto utile per quelle porzioni delle funzioni di lunga durata su cui si vuole eseguire il debug ma senza eseguire il resto della funzione un'istruzione alla volta né impostare un punto di interruzione esplicito nel codice chiamante.
 
-1. Per continuare l'esecuzione del programma, fino a quando non viene raggiunto il punto di interruzione successivo, usare **Continua** (F5). Dato che il ciclo `for` contiene un punto di interruzione, l'esecuzione verrà interrotta nell'iterazione successiva.
+1. Per continuare l'esecuzione del programma, fino a quando non viene raggiunto il punto di interruzione successivo, usare **Continua** (F5). Dato che il ciclo `for` contiene un punto di interruzione, l'esecuzione viene interrotta nell'iterazione successiva.
 
 1. Scorrere centinaia di iterazioni di un ciclo può risultare noioso, pertanto in Visual Studio è possibile aggiungere una *condizione* a un punto di interruzione. Il debugger sospende quindi il programma nel punto di interruzione solo quando la condizione viene soddisfatta. Ad esempio, è possibile usare una condizione con il punto di interruzione sull'istruzione `for` in modo che non venga sospeso solo quando il valore di `i` supera 1600. Per impostare questa condizione, fare clic con il pulsante destro del mouse sul punto rosso del punto di interruzione e scegliere **Condizioni...** (ALT+F9,C). Nella finestra **Impostazioni punto di interruzione** visualizzata immettere `i > 1600` come espressione e selezionare **Chiudi**. Premere F5 per continuare e osservare che il programma esegue diverse iterazioni prima del punto di interruzione successivo.
 
@@ -114,5 +114,5 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 
 ### <a name="going-deeper"></a>Approfondimenti
 
-- [Debug](debugging.md).
+- [Debug](debugging-python-in-visual-studio.md)
 - Vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md) per la documentazione completa sulle funzionalità di debug di Visual Studio.
