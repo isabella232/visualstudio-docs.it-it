@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Aggiunta di un'estensione del protocollo di lingua del Server
 
@@ -52,7 +52,7 @@ Le seguenti funzionalità LSP sono supportate in Visual Studio fino a questo pun
 Messaggio | Offre supporto in Visual Studio
 --- | ---
 inizializzare | sì
-inizializzato | 
+inizializzato | sì
 chiusura della sessione | sì
 Uscita | sì
 $/ cancelRequest | sì
@@ -72,12 +72,12 @@ textDocument/didOpen | sì
 textDocument/didChange | sì
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave |
+textDocument/didSave | sì
 textDocument/didClose | sì
 textDocument/completamento | sì
 completion/resolve | sì
-textDocument/passaggio del mouse |
-textDocument/signatureHelp |
+textDocument/passaggio del mouse | sì
+textDocument/signatureHelp | sì
 textDocument e riferimenti | sì
 textDocument/documentHighlight |
 textDocument/documentSymbol | sì
@@ -98,7 +98,7 @@ textDocument/rename | sì
 
 Per creare un'estensione del servizio di linguaggio utilizza un server basato su LSP language, assicurarsi innanzitutto di avere il **lo sviluppo di estensioni di Visual Studio** carico di lavoro installata per l'istanza di Visual Studio.
 
-Successivamente, creare un nuovo VSIXProject vuoto, passare a **File** > **nuovo progetto** > **Visual c#**  >  ** Estendibilità** > **progetto VSIX**:
+Successivamente, creare un nuovo VSIXProject vuoto, passare a **File** > **nuovo progetto** > **Visual c#**  >   **Estendibilità** > **progetto VSIX**:
 
 ![creare il progetto vsix](media/lsp-vsix-project.png)
 
@@ -210,6 +210,16 @@ namespace MockLanguageExtension
         public async Task OnLoadedAsync()
         {
             await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+        }
+
+        public async Task OnServerInitializeFailedAsync(Exception e)
+        {
+            return Task.CompletedTask;
+        }
+
+        public async Task OnServerInitializedAsync()
+        {
+            return Task.CompletedTask;
         }
     }
 }
@@ -428,6 +438,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     public async Task<string> SendServerCustomMessage(string test)
     {
         return await this.customMessageRpc.InvokeAsync<string>("OnCustomRequest", test);
+    }
 }
 ```
 
@@ -440,7 +451,6 @@ Ogni messaggio LSP ha la propria interfaccia di livello intermedio per l'interce
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 {
-
     public object MiddleLayer => MiddleLayerProvider.Instance;
 
     private class MiddleLayerProvider : ILanguageClientWorkspaceSymbolProvider
@@ -459,6 +469,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
             // Only return symbols that are "files"
             return symbols.Where(sym => string.Equals(new Uri(sym.Location.Uri).Scheme, "file", StringComparison.OrdinalIgnoreCase)).ToArray();
         }
+    }
 }
 ```
 
