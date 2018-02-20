@@ -3,11 +3,11 @@ layout: LandingPage
 title: Debug delle app in Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per eseguire il debug di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 87f55a02e4e37d4daa8da0282182f7e3a45a0efa
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c08d88cf7ae8a38116d42b59747d956d7d4cf7ef
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-in-visual-studio"></a>Debug in Visual Studio
 
@@ -15,7 +15,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/navigating-through-code-with-the-debugger">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +87,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/remote-debugging">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +105,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/get-started-debugging-multithreaded-apps">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -123,7 +123,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
         <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/intellitrace">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/intellitrace">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -141,7 +141,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-tips-and-tricks">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -159,7 +159,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -183,7 +183,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/en-us/library/ee661590.aspx">
+        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -196,7 +196,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/debug-interface-access-sdk">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -209,7 +209,7 @@ Il debugger di Visual Studio consente di osservare il comportamento del programm
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/spy-increment-help">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/spy-increment-help">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
