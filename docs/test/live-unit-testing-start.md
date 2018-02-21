@@ -1,6 +1,6 @@
 ---
 title: Informazioni su come testare il codice con Live Unit Testing in Visual Studio 2017 | Microsoft Docs
-ms.date: 2017-08-31
+ms.date: 08/31/2017
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
@@ -10,12 +10,13 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 2f2c8ba68419b23d2e74b82e23640c68a6f534aa
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Introduzione a Live Unit Testing in Visual Studio
 
@@ -56,7 +57,7 @@ Dopo aver creato la soluzione, creare una libreria di classi denominata `StringL
 1. Nella finestra di dialogo **Aggiungi nuovo progetto** selezionare il nodo C# e quindi **.NET Standard**. 
 
    > [!NOTE]
-   > Poiché la libreria ha come destinazione .NET Standard invece di una particolare implementazione di .NET, può essere chiamata da qualsiasi implementazione di .NET che supporti la versione di .NET Standard. Per altre informazioni, vedere [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Poiché la libreria ha come destinazione .NET Standard invece di una particolare implementazione di .NET, può essere chiamata da qualsiasi implementazione di .NET che supporti la versione di .NET Standard. Per altre informazioni, vedere [.NET Standard](/dotnet/standard/net-standard).
 
 1. Selezionare il modello **Class Library (.NET Standard)** (Libreria di classi (.NET Standard)) nel riquadro di destra e immettere `StringLibrary` nella casella di testo **Nome**, come illustrato nella figura seguente:
 
@@ -84,7 +85,7 @@ Dopo aver creato la soluzione, creare una libreria di classi denominata `StringL
 1. Nella finestra di dialogo **Aggiungi nuovo progetto** selezionare il nodo Visual Basic e quindi **.NET Standard**. 
 
    > [!NOTE]
-   > Poiché la libreria ha come destinazione .NET Standard invece di una particolare implementazione di .NET, può essere chiamata da qualsiasi implementazione di .NET che supporti la versione di .NET Standard. Per altre informazioni, vedere [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Poiché la libreria ha come destinazione .NET Standard invece di una particolare implementazione di .NET, può essere chiamata da qualsiasi implementazione di .NET che supporti la versione di .NET Standard. Per altre informazioni, vedere [.NET Standard](/dotnet/standard/net-standard).
 
 1. Selezionare il modello **Class Library (.NET Standard)** (Libreria di classi (.NET Standard)) nel riquadro di destra e immettere `StringLibrary` nella casella di testo **Nome**, come illustrato nella figura seguente:
 
@@ -104,7 +105,7 @@ Dopo aver creato la soluzione, creare una libreria di classi denominata `StringL
      
       - `HasEmbeddedSpaces` restituisce `true` se una stringa include uno spazio vuoto; in caso contrario, restituisce `false`.
     
-1. Fare clic con il pulsante destro del mouse nel progetto StringLibrary in **Esplora soluzioni** e selezionare **Proprietà**. Nella scheda **Applicazione** eliminare il testo nella casella di testo **Spazio dei nomi radice**, come illustrato nella figura seguente. Lo spazio dei nomi radice è definito dall'[istruzione Namespace](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement) nel codice sorgente.
+1. Fare clic con il pulsante destro del mouse nel progetto StringLibrary in **Esplora soluzioni** e selezionare **Proprietà**. Nella scheda **Applicazione** eliminare il testo nella casella di testo **Spazio dei nomi radice**, come illustrato nella figura seguente. Lo spazio dei nomi radice è definito dall'[istruzione Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) nel codice sorgente.
 
    ![Finestra di dialogo Proprietà del progetto per un progetto di Visual Basic](./media/lut-start/vb-properties.png)
  
@@ -250,7 +251,7 @@ Per estendere il code coverage al metodo `StartsWithLower`, eseguire le operazio
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. Modificare il metodo `DirectCallWithNullOrEmpty` aggiungendo il codice seguente immediatamente dopo la chiamata al metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
+1. Modificare il metodo `DirectCallWithNullOrEmpty` aggiungendo il codice seguente immediatamente dopo la chiamata al metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -267,7 +268,7 @@ Per estendere il code coverage al metodo `StartsWithLower`, eseguire le operazio
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. Modificare il metodo `DirectCallWithNullOrEmpty` aggiungendo il codice seguente immediatamente dopo la chiamata al metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
+1. Modificare il metodo `DirectCallWithNullOrEmpty` aggiungendo il codice seguente immediatamente dopo la chiamata al metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse).
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -308,7 +309,7 @@ In questa sezione verrà illustrato come usare Live Unit Testing per identificar
     
 1. Selezionare **Debug Selected** (Debug selezionato) per eseguire il debug del test non riuscito. 
  
-1. Visual Studio esegue il test in modalità di debug. Il test assegna ogni stringa di una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces`. L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La figura seguente illustra la finestra di dialogo di eccezione generata dal valore imprevisto nella chiamata del metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue).  
+1. Visual Studio esegue il test in modalità di debug. Il test assegna ogni stringa di una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces`. L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La figura seguente illustra la finestra di dialogo di eccezione generata dal valore imprevisto nella chiamata del metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue).  
 
    ![Finestra di dialogo di eccezione di Live Unit Testing.](media/lut-start/exception-dialog-cs.png) 
  
@@ -341,7 +342,7 @@ In questa sezione verrà illustrato come usare Live Unit Testing per identificar
     
 1. Selezionare **Debug Selected** (Debug selezionato) per eseguire il debug del test non riuscito. 
  
-1. Visual Studio esegue il test in modalità di debug. Il test assegna ogni stringa di una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces`. L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La figura seguente illustra la finestra di dialogo di eccezione generata dal valore imprevisto nella chiamata del metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue).  
+1. Visual Studio esegue il test in modalità di debug. Il test assegna ogni stringa di una matrice a una variabile denominata `phrase` e la passa al metodo `HasEmbeddedSpaces`. L'esecuzione del programma viene sospesa e viene richiamato il debugger la prima volta in cui l'espressione di asserzione è `false`. La figura seguente illustra la finestra di dialogo di eccezione generata dal valore imprevisto nella chiamata del metodo [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue).  
 
    ![Finestra di dialogo di eccezione di Live Unit Testing.](media/lut-start/exception-dialog-vb.png) 
  

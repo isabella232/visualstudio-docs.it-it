@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Confrontare le opzioni per le sottoscrizioni di Visual Studio
 
@@ -39,10 +39,10 @@ Esiste una sottoscrizione per ogni esigenza degli utenti finali, siano essi stud
 
 **Programmi:** oltre alle sottoscrizioni standard e cloud, Microsoft offre sottoscrizioni tramite un'ampia gamma di programmi speciali.
 
-- [Imagine:](https://imagine.microsoft.com/en-us/about) strumenti di sviluppo e software di livello professionale per studenti senza alcun costo. Tutto quello che serve per creare giochi, app e siti Web.
+- [Imagine:](https://imagine.microsoft.com/about) strumenti di sviluppo e software di livello professionale per studenti senza alcun costo. Tutto quello che serve per creare giochi, app e siti Web.
 - [BizSpark:](https://bizspark.microsoft.com/About/Offers) prodotti e servizi gratuiti per le startup.  I membri di BizSpark hanno libero accesso a tutto il software Microsoft per sviluppo e testing, inclusi Azure, Windows, Visual Studio, Office e SQL Server. 
-- [Microsoft Partner Network (MPN):](https://partner.microsoft.com/en-us) a seconda del livello all'interno della rete MPN si possono ricevere fino a 10 sottoscrizioni Enterprise 
-- [Microsoft Certified Trainer:](https://www.microsoft.com/en-us/learning/mct-certification.aspx) un programma su misura per fornire accesso esclusivo a risorse che consentono di sviluppare ulteriormente l'esperienza tecnica e le competenze di formatori.
+- [Microsoft Partner Network (MPN):](https://partner.microsoft.com/) a seconda del livello all'interno della rete MPN si possono ricevere fino a 10 sottoscrizioni Enterprise 
+- [Microsoft Certified Trainer:](https://www.microsoft.com/learning/mct-certification.aspx) un programma su misura per fornire accesso esclusivo a risorse che consentono di sviluppare ulteriormente l'esperienza tecnica e le competenze di formatori. Per gli abbonamenti MCT Software & Services e MCT Developer Software & Services, vedere il [sito Web MCT (Microsoft Certified Trainer)](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA) per informazioni sui diritti di utilizzo degli strumenti formativi inclusi nel proprio abbonamento. 
 
 ## <a name="visual-studio-licensing"></a>Licenze per Visual Studio
 Le sottoscrizioni di Visual Studio sono concesse in licenza ai singoli utenti. Un unico utente può usare il software per progettare, sviluppare, testare o mostrare i propri programmi su un numero illimitato di dispositivi. Una sottoscrizione di Visual Studio consente anche all'utente con licenza di valutare il software e simulare gli ambienti dei clienti per diagnosticare i problemi correlati ai programmi specifici.
@@ -62,4 +62,4 @@ Una licenza di sottoscrizione di Visual Studio consente anche agli utenti finali
 
 [Confrontare le funzionalità dell'IDE di Visual Studio](https://www.visualstudio.com/vs/compare/)
 
-Per gli abbonamenti MCT Software & Services e MCT Developer Software & Services, vedere il [sito Web MCT (Microsoft Certified Trainer)](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA) per informazioni sui diritti di utilizzo degli strumenti formativi inclusi nel proprio abbonamento.  
+ 
