@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Utilizzo di R in Visual Studio
 
@@ -52,9 +52,9 @@ Usare i collegamenti seguenti per saperne di più sulle funzionalità correlate 
 
 Vedere anche [Domande frequenti](faq.md).
 
-Il video seguente fornisce anche un breve riepilogo (5 minuti e 48 secondi) delle funzionalità di R Tools:
-
-> [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
+|   |   |
+|---|---|
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) per una panoramica di R Tools per Visual Studio (12 m 36s). Vedere anche [altri video su R Tools](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Inviateci i vostri commenti!
 

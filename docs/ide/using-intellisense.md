@@ -1,40 +1,31 @@
 ---
-title: Uso di IntelliSense | Microsoft Docs
+title: IntelliSense per Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Using IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Uso di IntelliSense in Visual Studio
 
 IntelliSense è il termine generale per numerose funzionalità: Elenca membri, Informazioni sul parametro, Informazioni rapide e Completa parola. Queste funzionalità consentono di acquisire altre informazioni sul codice in uso, tengono traccia dei parametri che si digitano e aggiungono le chiamate a proprietà e metodi con poche sequenze di tasti.
 
@@ -86,7 +77,7 @@ Se una funzione è sottoposta a overload, è possibile che IntelliSense non visu
 
 ## <a name="complete-word"></a>Completa parola
 
-Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile chiamare Completa parola scegliendo **Modifica** > **IntelliSense** > **Completa parola**, premendo **CTRL** + **BARRA SPAZIATRICE** oppure scegliendo il pulsante **Completa parola** sulla barra degli strumenti dell'editor.
+Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare Completa parola scegliendo **Modifica** > **IntelliSense** > **Completa parola**, premendo **CTRL**+**BARRA SPAZIATRICE** oppure scegliendo il pulsante **Completa parola** sulla barra degli strumenti dell'editor.
 
 ## <a name="intellisense-options"></a>Opzioni IntelliSense
 
@@ -110,7 +101,7 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Vedere anche
 
-[Funzionalità di IntelliSense specifiche per Visual Basic](../ide/visual-basic-specific-intellisense.md)  
+[IntelliSense per Visual Basic](../ide/visual-basic-specific-intellisense.md)  
 [IntelliSense per C#](../ide/visual-csharp-intellisense.md)  
 [IntelliSense per JavaScript](../ide/javascript-intellisense.md)  
 [Scrittura e refactoring del codice (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  

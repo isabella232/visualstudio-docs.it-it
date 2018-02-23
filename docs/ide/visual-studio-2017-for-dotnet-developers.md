@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 per sviluppatori .NET
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/23/2018
 [Documentazione: Uso di IntelliSense](using-intellisense.md)  
 [Documentazione: Funzionalità dell'editor intelligente](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio è in grado di comprendere in modo approfondito il codice grazie al compilatore Roslyn e offre funzionalità di modifica intelligenti quali la colorazione della sintassi, il completamento del codice, il controllo ortografico delle variabili, la risoluzione dei tipi non importati, la creazione della struttura, i visualizzatori di struttura, [CodeLens](find-code-changes-and-other-history-with-codelens.md), la gerarchia delle chiamate, la visualizzazione di informazioni rapide al passaggio del mouse, la Guida sui parametri, oltre a strumenti per il refactoring, l'applicazione di azioni rapide e la generazione di codice.
+Visual Studio è in grado di comprendere in modo approfondito il codice grazie al compilatore .NET ("Roslyn") e offre funzionalità di modifica intelligenti quali la colorazione della sintassi, il completamento del codice, il controllo ortografico delle variabili, la risoluzione dei tipi non importati, la creazione della struttura, i visualizzatori di struttura, [CodeLens](find-code-changes-and-other-history-with-codelens.md), la gerarchia delle chiamate, la visualizzazione di informazioni rapide al passaggio del mouse, la Guida sui parametri, oltre a strumenti per il refactoring, l'applicazione di azioni rapide e la generazione di codice.
 
 ![Editor di codice intelligente di Visual Studio](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 

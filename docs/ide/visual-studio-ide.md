@@ -6,15 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.topic: article
 author: gewarren
+f1_keywords:
+- vs.startpage
+- VS.StartPage.HowDoI
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Panoramica dell'ambiente IDE di Visual Studio
 
@@ -263,7 +266,7 @@ Scegliendo un servizio nella pagina **Servizi connessi** viene avviata la proced
 
 Se Visual Studio non include la funzionalità esatta di cui si ha bisogno, è possibile aggiungerla. È possibile personalizzare l'IDE in base al flusso e allo stile di lavoro personali, aggiungere il supporto per strumenti esterni non ancora integrati in Visual Studio e modificare le funzionalità esistenti per aumentare la produttività. Per trovare la versione più recente degli strumenti di estendibilità di Visual Studio (VS SDK), vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-È possibile usare .NET Compiler Platform (Roslyn) per scrivere i propri analizzatori di codice e generatori di codice. Tutto ciò che serve è disponibile nella pagina di [Roslyn](https://github.com/dotnet/Roslyn).
+È possibile usare .NET Compiler Platform ("Roslyn") per scrivere analizzatori di codice e generatori di codice personalizzati. Tutto ciò che serve è disponibile nella pagina di [Roslyn](https://github.com/dotnet/Roslyn).
 
 Cercare le [estensioni esistenti](https://marketplace.visualstudio.com/vs) per Visual Studio create dagli sviluppatori Microsoft, nonché dalla community di sviluppo.
 

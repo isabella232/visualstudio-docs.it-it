@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usare Build and Release Management per l'esecuzione di test automatizzati
 
@@ -26,7 +28,7 @@ Se si usano Microsoft Test Manager (MTM) e Lab Management per l'esecuzione di te
 
 * [Gestione self-service di ambienti SCVMM](#managescvmm)
 
-Build and Release Management non supporta la creazione self-service di ambienti SCVMM con isolamento rete e questo supporto non è previsto per il futuro. Esistono tuttavia alcune [alternative suggerite](#isolatedenvir).
+* [Creazione di ambienti con isolamento rete](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Automazione delle operazioni di compilazione/distribuzione/test
@@ -74,14 +76,15 @@ La tabella seguente offre un riepilogo delle attività più comuni eseguite in p
 | Acquisire un checkpoint di un ambiente o ripristinare un checkpoint pulito per un ambiente. | Aprire l'ambiente lab nel Visualizzatore dell'ambiente. Selezionare l'opzione relativa all'acquisizione di un checkpoint o al ripristino di un checkpoint precedente. | Usare direttamente la console di amministrazione di SCVMM per eseguire queste operazioni all'interno di macchine virtuali. Oppure, per eseguire questi passaggi nell'ambito di un'automazione più ampia, includere le attività di checkpoint dell'[estensione SCVMM Integration](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) in una definizione di versione come parte dell'ambiente. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Creazione self-service di ambienti con isolamento rete
+## <a name="creation-of-network-isolated-environments"></a>Creazione di ambienti con isolamento rete
 
 Un ambiente lab con isolamento rete è un gruppo di macchine virtuali SCVMM che possono essere clonate in sicurezza senza creare conflitti di rete. Questa attività è stata eseguita in MTM in base a una serie di istruzioni che usavano un set di schede di interfaccia di rete per configurare le macchine virtuali in una rete privata e un altro set di schede di interfaccia di rete per configurare le macchine virtuali in una rete pubblica.
 
-Con l'evoluzione di sistemi di gestione del cloud pubblico e privato più avanzati, come [Microsoft Azure](https://azure.microsoft.com/) e [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), è possibile ampliare l'uso diretto degli strumenti di gestione del cloud per questo tipo di funzionalità. Non esiste un modo equivalente per raggiungere questo obiettivo in Build and Release Management.
+Tuttavia, è possibile usare Visual Studio Team Services e Team Foundation Server, in combinazione con l'attività di compilazione e distribuzione di SCVMM, per gestire gli ambienti SCVMM, eseguire il provisioning di reti virtuali isolate e implementare scenari di compilazione-distribuzione-test. Ad esempio, è possibile usare l'attività per:
 
-Se è necessario adottare l'isolamento rete, è consigliabile prendere in considerazione le alternative seguenti:
+* Creare, ripristinare ed eliminare i checkpoint
+* Creare nuove macchine virtuali con un modello
+* Avviare e arrestare le macchine virtuali
+* Eseguire script di PowerShell personalizzati per SCVMM
 
-* Uno dei motivi per l'adozione dell'isolamento rete è la facilità di configurazione di più cloni. Poiché ogni clone è una replica esatta dell'originale, il nome computer e le impostazioni di configurazione vengono mantenute esattamente come sono. Questo facilita la configurazione di nuovi ambienti. Questo vantaggio, tuttavia causa problemi più avanti nel ciclo di vita (ad esempio, nell'ambiente di produzione), perché il modo in cui le applicazioni vengono infine distribuite non è lo stesso. **In alternativa**, prendere in considerazione la possibilità di configurare i nuovi ambienti nello stesso modo dell'ambiente di produzione, evitando l'uso dell'isolamento rete.
-
-* Usare un'infrastruttura di cloud pubblico, ad esempio [Microsoft Azure](https://azure.microsoft.com/) per le esigenze di test. È possibile usare facilmente [modelli di Azure Resource Manager](https://azure.microsoft.com/documentation/templates/) da [Azure Marketplace](https://azure.microsoft.com/marketplace/) o dai [modelli di avvio rapido di Azure](https://azure.microsoft.com/documentation/templates/) per impostare gruppi di macchine virtuali connessi tramite una rete privata ed esposti alla rete pubblica solo tramite un proxy o un 'jumpbox'.
+Per altre informazioni, vedere [Create a virtual network isolated environment for build-deploy-test scenarios](/vsts/build-release/actions/virtual-networks/create-virtual-network) (Creare un ambiente con isolamento di rete virtuale per scenari di compilazione-distribuzione-test).

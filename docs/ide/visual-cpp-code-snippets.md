@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
 
@@ -31,7 +34,7 @@ Per inserire un frammento di codice, aprire un file di codice C++ (file CPP o H)
 
 - Nel menu**Modifica/IntelliSense** selezionare **Inserisci frammento di codice**
 
-- Usare i tasti di scelta rapida: **CTRL + K + X**
+- Usare i tasti di scelta rapida: **CTRL**+**K**+**X**
 
 Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si seleziona **#if** il codice seguente viene aggiunto al file:
 
@@ -47,11 +50,11 @@ Sarà quindi possibile sostituire il valore 0 con la condizione corretta.
 
 Per usare un frammento di codice per racchiudere il codice selezionato, selezionare una riga (o più righe) ed eseguire una delle operazioni seguenti:
 
-1. Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Racchiudi tra**
+- Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e scegliere **Racchiudi tra**
 
-2. Nel menu**Modifica/IntelliSense** selezionare **Racchiudi tra**
+- Nel menu **Modifica** > **IntelliSense** selezionare **Racchiudi tra**
 
-3. Usare i tasti di scelta rapida: **CTRL + K + S**
+- Premere **CTRL**+**K**+**S** sulla tastiera
 
 Selezionare **#if**. Viene visualizzato un output simile al seguente:
 

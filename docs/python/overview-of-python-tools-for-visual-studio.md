@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Utilizzo di Python in Visual Studio (Windows)
 
@@ -70,7 +70,7 @@ Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseg
 
 ## <a name="features-matrix"></a>Matrice delle funzionalità
 
-È possibile installare il supporto per Python nelle edizioni seguenti di Visual Studio, come descritto nella [guida all'installazione](installing-python-support-in-visual-studio.md):
+Le funzionalità di Python possono essere installate nelle edizioni seguenti di Visual Studio, come descritto nella [guida all'installazione](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (tutte le edizioni)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (tutte le edizioni)] (https://www.visualstudio.com/it-it/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +81,7 @@ Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseg
 - Visual Studio 2012 (Professional Edition o versione successiva)
 - Visual Studio 2010 SP1 (Professional Edition o versione successiva; richiede .NET 4.5)
 
-Funzionalità supportate in base alla versione e all'edizione di Visual Studio:
+Le funzionalità vengono supportate e mantenute aggiornate in modo completo solo per la versione più recente di Visual Studio. Le funzionalità sono disponibili nelle versioni precedenti, ma non vengono mantenute aggiornate.
 
 | Supporto per Python | 2017 | 2015 | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +166,8 @@ Funzionalità supportate in base alla versione e all'edizione di Visual Studio:
 | Debug remoto (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | Finestra Debug interattivo | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | Profilatura | 2017 | 2015 | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

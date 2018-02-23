@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>Pagina Pubblica, Progettazione progetti
 La pagina **Pubblica** della **Creazione progetti** consente di configurare le proprietà relative alla distribuzione ClickOnce.  
@@ -34,10 +34,8 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Posizione cartella di pubblicazione**  
- Specifica il percorso in cui l'applicazione viene pubblicata. Può essere un percorso di unità (`C:\deploy\myapplication`), una condivisione file (`\\server\myapplication`), un server FTP (`ftp://ftp.microsoft.com/myapplication`) o un sito Web (`http://www.microsoft.com/myapplication`). Si noti che il testo deve essere presente nella scheda **Posizione di pubblicazione** perché il pulsante Sfoglia (**...**) funzioni.  
-  
- Per impostazione predefinita, il percorso di pubblicazione è `http://localhost/<projectname>/` se IIS è installato o la directory `publish\` se IIS non è installato. Se il computer esegue Windows Vista, il valore predefinito è sempre la directory `publish\` , indipendentemente dal fatto che sia installato IIS.  
-  
+ Specifica il percorso in cui l'applicazione viene pubblicata. Può essere un percorso di unità (`C:\deploy\myapplication`), una condivisione file (`\\server\myapplication`) o un server FTP (`ftp://ftp.microsoft.com/myapplication`). Si noti che il testo deve essere presente nella scheda **Posizione di pubblicazione** perché il pulsante Sfoglia (**...**) funzioni.  
+   
  **URL cartella di installazione**  
  Facoltativo. Specifica un sito Web a cui gli utenti accedono per installare l'applicazione. Questa operazione è necessaria solo se si tratta di un percorso diverso da **Posizione di pubblicazione**, ad esempio quando l'applicazione viene pubblicata in un server di gestione temporanea.  
   

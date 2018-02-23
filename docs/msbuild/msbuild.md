@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 caps.latest.revision: 
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio utilizza MSBuild, ma esso non dipende da Visual Studio. Richiamando msbuild.exe nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.  
@@ -171,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  È possibile registrare errori di compilazione, avvisi e messaggi sulla console o in un altro dispositivo di output. Per altre informazioni, vedere [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) e [Registrazione in MSBuild](../msbuild/logging-in-msbuild.md).  
   
 ##  <a name="BKMK_VisualStudio"></a> Uso di MSBuild in Visual Studio  
- In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene usato il formato di file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per archiviare le informazioni di compilazione relative ai progetti gestiti. Le impostazioni di progetto aggiunte o modificate usando l'interfaccia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono riflesse nel file .*proj generato per ogni progetto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizza un'istanza di hosting di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per compilare progetti gestiti. Ciò significa che è possibile compilare un progetto gestito in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o al prompt dei comandi, anche se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non è installato, con risultati identici.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa il formato di file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per archiviare le informazioni di compilazione relative ai progetti gestiti. Le impostazioni di progetto aggiunte o modificate usando l'interfaccia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono riflesse nel file .*proj generato per ogni progetto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizza un'istanza di hosting di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per compilare progetti gestiti. Ciò significa che è possibile compilare un progetto gestito in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o al prompt dei comandi, anche se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non è installato, con risultati identici.  
   
  Per un'esercitazione sull'uso di MSBuild in Visual Studio, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   

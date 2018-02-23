@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Procedura dettagliata: utilizzo di MSBuild
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:  
@@ -60,45 +61,33 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
      Il file di progetto verrà visualizzato nell'editor del codice.  
   
 ## <a name="targets-and-tasks"></a>Destinazioni e attività  
- I file di progetto sono file in formato XML con il nodo radice [Project](../msbuild/project-element-msbuild.md).  
+I file di progetto sono file in formato XML con il nodo radice [Project](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- È necessario specificare lo spazio dei nomi xmlns nell'elemento Project.  
+È necessario specificare lo spazio dei nomi xmlns nell'elemento Project. Se `ToolsVersion` è presente in un nuovo progetto, deve essere "15.0".
   
- La compilazione di un'applicazione viene eseguita con gli elementi [Target](../msbuild/target-element-msbuild.md) e [Task](../msbuild/task-element-msbuild.md).  
+La compilazione di un'applicazione viene eseguita con gli elementi [Target](../msbuild/target-element-msbuild.md) e [Task](../msbuild/task-element-msbuild.md).  
   
 -   Un'attività è la più piccola unità di lavoro, in altre parole, l'"atom" di una compilazione. Le attività sono componenti eseguibili indipendenti che possono avere input e output. Attualmente nel file di progetto non sono presenti attività definite o a cui si fa riferimento. Le attività vengono aggiunte al file di progetto nelle sezioni seguenti. Per altre informazioni, vedere l'argomento [Attività](../msbuild/msbuild-tasks.md).  
   
--   Una destinazione è una sequenza denominata di attività. Alla fine del file di progetto sono presenti due destinazioni attualmente racchiuse tra commenti HTML: BeforeBuild e AfterBuild.  
+-   Una destinazione è una sequenza denominata di attività. Per altre informazioni, vedere l'argomento [Destinazioni](../msbuild/msbuild-targets.md).  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Per altre informazioni, vedere l'argomento [Destinazioni](../msbuild/msbuild-targets.md).  
-  
- Il nodo Project ha un attributo DefaultTargets facoltativo che seleziona la destinazione predefinita da compilare, in questo caso Build.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- La destinazione Build non è definita nel file di progetto. Viene invece importata dal file Microsoft.CSharp.targets usando l'elemento [Import](../msbuild/import-element-msbuild.md).  
+La destinazione predefinita non è definita nel file di progetto. Viene invece specificata nei progetti importati. L'elemento [Import](../msbuild/import-element-msbuild.md) specifica i progetti importati. Ad esempio, in un progetto C#, la destinazione predefinita viene importata dal file Microsoft.CSharp.targets. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- I file importati vengono effettivamente inseriti nel file di progetto dove vi si fa riferimento.  
+I file importati vengono effettivamente inseriti nel file di progetto dove vi si fa riferimento.  
+
+> [!NOTE]
+> Alcuni tipi di progetto, ad esempio .NET Core, usano uno schema semplificato con un attributo `Sdk` invece di `ToolsVersion`. Questi progetti includono importazioni implicite e valori diversi per gli attributi predefiniti.
   
- MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che ogni destinazione non venga compilata più di una volta.  
+MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che ogni destinazione non venga compilata più di una volta.  
   
 ## <a name="adding-a-target-and-a-task"></a>Aggiunta di una destinazione e di un'attività  
  Aggiungere una destinazione al file di progetto. Aggiungere un'attività alla destinazione che visualizza un messaggio.  
@@ -158,9 +147,6 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
   
  Alternando l'editor di codice e la finestra di comando, è possibile modificare il file di progetto e visualizzare velocemente i risultati.  
   
-> [!NOTE]
->  Se si esegue msbuild senza l'opzione di comando /t, msbuild compila la destinazione specificata dall'attributo DefaultTarget dell'elemento Project, in questo caso "Build". Verrà compilato il file BuildApp.exe di Windows Forms Application.  
-  
 ## <a name="build-properties"></a>Proprietà di compilazione  
  Le proprietà di compilazione sono coppie nome-valore che agevolano la compilazione. Diverse proprietà di compilazione sono già definite all'inizio del file di progetto:  
   
@@ -178,10 +164,10 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
  Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio,  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- definisce la proprietà denominata TargetFrameworkVersion, assegnandole il valore stringa "v12.0".  
+ definisce la proprietà denominata TargetFrameworkVersion, assegnandole il valore stringa "v15.0".  
   
  Compilare le proprietà possono essere ridefinite in qualsiasi momento. Se  
   
@@ -223,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

@@ -9,38 +9,30 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 7740fcea4ac944242f4284382cf26544d9ea95b5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- dotnet
+ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funzionalità di generazione del codice in Visual Studio
 
-Esistono diversi modi per generare codice automaticamente nell'editor di Visual Studio. Tramite queste funzionalità di generazione del codice è possibile risparmiare tempo e fatica, ridurre gli errori di sintassi e migliorare la coerenza nel codice.
+Visual Studio offre supporto in numerosi modi per generare e correggere il codice, nonché eseguirne il refactoring.
 
-Alcune delle funzionalità in Visual Studio che consentono di generare automaticamente il codice includono i [frammenti di codice](../ide/code-snippets.md) e le [Azioni rapide](../ide/quick-actions.md) ![Icona lampadina piccola](media/vs2015_lightbulbsmall.png).
+- È possibile usare [frammenti di codice](../ide/code-snippets.md) per inserire un modello, ad esempio un blocco [switch](/dotnet/csharp/language-reference/keywords/switch) o una dichiarazione [enum](/dotnet/csharp/language-reference/keywords/enum).
 
-Alcune attività di generazione del codice comuni disponibili tramite [Azioni rapide](../ide/quick-actions.md) sono:
+- È possibile usare [azioni rapide](../ide/quick-actions.md) per generare codice come classi e proprietà o per introdurre una variabile locale. Le azioni rapide consentono anche di [migliorare il codice](../ide/common-quick-actions.md), ad esempio rimuovere cast non necessari e variabili inutilizzate oppure aggiungere controlli Null prima di accedere alle variabili.
 
-* Generazione di classi, metodi, proprietà e così via.
+- È possibile [effettuare il refactoring del codice](../ide/refactoring-in-visual-studio.md) per rinominare una variabile, riordinare i parametri dei metodi o sincronizzare un tipo con il relativo nome di file, per citare alcuni esempi.
 
-* Implementazione di classi astratte o interfacce
-
-* Introduzione di una variabile locale in un'espressione complessa
-
-Inoltre, digitando determinati caratteri è possibile:
-
-* Generare [blocchi di commento in formato XML]() per il codice che possono essere elaborati in un secondo momento per produrre documentazione automaticamente
-
-* Generare firme di [override dei metodi]()
-
-Poiché la logica di generazione del codice è strettamente legata alla sintassi del linguaggio, ogni servizio di linguaggio in Visual Studio fornisce capacità di generazione del codice specifiche.
+> [!NOTE]
+> Ogni servizio di linguaggio in Visual Studio fornisce funzionalità di generazione del codice proprie, quindi alcune funzionalità sono disponibili solo in C# e alcune sono disponibili sia in C# che in Visual Basic.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Azioni rapide](../ide/quick-actions.md)  
 [Frammenti di codice](../ide/code-snippets.md)  
-[Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)  
-[Refactoring](../ide/refactoring-in-visual-studio.md)
+[Azioni rapide](../ide/quick-actions.md)  
+[Refactoring](../ide/refactoring-in-visual-studio.md)  
+[Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)

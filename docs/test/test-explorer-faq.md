@@ -18,25 +18,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: db3cf85576e6c46aca14897f7244cd0f56d8d5c2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
 ## <a name="test-discovery"></a>Individuazione dei test
 
-### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-have-theories-custom-adapters-custom-traits-use-ifdefs-or-are-dynamically-defined-how-can-i-discover-these-tests"></a>1. Esplora test non individua test con teorie, adattatori personalizzati, tratti personalizzati, che usano #ifdefs o sono definiti in modo dinamico. Come è possibile individuare questi test?
+### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. Esplora Test non individua i test definiti in modo dinamico. Ad esempio, teorie, adattatori personalizzati, tratti personalizzati, #ifdefs e così via. Come è possibile individuare questi test?
 
   Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **Strumenti > Opzioni > Test**.
 
-  L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824), ovvero l'individuazione di test basata sull'origine, non consente di individuare i test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni `#ifdef` o che sono definiti in modo dinamico in altro modo. Per l'individuazione accurata di questi test è necessaria una compilazione. Nelle versioni di anteprima 15.6, l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questo significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero è possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione delle teorie (o di eventuali test definiti in modo dinamico) dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, ma consente comunque di ottenere risultati accurati e completi dopo una compilazione.
+  L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) è l'individuazione dei test in base all'origine. Questa funzionalità non consente di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni `#ifdef` e così via, perché sono definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. Nelle versioni di anteprima 15.6, l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, ma consente comunque di ottenere risultati accurati e completi dopo una compilazione.
 
 ### <a name="2-what-does-the--plus-symbol-that-appears-in-the-top-line-of-test-explorer-mean"></a>2. Cosa significa il simbolo '+' (più) visualizzato nella prima riga di Esplora test?
 
-  Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo una compilazione se è attivata l'individuazione basata su assembly. Viene visualizzato se nel progetto vengono rilevati test definiti in modo dinamico.
+  Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo una compilazione a condizione che sia attivata l'individuazione basata su assembly. Viene visualizzato se nel progetto vengono rilevati test definiti in modo dinamico.
 
   ![Riga di riepilogo con segno più](media/testex-plussymbol.png)
 
@@ -54,11 +54,25 @@ ms.lasthandoff: 01/29/2018
 
   L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) funziona solo per i linguaggi gestiti (C# e Visual Basic), perché viene compilata con il compilatore Roslyn. Per il momento, l'individuazione dei test in tempo reale funziona solo per i framework xUnit, NUnit e MSTest.
 
+### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. Come è possibile attivare i log per Esplora test?
+
+  Passare a **Strumenti > Opzioni > Test** e individuare la sezione Registrazione.
+
+### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. Perché i test nei progetti UWP vengono individuati solo dopo la distribuzione dell'app?
+
+  I test UWP usano un runtime diverso come destinazione quando l'app viene distribuita. Questo significa che per individuare i test in modo accurato per i progetti UWP non è sufficiente compilare il progetto, ma è anche necessario distribuirlo.
+
+### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Come funziona l'ordinamento dei risultati di test nella visualizzazione gerarchia?
+
+  Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anziché in base al risultato. Le altre impostazioni di raggruppamento solitamente dispongono i risultati dei test in base al risultato e poi in ordine alfabetico. Di seguito sono indicate le varie opzioni di raggruppamento per un confronto. È possibile inviare commenti e suggerimenti sulla progettazione [in questo problema GitHub](https://github.com/Microsoft/vstest/issues/1425).
+
+  ![SortingExamples](media/testex-sortingex.png)
+
 ## <a name="features"></a>Funzionalità
 
 ### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>Come è possibile attivare i flag di funzionalità per provare le nuove funzionalità di test?
 
-I flag di funzionalità vengono usati per fornire parti del prodotto sperimentali o non completate agli utenti ansiosi di fornire commenti e suggerimenti prima del rilascio ufficiale delle funzionalità. Questi flag potrebbero destabilizzare l'esperienza dell'IDE. È consigliabile usarli solo in ambienti di sviluppo protetti, come le macchine virtuali. I flag di funzionalità sono sempre impostazioni usate a proprio rischio. È possibile attivare le funzionalità sperimentali con l'[estensione per i flag di funzionalità](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension) o tramite il prompt dei comandi per sviluppatori.
+I flag di funzionalità vengono usati per fornire parti del prodotto sperimentali o non completate agli utenti ansiosi di fornire commenti e suggerimenti prima del rilascio ufficiale delle funzionalità. Questi flag potrebbero destabilizzare l'esperienza dell'IDE. Usarli solo in ambienti di sviluppo protetti, come le macchine virtuali. I flag di funzionalità sono sempre impostazioni usate a proprio rischio. È possibile attivare le funzionalità sperimentali con l'[estensione per i flag di funzionalità](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension) o tramite il prompt dei comandi per sviluppatori.
 
 ![Estensione per i flag di funzionalità](media/testex-featureflag.png)
 

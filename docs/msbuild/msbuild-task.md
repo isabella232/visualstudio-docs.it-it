@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 264b5b379b7c3f2fa364d01260e1da825b5d64d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-task"></a>Attività MSBuild
 Compila progetti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] da un altro progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -65,7 +67,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/
 ## <a name="passing-properties-to-projects"></a>Passaggio delle proprietà ai progetti  
  Nelle versioni di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] precedenti a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, passare set di Proprietà diversi a progetti diversi elencati nell'elemento [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è complicato. Se si usa l'attributo Properties dell'[attività MSBuild](../msbuild/msbuild-task.md), l'impostazione viene applicata a tutti i progetti da compilare a meno che non si divida in batch l'[attività MSBuild](../msbuild/msbuild-task.md) e non si forniscano in modo condizionale proprietà diverse per ogni progetto nell'elenco di elementi.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 tuttavia fornisce due nuovi elementi di metadati riservati, Properties e AdditionalProperties, che offrono un modo flessibile per passare proprietà diverse a seconda del progetto da compilare tramite l'[attività MSBuild](../msbuild/msbuild-task.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, tuttavia, fornisce due nuovi elementi di metadati riservati, Properties e AdditionalProperties, che offrono un modo flessibile per passare proprietà diverse a seconda del progetto da compilare tramite l'[attività MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
 >  Questi nuovi elementi di metadati sono applicabili solo agli elementi passati nell'attributo Projects dell'[attività MSBuild](../msbuild/msbuild-task.md).  

@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Passaggio 6: Uso di Git
 
@@ -35,7 +35,7 @@ Questo argomento descrive la creazione di un repository Git locale per un proget
 
   ![Le informazioni aggiuntive vengono visualizzate quando si posiziona un controllo Git nella finestra di Visual Studio](media/working-with-git-01.png)
 
-1. La finestra **Team Explorer** viene visualizzata anche con varie opzioni di Git selezionando l'intestazione del repository. Il riquadro **Sincronizzazione**, come illustrato, specifica le opzioni per la pubblicazione in un repository remoto.
+1. La finestra **Team Explorer** viene visualizzata anche con varie opzioni di Git selezionando l'intestazione del repository. Il riquadro **Sincronizzazione**, visualizzato quando si seleziona l'intestazione **Push**, specifica le opzioni per la pubblicazione in un repository remoto.
 
   ![Team Explorer in Visual Studio dopo la creazione di un repository locale](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Questo argomento descrive la creazione di un repository Git locale per un proget
 
   ![Team Explorer in Visual Studio per la visualizzazione dei rami](media/working-with-git-04.png)
 
-1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. Se si è connessi a un repository remoto, selezionare **Sincronizza** per effettuare il push del commit locale.
+1. Quando si usa un repository locale, le modifiche sottoposte a commit passano direttamente al repository. Se si è connessi a un repository remoto, selezionare l'intestazione, scegliere **Sincronizza** per passare alla sezione **Sincronizzazione** e utilizzare i comandi presentati in tale sezione.
 
 ## <a name="going-deeper"></a>Approfondimenti
 
