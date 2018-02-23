@@ -15,17 +15,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3d8d9b544b8cb4489ebfdfda8c6a237cb73c118f
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 0f2aaf85128bd34f4e80a7b29763506b17d77911
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Procedura: configurare l'analisi del codice per un'applicazione Web ASP.NET
 
 In Visual Studio, è possibile selezionare da un elenco di analisi del codice *set di regole* da applicare al [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazione Web. Il set di regole predefinito è regole minime consigliate di Microsoft. È possibile selezionare un altro set di regole da applicare al sito Web.
-
-## <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Per configurare un set di regole per un progetto del framework di pagine ASP.NET
 
 1. Selezionare il sito Web in **Esplora**.
 
