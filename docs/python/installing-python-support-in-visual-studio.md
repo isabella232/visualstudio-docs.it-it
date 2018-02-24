@@ -2,7 +2,7 @@
 title: Installazione del supporto di Python in Visual Studio | Microsoft Docs
 description: Istruzioni dettagliate su come installare Python Tools for Visual Studio (PTVS) in Visual Studio 2017, 2015, 2013, 2012 e 2010, inclusi le opzioni e i percorsi di installazione.
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0ef5cba2924c33857a8366105bde1f933a1ae9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installazione del supporto di Python in Visual Studio in Windows
 
@@ -43,7 +43,7 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Scaricare ed eseguire il programma di installazione più recente di Visual Studio 2017. È necessario installare la versione 15.2 e versioni successive per usare Python.
+1. Scaricare ed eseguire il programma di installazione più recente di Visual Studio 2017. Se Visual Studio è già installato, eseguire il programma di installazione di Visual Studio e andare al passaggio 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Installare Visual Studio 2017 Community</a>
@@ -55,7 +55,10 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
     ![Carico di lavoro Sviluppo Python nel programma di installazione di Visual Studio](media/installation-python-workload.png)
 
-    Facoltativo: se si usano funzionalità di data science, valutare la possibilità di installare il carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati** (Visual Studio 2017 15.2 e versioni successive). Questo carico di lavoro include il supporto per Python, nonché per i linguaggi R e F#. Per altre informazioni, vedere [Carico di lavoro relativo alle applicazioni analitiche e di analisi scientifica dei dati](../rtvs/data-science-workload.md).
+    Facoltativo: se si usa l'analisi scientifica dei dati, valutare la possibilità di installare il carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati**. Questo carico di lavoro include il supporto per Python, nonché per i linguaggi R e F#. Per altre informazioni, vedere [Carico di lavoro relativo alle applicazioni analitiche e di analisi scientifica dei dati](../rtvs/data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > I carichi di lavoro di Python e di analisi scientifica dei dati sono disponibili solo con la versione di Visual Studio 2017 versione 15.2 e successive.
 
 1. Sul lato destro del programma di installazione è possibile scegliere le opzioni aggiuntive. Ignorare il passaggio per accettare le opzioni predefinite.
 
@@ -63,7 +66,7 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
     | Opzione | Descrizione |
     | --- | --- |
-    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di installazione di Visual Studio in qualsiasi momento per aggiungere o rimuovere le distribuzioni. |
+    | Distribuzioni di Python | Scegliere qualsiasi combinazione delle varianti a 32 e 64 bit delle distribuzioni di Python 2, Python 3, Anaconda2 e Anaconda3 che si intende usare. Ogni combinazione include interprete di distribuzione, runtime e librerie. Anaconda, in particolare, è una piattaforma aperta di data science che include una vasta gamma di pacchetti pre-installati. È possibile tornare al programma di installazione di Visual Studio in qualsiasi momento per aggiungere o rimuovere le distribuzioni.  **Nota**: se è stata installata una distribuzione al di fuori del programma di installazione di Visual Studio, non occorre selezionare l'opzione equivalente qui. Visual Studio rileva automaticamente le installazioni esistenti di Python. Vedere [Ambienti Python](managing-python-environments-in-visual-studio.md). |
     | Supporto modello Cookiecutter | Installa l'interfaccia utente di Cookiecutter per individuare modelli, inserire opzioni di modello e creare progetti e file. Vedere [Uso dell'estensione Cookiecutter](using-python-cookiecutter-templates.md). |
     | Supporto Web Python | Installa gli strumenti per lo sviluppo Web, tra cui il supporto per HTML, CSS e JavaScript, oltre ai modelli per i progetti usando i framework Bottle, Flask e Django. Vedere [Modelli di progetti Web Python](python-web-application-project-templates.md). |
     | Supporto Python IoT | Supporta lo sviluppo di Windows IoT Core usando Python. |
@@ -74,7 +77,9 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
     ![Avvio, modifica, modifica o disinstallazione di Visual Studio dal programma di installazione](media/installation-vs-launch.png)
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sull'installazione del supporto Python in Visual Studio.|
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

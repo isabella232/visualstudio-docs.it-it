@@ -9,11 +9,11 @@ Description: Managing Visual Studio subscriptions included with Microsoft Partne
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9866b018d93e1a7b9612f65107f978ecd15bc9de
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>Gestione delle sottoscrizioni di Visual Studio incluse nelle appartenenze Microsoft Partner Network (MPN)
 
@@ -28,7 +28,8 @@ Il numero e il livello di sottoscrizioni di Visual Studio variano in base al liv
 - [Program Administrator Guide to Software and Online Services Benefits]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) ) (Guida ai vantaggi software e dei servizi online per l'amministratore del programma) di Microsoft Partner Network
     - Pagina 6: Assigning Contact Roles and Visual Studio Professional Subscriptions for Action Pack subscribers (Assegnazione di ruoli di contatto e sottoscrizioni di Visual Studio Professional per i sottoscrittori di Action Pack)
 
-      **Nota:** il ruolo di contatto tecnico è obbligatorio per le sottoscrizioni di Visual Studio
+> [!NOTE]
+> Il ruolo di contatto tecnico è obbligatorio per le sottoscrizioni di Visual Studio
     - Pagina 8: Assigning Visual Studio subscriptions for Competency Partners (Assegnazione delle sottoscrizioni di Visual Studio per i partner con competenze)
 
 

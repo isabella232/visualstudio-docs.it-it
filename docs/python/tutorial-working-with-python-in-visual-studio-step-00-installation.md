@@ -17,18 +17,18 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2edd75f87a3c70fc3a8190fb2fdab39c3c31be6e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ca3dccf8a30bb4e1132c0bbc7ea8d8e660ae0f8e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
 > [!Note]
 > Il supporto Python non è attualmente disponibile in Visual Studio per Windows; per Mac e Linux il supporto Python è disponibile tramite Visual Studio Code. Vedere le [domande e risposte](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-1. Scaricare ed eseguire la versione più recente del programma di installazione di Visual Studio 2017 per Windows (il supporto Python è presente a partire dalla versione 15.2).
+1. Scaricare ed eseguire la versione più recente del programma di installazione di Visual Studio 2017 per Windows (il supporto Python è presente a partire dalla versione 15.2). Se Visual Studio è già installato, eseguire il programma di installazione di Visual Studio e andare al passaggio 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted">Installare Visual Studio 2017 Community</a>

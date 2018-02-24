@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Prima applicazione desktop WPF
 
@@ -60,7 +60,7 @@ In questa sezione verrà creata l'infrastruttura dell'applicazione, che include 
 
 1. Nella finestra di dialogo **Proprietà** espandere il nodo della categoria **Common** e scegliere la proprietà **Title** , quindi immettere `ExpenseIt` e premere **INVIO** .
   
-     L'elemento **Title** nella finestra XAML viene modificato per corrispondere al nuovo valore. È possibile modificare le proprietà XAML nella finestra XAML o **Proprietà** e le modifiche risulteranno sincronizzate.
+     Si noti che l'attributo **Title** nella finestra XAML viene modificato in modo che corrisponda al nuovo valore. È possibile modificare le proprietà XAML nella finestra XAML o **Proprietà** e le modifiche risulteranno sincronizzate.
 
 1. Nella finestra XAML impostare il valore dell'elemento **Height** su `375`e il valore della proprietà **Width** su `500`.
   
@@ -116,7 +116,7 @@ In questa sezione si aggiungeranno due pagine e un'immagine all'applicazione.
 
 1. Nella finestra di progettazione scegliere la scheda **ExpenseItHome.xaml** se non è già la scheda della finestra di progettazione attiva.
 
-1. Scegliere l'elemento `<Title>` e modificare il titolo in **ExpenseIt – Home**.
+1. Scegliere l'attributo `Title` e modificarne il valore in **ExpenseIt - Home**.
   
      Il file **ExpenseItHome.xaml** dovrebbe essere simile a questo in C#:  
   
@@ -178,7 +178,7 @@ In questa sezione si aggiungeranno due pagine e un'immagine all'applicazione.
 
 1. Nella finestra di progettazione scegliere la scheda **ExpenseReportPage.xaml** se non è già la scheda della finestra di progettazione attiva.
 
-1. Scegliere l'elemento `<Title>` e modificare il titolo in **ExpenseIt – View Expense**.
+1. Scegliere l'attributo `Title` e modificarne il valore in **ExpenseIt - View Expense**.
   
      Il file ExpenseReportPage.xaml dovrebbe essere simile a questo in C#:  
   

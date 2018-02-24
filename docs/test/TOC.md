@@ -45,7 +45,7 @@
 ### [Procedura dettagliata: Scrittura di unit test per DLL C/C++](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [Informazioni di riferimento sulle API del framework di unit test Microsoft per C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [Creare ed eseguire unit test per app UWP](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [Esecuzione di unit test di una DLL di Visual C++ per le app UWP](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [Testing unità di una DLL UWP C++](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [Esecuzione di unit test di codice di Visual C# in un'app UWP](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [Eseguire unit test per app UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Uso di code coverage per determinare la quantità di codice testato](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

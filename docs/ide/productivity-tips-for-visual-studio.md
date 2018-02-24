@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -28,7 +28,7 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, in **Visual Studio 2017 versione 15.6 Preview 2** e versioni successive, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o contrarre rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** e **Comprimi selezione** oppure premendo **CTRL**+**W** e **CTRL**+**MAIUSC**  + **W** (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive).
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, in **Visual Studio 2017 versione 15.6 Preview 2** e versioni successive, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** o **Modifica** > **Avanzate** > **Comprimi selezione** oppure premendo **MAIUSC**+**ALT**+**=** o **MAIUSC**+**ALT**+**-** (disponibile in **Visual Studio 2017 versione 15.5** e successive).
 
 - **Uso di IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) (Uso di IntelliSense).
 
@@ -124,7 +124,7 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 
 ## <a name="see-also"></a>Vedere anche
 
-[Tasti di scelta rapida predefiniti per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[Procedura dettagliata: Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
+- [Tasti di scelta rapida predefiniti per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Procedura dettagliata: Creare un'applicazione semplice](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 662ac8a1d8eac3e23d98bd9978a16e286a26d145
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Configurazione degli unit test per il codice Python
 
@@ -29,9 +29,11 @@ Gli unit test sono parti di codice che testano altre unità di codice in un'appl
 
 In Python gli unit test vengono usati frequentemente per convalidare gli scenari durante la progettazione di un programma. Il supporto di Python in Visual Studio include l'individuazione, l'esecuzione e il debug di unit test direttamente all'interno del contesto del processo di sviluppo, senza la necessità di eseguire i test separatamente.
 
-Questo argomento illustra brevemente le funzionalità degli unit test in Visual Studio con Python. Per altre informazioni di carattere generale sull'esecuzione di unit test, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md). Vedere anche il video [Testing Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Questo argomento illustra brevemente le funzionalità degli unit test in Visual Studio con Python. Per altre informazioni di carattere generale sull'esecuzione di unit test, vedere [Eseguire unit test del codice](../test/unit-test-your-code.md).
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
+|   |   |
+|---|---|
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) sul testing unità in Python (2m 31s). |
 
 ## <a name="discovering-and-viewing-tests"></a>Individuazione e visualizzazione di test
 

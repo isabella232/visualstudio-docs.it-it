@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Quali sono le opzioni di pubblicazione più adatte?
 
@@ -50,6 +50,8 @@ Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azu
 - Non sono necessarie personalizzazioni a livello di computer sui server che ospitano l'applicazione Web.
 
 > Per usare Servizio app di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+
+Per altre informazioni sulla pubblicazione di app ASP.NET Core, vedere [Pubblicare un'app Web ASP.NET Core in Servizio app di Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Macchine virtuali di Azure
 
@@ -83,7 +85,7 @@ Si noti che se per qualsiasi motivo (ad esempio, l'accesso al computer) non si �
 - È necessaria solo una distribuzione locale dei test.
 - Si vuole esaminare e potenzialmente modificare in modo indipendente i file dell'applicazione prima di inviarli a un'altra destinazione di distribuzione.
 
-
+Per altre informazioni sulla distribuzione di app .NET Core, vedere [Distribuzione di app .NET Core con Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Destinazioni personalizzate
 
@@ -103,3 +105,5 @@ Visual Studio consente di creare qualsiasi numero di profili di distribuzione pe
 - Se si usano servizi cloud di un provider diverso da Azure a cui è possibile accedere con URL.
 - Si vuole eseguire la distribuzione usando credenziali diverse da quelle usate in Visual Studio o quelle associate direttamente all'account Azure.
 - Si vuole eliminare i file dalla destinazione ogni volta che si esegue la distribuzione.
+
+Per altre informazioni sulla pubblicazione in IIS, vedere [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (Uso di ASP.NET 3.5 e ASP.NET 4.5 in IIS 8.0) e [Remote Debug ASP.NET on a Remote IIS Computer](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) (Debug remoto di ASP.NET in un computer IIS remoto).

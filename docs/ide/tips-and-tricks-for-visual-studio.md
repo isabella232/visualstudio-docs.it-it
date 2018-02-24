@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Suggerimenti relativi alla tastiera per Visual Studio
 
@@ -84,8 +84,8 @@ ms.lasthandoff: 01/29/2018
 |Selezione blocco|Tenere premuto ALT e trascinare il mouse, SHIFT+ALT+tasti di direzione||
 |Spostare la riga verso l'alto o il basso|ALT+freccia SU o GIÙ||
 |Duplicare una riga|CTRL+ E,V|Visual Studio 2017 versione 15.6 Preview 2|
-|Espandere la selezione|CTRL+W|Visual Studio 2017 versione 15.5|
-|Comprimere la selezione|CTRL+MAIUSC+W|Visual Studio 2017 versione 15.5|
+|Espandere la selezione|**MAIUSC**+**ALT**+**=**|Visual Studio 2017 versione 15.5|
+|Comprimere la selezione|**MAIUSC**+**ALT**+**-**|Visual Studio 2017 versione 15.5|
 |Vai a definizione|F12||
 |Visualizza definizione|ALT+F12||
 |Stack Vai a definizione|CTRL+MAIUSC+8 (Indietro), CTRL+MAIUSC+7 (Avanti)||
@@ -125,9 +125,9 @@ ms.lasthandoff: 01/29/2018
 
 ## <a name="see-also"></a>Vedere anche
 
-[Tasti di scelta rapida (VSTS e TFS)](/vsts/collaborate/keyboard-shortcuts)  
-[Blog di Visual Studio](http://blogs.msdn.com/b/visualstudio)  
-[Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)  
-[Casella degli strumenti di Visual Studio su Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Bug di connessione di Visual Studio](http://connect.microsoft.com/VisualStudio)
+- [Tasti di scelta rapida (VSTS e TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Blog di Visual Studio](http://blogs.msdn.com/b/visualstudio)
+- [Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Casella degli strumenti di Visual Studio su Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Bug di connessione di Visual Studio](http://connect.microsoft.com/VisualStudio)

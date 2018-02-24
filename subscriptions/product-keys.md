@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -90,7 +90,8 @@ Come si può osservare, vengono elencate diverse versioni di Visio 2010.  È gi�
 ### <a name="exporting-your-claimed-keys"></a>Esportazione dei codici richiesti
 È possibile esportare un elenco di tutti i codici richiesti, insieme a un'ampia selezione di codici statici e altri codici contrassegnati automaticamente come "richiesti" per l'utente.  
 
-**IMPORTANTE: se la sottoscrizione scade, non sarà più possibile richiedere nuovi codici o esportare i codici richiesti.** 
+> [!IMPORTANT] 
+> Se la sottoscrizione scade, non sarà più possibile richiedere nuovi codici o esportare i codici richiesti.** 
 
 Per esportare i codici, è sufficiente fare clic sul collegamento **Export all keys** (Esporta tutti i codici Product Key) all'estrema destra della pagina Codici "Product Key".  Verrà creato un file con estensione xml intitolato KeysExport.xml e si potrà scegliere se aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.  
 

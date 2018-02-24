@@ -2,7 +2,7 @@
 title: Gestione di progetti per applicazioni Python in Visual Studio | Microsoft Docs
 description: Viene illustrato lo scopo dei progetti in Visual Studio, come creare e gestire i progetti per il codice Python e vengono presentati diversi modelli di progetto disponibili per Python.
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Progetti Python
 
@@ -40,11 +40,10 @@ In Visual Studio è disponibile un'ampia gamma di modelli di progetto Python per
 >
 > Creare un progetto di Visual Studio da codice esistente è davvero semplicissimo, come descritto in [Creazione di un progetto da file esistenti](#creating-a-project-from-existing-files).
 
-Per un'introduzione ai progetti Python in Visual Studio, vedere il video [Getting Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Ottenere codice Python) (Microsoft Virtual Academy, 2m17s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Vedere anche il video meno recente [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Approfondimenti: uso del controllo del codice sorgente con i progetti Python) su youtube.com (8m55s).
+|   |   |
+|---|---|
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) per un'introduzione ai progetti Python (2m 17s). |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Vedere anche [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Approfondimenti: uso del controllo del codice sorgente con i progetti Python) su youtube.com (8m e 55s). |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Aggiunta di file, assegnazione di un file di avvio e impostazione degli ambienti
 

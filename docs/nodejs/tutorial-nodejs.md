@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Introduzione a Node.js in Visual Studio
 In questa esercitazione per lo sviluppo in Node.js tramite Visual Studio si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app. Si esploreranno poi alcune funzionalità dell'ambiente IDE e si eseguirà l'app. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).  
@@ -37,6 +37,10 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
      Se non viene visualizzato il modello di progetto **Applicazione Express 4 Node.js Azure di base**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**. 
 
     Visual Studio crea la nuova soluzione e apre il progetto. Il file di progetto **app.js** verrà aperto nell'editor (riquadro a sinistra). Se non si ha familiarità con i progetti e le soluzioni di Visual Studio, vedere [Quickstart: Use Visual Studio to create your first Node.js app](../ide/quickstart-nodejs.md) (Guida introduttiva: uso di Visual Studio per creare la prima app Node.js).
+
+4. Se il runtime di Node.js non è già installato, installarlo dal sito Web [Node.js](https://nodejs.org/en/download/).
+
+    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non viene rilevato un runtime installato è possibile configurare il progetto per fare riferimento al runtime installato.
 
 ## <a name="add-some-code"></a>Aggiungere codice
 
@@ -121,7 +125,7 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
 
     ![Selezione della destinazione di debug](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. Premere **CTRL+F5** per eseguire l'applicazione.
+1. Premere **F5** (**Debug** > **Avvia debug**) per eseguire l'applicazione.
 
     Il debugger si fermerà in corrispondenza del punto di interruzione impostato. È ora possibile esaminare lo stato dell'app.
 
@@ -129,7 +133,7 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
 
     ![Esame delle variabili](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. Premere **F5** per continuare.
+1. Premere **F5** (**Debug** > **Continua**) per continuare.
 
     L'app verrà aperta in un browser.
 
@@ -139,7 +143,7 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
 
     ![App in esecuzione nel browser](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Aprire la finestra interattiva di Node.js selezionando **Visualizza > Altre finestre > Finestra interattiva di Node.js**.
+1. Aprire la finestra interattiva di Node.js selezionando **Visualizza** > **Altre finestre** > **Finestra interattiva di Node.js**.
 
    ![Apertura della finestra interattiva di Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 

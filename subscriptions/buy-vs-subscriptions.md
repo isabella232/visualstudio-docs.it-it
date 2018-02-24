@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Come acquistare una sottoscrizione
 Esistono due tipi principali di sottoscrizioni di Visual Studio, cloud e standard, illustrati nella [pagina dei prezzi di Visual Studio](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ Esistono due tipi principali di sottoscrizioni di Visual Studio, cloud e standar
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Acquistare sottoscrizioni di Visual Studio Standard
 È necessario contattare il rivenditore di software per acquistare una sottoscrizione standard di Visual Studio o visitare il [Microsoft Store](https://www.microsoft.com/store) online.
 
-*   Per iscriversi per la sottoscrizione di Azure ed effettuare acquisti da Visual Studio Marketplace, è necessario un [account Microsoft](https://www.microsoft.com/account) "personale" o un ["account aziendale o dell'istituto di istruzione"](/azure/active-directory/sign-up-organization), nel caso di acquisti per un'organizzazione che gestisce le identità con Azure Active Directory (Azure AD).
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio
+
+Per iscriversi per la sottoscrizione di Azure ed effettuare acquisti da Visual Studio Marketplace, è necessario un [account Microsoft](https://www.microsoft.com/account) "personale" o un ["account aziendale o dell'istituto di istruzione"](/azure/active-directory/sign-up-organization), nel caso di acquisti per un'organizzazione che gestisce le identità con Azure Active Directory (Azure AD).
 
 > [!WARNING]
 > Se si usa una sottoscrizione di Azure per l'acquisto di sottoscrizioni cloud di Visual Studio, questi costi compariranno come eccedenze e non verranno inclusi nel conteggio per gli impegni monetari di Azure. Per altre informazioni sulla fatturazione di Azure, vedere le [domande frequenti](/vsts/billing/faq-azure-billing).  
-
-### <a name="buy-subscriptions"></a>Acquistare sottoscrizioni
-
 
 1.  Accedere a [Visual Studio Marketplace > Sottoscrizioni](https://marketplace.visualstudio.com/subscriptions).
 

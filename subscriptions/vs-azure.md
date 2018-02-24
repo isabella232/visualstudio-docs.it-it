@@ -9,11 +9,11 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Uso di Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -68,11 +68,16 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ![Dashboard di Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Domande frequenti
-*Vedere qui per aggiornamenti*
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: come è possibile inviare una richiesta di supporto tecnico dal portale di Azure?
+R: l'invio di una richiesta di supporto dal portale di Azure è un processo in tre fasi.
+1. Attivare il vantaggio di supporto tecnico e ottenere l'ID di accesso dell'ID di contratto.
+2. Collegare il contratto di supporto alla sottoscrizione di Azure. 
+3. Inviare una richiesta di supporto online.
+Vedere la documentazione del [supporto tecnico](/visualstudio/subscriptions/vs-tech-support) per informazioni dettagliate. 
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con Azure?  Vedere queste risorse:
-    - Supporto tecnico: https://azure.microsoft.com/support/options/ 
-    - [Documentazione](/azure/)
+    - Supporto tecnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+    - [Documentazione di Azure](/visualstudio/azure/)
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 

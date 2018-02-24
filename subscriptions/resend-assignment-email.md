@@ -1,22 +1,34 @@
 ---
-title: Come inviare di nuovo i messaggi di posta elettronica di assegnazione delle sottoscrizioni da VLSC | Microsoft Docs
+title: Come inviare di nuovo i messaggi di posta elettronica di assegnazione delle sottoscrizioni da manage.visualstudio.com o VLSC | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Come inviare di nuovo i messaggi di posta elettronica di assegnazione delle sottoscrizioni da VLSC
+# <a name="how-to-resend-subscription-assignment-emails"></a>Come inviare di nuovo i messaggi di posta elettronica di assegnazione delle sottoscrizioni:
 
+I passaggi necessari per inviare nuovamente un messaggio di posta elettronica di assegnazione variano a seconda del portale usato per gestire le sottoscrizioni. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Rinvio dei messaggi di posta elettronica di assegnazione dall'interno di manage.visualstudio.com
+
+Il processo per inviare di nuovo i messaggi di posta elettronica di assegnazione dall'interno del portale manage.visualstudio.com è molto semplice:
+
+1. Visitare il portale [manage.visualstudio.com](https://manage.visualstudio.com) e accedere. 
+2. Usare la scheda **Filtro** per cercare il sottoscrittore a cui si vuole inviare di nuovo il messaggio di posta elettronica di assegnazione. (Per altre informazioni sui filtri, vedere [Cercare una sottoscrizione](/visualstudio/subscriptions/search-license).)
+3. Fare clic sui sottoscrittori.  È possibile usare CTRL+clic o MAIUSC+clic per selezionare più sottoscrittori.
+4. Fare clic su **Invia di nuovo** nella parte superiore dei risultati di ricerca.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Rinvio di messaggi di posta elettronica di assegnazione dall'interno di VLSC
 Quando una sottoscrizione è stata assegnata a un sottoscrittore in VLSC e il sottoscrittore richiede di ricevere di nuovo il messaggio di posta elettronica di assegnazione, è possibile farlo modificando le informazioni di posta elettronica del sottoscrittore e ripristinando poi l'indirizzo originale. In questo modo viene attivata automaticamente la ritrasmissione del messaggio di posta elettronica di assegnazione.
 
 Seguire le istruzioni di seguito per inviare di nuovo il messaggio di posta elettronica di assegnazione:
@@ -36,4 +48,3 @@ In questo modo VLSC riconosce la presenza di modifiche per la sottoscrizione e i
 
 > [!NOTE]
 > - Per le nuove sottoscrizioni assegnate, il messaggio di posta elettronica di assegnazione verrà generato automaticamente. La procedura precedente è necessaria solo quando un utente richiede una nuova notifica del messaggio di posta elettronica di assegnazione oppure in caso di mancato invio della notifica per qualsiasi motivo.
-> - Questa procedura non è necessario per inviare di nuovo i messaggi di assegnazione per le sottoscrizioni assegnate tramite https://manage.visualstudio.com.  Per inviare di nuovo i messaggi di posta elettronica di assegnazione ai sottoscrittori nel portale, è sufficiente selezionare i sottoscrittori e fare clic sul pulsante **Invia di nuovo** nella parte superiore dell'elenco di sottoscrittori.  

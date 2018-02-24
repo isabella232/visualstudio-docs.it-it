@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivazione del vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
-È possibile risolvere problemi in garanzia in ambienti non di produzione.  Nota: il vantaggio deve essere attivato prima di inviare una richiesta di supporto.  Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due.  
+È possibile risolvere problemi in garanzia in ambienti non di produzione.  (Il vantaggio deve essere attivato prima di inviare una richiesta di supporto.)  Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due.  
 
-**Nota:** non tutte le sottoscrizioni a un determinato livello sono idonee per ricevere il supporto per eventi imprevisti.  Le sottoscrizioni acquisite tramite FTE, NFR, MPN, MCT e altri programmi non ricevono il supporto per eventi imprevisti.  Se la sottoscrizione non è idonea per la ricezione del supporto tecnico, il riquadro relativo non verrà visualizzato nei vantaggi disponibili. 
+> [!NOTE]
+> Non tutte le sottoscrizioni a un determinato livello sono idonee per ricevere il supporto per eventi imprevisti.  Le sottoscrizioni acquisite tramite FTE, NFR, MPN, MCT e altri programmi non ricevono il supporto per eventi imprevisti.  Se la sottoscrizione non è idonea per la ricezione del supporto tecnico, il riquadro relativo non verrà visualizzato nei vantaggi disponibili. 
 
    ![Riquadro del vantaggio Supporto tecnico](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ ms.lasthandoff: 12/01/2017
 
     ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**Nota**: per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](http://support.microsoft.com/activatesupport).   
+> [!NOTE]
+> Per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](http://support.microsoft.com/activatesupport).   
 
 # <a name="how-to-submit-an-incident"></a>Come inviare un evento imprevisto
 Una volta configurati l'ID contratto e l'ID di accesso, in caso di necessità è possibile chiamare il numero di telefono del supporto tecnico del proprio paese, inviare un evento imprevisto [online](http://support.microsoft.com/oas/) o inviarlo tramite il portale di Azure.  Se si preferisce ricevere assistenza per telefono, è comunque possibile inviare l'evento imprevisto online per essere richiamati in seguito da un professionista del supporto tecnico Microsoft.
