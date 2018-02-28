@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
 Il **strumenti > Opzioni > Debug > Generale** pagina consente di impostare le opzioni seguenti:  
@@ -115,7 +118,7 @@ Invia tutti i messaggi del debugger che normalmente verrebbero visualizzati di *
 Disattiva tutte le personalizzazioni di visualizzazione della struttura degli oggetti. Per ulteriori informazioni sulla personalizzazione delle visualizzazioni, vedere [creare viste personalizzate di oggetti .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
 **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)**  
-Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code").
+Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per ulteriori informazioni, vedere [debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md).
 
 **Abilitare il debug di JavaScript per ASP.NET (Chrome e Internet Explorer)** consente al debugger di script per le applicazioni ASP.NET. Al primo utilizzo in Chrome, è necessario accedere al primo utilizzo per abilitare le estensioni di colore che è stato installato il browser. Disabilitare questa opzione per ripristinare il comportamento legacy.    
 
