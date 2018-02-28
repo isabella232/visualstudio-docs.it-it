@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurare l'impatto di estensione nella finestra di avvio
 
@@ -30,6 +32,9 @@ Per consentire agli utenti di comprendere l'impatto, abbiamo aggiunto una nuova 
 ![la gestione delle prestazioni di Visual Studio](media/manage-performance.png)
 
 Questo documento è destinato agli sviluppatori di estensioni descrivendo la modalità di calcolo impatto di estensione e come si può essere analizzato in locale per verificare se un'estensione può essere visualizzata come estensione conseguenze sulle prestazioni.
+
+> [!NOTE]
+> Questo documento è incentrato sull'impatto delle estensioni nel carico di avvio e di soluzione. Estensioni hanno anche impatto sulle prestazioni di Visual Studio quando provocano l'interfaccia utente potrebbe non rispondere. Per ulteriori informazioni su questo argomento, vedere [come: ritardi di interfaccia utente di diagnosticare causati dalle estensioni](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Estensioni possano impatto di avvio
 
