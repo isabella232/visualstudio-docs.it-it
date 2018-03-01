@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator for Android
 Visual Studio Emulator per Android viene eseguito come una macchina virtuale in Hyper-V, la tecnologia di virtualizzazione per Windows 8 e versioni successive. Per eseguire l'emulatore, il computer deve soddisfare i requisiti per l'esecuzione di Hyper-V, come descritto in questo argomento.  
   
- Il programma di installazione tenta di configurare automaticamente i prerequisiti quando si installa l'emulatore. Se i prerequisiti vengono configurati correttamente, l'emulatore funziona come previsto. In caso contrario potrebbe essere necessario abilitare i prerequisiti manualmente. Per configurare manualmente i prerequisiti, usare i passaggi e gli strumenti descritti [qui](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx) per l'emulatore di Windows Phone.  
+ Il programma di installazione tenta di configurare automaticamente i prerequisiti quando si installa l'emulatore. Se i prerequisiti vengono configurati correttamente, l'emulatore funziona come previsto. In caso contrario potrebbe essere necessario abilitare i prerequisiti manualmente. Per configurare manualmente i prerequisiti, usare i passaggi e gli strumenti descritti [qui](/previous-versions/windows/apps/jj863509\(v=vs.105\)) per l'emulatore di Windows Phone.  
   
 > [!IMPORTANT]
 >  Il programma di installazione per l'emulatore verifica i prerequisiti per l'esecuzione di Visual Studio Emulator per Android. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti.  

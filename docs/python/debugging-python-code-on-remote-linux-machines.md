@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Debug remoto di codice Python in Linux
 
@@ -40,7 +40,7 @@ Per eseguire questa procedura dettagliata sono necessari gli elementi seguenti:
 - Un computer remoto che esegue Python in un sistema operativo come Mac OSX o Linux.
 - La porta 5678 (in ingresso) deve essere aperta nel firewall di tale computer, in base all'impostazione predefinita per il debug remoto.
 
-È possibile creare facilmente [macchine virtuali Linux in Azure](/azure/virtual-machines/linux/creation-choices) e [accedervi usando Desktop remoto](/azure/virtual-machines/linux/use-remote-desktop) da Windows. L'uso di Ubuntu per la macchina virtuale è comodo perché Python è installato per impostazione predefinita. Se si preferisce scegliere un altro percorso di download per Python, vedere l'elenco di opzioni in [Selezione e installazione di interpreti Python](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters).
+È possibile creare facilmente [macchine virtuali Linux in Azure](/azure/virtual-machines/linux/creation-choices) e [accedervi usando Desktop remoto](/azure/virtual-machines/linux/use-remote-desktop) da Windows. L'uso di Ubuntu per la macchina virtuale è comodo perché Python è installato per impostazione predefinita. Se si preferisce scegliere un altro percorso di download per Python, vedere l'elenco di opzioni in [Selezione e installazione di interpreti Python](installing-python-interpreters.md).
 
 Per informazioni dettagliate sulla creazione di una regola del firewall per una macchina virtuale di Azure, vedere [Apertura di porte su una VM tramite il portale di Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -35,7 +35,7 @@ Un progetto creato da un modello (accessibile da **File > Nuovo > Progetto**), q
 
 I modelli Bottle, Flask e Django includono un sito di base contenente alcune pagine e file statici. Questo codice è sufficiente per avviare ed eseguire il debug del server in locale (in cui è necessario ottenere alcune impostazioni dall'ambiente) e per la distribuzione in Microsoft Azure (in cui è necessario specificare un oggetto [app WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
-Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](managing-python-environments-in-visual-studio.md#global-and-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
+Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](selecting-a-python-environment-for-a-project.md#using-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
 
 ![Finestra di dialogo in cui è possibile installare i pacchetti necessari per un modello di progetto](media/template-web-requirements-txt-wizard.png)
 

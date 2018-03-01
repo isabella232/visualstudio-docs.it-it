@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Progetti servizio cloud di Azure per Python
 
@@ -93,7 +93,7 @@ Per i servizi cloud lo script `ConfigureCloudService.ps1` usa `pip` per installa
 
 Si noti che le istanze del servizio cloud non includono compilatori C, di conseguenza tutte le librerie con estensioni C devono specificare file binari precompilati.
 
-pip e le relative dipendenze, oltre ai pacchetti in `requirements.txt`, vengono scaricati automaticamente e conteggiati ai fini dell'utilizzo della larghezza di banda addebitabile. Vedere [Gestione dei pacchetti necessari](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) per informazioni dettagliate sulla gestione dei file `requirements.txt`.
+pip e le relative dipendenze, oltre ai pacchetti in `requirements.txt`, vengono scaricati automaticamente e conteggiati ai fini dell'utilizzo della larghezza di banda addebitabile. Vedere [Gestione dei pacchetti necessari](managing-required-packages-with-requirements-txt.md) per informazioni dettagliate sulla gestione dei file `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
