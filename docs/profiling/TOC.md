@@ -43,7 +43,6 @@
 #### [Procedura: Raccogliere dati sulle prestazioni per un sito Web](how-to-collect-performance-data-for-a-web-site.md)
 #### [Procedura: Creare manualmente sessioni di prestazioni](how-to-manually-create-performance-sessions.md)
 #### [Procedura dettagliata: Identificare i problemi di prestazioni](walkthrough-identifying-performance-problems.md)
-#### [Esempio PeopleTrax (strumenti di profilatura)](peopletrax-sample-profiling-tools.md)
 ### [Configurare le sessioni di prestazioni](configuring-performance-sessions.md)
 #### [Procedura: Fare riferimento alle informazioni sui simboli di Windows](how-to-reference-windows-symbol-information.md)
 #### [Procedura: Scegliere un metodo di raccolta](how-to-choose-collection-methods.md)
