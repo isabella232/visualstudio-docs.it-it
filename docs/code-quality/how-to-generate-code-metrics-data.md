@@ -1,5 +1,5 @@
 ---
-title: Come generare dati di metrica del codice in Visual Studio | Documenti Microsoft
+title: Come generare dati di metrica codice in Visual Studio | Documenti Microsoft
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica codice
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 
 - Nel **risultati metrica codice** finestra, scegliere il **Calcola metrica codice per la soluzione** pulsante.
 
-   I risultati vengono generati e **risultati metrica codice** verrà visualizzata la finestra.
+I risultati vengono generati e **risultati metrica codice** verrà visualizzata la finestra.
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Per generare risultati metrica codice per uno o più progetti selezionati.
 
@@ -49,8 +50,9 @@ ms.lasthandoff: 12/22/2017
 
 ## <a name="to-view-the-results-details"></a>Per visualizzare i dettagli dei risultati
 
-- Nel **risultati metrica codice** finestra, espandere l'albero di **gerarchia** colonna.
+Nel **risultati metrica codice** finestra, espandere l'albero di **gerarchia** colonna.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Valori della metrica del codice](../code-quality/code-metrics-values.md)
+- [Utilizzare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
+- [Valori della metrica del codice](../code-quality/code-metrics-values.md)

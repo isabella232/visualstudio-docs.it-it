@@ -15,21 +15,21 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Applicare codice di facile manutenibilità con criteri di archiviazione dell'analisi del codice
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice di facile manutenibilità con criteri di controllo dell'analisi codice
 
-Gli sviluppatori possono utilizzare lo strumento di metrica del codice per misurare la complessità e della manutenibilità del codice, ma non è possibile richiamare la metrica del codice come parte di un criterio di controllo. Tuttavia, è possibile abilitare le regole di analisi del codice per verificare la conformità del codice standard di metrica del codice e applicare le regole tramite criteri di archiviazione. Per ulteriori informazioni sulla metrica del codice, vedere il [valori della metrica codice](../code-quality/code-metrics-values.md).
+Gli sviluppatori possono utilizzare lo strumento di metrica del codice per misurare la complessità e della manutenibilità del codice, ma non è possibile richiamare la metrica del codice come parte di un criterio di controllo. Tuttavia, è possibile abilitare le regole di analisi del codice per verificare la conformità del codice con standard della metrica del codice e applicare le regole tramite criteri di archiviazione. Per ulteriori informazioni sulla metrica del codice, vedere [valori della metrica del codice](../code-quality/code-metrics-values.md).
 
 È possibile abilitare la profondità dell'ereditarietà, accoppiamenti, indice di manutenibilità e le regole di complessità applicare il codice gestibile tramite criteri di controllo di analisi del codice. Le quattro di queste regole sono disponibili nella categoria "Regole di manutenibilità" nell'editor Criteri di analisi del codice.
 
 Gli amministratori del controllo della versione di Team Foundation possono aggiungere le regole di manutenibilità di analisi codice per i requisiti dei criteri di archiviazione. Questi check-in criteri richiedono agli sviluppatori di eseguire l'analisi del codice in base a queste regole modificate prima dell'avvio di un controllo aggiuntivo.
 
-## <a name="to-open-the-code-analysis-policy-editor"></a>Per aprire l'Editor criteri di analisi codice
+## <a name="to-open-the-code-analysis-policy-editor"></a>Per aprire l'editor Criteri di analisi codice
 
 1. in **Team Explorer**, fare clic sul progetto team, fare clic su **impostazioni progetto Team**, quindi fare clic su **controllo del codice sorgente**.
 
