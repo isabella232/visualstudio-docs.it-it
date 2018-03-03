@@ -1,5 +1,5 @@
 ---
-title: Risultati metrica in Visual Studio code | Documenti Microsoft
+title: La finestra Risultati metrica codice in Visual Studio | Documenti Microsoft
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Utilizzo di dati di metrica codice
+# <a name="using-the-code-metrics-results-window"></a>Utilizzo della finestra Risultati metrica codice
 
 Il **risultati metrica codice** finestra Visualizza i dati generati dall'analisi della metrica del codice. Per ulteriori informazioni sui valori di dati di metrica codice, vedere [valori della metrica del codice](../code-quality/code-metrics-values.md).
 
@@ -41,7 +41,7 @@ Il **risultati metrica codice** finestra viene visualizzata automaticamente quan
 
 - Nel **vista** menu, scegliere **altre finestre** > **risultati metrica codice**.
 
-   Il **risultati metrica codice** finestra viene visualizzata, anche se non contiene risultati.
+Il **risultati metrica codice** finestra viene visualizzata, anche se non contiene risultati.
 
 ### <a name="to-view-code-metrics-details"></a>Per visualizzare i dettagli sulla metrica del codice
 
@@ -73,7 +73,7 @@ Il **filtro** casella di riepilogo a discesa contiene i nomi delle colonne di ri
 
 1. Fare clic su di **Aggiungi/Rimuovi colonne** pulsante.
 
-     \-oppure fare doppio clic su qualsiasi intestazione di colonna e quindi fare clic su **Aggiungi/Rimuovi colonne**.
+     \- oppure fare doppio clic su qualsiasi intestazione di colonna e quindi fare clic su **Aggiungi/Rimuovi colonne**.
 
 1. Nel **Aggiungi/Rimuovi colonne** la finestra di dialogo, deselezionare il casella di controllo per la colonna che si desidera rimuovere e quindi fare clic su **OK**.
 
@@ -131,5 +131,5 @@ Per ulteriori informazioni su Visual Studio Team Services, gli elementi di lavor
 
 ## <a name="see-also"></a>Vedere anche
 
-[Valori della metrica del codice](../code-quality/code-metrics-values.md)  
-[Procedura: Generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md)
+- [Valori della metrica del codice](../code-quality/code-metrics-values.md)
+- [Procedura: generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md)

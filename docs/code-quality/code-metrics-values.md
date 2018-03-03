@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -26,9 +26,11 @@ La maggiore complessità delle applicazioni software moderne aumenta anche la di
 
 Gli sviluppatori possono utilizzare Visual Studio per generare dati di metrica del codice che misurano la complessità e della manutenibilità del codice gestito. Dati di metrica codice possono essere generati per un'intera soluzione o un singolo progetto.
 
+Per informazioni su come generare dati di metrica codice in Visual Studio, vedere [procedura: generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Misure del software
 
-L'elenco seguente mostra i risultati della metrica codice [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Calcola:
+Nell'elenco seguente viene illustrato il codice risultati di metrica per il calcolo di Visual Studio:
 
 - **Indice di manutenibilità** -calcola un valore di indice compreso tra 0 e 100 che rappresenta la relativa semplicità di gestione del codice. Un valore elevato indica una migliore gestibilità. Classificazioni codificato tramite colori consente di identificare rapidamente i punti critici del codice. Una classificazione verde è compreso tra 20 e 100 e indica che il codice ha una buona manutenibilità. Una classificazione gialla è compreso tra 10 e 19 e indica che il codice è moderatamente gestibile. Una classificazione rossa è compresa tra 0 e 9 e indica una manutenibilità insufficiente.
 
@@ -51,3 +53,8 @@ Per ulteriori informazioni su come metrica del codice tratta i metodi anonimi, v
 Alcuni strumenti software e i compilatori di generano il codice che viene aggiunto a un progetto e che lo sviluppatore di progetto non consente di visualizzare o non deve modificare. In genere, la metrica del codice ignora il codice generato durante il calcolo dei valori delle metriche. In questo modo i valori della metrica in base a ciò che lo sviluppatore può visualizzare e modificare.
 
 Codice generato per Windows Form non viene ignorato, poiché si tratta di codice che lo sviluppatore può visualizzare e modificare.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Procedura: generare dati di metrica codice](../code-quality/how-to-generate-code-metrics-data.md)
+- [Utilizzare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
