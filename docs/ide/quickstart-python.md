@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -71,7 +71,7 @@ In questa Guida introduttiva si usa la libreria Falcon per sperimentare il proce
 
 Per altre informazioni su Falcon, visitare [falconframework.org](https://falconframework.org/).
 
-Si noti che invece di installare le librerie nell'ambiente globale, gli sviluppatori in genere creano un "ambiente virtuale" in cui installare le librerie per un progetto specifico. Molti modelli di progetto Python in Visual Studio includono un file `requirements.txt` che elenca le librerie da cui dipende il modello. Se si crea un progetto da uno di questi modelli viene attivata automaticamente la creazione di un ambiente virtuale in cui vengono installate le librerie. Per altre informazioni, vedere [Python environments - Virtual environments](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments) (Ambienti Python - Ambienti virtuali).
+Si noti che invece di installare le librerie nell'ambiente globale, gli sviluppatori in genere creano un "ambiente virtuale" in cui installare le librerie per un progetto specifico. Molti modelli di progetto Python in Visual Studio includono un file `requirements.txt` che elenca le librerie da cui dipende il modello. Se si crea un progetto da uno di questi modelli viene attivata automaticamente la creazione di un ambiente virtuale in cui vengono installate le librerie. Per altre informazioni, vedere [Uso di ambienti virtuali](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Aggiungere un file di codice
 

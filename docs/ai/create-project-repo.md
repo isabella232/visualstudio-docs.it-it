@@ -36,7 +36,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile
 
     ![Primo output del programma MNIST Python](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Se si usa Anaconda e si riceve un errore di NumPy mancante, potrebbe essere necessario [modificare l'ambiente Python per usare Anaconda](../python/managing-python-environments-in-visual-studio.md).
+> Se si usa Anaconda e si riceve un errore di NumPy mancante, potrebbe essere necessario [modificare l'ambiente Python per usare Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
 11. È possibile visualizzare lo stato con TensorBoard. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 

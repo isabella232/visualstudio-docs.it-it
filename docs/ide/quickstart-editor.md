@@ -14,15 +14,17 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>Guida introduttiva: Scrittura di codice nell'editor
+# <a name="quickstart-use-the-code-editor"></a>Guida introduttiva: Usare l'editor del codice
 
 In questa presentazione dell'editor, della durata di 10 minuti, si aggiunge codice a un file per vedere le modalità con cui Visual Studio semplifica la scrittura, la navigazione e la comprensione del codice.
+
+Questa guida introduttiva presuppone una certa familiarità con un linguaggio di programmazione. In caso contrario, è consigliabile leggere prima di tutto una delle guide introduttive alla programmazione, ad esempio su come creare un'app Web con [Python](../ide/quickstart-python.md) o [C#](../ide/tutorial-csharp-aspnet-core.md) oppure come creare un'app console con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/quickstart-cpp.md).
 
 ## <a name="create-a-new-code-file"></a>Creare un nuovo file di codice
 
@@ -70,7 +72,7 @@ La barra degli strumenti dispone di vari pulsanti che favoriscono la produttivit
         "brown",
         "fox",
         "jumps"
-    }
+    };
 
     string[] morewords = {
         "over",
@@ -157,11 +159,11 @@ Questa guida introduttiva per l'editor di Visual Studio è stata completata. Ora
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)  
-[Frammenti di codice](../ide/code-snippets.md)  
-[Struttura](../ide/outlining.md)  
-[Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)  
-[Refactoring](../ide/refactoring-in-visual-studio.md)  
-[Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+- [Frammenti di codice](../ide/code-snippets.md)
+- [Struttura](../ide/outlining.md)
+- [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)
+- [Refactoring](../ide/refactoring-in-visual-studio.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)

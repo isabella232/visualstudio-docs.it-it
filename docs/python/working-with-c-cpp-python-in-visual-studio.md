@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 
@@ -219,7 +219,7 @@ Per rendere disponibile la DLL C++ in un'estensione per Python, modificare prima
 1. Impostare la configurazione di destinazione su "Rilascio" e compilare di nuovo il progetto C++ per verificare il codice. Se si verificano errori, controllare i casi seguenti:
     - Non è possibile individuare Python.h: verificare che il percorso in **C/C++ > Generale > Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella `include` dell'installazione di Python in uso.
     - Non è possibile individuare le librerie Python: verificare che il percorso in **Linker > Generale > Directory librerie aggiuntive** nelle proprietà del progetto punti alla cartella `libs` dell'installazione di Python in uso.
-    - Errori del linker correlati all'architettura di destinazione: modificare l'architettura di progetto della destinazione C++ in modo che corrisponda a quella dell'installazione di Python in uso.
+    - Errori del linker correlati all'architettura di destinazione: modificare l'architettura di progetto della destinazione C++ in modo che corrisponda a quella dell'installazione di Python in uso. Ad esempio, se il progetto C++ è destinato a x64, ma l'installazione di Python è x86, impostare x86 come destinazione del progetto C++.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Testare il codice e confrontare i risultati
 

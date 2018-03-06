@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 
@@ -39,7 +39,7 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Sc
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Per migliorare le prestazioni, IntelliSense dipende dal database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, o nella scheda **IntelliSense** (vedere [Ambienti Python](managing-python-environments-in-visual-studio.md)). 
+IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Per migliorare le prestazioni, IntelliSense dipende dal database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Completamenti
 
