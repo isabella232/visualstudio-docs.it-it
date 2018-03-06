@@ -33,6 +33,8 @@
 #### [Controllare gli aggiornamenti delle distribuzioni di Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Gestire le installazioni
 #### [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](install/tools-for-managing-visual-studio-instances.md)
+### Gestire le sottoscrizioni
+#### [Sottoscrizioni di Visual Studio: panoramica per l'amministratore](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Guida dell'amministratore di Help Viewer](ide/help-viewer-administrator-guide.md)
 #### [Argomenti della riga di comando per Gestione contenuto della Guida](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Ovverride di Gestione contenuto della Guida](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # Guide rapide introduttive
 ## [Orientamento di Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Progetti e soluzioni](ide/quickstart-projects-solutions.md)
-## [Scrivere codice nell'editor](ide/quickstart-editor.md)
+## [Usare l'editor](ide/quickstart-editor.md)
 ## [Personalizzare tema e colori del testo](ide/quickstart-personalize-the-ide.md)
 ## [C++: creare un'app console](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: creare un'app Web](ide/quickstart-python.md)
@@ -98,7 +100,7 @@
 #### [Supporto a 64 bit per l'IDE di Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Sviluppare senza progetti o soluzioni ("Apri cartella")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Personalizzare le attività di compilazione e debug](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Scrivere codice nell'editor](ide/writing-code-in-the-code-and-text-editor.md)
+### [Usare l'editor](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Ricerca e sostituzione di testo](ide/finding-and-replacing-text.md)
 ##### [Usare espressioni regolari](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Casella Trova/Comando](ide/find-command-box.md)

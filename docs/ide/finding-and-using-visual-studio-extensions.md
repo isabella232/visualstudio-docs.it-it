@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare altre estensioni di Visual Studio
 
@@ -73,22 +73,22 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 
 Una novità di **Visual Studio 2017 versione 15.3** prevede che Visual Studio notifichi l'utente se sospetta che un'estensione è stata coinvolta in un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, visualizza una notifica.
 
-Un'altra novità di **Visual Studio versione 15.6 preview 3** prevede che Visual Studio invii una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
+Un'altra novità di **Visual Studio 2017 versione 15.6 preview 3** prevede che Visual Studio invii una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
 
 Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica o eseguire una delle azioni seguenti:
 
 - Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera è possibile riabilitare l'estensione nella finestra di dialogo **Estensioni e aggiornamenti**.
 
-- Scegliere **Non visualizzare più questo messaggio**. 
-  - Se la notifica riguarda un arresto anomalo in una sessione precedente, Visual Studio non visualizzerà più una notifica quando si verifica un arresto anomalo associato a questa estensione. Visual Studio visualizzerà comunque le notifiche in caso di blocco associabile all'estensione o per arresti anomali o blocchi che possono essere associati ad altre estensioni. 
-  - Se la notifica riguarda un blocco, l'IDE non visualizzerà più una notifica quando questa estensione è associata al blocco. Visual Studio visualizzerà comunque notifiche correlate all'arresto anomalo per questa estensione e correlate ad arresti anomali o blocchi per altre estensioni. 
+- Scegliere **Non visualizzare più questo messaggio**.
+  - Se la notifica riguarda un arresto anomalo in una sessione precedente, Visual Studio non visualizzerà più una notifica quando si verifica un arresto anomalo associato a questa estensione. Visual Studio visualizzerà comunque le notifiche in caso di blocco associabile all'estensione o per arresti anomali o blocchi che possono essere associati ad altre estensioni.
+  - Se la notifica riguarda un blocco, l'IDE non visualizzerà più una notifica quando questa estensione è associata al blocco. Visual Studio visualizzerà comunque notifiche correlate all'arresto anomalo per questa estensione e correlate ad arresti anomali o blocchi per altre estensioni.
 
 - Scegliere **Altre informazioni** per visualizzare questa pagina.
 
 - Scegliere il pulsante **X** al termine della notifica per ignorarla. Verrà visualizzata una nuova notifica per le istanze future dell'estensione associata a un arresto anomalo o al blocco dell'interfaccia utente.
 
 > [!NOTE]
-> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione abbia chiamato codice che fa parte di Visual Studio, che a sua volta ha causato il blocco dell'interfaccia utente o l'arresto anomalo. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività. 
+> Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione abbia chiamato codice che fa parte di Visual Studio, che a sua volta ha causato il blocco dell'interfaccia utente o l'arresto anomalo. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Copie master e copie di lavoro di esempio
 

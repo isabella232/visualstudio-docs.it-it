@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installazione del supporto di Python in Visual Studio in Windows
 
@@ -31,7 +31,7 @@ Per installare il supporto Python per Visual Studio (noto anche come Python Tool
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e versioni precedenti](#visual-studio-2013-and-earlier)
 
-Per Visual Studio 2015 e versioni precedenti è anche necessario installare separatamente un interprete Python a scelta. Installare Python 3.5 e versioni precedenti; Python 3.6 non è supportato e genera il messaggio "Versione 3.6 di Python non supportata". Per informazioni dettagliate, vedere [Ambienti Python](managing-python-environments-in-visual-studio.md). Nella stessa pagina sono contenute anche le istruzioni per l'aggiunta di un interprete Python esistente in Visual Studio 2017.
+Per Visual Studio 2015 e versioni precedenti è anche necessario [installare separatamente un interprete Python](installing-python-interpreters.md) a scelta. Installare Python 3.5 e versioni precedenti. Python 3.6 non è supportato e genera il messaggio "Versione 3.6 di Python non supportata". Nella stessa pagina sono contenute anche le istruzioni per l'aggiunta di un interprete Python esistente in Visual Studio 2017.
 
 Per testare rapidamente il supporto Python dopo aver eseguito la procedura di installazione, aprire la finestra interattiva di Python premendo ALT+I e quindi immettere `2+2`. Se non viene visualizzato l'output `4`, eseguire nuovamente la procedura.
 
@@ -91,7 +91,7 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 
     ![Opzione PTVS nel programma di installazione di Visual Studio 2015](media/installation-vs2015.png)
 
-1. Una volta completata l'installazione di Visual Studio, [installare un interprete Python a scelta](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Se è già installato un interprete, vedere [Creazione di un ambiente per un interprete esistente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. Una volta completata l'installazione di Visual Studio, [installare un interprete Python a scelta](installing-python-interpreters.md). Se si dispone già di un interprete installato e Visual Studio non lo rileva automaticamente, vedere [Identificazione manuale di un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 e versioni precedenti
 
@@ -101,7 +101,7 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
     - Visual Studio 2012: [PTVS 2.1 for Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 for Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Installare un interprete Python a scelta](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Se è già installato un interprete, vedere [Creazione di un ambiente per un interprete esistente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. [Installare un interprete Python a scelta](installing-python-interpreters.md). Se si dispone già di un interprete installato e Visual Studio non lo rileva automaticamente, vedere [Identificazione manuale di un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="install-locations"></a>Percorsi di installazione
 

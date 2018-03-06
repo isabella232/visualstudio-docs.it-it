@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: c946f9d0fea5192f75d2fd0a9865827b6027ef50
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="profiling-python-code"></a>Profilatura del codice Python
 
@@ -38,6 +38,9 @@ Quando si fa clic su **OK**, viene eseguito il profiler e si apre un report di p
 |   |   |
 |---|---|
 | ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) per una dimostrazione della profilatura di Python (3m 00s).|
+
+> [!Note]
+> Al momento, Visual Studio supporta solo questo livello di profilatura dell'applicazione completa, ma Microsoft sarà certamente lieta di ricevere commenti e suggerimenti sulle funzionalità future. Usare il [pulsante **Invia commenti sul prodotto**](#feedback) nella parte inferiore della pagina.
 
 ## <a name="profiling-for-ironpython"></a>Profilatura per IronPython
 

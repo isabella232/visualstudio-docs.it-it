@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -54,7 +54,7 @@ Il flusso di lavoro del debug di base include l'impostazione dei punti di interr
 È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug > Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo F5. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in Esplora soluzioni) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in Proprietà progetto (vedere [Opzioni di debug del progetto](#project-debugging-options)). Se per qualche motivo non è stato impostato un file di avvio, tuttavia, viene visualizzata una finestra di output Python per un breve periodo di tempo. In questo caso, fare clic con il pulsante destro del mouse sul file appropriato e selezionare **Imposta come file di avvio**.
 
 > [!Note]
-> Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Ambienti Python](managing-python-environments-in-visual-studio.md).
+> Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Selezione di un interprete e un ambiente Python da usare in un progetto](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Punti di interruzione
 

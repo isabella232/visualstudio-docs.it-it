@@ -29,4 +29,4 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile agg
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di un ambiente per un interprete esistente Python](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Identificazione manuale di un ambiente esistente](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)
