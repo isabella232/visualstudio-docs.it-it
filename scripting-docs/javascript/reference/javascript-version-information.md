@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>Informazioni sulla versione JavaScript
 Versioni diverse di JavaScript supportano set di elementi JavaScript differenti. Le applicazioni[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] supportano un set di funzionalità di Internet Explorer leggermente diverso.  
@@ -37,11 +37,11 @@ Versioni diverse di JavaScript supportano set di elementi JavaScript differenti.
  La tabella seguente mostra le modalità documento di Internet Explorer (e le app che rappresentano [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] e [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]) che supportano elementi del linguaggio specifici. Le modalità documento che supportano un determinato elemento sono indicate con la lettera **Y**, mentre quelle che non supportano un determinato elemento sono indicate con la lettera **N**.  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (il browser Edge in Windows 10) non include il supporto per le modalità documento legacy. Il supporto per le app di [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] inizierà con Windows Phone 8.1. Le funzionalità sperimentali (su: flag) sono indicate con "Exp".  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Browser edge in Windows 10) non include il supporto per le modalità documento legacy. Il supporto per le app di [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] inizierà con Windows Phone 8.1. Le funzionalità sperimentali (su: flag) sono indicate con "Exp".  
   
  La tabella include informazioni di riepilogo. Per altre informazioni, vedere la documentazione relativa all'elemento del linguaggio.  
   
-|Elemento di linguaggio|Modalità non standard, modalità standard di Internet Explorer 6, modalità standard di Internet Explorer 7|Modalità standard di Internet Explorer 8|Modalità standard di Internet Explorer 9|Modalità standard di Internet Explorer 10|Modalità standard di Internet Explorer 11|Marginale|Applicazioni Windows Store|  
+|Elemento di linguaggio|Modalità non standard, modalità standard di Internet Explorer 6, modalità standard di Internet Explorer 7|Modalità standard di Internet Explorer 8|Modalità standard di Internet Explorer 9|Modalità standard di Internet Explorer 10|Modalità standard di Internet Explorer 11|Microsoft Edge|Applicazioni Windows Store|  
 |----------------------|--------------------------------------------------------------------------|-----------------------------------|-----------------------------------|------------------------------------|------------------------------------|----------|----------------|  
 |[__proto\_ \_ proprietà (oggetto)](../../javascript/reference/proto-property-object-javascript.md)|N|N|N|N|Y|Y|v8 (Win): N<br />v8.1 (Win): Y<br />v8.1 (Phone): Y|  
 |[Proprietà $1...$9 (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -262,8 +262,8 @@ Versioni diverse di JavaScript supportano set di elementi JavaScript differenti.
 |[Proprietà message](../../javascript/reference/message-property-error-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Funzione min](../../javascript/reference/math-min-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Costante MIN_VALUE](../../javascript/reference/number-constants-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[Operatore di assegnazione modulo (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[Operatore modulo (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[Operatore di assegnazione di resto (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[Operatore di resto (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Metodo moveFirst](../../javascript/reference/movefirst-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Metodo moveNext](../../javascript/reference/movenext-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Proprietà multiline](../../javascript/reference/multiline-property-regular-expression-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -412,7 +412,7 @@ Versioni diverse di JavaScript supportano set di elementi JavaScript differenti.
 |[Funzione write](../../javascript/reference/debug-write-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[Funzione writeln](../../javascript/reference/debug-writeln-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
   
- \*Supporta gli oggetti DOM ma gli oggetti non definiti dall'utente. Gli attributi `enumerable` e `configurable` possono essere specificati, ma non vengono usati.  
+ \* Supporta gli oggetti DOM ma gli oggetti non definiti dall'utente. Gli attributi `enumerable` e `configurable` possono essere specificati, ma non vengono usati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [definizione della compatibilità del documento](http://go.microsoft.com/fwlink/?LinkId=208537)
