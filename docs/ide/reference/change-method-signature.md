@@ -17,11 +17,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8358e14ccf9570207b3e52a552990fd2a3a80d49
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c181eb27ccdbc2f1efb7294e1610a6055245241c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -53,7 +53,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
      - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
    - **Mouse**
      - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
      - Selezionare **Modifica > Refactoring > Riordina parametri**.
@@ -84,5 +84,5 @@ Questo refactoring si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

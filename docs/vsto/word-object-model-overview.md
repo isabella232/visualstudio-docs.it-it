@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,7 +21,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a6f9163543272d784b0f8347acf275f74023ccf8
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -82,7 +84,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  
   
- Nei progetti di componente aggiuntivo VSTO è possibile generare elementi host <xref:Microsoft.Office.Tools.Word.Document> in fase di esecuzione. È possibile usare l'elemento host generato per aggiungere controlli al documento associato. Per altre informazioni, vedere [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Nei progetti di componente aggiuntivo VSTO è possibile generare elementi host <xref:Microsoft.Office.Tools.Word.Document> in fase di esecuzione. È possibile usare l'elemento host generato per aggiungere controlli al documento associato. Per altre informazioni, vedere [Estensione in fase di esecuzione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ### <a name="selection-object"></a>Oggetto Selection  
  L'oggetto <xref:Microsoft.Office.Interop.Word.Selection> rappresenta l'area attualmente selezionata. Quando si esegue un'operazione nell'interfaccia utente di Word, ad esempio l'applicazione di grassetto a un testo, si seleziona o si evidenzia il testo e quindi si applica la formattazione. L'oggetto <xref:Microsoft.Office.Interop.Word.Selection> è sempre presente in un documento. Se non è selezionato alcun elemento, rappresenta il punto di inserimento. Inoltre, una selezione può includere più blocchi di testo non contigui.  

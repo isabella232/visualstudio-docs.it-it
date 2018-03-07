@@ -14,11 +14,11 @@ manager: ghogen
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -187,5 +187,6 @@ Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la vi
 
 ## <a name="see-also"></a>Vedere anche
 
-[Impostazioni delle convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)  
-[Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
+- [Impostazioni delle convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
+- [File .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

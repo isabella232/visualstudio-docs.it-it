@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da2af4fd9ed552ad9e0232acfb6a7567718b5c6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15f34d6e512da839166b9c8bb9165a6cefbc9598
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Compilazione di più progetti in parallelo con MSBuild
 È possibile utilizzare MSBuild per compilare più progetti più velocemente eseguendoli in parallelo. Per eseguire compilazioni in parallelo, è possibile utilizzare le impostazioni seguenti in un computer multicore o con più processori:  
@@ -44,7 +44,7 @@ ms.lasthandoff: 02/09/2018
  Nell'esempio seguente viene indicato a MSBuild di utilizzare tre processi di lavoro. Se si utilizza questa configurazione, tramite MSBuild sarà possibile compilare tre progetti contemporaneamente.  
   
 ```  
-msbuild.exe myproj.proj /maxcpucount:3  
+msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>Parametro dell'attività BuildInParallel  

@@ -9,17 +9,18 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 424072fd91672921c470dbc16e1a9287b1cc575a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Eseguire il training di un modello TensorFlow nel cloud
 
-In questa esercitazione verranno descritte le procedure per eseguire il training di un modello TensorFlow usando il [set di dati MNIST](http://yann.lecun.com/exdb/mnist/) in una macchina virtuale per l'[apprendimento avanzato](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) (DLVM, Deep Learning Virtual Machine) di Azure. 
+In questa esercitazione verranno descritte le procedure per eseguire il training di un modello TensorFlow usando il [set di dati MNIST](http://yann.lecun.com/exdb/mnist/) in una macchina virtuale per l'[apprendimento avanzato](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) (DLVM, Deep Learning Virtual Machine) di Azure.
 
 Il database MNIST include un set di training di 60.000 esempi e un set di test di 10.000 esempi di cifre scritte a mano.
 
@@ -28,10 +29,10 @@ Prima di iniziare, assicurarsi di aver installato e configurato quanto segue:
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurare la macchina virtuale di Azure per l'apprendimento avanzato
 
-> [!NOTE] 
+> [!NOTE]
 > Impostare **Tipo di sistema operativo** su Linux.
 
-È possibile trovare [qui](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm) istruzioni per la configurazione di una macchina virtuale per l'apprendimento avanzato. 
+È possibile trovare [qui](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm) istruzioni per la configurazione di una macchina virtuale per l'apprendimento avanzato.
 
 ### <a name="remove-comment-in-parens"></a>Rimuovere il commento tra parentesi
 
@@ -41,13 +42,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Scaricare il codice di esempio
 
-Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for-ai) contenente esempi per iniziare ad approfondire TensorFlow, CNTK, Theano e altro. 
+Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for-ai) contenente esempi per iniziare ad approfondire TensorFlow, CNTK, Theano e altro.
 
 ## <a name="open-project"></a>Apertura del progetto
 
 - Avviare Visual Studio e selezionare **File > Apri > Progetto/Soluzione**.
 
-- Selezionare la cartella **TensorflowExamples** dal repository degli esempi scaricato e aprire il file **TensorflowExamples.sln**. 
+- Selezionare la cartella **TensorflowExamples** dal repository degli esempi scaricato e aprire il file **TensorflowExamples.sln**.
 
 ![Apertura del progetto](media\tensorflow-local\open-project.png)
 
@@ -55,7 +56,7 @@ Scaricare questo [repository di GitHub](https://github.com/Microsoft/samples-for
 
 ## <a name="add-azure-remote-vm"></a>Aggiungere una macchina virtuale remota di Azure
 
-In Esplora server fare clic con il pulsante destro del mouse sul nodo **Remote Machines** (Macchine remote) nel nodo AI Tools (Strumenti AI) e scegliere "Aggiungi" (Aggiungi). Immettere nome visualizzato, host IP, porta SSH, nome utente e password/file di chiave della macchina virtuale remota. 
+In Esplora server fare clic con il pulsante destro del mouse sul nodo **Remote Machines** (Macchine remote) nel nodo AI Tools (Strumenti AI) e scegliere "Aggiungi" (Aggiungi). Immettere nome visualizzato, host IP, porta SSH, nome utente e password/file di chiave della macchina virtuale remota.
 
 ![Aggiungere una nuova macchina virtuale remota](media\tensorflow-vm\add-remote-vm.png)
 
@@ -68,11 +69,11 @@ Nella finestra di invio:
 
 - Nell'elenco **Usa cluster** selezionare la macchina virtuale remota (con prefisso "rm:") a cui inviare il processo.
 
-- Immettere un **Nome processo**. 
+- Immettere un **Nome processo**.
 
-- Fare clic su **Invia**. 
+- Fare clic su **Invia**.
 
-## <a name="check-status-of-job"></a>Controllare lo stato del processo 
+## <a name="check-status-of-job"></a>Controllare lo stato del processo
 Per visualizzare lo stato e i dettagli dei processi, espandere la macchina virtuale a cui è stato inviato il processo in **Esplora server**. Fare doppio clic su **Processi**.
 
 ![Browser processi](media\tensorflow-vm\job-browser.png)

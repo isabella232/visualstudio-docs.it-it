@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
-caps.latest.revision: "10"
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configurazione, installazione e verifiche per gli utenti Mac
 Questo argomento è destinato agli sviluppatori che lavorano principalmente su un Mac e che useranno facoltativamente Visual Studio in una macchina virtuale Windows sul Mac. Gli sviluppatori che lavorano principalmente su un computer Windows e devono impostare un Mac secondario per attività di sviluppo destinate a iOS possono vedere l'argomento [Configurazione e installazione](../cross-platform/setup-and-install.md) principale.

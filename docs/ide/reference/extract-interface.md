@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 451b5ccddf6052eca3ae0a19b87076d2fd88a952
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e735b194da008de83fddac564194f8bb008c66bb
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 
@@ -52,7 +52,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
      - Premere **CTRL+R** e quindi **CTRL+I**. Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
    - **Mouse**
      - Selezionare **Modifica > Refactoring - Estrai interfaccia**.
      - Fare clic con il pulsante destro del mouse sul nome della classe, scegliere il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.

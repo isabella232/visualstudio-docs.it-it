@@ -1,4 +1,10 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: b941d0ba55c540de4bda1cb0f9c4ed18ceab524f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Esplorare lo spazio di archiviazione per caricare dati o per scaricare modelli e log
 
@@ -14,6 +20,6 @@
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Per accedere ai dati specifici di un processo nel computer remoto o nella condivisione file
 1. Aprire [Cronologia processi](job-details.md)
 2. Selezionare il processo
-3. Fare clic su **Cartella di lavoro** oppure fare clic su StdOut/Stderr per l'accesso rapido a questi file di log importanti 
+3. Fare clic su **Cartella di lavoro** oppure fare clic su StdOut/Stderr per l'accesso rapido a questi file di log importanti
 
     ![storage](media\manage-storage\job-workingfolder.png)
