@@ -9,27 +9,28 @@ ms.date: 11/13/2017
 ms.topic: how-to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 77eb12a8ffa0b40d83bcbe24326fb386eb0a4d9c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 90d0e7db36b91c2add1bcfe80fb3325bd1ddf126
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Eseguire il training dei modelli di intelligenza artificiale in Azure Batch per intelligenza artificiale
 
-Azure Batch per intelligenza artificiale è un servizio gestito che consente ai data scientist e ai ricercatori che operano nel settore dell'intelligenza artificiale di eseguire il training di modelli di intelligenza artificiali e altri modelli di machine learning in cluster di macchine virtuali di Azure, incluse le macchine virtuali con supporto GPU. È sufficiente descrivere i requisiti del processo, specificare dove trovare l'input e dove archiviare l'output. Tutti gli altri aspetti vengono gestiti da Azure Batch per intelligenza artificiale. [Altre informazioni su Azure Batch per intelligenza artificiale](https://docs.microsoft.com/azure/batch-ai/overview) 
+Azure Batch per intelligenza artificiale è un servizio gestito che consente ai data scientist e ai ricercatori che operano nel settore dell'intelligenza artificiale di eseguire il training di modelli di intelligenza artificiali e altri modelli di machine learning in cluster di macchine virtuali di Azure, incluse le macchine virtuali con supporto GPU. È sufficiente descrivere i requisiti del processo, specificare dove trovare l'input e dove archiviare l'output. Tutti gli altri aspetti vengono gestiti da Azure Batch per intelligenza artificiale. [Altre informazioni su Azure Batch per intelligenza artificiale](https://docs.microsoft.com/azure/batch-ai/overview)
 
 È integrato con Visual Studio Tools for AI, quindi è supportata la scalabilità orizzontale dinamica dei modelli di training in Azure.  Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile creare un nuovo progetto Python usando i file recipe predefiniti nella raccolta di esempi di Azure Machine Learning.
 
-1. Avviare Visual Studio. Aprire **Esplora server** scegliendo il menu **AI Tools** (Strumenti AI) e quindi **Select Cluster** (Seleziona cluster).  
+1. Avviare Visual Studio. Aprire **Esplora server** scegliendo il menu **AI Tools** (Strumenti AI) e quindi **Select Cluster** (Seleziona cluster).
 
     ![Selezione del cluster](media\train-model\select-cluster.png)
 
-     
-2. Espandere **AI Tools** (Strumenti AI). Tutte le risorse di Batch per intelligenza artificiale disponibili verranno rilevate automaticamente e visualizzate in Esplora server. 
-    
+
+2. Espandere **AI Tools** (Strumenti AI). Tutte le risorse di Batch per intelligenza artificiale disponibili verranno rilevate automaticamente e visualizzate in Esplora server.
+
     ![Raccolta di esempi](media\train-model\batchai.png)
 
 3. Selezionare **Visualizza > Team Explorer...**  per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o a Visual Studio Team Services oppure clonare un repository.
@@ -42,10 +43,10 @@ Azure Batch per intelligenza artificiale è un servizio gestito che consente ai 
     > La cartella immessa in Team Explorer è specifica per ricevere i file clonati. A differenza del comando `git clone`, la creazione di un clone in Team Explorer non crea automaticamente una sottocartella con il nome del repository.
 
 5. Dopo il completamento della clonazione fare clic su **File > Apri soluzione > Progetto/Soluzione**
-    
+
     ![Raccolta di esempi](media\train-model\open-solution.png)
 
-5. Aprire **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** nella directory in cui è stato clonato il repository 
+5. Aprire **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** nella directory in cui è stato clonato il repository
 
     ![Raccolta di esempi](media\train-model\tensorflowexamples.png)
 

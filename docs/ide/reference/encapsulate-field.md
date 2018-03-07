@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78d2c33002e59eab1b6e8605092a74d9995453a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 006f161df8128e1d505947a3e2907a01c4d3915e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactoring Incapsula campo
 
@@ -52,7 +52,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
      - Premere **CTRL+R** e quindi **CTRL+E**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
    - **Mouse**
      - Selezionare **Modifica > Refactoring > Incapsula campo**.
      - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare la voce **Incapsula campo** dal popup della finestra di anteprima.
@@ -77,5 +77,5 @@ Questo refactoring si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

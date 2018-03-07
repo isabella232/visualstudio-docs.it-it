@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a3759070d406e721a12e01950e0e99cea40d1fc
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -33,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Dopo Visual Studio crea la raccolta di nodi XML, è possibile programmare il controllo direttamente senza dover passare attraverso il modello a oggetti. Il <xref:Microsoft.Office.Tools.Word.XMLNodes> controllo può essere eliminato solo eliminando il mapping dell'elemento dal documento.  
   
 > [!NOTE]  
->  Se si accede a un elemento figlio del <xref:Microsoft.Office.Tools.Word.XMLNodes> controllare tramite il <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> proprietà, viene restituito un <xref:Microsoft.Office.Interop.Word.XMLNode> oggetto anziché da un <xref:Microsoft.Office.Tools.Word.XMLNode> controllo. Per altre informazioni, vedere [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  Se si accede a un elemento figlio del <xref:Microsoft.Office.Tools.Word.XMLNodes> controllare tramite il <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> proprietà, viene restituito un <xref:Microsoft.Office.Interop.Word.XMLNode> oggetto anziché da un <xref:Microsoft.Office.Tools.Word.XMLNode> controllo. Per altre informazioni, vedere [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ## <a name="binding-data-to-the-control"></a>Data binding al controllo  
  Un <xref:Microsoft.Office.Tools.Word.XMLNodes> controllo non supporta l'associazione dati. In questo modo il <xref:Microsoft.Office.Tools.Word.XMLNodes> controllo non dispone di funzionalità di associazione di dati complessi e data binding semplice non può rappresentare dati ripetuti.  

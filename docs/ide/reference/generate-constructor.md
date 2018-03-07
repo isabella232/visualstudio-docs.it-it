@@ -11,11 +11,11 @@ ms.author: kaseyu
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78b1829ae6a302b7c5f71fa2c478152d0c20d1b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0767b47fcf4456e1ac198674ece6c9de31850279
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -48,7 +48,7 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring**.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
@@ -79,7 +79,7 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring**.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la selezione.
@@ -107,7 +107,7 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring**.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
@@ -141,7 +141,7 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring**.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
      - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina](media/bulb-cs.png) visualizzata.
@@ -166,7 +166,7 @@ Questa generazione di codice si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring**.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
      - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
      - Fare clic sul pulsante ![lampadina](media/bulb-cs.png) visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con il parametro aggiunto.
@@ -181,5 +181,5 @@ Questa generazione di codice si applica a:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Generazione codice](../code-generation-in-visual-studio.md)  
-[Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)
+- [Generazione codice](../code-generation-in-visual-studio.md)
+- [Visualizzare l'anteprima delle modifiche](../../ide/preview-changes.md)

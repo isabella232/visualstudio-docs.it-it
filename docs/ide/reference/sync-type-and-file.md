@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45cd94161f492ea0326ff08fe40727149a733556
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 29260d2f33c9debfe698cb6af30f711e9617cdd1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring con sincronizzazione di un tipo con un nome di file o un nome di file con un tipo
 
@@ -49,8 +49,8 @@ Questo refactoring si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Rinomina file in *NomeTipo*.cs** dal popup della finestra di anteprima, dove *NomeTipo* è il nome del tipo selezionato.
-     - Premere **CTRL+.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Rinomina tipo in _NomeFile_** dal popup della finestra di anteprima, dove *NomeFile* è il nome del file corrente.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Rinomina file in *NomeTipo*.cs** dal popup della finestra di anteprima, dove *NomeTipo* è il nome del tipo selezionato.
+     - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Rinomina tipo in _NomeFile_** dal popup della finestra di anteprima, dove *NomeFile* è il nome del file corrente.
    - **Mouse**
      - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Rinomina file in *NomeTipo*.cs** dal popup della finestra di anteprima, dove *NomeTipo* è il nome del tipo selezionato.
      - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Rinomina tipo in _NomeFile_** dal popup della finestra di anteprima, dove *NomeFile* è il nome del file corrente.
