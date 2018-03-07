@@ -2,7 +2,7 @@
 title: Opzioni e impostazioni per Python in Visual Studio | Microsoft Docs
 description: Informazioni di riferimento per le varie impostazioni di Visual Studio correlate al codice e ai progetti Python.
 ms.custom: 
-ms.date: 01/04/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c7bd5713be88af60964098d57d882055af7b5e2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -46,11 +46,11 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Mostra la finestra di output durante la creazione degli ambienti virtuali| Attivato | Deselezionare per impedire che venga visualizzata la finestra di output. |
-| Mostra la finestra di output durante l'installazione o la rimozione di pacchetti | Attivato |  Deselezionare per impedire che venga visualizzata la finestra di output. |
-| Esegui sempre pip come amministratore | Disattivato | Eleva sempre le operazioni `pip install` per tutti gli ambienti. Durante l'installazione dei pacchetti, Visual Studio richiede i privilegi di amministratore se l'ambiente si trova in un'area protetta del file system, come `c:\Program Files`. In questo prompt è possibile scegliere di elevare sempre `pip install` per tale specifico ambiente. Vedere [Ambienti Python - Scheda pip](managing-python-environments-in-visual-studio.md#pip-tab). |
+| Mostra la finestra di output durante l'installazione o la rimozione di pacchetti | Attivato | Deselezionare per impedire che venga visualizzata la finestra di output. |
+| Esegui sempre pip come amministratore | Disattivato | Eleva sempre le operazioni `pip install` per tutti gli ambienti. Durante l'installazione dei pacchetti, Visual Studio richiede i privilegi di amministratore se l'ambiente si trova in un'area protetta del file system, come `c:\Program Files`. In questo prompt è possibile scegliere di elevare sempre `pip install` per tale specifico ambiente. Vedere [Scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab). |
 | Genera automaticamente il database di completamento al primo uso | Attivato | Per fare in modo che i [completamenti IntelliSense](editing-python-code-in-visual-studio.md#intellisense) funzionino con una libreria, Visual Studio deve generare un database di completamento per tale libreria. La creazione del database viene eseguita in background quando viene installata una libreria, ma potrebbe non essere completa quando si avvia la scrittura del codice. Se è selezionata questa opzione, Visual Studio assegna la priorità del completamento del database a una libreria, quando si scrive un codice che ne fa uso. |
-| Ignora variabili PYTHONPATH a livello di sistema | Attivato | PYTHONPATH viene ignorato per impostazione predefinita perché Visual Studio offre un mezzo più diretto per specificare i percorsi di ricerca negli ambienti e nei progetti. Vedere [Ambienti Python - Percorsi di ricerca](managing-python-environments-in-visual-studio.md#search-paths) per informazioni dettagliate. |
-| Aggiorna percorsi di ricerca quando vengono aggiunti file collegati | Attivato | Quando questa opzione è impostata, l'aggiunta di un [file collegato](managing-python-projects-in-visual-studio.md#linked-files) a un progetto aggiorna i [percorsi di ricerca](managing-python-environments-in-visual-studio.md#search-paths) in modo che IntelliSense possa includere il contenuto della cartella del file collegato nel relativo database di completamento. Deselezionare questa opzione per escludere tale contenuto dal database di completamento. |
+| Ignora variabili PYTHONPATH a livello di sistema | Attivato | PYTHONPATH viene ignorato per impostazione predefinita perché Visual Studio offre un mezzo più diretto per specificare i percorsi di ricerca negli ambienti e nei progetti. Per altri dettagli, vedere [Percorsi di ricerca](search-paths.md). |
+| Aggiorna percorsi di ricerca quando vengono aggiunti file collegati | Attivato | Quando questa opzione è impostata, l'aggiunta di un [file collegato](managing-python-projects-in-visual-studio.md#linked-files) a un progetto aggiorna [Percorsi di ricerca](search-paths.md) in modo che IntelliSense possa includere il contenuto della cartella del file collegato nel relativo database di completamento. Deselezionare questa opzione per escludere tale contenuto dal database di completamento. |
 | Avvisa quando non è possibile trovare il modulo importato | Attivato | Deselezionare questa opzione per non visualizzare gli avvisi quando si è certi che un modulo importato non è attualmente disponibile, ma non influisce comunque sul funzionamento del codice. |
 | Segnala rientro incoerente come | Avvisi | Poiché l'interprete di Python dipende fortemente da un rientro corretto per determinare l'ambito, Visual Studio per impostazione predefinita genera dei messaggi di avviso quando rileva rientri incoerenti che potrebbero indicare errori di codifica. Per maggiore precisione, impostare su *Errori*, opzione che provoca la chiusura del programma in casi di questo tipo. Per disabilitare completamente questo comportamento, selezionare *No*. |
 | Controlla disponibilità di sondaggi/novità | Una volta alla settimana | Imposta la frequenza con cui si consente a Visual Studio di aprire una finestra contenente una pagina web con sondaggi e notizie relativi a Python, qualora disponibili. Le opzioni sono *Mai*, *Una volta al giorno*, *Una volta alla settimana* e *Una volta al mese*. |
@@ -84,7 +84,7 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
-| Script | N/D | Specifica una cartella generale per gli script di avvio valida per le finestre interattive per tutti gli ambienti. Vedere [Script di avvio](managing-python-environments-in-visual-studio.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
+| Script | N/D | Specifica una cartella generale per gli script di avvio valida per le finestre interattive per tutti gli ambienti. Vedere [Script di avvio](python-environments-window-tab-reference.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
 | Spostarsi nella cronologia con le frecce su/giù | Attivato | Usare i tasti freccia per spostarsi nella cronologia, nella finestra interattiva. Deselezionare questa impostazione per usare i tasti freccia per spostarsi invece all'interno dell'output della finestra interattiva. |
 | Modalità di completamento | Valutare unicamente le espressioni senza chiamate di funzione | Il processo di determinazione dei membri disponibili su un'espressione nella finestra interattiva può richiedere la valutazione dell'espressione incompleta corrente, con la conseguente chiamata ripetuta di effetti collaterali o funzioni. L'impostazione predefinita, *Valuta solo le espressioni senza chiamate di funzione* esclude le espressioni che sembrano chiamare una funzione, ma valuta altre espressioni. Ad esempio, valuta `a.b` ma non `a().b`.  *Non valutare mai le espressioni* evita tutti gli effetti collaterali e usa solo il motore di IntelliSense normale per i suggerimenti. *Valuta tutte le espressioni* valuta l'espressione completa per ottenere suggerimenti, indipendentemente dagli effetti collaterali. |
 | Nascondi suggerimenti analisi statica | Disattivato | Se è impostata questa opzione, vengono visualizzati solo i suggerimenti ottenuti dalla valutazione dell'espressione. Se è associata alla modalità di completamento *Non valutare mai le espressioni*, non viene visualizzato alcun completamento utile nella finestra interattiva. |
