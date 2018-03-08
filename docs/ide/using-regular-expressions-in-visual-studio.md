@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 077bb266e6ed55bfe59ec4e537b516ccde59e0c3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Uso delle espressioni regolari in Visual Studio
 
@@ -56,11 +56,11 @@ Ecco alcuni esempi:
 |Invalidare una corrispondenza|(?!abc)|`real (?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
 |Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri|[^abc]|`be[^n-t]` trova "bef" in "before", "beh" in "behind" e "bel" in "below", ma non "beneath".|
 |Trovare la corrispondenza dell'espressione prima o dopo il simbolo.|&#124;|`(sponge&#124;mud) bath` trova "sponge bath" e "mud bath".|
-|Includere il carattere che segue la barra rovesciata usando una sequenza di escape|\\|`\^` trova il carattere ^.|
+|Includere il carattere che segue la barra rovesciata usando una sequenza di escape| \\ |`\^` trova il carattere ^.|
 |Specificare il numero di occorrenze del gruppo o del carattere precedente|{x}, dove x è il numero di occorrenze|`x(ab){2}x` trova "xababx" e `x(ab){2,3}x` trova "xababx" e "xabababx" ma non "xababababx".|
 |Trovare la corrispondenza con un testo in una classe di caratteri Unicode, dove "X" è il numero Unicode. Per altre informazioni sulle classi di caratteri Unicode, vedere<br /><br /> [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` trova "T" e "D" in "Thomas Doe".|
 |Trovare la corrispondenza con un confine di parola|`\b` (all'esterno di una classe di caratteri \b specifica un confine di parola e all'interno di una classe di caratteri specifica un backspace).|`\bin` trova "in" in "inside" ma non "pinto".|
-|Trovare la corrispondenza con un'interruzione di riga (cioè un ritorno a capo seguito da una nuova riga).|\r?\n|`End\r?\nBegin` trova "End" e "Begin" solo quando "End" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva.|
+|Trovare la corrispondenza con un'interruzione di riga (ovvero un ritorno a capo seguito da una nuova riga).|\r?\n|`End\r?\nBegin` trova "End" e "Begin" solo quando "End" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva.|
 |Trovare la corrispondenza con qualsiasi carattere alfanumerico|\w|`a\wd` trova "add" e "a1d", ma non "a d".|
 |Trovare la corrispondenza con qualsiasi spazio vuoto.|(?([^\r\n])\s)|`Public\sInterface` trova la frase "Public Interface".|
 |Trovare la corrispondenza con qualsiasi carattere numerico|\d|`\d` trova "3" in "3456", "2" in 23" e "1" in "1".|
@@ -71,7 +71,7 @@ Ecco alcuni esempi:
 |Trovare la corrispondenza con numeri interi e decimali|\b[0-9]*\\.\*[0-9]+\b|Trova "1.333".|
 
 > [!TIP]
-> Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di.NET.
+> Nei sistemi operativi Windows la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e vengono passati al servizio delle espressioni regolari di .NET.
 
 ## <a name="see-also"></a>Vedere anche
 
