@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visualizzazione di snapshot tramite IntelliTrace passaggio-back in Visual Studio
 
@@ -107,5 +107,7 @@ L'impatto sulle prestazioni di debug passo a passo generale dipende dall'applica
 
     Soluzione alternativa:
     * Deselezionare tutti gli snapshot e di terminare la sessione di debug. 
+
+* Durante il debug di un'applicazione il cui processo ha un numero elevato di aree di memoria univoco, ad esempio un'applicazione che carica un numero elevato di DLL, potrebbe essere compromesso l'esecuzione di istruzioni delle prestazioni con gli snapshot abilitati. Questo problema verrà risolto in una versione futura di Windows. Se il problema, contattare Microsoft all'indirizzo stepback@microsoft.com. 
 
 * Quando si salva un file con **Debug > IntelliTrace > sessione di IntelliTrace Salva** in modalità di eventi e gli snapshot, i dati aggiuntivi acquisiti da snapshot non sono disponibili nel file. iTrace. Nel punto di interruzione e il passaggio degli eventi, vedere le stesse informazioni come se il file è stato salvato in modalità solo gli eventi di IntelliTrace. 
