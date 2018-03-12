@@ -1,13 +1,19 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonare un repository del codice Python in Visual Studio
 
 Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile clonare facilmente un repository di codice Python e creare un progetto a partire da questo.
 
 1. Per connettersi ai repository di GitHub, eseguire il programma di installazione di Visual Studio, selezionare **Cambia** e quindi la scheda **Singoli componenti**. Scorrere verso il basso fino alla sezione **Strumenti per il codice**, selezionare **Estensione GitHub per Visual Studio** e quindi **Modifica**.
-    
+
     ![Selezione dell'estensione GitHub nel programma di installazione di Visual Studio](media\create-project-repo\installation-github-extension.png)
-    
+
 2. Avviare Visual Studio.
 
 3. Selezionare **Visualizza > Team Explorer** per aprire la finestra **Team Explorer** in cui è possibile connettersi a GitHub o a Visual Studio Team Services oppure clonare un repository.
@@ -36,7 +42,7 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile
 
     ![Primo output del programma MNIST Python](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Se si usa Anaconda e si riceve un errore di NumPy mancante, potrebbe essere necessario [modificare l'ambiente Python per usare Anaconda](../python/selecting-a-python-environment-for-a-project.md).
+> Se si usa Anaconda e si riceve un errore di numpy mancante, potrebbe essere necessario [modificare l'ambiente Python per usare Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
 11. È possibile visualizzare lo stato con TensorBoard. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 
