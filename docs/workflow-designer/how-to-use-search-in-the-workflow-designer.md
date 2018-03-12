@@ -1,21 +1,18 @@
 ---
 title: 'Procedura: utilizzare la ricerca nella finestra di progettazione del flusso di lavoro | Documenti Microsoft'
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
-caps.latest.revision: "3"
-ms.author: sdanie
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 20e4cca7723a47b5735301c54a67029f0f956c49
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: 0ab8fe2ca639dd4660dfbabc8c5497f4ab0b3487
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedura: utilizzare la ricerca in Progettazione del flusso di lavoro
 Per facilitare la creazione di flussi di lavoro più ampi e complessi, è possibile usare la ricerca in Progettazione flussi di lavoro per trovare gli elementi per parola chiave. Notare che la finestra di progettazione non supporta la sostituzione. La ricerca nella finestra di progettazione verrà trovato quanto segue:  

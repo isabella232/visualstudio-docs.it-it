@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedura: diagnosticare UI ritardi causati dalle estensioni
 
@@ -157,6 +157,8 @@ PerfView è dettagliate informazioni aggiuntive nel menu della Guida che è poss
 
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+
+È inoltre possibile utilizzare gli analizzatori statici nuova di Visual Studio per le estensioni (pacchetto NuGet [qui](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), che forniscono informazioni aggiuntive sulle procedure consigliate per la scrittura di estensioni efficiente. Visualizzare un elenco di [gli analizzatori di VS SDK](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) e [threading analizzatori](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
 > Se non si riesce a risolvere il problema del blocco a causa di dipendenze non abbia il controllo (ad esempio, se l'estensione deve chiamare servizi VS sincrona nel thread UI), si desidera riportarlo. Se si è un membro del programma per i Partner di Visual Studio, è possibile contattarci inviando una richiesta di supporto per sviluppatori. In caso contrario, utilizzare lo strumento 'Segnala un problema' per inviare commenti e suggerimenti e includere `"Extension UI Delay Notifications"` nel titolo. Includere inoltre una descrizione dettagliata dell'analisi.

@@ -1,63 +1,61 @@
 ---
 title: 'Procedura: aggiungere commenti a un flusso di lavoro nella finestra di progettazione del flusso di lavoro | Documenti Microsoft'
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
-caps.latest.revision: "7"
-ms.author: sdanie
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 0a508fe657be8e2a12c54bc7ae1a46f338273cd9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+author: gewarren
+ms.openlocfilehash: eb7825f79ee54b02d764e4ad8754ee1382b5d41f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: aggiungere commenti a un flusso di lavoro in Progettazione del flusso di lavoro
-Per facilitare la creazione di flussi di lavoro più ampi e complessi, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] consente allo sviluppatore di aggiungere annotazioni ai seguenti tipi di elementi nella finestra di progettazione:  
-  
--   <xref:System.Activities.Activity>  
-  
--   <xref:System.Activities.Statements.State>  
-  
--   <xref:System.Activities.Statements.Transition>  
-  
--   Classi derivate da <xref:System.Activities.Statements.FlowNode>  
-  
--   <xref:System.Activities.Variable>  
-  
--   <xref:System.Activities.Argument>  
-  
+
+Per facilitare la creazione di flussi di lavoro più ampi e complessi, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] consente allo sviluppatore di aggiungere annotazioni ai seguenti tipi di elementi nella finestra di progettazione:
+
+-   <xref:System.Activities.Activity>
+
+-   <xref:System.Activities.Statements.State>
+
+-   <xref:System.Activities.Statements.Transition>
+
+-   Classi derivate da <xref:System.Activities.Statements.FlowNode>
+
+-   <xref:System.Activities.Variable>
+
+-   <xref:System.Activities.Argument>
+
 > [!IMPORTANT]
->  Il contenuto di un'annotazione viene salvato come testo normale nel file XAML associato al flusso di lavoro e potrebbe potenzialmente essere letto da altri. Prestare attenzione quando vengono fornite informazioni riservate in un'unica annotazione.  
-  
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Aggiunta di un'annotazione a un'attività nella finestra di progettazione  
-  
-1. Nella finestra di progettazione del flusso di lavoro, fare clic su un elemento nel flusso di lavoro della finestra di progettazione e seleziona **annotazioni**, **Aggiungi annotazione**.  
-  
-1. Aggiungere il testo dell'annotazione nello spazio disponibile.  
-  
+> Il contenuto di un'annotazione viene salvato come testo normale nel file XAML associato al flusso di lavoro e potrebbe potenzialmente essere letto da altri. Prestare attenzione quando vengono fornite informazioni riservate in un'unica annotazione.
+
+### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Aggiunta di un'annotazione a un'attività nella finestra di progettazione
+
+1. Nella finestra di progettazione del flusso di lavoro, fare clic su un elemento nel flusso di lavoro della finestra di progettazione e seleziona **annotazioni**, **Aggiungi annotazione**.
+
+1. Aggiungere il testo dell'annotazione nello spazio disponibile.
+
    L'elemento viene visualizzata un'icona di annotazione. Passaggio del mouse sull'icona di annotazione, viene visualizzato il testo dell'annotazione.
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Visualizzazione di un'annotazione della finestra di progettazione dell'attività  
-  
-1.  Con un ActivityDesigner che dispone di un'annotazione verrà visualizzata all'esterno dell'attività, fare clic su di **Pin** sull'icona dello strumento decorativo di annotazione.  
-  
-   L'annotazione verrà visualizzata nella finestra di progettazione dell'attività. Nella schermata riportata di seguito, l'annotazione "inizia attività nel flusso di lavoro" viene visualizzata nella finestra di progettazione dell'attività.  
-  
-   ![Annotazione visualizzata nella finestra di progettazione attività](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
-  
-1. Per visualizzare l'annotazione all'esterno di progettazione dell'attività, passa il mouse sull'area dell'annotazione nella finestra di progettazione dell'attività e scegliere il **Sblocca** icona  
-  
-   ![Annotazione visualizzata all'esterno di progettazione di un'attività](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
-  
+### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Visualizzazione di un'annotazione della finestra di progettazione dell'attività
+
+1.  Con un ActivityDesigner che dispone di un'annotazione verrà visualizzata all'esterno dell'attività, fare clic su di **Pin** sull'icona dello strumento decorativo di annotazione.
+
+   L'annotazione verrà visualizzata nella finestra di progettazione dell'attività. Nella schermata riportata di seguito, l'annotazione "inizia attività nel flusso di lavoro" viene visualizzata nella finestra di progettazione dell'attività.
+
+   ![Annotazione visualizzata nella finestra di progettazione attività](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+
+1. Per visualizzare l'annotazione all'esterno di progettazione dell'attività, passa il mouse sull'area dell'annotazione nella finestra di progettazione dell'attività e scegliere il **Sblocca** icona
+
+   ![Annotazione visualizzata all'esterno di progettazione di un'attività](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+
 ### <a name="showing-or-hiding-all-annotations"></a>Mostra o nascondi tutte le annotazioni
 
 1. Fare clic con il pulsante destro del mouse su un'attività che dispone di annotazione. Selezionare **annotazioni**, **Mostra tutte le annotazioni**.
