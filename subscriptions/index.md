@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio rappresentano il set di risorse più completo per creare, distribuire e gestire applicazioni di alta qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi delle sottoscrizioni includono l'accesso agli strumenti di sviluppo, a servizi e software cloud, a risorse di training e al supporto per svariate esigenze di test e sviluppo.
@@ -137,7 +137,7 @@ I sottoscrittori accedono a [https://my.visualstudio.com](https://my.visualstudi
 ---
 
 <h2>Vantaggi</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">

@@ -8,7 +8,7 @@
 
 # [Account utente](user-accounts.md)
 ## [Accesso](signing-in.md)
-## [Attivazione](activation.md)
+## [Enable Subscription](activation.md)
 
 # [Personalizzazione dell'IDE](customizing-the-ide.md)
 ## [Estensione di Visual Studio per Mac](extending-visual-studio-mac.md)
@@ -35,7 +35,7 @@
 # [Debug](debugging.md)
 ## [Visualizzazioni dei dati](data-visualizations.md)
 
-# [Compilazione e creazione](compiling-and-building.md)
+# [Compiling and Building](compiling-and-building.md) (Compilazione e creazione)
 ## [Compilazione e pulizia di progetti e soluzioni](building-and-cleaning-projects-and-solutions.md)
 ## [Operazioni di compilazione](build-actions.md)
 ## [Personalizzazione del processo di compilazione](customizing-build-system.md)
