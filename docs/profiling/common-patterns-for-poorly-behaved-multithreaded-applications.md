@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 
@@ -65,7 +65,7 @@ Quando si valuta questo problema è opportuno considerare quanto segue:
 
 ![I&#47;O inefficiente](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-Un uso eccessivo o improprio delle operazioni di I/O è una causa comune dell'inefficienza delle applicazioni. Osservare l'illustrazione precedente. Il profilo cronologia visibile mostra che il 44% della durata visibile dei thread viene utilizzata da operazioni di I/O. La cronologia mostra un gran numero di operazioni di I/O, il che indica che l'applicazione sottoposta a profilatura è spesso bloccata da queste. Per vedere i dettagli relativi al tipo di operazioni I/O e ai punti in corrispondenza dei quali il programma si blocca, fare zoom avanti sulle aree problematiche, esaminare il profilo cronologia visibile e quindi fare clic su un blocco I/O specifico per visualizzare gli stack di chiamate correnti.
+Un uso eccessivo o improprio delle operazioni di I/O è una causa comune dell'inefficienza delle applicazioni. Osservare l'illustrazione precedente. Il profilo cronologia visibile indica che il 44% della durata visibile dei thread viene utilizzata da operazioni di I/O. La cronologia mostra un gran numero di operazioni di I/O, il che indica che l'applicazione sottoposta a profilatura è spesso bloccata da queste. Per vedere i dettagli relativi al tipo di operazioni I/O e ai punti in corrispondenza dei quali il programma si blocca, fare zoom avanti sulle aree problematiche, esaminare il profilo cronologia visibile e quindi fare clic su un blocco I/O specifico per visualizzare gli stack di chiamate correnti.
 
 ## <a name="lock-convoys"></a>Serie di istruzioni di blocco
 
