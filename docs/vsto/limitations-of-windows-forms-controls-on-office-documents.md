@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,7 +24,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2c8795b643afff2cc02d507a1764871aa0e0e181
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -96,7 +98,7 @@ ms.lasthandoff: 01/10/2018
 |Ridimensionamento del controllo|Se si ridimensiona un controllo nel documento utilizzando uno dei quadratini di otto ridimensionamento, le nuove dimensioni del controllo non vengono riflesse nel **proprietà** finestra fino a quando non si seleziona di nuovo il controllo.|  
 |Controllare il comportamento|Controlli in un foglio di lavoro di Excel potrebbero funzionare in modo imprevedibile quando il foglio di lavoro è divisa. Ad esempio, l'accesso a un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> nel foglio di lavoro potrebbe essere disponibile solo in una delle finestre.|  
 |Denominazione di controllo|È possibile utilizzare parole riservate per i nomi dei controlli. Ad esempio, se si aggiunge un <xref:Microsoft.Office.Tools.Excel.Controls.Button> a un foglio di lavoro e modificare il nome in **sistema**, si verificano errori quando si compila il progetto.|  
-|Aggiunta di controlli a livello di codice|Non utilizzare il costruttore del controllo per aggiungere un controllo al documento in fase di esecuzione. Utilizzare invece i metodi di supporto forniti dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ad esempio, utilizzare il <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> per aggiungere un pulsante in un foglio di lavoro. Se si desidera aggiungere un controllo che non è supportato da questi metodi di supporto, è possibile utilizzare il metodo AddControl. Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
+|Aggiunta di controlli a livello di codice|Non utilizzare il costruttore del controllo per aggiungere un controllo al documento in fase di esecuzione. Utilizzare invece i metodi di supporto forniti dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ad esempio, utilizzare il <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> per aggiungere un pulsante in un foglio di lavoro. Se si desidera aggiungere un controllo che non è supportato da questi metodi di supporto, è possibile utilizzare il metodo AddControl. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).|  
 |Copia di controlli|Se si copia un controllo Windows Form e incollarlo in un documento in fase di esecuzione, un contenitore vuoto controllo ActiveX viene incollato nel documento. Il controllo Windows Form non viene visualizzato nella nuova posizione e code-behind del controllo originale non viene copiato al contenitore del controllo ActiveX.|  
   
 ## <a name="limitations-in-document-level-projects"></a>Limitazioni nei progetti a livello di documento  

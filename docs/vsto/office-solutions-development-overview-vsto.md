@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  Per decidere quale di questi tipi di progetto è ottimale per la soluzione, è necessario stabilire se si desidera che il codice venga eseguito solo quando un documento specifico è aperto o che invece sia disponibile ogni volta che l'applicazione è in esecuzione. Per ulteriori informazioni sui modelli di progetto, vedere [panoramica dei modelli di progetto Office](../vsto/office-project-templates-overview.md).  
   
- I tipi di progetti che è possibile creare dipendono dalle applicazioni di Office installate nel computer di sviluppo. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ I tipi di progetti che è possibile creare dipendono dalle applicazioni di Office installate nel computer di sviluppo. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>personalizzazioni a livello di documento  
  Le personalizzazioni a livello di documento sono costituite da un assembly associato a un singolo documento, a una cartella di lavoro o a un modello di Microsoft Office Word o Microsoft Office Excel. L'assembly viene caricato quando viene aperto il documento associato. Le funzionalità delle personalizzazioni create sono disponibili solo quando il documento associato viene aperto. Le personalizzazioni non possono apportare modifiche a livello di applicazione come, ad esempio, la visualizzazione di una nuova voce di menu o della scheda della barra multifunzione quando un documento è aperto.  

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -65,7 +67,7 @@ Quando si pubblica un'applicazione [!INCLUDE[ndptecclick](../deployment/includes
 ### <a name="application-files-dialog-box"></a>Finestra di dialogo File applicazione  
  Questa finestra di dialogo consente di specificare come sono suddivisi in categorie i file del progetto per la pubblicazione, il download dinamico e l'aggiornamento. Contiene una griglia in cui sono elencati i file di progetto non esclusi per impostazione predefinita, o che hanno un gruppo di download.  
   
- Per escludere i file, contrassegnare come file di dati o i prerequisiti, i file e creare gruppi di file per l'installazione condizionale nell'interfaccia utente Visual Studio, vedere [procedura: specificare che i file da pubblicare mediante ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). È anche possibile contrassegnare i file di dati con il file Mage.exe. Per altre informazioni, vedere [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Per escludere i file, contrassegnare come file di dati o i prerequisiti, i file e creare gruppi di file per l'installazione condizionale nell'interfaccia utente Visual Studio, vedere [procedura: specificare che i file da pubblicare mediante ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). È anche possibile contrassegnare i file di dati con il file Mage.exe. Per altre informazioni, vedere [Procedura: includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 ### <a name="prerequisites-dialog-box"></a>Prerequisiti (finestra di dialogo)  
  Questa finestra di dialogo consente di specificare quali componenti prerequisiti sono installati, nonché le relative modalità di installazione. Per ulteriori informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) e [la finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).  

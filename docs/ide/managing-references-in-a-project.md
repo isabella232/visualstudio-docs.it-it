@@ -37,7 +37,7 @@ ms.lasthandoff: 01/29/2018
 
 Prima di scrivere codice per un componente esterno o servizio connesso, il progetto deve contenere innanzitutto un riferimento a esso. Un riferimento è essenzialmente una voce in un file di progetto che contiene le informazioni necessarie a Visual Studio per individuare il componente o il servizio.
 
-Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul nodo Riferimenti di Esplora soluzioni e scegliere **Aggiungi riferimento**. Per altre informazioni, vedere [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul nodo Riferimenti di Esplora soluzioni e scegliere **Aggiungi riferimento**. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Aggiungere un riferimento in Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
 

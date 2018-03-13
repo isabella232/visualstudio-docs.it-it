@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -33,7 +34,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 96c027730553c8dd51774d1ff64c6552b4e5905b
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -43,7 +45,7 @@ ms.lasthandoff: 01/10/2018
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitazioni a livello di codice degli elementi e dei controlli host
   Ogni elemento host e controllo host viene progettato per comportarsi come un oggetto nativo corrispondente di Microsoft Office Word o Microsoft Office Excel, con funzionalità aggiuntive. Tuttavia, esistono alcune differenze fondamentali tra il comportamento degli elementi host e dei controlli host e gli oggetti nativi di Office in fase di esecuzione.  
   
- Per informazioni generali sugli elementi host e sui controlli host, vedere [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ Per informazioni generali sugli elementi host e sui controlli host, vedere [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -52,10 +54,10 @@ ms.lasthandoff: 01/10/2018
   
  Nei progetti a livello di documento non è possibile creare elementi host in fase di esecuzione. Gli elementi host possono essere creati solo in fase di progettazione nei progetti a livello di documento. Per altre informazioni, vedere [Document Host Item](../vsto/document-host-item.md), [Workbook Host Item](../vsto/workbook-host-item.md)e [Worksheet Host Item](../vsto/worksheet-host-item.md).  
   
- Nei progetti di componente aggiuntivo VSTO è possibile creare elementi host <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>o <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione. Per altre informazioni, vedere [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Nei progetti di componente aggiuntivo VSTO è possibile creare elementi host <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>o <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione. Per altre informazioni, vedere [Estensione in fase di esecuzione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="programmatically-creating-host-controls"></a>Creazione a livello di codice di controlli host  
- È possibile aggiungere a livello di codice controlli host a un elemento host <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione. Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ È possibile aggiungere a livello di codice controlli host a un elemento host <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet> in fase di esecuzione. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Non è possibile aggiungere controlli host a un oggetto <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet>nativo.  
   
@@ -91,7 +93,7 @@ ms.lasthandoff: 01/10/2018
  I modelli a oggetti di Word ed Excel includono proprietà che espongono raccolte di controlli nativi in documenti e fogli di lavoro. Non è possibile accedere ai controlli gestiti tramite queste proprietà. Ad esempio, non è possibile enumerare ogni controllo host <xref:Microsoft.Office.Tools.Word.Bookmark> in un documento tramite la proprietà <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> di un oggetto <xref:Microsoft.Office.Interop.Word.Document> o la proprietà <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> di un oggetto <xref:Microsoft.Office.Tools.Word.Document>. Queste proprietà includono solo i controlli <xref:Microsoft.Office.Interop.Word.Bookmark> nel documento; non contengono i controlli host <xref:Microsoft.Office.Tools.Word.Bookmark> nel documento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)   
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [Elemento Host Worksheet](../vsto/worksheet-host-item.md)   
