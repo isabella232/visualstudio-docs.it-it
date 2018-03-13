@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  Se si aggiungono i controlli in fase di progettazione, è necessario impostare opzioni di posizionamento per ogni controllo.  
   
- Se si aggiunge un controllo Windows Form a livello di codice e si fornisce un argomento di intervallo, il controllo viene ridimensionato automaticamente quando si ridimensiona una cella all'interno dell'intervallo. Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Se si aggiunge un controllo Windows Form a livello di codice e si fornisce un argomento di intervallo, il controllo viene ridimensionato automaticamente quando si ridimensiona una cella all'interno dell'intervallo. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="resizing-controls-at-design-time"></a>Ridimensionamento di controlli in fase di progettazione  
   

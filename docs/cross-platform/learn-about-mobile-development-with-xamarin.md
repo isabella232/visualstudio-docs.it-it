@@ -21,7 +21,7 @@ ms.lasthandoff: 02/28/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 
-In questo argomento viene fatto riferimento a materiale introduttivo che fornisce informazioni sullo sviluppo di app per dispositivi mobili multipiattaforma con Xamarin. Se Visual Studio e Xamarin non sono ancora stati installati, avviare innanzitutto il processo [Setup and install](../cross-platform/setup-and-install.md) , quindi tornare qui per consultare queste risorse mentre i programmi di installazione sono in esecuzione.  
+In questo argomento viene fatto riferimento a materiale introduttivo che fornisce informazioni sullo sviluppo di app per dispositivi mobili multipiattaforma con Xamarin. Se Visual Studio e Xamarin non sono ancora stati installati, avviare innanzitutto il processo [Configurazione e installazione](../cross-platform/setup-and-install.md) , quindi tornare qui per consultare queste risorse mentre i programmi di installazione sono in esecuzione.  
   
 > [!NOTE]
 > Se non diversamente specificato, inizialmente è consigliabile leggere solo le pagine collegate direttamente a questo argomento e non le pagine secondarie. Se il processo di installazione è ancora in esecuzione dopo aver completato questo elenco, è possibile tornare indietro ed esplorare argomenti aggiuntivi.  
