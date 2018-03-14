@@ -7,23 +7,25 @@ ms.suite:
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
-In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio, sarà possibile creare una semplice Applicazione Web ASP.NET Core C#. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
+In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio, sarà possibile creare una semplice Applicazione Web ASP.NET Core C#.
+
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -86,6 +88,5 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Introduzione a C# e ad ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)  
-[Introduzione a C# e Visual Basic con Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
-[Introduzione all'uso di pagine Razor in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Introduzione a C# e ad ASP.NET Core in Visual Studio](tutorial-csharp-aspnet-core.md)
+* [Introduzione all'uso di pagine Razor in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)

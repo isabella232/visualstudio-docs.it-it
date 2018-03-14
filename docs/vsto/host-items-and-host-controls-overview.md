@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -39,7 +40,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -77,12 +79,12 @@ ms.lasthandoff: 01/10/2018
   
  L'elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> non funge da contenitore per i controlli che hanno un'interfaccia utente. La finestra di progettazione per questo elemento host funge invece da barra dei componenti che consente il trascinamento di un componente, ad esempio <xref:System.Data.DataSet>, nell'area di progettazione. Per altre informazioni, vedere [Workbook Host Item](../vsto/workbook-host-item.md).  
   
- Non è possibile creare elementi host a livello di codice nei progetti a livello di documento. Al contrario, si possono usare le classi `ThisDocument`, `ThisWorkbook`o `Sheet`*n* , generate automaticamente da Visual Studio nel progetto in fase di progettazione. Queste classi generate derivano dagli elementi host e forniscono un punto di ingresso per il codice. Per altre informazioni, vedere [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Non è possibile creare elementi host a livello di codice nei progetti a livello di documento. Al contrario, si possono usare le classi `ThisDocument`, `ThisWorkbook`o `Sheet`*n* , generate automaticamente da Visual Studio nel progetto in fase di progettazione. Queste classi generate derivano dagli elementi host e forniscono un punto di ingresso per il codice. Per altre informazioni, vedere [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>Informazioni sugli elementi host nei progetti di componente aggiuntivo VSTO  
  Quando si crea un componente aggiuntivo VSTO, per impostazione predefinita non si ha l'accesso ad alcun elemento host. Tuttavia, è possibile generare gli elementi host <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>e <xref:Microsoft.Office.Tools.Excel.Worksheet> nei componenti aggiuntivi VSTO di Word e di Excel in fase di esecuzione.  
   
- Dopo aver generato un elemento host, è possibile eseguire attività quali l'aggiunta di controlli ai documenti. Per altre informazioni, vedere [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Dopo aver generato un elemento host, è possibile eseguire attività quali l'aggiunta di controlli ai documenti. Per altre informazioni, vedere [Estensione in fase di esecuzione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="host-controls"></a>Controlli host  
  I controlli host estendono i vari oggetti dell'interfaccia utente nei modelli a oggetti di Word ed Excel, ad esempio Microsoft.Office.Interop.Word.ContentControl e <xref:Microsoft.Office.Interop.Excel.Range> oggetti.  
@@ -127,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Trascinare i controlli host dalla finestra **Origini dati** nei documenti e nei fogli di lavoro. In questo modo è possibile aggiungere controlli già associati ai dati. Per ulteriori informazioni, vedere [associazione di dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Nei progetti a livello di documento e in quelli di componenti aggiuntivi VSTO è anche possibile aggiungere alcuni controlli host ai documenti in fase di esecuzione. Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Nei progetti a livello di documento e in quelli di componenti aggiuntivi VSTO è anche possibile aggiungere alcuni controlli host ai documenti in fase di esecuzione. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Per altre informazioni su come aggiungere i controlli host ai documenti, vedere gli argomenti seguenti:  
   
@@ -158,7 +160,7 @@ ms.lasthandoff: 01/10/2018
   
  Se si aggiunge un controllo host a un documento in fase di progettazione, non rimuoverlo a livello di codice in fase di esecuzione perché al successivo tentativo di utilizzo del controllo nel codice verrà generata un'eccezione. Il metodo `Delete` di un controllo host rimuove solo i controlli host aggiunti al documento in fase di esecuzione. Se si chiama il metodo `Delete` di un controllo host creato in fase di progettazione, viene generata un'eccezione.  
   
- Ad esempio, il metodo <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> di un oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> consente di eliminare correttamente l'oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> solo se è stato aggiunto a livello di codice al foglio di lavoro, operazione nota come creazione di controlli host in modo dinamico. I controlli host creati dinamicamente possono essere rimossi anche passando il nome del controllo al metodo `Remove` della proprietà <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> o <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> . Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Ad esempio, il metodo <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> di un oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> consente di eliminare correttamente l'oggetto <xref:Microsoft.Office.Tools.Excel.NamedRange> solo se è stato aggiunto a livello di codice al foglio di lavoro, operazione nota come creazione di controlli host in modo dinamico. I controlli host creati dinamicamente possono essere rimossi anche passando il nome del controllo al metodo `Remove` della proprietà <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> o <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> . Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Se un utente finale elimina un controllo host dal documento in fase di esecuzione, la soluzione potrebbe non riuscire con risultati imprevisti. Per proteggere i controlli host dall'eliminazione è possibile usare le funzionalità di protezione dei documenti. Per altre informazioni, vedere [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
@@ -172,7 +174,7 @@ ms.lasthandoff: 01/10/2018
 >  Non è necessario impostare la proprietà <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> dell'oggetto <xref:Microsoft.Office.Interop.Excel.Application> in Excel su **false**. Impostando questa proprietà su **false** si impedisce a Excel di generare eventi, inclusi gli eventi dei controlli host.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)   
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   

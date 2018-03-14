@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
 
@@ -66,7 +68,7 @@ ms.lasthandoff: 12/22/2017
 |Edit.Delete|CANC [Globale, Team Explorer]<br /><br /> o MAIUSC+CANC [Diagramma sequenza, Diagramma attività UML, Diagramma livello]<br /><br /> o CTRL+CANC [Diagramma classi]|  
 |Edit.Find|CTRL+F [Globale]|  
 |Edit.FindAllReferences|MAIUSC+F12 [Globale]|  
-dit.FindinFiles|CTRL+MAIUSC+F [Globale]|  
+|Edit.FindinFiles|CTRL+MAIUSC+F [Globale]|  
 |Edit.FindNext|F3 [Globale]|  
 |Edit.FindNextSelected|CTRL+F3 [Globale]|  
 |Edit.FormatDocument|CTRL+K, CTRL+D [Editor di testo]|  
@@ -82,7 +84,7 @@ dit.FindinFiles|CTRL+MAIUSC+F [Globale]|
 |Edit.LineDownExtendColumn|MAIUSC+ALT+Freccia GIÙ [Editor di testo]|  
 |Edit.LineOpenAbove|CTRL+INVIO [Editor di testo]|  
 |Edit.ListMembers|CTRL+J [Editor di testo, Workflow Designer]<br /><br /> o CTRL+K, CTRL+L [Workflow Designer]<br /><br /> o CTRL+K, L [Workflow Designer]|  
-dit.NavigateTo|CTRL+, [Globale]|  
+|Edit.NavigateTo|CTRL+, [Globale]|  
 |Edit.OpenFile|CTRL+MAIUSC+G [Globale]|  
 |Edit.OvertypeMode|INS [Editor di testo]|  
 |Edit.ParameterInfo|CTRL+MAIUSC+BARRA SPAZIATRICE [Editor di testo, Workflow Designer]<br /><br /> o CTRL+K, CTRL+P [Workflow Designer]<br /><br /> o CTRL+K, P [Workflow Designer]|  
@@ -93,7 +95,7 @@ dit.NavigateTo|CTRL+, [Globale]|
 |Edit.SelectAll|CTRL+A [Globale]|  
 |Edit.SelectCurrentWord|CTRL+W [Editor di testo]|  
 |Edit.SelectionCancel|ESC [Editor di testo, Progettazione report, Progettazione impostazioni, Progettazione Windows Form, Editor risorse gestite]|  
-dit.SurroundWith|CTRL+K, CTRL+S [Globale]|  
+|Edit.SurroundWith|CTRL+K, CTRL+S [Globale]|  
 |Edit.TabLeft|MAIUSC+TAB [Editor di testo, Progettazione report, Progettazione Windows Form]|  
 |Edit.ToggleAllOutlining|CTRL+M, CTRL+L [Editor di testo]|  
 |Edit.ToggleBookmark|CTRL+K, CTRL+K [Editor di testo]|  
@@ -155,7 +157,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 |View.ServerExplorer|CTRL+ALT+S [Globale]|  
 |View.ShowSmartTag|CTRL+. [Global]<br /><br /> o MAIUSC+ALT+F10 [Globale, Progettazione Editor HTML]|  
 |View.SolutionExplorer|CTRL+ALT+L [Globale]|  
-iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|  
+|View.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|  
 |View.Toolbox|CTRL+ALT+X [Globale]|  
 |View.ViewCode|INVIO [Diagramma classi]<br /><br /> o F7 [Progettazione impostazioni]|  
 |View.ViewDesigner|MAIUSC+F7 [Visualizzazione Origine editor HTML]|  

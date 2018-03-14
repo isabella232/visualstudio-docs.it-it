@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Introduzione al debug in Visual Studio
 Visual Studio offre un set integrato di strumenti efficaci per il debug e la compilazione dei progetti. Questo argomento spiega come iniziare a usare il set di base delle funzionalità dell'interfaccia utente di debug.  
+
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Il codice non funziona. Come risolvere il problema?  
  Dopo aver acquisito familiarità con l'editor e aver creato il codice, è possibile iniziare il debug del codice. In Visual Studio, come nella maggior parte degli IDE, il debug viene eseguito in due fasi: la compilazione del codice per rilevare e risolvere gli errori relativi al progetto e al compilatore e l'esecuzione del codice nell'ambiente per rilevare e risolvere gli errori dinamici e di run-time.  
@@ -118,7 +122,7 @@ Il modo più semplice per compilare il progetto è premere **F7**, ma è anche p
 ### <a name="inspect-your-code-at-run-time"></a>Esaminare il codice in fase di esecuzione  
  Quando il codice in esecuzione incontra un punto di interruzione e viene sospeso, la riga di codice contrassegnata in giallo, ovvero l'istruzione corrente, non è ancora stata eseguita. A questo punto, è possibile eseguire l'istruzione corrente ed esaminare i valori modificati. È possibile usare diversi comandi di *esecuzione* per eseguire il codice nel debugger. Se il codice contrassegnato è una chiamata a un metodo, è possibile eseguire le istruzioni premendo **F11**. È anche possibile *eseguire l'istruzione/la routine* per la riga di codice premendo **F10**. Per informazioni su altri comandi e informazioni dettagliate su come esaminare il codice, leggere [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Esame del valore di run&#45;time in Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Esame del valore di run&#45;time in Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  Nell'illustrazione precedente, è possibile spostarsi in un'istruzione con il debugger premendo **F10** o **F11**. In questo caso non si verifica una chiamata al metodo e pertanto il risultato dei due comandi è lo stesso.
 
@@ -126,7 +130,7 @@ Il modo più semplice per compilare il progetto è premere **F7**, ma è anche p
 
  ![Esame del valore di run&#45;time in Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- Passare il mouse su una variabile per visualizzare i valori e i riferimenti attualmente contenuti. Se viene visualizzato un valore non previsto, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.  Per i dettagli, [leggere altre informazioni ](../debugger/getting-started-with-the-debugger.md) sull'uso del debugger. 
+ Passare il mouse su una variabile per visualizzare i valori e i riferimenti attualmente contenuti. Se viene visualizzato un valore non previsto, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.  Per i dettagli, [leggere altre informazioni ](../debugger/getting-started-with-the-debugger.md) sull'uso del debugger.
 
  Visual Studio visualizza anche la finestra Strumenti di diagnostica, in cui è possibile osservare l'utilizzo della memoria e della CPU dell'app nel corso del tempo. Durante lo sviluppo dell'app, è possibile usare questi strumenti per individuare l'utilizzo intenso della CPU imprevisto o l'allocazione della memoria. Usare contemporaneamente anche la finestra **Espressione di controllo** e i punti di interruzione per determinare la causa di questo utilizzo intenso imprevisto o del mancato rilascio delle risorse.  Per altre informazioni, vedere [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md).
 
