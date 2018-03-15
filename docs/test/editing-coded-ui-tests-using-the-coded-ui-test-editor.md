@@ -197,7 +197,7 @@ Modificare le proprietà del controllo
  *Altre informazioni*  
  **Note**  
   
--   ![Prerequisito](../test/media/prereq.png "Prereq") Se è necessario verificare che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile valutare se aggiungere codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Prerequisito](../test/media/prereq.png "Prereq") Se è necessario verificare che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile valutare se aggiungere codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **Suggerimenti**  
   

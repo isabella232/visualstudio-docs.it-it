@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> Informazioni sui tipi e sui nomi delle classi messaggio  
  Il nome del tipo di un elemento di Outlook è diverso dal nome della classe messaggio di un elemento di Outlook. Ad esempio, il nome del tipo di un elemento RSS è PostItem. Il nome della classe messaggio di un elemento RSS è IPM. Post.RSS.  
   
- Usare il nome del tipo per fare riferimento a un elemento di Outlook nel codice. Per un elenco di nomi dei tipi, vedere [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Usare il nome del tipo per fare riferimento a un elemento di Outlook nel codice. Per un elenco di nomi dei tipi, vedere [Associazione di un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
- Usare il nome della classe messaggio degli elementi di Outlook nella procedura guidata **Nuova area del modulo di Outlook** per associare l'elemento all'area del modulo. Per un elenco di nomi validi per la classe messaggio, vedere [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Usare il nome della classe messaggio degli elementi di Outlook nella procedura guidata **Nuova area del modulo di Outlook** per associare l'elemento all'area del modulo. Per un elenco di nomi validi per la classe messaggio, vedere [Associazione di un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  È possibile usare il riquadro di lettura di Outlook per visualizzare l'anteprima di un elemento di Outlook senza aprirlo. Il riquadro di lettura è progettato solo per l'accesso in lettura. Quindi, i controlli di input aggiunti a un'area del modulo adiacente, ad esempio una casella di testo, potrebbero non funzionare come previsto quando l'elemento e l'area del modulo sono aperti nel riquadro di lettura.  

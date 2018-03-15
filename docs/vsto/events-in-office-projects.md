@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -35,7 +36,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 31d7e8483865ed03830376012e780bac87fdda07
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
  Il codice nel gestore eventi `ThisAddIn_Startup` è il primo codice utente da eseguire, a meno che il componente aggiuntivo VSTO non esegua l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . In questo caso, il gestore eventi `ThisAddIn_Startup` viene chiamato dopo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- Non aggiungere il codice nel `ThisAdd-In_Startup` gestore dell'evento se il codice richiede un documento aperto. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. Per altre informazioni, vedere [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
+ Non aggiungere il codice nel `ThisAdd-In_Startup` gestore dell'evento se il codice richiede un documento aperto. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. Per altre informazioni, vedere [Accesso a un documento all'avvio dell'applicazione di Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
  Per ulteriori informazioni sulla sequenza di avvio dei componenti aggiuntivi VSTO, vedere [aggiuntivi architettura di VSTO](../vsto/architecture-of-vsto-add-ins.md).  
   
