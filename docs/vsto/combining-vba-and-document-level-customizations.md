@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,7 +28,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 63f316d3ac6fefbef37735cddc8fb7a87a8d4bfb
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -81,7 +83,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   Si desidera rendere i servizi sviluppati in una personalizzazione a livello di documento, disponibili per gli utenti finali in grado di accedere a tali servizi scrivendo codice VBA nel documento.  
   
- Gli strumenti di sviluppo per Office in Visual Studio forniscono una funzionalità simile per i componenti aggiuntivi VSTO. Se si sviluppa un componente aggiuntivo VSTO, è possibile chiamare il codice nel componente aggiuntivo VSTO da altre soluzioni Microsoft Office. Per altre informazioni, vedere [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Gli strumenti di sviluppo per Office in Visual Studio forniscono una funzionalità simile per i componenti aggiuntivi VSTO. Se si sviluppa un componente aggiuntivo VSTO, è possibile chiamare il codice nel componente aggiuntivo VSTO da altre soluzioni Microsoft Office. Per altre informazioni, vedere [Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 > [!NOTE]  
 >  Questa funzionalità non può essere usata nei progetti Modello di Word, ma solo nei progetti Documento di Word, Cartella di lavoro di Excel o Modello di Excel.  
