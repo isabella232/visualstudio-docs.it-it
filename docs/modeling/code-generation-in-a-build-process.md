@@ -14,20 +14,20 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
-[Trasformazione del testo](../modeling/code-generation-and-t4-text-templates.md) può essere richiamata come parte di [processo di compilazione](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.  
+[Trasformazione del testo](../modeling/code-generation-and-t4-text-templates.md) può essere richiamata come parte del [processo di compilazione](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.  
   
  Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere alle API di Visual Studio (EnvDTE) se il [hostspecific = "true"](../modeling/t4-template-directive.md) attributo è impostato. Ma ciò non accade quando si compila la soluzione dalla riga di comando o quando si avvia una compilazione di server tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4.  
   
  Ciò significa che è possibile accedere a elementi come i nomi di file di progetto nello stesso modo quando si compila un modello di testo in MSBuild. È tuttavia possibile [passare informazioni sull'ambiente in modelli di testo e processori di direttive utilizzando parametri di compilazione](#parameters).  
   
-##  <a name="buildserver"></a>Configurare le macchine  
+##  <a name="buildserver"></a> Configurare le macchine  
  Per abilitare l'attività di compilazione nel computer di sviluppo, installare il SDK di modellazione per Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Per specificare che i file di sola lettura devono essere sovrascritti, inserire questa proprietà:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  A meno che si personalizzi il passaggio di post-elaborazione, quando un file viene sovrascritto, verrà registrato un avviso nell'elenco errori.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Passare i dati di contesto di compilazione nei modelli  
+##  <a name="parameters"></a> Passare i dati di contesto di compilazione nei modelli  
  È possibile impostare i valori dei parametri nel file di progetto. Ad esempio, è possibile passare [compilare](../msbuild/msbuild-properties.md) proprietà e [le variabili di ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  `ResolveParameterValue` ottiene i dati da `T4ParameterValues` solo quando si utilizza MSBuild. Quando si trasforma il modello utilizzando Visual Studio, i parametri avranno i valori predefiniti.  
   
-##  <a name="msbuild"></a>Usando le proprietà del progetto nell'assembly e le istruzioni di inclusione  
+##  <a name="msbuild"></a> Usando le proprietà del progetto nell'assembly e includere le direttive  
  Macro di Visual Studio come $ (SolutionDir) non funzionano in MSBuild. È possibile utilizzare le proprietà del progetto.  
   
  Modificare il file con estensione csproj o vbproj per definire una proprietà del progetto. In questo esempio viene definita una proprietà denominata `myLibFolder`:  
@@ -284,14 +284,14 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
   
 -   [Modelli di testo in fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md) vengono trasformati da Visual Studio.  
   
--   [Modelli di testo fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md) vengono trasformati in fase di esecuzione dell'applicazione.  
+-   [Modelli di testo fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md) vengono trasformati nella fase di esecuzione nell'applicazione.  
   
 ## <a name="read-more"></a>Altre informazioni  
  Esiste materiale sussidiario nel modello MSbuild di T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets  
   
  [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)  
   
- [Oleg Sych: Informazioni T4: integrazione di](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+ [Oleg Sych: Informazioni T4:MSBuild integrazione](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

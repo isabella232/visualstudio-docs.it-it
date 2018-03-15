@@ -17,14 +17,14 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Aprire una finestra degli strumenti dinamiche
-Le finestre degli strumenti sono in genere aperto da un comando in un menu o un equivalente di tasti di scelta rapida. In alcuni casi, tuttavia, potrebbe essere una finestra degli strumenti visualizzata ogni volta che si applica uno specifico contesto UI e si chiude quando il contesto dell'interfaccia utente non è più valido. Le finestre degli strumenti come questi vengono chiamate *dinamica* o *visibili automaticamente*.  
+Le finestre degli strumenti sono in genere aperto da un comando in un menu o un equivalente di tasti di scelta rapida. In alcuni casi, tuttavia, potrebbe essere una finestra degli strumenti visualizzata ogni volta che si applica uno specifico contesto UI e si chiude quando il contesto dell'interfaccia utente non è più valido. Questi tipi di finestre degli strumenti sono dette *dinamiche* oppure *visibili automaticamente*.  
   
 > [!NOTE]
 >  Per un elenco di contesti dell'interfaccia utente predefiniti, vedere <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Per il  
@@ -40,21 +40,21 @@ Le finestre degli strumenti sono in genere aperto da un comando in un menu o un 
   
 1.  Creare un progetto VSIX denominato **DynamicToolWindow** e aggiungere un modello di elemento della finestra dello strumento denominato **DynamicWindowPane.cs**. Per ulteriori informazioni, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  Nel file DynamicWindowPanePackage.cs, individuare la dichiarazione di DynamicWindowPanePackage. Aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e gli attributi T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute per registrare la finestra degli strumenti.  
+2.  Nel file DynamicWindowPanePackage.cs, individuare la dichiarazione di DynamicWindowPanePackage. Aggiungere il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> gli attributi per registrare la finestra degli strumenti.  
   
     ```vb  
-    [[ProvideToolWindow(typeof(DynamicWindowPane)]  
+    [ProvideToolWindow(typeof(DynamicWindowPane)]  
     [ProvideToolWindowVisibility(typeof(DynamicWindowPane), VSConstants.UICONTEXT.SolutionExists_string)]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     [ProvideToolWindow(typeof(DynamicToolWindow.DynamicWindowPane))]  
-    [Guid(DynamicWindowPanePackageGuids.PackageGuidString)]  
+    [Guid(DynamicWindowPanePackage.PackageGuidString)]  
     public sealed class DynamicWindowPanePackage : Package  
     {. . .}  
     ```  
   
-     In questo modo viene registrata la finestra degli strumenti denominata DynamicWindowPane come finestra temporanea che non è persistente quando Visual Studio viene chiuso e riaperto. Viene aperto DynamicWindowPane ogni volta che <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> applica e chiusa in caso contrario.  
+     Gli attributi indicati registrare la finestra degli strumenti denominata DynamicWindowPane come finestra temporanea che non è persistente quando viene chiuso e riaperto Visual Studio. Viene aperto DynamicWindowPane ogni volta che <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> applica e chiusa in caso contrario.  
   
 3.  Compilare il progetto e avviare il debug. L'istanza sperimentale dovrebbe essere visualizzato. La finestra degli strumenti non verrà visualizzato.  
   

@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Procedura: fornire un servizio
 Un pacchetto VSPackage può fornire servizi che è possibile utilizzare altri pacchetti VSPackage. Per fornire un servizio, un pacchetto VSPackage deve registrare il servizio con Visual Studio e aggiungere il servizio.  
   
- Il <xref:Microsoft.VisualStudio.Shell.Package> classe implementa sia <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>contiene metodi di callback che forniscono servizi su richiesta.  
+ Il <xref:Microsoft.VisualStudio.Shell.Package> classe implementa sia <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contiene i metodi di callback che forniscono servizi su richiesta.  
   
  Per ulteriori informazioni sui servizi, vedere [servizio Essentials](../extensibility/internals/service-essentials.md) .  
   
@@ -35,7 +35,7 @@ Un pacchetto VSPackage può fornire servizi che è possibile utilizzare altri pa
   
 #### <a name="implementing-a-service"></a>Implementazione di un servizio  
   
-1.  Creare un progetto VSIX (**File > Nuovo > progetto > c# > Extensiblity > progetto VSIX**).  
+1.  Creare un progetto VSIX (**File > Nuovo > progetto > c# > estendibilità > progetto VSIX**).  
   
 2.  Aggiungere al progetto un pacchetto VSPackage. Selezionare il nodo del progetto nel **Esplora** e fare clic su **Aggiungi > Nuovo elemento > elementi di Visual c# > estendibilità > pacchetto di Visual Studio**.  
   
@@ -117,7 +117,7 @@ Un pacchetto VSPackage può fornire servizi che è possibile utilizzare altri pa
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ Un pacchetto VSPackage può fornire servizi che è possibile utilizzare altri pa
     > [!NOTE]
     >  Visual Studio è possibile rifiutare una richiesta per fornire un servizio. Esegue l'operazione se un altro VSPackage fornisce già il servizio.  
   
-3.  È ora possibile ottenere il servizio e utilizzare i relativi metodi. Viene illustrato questo nell'inizializzatore, ma è possibile ottenere il servizio in qualsiasi punto che si desidera utilizzare il servizio.  
+3.  È ora possibile ottenere il servizio e utilizzare i relativi metodi. Nell'esempio seguente viene illustrato l'utilizzo del servizio nell'inizializzatore, ma è possibile ottenere il servizio in qualsiasi punto che si desidera utilizzare il servizio.  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ Un pacchetto VSPackage può fornire servizi che è possibile utilizzare altri pa
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

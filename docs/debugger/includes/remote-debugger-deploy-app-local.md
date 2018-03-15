@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a55b2a12c9a45c5a3952e3e6f4e1627bec8ba520
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 37963e1ee5b7eeb0d07c36e0abe42c98eb6436fe
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 1. Nel **Esplora**del mouse sul nodo del progetto e scegliere **pubblica** (per Web Form, **pubblicare App Web**).
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/27/2017
 5. Copiare la directory del progetto ASP.NET dal computer di Visual Studio nella directory locale configurata per l'applicazione ASP.NET (in questo esempio, **C:\Publish**) nel computer del Server di Windows. In questa esercitazione si presuppone che si sta copiando manualmente, ma è possibile utilizzare altri strumenti come PowerShell, Xcopy o Robocopy.
 
     > [!CAUTION]
-    >  Se è necessario apportare modifiche al codice o di ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
+    >  Se è necessario apportare modifiche al codice o di ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.    Se si non esegue questa operazione si riceverà un `cannot find or open the PDB file` avviso in Visual Studio quando si tenta di eseguire il debug del processo.
 
 6. In Windows Server, verificare che sia possibile eseguire correttamente l'app, aprire l'app nel browser.
 

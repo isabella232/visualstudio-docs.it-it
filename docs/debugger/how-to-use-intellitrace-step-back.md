@@ -1,13 +1,13 @@
 ---
 title: Visualizzare uno snapshot tramite il passaggio di IntelliTrace-back - Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visualizzazione di snapshot tramite IntelliTrace passaggio-back in Visual Studio
 
 Passaggio di IntelliTrace-back automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
-Passaggio di IntelliTrace-back è disponibile a partire da Visual Studio Enterprise 2017 versione 15,5 e versioni successive e richiede l'aggiornamento Aniversary di Windows 10 o versione successiva. La funzionalità è attualmente supportata per il debug di ASP.NET, Windows Form, WPF, le applicazioni console gestito e librerie di classi gestite. Debug di applicazioni ASP.NET di base, .NET Core o UWP non è attualmente supportato. 
+Passaggio di IntelliTrace-back è disponibile a partire da Visual Studio Enterprise 2017 versione 15,5 e versioni successive e richiede l'aggiornamento Aniversary di Windows 10 o versione successiva. La funzionalità è attualmente supportata per il debug di ASP.NET, Windows Form, WPF, le applicazioni console gestito e librerie di classi gestite. A partire da preview 15.7 Visual Studio 2017 Enterprise versione 1, la funzionalità è supportata anche per ASP.NET Core e .NET Core. Debug di applicazioni UWP non è attualmente supportato.
+
+In questa esercitazione, sarà possibile:
+
+> [!div class="checklist"]
+> * Abilita gli snapshot e gli eventi di Intellitrace
+> * Passare gli eventi utilizzando i comandi passaggio-back e forward passaggio
+> * Visualizzare gli snapshot di evento
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Abilitare la modalità di eventi e le istantanee di IntelliTrace 
 
-1. In Visual Studio Enterprise, passare a **strumenti > Opzioni > IntelliTrace** impostazioni, quindi selezionare l'opzione **IntelliTrace eventi e gli snapshot**. 
+1. Aprire il progetto in Visual Studio Enterprise.
+
+1. Passare a **strumenti > Opzioni > IntelliTrace** impostazioni, quindi selezionare l'opzione **IntelliTrace eventi e gli snapshot**. 
 
     ![Abilitare la modalità di eventi IntelliTrace e snapshot](../debugger/media/intellitrace-enable-snapshots.png "modalità attivare eventi di IntelliTrace e snapshot")
 
-2. Aprire il progetto in Visual Studio.
-
-3. Impostare uno o più punti di interruzione nel progetto e avviare il debug (premere **F5**), o avviare il debug, l'esecuzione passo passo del codice (**F10** o **F11**).
+1. Impostare uno o più punti di interruzione nel progetto e avviare il debug (premere **F5**), o avviare il debug, l'esecuzione passo passo del codice (**F10** o **F11**).
 
     IntelliTrace accetta uno snapshot del processo dell'applicazione nel debugger di ogni evento di passaggio e punto di interruzione. Questi eventi vengono registrati nella **eventi** nella scheda il **strumenti di diagnostica** finestra, insieme agli altri eventi di IntelliTrace. Per aprire questa finestra, scegliere **Debug** > **Windows** > **Mostra strumenti di diagnostica**.
 
@@ -49,7 +56,7 @@ Passaggio di IntelliTrace-back è disponibile a partire da Visual Studio Enterpr
 
 1. Consente di spostarsi tra gli eventi utilizzando il **passo indietro (Alt + [)** e **passo avanti (Alt +])** pulsanti sulla barra degli strumenti di Debug.
 
-    Questi pulsanti passare gli eventi che vengono visualizzati di **eventi** nella scheda il **finestra Strumenti di diagnostica**. Lo spostamento indietro o in avanti su un evento attiva automaticamente il debug cronologico per l'evento selezionato.
+    Questi pulsanti passare gli eventi che vengono visualizzati di **eventi** nella scheda il **finestra Strumenti di diagnostica**. Attiva l'esecuzione di istruzioni in avanti o indietro a un evento automaticamente [debug cronologico](../debugger/historical-debugging.md) sull'evento selezionato.
 
     ![Passo indietro pulsanti Avanti e indietro](../debugger/media/intellitrace-step-back-icons-description.png "pulsanti passo indietro e Avanti di un passaggio")
 
@@ -73,9 +80,7 @@ Passaggio di IntelliTrace-back è disponibile a partire da Visual Studio Enterpr
 
     ![Panoramica del passaggio di IntelliTrace-back](../debugger/media/intellitrace-step-back-overview.png "Panoramica di IntelliTrace passaggio-back")
 
-## <a name="next-steps"></a>Passaggi successivi  
- Per informazioni su come controllare le variabili in Visual Studio, vedere [tour delle funzionalità del Debugger](../debugger/debugger-feature-tour.md)  
- Per una panoramica di debug cronologico, vedere [debug cronologico](../debugger/historical-debugging.md).  
+    Per ulteriori informazioni su come controllare le variabili in Visual Studio, vedere [tour delle funzionalità del Debugger](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -111,3 +116,10 @@ L'impatto sulle prestazioni di debug passo a passo generale dipende dall'applica
 * Durante il debug di un'applicazione il cui processo ha un numero elevato di aree di memoria univoco, ad esempio un'applicazione che carica un numero elevato di DLL, potrebbe essere compromesso l'esecuzione di istruzioni delle prestazioni con gli snapshot abilitati. Questo problema verrà risolto in una versione futura di Windows. Se il problema, contattare Microsoft all'indirizzo stepback@microsoft.com. 
 
 * Quando si salva un file con **Debug > IntelliTrace > sessione di IntelliTrace Salva** in modalità di eventi e gli snapshot, i dati aggiuntivi acquisiti da snapshot non sono disponibili nel file. iTrace. Nel punto di interruzione e il passaggio degli eventi, vedere le stesse informazioni come se il file è stato salvato in modalità solo gli eventi di IntelliTrace. 
+
+## <a name="next-steps"></a>Passaggi successivi
+
+In questa esercitazione appreso come utilizzare IntelliTrace passaggio-back. È possibile per altre informazioni sulle altre funzionalità di IntelliTrace.
+
+> [!div class="nextstepaction"]
+> [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>Aggiunta dinamica di voci di Menu
 È possibile aggiungere voci di menu in fase di esecuzione, specificando il `DynamicItemStart` comando flag su una definizione di pulsante segnaposto nel file di comando-table (vsct) di Visual Studio, quindi definire (nel codice) il numero di menu degli elementi da visualizzare e gestire i comandi. Quando viene caricato il pacchetto VSPackage, il segnaposto viene sostituito con le voci di menu dinamico.  
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Due gruppi, uno che contiene il controller di menu e un altro che contiene le voci di menu a discesa di comando  
   
--   Elemento di un menu di tipo`MenuController`  
+-   Elemento di un menu di tipo `MenuController`  
   
 -   Due pulsanti, uno che funge da segnaposto per le voci di menu e un altro che fornisce l'icona e la descrizione comando sulla barra degli strumenti.  
   
@@ -209,7 +211,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="adding-the-command"></a>Aggiunge il comando  
  Il costruttore di DynamicMenu è in cui impostare i comandi di menu, menu dinamici e voci di menu.  
   
-1.  In DynamicMenuPackageGuids.cs, aggiungere il GUID del set di comandi e l'ID di comando:  
+1.  In DynamicMenuPackage.cs, aggiungere il GUID del set di comandi e l'ID di comando:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
@@ -342,7 +344,7 @@ ms.lasthandoff: 12/22/2017
 [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
 [ProvideAutoLoad(UIContextGuids.SolutionHasMultipleProjects)]  
-[Guid(DynamicMenuPackageGuids.PackageGuidString)]  
+[Guid(DynamicMenuPackage.PackageGuidString)]  
 public sealed class DynamicMenuItemsPackage : Package  
 {}  
 ```  

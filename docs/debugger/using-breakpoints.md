@@ -41,16 +41,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizzare i punti di interruzione nel Debugger di Visual Studio
 È possibile impostare i punti di interruzione quando si desidera arrestare l'esecuzione del debugger, ad esempio per visualizzare lo stato delle variabili di codice o per esaminare lo stack di chiamate. I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore.  
   
-##  <a name="BKMK_Overview"></a>L'impostazione di un punto di interruzione nel codice sorgente  
+##  <a name="BKMK_Overview"></a> L'impostazione di un punto di interruzione nel codice sorgente  
  Impostare un punto di interruzione nel codice sorgente facendo clic sul margine sinistro di un file di codice sorgente o posizionando il cursore su una riga di codice e premendo F9. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro ed anche la riga di codice risulta colorata:  
   
  ![Impostare un punto di interruzione](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -65,7 +65,30 @@ ms.lasthandoff: 01/24/2018
   
  È possibile impostare un punto di interruzione in qualsiasi riga di codice eseguibile. Ad esempio, nel codice C# sopra riportato è possibile impostare un punto di interruzione nella dichiarazione di variabile, nel ciclo `for` o in qualsiasi codice all'interno del ciclo `for` , ma non è possibile impostare un punto di interruzione nello spazio dei nomi, nelle dichiarazioni di classe o nella firma del metodo.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Impostazione di altri tipi di punti di interruzione  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> L'impostazione di un punto di interruzione (funzione)  
+  È possibile interrompere l'esecuzione quando viene chiamata una funzione.
+  
+1. Aprire la **punti di interruzione** finestra e scegliere **nuovo > punto di interruzione di funzione**.
+
+2. Immettere un nome di funzione per il **nome della funzione** casella. 
+
+   Per restringere la specifica di funzione:
+   
+   Utilizzare il nome completo di funzione. 
+   Esempio: Namespace1.ClassX.MethodA()
+   
+   Aggiungere i tipi di parametro di una funzione in overload. 
+   Esempio: MethodA (int, string)
+   
+   Utilizzo di '!' simbolo per specificare il modulo.
+   Esempio: App1.dll! MethodA
+   
+   Utilizzare l'operatore di contesto in C++ nativo.
+   {(funzione), [modulo]} [+&lt;offset di riga dall'inizio del metodo&gt;] esempio: {MethodA, App1.dll}+2
+
+3. Nel **Language** elenco a discesa, scegliere la lingua della funzione di cui si desidera interrompere l'esecuzione.
+  
+##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Impostazione di altri tipi di punti di interruzione  
  È possibile anche impostare i punti di interruzione nello stack di chiamate, nella finestra Disassembly e nel codice C++ nativo, in una condizione dati o in un indirizzo di memoria.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Impostazione di un punto di interruzione nella finestra Stack di chiamate  
@@ -213,7 +236,7 @@ ms.lasthandoff: 01/24/2018
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Azioni dei punti di interruzione e punti di analisi  
  Un punto di analisi è un punto di interruzione che visualizza un messaggio nella finestra Output. Un punto di analisi può fungere da istruzione di analisi temporanea nel linguaggio di programmazione.  
   
- Nella finestra **Impostazioni del punto di interruzione** selezionare la casella **Azioni** . Scegliere **Registra un messaggio nella finestra di output** nel gruppo **Azione** . È possibile visualizzare una stringa generica, ad esempio **Questo è un test**. Per includere il valore di una variabile o espressione, racchiuderlo tra parentesi graffe.  
+ Nella finestra **Impostazioni del punto di interruzione** selezionare la casella **Azioni** . Scegliere **Registra un messaggio nella finestra di output** nel gruppo **Azione** . È possibile visualizzare una stringa generica, ad esempio **Questo è un test**. Per includere il valore di una variabile o espressione, racchiuderlo tra parentesi graffe.  È inoltre possibile utilizzare identificatori di formato ([c#](../debugger/format-specifiers-in-csharp.md) e [C++](../debugger/format-specifiers-in-cpp.md)) per i valori inclusi in un punto di analisi.
   
  Per interrompere l'esecuzione quando viene raggiunto il punto di analisi, deselezionare la casella di controllo **Continua esecuzione** . Se l'opzione **Continua esecuzione** è selezionata, l'esecuzione non viene interrotta. In entrambi i casi, il messaggio viene visualizzato.  
   

@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice di facile manutenibilità con criteri di controllo dell'analisi codice
 
@@ -31,23 +31,23 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Per aprire l'editor Criteri di analisi codice
 
-1. in **Team Explorer**, fare clic sul progetto team, fare clic su **impostazioni progetto Team**, quindi fare clic su **controllo del codice sorgente**.
+1. In **Team Explorer**, fare clic sul progetto team, fare clic su **impostazioni progetto Team**, quindi fare clic su **controllo del codice sorgente**.
 
-     The **Source Control** dialog box appears.
+     Il **controllo del codice sorgente** viene visualizzata la finestra di dialogo.
 
-2. scegliere il **criteri di archiviazione** scheda e fare clic su **Aggiungi**.
+2. Nel **criteri di archiviazione** scheda e fare clic su **Aggiungi**.
 
-     The **Add Check-in Policy** dialog box appears.
+     Il **aggiungere criteri di archiviazione** viene visualizzata la finestra di dialogo.
 
-3. nel **criteri di archiviazione** elenco, selezionare il **analisi del codice** casella di controllo e quindi fare clic su **OK**.
+3. Nel **criteri di archiviazione** elenco, selezionare il **analisi del codice** casella di controllo e quindi fare clic su **OK**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     Il **Editor criteri di analisi codice** viene visualizzata la finestra di dialogo.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Per abilitare le regole di manutenibilità analisi codice
 
-1. in il **Editor criteri di analisi codice** nella finestra di dialogo **le impostazioni delle regole**, espandere il **regole di gestibilità** nodo.
+1. Nel **Editor criteri di analisi codice** nella finestra di dialogo **le impostazioni delle regole**, espandere il **regole di gestibilità** nodo.
 
-2. selezionare le caselle di controllo per le regole seguenti:
+2. Selezionare le caselle di controllo per le regole seguenti:
 
     -   Profondità dell'ereditarietà: **CA1501 AvoidExcessiveInheritance** -soglia: più di 5 livelli di avviso
 
@@ -59,9 +59,9 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
     Inoltre, se si desidera una violazione delle regole per evitare una compilazione corretta, selezionare il **considera gli avvisi come errori** casella di controllo accanto alla descrizione della regola.
 
-3. fare clic su **OK**. Il nuovo criterio si applica ora a future archiviazioni.
+3. Fare clic su **OK**. Il nuovo criterio si applica ora a future archiviazioni.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Valori della metrica del codice](../code-quality/code-metrics-values.md)
-[creazione e utilizzo di criteri di controllo dell'analisi del codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Valori della metrica del codice](../code-quality/code-metrics-values.md)
+- [Creazione e utilizzo di criteri di controllo dell'analisi del codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

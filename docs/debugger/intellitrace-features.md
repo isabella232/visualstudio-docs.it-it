@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 
@@ -55,7 +55,7 @@ Se il debug è in corso, interromperlo. Passare a **strumenti > Opzioni > Intell
 
 Questo non è abilitato per impostazione predefinita, IntelliTrace è possibile acquisire snapshot dell'applicazione in corrispondenza di ogni evento di passaggio del debugger e del punto di interruzione, ma è possibile visualizzare gli snapshot theses in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato dell'applicazione completo. Per abilitare l'acquisizione di snapshot, passare a **strumenti > Opzioni > IntelliTrace > Generale**e selezionare **IntelliTrace eventi e gli snapshot**. Per ulteriori informazioni, vedere [visualizzare snapshot tramite IntelliTrace passaggio-back](../debugger/how-to-use-intellitrace-step-back.md)
 
-Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15,5 e versioni successive e richiede l'aggiornamento dell'anniversario di Windows 10 o versione successiva.  Gli snapshot non sono attualmente disponibili per le app .NET Core e ASP.NET Core.
+Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15,5 e versioni successive e richiede l'aggiornamento dell'anniversario di Windows 10 o versione successiva.  Per le app .NET Core e ASP.NET Core, è necessario Visual Studio Enterprise 2017 versione 15.7 anteprima 1.
 
 ## <a name="GoingFurther"></a> Eventi IntelliTrace e informazioni sulla chiamata
 

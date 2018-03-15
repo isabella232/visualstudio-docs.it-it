@@ -5,25 +5,28 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: typeof_JavaScriptKeyword
+f1_keywords:
+- typeof_JavaScriptKeyword
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: typeof operator
+helpviewer_keywords:
+- typeof operator
 ms.assetid: ee8a1036-119f-486f-b034-b07bdba87f0c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>Operatore typeof (JavaScript)
 Restituisce una stringa che identifica il tipo di dati di un'espressione.  
@@ -38,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>Note  
  Il *espressione* argomento è un'espressione per il tipo di informazioni viene ricercate.  
   
- Il `typeof` operatore restituisce informazioni sul tipo sotto forma di stringa. Sono disponibili sei possibili valori `typeof` restituisce: "number", "string", "boolean", "oggetto" "function" e "undefined".  
+ Il `typeof` operatore restituisce informazioni sul tipo sotto forma di stringa. Esistono sette possibili valori `typeof` restituisce: "number", "string", "booleano", ","oggetto "function," "undefined" e "sconosciuto".  
   
  Le parentesi sono facoltative nel `typeof` sintassi.  
+
+ Potrebbe restituire un oggetto come un tipo sconosciuto in un evento XMLHTTPRequest. Un oggetto COM con nessun analogico in JavaScript può restituire anche come un tipo sconosciuto.
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente verifica il tipo di dati delle variabili.  

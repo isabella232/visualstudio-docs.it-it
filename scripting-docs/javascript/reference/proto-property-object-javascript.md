@@ -1,5 +1,5 @@
 ---
-title: "proprietà di esempio (oggetto) (JavaScript) | Documenti Microsoft"
+title: "__proto__ proprietà (Object) (JavaScript) | Documenti Microsoft"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,17 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8659c7a4ece5e30378838f20341ec6712f77ca3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="proto-property-object-javascript"></a>__proto__ proprietà (oggetto) (JavaScript)
+# <a name="proto-property-object-javascript"></a>__proto__ proprietà (Object) (JavaScript)
 Contiene un riferimento al prototipo interno dell'oggetto specificato.  
+
+> [!WARNING]
+> Il `__proto__` proprietà è una caratteristica legacy. Uso [Object. getprototypeof](../reference/object-getprototypeof-function-javascript.md) invece.
   
 ## <a name="syntax"></a>Sintassi  
   
