@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -50,7 +52,7 @@ Se si usa Visual Studio per creare un file di Windows Installer, è possibile di
   
 - [Configurare i componenti dipendenti come prerequisiti](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [Specificare dove si desidera distribuire la soluzione nel computer dell'utente](#Location)  
   
 - [Configurare un componente aggiuntivo VSTO](#ConfigureRegisitry)  
   
@@ -77,7 +79,7 @@ Questo argomento si riferisce ai seguenti esempi scaricabili.
 Prima che una soluzione possa essere eseguita nei computer degli utenti, è necessario concedere l'attendibilità in una delle modalità seguenti oppure gli utenti devono rispondere a una richiesta di attendibilità quando installano la soluzione.  
   
   
-- Firmare i manifesti con un certificato che identifica un editore conosciuto e attendibile. Per altre informazioni, vedere [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+- Firmare i manifesti con un certificato che identifica un editore conosciuto e attendibile. Per altre informazioni, vedere [Concessione dell'attendibilità alla soluzione tramite la firma dei manifesti dell'applicazione e di distribuzione](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
 - Installare la soluzione nella directory programmi sul computer dell'utente.  
   

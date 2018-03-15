@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,7 +20,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 3a5ce9a160010d893a88f1ebc31b229597bba909
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  [Panoramica dei controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)  
  In questo articolo vengono fornite informazioni sull'utilizzo dei controlli Windows Form nei documenti di Excel e di Word. Inoltre, viene descritto come tali controlli differiscono rispetto a quelli presenti in Windows Form.  
   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)  
  In questo articolo viene descritto come aggiungere controlli Windows Form e controlli host ai documenti di Word e di Excel. Inoltre, vengono descritti i limiti relativi al modo in cui tali controlli permangono nel documento.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

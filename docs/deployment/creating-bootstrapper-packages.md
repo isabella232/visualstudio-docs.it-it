@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -37,7 +39,7 @@ Il programma di installazione è un programma generico che può essere configura
  Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
   
 ## <a name="creating-custom-packages"></a>Creazione di pacchetti personalizzati  
- È possibile generare i manifesti usando l'editor XML in Visual Studio. Per altre informazioni, vedere [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) e [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Per un esempio di creazione di un pacchetto del programma di avvio automatico, vedere [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ È possibile generare i manifesti usando l'editor XML in Visual Studio. Per altre informazioni, vedere [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) e [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Per un esempio di creazione di un pacchetto del programma di avvio automatico, vedere [Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Per creare un pacchetto del programma di avvio automatico, è necessario fornire il ridistribuibile sotto forma di un file EXE o MSI al generatore di manifesti del programma di avvio automatico. Il generatore di manifesti del programma di avvio automatico crea, quindi, i file seguenti:  
   

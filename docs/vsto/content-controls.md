@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -41,7 +42,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -170,7 +172,7 @@ ms.lasthandoff: 01/10/2018
   
  Nei progetti a livello di documento e di componente aggiuntivo VSTO è possibile associare a livello di codice un controllo contenuto a un'origine dati usando il metodo <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> della proprietà <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> del controllo. In questo caso, passare la stringa **testo** per il *propertyName* parametro del <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metodo. Il **testo** proprietà è di proprietà di associazione di dati predefinita dei controlli contenuto.  
   
- I controlli contenuto supportano anche il data binding bidirezionale, in cui le modifiche nel controllo vengono aggiornate nell'origine dati. Per altre informazioni, vedere [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ I controlli contenuto supportano anche il data binding bidirezionale, in cui le modifiche nel controllo vengono aggiornate nell'origine dati. Per altre informazioni, vedere [Procedura: aggiornare un'origine dati con i dati inviati da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
 >  I controlli contenuto non supportano il data binding complesso. Se si associa un oggetto <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> o <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a un'origine dati usando il modello di dati di Windows Form, gli utenti visualizzeranno un solo valore quando fanno clic sul controllo. Per associare questi controlli a un set di valori di dati da cui gli utenti possono scegliere, è possibile associare i controlli a elementi in una parte XML personalizzata.  
