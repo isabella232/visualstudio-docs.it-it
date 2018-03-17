@@ -879,7 +879,7 @@
         },
         {
             "source_path": "docs/ide/get-started-with-visual-studio.md",
-            "redirect_url": "/visualstudio/ide/visual-studio-ide",
+            "redirect_url": "it-it/visualstudio/ide/visual-studio-ide",
             "redirect_document_id": false
         },
         {
