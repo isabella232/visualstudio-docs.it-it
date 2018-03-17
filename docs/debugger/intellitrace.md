@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ ms.lasthandoff: 02/21/2018
 |||
 |-|-|
 |**Supportato**|-Visual Basic e Visual c# applicazioni che utilizzano .NET Framework 2.0 o versioni successive.<br/>È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br/>Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Per eseguire il debug di applicazioni di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Supporto limitato**|-.NET core e le applicazioni ASP.NET Core è supportate solo per gli eventi<br />-App F # su base sperimentale<br />-Le app UWP supportate solo per gli eventi|
-|Non è supportato|-C++, altri linguaggi e script<br />-Servizi, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] App|
+|**Supporto limitato**|-.NET core e le app ASP.NET Core supportato per determinati eventi solo (Controller MVC, ADO.NET e HTTPClicent) in esecuzione del debug locale. Agente di raccolta autonomo non è supportata per le applicazioni .NET Core o ASP.NET Core.<br />-App F # su base sperimentale<br />-Le app UWP supportate solo per gli eventi|
+|**Non è supportato**|-C++, altri linguaggi e script<br />-Servizi, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] App|
 
 > [!NOTE]
 > Se si desidera eseguire il debug di un processo già in esecuzione, è possibile raccogliere solo gli eventi IntelliTrace (nessuna informazione di chiamata). È possibile collegare a un processo a 32 o 64 bit del computer locale. Non vengono raccolti gli eventi che si verificano prima connettersi al processo.
