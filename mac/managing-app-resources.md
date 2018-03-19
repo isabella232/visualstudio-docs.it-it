@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: 46338778813b73dbc87458f90cfe0548bd8ccb8a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 95aa6abeb5a64158fe0ef0ed2b64392108248523
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-app-resources"></a>Gestione delle risorse delle app
 
-I file di risorse delle app, ad esempio immagini, file di testo e file audio, sono elementi integranti dell'applicazione che non vengono compilati con l'applicazione. Ogni piattaforma supportata da Visual Studio per Mac gestisce questi tipi di file in modi diversi. Fare riferimento alle guide seguenti per altre informazioni sulla gestione delle risorse delle app in Visual Studio per Mac.
+I file di risorse delle app, ad esempio immagini, file di testo e file audio, sono necessari per l'applicazione, ma non vengono compilati con l'applicazione. Ogni piattaforma supportata da Visual Studio per Mac gestisce queste risorse in modi diversi, come illustrato nelle guide seguenti:
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-Il codice Xamarin.Forms viene eseguito in più piattaforme, ognuna delle quali ha un proprio file system. Questo significa che le operazioni di lettura e scrittura di file possono essere eseguite sia usando le API di file native in ogni piattaforma che aggiungendo i file come risorse incorporate.
+Il codice Xamarin.Forms viene eseguito su più piattaforme, ognuna con un file system proprio ed è il file system a determinare la modalità di lettura e scrittura dei file. In Xamarin.Forms è possibile gestire le risorse delle app usando le API native per i file in ogni piattaforma oppure aggiungendo file come risorse incorporate.
 
 * [Uso delle immagini](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Uso dei file]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)

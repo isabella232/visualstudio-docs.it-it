@@ -1,10 +1,11 @@
 ---
 title: Sviluppare per .NET Framework in Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Panoramica del multitargeting di Visual Studio
 
@@ -48,7 +50,7 @@ La definizione della destinazione del framework include le seguenti funzionalit�
 
 Quando si lavora su un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio modifica in modo dinamico l'ambiente di sviluppo, come indicato di seguito:
 
-- Vengono filtrati gli elementi delle finestre di dialogo **Nuovo progetto**, **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento** **Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.
+- Vengono filtrati gli elementi delle finestre di dialogo **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento** e **Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.
 
 - Vengono filtrati i controlli personalizzati nella **Casella degli strumenti** per rimuovere quelli che non sono disponibili nella versione di destinazione e per visualizzare solo i controlli più aggiornati quando sono disponibili più controlli.
 
@@ -65,7 +67,11 @@ Quando si lavora su un progetto destinato a una versione precedente del [!INCLUD
 
 ## <a name="selecting-a-target-framework-version"></a>Selezione di una versione di destinazione di .NET Framework
 
-Quando si crea un progetto, selezionare la versione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco dei modelli di progetto disponibili viene filtrato in base alla selezione. In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Quando si crea un progetto, selezionare la versione di .NET Framework di destinazione nella finestra di dialogo **Nuovo progetto**. L'elenco di framework disponibili include le versioni di framework installate applicabili al tipo di modello selezionato. Per i tipi di modello che non richiedono .NET Framework, ad esempio i modelli di .NET Core, l'elenco a discesa **Framework** è nascosto.
+
+![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](media/vside-newproject-framework.png)
+
+In un progetto esistente, è possibile modificare la versione [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Risoluzione dei riferimenti ad assembly di sistema e utente
 

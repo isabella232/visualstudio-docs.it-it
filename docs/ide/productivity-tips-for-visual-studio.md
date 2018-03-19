@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -28,7 +28,7 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, in **Visual Studio 2017 versione 15.6 Preview 2** e versioni successive, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** o **Modifica** > **Avanzate** > **Comprimi selezione** oppure premendo **MAIUSC**+**ALT**+**=** o **MAIUSC**+**ALT**+**-** (disponibile in **Visual Studio 2017 versione 15.5** e successive).
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, in **Visual Studio 2017 versione 15.6** e versioni successive, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **Modifica** > **Duplica** o premere **CTRL**+**E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **Modifica** > **Avanzate** > **Espandi selezione** o **Modifica** > **Avanzate** > **Comprimi selezione** oppure premendo **MAIUSC**+**ALT**+**=** o **MAIUSC**+**ALT**+**-** (disponibile in **Visual Studio 2017 versione 15.5** e successive).
 
 - **Uso di IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo. Ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci contenenti la combinazione di caratteri presente in qualsiasi posizione del nome. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) (Uso di IntelliSense).
 

@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
 
 ## <a name="project-build-configurations"></a>Configurazioni della build di progetti 
 
-I progetti possono avere più configurazioni. Passare da una configurazione a un'altra consente di ottenere output diversi in fase di compilazione. Se si usa una configurazione di debug, ad esempio, l'output includerà simboli di debug che consentono al debugger di risolvere i nomi delle funzioni, dei parametri o delle variabili dall'analisi dello stack di un'applicazione bloccata. L'uso di una configurazione di debug, tuttavia, fa aumentare eccessivamente le dimensioni dei file e di conseguenza non è ideale per le applicazioni destinate alla distribuzione.
+I progetti hanno tendenzialmente più configurazioni e passare da una configurazione a un'altra consente di ottenere output diversi in fase di compilazione. Con una configurazione di debug, ad esempio, l'output includerà simboli di debug che consentono al debugger di risolvere i nomi delle funzioni, dei parametri o delle variabili dall'analisi dello stack di un'applicazione bloccata. Anche se queste informazioni aggiuntive sono utili durante lo sviluppo, comportano dimensioni molto maggiori dei file e non sono ideale per la distribuzione.
 
-Ogni piattaforma deve avere una configurazione della build specifica. Lo sviluppo Xamarin.Android ha sempre una sola configurazione, di versione o di debug. Xamarin.iOS ha più configurazioni. I progetti per iOS più recenti hanno solo configurazioni di debug o di versione, che però possono essere impostate per un dispositivo o per un qualsiasi simulatore installato.
+Ogni piattaforma ha una configurazione specifica per la compilazione. 
 
 ## <a name="solution-configurations"></a>Configurazioni di soluzioni
 
-Analogamente alle configurazioni di progetti, le configurazioni di soluzioni vengono usate per creare configurazioni personalizzate per un intero progetto. Tramite la scheda **Mapping di configurazione** in **Compilazione > Configurazioni** è possibile assegnare una configurazione di destinazione per ogni elemento della soluzione, come illustrato di seguito:
+Analogamente alle configurazioni di progetti, le configurazioni di soluzioni vengono usate per creare configurazioni personalizzate per un intero progetto. Tramite la scheda **Mapping di configurazione** in **Compilazione > Configurazioni** è possibile assegnare una configurazione di destinazione per ogni elemento della soluzione, come illustrato nell'immagine seguente:
 
 
  ![Opzioni di Mapping di configurazione](media/projects-and-solutions-image3.png)
 
-Per altre informazioni, vedere il video di James Montemagno su [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg).
+Per altre informazioni sulle configurazioni, vedere il video di James Montemagno su [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg).
 
 ## <a name="run-configuration"></a>Configurazione dell'esecuzione
 

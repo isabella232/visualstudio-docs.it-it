@@ -6,41 +6,39 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 39f7407854b2ff74552209762565236adb403d84
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-subversion"></a>Uso di Subversion
 
-Come accennato in precedenza in questo articolo, Subversion è il sistema di controllo della versione centralizzato che consente di estrarre una singola copia master dei dati centralizzati. A differenza di Git, l'estrazione di un repository Subversion non clona l'intero repository, crea solo uno snapshot in questo punto nel tempo.
+Subversion è il sistema di controllo della versione centralizzato che consente di estrarre una singola copia master dei dati centralizzati. A differenza di Git, l'estrazione di un repository Subversion non clona l'intero repository, crea solo uno snapshot in questo punto nel tempo.
 
-Subversion usa un modello copia-modifica-unione per consentire agli utenti di lavorare contemporaneamente sullo stesso repository. Ciò significa che ogni utente crea una copia locale, o di lavoro, o dei dati centralizzati, su cui può quindi lavorare in modo indipendente. Le modifiche apportate alle copie di lavoro degli utenti vengono unite in modo cronologico.
+Subversion usa un modello copia-modifica-unione per consentire agli utenti di lavorare contemporaneamente sullo stesso repository. Ciò significa che ogni utente crea una copia locale, o di lavoro, dei dati centralizzati, su cui può lavorare in modo indipendente. Le modifiche apportate alle copie di lavoro degli utenti vengono unite in modo cronologico.
 
-Ad esempio, supporre che sia l'utente A che l'utente B estraggano una copia dal repository remoto e che ognuno modifichi i file. L'utente A completa le modifiche e ne esegue il commit remoto. Prima che l'utente B esegua il commit del proprio lavora, dovrà aggiornare la propria copia di lavoro con le modifiche dal repository remoto e pertanto unire le modifiche apportate dall'utente A.
+Ad esempio, supporre che sia l'utente A che l'utente B estraggano una copia dal repository remoto e che ognuno modifichi i file. L'utente A completa le modifiche e ne esegue il commit remoto. Prima che l'utente B esegua il commit del suo lavoro, deve aggiornare la sua copia di lavoro con le modifiche dal repository remoto e pertanto unire le modifiche apportate dall'utente A.
 
-Le sezioni seguenti illustrato come sia possibile usare Subversion per il controllo della versione in Visual Studio per Mac.
+Le sezioni seguenti illustrano come sia possibile usare Subversion per il controllo della versione in Visual Studio per Mac.
 
 L'immagine seguente illustra le opzioni offerte da Visual Studio per Mac dalla voce di menu Controllo della versione:
 
 ![Voci di menu Controllo della versione](media/version-control-svnVersionControlMenu.png)
 
-Le sezioni seguenti illustrano più dettagliatamente ogni opzione.
-
 ## <a name="checkout"></a>Estrai...
 
-Prima di iniziare a usare un repository Subversion remoto, è necessario estrarre il repository per creare una copia locale, o di lavoro, di tale directory nel computer locale.
+Prima di iniziare a usare un repository Subversion remoto, estrarre il repository per creare una copia di lavoro di tale directory nel computer locale.
 
 Per informazioni sull'uso della funzionalità **Estrai** in Visual Studio per Mac, seguire la procedura riportata nella sezione [Impostazione di un repository Subversion](~/set-up-subversion-repository.md).
 
 ## <a name="update-solution"></a>Aggiorna soluzione
 
-Quando si usa un repository remoto, è importante tenere presente che è possibile che altri utenti modifichino i file e che pertanto la propria copia potrebbe non essere aggiornata. Prevedendo questo, è sempre consigliabile eseguire il pull di tutte le modifiche dal repository alla propria soluzione prima di iniziare il lavoro e prima di eseguire il commit. A tale scopo, selezionare la voce di menu *Controllo della versione > Aggiorna soluzione*.
+Quando si usa un repository remoto, è importante tenere presente che è possibile che altri utenti modifichino i file e che pertanto la propria copia di lavoro non sia aggiornata. Per evitare conflitti, è sempre consigliabile eseguire il pull di tutte le modifiche dal repository alla propria soluzione prima di iniziare il lavoro e prima di eseguire il commit. Per eseguire il pull delle modifiche, selezionare la voce di menu **Controllo della versione > Aggiorna soluzione**.
 
 ## <a name="review-solution-and-commit"></a>Rivedi soluzione ed esegui commit
 
-Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato di seguito:
+Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato nell'immagine seguente:
 
 ![Schede del controllo della versione](media/version-control-vcTabs.png)
 

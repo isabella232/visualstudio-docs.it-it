@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 
@@ -231,7 +231,7 @@ Ci sono due modi per rendere disponibile la DLL per Python.
 
 Il primo metodo funziona se il progetto Python e il progetto C++ sono nella stessa soluzione. Passare a Esplora soluzioni, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto Python e quindi scegliere **Aggiungi riferimento**. Nella finestra di dialogo visualizzata selezionare la scheda **Progetti**, selezionare il progetto **superfastcode** (o qualsiasi nome usato) e quindi fare clic su **OK**.
 
-Il metodo alternativo, descritto nei passaggi seguenti, consente di installare il modulo nell'ambiente di Python globale, rendendolo disponibile anche per altri progetti Python. Questo in genere richiede di aggiornare il database di completamento IntelliSense per tale ambiente. L'aggiornamento è necessario anche quando si rimuove il modulo dall'ambiente.
+Il metodo alternativo, descritto nei passaggi seguenti, consente di installare il modulo nell'ambiente di Python globale, rendendolo disponibile anche per altri progetti Python. Questo in genere richiede di aggiornare il database di completamento IntelliSense per tale ambiente in Visual Studio 2017 versione 15.5 e versioni successive. L'aggiornamento è necessario anche quando si rimuove il modulo dall'ambiente.
 
 1. Se si usa Visual Studio 2017, eseguire il programma di installazione di Visual Studio, selezionare **Modifica**, selezionare **Singoli componenti > Compilatori, strumenti di compilazione e runtime > Set di strumenti di Visual C++ 2015.3 v140**. Questo passaggio è necessario perché Python (per Windows) è esso stesso compilato con Visual Studio 2015 (versione 14.0) e richiede la disponibilità di questi strumenti quando compila un'estensione tramite il metodo descritto in questo argomento. Si noti che può essere necessario installare una versione a 32 bit di Python e usare come destinazione della DLL Win32 e non x64.
 

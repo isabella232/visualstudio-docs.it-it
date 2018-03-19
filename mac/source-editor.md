@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: af5c66d8bd2b9fd16f7a0e7d5d9796ada1ede022
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="source-editor"></a>Editor standard
 
 Un editor standard affidabile è essenziale per scrivere codice in modo conciso ed efficiente. Visual Studio per Mac offre un editor standard sofisticato, centrale per le interazioni con l'ambiente di sviluppo integrato. L'editor standard offre funzionalità necessarie per lavorare in modo agevole: da funzioni di base, come ad esempio evidenziazione della sintassi, frammenti di codice e riduzione del codice, ai vantaggi derivanti dall'integrazione del compilatore Roslyn, ad esempio il completamento di codice completamente funzionale IntelliSense.
 
-L'editor standard in Visual Studio per Mac consente un'esperienza ottimale di uso di tutte le altre funzionalità offerte dall'ambiente di sviluppo integrato, ad esempio debug, refactoring e integrazione del controllo della versione.
+L'editor standard in Visual Studio per Mac consente un'esperienza ottimale di uso di tutte le altre funzionalità nell'IDE, ad esempio debug, refactoring e integrazione del controllo della versione.
 
-Questo argomento presenta alcune delle funzionalità chiave dell'editor standard e illustra come è possibile usare Visual Studio per Mac nel modo più produttivo possibile.
+Questo articolo presenta alcune delle funzionalità chiave dell'editor standard e illustra come è possibile usare Visual Studio per Mac nel modo più produttivo possibile.
 
 ## <a name="the-source-editor-experience"></a>Esperienza di uso dell'editor standard
 
@@ -27,15 +27,15 @@ L'efficienza di visualizzazione e di spostamento nel codice è una parte essenzi
 Visual Studio per Mac offre molte funzionalità potenti per rendere lo sviluppo multipiattaforma il più accessibile e utile possibile. Le sezioni seguenti descrivono alcune delle caratteristiche principali.
 
 
-### <a name="code-folding"></a>Riduzione del codice
+## <a name="code-folding"></a>Riduzione del codice
 
-La riduzione del codice agevola la gestione di file di codice sorgente di grandi dimensioni consentendo agli sviluppatori di mostrare o nascondere intere sezioni di codice, ad esempio direttive, codice e commenti boilerplate e istruzioni #region. Questa funzionalità è disattivata per impostazione predefinita in Visual Studio per Mac
+La riduzione del codice agevola la gestione di file di codice sorgente di grandi dimensioni consentendo agli sviluppatori di mostrare o nascondere intere sezioni di codice, ad esempio direttive, codice e commenti boilerplate e istruzioni #region. La riduzione del codice è disattivata per impostazione predefinita in Visual Studio per Mac
 
 Per attivare la riduzione del codice, spostarsi su **Visual Studio > Preferenze... > Editor di testo > Generale > Riduzione del codice**:
 
 ![Opzioni di riduzione del codice](media/source-editor-image1.png)
 
-Oltre a offrire l'opzione per abilitare la riduzione del codice, questo menu include anche l'opzione per ridurre #region e commenti per impostazione predefinita, visualizzando un hint denominato anziché il codice.
+Questo menu include anche l'opzione per ridurre #region e commenti per impostazione predefinita, visualizzando un hint denominato anziché il codice.
 
 Per mostrare o nascondere sezioni, usare il widget di divulgazione accanto al numero di riga:
 
@@ -47,11 +47,11 @@ Per mostrare o nascondere sezioni, usare il widget di divulgazione accanto al nu
 
 Questa voce di menu può anche essere usata per abilitare o disabilitare la riduzione del codice.
 
-### <a name="white-space"></a>Spazio vuoto
+## <a name="white-space"></a>Spazio vuoto
 
-Può essere necessario poter visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche molto utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
+Può essere necessario visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
 
-Impostare opzioni per mostrare spazi vuoti spostandosi su **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**, come illustrato di seguito. La selezione di questa opzione consente di impostare _quando_ visualizzare i caratteri invisibili: mai, alla selezione o sempre:
+Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_ visualizzare i caratteri invisibili: mai, alla selezione o sempre:
 
  ![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
 
@@ -59,23 +59,23 @@ Impostare opzioni per mostrare spazi vuoti spostandosi su **Visual Studio > Pref
 
  ![Mostrare tabulazioni e spazi](media/source-editor-image4.png)
 
- I caratteri invisibili vengono visualizzati come punti grigi, come illustrato di seguito:
+ I caratteri invisibili vengono visualizzati come punti grigi, come illustrato nell'immagine seguente:
 
  ![spazi vuoti visualizzati](media/source-editor-image22.png)
 
 
-### <a name="ruler"></a>Righello
+## <a name="ruler"></a>Righello
 
-La visualizzazione del righello di colonna è utile per determinare le lunghezze delle righe, in particolare quando si lavoro in un team che ha linee guida per tali lunghezze. Il righello di colonna può essere attivato o disattivato spostandosi su **Visual Studio > Preferenze... > Editor di testo > Marcatori e righelli** e selezionando (o selezionando) **Show Column ruler (Mostra righello di colonna)**, come illustrato di seguito:
+Il righello per le colonne è utile per determinare le lunghezze delle righe, in particolare quando si lavora in un team che ha linee guida per tali lunghezze. Per attivare o disattivare il righello per le colonne, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli** e selezionare (o deselezionare) **Show Column ruler** (Mostra righello per le colonne), come illustrato nell'immagine seguente:
 
  ![](media/source-editor-image5.png)
 
  Verrà visualizzata una linea grigia verticale nell'editor standard.
 
 
-### <a name="highlight-identifier-references"></a>Evidenzia riferimenti identificatore
+## <a name="highlight-identifier-references"></a>Evidenzia riferimenti identificatore
 
-Quando questa opzione è attivata, uno sviluppatore può posizionare il mouse su qualsiasi simbolo nel codice sorgente e l'editor standard offrirà una guida visiva per tutti gli altri riferimenti in tale file. Per attivare questa funzionalità, spostarsi su **Visual Studio > Preferenze... > Editor di testo > Marcatori e righelli** e selezionare _Highlight identifier references (Evidenzia riferimenti identificatore)_, come illustrato di seguito:
+Quando l'opzione "Highlight identifier references (Evidenzia riferimenti identificatore)" è attivata, è possibile selezionare qualsiasi simbolo nel codice sorgente e l'editor offrirà una guida visiva per tutti gli altri riferimenti in tale file. Per attivare questa opzione, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli** e selezionare _Highlight identifier references_ (Evidenzia riferimenti identificatore), come illustrato nell'immagine seguente:
 
 ![](media/source-editor-image6.png)
 

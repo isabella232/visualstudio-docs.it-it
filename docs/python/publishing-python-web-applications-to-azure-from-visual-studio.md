@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 79036afd66d9c8c23ffb6351d6fd5329004479f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Pubblicazione nel servizio app di Azure
 
@@ -74,7 +74,7 @@ Per creare un servizio app temporaneo che non richiede una sottoscrizione di Azu
 
 ## <a name="configure-python-on-azure-app-service"></a>Configurare Python nel servizio app di Azure
 
-Dopo aver creato un servizio app con un'app Web vuota in esecuzione nella propria sottoscrizione o in un sito gratuito, installare una versione di Python come descritto in [Gestione di Python nel servizio app di Azure](managing-python-on-azure-app-service.md). Per la pubblicazione da Visual Studio 2017, registrare il percorso esatto dell'interprete Python installato con l'estensione del sito, come descritto nell'argomento.
+Dopo aver creato un servizio app con un'app Web vuota in esecuzione nella propria sottoscrizione o in un sito gratuito, installare una versione di Python come descritto in [Gestione di Python nel servizio app di Azure](managing-python-on-azure-app-service.md). Per la pubblicazione da Visual Studio 2017, registrare il percorso esatto dell'interprete Python installato con l'estensione del sito, come descritto nell'articolo.
 
 È anche possibile installare il pacchetto `bottle` usando il processo descritto in queste istruzioni poiché il pacchetto viene installato in altri passaggi di questa procedura dettagliata.
 

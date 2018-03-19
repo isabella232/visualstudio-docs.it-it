@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso della finestra interattiva di Python
 
@@ -38,7 +38,7 @@ In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 | IPython | REPL comunica con il back-end di IPython | Comandi IPython, vantaggi di Pylab | No | Sì, inline in REPL |
 | IPython senza Pylab | REPL comunica con il back-end di IPython | IPython standard | No | Sì, finestra separata | 
 
-Questo argomento illustra le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Uso di IPython nella finestra interattiva](interactive-repl-ipython.md).
+Questo articolo descrive le modalità REPL **Standard** e **Debug**. Per informazioni dettagliate sulle modalità IPython, vedere [Uso di IPython nella finestra interattiva](interactive-repl-ipython.md).
 
 Per una procedura dettagliata con esempi, incluse le interazioni con l'editor come CTRL+INVIO, vedere [Passaggio 3: Uso della finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 

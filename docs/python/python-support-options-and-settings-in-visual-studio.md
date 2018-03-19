@@ -2,7 +2,7 @@
 title: Opzioni e impostazioni per Python in Visual Studio | Microsoft Docs
 description: Informazioni di riferimento per le varie impostazioni di Visual Studio correlate al codice e ai progetti Python.
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -36,19 +37,21 @@ Per visualizzare le opzioni di Python, usare il comando di menu **Strumenti > Op
 
 ![Finestra di dialogo Opzioni di Python, scheda Generale](media/options-general.png)
 
-Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre opzioni specifiche di Python.
+Sono disponibili anche opzioni specifiche per Python nella scheda **Editor di testo > Python > Avanzate** e nella scheda **Ambiente > Tipi di carattere e colori** all'interno del gruppo "Editor di testo".
 
 > [!Note]
 > Il gruppo **Sperimentale** contiene le opzioni per le funzionalità che sono ancora in fase di sviluppo e che non sono qui documentate. Sono spesso discusse in post nel [blog Python engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/) (Progettazione Python in Microsoft).
 
 ## <a name="general-options"></a>Opzioni generali
 
+(Scheda **Strumenti > Opzioni > Python**.)
+
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Mostra la finestra di output durante la creazione degli ambienti virtuali| Attivato | Deselezionare per impedire che venga visualizzata la finestra di output. |
 | Mostra la finestra di output durante l'installazione o la rimozione di pacchetti | Attivato | Deselezionare per impedire che venga visualizzata la finestra di output. |
 | Esegui sempre pip come amministratore | Disattivato | Eleva sempre le operazioni `pip install` per tutti gli ambienti. Durante l'installazione dei pacchetti, Visual Studio richiede i privilegi di amministratore se l'ambiente si trova in un'area protetta del file system, come `c:\Program Files`. In questo prompt è possibile scegliere di elevare sempre `pip install` per tale specifico ambiente. Vedere [Scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab). |
-| Genera automaticamente il database di completamento al primo uso | Attivato | Per fare in modo che i [completamenti IntelliSense](editing-python-code-in-visual-studio.md#intellisense) funzionino con una libreria, Visual Studio deve generare un database di completamento per tale libreria. La creazione del database viene eseguita in background quando viene installata una libreria, ma potrebbe non essere completa quando si avvia la scrittura del codice. Se è selezionata questa opzione, Visual Studio assegna la priorità del completamento del database a una libreria, quando si scrive un codice che ne fa uso. |
+| Genera automaticamente il database di completamento al primo uso | Attivato | *Si applica a Visual Studio 2017 versione 15.5 e versioni successive quando si usa un database di IntelliSense.* Assegna la priorità del completamento del database per una libreria, quando si scrive un codice che ne fa uso. Per altre informazioni, vedere [Informazioni di riferimento sulla finestra Ambienti - scheda Intellisense](python-environments-window-tab-reference.md). |
 | Ignora variabili PYTHONPATH a livello di sistema | Attivato | PYTHONPATH viene ignorato per impostazione predefinita perché Visual Studio offre un mezzo più diretto per specificare i percorsi di ricerca negli ambienti e nei progetti. Per altri dettagli, vedere [Percorsi di ricerca](search-paths.md). |
 | Aggiorna percorsi di ricerca quando vengono aggiunti file collegati | Attivato | Quando questa opzione è impostata, l'aggiunta di un [file collegato](managing-python-projects-in-visual-studio.md#linked-files) a un progetto aggiorna [Percorsi di ricerca](search-paths.md) in modo che IntelliSense possa includere il contenuto della cartella del file collegato nel relativo database di completamento. Deselezionare questa opzione per escludere tale contenuto dal database di completamento. |
 | Avvisa quando non è possibile trovare il modulo importato | Attivato | Deselezionare questa opzione per non visualizzare gli avvisi quando si è certi che un modulo importato non è attualmente disponibile, ma non influisce comunque sul funzionamento del codice. |
@@ -59,6 +62,8 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 ![Finestra di dialogo Opzioni di Python, scheda Generale](media/options-general.png)
 
 ## <a name="debugging-options"></a>Opzioni di debug
+
+(Scheda **Strumenti > Opzioni > Python > Debug**.)
 
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 
 ## <a name="diagnostics-options"></a>Opzioni di diagnostica
 
+(Scheda **Strumenti > Opzioni > Python > Diagnostica**.)
+
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
 | Includi log di analisi | Attivato | Include log dettagliati relativi all'analisi di ambienti Python installati durante il salvataggio della diagnostica in un file o la copia negli Appunti tramite i pulsanti. Questa opzione può aumentare notevolmente le dimensioni del file generato, ma spesso è necessaria per diagnosticare problemi di IntelliSense. |
@@ -81,6 +88,8 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 ![Finestra di dialogo Opzioni di Python, scheda Diagnostica](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Opzioni della finestra interattiva
+
+(Scheda **Strumenti > Opzioni > Python > Finestre interattive**.)
 
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 ![Finestra di dialogo delle opzioni di Python, scheda Finestre interattive](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Opzioni avanzate dell'editor di Python
+
+(Scheda **Strumenti > Opzioni > Editor di testo > Python > Avanzate**.)
 
 ### <a name="completion-results"></a>Risultati del completamento
 
@@ -105,7 +116,7 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 
 | Opzione | Impostazione predefinita | Descrizione |
 | --- | --- | --- |
-| Commit alla digitazione dei caratteri seguenti | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
+| Commit alla digitazione dei caratteri seguenti | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
 | Immetti completamento corrente dei commit | Attivato | Se questa opzione è impostata, il tasto INVIO sceglie e applica il completamento attualmente selezionato in modo analogo ai caratteri riportati sopra (ma ovviamente, non esiste un carattere per il tasto Invio, pertanto non può entrare direttamente in tale elenco). |
 | Aggiungi nuova riga quando si preme Invio alla fine della parola digitata | Disattivato | Per impostazione predefinita, se si digita la parola che viene visualizzata nella finestra popup di completamento e si preme INVIO, si esegue il commit di tale completamento. Impostando questa opzione, si esegue il commit dei completamenti quando si finisce di digitare l'identificatore, di conseguenza, premendo il tasto INVIO viene inserita una nuova riga. |
 
@@ -118,3 +129,11 @@ Nella scheda **Editor di testo > Python > Avanzate** sono presenti anche altre o
 | Nomi dei colori in base ai tipi | Attivato | Abilita la colorazione della sintassi nel codice Python. |
 
 ![Finestra di dialogo delle opzioni dell'editor di Python, scheda avanzate](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Opzioni Tipi di carattere e colori
+
+(Scheda **Ambiente > Tipi di carattere e colori** all'interno del gruppo "Editor di testo".)
+
+I nomi delle opzioni di Python sono preceduti tutti dal prefisso "Python" e sono autoesplicativi. Il tipo di carattere predefinito per tutti i temi colori di Visual Studio è 10pt Consolas Regular (non grassetto). I colori predefiniti variano a seconda del tema. In genere, si modifica un tipo di carattere o un colore se la leggibilità del testo non è adeguata con le impostazioni predefinite.
+
+![Opzioni per tipo di carattere e colori di Python](media/options-fonts-and-colors.png)

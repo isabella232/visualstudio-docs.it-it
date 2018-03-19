@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gestione di Python nel servizio app di Azure
 
 Il [servizio app di Azure](https://azure.microsoft.com/services/app-service/) è un'offerta di tipo piattaforma distribuita come servizio per le app Web, siano esse siti accessibili tramite un browser, API REST usate dai client o elaborazioni attivate da eventi. Il servizio app supporta pienamente l'uso di Python per implementare le app.
 
-Il supporto di Python personalizzabile nel servizio app di Azure viene offerto come un *set di estensioni del sito* del servizio app, ognuna contenente una versione specifica del runtime di Python. È quindi possibile installare tutti i pacchetti desiderati direttamente in tale ambiente, come descritto in questo argomento. Personalizzando l'ambiente nel servizio app stesso, non è necessario gestire i pacchetti nei progetti di app Web o caricarli con il codice dell'app.
+Il supporto di Python personalizzabile nel servizio app di Azure viene offerto come un *set di estensioni del sito* del servizio app, ognuna contenente una versione specifica del runtime di Python. È quindi possibile installare tutti i pacchetti desiderati direttamente in tale ambiente, come descritto in questo articolo. Personalizzando l'ambiente nel servizio app stesso, non è necessario gestire i pacchetti nei progetti di app Web o caricarli con il codice dell'app.
 
 > [!Tip]
-> Anche se il servizio app per impostazione predefinita include Python 2.7 e Python 3.4 installati nelle cartelle radice nel server, non è possibile personalizzare o installare i pacchetti in questi ambienti, né dipendere dalla loro presenza. È invece necessario affidarsi a un'estensione del sito sotto il proprio controllo, come descritto in questo argomento.
+> Anche se il servizio app per impostazione predefinita include Python 2.7 e Python 3.4 installati nelle cartelle radice nel server, non è possibile personalizzare o installare i pacchetti in questi ambienti, né dipendere dalla loro presenza. È invece necessario affidarsi a un'estensione del sito sotto il proprio controllo, come descritto in questo articolo.
 
 > [!Important]
 > Le procedure descritte di seguito sono soggette a modifiche, in particolare per apportare miglioramenti. Le modifiche sono annunciate nel [blog Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/) (Progettazione Python in Microsoft).

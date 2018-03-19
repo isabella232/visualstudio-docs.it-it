@@ -2,7 +2,7 @@
 title: Debug del codice Python in Visual Studio | Microsoft Docs
 description: "Presentazione dettagliata delle funzionalità di debug in Visual Studio specifiche per il codice Python, inclusa l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'individuazione delle eccezioni e il debug nella finestra interattiva."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
 Visual Studio offre un'esperienza di debug completa per Python, che include il collegamento a processi in esecuzione, la valutazione di espressioni nelle finestre Espressioni di controllo e Controllo immediato, il controllo delle variabili locali, dei punti di interruzione, delle istruzioni per l'esecuzione di istruzioni, l'uscita da istruzioni/routine e l'esecuzione di istruzioni/routine, di Imposta istruzione successiva e altro ancora.
 
-Vedere anche gli argomenti seguenti sul debug nei vari scenari:
+Vedere anche gli articoli seguenti sul debug nei vari scenari:
 
 - [Debug remoto di Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Debug remoto di Azure](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Vedere anche gli argomenti seguenti sul debug nei vari scenari:
 
 Il flusso di lavoro del debug di base include l'impostazione dei punti di interruzione, l'esecuzione di codice istruzione per istruzione, il controllo dei valori e la gestione delle eccezioni, come descritto nelle sezioni seguenti. Per informazioni dettagliate sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug > Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo F5. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in Esplora soluzioni) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in Proprietà progetto (vedere [Opzioni di debug del progetto](#project-debugging-options)). Se per qualche motivo non è stato impostato un file di avvio, tuttavia, viene visualizzata una finestra di output Python per un breve periodo di tempo. In questo caso, fare clic con il pulsante destro del mouse sul file appropriato e selezionare **Imposta come file di avvio**.
+È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug > Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo F5. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in Esplora soluzioni) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in Proprietà progetto (vedere [Opzioni di debug del progetto](#project-debugging-options)). In **Visual Studio 2017 versione 15.6** e versioni successive viene generato un avviso se non è impostato un file di avvio. Nelle versioni precedenti è possibile che venga visualizzata una finestra di output con l'interprete Python in esecuzione o che la finestra di output venga visualizzata brevemente e poi scompaia. In qualsiasi caso, fare clic con il pulsante destro del mouse sul file appropriato e scegliere **Imposta come file di avvio**.
 
 > [!Note]
 > Il debugger viene sempre avviato con l'ambiente Python attivo per il progetto. Per cambiare ambiente, attivarne uno diverso come descritto in [Selezione di un interprete e un ambiente Python da usare in un progetto](selecting-a-python-environment-for-a-project.md).
@@ -160,13 +160,13 @@ Per impostazione predefinita, il debugger avvia il programma con l'utilità di a
 | Percorso dell'interprete | Esegue l'override del percorso associato all'ambiente corrente.  Il valore può essere utile per avviare lo script con un interprete non standard. |
 | Variabili di ambiente | In questa casella di testo su più righe è possibile aggiungere voci in formato `NAME=VALUE`. Poiché questa impostazione viene applicata per ultima, dopo tutte le variabili di ambiente globali esistenti e dopo aver impostato `PYTHONPATH` in base all'impostazione Percorsi di ricerca, può essere usata per eseguire l'override manuale di una di queste altre variabili. |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Finestra Interattiva e finestra Controllo immediato
 
 Durante una sessione di debug è possibile usare due finestre interattive: la finestra Controllo immediato standard di Visual Studio e la finestra Debug interattivo Python.
 
-La finestra Controllo immediato (**Debug > Finestre > Controllo immediato**) viene usata per una rapida valutazione delle espressioni di Python e per il controllo o l'assegnazione di variabili all'interno del programma in esecuzione. Per informazioni dettagliate, vedere l'argomento generale [Finestra di controllo immediato](../ide/reference/immediate-window.md).
+La finestra Controllo immediato (**Debug > Finestre > Controllo immediato**) viene usata per una rapida valutazione delle espressioni di Python e per il controllo o l'assegnazione di variabili all'interno del programma in esecuzione. Per informazioni dettagliate, vedere l'articolo generale [Finestra di controllo immediato](../ide/reference/immediate-window.md).
 
 La finestra Debug interattivo Python (**Debug > Finestre > Debug interattivo Python**) è più completa perché consente di accedere a tutte le funzionalità dell'esperienza [REPL interattivo](python-interactive-repl-in-visual-studio.md) durante il debug,inclusa la scrittura e l'esecuzione di codice. Si connette automaticamente a qualsiasi processo avviato nel debugger tramite l'utilità di avvio Python standard (inclusi i processi collegati tramite ***Debug > Associa a processo**). Non è però disponibile quando si usa il debug C/C++ in modalità mista.
 

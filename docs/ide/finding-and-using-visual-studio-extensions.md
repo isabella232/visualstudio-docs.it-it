@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare altre estensioni di Visual Studio
 
@@ -73,7 +73,7 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 
 Una novità di **Visual Studio 2017 versione 15.3** prevede che Visual Studio notifichi l'utente se sospetta che un'estensione è stata coinvolta in un arresto anomalo del sistema durante una sessione precedente. Quando Visual Studio subisce un arresto anomalo del sistema, memorizza lo stack dell'eccezione. Al successivo avvio di Visual Studio, viene esaminato lo stack, a partire dal nodo foglia e procedendo verso la base. Se Visual Studio determina che un frame appartiene a un modulo che fa parte di un'estensione installata e abilitata, visualizza una notifica.
 
-Un'altra novità di **Visual Studio 2017 versione 15.6 preview 3** prevede che Visual Studio invii una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
+Un'altra novità di **Visual Studio 2017 versione 15.6** prevede che Visual Studio invii una notifica anche se sospetta che un'estensione sia la causa di un blocco dell'interfaccia utente.
 
 Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica o eseguire una delle azioni seguenti:
 

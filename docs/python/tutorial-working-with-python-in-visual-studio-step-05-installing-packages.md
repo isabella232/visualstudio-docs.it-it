@@ -2,7 +2,7 @@
 title: Utilizzo di Python in Visual Studio, Passaggio 5, Installazione dei pacchetti | Microsoft Docs
 description: "Passaggio 5 di un'esercitazione di base per l'utilizzo di Python all'interno di Visual Studio, che illustra le funzionalità di Visual Studio per la gestione dei pacchetti in un ambiente Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Passaggio 5: Installazione dei pacchetti nell'ambiente Python
 
@@ -44,19 +44,21 @@ La community degli sviluppatori di Python produce migliaia di pacchetti utili ch
   ![Installazione di matplotlib nell'ambiente](media/environments-add-matplotlib1.png)
 
 1. Se richiesto, dare il consenso per l'elevazione dei privilegi.
- 
-1. Una volta installato, il pacchetto comparirà nella finestra Ambienti Python. La **X**, a destra del pacchetto, lo disinstalla. 
+
+1. Una volta installato, il pacchetto comparirà nella finestra Ambienti Python. La **X**, a destra del pacchetto, lo disinstalla.
 
   ![Completamento dell'installazione matplotlib nell'ambiente](media/environments-add-matplotlib2.png)
 
   L'indicatore di stato di piccole dimensioni sotto l'ambiente indica che Visual Studio sta compilando il database di IntelliSense per il pacchetto appena installato. La scheda **IntelliSense** offre anche informazioni più dettagliate. Si noti che, fino al completamento del database, le funzionalità di IntelliSense come il completamento automatico e la verifica della sintassi non saranno attive nell'editor del pacchetto.
 
+  Si noti che **Visual Studio 2017 versione 15.6** e versioni successive usano un metodo diverso e più veloce per l'utilizzo di IntelliSense e visualizzano un messaggio in merito nella scheda **IntelliSense**.
+
 1. Creare un nuovo progetto con **File > Nuovo > Progetto**, selezionando il modello "Applicazione Python". Nel file di codice che viene visualizzato incollare il codice seguente che crea una cosinusoide come nei passaggi dell'esercitazione precedente, questa volta tracciata graficamente:
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

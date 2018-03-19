@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -70,7 +71,7 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualizzare le definizioni del codice sorgente decompilato invece dei metadati (C#)
 
-Una novità di **Visual Studio 2017 versione 15.6 Preview 2** consente di impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Espandere quindi **Editor di testo** > **C#** > **Avanzate** e selezionare **Enable navigation to decompiled sources** (Abilita navigazione a origini decompilate).
+Una novità di **Visual Studio 2017 versione 15.6** consente di impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Espandere quindi **Editor di testo** > **C#** > **Avanzate** e selezionare **Enable navigation to decompiled sources** (Abilita navigazione a origini decompilate).
 
 ![Visualizzazione di una definizione decompilata](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ Una novità di **Visual Studio 2017 versione 15.6 Preview 2** consente di impost
 
 ## <a name="see-also"></a>Vedere anche
 
-[Esplorazione del codice](../ide/navigating-code.md)  
-[Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[Spostarsi all'interno del codice](../ide/navigating-code.md)
+[Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

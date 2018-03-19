@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
-È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo argomento esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
+È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo articolo esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
 
 ## <a name="dark-theme"></a>Tema scuro
 
 ![Visualizzazione tema scuro](media/customizing-the-ide-image7a.png)
 
-Per cambiare tema in Visual Studio per Mac, scegliere **Visual Studio > Preferenze... > Ambiente > Stile di visualizzazione** e selezionare il tema desiderato dall'elenco a discesa **Tema dell'interfaccia utente**, come illustrato nello screenshot seguente:
+Per cambiare tema in Visual Studio per Mac, scegliere **Visual Studio > Preferenze > Ambiente > Stile di visualizzazione** e selezionare il tema desiderato nell'elenco a discesa **Tema dell'interfaccia utente**, come illustrato nell'immagine seguente:
 
  ![Selezione del tema scuro](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Localizzazione
 
-Visual Studio per Mac è disponibile in 13 lingue ed è quindi accessibile a un maggior numero di sviluppatori. Ecco le lingue in cui è attualmente disponibile:
+Visual Studio per Mac è disponibile nelle 13 lingue seguenti ed è quindi accessibile a un maggior numero di sviluppatori:
 
 * Cinese (Cina)
 * Cinese (Taiwan)
@@ -42,29 +42,29 @@ Visual Studio per Mac è disponibile in 13 lingue ed è quindi accessibile a un 
 * Spagnolo
 * Turco
 
-Per cambiare la lingua visualizzata da Visual Studio per Mac, scegliere **Visual Studio > Preferenze... > Ambiente > Stile di visualizzazione** e selezionare la lingua voluta dall'elenco a discesa **Lingua dell'interfaccia utente**, come illustrato nello screenshot seguente:
+Per cambiare la lingua visualizzata da Visual Studio per Mac, scegliere **Visual Studio > Preferenze > Ambiente > Stile di visualizzazione** e selezionare la lingua desiderata nell'elenco a discesa **Lingua dell'interfaccia utente**, come illustrato nell'immagine seguente:
 
 
 ![Selezione lingua](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Informazioni sull'autore
 
-Il pannello Informazioni sull'autore consente all'utente di aggiungere informazioni personali pertinenti manualmente, ad esempio il nome, l'indirizzo e-mail, il titolare del copyright per il lavoro, la società e il marchio, come illustrato di seguito:
+Il pannello Informazioni sull'autore consente all'utente di aggiungere informazioni personali pertinenti manualmente, ad esempio il nome, l'indirizzo di posta elettronica, il titolare del copyright per il lavoro, la società e il marchio:
 
  ![Sezione di modifica delle informazioni sull'autore](media/customizing-the-ide-image9a.png)
 
-Queste informazioni vengono usate per popolare le intestazioni standard dei file, ad esempio le licenze, che è possibile aggiungere ai nuovi file creati in Visual Studio per Mac:
+Queste informazioni vengono usate per popolare le intestazioni standard dei file, ad esempio le licenze, che è possibile aggiungere ai nuovi file:
 
  ![Opzioni per le intestazioni standard](media/customizing-the-ide-image8a.png)
 
 
-I campi **Nome** e **Posta elettronica** vengono usati per aggiungere informazioni a tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono popolati, Visual Studio per Mac chiede di farlo quando si tenta di usare il controllo della versione.
+I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono popolati, Visual Studio per Mac chiede di farlo quando si tenta di usare il controllo della versione.
 
 ## <a name="key-bindings"></a>Tasti di scelta rapida
 
 I tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo da rendere più efficienti gli spostamenti all'interno di Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (Windows), ReSharper, Visual Studio Code e Xcode.
 
-Per impostare tasti di scelta rapida, passare a **Visual Studio > Preferenze... > Ambiente > Tasti di scelta rapida**, come illustrato di seguito:
+Per impostare tasti di scelta rapida, passare a **Visual Studio > Preferenze > Ambiente > Tasti di scelta rapida**, come illustrato nell'immagine seguente:
 
  ![Impostare tasti di scelta rapida](media/customizing-the-ide-image10a.png)
 
@@ -78,7 +78,7 @@ L'area di lavoro di Visual Studio per Mac è costituita da un'area principale (i
 
 ### <a name="viewing-and-arranging-pads"></a>Visualizzazione e organizzazione dei riquadri
 
-Quando si apre una nuova soluzione o un nuovo file in Visual Studio per Mac, è possibile notare la presenza nell'area di lavoro di alcuni *riquadri*, ad esempio Soluzione, Struttura documento ed Errori, come illustrato di seguito:
+Quando si apre una nuova soluzione o un nuovo file in Visual Studio per Mac, è possibile notare la presenza nell'area di lavoro di alcuni *riquadri*, ad esempio Soluzione, Struttura documento ed Errori:
 
 ![Riquadri della soluzione](media/customizing-the-ide-image2a.png)
 
@@ -103,7 +103,7 @@ I riquadri nascosti automaticamente sono ancorati ai lati dell'area di lavoro. S
 
 I riquadri costantemente visualizzati variano a seconda del contesto. Se si usa la finestra di progettazione visiva, ad esempio, i riquadri casella degli strumenti e griglia delle proprietà sono i più importanti, mentre durante il debug i riquadri del debugger sono utili per visualizzare lo stack e le variabili locali.
 
-Lo stato dei riquadri aperti è rappresentato da un *layout*. È possibile passare da un layout a un altro manualmente tramite il menu Vista, come illustrato di seguito, o automaticamente quando si esegue un'azione, ad esempio il debug o l'apertura di uno storyboard:
+Lo stato dei riquadri aperti è rappresentato da un *layout*. È possibile passare da un layout a un altro manualmente tramite il menu Vista, come illustrato nell'immagine seguente, o automaticamente quando si esegue un'azione, ad esempio il debug o l'apertura di uno storyboard:
 
 ![Selezione di nuovi layout](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ C'è sempre un layout attivo e qualsiasi modifica eseguita in un layout, ad esem
 
 Visual Studio per Mac consente di affiancare diversi editor di testo aperti o di visualizzare un editor in una finestra mobile scollegata.
 
-È possibile abilitare la modalità a due colonne tramite la voce di menu Vista selezionando **Vista > Colonne editor > Due colonne** o trascinando una scheda dell'editor su uno dei bordi dell'area dell'editor, come illustrato di seguito:
+È possibile abilitare la modalità a due colonne tramite la voce di menu Vista selezionando **Vista > Colonne editor > Due colonne** o trascinando una scheda dell'editor su uno dei bordi dell'area dell'editor:
 
  ![Modalità due colonne affiancate](media/customizing-the-ide-sbs.png)
 

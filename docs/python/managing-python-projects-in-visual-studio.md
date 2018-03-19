@@ -2,7 +2,7 @@
 title: Gestione di progetti per applicazioni Python in Visual Studio | Microsoft Docs
 description: Viene illustrato lo scopo dei progetti in Visual Studio, come creare e gestire i progetti per il codice Python e vengono presentati diversi modelli di progetto disponibili per Python.
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Progetti Python
 
@@ -52,13 +52,15 @@ Durante lo sviluppo dell'applicazione è in genere necessario aggiungere al prog
 A ogni progetto Python è assegnato un file di avvio, evidenziato in grassetto in Esplora soluzioni. Si tratta del file che viene eseguito all'avvio del debug (con F5 o **Debug > Avvia debug**) oppure quando si esegue il progetto nella finestra interattiva (con MAIUSC+ALT+F5 o **Debug > Esegui progetto in Python interattivo**). Per cambiarlo, fare clic con il pulsante destro del mouse sul nuovo file e scegliere **Imposta come file di avvio**.
 
 > [!Tip]
-> Se si rimuove il file di avvio selezionato da un progetto e non si seleziona un altro file, l'esecuzione del progetto comporta la visualizzazione di una finestra di output Python che verrà nascosta quasi immediatamente. Se si verifica questo comportamento, verificare che sia stato assegnato un file di avvio. Inoltre, per mantenere aperta la finestra di output, fare clic con il pulsante destro del mouse sul progetto, selezionare **Proprietà**, selezionare la scheda **Debug**, quindi aggiungere `-i` al campo **Argomenti dell'interprete**. Questo argomento fa sì che l'interprete passi in modalità interattiva dopo il completamento di un programma, mantenendo la finestra aperta fino a quando non viene premuto CTRL+Z, INVIO per chiuderla.
+> Se si rimuove il file di avvio selezionato da un progetto e non se ne seleziona uno nuovo, Visual Studio non sa quale file di Python usare per l'avvio quando si tenta di eseguire il progetto. In questo caso, Visual Studio 2017 versione 15.6 e versioni successive visualizzano un errore. Le versioni precedenti aprono una finestra di output con l'interprete Python in esecuzione oppure la finestra di output viene visualizzata ma scompare quasi immediatamente. In presenza di questi comportamenti, verificare che sia stato assegnato un file di avvio.
+>
+> Se si vuole mantenere aperta la finestra di output per qualsiasi motivo, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà**, selezionare la scheda **Debug** e quindi aggiungere `-i` al campo **Argomenti dell'interprete**. Questo argomento fa sì che l'interprete passi in modalità interattiva dopo il completamento di un programma, mantenendo la finestra aperta fino a quando non viene premuto CTRL+Z, INVIO per chiuderla.
 
 Un nuovo progetto è sempre associato all'ambiente Python globale predefinito. Per associare il progetto a un altro ambiente (inclusi gli ambienti virtuali), fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** nel progetto, scegliere **Aggiungi/Rimuovi ambienti Python** e selezionare quelli desiderati. Per cambiare l'ambiente attivo, fare clic con il pulsante destro del mouse sull'ambiente desiderato e scegliere **Attiva ambiente**, come illustrato di seguito. Per altre informazioni, vedere [Selezione di un ambiente per un progetto](selecting-a-python-environment-for-a-project.md).
 
 ![Attivazione di un ambiente per un progetto Python](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Modelli di progetto
 

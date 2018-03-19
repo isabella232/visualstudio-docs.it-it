@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 02/23/2018
+ms.date: 03/08/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,11 +13,11 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: 61dc3ab491dffcf89e318e9419e71062c2599c79
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: fffebc62b18226d50fb836144f250894b6a013fd
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio 2017
 
@@ -25,6 +25,10 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.1 | Rilascio | 8 marzo 2018 | 15.6.27428.2002 |
+| 15.6.1 Preview 1.0 | Anteprima | 8 marzo 2018 | 15.6.27428.2002 |
+| 15.6.0 | Rilascio | 5 marzo 2018 | 15.6.27428.1 |
+| 15.6.0 Preview 7.0 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 6.0 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
 | 15.0.10 | Rilascio | 21 febbraio 2018 | 15.0.26228.28 |
 | 15.5.7 | Rilascio | 20 febbraio 2018 | 15.5.27130.2036 |

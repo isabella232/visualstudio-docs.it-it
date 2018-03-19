@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro delle modifiche (Visual Studio Tools per Unity)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="3604"></a>3.6.0.4
+ Rilasciato in data 05.03.2018
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Project Generation:**
+
+    -   Correzione del rilevamento della versione di Mono.
+
+-   **Integrazione:**
+
+    -   Correzione dei problemi di tempistica per l'attivazione di 2018.1 e plug-in.
+
+## <a name="3603"></a>3.6.0.3
+ Rilasciato in data 23.02.2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Project Generation:**
+
+    -   Aggiunta del supporto per .NET Standard.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Project Generation:**
+
+    -   Correzione del rilevamento del framework di destinazione Unity.
+
+-   **Debugger:**
+
+    -   Correzione dell'interruzione per eccezioni generate al di fuori del codice utente.
+
+## <a name="3602"></a>3.6.0.2
+ Rilasciato in data 07.02.2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Integrazione:**
+
+    -   Aggiornamento della superficie dell'API UnityMessage per 2017.3.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   I progetti vengono ricaricati solo per modifiche esterne (con limitazione).
+ 
+## <a name="3601"></a>3.6.0.1
+ Rilasciato in data 24.01.2018
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione della conversione automatica dei simboli di debug da pdb a mdb.
+    
+    -   Correzione della chiamata indiretta a EditorPrefs.GetBool con effetti sul controllo durante il tentativo di modifica delle dimensioni della matrice.
+ 
+## <a name="3600"></a>3.6.0.0
+ Rilasciato in data 10.01.2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Project Generation:**
+
+    -   Aggiunta del supporto per il modello di riferimento MonoIsland 2018.1.
+
+-   **Valutazione:**
+
+    -   Aggiunta del supporto per l'identificatore $exception.
+
+-   **Debugger:**
+
+    -   Aggiunta del supporto per gli attributi DebuggerHidden/DebuggerStepThrough con il nuovo runtime di Unity.
+    
+-   **Procedure guidate:**
+
+    -   Introduzione della versione 'Latest' per le procedure guidate.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Project Generation:**
+
+    -   Correzione del calcolo del GUID di progetto per i progetti di lettore.
+
+-   **Debugger:**
+
+    -   Correzione di una race condition nella gestione degli eventi di interruzione.
+    
+-   **Procedure guidate:**
+
+    -   Aggiornamento del contesto roslyn prima dell'inserimento del metodo.
 
 ## <a name="3503"></a>3.5.0.3
  Rilasciato in data 09.01.2018

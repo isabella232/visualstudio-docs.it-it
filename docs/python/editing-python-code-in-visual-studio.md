@@ -2,7 +2,7 @@
 title: Modifica del codice Python in Visual Studio | Microsoft Docs
 description: "Per la modifica di codice Python in Visual Studio sono disponibili IntelliSense, frammenti di codice e funzionalità di navigazione, oltre a formattazione, lint e refactoring."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 
@@ -39,7 +39,11 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Sc
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Per migliorare le prestazioni, IntelliSense dipende dal database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
+IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring).
+
+Per migliorare le prestazioni, IntelliSense in **Visual Studio 2017 versione 15.5** e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017 versione 15.6** e versioni successive usano modi diversi per fornire i completamenti IntelliSense, non dipendenti dal database.
 
 ### <a name="completions"></a>Completamenti
 
@@ -110,15 +114,41 @@ Per personalizzare i colori, accedere a **Strumenti > Opzioni > Ambiente > Tipi 
 
 ## <a name="code-snippets"></a>Frammenti di codice
 
-I frammenti di codice sono parti di codice che possono essere inserite nei file digitando una scelta rapida e premendo TAB oppure tramite i comandi **Modifica > IntelliSense > Inserisci frammento di codice** **Racchiudi tra**. Ad esempio, è possibile digitare `class` seguito da TAB per generare il resto della classe. È possibile digitare sull'elenco dei nomi e delle basi, spostarsi tra i campi evidenziati tramite TAB e quindi premere INVIO per iniziare a digitare il corpo.
+I frammenti di codice sono parti di codice che possono essere inserite nei file digitando una scelta rapida e premendo TAB oppure tramite i comandi **Modifica > IntelliSense > Inserisci frammento di codice** e **Racchiudi tra**, selezionando **Python** e quindi il frammento desiderato.
 
-![Frammenti di codice](media/code-editing-code-snippets.png)
+Ad esempio, `class` è una scelta rapida per un frammento di codice che inserisce una definizione di classe. Il frammento viene visualizzato nell'elenco di completamento automatico quando si digita `class`:
 
-È possibile visualizzare i frammenti di codice disponibili in Gestione frammenti di codice (**Strumenti > Gestione frammenti di codice**), selezionando **Python** come linguaggio:
+![Frammento di codice per la scelta rapida per la classe](media/code-editing-code-snippet-class.png)
+
+Premendo TAB vien generato il resto della classe. È quindi possibile digitare sull'elenco dei nomi e delle basi, spostarsi tra i campi evidenziati tramite TAB e quindi premere INVIO per iniziare a digitare il corpo.
+
+![Evidenziazioni nelle aree di un frammento di codice da completare](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Comandi di menu
+
+Quando si usa il comando di menu **Modifica > IntelliSense > Inserisci frammento di codice**, selezionare prima di tutto "Python" e quindi selezionare un frammento di codice:
+
+![Selezione di un frammento di codice tramite il comando Inserisci frammento di codice](media/code-editing-code-snippet-insert.png)
+
+Il comando **Modifica > IntelliSense > Racchiudi tra**, in modo analogo, posiziona la selezione corrente nell'editor di testo all'interno di un elemento strutturale scelto. Ad esempio, si supponga di avere a disposizione un blocco di codice simile al seguente:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Se si seleziona questo codice e si sceglie il comando **Racchiudi tra**, viene visualizzato un elenco dei frammenti disponibili. Se si sceglie `def` nell'elenco, il codice selezionato viene posizionato all'interno di una definizione di funzione ed è possibile usare il tasto TAB per spostarsi tra il nome della funzione e gli argomenti evidenziati:
+
+![Uso del comando Racchiudi tra per i frammenti di codice](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Esaminare i frammenti di codice disponibili
+
+È possibile visualizzare i frammenti di codice disponibili in Gestione frammenti di codice. A tale scopo, usare il comando di menu **Strumenti > Gestione frammenti di codice** e quindi selezionare **Python** come linguaggio:
 
 ![Gestione frammenti di codice](media/code-editing-code-snippets-manager.png)
 
-Per creare frammenti personalizzati, vedere [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). 
+Per creare frammenti personalizzati, vedere [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
 
 Se si scrive un frammento di codice particolarmente utile e si vuole condividerlo, pubblicarlo in un gist e [segnalarlo a Microsoft](https://github.com/Microsoft/PTVS/issues). È possibile che venga incluso in una versione futura di Visual Studio.
 
