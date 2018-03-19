@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug con codice gestito utilizzando il debugger di Visual Studio | Documenti Microsoft
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 212da1e214e6157f3e072df6466436883eced8f6
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Eseguire il debug con codice gestito utilizzando il debugger di Visual Studio
 
-Il debugger di Visual Studio fornisce molte funzionalità avanzate che consentono di eseguire il debug delle applicazioni. In questo argomento fornisce un modo rapido per informazioni su alcune delle funzionalità di base.
+Il debugger di Visual Studio fornisce molte funzionalità avanzate che consentono di eseguire il debug delle applicazioni. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto 
 
-1. In Visual Studio, scegliere **File > Nuovo progetto**.
+1. In Visual Studio scegliere **File > Nuovo progetto**.
 
 2. In **Visual c#** o **Visual Basic**, scegliere **.NET Core**, quindi nel riquadro centrale scegliere **applicazione Console (.NET Core)**.
 
@@ -125,7 +125,7 @@ Il debugger di Visual Studio fornisce molte funzionalità avanzate che consenton
     ```
 
     > [!NOTE]
-    > In Visual Basic, verificare che l'oggetto di avvio è impostato su `Sub Main` (**proprietà > applicazione > oggetto di avvio**).
+    > In Visual Basic verificare che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà > Applicazione > Oggetto di avvio**).
 
 ## <a name="set-a-breakpoint"></a>Imposta punto di interruzione
 
@@ -137,30 +137,30 @@ Oggetto *punto di interruzione* è un indicatore che segnala che in Visual Studi
 
 2. A questo punto premere **F5** (oppure scegliere **Debug > Avvia debug**).
 
-    ![Un punto di interruzione](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "raggiunge un punto di interruzione")
+    ![Raggiungere un punto di interruzione](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "raggiunge un punto di interruzione")
 
     Le pause di debugger in cui è stato impostato il punto di interruzione. L'istruzione in cui viene sospesa l'esecuzione del debugger e app è indicato dalla freccia gialla. La riga con il `doWork` chiamata di funzione non è stata ancora eseguita.
 
     > [!TIP]
-    > Se si dispone di un punto di interruzione in un ciclo o una ricorsione oppure se si dispone di molti punti di interruzione che spesso un'istruzione alla volta, utilizzare un [punto di interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) per assicurarsi che il codice venga sospeso solo quando vengono soddisfatte specifiche condizioni. Questo consente di risparmiare tempo e possa inoltre semplificare il debug di problemi che sono difficili da riprodurre.
+    > Se si dispone di un punto di interruzione in un ciclo o una ricorsione, o se si dispone di molti punti di interruzione che spesso un'istruzione alla volta, utilizzare un [punto di interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) per assicurarsi che il codice venga sospeso solo quando vengono soddisfatte specifiche condizioni. Un punto di interruzione condizionale per risparmiare tempo e può anche semplificare il debug dei problemi che sono difficili da riprodurre.
 
-## <a name="navigate-code"></a>Spostarsi nel codice
+## <a name="navigate-code"></a>Spostarsi all'interno del codice
 
-Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un comando di spostamento di codice utile che è una novità di Visual Studio 2017.
+Sono disponibili diversi comandi per indicare al debugger di continuare. Viene illustrato un comando di spostamento di codice utile che è stato introdotto in Visual Studio 2017.
 
-- Mentre nel punto di interruzione in sospeso, passare il mouse sull'istruzione `c1.AddLast(20)` fino a quando il verde **esecuzione fare clic su** pulsante ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick") viene visualizzata e quindi premere i **Esecuzione fare clic su** pulsante.
+Mentre nel punto di interruzione in sospeso, passare il mouse sull'istruzione `c1.AddLast(20)` fino a quando il verde **esecuzione fare clic su** pulsante ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick") viene visualizzata e quindi premere i **Esecuzione fare clic su** pulsante.
 
-    ![Esecuzione di fare clic su](../debugger/media/dbg-qs-run-to-click-csharp.png "esecuzione fare clic su")
+![Esecuzione di fare clic su](../debugger/media/dbg-qs-run-to-click-csharp.png "esecuzione fare clic su")
 
-    L'applicazione continua l'esecuzione, la chiamata `doWork`e posiziona nella riga di codice in cui si fa clic sul pulsante.
+L'applicazione continua l'esecuzione, la chiamata `doWork`e posiziona nella riga di codice in cui si fa clic sul pulsante.
 
-    Comandi di tasti comuni utilizzati per eseguire il codice includono **F10** e **F11**. Per altre istruzioni dettagliate, vedere il [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
+Comandi di tasti comuni utilizzati per eseguire il codice includono **F10** e **F11**. Per altre istruzioni dettagliate, vedere il [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Controllare le variabili in un suggerimento dati
 
 1. Nella riga corrente di codice (contrassegnati con il puntatore di esecuzione giallo), passare il mouse su di `c1` oggetto con il mouse per visualizzare un suggerimento dati.
 
-    ![Visualizzare un suggerimento dati](../debugger/media/dbg-qs-data-tip-csharp.png "consente di visualizzare un suggerimento dati")
+    ![Visualizzare un suggerimento dati](../debugger/media/dbg-qs-data-tip-csharp.png "visualizzare un suggerimento dati")
 
     Il suggerimento dati mostra il valore corrente di `c1` variabile e consente di controllare le relative proprietà. Durante il debug, se viene visualizzato un valore che non si prevede che, probabilmente è un bug nelle righe precedenti o chiamate di codice. 
 
@@ -178,15 +178,13 @@ Se si rileva una modifica che si desidera testare nel codice durante l'esecuzion
 
     ![Modifica e continuazione](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "modifica e continuazione")
 
-    **F10** sposta in avanti l'istruzione debugger uno alla volta, ma i passaggi su funzioni, anziché eseguire un'istruzione in tali (il codice che si sceglie di ignorare viene comunque eseguita).
+    **F10** sposta in avanti l'istruzione debugger uno alla volta, ma i passaggi su funzioni anziché eseguire un'istruzione avervi (il codice che viene comunque eseguita).
 
 Per ulteriori informazioni sull'utilizzo di modifica e continuazione e alle limitazioni di funzionalità, vedere [modifica e continuazione](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Per ulteriori informazioni sul debugger, vedere [avviare il debugger e spostarsi nel codice](../debugger/getting-started-with-the-debugger.md).
-- Per ulteriori informazioni sui punti di interruzione, vedere [utilizzando i punti di interruzione](../debugger/using-breakpoints.md).
+In questa esercitazione appreso come avviare il debugger, eseguire il codice e controllare le variabili. È possibile ottenere una panoramica sulle funzionalità del debugger vengono forniti collegamenti a ulteriori informazioni.
 
-## <a name="see-also"></a>Vedere anche  
- [Debug in Visual Studio](../debugger/index.md)  
- [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)

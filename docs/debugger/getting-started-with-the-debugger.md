@@ -1,7 +1,8 @@
 ---
-title: Informazioni su come eseguire il debug con Visual Studio | Documenti Microsoft
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: Informazioni su come eseguire il debug - Visual Studio | Documenti Microsoft
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Viene illustrato come eseguire il debug con Visual Studio
 
@@ -31,9 +32,18 @@ In questo argomento vengono presentate le funzionalità del debugger di Visual S
 
 |         |         |
 |---------|---------|
-|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) debug che illustra una procedura simile. |
+|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sul debug che illustra una procedura simile. |
 
 Benché l'app demo è c#, le funzionalità sono applicabili a C++, Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se non diversamente).
+
+In questa esercitazione, sarà possibile:
+
+> [!div class="checklist"]
+> * Avviare il debugger e raggiungere punti di interruzione.
+> * Informazioni sui comandi per avanzare nel codice nel debugger
+> * Controllare le variabili nelle finestre del debugger e i suggerimenti dati
+> * Esaminare lo stack di chiamate
+> * Utilizzare l'Helper eccezioni
 
 ## <a name="start-the-debugger"></a>Avviare il debugger.
 
@@ -52,7 +62,7 @@ Benché l'app demo è c#, le funzionalità sono applicabili a C++, Visual Basic,
 
      Il progetto verrà aperto in Visual Studio. Esplora soluzioni nel riquadro destro mostra tutti i file di progetto.
 
-    ![File di Esplora soluzioni](../debugger/media/dbg-tour-solution-explorer.png "Esplora soluzioni")
+    ![I file di Esplora soluzioni](../debugger/media/dbg-tour-solution-explorer.png "Esplora soluzioni")
 
 4. Premere F5 (**Debug > Avvia debug** o **Avvia debug** pulsante ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti di Debug).
 
@@ -82,11 +92,11 @@ Per eseguire il debug, è necessario avviare l'app con il debugger collegato al 
 
 ## <a name="restart-your-app-quickly"></a>Riavviare l'app rapidamente
 
-1. Fare clic su di **riavviare** ![riavviare App](../debugger/media/dbg-tour-restart.png "RestartApp") pulsante nella barra degli strumenti Debug (Ctrl + MAIUSC + F5).
+Fare clic su di **riavviare** ![riavviare App](../debugger/media/dbg-tour-restart.png "RestartApp") pulsante nella barra degli strumenti Debug (Ctrl + MAIUSC + F5).
 
-    Quando si preme **riavviare**, consente di risparmiare tempo e l'arresto dell'app e riavviare il debugger. Il debugger sospende nel punto di interruzione prima che viene raggiunto mediante l'esecuzione di codice.
+Quando si preme **riavviare**, consente di risparmiare tempo e l'arresto dell'app e riavviare il debugger. Il debugger sospende nel punto di interruzione prima che viene raggiunto mediante l'esecuzione di codice.
 
-    Il debugger si arresta nuovamente nel punto di interruzione è impostato, nel `MainWindow` costruttore.
+Il debugger si arresta nuovamente nel punto di interruzione è impostato, nel `MainWindow` costruttore.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Esplorare il codice nel debugger utilizzando i comandi di passaggio
 
@@ -103,7 +113,7 @@ In genere, è utilizzare tasti di scelta rapida in questo caso, perché è un bu
 
 2. Premere F10 (**Debug > Esegui istruzione/routine**) più volte fino a quando il debugger si interrompe alla prima riga di codice il `OnApplicationStartup` gestore dell'evento.
 
-     ![Premere F10 per Esegui istruzione/routine codice](../debugger/media/dbg-tour-f10-step-over.png "F10 Esegui istruzione/routine")
+     ![Utilizzare F10 per Esegui istruzione/routine codice](../debugger/media/dbg-tour-f10-step-over.png "F10 Esegui istruzione/routine")
 
      F10 fa avanzare il debugger senza eseguire istruzioni di funzioni o metodi nel codice dell'app (il codice viene comunque eseguita). Premendo F10 sul `InitializeComponent` chiamata al metodo (anziché F11), viene ignorato il codice di implementazione per `InitializeComponent` (quali ad esempio se ci non stiamo interessano ora).
 
@@ -115,11 +125,11 @@ In genere, è utilizzare tasti di scelta rapida in questo caso, perché è un bu
     mainWindow.Photos.Path = Environment.CurrentDirectory + "\\images";
     ````
 
-    Fare doppio clic sulla riga di codice e scegliere **Esegui istruzione specifica**, quindi **SDKSamples.ImageSample.PhotoCollection.Path.set**
+    Fare clic sulla riga di codice e scegliere **Esegui istruzione specifica**, quindi **SDKSamples.ImageSample.PhotoCollection.Path.set**
 
-     ![Utilizzare la funzionalità specifica](../debugger/media/dbg-tour-step-into-specific.png "Esegui istruzione specifica")
+     ![Usare il passaggio nella funzionalità specifiche](../debugger/media/dbg-tour-step-into-specific.png "Esegui istruzione specifica")
 
-    Come accennato in precedenza, per impostazione predefinita, il debugger Ignora proprietà gestite e i campi, ma la **Esegui istruzione specifica** comando consente di eseguire l'override di questo comportamento. Per il momento, si vuole osservare cosa accade quando il `Path.set` esecuzioni setter di proprietà. **Esegui istruzione specifica** Ottiene per la `Path.set` codice qui.
+    Come accennato in precedenza, per impostazione predefinita, il debugger Ignora proprietà gestite e i campi, ma la **Esegui istruzione specifica** comando consente di eseguire l'override di questo comportamento. Per il momento, si vuole osservare cosa accade quando il `Path.set` esecuzioni setter di proprietà. **Esegui istruzione specifica** Ottiene microsecondi, necessario per il `Path.set` codice qui.
 
      ![risultato dell'istruzione specifica](../debugger/media/dbg-tour-step-into-specific-2.png "Esegui istruzione specifica")
 
@@ -127,14 +137,14 @@ In genere, è utilizzare tasti di scelta rapida in questo caso, perché è un bu
 
 5. Passare il mouse su di `Update` metodo fino a quando il verde **eseguire fare clic su** pulsante ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick") viene visualizzata a sinistra.
 
-     ![Utilizzare l'esecuzione di fare clic su funzionalità](../debugger/media/dbg-tour-run-to-click-2.png "eseguire fare clic su")
+     ![Utilizzare l'esecuzione a fare clic su funzionalità](../debugger/media/dbg-tour-run-to-click-2.png "eseguire fare clic su")
 
     >  [!NOTE] 
     > Il **eseguire fare clic su** pulsante è stato introdotto in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se non viene visualizzato il pulsante freccia verde, utilizzare F11 in questo esempio per far avanzare il debugger.
 
 6. Fare clic su di **eseguire fare clic su** pulsante ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
-    Tramite questo pulsante è simile all'impostazione di un punto di interruzione temporanea. **Eseguire fino a fare clic su** è utile per operare su rapidamente all'interno di un'area visibile del codice dell'app (è possibile fare clic in qualsiasi file aperto).
+    Tramite questo pulsante è simile all'impostazione di un punto di interruzione temporanea. **Esegui fino al clic** è utile per operare su rapidamente all'interno di un'area visibile del codice dell'app (è possibile fare clic in qualsiasi file aperto).
 
     Il debugger avanza fino il `Update` implementazione del metodo.
 
@@ -148,20 +158,20 @@ In genere, è utilizzare tasti di scelta rapida in questo caso, perché è un bu
 
 ## <a name="examine-the-call-stack"></a>Esaminare lo stack di chiamate
 
-- Durante la sospensione nel `Update` (metodo), fare clic su di **Stack di chiamate** finestra, per impostazione predefinita è aperto nel riquadro inferiore destro.
+Durante la sospensione nel `Update` (metodo), fare clic su di **Stack di chiamate** finestra, per impostazione predefinita è aperto nel riquadro inferiore destro.
 
-     ![Esaminare lo stack di chiamate](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Esaminare lo stack di chiamate](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    Il **Stack di chiamate** finestra Mostra l'ordine in cui sono chiamate i metodi e funzioni. La riga superiore viene illustrata la funzione corrente (il `Update` metodo nell'applicazione di presentazione). La seconda riga mostra che `Update` è stato chiamato dal `Path.set` e così via.
+Il **Stack di chiamate** finestra Mostra l'ordine in cui sono chiamate i metodi e funzioni. La riga superiore viene illustrata la funzione corrente (il `Update` metodo nell'applicazione di presentazione). La seconda riga mostra che `Update` è stato chiamato dal `Path.set` e così via.
 
-    >  [!NOTE]
-    > Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in un IDE come Eclipse.
+>  [!NOTE]
+> Il **Stack di chiamate** finestra è simile alla prospettiva di Debug in un IDE come Eclipse.
 
-    Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
+Lo stack di chiamate è un ottimo modo per esaminare e comprendere il flusso di esecuzione di un'app.
 
-    È possibile fare doppio clic su una riga di codice per passare a esaminare il codice sorgente e che viene modificato anche l'ambito corrente in esame dal debugger. Questa azione non fa avanzare il debugger.
+È possibile fare doppio clic su una riga di codice per passare a esaminare il codice sorgente e che viene modificato anche l'ambito corrente in esame dal debugger. Questa azione non fa avanzare il debugger.
 
-    È inoltre possibile utilizzare i menu di scelta rapida dal **Stack di chiamate** finestra per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specificate, spostare il debugger usando **Esegui fino al cursore**e passare a esaminare il codice sorgente. Per ulteriori informazioni, vedere [procedura: esaminare lo Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+È inoltre possibile utilizzare i menu di scelta rapida dal **Stack di chiamate** finestra per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specificate, spostare il debugger usando **Esegui fino al cursore**e passare a esaminare il codice sorgente. Per ulteriori informazioni, vedere [procedura: esaminare lo Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Esci da istruzione
 
@@ -214,7 +224,7 @@ Si supponga di avere esaminando il `Update` metodo Data.cs e si desidera ottener
 
 3. A questo punto, passare il mouse sopra l'oggetto File (`f`) e viene visualizzato il valore della proprietà predefinito, il nome del file `market 031.jpg`.
 
-     ![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "consente di visualizzare un suggerimento dati")
+     ![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "visualizzare un suggerimento dati")
 
 4. Espandere l'oggetto per visualizzare tutte le relative proprietà, ad esempio il `FullPath` proprietà.
 
@@ -262,7 +272,7 @@ Si supponga di avere esaminando il `Update` metodo Data.cs e si desidera ottener
 
 1. Nella finestra dell'applicazione in esecuzione, eliminare il testo di **percorso** casella di input e selezionare il **modifica** pulsante.
 
-     ![Un'eccezione generata](../debugger/media/dbg-tour-cause-an-exception.png "generare un'eccezione")
+     ![Generare un'eccezione generata](../debugger/media/dbg-tour-cause-an-exception.png "generare un'eccezione")
 
      L'applicazione genera un'eccezione e il debugger consente di passare alla riga di codice che ha generato l'eccezione.
      
@@ -283,7 +293,9 @@ Si supponga di avere esaminando il `Update` metodo Data.cs e si desidera ottener
 
 Per ulteriori informazioni sulle funzionalità del debugger, vedere [Debugger suggerimenti e consigli](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="next-steps"></a>Passaggi successivi
 
-[Debug in Visual Studio](../debugger/index.md)  
-[Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+In questa esercitazione appreso come avviare il debugger, eseguire il codice e controllare le variabili. È possibile ottenere una panoramica sulle funzionalità del debugger vengono forniti collegamenti a ulteriori informazioni.
+
+> [!div class="nextstepaction"]
+> [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
