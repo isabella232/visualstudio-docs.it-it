@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Gli strumenti di sviluppo di Office in Visual Studio non supportano le cartelle di lavoro condivise.  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Informazioni sugli elementi host Workbook nei progetti di componente aggiuntivo VSTO  
- Nei progetti di componente aggiuntivo VSTO è possibile generare un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> in fase di esecuzione per qualsiasi cartella di lavoro aperta in Excel. Per generare un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host, utilizzare il metodo GetVstoObject. Per altre informazioni, vedere [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Nei progetti di componente aggiuntivo VSTO è possibile generare un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> in fase di esecuzione per qualsiasi cartella di lavoro aperta in Excel. Per generare un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host, utilizzare il metodo GetVstoObject. Per altre informazioni, vedere [Estensione in fase di esecuzione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate ed esempi di sviluppo di office](../vsto/office-development-samples-and-walkthroughs.md)   

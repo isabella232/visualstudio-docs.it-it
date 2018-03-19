@@ -53,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Combinazione di VBA con le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)   
  [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md)   
