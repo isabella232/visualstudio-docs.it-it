@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,11 +17,12 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, system requirements
 - debugging ASP.NET Web applications, security requirements
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
-caps.latest.revision: "38"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
+ms.workload:
+- aspnet
 ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
 ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
@@ -46,7 +48,7 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
  > [!IMPORTANT]
  > A partire da Windows Server 2008 R2, è consigliabile utilizzare il [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
   
- Il nome del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Il nome del processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni vedere [Procedura: individuare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
  È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)**. Per ulteriori informazioni, vedere [procedura: eseguire il lavoro processo con un Account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
