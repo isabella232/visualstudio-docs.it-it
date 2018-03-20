@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 0e3fb356c00b3e9943ba8aff696283d4c5339e18
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -30,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- È possibile creare un riquadro azioni solo in una personalizzazione a livello di documento per Word o Excel. Non è possibile cerare un riquadro azioni in un componente aggiuntivo VSTO. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ È possibile creare un riquadro azioni solo in una personalizzazione a livello di documento per Word o Excel. Non è possibile cerare un riquadro azioni in un componente aggiuntivo VSTO. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e di applicazione di Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Il riquadro azioni è diverso dai riquadri attività. I riquadri attività personalizzati sono associati all'applicazione e non a un documento specifico. È possibile creare riquadri attività personalizzati in componenti aggiuntivi VSTO per alcune applicazioni di Microsoft Office. Per ulteriori informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  

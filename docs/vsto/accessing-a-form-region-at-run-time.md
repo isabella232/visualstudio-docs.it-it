@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 70e9a970251aa5b95cff5983f5e2ce5e0c804a61
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 |Si applica a|  
 |----------------|  
-|Le informazioni fornite in questo argomento sono valide solo per i tipi di progetto e le versioni di Microsoft Office seguenti. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo di progetto**<br /><br /> -Progetti di componente aggiuntivo VSTO<br /><br /> **Versione di Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
+|Le informazioni fornite in questo argomento sono valide solo per i tipi di progetto e le versioni di Microsoft Office seguenti. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo di progetto**<br /><br /> -Progetti di componente aggiuntivo VSTO<br /><br /> **Versione di Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
   
  Usare la classe `Globals` per accedere alle aree del modulo da qualsiasi punto del progetto Outlook. Per ulteriori informazioni sul `Globals` classe, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
