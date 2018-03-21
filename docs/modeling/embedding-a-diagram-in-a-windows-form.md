@@ -11,11 +11,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a65f2237b3fb28569a872c2e3926a2b88e11473
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab83ba64ff8b34c19e7f10aada74ca3eec1441f6
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporamento di un diagramma in Windows Form
 È possibile incorporare un diagramma DSL in un controllo Windows, che viene visualizzata nella [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finestra.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 02/09/2018
       panel1.Controls.Add(content);  
       this.docView = docView;  
     }  
-    private MyDSLDSLDocView docView;  
+    private MyDSLDocView docView;  
   
     ```  
   
@@ -153,5 +153,5 @@ ms.lasthandoff: 02/09/2018
      Si noti che la casella di riepilogo Mostra un elenco degli elementi nel modello e che sia corretto dopo qualsiasi aggiunta o eliminazione e dopo l'annullamento e ripristino.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
