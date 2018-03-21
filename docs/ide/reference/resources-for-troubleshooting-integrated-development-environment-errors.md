@@ -94,31 +94,35 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 5466d764413283cb3f33525f12d7782c02ce6925
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: 6821edc51dced92b40386eb270546456654fbba3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
-Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute nel messaggio di errore non sono sufficienti a risolvere il problema, è possibile consultare altre risorse, ad esempio gli articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.  
 
-## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base  
- È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile accedere agli articoli KB dal sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).  
+Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute nel messaggio di errore non sono sufficienti a risolvere il problema, è possibile consultare altre risorse, ad esempio gli articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.
 
-## <a name="the-developer-community"></a>La community degli sviluppatori  
- I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei newsgroup per vedere se altri utenti hanno pubblicato qualcosa sullo stesso problema.  
+## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base
 
- È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922).  
+È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile accedere agli articoli KB dal sito Web del [Supporto tecnico Microsoft](https://support.microsoft.com).
 
-## <a name="product-support"></a>Supporto tecnico  
- Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).
+## <a name="the-developer-community"></a>La community degli sviluppatori
+
+I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei newsgroup per vedere se altri utenti hanno pubblicato qualcosa sullo stesso problema.
+
+È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities).
+
+## <a name="product-support"></a>Supporto tecnico
+
+Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).
 
  ## <a name="see-also"></a>Vedere anche
- * [Risoluzione degli errori del proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)
+
+* [Risoluzione degli errori del proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

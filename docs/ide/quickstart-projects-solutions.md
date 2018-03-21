@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Guida introduttiva: Progetti e soluzioni
 
@@ -185,10 +185,10 @@ La guida introduttiva è stata completata. Ora può risultare utile vedere altre
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)  
-[Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)  
-[Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)  
-[Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
+- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
+- [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)
+- [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
