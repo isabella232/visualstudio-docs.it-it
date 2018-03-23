@@ -1,3 +1,11 @@
-- name: Documenti
+- name: Docs
   tocHref: /
   topicHref: /
+  items:
+    - name: Visual Studio
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/
+      items:
+        - name: Ambiente connesso
+          tocHref: /visualstudio/connected-environment/
+          topicHref: /visualstudio/connected-environment/
