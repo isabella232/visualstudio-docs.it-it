@@ -3,24 +3,24 @@ title: Visualizzare uno snapshot tramite il passaggio di IntelliTrace-back - Vis
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
 ms.date: 12/06/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9602aa5c75f9572f2ca0f5cd8ef3426cde8ed96a
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visualizzazione di snapshot tramite IntelliTrace passaggio-back in Visual Studio
 
@@ -72,8 +72,6 @@ In questa esercitazione, sarà possibile:
 2. Per tornare all'esecuzione in tempo reale, scegliere **continua (F5)** oppure fare clic su di **tornare al debug attivo** collegamento sulla barra informazioni. 
 
 3. È inoltre possibile visualizzare uno snapshot dal **eventi** scheda. A tale scopo, selezionare un evento con uno snapshot e fare clic su **attivare debug cronologico**.
-
-    È anche possibile fare clic sull'icona della fotocamera per attivare il debug cronologico.
 
     ![Attiva debug cronologico su un evento](../debugger/media/intellitrace-activate-historical-debugging.png "attivare debug cronologico su un evento")
 
