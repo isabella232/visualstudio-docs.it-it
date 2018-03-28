@@ -1,11 +1,11 @@
 ---
 title: Utilizzare i modelli nel processo di sviluppo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-modeling
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d9b5632831c1d336f359aa4e4468da1543c73
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: d5e75a3a56ddc272f296ef5cca5afcfd360d4ba1
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 
@@ -141,11 +141,11 @@ Diversi tipi di diagramma sono utili per descrivere la progettazione a diversi l
 
 ## <a name="see-also"></a>Vedere anche
 
-[Utilizzare i modelli in fase di sviluppo Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) 
-[creare modelli per l'app](../modeling/create-models-for-your-app.md) 
-[modellare i requisiti utente](../modeling/model-user-requirements.md) 
-[modellare l'applicazione architettura](../modeling/model-your-app-s-architecture.md) 
-[sviluppare test da un modello](../modeling/develop-tests-from-a-model.md) 
+[Utilizzare i modelli in fase di sviluppo Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+[creare modelli per l'app](../modeling/create-models-for-your-app.md)
+[modellare i requisiti utente](../modeling/model-user-requirements.md)
+[modellare l'applicazione architettura](../modeling/model-your-app-s-architecture.md)
+[sviluppare test da un modello](../modeling/develop-tests-from-a-model.md)
 [strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
