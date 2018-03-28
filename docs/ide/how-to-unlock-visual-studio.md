@@ -1,23 +1,24 @@
 ---
 title: 'Procedura: Sbloccare Visual Studio | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 07/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedura: Sbloccare Visual Studio
 
@@ -74,4 +75,3 @@ Se non si immettono di nuovo le credenziali, il token inizia a diventare obsolet
 ## <a name="see-also"></a>Vedere anche
 
 * [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Accesso a Visual Studio)
- 
