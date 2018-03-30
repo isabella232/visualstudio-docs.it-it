@@ -1,29 +1,30 @@
 ---
-title: "Panoramica delle funzionalità del debugger | Documenti Microsoft"
-ms.custom: H1HackMay2017
-ms.date: 05/19/2017
-ms.reviewer: 
-ms.suite: 
+title: 'Il debugger di Visual Studio Tour delle funzionalità: | Documenti Microsoft'
+description: Per una presentazione del debugger di Visual Studio
+ms.custom: mvc
+ms.date: 03/27/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 2e031716c68d44a9d08a4b074c5dcb58d5553041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="feature-tour-of-the-visual-studio-debugger"></a>Panoramica di funzionalità del Debugger di Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Guida introduttiva: Analizzare innanzitutto il Debugger di Visual Studio
 
 In questo argomento vengono presentate le funzionalità del debugger di Visual Studio. Se si desidera seguire la procedura per l'apertura di un'app in Visual Studio, è possibile farlo oppure è possibile seguire insieme a un'app di esempio usando il [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
 
@@ -68,17 +69,17 @@ Come accennato in precedenza, per impostazione predefinita, il debugger Ignora p
 
 Fare clic su una proprietà o campo e scegliere **Esegui istruzione specifica**, quindi scegliere una delle opzioni disponibili.
 
-![Esegui istruzione specifica](../debugger/media/dbg-tour-step-into-specific.png "istruzione specifica")
+![Esegui istruzione specifici](../debugger/media/dbg-tour-step-into-specific.png "istruzione specifica")
 
 In questo esempio, **Esegui istruzione specifica** ci Ottiene il codice per `Path.set`.
 
-![Esegui istruzione specifica](../debugger/media/dbg-tour-step-into-specific-2.png "istruzione specifica")
+![Esegui istruzione specifici](../debugger/media/dbg-tour-step-into-specific-2.png "istruzione specifica")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Eseguire fino a un punto nel codice rapidamente usando il mouse
 
 Quando nel debugger, passare il mouse su una riga di codice fino a quando il **eseguire fare clic su** pulsante (esecuzione qui) ![eseguire fare clic su](../debugger/media/dbg-tour-run-to-click.png "RunToClick") viene visualizzata a sinistra.
 
-![Eseguire fino a fare clic su](../debugger/media/dbg-tour-run-to-click-2.png "eseguire fare clic su")
+![Esegui fino al clic](../debugger/media/dbg-tour-run-to-click-2.png "eseguire fare clic su")
 
 >  [!NOTE] 
 > Il **eseguire fare clic su** pulsante (esecuzione qui) è una novità di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -127,7 +128,7 @@ Ora che si conoscono le varie leggermente, si dispone di una buona opportunità 
 
 Durante la pausa nel debugger, passare il mouse su un oggetto con il mouse e viene visualizzato il valore della proprietà predefinito (in questo esempio, il nome del file `market 031.jpg` è il valore della proprietà predefinito).
 
-![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "consente di visualizzare un suggerimento dati")
+![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "visualizzare un suggerimento dati")
 
 Espandere l'oggetto per visualizzare tutte le relative proprietà (ad esempio il `FullPath` proprietà in questo esempio).
 
@@ -209,25 +210,25 @@ Per ulteriori informazioni, vedere [Debug in tempo reale delle App ASP.NET utili
 
 ## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Visualizzare gli snapshot con IntelliTrace. passaggio-back (Visual Studio Enterprise)
 
-**Passaggio di IntelliTrace-back** automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e il debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
+**Passaggio di IntelliTrace-back** automaticamente un'istantanea dell'applicazione in ogni punto di interruzione e debugger evento di passaggio. Gli snapshot registrati consentono di tornare indietro ai punti di interruzione o ai passaggi precedenti e visualizzare stati passati dell'applicazione. La funzionalità per tornare indietro di IntelliTrace può consentire di risparmiare tempo quando si vuole visualizzare uno stato precedente dell'applicazione senza riavviare il debug o ricreare lo stato dell'app desiderato.
 
 È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti passo indietro e Avanti")  
+![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti con le versioni precedenti di passaggio e l'inoltro")  
 
 Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 ## <a name="more-features-to-look-at"></a>Più funzionalità da esaminare
 
--   [Suggerimenti e consigli del debugger](../debugger/debugger-tips-and-tricks.md) informazioni su come aumentare la produttività con il debugger.
+-   [Suggerimenti e trucchi del debugger](../debugger/debugger-tips-and-tricks.md) informazioni su come aumentare la produttività con il debugger.
 
 -   [Modifica e continuazione](../debugger/edit-and-continue.md) per un sottoinsieme di lingue (c#, C++, Visual Basic), la funzionalità Modifica e continuazione consente di modificare il codice all'interno di una sessione di debug.
 
--   [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md) viene descritto come eseguire il debug di applicazioni multithreading. 
+-   [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md) viene descritto come eseguire il debug delle applicazioni multithreading. 
 
--   [Debug remoto](../debugger/remote-debugging.md) viene descritto come eseguire il debug delle applicazioni in esecuzione su altri computer o dispositivi. 
+-   [Debug remoto](../debugger/remote-debugging.md) viene descritto come eseguire il debug delle applicazioni in esecuzione in altri computer o dispositivi. 
   
--   [IntelliTrace](../debugger/intellitrace.md) viene descritta la funzionalità di IntelliTrace in Visual Studio Enterprise. È possibile utilizzare il record e traccia cronologia di esecuzione del codice.
+-   [IntelliTrace](../debugger/intellitrace.md) descrive la funzionalità di IntelliTrace in Visual Studio Enterprise. È possibile utilizzare il record e traccia cronologia di esecuzione del codice.
 
 -   [Utilizzo della rete](../profiling/network-usage.md) descrive uno strumento di profilatura che è possibile utilizzare per eseguire il debug di servizi web e altre risorse di rete in Windows le app UWP (Universal). Utilizzare lo strumento per esaminare i payload.
 

@@ -2,31 +2,31 @@
 title: Introduzione al Debugger di Visual Studio | Documenti Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Iniziare con il Debugger di Visual Studio
 Il debugger di Visual Studio è facile da utilizzare in qualsiasi linguaggio. Di seguito viene illustrato come eseguire il debug di un semplice programma c#, ma è possibile applicare gli stessi passaggi al codice in altri linguaggi come C++ e JavaScript.
 
 Per guardare un video che illustra la funzionalità simili, vedere [Introduzione al Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Debug di un progetto c# di base  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Eseguire il debug di un progetto c# di base  
  Iniziamo con una semplice applicazione console c# (**File > Nuovo > progetto**, quindi selezionare **Visual c#** e quindi **applicazione Console**). Se non si è mai lavorato con Visual Studio in precedenza, vedere [procedura dettagliata: creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Il **Main** metodo semplicemente aggiunge 1 a una variabile integer 10 volte e stampa il risultato nella console:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Per ulteriori informazioni sui punti di interruzione, vedere [utilizzando i punti di interruzione](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Controllare le variabili  
+##  <a name="BKMK_Inspect_Variables"></a> Controllare le variabili  
  Debug spesso riguarda la ricerca di variabili che non contengono i valori desiderati in un momento specifico. Verranno illustrati alcuni dei metodi che è possibile controllare le variabili.  
   
  Avviare di nuovo il debug. L’esecuzione si interrompe prima dell’esecuzione del codice `Console.WriteLine`. È possibile causarne l'esecuzione procedendo (fare clic su **Debug > Esegui istruzione/routine** o **F10**). In questo caso è possibile scegliere **Esegui istruzione** (**F11**) si otterrebbe lo stesso risultato è la differenza sarà spiegata in un secondo momento. La riga con l’ultima parentesi graffa del metodo dovrebbe essere diventata gialla. Esaminare la finestra Console. Dovrebbe essere **10**.  
@@ -62,7 +62,7 @@ static void Main(string[] args)
   
  Sotto la finestra del codice dovrebbe essere il **Auto**, **variabili locali**, e **espressioni di controllo** windows. Tali finestre mostrano i valori correnti delle variabili al momento dell’esecuzione. Entrambi i **Auto** e **variabili locali** Mostra windows **testInt** con un valore di **10**.  
   
- ![Durante il debug nella finestra Auto](../debugger/media/getstartedwindows.png "GetStartedWindows")  
+ ![Auto (finestra) durante il debug](../debugger/media/getstartedwindows.png "GetStartedWindows")  
   
  Per ulteriori informazioni su queste finestre, vedere [finestra variabili locali e Auto](../debugger/autos-and-locals-windows.md).  
   
@@ -88,7 +88,7 @@ private static void Method1()
   
  Impostare un punto di interruzione nella chiamata `Method1();` nel metodo Main e avviare il debug. Quando si interrompe l'esecuzione, fare clic su **Debug > Esegui istruzione** (o **Esegui istruzione** sulla barra degli strumenti o **F11**). L’esecuzione di interrompe di nuovo alla prima parentesi graffa in Method1():  
   
- ![L'esecuzione di istruzioni nel codice](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
+ ![Eseguire un'istruzione nel codice](../debugger/media/getstartedstepinto.png "GetStartedStepInto")  
   
  Arrestare il debug e avviare di nuovo quando l'esecuzione si interrompe al punto di interruzione, fare clic su **Debug > Esegui istruzione/routine** (o **Esegui istruzione/routine** sulla barra degli strumenti o **F10**). L'esecuzione si interrompe nuovamente in `Console.WriteLine("end");`.  
   

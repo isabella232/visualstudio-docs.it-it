@@ -2,12 +2,12 @@
 title: Introduzione al debug di applicazioni multithreading con | Documenti Microsoft
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,24 +17,24 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Introduzione al debug di un'applicazione multithreading in Visual Studio
 Visual Studio fornisce numerosi strumenti e gli elementi dell'interfaccia utente per eseguire il debug di applicazioni multithreading. In questa esercitazione viene illustrato come utilizzare gli indicatori dei thread, il **stack in parallelo** finestra il **espressioni di controllo parallelo** finestra punti di interruzione condizionali e i punti di interruzione di filtro. In questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di acquisire familiarità con le funzionalità per il debug di applicazioni multithreading.
 
 |         |         |
 |---------|---------|
-|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) con multithreading di debug che illustra una procedura simile. |
+|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |    [Guardare un video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sul debug con multithreading che illustra una procedura simile. |
 
 Altri argomenti forniscono informazioni aggiuntive sull'utilizzo di altri strumenti di debug con multithreading:
 
@@ -289,7 +289,7 @@ Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazion
 
     I valori per la variabile di conteggio per ogni thread vengono visualizzati nella finestra. (Se non viene visualizzato questo quantità di informazioni ancora, provare a premere F11 alcune altre volte per spostare l'esecuzione dei thread nel debugger.)
 
-    ![Finestra Espressioni di controllo parallelo](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![Finestra Espressioni di controllo in parallelo](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
 4. Fare doppio clic su una delle righe nella finestra per visualizzare le opzioni disponibili.
 
@@ -319,7 +319,7 @@ Nel **stack in parallelo** finestra, è possibile passare tra una visualizzazion
 
 Per rimuovere i flag dei thread, è possibile fare doppio clic su uno o più thread con flag nel **espressioni di controllo parallelo** finestra e scegliere **Rimuovi flag**.
 
-## <a name="bkmk_freeze"></a>Blocco e sblocco dei esecuzione dei thread 
+## <a name="bkmk_freeze"></a> Blocco e sblocco dei esecuzione dei thread 
 
 > [!TIP]
 > È possibile bloccare e sbloccare (sospendere e riprendere) i thread per controllare l'ordine in cui i thread di eseguono operazioni. Ciò consente di risolvere i problemi di concorrenza, ad esempio i deadlock e race condition.
@@ -340,7 +340,7 @@ Per rimuovere i flag dei thread, è possibile fare doppio clic su uno o più thr
 
     L'app può anche creare un'istanza di alcuni nuovi thread. Si noti che tutti i nuovi thread senza flag e non sono bloccati.
 
-## <a name="bkmk_follow_a_thread"></a>Seguire un Thread singolo con punti di interruzione condizionali
+## <a name="bkmk_follow_a_thread"></a> Seguire un Thread singolo con punti di interruzione condizionali
 
 In alcuni casi, può essere utile seguire l'esecuzione di un singolo thread nel debugger. A tale scopo, è possibile bloccare i thread che non si è interessati in, ma in alcuni scenari è consigliabile seguire un singolo thread senza bloccare altri thread (per riprodurre un particolare, ad esempio bug). Per eseguire un thread senza bloccare altri thread, è necessario evitare l'interruzione del codice, ad eccezione nel thread in cui si è interessati. È possibile farlo impostando un [punto di interruzione condizionale](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
@@ -383,5 +383,5 @@ In alcuni casi, può essere utile seguire l'esecuzione di un singolo thread nel 
 - Vedere [procedura: utilizzare la finestra Espressioni di controllo parallelo](../debugger/how-to-use-the-parallel-watch-window.md) 
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Il debug di applicazioni a thread multipli](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)

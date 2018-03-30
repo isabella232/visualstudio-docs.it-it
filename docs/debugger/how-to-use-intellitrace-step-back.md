@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visualizzazione di snapshot tramite IntelliTrace passaggio-back in Visual Studio
 
@@ -39,11 +39,11 @@ In questa esercitazione, sarà possibile:
 
 1. Aprire il progetto in Visual Studio Enterprise.
 
-1. Passare a **strumenti > Opzioni > IntelliTrace** impostazioni, quindi selezionare l'opzione **IntelliTrace eventi e gli snapshot**. 
+1. Aprire **Tools** > **opzioni** > **IntelliTrace** impostazioni, quindi selezionare l'opzione **IntelliTrace eventi e gli snapshot** . 
 
     ![Abilitare la modalità di eventi IntelliTrace e snapshot](../debugger/media/intellitrace-enable-snapshots.png "modalità attivare eventi di IntelliTrace e snapshot")
 
-1. Impostare uno o più punti di interruzione nel progetto e avviare il debug (premere **F5**), o avviare il debug, l'esecuzione passo passo del codice (**F10** o **F11**).
+1. Nel progetto, impostare uno o più punti di interruzione e avviare il debug (premere **F5**), o avviare il debug, l'esecuzione passo passo del codice (**F10** oppure **F11**).
 
     IntelliTrace accetta uno snapshot del processo dell'applicazione nel debugger di ogni evento di passaggio e punto di interruzione. Questi eventi vengono registrati nella **eventi** nella scheda il **strumenti di diagnostica** finestra, insieme agli altri eventi di IntelliTrace. Per aprire questa finestra, scegliere **Debug** > **Windows** > **Mostra strumenti di diagnostica**.
 

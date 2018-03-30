@@ -1,12 +1,13 @@
 ---
 title: Panoramica della distribuzione - Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +22,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Innanzitutto in fase di distribuzione in Visual Studio
 
 Mediante la distribuzione, un'applicazione, un servizio o un componente viene distribuito per l'installazione in altri computer, dispositivi, server o nel cloud. Il metodo appropriato viene scelto in Visual Studio per il tipo di distribuzione necessaria. (Molti tipi di app supportano altri strumenti di distribuzione, ad esempio la distribuzione della riga di comando o NuGet che non sono descritte di seguito).
 
@@ -40,7 +42,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 ### <a name="deploy-to-local-folder"></a>Distribuire nella cartella locale
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, e **.NET Core**: utilizzare lo strumento di pubblicazione per distribuire a una variabile locale cartella. Le opzioni disponibili dipendono dal tipo di app. In Esplora risorse, mouse sul progetto e scegliere **pubblica**, quindi scegliere **cartella**. Per ulteriori informazioni, vedere [Distribuisci in una cartella locale](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: utilizzare lo strumento di pubblicazione per distribuire in una cartella locale. Le opzioni disponibili dipendono dal tipo di app. In Esplora risorse, mouse sul progetto e scegliere **pubblica**, quindi scegliere **cartella**. Per ulteriori informazioni, vedere [Distribuisci in una cartella locale](quickstart-deploy-to-local-folder.md).
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
@@ -48,7 +50,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Pubblicazione sul Web o di distribuire in una condivisione di rete
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, e **.NET Core**: È possibile utilizzare lo strumento di pubblicazione per distribuire un sito Web tramite FTP o distribuzione Web. Per ulteriori informazioni, vedere [distribuzione a un sito web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: È possibile utilizzare lo strumento di pubblicazione per distribuire un sito Web con FTP o distribuzione Web. Per ulteriori informazioni, vedere [distribuzione a un sito web](quickstart-deploy-to-a-web-site.md).
 
     In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nello strumento di pubblicazione, scegliere l'opzione desiderato e quindi seguire i passaggi di configurazione.
 
@@ -62,7 +64,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 ### <a name="publish-to-azure"></a>Pubblicare in Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node.js e .NET Core** applicazioni web: È possibile utilizzare lo strumento di pubblicazione per distribuire rapidamente applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nella finestra di dialogo Pubblica scegliere **servizio App di Microsoft Azure** o **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
+- **ASP.NET, ASP.NET Core, Python, Node. js e .NET Core** le applicazioni web: È possibile utilizzare lo strumento di pubblicazione per velocizzare la distribuzione di applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nella finestra di dialogo Pubblica scegliere **servizio App di Microsoft Azure** o **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
 
     ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-azure.png "scegliere servizio App di Azure")
 
@@ -79,7 +81,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 Da Visual Studio, è possibile creare pacchetti di app per la distribuzione in Microsoft Store.
 
-- **UWP**: È possibile pacchetto dell'app e distribuirlo utilizzando le voci di menu. Per ulteriori informazioni, vedere [il pacchetto di un'app UWP tramite Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UWP**: È possibile creare un pacchetto dell'app e distribuirlo utilizzando le voci di menu. Per ulteriori informazioni, vedere [il pacchetto di un'app UWP tramite Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Creare un pacchetto dell'app](../deployment/media/feature-tour-create-app-package.jpg)
 
