@@ -1,17 +1,20 @@
 ---
 title: IScriptEntry::GetRange | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IScriptEntry.GetRange
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptEntry::GetRange
+apiname:
+- IScriptEntry.GetRange
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptEntry::GetRange
 ms.assetid: 3ac18f0a-b470-4f4d-b8f5-2da3fdef74f1
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

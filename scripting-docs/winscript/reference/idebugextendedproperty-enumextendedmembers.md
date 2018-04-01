@@ -1,17 +1,20 @@
 ---
 title: IDebugExtendedProperty::EnumExtendedMembers | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugExtendedProperty.EnumExtendedMembers
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugExtendedProperty::EnumExtendedMembers
+apiname:
+- IDebugExtendedProperty.EnumExtendedMembers
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugExtendedProperty::EnumExtendedMembers
 ms.assetid: 27cdb091-da4e-44d2-a631-31ae00468b98
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

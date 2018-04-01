@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IScriptScriptlet | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IScriptScriptlet interface
+helpviewer_keywords:
+- IScriptScriptlet interface
 ms.assetid: b9981908-a337-4228-864c-c741f111ab2d
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptSite::GetDocVersionString | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptSite.GetDocVersionString
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSite_GetDocVersionString
+apiname:
+- IActiveScriptSite.GetDocVersionString
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSite_GetDocVersionString
 ms.assetid: ab3f892d-06d3-4cb5-9ea5-20c4a1e518cd
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

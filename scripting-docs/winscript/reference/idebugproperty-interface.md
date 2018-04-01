@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IDebugProperty | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IDebugProperty interface
+helpviewer_keywords:
+- IDebugProperty interface
 ms.assetid: 7e8f5341-23ef-4029-814d-f5c2307b9203
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptParse::ParseScriptText | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptParse.ParseScriptText
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptParse_ParseScriptText
+apiname:
+- IActiveScriptParse.ParseScriptText
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptParse_ParseScriptText
 ms.assetid: 2d237d6c-cc65-415b-8808-72791304a136
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

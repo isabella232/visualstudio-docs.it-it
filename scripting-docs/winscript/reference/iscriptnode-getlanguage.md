@@ -1,17 +1,20 @@
 ---
 title: IScriptNode::GetLanguage | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IScriptNode.GetLanguage
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptNode::GetLanguage
+apiname:
+- IScriptNode.GetLanguage
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptNode::GetLanguage
 ms.assetid: 089715fd-6746-474e-94ed-2e57ee4bc0da
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptStats::GetStatEx | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptStats.GetStatEx
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptStats::GetStatEx
+apiname:
+- IActiveScriptStats.GetStatEx
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptStats::GetStatEx
 ms.assetid: f526f51d-8ab5-49ef-a8f7-ae0ac1cb46e4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IDebugExpression::Start | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugExpression.Start
-apilocation: jscript.dll
-helpviewer_keywords: IDebugExpression::Start
+apiname:
+- IDebugExpression.Start
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugExpression::Start
 ms.assetid: a7af3470-62b5-40f0-987d-63b6b22538b3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: Interfaccia IEnumDebugExtendedPropertyInfo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IEnumDebugExtendedPropertyInfo
-apilocation: scrobj.dll
-helpviewer_keywords: IEnumDebugExtendedPropertyInfo interface
+apiname:
+- IEnumDebugExtendedPropertyInfo
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IEnumDebugExtendedPropertyInfo interface
 ms.assetid: 316d5aa7-c949-48fc-89c1-239f00566cae
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

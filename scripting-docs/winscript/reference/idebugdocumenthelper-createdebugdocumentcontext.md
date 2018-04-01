@@ -1,17 +1,20 @@
 ---
 title: IDebugDocumentHelper::CreateDebugDocumentContext | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugDocumentHelper.CreateDebugDocumentContext
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::CreateDebugDocumentContext
+apiname:
+- IDebugDocumentHelper.CreateDebugDocumentContext
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::CreateDebugDocumentContext
 ms.assetid: aa4ec691-9fb1-4da7-8085-b40d8a062467
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

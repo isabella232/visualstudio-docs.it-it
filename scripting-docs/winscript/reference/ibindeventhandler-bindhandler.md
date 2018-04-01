@@ -1,17 +1,20 @@
 ---
 title: IBindEventHandler::BindHandler | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IBindEventHandler.BindHandler
-apilocation: scrobj.dll
-helpviewer_keywords: IBindEventHandler::BindHandler
+apiname:
+- IBindEventHandler.BindHandler
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IBindEventHandler::BindHandler
 ms.assetid: 87909828-2224-4bb1-a6c9-dfe715ac4c9b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

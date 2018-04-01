@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IDebugApplicationNode | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationNode interface
+helpviewer_keywords:
+- IDebugApplicationNode interface
 ms.assetid: 30be3a97-8191-45ac-8706-3f7056c163d6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IMachineDebugManagerEvents::onRemoveApplication | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IMachineDebugManagerEvents.onRemoveApplication
-apilocation: scrobj.dll
-helpviewer_keywords: IMachineDebugManagerEvents::onRemoveApplication
+apiname:
+- IMachineDebugManagerEvents.onRemoveApplication
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IMachineDebugManagerEvents::onRemoveApplication
 ms.assetid: 3ba71bd8-fd69-4a41-99c6-c736c416f227
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

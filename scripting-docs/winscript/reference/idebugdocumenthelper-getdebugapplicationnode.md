@@ -1,17 +1,20 @@
 ---
 title: IDebugDocumentHelper::GetDebugApplicationNode | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugDocumentHelper.GetDebugApplicationNode
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::GetDebugApplicationNode
+apiname:
+- IDebugDocumentHelper.GetDebugApplicationNode
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::GetDebugApplicationNode
 ms.assetid: ecd18803-beb4-4ac2-9702-cc9e8a12c395
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

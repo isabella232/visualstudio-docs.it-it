@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptParseProcedureOld::ParseProcedureText | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptParseProcedureOld.ParseProcedureText
-apilocation: jscript.dll
-helpviewer_keywords: IActiveScriptParseProcedureOld::ParseProcedureText
+apiname:
+- IActiveScriptParseProcedureOld.ParseProcedureText
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IActiveScriptParseProcedureOld::ParseProcedureText
 ms.assetid: 21a21313-35ce-432d-b9a6-7999065f19ac
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IDebugProperty::GetExtendedInfo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugProperty.GetExtendedInfo
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugProperty::GetExtendedInfo
+apiname:
+- IDebugProperty.GetExtendedInfo
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugProperty::GetExtendedInfo
 ms.assetid: a989ade5-16d5-4ee6-8d8a-8dcbfad24034
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

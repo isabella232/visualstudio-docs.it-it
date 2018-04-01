@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IDebugApplicationThreadEvents110 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IDebugApplicationThreadEvents110 Interface
+helpviewer_keywords:
+- IDebugApplicationThreadEvents110 Interface
 ms.assetid: 91a98b0e-7c81-4118-af75-82f75fd4f25a
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

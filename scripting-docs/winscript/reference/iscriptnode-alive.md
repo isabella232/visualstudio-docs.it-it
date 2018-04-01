@@ -1,17 +1,20 @@
 ---
 title: IScriptNode::Alive | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IScriptNode.Alive
-apilocation: scrobj.dll
-helpviewer_keywords: IScriptNode::Alive
+apiname:
+- IScriptNode.Alive
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IScriptNode::Alive
 ms.assetid: d2755c83-e9b9-4c0a-acb7-25b554fc9fe8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

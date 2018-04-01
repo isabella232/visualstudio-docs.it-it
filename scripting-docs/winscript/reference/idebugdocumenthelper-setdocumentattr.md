@@ -1,17 +1,20 @@
 ---
 title: IDebugDocumentHelper::SetDocumentAttr | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugDocumentHelper.SetDocumentAttr
-apilocation: pdm.dll
-helpviewer_keywords: IDebugDocumentHelper::SetDocumentAttr
+apiname:
+- IDebugDocumentHelper.SetDocumentAttr
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugDocumentHelper::SetDocumentAttr
 ms.assetid: bd7ffdbd-de51-477d-bd3f-760db020fe70
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

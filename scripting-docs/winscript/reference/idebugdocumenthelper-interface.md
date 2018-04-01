@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IDebugDocumentHelper | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IDebugDocumentHelper interface
+helpviewer_keywords:
+- IDebugDocumentHelper interface
 ms.assetid: b652a31e-b87b-45f1-b586-94f2b6e822db
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

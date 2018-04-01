@@ -1,17 +1,20 @@
 ---
 title: ICanHandleException::CanHandleException | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: ICanHandleException.CanHandleException
-apilocation: scrobj.dll
-helpviewer_keywords: ICanHandleException::CanHandleException
+apiname:
+- ICanHandleException.CanHandleException
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- ICanHandleException::CanHandleException
 ms.assetid: 0fc703bf-9518-487e-af20-00e073b640f1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

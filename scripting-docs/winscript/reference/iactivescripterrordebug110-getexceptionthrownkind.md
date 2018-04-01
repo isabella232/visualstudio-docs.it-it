@@ -1,15 +1,16 @@
 ---
 title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IActiveScriptErrorDebug110::QueryIsFirstChance
+helpviewer_keywords:
+- IActiveScriptErrorDebug110::QueryIsFirstChance
 ms.assetid: ecc16e54-93e4-4322-ae13-afa7cd860032
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

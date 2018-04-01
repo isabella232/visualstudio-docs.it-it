@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptSiteDebug::OnScriptErrorDebug | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptSiteDebug.OnScriptErrorDebug
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteDebug::OnScriptErrorDebug
+apiname:
+- IActiveScriptSiteDebug.OnScriptErrorDebug
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteDebug::OnScriptErrorDebug
 ms.assetid: 87f201da-36eb-49a2-b000-e1e1e8c4cdb7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

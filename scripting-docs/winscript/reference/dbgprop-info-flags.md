@@ -1,18 +1,22 @@
 ---
 title: DBGPROP_INFO_FLAGS | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: DBGPROP_INFO_FLAGS
-apilocation: scrobj.dll
-f1_keywords: DBGPROP_INFO_FLAGS
-helpviewer_keywords: DBGPROP_INFO_FLAGS
+apiname:
+- DBGPROP_INFO_FLAGS
+apilocation:
+- scrobj.dll
+f1_keywords:
+- DBGPROP_INFO_FLAGS
+helpviewer_keywords:
+- DBGPROP_INFO_FLAGS
 ms.assetid: e9450a21-a802-4c3e-8b3d-8e202f555de1
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptSiteDebug::GetApplication | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptSiteDebug.GetApplication
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSiteDebug::GetApplication
+apiname:
+- IActiveScriptSiteDebug.GetApplication
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSiteDebug::GetApplication
 ms.assetid: 4400f1b1-3108-4a71-b1f1-43586fe1227c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

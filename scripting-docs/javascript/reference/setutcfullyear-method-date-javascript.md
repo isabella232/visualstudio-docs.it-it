@@ -1,14 +1,16 @@
 ---
 title: Metodo setUTCFullYear (Date) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: setUTCFullYear
+f1_keywords:
+- setUTCFullYear
 dev_langs:
 - JavaScript
 - TypeScript
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - setUTCFullYear method
 - UTC dates, setting
 ms.assetid: e6c51b49-0149-4f9a-aa74-c73c0306f98e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,17 +1,20 @@
 ---
 title: IMachineDebugManagerEvents::onAddApplication | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IMachineDebugManagerEvents.onAddApplication
-apilocation: scrobj.dll
-helpviewer_keywords: IMachineDebugManagerEvents::onAddApplication
+apiname:
+- IMachineDebugManagerEvents.onAddApplication
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IMachineDebugManagerEvents::onAddApplication
 ms.assetid: 00a54b91-36d5-430d-b654-5e2abe5300cd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

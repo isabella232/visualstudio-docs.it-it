@@ -1,17 +1,20 @@
 ---
 title: IDebugSyncOperation::Execute | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugSyncOperation.Execute
-apilocation: jscript.dll
-helpviewer_keywords: IDebugSyncOperation::Execute
+apiname:
+- IDebugSyncOperation.Execute
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IDebugSyncOperation::Execute
 ms.assetid: a45b8c7d-c51a-4098-877f-fbec2f1f6947
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

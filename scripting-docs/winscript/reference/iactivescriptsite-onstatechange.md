@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptSite::OnStateChange | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptSite.OnStateChange
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptSite_OnStateChange
+apiname:
+- IActiveScriptSite.OnStateChange
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptSite_OnStateChange
 ms.assetid: 3e9c5cbe-ca8e-426a-84fd-04e9c2daac7e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

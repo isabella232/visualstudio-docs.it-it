@@ -1,18 +1,22 @@
 ---
 title: DBGPROP_ATTRIB_FLAGS | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: DBGPROP_ATTRIB_FLAGS
-apilocation: scrobj.dll
-f1_keywords: DBGPROP_ATTRIB_FLAGS
-helpviewer_keywords: DBGPROP_ATTRIB_FLAGS
+apiname:
+- DBGPROP_ATTRIB_FLAGS
+apilocation:
+- scrobj.dll
+f1_keywords:
+- DBGPROP_ATTRIB_FLAGS
+helpviewer_keywords:
+- DBGPROP_ATTRIB_FLAGS
 ms.assetid: 90314496-527b-4357-9df8-125a360bf216
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

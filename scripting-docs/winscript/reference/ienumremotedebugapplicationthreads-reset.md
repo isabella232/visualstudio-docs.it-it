@@ -1,17 +1,20 @@
 ---
 title: IEnumRemoteDebugApplicationThreads::Reset | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IEnumRemoteDebugApplicationThreads.Reset
-apilocation: pdm.dll
-helpviewer_keywords: IEnumRemoteDebugApplicationThreads::Reset
+apiname:
+- IEnumRemoteDebugApplicationThreads.Reset
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IEnumRemoteDebugApplicationThreads::Reset
 ms.assetid: a6ad8a01-4cc0-4f9c-9cfe-c7448c753473
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

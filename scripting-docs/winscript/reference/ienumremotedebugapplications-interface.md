@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IEnumRemoteDebugApplications | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IEnumRemoteDebugApplications interface
+helpviewer_keywords:
+- IEnumRemoteDebugApplications interface
 ms.assetid: ceb5fbe7-d131-4352-9dd1-af80acd3f3f7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

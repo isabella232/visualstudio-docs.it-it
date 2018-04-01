@@ -1,17 +1,20 @@
 ---
 title: IDebugApplication::FIsAutoJitDebugEnabled | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugApplication.FIsAutoJitDebugEnabled
-apilocation: pdm.dll
-helpviewer_keywords: IDebugApplication::FIsAutoJitDebugEnabled
+apiname:
+- IDebugApplication.FIsAutoJitDebugEnabled
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IDebugApplication::FIsAutoJitDebugEnabled
 ms.assetid: 0551dd3b-e6eb-442a-8201-418f96fe62df
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

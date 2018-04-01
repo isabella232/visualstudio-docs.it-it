@@ -1,17 +1,20 @@
 ---
 title: IEnumDebugApplicationNodes::Skip | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IEnumDebugApplicationNodes.Skip
-apilocation: pdm.dll
-helpviewer_keywords: IEnumDebugApplicationNodes::Skip
+apiname:
+- IEnumDebugApplicationNodes.Skip
+apilocation:
+- pdm.dll
+helpviewer_keywords:
+- IEnumDebugApplicationNodes::Skip
 ms.assetid: b2ad1957-95b5-4c09-9a44-5a765a5308ae
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

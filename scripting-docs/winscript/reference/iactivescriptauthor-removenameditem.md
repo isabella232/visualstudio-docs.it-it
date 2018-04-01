@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptAuthor::RemoveNamedItem | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptAuthor.RemoveNamedItem
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptAuthor::RemoveNamedItem
+apiname:
+- IActiveScriptAuthor.RemoveNamedItem
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptAuthor::RemoveNamedItem
 ms.assetid: 1173ef46-39a5-4bc1-8e0c-89259a16be16
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IDebugSyncOperation | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IDebugSyncOperation interface
+helpviewer_keywords:
+- IDebugSyncOperation interface
 ms.assetid: 8d714492-1836-462c-980a-c99e91a2c81b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

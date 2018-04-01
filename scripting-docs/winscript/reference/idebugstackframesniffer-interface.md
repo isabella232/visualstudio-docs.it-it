@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IDebugStackFrameSniffer | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IDebugStackFrameSniffer interface
+helpviewer_keywords:
+- IDebugStackFrameSniffer interface
 ms.assetid: 5669598e-a6bd-4694-9cb2-bd908be72bed
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

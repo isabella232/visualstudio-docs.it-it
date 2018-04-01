@@ -1,17 +1,20 @@
 ---
 title: IDebugDocumentHost::GetDeferredText | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugDocumentHost.GetDeferredText
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugDocumentHost::GetDeferredText
+apiname:
+- IDebugDocumentHost.GetDeferredText
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugDocumentHost::GetDeferredText
 ms.assetid: 527da666-fef5-4db3-a319-e68d466a7721
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

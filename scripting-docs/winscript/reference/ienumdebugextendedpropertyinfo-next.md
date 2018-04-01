@@ -1,17 +1,20 @@
 ---
 title: IEnumDebugExtendedPropertyInfo::Next | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IEnumDebugExtendedPropertyInfo.Next
-apilocation: scrobj.dll
-helpviewer_keywords: IEnumDebugExtendedPropertyInfo::Next
+apiname:
+- IEnumDebugExtendedPropertyInfo.Next
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IEnumDebugExtendedPropertyInfo::Next
 ms.assetid: ac41c9a3-19d1-4596-8a87-01c10b131be3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

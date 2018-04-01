@@ -1,17 +1,20 @@
 ---
 title: Interfaccia IDebugPropertyEnumType_All | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IDebugPropertyEnumType_All
-apilocation: scrobj.dll
-helpviewer_keywords: IDebugPropertyEnumType_All interface
+apiname:
+- IDebugPropertyEnumType_All
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IDebugPropertyEnumType_All interface
 ms.assetid: 4d0f4fd5-e5f7-47cb-b746-860d6363e2cd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

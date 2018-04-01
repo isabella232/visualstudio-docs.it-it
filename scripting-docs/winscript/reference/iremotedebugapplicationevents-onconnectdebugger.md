@@ -1,17 +1,20 @@
 ---
 title: IRemoteDebugApplicationEvents::OnConnectDebugger | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IRemoteDebugApplicationEvents.OnConnectDebugger
-apilocation: jscript.dll
-helpviewer_keywords: IRemoteDebugApplicationEvents::OnConnectDebugger
+apiname:
+- IRemoteDebugApplicationEvents.OnConnectDebugger
+apilocation:
+- jscript.dll
+helpviewer_keywords:
+- IRemoteDebugApplicationEvents::OnConnectDebugger
 ms.assetid: 8c9c19b8-5426-4643-83e6-b68803ff69c4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

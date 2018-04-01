@@ -1,15 +1,16 @@
 ---
 title: Interfaccia IMachineDebugManagerCookie | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: IMachineDebugManagerCookie interface
+helpviewer_keywords:
+- IMachineDebugManagerCookie interface
 ms.assetid: 04770935-3ccf-41e9-b0c1-c78376ab1e3c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen

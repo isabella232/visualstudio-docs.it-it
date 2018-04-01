@@ -1,17 +1,20 @@
 ---
 title: IActiveScriptAuthor::GetScriptletTextAttributes | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptAuthor.GetScriptletTextAttributes
-apilocation: scrobj.dll
-helpviewer_keywords: IActiveScriptAuthor::GetScriptletTextAttributes
+apiname:
+- IActiveScriptAuthor.GetScriptletTextAttributes
+apilocation:
+- scrobj.dll
+helpviewer_keywords:
+- IActiveScriptAuthor::GetScriptletTextAttributes
 ms.assetid: 082edfce-6c5b-4e5e-b942-31b423a4fa1d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
