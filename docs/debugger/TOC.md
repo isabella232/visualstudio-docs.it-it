@@ -1,7 +1,7 @@
 # [Documentazione relativa al debugger](index.md)
-# Panoramica
-## [Tour delle funzionalità del debugger](debugger-feature-tour.md)
+# [Panoramica](debugger-overview.md)
 # Guide rapide introduttive
+## [Presentazione del debugger](debugger-feature-tour.md)
 ## [Eseguire il debug di un'app gestita](quickstart-debug-with-managed.md)
 ## [Eseguire il debug di un'app nativa](quickstart-debug-with-cplusplus.md)
 ## [Eseguire il debug di un'app ASP.NET](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Visualizzare i valori di stringa in un visualizzatore](string-visualizer-dialog-box.md)
 ### [Visualizzare il codice disassembly](how-to-use-the-disassembly-window.md)
 #### [Procedura: Spostarsi verso l'alto o verso il basso di una pagina nella memoria](how-to-page-up-or-down-in-memory.md)
-### [Visualizzare lo stack di chiamate](how-to-use-the-call-stack-window.md)
-#### [Codice misto e informazioni mancanti nella finestra Stack di chiamate](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Procedura: Uscire dal codice gestito quando nella finestra Stack di chiamate non sono visualizzati frame nativi](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Visualizzare i valori dei registri](how-to-use-the-registers-window.md)
 #### [Informazioni sulla finestra Registri](debugging-basics-registers-window.md)
 #### [Procedura: Visualizzare e nascondere gruppi di registri](how-to-display-and-hide-register-groups.md)

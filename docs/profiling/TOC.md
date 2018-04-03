@@ -1,8 +1,8 @@
 
 # [Documentazione di profilatura](index.md)
 # Panoramica
-## [Tour delle funzionalità di profilatura](profiling-feature-tour.md)
 # Guide rapide introduttive
+## [Presentazione della profilatura](profiling-feature-tour.md)
 ## [Analizzare l'utilizzo della CPU (gestita)](quickstart-cpu-usage-managed.md)
 ## [Analizzare l'utilizzo della CPU (nativa)](quickstart-cpu-usage-native.md)
 ## [Analizzare l'utilizzo della CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)

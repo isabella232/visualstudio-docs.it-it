@@ -1,7 +1,8 @@
 # [Documentazione relativa alla distribuzione](index.md)
 # Panoramica
-## [Panoramica della distribuzione](deploying-applications-services-and-components.md)
+## [Panoramica della distribuzione](deploying-applications-services-and-components-resources.md)
 # Guide rapide introduttive
+## [Presentazione della distribuzione](deploying-applications-services-and-components.md)
 ## [Distribuire in una cartella locale](quickstart-deploy-to-local-folder.md)
 ## [Distribuire in un sito Web](quickstart-deploy-to-a-web-site.md)
 ## [Distribuire in Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [ Elemento <Signature> (distribuzione ClickOnce)](signature-element-clickonce-deployment.md)
 #### [ Elemento <customErrorReporting> (distribuzione ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Riferimenti alle API non gestite ClickOnce](clickonce-unmanaged-api-reference.md)
-# Risorse
-## [Distribuzione di applicazioni, servizi e componenti](deploying-applications-services-and-components-resources.md)
 
