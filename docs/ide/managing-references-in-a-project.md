@@ -1,12 +1,12 @@
 ---
 title: Gestione dei riferimenti in un progetto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
@@ -108,7 +108,7 @@ Per impostazione predefinita, la proprietà <xref:Microsoft.VisualStudio.VCProje
 
 È possibile creare applicazioni che fanno riferimento a progetti o assembly destinati a una versione diversa di .NET Framework. Ad esempio, è possibile creare un'applicazione destinata a [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] che fa riferimento a un assembly destinato a [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Se si crea un progetto destinato a una versione precedente di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], in tale progetto non è possibile impostare un riferimento a un progetto o un assembly destinato a una versione più recente.
 
-Per altre informazioni, vedere [Sviluppo per una versione specifica di .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Per altre informazioni, vedere [Cenni preliminari sul multitargeting](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Riferimenti da progetto a progetto
 
@@ -125,5 +125,5 @@ I riferimenti a file sono riferimenti diretti ad assembly esterni al contesto di
 
 ## <a name="see-also"></a>Vedere anche
 
-[Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md)  
-[Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md)
+[Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

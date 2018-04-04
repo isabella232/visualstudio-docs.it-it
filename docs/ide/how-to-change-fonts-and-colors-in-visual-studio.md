@@ -1,26 +1,28 @@
 ---
 title: 'Procedura: Modificare i tipi di carattere e i colori in Visual Studio | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori in Visual Studio
 
@@ -41,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 > Quando si modifica un tema colori, il testo nell'IDE viene ripristinato all'impostazione predefinita o ai tipi di carattere e alle dimensioni personalizzati in precedenza.
 
 > [!TIP]
-> È possibile creare e modificare i temi di Visual Studio installando [Visual Studio Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor).
+> È possibile creare e modificare i temi di Visual Studio installando [Visual Studio Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor).
 
 ## <a name="use-windows-high-contrast-colors"></a>Utilizzare i colori a contrasto elevato di Windows
 
@@ -71,5 +73,5 @@ Scegliere **ALT di sinistra** + **MAIUSC di sinistra** + **STAMP**.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)  
-[Procedura: Modificare i tipi di carattere e i colori usati nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+[Procedura: Modificare i tipi di carattere e i colori utilizzati nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

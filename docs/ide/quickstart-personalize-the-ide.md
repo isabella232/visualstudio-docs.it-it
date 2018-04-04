@@ -1,23 +1,23 @@
 ---
 title: Impostare il tema colori e i tipi di carattere in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 2098540adda6de1ab003a6a9d526519d1d753730
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio
 
@@ -29,22 +29,22 @@ Se non è ancora stato installato Visual Studio, accedere alla pagina [Download 
 
 Il tema colori predefinito per Visual Studio 2017 è denominato **Blu**. Per questa esercitazione verrà cambiato in **Scuro**.
 
-1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.
+1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
 
-1. Nella pagina delle opzioni **Ambiente**, **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
+1. Nella pagina delle opzioni **Ambiente** > **Generale** modificare la selezione del **Tema colori** in **Scuro** e quindi scegliere **OK**.
 
    Verrà applicato il tema colori **Scuro** all'intero ambiente IDE.
 
    ![Visual Studio con tema Scuro](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> È possibile installare temi predefiniti aggiuntivi installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nell'elenco a discesa Tema colori.
+> È possibile installare temi predefiniti aggiuntivi installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nell'elenco a discesa Tema colori.
 
 ## <a name="change-text-color"></a>Modificare il colore del testo
 
 Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di tutto, aprire un file XML per visualizzare i colori predefiniti.
 
-1. Nella barra dei menu scegliere **File**, **Nuovo**, **File**.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **File**.
 
 1. Nella finestra di dialogo **Nuovo file**, nella categoria **Generale**, scegliere **File XML** e quindi scegliere **Apri**.
 
@@ -80,7 +80,7 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
    ![Colori dei caratteri nei file XML](media/quickstart-personalize-xml-file.png)
 
-1. Per aprire la finestra di dialogo **Opzioni**, scegliere **Strumenti**, **Opzioni** dalla barra dei menu.
+1. Per aprire la finestra di dialogo **Opzioni**, scegliere **Strumenti** > **Opzioni** dalla barra dei menu.
 
 1. In **Ambiente** scegliere la categoria **Tipi di carattere e colori**.
 
@@ -102,9 +102,9 @@ Sono stati presentati solo un paio di modi per personalizzare i colori in Visual
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)  
-[Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)  
-[Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
-[Personalizzazione dell'editor](../ide/customizing-the-editor.md)  
-[Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
+- [Guida introduttiva: Progetti e soluzioni](../ide/quickstart-projects-solutions.md)
+- [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+- [Personalizzazione dell'editor](../ide/customizing-the-editor.md)
+- [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

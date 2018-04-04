@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Impostazione di un repository Git
 
@@ -43,11 +43,15 @@ Per impostare un repository Git, seguire questa procedura:
 
 ## <a name="publishing-an-existing-project"></a>Pubblicazione di un progetto esistente
 
-4. Tornare al proprio progetto aperto in Visual Studio per Mac. 
+Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di controllo della versione, usare i passaggi seguenti per impostarlo in Git:
+
+4.  Selezionare il nome della soluzione nel riquadro della soluzione in Visual Studio per Mac. 
 
 5. Nella barra dei menu selezionare **Version Control (Controllo della versione) > Publish in Version Control (Pubblica in controllo della versione)** per visualizzare la finestra di dialogo **Seleziona repository**:
 
     ![Avviare l'estrazione in Visual Studio per Mac](media/version-control-git4-sml.png)
+
+    Se questa voce di menu risulta disattivata, verificare di aver selezionato il nome della soluzione.  
 
 6. Scegliere la scheda **Repository registrati** e premere i pulsante **Aggiungi**:
 

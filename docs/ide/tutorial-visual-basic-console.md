@@ -1,12 +1,12 @@
 ---
 title: Introduzione a Visual Basic in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/08/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
 In questa esercitazione per Visual Basic (VB), si userà Visual Studio per creare ed eseguire alcune app console diverse ed esplorare nello stesso tempo alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment)](visual-studio-ide.md) di Visual Studio.
@@ -125,9 +125,9 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
     ![Finestra della console che mostra l'app CalculateThis con le azioni possibili.](../ide/media/vb-console-calculate-this.png)
 
-L'esercitazione è stata completata.
+## <a name="next-steps"></a>Passaggi successivi
+L'esercitazione è stata completata. Per altre informazioni su Visual Basic e sull'IDE di Visual Studio, vedere le pagine seguenti.
 
-## <a name="see-also"></a>Vedere anche
 * [Guida a Visual Basic](/dotnet/visual-basic/index)
 * [Novità di Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense per i file di codice di Visual Basic](visual-basic-specific-intellisense.md)

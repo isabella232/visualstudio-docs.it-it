@@ -1,12 +1,12 @@
 ---
-title: 'Guida introduttiva: Creare per la prima volta un''app console in Visual Studio con Visual Basic | Microsoft Docs'
-ms.custom: 
+title: "Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic | Microsoft Docs"
+ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà una semplice applicazione di Visual Basic che viene eseguita nella console.
@@ -81,9 +81,8 @@ Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input
 
    ![Finestra della console che visualizza Hello World e Premere un tasto qualsiasi per continuare](../ide/media/vb-console-hello-world-press-any-key.png)
 
-La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di Visual Basic e dell'IDE di Visual Studio. Per approfondire ancora le conoscenze, continuare con un'esercitazione nella sezione **Esercitazioni** del sommario.
+## <a name="next-steps"></a>Passaggi successivi
+La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di Visual Basic e dell'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente.
 
-## <a name="see-also"></a>Vedere anche
-* [Guida introduttiva: Creare un'app Windows Forms "Hello World" in Visual Basic con Visual Studio](quickstart-visual-basic-winforms.md)
-* [Esercitazione: Introduzione a Visual Basic in Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense per i file di codice di Visual Basic](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Introduzione a Visual Basic in Visual Studio](tutorial-visual-basic-console.md)

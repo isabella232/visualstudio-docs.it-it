@@ -1,12 +1,12 @@
 ---
 title: Introduzione a C# e ad ASP.NET Core in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Introduzione a C# e ad ASP.NET Core in Visual Studio
 In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual Studio si creerà un'app Web ASP.NET Core C# e si aggiungerà codice all'app. Si esploreranno poi alcune funzionalità dell'ambiente IDE e si eseguirà l'app.
@@ -167,12 +167,9 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
 
  ![Fare clic sul pulsante Termina debug sulla barra degli strumenti](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Passaggi successivi
 
-L'esercitazione è stata completata.
+L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente.
 
-## <a name="see-also"></a>Vedere anche
-* [Introduzione ad ASP.NET Core MVC e Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Introduzione all'uso di pagine Razor in ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [Novità di C#](/dotnet/csharp/whats-new)
-* [Riferimenti per il linguaggio C#](/dotnet/csharp/language-reference/index)
-* Esercitazione video [C# Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) (Concetti di base su C# per principianti)
+ > [!div class="nextstepaction"]
+ > [Introduzione ad ASP.NET Core MVC e Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

@@ -1,11 +1,12 @@
 ---
 title: Generale, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Generale, Ambiente, finestra di dialogo Opzioni
 
@@ -49,7 +51,7 @@ Usare questa pagina per modificare i temi di colori, le impostazioni della barra
 
 Scegliere il tema colori **Blu**, **Chiaro** o **Scuro** per l'IDE.
 
-È possibile installare temi predefiniti aggiuntivi e creare temi personalizzati scaricando e installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nella casella di riepilogo Tema colori.
+È possibile installare temi predefiniti aggiuntivi e creare temi personalizzati scaricando e installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nella casella di riepilogo Tema colori.
 
 **Applicare lo stile Tutte Iniziali Maiuscole nella barra dei menu**
 
@@ -69,22 +71,17 @@ Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazi
 
 ## <a name="other"></a>Altro
 
-**elementi nel menu Finestra**  
-Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10.
+**Elementi nel menu Finestra**  Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10.
 
-**elementi negli elenchi degli ultimi file usati**  
-Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
+**Elementi negli elenchi degli ultimi file usati** Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
 
-**Mostra barra di stato**  
-Consente di visualizzare la barra di stato. Nella barra di stato, posizionata nella parte inferiore della finestra dell'IDE, sono visualizzate le informazioni sullo stato delle operazioni in corso.
+**Mostra barra di stato** Consente di visualizzare la barra di stato. Nella barra di stato, posizionata nella parte inferiore della finestra dell'IDE, sono visualizzate le informazioni sullo stato delle operazioni in corso.
 
-**Chiudi ha effetto solo sulla finestra degli strumenti attiva**  
-Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è selezionata per impostazione predefinita.
+**Chiudi ha effetto solo sulla finestra degli strumenti attiva** Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è selezionata per impostazione predefinita.
 
-**Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva**  
-Consente di specificare che se si fa clic sul pulsante **Nascondi automaticamente** deve essere nascosta automaticamente solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è deselezionata per impostazione predefinita.
+**Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva** Consente di specificare che se si fa clic sul pulsante **Nascondi automaticamente** deve essere nascosta automaticamente solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è deselezionata per impostazione predefinita.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)  
+[Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
 [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)

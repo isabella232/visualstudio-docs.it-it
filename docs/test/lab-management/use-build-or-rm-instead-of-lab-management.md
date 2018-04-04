@@ -1,7 +1,7 @@
 ---
 title: Usare la gestione di compilazione o versione per l'esecuzione di test automatizzati in Visual Studio | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,13 +10,13 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usare la gestione di compilazione o versione per l'esecuzione di test automatizzati
+# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usare Build and Release Management per l'esecuzione di test automatizzati
 
 Se si usano Microsoft Test Manager (MTM) e Lab Management per l'esecuzione di test automatizzati o per l'automazione delle operazioni di compilazione/distribuzione/test, questo argomento descrive come ottenere gli stessi risultati tramite le funzionalità [Compilazione e versione](/vsts/build-release/) in Team Foundation Server (TFS) e Visual Studio Team Services (VSTS).
 
@@ -43,7 +43,7 @@ Ecco alcuni dei vantaggi dell'uso di Build and Release Management per questo sce
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Gestione self-service di ambienti SCVMM
 
-[Centro Lab in Microsoft Test Manager](https://msdn.microsoft.com/library/dd997438.aspx) supporta la possibilità di gestire una libreria di modelli di ambiente, nonché di eseguire il provisioning di ambienti su richiesta tramite un [server SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+Il [Test Center in Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) supporta la possibilità di gestire una raccolta di modelli di ambiente, nonché di eseguire il provisioning di ambienti su richiesta tramite un [server SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Le funzionalità di provisioning self-service di Centro lab hanno due obiettivi distinti:
 

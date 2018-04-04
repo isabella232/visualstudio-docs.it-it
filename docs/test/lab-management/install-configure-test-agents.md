@@ -1,7 +1,7 @@
 ---
-title: Installare e configurare agenti di test in Visual Studio | Microsoft Docs
+title: Installare agenti di test e test controller per Visual Studio | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>Installare e configurare agenti di test
+# <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
 Per gli scenari di test che usano Visual Studio e Visual Studio Team Services (VSTS) o Team Foundation Server (TFS), non occorre un test controller. Gli agenti per Visual Studio gestiscono l'orchestrazione mediante la comunicazione con VSTS o TFS. Uno scenario potrebbe essere l'esecuzione continuativa di test per i flussi di lavoro di compilazione e versione in VSTS o TFS.
 
@@ -32,7 +32,9 @@ Potrebbe anche essere utile valutare se è preferibile usare la [gestione di com
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installare il test controller e gli agenti di test
 
-È possibile scaricare gli agenti per Visual Studio 2017 da [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Cercare *Agents per Visual Studio 2017* e selezionare *agente* o *controller*. È possibile scaricare gli agenti per Visual Studio 2015 e Visual Studio 2013 dalla pagina di [download precedente](https://www.visualstudio.com/vs/older-downloads/).
+È possibile scaricare gli agenti per Visual Studio 2017 da [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Scorrere fino in fondo alla pagina e cercare *Agents per Visual Studio 2017*. Selezionare l'opzione *Agente* o *Controller* e quindi scegliere *Download*. Eseguire il file eseguibile scaricato per installare l'agente di test o il test controller.
+
+È possibile scaricare gli agenti per Visual Studio 2015 e Visual Studio 2013 dalla pagina di [download precedente](https://www.visualstudio.com/vs/older-downloads/).
 
 Questi programmi di installazione sono disponibili come file ISO per facilitarne l'installazione nelle macchine virtuali.
 
@@ -59,10 +61,6 @@ La tabella seguente visualizza gli scenari supportati da Agents per Visual Studi
 | Scenari supportati da Agents per Visual Studio 2013 | Alternativa in TFS e VSTS |
 | --- | --- |
 | Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [definizione di compilazione](/vsts/build-release/) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
-| Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. Per altre informazioni, vedere [Utilizzo di un controller di test e di agenti di test in un test di carico](https://msdn.microsoft.com/library/ff400223.aspx). |
+| Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. |
 | Esecuzione remota di test automatizzati da Microsoft Test Manager usando un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
 | Sviluppatori che eseguono test remoti in Visual Studio | Non è più supportato. |
-
-## <a name="see-also"></a>Vedere anche
-
-* [Configurazione di computer e raccolta di informazioni diagnostiche](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

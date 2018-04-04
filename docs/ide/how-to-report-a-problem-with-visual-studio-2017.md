@@ -1,10 +1,10 @@
 ---
 title: Come segnalare un problema con Visual Studio 2017 | Microsoft Docs
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Come segnalare un problema con Visual Studio 2017
 
@@ -77,9 +77,9 @@ Se non è possibile completare l'installazione di Visual Studio o non si riesce 
 
  ![È possibile usare il pulsante Commenti e suggerimenti nel programma di installazione di Visual Studio per aprire lo strumento per il feedback](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Segnalare un problema direttamente alla community degli sviluppatori di Visual Studio
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Cercare problemi e soluzioni usando la community degli sviluppatori di Visual Studio
 
-Se non si vuole o non si può usare Visual Studio per segnalare un problema, è possibile segnalarlo direttamente alla community degli sviluppatori di Visual Studio. Per altre informazioni, vedere la pagina della [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+Se non si vuole o non è possibile usare Visual Studio per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella community degli sviluppatori di Visual Studio. Per altre informazioni, vedere la pagina della [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Fornire commenti o suggerimenti per il prodotto
 
