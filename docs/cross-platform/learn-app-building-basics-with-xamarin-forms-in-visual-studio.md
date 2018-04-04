@@ -1,23 +1,23 @@
 ---
 title: Nozioni di base sulla compilazione di app con Xamarin.Forms in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: charlespetzold
+ms.author: chape
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 71470cd03844c7761afbd07c9d454214f5dc36ca
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6c0659e63feb685f002b7be969ee827e5e047cdd
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Nozioni di base sulla compilazione di app con Xamarin.Forms in Visual Studio
 
@@ -103,7 +103,7 @@ Questi passaggi consentono di creare una soluzione Xamarin.Forms che contiene un
 
 **WeatherApp** è il progetto di destinazione del codice per la libreria .NET Standard condivisa tra tutte le piattaforme. Questa libreria viene inclusa automaticamente nei pacchetti di app compilati dai progetti iOS, Android e Windows.  
   
-Per eseguire questo esempio, è innanzitutto necessario iscriversi per una chiave API gratuita all'indirizzo [http://openweathermap.org/appid](http://openweathermap.org/appid).  
+Per eseguire questo esempio, è prima di tutto necessario iscriversi per una chiave API gratuita all'indirizzo [http://openweathermap.org/appid](http://openweathermap.org/appid).  
   
 Nei passaggi seguenti viene aggiunto codice alla libreria .NET Standard per accedere e archiviare i dati dal servizio meteo:  
   

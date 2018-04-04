@@ -1,11 +1,11 @@
 ---
 title: Tipi di file di soluzioni e di progetto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - File Properties.CopyToOutputDirectory
@@ -26,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="project-and-solution-file-types"></a>Tipi di file di soluzioni e di progetto
 
@@ -50,7 +51,7 @@ Visual Studio usa due tipi di file (.sln e .suo) per archiviare le impostazioni 
 
 I progetti possono contenere molti tipi di file diversi. Ad esempio, i file di codice C# hanno l'estensione **.cs** e i file di C++ hanno l'estensione **.cpp**. Le risorse vengono archiviate nei file **.resx** e XAML nei file **XAML**. I file [App.config](../../ide/managing-application-settings-dotnet.md) contengono informazioni sull'applicazione che non devono essere incluse nel codice dell'applicazione&mdash; ad esempio le stringhe di connessione.
 
-Per ulteriori informazioni sui tipi di file nei progetti C++, vedere [Tipi di file creati per i progetti di Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects) e [Unicode nella libreria Microsoft Foundation Class](/cpp/mfc/unicode-in-mfc)
+Per altre informazioni sui tipi di file nei progetti C++, vedere [Tipi di file creati per i progetti di Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects).
 
 ## <a name="see-also"></a>Vedere anche
 

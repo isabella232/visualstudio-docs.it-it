@@ -1,12 +1,12 @@
 ---
 title: Tasti di scelta rapida predefiniti in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 Per altre informazioni sull'accessibilità dalla tastiera, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: Usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -1134,6 +1134,7 @@ In ogni sezione della tabella indicata di seguito sono inclusi i comandi per cui
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|CTRL+ALT+=|  
 |Design.ZoomOut|CTRL+ALT+-|  
+|Opzioni della finestra di progettazione|CTRL+MAIUSC+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|CTRL+MAIUSC+R|  
 |Esegui codice del progetto|Ctrl+F9|  
