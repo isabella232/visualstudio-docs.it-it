@@ -1,27 +1,27 @@
 ---
 title: Misurazione delle prestazioni del codice Python in Visual Studio | Microsoft Docs
 description: Come usare il profiler di Visual Studio per controllare le prestazioni del codice Python quando si usano interpreti basati su CPython.
-ms.custom: 
+ms.custom: ''
 ms.date: 01/09/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c946f9d0fea5192f75d2fd0a9865827b6027ef50
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 4faa050056296b7dde625268c7ff1112b2c0c6c0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="profiling-python-code"></a>Profilatura del codice Python
 
