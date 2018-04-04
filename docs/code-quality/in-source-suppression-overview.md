@@ -1,9 +1,6 @@
 ---
 title: Esclusione di avvisi di analisi codice in Visual Studio | Documenti Microsoft
-ms.custom: 
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Eliminazione degli avvisi di analisi del codice
+# <a name="suppress-code-analysis-warnings"></a>Esclusione di avvisi di analisi codice
 
 Spesso è utile indicare che un messaggio di avviso non è applicabile. Indica ai membri del team che il codice è stato rivisto e che l'avviso può essere eliminato. Eliminazione (ISS) viene utilizzato in origine il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo per eliminare un avviso. L'attributo può essere posizionato vicino il segmento di codice che ha generato l'avviso. È possibile aggiungere il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo del file di origine digitando, oppure è possibile utilizzare il menu di scelta rapida su un avviso nel **elenco errori** per aggiungerlo automaticamente.
 
@@ -62,7 +59,7 @@ Le proprietà dell'attributo includono:
 
 - **Id regola** -l'identificatore della regola. Il supporto include sia un nome breve e a lungo per l'identificatore della regola. Il nome breve è CAXXXX: NOMETIPODESCRITTIVO; il nome lungo è CAXXXX:FriendlyTypeName.
 
-- **Giustificazione** -il testo che viene utilizzato per documentare il motivo dell'eliminazione del messaggio.
+- **Giustificazione** -il testo che consente di documentare il motivo dell'eliminazione del messaggio.
 
 - **Id messaggio** -identificatore univoco di un problema per ogni messaggio.
 
@@ -78,7 +75,7 @@ Le proprietà dell'attributo includono:
 
     - Member
 
-- **Destinazione** : identificatore utilizzato per specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome completo di elementi.
+- **Destinazione** - un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome completo di elementi.
 
 ## <a name="suppressmessage-usage"></a>Utilizzo di SuppressMessage
 
@@ -94,7 +91,7 @@ Se esistono motivi di prestazioni strict per ridurre al minimo i metadati di eli
 
 Per ragioni di manutenibilità, omettere il nome della regola non è consigliabile.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Le violazioni selettive all'interno di un corpo del metodo di eliminazione
+## <a name="suppress-selective-violations-within-a-method-body"></a>Esclusione di violazioni selettive all'interno di un corpo del metodo
 
 Gli attributi di eliminazione possono essere applicati a un metodo, ma non possono essere incorporati all'interno di un corpo del metodo. Ciò significa che tutte le violazioni di una particolare regola vengono soppressi se si aggiunge il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo al metodo.
 
@@ -160,7 +157,7 @@ Eliminazioni a livello globale sono l'unico modo per eliminare i messaggi che fa
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`contiene sempre il nome completo dell'elemento.
+> `Target` contiene sempre il nome completo dell'elemento.
 
 ## <a name="global-suppression-file"></a>File eliminazione globale
 
@@ -168,4 +165,5 @@ Il file eliminazione globale gestisce le eliminazioni a livello globale o le eli
 
 ## <a name="see-also"></a>Vedere anche
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Usare gli analizzatori di Roslyn](../code-quality/use-roslyn-analyzers.md)

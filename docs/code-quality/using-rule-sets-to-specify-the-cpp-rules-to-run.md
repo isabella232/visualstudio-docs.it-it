@@ -1,25 +1,25 @@
 ---
 title: Regola di utilizzo di set per specificare le regole di C++ per l'esecuzione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803af4716a62411d01683d2dcb8155f8f4b80384
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 400b3228c1039ff7b859f769949c0c82c1939954
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilizzo di set di regole per specificare le regole C++ da eseguire
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utilizzare i set di regole per specificare le regole di C++ per l'esecuzione
 
 In Visual Studio, è possibile creare e modificare un oggetto personalizzato *set di regole* per soddisfare specifiche esigenze del progetto associate con l'analisi del codice. Per creare una regola personalizzata di C++ set, un progetto C/C++ deve essere aperto nell'IDE di Visual Studio. Quindi aprire un set di regole standard nell'editor set di regole e quindi aggiungere o rimuovere le regole specifiche e, facoltativamente, modificare l'azione che si verifica quando l'analisi del codice determina che è stata violata una regola.
 

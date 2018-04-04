@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  Nel dispositivo o server computer che si desidera eseguire il debug (anziché il computer che esegue Visual Studio), ottenere la versione corretta di remote tools.
 
     |Versione|Collegamento|Note|
     |-|-|-|
-    |Visual Studio 2017 (versione più recente)|[Strumenti remoti](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Scaricare sempre la versione corrispondente di sistema operativo del dispositivo (x86 o x64). Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
+    |Visual Studio 2017 (versione più recente)|[Strumenti remoti](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Scaricare sempre la versione corrispondente di sistema operativo del dispositivo (x86 o x64). Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
     |Visual Studio 2017, (precedente)|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Sono disponibili da My.VisualStudio.com strumenti remoti per le versioni precedenti di Visual Studio 2017. Se richiesto, il gruppo di Visual Studio Dev Essentials libero join o accedere con la sottoscrizione di Visual Studio ID. Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
     |Visual Studio 2015 Update 3|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, il gruppo di Visual Studio Dev Essentials libero join o accedere con la sottoscrizione di Visual Studio ID. Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
     |Visual Studio 2015 (precedente)|[Strumenti remoti](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se richiesto, il gruppo di Visual Studio Dev Essentials libero join o accedere con la sottoscrizione di Visual Studio ID. Se è abilitata la modalità di sicurezza avanzate (Windows Server), è necessario aggiungere nuovi siti attendibili se richiesto.|
