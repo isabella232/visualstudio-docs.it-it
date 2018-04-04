@@ -30,6 +30,7 @@
 
 # Procedura
 ##[Condividere un ambiente di sviluppo](how-to/share-dev-environment.md)
+##[Usare un feed NuGet personalizzato](how-to/use-a-custom-nuget-feed.md)
 ##[Usare kubectl con un ambiente connesso di Visual Studio](how-to/use-kubectl-with-vsce.md)
 
 # [Risolvere i problemi](troubleshooting.md)
