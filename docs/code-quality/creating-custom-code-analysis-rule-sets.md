@@ -1,23 +1,25 @@
 ---
 title: Creazione di set di regole di analisi codice personalizzato | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Creazione di set di regole di analisi del codice personalizzati
 Per applicare regole di analisi del codice a un progetto di codice gestito, che specifica un set di regole che contiene una o più regole. Set di regole standard Microsoft forniscono gruppi di regole che sono organizzati in base alla funzione e la profondità. Ad esempio, le regole Microsoft base progettazione le linee guida e le regole di progettazione le linee guida Microsoft estesi contengono regole incentrate su usabilità e dei problemi di gestibilità, con particolare attenzione alle regole di denominazione nel set di regole estese.  
@@ -28,7 +30,7 @@ Per applicare regole di analisi del codice a un progetto di codice gestito, che 
  [Procedura: Creare un set di regole personalizzato](../code-quality/how-to-create-a-custom-rule-set.md)  
  Viene descritto come creare una regola personalizzata impostata modificando una o più set di regole standard.  
   
- [Utilizzo di Set di regole dell'Editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)  
+ [Utilizzo di Set di regole Editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)  
  Viene descritto come utilizzare l'editor set di regole per raggruppare, ordinare, filtrare e modificare le regole di analisi codice in un set di regole personalizzato.  
   
 ## <a name="see-also"></a>Vedere anche  
