@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Panoramica di analisi del codice per il codice gestito
 
@@ -33,11 +33,11 @@ Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come
 
 Per eseguire l'analisi codice ogni volta che si compila un progetto, selezionare **Attiva analisi codice in fase di compilazione** nella pagina delle proprietà del progetto. Per ulteriori informazioni, vedere [procedura: abilitare e disabilitare analisi del codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analizza** > **Esegui analisi del codice** > **Esegui analisi del codice su <project>** . Per ulteriori informazioni, vedere [procedura: abilitare e disabilitare analisi del codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analizza** > **Esegui analisi del codice** > **Esegui analisi del codice su \<progetto >**.
 
 ## <a name="rule-sets"></a>Set di regole
 
-Regole di analisi del codice per il codice gestito raggruppate in *set di regole*. È possibile utilizzare uno dei set di regole standard Microsoft oppure creare un set di regole personalizzato per soddisfare una specifica esigenza. Per ulteriori informazioni, vedere [utilizzando il set di regole per raggruppare regole di analisi codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
+Regole di analisi del codice per il codice gestito raggruppate in [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). È possibile usare uno dei set di regole standard Microsoft oppure è possibile [creare un set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare esigenze specifiche.
 
 ## <a name="suppress-warnings"></a>Esclusione di avvisi
 
@@ -56,7 +56,7 @@ Public class MyClass
 Per ulteriori informazioni, vedere [esclusione di avvisi](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero eccessivo di avvisi di analisi codice. Se non si è pronti per risolvere gli avvisi e disattivare temporaneamente l'analisi del codice, aprire pagine delle proprietà del progetto (**progetto** > ***progetto* Properties...** ) e passare al **analisi del codice** scheda. Deselezionare **Attiva analisi codice in fase di compilazione**e quindi ricompilare il progetto. In alternativa, è possibile selezionare un diversa, più piccolo set di regole per eseguire il codice. È necessario attivare l'analisi del codice in quando si è pronti per risolvere gli avvisi.
+> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Se non si è pronti per risolvere gli avvisi e si desidera aumentare la produttività sin da subito, puoi *linea di base* lo stato di analisi del progetto. Dal **Analizza** dal menu **Esegui analisi del codice ed Elimina problemi attivi**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Eseguire l'analisi del codice come parte dei criteri di archiviazione
 
