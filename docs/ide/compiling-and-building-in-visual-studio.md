@@ -1,26 +1,28 @@
 ---
 title: Compilazione e creazione in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 
@@ -42,7 +44,7 @@ La documentazione di questa sezione approfondisce i dettagli del processo di com
 
 ## <a name="overview-of-building-from-the-ide"></a>Panoramica della compilazione nell'ambiente IDE  
 
-Quando si crea un progetto, Visual Studio crea configurazioni della build predefinite per il progetto e la soluzione che contiene il progetto.  Queste configurazioni definiscono come vengono compilati e distribuiti i progetti e le soluzioni. Le configurazioni di progetto, in particolare, sono uniche per la piattaforma di destinazione (ad esempio Windows o Linux) e il tipo di build (ad esempio una build di debug o di rilascio). È possibile modificare queste configurazioni come desiderato e anche creare configurazioni personalizzate in base alle esigenze.
+Quando si crea un progetto, Visual Studio crea configurazioni della build predefinite per il progetto e la soluzione che contiene il progetto.  Queste configurazioni definiscono come vengono compilati e distribuiti i progetti e le soluzioni. Le configurazioni di progetto, in particolare, sono univoche per la piattaforma di destinazione (ad esempio Windows o Linux) e il tipo di compilazione (ad esempio, di debug o di rilascio). È possibile modificare queste configurazioni come desiderato e anche creare configurazioni personalizzate in base alle esigenze.
 
 Per un'introduzione iniziale alla compilazione nell'ambiente IDE, vedere [Procedura dettagliata: Compilazione di un'applicazione](walkthrough-building-an-application.md).  
 
@@ -51,7 +53,7 @@ Quindi vedere [Compilazione e pulizia di progetti e soluzioni in Visual Studio](
 Successivamente è possibile esplorare molte altre attività:
 - [Informazioni sulle configurazioni della build](understanding-build-configurations.md)
 - [Informazioni sulle piattaforme di compilazione](understanding-build-platforms.md)
-- [Gestione delle proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)  
+- [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md).  
 - Definizione degli eventi di compilazione in [C#](how-to-specify-build-events-csharp.md) e [Visual Basic](how-to-specify-build-events-visual-basic.md) 
 - [Impostazione delle opzioni di compilazione](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Compilazione di più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  

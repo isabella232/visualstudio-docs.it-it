@@ -2,24 +2,24 @@
 title: Finestre in Visual Studio del debugger | Documenti Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Informazioni sulle finestre del Debugger in Visual Studio
 
@@ -38,12 +38,12 @@ ms.lasthandoff: 02/09/2018
 |Stack di chiamate|CTRL+ALT+C|[Procedura: Usare la finestra Stack di chiamate](../debugger/how-to-use-the-call-stack-window.md)|
 |Controllo immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|
 |Stack in parallelo|CTRL+MAIUSC+D, S|[Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
-|Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Ottenere avviato il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Ottenere avviato il debug di applicazioni a thread multipli](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Thread|CTRL+ALT+H|[Eseguire il debug utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
 |Moduli|CTRL+ALT+U|[Procedura: Usare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
 |Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
-|Debug interattivo di Python|MAIUSC+ALT+I|[REPL di Python interattivo](../python/interactive-repl.md)|
+|Debug interattivo di Python|MAIUSC+ALT+I|[REPL di Python interattivo](../python/python-interactive-repl-in-visual-studio.md)|
 |Console JavaScript|CTRL+ALT+V, C|[Guida introduttiva: Debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)|
 |Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|

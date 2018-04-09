@@ -1,10 +1,10 @@
 ---
 title: Aggiunta del supporto di altri linguaggi all'editor di Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - syntax colorization
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -23,11 +23,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Aggiunta del supporto di altri linguaggi all'editor di Visual Studio
 Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggio da un linguaggio di programmazione a un altro e su come aggiungere il supporto per altri linguaggi all'editor di Visual Studio.  
@@ -66,28 +66,28 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
   
 -   C#  
   
- Tutti questi tipi di file dispongono delle funzionalità descritte in precedenza anche se il supporto di un linguaggio specifico non è stato ancora installato. L'installazione di supporto specializzato per alcuni linguaggi potrebbe offrire il supporto di linguaggi aggiuntivi, ad esempio IntelliSense, o di altre funzionalità avanzate di un linguaggio, ad esempio le lampadine.  
+Tutti questi tipi di file dispongono delle funzionalità descritte in precedenza anche se il supporto di un linguaggio specifico non è stato ancora installato. L'installazione di supporto specializzato per alcuni linguaggi potrebbe offrire il supporto di linguaggi aggiuntivi, ad esempio IntelliSense, o di altre funzionalità avanzate di un linguaggio, ad esempio le lampadine.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Aggiunta del supporto per linguaggi non supportati  
  Visual Studio 2015 Update 1 e versioni successive offrono il supporto dei linguaggi nell'editor tramite le [grammatiche TextMate](https://manual.macromates.com/en/language_grammars). Se il linguaggio di programmazione preferito non è attualmente supportato nell'editor di Visual Studio, prima di tutto eseguire una ricerca sul Web. Un bundle TextMate per questo linguaggio potrebbe già essere disponibile. Se non si riesce a trovare il bundle, tuttavia, è possibile aggiungere il supporto del linguaggio autonomamente in Visual Studio 2015 Update 1 o versione successiva mediante la creazione di un modello di bundle TextMate per la grammatica e i frammenti del linguaggio.  
   
  Aggiungere le nuove grammatiche TextMate per Visual Studio nella cartella seguente:  
   
- %userprofile%\\.vs\Extensions  
+ *%userprofile%\\.vs\Extensions*  
   
  In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla propria situazione:  
   
 |Nome cartella|Descrizione|  
 |-----------------|-----------------|  
-|\\*\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, **\Matlab**.|  
-|\Syntaxes|Cartella della grammatica. Contiene i file della grammatica con estensione json per il linguaggio, ad esempio **Matlab.json**.|  
-|\Snippets|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|  
+|\\*\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, *\Matlab*.|  
+|*\Syntaxes*|Cartella della grammatica. Contiene i file della grammatica con estensione *json* per il linguaggio, ad esempio *Matlab.json*.|  
+|*\Snippets*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|  
   
- In Windows %userprofile% si risolve nel percorso c:\Users\\*\<nome utente>*. Se nel sistema non esiste la cartella delle estensioni, è necessario crearla. Se la cartella esiste già, verrà nascosta.  
+ In Windows *%userprofile%* si risolve nel percorso *c:\Users\\*\<nome utente>*.* Se nel sistema non esiste la cartella delle estensioni, è necessario crearla. Se la cartella esiste già, verrà nascosta.  
   
  Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate: introduzione alle grammatiche dei linguaggi: come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata in HTML) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note sulla creazione della grammatica di un linguaggio e di un tema personalizzato per un bundle TextMate).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio 2013 Navigate To Improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)  (Miglioramenti della funzione Navigate To (Passa a) di Visual Studio 2013)  
- [Walkthrough: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md)  (Procedura dettagliata: Creazione di un frammento di codice)  
+ [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)   
  [Procedura dettagliata: Visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)

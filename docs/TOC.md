@@ -53,6 +53,7 @@
 ## [Python: creare un'app Web](ide/quickstart-python.md)
 ## [Node.js: creare un'app Web](ide/quickstart-nodejs.md)
 ## [C#: creare un'app Web](ide/quickstart-aspnet-core.md)
+## [C#: creare un'app UWP](ide/quickstart-uwp-csharp.md)
 ## [Visual Basic: creare un'app console](ide/quickstart-visual-basic-console.md)
 # Esercitazioni
 ## [C++ in Visual Studio...](/cpp/build/vscpp-step-0-installation)

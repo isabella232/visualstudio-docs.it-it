@@ -8,11 +8,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
@@ -147,7 +147,7 @@ L'agente di raccolta dati di code coverage crea un log in cui le parti del codic
 
 L'agente di raccolta dati video acquisisce la registrazione di una schermata quando si eseguono i test. La registrazione è utile per la risoluzione dei test dell'interfaccia utente. L'agente di raccolta dati video è disponibile in **Visual Studio 2017 versione 15.5** e versioni successive.
 
-Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, è necessario usare un file di impostazioni di test.
+Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, è necessario usare un [file di impostazioni di test](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 

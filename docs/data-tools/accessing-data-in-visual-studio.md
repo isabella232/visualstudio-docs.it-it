@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>L'accesso ai dati in Visual Studio
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni sulla connessione ai database da app C++, vedere [Vis
 
 ## <a name="python"></a>Python
 
-Installare [Python supporto in Visual Studio](../python/python-in-visual-studio.md) per creare applicazioni di Python. Documentazione di Azure presenta diverse esercitazioni sulla connessione ai dati, inclusi i seguenti:
+Installare [Python supporto in Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) per creare applicazioni di Python. Documentazione di Azure presenta diverse esercitazioni sulla connessione ai dati, inclusi i seguenti:
 
 - [Django e Database SQL in Azure](/azure/app-service/app-service-web-get-started-python)
 - [Django e MySQL in Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
