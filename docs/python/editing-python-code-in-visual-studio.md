@@ -1,27 +1,27 @@
 ---
-title: Modifica del codice Python in Visual Studio | Microsoft Docs
-description: "Per la modifica di codice Python in Visual Studio sono disponibili IntelliSense, frammenti di codice e funzionalità di navigazione, oltre a formattazione, lint e refactoring."
-ms.custom: 
+title: Modifica del codice Python | Microsoft Docs
+description: Per la modifica di codice Python in Visual Studio sono disponibili IntelliSense, frammenti di codice e funzionalità di navigazione, oltre a formattazione, lint e refactoring.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 8e9d5a3b18e7193786ea2b6d0bf2dfb038828e78
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 

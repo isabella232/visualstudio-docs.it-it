@@ -1,12 +1,13 @@
 ---
 title: Variabili, JavaScript | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Variabili (JavaScript)
 In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], una variabile contiene un valore, ad esempio "hello" o 5. Quando si usa la variabile, si fa riferimento ai dati che rappresenta, ad esempio `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -48,7 +49,7 @@ var count = 0, amount = 100;
 ## <a name="naming-variables"></a>Denominazione delle variabili  
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] effettua la distinzione tra maiuscole e minuscole. Ciò significa che un nome della variabile, come ad esempio **myCounter** è diverso dal nome della variabile **MYCounter**. I nomi delle variabili possono essere di qualsiasi lunghezza. Le regole per la creazione di nomi delle variabili validi sono riportate di seguito:  
   
--   Il primo carattere deve essere una lettera ASCII (maiuscolo o minuscola), oppure un carattere di sottolineatura (_). Si noti che non è possibile usare un numero come primo carattere.  
+-   Il primo carattere deve essere una lettera ASCII (maiuscola o minuscola), una lettera conforme alle convenzioni di denominazione delle variabili Unicode o un carattere di sottolineatura (_). Si noti che non è possibile usare un numero come primo carattere.  
   
 -   I caratteri successivi devono essere lettere, numeri o caratteri di sottolineatura (_).  
   

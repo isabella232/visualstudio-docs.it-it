@@ -1,26 +1,26 @@
 ---
-title: Come gestire gli ambienti e gli interpreti Python in Visual Studio | Microsoft Docs
+title: Come gestire gli ambienti e gli interpreti Python | Microsoft Docs
 description: Come usare la finestra Ambienti Python in Visual Studio per gestire gli ambienti globali e virtuali, configurare gli ambienti personalizzati, installare gli interpreti Python, installare pacchetti, impostare percorsi di ricerca e gestire gli ambienti per i progetti di Visual Studio.
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Gestione di ambienti Python in Visual Studio
 
@@ -35,6 +35,8 @@ In Visual Studio in Windows, la finestra [Ambienti Python](#managing-python-envi
 
 Si noti anche che non è possibile gestire gli ambienti per il codice Python aperto solo come cartella tramite il comando **File > Apri > Cartella**. In alternativa, [creare un progetto Python da codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md) per sfruttare le funzionalità dell'ambiente di Visual Studio.
 
+Per installare i pacchetti in un ambiente, fare riferimento alla [scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab).
+
 ## <a name="types-of-environments"></a>Tipi di ambienti
 
 ### <a name="global-environments"></a>Ambienti globali
@@ -47,7 +49,7 @@ Gli ambienti globali sono disponibili per tutti i progetti nel computer. In Visu
 
 Dal momento che i pacchetti installati in un ambiente globale sono disponibili per tutti i progetti che usano tale ambiente, possono verificarsi conflitti quando due progetti richiedono pacchetti non compatibili o versioni diverse dello stesso pacchetto. Gli ambienti virtuali consentono di evitare questi conflitti usando l'interprete e la libreria standard da un ambiente globale, ma mantenendo gli archivi dei pacchetti in cartelle isolate.
 
-In Visual Studio, è possibile creare un ambiente virtuale per un progetto specifico, che viene archiviato in una sottocartella del progetto (vedere [Creazione di ambienti virtuali](selecting-a-python-environment-for-a-project.md#creating-a-virtual-environment). Il file di progetto identifica anche l'ambiente virtuale. Visual Studio registra anche gli eventuali pacchetti installati in tale ambiente virtuale nel file `requirements.txt` del progetto. Se il progetto viene poi condiviso e altri sviluppatori lo aprono nei loro computer, Visual Studio offre la possibilità di ricreare l'ambiente virtuale.
+In Visual Studio è possibile creare un ambiente virtuale per un progetto specifico, che viene archiviato in una sottocartella del progetto. Visual Studio offre un comando che consente di generare un file `requirements.txt` dall'ambiente virtuale, rendendo più semplice ricreare l'ambiente in altri computer. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Ambienti Conda
 
@@ -87,7 +89,7 @@ Sotto l'elenco degli ambienti è disponibile un selettore a discesa per le opzio
 
 ### <a name="what-if-no-environments-appear"></a>Se non viene visualizzato alcun ambiente
 
-Se non viene visualizzato alcun ambiente, significa che Visual Studio non è riuscito a rilevare installazioni di Python nelle posizioni standard. È possibile, ad esempio, avere installato Visual Studio 2017 con tutte le opzioni per l'interprete deselezionate nelle opzioni del programma di installazione per il carico di lavoro di Python. Analogamente, è possibile che sia installato Visual Studio 2015 o versione precedente, ma che non sia stato installato manualmente un interprete (vedere [Selezione e installazione di interpreti Python](installing-python-interpreters.md)).
+Se non viene visualizzato alcun ambiente, significa che Visual Studio non è riuscito a rilevare installazioni di Python nelle posizioni standard. È possibile, ad esempio, avere installato Visual Studio 2017 con tutte le opzioni per l'interprete deselezionate nelle opzioni del programma di installazione per il carico di lavoro di Python. Analogamente, è possibile che sia installato Visual Studio 2015 o versione precedente, ma che non sia stato installato manualmente un interprete. Vedere [Installazione degli interpreti Python](installing-python-interpreters.md).
 
 Se si è certi di disporre di un interprete Python nel computer in uso, ma Visual Studio (qualsiasi versione) non lo rileva, usare il comando **+ Personalizzato** per specificarne il percorso manualmente. Vedere la sezione successiva, [Identificazione manuale di un ambiente esistente](#manually-identifying-an-existing-environment).
 
@@ -108,7 +110,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
 1. Immettere o selezionare (tramite **...***) il percorso dell'interprete nel campo **Percorso di prefisso**.
 
-1. Se Visual Studio rileva un interprete Python nel percorso specificato (ad esempio, il percorso illustrato di seguito per un ambiente Conda), viene abilitato il comando **Rilevamento automatico**. Selezionando **Rilevamento automatico* vengono compilati i restanti campi. È anche possibile compilare manualmente questi campi.
+1. Se Visual Studio rileva un interprete Python nel percorso specificato, ad esempio il percorso illustrato di seguito per un ambiente Conda, viene abilitato il comando **Rilevamento automatico**. Selezionando **Rilevamento automatico* vengono compilati i restanti campi. È anche possibile compilare manualmente questi campi.
 
     ![Abilitazione del comando Rilevamento automatico](media/environments-custom-2.png)
 

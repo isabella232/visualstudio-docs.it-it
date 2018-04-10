@@ -1,37 +1,36 @@
 ---
 title: Visual Studio Emulator for Android | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology: vs-ide-mobile
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3029954623ffbd5324a8a1ab9b67def375b1a486
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 L’Emulatore di Visual Studio per Android è un’applicazione desktop che emula un dispositivo Android. Fornisce un ambiente virtualizzato in cui è possibile eseguire il debug e testare applicazioni Android senza un dispositivo fisico. Offre inoltre un ambiente isolato per i prototipi di applicazioni.  
+
+> [!IMPORTANT]
+> Nella maggior parte degli scenari è consigliabile usare l'emulatore Android di Google anziché Visual Studio Emulator for Android:
+> - Quando sono necessarie immagini dell'emulatore contenenti Android 7.0 o versioni successive, perché non è prevista la pubblicazione di immagini di Android oltre la versione 6.0 per l'uso in Visual Studio Emulator for Android.
+> - Quando si usano gli Strumenti di Visual Studio per Apache Cordova. Per altre informazioni, vedere [Eseguire l'app Apache Cordova in Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
   
  Emulatore di Visual Studio per Android è progettato per fornire prestazioni paragonabili a un dispositivo reale. Prima di pubblicare l'applicazione, tuttavia, è consigliabile testare l'applicazione in un dispositivo fisico.  
   
  È possibile testare l'applicazione in un profilo univoco del dispositivo per ognuna delle piattaforme Android, risoluzioni dello schermo e altre proprietà di hardware supportate dall'emulatore di Visual Studio per Android.
-
-> [!NOTE]
-> L'emulatore Android di Google è consigliato per l'uso nei casi seguenti:
-> - Quando si usano gli Strumenti di Visual Studio per Apache Cordova. Per altre informazioni, vedere [Eseguire l'app Apache Cordova in Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
-> - Quando servono immagini dell'emulatore contenenti Android 7.0 o versioni successive, perché non è prevista la pubblicazione di immagini di Android oltre la versione 6.0 per l'uso nell'emulatore di Visual Studio per Android.
   
 ##  <a name="Installing"></a> Installazione e disinstallazione  
  Installazione di  

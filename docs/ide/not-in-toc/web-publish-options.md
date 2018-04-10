@@ -1,27 +1,27 @@
 ---
-title: "Quali sono le opzioni di pubblicazione più adatte? | Microsoft Docs"
-ms.custom: 
+title: Quali sono le opzioni di pubblicazione più adatte? | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 
+caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # Quali sono le opzioni di pubblicazione più adatte?
 
@@ -32,7 +32,7 @@ Dall'interno di Visual Studio le applicazioni Web possono essere pubblicate dire
 - [File system](#file-system)
 - [Destinazioni personalizzate (IIS, FTP e così via) ](#custom-targets), inclusi tutti i server Web arbitrari.
 
-Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione esistente, importare un profilo esistente o crearne uno nuovo usando le opzioni descritte di seguito.
+Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione esistente, importare un profilo esistente o crearne uno nuovo usando le opzioni descritte di seguito. Per una panoramica delle opzioni di pubblicazione nell'IDE per diversi tipi di app, vedere [Presentazione della distribuzione](../../deployment/deploying-applications-services-and-components.md).
 
 ## App Web di Servizio app di Azure
 

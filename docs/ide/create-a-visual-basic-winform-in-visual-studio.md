@@ -1,13 +1,13 @@
 ---
 title: Creare un'app Windows Forms in Visual Studio con Visual Basic | Microsoft Docs
 description: Informazioni dettagliate su come creare un'app Windows Forms in Visual Studio con Visual Basic.
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creare un'app Windows Forms in Visual Studio con Visual Basic
 In questa breve introduzione all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà una semplice applicazione di Visual Basic con un'interfaccia utente basata su Windows.
@@ -50,31 +50,31 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
      ![Fare clic su Casella degli strumenti per aprire la finestra della casella degli strumenti](../ide/media/vb-toolbox-toolwindow.png)  
 
-     (Se l'opzione di apertura a comparsa della Casella degli strumenti non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo fare clic su **Visualizza** > **Casella degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
+     (Se l'opzione di apertura a comparsa della **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo fare clic su **Visualizza** > **Casella degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
 
-2. Fare clic sull'icona **Blocca** per ancorare la Casella degli strumenti.
+2. Fare clic sull'icona **Blocca** per ancorare la **Casella degli strumenti**.
 
      ![Fare clic sull'icona Blocca per ancorare la Casella degli strumenti all'IDE](../ide/media/vb-pin-the-toolbox-window.png)  
 3. Fare clic sul controllo **Pulsante** e trascinarlo nel modulo.
 
      ![Aggiungere un pulsante al modulo](../ide/media/vb-add-a-button-to-form1.png)
 
-4. Nella sezione **Aspetto** della finestra **Proprietà** digitare "Click this", e premere **INVIO**.
+4. Nella sezione **Aspetto** della finestra **Proprietà** digitare `Click this` e premere **INVIO**.
 
      ![Aggiungere testo al pulsante nel modulo](../ide/media/vb-button-control-text.png)  
 
-     (Se la finestra Proprietà non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo fare clic su **Visualizza** > **Finestra Proprietà**. In alternativa premere **F4**.)
+     (Se la finestra **Proprietà** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo fare clic su **Visualizza** > **Finestra Proprietà**. In alternativa premere **F4**.)
 
-5. Nella sezione **Progettazione** della finestra **Proprietà** cambiare il nome da "Button1" a "btnClickThis", quindi premere **INVIO**.
+5. Nella sezione **Progettazione** della finestra **Proprietà** cambiare il nome da **Button1** a `btnClickThis`, quindi premere **INVIO**.
 
      ![Aggiungere una funzione al pulsante nel modulo](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Aggiungere un'etichetta al modulo
 È stato aggiunto un controllo pulsante per creare un'azione. Ora si aggiungerà un controllo etichetta al quale inviare del testo.
 
-1. Selezionare il controllo **Etichetta** nella Casella degli strumenti, quindi trascinarlo sul modulo e rilasciarlo sotto il pulsante **Click this**.
+1. Selezionare il controllo **Etichetta** nella **Casella degli strumenti**, quindi trascinarlo sul modulo e rilasciarlo sotto il pulsante **Click this**.
 
-2. Nella sezione **Progettazione** della finestra **Proprietà** cambiare il nome da "Label1" a "lblHelloWorld", quindi premere **INVIO**.
+2. Nella sezione **Progettazione** della finestra **Proprietà** cambiare il nome da **Label1** a `lblHelloWorld`, quindi premere **INVIO**.
 
 ### <a name="add-code-to-the-form"></a>Aggiungere codice al modulo
 
@@ -91,9 +91,9 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
      ![Fare clic su Avvia per eseguire il debug e avviare l'app](../ide/media/vb-click-start-hello-world.png)
 
-   Vengono eseguite diverse operazioni. Nell'IDE di Visual Studio viene aperta la finestra Strumenti di diagnostica e anche una finestra Output. All'esterno dell'IDE viene visualizzata una finestra di dialogo Form1. La finestra include il pulsante **Click this** e il testo "Label1".
+   Vengono eseguite diverse operazioni. Nell'IDE di Visual Studio viene aperta la finestra **Strumenti di diagnostica** e anche una finestra **Output**. All'esterno dell'IDE viene visualizzata una finestra di dialogo **Form1**. La finestra include il pulsante **Click this** e il testo **Label1**.
 
-2. Fare clic sul pulsante **Click this** nella finestra di dialogo **Form1**. Osservare che il testo "Label1" diventa "Hello World!".
+2. Fare clic sul pulsante **Click this** nella finestra di dialogo **Form1**. Osservare che il testo **Label1** diventa **Hello World!**.
 
     ![Finestra di dialogo Form1 con il testo Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 

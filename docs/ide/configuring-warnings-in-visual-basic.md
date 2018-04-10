@@ -1,32 +1,34 @@
 ---
 title: Configurazione degli avvisi in Visual Basic | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] include un set di avvisi relativi al codice che può causare errori di runtime. È possibile usare tali informazioni per scrivere codice migliore, più semplice e rapido e con meno errori. Ad esempio il compilatore genera un avviso quando l'utente cerca di chiamare un membro di una variabile di oggetto non assegnata, di completare l'esecuzione di una funzione senza impostare il valore restituito o di eseguire un blocco `Try` con errori nel codice per l'intercettazione delle eccezioni.  
   
- In alcuni casi il compilatore produce codice aggiuntivo per conto dell'utente, che potrà concentrarsi sul task corrente anziché sulla necessità di prevedere possibili errori. Le versioni precedenti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] usavano `Option Strict` per limitare il codice aggiuntivo prodotto dal compilatore [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. La configurazione degli avvisi consente di limitare tale codice in modo più dettagliato, a livello dei singoli avvisi.  
+ In alcuni casi il compilatore produce codice aggiuntivo per conto dell'utente, che potrà concentrarsi sul task corrente anziché sulla necessità di prevedere possibili errori. Le versioni precedenti di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] usavano **Option Strict** per limitare il codice aggiuntivo prodotto dal compilatore [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. La configurazione degli avvisi consente di limitare tale codice in modo più dettagliato, a livello dei singoli avvisi.  
   
  Può risultare utile personalizzare il progetto, disattivare gli avvisi non pertinenti all'applicazione e trasformare altri avvisi in errori. Questa pagina illustra come attivare e disattivare i singoli avvisi.  
   
@@ -76,12 +78,12 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
  ID: 42017  
   
 ### <a name="operands-of-type-object-warnings"></a>Avvisi per operandi di tipo Object  
- Vengono generati quando appaiono operandi di tipo `Object` che potrebbero generare un errore con `Option Strict On`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
+ Vengono generati quando appaiono operandi di tipo `Object` che potrebbero generare un errore con **Option Strict On**. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42018 e 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>Avvisi per dichiarazioni che richiedono la clausola As  
- Vengono generati quando la dichiarazione di una variabile, una funzione o una proprietà priva di una clausola `As` darebbe origine a un errore con `Option Strict On`. Le variabili senza un tipo assegnato vengono considerate di tipo `Object`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
+ Vengono generati quando la dichiarazione di una variabile, una funzione o una proprietà priva di una clausola `As` darebbe origine a un errore con **Option Strict On**. Le variabili senza un tipo assegnato vengono considerate di tipo `Object`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42020 (dichiarazione di variabile), 42021 (dichiarazione di funzione) e 42022 (dichiarazione di proprietà).  
   
@@ -100,22 +102,22 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
   
  ID: 42025  
   
-### <a name="recursive-operator-or-property-access-warnings"></a>Avvisi di accesso ricorsivo operatore o proprietà  
+### <a name="recursive-operator-or-property-access-warnings"></a>Avvisi di accesso ricorsivo a un operatore o una proprietà  
  Vengono generati quando il corpo di una routine usa lo stesso operatore o la stessa proprietà in cui è definito. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42004 (operatore), 42026 (proprietà)  
   
-### <a name="function-or-operator-without-return-value-warning"></a>Avviso di funzione/operatore senza valore restituito  
+### <a name="function-or-operator-without-return-value-warning"></a>Avviso di funzione o operatore senza valore restituito  
  Viene generato quando per una funzione o un operatore non è specificato un valore restituito. Ciò include l'omissione di un'istruzione `Set` alla variabile locale implicita con lo stesso nome della funzione. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42105 (funzione), 42016 (operatore)  
   
-### <a name="overloads-modifier-used-in-a-module-warning"></a>Avviso di modificatore Overloads usato in Module  
- Viene generato quando il modificatore `Overloads` viene usata in `Module`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
+### <a name="overloads-modifier-used-in-a-module-warning"></a>Avviso di modificatore Overloads usato in un modulo  
+ Viene generato quando il modificatore `Overloads` viene usato in `Module`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42028  
   
-### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Avviso per blocchi Catch duplicati o sovrapposti  
+### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Avvisi per blocchi catch duplicati o sovrapposti  
  Viene generato quando un blocco `Catch` non viene mai raggiunto perché è correlato ad altri blocchi `Catch` definiti. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42029, 42031  
@@ -125,5 +127,5 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
  [Istruzione Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
- [Compilazione (pagina), Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
+ [Pagina Compilazione, Creazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Avvisi del compilatore disattivati per impostazione predefinita](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

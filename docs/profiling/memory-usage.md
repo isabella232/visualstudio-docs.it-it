@@ -2,21 +2,23 @@
 title: Analizzare l'utilizzo della memoria in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profilare l'utilizzo della memoria in Visual Studio
 È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo per comprendere meglio l'impatto sull'utilizzo della memoria dei tipi di oggetti. È possibile raccogliere snapshot di app.NET, native o in modalità mista (.NET e native).  
@@ -33,6 +35,12 @@ ms.lasthandoff: 01/04/2018
 >  **Supporto allocatore personalizzato.** Il profiler della memoria nativo raccoglie dati relativi a eventi [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati in fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione.  Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+In questa esercitazione si eseguono le attività seguenti:
+
+> [!div class="checklist"]
+> * Creare snapshot della memoria
+> * Analizzare i dati di utilizzo della memoria
 
 ## <a name="collect-memory-usage-data"></a>Raccogliere i dati sull'utilizzo della memoria
 
@@ -165,6 +173,9 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
   
  [Blog su Visual C++: profilatura della memoria in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Vedere anche
- [Profilatura in Visual Studio](../profiling/index.md)  
- [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>Passaggi successivi
+
+In questa esercitazione si è appreso come raccogliere e analizzare i dati d'uso della memoria. Se è già stato completata la [presentazione del profiler](../profiling/profiling-feature-tour.md), è possibile vedere come analizzare l'uso della CPU nelle app di Windows.
+
+> [!div class="nextstepaction"]
+> [Analizzare l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md) 

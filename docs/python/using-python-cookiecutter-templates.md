@@ -1,27 +1,27 @@
 ---
-title: Estensione CookieCutter per Python in Visual Studio | Microsoft Docs
+title: Estensione CookieCutter per Python | Microsoft Docs
 description: Visual Studio supporta l'estensione grafica Cookiecutter per individuare modelli per il codice Python e creare progetti da tali modelli.
-ms.custom: 
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Uso dell'estensione Cookiecutter
 
@@ -35,7 +35,7 @@ Dopo aver eseguito l'installazione, selezionare **Visualizza > Cookiecutter Expl
 
 ## <a name="cookiecutter-workflow"></a>Flusso di lavoro di Cookiecutter
 
-Il processo di utilizzo di Cookiecutter include la ricerca e selezione di un modello, la clonazione del modello nel computer locale, l'impostazione delle opzioni e quindi la creazione di codice dal modello, come descritto nelle sezioni che seguono.
+L'uso di Cookiecutter include la ricerca e la selezione di un modello, la clonazione del modello nel computer locale, l'impostazione delle opzioni e quindi la creazione di codice dal modello, come descritto nelle sezioni che seguono.
 
 ### <a name="browsing-templates"></a>Selezione dei modelli
 
@@ -207,7 +207,7 @@ Alcuni modelli possono usare script di post-generazione non compatibili con l'in
 
 ### <a name="hook-script-not-supported-on-windows"></a>Script hook non supportato in Windows
 
-Se lo script di post-generazione è `.sh`, potrebbe non essere associato a un'applicazione nel computer Windows in uso. È possibile che venga visualizzata una finestra di dialogo di Windows che richiede di trovare un'applicazione compatibile in Windows Store.
+Se lo script di post-generazione è `.sh`, può non essere associato a un'applicazione nel computer Windows in uso. È possibile che venga visualizzata una finestra di dialogo di Windows che richiede di trovare un'applicazione compatibile in Windows Store.
 
 ### <a name="templates-with-known-issues"></a>Modelli con problemi noti
 

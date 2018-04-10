@@ -1,11 +1,12 @@
 ---
 title: Icone di Visualizzazione classi e Visualizzatore oggetti | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - icons, in Object Browser
@@ -19,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -46,7 +48,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |![Simbolo Mappa](../ide/media/vxmap_icon.gif "vxMap_Icon")|Mappa|![Simbolo di errore con punto esclamativo](../ide/media/vxerror_icon.gif "vxError_Icon")|Sconosciuto|  
 |![Simbolo Inoltro dei tipi](../ide/media/ob_type_forward.gif "ob_type_forward")|Inoltro del tipo|||  
 
-## <a name="signal-icons"></a>icone di segnalazione
+## <a name="signal-icons"></a>Icone di segnalazione
 
 Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne indicano l'accessibilità.
 

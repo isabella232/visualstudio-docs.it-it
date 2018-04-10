@@ -1,17 +1,17 @@
 ---
 title: Risoluzione dei problemi di registrazione del pacchetto RegPkg | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - RegPkg
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
-caps.latest.revision: 
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen

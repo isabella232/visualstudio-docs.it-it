@@ -1,27 +1,27 @@
 ---
-title: Debug del codice Python in Visual Studio | Microsoft Docs
-description: "Presentazione dettagliata delle funzionalità di debug in Visual Studio specifiche per il codice Python, inclusa l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'individuazione delle eccezioni e il debug nella finestra interattiva."
-ms.custom: 
+title: Debug del codice Python | Microsoft Docs
+description: Presentazione dettagliata delle funzionalità di debug in Visual Studio specifiche per il codice Python, inclusa l'impostazione dei punti di interruzione, l'esecuzione di istruzioni, il controllo dei valori, l'individuazione delle eccezioni e il debug nella finestra interattiva.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -49,7 +49,7 @@ Vedere anche gli articoli seguenti sul debug nei vari scenari:
 
 ## <a name="basic-debugging"></a>Debug di base
 
-Il flusso di lavoro del debug di base include l'impostazione dei punti di interruzione, l'esecuzione di codice istruzione per istruzione, il controllo dei valori e la gestione delle eccezioni, come descritto nelle sezioni seguenti. Per informazioni dettagliate sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
+Il flusso di lavoro del debug di base include l'impostazione dei punti di interruzione, l'esecuzione di codice istruzione per istruzione, il controllo dei valori e la gestione delle eccezioni, come descritto nelle sezioni seguenti.
 
 È possibile avviare una sessione di debug in diversi modi, ovvero scegliendo **Debug > Avvia debug**, facendo clic sul pulsante **Avvia** sulla barra degli strumenti oppure premendo F5. Queste azioni eseguono il file di avvio del progetto (visualizzato in grassetto in Esplora soluzioni) con l'ambiente attivo del progetto ed eventuali argomenti della riga di comando o percorsi di ricerca specificati in Proprietà progetto (vedere [Opzioni di debug del progetto](#project-debugging-options)). In **Visual Studio 2017 versione 15.6** e versioni successive viene generato un avviso se non è impostato un file di avvio. Nelle versioni precedenti è possibile che venga visualizzata una finestra di output con l'interprete Python in esecuzione o che la finestra di output venga visualizzata brevemente e poi scompaia. In qualsiasi caso, fare clic con il pulsante destro del mouse sul file appropriato e scegliere **Imposta come file di avvio**.
 
@@ -198,3 +198,7 @@ Si noti che le finestre standard del debugger, ad esempio Processi, Thread e Sta
 La finestra Debug interattivo ha un set di opzioni specifico, a cui è possibile accedere tramite **Strumenti > Opzioni > Strumenti Python > Finestra debug interattivo**. A differenza della finestra interattiva standard di Python, in cui è presente un'istanza separata per ogni ambiente Python, esiste una sola finestra Debug interattivo che usa sempre l'interprete Python per il processo sottoposto a debug. Vedere [Opzioni, Opzioni di debug](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Opzioni della finestra Debug interattivo](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>Vedere anche
+
+Per informazioni dettagliate sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).

@@ -1,11 +1,11 @@
 ---
 title: Procedure consigliate per l'uso dei frammenti di codice | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'uso dei frammenti di codice
 
@@ -33,7 +33,7 @@ In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigeneran
 
 Quando i percorsi dei file vengono adattati all'applicazione, considerare quanto segue:
 
-- Ricerca di una posizione accessibile. È possibile che gli utenti non accedano alla cartella Programmi del computer. Archiviare i file insieme ai file dell'applicazione potrebbe non essere la scelta corretta.
+- Ricerca di una posizione accessibile. È possibile che gli utenti non dispongano dell'accesso alla cartella *Programmi* del computer. Archiviare i file insieme ai file dell'applicazione potrebbe non essere la scelta corretta.
 
 - Ricerca di una posizione sicura. Non è sicuro archiviare i file nella cartella radice (*C:\\*). Per i dati dell'applicazione è consigliabile scegliere la cartella *Dati applicazioni*. Per i singoli dati utente, l'applicazione può creare un file per ogni utente nella cartella *Documenti*.
 
@@ -55,7 +55,7 @@ In base a dove un frammento viene usato nel codice sorgente e a come viene modif
 
 - Passaggio dei dati a tecnologie script
 
-Per altre informazioni, vedere [Securing Applications](../ide/securing-applications.md) (Protezione delle applicazioni).
+Per altre informazioni, vedere [Protezione delle applicazioni](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>Frammenti di codice scaricati
 

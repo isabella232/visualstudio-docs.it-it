@@ -1,28 +1,28 @@
 ---
-title: Uso di C++ e Python in Visual Studio | Microsoft Docs
+title: Utilizzo di C++ e Python | Microsoft Docs
 description: Processo e passaggi per scrivere un modulo o un'estensione di C++ per Python in Visual Studio
-ms.custom: 
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: tutorial
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 
@@ -50,6 +50,8 @@ Per altre informazioni, vedere [Installazione del supporto di Python in Visual S
 ## <a name="create-the-python-application"></a>Creare un'applicazione Python
 
 1. Creare un nuovo progetto di Python in Visual Studio selezionando **File > Nuovo > Progetto**. Cercare "Python", selezionare il modello **Applicazione Python**, assegnare a questo un nome e un percorso appropriati e selezionare **OK**.
+
+1. L'utilizzo di C++ richiede l'uso di un interprete Python a 32 bit (è consigliato Python 3.6). Nella finestra **Esplora soluzioni** di Visual Studio espandere il nodo del progetto e quindi il nodo **Ambienti Python**. Se come impostazione predefinita non viene visualizzato un ambiente a 32 bit (in grassetto o con etichetta "impostazioni globali predefinite"), seguire le istruzioni in [Selezione di un ambiente di Python per un progetto](selecting-a-python-environment-for-a-project.md). Se non è installato alcun interprete a 32 bit, vedere [Installazione di interpreti Python](installing-python-interpreters.md).
 
 1. Nel file `.py` del progetto, incollare il codice seguente che effettua il benchmark del calcolo di una tangente iperbolica, implementato senza usare la libreria matematica per un confronto più semplice. È anche possibile immettere il codice manualmente per provare alcune delle [funzionalità di modifica Python](editing-python-code-in-visual-studio.md).
 

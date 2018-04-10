@@ -1,15 +1,15 @@
 ---
-title: Utilizzo di Python in Visual Studio, Passaggio 4, Debug | Microsoft Docs
+title: Utilizzo di Python, passaggio 4, debug | Microsoft Docs
 description: Passaggio 4 di un'esercitazione di base per l'utilizzo di Python all'interno di Visual Studio, su come eseguire il codice Python nel debugger.
-ms.custom: 
+ms.custom: mvc
 ms.date: 03/08/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c9cf775bb7edbdb51f7eb5ce6994fedaee13c9f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 49f29f310997b685369142e21cc71df8a21871cd
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Passaggio 4: Esecuzione del codice nel debugger
 

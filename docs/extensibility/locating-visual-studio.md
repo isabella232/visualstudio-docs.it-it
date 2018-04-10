@@ -1,12 +1,12 @@
 ---
 title: Individuazione di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/21/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - deployment, VSIX
