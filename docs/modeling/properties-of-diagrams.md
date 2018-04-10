@@ -1,9 +1,9 @@
 ---
-title: "Proprietà dei diagrammi | Documenti Microsoft"
-ms.custom: 
+title: Proprietà dei diagrammi | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="properties-of-diagrams"></a>Proprietà di diagrammi
 È possibile impostare le proprietà che specificano come diagrammi verranno visualizzato nella finestra di progettazione generato. Ad esempio, è possibile specificare un colore predefinito per il testo nel diagramma.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 |Attributi personalizzati|Consente di aggiungere attributi alla classe il codice generato.|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal diagramma (`none`, `abstract` o `sealed`).|nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal diagramma (`none`, `abstract` o `sealed`).|Nessuno|  
 |Diagramma di base|Classe di base di questo diagramma.|(nessuno)|  
 |nome|Il nome di questo diagramma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questo diagramma.|Spazio dei nomi corrente|  

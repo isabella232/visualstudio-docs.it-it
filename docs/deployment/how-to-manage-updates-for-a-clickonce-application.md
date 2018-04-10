@@ -1,12 +1,12 @@
 ---
-title: 'Procedura: gestire gli aggiornamenti per un''applicazione ClickOnce | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni è possono verificare gli aggiornamenti automaticamente o a livello di codice. Lo sviluppatore è un numero elevato di flessibilità per specificare come e quando vengono eseguiti controlli di aggiornamento, se gli aggiornamenti sono obbligatori e in cui l'applicazione deve cercare gli aggiornamenti.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere cercati gli aggiornamenti automaticamente o a livello di codice. Lo sviluppatore è un numero elevato di flessibilità per specificare come e quando vengono eseguiti controlli di aggiornamento, se gli aggiornamenti sono obbligatori e in cui l'applicazione deve cercare gli aggiornamenti.  
   
  È possibile configurare l'applicazione per cercare gli aggiornamenti automaticamente prima dell'avvio dell'applicazione o a intervalli impostati dopo l'avvio dell'applicazione. È inoltre possibile specificare una versione minima richiesta. ovvero, se la versione dell'utente è inferiore alla versione richiesta è installato un aggiornamento.  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/22/2017
   
  Per ulteriori informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
- La gestione degli aggiornamenti il **gli aggiornamenti dell'applicazione** nella finestra di dialogo disponibile dal **pubblica** pagina del **Progettazione progetti.**  
+ Comportamento di aggiornamento viene gestito nel **gli aggiornamenti dell'applicazione** della finestra di dialogo disponibile dal **pubblica** pagina del **Progettazione progetti.**  
   
 ### <a name="to-check-for-updates-before-the-application-starts"></a>Per cercare gli aggiornamenti prima dell'avvio dell'applicazione  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  Nel **Aggiornamenti applicazione** finestra di dialogo, assicurarsi che il **controllare la disponibilità di aggiornamenti** casella di controllo è selezionata.  
   
-5.  Nel **percorso di aggiornamento** immettere il percorso di aggiornamento con un URL completo, utilizzando il formato http://Hostname/ApplicationName o un percorso UNC nel formato \\\Server\ApplicationName, oppure fare clic su di **Sfoglia** per cercare il percorso di aggiornamento.  
+5.  Nel **percorso di aggiornamento** immettere il percorso di aggiornamento con un URL completo, utilizzando il formato http://Hostname/ApplicationName, o un percorso UNC nel formato \\\Server\ApplicationName oppure fare clic sul **Sfoglia** per cercare il percorso di aggiornamento.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Per cercare gli aggiornamenti a livello di codice  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  Nel **Aggiornamenti applicazione** finestra di dialogo, assicurarsi che il **controllare la disponibilità di aggiornamenti** casella di controllo è deselezionata. (Facoltativamente, è possibile selezionare questa casella di controllo per verificare gli aggiornamenti a livello di codice e anche consentono il runtime di ClickOnce cercare gli aggiornamenti automaticamente.)  
   
-5.  Nel **percorso di aggiornamento** immettere il percorso di aggiornamento con un URL completo, utilizzando il formato http://Hostname/ApplicationName o un percorso UNC nel formato \\\Server\ApplicationName, oppure fare clic su di **Sfoglia** per cercare il percorso di aggiornamento. Il percorso di aggiornamento è in cui l'applicazione cerca una versione aggiornata di se stesso.  
+5.  Nel **percorso di aggiornamento** immettere il percorso di aggiornamento con un URL completo, utilizzando il formato http://Hostname/ApplicationName, o un percorso UNC nel formato \\\Server\ApplicationName oppure fare clic sul **Sfoglia** per cercare il percorso di aggiornamento. Il percorso di aggiornamento è in cui l'applicazione cerca una versione aggiornata di se stesso.  
   
 6.  Creare un pulsante, voce di menu o un altro elemento dell'interfaccia utente in un Windows Form che gli utenti possono selezionare per controllare gli aggiornamenti. Dal gestore di evento dell'elemento, chiamare un metodo per verificare e installare gli aggiornamenti. È possibile trovare un esempio di codice Visual Basic e Visual c# per tale metodo in [procedura: verificare la presenza di aggiornamenti dell'applicazione a livello di codice utilizzando l'API della distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

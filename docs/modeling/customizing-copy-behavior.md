@@ -1,9 +1,9 @@
 ---
 title: Personalizzazione del comportamento di copia | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio specifico di dominio (DSL, Domain-Specific Language) creato con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, è possibile modificare il tipo di comportamento che si ottiene quando l'utente copia e incolla degli elementi.  
@@ -31,7 +31,7 @@ In un linguaggio specifico di dominio (DSL, Domain-Specific Language) creato con
   
  Questa regola si applica ricorsivamente a elementi e collegamenti copiati.  
   
- ![Copiare e incollare elementi](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+ ![Copiati e incollati gli elementi](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
  Gli elementi e i collegamenti copiati vengono serializzati e archiviati in un oggetto <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), che viene inserito negli Appunti.  
   
@@ -83,10 +83,10 @@ partial class MyDslClipboardCommandSet
   
  Eseguire l'override di `ClipboardCommandSet.ProcessOnPasteCommand()` per creare i collegamenti aggiuntivi dopo la chiamata del metodo di base.  
   
- **Personalizzare i formati in cui è possano copiare gli elementi** alle applicazioni esterne, ad esempio, per aggiungere un bordo al form bitmap.  
+ **Personalizzare i formati in cui possono essere copiati elementi** ad applicazioni esterne, ad esempio, per aggiungere un bordo al form bitmap.  
  Eseguire l'override *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` nel progetto DslPackage.  
   
- **Personalizzare la modalità elementi vengono copiati negli Appunti mediante il comando di copia, ma non in un'operazione di trascinamento.**  
+ **Personalizzare la modalità elementi vengono copiati negli Appunti per il comando di copia, ma non in un'operazione di trascinamento.**  
  Eseguire l'override *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.  
   
  **Mantenere il layout di forme tramite copia e Incolla.**  
@@ -216,7 +216,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Consentire all'utente di trascinamento della selezione di elementi.**  
  Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a>Personalizzazione del comportamento di Copia collegamento  
+##  <a name="customizeLinks"></a> Personalizzazione del comportamento di Copia collegamento  
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione del linguaggio DSL, selezionare un ruolo a un lato di una relazione e nel set di finestra delle proprietà di **propaga copia** valore.  
   
  ![Propagazione della proprietà di copia del ruolo di dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -564,7 +564,7 @@ namespace Company.MyDsl
   
 ## <a name="see-also"></a>Vedere anche
 
-[Lo spostamento e la creazione degli elementi di personalizzazione](../modeling/customizing-element-creation-and-movement.md)   
+[Personalizzare la creazione degli elementi e lo spostamento dei](../modeling/customizing-element-creation-and-movement.md)   
 [Procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)   
 [Personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)   
 [Esempio: Esempio VMSDK circuito diagrammi](http://go.microsoft.com/fwlink/?LinkId=213879)

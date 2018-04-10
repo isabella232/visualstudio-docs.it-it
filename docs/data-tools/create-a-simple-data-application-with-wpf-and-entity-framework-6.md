@@ -1,10 +1,10 @@
 ---
 title: Creare un'applicazione dati semplice con WPF e di Entity Framework 6 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF e di Entity Framework 6
 
@@ -50,13 +50,13 @@ Questo esempio viene utilizzato SQL Server Express LocalDB e database di esempio
   
 1.  In Visual Studio, scegliere **File**, **New**, **progetto...**  e quindi creare una nuova applicazione WPF in c#.  
   
-2.  Successivamente sarà necessario aggiungere il pacchetto NuGet per Entity Framework 6. In Esplora soluzioni selezionare il nodo del progetto. Nel menu principale scegliere **progetto**, **Gestisci pacchetti NuGet...**  
+2.  Successivamente sarà necessario aggiungere il pacchetto NuGet per Entity Framework 6. In Esplora soluzioni selezionare il nodo del progetto. Nel menu principale, scegliere **Project**, **Gestisci pacchetti NuGet...**  
   
      ![Gestire la voce di menu pacchetti NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png "raddata_vs2015_manage_nuget_packages")  
   
 3.  In Gestione pacchetti NuGet, fare clic su di **Sfoglia** collegamento. Entity Framework è probabile che il pacchetto nell'elenco superiore. Fare clic su **installare** nel riquadro di destra e seguire le istruzioni. La finestra di Output indicherà al termine dell'installazione.  
   
-     ![Pacchetto NuGet di Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
+     ![Entity Framework NuGet Package](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
   
 4.  È ora possibile usare Visual Studio per creare un modello basato sul database Northwind.  
   
@@ -74,7 +74,7 @@ Questo esempio viene utilizzato SQL Server Express LocalDB e database di esempio
   
 4.  Nella pagina successiva della procedura guidata, si sceglie quali tabelle, stored procedure e altri oggetti di database da includere nel modello di Entity Framework. Espandere il nodo dbo nella visualizzazione albero e scegliere i clienti, ordini e dettagli dell'ordine. Lasciare le impostazioni predefinite selezionate e fare clic su **fine**.  
   
-     ![Seleziona oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png "raddata Seleziona oggetti di Entity Framework")  
+     ![Seleziona oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png "raddata seleziona EF oggetti")  
   
 5.  La procedura guidata genera le classi c# che rappresentano il modello di Entity Framework. Questi sono normale precedente in c# le classi e si verrà databind all'interfaccia utente WPF. Il file con estensione edmx descrive le relazioni e altri metadati che associa le classi di oggetti nel database.  I file con estensione tt sono modelli T4 che generano il codice che operano sul modello e salvare le modifiche al database. È possibile visualizzare tutti questi file in Esplora soluzioni sotto il nodo Northwind_model:  
 
@@ -100,7 +100,7 @@ Ora si è pronti per collegare questo modello nella pagina XAML in modo che poss
   
 1.  Dal menu principale scegliere **progetto > Aggiungi nuova origine dati** per visualizzare il **configurazione guidata origine dati**. Scegliere **oggetto** perché viene eseguita l'associazione per le classi di modello, non al database:  
   
-     ![Configurazione guidata origine dati con l'oggetto origine](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png "raddata configurazione guidata origine dati con l'oggetto origine")  
+     ![Configurazione guidata origine dati con l'oggetto origine](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png "raddata configurazione guidata origine dati con origine oggetto")  
   
 2.  Selezionare cliente.  (Origini per gli ordini verranno automaticamente generate dalla proprietà di navigazione degli ordini cliente.)  
   
@@ -118,9 +118,9 @@ Ora si è pronti per collegare questo modello nella pagina XAML in modo che poss
         </Grid.RowDefinitions>
     ```
 
-5.  Ora aprire MainWindow. XAML in modo che venga visualizzato nella finestra di progettazione. In questo modo, la finestra Origini dati vengono visualizzati come un'opzione nel margine accanto della casella degli strumenti finestra Visual Studio. Fare clic sulla scheda per aprire la finestra o in caso contrario premere **Maiusc + Alt + D** oppure scegliere **View &#124; Altri Windows &#124; Origini dati**. Verranno visualizzare ogni proprietà della classe di clienti nella propria casella di testo. Prima di fare clic sulla freccia nella casella combinata dei clienti e scegliere **dettagli**. Trascinare quindi il nodo nella parte centrale dell'area di progettazione, in modo che la finestra di progettazione sia in grado che si desidera venga inserito nella riga centrale.  Se si sono disponibili, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento della griglia, ma a questo punto è possibile disporle nel modo desiderato nel form.  Ad esempio, potrebbe essere opportuno inserire una casella di testo nome nella parte superiore, sopra l'indirizzo. L'applicazione di esempio per l'articolo riordina i campi e consente di riorganizzare in due colonne.  
+5.  Ora aprire MainWindow. XAML in modo che venga visualizzato nella finestra di progettazione. In questo modo, la finestra Origini dati vengono visualizzati come un'opzione nel margine accanto della casella degli strumenti finestra Visual Studio. Fare clic sulla scheda per aprire la finestra, oppure in caso contrario **Maiusc + Alt + D** oppure scegliere **visualizzazione &#124; altre finestre &#124; origini**. Verranno visualizzare ogni proprietà della classe di clienti nella propria casella di testo. Prima di fare clic sulla freccia nella casella combinata dei clienti e scegliere **dettagli**. Trascinare quindi il nodo nella parte centrale dell'area di progettazione, in modo che la finestra di progettazione sia in grado che si desidera venga inserito nella riga centrale.  Se si sono disponibili, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento della griglia, ma a questo punto è possibile disporle nel modo desiderato nel form.  Ad esempio, potrebbe essere opportuno inserire una casella di testo nome nella parte superiore, sopra l'indirizzo. L'applicazione di esempio per l'articolo riordina i campi e consente di riorganizzare in due colonne.  
   
-     ![Associazione dell'origine dati i clienti ai singoli controlli](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "associazione all'origine dati clienti raddata sui singoli controlli")  
+     ![Associazione dell'origine dati ai clienti sui singoli controlli](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "associazione all'origine dati ai clienti raddata sui singoli controlli")  
   
      Nella visualizzazione codice, è ora possibile visualizzare un nuovo `Grid` nella riga 1 (la riga centrale) dell'elemento padre della griglia. L'elemento padre della griglia è un `DataContext` attributo che fa riferimento a CollectionViewSource che è stato aggiunto il `Windows.Resources` elemento. Dato il contesto dei dati, quando la prima casella di testo, ad esempio, viene associato a tale nome "Address" viene mappato al `Address` proprietà nell'oggetto `Customer` oggetto CollectionViewSource.  
   

@@ -1,9 +1,9 @@
 ---
 title: 'Procedura: accedere e limitare la selezione corrente | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Procedura: accedere e vincolare la selezione corrente
 Quando si scrive un gestore comandi o movimenti per il linguaggio specifico di dominio, è possibile determinare quale elemento complessiva dell'utente. È possibile anche impedire alcune forme o i campi selezionati. Ad esempio, è possibile disporre che quando l'utente fa clic su un elemento decorator icona, la forma che lo contiene viene selezionata. Limitare la selezione in questo modo riduce il numero dei gestori che è necessario scrivere. Rende inoltre più semplice per l'utente, che è possibile fare clic su un punto qualsiasi nella forma senza la necessità di evitare l'elemento decorator.  

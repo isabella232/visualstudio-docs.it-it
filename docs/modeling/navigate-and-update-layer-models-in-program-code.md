@@ -1,9 +1,9 @@
 ---
 title: Esplorare e aggiornare i modelli di livello nel codice programma | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - layer models, navigating in program code
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: e79479e97efd953c1366348454eee70773faf07a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Esplorare e aggiornare i modelli di livello nel codice del programma
 Questo argomento descrive gli elementi e le relazioni nei modelli di livello, che è possibile esplorare e aggiornare usando codice programma. Per ulteriori informazioni sui diagrammi dipendenza dal punto di vista dell'utente, vedere [diagrammi dipendenza: riferimento](../modeling/layer-diagrams-reference.md) e [diagrammi dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md).  
@@ -56,7 +56,7 @@ using (ILinkedUndoTransaction t =
 ## <a name="comments"></a>Commenti  
  I commenti possono essere contenuti in livelli o nel modello di livello e possono inoltre essere collegati a qualsiasi elemento livello:  
   
- ![È possibile associare commenti a qualsiasi elemento livello. ] (../modeling/media/layerapi_comments.png "LayerApi_Comments")  
+ ![Possano associare commenti a qualsiasi elemento livello. ] (../modeling/media/layerapi_comments.png "LayerApi_Comments")  
   
  Un commento può essere collegato a qualsiasi numero di elementi o a nessun elemento.  
   
@@ -80,7 +80,7 @@ IEnumerable<ILayerComment> comments =
 ## <a name="layer-elements"></a>Elementi di livello  
  Tutti i tipi di elemento che possono essere contenuti in un modello sono elementi di livello:  
   
- ![dipendenza diagramma sono oggetti ILayerElements. ] (../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
+ ![i contenuti del diagramma dipendenza sono oggetti ILayerElements. ] (../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
   
 ## <a name="properties"></a>Proprietà  
  Ogni `ILayerElement` ha un dizionario di stringhe denominato`Properties`. È possibile usare questo dizionario per collegare informazioni arbitrarie a qualsiasi elemento livello.  

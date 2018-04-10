@@ -1,12 +1,12 @@
 ---
 title: Visualizzare la finestra Stack in parallelo tramite thread | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug.parallelstacks
@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Visualizzazione thread e le attività tramite la finestra Stack in parallelo
 Il **stack in parallelo** finestra è utile quando si esegue il debug di applicazioni multithreading. Il relativo **visualizzazione thread** Mostra informazioni sullo stack di chiamate per tutti i thread nell'applicazione. Consente di navigare tra i thread e gli stack frame nei thread. Nel codice gestito, il **visualizzazione attività** Mostra stack di chiamate di <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti. Nel codice nativo, il **visualizzazione attività** Mostra stack di chiamate di [gruppi di attività](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [gli algoritmi paralleli](/cpp/parallel/concrt/parallel-algorithms), [agenti asincroni](/cpp/parallel/concrt/asynchronous-agents)e [attività leggere](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -36,7 +36,7 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug di applica
 ## <a name="threads-view"></a>Visualizzazione Thread  
  Nell'illustrazione seguente viene mostrato un thread passato da principale ad A, quindi a B, infine a codice esterno. Altri due thread sono partiti da codice esterno per poi passare ad A, ma uno dei thread ha proseguito fino a B, quindi a codice esterno, mentre l'altro thread ha proseguito fino a C, quindi ad AnonymousMethod.  
   
- ![Visualizzazione nella finestra Stack in parallelo thread](../debugger/media/parallel_stacksthread.png "Parallel_StacksThread")  
+ ![Thread di visualizzazione nella finestra Stack in parallelo](../debugger/media/parallel_stacksthread.png "Parallel_StacksThread")  
   
  Nella figura, il percorso di chiamate del thread corrente è evidenziato in blu, e il percorso corrente (stack frame attivo) del thread viene indicato dalla freccia gialla. È possibile modificare lo stack frame corrente selezionando un metodo diverso nella **stack in parallelo** finestra. Ciò potrebbe comportare anche la modifica del thread corrente, a seconda che il metodo selezionato sia già parte del thread corrente o di un altro thread. Nella tabella seguente vengono descritte le principali funzionalità del **stack in parallelo** finestra come mostrato nell'illustrazione.  
   
@@ -111,7 +111,7 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug di applica
   
  Come descritto nella tabella precedente, al passaggio del mouse su un metodo, è possibile visualizzare informazioni aggiuntive. Nell'immagine seguente sono mostrate le informazioni nella descrizione comandi per la visualizzazione Thread e la visualizzazione Attività.  
   
- ![Le descrizioni comandi nella finestra Stack in parallelo](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
+ ![Descrizioni comandi nella finestra Stack in parallelo](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Visualizzazione metodo  
  Dalla visualizzazione Thread o Attività è possibile ruotare il grafico sul metodo corrente facendo clic sull'icona Visualizzazione metodo nella barra degli strumenti. La visualizzazione metodo mostra immediatamente tutti i metodi in tutti i thread che chiamano o sono chiamati dal metodo corrente. Nell'illustrazione seguente viene mostrata una visualizzazione Thread e viene illustrato come le stesse informazioni appaiono nella visualizzazione metodo.  
@@ -121,10 +121,10 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug di applica
  Passando a un nuovo stack frame, quel metodo diventa il metodo corrente e nella finestra vengono visualizzati tutti i chiamanti e i chiamati per il nuovo metodo. È possibile che, in conseguenza a ciò, alcuni thread compaiano o scompaiano dalla visualizzazione, a seconda che il metodo sia visualizzato nei relativi stack di chiamate. Per tornare alla visualizzazione Stack, fare nuovamente clic sul pulsante della barra degli strumenti Visualizzazione metodo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Introduzione al debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md)   
+ [Introduzione al debug di un'applicazione a thread multipli](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
  [Programmazione parallela](/dotnet/standard/parallel-programming/index)   
  [Utilizzo della finestra attività](../debugger/using-the-tasks-window.md)   
- [Classe di attività](../extensibility/debugger/task-class-internal-members.md)
+ [Classe dell'attività](../extensibility/debugger/task-class-internal-members.md)

@@ -1,9 +1,9 @@
 ---
 title: Aggiornamento forme e connettori in modo da riflettere il modello | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aggiornamento di forme e di connettori per riflettere il modello
 In un linguaggio specifico di dominio in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile apportare l'aspetto di una forma riflettono lo stato del modello sottostante.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Questo metodo può essere utilizzato sia per le proprietà di dominio e non dell'archivio di funzionalità, ad esempio la dimensione della forma.  
   
-##  <a name="OnAssociatedProperty"></a>Utilizzare AssociateValueWith per aggiornare altre funzionalità di una forma  
+##  <a name="OnAssociatedProperty"></a> Utilizzare AssociateValueWith per aggiornare altre funzionalità di una forma  
  Per alcune funzionalità di una forma, ad esempio se dispone di un'ombreggiatura o lo stile della freccia di un connettore, non è presente alcun metodo incorporato di esporre la funzionalità come una proprietà di dominio.  Le modifiche apportate a tali funzionalità non sono sotto il controllo del sistema delle transazioni. Pertanto, non è appropriato per aggiornarli utilizzando le regole, poiché le regole non viene richiamate quando l'utente esegue il comando Annulla.  
   
  In alternativa, è possibile aggiornare tali funzionalità tramite <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Nell'esempio seguente, è possibile controllare lo stile della freccia di un connettore da un valore di una proprietà di dominio nella relazione che consente di visualizzare il connettore:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Dopo che è stato chiamato, tutte le modifiche alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in tutte le forme che presentano l'elemento del modello della proprietà.  
+ `AssociateValueWith()` deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Dopo che è stato chiamato, tutte le modifiche alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in tutte le forme che presentano l'elemento del modello della proprietà.  
   
  Non è necessario chiamare `AssociateValueWith()` per ogni istanza. Anche se InitializeResources è un metodo di istanza, viene richiamato solo una volta per ogni classe della forma.

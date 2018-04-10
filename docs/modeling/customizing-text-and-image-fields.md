@@ -1,9 +1,9 @@
 ---
 title: Personalizzazione dei campi immagine e testo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f577669c685d6f42b73c80f947e8edad0c7b9088
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 Quando si definisce un elemento decorator del testo in una forma, è rappresentato da TextField. Per esempi di inizializzazione di TextFields e altri ShapeFields, controllare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.  
@@ -174,7 +174,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="style-sets"></a>Imposta lo stile  
- Nell'esempio precedente viene illustrato come è possibile modificare il campo di testo per qualsiasi tipo di carattere che è disponibile. Tuttavia, un è preferibile passare in uno dei set di stili associato con la forma o con l'applicazione. A tale scopo, si esegue l'override <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> o GetTextBrushId().  
+ Nell'esempio precedente viene illustrato come è possibile modificare il campo di testo per qualsiasi tipo di carattere che è disponibile. Tuttavia, un è preferibile passare in uno dei set di stili associato con la forma o con l'applicazione. To do this, you override <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> or GetTextBrushId().  
   
  In alternativa, provare a modificare il set di stile della forma eseguendo l'override <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Questo ha l'effetto della modifica di tipi di carattere e i pennelli per tutti i campi di forma.  
   
@@ -270,6 +270,6 @@ partial class ExampleShape
   
 ## <a name="see-also"></a>Vedere anche  
  [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)   
- [L'impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)   
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

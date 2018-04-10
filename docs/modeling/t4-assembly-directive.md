@@ -1,9 +1,9 @@
 ---
 title: T4 Direttiva Assembly | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 9f586931bd14089beca787c24d92bc2605c4d5de
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 In un modello di testo della fase di progettazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la direttiva `assembly` carica un assembly in modo che il codice del modello possa utilizzarne i tipi. L'effetto è simile all'aggiunta di un riferimento all'assembly in un progetto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -65,7 +65,7 @@ In un modello di testo della fase di progettazione di [!INCLUDE[vsprvs](../code-
   
 -   Assembly contenente il modello DSL.  
   
-##  <a name="msbuild"></a>Le proprietà di progetto in MSBuild e Visual Studio  
+##  <a name="msbuild"></a> Utilizzando le proprietà del progetto in MSBuild e Visual Studio  
  Macro di Visual Studio come $ (SolutionDir) non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.  
   
  Modificare il file con estensione csproj o vbproj per definire una proprietà del progetto. In questo esempio viene definita una proprietà denominata `myLibFolder`:  

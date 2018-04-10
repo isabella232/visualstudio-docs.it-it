@@ -1,9 +1,9 @@
 ---
 title: 'Procedura: modificare un comando di Menu Standard in un linguaggio specifico di dominio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
 È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare **Taglia** in modo che esclude le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  Se si desidera creare i comandi di menu, vedere [procedura: aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>I comandi è possibile modificare?  
+##  <a name="what"></a> I comandi è possibile modificare?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Per trovare i comandi modificabili  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]
     >  In genere, è opportuno non modificare i file che sono stati generati. Eventuali modifiche andranno perse la volta successiva che i file verranno generati.  
   
-##  <a name="extend"></a>Estendere la classe di comando appropriato set  
+##  <a name="extend"></a> Estendere la classe di comando appropriato set  
  Creare un nuovo file contenente una dichiarazione parziale della classe di set di comandi.  
   
 #### <a name="to-extend-the-command-set-class"></a>Per estendere la classe di set di comandi  
@@ -76,9 +76,9 @@ ms.lasthandoff: 02/09/2018
     { internal partial class Language1CommandSet { ...  
     ```  
   
-     **Nota** se si usa il modello di file di classe per creare il nuovo file, è necessario risolvere lo spazio dei nomi sia il nome della classe.  
+     **Nota** se si usa il modello di file di classe per creare il nuovo file, è necessario correggere lo spazio dei nomi sia il nome della classe.  
   
-##  <a name="override"></a>L'override dei metodi di comando  
+##  <a name="override"></a> L'override dei metodi di comando  
  La maggior parte dei comandi hanno due metodi associati: il metodo con un nome come `ProcessOnStatus`... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente sceglie il comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Per cambiare la situazione in cui il comando viene visualizzato in un menu  
@@ -137,7 +137,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.  
   
--   `this.IsDiagramSelected()` - `true`Se l'utente fa clic su una parte vuota del diagramma.  
+-   `this.IsDiagramSelected()` - `true` Se l'utente fa clic su una parte vuota del diagramma.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

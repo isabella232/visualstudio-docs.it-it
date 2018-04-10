@@ -1,9 +1,9 @@
 ---
-title: "Personalizzazione della finestra proprietà | Documenti Microsoft"
-ms.custom: 
+title: Personalizzazione della finestra proprietà | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 È possibile personalizzare l'aspetto e il comportamento della finestra proprietà nel linguaggio specifico di dominio (DSL) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nella definizione DSL, definire le proprietà del dominio su ogni classe di dominio. Per impostazione predefinita, quando si seleziona un'istanza della classe, in un diagramma o in Esplora modelli, ogni proprietà del dominio è elencato nella finestra Proprietà. Questo consente di visualizzare e modificare i valori delle proprietà di dominio, anche se non li mappata a campi di forma nel diagramma.  
@@ -176,7 +176,7 @@ ms.lasthandoff: 02/09/2018
   
 -   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, per interagire con l'utente e aggiornare il valore della proprietà.  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, per specificare se l'editor di aprire una finestra di dialogo o fornire un menu a discesa.  
+-   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, per specificare se l'editor di aprire una finestra di dialogo o fornire un elenco a discesa.  
   
  È anche possibile fornire una rappresentazione grafica del valore della proprietà che verrà visualizzato nella griglia delle proprietà. A tale scopo, eseguire l'override `GetPaintValueSupported`, e `PaintValue`.  Per altre informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.  
   

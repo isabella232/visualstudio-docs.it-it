@@ -1,11 +1,11 @@
 ---
-title: "Uso dell'attività AspNetCompiler per la precompilazione delle applicazioni ASP.NET | Microsoft Docs"
-ms.custom: 
+title: Uso dell'attività AspNetCompiler per la precompilazione delle applicazioni ASP.NET | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AspNetCompiler
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, AspNetCompiler task
 - AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
-caps.latest.revision: 
+caps.latest.revision: 11
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
 ms.openlocfilehash: b1528cd71c689876cd2c496e9cfdaaf0a97f0186
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="aspnetcompiler-task"></a>Attività AspNetCompiler
 L'attività `AspNetCompiler` segue il wrapping di aspnet_compiler.exe, un'utilità per la precompilazione di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  

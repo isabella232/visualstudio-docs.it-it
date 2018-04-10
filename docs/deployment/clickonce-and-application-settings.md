@@ -1,12 +1,12 @@
 ---
 title: Impostazioni applicazione e ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - ClickOnce deployment, application settings
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="clickonce-and-application-settings"></a>Impostazioni dell'applicazione e ClickOnce
 Le impostazioni dell'applicazione per Windows Form semplifica creare, archiviare e gestire applicazioni personalizzate e le preferenze dell'utente nel client. Il documento seguente vengono descritti il funzionamento dei file di impostazioni in un'applicazione ClickOnce, e come ClickOnce viene eseguita la migrazione delle impostazioni quando l'utente effettua l'aggiornamento alla versione successiva.  
@@ -33,7 +33,7 @@ Le impostazioni dell'applicazione per Windows Form semplifica creare, archiviare
  Le informazioni seguenti si applicano solo ai provider di impostazioni dell'applicazione predefinito, la <xref:System.Configuration.LocalFileSettingsProvider> classe. Se si fornisce un provider personalizzato, tale provider determinerà come archivia i dati e le relative impostazioni tra le versioni di aggiornamento. Per ulteriori informazioni sui provider di impostazioni dell'applicazione, vedere [architettura Impostazioni applicazione](/dotnet/framework/winforms/advanced/application-settings-architecture).  
   
 ## <a name="application-settings-files"></a>File di impostazioni applicazione  
- Le impostazioni dell'applicazione vengono utilizzati due file: *app*. exe. config e User. config, dove *app* è il nome dell'applicazione Windows Form. User. config viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. *app*. exe. config, al contrario, verrà creato prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Visual Studio includerà automaticamente questo file quando si utilizza il **pubblica** comando. Se si crea un'applicazione ClickOnce mediante Mage.exe o MageUI.exe, è necessario assicurarsi che questo file è incluso con l'applicazione di altri file quando si popola il manifesto dell'applicazione.  
+ Le impostazioni dell'applicazione vengono utilizzati due file: *app*. exe. config e User. config, dove *app* è il nome dell'applicazione Windows Form. User. config viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. *app*. exe. config, al contrario, sarà presente prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Visual Studio includerà automaticamente questo file quando si utilizza il **pubblica** comando. Se si crea un'applicazione ClickOnce mediante Mage.exe o MageUI.exe, è necessario assicurarsi che questo file è incluso con l'applicazione di altri file quando si popola il manifesto dell'applicazione.  
   
  Nelle applicazioni Windows Form non distribuita tramite ClickOnce, un'applicazione *app*. exe. config viene archiviato nella directory dell'applicazione, mentre l'utente è archiviato il file di User. config **Documents and Settings**  cartella. In un'applicazione ClickOnce, *app*. exe. config si trova nella directory dell'applicazione all'interno della cache di ClickOnce, mentre User. config si trova nella directory di dati di ClickOnce per l'applicazione.  
   
@@ -61,5 +61,5 @@ Le impostazioni dell'applicazione per Windows Form semplifica creare, archiviare
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Cenni preliminari sulle impostazioni delle applicazioni](/dotnet/framework/winforms/advanced/application-settings-overview)   
- [Cenni preliminari sulla Cache di ClickOnce](../deployment/clickonce-cache-overview.md)   
+ [Informazioni generali sulla Cache di ClickOnce](../deployment/clickonce-cache-overview.md)   
  [Accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

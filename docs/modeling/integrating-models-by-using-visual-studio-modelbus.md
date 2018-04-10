@@ -1,9 +1,9 @@
 ---
 title: Integrazione di modelli tramite Modelbus di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fornisce un metodo per la creazione di collegamenti tra i modelli e da altri strumenti nei modelli. Ad esempio, è stato possibile collegare i modelli di linguaggio specifico di dominio (DSL) e i modelli UML. È anche possibile creare un set integrato di DSL.  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Accesso a un linguaggio DSL  
+##  <a name="provide"></a> Fornire l'accesso a un linguaggio DSL  
  Prima di poter creare un riferimento ModelBus a un modello o ai relativi elementi, è necessario definire un ModelBusAdapter per il linguaggio specifico di dominio. Il modo più facile prevede l'uso dell'estensione ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che aggiunge comandi alla finestra di progettazione del linguaggio specifico di dominio.  
   
-###  <a name="expose"></a>Per esporre una definizione DSL al Bus di modelli  
+###  <a name="expose"></a> Per esporre una definizione DSL al Bus di modelli  
   
 1.  Scaricare e installare l'estensione ModelBus di Visual Studio, se non è già installata. Per ulteriori informazioni, vedere [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  Nella cartella `ModelBusAdapters\bin\*` sono contenuti gli assembly compilati dal progetto `Dsl` e dal progetto `ModelBusAdapters`. Per fare riferimento a questo linguaggio specifico di dominio da un altro linguaggio specifico di dominio, è necessario importare questi assembly.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Verificare che sia possibile fare riferimento agli elementi  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Gli adapter di ModelBus utilizzano il guid di un elemento per identificarlo, per impostazione predefinita. Questi identificatori devono quindi essere persistenti nel file del modello.  
+ Per impostazione predefinita, gli adattatori ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usano il GUID di un elemento per identificarlo. Questi identificatori devono quindi essere persistenti nel file del modello.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Per assicurarsi che gli ID degli elementi siano persistenti  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Eseguire l'override di `ResolveElementReference` per individuare l'elemento corretto da un riferimento ModelBus  
   
-##  <a name="editRef"></a>L'accesso a un linguaggio DSL da un altro linguaggio DSL  
+##  <a name="editRef"></a> L'accesso a un linguaggio DSL da un altro linguaggio DSL  
  È possibile archiviare riferimenti ModelBus in una proprietà di dominio in un linguaggio specifico di dominio ed è possibile scrivere codice personalizzato per usarli. È anche possibile consentire all'utente di creare un riferimento ModelBus selezionando un file di modello e un elemento al suo interno.  
   
  Per abilitare un linguaggio DSL per l'utilizzo di riferimenti a un altro linguaggio DSL, è necessario innanzitutto renderlo un *consumer* di bus di modelli di riferimento.  
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/09/2018
   
     -   L'assembly DSL esposto, ad esempio **Fabrikam.FamilyTree.Dsl.dll**  
   
-    -   Il modello esposto del bus di assembly dell'adattatore, ad esempio **Fabrikam.FamilyTree.ModelBusAdapter.dll**  
+    -   Il modello esposto bus assembly dell'adattatore, ad esempio **Fabrikam.FamilyTree.ModelBusAdapter.dll**  
   
 4.  Aggiungere gli assembly .NET seguenti ai riferimenti del progetto del progetto DSL usato.  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 02/09/2018
 3.  Nel progetto di debug nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aggiungere i file che sono istanze di ogni DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus solo può risolvere i riferimenti per i modelli di elementi nello stesso [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.  
+    >  ModelBus di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] può risolvere solo riferimenti a modelli appartenenti alla stessa soluzione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ad esempio, non è possibile creare un riferimento a un file di modello in un'altra parte del file system.  
   
 4.  Creare alcuni elementi e collegamenti nell'istanza del DSL esposto e salvarlo.  
   

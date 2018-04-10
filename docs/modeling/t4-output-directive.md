@@ -1,9 +1,9 @@
 ---
 title: T4 Direttiva di Output | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: dc226af7afb14d180dfdc823e293365df2a7a9ca
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 Nei modelli di testo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la direttiva `output` viene usata per definire l'estensione di file e la codifica del file trasformato.  
@@ -39,7 +39,7 @@ Nei modelli di testo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
 ## <a name="extension-attribute"></a>attributo di estensione  
  Specifica l'estensione di file del file di output di testo generato.  
   
- Il valore predefinito è **. cs**  
+ Il valore predefinito è **cs**  
   
  Esempi:  
  `<#@ output extension=".txt" #>`  

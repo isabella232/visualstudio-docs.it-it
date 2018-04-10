@@ -1,9 +1,9 @@
 ---
 title: 'Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 È possibile creare estensioni nella finestra di progettazione che consente di modificare le definizioni di DSL. Tipi di estensione che è possibile includere l'aggiunta di comandi di menu, aggiunta di gestori per trascinano e fare doppio clic sui movimenti e le regole vengono attivate quando modificare determinati tipi di valori o relazioni. Le estensioni possono essere inserite come Visual Studio Integration Extension (VSIX) e distribuite agli altri utenti.  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
      System.Windows.Forms  
   
-## <a name="testing-and-deployment"></a>Testing e distribuzione  
+## <a name="testing-and-deployment"></a>Test e distribuzione  
  Per testare qualsiasi delle estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In questo caso, aprire una soluzione DSL. Modificare il diagramma DslDefinition. Il comportamento di estensione può essere visualizzato.  
   
  Per distribuire le estensioni il principale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e in altri computer, seguire questi passaggi:  

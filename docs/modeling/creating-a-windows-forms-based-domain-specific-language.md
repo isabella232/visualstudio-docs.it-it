@@ -1,9 +1,9 @@
 ---
 title: Creazione di un linguaggio specifico di dominio di Windows basata su form | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 È possibile utilizzare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), anziché utilizzare un diagramma DSL. Questo argomento viene illustrata l'associazione di un Windows Form a un linguaggio DSL, usando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
@@ -53,9 +53,9 @@ Un'istanza DSL, che visualizza un'interfaccia utente di Windows Form ed Esplora 
   
  Nell'istanza principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], notare i punti seguenti circa la soluzione DSL:  
   
--   `DslDefinition.dsl`non contiene alcun elemento diagramma. Infatti, non si utilizzerà diagrammi DSL per visualizzare i modelli di istanza di questo linguaggio DSL. In alternativa, associare un Windows Form al modello e gli elementi nel form verranno visualizzato il modello.  
+-   `DslDefinition.dsl` non contiene alcun elemento diagramma. Infatti, non si utilizzerà diagrammi DSL per visualizzare i modelli di istanza di questo linguaggio DSL. In alternativa, associare un Windows Form al modello e gli elementi nel form verranno visualizzato il modello.  
   
--   Oltre al `Dsl` e `DslPackage` progetti, la soluzione contiene un terzo progetto denominato `UI.` **dell'interfaccia utente** progetto contiene la definizione di un controllo Windows Form. `DslPackage`dipende `UI`, e `UI` dipende `Dsl`.  
+-   Oltre al `Dsl` e `DslPackage` progetti, la soluzione contiene un terzo progetto denominato `UI.` **dell'interfaccia utente** progetto contiene la definizione di un controllo Windows Form. `DslPackage` dipende `UI`, e `UI` dipende `Dsl`.  
   
 -   Nel `DslPackage` progetto `UI\DocView.cs` contiene il codice che visualizza il controllo Windows Form che è definito nel `UI` progetto.  
   
@@ -88,9 +88,9 @@ Un'istanza DSL, che visualizza un'interfaccia utente di Windows Form ed Esplora 
   
 4.  Utilizzare il **la classe di dominio denominato** strumento per creare le classi di dominio seguenti:  
   
-    -   `Field`-Fornire questo una proprietà di dominio aggiuntivo denominata `Size`.  
+    -   `Field` -Fornire questo una proprietà di dominio aggiuntivo denominata `Size`.  
   
-    -   `Animal`-Nella finestra Proprietà impostare **modificatore di ereditarietà** a **astratta**.  
+    -   `Animal` -Nella finestra Proprietà impostare **modificatore di ereditarietà** alla **astratta**.  
   
 5.  Utilizzare il **classe dominio** strumento per creare le classi seguenti:  
   
@@ -104,7 +104,7 @@ Un'istanza DSL, che visualizza un'interfaccia utente di Windows Form ed Esplora 
   
 8.  Si potrebbe voler ordinato nel diagramma. Per ridurre il numero di elementi duplicati, usare il **portare sottoalbero qui** comando nel menu di scelta rapida di elementi foglia.  
   
-9. **Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni.  
+9. **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni.  
   
 10. Compilare il **Dsl** progetto.  
   
@@ -126,7 +126,7 @@ Un'istanza DSL, che visualizza un'interfaccia utente di Windows Form ed Esplora 
   
      Espandere **Dsl**, **Company.FarmApp**e selezionare **Farm**, che corrisponde alla classe radice del modello. Scegliere **Fine**.  
   
-     In Esplora soluzioni, il **dell'interfaccia utente** progetto contiene ora **Properties\DataSources\Farm.datasource**  
+     In Esplora soluzioni, il **UI** progetto contiene ora **Properties\DataSources\Farm.datasource**  
   
      Le proprietà e relazioni della classe modello vengono visualizzati nella finestra Origini dati.  
   
@@ -223,7 +223,7 @@ Schema dei collegamenti tra origini dati e viste.
   
 3.  Nel **FarmApp Explorer**, aprire il menu di scelta rapida nel **Farm** nodo radice, quindi scegliere **aggiungere nuovo Goat**.  
   
-     `Goat1`è presente il **animali** visualizzazione.  
+     `Goat1` è presente il **animali** vista.  
   
     > [!WARNING]
     >  È necessario utilizzare il menu di scelta rapida nel **Farm** nodo, non il **animali** nodo.  

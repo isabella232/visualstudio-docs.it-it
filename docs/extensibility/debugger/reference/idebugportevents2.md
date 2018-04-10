@@ -1,29 +1,29 @@
 ---
 title: IDebugPortEvents2 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugPortEvents2
 helpviewer_keywords:
 - IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: 
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a5782f0a50ac37b45c4b7e3402bcdded96b4683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Questa interfaccia notifica a un listener (in genere debug Gestione sessione [SDM] o un motore di debug) del processo e il programma di creazione e l'eliminazione su una porta specifica. Queste informazioni possono essere utilizzate per presentare una visualizzazione in tempo reale dei processi e i programmi in esecuzione sulla porta.  
@@ -48,7 +48,7 @@ IDebugPortEvents2 : IUnknown
 |[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Invia gli eventi che descrivono la creazione e l'eliminazione dei processi e dei programmi sulla porta.|  
   
 ## <a name="remarks"></a>Note  
- `IDebugPortEvents2`viene inoltre utilizzato dal suo SDM per eseguire il debug di programmi in esecuzione in un processo che è già in corso il debug.  
+ `IDebugPortEvents2` viene inoltre utilizzato il SDM per eseguire il debug di programmi che vengono eseguiti in un processo già sottoposto a debug.  
   
  Gli eventi porta vengono passati al SDM tramite questa interfaccia.  
   

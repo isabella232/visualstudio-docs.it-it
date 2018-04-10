@@ -1,9 +1,9 @@
 ---
 title: Distribuzione VSIX di un linguaggio DSL e MSI | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
-È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]deve essere già installato nel computer di destinazione.  
+È possibile installare un linguaggio specifico di dominio nel proprio computer o in altri computer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve essere già installato nel computer di destinazione.  
   
-##  <a name="which"></a>Scelta tra VSIX e MSI distribuzione  
+##  <a name="which"></a> Scelta tra VSIX e MSI distribuzione  
  Esistono due metodi di distribuzione di un linguaggio specifico di dominio:  
   
 |Metodo|Vantaggi|  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensione)|Molto facile da distribuire: copia ed eseguire il **VSIX** file dal progetto DslPackage.<br /><br /> Per ulteriori informazioni vedere [installazione e disinstallazione di un linguaggio DSL utilizzando il VSX](#Installing).|  
 |MSI (file di programma di installazione)|-Consente all'utente di aprire [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] facendo doppio clic su un file DSL.<br />-Consente di associare un'icona con il tipo di file DSL nel computer di destinazione.<br />-Associa uno schema XSD (XML schema) con il tipo di file DSL. Ciò consente di evitare gli avvisi quando viene caricato il file [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> È necessario aggiungere un progetto di installazione alla soluzione per creare un file MSI.<br /><br /> Per ulteriori informazioni, vedere [la distribuzione di un linguaggio DSL utilizzando un file con estensione MSI](#msi).|  
   
-##  <a name="Installing"></a>Installazione e disinstallazione di un linguaggio DSL utilizzando il VSX  
+##  <a name="Installing"></a> Installazione e disinstallazione di un linguaggio DSL utilizzando il VSX  
  Quando il modello DSL viene installato da questo metodo, l'utente può aprire un file DSL dall'interno [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ma non è possibile aprire il file da Esplora risorse.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Per installare un linguaggio DSL utilizzando il VSX  
@@ -65,7 +65,7 @@ ms.lasthandoff: 02/09/2018
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Distribuzione di un linguaggio DSL in un file MSI  
+##  <a name="msi"></a> Distribuzione di un linguaggio DSL in un file MSI  
  Mediante la definizione di un file MSI (programma di installazione di Windows) per il modello DSL, è possibile consentire agli utenti di aprire file DSL da Esplora risorse. Con l'estensione del nome file, è anche possibile associare un'icona e una breve descrizione. Inoltre, il file MSI è possibile installare uno schema XSD che può essere utilizzato per convalidare i file DSL. Se si desidera, è possibile aggiungere altri componenti in MSI che verranno installato nello stesso momento.  
   
  Per ulteriori informazioni sulle altre opzioni di distribuzione e i file MSI, vedere [distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md).  
@@ -94,7 +94,7 @@ ms.lasthandoff: 02/09/2018
   
         -   Versione  
   
-    -   Fare clic su di **Editor** nodo e nella finestra Proprietà fare clic su **icona**. Impostare il valore per fare riferimento a un file di icona in **DslPackage\Resources**, ad esempio **File.ico**  
+    -   Fare clic su di **Editor** nodo e nella finestra Proprietà fare clic su **icona**. Impostare il valore per fare riferimento a un file dell'icona nel **DslPackage\Resources**, ad esempio **File.ico**  
   
     -   Nel **compilare** menu aprirlo **Configuration Manager**e selezionare la configurazione che si desidera compilare, ad esempio **versione** o **Debug** .  
   

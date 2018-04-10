@@ -1,9 +1,9 @@
 ---
 title: Come modelli di testo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 Modelli di testo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] forniscono un modo utile per la generazione di testo di qualsiasi tipo. È possibile utilizzare modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare alcuni del codice del progetto. Questo argomento vengono riepilogati più di frequente richiesto "How do I …?" domande.  
@@ -79,7 +79,7 @@ Modelli di testo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fo
   
      Per ulteriori informazioni, vedere [Guida introduttiva a linguaggi specifici di dominio](../modeling/getting-started-with-domain-specific-languages.md) e [la generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Ottenere i dati[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Ottenere dati da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Per utilizzare i servizi disponibili in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dal set di `hostSpecific` attributo e il carico il `EnvDTE` assembly. Ad esempio:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Domande di carattere più generale  
   
-###  <a name="starting"></a>Che cos'è il modo migliore per iniziare a scrivere un modello di testo?  
+###  <a name="starting"></a> Che cos'è il modo migliore per iniziare a scrivere un modello di testo?  
   
 1.  Scrivere un esempio specifico del file generato.  
   

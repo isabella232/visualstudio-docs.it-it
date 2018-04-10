@@ -1,9 +1,9 @@
 ---
 title: La propagazione delle modifiche e rispondere ai | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f814cc9ca963b59217dc486539d22f42f487a3db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>Risposta alle modifiche e propagazione delle modifiche
 Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere codice che propaga le modifiche ad altre parti del modello o a risorse esterne, ad esempio file, database o altri componenti.  
@@ -44,14 +44,14 @@ Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere c
   
  Utilizzare gli eventi di archiviazione per sincronizzare il modello con gli oggetti di fuori di archivio e le regole per mantenere la coerenza all'interno dell'archivio.  
   
--   **Creazione di regole personalizzate** si crea una regola personalizzata come una classe derivata da una regola astratta. È anche necessario notificare il framework sulla regola personalizzata. Per ulteriori informazioni, vedere [propagare le modifiche all'interno di modello di regole](../modeling/rules-propagate-changes-within-the-model.md).  
+-   **Creazione di regole personalizzate** crei una regola personalizzata come una classe derivata da una regola astratta. È anche necessario notificare il framework sulla regola personalizzata. Per ulteriori informazioni, vedere [propagare le modifiche all'interno di modello di regole](../modeling/rules-propagate-changes-within-the-model.md).  
   
--   **La sottoscrizione di eventi** prima di è possibile sottoscrivere un evento, creare un gestore dell'evento e delegato. Utilizzare quindi la <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per ulteriori informazioni, vedere [gestori propagare le modifiche di fuori di modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+-   **Sottoscrive gli eventi** prima che è possibile sottoscrivere un evento, creare un gestore dell'evento e delegato. Utilizzare quindi la <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>proprietà per sottoscrivere l'evento. Per ulteriori informazioni, vedere [gestori propagare le modifiche di fuori di modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
 -   **Annullamento delle modifiche** quando si annulla una transazione, vengono generati eventi, ma non vengono applicate le regole. Se una regola di modifica di un valore e si annulla la modifica, il valore viene reimpostato il valore originale durante l'operazione di annullamento. Quando viene generato un evento, è necessario modificare manualmente il valore al valore originale. Per ulteriori informazioni sulla transactons e di annullamento, vedere [procedura: utilizzare le transazioni per aggiornare il modello](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
--   **Il passaggio di argomenti dell'evento a regole e gli eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che contiene informazioni su come il modello modificato.  
+-   **Passaggio di argomenti dell'evento a regole e gli eventi** entrambi gli eventi e le regole vengono passate un `EventArgs` parametro che include informazioni su come il modello modificato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
+ [Procedura: intercettare un clic su un elemento Decorator o una forma](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

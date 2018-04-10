@@ -1,9 +1,9 @@
 ---
 title: Accesso ai modelli da modelli di testo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 Tramite i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo che si basano sui modelli di linguaggio specifico di dominio. Per informazioni sui modelli di testo di base, vedere [la generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale quando si esegue il debug di tale linguaggio DSL e funzionano anche in un computer in cui è stato distribuito del linguaggio DSL.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   Anche se la lingua in cui vengono scritti i frammenti di codice c#, è possibile generare il testo di qualsiasi tipo. In alternativa, è possibile scrivere il codice in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aggiungendo la proprietà `language="VB"` per il `template` direttiva.  
   
--   Per eseguire il debug del modello, aggiungere `debug="true"` per il `template` direttiva. Il modello verrà aperto in un'altra istanza di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se si verifica un'eccezione. Se si desidera interrompere il debugger in un momento specifico nel codice, inserire l'istruzione`System.Diagnostics.Debugger.Break();`  
+-   Per eseguire il debug del modello, aggiungere `debug="true"` per il `template` direttiva. Il modello verrà aperto in un'altra istanza di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se si verifica un'eccezione. Se si desidera interrompere il debugger in un momento specifico nel codice, inserire l'istruzione `System.Diagnostics.Debugger.Break();`  
   
      Per ulteriori informazioni, vedere [debug di un modello di testo T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  Se viene rilevato un errore, verrà segnalato nella finestra degli errori e il file di risultati conterrà un messaggio di errore.  
   
-##  <a name="Multiple"></a>L'accesso a più modelli da un modello di testo  
+##  <a name="Multiple"></a> L'accesso a più modelli da un modello di testo  
   
 > [!NOTE]
 >  Questo metodo consente di leggere più modelli nello stesso modello, ma non supporta riferimenti ModelBus. Per leggere i modelli che sono correlati da ModelBus riferimenti, vedere [utilizzando ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -154,7 +154,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ### <a name="splitting-a-long-file"></a>Suddivisione di un file lunghi  
  In questo metodo, utilizzare un modello per generare un singolo file, separato da un delimitatore. Quindi si suddividere il file nelle relative parti. Esistono due modelli, uno per generare il singolo file e l'altro per la divisione.  
   
- **LoopTemplate.t4** genera il file singolo lungo. Si noti che l'estensione del file è ".t4", perché non deve essere elaborato direttamente quando fa clic su **Trasforma tutti i modelli**. Questo modello accetta un parametro che specifica la stringa delimitatore che separa i segmenti:  
+ **LoopTemplate.t4** genera l'errore lungo singolo file. Si noti che l'estensione del file è ".t4", perché non deve essere elaborato direttamente quando fa clic su **Trasforma tutti i modelli**. Questo modello accetta un parametro che specifica la stringa delimitatore che separa i segmenti:  
   
 ```  
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`richiama `LoopTemplate.t4`e quindi suddivide il file risultante in segmenti. Si noti che questo modello non è necessario essere un modello di modellazione, perché non è possibile leggere il modello.  
+ `LoopSplitter.tt` richiama `LoopTemplate.t4`e quindi suddivide il file risultante in segmenti. Si noti che questo modello non è necessario essere un modello di modellazione, perché non è possibile leggere il modello.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

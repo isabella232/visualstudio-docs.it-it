@@ -1,9 +1,9 @@
 ---
 title: Personalizzazione ed estensione di un linguaggio specifico di dominio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 Visual Studio di modellazione e SDK di visualizzazione (VMSDK) garantisce livelli diversi in cui è possibile definire gli strumenti di modellazione seguenti:  
@@ -33,7 +33,7 @@ Visual Studio di modellazione e SDK di visualizzazione (VMSDK) garantisce livell
 > [!NOTE]
 >  Dopo aver aggiornato il file di definizione DSL, non dimenticare di fare clic su **Trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni, prima di ricompilare la soluzione.  
   
-##  <a name="customShapes"></a>In questa sezione  
+##  <a name="customShapes"></a> In questa sezione  
   
 |Per ottenere questo risultato|Fare riferimento a questo argomento|  
 |----------------------------|-------------------------|  
@@ -50,12 +50,12 @@ Visual Studio di modellazione e SDK di visualizzazione (VMSDK) garantisce livell
 |Propagare le modifiche apportate alle risorse, ad esempio altri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensioni di fuori dell'archivio.|Vedere [gestori propagano le modifiche apportate all'esterno del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).|  
 |Finestra delle proprietà consente di visualizzare le proprietà di un elemento correlato.|Impostare la proprietà di inoltro. Vedere [personalizzazione della finestra proprietà](../modeling/customizing-the-properties-window.md).|  
 |Categorie di proprietà|La finestra proprietà è suddivisa in sezioni denominate le categorie. Impostare il **categoria** delle proprietà di dominio. Proprietà con lo stesso nome di categoria verranno visualizzate nella stessa sezione. È inoltre possibile impostare il **categoria** di un ruolo della relazione.|  
-|Controllare l'accesso utente alle proprietà di dominio|Impostare **è esplorabile** false per impedire che una proprietà di dominio visualizzati nella finestra proprietà in fase di esecuzione. È comunque possibile mappare per gli elementi Decorator testo.<br /><br /> **È di sola lettura dell'interfaccia utente** impedisce la modifica di una proprietà di dominio.<br /><br /> Accesso ai programmi per la proprietà di dominio non è interessata.|  
+|Controllare l'accesso utente alle proprietà di dominio|Impostare **è esplorabile** false per impedire che una proprietà di dominio visualizzati nella finestra proprietà in fase di esecuzione. È comunque possibile mappare per gli elementi Decorator testo.<br /><br /> **È di sola lettura dell'interfaccia utente** impedisce agli utenti di modificare una proprietà di dominio.<br /><br /> Accesso ai programmi per la proprietà di dominio non è interessata.|  
 |Modificare il nome, icona e la visibilità dei nodi in Esplora modelli del linguaggio DSL.|Vedere [personalizzazione di Esplora modelli](../modeling/customizing-the-model-explorer.md).|  
 |Abilitare la copia, Taglia e Incolla|Impostare il **abilitare Copia Incolla** proprietà del **Editor** nodo in Esplora DSL.|  
 |Copiare i relativi obiettivi e i collegamenti di riferimento ogni volta che un elemento viene copiato. Ad esempio, copiare i commenti associati a un elemento.|Impostare il **propaga copia** proprietà del ruolo di origine (rappresentato dalla linea sul lato uno della relazione di dominio nel diagramma DSL Definition).<br /><br /> Scrivere codice per eseguire l'override ProcessOnCopy per ottenere effetti più complessi.<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|  
-|Eliminare o reimpostato Ricollega elementi correlati quando viene eliminato un elemento.|Impostare il **propaga eliminare** valore di un ruolo della relazione. Per gli effetti più complessi, eseguire l'override `ShouldVisitRelationship` e `ShouldVisitRolePlayer` metodi di `MyDslDeleteClosure` , definita in **DomainModel.cs**<br /><br /> Vedere [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)|  
-|Mantenere il layout di forma e aspetto nella copia e trascinamento.|Aggiungere le forme e connettori copiato `ElementGroupPrototype`. È il metodo più semplice per eseguire l'override`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|  
+|Eliminare o reimpostato Ricollega elementi correlati quando viene eliminato un elemento.|Impostare il **propaga eliminare** valore di un ruolo della relazione. Per gli effetti più complessi, eseguire l'override `ShouldVisitRelationship` e `ShouldVisitRolePlayer` metodi il `MyDslDeleteClosure` definita in **DomainModel.cs**<br /><br /> Vedere [personalizzazione del comportamento di eliminazione](../modeling/customizing-deletion-behavior.md)|  
+|Mantenere il layout di forma e aspetto nella copia e trascinamento.|Aggiungere le forme e connettori copiato `ElementGroupPrototype`. È il metodo più semplice per eseguire l'override `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|  
 |Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.|Eseguire l'override `ClipboardCommandSet.ProcessOnCopy()` per utilizzare la versione del percorso specifica `ElementOperations.Merge().` vedere [personalizzazione copia comportamento](../modeling/customizing-copy-behavior.md).|  
 |Creare collegamenti aggiuntivi quando si incolla|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Abilita trascinamento della selezione dal diagramma, altri DSL e Windows elementi|Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

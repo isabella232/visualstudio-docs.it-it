@@ -1,9 +1,9 @@
 ---
-title: "Aggiungere proprietà personalizzate ai diagrammi dipendenza | Documenti Microsoft"
-ms.custom: 
+title: Aggiungere proprietà personalizzate ai diagrammi dipendenza | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi di dipendenza
 Quando si scrive codice di estensione per i diagrammi di dipendenza, è possibile archiviare i valori con qualsiasi elemento in un diagramma di dipendenza. I valori saranno permanenti quando il diagramma viene salvato e riaperto. È inoltre possibile impostare queste proprietà vengono visualizzate nel **proprietà** finestra in modo che gli utenti possono vedere e modificarli. Ad esempio, è possibile consentire agli utenti di specificare un'espressione regolare per ogni livello e scrivere il codice di convalida per verificare che i nomi delle classi in ogni livello siano conformi al modello specificato dall'utente.  
@@ -46,7 +46,7 @@ Quando si scrive codice di estensione per i diagrammi di dipendenza, è possibil
 >      `devenv /rootSuffix Exp /updateConfiguration`  
 > 4.  Riavviare Visual Studio.  
   
- **Verificare che il codice sia in un progetto VSIX**  
+ **Assicurarsi che il codice sia in un progetto VSIX**  
   
  Se la proprietà fa parte di un progetto di convalida, un movimento o un comando, è necessario aggiungere alcun valore. Il codice per la proprietà personalizzata deve essere specificato in un progetto Extensibility di Visual Studio definito come componente MEF. Per ulteriori informazioni, vedere [aggiungere comandi e movimenti a diagrammi di dipendenza](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [aggiunta di convalida dell'architettura personalizzati a diagrammi dipendenza](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   

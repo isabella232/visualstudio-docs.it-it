@@ -1,9 +1,9 @@
 ---
 title: Estendere il modello DSL tramite MEF | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 È possibile estendere il linguaggio specifico di dominio (DSL) mediante Managed Extensibility Framework (MEF). Si o altri sviluppatori sarà in grado di scrivere le estensioni per il linguaggio DSL senza modificare la definizione DSL e il codice programma. Tali estensioni includono comandi di menu, gestori di trascinamento e rilascio e la convalida. Gli utenti saranno in grado di installare il modello DSL e, facoltativamente, installare le estensioni per tale.  
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  Creare una nuova cartella denominata **MefExtension** all'interno di **DslPackage** progetto. Aggiungere i file seguenti:  
   
-     Nome del file:`CommandExtensionVSCT.tt`  
+     Nome del file: `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  Impostare il GUID in questo file per essere lo stesso CommandSetId il GUID definito in DslPackage\GeneratedCode\Constants.tt  
@@ -44,21 +44,21 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     Nome del file:`CommandExtensionRegistrar.tt`  
+     Nome del file: `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     Nome del file:`ValidationExtensionEnablement.tt`  
+     Nome del file: `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     Nome del file:`ValidationExtensionRegistrar.tt`  
+     Nome del file: `ValidationExtensionRegistrar.tt`  
   
      Se si aggiunge questo file, è necessario attivare la convalida di tale linguaggio DSL con almeno una delle opzioni in **EditorValidation** in Esplora DSL.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     Nome del file:`PackageExtensionEnablement.tt`  
+     Nome del file: `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ ms.lasthandoff: 02/09/2018
   
 2.  Creare una nuova cartella denominata **MefExtension** all'interno di **Dsl** progetto. Aggiungere i file seguenti:  
   
-     Nome del file:`DesignerExtensionMetaDataAttribute.tt`  
+     Nome del file: `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     Nome del file:`GestureExtensionEnablement.tt`  
+     Nome del file: `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     Nome del file:`GestureExtensionController.tt`  
+     Nome del file: `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ ms.lasthandoff: 02/09/2018
 ### <a name="menu-commands"></a>Comandi di menu  
  Per scrivere un comando di menu, definire una classe che implementa <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e del prefisso della classe con l'attributo è definito in tale linguaggio DSL, denominato *YourDsl*`CommandExtension`. È possibile scrivere più di una classe di comando di menu.  
   
- `QueryStatus()`viene chiamato ogni volta che l'utente fa clic nel diagramma. Deve controllare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.  
+ `QueryStatus()` viene chiamato ogni volta che l'utente fa clic nel diagramma. Deve controllare la selezione corrente e impostare `command.Enabled` per indicare quando il comando è applicabile.  
   
 ```  
 using System.ComponentModel.Composition;  

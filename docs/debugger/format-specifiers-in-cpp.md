@@ -1,12 +1,12 @@
 ---
 title: Nel debugger (C++) identificatori di formato | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C++ nel debugger di Visual Studio
 È possibile modificare il formato con cui viene visualizzato il valore nella finestra **Espressioni di controllo** usando gli identificatori di formato.  
@@ -88,7 +88,7 @@ int main() {
 |**s32b**|stringa UTF-32 (senza virgolette)|\<posizione > U "hello world"|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
 |**hv**|Tipo di puntatore: indica che il valore del puntatore in esame è il risultato dell'allocazione di heap di una matrice, ad esempio `new int[3]`.|\<posizione > {\<primo membro >}|\<posizione > {\<primo membro >, \<secondo membro >,...}|  
-|**na**|Elimina l'indirizzo di memoria di un puntatore a un oggetto.|\<location>, {member=value...}|{membro = value …}|  
+|**na**|Elimina l'indirizzo di memoria di un puntatore a un oggetto.|\<posizione >, {membro = valore...}|{membro = value …}|  
 |**nd**|Visualizza solo le informazioni sulla classe base, ignorando le classi derivate|`(Shape*) square` include informazioni sulla classe base e sulle classi derivate|Visualizza solo informazioni sulla classe base|  
 |hr|HRESULT o codice di errore Win32. Poiché ora il debugger decodifica gli HRESULT automaticamente, l'identificatore non è necessario.|S_OK|S_OK|  
 |wc|flag della classe di finestre|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +120,11 @@ int main() {
 |**f**|virgola mobile signed|(3./2.), f|1.500000|  
 |**e**|notazione scientifica signed|(3.0/2.0)|1.500000e+000|  
 |**g**|virgola mobile signed o notazione scientifica signed (a seconda di quale sia più breve)|(3.0/2.0)|1,5|  
-|c|carattere singolo|\<location>|101 'e'|  
-|s|const char*|\<location>|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
-|s8|const char*|\<location>|"hello world"|  
+|c|carattere singolo|\<percorso >|101 'e'|  
+|s|const char*|\<percorso >|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<percorso >|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<percorso >|hello world|  
+|s8|const char*|\<percorso >|"hello world"|  
 |hr|HRESULT o codice di errore Win32. Poiché ora il debugger decodifica gli HRESULT automaticamente, l'identificatore non è necessario.|S_OK|S_OK|  
 |wc|Flag della classe Window.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numeri di messaggio Windows|0x0010|WM_CLOSE|  

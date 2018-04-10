@@ -1,12 +1,12 @@
 ---
 title: Debug di HTML e CSS nelle App UWP | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Debug di HTML e CSS nelle App UWP in Visual Studio
   
@@ -252,7 +252,7 @@ ms.lasthandoff: 01/19/2018
   
  Prima di scegliere **Seleziona elemento**, è possibile specificare se evidenziare elementi nell'app in esecuzione attivando e disattivando il pulsante **Visualizza pagina Web in evidenza** . La figura seguente mostra questo pulsante. Le evidenziazioni vengono visualizzate per impostazione predefinita.  
   
- ![Visualizzare la pagina web vengono evidenziate pulsante](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
+ ![Visualizzare la pagina web il pulsante delle evidenziazioni](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
   
  Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.  
   
@@ -265,5 +265,5 @@ ms.lasthandoff: 01/19/2018
  [Eseguire il debug di un controllo WebView](../debugger/debug-a-webview-control.md)   
  [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Comandi della JavaScript Console](../debugger/javascript-console-commands.md)   
- [Eseguire il debug di codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Il debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Supporto tecnico e accessibilità](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

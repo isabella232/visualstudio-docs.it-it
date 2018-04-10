@@ -1,9 +1,9 @@
 ---
 title: Creazione di processori di direttiva modello di testo T4 personalizzati | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, custom directive processors
@@ -14,17 +14,17 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Creazione di processori di direttiva di modelli di testo T4 personalizzati
 Il *processo di trasformazione del modello testo* accetta un *modello di testo* file come input e produce un file di testo come output. Il *motore di trasformazione del modello di testo* il processo e il motore interagisce con un host di trasformazione del modello di testo e il modello di testo di uno o più controlli *processori di direttiva* per completare il processo. Per ulteriori informazioni, vedere [il processo di trasformazione di modello di testo](../modeling/the-text-template-transformation-process.md).  
   
  Per creare un processore di direttiva personalizzato, si crea una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
- La differenza tra questi due è che <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementa l'interfaccia minima che è necessario recuperare parametri da parte dell'utente e per generare il codice che genera il file di output del modello. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>implementa il modello di progettazione richiede/fornisce. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>gestisce due parametri speciali, `requires` e `provides`.  Ad esempio, un processore di direttiva personalizzato potrebbe accettare un nome file dall'utente, aprire e leggere il file e quindi archiviare il testo del file in una variabile denominata `fileText`. Una sottoclasse del <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> classe potrebbe richiedere un nome di file da parte dell'utente come valore della `requires` parametro e il nome della variabile in cui archiviare il testo come valore della `provides` parametro. Questo processore verrebbe aprire e leggere il file e quindi archiviare il testo del file nella variabile specificata.  
+ La differenza tra questi due è che <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementa l'interfaccia minima che è necessario recuperare parametri da parte dell'utente e per generare il codice che genera il file di output del modello. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementa il modello di progettazione richiede/fornisce. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> gestisce due parametri speciali `requires` e `provides`.  Ad esempio, un processore di direttiva personalizzato potrebbe accettare un nome file dall'utente, aprire e leggere il file e quindi archiviare il testo del file in una variabile denominata `fileText`. Una sottoclasse del <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> classe potrebbe richiedere un nome di file da parte dell'utente come valore della `requires` parametro e il nome della variabile in cui archiviare il testo come valore della `provides` parametro. Questo processore verrebbe aprire e leggere il file e quindi archiviare il testo del file nella variabile specificata.  
   
  Prima di chiamare un processore di direttiva personalizzato da un modello di testo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è necessario registrarlo.  
   
@@ -50,17 +50,17 @@ Il *processo di trasformazione del modello testo* accetta un *modello di testo* 
   
  La più importante `DirectiveProcessor` metodi che è necessario implementare sono i seguenti.  
   
--   `bool IsDirectiveSupported(string directiveName)`-Restituito `true` se il processore di direttiva può gestire la direttiva denominata.  
+-   `bool IsDirectiveSupported(string directiveName)` -Restituito `true` se il processore di direttiva è possibile gestire con la direttiva denominata.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-Il motore del modello chiama questo metodo per ogni occorrenza di una direttiva nel modello. Il processore deve salvare i risultati.  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Il motore del modello chiama questo metodo per ogni occorrenza di una direttiva nel modello. Il processore deve salvare i risultati.  
   
  Dopo tutte le chiamate a ProcessDirective (), il motore del modello chiamerà tali metodi:  
   
--   `string[] GetReferencesForProcessingRun()`: Restituisce i nomi degli assembly che richiede il codice del modello.  
+-   `string[] GetReferencesForProcessingRun()` : Restituisce i nomi degli assembly che richiede il codice del modello.  
   
--   `string[] GetImportsForProcessingRun()`: Restituisce gli spazi dei nomi che può essere usato nel codice del modello.  
+-   `string[] GetImportsForProcessingRun()` -Restituire gli spazi dei nomi che può essere usato nel codice del modello.  
   
--   `string GetClassCodeForProcessingRun()`: Restituisce il codice di metodi, proprietà e altre dichiarazioni che è possibile utilizzare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nel compilare una stringa contenente il codice c# o Visual Basic. Affinché il processore di direttiva sia in grado di essere chiamato da un modello che utilizza un qualsiasi linguaggio CLR, è possibile creare le istruzioni come una struttura ad albero CodeDom e quindi restituire il risultato della serializzazione l'albero nella lingua utilizzata dal modello.  
+-   `string GetClassCodeForProcessingRun()` : Restituisce il codice di metodi, proprietà e altre dichiarazioni che è possibile utilizzare il codice del modello. Il modo più semplice per eseguire questa operazione consiste nel compilare una stringa contenente il codice c# o Visual Basic. Affinché il processore di direttiva sia in grado di essere chiamato da un modello che utilizza un qualsiasi linguaggio CLR, è possibile creare le istruzioni come una struttura ad albero CodeDom e quindi restituire il risultato della serializzazione l'albero nella lingua utilizzata dal modello.  
   
 -   Per ulteriori informazioni, vedere [procedura dettagliata: creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   

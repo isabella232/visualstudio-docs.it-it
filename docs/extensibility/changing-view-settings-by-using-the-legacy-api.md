@@ -1,27 +1,27 @@
 ---
 title: Modifica delle impostazioni di visualizzazione tramite l'API Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>La modifica delle impostazioni di visualizzazione tramite l'API Legacy
 Impostazioni per le funzionalità di editor di componenti di base, quali ritorno a capo automatico, il margine di selezione e lo spazio virtuale, possono essere modificate dall'utente mediante il **opzioni** la finestra di dialogo. Tuttavia, è anche possibile modificare queste impostazioni a livello di codice.  

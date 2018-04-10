@@ -1,9 +1,9 @@
 ---
 title: Personalizzare la creazione degli elementi e lo spostamento | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 È possibile consentire a un elemento essere trascinato su un altro, dalla casella degli strumenti o in un'Incolla o dell'operazione di spostamento. È possibile disporre gli elementi spostati collegati a elementi di destinazione, utilizzando le relazioni che specificano.  
@@ -269,7 +269,7 @@ Il ruolo di una direttiva di elemento di tipo Merge
   
 3.  Ricompilare la soluzione. Richiederà più tempo del solito perché i file di codice generato verranno aggiornati dal modello.  
   
-     Verranno visualizzati messaggi di errore. Fare doppio clic sui messaggi di errore per vedere le istruzioni nel codice generato. Queste istruzioni chiesto di fornire due metodi, `MergeRelate` *YourDomainClass* e `MergeDisconnect` *YourDomainClass*  
+     Verranno visualizzati messaggi di errore. Fare doppio clic sui messaggi di errore per vedere le istruzioni nel codice generato. Queste istruzioni chiesto di fornire due metodi, ovvero `MergeRelate` *YourDomainClass* e `MergeDisconnect` *YourDomainClass*  
   
 4.  Scrivere i metodi in una definizione di classe parziale in un file di codice separato. Negli esempi che è controllato in precedenza devono suggerire le informazioni necessarie.  
   
@@ -312,11 +312,11 @@ Il ruolo di una direttiva di elemento di tipo Merge
   
 11. In **Esplora**, aprire Sample.mydsl. Il diagramma e **ComponentLanguage della casella degli strumenti** vengono visualizzati.  
   
-12. Trascinare un **porta di Input** dal **della casella degli strumenti** a un altro **porta di Input.** Successivamente, trascinare un **OutputPort** per un **InputPort** e quindi in un altro **OutputPort**.  
+12. Trascinare un **porta di Input** dal **casella degli strumenti** a un altro **porta di Input.** Successivamente, trascinare un **OutputPort** per un **InputPort** e quindi in un altro **OutputPort**.  
   
      Non verrà visualizzato il puntatore non disponibile e dovrebbe essere in grado di rilasciare il nuovo **porta di Input** in uno esistente. Selezionare la nuova **porta di Input** e trascinarlo a un altro punto di **componente**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md)   
  [Esempio di diagrammi circuito DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
