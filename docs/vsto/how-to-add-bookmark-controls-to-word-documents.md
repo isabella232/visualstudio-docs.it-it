@@ -1,12 +1,12 @@
 ---
 title: 'Procedura: aggiungere controlli segnalibro ai documenti di Word | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -82,14 +82,14 @@ ms.lasthandoff: 01/10/2018
   
 3.  Nella finestra di dialogo **Segnalibro** digitare il nome del nuovo segnalibro e fare clic su **Aggiungi**.  
   
-##  <a name="runtimedoclevel"></a> Adding Bookmark Controls at Run Time in a Document-Level Project  
+##  <a name="runtimedoclevel"></a> Aggiunta di controlli Bookmark in fase di esecuzione in un progetto a livello di documento  
  È possibile aggiungere controlli <xref:Microsoft.Office.Tools.Word.Bookmark> a livello di codice al documento in fase di esecuzione usando i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> della classe `ThisDocument` nel progetto. Ci sono due overload di metodo che è possibile usare per aggiungere un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nei modi seguenti:  
   
 -   Aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> in corrispondenza di un intervallo specificato.  
   
 -   Aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> basato su un segnalibro nativo nel documento (ovvero un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- I controlli <xref:Microsoft.Office.Tools.Word.Bookmark> creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo rimane nel documento. È possibile ricreare un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> basato su un segnalibro nativo alla successiva apertura del documento. Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ I controlli <xref:Microsoft.Office.Tools.Word.Bookmark> creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> nativo rimane nel documento. È possibile ricreare un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> basato su un segnalibro nativo alla successiva apertura del documento. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Per aggiungere un controllo Bookmark a un documento a livello di codice  
   
@@ -101,7 +101,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Se si vuole creare un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> da un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark>esistente, usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> e passare l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark>esistente.  
   
-##  <a name="runtimeaddin"></a> Adding Bookmark Controls at Run Time in an VSTO Add-in project  
+##  <a name="runtimeaddin"></a> Aggiunta di controlli Bookmark in fase di esecuzione in un progetto di componente aggiuntivo VSTO  
  È possibile aggiungere controlli <xref:Microsoft.Office.Tools.Word.Bookmark> a livello di codice a qualsiasi documento aperto in fase di esecuzione usando un componente aggiuntivo VSTO. A tale scopo, generare un elemento host <xref:Microsoft.Office.Tools.Word.Document> basato su un documento aperto e quindi usare i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> di tale elemento host. Ci sono due overload di metodo che è possibile usare per aggiungere un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nei modi seguenti:  
   
 -   Aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> in corrispondenza di un intervallo specificato.  

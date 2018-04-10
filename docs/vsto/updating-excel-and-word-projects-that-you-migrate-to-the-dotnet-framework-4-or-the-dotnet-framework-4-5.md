@@ -1,12 +1,12 @@
 ---
 title: L'aggiornamento di progetti di Excel e Word che si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -125,7 +125,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
     ```  
   
- Per altre informazioni, vedere [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Per altre informazioni, vedere [Estensione in fase di esecuzione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ##  <a name="generatedclasses"></a> Aggiornamento del codice che usa istanze delle classi generate in progetti a livello di documento  
  Nei progetti a livello di documento destinati a .NET Framework 3.5 le classi generate nei progetti derivano dalle classi seguenti nel [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
@@ -199,7 +199,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  Nei progetti destinati il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, questi metodi sono metodi di estensione che sono disponibili le proprietà di controlli. Per usare questi metodi di estensione, il file di codice in cui vengono usati i metodi deve includere un'istruzione **using** e **Imports** per lo spazio dei nomi <xref:Microsoft.Office.Tools.Excel> e <xref:Microsoft.Office.Tools.Word> . Questa istruzione viene generata automaticamente in nuovi progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva. Poiché tuttavia non viene aggiunta automaticamente nei progetti destinati a .NET Framework 3.5, è necessario aggiungerla quando si ridestina il progetto.  
   
- Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ##  <a name="ccevents"></a> Aggiornamento del codice che gestisce eventi dei controlli contenuto di Word  
  Nei progetti destinati a .NET Framework 3.5 questi eventi vengono gestiti dal delegato <xref:System.EventHandler%601> generico. Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva questi eventi vengono ora gestiti da altri delegati.  
@@ -220,7 +220,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva queste classi sono state sostituite dalle interfacce <xref:Microsoft.Office.Tools.Excel.ControlSite> e <xref:Microsoft.Office.Tools.Word.ControlSite> . È necessario modificare il codice che fa riferimento a OLEObject e OLEControl invece fare riferimento a <xref:Microsoft.Office.Tools.Excel.ControlSite> e <xref:Microsoft.Office.Tools.Word.ControlSite>. A parte i nuovi nomi, questi controlli si comportano allo stesso modo che nei progetti destinati a .NET Framework 3.5.  
   
- Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ##  <a name="itemproperty"></a> Aggiornamento del codice che usa la proprietà Controls.Item(Object)  
  Nei progetti destinati a .NET Framework 3.5, è possibile utilizzare la proprietà Item (Object) della raccolta Microsoft.Office.Tools.Word.Document.Controls o Microsoft.Office.Tools.Excel.Worksheet.Controls per determinare se un documento o foglio di lavoro include un controllo specificato.  

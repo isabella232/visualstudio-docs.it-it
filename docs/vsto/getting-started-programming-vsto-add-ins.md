@@ -1,12 +1,12 @@
 ---
 title: Guida introduttiva di programmazione dei componenti aggiuntivi VSTO | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.ProjectItem.Outlook
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/10/2018
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>Getting Started Programming VSTO Add-ins
-  È possibile usare componenti aggiuntivi VSTO per automatizzare le applicazioni di Microsoft Office, estendere le funzionalità dell'applicazione e personalizzare l'interfaccia utente dell'applicazione. Per informazioni sul confronto tra i componenti aggiuntivi VSTO e altri tipi di soluzioni Office create tramite Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  È possibile usare componenti aggiuntivi VSTO per automatizzare le applicazioni di Microsoft Office, estendere le funzionalità dell'applicazione e personalizzare l'interfaccia utente dell'applicazione. Per informazioni sul confronto tra i componenti aggiuntivi VSTO e altri tipi di soluzioni Office create tramite Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office & #40; VSTO & #41; ](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-the-user-interface-of-applications"></a>Personalizzazione dell'interfaccia utente delle applicazioni  
  Esistono diversi modi per personalizzare l'interfaccia utente dell'applicazione host mediante un componente aggiuntivo VSTO:  
   
--   Per Excel e Word, è possibile aggiungere controlli gestiti ai documenti. Per altre informazioni, vedere [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   Per Excel e Word, è possibile aggiungere controlli gestiti ai documenti. Per altre informazioni, vedere [Estensione in fase di esecuzione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 -   Se l'applicazione la supporta, è possibile personalizzare la barra multifunzione. Per ulteriori informazioni, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Guida introduttiva &#40; sviluppo per Office in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Guida introduttiva & #40; sviluppo per Office in Visual Studio & #41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Scrittura di codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)  

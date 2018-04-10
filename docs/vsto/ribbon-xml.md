@@ -1,12 +1,12 @@
 ---
 title: Sulla barra multifunzione XML | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Outlook richiede un ulteriore passaggio. Per ulteriori informazioni, vedere [personalizzazione di una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Per una procedura dettagliata che illustra come automatizzare un'applicazione dalla barra multifunzione, vedere [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Per una procedura dettagliata che illustra come automatizzare un'applicazione dalla barra multifunzione, vedere [Procedura dettagliata: creazione di una scheda personalizzata utilizzando l'elemento XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
 ### <a name="assigning-callback-methods-to-controls"></a>Assegnazione di metodi di callback ai controlli  
  Per assegnare un metodo di callback a un controllo nel file XML della barra multifunzione, aggiungere un attributo che specifica il tipo del metodo di callback e il nome del metodo. Ad esempio, l'elemento seguente definisce un interruttore con un metodo di callback **onAction** denominato `OnToggleButton1`.  

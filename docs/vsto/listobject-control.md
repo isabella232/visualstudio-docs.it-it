@@ -1,12 +1,12 @@
 ---
 title: ListObject (controllo) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VST.Toolbox.List
@@ -39,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> ai fogli di lavoro aperti solo in fase di esecuzione. Per altre informazioni, vedere [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="binding-data-to-the-control"></a>Data binding al controllo  
  Un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> supporta un data binding semplice e complesso. Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> può essere associato a un'origine dati usando le proprietà <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> e <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> in fase di progettazione o il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> in fase di esecuzione.  
@@ -74,7 +74,7 @@ ms.lasthandoff: 01/10/2018
  Non è possibile aggiungere o rimuovere colonne manualmente in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati in fase di esecuzione. Se un utente finale tenta di eliminare una colonna, questa viene immediatamente ripristinata e le eventuali colonne aggiunte vengono rimosse. È quindi importante scrivere codice per spiegare agli utenti perché non possono eseguire queste azioni su un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati. Visual Studio fornisce diversi eventi su un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> correlati al data binding. Ad esempio, si può usare l'evento <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> per avvertire gli utenti che i dati che hanno tentato di eliminare non possono essere eliminati e sono stati ripristinati.  
   
 ## <a name="adding-and-removing-rows-at-run-time"></a>Aggiunta e rimozione di righe in fase di esecuzione  
- È possibile aggiungere e rimuovere righe manualmente in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati, purché l'origine dati consenta di aggiungere nuove righe e non sia di sola lettura. È possibile scrivere codice per eventi come <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> per convalidare i dati. Per altre informazioni, vedere [How to: Validate Data When a New Row is Added to a ListObject Control](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
+ È possibile aggiungere e rimuovere righe manualmente in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati, purché l'origine dati consenta di aggiungere nuove righe e non sia di sola lettura. È possibile scrivere codice per eventi come <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> per convalidare i dati. Per altre informazioni, vedere [Procedura: convalidare dati quando viene aggiunta una nuova riga a un controllo ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).  
   
  In alcuni casi la relazione tra l'oggetto elenco e l'origine dati provoca errori di routine. Ad esempio, è possibile mappare le colonne da visualizzare in <xref:Microsoft.Office.Tools.Excel.ListObject>, quindi se si omettono le colonne con restrizioni, ad esempio un campo che non accetta valori null, vengono generati errori ogni volta che viene creata una riga. È possibile scrivere codice per aggiungere i valori mancanti in un gestore eventi per l'evento <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> .  
   

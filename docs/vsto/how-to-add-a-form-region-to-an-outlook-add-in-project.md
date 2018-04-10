@@ -1,12 +1,12 @@
 ---
-title: 'Procedura: aggiungere un''area del modulo a un progetto di componente aggiuntivo di Outlook | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
@@ -67,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 10. Scegliere **Avanti**.  
   
-11. Nella pagina **Identificare le classi di messaggi per la visualizzazione dell'area del modulo** selezionare le classi messaggio standard di Outlook o digitare i nomi di una o più classi messaggio personalizzate, quindi fare clic su **Fine**. Per altre informazioni, vedere [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+11. Nella pagina **Identificare le classi di messaggi per la visualizzazione dell'area del modulo** selezionare le classi messaggio standard di Outlook o digitare i nomi di una o più classi messaggio personalizzate, quindi fare clic su **Fine**. Per altre informazioni, vedere [Associazione di un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [L'accesso a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)   

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/28/2018
 Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare gli strumenti di visualizzazione e di modellazione in Visual Studio.
 Utilizzare strumenti quali mappe del codice, diagrammi di dipendenza e diagrammi classi per:  
 
- Per individuare le versioni di Visual Studio che supportano i singoli strumenti, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Per individuare le versioni di Visual Studio che supportano i singoli strumenti, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
 -   Definire le esigenze degli utenti e i processi aziendali.  
 
@@ -112,7 +112,7 @@ Gli elementi dei diagrammi di dipendenza si trovano nel progetto di modello, ma 
 -   [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)  
 
     > [!NOTE]
-    >  Alcune versioni di Visual Studio supportano la convalida della dipendenza e le versioni di sola lettura di mappe del codice per la visualizzazione e modellazione. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+    >  Alcune versioni di Visual Studio supportano la convalida della dipendenza e le versioni di sola lettura di mappe del codice per la visualizzazione e modellazione. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
 ##  <a name="UnderstandingCommunicating"></a> Comprensione e comunicazione delle informazioni relative al sistema  
  Non è necessario usare i diagrammi di modellazione di Visual Studio in base a un ordine stabilito; possono essere usati in base alle proprie esigenze o all'approccio preferito. In genere i team rivedono i propri modelli in modo frequente e iterativo nel corso di un progetto. Ogni diagramma offre specifici punti di forza che consentono di comprendere, descrivere e comunicare i diversi aspetti del sistema in fase di sviluppo.  
