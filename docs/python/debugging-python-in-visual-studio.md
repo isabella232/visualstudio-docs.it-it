@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -201,4 +201,4 @@ La finestra Debug interattivo ha un set di opzioni specifico, a cui è possibile
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
+Per informazioni dettagliate sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/debugger-feature-tour.md).

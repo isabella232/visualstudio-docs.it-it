@@ -11,16 +11,16 @@ ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: e1818c12090737511b6460145b994bf58e6ad9ab
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
 In questa esercitazione per Visual Basic (VB), si userà Visual Studio per creare ed eseguire alcune app console diverse ed esplorare nello stesso tempo alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment)](visual-studio-ide.md) di Visual Studio.
