@@ -1,13 +1,13 @@
 ---
-title: '@setIstruzione (JavaScript) | Documenti Microsoft'
-ms.custom: 
+title: '@set Istruzione (JavaScript) | Documenti Microsoft'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@setIstruzione (JavaScript)
+# <a name="set-statement-javascript"></a>@set Istruzione (JavaScript)
 Crea le variabili usate con le istruzioni di compilazione condizionale.  
   
 > [!WARNING]
@@ -43,7 +43,7 @@ Crea le variabili usate con le istruzioni di compilazione condizionale.
 ```  
   
 ## <a name="parameters"></a>Parametri  
- *VarName*  
+ *varname*  
  Obbligatorio. Nome di variabile [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] valido. Deve essere sempre preceduto dal carattere "@".  
   
  `term`  
@@ -96,5 +96,5 @@ Crea le variabili usate con le istruzioni di compilazione condizionale.
 ## <a name="see-also"></a>Vedere anche  
  [Compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onIstruzione](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on Istruzione](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [Istruzione @if](../../javascript/reference/at-if-statement-javascript.md)

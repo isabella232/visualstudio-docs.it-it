@@ -1,9 +1,9 @@
 ---
 title: Convalida in un linguaggio specifico di dominio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 Gli autori di un linguaggio specifico di dominio possono definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo. Ad esempio, se il linguaggio specifico di dominio consente agli utenti di disegnare l'albero genealogico di determinate persone e dei relativi antenati, è possibile scrivere un vincolo per garantire che le date di nascita dei figli siano successive a quelle dei genitori.  
@@ -35,7 +35,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
   
 -   Il diagramma e scegliere **convalidare tutti**.  
   
--   Pulsante destro del mouse il nodo principale in soluzioni di DSL e selezionare **convalidare tutti**  
+-   Destro del mouse sul nodo principale in Esplora del linguaggio DSL e selezionare **convalidare tutti i**  
   
 -   L'utente salva il modello.  
   
@@ -181,7 +181,7 @@ public partial class Person
   
  Presenta però alcuni svantaggi, in quanto il metodo combinato è più difficile da gestire e i vincoli devono includere tutti gli stessi attributi `ValidationCategories`. Se possibile, è quindi consigliabile mantenere ogni vincolo in un metodo separato.  
   
- **Passaggio di valori nella cache di contesto.** Il parametro di contesto è un dizionario in cui è possibile inserire valori arbitrari. Il dizionario viene mantenuto per tutta la durata della convalida. Un particolare metodo di convalida potrebbe, ad esempio, mantenere un conteggio degli errori nel contesto e usarlo per evitare di visualizzare nella finestra degli errori un numero elevato di messaggi ripetuti. Ad esempio:  
+ **Passaggio di valori nella cache del contesto.** Il parametro di contesto è un dizionario in cui è possibile inserire valori arbitrari. Il dizionario viene mantenuto per tutta la durata della convalida. Un particolare metodo di convalida potrebbe, ad esempio, mantenere un conteggio degli errori nel contesto e usarlo per evitare di visualizzare nella finestra degli errori un numero elevato di messaggi ripetuti. Ad esempio:  
   
 ```csharp  
 List<ParentsHaveChildren> erroneousLinks;  
@@ -198,7 +198,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
  Se si imposta la molteplicità di un ruolo di una relazione di dominio su 1..* o 1..1, ma l'utente non crea un collegamento di questa relazione, verrà visualizzato un messaggio di errore di convalida.  
   
- Ad esempio, se dispone di tale linguaggio DSL classi utente e città e una relazione PersonLivesInTown con una relazione **1...\***  il ruolo di città, per ogni utente che non dispone di alcun paese, un messaggio di errore verrà quindi visualizzati.  
+ Ad esempio, se dispone di tale linguaggio DSL classi utente e città e una relazione PersonLivesInTown con una relazione **1...\* ** il ruolo di città, per ogni utente che non dispone di alcun paese, un messaggio di errore verrà quindi visualizzati.  
   
 ## <a name="running-validation-from-program-code"></a>Esecuzione della convalida dal codice programma  
  È possibile eseguire la convalida creando o accedendo a un oggetto ValidationController. Se si desidera che gli errori da visualizzare all'utente nella finestra di errore, utilizzare ValidationController collegato a DocData del diagramma. Ad esempio, se si intende scrivere un comando di menu, `CurrentDocData.ValidationController` è disponibile nella classe del set di comandi:  
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  I gestori vengono inoltre chiamati dopo operazioni Undo o Redo che influiscono su collegamenti o elementi.  
   
-##  <a name="custom"></a>Categorie di convalida personalizzata  
+##  <a name="custom"></a> Categorie di convalida personalizzata  
  Oltre alle categorie di convalida standard, come Menu e Open, è possibile definire categorie personalizzate e richiamarle dal codice programma. L'utente non può invece richiamarle direttamente.  
   
  Le categorie personalizzate vengono in genere usate per definire una categoria che verifica se il modello soddisfa le precondizioni di un determinato strumento.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Alternative per la convalida  
+##  <a name="alternatives"></a> Alternative per la convalida  
  I vincoli di convalida segnalano gli errori, ma non modificano il modello. Se, invece, si vuole evitare che il modello non sia più valido, è possibile usare altre tecniche,  
   
  che però non sono consigliate. È in genere preferibile lasciare che sia l'utente a decidere come correggere un modello non valido.  
@@ -344,5 +344,5 @@ validationController.ValidateCustom
 >  Assicurarsi di informare l'utente dell'adattamento della modifica o del rollback. Ad esempio, usare `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [I gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)

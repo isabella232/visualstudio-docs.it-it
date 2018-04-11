@@ -1,12 +1,12 @@
 ---
 title: Risoluzione dei problemi delle soluzioni SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Risoluzione dei problemi relativi alle soluzioni SharePoint
   Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per ulteriori informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Punto (.)  
   
--   Virgola ()  
+-   Comma (,)  
   
 -   Carattere di sottolineatura (_)  
   
@@ -170,7 +170,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="error-messages"></a>Messaggi di errore  
   
--   \<*nome del modello*> ha i seguenti errori di attivazione di un tipo di contenuto esterno...  
+-   \<*nome del modello*> contiene gli errori di attivazione di tipo di contenuto esterno seguenti...  
   
 -   IMetadataObject denominato '\<*nome modello*>' ha un valore nel campo 'name' che è duplicato...  
   
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Questo problema si verifica se si rinomina un'istanza di elenco importata e quindi eseguirlo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Messaggio di errore  
- Errore di compilazione: errore durante il passaggio di distribuzione 'Attiva funzionalità': il file Template\Features\\[*importazione progetto**funzionalità**nome*] \Files\Lists \\[*precedente**nome dell'elenco*] \Schema.xml non esiste.  
+ Errore di compilazione: si è verificato un errore in fase di distribuzione 'Attiva funzionalità': il file Template\Features\\[*importare il progetto**funzionalità**nome*] \Files\Lists\\[*vecchio * * nome dell'elenco*] \Schema.xml non esiste.  
   
 ### <a name="resolution"></a>Risoluzione  
  Quando si importa un'istanza di elenco, un attributo denominato CustomSchema viene aggiunto al file Elements.xml dell'istanza di elenco. Elements include il percorso di un schema personalizzato per l'istanza di elenco. Quando si rinomina l'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cambia il percorso di distribuzione per il schema.xml personalizzato, ma il valore del percorso dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza di elenco Impossibile trovare il file di schema nel percorso specificato dall'attributo CustomSchema quando viene attivata la funzionalità precedente.  

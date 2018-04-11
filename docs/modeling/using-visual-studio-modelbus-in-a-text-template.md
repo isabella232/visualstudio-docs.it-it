@@ -1,9 +1,9 @@
 ---
 title: Utilizzo di ModelBus di Visual Studio in un modello di testo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilizzo di ModelBus di Visual Studio in un modello di testo
 Se si scrivono modelli di testo che leggono un modello contenente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fa riferimento, si consiglia di risolvere i riferimenti per accedere ai modelli di destinazione. In tal caso, è necessario adattare i modelli di testo e i riferimento linguaggi specifici di dominio (DSL):  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Creare un linguaggio DSL di nuovo usando il modello di soluzione Language minimo. Denominare la lingua MBConsumer e impostare l'estensione del nome file ".consume".  
   
-2.  Nel progetto DSL, aggiungere un riferimento all'assembly MBProvider DSL. Fare doppio clic su `MBConsumer\Dsl\References` e quindi fare clic su **Aggiungi riferimento**. Nel **Sfoglia** , individuare`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  Nel progetto DSL, aggiungere un riferimento all'assembly MBProvider DSL. Fare doppio clic su `MBConsumer\Dsl\References` e quindi fare clic su **Aggiungi riferimento**. Nel **Sfoglia** , individuare `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      In questo modo è possibile creare codice che usa il linguaggio specifico di dominio. Se si desidera creare riferimenti a diversi DSL, aggiungerli anche.  
   
@@ -277,7 +277,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
      `Provider File|*.provide`  
   
-     La sottostringa dopo "&#124;" è un filtro per la finestra di dialogo di selezione file. È possibile impostarlo per consentire tutti i file utilizzando *.\*  
+     La sottostringa dopo "&#124;" è un filtro per la finestra di dialogo di selezione file. È Impossibile impostarlo per consentire tutti i file utilizzando *.\*  
   
      Nel **il tipo di elemento del modello** elenco, immettere i nomi di uno o più dominio classi nel provider DSL (ad esempio, Company.MBProvider.Task). Possono essere classi astratte. Se si lascia vuoto l'elenco, l'utente può impostare il riferimento a qualsiasi elemento.  
   

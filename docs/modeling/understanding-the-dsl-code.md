@@ -1,9 +1,9 @@
 ---
 title: Informazioni sul codice DSL | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questa API è definita nel codice generato dalla definizione DSL. Questo argomento descrive l'API generata.  
@@ -30,7 +30,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
   
  Premere F5 e, se non si ha familiarità con questo modello di soluzione, fare delle prove. Si noti in particolare che, per creare le porte, è necessario trascinare uno strumento porta su un componente e che è possibile collegare le porte.  
   
- ![E porte interconnesse](../modeling/media/componentsample.png "ComponentSample")  
+ ![Progetti e porte interconnesse](../modeling/media/componentsample.png "ComponentSample")  
   
 ## <a name="the-structure-of-the-dsl-solution"></a>Struttura della soluzione DSL  
  Il **Dsl** progetto definisce l'API per il modello DSL. Il **DslPackage** progetto definisce come si integra con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. È anche possibile aggiungere i propri progetti, che possono anche contenere codice generato dal modello.  
@@ -40,7 +40,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
   
  È consigliabile esaminare il codice generato per poter comprendere il linguaggio DSL. Per visualizzare i file generati, espandere i file *.tt in Esplora soluzioni.  
   
- Il \*file con estensione tt contengono la generazione di codice molto ridotta. Invece, usano le direttive `<#include>` per includere i file dei modelli condivisi. Sono disponibili i file condivisi **\Programmi\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**  
+ Il \*file con estensione tt contengono la generazione di codice molto ridotta. Invece, usano le direttive `<#include>` per includere i file dei modelli condivisi. I file condivisi sono reperibile nella **\Programmi\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**  
   
  Quando si aggiunge il proprio codice programma alla soluzione DSL, aggiungerlo in un file separato, al di fuori della cartella del codice generato. Si potrebbe voler creare un **codice personalizzato** cartella. Quando si aggiunge un nuovo file di codice a una cartella personalizzata, ricordare di correggere lo spazio dei nomi nello scheletro del codice iniziale.  
   
@@ -59,7 +59,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
 ## <a name="generated-files-in-dsl"></a>File generati in DSL  
  I seguenti file generati vengono visualizzati di **Dsl** progetto.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato per la compilazione (**bin**) directory. Quando si installa il modello DSL, è possibile copiare questo file per **\Programmi\Microsoft Visual Studio 11.0\Xml\Schemas** in modo che i file del modello possono essere convalidati. Per ulteriori informazioni, vedere [soluzioni per la distribuzione di un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   

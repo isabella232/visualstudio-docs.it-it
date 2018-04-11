@@ -1,11 +1,11 @@
 ---
-title: "Attività LIB | Microsoft Docs"
-ms.custom: 
+title: Attività LIB | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), LIB task
 - LIB task (MSBuild (Visual C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-caps.latest.revision: 
+caps.latest.revision: 7
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="lib-task"></a>Attività LIB
 Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, lib.exe. Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per altre informazioni, vedere [Riferimenti a LIB](/cpp/build/reference/lib-reference) ed [Esecuzione di LIB](/cpp/build/reference/running-lib).  

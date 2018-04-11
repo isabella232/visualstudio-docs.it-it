@@ -1,11 +1,11 @@
 ---
-title: "Attività GenerateApplicationManifest | Microsoft Docs"
-ms.custom: 
+title: Attività GenerateApplicationManifest | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 
+caps.latest.revision: 24
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>Attività GenerateApplicationManifest
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.  

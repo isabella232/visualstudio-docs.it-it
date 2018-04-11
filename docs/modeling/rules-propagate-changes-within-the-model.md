@@ -1,9 +1,9 @@
 ---
 title: Le regole di propagano le modifiche all'interno del modello | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: af086275f641e3237f8d22308c960ad30240b647
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando si verifica una modifica a qualsiasi elemento nell'archivio, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio l'aggiunta di un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o diagrammi. Molte funzioni incorporate sono definiti da regole: ad esempio, le regole di garantire che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.  
@@ -72,7 +72,7 @@ namespace ExampleNamespace
 ```  
   
 > [!NOTE]
->  Il codice di una regola è necessario modificare lo stato solo degli elementi all'interno dell'archivio; ovvero, la regola deve modificare solo gli elementi del modello, le relazioni, forme, i connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche apportate alle risorse all'esterno dell'archivio, definire gli eventi di archiviazione. Per ulteriori informazioni, vedere [gestori propagare le modifiche di fuori di modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+>  Il codice di una regola è necessario modificare lo stato solo degli elementi all'interno dell'archivio; ovvero, la regola deve modificare solo gli elementi del modello, le relazioni, forme, i connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche apportate alle risorse all'esterno dell'archivio, definire gli eventi di archiviazione. Per altre informazioni, vedere [gestori propagare le modifiche apportate di fuori di modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
   
 ### <a name="to-define-a-rule"></a>Per definire una regola  
   
@@ -124,7 +124,7 @@ namespace ExampleNamespace
   
     ```  
   
--   Se non si certi del nome della classe di modello di dominio, ricerca all'interno del file **Dsl\GeneratedCode\DomainModel.cs**  
+-   Se non si è certi del nome della classe di modello di dominio, la ricerca all'interno del file **Dsl\GeneratedCode\DomainModel.cs**  
   
 -   Scrivere il codice in un file di codice personalizzato nel progetto DSL.  
   
@@ -213,5 +213,5 @@ namespace Company.TaskRuleExample
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [I gestori eventi propagano le modifiche apportate all'esterno del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
+ [Gestori eventi propagano le modifiche apportate all'esterno del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme](../modeling/boundsrules-constrain-shape-location-and-size.md)
