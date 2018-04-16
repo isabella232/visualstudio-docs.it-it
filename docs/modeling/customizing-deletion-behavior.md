@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
 >  Per aggiungere il codice del programma alla definizione DSL, creare un file di codice nel **Dsl** del progetto e scrivere le definizioni parziali per estendere le classi nella cartella del codice generato. Per ulteriori informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definizione di una chiusura Delete  
- L'operazione di eliminazione utilizza la classe *YourModel * * * DeleteClosure** per determinare quali elementi da eliminare, dato una selezione iniziale. Chiama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` ripetutamente, verificando il grafico delle relazioni. È possibile eseguire l'override di questi metodi. ShouldVisitRolePlayer viene fornito con l'identità di un collegamento e l'elemento in corrispondenza di uno dei ruoli predefiniti del collegamento. Deve restituire uno dei valori seguenti:  
+ L'operazione di eliminazione utilizza la classe *YourModel***DeleteClosure** per determinare quali elementi da eliminare, dato una selezione iniziale. Chiama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` ripetutamente, verificando il grafico delle relazioni. È possibile eseguire l'override di questi metodi. ShouldVisitRolePlayer viene fornito con l'identità di un collegamento e l'elemento in corrispondenza di uno dei ruoli predefiniti del collegamento. Deve restituire uno dei valori seguenti:  
   
 -   **VisitorFilterResult.Yes**: l'elemento deve essere eliminato e il walker deve continuare a provare l'elemento di altri collegamenti.  
   

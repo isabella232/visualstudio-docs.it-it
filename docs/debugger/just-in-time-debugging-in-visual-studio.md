@@ -1,24 +1,26 @@
 ---
 title: 'Procedura: rispondere per il debug Just-In-Time | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 05/23/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/22/2017
 ---
@@ -36,7 +38,7 @@ Le azioni necessarie quando viene visualizzato Just-in-Time nella finestra di di
 
 1. (App web) Se si sta tentando di eseguire un'applicazione web, è possibile disabilitare il debug degli script.
 
-    Per Internet Explorer o Edge, disabilitare il debug degli script nella finestra di dialogo Opzioni Internet. È possibile accedere a queste impostazioni dal **Pannello di controllo** > **rete e Internet** > **Opzioni Internet** (passaggi esatti dipendono le versione di Windows e il browser).
+    Per Internet Explorer o Microsoft Edge, disabilitare il debug degli script nella finestra di dialogo Opzioni Internet. È possibile accedere a queste impostazioni dal **Pannello di controllo** > **rete e Internet** > **Opzioni Internet** (passaggi esatti dipendono le versione di Windows e il browser).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 

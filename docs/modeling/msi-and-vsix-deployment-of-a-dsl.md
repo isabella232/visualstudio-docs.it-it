@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/10/2018
 ---
@@ -104,7 +104,7 @@ ms.lasthandoff: 04/10/2018
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verrà creato un file denominato **CreateMsiSetupProject.vdproj**.  
   
-6.  In Esplora risorse, la copia Dsl\\vdproj in una nuova cartella denominata il programma di installazione.  
+6.  In Esplora risorse, la copia Dsl\\\*.vdproj in una nuova cartella denominata il programma di installazione.  
   
      (Se si desidera, è possibile ora escludere CreateMsiSetupProject.tt dal progetto Dsl.)  
   

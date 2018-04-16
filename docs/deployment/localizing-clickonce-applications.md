@@ -1,11 +1,12 @@
 ---
 title: Localizzazione di applicazioni ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -21,19 +22,20 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
-La localizzazione è il processo di adattamento di un'applicazione a impostazioni cultura specifiche. Questo processo consiste nel tradurre il testo dell'interfaccia utente in una lingua specifica di un paese/regione, usare la formattazione di data e valuta corretta, regolare la dimensione dei controlli di un form e, se necessario, eseguire il mirroring dei controlli da destra verso sinistra.  
+La localizzazione è il processo di adattamento di un'applicazione a impostazioni cultura specifiche. Questo processo consiste nel tradurre il testo dell'interfaccia utente in una lingua specifica di un paese/area geografica, usare la formattazione di data e valuta corretta, regolare la dimensione dei controlli di un form e, se necessario, eseguire il mirroring dei controlli da destra verso sinistra.  
   
  La localizzazione di un'applicazione comporta la creazione di uno o più assembly satellite. In ogni assembly sono contenute stringhe dell'interfaccia utente, immagini e altre risorse specifiche di determinate impostazioni cultura. Nel file eseguibile principale dell'applicazione sono contenute le stringhe delle impostazioni cultura predefinite dell'applicazione.  
   
@@ -60,7 +62,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
 ## <a name="generate-one-deployment-for-each-culture"></a>Generare una distribuzione per le singole impostazioni cultura  
  In questa strategia di distribuzione vengono generate più distribuzioni. In ogni distribuzione viene incluso solo l'assembly satellite necessario per impostazioni cultura specifiche e la distribuzione viene contrassegnata come specifica di tali impostazioni cultura.  
   
- Utilizzare questo metodo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], impostare il **lingua di pubblicazione** proprietà il **pubblica** scheda per la regione desiderata. L'assembly satellite richiesto per il paese/regione selezionato verrà incluso automaticamente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e tutti gli altri assembly satellite verranno esclusi dalla distribuzione.  
+ Utilizzare questo metodo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], impostare il **lingua di pubblicazione** proprietà il **pubblica** scheda per la regione desiderata. L'assembly satellite richiesto per il paese/area geografica selezionato verrà incluso automaticamente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e tutti gli altri assembly satellite verranno esclusi dalla distribuzione.  
   
  Questa stessa operazione può essere eseguita con lo strumento MageUI.exe in Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Utilizzare il **Popola** pulsante il **file** scheda del manifesto dell'applicazione per escludere tutti gli altri assembly satellite dalla directory dell'applicazione, quindi impostare il **delle impostazioni cultura**nel campo di **nome** scheda per il manifesto di distribuzione in MageUI.exe. Questi passaggi non consentono solo di includere l'assembly satellite corretto, ma anche di impostare l'attributo `language` dell'elemento `assemblyIdentity` nel manifesto della distribuzione sul valore delle impostazioni cultura corrispondenti.  
   

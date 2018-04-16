@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/10/2018
   
  Per distribuire le estensioni il principale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e in altri computer, seguire questi passaggi:  
   
-1.  Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\\\*VSIX  
+1.  Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX  
   
 2.  Copiare questo file nel computer di destinazione e quindi in Esplora risorse (o Esplora File), fare doppio clic.  
   
