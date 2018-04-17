@@ -1,29 +1,25 @@
 ---
 title: Funzione SccDiff | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30d8d6a4b8b400088d5feed663c8257215a0f8a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccdiff-function"></a>SccDiff (funzione)
 Questa funzione consente di visualizzare (o facoltativamente solo Cerca) le differenze tra il file corrente (su disco locale) e la relativa ultima versione archiviata nell'origine del sistema di controllo.  
@@ -78,7 +74,7 @@ SCCRTN SccDiff(
  Ottimizzare le prestazioni, il plug-in controllo del codice sorgente può utilizzare un'alternativa in base a un checksum o di un timestamp anziché il confronto byte per byte indicato `SCC_DIFF_CONTENTS`: queste forme di confronto sono ovviamente più veloce ma meno affidabile. Non tutti i sistemi di controllo di origine supportino questi metodi di confronto alternativo e il plug-in potrebbe essere necessario eseguire il fallback a un confronto di contenuto. Tutti i plug-in controllo codice sorgente, è necessario come minimo, supporta un confronto di contenuto.  
   
 > [!NOTE]
->  I flag di differenza rapido si escludono a vicenda. È possibile non passare alcun flag, ma non è valido passare contemporaneamente più di uno. `SCC_DIFF_QUICK_DIFF`, che è una maschera che combina i flag di tutti, può essere utilizzato per verificare, ma non deve mai essere passato come parametro.  
+>  I flag di differenza rapido si escludono a vicenda. È possibile non passare alcun flag, ma non è valido passare contemporaneamente più di uno. `SCC_DIFF_QUICK_DIFF`, ovvero una maschera che combina tutti i flag, può essere utilizzato per testare, ma non deve mai essere passato come parametro.  
   
 |`fOption`|Significato|  
 |---------------|-------------|  

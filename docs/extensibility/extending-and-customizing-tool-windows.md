@@ -1,26 +1,24 @@
 ---
 title: Estendere e personalizzare le finestre degli strumenti | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
 - tool windows, standard
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2ef4f656ed7b7ab7facbcfb470fca98327276cce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Estendere e personalizzare le finestre degli strumenti
 Visual Studio fornisce diversi tipi di windows, ad esempio le finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio la finestra Proprietà, la finestra di Output e la finestra Elenco attività, sono tipi di finestre degli strumenti.  
@@ -48,7 +46,7 @@ Visual Studio fornisce diversi tipi di windows, ad esempio le finestre degli str
  È possibile aggiungere informazioni sulla finestra di strumento in un nuovo **opzioni** pagina e una nuova impostazione nel **proprietà** pagina, scrivere il **elenco attività** e **Output**  windows. Per ulteriori informazioni, vedere [estensione di proprietà, elenco attività, Output e le opzioni di Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md) e [estensione di proprietà, elenco attività, Output e le opzioni di Windows](../extensibility/extending-the-properties-task-list-output-and-options-windows.md).  
   
 ## <a name="modal-dialog-boxes"></a>Finestre di dialogo modale  
- In un'estensione di Visual Studio è necessario creare finestre di dialogo modale tramite la derivazione da <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, che consente di controllare queste e il resto dell'interfaccia utente. Per altre informazioni, vedere . [Creazione e la gestione delle finestre di dialogo modale](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
+ In un'estensione di Visual Studio è necessario creare finestre di dialogo modale tramite la derivazione da <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, che consente di controllare queste e il resto dell'interfaccia utente. Per altre informazioni, vedere . [Creazione e gestione di finestre di dialogo modali](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)

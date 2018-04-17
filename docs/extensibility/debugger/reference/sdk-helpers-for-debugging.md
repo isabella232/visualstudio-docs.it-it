@@ -1,12 +1,10 @@
 ---
 title: Helper SDK per il debug | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 Queste funzioni e le dichiarazioni sono funzioni di supporto globale per l'implementazione di motori di debug, analizzatori di espressioni e i provider di simboli in C++.  
@@ -180,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Impostare su diverso da zero per indicare il supporto per l'impostazione di punti di interruzione sulle modifiche ai dati.|  
 |metricDisassembly|Impostare su zero per indicare il supporto per la produzione di un elenco di disassembly.|  
 |metricDumpWriting|Impostare su diverso da zero per indicare il supporto per i dump di scrittura (il dump di memoria da un dispositivo di output).|  
-|metricENC|Impostare su zero per indicare il supporto per la modifica e continuazione. **Nota:** un motore di debug personalizzato non deve mai impostata questa o deve sempre impostato su 0.|  
+|metricENC|Impostare su zero per indicare il supporto per la modifica e continuazione. **Nota:** un motore di debug personalizzato non deve mai impostata in questo o deve sempre impostata su 0.|  
 |metricExceptions|Impostare su diverso da zero per indicare il supporto per le eccezioni.|  
 |metricFunctionBP|Impostare su diverso da zero per indicare il supporto per i punti di interruzione denominati (i punti di interruzione che l'interruzione quando viene chiamato un determinato nome di funzione).|  
 |metricHitCountBP|Impostare su diverso da zero per indicare il supporto per l'impostazione di punti di interruzione "riscontri punto" (punti di interruzione che vengono attivati solo dopo che viene raggiunto un determinato numero di volte).|  
@@ -195,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Impostare questa opzione a diverso da zero per indicare che il provider di programma deve sempre essere caricato in locale.|  
 |metricEngineCanWatchProcess|Impostare su diverso da zero per indicare che il motore di debug controllerà per elaborare gli eventi anziché il provider di programma.|  
 |metricRemoteDebugging|Impostare su diverso da zero per indicare il supporto per il debug remoto.|  
-|metricEncUseNativeBuilder|Impostare questa opzione a diverso da zero per indicare che la modifica e continuazione di gestione deve usare encbuild.dll del motore di debug per compilare per la modifica e continuazione. **Nota:** un motore di debug personalizzato non deve mai impostata questa o deve sempre impostato su 0.|  
+|metricEncUseNativeBuilder|Impostare questa opzione a diverso da zero per indicare che la modifica e continuazione di gestione deve usare encbuild.dll del motore di debug per compilare per la modifica e continuazione. **Nota:** un motore di debug personalizzato non deve mai impostata in questo o deve sempre impostata su 0.|  
 |metricLoadUnderWOW64|Impostare questa proprietà su diverso da zero per indicare che il motore di debug deve essere caricato nel processo oggetto del debug in WOW durante il debug di un processo a 64 bit. in caso contrario, il motore di debug verrà caricato nel processo di Visual Studio (che è in esecuzione in WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Impostare questa proprietà su diverso da zero per indicare che il provider del programma deve essere caricato nel processo oggetto del debug durante il debug di un processo a 64 bit in WOW; in caso contrario, verrà caricato nel processo di Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Impostare su diverso da zero per indicare che il processo deve essere arrestata se viene generata un'eccezione non gestita oltre i limiti gestiti/non gestiti non di codice.|  
@@ -257,11 +255,11 @@ HRESULT EnumMetricSections(
   
  *[tipo di metrica]*\  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
 |Segnaposto|Descrizione|  
 |-----------------|-----------------|  
@@ -270,13 +268,13 @@ HRESULT EnumMetricSections(
 |*[radice metrica]*|Il valore può essere `AD7Metrics` o `AD7Metrics(Debug)`, a seconda se viene utilizzata la versione di debug di dbgmetric.lib. **Nota:** dbgmetric.lib viene utilizzato, o meno questa convenzione di denominazione deve essere rispettata nel caso di differenze tra debug e rilascio versioni che devono essere riflessa nel Registro di sistema.|  
 |*[tipo di metrica]*|Il tipo di metrica da scrivere: `Engine`, `ExpressionEvaluator`, `SymbolProvider`e così via. Questi sono tutti definiti come dbgmetric.h come `metricTypeXXXX`, dove `XXXX` è il nome del tipo specifico.|  
 |*[metrica]*|Il nome di una voce per assegnare un valore per impostare la metrica. L'organizzazione delle metriche effettivo dipende dal tipo metrica.|  
-|*[valore metrica]*|Il valore assegnato alla metrica. Il tipo che di valore deve avere (stringa), numero, via varia a seconda della metrica.|  
+|*[valore della metrica]*|Il valore assegnato alla metrica. Il tipo che di valore deve avere (stringa), numero, via varia a seconda della metrica.|  
   
 > [!NOTE]
 >  Tutti i GUID vengono archiviati nel formato `{GUID}`. Ad esempio `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Motori di debug  
- Di seguito è l'organizzazione delle metriche di motori di debug nel Registro di sistema. `Engine`è il nome del tipo di metrica per un motore di debug e corrisponde a *[tipo di metrica]* nel sottoalbero del Registro di sistema precedente.  
+ Di seguito è l'organizzazione delle metriche di motori di debug nel Registro di sistema. `Engine` è il nome del tipo di metrica per un motore di debug e corrisponde a *[tipo di metrica]* nel sottoalbero del Registro di sistema precedente.  
   
  `Engine`\  
   
@@ -284,11 +282,11 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[classe guid]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
  `PortSupplier`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[guid fornitore porta]*|Il GUID del fornitore porta, se presente. Numero di motori di debug utilizza il fornitore della porta predefinita e non si specifica proprio fornitore. In questo caso, la sottochiave `PortSupplier` sarà presente.|  
   
 ### <a name="port-suppliers"></a>Fornitori di porte  
- Di seguito è l'organizzazione delle metriche di fornitore di porta nel Registro di sistema. `PortSupplier`è il nome del tipo di metrica per un fornitore di porta e corrisponde a *[tipo di metrica]*.  
+ Di seguito è l'organizzazione delle metriche di fornitore di porta nel Registro di sistema. `PortSupplier` è il nome del tipo di metrica per un fornitore di porta e corrisponde a *[tipo di metrica]*.  
   
  `PortSupplier`\  
   
@@ -311,9 +309,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[classe guid]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
 |Segnaposto|Descrizione|  
 |-----------------|-----------------|  
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[classe guid]*|Il GUID della classe che implementa il fornitore della porta|  
   
 ### <a name="symbol-providers"></a>Provider di simboli  
- Di seguito è l'organizzazione delle metriche fornitore simbolo nel Registro di sistema. `SymbolProvider`è il nome del tipo di metrica per il provider di simboli e corrisponde a *[tipo di metrica]*.  
+ Di seguito è l'organizzazione delle metriche fornitore simbolo nel Registro di sistema. `SymbolProvider` è il nome del tipo di metrica per il provider di simboli e corrisponde a *[tipo di metrica]*.  
   
  `SymbolProvider`\  
   
@@ -331,17 +329,17 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[classe guid]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
  `metadata`\  
   
  `CLSID` = *[classe guid]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
 |Segnaposto|Descrizione|  
 |-----------------|-----------------|  
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[classe guid]*|Il GUID della classe che implementa il provider di simboli|  
   
 ### <a name="expression-evaluators"></a>Analizzatori di espressioni  
- Di seguito è l'organizzazione delle metriche dell'analizzatore di espressioni nel Registro di sistema. `ExpressionEvaluator`è il nome del tipo di metrica per l'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.  
+ Di seguito è l'organizzazione delle metriche dell'analizzatore di espressioni nel Registro di sistema. `ExpressionEvaluator` è il nome del tipo di metrica per l'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.  
   
 > [!NOTE]
 >  Il tipo di metrica per `ExpressionEvaluator` non è definito in dbgmetric.h, come si presuppone che tutte le modifiche alla metrica per gli analizzatori di espressioni verranno esaminate le funzioni di metrica dell'analizzatore di espressioni espressione appropriata (il layout del `ExpressionEvaluator` sottochiave è più o meno complicata, pertanto i dettagli sono nascosti all'interno di dbgmetric.lib).  
@@ -362,9 +360,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[classe guid]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
  `Engine`\  
   
@@ -380,22 +378,22 @@ HRESULT EnumMetricSections(
 |*[guid motore di debug]*|Il GUID di un motore di debug che con l'analizzatore di espressioni|  
   
 ### <a name="expression-evaluator-extensions"></a>Estensioni dell'analizzatore di espressioni  
- Di seguito è l'organizzazione delle metriche di estensione dell'analizzatore di espressioni nel Registro di sistema. `EEExtensions`è il nome del tipo di metrica per l'espressione estensioni dell'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.  
+ Di seguito è l'organizzazione delle metriche di estensione dell'analizzatore di espressioni nel Registro di sistema. `EEExtensions` è il nome del tipo di metrica per l'espressione estensioni dell'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.  
   
  `EEExtensions`\  
   
  *[guid estensione]*\  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
 |Segnaposto|Descrizione|  
 |-----------------|-----------------|  
 |*[guid estensione]*|Il GUID di un'estensione dell'analizzatore di espressioni|  
   
 ### <a name="exceptions"></a>Eccezioni  
- Di seguito è l'organizzazione delle metriche delle eccezioni nel Registro di sistema. `Exception`è il nome del tipo di metrica per le eccezioni e corrisponde a *[tipo di metrica]*.  
+ Di seguito è l'organizzazione delle metriche delle eccezioni nel Registro di sistema. `Exception` è il nome del tipo di metrica per le eccezioni e corrisponde a *[tipo di metrica]*.  
   
  `Exception`\  
   
@@ -405,15 +403,15 @@ HRESULT EnumMetricSections(
   
  *[eccezione]*\  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
  *[eccezione]*\  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
- *[metrica] = [valore metrica]*  
+ *[metrica] = [valore della metrica]*  
   
 |Segnaposto|Descrizione|  
 |-----------------|-----------------|  

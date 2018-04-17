@@ -1,22 +1,19 @@
 ---
 title: Editor dei colori VSIX | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: aa699e0c6d4d23ec6e5cdc347627a98efb623672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3404505da4b006327aebb5b8cd7b69fc69e218d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-color-editor"></a>Editor dei colori VSIX
 Lo strumento Editor colore di estensione di Visual Studio è possibile creare e modificare i colori personalizzati per Visual Studio. Lo strumento può inoltre generare chiavi di risorsa tema in modo che i colori possono essere usati nel codice. Questo strumento è utile per rendere i colori per un'estensione di Visual Studio che supporta i temi. Questo strumento è possibile aprire i file. pkgdef e XML. Dei temi di Visual Studio (file .vstheme) utilizzabile con Visual Studio estensione Editor di colori modificando l'estensione di file in file con estensione XML. Inoltre, i file di .vstheme possono essere importati in un file con estensione XML corrente.  
@@ -35,9 +32,9 @@ Lo strumento Editor colore di estensione di Visual Studio è possibile creare e 
   
 -   **Nome token:** un nome descrittivo per il token di colore e il set di token. Devono essere denominati in modo che risulti semplice identificare le coppie e gli Stati che si applicano a set di includono in background e i nomi di token di primo piano (testo), nonché tutti i relativi stati.  
   
--   **Colore di valori (o tonalità):** necessari per ogni tema colorato. Creare sempre sfondo e del testo i valori di colore in coppie. I colori vengono combinati per sfondo/primo piano in modo che il colore del testo (in primo piano) è sempre leggibile contro il colore di sfondo in cui viene disegnato. Questi colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non deve essere utilizzato con il testo, non definire un colore di primo piano.  
+-   **Colore dei valori (o tonalità):** necessari per ogni tema colorato. Creare sempre sfondo e del testo i valori di colore in coppie. I colori vengono combinati per sfondo/primo piano in modo che il colore del testo (in primo piano) è sempre leggibile contro il colore di sfondo in cui viene disegnato. Questi colori sono collegati e vengono usati insieme nell'interfaccia utente. Se lo sfondo non deve essere utilizzato con il testo, non definire un colore di primo piano.  
   
--   **Il nome di colore di sistema:** per l'utilizzo nelle visualizzazioni di contrasto elevato.  
+-   **Nome di colore di sistema:** per l'utilizzo nelle visualizzazioni di contrasto elevato.  
   
 ## <a name="how-to-use-the-tool"></a>Come utilizzare lo strumento  
  Per quanto possibile, e laddove appropriato, i colori di Visual Studio esistenti devono essere riutilizzati anziché eseguire nuovi. Tuttavia, per casi in cui non vengono definiti i colori appropriati, colori personalizzati devono essere creati per mantenere i temi di un'estensione compatibile.  
@@ -110,7 +107,7 @@ Lo strumento Editor colore di estensione di Visual Studio è possibile creare e 
   
  Selezionare una categoria esistente oppure **nuova categoria** per creare una nuova categoria. Verrà aperta un'altra finestra di dialogo, creando un nuovo nome di categoria:  
   
- ![Nuova categoria di Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-new-category.png "nuova categoria di Editor dei colori VSIX")  
+ ![Nuova categoria Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-new-category.png "nuova categoria Editor dei colori VSIX")  
   
  La nuova categoria quindi diventano disponibile nel **nuovo colore** menu a discesa categoria. Dopo aver scelto una categoria, immettere un nome per riga per ogni nuovo token di colore e selezionare "Crea" al termine:  
   
@@ -124,7 +121,7 @@ Lo strumento Editor colore di estensione di Visual Studio è possibile creare e 
   
  ![Modifica del colore dell'Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-edit-color.png "modifica del colore dell'Editor dei colori VSIX")  
   
- ![Sfondo Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "Background Editor dei colori VSIX")  
+ ![In Background Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-background.png "in Background Editor dei colori VSIX")  
   
  Per i componenti che non è necessario per visualizzare il testo, immettere il valore di un solo colore: il colore di sfondo. In caso contrario, immettere i valori per il colore di sfondo e di testo, separato da una barra rovesciata.  
   
@@ -140,7 +137,7 @@ Lo strumento Editor colore di estensione di Visual Studio è possibile creare e 
   
  Nell'Editor di Visual Studio estensione colore, scegliere File > Visualizza risorse codice per visualizzare il codice che viene utilizzato per l'accesso personalizzato colori nell'interfaccia utente basato su WPF.  
   
- ![Visualizzatore del codice di risorse Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "visualizzatore del codice di risorse Editor dei colori VSIX")  
+ ![Visualizzatore del codice risorse Editor dei colori VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "visualizzatore del codice risorse Editor dei colori VSIX")  
   
  Includere questo codice in una classe statica nel progetto. Un riferimento a **Microsoft.VisualStudio.Shell.\< VSVersion >.0.dll** deve essere aggiunto al progetto per utilizzare il **ThemeResourceKey** tipo.  
   

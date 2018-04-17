@@ -1,27 +1,23 @@
 ---
 title: Architettura plug-in del controllo origine | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 498f3aeb87855a0dac5afacc1baa7e2e816375f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-architecture"></a>Architettura plug-in controllo di origine
 È possibile aggiungere il supporto del controllo di origine per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) implementando e collegamento di un plug-in controllo del codice sorgente. L'IDE si connette il controllo del codice sorgente plug-in tramite l'API di plug-in controllo origine ben definito. L'IDE espone le funzionalità di controllo di versione del sistema di origine, fornendo un'interfaccia utente (UI) che include i comandi di menu e barre degli strumenti. Il plug-in controllo del codice sorgente implementa la funzionalità di controllo di origine.  
@@ -34,7 +30,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="components"></a>Componenti  
  Il pacchetto di scheda di controllo di origine nel diagramma è il componente dell'IDE che traduce la richiesta dell'utente per un'operazione di controllo del codice sorgente in una chiamata di funzione supportata dal plug-in controllo del codice sorgente. A tale scopo, l'IDE e il plug-in controllo del codice sorgente deve avere una finestra di dialogo efficace che passa informazioni avanti e indietro tra l'IDE e del plug-in. Per questa finestra di dialogo eseguire entrambi devono parlano la stessa lingua. L'API plug-in controllo origine descritte in questa documentazione è il vocabolario comune per questo scambio.  
   
- ![Diagramma dell'architettura di controllo codice sorgente](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch")  
+ ![Diagramma architettura del controllo del codice di origine](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch")  
 Diagramma dell'architettura con l'interazione tra Visual Studio e controllo del codice sorgente plug-in  
   
  Come illustrato nel diagramma dell'architettura, la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell, etichettata come shell di Visual Studio nel diagramma, ospita i progetti di lavoro dell'utente e i componenti associati, ad esempio l'Editor ed Esplora soluzioni. Il pacchetto di Adapter origine controllo gestisce l'interazione tra l'IDE e il plug-in controllo del codice sorgente. Il pacchetto di origine controllo scheda fornisce il proprio controllo del codice sorgente dell'interfaccia utente. È l'interfaccia utente di primo livello che l'utente interagisce con per avviare e definire l'ambito di un'operazione di controllo del codice sorgente.  

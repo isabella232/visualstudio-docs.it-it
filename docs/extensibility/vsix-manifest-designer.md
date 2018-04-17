@@ -1,13 +1,10 @@
 ---
 title: Progettazione del manifesto VSIX | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7af3ab109c922a8182a93db6852a331229ceca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b90f8acd95d913e563ff167e21b743cbffec2ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-manifest-designer"></a>Progettazione del manifesto VSIX
 Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di installazione per un'estensione di Visual Studio.  
@@ -99,7 +95,7 @@ Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di in
  **Estensione di Visual Studio**  
  Elenca il **la destinazione di installazione** gli elementi che descrivono come il pacchetto può essere installato e in quali prodotti Visual Studio è possibile installare questa estensione. Ogni prodotto viene identificato separatamente dal nome e una versione o intervallo.  Prodotti possono essere aggiunto all'elenco, modificati ed eliminati. Il nome e la versione di un prodotto corrispondono al **Id** e **versione** gli attributi dell'oggetto associato **la destinazione di installazione** elemento.  
   
- **Intervallo di versioni** è [12.0, 14,0] e viene utilizzata la notazione seguente:  
+ **Intervallo di versioni** è [12.0, 14,0] e Usa la notazione seguente:  
   
 -   [-versione minima inclusiva  
   
@@ -112,7 +108,7 @@ Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di in
 -   Versione unica # - solo la versione specificata  
   
  **SDK di estensione**  
- Specifica un'installazione globale non è nell'ambito di un prodotto specifico e una versione. **Identificatore della piattaforma di destinazione** è la piattaforma, ad esempio "Windows", di destinazione. **Versione della piattaforma di destinazione** è la versione, ad esempio 8.0, la piattaforma di destinazione. **Nome del SDK** e **SDK versione** sono rispettivamente il nome e il numero di versione di SDK.  
+ Specifica un'installazione globale non è nell'ambito di un prodotto specifico e una versione. **Identificatore di piattaforma di destinazione** è la piattaforma, ad esempio "Windows", che di destinazione. **Versione della piattaforma di destinazione** è la versione, ad esempio 8.0, la piattaforma di destinazione. **Nome del SDK** e **SDK versione** sono rispettivamente il nome e il numero di versione di SDK.  
   
  **Questo VSIX è installato per tutti gli utenti (richiede l'elevazione all'installazione)** casella di controllo  
  Se questa casella di controllo è selezionata, questa estensione è installata per tutti gli utenti. in caso contrario, viene installata solo per l'utente corrente.  

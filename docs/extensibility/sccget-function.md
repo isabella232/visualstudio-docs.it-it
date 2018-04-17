@@ -1,29 +1,25 @@
 ---
 title: Funzione SccGet | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet (funzione)
 Questa funzione recupera una copia di uno o più file per la visualizzazione e la compilazione, ma non per la modifica. Nella maggior parte dei sistemi, i file vengono contrassegnati come di sola lettura.  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  Il `SCC_GET_ALL` flag può essere combinato con il `SCC_GET_RECURSIVE` flag per recuperare tutti i file nella directory specificata e tutte le sottodirectory anche.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`non deve mai essere passato senza `SCC_GET_ALL`. Si noti inoltre che se le directory C:\A e C:\A\B sono entrambi passato in una ricorsiva ottengono, C:\A\B e tutte le relative sottodirectory verranno effettivamente recuperate due volte. È responsabilità dell'IDE, e non il controllo origine del plug-in, per assicurarsi che restino duplicati, ad esempio questo dalla matrice.  
+>  `SCC_GET_RECURSIVE` non deve mai essere passata senza `SCC_GET_ALL`. Si noti inoltre che se le directory C:\A e C:\A\B sono entrambi passato in una ricorsiva ottengono, C:\A\B e tutte le relative sottodirectory verranno effettivamente recuperate due volte. È responsabilità dell'IDE, e non il controllo origine del plug-in, per assicurarsi che restino duplicati, ad esempio questo dalla matrice.  
   
  Infine, anche se un controllo origine plug-in specificato il `SCC_CAP_GET_NOUI` flag durante l'inizializzazione, che indica che non dispone di un'interfaccia utente per un comando Get, questa funzione può ancora essere chiamata dall'IDE per recuperare i file. Il flag indica semplicemente che l'IDE non è presente una voce di menu Get e che il plug-in non è previsto fornire qualsiasi interfaccia utente.  
   

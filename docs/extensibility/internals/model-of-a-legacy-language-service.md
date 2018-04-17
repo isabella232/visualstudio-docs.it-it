@@ -1,27 +1,23 @@
 ---
 title: Modello di un servizio di linguaggio Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio Legacy
 Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene utilizzato per fornire l'editor con informazioni specifiche per tale lingua. Ad esempio, l'editor deve conoscere le parole chiave del linguaggio e elementi per supportare la colorazione della sintassi.  
@@ -52,7 +48,7 @@ Modello di servizio di linguaggio di base
 |Finestra del codice|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Una finestra del documento che contiene uno o più visualizzazioni di testo. Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è in modalità interfaccia a documenti multipli (MDI), la finestra del codice è un figlio MDI.|  
 |Visualizzazione di testo|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Una finestra che consente all'utente di esplorare e visualizzare il testo utilizzando la tastiera e mouse. Una visualizzazione di testo viene visualizzato all'utente come un editor. È possibile utilizzare le visualizzazioni testo normale dell'editor finestre, finestra di Output e finestra di controllo immediato. Inoltre, è possibile configurare uno o più visualizzazioni di testo all'interno di una finestra del codice.|  
 |Gestione di testo|Gestito dal <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> del servizio, da cui ottenere un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> puntatore|Un componente che gestisce le informazioni comuni condivise da tutti i componenti descritti in precedenza.|  
-|Servizio di linguaggio|Implementazione dipendenti; implementa<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Oggetto che fornisce l'editor con informazioni specifiche della lingua, ad esempio l'evidenziazione della sintassi, il completamento delle istruzioni e corrispondenza delle parentesi graffe.|  
+|Servizio di linguaggio|Implementazione dipendenti; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Oggetto che fornisce l'editor con informazioni specifiche della lingua, ad esempio l'evidenziazione della sintassi, il completamento delle istruzioni e corrispondenza delle parentesi graffe.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Dati documento e visualizzazione documento negli editor personalizzati](../../extensibility/document-data-and-document-view-in-custom-editors.md)

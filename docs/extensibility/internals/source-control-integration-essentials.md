@@ -1,30 +1,28 @@
 ---
 title: Origine controllo integrazione Essentials | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Origine di controllo di integrazione di Essentials
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]supporta due tipi di integrazione del controllo codice sorgente: plug-in controllo di origine che fornisce funzionalità di base e viene compilato utilizzando l'API plug-in controllo origine (precedentemente noto come API MSSCCI) e una soluzione di integrazione del controllo origine dati basata su VSPackage che fornisce la funzionalità più affidabile.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di integrazione del controllo codice sorgente: un controllo del codice sorgente del plug-in che fornisce funzionalità di base e viene compilato utilizzando l'API plug-in controllo origine (precedentemente noto come API MSSCCI) e una soluzione di integrazione del controllo origine dati basata su VSPackage che fornisce la funzionalità più affidabile.  
   
 ## <a name="source-control-plug-in"></a>Plug-in controllo del codice sorgente  
  Un plug-in controllo di origine viene scritto come DLL che implementa l'API plug-in controllo di origine. La funzionalità di integrazione controllo la registrazione e di origine viene fornita tramite l'API. Questo approccio è più facile da implementare rispetto a un controllo del codice sorgente VSPackage e viene utilizzato il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaccia utente (UI) per la maggior parte delle operazioni del controllo codice sorgente.  

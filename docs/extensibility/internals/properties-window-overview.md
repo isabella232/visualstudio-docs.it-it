@@ -1,27 +1,23 @@
 ---
-title: "Panoramica della finestra proprietà | Documenti Microsoft"
-ms.custom: 
+title: Panoramica della finestra proprietà | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
 Il **proprietà** finestra consente di visualizzare le proprietà di oggetti selezionati nei due tipi principali di windows disponibile nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Questi due tipi di windows sono:  
@@ -44,7 +40,7 @@ Il **proprietà** finestra consente di visualizzare le proprietà di oggetti sel
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fornisce un elenco di categorie per il **proprietà** finestra ed esegue il mapping a una categoria di ogni proprietà.|  
 |[Interfaccia IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Espone metodi e proprietà per la programmazione di strumenti e altre applicazioni che supportano l'automazione di un oggetto.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Sono disponibili i pulsanti con puntini di sospensione (…) denominati *generatori* che aprire finestre di dialogo modali implementate dall'oggetto stesso. Utilizzato quando un valore non è tipizzato con facilità dall'utente in un campo di testo. Ad esempio, potrebbe essere consente di aprire un selettore di colore che determina il valore RGB per l'utente.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornisce l'accesso agli oggetti utilizzati per aggiornare le informazioni visualizzate nel **proprietà** finestra. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>è implementato dal VSPackage per ogni finestra che contiene oggetti selezionabili con le proprietà correlate da visualizzare.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornisce l'accesso agli oggetti utilizzati per aggiornare le informazioni visualizzate nel **proprietà** finestra. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> è implementato dal VSPackage per ogni finestra che contiene oggetti selezionabili con le proprietà correlate da visualizzare.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fornisce informazioni sul tipo di oggetto, ad esempio i metodi di un'interfaccia e i campi di una struttura.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Consente i pacchetti VSPackage per ricevere la notifica degli eventi di selezione e recuperare le informazioni sulla gerarchia del progetto corrente, elemento, valore dell'elemento e contesto del comando dell'interfaccia utente.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Fornisce l'ambiente con accesso a più selezioni.|  

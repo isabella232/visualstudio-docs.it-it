@@ -1,25 +1,23 @@
 ---
 title: 'Procedura: impostare gli attributi CLR in un elemento | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eedf41931c7f9476691e507ab0afcd9e2a4c4ee
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 919f77955426ada0b772b1eb1f4c0adfffb59b81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Procedura: impostare gli attributi CLR in un elemento
 Gli attributi personalizzati sono attributi speciali che è possibile aggiungere diagrammi, forme, i connettori e gli elementi del dominio. È possibile aggiungere qualsiasi attributo che eredita la `System.Attribute` classe.  
@@ -42,7 +40,7 @@ Gli attributi personalizzati sono attributi speciali che è possibile aggiungere
   
      Il **attributi personalizzati** proprietà Visualizza ora l'attributo nel formato seguente:  
   
-     `[`*AttributeName* `(` *ParameterName* `=` *tipo*`)]`  
+     `[` *AttributeName* `(` *ParameterName* `=` *tipo* `)]`  
   
 ## <a name="see-also"></a>Vedere anche  
  [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

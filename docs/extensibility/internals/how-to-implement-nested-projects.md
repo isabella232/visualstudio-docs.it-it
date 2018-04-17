@@ -2,27 +2,23 @@
 title: 'Procedura: implementare progetti annidati | Documenti Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9e5331ceb1efd9fe26a7d713cd57b735fae2054
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: implementare progetti annidati
 Quando si crea un tipo di progetto annidato sono sono un alcuni passaggi aggiuntivi che devono essere implementati. Un progetto padre assume alcune delle responsabilità stessa con la soluzione per i progetti nidificati (figlio). Il progetto principale è un contenitore di progetti è simili a una soluzione. In particolare, sono disponibili diversi eventi che devono essere generati per la soluzione e per i progetti padre per compilare la gerarchia di progetti annidati. Questi eventi sono descritte nel processo seguente per la creazione di progetti annidati.

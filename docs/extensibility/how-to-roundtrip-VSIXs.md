@@ -1,23 +1,21 @@
 ---
 title: 'Procedura: round trip estensioni per Visual Studio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 06/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
-caps.latest.revision: "1"
 author: willbrown
 ms.author: willbrown
 manager: justinclareburt
-ms.workload: willbrown
-ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- willbrown
+ms.openlocfilehash: 9d8d0dc2e5c8c95b5f2502ef5a48e6f97c26e289
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedura: creare estensioni compatibile con Visual Studio 2017 e Visual Studio 2015
 
@@ -25,7 +23,7 @@ Questo documento viene illustrato come creare progetti di estendibilità round t
 
 Se si intende solo creato in Visual Studio 2017, ma desidera output VSIX per l'esecuzione sia in Visual Studio 2015 che Visual Studio 2017, quindi fare riferimento al [estensione migrazione documento](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Nota:** a causa di modifiche in Visual Studio tra le versioni, le operazioni che è utilizzato in una versione non funzionerà un altro. Verificare che le funzionalità che si sta tentando di accedere a sono disponibili in entrambe le versioni o avrà l'estensione risultati imprevisti.
+>**Nota:** a causa di modifiche in Visual Studio tra le versioni, le operazioni che funziona correttamente in una versione non funzionerà un altro. Verificare che le funzionalità che si sta tentando di accedere a sono disponibili in entrambe le versioni o avrà l'estensione risultati imprevisti.
 
 Di seguito è riportato un riepilogo della procedura che si completeranno in questo documento per il round trip a un progetto VSIX:
 
@@ -64,7 +62,7 @@ Se il progetto contiene un file Project JSON:
     * Pulsante destro del mouse sulla soluzione e scegliere **Gestisci pacchetti NuGet per la soluzione...**
     * Visual Studio crea automaticamente il file Packages config di
 
->**Nota:** se il progetto contiene pacchetti EnvDTE, può essere necessario aggiungere facendo clic su **riferimenti** selezionando **aggiungere riferimento** e l'aggiunta del riferimento appropriato.  Utilizzo di pacchetti NuGet può creare errori durante il tentativo di compilare il progetto.
+>**Nota:** se il progetto contiene pacchetti EnvDTE, devono essere aggiunti con il pulsante destro facendo clic su **riferimenti** selezionando **aggiungere riferimento** e l'aggiunta del riferimento appropriato.  Utilizzo di pacchetti NuGet può creare errori durante il tentativo di compilare il progetto.
 
 ## <a name="adding-appropriate-build-tools"></a>Aggiunta di strumenti di compilazione appropriati
 
@@ -114,7 +112,7 @@ Effettuare questa operazione manualmente:
 
 * Salvare e chiudere il file.
 
->**Nota:** se si sceglie di effettuare questa operazione utilizzando la finestra di progettazione VSIX in Visual Studio 2017, sarà necessario modificare manualmente la versione dei prerequisiti per assicurarsi che sia compatibile con tutte le versioni di Visual Studio 2017.  Questo avviene perché la finestra di progettazione verrà inserita la versione minima come la versione corrente di Visual Studio (ad esempio, 15.0.26208.0).  Tuttavia, poiché altri utenti possono avere una versione precedente, è possibile modificare manualmente questa opzione per 15.0.
+>**Nota:** se si sceglie di farlo con Progettazione modelli di progetto VSIX in Visual Studio 2017, sarà necessario modificare manualmente la versione dei prerequisiti per assicurarsi che sia compatibile con tutte le versioni di Visual Studio 2017.  Questo avviene perché la finestra di progettazione verrà inserita la versione minima come la versione corrente di Visual Studio (ad esempio, 15.0.26208.0).  Tuttavia, poiché altri utenti possono avere una versione precedente, è possibile modificare manualmente questa opzione per 15.0.
 
 A questo punto, il file manifesto dovrebbe essere simile al seguente:
 
@@ -140,7 +138,7 @@ Si consiglia un riferimento a un file con estensione csproj modificato aperto du
 
 * Aggiungere il seguente tag `<VsixType>v3</VsixType>` a un gruppo di proprietà.
 
->**Nota:** è consigliabile aggiungere questo elemento sotto il `<OutputType></OutputType>` tag.
+>**Nota:** si consiglia di aggiungere questo elemento sotto il `<OutputType></OutputType>` tag.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Aggiungere le proprietà di debug
 
@@ -212,4 +210,4 @@ A questo punto, il progetto deve essere pronto per la compilazione di un VSIXv3 
 
 ![Ricerca di un progetto VSIX](media/finding-a-VSIX-example.png)
 
->**Nota:** se il progetto si blocca con il messaggio "apertura del file" force chiuso Visual Studio, passare alla directory del progetto, visualizzare le cartelle nascoste ed eliminare la cartella VS.
+>**Nota:** se il progetto si blocca con il messaggio "Impossibile aprire il file" force chiuso Visual Studio, passare alla directory del progetto, visualizzare le cartelle nascoste ed eliminare la cartella VS.

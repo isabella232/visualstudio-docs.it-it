@@ -1,27 +1,23 @@
 ---
 title: 'Procedura: ottenere un servizio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd51497bb73981ca81623ad495edc9561e85d3da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cdf5bd925a034a64d8605c675704a0e894308ea3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-a-service"></a>Procedura: ottenere un servizio
 È spesso necessario ottenere servizi di Visual Studio per accedere alle funzionalità diverse. In generale, un servizio di Visual Studio fornisce una o più interfacce che è possibile utilizzare. È possibile ottenere la maggior parte dei servizi da un pacchetto VSPackage.  
@@ -49,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
   
-5.  Dal menu Strumenti dell'istanza sperimentale, trovare il **GetServiceCommand richiamare** pulsante. Quando si fa clic su questo pulsante, viene visualizzata una finestra di messaggio che indica che **trovare il servizio registro attività.**  
+5.  Dal menu Strumenti dell'istanza sperimentale, trovare il **GetServiceCommand richiamare** pulsante. Quando si fa clic su questo pulsante, si verrà visualizzata una finestra di messaggio che afferma **trovare il servizio registro attività.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Recupero di un servizio da un contenitore di controllo o finestra dello strumento  
  In alcuni casi potrebbe essere necessario ottenere un servizio da una finestra degli strumenti o controllo contenitore che non è stato individuato, altrimenti è stato individuato con un provider di servizi che non conosce il servizio desiderato. Ad esempio, è possibile scrivere per la registrazione delle attività all'interno di un controllo.  

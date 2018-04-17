@@ -1,30 +1,28 @@
 ---
 title: Eseguire una query modifica Query Salva (origine controllo VSPackage) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - QEQS events
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e3428e51dda2f8cc8410b6ac67f5779f7c2300ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf4fd74544e0646a84e4fdc37f35ba84b301f693
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Query modifica Query Salva (origine controllo VSPackage)
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Editor è possono trasmettere gli eventi di Query modifica Query salvare (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Origine controllo Stub implementa il servizio QEQS, in modo che sia il destinatario di eventi QEQS. Questi eventi vengono quindi delegati per il controllo del codice sorgente attualmente attive VSPackage. Il controllo del codice sorgente active pacchetto VSPackage implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e i relativi metodi. I metodi del `IVsQueryEditQuerySave2` interfaccia vengono in genere chiamato immediatamente prima che il documento viene modificato per la prima volta e immediatamente prima del salvataggio di un documento.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editor possono trasmettere gli eventi Query modifica Query salvare (QEQS). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Origine controllo Stub implementa il servizio QEQS, in modo che sia il destinatario di eventi QEQS. Questi eventi vengono quindi delegati per il controllo del codice sorgente attualmente attive VSPackage. Il controllo del codice sorgente active pacchetto VSPackage implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e i relativi metodi. I metodi del `IVsQueryEditQuerySave2` interfaccia vengono in genere chiamato immediatamente prima che il documento viene modificato per la prima volta e immediatamente prima del salvataggio di un documento.  
   
 ## <a name="queryeditquerysave-events"></a>Eventi QueryEditQuerySave  
  Il controllo del codice sorgente VSPackage deve gestire gli eventi QEQS implementando il `IVsQueryEditQuerySave2` interfaccia e i metodi necessari. Di seguito è fornita una breve descrizione dei due metodi che il pacchetto VSPackage deve implementare almeno. L'implementazione effettiva deve essere in base alla logica di controllo del modello di origine.  

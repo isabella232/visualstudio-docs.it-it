@@ -2,20 +2,18 @@
 title: Personalizzazione elemento strumenti | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0797defab29289b424855f617ed7b6825800b5c7
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 96fe1bf1667cb9a00ad81301738b5eb3c93e1114
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-element-tools"></a>Personalizzazione di strumenti elemento
 In alcune definizioni DSL, un singolo concetto è rappresentare come un gruppo di elementi. Ad esempio, se si crea un modello in cui un componente dispone di un set fisso di porte, è necessario sempre le porte da creare contemporaneamente il proprio componente padre. Pertanto, è necessario personalizzare lo strumento di creazione di elemento in modo che crei un gruppo di elementi invece di uno solo. A tale scopo, è possibile personalizzare il tipo di inizializzazione lo strumento di creazione di elemento.  

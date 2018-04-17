@@ -1,32 +1,30 @@
 ---
 title: La formattazione di codice in un servizio di linguaggio Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
 - language services [managed package framework], reformatting code
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a2ff6152d5c9b5108dff00d9b17cb4fb2471ac4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 392afbafc2ce15dbf7ee347efdf24ce1f7fe2301
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>La formattazione di codice in un servizio di linguaggio Legacy
 
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possibile riformattare il codice sorgente per l'utilizzo di rientri e gli spazi vuoti di normalizzazione. Può trattarsi di inserimento o rimozione di spazi o tabulazioni all'inizio di ogni riga, aggiunta di nuove righe tra le righe o sostituendo gli spazi con tabulazioni o tabulazioni con spazi.  
   
->**Nota:** inserimento o l'eliminazione dei caratteri di nuova riga è possibile modificare gli indicatori, ad esempio punti di interruzione e segnalibri, ma aggiungendo o rimuovendo spazi o tabulazioni non influisce sulla marcatori.  
+>**Nota:** inserimento o l'eliminazione dei caratteri di nuova riga possono influenzare i marcatori, ad esempio i punti di interruzione e segnalibri, ma aggiungendo o rimuovendo spazi o tabulazioni non influisce sulla marcatori.  
   
 Gli utenti possono avviare un'operazione riformattando selezionando **la selezione del formato** o **Formatta documento** dal **avanzate** menu il **modifica**menu. Un'operazione riformattando può anche essere attivata quando viene inserito un frammento di codice o un carattere specifico. Ad esempio, quando si digita una parentesi graffa di chiusura in c#, tutti gli elementi tra parentesi graffa di apertura corrispondente e la parentesi graffa di chiusura viene rientrato automaticamente per il livello appropriato.
   

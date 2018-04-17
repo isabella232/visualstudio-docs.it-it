@@ -1,29 +1,25 @@
 ---
 title: Elemento LocationField (modelli di progetto di Visual Studio) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aa4acf4b0d2aeb83e4ea4feb70ace3ae55ea2b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0877d374317e3a7142996b012ff6abefc6b94724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto Visual Studio)
 Specifica se il **percorso** casella di testo nel **nuovo progetto** la finestra di dialogo è abilitata, disabilitata o nascosta per il modello di progetto.  
@@ -58,11 +54,11 @@ Specifica se il **percorso** casella di testo nel **nuovo progetto** la finestra
   
  I valori di testo validi sono:  
   
--   `Enabled`, che consente di specificare che il **percorso** casella della finestra il **nuovo progetto** è attivata la finestra di dialogo.  
+-   `Enabled`, che consente di specificare che il **posizione** finestra del **nuovo progetto** finestra di dialogo è abilitata.  
   
--   `Disabled`, che consente di specificare che il **percorso** casella della finestra il **nuovo progetto** la finestra di dialogo è disabilitata.  
+-   `Disabled`, che consente di specificare che il **posizione** finestra del **nuovo progetto** finestra di dialogo è disabilitata.  
   
--   `Hidden`, che consente di specificare che il **percorso** casella del **nuovo progetto** la finestra di dialogo è nascosto.  
+-   `Hidden`, che consente di specificare che il **posizione** finestra del **nuovo progetto** finestra di dialogo è nascosto.  
   
 ## <a name="remarks"></a>Note  
  Il valore predefinito è `Enabled`.  

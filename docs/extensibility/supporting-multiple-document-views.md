@@ -1,34 +1,30 @@
 ---
-title: "Supporta più viste documento | Documenti Microsoft"
-ms.custom: 
+title: Supporta più viste documento | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4efd76830356996bdf75c923f457d19d2381763c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78ddc7ed811086622454e31d12ca5f1324d00da5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-multiple-document-views"></a>Supporta più viste di documento
 È possibile fornire più di una visualizzazione di un documento mediante la creazione di dati del documento separata e gli oggetti di visualizzazione di documento per l'editor. Alcuni casi in cui sarebbe utile una visualizzazione di documenti aggiuntive sono:  
   
 -   Nuovo supporto di finestre: desiderato nell'editor per fornire due o più viste dello stesso tipo, in modo che un utente che dispone già di una finestra aprire nell'editor è possibile aprire una nuova finestra selezionando il **nuova finestra** comando il **finestra** menu.  
   
--   Modulo e il codice consente di visualizzare il supporto: si desidera l'editor per fornire visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], ad esempio, fornisce una visualizzazione form sia una visualizzazione di codice.  
+-   Modulo e il codice consente di visualizzare il supporto: si desidera l'editor per fornire visualizzazioni di tipi diversi. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], ad esempio, fornisce una visualizzazione form e una visualizzazione di codice.  
   
  Per ulteriori informazioni, vedere la procedura CreateEditorInstance nel file EditorFactory.cs nel progetto editor personalizzato creato per il modello di pacchetto di Visual Studio. Per ulteriori informazioni su questo progetto, vedere [procedura dettagliata: creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md).  
   

@@ -1,12 +1,10 @@
 ---
 title: Registrazione di Project and Item Templates | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -14,19 +12,19 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85c22d0191d015979dff5a4845c4dda0af96ee60
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-project-and-item-templates"></a>La registrazione di progetto e modelli di elemento
-Tipi di progetto è necessario registrare le directory in cui si trovano i propri modelli di progetto e di elemento di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilizza le informazioni di registrazione associate con i tipi di progetto per determinare gli elementi da visualizzare nel **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** finestre di dialogo.  
+Tipi di progetto è necessario registrare le directory in cui si trovano i propri modelli di progetto e di elemento di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizza le informazioni di registrazione associate con i tipi di progetto per determinare gli elementi da visualizzare nel **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** finestre di dialogo.  
   
  Per ulteriori informazioni sui modelli, vedere [aggiunta di progetto e i modelli di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
@@ -69,7 +67,7 @@ Tipi di progetto è necessario registrare le directory in cui si trovano i propr
 ### <a name="registering-file-filters"></a>Registrazione di filtri di file  
  Facoltativamente, è possibile registrare i filtri che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizza quando vengono richieste per nomi di file. Ad esempio, il [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrare l'il **Apri File** è la finestra di dialogo:  
   
- **File Visual c# (\*. cs,\*. resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*. resx,\*Settings,\*XSD,\*WSDL)**  
+ **File Visual c# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*resx,\*Settings,\*XSD,\*WSDL)**  
   
  Per supportare la registrazione di più filtri, ogni filtro è registrato nella propria sottochiave HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versione*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*sottochiave*>. Il nome della sottochiave è arbitrario. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignora il nome della sottochiave e utilizza solo i valori.  
   

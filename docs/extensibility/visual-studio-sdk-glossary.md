@@ -1,27 +1,23 @@
 ---
 title: Glossario di Visual Studio SDK | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 Il glossario includono le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentazione.  
@@ -76,7 +72,7 @@ Il glossario includono le definizioni dei termini utilizzati nel [!INCLUDE[vsips
  Utilizzato per fare riferimento in modo generico per il documento nel suo complesso, sia il `DocData` e `DocView`. Ad esempio, un DocumentFrame contiene un `DocView`, ma anche mantiene un riferimento al `DocData` per gestire la persistenza.  
   
  DocView  
- DocObject/incorporamento/WindowPane con cui l'utente interagisce per visualizzare e modificare sottostante `DocData`. Si noti che gli utenti non usufruiscono di separazione che fa parte del documento/visualizzazione di `DocObject` interfaccia di progettazione. Gli utenti di usare un'intera DocObject come una visualizzazione anziché una nozione più astratto (e meno formalizzato) di dati sottostante, noto come `DocData`. `DocView`gli oggetti sono sempre incorporati con gli oggetti di cornice di documento (finestre figlio MDI) dell'IDE.  
+ DocObject/incorporamento/WindowPane con cui l'utente interagisce per visualizzare e modificare sottostante `DocData`. Si noti che gli utenti non usufruiscono di separazione che fa parte del documento/visualizzazione di `DocObject` interfaccia di progettazione. Gli utenti di usare un'intera DocObject come una visualizzazione anziché una nozione più astratto (e meno formalizzato) di dati sottostante, noto come `DocData`. `DocView` gli oggetti sono sempre incorporati con gli oggetti di cornice di documento (finestre figlio MDI) dell'IDE.  
   
  DTE  
  Il `DTE` oggetto (estensibilità degli strumenti di sviluppo) è il punto di accesso di primo livello nel modello di automazione di Visual Studio, che consente di automatizzare a livello di codice ed estendere l'IDE.  

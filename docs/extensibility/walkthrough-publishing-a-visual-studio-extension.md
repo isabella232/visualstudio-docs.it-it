@@ -1,26 +1,24 @@
 ---
-title: 'Procedura dettagliata: Pubblicazione di un''estensione di Visual Studio | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: f823334f3686bdba3406daac69b2a98d203780a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio
 
@@ -80,7 +78,7 @@ In questo caso si utilizzerà l'estensione predefinita VSPackage, ma gli stessi 
     
     * **Nome visualizzato** dell'estensione.  Ciò viene popolato automaticamente dal file vsixmanifest.
    
-    * **Versione** numero dell'estensione di cui si sta caricando.  Ciò viene popolato automaticamente dal file vsixmanifest.
+    * **Versione** numero dell'estensione di cui si desidera caricare.  Ciò viene popolato automaticamente dal file vsixmanifest.
     
     * **ID VSIX** è l'identificatore univoco utilizzato per l'estensione Visual Studio.  È obbligatorio se si desidera avere l'estensione di essere aggiornato automaticamente.  Ciò viene popolato automaticamente dal file vsixmanifest.
     
@@ -88,11 +86,11 @@ In questo caso si utilizzerà l'estensione predefinita VSPackage, ma gli stessi 
     
     * **Breve descrizione** delle funzionalità dell'estensione.  Questo valore sarà popolato automaticamente dal file vsixmanifest.
     
-    * **Panoramica** è un ottimo strumento per includere le schermate e informazioni dettagliate sulle operazioni eseguite l'estensione.
+    * **Panoramica** è un ottimo strumento per includere le schermate e informazioni dettagliate sulla funzione associata l'estensione.
     
-    * **Le versioni di Visual Studio supportate** consente di scegliere le versioni di Visual Studio l'estensione funzionerà in.  L'estensione verrà installata solo a tali versioni.
+    * **Versioni di Visual Studio supportate** consente di scegliere le versioni di Visual Studio in è possibile utilizzare l'estensione.  L'estensione verrà installata solo a tali versioni.
     
-    * **Edizioni di Visual Studio** consente di scegliere quali edizioni di Visual Studio in è possibile utilizzare l'estensione.  L'estensione verrà installata solo a tali versioni.
+    * **Le edizioni di Visual Studio supportate** consente di scegliere quali edizioni di Visual Studio in è possibile utilizzare l'estensione.  L'estensione verrà installata solo a tali versioni.
     
     * **Tipo**.  Il tipo più comune di estensioni sono **strumenti**.
     
@@ -104,7 +102,7 @@ In questo caso si utilizzerà l'estensione predefinita VSPackage, ma gli stessi 
     
     * **Repository di codice sorgente** consente di condividere un collegamento al codice sorgente con la community.
     
-    * **Consenti a domande e risposte per l'estensione** consentirà agli utenti di lasciare domande nella pagina di voce di estensione.
+    * **Consenti domande e risposte per l'estensione** consentirà agli utenti di lasciare domande nella pagina di voce di estensione.
 
 9. Fare clic su **salvare e caricare**. Verrà visualizzata la pagina di gestione back per il server di pubblicazione.  L'estensione non è ancora stata pubblicata.  Per pubblicare l'estensione, fare clic sull'estensione e selezionare **Rendi pubblico**.  È possibile visualizzare come l'estensione sarà simile in Marketplace selezionando **estensione visualizzazione**.  Per i numeri di acquisizione, fare clic su **report**.  Per apportare modifiche per l'estensione, fare clic su **modifica*.
 
@@ -128,9 +126,9 @@ Marketplace supporta la concessione di autorizzazioni aggiuntive agli utenti per
   
   * **Lettore**: l'utente possa visualizzare le estensioni, ma non è possibile pubblicare o gestire le estensioni.
   
-  * **Collaboratore**: l'utente può pubblicare e gestire le estensioni, ma non può modificare le impostazioni di pubblicazione o gestire l'accesso.
+  * **Collaboratore**: l'utente può pubblicare e gestire le estensioni, ma non è possibile modificare le impostazioni di server di pubblicazione o gestiscono l'accesso.
   
-  * **Proprietario**: l'utente può pubblicare e gestire le estensioni, modificare le impostazioni di pubblicazione e gestire l'accesso.
+  * **Proprietario**: l'utente può pubblicare e gestire le estensioni, modificare le impostazioni di server di pubblicazione e gestire l'accesso.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Installare l'estensione del Marketplace di Visual Studio
 

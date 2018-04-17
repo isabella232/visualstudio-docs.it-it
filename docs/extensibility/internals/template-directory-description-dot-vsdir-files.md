@@ -1,27 +1,25 @@
 ---
 title: Descrizione del modello Directory (. File VSDIR) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14ea2e0bcc11324e6529c70c04c11874ec4a3399
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-directory-description-vsdir-files"></a>Descrizione del modello Directory (. File VSDIR)
 Un file di descrizione modello directory (VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file modello associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione a cui fa riferimento vengono uniti, anche se i file sola VSDIR generalmente è fornito per descrivere più cartelle, procedure guidate o file di modello.  
@@ -44,7 +42,7 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 |-----------|-----------------|  
 |Nome del percorso relativo (RelPathName)|Il nome del file VSZ, un modello o cartella, ad esempio HeaderFile.h o MyWizard. vsz. Questo campo può anche essere un nome utilizzato per rappresentare una cartella.|  
 |{clsidPackage}|Il GUID del pacchetto VSPackage che consente l'accesso alle stringhe localizzate, ad esempio LocalizedName, descrizione, IconResourceId e SuggestedBaseName, in risorse di libreria (DLL) DLL satellite del VSPackage. IconResourceId si applica se DLLPath non viene specificato. **Nota:** questo campo è facoltativo, a meno che uno o più dei campi precedenti è un identificatore di risorsa. Questo campo è in genere vuoto per i file VSDIR corrispondenti alle procedure guidate di terze parti che non localizzare il testo.|  
-|LocalizedName|Il nome localizzato del file di modello o della procedura guidata. Questo campo può essere una stringa o un identificatore di risorsa nel formato "#ResID". Questo nome viene visualizzato nel **Aggiungi nuovo elemento** la finestra di dialogo. **Nota:** se LocalizedName è un identificatore di risorsa, sarà necessario {clsidPackage}.|  
+|LocalizedName|Il nome localizzato del file di modello o della procedura guidata. Questo campo può essere una stringa o un identificatore di risorsa nel formato "#ResID". Questo nome viene visualizzato nel **Aggiungi nuovo elemento** la finestra di dialogo. **Nota:** se LocalizedName è un identificatore di risorsa, quindi {clsidPackage} è obbligatorio.|  
 |SortPriority|Intero che rappresenta la priorità relativa di questo file modello o una procedura guidata. Ad esempio, se questo elemento ha un valore pari a 1, quindi questo elemento viene visualizzato accanto agli altri elementi con un valore pari a 1 e prima tutti gli elementi con un valore di ordinamento di 2 o superiore.<br /><br /> Priorità di ordinamento è relativo degli elementi nella stessa directory. Possono esistere più di un file VSDIR nella stessa directory. In questo caso, gli elementi da tutti *.* file VSDir in questa directory vengono uniti. Elementi con la stessa priorità vengono elencati in ordine lessicografico tra maiuscole e minuscole del nome visualizzato. Il `_wcsicmp` funzione viene utilizzata per ordinare gli elementi.<br /><br /> Gli elementi non descritti nel file VSDIR includono un numero di priorità maggiore del numero di priorità più alto elencato nel file VSDIR. Il risultato è che questi elementi si trova alla fine dell'elenco visualizzato indipendentemente dal relativo nome.|  
 |Descrizione|La descrizione localizzata del file di modello o della procedura guidata. Questo campo può essere una stringa o un identificatore di risorsa nel formato "#ResID". Questa stringa è presente il **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo quando l'elemento è selezionato.|  
 |DLLPath o {clsidPackage}|Utilizzato per caricare un'icona per il file di modello o la procedura guidata. L'icona viene caricato come risorsa da un file con estensione dll o .exe utilizzando il valore IconResourceId. Questo file con estensione dll o .exe può essere identificato tramite un percorso completo o mediante un GUID di un VSPackage. La DLL del pacchetto VSPackage di implementazione viene utilizzata per caricare l'icona (non la DLL satellite).|  

@@ -1,26 +1,24 @@
 ---
 title: 'Procedura: installare un plug-in controllo del codice sorgente | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: installare un plug-in controllo del codice sorgente
 Creazione di plug-in un controllo origine prevede tre passaggi:  
@@ -32,7 +30,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
 3.  Registrare la DLL immettendo le voci del Registro di sistema appropriati.  
   
 ## <a name="integration-with-visual-studio"></a>Integrazione con Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]supporta origine plug-in del controllo che è conforme all'API plug-in controllo di origine.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta plug-in di controllo di origine che è conforme all'API di plug-in del controllo di origine.  
   
 ### <a name="registering-the-source-control-plug-in"></a>Il controllo del codice sorgente plug-in registrazione  
  Prima di un ambiente di sviluppo integrato (IDE) in esecuzione possibile chiamare il controllo del codice sorgente, è necessario trovare l'origine del plug-in DLL che esporta le API di controllo.  
@@ -104,7 +102,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
 > [!NOTE]
 >  L'IDE non caricare le DLL da percorsi relativi (ad esempio,.\NewProvider.DLL). Specificare un percorso completo della DLL (ad esempio, c:\Providers\NewProvider.DLL). Ciò aumenta la protezione dell'IDE, impedendo che il caricamento delle DLL plug-in utenti non autorizzati o rappresentato.  
   
- Per individuare la DLL il secondo modo, l'IDE cerca nella sottochiave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders per tutte le voci*.* Ogni voce ha un nome e un valore. L'IDE visualizza un elenco di questi nomi per l'utente*.* Quando l'utente sceglie un nome, l'IDE rileva che il valore per il nome selezionato che punta a una sottochiave. L'IDE verrà cercata una voce denominata SccServerPath nella sottochiave nella chiave HKEY_LOCAL_MACHINE. Il valore della voce punta IDE alla DLL corretta.  
+ Per individuare la DLL il secondo modo, l'IDE è simile per tutte le voci nella sottochiave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders*.* Ogni voce ha un nome e un valore. L'IDE visualizza un elenco di questi nomi per l'utente*.* Quando l'utente sceglie un nome, l'IDE rileva che il valore per il nome selezionato che punta a una sottochiave. L'IDE verrà cercata una voce denominata SccServerPath nella sottochiave nella chiave HKEY_LOCAL_MACHINE. Il valore della voce punta IDE alla DLL corretta.  
   
  Un plug-in controllo del codice sorgente deve supportare entrambi i metodi di individuazione della DLL e, di conseguenza, impostare ProviderRegKey, sovrascrivendo qualsiasi impostazione precedente. Ancora più importante, è necessario aggiungere stesso all'elenco di InstalledSccProviders l'utente può avere una scelta di quale plug-in controllo del codice sorgente per utilizzare.  
   

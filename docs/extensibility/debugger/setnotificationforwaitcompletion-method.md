@@ -1,32 +1,28 @@
 ---
 title: Metodo SetNotificationForWaitCompletion | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5e35933e59fb4d8ff9f13db4bef8c23891bac2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a005ee7d624604dd716042bd839b48b7a367dd48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Metodo SetNotificationForWaitCompletion
 Imposta o Cancella il bit di stato TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in mscorlib. dll)  
   
@@ -39,7 +35,7 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 #### <a name="parameters"></a>Parametri  
  `enabled`  
   
- `true`Per impostare il bit; `false` a non è impostato il bit.  
+ `true` Per impostare il bit; `false` a non impostato il bit.  
   
 ## <a name="exceptions"></a>Eccezioni  
   
@@ -49,4 +45,4 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ## <a name="requirements"></a>Requisiti  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe di attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,32 +1,30 @@
 ---
-title: "Novità &#39; s New in controllo del codice sorgente | Documenti Microsoft"
-ms.custom: 
+title: Novità&#39;s New in controllo del codice sorgente | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>Novità &#39; s New in controllo del codice sorgente
+# <a name="what39s-new-in-source-control"></a>Novità&#39;s New in controllo del codice sorgente
 In [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] è possibile fornire una soluzione di controllo del codice sorgente integrato eccessivamente mediante l'implementazione di un controllo del codice sorgente VSPackage. In questa sezione vengono descritte le funzionalità di controllo del codice sorgente VSPackage e viene fornita una panoramica dei passaggi di implementazione.  
   
 ## <a name="the-source-control-vspackage"></a>Il controllo di origine pacchetto VSPackage  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]supporta due tipi di soluzioni di controllo di origine. Tutte le versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è comunque possibile integrare un API plug-in controllo di origine basato su un plug-in. È inoltre possibile creare un pacchetto VSPackage per controllo del codice sorgente che fornisce una profonda integrazione con, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] percorso adatto per le soluzioni di controllo di origine che richiedono un elevato livello di complessità e autonomia.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di soluzioni di controllo di origine. Tutte le versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è comunque possibile integrare un API plug-in controllo di origine basato su un plug-in. È inoltre possibile creare un pacchetto VSPackage per controllo del codice sorgente che fornisce una profonda integrazione con, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] percorso adatto per le soluzioni di controllo di origine che richiedono un elevato livello di complessità e autonomia.  
   
  Un VSPackage può aggiungere qualsiasi tipo di funzionalità per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Un controllo del codice sorgente VSPackage fornisce una funzionalità di controllo completo di origine per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], dall'interfaccia utente presentato all'utente per le comunicazioni back-end con il controllo del codice sorgente.  
   

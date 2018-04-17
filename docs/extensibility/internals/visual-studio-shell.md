@@ -1,26 +1,24 @@
 ---
 title: Shell di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9240df0a4f551ab4fa47fc2ceacaf0654dc562e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71b624cee0e55f95f90a86eac943828bbc26ac97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agente primario di integrazione in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. La shell fornisce le funzionalità necessarie per permettere ai pacchetti VSPackage condividere i servizi comuni. Poiché l'obiettivo dell'architettura di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste principalmente la funzionalità di assegnazione in VSPackage, la shell è un framework per fornire funzionalità di base e supportare la comunicazione tra tra il componente del package VS.  
@@ -44,9 +42,9 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agent
   
     -   Il progetto corrente  
   
-    -   L'elemento del progetto corrente o l'ID elemento corrente<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+    -   L'elemento del progetto corrente o ItemID corrente <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   La selezione corrente per il **proprietà** finestra o`SelectionContainer`  
+    -   La selezione corrente per il **proprietà** finestra o `SelectionContainer`  
   
     -   Il contesto dell'interfaccia utente, ID o CmdUIGuids che controllano la visibilità dei comandi, menu e barre degli strumenti  
   
@@ -56,13 +54,13 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agent
   
  La shell consente di eseguire anche la comunicazione tra pacchetti VSPackage installati e i servizi correnti. Supporta le funzionalità di base della shell e li rende disponibili per tutti i pacchetti VSPackage integrati in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Queste funzionalità di base includono i seguenti elementi:  
   
--   **Sulla** della finestra di dialogo e iniziale dello schermo  
+-   **Sulle** schermata iniziale e finestra di dialogo  
   
--   **Aggiungere di nuovo e Aggiungi elemento esistente** finestre di dialogo  
+-   **Aggiungere nuovo e Aggiungi elemento esistente** finestre di dialogo  
   
--   **Visualizzazione classi** finestra e **Visualizzatore oggetti**  
+-   **Visualizzazione classi-** finestra e **Visualizzatore oggetti**  
   
--   **Riferimenti** la finestra di dialogo  
+-   **Riferimenti** finestra di dialogo  
   
 -   **Struttura documento** finestra  
   
@@ -70,9 +68,9 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agent
   
 -   **Trovare** e **sostituire**  
   
--   **Apri progetto** e **Apri File** alle finestre di dialogo nel **New** menu  
+-   **Apri progetto** e **Apri File** caselle di dialogo il **nuovo** menu  
   
--   **Opzioni** della finestra di dialogo di **strumenti** menu  
+-   **Le opzioni** della finestra di dialogo di **strumenti** menu  
   
 -   **Proprietà** finestra  
   

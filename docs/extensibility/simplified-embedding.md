@@ -1,27 +1,23 @@
 ---
 title: Semplificato incorporamento | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183dc4ad9d7ea1a2f6855be050ad8459a3f801ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 01b06a0a63059c39035d15221feb201d3674d4a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="simplified-embedding"></a>Semplificato incorporamento
 Incorporamento semplificato è abilitato in un editor, quando il relativo oggetto visualizzazione del documento è definito come padre (vale a dire un elemento figlio di apportare) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfaccia viene implementata per gestire i comandi della finestra. Editor di incorporamento semplificato non possono ospitare controlli attivi. Nella figura seguente, vengono visualizzati gli oggetti utilizzati per creare un editor con incorporamento semplificato.  

@@ -1,27 +1,23 @@
 ---
 title: 'Procedura dettagliata: Visualizzazione di completamento delle istruzioni | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbdc79275dd99c502533c82665741b84620be928
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procedura dettagliata: Visualizzazione di completamento istruzioni
 È possibile implementare il completamento delle istruzioni basata su linguaggio definendo gli identificatori per il quale si desidera fornire completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire la propria estensione di file e il tipo di contenuto e quindi visualizzare il completamento per quel tipo o è possibile attivare il completamento per un tipo di contenuto esistente, ad esempio, "normale". Questa procedura dettagliata viene illustrato come attivare il completamento del tipo di contenuto "normale", ovvero il tipo di contenuto dei file di testo. Il tipo di contenuto "text" è il predecessore di tutti gli altri tipi contenuti, inclusi codice e file XML.  

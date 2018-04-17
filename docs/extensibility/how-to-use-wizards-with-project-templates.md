@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: utilizzare procedure guidate con modelli di progetto | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d29d2a1313bdb4e8a5e8654068984893578af4a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: utilizzare procedure guidate con modelli di progetto
 In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> che, se implementata, consente di eseguire il codice personalizzato quando un utente crea un progetto da un modello.  
@@ -40,7 +38,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
     > [!NOTE]
     >  Potrebbe essere necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [l'installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Aggiungere un nuovo progetto VSIX (**File > Nuovo > progetto > Visual c# > estendibilità > progetto VSIX**) nella stessa soluzione come progetto di modello di progetto (nel **Esplora**, selezionare il nodo della soluzione, pulsante destro del mouse e scegliere **Aggiungi > Nuovo progetto**). Il nome **MyProjectWizard.**  
+2.  Aggiungere un nuovo progetto VSIX (**File > Nuovo > progetto > Visual c# > estendibilità > progetto VSIX**) nella stessa soluzione come progetto di modello di progetto (nel **Esplora**, selezionare il nodo della soluzione, pulsante destro del mouse e scegliere **Aggiungi > Nuovo progetto**). Denominarla **MyProjectWizard.**  
   
 3.  Impostare il progetto VSIX come progetto di avvio. Nel **Esplora**, selezionare il nodo del progetto VSIX, pulsante destro del mouse e selezionare **imposta come progetto di avvio**.  
   
@@ -232,7 +230,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
 10. Estrarre la chiave pubblica dal file snk. Nella finestra di comando, digitare  
   
-     **\<percorso di sn.exe > \sn.exe -p key.snk outfile.key.**  
+     **\<percorso di sn.exe > \sn.exe -p snk outfile.key.**  
   
      Non dimenticare di racchiudere il percorso di sn.exe tra virgolette se sono presenti spazi dei nomi di directory.  
   
@@ -242,7 +240,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
      Nuovamente, non dimenticare le virgolette. Verrà visualizzata una riga nell'output simile al seguente  
   
-     **Token di chiave pubblica è<token>**  
+     **Token di chiave pubblica è <token>**  
   
      Prendere nota di questo valore.  
   

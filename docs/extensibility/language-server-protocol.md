@@ -1,23 +1,21 @@
 ---
 title: Panoramica del protocollo Server Language | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: de7de0ce4d37ed74a7d2291ecf2f0db98c07478b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-server-protocol"></a>Protocollo di lingua del Server
 
@@ -53,13 +51,13 @@ Di seguito è un esempio di modalità di comunicazione durante una routine di un
 
 ![diagramma di flusso LSP](media/lsp-flow-diagram.png)
 
-* **L'utente apre un file (definito come un documento) nello strumento**: lo strumento di notifica al server di linguaggio che si apre un documento (' textDocument/didOpen'). In futuro la veridicità sul contenuto del documento non è più nel file system ma mantenuti dallo strumento in memoria.
+* **L'utente apre un file (definito da un documento) nello strumento**: lo strumento di notifica al server linguaggio che si apre un documento (' textDocument/didOpen'). In futuro la veridicità sul contenuto del documento non è più nel file system ma mantenuti dallo strumento in memoria.
 
-* **L'utente effettua modifiche**: lo strumento di notifica al server sulla modifica del documento (' textDocument/didChange') e le informazioni semantiche del programma viene aggiornate dal server di linguaggio. Come in questo caso, il server di linguaggio analizza le informazioni e invia una notifica lo strumento con la presenza di errori e avvisi (' textDocument/publishDiagnostics').
+* **Le modifiche apportate dall'utente**: lo strumento di notifica al server sulla modifica del documento (' textDocument/didChange') e le informazioni semantiche del programma viene aggiornate dal server di linguaggio. Come in questo caso, il server di linguaggio analizza le informazioni e invia una notifica lo strumento con la presenza di errori e avvisi (' textDocument/publishDiagnostics').
 
-* **L'utente esegue "Vai a definizione" su un simbolo nell'editor**: lo strumento invia una richiesta di ' textDocument/definizione' con due parametri: (1) l'URI del documento e (2) la posizione del testo da cui è iniziato Vai a una richiesta di definizione per il server. Il server risponde con l'URI del documento e la posizione della definizione del simbolo all'interno del documento.
+* **L'utente esegue "Vai a definizione" su un simbolo nell'editor**: lo strumento invia una richiesta di ' textDocument/definizione' con due parametri: (1) l'URI del documento e (2) la posizione del testo da in viaggio alla richiesta di definizione è stata avviata nel server. Il server risponde con l'URI del documento e la posizione della definizione del simbolo all'interno del documento.
 
-* **L'utente chiude il documento (file)**: dallo strumento, informare il server di linguaggio che è il documento non è più in memoria e che il contenuto corrente è ora aggiornato nel file system viene inviata una notifica di ' textDocument/didClose'.
+* **L'utente chiude il documento (file)**: viene inviata una notifica di ' textDocument/didClose' dallo strumento, informare il server di linguaggio che il documento è ora non è più in memoria e che il contenuto corrente è ora aggiornato nel file system.
 
 Questo esempio viene illustrato come il protocollo comunica con il server di lingua a livello di funzionalità dell'editor quali "Vai a definizione", "Trova tutti i riferimenti". I tipi di dati utilizzati dal protocollo sono editor o IDE 'tipi di dati' come documento di testo aperto e la posizione del cursore. I tipi di dati non sono al livello di un modello di programmazione Java dominio che fornisce in genere strutture ad albero sintattico astratto e simboli di compilazione (ad esempio, tipi risolti, spazi dei nomi,...). Questa operazione semplifica notevolmente il protocollo.
 
@@ -124,4 +122,4 @@ Per semplificare l'implementazione di linguaggio server e client, sono disponibi
 
 ## <a name="using-the-language-server-protocol-in-visual-studio"></a>Tramite il protocollo Server linguaggio in Visual Studio
 
-* [Aggiunta di un'estensione del protocollo Server Language](adding-an-lsp-extension.md) -informazioni sull'integrazione di un server di linguaggio in Visual Studio.
+* [Aggiunta di un'estensione di linguaggio Server protocollo](adding-an-lsp-extension.md) -informazioni sull'integrazione di un server di linguaggio in Visual Studio.

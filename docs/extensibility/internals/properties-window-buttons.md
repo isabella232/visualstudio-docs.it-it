@@ -1,33 +1,29 @@
 ---
-title: "Pulsanti della finestra proprietà | Documenti Microsoft"
-ms.custom: 
+title: Pulsanti della finestra proprietà | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 361333fdfceda28ecd78dc54145fded716ee81eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-buttons"></a>Pulsanti della finestra proprietà
 A seconda del linguaggio di sviluppo e il tipo di prodotto, alcuni pulsanti vengono visualizzati per impostazione predefinita sulla barra degli strumenti per la **proprietà** finestra. In tutti i casi, il **categoria**, **Alphabetized**, **proprietà**, e **pagine delle proprietà** pulsanti vengono visualizzati. In Visual c# e Visual Basic, il **eventi** pulsante viene visualizzato anche. In alcuni progetti Visual C++, il **VC + + messaggi** e **esegue l'override di VC** pulsanti vengono visualizzati. Pulsanti aggiuntivi potrebbero essere visualizzati per altri tipi di progetto. Per ulteriori informazioni sui pulsanti di **proprietà** finestra, vedere [finestra proprietà](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implementazione di pulsanti della finestra proprietà  
- Quando si fa clic il **categoria** pulsante, le chiamate di Visual Studio il <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfaccia sull'oggetto che ha lo stato attivo per ordinare le proprietà per categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>viene implementato il `IDispatch` oggetto che viene visualizzato il **proprietà** finestra.  
+ Quando si fa clic il **categoria** pulsante, le chiamate di Visual Studio il <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfaccia sull'oggetto che ha lo stato attivo per ordinare le proprietà per categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> viene implementata sul `IDispatch` oggetto che viene presentato al **proprietà** finestra.  
   
  Sono disponibili 11 categorie di proprietà predefiniti, che hanno valori negativi. È possibile definire categorie personalizzate, ma è consigliabile assegnare loro valori positivi per distinguerli dalle categorie predefinite.  
   

@@ -1,30 +1,28 @@
 ---
 title: Esposizione di tipi di finestre di progettazione visiva | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-types-to-visual-designers"></a>Esposizione di tipi di finestre di progettazione visiva
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]deve avere accesso alle definizioni di classe e il tipo in fase di progettazione per visualizzare una finestra di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set completo di dipendenze del progetto corrente (riferimenti e le relative dipendenze). È inoltre necessario per finestre di progettazione visiva per accedere alle classi e tipi definiti nei file generati da strumenti personalizzati.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è necessario l'accesso alle definizioni di classe e il tipo in fase di progettazione per visualizzare una finestra di progettazione visiva. Le classi vengono caricate da un set predefinito di assembly che includono il set completo di dipendenze del progetto corrente (riferimenti e le relative dipendenze). È inoltre necessario per finestre di progettazione visiva per accedere alle classi e tipi definiti nei file generati da strumenti personalizzati.  
   
  Il [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemi di progetto forniscono supporto per l'accesso alle classi generate e tipi tramite temporaneo portabile file eseguibili (file PE temporanei). Qualsiasi file generato da uno strumento personalizzato può essere compilato in un assembly temporaneo in modo che i tipi possono essere caricati da tali assembly ed esposti alle finestre di progettazione. L'output di ogni strumento personalizzato viene compilato in un file PE temporaneo separato e l'esito positivo o negativo della compilazione temporanea dipende solo se il file generato può essere compilato. Anche se un progetto non venga compilato nel suo complesso, singoli file PE temporanei può essere ancora disponibili nelle finestre di progettazione.  
   
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  Strumenti personalizzati in grado di sfruttano i vantaggi del supporto PE temporaneo devono rispettare le regole seguenti:  
   
--   `GeneratesDesignTimeSource`deve essere impostato su 1 nel Registro di sistema.  
+-   `GeneratesDesignTimeSource` deve essere impostato su 1 nel Registro di sistema.  
   
      Alcuna compilazione di file eseguibile del programma non viene eseguito senza questa impostazione.  
   

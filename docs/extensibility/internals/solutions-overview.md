@@ -1,27 +1,23 @@
 ---
 title: Cenni preliminari sulle soluzioni | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ceb45cce6c317ed3723c5006e6d2a77029335
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d64175c570c4fbca26bae0aa587b66e04cbee2be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solutions-overview"></a>Cenni preliminari sulle soluzioni
 Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme per creare un'applicazione. Le informazioni di stato e di progetto relativi alla soluzione vengono archiviati in due file di soluzione diversa. Il file di soluzione (sln) è basata su testo e possono essere sottoposti a controllo del codice sorgente e condivisi dagli utenti. Il file della soluzione utente opzione (suo Solution) è binario. Di conseguenza, il file con estensione suo non può essere inserito sotto controllo del codice sorgente e contiene informazioni specifiche dell'utente.  

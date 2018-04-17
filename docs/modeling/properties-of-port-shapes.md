@@ -1,25 +1,23 @@
 ---
-title: "Proprietà delle forme porta | Documenti Microsoft"
-ms.custom: 
+title: Proprietà delle forme porta | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.port
 helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 799a4d84a338f870a80ce1c3fe19581a775fa5dd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5e00c77bc3abcef57bfd2ef5b047ee5e3f63bf37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-port-shapes"></a>Proprietà delle forme delle porte
 È possibile utilizzare le forme porta per rappresentare le classi di dominio nella finestra di progettazione generato.  
@@ -40,7 +38,7 @@ ms.lasthandoff: 02/09/2018
 |Colore del testo|Colore utilizzato per gli elementi Decorator testo associati a questa forma.|Nero|  
 |Modificatore di accesso|Il livello di accesso della classe (`public` o `internal`).|Public|  
 |Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questa forma.|\<Nessuno >|  
-|Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
+|Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per altre informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla porta (`none`, `abstract` o `sealed`).|none|  
 |Porta di base|Classe di base di questa forma.|(nessuno)|  

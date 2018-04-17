@@ -1,27 +1,23 @@
 ---
 title: Fornisce supporto per le finestre di progettazione di annullare | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornisce il supporto di annullamento per le finestre di progettazione
 Finestre di progettazione, ad esempio editor, in genere necessario supportare le operazioni di annullamento in modo che gli utenti possono invertire le modifiche apportate di recente quando si modifica un elemento di codice.  
@@ -30,7 +26,7 @@ Finestre di progettazione, ad esempio editor, in genere necessario supportare le
   
  Implementazioni della finestra di progettazione che forniscono il supporto per la funzionalità di annullamento è necessario:  
   
--   Gestione dell'annullamento implementando la classe base astratta<xref:System.ComponentModel.Design.UndoEngine>  
+-   Gestione dell'annullamento implementando la classe base astratta <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Persistenza forniture e CodeDOM supporto mediante l'implementazione di <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> classi.  
   
@@ -49,7 +45,7 @@ Finestre di progettazione, ad esempio editor, in genere necessario supportare le
   
 -   Oltre alla generazione del codice basato su CodeDOM standard e sistema di analisi per la persistenza e la generazione di codice.  
   
-     Per ulteriori informazioni sull'uso di supporto di Visual Studio CodeDOM, vedere [compilazione e generazione di codice sorgente dinamico](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)  
+     Per ulteriori informazioni sull'uso di supporto di Visual Studio CodeDOM, vedere [compilazione e la generazione del codice sorgente dinamico](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quando utilizzare il supporto di annullamento della finestra di progettazione esplicite  
  Finestre di progettazione è necessario fornire i propri management annullamento se utilizzano un'interfaccia utente grafica, detta un adattatore di visualizzazione, diverso da quello fornito da <xref:System.Windows.Forms.Control>.  
@@ -73,7 +69,7 @@ Finestre di progettazione, ad esempio editor, in genere necessario supportare le
   
  L'ambiente di SDK fornisce il supporto CodeDOM e persistenza fornendo:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>come un implementazioni del<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> come un implementazioni del <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  Oggetto <xref:System.ComponentModel.Design.IComponentChangeService> fornito dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]' host di progettazione.  
   
@@ -100,7 +96,7 @@ Finestre di progettazione, ad esempio editor, in genere necessario supportare le
   
 -   Le modifiche alle proprietà vengono effettuate tramite il <xref:System.ComponentModel.TypeDescriptor> oggetto.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>gli eventi vengono generati manualmente quando una modifica annullabile viene eseguito il commit.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> gli eventi vengono generati manualmente quando una modifica annullabile viene eseguito il commit.  
   
 -   La modifica nella finestra di progettazione è stata creata all'interno del contesto di un <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

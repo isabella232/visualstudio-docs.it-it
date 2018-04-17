@@ -2,26 +2,22 @@
 title: Servizio di linguaggio e i punti di estensione di Editor | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>Servizio di linguaggio e i punti di estensione di Editor
 L'editor fornisce punti di estensione che è possibile estendere come parti componente Managed Extensibility Framework (MEF), tra cui la maggior parte delle funzionalità di servizio del linguaggio. Ecco le categorie di punto di estensione principale:  
@@ -47,9 +43,9 @@ L'editor fornisce punti di estensione che è possibile estendere come parti comp
 ## <a name="extending-content-types"></a>Estensione di tipi di contenuto  
  Tipi di contenuto sono riportate le definizioni dei tipi di testo gestito dall'editor, ad esempio, "text", "code" o "CSharp". Definire un nuovo tipo di contenuto dichiarando una variabile del tipo <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> e assegnando il nuovo tipo di contenuto di un nome univoco. Per registrare il tipo di contenuto con l'editor, esportarlo con gli attributi seguenti:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>è il nome del tipo di contenuto.  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> è il nome del tipo di contenuto.  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>è il nome del tipo di contenuto da cui deriva questo tipo di contenuto. Un tipo di contenuto può ereditare da più altri tipi di contenuto.  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> è il nome del tipo di contenuto da cui deriva questo tipo di contenuto. Un tipo di contenuto può ereditare da più altri tipi di contenuto.  
   
  Poiché il <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> è una classe sealed, è possibile esportarlo con nessun parametro di tipo.  
   
@@ -197,11 +193,11 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
   
 -   <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>: il nome visualizzato del formato.  
   
--   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Specifica se il formato viene visualizzato nel **tipi di carattere e colori** pagina del **opzioni** la finestra di dialogo.  
+-   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Specifica se il formato viene visualizzato nel **tipi di carattere e colori** pagina del **opzioni** finestra di dialogo.  
   
 -   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: la priorità del formato. I valori validi sono da <xref:Microsoft.VisualStudio.Text.Classification.Priority>.  
   
--   <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: il nome della classificazione di tipo per cui questo formato è stato eseguito il mapping.  
+-   <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>: il nome della classificazione tipo per cui questo formato è stato eseguito il mapping.  
   
  Nell'esempio seguente mostra gli attributi di esportazione su una definizione di formato di classificazione.  
   
@@ -231,7 +227,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
   
 -   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome del margine.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui viene visualizzato il margine, rispetto ai margini altri.  
+-   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui viene visualizzata sul margine, rispetto a altro margine.  
   
      I margini predefiniti sono:  
   
@@ -269,9 +265,9 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
  I tipi di tag seguenti sono incorporati:  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: associata a un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>.  
+-   <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: associato un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>.  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: associati tipi di errore.  
+-   <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>: associati ai tipi di errore.  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associata a un'area di controllo.  
   
@@ -280,7 +276,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associati alle aree che possono essere espansi o compressi nella struttura.  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: definisce lo spazio che occupa un'area di controllo in una visualizzazione di testo. Per ulteriori informazioni sulla negoziazione spazio ulteriori informazioni, vedere la sezione seguente.  
+-   <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>: definisce lo spazio occupato un'area di controllo in una visualizzazione di testo. Per ulteriori informazioni sulla negoziazione spazio ulteriori informazioni, vedere la sezione seguente.  
   
 -   <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>: fornisce spaziatura automatica e ridimensionamento per l'area di controllo.  
   
@@ -296,9 +292,9 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome utilizzato per fare riferimento a questo formato  
   
--   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: in questo modo, il formato di visualizzazione nell'interfaccia utente  
+-   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: in questo modo, il formato da visualizzare nell'interfaccia utente  
   
- Nel costruttore, definire il nome visualizzato e l'aspetto del tag. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>definisce il colore di riempimento e <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> definisce il colore del bordo. Il <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> è il nome della definizione del formato localizzabile.  
+ Nel costruttore, definire il nome visualizzato e l'aspetto del tag. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> definisce il colore di riempimento e <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> definisce il colore del bordo. Il <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> è il nome della definizione del formato localizzabile.  
   
  Di seguito è riportato un esempio di una definizione di formato:  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") per il quale l'area di controllo è valido.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: il tipo di visualizzazione di testo per il quale l'area di controllo è valido. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> è il set di ruoli di visualizzazione testo predefinito. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene utilizzato principalmente per le viste dei file di testo. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>viene utilizzato per le visualizzazioni di testo che un utente può modificare o passare tramite mouse e tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> le visualizzazioni sono la visualizzazione dell'editor di testo e **Output** finestra.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: il tipo di visualizzazione di testo per il quale questa area di controllo è valido. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> è il set di ruoli di visualizzazione testo predefinito. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene utilizzato principalmente per le viste dei file di testo. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> viene utilizzato per le visualizzazioni di testo che un utente può modificare o passare tramite mouse e tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> le visualizzazioni sono la visualizzazione dell'editor di testo e **Output** finestra.  
   
  Nell'esempio seguente mostra gli attributi di esportazione per il provider dell'area di controllo.  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") per il quale l'area di controllo è valido.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: il tipo di visualizzazione di testo per la quale il tag o dell'area di controllo è valido. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> è il set di ruoli di visualizzazione testo predefinito. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene utilizzato principalmente per le viste dei file di testo. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>viene utilizzato per le visualizzazioni di testo che un utente può modificare o passare tramite mouse e tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> le visualizzazioni sono la visualizzazione dell'editor di testo e **Output** finestra.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: il tipo di visualizzazione di testo per la quale il tag o dell'area di controllo è valido. La classe <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> è il set di ruoli di visualizzazione testo predefinito. Ad esempio, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> viene utilizzato principalmente per le viste dei file di testo. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> viene utilizzato per le visualizzazioni di testo che un utente può modificare o passare tramite mouse e tastiera. Esempi di <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> le visualizzazioni sono la visualizzazione dell'editor di testo e **Output** finestra.  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: il tipo di tag o dell'area di controllo che sono state definite. È necessario aggiungere un secondo <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> per <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>è stato deprecato a favore del <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Inoltre, è necessario implementare un provider dello stesso tipo:  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>è stato deprecato a favore del <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  È necessario esportare il provider con gli attributi seguenti:  
   
@@ -560,9 +556,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
 -   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome del controller.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") a cui si applica al controller.  
+-   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") a cui si applica il controller.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui il controller devono essere visualizzate (rispetto a altro controller).  
+-   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui il controller deve essere visualizzato (rispetto a altro controller).  
   
  Nell'esempio seguente mostra gli attributi di esportazione in un provider di controller di completamento.  
   

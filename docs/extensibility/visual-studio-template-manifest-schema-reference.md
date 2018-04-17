@@ -1,22 +1,19 @@
 ---
 title: Modello di Visual Studio Manifest Schema Reference | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 26f346329e4c0fa2defe6bc4ff6373226be72beb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimenti dello Schema manifesto dei modelli di Visual Studio
 Questo schema viene descritto il formato dei file manifesto (.vstman) modello Visual Studio generati per i modelli di progetto o un elemento di Visual Studio e descrive il percorso e altre informazioni rilevanti relative al modello.  
@@ -31,9 +28,9 @@ Questo schema viene descritto il formato dei file manifesto (.vstman) modello Vi
   
 ### <a name="attributes"></a>Attributi  
   
--   **Versione**: una stringa che rappresenta la versione del manifesto del modello. Obbligatorio.  
+-   **Versione**: una stringa che rappresenta la versione del manifesto di modello. Obbligatorio.  
   
--   **Impostazioni locali**: stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto del modello. Il valore delle impostazioni locali si applica a tutti i modelli, è necessario utilizzare un manifesto distinto per ognuna delle impostazioni locali. Facoltativo.  
+-   **Impostazioni locali**: stringa che rappresenta le impostazioni locali o impostazioni locali del manifesto di modello. Il valore delle impostazioni locali si applica a tutti i modelli, è necessario utilizzare un manifesto distinto per ognuna delle impostazioni locali. Facoltativo.  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -54,7 +51,7 @@ Questo schema viene descritto il formato dei file manifesto (.vstman) modello Vi
   
 -   **RelativePathOnDisk**: il percorso relativo del file di modello su disco. Questo percorso definisce anche la posizione del modello nell'albero del modello nella **nuovo progetto** o **nuovo elemento** finestra di dialogo. Per i modelli distribuiti come singoli file e una directory, questo percorso fa riferimento alla directory contenente i file di modello. Per i modelli distribuiti come file con estensione zip, questo percorso deve essere il percorso del file con estensione zip.  
   
--   **VSTemplateHeader** : A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.  
+-   **VSTemplateHeader** : un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento che descrive l'intestazione.  
   
 ### <a name="parent-element"></a>Elemento padre  
  **VSTemplateManifest**  
@@ -71,9 +68,9 @@ Questo schema viene descritto il formato dei file manifesto (.vstman) modello Vi
   
 -   **RelativePath**: il percorso del modello. Può esistere solo una voce per ogni percorso, il primo criterio avrà la precedenza per tutti i manifesti.  
   
--   **LocalizedName**: A **NameDescriptionIcon** elemento che specifica il nome localizzato. Facoltativo.  
+-   **LocalizedName**: un **NameDescriptionIcon** elemento che specifica il nome localizzato. Facoltativo.  
   
--   **SortOrder** : una stringa che specifica il tipo di ordinamento. Facoltativo.  
+-   **SortOrder** : una stringa che specifica l'ordinamento. Facoltativo.  
   
 -   **ParentFolderOverrideName**: il nome della cartella padre sottoposto a override. Facoltativo. L'elemento ha un **nome** attributo, ovvero un valore stringa che specifica il nome.  
   

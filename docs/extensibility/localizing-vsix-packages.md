@@ -1,27 +1,25 @@
 ---
 title: Localizzazione di pacchetti VSIX | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
 - localized deployment
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6b95047348f549073a05060b81874f65d7781918
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d94e390374ca2eb77b4332b3a5c253acce69f051
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-vsix-packages"></a>Localizzazione di pacchetti VSIX
 
@@ -107,6 +105,6 @@ L'esempio seguente mostra le parti pertinenti di un file Extension. vsixmanifest
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Riferimento dello Schema di Language Pack 2.0 VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Un language pack VSIX descrive le informazioni di localizzazione di un file di distribuzione VSIX.|
+|[Riferimento dello Schema LanguagePack 2.0 VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Un language pack VSIX descrive le informazioni di localizzazione di un file di distribuzione VSIX.|
 |[Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Descrive la struttura e contenuto di un pacchetto vsix.|
 |[Localizzazione dei comandi di menu](../extensibility/localizing-menu-commands.md)|Viene illustrato come localizzare le risorse di altro testo in un'estensione.|

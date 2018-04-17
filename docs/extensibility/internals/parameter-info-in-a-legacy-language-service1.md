@@ -1,12 +1,10 @@
 ---
 title: Informazioni sul parametro in un Service1 Language Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sul parametro in un servizio di linguaggio Legacy
 La descrizione comando informazioni sul parametro IntelliSense fornisce agli utenti suggerimenti su dove si trovano in un costrutto di linguaggio.  
@@ -40,7 +38,7 @@ La descrizione comando informazioni sul parametro IntelliSense fornisce agli ute
   
  Le descrizioni comandi informazioni sul parametro vengono avviate dal servizio di linguaggio tramite l'intercettazione di comando. Per intercettare i caratteri di utente, è necessario implementare l'oggetto servizio di linguaggio il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia e passare alla visualizzazione di testo di un puntatore al <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementazione, chiamando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodo il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia. Il filtro dei comandi intercetta i comandi digitati nella finestra del codice. Monitorare le informazioni di comando per sapere quando visualizzare informazioni sui parametri per l'utente. È possibile utilizzare lo stesso filtro di comando per il completamento delle istruzioni, i marcatori di errore e così via.  
   
- Quando si digita una parola chiave per cui il servizio di linguaggio consente di fornire suggerimenti, il servizio di linguaggio crea un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> e viene chiamato il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia per notificare l'IDE per visualizzare un suggerimento. Creare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> utilizzando `VSLocalCreateInstance` e specificando la coclasse `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`è una funzione definita nel vsdoc.h di file di intestazione che chiama `QueryService` per il Registro di sistema locale e chiama `CreateInstance` su questo oggetto per il `CLSID_VsMethodTipWindow`.  
+ Quando si digita una parola chiave per cui il servizio di linguaggio consente di fornire suggerimenti, il servizio di linguaggio crea un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> e viene chiamato il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia per notificare l'IDE per visualizzare un suggerimento. Creare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> utilizzando `VSLocalCreateInstance` e specificando la coclasse `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` è una funzione definita nel vsdoc.h di file di intestazione che chiama `QueryService` per il Registro di sistema locale e chiama `CreateInstance` su questo oggetto per il `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Fornire un suggerimento (metodo)  
  Per fornire un suggerimento sul metodo, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodo il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfaccia, passando l'implementazione del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfaccia.  

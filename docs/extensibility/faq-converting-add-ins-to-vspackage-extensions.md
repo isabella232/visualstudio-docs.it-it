@@ -1,23 +1,21 @@
 ---
 title: 'Domande frequenti: Conversione di componenti aggiuntivi per le estensioni VSPackage | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: conversione di componenti aggiuntivi in VSPackage Extensions
 I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Ecco le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio in un'estensione VSIX.  
@@ -41,7 +39,7 @@ I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visua
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>È possibile convertire il progetto di componente aggiuntivo a un progetto VSIX?  
  Un progetto di componente aggiuntivo non può essere convertito direttamente a un progetto VSIX perché i meccanismi utilizzati nei progetti VSIX non sono uguali a quelli nei progetti di componente aggiuntivo. Il modello di progetto VSIX, nonché i modelli di progetto di destra hanno una grande quantità di codice che rende relativamente semplice per la configurazione e in esecuzione come un'estensione VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>Come avviare lo sviluppo di estensioni VSIX?  
+##  <a name="BKMK_StartDeveloping"></a> Come avviare lo sviluppo di estensioni VSIX?  
  Di seguito viene illustrato come visualizzare un progetto VSIX che dispone di un comando di menu:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Per creare un'estensione VSIX che dispone di un comando di menu  
@@ -56,7 +54,7 @@ I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visua
   
      Nel **strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **nome comando My**. Quando si sceglie questo pulsante, un messaggio compariranno: **all'interno di TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>Come è possibile eseguire il codice del componente aggiuntivo in un pacchetto VSPackage?  
+##  <a name="BKMK_RunAddin"></a> Come eseguire il codice del componente aggiuntivo in un pacchetto VSPackage  
  Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:  
   
 -   È attivato automaticamente da un comando di menu (il codice si trova nel metodo `IDTCommandTarget.Exec`)  

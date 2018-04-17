@@ -1,27 +1,23 @@
 ---
 title: Gli eventi nel Buffer di testo nell'API Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventi nel Buffer di testo nell'API Legacy
 L'oggetto TextBuffer genera numerosi eventi diversi che consentono di rispondere a situazioni diverse.  
@@ -52,8 +48,8 @@ L'oggetto TextBuffer genera numerosi eventi diversi che consentono di rispondere
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Notifica ai client le modifiche apportate al buffer di testo sottostante in coordinate unidimensionale.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Notifica ai client le modifiche apportate al buffer di testo sottostante in coordinate bidimensionali.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Notifica ai client di modifiche ai dati dell'utente.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Notifica ai client del movimento ultimo commit per attivare l'evento e fornisce l'intervallo di testo modificato. Il `IVsPreliminaryTextChangeCommitEvents` interfaccia non viene generata in risposta a annullare o ripristinare i comandi. Eventi vengono generati solo per i buffer con un gestore di annullamento. `IVsPreliminaryTextChangeCommitEvents`viene generato prima di altri eventi, ad esempio elenco, per assicurarsi che gli altri eventi non modificano il testo prima che le modifiche vengono salvate. Il pacchetto VSPackage deve monitorare uno di `IVsPreliminaryTextChangeCommitEvents` interfaccia o `IVsFinalTextChangeCommitEvents` interfaccia, ma non entrambi.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Notifica ai client del movimento ultimo commit per attivare l'evento e fornisce l'intervallo di testo modificato. Il `IVsFinalTextChangeCommitEvents` interfaccia non viene generata in risposta a annullare o ripristinare i comandi. Eventi vengono generati solo per i buffer con un gestore di annullamento. `IVsFinalTextChangeCommitEvents`deve essere utilizzato solo per i servizi di linguaggio o altri oggetti che dispongono di controllo completo sulla modifica. Il pacchetto VSPackage deve monitorare uno di `IVsPreliminaryTextChangeCommitEvents` interfaccia o `IVsFinalTextChangeCommitEvents` interfaccia, ma non entrambi.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Notifica ai client del movimento ultimo commit per attivare l'evento e fornisce l'intervallo di testo modificato. Il `IVsPreliminaryTextChangeCommitEvents` interfaccia non viene generata in risposta a annullare o ripristinare i comandi. Eventi vengono generati solo per i buffer con un gestore di annullamento. `IVsPreliminaryTextChangeCommitEvents` viene generato prima di altri eventi, ad esempio elenco, per assicurarsi che gli altri eventi non modificano il testo prima che le modifiche vengono confermate. Il pacchetto VSPackage deve monitorare uno di `IVsPreliminaryTextChangeCommitEvents` interfaccia o `IVsFinalTextChangeCommitEvents` interfaccia, ma non entrambi.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Notifica ai client del movimento ultimo commit per attivare l'evento e fornisce l'intervallo di testo modificato. Il `IVsFinalTextChangeCommitEvents` interfaccia non viene generata in risposta a annullare o ripristinare i comandi. Eventi vengono generati solo per i buffer con un gestore di annullamento. `IVsFinalTextChangeCommitEvents` è destinato solo per i servizi di linguaggio o altri oggetti che dispongono di controllo completo sulla modifica. Il pacchetto VSPackage deve monitorare uno di `IVsPreliminaryTextChangeCommitEvents` interfaccia o `IVsFinalTextChangeCommitEvents` interfaccia, ma non entrambi.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Accesso ai Buffer di testo tramite l'API Legacy](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   

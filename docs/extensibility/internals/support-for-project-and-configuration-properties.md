@@ -1,26 +1,24 @@
 ---
-title: "Supporto per la proprietà di configurazione e di progetto | Documenti Microsoft"
-ms.custom: 
+title: Supporto per la proprietà di configurazione e di progetto | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per la proprietà di configurazione e di progetto
 Il **proprietà** finestra il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di progetto e la configurazione. È possibile fornire una pagina delle proprietà per un tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.  
@@ -32,7 +30,7 @@ Il **proprietà** finestra il [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 ## <a name="persistence-of-project-and-configuration-properties"></a>Persistenza del progetto e proprietà di configurazione  
  Proprietà progetto e di configurazione sono persistenti in un file di progetto con qualsiasi estensione di file associato al tipo di progetto, ad esempio, con estensione csproj, vbproj e .myproj. In genere, i progetti di utilizzano un file di modello per generare il file di progetto. Tuttavia, esistono effettivamente diversi modi per associare tipi di progetto e modelli. Per ulteriori informazioni, vedere [descrizione del modello di Directory (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Proprietà progetto e di configurazione vengono create aggiungendo elementi al file del modello. Queste proprietà sono quindi disponibili per qualsiasi progetto creato utilizzando il tipo di progetto che utilizza il modello. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]progetti e il MPFProj utilizzano entrambi la [non incluso nella Build: Cenni preliminari su MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schema per i file di modello. Tali file hanno una sezione PropertyGroup per ogni configurazione. In genere, le proprietà dei progetti sono persistenti nella prima sezione PropertyGroup, che dispone di un argomento Configuration impostato su una stringa null.  
+ Proprietà progetto e di configurazione vengono create aggiungendo elementi al file del modello. Queste proprietà sono quindi disponibili per qualsiasi progetto creato utilizzando il tipo di progetto che utilizza il modello. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetti e MPFProj utilizzano entrambi la [non incluso nella Build: Cenni preliminari su MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schema per i file di modello. Tali file hanno una sezione PropertyGroup per ogni configurazione. In genere, le proprietà dei progetti sono persistenti nella prima sezione PropertyGroup, che dispone di un argomento Configuration impostato su una stringa null.  
   
  Il codice seguente mostra l'inizio di un file di progetto MSBuild base.  
   
@@ -62,9 +60,9 @@ Il **proprietà** finestra il [!INCLUDE[vsprvs](../../code-quality/includes/vspr
   
  Il `SettingsPage` classe e `Microsoft.VisualStudio.Package.ProjectNode` classe offrono questi metodi per rendere persistenti le proprietà di progetto e la configurazione:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`e `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` rendere persistenti le proprietà del progetto.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` e `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` rendere persistenti le proprietà del progetto.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` rendere persistenti le proprietà di configurazione.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` rendere persistenti le proprietà di configurazione.  
   
     > [!NOTE]
     >  Le implementazioni del `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classi Usa la `Microsoft.Build.BuildEngine` metodi (MSBuild) per ottenere e impostare le proprietà di progetto e la configurazione dal file di progetto.  

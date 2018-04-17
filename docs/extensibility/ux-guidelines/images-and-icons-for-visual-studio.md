@@ -1,25 +1,21 @@
 ---
 title: Immagini e icone per Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3fae6a5350d5204219edcb14732c7686984035e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Utilizzo di immagini in Visual Studio  
@@ -31,7 +27,7 @@ ms.lasthandoff: 03/13/2018
   
      **Nota:** immagini vengono usati nel sistema di menu, non è necessario creare un'icona per ogni comando. Consultare [menu e comandi di Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) per vedere se il comando deve ottenere un'icona.  
   
--   **Thumbnails.** Immagini utilizzate nell'area di anteprima di una finestra di dialogo, ad esempio la finestra di dialogo Nuovo progetto.  
+-   **Anteprime.** Immagini utilizzate nell'area di anteprima di una finestra di dialogo, ad esempio la finestra di dialogo Nuovo progetto.  
   
 -   **Immagini di finestra di dialogo.** Immagini visualizzate nelle finestre di dialogo o le procedure guidate, come grafica descrittivo o indicatori di messaggio. Utilizzare raramente e solo quando è necessario per illustrare un concetto difficile o per ottenere l'attenzione dell'utente (avviso, avviso).  
   
@@ -276,8 +272,8 @@ ms.lasthandoff: 03/13/2018
   
 |Utilizzo|nome|Valore (tema chiaro)|Campione|Esempio|  
 |-----------|----------|---------------------------|------------|-------------|  
-|Background/Dark|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
-|In primo piano/leggero|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|Sfondo/scuro|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
+|In primo piano/leggero|VS FG|F0EFF1 / 240,239,241|![Campione F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
 |Struttura|VS Out|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  Oltre ai colori di base, ogni icona può contenere un aggiuntivo colore dalla tavolozza estesa.  
@@ -290,8 +286,8 @@ ms.lasthandoff: 03/13/2018
 |Utilizzo|nome|Valore (tutti i temi)|Campione|  
 |-----------|----------|--------------------------|------------|  
 |Positivo|VS azione verde|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Negativo|VS azione rosso|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|Lingua di sistema|VS azione blu|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Negativo|VS azione rosso|A1260D / 161,38,13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
+|Lingua di sistema|VS azione blu|00539C / 0,83,156|![Campione 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Creare/nuovo|VS azione arancione|C27D1A / 194,156,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>Esempi  
@@ -299,7 +295,7 @@ ms.lasthandoff: 03/13/2018
   
 |||||  
 |-|-|-|-|  
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Esegui|![Icona Esegui query](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Esecuzione di Query|![Icona Riproduci tutti i passaggi](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Tutti i passaggi di riproduzione|![Icona Aggiungi controllo](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Aggiungi controllo|  
+|![Icona dell'esecuzione](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Esegui|![Icona Esegui query](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Esecuzione di Query|![Icona Riproduci tutti i passaggi](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Tutti i passaggi di riproduzione|![Icona Aggiungi controllo](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Aggiungi controllo|  
   
  Rosso viene usato per i modificatori di azione negativo come "Delete", "Stop", "Annulla" e "Chiudi".  
   
@@ -324,7 +320,7 @@ ms.lasthandoff: 03/13/2018
   
 ||||||  
 |-|-|-|-|-|  
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Esegui|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Arresta|![Icona Elimina](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Eliminare|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Salva|![Icona Esplora Indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Esplora indietro|  
+|![Icona dell'esecuzione](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Esegui|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Arresta|![Icona Elimina](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Eliminare|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Salva|![Icona Esplora Indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Esplora indietro|  
   
 ### <a name="code-hierarchy-palette"></a>Tavolozza gerarchia codice  
   
@@ -339,13 +335,13 @@ ms.lasthandoff: 03/13/2018
   
 |Utilizzo|nome|Valore (tutti i temi)|Campione|  
 |-----------|----------|--------------------------|------------|  
-|ASP, HTML, WPF|ASP HTML WPF blu|0095D7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
-|C++|CPP viola|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
+|ASP, HTML, WPF|ASP HTML WPF blu|0095D7 / 0,149,215|![Campione 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
+|C++|CPP viola|9B4F96 / 155,79,150|![Campione 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |C#|CS verde (VS azione verde)|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |CSS|Rosso CSS|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
 |F#|ADFS viola|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
-|JavaScript|JS arancione|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
-|VB|VB blu (VS azione blu)|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|JavaScript|JS arancione|F16421 / 241,100,33|![Campione F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
+|VB|VB blu (VS azione blu)|00539C / 0,83,156|![Campione 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |TypeScript|Servizi terminal arancione|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
 |Python|Verde rispetto all'anno precedente|879636 / 135,150,54|![Swatch 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
   
@@ -353,8 +349,8 @@ ms.lasthandoff: 03/13/2018
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Icona di Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Icona di JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Icona di Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
-|![Icona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![Icona di typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
+|![Icona di Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; sull'icona](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C&#43; &#43; sull'icona](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![F&#35; sull'icona](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Icona di JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Icona di Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
+|![Icona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Icona di WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Icona di ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Icona di CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Icona di typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  Icone per IntelliSense utilizzano una tavolozza di colori esclusivo. Questi colori vengono utilizzati per consentire agli utenti di distinguere rapidamente tra i diversi elementi nell'elenco popup di IntelliSense.  
@@ -362,8 +358,8 @@ ms.lasthandoff: 03/13/2018
 |Utilizzo|nome|Valore (tutti i temi)|Campione|  
 |-----------|----------|--------------------------|------------|  
 |Classe di evento,|VS azione arancione|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|Metodo di estensione, metodo, modulo, delegato|VS azione viola|652 LA 90 D / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
-|Campo, elemento Enum, Macro, struttura, tipo di valore di unione, operatore, interfaccia|VS azione blu|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Metodo di estensione, metodo, modulo, delegato|VS azione viola|652 LA 90 D / 101,45,144|![Campione 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|Campo, elemento Enum, Macro, struttura, tipo di valore di unione, operatore, interfaccia|VS azione blu|00539C / 0,83,156|![Campione 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Object|VS azione verde|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Costante, eccezione, elemento Enum, mappa, l'elemento della mappa, Namespace, modello, definizione di tipo|Sfondo (VS BG)|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
@@ -380,10 +376,10 @@ ms.lasthandoff: 03/13/2018
 |Utilizzo|nome|Valore (tutti i temi)|Campione|  
 |-----------|----------|--------------------------|------------|  
 |Stato: neutra|Notifica blu (VS blu)|1BA1E2 / 27,161,226|![Campione 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
-|Stato: positivo|Notifica verde (VS verde)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
+|Stato: positivo|Notifica verde (VS verde)|339933 / 51,153,51|![Campione 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
 |Stato: negativo|Notifica rosso (VS rosso)|E51400 / 229,20,0|![Swatch E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
-|Stato: avviso|Notifica giallo (VS arancione)|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
-|Riempimento di primo piano|Notifica nero (nero)|000000 / 0,0,0|![Swatch &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
+|Stato: avviso|Notifica giallo (VS arancione)|FFCC00 / 255,204,0|![Campione FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
+|Riempimento di primo piano|Notifica nero (nero)|000000 / 0,0,0|![Campione &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
 |Riempimento di primo piano|Notifica vuoto (bianco)|FFFFFF / 255,255,255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>Esempi di icone di notifica  
@@ -397,24 +393,24 @@ ms.lasthandoff: 03/13/2018
   
 |Gruppo|Utilizzo|nome|Valore (tutti i temi)|Campione|  
 |-----------|-----------|----------|--------------------------|------------|  
-|TFS|Sfondo|TFSO BG|656565/ 101, 101, 101|![Swatch 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
+|TFS|Sfondo|TFSO BG|656565/ 101, 101, 101|![Campione 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Struttura|TFSO OUT|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |Napa|Sfondo|Vuoto|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |Monaco|Sfondo|Vuoto|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
 |F12|Sfondo|Vuoto|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|Normale|F12 Grey_Primary|555555 / 85, 85, 85|![Swatch 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
+|F12|Normale|Grey_Primary F12|555555 / 85, 85, 85|![Campione 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
 |F12|Passaggio del mouse|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
-|F12|Disabilitato|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
+|F12|Disabilitato|LtGrey_Disabled F12|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
 |F12|Sfondo al passaggio del mouse|Passare il mouse bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|Sfondo premuto|Bg premuto|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
 |F12|Struttura|VS OUT|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
-|F12|Informazioni|Informazioni|00BCF2 / 0,188,242|![Swatch 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
-|F12|Avviso|Avviso|F28300 / 242,131,0|![Swatch F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
-|F12|Errore / negativo|Error_Negative|E81123 / 232,17,35|![Swatch E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
-|F12|Avviare / positivo|Start_Positive|009E49 / 0,158,73|![Swatch 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
-|F12|Tipo di interruzione|Tipo di interruzione|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
+|F12|Informazioni|Informazioni|00BCF2 / 0,188,242|![Campione 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
+|F12|Avviso|Avviso|F28300 / 242,131,0|![Campione F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
+|F12|Errore / negativo|Error_Negative|E81123 / 232,17,35|![Campione E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
+|F12|Avviare / positivo|Start_Positive|009E49 / 0,158,73|![Campione 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
+|F12|Tipo di interruzione|Tipo di interruzione|9B4F96 / 155,79,150|![Campione 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |F12|Contrassegno di eventi|Contrassegno di eventi|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
-|F12|Contrassegno utente|Contrassegno utente|F16220 / 241,98,32|![Swatch F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
+|F12|Contrassegno utente|Contrassegno utente|F16220 / 241,98,32|![Campione F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
   
 #### <a name="examples-of-visual-studio-online-icons"></a>Esempi di icone di Visual Studio Online  
   
@@ -428,7 +424,7 @@ ms.lasthandoff: 03/13/2018
   
 |Monaco||||  
 |------------|-|-|-|  
-|![Icona dei file Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />File|![Icona Git Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Icona di ricerca Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Cerca|![Monaco text icon](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />Testo|  
+|![Icona dei file Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />File|![Icona Git Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Icona di ricerca Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Cerca|![Icona di testo Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405 60_MonacoText")<br />Testo|  
   
 |F12|||  
 |---------|-|-|  

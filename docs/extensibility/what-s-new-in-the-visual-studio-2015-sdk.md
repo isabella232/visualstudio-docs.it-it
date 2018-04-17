@@ -1,25 +1,23 @@
 ---
-title: "Novità &#39; s New in Visual Studio 2015 SDK | Documenti Microsoft"
-ms.custom: 
+title: Novità&#39;s New in Visual Studio 2015 SDK | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6488f28f2963e17c716c2e9d395ddf77f270e7b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novità &#39; s New in Visual Studio 2015 SDK
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Novità&#39;s New in Visual Studio 2015 SDK
 Visual Studio SDK include le seguenti funzionalità nuove e aggiornate per Visual Studio 2015, Visual Studio 2015 aggiornate e Visual Studio 2017.  
   
 ## <a name="vs-2015-sdk-update-1"></a>Visual Studio 2015 SDK Update 1  

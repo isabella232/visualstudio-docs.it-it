@@ -1,23 +1,21 @@
 ---
 title: Aggiornamento progetto personalizzato e i modelli di Visual Studio 2017 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: af60281e7211e7b16e86200c02aef791d26da274
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Aggiornamento progetto personalizzato e i modelli di Visual Studio 2017
 
@@ -185,7 +183,7 @@ Alcune estensioni basate su MSI distribuire modelli in posizioni di modelli comu
 
 - **\<Directory di installazione di Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
 
-- **\<Directory di installazione di Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< progetto/ItemTemplates >**
+- **\<Directory di installazione di Visual Studio > \Common7\IDE\Extensions\\< editore\>\\< progetto/ItemTemplates >**
 
 Se l'estensione esegue una distribuzione basata su MSI, è necessario generare manualmente il manifesto di modello e assicurarsi che sia inclusa nel programma di installazione di estensione. Confrontare gli esempi di .vstman sopra elencati e [Visual Studio modello Manifest Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

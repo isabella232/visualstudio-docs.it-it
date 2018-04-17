@@ -1,23 +1,21 @@
 ---
 title: Documento caricamento ritardato | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc10d7807633433b38fa8587d41c2ac3c0273ebe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delayed-document-loading"></a>Documento caricamento ritardato
 Quando un utente riapre una soluzione di Visual Studio, è possibile che la maggior parte dei documenti associati non vengono caricata immediatamente. La cornice della finestra documento viene creata in uno stato in sospeso inizializzazione e un documento di segnaposto (denominato frame dello stub) viene inserito nel documento di tabella in esecuzione (RDT).  
@@ -49,7 +47,7 @@ Quando un utente riapre una soluzione di Visual Studio, è possibile che la magg
   
  È possibile evitare il caricamento di documenti non necessari chiamando uno dei metodi seguenti prima di richiedere le proprietà rilevanti: prima di inserire altre proprietà.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>utilizzando <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> utilizzando <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Questo metodo restituisce un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> oggetto che include un valore per <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> se il documento non è ancora stato inizializzato.  
   

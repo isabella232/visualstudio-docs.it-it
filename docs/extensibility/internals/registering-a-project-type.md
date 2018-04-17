@@ -1,27 +1,25 @@
 ---
 title: Registrazione di un tipo di progetto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 Quando si crea un nuovo tipo di progetto, è necessario creare le voci del Registro di sistema che consentono a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per riconoscere e usare il tipo di progetto. Queste voci del Registro di sistema è in genere creare utilizzando un file di script (con estensione RGS) del Registro di sistema.  
@@ -85,7 +83,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del Regis
   
 |nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|`@`(Impostazione predefinita)|REG_SZ|`FigPrj Project VSPackage`|Nome localizzabile di registrato VSPackage (tipo di progetto).|  
+|`@` (Impostazione predefinita)|REG_SZ|`FigPrj Project VSPackage`|Nome localizzabile di registrato VSPackage (tipo di progetto).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Percorso del tipo di progetto DLL. L'IDE carica la DLL e passa il CLSID VSPackage per `DllGetClassObject` ottenere <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> per costruire il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> oggetto.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Nome della società che ha sviluppato il tipo di progetto.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Nome per il tipo di progetto.|  
@@ -197,7 +195,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del Regis
   
 |nome|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|nessuno|Valore che indica che le voci seguenti siano per le voci di progetti di file esterni.|  
+|`@`|REG_SZ|Nessuno|Valore che indica che le voci seguenti siano per le voci di progetti di file esterni.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valore di ID di risorsa per i file di modello di aggiungere nuovi elementi.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Il percorso predefinito degli elementi che verranno visualizzati nel **Aggiungi nuovo elemento** la finestra di dialogo.|  
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Stabilisce l'ordine di visualizzazione nel nodo della struttura ad albero di **Aggiungi nuovo elemento** la finestra di dialogo.|  

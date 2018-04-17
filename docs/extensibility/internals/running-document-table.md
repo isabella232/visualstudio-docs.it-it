@@ -1,12 +1,10 @@
 ---
 title: Esecuzione tabella Document | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>Tabella documenti in esecuzione
 L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura interna denominata tabella document (RDT) in esecuzione. Questo elenco include tutti i documenti aperti in memoria, indipendentemente dal fatto che tali documenti sono in corso di modifica. Un documento è un elemento in modo permanente, inclusi i file in un progetto o file di progetto principale (ad esempio, un file con estensione vcxproj).  
@@ -36,7 +34,7 @@ L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura
 |Moniker del documento|Stringa che identifica in modo univoco l'oggetto dati del documento. Potrebbe essere il percorso di file assoluto per un sistema di progetto che gestisce i file (ad esempio, C:\MyProject\MyFile). Questa stringa viene utilizzata anche per i progetti salvati in archivi diverso dal file System, ad esempio stored procedure in un database. In questo caso, il sistema del progetto di creare una stringa univoca che possa riconoscere e possibilmente analizzare per determinare come archiviare il documento.|  
 |Proprietario di gerarchia|Oggetto gerarchia a cui appartiene il documento, come rappresentato da un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfaccia.|  
 |ID elemento|Identificatore dell'elemento di un elemento specifico all'interno della gerarchia. Questo valore è univoco tra tutti i documenti nella gerarchia proprietario di questo documento, ma questo valore non deve necessariamente essere univoco in gerarchie diverse.|  
-|Oggetto dati del documento|Come minimo, si tratta di un`IUnknown`<br /><br /> . L'IDE non richiede alcuna particolare interfaccia oltre il `IUnknown` interfaccia per l'oggetto dati del documento dell'editor personalizzato. Tuttavia, per un editor standard, implementazione dell'editor del <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfaccia necessaria per gestire le chiamate di persistenza di file dal progetto. Per ulteriori informazioni, vedere [il salvataggio di un documento Standard](../../extensibility/internals/saving-a-standard-document.md).|  
+|Oggetto dati del documento|Come minimo, si tratta di un `IUnknown`<br /><br /> . L'IDE non richiede alcuna particolare interfaccia oltre il `IUnknown` interfaccia per l'oggetto dati del documento dell'editor personalizzato. Tuttavia, per un editor standard, implementazione dell'editor del <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interfaccia necessaria per gestire le chiamate di persistenza di file dal progetto. Per ulteriori informazioni, vedere [il salvataggio di un documento Standard](../../extensibility/internals/saving-a-standard-document.md).|  
 |Flag|Flag che controllano se il documento viene salvato, se viene applicato un blocco di lettura o di modifica e così via, può essere specificati quando vengono aggiunte voci di RDT. Per altre informazioni, vedere l'enumerazione <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>.|  
 |Conteggio dei blocchi di modifica|Conteggio dei blocchi di modifica. Un blocco di modifica indica che alcuni editor aperto il documento per la modifica. Quando si esegue la transizione a zero il conteggio dei blocchi di modifica, l'utente viene richiesto di salvare il documento, se è stato modificato. Ad esempio, ogni volta che si apre un documento in un editor utilizzando il **nuova finestra** comando, viene aggiunto un blocco di modifica per il documento nel RDT. Affinché un blocco di modifica da impostare, il documento deve avere una gerarchia o ID elemento|  
 |Conteggio dei blocchi in lettura|Conteggio dei blocchi in lettura. Un blocco di lettura indica che il documento viene letto tramite un meccanismo, ad esempio una procedura guidata. Un blocco di lettura contiene un documento attivo nella RDT continuando a indicare che il documento non può essere modificato. È possibile impostare un blocco di lettura, anche se il documento non dispone di una gerarchia o ID elemento Questa funzionalità consente di aprire un documento in memoria e immetterlo nel RDT senza il documento da proprietà di qualsiasi gerarchia. Questa funzionalità viene utilizzata raramente.|  

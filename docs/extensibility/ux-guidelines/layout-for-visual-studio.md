@@ -1,28 +1,26 @@
 ---
 title: Layout per Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 La maggior parte delle finestre di dialogo di Visual Studio è [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Mentre Visual Studio viene spostato aggiornare la relativa interfaccia utente, alcune delle finestre di dialogo ruolo più significativo hanno una nuova progettazione che stabilisce le esperienze come definizione di prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto con tema.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Layout di finestra di dialogo utilità  
+##  <a name="BKMK_UtilityDialogLayout"></a> Layout di finestra di dialogo utilità  
   
 -   Tutti i controlli all'interno di una finestra di dialogo utilità devono iniziare nella parte superiore o sinistra e verso il basso del flusso.  
   
@@ -43,7 +41,7 @@ La maggior parte delle finestre di dialogo di Visual Studio è [layout di finest
   
  ![Spaziatura della finestra di dialogo per le etichette a sinistra dei controlli](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **Figura 08.01-b: Linee guida per le finestre di dialogo utilità con etichette a sinistra dei controlli di spaziatura**  
+ **Figura 08.01-b: Spaziatura linee guida per le finestre di dialogo utilità con etichette a sinistra dei controlli**  
   
 ### <a name="layout-details"></a>Dettagli del layout  
   
@@ -67,7 +65,7 @@ La maggior parte delle finestre di dialogo di Visual Studio è [layout di finest
   
 -   Pulsanti di comando devono essere di 6 pixel di distanza.  
   
- ![Allineamento del pulsante base](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+ ![Allineamento di base dei pulsanti](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
  **Figura 08.01-c: Allineamento di base dei pulsanti**  
   
@@ -104,7 +102,7 @@ La maggior parte delle finestre di dialogo di Visual Studio è [layout di finest
   
 -   La lunghezza di riga deve essere una larghezza di un utente analizzare e leggere familiarità. Una finestra di dialogo medio deve essere non più di 550 pixel di larghezza.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Pulsanti di comando interni  
+####  <a name="BKMK_InteriorCommandButtons"></a> Pulsanti di comando interno  
  Nelle finestre di dialogo più complessi, un controllo interno potrebbe essere relativi pulsanti correlati, che possono influire in cui si trovano i pulsanti di commit della finestra di dialogo.  
   
 -   Utilizzare i pulsanti quando l'allineamento verticale (colonna) della parte interna **OK**/**Annulla** orizzontalmente nell'angolo inferiore destro.  
@@ -115,16 +113,16 @@ La maggior parte delle finestre di dialogo di Visual Studio è [layout di finest
   
  ![Pulsanti OK e Annulla orizzontali](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **Figura 08.01-f: Pulsanti di verticale interno con OK o Annulla orizzontale**  
+ **Figura 08.01-f: Pulsanti verticale interno con OK/Annulla orizzontale**  
   
  ![Pulsanti OK e Annulla verticali](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **Figura 08.01-g Orizzontali pulsanti interni con OK o Annulla verticale**  
+ **Figura 08.01-g Orizzontali interno i pulsanti con OK/Annulla verticale**  
   
 #### <a name="browse-button"></a>[Sfoglia...] pulsante  
- **[Sfoglia...]**  pulsanti che seguono una casella di testo devono spiegare chiaramente "Sfoglia …" in modo completo, inclusi i puntini di sospensione. Se lo spazio è ridotto o sono presenti più **[Sfoglia...]**  pulsanti sullo schermo, il pulsante possono essere ridotto a semplicemente i puntini di sospensione.  
+ **[Sfoglia...]**  pulsanti che seguono una casella di testo devono spiegare chiaramente "Sfoglia..." in modo completo, inclusi i puntini di sospensione. Se lo spazio è ridotto o sono presenti più **[Sfoglia...]**  pulsanti sullo schermo, il pulsante possono essere ridotto a semplicemente i puntini di sospensione.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Layout di finestra di dialogo con tema  
+##  <a name="BKMK_ThemedDialogLayout"></a> Layout di finestra di dialogo con tema  
  Finestre di dialogo con tema in Visual Studio hanno un aspetto più chiaro e offrono più spazi. Tipografia fornisce ulteriori enfasi e interesse, che offre più aperto interlinea e una variante di pesi e le dimensioni dei caratteri. Dove possibile, chrome e titolo barre sono stati ridotte o rimosse. Il layout di queste finestre di dialogo deve seguire questo modello di base:  
   
 1.  Lo sfondo della finestra di dialogo è bianco.  
@@ -152,9 +150,9 @@ La maggior parte delle finestre di dialogo di Visual Studio è [layout di finest
   
  ![I tipi di carattere di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")  
   
- **Figura 08.01-j Finestra di dialogo con tema - tipi di carattere**  
+ **Figura 08.01-j: Finestra di dialogo con tema - caratteri**  
   
- ![Colori di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
+ ![I colori di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
  **Figura 08.01-k: Finestra di dialogo con tema - colori**  
   

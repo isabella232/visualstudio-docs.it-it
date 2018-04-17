@@ -1,27 +1,23 @@
 ---
-title: 'Procedura dettagliata: Utilizzo di un tasto di scelta rapida con un''estensione di Editor | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Utilizzo di un tasto di scelta rapida con un'estensione di Editor | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60cfb35e2c3acbe3b52f460b040dd5c220e6b045
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Utilizzo di un tasto di scelta rapida con un'estensione di Editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. La procedura dettagliata seguente viene illustrato come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo con un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo utilizzando il carattere +.  

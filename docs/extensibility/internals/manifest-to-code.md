@@ -1,22 +1,19 @@
 ---
 title: Manifesto di codice | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12fc742ae77df98b67593318e08d4151e2991a4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-to-code"></a>Manifesto al codice
 Il manifesto per lo strumento di codice è un'applicazione console che utilizza un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto dell'immagine in C++, c#, VB o file con estensione vsct per le estensioni di Visual Studio. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini del richiedente dal servizio Visual Studio immagine direttamente oppure per passare i valori del manifesto tramite le API, se il codice non di gestione la propria interfaccia utente e per il rendering.  
@@ -56,7 +53,7 @@ Il manifesto per lo strumento di codice è un'applicazione console che utilizza 
 -   Lo strumento analizza solo le voci di simboli per generare i wrapper di codice. Se un manifesto di immagini non contiene nessun simbolo, i wrapper del codice generato sarà vuoti. Se è presente un'immagine o un set di immagini nel manifesto dell'immagine che non utilizzano i simboli, essi verranno esclusi dal wrapper di codice.  
   
 ## <a name="sample-output"></a>Esempio di output  
- **Wrapper c#**  
+ **Wrapper di c#**  
   
  Classi di una coppia di ID immagine semplice e moniker di immagini per c# sarà simile al codice riportato di seguito:  
   

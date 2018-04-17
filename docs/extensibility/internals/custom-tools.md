@@ -1,30 +1,28 @@
 ---
 title: Gli strumenti personalizzati | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, custom tools
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7589c9a2aedf987af79689e8babccb554fbb4ccc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5f215cfbd5113377e7a98439976a7f44215eee02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-tools"></a>Strumenti personalizzati
-*Gli strumenti personalizzati* consentono di associare uno strumento con un elemento in un progetto ed eseguire tale strumento ogni volta che il file viene salvato. Alcuni strumenti personalizzati, dette *generatori di file singolo*, vengono spesso utilizzati per implementare funzioni di conversione che genera il codice dai dati e viceversa. Ad esempio, di creare generatori di file singolo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] codice non i file resx e. Settings dell'origine. Il codice sorgente generato fornisce accesso fortemente tipizzato ai dati nei file resx e. Settings. Il [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipi di progetto supportano strumenti personalizzati. [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] non tipi di progetto. I tipi di progetto possono supportare anche gli strumenti personalizzati.  
+*Strumenti personalizzati* consentono di associare uno strumento con un elemento in un progetto ed eseguire tale strumento ogni volta che il file viene salvato. Alcuni strumenti personalizzati, dette *generatori di file singolo*, vengono spesso utilizzati per implementare funzioni di conversione che genera il codice dai dati e viceversa. Ad esempio, di creare generatori di file singolo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] codice non i file resx e. Settings dell'origine. Il codice sorgente generato fornisce accesso fortemente tipizzato ai dati nei file resx e. Settings. Il [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipi di progetto supportano strumenti personalizzati. [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] non tipi di progetto. I tipi di progetto possono supportare anche gli strumenti personalizzati.  
   
  Gli strumenti personalizzati sono registrati i componenti che implementano il `IVsSingleFileGenerator` interfaccia.  
   

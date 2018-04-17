@@ -1,26 +1,24 @@
 ---
 title: Creazione di cartelle dei contenitori padre per soluzioni | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creazione di cartelle dei contenitori padre per le soluzioni
 Nell'API versione 1.2 del plug-in controllo di origine, un utente può specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti Web all'interno della soluzione. Questa singola radice viene chiamata una radice unificata Super (SUR).  
@@ -60,11 +58,11 @@ Nell'API versione 1.2 del plug-in controllo di origine, un utente può specifica
 |Soluzione contiene|In percorsi su disco|Struttura del database predefinito|  
 |-----------------------|-----------------------|--------------------------------|  
 |sln1.sln<br /><br /> Web1<br /><br /> WEB2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /D/web1<br /><br /> $/*user_choice*sln1/win1|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /D/web1<br /><br /> $/*user_choice*  /sln1/win1|  
   
  Cartella SUR e delle sottocartelle vengono create indipendentemente dal fatto che l'operazione è stata annullata o ha esito negativo a causa di un errore. Vengono automaticamente rimossi nelle condizioni di errore o annullamento.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Per impostazione predefinita al comportamento versione 1.1, se il plug-in controllo del codice sorgente non restituisce `SCC_CAP_CREATESUBPROJECT` e `SCC_CAP_GETPARENTPROJECT` flag di capacità. Inoltre, gli utenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possibile scegliere di ripristinare il comportamento della versione 1.1 impostando il valore della seguente chiave su DWORD: 00000001:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] valore predefinito è la versione 1.1 comportamento se il plug-in del controllo del codice sorgente non restituisce `SCC_CAP_CREATESUBPROJECT` e `SCC_CAP_GETPARENTPROJECT` flag di capacità. Inoltre, gli utenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possibile scegliere di ripristinare il comportamento della versione 1.1 impostando il valore della seguente chiave su DWORD: 00000001:  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001  
   

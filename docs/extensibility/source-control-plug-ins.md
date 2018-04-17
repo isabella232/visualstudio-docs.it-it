@@ -1,27 +1,23 @@
 ---
 title: Plug-in del controllo origine | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f05a0b41a46adfee827f9cc1a36ab7bdd44cd0a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a3395275938d78178f6f39ccd0f67dca01194bcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-ins"></a>Plug-in del controllo codice sorgente
 La sezione di riferimento SDK plug-in controllo di origine contiene la specifica di interfaccia completa che consente ai sistemi di controllo di origine per l'integrazione con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Specifica la sintassi e semantica tra i diversi tipi di dati e funzioni che il plug-in controllo del codice sorgente deve implementare per l'interazione con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE).  
@@ -64,7 +60,7 @@ La sezione di riferimento SDK plug-in controllo di origine contiene la specifica
  Viene descritto come disabilitare gli avvisi.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Esempio di plug-in controllo di origine](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Esempio di plug-in del controllo di origine](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Viene fornito un esempio di plug-in controllo del codice sorgente.  
   
  [Guida per il test dei plug-in del controllo del codice sorgente](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  

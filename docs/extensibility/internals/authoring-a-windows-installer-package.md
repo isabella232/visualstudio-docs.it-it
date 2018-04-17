@@ -1,26 +1,24 @@
 ---
 title: Creazione di un pacchetto di Windows Installer | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2055f57e78c348f3f8e53187126588f382f0b944
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-a-windows-installer-package"></a>Creazione di un pacchetto di Windows Installer
 Unità di dati del modello di Windows Installer. Invece che scrivere uno script contenente le procedure per copiare i file e la scrittura di voci del Registro di sistema, ad esempio, si creano le righe e colonne nelle tabelle di database che contengono dati di file e Registro di sistema.  
@@ -49,9 +47,9 @@ Unità di dati del modello di Windows Installer. Invece che scrivere uno script 
   
 -   set di strumenti XML di Windows Installer  
   
-     Il set di strumenti consente di compilare pacchetti di Windows Installer dai file di origine XML. Il set di strumenti è un progetto open source di Microsoft. È possibile scaricare il codice sorgente e i file eseguibili da [http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix).  
+     Il set di strumenti consente di compilare pacchetti di Windows Installer dai file di origine XML. Il set di strumenti è un progetto open source di Microsoft. È possibile scaricare il codice sorgente e i file eseguibili da [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Per i prodotti che si integrano in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizzando il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], vedere [http://visualstudiogallery.com](http://visualstudiogallery.com/).  
+ Per i prodotti commerciali integrano [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizzando il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], vedere [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Installazione di pacchetti VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

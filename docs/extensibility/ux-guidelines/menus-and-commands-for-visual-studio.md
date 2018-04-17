@@ -1,23 +1,21 @@
 ---
 title: Menu e comandi di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ce4e297b698952135ef9f771243577789719dbae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 16f67faf7ffe3a3fd119b7ddf002ab463822a830
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu e comandi di Visual Studio
 ## <a name="command-usage"></a>Sintassi del comando  
@@ -176,7 +174,7 @@ ms.lasthandoff: 12/22/2017
   
      ![In Visual Studio pulsanti di menu combinato](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "0501 c_SplitButtons")  
   
-     **Esempio di un pulsante di menu combinato. I sei comandi a sinistra invece possono inserire in un unico pulsante.**  
+     **Esempio di un pulsante di menu combinato. I sei comandi a sinistra invece rientrino in un unico pulsante.**  
   
 #### <a name="product-specific-toolbars"></a>Barre degli strumenti specifici del prodotto  
  Ogni prodotto può fornire una barra degli strumenti predefinita contenente utilizzati di frequente e importanti comandi e barra degli strumenti predefinita di ogni prodotto vengono visualizzati la prima volta Visual Studio viene avviato dopo il prodotto sia installato.  
@@ -194,7 +192,7 @@ ms.lasthandoff: 12/22/2017
   
 -   È consentita la duplicazione dei comandi tra barre degli strumenti.  
   
- **Barre degli strumenti specifici del documento** quando un determinato tipo di file è attivo e quando un tipo di file diversi diventa attivo.  
+ **Barre degli strumenti specifici del documento** vengono visualizzati quando un determinato tipo di file è attivo e scompare quando un tipo di file diversi diventa attivo.  
   
 -   Barre degli strumenti specifici del documento non può avere più di 12 pulsanti.  
   
@@ -202,7 +200,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Ogni tipo di file può avere uno degli strumenti incorporata o una barra degli strumenti globale specifici del documento, ma non entrambi.  
   
- **Barre degli strumenti specifici del contesto** vengono visualizzati quando un determinato contesto è impostata e tendono a rimanere attive per lunghi periodi di tempo.  
+ **Barre degli strumenti specifici del contesto** vengono visualizzati quando un determinato contesto viene impostato e tendono a rimanere attive per lunghi periodi di tempo.  
   
 -   Il limite di pulsante per tutte le barre degli strumenti specifici del contesto è 18.  
   
@@ -259,9 +257,9 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>Panoramica  
  Esistono due tipi di chiave da tastiera:  
   
--   **Le chiavi di accesso** (noto anche come tasti di scelta rapida) consente l'accesso da tastiera tramite i menu per l'esecuzione di comandi e a ogni etichetta nella finestra di dialogo dell'interfaccia utente. Tasti di scelta sono principalmente per scopi di accessibilità, siano assegnati a tutti i menu e controlli la maggior parte delle finestre di dialogo, non sono pensati per essere memorizzate, interessano solo la finestra corrente e sono localizzati.  
+-   **Le chiavi di accesso** (noto anche come tasti di scelta rapida) consentono l'accesso della tastiera tramite i comandi di menu per l'esecuzione di comandi e a ogni etichetta nella finestra di dialogo dell'interfaccia utente. Tasti di scelta sono principalmente per scopi di accessibilità, siano assegnati a tutti i menu e controlli la maggior parte delle finestre di dialogo, non sono pensati per essere memorizzate, interessano solo la finestra corrente e sono localizzati.  
   
--   **Tasti di scelta rapida** principalmente utilizzare controllo (Ctrl) e sequenze di tasti funzione (Fn). Sono più progettati per gli utenti avanzati e aiuto nella produttività. Essi vengono assegnati solo per i comandi utilizzati più frequentemente e consentire un rapido accesso mentre viene ignorata dal menu principale. Tasti di scelta rapida sono destinati a essere memorizzate e per tale motivo deve essere assegnato coerente con lo schema di profilo. Schemi di tasti di scelta rapida possono variare da un profilo per un profilo. Un utente può personalizzare i tasti di scelta rapida tramite **strumenti > Opzioni > tastiera**.  
+-   **Tasti di scelta rapida** principalmente usare il controllo (Ctrl) e sequenze di tasti funzione (Fn). Sono più progettati per gli utenti avanzati e aiuto nella produttività. Essi vengono assegnati solo per i comandi utilizzati più frequentemente e consentire un rapido accesso mentre viene ignorata dal menu principale. Tasti di scelta rapida sono destinati a essere memorizzate e per tale motivo deve essere assegnato coerente con lo schema di profilo. Schemi di tasti di scelta rapida possono variare da un profilo per un profilo. Un utente può personalizzare i tasti di scelta rapida tramite **strumenti > Opzioni > tastiera**.  
   
 ### <a name="assigning-access-keys"></a>Assegnazione di tasti  
  Chiavi di accesso è costituito da chiavi Alt più caratteri alfanumerici. Assegnare una chiave di accesso per ogni voce di menu senza eccezione. Seguire le convenzioni comuni per l'assegnazione di tasti di scelta e Windows. ad esempio, la chiave di accesso per **File > Nuovo** deve essere sempre **ALT + F, N**.  
@@ -277,13 +275,13 @@ ms.lasthandoff: 12/22/2017
   
 -   **Usare il controllo (Ctrl) e sequenze di tasti funzione (Fn).**  
   
--   **Mantieni i tasti di scelta rapida utilizzati di frequente.** Gestire i collegamenti più diffusi.  
+-   **Tasti di scelta rapida utilizzati di frequente vengono conservati.** Gestire i collegamenti più diffusi.  
   
--   **Verificare i tasti di scelta rapida editor facile da digitare.** Associare al tipo di scelta rapida per i comandi che gli sviluppatori devono pertanto la maggior parte durante la scrittura di codice. Ad esempio, **Edit.InvokeSmartTag** deve disporre di un tasto di scelta rapida come Ctrl + e non Alt + Maiusc + F10.  
+-   **Facilitare l'editor tasti di scelta rapida digitare.** Associare al tipo di scelta rapida per i comandi che gli sviluppatori devono pertanto la maggior parte durante la scrittura di codice. Ad esempio, **Edit.InvokeSmartTag** deve disporre di un tasto di scelta rapida come Ctrl + e non Alt + Maiusc + F10.  
   
 -   **Cercare in modo coerente con tema di scelta rapida.**  
   
--   **Seguire le linee guida di Windows per determinare quali modificatore chiavi da adottare.** Utilizzare le combinazioni di tasti Ctrl per i comandi che hanno effetti su larga scala, ad esempio i comandi che si applicano all'intero documento. Utilizzare le combinazioni di tasti MAIUSC per i comandi che estendono o integrano le azioni del tasto di scelta rapida standard. Non utilizzare combinazioni di Ctrl + Alt.  
+-   **Attenersi alle linee guida di Windows per determinare quali modificatore chiavi da utilizzare.** Utilizzare le combinazioni di tasti Ctrl per i comandi che hanno effetti su larga scala, ad esempio i comandi che si applicano all'intero documento. Utilizzare le combinazioni di tasti MAIUSC per i comandi che estendono o integrano le azioni del tasto di scelta rapida standard. Non utilizzare combinazioni di Ctrl + Alt.  
   
 -   **Rimuovere i collegamenti estranei.** Se si dispone di una funzionalità legacy, provare a rimuovere i collegamenti che vengono utilizzati con estrema infrequency (meno di 10 volte dai dati di analisi utilizzo software) o infrequency moderato (meno di 100 volte dai dati di analisi utilizzo software) se la chiave di accesso consente di accedere rapidamente allo stesso comando. Ad esempio: C ALT + H, verrà aperto il sommario della Guida /.  
   

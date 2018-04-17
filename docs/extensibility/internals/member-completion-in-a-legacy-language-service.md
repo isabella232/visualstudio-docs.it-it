@@ -1,27 +1,25 @@
 ---
 title: Completamento di membro in un servizio di linguaggio Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
 - language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0cc22190c9228d2e166be94ed0d5cc78105e2404
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Completamento di membro in un servizio di linguaggio Legacy
 Il completamento di membro IntelliSense è una descrizione comando che consente di visualizzare un elenco di possibili membri di un ambito specifico, ad esempio una classe, struttura, enumerazione o dello spazio dei nomi. Ad esempio, in c#, se l'utente digita "this" seguito da un punto, un elenco di tutti i membri della classe o struttura nell'ambito corrente viene visualizzato un elenco da cui l'utente può selezionare.  
@@ -99,7 +97,7 @@ namespace TestLanguagePackage
   
  Il parser viene chiamato con <xref:Microsoft.VisualStudio.Package.ParseReason> o <xref:Microsoft.VisualStudio.Package.ParseReason> quando viene digitato un carattere di selezione del membro. Il percorso specificato <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto viene immediatamente dopo che il membro selezionare carattere. Il parser deve raccogliere i nomi di tutti i membri che possono essere visualizzati in un elenco di membri in tale particolare punto nel codice sorgente. Quindi il parser deve analizzare la riga corrente per determinare l'ambito in cui che l'utente desidera associato con il carattere di selezione del membro.  
   
- Questo ambito è in base al tipo dell'identificatore prima che il membro selezionare carattere. In c#, si consideri ad esempio la variabile membro `languageService` che ha un tipo di `LanguageService`, digitando **languageService.** produce un elenco di tutti i membri del `LanguageService` classe. Anche in c#, digitare **questo.** produce un elenco di tutti i membri della classe nell'ambito corrente.  
+ Questo ambito è in base al tipo dell'identificatore prima che il membro selezionare carattere. Nel linguaggio c#, si consideri ad esempio la variabile membro `languageService` che è di tipo `LanguageService`, digitando **languageService.** produce un elenco di tutti i membri del `LanguageService` classe. Anche in c#, digitare **questo.** produce un elenco di tutti i membri della classe nell'ambito corrente.  
   
 ### <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come popolare un <xref:Microsoft.VisualStudio.Package.Declarations> elenco. Questo codice presuppone che il parser costruisce una dichiarazione e lo aggiunge all'elenco chiamando un `AddDeclaration` metodo la `TestAuthoringScope` classe.  

@@ -1,29 +1,25 @@
 ---
 title: Funzione SccAddFromScc | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce2d9d179fd46bcc63340c911437486e1a459195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc (funzione)
 Questa funzione consente di individuare i file già presenti nel sistema di controllo di origine e successivamente rendere tali parte i file del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comune nel progetto corrente senza la copia del file. La matrice restituita di file, `lplpFileNames`, contiene l'elenco di file che l'utente desidera aggiungere al progetto IDE.  
@@ -66,9 +62,9 @@ SCCRTN SccAddFromScc (
   
  Quando la chiamata al `SccAddFromScc` funzione viene restituito, il plug-in è assegnato valori a `lpnFiles` e `lplpFileNames`, allocare la memoria per la matrice di nome file in base alle esigenze (si noti che questa allocazione sostituisce il puntatore in `lplpFileNames`). Il plug-in controllo del codice sorgente è responsabile dell'immissione di tutti i file nella directory dell'utente o nella cartella designazione specificato. L'IDE aggiunge quindi i file al progetto IDE.  
   
- Infine, l'IDE chiama questa funzione una seconda volta, passando `NULL` per `lpnFiles`. Ciò viene interpretato come un segnale speciale per il plug-in per rilasciare la memoria allocata per la matrice di nomi di file nel controllo del codice sorgente`lplpFileNames``.`  
+ Infine, l'IDE chiama questa funzione una seconda volta, passando `NULL` per `lpnFiles`. Ciò viene interpretato come un segnale speciale per il plug-in per rilasciare la memoria allocata per la matrice di nome file nel controllo del codice sorgente `lplpFileNames``.`  
   
- `lplpFileNames`è un `char ***` puntatore. Il plug-in controllo del codice sorgente posiziona un puntatore a una matrice di puntatori ai nomi di file, quindi passando l'elenco nella modalità standard per questa API.  
+ `lplpFileNames` è un `char ***` puntatore. Il plug-in controllo del codice sorgente posiziona un puntatore a una matrice di puntatori ai nomi di file, quindi passando l'elenco nella modalità standard per questa API.  
   
 > [!NOTE]
 >  Le versioni iniziali dell'API VSSCI non ha fornito un modo per indicare il progetto di destinazione per i file aggiunti. Di conseguenza, la semantica del `lplpFIleNames` parametro sono stati migliorati per renderlo un parametro in/out anziché di un parametro di output. Se solo un singolo file è specificato, ovvero il valore a cui puntava `lpnFiles` = 1, quindi il primo elemento della `lplpFileNames` contiene la cartella di destinazione. Per usare questa nuova semantica, nell'IDE viene chiamato il `SccSetOption` utilizzabile con il `nOption`parametro impostato su `SCC_OPT_SHARESUBPROJ`. Se un plug-in controllo del codice sorgente non supporta la semantica, restituisce `SCC_E_OPTNOTSUPPORTED`. Questo modo viene disabilitata in questo caso l'utilizzo del **Aggiungi dal controllo del codice sorgente** funzionalità. Se un plug-in supporta il **Aggiungi dal controllo del codice sorgente** funzionalità (`SCC_CAP_ADDFROMSCC`), quindi deve supportare la nuova semantica e restituire `SCC_I_SHARESUBPROJOK`.  

@@ -1,32 +1,30 @@
 ---
 title: Implementazione di colorazione della sintassi | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione di colorazione della sintassi
-Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di colori e restituisce i tipi di token corrispondenti a questi elementi colorabili. Il parser deve restituire i tipi di token che appartengono a un elenco di colori. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Consente di visualizzare ogni elemento colorabile predefinito nella finestra del codice in base agli attributi assegnati per l'oggetto di rappresentazione per il tipo di token appropriato.  
+Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di colori e restituisce i tipi di token corrispondenti a questi elementi colorabili. Il parser deve restituire i tipi di token che appartengono a un elenco di colori. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Consente di visualizzare ogni elemento colorabile predefinito nella finestra del codice in base agli attributi assegnati dall'oggetto rappresentazione per il tipo di token appropriato.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]non specifica un'interfaccia del parser, e l'implementazione del parser viene scelta dall'utente. Tuttavia, viene fornita un'implementazione di parser predefinita nel progetto di Visual Studio Language Pack. Per codice gestito, il framework di pacchetto gestito (MPF) fornisce supporto completo per la colorazione del testo.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non specifica un'interfaccia del parser, e l'implementazione del parser viene scelta dall'utente. Tuttavia, viene fornita un'implementazione di parser predefinita nel progetto di Visual Studio Language Pack. Per codice gestito, il framework di pacchetto gestito (MPF) fornisce supporto completo per la colorazione del testo.  
   
  Servizi di linguaggio legacy vengono implementati come parte di un VSPackage, ma il più recente per implementare le funzionalità del servizio di linguaggio consiste nell'utilizzare le estensioni MEF. Per ulteriori informazioni sul programma per implementare la colorazione della sintassi, vedere [procedura dettagliata: evidenziazione testo](../../extensibility/walkthrough-highlighting-text.md).  
   

@@ -1,27 +1,25 @@
 ---
-title: "Esposizione delle proprietà nella finestra proprietà | Documenti Microsoft"
-ms.custom: 
+title: Esposizione delle proprietà nella finestra proprietà | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7aed43ac4248c9bfd1e43d5e6c732a4fef3af529
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 12dcb30374250ca7aa917cf19b3a01ba57862c6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Esposizione delle proprietà nella finestra proprietà
 Questa procedura dettagliata espone le proprietà pubbliche dell'oggetto per il **proprietà** finestra. Le modifiche apportate a queste proprietà vengono riflesse nel **proprietà** finestra.  
@@ -176,7 +174,7 @@ Questa procedura dettagliata espone le proprietà pubbliche dell'oggetto per il 
   
      Cercare le proprietà della finestra nel **proprietà** finestra. Il **IsChecked** proprietà visualizzata nella parte inferiore della finestra, sotto il **proprietà My** categoria.  
   
-10. Selezionare la casella di controllo nella **MyToolWindow** finestra. **IsChecked** nel **proprietà** finestra diventa **True**. Deselezionare la casella di controllo di **MyToolWindow** finestra. **IsChecked** nel **proprietà** finestra diventa **False**. Modificare il valore di **IsChecked** nel **proprietà** finestra. La casella di controllo di **MyToolWindow** finestra viene modificata per corrispondere al nuovo valore.  
+10. Selezionare la casella di controllo nella **MyToolWindow** finestra. **IsChecked** nella **delle proprietà** finestra diventa **True**. Deselezionare la casella di controllo di **MyToolWindow** finestra. **IsChecked** nella **delle proprietà** finestra diventa **False**. Modificare il valore di **IsChecked** nel **proprietà** finestra. La casella di controllo di **MyToolWindow** finestra viene modificata per corrispondere al nuovo valore.  
   
     > [!NOTE]
     >  Se è necessario eliminare l'oggetto che viene visualizzato nel **proprietà** finestra, chiamare `OnSelectChange` con un `null` contenitore di selezione prima. Dopo avere eliminato la proprietà o l'oggetto, è possibile modificare in un contenitore di selezione che ha aggiornato <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> Elenca.  

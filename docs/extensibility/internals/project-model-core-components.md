@@ -1,26 +1,24 @@
 ---
 title: Componenti di base del modello di progetto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2cfb9db9c354eb4c10ece0f5a8259f3d4a104e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano brevi descrizioni di interfacce e servizi individuati nel modello e le interfacce e i servizi associati a oggetti specifici. Inoltre, le tabelle in dettaglio le altre interfacce facoltative nella creazione del progetto e di manutenzione a seconda dei requisiti del tipo di progetto specifico.  
@@ -101,11 +99,11 @@ Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano bre
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Fornisce funzionalità IDE correlate all'interfaccia utente di base, ad esempio la possibilità di creare ed enumerare finestre degli strumenti o finestre di documento o segnalare un errore all'utente.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|Fornisce l'accesso alla barra di stato dell'IDE.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Utilizzato per implementare il modello di automazione. In un modello di progetto, restituirà un oggetto di proprietà che consente di crea un'istanza di tale oggetto.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Utilizzato per implementare eventi negli Appunti per l'oggetto di progetto nella gerarchia. `SVsUIHierWinClipboardHelper`Consente di correttamente handle Taglia, copia e Incolla.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Utilizzato per implementare eventi negli Appunti per l'oggetto di progetto nella gerarchia. `SVsUIHierWinClipboardHelper` Consente di correttamente handle Taglia, copia e Incolla operazioni.|  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Non incluso nella Build: utilizzo di classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Non incluso nella Build: utilizzo delle classi di progetto HierUtil7 implementato un tipo di progetto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Supporto di strumenti di esplorazione di simbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)

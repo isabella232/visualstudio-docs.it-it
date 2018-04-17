@@ -1,27 +1,23 @@
 ---
 title: Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Aggiunta di elementi di Aggiungi nuovo elemento di finestre di dialogo
 Il processo di aggiunta di elementi di **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, la sezione AddItemTemplates contiene il percorso e nome della directory degli elementi disponibili nel **Aggiungi nuovo elemento** la finestra di dialogo vengono inseriti.  
@@ -69,7 +65,7 @@ Il processo di aggiunta di elementi di **Aggiungi nuovo elemento** viene avviata
  Ad esempio, in un progetto di Visual Basic, potrebbe essere progetti Web e client. Web Form non sono elementi utili per aggiungere un progetto di client e windows form non sono elementi utili per aggiungere a un progetto di server Web. Pertanto, è possibile creare una directory di modello che contiene tutti i file per entrambi i tipi di progetto. Quindi implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, è possibile nascondere gli elementi che non devono essere visualizzati in base al tipo di progetto o le impostazioni di progetto nel progetto.  
   
 ## <a name="filtering-project-items"></a>Filtraggio degli elementi di progetto  
- `IVsFilterAddProjectItemDlg2`sono disponibili per il filtro di elementi nella struttura ad albero (riquadro a sinistra) e i file di progetto (riquadro a destra) nei modi seguenti:  
+ `IVsFilterAddProjectItemDlg2` sono disponibili per il filtro di elementi nella struttura ad albero (riquadro a sinistra) e i file di progetto (riquadro a destra) nei modi seguenti:  
   
 -   Per i nomi localizzati (didascalie visualizzate nella finestra di dialogo che è contenuto nel file VSDIR) fornita dal `IVsFilterAddProjectItemDlg`.  
   

@@ -1,26 +1,24 @@
 ---
 title: Registrazione di VSPackage | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1405fbeba34f3e3aa9c645f6eaffe90fe6ac9036
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 348010982b015eaf19ba4de559eca66bb24930a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vspackage-registration"></a>Registrazione di VSPackage
 Pacchetti VSPackage devono avvertire [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che vengono installati e che deve essere caricato. Questo processo viene eseguito scrivendo informazioni nel Registro di sistema. Che è un processo tipico di un programma di installazione.  
@@ -30,7 +28,7 @@ Pacchetti VSPackage devono avvertire [!INCLUDE[vsprvs](../../code-quality/includ
   
  Le voci del Registro di sistema in un pacchetto Windows Installer vengono in genere stabilite nella tabella del Registro di sistema. È anche possibile registrare le estensioni di file nella tabella del Registro di sistema. Tuttavia, Windows Installer fornisce supporto incorporato mediante l'identificatore programmatico (ProgId), classe, estensione e le tabelle di verbo. Per ulteriori informazioni, vedere [tabelle di Database](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
- Assicurarsi che le voci del Registro di sistema siano associate al componente che è appropriato per la scelta strategia side-by-side. Ad esempio, le voci del Registro di sistema per un file condiviso devono essere associate con il componente di Windows Installer del file. Analogamente, le voci del Registro di sistema per un file specifico della versione devono essere associate con il componente del file. In caso contrario, installare o disinstallare il pacchetto VSPackage per una versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe interrompere il pacchetto VSPackage in altre versioni. Per ulteriori informazioni, vedere [supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
+ Assicurarsi che le voci del Registro di sistema siano associate al componente che è appropriato per la scelta strategia side-by-side. Ad esempio, le voci del Registro di sistema per un file condiviso devono essere associate con il componente di Windows Installer del file. Analogamente, le voci del Registro di sistema per un file specifico della versione devono essere associate con il componente del file. In caso contrario, installare o disinstallare il pacchetto VSPackage per una versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe interrompere il pacchetto VSPackage in altre versioni. Per altre informazioni, vedere [di supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
 > [!NOTE]
 >  Il modo più semplice per gestire la registrazione è utilizzare gli stessi dati negli stessi file per la registrazione di sviluppatore e registrazione in fase di installazione. Ad esempio, alcuni strumenti di sviluppo di programma di installazione possono utilizzare file in formato con estensione reg in fase di compilazione. Se gli sviluppatori di gestiscono i file con estensione reg per sviluppo quotidiane e il debug, tali file possono essere inclusi nel programma di installazione automaticamente. Se non è possibile condividere automaticamente i dati di registrazione, è necessario assicurarsi che la copia del programma di installazione dei dati di registrazione sia corrente.  

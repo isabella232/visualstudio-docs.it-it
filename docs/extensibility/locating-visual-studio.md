@@ -2,24 +2,21 @@
 title: Individuazione di Visual Studio | Documenti Microsoft
 ms.custom: ''
 ms.date: 08/21/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5623ea382266fdbcd59bbe57b71522a7a1f4a31e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ed6125c69b9068ebfb3d776ccbefaf88043f83a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locating-visual-studio"></a>Individuazione di Visual Studio
 
@@ -29,8 +26,8 @@ Si tratta di una API rapida, di sola lettura con pacchetti NuGet disponibile per
 
 | Codice | Pacchetto |
 | ---- | --- |
-| Nativo | https://NuGet.org/Packages/Microsoft.VisualStudio.Setup.Configuration.native |
-| Gestito | https://NuGet.org/Packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Nativo | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
+| Gestito | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 È possibile individuare una singola istanza di un percorso o il processo corrente specificata o enumerare tutte le istanze. Vedere [esempi](https://github.com/Microsoft/vs-setup-samples) per esempi completi di individuare Visual Studio.
 

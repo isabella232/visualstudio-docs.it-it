@@ -1,28 +1,26 @@
 ---
 title: 'Procedura dettagliata: Creazione di un SDK tramite C++ | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Procedura dettagliata: Creazione di un SDK tramite C++
 Questa procedura dettagliata viene illustrato come creare una libreria C++ nativa matematiche SDK, pacchetto SDK come un Visual Studio Extension (VSIX) e quindi utilizzarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:  
   
--   [Per creare il nativo e le librerie di Runtime di Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
+-   [Per creare il nativo e le librerie di Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
   
 -   [Per creare il progetto di estensione NativeMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)  
   
@@ -31,7 +29,7 @@ Questa procedura dettagliata viene illustrato come creare una libreria C++ nativ
 ## <a name="prerequisites"></a>Prerequisiti  
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Per creare il nativo e le librerie di Runtime di Windows  
+##  <a name="createClassLibrary"></a> Per creare il nativo e le librerie di Windows Runtime  
   
 1.  Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
@@ -59,7 +57,7 @@ Questa procedura dettagliata viene illustrato come creare una libreria C++ nativ
   
 9. Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.  
   
-##  <a name="createVSIX"></a>Per creare il progetto di estensione NativeMathVSIX  
+##  <a name="createVSIX"></a> Per creare il progetto di estensione NativeMathVSIX  
   
 1.  In **Esplora**, aprire il menu di scelta rapida per **soluzione 'NativeMath'**, quindi scegliere **Aggiungi**, **nuovo progetto**.  
   
@@ -143,7 +141,7 @@ Questa procedura dettagliata viene illustrato come creare una libreria C++ nativ
   
 18. Scegliere il **installare** pulsante, attendere il completamento dell'installazione e quindi avviare Visual Studio.  
   
-##  <a name="createSample"></a>Per creare un'app di esempio che utilizza la libreria di classi  
+##  <a name="createSample"></a> Per creare un'app di esempio che utilizza la libreria di classi  
   
 1.  Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
@@ -171,7 +169,7 @@ Questa procedura dettagliata viene illustrato come creare una libreria C++ nativ
   
 9. Premere il tasto F5 per eseguire l'app.  
   
-10. Nell'app, immettere i due numeri, selezionare un'operazione e quindi scegliere il  **=**  pulsante.  
+10. Nell'app, immettere i due numeri, selezionare un'operazione e quindi scegliere il **=** pulsante.  
   
      Viene visualizzato il risultato corretto.  
   

@@ -1,29 +1,25 @@
 ---
 title: Funzione SccInitialize | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (funzione)
 Questa funzione inizializza il plug-in controllo del codice sorgente che fornisce funzionalità e i limiti per l'ambiente di sviluppo integrato (IDE).  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  Il `lpCallerName` e `lpSccName` i parametri consentono l'IDE e il plug-in controllo del codice sorgente per lo scambio di nomi. Questi nomi possono essere utilizzati per distinguere tra più istanze o effettivamente possono essere visualizzati nei menu o finestre di dialogo.  
   
- Il `lpAuxPathLabel` parametro è una stringa utilizzata come un commento per identificare il percorso del progetto ausiliario archiviato nel file di soluzione e passato il controllo del codice sorgente plug-in una chiamata al [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]viene utilizzata la stringa "progetto di Visual SourceSafe:"; altri plug-in del controllo origine devono evitare l'utilizzo di questa stringa particolare.  
+ Il `lpAuxPathLabel` parametro è una stringa utilizzata come un commento per identificare il percorso del progetto ausiliario archiviato nel file di soluzione e passato il controllo del codice sorgente plug-in una chiamata al [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] viene utilizzata la stringa "progetto SourceSafe:"; altri plug-in di controllo sorgente devono evitare l'utilizzo di questa stringa particolare.  
   
  Il `lpSccCaps` parametro fornisce il controllo del codice sorgente plug-in una posizione in cui archiviare i flag di bit che indica le capacità del plug-in. (Per un elenco completo dei flag di bit di funzionalità, vedere [flag di capacità](../extensibility/capability-flags.md)). Ad esempio, se i piani di plug-in per scrivere i risultati in una funzione di callback fornito dal chiamante, il plug-in necessario impostare la funzionalità di bit SCC_CAP_TEXTOUT. Questo potrebbe segnalare l'IDE per creare una finestra per i risultati di controllo di versione.  
   

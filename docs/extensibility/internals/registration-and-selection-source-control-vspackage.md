@@ -1,26 +1,24 @@
 ---
 title: Registrazione e la selezione (origine controllo VSPackage) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d7bcdb8f930430ac00335777e2c088ce52a34bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e la selezione (origine controllo VSPackage)
 Un pacchetto VSPackage deve essere registrato per esporla a controllo del codice sorgente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se più di un controllo del codice sorgente VSPackage è registrato, l'utente può selezionare il pacchetto VSPackage per caricare in momenti appropriati. Vedere [VSPackage](../../extensibility/internals/vspackages.md) per ulteriori dettagli sul VSPackage e come eseguirne la registrazione.  
@@ -53,7 +51,7 @@ Un pacchetto VSPackage deve essere registrato per esporla a controllo del codice
 ## <a name="selecting-a-source-control-package"></a>Selezione di un pacchetto di controllo di origine  
  Diverse basate su API plug-in origine controllo plug-in e possono essere registrati contemporaneamente pacchetti VSPackage di controllo del codice sorgente. Verificare che il processo di selezione di un plug-in controllo del codice sorgente o un pacchetto VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carica il plug-in o VSPackage al momento appropriato e rinviare il caricamento di componenti non necessari fino a quando non sono necessarie. Inoltre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve rimuovere l'interfaccia utente da altri pacchetti VSPackage inattivo, tra cui le voci di menu, finestre di dialogo e barre degli strumenti e visualizzare l'interfaccia utente per il pacchetto VSPackage attivo.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Carica un controllo del codice sorgente VSPackage quando viene eseguita una qualsiasi delle operazioni seguenti:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Carica un pacchetto VSPackage controllo del codice sorgente quando viene eseguita una delle operazioni seguenti:  
   
 -   Soluzione viene aperta (quando la soluzione è inclusa nel controllo del codice sorgente).  
   
@@ -64,14 +62,14 @@ Un pacchetto VSPackage deve essere registrato per esporla a controllo del codice
  Un controllo del codice sorgente che VSPackage deve caricare tutti i componenti che necessari solo quando effettivamente dovranno essere utilizzato (in caso contrario noto come caricamento ritardato).  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Lo scambio automatico VSPackage basati su una soluzione  
- È possibile scambiare manualmente i pacchetti VSPackage controllo del codice sorgente tramite la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opzioni** nella finestra di dialogo di **controllo del codice sorgente** categoria. La sostituzione automatica di pacchetti basati su una soluzione significa che un pacchetto di controllo di origine che è stato designato per una particolare soluzione viene automaticamente impostato su attivo quando tale soluzione è aperta. Ogni pacchetto di controllo di origine deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]gestisce il passaggio tra sia del codice sorgente plug-in del controllo (implementa l'API plug-in controllo di origine) e VSPackage di controllo del codice sorgente.  
+ È possibile scambiare manualmente i pacchetti VSPackage controllo del codice sorgente tramite la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opzioni** nella finestra di dialogo di **controllo del codice sorgente** categoria. La sostituzione automatica di pacchetti basati su una soluzione significa che un pacchetto di controllo di origine che è stato designato per una particolare soluzione viene automaticamente impostato su attivo quando tale soluzione è aperta. Ogni pacchetto di controllo di origine deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce il passaggio tra entrambi plug-in di controllo (implementa l'API di plug-in del controllo origine) di origine e i pacchetti VSPackage di controllo del codice sorgente.  
   
  Il pacchetto di scheda di controllo di origine viene utilizzato per passare a qualsiasi basate su API plug-in controllo di origine del plug-in. Il processo di passaggio per il pacchetto intermedia della scheda controllo origine e determinare quale plug-in controllo del codice sorgente deve essere impostato su Attiva o inattiva è trasparente all'utente. Il pacchetto di Adapter è sempre attivo quando è attiva qualsiasi plug-in controllo del codice sorgente. Passaggio tra due gli importi di plug-in controllo origine semplicemente durante il caricamento e scaricamento di DLL plug-in. Passaggio a un controllo del codice sorgente VSPackage, tuttavia, comporta l'interazione con l'IDE a caricare il pacchetto VSPackage appropriato.  
   
  Un controllo del codice sorgente VSPackage viene chiamato quando viene aperta una soluzione e la chiave del Registro di sistema per il pacchetto VSPackage è nel file di soluzione. Quando viene aperta la soluzione, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rileva che il valore del Registro di sistema e carica il controllo del codice sorgente appropriato VSPackage. Controllo del codice sorgente tutti i pacchetti VSPackage deve avere le voci del Registro di sistema descritte in precedenza. Una soluzione nel controllo del codice sorgente viene contrassegnata come viene associata a un controllo del codice sorgente VSPackage. I pacchetti VSPackage devono implementare controllo del codice sorgente di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> per abilitare automatico basato su soluzione VSPackage la sostituzione.  
   
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Interfaccia utente per la selezione di pacchetto e passare a Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornisce un'interfaccia utente per controllo del codice sorgente VSPackage e selezione plug-nel **opzioni** nella finestra di dialogo di **controllo del codice sorgente** categoria. Consente all'utente di selezionare il controllo del codice sorgente active plug-in o di un pacchetto VSPackage. Include un elenco a discesa:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce un'interfaccia utente per controllo del codice sorgente VSPackage e selezione plug-nel **opzioni** della finestra di dialogo il **controllo del codice sorgente** categoria. Consente all'utente di selezionare il controllo del codice sorgente active plug-in o di un pacchetto VSPackage. Include un elenco a discesa:  
   
 -   Tutti i pacchetti di controllo codice sorgente installato  
   

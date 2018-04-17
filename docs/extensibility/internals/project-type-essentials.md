@@ -1,30 +1,26 @@
 ---
 title: Progetto di tipo Essentials | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aff6cc669d7df46acaa2cbcb129a6b13b7261d9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-type-essentials"></a>Essentials tipo di progetto
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]include diversi tipi di progetto per lingue quali [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]consente anche di creare i propri tipi di progetto.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] include diversi tipi di progetto per le lingue, ad esempio [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente inoltre di creare i propri tipi di progetto.  
   
  Se si desidera aggiungere comandi personalizzati, editor o finestre degli strumenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è possibile farlo senza creare un nuovo tipo di progetto. Per altre informazioni, vedere i seguenti argomenti:  
   
@@ -62,11 +58,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Tipi di progetto possono supportare dati diversi dai file del codice sorgente tipico che compila in un assembly .exe o DLL. Ad esempio, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti di database contengono riferimenti a script e query file archiviati su disco e aggiungere comandi a **Esplora** per eseguire gli script e query su un database, ma i progetti non supportano comportamento di compilazione. Per ulteriori informazioni, vedere [di apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   Un tipo di progetto non è necessario utilizzare i file. Ad esempio, un tipo di progetto potrebbe archiviare tutti i relativi dati in un database. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Fornisce tipi di progetto di controllo completo sulla modalità cui conservare i dati per progetti ed elementi di progetto. Per ulteriori informazioni, vedere [decisioni di progettazione di tipo di progetto](../../extensibility/internals/project-type-design-decisions.md).  
+-   Un tipo di progetto non è necessario utilizzare i file. Ad esempio, un tipo di progetto potrebbe archiviare tutti i relativi dati in un database. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornisce tipi di progetto di controllo completo sulla modalità queste mantengono i dati per i progetti ed elementi di progetto. Per ulteriori informazioni, vedere [decisioni di progettazione di tipo di progetto](../../extensibility/internals/project-type-design-decisions.md).  
   
 -   Tipi di progetto è necessario fornire un *factory del progetto*, che è un oggetto che crea un'istanza del progetto digitare ogni volta che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene informato di aprire o creare un progetto basato su tale tipo di progetto. Per ulteriori informazioni, vedere [la creazione di istanze da utilizzando progetto factory dei progetti](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Tipi di progetto è necessario specificare modelli per progetti ed elementi di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]utilizza i modelli quando si creano nuovi progetti e aggiungere nuovi elementi a progetti esistenti. Per ulteriori informazioni, vedere [aggiunta di progetto e i modelli di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+-   Tipi di progetto è necessario specificare modelli per progetti ed elementi di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizza i modelli quando si creano nuovi progetti e aggiungere nuovi elementi a progetti esistenti. Per ulteriori informazioni, vedere [aggiunta di progetto e i modelli di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 -   Tipi di progetto possono supportare più configurazioni, ad esempio Debug e rilascio. Gli utenti possono modificare le configurazioni diverse di un progetto tramite pagine delle proprietà specificate. Per ulteriori informazioni, vedere [la gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md).  
   

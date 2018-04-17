@@ -1,32 +1,28 @@
 ---
 title: Modello per i pacchetti di controllo origine | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa0dcdd930412e4e53c59509848f0b7c1503c47b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti di controllo di origine
 Il modello seguente rappresenta un esempio di implementazione di un controllo di origine. Nel modello, vengono visualizzati le interfacce che è necessario implementare e i servizi di ambiente che è necessario chiamare. Ad esempio tutti i servizi, è effettivamente possibile chiamare i metodi di una determinata interfaccia che è possibile ottenere tramite il servizio. I nomi delle classi vengono identificati per rendere più semplice visualizzare l'esecuzione del controllo del codice sorgente.  
   
- ![Controllo configurazione sistema &#95; Esempi TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
+ ![Controllo del codice sorgente&#95;esempi TUP](../../extensibility/internals/media/scc_tup.gif "SCC_TUP")  
 Progetto di controllo di origine di esempio  
   
 ## <a name="interfaces"></a>Interfacce  

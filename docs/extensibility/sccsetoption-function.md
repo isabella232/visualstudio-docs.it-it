@@ -1,29 +1,25 @@
 ---
 title: Funzione SccSetOption | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption (funzione)
 La funzione imposta le opzioni che controllano il comportamento di plug-in controllo del codice sorgente.  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  Se `nOption` è `SCC_OPT_EVENTQUEUE`, l'IDE è disabilitazione (o la riabilitazione) l'elaborazione in background. Ad esempio, durante una compilazione, l'IDE può indicare il plug-in per arrestare l'elaborazione su inattivo di qualsiasi tipo di controllo del codice sorgente. Dopo la compilazione, abilitano nuovamente l'elaborazione in background per mantenere aggiornato coda eventi il plug-in. Corrispondente per il `SCC_OPT_EVENTQUEUE` valore `nOption`, esistono due possibili valori per `dwVal`, vale a dire, `SCC_OPT_EQ_ENABLE` e `SCC_OPT_EQ_DISABLE`.  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Se il valore per `nOption` è `SCC_OPT_HASCANCELMODE`, l'IDE consente agli utenti di annullare l'esecuzione di operazioni lunghe. Impostazione `dwVal` a `SCC_OPT_HCM_NO` (predefinito) indica che l'IDE non possiede alcuna modalità di annullamento. Se desidera che l'utente sia in grado di annullare, il plug-in controllo del codice sorgente deve offrire il proprio pulsante Annulla. `SCC_OPT_HCM_YES`indica che l'IDE offre la possibilità di annullare un'operazione, pertanto il plug-in controllo del codice sorgente non è necessario visualizzare un pulsante Annulla. Se l'IDE imposta `dwVal` a `SCC_OPT_HCM_YES`, si è pronti a `SCC_MSG_STATUS` e `DOCANCEL` i messaggi inviati al `lpTextOutProc` funzione di callback (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Se l'IDE non impostare questa variabile, il plug-in non devono inviare questi due messaggi.  
+ Se il valore per `nOption` è `SCC_OPT_HASCANCELMODE`, l'IDE consente agli utenti di annullare l'esecuzione di operazioni lunghe. Impostazione `dwVal` a `SCC_OPT_HCM_NO` (predefinito) indica che l'IDE non possiede alcuna modalità di annullamento. Se desidera che l'utente sia in grado di annullare, il plug-in controllo del codice sorgente deve offrire il proprio pulsante Annulla. `SCC_OPT_HCM_YES` indica che l'IDE offre la possibilità di annullare un'operazione, pertanto questo strumento consente di plug-in non è necessario visualizzare il relativo pulsante Annulla. Se l'IDE imposta `dwVal` a `SCC_OPT_HCM_YES`, si è pronti a `SCC_MSG_STATUS` e `DOCANCEL` i messaggi inviati al `lpTextOutProc` funzione di callback (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Se l'IDE non impostare questa variabile, il plug-in non devono inviare questi due messaggi.  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  Se nOption è impostata su `SCC_OPT_NAMECHANGEPFN`, sia l'origine e plug-in controllo e l'IDE lo consentono, il plug-in effettivamente rinominare o spostare un file durante un'operazione di controllo del codice sorgente. Il `dwVal` verrà impostato su un puntatore a funzione di tipo [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Durante un'operazione di controllo del codice sorgente, il plug-in può chiamare questa funzione, il passaggio di tre parametri. Questi sono il nome esistente (con il percorso completo) di un file, il nuovo nome (con il percorso completo) del file e un puntatore alle informazioni che sono pertinente per l'IDE. L'IDE invia in questo ultimo puntatore chiamando `SccSetOption` con `nOption` impostato su `SCC_OPT_USERDATA`, con `dwVal` che punta ai dati. Supporto per questa funzione è facoltativo. Un plug VSSCI-che utilizza questa possibilità deve inizializzare le variabili di dati utente e puntatore funzione per `NULL`, e non deve chiamare una funzione rename a meno che non abbia ricevuto uno. Deve inoltre essere preparata per contenere il valore specificato o per modificare le impostazioni in risposta a una nuova chiamata a `SccSetOption`. Questa operazione non verrà eseguita all'interno di un'operazione di comando di controllo codice sorgente, ma potrebbe verificarsi tra i comandi.  

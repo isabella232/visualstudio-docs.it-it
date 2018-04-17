@@ -1,27 +1,23 @@
 ---
 title: Sottotipi di progetto progettazione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Sottotipi di progetto
 Sottotipi di progetto consentono VSPackage estendono progetti basati su Microsoft Build Engine (MSBuild). L'utilizzo di aggregazioni consente di riutilizzare la maggior parte del sistema del progetto principale gestite implementata in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ancora comunque personalizzare il comportamento per un determinato scenario.  
@@ -63,11 +59,11 @@ Sottotipo di progetto più livelli
  Un'aggregazione sottotipo di progetto a più livelli è costituito da tre livelli, un progetto di base, che viene aggregato da un sottotipo di progetto, quindi ulteriormente aggregati da un sottotipo avanzate del progetto. Nella figura illustra alcune delle interfacce che vengono fornite come parte del supporto di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] architettura sottotipo del progetto.  
   
 ##### <a name="deployment-mechanisms"></a>Meccanismi di distribuzione  
- Tra tanti di base del sistema di progetto migliorate mediante un sottotipo di progetto le funzionalità sono meccanismi di distribuzione. Un sottotipo del progetto influisce sui meccanismi di distribuzione mediante l'implementazione di interfacce di configurazione (ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) che vengono recuperati tramite una chiamata QueryInterface sul <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. In uno scenario in cui sia il sottotipo di progetto e il sottotipo avanzate del progetto aggiungere implementazioni diverse di configurazione, il progetto di base chiama `QueryInterface` il sottotipo di progetto avanzate `IUnknown`. Se il sottotipo di progetto interna contiene l'implementazione di configurazione che richiede un tipo di progetto di base, il sottotipo di progetto avanzate delega per l'implementazione fornita per il sottotipo di progetto interna. Come un meccanismo per rendere persistente lo stato dal livello di uno aggregazione a altro, tutti i livelli dei sottotipi di progetto implementano <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> in modo permanente non compilazione correlati dati XML nei file di progetto. Per ulteriori informazioni, vedere [persistenza dei dati nel File di progetto MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>viene implementato come un meccanismo per recuperare i sottotipi di progetto di Extender di automazione.  
+ Tra tanti di base del sistema di progetto migliorate mediante un sottotipo di progetto le funzionalità sono meccanismi di distribuzione. Un sottotipo del progetto influisce sui meccanismi di distribuzione mediante l'implementazione di interfacce di configurazione (ad esempio <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) che vengono recuperati tramite una chiamata QueryInterface sul <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. In uno scenario in cui sia il sottotipo di progetto e il sottotipo avanzate del progetto aggiungere implementazioni diverse di configurazione, il progetto di base chiama `QueryInterface` il sottotipo di progetto avanzate `IUnknown`. Se il sottotipo di progetto interna contiene l'implementazione di configurazione che richiede un tipo di progetto di base, il sottotipo di progetto avanzate delega per l'implementazione fornita per il sottotipo di progetto interna. Come un meccanismo per rendere persistente lo stato dal livello di uno aggregazione a altro, tutti i livelli dei sottotipi di progetto implementano <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> in modo permanente non compilazione correlati dati XML nei file di progetto. Per ulteriori informazioni, vedere [persistenza dei dati nel File di progetto MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> viene implementato come un meccanismo per recuperare i sottotipi di progetto Extender di automazione.  
   
  Nella figura seguente è incentrata sull'implementazione di extender di automazione, l'oggetto di esplorazione di configurazione di progetto, in particolare, utilizzato da sottotipi di progetto per estendere il sistema di progetto di base.  
   
- ![Rappresentazione grafica di Extender automatico delle caratteristiche progetto VS](../../extensibility/internals/media/vs_projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
+ ![Rappresentazione dell'Extender automatico gusto di progetto Visual Studio](../../extensibility/internals/media/vs_projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
 Estensione di automazione sottotipo di progetto.  
   
  Sottotipi di progetto è possono estendere ulteriormente il sistema del progetto di base estendendo il modello oggetto di automazione. Questi sono definiti come parte dell'oggetto di automazione DTE e vengono utilizzati per estendere l'oggetto di progetto, il `ProjectItem` oggetto e `Configuration` oggetto. Per ulteriori informazioni, vedere [estendendo il modello a oggetti del progetto di Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  

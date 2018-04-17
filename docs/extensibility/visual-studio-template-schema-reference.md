@@ -1,27 +1,25 @@
 ---
 title: Riferimenti dello Schema dei modelli di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb289f6ca65887433cbdb7dee65333ea31060097
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08e0758638bbb73cb999fb6b8aba2f195b603b42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-template-schema-reference"></a>Riferimenti allo schema dei modelli di Visual Studio
 In questa sezione vengono fornite informazioni sugli elementi XML nei file .vstemplate, ovvero i file nei quali sono archiviati i metadati per i modelli di progetto, i modelli di elemento e gli starter kit.  
@@ -30,7 +28,7 @@ In questa sezione vengono fornite informazioni sugli elementi XML nei file .vste
   
 |Elemento|Elementi figlio|Attributi|  
 |-------------|--------------------|----------------|  
-|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|nessuno|nessuno|  
+|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Nessuno|Nessuno|  
 |[Assembly (modello)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|  
 |[Assembly (estensione della creazione guidata)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|  
@@ -56,7 +54,7 @@ In questa sezione vengono fornite informazioni sugli elementi XML nei file .vste
 |[PreviewImage](../extensibility/previewimage-element-visual-studio-templates.md)|--|--|  
 |[Progetto](../extensibility/project-element-visual-studio-templates.md)|Cartella<br /><br /> ProjectItem|File<br /><br /> TargetFileName<br /><br /> ReplaceParameters|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|--|  
-|[ProjectItem (modelli di elemento)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Sottotipo<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|  
+|[ProjectItem (modelli di elementi)](../extensibility/projectitem-element-visual-studio-item-templates.md)|--|Sottotipo<br /><br /> CustomTool<br /><br /> ItemType<br /><br /> ReplaceParameters<br /><br /> TargetFileName|  
 |[ProjectItem (modelli di progetto)](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|  
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|  
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ProjectName|  

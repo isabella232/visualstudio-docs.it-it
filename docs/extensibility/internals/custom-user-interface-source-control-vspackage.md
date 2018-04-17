@@ -1,26 +1,24 @@
 ---
 title: Interfaccia utente personalizzata (origine controllo VSPackage) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaccia utente personalizzata (origine controllo VSPackage)
 Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefinito tramite il file di Visual Studio Command Table (vsct). Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) consente di visualizzare le voci di menu negli stati predefiniti finché non viene caricato il pacchetto VSPackage. Successivamente, il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo viene chiamato per abilitare o disabilitare le voci di menu.  
@@ -49,7 +47,7 @@ Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefinito t
   
  Obbligatorio <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, e anche eventuali interfacce facoltative associate al controllo del codice sorgente, non vengono chiamati quando il controllo del codice sorgente VSPackage è inattivo.  
   
- Quando il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] avvio IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] imposta il contesto del comando dell'interfaccia utente per l'ID del controllo origine predefinita corrente ID del pacchetto VSPackage. In questo modo l'interfaccia utente statico del controllo origine attiva VSPackage venga visualizzato nell'IDE senza effettivamente caricare il pacchetto VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]viene sospeso per il pacchetto VSPackage registrare con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> prima delle chiamate a VSPackage.  
+ Quando il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] avvio IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] imposta il contesto del comando dell'interfaccia utente per l'ID del controllo origine predefinita corrente ID del pacchetto VSPackage. In questo modo l'interfaccia utente statico del controllo origine attiva VSPackage venga visualizzato nell'IDE senza effettivamente caricare il pacchetto VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene sospeso per il pacchetto VSPackage per registrarsi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> prima effettua le chiamate al pacchetto VSPackage.  
   
  La tabella seguente descrive i dettagli specifici su come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE nasconde gli elementi dell'interfaccia utente diversi.  
   

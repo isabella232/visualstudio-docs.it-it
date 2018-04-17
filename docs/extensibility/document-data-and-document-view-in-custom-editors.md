@@ -1,27 +1,23 @@
 ---
 title: Dati del documento e documento della visualizzazione in un editor personalizzato | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb445ca70ac74cf2601e9f1035549bb686fca798
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dati del documento e visualizzazione del documento in un editor personalizzato
 Un editor personalizzato è costituito da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggeriscono i nomi, l'oggetto dati del documento rappresenta i dati di testo da visualizzare e l'oggetto visualizzazione del documento (o "view") rappresenta una o più finestre in cui visualizzare l'oggetto dati del documento.  
@@ -29,9 +25,9 @@ Un editor personalizzato è costituito da due parti: un oggetto dati del documen
 ## <a name="document-data-object"></a>Oggetto dati del documento  
  Un oggetto dati del documento è una rappresentazione di dati di testo nel buffer di testo. È un oggetto COM che consente di archiviare il testo del documento e altre informazioni, gestisce la persistenza di documento e Abilita più visualizzazioni dei dati. Per altre informazioni, vedere  
   
- <xref:EnvDTE80.Window2.DocumentData%2A>e [finestre dei documenti](../extensibility/internals/document-windows.md).  
+ <xref:EnvDTE80.Window2.DocumentData%2A> e [finestre dei documenti](../extensibility/internals/document-windows.md).  
   
- Editor personalizzati e finestre di progettazione è possibile scegliere di usare il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto o i propri buffer personalizzato. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>segue il modello di incorporamento semplificato per un editor standard, supporta più viste e fornisce interfacce eventi che consentono di gestire più viste.  
+ Editor personalizzati e finestre di progettazione è possibile scegliere di usare il <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto o i propri buffer personalizzato. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> segue il modello di incorporamento semplificato per un editor standard, supporta più viste e fornisce interfacce eventi che consentono di gestire più viste.  
   
 ## <a name="document-view-object"></a>Oggetto visualizzazione del documento  
  Una finestra che consente di visualizzare codice e altro testo è noto come un documento o una vista. Quando si crea un editor, è possibile scegliere una singola visualizzazione, in cui viene visualizzato il testo in una singola finestra o una vista più, in cui viene visualizzato il testo in più di una finestra. La scelta dipende dall'applicazione. Ad esempio, se è necessario side-by-side di modifica, selezionare visualizzazione di più. Ogni visualizzazione è associata a una voce in integrato dell'ambiente di sviluppo (IDE) in esecuzione la tabella document (RDT). Windows vista appartiene a un progetto o un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto.  

@@ -1,27 +1,23 @@
 ---
 title: Motore di Debug di registrazione personalizzato | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50903d9b45828725da03c0fcb0db0f08d7f884eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 99ff41f116e569baaae312acd17408928a6c79f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrazione di un motore di Debug personalizzati
 Il motore di debug deve registrarsi come una class factory segue le convenzioni COM, nonché registrare con Visual Studio tramite la sottochiave del Registro di sistema di Visual Studio.  
@@ -32,7 +28,7 @@ Il motore di debug deve registrarsi come una class factory segue le convenzioni 
 ## <a name="dll-server-process"></a>Processo del Server di DLL  
  In genere, un motore di debug viene implementato nella propria DLL come server COM. Ciò significa che il motore di debug deve registrarsi il CLSID della relativa class factory COM prima di Visual Studio è possibile accedervi. Quindi il motore di debug deve registrarsi con Visual Studio per poter valutare tutte le proprietà, in caso contrario denominata anche metriche, il debug supporta del motore. La scelta delle metriche vengono scritti nella sottochiave del Registro di sistema di Visual Studio per il motore di debug dipende dalle funzionalità che supporta il motore di debug.  
   
- [Helper di SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) descrive non solo le posizioni del Registro di sistema necessarie per la registrazione di un motore di debug; vengono inoltre descritte la libreria dbgmetric.lib, che contiene un numero di funzioni utili e le dichiarazioni per gli sviluppatori di C++ che rendono la modifica del Registro di sistema più semplice.  
+ [Gli helper di SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) descrive non solo le posizioni del Registro di sistema necessarie per registrare un motore di debug; vengono inoltre descritte la libreria dbgmetric.lib, che contiene un numero di funzioni utili e le dichiarazioni per gli sviluppatori di C++ che rendono la modifica del Registro di sistema più semplice.  
   
 ### <a name="example"></a>Esempio  
  Ecco un esempio tipico (tratto dall'esempio TextInterpreter) in cui viene illustrato come utilizzare il `SetMetric` funzione (dbgmetric.lib), per registrare un motore di debug con Visual Studio. Le metriche passate sono definite anche nel dbgmetric.lib.  

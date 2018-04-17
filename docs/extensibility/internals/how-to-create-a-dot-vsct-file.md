@@ -1,27 +1,23 @@
 ---
 title: 'Procedura: creare una. Il File Vsct | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64d9b35030a18a6258de52ed0f12f9796044ba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c6456b0b866f08956862fa197719354bedf0ecf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: creare una. File Vsct  
   
@@ -55,7 +51,7 @@ Esistono diversi modi per creare un file di configurazione (con estensione vsct)
   
      Verrà creato un file con estensione vsct base.  
   
-8.  Inserire gli elementi del file XML che si desidera aggiungere, in base al [VSCT Schema](../../extensibility/vsct-xml-schema-reference.md). Per ulteriori informazioni, vedere [creazione e modifica. File Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8.  Inserire gli elementi del file XML che si desidera aggiungere, in base al [VSCT Schema](../../extensibility/vsct-xml-schema-reference.md). Per altre informazioni, vedere [creazione e modifica. File Vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
@@ -102,9 +98,9 @@ Esistono diversi modi per creare un file di configurazione (con estensione vsct)
   
 3.  Nel prompt dei comandi di Visual Studio, passare alla directory che contiene i file con estensione cto e ctsym.  
   
-4.  Digitare **vsct.exe** *ctofilename***.cto** *vsctfilename***.vsct -S***symfilename***.ctsym**.  
+4.  Tipo di **vsct.exe** *ctofilename * * * CTO** * vsctfilename***vsct -S***symfilename ***ctsym**.  
   
-     `ctofilename`è il nome del file CTO, `vsctfilename` è il nome del file vsct che si desidera creare, e `symfilename` è il nome del file ctsym.  
+     `ctofilename` è il nome del file CTO `vsctfilename` è il nome del file vsct che si desidera creare, e `symfilename` è il nome del file ctsym.  
   
      Questo processo crea un nuovo file del compilatore della tabella comandi XML con estensione vsct. È possibile modificare e compilare il file con vsct.exe, il compilatore vsct, come si farebbe con qualsiasi altro file VSCT.  
   

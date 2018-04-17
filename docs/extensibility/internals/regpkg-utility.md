@@ -1,26 +1,24 @@
 ---
-title: "Utilità RegPkg | Documenti Microsoft"
-ms.custom: 
+title: Utilità RegPkg | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c4a4a3481b6ff1a5b8af0581e2c04602073adeae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d677aaf155e533c27a775f3995b53dd59b65385
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="regpkg-utility"></a>Utilità RegPkg
 > [!NOTE]
@@ -39,7 +37,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /root:root  
  Esegue la registrazione con il nome specificato  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]radice.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] radice.  
   
  /regfile:filename  
  Crea un file con estensione reg, anziché aggiornare il Registro di sistema.  Non può essere utilizzato con /vrgfile o /rgsfile o /wixfile.  

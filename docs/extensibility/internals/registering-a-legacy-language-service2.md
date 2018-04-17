@@ -1,27 +1,25 @@
 ---
 title: Registrazione di un Service2 Language Legacy | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrazione di un servizio di linguaggio Legacy
 Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per la lingua di varie opzioni di servizio disponibile in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per la li
   
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  
-|(Predefinito)|REG_SZ|*\<GUID >*|GUID del servizio di linguaggio.|  
+|(Predefinito)|REG_SZ|*\<GUID &GT;*|GUID del servizio di linguaggio.|  
 |LangResID|REG_DWORD|0x0-0xffff|Identificatore di risorsa (ResID) per il nome di testo localizzato del linguaggio della stringa.|  
-|Pacchetto|REG_SZ|*\<GUID >*|GUID del pacchetto VSPackage.|  
+|Pacchetto|REG_SZ|*\<GUID &GT;*|GUID del pacchetto VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Specifica se il **il completamento delle istruzioni** opzioni il **opzioni** la finestra di dialogo sono abilitati.|  
 |ShowSmartIndent|REG_DWORD|0-1|Specifica se l'opzione per selezionare **Smart** rientri nel **opzioni** è attivata la finestra di dialogo.|  
 |RequestStockColors|REG_DWORD|0-1|Specifica se personalizzato o vengono utilizzati i colori predefiniti per le parole chiave di colore.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nome della scheda della casella degli strumenti per impostare come predefinito quando l'editor è attivo.|  
 |DisplayName|REG_SZ|resID|Nome da visualizzare nel **Apri con** la finestra di dialogo. Il nome è un nome o l'ID della risorsa stringa in formato standard.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Utilizzato per il **Apri con** comando di menu. Se si desidera elencare l'editor di testo predefinito nell'elenco degli editor disponibili per un tipo di file specifico, impostare questo valore su 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|Utilizzato per qualsiasi servizio di linguaggio che è possibile aprire un file con il supporto di tabella codici. Ad esempio, quando si apre un file con estensione txt utilizzando il **Apri con** comando, sono disponibili le opzioni per l'utilizzo di editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato nel nome della sottochiave è per factory editor tabella codici. il GUID collegato specificato in questa voce del Registro di sistema è per la factory editor regolari. Lo scopo di questa voce è che se l'IDE non si apre un file utilizzando l'editor predefinito, l'IDE tenterà di utilizzare l'editor successiva nell'elenco. Questo editor successivo non deve essere la factory editor tabella codici perché questa factory editor è fondamentalmente lo stesso come il factory editor che non è riuscita.|  
-|Pacchetto|REG_SZ|*\<GUID >*|GUID VSPackage ResID del nome visualizzato.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Utilizzato per qualsiasi servizio di linguaggio che è possibile aprire un file con il supporto di tabella codici. Ad esempio, quando si apre un file con estensione txt utilizzando il **Apri con** comando, sono disponibili le opzioni per l'utilizzo di editor del codice sorgente con e senza codifica.<br /><br /> Il GUID specificato nel nome della sottochiave è per factory editor tabella codici. il GUID collegato specificato in questa voce del Registro di sistema è per la factory editor regolari. Lo scopo di questa voce è che se l'IDE non si apre un file utilizzando l'editor predefinito, l'IDE tenterà di utilizzare l'editor successiva nell'elenco. Questo editor successivo non deve essere la factory editor tabella codici perché questa factory editor è fondamentalmente lo stesso come il factory editor che non è riuscita.|  
+|Pacchetto|REG_SZ|*\<GUID &GT;*|GUID VSPackage ResID del nome visualizzato.|  
   
 ### <a name="example"></a>Esempio  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  
 |(Predefinito)|REG_SZ||Non usato.|  
-|*\<GUID >*|REG_SZ|""|Chiave per la logiche visualizzazioni supportate. Può avere come molti di questi, in base alle esigenze. Il nome della voce del Registro di sistema è importante, non il valore, è sempre una stringa vuota.|  
+|*\<GUID &GT;*|REG_SZ|""|Chiave per la logiche visualizzazioni supportate. Può avere come molti di questi, in base alle esigenze. Il nome della voce del Registro di sistema è importante, non il valore, è sempre una stringa vuota.|  
   
 ### <a name="example"></a>Esempio  
   

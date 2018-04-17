@@ -1,23 +1,21 @@
 ---
 title: Gli analizzatori di Roslyn e compatibile con codice di libreria per ImmutableArrays | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Gli analizzatori di Roslyn e compatibile con codice di libreria per ImmutableArrays
 
@@ -28,8 +26,8 @@ Il [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") consent
 È necessario quanto segue per compilare questo esempio:
 
 * Visual Studio 2015 (non una versione Express Edition) o versione successiva.  È possibile utilizzare la versione gratuita [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  È inoltre possibile, quando si installa Visual Studio, verificare gli strumenti di estendibilità di Visual Studio in strumenti comuni per installare il SDK allo stesso tempo.  Se già stato installato Visual Studio, è anche possibile installare questo SDK, passare al menu principale **File &#124; Nuovo &#124; Progetto...** , scegliendo c# nel riquadro di spostamento a sinistra e quindi estendibilità.  Quando si sceglie il "**installare strumenti di estendibilità di Visual Studio**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK.
-* [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  È inoltre possibile installare questo SDK, passare al menu principale **File &#124; Nuovo &#124; Progetto...** , scegliendo **c#** nel riquadro di spostamento a sinistra e quindi scegliere **estendibilità**.  Quando si sceglie "**scaricare il SDK della piattaforma del compilatore .NET**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK.  Questo SDK include il [Roslyn sintassi Visualizzatore](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  In questo modo, strumento estremamente utile capire quali tipi di modello di codice deve cercare nell'analizzatore.  Le chiamate di infrastruttura analyzer nel codice per tipi di modello di codice specifico, in modo che il codice solo viene eseguito quando necessario e possibile concentrarsi solo sull'analisi codice pertinente.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  È inoltre possibile, quando si installa Visual Studio, verificare gli strumenti di estendibilità di Visual Studio in strumenti comuni per installare il SDK allo stesso tempo.  Se è già stato installato Visual Studio, è anche possibile installare questo SDK, passare al menu principale **File &#124; nuovo &#124;progetto...** , scegliendo c# nel riquadro di spostamento a sinistra e quindi estendibilità.  Quando si sceglie il "**installare strumenti di estendibilità di Visual Studio**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK.
+* [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  È inoltre possibile installare questo SDK, passare al menu principale **File &#124; nuovo &#124; progetto...** , scegliendo **c#** nel riquadro di spostamento a sinistra e quindi scegliere **estendibilità**.  Quando si sceglie "**scaricare il SDK della piattaforma del compilatore .NET**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK.  Questo SDK include il [Roslyn sintassi Visualizzatore](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  In questo modo, strumento estremamente utile capire quali tipi di modello di codice deve cercare nell'analizzatore.  Le chiamate di infrastruttura analyzer nel codice per tipi di modello di codice specifico, in modo che il codice solo viene eseguito quando necessario e possibile concentrarsi solo sull'analisi codice pertinente.
 
 ## <a name="whats-the-problem"></a>Qual è il problema?
 
@@ -59,13 +57,13 @@ L'errore con inizializzatori di raccolta si verifica perché il metodo Immutable
 
 ## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Ricerca di tipi di nodo sintassi pertinente per attivare l'analizzatore
 
- Per iniziare a creare l'analizzatore, innanzitutto determinare il tipo di SyntaxNode si desidera cercare. Avviare il Visualizzatore sintassi dal menu **View &#124; Altri Windows &#124; Visualizzatore Roslyn sintassi**.
+ Per iniziare a creare l'analizzatore, innanzitutto determinare il tipo di SyntaxNode si desidera cercare. Avviare il Visualizzatore di sintassi dal menu **View &#124; altre finestre &#124; Roslyn sintassi Visualizzatore**.
 
 Posizionare il cursore dell'editor della riga che dichiara `b1`.  Si noterà che il Visualizzatore sintassi Mostra incluso in un `LocalDeclarationStatement` nodo della struttura di sintassi.  Questo nodo ha un `VariableDeclaration`, che a sua volta ha un `VariableDeclarator`, che a sua volta ha un `EqualsValueClause`e infine è disponibile un `ObjectCreationExpression`.  Quando fa clic nella struttura della sintassi visualizzatore dei nodi, la sintassi nella finestra dell'editor evidenzia per visualizzare il codice rappresentato da tale nodo.  I nomi dei tipi di sub SyntaxNode corrispondere i nomi utilizzati nella grammatica del linguaggio c#.
 
 ## <a name="creating-the-analyzer-project"></a>Creazione del progetto Analyzer
 
-Nel menu principale scegliere **File &#124; Nuovo &#124; Progetto...** .  Nel **nuovo progetto** finestra di dialogo, in **c#** progetti nella barra di spostamento a sinistra, scegliere estendibilità e nel riquadro destro scegliere il **Analyzer con codice correggere** progetto modello.  Immettere un nome e la finestra di dialogo di conferma.
+Nel menu principale scegliere **File &#124; nuovo &#124; progetto...** .  Nel **nuovo progetto** finestra di dialogo, in **c#** progetti nella barra di spostamento a sinistra, scegliere estendibilità e nel riquadro destro scegliere il **Analyzer con codice correggere** progetto modello.  Immettere un nome e la finestra di dialogo di conferma.
 
 Il modello verrà aperto un file DiagnosticAnalyzer.cs.  Scegliere l'editor in questione come scheda di buffer.  Questo file contiene una classe analyzer (formato assegnato dal nome del progetto) che deriva da `DiagnosticAnalyzer` (un tipo di Roslyn API).  La nuova classe ha un `DiagnosticAnalyzerAttribute` dichiarando l'analizzatore è rilevante per il linguaggio c# in modo che il compilatore individua e carica l'analizzatore.
 
@@ -136,9 +134,9 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 Le righe di codice con `ImmutableArray` avere linee a zigzag, perché è necessario ottenere il pacchetto NuGet non modificabile e aggiungere un `using` istruzione al codice.  Premere il pulsante destro del puntatore sul nodo del progetto nel **Esplora** e scegliere **Gestisci pacchetti NuGet...** .  In Gestione NuGet, digitare "Immutabile" nella casella di ricerca e scegliere l'elemento "Immutable" (non si sceglie "Immutable") nel riquadro sinistro e premere il pulsante installa nel riquadro di destra.  Il pacchetto di installazione aggiunge un riferimento ai riferimenti del progetto.
 
-Viene comunque visualizzato sottolineature rosse sotto `ImmutableArray`, quindi posizionare il cursore nell'identificatore e premere **CTRL +.** (punto) per visualizzare il menu di correzione suggerita e scegliere di aggiungere appropriata `using` istruzione.
+Viene comunque visualizzato le sottolineature rosse sotto `ImmutableArray`, pertanto, posizionare il cursore nell'identificatore e premere **CTRL +.** (punto) per visualizzare il menu di correzione suggerita e scegliere di aggiungere appropriata `using` istruzione.
 
-**Salvare e chiudere** la seconda istanza di Visual Studio per il momento di inserire in uno stato pulito per continuare.
+**Salva tutto e chiudere** la seconda istanza di Visual Studio per il momento di inserire in uno stato pulito per continuare.
 
 ## <a name="finishing-the-analyzer-using-edit-and-continue"></a>Terminare l'analizzatore utilizzando Modifica e continuazione
 
@@ -165,7 +163,7 @@ Il modello semantico presenta molte operazioni utili che consentono di porre dom
 
 È possibile trascinare il puntatore di esecuzione giallo sul lato sinistro della finestra dell'editor.  Trascinarlo fino alla riga che imposta il `objectCreation` variabile ed Esegui istruzione/routine di nuova riga di codice usando **F10**.  Se si posiziona il puntatore del mouse sulla variabile `immutableArrayOfType`, vedrai che è stato rilevato il tipo esatto nel modello semantico.
 
-**Ottenere il tipo dell'espressione di creazione oggetto.** "Tipo" viene usato in vari modi in questo articolo, ma questo significa che se è "Foo nuovo" espressione, è necessario ottenere un modello di Foo.  È necessario ottenere il tipo dell'espressione di creazione oggetto per verificare se è ImmutableArray\<T > tipo.  Utilizzare il modello semantico nuovamente per ottenere informazioni sui simboli per il simbolo di tipo (ImmutableArray) nell'espressione di creazione oggetto.  Immettere la seguente riga di codice alla fine della funzione:
+**Ottenere il tipo dell'espressione per la creazione di oggetti.** "Tipo" viene usato in vari modi in questo articolo, ma questo significa che se è "Foo nuovo" espressione, è necessario ottenere un modello di Foo.  È necessario ottenere il tipo dell'espressione di creazione oggetto per verificare se è ImmutableArray\<T > tipo.  Utilizzare il modello semantico nuovamente per ottenere informazioni sui simboli per il simbolo di tipo (ImmutableArray) nell'espressione di creazione oggetto.  Immettere la seguente riga di codice alla fine della funzione:
 
 ```csharp
 var symbolInfo = context.SemanticModel.GetSymbolInfo(objectCreation.Type).Symbol as INamedTypeSymbol;
@@ -181,7 +179,7 @@ if (symbolInfo != null &&
 {}
 ```
 
-**Report di diagnostica.** La diagnostica di Reporting è piuttosto semplice.  Utilizzare la regola creata nel modello di progetto, definito prima il metodo Initialize.  Poiché questa situazione nel codice non è un errore, è possibile modificare la riga che inizializzato regola sostituire `DiagnosticSeverity.Warning` (linee a zigzag verde) con `DiagnosticSeverity.Error` (sottolineatura ondulata rossa).  Il resto della regola Inizializza le risorse che nella parte iniziale della procedura dettagliata è stato modificato.  È necessario anche il percorso per linee a zigzag, ovvero la posizione della specifica del tipo dell'espressione di creazione oggetto del report.  Immettere il codice di `if` blocco:
+**Report diagnostica.** La diagnostica di Reporting è piuttosto semplice.  Utilizzare la regola creata nel modello di progetto, definito prima il metodo Initialize.  Poiché questa situazione nel codice non è un errore, è possibile modificare la riga che inizializzato regola sostituire `DiagnosticSeverity.Warning` (linee a zigzag verde) con `DiagnosticSeverity.Error` (sottolineatura ondulata rossa).  Il resto della regola Inizializza le risorse che nella parte iniziale della procedura dettagliata è stato modificato.  È necessario anche il percorso per linee a zigzag, ovvero la posizione della specifica del tipo dell'espressione di creazione oggetto del report.  Immettere il codice di `if` blocco:
 
 ```csharp
 context.ReportDiagnostic(Diagnostic.Create(Rule, objectCreation.Type.GetLocation()));
@@ -268,7 +266,7 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-È necessario posizionare il cursore dell'editor nell'identificatore di `CodeAction`, quindi utilizzare **CTRL +.** (punto) per aggiungere le istruzioni `using` istruzione per questo tipo.
+È necessario posizionare il cursore dell'editor nell'identificatore `CodeAction`, quindi utilizzare **CTRL +.** (punto) per aggiungere le istruzioni `using` istruzione per questo tipo.
 
 Quindi posizionare il cursore dell'editor nel `ChangeToImmutableArrayEmpty` identificatore e utilizzare **CTRL +.** per generare questo stub del metodo per l'utente.
 
@@ -304,7 +302,7 @@ Successivamente, il metodo recupera la radice del documento e, poiché ciò può
 
 È ora possibile premere **F5** per eseguire l'analizzatore in una seconda istanza di Visual Studio.  Aprire il progetto console usata in precedenza.  Ora dovrebbero apparire la lampadina in cui l'espressione di creazione del nuovo oggetto è per `ImmutableArray<int>`.  Se si preme **CTRL +.** (periodo), quindi verrà visualizzato il codice correggere, per visualizzare un'anteprima di differenza del codice generato automaticamente nella lampadina dell'interfaccia utente.  Roslyn crea automaticamente questo.
 
-**Il suggerimento Pro:** se si avvia la seconda istanza di Visual Studio, non viene visualizzata la lampadina con la correzione del codice, quindi potrebbe essere necessario cancellare la cache dei componenti di Visual Studio.  Cancellazione della cache impone a Visual Studio per esaminare nuovamente i componenti, in modo da Visual Studio deve quindi prelevare il componente più recente.  In primo luogo, arrestare la seconda istanza di Visual Studio.  In Esplora risorse, passare alla directory dell'utente (c:\users\\< userid\>) e individuare AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\.  In questa directory, eliminare la directory di sub ComponentModelCache.  Le modifiche alla versione con Visual Studio "14".
+**Suggerimento Pro:** se si avvia la seconda istanza di Visual Studio, non viene visualizzata la lampadina con la correzione del codice, quindi potrebbe essere necessario cancellare la cache dei componenti di Visual Studio.  Cancellazione della cache impone a Visual Studio per esaminare nuovamente i componenti, in modo da Visual Studio deve quindi prelevare il componente più recente.  In primo luogo, arrestare la seconda istanza di Visual Studio.  In Esplora risorse, passare alla directory dell'utente (c:\users\\< userid\>) e individuare AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\.  In questa directory, eliminare la directory di sub ComponentModelCache.  Le modifiche alla versione con Visual Studio "14".
 
 ## <a name="talk-video-and-finish-code-project"></a>Video di conversazione e il progetto di codice di fine
 
@@ -314,7 +312,7 @@ Successivamente, il metodo recupera la radice del documento e, poiché ciò può
 
 ## <a name="see-also"></a>Vedere anche
 
-* [\\Parlare \Build 2015](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\Talk \Build 2015](http://channel9.msdn.com/events/Build/2015/3-725)
 * [Codice completato su GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Alcuni esempi su GitHub, raggruppati in tre tipi di analizzatori](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Altri documenti nel sito di SharePoint Server GitHub](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

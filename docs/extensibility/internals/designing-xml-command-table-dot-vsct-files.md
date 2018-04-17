@@ -1,27 +1,23 @@
 ---
 title: Progettazione tabella comandi XML (. File Vsct) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcb8533dda001d447fd10fcb69b3cccd6d2d91a1
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 865baa3f7b4b0fe4cbbaf2cdf34e9e8041d5c121
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Progettazione tabella comandi XML (. File Vsct)
 Un file di tabella (vsct) del comando XML descrive il layout e l'aspetto degli elementi di comando per un pacchetto VSPackage. Gli elementi di comando includono pulsanti, caselle combinate, menu, barre degli strumenti e gruppi di elementi di comando. Questo argomento descrive XML file tabella di comando, loro influenza menu e voci di comando e come crearli.
@@ -123,7 +119,7 @@ Un file di tabella (vsct) del comando XML descrive il layout e l'aspetto degli e
 
  Durante lo sviluppo, è possibile per più progetti di VSPackage essere creato e registrato nell'hive del Registro di sistema sperimentale che può causare confusione confusione nell'IDE. Per risolvere questo problema, è possibile reimpostare l'hive sperimentale per le impostazioni predefinite per rimuovere registrati tutti i pacchetti VSPackage e le modifiche apportate all'IDE. Per ripristinare l'hive sperimentale, utilizzare lo strumento CreateExpInstance.exe fornito con Visual Studio SDK. È possibile trovare in
 
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
+ **% PROGRAMFILES (x86) %\Visual Studio \<versione > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
 
  Eseguire lo strumento da riga di comando **CreateExpInstance /Reset**. Tenere presente che questo strumento consente di rimuovere dall'hive sperimentale i package VS registrati che normalmente non vengono installati con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 

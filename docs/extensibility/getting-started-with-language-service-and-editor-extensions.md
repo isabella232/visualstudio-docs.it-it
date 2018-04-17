@@ -1,27 +1,23 @@
 ---
 title: Guida introduttiva a servizio di linguaggio e le estensioni di Editor | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e36f4a6b0f8cb37a5ede782c24c7593285b7705
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Guida introduttiva a servizio di linguaggio e le estensioni di Editor
 Per aggiungere funzionalità del linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e le lampadine proprio linguaggio di programmazione o a qualsiasi tipo di contenuto, è possibile utilizzare le estensioni di editor. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio testo colorazione, margini, aree di controllo e altri elementi visivi. È inoltre possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni di testo in cui viene visualizzato il contenuto.  
@@ -70,7 +66,7 @@ Per aggiungere funzionalità del linguaggio, ad esempio la struttura, corrispond
 ## <a name="running-extensions-in-the-experimental-instance"></a>Esecuzione delle estensioni nell'istanza sperimentale  
  È possibile isolare la versione di lavoro di Visual Studio mentre si sviluppa un'estensione distribuendola nella cartella seguente sperimentale (in Windows Vista e Windows 7):  
   
- *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*aziendale*\\*ExtensionID*  
+ *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*società*\\*ExtensionID*  
   
  dove *% LOCALAPPDATA %* è il nome dell'utente connesso, *aziendale* è il nome della società che possiede l'estensione, e *ExtensionID* è l'ID dell'estensione.  
   

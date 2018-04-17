@@ -1,28 +1,26 @@
 ---
 title: Gestione dei pacchetti VSPackage | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, delayed loading
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-vspackages"></a>Gestione dei pacchetti VSPackage
 Nella maggior parte dei casi non è necessario preoccuparsi di gestione dei pacchetti VSPackage, poiché i modelli di progetto e di elemento di registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più per gestire il pacchetto.  
@@ -46,7 +44,7 @@ Nella maggior parte dei casi non è necessario preoccuparsi di gestione dei pacc
 Le estensioni possono influire soluzione e avvio del caricamento. Informazioni su modalità di calcolo impatto di estensione di Visual Studio e come è possibile analizzare in locale per verificare se un'estensione può essere visualizzata come estensione conseguenze sulle prestazioni. Per ulteriori informazioni, vedere [procedura: diagnosticare le prestazioni di estensione](how-to-diagnose-extension-performance.md). 
   
 ## <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi di VSPackage  
- Individuare le tecniche per la risoluzione dei problemi relativi a pacchetti VSPackage che non vengono caricati o segnalano errori: [VSPackage di risoluzione dei problemi](../extensibility/troubleshooting-vspackages.md)  
+ Scoprire le tecniche per la risoluzione dei problemi relativi a pacchetti VSPackage che non vengono caricati o segnalano errori: [VSPackage di risoluzione dei problemi](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pacchetti VSPackage](../extensibility/internals/vspackages.md)

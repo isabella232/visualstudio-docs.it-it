@@ -1,35 +1,33 @@
 ---
 title: 'Area test 3: Check Out-Annulla estrazione | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, checkout
 - source control plug-ins, undo checkout
 - source control [Visual Studio SDK], checking out
 - source control [Visual Studio SDK], undo checkout
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d769fdc52ac92053c258a3f82fa53cec5c56fa7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area test 3: Estrarre / Annulla estrazione
 Questa area di plug-in test di controllo del codice sorgente include gli elementi di modifica e di ripristino dall'archivio delle versioni tramite il **Estrai** e **Annulla estrazione** comandi.  
   
- **Check-Out**: i segni di un elemento nell'archivio delle versioni come estratti, modifica la copia locale di lettura/scrittura.  
+ **Check-Out**: segni di un elemento nell'archivio delle versioni in corso l'estrazione, modifica la copia locale di lettura/scrittura.  
   
- **Annullare l'estrazione**: contrassegna un elemento nell'archivio delle versioni, come archiviazione, viene ripristinata la copia locale allo stato di check-out (a seconda delle opzioni).  
+ **Annulla estrazione**: contrassegnare gli elementi nell'archivio delle versioni come archiviazione, viene ripristinata la copia locale in stato di prima il check-out (a seconda delle opzioni).  
   
 ## <a name="command-menu-access"></a>Accedere al Menu comando  
  Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vengono utilizzati percorsi menu dell'ambiente di sviluppo integrato nei test case.  
@@ -78,7 +76,7 @@ Questa area di plug-in test di controllo del codice sorgente include gli element
   
 -   Non è possibile utilizzare **Annulla estrazione** comando durante la disconnessione dall'archivio versione.  
   
--   **Condiviso Estrai** comando funziona.  
+-   **Check-Out Shared** comando works.  
   
 |Operazione|Passi di test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  

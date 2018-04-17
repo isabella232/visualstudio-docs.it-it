@@ -1,26 +1,24 @@
 ---
 title: MSSCCPRJ. File SCC | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. File SCC
 Quando una soluzione di Visual Studio o il progetto viene inserito nel controllo del codice sorgente utilizzando l'IDE, l'IDE riceve due tipi principali di informazioni dal plug-in sotto forma di stringhe di controllo del codice sorgente. Queste stringhe "AuxPath" e "ProjName", sono opache all'IDE, ma il plug-in vengono utilizzati per individuare la soluzione o il progetto nel controllo della versione. L'IDE in genere Ottiene queste stringhe la prima volta, chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e quindi li salva nel file di soluzione o il progetto per le future chiamate per il [SccOpenProject](../extensibility/sccopenproject-function.md). Quando incorporati nei file di soluzione e progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente con diramazioni fork, o copia i file di soluzione e progetto presenti nel controllo della versione. Per assicurarsi che i file di soluzione e progetto puntino nella posizione corretta nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe devono essere opaca, potrebbe non sempre essere chiaro come devono essere aggiornati.  
@@ -46,23 +44,23 @@ Quando una soluzione di Visual Studio o il progetto viene inserito nel controllo
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Un'illustrazione del MSSCCPRJ. Formato di File di controllo del codice sorgente  
  Di seguito è un esempio di MSSCCPRJ. Formato di file di controllo del codice sorgente (i numeri di riga vengono forniti solo come guida e non devono essere incluso nel corpo del file):  
   
- [Riga 1]`SCC = This is a Source Code Control file`  
+ [Riga 1] `SCC = This is a Source Code Control file`  
   
  [Riga 2]  
   
- [Riga 3]`[TestApp.sln]`  
+ [Riga 3] `[TestApp.sln]`  
   
- [Riga 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Riga 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Riga 5]`SCC_Project_Name = "$/TestApp"`  
+ [Riga 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Riga 6]  
   
- [Riga 7]`[TestApp.csproj]`  
+ [Riga 7] `[TestApp.csproj]`  
   
- [Riga 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Riga 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Riga 9]`SCC_Project_Name = "$/TestApp"`  
+ [Riga 9] `SCC_Project_Name = "$/TestApp"`  
   
  La prima riga indica lo scopo del file e viene utilizzato come la firma per tutti i file di questo tipo. Questa riga dovrebbe essere visualizzato esattamente come in MSSCCPRJ tutti. File SCC:  
   

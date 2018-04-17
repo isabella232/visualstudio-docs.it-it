@@ -1,26 +1,24 @@
 ---
 title: 'Nuova generazione del progetto: Dietro le quinte, parte 1 | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ac31f2866c6b69587f70775d5ed1245b1a2bb0a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nuova generazione del progetto: Dietro le quinte, parte 1
 Mai pensato di come creare un tipo di progetto? Chiedere a ciò che effettivamente si verifica quando si crea un nuovo progetto? Si analizzerà dietro le quinte e vedere cosa accade veramente in.  
@@ -42,7 +40,7 @@ Mai pensato di come creare un tipo di progetto? Chiedere a ciò che effettivamen
   
  ![Finestra di dialogo Nuovo progetto](../../extensibility/internals/media/newproject.gif "NewProject")  
   
- Diamo un'occhiata più vicino. Il **tipi di progetto** albero sono elencati i vari tipi di progetto è possibile creare. Quando si seleziona un tipo di progetto come **Windows Visual c#**, verrà visualizzato un elenco dei modelli di applicazione per iniziare. **Modelli di Visual Studio installati** vengono installati da Visual Studio e sono disponibili per tutti gli utenti del computer. È possibile aggiungere nuovi modelli che si crea o raccogliere per **modelli** e sono disponibili solo all'utente.  
+ Diamo un'occhiata più vicino. Il **tipi di progetto** albero sono elencati i vari tipi di progetto è possibile creare. Quando si seleziona un tipo di progetto come **Windows Visual c#**, verrà visualizzato un elenco dei modelli di applicazione per iniziare. **Modelli Visual Studio installati** installati da Visual Studio e sono disponibili per tutti gli utenti del computer in uso. È possibile aggiungere nuovi modelli che si crea o raccogliere per **modelli** e sono disponibili solo all'utente.  
   
  Quando si seleziona un modello di **applicazione Windows**, una descrizione del tipo di applicazione viene visualizzata nella finestra di dialogo, in questo caso, **un progetto per la creazione di un'applicazione con un'interfaccia utente di Windows**.  
   
@@ -76,13 +74,13 @@ devenv /installvstemplates
   
  {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC IL}  
   
- e l'ID di risorsa (valore predefinito) del nodo radice (/ 1) è &#2345;  
+ e l'ID di risorsa (valore predefinito) del nodo radice (/ 1) è 2345 #  
   
  Se si esamina la sottochiave SatelliteDll cercare il GUID della chiave di pacchetti nelle vicinanze, è possibile trovare il percorso dell'assembly che contiene la stringa di risorsa:  
   
  \<Percorso di installazione di Visual Studio > \VC#\VCSPackages\1033\csprojui.dll  
   
- Per verificarlo, aprire Esplora File e trascinare csprojui.dll nella directory di Visual Studio. Tabella di stringhe viene illustrato che risorse &#2345; contiene la didascalia **Visual c#**.  
+ Per verificarlo, aprire Esplora File e trascinare csprojui.dll nella directory di Visual Studio. Tabella di stringhe viene illustrato che risorse 2345 # contiene la didascalia **Visual c#**.  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Determina la posizione del nodo radice di **tipi di progetto** struttura ad albero.  
@@ -110,7 +108,7 @@ devenv /installvstemplates
   
  Per Visual Studio con c# le impostazioni di sviluppo, la **tipi di progetto** struttura è simile alla seguente:  
   
- ![Tipi di progetto](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
+ ![I tipi di progetto](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
  La cartella ProjectTemplates corrispondente è simile al seguente:  
   
@@ -214,7 +212,7 @@ devenv /installvstemplates
   
  ![Nodo progetto personalizzato](../../extensibility/internals/media/myprojectnode.png "nodo progetto personalizzato")  
   
- **Nodo progetto personalizzato** viene visualizzato come nodo figlio di Visual c# sotto il nodo di Windows.  
+ **Nodo progetto personalizzato** viene visualizzato come nodo figlio del Visual C# sotto il nodo di Windows.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Generazione di un nuovo progetto: dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

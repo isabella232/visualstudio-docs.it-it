@@ -1,23 +1,21 @@
 ---
 title: Le animazioni per Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a45fd22cce46cb9e43a649fb969980f42b395db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3f28e4d6f9ae1a0af060723047621b3e205d012c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali di animazione  
@@ -27,7 +25,7 @@ Seguire queste regole per garantire gli stili di animazione semplice e coerente 
   
 -   **Essere selettivi.** Limitare le animazioni a quelle utilizzate per scopi specifici.  
   
--   **Intervalli di tempo e velocità sono importanti** per garantire che le transizioni sentirsi rapido e fisica:  
+-   **Durata e velocità sono importanti** per garantire che le transizioni sentono naturale e veloce:  
   
     -   Completare le transizioni animate all'interno di mezzo secondo (500 millisecondi).  
   
@@ -45,11 +43,11 @@ Seguire queste regole per garantire gli stili di animazione semplice e coerente 
   
 -   **Solo un'animazione deve essere eseguita in un momento** e trasmettere solo una parte delle informazioni. Lo spostamento o il tentativo di comunicare più operazioni di più di un oggetto può generare confusione. 
   
--   **Abbastanza particolare è importante.** Nella maggior parte dei casi, animazione non deve necessariamente un intervento dell'utente richiesta per soddisfare lo scopo. Piccole modifiche nella temporizzazione, sequenza e il comportamento potrebbero avere un impatto significativo sul percezione di e rendere la differenza tra un'animazione efficace e inefficace.  
+-   **È importante abbastanza particolare.** Nella maggior parte dei casi, animazione non deve necessariamente un intervento dell'utente richiesta per soddisfare lo scopo. Piccole modifiche nella temporizzazione, sequenza e il comportamento potrebbero avere un impatto significativo sul percezione di e rendere la differenza tra un'animazione efficace e inefficace.  
   
 -   Quando si utilizza l'animazione per richiamare l'attenzione su un elemento **assicurarsi che vale la pena di interrompere l'utente**del flusso di concetti.  
   
--   **Quando lo stato di avanzamento o lo stato** le animazioni:  
+-   **Quando viene visualizzata avanzamento o lo stato** tramite animazione:  
   
     -   Arrestare che mostra lo spostamento di stato quando non è un avanzamento del processo sottostante. 
   
@@ -197,7 +195,7 @@ Gli indicatori di stato sono un paio di importanti vantaggi:
   
 -   Gli indicatori determinato per consentire all'utente che una certa distanza lungo l'azione viene eseguita l'operazione, nonché un senso di recupero più vicino alla fine.  
   
-##  <a name="BKMK_AnimationPatterns"></a>Modelli di animazione  
+##  <a name="BKMK_AnimationPatterns"></a> Modelli di animazione  
   
 ### <a name="overview"></a>Panoramica  
 Le animazioni in Visual Studio sono progettate per fornire una funzione specifica senza effetti negativi sulla produttività degli utenti. In genere, le animazioni in Visual Studio devono essere:  
@@ -337,7 +335,7 @@ Riordinamento di scheda
 #### <a name="rotate"></a>Ruota  
 Con questo modello, Ruota l'elemento dell'interfaccia utente.  
   
-![Animazione di rotazione di elemento dell'interfaccia utente](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202 g_Rotate")<br />Animazione di rotazione di elemento dell'interfaccia utente  
+![Animazione di rotazione elemento dell'interfaccia utente](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202 g_Rotate")<br />Animazione di rotazione di elemento dell'interfaccia utente  
   
 ##### <a name="correct-usage"></a>Utilizzo corretto  
 Solo per l'indicatore di stato rotante indeterminato.  
@@ -391,7 +389,7 @@ Indicatore di stato indeterminato (rotazione)
 -   Durata: 200 millisecondi  
   
 #### <a name="menu-open"></a>Aprirlo menu  
-![Animazione del menu aprirlo](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202 m_MenuOpen")<br />Animazione di apertura di menu  
+![Animazione del menu Apri](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202 m_MenuOpen")<br />Animazione di apertura di menu  
     
 -   Stile: dissolvenza  
   
@@ -405,7 +403,7 @@ Indicatore di stato indeterminato (rotazione)
 -   Durata: 200 millisecondi  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Mostra finestra di strumento Nascondi automaticamente  
-![Animazione di comparsa finestra dello strumento Nascondi automaticamente](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")<br />Animazione di comparsa finestra dello strumento Nascondi automaticamente  
+![Nascondi automaticamente rilevata l'animazione della finestra dello strumento](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")<br />Animazione di comparsa finestra dello strumento Nascondi automaticamente  
 
 -   Stile: vengono visualizzati  
   

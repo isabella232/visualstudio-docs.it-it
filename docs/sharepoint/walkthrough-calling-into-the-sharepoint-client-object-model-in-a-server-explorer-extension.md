@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Chiamata nel modello a oggetti Client di SharePoint in un''estensione di Esplora Server | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Chiamata nel modello a oggetti Client di SharePoint in un'estensione di Esplora Server | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: chiamata al modello a oggetti del client di SharePoint in un'estensione di Esplora server
   Questa procedura dettagliata illustra come chiamare il modello a oggetti client SharePoint da un'estensione per il **connessioni di SharePoint** nodo **Esplora Server**. Per ulteriori informazioni su come usare il modello a oggetti client SharePoint, vedere [chiamate ai modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ Conoscere i concetti seguenti è utile, ma non obbligatorio, per completare la p
   
 6.  Nel **nome** digitare **WebPartNode**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **WebPartNode** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **WebPartNode** progetto **Esplora**.  
   
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione  
   
@@ -96,7 +95,7 @@ Conoscere i concetti seguenti è utile, ma non obbligatorio, per completare la p
   
 5.  Nel **nome** immettere **risorse**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **risorse** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **risorse** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 6.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -285,8 +284,8 @@ Conoscere i concetti seguenti è utile, ma non obbligatorio, per completare la p
 ## <a name="see-also"></a>Vedere anche  
  [Chiamate ai modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Procedura dettagliata: Estensione di Esplora Server per visualizzare Web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Procedura dettagliata: Estensione di Esplora Server per visualizzare le Web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Image Editor for Icons](/cpp/windows/image-editor-for-icons)  (Editor di immagini per icone)  
- [Creazione di un'icona o altra immagine &#40; Editor di immagini per le icone &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Creazione di un'icona o un'altra immagine &#40;Editor di immagini per le icone&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

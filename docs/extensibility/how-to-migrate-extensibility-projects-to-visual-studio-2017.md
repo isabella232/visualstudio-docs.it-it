@@ -1,23 +1,21 @@
 ---
-title: "Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2017 | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2017 | Documenti Microsoft'
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d49ff89f38b0279c60f49ee7d5856d21fd5fc4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 93f5d663a31d43dc7a52cbd11261ca78134c682a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: eseguire la migrazione di progetti di estendibilità di Visual Studio 2017
 
@@ -58,7 +56,7 @@ Per aggiornare i riferimenti di NuGet per Microsoft.VSSDK.BuildTools:
 
 Per verificare che tutti gli assembly necessari per eseguire l'estensione per l'installazione dell'utente di Visual Studio, specificare tutti i componenti dei prerequisiti o i pacchetti nel file manifesto dell'estensione. Quando un utente tenta di installare l'estensione, il VSIXInstaller controllerà se tutti i prerequisiti siano installati. Se mancano alcuni, l'utente verrà richiesto di installare i componenti mancanti come parte del processo di installazione di estensione.
 
->**Nota:** , tutte le estensioni devono specificare almeno il componente editor principale di Visual Studio come prerequisito.
+>**Nota:** , tutte le estensioni devono specificare almeno il componente editor dei componenti di base di Visual Studio come prerequisito.
 
 * Modificare il file manifesto dell'estensione (in genere chiamato vsixmanifest).
 * Verificare `InstallationTarget` include 15.0.
@@ -84,7 +82,7 @@ Esempio:
 
 Invece di modificare direttamente il codice XML del manifesto, è possibile utilizzare il nuovo **prerequisiti** scheda nella finestra di progettazione manifesto per selezionare i prerequisiti e il codice XML verrà aggiornata automaticamente.
 
->**Nota:** progettazione manifesto solo consente di selezionare i componenti (non pacchetti o i carichi di lavoro) installati nell'istanza corrente di Visual Studio. Se è necessario aggiungere un prerequisito per un carico di lavoro, un pacchetto o un componente che non è attualmente installato, è possibile modificare direttamente il manifesto XML.
+>**Nota:** progettazione manifesto verrà consentono solo di selezionare i componenti (non pacchetti o i carichi di lavoro) installati nell'istanza corrente di Visual Studio. Se è necessario aggiungere un prerequisito per un carico di lavoro, un pacchetto o un componente che non è attualmente installato, è possibile modificare direttamente il manifesto XML.
 
 * Aprire il file vsixmanifest [Progettazione].
 * Selezionare **prerequisiti** scheda e premere **New** pulsante.
@@ -133,7 +131,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\deven
 
 Verificare che il progetto VSIX viene installato correttamente in un computer con tutte le necessarie siano installati i prerequisiti.
 
->**Nota:** prima di installare qualsiasi estensione, chiudere tutte le istanze di Visual Studio.
+>**Nota:** prima di installare tutte le estensioni, chiudere tutte le istanze di Visual Studio.
 
 Tentativo di installare l'estensione:
 

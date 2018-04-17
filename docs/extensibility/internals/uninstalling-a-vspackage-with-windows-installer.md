@@ -1,27 +1,25 @@
 ---
 title: La disinstallazione di un pacchetto VSPackage con Windows Installer | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - packages, uninstalling
 - VSPackages, uninstalling
 - uninstalling VSPackages
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee8ad89e02dfa8aebbb39a9d7ebe523ad01bb7e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d8a62692003b26afcd5b7814bdc03320fa1c453a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>La disinstallazione di un pacchetto VSPackage con Windows Installer
 La maggior parte, Windows Installer possibile disinstallare il pacchetto VSPackage solo da "annullamento" eseguite per installare il pacchetto VSPackage. Le azioni personalizzate illustrate [comandi che devono essere eseguiti dopo l'installazione](../../extensibility/internals/commands-that-must-be-run-after-installation.md) deve essere eseguito dopo una disinstallazione anche. Poiché le chiamate a devenv.exe si verificano subito prima dell'azione InstallFinalize standard per l'installazione e la disinstallazione, le voci della tabella CustomAction e InstallExecuteSequence soddisfare entrambi i casi.  
@@ -40,7 +38,7 @@ La maggior parte, Windows Installer possibile disinstallare il pacchetto VSPacka
  In alternativa è possibile aggiungere `OR Installed` per avviare le condizioni che non sono importanti durante la disinstallazione. Questo garantisce che la condizione sarà sempre true durante la disinstallazione e pertanto non verrà visualizzato il messaggio di errore di condizione di avvio.  
   
 > [!NOTE]
->  `Installed`la proprietà di che Windows Installer imposta quando viene rilevato che il pacchetto VSPackage è stato installato nel sistema.  
+>  `Installed` la proprietà di che Windows Installer imposta quando viene rilevato che il pacchetto VSPackage è stato installato nel sistema.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Windows Installer](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   

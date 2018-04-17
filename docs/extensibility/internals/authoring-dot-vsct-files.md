@@ -1,27 +1,23 @@
 ---
 title: La creazione. File Vsct | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>La creazione. File Vsct
 Questo documento viene illustrato come creare un file vsct per aggiungere voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente per l'ambiente di sviluppo integrato (IDE) di Visual Studio. Utilizzare questa procedura quando si aggiungono elementi dell'interfaccia utente a un pacchetto di Visual Studio (VSPackage) che non dispone già di un file con estensione vsct.  
@@ -234,7 +230,7 @@ Questo documento viene illustrato come creare un file vsct per aggiungere voci d
  Alcuni tipi di menu e pulsante includono particolari funzionalità. Nella tabella seguente vengono descritti alcuni menu specializzato e tipi di pulsanti. Per altri tipi, vedere il `types` attributo descrizioni in [elemento Menu](../../extensibility/menu-element.md), [elemento Button](../../extensibility/button-element.md), e [elemento combinata](../../extensibility/combo-element.md).  
   
  Casella combinata  
- Una casella combinata è un elenco di riepilogo a discesa che può essere utilizzato in una barra degli strumenti. Per aggiungere le caselle combinate all'interfaccia utente, creare un [casella combinata](../../extensibility/combos-element.md) elemento il `Commands` elemento. Aggiungere quindi il `Combos` elemento un `Combo` elemento per ogni casella combinata aggiungere. `Combo`gli elementi hanno gli stessi attributi e gli elementi figlio come `Button` elementi e avere `DefaultWidth` e `idCommandList` gli attributi. Il `DefaultWidth` attributo imposta la larghezza in pixel e `idCommandList` attributo punti a un ID di comando che viene utilizzato per popolare la casella combinata. Per ulteriori informazioni, vedere il `Combo` la documentazione dell'elemento.  
+ Una casella combinata è un elenco di riepilogo a discesa che può essere utilizzato in una barra degli strumenti. Per aggiungere le caselle combinate all'interfaccia utente, creare un [casella combinata](../../extensibility/combos-element.md) elemento il `Commands` elemento. Aggiungere quindi il `Combos` elemento un `Combo` elemento per ogni casella combinata aggiungere. `Combo` gli elementi hanno gli stessi attributi e gli elementi figlio come `Button` elementi e hanno inoltre `DefaultWidth` e `idCommandList` attributi. Il `DefaultWidth` attributo imposta la larghezza in pixel e `idCommandList` attributo punti a un ID di comando che viene utilizzato per popolare la casella combinata. Per ulteriori informazioni, vedere il `Combo` la documentazione dell'elemento.  
   
  MenuController  
  Un controller di menu è un pulsante con una freccia accanto. Fare clic sulla freccia apre un elenco. Per aggiungere un controller di menu per l'interfaccia utente, creare un `Menu` elemento e impostare il relativo `type` attributo **MenuController** o **MenuControllerLatched**, in base al comportamento desiderato. Per popolare un controller di menu, impostarlo come elemento padre di un `Group` elemento. Il controller di menu visualizzerà tutti gli elementi figlio di tale gruppo nel relativo elenco a discesa.  

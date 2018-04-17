@@ -1,27 +1,23 @@
 ---
 title: 'Procedura: implementare Trova e Sostituisci meccanismo | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
 ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971d4565c95cab23e683a1a4f20c75ebea81b8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26d1866d9b816dfca3f82f98db372865f9d27a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Procedura: implementare Trova e Sostituisci meccanismo
 Visual Studio fornisce due modalità di implementazione di ricerca e sostituzione. Uno consiste nel passare a un'immagine di testo alla shell e perché gestisca la ricerca, evidenziazione e la sostituzione di testo. Ciò consente agli utenti di specificare più intervalli di testo. In alternativa, il pacchetto VSPackage può controllare questa funzionalità se stesso. In entrambi i casi è necessario notificare alla shell sulla destinazione corrente e le destinazioni per tutti i documenti aperti.  

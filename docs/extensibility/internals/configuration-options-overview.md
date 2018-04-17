@@ -1,26 +1,24 @@
 ---
 title: Panoramica sulle opzioni di configurazione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Cenni preliminari sulle opzioni di configurazione
 I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può supportare più configurazioni che possono essere compilate in fase di debug, esecuzione e/o distribuiti. Una configurazione è un tipo di compilazione descritto, con un set denominato di proprietà, in genere le opzioni del compilatore e percorsi dei file. Per impostazione predefinita, le nuove soluzioni contengono due configurazioni, Debug e rilascio. Possono applicare queste configurazioni utilizzando le impostazioni predefinite o modificare per soddisfare i requisiti della soluzione e/o di progetto specifici. Alcuni pacchetti possono essere compilati in due modi: come un editor di ActiveX o come un componente sul posto. I progetti non è necessario supportare più configurazioni, è tuttavia. Se è disponibile solo una configurazione, viene eseguito il mapping di tale configurazione in tutte le configurazioni di soluzione.  
@@ -35,8 +33,8 @@ I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può 
   
 |Nome della configurazione|Piattaforma, Win32|Piattaforma: Win64|  
 |------------------------|----------------------|----------------------|  
-|Debug|\<Eseguire il debug Win32 Impostazioni >|\<Debug impostazioni Win64 >|  
-|Rilascio|\<Versione Win32 Impostazioni >|\<Versione Win64 Impostazioni >|  
+|Debug|\<Eseguire il debug Win32 Impostazioni >|\<Eseguire il debug Win64 Impostazioni >|  
+|Rilascio|\<Versione Win32 Impostazioni >|\<Rilasciare Win64 Impostazioni >|  
 |MyConfig|N/D|\<Impostazioni MyConfig Win64 >|  
   
 > [!NOTE]
@@ -57,15 +55,15 @@ Interfacce di configurazione
   
  Alcune note relative al diagramma precedente:  
   
--   `IDispatch`è contrassegnato come facoltativi nell'oggetto di configurazione. In particolare, è facoltativo per le interfacce di configurazione per l'oggetto visualizzazione.  
+-   `IDispatch` è contrassegnato come facoltativi nell'oggetto di configurazione. In particolare, è facoltativo per le interfacce di configurazione per l'oggetto visualizzazione.  
   
--   `IVsDebuggableProjectCfg`è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per il supporto di debug.  
+-   `IVsDebuggableProjectCfg` è contrassegnato come facoltativo nell'oggetto di configurazione, ma è obbligatorio per il supporto di debug.  
   
--   `IVsProjectCfg2`è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per l'output del supporto di raggruppamento.  
+-   `IVsProjectCfg2` è contrassegnato come facoltativo nell'oggetto di configurazione, ma è necessario per l'output del supporto di raggruppamento.  
   
 -   Il `Config Provider` oggetto viene contrassegnato come un oggetto facoltativo, ma l'opzione è la posizione in cui implementarla. È possibile implementare l'oggetto per l'oggetto di progetto o in un oggetto separato.  
   
--   `IVsCfgProvider2`è necessario per il supporto di piattaforma e la modifica della configurazione. `IVsCfgProvider`è sufficiente se non si implementa la funzionalità.  
+-   `IVsCfgProvider2` è necessario per il supporto della piattaforma e la modifica della configurazione. `IVsCfgProvider` è sufficiente se tale funzionalità non implementata.  
   
 -   Alcuni di questi oggetti illustrati nel diagramma come oggetti distinti possono essere combinati nella stessa classe dove possibile in base ai requisiti di progettazione specifica. In altri argomenti di questa sezione, tuttavia, gli oggetti e interfacce associate a tali oggetti verranno analizzate in base allo scenario presentato nel diagramma.  
   

@@ -1,23 +1,21 @@
 ---
 title: Supporto di Ngen in VSIX v3 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 15277f0a1038e43bb316d604cbc415da4a5d80bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 146df23bff14bd93558c645521f99f6099a49bde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Supporto di Ngen in VSIX v3
 
@@ -40,8 +38,8 @@ Per abilitare ngen per un assembly, è possibile utilizzare il **proprietà** fi
 Esistono 4 proprietà che è possibile impostare:
 
 1. **Ngen** (booleano) - se true, il programma di installazione di Visual Studio verrà "ngen" dell'assembly.
-2. **Applicazione di Ngen** (stringa) Ngen offre l'opportunità di utilizzare il file app. config dell'applicazione per risolvere le dipendenze dell'assembly. Questo valore deve essere impostato su un'applicazione di cui si desidera utilizzare (relativo alla directory di installazione di Visual Studio) di App.
-3. **Architettura di Ngen** (enumerazione) - l'architettura per compilare in modo nativo l'assembly. Le opzioni sono: una. B NotSpecified. X86 c. X64 d. Tutti
+2. **Applicazione di Ngen** (string) - Ngen offre l'opportunità di utilizzare file app. config dell'applicazione per risolvere le dipendenze dell'assembly. Questo valore deve essere impostato su un'applicazione di cui si desidera utilizzare (relativo alla directory di installazione di Visual Studio) di App.
+3. **Architettura di Ngen** (enumerazione) - l'architettura di compilare in modo nativo l'assembly. Le opzioni sono: una. B NotSpecified. X86 c. X64 d. Tutti
 4. **Priorità Ngen** (numero intero compreso tra 1 e 3) - livello di priorità Ngen è documentato al [livelli di priorità Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
 
 Di seguito viene illustrato il **proprietà** finestra in azione:
@@ -61,7 +59,7 @@ Verrà aggiunta dei metadati per il riferimento al progetto all'interno di file 
 </ProjectReference>
  ```
 
- >**Nota:** è possibile modificare direttamente il file con estensione csproj, se si preferisce.
+ >**Nota:** è possibile modificare il file con estensione csproj direttamente, se si preferisce.
 
 ## <a name="extra-information"></a>Informazioni aggiuntive
 

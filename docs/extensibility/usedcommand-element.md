@@ -1,26 +1,24 @@
 ---
 title: Elemento UsedCommand | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4888733abf142f6582706406decbea0bf84ce519
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 Consente a un pacchetto VSPackage per accedere a un comando che è definito in un altro file con estensione vsct. Ad esempio, se il pacchetto VSPackage utilizza lo standard **copia** comando, il quale è definito dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, per aggiungere il comando a un menu o una barra degli strumenti senza implementarla nuovamente.  
@@ -46,7 +44,7 @@ Consente a un pacchetto VSPackage per accedere a un comando che è definito in u
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|nessuno||  
+|Nessuno||  
   
 ### <a name="parent-elements"></a>Elementi padre  
   

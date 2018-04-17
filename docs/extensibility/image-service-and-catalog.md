@@ -1,22 +1,19 @@
 ---
 title: Immagine di servizio e catalogo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento contiene informazioni e procedure consigliate per adottare il servizio immagini di Visual Studio e il catalogo di immagini introdotta in Visual Studio 2015.  
@@ -25,7 +22,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
   
 |||  
 |-|-|  
-|**Problemi relativi a oggi**|**Soluzioni**|  
+|**Problemi oggi**|**Soluzioni**|  
 |La sfumatura di colore di sfondo|Sfumatura alfa incorporato|  
 |Immagini dei temi (alcune)|Metadati del tema|  
 |La modalità contrasto elevato|Risorse alternative di contrasto elevato|  
@@ -44,7 +41,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
   
  Visual Studio shell barra degli strumenti prima e dopo aver utilizzato il servizio immagini:  
   
- ![Servizio immagini prima e dopo](../extensibility/media/image-service-before-and-after.png "servizio immagini prima e dopo")  
+ ![Servizio immagini prima e dopo aver](../extensibility/media/image-service-before-and-after.png "servizio immagini prima e dopo")  
   
 ## <a name="how-it-works"></a>Come funziona  
  Il servizio immagini può fornire un'immagine bitmap adatta per un framework dell'interfaccia utente supportato:  
@@ -57,7 +54,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
   
  Diagramma di flusso del servizio di immagine  
   
- ![Immagine di diagramma di flusso del servizio](../extensibility/media/image-service-flow-diagram.png "immagine diagramma di flusso del servizio")  
+ ![Diagramma di flusso del servizio di immagine](../extensibility/media/image-service-flow-diagram.png "immagine diagramma di flusso del servizio")  
   
  **Moniker di immagini**  
   
@@ -67,7 +64,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
   
  Il set di moniker di immagini contenute nel catalogo di immagini Visual Studio e pubblicamente che può essere utilizzato da qualsiasi componente di Visual Studio o estensione.  
   
- **File manifesto immagine**  
+ **File manifesto di immagini**  
   
  File di immagine manifesto (.imagemanifest) sono file XML che definiscono un set di risorse di immagini, il moniker che rappresentano tali risorse e l'immagine reale o le immagini per rappresentare ogni asset. Manifesti dell'immagine è possibile definire immagini autonome o elenchi di immagini per il supporto dell'interfaccia utente legacy. Inoltre, esistono attributi che è possibile impostare nell'asset o delle singole immagini dietro ogni asset cambiare la data e la modalità di visualizzazione di tali risorse.  
   
@@ -168,14 +165,14 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
 |-|-|  
 |**Attributo**|**Definizione**|  
 |URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei valori seguenti:<br /><br /> -A [URI di tipo Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br />-Un riferimento a una risorsa componente assoluto<br />-Un percorso di un file contenente una risorsa nativa|  
-|Sfondo|[Facoltativo] Indica l'oggetto tipo di sfondo che dell'origine deve essere utilizzata.<br /><br /> Può essere uno dei valori seguenti:<br /><br /> *Illuminazione:* l'origine può essere utilizzata su uno sfondo.<br /><br /> *Scuro:*l'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere utilizzata su qualsiasi sfondo in modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere utilizzata su uno sfondo di colore in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se l'attributo Background viene omesso, l'origine è utilizzabile in qualsiasi dello sfondo.<br /><br /> Se lo sfondo è *luce*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o è impostato su sfondo *contrasto elevato*, l'inversione dei colori dell'origine viene controllata l'immagine **AllowColorInversion** attributo.|  
+|Sfondo|[Facoltativo] Indica l'oggetto tipo di sfondo che dell'origine deve essere utilizzata.<br /><br /> Può essere uno dei valori seguenti:<br /><br /> *Illuminazione:* l'origine può essere utilizzata su sfondo chiaro.<br /><br /> *Dark:*l'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere utilizzata in qualsiasi in background in modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere utilizzata su sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se l'attributo Background viene omesso, l'origine è utilizzabile in qualsiasi dello sfondo.<br /><br /> Se lo sfondo è *luce*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o è impostato su sfondo *contrasto elevato*, l'inversione dei colori dell'origine viene controllata l'immagine **AllowColorInversion** attributo.|  
 |||  
   
  Oggetto \<origine > elemento può avere uno e uno solo dei sottoelementi facoltativi seguenti:  
   
 ||||  
 |-|-|-|  
-|**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
+|**Elemento**|**Attributi (tutti elementi necessari)**|**Definizione**|  
 |\<Dimensioni >|Valore|L'origine verrà utilizzata per le immagini della dimensione specificata (in unità dispositivo). L'immagine sarà quadrato.|  
 |\<SizeRange >|MinSize, MaxSize|L'origine verrà utilizzata per le immagini da MinSize MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrato.|  
 |\<Dimensioni >|Larghezza, altezza|L'origine verrà utilizzata per le immagini di una determinata larghezza e altezza (in unità dispositivo).|  
@@ -339,7 +336,7 @@ CComPtr<IVsImageService2> spImgSvc;
 CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);  
 ```  
   
- **L'immagine di richiesta**  
+ **Richiede l'immagine**  
   
 ```cpp  
 ImageAttributes attr = { 0 };  
@@ -447,11 +444,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
         this.BitmapIndex = <Value>;  
         ```  
   
-    2.  Vedere il passaggio &#1; il "How Do I moniker di immagine di utilizzare in una nuova finestra degli strumenti?" sezione precedente.  
+    2.  Vedere il passaggio 1 # il "How Do I moniker di immagine di utilizzare in una nuova finestra degli strumenti?" sezione precedente.  
   
 2.  Il comando per aprire la finestra degli strumenti.  
   
-    -   Passaggio &#2;, vedere la "How Do I moniker di immagine di utilizzare in una nuova finestra degli strumenti?" sezione precedente.  
+    -   Passaggio 2 #, vedere la "How Do I moniker di immagine di utilizzare in una nuova finestra degli strumenti?" sezione precedente.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Utilizzo di moniker di immagini in un file vsct  
  Aggiornare il file con estensione vsct come indicato dalle righe di commento seguenti:  
@@ -494,7 +491,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 </CommandTable>  
 ```  
   
- **Cosa accade se il file con estensione vsct deve inoltre essere letto da versioni precedenti di Visual Studio?**  
+ **Cosa accade se il file con estensione vsct deve inoltre essere letta da versioni precedenti di Visual Studio?**  
   
  Le versioni precedenti di Visual Studio non è possibile riconoscere il **IconIsMoniker** flag di comando. È possibile utilizzare immagini dal servizio immagine su versioni di Visual Studio che lo supporta, ma continuano a utilizzare le immagini di vecchio stile nelle versioni precedenti di Visual Studio. A tale scopo, è necessario lasciare il file con estensione vsct invariato (e pertanto compatibili con versioni precedenti di Visual Studio) e creare un file CSV (valori delimitati da virgole) che esegue il mapping da coppie/ID GUID definite in un file con estensione vsct \<bitmap > elemento immagine coppie GUID/ID moniker.  
   
@@ -531,7 +528,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
  L'impostazione di immagini personalizzate in CPS (Common Project System) può essere eseguita manualmente o tramite un modello di elemento che viene fornito con il SDK di estendibilità del sistema di progetto.  
   
- **Utilizzare l'estensibilità del sistema di progetto SDK**  
+ **Utilizzare l'estendibilità di sistema di progetto SDK**  
   
  Seguire le istruzioni in [fornire icone personalizzate per il tipo del tipo di progetto/elemento](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) per personalizzare le immagini di CPS. Ulteriori informazioni sull'istruzione CPS sono reperibile in [documentazione estendibilità di sistema progetto di Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
   
@@ -579,7 +576,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
     -   Consigliato: rinominare il simbolo AssetsGuid e il simbolo striscia di immagine in base alle esigenze dell'utilizzo.  
   
-    -   Sostituire ogni **ContainedImage**del GUID con $(ImageCatalogGuid), sostituire ogni **ContainedImage**dell'ID con $(\<moniker >) e aggiungere l'attributo "true" esterno = ogni **ContainedImage**  
+    -   Sostituire ogni **ContainedImage**del GUID con $(ImageCatalogGuid), sostituire ogni **ContainedImage**dell'ID con $(\<moniker >) e aggiungere l'attributo esterno = "true" per ogni **ContainedImage**  
   
         -   \<moniker > deve essere sostituito con il **KnownMoniker** che corrisponda all'immagine, ma con "KnownMonikers". rimosso dal nome.  
   
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Esempi  
  Molti degli esempi di Visual Studio in GitHub sono stati aggiornati per mostrare come utilizzare il servizio immagini come parte di vari punti di estendibilità di Visual Studio.  
   
- Controllare [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) per gli esempi più recenti.  
+ Controllare [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) per gli esempi più recenti.  
   
 ### <a name="tooling"></a>Strumenti  
  È stato creato un set di strumenti di supporto per il servizio immagini per facilitare la creazione o l'aggiornamento dell'interfaccia utente che funziona con il servizio immagini. Per ulteriori informazioni su ogni strumento, consultare la documentazione fornita con gli strumenti. Gli strumenti sono inclusi come parte di [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  

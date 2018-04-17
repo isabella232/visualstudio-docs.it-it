@@ -1,27 +1,23 @@
 ---
 title: Specifica i gestori di File per estensioni di File | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d0086f8badb32431c85f16e1f74fe8f186c9b2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Specifica i gestori di File per estensioni di File
 Esistono diversi modi per determinare l'applicazione che gestisce un file che contiene un'estensione di file specifico. I verbi OpenWithList e OpenWithProgids sono due modi per specificare i gestori di file nella voce del Registro di sistema per l'estensione di file.  
@@ -53,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |. Extension|ProductName. extension.versionMajor.versionMinor|  
   
- È possibile registrare diverse applicazioni che sono in grado di aprire una particolare estensione di file mediante l'aggiunta di ProgID con controllo delle versioni come valori per il HKEY_CLASSES_ROOT\\*\<estensione >*\OpenWithProgids chiave. Questa chiave del Registro di sistema contiene un elenco di ProgID alternativo associato all'estensione di file. Le applicazioni associate ai ProgID elencati vengono visualizzati nel **Apri con***Product Name* sottomenu. Se viene specificata l'applicazione stessa in entrambe le `OpenWithList` e `OpenWithProgids` chiavi, il sistema operativo unisce i duplicati.  
+ È possibile registrare diverse applicazioni che sono in grado di aprire una particolare estensione di file mediante l'aggiunta di ProgID con controllo delle versioni come valori per il HKEY_CLASSES_ROOT\\*\<estensione >*\OpenWithProgids chiave. Questa chiave del Registro di sistema contiene un elenco di ProgID alternativo associato all'estensione di file. Le applicazioni associate ai ProgID elencati vengono visualizzati nel **Apri con * * * il nome del prodotto* sottomenu. Se viene specificata l'applicazione stessa in entrambe le `OpenWithList` e `OpenWithProgids` chiavi, il sistema operativo unisce i duplicati.  
   
 > [!NOTE]
 >  Il `OpenWithProgids` chiavi è supportata solo in Windows XP. Poiché altri sistemi operativi ignorare questa chiave, non utilizzarlo come la registrazione sola per i gestori di file. Usare questa chiave per fornire una migliore esperienza utente in Windows XP.  

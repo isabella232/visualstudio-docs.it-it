@@ -1,12 +1,10 @@
 ---
 title: Creazione di definizioni di sito per SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Creazione di definizioni di sito per SharePoint
   Il progetto di definizione del sito di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] consente di creare un *definizione sito*, che funge da base per un nuovo sito di SharePoint. Queste definizioni determinano non solo l'aspetto e il comportamento del sito di SharePoint, ma anche il contenuto predefinito e funzionalità. Nella definizione è possibile inserire elenchi preconfigurati, tipi di contenuto, ricevitori di eventi, immagini e altri elementi. In SharePoint sono incluse alcune definizioni di sito come BLOG, ad esempio. Quando si crea un sito in base alla definizione di sito BLOG, il sito contiene gli elenchi, Web part e altri elementi richiesti da un sito blog.  
@@ -52,16 +51,16 @@ ms.lasthandoff: 01/10/2018
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Procedura dettagliata: creare un progetto di definizione di sito di base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Illustra la procedura dettagliata tramite la creazione di un progetto di definizione di sito di base in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Procedura: creare una definizione di sito personalizzato e una configurazione](http://go.microsoft.com/fwlink/?LinkId=183309)|Viene descritto come creare una definizione di sito personalizzato in SharePoint copiando una definizione di sito esistente e quindi modificando tale copia.|  
+|[Procedura: creare una definizione di sito personalizzato e configurazione](http://go.microsoft.com/fwlink/?LinkId=183309)|Viene descritto come creare una definizione di sito personalizzato in SharePoint copiando una definizione di sito esistente e quindi modificando tale copia.|  
 |[Webtemp](http://go.microsoft.com/fwlink/?LinkId=183310)|Descrive il file originale che specifica le definizioni di sito disponibile nel **selezione modello** sezione la **nuovo sito di SharePoint** pagina.|  
 |[Localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Viene descritto come preparare le soluzioni di SharePoint per l'utilizzo generale.|  
 |[Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Viene descritto come creare parti di una pagina di SharePoint che gli utenti possono modificare.|  
 |[Creazione di controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Viene descritto come creare controlli riutilizzabili che vengono eseguiti nelle pagine di applicazione e Web part.|  
 |[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Viene descritto come utilizzare la finestra di progettazione viene visualizzata quando si apre una pagina Web nel progetto.|  
 |[Cenni preliminari sulle pagine Web ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178726)|Vengono fornite informazioni generali sulla struttura di [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] delle pagine Web, la modalità di elaborazione delle pagine da [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]e come [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] markup conforme agli standard XHTML visualizzato nelle pagine.|  
-|[Sintassi di pagine Web ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178727)|Vengono descritti gli elementi di markup che costituiscono una pagina ASP.NET.|  
+|[Sintassi della pagina Web ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178727)|Vengono descritti gli elementi di markup che costituiscono una pagina ASP.NET.|  
 |[Pagine Web ASP.NET di programmazione](http://go.microsoft.com/fwlink/?LinkId=178728)|Vengono fornite informazioni su come creare gestori eventi in [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine e le modalità di utilizzo di script client.|  
-|[Programmazione di Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Viene descritto come utilizzare il modello a oggetti gestito che viene fornito in [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
+|[Il linguaggio di programmazione Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Viene descritto come utilizzare il modello a oggetti gestito che viene fornito in [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

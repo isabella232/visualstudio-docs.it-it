@@ -1,28 +1,26 @@
 ---
 title: La struttura del File [Content_types] XML | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>La struttura del File [Content_types] XML
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Per installare il pacchetto di Visual Studio viene utilizzato il file [Content_Types] XML, ma non installa il file stesso.  
@@ -49,7 +47,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Per installare
   
 |Valore|Descrizione|  
 |-----------|-----------------|  
-|http://schemas.OpenFormats.org/package/2006/Content-Types|Il percorso dello schema di tipi di contenuto.|  
+|http://schemas.openformats.org/package/2006/content-types|Il percorso dello schema di tipi di contenuto.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Il `Types` elemento può contenere un numero qualsiasi di `Default` elementi.  
@@ -105,5 +103,5 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Per installare
   
 ## <a name="see-also"></a>Vedere anche  
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Riferimento dello Schema 1.0 dell'estensione VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Riferimento dello Schema 1.0 estensione VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: Un nuovo Standard per l'assemblaggio dei dati](http://go.microsoft.com/fwlink/?LinkID=148207)

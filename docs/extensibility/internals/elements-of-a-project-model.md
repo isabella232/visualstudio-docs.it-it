@@ -1,27 +1,25 @@
 ---
 title: Gli elementi di un modello di progetto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4933e73df93c1f8a3bcf62e03b6883c0096f1d8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="elements-of-a-project-model"></a>Elementi di un modello di progetto
 Le interfacce e implementazioni di tutti i progetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] condividono una struttura di base: il modello di progetto per il tipo di progetto. Nel modello di progetto che è il pacchetto VSPackage si sta sviluppando, creare oggetti conformi con le decisioni di progettazione e interagiscono con la funzionalità globale fornita dall'IDE. Anche se il controllo il mantenimento di un elemento di progetto, ad esempio, non si controlla la notifica che un file deve essere resa persistente. Quando un utente inserisce lo stato attivo su un elemento di progetto aperto e sceglie **salvare** sul **File** menu il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barra, codice del tipo di progetto devono intercettare il comando dall'IDE, mantenere il file, e Invia notifica all'IDE che non viene modificato il file.  
@@ -47,7 +45,7 @@ modello di progetto
   
 ## <a name="see-also"></a>Vedere anche  
  [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Non incluso nella Build: utilizzo di classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Non incluso nella Build: utilizzo delle classi di progetto HierUtil7 implementato un tipo di progetto (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)   
  [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Procedura: ottenere un servizio](../../extensibility/how-to-get-a-service.md)   

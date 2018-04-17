@@ -1,36 +1,34 @@
 ---
 title: Modelli di applicazione per Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
-##  <a name="BKMK_WindowInteractions"></a>Interazioni di finestra  
+##  <a name="BKMK_WindowInteractions"></a> Interazioni di finestra  
   
 ### <a name="overview"></a>Panoramica  
 I due tipi di finestra principale utilizzati in Visual Studio sono editor di documenti e finestre degli strumenti. Rare, ma possibili, sono finestre di dialogo non modale di grandi dimensioni. Anche se questi sono tutti non modali nella shell, sui modelli sono fondamentalmente diversi. Questa sezione descrive la differenza tra le finestre dei documenti, finestre degli strumenti e finestre di dialogo non modale. Sono disponibili modelli di finestra di dialogo modale in [finestre di dialogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
   
 ### <a name="comparing-window-usage-patterns"></a>Il confronto dei modelli di utilizzo di finestra  
-**Finestre di documento** sono quasi sempre visualizzate all'interno del documento. In questo modo, l'editor di documento una "fase center" per disporre le finestre di strumento supplementare intorno.  
+**Finestre dei documenti** sono quasi sempre visualizzate all'interno del documento. In questo modo, l'editor di documento una "fase center" per disporre le finestre di strumento supplementare intorno.  
   
 Oggetto **finestra degli strumenti** è spesso visualizzato come finestra separata, più piccolo compressa contro il bordo dell'IDE. Questo può essere visibile, nascosto o nascosto automaticamente. Tuttavia, talvolta finestre degli strumenti vengono presentate all'interno del documento, anche se si deseleziona la **finestra/ancoraggio** proprietà nella finestra. Di conseguenza, più ampia, ma anche decisioni di progettazione comune: durante il tentativo di integrare in Visual Studio, è necessario decidere se la funzionalità deve essere visualizzata una finestra degli strumenti o una finestra del documento.  
   
-**Le finestre di dialogo non modale** sconsiglia in Visual Studio. Finestre di dialogo più non modali sono, per definizione, finestre degli strumenti mobili e deve essere implementate in questo modo. Le finestre di dialogo non modali sono consentiti nei casi in cui le dimensioni di una finestra normale strumento ancorata al lato della shell potrebbero essere troppo restrittivo. Sono consentiti anche nei casi in cui l'utente potrebbe essere probabile spostare la finestra di dialogo per un monitor secondario.  
+**Le finestre di dialogo non modale** sono sconsigliata in Visual Studio. Finestre di dialogo più non modali sono, per definizione, finestre degli strumenti mobili e deve essere implementate in questo modo. Le finestre di dialogo non modali sono consentiti nei casi in cui le dimensioni di una finestra normale strumento ancorata al lato della shell potrebbero essere troppo restrittivo. Sono consentiti anche nei casi in cui l'utente potrebbe essere probabile spostare la finestra di dialogo per un monitor secondario.  
   
 Considerare con attenzione il tipo contenitore è necessario. Considerazioni sul modello di utilizzo comune per la progettazione dell'interfaccia utente sono nella tabella seguente.  
   
@@ -38,11 +36,11 @@ Considerare con attenzione il tipo contenitore è necessario. Considerazioni sul
 |-|---------------------|-----------------|---------------------|  
 | **Posizione** | Sempre posizionato anche all'interno del documento e non ancora intorno ai bordi dell'IDE. È possibile "estrarre" in modo da spostarla separatamente dalla shell di principale. | In genere ancorate ai bordi dell'IDE, ma può essere personalizzato per essere a virgola mobile, nascoste automaticamente (unpinned) o ancorato all'interno del documento anche.|Finestra mobile grandi separato dall'IDE. |  
 | **Eseguire il commit del modello** | *Commit ritardato*<br /><br /> Per salvare i dati in un documento, l'utente rilascia il **File &gt; salvare**, **Salva con nome**, o **Salva tutto** comando. Una finestra del documento è il concetto dei dati all'interno di esso venga "scritto" quindi eseguito il commit a uno dei Salva i comandi. Quando si chiude una finestra del documento, tutto il contenuto venga salvato su disco o perso. | *Commit immediato*<br /><br /> Non è non Salva modello. Per finestre di strumento di controllo che consentono di modificare un file, il file deve essere aperto nell'editor attivo o nella finestra di progettazione e l'editor o la finestra di progettazione è proprietario di salvataggio. | *Commit invio immediato o posticipato*<br /><br /> In genere, una finestra di dialogo non modale grandi dimensioni richiede un'azione per eseguire il commit delle modifiche e consente di un'operazione "Cancel", il rollback di tutte le modifiche apportate all'interno della sessione della finestra di dialogo.  In questo modo una finestra di dialogo non modale da una finestra degli strumenti in finestre degli strumenti dispongono sempre di un modello di commit immediato. |  
-| **Visibilità** | *Aprire o creare (file) e Chiudi*<br /><br /> Aprire una finestra del documento viene eseguita tramite l'apertura di un documento esistente o utilizzare un modello per creare un nuovo documento. È presente alcuna "Apri \<editor specifico >" comando. | *Nascondere e mostrare*<br /><br /> Le finestre degli strumenti a istanza singola possono essere nascoste o visualizzate. Contenuto e gli stati all'interno della finestra degli strumenti vengono mantenute se nella visualizzazione o nascosto. Le finestre degli strumenti multi-istanza possono essere chiusa nonché nascoste. Quando una finestra degli strumenti di multi-istanza è chiusa, viene eliminato il contenuto e lo stato all'interno della finestra degli strumenti. | *Avviata da un comando*<br /><br /> Le finestre di dialogo vengono avviate da un comando basato su attività. |  
+| **Visibilità** | *Aprire/creare (file) e Close*<br /><br /> Aprire una finestra del documento viene eseguita tramite l'apertura di un documento esistente o utilizzare un modello per creare un nuovo documento. È presente alcuna "Apri \<editor specifico >" comando. | *Nascondere e mostrare*<br /><br /> Le finestre degli strumenti a istanza singola possono essere nascoste o visualizzate. Contenuto e gli stati all'interno della finestra degli strumenti vengono mantenute se nella visualizzazione o nascosto. Le finestre degli strumenti multi-istanza possono essere chiusa nonché nascoste. Quando una finestra degli strumenti di multi-istanza è chiusa, viene eliminato il contenuto e lo stato all'interno della finestra degli strumenti. | *Avviata da un comando*<br /><br /> Le finestre di dialogo vengono avviate da un comando basato su attività. |  
 | **Istanze** | *Multi-istanza*<br /><br /> Diversi editor è possibile aprire il contemporaneamente e modificando diversi file, mentre alcuni editor consentono inoltre lo stesso file essere aperto in più di un editor (utilizzando la **finestra &gt; nuova finestra** comando).<br /><br /> Un singolo editor può modificare uno o più file contemporaneamente (progettazione). | *Singola o multi instance*<br /><br /> Contenuto cambia per riflettere contesto (come illustrato nel Visualizzatore proprietà) o push lo stato attivo/contesto ad altre finestre (elenco di attività, Esplora soluzioni).<br /><br /> Le finestre degli strumenti a istanza singola e a istanza multipla devono essere associate alla finestra del documento attivo, a meno che non vi è un motivo a. | *A istanza singola* |  
-| **Esempi** | **Editor di testo**, come l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione del form o un'area di modellazione<br /><br /> **Controllo di layout simili alle finestre di dialogo**, come la finestra Progettazione manifesto | Il **Esplora** fornisce una soluzione e i progetti contenuti all'interno della soluzione<br /><br /> Il **Esplora Server** offre una visualizzazione gerarchica di connessioni server e dei dati che l'utente sceglie di aprire la finestra. Apertura di un oggetto dalla gerarchia di database, ad esempio una query, verrà visualizzata una finestra del documento e consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** consente di visualizzare le proprietà dell'oggetto selezionato in una finestra del documento o un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchici o nei controlli di finestra di dialogo complessi e consentono all'utente di impostare i valori di tali proprietà. | |  
+| **Esempi** | **Editor di testo**, come l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione di form o un'area di modellazione<br /><br /> **Controllo di layout simili alle finestre di dialogo**, come la finestra Progettazione manifesto | Il **Esplora** fornisce una soluzione e i progetti contenuti all'interno della soluzione<br /><br /> Il **Esplora Server** offre una visualizzazione gerarchica di connessioni server e dei dati che l'utente sceglie di aprire la finestra. Apertura di un oggetto dalla gerarchia di database, ad esempio una query, verrà visualizzata una finestra del documento e consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** consente di visualizzare le proprietà dell'oggetto selezionato in una finestra del documento o un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchici o nei controlli di finestra di dialogo complessi e consentono all'utente di impostare i valori di tali proprietà. | |  
   
-##  <a name="BKMK_ToolWindows"></a>Finestre degli strumenti  
+##  <a name="BKMK_ToolWindows"></a> Finestre degli strumenti  
   
 ### <a name="overview"></a>Panoramica  
 Finestre degli strumenti supportano le attività dell'utente che si verifica in finestre di documento. Possono essere utilizzati per visualizzare una gerarchia che rappresenta un oggetto radice fondamentali che Visual Studio offre e sono modificabili.  
@@ -64,26 +62,26 @@ Quando si valuta una nuova finestra degli strumenti nell'IDE, gli autori devono:
 #### <a name="tool-window-states"></a>Stati della finestra dello strumento  
 Finestre di Visual Studio degli strumenti dispongono di diversi stati, alcuni dei quali sono utente attivato (ad esempio, la funzionalità Nascondi automaticamente). Altri Stati, come visibili automaticamente, consentire le finestre degli strumenti vengono visualizzati nel contesto corretto e nascondere quando non sono necessarie. Vi sono cinque stati di finestra di strumento in totale.  
   
--   **Ancorato bloccato** finestre degli strumenti possono essere collegate a uno qualsiasi dei quattro lati dell'area del documento. Questa icona viene visualizzata nella barra del titolo di finestra degli strumenti. La finestra degli strumenti può essere ancorata orizzontalmente o verticalmente lungo il bordo della shell di e altre finestre degli strumenti e può anche essere collegata a schede.  
+-   **Ancorato/bloccato** finestre degli strumenti possono essere collegate a uno qualsiasi dei quattro lati dell'area del documento. Questa icona viene visualizzata nella barra del titolo di finestra degli strumenti. La finestra degli strumenti può essere ancorata orizzontalmente o verticalmente lungo il bordo della shell di e altre finestre degli strumenti e può anche essere collegata a schede.  
   
 -   **Nascondi automaticamente** finestre degli strumenti vengono sbloccate. Non è più visualizzata, lasciando una scheda (con il nome della finestra dello strumento e la relativa icona) sul bordo dell'area del documento, può spostare la finestra. La finestra degli strumenti viene estratta quando l'utente passa sopra la scheda.  
   
--   **Visibili automaticamente** finestre degli strumenti vengono visualizzati automaticamente quando viene avviata un'altra parte dell'interfaccia utente, ad esempio un editor, o lo stato attivo.  
+-   **Visibili automaticamente** finestre degli strumenti vengono visualizzati automaticamente quando un altro componente dell'interfaccia utente, ad esempio un editor, viene avviato o lo stato attivo.  
   
 -   **Mobile** finestre degli strumenti al passaggio del mouse all'esterno dell'IDE. Ciò è utile per le configurazioni di più monitor.  
   
 -   **Documento a schede** finestre degli strumenti possono essere ancorate anche all'interno del documento. Ciò è utile per finestre degli strumenti di grandi dimensioni, ad esempio il Visualizzatore oggetti, che richiedono più ampia di ancoraggio per i bordi del frame, è possibile.  
   
-![Strumento di stati della finestra in Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702 01_ToolWindowStates")<br />Stati della finestra degli strumenti in Visual Studio
+![Strumento stati della finestra in Visual Studio](../../extensibility/ux-guidelines/media/0702-01_toolwindowstates.png "0702 01_ToolWindowStates")<br />Stati della finestra degli strumenti in Visual Studio
   
 #### <a name="single-instance-and-multi-instance"></a>A istanza singola e multi-istanza  
 Finestre degli strumenti sono a istanza singola o multi-istanza. Alcune finestre degli strumenti a istanza singola potrebbero essere associati alla finestra del documento attivo, mentre le finestre degli strumenti multi-istanza potrebbero non. Finestre degli strumenti di multi-istanza rispondono il **finestra &gt; nuova finestra** comando creando una nuova istanza della finestra. L'immagine seguente illustra una finestra degli strumenti, se si abilita il comando nuova finestra quando è attiva un'istanza della finestra:  
   
-![Comando 'Nuova finestra' quando un'istanza della finestra per abilitare la finestra dello strumento è attiva](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702 02_ToolWindowEnablingCommand")<br />Finestra degli strumenti, l'abilitazione di comando 'Nuova finestra' quando è attiva un'istanza della finestra  
+![Comando 'Nuova finestra' quando un'istanza della finestra per abilitare la finestra degli strumenti è attiva](../../extensibility/ux-guidelines/media/0702-02_toolwindowenablingcommand.png "0702 02_ToolWindowEnablingCommand")<br />Finestra degli strumenti, l'abilitazione di comando 'Nuova finestra' quando è attiva un'istanza della finestra  
   
 Le finestre degli strumenti a istanza singola possono essere nascoste o visualizzate, mentre le finestre degli strumenti multi-istanza possono essere chiusa nonché nascoste. Tutte le finestre degli strumenti possono essere ancorate, collegata a schede, a virgola mobile o impostare come finestra figlio Multiple-Document Interface (MDI) (simile a una finestra del documento). Tutte le finestre degli strumenti devono rispondere ai comandi nel menu finestra Gestione finestra appropriata:  
   
-![Comandi della finestra Gestione nel menu finestra di Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702 03_WindowManagementControls")<br />Comandi della finestra Gestione nel menu finestra di Visual Studio
+![Comandi di gestione di finestra nel menu finestra di Visual Studio](../../extensibility/ux-guidelines/media/0702-03_windowmanagementcontrols.png "0702 03_WindowManagementControls")<br />Comandi della finestra Gestione nel menu finestra di Visual Studio
   
 #### <a name="document-specific-tool-windows"></a>Finestre degli strumenti specifici del documento  
 Alcune finestre degli strumenti sono progettati per modificare in base a un determinato tipo di documento. Queste finestre vengono aggiornati continuamente per riflettere funzionalità applicabili alla finestra del documento attivo nell'IDE.  
@@ -149,7 +147,7 @@ Esempi di finestre degli strumenti elenco esplorabile sono Esplora soluzioni e l
 | Registri ||  
 | Thread ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>Convenzioni di editor  
+##  <a name="BKMK_DocumentEditorConventions"></a> Convenzioni di editor  
   
 ### <a name="document-interactions"></a>Interazioni di documento  
 "Documento anche" è lo spazio più grande all'interno dell'IDE e in cui l'utente in genere è stata esaminata la loro attenzione per completare le attività, assistite da finestre aggiuntive. Editor di documento rappresentano l'unità fondamentale di lavoro che l'utente viene aperto e salvato all'interno di Visual Studio. Mantenendo una forte di selezione a Esplora soluzioni o altre finestre gerarchia attivo. L'utente deve essere in grado di scegliere una di queste finestre di gerarchia e sapere in cui è contenuto il documento e la relativa relazione per la soluzione, il progetto o un altro oggetto radice fornito da un pacchetto di Visual Studio.  
@@ -179,7 +177,7 @@ Esistono diversi tipi di base diversi editor di documento e ognuno presenta una 
   
 -   **Editor di testo:** editor di codice, i file di log  
   
--   **Area di progettazione:** WPF Progettazione Windows Form  
+-   **Nell'area di progettazione:** WPF della finestra di progettazione, Windows Form  
   
 -   **Editor di stile di finestra di dialogo:** progettazione manifesto, proprietà del progetto  
   
@@ -257,7 +255,7 @@ Esistono diversi tipi di editor non che usa anche il documento. Mentre non modif
   
 -   Gli utenti devono essere in grado di interagire con i controlli solo con tastiera, l'editor di attivazione e la tabulazione tra i controlli o utilizzando i tasti di scelta standard.  
   
-##  <a name="BKMK_Dialogs"></a>Finestre di dialogo  
+##  <a name="BKMK_Dialogs"></a> Finestre di dialogo  
   
 ### <a name="introduction"></a>Introduzione  
 Finestre di dialogo in Visual Studio in genere deve supportare una unità discreta di lavoro dell'utente e quindi essere chiuse.  
@@ -307,18 +305,18 @@ Le finestre di dialogo ben progettate considerare gli elementi seguenti:
 #### <a name="content-organization"></a>Organizzazione del contenuto  
 Prendere in considerazione le differenze tra questi tipi di base delle finestre di dialogo:  
   
--   [Le finestre di dialogo semplice](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) presentare i controlli in una finestra modale. La presentazione potrebbe includere le variazioni del pattern di controllo complesso, inclusi un selettore del campo o una barra degli strumenti.  
+-   [Le finestre di dialogo semplice](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) presentare i controlli in una singola finestra modale. La presentazione potrebbe includere le variazioni del pattern di controllo complesso, inclusi un selettore del campo o una barra degli strumenti.  
   
--   [A più livelli di finestre di dialogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) vengono utilizzati per eseguire la maggior parte dell'area dello schermo quando un singolo elemento di interfaccia utente è costituito da più gruppi di controlli. Raggruppamenti della finestra di dialogo sono "sovrapposti" tramite controlli struttura a schede, i controlli elenco di navigazione o pulsanti in modo che l'utente può scegliere di raggruppamento per visualizzare in qualsiasi momento.  
+-   [A più livelli di finestre di dialogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) vengono utilizzate per sfruttare al meglio area dello schermo quando una singola informazione dell'interfaccia utente è costituito da più gruppi di controlli. Raggruppamenti della finestra di dialogo sono "sovrapposti" tramite controlli struttura a schede, i controlli elenco di navigazione o pulsanti in modo che l'utente può scegliere di raggruppamento per visualizzare in qualsiasi momento.  
   
--   [Procedure guidate](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sono utili per indirizzare l'utente attraverso una sequenza logica di passaggi verso il completamento di un'attività. Una serie di opzioni è disponibile in pannelli sequenziali, talvolta introdurre diversi flussi di lavoro ("rami") dipende da una selezione effettuata nel pannello precedente.  
+-   [Procedure guidate](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sono utili per indirizzare l'utente attraverso una sequenza logica dei passaggi verso il completamento di un'attività. Una serie di opzioni è disponibile in pannelli sequenziali, talvolta introdurre diversi flussi di lavoro ("rami") dipende da una selezione effettuata nel pannello precedente.  
   
-####  <a name="BKMK_SimpleDialogs"></a>Finestre di dialogo semplice  
+####  <a name="BKMK_SimpleDialogs"></a> Finestre di dialogo semplice  
 Una semplice finestra di dialogo è una presentazione dei controlli in una finestra modale. In questa presentazione potrebbe includere le variazioni del pattern di controllo complessi, ad esempio un selettore del campo. Per i dialoghi semplice, seguire il layout generale standard, nonché qualsiasi layout specifici necessari per i raggruppamenti di controllo complessa.
   
 ![> Crea chiave con nome sicuro è riportato un esempio di finestra di dialogo semplice in Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "0704 01_CreateStrongNameKey")<br />Crea chiave con nome sicuro è riportato un esempio di finestra di dialogo semplice in Visual Studio.
   
-####  <a name="BKMK_LayeredDialogs"></a>Finestre di dialogo a più livelli  
+####  <a name="BKMK_LayeredDialogs"></a> Finestre di dialogo a più livelli  
 Le finestre di dialogo a più livelli include schede, dashboard e strutture incorporate. Vengono utilizzati per ottimizzare immobiliare quando sono presenti più gruppi di controlli disponibili in un singolo elemento di interfaccia utente. I raggruppamenti sono disposti in modo che l'utente può scegliere di raggruppamento per visualizzare in qualsiasi momento.  
   
 Nel caso più semplice, il meccanismo per passare da raggruppamenti è un controllo struttura a schede. Sono disponibili varie alternative. Vedere l'assegnazione di priorità sulle e dei livelli per la scelta stile più appropriato.  
@@ -327,7 +325,7 @@ Il **strumenti &gt; opzioni** finestra di dialogo è riportato un esempio di fin
   
 ![Strumenti > Opzioni è riportato un esempio di finestra di dialogo a più livelli in Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "0704 02_ToolsOptions")<br />Strumenti > Opzioni è riportato un esempio di finestra di dialogo a più livelli in Visual Studio.
   
-####  <a name="BKMK_Wizards"></a>Procedure guidate  
+####  <a name="BKMK_Wizards"></a> Procedure guidate  
 Procedure guidate sono utili per indirizzare l'utente attraverso una sequenza di passaggi logica per il completamento di un'attività. Una serie di scelte disponibili nei pannelli sequenziali, e l'utente deve continuare a ogni passaggio prima di procedere al successivo. Una volta sufficienti valori predefiniti sono disponibili, il **fine** pulsante è abilitato.  
   
  Procedure guidate modale vengono utilizzate per le attività che:  
@@ -381,12 +379,12 @@ Essere coerente con le configurazioni del controllo esistenti che eseguono la st
   
 -   I pulsanti della Guida nella barra del titolo sono stati deprecati. Non verranno aggiunte alle nuove finestre di dialogo. Quando sono presenti, avviano un argomento della Guida che è concettualmente attinenti all'attività.  
   
- ![Specifiche delle linee guida per le barre del titolo nelle finestre di dialogo di Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704 03_TitleBarSpecs")<br />Specifiche delle linee guida per le barre del titolo nelle finestre di dialogo di Visual Studio
+ ![Le specifiche delle linee guida per le barre del titolo nelle finestre di dialogo di Visual Studio](../../extensibility/ux-guidelines/media/0704-03_titlebarspecs.png "0704 03_TitleBarSpecs")<br />Specifiche delle linee guida per le barre del titolo nelle finestre di dialogo di Visual Studio
   
 #### <a name="control-buttons"></a>Pulsanti di controllo  
 In generale, **OK**, **Annulla**, e **Guida** devono essere disposti orizzontalmente i pulsanti nell'angolo inferiore destro della finestra di dialogo. Se una finestra di dialogo dispone di diversi altri pulsanti nella parte inferiore della finestra di dialogo che presenta visual confusione con i pulsanti di controllo, è consentita la pila verticale alternativa.  
   
-![Configurazioni accettabile per i pulsanti di controllo nelle finestre di dialogo di Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704 04_ControlButtonConfig")<br />Configurazioni accettabile per i pulsanti di controllo nelle finestre di dialogo di Visual Studio
+![Le configurazioni accettabile per i pulsanti di controllo nelle finestre di dialogo di Visual Studio](../../extensibility/ux-guidelines/media/0704-04_controlbuttonconfig.png "0704 04_ControlButtonConfig")<br />Configurazioni accettabile per i pulsanti di controllo nelle finestre di dialogo di Visual Studio
   
 La finestra di dialogo deve includere un pulsante di controllo predefinito. Per determinare il comando migliore da utilizzare come valore predefinito, scegliere le opzioni seguenti (elencate in ordine di priorità):  
   
@@ -408,7 +406,7 @@ Non utilizzare i tasti di scelta per **OK**, **Annulla**, o **Guida** pulsanti. 
 #### <a name="imagery"></a>Immagini  
 Usare le immagini con cautela nelle finestre di dialogo. Non utilizzare icone grandi nelle finestre di dialogo semplicemente per utilizzi tutto lo spazio. Usare le immagini solo se sono una parte importante di trasmettere il messaggio all'utente, ad esempio le icone di avviso o di animazioni di stato.  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>Le priorità e sovrapposizione  
+###  <a name="BKMK_PrioritizingAndLayering"></a> Le priorità e sovrapposizione  
   
 #### <a name="prioritizing-your-ui"></a>Assegnazione di priorità dell'interfaccia utente  
 Potrebbe essere necessario portare alcuni elementi dell'interfaccia utente per forefront e inserire un comportamento più avanzato e in finestre di dialogo Opzioni (inclusi i comandi complessi). Offrire funzionalità utilizzate comunemente per forefront rendendo spazio e per renderlo visibile per impostazione predefinita nell'interfaccia utente con un'etichetta di testo quando viene visualizzata la finestra di dialogo.  
@@ -423,7 +421,7 @@ Esistono vantaggi e svantaggi in metodi diversi di sovrapposizione tramite i con
 | Il meccanismo di passaggio | Vantaggi e uso appropriato | Uso inappropriato e svantaggi |  
 | --- | --- | --- |  
 | Controllo Tab | Raggruppare logicamente finestre di dialogo in set correlati<br /><br />Utile per meno di cinque (o il numero di schede che rientrano in una riga tra la finestra di dialogo) pagine di controlli correlati in una finestra di dialogo<br /><br />Le etichette delle schede deve essere breve: uno o due parole in grado di identificare facilmente il contenuto<br /><br />Uno stile di finestra di dialogo comuni di sistema<br /><br />Esempio: **Esplora File &gt; le proprietà degli elementi** | Può essere difficile apportare etichette descrittive di breve<br /><br />In genere non è facilmente scalabile oltre cinque schede in una finestra di dialogo<br /><br />Appropriato se si dispone di un numero eccessivo di schede per una riga (usare una tecnica alternativa livelli)<br /><br />Non è estendibile |  
-| Navigazione nella barra laterale | Dispositivo di commutazione semplice in grado di supportare più categorie di schede<br /><br />Elenco semplice di categorie (alcuna gerarchia)<br /><br />Estendibile<br /><br />Esempio: **personalizzare... &gt;Aggiunta di comando** | Non un buon uso di spazio orizzontale se sono presenti meno di tre gruppi<br /><br />Attività può essere ottimizzata adatta per un elenco a discesa |  
+| Navigazione nella barra laterale | Dispositivo di commutazione semplice in grado di supportare più categorie di schede<br /><br />Elenco semplice di categorie (alcuna gerarchia)<br /><br />Estendibile<br /><br />Esempio: **personalizzare... &gt; Aggiungere comandi** | Non un buon uso di spazio orizzontale se sono presenti meno di tre gruppi<br /><br />Attività può essere ottimizzata adatta per un elenco a discesa |  
 | Controllo Tree | Consente di categorie illimitate<br /><br />Consente di raggruppamento e/o gerarchia di categorie<br /><br />Estendibile<br /><br />Esempio: **strumenti &gt; opzioni** | Gerarchie molto annidate possono causare un numero eccessivo di scorrimento orizzontale<br /><br />Visual Studio include un eccesso di visualizzazioni struttura ad albero |  
 | Wizard | Semplifica il completamento dell'operazione guidando l'utente passaggi sequenziali, basato su attività: la procedura guidata rappresenta un'attività di alto livello e i singoli pannelli rappresentano sottoattività necessarie per raggiungere l'intera attività<br /><br />Utile quando l'attività attraversa i limiti dell'interfaccia utente, come quando l'utente in caso contrario deve utilizzare più editor e finestre per completare l'attività<br /><br />Utile quando l'attività richiede l'esecuzione del branching<br /><br />Utile quando l'attività contiene le dipendenze tra i passaggi<br /><br />Utile quando più attività simili con fork di una decisione possono essere visualizzate in una finestra di dialogo per ridurre il numero di diverse finestre di dialogo simile | Non è appropriato per qualsiasi attività che non richiede un flusso di lavoro sequenza<br /><br />Gli utenti possono diventare sovraccarico e confusi da una procedura guidata con un numero eccessivo di passaggi<br /><br />Procedure guidate non dispongono implicitamente area dello schermo |  
   
@@ -437,7 +435,7 @@ In alternativa, un'interfaccia utente che offre tutte le funzionalità disponibi
 ##### <a name="adaptive-ui"></a>Interfaccia utente adattivo  
 Mostrare o nascondere l'interfaccia utente in base all'utilizzo o Self-segnalati esperienza di un utente è un altro modo per presentare l'interfaccia utente necessaria nascondendo altre parti. Questa operazione è sconsigliata in Visual Studio, come gli algoritmi per decidere quando visualizzare o nascondere l'interfaccia utente possono risultare difficili, e le regole saranno sempre errate per alcuni set di case.  
   
-##  <a name="BKMK_Projects"></a>Progetti  
+##  <a name="BKMK_Projects"></a> Progetti  
   
 ### <a name="projects-in-the-solution-explorer"></a>Progetti in Esplora soluzioni  
 La maggior parte dei progetti sono classificati come basato sul riferimento, basate su directory o misto. Tutti i tre tipi di progetti sono supportati contemporaneamente in Esplora soluzioni. La radice dell'esperienza utente durante l'utilizzo di progetti viene eseguita all'interno di questa finestra. Anche se i nodi di progetto diversi sono di riferimento, directory o i progetti di tipo modalità mista, è un modello di interazione comune che deve essere applicato a un punto di partenza prima divergente in motivi definiti dall'utente specifici del progetto.  
@@ -465,11 +463,11 @@ Progetti classificare se stesso come base di riferimento (in grado di rendere pe
   
 Da una prospettiva di trascinamento e rilascio, è consigliabile applicare le caratteristiche seguenti per ogni tipo di progetto all'interno di **Esplora**:  
   
--   **Progetto basato sul riferimento:** il punto importante è che il progetto è trascinando intorno a un riferimento a un elemento nel servizio di archiviazione. Quando un progetto basato sul riferimento funge da origine per un'operazione di spostamento, è necessario rimuovere solo il riferimento all'elemento dal progetto. L'elemento non deve effettivamente eliminato dal disco rigido. Quando un progetto basato sul riferimento funge da destinazione per un'operazione di spostamento (o copia), è necessario aggiungere un riferimento all'elemento di origine originale senza creare una copia privata dell'elemento.  
+-   **Progetto basato sul riferimento:** il punto importante è che il progetto sta trascinando intorno a un riferimento a un elemento nel servizio di archiviazione. Quando un progetto basato sul riferimento funge da origine per un'operazione di spostamento, è necessario rimuovere solo il riferimento all'elemento dal progetto. L'elemento non deve effettivamente eliminato dal disco rigido. Quando un progetto basato sul riferimento funge da destinazione per un'operazione di spostamento (o copia), è necessario aggiungere un riferimento all'elemento di origine originale senza creare una copia privata dell'elemento.  
   
--   **Progetto basato su directory:** trascinamento intorno l'elemento fisico anziché un riferimento da un punto di vista di trascinamento e rilascio, il progetto. Quando un progetto basato su directory funge da origine per un'operazione di spostamento, deve finire eliminazione dell'elemento fisico dal disco rigido, nonché di rimuoverlo dal progetto. Quando un progetto basato su directory funge da destinazione per un'operazione di spostamento (o copia), deve creare una copia dell'elemento di origine nella posizione di destinazione.  
+-   **Progetto basato su directory:** da un punto di vista di trascinamento e rilascio, il progetto sta trascinando intorno l'elemento fisico anziché un riferimento. Quando un progetto basato su directory funge da origine per un'operazione di spostamento, deve finire eliminazione dell'elemento fisico dal disco rigido, nonché di rimuoverlo dal progetto. Quando un progetto basato su directory funge da destinazione per un'operazione di spostamento (o copia), deve creare una copia dell'elemento di origine nella posizione di destinazione.  
   
--   **Progetto di destinazione mista:** da un punto di vista di trascinamento e rilascio, il comportamento di questo tipo di progetto è in base alla natura dell'elemento trascinato (un riferimento a un elemento nel servizio di archiviazione) o l'elemento stesso. Il comportamento corretto per i riferimenti e gli elementi fisici descritte in precedenza.  
+-   **Progetto di destinazione mista:** da un punto di vista di trascinamento e rilascio, il comportamento di questo tipo di progetto è basato sulla natura dell'elemento che viene trascinato (un riferimento a un elemento nel servizio di archiviazione) o all'elemento stesso. Il comportamento corretto per i riferimenti e gli elementi fisici descritte in precedenza.  
   
 Se fossero un solo tipo di progetto nel **Esplora**, operazioni di trascinamento e rilascio sarà molto semplice. Poiché ogni sistema del progetto ha la possibilità di definire il comportamento di trascinamento e rilascio, seguire determinate linee guida (in base al comportamento di trascinamento e rilascio di Windows Explorer) per garantire un'esperienza utente prevedibile:  
   
@@ -497,7 +495,7 @@ L'utente deve essere sempre in grado di determinare l'effetto di un'operazione d
 | :---: | --- | --- |  
 | ![Icona di "Nessun trascinamento" del mouse](../../extensibility/ux-guidelines/media/0706-01_mousenodrop.png "0706 01_MouseNoDrop") | Nessun rilascio | Elemento non può essere rilasciato nella posizione specificata. |  
 | ![Icona "copia" del mouse](../../extensibility/ux-guidelines/media/0706-02_mousecopy.png "0706 02_MouseCopy") | Copia | Elemento verrà copiato nel percorso di destinazione. |  
-| ![Mouse "Sposta" icona](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 03_MouseMove") | Move | Elemento verrà spostato nel percorso di destinazione. |  
+| ![Mouse "Sposta" sull'icona](../../extensibility/ux-guidelines/media/0706-03_mousemove.png "0706 03_MouseMove") | Move | Elemento verrà spostato nel percorso di destinazione. |  
 | ![Icona "Aggiungi riferimento" del mouse](../../extensibility/ux-guidelines/media/0706-04_mouseaddref.png "0706 04_MouseAddRef") | Aggiungi riferimento | Verrà aggiunto un riferimento all'elemento selezionato nel percorso di destinazione. |
 
 #### <a name="reference-based-projects"></a>progetti di tipo riferimento  
@@ -508,19 +506,19 @@ L'utente deve essere sempre in grado di determinare l'effetto di un'operazione d
 | Nessun modificatore | Operazione | Move | Collegamento |  
 | Nessun modificatore | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
 | Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Mantiene l'elemento originale |  
-| Nessun modificatore | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
+| Nessun modificatore | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_LINK` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |  
 | Maiusc + trascinamento | Operazione | Move | Nessun rilascio |  
 | Maiusc + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Nessun rilascio |  
 | Maiusc + trascinamento | Origine | Elimina riferimento all'elemento originale | Nessun rilascio |  
-| Maiusc + trascinamento | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | Nessun rilascio |  
+| Maiusc + trascinamento | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | Nessun rilascio |  
 | CTRL + trascinare | Operazione | Copia | Nessun rilascio |  
 | CTRL + trascinare | destinazione | Aggiunge il riferimento alla voce originale | Nessun rilascio |  
 | CTRL + trascinare | Origine | Mantiene il riferimento all'elemento originale | Nessun rilascio |  
-| CTRL + trascinare | Risultato | `DROPEFFECT_COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | Nessun rilascio |  
+| CTRL + trascinare | Risultato | `DROPEFFECT_COPY` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | Nessun rilascio |  
 | CTRL + MAIUSC + trascinamento | Operazione | Collegamento | Collegamento |  
 | CTRL + MAIUSC + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
 | CTRL + MAIUSC + trascinamento | Origine | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |  
-| CTRL + MAIUSC + trascinamento | Risultato | `DROPEFFECT_LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
+| CTRL + MAIUSC + trascinamento | Risultato | `DROPEFFECT_LINK` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_LINK` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |  
 | CTRL + MAIUSC + trascinamento | Nota | Come il comportamento di trascinamento e rilascio per i tasti di scelta rapida in Esplora risorse. ||  
 | Taglia e Incolla | Operazione | Move | Collegamento |  
 | Taglia e Incolla | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge il riferimento alla voce originale |  
@@ -538,15 +536,15 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilasci
 | --- | --- | --- | --- |  
 | Nessun modificatore | Operazione | Move | Move |  
 | Nessun modificatore | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
-| Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Elimina riferimento all'elemento originale | | Nessun modificatore | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
+| Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Elimina riferimento all'elemento originale | | Nessun modificatore | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |  
 | Maiusc + trascinamento | Operazione | Move | Move |  
 | Maiusc + trascinamento | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
 | Maiusc + trascinamento | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale |
-| Maiusc + trascinamento | Risultato | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
+| Maiusc + trascinamento | Risultato | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |  
 | CTRL + trascinare | Operazione | Copia | Copia |  
 | CTRL + trascinare | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
 | CTRL + trascinare | Origine | Mantiene il riferimento all'elemento originale | Mantiene il riferimento all'elemento originale |  
-| CTRL + trascinare | Risultato | `DROPEFFECT_COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |  
+| CTRL + trascinare | Risultato | `DROPEFFECT_COPY` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_COPY` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |  
 | CTRL + MAIUSC + trascinamento | | Nessun rilascio | Nessun rilascio |  
 | Taglia e Incolla | Operazione | Move | Move |  
 | Taglia e Incolla | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |  
@@ -565,19 +563,19 @@ Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilasci
 | Nessun modificatore | Operazione | Move | Move |
 | Nessun modificatore | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | Nessun modificatore | Origine | Elimina riferimento all'elemento originale | Elimina riferimento all'elemento originale |
-| Nessun modificatore | Risultato | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
+| Nessun modificatore | Risultato | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` e l'elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
 | Maiusc + trascinamento | Operazione | Move | Move |
 | Maiusc + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | Maiusc + trascinamento | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale | 
-| Maiusc + trascinamento | Risultato | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ MOVE`viene restituito come azione da `::Drop` e l'elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
+| Maiusc + trascinamento | Risultato | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ MOVE` viene restituito come azione da `::Drop` e l'elemento viene eliminato dalla posizione originale nel servizio di archiviazione |
 | CTRL + trascinare | Operazione | Copia | Copia |
 | CTRL + trascinare | destinazione | Aggiunge il riferimento alla voce originale | Elemento di copie da percorso di destinazione |
 | CTRL + trascinare | Origine | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |
-| CTRL + trascinare | Risultato | `DROPEFFECT_ COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ COPY`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |
+| CTRL + trascinare | Risultato | `DROPEFFECT_ COPY` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ COPY` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |
 | CTRL + MAIUSC + trascinamento | Operazione | Collegamento | Collegamento |
 | CTRL + MAIUSC + trascinamento | destinazione | Aggiunge il riferimento alla voce originale | Aggiunge riferimento all'elemento di origine originale |
 | CTRL + MAIUSC + trascinamento | Origine | Mantiene il riferimento all'elemento originale | Mantiene l'elemento originale |
-| CTRL + MAIUSC + trascinamento | Risultato | `DROPEFFECT_ LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ LINK`viene restituito come azione da `::Drop` e l'elemento rimane nella posizione originale nel servizio di archiviazione |
+| CTRL + MAIUSC + trascinamento | Risultato | `DROPEFFECT_ LINK` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione | `DROPEFFECT_ LINK` viene restituito come azione da `::Drop` ed elemento rimane nella posizione originale nel servizio di archiviazione |
 | Taglia e Incolla | Operazione | Move | Move |
 | Taglia e Incolla | destinazione | Elemento di copie da percorso di destinazione | Elemento di copie da percorso di destinazione |
 | Taglia e Incolla | Origine | Elimina riferimento all'elemento originale | Elimina elemento dal percorso originale |

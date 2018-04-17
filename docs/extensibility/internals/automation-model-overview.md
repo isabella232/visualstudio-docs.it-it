@@ -1,26 +1,24 @@
 ---
 title: Cenni preliminari sul modello di automazione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
 - extensibility
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 208357343a3e77e29b1dc0a98b6159c5ac3f957e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a9369bb6074bb294223051ba7dfa158648fe0cad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automation-model-overview"></a>Cenni preliminari sul modello di automazione
 Il modello di automazione è costituito da un set di oggetti su cui è possibile scrivere un'estensione o un componente aggiuntivo di Visual Studio. Un componente aggiuntivo è un'applicazione che è possibile modificare l'ambiente di Visual Studio e automatizzare le attività comuni. Estensione di Visual Studio è possibile creare componenti personalizzati di Visual Studio o aggiungere le funzionalità dei componenti standard, ad esempio l'editor di testo.  
@@ -28,7 +26,7 @@ Il modello di automazione è costituito da un set di oggetti su cui è possibile
 ## <a name="objects-in-the-automation-model"></a>Oggetti nel modello di automazione  
  Il modello di automazione è costituito da gruppi di oggetti che controllano i principali aspetti dell'ambiente comune correlati. Di seguito è un diagramma che mostra il set completo di oggetti che compongono il modello di automazione.  
   
- ![Oggetto grafico automazione di Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
+ ![Grafico di oggetti di Visual Studio automazione](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Oggetti di automazione di Visual Studio  
   
  Per ulteriori informazioni, vedere [estensione dell'ambiente Visual Studio](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  

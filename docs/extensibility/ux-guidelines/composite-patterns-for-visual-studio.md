@@ -1,23 +1,21 @@
 ---
 title: Modelli compositi per Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Modelli compositi combinano elementi di progettazione e l'interazione in configurazioni distinte. Alcuni dei più importanti compositi modelli in Visual Studio per quanto riguarda la coerenza includono:  
@@ -32,7 +30,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
 -   [Input tocco](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Visualizzazione dei dati  
+##  <a name="BKMK_DataVisualization"></a> Visualizzazione dei dati  
   
 ### <a name="overview"></a>Panoramica  
  I grafici sono uno strumento visivo per aggregare e visualizzare i dati per migliorare il processo decisionale. Consentono agli utenti di affrontare una grande quantità di dati ma poco vale a dire vedere ciò che richiede attenzione e ciò che potrebbe essere necessario un'azione.  
@@ -85,7 +83,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 |![Campione 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Campione B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Per gli oggetti dell'interfaccia utente e la lettura  
+##  <a name="BKMK_OnObjectUI"></a> Per gli oggetti dell'interfaccia utente e la lettura  
  In questa sezione fornisce il contesto di visualizzazione, noto anche come visualizzazione Anteprima codice, un tipo di interfaccia utente per gli oggetti univoci a Visual Studio.  
   
 ### <a name="overview"></a>Panoramica  
@@ -110,11 +108,11 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 #### <a name="relationships-between-master-and-detail-content"></a>Relazioni tra schema e i dettagli del contenuto  
  Informazioni al momento di attenzione viene utilizzate per visualizzare una relazione tra il contenuto che l'utente è incentrata sul (il contenuto "master") e altre correlate contenuto (il contenuto "detail"). In questo modello, il contenuto del dettaglio è chiaramente correlato al contenuto, l'utente sta usando e può essere visualizzato vicino al contenuto master. Informazioni aggiuntive o informazioni che non possono essere riepilogate senza sovraccaricare il contenuto master devono seguire un altro modello, ad esempio una finestra degli strumenti.  
   
--   **Sempre** visualizzare il contenuto di dettaglio in prossimità del contenuto master.  
+-   **Sempre** visualizzare il contenuto di dettaglio in stretta vicinanza al contenuto principale.  
   
--   **Sempre** assicurarsi che il contenuto di dettaglio ancora consente all'utente di rimanere concentrati sul contenuto del master. Spesso, il modo migliore per ottenere questo risultato è per il rendering del contenuto di dettaglio come vicino del contenuto master come possibili. Questa operazione può essere eseguita per il rendering del contenuto di dettaglio in una finestra popup accanto al contenuto principale o eseguendo il rendering inline contenuto dettaglio sotto il contenuto principale.  
+-   **Sempre** verificare che il contenuto di dettaglio consenta comunque di un utente di rimanere concentrati sul contenuto del master. Spesso, il modo migliore per ottenere questo risultato è per il rendering del contenuto di dettaglio come vicino del contenuto master come possibili. Questa operazione può essere eseguita per il rendering del contenuto di dettaglio in una finestra popup accanto al contenuto principale o eseguendo il rendering inline contenuto dettaglio sotto il contenuto principale.  
   
--   **Mai** utilizzare informazioni al momento di attenzione che accetta l'utente dal contenuto master. Se è necessario visualizzare il contenuto di dettaglio separatamente, esporre un'azione esplicita che consente all'utente di eseguire questa operazione.  
+-   **Mai** utilizzare informazioni al momento della attenzione che accetta l'utente dal contenuto master. Se è necessario visualizzare il contenuto di dettaglio separatamente, esporre un'azione esplicita che consente all'utente di eseguire questa operazione.  
   
 #### <a name="design-details"></a>Dettagli di progettazione  
  Dopo aver determinato che l'interfaccia utente per gli oggetti è la scelta giusta, sono disponibili quattro considerazioni di progettazione principale:  
@@ -122,13 +120,13 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 1.  **Persistenza:** il contenuto deve essere permanente o temporaneo?   
     Gli utenti dovranno mantenere visibili per fare riferimento o interagire con le informazioni? O gli utenti dovranno riepilogo rapidamente le informazioni e quindi continuare con l'attività principale?  
   
-2.  **Tipo di contenuto:** il contenuto sarà informativo, spostamento o utilizzabili?   
+2.  **Tipo di contenuto:** il contenuto sarà informativo, utilizzabili o per la navigazione?   
     L'utente necessita di ulteriori dettagli sul contenuto master? L'utente necessario completare un'attività che influisce sul contenuto master? O l'utente deve essere indirizzato a un'altra risorsa?  
   
 3.  **Tipo di indicatore:** un indicatore ambiente ha senso?   
     Le informazioni è possono essere riepilogate in modo utile e visualizzate senza sovraccaricare il contenuto principale?  
   
-4.  **I movimenti:** movimenti ciò che verrà utilizzato per richiamare e chiudere l'interfaccia utente?   
+4.  **I movimenti:** cosa movimenti verrà utilizzato per richiamare e chiudere l'interfaccia utente?   
     Come verrà visualizzare il contenuto di dettaglio e inviarlo immediatamente l'utente? È il valore per l'aggiunta di un'azione, ad esempio il blocco per passare tra gli stati temporanei e permanenti?  
   
  Ognuno di questi punti di quattro decisione avrà un impatto sui componenti principali dell'interfaccia utente per gli oggetti.  
@@ -182,13 +180,13 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
 1.  **Inline:** un relatore inline, ad esempio la visualizzazione di anteprima che è stato introdotto nell'Editor di Visual Studio 2013 codice rende lo spazio per il nuovo contenuto spostando il contenuto esistente.  
   
-    -   **Preferisce** relatori inline, se si prevede che gli utenti desiderano dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto presente.  
+    -   **Preferisce** relatori inline se si prevede che gli utenti desiderano dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto presente.  
   
-    -   **Evitare** relatori inline, se si prevede che gli utenti dovranno osservare le informazioni a cui è presente, quindi continuare con l'attività principale con interruzioni minime.  
+    -   **Evitare** relatori inline se si prevede che gli utenti dovranno osservare le informazioni è presente, quindi continuare con l'attività principale con un'interruzione minima.  
   
-2.  **Numeri reali:** relatore mobile viene posizionato più vicino al contenuto selezionato possibile ma non modifica il layout del contenuto esistente. Possono essere utilizzate diverse strategie, ad esempio la visualizzazione di un pannello mobile contenuto tramite il più vicino di spazio disponibile per il simbolo selezionato.  
+2.  **Mobile:** relatore mobile viene posizionato più vicino al contenuto selezionato possibile ma non modifica il layout del contenuto esistente. Possono essere utilizzate diverse strategie, ad esempio la visualizzazione di un pannello mobile contenuto tramite il più vicino di spazio disponibile per il simbolo selezionato.  
   
-    -   **Preferisce** mobile relatori se si prevede che gli utenti dovranno osservare le informazioni a cui è presente, quindi continuare con l'attività principale con interruzioni minime.  
+    -   **Preferisce** mobile relatori se si prevede che gli utenti dovranno osservare le informazioni è presente, quindi continuare con l'attività principale con un'interruzione minima.  
   
     -   **Evitare** mobile relatori se si prevede che gli utenti dovranno dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto è presente.  
   
@@ -199,40 +197,40 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
     -   **Sempre** utilizzare la rappresentazione canonica di informazioni da visualizzare. Ad esempio, codice dovrebbe essere simile al codice, è stata completata con evidenziazione della sintassi e deve rispettare qualsiasi tipo di carattere e altre impostazioni di ambiente, che l'utente ha impostato.  
   
-    -   **Sempre** prendere in considerazione che supporta operazioni sul contenuto di tipo informativo che sarebbe possibile se stesse informazioni viene presentate come contenuto master. Ad esempio, se la presentazione di codice esistente all'interno di un contenitore di interfacce utente per gli oggetti di considerare la possibilità di esplorare e modificare il codice di supporto.  
+    -   **Sempre** prendere in considerazione che supportano tutte le azioni sul contenuto informativo che sarebbe possibile se stesse informazioni viene presentate come contenuto master. Ad esempio, se la presentazione di codice esistente all'interno di un contenitore di interfacce utente per gli oggetti di considerare la possibilità di esplorare e modificare il codice di supporto.  
   
-    -   **Sempre** è consigliabile utilizzare un colore di sfondo diverso se la presentazione di contenuto informativo che rappresenta uno stato futuro potenziale.  
+    -   **Sempre** è possibile usare un colore di sfondo diversi se la presentazione di contenuto informativo che rappresenta uno stato futuro potenziale.  
   
 2.  Eseguibili: alcuni contenitori di interfaccia utente per gli oggetti fornirà la possibilità di eseguire alcune azioni sul contenuto master, ad esempio eseguire un'operazione di refactoring.  
   
     -   **Sempre** posizionare i comandi utilizzabili separatamente dal contenuto informativo.  
   
-    -   **Sempre** abilitare e disabilitare le azioni quando appropriato.  
+    -   **Sempre** abilitare e disabilitare le azioni nei casi appropriati.  
   
     -   **Sempre** fare riferimento alle linee guida standard per la rappresentazione di comandi all'interno di finestre di dialogo.  
   
-    -   **Sempre** mantenere minimo il numero di azioni che vengono esposte in un contenitore dell'interfaccia utente per gli oggetti in assoluto. L'interazione con l'interfaccia utente dell'oggetto deve essere un'esperienza semplice e veloce. L'utente non necessario impiegare energia sulla gestione di contenitore per gli oggetti dell'interfaccia utente stesso.  
+    -   **Sempre** mantenere il numero di azioni che vengono esposte in un contenitore di interfaccia utente in oggetti inattività minimo. L'interazione con l'interfaccia utente dell'oggetto deve essere un'esperienza semplice e veloce. L'utente non necessario impiegare energia sulla gestione di contenitore per gli oggetti dell'interfaccia utente stesso.  
   
-    -   **Sempre** considerare come e quando un contenitore di interfacce utente per gli oggetti verrà chiuse o chiusa. Come procedura consigliata, qualsiasi azione che si conclude la finestra di dialogo tra lo schema e i dettagli del contenuto deve chiudere il contenitore dell'interfaccia utente per gli oggetti quando viene richiamata l'azione.  
+    -   **Sempre** prendere in considerazione come e quando un contenitore di interfacce utente per gli oggetti verrà chiuse o chiusa. Come procedura consigliata, qualsiasi azione che si conclude la finestra di dialogo tra lo schema e i dettagli del contenuto deve chiudere il contenitore dell'interfaccia utente per gli oggetti quando viene richiamata l'azione.  
   
-3.  **Spostamento:** alcuni per gli oggetti contenitori dell'interfaccia utente includono i collegamenti che consentono all'utente a un'altra finestra o applicazione, ad esempio l'apertura di un articolo MSDN nel web browser dell'utente.  
+3.  **Spostamento:** alcuni per gli oggetti contenitori dell'interfaccia utente includono i collegamenti che accettano l'utente a un'altra finestra o applicazione, ad esempio l'apertura di un articolo MSDN nel web browser dell'utente.  
   
     -   **Sempre** anteporre qualsiasi collegamento ipertestuale con "Aperto" in modo che gli utenti verranno non essere sorprendente esplorato alcuni altri contenuti.  
   
-    -   **Sempre** separare i collegamenti dai collegamenti utilizzabili.  
+    -   **Sempre** separare collegamenti dai collegamenti utilizzabili.  
   
 #### <a name="ambient-indicators-optional"></a>Indicatori di ambiente (facoltativi)  
  Gli indicatori di ambiente possono essere complesso, inclusi testo presentate in un colore a contrasto dal resto del codice, o ovvia, include i simboli tickler come sottolineature a zigzag e icone di smart tag. Gli indicatori di ambiente comunicano la disponibilità di informazioni aggiuntive attinenti. Idealmente, forniscono informazioni utili anche senza la necessità di interagire con essi.  
   
--   **Sempre** posizionare un indicatore di ambiente in modo che non distrarre o sovraccarico dell'utente. Se non è possibile posizionare un indicatore di ambiente in modo, si consideri un'altra soluzione.  
+-   **Sempre** posizionare un indicatore di ambiente in modo che non distrarre o sovraccarico l'utente. Se non è possibile posizionare un indicatore di ambiente in modo, si consideri un'altra soluzione.  
   
--   **Sempre** posizionare l'indicatore di ambiente a più vicino possibile al contenuto che è correlato al.  
+-   **Sempre** posizionare più vicino possibile al contenuto che è correlato l'indicatore di ambiente.  
   
 -   **Sempre** tenta di creare un indicatore che riepiloga le informazioni disponibili. Si consiglia di fornire un conteggio del numero di elementi di dati disponibili (ad esempio, "3 riferimenti" anziché semplicemente "Riferimenti") o pensare a un altro modo per riepilogare i dati.  
   
     -   In casi in cui i dati per un indicatore non sono sempre calcolati e visualizzati immediatamente fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri, ad esempio, le modifiche che riflettono gli aggiornamenti ai dati disponibili, simili a quello che consente di aggiornare il riquadro in tempo reale di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta l'animazione.  
   
--   **Mai** aggiungere ulteriori indicatori a un utente può richiedere ragionevole per una determinata parte del contenuto. Gli indicatori di ambiente devono essere utili senza richiedere alcuna interazione da parte dell'utente. Gli indicatori di perdono i loro ambiente se richiedono overflow e altri controlli di gestione per importarli in vista.  
+-   **Mai** aggiungere ulteriori indicatori rispetto a un utente può richiedere ragionevolmente per una determinata parte del contenuto. Gli indicatori di ambiente devono essere utili senza richiedere alcuna interazione da parte dell'utente. Gli indicatori di perdono i loro ambiente se richiedono overflow e altri controlli di gestione per importarli in vista.  
   
 #### <a name="gestures"></a>Movimenti  
  Un aspetto fondamentale che consente all'utente di concentrarsi sul contenuto master è supportando i movimenti di destra per aprire e chiudere il contenuto di dettagli aggiuntivi.  
@@ -247,11 +245,11 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
 -   **Sempre** Elimina il contenuto di dettaglio ogni volta che l'utente preme il tasto Esc.  
   
--   **Sempre** prendere in considerazione il contesto dell'interfaccia utente per gli oggetti. Per contenuto relatori che consentono l'interazione all'interno del contenitore, valutare attentamente se si desidera visualizzare informazioni aggiuntive al passaggio del mouse, che è probabile che sia problematica per flusso di lavoro dell'utente.  
+-   **Sempre** prendere in considerazione il contesto dell'interfaccia utente dell'oggetto. Per contenuto relatori che consentono l'interazione all'interno del contenitore, valutare attentamente se si desidera visualizzare informazioni aggiuntive al passaggio del mouse, che è probabile che sia problematica per flusso di lavoro dell'utente.  
   
--   **Mai** visualizzare il contenuto al passaggio del mouse che sembra essere modificabile o invita l'interazione dell'utente. Questo comportamento può risultare frustrante per gli utenti se si tenta di spostare il cursore sul contenuto del dettaglio, come il comportamento per una descrizione comandi standard consiste nel chiudere immediatamente quando il cursore non è più sul master contenuto che l'ha prodotta.  
+-   **Mai** visualizzare il contenuto al passaggio del mouse che sembra modificabili o invita l'interazione dell'utente. Questo comportamento può risultare frustrante per gli utenti se si tenta di spostare il cursore sul contenuto del dettaglio, come il comportamento per una descrizione comandi standard consiste nel chiudere immediatamente quando il cursore non è più sul master contenuto che l'ha prodotta.  
   
-##  <a name="BKMK_SelectionModels"></a>Modelli di selezione  
+##  <a name="BKMK_SelectionModels"></a> Modelli di selezione  
   
 ### <a name="overview"></a>Panoramica  
  Un modello di selezione è il meccanismo utilizzato per indicare e confermare le operazioni su uno o più oggetti di interesse all'interno dell'interfaccia utente. Questo argomento vengono illustrati i modelli di interazione di selezione all'interno degli editor di documento di Visual Studio: editor di testo, aree di progettazione e modellazione superfici.  
@@ -289,7 +287,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
  ![Selezione della finestra degli strumenti attiva in Visual Studio](../../extensibility/ux-guidelines/media/0713-02_activetoolwindow.png "0713 02_ActiveToolWindow")  
   
- **Finestra degli strumenti attiva che mostra la selezione primaria di un nodo**  
+ **Finestra degli strumenti attiva con selezione primaria di un nodo**  
   
  ![Selezione della finestra degli strumenti inattiva in Visual Studio](../../extensibility/ux-guidelines/media/0713-03_inactivetoolwindow.png "0713 03_InactiveToolWindow")  
   
@@ -309,9 +307,9 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 #### <a name="region-selection-box-selection"></a>Area selezione (finestra)  
  Visual Studio supporta selezioni per l'area nell'editor di testo e si tratta della selezione. Selezione della casella consente all'utente di selezionare un'area di testo che segue il flusso di testo normale. Come con la selezione di testo standard, la selezione deve essere contigua. Selezione della casella viene avviata tenendo premuto ALT mentre si trascina con il mouse. Selezione della casella può essere avviata anche tenendo premuto il tasto MAIUSC e Alt mentre utilizzando i tasti di direzione per indicare l'area di selezione. Selezione della casella viene utilizzato l'evidenziazione di selezione normale e Mostra il cursore del punto di inserimento lampeggiante alla fine dell'area di selezione.  
   
- ![Casella internazionali &#40; &#41; selezione in Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
+ ![Internazionali &#40;finestra di&#41; selezione in Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
   
- **Selezione area (casella) in Visual Studio**  
+ **Selezione area (finestra) in Visual Studio**  
   
 #### <a name="text-selection-appearance"></a>Aspetto di selezione del testo  
  È possibile personalizzare i colori utilizzati per la selezione nell'editor attiva e inattiva. Per personalizzare l'aspetto visivo dell'editor, un utente può passare a **strumenti > Opzioni**e quindi cercare in **ambiente > tipi di carattere e colori > Editor di testo**.  
@@ -325,7 +323,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
 -   **Supporto per gli stati di selezione primaria e secondaria.** Un editor può fornire selezione primaria e secondaria stati in modo che gli oggetti possono essere modificati in contemporanea allineati tra loro, ridimensionare, e così via.  
   
--   **Supporto di modificando sul posto.** Editor possono anche consentire il contenuto dei rispettivi oggetti di grafiche per essere modificato. Ad esempio, un rettangolo potrebbe contenere anche il testo all'interno che può essere modificato dall'utente. Inoltre, che il testo potrebbe essere centrato o giustificato. La modifica sul posto richiede un livello più dettagliato dell'interazione dell'utente e pertanto richiede un set appropriato di segnali visivi per la presentazione di informazioni sullo stato all'utente.  
+-   **Supporto di modifica sul posto.** Editor possono anche consentire il contenuto dei rispettivi oggetti di grafiche per essere modificato. Ad esempio, un rettangolo potrebbe contenere anche il testo all'interno che può essere modificato dall'utente. Inoltre, che il testo potrebbe essere centrato o giustificato. La modifica sul posto richiede un livello più dettagliato dell'interazione dell'utente e pertanto richiede un set appropriato di segnali visivi per la presentazione di informazioni sullo stato all'utente.  
   
 #### <a name="mouse-interaction"></a>Interazione del mouse  
   
@@ -340,7 +338,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 |Editor perde lo stato attivo|Disattiva la modalità di modifica sul posto, anche se l'oggetto conserva il contenuto e l'aspetto che aveva durante l'ultimo stato di selezione/operazione.|  
 |Selezione oggetti|Indicato da un bordo, linea punteggiata o altro trattamento visivamente distinto per evidenziare il limite dell'oggetto.|  
 |Ridimensionare un oggetto selezionato|Indicato da quadratini di ridimensionamento.<br /><br /> Un oggetto ridimensionabile con otto quadratini di ridimensionamento, che rappresenta ciascuna direzione in cui può essere ridimensionata. Un minor numero di handle possono essere utilizzati se l'oggetto può essere ridimensionata solo in determinate direzioni. Quando si ridimensiona un oggetto down in otto handle non è interattivi, quattro handle possono essere utilizzati. Le dimensioni di handle devono essere collegate alle metriche a bordo e il bordo di finestra con il **GetSystemMetrics** funzione API dimensioni proporzionalmente la risoluzione dello schermo.<br /><br /> ![Quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-05_resizehandles.png "0713 05_ResizeHandles")|  
-|Ruotare un oggetto selezionato|![Punti di rotazione](../../extensibility/ux-guidelines/media/0713-06_rotate.png "0713 06_Rotate")|  
+|Ruotare un oggetto selezionato|![Ruota gli handle](../../extensibility/ux-guidelines/media/0713-06_rotate.png "0713 06_Rotate")|  
   
 #### <a name="keyboard-interaction"></a>Interazione della tastiera  
   
@@ -377,7 +375,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 #### <a name="disjoint-and-region-selections"></a>Non contigue e le selezioni di area  
  Editor oggetto grafico devono supportare selezioni non contigue. Si noti che questo grafico non mostra l'aspetto del controllo per Visual Studio. Vedere [aspetto Selezione oggetto grafico](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_GraphicalObjectSelectionAppearance) di specifiche dettagliate di visual.  
   
- ![Non contigue e area selettori](../../extensibility/ux-guidelines/media/0713-07_disjointregionselectors.png "0713 07_DisjointRegionSelectors")  
+ ![Non contigue e dai selettori regione](../../extensibility/ux-guidelines/media/0713-07_disjointregionselectors.png "0713 07_DisjointRegionSelectors")  
   
  **Selezione non contiguo**  
   
@@ -394,28 +392,28 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
  **Selezione primaria con due selezioni secondarie**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Aspetto di selezione di oggetti grafici  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aspetto di selezione di oggetti grafici  
  Quadratini di ridimensionamento sono quadratini disegnati in un modello rettangolare intorno al rettangolo di selezione dell'oggetto. Il grafico seguente vengono illustrati esempi dei vari stati che può disporre di un oggetto grafico con handle di ridimensionamento e aspetto modifica sul posto. Le dimensioni degli handle devono essere collegate al bordo della finestra e l'utilizzo di metriche di bordo di **GetSystemMetrics** API.  
   
 |Stato|Aspetto|Dettagli su Visual|  
 |-----------|----------------|--------------------|  
-|**Non selezionato**|Impostazione predefinita|![Stato del pulsante predefinito](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
-|**Selezione primaria**|Ridimensionabili|![Selezione primaria con quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Selezione primaria con ridimensionare gli handle &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
-|**Selezione primaria**|Non ridimensionabile|![Selezione primaria senza quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Selezione primaria senza ridimensionare gli handle &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
-|**Selezione primaria**|Bloccato|![Selezione primaria bloccata](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Selezione primaria bloccata &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
-|**Selezione secondaria**|Ridimensionabili|![Selezione secondaria con quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Selezione secondaria con ridimensionare gli handle &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
-|**Selezione secondaria**|Non ridimensionabile|![Selezione secondaria senza quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Selezione secondaria senza quadratini &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
-|**Selezione secondaria**|Bloccato|![Selezione secondaria bloccata](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Selezione secondaria bloccata &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
-|**Attivo dell'interfaccia utente**|Impostazione predefinita|![Lo stato attivo dell'interfaccia utente](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Interfaccia utente nello stato attivo &#40; ingrandito &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
+|**Non selezionato**|Impostazione predefinita|![Pulsante stato predefinito](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
+|**Selezione primaria**|Ridimensionabili|![Selezione primaria con quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Selezione primaria con quadratini di ridimensionamento &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
+|**Selezione primaria**|Non ridimensionabile|![Selezione primaria senza quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Selezione primaria senza quadratini di ridimensionamento &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
+|**Selezione primaria**|Bloccato|![Selezione primaria bloccata](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Selezione primaria bloccata &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
+|**Selezione secondaria**|Ridimensionabili|![Selezione secondaria con quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Selezione secondaria con quadratini di ridimensionamento &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
+|**Selezione secondaria**|Non ridimensionabile|![Selezione secondaria senza quadratini di ridimensionamento](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Selezione secondaria senza quadratini di ridimensionamento &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
+|**Selezione secondaria**|Bloccato|![Selezione secondaria bloccata](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Selezione secondaria bloccata &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
+|**Attivo dell'interfaccia utente**|Impostazione predefinita|![Stato attivo dell'interfaccia utente](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Stato attivo dell'interfaccia utente &#40;zoom&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Visualizzazione di modelli di selezione  
   
 #### <a name="tree-view"></a>Visualizzazione albero  
  Selezione di una visualizzazione albero viene visualizzato con una semplice evidenziazione. Se l'utente fa clic sul nome di un nodo o a un'icona di nodo, viene selezionato il nodo. Le icone triangolari a sinistra del nodo di espandere o il controllo struttura ad albero di contratto ma non influenzano la selezione dell'utente, con una sola eccezione: dopo la compressione di un nodo padre quando la selezione è su un elemento figlio di tale nodo, la selezione si sposta all'elemento padre.  
   
- ![Visualizzazione ad albero tipica in Visual Studio](../../extensibility/ux-guidelines/media/0713-25_treeview.png "0713 25_TreeView")  
+ ![Visualizzazione albero tipica in Visual Studio](../../extensibility/ux-guidelines/media/0713-25_treeview.png "0713 25_TreeView")  
   
- **Visualizzazione ad albero tipica in Visual Studio**  
+ **Visualizzazione albero tipica in Visual Studio**  
   
  Visualizzazioni dell'albero possono supportare selezioni contigue e non contigue, anche su più livelli nell'albero. Contigui o non contigui nei nodi dell'albero visibile è necessario effettuare le selezioni multiple. Se si comprime un nodo, la selezione non contiguo andrà persa e il nodo che è stato compresso Ottiene la selezione. In questo modo, l'utente può visualizzare i nodi che saranno interessati da un'operazione. Quando i nodi sono compressi, diventa chiaro quali nodi potrebbero risentirne.  
   
@@ -435,7 +433,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
  Il concetto chiave selezione nell'elenco è che è basato su righe, il che significa che quando la selezione viene effettuata all'intera riga è selezionato come unità. Al contrario, griglie possono consentire a celle specifiche da selezionare senza influire su qualsiasi altro aspetto della riga. Griglie potrebbero contenere anche una gerarchia di righe nidificate (ad esempio una rapida TreeGrid) che consentono l'intera rami della gerarchia selezionati e deselezionati interagendo con le righe padre. Negli elenchi di selezione viene visualizzata per un colore di evidenziazione semplice per l'intera riga di dati. Lo stato attivo viene visualizzato per un singolo pixel punteggiato bordo la riga modificabile corrente o la cella (riga se tutte le celle sono di sola lettura).  
   
 > [!NOTE]
->  **Lo stato attivo** e **selezione** sono concetti diversi. *Lo stato attivo* è un'indicazione dell'interfaccia utente è assegnato l'elemento per ricevere input diretto in modo non esplicito in un altro oggetto, mentre *selezione* fa riferimento allo stato di inclusione di un oggetto in un set di oggetti su cui successivi possono eseguire operazioni.  
+>  **Messa a fuoco** e **selezione** sono concetti diversi. *Messa a fuoco* è un'indicazione dell'interfaccia utente è assegnato l'elemento per ricevere l'input in modo non esplicito indirizzata a un altro oggetto, mentre *selezione* fa riferimento allo stato dell'iscrizione di un oggetto in un set di oggetti su cui successivi possono eseguire operazioni.  
   
  Le selezioni negli elenchi possono essere contigui, non contiguo, o area geografica. Quando selezioni multiple sono consentite, contigui e non contiguo selezione sempre deve essere supportate, mentre il supporto per le selezioni area (casella) è facoltativo. Selezioni area vengono avviate mediante il trascinamento nello spazio vuoto del corpo dell'elenco.  
   
@@ -475,7 +473,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
   
 -   Il tasto F2 attiva la modifica sul posto per la cella attualmente selezionata.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Persistenza e il salvataggio delle impostazioni  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistenza e il salvataggio delle impostazioni  
   
 ### <a name="overview"></a>Panoramica  
  Anche se ogni componente del software in Visual Studio è in genere responsabile per il proprio stato e la persistenza, Visual Studio Salva automaticamente le impostazioni in alcuni casi, ad esempio con posizioni e le dimensioni di finestra. Nella tabella seguente è una combinazione di impostazioni che richiedono un utente esplicito o programmato azione da intraprendere e le impostazioni salvate automaticamente.  
@@ -510,7 +508,7 @@ Modelli compositi combinano elementi di progettazione e l'interazione in configu
 #### <a name="profile-specific-layouts"></a>Layout per il profilo  
  Ogni profilo include layout delle finestre dello strumento, organizzati in modo familiare agli utenti specifici per sviluppatori (agli sviluppatori di Visual C++ che venga visualizzato il **Esplora** sul lato sinistro dell'IDE, mentre gli sviluppatori c# che venga visualizzato il  **Esplora soluzioni** a destra). Layout di finestra per il profilo vengono caricati dopo che l'utente sceglie un profilo all'avvio. Un autore del pacchetto deve determinare il layout di finestra più adatto per l'esperienza del cliente, i relativi, sapendo che le modifiche apportate dall'utente per la configurazione di finestre quindi vengono rese persistenti.  
   
-##  <a name="BKMK_TouchInput"></a>Input tocco  
+##  <a name="BKMK_TouchInput"></a> Input tocco  
  Gli utenti stanno utilizzando prodotti di sviluppo Microsoft nei dispositivi di tocco. Tuttavia, esistono barriere che rendono difficile usare gli strumenti di sviluppo nei dispositivi di tocco. Gli utenti si aspetta di ricevere dei prodotti per fornire un'esperienza di tocco affidabile e precisa. Lo scopo di queste linee guida è informare decidere quali funzionalità di tocco per incorporare e promuovere un'esperienza coerente tocco in Visual Studio e prodotti correlati.  
   
 ### <a name="levels-of-experience"></a>Livelli di esperienza  

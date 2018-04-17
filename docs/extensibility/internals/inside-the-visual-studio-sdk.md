@@ -1,27 +1,25 @@
 ---
 title: All'interno di Visual Studio SDK | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 In questa sezione fornisce informazioni approfondite sulle estensioni di Visual Studio, tra cui architettura di Visual Studio, componenti, servizi, schemi, utilità e così via.  
@@ -56,7 +54,7 @@ Generalizzato di vista dell'architettura di Visual Studio
  Barre degli strumenti sono righe o colonne di pulsanti e altri controlli, ad esempio caselle combinate, caselle di riepilogo e caselle di testo. Pulsanti della barra degli strumenti sono in genere le immagini icona, ad esempio un'icona di cartella per un **Apri File** comando o una stampante per una **stampa** comando. Tutti gli elementi della barra degli strumenti sono associati a comandi. Quando si fa clic su un pulsante della barra degli strumenti, viene eseguito il comando associato. Nel caso di un controllo elenco a discesa, ogni elemento nell'elenco a discesa è associata a un comando diverso. Alcuni controlli della barra degli strumenti, ad esempio un controllo barra di divisione, sono ibridi. Un lato del controllo è un pulsante della barra degli strumenti e l'altro lato è una freccia rivolta verso il basso che visualizza comandi diversi quando viene selezionato.  
   
 ## <a name="tool-windows"></a>Finestre degli strumenti  
- Le finestre degli strumenti vengono usate nell'IDE per visualizzare le informazioni. **Casella degli strumenti**, **Esplora**, **proprietà** finestra e **Web Browser** sono esempi di finestre degli strumenti.  
+ Le finestre degli strumenti vengono usate nell'IDE per visualizzare le informazioni. **Casella degli strumenti**, **Esplora soluzioni**, **delle proprietà** finestra, e **Web Browser** sono esempi di finestre degli strumenti.  
   
  Le finestre degli strumenti in genere offrono vari controlli con cui l'utente può interagire. Ad esempio, il **proprietà** finestra consente all'utente di impostare le proprietà di oggetti che fungono a uno scopo specifico. Il **proprietà** finestra è specializzato in questo senso, ma anche generale perché può essere utilizzato in molte situazioni diverse. Analogamente, il **Output** finestra è specializzata in quanto fornisce output basato su testo, ma generale perché molti sottosistemi in Visual Studio possono usare per fornire output all'utente di Visual Studio.  
   
@@ -94,7 +92,7 @@ Generalizzato di vista dell'architettura di Visual Studio
   
  Per ulteriori informazioni, vedere [progetti](../../extensibility/internals/projects.md) e [soluzioni](../../extensibility/internals/solutions.md).  
   
-## <a name="project-and-item-templates"></a>Project and Item Templates  
+## <a name="project-and-item-templates"></a>Modelli di progetti e di elementi  
  Visual Studio include modelli di progetto predefiniti e i modelli di progetto. È possibile apportare anche modelli personalizzati o acquisire modelli dalla community e quindi integrarli in Visual Studio. Il [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) consente di passare per i modelli e le estensioni.  
   
  I modelli contengono la struttura di progetto e i file necessari per compilare un particolare tipo di applicazione, controllo, una libreria o classe di base. Quando si desidera sviluppare software che è simile a uno dei modelli, creare un progetto basato sul modello e quindi modificare i file nel progetto.  
