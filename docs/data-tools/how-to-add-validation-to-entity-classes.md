@@ -1,29 +1,26 @@
 ---
-title: "Procedura: aggiungere la convalida alle classi di entità | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: aggiungere la convalida alle classi di entità | Documenti Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 1ff8eb04ae9b5009aff13dc8588633b34d4d72dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: df0f97994fd5144f9fff7cf9a5ce90fc43249476
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: aggiungere la convalida alle classi di entità
-*Convalida* classi di entità è il processo di conferma che i valori immessi negli oggetti dati sono conformi con i vincoli nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.  
+*La convalida* classi di entità è il processo di conferma che i valori immessi negli oggetti dati sono conformi con i vincoli nello schema dell'oggetto, nonché alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.  
   
  Il [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce i metodi parziali che consentano agli utenti di estendere il codice generato da progettazione che viene eseguito durante l'inserimento, aggiornamento ed eliminazione di entità complete nonché durante e dopo una singola colonna modifiche.  
   

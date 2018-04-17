@@ -1,23 +1,21 @@
 ---
 title: Informazioni sui SAL | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 Il linguaggio di annotazione del codice sorgente Microsoft (SAL) fornisce un set di annotazioni che è possibile utilizzare per descrivere come una funzione utilizza i relativi parametri, le ipotesi su cui fa su di essi e le garanzie che rende quando viene completato. Le annotazioni sono definite nel file di intestazione `<sal.h>`. Analisi codice di Visual Studio per C++ Usa le annotazioni SAL per modificare l'analisi di funzioni. Per ulteriori informazioni su SAL 2.0 per lo sviluppo di driver di Windows, vedere [SAL 2.0 annotazioni per i driver di Windows](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -43,11 +41,11 @@ void * memcpy(
  È possibile conoscere ciò che svolge questa funzione? Quando implementata una funzione viene chiamata, è necessario configurare alcune proprietà per assicurare la correttezza di programma. Esaminando solo una dichiarazione, ad esempio quello nell'esempio, non si conosce quali sono. Senza le annotazioni SAL, è necessario basarsi sulla documentazione o commenti del codice. Ecco la documentazione di MSDN per `memcpy` è indicato:  
   
 > "Copie contano i byte di src di destinazione. Se l'origine e destinazione si sovrappongono, il comportamento di memcpy è definito. Utilizzare memmove per gestire le aree di sovrapposizione.   
-> **Nota sulla sicurezza:** assicurarsi che il buffer di destinazione è la stessa dimensione o maggiore del buffer di origine. Per ulteriori informazioni, vedere evitare sovraccarichi del Buffer."  
+> **Nota sulla sicurezza:** assicurarsi che il buffer di destinazione sia della stessa dimensione o maggiore del buffer di origine. Per ulteriori informazioni, vedere evitare sovraccarichi del Buffer."  
   
  La documentazione contiene un paio di bit di informazioni che suggerisce che il codice debba mantenere alcune proprietà per garantire la correttezza di programma:  
   
--   `memcpy`copie di `count` di byte dal buffer di origine per il buffer di destinazione.  
+-   `memcpy` copie di `count` di byte dal buffer di origine per il buffer di destinazione.  
   
 -   Il buffer di destinazione deve essere grande almeno come buffer di origine.  
   
@@ -87,8 +85,8 @@ wchar_t * wmemcpy(
   
 |Category|Annotazione parametro|Descrizione|  
 |--------------|--------------------------|-----------------|  
-|**Chiamata di funzione di input**|`_In_`|Dati viene passati alla funzione chiamata e viene considerati come di sola lettura.|  
-|**Chiamata alla funzione input e output al chiamante**|`_Inout_`|Dati utilizzabili viene passati alla funzione e potenzialmente viene modificati.|  
+|**Input per chiamata alla funzione**|`_In_`|Dati viene passati alla funzione chiamata e viene considerati come di sola lettura.|  
+|**Input per la chiamata alla funzione e di output al chiamante**|`_Inout_`|Dati utilizzabili viene passati alla funzione e potenzialmente viene modificati.|  
 |**Output al chiamante**|`_Out_`|Il chiamante fornisce solo spazio per la funzione chiamata da scrivere. La funzione chiamata scrive i dati in tale spazio.|  
 |**Output del puntatore al chiamante**|`_Outptr_`|Ad esempio **Output al chiamante**. Il valore restituito dalla funzione chiamata è un puntatore.|  
   
@@ -98,8 +96,8 @@ wchar_t * wmemcpy(
   
 ||I parametri sono obbligatori|I parametri sono facoltativi|  
 |-|-----------------------------|-----------------------------|  
-|**Chiamata di funzione di input**|`_In_`|`_In_opt_`|  
-|**Chiamata alla funzione input e output al chiamante**|`_Inout_`|`_Inout_opt_`|  
+|**Input per chiamata alla funzione**|`_In_`|`_In_opt_`|  
+|**Input per la chiamata alla funzione e di output al chiamante**|`_Inout_`|`_Inout_opt_`|  
 |**Output al chiamante**|`_Out_`|`_Out_opt_`|  
 |**Output del puntatore al chiamante**|`_Outptr_`|`_Outptr_opt_`|  
   
@@ -119,7 +117,7 @@ wchar_t * wmemcpy(
   
      Si consideri il riscaldamento in\_ riportato in questa sezione. Se si esegue l'analisi del codice, viene visualizzato questo avviso:  
   
-    > **C6387 Il valore di parametro non valido**   
+    > **C6387 Valore del parametro non valido**   
     > 'pInt' può essere '0': questa condizione non soddisfa la specifica la funzione 'InCallee'.  
   
 ### <a name="example-the-in-annotation"></a>Esempio: Il riscaldamento in\_ annotazione  
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   Il chiamante deve fornire al buffer e inizializzarlo.  
   
--   `_In_`Specifica di "sola lettura". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.  
+-   `_In_` Specifica di "sola lettura". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.  
   
--   `_In_`è consentita ma ignorato dall'analizzatore di valori scalari non puntatore.  
+-   `_In_` è consentita ma ignorato dall'analizzatore di valori scalari non puntatore.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  Se si utilizza l'analisi del codice di Visual Studio in questo esempio, verifica che i chiamanti passare un puntatore non Null in un buffer inizializzato per `pInt`. In questo caso, `pInt` puntatore non può essere NULL.  
   
 ### <a name="example-the-inopt-annotation"></a>Esempio: _In_opt\_ annotazione  
- `_In_opt_`è identico `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve cercare.  
+ `_In_opt_` è identico `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve ricercare.  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Analisi del codice di Visual Studio consente di verificare che la funzione verifica i valori NULL prima di accedere il buffer.  
   
 ### <a name="example-the-out-annotation"></a>Esempio: REC0 out\_ annotazione  
- `_Out_`supporta uno scenario comune in cui viene passato un puntatore non NULL che punta a un buffer di elemento e la funzione Inizializza l'elemento. Il chiamante non dispone di inizializzare il buffer prima della chiamata. la funzione chiamata promette di inizializzarlo prima della restituzione.  
+ `_Out_` supporta uno scenario comune in cui viene passato un puntatore non NULL che punta a un buffer di elemento e la funzione Inizializza l'elemento. Il chiamante non dispone di inizializzare il buffer prima della chiamata. la funzione chiamata promette di inizializzarlo prima della restituzione.  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Strumento di analisi di Visual Studio codice verifica che il chiamante passa un puntatore non NULL in un buffer per `pInt` e che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
 ### <a name="example-the-outopt-annotation"></a>Esempio: _Out_opt\_ annotazione  
- `_Out_opt_`è identico `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, pertanto, la funzione deve cercare.  
+ `_Out_opt_` è identico `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, pertanto, la funzione deve ricercare.  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di `pInt` è dereferenziato e se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
 ### <a name="example-the-inout-annotation"></a>Esempio: InOut\_ annotazione  
- `_Inout_`viene usato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche se viene modificato, devono comunque essere un valore valido in fase di restituzione. L'annotazione specifica che la funzione può liberamente leggere e scrivere nel buffer di un elemento. Il chiamante deve fornire al buffer e inizializzarlo.  
+ `_Inout_` viene usato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche se viene modificato, devono comunque essere un valore valido in fase di restituzione. L'annotazione specifica che la funzione può liberamente leggere e scrivere nel buffer di un elemento. Il chiamante deve fornire al buffer e inizializzarlo.  
   
 > [!NOTE]
 >  Ad esempio `_Out_`, `_Inout_` deve essere applicata a un valore modificabile.  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Analisi del codice di Visual Studio verifica che i chiamanti passare un puntatore non NULL in un buffer inizializzato per `pInt`e che, prima della restituzione, `pInt` ancora non è null e il buffer viene inizializzato.  
   
 ### <a name="example-the-inoutopt-annotation"></a>Esempio: _Inout_opt\_ annotazione  
- `_Inout_opt_`è identico `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve cercare.  
+ `_Inout_opt_` è identico `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve ricercare.  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di accedere il buffer e, se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
 ### <a name="example-the-outptr-annotation"></a>Esempio: _Outptr\_ annotazione  
- `_Outptr_`è possibile annotare un parametro che è progettata per restituire un puntatore.  Il parametro non deve essere NULL, la funzione chiamata restituisce un puntatore non NULL e tale puntatore punta a dati inizializzati.  
+ `_Outptr_` viene usato per annotare un parametro che è progettata per restituire un puntatore.  Il parametro non deve essere NULL, la funzione chiamata restituisce un puntatore non NULL e tale puntatore punta a dati inizializzati.  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Analisi del codice di Visual Studio verifica che il chiamante passa un puntatore non NULL `*pInt`, e che il buffer viene inizializzato dalla funzione prima della restituzione.  
   
 ### <a name="example-the-outptropt-annotation"></a>Esempio: _Outptr_opt\_ annotazione  
- `_Outptr_opt_`è identico `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.  
+ `_Outptr_opt_` è identico `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.  
   
 ```cpp  
   

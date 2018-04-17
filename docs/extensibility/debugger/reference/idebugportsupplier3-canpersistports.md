@@ -1,29 +1,25 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cb364ca40c42a3f392a5944169b7dd97075ab9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 Questo metodo determina se il fornitore della porta può rendere persistente porte (mediante la scrittura su disco) tra le chiamate del debugger.  
@@ -42,7 +38,7 @@ int CanPersistPorts();
  Nessuno.  
   
 ## <a name="return-value"></a>Valore restituito  
- `S_OK`Se le porte possono essere reso persistente, o `S_FALSE` per indicare che le porte non possono essere persistente.  
+ `S_OK` Se le porte possono essere reso persistente, o `S_FALSE` per indicare che le porte non possono essere persistente.  
   
 ## <a name="remarks"></a>Note  
  Se il fornitore della porta può rendere persistente porte, dovrebbe eseguire questa operazione quando viene eliminato e quindi ricaricarli quando ne viene creata un'istanza ancora una volta.  

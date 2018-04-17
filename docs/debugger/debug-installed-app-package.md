@@ -2,12 +2,9 @@
 title: Eseguire il debug di un pacchetto dell'app installato (UWP) | Documenti Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Eseguire il debug di un pacchetto di applicazione installata in Visual Studio (UWP)
 
@@ -62,7 +58,7 @@ Per ulteriori informazioni su queste funzionalità, vedere il post di blog sugli
 > [!NOTE]
 > Visual Studio può anche collegare qualsiasi processo di app UWP in esecuzione selezionando **Debug**e quindi **Connetti a processo**. Connessione a un processo in esecuzione non richiede il progetto originale di Visual Studio, tuttavia il caricamento dei simboli del processo sarà in modo significativo quando un processo che non è necessario il codice originale per il debug.
   
-## <a name="remote"></a>Debug di un'App installata o è in esecuzione in un Computer remoto 
+## <a name="remote"></a> Debug di un'App installata oppure è in esecuzione in un Computer remoto 
 
 Quando si esegue il debug di un pacchetto dell'app installata in un computer remoto per la prima volta, Visual Studio installa la versione corretta di remote tools per il dispositivo di destinazione. Il dispositivo di destinazione deve essere un computer Windows 10, un dispositivo XBox, HoloLens e IoT.
 

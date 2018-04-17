@@ -1,12 +1,10 @@
 ---
-title: 'Procedura: installare i prerequisiti con un''applicazione ClickOnce | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: installare i prerequisiti con un'applicazione ClickOnce | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - components, bootstrapping
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
-caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 83458b627949cda5f918ec06a5f84bd9697ba6d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6f1d71d9bbabeb5e912ba01cf6237ddd94d00b3b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: installare i prerequisiti con un'applicazione ClickOnce
 Tutti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni è necessario che la versione corretta di .NET Framework sia installata in un computer prima di poter essere eseguiti, molte applicazioni hanno anche altri prerequisiti. Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, è possibile scegliere un set di componenti dei prerequisiti da includere nel pacchetto insieme all'applicazione. Al momento dell'installazione, verrà eseguito un controllo per ogni prerequisito determinare se già presente. Se non viene installato prima di installare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
@@ -66,7 +64,7 @@ Tutti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicaz
   
 5.  Nel **specificare il percorso di installazione dei prerequisiti** selezionare **Scarica prerequisiti dal seguente percorso**.  
   
-6.  Selezionare un percorso nell'elenco a discesa o immettere un URL, un percorso del file o un percorso FTP e quindi fare clic su **OK.**  
+6.  Selezionare una posizione nell'elenco, elenco a discesa o immettere un URL, un percorso del file o un percorso FTP e quindi fare clic su **OK.**  
   
     > [!NOTE]
     >  È necessario assicurarsi che i programmi di installazione per i componenti specificati esistano nel percorso specificato.  

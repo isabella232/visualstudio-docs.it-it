@@ -1,27 +1,25 @@
 ---
 title: Tabella oggetti grafici | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
 - vs.graphics.objecttable
 - vs.graphics.bufferviewer
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fce78395efff7ec1344d0034c4d18001550798aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
 La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio consente di individuare gli oggetti Direct3D che supportano un frame specifico del gioco o dell'app.  
@@ -106,11 +104,11 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |**half4**|Vettore che contiene quattro valori a virgola mobile a 16 bit.|  
 |**double**|Valore a virgola mobile a 64 bit.|  
 |**int**|Valore Signed Integer a 32 bit. Uguale a **a 4 byte**.|  
-|**Int64**|Valore Signed Integer a 64 bit. Uguale a **a 8 byte**.|  
+|**int64**|Valore Signed Integer a 64 bit. Uguale a **a 8 byte**.|  
 |**xint**|Valore esadecimale a 32 bit. Uguale a **x4byte**.|  
 |**xint64**|Valore esadecimale a 64 bit. Uguale a **x8byte**.|  
 |**uint**|Valore Unsigned Integer a 32 bit. Uguale a **u4byte**.|  
-|**UInt64**|Valore Unsigned Integer a 64 bit. Uguale a **u8byte**.|  
+|**uint64**|Valore Unsigned Integer a 64 bit. Uguale a **u8byte**.|  
 |**bool**|Valore booleano (`true` o `false`). Ogni valore booleano è rappresentato da un valore a 32 bit.|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,29 +1,25 @@
 ---
 title: IDiaSession::findSymbolByVAEx | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSession::findSymbolByVAEx method
 ms.assetid: 11c685f6-cda2-4474-a432-214ecaae4ffa
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f1c9bb568bda7d5ac8be59d638bea472bc6765
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eabb922ddcf70731edfcddd2a2c1cd80e049d7cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 Recupera un tipo di simbolo specificato che contiene o vicino a un indirizzo virtuale specificato (VA) e l'offset.  
@@ -65,7 +61,7 @@ pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
+ [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [Findsymbolbyva](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)

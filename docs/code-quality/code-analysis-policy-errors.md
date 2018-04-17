@@ -1,29 +1,25 @@
 ---
 title: Errori criteri analisi codice | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyfailures
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 268940f39d3d74e7dd701f9c458d7dd08ff6c1f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f9c46dae012a35dcb616366682aeffd584da70a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-policy-errors"></a>Errori dei criteri per l'analisi del codice
 Se i criteri di analisi codice non sono soddisfatti al momento dell'archiviazione, si verificano gli errori seguenti:  
@@ -42,7 +38,7 @@ Se i criteri di analisi codice non sono soddisfatti al momento dell'archiviazion
   
  La compilazione contiene errori o sono stati corretti gli errori, ma non è stata eseguita l'analisi del codice dopo la correzione.  
   
- **Archiviazione non è riuscita. I criteri di analisi codice richiede l'archiviazione avvenga tramite Visual Studio con una soluzione aperta.**  
+ **Check-in non è riuscita. I criteri di analisi codice richiede l'archiviazione avvenga tramite Visual Studio con una soluzione aperta.**  
   
  I criteri di analisi codice richiedono che tutti i file da archiviare devono essere nella soluzione attualmente aperta. Per correggere l'errore, aprire la soluzione che contiene il file da archiviare.  
   
@@ -54,11 +50,11 @@ Se i criteri di analisi codice non sono soddisfatti al momento dell'archiviazion
   
  Questo errore si applica ai progetti .NET. Una DLL di regola richiesta dai criteri di analisi del codice presente nel computer locale, ma la versione/chiave pubblica non corrisponde. Per correggere l'errore, l'autore dei criteri è necessario aggiornare il file con estensione dll in *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\*  directory nel proprio computer.  
   
- **l'assembly '{0}' specificato nei criteri non esiste.**  
+ **assembly '{0}' specificati nei criteri non esiste.**  
   
  Questo errore si applica ai progetti .NET. Una regola richiesta dai criteri di analisi del codice non dispone del file dll corrispondente installato nel computer client. Per correggere l'errore, l'autore dei criteri deve aggiornare la dll in *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules\\*  directory nel proprio computer.  
   
- **Le impostazioni delle regole di progetto {0} non sono in conformità con criteri di analisi codice.**  
+ **Le impostazioni delle regole {0} progetto non sono in conformità con criteri di analisi codice.**  
   
  Questo errore si applica ai progetti .NET. Le impostazioni delle regole di codice gestito non sono più rigorose di quanto richiesto dai criteri. Per correggere l'errore, l'impostazione del client deve essere uguale o più restrittivo rispetto dei requisiti dei criteri nel server.  
   
@@ -66,15 +62,15 @@ Se i criteri di analisi codice non sono soddisfatti al momento dell'archiviazion
   
  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la configurazione attiva non dispone di analisi del codice attivata, ma non esiste almeno un'analisi del codice abilitata.  
   
- **È necessario attivare l'analisi del codice per binari gestiti nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**  
+ **È necessario abilitare l'analisi del codice per i file binari gestiti nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**  
   
  Questo errore si applica a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] applicazioni .NET. I criteri richiedono di eseguire l'analisi codice gestito, ma non è abilitato nel progetto corrente nel client.  
   
- **È necessario attivare l'analisi del codice nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**  
+ **È necessario abilitare l'analisi del codice nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**  
   
  Questo errore si applica a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetti e i progetti Web. I criteri richiedono di eseguire l'analisi codice gestito, ma non è abilitato nel progetto corrente nel client.  
   
- **È necessario abilitare l'analisi del codice C/C++ nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**  
+ **È necessario attivare l'analisi del codice C/C++ nelle proprietà del progetto {0} e compilare prima dell'archiviazione.**  
   
  Questo errore si applica ai progetti non gestiti. I criteri di analisi codice richiedono l'analisi del codice per C/C++, ma non è abilitato nel progetto corrente nel client.  
   

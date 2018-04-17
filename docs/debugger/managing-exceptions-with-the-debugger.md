@@ -1,13 +1,10 @@
 ---
 title: Gestire le eccezioni con il debugger di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
@@ -145,7 +141,7 @@ Se si seleziona un'eccezione nel **impostazioni eccezioni** finestra, l'esecuzio
   
  ![Ripristina impostazioni predefinite in impostazioni eccezione](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Impostare il debugger per continuare a eccezioni non gestite dall'utente  
+##  <a name="BKMK_UserUnhandled"></a> Impostare il debugger per continuare in caso di eccezioni non gestite dall'utente  
  Se si esegue il debug del codice .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), è possibile impostare il debugger in modo da non interrompere l'esecuzione in corrispondenza di eccezioni non gestite nel codice utente, ma gestite in un'altra posizione.  
   
 1.  Nella finestra **Impostazioni eccezioni** , aprire il menu di scelta rapida facendo clic con il pulsante destro del mouse nella finestra e selezionando **Mostra colonne**. (Se **Just My Code**è stato disattivato, questo comando non verrà visualizzato).  
@@ -156,7 +152,7 @@ Se si seleziona un'eccezione nel **impostazioni eccezioni** finestra, l'esecuzio
   
  Ad esempio, le applicazioni Web ASP.NET gestiscono le eccezioni convertendole in un codice di stato HTTP 500 ([Gestione delle eccezioni nell'API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), che potrebbe non aiutare a determinare l'origine dell'eccezione. Nell'esempio seguente, il codice utente effettua una chiamata a `String.Format()` che genera un’eccezione <xref:System.FormatException>. L'esecuzione si interrompe come segue:  
   
- ![le interruzioni utente &#45; eccezioni non gestite dal](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![si interrompe in utente&#45;eccezioni non gestite](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Aggiungere ed eliminare le eccezioni  
  È possibile aggiungere ed eliminare le eccezioni. È possibile eliminare qualsiasi tipo di eccezione da qualsiasi categoria selezionando l'eccezione e facendo clic sul pulsante **Elimina** (il segno meno) nella barra degli strumenti **Impostazioni eccezioni** o facendo clic con il pulsante destro del mouse sull'eccezione e selezionando **Elimina** dal menu di scelta rapida. L'eliminazione di un'eccezione ha lo stesso effetto di un’eccezione non selezionata, vale a dire che il debugger non interrompe l’esecuzione quando l’eccezione viene generata.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 È possibile impostare le condizioni per le eccezioni nel **impostazioni eccezioni** la finestra di dialogo. Le condizioni attualmente supportate includono i nomi di modulo da includere o escludere per l'eccezione. Impostando i nomi di modulo come condizioni, è possibile scegliere di interrompere per l'eccezione solo nei moduli di codice specifico oppure è possibile evitare l'interruzione in moduli specifici.
 
 > [!NOTE]
-> Aggiunta di condizioni per un'eccezione è stata introdotta in[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Aggiunta di condizioni per un'eccezione è stata introdotta in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Per aggiungere le eccezioni condizionale, scegliere il **modifica condizione** icona nella finestra di dialogo Impostazioni di eccezione o l'eccezione di mouse e scegliere **modificare condizioni**.
 

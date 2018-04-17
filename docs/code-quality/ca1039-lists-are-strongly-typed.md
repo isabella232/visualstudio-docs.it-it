@@ -1,12 +1,10 @@
 ---
 title: 'CA1039: Gli elenchi sono fortemente tipizzati | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA1039
 - ListsAreStronglyTyped
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 358ae06a2913f7b89338027c79f81c298253d23b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a52479c5c89cf2098ac90e3f755110fb81bb2697
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Gli elenchi sono fortemente tipizzati
 |||  
 |-|-|  
 |TypeName|ListsAreStronglyTyped|  
 |CheckId|CA1039|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Descrizione della regola  
  La regola richiede <xref:System.Collections.IList> le implementazioni per fornire fortemente membri tipizzati in modo che gli utenti non devono eseguire il cast di argomenti per il <xref:System.Object?displayProperty=fullName> digitare quando utilizzano la funzionalità fornita dall'interfaccia. Il <xref:System.Collections.IList> interfaccia viene implementata da raccolte di oggetti che è possibile accedere tramite indice. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IList> esegua questa operazione per gestire una raccolta di istanze di un tipo più sicuro <xref:System.Object>.  
   
- <xref:System.Collections.IList>implementa il <xref:System.Collections.ICollection?displayProperty=fullName> e <xref:System.Collections.IEnumerable?displayProperty=fullName> interfacce. Se si implementa <xref:System.Collections.IList>, è necessario fornire i membri richiesti fortemente tipizzati per <xref:System.Collections.ICollection>. Se gli oggetti nella raccolta estendono <xref:System.ValueType?displayProperty=fullName>, è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare un calo delle prestazioni causato dalla conversione boxing; non è obbligatorio quando gli oggetti della raccolta sono un tipo di riferimento.  
+ <xref:System.Collections.IList> implementa il <xref:System.Collections.ICollection?displayProperty=fullName> e <xref:System.Collections.IEnumerable?displayProperty=fullName> interfacce. Se si implementa <xref:System.Collections.IList>, è necessario fornire i membri richiesti fortemente tipizzati per <xref:System.Collections.ICollection>. Se gli oggetti nella raccolta estendono <xref:System.ValueType?displayProperty=fullName>, è necessario fornire un membro fortemente tipizzato per <xref:System.Collections.IEnumerable.GetEnumerator%2A> per evitare un calo delle prestazioni causato dalla conversione boxing; non è obbligatorio quando gli oggetti della raccolta sono un tipo di riferimento.  
   
  Per garantire la conformità con questa regola, implementare i membri di interfaccia in modo esplicito utilizzando nomi nel formato InterfaceName, ad esempio <xref:System.Collections.IList.Add%2A>. I membri di interfaccia esplicita utilizzano i tipi di dati che vengono dichiarati dall'interfaccia. Implementare i membri fortemente tipizzati utilizzando il nome di membro di interfaccia, ad esempio `Add`. Dichiarare i membri fortemente tipizzati come pubblici e dichiarare i parametri e restituire valori di tipo sicuro gestito dalla raccolta. I tipi sicuri sostituiscono i tipi più vulnerabili, ad esempio <xref:System.Object> e <xref:System.Array> che vengono dichiarati dall'interfaccia.  
   

@@ -1,27 +1,23 @@
 ---
 title: Flag di bit utilizzati dai comandi specifici | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit utilizzati dai comandi specifici
 Il comportamento di un numero di funzioni nell'API di plug-in del controllo origine può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. Il flag di bit diversi usato dall'API plug-in controllo di origine sono descritte in dettaglio in questo caso, raggruppati per la funzione in cui vengono utilizzati.  
@@ -40,7 +36,7 @@ Il comportamento di un numero di funzioni nell'API di plug-in del controllo orig
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|È previsto il plug-in controllo del codice sorgente di rilevare automaticamente se il file è di tipo testo o binario.|  
 |`SCC_FILETYPE_TEXT`|0x01|Tipo di file è testo.|  
-|`SCC_FILETYPE_BINARY`|0x04|Tipo di file è binario. **Nota:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` si escludono a vicenda. Impostare uno o nessuno.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo di file è binario. **Nota:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` flag si escludono a vicenda.   Impostare uno o nessuno.|  
 |`SCC_ADD_STORELATEST`|0x02|Archiviare una versione più recente (nessun delta).|  
   
 ## <a name="diff-flags"></a>Flag di confronto  

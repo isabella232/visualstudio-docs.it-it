@@ -1,13 +1,10 @@
 ---
 title: Come attivare sospendere, riprendere e gli eventi in background durante il debug di App UWP | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 33958dd97c4ca8958c4f96ebe84697f2953afa9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospendere, riprendere e gli eventi in background durante il debug di App UWP in Visual Studio
 Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) controlla lo stato di esecuzione dell'app, cioè avvio, sospensione, ripresa e terminazione, in risposta alle azioni dell'utente e allo stato del dispositivo. Quando esegui il debug, Windows disabilita questi eventi di attivazione. In questo argomento viene descritto come generare tali eventi nel debugger.  
@@ -47,7 +43,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
   
 3.  Sulla barra degli strumenti **Posizione di debug** scegli l'evento da generare:  
   
-     ![Sospendere, riprendere, terminare e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
+     ![Sospendere, riprendere, terminare e le attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
      Nota che **Sospendi e termina** chiude l'app e termina la sessione di debug.  
   
@@ -69,7 +65,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
   
 3.  Dall'elenco degli eventi sulla barra degli strumenti **Posizione di debug** scegli l'attività in background che vuoi avviare.  
   
-     ![Sospendere, riprendere, terminare e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
+     ![Sospendere, riprendere, terminare e le attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Attivare un'attività in background quando l'app non è in esecuzione  
   
@@ -83,11 +79,11 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
   
     -   Per i progetti Visual C# e Visual Basic, scegli **Non eseguire il codice utente, ma eseguine il debug all'avvio**.  
   
-         ![C &#35; &#47; Proprietà avvio applicazione debug VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;proprietà avvio applicazione debug VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   Per i progetti JavaScript e Visual C++ scegli **No** dall'elenco **Avvia applicazione** .  
   
-         ![C &#43; &#43; &#47; Proprietà di debug dell'applicazione VB avviare](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;proprietà di debug dell'applicazione VB Launch](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  Premi **F5** per mettere l'app in modalità debug. Nota che nell'elenco **Processo** sulla barra degli strumenti **Posizione di debug** è visualizzato il nome del pacchetto dell'app per indicare che sei in modalità debug.  
   
@@ -95,7 +91,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
   
 5.  Dall'elenco degli eventi sulla barra degli strumenti **Posizione di debug** scegli l'attività in background che vuoi avviare.  
   
-     ![Sospendere, riprendere, terminare e attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
+     ![Sospendere, riprendere, terminare e le attività in background](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Attivare gli eventi di Process Lifecycle Management e le attività in background da un'app installata  
  Utilizzare il **Debug pacchetto applicazione installato** la finestra di dialogo per caricare un'app già installata nel debugger. Ad esempio, è possibile eseguire il debug di un'app installata da Microsoft Store o debug di un'app quando si dispone di file di origine per l'app, ma non a un progetto di Visual Studio per l'app. Il **Debug pacchetto applicazione installato** la finestra di dialogo consente di avviare un'app in modalità di debug nel computer di Visual Studio o in un dispositivo remoto oppure per impostare l'app per l'esecuzione in modalità di debug ma non avviarlo. Per ulteriori informazioni, vedere [eseguire il Debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
@@ -117,4 +113,4 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
  [Test delle app UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Ciclo di vita dell'applicazione](/windows/uwp/launch-resume/app-lifecycle)   
- [Avvio ripresa e multitasking](/windows/uwp/launch-resume/index)
+ [Avviando, ripresa e multitasking](/windows/uwp/launch-resume/index)

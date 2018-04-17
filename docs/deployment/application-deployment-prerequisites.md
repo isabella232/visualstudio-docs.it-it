@@ -1,12 +1,10 @@
 ---
 title: Prerequisiti per la distribuzione di applicazioni | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 Affinché l'applicazione venga installata ed eseguita correttamente, è necessario che nel computer di destinazione siano già installati tutti i componenti da cui l'applicazione dipende. Ad esempio, la maggior parte delle applicazioni create con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno una dipendenza da [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; prima di installare l'applicazione, è necessario che nel computer di destinazione sia presente la versione corretta di Common Language Runtime.  
@@ -48,10 +46,10 @@ Affinché l'applicazione venga installata ed eseguita correttamente, è necessar
   
 -   Versione minima di tutti gli assembly che devono essere preinstallati nella Global Assembly Cache (GAC), specificata dalle dichiarazioni delle dipendenze degli assembly nel manifesto dell'assembly.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]in grado di rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti utilizzando un programma di avvio automatico. Per ulteriori informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] in grado di rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti utilizzando un programma di avvio automatico. Per ulteriori informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e MageUI.exe, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per ulteriori informazioni, vedere [procedura: firmare di nuovo Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e MageUI.exe, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [Procedura: ripetere la firma dei manifesti dell'applicazione e di distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Se si usa Visual Studio e ClickOnce per distribuire l'applicazione, i pacchetti del programma di avvio automatico selezionati per impostazione predefinita variano a seconda della versione di .NET Framework inclusa nella soluzione. Tuttavia, se si modifica la versione di .NET Framework di destinazione, è necessario aggiornare le opzioni di **la finestra di dialogo Prerequisiti** manualmente.  
   
@@ -76,11 +74,11 @@ Affinché l'applicazione venga installata ed eseguita correttamente, è necessar
   
 |Argomento della riga di comando|Descrizione|  
 |---------------------------|-----------------|  
-|**-?, -h, - Guida**|Visualizza una finestra di dialogo della Guida.|  
-|**-url - componentsurl**|Visualizza l'URL archiviato e l'URL dei componenti per questa configurazione.|  
-|**-url =**`location`|Imposta l'URL in cui Setup.exe cercherà l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
-|**-componentsurl =**`location`|Imposta l'URL in cui Setup.exe cercherà le dipendenze, ad esempio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Quando `true`, le dipendenze vengono scaricate dal percorso preferito sul sito del fornitore. Esegue l'override di **- componentsurl** impostazione. Quando `false`, le dipendenze vengono scaricate dall'URL specificato da **- componentsurl**.|  
+|**-?, -h, - help**|Visualizza una finestra di dialogo della Guida.|  
+|**-url, - componentsurl**|Visualizza l'URL archiviato e l'URL dei componenti per questa configurazione.|  
+|**-url =** `location`|Imposta l'URL in cui Setup.exe cercherà l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
+|**-componentsurl =** `location`|Imposta l'URL in cui Setup.exe cercherà le dipendenze, ad esempio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Quando `true`, le dipendenze vengono scaricate dal percorso preferito sul sito del fornitore. Esegue l'override di **- componentsurl** impostazione. Quando `false`, le dipendenze vengono scaricate dall'URL specificato da **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Supporto del sistema operativo  
  Il programma di avvio automatico di Visual Studio non è supportato in Windows Server 2008 Server Core o Windows Server 2008 R2 Server Core, che forniscono un ambiente server a bassa manutenzione con funzionalità limitate. Ad esempio, l'opzione di installazione dei componenti di base del server supporta esclusivamente il profilo .NET Framework 3.5 Server Core, quindi non è possibile eseguire le funzionalità di Visual Studio che dipendono dalla versione completa di .NET Framework.  

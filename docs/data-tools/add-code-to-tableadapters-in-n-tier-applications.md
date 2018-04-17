@@ -1,11 +1,8 @@
 ---
-title: "Aggiungere codice agli oggetti TableAdapter nelle applicazioni a più livelli | Documenti Microsoft"
-ms.custom: 
+title: Aggiungere codice agli oggetti TableAdapter nelle applicazioni a più livelli | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 54df2144511e847988c6f11212e9c9a4941d0b38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 52c732842f5a98bfb1c78a125830f730aeeb5321
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Aggiungere codice agli oggetti TableAdapter nelle applicazioni a più livelli
 È possibile estendere la funzionalità di un oggetto TableAdapter mediante la creazione di un file di classe parziale per l'oggetto TableAdapter e aggiungendovi il codice (anziché l'aggiunta di codice per il *DatasetName*. File di DataSet). Classi parziali consentono al codice per una classe specifica da dividere tra più file fisici. Per ulteriori informazioni, vedere [parziale](/dotnet/visual-basic/language-reference/modifiers/partial) o [parziale (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).  

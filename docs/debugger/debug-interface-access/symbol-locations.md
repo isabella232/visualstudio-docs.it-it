@@ -1,30 +1,26 @@
 ---
 title: Percorsi dei simboli | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - LocationType values
 - symbols [DIA SDK], locations
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cd226ebc3d2853ddfa35f42c5990db940c4424
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8eef21d7b5b22bab161383ef99902ca0b0bd598
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbol-locations"></a>Percorsi dei simboli
 La maggior parte dei simboli dispongono di un percorso definito all'interno del file di immagine. Percorso di un simbolo viene specificato con un valore di [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md) enumerazione. Il simbolo può supportare proprietà aggiuntive in base al relativo percorso.  
@@ -34,7 +30,7 @@ La maggior parte dei simboli dispongono di un percorso definito all'interno del 
 |Tipo di posizione|Proprietà aggiuntive|  
 |-------------------|---------------------------|  
 |`LocIsNull`|none|  
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (se sono abilitati gli indirizzi virtuali relativi)<br /><br /> [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (se la base dell'immagine è stata impostata a diverso da zero)|  
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) (se sono abilitati gli indirizzi virtuali relativi)<br /><br /> [Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) (se la base dell'immagine è stata impostata a diverso da zero)|  
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|  
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
@@ -46,17 +42,17 @@ La maggior parte dei simboli dispongono di un percorso definito all'interno del 
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Idiasymbol:: Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
- [Idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
- [Idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
- [Idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
- [IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
- [IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
- [IDiaSymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
- [IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
- [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
- [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
+ [Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
+ [Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [Get_bitposition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
+ [Get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
+ [Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
+ [Get_registerid](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
+ [Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
+ [Get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
+ [Get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
+ [Get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
+ [Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
  [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md)   
  [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

@@ -1,26 +1,24 @@
 ---
 title: Creazione di un punto di interruzione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 14de0dd85582e385f0083f23af9494580028f3fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 88f5b75defc1bceff4aacd580474b145df32bf68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-breakpoint"></a>Creazione di un punto di interruzione
 Di seguito viene descritto il processo di creazione di un punto di interruzione.  
@@ -35,7 +33,7 @@ Di seguito viene descritto il processo di creazione di un punto di interruzione.
 3.  [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)  
   
     > [!NOTE]
-    >  **CanBind** viene chiamato solo quando un utente crea un punto di interruzione dalla finestra punti di interruzione.  
+    >  **CanBind** viene chiamato solo quando un utente esegue un punto di interruzione dalla finestra di punti di interruzione.  
   
 4.  [IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)  
   

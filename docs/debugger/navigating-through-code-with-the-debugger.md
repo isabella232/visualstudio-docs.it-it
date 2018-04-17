@@ -2,12 +2,9 @@
 title: Spostarsi nel codice con il Debugger di Visual Studio | Documenti Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il Debugger di Visual Studio
 Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il codice nel debugger e in questo modo sarà più veloce e semplice individuare e risolvere i problemi nell'app. Durante lo spostamento di codice nel debugger, è possibile controllare lo stato dell'app o altre informazioni sul relativo flusso di esecuzione.  
@@ -47,7 +43,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
  La maggior parte delle funzionalità del debugger, ad esempio visualizzare i valori delle variabili nella finestra variabili locali o la valutazione delle espressioni nella finestra Espressioni di controllo, sono disponibili solo mentre il debugger è in sospeso (detto anche *modalità di interruzione*). Quando il debugger viene sospesa, lo stato dell'app viene sospesa mentre funzioni, variabili e oggetti restano nella memoria. In modalità di interruzione, è possibile esaminare la posizione degli elementi e gli stati per cercare le violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'applicazione in modalità di interruzione. Per guardare un video che illustra queste funzionalità, vedere [Introduzione al Debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Passaggio nel codice, riga per riga  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Eseguire l'istruzione codice, di una riga  
  Per arrestare in ogni riga del codice (ogni istruzione) durante il debug, usare il **F11** tasto di scelta rapida (o **Debug** > **Esegui istruzione** menu).  
   
 > [!TIP]
@@ -75,18 +71,18 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
  Per tracciare visivamente lo stack di chiamate durante l'esecuzione di funzioni, vedere [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a>Esaminare il codice, ignorando le funzioni  
+##  <a name="BKMK_Step_over_Step_out"></a> Esaminare il codice, ignorando le funzioni  
  Quando si esegue codice nel debugger, spesso si otterranno che non è necessario vedere ciò che avviene in una particolare funzione (non è rilevante, o si conosce funziona, come il codice di libreria testata). Utilizzare questi comandi per ignorare il codice (le funzioni ancora eseguono, naturalmente, ma ignora il debugger su di essi).  
   
 |Comando da tastiera|Comando di menu|Descrizione|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Esegui istruzione/routine**|Se la riga corrente contiene una chiamata di funzione, **Esegui istruzione/routine** esegue il codice quindi sospende l'esecuzione alla prima riga di codice dopo la funzione chiamata restituisce.|  
-|**MAIUSC + F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando la funzione corrente restituisce (ignora il debugger tramite la funzione corrente).|  
+|**MAIUSC + F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando la funzione corrente restituisce (Ignora debugger tramite la funzione corrente).|  
   
 > [!TIP]
 >  Se si desidera individuare il punto di ingresso nell'app, iniziare con **F10** o **F11**. Questi comandi sono spesso utili se si sta controllando lo stato dell'app o tentativo di ottenere ulteriori informazioni su un flusso di esecuzione.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Eseguire una funzione o un percorso specifico  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire una funzione o un percorso specifico  
  Spesso il metodo preferito di debug del codice, questi metodi sono utili quando si conosce esattamente il codice che si desidera controllare, o almeno si conosce in cui si desidera avviare il debug.  
   
 -   **Impostare punti di interruzione nel codice**  
@@ -105,10 +101,10 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
 
     Per eseguire in un punto nel codice durante la pausa nel debugger, seleziona il **esecuzione qui** icona freccia verde (l'icona visualizzata durante il passaggio del mouse su una riga di codice). In questo modo si elimina la necessità di impostare punti di interruzione temporanei.
 
-    ![Esecuzione del debugger per fare clic su](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+    ![Esecuzione del debugger alla fare clic su](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
 
     > [!NOTE]
-    > **Eseguire fino a fare clic su** è una novità di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+    > **Esegui fino al clic** è stato introdotto in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
   
 -   **Inserire un'interruzione nel codice manualmente**  
   
@@ -132,10 +128,10 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
   
      ![I punti di interruzione, finestra di dialogo Scegli](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Sposta il puntatore per modificare il flusso di esecuzione  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Sposta il puntatore per modificare il flusso di esecuzione  
  Mentre il debugger è in sospeso, è possibile spostare il puntatore all'istruzione per impostare la successiva istruzione del codice da eseguire. La posizione dell'istruzione successiva da eseguire è contrassegnata da una freccia gialla visualizzata sul margine di una finestra di origine o di una finestra Disassembly. Mediante lo spostamento della freccia, è possibile ignorare un segmento di codice oppure tornare a una riga eseguita precedentemente. È possibile usare questa opzione in alcune situazioni, ad esempio quando si desidera ignorare una sezione di codice che contiene un bug noto.  
   
- ![Spostare il puntatore](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
+ ![Spostando il puntatore](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
   
  Per impostare l'istruzione successiva da eseguire, utilizzare una di queste procedure:  
   

@@ -1,29 +1,25 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 1 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf0570dd6f58d6a6893be5babdcde530d3a57109
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9ceb7bb63caf3677c3758d88713308daa0c34fb4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Creazione di un sistema di progetto di base, parte 1
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare i file del codice sorgente e altre risorse. Progetti vengono visualizzati come elementi figlio di soluzioni di **Esplora**. Progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.  

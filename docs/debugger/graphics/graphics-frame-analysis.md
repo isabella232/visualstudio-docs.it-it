@@ -1,25 +1,22 @@
 ---
 title: Frame di grafica Analysis | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 95544a030870feaace585d62a8027c17dbc56c64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.  
@@ -75,7 +72,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="timeline"></a>Sequenza temporale  
  La sequenza temporale mostra una panoramica dei tempi reciproci di chiamata di disegno. Poiché le barre più larghe corrispondono a tempi di disegno più lunghi, è possibile usarla per individuare rapidamente le chiamate di disegno più dispendiose nel frame. Se il frame acquisito include un numero elevato di chiamate di disegno, più chiamate di disegno saranno combinate in un'unica barra, la cui lunghezza corrisponde alla somma delle chiamate di disegno specifiche.  
   
- ![La sequenza temporale Mostra disegno & #45, chiamare i costi. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![La sequenza temporale Mostra disegno&#45;chiamare i costi. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  È possibile posizionare il puntatore su una barra per verificare l'evento di chiamata di disegno a cui corrisponde la barra. Se si seleziona la barra, l'elenco di eventi sarà sincronizzato in base all'evento specifico.  
   
@@ -91,12 +88,12 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 #### <a name="hot-draw-calls"></a>Chiamate di disegno "problematiche"  
  Per evidenziare le chiamate di disegno che consumano una proporzione maggiore del tempo di rendering complessivo o che potrebbero essere insolitamente lente per motivi evitabili, la riga che include queste chiamate di disegno "problematiche" avrà ombreggiatura di colore rosso quando la rispettiva durata iniziale supera di più di una deviazione standard la durata media iniziale di tutte le chiamate di disegno nel frame.  
   
- ![Questa chiamata a DrawIndexed contiene varianti a caldo e a freddo. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Questa chiamata a DrawIndexed contiene varianti di frequente. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Rilevanza statistica  
  Per evidenziare le variazioni di rendering con rilevanza maggiore, l'analisi dei frame determina la rilevanza statistica di ogni variante di rendering e mostra in grassetto le varianti più significative. Le varianti che migliorano le prestazioni sono mostrate in verde, mentre quelle che le riducono sono mostrate in rosso. I risultati non significativi a livello statistico sono mostrati in testo normale.  
   
- ![Rilevanza statistica della variante per le chiamate di disegno](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![Rilevanza statistica della variante chiamata di disegno](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  Per determinare la rilevanza statistica, l'analisi dei Frame Usa il [test t di Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
   
@@ -137,7 +134,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   
  L'analisi dei frame limita il numero di nuovi tentativi a 10. Se le impostazioni di risparmio di energia o controllo del clock della piattaforma sono molto rigide, è possibile che l'analisi dei frame abbia esito negativo e che sia segnalato un errore a causa del superamento del limite di nuovi tentativi consentiti. Per ridurre questo problema, è possibile provare a modificare le impostazioni del risparmio energia e della limitazione della velocità del clock della piattaforma in modo che siano meno rigide, se la piattaforma lo permette.  
   
-##  <a name="HardwareSupport"></a>Supporto hardware  
+##  <a name="HardwareSupport"></a> Supporto hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Timestamp e query di occlusione  
  I timestamp sono supportati in tutte le piattaforme che supportano l'analisi dei frame. Le query di occlusione della profondità, necessarie per il contatore relativo ai pixel bloccati, sono supportate sulle piattaforme che supportano funzionalità di livello 9.2 o superiori.  
@@ -175,23 +172,23 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 ### <a name="warp"></a>WARP  
  L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. Non è impedito l'esecuzione di analisi dei frame su dispositivi WARP, ma non è in genere un esercizio utile poiché in esecuzione su una CPU di fascia alta WARP è inferiore a anche il minor GPU moderne e le prestazioni di WARP possono variare notevolmente in base alla CPU specifica è in esecuzione.  
   
-##  <a name="Variants"></a>Varianti  
+##  <a name="Variants"></a> Varianti  
  Ogni modifica apportata dall'analisi dei Frame al modo in cui viene eseguito il rendering di un frame durante la riproduzione è noto come un *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:  
   
 |Variante|Descrizione|  
 |-------------|-----------------|  
-|**Dimensione del 1x1 Viewport**|Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [variante delle dimensioni del riquadro di visualizzazione 1x1](1x1-viewport-size-variant.md)|  
-|**0x MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 2x in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 4x in tutte le destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
+|**Dimensione del 1x1 Viewport**|Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [variante delle dimensioni del riquadro di visualizzazione 1x1](1x1-viewport-size-variant.md)|  
+|**0x MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 2x in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Abilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) 4x in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [0x / 2 x / 4 varianti di MSAA](0x-2x-4x-msaa-variants.md)|  
 |**Filtraggio punti della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtraggio punti della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtraggio bilineare della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtraggio bilineare della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtraggio trilineare della trama**|Imposta la modalità di filtraggio su `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtraggio trilineare della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtraggio anisotropo della trama**|Imposta la modalità di filtraggio `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` a `16` (16 x filtraggio anisotropo della trama) per tutti i campioni di trama appropriati.<br /><br /> Per ulteriori informazioni, vedere [punto, bilineare, trilineare e anisotropico varianti del filtro della trama](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Formato di destinazione di rendering 16bpp**|Imposta il formato di pixel su `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, formato 565) per tutte le destinazioni di rendering e i buffer nascosti.<br /><br /> Per ulteriori informazioni, vedere [16bpp eseguire il rendering di destinazione variante del formato](16bpp-render-target-format-variant.md)|  
+|**Formato di destinazione di rendering 16bpp**|Imposta il formato di pixel su `DXGI_FORMAT_B5G6R5_UNORM` (16bpp, formato 565) per tutte le destinazioni di rendering e i buffer nascosti.<br /><br /> Per altre informazioni, vedere [16bpp eseguire il rendering di destinazione variante del formato](16bpp-render-target-format-variant.md)|  
 |**Generazione di mappe MIP**|Abilita le mappe MIP in tutte le trame che non corrispondono a destinazioni di rendering.<br /><br /> Per ulteriori informazioni, vedere [variante di generazione di mappe Mip](mip-map-generation-variant.md).|  
 |**Dimensioni trama-metà**|Riduce le dimensioni di trama di tutte le trame che non corrispondono a destinazioni di rendering alla metà della dimensione originale in ogni dimensione. Ad esempio, una trama con dimensioni 256x128 è ridotta a 128x64 texel.<br /><br /> Per ulteriori informazioni, vedere [variante dimensioni trama](half-quarter-texture-dimensions-variant.md).|  
 |**Dimensioni trama-quarto**|Riduce le dimensioni di trama di tutte le trame che non corrispondono a destinazioni di rendering a un quarto della dimensione originale in ogni dimensione. Ad esempio, una trama con dimensioni 256x128 è ridotta a 64x32 texel.<br /><br /> Per ulteriori informazioni, vedere [variante dimensioni trama](half-quarter-texture-dimensions-variant.md).|  
-|**Compressione di trama BC**|Abilita la compressione a blocchi in tutte le trame con variante di formato di B8G8R8X8, B8G8R8A8 o R8G8B8A8 pixel. Le varianti di formato B8G8R8X8 sono compresse tramite BC1, mentre per le varianti di formato B8G8R8A8 e R8G8B8A8 si usa BC3.<br /><br /> Per ulteriori informazioni, vedere [variante di compressione della trama BC](bc-texture-compression-variant.md).|  
+|**Compressione della trama BC**|Abilita la compressione a blocchi in tutte le trame con variante di formato di B8G8R8X8, B8G8R8A8 o R8G8B8A8 pixel. Le varianti di formato B8G8R8X8 sono compresse tramite BC1, mentre per le varianti di formato B8G8R8A8 e R8G8B8A8 si usa BC3.<br /><br /> Per ulteriori informazioni, vedere [variante di compressione della trama BC](bc-texture-compression-variant.md).|  
   
  Il risultato per la maggior parte delle varianti è prescrittivo, ovvero indica ad esempio che la riduzione delle dimensioni della trama a metà offre un incremento del 25 percento nella velocità o che l'abilitazione di 2x MSAA comporta un rallentamento pari solo al 2 percento. Per altre varianti potrebbe essere necessario interpretare i risultati. Se, a esempio la variante che modifica le dimensioni del riquadro di visualizzazioni in 1x1 mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare la presenza di un collo di bottiglia nel rendering causata da una bassa velocità di riempimento. In alternativa, se non sono rilevate modifiche significative nelle prestazioni, è possibile che il collo di bottiglia del rendering sia dovuto all'elaborazione dei vertici.

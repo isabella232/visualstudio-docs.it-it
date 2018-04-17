@@ -1,25 +1,22 @@
 ---
 title: Gli strumenti di dati di Visual Studio per C++ | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 0b7f49708c00bd02fb8c74bc3ed6258d41729bf2
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a853edf80cd11400b2e54c17dfe95f1ccfb1c822
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Strumenti di dati di Visual Studio per C++
 
@@ -37,11 +34,11 @@ Per sfruttare le funzionalità personalizzate in SQL Server 2005 e versioni succ
   
 3.  Utilizzare SQL Server Management Studio per collegare il file mdf decompresso a localDB. All'avvio di SQL Server Management Studio, connettersi a (localdb) \MSSQLLocalDB.  
   
-     ![Finestra di dialogo di connessione SQL Server Management Studio](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS connettersi finestra di dialogo")  
+     ![Finestra di connessione SQL Server Management Studio](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS connettersi finestra di dialogo")  
   
      Pulsante destro del mouse sul nodo del database locale nel riquadro a sinistra, quindi scegliere **collegamento**.  
   
-     ![SQL Server Management Studio Collega database](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS Collega database")  
+     ![SSMS Collega database](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS Collega database")  
   
 4.  Scaricare l'esempio di SDK di Windows di ODBC e decomprimerlo in una nuova posizione. Questo esempio mostra i comandi di base di ODBC utilizzata per connettersi a un database e di eseguire query e comandi. Maggiori informazioni su queste funzioni nel [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Quando si carica innanzitutto la soluzione (si trova nella cartella C++), Visual Studio offre aggiornare la soluzione per la versione corrente di Visual Studio. Scegliere **Sì**.
   
@@ -70,7 +67,7 @@ E la directory di libreria:
   
 8.  Premere F5 per compilare ed eseguire l'applicazione. Si noterà una finestra di dialogo del driver che viene richiesto di immettere un database. Immettere `(localdb)\MSSQLLocalDB`e controllare **Usa connessione Trusted**. Press **OK**. Verrà visualizzata una console con i messaggi che indicano una connessione riuscita. Verrà inoltre visualizzato un prompt dei comandi in cui è possibile digitare in un'istruzione SQL. La schermata seguente mostra un esempio di query e i risultati:  
   
-     ![Output della query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "output della query di esempio ODBC raddata")  
+     ![Output di query di esempio ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "output della query di esempio ODBC raddata")  
   
 ## <a name="see-also"></a>Vedere anche
 

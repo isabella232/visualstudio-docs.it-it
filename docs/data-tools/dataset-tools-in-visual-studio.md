@@ -1,11 +1,8 @@
 ---
 title: Strumenti di set di dati in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
 helpviewer_keywords:
@@ -46,18 +43,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a8c8660fbc489dd8c4926bb09b8b42006da0897a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7db4eaf50f04d0baf082f6612ee7bd13a0d30ed6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 > [!NOTE]
@@ -86,7 +82,7 @@ ms.lasthandoff: 12/22/2017
   
     -   [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)  
   
--   Eseguire una query e cercare i dati nel set di dati. Per ulteriori informazioni, vedere [set di dati di Query](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]Abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) su dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Eseguire una query e cercare i dati nel set di dati. Per ulteriori informazioni, vedere [set di dati di Query](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Utilizzare il **origini dati** finestra consente di associare i controlli dell'interfaccia utente per il set di dati o le singole colonne e per specificare quali colonne sono modificabili dall'utente. Per ulteriori informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

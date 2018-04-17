@@ -1,12 +1,10 @@
 ---
 title: 'CA2101: Specificare il marshalling per gli argomenti di stringa P-Invoke | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SpecifyMarshalingForPInvokeStringArguments
 - CA2101
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2101
 - SpecifyMarshalingForPInvokeStringArguments
 ms.assetid: 9d1abfc3-d320-41e0-9f6e-60cefe6ffe1b
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 15191983d08bfc99848e4a16c0059c075b234bb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 816158bbdfbbff22ab4941ef388330af7fe7fbb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Specificare il marshalling per gli argomenti di stringa P/Invoke
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Platform invoke membro consente chiamanti parzialmente attendibili, presenta un parametro di stringa e non esegue il marshalling della stringa.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- Quando si converte da Unicode ad ANSI, è possibile che non tutti i caratteri Unicode possono essere rappresentati in una tabella codici ANSI specifica. *Il mapping più appropriato* tenta di risolvere il problema tramite la sostituzione di un carattere per il carattere che non può essere rappresentato. L'utilizzo di questa funzionalità può causare una potenziale vulnerabilità di sicurezza, perché non è possibile controllare il carattere che viene scelto. Ad esempio, il codice dannoso potrebbe intenzionalmente creare una stringa Unicode che contiene caratteri che non si trovano in una particolare tabella codici, che vengono convertiti in caratteri speciali del file system, ad esempio '... ' o '/'. Si noti inoltre che i controlli di sicurezza per i caratteri speciali vengono frequentemente eseguiti prima che la stringa viene convertita in formato ANSI.  
+ Quando si converte da Unicode ad ANSI, è possibile che non tutti i caratteri Unicode possono essere rappresentati in una tabella codici ANSI specifica. *Fallback con mapping* tenta di risolvere il problema tramite la sostituzione di un carattere per il carattere che non può essere rappresentato. L'utilizzo di questa funzionalità può causare una potenziale vulnerabilità di sicurezza, perché non è possibile controllare il carattere che viene scelto. Ad esempio, il codice dannoso potrebbe intenzionalmente creare una stringa Unicode che contiene caratteri che non si trovano in una particolare tabella codici, che vengono convertiti in caratteri speciali del file system, ad esempio '... ' o '/'. Si noti inoltre che i controlli di sicurezza per i caratteri speciali vengono frequentemente eseguiti prima che la stringa viene convertita in formato ANSI.  
   
  Il mapping più appropriato è il valore predefinito per la conversione non gestita, WChar a MByte. A meno che non si disabilita in modo esplicito il mapping più appropriato, il codice potrebbe contenere una vulnerabilità della protezione a causa di questo problema.  
   

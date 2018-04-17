@@ -1,28 +1,26 @@
 ---
 title: Creazione di un'estensione con un comando di Menu | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-caps.latest.revision: "56"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d4e1be21a7471d318a3429dae60f484227a4f26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00c80692929ac19b55f68b8aa20306f39ddceae6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creazione di un'estensione con un comando di Menu
 Questa procedura dettagliata viene illustrato come creare un'estensione con un comando di menu che consente di avviare Blocco note.  
@@ -121,11 +119,11 @@ Questa procedura dettagliata viene illustrato come creare un'estensione con un c
   
 1.  È possibile eseguire molte altre operazioni con un comando di menu semplice:  
   
-    1.  Aggiungere un'icona personalizzata: [aggiunta di icone ai comandi di Menu](../extensibility/adding-icons-to-menu-commands.md)  
+    1.  Aggiungere la propria icona: [aggiunta di icone ai comandi di Menu](../extensibility/adding-icons-to-menu-commands.md)  
   
     2.  Modificare il testo del comando di menu: [modifica del testo di un comando di Menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  Aggiungere un collegamento nel menu a un comando: [associazione tasti di scelta rapida alle voci di Menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+    3.  Aggiungere un collegamento al menu a un comando: [associazione tasti di scelta rapida alle voci di Menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2.  Aggiungere diversi tipi di comandi, menu e barre degli strumenti: [estensione menu e comandi](../extensibility/extending-menus-and-commands.md)  
   
@@ -133,6 +131,6 @@ Questa procedura dettagliata viene illustrato come creare un'estensione con un c
   
 4.  Aggiungere i suggerimenti di codice, IntelliSense e altre funzionalità esistenti di editor di codice: [estensione dell'Editor e i servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  Aggiungere pagine delle proprietà e le opzioni e impostazioni utente per l'estensione: [estensione di proprietà e la finestra proprietà](../extensibility/extending-properties-and-the-property-window.md) e [opzioni e impostazioni utente di estensione](../extensibility/extending-user-settings-and-options.md)  
+5.  Aggiungere pagine delle proprietà e le opzioni e impostazioni utente per l'estensione: [estensione di proprietà e la finestra delle proprietà](../extensibility/extending-properties-and-the-property-window.md) e [opzioni e impostazioni utente di estensione](../extensibility/extending-user-settings-and-options.md)  
   
- Altri tipi di estensioni richiedono più lunga, ad esempio la creazione di un nuovo tipo di progetto ([estensione progetti](../extensibility/extending-projects.md)), creare un nuovo tipo di editor ([creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md)), o implementazione dell'estensione in una shell isolata: [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
+ Altri tipi di estensioni richiedono un po' più operazioni, ad esempio la creazione di un nuovo tipo di progetto ([estensione progetti](../extensibility/extending-projects.md)), creare un nuovo tipo di editor ([creare editor personalizzati e finestre di progettazione](../extensibility/creating-custom-editors-and-designers.md)), o implementazione dell'estensione in una shell isolata: [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)

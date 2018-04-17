@@ -1,12 +1,9 @@
 ---
 title: Impossibile connettersi al processo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.unable2attach
@@ -17,14 +14,14 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15acb250c561cb1c7d414784f355a9239ead53ef
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: a7929be0825ec16ba7e3b6d594dfd96ee6a4dfb6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
 Impossibile connettersi al processo. Accesso negato per il componente del debugger che si trova sul server durante la connessione a questo computer.  
@@ -39,7 +36,7 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
   
  L'utente 2, che è amministratore su entrambi i computer, è connesso al computer a Da qui, egli tenta di connettersi a un'applicazione in esecuzione nella sessione 1 sul computer B.  
   
- **Scenario 2:** un utente è connesso a due computer, A e B, nello stesso gruppo di lavoro, utilizzando la stessa password in entrambi i computer. Il debugger è in esecuzione sul computer e si tenta di connettersi a un'applicazione gestita in esecuzione sul computer b **l'accesso alla rete: modello di condivisione e sicurezza per gli account locali** impostato su **Guest**.  
+ **Scenario 2:** un utente è connesso a due computer, A e B, nello stesso gruppo di lavoro, usando la stessa password in entrambi i computer. Il debugger è in esecuzione sul computer e si tenta di connettersi a un'applicazione gestita in esecuzione sul computer b **l'accesso alla rete: modello di condivisione e sicurezza per gli account locali** impostato su **Guest**.  
   
 ### <a name="to-solve-scenario-1"></a>Per risolvere lo scenario 1  
   

@@ -1,13 +1,10 @@
 ---
 title: Visualizza i thread nel Debugger | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - '@TIB'
 - debugging [Visual Studio], threads
 ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 081d3d2289ff73b3e5ccacfc23fd8a5fe7eb292b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>Visualizza i thread nel debugger di Visual Studio usando la finestra thread
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione sottoposta a debug. Per istruzioni dettagliate su come utilizzare il **thread** finestra, vedere [procedura dettagliata: eseguire il Debug utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md).
@@ -169,5 +165,5 @@ In un programma multithread ogni thread dispone di un proprio stack di chiamate.
 -   Nella barra degli strumenti nella parte superiore del **thread** finestra, fare clic su **Espandi stack di chiamate** o **Comprimi stack di chiamate**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Il debug di applicazioni a thread multipli](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Introduzione al debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md)

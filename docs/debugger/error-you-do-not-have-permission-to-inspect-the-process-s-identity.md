@@ -1,29 +1,27 @@
 ---
-title: "Errore: Non si dispone dell'autorizzazione per controllare il processo di &#39; identità s | Documenti Microsoft"
-ms.custom: 
+title: "Errore: Non si dispone dell'autorizzazione per controllare il processo di&#39;identità s | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f62f612d4b07e0799c318ae972220459e0700e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non si dispone dell'autorizzazione per controllare il processo di &#39; identità s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Errore: Non si dispone dell'autorizzazione per controllare il processo di&#39;identità s
 Non si dispone dell'autorizzazione necessaria per controllare l'identità del processo. Probabilmente l'errore è causato dalla configurazione del sistema.  
   
  Il debugger non è stato in grado di controllare l'identità del processo, un'informazione necessaria per l'esecuzione del debug. Probabilmente Servizi terminal è disabilitato. Per impostazione predefinita, questo servizio è attivato. Per riattivarlo, eseguire la procedura seguente.  
@@ -56,7 +54,7 @@ Non si dispone dell'autorizzazione necessaria per controllare l'identità del pr
   
 1.  Fare clic su **avviare** e quindi fare doppio clic su **risorse del Computer**.  
   
-2.  Scegliere **proprietà**.  
+2.  Scegliere **Proprietà**.  
   
      Il **le proprietà di sistema** verrà visualizzata la finestra.  
   

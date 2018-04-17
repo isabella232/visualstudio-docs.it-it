@@ -1,27 +1,23 @@
 ---
 title: Utilizzo di Spy + + | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b450fc3720ba199b833ed2fbd98a748c71b8d74f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 384386f40aecc0072af385cc789c82d02be2e260
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-spy"></a>Utilizzo di Spy++
 Spy + + (SPYXX. Con estensione EXE) è un'utilità basate su Win32 che offre una visualizzazione grafica dei processi, thread, windows e i messaggi della finestra del sistema. In questa sezione del Spy + + della Guida include i seguenti argomenti:  

@@ -1,30 +1,28 @@
 ---
 title: Debug del codice utente con Just My Code | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bf41b8d264d353b6c47acd2e0a762a57d46412e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Specificare se eseguire il debug solo il codice utente con Just My Code in Visual Studio
 È possibile configurare Visual Studio per automaticamente l'istruzione/routine di sistema, framework e altre chiamate non dell'utente e si comprimono tali chiamate nella finestra stack di chiamate. La funzionalità che abilita o disabilita questo comportamento viene chiamata *Just My Code*. In questo argomento viene illustrato come utilizzare Just My Code in progetti c#, Visual Basic, C++ e JavaScript.
 
 Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato per impostazione predefinita.
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a>Abilitare o disabilitare Just My Code  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Abilitare o disabilitare Just My Code  
  Per abilitare o disabilitare Just My Code, scegliere il **strumenti > Opzioni** menu in Visual Studio. Nel **debug** > **generale** nodo, selezionare o deselezionare **Abilita Just My Code**.
   
  ![Abilita Just My Code nella finestra di dialogo Opzioni](../debugger/media/dbg_justmycode_options.png "DBG_JustMyCode_Options")  
@@ -32,7 +30,7 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
 > [!NOTE]
 >  Il **Abilita Just My Code** un'impostazione globale che viene applicato a tutti i progetti di Visual Studio in tutte le lingue.  
   
-###  <a name="BKMK_Override_call_stack_filtering"></a>Mostra il codice non utente in visualizzazioni dello stack di chiamate  
+###  <a name="BKMK_Override_call_stack_filtering"></a> Mostra il codice non utente nelle visualizzazioni dello stack di chiamate  
  Nelle visualizzazioni che mostrano lo stack di chiamate, ad esempio il **Stack di chiamate** e **attività** windows, Just My Code consente di comprimere il codice non utente in un frame annotato con etichetta `[External Code]`. Per visualizzare i frame compressi, scegliere **Mostra codice esterno** visualizzare il menu di scelta rapida dello stack di chiamate.
 
  ![Mostra codice esterno nella finestra Stack di chiamate](../debugger/media/dbg_justmycode_showexternalcode.png "DBG_JustMyCode_ShowExternalCode")
@@ -40,9 +38,9 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
 > [!NOTE]
 >  Il **Mostra codice esterno** impostazione viene salvata per il profiler dell'utente corrente. e si applica a tutti i progetti in tutti i linguaggi aperti dall'utente.
   
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET framework, Just My Code  
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Just My Code in .NET framework  
   
-###  <a name="BKMK_NET_User_and_non_user_code"></a>Codice utente e non utente  
+###  <a name="BKMK_NET_User_and_non_user_code"></a> Codice utente e non utente  
  Per distinguere il codice utente da codice non utente, Just My Code vengono esaminati i file di simboli (PDB) e ottimizzazioni del programma. Il debugger considera il codice come codice non utente quando il file binario è ottimizzato o quando il file con estensione pdb non è disponibile.
   
  Tre ulteriori attributi influiscono sul codice che viene considerato My Code dal debugger:  
@@ -55,20 +53,20 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
  Tutto il codice rimanente viene considerato codice utente.  
   
-###  <a name="BKMK_NET_Stepping_behavior"></a>Comportamento dell'esecuzione  
+###  <a name="BKMK_NET_Stepping_behavior"></a> Comportamento dell'esecuzione  
  Quando si **Esegui istruzione** (tasto di scelta rapida: F11) il codice non utente, il debugger passa al codice della successiva istruzione utente. Quando si **Esci** (tastiera: MAIUSC + F11), il debugger viene eseguito dalla riga successiva del codice utente. Se non viene rilevato nessun codice utente, l'esecuzione continua fino a quando l'applicazione viene chiusa, un punto di interruzione o si verifica un'eccezione.  
   
-###  <a name="BKMK_NET_Breakpoint_behavior"></a>Comportamento punto di interruzione  
+###  <a name="BKMK_NET_Breakpoint_behavior"></a> Comportamento punto di interruzione  
  Se Just My Code è abilitato, è possibile scegliere **Interrompi tutto** (tastiera: Ctrl + Alt + INTERR) e arrestare l'esecuzione in corrispondenza della posizione in cui è presente alcun codice utente da visualizzare. In questo caso viene visualizzata la finestra Nessuna origine. Se a questo punto si sceglie un comando di esecuzione, il debugger passerà alla successiva riga del codice utente.  
   
-###  <a name="BKMK_NET_Exception_behavior"></a>Comportamento delle eccezioni  
+###  <a name="BKMK_NET_Exception_behavior"></a> Comportamento delle eccezioni  
  Se si verifica un'eccezione non gestita nel codice non utente, il debugger si interrompe alla riga del codice utente in cui l'eccezione è stata generata.  
   
  Se per l'eccezione sono abilitate le eccezioni first-chance, la riga di codice utente viene evidenziata in verde. Lo stack di chiamate viene visualizzato un frame annotato con etichettato **[codice esterno]**.  
   
-##  <a name="BKMK_C___Just_My_Code"></a>Just My Code in C++  
+##  <a name="BKMK_C___Just_My_Code"></a> Just My Code in C++  
   
-###  <a name="BKMK_CPP_User_and_non_user_code"></a>Codice utente e non utente  
+###  <a name="BKMK_CPP_User_and_non_user_code"></a> Codice utente e non utente  
  Just My Code in C++ è diverso da Just My Code in .NET Framework e in JavaScript perché il comportamento dell'esecuzione di istruzioni è indipendente da quello dello stack di chiamate.  
   
  **Stack di chiamate**  
@@ -87,15 +85,15 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
  È possibile creare i propri file `.natstepfilter` e `.natjmc` per personalizzare il comportamento dell'esecuzione di istruzioni e della finestra dello stack di chiamate in `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
-###  <a name="BKMK_CPP_Stepping_behavior"></a>Comportamento dell'esecuzione  
+###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportamento dell'esecuzione  
  Quando si **Esegui istruzione** (tasto di scelta rapida: F11) il codice non utente dal codice utente, il debugger passa al codice per la riga successiva del codice utente. Quando si **Esci** (tastiera: MAIUSC + F11), il debugger viene eseguito dalla riga successiva del codice utente. Se non viene rilevato nessun codice utente, l'esecuzione continua fino a quando l'applicazione viene chiusa, un punto di interruzione o si verifica un'eccezione.  
   
  Se il debugger si interrompe nel codice non utente, ad esempio se un comando Interrompi tutto si arresta nel codice non utente, l'esecuzione continua nel codice non utente.  
   
-###  <a name="BKMK_CPP_Exception_behavior"></a>Comportamento delle eccezioni  
+###  <a name="BKMK_CPP_Exception_behavior"></a> Comportamento delle eccezioni  
  Quando il debugger raggiunge un'eccezione, viene interrotta sull'eccezione indipendentemente dal fatto che sia in codice non utente o l'utente. Il **gestita dall'utente** opzioni il **eccezioni** la finestra di dialogo vengono ignorati.  
   
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a>Personalizzare il comportamento di esecuzione di istruzioni  
+###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizzare comportamento dell'esecuzione  
  È possibile specificare le funzioni da ignorare elencandole come codice non utente nei file `*.natstepfilter`.  
   
 -   Per specificare il codice non utente per tutti gli utenti del computer di Visual Studio, aggiungere il file .natstepfilter il `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` cartella.  
@@ -125,9 +123,9 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
 |Funzione|Obbligatorio. Specifica una o più funzioni come funzioni non utente.|  
 |`Name`|Obbligatorio. Espressione regolare formattata in base a ECMA-262 che specifica il nome completo della funzione da mettere in corrispondenza. Ad esempio:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al debugger che tutti i metodi in `MyNS::MyClass` devono essere considerati codice non utente. La corrispondenza prevede la distinzione tra maiuscole e minuscole.|  
 |`Module`|Facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|  
-|`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> -   `NoStepInto`-indica al debugger di eseguire la funzione corrispondente.<br />-   `StepInto`-indica al debugger di eseguire le funzioni corrispondenti, eseguendo l'override di qualsiasi altro `NoStepInto` per le funzioni corrispondenti.|  
+|`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> -   `NoStepInto`  -indica al debugger di istruzione/routine di funzione corrispondente.<br />-   `StepInto`  -indica al debugger di eseguire le funzioni corrispondenti, eseguendo l'override di qualsiasi altro `NoStepInto` per le funzioni corrispondenti.|  
   
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personalizzare il comportamento dello stack di chiamate  
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizzare il comportamento dello stack di chiamate  
  È possibile specificare i moduli, i file di origine e le funzioni da trattare come codice non utente negli stack di chiamate specificandoli nei file `*.natjmc`.  
   
 -   Per specificare il codice non utente per tutti gli utenti del computer di Visual Studio, aggiungere il file .natjmc il `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` cartella.  
@@ -177,9 +175,9 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
 |`Module`|Facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|  
 |`ExceptionImplementation`|Se impostato su `true`, lo stack di chiamate mostra la funzione che ha generato l'eccezione anziché questa funzione.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a>Just My Code in JavaScript  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a> Just My Code in JavaScript  
   
-###  <a name="BKMK_JS_User_and_non_user_code"></a>Codice utente e non utente  
+###  <a name="BKMK_JS_User_and_non_user_code"></a> Codice utente e non utente  
  **Classificazioni del codice**  
   
  Just My Code in JavaScript controlla l'esecuzione e la visualizzazione dello stack di chiamate suddividendo il codice in una delle classificazioni seguenti:  
@@ -206,7 +204,7 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
  Tutto l'altro codice viene classificato come **MyCode**.  
   
-###  <a name="BKMK_JS_Stepping_behavior"></a>Comportamento dell'esecuzione  
+###  <a name="BKMK_JS_Stepping_behavior"></a> Comportamento dell'esecuzione  
   
 -   Se una funzione non è utente (**MyCode**), codice **Esegui istruzione** (tasto di scelta rapida: F11) si comporta come **Esegui istruzione/routine** (tastiera: F10).  
   
@@ -214,9 +212,9 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
 -   Quando un'esecuzione nel codice utente comporta l'uscita dal contesto di esecuzione corrente (ad esempio eseguire l'ultima riga di un gestore eventi), il debugger si arresta alla successiva riga di codice utente eseguita. Ad esempio, se un callback viene eseguito **LibraryCode** codice il debugger continua finché non viene eseguita la riga successiva del codice utente.
   
--   **Esci da istruzione /** (tastiera: MAIUSC + F11) si interrompe nella riga successiva del codice utente. Se non viene rilevato nessun codice utente, l'esecuzione continua fino a quando l'applicazione viene chiusa, un punto di interruzione o si verifica un'eccezione.  
+-   **Esci da istruzione /** (tastiera: MAIUSC+F11) si interrompe nella riga successiva del codice utente. Se non viene rilevato nessun codice utente, l'esecuzione continua fino a quando l'applicazione viene chiusa, un punto di interruzione o si verifica un'eccezione.  
   
-###  <a name="BKMK_JS_Breakpoint_behavior"></a>Comportamento punto di interruzione  
+###  <a name="BKMK_JS_Breakpoint_behavior"></a> Comportamento punto di interruzione  
   
 -   Punti di interruzione impostati nel codice verranno raggiunti sempre indipendentemente dalla classificazione del codice.  
   
@@ -226,10 +224,10 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
     -   **UnrelatedCode** codice, il debugger non si arresta.  
   
-###  <a name="BKMK_JS_Exception_behavior"></a>Comportamento delle eccezioni  
+###  <a name="BKMK_JS_Exception_behavior"></a> Comportamento delle eccezioni  
  Se un'eccezione non gestita viene generata in:  
   
--   **MyCode** o **LibraryCode** codice, il debugger si interrompe sempre.  
+-   **MyCode** oppure **LibraryCode** codice, il debugger si interrompe sempre.  
   
 -   **UnrelatedCode** codice, e **MyCode** o **LibraryCode** codice è nello stack di chiamate, il debugger si interrompe.  
   
@@ -239,7 +237,7 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
 -   Se l'eccezione non è gestita, il debugger si interrompe.  
   
-###  <a name="BKMK_JS_Customize_Just_My_Code"></a>Personalizzare Just My Code  
+###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizzare Just My Code  
  Per classificare il codice utente e non utente per un singolo progetto di Visual Studio, aggiungere un file con estensione json denominato `mycode.json` nella cartella radice del progetto.  
   
  Le classificazioni vengono eseguite nell'ordine seguente:  
@@ -290,11 +288,11 @@ Per la maggior parte dei linguaggi di programmazione, Just My Code è attivato p
   
  È possibile modificare il valore a una delle parole chiave seguenti:  
   
--   `MyCode`Classifica lo script come **MyCode**.  
+-   `MyCode`  Classifica lo script come **MyCode**.  
   
--   `Library`Classifica lo script come **LibraryCode**.  
+-   `Library`  Classifica lo script come **LibraryCode**.  
   
--   `Unrelated`Classifica lo script come **UnrelatedCode**.  
+-   `Unrelated`  Classifica lo script come **UnrelatedCode**.  
   
  **MyCode, Libraries e Unrelated**  
   

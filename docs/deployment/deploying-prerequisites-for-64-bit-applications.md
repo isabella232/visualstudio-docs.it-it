@@ -1,12 +1,10 @@
 ---
 title: Distribuzione dei prerequisiti per le applicazioni a 64 bit | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - 64-bit programming [Visual Studio]
 - 64-bit applications [Visual Studio]
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 6e0134b0a0a6151b6ae6544f1ad8272a6d4cac47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5efadda5db025e6229fbebd252ff34bf3fa1fe17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
 La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione sono **x86** per piattaforme a 32 bit, **x64** per computer che supportano il set di istruzioni AMD64 ed EM64T e **Itanium** per il processore Itanium a 64 bit.  

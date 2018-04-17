@@ -1,27 +1,25 @@
 ---
 title: Ottenere valori locali | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], local values
 - expression evaluation, getting local values
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 284821c9c1a31105f865333a45944a23792cd33a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4b38b346b8429ba04fb3730ea4c5fef0b2b6da1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-local-values"></a>Ottenere valori locali
 > [!IMPORTANT]
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 4.  Restituisce la proprietà tutte le richieste in un [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) struttura.  
   
 ## <a name="managed-code"></a>Codice gestito  
- In questo esempio viene illustrata un'implementazione di `IDebugProperty2::GetPropertyInfo` di un metodo locale nel codice gestito. Viene inoltre una funzione di supporto, `Field.GetType`, che viene utilizzato per ottenere il tipo del campo. `Field.GetValue`viene visualizzato [la valutazione di variabili locali](../../extensibility/debugger/evaluating-locals.md). La funzione di supporto `Field.MapModifiersToAttributes` (non illustrato) converte semplicemente un campo [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flag [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) valori.  
+ In questo esempio viene illustrata un'implementazione di `IDebugProperty2::GetPropertyInfo` di un metodo locale nel codice gestito. Viene inoltre una funzione di supporto, `Field.GetType`, che viene utilizzato per ottenere il tipo del campo. `Field.GetValue` è racchiusa [la valutazione di variabili locali](../../extensibility/debugger/evaluating-locals.md). La funzione di supporto `Field.MapModifiersToAttributes` (non illustrato) converte semplicemente un campo [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flag [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) valori.  
   
 ```csharp  
 namespace EEMC  

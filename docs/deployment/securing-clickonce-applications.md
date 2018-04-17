@@ -1,13 +1,10 @@
 ---
 title: Protezione di applicazioni ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>Protezione di applicazioni ClickOnce
 Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono soggette ai vincoli di sicurezza dall'accesso di codice in .NET Framework che consentono di limitare l'accesso del codice alle risorse e alle operazioni protette. Per poter scrivere correttamente le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è quindi importante comprendere le implicazioni di questo tipo di sicurezza. Le applicazioni possono usare l'attendibilità totale o le aree parziali, ad esempio le aree Internet e Intranet, per limitare l'accesso.  
@@ -51,7 +47,7 @@ Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
   
  Se si aggiunge un'autorizzazione non inclusa nel set di autorizzazioni predefinito per l'area da cui viene distribuita l'applicazione, all'utente finale verrà chiesto di concedere l'autorizzazione al momento dell'installazione o dell'aggiornamento. Per evitare che la richiesta venga visualizzata, l'amministratore di sistema può specificare criteri di distribuzione ClickOnce che definiscano uno specifico editore dell'applicazione come fonte attendibile. Sui computer in cui vengono distribuiti questi criteri, le autorizzazioni verranno concesse automaticamente senza alcun intervento da parte dell'utente.  
   
- Uno sviluppatore ha la responsabilità di assicurarsi che l'applicazione venga eseguita con le autorizzazioni appropriate. Se l'applicazione richiede autorizzazioni all'esterno di un'area durante il run-time, è possibile che venga visualizzata un'eccezione di sicurezza. In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile eseguire il debug dell'applicazione all'interno dell'area di sicurezza di destinazione e vengono inoltre fornite informazioni utili per lo sviluppo di applicazioni sicure. Per altre informazioni, vedere [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Uno sviluppatore ha la responsabilità di assicurarsi che l'applicazione venga eseguita con le autorizzazioni appropriate. Se l'applicazione richiede autorizzazioni all'esterno di un'area durante il run-time, è possibile che venga visualizzata un'eccezione di sicurezza. In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile eseguire il debug dell'applicazione all'interno dell'area di sicurezza di destinazione e vengono inoltre fornite informazioni utili per lo sviluppo di applicazioni sicure. Per altre informazioni, vedere [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Per altre informazioni sulla sicurezza per l'accesso al codice e su ClickOnce, vedere [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   

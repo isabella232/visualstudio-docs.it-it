@@ -1,12 +1,10 @@
 ---
 title: 'CA2201: Non generare tipi di eccezione riservati | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Non generare tipi di eccezione riservati
 |||  
 |-|-|  
 |TypeName|DoNotRaiseReservedExceptionTypes|  
 |CheckId|CA2201|  
-|Category|Microsoft. Usage|  
+|Category|Microsoft.Usage|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |Descrizione parametro|Eccezione|  
 |---------------------------|---------------|  
-|`null`riferimento|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` Riferimento|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |Compreso nell'intervallo consentito di valori (ad esempio un indice per un elenco o raccolta)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |Non valido `enum` valore|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |Contiene un formato che non soddisfa le specifiche del parametro di un metodo (ad esempio la stringa di formato per `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |Non è valida|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Quando un'operazione non è valida per lo stato corrente di un oggetto generare<xref:System.InvalidOperationException?displayProperty=fullName>  
+ Quando un'operazione non è valida per lo stato corrente di un oggetto generare <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Generata quando viene eseguita un'operazione su un oggetto che è stato eliminato<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ Generata quando viene eseguita un'operazione su un oggetto che è stato eliminato <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Quando un'operazione non supportata (ad esempio un sottoposto a override **oggetto Stream. Write** in un flusso aperto per la lettura) throw<xref:System.NotSupportedException?displayProperty=fullName>  
+ Quando un'operazione non è supportata (ad esempio in un override **oggetto Stream. Write** in un flusso aperto per la lettura) throw <xref:System.NotSupportedException?displayProperty=fullName>  
   
- Generata quando una conversione comporterebbe un overflow (ad esempio un overload dell'operatore di cast esplicito)<xref:System.OverflowException?displayProperty=fullName>  
+ Generata quando una conversione comporterebbe un overflow (ad esempio un overload dell'operatore di cast esplicito) <xref:System.OverflowException?displayProperty=fullName>  
   
  Per tutti gli altri casi, è consigliabile creare un proprio tipo che deriva da <xref:System.Exception> e generarlo.  
   

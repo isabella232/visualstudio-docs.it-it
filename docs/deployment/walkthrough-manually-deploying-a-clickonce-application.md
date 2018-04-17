@@ -1,13 +1,10 @@
 ---
-title: 'Procedura dettagliata: Distribuzione manuale di un''applicazione ClickOnce | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce
 Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario utilizzare funzionalità avanzate di distribuzione, ad esempio la distribuzione di applicazioni attendibili, è necessario utilizzare lo strumento da riga di comando Mage.exe per creare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. Questa procedura dettagliata viene descritto come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione utilizzando la versione della riga di comando (Mage.exe) o la versione di grafica (MageUI.exe) dello strumento di modifica e la generazione del manifesto.  
@@ -70,7 +66,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
 -   Determinare se l'applicazione richiede i prerequisiti nei computer client.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni distribuite da Visual Studio possono includere un programma di avvio automatico di prerequisiti di installazione (setup.exe) con la distribuzione. Questa procedura dettagliata crea due manifesti necessari per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. È possibile creare un programma di avvio automatico di prerequisiti usando il [GenerateBootstrapper (attività)](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni distribuite da Visual Studio possono includere un'installazione dei prerequisiti del programma di avvio (setup.exe) con la distribuzione. Questa procedura dettagliata crea due manifesti necessari per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. È possibile creare un programma di avvio automatico di prerequisiti usando il [GenerateBootstrapper (attività)](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Per distribuire un'applicazione con lo strumento da riga di comando Mage.exe  
   
@@ -128,7 +124,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
 10. Copiare tutti i file nella directory di distribuzione di destinazione di distribuzione o del supporto. Potrebbe trattarsi di a una cartella su un sito Web o FTP del sito, una condivisione file o un CD-ROM.  
   
-11. Fornire agli utenti con l'URL, un UNC o un supporto fisico, è necessario installare l'applicazione. Se si specifica un URL o un percorso UNC, è necessario assegnare agli utenti il percorso completo del manifesto di distribuzione. Ad esempio, se AppToDeploy viene distribuita su http://webserver01/ nella directory AppToDeploy, il percorso URL completo sarebbe http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Fornire agli utenti con l'URL, un UNC o un supporto fisico, è necessario installare l'applicazione. Se si specifica un URL o un percorso UNC, è necessario assegnare agli utenti il percorso completo del manifesto di distribuzione. Ad esempio, se viene distribuito AppToDeploy http://webserver01/ nella directory AppToDeploy, il percorso URL completo dovrebbe essere http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Per distribuire un'applicazione con lo strumento con interfaccia grafica MageUI.exe  
   
@@ -203,7 +199,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
   
 28. Copiare tutti i file nella directory di distribuzione di destinazione di distribuzione o del supporto. Potrebbe trattarsi di a una cartella su un sito Web o FTP del sito, una condivisione file o un CD-ROM.  
   
-29. Fornire agli utenti con l'URL, un UNC o un supporto fisico, è necessario installare l'applicazione. Se si specifica un URL o un percorso UNC, è necessario assegnare agli utenti il percorso completo, il manifesto di distribuzione. Ad esempio, se AppToDeploy viene distribuita su http://webserver01/ nella directory AppToDeploy, il percorso URL completo sarebbe http://webserver01/AppToDeploy/AppToDeploy.application.  
+29. Fornire agli utenti con l'URL, un UNC o un supporto fisico, è necessario installare l'applicazione. Se si specifica un URL o un percorso UNC, è necessario assegnare agli utenti il percorso completo, il manifesto di distribuzione. Ad esempio, se viene distribuito AppToDeploy http://webserver01/ nella directory AppToDeploy, il percorso URL completo dovrebbe essere http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  Quando è necessario distribuire una nuova versione dell'applicazione, creare una nuova directory denominata in base alla nuova versione, ad esempio, 1.0.0.1 copiare i nuovi file di applicazione nella nuova directory. Successivamente, è necessario seguire i passaggi precedenti per creare e firmare manifesti di applicazione, aggiornare e firmare il manifesto della distribuzione. Assicurati di specificare la stessa versione superiore in entrambi i Mage.exe `-New` e `-Update` chiamate, come [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aggiorna solo le versioni successive, con il valore integer più a sinistra più significativo. Se si utilizza MageUI.exe, è possibile aggiornare il manifesto di distribuzione aprendo il file, selezionando il **riferimento all'applicazione** scheda, fare clic su di **Seleziona manifesto** pulsante e quindi selezionando l'aggiornamento manifesto dell'applicazione.  

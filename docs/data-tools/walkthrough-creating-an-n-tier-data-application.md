@@ -1,11 +1,8 @@
 ---
 title: "Procedura dettagliata: Creazione di un'applicazione dati a più livelli | Documenti Microsoft"
-ms.custom: 
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,20 +10,20 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: creazione di un'applicazione dati a più livelli
-*A più livelli* dati applicazioni sono applicazioni con accesso ai dati separate in più livelli logici, o *livelli*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per ulteriori informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).  
+*A più livelli* le applicazioni di dati sono applicazioni con accesso ai dati sono suddivisi in più livelli logici, o *livelli*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per ulteriori informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).  
   
 Per separare i vari livelli in un'applicazione a più livelli, è possibile creare progetti discreti per ogni livello da includere nell'applicazione. I dataset tipizzati contengono una proprietà `DataSet Project` che determina in quali progetti deve essere inserito il codice generato del dataset e di `TableAdapter`.  
   
@@ -52,7 +49,7 @@ Durante questa procedura dettagliata, verranno eseguiti i passaggi seguenti:
   
 -   Scrivere il codice per popolare le tabelle dati.  
   
-![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") per una versione video di questo argomento, vedere [procedura Video: creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).  
+![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") per una versione video di questo argomento, vedere [procedura Video: creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
 Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempio Northwind.  
@@ -154,7 +151,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
   
 4.  Nel **progetto DataSet** elenco, selezionare **DataEntityTier**.  
   
-5.  Nel **compilare** dal menu **Compila soluzione**.  
+5.  Scegliere **Compila soluzione** dal menu **Compila**.  
   
  Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero dataset (DataAccessTier) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **progetto DataSet** proprietà (DataEntityTier) contiene il dataset tipizzato: VB (o NorthwindDataSet).  
   

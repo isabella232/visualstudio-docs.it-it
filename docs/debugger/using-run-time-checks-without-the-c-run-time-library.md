@@ -1,13 +1,10 @@
 ---
 title: Utilizzo in fase di esecuzione dei controlli senza la libreria di Run-Time C | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.runtime
 dev_langs:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - run-time checks, /RTC option
 - debugging [Visual Studio], run-time routines
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc81dd57ca6a91cd748da82c792c2bbeca88bb25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 90dcfad06e36632e33b9bdab24f0bfed1257af92
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C
 Se si collega il programma senza la libreria di runtime C, utilizzando **/NODEFAULTLIB**e si desidera utilizzare i controlli in fase di esecuzione, è necessario collegare con la libreria RunTmChk.lib.  

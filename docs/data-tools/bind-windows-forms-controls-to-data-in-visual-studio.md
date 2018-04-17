@@ -1,11 +1,8 @@
 ---
 title: Associare controlli Windows Form ai dati in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Windows Forms], data sources
 - Windows Forms, data binding
@@ -16,22 +13,22 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 7ade7aa6e103a8637d26b10029faabc434ce3a83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f60b3318ef6e38ba444a157feee07f173443540c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dati a un Windows Form. Per creare questi controlli con associazione a dati, è possibile trascinare elementi dal **origini dati** finestra in Progettazione Windows Form in Visual Studio.
   
-![Operazione di trascinamento con origine dati](../data-tools/media/raddata-data-source-drag-operation.png "operazione di trascinamento raddata origine dati")
+![Operazione di trascinamento di origine dati](../data-tools/media/raddata-data-source-drag-operation.png "operazione di trascinamento raddata origine dati")
 
 Prima di trascinare elementi, è possibile impostare il tipo di controllo che si desidera associare. Valori diversi visualizzati a seconda se si scelga la tabella stessa, o una singola colonna.  È inoltre possibile impostare valori personalizzati. Per una tabella, "Dettagli" significa che ogni colonna è associato a un controllo separato.  
 
@@ -66,14 +63,14 @@ Se i controlli dell'applicazione è necessario non è disponibile dall'interno d
 ## <a name="bind-to-data-in-individual-controls"></a>Associazione a dati in singoli controlli  
 Quando si associa un'origine dati per "Dettagli", ogni colonna nel set di dati è associato a un controllo separato.  
   
-![Associare l'origine dati per i dettagli](../data-tools/media/raddata-bind-data-source-to-details.png "raddata origine dati di associazione per i dettagli")  
+![Associare l'origine dati per informazioni dettagliate](../data-tools/media/raddata-bind-data-source-to-details.png "raddata origine dati di associazione per i dettagli")  
   
 > [!IMPORTANT]
 > Si noti che nella figura precedente, si trascina dalla proprietà ordini della tabella Customers, non dalla tabella Orders. Tramite l'associazione alla proprietà Orders, i comandi di spostamento apportati in DataGridView vengono riflesse immediatamente nei controlli di dettagli. Se è stata trascinata dalla tabella Orders, i controlli sarebbero comunque essere associati al set di dati, ma non potrebbe non essere sincronizzati con il controllo DataGridView.  
   
 La figura seguente mostra l'impostazione predefinita i controlli con associazione a dati che vengono aggiunti al modulo dopo che la proprietà di ordini nella tabella Customers è associata a "Dettagli" nel **origini dati** finestra.  
   
-![Tabella Orders associata ai dettagli](../data-tools/media/raddata-orders-table-bound-to-details.png "tabella Orders raddata associata ai dettagli")  
+![Tabella Ordini associata a informazioni dettagliate](../data-tools/media/raddata-orders-table-bound-to-details.png "tabella Orders raddata associata ai dettagli")  
   
 Si noti inoltre che ogni controllo dispone di uno smart tag. Questo tag consente personalizzazioni che si applicano a solo a tale controllo.
   

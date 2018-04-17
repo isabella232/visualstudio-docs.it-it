@@ -1,23 +1,20 @@
 ---
 title: Guida introduttiva a diagnostica della grafica di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 11de8cc6cf559d82ffa7ac543e396644057346c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica della grafica di Visual Studio
 In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, quindi si acquisisce un frame da un'app Direct3D e lo si esamina in Analizzatore grafica.  
@@ -32,7 +29,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
   
  Per informazioni sull'installazione di strumenti di grafica, vedere [installare strumenti di grafica per Windows 10](#InstallGraphicsTools).  
   
-##  <a name="InstallGraphicsTools"></a>Installare strumenti di grafica per Windows 10  
+##  <a name="InstallGraphicsTools"></a> Installare strumenti di grafica per Windows 10  
  In Windows 10, l'infrastruttura di diagnostica della grafica è fornita dalla funzionalità facoltativa di Windows denominato *strumenti di grafica*. Questa funzionalità è necessaria per acquisire e riprodurre le informazioni di grafica in Windows 10 indipendentemente dal fatto che l'app acquisita abbia come destinazione una versione precedente di Windows e dalla versione di Direct3D in uso. Si può scegliere di installare la funzionalità di Strumenti di grafica in anticipo; in caso contrario, sarà installata su richiesta al primo avvio di una sessione di Diagnostica grafica da Visual Studio.  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Per installare Strumenti di grafica per Windows 10  

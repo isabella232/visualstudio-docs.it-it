@@ -1,12 +1,10 @@
 ---
 title: 'CA1822: Contrassegna i membri come statici | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - MarkMembersAsStatic
 - CA1822
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d1f3c20f39fe863925d46c1f86f2f6a821e8489a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7524db68b984155a8a03f1f0cb1cce0373b382a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Contrassegna i membri come statici
 |||  
 |-|-|  
 |TypeName|MarkMethodsAsStatic|  
 |CheckId|CA1822|  
-|Category|Microsoft. Performance|  
+|Category|Microsoft.Performance|  
 |Modifica importante|Non sostanziale - Se il membro non è visibile all'esterno dell'assembly, indipendentemente dal fatto le modifiche apportate. Non sostanziale - Se si modifica solo il membro a un membro di istanza con il `this` (parola chiave).<br /><br /> Sostanziale - Se si modifica il membro da un membro di istanza a un membro statico e è visibile all'esterno dell'assembly.|  
   
 ## <a name="cause"></a>Causa  

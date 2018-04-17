@@ -2,11 +2,9 @@
 title: Abilitare il debug per le applicazioni ASP.NET | Documenti Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Debug di applicazioni ASP.NET in Visual Studio
 
@@ -142,7 +140,7 @@ Se si utilizza il server web IIS locale, seguire questi passaggi.
     > [!NOTE]
     > Se si utilizza Windows Server 2008 R2, installare ASP.NET 4 invece con il seguente comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Aprire il **Gestione Internet Information Services (IIS)**. (Nel riquadro sinistro di Server Manager, selezionare **IIS**. Il server e scegliere **Gestione Internet Information Services (IIS)**.)
 
@@ -168,7 +166,7 @@ Se si utilizza il server web IIS locale, seguire questi passaggi. Esistono diver
 
 3. Scegliere **IIS, FTP, e così via** e fare clic su **pubblica**.
 
-    ![Esegue la pubblicazione in IIS](../debugger/media/dbg-aspnet-local-iis.png "esegue la pubblicazione in IIS")
+    ![La pubblicazione in IIS](../debugger/media/dbg-aspnet-local-iis.png "la pubblicazione in IIS")
 
     Per un'app Web Form, scegliere **personalizzato** nella finestra di dialogo pubblica, immettere un nome di profilo e scegliere **OK**.
 
@@ -180,7 +178,7 @@ Se si utilizza il server web IIS locale, seguire questi passaggi. Esistono diver
 
 6. (ASP.NET) Scegliere **IIS locale**e selezionare il sito web creato in precedenza e quindi fare clic su **aprire**.
 
-    ![Esegue la pubblicazione in IIS](../debugger/media/dbg-aspnet-local-iis-select-site.png "esegue la pubblicazione in IIS")
+    ![La pubblicazione in IIS](../debugger/media/dbg-aspnet-local-iis-select-site.png "la pubblicazione in IIS")
 
     > [!TIP]
     > Se viene visualizzato un messaggio che indica il server web che non è configurato correttamente, assicurarsi che sia installata la versione corretta di ASP.NET per IIS.
@@ -215,9 +213,9 @@ Se si utilizza il server web IIS locale, seguire questi passaggi. Esistono diver
 
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]automaticamente rileva modifiche al file Web. config e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS server perché le modifiche abbiano effetto.  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] automaticamente rileva modifiche al file Web. config e applica le nuove impostazioni di configurazione. Non è necessario riavviare il computer o il server IIS server perché le modifiche abbiano effetto.  
   
-Un sito Web può contenere più directory e sottodirectory virtuali, ognuna delle quali può includere file Web.config. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]le applicazioni ereditano le impostazioni dai file Web. config a livelli superiori nel percorso URL. File di configurazione gerarchici permettono di modificare le impostazioni per diverse [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazioni nello stesso momento, ad esempio per tutte le applicazioni sottostanti nella gerarchia. Tuttavia, se `debug` è impostato in un file di livello inferiore nella gerarchia, viene eseguito l'override di valore più alto.  
+Un sito Web può contenere più directory e sottodirectory virtuali, ognuna delle quali può includere file Web.config. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le applicazioni ereditano le impostazioni dai file Web. config a livelli superiori nel percorso URL. File di configurazione gerarchici permettono di modificare le impostazioni per diverse [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazioni nello stesso momento, ad esempio per tutte le applicazioni sottostanti nella gerarchia. Tuttavia, se `debug` è impostato in un file di livello inferiore nella gerarchia, viene eseguito l'override di valore più alto.  
   
 Ad esempio, è possibile specificare `debug="true"` in www.microsoft.com/aaa/Web.config, qualsiasi applicazione presente nella cartella aaa e in qualsiasi sottocartella di aaa eredita tale impostazione. Pertanto, se il [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazione www.microsoft.com/aaa/bbb, eredita tale impostazione, così come qualsiasi [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazioni in www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd e così via. L'unica eccezione si verifica se una di queste applicazioni esegue l'ovveride dell'impostazione per mezzo del proprio file Web.config di livello inferiore.  
   
@@ -225,7 +223,7 @@ Ad esempio, è possibile specificare `debug="true"` in www.microsoft.com/aaa/Web
 > Abilitazione della modalità di debug notevolmente le prestazioni dei [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dell'applicazione. Ricordare di disabilitare la modalità di debug prima di distribuire un'applicazione commerciale o di condurre misurazioni delle prestazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
-[Il debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)   
+[Debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)   
 [Procedura: eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)   
 [Procedura: trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
 [Eseguire il debug di applicazioni Web distribuite](debugging-deployed-web-applications.md)   

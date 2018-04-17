@@ -1,29 +1,25 @@
 ---
 title: Creare viste personalizzate di oggetti nativi nel debugger | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Creare viste personalizzate di oggetti nativi nel debugger di Visual Studio
 Il framework Natvis di Visual Studio consente di personalizzare il modo in cui Visual Studio visualizza i tipi nativi nelle finestre delle variabili del debugger (ad esempio, il **espressioni di controllo** finestra **variabili locali** finestra e in  **I suggerimenti dati**.
@@ -48,7 +44,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
   
  Lo stesso `TextBox` ha un aspetto molto più semplice nella finestra delle variabili quando vengono applicate le regole di visualizzazione personalizzata. I membri importanti della classe possono essere visualizzati insieme e il debugger mostra il valore della stringa sottostante del tipo di stringa personalizzato.  
   
- ![Dati TextBox con uso di Visualizzatore](../debugger/media/dbg_natvis_textbox_visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
+ ![Dati TextBox con uso del visualizzatore](../debugger/media/dbg_natvis_textbox_visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
   
 ##  <a name="BKMK_Using_Natvis_files"></a> Uso di file Natvis  
  I file NATVIS sono file XML con estensione natvis. Lo schema è definito in **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
@@ -131,7 +127,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
   
  Gli elementi `DisplayString` e `ArrayItems` vengono usati nella visualizzazione predefinita e nella visualizzazione semplice, mentre gli elementi `[size]` e `[capacity]` sono esclusi dalla visualizzazione semplice. È possibile usare l'identificatore di formato **view** per specificare una visualizzazione alternativa. Nella finestra **Espressioni di controllo** specificare la visualizzazione semplice come **vec,view(simple)**:  
   
- ![Finestra Espressioni di controllo di visualizzazione semplice](../debugger/media/watch-simpleview.png "SimpleView di espressioni di controllo")  
+ ![Finestra Espressioni di controllo con vista semplice](../debugger/media/watch-simpleview.png "SimpleView espressioni di controllo")  
   
 ##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnostica degli errori di Natvis  
  È possibile usare la diagnostica di Natvis per risolvere i problemi di sintassi e gli errori di analisi. Quando il debugger rileva errori in una voce di visualizzazione, li ignora e visualizza il tipo nel formato non elaborato o seleziona un'altra visualizzazione appropriata. Per capire perché una determinata voce di visualizzazione viene ignorata e visualizzare quali sono gli errori sottostanti, è possibile attivare la diagnostica di Natvis **strumenti > Opzioni > Debug > finestra di Output > messaggi di diagnostica Natvis (solo C++)** opzione. Gli errori vengono visualizzati nella finestra **Output** .  
@@ -464,7 +460,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 -   L'espressione `ValueNode` può essere lasciata vuota o contenere `this` per fare riferimento allo stesso nodo dell'elenco collegato.  
   
 #### <a name="customlistitems-expansion"></a>Espansione CustomListItems  
- L'espansione `CustomListItems` consente di scrivere una logica personalizzata per attraversare una struttura dei dati, ad esempio una tabella hash. È consigliabile utilizzare `CustomListItems` per visualizzare i dati in cui tutto ciò che è necessario valutare può essere espresso con espressioni C++, ma non rientra nel modello per `ArrayItems`, `TreeItems`, o`LinkedListItems.`  
+ L'espansione `CustomListItems` consente di scrivere una logica personalizzata per attraversare una struttura dei dati, ad esempio una tabella hash. È consigliabile utilizzare `CustomListItems` per visualizzare i dati in cui tutto ciò che è necessario valutare può essere espresso con espressioni C++, ma non rientra per `ArrayItems`, `TreeItems`, o `LinkedListItems.`  
   
  Il visualizzatore per CAtlMap è un ottimo esempio in cui l'uso di `CustomListItems` è appropriato.  
   
@@ -542,7 +538,7 @@ Sono supportate le funzioni intrinseche seguenti:
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Espansione di ExpandedItem  
  L'elemento `ExpandedItem` può essere usato per generare una visualizzazione figlio aggregata visualizzando le proprietà delle classi base o dei membri dati come se fossero figli del tipo visualizzato. L'espressione specificata viene valutata e i nodi figlio del risultato vengono aggiunti all'elenco figlio del tipo visualizzato. Ad esempio, si supponga di disporre di un tipo di puntatore intelligente `auto_ptr<vector<int>>`, che in genere Visualizza come:  
   
- ![ptr automatico &#95; &#60; vettore &#60; int &#62; &#62; espansione predefinita](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![automatico&#95;ptr&#60;vettore&#60;int&#62; &#62; predefinito espansione](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili e attraversare il membro _Myptr. Aggiungendo un elemento `ExpandedItem` , è possibile eliminare la variabile `_Myptr` dalla gerarchia e visualizzare direttamente gli elementi del vettore:  
   
@@ -555,7 +551,7 @@ Sono supportate le funzioni intrinseche seguenti:
 </Type>  
 ```  
   
- ![ptr automatico &#95; &#60; vettore &#60; int &#62; &#62; Espansione ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![automatico&#95;ptr&#60;vettore&#60;int&#62; &#62; espansione di ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  Nell'esempio seguente viene illustrato come aggregare proprietà dalla classe di base in una classe derivata. Si supponga che la classe `CPanel` derivi da `CFrameworkElement`. Invece di ripetere le proprietà fornite dalla classe base `CFrameworkElement` , il nodo `ExpandedItem` consente di aggiungere queste proprietà all'elenco figlio della classe `CPanel` . Il **nd** identificatore di formato, che disattiva la visualizzazione di corrispondenza per la classe derivata, questo caso è necessario. In caso contrario, l'espressione `*(CFrameworkElement*)this` provoca il `CPanel` visualizzazione nuovamente l'applicazione perché la visualizzazione predefinita di tipo di regole di corrispondenza viene considerata la più appropriata secondo. Utilizzo di **nd** identificatore di formato indica al debugger di usare la visualizzazione della classe base o l'espansione predefinita della classe base se la classe di base non include una visualizzazione.  
   

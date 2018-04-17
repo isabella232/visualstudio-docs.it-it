@@ -1,11 +1,8 @@
 ---
 title: Associare i controlli WPF a un servizio dati WCF | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare i controlli WPF a un servizio dati WCF
 In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i controlli associati a dati. I controlli vengono associati a record cliente incapsulati in un'istanza di [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Verranno inoltre aggiunti i pulsanti che i clienti possono usare per visualizzare e aggiornare i record.  
@@ -214,7 +211,7 @@ Creare controlli che consentono di visualizzare i record cliente trascinando il 
   
     -   **RevisionNumber**  
   
-    -   **ROWGUID**  
+    -   **rowguid**  
   
     Questa azione impedisce a Visual Studio di creare i controlli associati a dati per questi nodi nel passaggio successivo. Questa procedura dettagliata, si presuppone che l'utente finale non debba visualizzare questi dati.  
   
@@ -230,7 +227,7 @@ Creare controlli che consentono di visualizzare i record cliente trascinando il 
   
     -   **Numero di ordine di acquisto**  
   
-    -   **ID dell'ordine di vendita**  
+    -   **ID di ordine di vendita**  
   
     -   **Numero di ordine di vendita**  
   
@@ -247,11 +244,11 @@ Utilizzare l'oggetto proxy del servizio per caricare i dati di vendita dal servi
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Esplorare i record delle vendite  
-Aggiungere il codice che consente agli utenti di scorrere i record delle vendite usando il  **\<**  e  **>**  pulsanti.  
+Aggiungere il codice che consente agli utenti di scorrere i record delle vendite usando il **\<** e **>** pulsanti.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Per consentire agli utenti di esplorare i record delle vendite  
   
-1.  Nella finestra di progettazione, fare doppio clic su di  **<**  pulsante nell'area della finestra.  
+1.  Nella finestra di progettazione, fare doppio clic su di **<** pulsante nell'area della finestra.  
   
      Visual Studio apre il file code-behind e crea un nuovo `backButton_Click` gestore eventi per il <xref:System.Windows.Controls.Primitives.ButtonBase.Click> evento.  
   
@@ -260,7 +257,7 @@ Aggiungere il codice che consente agli utenti di scorrere i record delle vendite
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Tornare alla finestra di progettazione e fare doppio clic su di  **>**  pulsante.  
+3.  Tornare alla finestra di progettazione e fare doppio clic su di **>** pulsante.  
   
      Visual Studio apre il file code-behind e crea un nuovo `nextButton_Click` gestore eventi per il <xref:System.Windows.Controls.Primitives.ButtonBase.Click> evento.  
   
@@ -302,7 +299,7 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
   
     -   Campi di dati diversi dal primo record delle vendite, con l'ID dell'ordine di vendita di visualizzare le caselle di testo **71774**.  
   
-    -   È possibile scegliere di  **>**  o  **<**  pulsanti per spostarsi tra gli altri record delle vendite.  
+    -   È possibile scegliere di **>** o **<** pulsanti per spostarsi tra gli altri record delle vendite.  
   
 5.  In uno dei record delle vendite, digitare un testo nel **commento** casella e quindi fare clic su **salvare modifiche**.  
   
@@ -324,4 +321,4 @@ Dopo avere completato questa procedura dettagliata, è possibile eseguire le att
 [Associare i controlli WPF a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md)   
 [Panoramica WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)   
 [Panoramica di Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)  
-[Data Binding Overview (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+[Data Binding Panoramica (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)

@@ -1,11 +1,8 @@
 ---
 title: 'Procedura dettagliata: Creazione di un semplice servizio WCF in Windows Form | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c45ea549f17d71fd524a96e7d019c2b0d86bc628
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cacd1e15d2b20c4c24056416df4f9d25ea87474e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: Creazione di un semplice servizio WCF in Windows Form
 In questa procedura dettagliata viene illustrato come creare un semplice servizio [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)], testarlo e accedervi da un'applicazione Windows Form.  
@@ -79,7 +76,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
   
 2.  Nel **Client di prova WCF** form fare doppio clic su di **GetData ()** metodo sottoposto a **IService1**. Il **GetData** verrà visualizzata la scheda.  
   
-     ![Il metodo GetData &#40; &#41; metodo](../data-tools/media/wcf4.png "wcf4")  
+     ![Il metodo GetData&#40; &#41; metodo](../data-tools/media/wcf4.png "wcf4")  
   
 3.  Nel **richiesta** , quindi selezionare il **valore** campo e tipo `Hello`.  
   
@@ -107,7 +104,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
   
      ![La finestra di dialogo Aggiungi riferimento al servizio](../data-tools/media/wcf8.png "wcf8")  
   
-     **Service1** nel verranno visualizzati il **servizi** riquadro.  
+     **Service1** verrà visualizzato nella **Services** riquadro.  
   
 5.  Fare clic su **OK** per aggiungere il riferimento al servizio.  
   

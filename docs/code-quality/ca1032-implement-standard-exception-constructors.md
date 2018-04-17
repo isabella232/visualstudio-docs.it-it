@@ -1,12 +1,10 @@
 ---
 title: 'CA1032: Implementare costruttori di eccezioni standard | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 640aacaf67ba20e801ac9657aeff20b091c5032e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f2cb2cd82eb776c536b4b54f6861e9b4c825ecbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementare costruttori di eccezioni standard
 |||  
 |-|-|  
 |TypeName|ImplementStandardExceptionConstructors|  
 |CheckId|CA1032|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 -   NewException protetto o privato (SerializationInfo, StreamingContext)  
   
- Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Ad esempio, il costruttore con la firma `NewException(string, Exception)` viene utilizzato per creare le eccezioni causate da altre eccezioni. Senza questo costruttore non è possibile creare e generare un'istanza di eccezione personalizzata che contiene un'eccezione (annidata) interna, che è necessario eseguire l'operazione per il codice gestito in tale situazione. I primo tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto nelle classi non sealed e privato nelle classi sealed. Per ulteriori informazioni, vedere [CA2229: implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)  
+ Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Ad esempio, il costruttore con la firma `NewException(string, Exception)` viene utilizzato per creare le eccezioni causate da altre eccezioni. Senza questo costruttore non è possibile creare e generare un'istanza di eccezione personalizzata che contiene un'eccezione (annidata) interna, che è necessario eseguire l'operazione per il codice gestito in tale situazione. I primo tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto nelle classi non sealed e privato nelle classi sealed. Per altre informazioni, vedere [CA2229: implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Per correggere una violazione di questa regola, aggiungere i costruttori mancanti all'eccezione e assicurarsi che dispongano di accessibilità corretta.  

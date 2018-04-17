@@ -1,22 +1,19 @@
 ---
 title: Indirizzamento DPI Problemi2 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc0801d3fb43188ac3371ed7e5e7394b0e3aad72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="addressing-dpi-issues"></a>Risolvere i problemi DPI
 Un numero crescente di dispositivi è distribuiti con schermate "ad alta risoluzione". Queste schermate vengono visualizzate in genere sono più di 200 pixel per pollice (PPID). Utilizzo di un'applicazione in questi computer richiederà il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire da 2014, la destinazione principale per gli schermi ad alta densità è mobile computing dispositivi (telefoni, Tablet e portatili conchiglia).  
@@ -33,7 +30,7 @@ Un numero crescente di dispositivi è distribuiti con schermate "ad alta risoluz
   
  Windows ha una soluzione per gestire la scalabilità verticale dell'interfaccia utente per sfruttare i vantaggi dei conteggi maggiore pixel. Un'applicazione consente di partecipare a questo sistema dichiarando stesso "sistema compatibilità DPI avanzata". Le applicazioni che si esegue questa operazione vengono ridimensionate dal sistema. Ciò può comportare un'esperienza utente "fuzzy" in cui è in modo uniforme estesa pixel dell'intera applicazione. Ad esempio:  
   
- ![DPI problemi Fuzzy](../extensibility/media/dpi-issues-fuzzy.png "DPI problemi Fuzzy")  
+ ![DPI emette Fuzzy](../extensibility/media/dpi-issues-fuzzy.png "DPI emette Fuzzy")  
   
  Visual Studio consente di partecipare a da scalabilità compatibile con DPI e pertanto non viene "virtualizzata."  
   
@@ -172,7 +169,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Ecco un esempio delle differenze nei risultati, in cui la prima immagine viene ridimensionata con l'algoritmo di ridimensionamento doppia migliorato -> 100%, 200% -> 250%, e la seconda solo con Bicubica 100% -> % 250.  
   
- ![DPI problemi doppia esempio scalabilità](../extensibility/media/dpi-issues-double-scaling-example.png "DPI problemi esempio scalabilità Double")  
+ ![DPI emette doppia esempio scalabilità](../extensibility/media/dpi-issues-double-scaling-example.png "DPI emette doppia esempio scala")  
   
  Per abilitare l'interfaccia utente per utilizzare questa scalabilità doppia, markup XAML per la visualizzazione di ogni elemento immagine dovrà essere modificato. Nell'esempio seguente viene illustrato come utilizzare doppia scalabilità in WPF in Visual Studio usando la libreria DpiHelper e Shell.12/14.  
   

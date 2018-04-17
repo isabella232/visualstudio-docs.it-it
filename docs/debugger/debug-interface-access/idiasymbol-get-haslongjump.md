@@ -1,29 +1,25 @@
 ---
 title: IDiaSymbol::get_hasLongJump | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasLongJump method
 ms.assetid: 14484cb1-43b0-47a1-a9a8-081b55566886
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bb71fb491fd5bd03f2346f93edb4c3ba45af1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 252533e126075a3acee3ff4e4a6d47f7df68e079
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Recupera un flag che specifica se la funzione contiene un utilizzo del [longjmp](/cpp/c-runtime-library/reference/longjmp) comando (associato a un [setjmp](/cpp/c-runtime-library/reference/setjmp) comando, che costituiscono il metodo di tipo C di gestione delle eccezioni).  
@@ -55,6 +51,6 @@ HRESULT get_hasLongJump
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
+ [Get_hassetjump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   
  [setjmp](/cpp/c-runtime-library/reference/setjmp)

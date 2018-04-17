@@ -1,29 +1,25 @@
 ---
 title: IDebugEngine2::Attach | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 264ef65472bf3d003852f2f7efc0fe21ee45d2a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Collega un motore di debug (DE) a una o più programmi. Chiamato dal gestore di sessione di debug (SDM) quando la Germania è in esecuzione in-process di SDM.  
@@ -72,15 +68,15 @@ int Attach(
 ## <a name="remarks"></a>Note  
  Esistono tre motivi per la connessione a un programma, come indicato di seguito:  
   
--   `ATTACH_REASON_LAUNCH`indica che la Germania si connette al programma, perché l'utente ha avviato il processo che lo contiene.  
+-   `ATTACH_REASON_LAUNCH` indica che la Germania si sta connettendo al programma, perché l'utente ha avviato il processo che lo contiene.  
   
--   `ATTACH_REASON_USER`indica che l'utente ha richiesto in modo esplicito DE associare a un programma (o il processo che contiene un programma).  
+-   `ATTACH_REASON_USER` indica che l'utente ha richiesto in modo esplicito la Germania associare a un programma (o il processo che contiene un programma).  
   
--   `ATTACH_REASON_AUTO`indica che la Germania si connette a un particolare programma perché è già il debug di altri programmi in un determinato processo. Questo è l'acronimo di connessione automatica.  
+-   `ATTACH_REASON_AUTO` indica che la Germania si connette a un particolare programma perché è già il debug di altri programmi in un determinato processo. Questo è l'acronimo di connessione automatica.  
   
  Quando questo metodo viene chiamato, la Germania deve inviare questi eventi in sequenza:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (se ha non è già stato inviato per una particolare istanza del motore di debug)  
+1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (se non si sono già stato inviato per una particolare istanza del motore di debug)  
   
 2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   

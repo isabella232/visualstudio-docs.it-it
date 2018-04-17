@@ -1,23 +1,21 @@
 ---
 title: Regola le regole delle linee guida di progettazione di base impostata per il codice gestito | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 769ff8468bc2f8ea90201678c85351706b8a4652
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3ae77ad6aad6b0300cd96061198086831ee61cde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
 È possibile utilizzare il set di concentrarsi su come rendere più facile da comprendere e usare il codice di regole regole base delle linee guida di progettazione Microsoft. È necessario includere questo set di regole se il progetto contiene codice di libreria o se si desidera applicare le procedure consigliate per il codice che è facile da gestire.  
@@ -47,7 +45,7 @@ ms.lasthandoff: 12/22/2017
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|  
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campi dei tipi di valore devono essere portabili|  
-|[CA1901 LE](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|  
+|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|  
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|  
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Esaminare le query SQL per le vulnerabilità di sicurezza|  
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|  
@@ -93,7 +91,7 @@ ms.lasthandoff: 12/22/2017
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Non dichiarare membri statici su tipi generici|  
 |[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|Non esporre elenchi generici|  
 |[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Utilizzare istanze di gestori eventi generici|  
-|[CA1004 I](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Metodi generici devono fornire parametri di tipo|  
+|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Metodi generici devono fornire parametri di tipo|  
 |[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Evitare un numero eccessivo di parametri nei tipi generici|  
 |[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Non annidare tipi generici nelle firme dei membri|  
 |[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Utilizzare generics dove appropriato|  

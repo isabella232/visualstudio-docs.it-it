@@ -1,26 +1,24 @@
 ---
 title: Aggiunta di comandi di Visual Studio a una pagina iniziale | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page commands
 - vs:VSCommands
 ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: efb332de822bd86cc95c4786dbca3472fd0984cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 87a5e6d29877efb857b846a7b3fac5f19f790d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Aggiunta di comandi di Visual Studio a una pagina iniziale
 Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi comandi di Visual Studio. Questo documento vengono illustrate le diverse modalità di associazione di comandi di Visual Studio a oggetti XAML in una pagina di avvio.  

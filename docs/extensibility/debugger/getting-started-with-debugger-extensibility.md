@@ -1,34 +1,32 @@
 ---
-title: "Introduzione al Debugger estendibilità | Documenti Microsoft"
-ms.custom: 
+title: Introduzione al Debugger estendibilità | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98d6e0200c1a68ae3819d3276ce8a04aaada2e78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Guida introduttiva di estendibilità del Debugger
 Il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornisce le informazioni necessarie per creare e personalizzare i componenti del debugger per eseguire il debug di programmi dall'interno di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]il debug è aggiunto miglioramenti derivati dall'usabilità completa test eseguiti nel precedente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger. È possibile utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug al passaggio tramite un'applicazione in più lingue, oppure è possibile implementare in tempo reale la modifica delle variabili durante il debug di applicazioni e soluzioni in più lingue.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] il debug è aggiunto miglioramenti derivati dall'usabilità completa test eseguiti nel precedente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger. È possibile utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug al passaggio tramite un'applicazione in più lingue, oppure è possibile implementare in tempo reale la modifica delle variabili durante il debug di applicazioni e soluzioni in più lingue.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]il debug è eseguita out-of-process con il programma in fase di debug e pertanto è meno intrusivo nello spazio di elaborazione dell'applicazione. Di conseguenza, risulta più semplice scrivere i componenti che interagiscono con il debugger senza influire sull'applicazione di debug.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] il debug è eseguita out-of-process con il programma in fase di debug e pertanto è meno intrusivo nello spazio di elaborazione dell'applicazione. Di conseguenza, risulta più semplice scrivere i componenti che interagiscono con il debugger senza influire sull'applicazione di debug.  
   
  Per ottimizzare l'utilizzo di [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], è necessario avere familiarità con le operazioni seguenti:  
   

@@ -1,23 +1,20 @@
 ---
 title: Panoramica di Visual Studio O/R Designer | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 09fe5a8cbec1ba1ab5a45abda4c88864e25a1751
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools in Visual Studio
 LINQ to SQL è la prima tecnologia di mapping relazionale a oggetti rilasciata da Microsoft. Funziona bene in scenari di base e continua a essere supportato in Visual Studio, ma non è più in fase di sviluppo. Utilizzo di LINQ to SQL per la manutenzione di un'applicazione legacy che è già in uso in o in semplici applicazioni che utilizzano SQL Server e non necessitano del mapping di più tabelle. In generale, le nuove applicazioni devono utilizzare Entity Framework quando è necessario un livello di mapping relazionale a oggetti.  
@@ -35,7 +32,7 @@ Il [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.
   
  Visual Studio crea un file con estensione dbml e aggiungerlo alla soluzione. Questo è il file di mapping XML e i relativi file di codice correlate.  
   
- ![Classi LINQ to SQL in Esplora soluzioni](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png "classi LINQ to SQL raddata in Esplora soluzioni")  
+ ![Le classi LINQ to SQL in Esplora soluzioni](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png "raddata LINQ to SQL classi in Esplora soluzioni")  
   
  Quando si seleziona il file. dbml, Visual Studio Mostra l'area di Progettazione relazionale che consente di creare visivamente il modello. Nella figura seguente mostra la finestra di progettazione dopo che sono state trascinate le tabelle Northwind Customers e Orders da Esplora Server. Si noti la relazione tra le tabelle.  
   

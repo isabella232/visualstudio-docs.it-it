@@ -1,12 +1,9 @@
 ---
 title: Selezionare la finestra di dialogo tipo di codice | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.selectengines
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - debugger, engine selection
 - debugging engine selection dialog box
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d90d0bd4b310334e11a6ff394384c7e9003d3c3e
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6c09b4197d5ee0a15981350c92fc2cb2098be003
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 Per aprire questa finestra di dialogo, aprire il **Connetti a processo** la finestra di dialogo e quindi scegliere il **selezionare** pulsante.  

@@ -1,12 +1,10 @@
 ---
 title: 'CA2211: I campi Non costanti non devono essere visibili | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2211
 - NonConstantFieldsShouldNotBeVisible
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - NonConstantFieldsShouldNotBeVisible
 - CA2211
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b31eb16fda818ab2eee001e0fe14c5f433f5fcd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d2e91cce74877a4160646db829ba9208410b403
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: I campi non costanti non devono essere visibili
 |||  
 |-|-|  
 |TypeName|NonConstantFieldsShouldNotBeVisible|  
 |CheckId|CA2211|  
-|Category|Microsoft. Usage|  
+|Category|Microsoft.Usage|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  

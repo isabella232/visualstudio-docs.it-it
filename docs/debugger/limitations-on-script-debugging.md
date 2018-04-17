@@ -1,12 +1,10 @@
 ---
 title: Limitazioni del debug di Script | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2b959428d940fd61c9c343f468fca71d56332c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-on-script-debugging"></a>Limitazioni del debug di script
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta il debug di script lato client, soggetto alle limitazioni trattate in questo argomento.  
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   I punti di interruzione devono essere impostati all'interno di blocchi `<script>`. Non è possibile eseguire il mapping di punti di interruzione in script inline o blocchi `<% %>`.  
   
--   L'URL del browser per la pagina deve contenere il nome della pagina. Ad esempio, http://microsoft.com/default.apsx. Il mapping dei punti di interruzione non può riconoscere un reindirizzamento da un indirizzo quale http://microsoft.com alla pagina predefinita.  
+-   L'URL del browser per la pagina deve contenere il nome della pagina. Ad esempio http://microsoft.com/default.apsx. I punti di interruzione in grado di riconoscere un reindirizzamento da un indirizzo, ad esempio http://microsoft.com alla pagina predefinita.  
   
 -   Il punto di interruzione deve essere impostato nella pagina specificata nell'URL del browser, non in un file di controllo (ascx) ASPX, in una pagina master o in un altro file incluso dalla pagina. Non è possibile eseguire il mapping dei punti di interruzione impostati nelle pagine incluse.  
   

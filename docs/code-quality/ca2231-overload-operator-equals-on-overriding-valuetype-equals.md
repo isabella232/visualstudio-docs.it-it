@@ -1,12 +1,10 @@
 ---
 title: "CA2231: Overload dell'operatore è uguale all'override di ValueType. Equals | Documenti Microsoft"
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
 - CA2231
@@ -15,23 +13,23 @@ helpviewer_keywords:
 - OverloadOperatorEqualsOnOverridingValueTypeEquals
 - CA2231
 ms.assetid: 114c0161-261a-40ad-8b2c-0932d6909d2a
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9ee207eb3e5c4babb5bcb9f7d88f9afd3908a3c7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 881b3d9761f19b4e8364f585480d8b055d076a38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals
 |||  
 |-|-|  
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|  
 |CheckId|CA2231|  
-|Category|Microsoft. Usage|  
+|Category|Microsoft.Usage|  
 |Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  

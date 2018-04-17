@@ -2,12 +2,9 @@
 title: "Procedura dettagliata: Debug di un'applicazione parallela | Documenti Microsoft"
 ms.custom: H1HackMay2017
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - parallel applications, debugging [Visual Basic]
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
-caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af74685428f15cebdcaf0992ae3ad529f2dd41b8
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 97afdf674868c400a02a54a9b17011ff96c11245
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Procedura dettagliata: Debug di un'applicazione parallela in Visual Studio
 Questa procedura dettagliata viene illustrato come utilizzare il **attività in parallelo** e **stack in parallelo** windows per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento di runtime del codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Dopo il codice si interrompe, la procedura dettagliata viene illustrato come utilizzare il **attività in parallelo** e **stack in parallelo** windows esaminarlo.  

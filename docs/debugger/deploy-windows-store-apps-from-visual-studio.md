@@ -1,27 +1,25 @@
 ---
 title: Distribuire le app UWP da Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire le app UWP da Visual Studio
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Distribuzione di un'app di cui viene eseguito il debug quando viene avviata da un'altra app o da un altro metodo.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Come distribuire un'app UWP  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Come distribuire un'app UWP  
  La distribuzione manuale di un'app è un processo facile:  
   
 1.  Se esegui la distribuzione in un dispositivo remoto, specifica il nome o l'indirizzo IP del dispositivo nella pagina delle proprietà del progetto di avvio dell'app. I passaggi necessari sono elencati più avanti in questo argomento.  
@@ -81,7 +79,7 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
   
  **Indicazione del dispositivo remoto nella pagina di un progetto JavaScript o Visual C++**  
   
- ![C &#43; &#43; le proprietà per il debug remoto di progetto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; proiettare le proprietà per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Scegliere **Debugger remoto** dall'elenco **Debugger da avviare** .  
   
@@ -115,6 +113,6 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 -   Nella pagina delle proprietà Debug in JavaScript e C++ imposta il valore di **Avvia applicazione** su **Sì**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Opzioni di distribuzione remota avanzate](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Opzioni avanzate di distribuzione remoto](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Eseguire il debug di un pacchetto dell'app installata](../debugger/debug-installed-app-package.md)   
  [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

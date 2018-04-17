@@ -1,27 +1,25 @@
 ---
 title: Log grafico | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.vsglog.error
 - vs.graphics.experiment
 - vs.graphics.vsglog
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
-caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b5119045a7a1552a89f273963f94d30a4063e73b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.  
@@ -57,14 +55,14 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
 |**Formato High Color 10 bit XR**|**True** se il formato di high color 10 bit XR è supportato; in caso contrario, **False**.|  
-|**DirectCompute CS 4. x**|**True** se Compute Shader 4.0 è supportato; in caso contrario, **False**.|  
+|**DirectCompute CS 4.x**|**True** se Compute Shader 4.0 è supportato; in caso contrario, **False**.|  
 |**Shader a precisione doppia**|**True** se la scheda video supporta valori a virgola mobile (64 bit) e con precisione doppia; in caso contrario, **False**.|  
 |**Elenco comandi driver**|**True** se il driver supporta gli elenchi comandi; in caso contrario, **False**.|  
 |**Creazioni simultanee driver**|**True** se il driver supporta la creazione simultanea (asincrona); in caso contrario, **False**.|  
 |**Formati estesi (BGRA e così via)**|**True** se formati estesi come BGRA sono supportati; in caso contrario, **False**.|  
 |**Livello funzionalità hardware massimo**|Visualizza il livello di funzionalità massimo supportato dalla scheda video.|  
   
- **Informazioni di visualizzazione**  
+ **Informazioni visualizzate**  
  Visualizza le informazioni relative alla scheda video usata durante la sessione di acquisizione.  
   
 |Proprietà|Descrizione|  
@@ -80,7 +78,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
   
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
-|**Percorso**|Percorso del file con estensione vsglog. **Nota:** in acquisizione legacy, questa proprietà è inutilizzata.|  
+|**Percorso**|Percorso del file con estensione vsglog. **Nota:** sotto l'acquisizione legacy, questa proprietà è inutilizzata.|  
   
  **Informazioni sul modulo**  
  Visualizza il nome e la versione delle DLL (Dynamic Link Library) caricate dall'app durante la sessione di acquisizione.  
@@ -106,7 +104,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**ID processo**|ID processo assegnato all'app.|  
 |**Version**|Versione dell'app.|  
   
- **File di Log VSG**  
+ **Di Log Vsg**  
  Visualizza le informazioni relative al documento di log della grafica.  
   
 |Proprietà|Descrizione|  

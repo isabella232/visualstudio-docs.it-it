@@ -1,12 +1,10 @@
 ---
 title: 'CA1018: Contrassegnare gli attributi con AttributeUsageAttribute | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2b94cb7c11c803e713609036db12c47e2027cb61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d40b97ee7637b5f742caee71b23cd9d384a1ecc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Contrassegnare gli attributi con AttributeUsageAttribute
 |||  
 |-|-|  
 |TypeName|MarkAttributesWithAttributeUsage|  
 |CheckId|CA1018|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  È necessario correggere una violazione di questa regola anziché escludere il messaggio. Anche se l'attributo eredita <xref:System.AttributeUsageAttribute>, l'attributo deve essere presenta per semplificare la manutenzione del codice.  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente definisce due attributi. `BadCodeMaintainerAttribute`in modo non corretto omette il <xref:System.AttributeUsageAttribute> istruzione e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo descritto in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesta dalla regola di progettazione [CA1019: definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) e viene inclusa per completezza.  
+ L'esempio seguente definisce due attributi. `BadCodeMaintainerAttribute` in modo non corretto omette il <xref:System.AttributeUsageAttribute> istruzione, e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo descritto in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesta dalla regola di progettazione [CA1019: definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) e viene inclusa per completezza.  
   
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  

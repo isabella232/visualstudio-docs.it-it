@@ -1,12 +1,10 @@
 ---
 title: Risoluzione dei problemi relativi a errori specifici nelle distribuzioni ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b52caad3b6e4c98dd78e6c6be9835c11ac4d4175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 Questo argomento vengono elencati gli errori comuni che possono verificarsi quando si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , applicazione e fornisce i passaggi per risolvere i problemi.  
@@ -72,13 +70,13 @@ Questo argomento vengono elencati gli errori comuni che possono verificarsi quan
   
 -   Verificare l'intervallo di aggiornamento nel manifesto di distribuzione. Se questo intervallo è impostato su intervalli periodici, ad esempio una volta ogni sei ore [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non analizzeranno per un aggiornamento prima che sia trascorso questo intervallo. È possibile modificare il manifesto per l'analisi per un aggiornamento ogni volta che viene avviata l'applicazione. Modifica dell'intervallo di aggiornamento è un'opzione utile durante la fase di sviluppo per verificare gli aggiornamenti vengono installati, ma rallenta l'attivazione dell'applicazione.  
   
--   Provare a riavviare l'applicazione nel menu Start. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]sia stato rilevato l'aggiornamento in background, ma verrà richiesto di installare i componenti aggiornati alla successiva attivazione.  
+-   Provare a riavviare l'applicazione nel menu Start. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] potrebbero essere rilevati l'aggiornamento in background, ma verrà richiesto di installare i bit alla successiva attivazione.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante l'aggiornamento verrà visualizzato un errore con la seguente voce di log: "il riferimento nella distribuzione non corrisponde all'identità definita nel manifesto dell'applicazione"  
  Questo errore può verificarsi perché è stata modificata manualmente i manifesti di distribuzione e dell'applicazione e hanno causato la descrizione dell'identità di un assembly in un manifesto da risultare non sincronizzati con le altre. L'identità di un assembly è costituito da nome, versione, impostazioni cultura e token di chiave pubblica. Esaminare le descrizioni di identità nei manifesti e correggere eventuali differenze.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Prima attivazione da CD-ROM o un disco locale viene eseguita correttamente, mentre quella successiva dal Menu Start non riesce.  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilizza l'URL di Provider di distribuzione per ricevere gli aggiornamenti dell'applicazione. Verificare che il percorso che fa riferimento l'URL sia corretto.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utilizza l'URL di Provider di distribuzione per ricevere gli aggiornamenti dell'applicazione. Verificare che il percorso che fa riferimento l'URL sia corretto.  
   
 #### <a name="error-cannot-start-the-application"></a>Errore: "Impossibile avviare l'applicazione"  
  Questo messaggio di errore indica in genere che si verifica un problema di installazione dell'applicazione nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archiviare. L'applicazione contiene un errore o l'archivio è danneggiato. Il file di log potrebbe indicare la posizione dell'errore.  
@@ -106,7 +104,7 @@ Questo argomento vengono elencati gli errori comuni che possono verificarsi quan
  Se esegue la pubblicazione con un URL, assicurarsi che il computer di destinazione dispone di estensioni del Server abilitata.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Messaggio di errore: Impossibile creare il sito Web '\<sito >'. Non sono installati i componenti per la comunicazione con le estensioni del Server di FrontPage.  
- Verificare di disporre di Microsoft Visual Studio Web Authoring installato il componente nel computer in cui esegue la pubblicazione. Per gli utenti di Express, questo componente non è installato per impostazione predefinita. Per ulteriori informazioni, vedere [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
+ Verificare di disporre di Microsoft Visual Studio Web Authoring installato il componente nel computer in cui esegue la pubblicazione. Per gli utenti di Express, questo componente non è installato per impostazione predefinita. Per altre informazioni, vedere [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Messaggio di errore: Impossibile trovare il file ' Microsoft.Windows.Common-controlli, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
  Questo messaggio di errore viene visualizzato quando si tenta di pubblicare un'applicazione WPF con gli stili visuali abilitati. Per risolvere questo problema, vedere [procedura: pubblicare un'applicazione WPF con abilitato stili Visual](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
@@ -132,11 +130,11 @@ Questo argomento vengono elencati gli errori comuni che possono verificarsi quan
 |Impossibile continuare. Non è formattato correttamente l'applicazione. Per assistenza, contattare l'autore dell'applicazione.<br /><br /> Convalida dell'applicazione non riuscita. Impossibile continuare.<br /><br /> Impossibile recuperare i file dell'applicazione. I file danneggiano nella distribuzione.|Uno dei file manifesti della distribuzione è sintatticamente non valido o contiene un hash che non può essere riconciliato con il file corrispondente. Questo errore può inoltre indicare che il manifesto incorporato all'interno di un assembly è danneggiato. Creare una nuova distribuzione e ricompilare l'applicazione, o trovare e correggere gli errori manualmente nei manifesti.|  
 |Impossibile recuperare l'applicazione. Errore di autenticazione.<br /><br /> Installazione dell'applicazione non riuscita. Impossibile trovare il file di applicazioni nel server. Per assistenza, contattare l'autore dell'applicazione o l'amministratore.|Impossibile scaricare uno o più file nella distribuzione perché non si dispone dell'autorizzazione per accedervi. Questo può dipendere da un errore 403 accesso negato, restituito da un server Web, che può verificarsi se uno dei file nella distribuzione termina con un'estensione che rende il server Web di considerarlo come un file protetto. Inoltre, una directory che contiene uno o più i file dell'applicazione potrebbe richiedere un nome utente e una password per accedere.|  
 |Non è possibile scaricare l'applicazione. Mancano alcuni file necessari. Per assistenza, contattare il fornitore dell'applicazione o l'amministratore di sistema.|Impossibile trovare uno o più file elencati nel manifesto dell'applicazione nel server. Verificare di avere caricato i file dipendenti di distribuzione, quindi riprovare.|  
-|Download dell'applicazione non riuscita. Controllare la connessione di rete o contattare l'amministratore di sistema o di un provider di servizi di rete.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Impossibile stabilire una connessione di rete al server. Esaminare la disponibilità del server e lo stato della rete.|  
+|Download dell'applicazione non riuscita. Controllare la connessione di rete o contattare l'amministratore di sistema o di un provider di servizi di rete.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non è possibile stabilire una connessione di rete al server. Esaminare la disponibilità del server e lo stato della rete.|  
 |URLDownloadToCacheFile non riuscita con HRESULT '\<numero >'. Si è verificato un errore durante il tentativo di scaricare '\<file >'.|Se un utente ha impostato opzione sicurezza avanzata di Internet Explorer "Avvisa se si passa tra sicuro e modalità non protetta" nel computer di destinazione di distribuzione e l'URL di installazione dell'applicazione ClickOnce in corso l'installazione viene reindirizzata da non protetta a un sito sicuro (o viceversa), l'installazione avrà esito negativo perché l'avviso di Internet Explorer interrotta.<br /><br /> Per risolvere questo problema, è possibile eseguire una delle operazioni seguenti:<br /><br /> -Deselezionare l'opzione di sicurezza.<br />-Verificare assicurarsi che l'URL di installazione non viene reindirizzata in modo tale che cambia modalità di sicurezza.<br />-Rimuovere completamente il reindirizzamento e scegliere l'URL di installazione effettivo.|  
 |Si è verificato un errore di scrittura sul disco rigido. Potrebbero non essere disponibile spazio sufficiente sul disco. Per assistenza, contattare il fornitore dell'applicazione o l'amministratore di sistema.|Potrebbe trattarsi di spazio su disco insufficiente per l'applicazione, ma può anche indicare un errore dei / o più generale quando si sta tentando di salvare i file dell'applicazione per l'unità.|  
 |Impossibile avviare l'applicazione. Non c'è spazio insufficiente sul disco.|Il disco è pieno. Rendere disponibile dello spazio e provare a eseguire nuovamente l'applicazione.|  
-|Tentativo di caricare contemporaneamente troppe attivazioni distribuite.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Limita il numero di applicazioni che è possibile avviare contemporaneamente. Si tratta principalmente per proteggere da tentativi di attacchi di tipo denial of service contro locale provocare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] servizio; gli utenti che tenta di avviare più volte, la stessa applicazione in rapida successione, potrà solo con una singola istanza di applicazione.|  
+|Tentativo di caricare contemporaneamente troppe attivazioni distribuite.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Limita il numero delle diverse applicazioni che è possibile avviare contemporaneamente. Si tratta principalmente per proteggere da tentativi di attacchi di tipo denial of service contro locale provocare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] servizio; gli utenti che tenta di avviare più volte, la stessa applicazione in rapida successione, potrà solo con una singola istanza di applicazione.|  
 |Tasti di scelta rapida non può essere attivate attraverso la rete.|Tasti di scelta rapida per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere avviata solo sul disco rigido locale. E non tramite un URL che punta a un file di scelta rapida in un server remoto.|  
 |L'applicazione è troppo grande per essere eseguita in linea in attendibilità parziale. Per assistenza, contattare il fornitore dell'applicazione o l'amministratore di sistema.|Un'applicazione in esecuzione in attendibilità parziale non può essere superiore alla metà della dimensione della quota di applicazione in linea, che per impostazione predefinita è 250 MB.|  
   

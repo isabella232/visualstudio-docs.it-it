@@ -1,12 +1,10 @@
 ---
 title: Distribuzione di componenti COM con ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Distribuzione di componenti COM con ClickOnce
 Distribuzione di componenti COM legacy è tradizionalmente difficile. I componenti devono essere registrati a livello globale e pertanto possono causare effetti collaterali indesiderati applicazioni sovrapposte. Questa situazione non è in genere un problema nelle applicazioni .NET Framework perché i componenti sono completamente isolati a un'applicazione o compatibili con side-by-side. Visual Studio consente di distribuire i componenti COM isolati in Windows XP o versioni successive del sistema operativo.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]fornisce un meccanismo semplice e sicuro per la distribuzione di applicazioni .NET. Tuttavia, se le applicazioni utilizzano componenti COM legacy, è necessario eseguire ulteriori passaggi di distribuzione. In questo argomento viene descritto come distribuire i componenti COM isolati e fanno riferimento a componenti nativi (ad esempio, da Visual Basic 6.0 o Visual C++).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornisce un meccanismo semplice e sicuro per la distribuzione delle applicazioni .NET. Tuttavia, se le applicazioni utilizzano componenti COM legacy, è necessario eseguire ulteriori passaggi di distribuzione. In questo argomento viene descritto come distribuire i componenti COM isolati e fanno riferimento a componenti nativi (ad esempio, da Visual Basic 6.0 o Visual C++).  
   
- Per ulteriori informazioni sulla distribuzione di componenti COM isolati, vedere "distribuzione dell'App semplificata con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM senza registrazione" in [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Per ulteriori informazioni sulla distribuzione di componenti COM isolati, vedere "distribuzione dell'App semplificata con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM senza registrazione" in [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM senza registrazione  
  COM senza registrazione è una nuova tecnologia per la distribuzione e l'attivazione di componenti COM isolati. Funziona inserendo la libreria dei tipi del componente e informazioni di registrazione che viene in genere installate nel Registro di sistema in un file XML denominato manifesto, archiviato nella stessa cartella dell'applicazione.  
@@ -44,7 +42,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
  Quando il generatore del manifesto incontra un riferimento COM isolato, enumera tutte le `CoClass` voci nella libreria dei tipi del componente, facendo corrispondere ogni voce con i corrispondenti dati di registrazione e la generazione di definizioni del manifesto per tutto il modello COM classi nel file di libreria del tipo.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Distribuzione di componenti COM senza registrazione tramite ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]tecnologia di distribuzione è particolarmente adatta per la distribuzione di componenti COM isolati, perché entrambi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM senza registrazione richiedono che un componente disponga di un manifesto.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia di distribuzione è ideale per la distribuzione di componenti COM isolati, perché entrambi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM senza registrazione è necessario che un componente disponga di un manifesto.  
   
  In genere, l'autore del componente deve fornire un manifesto. In caso contrario, Visual Studio è tuttavia in grado di generare un manifesto automaticamente per un componente COM. La generazione del manifesto viene eseguita durante il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] processo di pubblicazione; per ulteriori informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md). Questa funzionalità consente inoltre di sfruttare i componenti legacy creati in ambienti di sviluppo precedenti, ad esempio Visual Basic 6.0.  
   

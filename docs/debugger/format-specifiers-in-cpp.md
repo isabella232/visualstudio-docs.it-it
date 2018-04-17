@@ -2,12 +2,9 @@
 title: Nel debugger (C++) identificatori di formato | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -28,17 +25,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f1b6151350faa55b3e2918a45908111ab96edf6a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C++ nel debugger di Visual Studio
 È possibile modificare il formato con cui viene visualizzato il valore nella finestra **Espressioni di controllo** usando gli identificatori di formato.  
@@ -83,7 +79,7 @@ int main() {
 |su|Stringa Unicode (codifica UTF-16)|\<posizione > L "hello world"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Stringa Unicode (codifica UTF-16) (senza virgolette)|\<posizione > L "hello world"|hello world|  
 |bstr|stringa BSTR|\<posizione > L "hello world"|L"hello world"|  
-|env|Blocco di ambiente (string con terminazione null a doppia)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|Blocco di ambiente (string con terminazione null a doppia)|\<posizione > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|stringa UTF-32|\<posizione > U "hello world"|u"hello world"|  
 |**s32b**|stringa UTF-32 (senza virgolette)|\<posizione > U "hello world"|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
@@ -122,8 +118,8 @@ int main() {
 |**g**|virgola mobile signed o notazione scientifica signed (a seconda di quale sia più breve)|(3.0/2.0)|1,5|  
 |c|carattere singolo|\<percorso >|101 'e'|  
 |s|const char*|\<percorso >|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<percorso >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<percorso >|hello world|  
+|su|const wchar_t*<br /><br /> char16_t const\*|\<percorso >|L"hello world"|  
+|sub|const wchar_t*<br /><br /> char16_t const\*|\<percorso >|hello world|  
 |s8|const char*|\<percorso >|"hello world"|  
 |hr|HRESULT o codice di errore Win32. Poiché ora il debugger decodifica gli HRESULT automaticamente, l'identificatore non è necessario.|S_OK|S_OK|  
 |wc|Flag della classe Window.|0x00000040,|WC_DEFAULTCHAR|  

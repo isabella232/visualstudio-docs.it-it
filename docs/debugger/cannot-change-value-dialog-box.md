@@ -1,12 +1,9 @@
 ---
-title: "Non è possibile modificare la finestra di dialogo valore | Documenti Microsoft"
-ms.custom: 
+title: Non è possibile modificare la finestra di dialogo valore | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.variables.failededit
@@ -19,21 +16,20 @@ helpviewer_keywords:
 - Cannot Change Value dialog box
 - variables [debugger], editing
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6b5cc2c1a5317009225d8e86fd497dc4367787
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 40bcc1eb26ded43f092d89e62cd6f74b2f4dda73
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossibile modificare il valore (finestra di dialogo)
 ## <a name="error"></a>Error  
- `The value of this variable cannot be changed`&#124; `The name` *nome* `does not exist in the current context` &#124; *vari altri messaggi*  
+ `The value of this variable cannot be changed` &#124;`The name` *nome* `does not exist in the current context` &#124; *vari altri messaggi*  
   
  Questa finestra di messaggio viene visualizzata quando si tenta di modificare il contenuto di una variabile in un valore non consentito in una finestra del debugger (finestre Auto, Espressioni di controllo o Variabili locali) o nella finestra di dialogo Controllo immediato. Se, ad esempio, si tenta di impostare il valore di una variabile Integer in una stringa di caratteri, viene visualizzata questa finestra di messaggio.  
   

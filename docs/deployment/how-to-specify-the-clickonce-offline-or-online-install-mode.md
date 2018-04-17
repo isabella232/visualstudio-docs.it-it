@@ -1,12 +1,10 @@
 ---
-title: "Procedura: specificare il Offline di ClickOnce o installare la modalità Online | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: specificare il Offline di ClickOnce o installare la modalità Online | Documenti Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - offline applications
 - ClickOnce install mode
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
-caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b1c0f8615513639081351bdf77ea9ec63fc8309b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 666273ddb251057ede1788747411111f997e5d39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Procedura: specificare la modalità di installazione online o offline di ClickOnce
 Il `Install Mode` per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione determina se l'applicazione sarà disponibile online o offline. Quando si sceglie **l'applicazione è disponibile solo online**, l'utente deve disporre di accesso per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] percorso di pubblicazione (pagina Web o una condivisione file) per eseguire l'applicazione. Quando si sceglie **l'applicazione è disponibile offline nonché**, l'applicazione aggiunge voci per il **avviare** menu e **Aggiungi / Rimuovi programmi** la finestra di dialogo; l'utente è in grado di eseguire l'applicazione quando non sono connessi.  

@@ -1,23 +1,21 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c036ccc3865c7ea97c37eda31d802bfc5acbd5a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fc1fd83b468318f2c8dfe010548b9e94eb2d0755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa della configurazione non corretta dello stato del dispositivo.  
@@ -37,7 +35,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
  Nello scenario descritto in questa procedura dettagliata, è stata appena raggiunta la prima tappa cardine dello sviluppo dell'app 3D e si è pronti per testarla per la prima volta. Quando si esegue l'app, tuttavia, sullo schermo viene visualizzata solo l'interfaccia utente. Usando Diagnostica grafica è possibile acquisire il problema in un file di log di grafica in modo da poter eseguire il debug dell'app. Nell'app, il problema si presenta nel modo seguente:  
   
- ![L'app prima che il problema è risolto](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")  
+ ![L'app prima che la risoluzione del problema](media/vsg_walkthru1_firstview.png "vsg_walkthru1_firstview")  
   
  Per informazioni su come acquisire i problemi di grafica in un log di grafica, vedere [Capturing Graphics Information](capturing-graphics-information.md).  
   
@@ -50,7 +48,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 2.  In **Elenco frame**selezionare un frame che dimostra che il modello non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:  
   
-     ![L'estensione vsglog scheda buffer frame elenco frame e anteprima](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")  
+     ![Vsglog scheda buffer frame frame e Anteprima elenco](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")  
   
  Dopo aver selezionato un frame che dimostra il problema, è possibile usare l' **Elenco eventi di grafica** per diagnosticarlo. La finestra **Elenco eventi di grafica** contiene ogni chiamata API Direct3D effettuata per eseguire il rendering del frame attivo, ad esempio chiamate API per configurare lo stato del dispositivo, creare e aggiornare i buffer e disegnare gli oggetti visualizzati nel frame. Molti tipi di chiamate sono interessanti perché spesso, ma non sempre, si verifica una modifica corrispondente nella destinazione di rendering quando l'app funziona nel modo previsto, ad esempio le chiamate di disegno, invio, copia o eliminazione. Le chiamate di disegno sono particolarmente interessanti, perché ognuna rappresenta la geometria di cui l'app ha eseguito il rendering (anche le chiamate di invio possono eseguire il rendering della geometria).  
   
@@ -86,7 +84,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 3.  Verificare che il pixel di destinazione di rendering selezionato contenga una parte della geometria abbinando il numero della chiamata di disegno che si sta controllando (dalla finestra **Elenco eventi di grafica** ) a una delle chiamate di disegno nella finestra **Cronologia pixel grafica** . Se nessuna delle chiamate nella finestra **Cronologia pixel grafica** corrisponde alla chiamata di disegno che si sta controllando, ripetere questi passaggi (tranne il passaggio 1) fino a trovare una corrispondenza. In questo scenario, la chiamata di disegno corrispondente è simile alla seguente:  
   
-     ![Finestra Cronologia pixel con informazioni sul frammento](media/vsg_walkthru1_hist2.png "vsg_walkthru1_hist2")  
+     ![Finestra Cronologia pixel con le informazioni sul frammento](media/vsg_walkthru1_hist2.png "vsg_walkthru1_hist2")  
   
 4.  Quando si individua una corrispondenza, espandere la chiamata di disegno corrispondente nella finestra **Cronologia pixel grafica** e verificare che il pixel sia stato escluso. Ogni chiamata di disegno nella finestra **Cronologia pixel grafica** corrisponde a una o più primitive geometriche (punti, linee o triangoli) che intersecano tale pixel come risultato della geometria dell'oggetto corrispondente. Ogni intersezione di questo tipo può contribuire al colore finale del pixel. Una primitiva che viene esclusa perché non supera il test di profondità è rappresentata da un'icona che mostra la lettera Z su una freccia inclinata verso il basso da sinistra a destra.  
   

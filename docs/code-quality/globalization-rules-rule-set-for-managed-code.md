@@ -1,23 +1,21 @@
 ---
 title: Set di regole regole di globalizzazione per codice gestito | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 07a2e8da87eb486f8247a79263ec371a8fd4afc5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 54e1df6f8c49112747ccd7254f01a57d33dccf0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Set di regole delle Regole di globalizzazione per codice gestito
 È possibile utilizzare il Microsoft globalizzazione set di regole di concentrarsi sui problemi che potrebbero impedire che i dati nell'applicazione vengano visualizzati correttamente in diverse lingue, impostazioni locali e le impostazioni cultura. È necessario includere questo set di regole se l'applicazione è localizzata, globalizzata o entrambi.  

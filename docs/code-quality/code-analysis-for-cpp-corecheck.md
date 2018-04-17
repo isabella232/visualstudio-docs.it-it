@@ -2,25 +2,22 @@
 title: Linee guida di Visual Studio C++ Core controllo riferimento | Documenti Microsoft
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Linee guida di base C++ controllo di riferimento
 
@@ -49,7 +46,7 @@ In questa sezione sono elencati gli avvisi del correttore linee guida di base di
 
 [C26431 DONT_TEST_NOTNULL](C26431.md) il tipo dell'espressione 'expr % %' è già gsl::not_null. Eseguire test e dell'invalidità. Vedere [linee guida di base C++ F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-## <a name="rawpointer-group"></a>RAW_POINTER Group
+## <a name="rawpointer-group"></a>Gruppo RAW_POINTER
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) non assegnare il risultato di un'allocazione o una chiamata di funzione con un proprietario\<T > di un valore restituito per un puntatore non elaborato, utilizzare proprietario\<T > in alternativa. Vedere [linee guida di base C++ I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
@@ -220,11 +217,11 @@ Gli avvisi seguenti sono presenti in un set di regole sperimentale anticipata di
 - 26413 DEREF_NULLPTR
 - 26420 ASSIGN_NONOWNER_TO_EXPLICIT_OWNER
 - 26421 ASSIGN_VALID_OWNER
-- 26422 VALID_OWNER_LEAVING_SCOPE
-- 26423 ALLOCATION_NOT_ASSIGNED_TO_OWNER
-- 26424 VALID_ALLOCATION_LEAVING_SCOPE
+- VALID_OWNER_LEAVING_SCOPE 26422
+- ALLOCATION_NOT_ASSIGNED_TO_OWNER 26423
+- VALID_ALLOCATION_LEAVING_SCOPE 26424
 - 26425 ASSIGNING_TO_STATIC
-- 26499 NO_LIFETIME_TRACKING
+- NO_LIFETIME_TRACKING 26499
 
 ## <a name="see-also"></a>Vedere anche
 [Utilizzando i controlli della linee guida C++ Core](using-the-cpp-core-guidelines-checkers.md)

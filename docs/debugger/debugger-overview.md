@@ -2,11 +2,8 @@
 title: Panoramica - Visual Studio del debugger | Documenti Microsoft
 ms.custom: mvc
 ms.date: 07/11/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: overview
 dev_langs:
 - C++
@@ -15,14 +12,14 @@ dev_langs:
 - VB
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004c03a16554b6defe3c5bc9ed78b0b44ef2d007
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 16d69a6099b522eeb12da20d31ad353c5f44da5c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-visual-studio-debugger"></a>Panoramica del debugger di Visual Studio
 
@@ -46,6 +43,6 @@ Il debugger consente di impostare punti di interruzione, controllare le variabil
 
     Viene illustrato come utilizzare le funzionalità del debugger per eseguire il debug delle applicazioni.  
 
-* [Suggerimenti e trucchi del debugger](../debugger/debugger-tips-and-tricks.md)  
+* [Debugger suggerimenti e consigli](../debugger/debugger-tips-and-tricks.md)  
 
     Informazioni su come aumentare la produttività con il debugger. 

@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Download di assembly Satellite su richiesta con l''API della distribuzione ClickOnce | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Download di assembly Satellite su richiesta con l'API della distribuzione ClickOnce | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - localization, ClickOnce deployment
 - ClickOnce deployment, localization
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
-caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: daa6b9b61083f61d631c6dd55265c338c08ff7f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6cae5427d985175d351a5fde8c54397923af660
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: download di assembly satellite su richiesta con l'API della distribuzione ClickOnce
 Le applicazioni Windows Form possono essere configurate per più impostazioni cultura con l'uso di assembly satellite. Un *assembly satellite* è un assembly in cui sono contenute risorse dell'applicazione per impostazioni cultura diverse da quelle predefinite dell'applicazione.  

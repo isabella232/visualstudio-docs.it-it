@@ -2,12 +2,9 @@
 title: Il Debug remoto di un progetto c# o Visual Basic in Visual Studio | Documenti Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a7c6892eb43191c69608e66b05f8177777e3e006
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug di un progetto c# o Visual Basic in Visual Studio Remote
 Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
@@ -50,14 +46,14 @@ Il debugger remoto è supportata in Windows 7 e versioni successive (non phone) 
 > [!TIP]
 > In alcuni scenari, può essere più efficiente per eseguire il debugger remoto da una condivisione file. Per ulteriori informazioni, vedere [eseguire il debugger remoto da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Impostare il debugger remoto
+## <a name="BKMK_setup"></a> Impostare il debugger remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Se è necessario aggiungere le autorizzazioni per altri utenti, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a>Eseguire il debug remoto del progetto
+## <a name="remote_csharp"></a> Eseguire il debug remoto del progetto
 Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic in un computer remoto, ma può comunque eseguirne il debug in modalità remota come illustrato di seguito. La procedura seguente si presuppone che si desidera eseguire il debug in un computer denominato **MJO DL**, come mostrato nell'illustrazione riportata di seguito.
   
 1.  Creare un progetto WPF denominato **MyWpf**.  
@@ -97,7 +93,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
   
 13. Se richiesto, immettere le credenziali di rete per connettersi al computer remoto.  
   
-     Le credenziali necessarie variano a seconda della configurazione della sicurezza della rete. In un computer di dominio, ad esempio, è possibile immettere il nome di dominio e la password. In un computer non appartenenti al dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio  **MJO-DL\name@something.com** , con la password corretta.
+     Le credenziali necessarie variano a seconda della configurazione della sicurezza della rete. In un computer di dominio, ad esempio, è possibile immettere il nome di dominio e la password. In un computer non appartenenti al dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio **MJO-DL\name@something.com**, con la password corretta.
 
      Dovrebbe essere che la finestra principale dell'applicazione WPF è aperta nel computer remoto.
   
@@ -114,7 +110,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/index.md)  
  [Debugger Feature Tour](../debugger/debugger-feature-tour.md)  (Tour delle funzionalità del debugger)  
- [Configurare Windows Firewall per debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Assegnazioni di porta del Debugger remoto](../debugger/remote-debugger-port-assignments.md)   
  [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

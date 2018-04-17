@@ -1,12 +1,10 @@
 ---
 title: 'CA2233: Non overflow delle operazioni | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - OperationsShouldNotOverflow
 - CA2233
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 35fafef574f7d72d54e4e9c44b1b1091ccb0de7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Evitare l'overflow delle operazioni
 |||  
 |-|-|  
 |TypeName|OperationsShouldNotOverflow|  
 |CheckId|CA2233|  
-|Category|Microsoft. Usage|  
+|Category|Microsoft.Usage|  
 |Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="example-of-a-violation"></a>Esempio di violazione  
   
 ### <a name="description"></a>Descrizione  
- Un metodo nell'esempio seguente modifica un valore integer che violano questa regola. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]richiede il **rimuovere** opzione deve essere disabilitata per questa opzione per attivare overflow di integer.  
+ Un metodo nell'esempio seguente modifica un valore integer che violano questa regola. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] richiede il **rimuovere** opzione sia disabilitato per questa opzione per attivare overflow di integer.  
   
 ### <a name="code"></a>Codice  
  [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
@@ -106,7 +104,7 @@ End Sub
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Attivare Overflow/Underflow aritmetico Checked  
  Se si attiva checked overflow/underflow aritmetico in c#, è equivalente a wrapping di ogni operazione di integer in un blocco checked.  
   
- **Per attivare selezionata overflow/underflow aritmetico in c#**  
+ **Per attivare checked overflow/underflow aritmetico nel linguaggio c#**  
   
 1.  In **Esplora**, mouse sul progetto e scegliere **proprietà**.  
   

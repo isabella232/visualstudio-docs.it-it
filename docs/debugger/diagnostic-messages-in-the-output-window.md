@@ -1,12 +1,10 @@
 ---
 title: Inviare i messaggi diagnostici nella finestra di Output | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], diagnostic messages in Output window
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Inviare i messaggi diagnostici nella finestra di Output
 È possibile scrivere messaggi in fase di esecuzione per il **Output** finestra tramite il `Debug` classe o `Trace` (classe), che fanno parte di <xref:System.Diagnostics> libreria di classi. Utilizzare la classe Debug se si desidera generare l'output solo nella versione di debug del programma e la classe Trace se si desidera generare l'output sia nella versione di debug che in quella di rilascio del programma.  

@@ -1,29 +1,25 @@
 ---
 title: IDiaStackWalkHelper | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaStackWalkHelper2 interface
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cbd88bbe3e8a752721047ee80d847e72cf115b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 881fcbb4f019ad9cb6321423c12269fb6e3ad78f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 Facilita la verifica dello stack utilizzando il file di database (con estensione pdb) di debug di programma.  
@@ -47,7 +43,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Cerca il frame dello stack specificato per l'indirizzo restituito della funzione più vicino.|  
 |[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Cerca stack frame specificato per un indirizzo del mittente in o in prossimità l'indirizzo specificato nello stack.|  
 |[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Recupera lo stack frame che contiene l'indirizzo virtuale specificato.|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Recupera il simbolo che contiene l'indirizzo virtuale specificato. **Nota:** simbolo deve essere del tipo `SymTagFunctionType` (compreso il [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione).|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Recupera il simbolo che contiene l'indirizzo virtuale specificato. **Nota:** simbolo deve avere il tipo `SymTagFunctionType` (compreso il [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) enumerazione).|  
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Restituisce il blocco di dati PDATA associato all'indirizzo virtuale specificato.|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Recupera l'indirizzo virtuale iniziale di un file eseguibile, un indirizzo virtuale in un punto nello spazio di memoria dell'eseguibile specificato.|  
   

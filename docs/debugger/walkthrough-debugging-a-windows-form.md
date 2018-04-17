@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Debug di un Windows Form | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - Windows Forms, debugging
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d0ab1ccdf6f5365c04c4a7ee0cac8ce75ab5f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 20013d5af0cd06f37c5e502618253354e9410374
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
 Un Windows Form è una delle applicazioni gestite più comuni. Un Windows Form consente di creare un'applicazione Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.  
@@ -67,7 +65,7 @@ Un Windows Form è una delle applicazioni gestite più comuni. Un Windows Form c
   
 6.  Nel **vista** dal menu **della casella degli strumenti**.  
   
-     Verrà visualizzata la casella degli strumenti. Per ulteriori informazioni, vedere [della casella degli strumenti](../ide/reference/toolbox.md).  
+     Verrà visualizzata la casella degli strumenti. Per altre informazioni, vedere [Casella degli strumenti](../ide/reference/toolbox.md).  
   
 7.  Nella casella degli strumenti, fare clic su di **pulsante** controllare e trascinarlo nell'area di progettazione del Form. Rilasciare il pulsante sul form.  
   
@@ -90,7 +88,7 @@ Un Windows Form è una delle applicazioni gestite più comuni. Un Windows Form c
     textBox1->Text = "Button was clicked!";  
     ```  
   
-11. Nel **compilare** dal menu **Compila soluzione**.  
+11. Scegliere **Compila soluzione** dal menu **Compila**.  
   
      Il progetto dovrebbe essere compilato senza errori.  
   

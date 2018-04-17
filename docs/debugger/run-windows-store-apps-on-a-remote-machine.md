@@ -1,28 +1,26 @@
 ---
 title: Eseguire App UWP in un computer remoto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Eseguire App UWP in un computer remoto in Visual Studio
   
@@ -51,11 +49,11 @@ Per impostazione predefinita, **Universal (protocollo non crittografato)** viene
 > [!WARNING]
 >  Non è presente alcuna protezione della rete quando si imposta la modalità di autenticazione **Universal (protocollo non crittografato)** o **Nessuno**. Scegliere le modalità solo se si è certi che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.  
   
-##  <a name="BKMK_DirectConnect"></a>Come connettersi direttamente tramite un cavo USB 
+##  <a name="BKMK_DirectConnect"></a> Come connettersi direttamente tramite un cavo USB 
 
 In Windows 10, è possibile distribuire a un dispositivo USB-connected scegliendo **dispositivo** anziché **computer remoto** come destinazione di distribuzione (è possibile farlo **Standard** barra degli strumenti o nella pagina delle proprietà Debug).
 
-##  <a name="BKMK_ConnectVS"></a>Configurare il progetto di Visual Studio per il debug remoto  
+##  <a name="BKMK_ConnectVS"></a> Configurare il progetto di Visual Studio per il debug remoto  
  Specificare il dispositivo remoto a cui è possibile connettersi nelle proprietà del progetto. La procedura varia in base al linguaggio di programmazione. È possibile digitare il nome di rete del dispositivo remoto oppure è possibile selezionarlo di **connessione remota** la finestra di dialogo.  
   
  ![Finestra di dialogo Seleziona connessione Debugger remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ In Windows 10, è possibile distribuire a un dispositivo USB-connected scegliend
 > [!TIP]
 >  In caso di problemi di connessione a un dispositivo remoto, provare a immettere l'indirizzo IP del dispositivo. Per determinare l'indirizzo IP di un dispositivo, aprire una finestra di comando e digitare **ipconfig**. L'indirizzo IP è indicato come **IPv4 Address**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Scegliere il dispositivo remoto per progetti c# e Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Scegliere il dispositivo remoto per progetti c# e Visual Basic  
   
 1.  In Esplora soluzioni seleziona il nome del progetto, quindi scegli **Proprietà** dal menu di scelta rapida.  
   
@@ -77,7 +75,7 @@ In Windows 10, è possibile distribuire a un dispositivo USB-connected scegliend
 
     ![Proprietà del progetto per il debug remoto gestito](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Scegliere il dispositivo remoto per progetti JavaScript e C++  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Scegliere il dispositivo remoto per progetti JavaScript e C++  
   
 1.  In Esplora soluzioni seleziona il nome del progetto, quindi scegli **Proprietà** dal menu di scelta rapida.  
   
@@ -87,24 +85,24 @@ In Windows 10, è possibile distribuire a un dispositivo USB-connected scegliend
   
 4.  Immettere il nome di rete del dispositivo remoto nella casella **Nome computer** o selezionare la freccia in giù nella casella per scegliere il dispositivo nella finestra di dialogo **Seleziona connessione debugger remoto** .  
 
-    ![C &#43; &#43; le proprietà per il debug remoto di progetto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; proiettare le proprietà per il debug remoto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Scaricare e installare gli strumenti remoti (pre-creatori di aggiornamento)
+## <a name="BKMK_download"></a> Scaricare e installare gli strumenti remoti (pre-creatori di aggiornamento)
 
 Se si utilizzano versioni di un pre-creatore aggiornamento di Windows 10, quindi seguire queste istruzioni. In caso contrario, è possibile ignorare questa sezione.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Impostare il debugger remoto
+### <a name="BKMK_setup"></a> Impostare il debugger remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Avviare una sessione di debug remota  
+##  <a name="BKMK_RunRemoteDebug"></a> Avviare una sessione di debug remota  
  È possibile avviare, arrestare ed esplorare una sessione di debug remoto come una sessione locale. Nelle versioni di aggiornamento di pre-del creatore di Windows 10, assicurarsi che Remote Debugging Monitor è in esecuzione sul dispositivo remoto.  
   
  Scegliere quindi **Avvia debug** dal menu **Debug** (tastiera: F5). Il progetto viene ricompilato, quindi distribuito e avviato sul dispositivo remoto. Il debugger sospende l'esecuzione in corrispondenza dei punti di interruzione. Nel codice sarà possibile quindi eseguire un'istruzione, eseguire un'istruzione/routine e uscire da un'istruzione/routine. Scegli **Termina debug** per terminare la sessione di debug e chiudere l'app remota.
   
 ## <a name="see-also"></a>Vedere anche  
- [Opzioni di distribuzione remota avanzate](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Opzioni avanzate di distribuzione remoto](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Test delle app UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug delle App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

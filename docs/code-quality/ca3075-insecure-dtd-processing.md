@@ -1,23 +1,21 @@
 ---
 title: 'CA3075: Elaborazione di DTD non protetta | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7b15c358c80a60b4ff91fd9c741fbddf2467ae8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 |||  
@@ -37,13 +35,13 @@ ms.lasthandoff: 12/22/2017
   
 -   La proprietà <xref:System.Xml.XmlNode.InnerXml%2A> nel codice XML è impostata.  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>proprietà è impostata su Parse.  
+-   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> proprietà è impostata su Parse.  
   
 -   Un input non attendibile viene elaborato con <xref:System.Xml.XmlResolver> anziché con <xref:System.Xml.XmlSecureResolver> .  
   
--   Il metodo XmlReader.<xref:System.Xml.XmlReader.Create%2A> viene richiamato con un'istanza non protetta di <xref:System.Xml.XmlReaderSettings> o senza alcuna istanza.  
+-   Oggetto XmlReader.<xref:System.Xml.XmlReader.Create%2A> metodo viene richiamato con un <xref:System.Xml.XmlReaderSettings> istanza o nessun affatto.  
   
--   <xref:System.Xml.XmlReader>viene creato con le impostazioni predefinite non protette o valori.  
+-   <xref:System.Xml.XmlReader> vengono creati con impostazioni predefinite non protette o valori.  
   
  In ognuno di questi casi, il risultato è lo stesso: il contenuto del file system o delle condivisioni di rete nel computer in cui viene elaborato il codice XML sarà esposto alle minacce di utenti malintenzionati e potrà quindi essere usato come vettore di attacchi DoS.  
   

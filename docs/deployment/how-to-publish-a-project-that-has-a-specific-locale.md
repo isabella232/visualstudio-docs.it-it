@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: pubblicare un progetto con un specifico delle impostazioni locali | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - macros, deploying with
 - macros, publishing with
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
-caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b2560275ae08a9a860d62f11e0fb011e5e7a5b31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 69ac0441a42070ce0b7ac9edc18c826961ebb83f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: pubblicare un progetto dotato di impostazioni locali specifiche
 Accade spesso che un'applicazione contenga componenti con impostazioni locali diverse. In questi casi si crea una soluzione con più progetti, che vengono poi pubblicati con impostazioni locali differenti. Questa procedura illustra come usare una macro per pubblicare il primo progetto in una soluzione con le impostazioni locali 'en'. Se si vuole provare la procedura con impostazioni locali diverse da 'en', impostare `localeString` nella macro in modo che corrisponda alle impostazioni locali in uso (ad esempio, 'de' o 'de-DE').  
@@ -153,7 +151,7 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
   
 4.  Pubblicare il progetto PublishLocales usando l'IDE di Visual Studio.  
   
-     In **Esplora**, selezionare il progetto PublishLocales. Nel **progetto** dal menu **proprietà**. In Progettazione progetti, nel **pubblica** , specificare il percorso di pubblicazione **http://localhost/PublishLocales**e quindi fare clic su **pubblica**.  
+     In **Esplora**, selezionare il progetto PublishLocales. Nel **progetto** dal menu **proprietà**. In Creazione progetti, nelle **pubblica** , specificare un percorso di pubblicazione **http://localhost/PublishLocales**e quindi fare clic su **pubblica**.  
   
      Chiudere la pagina Web di pubblicazione non appena viene visualizzata. In questa fase non è necessario installare il progetto, ma solo pubblicarlo  
   
@@ -169,4 +167,4 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Ambiente di sviluppo di macro](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [Finestra Esplora macro](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Procedura: modificare e creare a livello di programmazione di macro](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Procedura: modificare e creare a livello di programmazione delle macro](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)

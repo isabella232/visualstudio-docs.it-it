@@ -1,12 +1,10 @@
 ---
-title: "Pagine delle proprietà delle impostazioni per i progetti Web | Documenti Microsoft"
-ms.custom: 
+title: Pagine delle proprietà delle impostazioni per i progetti Web | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - debugging Web applications, project settings
 - debug configurations, Web projects
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4e58541c5ab0c7a38773740343349880aa5297e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2346b1fc78caebc62a2f9465640d6d91ebee74b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Impostazioni delle pagine delle proprietà per i progetti Web
 È possibile modificare le impostazioni delle proprietà per una configurazione di debug nel sito web di **pagine delle proprietà** la finestra di dialogo, come descritto in [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). Le tabelle seguenti illustrano la posizione in cui sono disponibili le impostazioni correlate al debugger il **pagine delle proprietà** la finestra di dialogo.  
@@ -50,9 +48,9 @@ ms.lasthandoff: 12/22/2017
 |**Usa server Web predefinito**|Specifica di utilizzare il server Web predefinito.|  
 |**Usa server personalizzato**|Consente di immettere l'URL di base da utilizzare come server.|  
 |**Debugger**|Intestazione sotto la quale sono raggruppate le opzioni correlate al tipo di debug da eseguire.|  
-|**Il debug di ASP.NET**|Attiva il debug di pagine ASP scritte per la piattaforma di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. È necessario specificare un URL in **Avvia URL**.|  
+|**Debug di ASP.NET**|Attiva il debug di pagine ASP scritte per la piattaforma di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. È necessario specificare un URL in **Avvia URL**.|  
 |**Debug del codice nativo**|Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso.|  
-|**Debug di SQL Server**|Consente di eseguire il debug di oggetti di database di SQL Server.|  
+|**Debug SQL Server**|Consente di eseguire il debug di oggetti di database di SQL Server.|  
 |**Debug di Silverlight**|Consente di eseguire il debug dei componenti di Silverlight.|  
   
 ## <a name="see-also"></a>Vedere anche  

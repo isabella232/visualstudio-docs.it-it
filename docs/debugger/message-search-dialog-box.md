@@ -1,27 +1,23 @@
 ---
 title: La finestra di dialogo Ricerca messaggi | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec48c0a0c07fd7ab9ec2606c110667cc9bb12f69
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 65639b25cccc88d8159d1e91eddb0b99c06c19bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-search-dialog-box"></a>Finestra di dialogo Ricerca messaggi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di un messaggio specifico in [visualizzazione messaggi](../debugger/messages-view.md). Spostare lo stato attivo per visualizzare questa finestra di dialogo, una finestra di visualizzazione di messaggi. Scegliere quindi **Trova messaggio** dal **ricerca** menu.  
@@ -31,7 +27,7 @@ Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di u
  **Strumento di ricerca**  
  Lo strumento di trascinamento e rilascio utilizzato per selezionare una finestra.  
   
- **Nascondi Spy + +**  
+ **Nascondere Spy + +**  
  Rimuove la finestra principale di Spy + + e lascia il **ricerca messaggi** la finestra di dialogo di primo piano rispetto alle altre applicazioni.  
   
  **Handle**  

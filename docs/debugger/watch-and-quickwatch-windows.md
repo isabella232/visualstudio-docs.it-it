@@ -2,12 +2,9 @@
 title: Impostare un'espressione di controllo per le variabili in Visual Studio | Documenti Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Impostare un'espressione di controllo per le variabili utilizzando espressioni di controllo e le finestre di controllo immediato in Visual Studio
 Quando si esegue il debug, è possibile utilizzare il **espressioni di controllo** e **controllo immediato** windows per controllare variabili ed espressioni.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta. 
@@ -120,7 +117,7 @@ int main()
   
  In generale, le regole per la valutazione delle espressioni nella finestra **Espressioni di controllo** sono le stesse delle regole per la valutazione delle espressioni nel linguaggio di codifica. Se l'espressione contiene un errore di sintassi, è possibile aspettarsi lo stesso errore del compilatore che verrebbe visualizzato nell'editor del codice. Di seguito è riportato un esempio:  
   
- ![Controllare l'errore espressione](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![Guardare errore espressioni](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a> Aggiornamento dei valori delle espressioni di controllo che non sono aggiornati  
  In determinate circostanze, è possibile visualizzare un'icona di aggiornamento (una freccia circolare) quando un'espressione viene valutata nel **espressioni di controllo** finestra.  Ad esempio, se è stata disattivata la valutazione delle proprietà (**strumenti > Opzioni > Debug > Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**), e si dispone di codice riportato di seguito:  
@@ -217,7 +214,7 @@ public class Program
   
 2.  Avviare il debug e quando l'esecuzione si arresta nel punto di interruzione, trovare la variabile nella finestra **Variabili locali** , fare clic con il pulsante destro del mouse sulla variabile e scegliere **Crea ID oggetto**.  
   
-3.  Verrà visualizzato un  **$**  insieme a un numero di **variabili locali** finestra, che rappresenta l'ID di oggetto.  
+3.  Verrà visualizzato un **$** insieme a un numero di **variabili locali** finestra, che rappresenta l'ID di oggetto.  
   
 4.  Aggiungere l'ID oggetto nella finestra Espressioni di controllo.  
   

@@ -1,13 +1,10 @@
 ---
 title: Modificare il codice e continuare il debug in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/31/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
 dev_langs:
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], Edit and Continue
 - debugger, tools for debugging
 ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f23156d7684fa2878eb09c3fec6a32e2938c13a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3ceb68c74940e079006815101ebd0c0dab39e41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modificare il codice e continuare a debug in Visual Studio (in c#, VB, C++)
 Modifica e continuazione è una funzionalità che consente di ridurre i tempi necessari per il debug poiché permette di apportare modifiche al codice sorgente mentre il programma è in modalità di interruzione. Quando si riprende l'esecuzione del programma scegliendo un comando quale **continua** o **passaggio**, modifica e continuazione automaticamente Applica modifiche del codice con alcune limitazioni. In questo modo è possibile modificare il codice durante una sessione di debug anziché dover terminare la sessione corrente, ricompilare l'intero programma e riavviare la sessione di debug.  

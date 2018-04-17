@@ -1,12 +1,10 @@
 ---
 title: 'CA1008: Gli enum devono avere valore zero | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8aab8c294e9db20e78f653a52875c5f20b1b63c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: af0b742c42dae829c0e066babf77494f612e8908
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Gli enum devono avere valore zero
 |||  
 |-|-|  
 |TypeName|EnumsShouldHaveZeroValue|  
 |CheckId|CA1008|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Non sostanziale - Quando viene richiesto di aggiungere un **Nessuno** valore a un'enumerazione non flag. Sostanziale - Quando viene richiesto di rinominare o rimuovere eventuali valori di enumerazione.|  
   
 ## <a name="cause"></a>Causa  

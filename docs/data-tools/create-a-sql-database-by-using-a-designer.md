@@ -1,27 +1,24 @@
 ---
 title: Creare un file di database e utilizzare Progettazione tabelle in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 È possibile utilizzare Visual Studio per creare e aggiornare i file di database locale di SQL Server Express LocalDB. È anche possibile creare un database tramite l'esecuzione di istruzioni Transact-SQL nel **Esplora oggetti di SQL Server** finestra degli strumenti in Visual Studio. In questo argomento, si sarà creare un file con estensione mdf e aggiungere tabelle e le chiavi utilizzando Progettazione tabelle.
@@ -57,7 +54,7 @@ Per completare questa procedura dettagliata, è necessario disporre facoltativo 
 
 10. Nel **Salva stringa di connessione al File di configurazione dell'applicazione** pagina, scegliere **Avanti**.
 
-11. Uno di **Seleziona oggetti di Database** pagina, verrà visualizzato un messaggio che segnala il database non contiene tutti gli oggetti. Scegliere **fine**.
+11. Uno di **Seleziona oggetti di Database** pagina, verrà visualizzato un messaggio che segnala il database non contiene tutti gli oggetti. Scegliere **Fine**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Per visualizzare le proprietà della connessione dati
 È possibile visualizzare la stringa di connessione per il file SampleDatabase.mdf, aprire la finestra delle proprietà della connessione dati:

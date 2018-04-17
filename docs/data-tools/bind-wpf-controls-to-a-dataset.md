@@ -1,11 +1,8 @@
 ---
 title: Associare i controlli WPF a un set di dati | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare i controlli WPF a un set di dati
 In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i controlli associati a dati. I controlli vengono associati a record di prodotto incapsulati in un set di dati. Si aggiungeranno inoltre i pulsanti per scorrere i prodotti e salvare le modifiche ai record di prodotto.  
@@ -183,11 +180,11 @@ Per completare la procedura dettagliata è inoltre consigliabile conoscere già 
 7.  Nel **proprietà** finestra, seleziona la casella di controllo accanto al **IsReadOnly** proprietà.  
   
 ## <a name="navigating-product-records"></a>Esplorazione dei record di prodotto  
- Aggiungere il codice che consente agli utenti di scorrere i record di prodotto usando il  **\<**  e  **>**  pulsanti.  
+ Aggiungere il codice che consente agli utenti di scorrere i record di prodotto usando il **\<** e **>** pulsanti.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Per consentire agli utenti di esplorare i record di prodotto  
   
-1.  Nella finestra di progettazione, fare doppio clic su di  **<**  pulsante nell'area della finestra.  
+1.  Nella finestra di progettazione, fare doppio clic su di **<** pulsante nell'area della finestra.  
   
      Visual Studio apre il file code-behind e crea un nuovo `backButton_Click` gestore eventi per il <xref:System.Windows.Controls.Primitives.ButtonBase.Click> evento.  
   
@@ -201,7 +198,7 @@ Per completare la procedura dettagliata è inoltre consigliabile conoscere già 
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Tornare alla finestra di progettazione e fare doppio clic su di  **>**  pulsante.  
+4.  Tornare alla finestra di progettazione e fare doppio clic su di **>** pulsante.  
   
 5.  Aggiungere il codice seguente al gestore eventi `nextButton_Click`:  
   
@@ -236,7 +233,7 @@ Aggiungere il codice che consente agli utenti di salvare le modifiche ai record 
   
     -   Nelle caselle di testo vengono visualizzati i dati del primo record di prodotto contenente una foto. Questo prodotto include l'ID prodotto è 713 e il nome **Long-Sleeve Logo Jersey, S**.  
   
-    -   È possibile scegliere di  **>**  o  **<**  pulsanti per spostarsi tra gli altri record di prodotto.  
+    -   È possibile scegliere di **>** o **<** pulsanti per spostarsi tra gli altri record di prodotto.  
   
 2.  In uno dei record di prodotto, è possibile modificare il **dimensioni** valore e quindi fare clic su **salvare modifiche**.  
   

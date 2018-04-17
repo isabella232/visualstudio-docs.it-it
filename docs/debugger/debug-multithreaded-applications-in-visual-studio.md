@@ -1,13 +1,10 @@
 ---
 title: Debug di applicazioni multithreading in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - multithreaded debugging
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 276263f870337031cabbe466711e0a125b42a51c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 Un thread è una sequenza di istruzioni in base alla quale il sistema operativo esegue l'allocazione del tempo processore. Ogni processo in esecuzione nel sistema operativo è composto da almeno un thread. I processi composti da più di un thread sono detti multithreading.  
@@ -65,7 +61,7 @@ Il debug di un'applicazione multithreading dotata di un'interfaccia utente può 
  [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)  
  Spiega la procedura per eseguire il debug di più processi
 
- [Procedura dettagliata: Eseguire il Debug tramite la finestra thread](../debugger/how-to-use-the-threads-window.md).  
+ [Procedura dettagliata: Debug tramite la finestra thread](../debugger/how-to-use-the-threads-window.md).  
  Procedura dettagliata in cui viene illustrato come utilizzare il **thread** finestra e **posizione di Debug** barra degli strumenti. 
 
  [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)  
@@ -106,5 +102,5 @@ Il debug di un'applicazione multithreading dotata di un'interfaccia utente può 
  Informazioni sul threading ed esempio di codice per programmatori C++ che utilizzano MFC.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di thread e processi](../debugger/debug-threads-and-processes.md)   
+ [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md)   
  [Debug remoto](../debugger/remote-debugging.md)

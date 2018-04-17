@@ -1,12 +1,10 @@
 ---
-title: "Procedura: eseguire il Debug in modalità mista | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: eseguire il Debug in modalità mista | Documenti Microsoft'
+ms.custom: ''
 ms.date: 06/19/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], mixed-mode
 - mixed-mode debugging
 ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 797724287439631b9398af43616116a1635381ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b39191422eeb4c808faf858fc1ef8abb9a0a41e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Procedura: eseguire il debug in modalità mista
 Nelle procedure riportate di seguito viene spiegato come eseguire il debug in modalità mista, ovvero sia di codice gestito che di codice nativo. Gli scenari possibili sono due, a seconda che la DLL o l'applicazione sia scritta in codice nativo:  
@@ -50,7 +48,7 @@ Se non si dispone di accesso al progetto per l'applicazione chiamante, è possib
   
 4.  Impostare **tipo di Debugger** a **misto** o **Auto**.
 
-    ![Abilitare il debug in modalità mista](../debugger/media/dbg-mixed-mode-from-native.png "abilitare il debug in modalità mista")
+    ![Abilitare il debug in modalità mista](../debugger/media/dbg-mixed-mode-from-native.png "Abilita debug in modalità mista")
 
 ### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Per abilitare debug in modalità mista (app chiamante di c# o Visual Basic)  
   
@@ -58,9 +56,9 @@ Se non si dispone di accesso al progetto per l'applicazione chiamante, è possib
   
 2.  Nel **vista** menu, fare clic su **pagine delle proprietà**.  
   
-3.  Nel  **\<progetto > pagine delle proprietà** la finestra di dialogo, seleziona il **Debug** scheda e quindi selezionare **Abilita debug codice nativo**
+3.  Nel  **\<progetto > pagine delle proprietà** della finestra di dialogo Seleziona il **Debug** scheda e quindi selezionare **Abilita debug codice nativo**
 
-    ![Abilitare il debug di codice nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Abilita debug codice nativo")
+    ![Abilita debug codice nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Abilita debug codice nativo")
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Eseguire il debug da un progetto di DLL](../debugger/how-to-debug-from-a-dll-project.md)

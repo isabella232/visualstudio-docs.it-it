@@ -1,32 +1,28 @@
 ---
 title: 'Procedura: utilizzare lo strumento di ricerca | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8feed3e948c6dba91edccb36162656589539a0a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
 È possibile utilizzare lo strumento di ricerca nel **Trova finestra** la finestra di dialogo per visualizzare le proprietà della finestra o messaggi. Lo strumento di ricerca può anche individuare finestre figlio disabilitato e discernere quale finestra per evidenziare se disabilitata sovrapposizione delle finestre figlio.  
   
- ![Spy &#43; &#43; Finestra di dialogo Trova](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
+ ![Spy&#43; &#43; finestra di dialogo Trova](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
 Strumento di ricerca nella finestra di dialogo Trova finestra  
   
  La seguente figura mostra la finestra di dialogo Trova finestra dopo il passaggio 3 riportato di seguito.  

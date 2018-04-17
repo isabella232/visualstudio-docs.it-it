@@ -1,26 +1,22 @@
 ---
 title: Eseguire il debug di servizi di Azure | Documenti Microsoft
 ms.date: 09/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 5f1102a0d882056ed55e0355d182c5de2b6dc924
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 466028337b35085da0dc541e1892d251d59f17cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Eseguire il debug di servizi di Azure in Visual Studio
 
@@ -32,7 +28,7 @@ ms.lasthandoff: 12/22/2017
 
 - Eseguire il debug remoto ASP.NET in IIS (servizio App di Azure o una macchina virtuale di Azure), vedere [ASP.NET di debug remoto in Azure](remote-debugging-azure.md).
 
-- Eseguire il debug remoto ASP.NET in Azure Service Fabric, vedere [eseguire il Debug di un'applicazione remota di Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Per eseguire il debug remoto ASP.NET in Azure Service Fabric, vedere [il Debug di un'applicazione remota di Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/index.md)

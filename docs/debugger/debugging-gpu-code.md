@@ -1,28 +1,26 @@
 ---
 title: Debug del codice GPU | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: c7e77a5a-cb57-4b11-9187-ecc89acc8775
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0699df7890528a200648ad10975b3cf272a3534f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9e873eb89f1f5b22307b4a2be960d7b04121c222
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 È possibile eseguire il debug del codice C++ in esecuzione nell'unità di elaborazione grafica (GPU). Il supporto del debug di GPU in Visual Studio include il rilevamento di race condition, l'avvio di processi e la connessione a essi e l'integrazione nelle finestre di debug.  
@@ -59,7 +57,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)  
   
--   [Debug di thread e processi](../debugger/debug-threads-and-processes.md) (posizione di Debug sulla barra degli strumenti)  
+-   [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md) (barra degli strumenti posizione di Debug)  
   
 -   [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
@@ -86,4 +84,4 @@ ms.lasthandoff: 12/22/2017
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)   
  [Impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Avviare il debug di GPU in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)
+ [Avviare il debug della GPU in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

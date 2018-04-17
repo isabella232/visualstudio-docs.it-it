@@ -1,12 +1,10 @@
 ---
 title: 'CA1049: I tipi di risorse native devono essere disposable | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1049
 - TypesThatOwnNativeResourcesShouldBeDisposable
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - TypesThatOwnNativeResourcesShouldBeDisposable
 - CA1049
 ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 435286622b03bb59e2173faf644649ad66bd3f71
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: I tipi delle risorse native devono essere Disposable
 |||  
 |-|-|  
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|  
 |CheckId|CA1049|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  

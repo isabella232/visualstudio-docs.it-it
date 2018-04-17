@@ -1,28 +1,26 @@
 ---
 title: Set di regole di regole per le linee guida di progettazione estesa per codice gestito | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 78b9d5a2c2f147ade02e3123e2e5c08f130b29de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 137b1bfc0af92596d48a4014b4ff5ac1bb4ecccd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 Consente di espandere il set di regole regole estese progettazione Microsoft delle linee guida per le regole di progettazione di base delle linee guida per ottimizzare i problemi di usabilità e manutenibilità segnalati. Aggiuntivo attenzione è rivolta alle convenzioni di denominazione. È consigliabile inclusi in questo set di regole se il progetto contiene codice di libreria o se si desidera applicare gli standard ottimali per la scrittura di codice che è facile da gestire.  
   
- Le regole estese delle linee guida progettazione includono tutte le regole Microsoft base delle linee guida per progettazione. Le regole base delle linee guida di progettazione includono tutte le regole Microsoft minimo consigliato. Per ulteriori informazioni, vedere [del set di regole regole base delle linee guida di progettazione per il codice gestito](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [del set di regole alle regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  
+ Le regole estese delle linee guida progettazione includono tutte le regole Microsoft base delle linee guida per progettazione. Le regole base delle linee guida di progettazione includono tutte le regole Microsoft minimo consigliato. Per altre informazioni, vedere [del set di regole regole base delle linee guida di progettazione per il codice gestito](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [del set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  
   
  Nella tabella seguente vengono descritte tutte le regole nel set di regole regole estese progettazione Microsoft delle linee guida.  
   
@@ -47,7 +45,7 @@ Consente di espandere il set di regole regole estese progettazione Microsoft del
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|  
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campi dei tipi di valore devono essere portabili|  
-|[CA1901 LE](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|  
+|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|  
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|  
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Esaminare le query SQL per le vulnerabilità di sicurezza|  
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|  
@@ -93,7 +91,7 @@ Consente di espandere il set di regole regole estese progettazione Microsoft del
 |[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Non dichiarare membri statici su tipi generici|  
 |[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|Non esporre elenchi generici|  
 |[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Utilizzare istanze di gestori eventi generici|  
-|[CA1004 I](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Metodi generici devono fornire parametri di tipo|  
+|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Metodi generici devono fornire parametri di tipo|  
 |[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Evitare un numero eccessivo di parametri nei tipi generici|  
 |[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Non annidare tipi generici nelle firme dei membri|  
 |[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Utilizzare generics dove appropriato|  
@@ -181,7 +179,7 @@ Consente di espandere il set di regole regole estese progettazione Microsoft del
 |[CA1506](../code-quality/ca1506-avoid-excessive-class-coupling.md)|Evitare un numero eccessivo di accoppiamenti|  
 |[CA1700](../code-quality/ca1700-do-not-name-enum-values-reserved.md)|Non denominare 'Reserved' i valori di enumerazione|  
 |[CA1701](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Le parole composte di stringa di risorsa devono essere digitate correttamente|  
-|[CA1702](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Le parole composte devono essere digitate correttamente|  
+|[CA1702 LE](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|Le parole composte devono essere digitate correttamente|  
 |[CA1703](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Le stringhe di risorsa devono essere digitate correttamente|  
 |[CA1704](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)|Gli identificatori devono essere digitati correttamente|  
 |[CA1707](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Gli identificatori non devono contenere caratteri di sottolineatura|  

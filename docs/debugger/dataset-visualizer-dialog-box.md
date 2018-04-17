@@ -1,13 +1,10 @@
 ---
 title: La finestra di dialogo Visualizzatore DataSet | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - visualizers, Dataset Visualizer dialog box
 - Dataset Visualizer dialog box
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56cfc8dfdcb3c61b5f1eb1b0f14f3ad1af5fb89e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d57b12ee11eebf942e70d00ddbeb591dd90e0e4a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dataset-visualizer-dialog-box"></a>finestra di dialogo Visualizzatore DataSet
 Il Visualizzatore DataSet consente di visualizzare il contenuto di un oggetto DataSet, DataTable, DataView o DataViewManager. È possibile accedere a tale visualizzatore facendo clic sull'icona della lente di ingrandimento accanto al valore di uno degli oggetti in una finestra delle variabili del debugger o in un suggerimento dati.  
@@ -47,4 +43,4 @@ Il Visualizzatore DataSet consente di visualizzare il contenuto di un oggetto Da
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
  [Finestre del debugger](../debugger/debugger-windows.md)   
- [Visualizza i valori di dati nei suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+ [Visualizzazione di valori dei dati nei suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

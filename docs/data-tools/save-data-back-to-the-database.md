@@ -1,11 +1,8 @@
 ---
 title: Salvare i dati nel database | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati nel database
 Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è consigliabile salvare le modifiche al database. Viene eseguita in uno dei tre modi:  
@@ -158,7 +155,7 @@ La tabella seguente illustra i valori possibili del <xref:System.Data.DataRowVer
   
  È possibile creare subset di record modificati utilizzando il `GetChanges` (metodo) della tabella dati (<xref:System.Data.DataTable.GetChanges%2A>) o del set di dati (<xref:System.Data.DataSet.GetChanges%2A>) se stesso. Se si chiama il metodo per la tabella di dati, restituisce una copia della tabella che contiene solo i record modificati. Analogamente, se si chiama il metodo sul set di dati, ottenere un nuovo set di dati con solo i record modificati in essa contenuti.  
   
- `GetChanges`autonomamente restituisce tutti i record modificati. Al contrario, passando l'oggetto desiderato <xref:System.Data.DataRowState> come parametro per il `GetChanges` (metodo), è possibile specificare il subset di record modificati desiderato: nuovi record, record contrassegnati per l'eliminazione, aggiunti record disconnessi o record modificati.  
+ `GetChanges` Restituisce tutti i record modificati da se stesso. Al contrario, passando l'oggetto desiderato <xref:System.Data.DataRowState> come parametro per il `GetChanges` (metodo), è possibile specificare il subset di record modificati desiderato: nuovi record, record contrassegnati per l'eliminazione, aggiunti record disconnessi o record modificati.  
   
  Ottenere un subset di record modificati è utile quando si desidera inviare i record a un altro componente per l'elaborazione. Anziché inviare l'intero set di dati, è possibile ridurre l'overhead della comunicazione con l'altro componente tramite il recupero solo i record che il componente.   
   

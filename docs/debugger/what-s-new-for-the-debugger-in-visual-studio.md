@@ -1,12 +1,10 @@
 ---
-title: "Novità relative al Debugger di Visual Studio 2017 | Documenti Microsoft"
-ms.custom: 
+title: Novità relative al Debugger di Visual Studio 2017 | Documenti Microsoft
+ms.custom: ''
 ms.date: 03/07/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,18 +16,18 @@ helpviewer_keywords:
 - debugging [Visual Studio], what's new
 - what's new [Visual Studio], debugging
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
-caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d0bcd44da88279f042469356a97bce7f369e1190
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità relative al Debugger di[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità relative al Debugger di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Il debugger include le nuove funzionalità:
 
@@ -46,7 +44,7 @@ Il debugger include le nuove funzionalità:
 
     È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-    ![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti passo indietro e Avanti")
+    ![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti con le versioni precedenti di passaggio e l'inoltro")
 
     Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
@@ -60,7 +58,7 @@ Il debugger include le nuove funzionalità:
 
 - È ora possibile eseguire una riga di codice durante la pausa nel debugger selezionando il **esecuzione qui** icona freccia verde (l'icona visualizzata durante il passaggio del mouse su una riga di codice). In questo modo si elimina la necessità di impostare punti di interruzione temporanei.
 
-    ![Esecuzione del debugger per fare clic su](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
+    ![Esecuzione del debugger alla fare clic su](../debugger/media/dbg-run-to-click.png "DbgRunToClick") 
 
 - È possibile impostare le condizioni per le eccezioni nel **impostazioni eccezioni** la finestra di dialogo (è possibile farlo tramite il **modifica condizione** icona nella finestra di dialogo Impostazioni eccezioni o utilizzando il menu di scelta rapida nel eccezione). Le condizioni attualmente supportate includono i nomi di modulo da includere o escludere per l'eccezione.
 
@@ -68,7 +66,7 @@ Il debugger include le nuove funzionalità:
 
 - Connettersi al processo, finestra di dialogo include una nuova funzionalità di ricerca che è possibile identificare più rapidamente il processo che si desidera associare a.
 
-    ![Ricerca in Connetti a processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch") 
+    ![Ricerca nella connessione al processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch") 
 
 Per ulteriori informazioni su queste nuove funzionalità, vedere il [note sulla versione per [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
   

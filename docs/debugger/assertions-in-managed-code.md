@@ -1,13 +1,10 @@
 ---
 title: Asserzioni nel codice gestito | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,27 +20,26 @@ helpviewer_keywords:
 - Trace.Listeners property
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e39956f777ddd79fad080d8bb6d13b30d4ccd0
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: f682768aeb3f3a0f3cc22da8a68f8db4a225b375
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assertions-in-managed-code"></a>Asserzioni nel codice gestito
 Un'asserzione, o istruzione `Assert`, verifica una condizione specificata come argomento dell'istruzione `Assert`. Se la condizione restituisce true, non viene eseguita alcuna azione. Se restituisce false, l'asserzione ha esito negativo. Se l'esecuzione avviene all'interno di una build di debug, viene attivata la modalità di interruzione.  
   
 ##  <a name="BKMK_In_this_topic"></a> In questo argomento  
- [Le asserzioni nel Namespace di System. Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
+ [Asserzioni nel Namespace System. Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
- [Metodo debug. Assert](#BKMK_The_Debug_Assert_method)  
+ [Il metodo Assert](#BKMK_The_Debug_Assert_method)  
   
- [Effetti collaterali di debug. Assert](#BKMK_Side_effects_of_Debug_Assert)  
+ [Effetti secondari di debug. Assert](#BKMK_Side_effects_of_Debug_Assert)  
   
  [Requisiti di traccia e Debug](#BKMK_Trace_and_Debug_Requirements)  
   
@@ -53,14 +49,14 @@ Un'asserzione, o istruzione `Assert`, verifica una condizione specificata come a
   
  [Impostazione di asserzioni nei file di configurazione](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a>Le asserzioni nel Namespace di System. Diagnostics  
+##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Asserzioni nel Namespace System. Diagnostics  
  In Visual Basic e Visual C# è possibile utilizzare il metodo `Assert` da <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace>che si trovano nello spazio dei nomi <xref:System.Diagnostics>. I metodi della classe <xref:System.Diagnostics.Debug> non sono inclusi in una versione di rilascio del programma, pertanto non aumentano le dimensioni né riducono la velocità del codice di rilascio.  
   
  C++ non supporta i metodi della classe <xref:System.Diagnostics.Debug>. È possibile ottenere lo stesso effetto utilizzando la <xref:System.Diagnostics.Trace> classe con la compilazione condizionale, ad esempio `#ifdef DEBUG`... `#endif`.  
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_Debug_Assert_method"></a>Metodo debug. Assert  
+##  <a name="BKMK_The_Debug_Assert_method"></a> Il metodo Assert  
  Utilizzare il metodo <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> per verificare le condizioni che devono restituire true se il codice è corretto. Si supponga, ad esempio, di aver scritto una funzione di divisione per interi. In base alle regole matematiche, il divisore non può mai essere zero. A tale scopo, utilizzare un'asserzione:  
   
 ```VB  
@@ -114,7 +110,7 @@ savingsAccount.Withdraw ( amount );
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Side_effects_of_Debug_Assert"></a>Effetti collaterali di debug. Assert  
+##  <a name="BKMK_Side_effects_of_Debug_Assert"></a> Effetti secondari di debug. Assert  
  Quando si utilizza <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>, assicurarsi che il codice contenuto in `Assert` non modifichi i risultati del programma se `Assert` viene rimosso. In caso contrario, si potrebbe introdurre accidentalmente un bug che si manifesta solo nella versione di rilascio del programma. Prestare particolare attenzione alle asserzioni contenenti chiamate di funzioni o procedure, come quella del seguente esempio:  
   
 ```VB  
@@ -143,7 +139,7 @@ Debug.Assert ( temp != 0 );
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Trace_and_Debug_Requirements"></a>Requisiti di traccia e Debug  
+##  <a name="BKMK_Trace_and_Debug_Requirements"></a> Requisiti di traccia e Debug  
  Se si crea un progetto utilizzando le procedure guidate di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], per impostazione predefinita il simbolo TRACE viene definito in entrambe le configurazioni di rilascio e di debug. Il simbolo DEBUG viene definito per impostazione predefinita solo nella build di debug.  
   
  In caso contrario, affinché i metodi <xref:System.Diagnostics.Trace> funzionino correttamente, è necessario che all'inizio del file di origine del programma sia presente una delle seguenti:  
@@ -162,7 +158,7 @@ Debug.Assert ( temp != 0 );
   
  C++ non supporta i metodi della classe <xref:System.Diagnostics.Debug>. È possibile ottenere lo stesso effetto utilizzando la <xref:System.Diagnostics.Trace> classe con la compilazione condizionale, ad esempio `#ifdef DEBUG`... `#endif`. È possibile definire questi simboli nel  **\<progetto > pagine delle proprietà** la finestra di dialogo. Per ulteriori informazioni, vedere [modifica delle impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [modifica delle impostazioni di progetto per una configurazione C o C++ Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-##  <a name="BKMK_Assert_arguments"></a>Argomenti del metodo Assert  
+##  <a name="BKMK_Assert_arguments"></a> Argomenti del metodo Assert  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> accettano fino a tre argomenti. Il primo argomento obbligatorio è la condizione che si desidera verificare. Se si chiama <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> con un solo argomento, la `Assert` metodo verifica la condizione e, se il risultato è false, genera il contenuto dello stack di chiamate per il **Output** finestra. Nell'esempio riportato di seguito sono illustrati i metodi <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> e <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:  
   
 ```VB  
@@ -202,7 +198,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Customizing_Assert_behavior"></a>Personalizzazione del comportamento Assert  
+##  <a name="BKMK_Customizing_Assert_behavior"></a> Personalizzazione del comportamento Assert  
  Se si esegue l'applicazione in modalità interfaccia utente, il `Assert` metodo visualizza il **asserzione non riuscita** la finestra di dialogo quando la condizione ha esito negativo. Le azioni che si verificano quando un errore di asserzione sono controllate dal <xref:System.Diagnostics.Debug.Listeners%2A> o <xref:System.Diagnostics.Trace.Listeners%2A> proprietà.  
   
  È possibile personalizzare il comportamento di output aggiungendo un oggetto <xref:System.Diagnostics.TraceListener> alla raccolta `Listeners`, rimuovendo un oggetto <xref:System.Diagnostics.TraceListener> dalla raccolta `Listeners` oppure eseguendo l'override del metodo <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> di un oggetto `TraceListener` esistente in modo da ottenere un comportamento diverso.  
@@ -215,7 +211,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [In questo argomento](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Setting_assertions_in_configuration_files"></a>Impostazione di asserzioni nei file di configurazione  
+##  <a name="BKMK_Setting_assertions_in_configuration_files"></a> Impostazione di asserzioni nei file di configurazione  
  Le asserzioni possono essere impostate sia nel file di configurazione del programma sia nel codice. Per altre informazioni, vedere <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Vedere anche  

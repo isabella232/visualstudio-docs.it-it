@@ -1,12 +1,10 @@
 ---
-title: 'Procedura: cercare gli aggiornamenti dell''applicazione a livello di codice utilizzando l''API della distribuzione ClickOnce | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: cercare gli aggiornamenti dell'applicazione a livello di codice utilizzando l'API della distribuzione ClickOnce | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: controllare gli aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce
 ClickOnce fornisce due modi per aggiornare un'applicazione distribuita. Nel primo metodo, è possibile configurare la distribuzione ClickOnce per cercare automaticamente gli aggiornamenti a determinati intervalli. Il secondo metodo, è possibile scrivere codice che usa la <xref:System.Deployment.Application.ApplicationDeployment> classe per controllare gli aggiornamenti in base a un evento, ad esempio una richiesta dell'utente.  
@@ -50,7 +48,7 @@ ClickOnce fornisce due modi per aggiornare un'applicazione distribuita. Nel prim
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Utilizzo di Mage.exe per distribuire un'applicazione che controlla gli aggiornamenti a livello di codice  
   
--   Seguire le istruzioni per la distribuzione dell'applicazione utilizzando Mage.exe, come illustrato in [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Quando si chiama Mage.exe per generare il manifesto di distribuzione, assicurarsi di utilizzare l'opzione della riga di comando `providerUrl`e per specificare l'URL in cui deve essere controllato per gli aggiornamenti. Se gli aggiornamenti dell'applicazione da [http://www.adatum.com/MyApp](http://www.adatum.com/MyApp), ad esempio, la chiamata per generare il manifesto di distribuzione potrebbe essere simile al seguente:  
+-   Seguire le istruzioni per la distribuzione dell'applicazione utilizzando Mage.exe, come illustrato in [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Quando si chiama Mage.exe per generare il manifesto di distribuzione, assicurarsi di utilizzare l'opzione della riga di comando `providerUrl`e per specificare l'URL in cui deve essere controllato per gli aggiornamenti. Se l'applicazione verrà aggiornato da [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), ad esempio, la chiamata per generare il manifesto di distribuzione sarà simile al seguente:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

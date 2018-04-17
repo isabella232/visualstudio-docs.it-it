@@ -1,12 +1,10 @@
 ---
 title: '&lt;file&gt; elemento (applicazione ClickOnce) | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;file&gt; elemento (applicazione ClickOnce)
 Identifica tutti i file scaricati e utilizzati dall'applicazione.  
@@ -95,7 +93,7 @@ Identifica tutti i file scaricati e utilizzati dall'applicazione.
 |`name`|Obbligatorio. Identifica il nome del file.|  
 |`size`|Obbligatorio. Specifica le dimensioni, in byte, del file.|  
 |`group`|Facoltativo, se il `optional` attributo viene omesso o impostato su `false`; obbligatorio se `optional` è `true`. Il nome del gruppo a cui appartiene questo file. Il nome può essere qualsiasi valore stringa Unicode scelto dallo sviluppatore e viene utilizzato per il download dei file su richiesta con la <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
-|`optional`|Facoltativo. Specifica se il file deve essere download quando l'applicazione viene innanzitutto eseguito, o se il file deve trovarsi solo nel server fino a quando non viene richiesto dall'applicazione su richiesta. Se `false` o non definito, il file viene scaricato quando l'applicazione o della prima esecuzione installato. Se `true`, `group` deve essere specificato per il manifesto dell'applicazione sia valido. `optional`non può essere true se `writeableType` è specificato con il valore `applicationData`.|  
+|`optional`|Facoltativo. Specifica se il file deve essere download quando l'applicazione viene innanzitutto eseguito, o se il file deve trovarsi solo nel server fino a quando non viene richiesto dall'applicazione su richiesta. Se `false` o non definito, il file viene scaricato quando l'applicazione o della prima esecuzione installato. Se `true`, `group` deve essere specificato per il manifesto dell'applicazione sia valido. `optional` non può essere true se `writeableType` viene specificato con il valore `applicationData`.|  
 |`writeableType`|Facoltativo. Specifica che il file sia un file di dati. Attualmente l'unico valore valido è `applicationData`.|  
   
 ## <a name="typelib"></a>libreria dei tipi  
@@ -160,7 +158,7 @@ Identifica tutti i file scaricati e utilizzati dall'applicazione.
 ## <a name="hash"></a>hash  
  Il `hash` elemento è un elemento figlio facoltativo del `file` elemento. Il `hash` elemento non ha attributi.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilizza un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per verificare che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non viene incluso, questo controllo non verrà eseguito. Pertanto, omettendo il `hash` elemento non è consigliato.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per verificare che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non viene incluso, questo controllo non verrà eseguito. Pertanto, omettendo il `hash` elemento non è consigliato.  
   
  Se un manifesto contiene un file che non è stato eseguito l'hashing, il manifesto non può essere digitale firmato, perché gli utenti non è possibile verificare il contenuto di un file senza hash.  
   

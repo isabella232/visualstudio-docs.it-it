@@ -1,24 +1,22 @@
 ---
 title: Procedura dettagliata di analisi del codice gestito per errori del codice | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Errori di analisi codice gestito per il codice
 
@@ -30,7 +28,7 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
 ### <a name="to-create-a-class-library"></a>Per creare una libreria di classi
 
-1. Nel **File** menu, scegliere **New** > **progetto...** .
+1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
 1. Nel **nuovo progetto** finestra di dialogo espandere **installato** > **Visual c#**e quindi scegliere **Windows Desktop classico**.
 
@@ -94,7 +92,7 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
 1. Per correggere gli avvisi, utilizzare i suggerimenti seguenti:
 
-   [CA1014: Contrassegnare gli assembly con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: 'demo' deve essere contrassegnato con CLSCompliantAttribute e il relativo valore deve essere true.
+   [CA1014: Contrassegnare gli assembly con CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design: "demo" deve essere contrassegnato con CLSCompliantAttribute e il relativo valore deve essere true.
 
    1. Aggiungere il codice `using System;` al file AssemblyInfo.cs.
 
@@ -108,11 +106,11 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
    1. Aggiungere il costruttore `public demo (String s, Exception e) : base(s, e) { }` alla classe `demo`.
 
-   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il seguente costruttore per questa classe: protected demo (SerializationInfo, StreamingContext)
+   [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il seguente costruttore per questa classe: protetto demo (SerializationInfo, StreamingContext)
 
    1. Aggiungere il codice `using System.Runtime.Serialization;` all'inizio del file Class1.
 
-   1. Successivamente, aggiungere il costruttore`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Successivamente, aggiungere il costruttore `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032: Implementare costruttori di eccezioni standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: aggiungere il seguente costruttore per questa classe: public demo)
 
@@ -130,7 +128,7 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
    1. Modificare il nome del membro da `Item`.
 
-   [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: rinominare 'testCode.demo' per terminare in 'Exception'.
+   [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: Rinomina 'testCode.demo' terminare con 'Exception'.
 
    1. Modificare il nome della classe e i relativi costruttori in `DemoException`.
 
@@ -154,7 +152,7 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
    1. Nel **File** menu, scegliere **Salva elementi selezionati**, quindi chiudere le pagine delle proprietà.
 
-   [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: aggiungere un attributo [Serializable] a 'demo' poiché questo tipo implementa ISerializable.
+   [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: aggiungere un attributo [Serializable] nel tipo 'demo' poiché questo tipo implementa ISerializable.
 
    1. Aggiungere il `[Serializable ()]` attributo alla classe `demo`.
 
@@ -199,4 +197,4 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
 ## <a name="see-also"></a>Vedere anche
 
-[Analisi del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)
+[Analisi del codice per il codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)

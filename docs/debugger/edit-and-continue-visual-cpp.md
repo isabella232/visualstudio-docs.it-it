@@ -1,12 +1,10 @@
 ---
 title: Modifica e continuazione (Visual C++) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [C++], Edit and Continue
 - C/C++, Edit and Continue
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d1b9326aa862bd03bb989a4d6863e94dae7bddef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 107014740c9d976be65fb2a268723184a9134868
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C++)
 È possibile usare Modifica e continuazione nei progetti Visual C++. Vedere [modifiche di codice supportato (C++)](../debugger/supported-code-changes-cpp.md) per informazioni sulle limitazioni di modifica e continuazione.
@@ -41,7 +39,7 @@ Per ulteriori informazioni sui miglioramenti apportati a Visual Studio 2015 Upda
  È consigliabile disabilitare la chiamata automatica di Modifica e continuazione se si apportano modifiche al codice che non si vuole applicare durante la sessione di debug corrente. È anche possibile riabilitare la chiamata automatica di Modifica e continuazione.
 
 > [!IMPORTANT]
-> Per le impostazioni di compilazione necessari e altre informazioni sulla compatibilità di funzionalità, vedere [C++ Modifica e continuazione in Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
+> Per le impostazioni di compilazione necessari e altre informazioni sulla compatibilità delle funzionalità, vedere [C++ Modifica e continuazione in Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
 1.  Se trovano in una sessione di debug, terminare il debug (**MAIUSC + F5**).
 

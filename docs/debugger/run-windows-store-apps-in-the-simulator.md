@@ -1,28 +1,26 @@
 ---
 title: Eseguire App UWP nel simulatore | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire App UWP nel simulatore
 Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula un'app UWP. In genere, è possibile eseguire il debug sul computer locale, un dispositivo collegato o un computer remoto. Tuttavia, in alcuni scenari, si consiglia di utilizzare il simulatore di Visual Studio per emulare dello schermo fisico di diverse dimensioni e la risoluzione. È anche possibile simulare i comuni eventi di tocco e rotazione e le proprietà di connessione di rete.
@@ -61,7 +59,7 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
   
     -   Ruota la rotellina del mouse avanti o indietro per modificare la distanza simulata delle due dita prima di eseguire il movimento zoom avanti o indietro.  
   
--   -   ![Avvicinare le dita, zoom e rotazioni destinazioni](../debugger/media/simulator_twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+-   -   ![Avvicinare le dita, eseguire lo zoom avanti e destinazioni di rotazione](../debugger/media/simulator_twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
   
          Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per fare zoom avanti.  
   
@@ -98,7 +96,7 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
 > [!NOTE]
 >  Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per ulteriori informazioni, vedere [Introduzione a progettazione e l'interfaccia utente](/windows/uwp/layout/design-and-ui-intro). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Acquisire una schermata dell'app da inviare a Microsoft Store  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Acquisire una schermata dell'app da inviare a Microsoft Store  
  Quando si invia un'app in Microsoft Store, è necessario includere alcune schermate dell'app.  
   
 > [!NOTE]
@@ -108,7 +106,7 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
   
 -   Per impostare il percorso in cui si trovano la schermate, scegliere il pulsante **Impostazioni cattura di schermata** e scegliere il percorso dal menu di scelta rapida.  
   
-     ![Menu di scelta rapida impostazioni schermata](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
+     ![Menu di scelta rapida impostazioni screenshot](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete  
  È possibile consentire agli utenti dell'app per gestire il costo delle connessioni di rete a consumo mantenendo la consapevolezza di connessione dati o costo piano stato modifiche alla rete e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento un limite di trasferimento dati specificato. Il [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API consentono di rispondere a [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) gli eventi che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
@@ -139,7 +137,7 @@ Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula
   
  [Esempio di informazioni di rete](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analizzare il consumo di energia](../profiling/analyze-energy-use-in-store-apps.md)  
+ [Analizzare l'utilizzo di energia](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   

@@ -1,28 +1,25 @@
 ---
-title: "Personalizzare la modalità Visual Studio crea le didascalie per controlli associati a dati | Documenti Microsoft"
-ms.custom: 
+title: Personalizzare la modalità Visual Studio crea le didascalie per controlli associati a dati | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità Visual Studio crea le didascalie per controlli associati a dati
 Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md) in una finestra di progettazione, tenere presente che in: i nomi di colonna nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole risultano concatenate. È possibile personalizzare il modo in cui vengono create le etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** i valori in il **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data progettisti** chiave del Registro di sistema.  
@@ -44,14 +41,14 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
   
 |Elemento Registro di sistema|Valore predefinito|Descrizione|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Consente di ricercare un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Consente di ricercare un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|  
 |**SmartCaptionReplacement**|$1 $2|$1 rappresenta i caratteri di una corrispondenza con le parentesi prima dell'espressione e $2 rappresenta i caratteri di cui trovare una corrispondenza nella seconda parentesi. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|  
-|**SmartCaptionSuffix**|:|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, il suffisso rende`Company Name:`|  
+|**SmartCaptionSuffix**|:|Rappresenta un carattere aggiunto alla stringa restituita. Se, ad esempio, la didascalia è `Company Name`, il suffisso rende `Company Name:`|  
   
 > [!CAUTION]
 > È necessario prestare particolare attenzione nell'eseguire alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si utilizza l'Editor del Registro di sistema in modo non corretto, può causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti dall'errato utilizzo dell'Editor del Registro di sistema. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.  
 >   
->  Il seguente articolo della Knowledge Base contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  Il seguente articolo della Knowledge Base contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Per modificare il comportamento della didascalia smart della finestra Origini dati  
   

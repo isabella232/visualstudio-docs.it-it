@@ -1,27 +1,25 @@
 ---
 title: La creazione di gruppi riutilizzabili pulsanti | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
 Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati insieme in un menu o una barra degli strumenti. Qualsiasi gruppo di comando nuovo utilizzabile tramite l'assegnazione ai menu padre diverso nella sezione CommandPlacements del file con estensione vsct.  
@@ -46,7 +44,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     </GuidSymbol>  
     ```  
   
-     Per impostazione predefinita, il modello di elemento di comando crea un gruppo denominato **MyGroup** e un pulsante con il nome fornito dall'utente, insieme a una voce IDSymbol per ognuno.  
+     Per impostazione predefinita, il modello di elemento di comando crea un gruppo denominato **MyMenuGroup** e un pulsante con il nome che è stato specificato, insieme a una voce IDSymbol per ognuno.  
   
 5.  Nella sezione gruppi, creare un elemento di gruppo che ha gli stessi attributi GUID e ID di quelli specificati nella sezione simboli. È anche possibile utilizzare un gruppo esistente o utilizzare la voce che viene fornita dal modello di comando, come nell'esempio seguente. Questo gruppo viene visualizzata sul **strumenti** menu  
   

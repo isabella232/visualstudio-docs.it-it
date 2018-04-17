@@ -1,11 +1,8 @@
 ---
-title: "Aggiungere la convalida a un dataset a più livelli | Documenti Microsoft"
-ms.custom: 
+title: Aggiungere la convalida a un dataset a più livelli | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - validation [Visual Basic], n-tier data applications
 - validating n-tier data applications
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a3f37b734bb9d109634fc272fca3140d40c040f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: addcbd4640acd86cc40097742dcdfd515308f256
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un dataset a più livelli
 Aggiunta della convalida a un set di dati separato in una soluzione a più livelli è fondamentalmente uguale all'aggiunta di convalida per un singolo file (un dataset in un unico progetto). È il percorso suggerito per eseguire la convalida dei dati durante il <xref:System.Data.DataTable.ColumnChanging> e/o <xref:System.Data.DataTable.RowChanging> gli eventi di una tabella dati.  
@@ -62,7 +59,7 @@ End Sub
 2.  Fare doppio clic sulla colonna che si desidera convalidare. Questa azione crea il <xref:System.Data.DataTable.ColumnChanging> gestore dell'evento.  
   
     > [!NOTE]
-    >  Progettazione Dataset non crea automaticamente un gestore eventi per l'evento c#. Il codice che è necessario gestire l'evento in c# è incluso nella sezione successiva. `SampleColumnChangingEvent`viene creato e quindi collegato al <xref:System.Data.DataTable.ColumnChanging> evento nel <xref:System.Data.DataTable.EndInit%2A> metodo.  
+    >  Progettazione Dataset non crea automaticamente un gestore eventi per l'evento c#. Il codice che è necessario gestire l'evento in c# è incluso nella sezione successiva. `SampleColumnChangingEvent` viene creato e quindi collegato al <xref:System.Data.DataTable.ColumnChanging> eventi nel <xref:System.Data.DataTable.EndInit%2A> metodo.  
   
 3.  Aggiungere il codice per verificare che `e.ProposedValue` contiene dati che soddisfi i requisiti dell'applicazione. Se il valore proposto è inaccettabile, impostare la colonna per indicare la presenza di un errore.  
   

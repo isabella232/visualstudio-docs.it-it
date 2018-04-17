@@ -1,13 +1,10 @@
 ---
 title: Avvisi di sicurezza | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 397259c509e07ede09752b7c410bb6362170c412
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-warnings"></a>Avvisi di sicurezza
 Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi avvisi contribuiscono ad evitare che il programma presenti difetti nella sicurezza. Se si disabilita uno qualsiasi di questi avvisi, è opportuno indicarne chiaramente il motivo nel codice e informare il responsabile della sicurezza designato per il progetto di sviluppo.  
@@ -83,7 +79,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA2147: Il codice Transparent non può usare asserzioni di sicurezza](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Al codice contrassegnato come SecurityTransparentAttribute non sono concesse autorizzazioni sufficienti per l'asserzione.|  
 |[CA2149: I metodi Transparent non devono effettuare chiamate nel codice nativo](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Questa regola funziona su qualsiasi metodo trasparente che chiama direttamente in codice nativo, ad esempio, tramite P/Invoke. Le violazioni di questa regola conducono a MethodAccessException nel modello di trasparenza di livello 2 e a una richiesta completa per UnmanagedCode nel modello di trasparenza di livello 1.|  
 |[CA2151: I campi con tipi critici devono essere SecurityCritical](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Per usare i tipi critici per la sicurezza, il codice che fa riferimento al tipo deve essere critico per la sicurezza critico per la sicurezza e richiamabile da codice trasparente. Questo vale anche se il riferimento è indiretto. Pertanto, un campo trasparente per la sicurezza o critico per la sicurezza e richiamabile da codice trasparente è fuorviante perché il codice trasparente non potrà comunque accedere al campo.|  
-|[Dichiarazioni ca5122 le P/Invoke non devono essere critici](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|I metodi sono contrassegnati come SecuritySafeCritical quando viene eseguita un'operazione sensibile di sicurezza, ma possono anche essere usati in sicurezza dal codice trasparente. Il codice trasparente non può mai chiamare direttamente il codice nativo tramite P/Invoke. Di conseguenza, contrassegnare P/Invoke come critico per la sicurezza e richiamabile da codice trasparente non consentirà al codice trasparente di chiamarlo ed è fuorviante per l'analisi di sicurezza.|  
+|[Le dichiarazioni ca5122 le P/Invoke non devono essere SafeCritical critico](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|I metodi sono contrassegnati come SecuritySafeCritical quando viene eseguita un'operazione sensibile di sicurezza, ma possono anche essere usati in sicurezza dal codice trasparente. Il codice trasparente non può mai chiamare direttamente il codice nativo tramite P/Invoke. Di conseguenza, contrassegnare P/Invoke come critico per la sicurezza e richiamabile da codice trasparente non consentirà al codice trasparente di chiamarlo ed è fuorviante per l'analisi di sicurezza.|  
 |[CA2153: Evitare la gestione delle eccezioni in stato danneggiato](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Danneggiato eccezioni stato (estensione lato client)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicano che la memoria del processo sono presenti danni. Se si prova a intercettare tali eccezioni, invece di lasciare che il processo venga arrestato in modo anomalo, può portare a vulnerabilità di sicurezza nel caso in cui un utente malintenzionato riesca a inserire un exploit nell'area della memoria danneggiata.|  
 |[CA3075: Elaborazione DTD non protetta](../code-quality/ca3075-insecure-dtd-processing.md)|Se si usano istanze di DTDProcessing non protette o si fa riferimento a origini di entità esterne, il parser può accettare un input non attendibile e divulgare informazioni riservate a utenti malintenzionati.|  
 |[CA3076: Esecuzione di script XSLT non protetta](../code-quality/ca3076-insecure-xslt-script-execution.md)|Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazioni .NET in modo non protetto, il processore può risolvere i riferimenti URI non attendibili che potrebbero divulgare informazioni riservate a utenti malintenzionati causando attacchi Denial of Service e XSS.|  

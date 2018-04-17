@@ -1,12 +1,9 @@
 ---
 title: Debug degli errori e le finestre di dialogo di avviso | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - debugger, errors
 - errors [Visual Studio], debugger
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 547c9befa5868aee669bc663bf5f7542e8d09ab7
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 9e03df4aeb82d6737be92425b3869a2ed6714780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.  
@@ -46,7 +42,7 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
   
  [Finestra di dialogo Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [Impossibile applicare le modifiche finestra di dialogo](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [Impossibile applicare la finestra di dialogo delle modifiche di codice](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Finestra di dialogo Debugger di Microsoft Visual Studio (generata eccezione)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
@@ -65,7 +61,7 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
 ## <a name="related-sections"></a>Sezioni correlate  
  [Debug di Script e applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
- [Errori di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)  
+ [Errori di debug remoti](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
  [Gli errori di connessione](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   

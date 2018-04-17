@@ -1,23 +1,21 @@
 ---
 title: 'Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 226f6177b98aae8159de10f752cde37632dca901
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex
 Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa di un errore che si verifica durante la fase Vertex shader.  
@@ -37,7 +35,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
  Quando in questo scenario l'app viene eseguita per essere testata, il rendering dello sfondo avviene nel modo previsto, ma uno degli oggetti non viene visualizzato. Usando gli strumenti di Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'app. Nell'app, il problema si presenta nel modo seguente:  
   
- ![L'oggetto non può essere visualizzato. ] (media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")  
+ ![L'oggetto non può essere individuata. ] (media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")  
   
 ## <a name="investigation"></a>Analisi  
  Usando gli strumenti di Diagnostica della grafica è possibile caricare il file di log di grafica per esaminare i frame acquisiti durante il test.  
@@ -87,7 +85,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
 4.  Alla successiva modifica di `output` viene scritto il membro `pos` .  
   
-     ![Il valore di "output.pos" è stato azzerato](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+     ![Il valore di "output. POS" è stato azzerato](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
      Questa volta, il valore del membro `pos` (tutti zeri) sembra sospetto. A questo punto occorre stabilire come mai il valore di `output.pos` è composto da tutti zeri.  
   
@@ -120,11 +118,11 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
  Dopo aver individuato la posizione in cui viene impostato `m_marbleConstantBufferData.projection` , è possibile esaminare il codice sorgente circostante per determinare l'origine del valore non corretto. In questo scenario, si scopre che il valore di `m_marbleConstantBufferData.projection` è impostato su una variabile locale denominata `projection` prima dell'inizializzazione su un valore fornito da `m_camera->GetProjection(&projection);` nel codice nella riga successiva.  
   
- ![La proiezione Marmo impostata prima dell'inizializzazione](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")  
+ ![Proiezione Marmo impostata prima dell'inizializzazione](media/gfx_diag_demo_missing_object_shader_step_9.png "gfx_diag_demo_missing_object_shader_step_9")  
   
  Per risolvere il problema, spostare la riga di codice che imposta il valore di `m_marbleConstantBufferData.projection` dopo la riga che inizializza il valore della variabile locale `projection`.  
   
- ![La corretta C &#43; &#43; codice sorgente](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![C con correzione&#43; &#43; nel codice sorgente](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Dopo aver corretto il codice, è possibile ricompilare ed eseguire l'app di nuovo per verificare che il problema di rendering sia stato risolto:  
   

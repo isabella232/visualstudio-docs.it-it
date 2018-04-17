@@ -1,12 +1,10 @@
 ---
 title: Compilazione di applicazioni ClickOnce dalla riga di comando | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilazione di applicazioni ClickOnce dalla riga di comando
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], è possibile compilare progetti dalla riga di comando, anche se sono state create nell'ambiente di sviluppo integrato (IDE). In effetti, è possibile ricompilare un progetto creato con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in un altro computer che dispone solo di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installato. Ciò consente di riprodurre una compilazione usando un processo automatizzato, ad esempio, in una compilazione centrale o tramite tecniche di scripting avanzate esulano dall'ambito di compilazione del progetto stesso.  
@@ -112,51 +110,51 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Le proprietà di pubblicazione sono controllate in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dal **pubblica**, **sicurezza**, e **firma** pagine delle proprietà di **Progettazione progetti** . Di seguito è riportata una descrizione delle proprietà di pubblicazione, insieme a un'indicazione di ognuno di essi nelle varie pagine delle proprietà della finestra di progettazione dell'applicazione:  
   
--   `AssemblyOriginatorKeyFile`Determina il file di chiave utilizzato per firmare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti dell'applicazione. La stessa chiave può essere utilizzata anche per assegnare un nome sicuro all'assembly. Questa proprietà è impostata sul **firma** pagina della finestra di **Progettazione progetti**.  
+-   `AssemblyOriginatorKeyFile` Determina il file di chiave utilizzato per firmare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti dell'applicazione. La stessa chiave può essere utilizzata anche per assegnare un nome sicuro all'assembly. Questa proprietà è impostata sul **firma** pagina della finestra di **Progettazione progetti**.  
   
  Le seguenti proprietà vengono impostate sul **sicurezza** pagina:  
   
 -   **Abilitare le impostazioni di sicurezza ClickOnce** determina se [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti vengono generati. Quando un progetto viene creato inizialmente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la generazione del manifesto è disattivata per impostazione predefinita. La procedura guidata verrà attivato automaticamente questo flag viene pubblicato per la prima volta.  
   
--   **TargetZone** determina il livello di attendibilità da definire nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. I valori possibili sono "Internet", "LocalIntranet" e "Custom". Internet e Intranet locale provocherà un set di autorizzazioni predefinito per essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. LocalIntranet è il valore predefinito e l'attendibilità totale. Custom specifica che solo le autorizzazioni in modo esplicito specificate nel file app. manifest base essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Il file app. manifest è un file manifesto parziale contenente solo le definizioni di informazioni di trust. È un file nascosto, aggiunto automaticamente al progetto quando si configurano le autorizzazioni nel **sicurezza** pagina.  
+-   **TargetZone** determina il livello di trust essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. I valori possibili sono "Internet", "LocalIntranet" e "Custom". Internet e Intranet locale provocherà un set di autorizzazioni predefinito per essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. LocalIntranet è il valore predefinito e l'attendibilità totale. Custom specifica che solo le autorizzazioni in modo esplicito specificate nel file app. manifest base essere emessa nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Il file app. manifest è un file manifesto parziale contenente solo le definizioni di informazioni di trust. È un file nascosto, aggiunto automaticamente al progetto quando si configurano le autorizzazioni nel **sicurezza** pagina.  
   
  Le seguenti proprietà vengono impostate sul **pubblica** pagina:  
   
--   `PublishUrl`è il percorso in cui verrà pubblicata per l'applicazione nell'IDE. Viene inserito nella [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] il manifesto dell'applicazione se non si specifica il `InstallUrl` o `UpdateUrl` proprietà specificata.  
+-   `PublishUrl` rappresenta la posizione in cui verrà pubblicata per l'applicazione nell'IDE. Viene inserito nella [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] il manifesto dell'applicazione se non si specifica il `InstallUrl` o `UpdateUrl` proprietà specificata.  
   
--   `ApplicationVersion`Specifica la versione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo è un numero di versione di quattro cifre. Se l'ultima cifra è un "*", quindi il `ApplicationRevision` verrà sostituito con il valore inserito nel manifesto in fase di compilazione.  
+-   `ApplicationVersion` Specifica la versione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Questo è un numero di versione di quattro cifre. Se l'ultima cifra è un "*", quindi il `ApplicationRevision` verrà sostituito con il valore inserito nel manifesto in fase di compilazione.  
   
--   `ApplicationRevision`Specifica la revisione. Si tratta di un numero intero viene incrementato ogni volta che pubblica nell'IDE. Si noti che non è viene incrementato automaticamente per le compilazioni eseguite dalla riga di comando.  
+-   `ApplicationRevision` Specifica la revisione. Si tratta di un numero intero viene incrementato ogni volta che pubblica nell'IDE. Si noti che non è viene incrementato automaticamente per le compilazioni eseguite dalla riga di comando.  
   
--   `Install`Determina se l'applicazione è un'applicazione eseguita dal Web o un'applicazione installata.  
+-   `Install` Determina se l'applicazione è un'applicazione installata o eseguita dal Web.  
   
--   `InstallUrl`(non illustrato) è il percorso in cui gli utenti installeranno l'applicazione. Se specificato, questo valore viene copiato nel programma setup.exe di `IsWebBootstrapper` proprietà è abilitata. Viene inoltre inserito nel manifesto dell'applicazione, se il `UpdateUrl` non è specificato.  
+-   `InstallUrl` (non illustrata) è il percorso in cui gli utenti installeranno l'applicazione da. Se specificato, questo valore viene copiato nel programma setup.exe di `IsWebBootstrapper` proprietà è abilitata. Viene inoltre inserito nel manifesto dell'applicazione, se il `UpdateUrl` non è specificato.  
   
--   `SupportUrl`(non illustrato) è il percorso del collegamento nel **Aggiungi/Rimuovi programmi** la finestra di dialogo per un'applicazione installata.  
+-   `SupportUrl` (non illustrata) è il percorso collegato la **Aggiungi/Rimuovi programmi** finestra di dialogo per un'applicazione installata.  
   
  Le seguenti proprietà vengono impostate **Aggiornamenti applicazione** la finestra di dialogo, accessibile dal **pubblica** pagina.  
   
--   `UpdateEnabled`indica se l'applicazione deve verificare gli aggiornamenti.  
+-   `UpdateEnabled` indica se l'applicazione deve verificare gli aggiornamenti.  
   
--   `UpdateMode`Specifica gli aggiornamenti in primo piano o gli aggiornamenti in Background.  
+-   `UpdateMode` Specifica se gli aggiornamenti in primo piano o in Background.  
   
--   `UpdateInterval`Specifica la frequenza con cui l'applicazione deve verificare gli aggiornamenti.  
+-   `UpdateInterval` Specifica la frequenza di controllare la disponibilità di aggiornamenti.  
   
--   `UpdateIntervalUnits`Specifica se il `UpdateInterval` valore è espresso in unità di ore, giorni o settimane.  
+-   `UpdateIntervalUnits` Specifica se il `UpdateInterval` valore è espresso in unità di ore, giorni o settimane.  
   
--   `UpdateUrl`(non illustrato) è il percorso da cui l'applicazione riceverà gli aggiornamenti. Se specificato, questo valore viene inserito nel manifesto dell'applicazione.  
+-   `UpdateUrl` (non illustrata) è il percorso da cui l'applicazione riceverà gli aggiornamenti. Se specificato, questo valore viene inserito nel manifesto dell'applicazione.  
   
 -   Le seguenti proprietà vengono impostate **opzioni di pubblicazione** la finestra di dialogo, accessibile dal **pubblica** pagina.  
   
--   `PublisherName`Specifica il nome del server di pubblicazione visualizzato nel messaggio visualizzato durante l'installazione o l'esecuzione dell'applicazione. Nel caso di un'applicazione installata, viene anche utilizzato per specificare il nome della cartella di **avviare** menu.  
+-   `PublisherName` Specifica il nome del server di pubblicazione visualizzato nel messaggio visualizzato quando si installa o esegue l'applicazione. Nel caso di un'applicazione installata, viene anche utilizzato per specificare il nome della cartella di **avviare** menu.  
   
--   `ProductName`Specifica il nome del prodotto indicato nel messaggio visualizzato durante l'installazione o l'esecuzione dell'applicazione. Nel caso di un'applicazione installata, viene anche utilizzato per specificare il nome del collegamento di **avviare** menu.  
+-   `ProductName` Specifica il nome del prodotto visualizzato nel messaggio visualizzato quando si installa o esegue l'applicazione. Nel caso di un'applicazione installata, viene anche utilizzato per specificare il nome del collegamento di **avviare** menu.  
   
 -   Le seguenti proprietà vengono impostate **prerequisiti** la finestra di dialogo, accessibile dal **pubblica** pagina.  
   
--   `BootstrapperEnabled`Determina se generare il programma di avvio di setup.exe.  
+-   `BootstrapperEnabled` Determina se generare setup.exe automatico.  
   
--   `IsWebBootstrapper`Determina se il programma di avvio di setup.exe sul Web o in modalità basata su disco.  
+-   `IsWebBootstrapper` Determina se il programma di avvio automatico setup.exe funziona tramite Web o in modalità basata su disco.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL e UpdateUrl non  
  Nella tabella seguente illustra le quattro opzioni di URL per la distribuzione ClickOnce.  

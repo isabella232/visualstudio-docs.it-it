@@ -1,12 +1,10 @@
 ---
 title: 'CA1720: Gli identificatori non devono contenere nomi di tipo | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - IdentifiersShouldNotContainTypeNames
 - CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac50c390ca7a45cf5ef28f2d82d1f75fc5e2c1a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 17c9d00bf33393030c861212bdfdfce31a1d0504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
-|Category|Microsoft. naming|  
+|Category|Microsoft.Naming|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -134,7 +132,7 @@ ms.lasthandoff: 12/22/2017
   
  Sostituire l'identificatore del tipo di dati del nome del parametro con un termine che meglio descrive il significato o un termine più generico, ad esempio 'value'.  
   
- **Se generate rispetto a un membro:**  
+ **Se generato rispetto a un membro:**  
   
  Sostituire l'identificatore del tipo di dati specifico del linguaggio nel nome del membro con un termine che meglio descrive il significato, un equivalente indipendente dal linguaggio o un termine più generico, ad esempio 'value'.  
   

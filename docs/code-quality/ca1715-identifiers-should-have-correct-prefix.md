@@ -1,12 +1,10 @@
 ---
 title: 'CA1715: Gli identificatori devono contenere il prefisso corretto | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1715
 - IdentifiersShouldHaveCorrectPrefix
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - IdentifiersShouldHaveCorrectPrefix
 - CA1715
 ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
-caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8a87359b0a4d1ac45199e4f233a7bf3174ba2bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8c6d744022c6be599d0df57f86c0d67b1f6a72dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectPrefix|  
 |CheckId|CA1715|  
-|Category|Microsoft. naming|  
+|Category|Microsoft.Naming|  
 |Breaking Change|Sostanziale - Quando generato su interfacce.<br /><br /> Non sostanziale - Quando generato su parametri di tipo generico.|  
   
 ## <a name="cause"></a>Causa  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]  
   
 ## <a name="example"></a>Esempio  
- **Nell'esempio seguente consente di correggere la violazione precedente, facendolo precedere l'interfaccia con 'I'.**  
+ **Nell'esempio seguente consente di correggere la violazione precedente anteponendo l'interfaccia con 'I'.**  
   
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
@@ -77,7 +75,7 @@ ms.lasthandoff: 12/22/2017
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]  
   
 ## <a name="example"></a>Esempio  
- **Nell'esempio seguente consente di correggere la violazione precedente aggiungendo il prefisso di parametro di tipo generico ' T' '.**  
+ **Nell'esempio seguente consente di correggere la violazione precedente aggiungendo il parametro di tipo generico ' T' '.**  
   
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]

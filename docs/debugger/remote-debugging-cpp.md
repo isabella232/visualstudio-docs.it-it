@@ -2,12 +2,9 @@
 title: Eseguire il Debug remoto un progetto Visual C++ | Documenti Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un progetto Visual C++ in Visual Studio di debug remoto
 Per eseguire il debug di un'applicazione di Visual Studio in un altro computer, installare ed eseguire remote tools sul computer in cui si desidera distribuire l'app, configurare il progetto per connettersi al computer remoto da Visual Studio, quindi distribuire ed eseguire l'app.
@@ -50,14 +46,14 @@ Il debugger remoto è supportata in Windows 7 e versioni successive (non phone) 
 > [!TIP]
 > In alcuni scenari, può essere più efficiente per eseguire il debugger remoto da una condivisione file. Per ulteriori informazioni, vedere [eseguire il debugger remoto da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Impostare il debugger remoto
+## <a name="BKMK_setup"></a> Impostare il debugger remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Se è necessario aggiungere le autorizzazioni per altri utenti, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Debug remoto di un progetto Visual C++  
+## <a name="remote_cplusplus"></a> Debug remoto di un progetto Visual C++  
  Nella procedura seguente, il nome e percorso del progetto sono C:\remotetemp\MyMfc e il nome del computer remoto è **MJO DL**.  
   
 1.  Creare un'applicazione MFC denominata **mymfc.**  
@@ -96,7 +92,7 @@ Il debugger remoto è supportata in Windows 7 e versioni successive (non phone) 
   
 10. Se richiesto, immettere le credenziali di rete per connettersi al computer remoto.  
   
-     Le credenziali necessarie sono specifiche di configurazione della sicurezza della rete. In un computer di dominio, ad esempio, è possibile scegliere un certificato di sicurezza o immettere il nome di dominio e la password. In un computer non appartenenti al dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio  **MJO-DL\name@something.com** , con la password corretta.  
+     Le credenziali necessarie sono specifiche di configurazione della sicurezza della rete. In un computer di dominio, ad esempio, è possibile scegliere un certificato di sicurezza o immettere il nome di dominio e la password. In un computer non appartenenti al dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio **MJO-DL\name@something.com**, con la password corretta.  
   
 11. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.  
   
@@ -112,7 +108,7 @@ Il debugger remoto è supportata in Windows 7 e versioni successive (non phone) 
 ## <a name="see-also"></a>Vedere anche  
  [Debug in Visual Studio](../debugger/index.md)  
  [Debugger Feature Tour](../debugger/debugger-feature-tour.md)  (Tour delle funzionalità del debugger)  
- [Configurare Windows Firewall per debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Assegnazioni di porta del Debugger remoto](../debugger/remote-debugger-port-assignments.md)   
  [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

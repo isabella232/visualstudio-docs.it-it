@@ -1,13 +1,10 @@
 ---
 title: Analisi del codice per C/C++ Panoramica | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
 - build integration, code analysis
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2261921e4266f1b58ed31650ac1ff1bb7c028942
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 90b586a9a131e6c1ef19f591f1348ff5125e9701
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analisi del codice per C/C++ overview
 
@@ -45,7 +41,7 @@ Lo strumento di analisi del codice C/C++ fornisce agli sviluppatori informazioni
  Gli sviluppatori possono utilizzare il `#pragma` direttiva per considerarli come errori; abilitare o disabilitare gli avvisi e l'esclusione di avvisi per singole righe di codice. Per ulteriori informazioni, vedere [procedura: impostare le proprietà di analisi codice per progetti C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Supporto delle annotazioni  
- Annotazioni migliorano l'accuratezza dell'analisi del codice. Annotazioni informazioni aggiuntive sul pre e post-condizioni nei parametri di funzione e tipi restituiscono. Per ulteriori informazioni, vedere [procedura: specificare informazioni aggiuntive di codice utilizzando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
+ Annotazioni migliorano l'accuratezza dell'analisi del codice. Annotazioni informazioni aggiuntive sul pre e post-condizioni nei parametri di funzione e tipi restituiscono. Per altre informazioni, vedere [procedura: specificare informazioni aggiuntive di codice utilizzando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
   
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Eseguire lo strumento di analisi come parte di criteri di archiviazione  
  Si potrebbe voler richiedono che tutte le origine codice archiviazioni soddisfino determinati criteri. In particolare, si desidera assicurarsi che l'analisi è stata eseguita come un passaggio di compilazione locale più recente. Per ulteriori informazioni sull'abilitazione di criteri di controllo dell'analisi codice, vedere [creazione e utilizzo Check-In Criteri di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  

@@ -1,27 +1,25 @@
 ---
 title: Acquisizione di informazioni grafiche | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
 - vs.graphics.capturewindow
 - VS.ToolsOptionsPages.Graphics_Diagnostics.Capture
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
-caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 89488533ab8ba36b0344faa7f0b800d8c4ecc6ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b6fc895ae1aff25ff6e9a3fc02d0252e518f7652
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
 Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.  

@@ -1,30 +1,26 @@
 ---
 title: Compilando | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - compiland symbol
 - compilands, compiland symbol
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f11216e437488a918a439166afb9000193e565a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6420c235098414d09de2f0c269ebf85333d5c1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compiland"></a>Compilando
 È presente `SymTagCompiland` simbolo per ogni modulo collegato al file .exe. Informazioni di modulo viene suddiviso tra i simboli con un `SymTagCompiland` tag, che può essere recuperato senza caricare i simboli compilando aggiuntive, i simboli con un `SymTagCompilandDetails` tag, che potrebbe richiedere il caricamento dei simboli aggiuntivi.  
@@ -34,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 |Proprietà|Tipo di dati|Descrizione|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE`Se la modifica e continuazione è stata abilitata la compilazione.|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Se la compilazione è stata abilitata la funzionalità Modifica e continuazione.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo per il file .exe.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo lessicale padre.|  
 |[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|Nome del file di libreria o un oggetto in cui è stato caricato l'oggetto da.|  

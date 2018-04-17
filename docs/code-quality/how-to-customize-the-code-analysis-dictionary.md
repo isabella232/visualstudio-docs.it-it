@@ -1,27 +1,25 @@
 ---
 title: 'Procedura: personalizzare il dizionario di analisi di codice | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2d60b2a187b7fccf4d5f564d9554badd5da9dec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi del codice
 Analisi del codice utilizza un dizionario incorporato per controllare gli identificatori nel codice per errori di ortografia, maiuscole e altre convenzioni di denominazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] linee guida. È possibile creare un file Xml del dizionario personalizzato per aggiungere, rimuovere o modificare i termini e abbreviazioni acronimi nel dizionario incorporato.  
@@ -65,17 +63,17 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [Dizionario/parole/riconosciuto/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [Dizionario/parole/non riconosciuto o Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+-   [Dizionario/parole/non riconosciuto/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
 -   [Dizionario/parole/deprecato/Term [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
 -   [Dizionario/parole/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [Dizionario/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+-   [Dizionario/parole/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [Dizionario/acronimi/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+-   [Dizionario/acronimi/CasingExceptions/acronimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a>Dizionario/parole/riconosciuto/Word  
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dizionario/parole/riconosciuto/Word  
  Per includere un termine nell'elenco dei termini che l'analisi del codice identifica come digitati correttamente, aggiungere il termine come testo interno di un elemento Dictionary/Words/Recognized/Word. Condizioni negli elementi Dictionary/Words/Recognized/Word non sono rilevanti.  
   
  **Esempio**  
@@ -110,7 +108,7 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dizionario/parole/non riconosciuto o Word  
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dizionario/parole/non riconosciuto/Word  
  Per escludere un termine dall'elenco dei termini che l'analisi del codice identifica come digitati correttamente, aggiungere il termine come testo interno di un elemento del dizionario/parole, non riconosciuto o Word. Condizioni negli elementi Dictionary/parole, non riconosciuto/Word non sono rilevanti.  
   
  **Esempio**  
@@ -145,7 +143,7 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dizionario/parole/deprecato/Term [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dizionario/parole/deprecato/Term [@PreferredAlternate]  
  Per includere un termine nell'elenco dei termini che l'analisi del codice identifica come deprecati, aggiungere il termine come testo interno di un elemento/parole dizionario/Term obsoleto. Un termine deprecato è una parola che sia stata digitata correttamente, ma non deve essere utilizzata.  
   
  Per includere un termine alternativo suggerito nel messaggio di avviso, specificare l'alternativa nell'attributo PreferredAlternate dell'elemento Term. Se non si desidera suggerire un'alternativa, è possibile lasciare vuoto il valore dell'attributo.  
@@ -182,7 +180,7 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [CA1726: Usare termini preferiti](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dizionario/parole/Compound/Term [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dizionario/parole/Compound/Term [@CompoundAlternate]  
  Il dizionario incorporato identifica alcuni termini come singoli termini discreti, anziché un termine composto. Per includere un termine nell'elenco dei termini che l'analisi del codice identifica come una parola composta e specificare le maiuscole e minuscole corrette del termine, aggiungere il termine come testo interno di un elemento Dictionary/Words/Compound/Term. Nell'attributo dell'elemento Term CompoundAlternate, specificare le singole parole che compongono il termine composto da una conversione in maiuscolo la prima lettera delle singole parole (convenzione Pascal). Si noti che il termine specificato nel testo interno viene automaticamente aggiunto all'elenco di parole/dizionario/DiscreteExceptions.  
   
 -   Il termine obsoleto nel dizionario o parole/elemento deprecato/termine non è tra maiuscole e minuscole.  
@@ -215,7 +213,7 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dizionario/Words/DiscreteExceptions/Term  
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dizionario/parole/DiscreteExceptions/Term  
  Per escludere un termine nell'elenco dei termini che l'analisi del codice identifica come singolo, word discreti quando il termine viene controllato dalle regole di maiuscole e minuscole per le parole composte, aggiungere il termine come testo interno di un elemento del dizionario/Words/DiscreteExceptions/Term. Il termine nell'elemento Dictionary/Words/DiscreteExceptions/Term non è tra maiuscole e minuscole.  
   
  **Esempio**  
@@ -240,7 +238,7 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dizionario/acronimi/CasingExceptions/Acronym  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dizionario/acronimi/CasingExceptions/acronimo  
  Per includere un acronimo nell'elenco dei termini che l'analisi del codice identifica come sia stata digitata correttamente e indicare come l'acronimo quando il termine è selezionato per le maiuscole e minuscole delle regole per le parole composte, aggiungere il termine come testo interno di un dizionario, gli acronimi/CasingExceptions / Elemento di un acronimo. L'acronimo nell'elemento Dictionary/acronimi/CasingExceptions/Acronym è tra maiuscole e minuscole.  
   
  **Esempio**  
@@ -263,7 +261,7 @@ Analisi del codice utilizza un dizionario incorporato per controllare gli identi
   
 -   [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Per applicare un dizionario personalizzato a un progetto  
+##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Per applicare un dizionario personalizzato a un progetto  
   
 1.  In **Esplora**, utilizzare una delle procedure riportate di seguito:  
   

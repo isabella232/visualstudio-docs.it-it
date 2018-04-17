@@ -1,12 +1,10 @@
 ---
 title: Visualizzare i valori dei dati nei suggerimenti dati nell'editor di codice | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c098e4b4ae94c5145a193e1903aa04a0eb757b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizza i valori dei dati nei suggerimenti dati nell'editor di codice
 I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle variabili nel programma durante il debug. I suggerimenti dati funzionano solo in modalità di interruzione e solo con variabili che si trovano nell'ambito di esecuzione corrente.
@@ -75,11 +73,11 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Per espandere una variabile per visualizzarne gli elementi  
   
--   In un suggerimento dati posizionare il puntatore del mouse di  **+**  sign che precede il nome della variabile.  
+-   In un suggerimento dati posizionare il puntatore del mouse di **+** sign che precede il nome della variabile.  
   
     La variabile si espande per visualizzare i relativi elementi in formato ad albero.
 
-    ![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "consente di visualizzare un suggerimento dati")
+    ![Visualizzare un suggerimento dati](../debugger/media/dbg-tour-data-tips.gif "visualizzare un suggerimento dati")
   
     Quando la variabile è espansa, è possibile utilizzare i tasti di direzione sulla tastiera per spostarsi verso l'alto e verso il basso. In alternativa, è possibile utilizzare il mouse.  
   
@@ -118,7 +116,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
   
 -   Fare doppio clic su un suggerimento dati e quindi fare clic su **Aggiungi espressione di controllo**.  
   
-     La variabile viene aggiunta per il **espressioni di controllo** finestra. Se si utilizza un'edizione che supporta più **espressioni di controllo** windows, la variabile verrà aggiunta a **espressioni di controllo 1.**  
+     La variabile viene aggiunta per il **espressioni di controllo** finestra. Se si utilizza un'edizione che supporta più **Watch** windows, la variabile verrà aggiunta a **controllo1.**  
   
 ## <a name="import-and-export-datatips"></a>Importare ed esportare suggerimenti dati  
  È possibile esportare suggerimenti dati in un file XML, per poi condividerlo con un collega o modificarlo mediante un editor di testo.  

@@ -1,29 +1,25 @@
 ---
 title: Visualizzazione thread | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.threadsview
 helpviewer_keywords:
 - Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24d6bfea62b73609417ade039a9c3e763bc8ddd6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="threads-view"></a>Visualizzazione Thread
 La visualizzazione dei thread è un semplice elenco di tutti i thread associati alle finestre nel sistema. Vengono visualizzati l'ID del Thread e nome del modulo per ogni thread. I processi non vengono inclusi, ma è possibile trovare facilmente il processo a cui appartiene un thread selezionato.  
@@ -34,7 +30,7 @@ La visualizzazione dei thread è un semplice elenco di tutti i thread associati 
   
 1.  Dal **Spy** menu, scegliere **thread**.  
   
- ![Spy &#43; &#43; Visualizzazione thread](../debugger/media/spy--_threads.png "Spy + + _Threads")  
+ ![Spy&#43; &#43; visualizzazione thread](../debugger/media/spy--_threads.png "Spy + + _Threads")  
 Visualizzazione Thread di Spy++  
   
  La seguente figura mostra la visualizzazione dei thread.  
@@ -43,7 +39,7 @@ Visualizzazione Thread di Spy++
  [Ricerca di un Thread nella visualizzazione thread](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
  Viene illustrato come trovare un thread specifico nella visualizzazione thread.  
   
- [Visualizzazione delle proprietà Thread](../debugger/how-to-display-thread-properties.md)  
+ [Visualizzazione delle proprietà del Thread](../debugger/how-to-display-thread-properties.md)  
  Viene illustrato come visualizzare ulteriori informazioni su un thread.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

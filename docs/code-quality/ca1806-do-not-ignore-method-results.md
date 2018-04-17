@@ -1,12 +1,10 @@
 ---
 title: 'CA1806: Non ignorare i risultati del metodo | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
@@ -14,23 +12,22 @@ helpviewer_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58da9a40f8cbbf8a506feb35dcba8a8e9f405899
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 90908bb85d88d939e2886f60083c0499cde2823c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Non ignorare i risultati dei metodi
 |||  
 |-|-|  
 |TypeName|DoNotIgnoreMethodResults|  
 |CheckId|CA1806|  
-|Categoria|Microsoft. Usage|  
-|Breaking Change|Non importante|  
+|Category|Microsoft.Usage|  
+|Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
  Esistono diversi motivi possibili per questo avviso:  
@@ -52,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
  Se il metodo chiama il metodo B, ma non utilizza la nuova istanza della stringa restituita dal metodo B. Passare l'istanza come argomento a un altro metodo, assegnare l'istanza a una variabile. Oppure rimuovere la chiamata se non è necessaria.  
   
- -oppure-  
+ oppure  
   
  Se il metodo chiama il metodo B, ma non viene utilizzato il valore HRESULT o codice di errore che il metodo restituisce. Utilizzare il risultato in un'istruzione condizionale, assegnare il risultato a una variabile oppure passarlo come argomento a un altro metodo.  
   

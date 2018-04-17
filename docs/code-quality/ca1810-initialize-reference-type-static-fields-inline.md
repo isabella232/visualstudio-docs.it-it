@@ -1,12 +1,10 @@
 ---
 title: 'CA1810: Inizializzare riferimento tipo campi statici inline | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4b3a6ffe04be6116fddc225d0820d3709644fe52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7e49e346594a8546c6808e718ee7b4d7c78c10b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inizializzare i campi statici del tipo di riferimento inline
 |||  
 |-|-|  
 |TypeName|InitializeReferenceTypeStaticFieldsInline|  
 |CheckId|CA1810|  
-|Category|Microsoft. Performance|  
+|Category|Microsoft.Performance|  
 |Modifica importante|Non sostanziale|  
   
 ## <a name="cause"></a>Causa  
@@ -65,7 +63,7 @@ ms.lasthandoff: 12/22/2017
  **estende [mscorlib**  
 **{**  
 **} / / fine della classe StaticConstructor**  
-**Class pubblica auto ansi beforefieldinit NoStaticConstructor**  
+**Class auto pubblica ansi beforefieldinit NoStaticConstructor**  
  **estende [mscorlib**  
 **{**  
 **} / / fine della classe NoStaticConstructor**   

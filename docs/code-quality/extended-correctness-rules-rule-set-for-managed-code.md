@@ -1,28 +1,26 @@
 ---
 title: Impostare estesa regole di correttezza per codice gestito | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: d7a09ef56020c552134ff4a7a325dacc57f8cae7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 Il set di regole regole estese di correttezza Microsoft ottimizza la logica e i framework utilizzo gli errori restituiti dall'analisi del codice. Attenzione è rivolta a scenari specifici, ad esempio l'interoperabilità COM e applicazioni per dispositivi mobili. È consigliabile inclusi in questo set di regole se uno di questi scenari si applica al progetto o per individuare ulteriori problemi nel progetto.  
   
- Il set di regole regole estese di correttezza Microsoft include le regole impostate nella regola regole base di correttezza Microsoft. Regole base di correttezza includono le regole impostate nella regola di regole minime consigliate Microsoft. Per ulteriori informazioni vedere [set di regole regole base di correttezza per codice gestito](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [del set di regole alle regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  
+ Il set di regole regole estese di correttezza Microsoft include le regole impostate nella regola regole base di correttezza Microsoft. Regole base di correttezza includono le regole impostate nella regola di regole minime consigliate Microsoft. Per altre informazioni, vedere [del set di regole regole base di correttezza per codice gestito](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [del set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  
   
  Nella tabella seguente vengono descritte tutte le regole nel set di regole regole estese di correttezza Microsoft.  
   
@@ -47,7 +45,7 @@ Il set di regole regole estese di correttezza Microsoft ottimizza la logica e i 
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|  
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|  
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campi dei tipi di valore devono essere portabili|  
-|[CA1901 LE](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|  
+|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|  
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|  
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Esaminare le query SQL per le vulnerabilità di sicurezza|  
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|  

@@ -1,26 +1,23 @@
 ---
 title: Tipizzati e DataSet non tipizzati | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7c55b160012997281cd5e7551ea07178b63f0fca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="typed-vs-untyped-datasets"></a>Tipizzati e DataSet non tipizzati
 Un dataset tipizzato è un set di dati prima di tutto è derivata dalla base <xref:System.Data.DataSet> classe e quindi utilizza le informazioni dal **Progettazione Dataset**, che viene archiviato in un file XSD, per generare un nuovo fortemente tipizzate classe dataset. Informazioni dello schema (tabelle, colonne e così via) viene generate e compilate in questa nuova classe dataset come un set di proprietà e oggetti di primaria importanza. Poiché un dataset tipizzato erediterà dalla base <xref:System.Data.DataSet> (classe), la classe tipizzata si presuppone che tutte le funzionalità del <xref:System.Data.DataSet> e può essere utilizzata con metodi che accettano un'istanza di un <xref:System.Data.DataSet> classe come parametro.  

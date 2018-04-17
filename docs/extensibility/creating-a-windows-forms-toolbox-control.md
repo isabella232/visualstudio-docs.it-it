@@ -1,27 +1,25 @@
 ---
 title: Creazione di un Windows Form controllo casella degli strumenti | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6a7d5bae07d3596902f94417cda20c3d40feed2f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Creazione di un controllo casella degli strumenti di Windows Form
 Il modello di elemento di controllo della casella degli strumenti di Windows Form incluso in Visual Studio Extensibility Tools (VS SDK) consente di creare un controllo che viene aggiunto automaticamente al **della casella degli strumenti** quando l'estensione è installata. In questo argomento viene illustrato come utilizzare il modello per creare un controllo semplice contatore che è possibile distribuire ad altri utenti.  
@@ -36,7 +34,7 @@ Il modello di elemento di controllo della casella degli strumenti di Windows For
   
 1.  Creare un progetto VSIX denominato `MyWinFormsControl`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
   
-2.  Quando si apre il progetto, aggiungere un **il controllo della casella degli strumenti di Windows Form** modello di elemento denominato `Counter`. Nel **Esplora**del mouse sul nodo del progetto e scegliere **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo, passa a **Visual c# / Extensibility** e selezionare **controllo della casella degli strumenti di Windows Form**  
+2.  Quando si apre il progetto, aggiungere un **il controllo della casella degli strumenti di Windows Form** modello di elemento denominato `Counter`. Nel **Esplora**del mouse sul nodo del progetto e scegliere **Aggiungi / nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo, passa alla **Visual c# / Extensibility** e selezionare **controllo della casella degli strumenti di Windows Form**  
   
 3.  Aggiunge un controllo utente, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> per posizionare il controllo nel **della casella degli strumenti**e un **Microsoft.VisualStudio.ToolboxControl** voce della risorsa nel manifesto VSIX per la distribuzione.  
   

@@ -1,26 +1,23 @@
 ---
 title: Metodi DataContext (O-R Designer) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 5eb37bd3abbf88b04bed0d382e07abe4379eb661
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 9c0eda7461ffe8f90edfb8b9ddaa10a9fa4caf3b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="datacontext-methods-or-designer"></a>Metodi DataContext (O/R Designer)
-<xref:System.Data.Linq.DataContext>metodi (nel contesto del [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) sono metodi del <xref:System.Data.Linq.DataContext> classe che eseguono stored procedure e funzioni in un database.  
+<xref:System.Data.Linq.DataContext> metodi (nel contesto del [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) sono metodi del <xref:System.Data.Linq.DataContext> (classe) che eseguono stored procedure e funzioni in un database.  
   
  La classe <xref:System.Data.Linq.DataContext> rappresenta una classe [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] che funge da canale tra un database SQL Server e le classi di entità [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] con mapping a tale database. La classe <xref:System.Data.Linq.DataContext> contiene le informazioni sulla stringa di connessione e i metodi per la connessione a un database e la modifica dei dati presenti in esso. Per impostazione predefinita, la classe <xref:System.Data.Linq.DataContext> contiene diversi metodi che è possibile chiamare, ad esempio il metodo <xref:System.Data.Linq.DataContext.SubmitChanges%2A> che invia dati aggiornati dalle classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] al database. È anche possibile creare ulteriori <xref:System.Data.Linq.DataContext> metodi con mapping a stored procedure e funzioni. In altre parole, la chiamata a questi metodi personalizzati determinerà l'esecuzione della stored procedure o funzione nel database a cui è stato eseguito il mapping del metodo <xref:System.Data.Linq.DataContext>. È possibile aggiungere nuovi metodi alla classe <xref:System.Data.Linq.DataContext> nello stesso modo in cui si aggiungono per estendere qualsiasi classe. Tuttavia, nelle discussioni sui <xref:System.Data.Linq.DataContext> metodi nel contesto del [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], è il <xref:System.Data.Linq.DataContext> metodi che eseguono il mapping a stored procedure e funzioni che intendono fondamentalmente.  
   

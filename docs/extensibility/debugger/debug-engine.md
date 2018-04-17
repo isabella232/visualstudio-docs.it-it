@@ -1,27 +1,23 @@
 ---
 title: Motore di debug | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1816d19425897a2f63fa7e5cbe30771bd5eac3d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-engine"></a>Motore di debug
 Un motore di debug (DE) funziona con l'interprete o a un sistema operativo per fornire servizi di debug, ad esempio la valutazione di espressioni, i punti di interruzione e controllo di esecuzione. La Germania è responsabile del monitoraggio dello stato di un programma in fase di debug. A tale scopo, la Germania Usa qualsiasi metodi sono disponibili per il processo di runtime supportate, se la CPU o le API fornito dal runtime.  
@@ -37,7 +33,7 @@ Un motore di debug (DE) funziona con l'interprete o a un sistema operativo per f
 > [!NOTE]
 >  Mentre sono disponibili implementazioni DE separate per Transact-SQL e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] condividono un singolo DE.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Abilita debug motori per eseguire una delle due modalità di debug: uno nello stesso processo come il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] della shell o nello stesso processo del programma di destinazione in corso il debug. Il modulo di quest'ultimo si verifica in genere quando il processo in corso il debug è effettivamente uno script in esecuzione con un interprete, e il motore di debug deve avere conoscenza approfondita dell'interprete per monitorare lo script. Si noti che in questo caso, l'interprete è effettivamente un runtime. motori di debug sono per le implementazioni specifiche di runtime. Inoltre, è possibile dividere l'implementazione di un singolo DE attraverso i limiti di processo e del computer (ad esempio, il debug remoto).  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Abilita debug motori per eseguire una delle due modalità di debug: uno nello stesso processo come il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] della shell o nello stesso processo come programma di destinazione in fase di debug. Il modulo di quest'ultimo si verifica in genere quando il processo in corso il debug è effettivamente uno script in esecuzione con un interprete, e il motore di debug deve avere conoscenza approfondita dell'interprete per monitorare lo script. Si noti che in questo caso, l'interprete è effettivamente un runtime. motori di debug sono per le implementazioni specifiche di runtime. Inoltre, è possibile dividere l'implementazione di un singolo DE attraverso i limiti di processo e del computer (ad esempio, il debug remoto).  
   
  L'oggetto espone DE la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfacce di debug. Tutte le comunicazioni sono tramite COM. Se la Germania viene caricato in-process, out-of-process o in un altro computer, non si applica la comunicazione dei componenti.  
   

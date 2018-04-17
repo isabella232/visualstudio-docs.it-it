@@ -1,11 +1,8 @@
 ---
 title: Creare e configurare gli oggetti TableAdapter | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - table adapters, creating
 - creating TableAdapters
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 3c9b501b78a82a94b81b2a29c86fd07a7a0d7f98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4cfc4815a61a6a15d6a5eef6a8efc3502bef7a73
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare gli oggetti TableAdapter
 Gli oggetti TableAdapter forniscono la comunicazione tra l'applicazione e un database. Connessione al database, eseguire query o stored procedure e restituiscono i dati di tabella o di riempimento esistente <xref:System.Data.DataTable> con i dati restituiti. Gli oggetti TableAdapter anche inviare i dati aggiornati dall'applicazione al database.  
@@ -89,9 +86,9 @@ Nell'esempio seguente viene illustrato come chiamare un'altra query denominata `
   
 4.  Nel **scegliere un tipo di comando** selezionare uno dei seguenti metodi di recupero dei dati dal database:  
   
-    -   **Utilizzare le istruzioni SQL** consente di digitare un'istruzione SQL per selezionare i dati dal database.  
+    -   **Usa istruzioni SQL** consente di digitare un'istruzione SQL per selezionare i dati dal database.  
   
-    -   **Creare una nuova stored procedure** Abilita per la creazione guidata crei una nuova stored procedure (database) in base all'istruzione SELECT specificata.  
+    -   **Creare nuove stored procedure** Abilita per la creazione guidata crei una nuova stored procedure (database) in base alle istruzioni SELECT specificate.  
   
     -   **Usa stored procedure esistenti** consente di eseguire una stored procedure esistente quando si esegue la query.  
   
@@ -104,7 +101,7 @@ Nell'esempio seguente viene illustrato come chiamare un'altra query denominata `
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Per aggiungere una query globale a un oggetto TableAdapter  
   
--   *Query globali* query SQL che restituiscono un singolo valore (scalare) o nessun valore. Funzioni globali in genere, eseguono le operazioni di database, ad esempio inserimenti, aggiornamenti, Elimina. Sono inoltre di aggregare informazioni, ad esempio un numero di clienti in una tabella o il costo totale di tutti gli elementi in un ordine particolare.  
+-   *Query globali* sono query SQL che restituiscono un singolo valore (scalare) o nessun valore. Funzioni globali in genere, eseguono le operazioni di database, ad esempio inserimenti, aggiornamenti, Elimina. Sono inoltre di aggregare informazioni, ad esempio un numero di clienti in una tabella o il costo totale di tutti gli elementi in un ordine particolare.  
   
      Per aggiungere query globali trascinando un **Query** dell'oggetto dal **set di dati** scheda della finestra il **della casella degli strumenti** in un'area vuota del **Progettazione Dataset**.  
   

@@ -1,23 +1,21 @@
 ---
 title: Diagnosticare i problemi dopo la distribuzione | Documenti Microsoft
-ms.custom: 
-ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.custom: ''
+ms.date: 04/10/2018
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
-caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc5ffb60e10f28fc33654a78f3f8486e42a2ed85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnosticare i problemi dopo la distribuzione
 Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando IntelliTrace, includere le informazioni di compilazione nella versione per consentire a Visual Studio di trovare automaticamente i file di origine corretti e i file di simboli necessari per il debug del log IntelliTrace.  
@@ -34,18 +32,14 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 -   Visual Studio Enterprise (ma non edizioni Professional o Community) per esaminare i dati diagnostici ed eseguire il debug del codice con IntelliTrace  
 
-##  <a name="SetUpBuild"></a>Passaggio 1: Includere informazioni di versione di compilazione  
+##  <a name="SetUpBuild"></a> Passaggio 1: Includere informazioni con il rilascio di compilazione  
  Configurare il processo di compilazione per creare un manifesto di compilazione (file BuildInfo.config) per il progetto Web e includere il manifesto nella versione. Il manifesto contiene informazioni relative al progetto, al controllo del codice sorgente e al sistema di compilazione usati per creare una specifica build. Con queste informazioni, è possibile trovare tramite Visual Studio l'origine e i simboli corrispondenti, dopo aver aperto il log IntelliTrace per esaminare gli eventi registrati.  
 
-###  <a name="AutomatedBuild"></a>Creare il manifesto di compilazione per una compilazione automatica con Team Foundation Server  
-
- Seguire questi passaggi se si usa il controllo della versione di Team Foundation o Git.
-  
- **Passaggio 2:** [Passaggio 2: Release your app](#DeployRelease)  
+###  <a name="AutomatedBuild"></a> Creare il manifesto di compilazione per una compilazione automatica con Team Foundation Server  
   
  Seguire questi passaggi se si usa il controllo della versione di Team Foundation o Git.  
  
- ####  <a name="TFS2017"></a>2017 di Team Foundation Server
+ ####  <a name="TFS2017"></a> 2017 di Team Foundation Server
 
  Configurare la definizione di compilazione per aggiungere le posizioni di origine, compilazione e simboli al manifesto di compilazione (file BuildInfo.config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.
   
@@ -72,8 +66,10 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
      Chiunque possa aver accesso al server Web può visualizzare questi percorsi nel manifesto di compilazione. Assicurarsi che il server di origine sia sicuro.
   
 6.  Eseguire una nuova compilazione.  
+  
+    Passare a [passaggio 2: rilasciare l'app](#DeployRelease)  
 
-####  <a name="TFS2013"></a>Team Foundation Server 2013  
+####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Configurare la definizione di compilazione per aggiungere le posizioni di origine, compilazione e simboli al manifesto di compilazione (file BuildInfo.config). Team Foundation Build crea automaticamente questo file e lo inserisce nella cartella di output del progetto.  
 
 1.  [Modificare la definizione di compilazione o creare una nuova definizione di compilazione.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -116,9 +112,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 6.  Eseguire una nuova compilazione.  
 
- **Passaggio 2:** [Passaggio 2: Release your app](#DeployRelease)  
+    Passare a [passaggio 2: rilasciare l'app](#DeployRelease)  
 
-####  <a name="TFS2012_2010"></a>Team Foundation Server 2012 o 2010  
+####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 o 2010  
  Seguire questi passaggi per creare automaticamente il manifesto di compilazione (file BuildInfo.config) per il progetto e inserire il file nella cartella di output del progetto. Il file viene visualizzato come "*ProjectName*.BuildInfo.config" nella cartella di output ma viene rinominato "BuildInfo.config" nella cartella di distribuzione dopo la pubblicazione dell'applicazione.  
 
 1.  Installare Visual Studio 2013 (qualsiasi edizione) nel server Team Foundation Build.  
@@ -141,9 +137,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 4.  Eseguire una nuova compilazione.  
 
- **Passaggio 2:** [Passaggio 2: Release your app](#DeployRelease)  
+    Passare a [passaggio 2: rilasciare l'app](#DeployRelease)  
 
-###  <a name="ManualBuild"></a>Creare il manifesto di compilazione per una compilazione manuale usando Visual Studio  
+###  <a name="ManualBuild"></a> Creare il manifesto di compilazione per una compilazione manuale usando Visual Studio  
  Seguire questi passaggi per creare automaticamente il manifesto di compilazione (file BuildInfo.config) per il progetto e inserire il file nella cartella di output del progetto. Il file viene visualizzato come "*ProjectName*.BuildInfo.config" nella cartella di output ma viene rinominato "BuildInfo.config" nella cartella di distribuzione dopo la pubblicazione dell'applicazione.  
 
 1.  Scaricare il progetto Web in **Esplora soluzioni**.  
@@ -168,9 +164,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 4.  Eseguire una nuova compilazione.  
 
- **Passaggio 2:** [Passaggio 2: Release your app](#DeployRelease)  
+    Passare a [passaggio 2: rilasciare l'app](#DeployRelease)  
 
-###  <a name="MSBuild"></a>Creare il manifesto di compilazione per una compilazione manuale con MSBuild.exe  
+###  <a name="MSBuild"></a> Creare il manifesto di compilazione per una compilazione manuale usando MSBuild.exe  
  Aggiungere gli argomenti di compilazione quando si eseguirà una compilazione:  
 
  **/p:GenerateBuildInfoConfigFile = true**  
@@ -179,7 +175,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
  **/p: buildsymbolstorepath =**\<*percorso dei simboli*>  
 
-##  <a name="DeployRelease"></a>Passaggio 2: Rilasciare l'app  
+##  <a name="DeployRelease"></a> Passaggio 2: Rilasciare l'app  
  Se si usa il [pacchetto Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) creato dal processo di compilazione per distribuire l'applicazione, il manifesto di compilazione viene rinominato automaticamente da "*NomeProgetto*.BuildInfo.config" a "BuildInfo.config" e viene inserito nella stessa cartella del file Web.config dell'applicazione, nel server Web.  
 
  Se vengono usati altri metodi per distribuire l'applicazione, assicurarsi che il manifesto di compilazione sia rinominato da "*ProjectName*.BuildInfo.config" a "BuildInfo.config" inserito nella stessa cartella del file Web.config dell'applicazione, nel server Web.  
@@ -187,7 +183,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 ## <a name="step-3-monitor-your-app"></a>Passaggio 3: Monitorare l'applicazione  
  Impostare il monitoraggio delle prestazioni dell'applicazione sul server Web in modo tale da poter monitorare l'insorgere di problemi nell'applicazione, registrare eventi diagnostici e salvare tali eventi nel file di log IntelliTrace. Vedere [monitorare la versione per i problemi di distribuzione](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a>Passaggio 4: Individuare il problema  
+##  <a name="InvestigateEvents"></a> Passaggio 4: Individuare il problema  
  È necessario che sia presente Visual Studio Enterprise nel computer di sviluppo o in un altro computer per esaminare gli eventi registrati ed eseguire il debug del codice con IntelliTrace. È inoltre possibile usare strumenti come CodeLens, mappe del debugger e mappe del codice per diagnosticare il problema.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Aprire il log IntelliTrace e la soluzione corrispondente  
@@ -200,19 +196,19 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      Prima di apportare modifiche, verificare di disporre dell'origine corretta. Se si usano i rami, è possibile che il ramo su cui si sta lavorando sia diverso rispetto a quello in cui Visual Studio cerca l'origine corrispondente, ad esempio il ramo della versione.  
 
-     ![Aprire una soluzione dal log di IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
+     ![Apri soluzione dal log di IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
 
      Se è presente un'area di lavoro mappata per questa soluzione o questo progetto, Visual Studio la seleziona per inserirvi l'origine trovata.  
 
-     ![Apri dal controllo del codice sorgente per l'area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
+     ![Apri dal controllo del codice sorgente per area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
 
      In caso contrario, scegliere un'altra area di lavoro già mappata o crearne una nuova. Visual Studio esegue il mapping dell'intero ramo a quest'area di lavoro.  
 
-     ![Apri dal controllo del codice sorgente &#45; creare una nuova area di lavoro](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Apri dal controllo del codice sorgente &#45; Crea nuova area di lavoro](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
 
      Per creare un'area di lavoro con mapping specifici o un nome diverso dal nome del computer, scegliere **Gestisci**.  
 
-     [D: perché Visual Studio pronunciare che l'area di lavoro selezionata è inadatta?](#IneligibleWorkspace)  
+     [D: perché Visual Studio ad che area di lavoro selezionata è inadatta?](#IneligibleWorkspace)  
 
      [D: perché non è possibile continuare finché non si sceglie una raccolta team o una raccolta diversa?](#ChooseTeamProject)  
 
@@ -220,7 +216,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 1.  In **Violazioni prestazioni**esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.  
 
-     ![Visualizzare i dettagli degli eventi prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Visualizzare i dettagli evento prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
 
      È inoltre sufficiente fare doppio clic sull'evento.  
 
@@ -236,9 +232,9 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      Se il metodo è incluso nel codice dell'applicazione, Visual Studio passa a tale metodo.  
 
-     ![Passare al codice dell'applicazione dall'evento di prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Passare al codice dell'applicazione dall'evento prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni. [Che cos'è tutti gli altri eventi e informazioni riportati nel log IntelliTrace? ](../debugger/using-saved-intellitrace-data.md) [Quali altre operazioni posso eseguire da?](#WhatElse) [Ulteriori informazioni sugli eventi delle prestazioni?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni. [Che cos'è tutti gli altri eventi e informazioni riportati nel log IntelliTrace? ](../debugger/using-saved-intellitrace-data.md) [Quali altre operazioni posso eseguire da?](#WhatElse) [Desiderano altre informazioni sugli eventi delle prestazioni?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
 
 ### <a name="diagnose-an-exception"></a>Diagnosticare un'eccezione  
 
@@ -254,13 +250,13 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      È possibile esaminare altri valori registrati, lo stack di chiamate o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri eventi registrati](../debugger/intellitrace.md), il codice correlato e i valori registrati in questi specifici momenti. [Che cos'è tutti gli altri eventi e informazioni riportati nel log IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a>Quali altre operazioni posso eseguire da qui?  
+###  <a name="WhatElse"></a> Quali altre operazioni posso eseguire da qui?  
 
 -   [Ottenere altre informazioni su questo codice](../ide/find-code-changes-and-other-history-with-codelens.md). Per trovare riferimenti a questo codice, la cronologia delle modifiche, bug correlato, gli elementi di lavoro, revisioni del codice o unit test - all senza uscire dall'editor - usare gli indicatori di CodeLens nell'editor.  
 
-     ![CodeLens &#45; Visualizzare riferimenti a questo codice](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens &#45; visualizzare riferimenti a questo codice](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
-     ![CodeLens &#45; Visualizzazione cronologia delle modifiche per questo codice](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![CodeLens &#45; Visualizza cronologia delle modifiche per questo codice](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
 -   [Eseguire il mapping della posizione nel codice durante il debug.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Per rilevare visivamente i metodi chiamati durante la sessione di debug, eseguire il mapping dello stack di chiamate.  
 
@@ -268,12 +264,12 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
 ###  <a name="FAQ"></a> Domande e risposte  
 
-####  <a name="WhyInclude"></a>D: perché includono le informazioni sul progetto, il controllo del codice sorgente, la compilazione e simboli con il rilascio?  
+####  <a name="WhyInclude"></a> D: perché includono le informazioni sul mio progetto, controllo del codice sorgente, compilazione e simboli con il rilascio?  
  Visual Studio usa queste informazioni per trovare la soluzione e l'origine corrispondenti alla versione su cui si sta eseguendo il debug. Dopo aver aperto il log IntelliTrace e aver selezionato un evento per avviare il debug, Visual Studio usa simboli per trovare e visualizzare il codice dove si è verificato l'evento. È quindi possibile esaminare i valori registrati e spostarsi in avanti o indietro nell'esecuzione del codice.  
 
  Se si usa TFS e queste informazioni non sono nel manifesto di compilazione (file Buildinfo config), Visual Studio cerca l'origine corrispondente e ai simboli del TFS attualmente connesso. Se Visual Studio non trova il TFS corretto o l'origine corrispondente, verrà richiesto di scegliere un altro TFS.  
 
-####  <a name="InvalidConfigFile"></a>D: lo log IntelliTrace mancano le informazioni sull'applicazione distribuita. Per quale motivo? Che cosa si può fare?  
+####  <a name="InvalidConfigFile"></a> D: lo log IntelliTrace mancano le informazioni sull'applicazione distribuita. Per quale motivo? Che cosa si può fare?  
  Questo può verificarsi quando la distribuzione viene effettuata dal computer di sviluppo oppure non si è connessi a TFS durante la distribuzione.  
 
 1.  Passare alla cartella di distribuzione del progetto.  
@@ -290,7 +286,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
     ```  
 
--   **Proprietà SourceControl è riuscita**  
+-   **Dissociazione**  
 
 -   Le informazioni sul sistema di controllo del codice sorgente e queste proprietà richieste:  
 
@@ -377,12 +373,12 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a>D: perché Visual Studio pronunciare che l'area di lavoro selezionata è inadatta?  
+####  <a name="IneligibleWorkspace"></a> D: perché Visual Studio ad che area di lavoro selezionata è inadatta?  
  **R:** L'area di lavoro selezionata non include mapping tra la cartella del controllo del codice sorgente e una cartella locale. Per creare un mapping per questa area di lavoro, scegliere **Gestisci**. In caso contrario, scegliere un'area di lavoro già mappata o creare una nuova area di lavoro.  
 
  ![Apri dal controllo del codice sorgente con alcuna area di lavoro mappata](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a>D: perché non è possibile continuare finché non si sceglie una raccolta team o una raccolta diversa?  
+####  <a name="ChooseTeamProject"></a> D: perché non è possibile continuare finché non si sceglie una raccolta team o una raccolta diversa?  
  **R:** Questo può verificarsi per uno qualsiasi dei seguenti motivi:  
 
 -   Visual Studio non è connesso a TFS.  
@@ -397,12 +393,12 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
 
      È possibile che il TFS specificato non disponga più dell'origine corrispondente o non esista più, probabilmente perché è stata eseguita la migrazione a un nuovo TFS. Se il TFS specificato non esiste, è possibile che si verifichi il timeout di Visual Studio dopo circa un minuto e viene quindi richiesto di connettersi a una raccolta diversa. Per continuare, connettersi al server TFS corretto.  
 
-     ![Apri dal controllo del codice sorgente &#45; eseguire la migrazione](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Apri dal controllo del codice sorgente &#45; migrate](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
-####  <a name="WhatWorkspace"></a>D: che cos'è un'area di lavoro?  
- **R:** il [dell'area di lavoro viene memorizzata una copia dell'origine](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) in modo da consentire di svilupparla prima di archiviare il lavoro. Se non è già presente un'area di lavoro mappata specificatamente alla soluzione o al progetto trovato, in Visual Studio viene richiesto di scegliere un'area di lavoro disponibile oppure di crearne una nuova con il nome del computer in uso come nome predefinito dell'area di lavoro.  
+####  <a name="WhatWorkspace"></a> D: che cos'è un'area di lavoro?  
+ **R:** il [area di lavoro archivia una copia dell'origine](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) , pertanto è possibile sviluppare e svilupparla prima di archiviare il lavoro. Se non è già presente un'area di lavoro mappata specificatamente alla soluzione o al progetto trovato, in Visual Studio viene richiesto di scegliere un'area di lavoro disponibile oppure di crearne una nuova con il nome del computer in uso come nome predefinito dell'area di lavoro.  
 
-####  <a name="UntrustedSymbols"></a>D: perché è si ottiene questo messaggio sui simboli non attendibili?  
+####  <a name="UntrustedSymbols"></a> D: perché viene visualizzato questo messaggio sui simboli non attendibili?  
  ![Eseguire il debug con percorso simboli non attendibili? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
- **R:** questo messaggio viene visualizzato quando il percorso dei simboli nel file manifesto di compilazione (\<*ProjectName*>. Buildinfo) non è incluso nell'elenco dei percorsi dei simboli attendibili. È possibile aggiungere il percorso dell'elenco di percorsi di simboli nelle opzioni del debugger.
+ **R:** questo messaggio viene visualizzato quando il percorso dei simboli nel file manifesto di compilazione (\<*ProjectName*>. Buildinfo. config) non è incluso nell'elenco dei percorsi dei simboli attendibili. È possibile aggiungere il percorso dell'elenco di percorsi di simboli nelle opzioni del debugger.

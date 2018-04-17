@@ -1,13 +1,10 @@
 ---
 title: '&lt;dipendenza&gt; elemento (distribuzione di ClickOnce) | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +23,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dipendenza&gt; elemento (distribuzione di ClickOnce)
 Identifica la versione dell'applicazione da installare e il percorso del manifesto dell'applicazione.  
@@ -98,7 +94,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Identifica il nome dell'applicazione.|  
-|`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione, nel formato seguente:`major.minor.build.revision`|  
+|`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione, nel formato seguente: `major.minor.build.revision`|  
 |`publicKeyToken`|Obbligatorio. Specifica una stringa esadecimale a 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica utilizzata per firmare l'assembly. La chiave pubblica utilizzata per firmare deve essere 2048 bit o superiore.|  
 |`processorArchitecture`|Obbligatorio. Specifica il microprocessore. I valori validi sono `x86` per Windows a 32 bit e `IA64` per Windows a 64 bit.|  
 |`Language`|Facoltativo. Identifica i codici di lingua di due parti dell'assembly. Ad esempio EN-US, che è l'acronimo per inglese (Stati Uniti). Il valore predefinito è `neutral`. Questo elemento è presente il `asmv2` dello spazio dei nomi.|  
@@ -107,7 +103,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 ## <a name="hash"></a>hash  
  Il `hash` elemento è un elemento figlio facoltativo del `file` elemento. Il `hash` elemento non ha attributi.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utilizza un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza per verificare che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non viene incluso, questo controllo non verrà eseguito. Pertanto, omettendo il `hash` elemento non è consigliato.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza per verificare che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non viene incluso, questo controllo non verrà eseguito. Pertanto, omettendo il `hash` elemento non è consigliato.  
   
 ## <a name="dsigtransforms"></a>dsig: Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:Transforms` elemento non ha attributi.  

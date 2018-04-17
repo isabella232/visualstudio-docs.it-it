@@ -1,12 +1,10 @@
 ---
 title: 'CA1060: Spostare P-richiama nella classe NativeMethods | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
 ms.assetid: 06686c8c-6ad3-42f7-a355-cbaefa347cfc
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7805710c61e6a9fcf4ede2ebcbf69589b53141f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 59be117e656ee0a0829a3e7fb2f9e3eb79afbec6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Spostare i P/Invoke nella classe NativeMethods
 |||  
 |-|-|  
 |TypeName|MovePInvokesToNativeMethodsClass|  
 |CheckId|CA1060|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
 -   **NativeMethods** -questa classe non elimina i percorsi stack per l'autorizzazione per codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> non deve essere applicata a questa classe.) Questa classe è per i metodi che possono essere utilizzati ovunque, perché verrà eseguita un'analisi dello stack.  
   
--   **SafeNativeMethods** -questa classe Elimina percorsi stack per l'autorizzazione per codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicato a questa classe.) Questa classe è per i metodi che sono sicuri per tutti gli utenti di chiamare. I chiamanti di questi metodi non è necessario eseguire una revisione di sicurezza avanzata per assicurarsi che l'utilizzo sia sicuro perché i metodi sono innocui per qualsiasi chiamante.  
+-   **SafeNativeMethods** -questa classe evita la visualizzazione dello stack per l'autorizzazione per codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicato a questa classe.) Questa classe è per i metodi che sono sicuri per tutti gli utenti di chiamare. I chiamanti di questi metodi non è necessario eseguire una revisione di sicurezza avanzata per assicurarsi che l'utilizzo sia sicuro perché i metodi sono innocui per qualsiasi chiamante.  
   
--   **UnsafeNativeMethods** -questa classe Elimina percorsi stack per l'autorizzazione per codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicato a questa classe.) Questa classe è per i metodi potenzialmente pericolosi. Qualsiasi chiamante di questi metodi è necessario eseguire una revisione di sicurezza avanzata per assicurarsi che l'utilizzo sia sicuro perché verrà eseguito alcun percorso stack.  
+-   **UnsafeNativeMethods** -questa classe evita la visualizzazione dello stack per l'autorizzazione per codice non gestito. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> viene applicato a questa classe.) Questa classe è per i metodi potenzialmente pericolosi. Qualsiasi chiamante di questi metodi è necessario eseguire una revisione di sicurezza avanzata per assicurarsi che l'utilizzo sia sicuro perché verrà eseguito alcun percorso stack.  
   
  Queste classi vengono dichiarate come `internal` (`Friend`, in Visual Basic) e si dichiara un costruttore privato per impedire la creazione di nuove istanze. I metodi delle classi devono essere `static` e `internal` (`Shared` e `Friend` in Visual Basic).  
   

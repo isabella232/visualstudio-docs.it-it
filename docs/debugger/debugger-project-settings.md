@@ -1,12 +1,10 @@
 ---
 title: Impostazioni di progetto correlate al debugger | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - project settings, debugger
 - debugging [Visual Studio], project settings
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
-caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: aa3a216f8f7bdcaebfae617ae345ee1a7ee42293
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugger-project-settings"></a>Impostazioni di progetto correlate al debugger
 Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste impostazioni vengono definiti determinati aspetti del processo di debug, ad esempio le directory esaminate dal debugger, il comando e i relativi argomenti utilizzati per l'avvio del programma e il tipo di informazioni di debug create per il programma. Per modificare le impostazioni, è possibile utilizzare la finestra di dialogo **Pagine delle proprietà** .  

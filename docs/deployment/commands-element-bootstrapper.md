@@ -1,13 +1,10 @@
 ---
-title: '&lt;Comandi&gt; elemento (programma di avvio automatico) | Documenti Microsoft'
-ms.custom: 
+title: '&lt;I comandi&gt; elemento (programma di avvio automatico) | Documenti Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,19 +13,18 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandi&gt; elemento (programma di avvio automatico)
+# <a name="ltcommandsgt-element-bootstrapper"></a>&lt;I comandi&gt; elemento (programma di avvio automatico)
 Il `Commands` elemento implementa test descritti dagli elementi di sotto di `InstallChecks` elemento e dichiara il pacchetto di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programma di avvio automatico deve installare se il test ha esito negativo.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -96,7 +92,7 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto di `Ins
 ## <a name="bypassif"></a>BypassIf  
  Il `BypassIf` è un elemento figlio del `InstallConditions` elemento e descrive una condizione positiva in base alle quali non deve essere eseguito il comando. Ogni `InstallConditions` elemento può contenere zero o più `BypassIf` elementi.  
   
- `BypassIf`presenta gli attributi seguenti.  
+ `BypassIf` presenta i seguenti attributi.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto di `Ins
 ## <a name="failif"></a>FailIf  
  Il `FailIf` è un elemento figlio del `InstallConditions` elemento e descrive una condizione positiva in base alle quali è necessario interrompere l'installazione. Ogni `InstallConditions` elemento può contenere zero o più `FailIf` elementi.  
   
- `FailIf`presenta gli attributi seguenti.  
+ `FailIf` presenta i seguenti attributi.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -119,10 +115,10 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto di `Ins
 |`Schedule`|Facoltativo. Il nome di un `Schedule` tag che definisce quando è necessario valutare questa regola.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- Il `ExitCodes` è un elemento figlio del `Command` elemento. Il `ExitCodes` elemento contiene uno o più `ExitCode` elementi, che determinano quali operazioni è necessario eseguire l'installazione in risposta a un codice di uscita da un pacchetto. Può essere presente un parametro facoltativo `ExitCode` elemento sotto un `Command` elemento. `ExitCodes`non ha attributi.  
+ Il `ExitCodes` è un elemento figlio del `Command` elemento. Il `ExitCodes` elemento contiene uno o più `ExitCode` elementi, che determinano quali operazioni è necessario eseguire l'installazione in risposta a un codice di uscita da un pacchetto. Può essere presente un parametro facoltativo `ExitCode` elemento sotto un `Command` elemento. `ExitCodes` Non ha attributi.  
   
 ## <a name="exitcode"></a>Codice di uscita  
- Il `ExitCode` è un elemento figlio del `ExitCodes` elemento. Il `ExitCode` elemento determina operazioni in risposta a un codice di uscita da un pacchetto di installazione. `ExitCode`non contiene elementi figlio e gli attributi seguenti.  
+ Il `ExitCode` è un elemento figlio del `ExitCodes` elemento. Il `ExitCode` elemento determina operazioni in risposta a un codice di uscita da un pacchetto di installazione. `ExitCode` non contiene elementi figlio e presenta i seguenti attributi.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -210,5 +206,5 @@ Il `Commands` elemento implementa test descritti dagli elementi di sotto di `Ins
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Prodotti e i riferimenti allo Schema di pacchetto](../deployment/product-and-package-schema-reference.md)   
+ [Riferimenti dello Schema di pacchetto e prodotto](../deployment/product-and-package-schema-reference.md)   
  [\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)

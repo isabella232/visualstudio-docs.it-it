@@ -1,12 +1,10 @@
 ---
 title: 'CA1709: Gli identificatori devono essere digitati correttamente | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA1709
 - IdentifiersShouldBeCasedCorrectly
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f563ca87212b6f4af45f68987469b0c1370a7a18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c010019c2ae5d1044d11c02c22428dda4197fcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldBeCasedCorrectly|  
 |CheckId|CA1709|  
-|Category|Microsoft. naming|  
+|Category|Microsoft.Naming|  
 |Modifica importante|Sostanziale - Quando generato su assembly, spazi dei nomi, tipi, membri e parametri.<br /><br /> Non sostanziale - Quando generato su parametri di tipo generico.|  
   
 ## <a name="cause"></a>Causa  
@@ -61,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  È possibile eliminare questo avviso se si dispone di convenzioni di denominazione personalizzate o se l'identificatore rappresenta un nome appropriato, ad esempio, il nome di una società o una tecnologia.  
   
- È anche possibile aggiungere termini specifici e le abbreviazioni gli acronimi che a un dizionario personalizzato di analisi codice. Termini specificati nel dizionario personalizzato non provocheranno violazioni di questa regola. Per ulteriori informazioni, vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ È anche possibile aggiungere termini specifici e le abbreviazioni gli acronimi che a un dizionario personalizzato di analisi codice. Termini specificati nel dizionario personalizzato non provocheranno violazioni di questa regola. Per altre informazioni, vedere [procedura: personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Regole correlate  
  [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

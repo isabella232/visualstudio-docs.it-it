@@ -1,13 +1,10 @@
 ---
 title: Tecniche di debug MFC | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -26,17 +23,16 @@ dev_langs:
 helpviewer_keywords:
 - debugging [MFC]
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f7f0dd5511640fe9ebb95dbdfb213ce7f37f6c8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.  
@@ -476,7 +472,7 @@ pMyPerson->Dump( afxDump );
   
     4.  Nella finestra di dialogo **Pagine delle proprietà** , sotto la cartella **Impostazioni di configurazione** , aprire la cartella **C/C++** , quindi selezionare la categoria **Generale** .  
   
-    5.  Nella griglia delle proprietà, è possibile trovare **formato informazioni di Debug.**  
+    5.  Nella griglia delle proprietà, trovare **formato informazioni di Debug.**  
   
     6.  Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.  
   

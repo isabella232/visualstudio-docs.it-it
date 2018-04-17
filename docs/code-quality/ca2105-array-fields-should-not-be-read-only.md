@@ -1,12 +1,10 @@
 ---
 title: 'CA2105: I campi di matrici non devono essere lettura solo | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2105
 - ArrayFieldsShouldNotBeReadOnly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ArrayFieldsShouldNotBeReadOnly
 - CA2105
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c791bfaa652570767a5ea0f3fa351b1b3b88b068
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4091586091fd5a71d7bba09617d851642fe3f9e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: I campi di matrici non devono essere di sola lettura
 |||  
@@ -67,7 +65,7 @@ ms.lasthandoff: 12/22/2017
   
  L'output di questo esempio è:  
   
- **Prima di manomissione: voti: 90, 90, 90 gradi privato: 90, 90, 90 gradi Secure, 90, 90, 90**  
+ **Prima di eventuali manomissioni: voti: 90, 90, 90 gradi privato: 90, 90, 90 gradi Secure, 90, 90, 90**  
 **Dopo la manomissione: voti: 90, 555, 90 gradi privato: 90, 555, 90 gradi Secure, 90, 90, 90**   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Array?displayProperty=fullName>   

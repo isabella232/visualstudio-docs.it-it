@@ -1,13 +1,10 @@
 ---
 title: Utilizzo di dati di IntelliTrace salvato | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.  
@@ -104,7 +100,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 1.  In **Violazioni prestazioni**esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.  
   
-     ![Visualizzare i dettagli degli eventi prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Visualizzare i dettagli evento prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      È inoltre sufficiente fare doppio clic sull'evento.  
   
@@ -124,7 +120,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
      Se il metodo è incluso nel codice dell'applicazione, Visual Studio passa a tale metodo.  
   
-     ![Passare al codice dell'applicazione dall'evento di prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Passare al codice dell'applicazione dall'evento prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni.  
   
@@ -167,11 +163,11 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
      Ad esempio:  
   
-     ![IntelliTrace &#45; Errore di SharePoint &#45; ID di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; errore di SharePoint &#45; ID di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.  
   
-     ![Log di IntelliTrace &#45; Immettere l'ID di correlazione SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![Log IntelliTrace &#45; ID di correlazione SharePoint immettere](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  In **Eventi richiesta**esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.  
   
@@ -179,7 +175,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
     2.  Scegliere **Avvia debug** per avviare il debug nel punto in cui si è verificato l'evento.  
   
-     ![File di log IntelliTrace &#45; Visualizzazione richiesta web &#43; eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![File di log IntelliTrace &#45; visualizzazione richiesta web &#43; gli eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  È possibile visualizzare questi tipi di eventi SharePoint insieme agli eventi IntelliTrace:  
   
@@ -209,7 +205,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 3.  Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.  
   
-     ![Log di IntelliTrace &#45; Le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![Log IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  Per una procedura dettagliata, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
@@ -277,4 +273,4 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Materiale sussidiario  
- [Test per il recapito continuo con Visual Studio 2012 - capitolo 6: una casella degli strumenti di test](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Test per il recapito continuo con Visual Studio 2012 - capitolo 6: un test della casella degli strumenti](http://go.microsoft.com/fwlink/?LinkID=255203)

@@ -1,12 +1,10 @@
 ---
 title: Le impostazioni per le configurazioni di Debug c# del progetto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per le configurazioni di debug C#
 È possibile modificare le impostazioni di progetto per una configurazione di debug c# nella **pagine delle proprietà** finestra, come descritto in [configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). Le tabelle seguenti illustrano la posizione in cui sono disponibili le impostazioni correlate al debugger il **pagine delle proprietà** finestra.  
@@ -37,7 +35,7 @@ ms.lasthandoff: 01/19/2018
 > [!WARNING]
 >  Questo argomento non si applica alle app UWP. Vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>Scheda Debug  
+##  <a name="BKMK_Debug_tab"></a> Scheda Debug  
   
 |**Impostazione**|**Descrizione**|  
 |-----------------|---------------------|  
@@ -49,7 +47,7 @@ ms.lasthandoff: 01/19/2018
 |**Abilita debug codice non gestito**|Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso.|  
 |**Abilita debug SQL Server**|Consente di eseguire il debug di oggetti di database di SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a>Scheda Compila  
+##  <a name="BKMK_Build_tab"></a> Scheda Compila  
   
 |Impostazione|Descrizione|  
 |-------------|-----------------|  

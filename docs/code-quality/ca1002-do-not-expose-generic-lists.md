@@ -1,12 +1,10 @@
 ---
 title: 'CA1002: Non esporre elenchi generici | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotExposeGenericLists
 - CA1002
@@ -14,30 +12,30 @@ helpviewer_keywords:
 - CA1002
 - DoNotExposeGenericLists
 ms.assetid: 5caac810-1a79-47df-a27b-c46c5040bf34
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d98b088b663eca89b04ea264a582a062d324a473
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9aa12ea2d611d2e60e46665368b668e9c578db5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Non esporre elenchi generici
 |||  
 |-|-|  
 |TypeName|DoNotExposeGenericLists|  
 |CheckId|CA1002|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
  Un tipo contiene un membro visibile esternamente è un <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo, restituisce un <xref:System.Collections.Generic.List%601?displayProperty=fullName> tipo o la cui firma include un <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametro.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>è una raccolta generica progettata per prestazioni e non per l'ereditarietà. <xref:System.Collections.Generic.List%601?displayProperty=fullName>non contiene membri virtuali che rendono più semplice modificare il comportamento di una classe ereditata. Le seguenti raccolte generiche sono progettate per l'ereditarietà e devono essere esposti anziché <xref:System.Collections.Generic.List%601?displayProperty=fullName>.  
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> è una raccolta generica progettata per prestazioni e non per l'ereditarietà. <xref:System.Collections.Generic.List%601?displayProperty=fullName> non contiene membri virtuali che rendono più semplice modificare il comportamento di una classe ereditata. Le seguenti raccolte generiche sono progettate per l'ereditarietà e devono essere esposti anziché <xref:System.Collections.Generic.List%601?displayProperty=fullName>.  
   
 -   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>  
   

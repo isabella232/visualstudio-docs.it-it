@@ -1,27 +1,23 @@
 ---
 title: Stack di chiamate eventi di grafica | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89e426c24f1f32161307d573c1ab06cdf459b1d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73dcda2cf0a6d3f565f8d7a282788b5861ebc218
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi grafici
 Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio consente di mappare la relazione tra gli eventi di grafica problematici e il codice sorgente dell'app.  
@@ -42,7 +38,7 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
 |------------|-----------------|  
 |**Name**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
 |**File**|Nome del file di codice sorgente o di libreria contenente il sito di chiamata.|  
-|**Percorso**|Numero di riga del sito di chiamata.|  
+|**Posizione**|Numero di riga del sito di chiamata.|  
   
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici  
  Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Il **Stack di chiamate eventi di grafica** finestra vengono forniti collegamenti a queste informazioni.  

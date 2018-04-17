@@ -1,12 +1,10 @@
 ---
 title: Distribuzione ClickOnce in Windows Vista | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - manifest generation
 - Windows, ClickOnce deployment
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 49ea73293e8cc491b515644a7e7d3f226a799339
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cbe7e05162977daf1e19df6bf1de7402a6163785
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Distribuzione ClickOnce in Windows Vista
 Compilazione di applicazioni in Visual Studio per controllo Account utente (UAC) in Windows Vista genera normalmente un manifesto incorporato, come dati binari con codifica XML nel file eseguibile dell'applicazione. Poiché le applicazioni ClickOnce e COM senza registrazione richiedono un manifesto esterno, Visual Studio genera un file per questi tipi di progetti che contiene i dati di controllo dell'account utente invece di un manifesto incorporato. Per impostazione predefinita, Visual Studio Usa le informazioni da un file denominato app. manifest per generare informazioni del manifesto UAC esterno (per la distribuzione ClickOnce e COM senza registrazione) o per incorporarlo nel file eseguibile dell'applicazione (per tutti gli altri casi). Visual Studio fornisce le seguenti opzioni per la generazione del manifesto:  

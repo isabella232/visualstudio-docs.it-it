@@ -1,13 +1,10 @@
 ---
 title: Scrittura di funzioni Hook di debug | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - hooks
 - debugging [CRT], debug hook functions
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5071e2fd7c8114cb13697eef4a4ddfa32d95718
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 788f340d72bfea0f3ee1dbdd38dc939d7bb374ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-hook-function-writing"></a>Scrittura di funzioni hook di debug
 In questa sezione vengono descritte alcune funzioni hook di debug personalizzate che consentono di inserire il codice in alcuni punti predefiniti nell'ambito della normale elaborazione del debugger.  

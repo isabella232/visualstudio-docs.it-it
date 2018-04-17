@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: creare un manifesto del prodotto | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, custom bootstrapper package
 - dependencies, custom bootstrapper package
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 071bfa46df7e11f760bc32cda0a732388835d2d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 116a54bae39738f95503ae9ca6e6cbac45c2db47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ciascuna lingua. Il manifesto del pacchetto contiene gli aspetti specifici di localizzazione del pacchetto. Ciò include stringhe, i contratti di licenza dell'utente finale e i language pack.  

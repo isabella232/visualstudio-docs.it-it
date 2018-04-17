@@ -1,23 +1,21 @@
 ---
-title: 'Procedura: pubblicare un''applicazione WPF con gli stili visuali abilitati | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: pubblicare un'applicazione WPF con gli stili visuali abilitati | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: pubblicare un'applicazione WPF per la quale sono attivati gli stili di visualizzazione
 Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario abilitare manualmente. Tuttavia, abilitare gli stili visivi per un'applicazione WPF e quindi la pubblicazione della soluzione genera un errore. In questo argomento viene descritto come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per ulteriori informazioni sugli stili, vedere [Visual Styles Overview](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Per ulteriori informazioni sul messaggio di errore, vedere [risoluzione dei problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -30,11 +28,11 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
   
 -   [Il file manifesto incorporato nel file eseguibile della soluzione pubblicata](#BKMK_embedmanifest).  
   
--   [Firmare i manifesti dell'applicazione e distribuzione](#BKMK_signappdeplyman).  
+-   [Firmare il manifesto dell'applicazione e distribuzione](#BKMK_signappdeplyman).  
   
  Quindi, è possibile spostare i file nel percorso da cui si desidera agli utenti finali di installare l'applicazione.  
   
-##  <a name="BKMK_publishsolwovs"></a>Pubblicare la soluzione senza gli stili visuali abilitati  
+##  <a name="BKMK_publishsolwovs"></a> Pubblicare la soluzione senza gli stili visuali abilitati  
   
 1.  Verificare che il progetto non ha abilitati gli stili di visualizzazione. Verificare innanzitutto i file manifesto del progetto per il codice XML seguente. Quindi, se il codice XML è presente, racchiudere il codice XML con un tag di commento.  
   
@@ -48,7 +46,7 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Per aprire il file manifesto in un progetto Visual Basic  
   
-    1.  Nella barra dei menu, scegliere **progetto**, *ProjectName***proprietà**, dove *ProjectName* è il nome del progetto WPF.  
+    1.  Nella barra dei menu, scegliere **Project**, * ProjectName ***delle proprietà**, dove *ProjectName* è il nome del progetto WPF.  
   
          Vengono visualizzate le pagine delle proprietà per il progetto WPF.  
   
@@ -58,7 +56,7 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Per aprire il file manifesto in un progetto c#  
   
-    1.  Nella barra dei menu, scegliere **progetto**, *ProjectName***proprietà**, dove *ProjectName* è il nome del progetto WPF.  
+    1.  Nella barra dei menu, scegliere **Project**, * ProjectName ***delle proprietà**, dove *ProjectName* è il nome del progetto WPF.  
   
          Vengono visualizzate le pagine delle proprietà per il progetto WPF.  
   
@@ -73,7 +71,7 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
   
 2.  Compilare e pubblicare la soluzione. Per ulteriori informazioni su come pubblicare la soluzione, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Creare un file manifesto  
+##  <a name="BKMK_CreateManifest"></a> Creare un file manifesto  
   
 1.  Incollare il seguente codice XML in un file di blocco note.  
   
@@ -94,7 +92,7 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
     > [!NOTE]
     >  Le procedure rimanenti si presuppongono che il nome di questo file è **themes.manifest** e che il file viene salvato nella directory C:\temp del computer.  
   
-##  <a name="BKMK_embedmanifest"></a>Il file manifesto incorporato nel file eseguibile della soluzione pubblicata  
+##  <a name="BKMK_embedmanifest"></a> Il file manifesto incorporato nel file eseguibile della soluzione pubblicata  
   
 1.  Aprire il **prompt dei comandi di Visual Studio**.  
   
@@ -107,7 +105,7 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
     > -   La soluzione si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      La soluzione viene pubblicata nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   La versione più recente dei file dell'applicazione pubblicata si trova nella directory seguente: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Non è necessario utilizzare il nome o i percorsi delle directory descritti in precedenza. Il nome e i percorsi descritti sopra vengono utilizzati solo per illustrare i passaggi necessari per pubblicare la soluzione.  
   
@@ -123,7 +121,7 @@ Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Firmare i manifesti dell'applicazione e di distribuzione  
+##  <a name="BKMK_signappdeplyman"></a> Firmare il manifesto dell'applicazione e distribuzione  
   
 1.  Al prompt dei comandi, eseguire il comando seguente per rimuovere il `.deploy` estensione dal file eseguibile nella directory corrente.  
   

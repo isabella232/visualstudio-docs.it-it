@@ -1,12 +1,10 @@
 ---
-title: 'CA1046: Non l''overload dell''operatore di uguaglianza sui tipi di riferimento | Documenti Microsoft'
-ms.custom: 
+title: "CA1046: Non l'overload dell'operatore di uguaglianza sui tipi di riferimento | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 - CA1046
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA1046
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 87c9b1ca85eb7edaf1050da96356640b06b66e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e78217e2ce8613ca312a96058b4477d1da82a5e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
 |||  
 |-|-|  
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|  
 |CheckId|CA1046|  
-|Category|Microsoft. Design|  
+|Category|Microsoft.Design|  
 |Modifica importante|Interruzione|  
   
 ## <a name="cause"></a>Causa  
@@ -60,7 +58,7 @@ ms.lasthandoff: 12/22/2017
  **un = nuovo (2,2) e b = nuovo (2,2) sono uguali. No**  
 **c e un oggetto sono uguali. Sì**  
 **b e a sono = =? No**  
-**c e a sono = =? Sì**   
+**c e sono = =? Sì**   
 ## <a name="related-rules"></a>Regole correlate  
  [CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
   

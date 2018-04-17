@@ -1,12 +1,10 @@
 ---
 title: Riferimenti alle API non gestite ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]API pubbliche non gestite da dfshim.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API pubbliche non gestite da dfshim.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  Pulisce o disinstalla tutte le applicazioni in linea dal [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache dell'applicazione.  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.  
   
 ### <a name="remarks"></a>Note  
- I puntatori non devono essere null. `pcwzActivationUrl`e `pcwzPathToDeploymentManifest` non deve essere vuoto.  
+ I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non deve essere vuoto.  
   
  È responsabilità del chiamante per pulire l'URL di attivazione. Ad esempio, aggiungendo caratteri di escape in cui sono necessari o rimuovendo la stringa di query.  
   

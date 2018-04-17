@@ -1,27 +1,23 @@
 ---
 title: Interfacce di base | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], core interfaces
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45521c0db16ac892d2e0e43e34c4b030075f7be2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="core-interfaces"></a>Interfacce di base
 Le interfacce seguenti sono le interfacce di base per l'estensione del debugger utilizzando il [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -71,7 +67,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
   
 -   Visual Studio (VS)  
   
-##  <a name="Breakpoints"></a>Punti di interruzione  
+##  <a name="Breakpoints"></a> Punti di interruzione  
  Queste interfacce sono correlate per l'implementazione e il rilevamento di punti di interruzione.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -92,7 +88,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|Rappresenta un'enumerazione su un set di punti di interruzione associati.|  
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|Rappresenta un'enumerazione su un set di punti di interruzione che non è stato possibile associare a una posizione di memoria.|  
   
-##  <a name="Contexts"></a>Contesti  
+##  <a name="Contexts"></a> Contesti  
  Queste interfacce rappresentano vari tipi di contesti all'interno del programma sottoposto a debug.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -106,7 +102,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|Rappresenta un contesto di stack frame in un punto di interruzione o un'eccezione.|  
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|Rappresenta un'enumerazione su un set dei contesti di codice.|  
   
-##  <a name="CoreServer"></a>In modalità Server Core  
+##  <a name="CoreServer"></a> In modalità Server Core  
  Queste interfacce rappresentano il computer in cui un programma viene eseguito il debug. Questi vengono implementati da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ma può essere chiamato dai motori di debug.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -114,7 +110,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|Fornisce accesso alle porte e fornitori di porte, nonché informazioni relative al computer.|  
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|Rappresenta un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) che supporta il debug remoto.|  
   
-##  <a name="DebugEngines"></a>Motori di debug  
+##  <a name="DebugEngines"></a> Motori di debug  
  Queste interfacce rappresentano i motori di debug e i relativi eventi associati.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -126,7 +122,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|GERMANIA, PS|Rappresenta un nodo di programma che gestisce più motori di debug.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Fornisce un modo per SDM ottenere un'interfaccia per il motore di debug di un thread, un programma o un frame dello stack.|  
   
-##  <a name="Documents"></a>Documenti  
+##  <a name="Documents"></a> Documenti  
  Queste interfacce rappresentano documenti (file di origine) e i relativi elementi associati.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -186,7 +182,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|DE|Inviato dalla Germania quando un thread è stato eliminato.|  
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Inviato dalla Germania quando un thread è stato modificato il relativo nome.|  
   
-##  <a name="Expressions"></a>Espressioni  
+##  <a name="Expressions"></a> Espressioni  
  Queste interfacce rappresentano le espressioni da valutare in un particolare contesto.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -195,7 +191,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|Rappresenta un contesto in cui viene valutata un'espressione. Ottenuta il [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interfaccia.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Inviato dalla Germania quando è stata completata una valutazione di un'espressione asincroni.|  
   
-##  <a name="Memory"></a>Memoria  
+##  <a name="Memory"></a> Memoria  
  Queste interfacce rappresentano le sequenze di byte in memoria.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -214,7 +210,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|Rappresenta le informazioni sul server di origine che è contenuti in un file PDB.|  
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|Rappresenta un'enumerazione su un set di moduli che sono noti a un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md).|  
   
-##  <a name="Ports"></a>Porte  
+##  <a name="Ports"></a> Porte  
  Queste interfacce rappresentano le porte e i fornitori di porte.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -234,7 +230,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)|VISUAL STUDIO, PS|Rappresenta un'enumerazione su un set di porte.|  
 |[IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)|VS|Rappresenta un'enumerazione su un set di fornitori di porte.|  
   
-##  <a name="Processes"></a>Processi  
+##  <a name="Processes"></a> Processi  
  Queste interfacce rappresentano processi, un singolo file eseguibile contenente uno o più programmi.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -246,7 +242,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Rappresenta un processo che è necessario tenere traccia di sessione di cui è associato.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Rappresenta un'enumerazione di un set di processi su una porta.|  
   
-##  <a name="Programs"></a>Programmi  
+##  <a name="Programs"></a> Programmi  
  Queste interfacce rappresentano i programmi, unità logiche di esecuzione che non corrispondono necessariamente a un modulo o un eseguibile fisico.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -279,7 +275,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|Rappresenta un'enumerazione su un set di [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture che descrivono variabili, registri, parametri ed espressioni.|  
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|Rappresenta un'enumerazione su un set di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strutture.|  
   
-##  <a name="StackFrames"></a>Stack frame  
+##  <a name="StackFrames"></a> Stack frame  
  Queste interfacce rappresentano uno stack frame, un contesto in cui un punto di interruzione o un'eccezione è stata eseguita.  
   
 |Interfaccia|Implementato da|Descrizione|  
@@ -300,7 +296,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|Inviato dalla Germania quando un thread è stato modificato il relativo nome.|  
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|Rappresenta un'enumerazione su un set di thread.|  
   
-##  <a name="TypeVisualizers"></a>Visualizzatori di tipo  
+##  <a name="TypeVisualizers"></a> Visualizzatori di tipo  
  Queste interfacce forniscono il supporto per i visualizzatori di tipo. Queste interfacce vengono in genere implementate tramite un analizzatore di espressioni.  
   
 |Interfaccia|Implementato da|Descrizione|  

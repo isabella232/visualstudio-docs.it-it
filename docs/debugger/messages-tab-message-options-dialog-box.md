@@ -1,27 +1,23 @@
 ---
 title: Scheda messaggi, finestra di dialogo Opzioni messaggio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7c9d533d73039de699f59c2343f3f91f888710c
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6bda72b22dc3b3962bb56dd4b7ac0a9fcbd6c879
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Scheda Messaggi, Finestra di dialogo Opzioni messaggio
 Utilizzare il **messaggi** tab per selezionare quali tipi di elenco nel messaggio [visualizzazione messaggi](../debugger/messages-view.md)e per specificare i criteri di ricerca di messaggi. Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **messaggi di Log** dal **Spy** menu.  
@@ -46,5 +42,5 @@ Utilizzare il **messaggi** tab per selezionare quali tipi di elenco nel messaggi
   
  All'interno di una casella di controllo disabilitata **gruppi di messaggi** indica che il **messaggi da visualizzare** casella di riepilogo è stato modificato per i messaggi in tale gruppo, sono selezionati tutti i tipi di messaggio in tale gruppo.  
   
- **Salvare le impostazioni come predefinite**  
+ **Salva le impostazioni come impostazioni predefinite**  
  Salvare le impostazioni correnti per un utilizzo successivo come opzioni di ricerca di messaggi. Queste impostazioni vengono salvate anche quando si esce da Spy + +.

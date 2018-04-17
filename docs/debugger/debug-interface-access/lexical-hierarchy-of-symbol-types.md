@@ -1,29 +1,25 @@
 ---
 title: Gerarchia lessicale dei tipi di simboli | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - symbols [DIA SDK], type hierarchies
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f9fe7b24a1e2bdd68d92f6dd22952df0d2a057
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81cd3e54d61682962109afb59a396645ef65294d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Gerarchia lessicale dei tipi di simboli
 Nella tabella seguente mostra i tipi di simboli nella gerarchia lessicale.  
@@ -53,6 +49,6 @@ Nella tabella seguente mostra i tipi di simboli nella gerarchia lessicale.
   
 ## <a name="see-also"></a>Vedere anche  
  [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md)

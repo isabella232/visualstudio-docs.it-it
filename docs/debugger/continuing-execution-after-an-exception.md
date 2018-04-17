@@ -1,12 +1,10 @@
 ---
 title: Continuazione dell'esecuzione dopo un'eccezione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - Exceptions dialog box
 - programs, executing
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 84ade967c00e33390402e16a1b2980277f89ed5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4ebdb034c85bce6924c90467e0f3cda3bb765832
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
 Quando il debugger interrompe l'esecuzione a causa di un'eccezione, verrà visualizzato il **supporto eccezioni**, per impostazione predefinita. Se è stata disabilitata la **supporto eccezioni** nel **opzioni** nella finestra di dialogo verrà visualizzato il **eccezioni** (in c# o Visual Basic) o **eccezione**  la finestra di dialogo (C++).  

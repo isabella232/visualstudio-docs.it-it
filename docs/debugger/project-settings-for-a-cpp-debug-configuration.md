@@ -1,12 +1,10 @@
 ---
 title: Impostazioni per una configurazione di debug C++ progetto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
 - VC.Project.IVCGPUDebugPageObject.EnvironmentMerge
@@ -111,16 +109,16 @@ helpviewer_keywords:
 - pdb files, debug build project settings
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
-caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2a18ec0d33ce66d62b71aedb4d15ef4273df957f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 È possibile modificare le impostazioni di progetto per una configurazione di debug Visual C++ o C nel **pagine delle proprietà** la finestra di dialogo, come descritto in [come: impostare il Debug e rilascio delle configurazioni](../debugger/how-to-set-debug-and-release-configurations.md). Le tabelle seguenti illustrano la posizione in cui sono disponibili le impostazioni correlate al debugger il **pagine delle proprietà** la finestra di dialogo.  
@@ -136,16 +134,16 @@ ms.lasthandoff: 12/22/2017
   
 |**Impostazione**|**Descrizione**|  
 |-----------------|---------------------|  
-|**Debugger da avviare**|Specifica il debugger da eseguire. È possibile scegliere tra le seguenti opzioni:<br /><br /> -   **Debugger Windows locale**<br />-   **Debugger Windows remoto**<br />-   **Debugger Web Browser**<br />-   **Debugger servizi Web**|  
+|**Debugger da avviare**|Specifica il debugger da eseguire. È possibile scegliere tra le seguenti opzioni:<br /><br /> -   **Debugger Windows locale**<br />-   **Debugger Windows remoto**<br />-   **Debugger Browser Web**<br />-   **Debugger servizi Web**|  
 |**Comando** (Debugger Windows locale)|Specifica il comando per l'avvio del programma di cui si esegue il debug nel computer locale.|  
 |**Comando remoto** (Debugger Windows remoto)|Percorso del file exe nel computer remoto. Immettere il percorso come se lo si immettesse nel computer remoto.|  
 |**Argomenti del comando** (Debugger Windows locale e Debugger Windows remoto)|-Specifica gli argomenti per il comando specificato in precedenza.<br /><br /> In questa casella è possibile utilizzare i seguenti operatori di reindirizzamento:<br /><br /> < `file`<br /> Legge stdin dal file.<br /><br /> > `file`<br /> Scrive stdout nel file.<br /><br /> >> `file`<br /> Accoda stdout al file.<br /><br /> 2> `file`<br /> Scrive stderr nel file.<br /><br /> 2>> `file`<br /> Accoda stderr al file.<br /><br /> 2> &1<br /> Invia l'output di stderr (2) nello stesso percorso di stdout (1).<br /><br /> 1> &2<br /> Invia l'output di stdout (1) nello stesso percorso di stderr (2).<br /><br /> Nella maggior parte dei casi, questi operatori sono applicabili solo alle applicazioni console.|  
 |**Directory di lavoro**|Specifica la cartella di lavoro del programma di cui viene eseguito il debug, relativamente alla directory di progetto in cui si trova il file EXE. Se non viene specificata, la cartella di lavoro corrisponde a quella del progetto. Per il debug remoto, la directory di progetto si troverà nel server remoto.|  
 |**Collegare** (Debugger Windows locale e Debugger Windows remoto)|Specifica se avviare l'applicazione o se connettersi a essa. L'impostazione predefinita è No.|  
 |**Nome del Server remoto** (Debugger Windows remoto)|Specifica il nome di un computer (diverso dal computer in uso) nel quale si desidera eseguire il debug di un'applicazione.<br /><br /> La macro di compilazione RemoteMachine viene impostata sul valore di questa proprietà. Per ulteriori informazioni, vedere [macro per comandi di compilazione e proprietà](/cpp/ide/common-macros-for-build-commands-and-properties).|  
-|**Connessione** (Debugger Windows remoto)|Consente di passare tra tipi di connessione standard e senza autenticazione per il debug remoto. Specificare un nome di un computer remoto nel **nome Server remoto** casella. I tipi di connessione includono:<br /><br /> -   **Remoto con autenticazione di Windows**<br />-   **Remoto senza autenticazione**<br /><br /> **Nota** il debug remoto senza autenticazione può rendere vulnerabile alle violazioni della sicurezza del computer remoto. La modalità di autenticazione Windows garantisce un maggiore livello di sicurezza.<br /><br /> Per ulteriori informazioni, vedere [configurazione del debug remoto](../debugger/remote-debugging.md).|  
+|**Connessione** (Debugger Windows remoto)|Consente di passare tra tipi di connessione standard e senza autenticazione per il debug remoto. Specificare un nome di un computer remoto nel **nome Server remoto** casella. I tipi di connessione includono:<br /><br /> -   **Remoto con autenticazione di Windows**<br />-   **Remoto senza autenticazione**<br /><br /> **Nota** debug remoto senza autenticazione può rendere vulnerabile alle violazioni della sicurezza nel computer remoto. La modalità di autenticazione Windows garantisce un maggiore livello di sicurezza.<br /><br /> Per ulteriori informazioni, vedere [configurazione del debug remoto](../debugger/remote-debugging.md).|  
 |**URL HTTP** (Debugger servizi Web e Debugger Browser Web)|Specifica l'URL in cui si trova il progetto di cui si esegue il debug.|  
-|**Tipo di debugger**|Specifica il tipo di debugger da utilizzare: **solo nativo**, **solo gestito**, **solo GPU**, **Mixed**, **Auto**(impostazione predefinita), o **Script**.<br /><br /> -   **Solo nativo** per codice C++ non gestito.<br />-   **Solo gestito** per codice eseguito in common language runtime (codice gestito).<br />-   **Misto** richiama debugger per codice non gestito e gestito.<br />-   **Auto** determina il tipo di debugger in base alle informazioni del compilatore ed EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** per codice C++ AMP che viene eseguito in un dispositivo GPU o dell'unità di rasterizzazione DirectX. Vedere [debug del codice GPU](../debugger/debugging-gpu-code.md).|  
+|**Tipo di debugger**|Specifica il tipo di debugger da utilizzare: **solo nativo**, **solo gestito**, **solo GPU**, **Mixed**, **Auto**(impostazione predefinita), o **Script**.<br /><br /> -   **Solo nativo** per codice C++ non gestito.<br />-   **Solo gestito** è destinata a codice che viene eseguito in common language runtime (codice gestito).<br />-   **Mista** richiama debugger per codice non gestito e gestito.<br />-   **Auto** determina il tipo di debugger in base alle informazioni del compilatore e file EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** è destinata a codice C++ AMP che viene eseguita in un dispositivo GPU o a di rasterizzazione DirectX. Vedere [debug del codice GPU](../debugger/debugging-gpu-code.md).|  
 |**Ambiente** (Debugger Windows locale e Debugger Windows remoto)|Specifica le variabili di ambiente per il programma di cui si esegue il debug. Utilizzare la sintassi di variabile di ambiente standard (ad esempio, `PATH="%SystemRoot%\..."`). Queste variabili, eseguire l'override dell'ambiente di sistema o vengono unite con l'ambiente del sistema, a seconda di **Esegui Merge ambiente** impostazione. Quando si fa clic nella colonna impostazioni, un "modifica...". Fare clic su questo collegamento per modificare le variabili di ambiente.|  
 |**Esegui merge ambiente** (Debugger Windows locale)|Determina se le variabili che sono specificati nel **ambiente** casella verrà unita con l'ambiente definito dal sistema operativo. L'impostazione predefinita è Sì.|  
 |**Debug SQL** (tutti ad eccezione del Debugger Cluster MPI)|Attiva il debug delle procedure SQL dall'applicazione [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. L'impostazione predefinita è No.|  
@@ -172,13 +170,13 @@ ms.lasthandoff: 12/22/2017
   
 |Impostazione|Descrizione|  
 |-------------|-----------------|  
-|**Genera informazioni di Debug** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|Comunica al linker di includere informazioni di debug con il formato specificato da /Z7, /Zd, Zi o /ZI.|  
+|**Genera informazioni di Debug** ([/debug](/cpp/build/reference/debug-generate-debug-info))|Comunica al linker di includere informazioni di debug con il formato specificato da /Z7, /Zd, Zi o /ZI.|  
 |**Genera File di Database di programma** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|In questa casella specificare il nome di un file PDB. Selezionare ZI o /Zi per Formato informazioni di debug.|  
 |**Rimuovi simboli privati** ([/PDBSTRIPPED: filename](/cpp/build/reference/pdbstripped-strip-private-symbols))|In questa casella specificare il nome di un file PDB, se non si desidera includere simboli privati nel file PDB. Questa opzione consente di creare un secondo file di database di programma (PDB) quando si compila l'immagine del programma con una qualsiasi delle opzioni del compilatore o del linker che generano un file PDB, ad esempio /DEBUG, /Z7, /Zd. Oppure /Zi. Il secondo file PDB omette i simboli che non si desidera fornire ai clienti. Per altre informazioni, vedere [/PDBSTRIPPED (Rimuove simboli privati)](/cpp/build/reference/pdbstripped-strip-private-symbols).|  
 |**Genera File Map** ([/Map](/cpp/build/reference/map-generate-mapfile))|Comunica al linker di generare un file di mapping durante il collegamento. L'impostazione predefinita è No. Per altre informazioni, vedere [/MAP (Genera file Map)](/cpp/build/reference/map-generate-mapfile).|  
 |**Nome File di mapping** ([/Map:](/cpp/build/reference/map-generate-mapfile)*nome*)|Se si sceglie Genera file di mapping, è possibile specificare il file di mapping in questa casella. Per altre informazioni, vedere [/MAP (Genera file Map)](/cpp/build/reference/map-generate-mapfile).|  
 |**Esportazioni Map** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Include le funzioni esportate nel file di mapping. L'impostazione predefinita è No. Per ulteriori informazioni, vedere [/MAPINFO (Include le informazioni nel file MAP)](/cpp/build/reference/mapinfo-include-information-in-mapfile).|  
-|**Assembly Debuggable** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Specifica le impostazioni per l'opzione /ASSEMBLYDEBUG del linker. I valori possibili sono i seguenti:<br /><br /> -   **Nessun attributo debuggable creato**.<br />-   **Runtime rilevamento e ottimizzazioni disabilitate (/ /ASSEMBLYDEBUG)**. Impostazione predefinita.<br />-   **Nessun optimizations(/ASSEMBLYDEBUG:DISABLE) runtime di rilevamento e abilitare**.<br />-   **\<eredita da padre o il progetto impostazioni predefinite >**.<br />-Per ulteriori informazioni, vedere [/ASSEMBLYDEBUG (Add DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|  
+|**Assembly Debuggable** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|Specifica le impostazioni per l'opzione /ASSEMBLYDEBUG del linker. I valori possibili sono i seguenti:<br /><br /> -   **Nessun attributo debuggable creato**.<br />-   **Runtime rilevamento e ottimizzazioni disabilitate (/ /ASSEMBLYDEBUG)**. Impostazione predefinita.<br />-   **Nessun optimizations(/ASSEMBLYDEBUG:DISABLE) rilevamento e attivazione di runtime**.<br />-   **\<eredita da padre o il progetto impostazioni predefinite >**.<br />-Per ulteriori informazioni, vedere [/ASSEMBLYDEBUG (Add DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).|  
   
  Queste impostazioni possono essere modificate a livello di codice nella cartella Proprietà di configurazione (categoria Debug) mediante l'interfaccia Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>.
 

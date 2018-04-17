@@ -1,23 +1,20 @@
 ---
 title: I messaggi della finestra di progettazione O-R | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: beb5aeb6cded349dae18b05a12dc2843b705c4ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="or-designer-messages"></a>Messaggi di O/R Designer
 In questo argomento vengono elencati i messaggi che è possibile rilevare quando si usa Progettazione relazionale oggetti.  
@@ -29,7 +26,7 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
   
  [La modifica del tipo restituito di un metodo DataContext non può essere annullata](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [Impossibile recuperare informazioni sullo schema per l'oggetto di database \<nome oggetto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [Non è stato possibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione.](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -43,7 +40,7 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
   
  [La proprietà \<nome proprietà > non può essere eliminato](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [La proprietà \<nome proprietà > non può essere eliminato perché si trova nell'oggetto association \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [Impossibile eliminare la classe selezionata perché è usata come tipo restituito per uno o più metodi DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   

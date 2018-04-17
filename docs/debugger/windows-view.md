@@ -1,36 +1,32 @@
 ---
 title: Windows Vista | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bea2801baab38f84b8af8f2154f2be4f05dc205f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
 Quando si apre Spy + +, Windows visualizza una struttura ad albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati il nome di classe e di handle di finestra. La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre sono figli del desktop e sono elencate in base alla gerarchia di finestre standard. Finestre di pari livello è visualizzato negli elenchi espandibili su un livello rientrati sotto i relativi elementi padre.  
   
  La figura seguente mostra una visualizzazione di finestre di Spy + + tipica con il nodo principale espanso.  
   
- ![Spy &#43; &#43; Windows Vista](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
+ ![Spy&#43; &#43; visualizzazione finestre](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
 Visualizzazione finestre di Spy++  
   
  La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre sono figli del desktop e vengono elencati in base alla gerarchia di finestre standard, con le finestre di pari livello ordinate in ordine Z. È possibile espandere o comprimere qualsiasi nodo padre della struttura ad albero, fare clic sul + o - simbolo accanto al nodo.  

@@ -1,26 +1,23 @@
 ---
-title: 'Procedura: creare o aggiornare criteri di controllo dell''analisi del codice Standard | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: creare o aggiornare criteri di controllo dell'analisi del codice Standard | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fba16ee285faeafdc37fc38e6b5bb0a0725a46
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -57,7 +54,7 @@ Selezionare o deselezionare le opzioni seguenti:
     |------------|-----------------|  
     |**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice è possibile eseguire solo sui file specificati nel file di configurazione di soluzione e progetto. Questo criterio assicura che tutto il codice che fa parte di una soluzione viene analizzato.|  
     |**Applicare l'analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ generati con la / analizzare l'opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|  
-    |**Attiva analisi del codice gestito**|Richiede che tutti i progetti gestiti, eseguire l'analisi del codice e compilare prima che possano essere archiviati.|
+    |**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti, eseguire l'analisi del codice e compilare prima che possano essere archiviati.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestito
 

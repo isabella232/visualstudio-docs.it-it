@@ -1,11 +1,8 @@
 ---
 title: Aggiornamento gerarchico | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,20 +17,20 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1b374ac0b062069e11a5fa9b15822a4146cbaebf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
-*Aggiornamento gerarchico* si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati di due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento alle regole di coerenza fornite dai vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per ulteriori informazioni sulle relazioni nei set di dati, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md)  
+*Aggiornamento gerarchico* si riferisce al processo di salvataggio di dati aggiornati (da un set di dati di due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento a regole di coerenza fornite tramite i vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per ulteriori informazioni sulle relazioni nei set di dati, vedere [relazioni nei set di dati](../data-tools/relationships-in-datasets.md)  
   
  La funzionalità di aggiornamento gerarchico utilizza un `TableAdapterManager` per gestire il `TableAdapter`s in un dataset tipizzato. Il `TableAdapterManager` componente è un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-generato (classe), pertanto non è in parte il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Quando si trascina una tabella dalla finestra Origini dati in un Windows Form o una pagina WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o della pagina e visualizzarlo nella finestra di progettazione nella barra dei componenti. Per informazioni dettagliate di `TableAdapterManager` classe, vedere la sezione di riferimento di TableAdapterManager di [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
@@ -42,7 +39,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Attivare l'aggiornamento gerarchico in un set di dati  
  Per impostazione predefinita, l'aggiornamento gerarchico è abilitata per tutti i nuovi set di dati che vengono aggiunti o creati in un progetto. Attivare o disattivare l'aggiornamento gerarchico impostando il **aggiornamento gerarchico** proprietà di un dataset tipizzato nel set di dati **True** o **False**:  
   
- ![Impostazione di aggiornamento gerarchico](../data-tools/media/hierarchical-update-setting.png "impostazione aggiornamento gerarchico")  
+ ![Impostazione aggiornamento gerarchico](../data-tools/media/hierarchical-update-setting.png "impostazione aggiornamento gerarchico")  
   
 ## <a name="create-a-new-relation-between-tables"></a>Creare una nuova relazione tra tabelle  
  Per creare una nuova relazione tra due tabelle, nella finestra di progettazione set di dati, selezionare la barra del titolo di ogni tabella del mouse e scegliere **Aggiungi relazione**.  

@@ -1,34 +1,30 @@
 ---
 title: Elenco eventi di grafica | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.  
   
  Questo è l'elenco di eventi:  
   
- ![Un elenco di eventi con "Index" nel nome. ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Un elenco di eventi con "Vertice" nel nome. ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Uso dell'elenco di eventi  
  Quando si seleziona un evento nell'elenco, l'attività si riflette nelle informazioni visualizzate dagli altri strumenti di analisi grafica. Usando l'elenco di eventi insieme a questi altri strumenti è possibile esaminare in dettaglio un problema di rendering per determinarne la causa. Per altre informazioni su come risolvere i problemi di rendering usando l'elenco di eventi insieme agli altri strumenti di analisi grafica, vedere [Esempi](graphics-diagnostics-examples.md).  
@@ -75,8 +71,8 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 |----------|-----------------------|  
 |(nessuna icona)|Evento generale<br /> Qualsiasi evento diverso da un evento definito dall'utente, un gruppo di eventi definito dall'utente o un evento di disegno.|  
 |![L'icona dell'evento di disegno](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento di disegno<br /> Contrassegna un evento di disegno che si è verificato durante il frame acquisito.|  
-|![L'utente &#45; icona marcatore di eventi definiti](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Gruppo di eventi definito dall'utente<br /> Raggruppa gli eventi correlati, in base a quanto definito dall'app.|  
-|![L'utente &#45; icona marcatore di eventi definiti](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcatore di eventi definito dall'utente<br /> Contrassegna una posizione specifica, in base a quanto definito dall'app.|  
+|![L'utente&#45;definito icona marcatore di eventi](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Gruppo di eventi definito dall'utente<br /> Raggruppa gli eventi correlati, in base a quanto definito dall'app.|  
+|![L'utente&#45;definito icona marcatore di eventi](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcatore di eventi definito dall'utente<br /> Contrassegna una posizione specifica, in base a quanto definito dall'app.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Contrassegno di eventi definiti dall'utente nell'app  
  Gli eventi definiti dall'utente sono specifici dell'app. Possono essere usati per correlare gli eventi significativi che si verificano nell'app a quelli presenti nell'Elenco eventi grafici. Ad esempio, è possibile creare gruppi di eventi definiti dall'utente per organizzare in gruppi o gerarchie gli eventi correlati al rendering dell'interfaccia, in modo da poter sfogliare più facilmente l'elenco di eventi, oppure creare marcatori quando vengono disegnati determinati tipi di oggetti, in modo da trovare facilmente gli eventi grafici correlati nell'elenco di eventi.  
@@ -106,7 +102,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Contiene risorse cronologia Visual Studio 2017 e maggiore di **risorse cronologia** finestra.  Selezionando l'icona di espressioni di controllo ![icona](media/gfx_watch.png) accanto a una voce nel **elenco eventi** finestra verrà visualizzata la **risorse cronologia** finestra illustrata di seguito:
+## Contiene risorse cronologia Visual Studio 2017 e versione successiva di **cronologia risorsa** finestra.  Selezionando l'icona di espressioni di controllo ![icona](media/gfx_watch.png) accanto a una voce nel **elenco eventi** finestra verrà visualizzata la **risorse cronologia** finestra illustrata di seguito:
 
 ![Cronologia di risorse](media/gfx_diag_resource_history.png)
 

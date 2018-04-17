@@ -1,12 +1,10 @@
 ---
-title: 'Procedura: creare associazioni di File per un''applicazione ClickOnce | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: creare associazioni di File per un'applicazione ClickOnce | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,19 +13,19 @@ helpviewer_keywords:
 - file associations, ClickOnce applications
 - ClickOnce deployment, file associations
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
-caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: c6d0a2c0912b98995bb6d933766a46f4ebc527a4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 75215164de3aedfe1ea0168275280304dfd5def9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Procedura: creare associazioni di file per un'applicazione ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]le applicazioni possono essere associate a uno o più estensioni di file, in modo che l'applicazione verrà avviato automaticamente quando l'utente apre un file di tali tipi. Aggiunta di supporto delle estensioni di file a un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è semplice.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere associate uno o più estensioni di file, in modo che l'applicazione verrà avviato automaticamente quando l'utente apre un file di tali tipi. Aggiunta di supporto delle estensioni di file a un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è semplice.  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Per creare associazioni di file per un'applicazione ClickOnce  
   
@@ -39,13 +37,13 @@ ms.lasthandoff: 12/22/2017
   
 4.  Come elemento figlio di `assembly` elemento, aggiungere un `fileAssociation` elemento. Il `fileAssociation` elemento dispone di quattro attributi:  
   
-    -   `extension`: L'estensione di file che si desidera associare all'applicazione.  
+    -   `extension`: L'estensione che si desidera associare all'applicazione.  
   
     -   `description`: Descrizione del tipo di file, verrà visualizzata nella shell di Windows.  
   
-    -   `progid`: Stringa che identifica il tipo di file, per contrassegnare quest'ultimo nel Registro di sistema.  
+    -   `progid`: Stringa che identifica in modo univoco il tipo di file, per contrassegnare nel Registro di sistema.  
   
-    -   `defaultIcon`: Un'icona da utilizzare per questo tipo di file. L'icona deve essere aggiunto come una risorsa del file nel manifesto dell'applicazione. Per altre informazioni, vedere [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+    -   `defaultIcon`: Un'icona da utilizzare per questo tipo di file. L'icona deve essere aggiunto come una risorsa del file nel manifesto dell'applicazione. Per altre informazioni, vedere [Procedura: includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Per un esempio di `file` e `fileAssociation` elementi, vedere [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
      `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Per ulteriori informazioni, vedere [Mage.exe (generazione manifesto e lo strumento di modifica)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
+     Per altre informazioni, vedere [Mage.exe (generazione manifesto e lo strumento di modifica)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
 ## <a name="see-also"></a>Vedere anche  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   

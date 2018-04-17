@@ -1,12 +1,10 @@
 ---
 title: 'CA2118: Revisione di SuppressUnmanagedCodeSecurityAttribute | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verificare la sintassi di SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un membro o un tipo pubblico o protetto presenta il <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attributo.  
   
 ## <a name="rule-description"></a>Descrizione della regola  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>modifica il comportamento di sistema di sicurezza predefinito per i membri che eseguono codice non gestito mediante la chiamata di piattaforma o l'interoperabilità COM. In genere, il sistema esegue un [dati e modellazione](/dotnet/framework/data/index) autorizzazione per codice non gestito. Questa richiesta avviene in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue un [le richieste di collegamento](/dotnet/framework/misc/link-demands) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento di sistema di sicurezza predefinito per i membri che eseguono codice non gestito mediante COM interoperabilità o chiamata. In genere, il sistema esegue un [dati e modellazione](/dotnet/framework/data/index) autorizzazione per codice non gestito. Questa richiesta avviene in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue un [le richieste di collegamento](/dotnet/framework/misc/link-demands) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.  
   
  Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo su membri pubblici che chiamano metodi nativi, i chiamanti nello stack di chiamate (diverso dal chiamante immediato) non richiedono l'autorizzazione di codice non gestito per eseguire codice non gestito. A seconda del membro pubblico azioni e la gestione di input, è possibile che i chiamanti non attendibili per accedere alle funzionalità in genere limitate al codice attendibile.  
   

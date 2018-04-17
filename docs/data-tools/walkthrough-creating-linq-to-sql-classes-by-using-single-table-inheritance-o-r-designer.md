@@ -1,26 +1,23 @@
 ---
-title: "Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O-R Designer) | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O-R Designer) | Documenti Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8a0c6702a965ae2733d2461cf30f5fd91f27dba3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (O/R Designer)
 Il [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supporta l'ereditarietà a tabella singola come viene in genere implementato nei sistemi relazionali. Questa procedura dettagliata espande i passaggi generici forniti nel [procedura: configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) argomento e fornisce alcuni dati reali per illustrare l'utilizzo dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -57,8 +54,8 @@ Il [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visua
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
     |**Type**|**int**|**True**|  
-    |**FirstName**|**nvarchar (200)**|**False**|  
-    |**Cognome**|**nvarchar (200)**|**False**|  
+    |**FirstName**|**nvarchar(200)**|**False**|  
+    |**Cognome**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
 3.  Impostare la colonna ID come chiave primaria.  
@@ -85,7 +82,7 @@ Il [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visua
     |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|  
     |**7**|**2**|**Alexey**|**Orekhov**|**2**|  
     |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|  
-    |**9**|**2**|**Tai**|**Yee**|**2**|  
+    |**9**|**2**|**Lla parte finale**|**Yee**|**2**|  
     |**10**|**2**|**Fabricio**|**Noriega**|**3**|  
     |**11**|**2**|**Barbara**|**Martin**|**3**|  
     |**12**|**2**|**Davide**|**Kwok**|**3**|  

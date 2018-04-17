@@ -1,12 +1,10 @@
 ---
 title: Strumenti per eseguire il debug di thread e processi | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - debugging threads
 - debugging [Visual Studio], threads
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e6c6c8c239d27952c35486be308e5947aff50952
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f92a0497ebdf8fdfec03dd6a37aac8238517e0e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Strumenti per eseguire il debug di thread e processi in Visual Studio
 *Thread* e *processi* costituiscono concetti correlati in ambito informatico. Entrambi rappresentano infatti sequenze di istruzioni che devono essere eseguite in un ordine specifico. Le istruzioni incluse in thread o processi distinti possono tuttavia essere eseguite in parallelo.  
@@ -56,11 +54,11 @@ Gli strumenti necessari per utilizzare in [!INCLUDE[vsprvs](../code-quality/incl
   
 |Interfaccia utente|Informazioni disponibili|Operazioni eseguibili|  
 |--------------------|---------------------------|-----------------------------|  
-|**Connetti a processo** la finestra di dialogo|Processi disponibili cui è possibile eseguire la connessione:<br /><br /> -Nome process (.exe)<br />-Numero di ID processi<br />-Barra dei menu titolo<br />-Tipo (Managed v 4.0; Managed v 2.0, v 1.1, v 1.0; x86; x64; IA64)<br />-Nome utente (nome di account)<br />-Numero di sessione|Selezione di un processo a cui connettersi<br /><br /> Selezione di un computer remoto<br /><br /> Modifica del tipo di trasporto per la connessione a computer remoti|  
+|**Connetti a processo** finestra di dialogo|Processi disponibili cui è possibile eseguire la connessione:<br /><br /> -Nome process (.exe)<br />-Numero di ID processi<br />-Barra dei menu titolo<br />-Tipo (Managed v 4.0; Managed v 2.0, v 1.1, v 1.0; x86; x64; IA64)<br />-Nome utente (nome di account)<br />-Numero di sessione|Selezione di un processo a cui connettersi<br /><br /> Selezione di un computer remoto<br /><br /> Modifica del tipo di trasporto per la connessione a computer remoti|  
 |**Processi** finestra|Processi collegati:<br /><br /> : Nome processo<br />-Numero di ID processi<br />-Path per elaborare .exe<br />-Barra dei menu titolo<br />-Stato (Interrompi. In esecuzione)<br />-Debug (nativo, gestito e così via.)<br />-Tipo di trasporto (predefinito, nativo senza autenticazione)<br />-Il qualificatore di trasporto (computer remoto)|Strumenti:<br /><br /> -Collegamento<br />-Scollegamento<br />-Termina<br /><br /> Menu di scelta rapida:<br /><br /> -Collegamento<br />-Scollegamento<br />-Disconnetti al termine del debug<br />-Termina|  
 |**Thread** finestra|Thread nel processo corrente:<br /><br /> -ID thread<br />-ID gestito<br />-Categoria (thread principale, thread dell'interfaccia, gestore delle chiamate a procedura remota o thread di lavoro)<br />-Nome thread<br />-Location in cui viene creato thread<br />-Priorità<br />: Maschera di affinità<br />-Numero sospesi<br />: Nome processo<br />-Indicatore flag<br />-Indicatore sospeso|Strumenti:<br /><br /> -Ricerca<br />-Ricerca Stack di chiamate<br />-Contrassegna Just My Code<br />-Contrassegna selezione moduli personalizzata<br />-Raggruppa per<br />-Colonne<br />-Espandi/Comprimi stack di chiamate<br />-Espandere/comprimere gruppi<br />-Blocca/Sblocca thread<br /><br /> Menu di scelta rapida:<br /><br /> -Mostra thread nell'origine<br />-Passa al thread<br />-Blocca un thread in esecuzione<br />-Sblocca un thread bloccato<br />-Imposta flag del thread per Studio aggiuntivo<br />-Rimuovi flag del thread<br />-Rinomina thread<br />-Mostra / Nascondi thread<br /><br /> Altre azioni:<br /><br /> : Consente di visualizzare lo stack di chiamate per un thread in un suggerimento dati|  
 |Finestra di origine|Gli indicatori dei thread all'estrema sinistra indicano thread singoli o più thread (disattivato per impostazione predefinita, attivata usando il menu di scelta rapida in **thread** finestra)|Menu di scelta rapida:<br /><br /> -Passa al thread<br />-Imposta flag del thread per Studio aggiuntivo<br />-Rimuovi flag del thread|  
-|**Posizione di debug** barra degli strumenti|-Processo corrente<br />-Consente di sospendere l'applicazione<br />-Riprendi l'applicazione<br />-Consente di sospendere e arrestare l'applicazione<br />-Thread corrente<br />-Attivare o disattivare lo stato di flag di thread corrente<br />-Mostra solo thread con flag<br />-Mostra solo processo corrente<br />-Stack frame corrente|-Passa a un altro processo<br />-Consente di sospendere, riprendere o arrestare l'applicazione<br />-Passare a un altro thread nel processo corrente<br />-Passare a un altro stack frame del thread corrente<br />-Contrassegnare o rimuovere i flag dei thread correnti<br />-Mostra solo thread con flag<br />-Mostra solo processo corrente|  
+|**Posizione di debug** sulla barra degli strumenti|-Processo corrente<br />-Consente di sospendere l'applicazione<br />-Riprendi l'applicazione<br />-Consente di sospendere e arrestare l'applicazione<br />-Thread corrente<br />-Attivare o disattivare lo stato di flag di thread corrente<br />-Mostra solo thread con flag<br />-Mostra solo processo corrente<br />-Stack frame corrente|-Passa a un altro processo<br />-Consente di sospendere, riprendere o arrestare l'applicazione<br />-Passare a un altro thread nel processo corrente<br />-Passare a un altro stack frame del thread corrente<br />-Contrassegnare o rimuovere i flag dei thread correnti<br />-Mostra solo thread con flag<br />-Mostra solo processo corrente|  
 |**Stack in parallelo** finestra|-Stack di chiamate per più thread in una finestra.<br />-Stack frame attivo per ogni thread.<br />-I chiamanti e chiamati per ogni metodo.|-Filtro thread specificati<br />-Passare alla visualizzazione attività<br />-Consente di contrassegnare o rimuovere un thread<br />-Zoom|   
 |**Espressioni di controllo parallelo** finestra|-La colonna flag, nella quale è possibile contrassegnare un thread che si desidera prestare particolare attenzione.<br />-La colonna frame, in cui una freccia indica il frame selezionato.<br />-Colonna configurabile che consente di visualizzare il computer, processo, riquadro, attività e thread.|-Consente di contrassegnare o rimuovere un thread<br />-Visualizza solo thread con flag<br />-Frame opzione<br />-Consente di ordinare una colonna<br />-Thread gruppo<br />-Blocca o Sblocca i thread<br />-esportare i dati nella finestra Espressioni di controllo parallelo| 
 |**Attività** finestra|-Consente di visualizzare informazioni sui <xref:System.Threading.Tasks.Task> oggetti inclusi ID attività, lo stato delle attività (programmato, in esecuzione, in attesa, in deadlock) e il thread assegnato all'attività.<br />-Percorso corrente nello stack di chiamate.<br />-Delegato passato all'attività al momento della creazione|-Passare all'attività corrente<br />-Consente di contrassegnare o rimuovere un'attività<br />-Consente di bloccare o sbloccare un'attività|  
@@ -68,5 +66,5 @@ Gli strumenti necessari per utilizzare in [!INCLUDE[vsprvs](../code-quality/incl
   
 ## <a name="see-also"></a>Vedere anche  
  [Collegare a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Il debug di applicazioni a thread multipli](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debug del codice GPU](../debugger/debugging-gpu-code.md)

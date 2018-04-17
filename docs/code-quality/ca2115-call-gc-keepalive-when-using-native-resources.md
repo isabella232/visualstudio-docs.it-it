@@ -1,12 +1,10 @@
 ---
-title: 'CA2115: Chiamare GC. KeepAlive durante l''utilizzo di risorse native | Documenti Microsoft'
-ms.custom: 
+title: "CA2115: Chiamare GC. KeepAlive durante l'utilizzo di risorse native | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 - CA2115
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2115
 - CallGCKeepAliveWhenUsingNativeResources
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f767c923d319a0accce655eea84a6fff22dc5069
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5ea82194eced9caed52e75216091060ff9350379
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Chiamare GC.KeepAlive durante l'utilizzo di risorse native
 |||  
@@ -54,7 +52,7 @@ ms.lasthandoff: 12/22/2017
  Leggere attentamente gli altri messaggi prima di escluderli. Questa regola rileva gli errori che sono difficili da riprodurre ed eseguire il debug.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente, `BadMethod` non include una chiamata a `GC.KeepAlive` e pertanto viola la regola. `GoodMethod`contiene il codice corretto.  
+ Nell'esempio seguente, `BadMethod` non include una chiamata a `GC.KeepAlive` e pertanto viola la regola. `GoodMethod` contiene il codice corretto.  
   
 > [!NOTE]
 >  Questo esempio si trova nello pseudo-codice anche se il codice viene compilato ed eseguito, l'avviso non viene generato perché una risorsa non gestita non viene creata o liberata.  

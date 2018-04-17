@@ -1,26 +1,22 @@
 ---
 title: Risoluzione dei problemi e problemi noti per il debug di snapshot | Documenti Microsoft
 ms.date: 11/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: ae5da4031ceb2716970b028fb15c11348df89c4a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
@@ -30,7 +26,7 @@ Se i passaggi descritti in questo argomento non risolvono il problema, contattar
 
 Se viene visualizzata un'icona di avviso ![icona di avviso Snappoint](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "icona di avviso Snappoint") con il snappoint anziché l'icona normale snappoint, quindi il snappoint non è acceso.
 
-![Non attivare Snappoint](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Snappoint non attivata")
+![Non attivare Snappoint](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Snappoint non attiva")
 
 Eseguire la procedura seguente:
 
@@ -40,11 +36,11 @@ Eseguire la procedura seguente:
 
 Se viene visualizzato in seguito finestra, i simboli non è stato caricato.
 
-![Non è possibile caricare i simboli](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "non vengono caricano i simboli")
+![Non vengono caricati i simboli](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "non vengono caricati i simboli")
 
 Eseguire la procedura seguente:
 
-- Fare clic su di **modificare le impostazioni dei simboli...** collegamenti in questa pagina. Nel **Debug > simboli** impostazioni, aggiungere una directory cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
+- Fare clic sul **modificare le impostazioni dei simboli...** collegamenti in questa pagina. Nel **Debug > simboli** impostazioni, aggiungere una directory cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
 
    I simboli o file con estensione pdb, disponibili nel progetto devono corrispondere la distribuzione del servizio App. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, CI/CD con Visual Studio Team Services o Kudu, e così via) verranno pubblicare i file di simboli insieme al servizio App. Impostazione directory cache dei simboli consente a Visual Studio utilizzare questi simboli.
 

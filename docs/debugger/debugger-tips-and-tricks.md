@@ -1,27 +1,25 @@
 ---
 title: Suggerimenti e consigli nel Debugger di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dacce06dc59724b7f8feba8f84d2b781ba56ed9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d5a748541aa9c50b698eda441f38c88f1e791c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni sui suggerimenti e consigli per il Debugger in Visual Studio
 
@@ -37,7 +35,7 @@ Se si passa spesso sui suggerimenti dati durante il debug, si desidera aggiunger
 
 Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice all'interno di una sessione di debug e continuare il debug. Per utilizzare questa funzionalità, fare clic nel codice con il cursore durante la sospensione nel debugger, apportare modifiche e premere **F5**, **F10**, o **F11** per continuare il debug.
 
-![Modifica e continuazione debug](../debugger/media/dbg-tips-edit-and-continue.gif "ignorato")
+![Modifica e continuazione debug](../debugger/media/dbg-tips-edit-and-continue.gif "/EDITANDCONTINUE")
 
 Per ulteriori informazioni sull'uso della funzionalità e limitazioni di funzionalità, vedere [modifica e continuazione](../debugger/edit-and-continue.md).
 
@@ -78,7 +76,7 @@ Se si modifica il flusso di esecuzione, è possibile eseguire operazioni quali p
 
 3. Trovare la variabile nel **variabili locali** finestra (**Debug > Windows > variabili locali**), la variabile e scegliere **Crea ID oggetto**.
 
-    ![Creare un ID oggetto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
+    ![Creare un ID di oggetto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
   
 4.  Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Questa variabile è l'ID oggetto.
   
@@ -116,7 +114,7 @@ Il debugger interrompe nel codice su eccezioni non gestite. Eccezioni gestite, t
 
 Il **impostazioni eccezioni** la finestra di dialogo consente di indicare al debugger di inserire un'interruzione nel codice per eccezioni specifiche. Nell'illustrazione seguente, il debugger si interrompe nel codice ogni volta che un `System.NullReferenceException` si verifica. Per ulteriori informazioni, vedere [la gestione delle eccezioni](../debugger/managing-exceptions-with-the-debugger.md).
 
-![Finestra di dialogo Impostazioni eccezione](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
+![Finestra di dialogo Impostazioni di eccezioni](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
 ## <a name="debug-deadlocks-and-race-conditions"></a>Eseguire il debug di race condition e deadlock
 
@@ -138,11 +136,11 @@ Se è necessario eseguire il debug di tipi di problemi comuni per applicazioni m
 
 Nelle App UWP, è possibile analizzare le operazioni di rete eseguite utilizzando il `Windows.Web.Http` API. È possibile utilizzare questo strumento per eseguire il debug di servizi web e le risorse di rete. Per utilizzare lo strumento, selezionare **Debug > Profiler delle prestazioni**. Selezionare **rete**, quindi scegliere **avviare**. Nell'applicazione seguire lo scenario che usa `Windows.Web.Http` e quindi scegliere **Arresta raccolta** per generare il report.
 
-![Utilizzo di strumento di analisi di rete](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
+![Utilizzo dello strumento di profilatura di rete](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
 Selezionare un'operazione nella visualizzazione di riepilogo per visualizzare altri dettagli.
 
-![Informazioni dettagliate nello strumento utilizzo rete](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
+![Informazioni dettagliate nello strumento utilizzo della larghezza](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Per altre informazioni, vedere [Utilizzo della rete](../profiling/network-usage.md).
 
@@ -152,7 +150,7 @@ Per connettere l'App in esecuzione, il debugger carica il file di simboli (PDB) 
 
 Aprire il **moduli** finestra durante il debug selezionando **Debug > Windows > moduli**. Il **moduli** finestra può indicare quali il debugger viene considerato codice utente, i moduli o [ *My Code*](../debugger/just-my-code.md)e il simbolo di stato per il modulo di caricamento. Nella maggior parte degli scenari, il debugger individua automaticamente i file di simboli per codice utente, ma se si desidera eseguire l'istruzione (o eseguire il debug) codice .NET framework, codice di sistema o il codice di libreria di terze parti, sono necessari ulteriori passaggi per ottenere i file di simboli corretto.
 
-![Visualizzare informazioni sui simboli nella finestra moduli](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
+![Visualizzare le informazioni sui simboli nella finestra moduli](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
 È possibile caricare le informazioni sui simboli direttamente il **moduli** finestra facendo clic e scegliendo **Carica simboli**.
 
@@ -164,7 +162,7 @@ Per sapere come il debugger classifica codice come codice utente, vedere [Just M
 
 Per altri suggerimenti e consigli e informazioni più dettagliate, vedere questi post di blog:
 
-- [7 attacchi noti inferiore per il debug in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 minore attacchi noti per il debug in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 nascoste in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Vedere anche

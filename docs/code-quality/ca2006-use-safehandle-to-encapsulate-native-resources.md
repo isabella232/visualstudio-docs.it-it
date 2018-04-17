@@ -1,12 +1,10 @@
 ---
 title: 'CA2006: Utilizzare SafeHandle per incapsulare le risorse native | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseSafeHandleToEncapsulateNativeResources
 - CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0fdef78fdad92eb08012a474afff5c4c8c4d7ab8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Utilizzare SafeHandle per incapsulare le risorse native
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  In questi scenari, i problemi di sicurezza o di affidabilità saranno disponibile anche se è consentito l'accesso multithreading di `IntPtr` e modalità di rilascio della risorsa che è rappresentata dal `IntPtr` viene fornito. Questi problemi riguardano il riciclo del `IntPtr` valore sul rilascio di risorse durante l'utilizzo simultaneo della risorsa è stata effettuata in un altro thread. Ciò può causare una race condition in cui un thread può leggere o scrivere i dati associati con la risorsa errata. Ad esempio, se il tipo è archiviato un handle del sistema operativo come un `IntPtr` e consente agli utenti di chiamare entrambe **Chiudi** e qualsiasi altro metodo che utilizza tale handle simultaneamente e senza alcun tipo di sincronizzazione, il codice include un riciclo esiste un problema.  
   
- Questo problema di riciclo può causare il danneggiamento dei dati e, spesso una vulnerabilità di sicurezza. `SafeHandle`e la relativa classe di elemento di pari livello <xref:System.Runtime.InteropServices.CriticalHandle> forniscono un meccanismo per incapsulare un handle nativo di una risorsa in modo che è possibile evitare tali problemi di threading. Inoltre, è possibile utilizzare `SafeHandle` e la relativa classe di elemento di pari livello `CriticalHandle` per altri problemi di threading, ad esempio, per controllare con attenzione la durata degli oggetti gestiti che contengono una copia dell'handle nativo nelle chiamate ai metodi nativi. In questo caso, è spesso possibile evitare le chiamate a `GC.KeepAlive`. Il sovraccarico delle prestazioni che si verifica quando si utilizza `SafeHandle` e, a un livello inferiore, `CriticalHandle`, possono spesso essere ridotti attraverso un'attenta progettazione.  
+ Questo problema di riciclo può causare il danneggiamento dei dati e, spesso una vulnerabilità di sicurezza. `SafeHandle` e la relativa classe di elemento di pari livello <xref:System.Runtime.InteropServices.CriticalHandle> forniscono un meccanismo per incapsulare un handle nativo di una risorsa in modo che è possibile evitare tali problemi di threading. Inoltre, è possibile utilizzare `SafeHandle` e la relativa classe di elemento di pari livello `CriticalHandle` per altri problemi di threading, ad esempio, per controllare con attenzione la durata degli oggetti gestiti che contengono una copia dell'handle nativo nelle chiamate ai metodi nativi. In questo caso, è spesso possibile evitare le chiamate a `GC.KeepAlive`. Il sovraccarico delle prestazioni che si verifica quando si utilizza `SafeHandle` e, a un livello inferiore, `CriticalHandle`, possono spesso essere ridotti attraverso un'attenta progettazione.  
   
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
  Convertire `IntPtr` l'utilizzo di `SafeHandle` per gestire in modo sicuro l'accesso alle risorse native. Vedere il <xref:System.Runtime.InteropServices.SafeHandle> argomento di riferimento per gli esempi.  

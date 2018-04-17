@@ -1,12 +1,10 @@
 ---
 title: 'CA2214: Non chiamare metodi sottoponibili a override nei costruttori | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
 - CA2214
@@ -14,23 +12,23 @@ helpviewer_keywords:
 - CA2214
 - DoNotCallOverridableMethodsInConstructors
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5934ec6e3b78b6201d6002836245a268cc9c4a02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4c9df9acf8c04e85b16c1f3b5d964938a21f168b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Non chiamare metodi sottoponibili a override nei costruttori
 |||  
 |-|-|  
 |TypeName|DoNotCallOverridableMethodsInConstructors|  
 |CheckId|CA2214|  
-|Category|Microsoft. Usage|  
+|Category|Microsoft.Usage|  
 |Modifica importante|Non importante|  
   
 ## <a name="cause"></a>Causa  
@@ -53,6 +51,6 @@ ms.lasthandoff: 12/22/2017
   
  Questo esempio produce il seguente output:  
   
- **Chiamare il costruttore base.**  
+ **Chiamare il costruttore basa.**  
 **Viene chiamato DoSomething derivata - inizializzato? No**  
 **Chiamare il metodo derivato ctor.**

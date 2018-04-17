@@ -1,29 +1,25 @@
 ---
 title: IDiaEnumSymbols | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols interface
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4e6384e6822c03190d3650d2a1371f7b9fffe59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Enumera i vari simboli contenuti nell'origine dati.  
@@ -63,7 +59,7 @@ IDiaEnumSymbols : IUnknown
  In questo esempio viene illustrato come ottenere il `IDiaEnumSymbols` l'interfaccia e quindi utilizzare tale enumerazione di tipi di elenco definito dall'utente (UDT).  
   
 > [!NOTE]
->  `CDiaBSTR`è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberare la stringa quando la creazione di istanze esce dall'ambito.  
+>  `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberando la stringa quando la creazione dell'istanza diventa esterno all'ambito.  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -100,6 +96,6 @@ void ShowUDTs(IDiaSymbol *pGlobals)
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

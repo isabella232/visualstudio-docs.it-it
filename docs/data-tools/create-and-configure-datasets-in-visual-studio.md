@@ -1,25 +1,23 @@
 ---
 title: Creare e configurare i set di dati in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: da81d141e453e0106d329565338f7893b4fad758
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e71f7dcde2e1232f15b6c455f01ee30272b8f28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
 
@@ -41,7 +39,7 @@ Si crea un oggetto tipizzato <xref:System.Data.DataSet> classe in Visual Studio 
 
 4.  Scegliere le tabelle (o singole colonne), stored procedure, funzioni e viste dal database che si desidera essere rappresentato nel set di dati.
 
-     ![Scegliere gli oggetti di database](../data-tools/media/raddata-chose-objects.png "raddata scegliere oggetti")
+     ![Scegliere gli oggetti di database](../data-tools/media/raddata-chose-objects.png "raddata scelto oggetti")
 
 5.  Scegliere **Fine**.
 
@@ -59,7 +57,7 @@ Si crea un oggetto tipizzato <xref:System.Data.DataSet> classe in Visual Studio 
 
 8.  Fare clic su una tabella, l'adattatore di tabella o il nome di colonna in una tabella per visualizzare le proprietà nel **proprietà** finestra. È possibile modificare alcuni dei valori di. Ricordare che si modifica il set di dati, non il database di origine.
 
-     ![Proprietà delle colonne di set di dati](../data-tools/media/dataset-column-properties.png "proprietà delle colonne di set di dati")
+     ![Proprietà set di dati colonna](../data-tools/media/dataset-column-properties.png "proprietà set di dati colonna")
 
 9. È possibile aggiungere nuove tabelle o gli adattatori di tabella per il set di dati o aggiungere nuove query per gli adattatori di tabella esistente o specificare nuove relazioni tra tabelle trascinando gli elementi dal **della casella degli strumenti** scheda. Questa scheda viene visualizzato quando il **Progettazione DataSet** lo stato attivo.
 
@@ -77,7 +75,7 @@ Questa procedura viene illustrato come aggiungere una tabella dallo stesso datab
 
 3.  Il nodo di set di dati e scegliere **Configura origine dati con Creazione guidata**.
 
-     ![Menu di scelta rapida origine dati](../data-tools/media/data-source-context-menu.png "il menu di scelta rapida origine dati")
+     ![Menu di scelta rapida origine dati](../data-tools/media/data-source-context-menu.png "menu di scelta rapida origine dati")
 
 4.  Utilizzare la procedura guidata per specificare quali tabelle aggiuntive, o le stored procedure o un altro oggetto di database, da aggiungere al set di dati.
 
