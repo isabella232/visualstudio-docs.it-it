@@ -1,23 +1,21 @@
 ---
 title: Informazioni sulle lingue specifiche del dominio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 89293e0b684881767b6357b88469dc69ddc71902
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 
@@ -35,7 +33,7 @@ L'azienda e del progetto anche gestire speciale set di concetti che può essere 
   
 Quando si progetta un linguaggio DSL, è necessario definire un *classe dominio* per ognuna delle principali nozioni nel dominio, ad esempio un banco check-in aeroporto, luce o pagina Web. Definire *relazioni di dominio* come collegamento ipertestuale, rete o un nastro trasportatore per collegare i concetti.  
   
-Creano gli utenti di tale linguaggio DSL *modelli.* I modelli sono *istanze* della DSL. Ad esempio, descrivono un particolare sito Web o il collegamento di un determinato dispositivo o il sistema in un determinato aeroporto di gestione dei bagagli.  
+Gli utenti di tale linguaggio DSL creare *modelli.* I modelli sono *istanze* della DSL. Ad esempio, descrivono un particolare sito Web o il collegamento di un determinato dispositivo o il sistema in un determinato aeroporto di gestione dei bagagli.  
   
 Gli utenti possono visualizzare un modello come un diagramma o un Windows form. I modelli possono essere visualizzati anche in formato XML, che è una modalità di archiviazione. Quando si definisce un linguaggio DSL, si definiscono come le istanze di ogni classe di dominio e la relazione vengono visualizzati sullo schermo dell'utente. Un tipico DSL viene visualizzato come una raccolta di icone o rettangoli connessi dalle frecce.  
   
@@ -81,7 +79,7 @@ Un linguaggio specifico di dominio deve avere un set relativamente ridotto di el
   
 ### <a name="domain-model"></a>Modello di dominio
 
-Un linguaggio specifico di dominio è necessario combinare i set di elementi e le relazioni tra loro in una grammatica coerente. Inoltre necessario definire se combinazioni di elementi e relazioni sono valide. Ad esempio, i linguaggi di programmazione in genere impediscono ereditarietà circolare, in cui una classe è derivata da una seconda classe e la seconda classe è derivata dalla classe prima. Vincoli possono essere utilizzati anche per esprimere la logica di business, ad esempio, un utente non può essere un dipendente di se stesso. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utilizza i vincoli per esprimere i tipi di restrizioni che richiedono più linguaggi specifici di dominio.  
+Un linguaggio specifico di dominio è necessario combinare i set di elementi e le relazioni tra loro in una grammatica coerente. Inoltre necessario definire se combinazioni di elementi e relazioni sono valide. Ad esempio, i linguaggi di programmazione in genere impediscono ereditarietà circolare, in cui una classe è derivata da una seconda classe e la seconda classe è derivata dalla classe prima. Vincoli possono essere utilizzati anche per esprimere la logica di business, ad esempio, un utente non può essere un dipendente di se stesso. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Usa i vincoli per esprimere i tipi di restrizioni che richiedono più linguaggi specifici di dominio.  
   
 ### <a name="artifact-generation"></a>Generazione di elementi
 
@@ -89,7 +87,7 @@ Uno degli scopi principali di un linguaggio specifico di dominio consiste nel ge
   
 ### <a name="serialization"></a>Serializzazione
 
-Un linguaggio specifico di dominio deve essere resa persistente in una forma che può essere modificata, salvata, chiusi e ricaricata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utilizza un formato XML che consente di definire e personalizzare la modalità del linguaggio specifico di dominio viene serializzato o persistente.  
+Un linguaggio specifico di dominio deve essere resa persistente in una forma che può essere modificata, salvata, chiusi e ricaricata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utilizza un formato XML che consente di definire e personalizzare la modalità di linguaggio specifico di dominio viene serializzato o persistente.  
   
 ### <a name="integration-with-visual-studio"></a>Integrazione con Visual Studio
 

@@ -1,13 +1,10 @@
 ---
-title: "Procedura dettagliata: Visualizzazione dei riquadri attività personalizzati con messaggi di posta elettronica in Outlook | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura dettagliata: Visualizzazione dei riquadri attività personalizzati con messaggi di posta elettronica in Outlook | Documenti Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Procedura dettagliata: Visualizzazione dei riquadri attività personalizzati con messaggi di posta elettronica in Outlook
   Questa procedura dettagliata illustra come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica creato o aperto. Gli utenti possono visualizzare o nascondere il riquadro attività personalizzato usando un pulsante nella barra multifunzione di ogni messaggio di posta elettronica.  
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come ricerca per categorie: utilizzare i riquadri attività in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [come ricerca per categorie: utilizzare i riquadri attività in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="creating-the-project"></a>Creazione del progetto  
  I riquadri attività personalizzati vengono implementati nei componenti aggiuntivi VSTO. Creare innanzitutto un progetto di componente aggiuntivo VSTO per Outlook.  

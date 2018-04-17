@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di una relazione di dettaglio Master utilizzando un set di dati memorizzati nella cache | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 161fdc5e35a24b1318a44d2102867961330ba559
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: abe0b766214c1906afcf443c23948c492a6bde90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Procedura dettagliata: Creazione di una relazione di dettaglio Master utilizzando un set di dati memorizzati nella cache
   Questa procedura dettagliata illustra la creazione di una relazione master/dettaglio in un foglio di lavoro e la memorizzazione nella cache i dati in modo che la soluzione possa essere usata offline.  
@@ -189,7 +188,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>Passaggi successivi  
  Questa procedura dettagliata illustra le nozioni di base della creazione di una relazione tra dati master/dettaglio in un foglio di lavoro e la memorizzazione nella cache un set di dati. Ecco alcune possibili attività successive:  
   
--   Distribuire la soluzione. Per ulteriori informazioni, vedere [distribuisce una soluzione Office](../vsto/deploying-an-office-solution.md)  
+-   Distribuire la soluzione. Per altre informazioni, vedere [distribuisce una soluzione Office](../vsto/deploying-an-office-solution.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associazione dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)   

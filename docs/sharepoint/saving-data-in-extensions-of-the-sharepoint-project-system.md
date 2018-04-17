@@ -1,12 +1,10 @@
 ---
 title: Salvataggio dei dati nelle estensioni del sistema del progetto SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint project items, saving string data
 - project items [SharePoint development in Visual Studio], saving string data
@@ -14,13 +12,14 @@ helpviewer_keywords:
 - SharePoint projects, saving string data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 56cdfb95de6f0e5f8644ea3c73daacbf90e33a97
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5efc6a11852c0f843415623f4a5ac94f9d3e392b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-data-in-extensions-of-the-sharepoint-project-system"></a>Salvataggio dei dati nelle estensioni del sistema di progetto SharePoint
   Quando si estende il sistema di progetto SharePoint, è possibile salvare i dati di tipo stringa che persiste dopo la chiusura di un progetto SharePoint. I dati sono in genere associato a un elemento di progetto specifico o con il progetto stesso.  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione del sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Associazione di dati personalizzati alle estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
+ [Associazione di dati personalizzati con le estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [Conversione tra tipi di sistemi di progetto SharePoint e altri tipi di progetto Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
   
   

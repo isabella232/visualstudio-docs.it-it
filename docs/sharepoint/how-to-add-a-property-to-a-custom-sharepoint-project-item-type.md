@@ -1,12 +1,10 @@
 ---
-title: "Procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato | Documenti Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa11cdfa8b46b6dcba889e00068676af5bdd5450
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2da3ebd75ef8b195b0e4c6117b28a6bc294ac050
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato
   Quando si definisce un tipo di elemento di progetto SharePoint personalizzato, è possibile aggiungere una proprietà per l'elemento del progetto. La proprietà viene visualizzata nel **proprietà** finestra quando è selezionato l'elemento del progetto in **Esplora**.  
@@ -53,11 +52,11 @@ ms.lasthandoff: 01/10/2018
   
 -   <xref:System.ComponentModel.DisplayNameAttribute>: Specifica il nome della proprietà che è presente il **proprietà** finestra.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Specifica la stringa di descrizione che verrà visualizzata nella parte inferiore del **proprietà** finestra quando la proprietà è selezionata.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Specifica la stringa di descrizione che verrà visualizzata nella parte inferiore della **proprietà** finestra quando la proprietà è selezionata.  
   
 -   <xref:System.ComponentModel.DefaultValueAttribute>: Specifica il valore predefinito della proprietà.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Specifica una conversione personalizzata tra la stringa che viene visualizzata nel **proprietà** finestra e un valore di proprietà non stringa.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Specifica una conversione personalizzata tra la stringa che viene visualizzata nella **proprietà** finestra e un valore di proprietà non stringa.  
   
 -   <xref:System.ComponentModel.EditorAttribute>: Specifica un editor personalizzato da utilizzare per modificare la proprietà.  
   

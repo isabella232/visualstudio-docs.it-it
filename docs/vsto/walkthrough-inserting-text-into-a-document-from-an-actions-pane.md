@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Inserimento di testo in un documento da un riquadro azioni | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9e562f66dd43b4adc45727c8de1457a24ddf97b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: inserimento di testo in un documento da un riquadro azioni
   Questa procedura dettagliata viene illustrato come creare un riquadro azioni in un documento di Microsoft Office Word. Nel riquadro azioni contiene due controlli per la raccolta di input e quindi inviano il testo al documento.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Nel documento di Word, digitare il testo seguente:  
   
-     **21 marzo 2008.**  
+     **21 marzo 2008**  
   
      **Name**  
   
@@ -114,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Name**|**getName**|  
+    |**Name**|**GetName**|  
     |**Dimensione**|**130, 20**|  
   
 5.  Aggiungere un secondo **etichetta** al controllo del riquadro azioni e modificare il **testo** proprietà **indirizzo**.  
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/10/2018
   
     |Proprietà|Valore|  
     |--------------|-----------|  
-    |**Name**|**getAddress**|  
+    |**Name**|**GetAddress**|  
     |**Accetta restituito**|**True**|  
     |**Multiline**|**True**|  
     |**Dimensione**|**130, 40**|  

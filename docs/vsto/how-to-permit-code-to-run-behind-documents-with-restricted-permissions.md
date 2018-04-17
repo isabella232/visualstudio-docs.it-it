@@ -1,12 +1,10 @@
 ---
-title: 'Procedura: consentire codice per l''esecuzione sottostante i documenti con autorizzazioni limitate | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: consentire codice per l'esecuzione sottostante i documenti con autorizzazioni limitate | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09336e72cc9e1e1bc0a407314d4fa9fd6bc2a2c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: eb5b9421bd6d0228a93ba7ba7516c9ebc7b7c761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: supportare l'esecuzione di codice sottostante i documenti con autorizzazioni limitate
   È possibile utilizzare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o una cartella di lavoro. Per impostazione predefinita, il codice dietro a un documento con limitazioni di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel non è consentito per l'esecuzione. È possibile modificare il valore predefinito in modo che le estensioni di codice gestito possono accedere il modello a oggetti e la soluzione funzionerà.  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
  Word o Excel consentirà l'accesso programmatico al modello a oggetti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cenni preliminari sulle estensioni di codice gestito e di Information Rights Management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Information Rights Management e Cenni preliminari sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
  [Protezione con password nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
  [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   

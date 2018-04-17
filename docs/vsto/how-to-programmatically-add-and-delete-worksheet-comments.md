@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: aggiungere a livello di codice ed eliminare commenti di foglio di lavoro | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - comments, worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9351dd018c2db4832db20a4abbdaa050f060793e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0891524a9172c3c7adf0ca0ce55173dffb0ad19b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Procedura: Aggiungere ed eliminare commenti in un foglio di lavoro a livello di codice
   È possibile aggiungere ed eliminare commenti a livello di codice nei fogli di lavoro di Microsoft Office Excel. I commenti possono essere aggiunti solo a singole celle, non a intervalli con più celle.  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Utilizzo dei fogli di lavoro](../vsto/working-with-worksheets.md)   
- [Procedura: visualizzare a livello di codice i commenti in un foglio di lavoro](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [Procedura: visualizzare a livello di programmazione commenti in un foglio di lavoro](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [Controllo NamedRange](../vsto/namedrange-control.md)  
   
   

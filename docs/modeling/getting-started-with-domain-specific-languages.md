@@ -1,21 +1,19 @@
 ---
 title: Introduzione a linguaggi specifici del dominio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 791686b948c5a0541cbe8f8cb420f38ef885c9d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
 Questo argomento illustra i concetti di base per la definizione e utilizzo di un linguaggio specifico di dominio (DSL) creato con il SDK di modellazione per Visual Studio.
@@ -30,7 +28,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
   
  Quando è stato progettato un linguaggio DSL, è possibile distribuire come parte di un pacchetto di Visual Studio Integration Extension (VSIX). Gli utenti lavorano con DSL in Visual Studio:  
   
- ![Diagramma dell'albero genealogico e casella degli strumenti Esplora](../modeling/media/familyt_instance.png "FamilyT_Instance")  
+ ![Diagramma dell'albero genealogico, casella degli strumenti ed explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
  La notazione è solo una parte di un linguaggio DSL. Con la notazione, il pacchetto VSIX include strumenti che gli utenti possono applicare per modificare e generare il materiale dai relativi modelli.  
   
@@ -62,7 +60,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
   
 3.  Fare clic su **progettazione linguaggio specifico di dominio**.  
   
-     ![Creare una finestra di dialogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
+     ![Creare finestra di dialogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
 4.  Nel **nome** digitare **albero genealogico FamilyTree**. Fare clic su **OK**.  
   
@@ -100,9 +98,9 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
   
 -   **Progetto DSL** questo progetto contiene codice che definisce il linguaggio specifico di dominio.  
   
--   **Progetto DslPackage** questo progetto contiene codice che consenta di istanze di DSL per essere aperti e modificati in Visual Studio.  
+-   **Progetto DslPackage** questo progetto contiene codice che consenta le istanze di DSL per essere aperti e modificati in Visual Studio.  
   
-##  <a name="Debugging"></a>Esecuzione del linguaggio DSL  
+##  <a name="Debugging"></a> Esecuzione del linguaggio DSL  
  È possibile eseguire la soluzione DSL, non appena è stato creato. In un secondo momento, è possibile modificare la definizione DSL, gradualmente, eseguire la soluzione dopo ogni modifica.  
   
 #### <a name="to-experiment-with-the-dsl"></a>Per sperimentare del linguaggio DSL  
@@ -273,7 +271,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
   
 6.  In un file con estensione TT, è possibile aggiungere il codice che ottiene le proprietà di ogni persona.  
   
- ![Diagramma dell'albero genealogico e casella degli strumenti Esplora](../modeling/media/familyt_instance.png "FamilyT_Instance")  
+ ![Diagramma dell'albero genealogico, casella degli strumenti ed explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
 ### <a name="define-new-classes"></a>Definire nuove classi  
  È possibile aggiungere relazioni e le classi di dominio a un modello. Ad esempio, è possibile creare una nuova classe per rappresentare città e una nuova relazione per rappresentare che una persona lunga in una città.  
@@ -391,7 +389,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
   
  Per ulteriori informazioni, vedere [soluzioni per la distribuzione di un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a>Rimozione di vecchi DSL sperimentale  
+##  <a name="Reset"></a> Rimozione di vecchi DSL sperimentale  
  Se è stato creato sperimentale DSL che desidera, è possibile rimuoverli dal computer reimpostando l'istanza sperimentale di Visual Studio.  
   
  Verranno rimossi dal computer tutte DSL sperimentale e altre estensioni di Visual Studio sperimentale. Si tratta di estensioni che sono state eseguite in modalità di debug.  

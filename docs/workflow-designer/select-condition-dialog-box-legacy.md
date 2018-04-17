@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6239e9032521fb178e8e1b6e4a0920af77e0e0
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Finestra di dialogo Seleziona condizione (legacy)
 Questo argomento viene descritto come utilizzare il **Seleziona condizione** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -37,8 +37,8 @@ Questo argomento viene descritto come utilizzare il **Seleziona condizione** nel
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
-|**New...**|Fare clic per aprire la [finestra di dialogo Editor regole condizione (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) per creare una nuova condizione della regola.|
-|**Edit...**|Fare clic per aprire la [finestra di dialogo Editor regole condizione (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) per modificare la condizione della regola selezionata.|
+|**Nuovo...**|Fare clic per aprire la [finestra di dialogo Editor regole condizione (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) per creare una nuova condizione della regola.|
+|**Modifica...**|Fare clic per aprire la [finestra di dialogo Editor regole condizione (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) per modificare la condizione della regola selezionata.|
 |**Rinomina**|Fare clic per aprire una finestra di dialogo usata per rinominare la condizione della regola selezionata.|
 |**Eliminazione**|Fare clic per eliminare la condizione della regola selezionata.|
 |**Anteprima della condizione**|Visualizza l'espressione della condizione per la condizione della regola selezionata.|

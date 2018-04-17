@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5650db4a140b216806f36239da955ee771cb8da
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 28982b16f9eebcaf34eba900303b92eaef870e31
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rethrow-activity-designer"></a>ActivityDesigner Rethrow
 Il **Rethrow** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Rethrow> attività.

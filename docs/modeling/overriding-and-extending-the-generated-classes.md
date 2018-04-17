@@ -1,23 +1,21 @@
 ---
 title: Si esegue l'override ed estendere le classi generate | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f86600b6fd4bb272ece4454e9a94032ed05f3af1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 80dd80a88b0244008efde9b10a1706ff18ba6136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Override ed estensione delle classi generate
 La definizione DSL è una piattaforma in cui è possibile compilare un potente set di strumenti che dipendono da un linguaggio specifico di dominio. Eseguendo l'override e di estendere le classi generate dalla definizione del linguaggio DSL è possono eseguire molte estensioni e gli adeguamenti. Tali classi includono non solo le classi di dominio che è stato definito in modo esplicito nel diagramma della definizione DSL, ma anche altre classi che definiscono la casella degli strumenti, Esplora, la serializzazione e così via.  
@@ -58,7 +56,7 @@ La definizione DSL è una piattaforma in cui è possibile compilare un potente s
   
 -   `CirculationBookBase`, che è una classe astratta e che contiene tutti i metodi e proprietà.  
   
--   `CirculationBook`, che deriva da `CirculationBookBase`. È vuoto, ad eccezione di costruttori.  
+-   `CirculationBook`, che viene derivata da `CirculationBookBase`. È vuoto, ad eccezione di costruttori.  
   
  Per eseguire l'override di qualsiasi metodo, si crea una definizione parziale della classe derivata, ad esempio `CirculationBook`. È possibile eseguire l'override di entrambi i metodi ereditati da framework di modellazione e i metodi generati.  
   

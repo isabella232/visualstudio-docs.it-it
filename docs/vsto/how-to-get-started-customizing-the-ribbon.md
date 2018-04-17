@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: iniziare a personalizzare la barra multifunzione | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6856ca88f6f8d0b6d0c983da2ee068e5618964b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 304cf3e9d445bcb655e27e8e35605549f489155c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procedura: iniziare a personalizzare la barra multifunzione
   Per personalizzare la barra multifunzione di un'applicazione di Microsoft Office, aggiungere un **della barra multifunzione (finestra di progettazione visiva)** o **della barra multifunzione (XML)** elemento a un progetto di Office.  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
  [Barra multifunzione XML](../vsto/ribbon-xml.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procedura dettagliata: Creazione di una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Procedura dettagliata: creazione di una scheda personalizzata mediante l'XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

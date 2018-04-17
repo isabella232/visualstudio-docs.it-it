@@ -1,21 +1,19 @@
 ---
-title: "Controllare la visibilità di un'icona o di un elemento Decorator | Documenti Microsoft"
-ms.custom: 
+title: Controllare la visibilità di un'icona o di un elemento Decorator | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 835d9d356a06c831bb3decf6d0a5a6a4b5620302
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7682bbb448caa6dbd1938dfc6dcdb6d89c083680
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in una forma in un linguaggio specifico di dominio (DSL). È possibile visualizzare l'elemento decorator e scompaiono a seconda dello stato delle proprietà nel modello. Su una forma che rappresenta una persona, ad esempio, è possibile usare le icone diverse che vengono visualizzate in base al sesso dell'utente, numero di elementi figlio e così via.  
@@ -63,11 +61,11 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
      **IsBrowsable =**`False`**-in tal modo, la proprietà da parte dell'utente**   
   
-     **Tipo =**`Calculated`**-ciò significa che verrà fornito il codice che calcola il valore**   
+     **Tipo =**`Calculated`**-ciò significa che verrà fornito il codice che calcola il relativo valore**   
   
      **Nome** ad esempio **DecoratorControl**  
   
-     **Tipo** = `Boolean`  
+     **tipo** = `Boolean`  
   
      Per ulteriori informazioni, vedere [calcolate e le proprietà di archiviazione personalizzato](../modeling/calculated-and-custom-storage-properties.md).  
   
@@ -108,6 +106,6 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
 ## <a name="see-also"></a>Vedere anche  
  [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)   
- [L'impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)   
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

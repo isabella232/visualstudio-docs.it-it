@@ -1,12 +1,10 @@
 ---
 title: Progettazione di un modello di integrazione applicativa dei dati Business | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Progettazione di un modello di integrazione applicativa dei dati
   È possibile sviluppare un modello per il servizio di integrazione applicativa dei dati (BDC) mediante l'aggiunta di metodi e le entità in un file di modello. Un'entità descrive una raccolta di campi dati. Ad esempio, un'entità può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio aggiunta, eliminazione o aggiornamento dei dati rappresentati dalle entità. Per ulteriori informazioni, vedere [l'integrazione di dati di Business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio consente di copiare i descrittori di tipo tra i parametri del modello. Ad esempio, è possibile definire un descrittore di tipo denominato `CustomerTD` per il parametro restituito di `GetCustomer` metodo. È possibile copiare il `CustomerTD` digitare descrittore nel **Esplora integrazione applicativa dei dati**e quindi incollare il descrittore di tipo per il parametro di input di `CreateCustomer` (metodo). Ciò impedisce all'utente di dover definire più di una volta il descrittore di tipo stesso.  
   
-##  <a name="MethodInstances"></a>Istanze (metodo)  
+##  <a name="MethodInstances"></a> Istanze (metodo)  
  Quando si crea un metodo, Visual Studio aggiunge un'istanza predefinita del metodo. Un'istanza del metodo è un riferimento a un metodo, più i valori predefiniti per i parametri. Un singolo metodo può avere più istanze di metodo. Ogni istanza è una combinazione di firma del metodo e un set di valori predefiniti. Per ulteriori informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Quando si esegue il progetto, vengono visualizzate le istanze di metodo in un elenco a discesa sopra l'elenco di SharePoint. Gli utenti possono scegliere istanze del metodo per visualizzare i dati.  

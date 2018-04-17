@@ -1,23 +1,21 @@
 ---
-title: "Proprietà di archiviazione personalizzati e calcolati | Documenti Microsoft"
-ms.custom: 
+title: Proprietà di archiviazione personalizzati e calcolati | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora risorse della lingua e sono accessibili da codice programma. Tuttavia, le proprietà variano in modo che i relativi valori vengono archiviati.  
@@ -84,7 +82,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
   
 10. Verificare la proprietà. Assicurarsi che si tenta di **Annulla** e **Ripeti**.  
   
-##  <a name="setters"></a>Le transazioni e i metodi di impostazione personalizzati  
+##  <a name="setters"></a> Le transazioni e setter personalizzato  
  Nel metodo Set della proprietà di archiviazione personalizzata, non è necessario aprire una transazione, poiché il metodo viene chiamato in genere all'interno di una transazione attiva.  
   
  Tuttavia, il metodo Set potrebbe anche essere chiamato se l'utente richiama l'annullamento o ripristino oppure se una transazione è in fase di rollback. Quando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> è true, il metodo Set deve comportarsi come indicato di seguito:  
@@ -111,6 +109,6 @@ void SetAgeValue(int value)
  Per ulteriori informazioni sulle transazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Proprietà del dominio](../modeling/properties-of-domain-properties.md)   
  [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)

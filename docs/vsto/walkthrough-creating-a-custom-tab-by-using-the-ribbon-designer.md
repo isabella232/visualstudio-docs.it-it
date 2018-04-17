@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la finestra di progettazione della barra multifunzione | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Procedura dettagliata: creazione di una scheda personalizzata utilizzando la finestra di progettazione della barra multifunzione
   Usando la finestra di progettazione della barra multifunzione è possibile creare una scheda personalizzata per aggiungervi e posizionarvi controlli.  
@@ -38,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Creazione di una scheda personalizzata](#BKMK_CreateCustomTab).  
   
--   [Attivazione e disattivazione della visualizzazione di riquadri azioni mediante i pulsanti della scheda personalizzata](#BKMK_HideShowActionsPane).  
+-   [Attivazione e disattivazione della visualizzazione dei riquadri azioni mediante i pulsanti della scheda personalizzata](#BKMK_HideShowActionsPane).  
   
 > [!NOTE]  
 >  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Verrà visualizzata la nuova cartella di lavoro nella finestra di progettazione di Visual Studio e aggiunge il **MyExcelRibbon** progetto **Esplora**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Creazione di riquadri azioni  
+##  <a name="BKMK_CreateActionsPanes"></a> Creazione di riquadri azioni  
  Aggiungere due riquadri azioni personalizzati al progetto. Successivamente si aggiungeranno alcuni pulsanti che mostrano e nascondono questi riquadri azioni alla scheda personalizzata.  
   
 #### <a name="to-create-actions-panes"></a>Per creare i riquadri azioni  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Ripetere i passaggi da 1 a 5 per creare un secondo riquadro azioni e una seconda etichetta. Impostare il **testo** proprietà della seconda etichetta su **Actions Pane 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Creazione di una scheda personalizzata  
+##  <a name="BKMK_CreateCustomTab"></a> Creazione di una scheda personalizzata  
  Per la progettazione di applicazioni di Office, è necessario che gli utenti abbiano sempre il controllo dell'interfaccia utente dell'applicazione di Office. Per aggiungere questa funzionalità relativa ai riquadri azioni, è possibile aggiungere pulsanti che mostrano e nascondono ciascun riquadro azioni da una scheda personalizzata della barra multifunzione. Per creare una scheda personalizzata, aggiungere un **della barra multifunzione (finestra di progettazione visiva)** elemento al progetto. La finestra di progettazione consente di aggiungere e posizionare controlli, impostarne le proprietà e gestirne gli eventi.  
   
 #### <a name="to-create-a-custom-tab"></a>Per creare una scheda personalizzata  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Impostare il **etichetta** proprietà **Hide Actions Pane**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Attivazione e disattivazione della visualizzazione di riquadri azioni mediante i pulsanti della scheda personalizzata  
+##  <a name="BKMK_HideShowActionsPane"></a> Attivazione e disattivazione della visualizzazione dei riquadri azioni mediante i pulsanti della scheda personalizzata  
  L'ultimo passaggio consiste nell'aggiungere codice che risponde all'utente. Aggiungere gestori eventi per gli eventi <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> dei due pulsanti e per l'evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> dell'interruttore. Aggiungere codice a questi gestori eventi per abilitare e disabilitare la visualizzazione dei riquadri azioni.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Per nascondere e mostrare i riquadri azioni mediante i pulsanti della scheda personalizzata  

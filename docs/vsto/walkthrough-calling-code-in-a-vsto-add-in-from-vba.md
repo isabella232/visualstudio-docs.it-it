@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Chiamata di codice in un componente aggiuntivo VSTO da VBA | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 677ddfef196c79d1dd696889fd16dcfa0300ccff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Procedura dettagliata: chiamata di codice in un componente aggiuntivo VSTO da VBA
   Questa procedura dettagliata descrive come esporre un oggetto in un componente aggiuntivo VSTO ad altre soluzioni Microsoft Office, tra cui Visual Basic, Applications Edition (VBA) e i componenti aggiuntivi VSTO COM.  
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
 3.  Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .  
   
     > [!NOTE]  
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: visualizzare la scheda Sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  Nel gruppo **Codice** , selezionare **Visual Basic**.  
   

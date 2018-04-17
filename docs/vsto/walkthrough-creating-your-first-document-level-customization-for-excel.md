@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di una personalizzazione a livello di documento per Excel | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Procedura dettagliata: creazione di una personalizzazione a livello di documento per Excel
   Questa procedura dettagliata introduttiva mostra come creare una personalizzazione a livello di documento per Microsoft Office Excel. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre una cartella di lavoro specifica. Una personalizzazione a livello di documento non può essere usata per apportare modifiche a un'intera applicazione, ad esempio per visualizzare una nuova scheda della barra multifunzione quando si apre una cartella di lavoro qualsiasi.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Selezionare **creare un nuovo documento**, fare clic su **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Crea il **FirstWorkbookCustomization** del progetto e aggiunge i file seguenti al progetto.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il **FirstWorkbookCustomization** del progetto e aggiunge i file seguenti al progetto.  
   
     -   *FirstWorkbookCustomization*xlsx - rappresenta la cartella di lavoro di Excel nel progetto. Contiene tutti i fogli di lavoro e i grafici.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Distribuzione di personalizzazioni a livello di documento per Excel: [distribuisce una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Cenni preliminari sullo sviluppo di soluzioni di Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluzioni Excel](../vsto/excel-solutions.md)   
  [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)   
  [Panoramica del modello oggetto di Excel](../vsto/excel-object-model-overview.md)   

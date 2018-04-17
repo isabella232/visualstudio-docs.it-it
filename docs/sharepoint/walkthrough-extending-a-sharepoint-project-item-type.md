@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Estensione di un tipo di elemento di progetto SharePoint | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint
   È possibile utilizzare il **modello di integrazione applicativa dei dati di Business** elemento di progetto per creare un modello per il servizio di integrazione applicativa dei dati (BDC) in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando l'elemento del progetto, i dati nel modello non viene visualizzati agli utenti. È inoltre necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.  
@@ -80,9 +79,9 @@ ms.lasthandoff: 01/10/2018
   
 6.  Nel **nome** immettere **GenerateExternalDataLists**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **GenerateExternalDataLists** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **GenerateExternalDataLists** progetto **Esplora**.  
   
-7.  Se il file vsixmanifest viene aperto automaticamente, aprire il menu di scelta rapida nel progetto GenerateExternalDataLists e quindi scegliere **aprire**  
+7.  Se il file vsixmanifest non viene aperto automaticamente, aprire il menu di scelta rapida nel progetto GenerateExternalDataLists e quindi scegliere **aprire**  
   
 8.  Verificare che il file vsixmanifest disponga di una voce non vuote (invio di Contoso) per il campo dell'autore, salvare il file e chiuderlo.  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Nel **nome** immettere **BdcProjectItemExtension**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **BdcProjectItemExtension** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **BdcProjectItemExtension** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 6.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -297,7 +296,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione del sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
- [Creazione di un modello di integrazione applicativa dei dati Business](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Creazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

@@ -1,12 +1,10 @@
 ---
 title: Dati nelle procedure dettagliate di soluzioni Office | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Procedure dettagliate relative ai dati nelle soluzioni Office
   Le procedure dettagliate seguenti mostrano come usare i dati nelle personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per Microsoft Office Word e Microsoft Office Excel.  
@@ -65,9 +64,9 @@ ms.lasthandoff: 01/10/2018
  [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)   
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)   
  [Procedure dettagliate di personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization-walkthroughs.md)   
- [Sicurezza e procedure dettagliate di distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
- [Esempi di sviluppo di Office](../vsto/office-development-samples.md)   
- [Guida introduttiva &#40; sviluppo per Office in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Sicurezza e procedure dettagliate sulla distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
+ [Esempi di sviluppo Office](../vsto/office-development-samples.md)   
+ [Introduzione al &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Attività comuni nella programmazione con Office](../vsto/common-tasks-in-office-programming.md)   
  [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
   

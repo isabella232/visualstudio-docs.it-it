@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3980b43b090a0a6321ee0133e2c0ad4f5cbbffde
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 94b55e4b9f7f2b1d4e571b11fcdc4fba4d4f6754
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procedura: utilizzare la finestra di progettazione importazioni
 La finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi usati nelle espressioni. Analogamente il **Importa** o **utilizzando** parole chiave in Visual Basic e c#, che specifica gli spazi dei nomi nella finestra di progettazione importazioni consentono di immettere un nome di tipo in un'espressione anziché un nome completo nome del tipo di versione.  

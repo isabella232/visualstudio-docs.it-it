@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: definire a livello di codice e selezionare intervalli nei documenti | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - ranges, defining in documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0c99b40147d08a924b9f66a0f8a45a29204e37bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 20dd981229c4e48e8d62f51073abccfd2502cf17
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procedura: definire e selezionare intervalli nei documenti a livello di codice
   È possibile definire un intervallo in un documento di Microsoft Office Word usando un oggetto <xref:Microsoft.Office.Interop.Word.Range>. È possibile selezionare l'intero documento in diversi modi, ad esempio, tramite il <xref:Microsoft.Office.Interop.Word.Range.Select%2A> metodo il <xref:Microsoft.Office.Interop.Word.Range> oggetto oppure usando la proprietà Content del <xref:Microsoft.Office.Tools.Word.Document> classe (in una personalizzazione a livello di documento) o <xref:Microsoft.Office.Interop.Word.Document> classe (in un Componente aggiuntivo VSTO).  
@@ -133,7 +132,7 @@ ms.lasthandoff: 01/10/2018
  [Procedura: estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Procedura: recuperare i caratteri iniziale e finale negli intervalli a livello di codice](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
  [Procedura: estendere gli intervalli nei documenti](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Procedura: documenti di reimpostare gli intervalli in Word a livello di codice](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Procedura: a livello di programmazione reimpostare gli intervalli in Word documenti](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Procedura: a livello di programmazione comprimere intervalli o selezioni in documenti](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
  [Procedura: Escludere i segni di paragrafo durante l'inserimento di intervalli a livello di codice](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
   

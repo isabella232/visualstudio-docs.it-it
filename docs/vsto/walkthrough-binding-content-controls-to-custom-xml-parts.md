@@ -1,13 +1,10 @@
 ---
 title: 'Procedura dettagliata: Associazione di controlli contenuto a parti XML personalizzate | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Procedura dettagliata: associazione dei controlli del contenuto a parti XML personalizzate
   Questa procedura dettagliata illustra come associare i controlli contenuto in una personalizzazione a livello di documento per Word a dati XML archiviati nel documento.  
@@ -66,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Creare un progetto documento di Word con il nome **EmployeeControls**. Creare un nuovo documento per la soluzione. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **EmployeeControls** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre il nuovo documento di Word nella finestra di progettazione e aggiunge i **EmployeeControls** progetto **Esplora**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Aggiunta di controlli contenuto al documento  
  Creare una tabella che contiene tre tipi diversi di controlli contenuto in cui un utente può visualizzare o modificare informazioni su un dipendente.  
@@ -281,7 +278,7 @@ ms.lasthandoff: 01/10/2018
     |||  
     |-|-|  
     |**Nome del dipendente**|**Karina Leal**|  
-    |**Data di assunzione**|**1 aprile 1999.**|  
+    |**Data di assunzione**|**1 aprile 1999**|  
     |**Titolo**|**Manager**|  
   
 3.  Scegliere la cella a destra del **nome dipendente** di cella e digitare un nome diverso.  
@@ -326,8 +323,8 @@ ms.lasthandoff: 01/10/2018
  [Controlli contenuto](../vsto/content-controls.md)   
  [Procedura: aggiungere controlli contenuto ai documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Procedura: proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

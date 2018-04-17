@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: ridimensionare i controlli NamedRange | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ranges, resizing in Excel
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91d44f3ddd65c9e949c44b50d069c91c7beef5b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6d475f9140607ba0ae7415a60a9589aef11a44a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Procedura: Ridimensionare i controlli NamedRange
   È possibile impostare la dimensione di un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> quando lo si aggiunge a un documento di Microsoft Office Excel; tuttavia, potrebbe essere necessario ridimensionarlo in seguito.  
@@ -95,11 +94,11 @@ ms.lasthandoff: 01/10/2018
  [Estensione di documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Procedura: aggiungere controlli NamedRange a fogli di lavoro](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Procedura: ridimensionare i controlli segnalibro](../vsto/how-to-resize-bookmark-controls.md)   
+ [Procedura: ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
  [Procedura: Ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)  
   
   

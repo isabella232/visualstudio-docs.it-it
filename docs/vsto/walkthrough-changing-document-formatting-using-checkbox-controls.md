@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Modifica della formattazione dei documenti mediante controlli CheckBox | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5b99f1a5d05d1eac173c40e7cc0c3b989f7c0cd3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: modifica della formattazione dei documenti mediante i controlli CheckBox
   Questa procedura dettagliata viene illustrato come utilizzare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.  
@@ -91,7 +90,7 @@ ms.lasthandoff: 01/10/2018
     |Proprietà|Valore|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**per**|**Carattere di sottolineatura**|  
+    |**per**|**carattere di sottolineatura**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>Per aggiungere testo e un controllo Bookmark  
   
@@ -107,7 +106,7 @@ ms.lasthandoff: 01/10/2018
   
      Oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> controllo denominato **Bookmark1** viene aggiunto al testo selezionato nel documento.  
   
-4.  Nel **proprietà** finestra, modificare il valore della **(nome)** proprietà **fontText.**  
+4.  Nel **le proprietà** finestra, modificare il valore della **(nome)** proprietà **fontText.**  
   
  Successivamente, scrivere il codice per formattare il testo quando una casella di controllo è selezionata o deselezionata.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)   
- [Procedure dettagliate ed esempi di sviluppo di office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange (controllo)](../vsto/namedrange-control.md)   
  [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

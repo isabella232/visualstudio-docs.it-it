@@ -1,23 +1,21 @@
 ---
-title: "Attività di progettazione XML Schema | Documenti Microsoft"
-ms.custom: 
+title: Attività di progettazione XML Schema | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: f413f208-696f-446a-bb78-7fc55cf96d6c
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8847f079646f2c90d50c7a7f3c8ecbd5c510150
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 500350673e8392491d07202b2a38197546a1f8ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-designer-tasks"></a>Attività di Progettazione XML Schema
 Contenuto della sezione viene descritto come completare attività comuni con gli strumenti di Progettazione XML Schema.  

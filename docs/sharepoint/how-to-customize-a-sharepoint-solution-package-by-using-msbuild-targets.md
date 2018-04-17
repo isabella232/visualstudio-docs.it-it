@@ -1,13 +1,10 @@
 ---
 title: 'Procedura: personalizzare un pacchetto di soluzione SharePoint tramite le destinazioni di MSBuild | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procedura: personalizzare un pacchetto della soluzione SharePoint tramite le destinazioni di MSBuild
   È possibile personalizzare la modalità di creazione di Visual Studio dei file di pacchetto (con estensione wsp) di SharePoint tramite le destinazioni di MSBuild a un prompt di comandi. Ad esempio è possibile personalizzare le proprietà di MSBuild per modificare la directory intermedia dei pacchetti e i gruppi di elementi di MSBuild con cui si specificano i file enumerati.  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Aprire il progetto, aprire il menu di scelta rapida e quindi scegliere **Scarica progetto**.  
   
-4.  In **Esplora**, aprire il menu di scelta rapida per il progetto e quindi scegliere **modifica***ProjectName***vbproj** o **Modifica***ProjectName***csproj**.  
+4.  In **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto e quindi scegliere **modificare***ProjectName***vbproj** oppure **modifica***ProjectName*** csproj**.  
   
 5.  Dopo la riga `Import` verso la fine del file di progetto, aggiungere la seguente riga.  
   

@@ -1,24 +1,22 @@
 ---
 title: I gestori eventi propagano le modifiche apportate all'esterno del modello | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c91264d459648315fa7ce2c0d58651383ea9edd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 In Visualization and Modeling SDK, è possibile definire i gestori di eventi di archivio per propagare le modifiche alle risorse all'esterno di archivio, ad esempio non archiviare variabili, i file, i modelli in altri archivi o altri [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estensioni. Dopo la fine della transazione in cui si è verificato l'evento trigger vengono eseguiti i gestori di eventi di archivio. Vengono inoltre eseguite in un'operazione di annullamento o ripetizione. Diversamente dalle regole di archivio, di conseguenza, gli eventi di archiviazione sono più utili per l'aggiornamento dei valori che non rientrano nell'archivio. A differenza degli eventi di .NET, gestori di eventi di archivio vengono registrati per l'ascolto su una classe: non è necessario registrare un gestore separato per ogni istanza. Per ulteriori informazioni su come scegliere tra diversi modi per gestire le modifiche, vedere [propagazione delle modifiche e risposta agli](../modeling/responding-to-and-propagating-changes.md).  
@@ -29,13 +27,13 @@ In Visualization and Modeling SDK, è possibile definire i gestori di eventi di 
   
 1.  Scegliere il tipo di evento che si desidera monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Ogni proprietà corrisponde a un tipo di evento. Utilizzato con maggiore frequenza sono tipi di evento:  
   
-    -   `ElementAdded`-attivata quando un elemento del modello, viene creato il collegamento di relazione, forma o il connettore.  
+    -   `ElementAdded` -attivata quando un elemento del modello, viene creato il collegamento di relazione, forma o il connettore.  
   
     -   ElementPropertyChanged - attivato quando il valore di un `Normal` viene modificata la proprietà dominio. L'evento viene generato solo se i valori nuovi e precedenti non sono uguali. L'evento non può essere applicato alle proprietà di archiviazione calcolate e personalizzate.  
   
          Non può essere applicato alle proprietà del ruolo che corrispondono ai collegamenti delle relazioni. Utilizzare invece `ElementAdded` per monitorare la relazione di dominio.  
   
-    -   `ElementDeleted`-attivata dopo un elemento del modello, relazione, forma o il connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma non avrà Nessuna relazione agli altri elementi.  
+    -   `ElementDeleted` -attivata dopo un elemento del modello, relazione, forma o il connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma non avrà Nessuna relazione agli altri elementi.  
   
 2.  Aggiungere una definizione di classe parziale per *YourDsl * * * DocData** in un file di codice separato nella **DslPackage** progetto.  
   
@@ -43,7 +41,7 @@ In Visualization and Modeling SDK, è possibile definire i gestori di eventi di 
   
 4.  Eseguire l'override `OnDocumentLoaded()` per registrare il gestore. Se si dispone di più di un gestore, è possibile registrare tutti nella stessa posizione.  
   
- Il percorso del codice di registrazione non critico. `DocView.LoadView()`è un percorso alternativo.  
+ Il percorso del codice di registrazione non critico. `DocView.LoadView()` è un percorso alternativo.  
   
 ```  
 using System;  
@@ -174,7 +172,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Archiviare i tipi di evento  
  Ogni tipo di evento corrisponde a una raccolta in Store.EventManagerDirectory. È possibile aggiungere o rimuovere i gestori eventi in qualsiasi momento, ma è normale per aggiungerle quando il documento viene caricato.  
   
-|`EventManagerDirectory`Nome della proprietà|È stata eseguita quando|  
+|`EventManagerDirectory` Nome della proprietà|È stata eseguita quando|  
 |-------------------------------------------|-------------------|  
 |ElementAdded|Viene creata un'istanza di classe di dominio, relazione di dominio, forma, connettore o diagramma.|  
 |ElementDeleted|Un elemento del modello è stato rimosso dalla directory degli elementi dell'archivio e non è più l'origine o la destinazione di una relazione. L'elemento non viene eliminata dalla memoria, ma verrà mantenuto in caso di un annullamento future.|  

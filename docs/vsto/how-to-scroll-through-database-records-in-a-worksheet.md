@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: scorrere i record del Database in un foglio di lavoro | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], scrolling records
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f7e6ea8269401a8b026da2562eff96e50820e0a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a092cec68e59914b498ab3b935f58b6ef0c37f05
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: scorrere i record di un database in un foglio di lavoro
   La procedura seguente viene illustrato come utilizzare la finestra di progettazione per visualizzare un singolo campo di una tabella di database in un foglio di lavoro di Microsoft Office Excel, con i controlli che consentono all'utente di scorrere tutti i record.  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Trascinare il <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella in cui si desidera visualizzare i dati.  
   
-6.  Dal **Windows Form** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.BindingNavigator> al foglio di lavoro e impostare i controlli che si desidera utilizzare. Per ulteriori informazioni, vedere [Cenni preliminari sul controllo BindingNavigator &#40; Windows Form &#41; ](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+6.  Dal **Windows Form** scheda della finestra di **della casella degli strumenti**, aggiungere un <xref:System.Windows.Forms.BindingNavigator> al foglio di lavoro e impostare i controlli che si desidera utilizzare. Per altre informazioni, vedere [Cenni preliminari sul controllo BindingNavigator &#40;Windows Form&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associazione di dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)  

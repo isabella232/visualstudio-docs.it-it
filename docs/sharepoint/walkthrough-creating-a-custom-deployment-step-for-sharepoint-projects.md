@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di un passaggio di distribuzione personalizzato per i progetti SharePoint | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: creazione di un passaggio di distribuzione personalizzato per progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include numerosi passaggi di distribuzione predefinite, ma è anche possibile creare una propria.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Scegliere il **progetto VSIX** modello, denominare il progetto **UpgradeDeploymentStep**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **UpgradeDeploymentStep** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **UpgradeDeploymentStep** progetto **Esplora**.  
   
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Scegliere il **libreria di classi** modello di progetto, denominare il progetto **DeploymentStepExtension**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **DeploymentStepExtension** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **DeploymentStepExtension** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 5.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Scegliere il **fine** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Crea il progetto EmployeesListDefinition.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto EmployeesListDefinition.  
   
 8.  Aprire il menu di scelta rapida per il progetto EmployeesListDefinition, scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.  
   
@@ -283,13 +282,13 @@ ms.lasthandoff: 01/10/2018
   
 11. Nel **scegliere le impostazioni dell'elenco** pagina, verificare le impostazioni seguenti e quindi scegliere il **fine** pulsante:  
   
-    1.  **Elenco di dipendenti** presenti il **il nome che si desidera visualizzare per l'elenco?** casella.  
+    1.  **Elenco di dipendenti** viene visualizzato nel **nome che si desidera visualizzare per l'elenco?** casella.  
   
     2.  Il **creare un elenco personalizzabile in base a:** viene scelto il pulsante di opzione.  
   
     3.  **Predefinito (vuoto)** viene scelto nel **creare un elenco personalizzabile in base a:** elenco.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Crea la voce di elenco di dipendenti con una colonna del titolo e una singola istanza vuota e verrà visualizzata la finestra di progettazione di elenco.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea la voce di elenco di dipendenti con una colonna del titolo e una singola istanza vuota e verrà visualizzata la finestra di progettazione di elenco.  
   
 12. Nella finestra di progettazione di elenco sul **colonne** scheda, scegliere il **digitare un nome di colonna nuovo o esistente** di riga e quindi aggiungere le colonne seguenti nel **nome visualizzato colonna** elenco:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Verrà visualizzata la proprietà Editor/finestra di progettazione.  
   
-4.  Nel **viste** scheda, scegliere il **posta elettronica** colonna e quindi scegliere il  **<**  chiave per spostare la colonna dal **colonneselezionate**elenco il **colonne disponibili** elenco.  
+4.  Nel **viste** scheda, scegliere il **posta elettronica** colonna e quindi scegliere il **<** chiave per spostare la colonna dal **colonneselezionate**elenco il **colonne disponibili** elenco.  
   
      Questa azione rimuove la visualizzazione predefinita di questi campi di **dipendenti** elenco nel sito di SharePoint.  
   

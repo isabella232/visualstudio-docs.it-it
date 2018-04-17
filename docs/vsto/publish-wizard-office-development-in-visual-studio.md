@@ -1,12 +1,10 @@
 ---
 title: Pubblicazione guidata (sviluppo per Office in Visual Studio) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
   Utilizzare il **pubblicazione guidata** per copiare i file di soluzione in una posizione specifica, creare i file manifesto e creare un programma di installazione.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Ogni sezione riportata di seguito descrive una pagina della procedura guidata.  
   
 ## <a name="where-do-you-want-to-publish-the-application"></a>In cui si desidera pubblicare l'applicazione?  
- **Specificare il percorso per la pubblicazione dell'applicazione**  
+ **Specificare il percorso in cui pubblicare l'applicazione**  
  Obbligatorio. Percorso di pubblicazione è la directory in cui il **pubblicazione guidata** copia i file della soluzione, ad esempio i manifesti, gli assembly, il certificato temporaneo e altri file della compilazione. È necessario l'accesso in scrittura a questa directory.  
   
  Digitare il percorso come un percorso su disco, una condivisione file, un sito FTP o URL del sito web oppure fare clic su di **Sfoglia** per cercare il percorso. Il percorso può essere nei seguenti formati:  
@@ -45,9 +44,9 @@ ms.lasthandoff: 01/10/2018
   
 -   Un percorso UNC Universal Naming Convention (), ad esempio \\\ServerName\MyApplication\\.  
   
--   URL di un sito web, ad esempio http://www.microsoft.com/MyApplication.  
+-   Un URL di un sito web del sito, ad esempio http://www.microsoft.com/MyApplication.  
   
- Per impostazione predefinita, il percorso di pubblicazione è *http://localhost/projectname/* se è installato IIS o la directory publish\ se IIS non è installato.  
+ Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato o la directory Publish \ se si è installato IIS.  
   
 > [!NOTE]  
 >  Se il computer di destinazione è in esecuzione Windows Vista, esistono altre considerazioni. È necessario essere un amministratore nel computer Windows Vista, utilizzare l'opzione di pubblicazione locale. Inoltre, il percorso predefinito è sempre il *pubblicare\\*  directory, indipendentemente dal fatto che IIS sia installato.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Distribuzione di una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Pubblicare una pagina, Progettazione progetti &#40; sviluppo per Office in Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Pagina pubblica, Progettazione progetti &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Distribuzione di una soluzione Office](../vsto/deploying-an-office-solution.md)  
   
   

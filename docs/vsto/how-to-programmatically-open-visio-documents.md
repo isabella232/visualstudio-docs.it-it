@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: aprire documenti di Visio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a558e0cd069c91a490f039198b59aa3a89c83662
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a837b4b12420c65817b6dfb156e0fe47fcdba6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Procedura: Aprire documenti di Visio a livello di codice
   Esistono due metodi per l'apertura di documenti di Microsoft Office Visio esistenti: Open e OpenEx. Il metodo OpenEx è identico al metodo di apertura, ad eccezione del fatto che fornisca gli argomenti in cui il chiamante può specificare la modalità di apertura del documento.  
@@ -54,9 +53,9 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Soluzioni Visio](../vsto/visio-solutions.md)   
  [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)   
- [Procedura: creazione di nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Procedura: creare nuovi documenti di Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
  [Procedura: chiudere a livello di programmazione di documenti di Visio](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Procedura: salvare a livello di programmazione di documenti di Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Procedura: a livello di programmazione salvare documenti di Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
  [Procedura: Stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

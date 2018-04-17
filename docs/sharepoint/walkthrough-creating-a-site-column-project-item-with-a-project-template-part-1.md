@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1 | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Procedura dettagliata: Creazione di un elemento di progetto Colonna del sito con un modello di progetto, parte 1
   I progetti SharePoint sono contenitori per una o più elementi di progetto SharePoint. È possibile estendere il sistema di progetto SharePoint in Visual Studio mediante la creazione di propri tipi di elemento di progetto SharePoint e quindi associarle a un modello di progetto. In questa procedura dettagliata, si definirà un tipo di elemento di progetto per la creazione di una colonna del sito e quindi si creerà un modello di progetto che può essere usato per creare un nuovo progetto che contiene un elemento di progetto colonna del sito.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Si tratta di una procedura dettagliata autonoma. Dopo aver completato questa procedura dettagliata, è possibile migliorare l'elemento del progetto mediante l'aggiunta di una procedura guidata per il modello di progetto. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  È possibile scaricare un esempio che contiene i progetti completati, codice e altri file per questa procedura dettagliata dal seguente percorso: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  È possibile scaricare un esempio che contiene i progetti completati, codice e altri file per questa procedura dettagliata dal seguente percorso: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Sono necessari i seguenti componenti nel computer di sviluppo per completare questa procedura dettagliata:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Nel **nome** immettere **SiteColumnProjectItem**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **SiteColumnProjectItem** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **SiteColumnProjectItem** progetto **Esplora**.  
   
 #### <a name="to-create-the-project-template-project"></a>Per creare il progetto di modello di progetto  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Nel **nome** immettere **SiteColumnProjectTemplate**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **SiteColumnProjectTemplate** progetto alla soluzione.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **SiteColumnProjectTemplate** progetto alla soluzione.  
   
 6.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Nel **nome** immettere **ProjectItemTypeDefinition** e quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **ProjectItemTypeDefinition** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **ProjectItemTypeDefinition** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 5.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Aggiunge `ProjectItem` elementi per ogni filethat del inclusi in ogni istanza del progetto.  
   
-    -   Usa lo spazio dei nomi "http://schemas.microsoft.com/developer/vstemplate/2005". Altri file di progetto in questa soluzione usano lo spazio dei nomi "http://schemas.microsoft.com/developer/msbuild/2003". Pertanto, verranno generati messaggi di avviso di XML schema, ma è possibile ignorare tali in questa procedura dettagliata.  
+    -   Usa lo spazio dei nomi "http://schemas.microsoft.com/developer/vstemplate/2005". Altri file di progetto in uso questa soluzione il "http://schemas.microsoft.com/developer/msbuild/2003" spazio dei nomi. Pertanto, verranno generati messaggi di avviso di XML schema, ma è possibile ignorare tali in questa procedura dettagliata.  
   
      Per ulteriori informazioni sul contenuto dei file con estensione vstemplate, vedere [riferimenti dello Schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   
@@ -715,7 +714,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  In **Esplora**, scegliere il **SiteColumnTest** nodo.  
   
-2.  Nel **proprietà** nella casella di testo accanto alla finestra di **URL del sito** proprietà, immettere **http://localhost**.  
+2.  Nel **delle proprietà** finestra, nella casella di testo accanto al **l'URL del sito** proprietà, immettere **http://localhost**.  
   
      Questo passaggio consente di specificare il sito di SharePoint locale nel computer di sviluppo che si desidera utilizzare per il debug.  
   
@@ -760,8 +759,8 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Definizione di tipi di elemento di progetto SharePoint personalizzato](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Creazione di modelli di progetto e modelli di elemento per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
+ [Creazione di modelli di elementi e modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Il salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [Associazione di dati personalizzati alle estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
   
   

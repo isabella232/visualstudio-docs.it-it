@@ -1,21 +1,19 @@
 ---
 title: 'Procedura dettagliata: Debug di un modello di testo che accede a un modello | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d0cc9d59e4dfbe98312d44cceb91e729f0b81126
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c509a4769323696c56d69bbd5a632f28413cbe91
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile ricevere errori quando il motore di trasformazione del modello al codice sorgente oppure durante la compilazione del codice generato. La seguente procedura dettagliata vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.  
@@ -26,7 +24,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione di linguaggio specifico di dominio  
  In questa procedura, si crea una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:  
   
--   Name: DebuggingTestLanguage  
+-   Nome: DebuggingTestLanguage  
   
 -   Modello di soluzione: lingua minima  
   
@@ -164,7 +162,7 @@ Quando si modificano o si aggiungono modelli di testo in una soluzione di lingua
   
      (Visual Basic)  
   
-     **La trasformazione di compilazione: 'ExampleModel' non è un membro di ' Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation'.**  
+     **La compilazione di trasformazione: 'ExampleModel' non è un membro di ' Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation'.**  
   
      In questo caso, il codice del modello di testo contiene un nome di proprietà non corrette. È stato specificato `ExampleModel` come il nome della proprietà, ma la proprietà corretta è nome `LibraryModel`. È possibile trovare il nome corretto della proprietà di fornisce parametro, come illustrato nel codice seguente:  
   

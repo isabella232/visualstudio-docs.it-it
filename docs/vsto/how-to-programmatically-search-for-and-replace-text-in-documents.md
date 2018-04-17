@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: cercare a livello di codice e sostituire testo in documenti | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 658da08ee7d61651b02d7d42158637dad7ab16c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9967fb6bb0b9ecf377763c25037089bf600145c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>Procedura: cercare e sostituire testo nei documenti a livello di codice
   L'oggetto <xref:Microsoft.Office.Interop.Word.Find> è un membro degli oggetti <xref:Microsoft.Office.Interop.Word.Selection> e <xref:Microsoft.Office.Interop.Word.Range>, ognuno dei quali può essere usato per cercare testo in documenti di Microsoft Office Word. Il comando di sostituzione è un'estensione del comando di ricerca.  
@@ -121,8 +120,8 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: impostare a livello di codice le opzioni di ricerca in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Procedura: scorrere a livello di codice gli elementi trovati nei documenti](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Procedura: scorrere gli elementi trovati nei documenti a livello di codice in ciclo](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
  [Procedura: definire a livello di codice e selezionare intervalli nei documenti](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Procedura: ripristinare a livello di codice le selezioni dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Procedura: ripristinare a livello di programmazione le selezioni dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
   

@@ -1,12 +1,10 @@
 ---
 title: Sicurezza delle soluzioni Office | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-office-solutions"></a>Sicurezza delle soluzioni Office
   Il modello di sicurezza per le soluzioni Office comprende diverse tecnologie: il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], il Centro protezione di Microsoft Office e l'area siti con restrizioni di Internet Explorer. Le sezioni seguenti descrivono il funzionamento delle diverse funzionalità di sicurezza:  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="GrantingTrustToSolutions"></a>Concessione dell'attendibilità alle soluzioni Office  
+##  <a name="GrantingTrustToSolutions"></a> Concessione dell'attendibilità alle soluzioni Office  
  La concessione dell'attendibilità alle soluzioni Office prevede la modifica dei criteri di sicurezza di tutti gli utenti finali in modo che la soluzione Office venga considerata attendibile in base alla seguente evidenza:  
   
 -   Il certificato usato per firmare il manifesto della distribuzione.  
@@ -50,16 +49,16 @@ ms.lasthandoff: 01/10/2018
   
  Per ulteriori informazioni, vedere [concessione dell'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).  
   
-##  <a name="GrantingTrustToDocuments"></a>Concessione dell'attendibilità ai documenti  
+##  <a name="GrantingTrustToDocuments"></a> Concessione dell'attendibilità ai documenti  
  Una personalizzazione a livello di documento richiede che il documento si trovi in una directory progettata come percorso attendibile. Per altre informazioni, vedere [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="GrantingTrustWindowsInstaller"></a>Concessione dell'attendibilità quando si usa Windows Installer  
+##  <a name="GrantingTrustWindowsInstaller"></a> Concessione dell'attendibilità quando si usa Windows Installer  
  È possibile usare Windows Installer per creare un file MSI per installare le soluzioni Office nella directory Programmi, che richiede diritti di amministratore. Per le soluzioni Office nella directory Programmi, Visual Studio 2010 Tools per Office Runtime considera le soluzioni di Office siano attendibili e non visualizza la richiesta di attendibilità di ClickOnce.  
   
-##  <a name="Security"></a>Considerazioni specifiche sulla sicurezza per le soluzioni Office  
+##  <a name="Security"></a> Considerazioni specifiche sulla sicurezza per le soluzioni Office  
  Le funzionalità di sicurezza fornite da [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] e Microsoft Office possono contribuire alla protezione contro diverse possibili minacce alla sicurezza nelle soluzioni Office. Per altre informazioni, vedere [Specific Security Considerations for Office Solutions](../vsto/specific-security-considerations-for-office-solutions.md).  
   
-##  <a name="SecurityDuringDeployment"></a>Sicurezza durante lo sviluppo  
+##  <a name="SecurityDuringDeployment"></a> Sicurezza durante lo sviluppo  
  Per semplificare il processo di sviluppo, Visual Studio imposta i criteri di sicurezza necessari per eseguire ed eseguire il debug della soluzione nel computer ogni volta che si compila un progetto. In alcuni scenari, è necessario aggiungere altri passaggi di sicurezza per sviluppare il progetto.  
   
 ### <a name="document-level-solutions"></a>Soluzioni a livello di documento  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  Cancellare regolarmente i certificati temporanei poiché potrebbero accumularsi nel tempo.  
   
-##  <a name="VisualStudioToolsForOfficeRuntime"></a>Visual Studio Tools per Office Runtime  
+##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools per Office Runtime  
  Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dispone di funzionalità per verificare l'identità del server di pubblicazione e le autorizzazioni concesse a una personalizzazione. Verifica le autorizzazioni mediante una sequenza di controlli di sicurezza.  
   
 ### <a name="security-during-customization-loading"></a>Sicurezza durante il caricamento della personalizzazione  
@@ -106,7 +105,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Concessione dell'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)   
  [Concessione dell'attendibilità ai documenti](../vsto/granting-trust-to-documents.md)   
- [Concessione dell'attendibilità soluzioni Office mediante gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Concessione dell'attendibilità alle soluzioni Office mediante gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Procedura: configurare la protezione di elenco di inclusione](../vsto/how-to-configure-inclusion-list-security.md)   
  [Procedura: firmare soluzioni Office](../vsto/how-to-sign-office-solutions.md)   
  [Risoluzione dei problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   

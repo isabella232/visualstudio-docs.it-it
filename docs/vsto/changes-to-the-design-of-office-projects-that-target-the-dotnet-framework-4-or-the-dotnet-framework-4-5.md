@@ -1,13 +1,10 @@
 ---
 title: Modifiche alla progettazione dei progetti di Office destinati a .NET Framework 4 o .NET Framework 4.5 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Modifiche alla progettazione dei progetti di Office destinati a .NET Framework 4 o a .NET Framework 4.5
   A partire da [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio ha introdotto alcune modifiche nella creazione di progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva. Se si ha familiarità con i progetti di Office delle versioni precedenti di Visual Studio, è necessario tenere presenti queste modifiche prima di sviluppare progetti di Office destinati a tali versioni di .NET Framework 4.0 o versione successiva. Per impostazione predefinita, tutti i progetti creati con Visual Studio 2013 o versione successiva sono destinati a .NET Framework 4.0 o versione successiva.  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Aggiornamento delle personalizzazioni della barra multifunzione nei progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [L'aggiornamento di aree del modulo in progetti Outlook di cui eseguire la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [L'aggiornamento di aree del modulo in progetti Outlook di cui si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
 ### <a name="new-base-classes-in-office-projects"></a>Nuove classi di base nei progetti di Office  
  La nuova progettazione basata sull'interfaccia di Visual Studio 2010 Tools per Office Runtime interessa le classi generate nei progetti di Office quali `ThisDocument`, `ThisWorkbook`e `ThisAddIn`. Nei progetti di Office destinati a .NET Framework 3.5 e versioni precedenti del framework, queste classi generate derivano dalle classi di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , ad esempio Microsoft.Office.Tools.Word.Document, Microsoft.Office.Tools.Excel.Worksheet, e Microsoft.Office.Tools.AddIn. Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, queste classi [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sono interfacce. Pertanto, l'implementazione delle classi generate nei progetti di Office non può più derivare da tali classi. Al contrario, le classi generate derivano dalle nuove classi di base come <xref:Microsoft.Office.Tools.Word.DocumentBase>, <xref:Microsoft.Office.Tools.Excel.WorksheetBase>e <xref:Microsoft.Office.Tools.AddInBase>. Per altre informazioni, vedere [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md) e [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |La sintassi dei metodi GetVstoObject e HasVstoObject è cambiata|Quando si accede sugli oggetti nativi dagli assembly di interoperabilità primari (PIA) oppure è possibile accedere a questi metodi per l'oggetto restituito dalla proprietà Globals. factory del progetto, è necessario passare l'oggetto Globals. factory a questi metodi. Per ulteriori informazioni, vedere [l'aggiornamento di progetti di Excel e Word che si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Gli eventi dei controlli contenuto di Word sono associati a nuovi delegati.|È necessario modificare qualsiasi codice che gestisce gli eventi dei controlli contenuto di Word per specificare i nuovi delegati. Per ulteriori informazioni, vedere [l'aggiornamento di progetti di Excel e Word che si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Le classi OLEObject e OLEControl sono state rinominate.|È necessario modificare qualsiasi codice che usa le istanze di queste classi per usare gli oggetti <xref:Microsoft.Office.Tools.Excel.ControlSite> o <xref:Microsoft.Office.Tools.Word.ControlSite> . Per ulteriori informazioni, vedere [l'aggiornamento di progetti di Excel e Word che si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Host classi dell'elemento, ad esempio `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, e `ThisAddIn`, non forniscono più un metodo Dispose che è possibile eseguire l'override.|È necessario trasferire qualsiasi codice nell'override del metodo Dispose al gestore dell'evento di arresto nella classe dell'elemento host, ad esempio, `ThisAddIn_Shutdown`e rimuovere l'override del metodo Dispose dalla classe dell'elemento host.|  
+|Le classi dell'elemento, host, ad esempio `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, e `ThisAddIn`, non forniscono più un metodo Dispose che è possibile eseguire l'override.|È necessario trasferire qualsiasi codice nell'override del metodo Dispose al gestore dell'evento di arresto nella classe dell'elemento host, ad esempio, `ThisAddIn_Shutdown`e rimuovere l'override del metodo Dispose dalla classe dell'elemento host.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Migrazione di soluzioni Office a .NET Framework 4 o versioni successive](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

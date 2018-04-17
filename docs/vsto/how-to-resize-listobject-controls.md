@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: ridimensionare i controlli ListObject | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ListObject control, resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e018ed60e60c63dd47b5d56b599ea0f0499f561c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 12a81e6bb4a0484b79ad42b8fbab77db97ea82c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-listobject-controls"></a>Procedura: Ridimensionare i controlli ListObject
   Impostare la dimensione di un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> quando lo si aggiunge a una cartella di lavoro di Microsoft Office Excel; tuttavia, potrebbe essere necessario ridimensionarlo in seguito. Ad esempio, potrebbe essere necessario cambiare un elenco a due colonne in uno a tre colonne.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  Per altre informazioni sui controlli <xref:Microsoft.Office.Tools.Excel.ListObject> , vedere [ListObject Control](../vsto/listobject-control.md).  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [la modalità di aggiunta di colonne a un oggetto elenco associato a dati in fase di esecuzione?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [la modalità di aggiunta di colonne a un oggetto elenco associato a dati in fase di esecuzione?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Ridimensionamento di un controllo ListObject in fase di progettazione  
  Per ridimensionare un elenco, è possibile selezionare e trascinare uno dei punti di controllo oppure è possibile ridefinirne la dimensione nella finestra di dialogo **Ridimensiona elenco** .  
@@ -92,11 +91,11 @@ ms.lasthandoff: 01/10/2018
  [Estensione di documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)   
  [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)   
  [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject (controllo)](../vsto/listobject-control.md)   
  [Procedura: aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Procedura: ridimensionare i controlli segnalibro](../vsto/how-to-resize-bookmark-controls.md)   
+ [Procedura: ridimensionare i controlli Bookmark](../vsto/how-to-resize-bookmark-controls.md)   
  [Procedura: Ridimensionare i controlli NamedRange](../vsto/how-to-resize-namedrange-controls.md)  
   
   

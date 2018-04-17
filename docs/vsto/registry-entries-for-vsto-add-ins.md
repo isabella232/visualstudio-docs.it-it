@@ -1,13 +1,10 @@
 ---
 title: Le voci del Registro di sistema per i componenti aggiuntivi VSTO | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - registry entries [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4be05e4fb1b4fc74467f1607acaa3e84a6bdef95
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5e4c410a6f934c7b4fe4c6239bdfe07364af3152
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del Registro di sistema per i componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.  
@@ -64,8 +61,8 @@ ms.lasthandoff: 01/10/2018
   
 |Versione di Office|Percorso di configurazione|  
 |--------------------|------------------------|  
-|32 bit|*Radice*\Software\Microsoft\Office\\*nome applicazione*\Addins\\*ID componente aggiuntivo*|  
-|64 bit|*Radice*\Software\Wow6432Node\Microsoft\Office\\*nome applicazione*\Addins\\*ID componente aggiuntivo*|  
+|32 bit|*Radice*\Software\Microsoft\Office\\*nome dell'applicazione*\Addins\\*ID componente aggiuntivo*|  
+|64 bit|*Radice*\Software\Wow6432Node\Microsoft\Office\\*nome dell'applicazione*\Addins\\*ID componente aggiuntivo*|  
   
  **Visio**  
   
@@ -81,7 +78,7 @@ ms.lasthandoff: 01/10/2018
 |**Descrizione**|REG_SZ|Obbligatorio. Breve descrizione del componente aggiuntivo VSTO.<br /><br /> Questa descrizione viene visualizzata quando l'utente seleziona il componente aggiuntivo VSTO nel riquadro **Componenti aggiuntivi** della finestra di dialogo **Opzioni** nell'applicazione di Microsoft Office.|  
 |**FriendlyName**|REG_SZ|Obbligatorio. Nome descrittivo del componente aggiuntivo VSTO visualizzato nella finestra di dialogo **Componenti aggiuntivi COM** dell'applicazione di Microsoft Office. Il valore predefinito è l'ID del componente aggiuntivo VSTO.|  
 |**LoadBehavior**|REG_DWORD|Obbligatorio. Valore che specifica quando l'applicazione tenta di caricare il componente aggiuntivo VSTO e lo stato corrente del componente aggiuntivo VSTO (caricato o scaricato).<br /><br /> Per impostazione predefinita, questo valore è impostato su 3, a indicare che il componente aggiuntivo VSTO viene caricato all'avvio. Per altre informazioni, vedere [Valori di LoadBehavior](#LoadBehavior). **Nota:** se un utente disabilita il componente aggiuntivo VSTO, tale azione Modifica **LoadBehavior** valore nell'hive del Registro di sistema HKEY_CURRENT_USER. Per ogni utente il valore di **LoadBehavior** nell'hive HKEY_CURRENT_USER ha la precedenza sul valore di **LoadBehavior** predefinito specificato nell'hive HKEY_LOCAL_MACHINE.|  
-|**Manifest**|REG_SZ|Obbligatorio. Percorso completo del manifesto della distribuzione del componente aggiuntivo VSTO. Può essere un percorso contenuto nel computer locale, una condivisione di rete (UNC) o un server Web (HTTP).<br /><br /> Se si usa Windows Installer per distribuire la soluzione, è necessario aggiungere il prefisso **file:///** al percorso di **manifesto** . È anche necessario accodare la stringa **&#124; vstolocal** (ovvero, il carattere di barra verticale **&#124;** seguito da **vstolocal**) alla fine di questo percorso. Il suffisso garantisce che la soluzione venga caricata dalla cartella di installazione e non dalla cache ClickOnce. Per altre informazioni, vedere [Distribuzione di una soluzione Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:** quando si compila un componente aggiuntivo VSTO nel computer di sviluppo, Visual Studio aggiunge automaticamente il **&#124; vstolocal** stringa per questa voce del Registro di sistema.|  
+|**Manifest**|REG_SZ|Obbligatorio. Percorso completo del manifesto della distribuzione del componente aggiuntivo VSTO. Può essere un percorso contenuto nel computer locale, una condivisione di rete (UNC) o un server Web (HTTP).<br /><br /> Se si usa Windows Installer per distribuire la soluzione, è necessario aggiungere il prefisso **file:///** al percorso di **manifesto** . È anche necessario accodare la stringa  **&#124;vstolocal** (ovvero, il carattere di barra verticale **&#124;** seguito da **vstolocal**) alla fine di questo percorso. Il suffisso garantisce che la soluzione venga caricata dalla cartella di installazione e non dalla cache ClickOnce. Per altre informazioni, vedere [Distribuzione di una soluzione Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:** quando si compila un componente aggiuntivo VSTO nel computer di sviluppo, Visual Studio aggiunge automaticamente il  **&#124;vstolocal** stringa per questa voce del Registro di sistema.|  
   
 ###  <a name="OutlookEntries"></a> Voci del Registro di sistema per le aree del modulo di Outlook  
  Se si crea un'area del modulo personalizzata in un componente aggiuntivo VSTO per Outlook, vengono usate voci aggiuntive del Registro di sistema per registrare l'area con Outlook. Queste voci vengono create in una chiave del Registro di sistema diversa per ogni classe di messaggio supportata dall'area. Le voci vengono salvate nel percorso seguente, dove *Radice* corrisponde a HKEY_CURRENT_USER o HKEY_LOCAL_MACHINE.  

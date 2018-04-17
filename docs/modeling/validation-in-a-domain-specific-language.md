@@ -2,23 +2,21 @@
 title: Convalida in un linguaggio specifico di dominio | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 94be1947136d2e118cf4a015e6c962eb45e94eae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 Gli autori di un linguaggio specifico di dominio possono definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo. Ad esempio, se il linguaggio specifico di dominio consente agli utenti di disegnare l'albero genealogico di determinate persone e dei relativi antenati, è possibile scrivere un vincolo per garantire che le date di nascita dei figli siano successive a quelle dei genitori.  
@@ -198,7 +196,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
  Se si imposta la molteplicità di un ruolo di una relazione di dominio su 1..* o 1..1, ma l'utente non crea un collegamento di questa relazione, verrà visualizzato un messaggio di errore di convalida.  
   
- Ad esempio, se dispone di tale linguaggio DSL classi utente e città e una relazione PersonLivesInTown con una relazione **1...\* ** il ruolo di città, per ogni utente che non dispone di alcun paese, un messaggio di errore verrà quindi visualizzati.  
+ Ad esempio, se dispone di tale linguaggio DSL classi utente e città e una relazione PersonLivesInTown con una relazione **1...\***  il ruolo di città, per ogni utente che non dispone di alcun paese, un messaggio di errore verrà quindi visualizzati.  
   
 ## <a name="running-validation-from-program-code"></a>Esecuzione della convalida dal codice programma  
  È possibile eseguire la convalida creando o accedendo a un oggetto ValidationController. Se si desidera che gli errori da visualizzare all'utente nella finestra di errore, utilizzare ValidationController collegato a DocData del diagramma. Ad esempio, se si intende scrivere un comando di menu, `CurrentDocData.ValidationController` è disponibile nella classe del set di comandi:  

@@ -1,23 +1,21 @@
 ---
 title: Convalidare il sistema durante lo sviluppo | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d94c4fe495083823e19ba1d6b25fe7b89050b66
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3fd7872e063b7aa1484edbeea7b531501f1e749c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 Visual Studio consente di mantenere la coerenza del software con i requisiti degli utenti e con l'architettura del sistema.  
@@ -36,7 +34,7 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
   
 |**Categoria**|**Collegamenti**|  
 |------------------|---------------|  
-|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sette: codice e la progettazione di sistema con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: architettura di un'applicazione utilizzando un diagramma di dipendenza](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN serie di video procedurali: come convalidare il codice con i diagrammi di dipendenza](http://go.microsoft.com/fwlink/?LinkID=214405)|  
+|**Video**|![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sette: codice e la progettazione di sistema con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: architettura di un'applicazione utilizzando un diagramma di dipendenza](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN serie di video procedurali: come convalidare codice con diagrammi di dipendenza](http://go.microsoft.com/fwlink/?LinkID=214405)|  
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  

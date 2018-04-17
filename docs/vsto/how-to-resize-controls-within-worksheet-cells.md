@@ -1,13 +1,10 @@
 ---
-title: 'Procedura: ridimensionare i controlli all''interno delle celle del foglio di lavoro | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: ridimensionare i controlli all'interno delle celle del foglio di lavoro | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b145d4435cdb295c94897424b318d328f995c340
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: ridimensionare i controlli nelle celle di un foglio di lavoro
   Quando si ridimensiona le colonne o le righe in un foglio di lavoro, i controlli host contenuti nelle celle automaticamente ridimensionato per l'altezza o la larghezza della cella che è stata ridimensionata. Controlli Windows Form non si ridimensionano automaticamente per impostazione predefinita.  
@@ -81,7 +78,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)   
  [Procedura: aggiungere controlli Windows Form a documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Procedura: nascondere i controlli nei fogli di lavoro durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Procedura: nascondere controlli nei fogli di lavoro durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   

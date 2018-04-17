@@ -1,18 +1,18 @@
 ---
-title: 'Procedura: creare un''applicazione Console flusso di lavoro | Documenti Microsoft'
+title: "Procedura: creare un'applicazione Console flusso di lavoro | Documenti Microsoft"
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94058f15911ed0f72023ea4cd10c9a935f13ba44
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Procedura: creare un'applicazione console flusso di lavoro
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] consente di creare flussi di lavoro per l'esecuzione di processi di utenti o di sistema. La finestra di progettazione del flusso di lavoro di Windows fornisce la superficie di progettazione per la creazione di questi flussi di lavoro. La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] può essere usata per creare flussi di lavoro dall'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o può essere integrata in altre applicazioni che riallocano la finestra di progettazione.
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/12/2018
 7.  Nel **soluzione** , immettere il nome per la nuova soluzione. Fare clic su **OK** per creare l'applicazione.
 
     > [!NOTE]
-    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], fare clic con il pulsante destro la soluzione in **Esplora**e selezionare **Aggiungi**, quindi  **Nuovo progetto...**  per aprire la **nuovo progetto** la finestra di dialogo. Procedere come descritto sopra in questa procedura.
+    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], fare clic con il pulsante destro la soluzione in **Esplora**e selezionare **Aggiungi**, quindi **Nuovo progetto...** per aprire la **nuovo progetto** la finestra di dialogo. Procedere come descritto sopra in questa procedura.
 
 8.  Il modello di progetto crea una definizione del flusso di lavoro in XAML mentre la definizione dell'applicazione console è in codice sorgente. In [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] verrà visualizzata l'area di disegno per il flusso di lavoro creato.
 

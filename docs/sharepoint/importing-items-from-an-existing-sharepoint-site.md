@@ -1,12 +1,10 @@
 ---
 title: Importazione di elementi da un sito di SharePoint esistente | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Importazione di elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="item-name-character-limit"></a>Limite dei caratteri dei nomi di elemento  
  In[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i nomi dei progetti e degli elementi di progetto hanno un limite di 260 caratteri in totale, compreso il percorso Se un nome di elemento supera tale limite quando si importa una soluzione, viene generato l'errore:  
   
- **Il percorso specificato, il nome di file o entrambi sono troppo lunghi. Il nome di file completo deve essere inferiore a 260 caratteri e il nome della directory deve contenere meno di 248 caratteri.**  
+ **Il percorso specificato, il nome di file o entrambi sono troppo lunghi. Il nome di file completo deve contenere meno di 260 caratteri, mentre il nome di directory deve contenere meno di 248 caratteri.**  
   
  Quando viene visualizzato questo errore, l'elemento non viene creato. Questo problema si verifica più spesso nei moduli importati. Per evitare questo problema, eseguire le operazioni seguenti:  
   

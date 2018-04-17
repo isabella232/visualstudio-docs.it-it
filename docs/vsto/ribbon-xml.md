@@ -2,12 +2,9 @@
 title: Sulla barra multifunzione XML | Documenti Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
 dev_langs:
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76527949bcfc5b3023ebd75fe15726b02938d39e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
   L'elemento Barra multifunzione (XML) consente di personalizzare una barra multifunzione tramite XML. Usare l'elemento Barra multifunzione (XML) se si desidera personalizzare la barra multifunzione in un modo non supportato dall'elemento Barra multifunzione (finestra di progettazione visiva). Per un confronto tra operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
@@ -122,7 +119,7 @@ ms.lasthandoff: 01/10/2018
 |-------------|-----------------|  
 |**customUI**|Rappresenta la barra multifunzione personalizzata nel progetto di componente aggiuntivo VSTO.|  
 |**ribbon**|Rappresenta la barra multifunzione.|  
-|**schede**|Rappresenta un set di schede della barra multifunzione.|  
+|**Schede**|Rappresenta un set di schede della barra multifunzione.|  
 |**scheda**|Rappresenta una singola scheda della barra multifunzione.|  
 |**group**|Rappresenta un gruppo di controlli nella scheda della barra multifunzione.|  
   
@@ -133,7 +130,7 @@ ms.lasthandoff: 01/10/2018
 |**onLoad**|**customUI**|Identifica un metodo che viene chiamato quando l'applicazione carica la barra multifunzione.|  
 |**idMso**|**scheda**|Identifica una scheda predefinita da visualizzare nella barra multifunzione.|  
 |**ID**|**group**|Identifica il gruppo.|  
-|**etichetta**|**group**|Specifica il testo visualizzato nel gruppo.|  
+|**label**|**group**|Specifica il testo visualizzato nel gruppo.|  
   
  Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli elementi e degli attributi disponibili, vedere l'articolo tecnico [Personalizzazione dell'interfaccia utente della barra multifunzione di Office (2007) per sviluppatori (parte 2 di 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
@@ -144,13 +141,13 @@ ms.lasthandoff: 01/10/2018
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|`GetCustomUI`|Restituisce il contenuto del file XML della barra multifunzione. Le applicazioni di Microsoft Office chiamano questo metodo per ottenere una stringa XML che definisce l'interfaccia utente della barra multifunzione personalizzata. Questo metodo implementa il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` deve essere implementato solo per restituire il contenuto del file XML della barra multifunzione e non deve essere utilizzato per inizializzare il componente aggiuntivo VSTO. In particolare, non tentare di visualizzare finestre di dialogo o altre finestre nell'implementazione di `GetCustomUI` . In caso contrario, la barra multifunzione personalizzata potrebbe non funzionare correttamente. Se è necessario eseguire codice per l'inizializzazione del componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` .|  
+|`GetCustomUI`|Restituisce il contenuto del file XML della barra multifunzione. Le applicazioni di Microsoft Office chiamano questo metodo per ottenere una stringa XML che definisce l'interfaccia utente della barra multifunzione personalizzata. Questo metodo implementa il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` deve essere implementato solo per restituire il contenuto del file XML della barra multifunzione e non deve essere utilizzato per inizializzare il componente aggiuntivo VSTO.   In particolare, non tentare di visualizzare finestre di dialogo o altre finestre nell'implementazione di `GetCustomUI` . In caso contrario, la barra multifunzione personalizzata potrebbe non funzionare correttamente. Se è necessario eseguire codice per l'inizializzazione del componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` .|  
 |`OnLoad`|Assegna il parametro <xref:Microsoft.Office.Core.IRibbonControl> al campo `ribbon` . Le applicazioni di Microsoft Office chiamano questo metodo per caricare la barra multifunzione personalizzata. È possibile usare questo campo per aggiornare dinamicamente la barra multifunzione personalizzata. Per altre informazioni, vedere l'articolo tecnico [Personalizzazione dell'interfaccia utente della barra multifunzione di Office (2007) per sviluppatori (parte 1 di 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Chiamato dal metodo `GetCustomUI` per ottenere il contenuto del file XML della barra multifunzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la barra multifunzione XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando l'elemento XML della barra](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)  
   
   

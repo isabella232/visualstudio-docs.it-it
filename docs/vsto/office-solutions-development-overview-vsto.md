@@ -1,13 +1,10 @@
 ---
 title: Cenni preliminari sullo sviluppo di soluzioni Office (VSTO) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Panoramica dello sviluppo di soluzioni Office (VSTO)
   Usando Microsoft Office come front-end per soluzioni, è possibile sfruttare i classici strumenti e interfacce utente di Microsoft Office, quali le funzionalità di elaborazione di testo, di analisi dei dati di Excel e di gestione della posta elettronica di Outlook. È possibile sviluppare soluzioni in Visual Studio per personalizzare le applicazioni di Office e aggiungere le funzionalità specifiche necessarie per i processi aziendali. Ad esempio, è possibile trasformare Word in un generatore di contratti che assembla contratti da parti preesistenti che possono essere rese modificabili o meno. Excel consente di creare un foglio di lavoro automatizzato relativo al budget, personalizzato per progetti diversi. Gli utenti possono inoltre usare soluzioni Office offline che rendono le soluzioni complesse più pratiche di quanto sarebbero se si utilizzasse un'architettura basata su Web.  
@@ -91,11 +88,11 @@ ms.lasthandoff: 01/10/2018
  La sicurezza per le soluzioni VSTO per Office viene garantita da una serie di controlli di sicurezza che [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] effettua quando installa e carica la soluzione. Questi controlli consentono di verificare se il percorso del manifesto di distribuzione è attendibile o se il certificato usato per firmare il manifesto della distribuzione è attendibile. Per altre informazioni, vedere [Securing Office Solutions](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva &#40; sviluppo per Office in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Introduzione al &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)   
  [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Guida introduttiva di programmazione delle personalizzazioni a livello di documento per Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
- [Guida introduttiva di programmazione delle personalizzazioni a livello di documento per Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
+ [Guida introduttiva di programmazione di personalizzazioni a livello di documento per Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
+ [Guida introduttiva di programmazione di personalizzazioni a livello di documento per Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Introduzione alla programmazione dei componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

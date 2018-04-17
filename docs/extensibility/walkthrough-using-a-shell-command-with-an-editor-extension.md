@@ -1,27 +1,23 @@
 ---
-title: 'Procedura dettagliata: Utilizzo di un comando della Shell con un''estensione di Editor | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Utilizzo di un comando della Shell con un'estensione di Editor | Documenti Microsoft"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a7f9426297ef28bdf4b829bd6697543f5aab55f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 112e78e6143d0a3bd67ff2a65814f2d77b85cdc1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Procedura dettagliata: Utilizzo di un comando della Shell con un'estensione di Editor
 Un VSPackage, è possibile aggiungere le funzionalità, ad esempio i comandi di menu nell'editor. Questa procedura dettagliata viene illustrato come aggiungere un'area di controllo in una visualizzazione di testo nell'editor richiamando un comando di menu.  

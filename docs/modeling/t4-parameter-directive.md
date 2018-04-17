@@ -2,20 +2,18 @@
 title: T4 Direttiva Parameter | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f44e25f9256cd37692970e92744d7564bc3abd19
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 594765ea839f7d761d0faf7216ac90989b4acc7f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-parameter-directive"></a>Direttiva parameter T4
 In un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modello di testo, il `parameter` direttiva dichiara le proprietà nel codice del modello che vengono inizializzate dai valori passati dal contesto esterno. È possibile impostare questi valori se si scrive codice che richiama una trasformazione del testo.  

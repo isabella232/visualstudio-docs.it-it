@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: popolare documenti con dati da servizi | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eb06e77cf45a3c912f569686cdbe246baece8a03
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d2d042e5ca30d8aea7fc152c457b380c7c7f4f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Procedura: Compilare documenti con dati forniti da servizi
   L'accesso ai dati funziona in modo identico per i progetti a livello di documento per Microsoft Office e per i progetti Windows Form. Per inserire i dati nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile persino usare i controlli Windows Form. Inoltre, è possibile usare i controlli chiamati controlli host, ossia oggetti nativi in Microsoft Office Excel e Microsoft Office Word migliorati con funzionalità di associazione di dati ed eventi. Per altre informazioni, vedere [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
@@ -31,7 +30,7 @@ ms.lasthandoff: 01/10/2018
   
  L'esempio seguente mostra come aggiungere controlli con associazione ai dati ai documenti in fase di progettazione. Per un esempio di come aggiungere controlli associati a dati nei componenti aggiuntivi VSTO in fase di esecuzione, vedere [procedura dettagliata: associazione ai dati di un servizio in un VSTO aggiungere nel progetto](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [procedura di interazione con i servizi Web di Microsoft Excel?](http://go.microsoft.com/fwlink/?LinkID=130284).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [procedura di interazione con i servizi Web di Microsoft Excel?](http://go.microsoft.com/fwlink/?LinkID=130284).  
   
 ### <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Per popolare un progetto a livello di documento con i dati da un servizio Web  
   

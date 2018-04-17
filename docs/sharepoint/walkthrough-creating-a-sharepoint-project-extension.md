@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Creazione di un''estensione di progetto SharePoint | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Creazione di un'estensione di progetto SharePoint | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Procedura dettagliata: creazione di un'estensione di progetto SharePoint
   Questa procedura dettagliata viene illustrato come creare un'estensione per i progetti SharePoint. È possibile utilizzare un'estensione di progetto per rispondere agli eventi a livello di progetto, ad esempio quando un progetto viene aggiunto, eliminato o rinominato. È anche possibile aggiungere proprietà personalizzate o rispondere quando un valore di proprietà viene modificato. A differenza delle estensioni di elemento di progetto, le estensioni di progetto non possono essere associate a un particolare tipo di progetto SharePoint. Quando si crea un'estensione di progetto, l'estensione viene caricato quando si apre qualsiasi tipo di progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Nel **nome** immettere **ProjectExtension**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **ProjectExtension** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **ProjectExtension** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 5.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  In **Esplora**, aprire il menu di scelta rapida per il file vsixmanifest e quindi scegliere il **aprire** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Apre il file nella finestra di progettazione del manifesto. Le informazioni visualizzate nel **metadati** scheda viene visualizzato anche nella **estensioni e aggiornamenti**. Tutti i pacchetti VSIX è richiesto il file Extension. vsixmanifest. Per ulteriori informazioni su questo file, vedere [riferimento 1.0 dello Schema di estensione VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre il file nella finestra di progettazione manifesto. Le informazioni visualizzate nel **metadati** scheda viene visualizzato anche nella **estensioni e aggiornamenti**. Tutti i pacchetti VSIX è richiesto il file Extension. vsixmanifest. Per ulteriori informazioni su questo file, vedere [riferimento 1.0 dello Schema di estensione VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  Nel **Product Name** immettere **Custom Project Property**.  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Avviare una build di debug del progetto scegliendo il **F5** chiave oppure sulla barra dei menu, scegliendo **Debug**, **Avvia debug**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Installa l'estensione in %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 e avvia un'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Installa l'estensione per %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 e avvia un'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare un progetto di SharePoint per una soluzione farm e utilizzare i valori predefiniti per gli altri valori nella procedura guidata.  
   
@@ -206,8 +205,8 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Estensione di progetti SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Conversione tra tipi di sistema di progetto SharePoint e altri tipi di progetto di Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [Salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
+ [Conversione tra tipi di sistemi di progetto SharePoint e altri tipi di progetto di Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
+ [Il salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [Associazione di dati personalizzati alle estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
   
   

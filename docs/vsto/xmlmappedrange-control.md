@@ -1,12 +1,10 @@
 ---
 title: XmlMappedRange (controllo) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,20 +14,21 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f4b78da11efafff45f34b3dc4ab9e7f1349a2e8a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1bc4516f0ca14427e5e63a40ae58ddd60436dfd6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xmlmappedrange-control"></a>Controllo XmlMappedRange
   Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo è un intervallo che viene creato solo quando un elemento dello schema non ripetuto viene eseguito il mapping a una cella in Microsoft Office Excel. Ad esempio, quando il `maxOccurs` attributo di un elemento dello schema è uguale a 1. Dopo Visual Studio crea l'intervallo XML mappato, è possibile programmare utilizzandolo direttamente senza dover passare attraverso il modello a oggetti Excel. È possibile eliminare solo un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo all'interno di Excel quando viene rimosso il mapping dell'elemento.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come si ricerca per categorie: utilizzare XML di Mapping in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [come si ricerca per categorie: utilizzare XML di Mapping in Excel?](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## <a name="binding-data-to-the-control"></a>Data binding al controllo  
  Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo supporta l'associazione a un singolo campo dati (data binding semplice). Il <xref:Microsoft.Office.Tools.Excel.ListObject> può controllo supporta il data binding complesso e viene creata automaticamente quando un elemento ripetuto dello schema viene mappato a una cella. Per altre informazioni, vedere [ListObject Control](../vsto/listobject-control.md).  

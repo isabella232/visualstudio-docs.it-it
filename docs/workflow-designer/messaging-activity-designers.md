@@ -5,14 +5,14 @@ ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e805fed01aa3dcb90d11f7f48c0fc1056d573add
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 38c34dea2dd0265d156bb4b379323559be4825b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
 Gli ActivityDesigner Messaging vengono usati per creare e configurare attività di messaggistica che comportano l'invio e la ricezione di messaggi [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] in un'applicazione [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]. Il [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] introduce cinque attività di messaggistica e la finestra di progettazione del flusso di lavoro di Windows fornisce due nuovi progettisti di modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro. Gli argomenti contenuti in questa sezione, ed elencati nella tabella seguente, forniscono istruzioni sull'utilizzo degli ActivityDesigner e dei modelli di progettazione in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].

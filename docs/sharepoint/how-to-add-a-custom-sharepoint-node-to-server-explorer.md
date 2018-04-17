@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: aggiungere un nodo personalizzato di SharePoint a Esplora Server | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5b5cc829451a4227625ae1ad8da9e5da8bd0d9d4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 47b51070a3f3368dbff636858c9a2e1ebf2e9f80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedura: aggiungere un nodo personalizzato di SharePoint a Esplora server
   È possibile aggiungere nodi personalizzati sotto il **connessioni di SharePoint** nodo **Esplora Server**. Ciò è utile quando si desidera visualizzare i componenti aggiuntivi di SharePoint che non vengono visualizzati in **Esplora Server** per impostazione predefinita. Per ulteriori informazioni, vedere [estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
      Per specificare i tipi di nodo predefiniti forniti da Visual Studio, passare uno dei seguenti valori di enumerazione al costruttore dell'attributo:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Utilizzare questi valori per specificare i nodi di connessione del sito (i nodi che consentono di visualizzare gli URL dei siti), i nodi dei siti o tutti gli altri nodi padre **Esplora Server**.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Usa questi valori per specificare i nodi delle connessioni del sito (i nodi contenenti gli URL dei siti), i nodi dei siti o tutti gli altri nodi padre **Esplora Server**.  
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Utilizzare questi valori per specificare uno dei nodi incorporati che rappresentano un singolo componente in un sito di SharePoint, ad esempio un nodo che rappresenta un elenco, un campo o un tipo di contenuto.  
   

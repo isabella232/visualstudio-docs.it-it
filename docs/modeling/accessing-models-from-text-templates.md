@@ -2,22 +2,20 @@
 title: Accesso ai modelli da modelli di testo | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: da230b9b5da994a123aff04b1f588d9761c9820e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 Tramite i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo che si basano sui modelli di linguaggio specifico di dominio. Per informazioni sui modelli di testo di base, vedere [la generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale quando si esegue il debug di tale linguaggio DSL e funzionano anche in un computer in cui è stato distribuito del linguaggio DSL.  

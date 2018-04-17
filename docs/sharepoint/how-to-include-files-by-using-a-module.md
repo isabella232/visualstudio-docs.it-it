@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: includere file mediante un modulo | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ebefc0420eba48fdc53e68482a96a575111e536f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6af9ef6114a3ac187c50d17f16c39c89b08370dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Procedura: includere file mediante un modulo
   *I moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli) sono contenitori che consentono di distribuire i file, ad esempio pagine master ASPX, file di testo o immagini in SharePoint.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
      Copiare i file nei percorsi specificati in SharePoint.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Assemblaggio e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
+ [Creazione del package e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

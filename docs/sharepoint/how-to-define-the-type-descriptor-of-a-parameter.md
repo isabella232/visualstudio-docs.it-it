@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: definire il descrittore di tipo di parametro | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 78df43a5d5614c175c5134ee638a75034ced8a5d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6ebdd8e968d631cf1d53515449c7e705c2978087
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedura: definire il descrittore di tipo di un parametro
   Un descrittore di tipo contiene proprietà che descrivono il tipo di dati di un parametro. Può definire un campo, un'entità o una raccolta di entità. Per ulteriori informazioni, vedere [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
@@ -106,7 +105,7 @@ ms.lasthandoff: 01/10/2018
   
          Nell'esempio seguente viene impostato il valore di **TypeName** proprietà a una raccolta di tipi in un assembly cui viene fatto riferimento nella soluzione.  
   
-         `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, versione = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089]'  
+         `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, versione version=4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089]'  
   
     -   Per un tipo definito nel modello a oggetti di integrazione applicativa dei dati, il nome completo include solo lo spazio dei nomi e il nome del tipo.  
   
@@ -123,10 +122,10 @@ ms.lasthandoff: 01/10/2018
      Un nuovo descrittore di tipo viene aggiunto come elemento figlio per il descrittore del tipo di raccolta. Configurare il descrittore di tipo come un'entità.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica degli strumenti di progettazione del modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
  [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Procedura: definire una metodo di istanza](../sharepoint/how-to-define-a-method-instance.md)   
+ [Procedura: definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)   
  [Progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

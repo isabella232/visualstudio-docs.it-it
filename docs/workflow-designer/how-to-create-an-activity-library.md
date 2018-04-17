@@ -5,14 +5,14 @@ ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e3f84636273de253937ebf5c91cff066b9f85
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedura: creare una libreria attività
 Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello libreria di attività in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] è stata specificata per consentire la creazione di tali attività personalizzate usando visivamente la finestra di progettazione del flusso di lavoro di Windows.
@@ -36,7 +36,7 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
 7.  Nel **soluzione** casella, digitare un nome descrittivo per la soluzione, quindi fare clic su **OK**.
 
     > [!NOTE]
-    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], fare clic con il pulsante destro la soluzione in **Esplora**e selezionare **Aggiungi**, quindi  **Nuovo progetto...**  per aprire la **nuovo progetto** la finestra di dialogo. Procedere come descritto sopra in questa procedura.
+    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], fare clic con il pulsante destro la soluzione in **Esplora**e selezionare **Aggiungi**, quindi **Nuovo progetto...** per aprire la **nuovo progetto** la finestra di dialogo. Procedere come descritto sopra in questa procedura.
 
 8.  Il modello di progetto crea una definizione di attività in XAML. Progettazione del flusso di lavoro di Windows viene visualizzato nell'area di lavoro per l'attività personalizzata.
 

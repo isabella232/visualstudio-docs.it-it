@@ -1,13 +1,10 @@
 ---
-title: "Attività comuni nella programmazione con Office | Documenti Microsoft"
-ms.custom: 
+title: Attività comuni nella programmazione con Office | Documenti Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione con Office
   Questo argomento descrive come usare Visual Studio per trovare le risposte alle seguenti categorie di domande frequenti relative alla programmazione delle soluzioni Office.  
@@ -109,7 +106,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="custom-menus"></a>Menu personalizzati  
   
--   [Procedura: aggiungere comandi al menu di scelta rapida](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+-   [Procedura: aggiungere comandi a menu di scelta rapida](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ##  <a name="excel"></a> Excel Automation Tasks  
   
@@ -119,19 +116,19 @@ ms.lasthandoff: 01/10/2018
   
 -   [Procedura: aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md).  
   
--   [Procedura: salvare a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md).  
+-   [Procedura: a livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md).  
   
--   [Procedura: chiudere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md).  
+-   [Procedura: chiudere a livello di programmazione le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md).  
   
 -   [Procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
--   [Procedura: nascondere i fogli di lavoro a livello di codice](../vsto/how-to-programmatically-hide-worksheets.md).  
+-   [Procedura: nascondere i fogli di lavoro a livello di programmazione](../vsto/how-to-programmatically-hide-worksheets.md).  
   
 -   [Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md).  
   
--   [Procedura: proteggere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-protect-workbooks.md).  
+-   [Procedura: proteggere a livello di programmazione le cartelle di lavoro](../vsto/how-to-programmatically-protect-workbooks.md).  
   
--   [Procedura: fare riferimento a livello di programmazione agli intervalli del foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md).  
+-   [Procedura: fare riferimento a livello di programmazione agli intervalli di foglio di lavoro nel codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md).  
   
 -   [Procedura: a livello di programmazione applicare stili agli intervalli nelle cartelle di lavoro](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
   
@@ -143,25 +140,25 @@ ms.lasthandoff: 01/10/2018
   
 -   [Procedura: eseguire calcoli in Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md).  
   
--   [Procedura: ordinare i dati nei fogli di lavoro a livello di codice](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
+-   [Procedura: ordinare i dati nei fogli di lavoro a livello di programmazione](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
 ##  <a name="word"></a> Word Automation Tasks  
   
--   [Procedura: creazione di nuovi documenti a livello di codice](../vsto/how-to-programmatically-create-new-documents.md).  
+-   [Procedura: creazione di nuovi documenti a livello di programmazione](../vsto/how-to-programmatically-create-new-documents.md).  
   
 -   [Procedura: aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md).  
   
--   [Procedura: salvare i documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md).  
+-   [Procedura: salvare i documenti a livello di programmazione](../vsto/how-to-programmatically-save-documents.md).  
   
--   [Procedura: chiudere i documenti a livello di codice](../vsto/how-to-programmatically-close-documents.md).  
+-   [Procedura: chiudere a livello di programmazione documenti](../vsto/how-to-programmatically-close-documents.md).  
   
--   [Procedura: inserire il testo nei documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
+-   [Procedura: inserire il testo nei documenti di Word a livello di programmazione](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
   
 -   [Procedura: definire a livello di codice e selezionare intervalli nei documenti](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
 -   [Procedura: a livello di programmazione reimpostare gli intervalli in Word documenti](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
--   [Procedura: formattazione a livello di codice del testo nei documenti](../vsto/how-to-programmatically-format-text-in-documents.md).  
+-   [Procedura: formattare il testo nei documenti a livello di programmazione](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
 -   [How to: Add XMLNode Controls to Word Documents](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
@@ -171,11 +168,11 @@ ms.lasthandoff: 01/10/2018
   
 -   [Procedura: stampa di documenti](../vsto/how-to-programmatically-print-documents.md).  
   
--   [Procedura: creazione di tabelle di Word a livello di codice](../vsto/how-to-programmatically-create-word-tables.md).  
+-   [Procedura: creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md).  
   
 -   [Procedura: aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
   
--   [Procedura: conteggiare a livello di codice i caratteri nei documenti](../vsto/how-to-programmatically-count-characters-in-documents.md).  
+-   [Procedura: conteggiare a livello di programmazione i caratteri nei documenti](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
 ##  <a name="data"></a> Data Tasks  
   
@@ -236,8 +233,8 @@ ms.lasthandoff: 01/10/2018
 -   [Procedura: Modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Guida introduttiva &#40; sviluppo per Office in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Introduzione al &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md)   
- [Procedure dettagliate ed esempi di sviluppo di office](../vsto/office-development-samples-and-walkthroughs.md)  
+ [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

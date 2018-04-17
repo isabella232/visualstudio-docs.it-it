@@ -1,12 +1,10 @@
 ---
-title: "Riquadri attività personalizzati | Documenti Microsoft"
-ms.custom: 
+title: Riquadri attività personalizzati | Documenti Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Riquadri attività personalizzati
   I riquadri attività sono pannelli dell'interfaccia utente in genere ancorati a un lato di una finestra in un'applicazione di Microsoft Office. I riquadri attività personalizzati consentono di creare un riquadro attività basato sulle proprie esigenze specifiche e offrono agli utenti un'interfaccia utente nota per accedere alle funzionalità della soluzione. L'interfaccia può, ad esempio, contenere controlli che consentono di eseguire codice per la modifica dei documenti o per la visualizzazione dei dati di un'origine dati.  
@@ -127,9 +126,9 @@ ms.lasthandoff: 01/10/2018
   
  Per pulire le risorse usate dal riquadro attività mentre il componente aggiuntivo VSTO è ancora in esecuzione, usare i metodi <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Tali metodi rimuovono l'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> specificato dalla raccolta `CustomTaskPanes` ed effettuano quindi la chiamata al metodo <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> dell'oggetto.  
   
- In [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia automatica delle risorse usate dal riquadro attività personalizzato quando il componente aggiuntivo VSTO viene scaricato. Non chiamare il <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metodi di `ThisAddIn_Shutdown` gestore dell'evento nel progetto. Tali metodi generano un'eccezione <xref:System.ObjectDisposedException>, perché in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia delle risorse usate dall'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> prima della chiamata a `ThisAddIn_Shutdown`. Per ulteriori informazioni su `ThisAddIn_Shutdown`, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md)  
+ In [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia automatica delle risorse usate dal riquadro attività personalizzato quando il componente aggiuntivo VSTO viene scaricato. Non chiamare il <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metodi di `ThisAddIn_Shutdown` gestore dell'evento nel progetto. Tali metodi generano un'eccezione <xref:System.ObjectDisposedException>, perché in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] viene effettuata la pulizia delle risorse usate dall'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> prima della chiamata a `ThisAddIn_Shutdown`. Per ulteriori informazioni `ThisAddIn_Shutdown`, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Gestione dei riquadri attività personalizzati in più finestre dell'applicazione  
+##  <a name="Managing"></a> Gestione dei riquadri attività personalizzati in più finestre dell'applicazione  
  Quando si crea un riquadro attività personalizzato in un'applicazione che usa più finestre per visualizzare documenti e altri elementi, è necessario effettuare altre azioni per assicurarsi che il riquadro attività sia visibile quando l'utente si aspetta che lo sia.  
   
  I riquadri attività personalizzati in tutte le applicazioni sono associati a una finestra cornice del documento che presenta una visualizzazione di un documento o di un elemento all'utente. Il riquadro attività è visibile solo quando la finestra associata è visibile. Non tutte le applicazioni usano tuttavia le finestre cornice del documento nello stesso modo.  
@@ -140,9 +139,9 @@ ms.lasthandoff: 01/10/2018
   
 -   [Word, InfoPath e PowerPoint](#WordAndInfoPath)  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come ricerca per categorie: gestire i riquadri attività nei componenti aggiuntivi VSTO di Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [come ricerca per categorie: gestire i riquadri attività nei componenti aggiuntivi VSTO di Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Outlook  
+##  <a name="Outlook"></a> Outlook  
  Quando si crea un riquadro attività personalizzato per Outlook, tale riquadro viene associato a una finestra di esplorazione o a una finestra di controllo specifica. Le finestre di esplorazione sono finestre che visualizzano il contenuto di una cartella, mentre le finestre di controllo visualizzano un elemento quale un messaggio di posta elettronica o un'attività.  
   
  Per visualizzare un riquadro attività personalizzato con più finestre di esplorazione o di controllo, è necessario creare una nuova istanza del riquadro attività personalizzato quando viene aperta una nuova finestra di esplorazione o di controllo. A questo scopo, gestire un evento generato quando viene creata una finestra di esplorazione o di controllo, quindi creare il riquadro attività nel gestore eventi. È anche possibile gestire gli eventi relativi alle finestre di esplorazione e di controllo per nascondere o visualizzare i riquadri attività a seconda di quale finestra è visibile.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Se non si rimuove esplicitamente il riquadro attività personalizzato, nelle finestre di Outlook potrebbero essere visualizzate più istanze di tale riquadro. In Outlook le finestre vengono talvolta riciclate e pertanto possono conservare riferimenti ai riquadri attività personalizzati a esse associati.  
   
-##  <a name="WordAndInfoPath"></a>Word, InfoPath e PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath e PowerPoint  
  Word, InfoPath e PowerPoint visualizzano ogni documento in una finestra cornice documento diversa. Quando si crea un riquadro attività personalizzato per queste applicazioni, tale riquadro viene associato solo a un documento specifico. Se l'utente apre un documento diverso, il riquadro attività personalizzato viene nascosto fino a che il documento precedente non è nuovamente visibile.  
   
  Per visualizzare un riquadro attività personalizzato con più documenti, creare una nuova istanza del riquadro attività personalizzato quando l'utente crea un nuovo documento o ne apre uno esistente.  A questo scopo, gestire gli eventi generati quando viene creato o aperto un documento, quindi creare il riquadro attività nei gestori di eventi. È inoltre possibile gestire gli eventi del documento per nascondere o visualizzare i riquadri attività a seconda del documento visibile.  

@@ -1,13 +1,10 @@
 ---
 title: Distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio
   Per distribuire un'estensione degli strumenti di SharePoint, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto extension (VSIX) che contiene l'assembly dell'estensione e qualsiasi altro file che si desiderano distribuire con l'estensione. Un pacchetto VSIX è un file compresso che è conforme allo standard Open Packaging Conventions (OPC). Pacchetti VSIX hanno l'estensione VSIX.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  In **Esplora**, aprire il menu di scelta rapida per il modello di progetto o modello di elemento di progetto e quindi scegliere **Scarica progetto**.  
   
-7.  Aprire di nuovo il menu di scelta rapida per il nodo del progetto e quindi scegliere **modifica***NomeProgettoModello***csproj** o **modifica**  *NomeProgettoModello***vbproj**.  
+7.  Aprire di nuovo il menu di scelta rapida per il nodo del progetto e quindi scegliere **Edit***NomeProgettoModello***con estensione csproj** oppure **modifica***NomeProgettoModello***. vbproj**.  
   
 8.  Individuare la seguente `VSTemplate` elemento nel file di progetto.  
   

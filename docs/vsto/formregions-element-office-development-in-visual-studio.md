@@ -1,12 +1,10 @@
 ---
 title: '&lt;formRegions&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegions> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eb7008f86dd552eac2b8a6ba9b227884270c8694
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c51b626c104d5342c00dbd45a2c565315c9c2225
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `formRegions` dello spazio dei nomi `vstov4` contiene le aree del modulo di Microsoft Office Outlook associate a un componente aggiuntivo VSTO.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
  L'elemento `formRegions` presenta l'elemento seguente.  
   
 ### <a name="formregion"></a>formRegion  
- Obbligatorio per i componenti aggiuntivi VSTO di Outlook che includono aree del modulo. Il `formRegion` è definito l'elemento [&#60; formRegion &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/formregion-element-office-development-in-visual-studio.md).  
+ Obbligatorio per i componenti aggiuntivi VSTO di Outlook che includono aree del modulo. Il `formRegion` è definito l'elemento [ &#60;formRegion&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO  
   

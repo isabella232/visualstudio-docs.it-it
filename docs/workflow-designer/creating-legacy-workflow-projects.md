@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 572d5c32-59ef-49d8-a24c-e180fe9f7a11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b2bbd6f0ff4acdc184e5a715ac05fa50b84d10
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Creazione di progetti flusso di lavoro legacy
 In questa sezione viene descritto come creare progetti flusso di lavoro usando la finestra di progettazione del flusso di lavoro di Windows fornita da Visual Studio 2010. La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy è destinata a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Sono incluse informazioni su come usare i modelli del progetto di flusso di lavoro elencati nella tabella seguente.

@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 989e0ed3f390513efeb849a71f94d5d61aecc57e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
 Questo argomento viene descritto come utilizzare il **Editor Set di regole** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -90,7 +90,7 @@ Update("this/Address/State")
 
 ## <a name="see-also"></a>Vedere anche
 
-- [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)
+- [Attività PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)
 - [Finestra di dialogo Seleziona set di regole (legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md)
 - [Utilizzo dell'attività PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004)
 - [Utilizzo delle condizioni nei flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65009)

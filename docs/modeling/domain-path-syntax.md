@@ -1,23 +1,21 @@
 ---
 title: Sintassi del percorso di dominio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fb2b1dfa13bf00c29452798253198b2ad0e72e97
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3bac81f79b2639a7b1b4f93055855981d4c30786
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="domain-path-syntax"></a>Sintassi del percorso di dominio
 Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi specifici in un modello.  
@@ -26,7 +24,7 @@ Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi spe
   
  Un percorso di dominio usa il formato seguente:  
   
- *RelationshipName.PropertyName/!Role*  
+ *RelationshipName.PropertyName/! Ruolo*  
   
  ![Relazione di riferimento CommentReferencesSubjects](../modeling/media/dsl_reference.png "dsl_reference")  
   

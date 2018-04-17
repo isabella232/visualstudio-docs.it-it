@@ -1,26 +1,24 @@
 ---
 title: Testo dell'interfaccia utente e la Guida di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 697c794d17f3004b0f37e668ff67afb703490e18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e la Guida di Visual Studio
-##  <a name="BKMK_UITextAndTerminology"></a>Testo dell'interfaccia utente e la terminologia  
+##  <a name="BKMK_UITextAndTerminology"></a> Testo dell'interfaccia utente e la terminologia  
  Testo comprensibile è fondamentale per effettivo dell'interfaccia utente. Gli utenti di software tendono a leggere le etichette in primo luogo, vale a dire quelli più rilevanti per il completamento dell'attività in questione. Viene letto il testo statico con minore frequenza. Piano per gli utenti di avviare le sessioni di lavoro con un'analisi rapida della finestra intera, seguito da una lettura dell'interfaccia utente in questo ordine approssimativo:  
   
 1.  Controlli interattivi nel centro  
@@ -144,20 +142,20 @@ ms.lasthandoff: 12/22/2017
   
 -   Al posto l'etichetta del controllo:  
   
-     ![Hint di testo in Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 f_HintText1")  
+     ![Testo in Visual Studio l'hint](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601 f_HintText1")  
   
 -   Con un verbo, fornendo istruzioni:  
   
-     ![Hint di testo in Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 g_HintText2")  
+     ![Testo in Visual Studio l'hint](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601 g_HintText2")  
   
 -   Con il testo che indica una voce:  
   
-     ![Hint di testo in Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 h_HintText3")  
+     ![Testo in Visual Studio l'hint](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601 h_HintText3")  
   
 #### <a name="watermark-text"></a>Testo della filigrana  
  In un'area di progettazione vuota, il testo deve indicare di operazioni da eseguire, nonché di fornire i collegamenti per aprire altre finestre correlati, se appropriato:  
   
- ![Testo in Visual Studio della filigrana](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601 i_WatermarkText")  
+ ![Applicare la filigrana testo in Visual Studio](../../extensibility/ux-guidelines/media/0601-i_watermarktext.png "0601 i_WatermarkText")  
   
  **Esempio di testo della filigrana in Visual Studio**  
   
@@ -216,7 +214,7 @@ ms.lasthandoff: 12/22/2017
   
  Scrivere gli errori di compilazione chiaro, conciso:  
   
--   **Usare un linguaggio semplice** che spiega il problema con senza alcuna gergo del compilatore. Il testo di un errore di compilazione non deve essere eccessivamente tecnico.  
+-   **Usare un linguaggio semplice** che spiega il problema con gergo del compilatore o addirittura nessuna. Il testo di un errore di compilazione non deve essere eccessivamente tecnico.  
   
 -   **Descrive le possibili cause.** Ad esempio, "manca un virgola tra le proprietà e il valore di ' (proprietà): (valore)" dichiarazione. "  
   
@@ -253,7 +251,7 @@ ms.lasthandoff: 12/22/2017
   
 -   **Attributo specifico.** Evitare formulazione vagamente e assegnare i nomi e posizioni degli oggetti coinvolti. Ad esempio, un messaggio di errore ad esempio"carattere non valido" non è utile. Il carattere? "File non trovato". Il file?  
   
--   **Correttezza.** Non incolpare l'utente o farlo sentire stupido. Evitare ostile o offensive language (kill, esecuzione, terminare, irreversibile, non valida). Evitare di testo in maiuscolo, che viene spesso considerato come shouting e non come leggibili. Non usare umorismo.  
+-   **Cortesia.** Non incolpare l'utente o farlo sentire stupido. Evitare ostile o offensive language (kill, esecuzione, terminare, irreversibile, non valida). Evitare di testo in maiuscolo, che viene spesso considerato come shouting e non come leggibili. Non usare umorismo.  
   
 -   **Correggere.** Utilizzare la grammatica e ortografia corretta (anche in alfa). Errori di digitazione sono imbarazzante e poco professionale.  
   
@@ -270,13 +268,13 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>Panoramica  
  Oltre alla documentazione di MSDN, un utente di Visual Studio include diversi punti di accesso per assistere l'utente mentre nell'interfaccia utente. Per garantire che i punti di accesso disponibili in modo coerente, è necessario sfruttare la Guida in linea offerti dall'ambiente di team di funzionalità. I punti di accesso sono:  
   
--   **Testo esplicativo e aggiuntivo nelle finestre di dialogo.** Testo statico che fornisce una direzione o una spiegazione, sia nell'interfaccia utente di area o disponibile al passaggio del mouse sull'icona finestra popup.  
+-   **Testo esplicativo e supplementare nelle finestre di dialogo.** Testo statico che fornisce una direzione o una spiegazione, sia nell'interfaccia utente di area o disponibile al passaggio del mouse sull'icona finestra popup.  
   
 -   **F1 Guida** (solo editor). All'interno dell'editor di Visual Studio, un utente può considerare attendibile che in qualsiasi momento, se si preme F1 verrà visualizzato un argomento della Guida specifiche per la selezione corrente. Verificare che gli argomenti associati F1 siano appropriate e informativi.  
   
 -   **Collegamenti ipertestuali agli argomenti della Guida.** Un collegamento ipertestuale all'interno di una finestra di dialogo, una finestra degli strumenti o area di progettazione che avvia un argomento per assistere l'utente ulteriori informazioni su una tecnologia, funzionalità o le informazioni su come eseguire un'attività.  
   
--   **Meccanismi di interfaccia utente di supporto, ad esempio smart tag e le finestre di dialogo di compilazione.** Questi meccanismi di assistere l'utente per la comprensione di un elemento dell'interfaccia utente o un'attività, ad esempio smart tag o finestre di dialogo Generatore di facilitare.  
+-   **Meccanismi UI helper, ad esempio gli smart tag e le finestre di dialogo di creazione.** Questi meccanismi di assistere l'utente per la comprensione di un elemento dell'interfaccia utente o un'attività, ad esempio smart tag o finestre di dialogo Generatore di facilitare.  
   
 -   **Guida dell'interfaccia utente pulsanti** (obsoleto). Un indicatore visibile nella barra del titolo che fornisce l'accesso per l'argomento della Guida F1 correlato.  
   
@@ -306,9 +304,9 @@ ms.lasthandoff: 12/22/2017
  La maggior parte, i pulsanti della Guida [?] nella barra del titolo delle finestre di dialogo sono deprecati. Argomenti dell'interfaccia utente non fanno più parte del modello di documento e potrebbe pertanto non essere presente un argomento corrispondente a cui collegarsi. In pratica, il pulsante della barra del titolo è lo stesso risultato F1 Guida in linea e che non è più necessario nelle finestre di dialogo. In alcuni casi, comunque utilizzabile come un indicatore che sia disponibile, informazioni concettuali o procedurale anche se i collegamenti ipertestuali vengono utilizzati più comunemente nell'interfaccia utente più recente.  
   
 ##### <a name="dialogs-created-through-the-environment"></a>Finestre di dialogo create tramite l'ambiente  
- Molte finestre di dialogo della shell vengono creati tramite il **VBDialogBoxParam** (funzione). Questa funzione condivisa è stata aggiornata per facilitare lo spostamento di **Guida** pulsante nella finestra di dialogo per la **?** pulsante mantenendo un'architettura che è a ritroso compatibile ed estensibile.  
+ Molte finestre di dialogo della shell vengono creati tramite il **VBDialogBoxParam** (funzione). Questa funzione condivisa è stata aggiornata per facilitare lo spostamento le **Guida** pulsante nella finestra di dialogo per la **?** pulsante mantenendo un'architettura che è a ritroso compatibile ed estensibile.  
   
- In particolare, il **VBDialogBoxParam** funzione esamina il modello di finestra di dialogo per un pulsante, il cui ID è **IDHELP** (9) o un'etichetta **Guida** o **& Guida**. Se viene trovato un pulsante della Guida, è nascosta e **WS_EX_CONTEXTHELP** stile viene aggiunto alla finestra di dialogo, inserisce il **?** pulsante nella barra del titolo della finestra di dialogo.  
+ In particolare, il **VBDialogBoxParam** funzione esamina il modello di finestra di dialogo per un pulsante, il cui ID è **IDHELP** (9) o un'etichetta **Guida** o **& Guida**. Se viene trovato un pulsante della Guida, è nascosta e la **WS_EX_CONTEXTHELP** stile viene aggiunta alla finestra di dialogo, posiziona il **?** pulsante nella barra del titolo della finestra di dialogo.  
   
  Quando viene creata la finestra di dialogo, si inserisce la procedura di finestra di dialogo in uno stack e richiama la finestra di dialogo con una procedura di finestra di dialogo pre-elaborazione denominata **DialogPreProc**. Quando il **?** pulsante Invia un **WM_SYSCOMMAND** di **SC_CONTEXTHELP** alla finestra di dialogo. Il **DialogPreProc** acquisisce questo comando e le modifiche a un **WM_HELP** messaggio, che viene passato per la procedura di finestra originale.  
   

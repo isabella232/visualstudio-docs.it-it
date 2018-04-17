@@ -1,12 +1,10 @@
 ---
 title: Panoramica dei modelli di progetto Office | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Panoramica dei modelli di progetto di Office
   Gli strumenti di sviluppo di applicazioni per Microsoft Office in Visual Studio includono modelli di progetto per la creazione dei seguenti tipi di soluzioni Office:  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Componenti aggiuntivi VSTO](#AppLevel)  
   
- Per un confronto dettagliato di questi tipi di soluzioni Office, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Per un confronto dettagliato di questi tipi di soluzioni Office, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  I modelli di progetto di Office sono disponibili nella finestra di dialogo **Nuovo progetto** nel nodo **Office** dei nodi relativi ai linguaggi **Visual C#** e **Visual Basic** . Ogni modello genera un progetto con la configurazione appropriata per l'applicazione di destinazione, inclusi i riferimenti all'assembly e le impostazioni di debug.  
   
@@ -173,8 +172,8 @@ ms.lasthandoff: 01/10/2018
  [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)   
  [Sviluppo di soluzioni Office](../vsto/developing-office-solutions.md)   
  [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Guida introduttiva di programmazione delle personalizzazioni a livello di documento per Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
- [Guida introduttiva di programmazione delle personalizzazioni a livello di documento per Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
+ [Guida introduttiva di programmazione di personalizzazioni a livello di documento per Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
+ [Guida introduttiva di programmazione di personalizzazioni a livello di documento per Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [Introduzione alla programmazione dei componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

@@ -1,12 +1,10 @@
 ---
 title: Creazione di pacchetti delle soluzioni SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ee3da66dd8e683748198992041bec5a8139cb7e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e67073d1a12a9412b153adc0c06471c4d39ff15a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Creazione di pacchetti delle soluzioni SharePoint
   Utilizzando la finestra di progettazione del pacchetto, è possibile creare e personalizzare i pacchetti di distribuzione. Ad esempio, è possibile aggiungere elementi di progetto SharePoint e le funzionalità, reimpostare il server IIS, impostare gli ambiti di attivazione di funzionalità e identificare le dipendenze di funzionalità. Inoltre, la finestra di progettazione genera un manifesto del file XML che descrive ogni pacchetto.  
@@ -76,9 +75,9 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
- [Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto utilizzando la finestra di progettazione del pacchetto](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
+ [Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [Procedura: creare un pacchetto di SharePoint](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   
- [Procedura: creare un pacchetto di soluzione SharePoint tramite le attività di MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
+ [Procedura: creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
  [Procedura: Personalizzare un pacchetto della soluzione SharePoint tramite le destinazioni di MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
   
   

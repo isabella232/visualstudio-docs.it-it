@@ -1,23 +1,21 @@
 ---
 title: Sviluppare test da un modello | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.  
@@ -25,7 +23,7 @@ ms.lasthandoff: 02/09/2018
  Per le versioni di Visual Studio che supportano queste funzionalità, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="system-and-subsystem-testing"></a>Test di sistema e di sottosistema  
- *Test di sistema,* noto anche come *i test di accettazione*indica verificare se sono in grado di soddisfare le esigenze degli utenti. Questi test riguardano il comportamento del sistema visibile esternamente piuttosto che la progettazione interna.  
+ *Test di sistema* noto anche come *test di accettazione*, significa test se vengono soddisfatte le esigenze degli utenti. Questi test riguardano il comportamento del sistema visibile esternamente piuttosto che la progettazione interna.  
   
  I test di sistema sono molto utili quando è necessario estendere o riprogettare un sistema e permettono di evitare di introdurre bug quando si modifica il codice.  
   
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  Da un punto di vista del test, un modello di requisiti può essere considerato un metodo abbreviato per i test. È quindi importante gestire la relazione tra i test e il modello in tutto il progetto.  
   
-##  <a name="Attaching"></a>Collegare Test case a elementi di modello  
+##  <a name="Attaching"></a> Collegare Test case a elementi di modello  
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.  
   
  È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:  
@@ -161,5 +159,5 @@ Assert (countAfter == countBefore = 1);
 ## <a name="see-also"></a>Vedere anche  
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
  [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
- [Architettura dell'applicazione del modello](../modeling/model-your-app-s-architecture.md)   
+ [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)   
  [Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)

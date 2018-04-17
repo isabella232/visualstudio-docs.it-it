@@ -1,23 +1,21 @@
 ---
-title: "Proprietà degli elementi Decorator | Documenti Microsoft"
-ms.custom: 
+title: Proprietà degli elementi Decorator | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95338b26019a2faf2afc2eb6be019ac33d6ece3c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15df31a6bdfe7e93dd6c70ccf2ef4c6b3b946d69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-decorators"></a>Proprietà degli elementi Decorator
 Gli elementi Decorator sono virgolette acute di espansione/compressione che è possono visualizzare le forme o connettori nel diagramma, testo o icone. Le tabelle seguenti illustrano le proprietà per i tre tipi di elemento decorator. Alcune delle proprietà vengono visualizzati solo gli elementi Decorator forma o solo per gli elementi Decorator connettore.  

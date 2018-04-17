@@ -1,12 +1,10 @@
 ---
-title: 'Procedura: memorizzare nella Cache a livello di codice di un''origine dati in un documento di Office | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: memorizzare nella Cache a livello di codice di un'origine dati in un documento di Office | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09d4b46aaa68a92ffb9ddfe70f329e97a1b7526d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 29451bab5caeeaf3f9de0b9344ae52430ec045a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procedura: memorizzare nella cache a livello di codice un'origine dati di un documento di Office
   È possibile aggiungere un oggetto dati a livello di codice per la cache dei dati in un documento mediante una chiamata di `StartCaching` elemento metodo di un host, ad esempio un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Per rimuovere un oggetto dati dalla cache dei dati, chiamare il `StopCaching` metodo di un elemento host.  
@@ -61,7 +60,7 @@ ms.lasthandoff: 01/10/2018
  [La memorizzazione nella cache di dati](../vsto/caching-data.md)   
  [Procedura: memorizzare nella Cache di dati per l'utilizzo Offline o in un Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Procedura: memorizzare nella Cache i dati in un documento protetto da Password](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [L'accesso ai dati nei documenti nel Server](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [L'accesso ai dati dei documenti sul Server](../vsto/accessing-data-in-documents-on-the-server.md)   
  [Salvataggio di dati](/visualstudio/data-tools/saving-data)  
   
   

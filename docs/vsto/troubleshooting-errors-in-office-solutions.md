@@ -1,13 +1,10 @@
 ---
 title: Risoluzione degli errori nelle soluzioni Office | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Risoluzione degli errori nelle soluzioni Office
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Debug di progetti](#debugging)  
   
-##  <a name="creating"></a>Creazione, aggiornamento e apertura di progetti  
+##  <a name="creating"></a> Creazione, aggiornamento e apertura di progetti  
  Gli errori seguenti possono verificarsi quando si creano o si aprono progetti di Office.  
   
 ### <a name="the-project-cannot-be-created"></a>Impossibile creare il progetto  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Dopo aver completato l'aggiornamento del progetto, è possibile disinstallare Visual Studio 2005 Tools per Office Second Edition Runtime dal computer di sviluppo se non viene usato da altre soluzioni Office.  
   
-##  <a name="designers"></a>Utilizzando le finestre di progettazione  
+##  <a name="designers"></a> Utilizzando le finestre di progettazione  
  Gli errori seguenti possono verificarsi quando si lavora con la finestra di progettazione di documenti, cartelle di lavoro o fogli di lavoro nei progetti a livello di documento.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Errore di caricamento della finestra di progettazione  
@@ -120,7 +117,7 @@ ms.lasthandoff: 01/10/2018
   
  Questo errore indica che si sta tentando di accedere a un evento che ha lo stesso nome di un'altra proprietà o un altro metodo dell'oggetto. Per accedere all'evento, è necessario il cast dell'oggetto relativo *interfaccia eventi*.  
   
- I tipi di assembly di interoperabilità primari di Office che dispongono di eventi implementano due interfacce: un'interfaccia principale con tutte le proprietà e i metodi e un'interfaccia eventi che contiene gli eventi esposti dall'oggetto. Queste interfacce eventi usano la convenzione di denominazione *objectname*eventi*n*Event, ad esempio <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Se non è possibile accedere a un evento che si prevede di trovare in un oggetto, eseguire il cast dell'oggetto alla relativa interfaccia eventi.  
+ I tipi di assembly di interoperabilità primari di Office che dispongono di eventi implementano due interfacce: un'interfaccia principale con tutte le proprietà e i metodi e un'interfaccia eventi che contiene gli eventi esposti dall'oggetto. Queste interfacce eventi usano la convenzione di denominazione *objectname*eventi*n*raggruppati, ad esempio <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> e <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event>. Se non è possibile accedere a un evento che si prevede di trovare in un oggetto, eseguire il cast dell'oggetto alla relativa interfaccia eventi.  
   
  Ad esempio, gli oggetti <xref:Microsoft.Office.Interop.Excel.Application> dispongono di un evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> e una proprietà <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A>. Per gestire l'evento <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook>, eseguire il cast di <xref:Microsoft.Office.Interop.Excel.Application> all'interfaccia <xref:Microsoft.Office.Interop.Excel.AppEvents_Event>. L'esempio di codice seguente illustra come eseguire questa operazione in un progetto a livello di documento per Excel.  
   
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Anche se si importazione lo spazio dei nomi di Word o Excel e si ha accesso a tutte le classi all'interno, è necessario qualificare completamente tutti i tipi di Word o Excel per rimuovere l'ambiguità dello spazio dei nomi.  
   
-##  <a name="building"></a>Compilazione di progetti  
+##  <a name="building"></a> Compilazione di progetti  
  Gli errori seguenti possono verificarsi quando si compilano progetti di Office.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Non è possibile compilare un progetto a livello di documento basato su un documento con autorizzazioni limitate  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Si verificano errori del compilatore dopo l'eliminazione di un controllo NamedRange  
  Se si elimina un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> da un foglio di lavoro che non è il foglio di lavoro attivo nella finestra di progettazione, il codice generato automaticamente potrebbe non venire rimosso dal progetto e potrebbero verificarsi errori del compilatore. Per assicurarsi che il codice venga rimosso, è consigliabile selezionare sempre il foglio di lavoro contenente il controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> per renderlo attivo prima di eliminare il controllo. Se il codice generato automaticamente non viene eliminato quando si elimina il controllo, è possibile fare in modo che venga eliminato dalla finestra di progettazione attivando il foglio di lavoro e apportando una modifica, in modo che il foglio di lavoro venga contrassegnato come modificato. Quando si ricompila il progetto, il codice viene rimosso.  
   
-##  <a name="debugging"></a>Debug di progetti  
+##  <a name="debugging"></a> Debug di progetti  
  Gli errori seguenti possono verificarsi quando si esegue il debug di progetti di Office.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Viene visualizzata una richiesta di disinstallazione quando si pubblica e si installa una soluzione nel computer di sviluppo  

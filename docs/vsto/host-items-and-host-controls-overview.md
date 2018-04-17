@@ -1,13 +1,10 @@
 ---
 title: Elementi host e Cenni preliminari sui controlli Host | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -39,14 +36,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 84e0b2cf74eb8c0d3faca8d1c28d3bea91c87f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>Panoramica degli elementi e dei controlli host
   Gli elementi e i controlli host sono tipi che consentono di fornire il modello di programmazione per le soluzioni Office create tramite gli strumenti di sviluppo di Office in Visual Studio. Rendono l'interazione con i modelli a oggetti di Microsoft Office Word e Microsoft Office Excel, basati su COM, analoga all'interazione con gli oggetti gestiti, ad esempio i controlli Windows Form.  
@@ -168,7 +165,7 @@ ms.lasthandoff: 01/10/2018
 >  Non rimuovere i controlli a livello di codice usando il gestore eventi `Shutdown` del documento o del foglio di lavoro. Gli elementi dell'interfaccia utente non sono più disponibili quando si verifica l'evento `Shutdown` . Se si vogliono rimuovere i controlli prima della chiusura dell'applicazione, aggiungere il codice a un altro gestore eventi, ad esempio `BeforeClose` o `BeforeSave`.  
   
 ### <a name="programming-against-host-control-events"></a>Programmazione per gli eventi dei controlli host  
- Uno dei modi in cui i controlli host estendono gli oggetti Office è tramite l'aggiunta di eventi. Ad esempio, anche se l'oggetto <xref:Microsoft.Office.Interop.Excel.Range> in Excel e l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> in Word non contengono eventi, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende tali oggetti aggiungendo eventi programmabili. È possibile accedere a questi eventi e codificarli nello stesso modo in cui si accede agli eventi dei controlli presenti in Windows Form, ovvero tramite l'elenco a discesa degli eventi di Visual Basic e la pagina delle proprietà degli eventi in C#. Per altre informazioni, vedere [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Uno dei modi in cui i controlli host estendono gli oggetti Office è tramite l'aggiunta di eventi. Ad esempio, anche se l'oggetto <xref:Microsoft.Office.Interop.Excel.Range> in Excel e l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> in Word non contengono eventi, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende tali oggetti aggiungendo eventi programmabili. È possibile accedere a questi eventi e codificarli nello stesso modo in cui si accede agli eventi dei controlli presenti in Windows Form, ovvero tramite l'elenco a discesa degli eventi di Visual Basic e la pagina delle proprietà degli eventi in C#. Per altre informazioni, vedere [Procedura dettagliata: programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
 > [!NOTE]  
 >  Non è necessario impostare la proprietà <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> dell'oggetto <xref:Microsoft.Office.Interop.Excel.Application> in Excel su **false**. Impostando questa proprietà su **false** si impedisce a Excel di generare eventi, inclusi gli eventi dei controlli host.  

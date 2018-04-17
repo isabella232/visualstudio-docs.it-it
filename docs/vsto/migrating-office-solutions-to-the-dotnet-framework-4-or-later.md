@@ -1,13 +1,10 @@
 ---
 title: Migrazione di soluzioni Office a .NET Framework 4 o versioni successive | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.TargetFrameworkWarning
 dev_langs:
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8cb61186c7e8260578e9b69242c594c198f7e525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 830dcdb9e42472aa712c86ddb117b3b8003ac4d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migrating-office-solutions-to-the-net-framework-4-or-later"></a>Migrazione di soluzioni Office a .NET Framework 4 o versioni successive
   Se il framework di destinazione di un progetto di Office viene modificato per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o per versione successiva da una versione precedente di.NET Framework, potrebbero essere necessari alcuni passaggi aggiuntivi per poter continuare a eseguire la soluzione nei computer di sviluppo e degli utenti finali. Per ulteriori informazioni, vedere [modifiche necessarie per eseguire progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).  
@@ -35,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Aggiornamento delle personalizzazioni della barra multifunzione nei progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [L'aggiornamento di aree del modulo in progetti Outlook di cui eseguire la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [L'aggiornamento di aree del modulo in progetti Outlook di cui si esegue la migrazione a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
  Il framework di destinazione di un progetto di Office cambia quando si aggiorna il progetto da una versione precedente di Visual Studio. Per altre informazioni, vedere [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md).  
   

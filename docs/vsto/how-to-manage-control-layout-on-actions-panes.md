@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: gestire il Layout dei controlli nei riquadri azioni | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7b70bf12ee608b28e462f022fae15b3be6336545
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0831740c612e4e9d4eddd47a0648302e9460f060
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedura: gestire il layout di controllo dei riquadri delle azioni
   Un riquadro azioni è ancorato a destra di un documento o foglio di lavoro per impostazione predefinita. Tuttavia, può essere ancorato a sinistra, superiore o inferiore. Se si usano più controlli utente, è possibile scrivere codice per sovrapporre correttamente i controlli nel riquadro azioni. Per altre informazioni, vedere [Actions Pane Overview](../vsto/actions-pane-overview.md).  

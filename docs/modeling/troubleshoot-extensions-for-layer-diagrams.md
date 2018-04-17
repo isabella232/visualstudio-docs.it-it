@@ -1,29 +1,27 @@
 ---
 title: Risolvere i problemi relativi a estensioni per diagrammi dipendenza | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, extension errors
 - dependency diagrams, troubleshooting extensions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21a14ed32bb1b63e2363736e438139479ff5bf60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b546fa6a858ed959d93d4ec388c7bb8fb913864f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Risolvere i problemi relativi a estensioni per diagrammi di dipendenza
 Questo argomento risolve alcuni problemi che possono verificarsi quando si creano estensioni del modello di livello.  
   
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-includevsprvscode-qualityincludesvsprvsmdmd"></a>Quando si preme F5 per eseguire il debug dell'estensione my, my comandi, i gestori di movimento, estensioni di convalida o le proprietà personalizzate non vengono visualizzati nei diagrammi di dipendenza nell'istanza sperimentale di[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-includevsprvscode-qualityincludesvsprvsmdmd"></a>È possibile premere F5 per eseguire il debug estensione my, my comandi, i gestori di movimento, estensioni di convalida o le proprietà personalizzate non vengono visualizzati nei diagrammi di dipendenza nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
   
 1.  Aprire la soluzione di estensione nell'istanza sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e scegliere il **compilare** menu, fare clic su **Ricompila soluzione**.  
   

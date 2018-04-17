@@ -1,10 +1,8 @@
 ---
 title: 'Diagrammi di dipendenza: Fare riferimento | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -20,20 +18,20 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5185b391d0374754675999bff02438efd8de83e4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1a4ca32a85db34fa03a2ec5e52446707938b0304
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammi di dipendenza: riferimento
 In Visual Studio, è possibile utilizzare un *diagramma dipendenze* per visualizzare l'architettura di alto livello, logica del sistema. Un diagramma di dipendenza consente di organizzare gli elementi fisici nel sistema in gruppi logici e astratti denominati *livelli*. Questi livelli descrivono le attività principali eseguite dagli elementi o i componenti principali del sistema. Ogni livello può anche contenere livelli annidati che descrivono attività più dettagliate.  
   
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  È possibile specificare le dipendenze desiderate o esistenti tra i livelli. Queste dipendenze, rappresentate come frecce, indicano i livelli che possono usare o usano attualmente la funzionalità rappresentata da altri livelli. Organizzando il sistema in livelli che descrivono i ruoli e funzioni distinti, un diagramma di dipendenza consente di semplificare comprendere, riutilizzare e gestire il codice.  
   
@@ -50,19 +48,19 @@ In Visual Studio, è possibile utilizzare un *diagramma dipendenze* per visualiz
  In questo argomento vengono descritti gli elementi che è possibile utilizzare in un diagramma di dipendenza. Per ulteriori informazioni su come creare e creare i diagrammi di dipendenza, vedere [diagrammi dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md). Per ulteriori informazioni sui modelli di livello, visitare il [sito modelli e procedure](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-dependency-diagrams"></a>Lettura dei diagrammi di dipendenza  
- ![Elementi dei diagrammi dipendenza](../modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
+ ![Gli elementi nei diagrammi dipendenza](../modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
   
  Nella tabella seguente vengono descritti gli elementi che è possibile utilizzare in un diagramma di dipendenza.  
   
 |**Forma**|**Elemento**|**Descrizione**|  
 |---------------|-----------------|---------------------|  
-|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi che sono collegati a un livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per ulteriori informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **Non è consentito dipendenze Namespace** -specifica che gli elementi associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-   **Non è consentito di spazi dei nomi** -specifica che gli elementi associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-   **Spazi dei nomi necessari** -specifica che gli elementi associati a questo livello devono appartenere a uno degli spazi dei nomi specificato.|  
+|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi che sono collegati a un livello, aprire il menu di scelta rapida per il livello e quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per ulteriori informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **Non è consentito Namespace dipendenze** -specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-   **Non è consentito gli spazi dei nomi** -specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-   **Spazi dei nomi necessari** -specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificato.|  
 |2|**Dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> -   **Direzione** -specifica la direzione della dipendenza.|  
 |3|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> -   **Direzione** -specifica la direzione della dipendenza.|  
 |4|**Commentoo**|Usato per aggiungere note generali al diagramma o elementi nel diagramma.|  
 |5|**Collegamento commento**|Usato per collegare commenti a elementi nel diagramma.|  
   
-##  <a name="Explorer"></a>Esplora livello  
+##  <a name="Explorer"></a> Esplora livello  
  È possibile collegare ogni livello a elementi nella soluzione, come progetti, classi, spazi dei nomi, file di progetto e altre parti del software. Il numero specificato su un livello indica il numero di elementi a esso collegati. Tuttavia, nell'interpretare il numero di elementi in un livello, ricordare quanto segue:  
   
 -   Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.  
@@ -81,7 +79,7 @@ In Visual Studio, è possibile utilizzare un *diagramma dipendenze* per visualiz
   
 -   Nel diagramma di dipendenza, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**.  
   
-     **Esplora livello** apre e visualizza gli elementi che sono collegati ai livelli selezionati. **Esplora livello** include una colonna che mostra ogni proprietà dei collegamenti dell'elemento.  
+     **Esplora livello** apre e include gli elementi che sono collegati ai livelli selezionati. **Esplora livello** include una colonna che mostra ognuna delle proprietà dei collegamenti dell'elemento.  
   
     > [!NOTE]
     >  Se è possibile visualizzare tutte queste proprietà, espandere il **Esplora livello** finestra.  

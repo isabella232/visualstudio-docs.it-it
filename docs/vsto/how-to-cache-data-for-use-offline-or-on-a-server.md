@@ -1,12 +1,10 @@
 ---
-title: 'Procedura: memorizzare nella Cache di dati per l''utilizzo Offline o in un Server | Documenti Microsoft'
-ms.custom: 
+title: "Procedura: memorizzare nella Cache di dati per l'utilizzo Offline o in un Server | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 44130744af5d09e8582e2589bcefb7aca11b5ce2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 91b50684e18aaf4b7b6d95d24c81ecb56bdefc4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedura: memorizzare dati nella cache per l'utilizzo offline o su un server
   È possibile contrassegnare un elemento di dati da memorizzare nella cache del documento, in modo che sia disponibile offline. Ciò consente inoltre per i dati del documento deve essere modificato da altro codice quando il documento viene archiviato in un server.  
@@ -66,7 +65,7 @@ ms.lasthandoff: 01/10/2018
  [La memorizzazione nella cache di dati](../vsto/caching-data.md)   
  [Procedura: memorizzare nella Cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [Procedura: memorizzare nella Cache i dati in un documento protetto da Password](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [L'accesso ai dati nei documenti nel Server](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [L'accesso ai dati dei documenti sul Server](../vsto/accessing-data-in-documents-on-the-server.md)   
  [Salvataggio di dati](/visualstudio/data-tools/saving-data)  
   
   

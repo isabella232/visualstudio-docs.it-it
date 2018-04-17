@@ -1,26 +1,24 @@
 ---
 title: Definizione di forme e connettori | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a1a1043515afb8d7567459e1adae23f1d4fcfde9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d915487a9cbddb9678a6b9aa37d990e7b70527e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>Definizione di forme e connettori
 Per visualizzare le informazioni su un diagramma in un linguaggio specifico di dominio (DSL), sono disponibili numerosi tipi base di forme.  
   
-##  <a name="shapeTypes"></a>Tipi di forme e connettori di base  
+##  <a name="shapeTypes"></a> Tipi di forme e connettori di base  
  Un diagramma DSL Mostra una raccolta di *forme* concatenati da linee o *connettori*.  In genere, ma non sempre:  
   
 -   Le forme sono la rappresentazione visibile di elementi modello.  
@@ -44,5 +42,5 @@ Per visualizzare le informazioni su un diagramma in un linguaggio specifico di d
 |Corsie|Le corsie sono una partizione orizzontale o verticale di un diagramma. Le corsia rimane sempre sotto le altre forme nel diagramma.<br /><br /> In genere, gli elementi modello della corsia sono associati a un elemento padre nel modello radice e gli altri elementi sono associati agli elementi padre dei primi. Per un esempio, creare un DSL dal modello di soluzione Flusso attività.|  
 |Connettori|Le linee tracciate tra le forme rappresentano in genere relazioni di riferimento. Sono disponibili opzioni per impostare un connettore come diritto o rettilineo e con diversi tipi di punta della freccia.|  
   
-##  <a name="shapeInheritance"></a>Ereditarietà di forma  
+##  <a name="shapeInheritance"></a> Ereditarietà di forma  
  Una forma può ereditare da un'altra forma. Tuttavia, è necessario che le forme siano dello stesso tipo. Ad esempio, solo una forma geometrica può ereditare da una forma geometrica. Le forme ereditate mantengono i raggruppamenti e gli elementi Decorator della relativa forma di base. I connettori possono invece ereditare dai connettori.

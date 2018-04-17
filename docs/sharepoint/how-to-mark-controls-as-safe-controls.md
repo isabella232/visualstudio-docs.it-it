@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: contrassegnare i controlli come controlli sicuri | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,18 +16,19 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9d34722f7dc9b9975429fac64311dd0b63c30fbe
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d703beb24821663b08ed69238fcf27e2a752d64b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: contrassegnare i controlli come controlli sicuri
   Per la sicurezza, SharePoint riconosce la differenza tra i controlli Web protetti dagli attacchi script injection e Web che non sono. Controlli, protetto o *controlli sicuri*, è possibile accedere tramite gli utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà di un elemento di progetto SharePoint o in voci di controllo sicure di **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere  
   
- [Modifica delle impostazioni Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [registrazione di un Assembly di Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkId=171013).  
+ [Modifica delle impostazioni Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [prevede la registrazione di un Assembly Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkId=171013).  
   
 > [!IMPORTANT]  
 >  Queste procedure sono solo a scopo illustrativo. Contrassegnare i controlli sicuri solo se si è certi che siano protetti.  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
 16. Scegliere il tasto Tab e quindi scegliere il **OK** per chiudere la finestra di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+ [Specifica sui pacchetti e informazioni sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [Creazione del pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

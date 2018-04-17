@@ -1,13 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di menu di scelta rapida per segnalibri | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Procedura dettagliata: creazione di menu di scelta rapida per segnalibri
   Questa procedura dettagliata viene illustrato come creare menu di scelta rapida per <xref:Microsoft.Office.Tools.Word.Bookmark> controlli in una personalizzazione a livello di documento per Word. Quando un utente fa clic il testo in un segnalibro, un menu di scelta rapida viene visualizzato e alcune opzioni per la formattazione del testo.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Creazione del progetto  
+##  <a name="BKMK_CreateProject"></a> Creazione del progetto  
  Il primo passaggio consiste nel creare un progetto documento di Word in Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
@@ -60,14 +57,14 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il **risorse del Menu di scelta rapida di segnalibro** progetto **Esplora**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Aggiunta di testo e i segnalibri nel documento  
+##  <a name="BKMK_addtextandbookmarks"></a> Aggiunta di testo e i segnalibri nel documento  
  Aggiungere testo al documento e quindi aggiungere due segnalibri sovrapposti.  
   
 #### <a name="to-add-text-to-your-document"></a>Per aggiungere testo al documento  
   
 -   Nel documento che viene visualizzato nella finestra di progettazione del progetto, digitare il testo seguente.  
   
-     **Questo è un esempio di creazione di un menu di scelta rapida quando il pulsante destro del mouse il testo in un segnalibro.**  
+     **Questo è un esempio di creazione di un menu di scelta rapida facendo clic sul testo in un segnalibro.**  
   
 #### <a name="to-add-a-bookmark-control-to-your-document"></a>Per aggiungere un controllo Bookmark a un documento  
   
@@ -77,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Selezionare le parole "Creazione di un menu di scelta rapida quando il pulsante destro del mouse il testo", quindi fare clic su **OK**.  
   
-     `bookmark1`viene aggiunto al documento.  
+     `bookmark1` viene aggiunto al documento.  
   
 3.  Aggiungere un altro <xref:Microsoft.Office.Tools.Word.Bookmark> controllare con le parole "mouse il testo in un segnalibro".  
   
-     `bookmark2`viene aggiunto al documento.  
+     `bookmark2` viene aggiunto al documento.  
   
     > [!NOTE]  
     >  Le parole "mouse il testo" sono entrambi `bookmark1` e `bookmark2`.  
   
  Quando si aggiunge un segnalibro a un documento in fase di progettazione, un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo viene creato. È possibile programmare diversi eventi del segnalibro. È possibile scrivere codice nel <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> evento del segnalibro in modo che quando l'utente fa il testo nel segnalibro, viene visualizzato un menu di scelta rapida.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Aggiunta di comandi al Menu di scelta rapida  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Aggiunta di comandi al Menu di scelta rapida  
  Aggiungere pulsanti al menu di scelta rapida che viene visualizzato quando si fa clic su un documento.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Per aggiungere comandi al menu di scelta rapida  
@@ -148,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Formattare il testo nel segnalibro  
+##  <a name="BKMK_formattextbkmk"></a> Formattare il testo nel segnalibro  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Per formattare il testo nel segnalibro  
   
@@ -157,7 +154,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]  
   
-2.  **Esplora soluzioni**selezionare **ThisDocument. cs** o **ThisDocument. vb**.  
+2.  **Esplora soluzioni**, selezionare **ThisDocument.cs** o **ThisDocument. vb**.  
   
 3.  Nella barra dei menu scegliere **Visualizza**, **Codice**.  
   

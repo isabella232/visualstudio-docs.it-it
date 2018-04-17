@@ -1,12 +1,10 @@
 ---
 title: Visual Studio Tools per Office Runtime Overview | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f357e593c7fe1e3dc5e4803b93ac515911ed9f75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Panoramica di Visual Studio Tools per Office Runtime
   Per eseguire soluzioni create usando gli strumenti di sviluppo di Microsoft Office in Visual Studio, Visual Studio 2010 Tools per Office Runtime deve essere installato nei computer degli utenti finali. Per altre informazioni, vedere [How to: Install the Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools per Office Runtime è costituito da due componenti principali:  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Visual Studio Tools for Office Runtime Installation Scenarios](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
- [Assembly di Visual Studio Tools per Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
+ [Assembly in Visual Studio Tools per Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)   
  [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)   

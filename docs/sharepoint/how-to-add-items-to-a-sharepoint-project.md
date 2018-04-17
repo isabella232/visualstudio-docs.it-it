@@ -1,13 +1,10 @@
 ---
 title: 'Procedura: aggiungere elementi a un progetto SharePoint | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b37e97ddf0a6ffd119c920b384d0536eb943fa3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 41d36dc5c7f4f2d904a69d9053ed0f669b1a86c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Procedura: aggiungere elementi a un progetto SharePoint
   Soluzioni di SharePoint contengono uno o più progetti, ognuno dei quali contiene più elementi di progetto SharePoint. Dopo avere aperto o creato una soluzione di SharePoint, è possibile aggiungere elementi nuovi o esistenti a questi progetti. Ad esempio, nuovi progetti di flusso di lavoro forniti con un modulo predefinito denominato default.aspx, ma è possibile sostituire tale form con un modulo nuovo o diverso o aggiungere un altro form ASPX.  
@@ -54,7 +51,7 @@ ms.lasthandoff: 01/10/2018
 4.  Passare alla cartella che contiene l'elemento che si desidera aggiungere, selezionarla e quindi scegliere il **Aggiungi** pulsante.  
   
 ## <a name="see-also"></a>Vedere anche  
- [I modelli di progetto e di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
+ [Progetto SharePoint e i modelli di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

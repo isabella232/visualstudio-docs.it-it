@@ -1,25 +1,24 @@
 ---
 title: 'Procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 2 | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creazione di un elemento di progetto Colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, è inoltre possibile fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Per inizializzare l'elemento del progetto, è possono utilizzare le informazioni raccolte.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Il debug e test della procedura guidata.  
   
 > [!NOTE]  
->  È possibile scaricare un esempio che contiene i progetti completati, codice e altri file per questa procedura dettagliata dal seguente percorso: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  È possibile scaricare un esempio che contiene i progetti completati, codice e altri file per questa procedura dettagliata dal seguente percorso: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire questa procedura dettagliata, è innanzitutto necessario creare la soluzione SiteColumnProjectItem completando [procedura dettagliata: creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Colonne del sito di SharePoint. Per ulteriori informazioni, vedere [colonne](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Informazioni sui componenti della procedura guidata  
+##  <a name="wizardcomponents"></a> Informazioni sui componenti della procedura guidata  
  La procedura guidata illustrata in questa procedura dettagliata contiene diversi componenti. Nella tabella seguente vengono descritti questi componenti.  
   
 |Componente|Descrizione|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Nell'elenco dei modelli di progetto, scegliere **libreria di controlli utente WPF**, denominare il progetto **ProjectTemplateWizard**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **ProjectTemplateWizard** progetto alla soluzione e apre il file UserControl1. XAML predefinito.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **ProjectTemplateWizard** progetto alla soluzione e apre il file UserControl1.xaml predefinito.  
   
 6.  Eliminare il file UserControl1 dal progetto.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Scegliere il **libreria di classi** modello di progetto, denominare il progetto **SharePointCommands**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **SharePointCommands** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **SharePointCommands** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 5.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Se si sviluppa un progetto Visual Basic, importare lo spazio dei nomi ProjectTemplateWizard al progetto utilizzando il **progettazione**.  
   
-     Per ulteriori informazioni, vedere [procedura: aggiungere o rimuovere spazi dei nomi importati &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Per altre informazioni, vedere [procedura: aggiungere o rimuovere spazi dei nomi importati &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Per configurare il progetto SharePointCommands  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Scegliere la freccia accanto al **Aggiungi** e quindi scegliere il **Aggiungi come collegamento** opzione dal menu visualizzato.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il file di codice per il **SharePointCommands** progetto come un collegamento. Il file di codice si trova nel **ProjectTemplateWizard** anche progetto, ma il codice nel file viene compilato nel **SharePointCommands** progetto.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il file di codice per il **SharePointCommands** progetto come un collegamento. Il file di codice si trova nel **ProjectTemplateWizard** anche progetto, ma il codice nel file viene compilato nel **SharePointCommands** progetto.  
   
 5.  Nel **SharePointCommands** del progetto, aggiungere un altro file di codice denominato comandi.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Per ulteriori informazioni sul `WizardExtension` elemento, vedere [WizardExtension (elemento) &#40; Modelli di Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Per ulteriori informazioni sul `WizardExtension` elemento, vedere [WizardExtension (elemento) &#40;modelli di Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Salvare e chiudere il file.  
   
@@ -544,7 +543,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Definizione di tipi di elemento di progetto SharePoint personalizzato](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Creazione di modelli di progetto e modelli di elemento per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Creazione di modelli di elementi e modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Riferimenti allo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Procedura: Usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)  
   

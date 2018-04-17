@@ -1,24 +1,22 @@
 ---
 title: Debug di un modello di testo T4 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Debug di un modello di testo T4
 È possibile impostare i punti di interruzione nei modelli di testo. Per eseguire il debug di un modello di testo in fase di progettazione, salvare il file di modello di testo e quindi scegliere **Debug modello T4** nel menu di scelta rapida del file in Esplora soluzioni. Per eseguire il debug di un modello di testo in fase di esecuzione, è sufficiente eseguire il debug dell'applicazione a cui appartiene.  
@@ -72,7 +70,7 @@ ms.lasthandoff: 02/09/2018
 |La direttiva include per il file '{0}' causa un ciclo infinito.|Se le istruzioni di inclusione circolare visualizzato vengono specificati (ad esempio, il file include file B, che include il file).|Non specificare circolare le direttive di inclusione.|  
 |Esecuzione di trasformazione:|Antepone la stringa per tutti gli errori o avvisi generati durante l'esecuzione della trasformazione.|Non applicabile.|  
 |Un tag di inizio o fine imprevisto trovato all'interno di un blocco. Assicurarsi che non sia stato digitato erroneamente un tag di inizio o fine, e che non è necessario alcun blocco annidato nel modello.|Visualizzato quando si dispone di un'eccezione imprevista \<# o #>. Vale a dire, se dispone di un \<# dopo un altro tag aperto che non è stato chiuso, oppure l'utente dispone di un #> quando è presente alcun tag aperto prima di esso. Il messaggio fornisce il numero di riga del tag non corrispondenti.|Rimuovere il tag di inizio o fine non corrispondente o utilizzare un carattere di escape.|  
-|Una direttiva è stata specificata in un formato non corretto. La direttiva verrà ignorata. Specificare la direttiva nel formato`<#@ name [parametername="parametervalue"]*  #>`|Se non si specifica una direttiva nel formato corretto, visualizzato dal parser. Il messaggio fornisce il numero di riga della direttiva non corretto.|Assicurarsi che tutte le direttive siano nel formato `<#@ name [parametername="parametervalue"]*  #>`. Per ulteriori informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).|  
+|Una direttiva è stata specificata in un formato non corretto. La direttiva verrà ignorata. Specificare la direttiva nel formato `<#@ name [parametername="parametervalue"]*  #>`|Se non si specifica una direttiva nel formato corretto, visualizzato dal parser. Il messaggio fornisce il numero di riga della direttiva non corretto.|Assicurarsi che tutte le direttive siano nel formato `<#@ name [parametername="parametervalue"]*  #>`. Per ulteriori informazioni, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).|  
 |Non è riuscito a caricare l'Assembly '{0}' per il processore di direttiva registrato '\\{1 \\}'<br /><br /> {2}|Si verifica quando un processore di direttiva non è stato caricato dall'host. Il messaggio identifica l'assembly fornito per il processore di direttiva e il nome del processore di direttiva.|Verificare che il processore di direttiva sia registrato correttamente e che l'assembly esista.|  
 |Non è riuscito a trovare il tipo '{0}' nell'Assembly '\\{1 \\}' per il processore di direttiva registrato '{2}'<br /><br /> {3}|Si verifica quando un tipo di processore di direttiva non è stato caricato dall'assembly. Il messaggio fornisce il nome del tipo, assembly e processore di direttiva.|Vshost Trova informazioni processore di direttiva (nome, assembly e tipo) nel Registro di sistema. Verificare che il processore di direttiva sia registrato correttamente e che il tipo esiste nell'assembly.|  
 |Si è verificato un problema durante il caricamento dell'assembly '{0}'|Si verifica quando si è verificato un problema durante il caricamento di un assembly. Il messaggio fornisce il nome dell'assembly.|È possibile specificare gli assembly da caricare in \<@# assembly #> direttive e dai processori di direttiva. Il messaggio di errore che segue questa stringa deve fornire più dati su perché il caricamento dell'assembly non è riuscita.|  

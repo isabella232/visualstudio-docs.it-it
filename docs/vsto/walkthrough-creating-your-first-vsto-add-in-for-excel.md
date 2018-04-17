@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione del componente aggiuntivo VSTO prima per Excel | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: de2b241cd44adebecd91ee097ebf8f8875915937
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>Procedura dettagliata: creazione del primo componente aggiuntivo VSTO per Excel
   Questa procedura dettagliata introduttiva descrive come creare un componente aggiuntivo a livello di applicazione per Microsoft Office Excel. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali cartelle di lavoro siano aperte.  
@@ -134,7 +133,7 @@ ms.lasthandoff: 01/10/2018
 -   Distribuzione di componenti aggiuntivi VSTO per Excel: [distribuisce una soluzione Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Cenni preliminari sullo sviluppo di soluzioni di Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluzioni Excel](../vsto/excel-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Panoramica del modello oggetto di Excel](../vsto/excel-object-model-overview.md)   

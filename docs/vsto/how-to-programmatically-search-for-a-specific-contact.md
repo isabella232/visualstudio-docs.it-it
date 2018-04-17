@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: eseguire la ricerca a livello di codice per un contatto specifico | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - searching contacts
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 76684f9c4549345c399979afdd535e235a6d4991
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6799041283fab154be40233729dd3c14b1978ed9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procedura: Eseguire la ricerca di un contatto specifico a livello di codice
   Questo esempio cerca una cartella Contatti di Outlook per un contatto specifico in base al nome e al cognome. L'esempio presuppone che un contatto denominato **John Evans** esista nella cartella Contatti.  

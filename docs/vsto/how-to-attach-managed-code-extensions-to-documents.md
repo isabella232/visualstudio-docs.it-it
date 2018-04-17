@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: associare estensioni di codice gestito a documenti | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1653b0e903fd931d5df4b1dcce4dcbd99fbbae37
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe415cfb0635f133baf191f027ca7ae0111989a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedura: associare estensioni di codice gestito a documenti
   È possibile collegare un assembly di personalizzazione di un documento esistente di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel. Il documento o la cartella di lavoro può essere in qualsiasi formato di file supportato dai progetti di Microsoft Office e strumenti di sviluppo in Visual Studio. Per ulteriori informazioni, vedere [architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md).  
@@ -33,7 +32,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  La personalizzazione non verrà caricato se il codice prevede che i controlli che non dispone del documento specificato.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come ricerca per categorie: allegare o scollegamento di un Assembly di VSTO da un documento di Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [come ricerca per categorie: allegare o scollegamento di un Assembly di VSTO da un documento di Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Per allegare estensioni di codice gestito a un documento  
   
@@ -54,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 4.  Compilare il progetto ed eseguire l'applicazione nel computer in cui si desidera associare la personalizzazione. Il computer deve disporre di Visual Studio 2010 Tools per Office Runtime installato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [La gestione dei documenti in un Server utilizzando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
+ [Gestione di documenti in un Server utilizzando la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Procedura: rimuovere estensioni di codice gestito dai documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Manifesti dell'applicazione e di distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

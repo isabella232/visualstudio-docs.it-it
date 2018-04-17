@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la barra multifunzione XML | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1b736ace651854b3b6a527685e150f6f1ec7194c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 759aee9692ee905e33ce55ff068b74d4a289c78a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: creazione di una scheda personalizzata utilizzando l'elemento XML della barra multifunzione
   Questa procedura dettagliata viene illustrato come creare una scheda della barra multifunzione personalizzata usando il **della barra multifunzione (XML)** elemento.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
      Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Apre il **ThisAddIn.cs** o **ThisAddIn. vb** file di codice e aggiunge il **MyRibbonAddIn** progetto **Esplora soluzioni**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre il **ThisAddIn.cs** o **ThisAddIn. vb** file di codice e aggiunge il **MyRibbonAddIn** progetto al **Esplora**.  
   
 ## <a name="creating-the-vsto-add-ins-tab"></a>Creazione della scheda Componenti aggiuntivi VSTO  
  Per creare il **Add-Ins** scheda, aggiungere un **della barra multifunzione (XML)** elemento al progetto. Più avanti nella procedura dettagliata verranno aggiunti alcuni pulsanti a questa scheda.  

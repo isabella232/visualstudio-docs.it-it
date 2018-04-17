@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: stampa di documenti di Visio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a2ce41f14758d1f34c3e8c31d2ec013fa24c27b1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6efaffb9f8b3a9842528765d43f065acb314025f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Procedura: Stampare documenti di Visio a livello di codice
   È possibile stampare l'intero contenuto o solo una pagina specifica di un documento di Microsoft Office Visio.  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Soluzioni Visio](../vsto/visio-solutions.md)   
  [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)   
- [Procedura: creazione di nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Procedura: creare nuovi documenti di Visio](../vsto/how-to-programmatically-create-new-visio-documents.md)   
  [Procedura: aprire documenti di Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
  [Procedura: chiudere a livello di programmazione di documenti di Visio](../vsto/how-to-programmatically-close-visio-documents.md)   
  [Procedura: Salvare documenti di Visio a livello di codice](../vsto/how-to-programmatically-save-visio-documents.md)  

@@ -1,23 +1,21 @@
 ---
 title: 'Procedura: selezionare gli schemi XML da utilizzare | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 80d0438e7c7dfb7fd346dc5faae6f364279658ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6e7864481975a63745143f5ea8508bd74fffbf7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
 L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir%\Xml\Schemas. La cache degli schemi include schemi XML noti che vengono usati per IntelliSense e per la convalida di documenti XML.  
@@ -75,6 +73,6 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
     >  Se si dispone ancora di un riferimento allo schema mediante un `schemaLocation` attributo o un corrispondente `targetNamespace` quindi **rimuovere** non funzioneranno in questa situazione, a causa dell'associazione automatica. In questo caso è consigliabile contrassegnare lo schema come **non utilizzano gli schemi selezionati** nel **utilizzare** colonna.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Cache dello schema](../xml-tools/schema-cache.md)   
+ [Cache degli schemi](../xml-tools/schema-cache.md)   
  [Finestra di dialogo schemi XML](../xml-tools/xml-schemas-dialog-box.md)   
  [Editor XML](../xml-tools/xml-editor.md)

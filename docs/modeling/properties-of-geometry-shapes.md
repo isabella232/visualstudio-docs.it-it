@@ -1,25 +1,23 @@
 ---
-title: "Proprietà delle forme geometriche | Documenti Microsoft"
-ms.custom: 
+title: Proprietà delle forme geometriche | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.geometryshape
 helpviewer_keywords:
 - Domain-Specific Language, geometry shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00897fa468ef223b523101810d1bbe7b8fa533fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8b82f74afc133f99a4b9d2851c28ade1743ee3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-geometry-shapes"></a>Proprietà delle forme geometriche
 Per specificare la modalità di visualizzazione delle istanze di classi di dominio in un linguaggio specifico di dominio, è possibile utilizzare forme geometriche. Per ulteriori informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -44,7 +42,7 @@ Per specificare la modalità di visualizzazione delle istanze di classi di domin
 |Forma di base di geometria|Classe di base di questa forma.|(nessuno)|  
 |nome|Il nome della forma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questa forma.|Spazio dei nomi corrente|  
-|ToolTip (tipo)|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|nessuno|  
+|ToolTip (tipo)|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|Nessuno|  
 |Note|Note informale che sono associate a questo elemento.|\<Nessuno >|  
 |Altezza iniziale|Altezza iniziale di questa forma, espressa in pollici.|1|  
 |Larghezza iniziale|Larghezza iniziale della forma in pollici.|1,5|  

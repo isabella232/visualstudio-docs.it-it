@@ -2,7 +2,7 @@
 title: Supporta l'istruzione per Visual Basic 6.0 | Documenti Microsoft
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Supporta l'istruzione per Visual Basic 6.0 in Windows
 
@@ -30,10 +30,10 @@ Il team di Visual Basic viene eseguito il commit per la compatibilità "It Just 
 - Windows 8,1
 - Windows 7
 - Windows Server 2016
-- Windows Server 2012 including R2
+- Windows Server 2012 R2 incluso
 - Windows Server 2008 R2 incluso
 
-Obiettivo del team di Visual Basic è che le applicazioni Visual Basic 6.0 continuano a eseguire sulle versioni supportate di Windows. Come descritto in questo documento, il runtime di Visual Basic 6.0 core sarà supportato per la durata completa delle versioni supportate di Windows, ovvero cinque anni di supporto mainstream seguita da cinque anni di supporto esteso (http://support.microsoft.com/gp/lifepolicy). La barra di supporto sarà limitata a gravi regressioni e problemi di sicurezza critico per le applicazioni esistenti.
+Obiettivo del team di Visual Basic è che le applicazioni Visual Basic 6.0 continuano a eseguire sulle versioni supportate di Windows. Come descritto in dettaglio in questo documento, il runtime di Visual Basic 6.0 core sarà supportato per la durata completa delle versioni supportate di Windows, ovvero cinque anni di supporto mainstream seguita da cinque anni di supporto esteso (http://support.microsoft.com/gp/lifepolicy). La barra di supporto sarà limitata a gravi regressioni e problemi di sicurezza critico per le applicazioni esistenti.
 
 ## <a name="technical-summary"></a>Riepilogo tecnico
 
@@ -73,8 +73,8 @@ Per informazioni specifiche sui file inclusi in ogni gruppo di supporto, vedere 
 
 Supporto e/o file binari di runtime di Visual Basic 6.0 di spedizione nelle versioni supportate di Windows non modifica i criteri di supporto per l'IDE di Visual Basic 6.0 o l'IDE di Visual Studio 6.0 nel suo complesso. Tali prodotti è stato spostato da un supporto esteso 8 aprile 2008.
 
-Dettagli sulla disponibilità del supporto dei prodotti Microsoft sono disponibili in http://support.microsoft.com/gp/lifepolicy. Come parte di questo ciclo di vita del supporto tecnico, Microsoft continuerà a supportare il runtime di Visual Basic 6.0 sulle versioni supportate di Windows per la durata di supporto di tali sistemi operativi. Ciò significa, ad esempio, è possibile che il runtime di Visual Basic 6.0 sarà supportato in Windows Server 2003 fino a giugno 2008 per il supporto Mainstream e giugno 2013 per il supporto esteso.
-Per ulteriori informazioni sulla disponibilità del supporto o per informazioni sulle altre opzioni di supporto, visitare la pagina di supporto all'http://www.microsoft.com/support.
+Dettagli sulla disponibilità del supporto dei prodotti Microsoft sono reperibile in http://support.microsoft.com/gp/lifepolicy. Come parte di questo ciclo di vita del supporto tecnico, Microsoft continuerà a supportare il runtime di Visual Basic 6.0 sulle versioni supportate di Windows per la durata di supporto di tali sistemi operativi. Ciò significa, ad esempio, è possibile che il runtime di Visual Basic 6.0 sarà supportato in Windows Server 2003 fino a giugno 2008 per il supporto Mainstream e giugno 2013 per il supporto esteso.
+Per ulteriori informazioni sulla disponibilità del supporto o per sapere sulle opzioni di supporto aggiuntive, visitare la pagina del supporto in http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>Windows a 64 bit
 
@@ -149,7 +149,7 @@ In questa sezione fornisce informazioni aggiuntive per i sistemi operativi che o
 
 
 > [!NOTE]
-> &#42;  Supporto di runtime VB6 è limitato dal ciclo di vita di supporto di Windows.  Ad esempio, se il sistema operativo di destinazione è il supporto esteso, VB6 non può avere un livello superiore di supporto di supporto esteso.  Il [Windows supporta informativa del ciclo di vita](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contiene del ciclo di vita ulteriori informazioni sulle versioni di Windows precedente e corrente.
+> &#42;Supporto di runtime VB6 è limitato dal ciclo di vita del supporto di Windows.  Ad esempio, se il sistema operativo di destinazione è il supporto esteso, VB6 non può avere un livello superiore di supporto di supporto esteso.  Il [Windows supporta informativa del ciclo di vita](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contiene del ciclo di vita ulteriori informazioni sulle versioni di Windows precedente e corrente.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Utilizzo di runtime di Visual Basic 6.0 in VBA e Office
 
@@ -182,11 +182,11 @@ Se si riscontra un problema con l'applicazione di Visual Basic 6.0 in esecuzione
 |atl.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
 |asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
 |comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
-|compobj.dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
+|compobj. dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
 |dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
 |dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
 |dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   Olepro32. dll|
 |ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
 |expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
 |hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
@@ -198,7 +198,7 @@ Se si riscontra un problema con l'applicazione di Visual Basic 6.0 in esecuzione
 |mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
 |mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
 |mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
-|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   storage.dll|
+|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
 |msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
 |msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
 |msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |

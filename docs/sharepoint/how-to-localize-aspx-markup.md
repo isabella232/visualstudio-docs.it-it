@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: localizzare il Markup ASPX | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 99683e590a2bc6638a809bd3d14486c951a2ad02
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9dd127fea21a53b9a29082f536ac8c0404299c63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-aspx-markup"></a>Procedura: localizzare il markup ASPX
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]pagine (aspx), in genere, utilizzare i valori stringa hardcoded. Per localizzare le stringhe, sostituirli con espressioni che fanno riferimento alle risorse localizzate.  
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine (con estensione aspx) usano in genere i valori stringa a livello di codice. Per localizzare le stringhe, sostituirli con espressioni che fanno riferimento alle risorse localizzate.  
   
 ## <a name="localizing-aspx-markup"></a>Localizzazione Markup ASPX  
   

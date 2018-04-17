@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4a89d062fe8adeb06c05ba25929bce6d466511
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 23fdb07a4d6ad9052734a9b4bcbde4cabef65db9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clearcollectionlttgt-activity-designer"></a>ClearCollection&lt;T&gt; ActivityDesigner
 Il **ClearCollection\<T >** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.ClearCollection%601> attività.
@@ -39,6 +39,6 @@ Il **ClearCollection\<T >** ActivityDesigner viene utilizzato per creare e confi
 ## <a name="see-also"></a>Vedere anche
 
 - [Raccolta](../workflow-designer/collection-activity-designers.md)
-- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
+- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)
 - [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)
-- [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)
+- [RemoveFromCollection\<T >](../workflow-designer/removefromcollection-t-activity-designer.md)

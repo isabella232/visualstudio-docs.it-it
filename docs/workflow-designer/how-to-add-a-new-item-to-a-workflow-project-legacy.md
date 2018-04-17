@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 130cd83d-942d-437b-bbb5-8088ec0a6d79
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b0c644854f8f08ff7aeeb05f92fe3fd359f45e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro [legacy]
 Dopo aver creato un progetto di flusso di lavoro utilizzando la finestra di progettazione del flusso di lavoro Windows legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] che si riferisce al [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], è possibile aggiungere [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] gli elementi e altri noti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elementi in modo dal progetto.

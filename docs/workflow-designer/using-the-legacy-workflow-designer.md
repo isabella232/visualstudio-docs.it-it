@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 7af53077-afd7-465f-9c1d-b387e9d4f216
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a042d98019b7f618792f7a9104d262362a4e6e3d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 700434451d8390b9875a290b428c2173953cbb8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro legacy
 La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o a [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

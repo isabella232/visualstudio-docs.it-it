@@ -1,12 +1,10 @@
 ---
 title: Panoramica del modello a oggetti di Excel | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   Per sviluppare soluzioni che utilizzano Microsoft Office Excel, è possibile interagire con gli oggetti forniti dal modello a oggetti di Excel. In questo argomento vengono introdotti gli oggetti più importanti:  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  In questo argomento viene illustrato brevemente il modello a oggetti di Excel. Per le risorse in cui per ulteriori informazioni sull'intero modello a oggetti Excel, vedere [utilizzo della documentazione sul modello a oggetti di Excel](#ExcelOMDocumentation).  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come si ricerca per categorie: utilizzare i gestori eventi in un componente aggiuntivo per Excel 2007?](http://go.microsoft.com/fwlink/?LinkID=130291), e [come si ricerca per categorie: utilizzare le forme per creare una bolla Grafico in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [modo in cui si ricerca per categorie: utilizzare i gestori eventi in un componente aggiuntivo per Excel 2007?](http://go.microsoft.com/fwlink/?LinkID=130291), e [come si ricerca per categorie: utilizzare le forme per creare un grafico a bolle in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>Accesso agli oggetti in un progetto di Excel  
  Quando si crea un nuovo progetto di componente aggiuntivo VSTO per Excel, Visual Studio crea automaticamente un file di codice ThisAddIn.vb o ThisAddIn.cs. È possibile accedere all'oggetto applicazione tramite `Me.Application` o `this.Application`.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- È possibile utilizzare la classe `Globals` nel progetto per accedere a `ThisWorkbook`, `Sheet1`, `Sheet2` o `Sheet3` dall'esterno della rispettiva classe. Per ulteriori informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md). L'esempio seguente chiama il <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metodo `Sheet1` indipendentemente dal fatto che il codice sia posizionato in uno del `Sheet`  *n*  classi o `ThisWorkbook` classe.  
+ È possibile utilizzare la classe `Globals` nel progetto per accedere a `ThisWorkbook`, `Sheet1`, `Sheet2` o `Sheet3` dall'esterno della rispettiva classe. Per ulteriori informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md). L'esempio seguente chiama il <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metodo di `Sheet1` indipendentemente dal fatto il codice viene inserito in uno del `Sheet` *n* classi o `ThisWorkbook` classe.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio estende l’oggetto <xref:Microsoft.Office.Interop.Excel.Range> fornendo i tipi <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Questi tipi hanno la maggior parte delle medesime funzionalità di un oggetto <xref:Microsoft.Office.Interop.Excel.Range>, nonché nuove funzionalità, quali la funzionalità di associazione dati, e nuovi eventi. Per ulteriori informazioni, vedere [controllo NamedRange](../vsto/namedrange-control.md) e [controllo XmlMappedRange](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a>Utilizzo della documentazione sul modello a oggetti di Excel  
+##  <a name="ExcelOMDocumentation"></a> Uso della documentazione di modello a oggetti di Excel  
  Per informazioni complete sul modello a oggetti di Excel, è possibile utilizzare il riferimento di assembly di interoperabilità primario di Excel e il riferimento del modello a oggetti VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Riferimento degli assembly di interoperabilità primari  

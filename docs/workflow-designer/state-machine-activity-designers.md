@@ -4,15 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e93ba35830f3b0c08ea7957ab3fbcb6ea254a7a1
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bde93d8ac1907accf4f7d14da186aa43ccb169a7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 Progettazione del flusso di lavoro di Windows include una serie di finestre di progettazione di attività che è possibile utilizzare durante la costruzione di flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e viene fornito materiale sussidiario sulle relative modalità di utilizzo.

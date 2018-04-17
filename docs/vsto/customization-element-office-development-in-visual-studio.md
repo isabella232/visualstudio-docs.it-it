@@ -1,13 +1,10 @@
 ---
 title: '&lt;personalizzazione&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8e1c2c21fe5cf3a038066a47f50fe4b813b277e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;personalizzazione&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `customization` dello spazio dei nomi `vstov4` descrive una specifica soluzione Office. Gli elementi figlio sono diversi per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.  
@@ -68,13 +65,13 @@ ms.lasthandoff: 01/10/2018
  L'elemento `customization` ha l'elemento figlio seguente.  
   
 #### <a name="document"></a>documento  
- Il `document` elemento il `vstov4` dello spazio dei nomi è definito in [&#60; documento &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/document-element-office-development-in-visual-studio.md).  
+ Il `document` elemento il `vstov4` dello spazio dei nomi è definito in [ &#60;documento&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).  
   
 ### <a name="vsto-add-ins"></a>Componenti aggiuntivi VSTO  
  L'elemento `customization` ha l'elemento figlio seguente.  
   
 #### <a name="appaddin"></a>appAddin  
- Il `appAddin` elemento il `vstov4` dello spazio dei nomi è definito in [&#60; appAddin &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/appaddin-element-office-development-in-visual-studio.md).  
+ Il `appAddin` elemento il `vstov4` dello spazio dei nomi è definito in [ &#60;appAddin&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Esempio di personalizzazione a livello di documento  
   

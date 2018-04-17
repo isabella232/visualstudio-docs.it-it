@@ -2,12 +2,9 @@
 title: Pagina pubblica, Project Designer (sviluppo per Office in Visual Studio) | Documenti Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina Pubblicazione, Progettazione progetti (sviluppo per Office in Visual Studio)
   La pagina **Pubblica** di **Creazione progetti** viene usata per configurare le proprietà per la distribuzione.  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\*), o un percorso completo (*\\\servername\foldername* o http://*servername/foldername*).  
   
- Per impostazione predefinita, il percorso di pubblicazione è *http://localhost/projectname/* se è installato IIS o la directory publish\ se IIS non è installato.  
+ Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato o la directory Publish \ se si è installato IIS.  
   
  **URL cartella di installazione**  
  Facoltativo.  

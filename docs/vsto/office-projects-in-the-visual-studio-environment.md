@@ -1,12 +1,10 @@
 ---
 title: Progetti di Office in ambiente di Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.WordDocument
 - VST.ProjectItem.ExcelWorkbook
@@ -43,13 +41,14 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a937f98a11ab9c8cb9723637be902808dce86563
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Progetti di Office in ambiente Visual Studio
   L'esperienza di sviluppo relativa ai progetti di Microsoft Office è simile a quella per altri tipi di progetti in Visual Studio, ad esempio progetti Windows Form. Quando si crea o si apre un progetto di Office, gli elementi del progetto vengono visualizzati in **Esplora soluzioni**. Per i progetti a livello di documento, il documento (ossia il documento di Word o la cartella di lavoro di Excel) viene aperto in Visual Studio e funziona come una finestra di progettazione visiva.  
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
  Quando si apre la cartella di lavoro nella finestra di progettazione, non è visualizzata alcuna area di progettazione. La visualizzazione Progettazione per la cartella di lavoro è una barra dei componenti di grandi dimensioni che occupa la finestra di progettazione.  
   
- Alla cartella di lavoro e a ciascun foglio di lavoro è associato un file di codice. Ogni file di codice contiene una classe *elemento host* generata che rappresenta la cartella di lavoro o il foglio. Per altre informazioni, vedere [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).  
+ Alla cartella di lavoro e a ciascun foglio di lavoro è associato un file di codice. Ogni file di codice contiene una classe *elemento host* generata che rappresenta la cartella di lavoro o il foglio. Per altre informazioni, vedere [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md).  
   
 ### <a name="word-documents-in-the-designer"></a>Documenti di Word nella finestra di progettazione  
  Quando si apre il documento nella finestra di progettazione, è possibile modificarlo come se fosse aperto direttamente in Word. Se si fa doppio clic su una parola nel documento, tale parola viene selezionata. Se tuttavia la parola è all'interno di un controllo host, viene aperto l'editor di codice e in Visual Studio viene generato il gestore eventi predefinito per il controllo.  

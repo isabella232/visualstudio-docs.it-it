@@ -1,13 +1,10 @@
 ---
 title: Visual Studio Tools per Office Runtime scenari di installazione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, installation scenarios
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c63f5e4cef88ed927326b69f1fa389e34b06c8b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f5671f078d6650842c704437ce04a625a4fcb944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Scenari di installazione di Visual Studio Tools per Office Runtime
   È possibile installare Visual Studio 2010 Tools per Office Runtime in tre modi:  
@@ -72,7 +69,7 @@ ms.lasthandoff: 01/10/2018
  Per ulteriori informazioni sull'inclusione dei prerequisiti in una soluzione ClickOnce, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98). Per ulteriori informazioni su come installare manualmente il runtime dal pacchetto ridistribuibile, vedere [procedura: installare Visual Studio Tools per Office Runtime ridistribuibile](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Panoramica di Visual Studio Tools per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Assembly in Visual Studio Tools per Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
   
   

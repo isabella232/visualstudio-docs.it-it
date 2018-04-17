@@ -1,23 +1,21 @@
 ---
 title: Area di lavoro della finestra di progettazione di XML Schema | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a44f620319ed1d706a1fbefec52438512ebefc41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-designer-workspace"></a>Area di lavoro di Progettazione XML Schema
 Progettazione XML Schema (Progettazione XSD) è uno strumento grafico che consente di esplorare gli schemi XML. Oltre al [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), che consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche, progettazione XSD fornisce tre visualizzazioni che consentono di esplorare lo schema XSD più dettagliatamente. La visualizzazione iniziale è il punto di avvio per Progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni di Progettazione XSD e vedere i dettagli relativi al set di schemi. La visualizzazione grafico consente di visualizzare una panoramica di un set di schemi e delle relazioni tra i nodi degli schemi. La visualizzazione modello di contenuto fornisce una rappresentazione grafica dei dettagli relativi a nodi dello schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.  

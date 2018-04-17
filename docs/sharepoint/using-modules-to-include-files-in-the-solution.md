@@ -1,12 +1,10 @@
 ---
 title: Utilizzo di moduli per includere i file nella soluzione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9c11dd4ebd17b1ebef91c3d7752df7c15dd50da4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Utilizzo di moduli per includere file nella soluzione
   È possibile che quando si desidera distribuire i file nel server di SharePoint indipendentemente dal tipo di file, ad esempio pagine master. A tale scopo, è possibile utilizzare *moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione di SharePoint. Quando si distribuisce la soluzione, i file nel modulo vengono copiati nelle cartelle specificate nel server SharePoint.  
@@ -61,7 +60,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: includere file mediante un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)   
- [Procedura: eseguire il provisioning di un file](http://go.microsoft.com/fwlink/?LinkID=144271)   
+ [Procedura: effettuare il provisioning di un file](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Creazione del pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

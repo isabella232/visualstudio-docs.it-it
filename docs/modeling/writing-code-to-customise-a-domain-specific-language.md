@@ -1,23 +1,21 @@
 ---
 title: Scrittura di codice per personalizzare un linguaggio specifico di dominio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 81d0608189d45ed4ef9770a8fecdc61c7ebb118c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cb058ba2467ae852491339dc64a3fba837249688
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Scrittura di codice per personalizzare un linguaggio specifico di dominio
 In questa sezione viene illustrato come utilizzare codice personalizzato per accedere, modificare o creare un modello in un linguaggio specifico di dominio.  
@@ -32,7 +30,7 @@ In questa sezione viene illustrato come utilizzare codice personalizzato per acc
   
 -   **Trasformazione del testo.** È possibile scrivere modelli di testo che contengono codice che accede a un modello e genera un file di testo, ad esempio per generare codice programma. Per ulteriori informazioni, vedere [la generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
--   **Altre estensioni di Visual Studio.** È possibile scrivere le estensioni VSIX separate che può leggere e modificare i modelli. Per ulteriori informazioni, vedere [procedura: aprire un modello dal File di codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+-   **Altre estensioni di Visual Studio.** È possibile scrivere le estensioni VSIX separate che può leggere e modificare i modelli. Per altre informazioni, vedere [procedura: aprire un modello dal File di codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
  Le istanze delle classi definite in DslDefinition.dsl vengono mantenute in una struttura di dati denominata la *archivio In memoria* (IMS) o *archivio*. Classi definite in un linguaggio DSL sempre accettano un archivio come argomento al costruttore. Ad esempio, se il modello DSL definisce una classe denominata esempio:  
   
@@ -70,7 +68,7 @@ In questa sezione viene illustrato come utilizzare codice personalizzato per acc
   
      Per ulteriori informazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
--   **Regole e gli eventi**. È possibile definire regole che vengono generati quando si apportano modifiche specificate. Regole vengono utilizzate, ad esempio, per mantenere aggiornati con gli elementi del modello che presentano le forme nel diagramma. Per ulteriori informazioni, vedere [propagazione delle modifiche e risposta agli](../modeling/responding-to-and-propagating-changes.md).  
+-   **Le regole e gli eventi**. È possibile definire regole che vengono generati quando si apportano modifiche specificate. Regole vengono utilizzate, ad esempio, per mantenere aggiornati con gli elementi del modello che presentano le forme nel diagramma. Per ulteriori informazioni, vedere [propagazione delle modifiche e risposta agli](../modeling/responding-to-and-propagating-changes.md).  
   
 -   **Serializzazione**. L'archivio fornisce un modo standard per serializzare oggetti in che esso contenuti in un file. È possibile personalizzare le regole per la serializzazione e deserializzazione. Per ulteriori informazioni, vedere [archiviazione dei File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   

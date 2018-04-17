@@ -1,12 +1,10 @@
 ---
 title: Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.ContentTypeSetting
 - VS.SharePointTools.ContentTypeDesigner.CommonPropertiesPage
@@ -20,13 +18,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6f6ca2ad09bd41206873045f9eeb26b5e590a049
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1025884bb23290c616a42a8cbbdcbad1d5814b67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint
   Visual Studio fornisce modelli di elemento di progetto per numerosi elementi fondamentali di SharePoint, tra cui *Elenca* e *tipi di contenuto*, che può incorporare le colonne del sito (o  *campi*). Grazie alle nuove finestre di progettazione per i tipi di contenuto e gli elenchi, la creazione di questi elementi non è mai stata più facile.  
@@ -52,6 +51,6 @@ ms.lasthandoff: 01/10/2018
 |[Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Viene illustrato come creare colonne del sito utilizzate in un tipo di contenuto personalizzato. Il tipo di contenuto viene quindi utilizzato in un elenco personalizzato.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Per iniziare a sviluppare in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  
+ [Imparare a sviluppare in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=225000)  
   
   

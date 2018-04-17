@@ -1,12 +1,10 @@
 ---
 title: Sicurezza per le soluzioni SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per le soluzioni SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]include le funzionalità seguenti che consentono di migliorare la sicurezza delle applicazioni di SharePoint.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include le funzionalità seguenti che consentono di migliorare la sicurezza delle applicazioni di SharePoint.  
   
 ## <a name="safe-control-entries"></a>Voci di controllo sicure  
  Ogni elemento di progetto SharePoint creato nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ha un **voci di controllo sicure** insieme di controlli di proprietà che rappresenta una cassaforte. Il relativo **provvisoria** sottoproprietà consente di specificare i controlli che si ritengano protetto. Per ulteriori informazioni, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [specifica Web part sicure](http://go.microsoft.com/fwlink/?LinkId=177521).  
@@ -37,10 +36,10 @@ ms.lasthandoff: 01/10/2018
  L'attributo AllowPartiallyTrustedCallers viene aggiunto a qualsiasi soluzione di SharePoint che non è distribuita in cache assembly globali del sistema ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Ciò include soluzioni create mediante sandbox o distribuite nella directory Bin dell'applicazione di SharePoint. Per ulteriori informazioni, vedere [modifiche della sicurezza per Microsoft .NET Framework versione 1](http://go.microsoft.com/fwlink/?LinkId=177515) e [distribuzione di Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).  
   
 ## <a name="safe-against-script-property"></a>Proprietà sicurezza Script  
- *Script injection* è l'inserimento di codice potenzialmente dannoso nei controlli o le pagine Web. Per proteggere i siti di SharePoint 2010 dagli attacchi script injection, è possono che collaboratori visualizzare o modificare le Web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo SafeControl denominato SafeAgainstScript. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], impostare questo attributo in un elemento di progetto **voci di controllo sicure** sottoproprietà **sicurezza Script**. Per ulteriori informazioni, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [come: contrassegna i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
+ *Attacco intrusivo nel codice di script* è l'inserimento di codice potenzialmente dannoso nei controlli o le pagine Web. Per proteggere i siti di SharePoint 2010 dagli attacchi script injection, è possono che collaboratori visualizzare o modificare le Web part o le relative proprietà per impostazione predefinita. Questo comportamento è controllato da un attributo SafeControl denominato SafeAgainstScript. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], impostare questo attributo in un elemento di progetto **voci di controllo sicure** sottoproprietà **sicurezza Script**. Per ulteriori informazioni, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [come: contrassegna i controlli come controlli sicuri](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista e Windows 7 Account utente  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporare una funzionalità di sicurezza nota come controllo Account utente (UAC). Per sviluppare soluzioni SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] su [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemi di controllo dell'account utente richiede l'esecuzione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come amministratore di sistema. Dal **avviare** menu, aprire il menu di scelta rapida per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], quindi scegliere **Esegui come amministratore**.  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporare una funzionalità di sicurezza nota come il controllo dell'Account utente (UAC). Per sviluppare soluzioni SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] su [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] e [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] sistemi di controllo dell'account utente richiede l'esecuzione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] come amministratore di sistema. Dal **avviare** menu, aprire il menu di scelta rapida per [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], quindi scegliere **Esegui come amministratore**.  
   
  Per configurare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scelta rapida per sempre Esegui come amministratore, aprire il menu di scelta rapida, scegliere **proprietà**, scegliere il **avanzate** pulsante il **proprietà**la finestra di dialogo e quindi selezionare il **Esegui come amministratore** casella di controllo.  
   
@@ -72,19 +71,19 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="sharepoint-security"></a>Sicurezza di SharePoint  
   
--   [Protezione e amministrazione di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)  
+-   [Sicurezza e amministrazione di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)  
   
 -   [Centro risorse di protezione di SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)  
   
 -   [Protezione delle Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)  
   
--   [Miglioramento sicurezza delle applicazioni Web: Minacce e contromisure](http://go.microsoft.com/fwlink/?LinkID=140080)  
+-   [Migliorando sicurezza delle applicazioni Web: Minacce e contromisure](http://go.microsoft.com/fwlink/?LinkID=140080)  
   
 ### <a name="general-security"></a>Sicurezza generale  
   
 -   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)  
   
--   [Compilazione di applicazioni ASP.NET sicure: Autenticazione, autorizzazione e comunicazione protetta](http://go.microsoft.com/fwlink/?LinkId=177494)  
+-   [Compilazione di applicazioni ASP.NET sicure: Autenticazione, autorizzazione e comunicazioni protette](http://go.microsoft.com/fwlink/?LinkId=177494)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   

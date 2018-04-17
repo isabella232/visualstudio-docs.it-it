@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: aprire il file di testo come cartelle di lavoro | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 45d2b85ea8c005d56ddc076d0b758a0c9e4a2d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: cafe64ce693972bd9c254a6bdfc1dcbf70f004c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedura: aprire file di testo come cartelle di lavoro a livello di codice
   È possibile aprire un file di testo come una cartella di lavoro. È necessario passare il nome del file di testo che si desidera aprire. È possibile specificare diversi parametri facoltativi, ad esempio il numero di riga per iniziare l'analisi e il formato della colonna di dati nel file.  
@@ -44,8 +43,8 @@ ms.lasthandoff: 01/10/2018
  [Utilizzo di cartelle di lavoro](../vsto/working-with-workbooks.md)   
  [Procedura: aprire cartelle di lavoro](../vsto/how-to-programmatically-open-workbooks.md)   
  [Procedura: creare nuove cartelle di lavoro](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Procedura: salvare a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)   
- [Procedura: chiudere a livello di codice le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Procedura: a livello di programmazione salvare cartelle di lavoro](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Procedura: chiudere a livello di programmazione le cartelle di lavoro](../vsto/how-to-programmatically-close-workbooks.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

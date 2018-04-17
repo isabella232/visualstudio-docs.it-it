@@ -1,13 +1,10 @@
 ---
 title: 'Procedura: creare un ricevitore di eventi | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b00d82679388c50d6d111209a9a206bd9587a3a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ead81e01022c8f389ad6010c89d0e433b82c542e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-event-receiver"></a>Procedura: creare un ricevitore di eventi
   Creando *ricevitori di eventi*, è possibile rispondere quando un utente interagisce con gli elementi di SharePoint, ad esempio elenchi o elementi di elenco. Ad esempio, il codice in un ricevitore di eventi può essere attivato quando un utente cambia il calendario o elimina un nome da un elenco di contatti. Seguendo questo argomento, viene illustrato come aggiungere un ricevitore di eventi per un'istanza di elenco.  

@@ -1,13 +1,10 @@
 ---
 title: Distribuzione di una soluzione Office tramite Windows Installer | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Distribuzione di una soluzione Office tramite Windows Installer
 Informazioni su come creare un file di Windows Installer per la soluzione Office mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -138,13 +135,13 @@ Configurare il progetto **OfficeAddInSetup** per includere l'output del progetto
   
 1. In **Esplora soluzioni**, espandere il nodo del progetto **OfficeAddInSetup** , quindi scegliere il file **Project Assistant** illustrato nell'immagine seguente.  
   
-   ![Assistente File in Esplora soluzioni del progetto](../vsto/media/installshield-projectassistant.png "File Assistant in Esplora soluzioni del progetto")  
+   ![File Assistant in Esplora soluzioni del progetto](../vsto/media/installshield-projectassistant.png "File Assistant in Esplora soluzioni del progetto")  
   
 2. Nella barra dei menu scegliere **Visualizza**, **Apri**.  
   
 3. Nella parte inferiore della pagina **Project Assistant** , scegliere il pulsante **File applicazione** mostrato nell'immagine seguente.  
   
-   ![Pulsante file applicazione. ] (../vsto/media/installshield-applicationfiles.png "Pulsante file applicazione.")  
+   ![Il pulsante con i file dell'applicazione. ] (../vsto/media/installshield-applicationfiles.png "Pulsante file applicazione.")  
   
 4. Nella pagina **File applicazione** selezionare il pulsante **Aggiungi output progetto** .  
   
@@ -239,7 +236,7 @@ La pagina **Ridistribuibili** contiene un elemento denominato **Runtime di Micro
   
 6. Nella finestra di dialogo **Salva con nome** selezionare la cartella **Desktop** .  
   
-7. Nel **Salva come** scegliere **tutti i file (&#42;. &#42;)**.  
+7. Nel **Salva come tipo** elenco, scegliere **tutti i file (&#42;.&#42;)** .  
   
 8. Nella casella **Nome file** immettere **Visual Studio 2010 Tools per Office Runtime.prq**, quindi scegliere il pulsante **Salva** .  
   
@@ -447,13 +444,13 @@ Per modificare le proprietà personalizzate, occorre creare un programma che rim
   
 1. In **Esplora soluzioni**, espandere il nodo del progetto **OfficeAddInSetup** , quindi scegliere il file **Project Assistant** illustrato nell'immagine seguente.  
   
-   ![Assistente File in Esplora soluzioni del progetto](../vsto/media/installshield-projectassistant.png "File Assistant in Esplora soluzioni del progetto")  
+   ![File Assistant in Esplora soluzioni del progetto](../vsto/media/installshield-projectassistant.png "File Assistant in Esplora soluzioni del progetto")  
   
 2. Nella barra dei menu scegliere **Visualizza**, **Apri**.  
   
 3. Nella parte inferiore della pagina **Project Assistant** , scegliere il pulsante **File applicazione** mostrato nell'immagine seguente.  
   
-   ![Pulsante file applicazione. ] (../vsto/media/installshield-applicationfiles.png "Pulsante file applicazione.")  
+   ![Il pulsante con i file dell'applicazione. ] (../vsto/media/installshield-applicationfiles.png "Pulsante file applicazione.")  
   
 4. Nella pagina **File applicazione** selezionare il pulsante **Aggiungi output progetto** .  
   
@@ -493,7 +490,7 @@ Per modificare le proprietà personalizzate, occorre creare un programma che rim
   
 13. Aprire il file di progetto della soluzione nel Blocco note. Per i progetti di Visual Basic, il nome del file è ExcelWorkbook.vbproj. Per i progetti C#, il nome del file è ExcelWorkbook.csproj.  
   
-14. Nel file di progetto, cercare il  **&lt;IDSoluzione&gt;**  elemento, copiare il valore negli Appunti e quindi chiudere Blocco note.  
+14. Nel file di progetto, cercare il **&lt;IDSoluzione&gt;** elemento, copiare il valore negli Appunti e quindi chiudere Blocco note.  
   
    Passare questo valore nell'applicazione console come parametro.  
   
@@ -533,7 +530,7 @@ Per modificare le proprietà personalizzate, occorre creare un programma che rim
   
 9. Nella barra dei menu scegliere **Compilazione**, **Compila OfficeAddInSetup**.  
   
-   Dopo il completamento della compilazione, è possibile individuare il file setup.exe del **OfficeAddInSetup** progetto nel percorso seguente: *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   Al termine della compilazione, è possibile individuare il file setup.exe del **OfficeAddInSetup** progetto nel percorso seguente: *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\ DISCO1\**  
   
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,12 +1,10 @@
 ---
-title: "Procedura: leggere e scrivere nelle proprietà dei documenti | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: leggere e scrivere nelle proprietà dei documenti | Documenti Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +15,19 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], document properties
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1e2ac54009872aa8886b201007b60ec329a40a39
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: Leggere e scrivere nelle proprietà dei documenti
   È possibile archiviare le proprietà del documento insieme a un documento. Le applicazioni di Office offrono svariate proprietà predefinite, ad esempio autore, titolo e oggetto. Questo argomento illustra come impostare le proprietà dei documenti in Microsoft Office Excel e Microsoft Office Word.  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [procedura: accedere e modificare proprietà personalizzate dei documenti in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [procedura: accedere e modificare le proprietà di documento personalizzato in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   

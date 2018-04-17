@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1236f8c3f86362ba49aa4b985dcc601a66c476
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 81edeb04abacedb81ad52da17369759ba9f1f222
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receiveandsendreply-template-designer"></a>Finestra di progettazione del modello ReceiveAndSendReply
 
@@ -48,7 +48,7 @@ Il **ReceiveAndSendReply** modello viene utilizzato per creare una coppia di pre
 |<xref:System.ServiceModel.Activities.SendReply.Request%2A>|True|Riferimento all'attività <xref:System.ServiceModel.Activities.Receive> correlata a questa attività <xref:System.ServiceModel.Activities.SendReply>. Questa proprietà non deve essere **null**. Le attività <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply> sono usate insieme sul server per modellare un modello di messaggistica di richiesta/risposta. Questa proprietà specifica quale attività <xref:System.ServiceModel.Activities.Send> viene associata. Nella finestra di progettazione non è possibile modificarla in quanto viene associata automaticamente all'attività <xref:System.ServiceModel.Activities.Send> dalla quale è stata creata l'attività <xref:System.ServiceModel.Activities.SendReply>.|
 |<xref:System.ServiceModel.Activities.SendReply.Content%2A>|False|Specifica il contenuto del messaggio o del parametro da ricevere. Può essere un'attività <xref:System.ServiceModel.Activities.ReceiveMessageContent> o un'attività <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Modificare questa proprietà facendo clic sul pulsante con i puntini di sospensione accanto il **contenuto** griglia delle proprietà oppure facendo clic sul campo di **Definisci...**  accanto il **contenuto** etichetta nel **ricezione** superficie dell'ActivityDesigner. Entrambi visualizzano la **definizione contenuto** finestra di dialogo. Per ulteriori informazioni sull'utilizzo di questa casella, vedere il [finestra di dialogo Definizione contenuto](../workflow-designer/content-definition-dialog-box.md) argomento.|
 |<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>|False|Specifica la raccolta di oggetti <xref:System.ServiceModel.Activities.CorrelationInitializer> che inizializzano più oggetti <xref:System.ServiceModel.Activities.CorrelationHandle> che configurano questa attività <xref:System.ServiceModel.Activities.Receive> all'interno del flusso di lavoro. Fare clic sul pulsante con i puntini di sospensione accanto al <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> proprietà nella griglia delle proprietà per aprire la **Aggiungi inizializzatori di correlazione** la finestra di dialogo. Per ulteriori informazioni sull'utilizzo di questa casella, vedere il [CorrelationInitializers di dialogo Aggiungi](../workflow-designer/add-correlationinitializers-dialog-box.md) argomento.|
-|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|Specifica l'intestazione Action del messaggio. Se non viene impostata esplicitamente, assume il valore predefinito:<br /><br /> **https://tempuri.org/ {spazio dei nomi del contratto di servizio} {nome del contratto di servizio} / {nome operazione}**|
+|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|Specifica l'intestazione Action del messaggio. Se non viene impostata esplicitamente, assume il valore predefinito:<br /><br /> **https://tempuri.org/{service spazio dei nomi del contratto} / {nome del contratto di servizio} / {nome operazione}**|
 |<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|Specifica se l'istanza di servizio del flusso di lavoro deve essere salvata in modo permanente prima di inviare il messaggio di risposta. Il valore predefinito è **false**.|
 
 ## <a name="see-also"></a>Vedere anche

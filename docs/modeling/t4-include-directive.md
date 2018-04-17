@@ -1,21 +1,19 @@
 ---
 title: T4 Direttiva Include | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4cfa7742a75b24288ef3617d8195a75e13d8e817
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-include-directive"></a>Direttiva include T4
 In un modello di testo di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile includere testo da un altro file tramite una direttiva `<#@include#>`. È possibile inserire le direttive `include` ovunque all'interno di un modello di testo prima del primo blocco della funzionalità di classe `<#+ ... #>`. I file inclusi possono contenere anche direttive `include` e altre direttive. Questo consente all'utente di condividere un codice del modello e un boilerplate tra modelli.  
@@ -96,7 +94,7 @@ void AnotherGenerateMessage(int n)
   
 ```  
   
- **Il file generato risultante, MyTextTemplate.txt:**  
+ **Il file generato risultante, MyTextTemplate. txt:**  
   
 ```  
 Output message 1 (from top template).  
@@ -111,7 +109,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a>Le proprietà di progetto in MSBuild e Visual Studio  
+##  <a name="msbuild"></a> Utilizzo delle proprietà di progetto in MSBuild e Visual Studio  
  Sebbene sia possibile usare macro di Visual Studio, ad esempio $ (SolutionDir) in una direttiva include, non funzionano in MSBuild. Se si desidera trasformare i modelli nel computer di compilazione, è necessario utilizzare le proprietà del progetto.  
   
  Modificare il file con estensione csproj o vbproj per definire una proprietà del progetto. In questo esempio viene definita una proprietà denominata `myIncludeFolder`:  

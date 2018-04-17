@@ -1,23 +1,21 @@
 ---
 title: XML Schema Explorer | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 84aead3cf496a28e67e6440fb77b8cbf4aca6462
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML per consentire di usare gli schemi XML Schema Definition Language (XSD). Quando si apre un file di XML Schema, il **Set di schemi** nodo viene visualizzato in XML Schema Explorer. In XML Schema Explorer vengono visualizzati anche tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione e qualsiasi file a cui viene fatto riferimento tramite un'istruzione `include` o `import`.  
@@ -85,7 +83,7 @@ Di seguito viene riportato un esempio di struttura ad albero:
   
 -   [Ricerche nel set di schemi](../xml-tools/searching-the-schema-set.md)  
   
--   [Ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+-   [L'ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
 -   [Menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md)  
   

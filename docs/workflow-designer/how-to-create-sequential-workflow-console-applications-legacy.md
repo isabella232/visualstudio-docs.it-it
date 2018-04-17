@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 9f7be7fa-551f-42c6-a9bb-f5ae8ab83625
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 211c750dd0baa1dad0a365310b3636c0d0922882
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 26b479fb5f926d6dff0e1db05fe36fc4354ec89d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Procedura: creare applicazioni console del flusso di lavoro sequenziale (legacy)
 Seguire questi passaggi per creare un progetto di applicazione Console flusso di lavoro sequenziale usando la finestra di progettazione del flusso di lavoro Windows legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ Seguire questi passaggi per creare un progetto di applicazione Console flusso di
 
 1.  Avviare Visual Studio.
 
-2.  Nel **File** dal menu **New**, quindi selezionare **progetto**.
+2.  Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 

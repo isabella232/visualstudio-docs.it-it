@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: popolare documenti con dati da oggetti | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 02f2b735ceb473f7ffe55345c1cd45dc084edb80
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: baac72889a34474157bd89e151f6e63c19968fbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: Popolare documenti con i dati di oggetti
   L'accesso ai dati di un oggetto dati è uguale sia nei progetti a livello di documento per Microsoft Office Word, sia nei progetti Windows Form. Per inserire i dati di un oggetto nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile usare i controlli Windows Form. Inoltre, è possibile visualizzare i dati tramite i controlli host. I controlli host sono oggetti nativi di Microsoft Office Word che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
  
  [Procedura: popolare documenti con dati da un Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Procedura: aggiornare un'origine dati con i dati da un controllo Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Connessione ai dati nelle applicazioni Windows Form](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
+ [Connessione ai dati nelle applicazioni Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
  [Cenni preliminari sul componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

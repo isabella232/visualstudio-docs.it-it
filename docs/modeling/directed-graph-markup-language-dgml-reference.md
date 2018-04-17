@@ -1,21 +1,19 @@
 ---
 title: Diretto riferimento Graph Markup Language (DGML) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Riferimento di Directed Graph Markup Language (DGML)
 Directed Graph Markup Language (DGML) descrive le informazioni usate per la visualizzazione e per eseguire l'analisi di complessità, ed è il formato usato per rendere persistenti le mappe codice in Visual Studio. Usa semplice codice XML per descrivere grafici diretti ciclici e aciclici. Un grafico diretto è un set di nodi connessi da collegamenti o bordi. I nodi e i collegamenti possono essere usati per rappresentare strutture di rete, ad esempio elementi in un progetto software.  
@@ -25,7 +23,7 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
 > [!NOTE]
 >  Quando si modifica un file con estensione dgml, IntelliSense consente di identificare gli attributi disponibili per ogni elemento e i relativi valori. Per specificare il colore in un attributo, usare nomi dei colori comuni, come "Blue", o valori ARGB esadecimali, come "#ffa0b1c3." In DGML viene usato un piccolo subset di formati di definizione dei colori WPF (Windows Presentation Foundation). Per ulteriori informazioni, vedere [colori classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>Sintassi DGML  
+##  <a name="DGML"></a> Sintassi DGML  
  Nella tabella seguente sono descritti i tipi di elementi usati in DGML:  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -95,7 +93,7 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
   
      Nell'elenco seguente vengono descritti alcuni degli attributi facoltativi che è possibile includere:  
   
-     `Label`-Il nome visualizzato del nodo.  
+     `Label` -Il nome visualizzato del nodo.  
   
      Attributi di stile. Vedere [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -301,7 +299,7 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Alias per i percorsi di uso comune  
+###  <a name="AddAlias"></a> Alias per i percorsi di uso comune  
  Sostituendo i percorsi d'uso comune con alias è possibile ridurre le dimensioni del file con estensione dgml e il tempo necessario per caricare o salvare il file. Per creare un alias, aggiungere una sezione `<Paths></Paths>` alla fine del file con estensione dgml. In questa sezione aggiungere un elemento `<Path/>` per definire un alias per il percorso:  
   
 ```xml  

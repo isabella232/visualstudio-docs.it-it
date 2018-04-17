@@ -1,25 +1,24 @@
 ---
 title: 'Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 2 | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: creazione di un elemento di progetto Azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di elemento in Visual Studio, è inoltre possibile fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per aggiungere una nuova istanza dell'elemento di progetto a un progetto. Per inizializzare l'elemento del progetto, è possono utilizzare le informazioni raccolte.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Scegliere il **libreria di controlli utente WPF** modello di progetto, denominare il progetto **ItemTemplateWizard**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **ItemTemplateWizard** progetto alla soluzione.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **ItemTemplateWizard** progetto alla soluzione.  
   
 6.  Eliminare l'elemento UserControl1 dal progetto.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Per ulteriori informazioni sul `WizardExtension` elemento, vedere [WizardExtension (elemento) &#40; Modelli di Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Per ulteriori informazioni sul `WizardExtension` elemento, vedere [WizardExtension (elemento) &#40;modelli di Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Salvare e chiudere il file.  
   
@@ -306,7 +305,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Nel **descrizione** immettere **apre il sito Web di SharePoint Developer Center**.  
   
-14. Nel **URL** immettere **http://msdn.microsoft.com/sharepoint/default.aspx**, quindi scegliere il **fine** pulsante.  
+14. Nel **URL** , immettere **http://msdn.microsoft.com/sharepoint/default.aspx**, quindi scegliere il **fine** pulsante.  
   
      isual Studio aggiunge un elemento denominato **CustomAction1** al progetto e apre il file Elements.xml file nell'editor. Verificare che Elements.xml contiene i valori specificati nella procedura guidata.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      Il **le impostazioni dell'elenco** verrà visualizzata la pagina.  
   
-4.  Sotto il **comunicazioni** intestazione nella parte superiore della pagina, scegliere il **Centro per sviluppatori SharePoint** collegare, verificare che il browser apre http://msdn.microsoft.com/sharepoint/ il sito Web default.aspx e quindi chiudere il browser.  
+4.  Sotto il **comunicazioni** intestazione nella parte superiore della pagina, scegliere il **Centro per sviluppatori SharePoint** collegare, verificare che il browser apre il sito Web http://msdn.microsoft.com/sharepoint/default.aspxe quindi chiudere il browser.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Pulizia dei Computer di sviluppo  
  Dopo aver completato l'elemento del progetto di test, rimuovere il modello di elemento di progetto dall'istanza sperimentale di Visual Studio.  
@@ -347,9 +346,9 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Definizione di tipi di elemento di progetto SharePoint personalizzato](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Creazione di modelli di progetto e modelli di elemento per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Creazione di modelli di elementi e modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Riferimenti allo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Procedura: utilizzare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)   
- [Gli ID e percorsi di azione personalizzata predefiniti](http://go.microsoft.com/fwlink/?LinkId=181964)  
+ [Gli ID e i percorsi predefiniti azione personalizzata](http://go.microsoft.com/fwlink/?LinkId=181964)  
   
   

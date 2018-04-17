@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Inserimento di dati in una cartella di lavoro in un Server | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7257094aa0fb29c1b03878f5ac39c3d4f4864022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Procedura dettagliata: inserimento di dati in una cartella di lavoro contenuta in un server
   Questa procedura dettagliata viene illustrato come inserire dati in un dataset memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Fare clic su **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **AdventureWorksDataSet** progetto **Esplora** e apre il **Class1. cs** o **Class1. vb** file di codice.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **AdventureWorksDataSet** progetto al **Esplora soluzioni** e consente di aprire la **Class1.cs** o **Class1.vb** file di codice.  
   
 9. In **Esplora**, fare doppio clic su **Class1.cs** o **Class1. vb**e quindi fare clic su **eliminare**. Questo file non è necessario per questa procedura dettagliata.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Verificare che **creare un nuovo documento** sia selezionata e fare clic su **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Apre il **AdventureWorksReport** cartella di lavoro nella finestra di progettazione e aggiunge il **AdventureWorksReport** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Apre il **AdventureWorksReport** cartella di lavoro nella finestra di progettazione e aggiunge il **AdventureWorksReport** del progetto **Esplora**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Aggiunta di set di dati a origini dati nel progetto di cartella di lavoro di Excel  
  Prima di poter visualizzare il set di dati della cartella di lavoro di Excel, è innanzitutto necessario aggiungere il set di dati alle origini dati nel progetto di cartella di lavoro di Excel.  
@@ -221,7 +220,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Fare clic su **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **DataWriter** progetto **Esplora** e apre il **Program.cs** o **Module1. vb** file di codice.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **DataWriter** progetto al **Esplora soluzioni** e consente di aprire la **Program.cs** o **Module1.vb** file di codice.  
   
 ## <a name="adding-data-to-the-cached-dataset-by-using-the-console-application"></a>Aggiunta di dati per il set di dati memorizzati nella cache tramite l'applicazione Console  
  Utilizzare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe nell'applicazione console per popolare il set di dati memorizzati nella cache nella cartella di lavoro con i dati.  

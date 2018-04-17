@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Profilatura di un''applicazione di SharePoint | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Profilatura di un'applicazione di SharePoint | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Procedura dettagliata: profilatura di un'applicazione di SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più dispendiosa (esecuzione più lenta) del progetto, noto anche come il *percorso critico*.  
@@ -32,18 +31,18 @@ ms.lasthandoff: 01/10/2018
   
 -   [Aggiunta di una funzionalità e un ricevitore di eventi](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [La configurazione e distribuzione dell'applicazione SharePoint](#BKMK_ConfigSharePointApp).  
+-   [Configurazione e distribuzione dell'applicazione SharePoint](#BKMK_ConfigSharePointApp).  
   
 -   [Esecuzione dell'applicazione SharePoint](#BKMK_RunSPApp).  
   
--   [Visualizzazione e interpretazione dei risultati di profilatura](#BKMK_ViewResults).  
+-   [Visualizzazione e l'interpretazione dei risultati di profilatura](#BKMK_ViewResults).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
   
--   Edizioni supportate di Microsoft Windows e SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edizioni supportate di Microsoft Windows e SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Scegliere il **fine** pulsante. Il progetto verrà visualizzato **Esplora**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Aggiunta di una funzionalità e un ricevitore di eventi  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Aggiunta di una funzionalità e un ricevitore di eventi  
  Successivamente, aggiungere una funzionalità al progetto insieme a un ricevitore di eventi per la funzionalità. In questo ricevitore di eventi sarà incluso il codice da profilare.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Per aggiungere una funzionalità e un ricevitore di eventi di funzionalità  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Salvare il progetto.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>La configurazione e distribuzione dell'applicazione SharePoint  
+##  <a name="BKMK_ConfigSharePointApp"></a> Configurazione e distribuzione dell'applicazione SharePoint  
  Una volta pronto il progetto SharePoint, è possibile configurarlo e distribuirlo nel server SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Per configurare e distribuire l'applicazione SharePoint  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      La procedura guidata consente di profiling delle applicazioni nel server, viene visualizzato il **Esplora prestazioni** finestra, quindi la compilazione, distribuzione ed esegue l'applicazione di SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a>Esecuzione dell'applicazione SharePoint  
+##  <a name="BKMK_RunSPApp"></a> Esecuzione dell'applicazione SharePoint  
  Attivare la funzionalità in SharePoint, attivando il codice dell'evento `FeatureActivation` da eseguire.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Per eseguire l'applicazione SharePoint  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      Dopo aver chiuso SharePoint, il profiler crea e visualizza un Report di analisi di esempio e viene salvato come file con estensione vsp nella **ProfileTest** cartella del progetto.  
   
-##  <a name="BKMK_ViewResults"></a>Visualizzazione e interpretazione dei risultati di profilatura  
+##  <a name="BKMK_ViewResults"></a> Visualizzazione e l'interpretazione dei risultati di profilatura  
  Dopo aver eseguito e profilato l'applicazione SharePoint, visualizzare i risultati del test.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>Per visualizzare e interpretare i risultati di profilatura  

@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: aggiungere un metodo Finder specifico | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6bf2c422efd005c8121ee49fed6dbc7329708b90
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procedura: aggiungere un metodo Finder specifico
   È possibile restituire una sola istanza di entità mediante la creazione di un *Finder specifico* metodo. Il servizio di integrazione applicativa dei dati (BDC) esegue il metodo Finder specifico quando un utente sceglie un'entità in una web part dati business o un elenco esterno. Per ulteriori informazioni, vedere [progettazione di un modello di connettività dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -91,12 +90,12 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Progettazione di un modello di integrazione applicativa dei dati Business](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Progettazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
  [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)   
- [Panoramica degli strumenti di progettazione del modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
  [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Procedura: Definire un'istanza di metodo](../sharepoint/how-to-define-a-method-instance.md)  
   

@@ -1,13 +1,10 @@
 ---
-title: 'Procedura dettagliata: Progettazione di un''area del modulo di Outlook | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Progettazione di un'area del modulo di Outlook | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Procedura dettagliata: progettazione di un'area del modulo di Outlook
   Le aree del modulo personalizzate estendono i moduli standard o personalizzati di Microsoft Office Outlook. In questa procedura dettagliata verrà progettata un'area del modulo personalizzata che viene visualizzata come una nuova pagina nella finestra di controllo di un contatto. Quest'area del modulo visualizza una mappa di ogni indirizzo elencato per il contatto, inviando le informazioni sull'indirizzo al sito Web di ricerca locale di Windows Live. Per informazioni sulle aree del modulo, vedere [la creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una versione video di questo argomento, vedere [procedura Video: progettazione di un'area del modulo di Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una versione video di questo argomento, vedere [procedura Video: progettazione di un'area del modulo di Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Creazione di un nuovo progetto di componente aggiuntivo VSTO di Outlook  
  Creare prima un progetto di componente aggiuntivo VSTO di base.  
@@ -158,8 +155,8 @@ ms.lasthandoff: 01/10/2018
   
     |Tipo di indirizzo|Indirizzo|  
     |------------------|-------------|  
-    |**Business**|**Base a Roma, NY di 4567 Main St.**|  
-    |**Home Page**|**Base a Roma, NY di 1234 settentrionale Sig.**|  
+    |**Business**|**4567 Main St. indicata Roma, NY**|  
+    |**Home**|**Base a Roma, NY di 1234 settentrionale Sig.**|  
     |**Altro**|**3456 Main St. Seattle, WA**|  
   
 4.  Salvare e chiudere il contatto.  
@@ -181,7 +178,7 @@ ms.lasthandoff: 01/10/2018
  [Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Procedura dettagliata: Importazione di un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
  [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Associazione di un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
+ [Associazione di un'area del modulo con una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Azioni personalizzate nelle aree del modulo di Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Procedura: Impedire la visualizzazione di un'area del modulo in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   

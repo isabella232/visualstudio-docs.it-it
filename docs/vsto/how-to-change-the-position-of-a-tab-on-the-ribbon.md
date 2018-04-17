@@ -1,13 +1,10 @@
 ---
 title: 'Procedura: modificare la posizione di una scheda della barra multifunzione | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5016651a6cc4f1316536c22d555a65aaba64b788
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 65a610ac75af4fe6e29070b83286fb3b4f8b91cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procedura: modificare la posizione di una scheda nella barra multifunzione
   È possibile modificare l'ordine delle schede personalizzate in una barra multifunzione utilizzando il **scheda Editor della raccolta**. È possibile posizionare le schede personalizzate prima o dopo una scheda incorporata nella barra multifunzione. Una scheda incorporata rappresenta una scheda già presente sulla barra multifunzione di un'applicazione di Microsoft Office. Ad esempio, il **dati** scheda è una scheda incorporata in Excel.  
@@ -53,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Impostare il **PositionType** proprietà sul valore appropriato:  
   
-    -   **BeforeOfficeId** posiziona il gruppo prima di una determinata scheda incorporata.  
+    -   **BeforeOfficeId** posiziona il gruppo prima di una scheda incorporata specificato.  
   
     -   **AfterOfficeId** posiziona il gruppo dopo una determinata scheda incorporata.  
   
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
  [Barra multifunzione XML](../vsto/ribbon-xml.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procedura dettagliata: Creazione di una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Procedura dettagliata: creazione di una scheda personalizzata mediante l'XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

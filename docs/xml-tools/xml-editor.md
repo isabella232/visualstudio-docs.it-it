@@ -1,21 +1,19 @@
 ---
 title: Editor XML | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b00ca61dc99765ccc4611765ba7d9b1d58a91514
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6c3729086a9e2038c2cfd15643f8d076947645cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor"></a>Editor XML
 
@@ -48,7 +46,7 @@ L'editor XML viene richiamato per estensioni di file note, quali XML, XSD,. xsl 
 [Convalida di documenti XML](../xml-tools/xml-document-validation.md)  
 Vengono descritte le funzionalità di verifica della sintassi e di convalida.
 
-[Editor XML funzionalità di IntelliSense](../xml-tools/xml-editor-intellisense-features.md)  
+[Editor XML le funzionalità di IntelliSense](../xml-tools/xml-editor-intellisense-features.md)  
 Viene descritta la funzionalità IntelliSense dell'editor.
 
 [Frammenti di codice XMLs](../xml-tools/xml-snippets.md)  

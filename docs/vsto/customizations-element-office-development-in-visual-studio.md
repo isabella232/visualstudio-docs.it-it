@@ -1,12 +1,10 @@
 ---
-title: '&lt;personalizzazioni&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
-ms.custom: 
+title: '&lt;le personalizzazioni&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,15 +14,16 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8e84fbba0bf70e28e996dab3c5aa081825447864
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7174f4f04914a120454d9977516e7c2443cbadda
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personalizzazioni&gt; elemento (sviluppo per Office in Visual Studio)
+# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;le personalizzazioni&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `customizations` dello spazio dei nomi `vstov4` contiene tutte le informazioni sull'installazione e sul caricamento di ogni soluzione Office.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Sintassi per le personalizzazioni a livello di documento  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
  L'elemento `customizations` ha l'elemento figlio seguente.  
   
 ### <a name="customization"></a>personalizzazione  
- Obbligatorio. Il `customization` elemento il `vstov4` dello spazio dei nomi è definito in [&#60; personalizzazione &#62; Elemento &#40; sviluppo per Office in Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Obbligatorio. Il `customization` elemento il `vstov4` dello spazio dei nomi è definito in [ &#60;personalizzazione&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Esempio di personalizzazione a livello di documento  
   

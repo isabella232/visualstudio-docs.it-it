@@ -1,23 +1,21 @@
 ---
 title: Il File DslDefinition.dsl | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 In questo argomento viene descritta la struttura del file nel progetto di Dsl DslDefinition.dsl un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione, che definisce un *linguaggio specifico di dominio*. Il file DslDefinition.dsl descrive le classi e relazioni di un linguaggio specifico di dominio, con il diagramma, forme, i connettori, il formato di serializzazione e **della casella degli strumenti** del linguaggio specifico di dominio e il relativo strumenti di modifica. In una soluzione di linguaggio specifico di dominio, il codice che definisce tali strumenti viene generato in base alle informazioni presenti nel file DslDefinition.dsl.  
@@ -153,9 +151,9 @@ In questo argomento viene descritta la struttura del file nel progetto di Dsl Ds
   
  Ogni classe di dominio, incluse le relazioni, le forme, i connettori e i diagrammi, può avere questi attributi e nodi figlio:  
   
--   **Id.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).  
+-   **ID.** Questo attributo è un GUID. Se non si specifica un valore nel file, la finestra di progettazione del linguaggio specifico di dominio crea un valore (nelle figure di questo documento, questo attributo è in genere omesso per questioni di spazio).  
   
--   **Nome e Namespace.** Questi attributi specificano il nome e spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.  
+-   **Name e Namespace.** Questi attributi specificano il nome e spazio dei nomi della classe nel codice generato. Entrambi devono essere be univoci nel linguaggio specifico di dominio.  
   
 -   **InheritanceModifier.** Questo attributo è "astratto", "sealed" o nessuno.  
   
@@ -169,7 +167,7 @@ In questo argomento viene descritta la struttura del file nel progetto di Dsl Ds
   
 -   **BaseClass**. Se si specifica una classe base, deve essere dello stesso tipo. Una classe di dominio, ad esempio, deve avere un'altra classe di dominio come classe base, mentre una forma Raggruppamento deve avere una forma Raggruppamento. Se non si specifica una classe base, la classe nel codice generato deriva da una classe del framework standard. Una classe di dominio ad esempio deriva da `ModelElement`.  
   
--   **Proprietà**. Questo attributo contiene le proprietà mantenute sotto il controllo della transazione e salvate in modo permanente quando il modello viene salvato.  
+-   **proprietà**. Questo attributo contiene le proprietà mantenute sotto il controllo della transazione e salvate in modo permanente quando il modello viene salvato.  
   
 -   **ElementMergeDirectives**. Ogni direttiva di unione degli elementi controlla come un'istanza diversa di un'altra classe viene aggiunta a un'istanza della classe padre. Per informazioni più dettagliate sulle direttive di merge degli elementi, vedere più avanti in questo argomento.  
   
@@ -194,9 +192,9 @@ In questo argomento viene descritta la struttura del file nel progetto di Dsl Ds
   
 -   **IsUIReadOnly**. Questo attributo determina se l'utente può modificare le proprietà di **proprietà** finestra o tramite un elemento decorator in cui la proprietà è presentata.  
   
--   **Kind**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.  
+-   **Tipo**. È possibile impostare questo attributo su Normal, Calculated o CustomStorage. Se si imposta su Calculated, è necessario specificare codice personalizzato che determina il valore. La proprietà sarà di sola lettura. Se si imposta su CustomStorage, è necessario specificare codice che recupera e imposta i valori.  
   
--   **IsElementName**. Se questo attributo è impostato su True, il suo valore viene impostato automaticamente su un valore univoco quando viene creata un'istanza della classe padre. Questo attributo può essere impostato su True solo per una proprietà in ogni classe, che deve essere di tipo String. Nell'esempio Diagramma dei componenti, la proprietà `Name` in `NamedElement` ha `IsElementName` impostato su True. Quando un utente crea un elemento `Component` (che eredita da `NamedElement`), il nome viene inizializzato automaticamente con un valore simile a "Component6".  
+-   **Come IsElementName**. Se questo attributo è impostato su True, il suo valore viene impostato automaticamente su un valore univoco quando viene creata un'istanza della classe padre. Questo attributo può essere impostato su True solo per una proprietà in ogni classe, che deve essere di tipo String. Nell'esempio Diagramma dei componenti, la proprietà `Name` in `NamedElement` ha `IsElementName` impostato su True. Quando un utente crea un elemento `Component` (che eredita da `NamedElement`), il nome viene inizializzato automaticamente con un valore simile a "Component6".  
   
 -   `DefaultValue`. Se questo attributo è stato specificato, il valore indicato viene assegnato all'attributo per le nuove istanze di questa classe. Se `IsElementName` è impostato, l'attributo DefaultValue specifica la parte iniziale della nuova stringa.  
   
@@ -345,7 +343,7 @@ In questo argomento viene descritta la struttura del file nel progetto di Dsl Ds
   
 -   **XmlPropertyData** per ogni proprietà definita nella classe.  
   
--   **XmlRelationshipData** per ogni relazione che ha origine la classe. (anche le relazioni hanno i propri nodi XmlClassData).  
+-   **XmlRelationshipData** per ogni relazione che può essere recuperato la classe. (anche le relazioni hanno i propri nodi XmlClassData).  
   
 -   **TypeName** attributo di stringa, che determina il nome della classe helper di serializzazione nel codice generato.  
   
@@ -455,7 +453,7 @@ In questo argomento viene descritta la struttura del file nel progetto di Dsl Ds
   
 -   **DSL** è il nodo RootClass e la classe del diagramma. DomainClass, DomainRelationship e altri elementi sono incorporati in `Dsl`.  
   
--   **Classi** è il **RoleElementName** della relazione tra un linguaggio specifico di dominio e classe di dominio.  
+-   **Le classi** è il **RoleElementName** della relazione tra linguaggio specifico di dominio e DomainClass.  
   
 ```  
 <Dsl Name="CmptDsl5" ...>  

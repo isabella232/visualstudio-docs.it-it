@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: personalizzare una scheda incorporata | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 251c1cf70ab1d528f65d558208f0f2d43e10388a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1343ee966d63b0ddc74bf1e18cbbe8bd6d476a0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procedura: personalizzare una scheda incorporata
   È possibile aggiungere gruppi e controlli in una scheda incorporata, cioè una scheda già presente sulla barra multifunzione di un'applicazione di Microsoft Office. Ad esempio, il **dati** scheda è una scheda incorporata in Excel. Quando si crea un gruppo personalizzato, esso viene visualizzato per ultimo nella scheda, ma è possibile spostarlo in un punto qualsiasi della scheda.  
@@ -73,8 +72,8 @@ ms.lasthandoff: 01/10/2018
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
  [Barra multifunzione XML](../vsto/ribbon-xml.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la barra multifunzione XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Procedura dettagliata: Creazione di una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando l'elemento XML della barra](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Procedura: modificare la posizione di una scheda della barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   

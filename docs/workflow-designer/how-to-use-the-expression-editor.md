@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: utilizzare l''Editor espressioni | Documenti Microsoft'
+title: "Procedura: utilizzare l'Editor espressioni | Documenti Microsoft"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be43ad439c8868064fc7e0bab79e051abb991e0d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
 L'Editor espressioni è un controllo di progettazione del flusso di lavoro di Windows che viene utilizzato in molte attività di flusso di lavoro come mezzo per immettere e valutare queste espressioni. L'editor espressioni fornisce un'esperienza di modifica IDE completa che include, tra le altre funzionalità, IntelliSense, colorazione, ParamInfo, controllo errori di ortografia durante la digitazione. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor espressioni** la finestra di dialogo.

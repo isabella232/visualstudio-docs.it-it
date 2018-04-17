@@ -1,13 +1,10 @@
 ---
 title: Risoluzione dei problemi di distribuzione di soluzioni Office | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Risoluzione dei problemi relativi alla distribuzione di soluzioni Office
   Questo argomento contiene informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  È possibile aggiungere .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]e gli assembly di interoperabilità primari di Microsoft Office al pacchetto di installazione come prerequisiti distribuiti con la soluzione Office. Per informazioni su come installare gli assembly di interoperabilità primari, vedere [configurazione di un Computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) e [procedura: installare assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>La pubblicazione mediante 'Localhost' può causare problemi di installazione  
- Quando si usa "http://localhost" come percorso di pubblicazione o di installazione per le soluzioni a livello di documento, la **Pubblicazione guidata** non converte la stringa nel nome effettivo del computer. In questo caso, è necessario installare la soluzione nel computer di sviluppo. Per fare in modo che le soluzioni distribuite usino IIS nel computer di sviluppo, usare il nome completo per tutti i percorsi HTTP/HTTPS/FTP anziché localhost.  
+ Quando si utilizza "http://localhost" come percorso di pubblicazione o di installazione per le soluzioni a livello di documento, il **pubblicazione guidata** non converte la stringa per il nome effettivo del computer. In questo caso, è necessario installare la soluzione nel computer di sviluppo. Per fare in modo che le soluzioni distribuite usino IIS nel computer di sviluppo, usare il nome completo per tutti i percorsi HTTP/HTTPS/FTP anziché localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Vengono caricati gli assembly memorizzati nella cache anziché gli assembly aggiornati  
  Fusion, il caricatore di assembly di .NET Framework, carica la copia degli assembly memorizzata nella cache quando il percorso di output del progetto è in una condivisione file di rete, l'assembly è firmato con un nome sicuro e la versione dell'assembly della personalizzazione non cambia. Se si aggiorna un assembly che soddisfa queste condizioni, l'aggiornamento non verrà visualizzato la volta successiva che si esegue il progetto perché viene caricata la copia memorizzata nella cache.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Per scaricare gli assembly anziché caricare le copie memorizzate nella cache  
   
-1.  Sulla barra dei menu scegliere **Progetto**, *Proprietà***NomeProgetto**.  
+1.  Nella barra dei menu, scegliere **Project**, * ProjectName ***proprietà**.  
   
 2.  Nella pagina **Applicazione** scegliere **Informazioni assembly**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>La reinstallazione delle soluzioni Office genera un'eccezione di tipo argomento non compreso nell'intervallo  
  Quando si reinstalla una soluzione Office, è possibile che venga visualizzata un'eccezione <xref:System.ArgumentOutOfRangeException> con il messaggio di errore seguente: Argomento specificato non compreso nell'intervallo.  
   
- Questa situazione si verifica se la combinazione di maiuscole e minuscole per l'URL del percorso di installazione è diversa. Ad esempio, questo errore può essere visualizzato se una soluzione Office è stata installata da [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) la prima volta e quindi è stato usato [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) la seconda volta.  
+ Questa situazione si verifica se la combinazione di maiuscole e minuscole per l'URL del percorso di installazione è diversa. Ad esempio, questo errore può essere visualizzato se è stata installata una soluzione Office da [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) la prima volta e quindi utilizzato [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) la seconda volta.  
   
  Per evitare che venga visualizzato il messaggio, usare la stessa combinazione di maiuscole e minuscole quando si installano soluzioni Office.  
   

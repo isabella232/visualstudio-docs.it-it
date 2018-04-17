@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Estensione di Esplora Server per visualizzare Web part | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estensione di Esplora server per visualizzare web part
   In Visual Studio, è possibile utilizzare il **connessioni di SharePoint** nodo di **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata, è possibile estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuno connesso a un sito di SharePoint.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Scegliere il **progetto VSIX** modello, denominare il progetto **WebPartNode**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **WebPartNode** progetto **Esplora**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **WebPartNode** progetto **Esplora**.  
   
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **risorse**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **risorse** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **risorse** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 5.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **WebPartCommands**, quindi scegliere il **OK** pulsante.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge il **WebPartCommands** progetto alla soluzione e apre il file di codice predefinito Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **WebPartCommands** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
 6.  Eliminare il file di codice Class1 dal progetto.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Scegliere la freccia accanto al **Aggiungi** e quindi scegliere **Aggiungi come collegamento** nel menu visualizzato.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Aggiunge i file di codice al progetto WebPartCommands come collegamenti. Di conseguenza, i file di codice si trovano nel progetto di risorse, ma il codice nei file vengono compilati nel progetto WebPartCommands.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge i file di codice al progetto WebPartCommands come collegamenti. Di conseguenza, i file di codice si trovano nel progetto di risorse, ma il codice nei file vengono compilati nel progetto WebPartCommands.  
   
 5.  Aprire il menu di scelta rapida per il **WebPartCommands** nuovo progetto e scegliere **Aggiungi riferimento**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Scegliere il **risorse** scheda e quindi scegliere il **questo progetto non contiene un file di risorse predefinito. Fare clic qui per crearne uno** collegamento.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Crea un file di risorse, che verrà aperto nella finestra di progettazione.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea un file di risorse, che verrà aperto nella finestra di progettazione.  
   
 4.  Nella parte superiore della finestra di progettazione, scegliere la freccia accanto al **Aggiungi risorsa** menu comando e quindi scegliere **Aggiungi nuova icona** nel menu visualizzato.  
   
@@ -286,7 +285,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Nel **autore** immettere **Contoso**.  
   
-4.  Nel **descrizione** immettere **aggiunge un nodo di raccolta Web Part personalizzato al nodo Connessioni di SharePoint in Esplora Server. Questa estensione Usa un comando di SharePoint personalizzato per effettuare chiamate nel modello a oggetti server.**  
+4.  Nel **descrizione** immettere **aggiunge un nodo di raccolta Web Part personalizzato al nodo Connessioni di SharePoint in Esplora Server. Questa estensione Usa un comando di SharePoint personalizzato per chiamare il modello a oggetti server.**  
   
 5.  Scegliere il **asset** scheda dell'editor, quindi scegliere il **New** pulsante.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Procedura dettagliata: Chiamata nel modello a oggetti Client di SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Image Editor for Icons](/cpp/windows/image-editor-for-icons)  (Editor di immagini per icone)  
- [Creazione di un'icona o altra immagine &#40; Editor di immagini per le icone &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Creazione di un'icona o un'altra immagine &#40;Editor di immagini per le icone&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

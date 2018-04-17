@@ -1,12 +1,10 @@
 ---
 title: Procedure dettagliate con Word | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dc3f207fea1d8572bbd6df00e92a57fd0939222a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1ce56d696cbab963f39b876027e27e8b1254a9a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthroughs-using-word"></a>Procedure dettagliate con Word
   Le procedure dettagliate seguenti mostrano come usare le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per automatizzare Microsoft Office Word e personalizzare l'interfaccia utente.  
@@ -71,8 +70,8 @@ ms.lasthandoff: 01/10/2018
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)   
  [Dati nelle procedure dettagliate di soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Procedure dettagliate di personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization-walkthroughs.md)   
- [Sicurezza e procedure dettagliate di distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
- [Procedure dettagliate ed esempi di sviluppo di office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Sicurezza e procedure dettagliate sulla distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
+ [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
   

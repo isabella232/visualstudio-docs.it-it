@@ -1,25 +1,23 @@
 ---
-title: "Proprietà delle forme di raggruppamento | Documenti Microsoft"
-ms.custom: 
+title: Proprietà delle forme di raggruppamento | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e87af6c7b95fc05ab7e018f4b9adeb0ea9708868
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17e3b9dcc045cbcf1d2e0f2553c925bb99573865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
 Le forme di raggruppamento sono una delle forme che è possibile utilizzare per visualizzare una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.  
@@ -44,7 +42,7 @@ Le forme di raggruppamento sono una delle forme che è possibile utilizzare per 
 |Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questa forma raggruppamento|\<Nessuno >|  
 |Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma raggruppamento (`none`, `abstract` o `sealed`).|nessuno|  
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma raggruppamento (`none`, `abstract` o `sealed`).|Nessuno|  
 |Forma raggruppamento di base|Classe di base di questa forma.|(nessuno)|  
 |nome|Il nome della forma.|Nome corrente|  
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questa forma.|Spazio dei nomi corrente|  

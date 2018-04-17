@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 748893d7e08ca72140fad31c4546f4166636b8de
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
 In questo argomento vengono descritti i tipi di messaggi di errore che possono essere rilevati quando si lavora con Progettazione flussi di lavoro di Windows.

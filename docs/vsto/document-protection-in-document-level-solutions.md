@@ -1,12 +1,10 @@
 ---
 title: Protezione nelle soluzioni a livello di documento di documenti | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 815bd65f9e1a0182736b2cc68d06c5f289fd4f68
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 546a74179b8bdf52541d771809426b5e4aec3e45
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Sicurezza dei documenti nelle soluzioni a livello di documento
   È possibile utilizzare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento. Queste funzionalità bloccare gli utenti non autorizzati di apportare modifiche per le parti di un documento protette.  
@@ -56,9 +55,9 @@ ms.lasthandoff: 01/10/2018
  Visual Studio vengono automaticamente abilita la protezione, ma non fornisce alcuna password per impostazione predefinita. Se si desidera la protezione del documento di una password, è necessario aggiungere prima di distribuire la soluzione. Aggiunta di una password consente agli utenti autorizzati a rimuovere la protezione dal documento. senza una password, non può essere facilmente rimuovere la protezione. Per informazioni dettagliate sull'impostazione di una password, vedere la Guida dell'applicazione di Office specifica.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: proteggere i documenti e parti di documenti a livello di codice](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
- [Procedure dettagliate ed esempi di sviluppo di office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Cenni preliminari sulle estensioni di codice gestito e di Information Rights Management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Procedura: a livello di programmazione proteggere documenti e parti di documenti](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
+ [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Information Rights Management e Cenni preliminari sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Protezione con password nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
  [Procedura: consentire codice per l'esecuzione sottostante i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  

@@ -1,23 +1,21 @@
 ---
 title: 'Procedura: generare modelli da modelli utilizzando sequenze di Escape | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 902cbf66ba0a45f605dc082009cd63cfdf6be1af
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 160234b8db7f09d25b22e33fb5bc722e06187ba9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: generare modelli da modelli utilizzando sequenze di escape
 È possibile creare un modello di testo che consente di creare un altro modello di testo come output testo generato. A tale scopo, è necessario utilizzare sequenze di escape per delineare i tag di modello di testo. Se non si utilizzano le sequenze di escape, il modello di testo generato avrà un significato predefinito. Per ulteriori informazioni sull'utilizzo di sequenze di escape nei modelli di testo, vedere [utilizzando le sequenze di Escape nei modelli di testo](../modeling/using-escape-sequences-in-text-templates.md).  

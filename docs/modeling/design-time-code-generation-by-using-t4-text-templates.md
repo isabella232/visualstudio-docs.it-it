@@ -1,10 +1,8 @@
 ---
 title: Generazione di codice in fase di progettazione tramite modelli di testo T4 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 I modelli di testo T4 in fase di progettazione permettono di generare codice programma e altri file nel progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o database che contiene informazioni chiave sui requisiti dell'applicazione.  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Un modello di testo è eseguito nel rispettivo dominio di app e l'accesso ai servizi è effettuato tramite marshalling. In questa circostanza, GetCOMService() è più affidabile di GetService().  
   
-##  <a name="Regenerating"></a>Rigenerazione automatica di codice  
+##  <a name="Regenerating"></a> Rigenerazione automatica di codice  
  In genere, più file in una soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sono generati con un modello di input. Ogni file è generato dal modello corrispondente, ma i modelli fanno tutti riferimento allo stesso modello.  
   
  In caso di modifica al modello di origine, è consigliabile eseguire di nuovo tutti i modelli della soluzione. Per farlo manualmente, scegliere **Trasforma tutti i modelli** sul **compilare** menu.  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>Conversione di un file esistente in un modello  
+##  <a name="Converting"></a> Conversione di un file esistente in un modello  
  Una funzionalità utile dei modelli consiste nel fatto che il loro aspetto è molto simile a quello dei file generati, anche se includono codice programma. Ciò suggerisce un metodo utile per la creazione di un modello. Creare innanzitutto un file normale come prototipo, ad esempio un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] file e quindi introdurre gradualmente codice generatore che varia il file risultante.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Per convertire un file esistente in un modello in fase di esecuzione  

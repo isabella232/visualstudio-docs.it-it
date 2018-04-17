@@ -2,12 +2,9 @@
 title: Gli assembly di Visual Studio Tools per Office Runtime | Documenti Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,20 +12,20 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22750553e714c0aa02577ee95753e7d5b2bf13f4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 34ce422757ad7e7f7152920252eff6e0c2277261
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assembly nel runtime di Visual Studio Tools per Office
   Quando si crea un progetto di Office, in Visual Studio vengono automaticamente aggiunti riferimenti agli assembly [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usati per il tipo di progetto e .NET Framework di destinazione del progetto. Sono disponibili diversi assembly nelle estensioni di Office per .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per altre informazioni sulle estensioni di Office, vedere [Panoramica di Visual Studio Tools per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Assembly nelle estensioni di Office per .NET Framework 4 e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- Nella tabella seguente sono elencati gli assembly che vengono inclusi nelle estensioni di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per la documentazione sugli spazi dei nomi e i tipi di questi assembly, vedere [riferimenti gestiti & #40; sviluppo per Office in Visual Studio & #41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
+ Nella tabella seguente sono elencati gli assembly che vengono inclusi nelle estensioni di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per la documentazione sugli spazi dei nomi e tipi di questi assembly, vedere [riferimenti gestiti del &#40;sviluppo per Office in Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
 |Nome assembly|Descrizione|  
 |-------------------|-----------------|  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Fornisce i seguenti tipi:<br /><br /> -Classi di base generate `ThisDocument` classe nei progetti a livello di documento per Word.<br />-Windows Form che è possibile utilizzare nei documenti dei progetti di Word.|  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Assembly nelle estensioni di Office per .NET Framework 3.5  
- Nella tabella seguente sono elencati gli assembly che vengono inclusi nelle estensioni di Office per .NET Framework 3.5. Per la documentazione sugli spazi dei nomi e le classi in questi assembly, vedere la sezione di riferimento seguente nella documentazione di Visual Studio 2008: [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Nella tabella seguente sono elencati gli assembly che vengono inclusi nelle estensioni di Office per .NET Framework 3.5. Per la documentazione sugli spazi dei nomi e le classi in questi assembly, vedere la sezione di riferimento seguente nella documentazione di Visual Studio 2008: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 |Nome assembly|Descrizione|  
 |-------------------|-----------------|  

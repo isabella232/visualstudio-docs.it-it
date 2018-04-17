@@ -2,12 +2,9 @@
 title: Scrittura di codice nelle soluzioni Office | Documenti Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Scrittura di codice nelle soluzioni Office
   Alcuni aspetti della scrittura del codice nei progetti di Office presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze riguardano la modalità di esposizione dei modelli a oggetti di Office al codice gestito. Le altre differenze sono correlate alla creazione di progetti di Office.  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Per ulteriori informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Considerazioni dello spazio dei nomi nelle soluzioni Office  
- Non è possibile modificare lo *spazio dei nomi predefinito* (o *spazio dei nomi radice* in Visual Basic) di un progetto di Office dopo averlo creato. Lo spazio dei nomi predefinito corrisponderà sempre al nome del progetto specificato durante la creazione del progetto. Se si rinomina il progetto, lo spazio dei nomi predefinito non viene modificato. Per ulteriori informazioni su spazio dei nomi predefinito nei progetti, vedere [pagina applicazione, Progettazione progetti & #40; C & #35; & #41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) e [pagina applicazione, Progettazione progetti & #40; Visual Basic & #41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Non è possibile modificare lo *spazio dei nomi predefinito* (o *spazio dei nomi radice* in Visual Basic) di un progetto di Office dopo averlo creato. Lo spazio dei nomi predefinito corrisponderà sempre al nome del progetto specificato durante la creazione del progetto. Se si rinomina il progetto, lo spazio dei nomi predefinito non viene modificato. Per ulteriori informazioni su spazio dei nomi predefinito nei progetti, vedere [pagina applicazione, Progettazione progetti &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) e [pagina applicazione, Progettazione progetti &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Modifica dello spazio dei nomi delle classi dell'elemento host in progetti C#  
  Le classi dell'elemento host (ad esempio, le classi `ThisAddIn`, `ThisWorkbook`o `ThisDocument` ) hanno spazi dei nomi specifici nei progetti di Office di Visual C#. Per impostazione predefinita, lo spazio dei nomi per gli elementi host nel progetto corrisponde al nome del progetto specificato durante la creazione del progetto.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Funzionalità|Descrizione|Supporto in Visual Basic|Supporto in Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Parametri facoltativi|Molti metodi di Microsoft Office hanno parametri che non sono richiesti quando si chiama il metodo. Se per il parametro non viene passato alcun valore, verrà usato un valore predefinito.|Visual Basic supporta i parametri facoltativi.|Visual C# supporta i parametri facoltativi nella maggior parte dei casi. Per ulteriori informazioni, vedere [parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Passaggio di parametri per riferimento|I parametri facoltativi nella maggior parte degli assembly di interoperabilità primari di Microsoft Office possono essere passati per valore. Tuttavia, in alcuni assembly di interoperabilità primari i parametri facoltativi che accettano i tipi riferimento devono essere passati per riferimento.<br /><br /> Per ulteriori informazioni sui parametri di tipo valore e riferimento, vedere [il passaggio di argomenti per valore e per riferimento & #40; Visual Basic & #41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (per Visual Basic) e [passando parametri & #40; C & #35; Guida per programmatori & #41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Non è richiesta alcuna attività aggiuntiva per il passaggio di parametri in base al riferimento. Il compilatore di Visual Basic passa automaticamente i parametri per riferimento quando necessario.|Nella maggior parte dei casi, il compilatore di Visual C# passa automaticamente i parametri per riferimento quando necessario. Per ulteriori informazioni, vedere [parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Passaggio di parametri per riferimento|I parametri facoltativi nella maggior parte degli assembly di interoperabilità primari di Microsoft Office possono essere passati per valore. Tuttavia, in alcuni assembly di interoperabilità primari i parametri facoltativi che accettano i tipi riferimento devono essere passati per riferimento.<br /><br /> Per ulteriori informazioni sui parametri di tipo valore e riferimento, vedere [il passaggio di argomenti per valore e per riferimento &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (per Visual Basic) e [passaggio di parametri &#40;C&#35; Guida per programmatori&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Non è richiesta alcuna attività aggiuntiva per il passaggio di parametri in base al riferimento. Il compilatore di Visual Basic passa automaticamente i parametri per riferimento quando necessario.|Nella maggior parte dei casi, il compilatore di Visual C# passa automaticamente i parametri per riferimento quando necessario. Per ulteriori informazioni, vedere [parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Proprietà con parametri|Alcune proprietà accettano parametri e fungono da funzioni di sola lettura.|Visual Basic supporta le proprietà che accettano parametri.|Visual C# supporta le proprietà che accettano parametri.|  
 |Associazione tardiva|L'associazione tardiva comporta la determinazione delle proprietà degli oggetti in fase di esecuzione, anziché eseguire il cast delle variabili al tipo di oggetto in fase di progettazione.|Visual Basic esegue l'associazione tardiva quando **Option Strict** non è attiva. Quando **Option Strict** è attiva, è necessario convertire in modo esplicito gli oggetti e usare i tipi nello spazio dei nomi <xref:System.Reflection> per accedere ai membri ad associazione tardiva. Per altre informazioni, vedere [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# esegue l'associazione tardiva in progetti che hanno come destinazione [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Per altre informazioni, vedere [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 |Funzionalità|Descrizione|Supporto in Visual Basic e Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Indici di matrice|Il limite di matrice inferiore delle raccolte nelle applicazioni di Microsoft Office inizia con 1. Visual Basic e Visual C# usano matrici in base 0. Per ulteriori informazioni, vedere [matrici & #40; C & #35; Guida per programmatori & #41; ](/dotnet/csharp/programming-guide/arrays/index) e [matrici in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Per accedere al primo elemento di una raccolta del modello a oggetti di un'applicazione di Microsoft Office, usare l'indice 1 anziché 0.|  
+|Indici di matrice|Il limite di matrice inferiore delle raccolte nelle applicazioni di Microsoft Office inizia con 1. Visual Basic e Visual C# usano matrici in base 0. Per altre informazioni, vedere [Array &#40;C&#35; Guida per programmatori&#41; ](/dotnet/csharp/programming-guide/arrays/index) e [matrici in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Per accedere al primo elemento di una raccolta del modello a oggetti di un'applicazione di Microsoft Office, usare l'indice 1 anziché 0.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   

@@ -1,26 +1,23 @@
 ---
 title: Miglioramento delle prestazioni di un componente aggiuntivo VSTO | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Miglioramento delle prestazioni di un componente aggiuntivo VSTO
   È possibile offrire agli utenti un'esperienza migliore ottimizzando i componenti aggiuntivi VSTO creati per le applicazioni di Office per poterli avviare rapidamente, interromperli o usarli per aprire gli elementi ed eseguire altre attività. Se il componente aggiuntivo VSTO è per Outlook, è anche possibile ridurre la probabilità che il componente aggiuntivo VSTO venga disabilitato a causa delle prestazioni ridotte. È possibile incrementare le prestazioni del componente aggiuntivo VSTO implementando le strategie seguenti:  
@@ -84,9 +81,9 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Per informazioni su come creare eventi di post-compilazione in un progetto c#, vedere [procedura: specificare eventi di compilazione &#40; C &#35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Per informazioni su come creare eventi di post-compilazione in un progetto c#, vedere [procedura: specificare eventi di compilazione &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Per informazioni su come creare un evento di post-compilazione in un progetto di Visual Basic, vedere [procedura: specificare eventi di compilazione &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Per informazioni su come creare un evento di post-compilazione in un progetto di Visual Basic, vedere [procedura: specificare eventi di compilazione &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
 ##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
  Se si pubblica la soluzione usando Windows Installer, Visual Studio 2010 Tools per Office Runtime consente di ignorare i passaggi seguenti quando viene caricato il componente aggiuntivo VSTO.  
@@ -122,7 +119,7 @@ ms.lasthandoff: 01/10/2018
  [Caricamento su richiesta di componenti aggiuntivi VSTO](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
  [Caricamento ritardato di CLR nei componenti aggiuntivi di Office](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
  [Prestazioni di VSTO: Il caricamento ritardato e utente (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
- [Miglioramenti delle prestazioni presto disponibili in un Service Pack vicino alle (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
+ [Miglioramenti delle prestazioni sarà presto disponibile a un Service Pack vicino (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
  [Prestazioni di VSTO: Reflection di barra multifunzione (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
   
   

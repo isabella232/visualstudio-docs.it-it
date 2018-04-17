@@ -2,20 +2,18 @@
 title: Personalizzazione dei campi immagine e testo | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f577669c685d6f42b73c80f947e8edad0c7b9088
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4e84e6d7294a20d576352ef98afc6b691177da18
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 Quando si definisce un elemento decorator del testo in una forma, è rappresentato da TextField. Per esempi di inizializzazione di TextFields e altri ShapeFields, controllare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.  
@@ -174,7 +172,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="style-sets"></a>Imposta lo stile  
- Nell'esempio precedente viene illustrato come è possibile modificare il campo di testo per qualsiasi tipo di carattere che è disponibile. Tuttavia, un è preferibile passare in uno dei set di stili associato con la forma o con l'applicazione. To do this, you override <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> or GetTextBrushId().  
+ Nell'esempio precedente viene illustrato come è possibile modificare il campo di testo per qualsiasi tipo di carattere che è disponibile. Tuttavia, un è preferibile passare in uno dei set di stili associato con la forma o con l'applicazione. A tale scopo, si esegue l'override <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> o GetTextBrushId().  
   
  In alternativa, provare a modificare il set di stile della forma eseguendo l'override <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A>. Questo ha l'effetto della modifica di tipi di carattere e i pennelli per tutti i campi di forma.  
   

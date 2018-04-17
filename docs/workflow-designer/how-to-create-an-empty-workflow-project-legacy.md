@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce595536d1e26d029556ca03a26428f6b425fff
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Procedura: creare un progetto di flusso di lavoro vuoto (legacy)
 Seguire questi passaggi per creare un progetto di flusso di lavoro vuoto utilizzando la finestra di progettazione del flusso di lavoro Windows legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ Seguire questi passaggi per creare un progetto di flusso di lavoro vuoto utilizz
 
 1.  Avviare Visual Studio.
 
-2.  Nel **File** dal menu **New**, quindi selezionare **progetto**.
+2.  Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 

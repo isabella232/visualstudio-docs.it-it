@@ -1,21 +1,19 @@
 ---
 title: Strutturare la soluzione di modellazione | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d8839b28fcfa67612bd28405984a4d99119e59c5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: da05bef4f69c5cb29aca00713bd777f910ab094e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 Per usare efficacemente i modelli in un progetto di sviluppo, è necessario che i membri del team siano in grado di usare contemporaneamente modelli di parti diverse del progetto. Questo argomento suggerisce uno schema per suddividere l'applicazione in più parti, che corrispondono ai livelli di un diagramma su livelli generale.  
@@ -92,7 +90,7 @@ Per usare efficacemente i modelli in un progetto di sviluppo, è necessario che 
   
 #### <a name="to-create-a-solution-template"></a>Per creare un modello di soluzione  
   
-1.  [Scaricare e installare l'esportazione guidata modelli](http://go.microsoft.com/fwlink/?LinkId=196686), se non si è già connessi.  
+1.  [Scaricare e installare l'esportazione guidata modelli](http://go.microsoft.com/fwlink/?LinkId=196686), se non si è già presente.  
   
 2.  Creare la struttura della soluzione da usare come punto di partenza per i progetti futuri.  
   

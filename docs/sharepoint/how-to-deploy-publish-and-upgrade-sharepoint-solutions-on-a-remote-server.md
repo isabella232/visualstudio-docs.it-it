@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un Server remoto | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire le soluzioni di SharePoint al sistema locale, è possibile pubblicare soluzioni create mediante sandbox di SharePoint a siti remoti o siti di SharePoint locali. Il processo di pubblicazione remoto copia il file con estensione wsp nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione di soluzioni SharePoint remota dopo aver apportate le modifiche.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  In **Esplora**, aprire il menu di scelta rapida per il progetto in modalità sandbox di SharePoint che si desidera pubblicare, quindi fare clic **pubblica**.  
   
-2.  Nel **pubblica** finestra di dialogo scegliere la **pubblica sul sito di SharePoint** pulsante di opzione e quindi immettere un URL per un sito di pubblicazione online, come nell'esempio seguente: **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  Nel **pubblica** finestra di dialogo, scegliere il **pubblica sul sito di SharePoint** pulsante di opzione e quindi immettere un URL per un sito di pubblicazione online, come nell'esempio seguente: **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Scegliere il **aprire la pagina Raccolta soluzioni nel browser dopo la pubblicazione** pulsante di opzione per visualizzare l'elenco delle soluzioni di **raccolta soluzioni** pagina dopo la pubblicazione.  
   
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [Creazione di pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Procedura: personalizzare un pacchetto di soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
  [Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
   
   

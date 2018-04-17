@@ -1,13 +1,10 @@
 ---
 title: 'Procedura: aggiungere controlli contenuto ai documenti di Word | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -29,14 +26,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1dd59fc777c012f92baaf96302f7cf031ad151c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6edddf79bea7c3d4cd3cd5ef762dd9757509c754
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedura: aggiungere controlli del contenuto ai documenti di Word
   Nei progetti di Word a livello di documento è possibile aggiungere controlli contenuto al documento nel progetto in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO di Word è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione.  
@@ -189,9 +186,9 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Panoramica degli elementi e dei controlli host](../vsto/host-items-and-host-controls-overview.md)   
  [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
   

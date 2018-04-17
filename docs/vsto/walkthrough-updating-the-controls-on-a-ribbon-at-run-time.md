@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Aggiornamento dei controlli in una barra multifunzione in fase di esecuzione | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], updating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 39952d1059833c92d3d5e8c277faac1b47c6e80b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 10577f1ca996913ed91f07a7609c59eb9805bced
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Procedura dettagliata: aggiornamento dei controlli di una barra multifunzione in fase di esecuzione
   Questa procedura dettagliata illustra come usare il modello a oggetti della barra multifunzione per aggiornare i controlli di una barra multifunzione dopo che la barra multifunzione è stata caricata nell'applicazione Office.  
@@ -295,7 +294,7 @@ ms.lasthandoff: 01/10/2018
  [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)   
  [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata utilizzando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procedura dettagliata: Creazione di una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md)   
  [Personalizzazione di una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Procedura: modificare la posizione di una scheda della barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   

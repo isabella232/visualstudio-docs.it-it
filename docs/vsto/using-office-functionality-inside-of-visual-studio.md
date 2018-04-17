@@ -1,12 +1,10 @@
 ---
-title: "Utilizzo della funzionalità di Office in Visual Studio | Documenti Microsoft"
-ms.custom: 
+title: Utilizzo della funzionalità di Office in Visual Studio | Documenti Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa848d522096b5df12db113cf0c7272ab61c80be
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5927c9b3288755efc8e4b5700487a138f7a04f63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>Utilizzo della funzionalità Office in Visual Studio
   Quando si crea un progetto a livello di documento, il documento e l'applicazione associata sono ospitati all'interno di Visual Studio in modo sia possibile progettare e lavorare direttamente con il documento. Quando si dispone di un'applicazione aperta in Visual Studio di Microsoft Office, in genere funziona come previsto. Tuttavia, alcune delle funzionalità dell'applicazione è diverso o non è accessibile.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)   
- [Cenni preliminari sulle estensioni di codice gestito e di Information Rights Management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Information Rights Management e Cenni preliminari sulle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Protezione con password nei documenti di Office](../vsto/password-protection-on-office-documents.md)   
  [Procedura: Aprire soluzioni Office senza eseguire codice](../vsto/how-to-open-office-solutions-without-running-code.md)  
   

@@ -1,21 +1,19 @@
 ---
 title: Generare e configurare l'app da modelli | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51760d1bcd2673ac391ea96ba3b715470ff64c66
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 46f21c0940ccfc020d2f6015bc71d6ee26f0c214
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 È possibile generare o configurare parti dell'applicazione da un modello.
@@ -49,11 +47,11 @@ ms.lasthandoff: 02/09/2018
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata  
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.  
   
--   **Avviare specifico, quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.  
+-   **Avviare specifici, quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.  
   
      Ad esempio, progettare un sito Web che include un set specifico di pagine Web prima di progettare un'applicazione Web che presenta pagine definite in un modello.  
   
--   **Gli aspetti di variante del modello.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.  
+-   **Gli aspetti varianti del modello.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.  
   
      Ad esempio, se il set di pagine Web e dei relativi collegamenti cambia, ma lo stile e il formato delle pagine rimangono gli stessi, sarà necessario che il modello descriva i collegamenti, ma non il formato delle pagine.  
   
@@ -74,6 +72,6 @@ ms.lasthandoff: 02/09/2018
      Ad esempio, un diagramma classi UML è una raccolta di caselle e di frecce. Con questa notazione si può, teoricamente, definire qualsiasi elemento. L'uso del diagramma classi è tuttavia consigliato solo quando si descrive un set di tipi. Ad esempio, è possibile adattare diagrammi classi per descrivere tipi differenti di pagine Web.  
   
 ## <a name="see-also"></a>Vedere anche  
- [La generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
+ [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
  [Procedura: aprire un modello dal File di codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

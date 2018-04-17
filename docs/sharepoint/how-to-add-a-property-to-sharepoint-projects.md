@@ -1,12 +1,10 @@
 ---
-title: "Procedura: aggiungere una proprietà ai progetti SharePoint | Documenti Microsoft"
-ms.custom: 
+title: 'Procedura: aggiungere una proprietà ai progetti SharePoint | Documenti Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a4318550e74d5324195de173659d96abaf952979
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procedura: aggiungere una proprietà ai progetti SharePoint
   È possibile utilizzare un'estensione di progetto per aggiungere una proprietà a qualsiasi progetto SharePoint. La proprietà viene visualizzata nel **proprietà** finestra quando è selezionato il progetto in **Esplora**.  
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
  Per rendere permanenti le modifiche ai valori della proprietà, il **impostare** funzioni di accesso per le proprietà utilizzare le API seguenti:  
   
--   `CustomUserFileProperty`Usa il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> proprietà per salvare il valore del file di progetto utente opzione.  
+-   `CustomUserFileProperty` Usa il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> proprietà per salvare il valore del file di progetto utente opzione.  
   
--   `CustomProjectFileProperty`Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> per salvare il relativo valore per il file di progetto.  
+-   `CustomProjectFileProperty` Usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> per salvare il relativo valore per il file di progetto.  
   
  Per ulteriori informazioni sulla persistenza dei dati in questi file, vedere [salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
@@ -59,11 +58,11 @@ ms.lasthandoff: 01/10/2018
   
 -   <xref:System.ComponentModel.DisplayNameAttribute>: Specifica il nome della proprietà che è presente il **proprietà** finestra.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Specifica la stringa di descrizione che verrà visualizzata nella parte inferiore del **proprietà** finestra quando la proprietà è selezionata.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Specifica la stringa di descrizione che verrà visualizzata nella parte inferiore della **proprietà** finestra quando la proprietà è selezionata.  
   
 -   <xref:System.ComponentModel.DefaultValueAttribute>: Specifica il valore predefinito della proprietà.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Specifica una conversione personalizzata tra la stringa che viene visualizzata nel **proprietà** finestra e un valore di proprietà non stringa.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Specifica una conversione personalizzata tra la stringa che viene visualizzata nella **proprietà** finestra e un valore di proprietà non stringa.  
   
 -   <xref:System.ComponentModel.EditorAttribute>: Specifica un editor personalizzato da utilizzare per modificare la proprietà.  
   

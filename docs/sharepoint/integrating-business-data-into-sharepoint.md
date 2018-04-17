@@ -1,12 +1,10 @@
 ---
 title: Integrazione di dati di Business in SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c054049c09f13c224ee4f0bb3021af1121f5cea8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 91524d979d345da3ccbfd71ba07ce51f6e1c17c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>Integrazione di dati business in SharePoint
   È possibile integrare i dati di business in SharePoint. Dati di business possono provenire da applicazioni server back-end, ad esempio [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel e SAP, o un servizio Web. Gli utenti possono visualizzare, aggiungere, aggiornare o eliminare dati di business utilizzando gli elenchi esterni o Web part dei dati di Business in SharePoint.  Gli utenti possono accedere anche questi dati in un'applicazione di Microsoft Office, ad esempio Microsoft Outlook. Per ulteriori informazioni, vedere [dove possibile dati esterni](http://go.microsoft.com/fwlink/?LinkId=169295).  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  Un modello contiene entità e i metodi.  
   
 ### <a name="entities"></a>Entità  
- Un'entità descrive una raccolta di campi. Ad esempio, un'entità può rappresentare una tabella in un database. Un'entità viene visualizzato come un tipo di contenuto esterno in SharePoint. Per ulteriori informazioni sui tipi di contenuto esterni, vedere [quali sono i tipi di contenuto esterno?](http://go.microsoft.com/fwlink/?LinkId=169293)  
+ Un'entità descrive una raccolta di campi. Ad esempio, un'entità può rappresentare una tabella in un database. Un'entità viene visualizzato come un tipo di contenuto esterno in SharePoint. Per ulteriori informazioni sui tipi di contenuto esterno, vedere [quali sono i tipi di contenuto esterno?](http://go.microsoft.com/fwlink/?LinkId=169293)  
   
 ### <a name="methods"></a>Metodi  
  I consumer di un tipo di contenuto esterno per eseguire un'azione per i campi di un'entità consente a un metodo. Ad esempio, un metodo Updater potrebbe consentire agli utenti di modificare l'indirizzo e la data di un cliente di nascita in `Address` e `BirthDate` sono campi del `Customer` entità.  

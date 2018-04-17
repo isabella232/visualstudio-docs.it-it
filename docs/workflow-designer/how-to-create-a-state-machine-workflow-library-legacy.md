@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c65eafa04b25a2ba3f449d26e9a93daab1699664
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a8220c6e9dbd2d97e0bf1017498ca3b295424863
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procedura: creare una libreria del flusso di lavoro di macchina a stati (legacy)
 
@@ -26,7 +26,7 @@ Seguire questi passaggi per creare un progetto di libreria del flusso di lavoro 
 
 1.  Avviare Visual Studio.
 
-2.  Nel **File** dal menu **New**, quindi selezionare **progetto**.
+2.  Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 

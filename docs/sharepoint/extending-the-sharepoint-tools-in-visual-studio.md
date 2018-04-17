@@ -1,12 +1,10 @@
 ---
 title: Estensione degli strumenti di SharePoint in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: db0afa41641cd9d5ae04cfe6d391dbf0fe814f0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>Estensione degli strumenti di SharePoint in Visual Studio
   Gli strumenti di SharePoint in Visual Studio soddisfano i requisiti di molti scenari di sviluppo di applicazioni. Tuttavia, si potrebbero individuare i casi in cui non dispongono della funzionalità che richiedono di altri sviluppatori. In questi casi, è possibile estendere gli strumenti di SharePoint per creare le funzionalità necessarie.  
@@ -52,12 +51,12 @@ ms.lasthandoff: 01/10/2018
  Per installare Visual Studio SDK, vedere [l'installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md). Per ulteriori informazioni sulle estensioni di Visual Studio, vedere [iniziando a sviluppare estensioni di Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica del modello di programmazione di SharePoint di estensioni degli strumenti](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
+ [Panoramica del modello di programmazione di SharePoint estensioni degli strumenti](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Estensione del sistema di progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Guida di riferimento &#40; Estensibilità degli strumenti di SharePoint &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
- [Estensioni di debug per gli strumenti di SharePoint in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
+ [Concetti di programmazione e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
+ [Riferimento &#40;estensibilità degli strumenti di SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [Debug delle estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   
   

@@ -1,12 +1,10 @@
 ---
 title: Modulo di supporto nei flussi di lavoro | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2544bbe60ea014ee873342f06ce285c809b42eb6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b06f956cec9f26aff59089be4e29affcd6d73ad8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
   Quattro tipi di moduli possono essere utilizzati in un flusso di lavoro: avvio, l'associazione, attività e modifica. Questi tipi di modulo possono essere basati su un form ASPX o un modulo di InfoPath. Il livello di supporto che [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce per un particolare modulo dipende da diversi fattori, che sono descritte nelle tabelle seguenti. Per ulteriori informazioni sui tipi di modulo del flusso di lavoro, vedere [Cenni preliminari sui form del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=185228) nel sito Web MSDN.  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/10/2018
 |Modifica|Non applicabile. Form modifica ASPX non può essere creato in SharePoint Designer.|Non applicabile. Impossibile creare il form di modifica di InfoPath in SharePoint Designer, ad eccezione dell'incorporato SharePoint Server flusso di lavoro che non è incluso nel file con estensione wsp quando viene esportato il flusso di lavoro.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [Procedura dettagliata: Creazione di un flusso di lavoro con form di avvio e associazione](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Creazione di soluzioni flusso di lavoro SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
   

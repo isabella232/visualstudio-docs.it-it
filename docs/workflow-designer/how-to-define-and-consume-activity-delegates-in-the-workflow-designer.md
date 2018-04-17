@@ -1,18 +1,18 @@
 ---
-title: "Procedura: definire e utilizzare delegati di attività nella finestra di progettazione del flusso di lavoro | Documenti Microsoft"
+title: 'Procedura: definire e utilizzare delegati di attività nella finestra di progettazione del flusso di lavoro | Documenti Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d5f1a84983156e1e12c2407b1d128511eb27284f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: fc0964cc6c781c34a4b4cab4ea4901837322c0af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: definire e utilizzare delegati di attività in Progettazione del flusso di lavoro
 In [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] è inclusa una nuova finestra di progettazione predefinita dell'attività di <xref:System.Activities.Statements.InvokeDelegate>. Questa finestra di progettazione può essere usata per assegnare i delegati all'attività che derivano da <xref:System.Activities.ActivityDelegate>, come <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.  

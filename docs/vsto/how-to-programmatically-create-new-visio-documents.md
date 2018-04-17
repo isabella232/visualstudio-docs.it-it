@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: creazione di nuovi documenti di Visio a livello di codice | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], creating Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 072a279bd342f60f8ebfb307a880c39bdc8b2d51
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e2dd64b2996df4ed75cd45cd741619658f9b3654
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: Creare nuovi documenti di Visio a livello di codice
   Quando si crea un nuovo disegno di Microsoft Office Visio, aggiungerlo alla raccolta Documents dei documenti di Visio aperti. Di conseguenza, il metodo Interop crea un nuovo documento di disegno di Visio. Per altre informazioni, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) .  
@@ -79,7 +78,7 @@ ms.lasthandoff: 01/10/2018
  [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)   
  [Procedura: aprire documenti di Visio](../vsto/how-to-programmatically-open-visio-documents.md)   
  [Procedura: chiudere a livello di programmazione di documenti di Visio](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Procedura: salvare a livello di programmazione di documenti di Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Procedura: a livello di programmazione salvare documenti di Visio](../vsto/how-to-programmatically-save-visio-documents.md)   
  [Procedura: Stampare documenti di Visio a livello di codice](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

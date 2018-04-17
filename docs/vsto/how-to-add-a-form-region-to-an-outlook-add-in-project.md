@@ -2,12 +2,9 @@
 title: "Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook | Documenti Microsoft"
 ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
 - VSTO.NewFormRegionWizard.Page3
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2029b154ca97f2e856a9e6af8ef58b82f4438df6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: b8a02070bf76a1c4220c56afc397abb3b7fd3e1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo per Outlook
   Creare un'area del modulo per estendere un modulo standard o personalizzato di Microsoft Office Outlook usando la procedura guidata **Nuova area del modulo di Outlook** . È possibile creare una nuova area del modulo e progettare l'interfaccia utente in Visual Studio oppure importare un'area del modulo progettata in Outlook e aggiungere codice Visual Basic o C#.  

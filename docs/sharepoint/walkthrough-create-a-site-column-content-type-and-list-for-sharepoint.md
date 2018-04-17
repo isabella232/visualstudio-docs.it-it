@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Creazione di una colonna del sito, tipo di contenuto e l''elenco per SharePoint | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Creazione di una colonna del sito, tipo di contenuto e l'elenco per SharePoint | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,20 +21,21 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint
   Le procedure seguenti viene illustrato come creare colonne del sito di SharePoint personalizzate, o *campi*, nonché un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che viene utilizzato il nuovo tipo di contenuto.  
   
  In questa procedura dettagliata sono incluse le attività seguenti:  
   
--   [Creazione di colonne del sito personalizzato](#BKMK_CreatingCustSiteCols).  
+-   [Creazione di colonne sito personalizzato](#BKMK_CreatingCustSiteCols).  
   
 -   [Creazione di un tipo di contenuto personalizzato](#BKMK_CreateCustContType).  
   
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Creazione di un elenco](#BKMK_CreateList).  
   
--   [Test dell'applicazione](#BKMK_TestApp).  
+-   [Verifica dell'applicazione](#BKMK_TestApp).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Creazione di colonne del sito personalizzato  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Creazione di colonne sito personalizzato  
  Questo esempio crea un elenco per la gestione dei pazienti in un ospedale. In primo luogo, è necessario creare un progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e aggiungervi le colonne del sito, come indicato di seguito.  
   
 #### <a name="to-create-the-project"></a>Per creare il progetto  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Utilizzando la stessa procedura, aggiungere altre due colonne del sito al progetto: **ID paziente** (tipo = "Integer") e **Nome medico** (tipo = "Text"). Impostare il valore di gruppo **colonne del sito Clinic**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Creazione di un tipo di contenuto personalizzato  
+##  <a name="BKMK_CreateCustContType"></a> Creazione di un tipo di contenuto personalizzato  
  Successivamente, creare un tipo di contenuto, in base al tipo di contenuto di contatti, che include le colonne del sito creato nella procedura precedente. È possibile basare un tipo di contenuto su un tipo di contenuto esistente, per risparmiare tempo perché il tipo di contenuto base fornisce diverse colonne del sito da utilizzare nel nuovo tipo di contenuto.  
   
 #### <a name="to-create-a-custom-content-type"></a>Per creare un tipo di contenuto personalizzato  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Nella barra dei menu, scegliere **File**, **Salva tutto**, quindi chiudere la finestra di progettazione del tipo di contenuto.  
   
-##  <a name="BKMK_CreateList"></a>Creazione di un elenco  
+##  <a name="BKMK_CreateList"></a> Creazione di un elenco  
  A questo punto, creare un elenco che utilizza le nuove colonne di tipo e il sito del contenuto.  
   
 #### <a name="to-create-a-list"></a>Per creare un elenco  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. Nel **nome di colonna** scegliere **Nome paziente**, assicurarsi che il **ordinamento** colonna è impostata su **crescente**e quindi scegliere il  **OK** pulsante.  
   
-##  <a name="BKMK_TestApp"></a>Test dell'applicazione  
+##  <a name="BKMK_TestApp"></a> Test dell'applicazione  
  Ora che le colonne del sito personalizzati, tipo di contenuto ed elenco sono pronti, distribuirle in SharePoint ed eseguire l'applicazione per eseguire il test.  
   
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione  
@@ -227,7 +226,7 @@ ms.lasthandoff: 01/10/2018
      Il nuovo record venga visualizzato nell'elenco.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
+ [Creazione di colonne del sito, i tipi di contenuto ed elenchi per SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Procedura: creare un tipo di campo personalizzato](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Tipi di contenuto](http://go.microsoft.com/fwlink/?LinkId=192080)   

@@ -1,23 +1,21 @@
 ---
 title: Formattazione, XML, Editor di testo, finestra di dialogo Opzioni | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a4d6de24a75b5a08820878bc74633c02ab4118f
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 95fdc563b288c965dbbff7a6201e9b1ef8ec4ae9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formattazione, XML, Editor di testo, finestra di dialogo Opzioni
 Questa finestra di dialogo consente di specificare le impostazioni di formattazione dell'editor XML. È possibile accedere il **opzioni** dalla finestra di dialogo di **strumenti** menu.  
@@ -26,7 +24,7 @@ Questa finestra di dialogo consente di specificare le impostazioni di formattazi
 >  Queste impostazioni sono disponibili quando si seleziona il **Editor di testo** cartella, il **XML** cartella, quindi il **formattazione** opzione il **opzioni** la finestra di dialogo.  
   
 ## <a name="attributes"></a>Attributi  
- **Mantieni la formattazione manuale degli attributi**  
+ **Mantenere la formattazione manuale degli attributi**  
  Gli attributi non vengono riformattati. Questa è l'impostazione predefinita.  
   
 > [!NOTE]

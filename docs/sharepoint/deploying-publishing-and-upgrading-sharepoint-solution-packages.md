@@ -1,12 +1,10 @@
 ---
 title: La distribuzione, pubblicazione e aggiornamento dei pacchetti delle soluzioni SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SharePointProjectPropertyTab
 - VS.SharePointTools.Project.Publishing
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5990ab0f6ff6ec02131921f54197dd28e7f4e6ff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aac96c7954a52a3277b08efcd89fa24a743117be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Distribuzione, pubblicazione e aggiornamento dei pacchetti delle soluzioni SharePoint
   Dopo aver sviluppato una soluzione di SharePoint in Visual Studio, è possibile distribuire il file di pacchetto (con estensione wsp) in un server SharePoint locale o pubblicarla in un server SharePoint locale o remoto. Se si distribuisce i file, è possibile personalizzare la modalità in cui vengono distribuiti i file del pacchetto (con estensione wsp).  
@@ -35,11 +34,11 @@ ms.lasthandoff: 01/10/2018
 >  Attualmente, solo soluzioni create mediante sandbox possono essere pubblicate in server remoti di SharePoint. Per ulteriori informazioni, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).  
   
 ## <a name="deploying-publishing-and-upgrading"></a>La distribuzione, pubblicazione e aggiornamento  
- *Distribuzione* fa riferimento alla copia di un file di soluzione SharePoint compilato da un progetto SharePoint in Visual Studio in un host locale. In una soluzione distribuita, è possibile configurare la procedura di distribuzione, quali il riciclo del pool di Internet Information Services (IIS), l'attivazione della soluzione dopo la distribuzione e così via. Per distribuire, utilizzare il **Distribuisci** comando il **compilare** menu. Per ulteriori informazioni, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) e [procedura: distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
+ *Distribuzione* fa riferimento alla copia di un file di soluzione SharePoint creato in base a un progetto SharePoint in Visual Studio in un host locale. In una soluzione distribuita, è possibile configurare la procedura di distribuzione, quali il riciclo del pool di Internet Information Services (IIS), l'attivazione della soluzione dopo la distribuzione e così via. Per distribuire, utilizzare il **Distribuisci** comando il **compilare** menu. Per ulteriori informazioni, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) e [procedura: distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
- *Pubblicazione* si riferisce al caricamento di un file di soluzione creata mediante sandbox di SharePoint in una condivisione remota sito, ovvero un sito si trova in un altro sistema. È anche possibile pubblicare un file di soluzione creata mediante sandbox di SharePoint in un sito di SharePoint locale, ma indipendentemente dal fatto che il sito pubblicato in sia locale o remoto, non è possibile configurare i passaggi di distribuzione.  
+ *Pubblicazione* si riferisce al caricamento di un file di soluzione creata mediante sandbox di SharePoint in una condivisione remota sito, vale a dire un sito che si trova in un altro sistema. È anche possibile pubblicare un file di soluzione creata mediante sandbox di SharePoint in un sito di SharePoint locale, ma indipendentemente dal fatto che il sito pubblicato in sia locale o remoto, non è possibile configurare i passaggi di distribuzione.  
   
- *L'aggiornamento* si riferisce all'aggiornamento di un esistente in modalità remota o una soluzione di SharePoint locale pubblicata. Dopo aver apportato le modifiche alla soluzione di SharePoint in Visual Studio, si modifica nome file del pacchetto della soluzione, ripubblicare la soluzione e quindi aggiornare la soluzione dopo Ripubblica correttamente. Se si pubblica nuovamente una soluzione pubblicata in locale, è possibile sovrascrivere il file di soluzione esistente.  
+ *L'aggiornamento* si riferisce all'aggiornamento di una soluzione di SharePoint pubblicata localmente o esistente in modalità remota. Dopo aver apportato le modifiche alla soluzione di SharePoint in Visual Studio, si modifica nome file del pacchetto della soluzione, ripubblicare la soluzione e quindi aggiornare la soluzione dopo Ripubblica correttamente. Se si pubblica nuovamente una soluzione pubblicata in locale, è possibile sovrascrivere il file di soluzione esistente.  
   
 ## <a name="deploying-packages"></a>Distribuzione di pacchetti  
  È possibile distribuire i file del pacchetto nel server SharePoint nel computer di sviluppo di test e debug. È anche possibile creare un file di pacchetto che è possibile installare in un altro computer scegliendo il **pubblica su File System** pulsante di opzione di **pubblica** la finestra di dialogo. Il pacchetto viene creato e copiato nel percorso file locale specificato. Per distribuire una soluzione di SharePoint al server locale, utilizzare il **Distribuisci** comando il **compilare** menu. Per ulteriori informazioni, vedere [procedura: distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
  È anche possibile aggiungere comandi da eseguire prima e dopo la distribuzione. Per ulteriori informazioni, vedere [procedura: impostare i comandi di distribuzione di SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
 ## <a name="publishing-packages-to-a-remote-or-local-server"></a>Pubblicazione di pacchetti in un Server locale o remoto  
- Per pubblicare una soluzione creata mediante sandbox di SharePoint a un server remoto, nella barra dei menu, scegliere **compilare**, **pubblica**, quindi il **pubblica** finestra di dialogo scegliere la **Pubblica sul sito di SharePoint** pulsante di opzione, fornendo l'URL del server remoto, ad esempio **https://someremoteserver.sharepoint.microsoftonline.com**.  
+ Per pubblicare una soluzione creata mediante sandbox di SharePoint a un server remoto, nella barra dei menu, scegliere **compilare**, **pubblica**, quindi il **pubblica** finestra di dialogo, scegliere il **Pubblica sul sito di SharePoint** pulsante di opzione, fornendo l'URL del server remoto, ad esempio **https://someremoteserver.sharepoint.microsoftonline.com**.  
   
  Per pubblicare una soluzione di SharePoint a un server locale, nel **pubblica** finestra di dialogo scegliere la **pubblica su File System** pulsante di opzione, fornire un percorso di sistema locale.  
   

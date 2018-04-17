@@ -1,13 +1,10 @@
 ---
 title: Risoluzione dei problemi di distribuzione e creazione di pacchetti di SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Risoluzione dei problemi relativi alla creazione di pacchetti e alla distribuzione di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  Per effettuare una diagnosi dei problemi relativi a Visual Studio, SharePoint e ad altri livelli, è possibile utilizzare la chiave del Registro di sistema EnableDiagnostics per visualizzare la traccia dello stack. Per ulteriori informazioni, vedere [debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Aggiunta dell'output del progetto al pacchetto della soluzione
- È possibile aggiungere l'output del progetto a un pacchetto mediante Progettazione pacchetti. Quando tuttavia si aggiunge l'output del progetto, verificare che la piattaforma del progetto corrisponda alla piattaforma della soluzione SharePoint. È consigliabile utilizzare il **qualsiasi CPU** piattaforma di destinazione per gli assembly che si desidera distribuire in un server SharePoint. Per ulteriori informazioni, vedere [pagina compilazione, Progettazione progetti &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) e [avanzata di dialogo Impostazioni del compilatore &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ È possibile aggiungere l'output del progetto a un pacchetto mediante Progettazione pacchetti. Quando tuttavia si aggiunge l'output del progetto, verificare che la piattaforma del progetto corrisponda alla piattaforma della soluzione SharePoint. È consigliabile utilizzare il **qualsiasi CPU** piattaforma di destinazione per gli assembly che si desidera distribuire in un server SharePoint. Per altre informazioni, vedere [pagina compilazione, Progettazione progetti &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) e [finestra di dialogo Impostazioni del compilatore avanzate &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Avvisi ed errori di convalida
  Gli strumenti di sviluppo di SharePoint in Visual Studio consentono di eseguire passaggi di convalida per verificare che il pacchetto della soluzione venga creato correttamente. È inoltre possibile creare passi di convalida personalizzati per le funzionalità e i pacchetti. Per ulteriori informazioni, vedere [procedura: creare funzionalità personalizzate e regole di convalida del pacchetto per le soluzioni SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
@@ -56,7 +53,7 @@ ms.lasthandoff: 03/02/2018
 |-----------|-----------------|
 |Automatic|I conflitti vengono rilevati e risolti automaticamente.|
 |Prompt|I conflitti vengono rilevati e segnalati allo sviluppatore prima di essere risolti.|
-|nessuno|I conflitti non vengono rilevati.|
+|Nessuno|I conflitti non vengono rilevati.|
 
 ## <a name="differences-between-f5-deployment"></a>Differenze rispetto alla distribuzione tramite il tasto F5
  Quando si utilizza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per distribuire il progetto SharePoint nel server SharePoint locale per il test e l'esecuzione del debug, in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono eseguiti alcuni passaggi aggiuntivi.

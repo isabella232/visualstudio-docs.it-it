@@ -1,23 +1,21 @@
 ---
 title: Varie, XML, Editor di testo, finestra di dialogo Opzioni | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4773bf87e89bd504b477d9a1a31dfe961a3f29ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ccbdfae65792fb6816a0604db6339a9d63fa2ccb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varie, XML, editor di testo, finestra di dialogo Opzioni
 Questa finestra di dialogo consente di modificare le impostazioni di completamento automatico e dello schema per l'editor XML. È possibile accedere il **opzioni** dalla finestra di dialogo di **strumenti** menu.  
@@ -47,7 +45,7 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
  Selezionato per impostazione predefinita.  
   
 ## <a name="network"></a>Rete  
- **Scarica automaticamente le DTD e schemi**  
+ **Scarica automaticamente DTD e schemi**  
  Gli schemi e le DTD (Document Type Definitions) vengono scaricati automaticamente dalle posizioni HTTP. Questa funzionalità usa System.Net con il rilevamento automatico dei server proxy abilitato.  
   
  Selezionato per impostazione predefinita.  

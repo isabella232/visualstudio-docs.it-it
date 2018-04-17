@@ -1,12 +1,10 @@
 ---
 title: Modelli di elemento di progetto e progetto SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.FirstWizardPage
 - VS.SharePointTools.SPE.ListInstance
@@ -24,13 +22,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3890d7678fdc50a867e254edbbb7503acbebcd76
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d671c397f139cfaa51bd664e5324a32cce671361
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelli di progetto e di elementi di progetto SharePoint
   Le sezioni seguenti vengono descritti il progetto SharePoint disponibili e modelli e le modalità di utilizzo dell'elemento di progetto. 
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
  Oggetto **(solo soluzione Farm) modello di integrazione applicativa dei dati Business** elemento consente di integrare dati di business in SharePoint. Dati di business possono provenire da applicazioni server back-end, ad esempio [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)], Siebel e Service Advertising Protocol (SAP). Modelli di connettività dei dati aziendali è utilizzabile solo nelle soluzioni farm. Solo per soluzioni farm, è possibile aggiungere l'elemento del progetto. Per ulteriori informazioni, vedere [procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md), [come: utilizzare un File di risorse per specificare nomi localizzati, proprietà e autorizzazioni](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md), e [novità: applicativa Servizi](http://go.microsoft.com/fwlink/?LinkId=179411).  
   
 ### <a name="content-type"></a>Tipo di contenuto  
- *Tipo di contenuto* elementi consentono di creare tipi di contenuto personalizzati basati su un tipo di contenuto esistente (base), ad esempio un documento, un annuncio o un'attività. Un tipo di contenuto personalizzato fornisce gli stessi attributi e i campi come tipo di contenuto base insieme a tutte le colonne del sito (campi) si definisce. Ad esempio, è possibile creare un tipo di contenuto contatto personalizzato che è in base al tipo di contenuto contatto base fornito in SharePoint. Modificando le colonne del sito esistente o aggiungendo altre colonne del sito a quelli già inclusi nel tipo di contenuto di base, è possibile personalizzare il tipo di contenuto.  
+ *Tipo di contenuto* elementi consentono di creare tipi di contenuto personalizzati in base a un tipo di contenuto (base) esistente, ad esempio un documento, un annuncio o un'attività. Un tipo di contenuto personalizzato fornisce gli stessi attributi e i campi come tipo di contenuto base insieme a tutte le colonne del sito (campi) si definisce. Ad esempio, è possibile creare un tipo di contenuto contatto personalizzato che è in base al tipo di contenuto contatto base fornito in SharePoint. Modificando le colonne del sito esistente o aggiungendo altre colonne del sito a quelli già inclusi nel tipo di contenuto di base, è possibile personalizzare il tipo di contenuto.  
   
 > [!NOTE]  
 >  A causa di una limitazione di SharePoint, è possibile creare un tipo di contenuto soluzione farm basato sul tipo di contenuto di una soluzione creata mediante sandbox.  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
  Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una colonna del sito, tipo di contenuto e l'elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [blocco predefinito: tipo di contenuto](http://go.microsoft.com/fwlink/?LinkId=179413).  
   
 ### <a name="empty-element"></a>Elemento vuoto  
- *Gli elementi vuoti* vengono spesso usate per definire gli elementi di progetto SharePoint che non dispongono di un progetto o un modello di elemento di progetto in Visual Studio. Quando si aggiunge un elemento vuoto al progetto, un nodo denominato EmptyElement [x](where [x] is a unique number\) is created. EmptyElement [x] contiene un singolo file denominato Elements. Utilizzare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni per definire gli elementi desiderati in Elements.  
+ *Gli elementi vuoti* vengono spesso usate per definire elementi di progetto SharePoint che non dispongono di un progetto o un modello di elemento di progetto in Visual Studio. Quando si aggiunge un elemento vuoto al progetto, un nodo denominato EmptyElement [x](where [x] is a unique number\) is created. EmptyElement [x] contiene un singolo file denominato Elements. Utilizzare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni per definire gli elementi desiderati in Elements.  
   
 ### <a name="event-receiver"></a>Ricevitore di eventi  
  *Ricevitori di eventi* gestire gli eventi per gli elementi nel sito di SharePoint, ad esempio quando un elemento viene aggiunto a un elenco, quando viene eliminato un elemento web o l'avvio di un flusso di lavoro. Il modello di elemento del progetto ricevitore di eventi consente di gestire  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
  Un elenco è un'istanza di una riutilizzabili base SharePoint definizione di elenco, ad esempio un calendario o un elenco di attività. Dopo aver aggiunto un elenco per la soluzione, la finestra di progettazione di elenco consente di aggiungere all'elenco di colonne del sito e creare le colonne dell'elenco personalizzato. Incluse le colonne del sito da tipi di contenuto. È possibile specificare il *vista* per l'elenco, che determina le colonne che verranno visualizzati nell'elenco. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una colonna del sito, tipo di contenuto e l'elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [blocco predefinito: elenchi e raccolte documenti](http://go.microsoft.com/fwlink/?LinkId=179421).  
   
 ### <a name="module"></a>Modulo  
- *I moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli) contiene file che si desidera distribuire nel server SharePoint, ad esempio immagini o note. L'elemento di progetto del modulo contiene un **modulo** nodo. Il nodo del modulo contiene due modelli di elemento di progetto: un file di definizione XML, che funge da un manifesto per il modulo, e un file txt, un file di segnaposto. Per ulteriori informazioni, vedere [utilizzando moduli da includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md) e [moduli](http://go.microsoft.com/fwlink/?LinkId=179425).  
+ *I moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli) contiene file che si desidera distribuire nel server di SharePoint, ad esempio immagini o note. L'elemento di progetto del modulo contiene un **modulo** nodo. Il nodo del modulo contiene due modelli di elemento di progetto: un file di definizione XML, che funge da un manifesto per il modulo, e un file txt, un file di segnaposto. Per ulteriori informazioni, vedere [utilizzando moduli da includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md) e [moduli](http://go.microsoft.com/fwlink/?LinkId=179425).  
   
 ### <a name="sequential-workflow-farm-solution-only"></a>Flusso di lavoro sequenza (solo soluzione Farm)  
  Oggetto *flusso di lavoro sequenza* è una serie di passaggi di logica di business, eseguite in sequenza, fino a quando non viene completata l'ultimo passaggio. Flussi di lavoro sequenziali vengono utilizzati per gestire i processi che implicano elementi, ad esempio elenchi e documenti di SharePoint. È possibile creare flussi di lavoro a livello di sito (globale) o flussi di lavoro a livello di elenco (locale) e se un flusso di lavoro viene avviata automaticamente o manualmente, è possibile selezionare. Questo elemento di progetto è utilizzabile solo nelle soluzioni farm. Solo per soluzioni farm, è possibile aggiungere l'elemento del progetto. Per ulteriori informazioni, vedere [la creazione di soluzioni flusso di lavoro di SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [flussi di lavoro in SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [novità: miglioramenti del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=179418).  

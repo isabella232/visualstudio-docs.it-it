@@ -1,10 +1,8 @@
 ---
 title: 'Procedura: creare una soluzione di linguaggio specifico di dominio | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5adfe90d88f46f4a3c31c1ddb6eb860403d57fe4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c2b14b407a6274e444ff50a6693b20b7ec763e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato utilizzando una versione specializzata [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione.  
@@ -60,7 +58,7 @@ Un linguaggio specifico di dominio (DSL) viene creato utilizzando una versione s
         > [!NOTE]
         >  Preferibilmente, il nome digitato deve essere un Visual identificatore c# valido, poiché può essere utilizzato per generare il codice.  
   
-     ![Creare una finestra di dialogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
+     ![Creare finestra di dialogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")  
   
 2.  Scegliere un modello DSL.  
   
@@ -81,18 +79,18 @@ Un linguaggio specifico di dominio (DSL) viene creato utilizzando una versione s
     > [!NOTE]
     >  Se viene visualizzato un messaggio che avvisa l'utente non eseguono modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio non venga visualizzato nuovamente.  
   
-##  <a name="settings"></a>Le pagine della finestra di progettazione DSL  
+##  <a name="settings"></a> Le pagine della finestra di progettazione DSL  
  È possibile lasciare molti dei campi invariati rispetto ai valori predefiniti. Tuttavia, assicurarsi che è impostato il campo dell'estensione di File.  
   
 ### <a name="solution-settings-page"></a>Pagina Impostazioni soluzione  
  **Il modello si desidera basare il linguaggio specifico di dominio?**  
  Scegliere un modello simile a DSL che si desidera creare. I diversi modelli forniscono punti di partenza ideale. Quando si seleziona un modello di soluzione, la procedura guidata consente di visualizzare una descrizione. Per ulteriori informazioni sui modelli di soluzione, vedere [scelta di un modello di soluzione di linguaggio specifico di dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- **Ciò che si desidera assegnare un nome del linguaggio specifico di dominio?**  
+ **Ciò che si desidera assegnare un nome di linguaggio specifico di dominio?**  
  Valore predefinito è il nome della soluzione. Codice viene generato da questo valore. Deve essere valido come nome di classe c#.  
   
 ### <a name="file-extension-page"></a>Pagina di estensione di file  
- **Utilizzato dai file del modello deve quale estensione?**  
+ **Deve modello quale estensione di file di utilizzo?**  
  Digitare una nuova estensione di file.  
   
  Verificare che questa estensione di file non già registrata per l'utilizzo in questo computer, come indicato di seguito:  
@@ -129,7 +127,7 @@ Un linguaggio specifico di dominio (DSL) viene creato utilizzando una versione s
  **Creare un file di chiave con nome sicuro**  
  L'opzione predefinita consiste nel creare una nuova chiave per firmare l'assembly DSL.  
   
- **Utilizzare una chiave esistente con nome sicuro**  
+ **Usare chiave con nome sicuro esistente**  
  Utilizzare questa opzione se si desidera integrare tale linguaggio DSL con un altro assembly.  
   
  Per ulteriori informazioni sulla denominazione sicuro, vedere [creazione e uso degli assembly](http://go.microsoft.com/fwlink/?LinkId=186073).  

@@ -1,12 +1,10 @@
 ---
 title: Considerazioni sulle soluzioni create mediante sandbox | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *Soluzioni create mediante sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti di raccolta siti caricare le proprie soluzioni di codice personalizzato. Una soluzione creata mediante sandbox comune è utenti di caricare le proprie Web part.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Un'applicazione in modalità sandbox di SharePoint viene eseguito in un processo sicuro e monitorato con accesso a una parte della Web farm. Microsoft SharePoint 2010 Usa una combinazione di funzionalità, le raccolte di soluzioni, soluzione di monitoraggio e un framework di convalida per abilitare soluzioni create mediante sandbox.  
   
 ## <a name="specifying-project-trust-level"></a>Specifica il livello di attendibilità di progetto  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]supporta soluzioni create mediante sandbox tramite una proprietà booleana del progetto chiamate *soluzione creata mediante sandbox*. Questa proprietà può essere impostata in qualsiasi momento nel progetto o può essere specificato quando si crea il progetto nel **Personalizzazione guidata SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] supporta soluzioni create mediante sandbox tramite una proprietà booleana del progetto chiamate *soluzione creata mediante sandbox*. Questa proprietà può essere impostata in qualsiasi momento nel progetto o può essere specificato quando si crea il progetto nel **Personalizzazione guidata SharePoint**.  
   
 > [!NOTE]  
 >  Modifica il *soluzione creata mediante sandbox* proprietà di un progetto dopo averlo creato può causare errori di convalida.  
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Supporto per tutte le Web part che derivano da`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Supporto per tutte le Web part che derivano da `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Web part  
   

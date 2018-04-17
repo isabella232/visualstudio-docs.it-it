@@ -1,13 +1,10 @@
 ---
 title: Strumenti XML in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
 helpviewer_keywords:
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d933199c85bee3fa85a533f9c61c08bee898ea
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: f823a42d5a89dd22fd273a2971a3b323487a525b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-tools-in-visual-studio"></a>Strumenti XML in Visual Studio
 
@@ -82,7 +78,7 @@ Descrive le classi e altri elementi che costituiscono lo spazio dei nomi <xref:S
 [Modello DOM (Document Object Mode) XML](/dotnet/standard/data/xml/xml-document-object-model-dom)  
 Fornisce informazioni sulla conformità della classe <xref:System.Xml.XmlDocument> e delle relative classi associate alle specifiche di supporto dello spazio dei nomi del modello (DOM) W3C (Core) Level 1 e Level 2.
 
-[L'elaborazione dei dati XML con XmlReader e XmlWriter](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
+[L'elaborazione dati XML con XmlReader e XmlWriter](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
 
 [Trasformazioni XSLT](/dotnet/standard/data/xml/xslt-transformations)  
 Descrive il modo in cui la classe <xref:System.Xml.Xsl.XslCompiledTransform> implementa la raccomandazione XSLT 1.0.

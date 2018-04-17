@@ -1,25 +1,23 @@
 ---
 title: Personalizzazione di archiviazione di File e la serializzazione XML | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizzazione dell'archiviazione dei file e della serializzazione XML
 Quando l'utente salva un'istanza di, o *modello*, di un linguaggio specifico di dominio (DSL) in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], un file XML viene creato o aggiornato. Il file può essere ricaricato per ricreare il modello nell'archivio.  
@@ -57,7 +55,7 @@ Quando l'utente salva un'istanza di, o *modello*, di un linguaggio specifico di 
   
  Questo linguaggio DSL è stato usato per creare un modello che presenta l'aspetto seguente sullo schermo.  
   
- ![Diagramma dell'albero genealogico e casella degli strumenti Esplora](../modeling/media/familyt_instance.png "FamilyT_Instance")  
+ ![Diagramma dell'albero genealogico, casella degli strumenti ed explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
  Questo modello è stato salvato e quindi nuovamente aperto nell'editor di testo XML:  
   
@@ -275,9 +273,9 @@ Quando l'utente salva un'istanza di, o *modello*, di un linguaggio specifico di 
 |È personalizzato|Impostare questa proprietà su **True** se si desidera scrivere codice di serializzazione e deserializzazione per questa classe di dominio.<br /><br /> Compilare la soluzione, esaminare gli errori per individuare le istruzioni dettagliate.|  
 |Classe di dominio|Classe di dominio a cui si applica questo nodo di dati della classe. Sola lettura.|  
 |Nome elemento|Nome del nodo XML per gli elementi di questa classe. Il valore predefinito è una versione minuscola del nome della classe di dominio.|  
-|Nome dell'attributo moniker|Nome dell'attributo utilizzato negli elementi moniker per contenere il riferimento. Se è vuota, viene utilizzato il nome della proprietà chiave o id.<br /><br /> In questo esempio è "name":`<personMoniker name="/Mike Nash"/>`|  
+|Nome dell'attributo moniker|Nome dell'attributo utilizzato negli elementi moniker per contenere il riferimento. Se è vuota, viene utilizzato il nome della proprietà chiave o id.<br /><br /> In questo esempio è "name":  `<personMoniker name="/Mike Nash"/>`|  
 |Nome dell'elemento moniker|Nome dell'elemento xml utilizzato per i moniker che fanno riferimento agli elementi di questa classe.<br /><br /> Il valore predefinito è una versione minuscola del nome della classe aggiunto il suffisso "Moniker". Ad esempio `personMoniker`.|  
-|Nome del tipo moniker|Nome del tipo xsd generato per i moniker agli elementi di questa classe. Lo schema XSD è **Dsl\Generated codice\\\*Schema.xsd**|  
+|Nome del tipo moniker|Nome del tipo xsd generato per i moniker agli elementi di questa classe. Lo schema XSD si trova in **codice Dsl\Generated\\\*schema. xsd**|  
 |Serializzare Id|Se True, il GUID elemento è incluso nel file. Deve essere true se è presente alcuna proprietà che è contrassegnato come **chiave Moniker** e DSL definisce relazioni di riferimento di questa classe.|  
 |Nome tipo|Nome del tipo xml generato nel xsd dalla classe di dominio designato.|  
 |Note|Informale note associate a questo elemento|  
@@ -307,5 +305,5 @@ Quando l'utente salva un'istanza di, o *modello*, di un linguaggio specifico di 
 |Utilizzare il modulo completo|Se true, ogni elemento di destinazione o un moniker è racchiuso in un nodo XML che rappresenta la relazione. Questo deve essere impostato su true se la relazione presenta una proprietà dominio.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [Esplorazione e l'aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)

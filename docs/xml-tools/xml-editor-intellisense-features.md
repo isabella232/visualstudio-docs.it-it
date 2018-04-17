@@ -1,23 +1,21 @@
 ---
-title: "Funzionalità IntelliSense dell'Editor XML | Documenti Microsoft"
-ms.custom: 
+title: Funzionalità IntelliSense dell'Editor XML | Documenti Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98f11cf9f4aef491951e1968105a30a679e687a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bc4a0e9cc3da9d2cfad86d1891514a68dd2b87fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle di altri editor di linguaggio forniti in Visual Studio. Questa sezione illustra come usare IntelliSense con documenti XML Schema Definition Language (XSD) e XSLT.  
@@ -53,7 +51,7 @@ Per ulteriori informazioni, vedere [procedura dettagliata: utilizzo di XSLT Inte
   
  `<book>`  
   
- L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio di questa (il "&#124;" indica la posizione del cursore):  
+ L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Ecco un esempio di questo (il "&#124;" note sulla posizione del cursore):  
   
  `<book>`&#124;`</book>`  
   

@@ -1,12 +1,10 @@
 ---
 title: Distribuire una soluzione Office usando ClickOnce | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>Distribuzione di una soluzione Office utilizzando ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, se la soluzione sarà eseguita da più utenti nello stesso computer, si consiglia di usare Windows Installer (MSI).  
@@ -30,7 +29,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Pubblicare la soluzione](#Publish)  
   
--   [Decidere come si desidera concedere l'attendibilità alla soluzione](#Trust)  
+-   [Scegliere come si desidera concedere l'attendibilità alla soluzione](#Trust)  
   
 -   [Consentire agli utenti di installare la soluzione](#Helping)  
   
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  Per ulteriori informazioni su come distribuire una soluzione Office creando un file Windows Installer, vedere [distribuisce una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a>Pubblicare la soluzione  
- È possibile pubblicare la soluzione usando il **pubblicazione guidata** o **progettazione**. In questa procedura si userà il **progettazione** perché offre il set completo di opzioni di pubblicazione. Vedere [pubblicazione guidata &#40; sviluppo per Office in Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Pubblicare la soluzione  
+ È possibile pubblicare la soluzione usando il **pubblicazione guidata** o **progettazione**. In questa procedura si userà il **progettazione** perché offre il set completo di opzioni di pubblicazione. Vedere [pubblicazione guidata &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Per pubblicare la soluzione  
   
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Nel **progettazione**, scegliere il **pubblica** scheda, come illustrato di seguito.  
   
-     ![Scheda pubblica in Progettazione progetti](../vsto/media/vsto-publishtab.png "scheda pubblica in Progettazione progetti")  
+     ![Scheda pubblica in Creazione progetti](../vsto/media/vsto-publishtab.png "scheda pubblica in Creazione progetti")  
   
 4.  Nel **posizione cartella di pubblicazione (server ftp o percorso file)** , immettere il percorso della cartella in cui si desidera il **progettazione** per copiare i file della soluzione.  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. Copiare i file della soluzione nel percorso di installazione specificato precedentemente in questa procedura.  
   
-##  <a name="Trust"></a>Decidere come si desidera concedere l'attendibilità alla soluzione  
+##  <a name="Trust"></a> Scegliere come si desidera concedere l'attendibilità alla soluzione  
  Prima che una soluzione possa essere eseguita nei computer degli utenti, è necessario concedere l'attendibilità oppure gli utenti devono rispondere a una richiesta di attendibilità quando installano la soluzione. Per concedere l'attendibilità alla soluzione, firmare i manifesti usando un certificato che identifichi un editore conosciuto e attendibile. Vedere [Trusting the Solution firmando the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Se si distribuisce una personalizzazione a livello di documento e si desidera inserire il documento in una cartella nel computer dell'utente o rendere disponibile il documento su un sito di SharePoint, verificare che Office attendibilità al percorso del documento. Vedere [concessione dell'attendibilità ai documenti](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="Helping"></a>Consentire agli utenti di installare la soluzione  
+##  <a name="Helping"></a> Consentire agli utenti di installare la soluzione  
  Gli utenti possono installare la soluzione eseguendo il programma di installazione, aprendo il manifesto di distribuzione oppure, nel caso di una personalizzazione a livello di documento, aprendo direttamente il documento. Come procedura consigliata, gli utenti devono installare la soluzione usando il programma di installazione. Gli altri due approcci non garantiscono che i prerequisiti software sia installato. Se gli utenti desiderano aprire il documento dal percorso di installazione, devono aggiungerlo all'elenco dei percorsi attendibili nel Centro protezione dell'applicazione di Office.  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Apertura del documento di una personalizzazione a livello di documento  
@@ -173,7 +172,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Nel server che esegue IIS 7.0, scegliere **avviare**, **tutti i programmi**, **Accessori**.  
   
-2.  Aprire il menu di scelta rapida per **prompt dei comandi**, quindi scegliere **Esegui come amministratore.**  
+2.  Aprire il menu di scelta rapida **prompt dei comandi**, quindi scegliere **Esegui come amministratore.**  
   
 3.  Nel **aprire** , immettere il percorso seguente e quindi scegliere il **OK** pulsante.  
   
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. Occorre a questo punto svuotare la cache del disco del browser e provare nuovamente ad aprire il file con estensione vsto.  
   
-##  <a name="Put"></a>Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)  
+##  <a name="Put"></a> Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)  
  È possibile copiare il documento della soluzione nel computer dell'utente finale per essi mediante la creazione di un'azione post-distribuzione. In questo modo, l'utente non dispone di copiare manualmente il documento dal percorso di installazione nel proprio computer dopo l'installazione della soluzione. È necessario creare una classe che definisca l'azione di post-distribuzione, compilare e pubblicare la soluzione, modificare il manifesto dell'applicazione e firmare il manifesto dell'applicazione e di distribuzione.  
   
  Le procedure seguenti presuppongono che il nome del progetto è **ExcelWorkbook** e che si pubblica la soluzione per il **C:\publish** directory nel computer in uso.  
@@ -250,7 +249,7 @@ ms.lasthandoff: 01/10/2018
   
      Dopo aver completato questi passaggi, il progetto sarà simile al seguente.  
   
-     ![Struttura di progetto di azione di post-distribuzione. ] (../vsto/media/vsto-postdeployment.png "Struttura di progetto di azione di post-distribuzione.")  
+     ![Struttura di progetto di azione post-distribuzione. ] (../vsto/media/vsto-postdeployment.png "Struttura di progetto di azione post-distribuzione.")  
   
 13. Pubblicare il **ExcelWorkbook** progetto.  
   
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Copiare il file ExcelWorkbook VSTO il **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ directory.  
   
-##  <a name="SharePoint"></a>Inserire il documento di una soluzione in un server che esegue SharePoint (solo personalizzazioni a livello di documento)  
+##  <a name="SharePoint"></a> Inserire il documento di una soluzione in un server che esegue SharePoint (solo personalizzazioni a livello di documento)  
  È possibile pubblicare la personalizzazione a livello di documento agli utenti finali tramite SharePoint. Quando gli utenti visitano il sito di SharePoint e aprono il documento, la soluzione viene automaticamente installata dalla cartella di rete condivisa nei computer locali degli utenti. Una volta che la soluzione è installata localmente, la personalizzazione continuerà a essere valida anche se il documento viene copiato in un'altra posizione, ad esempio sul desktop.  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Per inserire il documento in un server in cui è eseguito SharePoint  
@@ -330,7 +329,7 @@ ms.lasthandoff: 01/10/2018
   
         3.  Selezionare il **Consenti percorsi attendibili di risorse di rete (scelta non consigliata)** casella di controllo e quindi scegliere il **aggiunta nuovo percorso** pulsante.  
   
-        4.  Nel **percorso** , immettere l'URL della raccolta documenti di SharePoint che contiene il documento precedentemente caricato (ad esempio, *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
+        4.  Nel **percorso** , immettere l'URL della raccolta documenti di SharePoint che contiene il documento precedentemente caricato (ad esempio *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
              Non aggiungere il nome della pagina Web predefinita, ad esempio default.aspx o AllItems.aspx.  
   
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              Nel momento in cui gli utenti aprono il documento dal sito di SharePoint, il documento viene aperto e la personalizzazione viene installata. Gli utenti possono copiare il documento sul proprio desktop. L'esecuzione della personalizzazione continuerà perché le proprietà nel documento puntano al percorso di rete del documento.  
   
-##  <a name="Custom"></a>Creare un programma di installazione personalizzato  
+##  <a name="Custom"></a> Creare un programma di installazione personalizzato  
  È possibile creare un programma di installazione personalizzato per la soluzione Office, anziché utilizzare il programma di installazione che viene creato automaticamente quando si pubblica la soluzione. Ad esempio, è possibile usare uno script di accesso per avviare l'installazione oppure usare un file batch per installare la soluzione senza alcuna interazione da parte dell'utente. Questi scenari offrono i risultati migliori se i prerequisiti sono già installati nei computer degli utenti finali.  
   
  Come parte del processo di installazione personalizzato, chiamare lo strumento del programma di installazione delle soluzioni Office (VSTOInstaller.exe). Per impostazione predefinita, lo strumento è installato nel percorso seguente:  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|Impossibile disinstallare la soluzione.|  
 |-500|L'operazione è stata annullata perché non è stato possibile installare o disinstallare la soluzione o scaricare il manifesto di distribuzione.|  
   
-##  <a name="Update"></a>Pubblicare un aggiornamento  
+##  <a name="Update"></a> Pubblicare un aggiornamento  
  Per aggiornare una soluzione, occorre pubblicarla nuovamente usando il **progettazione** o **pubblicazione guidata**, e quindi si copia la soluzione aggiornata nel percorso di installazione. Quando si copiano i file nel percorso di installazione, assicurarsi di sovrascrivere i file precedenti.  
   
  La volta successiva che controlla la soluzione per un aggiornamento, sarà individuare e caricare la nuova versione automaticamente.  
   
-##  <a name="Location"></a>Modificare il percorso di installazione di una soluzione  
+##  <a name="Location"></a> Modificare il percorso di installazione di una soluzione  
  È possibile aggiungere o modificare il percorso di installazione dopo la pubblicazione di una soluzione. È possibile che si desideri modificare il percorso di installazione per uno o più dei seguenti motivi:  
   
 -   Il percorso di installazione non era noto quando il programma di installazione è stato compilato.  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Eseguire il programma di installazione senza il parametro /url per installare la soluzione nel percorso specificato.  
   
-##  <a name="Roll"></a>Eseguire il rollback di una soluzione a una versione precedente  
+##  <a name="Roll"></a> Eseguire il rollback di una soluzione a una versione precedente  
  Eseguire il rollback di una soluzione significa riportare gli utenti a una versione precedente di tale soluzione.  
   
 #### <a name="to-roll-back-a-solution"></a>Per eseguire il rollback di una soluzione  

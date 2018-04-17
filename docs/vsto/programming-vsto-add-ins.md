@@ -1,13 +1,10 @@
 ---
 title: Programmazione di componenti aggiuntivi VSTO | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -35,14 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>Programmazione di componenti aggiuntivi VSTO
   Quando si estende un'applicazione di Microsoft Office creando un componente aggiuntivo VSTO, si scrive il codice direttamente per la classe `ThisAddIn` nel progetto. È possibile usare questa classe per eseguire attività quali l'accesso al modello a oggetti dell'applicazione host di Microsoft Office, la personalizzazione dell'interfaccia utente dell'applicazione e l'esposizione di oggetti nel componente aggiuntivo VSTO ad altre soluzioni Office.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Alcuni aspetti della scrittura del codice nei progetti di componente aggiuntivo VSTO presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze sono causate dalla modalità di esposizione dei modelli a oggetti di Office al codice gestito. Per altre informazioni, vedere [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
- Per informazioni generali sui componenti aggiuntivi VSTO e altri tipi di soluzioni è possibile creare tramite gli strumenti di sviluppo per Office in Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Per informazioni generali sui componenti aggiuntivi VSTO e altri tipi di soluzioni è possibile creare tramite gli strumenti di sviluppo per Office in Visual Studio, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-thisaddin-class"></a>Uso della classe ThisAddIn  
  È possibile iniziare a scrivere il codice del componente aggiuntivo VSTO nella classe `ThisAddIn` . Visual Studio genera automaticamente questa classe nel file di codice ThisAddIn.vb (in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) o ThisAddIn.cs (in C#) nel progetto di componente aggiuntivo VSTO. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea automaticamente l'istanza di questa classe quando l'applicazione di Microsoft Office carica il componente aggiuntivo VSTO.  
@@ -127,7 +124,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Eseguire il codice per pulire le risorse usate dal componente aggiuntivo VSTO prima che venga scaricato.|Aggiungere il codice al metodo `ThisAddIn_Shutdown` . Questo metodo è il gestore eventi predefinito per l'evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Per altre informazioni, vedere [Events in Office Projects](../vsto/events-in-office-projects.md). **Nota:** In Outlook, per impostazione predefinita il `ThisAddIn_Startup` gestore dell'evento non viene chiamato sempre quando il componente aggiuntivo VSTO viene scaricato. Per altre informazioni, vedere [Events in Office Projects](../vsto/events-in-office-projects.md).|  
 |Visualizzare un riquadro attività personalizzato.|Usare il campo `CustomTaskPanes` . Per ulteriori informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).|  
 |Esporre gli oggetti nel componente aggiuntivo VSTO ad altre soluzioni Microsoft Office.|Eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Per altre informazioni, vedere [Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
-|Personalizzare una funzionalità nel sistema Microsoft Office implementando un'interfaccia di estensibilità.|Eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> in modo da ottenere un'istanza della classe che implementi l'interfaccia. Per altre informazioni, vedere [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:** per personalizzare l'interfaccia utente della barra multifunzione, è inoltre possibile sostituire il <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> metodo.|  
+|Personalizzare una funzionalità nel sistema Microsoft Office implementando un'interfaccia di estensibilità.|Eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> in modo da ottenere un'istanza della classe che implementi l'interfaccia. Per altre informazioni, vedere [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:** per personalizzare la barra multifunzione dell'interfaccia utente, è inoltre possibile sostituire il <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> metodo.|  
   
 ### <a name="understanding-the-design-of-the-thisaddin-class"></a>Informazioni sulla progettazione della classe ThisAddIn  
  Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], <xref:Microsoft.Office.Tools.AddIn> è un'interfaccia. La classe `ThisAddIn` deriva dalla classe <xref:Microsoft.Office.Tools.AddInBase> . Questa classe di base reindirizza tutte le chiamate ai relativi membri a un'implementazione interna dell'interfaccia <xref:Microsoft.Office.Tools.AddIn> nel [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
