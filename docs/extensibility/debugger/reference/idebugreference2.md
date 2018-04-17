@@ -1,35 +1,31 @@
 ---
 title: IDebugReference2 | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugReference2
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30f3b8351789adbb52651909cf9ff3b669934d66
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb5d5d8b3ab6e608a2454847fc9ec27e384777bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Questa interfaccia rappresenta un riferimento a una proprietà di frame dello stack o un'altra proprietà.  
   
 > [!NOTE]
->  `IDebugReference2`è riservato per utilizzi futuri e tutti i relativi metodi devono restituire `E_NOTIMPL`.  
+>  `IDebugReference2` è riservato per utilizzi futuri e tutti i relativi metodi devono restituire `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -65,7 +61,7 @@ IDebugReference2 : IUnknown
 > [!NOTE]
 >  Questo utilizzo di "proprietà" non deve essere confuso con una variabile membro di una classe, che pertanto anche se un `IDebugReference2` può rappresentare tale entità.  
   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) rappresenta una proprietà, mentre `IDebugReference2` rappresenta un riferimento a una proprietà, in genere un riferimento a un oggetto nel programma sottoposto a debug.  
+ [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) rappresenta una proprietà, mentre `IDebugReference2` rappresenta un riferimento a una proprietà, in genere un riferimento a un oggetto del programma sottoposto a debug.  
   
  La differenza principale tra una proprietà e un riferimento è che una proprietà fa riferimento a un'istanza denominata di un oggetto, mentre un riferimento si riferisce a un'istanza senza nome. Ad esempio, una proprietà può fare riferimento a un oggetto nell'heap del programma da `"a.b"`. Un'altra proprietà può fare riferimento allo stesso oggetto come `"c.d"`. Il modo di fare riferimento a questa proprietà è necessario che `"a.b"` o `"c.d"` nell'ambito. Un riferimento all'oggetto stesso è senza nome; l'oggetto può essere indicato per fino a quando la memoria per l'oggetto è valida.  
   
@@ -82,4 +78,4 @@ IDebugReference2 : IUnknown
  [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
+ [getReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

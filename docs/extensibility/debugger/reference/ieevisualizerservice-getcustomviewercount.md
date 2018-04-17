@@ -1,29 +1,25 @@
 ---
 title: IEEVisualizerService::GetCustomViewerCount | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerService::GetCustomViewerCount
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerCount method
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1f9cf725336436e52402907fd07db094e3434db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b2c2b116a27ced7caf41b264017f5ce7766d827d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 Questo metodo ottiene il numero di visualizzatori di tipo disponibili da questo servizio.  
@@ -50,7 +46,7 @@ int GetCustomViewerCount(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) passa la richiesta a questo metodo nel supporto per i visualizzatori di tipo.  
+ [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) passa la richiesta a questo metodo nel proprio supporto per i visualizzatori di tipo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
