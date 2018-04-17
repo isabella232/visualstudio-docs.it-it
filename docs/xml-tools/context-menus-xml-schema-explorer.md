@@ -1,23 +1,21 @@
 ---
 title: Menu di scelta rapida (XML Schema Explorer) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 739dff217b59bd9424594c4049c765ad5145d634
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 07ce9b5cc1c390d9bad108df417855a733d5dcef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu di scelta rapida (XML Schema Explorer)
 Le seguenti voci di menu di scelta rapida sono usate per eseguire ricerche specifiche dello schema nonché altre operazioni.  
@@ -93,7 +91,7 @@ Le seguenti voci di menu di scelta rapida sono usate per eseguire ricerche speci
 |Opzione|Descrizione|  
 |------------|-----------------|  
 |**Vai a definizione di tipo**|Se per l'attributo è usato un tipo globale, consente di passare alla definizione di tipo dell'attributo selezionato.|  
-|**Passare all'attributo originale**|Per i riferimenti agli attributi consente di passare alla definizione effettiva dell'attributo.|  
+|**Vai all'attributo originale**|Per i riferimenti agli attributi consente di passare alla definizione effettiva dell'attributo.|  
 |**Mostra tutti i riferimenti**|Per gli attributi globali, consente di individuare ed evidenziare tutti i riferimenti (altri attributi con `ref="selectedAttribute"`) all'attributo selezionato.|  
   
 ## <a name="node-type-attribute-group"></a>Tipo di nodo: gruppo di attributi  

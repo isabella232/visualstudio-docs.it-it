@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: configurare la protezione di elenco di inclusione | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b95b85f028ac003cedb05248b6884c24ca32008
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f8995e95ed1a35841aab945daa1ea35854946b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: configurare la sicurezza dell'elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali è data la possibilità di installare le soluzioni Office salvando una decisione di attendibilità per l'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [Trusting soluzioni di Office per gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
@@ -211,7 +210,7 @@ ms.lasthandoff: 01/10/2018
 3.  Compilare ed eseguire l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Concessione dell'attendibilità soluzioni Office mediante gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Concessione dell'attendibilità alle soluzioni Office mediante gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [Sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md)  
   
   

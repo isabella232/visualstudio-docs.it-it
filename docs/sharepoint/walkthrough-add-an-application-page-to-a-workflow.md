@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Aggiungere una pagina dell''applicazione a un flusso di lavoro | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 86b402e1f8b8be3adf477d67eb11387fa3091afd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 97c720ded65e46e85f8d9f20f9f509b31f2cebbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro
   Questa procedura dettagliata viene illustrato come aggiungere una pagina di applicazione che visualizza dati derivati da un flusso di lavoro a un progetto flusso di lavoro. Compila il progetto descritto nell'argomento [procedura dettagliata: creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
@@ -351,8 +350,8 @@ ms.lasthandoff: 01/10/2018
 -   [Creazione di controlli utente riutilizzabili per Web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
- [Procedura: creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)   
+ [Procedura dettagliata: Creazione di un flusso di lavoro con form di avvio e associazione](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [Procedura: creare una pagina dell'applicazione](../sharepoint/how-to-create-an-application-page.md)   
  [Creazione di pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

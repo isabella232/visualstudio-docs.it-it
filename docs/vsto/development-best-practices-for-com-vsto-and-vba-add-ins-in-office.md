@@ -1,23 +1,24 @@
 ---
 title: Sviluppo di procedura consigliate per COM, VSTO e VBA componenti aggiuntivi di Office | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Procedure consigliate di sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sta sviluppando COM, componenti aggiuntivi VSTO o VBA per Office, seguire le procedure consigliate di sviluppo descritte in questo articolo.   In modo da garantire:
@@ -62,7 +63,7 @@ I clienti richiedono ISV di fornire istruzioni di supporto per i loro COM, VSTO 
 
 Per fornire istruzioni di supporto per le applicazioni client di Office (ad esempio, Word o Excel), verificare innanzitutto che i componenti aggiuntivi eseguiti nella versione corrente di Office e quindi eseguire il commit per gli aggiornamenti, se il componente aggiuntivo si interrompe in una versione futura. Non è necessario testare i componenti aggiuntivi quando Microsoft rilascia una nuova compilazione o un aggiornamento a Office. Microsoft cambia raramente la piattaforma di estendibilità COM, VSTO e VBA in Office e queste modifiche verranno documentate.
 
->Importante: Microsoft gestisce un elenco di componenti aggiuntivi supportati per i report di conformità, le informazioni di contatto ISV. Per ottenere il componente aggiuntivo elencato, vedere [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Importante: Microsoft gestisce un elenco di componenti aggiuntivi supportati per i report di conformità, le informazioni di contatto ISV. Per ottenere il componente aggiuntivo elencato, vedere [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utilizzare Monitor di processo per eseguire il debug di installazione o il caricamento di problemi
 Se il componente aggiuntivo presenta problemi di compatibilità durante l'installazione o di carico, potrebbe essere correlati per i problemi di accesso ai file o del Registro di sistema. Utilizzare [Process Monitor](/sysinternals/downloads/procmon) o uno strumento di debug simile per accedere e confrontare il comportamento in un ambiente di lavoro per identificare il problema.

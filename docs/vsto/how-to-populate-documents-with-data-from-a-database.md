@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: popolare documenti con dati da un Database | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - data, adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0a5a88cf34e0710869aaf4ac82d78cb79b37ffde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bfbdb5b71a84ea2f3ab9a86cc2d2df33213e5a98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Procedura: popolare documenti con dati da un database
   È possibile accedere ai dati dei progetti a livello di documento per Microsoft Office con la stessa procedura usata per accedere ai dati dei progetti Windows Form. Per inserire dati da un database nella soluzione si usano infatti gli stessi strumenti e lo stesso codice e per visualizzare i dati è possibile usare i controlli Windows Form.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
  Nell'esempio seguente viene mostrato come aggiungere controlli con associazione a dati in progetti a livello di documento mediante una finestra di progettazione. Per un esempio di come aggiungere controlli associati a dati nei progetti di componente aggiuntivo VSTO in fase di esecuzione, vedere [procedura dettagliata: Data Binding semplice in VSTO aggiuntivo progetto](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [Binding di dati a contenuto di Word 2007 controlli tramite Visual Studio Tools per Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [Binding di dati a Word 2007 contenuto controlli con Visual Studio Tools per Office System (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="adding-a-control-to-a-document-at-design-time"></a>Aggiunta di un controllo a un documento in fase di progettazione  
   
@@ -73,8 +72,8 @@ ms.lasthandoff: 01/10/2018
  [Associazione di controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)   
  [Procedura: aggiornare un'origine dati con i dati da un controllo Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Utilizzo di file di Database locale in soluzioni di Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Connessione ai dati nelle applicazioni Windows Form](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
+ [Utilizzo dei file di Database locale nella panoramica di soluzioni Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [Connessione ai dati nelle applicazioni Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
  [Cenni preliminari sul componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

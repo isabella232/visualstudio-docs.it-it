@@ -1,13 +1,10 @@
 ---
-title: 'Procedura dettagliata: Debug di un''applicazione di SharePoint tramite IntelliTrace | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Debug di un'applicazione di SharePoint tramite IntelliTrace | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace
 
@@ -58,7 +55,7 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Creare un ricevitore di funzionalità</a>
+## <a name="BKMK_CreateReceiver"></a> Creare un ricevitore di funzionalità
 
 Creare un progetto SharePoint vuoto che presenta un ricevitore di funzionalità.
 
@@ -76,7 +73,7 @@ Creare un progetto SharePoint vuoto che presenta un ricevitore di funzionalità.
 
 4. Aprire il menu di scelta rapida per Feature1. feature e quindi scegliere **Aggiungi ricevitore di eventi** per aggiungere un modulo di codice alla funzionalità.
 
-## <a name="BKMK_AddCode">Aggiungere codice al ricevitore di funzionalità</a>
+## <a name="BKMK_AddCode"></a> Aggiungere codice al ricevitore di funzionalità
 
 Aggiungere quindi codice a due metodi di ricevitore di funzionalità: `FeatureActivated` e `FeatureDeactivating`. Questi metodi attivano ogni volta che una funzionalità viene attivata o disattivata in SharePoint, rispettivamente.
 
@@ -250,7 +247,7 @@ Aggiungere quindi codice a due metodi di ricevitore di funzionalità: `FeatureAc
     }
     ```
 
-## <a name="BKMK_Test1">Il progetto di test</a>
+## <a name="BKMK_Test1"></a> Il progetto di test
 
 Ora che viene aggiunto il codice al ricevitore di funzionalità e l'agente di raccolta dati è in esecuzione, distribuire ed eseguire la soluzione di SharePoint per verificare se funziona correttamente.
 
@@ -277,7 +274,7 @@ Ora che viene aggiunto il codice al ricevitore di funzionalità e l'agente di ra
 
      Il gestore dell'evento FeatureDeactivating() genera un errore.
 
-## <a name="BKMK_CollectDiagnosticData">Raccogliere dati IntelliTrace tramite Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Raccogliere dati IntelliTrace tramite Microsoft Monitoring Agent
 
 Se si installa Microsoft Monitoring Agent nel sistema in cui è in esecuzione SharePoint, è possibile eseguire il debug delle soluzioni SharePoint utilizzando i dati che sono più specifici informazioni generiche restituite IntelliTrace. L'agente funziona all'esterno di Visual Studio utilizzando i cmdlet di PowerShell per acquisire le informazioni di debug durante l'esecuzione di soluzioni SharePoint.
 
@@ -300,9 +297,9 @@ Se si installa Microsoft Monitoring Agent nel sistema in cui è in esecuzione Sh
 
 3. Nella finestra di PowerShell, eseguire il [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando per creare il file. iTrace, arrestare il monitoraggio e riavviare la soluzione di SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***"\<SitoSharePoint >\\< SharePointAppName\>"* 
 
-## <a name="BKMK_DebugSolution">Eseguire il debug e correggere la soluzione di SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Eseguire il debug e correggere la soluzione di SharePoint
 
 È ora possibile visualizzare il file di log di IntelliTrace in Visual Studio per individuare e correggere l'errore della soluzione di SharePoint.
 

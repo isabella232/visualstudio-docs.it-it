@@ -1,12 +1,10 @@
 ---
 title: Sviluppo di Office e SharePoint in Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0692b0320a8741351391f82b694089910bae4f8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Sviluppo di Office e SharePoint in Visual Studio
   È possibile estendere Microsoft Office e SharePoint creando un'app leggera o un componente aggiuntivo che gli utenti scaricano da [Office Store](https://store.office.com/) o da un catalogo dell'organizzazione oppure creando una soluzione basata su.NET Framework che gli utenti installano in un computer.  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Questi componenti aggiuntivi hanno footprint di dimensioni molto ridotte rispetto alle soluzioni e ai componenti aggiuntivi VSTO e possono essere creati con quasi tutte le tecnologie di programmazione Web come ad esempio HTML5, JavaScript, CSS3 e XML.  Per iniziare, usare Office Developer Tools in Visual Studio o lo strumento leggero basato su Web, nome in codice Napa Office 365 Development Tools, che consente di creare progetti, scrivere codice ed eseguire i componenti aggiuntivi in un browser.  
   
- ![Applicazioni per un modello concettuale di Office e SharePoint](../vsto/media/officeandsharepointapps2015.png "applicazioni per un modello concettuale di Office e SharePoint")  
+ ![Le App per Office e SharePoint modello concettuale](../vsto/media/officeandsharepointapps2015.png "applicazioni per un modello concettuale di Office e SharePoint")  
   
  **Altre informazioni**  
   
@@ -81,7 +80,7 @@ ms.lasthandoff: 01/10/2018
   
  Di seguito è riportato un esempio di un'app per SharePoint che consente agli utenti di gestire i contatti aziendali.  
   
- ![Applicazione di gestione contatti business per SharePoint](../vsto/media/appforsharepoint.png "app gestione contatti Business per SharePoint")  
+ ![App di gestione contatti business per SharePoint](../vsto/media/appforsharepoint.png "app gestione contatti Business per SharePoint")  
   
  **Altre informazioni**  
   
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
  Di seguito è riportato un esempio, quale un componente aggiuntivo VSTO è possibile eseguire. Questo componente aggiuntivo VSTO aggiunge alcuni controlli della barra multifunzione, un riquadro attività personalizzato e una finestra di dialogo a PowerPoint.  
   
- ![Soluzione di componente aggiuntivo PowerPoint](../vsto/media/powerpointaddin.png "soluzione di componente aggiuntivo per PowerPoint")  
+ ![Soluzione di componente aggiuntivo PowerPoint](../vsto/media/powerpointaddin.png "soluzione di componente aggiuntivo PowerPoint")  
   
  **Altre informazioni**  
   

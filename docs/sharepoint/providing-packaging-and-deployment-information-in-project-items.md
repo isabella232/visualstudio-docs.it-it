@@ -1,12 +1,10 @@
 ---
 title: Fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SafeControlEntries
 - VS.SharePointTools.Project.ProjectOutputReference
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: adc98932391e726e1704ebe88ec0a9120f7bb678
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 078715380bb5ddc570d745d76fabe4d8a264eef0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Specifica delle informazioni sui pacchetti e sulla distribuzione negli elementi di progetto
   Tutti gli elementi di progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile utilizzare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Assemblaggio e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
+ [Creazione del package e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Utilizzo di moduli per includere i file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)   
  [Estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   

@@ -1,12 +1,10 @@
 ---
 title: Panoramica del modello di programmazione di SharePoint di estensioni degli strumenti | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Cenni preliminari sul modello di programmazione delle estensioni degli strumenti di SharePoint
   Quando si crea un'estensione per gli strumenti di SharePoint in Visual Studio, si inizia implementando una o più interfacce di estendibilità che vengono esposte dagli strumenti di SharePoint. Nella maggior parte dei casi, si useranno anche altri tipi forniti dagli strumenti di SharePoint per implementare le funzionalità nell'estensione. In alcuni scenari è possibile usare anche tipi in altri modelli a oggetti forniti da Visual Studio e SharePoint. È necessario comprendere lo scopo di ciascuno di questi modelli a oggetti e sapere come usarli con l'altro per creare estensioni per gli strumenti di SharePoint.  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Estensione degli strumenti di SharePoint mediante l'implementazione di interfacce di estendibilità  
- Visual Studio usa Managed Extensibility Framework (MEF) in .NET Framework 4 per fornire il modello di estendibilità per gli strumenti di SharePoint. MEF è un'API (implementata nell'assembly System.ComponentModel.Composition) che consente alle applicazioni di esporre i punti di estendibilità e individuare e caricare le estensioni in fase di esecuzione. Per ulteriori informazioni su MEF, vedere [Managed Extensibility Framework &#40; MEF &#41; ](/dotnet/framework/mef/index).  
+ Visual Studio usa Managed Extensibility Framework (MEF) in .NET Framework 4 per fornire il modello di estendibilità per gli strumenti di SharePoint. MEF è un'API (implementata nell'assembly System.ComponentModel.Composition) che consente alle applicazioni di esporre i punti di estendibilità e individuare e caricare le estensioni in fase di esecuzione. Per altre informazioni su MEF, vedere [Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index).  
   
  Per estendere gli strumenti di SharePoint, è necessario implementare una o più interfacce di estendibilità che vengono esposte da Visual Studio. È inoltre necessario applicare l'attributo <xref:System.ComponentModel.Composition.ExportAttribute> e, se necessario, gli altri attributi specifici degli strumenti di SharePoint all'implementazione dell'interfaccia. Nella tabella seguente vengono elencate le interfacce che è possibile implementare per estendere gli strumenti di SharePoint.  
   

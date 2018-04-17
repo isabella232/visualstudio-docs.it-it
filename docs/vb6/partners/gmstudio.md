@@ -4,8 +4,7 @@ description: Ottimo strumento di migrazione per scalabile, personalizzata VB6/AS
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8e44bf6d4287ff1a82aec3342f089e44e776da6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="great-migrations-studio-gmstudio"></a>Studio migrazioni grande (gmStudio)
 
@@ -35,61 +34,61 @@ Microsoft e migrazioni grande hanno collaborato per offrire una licenza gratuita
 
 [**Altre informazioni e per scaricare una versione gratuita di gmStudio**](http://www.greatmigrations.com/resources/gmstudio-promotion.aspx)
 
-[**Fare clic su per richiedere gmStudio promozionale Edition per sistemi con un massimo di 10.000 righe di codice VB6!**](http://www.greatmigrations.com/resources/gmstudio-promotion.aspx)
+[**Fare clic su per richiedere gmStudio promozionale Edition per sistemi con fino a 10.000 righe di codice VB6!**](http://www.greatmigrations.com/resources/gmstudio-promotion.aspx)
 
 ![L'interfaccia utente gmStudio](./media/gmstudio-ui.png) 
 
 ## <a name="benefits"></a>Vantaggi
 
-- **Gli asset software legacy in contanti**: utilizzare gmStudio consentono di "incassi" asset legacy per eseguirne l'aggiornamento per .NET.
+- **Cassa aggiuntivo degli asset software legacy**: utilizzare gmStudio che consentono di "incassi" gli asset legacy per eseguirne l'aggiornamento per .NET.
 
 - **Ottenere più aggiornamento per il denaro**: generare il codice che sfrutta .NET.
 
-- **Riscrittura agli standard**: usare i modelli di progettazione e le API di .NET per ridurre il costo totale di proprietà e sull'agilità dopo l'aggiornamento.  
+- **Riscrittura propri standard**: usi i modelli di progettazione e le API .NET per ridurre il costo totale di proprietà e una maggiore flessibilità per dopo l'aggiornamento.  
 
 - **Integrare sviluppo manuale**: integrazione automaticamente di frammenti di codice scritta manualmente, metodi o interi file. 
 
-- **L'aggiornamento di applicazioni aziendali**: l'aggiornamento a sistemi complessi costituiti da molti componenti ASP/VB6/COM collegati tra loro.
+- **Aggiornare le applicazioni aziendali**: aggiornare i sistemi di grandi dimensioni, complessi costituiti da molti componenti VB6/ASP/COM collegati tra loro.
 
 - **Continuare la manutenzione in parallelo con l'aggiornamento**: la metodologia non richiede un blocco di codice.  
 
 - **Ottenere risultati utili rapidamente**: gmStudio facilita un approccio agile alla migrazione che fornisce il codice .NET in modo iterativo.
  
-- **Qualità di compilazione in e backup**: l'approccio gmStudio è basato su test e consente di migliorare la qualità del codice in modo incrementale e in modo sistematico.
+- **Qualità di compilazione in e versioni successive**: l'approccio gmStudio è basato su test e consente di migliorare la qualità del codice in modo incrementale e in modo sistematico.
 
 - **Documentare e riutilizzare le soluzioni**: ogni soluzione gmStudio è documentato e riutilizzabile.
 
 - **Pianificare e stimare in modo più efficace**: analisi del codice personalizzabile del gmStudio report consentono di pianificare le strategie di aggiornamento.
 
-- **Misure e l'avanzamento**: conversione del gmStudio, la compilazione e i report di revisione del codice consentono di misurare la qualità e l'avanzamento.
+- **Misurare e tenere traccia dell'avanzamento**: conversione del gmStudio, la compilazione e i report di revisione del codice consentono di misurare la qualità e tenere traccia dell'avanzamento.
 
 ## <a name="features"></a>Funzionalità
 
-- **Il compilatore VB6/COM-come-un-servizio**: configurare gmStudio utilizzando il linguaggio di scripting regole extensible.
+- **Compilatore VB6/COM-come-un-servizio**: configurare gmStudio usando il linguaggio di scripting regole estendibile.
 
-- **Scelta della lingua di destinazione**: automaticamente riscrivere VB6/COM in c# o Visual Basic.NET.
+- **Scelta del linguaggio di destinazione**: automaticamente riscrivere VB6/COM in c# o VB.NET.
 
-- **Scelta dell'IDE di destinazione**: scegliere VS2010 o Visual Studio 2012 come l'IDE di Visual Studio.
+- **Scelta della destinazione IDE**: scegliere VS2010 o VS2012 come l'IDE di Visual Studio.
 
-- **Scelta della sostituzione form**: WinForms o WPF (beta) di destinazione.
+- **Scelta della sostituzione form**: Windows Form o WPF (beta) di destinazione.
 
-- **Sostituzione personalizzata di COM/ActiveX**: sostituire APIs COM e i controlli con le classi di .NET che soddisfano gli standard.
+- **Sostituzione di ActiveX/COM personalizzati**: sostituire APIs COM e i controlli con le classi .NET che soddisfano gli standard.
 
 - **Sostituzione di API personalizzata**: sostituire le chiamate API Win32 con il codice .NET che soddisfa i requisiti.
 
-- **Linguaggio di sostituzione personalizzato**: sostituire funzioni intrinseche VB6 con il codice .NET che soddisfa i requisiti.
+- **Sostituzione di lingua personalizzato**: sostituire le funzioni intrinseche VB6 con il codice .NET che soddisfa i requisiti.
 
-- **Generazione di stub**: genera classi .NET generate automaticamente per le dipendenze di COM e il codice dell'applicazione.
+- **Generazione di stub**: generare classi .NET generate automaticamente per le dipendenze di COM e il codice dell'applicazione.
 
-- **Modelli di contenuto**: utilizzare i modelli personalizzati, dinamici per i file di progetto, il file AssemblyInfo e molte altre strutture di codice.
+- **Modelli di contenuto**: utilizzare i modelli personalizzati, dinamici per i file di progetto, i file AssemblyInfo e molte altre strutture di codice.
 
-- **I processi di distribuzione/compilazione personalizzati**: aggiungere le attività per i processi di distribuzione/compilazione per il codice tradotto.
+- **I processi di distribuzione/compilazione personalizzati**: aggiungere le attività per i processi di compilazione/distribuzione per il codice tradotto.
 
 - **Prestazioni elevate**: sperimentare molte varianti delle regole di aggiornamento, anche se il sistema è molto grande.
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-- **Altre informazioni**: visitare [eccellente migrazioni documentazione Home](https://www.greatmigrations.com/resources/documentation.aspx) per white paper, case study, video e webcast.
+- **Altre informazioni**: visitare [Great migrazioni documentazione Home](https://www.greatmigrations.com/resources/documentation.aspx) per white paper, case study, video e webcast.
 
 - **Prova in prima persona**: inviare il [gmStudio modulo di richiesta Demo](http://www.greatmigrations.com/resources/gmstudio-promotion.aspx) per ottenere una versione di valutazione gratuita di gmStudio.
   

@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dc20be3f2d8b2e6281d44139bbd97d9dd67593d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 9ae4cd4340bc30249ea649a2806afe3e027fc439
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="trycatch-activity-designer"></a>ActivityDesigner TryCatch
 Il **TryCatch** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.TryCatch> attività.

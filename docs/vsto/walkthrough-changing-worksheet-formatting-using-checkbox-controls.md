@@ -1,12 +1,10 @@
 ---
 title: 'Procedura dettagliata: Modifica del foglio di lavoro formattazione mediante controlli CheckBox | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 196fb88af44d12338416bc2f00f5dc955d5046e8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 35394b5f45e3c1e456dfcfae8f4b6db50af12147
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: modifica della formattazione dei fogli di lavoro mediante i controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base dell'uso di caselle di controllo in un foglio di lavoro di Microsoft Office Excel per modificare la formattazione. Utilizzare gli strumenti di sviluppo per Office in Visual Studio per creare e aggiungere codice al progetto. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli di Excel in [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
     |Proprietà|Valore|  
     |--------------|-----------|  
     |**Name**|**applyUnderlineFont**|  
-    |**per**|**Carattere di sottolineatura**|  
+    |**per**|**carattere di sottolineatura**|  
   
 7.  Selezionare tutti i controlli casella di controllo tre tenendo premuto il tasto CTRL.  
   

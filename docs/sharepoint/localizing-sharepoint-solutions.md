@@ -1,12 +1,10 @@
 ---
 title: Localizzazione di soluzioni SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localizzazione di soluzioni SharePoint
   Il processo di preparazione delle applicazioni in modo che possono essere utilizzati in tutto il mondo è noto come localizzazione. Localizzazione è conversione di risorse a una lingua specifica. Per ulteriori informazioni, vedere [globalizzazione e localizzazione di applicazioni](/visualstudio/ide/globalizing-and-localizing-applications). In questo argomento viene fornita una panoramica su come localizzare una soluzione di SharePoint.  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>Localizzazione di codice  
  Oltre alle stringhe di funzionalità di localizzazione e [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] markup, è anche necessario localizzare le stringhe di messaggio ed errore che vengono visualizzati nel codice della soluzione. Localizzati informativi e i messaggi di errore sono contenuti negli assembly satellite. Gli assembly satellite contengono le stringhe che sono visibili agli utenti, ad esempio [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] messaggi di testo e di output come eccezioni.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Usa il modello hub e spoke di .NET Framework standard. L'hub o un assembly di programma principale, contiene le risorse di lingua predefinita. Spoke, o gli assembly satellite, contengono le risorse specifiche della lingua. Per altre informazioni, vedere [Creazione del pacchetto e distribuzione delle risorse](http://go.microsoft.com/fwlink/?LinkId=179280). Gli assembly satellite vengono compilati i file di risorse (resx). Quando si aggiungono file di risorse specifiche della lingua per il progetto e il pacchetto della soluzione, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compila i file di risorse in assembly satellite denominato *nome progetto*. Resources.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Usa il modello hub e spoke di .NET Framework standard. L'hub o un assembly di programma principale, contiene le risorse di lingua predefinita. Spoke, o gli assembly satellite, contengono le risorse specifiche della lingua. Per altre informazioni, vedere [Creazione del pacchetto e distribuzione delle risorse](http://go.microsoft.com/fwlink/?LinkId=179280). Gli assembly satellite vengono compilati i file di risorse (resx). Quando si aggiungono file di risorse specifiche della lingua per il progetto e il pacchetto della soluzione, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compila i file di risorse in assembly satellite denominato *nome progetto*. Resources.  
   
  Come con markup ASPX, localizzare il codice dell'applicazione SharePoint tramite l'aggiunta di elementi di progetto di File di risorse separati al progetto. uno per la lingua predefinita e uno per ogni lingua localizzata. Tuttavia, come indicato in precedenza, se si dispone già di file di risorse per localizzare il markup ASPX, è possibile riutilizzarli per localizzare il codice. Se si desidera creare file di risorse, assegnare un nome di propria scelta con estensione resx il file di risorse di lingua predefinita. Nome file di risorse localizzati lo stesso nome aggiunto con le impostazioni cultura specifiche della lingua [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Impostare la proprietà azione di compilazione di ogni file di risorse per la risorsa incorporata per consentire la creazione di assembly di risorse satellite.  
   

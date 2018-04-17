@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: popolare fogli di lavoro con dati da un Database | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5a5cfe5d15e1b883de46809523f1d1acaecddc91
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 31f0bd40b38ed85631874556908a41e21b860ecd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedura: popolare fogli di lavoro con dati da un database
   È possibile accedere a dati nei progetti di Office a livello di documento nello stesso modo di accedere ai dati nei progetti Windows Form. Per inserire i dati nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile persino usare i controlli Windows Form. Inoltre, possono sfruttare i controlli chiamati controlli host, ossia oggetti nativi di Microsoft Office Excel che sono stati migliorati con eventi e funzionalità di associazione dati. Per altre informazioni, vedere [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
@@ -31,7 +30,7 @@ ms.lasthandoff: 01/10/2018
   
  Nell'esempio seguente viene mostrato come aggiungere controlli con associazione a dati in progetti a livello di documento mediante una finestra di progettazione. Per un esempio di come aggiungere controlli associati a dati nei progetti a livello di applicazione in fase di esecuzione, vedere [procedura dettagliata: Data Binding complesso in VSTO aggiuntivo progetto](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [come si ricerca per categorie: trasferimento dati in un foglio di lavoro Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), e [come ricerca per categorie: utilizzare Database dei dati in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [modo in cui si ricerca per categorie: trasferimento dati in un foglio di lavoro Excel?](http://go.microsoft.com/fwlink/?LinkID=130277), e [How Do ricerca per categorie: utilizzare Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## <a name="adding-a-data-bound-control-to-a-worksheet-at-design-time"></a>Aggiunta di un controllo con associazione a dati a un foglio di lavoro in fase di progettazione  
   
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
  [Procedura: popolare documenti con dati da un Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Procedura: popolare documenti con dati da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)   
  [Procedura: aggiornare un'origine dati con i dati da un controllo Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Procedura relativa al trasferimento dati in un foglio di lavoro di Excel](http://go.microsoft.com/fwlink/?LinkID=130277)   
- [Procedura per usare i dati del Database in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)  
+ [Procedura relativa al trasferimento dei dati in un foglio di lavoro di Excel](http://go.microsoft.com/fwlink/?LinkID=130277)   
+ [Procedura per usare i dati di Database in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)  
   
   

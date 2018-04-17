@@ -1,24 +1,23 @@
 ---
 title: Creare componenti aggiuntivi VSTO per Office con Visual Studio | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Creare componenti aggiuntivi VSTO per Office con Visual Studio
   È possibile usare Microsoft Office Developer Tools in Visual Studio per creare applicazioni .NET Framework che estendono Office. Queste applicazioni sono denominate anche *soluzioni Office*.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   Il [Centro per sviluppatori di Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contiene collegamenti ad articoli tecnici, esempi di codice, download, informazioni sulle community, supporto e altra documentazione sulle personalizzazioni di Office Business Application (OBA).  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Guida introduttiva &#40; sviluppo per Office in Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Introduzione al &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Fornisce collegamenti alle informazioni su come configurare un computer di sviluppo per creare soluzioni Office, su come iniziare a creare soluzioni Office e sulle novità relative allo sviluppo di Office in Visual Studio.  
   
  [Aggiornamento e migrazione delle soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -83,16 +82,16 @@ ms.lasthandoff: 01/10/2018
  [Distribuzione di una soluzione Office](../vsto/deploying-an-office-solution.md)  
  Fornisce informazioni su come rendere disponibili agli utenti le soluzioni Office, nonché sui principali aspetti da considerare quando si sceglie un metodo di distribuzione.  
   
- [Procedure dettagliate ed esempi di sviluppo di office](../vsto/office-development-samples-and-walkthroughs.md)  
+ [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)  
  Fornisce collegamenti ad applicazioni di esempio e ad argomenti che illustrano le procedure dettagliate per l'esecuzione di attività comuni.  
   
- [Riferimenti generali &#40; sviluppo per Office in Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Riferimenti generali &#40;sviluppo per Office in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Fornisce collegamenti a informazioni dettagliate sugli assembly di interoperabilità primari, i manifesti, gli elementi dell'interfaccia utente e i messaggi di errore di Office.  
   
- [Gestito riferimento &#40; sviluppo per Office in Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Riferimenti gestiti &#40;sviluppo per Office in Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  Fornisce collegamenti a informazioni sugli spazi dei nomi e i tipi di API usati nei progetti di Office per [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Per la documentazione di riferimento delle API sugli spazi dei nomi e i tipi usati nei progetti di Office per .NET Framework 3.5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio 2008: [Riferimenti gestiti del sistema 2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Riferimenti alle API non gestite &#40; sviluppo per Office in Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Riferimenti alle API non gestite &#40;sviluppo per Office in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Contiene collegamenti a informazioni sulle interfacce COM che è possibile usare per eseguire azioni come caricare e scaricare componenti aggiuntivi VSTO gestiti nelle applicazioni di Office.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

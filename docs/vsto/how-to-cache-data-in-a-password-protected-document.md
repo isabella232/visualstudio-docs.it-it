@@ -1,12 +1,10 @@
 ---
 title: 'Procedura: memorizzare nella Cache i dati in un documento protetto da Password | Documenti Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: memorizzare dati nella cache di un documento protetto da password
   Se si aggiungono dati alla cache di dati in un documento o una cartella di lavoro è protetta con una password, è possibile che le modifiche ai dati memorizzati nella cache non vengono salvate automaticamente. È possibile salvare le modifiche ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Per memorizzare i dati in una cartella di lavoro di Excel che è protetta con una password  
   
-1.  Nel `ThisWorkbook` classe o una del `Sheet`  *n*  classi, contrassegnare un campo pubblico o una proprietà da memorizzare nella cache. Per altre informazioni, vedere [Caching Data](../vsto/caching-data.md).  
+1.  Nel `ThisWorkbook` classe o una del `Sheet` *n* classi, contrassegnare un campo pubblico o una proprietà da memorizzare nella cache. Per altre informazioni, vedere [Caching Data](../vsto/caching-data.md).  
   
 2.  Eseguire l'override di <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metodo la `ThisWorkbook` classe e rimuovere la protezione dalla cartella di lavoro.  
   

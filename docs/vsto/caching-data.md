@@ -1,12 +1,10 @@
 ---
 title: La memorizzazione nella cache dati | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0d036f11d60a8da1362464a875fdc0f2771cac0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 094a4e6c639007fcf09ce28f0be2e398b8245858
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="caching-data"></a>Memorizzazione di dati nella cache
   È possibile memorizzare nella cache di oggetti dati in una personalizzazione a livello di documento in modo che i dati sono accessibili, offline o senza l'apertura di Microsoft Office Word o Microsoft Office Excel. Per memorizzare nella cache un oggetto, l'oggetto deve avere un tipo di dati che soddisfano determinati requisiti. Molti tipi di dati comuni in .NET Framework soddisfano questi requisiti, compresi <xref:System.String>, <xref:System.Data.DataSet>, e <xref:System.Data.DataTable>.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Per aggiungere a livello di codice un oggetto alla cache di dati in fase di esecuzione, utilizzare il `StartCaching` elemento metodo di un host, ad esempio il `ThisDocument` o `ThisWorkbook` classi. Per ulteriori informazioni, vedere [procedura: memorizzare nella Cache a livello di codice di un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
- Dopo aver aggiunto un oggetto alla cache di dati, è possibile accedere e modificare i dati memorizzati nella cache senza avviare Word o Excel. Per altre informazioni, vedere [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Dopo aver aggiunto un oggetto alla cache di dati, è possibile accedere e modificare i dati memorizzati nella cache senza avviare Word o Excel. Per altre informazioni, vedere [Accesso ai dati dei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="requirements-for-data-objects-to-be-cached"></a>Requisiti per gli oggetti dati da memorizzare nella cache  
  Per memorizzare nella cache un oggetto dati nella soluzione, l'oggetto deve soddisfare questi requisiti:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="preventing-data-loss-when-adding-null-values-to-the-data-cache"></a>Come evitare la perdita di dati durante l'aggiunta di valori Null per la Cache dei dati  
  Quando si aggiungono oggetti alla cache di dati, tutti gli oggetti memorizzati nella cache devono essere inizializzati su non**null** valore prima che il documento viene salvato e chiuso. Se qualsiasi oggetto memorizzato nella cache è un **null** valore quando il documento viene salvato e chiuso, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rimuoverà automaticamente tutti gli oggetti memorizzati nella cache dalla cache dei dati.  
   
- Se si aggiunge un oggetto con un **null** valore per la cache dei dati tramite il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attributo in fase di progettazione, è possibile utilizzare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe per inizializzare i dati memorizzati nella cache oggetti prima che il documento viene aperto. Ciò è utile se si desidera inizializzare i dati memorizzati nella cache in un server senza Word o Excel, prima che il documento viene aperto da un utente finale. Per altre informazioni, vedere [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md).  
+ Se si aggiunge un oggetto con un **null** valore per la cache dei dati tramite il <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attributo in fase di progettazione, è possibile utilizzare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe per inizializzare i dati memorizzati nella cache oggetti prima che il documento viene aperto. Ciò è utile se si desidera inizializzare i dati memorizzati nella cache in un server senza Word o Excel, prima che il documento viene aperto da un utente finale. Per altre informazioni, vedere [Accesso ai dati dei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: memorizzare nella Cache di dati per l'utilizzo Offline o in un Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   

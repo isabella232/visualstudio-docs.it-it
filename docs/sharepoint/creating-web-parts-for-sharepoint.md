@@ -1,12 +1,10 @@
 ---
 title: Creazione di Web part per SharePoint | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
   Utilizzando le web part, è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint utilizzando un browser. Web part sono controlli sul lato server che eseguono all'interno di una pagina web part: sono relative ai blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  Per ulteriori informazioni sulle soluzioni create mediante sandbox, vedere [le differenze tra creata mediante sandbox e soluzioni Farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>Creazione di precedente stile basato su SharePoint Web part  
- È possibile utilizzare i modelli in Visual Studio per la creazione personalizzata [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web part per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]Web part vengono compilate in cima il [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruttura delle web part e sono il tipo consigliato per i nuovi progetti.  
+ È possibile utilizzare i modelli in Visual Studio per la creazione personalizzata [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web part per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part vengono compilate in cima il [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruttura delle web part e sono il tipo consigliato per i nuovi progetti.  
   
  In alcuni casi, potrebbe essere necessario creare una web part usando lo stile precedente parte web basato su SharePoint. È possibile utilizzare Visual Studio per creare questi tipi di web part, ma Visual Studio non fornisce tutti i modelli che sono progettati specificamente per semplificarne la creazione.  
   

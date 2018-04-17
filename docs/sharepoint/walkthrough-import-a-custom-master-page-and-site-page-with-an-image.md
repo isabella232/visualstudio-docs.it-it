@@ -1,12 +1,10 @@
 ---
-title: 'Procedura dettagliata: Importare una pagina Master personalizzata e pagina del sito con un''immagine | Documenti Microsoft'
-ms.custom: 
+title: "Procedura dettagliata: Importare una pagina Master personalizzata e pagina del sito con un'immagine | Documenti Microsoft"
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procedura dettagliata: importazione di una pagina master personalizzata e di una pagina del sito con un'immagine
   Questa procedura dettagliata viene illustrato come importare una pagina master personalizzata di SharePoint e una pagina del sito che dispone di un'immagine in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Prerequisiti  
  È necessario disporre i componenti seguenti per completare questa procedura dettagliata:  
   
--   Le edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Le edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Aprire il sito di SharePoint per visualizzare gli elementi distribuiti.  
   
- Un modo alternativo per importare file in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirle in SharePoint consiste nell'aggiungere i file in moduli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Procedura: importare una pagina Master o un tema](../sharepoint/how-to-import-a-master-page-or-theme.md) e [utilizzo di moduli per includere i file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Un modo alternativo per importare file in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirle in SharePoint consiste nell'aggiungere i file in moduli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Procedura: importare una pagina Master o un tema](../sharepoint/how-to-import-a-master-page-or-theme.md) e [utilizzo di moduli per includere i file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
