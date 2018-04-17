@@ -1,11 +1,8 @@
 ---
 title: Consente di creare relazioni tra i set di dati DataRelation | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 94fb9217b779d00314b2a188ae2fe6f7d0ba4bb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra i set di dati
 Tabelle di set di dati che contengono dati correlati utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati utilizzando il **configurazione guidata origine dati**, o **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto.  
@@ -62,7 +59,7 @@ Vengono specificate le regole che è possibile apportare nel <xref:System.Data.R
 |Regola del vincolo di chiave esterna|Operazione|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule.Cascade>|La modifica (aggiornamento o eliminazione) apportata al record padre è effettuata anche nel record correlati nella tabella figlio.|  
-|<xref:System.Data.Rule.SetNull>|Record figlio non vengono eliminati, ma la relativa chiave esterna viene impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", che è non disponibile alcuna relazione con i record padre. **Nota:** usando questa regola può generare dati non validi nella tabella figlio.|  
+|<xref:System.Data.Rule.SetNull>|Record figlio non vengono eliminati, ma la relativa chiave esterna viene impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", che è non disponibile alcuna relazione con i record padre. **Nota:** usando questa regola può comportare dati non validi nella tabella figlio.|  
 |<xref:System.Data.Rule.SetDefault>|La chiave esterna nei record figlio correlati viene impostata sul valore predefinito (come stabilito in base alla colonna <xref:System.Data.DataColumn.DefaultValue%2A> proprietà).|  
 |<xref:System.Data.Rule.None>|Viene apportata alcuna modifica ai record figlio correlati. Con questa impostazione, i record figlio possono contenere riferimenti a record padre non valido.|  
   
