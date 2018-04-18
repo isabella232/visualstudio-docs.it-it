@@ -24,7 +24,7 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
 ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
 ---
