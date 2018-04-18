@@ -184,7 +184,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 -   [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+-   [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
 
 -   Trovare potenziali problemi nel codice [eseguendo un analizzatore](../modeling/find-potential-problems-using-code-map-analyzers.md).  
 
@@ -328,7 +328,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 -   Disattivare la compilazione automatica degli elementi padre con il pulsante **Includi padri** nella barra degli strumenti della mappa codice.  
 
--   Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Pulsanti Skip Build e Includi padri](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 
@@ -384,4 +384,4 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 -   [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)  
 
--   [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+-   [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
