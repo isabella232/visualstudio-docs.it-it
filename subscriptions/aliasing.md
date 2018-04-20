@@ -1,21 +1,21 @@
 ---
 title: Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/2/2018
-Ms.topic: Get-Started-Article
-Description: Sign-in may fail if aliases or friendly names are used.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8c07bc8d3cf674d86c2152ff80f20e4fac003fc3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/02/2018
+ms.topic: Get-Started-Article
+description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-with-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
+# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
 A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing". 
 
@@ -28,8 +28,8 @@ L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Opzioni per l'amministratore
 
 Come amministratore esistono due opzioni per assicurarsi che l'esperienza di accesso dei sottoscrittori a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) sia positiva. 
-1. La prima opzione (scelta consigliata) consiste nell'usare l'account della directory come indirizzo assegnato in Volume Licensing Service Center (VLSC). Fare riferimento alla sezione [Assegnazione dei sottoscrittori a un account della directory](#assigning-subscribers-to-a-directory-account) in questo articolo per altri dettagli.
-2. La seconda opzione (meno sicura) prevede di consentire ai sottoscrittori di associare l'indirizzo di posta elettronica dell'account aziendale o dell'istituto di istruzione a un account personale (ovvero un account Microsoft o MSA). Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.
+- La prima opzione (scelta consigliata) consiste nell'usare l'account della directory come indirizzo assegnato in Volume Licensing Service Center (VLSC). Fare riferimento alla sezione [Assegnazione dei sottoscrittori a un account della directory](#assigning-subscribers-to-a-directory-account) in questo articolo per altri dettagli.
+- La seconda opzione (meno sicura) prevede di consentire ai sottoscrittori di associare l'indirizzo di posta elettronica dell'account aziendale o dell'istituto di istruzione a un account personale (ovvero un account Microsoft o MSA). Fare riferimento alla sezione [Definizione di un account aziendale o dell'istituto di istruzione come account personale](#defining-a-work-or-school-account-as-a-personal-account ) in questo articolo per altri dettagli.
 
 > [!NOTE]
 > Dopo il completamento della migrazione dell'azienda al nuovo [portale di gestione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio, sarà possibile sfruttare la nuova esperienza di amministrazione che consente di specificare sia indirizzi di posta elettronica della directory che personali come parte del profilo del sottoscrittore.  Altre informazioni sulla [migrazione](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -101,7 +101,7 @@ Salve %NOME SOTTOSCRITTORE%
 
 È stata assegnata una sottoscrizione di Visual Studio.  Visitare https://my.visualstudio.com e accedere con l'indirizzo %INDIRIZZO DIRECTORY% per attivare la sottoscrizione e accedervi. 
 
-In caso di problemi, contattare il team di supporto (https://www.visualstudio.com/subscriptions/support/).
+Se si verificano problemi, contattare il team di supporto (https://www.visualstudio.com/subscriptions/support/).
 
 Nella parte inferiore della pagina selezionare gli elementi seguenti:
    - Account, sottoscrizioni e supporto di fatturazione
@@ -120,7 +120,7 @@ Riutilizzare le istruzioni riportate nella sezione [Assegnazione dei sottoscritt
 > Microsoft non consiglia la combinazione di identità aziendale o dell'istituto di istruzione con identità personale.  Con questa azione, l'organizzazione perde la proprietà e il controllo dell'account e il dipendente può continuare ad accedere a prodotti o servizi specifici anche dopo aver lasciato la società.  Per altre informazioni, fare riferimento a questo [post di blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/) dal team di Microsoft Identity.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Definizione di un indirizzo di posta elettronica come account personale
-Dopo l'assegnazione di una sottoscrizione al sottoscrittore, quest'ultimo riceverà un messaggio di posta elettronica che richiede d visitare https://my.visualstudio.com per sfruttare i vantaggi della sottoscrizione.  Durante il tentativo di accesso, l'accesso alla sottoscrizione di Visual Studio avrà esito negativo con un errore indicante che l'account non è stato riconosciuto.  Prima di accedere all'esperienza https://my.visualstudio.com, chiedere al sottoscrittore di seguire queste istruzioni.  Se necessario, è possibile usare questo [modello](#notifying-your-subscribers-using-personal-accounts) per inviare notifica al sottoscrittore dopo aver assegnato una sottoscrizione.
+Dopo l'assegnazione di una sottoscrizione al sottoscrittore, quest'ultimo riceverà un messaggio di posta elettronica che richiede di visitare https://my.visualstudio.com per sfruttare i vantaggi della sottoscrizione.  Durante il tentativo di accesso, l'accesso alla sottoscrizione di Visual Studio avrà esito negativo con un errore indicante che l'account non è stato riconosciuto.  Prima di accedere all'esperienza https://my.visualstudio.com, chiedere al sottoscrittore di seguire queste istruzioni.  Se necessario, è possibile usare questo [modello](#notifying-your-subscribers-using-personal-accounts) per inviare notifica al sottoscrittore dopo aver assegnato una sottoscrizione.
 
 1. Passare a https://my.visualstudio.com e fare clic su **Crea un account Microsoft**.
 
@@ -163,7 +163,7 @@ Ti è stata assegnata una sottoscrizione di Visual Studio ed è possibile che tu
 
 Nota: in occasione delle visite future di https://my.visualstudio.com, potrebbe essere richiesto di selezionare l'account che si vuole usare (ad esempio "Account aziendale o dell'istituto di istruzione" o "Account personale").  Dopo aver completato i passaggi precedenti, sarà necessario usare l'opzione "Account personale".
 
-In caso di problemi, contattare il team di supporto (https://www.visualstudio.com/subscriptions/support/).
+Se si verificano problemi, contattare il team di supporto (https://www.visualstudio.com/subscriptions/support/).
 
 Nella parte inferiore della pagina selezionare gli elementi seguenti:
    - Account, sottoscrizioni e supporto di fatturazione

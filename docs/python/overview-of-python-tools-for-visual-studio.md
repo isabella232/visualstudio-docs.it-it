@@ -1,65 +1,165 @@
 ---
-title: Panoramica del supporto di Python in Visual Studio (Windows) | Microsoft Docs
-description: "Riepilogo delle funzionalità disponibili per Python in Visual Studio (noto anche come Python Tools for Visual Studio, PTVS), incluse domande e risposte e una matrice di supporto delle funzionalità nelle varie versioni di Visual Studio."
-ms.custom: 
-ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+title: Panoramica del supporto di Python in Visual Studio in Windows | Microsoft Docs
+description: Riepilogo delle funzionalità di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS)
+ms.custom: ''
+ms.date: 04/06/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Utilizzo di Python in Visual Studio (Windows)
 
-Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Python supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, script e calcolo scientifico. Viene usato in molte università, nonché da scienziati, sviluppatori professionisti e non professionisti. Per altre informazioni sul linguaggio, vedere [python.org](https://www.python.org) e [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python per principianti).
+Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Python supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, scripting e calcolo scientifico. Viene usato in molte università, nonché da scienziati e sviluppatori, professionisti e non professionisti. Per altre informazioni sul linguaggio, vedere [python.org](https://www.python.org) e [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python per principianti).
 
-Visual Studio in Windows offre supporto [open source](https://github.com/Microsoft/ptvs) per il linguaggio Python attraverso lo sviluppo di Python e i carichi di lavoro Data Science (Visual Studio 2017), altre all'estensione gratuita Python Tools for Visual Studio (Visual Studio 2015 e versioni precedenti). Python non è attualmente supportato in Visual Studio per Mac, ma è disponibile su Mac e Linux tramite Visual Studio Code (vedere le [domande e risposte](#questions-and-answers)).
+Visual Studio è un ambiente IDE Python avanzato per Windows che offre supporto [open source](https://github.com/Microsoft/ptvs) per il linguaggio Python tramite i carichi di lavoro Sviluppo Python e Data Science (Visual Studio 2017). Visual Studio offre anche l'estensione gratuita Python Tools for Visual Studio (Visual Studio 2015 e versioni precedenti).
+
+Python non è attualmente supportato in Visual Studio per Mac, ma è disponibile su Mac e Linux tramite Visual Studio Code (vedere le [domande e risposte](#questions-and-answers)).
 
 Per iniziare:
 
 - Seguire le [istruzioni di installazione](installing-python-support-in-visual-studio.md) per configurare il carico di lavoro di Python.
-- Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Creare un progetto da un modello](quickstart-02-python-in-visual-studio-project-from-template.md).
+- Acquisire familiarità con le funzionalità Python di Visual Studio tramite le sezioni in questo articolo. È anche possibile [guardare una serie di video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) per un'introduzione a Python in Visual Studio (per un totale di 22 minuti).
+- Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Creare un'app Web con Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
 - Seguire l'esercitazione [Uso di Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) per un'esperienza completa.
-- Usare quindi i collegamenti nella tabella seguente per esplorare le funzionalità correlate a Python e le funzionalità di Visual Studio.
 
-| Funzionalità | Descrizione | Documentazione generale su Visual Studio |
-| --- | --- | --- |
-| [Sistema del progetto di Visual Studio](managing-python-projects-in-visual-studio.md) | Rileva in modo implicito una struttura di cartelle del codice Python consentendo anche un controllo esplicito per distinguere chiaramente i vari elementi di codice dell'app, codice di test, pagine Web, JavaScript, script di compilazione e così via. | [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Modelli di progetto](managing-python-projects-in-visual-studio.md#project-templates) | Consente di creare rapidamente la struttura del progetto per console, Web, Azure, analisi scientifica dei dati e altri tipi di progetti. | [Modelli di Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
-| Supporto per più interpreti | Supporta diverse versioni di CPython e IronPython. | N/D |
-| Supporto di IPython | Include il supporto per IPython/Jupyter in REPL per grafici inline, .NET e Windows Presentation Foundation (WPF). | N/D |
-| [Modifica avanzata, IntelliSense e comprensione del codice](editing-python-code-in-visual-studio.md) | Colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, [formattazione del codice](formatting-python-code.md), supporto per la firma, visualizzazione delle classi, accesso alle definizioni, opzione per trovare tutti i riferimenti, frammenti di codice, [refactoring](refactoring-python-code.md), [PyLint](linting-python-code.md) e altro ancora. | [Writing Code in the Code and Text Editor](../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice nell'Editor di testo e del codice) |
-| [Finestra interattiva](python-interactive-repl-in-visual-studio.md) | Fornisce un'esperienza rapida di REPL per Python e consente di evidenziare facilmente una parte del codice e di inviarla alla finestra interattiva. | N/D |
-| [Debug con funzionalità complete](debugging-python-in-visual-studio.md) | Il debug può essere eseguito con o senza un progetto di Visual Studio. Include la funzionalità per eseguire il debug di un eseguibile esistente, il [debug Python/C++ in modalità mista](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), il [debug remoto in Linux](debugging-python-code-on-remote-linux-machines.md) per Windows/Linux/Mac, il [debug remoto in Azure](debugging-remote-python-code-on-azure.md) e il debug all'interno della finestra interattiva. | [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md) |
-| [Strumenti di profilatura con funzionalità complete di creazione report](profiling-python-code-in-visual-studio.md) | Esamina l'uso del tempo nell'applicazione e consente di confrontare le prestazioni tra diverse esecuzioni della profilatura. | [Strumenti di profilatura](../profiling/profiling-tools.md) (non tutte le funzionalità di profilatura di Visual Studio sono disponibili per Python) |
-| [Strumenti per unit test](unit-testing-python-in-visual-studio.md) | Consentono di individuare, eseguire e gestire i test in Esplora test di Visual Studio e di eseguire facilmente il debug di unit test. | [Eseguire unit test del codice](../test/unit-test-your-code.md) |
+## <a name="support-for-multiple-interpreters"></a>Supporto di più interpreti
 
-Il carico di lavoro Python include anche [Azure SDK per Python](azure-sdk-for-python.md), che semplifica l'uso dei servizi Azure da applicazioni Windows, Mac OS X e Linux.
+La finestra **Ambienti Python** di Visual Studio (illustrata di seguito in un'ampia visualizzazione espansa) rappresenta un'unica posizione da cui gestire tutti gli ambienti Python globali, gli ambienti Conda e gli ambienti virtuali. Visual Studio rileva automaticamente le installazioni di Python in posizioni standard e consente di configurare installazioni personalizzate. Per ogni ambiente, è possibile gestire pacchetti, aprire una finestra interattiva specifica e accedere alle cartelle dell'ambiente con la massima facilità.
+
+![Visualizzazione espansa della finestra Ambienti Python](media/environments-expanded-view.png)
+
+Per ulteriori informazioni:
+
+- Video (2 minuti 35 secondi): [Managing Python Environments](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Gestione di ambienti Python)
+- Documenti: [Gestione di ambienti Python](managing-python-environments-in-visual-studio.md)
+- Documenti: [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)
+
+## <a name="rich-editing-intellisense-and-code-comprehension"></a>Modifica avanzata, IntelliSense e comprensione del codice
+
+Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, suggerimenti relativi al tipo e rilevamento di errori con Lint (illustrato sotto). Visual Studio offre anche funzionalità esclusive, ad esempio Visualizzazione classi, Vai alla definizione, Trova tutti i riferimenti, nonché i frammenti di codice. L'integrazione diretta con la [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
+
+![Completamento di codice Python in Visual Studio](media/code-editing-completions-simple.png)
+
+Per ulteriori informazioni:
+
+- Video (2 minuti 30 secondi): [Editing Python code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Modifica di codice Python)
+- Documenti: [Modifica del codice Python](editing-python-code-in-visual-studio.md)
+- Documenti: [Formattazione del codice](formatting-python-code.md)
+- Documenti: [Refactoring](refactoring-python-code.md)
+- Documenti: [Rilevamento di errori con Lint](linting-python-code.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Scrittura di codice nell'Editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+
+## <a name="interactive-window"></a>Finestra interattiva
+
+Per ogni ambiente Python noto a Visual Studio, è possibile aprire facilmente lo stesso ambiente interattivo (REPL, ciclo Read–Eval–Print) per un interprete Python direttamente all'interno di Visual Studio, anziché usare un prompt dei comandi separato. È anche possibile passare facilmente da un ambiente all'altro.
+
+![Finestra interattiva di Python in Visual Studio](media/interactive-window.png)
+
+Visual Studio garantisce anche una stretta integrazione tra l'editor del codice Python e la finestra interattiva. I tasti di scelta rapida **CTRL+INVIO** consentono di inviare comodamente la riga o il blocco di codice presente nell'editor alla finestra interattiva e quindi di passare alla riga successiva o al blocco successivo. Con **CTRL+INVIO** è possibile eseguire facilmente il codice un'istruzione alla volta senza dover eseguire il debugger. È anche possibile inviare codice selezionato alla finestra interattiva con la stessa combinazione di tasti e incollare facilmente codice dalla finestra interattiva nell'editor. Nel loro insieme, queste funzionalità consentono di esaminare in dettaglio un segmento di codice nella finestra interattiva e di salvare facilmente i risultati in un file nell'editor.
+
+Visual Studio supporta anche IPython/Jupyter nel ciclo REPL, compresi tracciati inline, .NET e Windows Presentation Foundation (WPF).
+
+Per ulteriori informazioni:
+
+- Video (2 minuti 22 secondi: [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Finestra interattiva di Python)
+- Documenti: [Finestra interattiva](python-interactive-repl-in-visual-studio.md)
+- Documenti: [IPython in Visual Studio](interactive-repl-ipython.md)
+
+## <a name="project-system-and-project-and-item-templates"></a>Sistema del progetto e modelli di progetto e di elemento
+
+Visual Studio consente di gestire la complessità di un progetto man mano che le dimensioni di questo aumentano. Un progetto è molto più di una struttura di cartelle, poiché al suo interno sono presenti le informazioni sull'uso dei diversi file e sulla loro interazione reciproca. Visual Studio consente di distinguere codice dell'app, codice di test, pagine Web, JavaScript, script di compilazione e così via, abilitando le funzionalità appropriate per ogni file. Una soluzione di Visual Studio, poi, consente di gestire più progetti correlati, ad esempio un progetto Python e un progetto di estensione C++.
+
+![Soluzione di Visual Studio contenente progetti sia Python che C++](media/projects-solution-explorer-two-projects.png)
+
+Grazie ai modelli di progetto e di elemento, è possibile automatizzare il processo di impostazione di tipi di progetti e file diversi, risparmiando tempo prezioso ed evitando di gestire dettagli complessi e soggetti a errori. Visual Studio mette a disposizione modelli per progetti Web, Azure, data science, console e altri tipi di progetti, insieme a modelli per file quali classi, unit test, configurazioni Web di Azure, HTML e persino app Django.
+
+[![Progetto Python e modelli di elemento in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+
+Per ulteriori informazioni:
+
+- Documenti: [Gestione di progetti Python](managing-python-projects-in-visual-studio.md)
+- Documenti: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Documenti: [Uso di C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Documenti generali sulle funzionalità di Visual Studio: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+
+## <a name="full-featured-debugging"></a>Debug con funzionalità complete
+
+Uno dei punti di forza di Visual Studio è un debugger avanzato. Specificamente per Python, Visual Studio include funzioni di debug in modalità mista Python/C++, debug remoto in Linux e in Azure, esecuzione del debug all'interno della finestra interattiva e unit test Python.
+
+![Debugger di Visual Studio per Python con un'eccezione in una finestra popup](media/debugging-exception-popup.png)
+
+Per ulteriori informazioni:
+
+- Video: [Debugging Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Debug di Python), 3 minuti, 32 secondi
+- Documenti: [Debug di Python](debugging-python-in-visual-studio.md)
+- Documenti: [Debug in modalità mista Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Documenti: [Debug remoto in Linux](debugging-python-code-on-remote-linux-machines.md)
+- Documenti: [Debug remoto in Azure](debugging-remote-python-code-on-azure.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Presentazione delle funzionalità del debugger di Visual Studio](../debugger/debugger-feature-tour.md)
+
+## <a name="profiling-tools-with-comprehensive-reporting"></a>Strumenti di profilatura con funzionalità complete di creazione di report
+
+La profilatura esplora come viene impiegato il tempo all'interno dell'applicazione. Visual Studio supporta la profilatura con interpreti basati su CPython e include la possibilità di confrontare le prestazioni tra esecuzioni diverse della profilatura.
+
+[![Risultati del profiler di Visual Studio per un progetto Python](media/profiling-results.png)](media/profiling-results.png)
+
+Per ulteriori informazioni:
+
+- Video: [Profiling Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567) (Profilatura di Python), 3 minuti, 00 secondi
+- Documenti: [Strumenti di profilatura di Python](profiling-python-code-in-visual-studio.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md) (non tutte le funzionalità di profilatura di Visual Studio sono disponibili per Python).
+
+## <a name="unit-testing-tools"></a>Strumenti per unit test
+
+Consentono di individuare, eseguire e gestire i test in Esplora test di Visual Studio e di eseguire facilmente il debug di unit test.
+
+![Debug di uno unit test Python in Visual Studio](media/unit-test-debugging.png)
+
+Per ulteriori informazioni:
+
+- Video: [Testing Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Test di Python), 2 minuti, 31 secondi
+- Documenti: [Strumenti di esecuzione di unit test per Python](unit-testing-python-in-visual-studio.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Eseguire unit test del codice](../test/unit-test-your-code.md).
+
+## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>Pubblicazione in Azure e Azure SDK per Python
+
+Visual Studio offre supporto integrato per la pubblicazione di app Web e servizi cloud in Azure. Visual Studio include modelli di elemento `web.config` essenziali sia per il contenuto dinamico che per il contenuto statico. Il carico di lavoro Python include anche Azure SDK per Python, che semplifica l'utilizzo dei servizi di Azure da app Windows, Mac OS X e Linux.
+
+![Pubblicare un'applicazione Python in Azure in Visual Studio](media/azure-publish-dialog.png)
+
+Per ulteriori informazioni:
+
+- Documenti: [Pubblicazione in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- Documenti: [Azure SDK per Python](azure-sdk-for-python.md)
+
+## <a name="python-training-on-microsoft-virtual-academy"></a>Training su Python in Microsoft Virtual Academy
 
 |   |   |
 |---|---|
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare una serie di video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) per un'introduzione a Python in Visual Studio (per un totale di 22 minuti). |
-| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | Vedere anche i video seguenti in Microsoft Virtual Academy:<ul><li>[Introduzione alla programmazione con Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python per principianti: Stringhe e funzioni](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Concetti fondamentali di Python: Elenco e cicli](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principali domande su Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | <ul><li>[Introduzione alla programmazione con Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python per principianti: Stringhe e funzioni](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Concetti fondamentali di Python: Elenco e cicli](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Principali domande su Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Domande e risposte
 
 **D. Il supporto di Python è disponibile in Visual Studio per Mac?**
 
-Un  Non in questo momento, sebbene sia richiesto in [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
+Un  Non in questo momento, ma è possibile votare a favore della richiesta in [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
 
 **D. Cosa si può usare per compilare un'interfaccia utente con Python?**
 
@@ -74,7 +174,7 @@ Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseg
 Le funzionalità di Python possono essere installate nelle edizioni seguenti di Visual Studio, come descritto nella [guida all'installazione](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (tutte le edizioni)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (tutte le edizioni)] (https://www.visualstudio.com/it-it/downloads/visual-studio-2015-downloads-vs)
+- [Visual Studio 2015 (tutte le edizioni)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express per il Web, Update 2 o versione successiva
 - Visual Studio 2013 Express per Desktop, Update 2 o versione successiva

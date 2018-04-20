@@ -1,19 +1,19 @@
 ---
 title: Messaggi di posta elettronica personali visualizzati In VLSC
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/23/2018
-Ms.topic: Get-Started-Article
-Description: "Visual Studio Subscriptions – Why Am I Seeing Hotmail or Gmail Addresses for My Subscribers?"
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2bfe2f39d432be5fc6ff7b24be2a218d02fce961
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/23/2018
+ms.topic: Get-Started-Article
+description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cfe035d82976e3df683f4e3a35bd9d7f3c8cf9e2
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori? 
 
@@ -21,14 +21,11 @@ Man mano che le società completano la migrazione da Volume Licensing Service Ce
 
 ## <a name="cause"></a>Causa
 
-Questo scenario si verifica a causa dei processi di accesso associati all'esperienza legacy degli abbonati MSDN. La migrazione degli utenti da VLSC al nuovo portale è stata completata senza modifiche. Alcuni amministratori potrebbero non essere a conoscenza del fatto che gli utenti usavano account personali per accedere ai vantaggi della sottoscrizione loro assegnati. Prima delle migrazioni dei sottoscrittori di Visual Studio, completate nel 2016, erano necessarie due azioni per usare correttamente una sottoscrizione di Visual Studio:
+Questo scenario si verifica a causa dei processi di accesso associati all'esperienza legacy dei sottoscrittori msDN. La migrazione degli utenti da VLSC al nuovo portale è stata completata senza modifiche. Alcuni amministratori potrebbero non essere a conoscenza del fatto che gli utenti usavano account personali per accedere ai vantaggi della sottoscrizione loro assegnati. Prima delle migrazioni dei sottoscrittori di Visual Studio, completate nel 2016, erano necessarie due azioni per usare correttamente una sottoscrizione di Visual Studio:
 1. L'amministratore "assegnava" la sottoscrizione a un singolo sottoscrittore, usando l'indirizzo di posta elettronica dell'account aziendale o dell'istituto di istruzione.
 2. Il sottoscrittore "attivava" la sottoscrizione.
 
-Durante il processo di attivazione del sottoscrittore:
-1. Era necessario un account Microsoft per accedere.
-2. Se il sottoscrittore non tentava di convertire l'account aziendale o dell'istituto di istruzione (ad esempio John@contoso.com) in un account Microsoft, poteva creare un nuovo account Microsoft o sfruttarne uno esistente.
-3. A causa di tutto ciò, l'indirizzo di posta elettronica di accesso può risultare diverso dall'indirizzo di posta elettronica di assegnazione.
+Durante il processo di attivazione del sottoscrittore: veniva richiesto un account Microsoft per eseguire l'accesso. Se il sottoscrittore non tentava di convertire l'account aziendale o dell'istituto di istruzione (ad esempio John@contoso.com) in un account Microsoft, poteva creare un nuovo account Microsoft o sfruttarne uno esistente. A causa di tutto ciò, l'indirizzo di posta elettronica di accesso può risultare diverso dall'indirizzo di posta elettronica di assegnazione.
 
 > [!NOTE] 
 > La nuova esperienza per i sottoscrittori in [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) supporta sia i tipi di identità con account aziendale o dell'istituto di istruzione che con account Microsoft.

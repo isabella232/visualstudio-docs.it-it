@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Accesso al portale di amministrazione delle sottoscrizioni di Visual Studio
 ## <a name="for-mpsa"></a>Per MPSA
@@ -43,13 +43,13 @@ Per acquistare sottoscrizioni cloud di Visual Studio, visitare Visual Studio Mar
 ## <a name="for-programs-subscriptions"></a>Per le sottoscrizioni di programmi
 
 ### <a name="microsoft-bizspark"></a>Microsoft BizSpark
-Gli amministratori di Microsoft BizSpark possono gestire le sottoscrizioni di Visual Studio dell'organizzazione in **My BizSpark** effettuando l'accesso all'indirizzo: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
+Gli amministratori di Microsoft BizSpark possono gestire le sottoscrizioni di Visual Studio dell'organizzazione in **My BizSpark** eseguendo l'accesso all'indirizzo: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
 
 Per altre informazioni sul programma Microsoft BizSpark, vedere [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
 
 
 ### <a name="imagine"></a>Imagine
-Gli amministratori di Microsoft Imagine possono visitare [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
+Se si è un amministratore di Microsoft Imagine, visitare [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
 
 
 ### <a name="partner"></a>Partner

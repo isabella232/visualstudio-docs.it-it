@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>Come si rinnova una sottoscrizione acquistata tramite Microsoft Store?
 Panoramica: le sottoscrizioni al dettaglio vengono spesso acquistate da Microsoft Store e possono essere identificate come "Retail" nelle informazioni sulle sottoscrizioni disponibili all'indirizzo https://my.visualstudio.com/subscriptions. 
@@ -30,7 +30,7 @@ Panoramica: le sottoscrizioni al dettaglio vengono spesso acquistate da Microsof
 
 ## <a name="activate-your-subscription"></a>Attivare la sottoscrizione: 
 È possibile attivare la sottoscrizione dalla pagina di conferma o dal messaggio di posta elettronica di conferma del pagamento.  (Se non viene visualizzato il messaggio di posta elettronica di conferma, assicurarsi di controllare nelle cartelle della posta indesiderata.)   
-1. Fare clic su **Fai clic qui per accedere**.  Verrà visualizzata la pagina [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+1. Fare clic su **Fai clic qui per accedere**.  Si verrà reindirizzati in [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 2. Accedere alla sottoscrizione.  (Informazioni per l'[accesso](/visualstudio/subscriptions/signing-in).)
 3. Immettere il codice Product Key disponibile nella pagina di conferma o nel messaggio di posta elettronica di conferma del pagamento e fare clic su **Attivalo**.
     ![Immettere il codice Product Key](_img//buy-retail/enter-product-key.png)

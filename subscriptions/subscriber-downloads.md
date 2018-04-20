@@ -1,19 +1,19 @@
 ---
 title: Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Informazioni su come individuare e scaricare i prodotti Microsoft inclusi con la sottoscrizione di Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.  
@@ -34,7 +34,7 @@ I possibili motivi in seguito ai quali determinati prodotti potrebbero non esser
 ## <a name="what-do-i-get"></a>Che cosa si ottiene?
 Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'appartenenza ai programmi.  Per chi possiede una sottoscrizione standard di Visual Studio Enterprise, ad esempio, potrebbero essere disponibili download diversi da quelli di chi ha ottenuto la propria sottoscrizione tramite un programma Microsoft Partner Network o BizSpark.  Per altre informazioni sui download disponibili per ogni livello di sottoscrizione, scaricare l'elenco di [Prodotti per livello benefici](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Come trovare i download nel portale sottoscrittore? 
 Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Se ad esempio si possiede una sottoscrizione di Visual Studio Professional e un'appartenenza di Visual Studio Dev Essentials associate allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione di livello professionale, anche se si stanno visualizzando i vantaggi di Dev Essentials.  

@@ -1,5 +1,5 @@
 ---
-title: Installazione del supporto di Python in Visual Studio | Microsoft Docs
+title: Installazione del supporto di Python | Microsoft Docs
 description: Istruzioni dettagliate su come installare Python Tools for Visual Studio (PTVS) in Visual Studio 2017, 2015, 2013, 2012 e 2010, inclusi le opzioni e i percorsi di installazione.
 ms.custom: ''
 ms.date: 02/15/2018
@@ -10,18 +10,18 @@ ms.technology:
 dev_langs:
 - python
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6bf78c0f0abcef9158bfdb753f5c8ea4050c33
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 6276c70cebd8f4d71e056142258422645c50cdfa
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Installazione del supporto di Python in Visual Studio in Windows
 
@@ -80,6 +80,16 @@ Per testare rapidamente il supporto Python dopo aver eseguito la procedura di in
 |   |   |
 |---|---|
 | ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sull'installazione del supporto Python in Visual Studio.|
+
+### <a name="troubleshooting"></a>Risoluzione dei problemi
+
+Se si verificano problemi durante l'installazione o l'esecuzione di Python in Visual Studio, procedere come segue:
+
+- Determinare se si verifica lo stesso errore usando l'interfaccia della riga di comando di Python, ovvero eseguendo `python.exe` al prompt dei comandi.
+- Usare l'[opzione di riparazione nel programma di installazione di Visual Studio](../install/repair-visual-studio.md).
+- Riparare o reinstallare Python tramite **Impostazioni > App e funzionalità** in Windows.
+
+**Errore di esempio**: Non è stato possibile avviare il processo interattivo: System.ComponentModel.Win32Exception (0x80004005): Errore sconosciuto (0xc0000135) in Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

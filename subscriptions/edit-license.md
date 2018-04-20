@@ -1,25 +1,28 @@
 ---
 title: Modificare le sottoscrizioni nel portale di amministrazione | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Informazioni su come gli amministratori possono modificare le assegnazioni di sottoscrizione.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>Modifica delle assegnazioni di sottoscrizione in Visual Studio
+# <a name="editing-visual-studio-subscription-assignments"></a>Modifica delle assegnazioni di sottoscrizione di Visual Studio
+
+L'amministratore delle sottoscrizioni può modificare le sottoscrizioni assegnate a utenti all'interno dell'organizzazione.  In questo articolo vengono descritti i tipi di modifiche che è possibile apportare e vengono specificati i passaggi necessari. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Apportare modifiche alle informazioni relative al sottoscrittore
 È possibile modificare le informazioni di un sottoscrittore per correggere gli errori o aggiornare le informazioni. 
-**Si noti che la modifica dell'indirizzo di posta elettronica di un sottoscrittore comporta la reimpostazione degli eventuali vantaggi esistenti.**
+> [!NOTE]
+> La modifica dell'indirizzo di posta elettronica di un sottoscrittore comporta la reimpostazione degli eventuali vantaggi esistenti.
 
 Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che vengono visualizzati accanto all'indirizzo di posta elettronica del sottoscrittore quando vi si passa sopra il mouse. Verrà visualizzato un elenco a discesa.  Selezionare **Modifica** per modificare i dati del sottoscrittore. È anche possibile fare doppio clic sulla riga del sottoscrittore nella griglia per aprire la finestra di modifica.
 
@@ -53,7 +56,7 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 
     ![Modifica di una licenza - Caricamento file delle modifiche di massa](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Dopo aver caricato il file, verrà visualizzata una notifica per comunicare l'esito positivo. 
+5.  Dopo aver caricato il file, verrà visualizzata una notifica per comunicare l'esito positivo. A questo punto, tutte le modifiche si rifletteranno nelle informazioni relative al sottoscrittore. 
 
     ![Modifica di una licenza - Caricamento modifiche di massa completato](_img\edit-license\edit-license-bulk-upload-complete.png)
 

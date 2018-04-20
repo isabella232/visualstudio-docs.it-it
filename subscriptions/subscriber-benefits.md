@@ -1,19 +1,19 @@
 ---
 title: Sottoscrizioni di Visual Studio - Vantaggi per i sottoscrittori
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Informazioni sui vantaggi inclusi nella sottoscrizione di Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Vantaggi inclusi nella sottoscrizione di Visual Studio
 
@@ -22,7 +22,7 @@ Le sottoscrizioni di Visual Studio offrono il set di risorse più completo per c
 I vantaggi sono raggruppati in tre categorie:
 
 ## <a name="tools"></a>Strumenti
-La categoria Strumenti consente di accedere a un'ampia gamma di vantaggi, tra cui vantaggi principali, come l'[IDE di Visual Studio](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts) e [Azure](/vs-azure) .  A seconda del livello di sottoscrizione, verranno visualizzati anche gli account Windows e Office 365 Developer, Visual Studio App Center e vantaggi dai partner, come WhiteSource Bolt e ModernRequirements.
+La categoria Strumenti consente di accedere a un'ampia gamma di vantaggi, tra cui vantaggi principali, come l'[IDE di Visual Studio](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) e [Azure](/vs-azure/) .  A seconda del livello di sottoscrizione, verranno visualizzati anche gli account Windows e Office 365 Developer, Visual Studio App Center e vantaggi dai partner, come WhiteSource Bolt e ModernRequirements.
 
 ## <a name="professional-development"></a>Sviluppo professionale
 Per consentire ai sottoscrittori di migliorare costantemente le loro competenze ed essere sempre aggiornati sulle tecnologie più recenti, viene offerto l'accesso ad alcuni dei corsi di training online migliori proposti da società leader del settore. Alcuni esempi di contenuti di alta qualità sono i seguenti:

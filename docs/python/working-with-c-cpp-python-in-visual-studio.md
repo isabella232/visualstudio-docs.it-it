@@ -2,7 +2,7 @@
 title: Utilizzo di C++ e Python | Microsoft Docs
 description: Processo e passaggi per scrivere un modulo o un'estensione di C++ per Python in Visual Studio
 ms.custom: ''
-ms.date: 01/16/2018
+ms.date: 04/03/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,36 +14,39 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 
 I moduli scritti in C++ (o in C) vengono comunemente usati per estendere le funzionalità di un interprete Python e anche per abilitare l'accesso alle funzionalità di basso livello del sistema operativo. Sono disponibili tre tipi primari di moduli:
 
-- Moduli acceleratori: dato che Python è un linguaggio interpretato, determinati frammenti di codice possono essere scritti in C++ per ottenere migliori prestazioni. 
-- Moduli wrapper: i wrapper espongono al codice Python le interfacce C/C++ esistenti o un'API più facilmente utilizzabile da Python.
+- Moduli acceleratori: dato che Python è un linguaggio interpretato, determinati frammenti di codice possono essere scritti in C++ per ottenere migliori prestazioni.
+- Moduli wrapper:espongono al codice Python le interfacce C/C++ esistenti o un'API più facilmente utilizzabile da Python.
 - Moduli di accesso al sistema di basso livello: creati per accedere alle funzionalità di basso livello del runtime di CPython, al sistema operativo o all'hardware sottostante.
 
 Questo articolo illustra la creazione di un modulo di estensione C++ per CPython per calcolare una tangente iperbolica. Illustra anche come chiamare il modulo da codice Python. La routine viene implementata prima in Python per illustrare il miglioramento relativo delle prestazioni dell'implementazione della routine stessa in C++.
 
 L'approccio adottato in questo argomento è quello per le estensioni CPython standard come illustrato nella [documentazione di Python](https://docs.python.org/3/c-api/). Un confronto tra questo e altri approcci viene illustrato in [Approcci alternativi](#alternative-approaches) alla fine di questo articolo.
 
+L'esempio completato di questa procedura dettagliata è disponibile in [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
+
 ## <a name="prerequisites"></a>Prerequisiti
 
 - Visual Studio 2017 con i carichi di lavoro **Sviluppo di applicazioni desktop con C++** e **Sviluppo Python** installati con le opzioni predefinite.
 - Nel carico di lavoro **Sviluppo Python** selezionare anche la casella **Strumenti di sviluppo nativo Python** a destra. Questa opzione imposta la maggior parte della configurazione descritta in questo articolo. Questa opzione include automaticamente anche il carico di lavoro C++.
 
-![Selezione dell'opzione Strumenti di sviluppo nativo Python](media/cpp-install-native.png)
+    ![Selezione dell'opzione Strumenti di sviluppo nativo Python](media/cpp-install-native.png)
 
-- L'installazione del carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati** include anche Python e l'opzione **Strumenti di sviluppo nativi Python** per impostazione predefinita.
+    > [!Tip]
+    > L'installazione del carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati** include anche Python e l'opzione **Strumenti di sviluppo nativi Python** per impostazione predefinita.
 
 Per altre informazioni, vedere [Installazione del supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md), che illustra l'uso di altre versioni di Visual Studio. Se si installa Python separatamente, assicurarsi di selezionare **Download debugging symbols** (Scarica i simboli di debug) e **Download debug binaries** (Scarica file binari di debug) nella sezione **Opzioni avanzate** del programma di installazione. Questa opzione consente di avere a disposizione le librerie di debug necessarie se si sceglie di eseguire una build di debug.
 
@@ -91,10 +94,11 @@ Per altre informazioni, vedere [Installazione del supporto di Python in Visual S
         print('{} took {:.3f} seconds\n\n'.format(name, duration))
 
         for d in result:
-            assert -1 <= d <=1, " incorrect values"
+            assert -1 <= d <= 1, " incorrect values"
 
     if __name__ == "__main__":
         print('Running benchmarks with COUNT = {}'.format(COUNT))
+
         test(sequence_tanh, 'sequence_tanh')
 
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
@@ -104,11 +108,17 @@ Per altre informazioni, vedere [Installazione del supporto di Python in Visual S
 
 ## <a name="create-the-core-c-project"></a>Creare un progetto di base C++
 
-1. Fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e selezionare **Aggiungi > Nuovo progetto**. Una soluzione di Visual Studio può includere progetti Python e C++ insieme.
+1. Fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e selezionare **Aggiungi > Nuovo progetto**. Una soluzione Visual Studio può contenere progetti Python e C++ contemporaneamente. Questo è uno dei vantaggi offerti dall'uso di Visual Studio per Python.
 
-1. Cercare "C++", selezionare **Progetto vuoto**, specificare un nome (in questo articolo viene usato "superfastcode") e fare clic su **OK**. Nota: se sono stati installati gli **strumenti di sviluppo nativo Python** con Visual Studio 2017, è possibile iniziare con il modello **Modulo di estensione Python**, che include quasi tutti gli elementi descritti in questo argomento. Questa procedura dettagliata, tuttavia, inizia da un progetto vuoto e illustra la creazione del modulo di estensione in modo dettagliato.
+1. Cercare "C++", selezionare **Progetto vuoto**, specificare un nome (in questo articolo viene usato "superfastcode") e fare clic su **OK**.
 
-1. Creare un file C++ nel nuovo progetto facendo clic con il pulsante destro del mouse sul nodo **File di origine**, selezionare **Aggiungi > Nuovo elemento**, selezionare **File C++**, assegnargli un nome (ad esempio `module.cpp`) e fare clic su **OK**. Questo passaggio è necessario per attivare le pagine delle proprietà C++ nei passaggi seguenti.
+    > [!Tip]
+    > Con gli **strumenti di sviluppo nativo Python** installati in Visual Studio 2017 è possibile iniziare con il modello **Modulo di estensione Python**, che include gran parte di tutti gli elementi descritti di seguito. Questa procedura dettagliata, tuttavia, inizia da un progetto vuoto e illustra la creazione del modulo di estensione in modo dettagliato. Dopo che si è compreso il processo, il modello consente di risparmiare tempo durante la scrittura di estensioni personalizzate.
+
+1. Creare un file C++ nel nuovo progetto facendo clic con il pulsante destro del mouse sul nodo **File di origine**, selezionare **Aggiungi > Nuovo elemento**, selezionare **File C++**, assegnare un nome (ad esempio `module.cpp`) e fare clic su **OK**.
+
+    > [!Important]
+    > Un file con estensione `.cpp` è necessario per attivare le pagine delle proprietà C++ nei passaggi che seguono.
 
 1. Fare clic con il pulsante destro del mouse sul progetto C++ in Soluzione e scegliere **Proprietà**.
 
@@ -136,7 +146,7 @@ Per altre informazioni, vedere [Installazione del supporto di Python in Visual S
 
 1. Fare clic con il pulsante destro del mouse sul progetto C++ e selezionare **Compila** per testare le configurazioni sia di debug che di versione. I file `.pyd` si trovano nella cartella *solution* all'interno delle sottocartelle **Debug** e **Release**, non nella cartella del progetto C++.
 
-1. Aggiungere il codice seguente al file `.cpp` del progetto C++ principale:
+1. Aggiungere il codice seguente al file `module.cpp` del progetto C++:
 
     ```cpp
     #include <Windows.h>
@@ -161,19 +171,17 @@ Per altre informazioni, vedere [Installazione del supporto di Python in Visual S
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Convertire il progetto C++ in un'estensione per Python
 
-Per rendere disponibile la DLL C++ in un'estensione per Python, modificare prima i metodi esportati in modo che interagiscano con i tipi di Python. Aggiungere quindi una funzione che esporti il modulo, insieme alle definizioni dei metodi del modulo. Per informazioni generali su quanto illustrato di seguito, vedere [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html) (Manuale di riferimento all'API Python/C) e in particolare [Module Objects](https://docs.python.org/3/c-api/module.html) (Oggetti del modulo) in python.org. Ricordarsi di selezionare la versione di Python dal controllo a discesa in alto a destra.
+Per rendere disponibile la DLL C++ in un'estensione per Python, modificare prima i metodi esportati in modo che interagiscano con i tipi di Python. Aggiungere quindi una funzione che esporti il modulo, insieme alle definizioni dei metodi del modulo.
 
-> [!Note]
-> Queste istruzioni si applicano a Python 3.x. Se si lavora con Python 2.7, fare riferimento a [Extending Python 2.7 with C or C++](https://docs.python.org/2.7/extending/extending.html) (Estensione di Python 2.7 con C o C++) e [Porting Extension Modules to Python 3](https://docs.python.org/2.7/howto/cporting.html) (Conversione dei moduli di estensione per Python 3) (python.org).
+Per informazioni di background su quanto illustrato in questa sezione per Python 3.x, fare riferimento a [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html) (Manuale di riferimento dell'API Python/C) e in particolare a [Module Objects](https://docs.python.org/3/c-api/module.html) (Oggetti modulo) in python.org. Ricordarsi di selezionare la versione di Python in uso nell'elenco a discesa in alto a destra per visualizzare la documentazione corretta.
+
+Se si lavora con Python 2.7, fare invece riferimento a [Extending Python 2.7 with C or C++](https://docs.python.org/2.7/extending/extending.html) (Estensione di Python 2.7 con C o C++) e a [Porting Extension Modules to Python 3](https://docs.python.org/2.7/howto/cporting.html) (Conversione dei moduli di estensione per Python 3) (python.org).
 
 1. Nel file C++, includere `Python.h` nella parte superiore:
 
     ```cpp
     #include <Python.h>
     ```
-
-    > [!Tip]
-    > Se viene visualizzato l'errore *E1696: cannot open source file "Python.h"* (E1696: impossibile aprire il file di origine "Python.h") e/o l'errore *C1083: Cannot open include file: "Python.h": No such file or directory* (C1083: impossibile aprire il file di inclusione "Python.h": file o directory non esistente), verificare di aver impostato **C/C++ > Generale > Directory di inclusione aggiuntive** nelle proprietà del progetto sulla cartella `include` dell'installazione Python in uso come descritto al passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-project).
 
 1. Modificare il metodo `tanh_impl` in modo che accetti e restituisca tipi di Python (ovvero un `PyOjbect*`):
 
@@ -219,8 +227,8 @@ Per rendere disponibile la DLL C++ in un'estensione per Python, modificare prima
     ```
 
 1. Impostare la configurazione di destinazione su "Rilascio" e compilare di nuovo il progetto C++ per verificare il codice. Se si verificano errori, controllare i casi seguenti:
-    - Non è possibile individuare Python.h: verificare che il percorso in **C/C++ > Generale > Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella `include` dell'installazione di Python in uso.
-    - Non è possibile individuare le librerie Python: verificare che il percorso in **Linker > Generale > Directory librerie aggiuntive** nelle proprietà del progetto punti alla cartella `libs` dell'installazione di Python in uso.
+    - Non è possibile individuare Python.h (*E1696: Impossibile aprire il file di origine "Python.h"* e/o *C1083: Cannot open include file: "Python.h": No such file or directory* (C1083: impossibile aprire il file di inclusione "Python.h": file o directory non esistente)): verificare che il percorso in **C/C++ > Generale > Directory di inclusione aggiuntive** nelle proprietà del progetto punti alla cartella `include` dell'installazione di Python in uso. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-project).
+    - Non è possibile individuare le librerie Python: verificare che il percorso in **Linker > Generale > Directory librerie aggiuntive** nelle proprietà del progetto punti alla cartella `libs` dell'installazione di Python in uso. Vedere il passaggio 6 in [Creare un progetto di base C++](#create-the-core-c-project).
     - Errori del linker correlati all'architettura di destinazione: modificare l'architettura di progetto della destinazione C++ in modo che corrisponda a quella dell'installazione di Python in uso. Ad esempio, se il progetto C++ è destinato a x64, ma l'installazione di Python è x86, impostare x86 come destinazione del progetto C++.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Testare il codice e confrontare i risultati
@@ -232,6 +240,8 @@ Ora che la libreria è strutturata come estensione per Python, è possibile fare
 Ci sono due modi per rendere disponibile la DLL per Python.
 
 Il primo metodo funziona se il progetto Python e il progetto C++ sono nella stessa soluzione. Passare a Esplora soluzioni, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto Python e quindi scegliere **Aggiungi riferimento**. Nella finestra di dialogo visualizzata selezionare la scheda **Progetti**, selezionare il progetto **superfastcode** (o qualsiasi nome usato) e quindi fare clic su **OK**.
+
+![Aggiunta di un riferimento al progetto superfastcode](media/cpp-add-reference.png)
 
 Il metodo alternativo, descritto nei passaggi seguenti, consente di installare il modulo nell'ambiente di Python globale, rendendolo disponibile anche per altri progetti Python. Questo in genere richiede di aggiornare il database di completamento IntelliSense per tale ambiente in Visual Studio 2017 versione 15.5 e versioni successive. L'aggiornamento è necessario anche quando si rimuove il modulo dall'ambiente.
 
@@ -269,7 +279,18 @@ Dopo aver eseguito uno dei metodi precedenti, è ora possibile chiamare la funzi
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. Eseguire il programma Python (**Debug > Avvia senza eseguire debug** o Ctrl + F5) e osservare che la routine C++ viene eseguita da 5 a 20 volte più velocemente rispetto all'implementazione Python. Provare di nuovo a incrementare la variabile `COUNT` in modo che le differenze siano più evidenti. Si noti anche che una build di debug del modulo C++ viene eseguita più lentamente rispetto a una build di rilascio perché la build di debug è meno ottimizzata e contiene vari controlli degli errori. È possibile alternare liberamente queste configurazioni ai fini del confronto.
+1. Eseguire il programma Python (**Debug > Avvia senza eseguire debug** o Ctrl + F5) e osservare che la routine C++ viene eseguita da 5 a 20 volte più velocemente rispetto all'implementazione Python. In genere l'output ha l'aspetto seguente:
+
+    ```output
+    Running benchmarks with COUNT = 500000
+    sequence_tanh took 1.542 seconds
+
+    [tanh(x) for x in d] took 1.087 seconds
+
+    [fast_tanh(x) for x in d] took 0.158 seconds
+    ```
+
+1. Provare a incrementare la variabile `COUNT` in modo che le differenze siano più evidenti. Una build di debug del modulo C++ viene anche eseguita più lentamente rispetto a una build di rilascio perché la build di debug è meno ottimizzata e contiene vari controlli degli errori. È possibile alternare liberamente queste configurazioni ai fini del confronto.
 
 ## <a name="debug-the-c-code"></a>Eseguire il debug del codice C++
 
@@ -301,7 +322,13 @@ Esistono svariati modi per creare estensioni di Python, come descritto nella tab
 | Approccio | Anno | Utenti rappresentanti | Vantaggi | Svantaggi |
 | --- | --- | --- | --- | --- |
 | Moduli di estensione C/C++ per CPython | 1991 | Libreria standard | [Documentazione ampia ed esercitazioni](https://docs.python.org/3/c-api/). Controllo totale. | Compilazione, portabilità, gestione dei riferimenti. Conoscenza elevata di C. |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Genera associazioni per molte lingue contemporaneamente. | Sovraccarico eccessivo se Python è l'unica destinazione. |
+| [pybind11](https://github.com/pybind/pybind11) (scelta consigliata per C++) | 2015 |  | Libreria leggera, di sola intestazione per la creazione di associazioni Python di codice C++ esistente. Poche dipendenze. Compatibilità PyPy. | Più recente, meno maturo. Uso intenso di funzionalità C++11. Breve elenco di compilatori supportati (Visual Studio è incluso). |
+| Cython (consigliato per C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Simile a Python. Altamente maturo. Prestazioni elevate. | Compilazione, nuova sintassi, nuova toolchain. |
+| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funziona con quasi tutti i compilatori C++. | Gruppo di librerie complesso e di grandi dimensioni. Contiene molte soluzioni alternative per i compilatori non recenti. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nessuna compilazione, ampia disponibilità. | Accesso e modifica di strutture C complesse e soggette a errori. |
-| Cython | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Simile a Python. Altamente maturo. Prestazioni elevate. | Compilazione, nuova sintassi, nuova toolchain. |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Facilità di integrazione, compatibilità PyPy. | Nuovo, meno maturo. |
+| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Genera associazioni per molte lingue contemporaneamente. | Sovraccarico eccessivo se Python è l'unica destinazione. |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Facilità di integrazione, compatibilità PyPy. | Più recente, meno maturo. |
+
+## <a name="see-also"></a>Vedere anche
+
+L'esempio completato di questa procedura dettagliata è disponibile in [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).

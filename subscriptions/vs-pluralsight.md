@@ -1,29 +1,29 @@
 ---
 title: Vantaggio Pluralsight nelle sottoscrizioni di Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Pluralsight training subscription included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 118fa74608bc0a36c8ce0a6941915fec535aad84
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 1/4/2018
+ms.topic: Get-Started-Article
+description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nella sottoscrizione di Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 973909a6ebc2730bfa7f4b9a0c576960175a8b7e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
-## <a name="overview"></a>Panoramica
+
 I corsi creati da esperti, i percorsi di apprendimento, la misurazione adattiva delle competenze e altro ancora consentono di incrementare le proprie competenze.  A seconda della sottoscrizione di Visual Studio o della sottoscrizione a un programma disponibile, si potrebbe avere diritto a fino a sei messi di accesso illimitato gratuito all'intero catalogo Pluralsight. 
 
 La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per ogni tipo di sottoscrizione di Visual Studio.  Con alcune sottoscrizioni è anche possibile sfruttare i vantaggi dei corsi limitati dopo la scadenza della sottoscrizione con accesso completo al catalogo. Alla scadenza della sottoscrizione, sarà sufficiente seguire la procedura guidata di Pluralsight. 
 
  A seconda del tipo di sottoscrizione, non tutti i sottoscrittori che hanno usato in precedenza Pluralsight mediante una sottoscrizione di Visual Studio potranno sfruttare i nuovi vantaggi offerti da Pluralsight. Se non si è idonei per riscattare i vantaggi aggiuntivi di training Pluralsight, si riceverà una notifica quando si tenta di attivare il vantaggio nel sito Web di Pluralsight.  
 
-### <a name="eligibility"></a>Idoneità
+## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione/Programma                                 | Vantaggio               | Rinnovabile?                                                         |
 |--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
 | Visual Studio Enterprise Standard                            | Sottoscrizione di 6 mesi | No.  12 mesi di accesso a cataloghi limitati dopo la scadenza. |
@@ -47,14 +47,14 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 | Visual Studio Enterprise - MCT Developer Software & Services | Non disponibile         |                                                                    |
 <sup>1</sup>  *Include Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
  
 
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 1. Per attivare la sottoscrizione, connettersi a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul collegamento **Ottieni il codice** nel riquadro del vantaggio Pluralsight, disponibile nella sezione Sviluppo professionale. 
 
-    ![Riquadro dei vantaggi Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    ![Riquadro del vantaggio Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
 > [!IMPORTANT]
 > Quando si fa clic sul collegamento "Ottieni il codice" nel riquadro del vantaggio Pluralsight, è possibile che venga visualizzato il messaggio seguente:
@@ -103,8 +103,8 @@ R: non tutte le sottoscrizioni di Visual Studio Enterprise includono il vantaggi
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>D: cosa accade alla scadenza della sottoscrizione di Pluralsight?  
 R: al termine della sottoscrizione gratuita di Pluralsight, sono disponibili due opzioni:
-1. Potrebbe essere disponibile una selezione limitata di corsi per ulteriori 12 mesi, a seconda della sottoscrizione di Visual Studio.  Controllare nella tabella [Idoneità](#eligibility) se la sottoscrizione disponibile è idonea.
-2. È possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight.  Contattare [Pluralsight](http://www.pluralsight.com) per dettagli completi.  
+1. Si riceve un accesso gratuito di 12 mesi (controllare nella tabella [Idoneità](#eligibility) se la sottoscrizione disponibile è idonea) a un set limitato di 50 corsi in una delle tre aree chiave: sviluppo di app nel cloud, intelligenza artificiale, apprendimento automatico e dati e DevOps nel cloud. Si riceverà un messaggio di posta elettronica da Pluralsight per richiedere l'accesso gratuito dopo la scadenza. È possibile visualizzare un [elenco dei corsi](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) disponibili in ogni libreria parziale.
+2. È possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight con uno sconto del 10% che consente di accedere all'intero catalogo dei corsi.  Contattare [Pluralsight](http://www.pluralsight.com) per dettagli completi.  
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  [Pluralsight Help Center](https://help.pluralsight.com/help) fornisce assistenza in merito all'esecuzione dei corsi Pluralsight o all'uso del sito Web di Pluralsight. 

@@ -1,21 +1,21 @@
 ---
-title: Uso del portale dei sottoscrittori - http://my.visualstudio.com | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Uso del portale per i sottoscrittori - http://my.visualstudio.com | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del portale dei sottoscrittori - my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del portale per i sottoscrittori - my.<span></span>visualstudio<span></span>.com
 
 Il portale delle sottoscrizioni di Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), è la risorsa centralizzata da cui è possibile accedere all'intera gamma di vantaggi disponibili tramite la sottoscrizione di Visual Studio. 
 

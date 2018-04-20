@@ -1,19 +1,19 @@
 ---
-title: "Come è possibile sapere qual è il software disponibile per il download? | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/28/2017
-Ms.topic: Get-Started-Article
-Description: Find a list of the software downloads included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 072b39475f9020b84df0d72acca87119e12ce3b9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Come è possibile sapere qual è il software disponibile per il download? | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/28/2017
+ms.topic: Get-Started-Article
+description: Elenco di download del software inclusi nella sottoscrizione di Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>Come è possibile sapere qual è il software disponibile per il download?
 
@@ -27,6 +27,6 @@ Se è già disponibile una sottoscrizione di Visual Studio:
 Per trovare rapidamente i prodotti, usare le funzioni di "Ricerca" nella parte superiore della pagina oppure fare clic sui diversi tipi di prodotto a sinistra.
 
 > [!TIP]
-> Per cercare i codici Product Key, fare clic su **Codici Product Key** nella parte superiore della pagina.
+> Per cercare i codici Product Key, fare clic sulla scheda **Codici "Product Key"** nella parte superiore della pagina.
 
 È anche possibile scaricare un foglio di calcolo di Excel contenente un elenco completo dei [titoli software disponibili](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) per ogni tipo di sottoscrizione.  

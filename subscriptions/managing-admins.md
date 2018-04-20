@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Gestione dei diritti di amministratore nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
 ## <a name="overview"></a>Panoramica 
-Nel portale di gestione delle sottoscrizioni di Visual Studio (https://manage.visualstudio.com), sono disponibili due ruoli di gestione:
+Nel portale di amministrazione delle sottoscrizioni di Visual Studio (https://manage.visualstudio.com)) sono disponibili due ruoli di gestione:
 
 **Amministratori con privilegi elevati:** durante la prima configurazione di un'organizzazione, il contatto principale o per le comunicazioni diventa amministratore con privilegi elevati per impostazione predefinita. Il contatto principale o per le comunicazioni può scegliere di assegnare altri amministratori con privilegi elevati o amministratori. Oltre a gestire le sottoscrizioni per i singoli sottoscrittori, gli amministratori con privilegi elevati possono aggiungere e rimuovere altri amministratori e amministratori con privilegi elevati. Se nel sistema sono presenti più di due amministratori con privilegi elevati, è possibile eliminarli tutti tranne gli ultimi due per motivi di sicurezza. 
 
