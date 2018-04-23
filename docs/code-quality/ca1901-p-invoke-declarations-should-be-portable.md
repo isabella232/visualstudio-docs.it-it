@@ -1,10 +1,8 @@
 ---
-title: 'CA1901: le Dichiarazioni P-Invoke devono essere portabili | Documenti Microsoft'
-ms.custom: ''
+title: 'CA1901: le Dichiarazioni P-Invoke devono essere portabili'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -17,65 +15,65 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c58860c09ab1ef0bb1f6cac15c380fe22dfc93
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45adbedf9318c70b1e73088765cf5487d997d1e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Le dichiarazioni P/Invoke devono essere portabili
-|||  
-|-|-|  
-|TypeName|PInvokeDeclarationsShouldBePortable|  
-|CheckId|CA1901|  
-|Category|Microsoft.Portability|  
-|Modifica importante|Sostanziale - P/Invoke è visibile all'esterno dell'assembly. Non sostanziale - Se P/Invoke non è visibile all'esterno dell'assembly.|  
-  
-## <a name="cause"></a>Causa  
- La regola valuta la dimensione di ogni parametro e il valore restituito di P/Invoke e verifica che la dimensione del marshalling a codice non gestito in piattaforme a 32 bit e 64 bit, sia corretta. La violazione di questa regola più comune consiste nel passare un integer a dimensione fissa in cui è necessaria una variabile dipendente dalla piattaforma, della dimensione del puntatore.  
-  
-## <a name="rule-description"></a>Descrizione della regola  
- Uno dei seguenti scenari viola questa regola si verifica:  
-  
--   Il valore restituito o parametro è tipizzato come intero a dimensione fissa quando deve essere digitato come un `IntPtr`.  
-  
--   Il valore restituito o parametro è tipizzato come un `IntPtr` quando deve essere digitato come numero intero di dimensioni fisse.  
-  
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- È possibile correggere la violazione utilizzando `IntPtr` o `UIntPtr` per rappresentare gli handle anziché `Int32` o `UInt32`.  
-  
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
- Non è necessario eliminare l'avviso.  
-  
-## <a name="example"></a>Esempio  
- L'esempio seguente illustra una violazione di questa regola.  
-  
-```csharp  
-internal class NativeMethods  
-{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, IntPtr nIconIndex);  
-}  
-```  
-  
- In questo esempio, il `nIconIndex` parametro è dichiarato come un `IntPtr`, che è di 4 byte su una piattaforma a 32 bit e 8 byte su una piattaforma a 64 bit. Nella dichiarazione di non gestita che segue, è possibile vedere che `nIconIndex` è un intero senza segno a 4 byte in tutte le piattaforme.  
-  
-```csharp  
-HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
-    UINT nIconIndex);  
-```  
-  
-## <a name="example"></a>Esempio  
- Per correggere la violazione, modificare la dichiarazione per le operazioni seguenti:  
-  
-```csharp  
-internal class NativeMethods{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, uint nIconIndex);  
-}  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
+|||
+|-|-|
+|TypeName|PInvokeDeclarationsShouldBePortable|
+|CheckId|CA1901|
+|Category|Microsoft.Portability|
+|Modifica importante|Sostanziale - P/Invoke è visibile all'esterno dell'assembly. Non sostanziale - Se P/Invoke non è visibile all'esterno dell'assembly.|
+
+## <a name="cause"></a>Causa
+ La regola valuta la dimensione di ogni parametro e il valore restituito di P/Invoke e verifica che la dimensione del marshalling a codice non gestito in piattaforme a 32 bit e 64 bit, sia corretta. La violazione di questa regola più comune consiste nel passare un integer a dimensione fissa in cui è necessaria una variabile dipendente dalla piattaforma, della dimensione del puntatore.
+
+## <a name="rule-description"></a>Descrizione della regola
+ Uno dei seguenti scenari viola questa regola si verifica:
+
+-   Il valore restituito o parametro è tipizzato come intero a dimensione fissa quando deve essere digitato come un `IntPtr`.
+
+-   Il valore restituito o parametro è tipizzato come un `IntPtr` quando deve essere digitato come numero intero di dimensioni fisse.
+
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
+ È possibile correggere la violazione utilizzando `IntPtr` o `UIntPtr` per rappresentare gli handle anziché `Int32` o `UInt32`.
+
+## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+ Non è necessario eliminare l'avviso.
+
+## <a name="example"></a>Esempio
+ L'esempio seguente illustra una violazione di questa regola.
+
+```csharp
+internal class NativeMethods
+{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, IntPtr nIconIndex);
+}
+```
+
+ In questo esempio, il `nIconIndex` parametro è dichiarato come un `IntPtr`, che è di 4 byte su una piattaforma a 32 bit e 8 byte su una piattaforma a 64 bit. Nella dichiarazione di non gestita che segue, è possibile vedere che `nIconIndex` è un intero senza segno a 4 byte in tutte le piattaforme.
+
+```csharp
+HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
+    UINT nIconIndex);
+```
+
+## <a name="example"></a>Esempio
+ Per correggere la violazione, modificare la dichiarazione per le operazioni seguenti:
+
+```csharp
+internal class NativeMethods{
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,
+        string lpszExeFileName, uint nIconIndex);
+}
+```
+
+## <a name="see-also"></a>Vedere anche
  [Portability Warnings](../code-quality/portability-warnings.md)

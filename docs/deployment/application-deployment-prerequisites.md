@@ -2,8 +2,7 @@
 title: Prerequisiti per la distribuzione di applicazioni | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48f72640bdf8efc53b278e4600c6b262dc1a26bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 Affinché l'applicazione venga installata ed eseguita correttamente, è necessario che nel computer di destinazione siano già installati tutti i componenti da cui l'applicazione dipende. Ad esempio, la maggior parte delle applicazioni create con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno una dipendenza da [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; prima di installare l'applicazione, è necessario che nel computer di destinazione sia presente la versione corretta di Common Language Runtime.  

@@ -1,8 +1,7 @@
 ---
-title: Finestra di dialogo riferimento servizio configura | Documenti Microsoft
-ms.custom: ''
+title: Configura riferimento a servizio (finestra di dialogo)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.dlg.ConfigureServiceReference
 helpviewer_keywords:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3e23070c5bd88f2e6f5dda72b6b10b2bd306aa9b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed20865726832b57d4d0624d6305daa6ba0fe6fa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
@@ -31,61 +30,75 @@ Il **Configura riferimento a servizio** la finestra di dialogo consente di confi
 
 Per l'accesso di **Configura riferimento a servizio** nella finestra di dialogo scelta di un servizio fa riferimento nella **Esplora** e scegliere **Configura riferimento a servizio**. È possibile accedere anche la finestra di dialogo, fare clic su di **avanzate** pulsante il **dialogo Aggiungi riferimento al servizio**.
 
-## <a name="task-list"></a>Elenco attività  
-  
--   Per modificare l'indirizzo in cui è ospitato un servizio WCF, immettere il nuovo indirizzo nel **indirizzo** campo.  
-  
--   Per modificare il livello di accesso per le classi in un client WCF, selezionare una parola chiave a livello di accesso nel **livello di accesso per classi generate** elenco.  
-  
--   Per chiamare i metodi di un servizio WCF in modo asincrono, selezionare il **Genera operazioni asincrone** casella di controllo.  
-  
--   Per generare i tipi di contratto di messaggio in un client WCF, selezionare il **genera sempre contratti di messaggio** casella di controllo.  
-  
--   Per specificare i tipi di raccolta elenco o dizionario per un client WCF, selezionare i tipi dal **tipo di raccolta** e **tipo di raccolta dizionario** Elenca.  
-  
--   Per disabilitare la condivisione dei tipi, deselezionare il **Riutilizza tipi negli assembly di riferimento** casella di controllo. Per abilitare la condivisione di tipi per un subset di assembly di riferimento, selezionare il **Riutilizza tipi negli assembly di riferimento** caselle di controllo **Riutilizza tipi negli assembly di riferimento specificati**e selezionare l'elemento fa riferimento nel **elenco degli assembly di riferimento**.  
-  
-## <a name="uielement-list"></a>Elenco UIElement  
- **Indirizzo**  
- Usato per aggiornare l'indirizzo Web in cui un riferimento al servizio cerca un servizio. Ad esempio, durante lo sviluppo il servizio potrebbe essere ospitato su un server di sviluppo, quindi spostato a un server di produzione, necessitando un cambio di indirizzo.  
-  
+## <a name="task-list"></a>Elenco attività
+
+- Per modificare l'indirizzo in cui è ospitato un servizio WCF, immettere il nuovo indirizzo nel **indirizzo** campo.
+
+- Per modificare il livello di accesso per le classi in un client WCF, selezionare una parola chiave a livello di accesso nel **livello di accesso per classi generate** elenco.
+
+- Per chiamare i metodi di un servizio WCF in modo asincrono, selezionare il **Genera operazioni asincrone** casella di controllo.
+
+- Per generare i tipi di contratto di messaggio in un client WCF, selezionare il **genera sempre contratti di messaggio** casella di controllo.
+
+- Per specificare i tipi di raccolta elenco o dizionario per un client WCF, selezionare i tipi dal **tipo di raccolta** e **tipo di raccolta dizionario** Elenca.
+
+- Per disabilitare la condivisione dei tipi, deselezionare il **Riutilizza tipi negli assembly di riferimento** casella di controllo. Per abilitare la condivisione di tipi per un subset di assembly di riferimento, selezionare il **Riutilizza tipi negli assembly di riferimento** caselle di controllo **Riutilizza tipi negli assembly di riferimento specificati**e selezionare l'elemento fa riferimento nel **elenco degli assembly di riferimento**.
+
+## <a name="uielement-list"></a>Elenco UIElement
+
+ **Indirizzo**
+
+ Usato per aggiornare l'indirizzo Web in cui un riferimento al servizio cerca un servizio. Ad esempio, durante lo sviluppo il servizio potrebbe essere ospitato su un server di sviluppo, quindi spostato a un server di produzione, necessitando un cambio di indirizzo.
+
 > [!NOTE]
->  L'elemento Address non è disponibile quando il **Configura riferimento a servizio** da cui viene visualizzata la finestra di dialogo di **dialogo Aggiungi riferimento al servizio**.  
-  
- **Livello di accesso per classi generate**  
- Determina il livello di accesso del codice per le classi del client WCF.  
-  
+> L'elemento Address non è disponibile quando il **Configura riferimento a servizio** da cui viene visualizzata la finestra di dialogo di **dialogo Aggiungi riferimento al servizio**.
+
+ **Livello di accesso per classi generate**
+
+ Determina il livello di accesso del codice per le classi del client WCF.
+
 > [!NOTE]
->  Per i progetti di siti Web, questa opzione è impostata sempre su `Public` e non può essere modificata. Per ulteriori informazioni, vedere [riferimenti al servizio di risoluzione dei problemi](../data-tools/troubleshooting-service-references.md).  
-  
- **Genera operazioni asincrone**  
- Determina se i metodi del servizio WCF verranno chiamati in modo sincrono (impostazione predefinita) oppure asincrono.  
-  
- **Genera operazioni basate su attività**  
- Durante la scrittura di codice asincrono, questa opzione consente di sfruttare la Task Parallel Library (TPL) introdotta con .Net 4. Vedere [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
-  
- **Genera sempre contratti di messaggio**  
- Determina se i tipi di contratto di messaggio verranno generati per un client WCF. Per ulteriori informazioni sui contratti di messaggio, vedere [con contratti di messaggio](/dotnet/framework/wcf/feature-details/using-message-contracts).  
-  
- **Tipo di raccolta**  
- Specifica il tipo di raccolta elenco per un client WCF. Il tipo predefinito è <xref:System.Array>.  
-  
- **Tipo di raccolta dizionario**  
- Specifica il tipo di raccolta dizionario per un client WCF. Il tipo predefinito è <xref:System.Collections.Generic.Dictionary%602>.  
-  
- **Riutilizza tipi negli assembly di riferimento**  
- Determina se un client WCF proverà a riusare i tipi già esistenti negli assembly di riferimento piuttosto di generare nuovi tipi quando un servizio viene aggiunto o aggiornato. Per impostazione predefinita, questa opzione è selezionata.  
-  
- **Riutilizza tipi in tutti gli assembly cui viene fatto riferimento**  
- Se selezionata, tutti i tipi di **elenco degli assembly di riferimento** verranno riutilizzati, se possibile. Questa opzione è selezionata per impostazione predefinita.  
-  
- **Riutilizza tipi negli assembly di riferimento specificati**  
- Se selezionata, solo i tipi selezionati nel **elenco degli assembly di riferimento** verrà riutilizzata.  
-  
- **Elenco di assembly di riferimento**  
- Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando **Riutilizza tipi negli assembly di riferimento specificati** è selezionata, singoli assembly può essere selezionato o deselezionato.  
-  
- **Aggiungi riferimento Web** consente di visualizzare la finestra di dialogo Aggiungi riferimento Web.
+> Per i progetti di siti Web, questa opzione è impostata sempre su `Public` e non può essere modificata. Per ulteriori informazioni, vedere [riferimenti al servizio di risoluzione dei problemi](../data-tools/troubleshooting-service-references.md).
+
+ **Genera operazioni asincrone**
+
+ Determina se i metodi del servizio WCF verranno chiamati in modo sincrono (impostazione predefinita) oppure asincrono.
+
+ **Genera operazioni basate su attività**
+
+ Durante la scrittura di codice asincrono, questa opzione consente di sfruttare la Task Parallel Library (TPL) introdotta con .Net 4. Vedere [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
+
+ **Genera sempre contratti di messaggio**
+
+ Determina se i tipi di contratto di messaggio verranno generati per un client WCF. Per ulteriori informazioni sui contratti di messaggio, vedere [con contratti di messaggio](/dotnet/framework/wcf/feature-details/using-message-contracts).
+
+ **Tipo di raccolta**
+
+ Specifica il tipo di raccolta elenco per un client WCF. Il tipo predefinito è <xref:System.Array>.
+
+ **Tipo di raccolta dizionario**
+
+ Specifica il tipo di raccolta dizionario per un client WCF. Il tipo predefinito è <xref:System.Collections.Generic.Dictionary%602>.
+
+ **Riutilizza tipi negli assembly di riferimento**
+
+ Determina se un client WCF proverà a riusare i tipi già esistenti negli assembly di riferimento piuttosto di generare nuovi tipi quando un servizio viene aggiunto o aggiornato. Per impostazione predefinita, questa opzione è selezionata.
+
+ **Riutilizza tipi in tutti gli assembly cui viene fatto riferimento**
+
+ Se selezionata, tutti i tipi di **elenco degli assembly di riferimento** verranno riutilizzati, se possibile. Questa opzione è selezionata per impostazione predefinita.
+
+ **Riutilizza tipi negli assembly di riferimento specificati**
+
+ Se selezionata, solo i tipi selezionati nel **elenco degli assembly di riferimento** verrà riutilizzata.
+
+ **Elenco di assembly di riferimento**
+
+ Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando **Riutilizza tipi negli assembly di riferimento specificati** è selezionata, singoli assembly può essere selezionato o deselezionato.
+
+ **Aggiungi riferimento Web**
+
+ Visualizza la finestra di dialogo Aggiungi riferimento Web.
 
 > [!NOTE]
 > Usare questa opzione solo per i progetti destinati alla versione 2.0 di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
@@ -95,5 +108,5 @@ Per l'accesso di **Configura riferimento a servizio** nella finestra di dialogo 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: aggiungere un riferimento a un servizio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
-[Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)
+- [Procedura: aggiungere un riferimento a un servizio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

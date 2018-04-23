@@ -2,8 +2,7 @@
 title: La finestra di dialogo proprietà del messaggio | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1264638a911d332929265f5f154d390eba2566
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b241550d2bb9c72240b68c7b6e338cd9f56043c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="message-properties-dialog-box"></a>Finestra di dialogo Proprietà messaggio
 Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un messaggio specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un [visualizzazione messaggi](../debugger/messages-view.md) finestra. Selezionare qualsiasi nodo di messaggio nell'albero, quindi scegliere **proprietà** dal **vista** menu.  

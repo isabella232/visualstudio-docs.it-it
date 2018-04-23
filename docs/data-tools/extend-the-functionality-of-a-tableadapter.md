@@ -1,6 +1,5 @@
 ---
-title: Estendere la funzionalità di un oggetto TableAdapter | Documenti Microsoft
-ms.custom: ''
+title: Estendere la funzionalità di un oggetto TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,36 +16,37 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d163461f559432752815d2f1e1fec103d93a84ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85fdd2f6df58f1d0293da8118d0562302c261881
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estendere la funzionalità di un oggetto TableAdapter
-È possibile estendere la funzionalità di un oggetto TableAdapter aggiungendo codice al file di classe parziale dell'oggetto TableAdapter.  
-  
- Il codice che definisce un oggetto TableAdapter viene rigenerato quando vengono apportate modifiche all'oggetto TableAdapter nel **Progettazione Dataset**, o quando una procedura guidata consente di modificare la configurazione di un oggetto TableAdapter. Per impedire che il codice da eliminare durante la rigenerazione di un oggetto TableAdapter, aggiungere codice al file di classe parziale dell'oggetto TableAdapter.  
-  
- Classi parziali consentono al codice per una classe specifica da dividere tra più file fisici. Per ulteriori informazioni, vedere [parziale](/dotnet/visual-basic/language-reference/modifiers/partial) o [parziale (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).  
-  
-## <a name="locate-tableadapters-in-code"></a>Individuare gli oggetti TableAdapter nel codice  
- Mentre gli oggetti TableAdapter sono progettate con la **Progettazione Dataset**, le classi TableAdapter generate non sono classi annidate di <xref:System.Data.DataSet>. Gli oggetti TableAdapter si trovano in uno spazio dei nomi in base al nome del set di dati associato dell'oggetto TableAdapter. Ad esempio, se l'applicazione contiene un set di dati denominato `HRDataSet`, gli oggetti TableAdapter potrebbe trovarsi nel `HRDataSetTableAdapters` dello spazio dei nomi. (La convenzione di denominazione segue questo modello: *DatasetName* + `TableAdapters`).  
-  
- Nell'esempio seguente si presuppone un oggetto TableAdapter denominato `CustomersTableAdapter`in un progetto con `NorthwindDataSet`.  
-  
-#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Per creare una classe parziale per un oggetto TableAdapter  
-  
-1.  Aggiungere una nuova classe al progetto selezionando il **progetto** menu e selezionando **Aggiungi classe**.  
-  
-2.  Assegnare alla classe il nome `CustomersTableAdapterExtended`.  
-  
-3.  Selezionare **aggiungere**.  
-  
-4.  Sostituire il codice con il nome di classe parziale per il progetto e un spazio dei nomi corretto come indicato di seguito:  
-  
+È possibile estendere la funzionalità di un oggetto TableAdapter aggiungendo codice al file di classe parziale dell'oggetto TableAdapter.
+
+ Il codice che definisce un oggetto TableAdapter viene rigenerato quando vengono apportate modifiche all'oggetto TableAdapter nel **Progettazione Dataset**, o quando una procedura guidata consente di modificare la configurazione di un oggetto TableAdapter. Per impedire che il codice da eliminare durante la rigenerazione di un oggetto TableAdapter, aggiungere codice al file di classe parziale dell'oggetto TableAdapter.
+
+ Classi parziali consentono al codice per una classe specifica da dividere tra più file fisici. Per ulteriori informazioni, vedere [parziale](/dotnet/visual-basic/language-reference/modifiers/partial) o [parziale (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).
+
+## <a name="locate-tableadapters-in-code"></a>Individuare gli oggetti TableAdapter nel codice
+ Mentre gli oggetti TableAdapter sono progettate con la **Progettazione Dataset**, le classi TableAdapter generate non sono classi annidate di <xref:System.Data.DataSet>. Gli oggetti TableAdapter si trovano in uno spazio dei nomi in base al nome del set di dati associato dell'oggetto TableAdapter. Ad esempio, se l'applicazione contiene un set di dati denominato `HRDataSet`, gli oggetti TableAdapter potrebbe trovarsi nel `HRDataSetTableAdapters` dello spazio dei nomi. (La convenzione di denominazione segue questo modello: *DatasetName* + `TableAdapters`).
+
+ Nell'esempio seguente si presuppone un oggetto TableAdapter denominato `CustomersTableAdapter`in un progetto con `NorthwindDataSet`.
+
+#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Per creare una classe parziale per un oggetto TableAdapter
+
+1.  Aggiungere una nuova classe al progetto selezionando il **progetto** menu e selezionando **Aggiungi classe**.
+
+2.  Assegnare alla classe il nome `CustomersTableAdapterExtended`.
+
+3.  Selezionare **aggiungere**.
+
+4.  Sostituire il codice con il nome di classe parziale per il progetto e un spazio dei nomi corretto come indicato di seguito:
+
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
-     [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]  
-  
-## <a name="see-also"></a>Vedere anche  
- [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+     [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]
+
+## <a name="see-also"></a>Vedere anche
+
+- [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

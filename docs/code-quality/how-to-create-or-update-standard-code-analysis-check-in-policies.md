@@ -1,6 +1,5 @@
 ---
-title: "Procedura: creare o aggiornare criteri di controllo dell'analisi del codice Standard | Documenti Microsoft"
-ms.custom: ''
+title: "Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice"
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -50,10 +49,10 @@ Dopo aver specificato un criterio di controllo per il codice gestito, i membri d
 
 Selezionare o deselezionare le opzioni seguenti:
 
-    |Opzione|Descrizione|  
-    |------------|-----------------|  
-    |**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice è possibile eseguire solo sui file specificati nel file di configurazione di soluzione e progetto. Questo criterio assicura che tutto il codice che fa parte di una soluzione viene analizzato.|  
-    |**Applicare l'analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ generati con la / analizzare l'opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|  
+    |Opzione|Descrizione|
+    |------------|-----------------|
+    |**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice è possibile eseguire solo sui file specificati nel file di configurazione di soluzione e progetto. Questo criterio assicura che tutto il codice che fa parte di una soluzione viene analizzato.|
+    |**Applicare l'analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ generati con la / analizzare l'opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|
     |**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti, eseguire l'analisi del codice e compilare prima che possano essere archiviati.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestito

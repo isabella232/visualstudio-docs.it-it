@@ -2,8 +2,7 @@
 title: La finestra di dialogo Ricerca messaggi | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65639b25cccc88d8159d1e91eddb0b99c06c19bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c125e2659e586d728a18293b9811a4e69743558
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="message-search-dialog-box"></a>Finestra di dialogo Ricerca messaggi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di un messaggio specifico in [visualizzazione messaggi](../debugger/messages-view.md). Spostare lo stato attivo per visualizzare questa finestra di dialogo, una finestra di visualizzazione di messaggi. Scegliere quindi **Trova messaggio** dal **ricerca** menu.  

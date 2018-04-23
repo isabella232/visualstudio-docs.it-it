@@ -2,8 +2,7 @@
 title: Spostarsi nel codice con il Debugger di Visual Studio | Documenti Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae96b360620a58fa323d080e6262c7f2966fa160
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Spostarsi nel codice con il Debugger di Visual Studio
 Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il codice nel debugger e in questo modo sarà più veloce e semplice individuare e risolvere i problemi nell'app. Durante lo spostamento di codice nel debugger, è possibile controllare lo stato dell'app o altre informazioni sul relativo flusso di esecuzione.  

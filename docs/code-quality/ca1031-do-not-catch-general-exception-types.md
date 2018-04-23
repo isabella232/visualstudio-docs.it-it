@@ -1,10 +1,8 @@
 ---
-title: 'CA1031: Non rilevare tipi di eccezione generali | Documenti Microsoft'
-ms.custom: ''
+title: 'CA1031: Non rilevare tipi di eccezione generali'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1031
 - DoNotCatchGeneralExceptionTypes
@@ -17,41 +15,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2b235037e68d7c824d144d29dfb58ac8c5c066
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fb251798d4e1908c31d19356e711215baa52929d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Non rilevare tipi di eccezione generali
-|||  
-|-|-|  
-|TypeName|DoNotCatchGeneralExceptionTypes|  
-|CheckId|CA1031|  
-|Category|Microsoft.Design|  
-|Modifica importante|Non sostanziale|  
-  
-## <a name="cause"></a>Causa  
- Un'eccezione generale come <xref:System.Exception?displayProperty=fullName> o <xref:System.SystemException?displayProperty=fullName> viene rilevata in un `catch` istruzione o una clausola catch generale, ad esempio `catch()` viene utilizzato.  
-  
-## <a name="rule-description"></a>Descrizione della regola  
- Le eccezioni generali non devono essere rilevate.  
-  
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- Per correggere una violazione di questa regola, rilevare un'eccezione più specifica o rigenerare l'eccezione generale come ultima istruzione nel `catch` blocco.  
-  
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
- Non escludere un avviso da questa regola. Il rilevamento di tipi di eccezione generali può nascondere i problemi in fase di esecuzione da parte dell'utente di libreria e può rendere più difficile il debug.  
-  
+|||
+|-|-|
+|TypeName|DoNotCatchGeneralExceptionTypes|
+|CheckId|CA1031|
+|Category|Microsoft.Design|
+|Modifica importante|Non sostanziale|
+
+## <a name="cause"></a>Causa
+ Un'eccezione generale come <xref:System.Exception?displayProperty=fullName> o <xref:System.SystemException?displayProperty=fullName> viene rilevata in un `catch` istruzione o una clausola catch generale, ad esempio `catch()` viene utilizzato.
+
+## <a name="rule-description"></a>Descrizione della regola
+ Le eccezioni generali non devono essere rilevate.
+
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
+ Per correggere una violazione di questa regola, rilevare un'eccezione più specifica o rigenerare l'eccezione generale come ultima istruzione nel `catch` blocco.
+
+## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+ Non escludere un avviso da questa regola. Il rilevamento di tipi di eccezione generali può nascondere i problemi in fase di esecuzione da parte dell'utente di libreria e può rendere più difficile il debug.
+
 > [!NOTE]
->  A partire dal [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) non recapita più eccezioni di stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], devono essere gestiti da codice gestito. Se si desidera compilare un'applicazione nel [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versioni successive e mantenere la gestione delle eccezioni di stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attributo al metodo che gestisce l'eccezione di stato danneggiato.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.  
-  
+>  A partire dal [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) non recapita più eccezioni di stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], devono essere gestiti da codice gestito. Se si desidera compilare un'applicazione nel [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versioni successive e mantenere la gestione delle eccezioni di stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attributo al metodo che gestisce l'eccezione di stato danneggiato.
+
+## <a name="example"></a>Esempio
+ Nell'esempio seguente viene illustrato un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.
+
  [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
  [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
- [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]  
-  
-## <a name="related-rules"></a>Regole correlate  
+ [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
+
+## <a name="related-rules"></a>Regole correlate
  [CA2200: Eseguire il rethrow per mantenere i dettagli dello stack](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

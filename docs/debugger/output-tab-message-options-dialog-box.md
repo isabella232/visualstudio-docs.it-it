@@ -2,8 +2,7 @@
 title: Scheda output, la finestra di dialogo Opzioni messaggio | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Output
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4fe186396f9434c36865c0b864dcebf23cd10c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e559edf5028d339b6086a413fb2dcb040aafb355
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Scheda Output, finestra di dialogo Opzioni messaggio
 Utilizzare il **Output** tab per specificare quali dati di ogni messaggio all'elenco [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **messaggi di Log** dal **Spy** menu.  

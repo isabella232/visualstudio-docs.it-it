@@ -2,8 +2,7 @@
 title: Debug di applicazioni ClickOnce che usano System.Deployment.Application | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - debugging, System.Deployment
 - deploying applications [ClickOnce], debugging
 ms.assetid: 86f31948-2ca8-47c0-8e8b-c2b817bbf79f
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e637a8abf3255605415067d02fb474503c3de4a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30cbf4aab2975b95703c24462604c1a43ed3554c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Debug di applicazioni ClickOnce in cui si utilizza System.Deployment.Application
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione consente di configurare la modalità di aggiornamento di un'applicazione. Tuttavia, se si desidera utilizzare e personalizzare avanzati [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funzionalità di distribuzione, è necessario accedere al modello di oggetto di distribuzione fornito da <xref:System.Deployment.Application>. È possibile utilizzare il <xref:System.Deployment.Application> API per attività avanzate, ad esempio:  

@@ -2,8 +2,7 @@
 title: "Procedura: Debug di un'applicazione ClickOnce con autorizzazioni limitate | Documenti Microsoft"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, debugging
 - ClickOnce applications, debugging
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: adb1b3cff76cb22e54ddb5e89c714983afa3a167
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 318316c4c2a0f545f6e038581d94d9f7fb21eca4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
 Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizzazioni di attendibilità totale. È quindi molto probabile che le eccezioni di sicurezza generate durante il debug di un'applicazione ClickOnce siano diverse da quelle restituite all'utente finale quando esegue l'applicazione con autorizzazioni limitate.  

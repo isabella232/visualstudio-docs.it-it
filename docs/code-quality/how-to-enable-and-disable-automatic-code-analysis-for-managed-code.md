@@ -1,6 +1,5 @@
 ---
-title: "Procedura: abilitare e disabilitare l'analisi automatica del codice per il codice gestito | Documenti Microsoft"
-ms.custom: ''
+title: "Procedura: abilitare e disabilitare l'analisi automatica del codice gestito"
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,11 +8,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2420fa388227153f3a3914c87ca1992316d06ce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e47e2b760c65e64ee8c5fcad145a45c27e43adc8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedura: abilitare e disabilitare l'analisi automatica del codice per il codice gestito
 
