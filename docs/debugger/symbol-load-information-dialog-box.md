@@ -2,8 +2,7 @@
 title: Finestra di dialogo informazioni di caricamento dei simboli | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.symbols.loadinfo
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a5f54a532c1fe50125610b2e37968eea55cb3a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9cd9cca539a79e6779a3b886223d407db19b6e14
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
 Il **informazioni sul caricamento simboli** la finestra di dialogo viene visualizzata quando fare clic su di **moduli** finestra e scegliere **informazioni sul caricamento simboli**.  

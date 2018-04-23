@@ -2,8 +2,7 @@
 title: TIPO DEFINITO DALL'UTENTE | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6b4f4a1e0a5d2b81439244a9a59801c31385998
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fb354ebd9e2aed59d6bc3bfe14bfd18ae7cbfad7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="udt"></a>UDT
 Ogni classe, struttura e unione è identificato da un `SymTagUDT` simbolo. Ogni membro, funzione, dati, o tipo annidato e ogni classe di base, viene visualizzato come un elemento figlio alla classe del tipo definito dall'utente (UDT).  

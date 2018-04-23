@@ -2,20 +2,19 @@
 title: "Procedura: pubblicare un'applicazione WPF con gli stili visuali abilitati | Documenti Microsoft"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-author: mairaw
-ms.author: mairaw
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: pubblicare un'applicazione WPF per la quale sono attivati gli stili di visualizzazione
 Gli stili di visualizzazione attiva l'aspetto dei controlli comuni di modificare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario abilitare manualmente. Tuttavia, abilitare gli stili visivi per un'applicazione WPF e quindi la pubblicazione della soluzione genera un errore. In questo argomento viene descritto come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per ulteriori informazioni sugli stili, vedere [Visual Styles Overview](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Per ulteriori informazioni sul messaggio di errore, vedere [risoluzione dei problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  

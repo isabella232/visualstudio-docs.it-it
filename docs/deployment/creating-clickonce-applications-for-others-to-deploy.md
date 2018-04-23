@@ -2,8 +2,7 @@
 title: Creazione di applicazioni ClickOnce per altri utenti per la distribuzione | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,16 +21,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3cd93353cd20ac52f95d7852c306124561cdf0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Creazione di applicazioni ClickOnce per la distribuzione da parte di terzi
 Non tutti gli sviluppatori che creano distribuzioni ClickOnce prevede di distribuire le applicazioni stesse. Molti di essi solo pacchetto propria applicazione tramite ClickOnce e quindi passare i file a un cliente, ad esempio un'azienda di grandi dimensioni. Il cliente si assume la responsabilità di ospitare l'applicazione nella propria rete. In questo argomento vengono illustrati alcuni problemi relativi a tali distribuzioni nelle versioni di .NET Framework precedenti alla versione 3.5. Viene quindi illustrata una nuova soluzione fornita utilizzando la nuova funzionalità di "Usa manifesto applicazione per l'attendibilità" in .NET Framework 3.5. Vengono infine con strategie consigliate per la creazione di distribuzioni ClickOnce per i clienti che utilizzano ancora versioni precedenti di .NET Framework.  

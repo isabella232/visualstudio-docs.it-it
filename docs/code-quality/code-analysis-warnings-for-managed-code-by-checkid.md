@@ -1,8 +1,8 @@
 ---
-title: Gli avvisi di analisi codice di Visual Studio per codice gestito ordinati per CheckId | Documenti Microsoft
+title: Avvisi di analisi codice di Visual Studio per codice gestito ordinati per CheckId
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CA1000
 - CA1001
@@ -259,11 +259,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19441bd208a48096e29635be6774c55894f317be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd801587ad5c15eb72835905b48da8799fa37d25
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi dell'analisi codice per codice gestito ordinati per CheckId
 

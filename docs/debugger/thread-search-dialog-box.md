@@ -2,8 +2,7 @@
 title: Nella finestra di dialogo Ricerca thread | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Thread Search
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47fd8c0cfa6f9acbe95af58e10f1e709ecf7c7d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44ce2c01bc943945439e0682b9462f24c7d9c5fd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="thread-search-dialog-box"></a>Finestra di dialogo Ricerca thread
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico in [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un **thread** finestra di visualizzazione. Scegliere quindi **trova Thread** dal **ricerca** menu.  

@@ -2,8 +2,7 @@
 title: Visualizza i thread nel Debugger | Documenti Microsoft
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 081d3d2289ff73b3e5ccacfc23fd8a5fe7eb292b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec5cdf340002c9f454c67b170b4e849360de0166
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>Visualizza i thread nel debugger di Visual Studio usando la finestra thread
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione sottoposta a debug. Per istruzioni dettagliate su come utilizzare il **thread** finestra, vedere [procedura dettagliata: eseguire il Debug utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md).

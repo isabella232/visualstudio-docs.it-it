@@ -2,8 +2,7 @@
 title: Debug, finestra di dialogo Opzioni | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 714712c08e3f8c85a600ea9556264d4f0f5d7a54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
 Il **debug** cartella, nel **opzioni** della finestra di dialogo di **strumenti** menu, sono disponibili le pagine seguenti, che consentono di specificare i debugger opzioni dello strumento.  

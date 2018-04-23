@@ -2,8 +2,7 @@
 title: 'Procedura: specificare una versione di .NET Framework per il debug | Documenti Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d3d94d4243e138d4b8f9753d02bbc184db6e377
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb8da54b53814e7f044c67855e8071c627cf2e1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procedura: specificare una versione di .NET Framework per il debug
 Il debugger di [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] supporta il debug delle versioni precedenti di Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], oltre che della versione corrente. Se si avvia un'applicazione da Visual Studio, il debugger è sempre di identificare la versione corretta del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] per l'applicazione a cui si esegue il debug. Se l'applicazione è già in esecuzione e si utilizza **allegarvi**, il debugger potrebbe non essere sempre in grado di identificare una versione precedente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. In questo caso, verrà visualizzato un messaggio di errore simile al seguente:  

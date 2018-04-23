@@ -1,10 +1,8 @@
 ---
-title: 'CA1726: Utilizzare termini preferiti | Documenti Microsoft'
-ms.custom: ''
+title: 'CA1726: Utilizzare termini preferiti'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -16,58 +14,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e37ed041d03e82a63929a7bc525c73ea4062333
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41cb61db3916bdb5879931de28d6b87ccdde4853
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizzare termini preferiti
-|||  
-|-|-|  
-|TypeName|UsePreferredTerms|  
-|CheckId|CA1726|  
-|Category|Microsoft.Naming|  
-|Modifica importante|Sostanziale - Quando generato su assembly<br /><br /> Non sostanziale - Quando generato su parametri di tipo|  
-  
-## <a name="cause"></a>Causa  
- Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine Flag o flag.  
-  
-## <a name="rule-description"></a>Descrizione della regola  
- Questa regola analizza un identificatore in token. Ogni singolo token e ogni combinazione di due token contigui viene confrontato con i termini che vengono compilati nella regola e nella sezione obsoleto dei dizionari personalizzati. La tabella seguente illustra i termini che vengono compilati nella regola e le alternative preferite.  
-  
-|Termine obsoleto|Termine preferito|  
-|-------------------|--------------------|  
-|non sono|Non|  
-|Annullato|Annullato|  
-|Impossibile|Non è possibile|  
-|ComPlus|EnterpriseServices|  
-|Couldnt|CouldNot|  
-|Didnt|DidNot|  
-|Doesnt|Non|  
-|Non|Si|  
-|Flag o Flags|Non vi è alcun termine di sostituzione. Non usare.|  
-|non veniva|HadNot|  
-|Non è ancora|HasNot|  
-|non sono stati|HaveNot|  
-|Indici|Indexes|  
-|non è|IsNot|  
-|Account di accesso|Accesso|  
-|Disconnessione|Disconnessione|  
-|Shouldnt|ShouldNot|  
-|Sign-on|Accedi|  
-|Conclusione|Disconnessione|  
-|Wasnt|WasNot|  
-|non sono stati|WereNot|  
-|Non riuscita|Non|  
-|Wouldnt|WouldNot|  
-|Scrivibile|Scrivibile|  
-  
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- Per correggere una violazione di questa regola, sostituire il termine con il termine alternativo preferito.  
-  
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
- Escludere un avviso da questa regola solo se il nome dell'identificatore è intenzionale e riguarda in particolare il termine originale anziché il termine preferito.  
-  
-## <a name="related-rules"></a>Regole correlate  
+|||
+|-|-|
+|TypeName|UsePreferredTerms|
+|CheckId|CA1726|
+|Category|Microsoft.Naming|
+|Modifica importante|Sostanziale - Quando generato su assembly<br /><br /> Non sostanziale - Quando generato su parametri di tipo|
+
+## <a name="cause"></a>Causa
+ Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine Flag o flag.
+
+## <a name="rule-description"></a>Descrizione della regola
+ Questa regola analizza un identificatore in token. Ogni singolo token e ogni combinazione di due token contigui viene confrontato con i termini che vengono compilati nella regola e nella sezione obsoleto dei dizionari personalizzati. La tabella seguente illustra i termini che vengono compilati nella regola e le alternative preferite.
+
+|Termine obsoleto|Termine preferito|
+|-------------------|--------------------|
+|non sono|Non|
+|Annullato|Annullato|
+|Impossibile|Non è possibile|
+|ComPlus|EnterpriseServices|
+|Couldnt|CouldNot|
+|Didnt|DidNot|
+|Doesnt|Non|
+|Non|Si|
+|Flag o Flags|Non vi è alcun termine di sostituzione. Non usare.|
+|non veniva|HadNot|
+|Non è ancora|HasNot|
+|non sono stati|HaveNot|
+|Indici|Indexes|
+|non è|IsNot|
+|Account di accesso|Accesso|
+|Disconnessione|Disconnessione|
+|Shouldnt|ShouldNot|
+|Sign-on|Accedi|
+|Conclusione|Disconnessione|
+|Wasnt|WasNot|
+|non sono stati|WereNot|
+|Non riuscita|Non|
+|Wouldnt|WouldNot|
+|Scrivibile|Scrivibile|
+
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
+ Per correggere una violazione di questa regola, sostituire il termine con il termine alternativo preferito.
+
+## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+ Escludere un avviso da questa regola solo se il nome dell'identificatore è intenzionale e riguarda in particolare il termine originale anziché il termine preferito.
+
+## <a name="related-rules"></a>Regole correlate
  [Avvisi di denominazione](../code-quality/naming-warnings.md)

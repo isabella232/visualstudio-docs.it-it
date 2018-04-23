@@ -2,8 +2,7 @@
 title: Personalizzazione dei controlli runtime nativo | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
@@ -25,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c0318a5a711fd99338fb3d4e812cb3b07c449fc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="native-run-time-checks-customization"></a>Personalizzazione dei controlli runtime nativi
 Quando esegue la compilazione con **/RTC** (controlli in fase di esecuzione) oppure utilizzare il `runtime_checks` pragma, la libreria di run-time C fornisce i controlli runtime nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:  
