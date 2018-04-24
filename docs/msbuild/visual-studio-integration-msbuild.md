@@ -1,12 +1,9 @@
 ---
 title: Integrazione di Visual Studio (MSBuild) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 Visual Studio ospita [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per caricare e compilare progetti gestiti. Poiché [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è responsabile del progetto, in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile usare efficacemente praticamente qualsiasi progetto nel formato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anche se il progetto è stato creato da uno strumento diverso e presenta un processo di compilazione personalizzato.  
@@ -54,10 +50,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono analizzate le condizioni negli elementi `PropertyGroup`, `ItemGroup`, `Import`, Property e Item.  
+ A tale scopo, in[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono analizzate le condizioni negli elementi `PropertyGroup`, `ItemGroup`, `Import`, Property e Item.  
   
 ## <a name="additional-build-actions"></a>Operazioni di compilazione aggiuntive  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di modificare il nome del tipo di elemento di un file in un progetto mediante la proprietà **Azione di compilazione** della finestra [Proprietà file](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). I nomi dei tipi di elementi`Compile`, `EmbeddedResource`, `Content`e `None` sono sempre elencati in questo menu, insieme a tutti gli altri nomi di tipi di elementi già presenti nel progetto. Per accertarsi che tutti i nomi dei tipi di elementi personalizzati siano sempre disponibili in questo menu, è possibile aggiungerli a un tipo di elemento denominato `AvailableItemName`. Ad esempio, aggiungendo il codice riportato di seguito al file di progetto verrà aggiunto il tipo personalizzato `JScript` a questo menu per tutti i progetti che lo importano:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di modificare il nome del tipo di elemento di un file in un progetto mediante la proprietà **Azione di compilazione** della finestra [Proprietà file](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) . I nomi dei tipi di elementi`Compile`, `EmbeddedResource`, `Content`e `None` sono sempre elencati in questo menu, insieme a tutti gli altri nomi di tipi di elementi già presenti nel progetto. Per accertarsi che tutti i nomi dei tipi di elementi personalizzati siano sempre disponibili in questo menu, è possibile aggiungerli a un tipo di elemento denominato `AvailableItemName`. Ad esempio, aggiungendo il codice riportato di seguito al file di progetto verrà aggiunto il tipo personalizzato `JScript` a questo menu per tutti i progetti che lo importano:  
   
 ```xml  
 <ItemGroup>  
@@ -127,7 +123,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Per trovare e avviare l'assembly di output e connettere il debugger, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è necessario che le proprietà `OutputPath`, `AssemblyName`e `OutputType` siano definite correttamente. La connessione del debugger avrà esito negativo se tramite il processo di compilazione il compilatore non genererà un file PDB.  
   
 ## <a name="design-time-target-execution"></a>Esecuzione delle destinazioni in fase di progettazione  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene effettuato un tentativo di eseguire le destinazioni con determinati nomi al momento del caricamento di un progetto. Tali destinazioni includono `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] esegue tali destinazioni in modo da consentire l'inizializzazione del compilatore per fornire IntelliSense, l'inizializzazione del debugger e la risoluzione dei riferimenti visualizzati in Esplora soluzioni. Se tali destinazioni non sono presenti, il progetto verrà caricato e compilato correttamente, ma la fase di progettazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non sarà completamente funzionale.  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene effettuato un tentativo di eseguire le destinazioni con determinati nomi al momento del caricamento di un progetto. Tali destinazioni includono `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] esegue tali destinazioni in modo da consentire l'inizializzazione del compilatore per fornire IntelliSense, l'inizializzazione del debugger e la risoluzione dei riferimenti visualizzati in Esplora soluzioni. Se tali destinazioni non sono presenti, il progetto verrà caricato e compilato correttamente, ma la fase di progettazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non sarà completamente funzionale.  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Per modificare direttamente un progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , è possibile aprire il file di progetto nell'editor XML di Visual Studio.  
@@ -147,12 +143,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Ricarica progetto**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense e convalida  
- Quando si usa l'editor XML per modificare i file di progetto, IntelliSense e la convalida si basano sui file di schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tali file vengono installati nella cache dello schema, che si trova in *\<Directory di installazione di Visual Studio>*Xml\Schemas\1040\MSBuild.  
+ Quando si usa l'editor XML per modificare i file di progetto, IntelliSense e la convalida si basano sui file di schema di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tali file vengono installati nella cache dello schema, che si trova in *\<Directory di installazione di Visual Studio>* Xml\Schemas\1040\MSBuild.  
   
  I tipi [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] principali sono definiti in Microsoft.Build.Core.xsd e i tipi comuni usati da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sono definiti in Microsoft.Build.CommonTypes.xsd. Per personalizzare gli schemi in modo da disporre di IntelliSense e della funzionalità di convalida per attività, proprietà e nomi di tipi di elementi personalizzati, è possibile modificare Microsoft.Build.xsd oppure creare uno schema personalizzato che includa lo schema CommonTypes o Core. Se viene creato uno schema personalizzato, è necessario indicare all'editor XML come individuarlo tramite la finestra **Proprietà** .  
   
 ## <a name="editing-loaded-project-files"></a>Modifica dei file di progetto caricati  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il contenuto dei file di progetto e dei file importati dai file di progetto viene memorizzato nella cache. Se si modifica un file di progetto caricato, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene automaticamente richiesto di ricaricare il progetto in modo da rendere effettive le modifiche. Tuttavia, se si modifica un file importato da un progetto caricato, non verrà richiesto il ricaricamento e sarà necessario scaricare e ricaricare manualmente il progetto per rendere effettive le modifiche.  
+ In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] il contenuto dei file di progetto e dei file importati dai file di progetto viene memorizzato nella cache. Se si modifica un file di progetto caricato, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene automaticamente richiesto di ricaricare il progetto in modo da rendere effettive le modifiche. Tuttavia, se si modifica un file importato da un progetto caricato, non verrà richiesto il ricaricamento e sarà necessario scaricare e ricaricare manualmente il progetto per rendere effettive le modifiche.  
   
 ## <a name="output-groups"></a>Gruppi di output  
  Diverse destinazioni definite in Microsoft.Common.targets hanno nomi che terminano con `OutputGroups` o `OutputGroupDependencies`. In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] queste destinazioni vengono chiamate per ottenere elenchi specifici di output di progetto. Ad esempio, la destinazione `SatelliteDllsProjectOutputGroup` crea un elenco di tutti gli assembly satellite che verranno creati da una compilazione. Tali gruppi di output vengono usati da funzionalità come la pubblicazione, la distribuzione e i riferimenti progetto per progetto. I progetti per i quali tali gruppi non sono definiti vengono caricati e compilati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ma alcune funzionalità potrebbero non funzionare correttamente.  

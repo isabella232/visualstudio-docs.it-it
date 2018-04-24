@@ -1,12 +1,10 @@
 ---
 title: Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a089bc9fe61d1ddc8e4510c4da03235c7ab782ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni** e quindi selezionare **Ambiente/Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  

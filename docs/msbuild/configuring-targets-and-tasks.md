@@ -1,24 +1,20 @@
 ---
-title: "Configurazione di destinazioni e attività | Microsoft Docs"
-ms.custom: 
+title: Configurazione di destinazioni e attività | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38e6145d351a9c026dd4bb5c4105a3606a71f591
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f71ef4a5b2471dd8b15ac96b61a67dd159b12833
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configuring-targets-and-tasks"></a>Configurazione di destinazioni e attività
 È possibile configurare le destinazioni e le attività di MSBuild per l'esecuzione out-of-process con MSBuild, in modo che sia possibile specificare come destinazione contesti che differiscono da quello corrente in cui è in esecuzione l'applicazione. Ad esempio, è possibile specificare come destinazione un'applicazione .NET Framework 2.0 a 32 bit mentre nel computer di sviluppo è in esecuzione un sistema operativo .NET Framework 4.5 a 64 bit. Inoltre, è possibile specificare come destinazione computer in cui viene eseguito .NET Framework 4 o versione precedente. La combinazione tra 32 o 64 bit e la versione specifica di .NET Framework viene definita *contesto di destinazione*.  

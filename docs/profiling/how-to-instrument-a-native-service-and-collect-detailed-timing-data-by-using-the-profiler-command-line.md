@@ -1,23 +1,20 @@
 ---
 title: 'Procedura: Instrumentare un servizio nativo e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0b393114c1e5fbc4f4b3c746eba422a07c65e662
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9dcd4052078a3a7327b0a48fca8812a2d5393917
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: instrumentare un servizio nativo e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un servizio (C/C++) nativo e raccogliere dati di intervallo dettagliati.  

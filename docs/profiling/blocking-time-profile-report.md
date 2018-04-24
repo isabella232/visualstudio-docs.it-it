@@ -1,29 +1,24 @@
 ---
 title: Rapporto profili del tempo di blocco | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
 - Concurrency Visualizer, Blocking Time Profile Report
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="blocking-time-profile-report"></a>Report del profilo di durata del blocco
 I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli stack di chiamate specifici di ogni categoria di blocco, ad esempio "I/O" o "Sincronizzazione". Il rapporto Precedenza elenca i processi che precedevano il processo corrente con il numero di istanze di precedenza. Per compilare il rapporto profili di blocco, lo strumento raccoglie chiamate API di blocco e le accumula in un albero degli stack di chiamate. I dati visualizzati in questi rapporti variano in base all'intervallo di tempo corrente, ai thread nascosti e ai seguenti due filtri che possono essere applicati:  
@@ -65,4 +60,4 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
  Il rapporto relativo all'elaborazione dell'interfaccia utente indica le chiamate responsabili dei segmenti di blocco nei blocchi di elaborazione dell'interfaccia utente, oltre ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione Thread)
+ [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

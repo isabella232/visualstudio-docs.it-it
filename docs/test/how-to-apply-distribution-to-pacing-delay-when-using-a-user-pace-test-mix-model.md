@@ -1,19 +1,19 @@
 ---
 title: Applicare la distribuzione al ritardo velocità per i test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 047a8fd8dea60ca86c39922f8cd0aed6e65ec6d3
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5140a3ca9cb8274a9b6d9f74260adadfed6201ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model"></a>Procedura: applicare la distribuzione al ritardo velocità quando si utilizza un modello di combinazione di test in base alla velocità dell'utente
 
@@ -52,7 +52,7 @@ La proprietà **Applica distribuzione a ritardo velocità** viene impostata tram
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

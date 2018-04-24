@@ -1,27 +1,22 @@
 ---
-title: "Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd) | Microsoft Docs"
-ms.custom: 
+title: Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 606a6c021247a00b2244986d5f91ad19d6a167f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
 L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) permette di raccogliere tracce dalla riga di comando, in modo da poterle visualizzare nel Visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  

@@ -1,29 +1,24 @@
 ---
 title: Visualizzazione Utilizzo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
 helpviewer_keywords:
 - Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36a3d46186d98dbcd3d89ebb97003ba6e24fb3b7
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="utilization-view"></a>Visualizzazione Uso
 La **visualizzazione Utilizzo** mostra le informazioni relative a CPU, GPU e altre risorse di sistema usate dal processo corrente. (Scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Viene indicato l'utilizzo medio dei core da parte del processo analizzato, del processo inattivo, del processo di sistema e di altri processi in esecuzione nel sistema nel tempo. Non viene indicato quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico. La visualizzazione viene generata dividendo il tempo di profilatura in brevi segmenti di tempo. Per ogni segmento, nel grafico viene rappresentato il numero medio di thread di processo in esecuzione nei core logici durante l'intervallo.  

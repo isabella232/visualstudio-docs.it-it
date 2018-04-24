@@ -1,7 +1,7 @@
 ---
 title: Assegnazione di ruoli a un test controller e a un agente di test per l'esecuzione di test automatizzati in Visual Studio | Microsoft Docs
 ms.date: 10/20/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - testing, walkthroughs, test controller and test agents
 - test agent, walkthrough
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b078d5ea1adcc0d40d9f0d570febf6592c090669
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 932a6fe470812fc647cad653fb95ba7ca8997ab0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -43,7 +43,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2.  Nel riquadro **Modelli installati** scegliere **Impostazioni test**.
+2.  Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
 
 3.  Nella casella **Nome** digitare **TestSettingDistributedTestWalkthrough**.
 
@@ -56,7 +56,7 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
      È quindi possibile modificare e salvare i valori delle impostazioni di test.
 
     > [!NOTE]
-    > Ogni impostazione di test creata viene elencata tra le opzioni disponibili per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
+    > Ogni impostazione test creata viene elencata tra le opzioni disponibili per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
 
 5.  In **Nome** digitare il nome per le impostazioni di test.
 

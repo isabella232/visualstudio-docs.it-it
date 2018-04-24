@@ -1,7 +1,7 @@
 ---
 title: Creare ed eseguire un test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/01/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, in load tests
 - unit tests, load test walkthrough
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 53bde20393f5acd55295bf106cb35f6f09e68bf3
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: cc59ffe0e394a89f8277470a2fcf9099aedccbbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procedura dettagliata: Creare ed eseguire un test di carico contenente unit test
 
@@ -145,6 +145,6 @@ In questa procedura dettagliata, si completeranno le attività seguenti:
 
 - [Modifica della combinazione di test per specificare quali test includere in uno scenario di test di carico](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [Specifica dei tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Modifica dei modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Modifica di modelli di combinazione di testo per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

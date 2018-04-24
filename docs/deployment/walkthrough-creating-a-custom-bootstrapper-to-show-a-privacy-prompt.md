@@ -2,8 +2,7 @@
 title: "Procedura dettagliata: Creazione di un programma di avvio automatico personalizzato per visualizzare l'informativa sulla Privacy dei messaggi di richiesta | Documenti Microsoft"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - Windows Installer deployment, prerequisites
 - prerequisites [.NET Framework], custom bootstrapper package
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f20389e0487fd548ac239503faae01adb7dbdf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy
 È possibile configurare le applicazioni ClickOnce per aggiornare automaticamente quando gli assembly con le versioni più recenti di file e le versioni di assembly disponibili. Per assicurarsi che i clienti di consenso per questo comportamento, è possibile visualizzare un prompt di privacy a essi. Quindi, è possibile scegliere se concedere l'autorizzazione per l'applicazione per aggiornare automaticamente. Se l'applicazione non è consentito l'aggiornamento automatico, non viene installato.  

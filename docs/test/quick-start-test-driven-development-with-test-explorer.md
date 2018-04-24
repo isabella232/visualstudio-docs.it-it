@@ -2,17 +2,17 @@
 title: Sviluppo basato su test con Esplora test in Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5769fadf05040d253a9bc637177c684995bb66d7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
 
@@ -37,7 +37,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
     1.  Creare un progetto di test.
 
-         Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, **Visual C#**o **Visual C++**e quindi scegliere **Test**.
+         Nella finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, **Visual C#** o **Visual C++** e quindi scegliere **Test**.
 
          Selezionare **Progetto unit test**.
 

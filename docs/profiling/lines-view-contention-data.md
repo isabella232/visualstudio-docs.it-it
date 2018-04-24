@@ -1,27 +1,22 @@
 ---
 title: 'Visualizzazione Righe: dati sui conflitti | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1465b9d8a14d5889bf856caa52b807ee2954cd0a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.  

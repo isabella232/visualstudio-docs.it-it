@@ -1,23 +1,20 @@
 ---
 title: Raccolta delle statistiche dell'applicazione per i servizi tramite il metodo di campionamento del profiler | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 96c4bb5a9ea5b7ff85f115048fc057191884a016
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e030b6b770a9748363c0ddc4809baeed458af048
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Raccolta delle statistiche dell'applicazione per i servizi tramite il metodo di campionamento del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per i servizi Windows tramite il metodo di campionamento dalla riga di comando.  

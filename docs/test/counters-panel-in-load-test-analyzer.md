@@ -1,19 +1,19 @@
 ---
 title: Pannello dei contatori per l'analisi dei test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, counters panel
 ms.assetid: e1a388d7-5d33-4631-931a-5653ac4aefdc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e693872784519f5cdcacbd0691b6f69334af22e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f6543cc42d6ac62a252b450a232700b17f05b719
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usare il pannello dei contatori nella visualizzazione Grafici e nella visualizzazione Tabelle
 
@@ -74,7 +74,7 @@ Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 Nelle impostazioni esecuzione test dell'Editor test di carico è disponibile una proprietà denominata **Intervallo archiviazione dettagli**. Se la proprietà **Intervallo archiviazione dettagli** è abilitata, il tempo richiesto per eseguire separatamente ogni test, transazione e pagina durante il test di carico verrà archiviato nel repository dei risultati del test di carico. Ciò consente di visualizzare i dati del novantesimo e del novantacinquesimo percentile nell'Analizzatore test di carico, nelle tabelle Test, Transazioni e Pagine.
 
-Per abilitare la proprietà **Intervallo archiviazione dettagli** nelle proprietà delle impostazioni di esecuzione test sono disponibili due opzioni: **StatisticsOnly** e **AllIndividualDetails**. Con entrambe le opzioni viene determinato l'intervallo di tutti i singoli test, pagine e transazioni e dai singoli dati di intervallo vengono calcolati i dati percentili. La differenza per quanto riguarda l'opzione **StatisticsOnly** consiste nel fatto che i singoli dati di intervallo vengono eliminati dal repository dopo il calcolo dei dati percentili. In questo modo si riduce la quantità di spazio richiesta nel repository quando si usano i dettagli dell'intervallo. Gli utenti avanzati potrebbero tuttavia voler elaborare i dati dettaglio dell'intervallo in altri modi, usando strumenti SQL. In questo caso è consigliabile usare l'opzione **AllIndividualDetails** in modo da rendere disponibili i dati dettaglio dell'intervallo per tale elaborazione. Se inoltre si imposta la proprietà su **AllIndividualDetails**, al termine dell'esecuzione del test di carico sarà possibile analizzare l'attività dell'utente virtuale usando il Grafico attività utente virtuale nell'analizzatore test di carico. Per altre informazioni, vedere [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Per abilitare la proprietà **Intervallo archiviazione dettagli** nelle proprietà delle impostazioni di esecuzione test sono disponibili due opzioni: **StatisticsOnly** e **AllIndividualDetails**. Con entrambe le opzioni viene determinato l'intervallo di tutti i singoli test, pagine e transazioni e dai singoli dati di intervallo vengono calcolati i dati percentili. La differenza per quanto riguarda l'opzione **StatisticsOnly** consiste nel fatto che i singoli dati di intervallo vengono eliminati dal repository dopo il calcolo dei dati percentili. In questo modo si riduce la quantità di spazio richiesta nel repository quando si usano i dettagli dell'intervallo. Gli utenti avanzati potrebbero tuttavia voler elaborare i dati dettaglio dell'intervallo in altri modi, usando strumenti SQL. In tal caso, è consigliabile usare l'opzione **AllIndividualDetails** in modo da rendere disponibili i dati dettaglio dell'intervallo per l'elaborazione. Se inoltre si imposta la proprietà su **AllIndividualDetails**, al termine dell'esecuzione del test di carico sarà possibile analizzare l'attività dell'utente virtuale usando il Grafico attività utente virtuale nell'analizzatore test di carico. Per altre informazioni, vedere [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 La quantità di spazio necessaria nel repository dei risultati del test di carico per l'archiviazione dei dati dettaglio dell'intervallo potrebbe essere elevata, soprattutto per i test di carico a esecuzione prolungata. Inoltre, è necessario più tempo per archiviare questi dati nel repository dei risultati alla fine del test di carico, in quanto tali dati vengono archiviati negli agenti del test di carico fino al termine dell'esecuzione del test di carico. Quando il test di carico viene completato, i dati vengono archiviati nel repository. La proprietà **Intervallo archiviazione dettagli** è abilitata per impostazione predefinita. Se ciò costituisce un problema per l'ambiente di test, è consigliabile impostare **Intervallo archiviazione dettagli** su **Nessuno**.
 

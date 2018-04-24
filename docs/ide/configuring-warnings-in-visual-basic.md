@@ -2,28 +2,24 @@
 title: Configurazione degli avvisi in Visual Basic | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] include un set di avvisi relativi al codice che può causare errori di runtime. È possibile usare tali informazioni per scrivere codice migliore, più semplice e rapido e con meno errori. Ad esempio il compilatore genera un avviso quando l'utente cerca di chiamare un membro di una variabile di oggetto non assegnata, di completare l'esecuzione di una funzione senza impostare il valore restituito o di eseguire un blocco `Try` con errori nel codice per l'intercettazione delle eccezioni.  
@@ -113,7 +109,7 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
  ID: 42105 (funzione), 42016 (operatore)  
   
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>Avviso di modificatore Overloads usato in un modulo  
- Viene generato quando il modificatore `Overloads` viene usato in `Module`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
+ Viene generato quando il modificatore `Overloads` viene usata in `Module`. L'impostazione predefinita per i nuovi progetti è On (attivato).  
   
  ID: 42028  
   

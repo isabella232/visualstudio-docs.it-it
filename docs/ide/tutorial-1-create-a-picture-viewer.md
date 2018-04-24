@@ -1,23 +1,21 @@
 ---
 title: 'Esercitazione 1: Creare un visualizzatore di immagini | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: creare un visualizzatore immagini
 In questa esercitazione si compila un programma che carica un'immagine da un file e la visualizza in una finestra. Viene illustrato come trascinare i controlli quali pulsanti e caselle immagine sul form, impostare le relative proprietà e utilizzare i contenitori per ridimensionare agevolmente il form. Si inizia inoltre a scrivere il codice. Vengono illustrate le seguenti procedure:  

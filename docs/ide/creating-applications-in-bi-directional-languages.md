@@ -2,28 +2,24 @@
 title: Creare applicazioni in lingue bidirezionali | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aabfa2573ead0adb8db80a3a2fbeb76e5cd7b5b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 33d8b601c3c099068c68ba67e11aaf65365ea022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creazione di applicazioni in lingue bidirezionali
 È possibile usare Visual Studio per creare applicazioni che visualizzano correttamente il testo nelle lingue scritte da destra a sinistra, tra cui l'arabo e l'ebraico. Per alcune funzionalità basta impostare delle proprietà. In altri casi è necessario implementare le funzionalità nel codice.  

@@ -1,23 +1,21 @@
 ---
-title: 'Passaggio 8: scrivere il codice per il gestore dell''evento del pulsante Mostra immagine | Microsoft Docs'
-ms.custom: 
+title: "Passaggio 8: scrivere il codice per il gestore dell'evento del pulsante Mostra immagine | Microsoft Docs"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
-caps.latest.revision: "24"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b7c76492e3d07b0c32edb4ea91a5b3c152f1a206
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d72997e827db9842761aadbb70a7e464995d2d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: scrivere il codice per il gestore dell'evento del pulsante Visualizza immagine
 In questo passaggio si imposta il funzionamento del pulsante **Mostra immagine** nel modo seguente:  

@@ -1,30 +1,26 @@
 ---
 title: Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a064c19dd12c0ba2e14ce3278cf7a1b36147a5d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 98ead50019e5ad654492a9758a61a280528aac68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
 È possibile usare la tastiera oltre al mouse per eseguire operazioni di spostamento in Progettazione classi e nella finestra **Dettagli classe**.

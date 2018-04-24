@@ -1,13 +1,9 @@
 ---
 title: Visualizzatore di concorrenza | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.viewnavigation
 - vs.cv.overview
@@ -16,17 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency Visualizer, Concurrency Visualizer
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b811b664df5d64a2235d641a6facf6cec889fe4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebc0864db659642336368d20a314057d63859c30
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer"></a>Visualizzatore di concorrenze
 > [!NOTE]
@@ -50,12 +45,12 @@ ms.lasthandoff: 12/22/2017
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Utilization View](../profiling/utilization-view.md) (Visualizzazione Utilizzo)|Descrive come visualizzare e analizzare l'attività del sistema attraverso tutti i processori.|  
-|[Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione Thread)|Descrive come analizzare le interazioni tra thread nel programma.|  
+|[Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)|Descrive come analizzare le interazioni tra thread nel programma.|  
 |[Cores View](../profiling/cores-view.md) (Visualizzazione Core)|Descrive come analizzare la migrazione di thread tra componenti principali.|  
 |[Common Patterns for Poorly-Behaved Multithreaded Applications](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md) (Modelli comuni per applicazioni multithreading con comportamenti non validi)|Descrive vari modelli comuni e ne illustra l'uso nel Visualizzatore di concorrenza.|  
 |[Sviluppo parallelo nel blog di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Fornisce suggerimenti e procedure consigliate per il Visualizzatore di concorrenza.|  
 |[Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)|Fornisce informazioni di riferimento relative a report e visualizzazioni degli strumenti per la profilatura di Visual Studio.|  
-|[Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md) (SDK del visualizzatore di concorrenza)|Spiega come eseguire la strumentazione del codice sorgente per visualizzare informazioni aggiuntive nel Visualizzatore di concorrenza.|  
+|[SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)|Spiega come eseguire la strumentazione del codice sorgente per visualizzare informazioni aggiuntive nel Visualizzatore di concorrenza.|  
 |[Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Spiega come usare l'utilità riga di comando del Visualizzatore di concorrenza (CVCollectionCmd.exe) per raccogliere ed elaborare le tracce sulle macchine che non hanno Visual Studio.|  
   
 ## <a name="see-also"></a>Vedere anche  

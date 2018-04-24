@@ -2,11 +2,8 @@
 title: Attività AssignCulture | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-caps.latest.revision: 10
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40fb47caea1b9fcb0d25d45495cf3e3c1d3e04fb
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 26adf9bd97e10e25402db100ebb0140917ac6143
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="assignculture-task"></a>Attività AssignCulture
 Questa attività accetta un elenco di elementi che possono contenere una stringa dell'identificatore di impostazioni cultura .NET valida come parte del nome file e genera elementi con metadati denominati `Culture` che contengono l'identificatore di impostazioni cultura corrispondente. Ad esempio, il nome di file Form1.fr-fr.resx contiene un identificatore di impostazioni cultura incorporato, "fr-fr", quindi questa attività genera un elemento con lo stesso nome di file con i metadati `Culture` uguali a `fr-fr`. L'attività genera inoltre un elenco di nomi di file con le impostazioni cultura rimosse dal nome del file.  

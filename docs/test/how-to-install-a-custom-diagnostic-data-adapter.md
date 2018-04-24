@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Installare un adattatore dati di diagnostica personalizzato in Visual Studio | Microsoft Docs'
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, installing
 ms.assetid: 907e65d8-0408-44b3-9e5e-e631892c1726
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c0d0f29a84d315ad384a2e7f43c4237ce083871b
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9154760fff3305343d06e63150c49db06c720ef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Procedura: installare un adattatore dati di diagnostica personalizzato
 
@@ -50,9 +50,9 @@ Se si è creato un adattatore dati di diagnostica personalizzato o si è ricevut
 
 3.  Se è stato creato e installato un editor di configurazione dell'adattatore dati di diagnostica, per configurare l'adattatore dati di diagnostica per le impostazioni test scegliere **Configura** accanto all'adattatore e apportare le modifiche. Quindi, scegliere **Salva**. Per altre informazioni su come creare un editor di configurazione per l'agente di raccolta dati di diagnostica, vedere [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
 
-4.  Se i test vengono eseguiti da Microsoft Test Manager, è possibile assegnare queste impostazioni test al piano di test prima di eseguire i test oppure usare il comando **Esegui con opzioni** per assegnare impostazioni test ed eseguire l'override delle impostazioni test. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+4.  Se i test vengono eseguiti da Microsoft Test Manager, è possibile assegnare queste impostazioni test al piano di test prima di eseguire i test oppure usare il comando **Esegui con opzioni** per assegnare impostazioni test ed eseguire l'override delle impostazioni test. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
-     Se i test vengono eseguiti da Visual Studio, è necessario impostare come attive queste impostazioni di test. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+     Se i test vengono eseguiti da Visual Studio, è necessario impostare come attive queste impostazioni di test. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
 5.  Eseguire i test utilizzando le impostazioni di test con l'adattatore dati di diagnostica selezionato.
 

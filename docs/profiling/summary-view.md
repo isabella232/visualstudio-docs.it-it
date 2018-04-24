@@ -1,13 +1,9 @@
 ---
 title: Visualizzazione Riepilogo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - profiling tools, Summary view
 - Summary view
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="summary-view"></a>Visualizzazione Riepilogo
 La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.  

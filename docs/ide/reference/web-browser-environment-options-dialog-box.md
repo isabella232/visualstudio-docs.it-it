@@ -1,12 +1,10 @@
 ---
 title: Web browser, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f618f9f056b59195561101f2f5634e60dc7be8e8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 494cb25555c77ebc0dce3c9267d5ab362f4d78ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.  

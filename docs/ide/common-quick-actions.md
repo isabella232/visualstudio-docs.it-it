@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 9bc6041adf0fdfb35e13fd8c3c989f149d69950a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -25,7 +25,7 @@ Le sezioni in questo argomento elencano alcune delle azioni rapide comuni applic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu Lampadina come ***"Modifica '*parola errata*' in '*parola corretta**'.  Ad esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu Lampadina come ***"Modifica '* parola errata *' in '* parola corretta**'.  Ad esempio:
 
 ```csharp
 // Before

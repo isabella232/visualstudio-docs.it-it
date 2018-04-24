@@ -1,30 +1,25 @@
 ---
 title: Analizzare il consumo di energia nelle app UWP | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 05b5b87afda20990f122597520b0e2cf7e9b7ac1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 Il profiler **Utilizzo di energia** di Visual Studio consente di analizzare il consumo di energia e potenza delle app UWP su dispositivi tablet a bassa potenza alimentati completamente o in parte dalle batterie integrate. In un dispositivo alimentato a batteria, un'applicazione che utilizza una quantità eccessiva di energia può causare l'insoddisfazione del cliente al punto tale da comportarne, alla fine, la disinstallazione. L'ottimizzazione del consumo di energia può aumentare l'adozione e l'uso dell'applicazione da parte dei clienti.  

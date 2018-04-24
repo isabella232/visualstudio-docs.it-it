@@ -2,24 +2,19 @@
 title: Analizzare il consumo delle risorse nelle app XAML in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
-caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 340ef03d7b9449f6fc9ee50a4c24afff03120e6f
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 Utilizzare il profiler **Sequenza temporale applicazione** per individuare e correggere problemi di prestazioni correlati all’interazione dell’applicazione nelle applicazioni XAML. Questo strumento consente di migliorare le prestazioni delle applicazioni XAML offrendo una visualizzazione dettagliata del consumo delle risorse delle applicazioni. È possibile analizzare il tempo impiegato dall'applicazione nella preparazione dei fotogrammi dell'interfaccia utente (layout e rendering), per soddisfare le richieste di rete e disco e in scenari come l’avvio dell’applicazione, il caricamento delle pagine e il ridimensionamento di Windows.  

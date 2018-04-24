@@ -1,28 +1,24 @@
 ---
 title: 'Procedura: Creare un tipo nullable (Progettazione classi) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cd01d0fd62e37ddca915caf367777b62a0aa6246
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Procedura: creare un tipo nullable (Progettazione classi)
 Alcuni tipi di valore non sempre hanno (o hanno bisogno di) un valore definito. Questa è una pratica comune nei database, in cui ad alcuni campi potrebbero non essere assegnati valori. Ad esempio, è possibile assegnare un valore null a un campo di database per indicare che non gli è stato ancora assegnato un valore.  

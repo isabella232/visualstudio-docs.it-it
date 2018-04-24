@@ -1,21 +1,21 @@
 ---
 title: Impostazioni di esecuzione del test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: d278323bd816a801d94d2d1c18755111afa43eed
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 498c581d1918fbd4565f821bf516a5301534d733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
+# <a name="load-test-run-settings-properties"></a>Caricare le proprietà delle impostazioni per l'esecuzione di test
 
 Le impostazioni di esecuzione di un test di carico determinano una serie di altre impostazioni, tra cui la durata del test, il livello di dettaglio della raccolta dei risultati e gli insiemi di contatori raccolti durante l'esecuzione del test. È possibile creare e archiviare più impostazioni di esecuzione per ogni test di carico e selezionare una determinata impostazioni da usare durante l'esecuzione del test. Quando si crea un test di carico usando la Creazione guidata test di carico, al test viene aggiunta un'impostazione esecuzione test iniziale.
 
@@ -93,7 +93,7 @@ Le impostazioni di esecuzione di un test di carico determinano una serie di altr
 
 1.  Aprire un test di carico.
 
-2.  Espandere la cartella **Impostazioni esecuzione test**.
+2.  Espandere la cartella **Impostazioni di esecuzione**.
 
 3.  Scegliere il nodo **Impostazioni esecuzione test**.
 

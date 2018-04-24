@@ -1,26 +1,23 @@
 ---
 title: Filtro delle visualizzazioni dei rapporti di prestazioni | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
 - Profiler Report View filter, profiling tools
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6bd2b335635f4fc83eb4b0857f9b5d785eb9dccc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-view-filter"></a>Filtro delle visualizzazioni dei rapporti di prestazioni
 La finestra del filtro delle visualizzazioni dei rapporti del profiler si trova nella parte superiore della finestra Rapporto di prestazioni. Se non è visibile, fare clic sul pulsante **Mostra filtro**.  

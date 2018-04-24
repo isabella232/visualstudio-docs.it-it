@@ -1,13 +1,10 @@
 ---
 title: Finestra Comando | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5093c409a86e4488ef7c572c9f4f847bd803bbfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.  
@@ -113,7 +109,7 @@ Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale val
  L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato. Nell'esempio riportato di seguito viene illustrato come cercare il criterio "^t".  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usare le virgolette per nomi di percorso con spazi  
- Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or**"C:\Programmi"**.  
+ Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   

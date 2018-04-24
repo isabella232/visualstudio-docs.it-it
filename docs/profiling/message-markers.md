@@ -1,27 +1,22 @@
 ---
 title: Marcatori messaggio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.message
 ms.assetid: 721f40ca-5af2-4a01-b8b6-2b90f6cb7f89
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e341db6e1c83e268d7074c2b8afed307f6c0840f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb0ff0bfb8f4b7abf3abc7f31204d963c1f0a68b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="message-markers"></a>Marcatori di messaggi
 Un marcatore del messaggio rappresenta l'output del log. Un messaggio è una stringa che viene emessa da un thread specifico in un momento specifico. È possibile esportare i messaggi in un file di testo per usarli con altri strumenti. È possibile posizionare il puntatore del mouse su un messaggio nel visualizzatore di concorrenza per visualizzare la stringa del messaggio. È anche possibile visualizzare tutti i marcatori del messaggio nel [rapporto Marcatori](../profiling/markers-report.md).  La figura seguente mostra un marcatore del messaggio.  
@@ -31,4 +26,4 @@ Un marcatore del messaggio rappresenta l'output del log. Un messaggio è una str
   
 ## <a name="see-also"></a>Vedere anche  
  [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)   
- [Concurrency Visualizer SDK](../profiling/concurrency-visualizer-sdk.md) (SDK del visualizzatore di concorrenza)
+ [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

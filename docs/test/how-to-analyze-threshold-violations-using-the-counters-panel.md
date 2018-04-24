@@ -1,19 +1,19 @@
 ---
 title: Violazioni di soglia per i test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, threshold violations
 ms.assetid: 0126d7b7-0538-4ea9-9046-6556654b3b9d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c511bb3edf8ad8277b367733f85108d9587898e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 6acb9eec16107134dc03765da82008a01b599e4b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Procedura: analizzare le violazioni di soglia utilizzando il pannello dei contatori nell'Analizzatore test di carico
 
@@ -25,7 +25,7 @@ Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualiz
 
  L'icona relativa a una violazione di soglia viene propagata dal nodo dell'albero dove risiede il contatore in errore fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile in un albero che non è stato espanso. Un esempio dell'icona può essere visualizzato nel nodo **Computer** nel pannello Contatori nella figura precedente.
 
- L'icona sarà una delle seguenti:
+ e possono essere una delle seguenti:
 
  ![Nessuna violazione di soglia](../test/media/icon_ltest_1.gif "Icon_LTest_1") Non si è verificata alcuna violazione di soglia.
 

@@ -1,7 +1,7 @@
 ---
 title: Combinazione di test per uno scenario di test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, adding tests
 - test mix
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20437bf88d62943d6f0dbf3d9df320836c5e9e36
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 
@@ -88,4 +88,4 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)

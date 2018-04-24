@@ -1,7 +1,7 @@
 ---
 title: Dati di Intellitrace in Visual Studio | Microsoft Docs
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04c4c1cd4429228ffa90e06ac9675901602c3cd0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 
@@ -71,7 +71,7 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 5.  Scegliere la scheda **Generale**. Selezionare **Solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante i test.
 
-     **-**oppure
+     **-** oppure
 
      Selezionare **Eventi IntelliTrace e informazioni sulle chiamate** per registrare eventi di diagnostica e traccia a livello di metodo in cui vengono mostrate le informazioni sulle chiamate. Questo livello di traccia potrebbe avere un impatto sulle prestazioni quando si eseguono i test.
 

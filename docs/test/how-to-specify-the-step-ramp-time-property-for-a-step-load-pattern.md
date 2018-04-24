@@ -1,19 +1,19 @@
 ---
 title: Tempo di preparazione del passaggio per un modello di carico passaggio per i test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdf692057fdd99ee201b38c14454ccd29109d765
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0ed9a9ec360072c45ea2f59483e031dfe856b8e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedura: specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio
 
@@ -68,7 +68,7 @@ La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, a
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)
 - [Modifica dei modelli di carico per modellare le attività utente virtuali](../test/edit-load-patterns-to-model-virtual-user-activities.md)

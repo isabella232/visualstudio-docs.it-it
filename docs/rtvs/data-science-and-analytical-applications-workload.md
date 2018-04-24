@@ -1,25 +1,20 @@
 ---
-title: Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati in Visual Studio | Microsoft Docs
+title: Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati
 description: Il carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati in Visual Studio riunisce Python, R, F# e le rispettive distribuzioni di runtime, inclusa Anaconda.
-ms.custom: 
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-- devlang-python
-ms.tgt_pltfrm: 
-ms.topic: landing-page
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs - vs-python
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3c84e2f3f79d49596ccd24f9f99da06eecc04351
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati
 
@@ -45,7 +40,7 @@ Per impostazione predefinita, il carico di lavoro installa le opzioni seguenti, 
   - Supporto linguaggio Python
   - [Anaconda3 a 64 bit](https://www.continuum.io) (Una distribuzione di Python che include librerie complete di data science e un interprete Python)
   - Supporto Web Python
-  - - Supporto modello Cookiecutter
+  - Supporto modello Cookiecutter
 - R:
   - Supporto linguaggio R
   - Supporto runtime per strumenti di sviluppo R

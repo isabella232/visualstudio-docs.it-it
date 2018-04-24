@@ -1,23 +1,21 @@
 ---
 title: 'Esercitazione 2: creare un quiz matematico a tempo | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
-caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 049bae0ee8665a17836ba0add5c442680e0a609d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 56466d91f336be679f2f82919c537a95e352a60d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: creare un quiz matematico a tempo
 In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a quattro problemi aritmetici casuali entro il tempo specificato. Vengono illustrate le seguenti procedure:  

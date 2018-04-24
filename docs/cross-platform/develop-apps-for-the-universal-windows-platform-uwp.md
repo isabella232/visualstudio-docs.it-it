@@ -1,23 +1,21 @@
 ---
 title: Sviluppare app per la piattaforma UWP (Universal Windows Platform) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/24/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: eb180dfa5550cf6237697c4e214a3742b195b065
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Windows, è possibile eseguire la stessa app su qualsiasi dispositivo Windows 10, dai telefoni ai desktop. È possibile creare queste app di Windows universale usando Visual Studio e gli strumenti di sviluppo di app di Windows universale.  

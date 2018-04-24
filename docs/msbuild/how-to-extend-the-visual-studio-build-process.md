@@ -1,29 +1,25 @@
 ---
 title: 'Procedura: Estendere il processo di compilazione di Visual Studio | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
 - MSBuild, overriding DependsOn properties
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9605bff5726de107019c9204c76e6e82b8d9f1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c6d373a6d5296e535069beeeb6ad551ad93a9444
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: estendere il processo di compilazione di Visual Studio
 Il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è definito da una serie di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con estensione targets che vengono importati nel file di progetto. Uno di questi file importati, Microsoft.Common.targets, può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo argomento illustra due metodi che è possibile usare per estendere il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

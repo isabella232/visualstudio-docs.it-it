@@ -1,30 +1,26 @@
 ---
 title: Vai alla riga | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.gotoline
 helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99197e9aa5937273b8ea21847cb6aad797464a04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 79b88ae959ef2fb4e63b30ced7c28d5c7c4a13ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="go-to-line"></a>Vai alla riga
 Questa finestra di dialogo consente di passare a una riga specifica nel documento attivo. Per accedere a questa finestra di dialogo, aprire un documento per la modifica e quindi scegliere **Vai** dal menu **Modifica**.  

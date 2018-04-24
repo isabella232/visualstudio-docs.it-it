@@ -1,23 +1,21 @@
 ---
 title: 'Passaggio 9: Rivedere, commentare e testare il codice | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
-caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b46e51ac48ffab06bf17508f6c99ccc2fd7fa7c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: esaminare, commentare e testare il codice
 Successivamente si aggiunge un commento al codice. Un commento è una nota che non modifica il comportamento del programma Facilita la comprensione del codice da parte di altri utenti. L'aggiunta di commenti al codice è un'operazione consigliabile. In Visual C# due barre (//) contrassegnano una riga come commento. In Visual Basic viene utilizzata una virgoletta singola (') per contrassegnare una riga come commento. Dopo aver aggiunto un commento, si testa il programma. È consigliabile eseguire frequentemente e testare il codice mentre si lavora sui progetti, in modo che sia possibile intercettare e correggere eventuali problemi, prima che il codice diventi più complesso. Si tratta di un *test iterativo*.  

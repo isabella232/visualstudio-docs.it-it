@@ -1,13 +1,9 @@
 ---
 title: 'Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - performance tools, detach process
 - profiler
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e847e1295e4514f8e1c327f207a6ae7166c892df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
 Il profiler può essere usato per la connessione o la disconnessione da un processo in esecuzione per facilitare la raccolta e il campionamento dei dati relativi alle prestazioni. È possibile usare questo metodo per la profilatura di un processo quando si vuole evitare di raccogliere dati sul tempo di caricamento dell'applicazione o per monitorare le prestazioni di un processo dopo il raggiungimento di uno stato specifico.  

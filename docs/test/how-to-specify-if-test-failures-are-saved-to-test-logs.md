@@ -1,20 +1,20 @@
 ---
 title: Salvare il log di test di carico per i test non superati in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd67bdbe2c6ecec9e5895619c5b5a446a4bca01
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 17b8792a98473658ae6ac47cd418028ce2cfcf6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Procedura: specificare se i test non superati vengono salvati in log di test utilizzando l'Editor test di carico
 
@@ -43,8 +43,8 @@ Dopo aver creato il test di carico usando la **Creazione guidata test di carico*
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura: Configurare la raccolta di dettagli completi per abilitare il grafico attività utente virtuale](../test/how-to-configure-load-tests-to-collect-full-details.md)
 - [Procedura: Specificare la frequenza di salvataggio dei log di test](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

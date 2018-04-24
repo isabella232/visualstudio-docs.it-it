@@ -1,30 +1,25 @@
 ---
 title: 'Procedura: Personalizzare colonne delle visualizzazioni dei rapporti | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.test.columnchooser.dialogbox
 helpviewer_keywords:
 - profiling tools, customizing reports
 - performance reports, customizing
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e5e83629bdb2b93db3a34ba577da4df84b119cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c030d001932d5b1cdeaa4c9b4a2ed82b321ee56f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare colonne della visualizzazione report
 Gli strumenti per le prestazioni in Visual Studio Team System Development Edition sono completamente integrati nell'ambiente di sviluppo integrato (IDE) per fornire un'esperienza utente. L'elenco seguente indica le visualizzazioni che possono essere personalizzate aggiungendo, rimuovendo e ridisponendo le colonne:  

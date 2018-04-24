@@ -1,19 +1,19 @@
 ---
 title: 'Procedura: Creare un adattatore dati di diagnostica in Visual Studio | Microsoft Docs'
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 82dbe80529fda8dfa599788766823665e4bee0bb
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 22867cab68497afd54c2ffee30bb9ccc73e90862
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: creare un adattatore dati di diagnostica
 
@@ -21,7 +21,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
  È possibile creare un adattatore dati di diagnostica che influisca sul computer in cui vengono eseguiti i test oppure su un computer che fa parte dell'ambiente in uso per eseguire l'applicazione sottoposta a test, ad esempio la raccolta di file nel computer in cui vengono eseguiti i test o la raccolta di file nel computer a cui è assegnato il ruolo di server Web per l'applicazione.
 
- È possibile assegnare all'adattatore dati di diagnostica un nome descrittivo che viene visualizzato durante la creazione delle impostazioni test mediante Microsoft Test Manager o usando Visual Studio. Le impostazioni di test consentono di definire con quale ruolo computer verranno eseguiti adattatori dati di diagnostica specifici nell'ambiente durante l'esecuzione dei test. È inoltre possibile configurare gli adattatori dati di diagnostica quando si creano le impostazioni di test. È ad esempio possibile creare un adattatore dati di diagnostica che raccolta log personalizzati dal server Web. Quando si creano le impostazioni di test, è possibile scegliere di eseguire questo adattatore dati di diagnostica nel computer o nei computer in cui viene eseguito questo ruolo del server Web ed è possibile modificare la configurazione per le impostazioni di test per raccogliere solo gli ultimi tre log creati. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+ È possibile assegnare all'adattatore dati di diagnostica un nome descrittivo che viene visualizzato durante la creazione delle impostazioni test mediante Microsoft Test Manager o usando Visual Studio. Le impostazioni di test consentono di definire con quale ruolo computer verranno eseguiti adattatori dati di diagnostica specifici nell'ambiente durante l'esecuzione dei test. È inoltre possibile configurare gli adattatori dati di diagnostica quando si creano le impostazioni di test. È ad esempio possibile creare un adattatore dati di diagnostica che raccolta log personalizzati dal server Web. Quando si creano le impostazioni di test, è possibile scegliere di eseguire questo adattatore dati di diagnostica nel computer o nei computer in cui viene eseguito questo ruolo del server Web ed è possibile modificare la configurazione per le impostazioni di test per raccogliere solo gli ultimi tre log creati. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
  Eventi vengono generati quando si eseguono i test in modo che l'adattatore dati di diagnostica sia in grado di eseguire attività nel punto specifico del test.
 
@@ -267,7 +267,7 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
 15. Per selezionare l'adattatore dati di diagnostica, è necessario in primo luogo selezionare le impostazioni test esistenti o crearne di nuove in Microsoft Test Manager o in Visual Studio. L'adattatore viene visualizzato nella scheda **Dati e diagnostica** delle impostazioni test con il nome descrittivo assegnato alla classe.
 
-16. Impostare le impostazioni test come attive. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica tramite impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
+16. Impostare le impostazioni test come attive. Per altre informazioni sulle impostazioni test, vedere [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md).
 
 17. Eseguire i test utilizzando le impostazioni di test con l'adattatore dati di diagnostica selezionato.
 

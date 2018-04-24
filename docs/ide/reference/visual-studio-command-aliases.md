@@ -1,12 +1,10 @@
 ---
 title: Alias di comandi di Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - aliases, Visual Studio commands
 - Visual Studio, commands
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 05699b5791bf8493ac8dd19c6f3dbd28ab5b2ce1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 Gli alias consentono di immettere un comando nella casella **Trova/Comando** o nella finestra di **comando** usando un testo ridotto per eseguire il comando. Ad esempio, anziché immettere `>File.OpenFile` per visualizzare la finestra di dialogo **Apri file** è possibile usare l'alias predefinito `>of`.  

@@ -1,22 +1,19 @@
 ---
 title: Analizzare l'utilizzo della memoria in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: "13"
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: aac1c901f98d63b8cf77b41a165548cccede4f21
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f29251a7b8f5e38e5b74a6aabd17ae0ccfec7651
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'uso della memoria
 Usare lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger per rilevare perdite di memoria e usi inefficienti della memoria. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo. È possibile raccogliere snapshot di app.NET, native o in modalità mista (.NET e native).  

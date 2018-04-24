@@ -1,27 +1,22 @@
 ---
 title: Filtro delle visualizzazioni report | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.  

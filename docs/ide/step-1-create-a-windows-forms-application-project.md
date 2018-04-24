@@ -1,23 +1,21 @@
 ---
 title: 'Passaggio 1: creare un progetto di Windows Forms Application | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
-caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4714399d1ea7b17f1d79858185157e9c11902d7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b455fbbd5474d03e61827cdee74cdd586bc2024b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: creare un progetto di Windows Forms Application
 Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella creazione di un progetto di Windows Forms Application.  

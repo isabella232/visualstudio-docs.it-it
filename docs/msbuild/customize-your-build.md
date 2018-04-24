@@ -1,27 +1,23 @@
 ---
 title: Personalizzare la compilazione | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b11acd4360aa86d4727a4c697a56eaa753d522c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dae51959313a7108c54466dff08b3641525818cd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="customize-your-build"></a>Personalizzare la compilazione
 Nelle versioni di MS Build precedenti alla versione 15, per specificare una nuova proprietà personalizzata per i progetti nella soluzione, è necessario aggiungere manualmente un riferimento a tale proprietà per ogni file di progetto della soluzione. Oppure, è necessario definire la proprietà in un file *PROPS* e quindi importare in modo esplicito il file *PROPS* in ogni progetto della soluzione, tra le altre cose.

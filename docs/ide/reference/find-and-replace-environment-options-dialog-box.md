@@ -1,12 +1,10 @@
 ---
 title: Trova e sostituisci, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.FindReplace
 - VS.ToolsOptionsPages.Environment.FindandReplace
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Find and Replace, Options dialog box
 - Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 73829a3283df5d3648212a79b4ad0b0f88d8b02a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e3da075adf281fe72336fc55c83eb4310b4e2b62
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Trova e sostituisci, Ambiente, finestra di dialogo Opzioni
 Tramite questa pagina della finestra di **Opzioni** è possibile controllare le caselle dei messaggi e altri aspetti di un'operazione di ricerca e sostituzione. È possibile accedere a questa finestra di dialogo dal menu **Strumenti** facendo clic su **Opzioni**, espandendo **Ambiente** e facendo clic su **Trova e sostituisci**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  

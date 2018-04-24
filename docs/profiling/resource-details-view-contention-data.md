@@ -1,29 +1,24 @@
 ---
 title: 'Visualizzazione Dettagli risorsa: dati sui conflitti | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcedetails
 helpviewer_keywords:
 - Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3deacd563759c2c6185ed8d2a57a2c0b00ce63
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac06fa18ee9459d8dc43bd0c536b68f9d027c97d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.  

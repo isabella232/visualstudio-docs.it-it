@@ -1,20 +1,20 @@
 ---
 title: Emulazione dell'uso reale di un sito Web per l'esecuzione di test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b5df4fe7db024ea7d958494faf4f332fc1a30db5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0458135040209f79648ca299bc56ba3acae21908
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>Emulazione dell'uso reale previsto di un'applicazione o un sito Web in un test di carico usando modelli di combinazione di test
 
@@ -81,7 +81,7 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
  La selezione dell'opzione In base a ordine sequenziale dei test consente a ogni utente virtuale di eseguire tutti i test nello scenario nell'ordine di definizione dei test.
 
 ## <a name="test-iterations-property"></a>Proprietà Iterazioni test
- Nelle proprietà Impostazioni di esecuzione è possibile specificare un valore per la proprietà Iterazioni test. Questo valore è il numero di iterazioni del test da eseguire in un test di carico. Dopo avere avviato il numero specificato di iterazioni di test, non verranno avviate altre iterazioni di test nonostante le impostazioni dei profili di carico. Dopo avere completato il numero specificato di iterazioni di test, il test di carico viene terminato. Per altre informazioni, vedere [How to: Specify the Number of Test Iterations in a Run Setting](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md) (Procedura: Specificare il numero di iterazioni di test in un'impostazione di esecuzione test).
+ Nelle proprietà Impostazioni di esecuzione è possibile specificare un valore per la proprietà Iterazioni test. Questo valore è il numero di iterazioni del test da eseguire in un test di carico. Dopo avere avviato il numero specificato di iterazioni di test, non verranno avviate altre iterazioni di test nonostante le impostazioni dei profili di carico. Dopo avere completato il numero specificato di iterazioni di test, il test di carico viene terminato. Per altre informazioni, vedere [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Test di inizializzazione e terminazione
  È possibile selezionare i test da eseguire all'inizio e alla fine della sessione di test di carico di ciascun utente virtuale. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).

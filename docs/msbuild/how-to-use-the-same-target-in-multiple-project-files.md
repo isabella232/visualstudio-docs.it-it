@@ -1,27 +1,23 @@
 ---
-title: "Procedura: Usare la stessa destinazione in più file di progetto | Microsoft Docs"
-ms.custom: 
+title: 'Procedura: Usare la stessa destinazione in più file di progetto | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be56829881865887eb07810d2545ee1ed965ab3a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 41c1ed02a32136d6c80e24f0644e0fab660e8ed0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: utilizzare la stessa destinazione in più file di progetto
 Se sono stati creati più file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], è possibile che sia stato necessario usare le stesse attività e destinazioni in file di progetto diversi. Anziché includere in ogni file di progetto la descrizione completa di tali attività o destinazioni, è possibile salvare una destinazione in un file di progetto separato e importarlo in qualsiasi altro progetto in cui si intende usare la destinazione.  

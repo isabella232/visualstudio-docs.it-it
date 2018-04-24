@@ -1,29 +1,24 @@
 ---
 title: Report basato sull'intervallo di tempo visibile | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
 helpviewer_keywords:
 - Concurrency Visualizer, Report Based on Visible Time Range
 ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76c7217b9b4159a368575d5acef92b03775478b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapporto basato sull'intervallo di tempo visibile
 La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i canali attualmente visibili. Per visualizzare i dettagli per subset dei dati diversi, fare clic sugli elementi nella legenda.  
@@ -41,4 +36,4 @@ La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i c
  [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)   
  [Report Operazioni su disco](../profiling/disk-operations-report-threads-view.md)   
  [Report Riepilogo per thread](../profiling/per-thread-summary-report.md)   
- [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione Thread)
+ [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

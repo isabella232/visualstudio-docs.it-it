@@ -1,12 +1,9 @@
 ---
-title: "Attività MSBuild specifiche di Visual C++ | Microsoft Docs"
-ms.custom: 
+title: Attività MSBuild specifiche di Visual C++ | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks specific to Visual C++
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a9063cf891143a43148343ece4efe468cafe218
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 446326fb8219183774d3f90d70a0263e0fc057e0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Attività MSBuild specifiche di Visual C++
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Quando si installa Visual C++, sono disponibili le attività seguenti, oltre a quelle installate con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Per altre informazioni, vedere [Cenni preliminari su MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  

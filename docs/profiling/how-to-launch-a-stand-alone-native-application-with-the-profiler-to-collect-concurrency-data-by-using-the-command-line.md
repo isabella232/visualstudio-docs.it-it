@@ -1,23 +1,20 @@
 ---
-title: 'Procedura: Avviare un''applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando | Microsoft Docs'
-ms.custom: 
+title: "Procedura: Avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando | Microsoft Docs"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: deaed7caedfa825917d4d6740f3d1866f77da68e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 45115b03fe62ecd78815861d6e82f1a0e6b98449
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma nativa e raccogliere dati di concorrenza di thread e processi.  

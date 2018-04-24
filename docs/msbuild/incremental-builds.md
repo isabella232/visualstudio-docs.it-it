@@ -1,26 +1,22 @@
 ---
 title: Compilazioni incrementali | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1e8a136937b1291950a9df71b93a1e5c90f8c2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17f33be85a5baf35235721c720386dd237d9ec85
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="incremental-builds"></a>Compilazioni incrementali
 Le compilazioni incrementali sono compilazioni ottimizzate in modo da non eseguire le destinazioni con file di output aggiornati rispetto ai file di input corrispondenti. Un elemento di destinazione può avere sia un attributo `Inputs`, che indica quali elementi la destinazione accetta come input, sia un attributo `Outputs`, che indica quali elementi vengono generati come output. MSBuild tenta di trovare un mapping uno a uno tra i valori di questi attributi. Se esiste un mapping uno a uno, MSBuild confronta il timestamp di ogni elemento di input con il timestamp dell'elemento di output corrispondente. I file di output per cui non esiste un mapping uno a uno vengono confrontati con tutti i file di input. Un elemento viene considerato aggiornato se il relativo file di output è stato creato nello stesso momento dei relativi file di input o è più recente.  

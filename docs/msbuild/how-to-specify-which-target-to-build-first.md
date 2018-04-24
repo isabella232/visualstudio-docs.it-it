@@ -1,28 +1,24 @@
 ---
 title: 'Procedura: Specificare quale destinazione compilare per prima'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
 - MSBuild, DefaultTargets attribute
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9004bb5335cb06656e378485460ea87093e4372
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8339b475c3c93bac192f67de8234c5dab1b84abb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: specificare quale destinazione compilare per prima
 Un file di progetto può contenere uno o più elementi `Target` che definiscono come viene compilato il progetto. Il motore [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila il primo progetto che trova e le eventuali dipendenze, a meno che il file di progetto contenga un attributo `DefaultTargets` o `InitialTargets` oppure venga specificata una destinazione nella riga di comando usando l'opzione **/target**.  

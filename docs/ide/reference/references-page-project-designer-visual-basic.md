@@ -1,12 +1,10 @@
 ---
 title: Riferimenti (pagina), Progettazione progetti (Visual Basic) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesReference
 - vb.ProjectPropertiesUnusedReference
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Project Designer, References page
 - Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0d21e095ee6a81a257c33fe43be0673766cce43d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferimenti, riferimenti Web e spazi dei nomi importati del progetto. I progetti possono contenere riferimenti a componenti COM, servizi Web XML, assembly o librerie di classi .NET Framework oppure altre librerie di classi. Per altre informazioni sull'uso dei riferimenti, vedere [Gestione dei riferimenti in un progetto](../../ide/managing-references-in-a-project.md).  

@@ -1,12 +1,10 @@
 ---
 title: Informazioni sulle configurazioni della build | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 19d97c13b502f4a31768b57546717e82e1227e9a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
 È possibile memorizzare diverse configurazioni di proprietà per soluzioni e progetti da usare in tipi di compilazioni differenti. Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, sulla barra dei menu scegliere **Compilazione**, **Gestione configurazione** oppure digitare **configurazione** nella casella **Avvio veloce**. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.  

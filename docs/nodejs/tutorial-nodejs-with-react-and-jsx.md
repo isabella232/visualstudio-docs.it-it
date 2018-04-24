@@ -3,28 +3,24 @@ title: Creare un progetto Node.js e un'app React in Visual Studio | Microsoft Do
 description: In questa esercitazione si crea un progetto Node.js e un'app React in Visual Studio
 ms.custom: mvc
 ms.date: 02/19/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
-Visual Studio consente di creare con facilità un progetto Node.js e di avvalersi di IntelliSense e delle altre funzionalità incorporate che supportano Node.js. In questa esercitazione per Visual Studio si crea un progetto di applicazione web Node.js da un modello di Visual Studio. Quindi si crea un'app semplice usando React. 
+Visual Studio consente di creare con facilità un progetto Node.js e di avvalersi di IntelliSense e delle altre funzionalità incorporate che supportano Node.js. In questa esercitazione per Visual Studio si crea un progetto di applicazione web Node.js da un modello di Visual Studio. Quindi si crea un'app semplice usando React.
 
 In questa esercitazione si imparerà a:
 > [!div class="checklist"]
@@ -51,17 +47,17 @@ In questa esercitazione si imparerà a:
 ## <a name="create-a-project"></a>Creare un progetto
 Per prima cosa creare un progetto di applicazione Web Node.js.
 
-1. Aprire Visual Studio 2017.  
+1. Aprire Visual Studio 2017.
 
-1. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.  
+1. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
-1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank** e scegliere **OK**.   
+1. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank** e scegliere **OK**.
 
-     Se non viene visualizzato il modello di progetto **Applicazione Web Node.js vuota** è necessario installare prima il carico di lavoro Sviluppo Node.js. 
+     Se non viene visualizzato il modello di progetto **Applicazione Web Node.js vuota** è necessario installare prima il carico di lavoro Sviluppo Node.js.
 
     Visual Studio crea la nuova soluzione e apre il progetto.
 
-    ![Progetto Node.js in Esplora soluzioni](../nodejs/media/tutorial-nodejs-react-project-structure.png)  
+    ![Progetto Node.js in Esplora soluzioni](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
     - Il progetto viene visualizzato in grassetto, con il nome assegnato in precedenza nella finestra di dialogo **Nuovo progetto**. Nel file system il progetto è rappresentato da un file con estensione *njsproj* nella cartella del progetto. È possibile impostare le proprietà e le variabili di ambiente associate al progetto facendo clic con il pulsante destro del mouse sul progetto e scegliendo **Proprietà**. È possibile eseguire sequenze di andata e ritorno con altri strumenti di sviluppo, perché il file di progetto non apporta modifiche personalizzate all'origine del progetto Node.js.
 
@@ -117,7 +113,7 @@ Per essere eseguita correttamente, l'app richiede vari moduli npm.
 
     Ecco come appaiono i moduli npm in Esplora soluzioni dopo l'installazione.
 
-    ![Pacchetti npm](../nodejs/media/tutorial-nodejs-react-npm-modules.png) 
+    ![Pacchetti npm](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
     > Se si preferisce installare pacchetti npm o comandi node.js dalla riga di comando, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Apri prompt dei comandi qui**. Per installare i pacchetti, usare i comandi Node.js standard.
@@ -171,7 +167,7 @@ Per questa app semplice i nuovi file di progetto vengono aggiunti nella radice d
 
     ```javascript
     declare var require: any
-    
+
     var React = require('react');
     var ReactDOM = require('react-dom');
 
@@ -267,7 +263,7 @@ Nei passaggi precedenti è stato aggiunto al progetto *webpack-config.js*. Ora s
 
     Il risultato viene visualizzato nella finestra del prompt dei comandi.
 
-    ![Eseguire webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png) 
+    ![Eseguire webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
 
     Se invece dell'output precedente vengono visualizzati degli errori, è necessario risolverli prima di poter eseguire l'app. Una causa degli errori può essere il fatto che le versioni dei pacchetti npm sono diverse da quelle visualizzate in questa esercitazione. Un modo per correggere gli errori consiste nell'usare le versioni esatte visualizzate nei passaggi precedenti. Se una o più di queste versioni dei pacchetti sono state deprecate e generano errori, potrebbe essere necessario installare una versione più recente per correggere gli errori.
 
@@ -279,7 +275,7 @@ Nei passaggi precedenti è stato aggiunto al progetto *webpack-config.js*. Ora s
 
 1. Se viene richiesto di ricaricare i file modificati esternamente, fare clic su **Sì a tutti**.
 
-    ![Caricare i file modificati](../nodejs/media/tutorial-nodejs-react-reload-files.png) 
+    ![Caricare i file modificati](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
 Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovamente il comando webpack.
 
@@ -287,7 +283,7 @@ Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovam
 
 1. Verificare che Chrome sia selezionato come destinazione di debug corrente.
 
-    ![Selezionare Chrome come destinazione di debug](../nodejs/media/tutorial-nodejs-react-debug-target.png)  
+    ![Selezionare Chrome come destinazione di debug](../nodejs/media/tutorial-nodejs-react-debug-target.png)
 
 1. Per eseguire l'app, premere **F5** (**Debug** > **Avvia debug**) o fare clic sul pulsante con la freccia verde.
 
@@ -295,7 +291,7 @@ Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovam
 
     Visual Studio avvia l'app eseguendo il file di avvio *server.js*.
 
-    ![Eseguire React nel browser](../nodejs/media/tutorial-nodejs-react-running-react.png) 
+    ![Eseguire React nel browser](../nodejs/media/tutorial-nodejs-react-running-react.png)
 
 1. Chiudere la finestra del browser.
 
@@ -305,9 +301,9 @@ Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovam
 
 1. In *server.js* fare clic nella barra a sinistra della dichiarazione `staticPath` per impostare un punto di interruzione:
 
-    ![Imposta punto di interruzione](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png) 
+    ![Imposta punto di interruzione](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice. 
+    I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
 1. Per eseguire l'applicazione, premere **F5** (**Debug** > **Avvia debug**).
 
@@ -333,7 +329,7 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
 
 1. Passare a Visual Studio e impostare un punto di interruzione nel codice *app-bundle.js* in corrispondenza della funzione `render()`, come indicato di seguito:
 
-    ![Imposta punto di interruzione](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png) 
+    ![Imposta punto di interruzione](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
 1. Con Chrome selezionato come destinazione di debug in Visual Studio, premere **CTRL+F5** (**Debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
 
@@ -345,7 +341,7 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
 
 1. Selezionare il processo di Chrome con la porta host corretta (in questo esempio 1337) e fare clic su **Associa**.
 
-    ![Associa a processo](../nodejs/media/tutorial-nodejs-react-attach-to-process.png) 
+    ![Associa a processo](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
     Se DOM Explorer e la console JavaScript Console si aprono in Visual Studio, il debugger è stato associato correttamente. Questi strumenti di debug sono simili agli strumenti Chrome Developer Tools e agli Strumenti F12 per Edge.
 
@@ -367,7 +363,7 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
     > [!TIP]
     > Dopo aver eseguito per la prima volta l'associazione al processo seguendo questa procedura, è possibile ripetere rapidamente l'associazione allo stesso processo in Visual Studio 2017 scegliendo **Debug** > **Riassocia a processo**.
 
-## <a name="next-steps"></a>Passaggi successivi 
+## <a name="next-steps"></a>Passaggi successivi
 
 In questa esercitazione è stato descritto come creare un progetto Node.js e un'app React e come eseguire il transpile in JSX e il debug. Per altre informazioni sugli strumenti Node.js per Visual Studio, vedere la pagina Wiki.
 

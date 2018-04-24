@@ -2,8 +2,7 @@
 title: "Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata | Documenti Microsoft"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - Windows applications, ClickOnce deployments
 - publishing, ClickOnce
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 762ef9813232b282b4f140e9c01e8d722a42bf3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 613c576e895042055d5faee9eeb7c8ca27da078a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. È possibile pubblicare l'applicazione tramite la pubblicazione guidata. proprietà aggiuntive relative alla pubblicazione sono disponibili per il **pubblica** pagina del **Progettazione progetti**. Per ulteriori informazioni, vedere [pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).  

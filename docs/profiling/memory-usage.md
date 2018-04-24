@@ -2,23 +2,18 @@
 title: Analizzare l'utilizzo della memoria in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
-caps.latest.revision: 13
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profilare l'utilizzo della memoria in Visual Studio
 È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo per comprendere meglio l'impatto sull'utilizzo della memoria dei tipi di oggetti. È possibile raccogliere snapshot di app.NET, native o in modalità mista (.NET e native).  
@@ -96,7 +91,7 @@ Nelle righe della tabella di riepilogo Utilizzo memoria sono elencati gli snapsh
 
  Il nome delle colonne dipende dalla modalità di debug selezionata nelle proprietà del progetto: .NET, nativa o mista (nativa e .NET).  
   
--   Le colonne **Oggetti (diff)**e **Allocazioni (diff)** visualizzano il numero di oggetti nella memoria .NET e nativa quando è stato creato lo snapshot.  
+-   Le colonne **Oggetti (diff)** e **Allocazioni (diff)** visualizzano il numero di oggetti nella memoria .NET e nativa quando è stato creato lo snapshot.  
   
 -   La colonna **Dimensioni heap (diff)** visualizza il numero di byte negli heap nativi e .NET 
 

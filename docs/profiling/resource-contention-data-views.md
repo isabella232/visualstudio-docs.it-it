@@ -1,26 +1,23 @@
 ---
 title: Visualizzazioni dei dati sui conflitti di risorse | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
 - concurrency profiling method views
 ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 320ccc34840cb56646a52f82dc2eb8985fdb5da6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.  

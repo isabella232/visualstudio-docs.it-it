@@ -1,7 +1,7 @@
 ---
 title: Tempi di interazione utente per i test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, think times
 - load tests, adding delays
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: cccf2961ceb5abecb33396433e344015143503bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e67e514b3b977e50be553704ec1997ce7476f045
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificare i tempi di interazione utente per simulare i ritardi di interazione umana con i siti Web in scenari di test di carico
 
@@ -40,7 +40,7 @@ I tempi interazione utente vengono usati esattamente così come sono stati regis
 Il tempo interazione utente viene usato, ma variato in una curva normale. Fornisce una simulazione più realistica di utenti virtuali variando lievemente il tempo interazione utente tra le richieste.
 
 > [!NOTE]
-> Per un elenco completo delle proprietà di uno scenario di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà relative agli scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
 ## <a name="changing-the-think-profile"></a>Modifica del profilo interazione utente
 
@@ -52,8 +52,8 @@ Il tempo interazione utente viene usato, ma variato in una curva normale. Fornis
 
 3.  Modificare la proprietà **Profilo interazione utente** nella finestra Proprietà.
 
-4.  Al termine della modifica delle proprietà, scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico con il nuovo profilo interazione utente.
+4.  Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico con il nuovo profilo interazione utente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)

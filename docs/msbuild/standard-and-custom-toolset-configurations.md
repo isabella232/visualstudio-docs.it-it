@@ -1,26 +1,23 @@
 ---
 title: Configurazioni standard e personalizzate del set di strumenti | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/31/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
-ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
+ms.openlocfilehash: 855bd7af4372f5216abab3d6ddd45ec8f7809baa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e strumenti che è possibile usare per compilare un progetto di applicazione. MSBuild include un set di strumenti standard, ma è anche possibile creare set di strumenti personalizzati. Per informazioni su come specificare un set di strumenti, vedere [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

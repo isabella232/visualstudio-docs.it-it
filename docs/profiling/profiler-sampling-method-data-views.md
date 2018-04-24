@@ -1,26 +1,23 @@
 ---
 title: Visualizzazioni dei dati del metodo di campionamento del profiler | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling data views
 - sampling data views
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a091ce71312778353a7f09869d6de45bc394c665
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.  

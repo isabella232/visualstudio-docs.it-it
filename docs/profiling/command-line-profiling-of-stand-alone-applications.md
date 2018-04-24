@@ -1,26 +1,23 @@
 ---
 title: Profilatura di applicazioni autonome dalla riga di comando | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profillng tools,stand-alone applications
 - profling stand-alone applications
 ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dd2b50ae03263cd072143481a91679663f126c53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cc57352668afa30ecb64c32372b6e6eb9b35612d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilatura della riga di comando di applicazioni autonome
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sulle prestazioni per le applicazioni client autonome Web tramite gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalla riga di comando.  

@@ -1,26 +1,23 @@
 ---
 title: Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - profiling tools,concurrency method
 ms.assetid: 0a2c6d8a-50b3-48aa-b617-9137b049d21e
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3f0003370525dafd29195473b2de0a02e18f3070
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 677cb504e44d0e4c2fc3cbd14f0147c8b10490c8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccolta di dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
 Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di raccogliere i dati relativi ai conflitti di risorse e all'attività dei thread. Questi dati illustrano l'utilizzo della CPU, nonché i conflitti e la migrazione di thread, i ritardi nella sincronizzazione, le aree di sovrapposizione delle operazioni di I/O e altri eventi di sistema.  

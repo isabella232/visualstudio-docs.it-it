@@ -2,11 +2,8 @@
 title: Classe di base ToolTaskExtension | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-caps.latest.revision: 4
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f17c22a4f93be23ba5f29c8a225eef5bdd555c30
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 01d2abbed85b891378b0a9d5c4a41029bdc46cf3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tooltaskextension-base-class"></a>Classe di base ToolTaskExtension
 Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.  

@@ -2,11 +2,8 @@
 title: Attività MT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 6
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: da1cc8b65ac43e05c692d1fe7a5af4d8ea6fe381
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mt-task"></a>Attività MT
 Esegue il wrapping dello strumento manifesto Microsoft, mt.exe. Per altre informazioni, vedere "Mt.exe" sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

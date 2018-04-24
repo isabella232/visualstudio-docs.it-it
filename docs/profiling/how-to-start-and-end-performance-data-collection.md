@@ -1,13 +1,9 @@
 ---
 title: 'Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.summarypage
 helpviewer_keywords:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - performance sessions, ending
 - profiling tools, ending sessions
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5470e92a3583ebc5cc18edb1c1662f155c41cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ad9c3e469cc17f64d9d2e551a528d7b87f71732b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni
 Prima di avviare la profilatura, è necessario aggiungere alla sessione di prestazioni il file binario di destinazione che si vuole profilare. Per aggiungere una destinazione, fare clic con il pulsante destro del mouse su **Destinazioni** in **Esplora prestazioni** e quindi fare clic su **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**. Verrà aggiunto un nuovo file binario.  

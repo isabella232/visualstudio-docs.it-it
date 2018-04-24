@@ -1,12 +1,9 @@
 ---
 title: File con estensione targets di MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/24/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - .Targets files
 - MSBuild, .Targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bacd57684350553c0ad44f6e25578299894c264c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fe88e0c8ee041682b8af4bbfaab2a83fb21defde
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="msbuild-targets-files"></a>File con estensione targets di MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include più file con estensione targets che contengono elementi, proprietà, destinazioni e attività per gli scenari comuni. Questi file vengono automaticamente importati nella maggior parte dei file di progetto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per semplificare la manutenzione e la leggibilità.  

@@ -1,19 +1,19 @@
 ---
 title: Specificare la percentuale di utenti virtuali che usano i dati della cache Web per i test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c1aa64c0ecee9f214d1bd892c62ba79090d2ce15
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 76d611af76877a9638ed2815a7d8dc5f77e45c8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procedura: specificare la percentuale di utenti virtuali che utilizzano i dati della cache Web
 
@@ -46,7 +46,7 @@ Se si esegue il test di carico di un sito Web caratterizzato da un numero signif
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di scenari di test di carico](../test/edit-load-test-scenarios.md)
+- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
 - [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

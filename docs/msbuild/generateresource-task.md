@@ -2,11 +2,8 @@
 title: Attività GenerateResource | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: 15
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: e26aae610407ceb1ebe050081f5b555d82badc92
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generateresource-task"></a>Attività GenerateResource
 Converte file con estensione txt o resx (formato di risorsa basato su XML) in file binari di Common Language Runtime (con estensione resources) che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file con estensione txt o resx in file con estensione resource. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  

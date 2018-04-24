@@ -1,29 +1,24 @@
 ---
 title: Canali (visualizzazione Thread) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
 - Concurrency Visualizer, Channels (Threads View)
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d0796b1d2d3ecbe3ff08cc1eb4cfe79153f738
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 92d7af966f171b4719e919bb15b279aff6951a7b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="channels-threads-view"></a>Canali (visualizzazione Thread)
 Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thread, canali di disco, canali di indicatore e canali GPU.  
@@ -54,4 +49,4 @@ Nel visualizzatore di concorrenza appaiono quattro tipi di canali: canali di thr
  I canali GPU visualizzano informazioni sull'attività di DirectX 11 nel sistema.  Ogni motore DirectX associato alla scheda grafica ha un canale separato.  I singoli segmenti rappresentano il tempo trascorso per elaborare un pacchetto DMA.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Threads View](../profiling/threads-view-parallel-performance.md) (Visualizzazione Thread)
+ [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

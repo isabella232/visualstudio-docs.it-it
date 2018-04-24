@@ -1,24 +1,20 @@
 ---
-title: Creazione di un'interfaccia utente usando Blend per Visual Studio | Microsoft Docs
-ms.custom: 
+title: Creazione di un'interfaccia utente usando Blend per Visual Studio
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a087af717e60eab3b9a1091ae46b9263e7342887
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: f8c7c5ab82c45ed183b8e6a6ae2031b50e2a086c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 
@@ -121,7 +117,7 @@ Usare questo pannello per visualizzare e modificare le proprietà di un oggetto.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Inserire i controlli e modificarne il comportamento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)  
-[Animare oggetti](../designers/animate-objects-in-xaml-designer.md)  
-[Disegnare forme e tracciati](../designers/draw-shapes-and-paths.md)  
-[Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+- [Inserire i controlli e modificarne il comportamento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)
+- [Animare oggetti](../designers/animate-objects-in-xaml-designer.md)
+- [Disegnare forme e tracciati](../designers/draw-shapes-and-paths.md)
+- [Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md)
