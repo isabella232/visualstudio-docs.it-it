@@ -2,8 +2,7 @@
 title: 'Procedura: pubblicare versione automaticamente incremento ClickOnce | Documenti Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, incrementing publish version automatically
 - publishing, ClickOnce
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a0cc134dbed973681ed43830435a6ce5ae0331c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 178599f8f32ff2cbe1c12996eafb15feee62d463
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Procedura: incrementare automaticamente il numero di versione pubblicazione dell'applicazione ClickOnce
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, la modifica di `Publish Version` fa sì che l'applicazione viene pubblicata come aggiornamento. Per impostazione predefinita, viene incrementato automaticamente il `Revision` numero il `Publish Version` ogni volta che si pubblica l'applicazione.  

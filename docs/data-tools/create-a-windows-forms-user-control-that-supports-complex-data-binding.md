@@ -1,6 +1,5 @@
 ---
-title: Creare un controllo utente Windows Form con associazione dati | Documenti Microsoft
-ms.custom: ''
+title: Creare un controllo utente Windows Form con il data binding
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta l'associazione dati complessa
 
@@ -111,7 +110,7 @@ Questo passaggio aggiunge un oggetto <xref:System.Windows.Forms.DataGridView> al
 ## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo di data binding richiesto
 
 Per controlli semplici che supportano il data binding, è possibile implementare l'attributo <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>Per implementare l'attributo ComplexBindingProperties
 
 1. Opzione di **ComplexDataGridView** controllo alla visualizzazione codice. (Nel **vista** dal menu **codice**.)
@@ -173,7 +172,7 @@ All'interno di **origini dati** finestra, è possibile impostare il controllo da
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form
 
-Trascinare principale **clienti** nodo dal **origini dati** finestra al form. Verificare che il **ComplexDataGridView** controllo viene utilizzato per visualizzare i dati della tabella.  
+Trascinare principale **clienti** nodo dal **origini dati** finestra al form. Verificare che il **ComplexDataGridView** controllo viene utilizzato per visualizzare i dati della tabella.
 
 ## <a name="running-the-application"></a>Esecuzione dell'applicazione
 
@@ -191,6 +190,6 @@ A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che
 
 ## <a name="see-also"></a>Vedere anche
 
-[Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Controlli Windows Form](/dotnet/framework/winforms/controls/index)
+- [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Controlli Windows Form](/dotnet/framework/winforms/controls/index)

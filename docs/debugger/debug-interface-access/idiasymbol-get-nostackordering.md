@@ -2,8 +2,7 @@
 title: IDiaSymbol::get_noStackOrdering | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a406db7d5f39c521c54c18be0b726870649135c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67d9700e8dcabd44d0cbd187541505859aa65215
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 Questa funzione recupera un flag che indica se nessun ordinamento stack poteva essere eseguito come parte del controllo del buffer dello stack ([/GS (controllo sicurezza Buffer)](/cpp/build/reference/gs-buffer-security-check) l'opzione del compilatore).  

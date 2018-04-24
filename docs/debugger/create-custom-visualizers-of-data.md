@@ -2,8 +2,7 @@
 title: Creazione di visualizzatori personalizzati dei dati | Documenti Microsoft
 ms.custom: ''
 ms.date: 06/19/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dac2fd507936ffc3b305e8d1339000def3e00e2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: f2a1602808cb21bd247d2bb1d249ab7ddea81524
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-visualizers-of-data"></a>Creazione di visualizzatori personalizzati dei dati
  I visualizzatori sono componenti del [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] l'interfaccia utente del debugger. Oggetto *Visualizzatore* crea una finestra di dialogo o un'altra interfaccia per visualizzare una variabile o un oggetto in modo appropriato per il tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come apparirebbe in una finestra del browser; un visualizzatore di bitmap interpreta una struttura di bitmap e visualizza l'oggetto grafico da essa rappresentato. Alcuni visualizzatori consentono inoltre di modificare i dati.

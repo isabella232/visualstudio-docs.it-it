@@ -2,8 +2,7 @@
 title: Compilando | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6420c235098414d09de2f0c269ebf85333d5c1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: HT
+ms.openlocfilehash: 6236a585c635ed62f8316191940899dc60a89c03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="compiland"></a>Compilando
 È presente `SymTagCompiland` simbolo per ogni modulo collegato al file .exe. Informazioni di modulo viene suddiviso tra i simboli con un `SymTagCompiland` tag, che può essere recuperato senza caricare i simboli compilando aggiuntive, i simboli con un `SymTagCompilandDetails` tag, che potrebbe richiedere il caricamento dei simboli aggiuntivi.  

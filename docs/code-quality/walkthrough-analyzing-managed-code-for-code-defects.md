@@ -1,6 +1,5 @@
 ---
 title: Procedura dettagliata di analisi del codice gestito per errori del codice | Documenti Microsoft
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Errori di analisi codice gestito per il codice
 
@@ -30,7 +29,7 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **installato** > **Visual c#**e quindi scegliere **Windows Desktop classico**.
+1. Nel **nuovo progetto** finestra di dialogo espandere **installato** > **Visual c#** e quindi scegliere **Windows Desktop classico**.
 
 1. Scegliere il **libreria di classi (.NET Framework)** modello.
 
@@ -61,21 +60,21 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Per analizzare un progetto gestito per errori del codice
 
 1. Selezionare il progetto CodeAnalysisManagedDemo in **Esplora**.
-  
+
 1. Scegliere **Proprietà** dal menu **Progetto**.
-  
+
      Verrà visualizzata la pagina proprietà CodeAnalysisManagedDemo.
-  
+
 1. Scegliere il **analisi del codice** scheda.
-  
+
 1. Assicurarsi che **Attiva analisi codice in fase di compilazione** è selezionata.
-  
+
 1. Dal **eseguire il set di regole** elenco a discesa, seleziona **tutte le regole Microsoft**.
-  
+
 1. Nel **File** menu, fare clic su **Salva elementi selezionati**e quindi chiudere le pagine delle proprietà.
-  
+
 1. Nel **compilare** menu, fare clic su **compilare CodeAnalysisManagedDemo**.
-  
+
     Cui vengono visualizzati gli avvisi di compilazione progetto CodeAnalysisManagedDemo il **elenco errori** e **Output** windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Correggere i problemi di analisi codice

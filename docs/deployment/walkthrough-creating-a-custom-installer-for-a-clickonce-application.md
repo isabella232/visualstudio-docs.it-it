@@ -2,8 +2,7 @@
 title: "Procedura dettagliata: Creazione di un programma di installazione personalizzato per un'applicazione ClickOnce | Documenti Microsoft"
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - InPlaceHostingManager [ClickOnce], custom installer
 - custom installer [ClickOnce]
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585a33a8a3c49792be0cc986b36636e7107290ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdef0199aa55d6981761a20804f9f209a1a0fdc4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce
 Qualsiasi applicazione ClickOnce in base a un file .exe può essere installati automaticamente e aggiornata dal programma di installazione personalizzato. Un programma di installazione personalizzato può implementare un'esperienza utente migliorata durante l'installazione, tra cui le finestre di dialogo personalizzate per le operazioni di manutenzione e di sicurezza. Per eseguire operazioni di installazione, il programma di installazione personalizzato utilizza il <xref:System.Deployment.Application.InPlaceHostingManager> classe. Questa procedura dettagliata viene illustrato come creare un programma di installazione personalizzato per l'installazione invisibile all'utente di un'applicazione ClickOnce.  

@@ -1,8 +1,7 @@
 ---
-title: Proprietà dei connettori | Documenti Microsoft
-ms.custom: ''
+title: Proprietà dei connettori
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, connectors
 author: gewarren
@@ -11,43 +10,44 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 804908f0d39050300f28685266b300965a311e28
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c42c1ded5bb7460cfdfee13e29f8b944872311c9
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
-Connettori rappresentano le relazioni di dominio in una finestra di progettazione generato.  
-  
- Per ulteriori informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
- I connettori sono le proprietà elencate nella tabella seguente.  
-  
-|Proprietà|Descrizione|Impostazione predefinita|  
-|--------------|-----------------|-------------|  
-|Colore|Il colore di questo connettore.|Nero|  
-|Stile tratteggio|Lo stile di tratteggio per la riga per il connettore (solido, trattino, punto, Trattopunto, Trattopuntopunto o personalizzato).|Tinta unita|  
-|Stile estremità di origine|Lo stile di fine di origine per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|  
-|Stile estremità di destinazione|Lo stile di fine della destinazione per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|  
-|Colore del testo|Colore utilizzato per gli elementi Decorator testo associati a questo connettore.|Nero|  
-|Thickness|Lo spessore della linea per questo connettore, misurata in pollici.|0.03125|  
-|Modificatore di accesso|Il livello di accesso della classe (`public` o `internal`).|Public|  
-|Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questo connettore.|\<Nessuno >|  
-|Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal connettore (`none`, `abstract` o `sealed`).|none|  
-|Connettore di base|Classe di base di questo connettore.|(nessuno)|  
-|nome|Il nome di questo connettore.|Nome corrente|  
-|Spazio dei nomi|Lo spazio dei nomi che è associato a questo connettore.|Spazio dei nomi corrente|  
-|ToolTip (tipo)|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|\<Nessuno >|  
-|Note|Note informale che sono associate a questo connettore.|\<Nessuno >|  
-|Stile di routing|Stile utilizzato per il connettore di routing. Oggetto `Rectilinear` connettore rende attiva ad angolo retto come richiesto; un `Straight` non connettore.|Rettilineo|  
-|Colore esposto come proprietà<br /><br /> Stile di tratteggio esposto come proprietà<br /><br /> Spessore esposto come proprietà<br /><br /> Espone il colore del testo|Se `True`, l'utente può impostare la proprietà di una forma specificata. Per impostare questo, il pulsante destro la definizione della forma e fare clic su **aggiungere esposti**.|False|  
-|Descrizione|Utilizzato per documentare la finestra di progettazione generato.|\<Nessuno >|  
-|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generato per questo connettore.|\<Nessuno >|  
-|Testo della descrizione comando fisso|Il testo che viene utilizzato per una descrizione di comandi predefinito.|\<Nessuno >|  
-|Parola chiave della Guida|La parola chiave che viene utilizzata per l'indice della Guida F1 per questo elemento.|\<Nessuno >|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+Connettori rappresentano le relazioni di dominio in una finestra di progettazione generato.
+
+ Per ulteriori informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+ I connettori sono le proprietà elencate nella tabella seguente.
+
+|Proprietà|Descrizione|Impostazione predefinita|
+|--------------|-----------------|-------------|
+|Colore|Il colore di questo connettore.|Nero|
+|Stile tratteggio|Lo stile di tratteggio per la riga per il connettore (solido, trattino, punto, Trattopunto, Trattopuntopunto o personalizzato).|Tinta unita|
+|Stile estremità di origine|Lo stile di fine di origine per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|
+|Stile estremità di destinazione|Lo stile di fine della destinazione per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|
+|Colore del testo|Colore utilizzato per gli elementi Decorator testo associati a questo connettore.|Nero|
+|Thickness|Lo spessore della linea per questo connettore, misurata in pollici.|0.03125|
+|Modificatore di accesso|Il livello di accesso della classe (`public` o `internal`).|Public|
+|Attributi personalizzati|Consente di aggiungere attributi alla classe di codice sorgente generato da questo connettore.|\<Nessuno >|
+|Genera l'errore doppia derivato|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite le sostituzioni). Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per ulteriori informazioni, vedere [si esegue l'override ed estendere le classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal connettore (`none`, `abstract` o `sealed`).|none|
+|Connettore di base|Classe di base di questo connettore.|(nessuno)|
+|nome|Il nome di questo connettore.|Nome corrente|
+|Spazio dei nomi|Lo spazio dei nomi che è associato a questo connettore.|Spazio dei nomi corrente|
+|ToolTip (tipo)|Come descrizione comando viene definita (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata come descrizione comando; se la variabile, la descrizione comandi è definita nel codice personalizzato.|\<Nessuno >|
+|Note|Note informale che sono associate a questo connettore.|\<Nessuno >|
+|Stile di routing|Stile utilizzato per il connettore di routing. Oggetto `Rectilinear` connettore rende attiva ad angolo retto come richiesto; un `Straight` non connettore.|Rettilineo|
+|Colore esposto come proprietà<br /><br /> Stile di tratteggio esposto come proprietà<br /><br /> Spessore esposto come proprietà<br /><br /> Espone il colore del testo|Se `True`, l'utente può impostare la proprietà di una forma specificata. Per impostare questo, il pulsante destro la definizione della forma e fare clic su **aggiungere esposti**.|False|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generato.|\<Nessuno >|
+|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generato per questo connettore.|\<Nessuno >|
+|Testo della descrizione comando fisso|Il testo che viene utilizzato per una descrizione di comandi predefinito.|\<Nessuno >|
+|Parola chiave della Guida|La parola chiave che viene utilizzata per l'indice della Guida F1 per questo elemento.|\<Nessuno >|
+
+## <a name="see-also"></a>Vedere anche
+
+- [Glossario di strumenti di linguaggio specifico di dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

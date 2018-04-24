@@ -2,8 +2,7 @@
 title: Cenni preliminari sulla Cache di ClickOnce | Documenti Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce applications, cache
 - ClickOnce deployment, cache
 ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 847e6cc7e84dcda2efdbaac630ce8589ff959180
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ff72cd106f39b4573a0e1d61715dad4f8c65140
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-cache-overview"></a>Cenni preliminari sulla cache di ClickOnce
 Tutti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni, se vengono installati in locale o ospitati online, vengono archiviate nel computer client in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]applicazione *cache*. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache è una famiglia di sottodirectory nascoste nella directory delle impostazioni locali della cartella Documents and Settings dell'utente corrente. Questa cache contiene tutti i file dell'applicazione, inclusi gli assembly, i file di configurazione dell'applicazione e le impostazioni utente e directory dei dati. La cache è inoltre responsabile per la migrazione di directory dei dati dell'applicazione per la versione più recente. Per ulteriori informazioni sulla migrazione dei dati, vedere [l'accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  

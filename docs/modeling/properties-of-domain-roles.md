@@ -1,19 +1,18 @@
 ---
-title: Proprietà dei ruoli di dominio | Documenti Microsoft
-ms.custom: ''
+title: Proprietà dei ruoli di dominio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
 Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere [informazioni sui modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per i
 |Nome visualizzazione proprietà|Il nome viene visualizzato nella finestra di progettazione generato per la proprietà del ruolo generato.|Valore della proprietà nome della proprietà modificato.|
 
 > [!NOTE]
->  Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associata tramite l'inserimento di spazi prima di ogni carattere maiuscolo, che è preceduto da un carattere minuscolo e che non è seguito da un altro carattere maiuscolo.
+> Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associata tramite l'inserimento di spazi prima di ogni carattere maiuscolo, che è preceduto da un carattere minuscolo e che non è seguito da un altro carattere maiuscolo.
 
 ## <a name="see-also"></a>Vedere anche
- [Proprietà delle relazioni di dominio](../modeling/properties-of-domain-relationships.md)
+
+- [Proprietà delle relazioni di dominio](../modeling/properties-of-domain-relationships.md)
