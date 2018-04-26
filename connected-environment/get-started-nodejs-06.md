@@ -1,18 +1,19 @@
 ---
 title: 'Creare un ambiente di sviluppo Node.js con i contenitori usando Kubernetes nel cloud con Visual Studio - Passaggio 6: Informazioni sullo sviluppo in team | Microsoft Docs'
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Sviluppo rapido Kubernetes con contenitori e microservizi in Azure
 keywords: Docker, Kubernetes, Azure, AKS, servizio contenitore di Azure, contenitori
-manager: ghogen
-ms.openlocfilehash: 4db1d71c96da29a06884e562a277a7ca427910d4
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 6a17dfc3eeebccf1508ea3f69aecb53d067de7af
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-nodejs"></a>Introduzione a Connected Environment con Node.js
 

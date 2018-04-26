@@ -1,17 +1,17 @@
 ---
 title: Come usare un feed NuGet personalizzato con Connected Environment | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 03/27/2018
-ms.topic: article
+ms.topic: conceptual
 description: Usare un feed NuGet per accedere e usare pacchetti NuGet in un ambiente Connected Environment.
 keywords: Docker, Kubernetes, Azure, AKS, servizio contenitore di Azure, contenitori
-manager: ghogen
-ms.openlocfilehash: 94956e061302281ef232205081346c0aa90eab90
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+manager: douge
+ms.openlocfilehash: 1c4c0c53b81f29436bb7110395981071411fd6b2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
 #  <a name="use-a-custom-nuget-feed-in-a-connected-environment"></a>Usare un feed NuGet personalizzato con Connected Environment
 

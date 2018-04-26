@@ -1,18 +1,19 @@
 ---
 title: Visual Studio Connected Environment | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: overview
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Sviluppo rapido Kubernetes con contenitori e microservizi in Azure
 keywords: Docker, Kubernetes, Azure, AKS, servizio contenitore di Azure, contenitori
-manager: ghogen
-ms.openlocfilehash: c1ce010b6ab36c1577953ab527f3c17d5e68def8
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: f78a3afcf721cd9bfc5dbf3a98c932923536cffc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="vs-connected-environment-for-azure-container-service-aks-preview"></a>Visual Studio Connected Environment per il servizio contenitore di Azure (anteprima)
 Visual Studio Connected Environment consente di sviluppare con velocità in Kubernetes. È possibile creare un ambiente basato su Kubernetes completamente gestito in Azure e ottimizzato per lo sviluppo, quindi sviluppare in modo iterativo contenitori nel cloud usando strumenti familiari come Visual Studio Code, Visual Studio o la riga di comando.
