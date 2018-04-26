@@ -1,7 +1,9 @@
 ---
-title: Finestra di progettazione legacy per la Guida dell'interfaccia utente di Windows Workflow Foundation | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - finestra di progettazione Legacy per la Guida dell'interfaccia utente di Windows Workflow Foundation
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - UI reference
 - Visual Studio 2005 Extensions for Windows Workflow Foundation, UI reference
@@ -12,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5aa9e108113abe1e26226027e27a3867e28a61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8b3a84926f933e2e7f5d97a6e2f3562f2807560
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
-In questa sezione contiene gli argomenti della Guida sensibile al contesto per la progettazione del flusso di lavoro Windows legacy in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Usare la finestra di progettazione legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- È possibile accedere a questi argomenti dal [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] interfaccia utente premendo **F1** quando uno preesistente [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] è aperta la finestra di dialogo.
+In questa sezione contiene gli argomenti della Guida sensibile al contesto per la progettazione del flusso di lavoro Windows legacy in Visual Studio 2010. Utilizzare la finestra di progettazione legacy quando è necessario impostare come destinazione .NET Framework versione 3.5 o la WinFX.
+
+È possibile accedere a questi argomenti dall'interfaccia utente di Visual Studio premendo **F1** quando è aperta una finestra di dialogo di progettazione flussi di lavoro legacy.

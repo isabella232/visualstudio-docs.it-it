@@ -1,7 +1,9 @@
 ---
-title: Inizializzare la finestra di dialogo di correlazione | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - finestra di dialogo di inizializzazione correlazione
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aac62d4439c2280e977ef929c79bb103348c170a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="initialize-correlation-dialog-box"></a>Finestra di dialogo Inizializza correlazione
 
@@ -29,7 +31,7 @@ Il **Inizializza correlazione** in Progettazione flussi di lavoro di Windows uti
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Per avviare la finestra di dialogo Inizializza correlazione
 
--   Fare clic su **vista** sul **InitializeCorrelation** attività della finestra di progettazione oppure selezionare un <xref:System.ServiceModel.Activities.InitializeCorrelation> attività [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] e quindi fare clic sul pulsante con i puntini di sospensione accanto al <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> proprietà in la griglia delle proprietà.
+-   Fare clic su **vista** sul **InitializeCorrelation** attività della finestra di progettazione oppure selezionare un <xref:System.ServiceModel.Activities.InitializeCorrelation> attività in Progettazione flussi di lavoro e quindi fare clic sui puntini di sospensione accanto al pulsante il <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> proprietà il griglia delle proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 

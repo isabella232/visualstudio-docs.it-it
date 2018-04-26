@@ -1,7 +1,9 @@
 ---
-title: Creazione di un progetto flusso di lavoro | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - creazione di un progetto flusso di lavoro
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - Visual Studio 2010 Workflow Designer, creating a workflow project
@@ -12,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10805edce0379ae7bfd6666afc787690dd45689
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f65cc826b59e7ee5c0645a8c1204a193f58f001
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-workflow-project"></a>Creazione di un progetto flusso di lavoro
 
-Grazie ai modelli di progetto di [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] è possibile creare flussi di lavoro, servizi flusso di lavoro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], attività personalizzate e ActivityDesigner personalizzati. Questa sezione descrive come creare librerie e applicazioni con i modelli di progetto disponibili in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+I flussi di lavoro, servizi flussi di lavoro di Windows Communication Foundation (WCF), le attività personalizzate e ActivityDesigner personalizzati può essere creata utilizzando modelli di progetto di Visual Studio. In questa sezione viene descritto come creare applicazioni e librerie con i modelli di progetto disponibili in Visual Studio.
 
-I primi quattro argomenti seguenti viene descritto come utilizzare dei modelli di flusso di lavoro trovato nel **nuovo progetto** finestra. Questi modelli sono accessibili aprendo [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] e selezionando **File** -> **New** -> **progetto...** , quindi il **flusso di lavoro** categoria il **modelli installati** sezione a sinistra, sotto il **Visual Basic** o **Visual c#** nodo.
+I primi quattro argomenti seguenti viene descritto come utilizzare dei modelli di flusso di lavoro trovato nel **nuovo progetto** finestra. Questi modelli è possibile accedere tramite aprendo Visual Studio 2010 e selezionando **File** > **nuovo** > **progetto**, quindi il  **Flusso di lavoro** categoria dal **modelli installati** sezione a sinistra, sotto il **Visual Basic** oppure **Visual c#** nodo.
 
-Nell'ultimo argomento viene descritto come aggiungere attività del flusso di lavoro, finestre di progettazione e servizi o altri elementi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a un progetto flusso di lavoro (o altro) esistente.
+Nell'ultimo argomento viene descritto come aggiungere attività flusso di lavoro, finestre di progettazione e servizi o un altro progetto di elementi da un flusso di lavoro esistente (o altro) di Visual Studio.
 
 ## <a name="related-sections"></a>Sezioni correlate
 

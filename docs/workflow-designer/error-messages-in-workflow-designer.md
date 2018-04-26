@@ -1,7 +1,9 @@
 ---
-title: I messaggi di errore nella finestra di progettazione del flusso di lavoro | Documenti Microsoft
+title: Messaggi di errore in Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -12,17 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c644922f240cd07c47e68e65432289c68bbe318
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
+
 In questo argomento vengono descritti i tipi di messaggi di errore che possono essere rilevati quando si lavora con Progettazione flussi di lavoro di Windows.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situazioni nelle quali si verificano gli errori in Progettazione flussi di lavoro
- Gli errori in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] si verificano nelle situazioni seguenti:
+
+Si verificano errori nella finestra di progettazione del flusso di lavoro nelle situazioni seguenti:
 
 1.  È presente un errore in un'espressione.
 
@@ -32,12 +36,12 @@ In questo argomento vengono descritti i tipi di messaggi di errore che possono e
 
 4.  Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.
 
- Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro infatti riesce, ma viene generato un oggetto <xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
+Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro infatti riesce, ma viene generato un oggetto <xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
 
- All'interno di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], quando un flusso di lavoro viene caricato, relativi errori vengono visualizzati nel **elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic su errore nel **elenco errori**.
+All'interno di Visual Studio, quando un flusso di lavoro viene caricato, relativi errori vengono visualizzati nel **elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic su errore nel **elenco errori**.
 
 ### <a name="expression-errors"></a>Errori nelle espressioni
- Un'espressione non valida viene segnalata da un cerchio rosso con un punto esclamativo bianco accanto a essa. Se si posiziona il mouse su questa icona, viene visualizzata una descrizione comandi relativa all'origine dell'errore. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fare clic sull'espressione per visualizzare la riga che sottolinea l'origine dell'errore. Se si posiziona il mouse sul testo sottolineato, viene visualizzata una descrizione comandi relativa all'origine dell'errore.
+ Un'espressione non valida viene segnalata da un cerchio rosso con un punto esclamativo bianco accanto a essa. Se si posiziona il mouse su questa icona, viene visualizzata una descrizione comandi relativa all'origine dell'errore. All'interno di Visual Studio, fare clic su espressione per visualizzare la riga che sottolinea l'origine dell'errore. Se si posiziona il mouse sul testo sottolineato, viene visualizzata una descrizione comandi relativa all'origine dell'errore.
 
 ### <a name="activity-validation-errors"></a>Errori di convalida delle attività
  Una volta soddisfatti i vincoli di convalida di un'attività, viene visualizzato un cerchio rosso con un punto esclamativo bianco nell'angolo superiore destro dell'attività. Se si posiziona il mouse su questa icona, viene visualizzata una descrizione comandi relativa all'origine dell'errore.

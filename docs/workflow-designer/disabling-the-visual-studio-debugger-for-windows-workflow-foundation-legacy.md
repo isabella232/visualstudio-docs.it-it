@@ -1,7 +1,9 @@
 ---
-title: Disabilitazione Debugger di Visual Studio per Windows Workflow Foundation (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - disabilitazione Debugger di Visual Studio per Windows Workflow Foundation (Legacy)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Disattivazione del debugger di Visual Studio per Windows Workflow Foundation (legacy)
 
-In questo argomento viene descritto come disabilitare il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilizzando il file di configurazione durante la compilazione del Debugger [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applicazioni in Progettazione flussi di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+In questo argomento viene descritto come disabilitare il Debugger di Visual Studio usando il file di configurazione quando si compilano applicazioni di Windows Workflow Foundation (WF) in Progettazione flussi di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
 
- Per impostazione predefinita, il debugger di [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] per [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] è abilitato per un processo host. Per disabilitare il debug del flusso di lavoro, è necessario disattivarlo in modo esplicito aggiungendo la voce "disableworkflowdebugging al"  **\<commutatori >** elemento il  **\<System. Diagnostics >**sezione del file di configurazione host.
+ Per impostazione predefinita, di Visual Studio del Debugger per Windows Workflow Foundation (WF) è abilitato per un processo host. Per disabilitare il debug del flusso di lavoro, è necessario disattivarlo in modo esplicito aggiungendo la voce "disableworkflowdebugging al"  **\<commutatori >** elemento il  **\<System. Diagnostics >** sezione del file di configurazione host.
 
  Nell’esempio seguente viene illustrato come modificare il file di configurazione dell’host per disabilitare il debug del flusso di lavoro.
 

@@ -1,7 +1,9 @@
 ---
-title: 'Procedura: utilizzare la finestra di progettazione variabile | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: utilizzare la finestra di progettazione variabile'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5ea858c6ebe448b7faf77533395a044bcc2fb32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc180df4a9be83c0f0b755bffd7ed40009b41497
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procedura: utilizzare la finestra di progettazione variabili
+
 La finestra di progettazione variabili consente di creare variabili da usare in scenari di data binding e istruzioni condizionali. Viene visualizzata la finestra di progettazione facendo il **variabili** pulsante nell'angolo inferiore sinistro dell'area di progettazione. La finestra di progettazione contiene un elenco di variabili che vengono visualizzati in formato tabulare e possono essere ordinati da ciascuna delle intestazioni di colonna, ad eccezione di **predefinito** colonna. Ogni variabile contiene un nome, un tipo di variabile, un ambito e un valore predefinito (se presente). Il nome e il valore predefinito sono campi di testo modificabili mentre il tipo e l'ambito sono elenchi a discesa. L'ambito è l'attività selezionata al momento del richiamo della finestra di progettazione variabili. Se non è possibile creare una variabile nell'ambito della selezione, l'ambito verrà impostato in modo predefinito sull'attività predecessore più vicina della selezione in modo da consentire la creazione di variabili nel relativo ambito. Per ulteriori informazioni, vedere [variabili e argomenti (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
  L'ordinamento non viene applicato fino a quando l'utente non usa in modo esplicito uno dei controlli di ordinamento, chiude e riapre la finestra di progettazione variabili o crea un'altra variabile.
 
-### <a name="to-create-a-new-variable"></a>Per creare una nuova variabile
+## <a name="to-create-a-new-variable"></a>Per creare una nuova variabile
 
-1.  Aprire una soluzione per flusso di lavoro o attività in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
+1.  Aprire una soluzione del flusso di lavoro o attività in Visual Studio.
 
 2.  Nell'area di progettazione selezionare un'attività nel flusso di lavoro.
 

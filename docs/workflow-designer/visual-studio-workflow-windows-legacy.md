@@ -1,7 +1,9 @@
 ---
-title: Finestre del flusso di lavoro di Visual Studio (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - finestre di flusso di lavoro di Visual Studio (Legacy)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39e2b66a7203cd4ac80d855b8752683e126a0b27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Finestre del flusso di lavoro di Visual Studio (legacy)
-La [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o a [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. La finestra di progettazione legacy è un'utilità di progettazione visiva che è possibile usare per creare un flusso di lavoro. È possibile trascinare le attività dal **della casella degli strumenti** alla progettazione per la superficie di attacco e qui configurarle. La finestra dell'editor di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] occupa l'area della finestra principale usata dalle altre finestre dell'editor di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il nome del flusso di lavoro viene visualizzato nella barra del titolo della finestra di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
- La maggior parte delle finestre dell'utilità di progettazione legacy è familiare all'utente esperto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Nella tabella seguente vengono descritte le finestre primarie.
+Legacy Progettazione flussi di lavoro fornita da Visual Studio 2010 è utilizzabile come destinazione .NET Framework versione 3.5 o la WinFX. La finestra di progettazione legacy è un'utilità di progettazione visiva che è possibile usare per creare un flusso di lavoro. È possibile trascinare le attività dal **della casella degli strumenti** alla progettazione per la superficie di attacco e qui configurarle. La finestra dell’editor di Visual Studio, in quanto tale, occupa l'area della finestra principale utilizzata dalle altre finestre dell’editor di Visual Studio. Il nome del flusso di lavoro viene visualizzato nella barra del titolo della finestra di Visual Studio.
+
+La maggior parte delle finestre di progettazione legacy è nota l'esperienza utente di Visual Studio. Nella tabella seguente vengono descritte le finestre primarie.
 
 |Finestra|Descrizione|
 |------------|-----------------|
-|Area di progettazione del flusso di lavoro legacy|Area di progettazione visiva usata per creare un flusso di lavoro che viene destinato a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Fornisce la possibilità di creare visivamente attività trascinando gli ActivityDesigner dal **della casella degli strumenti** all'area di progettazione.|
+|Area di progettazione del flusso di lavoro legacy|Area di progettazione visiva che consente di creare un flusso di lavoro è destinata a .NET Framework versione 3.5 o la WinFX. Fornisce la possibilità di creare visivamente attività trascinando gli ActivityDesigner dal **della casella degli strumenti** all'area di progettazione.|
 |Casella degli strumenti|Fornisce rappresentazioni grafiche delle attività che è possibile trascinare nell'area di progettazione.|
 |Proprietà|Utilizzato per configurare le proprietà dell'attività del flusso di lavoro.|
 |Esplora soluzioni|Visualizza i progetti di flusso di lavoro in una visualizzazione a struttura gerarchica e abilita l’accesso alle funzionalità che facilitano la gestione dei progetti.|
