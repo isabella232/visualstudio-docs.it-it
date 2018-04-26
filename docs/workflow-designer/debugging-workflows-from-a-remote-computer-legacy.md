@@ -1,7 +1,9 @@
 ---
-title: Debug dei flussi di lavoro da un Computer remoto (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - debug dei flussi di lavoro da un Computer remoto (Legacy)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging remotely
 - debugging workflows, remotely
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a3058d61d2aff0369fd52e1f03726a91a2267c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 391180cd76fe5e0cccca802ba1cbfb78277dabc1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Esecuzione del debug dei flussi di lavoro da computer remoto (legacy)
-In questo argomento viene descritto come eseguire il debug remoto legacy [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applicazioni create con Progettazione flussi di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando l'applicazione deve fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Quando si installa [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)], una delle opzioni di installazione del componente consiste nell'installare il [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] del Debugger per [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]. In questo modo vengono installati i componenti di debug remoto. Questi componenti di debug remoto devono essere installati nel computer nel quale si desidera eseguire il debug del flusso di lavoro remoto.
+In questo argomento viene descritto come eseguire il debug remoto Windows Workflow Foundation (WF) le applicazioni legacy che vengono compilate con la progettazione del flusso di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando l'applicazione deve avere come destinazione .NET Framework versione 3.5 o la WinFX.
+
+ Quando si installa Visual Studio, è una delle opzioni di installazione del componente per l'installazione di Visual Studio del Debugger per Windows Workflow Foundation (WF). In questo modo vengono installati i componenti di debug remoto. Questi componenti di debug remoto devono essere installati nel computer nel quale si desidera eseguire il debug del flusso di lavoro remoto.
 
  Inoltre, l'assembly contenente la definizione del flusso di lavoro del flusso di lavoro legacy per il quale si sta eseguendo il debug in un computer remoto deve essere installato nella Global Assembly Cache (GAC) del computer locale dal quale si sta eseguendo il debug. Ad esempio, se un flusso di lavoro legacy è in esecuzione nel computer remoto A e si sta eseguendo il debug da un computer locale B, la definizione del flusso di lavoro deve essere presente nella GAC del computer B. Ciò consente alla finestra di progettazione di deserializzare e visualizzare sul computer B il markup del flusso di lavoro in esecuzione in modalità remota nel computer A. Per ulteriori informazioni sulla Global Assembly Cache, visitare il sito MSDN Library.
 
- Il debug remoto di [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] funziona nello stesso modo del debug remoto per altri componenti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per ulteriori informazioni, vedere [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] debug remoto in MSDN Library.
+ Le funzioni di debug remoto di Windows Workflow Foundation funzionano come il debug remoto per altri componenti di Visual Studio. Per altre informazioni, vedere Visual Studio il debug remoto in MSDN Library.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,7 +1,9 @@
 ---
-title: Selezionare la finestra di dialogo condizione (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - finestra di dialogo selezionare la condizione (Legacy)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Finestra di dialogo Seleziona condizione (legacy)
-Questo argomento viene descritto come utilizzare il **Seleziona condizione** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Il **Seleziona condizione** viene utilizzata la finestra di dialogo per selezionare una condizione di regole dichiarative da assegnare alla proprietà condition di un'attività. Queste condizioni della regola sono esposte come proprietà nelle attività predefinite di Windows Workflow Foundation seguenti:
+Questo argomento viene descritto come utilizzare il **Seleziona condizione** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
+
+Il **Seleziona condizione** viene utilizzata la finestra di dialogo per selezionare una condizione di regole dichiarative da assegnare alla proprietà condition di un'attività. Queste condizioni della regola sono esposte come proprietà nelle attività predefinite di Windows Workflow Foundation seguenti:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ Questo argomento viene descritto come utilizzare il **Seleziona condizione** nel
 
 -   [Attività WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- Per informazioni su come accedere al **Seleziona condizione** nella finestra di dialogo vedere [procedura: creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+Per informazioni su come accedere al **Seleziona condizione** nella finestra di dialogo vedere [procedura: creare una condizione della regola dichiarativa (Legacy)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
- Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **Seleziona condizione** la finestra di dialogo.
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **Seleziona condizione** la finestra di dialogo.
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|

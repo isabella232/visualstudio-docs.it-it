@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt; ActivityDesigner | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - AddToCollection<T> ActivityDesigner
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; ActivityDesigner
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > ActivityDesigner
+
 Il **AddToCollection\<T >** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.AddToCollection%601> attività.
 
-## <a name="the-addtocollectiont-activity"></a>Il AddToCollection < T\> attività
- L'attività <xref:System.Activities.Statements.AddToCollection%601> aggiunge un elemento a una raccolta.
+## <a name="the-addtocollectiont-activity"></a>Il AddToCollection\<T > attività
+
+L'attività <xref:System.Activities.Statements.AddToCollection%601> aggiunge un elemento a una raccolta.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Utilizzo di AddToCollection\<T > ActivityDesigner
- Il **AddToCollection\<T >** ActivityDesigner è reperibile nel **raccolta** categoria del **della casella degli strumenti**, accessibile facendo clic di  **Casella degli strumenti** scheda della finestra il [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (in alternativa, selezionare **barra degli strumenti** dal **vista** menu o CTRL + ALT + X.)
 
- Il **AddToCollection\<T >** da, è possibile trascinare l'ActivityDesigner di **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Crea un <xref:System.Activities.Statements.AddToCollection%601> attività con valore predefinito è <xref:System.Activities.Activity.DisplayName%2A> AddToCollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* è **Int32**. Tale valore può essere modificato nella griglia delle proprietà. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **AddToCollection < T\>**  ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+Il **AddToCollection\<T >** ActivityDesigner è reperibile nella **raccolta** categoria del **casella degli strumenti**, accessibile facendo clic il  **Casella degli strumenti** scheda della finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu o premere CTRL + ALT + X.)
 
-### <a name="the-addtocollectiont-properties"></a>Il AddToCollection < T\> proprietà
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.AddToCollection%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
+Il **AddToCollection\<T >** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che vengono posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Eliminazione di **AddToCollection\<T >** ActivityDesigner crea un <xref:System.Activities.Statements.AddToCollection%601> attività con un valore predefinito <xref:System.Activities.Activity.DisplayName%2A> di AddToCollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* è **Int32**. TypeArgument può essere modificato nella griglia delle proprietà.) Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **AddToCollection < T\>**  ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+
+### <a name="the-addtocollectiont-properties"></a>Il AddToCollection\<T > proprietà
+
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.AddToCollection%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-------------------|--------------|-----------|

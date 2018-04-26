@@ -1,7 +1,9 @@
 ---
-title: Utilizzando la finestra di progettazione del flusso di lavoro macchina stati (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - mediante Progettazione flussi di lavoro macchina stati (Legacy)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilizzo della finestra di progettazione flusso di lavoro di una macchina a stati (legacy)
-Quando si crea un progetto flusso di lavoro macchina a stati nuovo in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] che si riferisce al [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], è possibile scegliere di utilizzare il **applicazione Console flusso di lavoro macchina a stati** o il  **Libreria del flusso di lavoro macchina a stati** modello di progetto legacy. Se si sceglie uno di questi modelli di progetto della macchina a stati, la finestra di progettazione della macchina a stati viene presentata come interfaccia utente della finestra di progettazione del flusso di lavoro legacy. Per informazioni sui modelli di progetto macchina stato legacy, vedere [procedura: creare stato macchina del flusso di lavoro applicazioni Console (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [procedura: creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- Il flusso di lavoro di una macchina a stati è costituito da un set di stati. Uno stato è indicato come stato iniziale. Ogni stato può ricevere un determinato set di eventi. In base a un evento, può essere fatta una transizione a un altro stato. Il flusso di lavoro di una macchina a stati può avere uno stato finale. Quando viene effettuata una transizione allo stato finale, l'esecuzione del flusso di lavoro è completata.
+Quando si crea un nuovo progetto flusso di lavoro macchina a stati in Visual Studio 2010 che è destinata a .NET Framework versione 3.5 o la WinFX, è possibile scegliere di utilizzare il **applicazione Console flusso di lavoro macchina a stati** o il  **Libreria del flusso di lavoro macchina a stati** modello di progetto legacy. Se si sceglie uno di questi modelli di progetto della macchina a stati, la finestra di progettazione della macchina a stati viene presentata come interfaccia utente della finestra di progettazione del flusso di lavoro legacy. Per informazioni sui modelli di progetto macchina stato legacy, vedere [procedura: creare stato macchina del flusso di lavoro applicazioni Console (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [procedura: creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+Il flusso di lavoro di una macchina a stati è costituito da un set di stati. Uno stato è indicato come stato iniziale. Ogni stato può ricevere un determinato set di eventi. In base a un evento, può essere fatta una transizione a un altro stato. Il flusso di lavoro di una macchina a stati può avere uno stato finale. Quando viene effettuata una transizione allo stato finale, l'esecuzione del flusso di lavoro è completata.
 
 ## <a name="state-machine-designer-views"></a>Visualizzazioni della finestra di progettazione della macchina a stati
  La finestra di progettazione della macchina a stati è una finestra di progettazione con figura a mano libera, ciò vuol dire che le attività possono essere spostate liberamente sull'area di progettazione. La finestra di progettazione di computer di stato è disponibili due visualizzazioni: *stato* Vista e *basato su eventi* visualizzazione.

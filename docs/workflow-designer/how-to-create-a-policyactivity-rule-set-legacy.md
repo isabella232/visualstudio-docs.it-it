@@ -1,7 +1,9 @@
 ---
-title: 'Procedura: creare un Set di regole di PolicyActivity (Legacy) | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: creare un Set di regole PolicyActivity (Legacy)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
 - Rule Set Editor dialog box
@@ -14,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57142fc21bc9db03a338f20a27e20b8af51b48cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procedura: creare un set di regole per l'attività PolicyActivity (legacy)
 
-In questo argomento viene descritto come creare un set di regole impostato utilizzando la progettazione del flusso di lavoro di Windows legacy che fa riferimento il [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+In questo argomento viene descritto come creare una criterio attività set di regole utilizzando la progettazione del flusso di lavoro Windows legacy che fa riferimento a .NET Framework versione 3.5 o la WinFX.
 
  Dopo avere trascinato un **criteri** elemento attività dal **della casella degli strumenti** all'area di progettazione del flusso di lavoro, è possibile selezionare una regola esistente o creare una nuovo set di regole per il [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) attività. Si seleziona una regola impostata per l'utilizzo di [selezionare regola impostare la finestra di dialogo (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) e per creare set di regole, utilizzare il [la finestra di dialogo Editor Set regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!NOTE]
 > È possibile aprire il [la finestra di dialogo Editor Set regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) la finestra di dialogo direttamente facendo doppio clic su un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) attività nell'area di progettazione del flusso di lavoro.
 
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Per selezionare o creare un insieme di regole per un'attività di Policy
+## <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Per selezionare o creare un insieme di regole per un'attività di Policy
 
 1.  Fare doppio clic sul [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019), quindi fare clic su **proprietà** per aprire la **proprietà** finestra.
 

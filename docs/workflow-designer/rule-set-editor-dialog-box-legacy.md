@@ -1,7 +1,9 @@
 ---
-title: Finestra di dialogo Editor (Legacy) del Set di regole | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - finestra di dialogo Editor (Legacy) del Set di regole
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
-Questo argomento viene descritto come utilizzare il **Editor Set di regole** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Il **Editor Set di regole** la finestra di dialogo viene utilizzata per creare e modificare [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) set, che vengono serializzati in un file con estensione rules di regole.
+Questo argomento viene descritto come utilizzare il **Editor Set di regole** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
+
+Il **Editor Set di regole** la finestra di dialogo viene utilizzata per creare e modificare [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) set, che vengono serializzati in un file con estensione rules di regole.
 
 > [!NOTE]
 > Se si desidera aprire il file con estensione rules con il **Editor XML con codifica**, è necessario chiudere la finestra di progettazione associata per il flusso di lavoro o attività.
 
- Per informazioni su come accedere al **Editor Set di regole** nella finestra di dialogo vedere [procedura: creare un PolicyActivity del Set di regole (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Per informazioni su come accedere al **Editor Set di regole** nella finestra di dialogo vedere [procedura: creare un PolicyActivity del Set di regole (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> L'editor delle regole della [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] non supporta il multitargeting.
+> L'editor delle regole di progettazione del flusso di lavoro legacy che viene utilizzato come destinazione .NET Framework versione 3.5 o la WinFX non supporta il Multitargeting.
 
- Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **Editor Set di regole** la finestra di dialogo.
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **Editor Set di regole** la finestra di dialogo.
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|

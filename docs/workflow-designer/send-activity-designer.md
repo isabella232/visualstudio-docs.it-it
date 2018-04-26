@@ -1,7 +1,9 @@
 ---
-title: ActivityDesigner Send | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - ActivityDesigner Send
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -10,30 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="send-activity-designer"></a>ActivityDesigner Send
 
 Il **inviare** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.ServiceModel.Activities.Send> attività.
 
 ## <a name="the-send-activity"></a>Attività Send
+
  Un'attività <xref:System.ServiceModel.Activities.Send> viene usata per inviare un messaggio a un servizio. È possibile associare un'attività <xref:System.ServiceModel.Activities.ReceiveReply> a un'attività <xref:System.ServiceModel.Activities.Send> che riceve un messaggio come parte di un modello di scambio di messaggi di richiesta/risposta sul client.
 
 ### <a name="using-the-send-activity-designer"></a>Utilizzo dell'ActivityDesigner Send
- Il **inviare** ActivityDesigner è reperibile nel **messaggistica** categoria del **della casella degli strumenti**, accessibile facendo clic il **della casella degli strumenti** Nella scheda [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (in alternativa, selezionare **barra degli strumenti** dal **vista** menu o CTRL + ALT + X.)
+ Il **inviare** ActivityDesigner è reperibile nella **messaggistica** categoria del **casella degli strumenti**, accessibile facendo clic il **della casella degli strumenti** scheda nella finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu o premere CTRL + ALT + X.)
 
- Il **inviare** da, è possibile trascinare l'ActivityDesigner di **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie ovunque le attività vengono in genere posizionate. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Send> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Send. Il <xref:System.Activities.Activity.DisplayName%2A> possono essere modificati nell'intestazione del **inviare** ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà.
+ Il **inviare** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che vengono in genere posizionate le attività. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Send> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Send. Il <xref:System.Activities.Activity.DisplayName%2A> possono essere modificati nell'intestazione del **inviare** ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà.
 
  Per creare un <xref:System.ServiceModel.Activities.ReceiveReply> attività e associarlo al <xref:System.ServiceModel.Activities.Send> attività, fare doppio clic sul **inviare** fare clic su progettazione di attività di **crea ReceiveReply** voce di menu di scelta rapida e **ReceiveReplyForSend** verrà visualizzata sotto il **inviare** finestra di progettazione. L'attività <xref:System.ServiceModel.Activities.ReceiveReply> è un'attività che riceve un messaggio come parte di un modello di scambio di messaggi di richiesta/risposta sul client. Può essere configurato con il **ReceiveReplyForSend** finestra di progettazione.
 
  In alternativa, il **SendAndReceiveReply** Progettazione modelli nel **messaggistica** categoria del **della casella degli strumenti** può essere utilizzato per creare una coppia di preconfigurato<xref:System.ServiceModel.Activities.Send>e <xref:System.ServiceModel.Activities.ReceiveReply> le attività. Per ulteriori informazioni sull'utilizzo del **SendAndReceiveReply** e **ReceiveReplyForSend** modelli, vedere il [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) argomento.
 
 ### <a name="the-send-activity-properties"></a>Proprietà dell'attività Send
- Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.Send> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.Send> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia proprietà o nell'area di progettazione flussi di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-------------------|--------------|-----------|

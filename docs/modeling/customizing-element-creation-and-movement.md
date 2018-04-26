@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4747d41377d3f7cccce9142d0659251d3199714a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 È possibile consentire a un elemento essere trascinato su un altro, dalla casella degli strumenti o in un'Incolla o dell'operazione di spostamento. È possibile disporre gli elementi spostati collegati a elementi di destinazione, utilizzando le relazioni che specificano.

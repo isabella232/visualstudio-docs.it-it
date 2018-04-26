@@ -1,7 +1,9 @@
 ---
-title: Attività flusso di lavoro legacy | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - attività di flusso di lavoro Legacy
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>Attività del flusso di lavoro legacy
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] include un set predefinito di attività che forniscono funzionalità per i flussi di controllo, le condizioni, la gestione degli eventi, la gestione degli stati e la comunicazione con applicazioni e servizi. Quando si progettano flussi di lavoro, è possibile utilizzare le attività fornite dal sistema che vengono fornite dalla finestra di progettazione del flusso di lavoro Windows oppure è possibile creare attività personalizzate.
+Windows Workflow Foundation (WF) include un set predefinito di attività che forniscono funzionalità per il flusso di controllo, le condizioni, la gestione degli eventi, gestione dello stato e la comunicazione con applicazioni e servizi. Quando si progettano flussi di lavoro, è possibile utilizzare le attività fornite dal sistema che vengono fornite dalla finestra di progettazione del flusso di lavoro Windows oppure è possibile creare attività personalizzate.
 
- Nella tabella seguente è elencato il set di attività predefinito del framework di [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]. Molte, ma non tutte, di queste attività sono rappresentati da finestre di progettazione di attività che è possibile accedere dal **della casella degli strumenti** del [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Per creare un'attività, trascinare la finestra di progettazione dal **della casella degli strumenti** e rilasciarlo nell'area di progettazione.
+Nella tabella seguente è elencato il set di attività predefinito del framework di Windows Workflow Foundation. Molte, ma non tutte, di queste attività sono rappresentate da ActivityDesigner ai quali è possibile accedere dal **casella degli strumenti** della finestra di progettazione del flusso di lavoro. Per creare un'attività, trascinare la finestra di progettazione dal **della casella degli strumenti** e rilasciarlo nell'area di progettazione.
 
 |Attività|Descrizione|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|Risponde a una richiesta di servizio Web eseguita a un flusso di lavoro. Per ulteriori informazioni, vedere [utilizzando l'attività WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65092).|
 |<xref:System.Workflow.Activities.WhileActivity>|Consente al flusso di lavoro di eseguire ciclicamente fino a quando una condizione non viene soddisfatta. Per ulteriori informazioni, vedere [utilizzando l'attività l'attività WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091).|
 
- Per ulteriori informazioni su come creare attività personalizzate, vedere [lo sviluppo di attività personalizzate](http://go.microsoft.com/fwlink?LinkID=65023) e [utilizzo dell'ActivityDesigner Legacy](../workflow-designer/using-the-legacy-activity-designer.md).
+Per ulteriori informazioni su come creare attività personalizzate, vedere [lo sviluppo di attività personalizzate](http://go.microsoft.com/fwlink?LinkID=65023) e [utilizzo dell'ActivityDesigner Legacy](../workflow-designer/using-the-legacy-activity-designer.md).
 
 ## <a name="see-also"></a>Vedere anche
 

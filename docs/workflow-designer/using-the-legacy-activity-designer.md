@@ -1,7 +1,9 @@
 ---
-title: Utilizzo dell'ActivityDesigner Legacy | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - utilizzo dell'ActivityDesigner Legacy
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, configuring
 - custom activities
@@ -15,19 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c69c2dfdd6fb81bcb6a544f27da0874a7dc99331
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdf7ae585697db19293362a31c5751d44c7421c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilizzo dell'ActivityDesigner legacy
-In questo argomento viene descritto come utilizzare la finestra di progettazione di attività in Progettazione flussi di lavoro Windows legacy. Usare la finestra di progettazione legacy quando si fa riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o a [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- La Finestra di progettazione dell’attività consente di creare attività personalizzate.
+In questo argomento viene descritto come utilizzare la finestra di progettazione di attività in Progettazione flussi di lavoro Windows legacy. Utilizzare la finestra di progettazione legacy quando la destinazione è .NET Framework versione 3.5 o la WinFX.
+
+La Finestra di progettazione dell’attività consente di creare attività personalizzate.
 
 ## <a name="creating-a-custom-activity"></a>Creazione di un'attività personalizzata
- Seguire questi passaggi per creare un'attività personalizzata usando la Finestra di progettazione dell’attività:
+
+Seguire questi passaggi per creare un'attività personalizzata usando la Finestra di progettazione dell’attività:
 
 1.  Nel **progetto** menu, fare clic su **aggiungere attività**.
 
@@ -39,10 +43,11 @@ In questo argomento viene descritto come utilizzare la finestra di progettazione
 
 3.  Digitare un nome di attività o mantenere il nome predefinito e quindi fare clic su **Aggiungi**.
 
- È inoltre possibile creare un set di attività personalizzate creando un nuovo progetto di tipo **Workflow Activity Library**. Per ulteriori informazioni su questo tipo di progetto, vedere [procedura: creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+È inoltre possibile creare un set di attività personalizzate creando un nuovo progetto di tipo **Workflow Activity Library**. Per ulteriori informazioni su questo tipo di progetto, vedere [procedura: creare una libreria di attività del flusso di lavoro (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Configurazione di un'attività.
- Mentre la Finestra di progettazione dell’attività è attiva, è possibile usare il visualizzatore proprietà per configurare le proprietà elencate nella tabella seguente.
+
+Mentre la Finestra di progettazione dell’attività è attiva, è possibile usare il visualizzatore proprietà per configurare le proprietà elencate nella tabella seguente.
 
 |Proprietà|Commenti|
 |--------------|--------------|
@@ -52,7 +57,8 @@ In questo argomento viene descritto come utilizzare la finestra di progettazione
 |**Enabled**|Impostare su **True** per impostazione predefinita per consentire l'esecuzione dell'attività e la convalida. Impostare su **False** per disabilitare l'esecuzione dell'attività e la convalida. Per informazioni sulla convalida e l'esecuzione dell'attività, vedere [sviluppo di attività del flusso di lavoro](http://go.microsoft.com/fwlink?LinkID=65024).|
 
 ## <a name="adding-child-activities"></a>Aggiunta di attività figlio.
- È possibile trascinare le attività figlio dalla Casella degli strumenti all'attività che si sta progettando. È quindi possibile configurare ogni attività figlio usando il visualizzatore proprietà.
+
+È possibile trascinare le attività figlio dalla Casella degli strumenti all'attività che si sta progettando. È quindi possibile configurare ogni attività figlio usando il visualizzatore proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 

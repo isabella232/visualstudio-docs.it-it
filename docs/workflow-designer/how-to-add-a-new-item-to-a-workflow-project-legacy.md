@@ -1,7 +1,9 @@
 ---
-title: 'Procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro (Legacy) | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: aggiungere un nuovo elemento a un progetto di flusso di lavoro (Legacy)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro [legacy]
-Dopo aver creato un progetto di flusso di lavoro utilizzando la finestra di progettazione del flusso di lavoro Windows legacy fornita da [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] che si riferisce al [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], è possibile aggiungere [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] gli elementi e altri noti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elementi in modo dal progetto.
 
- Nella tabella seguente sono elencati gli elementi [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] che è possibile aggiungere a un progetto flusso di lavoro.
+Dopo aver creato un progetto flusso di lavoro usando la che progettazione del flusso di lavoro di Windows fornita da Visual Studio 2010 che ha come destinazione la versione di .NET Framework 3.5 o la WinFX, è possibile aggiungere elementi di Windows Workflow Foundation (WF) e altri familiare Visual Studio elementi al progetto.
 
-|Item|Descrizione|
+Nella tabella seguente sono elencati gli elementi Windows Workflow Foundation che è possibile aggiungere a un progetto flusso di lavoro.
+
+|Elemento|Descrizione|
 |----------|-----------------|
 |Attività|Attività con definizione di attività in un file di codice della finestra di progettazione e codice utente in un file di codice separato.|
 |Attività (con separazione del codice)|Definizione di attività espressa come markup del flusso di lavoro e codice utente in un file di codice separato.|
@@ -33,7 +36,7 @@ Dopo aver creato un progetto di flusso di lavoro utilizzando la finestra di prog
 |Flusso di lavoro di una macchina a stati (codice)|Flusso di lavoro di una macchina a stati con definizione del flusso di lavoro in un file di codice della finestra di progettazione e codice utente in un file di codice separato.|
 |Flusso di lavoro della macchina a stati (con separazione del codice)|Flusso di lavoro della macchina a stati con definizione del flusso di lavoro espressa come markup del flusso di lavoro e codice utente in un file di codice separato.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Per aggiungere un nuovo elemento a un progetto flusso di lavoro
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Per aggiungere un nuovo elemento a un progetto flusso di lavoro
 
 1.  Nel **progetto** menu, fare clic su **aggiungere un nuovo elemento**.
 

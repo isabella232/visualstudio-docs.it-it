@@ -1,9 +1,8 @@
 ---
-title: Strumenti XML in Visual Studio | Documenti Microsoft
-ms.custom: ''
+title: Strumenti XML in Visual Studio
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -35,11 +34,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f823a42d5a89dd22fd273a2971a3b323487a525b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="xml-tools-in-visual-studio"></a>Strumenti XML in Visual Studio
 
@@ -51,40 +50,24 @@ XML costituisce la base di molte funzionalità di Visual Studio e .NET Framework
 
 Per ulteriori informazioni, vedere il <xref:System.Xml?displayProperty=fullName> documentazione.
 
-## <a name="in-this-section"></a>In questa sezione
-
-[Uso dei dati XML](../xml-tools/working-with-xml-data.md)  
-Descrive il ruolo di XML in modalità di gestione dei dati in Visual Studio.
-
-[Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)  
-Fornisce collegamenti ad argomenti relativi all'uso del debugger di Visual Studio per eseguire il debug dei fogli di stile XSLT.
-
 ## <a name="reference"></a>Riferimenti
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)  
-Espone il [Editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) analizzare la struttura ad albero tramite [. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) per tutti i documenti XML.
+[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) espone il [Editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) analizzare la struttura ad albero tramite [XML. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) per tutti i documenti XML.
 
-[Riferimento agli standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Fornisce informazioni sulle tecnologie XML, ad esempio su XML, DTD (Document Type Definition), XSD (linguaggio di definizione dello schema XML) e fogli di stile XSLT.
+[Riferimento per gli standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) vengono fornite informazioni sulle tecnologie XML, ad esempio XML, Strumentazione gestione Windows (DTD, Document Type Definition), il linguaggio XML Schema definition (XSD) e XSLT.
 
-<xref:System.Xml?displayProperty=fullName>  
-Descrive le classi e altri elementi che costituiscono lo spazio dei nomi <xref:System.Xml> e fornisce collegamenti a informazioni dettagliate per ogni elemento.
+<xref:System.Xml?displayProperty=fullName> Descrive le classi e altri elementi che costituiscono il <xref:System.Xml> dello spazio dei nomi e vengono forniti collegamenti a informazioni più dettagliate su ogni elemento.
 
-<xref:System.Xml.Serialization?displayProperty=fullName>  
-Descrive le classi e altri elementi che costituiscono lo spazio dei nomi <xref:System.Xml.Serialization> e fornisce collegamenti a informazioni dettagliate per ogni elemento.
+<xref:System.Xml.Serialization?displayProperty=fullName> Descrive le classi e altri elementi che costituiscono il <xref:System.Xml.Serialization> dello spazio dei nomi e vengono forniti collegamenti a informazioni più dettagliate su ciascun elemento.
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-[Modello DOM (Document Object Mode) XML](/dotnet/standard/data/xml/xml-document-object-model-dom)  
-Fornisce informazioni sulla conformità della classe <xref:System.Xml.XmlDocument> e delle relative classi associate alle specifiche di supporto dello spazio dei nomi del modello (DOM) W3C (Core) Level 1 e Level 2.
+[Oggetto modello DOM (Document XML)](/dotnet/standard/data/xml/xml-document-object-model-dom) descrive il modo in cui <xref:System.Xml.XmlDocument> e le classi associate devono essere conformi con il livello di W3C Document Object Model (Core) 1 e specifiche per il supporto dello spazio dei nomi di livello 2.
 
 [L'elaborazione dati XML con XmlReader e XmlWriter](https://msdn.microsoft.com/library/cc189001(v=vs.95).aspx)
 
-[Trasformazioni XSLT](/dotnet/standard/data/xml/xslt-transformations)  
-Descrive il modo in cui la classe <xref:System.Xml.Xsl.XslCompiledTransform> implementa la raccomandazione XSLT 1.0.
+[Le trasformazioni XSLT](/dotnet/standard/data/xml/xslt-transformations) descrive il modo in cui <xref:System.Xml.Xsl.XslCompiledTransform> classe implementa la raccomandazione XSLT 1.0.
 
-[Elaborazione di dati XML con il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)  
-Descrive il modo in cui la classe <xref:System.Xml.XPath.XPathNavigator> può elaborare i dati XML archiviati in un oggetto <xref:System.Xml.XPath.XPathDocument> o <xref:System.Xml.XmlDocument>. La classe <xref:System.Xml.XPath.XPathNavigator> è basata sul modello di dati XQuery 1.0 e XPath 2.0 e può essere usata per spostarsi tra i dati XML e per modificarli.
+[Elaborare dati XML mediante il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) descrive il modo in cui <xref:System.Xml.XPath.XPathNavigator> classe elabora i dati XML archiviati in un <xref:System.Xml.XPath.XPathDocument> o un <xref:System.Xml.XmlDocument> oggetto. La classe <xref:System.Xml.XPath.XPathNavigator> è basata sul modello di dati XQuery 1.0 e XPath 2.0 e può essere usata per spostarsi tra i dati XML e per modificarli.
 
-[SOM (Schema Object Model) XML](/dotnet/standard/data/xml/xml-schema-object-model-som)  
-Descrive le classi usate per creare e modificare schemi XML, tramite una classe <xref:System.Xml.Schema.XmlSchema> che consente di caricare e modificare uno schema.
+[Modello SOM (Schema Object Model) XML](/dotnet/standard/data/xml/xml-schema-object-model-som) descrive le classi utilizzate per la creazione e la modifica di schemi XML, fornendo un <xref:System.Xml.Schema.XmlSchema> classe per caricare e modificare uno schema.

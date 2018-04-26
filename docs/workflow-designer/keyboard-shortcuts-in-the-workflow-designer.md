@@ -1,7 +1,9 @@
 ---
-title: Tasti di scelta rapida nella finestra di progettazione del flusso di lavoro | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - tasti di scelta rapida nella finestra di progettazione del flusso di lavoro
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
@@ -22,13 +24,13 @@ Tutte le funzionalità principali di progettazione del flusso di lavoro di Windo
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navigazione in Progettazione flussi di lavoro mediante la tastiera
 
-In [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] i collegamenti globali e collegamenti di debug si applicano a [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Sono stati inoltre creati tasti di scelta rapida specifici di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. In [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] tutti i tasti di scelta rapida possono essere rimappati. In un'applicazione riallocata, tuttavia, i tasti di scelta rapida sono hardcoded.
+All'interno di Visual Studio 2010, i collegamenti globali e collegamenti di debug si applicano alla finestra di progettazione del flusso di lavoro. Inoltre, un numero di scelte rapide da tastiera specifiche di progettazione flussi di lavoro creato. In Visual Studio 2010, tutti i tasti di scelta rapida possono essere rimappati. In un'applicazione riallocata, tuttavia, i tasti di scelta rapida sono hardcoded.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
-Nella tabella seguente vengono riepilogati i tasti di scelta rapida predefiniti assegnati ai comandi di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Nella tabella seguente sono riepilogate predefinito tasti di scelta rapida assegnati ai comandi di progettazione flussi di lavoro.
 
-|Tasto di scelta rapida|Scopo|
+|Collegamento|Scopo|
 |--------------|-------------|
 |CTRL+E, A|Mostra o nasconde Progettazione argomenti.|
 |CTRL+E, C|Comprime l'attività selezionata sul posto.|
@@ -46,7 +48,7 @@ Nella tabella seguente vengono riepilogati i tasti di scelta rapida predefiniti 
 
 ### <a name="flowchart"></a>Diagramma di flusso
 
-Nell'elenco seguente vengono presentate le operazioni necessarie per costruire un diagramma di flusso dalla tastiera. Come nella parte rimanente di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], le attività vengono aggiunte all'area di progettazione usando i collegamenti globali alla casella degli strumenti forniti in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+Nell'elenco seguente vengono presentate le operazioni necessarie per costruire un diagramma di flusso dalla tastiera. Come nella parte rimanente della finestra di progettazione del flusso di lavoro, le attività vengono aggiunte all'area di progettazione usando i tasti di scelta rapida globali della casella degli strumenti forniti con Visual Studio 2010.
 
 - Per spostare un'attività, selezionarla e riposizionarla usando i tasti di direzione.
 
@@ -74,7 +76,7 @@ Note sulla connessione delle attività dalla tastiera:
 
 ### <a name="expression-editing"></a>Modifica dell'espressione
 
-Per impostazione predefinita, i tasti di scelta rapida predefiniti per la modifica del testo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] si applicano nell'editor espressioni in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] con le limitazioni seguenti:
+Per impostazione predefinita, predefinita tasti di scelta rapida per la modifica del testo di Visual Basic si applicano all'interno dell'editor di espressioni nella finestra di progettazione del flusso di lavoro con le limitazioni seguenti:
 
 - La modifica del mapping dei tasti di scelta rapida per i comandi seguenti non ha effetto. In caso di modifica di un'espressione, è possibile accedere a questi comandi solo mediante i tasti di scelta rapida predefiniti.
 
@@ -85,4 +87,4 @@ Per impostazione predefinita, i tasti di scelta rapida predefiniti per la modifi
    - Annulla
    - Ripristina
 
-- Per modificare il mapping dei tasti di scelta rapida per i comandi di modifica delle espressioni all'interno di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], modificare i collegamenti nell'ambito di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Le modifiche apportate nell'ambito dell'Editor di testo non si applicano automaticamente a [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.
+- Per modificare il mapping di tasti di scelta rapida per i comandi di modifica espressione all'interno di progettazione del flusso di lavoro in Visual Studio 2010, modificare i collegamenti nell'ambito di progettazione flussi di lavoro. Le modifiche apportate nell'ambito dell'Editor di testo non si applicano automaticamente alla finestra di progettazione del flusso di lavoro. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.

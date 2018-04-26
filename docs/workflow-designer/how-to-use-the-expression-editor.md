@@ -1,7 +1,9 @@
 ---
-title: "Procedura: utilizzare l'Editor espressioni | Documenti Microsoft"
+title: "Finestra di progettazione del flusso di lavoro - procedura: utilizzare l'Editor espressioni"
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
@@ -10,16 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9873d341238f3278779277d70da6df56f29f721
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e14a967b9721973d8d545e10f58cab3c68b8e15
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
+
 L'Editor espressioni è un controllo di progettazione del flusso di lavoro di Windows che viene utilizzato in molte attività di flusso di lavoro come mezzo per immettere e valutare queste espressioni. L'editor espressioni fornisce un'esperienza di modifica IDE completa che include, tra le altre funzionalità, IntelliSense, colorazione, ParamInfo, controllo errori di ortografia durante la digitazione. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor espressioni** la finestra di dialogo.
 
- Le espressioni sono valori letterali o codice [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] associati ad argomenti o proprietà. Contengono elementi valore, ad esempio variabili, costanti, valori letterali, proprietà, che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che l'uso delle maiuscole non è rilevante, il confronto viene eseguito utilizzando uguale a un singolo segno ("=") anziché ("= ="), gli operatori booleani sono le parole "e" e "or" anziché i simboli "& &" e "&#124;&#124;", e **Nothing**  viene usata invece di **null**. Per ulteriori informazioni sulle espressioni e operatori in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e per alcuni esempi, vedere [operatori ed espressioni in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+ Le espressioni sono valori letterali o codice Visual Basic associati ad argomenti o proprietà. Contengono elementi valore, ad esempio variabili, costanti, valori letterali, proprietà, che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che l'uso delle maiuscole non è rilevante, il confronto viene eseguito utilizzando uguale a un singolo segno ("=") anziché ("= ="), gli operatori booleani sono le parole "e" e "or" anziché i simboli "& &" e "&#124;&#124;", e **Nothing**  viene usata invece di **null**. Per ulteriori informazioni sulle espressioni e operatori in Visual Basic e per alcuni esempi, vedere [operatori ed espressioni in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
 
  Il **Editor espressioni** si comporta come segue:
 
@@ -30,11 +33,11 @@ L'Editor espressioni è un controllo di progettazione del flusso di lavoro di Wi
 -   Se si imposta lo stato attivo sull'editor espressioni in un oggetto progettazione flussi di lavoro riallocato, si comporta come oggetto TextBox. Quando nell'oggetto progettazione flussi di lavoro riallocato si perde lo stato attivo, l'editor espressioni si presenta nuovamente come un normale oggetto TextBlock.
 
 > [!NOTE]
-> IntelliSense per l'editor espressioni e disponibile solo in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Sia in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] che nel caso di scenari di riallocazione, il compilatore convalida l'espressione dopo che è stata immessa e nell'editor espressioni viene visualizzata un'icona di errore se l'espressione non è valida.
+> IntelliSense per l'Editor espressioni è disponibile solo all'interno di Visual Studio 2010. In Visual Studio 2010 e scenari di riallocazione, il compilatore convalida l'espressione dopo l'immissione e l'editor espressioni viene visualizzata un'icona di errore se l'espressione non è valido.
 
-### <a name="using-the-expression-editor"></a>Uso dell’editor espressioni
+## <a name="use-the-expression-editor"></a>Utilizzare l'editor espressioni
 
-1.  In [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] aprire un progetto flusso di lavoro nuovo o esistente.
+1.  In Visual Studio 2010, aprire un progetto flusso di lavoro nuova o esistente.
 
 2.  Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.
 

@@ -1,7 +1,9 @@
 ---
-title: 'Procedura: impostare punti di interruzione nei flussi di lavoro (Legacy) | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: impostare punti di interruzione nei flussi di lavoro (Legacy)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procedura: impostare punti di interruzione nei flussi di lavoro (legacy)
-In questo argomento viene illustrato come impostare i punti di interruzione in [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applicazioni compilate utilizzando Progettazione flussi di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando l'applicazione [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] deve fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Quando si usa la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] per compilare un'applicazione [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)], è possibile impostare punti di interruzione nei codici C# e Visual Basic come in Visual Studio. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
+In questo argomento viene descritto come impostare punti di interruzione in Windows Workflow Foundation (WF) le applicazioni compilate utilizzando Progettazione flussi di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando l'applicazione di Windows Workflow Foundation deve avere come destinazione .NET Framework versione 3.5 o la WinFX.
+
+ Quando si utilizza la finestra di progettazione del flusso di lavoro legacy in Visual Studio 2010 per compilare un'applicazione Windows Workflow Foundation, è possibile impostare i punti di interruzione nel codice c# e Visual Basic come in Visual Studio. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
 
  Un punto di interruzione ha tre stati: *in sospeso*, *associato*, e *errore*. Quando si imposta un punto di interruzione, sarà In sospeso e verrà rappresentato da un icona di colore rosso vuota. Quando il tipo del flusso di lavoro viene caricato dal runtime, diventa Associato e viene rappresentato da un’icona  rossa a tinta unita. Se si specifica un formato non corretto per il punto di interruzione, come avviene quando un nome di attività non è valido, verrà visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
 

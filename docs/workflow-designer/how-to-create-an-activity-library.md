@@ -1,27 +1,29 @@
 ---
-title: 'Procedura: creare una libreria | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: creare una libreria attività'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedura: creare una libreria attività
-Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello libreria di attività in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] è stata specificata per consentire la creazione di tali attività personalizzate usando visivamente la finestra di progettazione del flusso di lavoro di Windows.
+Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello libreria di attività in Visual Studio 2010 è stato specificato per consentire la creazione di tali attività personalizzate usando visivamente la finestra di progettazione del flusso di lavoro di Windows.
 
 ### <a name="to-create-a-workflow-activity-library"></a>Per creare una libreria attività flussi di lavoro
 
-1.  Avviare [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Avviare Visual Studio 2010.
 
-2.  Nel **File** dal menu **New**, quindi selezionare **progetto...** .
+2.  Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -36,7 +38,7 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
 7.  Nel **soluzione** casella, digitare un nome descrittivo per la soluzione, quindi fare clic su **OK**.
 
     > [!NOTE]
-    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], fare clic con il pulsante destro la soluzione in **Esplora**e selezionare **Aggiungi**, quindi **Nuovo progetto...** per aprire la **nuovo progetto** la finestra di dialogo. Procedere come descritto sopra in questa procedura.
+    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in Visual Studio 2010, fare clic con il pulsante destro la soluzione in **Esplora soluzioni**e selezionare **Add**, quindi  **Nuovo progetto** per aprire la **nuovo progetto** finestra di dialogo. Procedere come descritto sopra in questa procedura.
 
 8.  Il modello di progetto crea una definizione di attività in XAML. Progettazione del flusso di lavoro di Windows viene visualizzato nell'area di lavoro per l'attività personalizzata.
 
