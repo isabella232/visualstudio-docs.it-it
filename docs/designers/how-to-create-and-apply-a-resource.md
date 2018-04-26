@@ -1,6 +1,7 @@
 ---
 title: Come creare e applicare una risorsa
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5fd3c3b5842a9d2a68fde3c20b1a0c76af7c0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1a162c66f4a014d50da7ad7bd3cd5da9edd6e43
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Guida introduttiva: Applicazione di stili ai controlli](http://go.microsoft.com/fwlink/?LinkID=248239) e [Guida introduttiva: Modelli di controllo](http://go.microsoft.com/fwlink/?LinkID=247982).

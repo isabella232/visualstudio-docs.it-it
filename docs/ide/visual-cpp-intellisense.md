@@ -1,20 +1,19 @@
 ---
-title: IntelliSense per Visual C++ | Microsoft Docs
-ms.custom: ''
+title: IntelliSense per Visual C++
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfebee340a880cdef1b8721bd5f57e3be5db8e47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C++
 
@@ -104,4 +103,4 @@ Per impostazione predefinita, IntelliSense con singolo file utilizza solo direct
 
 ## <a name="see-also"></a>Vedere anche
 
-[Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)

@@ -1,7 +1,9 @@
 ---
-title: Eseguire la transizione ActivityDesigner | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - ActivityDesigner Transition
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f63369c67470378856133b912e6da48f924bb45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transition-activity-designer"></a>ActivityDesigner Transition
+
 <xref:System.Activities.Statements.Transition> rappresenta la transizione tra due stati.
 
 ## <a name="using-the-transition-activity-designer"></a>Uso di ActivityDesigner Transition
- Un ActivityDesigner Transition consente di configurare una transizione tra due stati.
+
+Un ActivityDesigner Transition consente di configurare una transizione tra due stati.
 
 ### <a name="transition-properties-in-the-workflow-designer"></a>Proprietà di transizione in Progettazione flussi di lavoro
- Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.Transition> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione.
+
+Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.Transition> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-------------------|--------------|-----------|
@@ -35,12 +40,13 @@ ms.lasthandoff: 04/16/2018
 |**Destinazione**|True|Indica lo stato in cui si trova la macchina a stati dopo il completamento della transizione. Ciò corrisponde alla proprietà <xref:System.Activities.Statements.Transition.To%2A> della transizione nel modello a oggetti. Facendo clic sul nome dello stato di destinazione si passa dalla visualizzazione Progettazione a una visualizzazione estesa di tale stato. Questo valore viene impostato quando viene creata la transizione e può essere modificato trascinando la freccia che connette la transizione allo stato di destinazione nella finestra di progettazione.|
 
 ### <a name="creating-transitions"></a>Creazione transizioni
- Le transizioni vengono creati trascinando una riga da uno stato a un altro, o rilasciando uno stato sui triangoli visualizzati quando lo stato viene trascinato su un altro stato. Per creare una transizione tramite l'operazione di trascinamento, posizionare il mouse sul bordo dello stato di origine e trascinare una linea dallo stato di origine allo stato di destinazione. Per creare una transizione con il rilascio, trascinare lo stato di destinazione e posizionarlo sullo stato di origine, quindi rilasciarlo su uno dei quattro triangoli visualizzati intorno allo stato di origine. Lo stato di destinazione può essere un nuovo stato trascinato dal **della casella degli strumenti**, o uno stato esistente trascinato dalla finestra di progettazione del flusso di lavoro.
+
+Le transizioni vengono creati trascinando una riga da uno stato a un altro, o rilasciando uno stato sui triangoli visualizzati quando lo stato viene trascinato su un altro stato. Per creare una transizione tramite l'operazione di trascinamento, posizionare il mouse sul bordo dello stato di origine e trascinare una linea dallo stato di origine allo stato di destinazione. Per creare una transizione con il rilascio, trascinare lo stato di destinazione e posizionarlo sullo stato di origine, quindi rilasciarlo su uno dei quattro triangoli visualizzati intorno allo stato di origine. Lo stato di destinazione può essere un nuovo stato trascinato dal **della casella degli strumenti**, o uno stato esistente trascinato dalla finestra di progettazione del flusso di lavoro.
 
 > [!NOTE]
 > Un singolo stato in una macchina a stati può essere composto da un massimo di 76 transizioni create mediante la finestra di progettazione flussi di lavoro. Il limite alle transizioni per uno stato per i flussi di lavoro creati all'esterno della finestra di progettazione è stabilito solo dalle risorse di sistema.
 
- Le transizioni del trigger condivise sono il set di transizioni che condividono lo stesso evento del trigger. Un trigger condiviso consente la progressione condizionale a uno stato di destinazione in base alla valutazione delle espressioni configurate per più transizioni che condividono un evento comune del trigger. Per aggiungere altre azioni a una transizione e creare una transizione condivisa, fare clic sul cerchio che indica l'inizio della transizione desiderata e trascinarlo nello stato desiderato. La nuova transizione condividerà uno stesso trigger della transizione iniziale, ma avrà una condizione e un'azione univoche. Le transizioni condivise possono anche essere create dalla finestra di progettazione della transizione facendo **Aggiungi transizione del trigger condivisa** nella parte inferiore della finestra di progettazione di transizione e selezionando lo stato di destinazione desiderato dal  **Gli stati disponibili per la connessione** elenco a discesa.
+Le transizioni del trigger condivise sono il set di transizioni che condividono lo stesso evento del trigger. Un trigger condiviso consente la progressione condizionale a uno stato di destinazione in base alla valutazione delle espressioni configurate per più transizioni che condividono un evento comune del trigger. Per aggiungere altre azioni a una transizione e creare una transizione condivisa, fare clic sul cerchio che indica l'inizio della transizione desiderata e trascinarlo nello stato desiderato. La nuova transizione condividerà uno stesso trigger della transizione iniziale, ma avrà una condizione e un'azione univoche. Le transizioni condivise possono anche essere create dalla finestra di progettazione della transizione facendo **Aggiungi transizione del trigger condivisa** nella parte inferiore della finestra di progettazione di transizione e selezionando lo stato di destinazione desiderato dal  **Gli stati disponibili per la connessione** elenco a discesa.
 
 ## <a name="see-also"></a>Vedere anche
 

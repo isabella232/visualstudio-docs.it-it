@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a3a1fa8f1c3b6cce8e9f7d19b8f3a07b9ea42cdf
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: be119703868316f2335f06174c9f21c2dddd2edc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le proprietà di definizione, ad esempio numerazione delle versioni. Cui vengono visualizzate le proprietà di DslDefinition il **proprietà** finestra quando si fa clic su un'area vuota del diagramma nel *Domain-Specific Language progettazione*.

@@ -6,14 +6,15 @@ ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 906176ebf782a537dffad1deddb41c71739e8a5e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0b1d98422d9527220b54232d1180ae4b91a28e6b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Strumenti di Entity Framework in Visual Studio
 Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di lavorare con dati relazionali utilizzando oggetti specifici del dominio. In questo modo la maggior parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere non è più necessaria. Entity Framework è il mapping relazionale a oggetti consigliato (ORM) tecnologia per le nuove applicazioni .NET.

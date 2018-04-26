@@ -1,9 +1,9 @@
 ---
-title: 'Esercitazione 2: creare un quiz matematico a tempo | Microsoft Docs'
+title: 'Esercitazione 2: creare un quiz matematico a tempo'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,35 +11,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56466d91f336be679f2f82919c537a95e352a60d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55142712972ce5d5fd44e76dbad042daca18edc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: creare un quiz matematico a tempo
 In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a quattro problemi aritmetici casuali entro il tempo specificato. Vengono illustrate le seguenti procedure:  
-  
+
 -   Generare numeri casuali utilizzando la classe `Random`.  
-  
+
 -   Attivare eventi che devono verificarsi in un momento specifico usando un controllo **Timer**.  
-  
+
 -   Controllare il flusso di programma mediante istruzioni `if else`.  
-  
+
 -   Eseguire operazioni aritmetiche di base nel codice.  
-  
+
  Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numeri diversi.  
-  
+
  ![Quiz matematico con quattro problemi](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 Quiz creato in questa esercitazione  
-  
+
  Per scaricare una versione completa del quiz, vedere [Esempio di esercitazione per un quiz matematico completo](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
-  
+
 > [!NOTE]
 >  In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.  
-  
+
 ## <a name="related-topics"></a>Argomenti correlati  
-  
+
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Iniziare creando il progetto, modificando le proprietà e aggiungendo controlli `Label`.|  

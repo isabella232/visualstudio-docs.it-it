@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b68345961e2209506b0c759d7197c1115083446
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fc41a768b54ba3253b7dad6648b77aa8c03b0f49
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 È possibile creare estensioni nella finestra di progettazione che consente di modificare le definizioni di DSL. Tipi di estensione che è possibile includere l'aggiunta di comandi di menu, aggiunta di gestori per trascinano e fare doppio clic sui movimenti e le regole vengono attivate quando modificare determinati tipi di valori o relazioni. Le estensioni possono essere inserite come Visual Studio Integration Extension (VSIX) e distribuite agli altri utenti.

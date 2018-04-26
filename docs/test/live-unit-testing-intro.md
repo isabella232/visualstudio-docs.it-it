@@ -1,7 +1,8 @@
 ---
-title: Introduzione a Live Unit Testing | Microsoft Docs
+title: Introduzione a Live Unit Testing
 description: Informazioni sui vantaggi di Live Unit Testing e su come usarlo quando si esegue il testing unità dei progetti.
 ms.date: 2017-09-11
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67a0ad52ce9de8277d48cb30f6b97bf347e1fe80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4f4e6eedead828c4c24eaf0ce57d9aa9d3119731
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="introducing-live-unit-testing"></a>Introduzione a Live Unit Testing
 

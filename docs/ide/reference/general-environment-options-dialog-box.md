@@ -1,10 +1,9 @@
 ---
-title: Generale, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: ''
+title: Generale, Ambiente, finestra di dialogo Opzioni
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Generale, Ambiente, finestra di dialogo Opzioni
 
@@ -67,17 +66,27 @@ Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazi
 
 ## <a name="other"></a>Altro
 
-**Elementi nel menu Finestra**  Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10.
+**elementi nel menu Finestra**
 
-**Elementi negli elenchi degli ultimi file usati** Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
+Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10.
 
-**Mostra barra di stato** Consente di visualizzare la barra di stato. Nella barra di stato, posizionata nella parte inferiore della finestra dell'IDE, sono visualizzate le informazioni sullo stato delle operazioni in corso.
+**elementi negli elenchi degli ultimi file usati**
 
-**Chiudi ha effetto solo sulla finestra degli strumenti attiva** Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è selezionata per impostazione predefinita.
+Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Digitare un numero compreso tra 1 e 24. Per impostazione predefinita, il numero è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
 
-**Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva** Consente di specificare che se si fa clic sul pulsante **Nascondi automaticamente** deve essere nascosta automaticamente solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è deselezionata per impostazione predefinita.
+**Mostra barra di stato**
+
+Consente di visualizzare la barra di stato. Nella barra di stato, posizionata nella parte inferiore della finestra dell'IDE, sono visualizzate le informazioni sullo stato delle operazioni in corso.
+
+**Chiudi ha effetto solo sulla finestra degli strumenti attiva**
+
+Consente di specificare che quando si fa clic sul pulsante **Chiudi** deve essere chiusa solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è selezionata per impostazione predefinita.
+
+**Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva**
+
+Consente di specificare che se si fa clic sul pulsante **Nascondi automaticamente** deve essere nascosta automaticamente solo la finestra degli strumenti attiva e non tutte le finestre degli strumenti del set ancorato. Questa opzione è deselezionata per impostazione predefinita.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
-[Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
+- [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)

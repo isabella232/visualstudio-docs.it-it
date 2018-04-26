@@ -1,5 +1,6 @@
 ---
-title: Eseguire il debug ASP.NET - Visual Studio | Documenti Microsoft
+title: Eseguire il debug ASP.NET
+description: Eseguire il debug ASP.NET utilizzando il debugger di Visual Studio
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: c9cc8022a6080b63792cdadcc87af07e08ef749e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5f731e5d40205776682e706aa4e32d988a76f0f0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Eseguire il debug di ASP.NET con il debugger di Visual Studio
+# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il Debug di ASP.NET con il debugger di Visual Studio
 
 Il debugger di Visual Studio fornisce molte funzionalità avanzate che consentono di eseguire il debug delle applicazioni. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base.
 

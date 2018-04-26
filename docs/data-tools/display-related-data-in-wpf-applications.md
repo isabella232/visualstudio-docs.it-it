@@ -14,14 +14,15 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Visualizzare i dati correlati nelle applicazioni WPF
 In alcune applicazioni, si potrebbe voler lavorare con dati provenienti da più tabelle o entità che sono correlate tra loro in una relazione padre-figlio. Potrebbe ad esempio, si desidera visualizzare una griglia in cui vengono visualizzati i clienti da un `Customers` tabella. Quando l'utente seleziona un cliente specifico, in un'altra griglia vengono visualizzati gli ordini per cliente da un processo di `Orders` tabella.

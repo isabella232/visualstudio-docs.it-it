@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizzare i punti di interruzione nel Debugger di Visual Studio
 È possibile impostare i punti di interruzione quando si desidera arrestare l'esecuzione del debugger, ad esempio per visualizzare lo stato delle variabili di codice o per esaminare lo stack di chiamate. I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore.  
@@ -247,8 +247,7 @@ ms.lasthandoff: 04/18/2018
 |**$PNAME**|Nome processo|  
 |**$TID**|ID thread|  
 |**$TNAME**|Nome thread|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|Conteggio di graduazione (da Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etichette dei punti di interruzione  
  Le etichette dei punti di interruzione sono usate solo nella finestra **Punti di interruzione** per ordinare e filtrare l'elenco dei punti di interruzione. Per aggiungere un'etichetta a un punto di interruzione, scegliere la riga del punto di interruzione, quindi scegliere **Etichetta** dal menu di scelta rapida.  

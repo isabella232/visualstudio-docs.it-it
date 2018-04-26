@@ -17,14 +17,15 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 49f3aad9adf319c09097324a6c40a4aa7b8f6692
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati utilizzando gli oggetti TableAdapter
 Un componente TableAdapter viene compilato un set di dati con i dati dal database, in base a uno o più query o stored procedure specificate. Inoltre è possibile eseguire gli oggetti TableAdapter aggiunge, aggiornamenti ed eliminazioni per rendere permanenti le modifiche apportate al set di dati nel database. È inoltre possibile emettere comandi globali che sono correlati a qualsiasi tabella specifica.

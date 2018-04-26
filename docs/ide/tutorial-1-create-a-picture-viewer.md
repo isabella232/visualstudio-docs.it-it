@@ -1,9 +1,9 @@
 ---
-title: 'Esercitazione 1: Creare un visualizzatore di immagini | Microsoft Docs'
+title: 'Esercitazione 1: creare un visualizzatore immagini'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: creare un visualizzatore immagini
 In questa esercitazione si compila un programma che carica un'immagine da un file e la visualizza in una finestra. Viene illustrato come trascinare i controlli quali pulsanti e caselle immagine sul form, impostare le relative proprietà e utilizzare i contenitori per ridimensionare agevolmente il form. Si inizia inoltre a scrivere il codice. Vengono illustrate le seguenti procedure:  
-  
+
 -   Creare un nuovo progetto.  
-  
+
 -   Testare un'applicazione (eseguirne il debug).  
-  
+
 -   Aggiungere controlli di base come caselle di controllo e pulsanti a un form.  
-  
+
 -   Posizionare i controlli sul form utilizzando i layout.  
-  
+
 -   Aggiungere le finestre di dialogo **Apri file** e **Colore** a un form.  
-  
+
 -   Creare codice utilizzando IntelliSense e frammenti di codice.  
-  
+
 -   Scrivere metodi per la gestione eventi.  
-  
+
  Al termine delle varie procedure, il programma sarà simile all'immagine che segue.  
-  
+
  ![Immagine creata in questa esercitazione](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Immagine che si creerà in questa esercitazione  
-  
+
  Per scaricare una versione completa di esempio, vedere [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Esempio di esercitazione per un visualizzatore immagini completo).  
-  
+
  ![link to video](../data-tools/media/playvideo.gif "PlayVideo")Per una versione video di questo argomento, vedere [How Do I: Create a Picture Viewer in Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) (Come creare un visualizzatore di immagini in Visual Basic?) o [How Do I: Create a Picture Viewer in C#?](http://go.microsoft.com/fwlink/?LinkId=205198) (Come creare un visualizzatore di immagini in C#?).  
-  
+
 > [!NOTE]
 >  In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio. In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.  
 >   
 >  Per visualizzare il codice per Visual Basic, scegliere la scheda **VB** all'inizio dei blocchi di codice; per visualizzare il codice per Visual C#, scegliere la scheda **C#**. Per altre informazioni su Visual C++, vedere l'[Introduzione](../ide/getting-started-with-cpp-in-visual-studio.md) e l'[esercitazione sul linguaggio C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Se si è interessati a imparare a scrivere App Visual C# o una piattaforma UWP Visual Basic, vedere [Sviluppare app UWP](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>Argomenti correlati  
-  
+
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Passaggio 1: creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md)|Iniziare creando un progetto di applicazione Windows Forms.|  

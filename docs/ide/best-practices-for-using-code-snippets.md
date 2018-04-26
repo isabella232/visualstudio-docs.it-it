@@ -1,7 +1,7 @@
 ---
-title: Procedure consigliate per l'uso dei frammenti di codice | Microsoft Docs
-ms.custom: ''
+title: Procedure consigliate per l'utilizzo dei frammenti di codice
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d11dcc87a4303937c226e5b7a4efebe8617f6f0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52845b2d8f08486f84422957ce8f38a95c1a4d31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'uso dei frammenti di codice
 
@@ -70,6 +70,6 @@ I frammenti di codice IntelliSense installati da Visual Studio non rappresentano
 
 ## <a name="see-also"></a>Vedere anche
 
-[Frammenti di codice IntelliSense di Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Protezione delle applicazioni](../ide/securing-applications.md)  
-[Frammenti di codice](../ide/code-snippets.md)
+- [Frammenti di codice IntelliSense di Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Protezione delle applicazioni](../ide/securing-applications.md)
+- [Frammenti di codice](../ide/code-snippets.md)

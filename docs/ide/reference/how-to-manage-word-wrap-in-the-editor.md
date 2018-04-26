@@ -1,9 +1,8 @@
 ---
-title: "Procedura: Gestire la modalità A capo automatico nell'editor | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: gestire la modalità A capo automatico nell'editor"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -15,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd81a4c4168d7733b21ec84123e984e42b71063
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire la modalità A capo automatico nell'editor
 
@@ -31,26 +30,26 @@ ms.lasthandoff: 04/16/2018
 ## <a name="procedure"></a>Routine
 
 ### <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico
-  
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
-  
-2.  Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.  
-  
-     oppure  
-  
-     Scegliere le opzioni **Generale** nella sottocartella corrispondente al linguaggio di programmazione in uso.  
-  
-3.  In **Impostazioni**selezionare o deselezionare l'opzione **A capo automatico**.  
-  
-     Se l'opzione **A capo automatico** è selezionata, l'opzione **Mostra icone per ritorno a capo automatico** è abilitata.  
-  
-4.  Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.  
-  
+
+1.  Scegliere **Opzioni** dal menu **Strumenti**.
+
+2.  Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.
+
+     oppure
+
+     Scegliere le opzioni **Generale** nella sottocartella corrispondente al linguaggio di programmazione in uso.
+
+3.  In **Impostazioni**selezionare o deselezionare l'opzione **A capo automatico**.
+
+     Se l'opzione **A capo automatico** è selezionata, l'opzione **Mostra icone per ritorno a capo automatico** è abilitata.
+
+4.  Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.
+
     > [!NOTE]
-    >  Questi indicatori promemoria non vengono aggiunti al codice ma vengono solo visualizzati.  
-  
+    >  Questi indicatori promemoria non vengono aggiunti al codice ma vengono solo visualizzati.
+
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzazione dell'editor](../../ide/customizing-the-editor.md)  
-[Editor di testo (finestra di dialogo Opzioni)](../../ide/reference/text-editor-options-dialog-box.md)  
-[Writing Code](../../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)
+- [Personalizzazione dell'editor](../../ide/customizing-the-editor.md)
+- [Editor di testo (finestra di dialogo Opzioni)](../../ide/reference/text-editor-options-dialog-box.md)
+- [Writing Code](../../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)

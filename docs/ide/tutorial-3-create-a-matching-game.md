@@ -1,9 +1,9 @@
 ---
-title: 'Esercitazione 3: creare un gioco di abbinamenti | Microsoft Docs'
+title: 'Esercitazione 3: Creare un gioco di abbinamenti'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
@@ -11,39 +11,39 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d0e538304e2d9c3fb5ca71747fd1ed2ab2a5fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste. Vengono illustrate le seguenti procedure:  
-  
+
 -   Archiviare oggetti, ad esempio icone, in un oggetto `List`.  
-  
+
 -   Utilizzare un ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere gli elementi di un elenco.  
-  
+
 -   Tenere traccia dello stato di un form utilizzando variabili di riferimento.  
-  
+
 -   Compilare un gestore eventi per rispondere a eventi utilizzabili con più oggetti.  
-  
+
 -   Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.  
-  
+
  Al termine di questa esercitazione, il programma sarà simile all'immagine che segue.  
-  
+
  ![Gioco creato in questa esercitazione](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 Gioco che si creerà in questa esercitazione  
-  
+
  Per scaricare una versione completa dell'esempio, vedere [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Esempio di esercitazione: un gioco delle coppie completo).  
-  
+
 > [!NOTE]
 >  In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.  
-  
+
  In caso di blocchi improvvisi o dubbi a livello di programmazione, provare a pubblicare una domanda in uno dei forum MSDN. Vedere il [forum di Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) e il [forum di Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Sono inoltre disponibili utilissime risorse di formazione video gratuite. Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti). Per altre informazioni sulla programmazione in Visual C#, vedere [C# Fundamentals: Development for Absolute Beginners](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Nozioni fondamentali di C#: sviluppo per principianti assoluti).  
-  
+
 ## <a name="related-topics"></a>Argomenti correlati  
-  
+
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Passaggio 1: creare un progetto e aggiungere una tabella al form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Per iniziare, creare il progetto e aggiungere un controllo `TableLayoutPanel` per mantenere allineati i controlli.|  

@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ec6528176b02684a4235be29f4387da26193810
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 004a6b75bb66ebf3c1797abac9c1cc6f7faa6eb9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Edizioni di Visual Studio per la visualizzazione &amp; SDK di modellazione
 Di seguito sono riportati gli elenchi delle versioni di Visual Studio che sono supportati con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e la distribuzione. Per ulteriori informazioni su queste edizioni, vedere Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).

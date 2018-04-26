@@ -19,14 +19,15 @@ ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bed7096fc35f9dd1439a0b15afb9761ab56fbe3c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 *Aggiornamento gerarchico* si riferisce al processo di salvataggio di dati aggiornati (da un set di dati di due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento a regole di coerenza fornite tramite i vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per ulteriori informazioni sulle relazioni nei set di dati, vedere [relazioni nei set di dati](../data-tools/relationships-in-datasets.md)

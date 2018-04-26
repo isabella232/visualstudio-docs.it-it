@@ -1,10 +1,9 @@
 ---
-title: Comando Elenca thread | Microsoft Docs
-ms.custom: ''
+title: Comando Elenca thread
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listthreads
 helpviewer_keywords:
@@ -17,38 +16,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 094ba1b16f208d1af0ba9426daba67aed604f0c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa44556be7c20c52d44ec83da1ba9d4972b4542d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
-Visualizza un elenco dei thread del programma corrente.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-Debug.ListThreads [index]  
-```  
-  
-## <a name="arguments"></a>Argomenti  
- `index`  
- Facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.  
-  
-## <a name="remarks"></a>Note  
- Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.  
-  
-## <a name="example"></a>Esempio  
-  
-```  
->Debug.ListThreads   
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)   
- [Comando Elenca disassembly](../../ide/reference/list-disassembly-command.md)   
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
- [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
- [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Visualizza un elenco dei thread del programma corrente.
+
+## <a name="syntax"></a>Sintassi
+
+```
+Debug.ListThreads [index]
+```
+
+## <a name="arguments"></a>Argomenti
+ `index`
+
+ Facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
+
+## <a name="remarks"></a>Note
+ Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.
+
+## <a name="example"></a>Esempio
+
+```
+>Debug.ListThreads
+```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)
+- [Comando Elenca disassembly](../../ide/reference/list-disassembly-command.md)
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Finestra di comando](../../ide/reference/command-window.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

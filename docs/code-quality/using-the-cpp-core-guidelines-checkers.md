@@ -7,12 +7,13 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 7f1ec5df06cbe24008f0506b838c3743a572ea5b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 607b4f2d96e809f9c8b5aedf8362c5d5f54e097d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilizzando i controlli della linee guida di base di C++
 Le linee guida componenti di base di C++ sono un set portabile di linee guida, regole e procedure consigliate sulla codifica in C++ creati dai progettisti e gli esperti di C++. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. Correttori ortografici delle linee guida per i componenti di base vengono installati per impostazione predefinita in Visual Studio 2017 e sono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).

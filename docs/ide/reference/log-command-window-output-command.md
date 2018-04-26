@@ -1,10 +1,9 @@
 ---
-title: Comando Registra output finestra di comando | Microsoft Docs
-ms.custom: ''
+title: Comando Registra output finestra di comando
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
 helpviewer_keywords:
@@ -16,62 +15,68 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57a1393c6db4da7b652490cbf9d352ad7b4455cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16eb42011a15539193e9d69724d299c73e5cecc4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
-Copia interamente l'input e l'output della finestra di **comando** in un file.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]  
-```  
-  
-## <a name="arguments"></a>Argomenti  
- `filename`  
- Facoltativo. Nome del file di log. Per impostazione predefinita, il file viene creato nella cartella del profilo dell'utente. Se il nome del file specificato esiste già, il log viene accodato alla fine del file esistente. Se non viene specificato alcun file, viene usato l'ultimo file specificato. Se non esiste alcun file precedente, viene creato un file di log predefinito, denominato cmdline.log.  
-  
+Copia interamente l'input e l'output della finestra di **comando** in un file.
+
+## <a name="syntax"></a>Sintassi
+
+```
+Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
+```
+
+## <a name="arguments"></a>Argomenti
+ `filename`
+
+ Facoltativo. Nome del file di log. Per impostazione predefinita, il file viene creato nella cartella del profilo dell'utente. Se il nome del file specificato esiste già, il log viene accodato alla fine del file esistente. Se non viene specificato alcun file, viene usato l'ultimo file specificato. Se non esiste alcun file precedente, viene creato un file di log predefinito, denominato cmdline.log.
+
 > [!TIP]
->  Per modificare il percorso in cui viene salvato il file di log, immettere il percorso completo del file, racchiuso tra virgolette se il percorso contiene spazi.  
-  
-## <a name="switches"></a>Opzioni  
- /on  
- Facoltativo. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.  
-  
- /off  
- Facoltativo. Interrompe la registrazione per la finestra di **comando**.  
-  
- /overwrite  
- Facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.  
-  
-## <a name="remarks"></a>Note  
- Se non viene specificato alcun file, viene creato per impostazione predefinita il file cmdline.log. Per impostazione predefinita, l'alias per questo comando è Log.  
-  
-## <a name="examples"></a>Esempi  
- In questo esempio viene creato un nuovo file di log, cmdlog, e viene avviata la registrazione dei comandi.  
-  
-```  
->Tools.LogCommandWindowOutput cmdlog  
-```  
-  
- Questo esempio arresta la registrazione dei comandi.  
-  
-```  
->Tools.LogCommandWindowOutput /off  
-```  
-  
- Questo esempio consente di riprendere la registrazione dei comandi nel file di log usato in precedenza.  
-  
-```  
->Tools.LogCommandWindowOutput /on  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
- [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
- [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+> Per modificare il percorso in cui viene salvato il file di log, immettere il percorso completo del file, racchiuso tra virgolette se il percorso contiene spazi.
+
+
+## <a name="switches"></a>Opzioni
+ /on
+
+ Facoltativo. Avvia la registrazione per la finestra di **comando** nel file specificato e accoda il file con le nuove informazioni.
+
+ /off
+
+ Facoltativo. Interrompe la registrazione per la finestra di **comando**.
+
+ /overwrite
+
+ Facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
+
+## <a name="remarks"></a>Note
+ Se non viene specificato alcun file, viene creato per impostazione predefinita il file cmdline.log. Per impostazione predefinita, l'alias per questo comando è Log.
+
+## <a name="examples"></a>Esempi
+ In questo esempio viene creato un nuovo file di log, cmdlog, e viene avviata la registrazione dei comandi.
+
+```
+>Tools.LogCommandWindowOutput cmdlog
+```
+
+ Questo esempio arresta la registrazione dei comandi.
+
+```
+>Tools.LogCommandWindowOutput /off
+```
+
+ Questo esempio consente di riprendere la registrazione dei comandi nel file di log usato in precedenza.
+
+```
+>Tools.LogCommandWindowOutput /on
+```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Finestra di comando](../../ide/reference/command-window.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

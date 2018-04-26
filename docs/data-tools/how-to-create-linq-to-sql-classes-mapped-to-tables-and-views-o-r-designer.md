@@ -6,14 +6,15 @@ ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58acdbba70ca60f5b48f1748ca9ea4ca3ad09f3e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0b81d67d6897826ab2f6de1e3b48663b18bffdb1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procedura: creare LINQ to SQL classi con mappate a tabelle e viste (O/R Designer)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] le classi che vengono eseguito il mapping a tabelle di database e le viste sono dette *classi di entità*. Per la classe di entità viene eseguito il mapping a un record, mentre per le singole proprietà di una classe di entità viene eseguito il mapping alle singole colonne che costituiscono un record. Creare classi di entità che sono basate su viste o tabelle di database trascinando le tabelle o viste dal **Esplora Server**/**Esplora Database** sul [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Il [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] genera le classi e applica la specifica [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] attributi per attivare [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funzionalità (la comunicazione di dati e le funzionalità di modifica il <xref:System.Data.Linq.DataContext>). Per informazioni dettagliate su [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classi, vedere [LINQ al modello a oggetti SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).

@@ -1,10 +1,9 @@
 ---
-title: Opzioni, Editor di testo, XAML, Formattazione | Microsoft Docs
-ms.custom: ''
+title: Opzioni, Editor di testo, XAML, Formattazione
 ms.date: 01/17/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -33,84 +32,85 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 401e0f6c5da01413042eb30f336a7e2081e84ba1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
-Usare la pagina delle proprietà **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla finestra delle proprietà **Formattazione**, espandere **Editor di testo**, **XAML** e il nodo **Formattazione**.  
+Usare la pagina delle proprietà **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla finestra delle proprietà **Formattazione**, espandere **Editor di testo**, **XAML** e il nodo **Formattazione**.
 
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="auto-formatting-events"></a>Eventi di formattazione automatica  
- La formattazione automatica può verificarsi quando vengono rilevati gli eventi seguenti.  
 
--   Completamento di un tag di fine o un tag semplice.  
+## <a name="auto-formatting-events"></a>Eventi di formattazione automatica
+ La formattazione automatica può verificarsi quando vengono rilevati gli eventi seguenti.
 
--   Completamento di un tag di inizio.  
+-   Completamento di un tag di fine o un tag semplice.
 
--   Inserimento degli Appunti.  
+-   Completamento di un tag di inizio.
 
--   Formattazione di comandi da tastiera.  
+-   Inserimento degli Appunti.
 
-È possibile specificare gli eventi che causano la formattazione automatica.  
+-   Formattazione di comandi da tastiera.
 
-|||  
-|-|-|  
-|**Al completamento del tag di fine o del tag semplice**|La formattazione automatica si verifica quando si finisce di digitare un tag di fine o un tag semplice. Un tag semplice non include attributi, ad esempio `<Button />`.|  
-|**Al completamento del tag di inizio**|La formattazione automatica si verifica quando si finisce di digitare un tag di inizio.|  
-|**All'inserimento degli Appunti**|La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.|  
+È possibile specificare gli eventi che causano la formattazione automatica.
 
-## <a name="quotation-mark-style"></a>Stile virgolette  
- Questa impostazione indica se i valori di attributo sono racchiusi tra virgolette singole o doppie. Il formattatore automatico e il completamento automatico IntelliSense usano questa impostazione.  
+|||
+|-|-|
+|**Al completamento del tag di fine o del tag semplice**|La formattazione automatica si verifica quando si finisce di digitare un tag di fine o un tag semplice. Un tag semplice non include attributi, ad esempio `<Button />`.|
+|**Al completamento del tag di inizio**|La formattazione automatica si verifica quando si finisce di digitare un tag di inizio.|
+|**All'inserimento degli Appunti**|La formattazione automatica si verifica quando si incolla XAML dagli Appunti nella visualizzazione XAML.|
 
- Dopo l'impostazione, questa opzione viene applicata solo agli attributi aggiunti successivamente usando la finestra di progettazione o manualmente nella visualizzazione XAML.  
+## <a name="quotation-mark-style"></a>Stile virgolette
+ Questa impostazione indica se i valori di attributo sono racchiusi tra virgolette singole o doppie. Il formattatore automatico e il completamento automatico IntelliSense usano questa impostazione.
 
-|||  
-|-|-|  
-|**Virgolette doppie (")**|I valori di attributo sono racchiusi tra virgolette doppie.<br /><br /> `<Button Name="button1">Hello</Button>`|  
-|**Virgolette singole (')**|I valori di attributo sono racchiusi tra virgolette singole.<br /><br /> `<Button Name='button1'>Hello</Button>`|  
+ Dopo l'impostazione, questa opzione viene applicata solo agli attributi aggiunti successivamente usando la finestra di progettazione o manualmente nella visualizzazione XAML.
 
-## <a name="tag-wrapping"></a>Ritorno a capo dei tag  
- È possibile specificare una lunghezza di riga per il ritorno a capo dei tag. Quando il ritorno a capo dei tag è abilitato, verrà applicato il ritorno a capo appropriato a qualsiasi XAML aggiunto successivamente usando la finestra di progettazione.  
+|||
+|-|-|
+|**Virgolette doppie (")**|I valori di attributo sono racchiusi tra virgolette doppie.<br /><br /> `<Button Name="button1">Hello</Button>`|
+|**Virgolette singole (')**|I valori di attributo sono racchiusi tra virgolette singole.<br /><br /> `<Button Name='button1'>Hello</Button>`|
 
-|||  
-|-|-|  
-|**Testo a capo per i tag che eccedono la lunghezza specificata**|Specifica se il ritorno a capo viene applicato alle righe alla lunghezza di riga specificata da **Lunghezza**.|  
-|**Lunghezza**|Il numero di caratteri che una riga può contenere. Se necessario, alcune righe XAML possono superare la lunghezza di riga specificata.|  
+## <a name="tag-wrapping"></a>Ritorno a capo dei tag
+ È possibile specificare una lunghezza di riga per il ritorno a capo dei tag. Quando il ritorno a capo dei tag è abilitato, verrà applicato il ritorno a capo appropriato a qualsiasi XAML aggiunto successivamente usando la finestra di progettazione.
 
-## <a name="attribute-spacing"></a>Spaziatura attributi  
- Usare questa impostazione per controllare la disposizione degli attributi nel documento XAML  
+|||
+|-|-|
+|**Testo a capo per i tag che eccedono la lunghezza specificata**|Specifica se il ritorno a capo viene applicato alle righe alla lunghezza di riga specificata da **Lunghezza**.|
+|**Lunghezza**|Il numero di caratteri che una riga può contenere. Se necessario, alcune righe XAML possono superare la lunghezza di riga specificata.|
 
-|||  
-|-|-|  
-|**Conserva i caratteri di fine riga e gli spazi tra gli attributi**|La formattazione automatica non viene applicata ai caratteri di fine riga e agli spazi tra gli attributi.<br /><br /> `<Button Height="23"   Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
-|**Inserisci uno spazio singolo tra gli attributi**|Gli attributi occupano una riga, con uno spazio che separa gli attributi adiacenti. Vengono applicate le impostazioni di ritorno a capo dei tag.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|  
-|**Posiziona ogni attributo su una riga diversa**|Ogni attributo occupa una riga. Ciò è utile quando presenti molti attributi.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
-|**Posiziona il primo attributo sulla stessa riga del tag di inizio**|Se questa opzione è selezionata, il primo attributo viene visualizzato sulla stessa riga del tag di inizio dell'elemento.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
+## <a name="attribute-spacing"></a>Spaziatura attributi
+ Usare questa impostazione per controllare la disposizione degli attributi nel documento XAML
 
-## <a name="element-spacing"></a>Spaziatura elementi  
- Usare questa impostazione per controllare la disposizione degli elementi nel documento XAML  
+|||
+|-|-|
+|**Conserva i caratteri di fine riga e gli spazi tra gli attributi**|La formattazione automatica non viene applicata ai caratteri di fine riga e agli spazi tra gli attributi.<br /><br /> `<Button Height="23"   Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Inserisci uno spazio singolo tra gli attributi**|Gli attributi occupano una riga, con uno spazio che separa gli attributi adiacenti. Vengono applicate le impostazioni di ritorno a capo dei tag.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
+|**Posiziona ogni attributo su una riga diversa**|Ogni attributo occupa una riga. Ciò è utile quando presenti molti attributi.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Posiziona il primo attributo sulla stessa riga del tag di inizio**|Se questa opzione è selezionata, il primo attributo viene visualizzato sulla stessa riga del tag di inizio dell'elemento.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 
-|||  
-|-|-|  
-|**Conserva i caratteri di fine riga nel contenuto**|Le righe vuote nel contenuto dell'elemento non vengono rimosse.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
-|**Comprimi più righe vuote nel contenuto in una sola riga**|Le righe vuote nel contenuto dell'elemento vengono compresse in una singola riga.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
-|**Rimuovi le righe vuote nel contenuto**|Tutte le righe vuote nel contenuto dell'elemento vengono rimosse.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|  
+## <a name="element-spacing"></a>Spaziatura elementi
+ Usare questa impostazione per controllare la disposizione degli elementi nel documento XAML
 
-## <a name="miscellaneous-section-auto-insert"></a>Sezione Varie, Inserimento automatico  
- Usare questa impostazione per controllare la generazione automatica di tag e virgolette.  
+|||
+|-|-|
+|**Conserva i caratteri di fine riga nel contenuto**|Le righe vuote nel contenuto dell'elemento non vengono rimosse.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
+|**Comprimi più righe vuote nel contenuto in una sola riga**|Le righe vuote nel contenuto dell'elemento vengono compresse in una singola riga.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
+|**Rimuovi le righe vuote nel contenuto**|Tutte le righe vuote nel contenuto dell'elemento vengono rimosse.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
 
-|||  
-|-|-|  
-|**Tag di chiusura**|Specifica se il tag di chiusura di un elemento viene generato automaticamente quando si chiude il tag di apertura con il carattere maggiore di (>).|  
-|**Virgolette per gli attributi**|Specifica se vengono generate le virgolette quando un valore di attributo viene selezionato dall'elenco a discesa Completamento istruzioni.|  
-|**Parentesi graffe di chiusura per MarkupExtensions**|Specifica se una parentesi graffa di chiusura dell'estensione del markup (}) viene generata automaticamente quando si digita il carattere di parentesi graffa di apertura ({).|  
-|**Virgole per separare i parametri di MarkupExtension**|Specifica se vengono generate le virgole quando si digita più di un parametro in un'estensione di markup.|  
+## <a name="miscellaneous-section-auto-insert"></a>Sezione Varie, Inserimento automatico
+ Usare questa impostazione per controllare la generazione automatica di tag e virgolette.
+
+|||
+|-|-|
+|**Tag di chiusura**|Specifica se il tag di chiusura di un elemento viene generato automaticamente quando si chiude il tag di apertura con il carattere maggiore di (>).|
+|**Virgolette per gli attributi**|Specifica se vengono generate le virgolette quando un valore di attributo viene selezionato dall'elenco a discesa Completamento istruzioni.|
+|**Parentesi graffe di chiusura per MarkupExtensions**|Specifica se una parentesi graffa di chiusura dell'estensione del markup (}) viene generata automaticamente quando si digita il carattere di parentesi graffa di apertura ({).|
+|**Virgole per separare i parametri di MarkupExtension**|Specifica se vengono generate le virgole quando si digita più di un parametro in un'estensione di markup.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
+- [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

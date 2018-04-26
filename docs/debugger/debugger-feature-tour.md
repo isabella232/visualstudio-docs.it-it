@@ -1,6 +1,6 @@
 ---
-title: 'Il debugger di Visual Studio Tour delle funzionalità: | Documenti Microsoft'
-description: Per una presentazione del debugger di Visual Studio
+title: Cenni preliminari sul debugger
+description: Esaminare rapidamente le diverse funzionalità del debugger di Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Guida introduttiva: Analizzare innanzitutto il Debugger di Visual Studio
+# <a name="first-look-at-the-visual-studio-debugger"></a>Cenni preliminari sul Debugger di Visual Studio
 
 In questo argomento vengono presentate le funzionalità del debugger di Visual Studio. Se si desidera seguire la procedura per l'apertura di un'app in Visual Studio, è possibile farlo oppure è possibile seguire insieme a un'app di esempio usando il [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Durante il debug, fare doppio clic su un oggetto e scegliere **Aggiungi espressi
 
 ![Finestra Espressioni di controllo](../debugger/media/dbg-tour-watch-window.png "finestra Espressioni di controllo")
 
-In questo esempio, è impostato su un'espressione di controllo di `File` oggetto ed è possibile visualizzarne il valore cambia quando sposta tramite il debugger. A differenza di altre finestre delle variabili, il **espressioni di controllo** windows Mostra sempre le variabili che sta controllando (è disattivati quando dall'ambito).
+In questo esempio, è impostato su un'espressione di controllo di `f` oggetto ed è possibile visualizzarne il valore cambia quando sposta tramite il debugger. A differenza di altre finestre delle variabili, il **espressioni di controllo** windows Mostra sempre le variabili che sta controllando (è disattivati quando dall'ambito).
 
 Per altre informazioni, vedere [impostare un'espressione di controllo utilizzando le espressioni di controllo e le finestre di controllo immediato](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Per ulteriori informazioni, vedere [Debug in tempo reale delle App ASP.NET utili
 
 Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
-## <a name="more-features-to-look-at"></a>Più funzionalità da esaminare
+## <a name="next-steps"></a>Passaggi successivi
 
--   [Suggerimenti e trucchi del debugger](../debugger/debugger-tips-and-tricks.md) informazioni su come aumentare la produttività con il debugger.
+In questa esercitazione hai era necessario un rapido controllo di numerose funzionalità di debug. È possibile esaminare informazioni più dettagliate queste funzionalità tramite un'applicazione di esempio
 
--   [Modifica e continuazione](../debugger/edit-and-continue.md) per un sottoinsieme di lingue (c#, C++, Visual Basic), la funzionalità Modifica e continuazione consente di modificare il codice all'interno di una sessione di debug.
-
--   [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md) viene descritto come eseguire il debug delle applicazioni multithreading. 
-
--   [Debug remoto](../debugger/remote-debugging.md) viene descritto come eseguire il debug delle applicazioni in esecuzione in altri computer o dispositivi. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) descrive la funzionalità di IntelliTrace in Visual Studio Enterprise. È possibile utilizzare il record e traccia cronologia di esecuzione del codice.
-
--   [Utilizzo della rete](../profiling/network-usage.md) descrive uno strumento di profilatura che è possibile utilizzare per eseguire il debug di servizi web e altre risorse di rete in Windows le app UWP (Universal). Utilizzare lo strumento per esaminare i payload.
-
--   [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) descrive Microsoft Debug Interface Access Software Development Kit (DIA SDK). Il DIA SDK fornisce l'accesso alle informazioni di debug archiviate nei file di database di programma (PDB) generati dagli strumenti di post-compilazione di Microsoft.  
-
-## <a name="see-also"></a>Vedere anche  
- [Debug in Visual Studio](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Informazioni sul debug tramite Visual Studio](../debugger/getting-started-with-the-debugger.md)

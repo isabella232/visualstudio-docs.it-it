@@ -1,7 +1,9 @@
 ---
-title: 'Procedura: creare una condizione della regola dichiarativa (Legacy) | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: creare una condizione della regola dichiarativa (Legacy)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procedura: creare una condizione della regola dichiarativa (legacy)
-In questo argomento viene illustrato come dichiarare una condizione della regola con la progettazione del flusso di lavoro di Windows legacy che fa riferimento il [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Restituisce un'istruzione di condizione **True** o **False**. Una condizione della regola dichiarativa è un'istruzione di condizione che viene creata utilizzando il [finestra di dialogo Editor regole condizione (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) e archiviati in formato XML con il flusso di lavoro. Può includere predicati che confrontano lo stato del flusso di lavoro con l'algebra booleana che combina più predicati.
+In questo argomento viene descritto come dichiarare una condizione della regola usando Progettazione flussi di lavoro Windows legacy che fa riferimento a .NET Framework versione 3.5 o la WinFX.
 
- Le condizioni di regole dichiarative vengono usate nelle attività predefinite di Windows Workflow Foundation di seguito riportate:
+Restituisce un'istruzione di condizione **True** o **False**. Una condizione della regola dichiarativa è un'istruzione di condizione che viene creata utilizzando il [finestra di dialogo Editor regole condizione (Legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) e archiviati in formato XML con il flusso di lavoro. Può includere predicati che confrontano lo stato del flusso di lavoro con l'algebra booleana che combina più predicati.
+
+Le condizioni di regole dichiarative vengono usate nelle attività predefinite di Windows Workflow Foundation di seguito riportate:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ In questo argomento viene illustrato come dichiarare una condizione della regola
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Per creare una condizione di regole dichiarative usando l’Editor della condizione della regola
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Per creare una condizione di regole dichiarative usando l’Editor della condizione della regola
 
 1.  L'attività **proprietà** finestra, fare clic su di **condizione** proprietà o **UntilCondition** proprietà, a seconda dell'attività.
 

@@ -1,6 +1,7 @@
 ---
-title: Domande frequenti su Esplora test di Visual Studio | Microsoft Docs
+title: Domande frequenti su Esplora test di Visual Studio
 ms.date: 1/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,11 +16,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 7612f13f71bed42b5ea416a74c50674ac028f42f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 
@@ -86,7 +87,7 @@ I flag di funzionalità vengono usati per fornire parti del prodotto sperimental
 Per attivare un flag di funzionalità tramite il prompt dei comandi per sviluppatori di Visual Studio, usare il comando seguente. Modificare il percorso in cui è installato Visual Studio nel computer in uso e modificare la chiave del Registro di sistema per il flag di funzionalità desiderato.
 
 ```shell
-vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise” HKLM FeatureFlags\TestingTools\UnitTesting\HierarchyView Value dword 1
+vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise" HKLM FeatureFlags\TestingTools\UnitTesting\HierarchyView Value dword 1
 ```
 
 > [!NOTE]

@@ -15,14 +15,15 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5961498518d8f2a1137134f88f7961f1c9395937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5db34de3244f7ee38ba4ef33c71b251f2bdbb6b0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 Quando si trascina un elemento di **origini dati** finestra all'area di progettazione per creare un controllo con associazione a dati, è possibile selezionare il tipo di controllo da creare. Un elenco di riepilogo a discesa che visualizza i controlli che è possibile scegliere tra ogni elemento nella finestra. Il set di controlli associati a ogni elemento è determinato dal tipo di dati dell'elemento. Se il controllo che si desidera creare non viene visualizzato nell'elenco, è possibile seguire le istruzioni in questo argomento per aggiungere il controllo all'elenco.

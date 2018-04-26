@@ -18,14 +18,15 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4116a06ff57ae6793c7f80abea2464767b33c3bf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati nel database
 Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è consigliabile salvare le modifiche al database. Viene eseguita in uno dei tre modi:

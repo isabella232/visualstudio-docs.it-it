@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 397e60225740c34d1d70555ccd8294522550a3e1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 54bd5c4989f23b1de64a17bdf8d88ccebeb65a38
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 Tramite i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo che si basano sui modelli di linguaggio specifico di dominio. Per informazioni sui modelli di testo di base, vedere [la generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale quando si esegue il debug di tale linguaggio DSL e funzionano anche in un computer in cui è stato distribuito del linguaggio DSL.

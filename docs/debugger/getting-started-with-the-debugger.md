@@ -1,6 +1,6 @@
 ---
-title: Informazioni su come eseguire il debug - Visual Studio | Documenti Microsoft
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+title: Iniziare a usare il debugger
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3501f3e94fdb9b98aefc96d7a1e2fe12b4117fbb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="learn-to-debug-using-visual-studio"></a>Viene illustrato come eseguire il debug con Visual Studio
+# <a name="tutorial-learn-to-debug-using-visual-studio"></a>: Esercitazione eseguire il debug con Visual Studio
 
 In questo argomento vengono presentate le funzionalità del debugger di Visual Studio in una procedura dettagliata. Se si desidera una visualizzazione di livello superiore delle funzionalità di debug, vedere [Debugger funzionalità presentazione](../debugger/debugger-feature-tour.md).
 

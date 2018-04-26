@@ -1,6 +1,7 @@
 ---
-title: Come usare Google Test per C++ in Visual Studio | Microsoft Docs
+title: Come usare Google Test per C++ in Visual Studio
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: d525a9aae0f376ada2cbb48b2ac07acbb21f436c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5e86884f017aa2fc490eb926485c567742b8647
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Come usare Google Test per C++ in Visual Studio
 In **Visual Studio 2017 versione 15.5** e versioni successive Google Test è integrato nell'IDE di Visual Studio come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++**. Per verificare che sia installato nel computer, aprire il programma di installazione di Visual Studio e trovare Google Test nell'elenco dei componenti del carico di lavoro:

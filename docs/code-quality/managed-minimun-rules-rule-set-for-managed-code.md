@@ -1,6 +1,7 @@
 ---
 title: Gestito minimo set di regole per il codice gestito
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ec566fb45b68505849639af00f85bbe81aa6f16
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9803c5171cb15454e465253e410b3dc2f4e6215e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Gestito minimo set di regole per il codice gestito
 Le regole minime gestite concentrarsi sui problemi più critici del codice, inclusi i potenziali problemi di sicurezza, arresti anomali delle applicazioni e altri errori di logica e di progettazione rilevanti. È necessario includere questo set di regole nel set di regole personalizzati creati per i progetti.

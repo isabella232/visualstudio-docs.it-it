@@ -12,14 +12,15 @@ ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: da00528f7c5e2332f4aa599674f6dcb0929be125
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
 È possibile connettersi a un database di Access (file con estensione mdf o un file con estensione accdb) tramite Visual Studio. Dopo aver definito la connessione, i dati visualizzati nel **origini dati** finestra. da cui è possibile trascinare tabelle o visualizzazioni nei form.
@@ -98,7 +99,7 @@ ms.lasthandoff: 04/19/2018
 
 6.  Nel **Seleziona connessione dati** selezionare **nuova connessione** per configurare una nuova connessione dati.
 
-7.  Se l'origine dati non è **File di Database Microsoft Access (OLE DB)**selezionare **modifica** per aprire la **Modifica origine dati** la finestra di dialogo e selezionare **Microsoft Accedere al File di Database**, quindi selezionare **OK**.
+7.  Se l'origine dati non è **File di Database Microsoft Access (OLE DB)** selezionare **modifica** per aprire la **Modifica origine dati** la finestra di dialogo e selezionare **Microsoft Accedere al File di Database**, quindi selezionare **OK**.
 
 8.  Nel **nome file di Database**, specificare il percorso e nome del file con estensione mdb che si desidera connettersi e quindi selezionare **OK**.
 

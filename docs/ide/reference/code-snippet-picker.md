@@ -1,9 +1,9 @@
 ---
-title: Selezione frammento di codice | Microsoft Docs
-ms.custom: ''
+title: Selezione frammento di codice
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01cfc51591264b258518f4c90276a7ece11250
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 
@@ -47,15 +47,17 @@ Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usa
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
-Nome elemento  
+Nome elemento
+
 Campo di testo modificabile che visualizza il nome dell'elemento selezionato in **Elenco elementi**. Per eseguire una ricerca incrementale per l'elemento desiderato, iniziare a digitarne il nome in questo campo. Continuare aggiungendo lettere fino a quando l'elemento desiderato non viene selezionato nell'**Elenco elementi**.
 
-Elenco elementi  
+Elenco elementi
+
 Elenco di frammenti di codice disponibili per l'inserimento o un elenco di cartelle che contengono frammenti di codice. Per inserire un frammento di codice o espandere una cartella, selezionare l'elemento desiderato e premere INVIO.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedure consigliate per l'uso dei frammenti di codice](../../ide/best-practices-for-using-code-snippets.md)  
-[Frammenti di codice IntelliSense di Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Impostazione di segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)  
-[Procedura: Usare frammenti di codice racchiusi](../../ide/how-to-use-surround-with-code-snippets.md)
+- [Procedure consigliate per l'uso dei frammenti di codice](../../ide/best-practices-for-using-code-snippets.md)
+- [Frammenti di codice IntelliSense di Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
+- [Impostazione di segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)
+- [Procedura: Usare frammenti di codice racchiusi](../../ide/how-to-use-surround-with-code-snippets.md)

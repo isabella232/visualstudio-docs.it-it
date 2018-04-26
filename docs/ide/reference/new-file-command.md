@@ -1,10 +1,9 @@
 ---
-title: Comando Nuovo file | Microsoft Docs
-ms.custom: ''
+title: Comando Nuovo file
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
@@ -16,60 +15,64 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9634d71954b51534dfabf2c77b4709687d46453d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69e57e348692d57baabb0d4f13290913d45f814c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
-Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-File.NewFile [filename] [/t:templatename] [/editor:editorname]  
-```  
-  
-## <a name="arguments"></a>Argomenti  
- `filename`  
- Facoltativo. Nome del file. Se non viene specificato alcun nome, viene indicato un nome predefinito. Se non viene elencato alcun nome di modello, viene creato un file di testo.  
-  
-## <a name="switches"></a>Opzioni  
- /t:`templatename`  
- Facoltativo. Specifica il tipo di file da creare.  
-  
- La sintassi dell'argomento /t:`templatename` riflette le informazioni riportate nella finestra di dialogo Nuovo file. Immettere il nome categoria seguito da una barra rovesciata (`\`) e il nome del modello e racchiudere l'intera stringa tra virgolette.  
-  
- Ad esempio, per creare un nuovo file di origine [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], per l'argomento /t:`templatename` è necessario immettere quanto segue.  
-  
-```  
-/t:"Visual C++\C++ File (.cpp)"  
-```  
-  
- L'esempio precedente indica che il modello di file di C++ è incluso nella categoria Visual C++ nella finestra di dialogo **Nuovo file**.  
-  
- /e:`editorname`  
- Facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.  
-  
- La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.  
-  
- Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.  
-  
-```  
-/e:"Source Code (text) Editor"  
-```  
-  
-## <a name="example"></a>Esempio  
- In questo esempio viene creata una nuova pagina Web "test1.htm" e aperta nell'editor del codice sorgente.  
-  
-```  
->File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
- [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
- [Finestra di controllo immediato](../../ide/reference/immediate-window.md)   
- [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.
+
+## <a name="syntax"></a>Sintassi
+
+```
+File.NewFile [filename] [/t:templatename] [/editor:editorname]
+```
+
+## <a name="arguments"></a>Argomenti
+ `filename`
+
+ Facoltativo. Nome del file. Se non viene specificato alcun nome, viene indicato un nome predefinito. Se non viene elencato alcun nome di modello, viene creato un file di testo.
+
+## <a name="switches"></a>Opzioni
+ /t:`templatename`
+
+ Facoltativo. Specifica il tipo di file da creare.
+
+ La sintassi dell'argomento /t:`templatename` riflette le informazioni riportate nella finestra di dialogo Nuovo file. Immettere il nome categoria seguito da una barra rovesciata (`\`) e il nome del modello e racchiudere l'intera stringa tra virgolette.
+
+ Ad esempio, per creare un nuovo file di origine [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], per l'argomento /t:`templatename` è necessario immettere quanto segue.
+
+```
+/t:"Visual C++\C++ File (.cpp)"
+```
+
+ L'esempio precedente indica che il modello di file di C++ è incluso nella categoria Visual C++ nella finestra di dialogo **Nuovo file**.
+
+ /e:`editorname`
+
+ Facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+
+ La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.
+
+ Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
+
+```
+/e:"Source Code (text) Editor"
+```
+
+## <a name="example"></a>Esempio
+ In questo esempio viene creata una nuova pagina Web "test1.htm" e aperta nell'editor del codice sorgente.
+
+```
+>File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
+```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Finestra di comando](../../ide/reference/command-window.md)
+- [Finestra di controllo immediato](../../ide/reference/immediate-window.md)
+- [Casella Trova/Comando](../../ide/find-command-box.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

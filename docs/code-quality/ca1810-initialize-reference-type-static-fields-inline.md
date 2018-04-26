@@ -1,6 +1,7 @@
 ---
 title: 'CA1810: Inizializzare i campi statici del tipo di riferimento inline'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0751a4f8f4402d6ba9a3128601ad6e735ac0d3e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b31a0bbea244d5d196364517b5c5a2ca8d7a53a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inizializzare i campi statici del tipo di riferimento inline
 |||
@@ -58,10 +59,10 @@ ms.lasthandoff: 04/19/2018
  Si noti l'aggiunta del `beforefieldinit` flag nella definizione di codice MSIL per il `NoStaticConstructor` classe.
 
  **public class auto ansi StaticConstructor** **estende [mscorlib**
-**{**
-**} / / fine della classe StaticConstructor** 
+ **{**
+ **} / / fine della classe StaticConstructor** 
  **Class auto pubblica ansi beforefieldinit NoStaticConstructor** **estende [mscorlib**
-**{** 
+ **{** 
  **} / / fine della classe NoStaticConstructor**
 ## <a name="related-rules"></a>Regole correlate
  [CA2207: Inizializzare i campi statici dei tipi di valore inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

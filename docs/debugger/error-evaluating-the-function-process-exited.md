@@ -1,25 +1,25 @@
 ---
-title: 'Errore: Terminato il processo di destinazione durante la valutazione della funzione &#39;funzione&#39; | Documenti Microsoft'
+title: 'Errore: Il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;funzione&#39; | Documenti Microsoft'
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>Errore: Terminato il processo di destinazione durante la valutazione della funzione &#39;(funzione)&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Errore: Il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;(funzione)&#39;
 
-Testo del messaggio completo: il processo di destinazione è stato chiuso durante la valutazione della funzione 'function'. Vedere la finestra di Output per il codice di uscita del processo di destinazione.
+Testo del messaggio completo: il processo di destinazione è terminato con codice 'code' durante la valutazione della funzione 'function'.
 
 Per rendere più semplice controllare lo stato degli oggetti .NET, il debugger automaticamente forzerà il processo sottoposto a debug per eseguire codice aggiuntivo (in genere i metodi di richiamo di proprietà e `ToString` funzioni). Nella maggior parte degli scenari, queste funzioni completata correttamente o generano eccezioni che possono essere intercettate dal debugger. Tuttavia, esistono alcune circostanze in cui le eccezioni non possono essere intercettate in quanto attraversano i limiti del kernel, richiedono la distribuzione dei messaggi utente oppure non sono recuperabili. Un risultato, un metodo Get della proprietà o del metodo ToString che esegue codice in cui termina in modo esplicito il processo (ad esempio, chiama `ExitProcess()`) o genera un'eccezione non gestita che non può essere intercettata (ad esempio, `StackOverflowException`) comporta la terminazione di processo sottoposto a debug e fine della sessione di debug. Se si verifica questo messaggio di errore, ciò è accaduto.
  

@@ -1,6 +1,7 @@
 ---
 title: Annotazione di parametri di funzione e valori restituiti
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
@@ -126,11 +127,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a06a987dc94ac4f3eb71d047ba33d410d7391a91
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c6c5147bdb1720c6da20dd93dd3bda81c2e6464
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo vengono descritti gli utilizzi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e puntatori a strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di utilizzo comune per le annotazioni. Per ulteriori annotazioni che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)

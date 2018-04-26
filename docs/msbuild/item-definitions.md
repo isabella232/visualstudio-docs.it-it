@@ -1,26 +1,22 @@
 ---
 title: Definizioni degli elementi | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080ed4c1076bd85579eb3d7b01404c677dfafb37
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 03a6bd0c570fb34fc5e1db139ccfa8d0d5d02ea4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 consente la dichiarazione statica di elementi nei file di progetto mediante l'elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). I metadati possono essere tuttavia aggiunti solo al livello dell'elemento, anche se sono identici per tutti gli elementi. A partire da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, è stato introdotto un elemento di progetto denominato [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) che consente di superare questa limitazione. *ItemDefinitionGroup* consente di definire un set di definizioni degli elementi che aggiungono i valori dei metadati predefiniti a tutti gli elementi del tipo di elemento denominato.  
@@ -63,7 +59,7 @@ ms.lasthandoff: 02/09/2018
  In questo esempio il metadato predefinito "m" viene applicato all'elemento "i" perché non è definito in modo esplicito dall'elemento "i". Al contrario, il metadato predefinito "n" non viene applicato all'elemento "i" perché è già definito dall'elemento "i".  
   
 > [!NOTE]
->  I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e minuscole. I metadati degli elementi e i nomi di proprietà o elementi non prevedono tale distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.  
+>  I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e minuscole. I metadati degli elementi e i \/nomi di proprietà o elementi non prevedono tale distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.  
   
 ## <a name="value-sources"></a>Origini dei valori  
  I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da molte origini diverse, come indicato di seguito:  

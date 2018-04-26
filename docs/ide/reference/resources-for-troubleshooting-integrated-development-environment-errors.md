@@ -1,10 +1,9 @@
 ---
-title: Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato | Microsoft Docs
-ms.custom: ''
+title: Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -96,11 +95,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48516bd598719112a3a94216b3510b628579f032
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a87d0b6aeec41071fd1e1018155b0a7898ed4a6c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
 
@@ -120,6 +119,6 @@ I forum consentono di interagire con altri sviluppatori e anche con i dipendenti
 
 Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).
 
- ## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche
 
 * [Risoluzione degli errori del proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

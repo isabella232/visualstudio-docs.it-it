@@ -13,14 +13,15 @@ ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2f3085be670a3344bc8239de5e4dfe4c8f11303
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd0aa9ae269da4cfd4ae5ab3dfb45e96052d75fe
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare i controlli WPF a un set di dati
 In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i controlli associati a dati. I controlli vengono associati a record di prodotto incapsulati in un set di dati. Si aggiungeranno inoltre i pulsanti per scorrere i prodotti e salvare le modifiche ai record di prodotto.

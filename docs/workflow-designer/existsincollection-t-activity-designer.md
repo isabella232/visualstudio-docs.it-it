@@ -1,7 +1,9 @@
 ---
-title: ExistsInCollection&lt;T&gt; ActivityDesigner | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - ExistsInCollection&lt;T&gt; ActivityDesigner
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; ActivityDesigner
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > ActivityDesigner
+
 Il **ExistsInCollection\<T >** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.ExistsInCollection%601> attività.
 
-## <a name="the-existsincollectiont-activity"></a>Il ExistsInCollection < T\> attività
+## <a name="the-existsincollectiont-activity"></a>Il ExistsInCollection\<T > attività
  L'attività <xref:System.Activities.Statements.ExistsInCollection%601> determina se in una particolare raccolta è presente un elemento specificato.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Utilizzo di ExistsInCollection\<T > ActivityDesigner
- Il **ExistsInCollection\<T >** ActivityDesigner è reperibile nel **raccolta** categoria del **della casella degli strumenti**, accessibile facendo clic di  **Casella degli strumenti** scheda della [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (in alternativa, selezionare **barra degli strumenti** dal **vista** menu o CTRL + ALT + X.)
+ Il **ExistsInCollection\<T >** ActivityDesigner è reperibile nella **raccolta** categoria del **casella degli strumenti**, accessibile facendo clic il  **Casella degli strumenti** scheda della finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu o premere CTRL + ALT + X.)
 
- Il **ExistsInCollection\<T >** da, è possibile trascinare l'ActivityDesigner di **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Crea un <xref:System.Activities.Statements.ExistsInCollection%601> attività con valore predefinito è <xref:System.Activities.Activity.DisplayName%2A> existsincollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* è **Int32**. Tale valore può essere modificato nella griglia delle proprietà.  Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **ExistsInCollection < T\>**  ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+ Il **ExistsInCollection\<T >** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Crea un <xref:System.Activities.Statements.ExistsInCollection%601> attività con valore predefinito è <xref:System.Activities.Activity.DisplayName%2A> existsincollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* è **Int32**. Tale valore può essere modificato nella griglia delle proprietà.  Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **ExistsInCollection < T\>**  ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
 
-### <a name="the-existsincollectiont-properties"></a>Il ExistsInCollection < T\> proprietà
+### <a name="the-existsincollectiont-properties"></a>Il ExistsInCollection\<T > proprietà
  Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ExistsInCollection%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|

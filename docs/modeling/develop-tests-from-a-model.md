@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db4fdcf6a672188ef00ab61cfdbb15395c596cec
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 5e0ddb21e12af4c6e35274dd9a5fd572654e6119
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e altre parti interessate e consente di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.

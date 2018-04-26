@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0962ee3fb780b1634438af48766f2ba086e9f4b2
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: d64c819e1d07fed44372edca2c7107d956937d58
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Strumenti di linguaggio specifico di dominio (strumenti DSL), che sono ospitati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consentono progettare un linguaggio specifico di dominio e quindi generare tutto ciò che gli utenti devono disporre per creare i modelli basati sulla lingua.

@@ -12,14 +12,15 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 166b11eaa1e4899547e6bb0735b0a220adc6e694
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare gli oggetti TableAdapter
 Gli oggetti TableAdapter forniscono la comunicazione tra l'applicazione e un database. Connessione al database, eseguire query o stored procedure e restituiscono i dati di tabella o di riempimento esistente <xref:System.Data.DataTable> con i dati restituiti. Gli oggetti TableAdapter anche inviare i dati aggiornati dall'applicazione al database.

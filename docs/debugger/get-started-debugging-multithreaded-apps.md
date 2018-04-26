@@ -1,5 +1,6 @@
 ---
-title: Introduzione al debug di applicazioni multithreading con | Documenti Microsoft
+title: Informazioni su come eseguire il debug delle applicazioni multithreading
+description: Eseguire il debug con le finestre Espressioni di controllo parallelo e stack in parallelo in Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.technology: vs-ide-debug
@@ -18,13 +19,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb178a0a048a3696fc2c1ec642127906c8b83424
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Introduzione al debug di un'applicazione multithreading in Visual Studio
+# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Introduzione al debug di applicazioni multithreading in Visual Studio
 Visual Studio fornisce numerosi strumenti e gli elementi dell'interfaccia utente per eseguire il debug di applicazioni multithreading. In questa esercitazione viene illustrato come utilizzare gli indicatori dei thread, il **stack in parallelo** finestra il **espressioni di controllo parallelo** finestra punti di interruzione condizionali e i punti di interruzione di filtro. In questa esercitazione richiede solo pochi minuti, ma il suo completamento consentirà di acquisire familiarità con le funzionalità per il debug di applicazioni multithreading.
 
 |         |         |
