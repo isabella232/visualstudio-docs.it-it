@@ -1,7 +1,9 @@
 ---
-title: Visualizzazioni di flusso di lavoro sequenziale (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - visualizzazioni del flusso di lavoro sequenziale (Legacy)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Visualizzazioni del flusso di lavoro sequenziale (legacy)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] fornisce una progettazione di flussi di lavoro legacy di Windows che può essere usato per destinazione di [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] consente di creare graficamente le applicazioni di [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] usando dell'interfaccia utente comune di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le applicazioni [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]sono composte da passaggi del processo del flusso di lavoro chiamati attività. Per creare un flusso di lavoro, creare le attività nell'area di progettazione trascinando i rispettivi ActivityDesigner dalla **della casella degli strumenti** nell'area di progettazione.
+Visual Studio 2010 offre una progettazione di flussi di lavoro Windows legacy che può essere utilizzato come destinazione .NET Framework versione 3.5 o la WinFX.
 
- Quando si crea un flusso di lavoro sequenza, ovvero un [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), sono disponibili tre visualizzazioni del flusso di lavoro. Queste visualizzazioni sono accessibili dal **flusso di lavoro** menu e dal menu di scelta rapida nell'area di progettazione.
+La finestra di progettazione del flusso di lavoro consente di creare graficamente le applicazioni di Windows Workflow Foundation (WF) tramite l'interfaccia utente di Visual Studio familiare. Applicazioni di Windows Workflow Foundation (WF) sono composte da passaggi del processo del flusso di lavoro chiamati attività. Per creare un flusso di lavoro, creare le attività nell'area di progettazione trascinando i rispettivi ActivityDesigner dalla **della casella degli strumenti** nell'area di progettazione.
 
- Nella tabella riportata di seguito vengono elencati il nome e la descrizione di ogni visualizzazione.
+Quando si crea un flusso di lavoro sequenza, ovvero un [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), sono disponibili tre visualizzazioni del flusso di lavoro. Queste visualizzazioni sono accessibili dal **flusso di lavoro** menu e dal menu di scelta rapida nell'area di progettazione.
+
+Nella tabella riportata di seguito vengono elencati il nome e la descrizione di ogni visualizzazione.
 
 |Opzione di menu/scheda|Descrizione|
 |----------------------|-----------------|

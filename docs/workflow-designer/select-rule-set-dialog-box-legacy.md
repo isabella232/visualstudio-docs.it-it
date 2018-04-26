@@ -1,7 +1,9 @@
 ---
-title: Selezionare la finestra di dialogo Set di regole (Legacy) | Documenti Microsoft
+title: Selezionare la progettazione del flusso di lavoro - finestra di dialogo (Legacy) del Set di regole
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Finestra di dialogo Seleziona set di regole (legacy)
-Questo argomento viene descritto come utilizzare il **seleziona Set di regole** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Il **seleziona Set di regole** viene utilizzata la finestra di dialogo per selezionare un set di regole che è possibile utilizzare con un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) attività. Per informazioni su come accedere al **seleziona Set di regole** nella finestra di dialogo vedere [procedura: creare un PolicyActivity del Set di regole (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Questo argomento viene descritto come utilizzare il **seleziona Set di regole** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
 
- Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **seleziona Set di regole** la finestra di dialogo.
+Il **seleziona Set di regole** viene utilizzata la finestra di dialogo per selezionare un set di regole che è possibile utilizzare con un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) attività. Per informazioni su come accedere al **seleziona Set di regole** nella finestra di dialogo vedere [procedura: creare un PolicyActivity del Set di regole (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **seleziona Set di regole** la finestra di dialogo.
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ Questo argomento viene descritto come utilizzare il **seleziona Set di regole** 
  Per ulteriori informazioni su come creare e modificare set di regole, vedere [la finestra di dialogo Editor Set regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> L'editor delle regole della [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] non supporta il multitargeting.
+> L'editor delle regole di progettazione del flusso di lavoro legacy che viene utilizzato come destinazione .NET Framework versione 3.5 o la WinFX non supporta il Multitargeting.
 
  Per ulteriori informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65009).
 

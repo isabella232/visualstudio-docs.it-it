@@ -1,7 +1,9 @@
 ---
-title: ClearCollection&lt;T&gt; ActivityDesigner | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - ClearCollection<T> ActivityDesigner
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23fdb07a4d6ad9052734a9b4bcbde4cabef65db9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3d9d246fa6bad55e47ddff73c888906f2979695
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="clearcollectionlttgt-activity-designer"></a>ClearCollection&lt;T&gt; ActivityDesigner
+# <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > ActivityDesigner
+
 Il **ClearCollection\<T >** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.ClearCollection%601> attività.
 
-## <a name="the-clearcollectiont-activity"></a>Il ClearCollection < T\> attività
+## <a name="the-clearcollectiont-activity"></a>Il ClearCollection\<T > attività
  L'attività <xref:System.Activities.Statements.ClearCollection%601> cancella tutti gli elementi di una raccolta specificata.
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>Utilizzo di ClearCollection\<T > ActivityDesigner
- Il **ClearCollection\<T >** ActivityDesigner è reperibile nel **raccolta** categoria del **della casella degli strumenti**, accessibile facendo clic di  **Casella degli strumenti** scheda della finestra il [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (in alternativa, selezionare **barra degli strumenti** dal **vista** menu o CTRL + ALT + X.)
+ Il **ClearCollection\<T >** ActivityDesigner è reperibile nella **raccolta** categoria del **casella degli strumenti**, accessibile facendo clic il  **Casella degli strumenti** scheda della finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu o premere CTRL + ALT + X.)
 
- Il **ClearCollection\<T >** da, è possibile trascinare l'ActivityDesigner di **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Crea un <xref:System.Activities.Statements.ClearCollection%601> attività con valore predefinito è <xref:System.Activities.Activity.DisplayName%2A> clearcollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* è **Int32**. Tale valore può essere modificato nella griglia delle proprietà. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **ClearCollection < T\>**  ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+ Il **ClearCollection\<T >** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che vengono posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Rilascio dell'ActivityDesigner crea un <xref:System.Activities.Statements.ClearCollection%601> attività con un valore predefinito <xref:System.Activities.Activity.DisplayName%2A> di ClearCollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* è **Int32**. TypeArgument può essere modificato nella griglia delle proprietà.) Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **ClearCollection < T\>**  ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
 
-### <a name="the-clearcollectiont-properties"></a>Il ClearCollection < T\> proprietà
+### <a name="the-clearcollectiont-properties"></a>Il ClearCollection\<T > proprietà
  Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|

@@ -1,7 +1,9 @@
 ---
-title: Richiamare il Debugger di Visual Studio per Windows Workflow Foundation (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - richiamare il Debugger di Visual Studio per Windows Workflow Foundation (Legacy)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Richiamo del debugger di Visual Studio per Windows Workflow Foundation (legacy)
-Questo argomento viene descritto come utilizzare il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger per eseguire il debug [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] applicazioni in Progettazione flussi di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Il debug dei flussi di lavoro legacy viene in genere eseguito nello stesso modo in cui si esegue il debug di programmi scritti negli altri linguaggi di programmazione di Visual Studio. È possibile avviare il debugger di [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] per Windows Workflow Foundation nei modi seguenti:
+Questo argomento viene descritto come utilizzare il Debugger di Visual Studio per il debug delle applicazioni di Windows Workflow Foundation (WF) in Progettazione flussi di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
+
+Il debug dei flussi di lavoro legacy viene in genere eseguito nello stesso modo in cui si esegue il debug di programmi scritti negli altri linguaggi di programmazione di Visual Studio. È possibile avviare la Visual Studio del Debugger per Windows Workflow Foundation nei modi seguenti:
 
 -   Selezionare **Connetti a processo** sul **Debug** menu per selezionare un'istanza del flusso di lavoro in esecuzione dai processi disponibili.
 
 -   Premere **F5** per avviare un'istanza del flusso di lavoro o di continuare l'esecuzione dopo aver raggiunto un punto di interruzione.
 
 ## <a name="stepping-through-code"></a>Avanzamento tramite codice
- Il debugger supporta una delle procedure di debug più comuni, l’avanzamento, che consiste nell'esecuzione di una riga di codice alla volta. Esistono tre comandi di avanzamento tramite codice:
+
+Il debugger supporta una delle procedure di debug più comuni, l’avanzamento, che consiste nell'esecuzione di una riga di codice alla volta. Esistono tre comandi di avanzamento tramite codice:
 
 -   **Passaggio In**: È possibile avanzare in un'altra attività usando **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione. L'esecuzione di istruzioni in gestori del codice dalla finestra di progettazione non è supportata per le attività seguenti: **IfElseActivity**, **l'attività WhileActivity**, **ConditionedActivityGroup**, o **ReplicatorActivity**. Per eseguire il debug dei gestori associati a queste attività è necessario inserire punti di interruzione espliciti nel codice.
 
@@ -51,7 +55,7 @@ Questo argomento viene descritto come utilizzare il [!INCLUDE[vsprvs](../code-qu
 
  Per impostare un progetto di avvio in Esplora soluzioni, il nome del progetto e scegliere **imposta come progetto di avvio**. Per impostare il percorso all'host di **Avvia programma esterno** proprietà, fare doppio clic del flusso di lavoro **proprietà** nodo in Esplora soluzioni e selezionare il **Debug** scheda. In **azione di avvio**selezionare **Avvia programma esterno** e immettere il percorso del file .exe che ospita il flusso di lavoro che si desidera eseguire il debug.
 
- Se l'applicazione host è impostata come progetto di avvio, solo il debugger di Visual Studio viene richiamato per l'esecuzione del debug. Il debugger di [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] per Windows Workflow Foundation non viene richiamato. Se viene usato il debugger di Visual Studio, vengono eseguiti solo i punti di interruzione del codice C# o di Visual Basic, mentre i punti di interruzione impostati nella finestra di progettazione del flusso di lavoro non vengono eseguiti. Ad esempio, un punto di interruzione impostato su un'attività <xref:System.Workflow.Activities.ParallelActivity> nella finestra di progettazione verrà eseguito se viene usato il debugger di [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] per Windows Workflow Foundation, ma non quando si usa il debugger di Visual Studio.
+ Se l'applicazione host è impostata come progetto di avvio, solo il debugger di Visual Studio viene richiamato per l'esecuzione del debug. il Visual Studio del Debugger per Windows Workflow Foundation non viene richiamato. Se viene usato il debugger di Visual Studio, vengono eseguiti solo i punti di interruzione del codice C# o di Visual Basic, mentre i punti di interruzione impostati nella finestra di progettazione del flusso di lavoro non vengono eseguiti. Ad esempio, un punto di interruzione impostati in un <xref:System.Workflow.Activities.ParallelActivity> attività nella finestra di progettazione viene rilevato se viene utilizzato il Visual Studio del Debugger per Windows Workflow Foundation, ma non quando si usa il debugger di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,7 +1,9 @@
 ---
-title: Funzionalità della Shell della finestra di progettazione del flusso di lavoro | Documenti Microsoft
+title: Funzionalità della shell di Progettazione flussi di lavoro
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>Funzionalità della shell di Progettazione flussi di lavoro
 
@@ -27,7 +29,7 @@ Progettazione del flusso di lavoro di Windows è composto da tre principali aree
  Nella carta panoramica viene visualizzata una versione ridotta dell'intera attività alla radice della barra di navigazione corrente, inclusi tutti i relativi figli e figli espansi. Un riquadro di visualizzazione, ovvero un rettangolo con un bordo arancione, evidenzia la parte dell'attività attualmente visualizzata nell'editor. Trascinando il rettangolo attorno alla carta panoramica è possibile scorrere la finestra di progettazione del flusso di lavoro e modificare la visualizzazione dell'editor.
 
 > [!NOTE]
-> L'interfaccia utente di [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] è virtualizzata. Gli ActivityDesigner sono sottoposti a rendering solo se necessario. Se una parte del flusso di lavoro non è stata mai disegnata nell'area della finestra di progettazione, viene visualizzata come bianca sulla carta panoramica. Il flusso di lavoro viene disegnato scorrendo su tutta la carta panoramica.
+> L'interfaccia utente di progettazione flussi di lavoro è virtualizzato. Gli ActivityDesigner sono sottoposti a rendering solo se necessario. Se una parte del flusso di lavoro non è stata mai disegnata nell'area della finestra di progettazione, viene visualizzata come bianca sulla carta panoramica. Il flusso di lavoro viene disegnato scorrendo su tutta la carta panoramica.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Copia o salvataggio dei flussi di lavoro come immagini
  I flussi di lavoro possono essere copiati in formato bitmap o salvati in formato bitmap o vettoriale. La copia o il salvataggio di un'immagine consente di esportare in un altro programma una visualizzazione dell'intera attività alla radice della barra di navigazione corrente, inclusi tutti i relativi figli e figli espansi.
@@ -36,4 +38,4 @@ Progettazione del flusso di lavoro di Windows è composto da tre principali aree
 
 ## <a name="fonts-and-colors"></a>Tipi di carattere e colori
 
-I tipi di carattere usati in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] all'interno di [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dipendono dal tipo di carattere dell'ambiente. I colori visualizzati in [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] cambiano se si usa una combinazione di colori di contrasto elevato per il tema del sistema operativo. Per rendere effettive le modifiche in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], è necessario riavviare [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dopo aver modificato le impostazioni del tipo di carattere e del colore.
+I tipi di carattere utilizzati nella finestra di progettazione del flusso di lavoro all'interno di Visual Studio 2010 vengono controllate dal tipo di carattere ambiente. I colori visualizzati nella finestra di progettazione del flusso di lavoro modificare se si utilizza una combinazione di colori a contrasto elevato per il tema del sistema operativo. Dopo aver apportato una modifica alle impostazioni del tipo di carattere o colore affinché le modifiche abbiano effetto nella finestra di progettazione del flusso di lavoro, è necessario riavviare Visual Studio 2010.

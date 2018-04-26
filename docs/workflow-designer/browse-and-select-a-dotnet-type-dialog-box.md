@@ -1,7 +1,9 @@
 ---
-title: Individuare e selezionare una finestra di dialogo di tipo .NET | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - individuare e selezionare una finestra di dialogo tipo .NET
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
@@ -34,7 +36,7 @@ Nel **proprietà** finestra o finestre di dialogo, finestre di progettazione, ad
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selezione di un tipo di riferimento o di valore da Browser tipi.
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Per selezionare un tipo di riferimento o di valore dal browser dei tipi
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Per selezionare un tipo di riferimento o di valore dal browser dei tipi
 
 1.  Nel **nome del tipo** , immettere il nome del tipo che si desidera utilizzare.
 
@@ -44,7 +46,7 @@ Nel **proprietà** finestra o finestre di dialogo, finestre di progettazione, ad
 
     -   Digitare un numero di caratteri sufficiente nel **nome del tipo** casella per identificare in modo univoco il tipo che si desidera utilizzare e quindi premere INVIO per selezionare il tipo
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Per selezionare un tipo generico dal browser dei tipi
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>Per selezionare un tipo generico dal browser dei tipi
 
 1.  Nel **nome del tipo** casella, digitare il nome di tipo che si desidera utilizzare.
 

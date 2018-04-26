@@ -1,7 +1,9 @@
 ---
-title: Eseguire il binding a un'attività&#39;finestra di dialogo proprietà s (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - eseguire il binding a un'attività&#39;finestra di dialogo proprietà s (Legacy)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Eseguire il binding a un'attività&#39;finestra di dialogo proprietà s (Legacy)
-Questo argomento viene descritto come utilizzare il **associare alla proprietà di un'attività** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Associare a una finestra di dialogo delle proprietà dell’attività (legacy)
+
+Questo argomento viene descritto come utilizzare il **associare alla proprietà di un'attività** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
 
  Un tipo di istanza di proprietà di dipendenza può essere associato alla proprietà pubblica di un'altra attività o evento. Per ulteriori informazioni sull'associazione di attività, vedere [utilizzando le proprietà di dipendenza](http://go.microsoft.com/fwlink?LinkID=65007).
 

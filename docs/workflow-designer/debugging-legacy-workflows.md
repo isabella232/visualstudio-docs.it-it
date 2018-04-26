@@ -1,7 +1,9 @@
 ---
-title: Debug di flussi di lavoro Legacy | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - debug dei flussi di lavoro Legacy
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Debug dei flussi di lavoro legacy
 
-Se si utilizza Progettazione del flusso di lavoro Windows legacy in [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] per compilare [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] che destinate a.NET Framework 3.0 o 3.5, è possibile eseguire il debug dei flussi di lavoro come con qualsiasi altro programma impostando punti di interruzione, creando connessioni ai processi ed esaminando le applicazioni i thread e lo stack di chiamate. È inoltre possibile eseguire il debug in modalità remota.
+Se si utilizza Progettazione flussi di lavoro Windows legacy in Visual Studio per compilare le applicazioni di Windows Workflow Foundation (WF) che scegliere.NET Framework 3.0 o 3.5, è possibile eseguire il debug dei flussi di lavoro come con qualsiasi altro programma impostando punti di interruzione, connessione a processi, ed esaminando i thread e lo stack di chiamate. È inoltre possibile eseguire il debug in modalità remota.
 
 > [!NOTE]
 > Se più versioni di Visual Studio vengono installate e disinstallate sul computer, il debug WF3 potrebbe non riuscire per una delle due seguenti cause:
@@ -32,7 +34,7 @@ Se si utilizza Progettazione del flusso di lavoro Windows legacy in [!INCLUDE[vs
 >
 > Se uno di questi scenari si verifica durante il debug dei flussi di lavoro .NET Framework 3.0 o 3.5, eseguire un ripristino dell'installazione di Visual Studio.
 
- La [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] si integra con le seguenti finestre di debug standard di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
+ Windows Workflow Foundation si integra con le finestre di debug di Visual Studio standard seguenti:
 
 -   **Punto di interruzione**: funziona come previsto, ma si specifica un'attività per il nome della funzione.
 

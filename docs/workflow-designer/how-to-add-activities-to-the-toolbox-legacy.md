@@ -1,7 +1,9 @@
 ---
-title: 'Procedura: aggiungere attività alla casella degli strumenti (Legacy) | Documenti Microsoft'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: aggiungere attività alla casella degli strumenti (Legacy)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Toolbox, adding activities
 - activities, adding to Toolbox
@@ -11,16 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99a8e1cef2ff5ddd526133355c608fa5218573d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procedura: aggiungere attività nella Casella degli strumenti [legacy]
-Quando si compila una soluzione del flusso di lavoro con Progettazione flussi di lavoro Windows legacy che fa riferimento il [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], le attività personalizzate possono essere aggiunti al progetto flusso di lavoro e agli ActivityDesigner disponibili nella **della casella degli strumenti** per facilità di accesso. È inoltre possibile aggiungere le attività direttamente il **della casella degli strumenti** da una libreria di collegamento dinamico (DLL).
 
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Per aggiungere un'attività nella Casella degli strumenti da una DLL
+Quando si compila una soluzione del flusso di lavoro con Progettazione flussi di lavoro Windows legacy destinato a .NET Framework versione 3.5 o la WinFX, le attività personalizzate possono essere aggiunti al progetto del flusso di lavoro e agli ActivityDesigner nel **casella degli strumenti** per facilità di accesso. È inoltre possibile aggiungere le attività direttamente il **della casella degli strumenti** da una libreria di collegamento dinamico (DLL).
+
+## <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Per aggiungere un'attività nella Casella degli strumenti da una DLL
 
 1.  Il pulsante destro della casella degli strumenti finestra sotto **Windows Workflow**, quindi fare clic su **Scegli elementi**.
 

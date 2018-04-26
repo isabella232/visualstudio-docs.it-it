@@ -1,7 +1,9 @@
 ---
-title: Visualizzazioni di attività (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - visualizzazioni di attività (Legacy)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, activity views
 - views, activity
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc053be2f9d11a9a1f3cd48c6c9d24e366410c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d3453ecefece93f593c3d4ebbc261e4332815da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="activity-views-legacy"></a>Visualizzazioni delle attività (legacy)
-Molte delle attività fornite da [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], da cui i flussi di lavoro sono composte da, sono disponibili in Progettazione flussi di lavoro Windows legacy numerose visualizzazioni Progettazione. Quando si trascina un ActivityDesigner dal **della casella degli strumenti** nell'area di progettazione e successivamente ogni volta che si seleziona l'attività, è possibile passare tra le diverse visualizzazioni Progettazione usando il **flusso di lavoro**menu o facendovi clic sopra l'attività selezionata. Quando si sposta il puntatore sul nome di un'attività selezionata, viene inoltre visualizzato un insieme a discesa di schede che è possibile usare per passare tra le diverse visualizzazioni.
 
- Ogni attività dispone di almeno una visualizzazione. Questa è la visualizzazione predefinita quando si trascina un ActivityDesigner dal **della casella degli strumenti** nell'area di progettazione. Questa visualizzazione predefinita dell'attività è disponibile come il **Visualizza [tipo di attività]** opzione nella scheda, ad esempio, i menu e **visualizzazione Parallel**. La maggior parte delle attività hanno visualizzazioni aggiuntive e attività diverse possono avere visualizzazioni diverse. Ad esempio, il [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) attività presenta la visualizzazione di compensazione e [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) attività dispone di un eventi vista. Molte delle attività forniti con Windows Workflow Foundation dispongono **Visualizza gestore annullamento** e **Visualizza errori** progettare viste alla visualizzazione di [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) e un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) associate.
+Molte delle attività fornite da Windows Workflow Foundation (WF), da cui sono composte da flussi di lavoro, sono disponibili in Progettazione flussi di lavoro Windows legacy numerose visualizzazioni Progettazione. Quando si trascina un ActivityDesigner dal **della casella degli strumenti** nell'area di progettazione e successivamente ogni volta che si seleziona l'attività, è possibile passare tra le diverse visualizzazioni Progettazione usando il **flusso di lavoro**menu o facendovi clic sopra l'attività selezionata. Quando si sposta il puntatore sul nome di un'attività selezionata, viene inoltre visualizzato un insieme a discesa di schede che è possibile usare per passare tra le diverse visualizzazioni.
 
- Nella tabella riportata di seguito vengono elencati il nome e la descrizione di ogni visualizzazione.
+Ogni attività dispone di almeno una visualizzazione. Questa è la visualizzazione predefinita quando si trascina un ActivityDesigner dal **della casella degli strumenti** nell'area di progettazione. Questa visualizzazione predefinita dell'attività è disponibile come il **Visualizza [tipo di attività]** opzione nella scheda, ad esempio, i menu e **visualizzazione Parallel**. La maggior parte delle attività hanno visualizzazioni aggiuntive e attività diverse possono avere visualizzazioni diverse. Ad esempio, il [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) attività presenta la visualizzazione di compensazione e [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) attività dispone di un eventi vista. Molte delle attività forniti con Windows Workflow Foundation dispongono **Visualizza gestore annullamento** e **Visualizza errori** progettare viste alla visualizzazione di [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) e un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) associate.
+
+Nella tabella riportata di seguito vengono elencati il nome e la descrizione di ogni visualizzazione.
 
 |Opzione di menu/scheda|Descrizione|
 |----------------------|-----------------|
@@ -33,7 +36,7 @@ Molte delle attività fornite da [!INCLUDE[wf](../workflow-designer/includes/wf_
 |**Visualizza gestore di compensazione**|Selezionare questa opzione di menu o una scheda per visualizzare il [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) associate all'elemento selezionato [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093).|
 |**Gestore di eventi di visualizzazione**|Selezionare questa opzione di menu o una scheda per visualizzare il [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) associate all'elemento selezionato di [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030).|
 
- Per informazioni sulle visualizzazioni simili, vedere [visualizzazioni del flusso di lavoro sequenziale (Legacy)](../workflow-designer/sequential-workflow-views-legacy.md).
+Per informazioni sulle visualizzazioni simili, vedere [visualizzazioni del flusso di lavoro sequenziale (Legacy)](../workflow-designer/sequential-workflow-views-legacy.md).
 
 ## <a name="see-also"></a>Vedere anche
 

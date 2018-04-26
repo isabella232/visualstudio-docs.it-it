@@ -1,7 +1,9 @@
 ---
-title: Finestra di dialogo Configurazione tema (Legacy) | Documenti Microsoft
+title: Finestra di progettazione del flusso di lavoro - finestra di dialogo Configurazione tema (Legacy)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07ae376a09afd73c5744f7d1587c637a4b55410d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Finestra di dialogo configurazione tema (legacy)
-Questo argomento viene descritto come utilizzare il **configurazione tema** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Usare la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Un tema definisce colori di sfondo e primo piano, stili, icone e altri elementi visivi di un flusso di lavoro. È possibile salvare temi per riutilizzarli in altri flussi di lavoro.
+Questo argomento viene descritto come utilizzare il **configurazione tema** nella finestra di dialogo di progettazione del flusso di lavoro Windows legacy. Utilizzare la finestra di progettazione del flusso di lavoro legacy quando è necessario avere come destinazione .NET Framework versione 3.5 o la WinFX.
 
- Per creare e modificare temi usando la **configurazione tema** la finestra di dialogo. Per aprire la finestra di dialogo, selezionare **Crea nuovo tema** sul **flusso di lavoro** menu o del flusso di lavoro area di progettazione e seleziona pulsante destro del mouse **Crea nuovo tema**.
+Un tema definisce colori di sfondo e primo piano, stili, icone e altri elementi visivi di un flusso di lavoro. È possibile salvare temi per riutilizzarli in altri flussi di lavoro.
 
- Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **configurazione tema** la finestra di dialogo.
+Per creare e modificare temi usando la **configurazione tema** la finestra di dialogo. Per aprire la finestra di dialogo, selezionare **Crea nuovo tema** sul **flusso di lavoro** menu o del flusso di lavoro area di progettazione e seleziona pulsante destro del mouse **Crea nuovo tema**.
+
+Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **configurazione tema** la finestra di dialogo.
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
