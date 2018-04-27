@@ -29,7 +29,7 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Questa interfaccia può essere implementata da qualsiasi componente che espone il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaccia. Tuttavia, viene principalmente implementato dai motori di debug in modo che il valore di checksum incorporato in un file di simboli (PDB) può essere passato nuovamente all'IDE e utilizzato durante la ricerca di un'origine.  
+ Questa interfaccia può essere implementata da qualsiasi componente che espone il [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaccia. Tuttavia, viene principalmente implementato dai motori di debug in modo che il valore di checksum incorporato in un file di simboli (*.PDB) può essere passato nuovamente all'IDE e utilizzato durante la ricerca di un'origine.  
   
 ## <a name="methods"></a>Metodi  
  Nella tabella seguente sono illustrati i metodi di `IDebugDocumentChecksum2`.  
