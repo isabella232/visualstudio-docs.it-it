@@ -2,8 +2,8 @@
 title: Panoramica del riquadro azioni | Documenti Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 902301021a698dfd0f6e9f09b000c1e4e403e029
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="actions-pane-overview"></a>Cenni preliminari sul riquadro delle azioni
   Un riquadro azioni è personalizzabile **azioni documenti** riquadro attività associato a un documento di Microsoft Office Word specifico o una cartella di lavoro di Microsoft Office Excel. È ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività predefiniti come il **origine XML** riquadro in Excel o **stili e formattazione** riquadro attività in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.  

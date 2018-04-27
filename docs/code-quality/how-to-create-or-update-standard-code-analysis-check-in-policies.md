@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -30,7 +30,7 @@ Criteri di controllo dell'analisi del codice vengono impostati nelle impostazion
 
 - Per codice gestito, si impostano i criteri di archiviazione specificando un *set di regole* che contiene un subset delle regole di analisi codice.
 
-- Per il codice C/C++, i criteri di controllo richiedono che tutte le regole di analisi di codice vengono eseguite. È possibile aggiungere le direttive del preprocessore per disabilitare regole specifiche per singoli progetti di codice nel progetto team.
+- Per il codice C/C++, in Visual Studio 2017 15,6 e versioni precedenti, i criteri di controllo richiedono che tutte le regole di analisi di codice vengono eseguite. È possibile aggiungere le direttive del preprocessore per disabilitare regole specifiche per singoli progetti di codice nel progetto team. In 15.7 e versioni successive, è possibile utilizzare **/analyze: ruleset** per specificare le regole da eseguire. Per altre informazioni, vedere [utilizzo di set di regole per specificare le regole di C++ per l'esecuzione](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 Dopo aver specificato un criterio di controllo per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi codice per i progetti di codice alle impostazioni dei criteri del progetto team.
 

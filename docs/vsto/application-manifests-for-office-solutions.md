@@ -2,8 +2,8 @@
 title: Manifesti dell'applicazione per le soluzioni Office | Documenti Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa1ee09b3218fbcb485d7c3cd23e23ec18f463c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e31eda8b1e3a1a0c311b35245f9b7690cc37aae0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesti di applicazione per le soluzioni Office
   Un manifesto dell'applicazione è un file XML che descrive gli assembly caricati in una soluzione Microsoft Office. Gli strumenti di sviluppo di Microsoft Office in Visual Studio usano lo schema del manifesto dell'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] definito nel riferimento [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest) .  

@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di set di regole per specificare le regole C++ da eseguire
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utilizzare i set di regole per specificare le regole di C++ per l'esecuzione
 
-In Visual Studio, è possibile creare e modificare un oggetto personalizzato *set di regole* per soddisfare specifiche esigenze del progetto associate con l'analisi del codice. Per creare una regola personalizzata di C++ set, un progetto C/C++ deve essere aperto nell'IDE di Visual Studio. Quindi aprire un set di regole standard nell'editor set di regole e quindi aggiungere o rimuovere le regole specifiche e, facoltativamente, modificare l'azione che si verifica quando l'analisi del codice determina che è stata violata una regola.
+In Visual Studio, è possibile creare e modificare un oggetto personalizzato *set di regole* per soddisfare specifiche esigenze del progetto associate con l'analisi del codice. Il set di regole predefiniti vengono archiviati in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+
+**Visual Studio 2017 versione 15.7** è possibile creare set di regole personalizzate utilizzando qualsiasi testo editor e applicarli nelle compilazioni di riga di comando indipendentemente da quali compilare il sistema in uso. Per altre informazioni, vedere [/analyze: ruleset](/cpp/build/reference/analyze-code-quality).
+
+Per creare una regola personalizzata di C++ imposta in Visual Studio, un progetto C/C++ deve essere aperto nell'IDE di Visual Studio. Quindi aprire un set di regole standard nell'editor set di regole e quindi aggiungere o rimuovere le regole specifiche e, facoltativamente, modificare l'azione che si verifica quando l'analisi del codice determina che è stata violata una regola.
 
 Per creare una nuova regola personalizzata set, è necessario salvarlo con un nuovo nome file. Il set di regole personalizzato viene assegnato automaticamente al progetto.
 
@@ -72,3 +76,20 @@ Per creare una nuova regola personalizzata set, è necessario salvarlo con un nu
 - Per visualizzare e nascondere regole che vengono assegnate i **Nessuno** azione, scegliere **Mostra regole che non sono abilitate**.
 
 - Per aggiungere o rimuovere set di regole predefinite per il set di regole corrente di Microsoft, scegliere **Aggiungi o Rimuovi set di regole figlio**.
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Per creare una set di regole in un editor di testo
+
+È possibile creare un set di regole personalizzate in un testo di editor, archiviarlo in qualsiasi posizione con un `.ruleset` estensione e applicare con il [/analyze: ruleset](/cpp/build/reference/analyze-code-quality) opzione del compilatore.
+
+Nell'esempio seguente viene illustrato come che file che è possibile utilizzare come punto di partenza del set di una regola di base:
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
