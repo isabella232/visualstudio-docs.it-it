@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 9da28d29dc431f2f6ec92a01c397244147042f12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/27/2018
+---
 2. Premere F5 (o digitare `vsce up` nella finestra del terminale) per eseguire il servizio. In questo modo, il servizio verrà eseguito automaticamente nel nuovo spazio selezionato `scott`. 
 1. È possibile verificarlo eseguendo di nuovo `vsce list`. In primo luogo, si noterà che un'istanza di `mywebapi` è ora in esecuzione nello spazio `scott` (la versione in esecuzione in `mainline` è ancora in esecuzione ma non è elencata). In secondo luogo, l'URL del punto di accesso per `webfrontend` ha il prefisso "scott-". Questo URL è univoco per lo spazio `scott` e indica che le richieste inviate all'URL di scott tenteranno per prima la route verso i servizi nello spazio `scott` e poi eseguiranno il fallback ai servizi nello spazio `mainline`.
 
