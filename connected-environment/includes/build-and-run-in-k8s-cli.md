@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: b10d15b90f7f413d26adf8037c6f52c711a9ed69
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="build-and-run-code-in-kubernetes"></a>Compilare ed eseguire codice in Kubernetes
 A questo punto il codice verrà eseguito. Nella finestra del terminale eseguire questo comando dalla **cartella radice del codice**, ovvero webfrontend:
 

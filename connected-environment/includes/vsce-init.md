@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>Inizializzare il codice per lo sviluppo di Docker e Kubernetes
 Finora, è disponibile una semplice app Web che può essere eseguita in locale. L'app verrà ora inserita in un contenitore creando gli asset che definiscono il contenitore dell'app e il modo in cui verrà distribuito in Kubernetes. Si tratta di operazioni semplici con Connected Environment: 
 
