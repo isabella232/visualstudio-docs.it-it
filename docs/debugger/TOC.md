@@ -295,6 +295,7 @@
 #### [Impossibile connettersi al processo](unable-to-attach-to-the-process.md)
 #### [Finestra di dialogo di errore di Modifica e continuazione](edit-and-continue-error-message-dialog-box.md)
 #### [Errore: la valutazione della funzione 'funzione' è scaduta e deve essere interrotta in modo non protetto](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Errore: il processo di destinazione è stato terminato con codice 'codice' durante la valutazione della funzione 'funzione'](error-evaluating-the-function-process-exited.md)
 #### [Errore: impossibile eseguire la connessione a SQL Server su un computer remoto](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Errore: impossibile accedere all'interfaccia di debug di SQL Server](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Errore: SQL non trova SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)

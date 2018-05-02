@@ -3,11 +3,11 @@ layout: LandingPage
 title: Distribuzione delle app in Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per distribuire applicazioni, servizi e componenti.
 ms.technology: vs-ide-deployment
-ms.openlocfilehash: e711706666f3a9d3584c1adfee97f87907ecf3f3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 269cf84fcb1a1928983c9a9c12f97dd616eae7b4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Distribuzione in Visual Studio
 
@@ -80,6 +80,24 @@ Visual Studio offre diversi strumenti per la distribuzione delle app.
                     </div>
                     <div class="cardText">
                         <h3>Distribuire nel Servizio app di Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Distribuire Python in Azure</h3>
                     </div>
                 </div>
             </div>
