@@ -1,6 +1,7 @@
 ---
-title: Impostare una proprietà di automazione univoca dei controlli UWP per il test in Visual Studio | Microsoft Docs
+title: Impostare una proprietà di automazione univoca dei controlli UWP per il test in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: a27b3472080f1b22f0b07b01e92d6a0e5326396e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce916f181a6694eabc91cdb7c6a7dec9a8f5e5ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli UWP per il test
 
@@ -75,7 +76,8 @@ Impostare AutomationProperties.Name su **ButtonY** con la proprietà Content nel
  **Blend per Visual Studio:** usare uno dei metodi seguenti per eseguire questa operazione da Blend per Visual Studio.
 
 > [!NOTE]
->  È possibile usare questo metodo solo per i controlli che vengono creati in modo statico con XAML.
+> È possibile usare questo metodo solo per i controlli che vengono creati in modo statico con XAML.
+
 
  **Per assegnare un nome univoco a controlli esistenti**
 

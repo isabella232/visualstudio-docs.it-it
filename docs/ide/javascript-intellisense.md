@@ -1,9 +1,8 @@
 ---
-title: IntelliSense per JavaScript |Microsoft Docs
-ms.custom: ''
+title: IntelliSense per JavaScript
 ms.date: 06/28/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
@@ -27,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 
@@ -53,7 +52,7 @@ Per ottenere le informazioni necessarie, TypeScript usa diverse fonti:
 - [IntelliSense basato su file dichiarazione TypeScript](#TsDeclFiles)
 - [Acquisizione automatica delle definizioni dei tipi](#Auto)
 
-### <a name="TypeInference"></a>IntelliSense basato sull'inferenza del tipo
+### <a name="intellisense-based-on-type-inference"></a>IntelliSense basato sull'inferenza del tipo
 
 In JavaScript nella maggior parte dei casi non sono disponibili informazioni esplicite relative ai tipi. In genere è abbastanza semplice intuire un tipo in base al contesto del codice circostante.
 Questo processo è detto inferenza del tipo.
@@ -70,7 +69,7 @@ nextItem; // now we know nextItem is a string
 
 Per una funzione, il tipo restituito può essere dedotto dalle istruzioni return.
 
-Per i parametri di funzione l'inferenza non è attualmente disponibile, ma è possibile risolvere il problema mediante i file `.d.ts` JSDoc o TypeScript (vedere le sezioni successive).
+Per i parametri di funzione l'inferenza non è attualmente disponibile, ma è possibile risolvere il problema mediante i file *.d.ts* JSDoc o TypeScript (vedere le sezioni successive).
 
 È anche disponibile una funzionalità di inferenza speciale per i seguenti elementi:
 
@@ -89,7 +88,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a> IntelliSense basato su JSDoc
+### <a name="intellisense-based-on-jsdoc"></a>IntelliSense basato su JSDoc
 
 Quando l'inferenza del tipo non specifica le informazioni sul tipo desiderate (o si vuole aggiungere supporto alla documentazione), è possibile includere informazioni sul tipo in modo esplicito tramite le annotazioni JSDoc.  Ad esempio, per assegnare un tipo specifico a un oggetto parzialmente dichiarato si può usare il tag `@type` come illustrato di seguito:
 
@@ -113,29 +112,29 @@ function Foo(param1) {
 }
 ```
 
-Vedere in [questo documento](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) le annotazioni JsDoc attualmente supportate.
+Vedere [supporto per JSDoc in JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) per le annotazioni di JsDoc attualmente supportate.
 
-### <a name="TsDeclFiles"></a> IntelliSense basato su file dichiarazione TypeScript
+### <a name="intellisense-based-on-typescript-declaration-files"></a>IntelliSense basato su file dichiarazione TypeScript
 
-Dato che ora JavaScript e TypeScript si basano sullo stesso servizio di linguaggio, sono in grado di interagire in modo più completo. Ad esempio è possibile aggiungere codice IntelliSense JavaScript per i valori dichiarati in un file `.d.ts` ([altre informazioni](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), mentre i tipi quali interfacce e classi dichiarate in TypeScript sono disponibili per l'uso come tipi nei commenti JsDoc. 
+Dato che ora JavaScript e TypeScript si basano sullo stesso servizio di linguaggio, sono in grado di interagire in modo più completo. Ad esempio è possibile aggiungere codice IntelliSense JavaScript per i valori dichiarati in un file *.d.ts* (vedere [documentazione TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), mentre i tipi quali interfacce e classi dichiarate in TypeScript sono disponibili per l'uso come tipi nei commenti JsDoc.
 
-Di seguito viene visualizzato un esempio semplice di file di definizione TypeScript che specifica questo tipo di informazioni (attraverso un'interfaccia) a un file JavaScript nello stesso progetto (mediante un tag JsDoc).
+Di seguito viene visualizzato un esempio semplice di file di definizione TypeScript che specifica questo tipo di informazioni (attraverso un'interfaccia) a un file JavaScript nello stesso progetto (mediante un tag `JsDoc`).
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a> Acquisizione automatica delle definizioni dei tipi
+### <a name="automatic-acquisition-of-type-definitions"></a>Acquisizione automatica delle definizioni dei tipi
 
-Nell'ambito TypeScript, le API delle librerie JavaScript più diffuse sono descritte da file `.d.ts` e il repository più comune per tali definizioni si trova in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
+Nell'ambito TypeScript, le API delle librerie JavaScript più diffuse sono descritte da file *.d.ts* e il repository più comune per tali definizioni si trova in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-Per impostazione predefinita il servizio di linguaggio Salsa prova a rilevare le librerie JavaScript in uso, quindi scarica e crea automaticamente un riferimento al file `.d.ts` corrispondente che descrive la libreria, al fine di fornire un'esecuzione IntelliSense più completa. I file vengono scaricati in una cache posta all'interno della cartella dell'utente in `%LOCALAPPDATA%\Microsoft\TypeScript`.
+Per impostazione predefinita il servizio di linguaggio Salsa prova a rilevare le librerie JavaScript in uso, quindi scarica e crea automaticamente un riferimento al file *.d.ts* corrispondente che descrive la libreria, al fine di fornire un'esecuzione IntelliSense più completa. I file vengono scaricati in una cache posta all'interno della cartella dell'utente in *%LOCALAPPDATA%\Microsoft\TypeScript*.
 
 > [!NOTE]
-> Questa funzionalità è **disabilitata** per impostazione predefinita se si usa un file di configurazione `tsconfig.json`, ma può essere impostata come abilitata con le modalità descritte di seguito.
+> Questa funzionalità è **disabilitata** per impostazione predefinita se si usa un file di configurazione *tsconfig.json*, ma può essere impostata come abilitata con le modalità descritte di seguito.
 
-Attualmente il rilevamento automatico funziona per le dipendenze scaricate da npm (mediante la lettura del file `package.json`), Bower (mediante la lettura del file `bower.json`) e per singoli file del progetto corrispondenti a un elenco contenente circa 400 tra le librerie JavaScript più diffuse. Se ad esempio nel progetto è presente `jquery-1.10.min.js`, verrà recuperato e caricato il file `jquery.d.ts` per garantire una funzionalità di modifica più completa. Tale file `.d.ts` non avrà alcun impatto sul progetto.
+Attualmente il rilevamento automatico funziona per le dipendenze scaricate da npm (mediante la lettura del file *package.json*), Bower (mediante la lettura del file *bower.json*) e per singoli file del progetto corrispondenti a un elenco contenente circa 400 tra le librerie JavaScript più diffuse. Se ad esempio nel progetto è presente *jquery-1.10.min.js*, verrà recuperato e caricato il file *jquery.d.ts* per garantire una funzionalità di modifica più completa. Tale file *.d.ts* non avrà alcun impatto sul progetto.
 
 Se non si vuole usare l'acquisizione automatica, disattivarla mediante l'aggiunta di un file di configurazione, come descritto di seguito. È comunque possibile inserire manualmente file di definizione da usare direttamente nel progetto.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Utilizzo di IntelliSense](../ide/using-intellisense.md)

@@ -1,5 +1,5 @@
 ---
-title: Modelli di carico per i test di carico in Visual Studio | Microsoft Docs
+title: Modelli di carico per i test di carico in Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -43,7 +44,8 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
  Ad esempio, un carico per passaggio con un **Numero utenti iniziale** di uno, un**Numero massimo utenti** di 100, un **Intervallo passaggi (secondi)** di 10 e un **Numero utenti per passaggio** di 1 crea un modello di carico utente che comincia a 1, aumenta di 1 ogni 10 secondi fino a raggiungere 100 utenti.
 
 > [!NOTE]
->  Se la durata totale del test è inferiore al tempo necessario per raggiungere il carico massimo di utenti, il test si interrompe al termine della durata specificata e non raggiunge l'obiettivo del Numero massimo utenti.
+> Se la durata totale del test è inferiore al tempo necessario per raggiungere il carico massimo di utenti, il test si interrompe al termine della durata specificata e non raggiunge l'obiettivo del Numero massimo utenti.
+
 
  È possibile utilizzare l'obiettivo Passaggio per aumentare il carico finché il server raggiunge un punto in cui le prestazioni diminuiscono significativamente. Con l'aumentare del carico, le risorse del server potrebbero esaurirsi. Il carico per passaggio è un buon metodo per stabilire con quale numero di utenti ciò si verifica. Quando il carico è in esecuzione, è necessario monitorare attentamente anche le risorse degli agenti per accertarsi che siano in grado di generare il carico desiderato.
 
@@ -117,12 +119,14 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
  Dopo avere creato il test di carico tramite la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà del modelli di carico associate a uno scenario a livelli che soddisfino gli obiettivi di test prefissati.
 
 > [!NOTE]
->  Per un elenco completo delle proprietà di scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+> Per un elenco completo delle proprietà di scenari dei test di carico e delle relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
+
 
  Con il modello di carico viene specificato il numero di utenti virtuali attivi durante un test di carico e la frequenza con cui vengono aggiunti nuovi utenti. È possibile scegliere tra tre modelli disponibili: modello per passaggio, costante e basato su obiettivo. Per altre informazioni, vedere [Specifica del numero di utenti virtuali con i modelli di carico in uno scenario di test di carico](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
->  È possibile inoltre modificare le proprietà di carico a livello di codice utilizzando un plug-in di test di carico. Per altre informazioni, vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
+> È possibile inoltre modificare le proprietà di carico a livello di codice utilizzando un plug-in di test di carico. Per altre informazioni, vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>Per cambiare il modello di carico
 

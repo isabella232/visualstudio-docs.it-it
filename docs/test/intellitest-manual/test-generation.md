@@ -1,6 +1,7 @@
 ---
-title: Generazione di test | Strumento di test per sviluppatori Microsoft IntelliTest | Microsoft Docs
+title: Generazione di test | Strumento di test per sviluppatori Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Generazione di test
 
-Nel testing unità tradizionale la composizione di un test richiede diversi ingredienti:
+Nel testing unità tradizionale un test è costituito da diverse operazioni:
+
+* Una [sequenza di chiamate al metodo](test-generation.md#test-generators)
+* Gli argomenti con cui vengono chiamati i metodi e gli argomenti sono gli [input del test](input-generation.md)
+* Convalida del comportamento previsto dell'applicazione testata indicando un set di [asserzioni](#assumptions-and-assertions)
+
+Di seguito è riportata una struttura di test di esempio:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-Il test è costituito da diversi aspetti:
-
-* Corregge una [sequenza di chiamate al metodo](test-generation.md#test-generators)
-* Corregge gli argomenti con cui vengono chiamati i metodi e gli argomenti sono gli [input del test](input-generation.md)
-* Convalida il comportamento previsto dell'applicazione testata indicando un set di [asserzioni](#assumptions-and-assertions)
 
 IntelliTest spesso è in grado di determinare automaticamente i valori degli argomenti rilevanti per gli [unit test con parametri](#parameterized-unit-testing), che specificano la sequenza di chiamate al metodo e asserzioni.
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Commenti?
 
-Pubblicare idee e richieste di funzionalità in **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Pubblicare idee e richieste di funzionalità in [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

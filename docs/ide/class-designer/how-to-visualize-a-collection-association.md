@@ -1,9 +1,8 @@
 ---
-title: "Procedura: Visualizzare un'associazione di raccolte (Progettazione classi) | Microsoft Docs"
-ms.custom: ''
+title: "Procedura: visualizzare un'associazione di raccolte (Progettazione classi)"
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -18,26 +17,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf7f8c7971b78247e87def172eca169b38b6b80
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Procedura: visualizzare un'associazione di raccolte (Progettazione classi)
-Le proprietà e i campi che sono raccolte di altri tipi possono essere visualizzati nel diagramma classi come associazione di raccolte. A differenza di un'associazione normale che visualizza un campo o una proprietà come linea che collega la classe proprietaria al tipo di campo, un'associazione di raccolte viene visualizzata come una linea che collega la classe proprietaria al tipo raccolto.  
-  
-### <a name="to-create-a-collection-association"></a>Per creare un'associazione di raccolte  
-  
-1.  Nel codice creare una proprietà o un campo il cui tipo è una raccolta fortemente tipizzata.  
-  
-2.  Nel diagramma classi espandere la classe in modo che siano visualizzati le proprietà e i campi.  
-  
-3.  Nella classe fare clic con il pulsante destro del mouse sul campo o proprietà e scegliere **Mostra come associazione di raccolte**.  
-  
-     La proprietà o il campo viene visualizzato come una linea di associazione che si collega al tipo raccolto.  
-  
+# <a name="how-to-visualize-a-collection-association-class-designer"></a>Procedura: Visualizzare un'associazione di raccolte (Progettazione classi)
+
+Le proprietà e i campi che sono raccolte di altri tipi possono essere visualizzati nel diagramma classi come associazione di raccolte. A differenza di un'associazione normale che visualizza un campo o una proprietà come linea che collega la classe proprietaria al tipo di campo, un'associazione di raccolte viene visualizzata come una linea che collega la classe proprietaria al tipo raccolto.
+
+## <a name="to-create-a-collection-association"></a>Per creare un'associazione di raccolte
+
+1.  Nel codice creare una proprietà o un campo il cui tipo è una raccolta fortemente tipizzata.
+
+2.  Nel diagramma classi espandere la classe in modo che siano visualizzati le proprietà e i campi.
+
+3.  Nella classe fare clic con il pulsante destro del mouse sul campo o proprietà e scegliere **Mostra come associazione di raccolte**.
+
+     La proprietà o il campo viene visualizzato come una linea di associazione che si collega al tipo raccolto.
+
 ## <a name="see-also"></a>Vedere anche
-[Procedura: Creare associazioni tra tipi](how-to-create-associations-between-types.md)   
-[Progettazione di classi e tipi](designing-classes-and-types.md)   
-[Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)
+
+- [Procedura: Creare associazioni tra tipi](how-to-create-associations-between-types.md)
+- [Progettazione di classi e tipi](designing-and-viewing-classes-and-types.md)
+- [Visualizzazione di tipi e relazioni](viewing-types-and-relationships.md)

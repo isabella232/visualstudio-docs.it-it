@@ -1,6 +1,6 @@
 ---
 title: Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati
-description: Il carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati in Visual Studio riunisce Python, R, F# e le rispettive distribuzioni di runtime, inclusa Anaconda.
+description: Questo carico di lavoro di Visual Studio riunisce Python, R, F# e le rispettive distribuzioni di runtime, inclusa Anaconda.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs - vs-python
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29812965a364b6de272f0e365f49552e4627361f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="data-science-and-analytical-applications-workload"></a>Carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati
+# <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
 Il carico di lavoro Applicazioni analitiche e di analisi scientifica dei dati, che può essere selezionato e installato tramite il programma di installazione di Visual Studio, riunisce tre linguaggi e le rispettive distribuzioni di runtime:
 

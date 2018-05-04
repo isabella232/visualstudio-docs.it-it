@@ -1,5 +1,5 @@
 ---
-title: Creare un plug-in test di carico in Visual Studio | Microsoft Docs
+title: Creare un plug-in test di carico in Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedura: creare un plug-in test di carico
 
@@ -102,7 +103,8 @@ ms.lasthandoff: 04/16/2018
 Nel codice seguente viene illustrato un plug-in test di carico in cui viene eseguito il codice personalizzato dopo un evento LoadTestFinished. Se questo codice viene eseguito in un agente di test in un computer remoto e l'agente di test non dispone di un servizio SMTP localhost, lo stato del test di carico rimarrà indicato come "In corso" dal momento che verrà visualizzata una casella di messaggio.
 
 > [!NOTE]
->  Per il codice seguente è necessaria l'aggiunta di un riferimento a System.Windows.Forms.
+> Per il codice seguente è necessaria l'aggiunta di un riferimento a System.Windows.Forms.
+
 
 ```csharp
 using System;

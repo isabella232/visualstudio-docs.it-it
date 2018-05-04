@@ -1,6 +1,7 @@
 ---
-title: Gestione della sicurezza dell'applicazione in Visual Studio | Microsoft Docs
+title: Gestione della sicurezza dell'applicazione in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb75bfe3c9e479e67c766137ee84e919f9a6710
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee7a90804c2161fe927bebc2b2f1af45862b8ccd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="maintaining-security"></a>Gestione della sicurezza
+# <a name="maintain-security"></a>Mantenimento della sicurezza
 
 Si afferma spesso che il prezzo da pagare per la sicurezza sia dato da una vigilanza costante. Indipendentemente dall'attenzione dedicata alla sicurezza durante la progettazione e lo sviluppo dell'applicazione, occorre considerare che i punti deboli relativi a questo aspetto si manifesteranno dopo la distribuzione. Controllando l'applicazione e analizzandone i log eventi potrebbero venire alla luce problemi precedentemente nascosti.
 

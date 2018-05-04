@@ -1,20 +1,19 @@
 ---
-title: Personalizzare l'IDE di Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Personalizzazione di IDE di Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -24,7 +23,7 @@ ms.lasthandoff: 04/16/2018
 
 Molte opzioni di personalizzazione sono esposte tramite la finestra di dialogo [Opzioni ambiente](../ide/reference/environment-options-dialog-box.md). È possibile accedere a questa finestra di dialogo in due modi:
 
-- Sulla barra dei menu scegliere **Strumenti**, **Opzioni**e, se non è già stato fatto, espandere il nodo **Ambiente**.
+- Sulla barra dei menu scegliere **Strumenti** > **Opzioni**e, se non è già stato fatto, espandere il nodo **Ambiente**.
 
 - Digitare `environment` nella casella **Avvio veloce** e scegliere **Ambiente--> Generale** dall'elenco risultati.
 
@@ -41,23 +40,23 @@ Per modificare le opzioni di colorazione nell'editor, digitare `environment` nel
 
 È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare `environment` nella casella **Avvio veloce** selezionare **Ambiente --> Generale** e quindi modificare l'opzione **Applica lo stile Tutte Iniziali Maiuscole alla barra dei menu**.
 
-### <a name="customzing-menus-and-toolbars"></a>Personalizzazione di menu e barre degli strumenti
+### <a name="customze-menus-and-toolbars"></a>Personalizzare menu e barre degli strumenti
 
 Per aggiungere o rimuovere voci di menu o elementi della barra degli strumenti, vedere [Procedura: personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Pagina iniziale
 
-Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Personalizzazione della pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md).
+Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Personalizzare la pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md).
 
 ## <a name="window-layouts"></a>Layout delle finestre
 
-È possibile definire e salvare più layout di finestra e passare da un layout all'altro. Ad esempio, è possibile definire un layout per la scrittura del codice e uno per il debug. Per definire le posizioni e il comportamento delle finestre e salvare i layout personalizzati, vedere [Personalizzazione del layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
+È possibile definire e salvare più layout di finestra e passare da un layout all'altro. Ad esempio, è possibile definire un layout per la scrittura del codice e uno per il debug. Per definire le posizioni e il comportamento delle finestre e salvare i layout personalizzati, vedere [Personalizzare il layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 
 ## <a name="external-tools"></a>Strumenti esterni
 
-È possibile personalizzare il menu **Strumenti** per avviare gli strumenti esterni. Per altre informazioni, vedere [Gestione di strumenti esterni](../ide/managing-external-tools.md).
+È possibile personalizzare il menu **Strumenti** per avviare gli strumenti esterni. Per altre informazioni, vedere [Gestire gli strumenti esterni](../ide/managing-external-tools.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)  
-[Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+- [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)

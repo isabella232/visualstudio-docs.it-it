@@ -1,9 +1,8 @@
 ---
-title: Gestire strumenti esterni | Microsoft Docs
-ms.custom: ''
+title: Gestire strumenti esterni
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -14,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea718d2170d058897db4bfa7a9a2cfc32da563a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -28,11 +27,11 @@ ms.lasthandoff: 04/16/2018
 
 Il menu **Strumenti** include alcuni strumenti predefiniti, ad esempio:
 
-* **Estensioni e aggiornamenti** per la [gestione delle estensioni di Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Gestione frammenti di codice** per l'[organizzazione dei frammenti di codice](code-snippets.md)
-* **PreEmptive Protection - Dotfuscator** per l'avvio di [Dotfuscator Community Edition (CE)](dotfuscator/index.md) se [installato](dotfuscator/install.md)
-* **Personalizza** per la [personalizzazione di menu e barre degli strumenti](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* **Opzioni** per l'[impostazione di un'ampia gamma di opzioni per l'IDE di Visual Studio e altri strumenti](reference/options-dialog-box-visual-studio.md)
+* **Estensioni e aggiornamenti** per [Gestire le estensioni di Visual Studio](finding-and-using-visual-studio-extensions.md)
+* **Gestione frammenti di codice** per [Organizzare i frammenti di codice](code-snippets.md)
+* **PreEmptive Protection - Dotfuscator** per avviare il [Dotfuscator Community Edition (CE)](dotfuscator/index.md) se [installato](dotfuscator/install.md)
+* **Personalizza** per [Personalizzare menu e barre degli strumenti](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opzioni** per [Impostare un'ampia gamma di opzioni per l'IDE di Visual Studio e altri strumenti](reference/options-dialog-box-visual-studio.md)
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Aggiungere nuovi strumenti al menu Strumenti
 
@@ -40,7 +39,7 @@ Il menu **Strumenti** include alcuni strumenti predefiniti, ad esempio:
 
 1. Aprire la finestra di dialogo **Strumenti esterni** scegliendo **Strumenti** > **Strumenti esterni**.
 
-1. Fare clic su **Aggiungi** e quindi compilare le informazioni. L'immissione seguente consente ad esempio di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:
+1. Fare clic su **Aggiungi** e quindi compilare le informazioni. L'immissione seguente consente ad esempio a **Windows Explorer** di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:
 
    * Titolo: `Open File Location`
 
@@ -52,28 +51,28 @@ Il menu **Strumenti** include alcuni strumenti predefiniti, ad esempio:
 
 Di seguito è riportato un elenco completo di argomenti che possono essere usati per la definizione di uno strumento esterno:
 
-|nome|Argomento|Descrizione|  
-|----------|--------------|-----------------|  
-|Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|  
-|Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|  
-|Nome file elemento|$(ItemFilename)|Nome del file corrente (nome file).|  
-|Estensione di elemento|$(ItemExt)|Estensione del nome del file corrente.|  
-|Riga corrente|$(CurLine)|Posizione della riga corrente del cursore nella finestra del codice.|  
-|Colonna corrente|$(CurCol)|Posizione della colonna corrente del cursore nella finestra del codice.|  
-|Testo corrente|$(CurText)|Testo selezionato.|  
-|Percorso di destinazione|$(TargetPath)|Nome file completo dell'elemento da compilare (unità + percorso + nome file).|  
-|Target Directory|$(TargetDir)|Directory dell'elemento da compilare.|  
-|Target Name|$(TargetName)|Nome file dell'elemento da compilare.|  
-|Estensione di destinazione|$(TargetExt)|Estensione di file dell'elemento da compilare.|  
-|Directory binaria|$(BinDir)|Posizione finale del file binario in fase di compilazione (definita come unità + percorso).|  
-|Directory del progetto|$(ProjDir)|Directory del progetto corrente (unità + percorso).|  
-|Nome del file di progetto|$(ProjFileName)|Nome file del progetto corrente (unità + percorso + nome file).|  
-|Directory soluzione|$(SolutionDir)|Directory della soluzione corrente (unità + percorso).|  
+|nome|Argomento|Descrizione|
+|----------|--------------|-----------------|
+|Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|
+|Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|
+|Nome file elemento|$(ItemFilename)|Nome del file corrente (nome file).|
+|Estensione di elemento|$(ItemExt)|Estensione del nome del file corrente.|
+|Riga corrente|$(CurLine)|Posizione della riga corrente del cursore nella finestra del codice.|
+|Colonna corrente|$(CurCol)|Posizione della colonna corrente del cursore nella finestra del codice.|
+|Testo corrente|$(CurText)|Testo selezionato.|
+|Percorso di destinazione|$(TargetPath)|Nome file completo dell'elemento da compilare (unità + percorso + nome file).|
+|Target Directory|$(TargetDir)|Directory dell'elemento da compilare.|
+|Target Name|$(TargetName)|Nome file dell'elemento da compilare.|
+|Estensione di destinazione|$(TargetExt)|Estensione di file dell'elemento da compilare.|
+|Directory binaria|$(BinDir)|Posizione finale del file binario in fase di compilazione (definita come unità + percorso).|
+|Directory del progetto|$(ProjDir)|Directory del progetto corrente (unità + percorso).|
+|Nome del file di progetto|$(ProjFileName)|Nome file del progetto corrente (unità + percorso + nome file).|
+|Directory soluzione|$(SolutionDir)|Directory della soluzione corrente (unità + percorso).|
 |Nome del file della soluzione|$(SolutionFileName)|Nome file della soluzione corrente (unità + percorso + nome file).|
 
 > [!NOTE]
-> La barra di stato dell'IDE visualizza le variabili di Riga corrente e Colonna corrente per indicare dove si trova il punto di inserimento nell'Editor codice attivo. La variabile di Testo corrente restituisce il testo o codice selezionato in quella posizione.
+> La barra di stato dell'IDE visualizza le variabili di **Riga corrente** e **Colonna corrente** per indicare dove si trova il punto di inserimento nell'**Editor codice** attivo. La variabile di **Testo corrente** restituisce il testo o codice selezionato in quella posizione.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Strumenti per la compilazione in C/C++](/cpp/build/reference/c-cpp-build-tools)
+- [Strumenti per la compilazione in C/C++](/cpp/build/reference/c-cpp-build-tools)

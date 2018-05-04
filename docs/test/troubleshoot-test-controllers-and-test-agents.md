@@ -1,7 +1,7 @@
 ---
-title: Risoluzione dei problemi dei controller e degli agenti di test in Visual Studio | Microsoft Docs
+title: Risoluzione dei problemi dei controller e degli agenti di test in Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
 
@@ -27,7 +28,8 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
  Quando si esegue un test di carico, è possibile ricevere errori se si tenta di connettersi a un computer agente di test e raccogliere i contatori delle prestazioni. Il Registro di sistema remoto è il servizio responsabile di fornire i dati dei contatori delle prestazioni a un computer remoto. In alcuni sistemi operativi il servizio Registro di sistema remoto non viene avviato automaticamente. Per correggere questo problema, avviare manualmente il servizio Registro di sistema remoto.
 
 > [!NOTE]
->  È possibile accedere al servizio Registro di sistema remoto nel **Pannello di controllo.** Scegliere **Strumenti di amministrazione** e quindi **Servizi**.
+> È possibile accedere al servizio Registro di sistema remoto nel **Pannello di controllo.** Scegliere **Strumenti di amministrazione** e quindi **Servizi**.
+
 
  Il problema potrebbe anche essere causato dalla mancata disponibilità di autorizzazioni sufficienti per leggere i contatori delle prestazioni. Per le esecuzioni di test locali, l'account dell'utente che esegue il test deve essere un membro del gruppo Power Users o superiore oppure del gruppo Performance Monitor Users. Per le esecuzioni di test remote, l'account per cui è configurata l'esecuzione del controller deve essere un membro del gruppo Power Users o superiore oppure del gruppo Performance Monitor Users.
 
@@ -87,7 +89,8 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
  Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete.
 
 > [!NOTE]
->  È anche possibile installare correttamente gli agenti di test e non riscontrare il problema finché non si tenta di eseguire un test.
+> È anche possibile installare correttamente gli agenti di test e non riscontrare il problema finché non si tenta di eseguire un test.
+
 
  Per correggere questo errore, è necessario associare il controller di test a una delle schede di rete. Impostare la proprietà `BindTo` nel controller di test e quindi modificare l'agente di test in modo che faccia riferimento al controller di test in base all'indirizzo IP anziché al nome. I passaggi vengono illustrati nelle procedure seguenti.
 

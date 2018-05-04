@@ -1,9 +1,8 @@
 ---
-title: Gestione delle impostazioni di un'applicazione (.NET)| Microsoft Docs
-ms.custom: ''
+title: Gestire le impostazioni dell'applicazione (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
@@ -14,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe0daf11aa2cb6b8eb4d0e07bfd079f531831f29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04d2c31db4c117f3bc902218a61656e5eca49e27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-application-settings-net"></a>Gestione delle impostazioni di un'applicazione (.NET)
+# <a name="manage-application-settings-net"></a>Gestire le impostazioni dell'applicazione (.NET)
 
 Le impostazioni dell'applicazione consentono di archiviare le informazioni sull'applicazione in modo dinamico. Le impostazioni consentono di archiviare nel computer client le informazioni che non devono essere incluse nel codice dell'applicazione (ad esempio una stringa di connessione), le preferenze dell'utente e altre informazioni necessarie in fase di esecuzione.
 
 Le impostazioni dell'applicazione sostituiscono le proprietà dinamiche usate nelle versioni precedenti di Visual Studio.
 
-Ogni impostazione dell'applicazione deve avere un nome univoco. Tale nome può essere formato da una combinazione di lettere, numeri o un carattere di sottolineatura, non può iniziare con un numero e non può contenere spazi. Il nome può essere modificato tramite la proprietà `Name` .
+Ogni impostazione dell'applicazione deve avere un nome univoco. Tale nome può essere formato da una combinazione di lettere, numeri o un carattere di sottolineatura, non può iniziare con un numero e non può avere spazi. Il nome viene modificato tramite la proprietà `Name`.
 
-Le impostazioni dell'applicazione possono essere archiviate come qualsiasi tipo di dati che può essere serializzato come XML che abbia un oggetto `TypeConverter` che implementa `ToString`/`FromString`. I tipi più comuni sono `String`, `Integer`e `Boolean`, ma è anche possibile archiviare i valori come <xref:System.Drawing.Color>, <xref:System.Object>o come una stringa di connessione.
+Le impostazioni dell'applicazione possono essere archiviate come qualsiasi tipo di dati che viene serializzato come XML che abbia un oggetto `TypeConverter` che implementa `ToString`/`FromString`. I tipi più comuni sono `String`, `Integer`e `Boolean`, ma è anche possibile archiviare i valori come <xref:System.Drawing.Color>, <xref:System.Object>o come una stringa di connessione.
 
-Anche le impostazioni dell'applicazione contengono un valore. Il valore viene impostato con la proprietà **Valore** e deve corrispondere al tipo di dati dell'impostazione.
+Anche le impostazioni dell'applicazione mantengono un valore. Il valore viene impostato con la proprietà **Valore** e deve corrispondere al tipo di dati dell'impostazione.
 
 Inoltre, in fase di progettazione, è possibile associare le impostazioni dell'applicazione alla proprietà di un form o di un controllo.
 
@@ -44,49 +43,49 @@ Sono disponibili due tipi di impostazioni dell'applicazione, in base all'ambito:
 
 Il sistema del progetto archivia le impostazioni dell'applicazione in due file XML:
 
-- un file app.config, creato in fase di progettazione quando si crea la prima impostazione dell'applicazione
+- un file *app.config*, creato in fase di progettazione quando si crea la prima impostazione dell'applicazione
 
-- un file user.config, creato in fase di esecuzione quando l'utente che esegue l'applicazione modifica il valore di un'impostazione utente.
+- un file *user.config*, creato in fase di esecuzione quando l'utente che esegue l'applicazione modifica il valore di un'impostazione utente.
 
 Le modifiche apportate alle impostazioni utente non vengono scritte su disco a meno che nell'applicazione non venga specificamente chiamato un metodo che esegua questa operazione.
 
-## <a name="creating-application-settings-at-design-time"></a>Creazione di impostazioni dell'applicazione in fase di progettazione
+## <a name="create-application-settings-at-design-time"></a>Creare impostazioni dell'applicazione in fase di progettazione
 
 In fase di progettazione, le impostazioni dell'applicazione possono essere create in due modi, mediante la pagina **Impostazioni** di **Creazione progetti**oppure mediante la finestra **Proprietà** per un form o un controllo, che consente di associare un'impostazione direttamente a una proprietà.
 
-Quando si crea un'impostazione con ambito di applicazione, ad esempio una stringa di connessione del database oppure un riferimento a risorse del server, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tale impostazione viene salvata nel file app.config con il tag `<applicationSettings>` . (Le stringhe di connessione vengono salvate nel tag `<connectionStrings>` .)
+Quando si crea un'impostazione con ambito di applicazione, ad esempio una stringa di connessione del database oppure un riferimento a risorse del server, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tale impostazione viene salvata nel file *app.config* con il tag `<applicationSettings>`. (Le stringhe di connessione vengono salvate nel tag `<connectionStrings>` .)
 
-Quando si crea un'impostazione con ambito di utente, ad esempio il tipo di carattere predefinito, la pagina iniziale o le dimensioni delle finestre, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tale impostazione viene salvata nel file app.config con il tag `<userSettings>` .
+Quando si crea un'impostazione con ambito di utente, ad esempio il tipo di carattere predefinito, la pagina iniziale o le dimensioni delle finestre, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tale impostazione viene salvata nel file *app.config* con il tag `<userSettings>`.
 
 > [!IMPORTANT]
-> Quando si archiviano stringhe di connessione in app.config, è opportuno adottare delle precauzioni per evitare di rivelare informazioni riservate, quali password o percorsi del server, nella stringa di connessione.
+> Quando si archiviano stringhe di connessione in *app.config*, è opportuno adottare delle precauzioni per evitare di rivelare informazioni riservate, quali password o percorsi del server, nella stringa di connessione.
 >
 > Se si ricevono informazioni della stringa di connessione da un'origine esterna, quale un utente che immette un ID utente e una password, accertarsi che tra i valori usati per costruire la stringa di connessione non siano presenti parametri aggiuntivi in grado di modificare il comportamento della connessione.
 >
-> Valutare l'uso della funzionalità di configurazione protetta per crittografare le informazioni riservate nel file di configurazione. Per altre informazioni, vedere [Protezione delle informazioni di connessione](/dotnet/framework/data/adonet/protecting-connection-information).
+> Valutare l'uso della funzionalità di configurazione protetta per crittografare le informazioni riservate nel file di configurazione. Per altre informazioni, vedere [Proteggere le informazioni di connessione](/dotnet/framework/data/adonet/protecting-connection-information).
 
 > [!NOTE]
 > Poiché non è presente alcun modello di file di configurazione per le librerie di classi, le impostazioni dell'applicazione non si applicano ai progetti Libreria di classi, ad eccezione dei progetti DLL di Visual Studio Tools per Office che possono avere un file di configurazione.
 
-## <a name="using-customized-settings-files"></a>Uso di file di impostazioni personalizzati
+## <a name="use-customized-settings-files"></a>Usare file di impostazioni personalizzati
 
-È possibile aggiungere file di impostazioni personalizzati al progetto per agevolare la gestione dei gruppi di impostazioni. Le impostazioni contenute in un unico file vengono caricate e salvate come unità. Di conseguenza, l'archiviazione delle impostazioni in file diversi per i gruppi di utilizzo frequente e di utilizzo non frequente può determinare un risparmio di tempo nel caricamento e nel salvataggio delle impostazioni.
+È possibile aggiungere file di impostazioni personalizzati al progetto per agevolare la gestione dei gruppi di impostazioni. Le impostazioni contenute in un unico file vengono caricate e salvate come unità. L'archiviazione delle impostazioni in file diversi per i gruppi di utilizzo frequente e di utilizzo non frequente può determinare un risparmio di tempo nel caricamento e nel salvataggio delle impostazioni.
 
-Ad esempio, è possibile aggiungere un file quale SpecialSettings.settings al progetto. Mentre la classe `SpecialSettings` non è esposta nello spazio dei nomi `My` , **Visualizza codice** può leggere il file di impostazioni personalizzate contenente `Partial Class SpecialSettings`.
+Ad esempio, è possibile aggiungere un file quale *SpecialSettings.settings* al progetto. Mentre la classe `SpecialSettings` non è esposta nello spazio dei nomi `My` , **Visualizza codice** può leggere il file di impostazioni personalizzate contenente `Partial Class SpecialSettings`.
 
-Progettazione impostazioni cerca innanzi tutto il file Settings.settings creato dal sistema del progetto, ovvero il file predefinito visualizzato nella scheda **Impostazioni** di Creazione progetti. Settings.settings è situato nella cartella Progetti per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e nella cartella Proprietà per i progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] . Successivamente, Creazione progetti cerca gli altri file di impostazioni nella cartella radice del progetto. Pertanto, è necessario inserirvi il file di impostazioni personalizzato. Se si aggiunge un file .settings in un altro punto del progetto, questo non verrà trovato da Creazione progetti.
+**Progettazione impostazioni** cerca innanzi tutto il file *Settings.settings* creato dal sistema del progetto, ovvero il file predefinito visualizzato nella scheda **Impostazioni** di **Creazione progetti**. *Settings.settings* è situato nella cartella *Progetti* per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e nella cartella *Proprietà* per i progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Successivamente, **Creazione progetti** cerca gli altri file di impostazioni nella cartella radice del progetto. Pertanto, è necessario inserirvi il file di impostazioni personalizzato. Se si aggiunge un file *.settings* in un altro punto del progetto, questo non verrà trovato da **Creazione progetti**.
 
-## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accesso o modifica delle impostazioni dell'applicazione in fase di esecuzione in Visual Basic
+## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Accedere o modificare le impostazioni dell'applicazione in fase di esecuzione in Visual Basic
 
-Nei progetti Visual Basic è possibile accedere alle impostazioni dell'applicazione in fase di esecuzione usando l'oggetto `My.Settings`. Nella pagina **Impostazioni** scegliere il pulsante **Visualizza codice** per visualizzare il file Settings.vb. Nel file Settings.vb viene definita la classe `Settings` che consente di gestire i seguenti eventi nella classe delle impostazioni: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. La classe `Settings` nel file Settings.vb è una classe parziale in cui viene visualizzato solo il codice di proprietà dell'utente, non l'intera classe generata. Per altre informazioni sull'accesso alle impostazioni dell'applicazione usando l'oggetto `My.Settings`, vedere [Accesso alle impostazioni dell'applicazione (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
+Nei progetti Visual Basic è possibile accedere alle impostazioni dell'applicazione in fase di esecuzione usando l'oggetto `My.Settings`. Nella pagina **Impostazioni** fare clic sul pulsante **Visualizzare codice** per visualizzare il file *Settings.vb*. Nel file *Settings.vb* viene definita la classe `Settings` che consente di gestire i seguenti eventi nella classe delle impostazioni: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. La classe `Settings` nel file *Settings.vb* è una classe parziale in cui viene visualizzato solo il codice di proprietà dell'utente, non l'intera classe generata. Per altre informazioni sull'accesso alle impostazioni dell'applicazione usando l'oggetto `My.Settings`, vedere [Accedere alle impostazioni dell'applicazione (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
 
-I valori di qualsiasi impostazione con ambito di utente che vengono modificati dall'utente in fase di esecuzione, ad esempio la posizione di un form, vengono archiviati in un file user.config. I valori predefiniti vengono salvati nel file app.config.
+I valori di qualsiasi impostazione con ambito di utente che vengono modificati dall'utente in fase di esecuzione, ad esempio la posizione di un form, vengono archiviati in un file *user.config*. I valori predefiniti vengono salvati nel file *app.config*.
 
-Se si modifica qualsiasi impostazione con ambito di utente in fase di esecuzione, ad esempio durante il test dell'applicazione, e si desidera ripristinare i valori predefiniti per queste impostazioni, scegliere il pulsante **Sincronizza** .
+Se è stata modificata qualsiasi impostazione con ambito di utente in fase di esecuzione, ad esempio durante il test dell'applicazione, e si desidera ripristinare i valori predefiniti per queste impostazioni, scegliere il pulsante **Sincronizza**.
 
-È consigliabile usare l'oggetto `My.Settings` e il file .settings predefinito per accedere alle impostazioni. Ciò perché è possibile usare Progettazione impostazioni per assegnare proprietà alle impostazioni e le impostazioni utente vengono salvate automaticamente prima della chiusura dell'applicazione. L'applicazione Visual Basic può comunque accedere direttamente alle impostazioni. In quel caso è necessario accedere alla classe `MySettings` e usare un file .settings personalizzato nella radice del progetto. È inoltre necessario salvare le impostazioni utente prima di terminare l'applicazione, come per le applicazioni C#, come illustrato nella sezione seguente.
+È consigliabile usare l'oggetto `My.Settings` e il file *.settings* predefinito per accedere alle impostazioni. Ciò perché è possibile usare **Progettazione impostazioni** per assegnare proprietà alle impostazioni e le impostazioni utente vengono salvate automaticamente prima della chiusura dell'applicazione. L'applicazione Visual Basic può comunque accedere direttamente alle impostazioni. In quel caso è necessario accedere alla classe `MySettings` e usare un file *.settings* personalizzato nella radice del progetto. È necessario salvare le impostazioni utente prima di terminare l'applicazione, come per le applicazioni C#, come illustrato nella sezione seguente.
 
-## <a name="accessing-or-changing-application-settings-at-run-time-in-c"></a>Accesso o modifica delle impostazioni dell'applicazione in fase di esecuzione in C# #
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Accedere o modificare le impostazioni dell'applicazione in fase di esecuzione in C# #
 
 In linguaggi diversi da Visual Basic, ad esempio C#, è necessario accedere direttamente alla classe `Settings`, come illustrato nell'esempio seguente relativo a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
@@ -94,7 +93,7 @@ In linguaggi diversi da Visual Basic, ad esempio C#, è necessario accedere dire
 Properties.Settings.Default.FirstUserSetting = "abc";
 ```
 
-È inoltre necessario chiamare in modo esplicito il metodo `Save` di questa classe wrapper per rendere persistenti le impostazioni utente. Questa operazione viene generalmente effettuata nel gestore eventi `Closing` del form principale. Nell'esempio seguente di C# viene illustrata una chiamata al metodo `Save`.
+È necessario chiamare in modo esplicito il metodo `Save` di questa classe wrapper per rendere persistenti le impostazioni utente. Questa operazione viene generalmente effettuata nel gestore eventi `Closing` del form principale. Nell'esempio seguente di C# viene illustrata una chiamata al metodo `Save`.
 
 ```csharp
 Properties.Settings.Default.Save();
@@ -104,4 +103,4 @@ Per informazioni generali sull'accesso alle impostazioni dell'applicazione attra
 
 ## <a name="see-also"></a>Vedere anche
 
-[Accesso alle impostazioni dell'applicazione (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
+- [Accedere alle impostazioni dell'applicazione (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)

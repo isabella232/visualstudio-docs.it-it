@@ -1,6 +1,6 @@
 ---
-title: Creare un progetto Node.js e un'app Express in Visual Studio | Microsoft Docs
-description: In questa esercitazione si creerà un progetto Node.js e un'app Express in Visual Studio
+title: Creare un'app Node.js ed Express
+description: In questa esercitazione si creerà un'app usando Node.js Tools for Visual Studio
 ms.custom: ''
 ms.date: 03/13/2018
 ms.technology: vs-nodejs
@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app, quindi si esploreranno alcune funzionalità dell'ambiente IDE e si eseguirà l'app. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).

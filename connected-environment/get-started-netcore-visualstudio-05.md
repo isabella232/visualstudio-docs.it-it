@@ -1,18 +1,19 @@
 ---
 title: 'Creare un ambiente di sviluppo .NET Core con i contenitori usando Kubernetes nel cloud con Visual Studio - Passaggio 5: Chiamare un altro contenitore | Microsoft Docs'
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Sviluppo rapido Kubernetes con contenitori e microservizi in Azure
 keywords: Docker, Kubernetes, Azure, AKS, servizio contenitore di Azure, contenitori
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Introduzione a Connected Environment con .NET Core e Visual Studio
 
@@ -30,7 +31,7 @@ Per risparmiare tempo, il codice di esempio verrà scaricato da un repository di
 1. Aprire il progetto `mywebapi` in una *finestra di Visual Studio separata*.
 1. Selezionare **Connected Environment for AKS** (Connected Environment per AKS) nell'elenco a discesa delle impostazioni di avvio, come in precedenza per il progetto `webfrontend`. Invece di creare un nuovo ambiente di sviluppo, questa volta selezionare lo stesso già creato. Come prima, lasciare lo spazio impostato sul valore predefinito `mainline` e fare clic su **OK**. Nella finestra Output si potrebbe notare che Visual Studio inizia il "riscaldamento" di questo nuovo servizio nell'ambiente di sviluppo per velocizzare le operazioni al momento di avviare il debug.
 1. Premere F5 e attendere che il servizio venga compilato e distribuito. Si saprà che è pronto quando la barra di stato di Visual Studio diventa arancione.
-1. Prendere nota dell'URL dell'endpoint visualizzato nel riquadro **Connected Environment for AKS** (Connected Environment per AKS) nella finestra **Output**, simile a http://localhost:\<numeroporta\>. Potrebbe sembrare che il contenitore sia in esecuzione in locale, ma in realtà è in esecuzione nell'ambiente di sviluppo in Azure.
+1. Prendere nota dell'URL dell'endpoint visualizzato nel riquadro **Connected Environment for AKS** (Connected Environment per AKS) nella finestra **Output**, che sarà simile a http://localhost:\<numeroporta\>. Potrebbe sembrare che il contenitore sia in esecuzione in locale, ma in realtà è in esecuzione nell'ambiente di sviluppo in Azure.
 1. Quando `mywebapi` è pronto, aprire il browser all'indirizzo localhost e accodare `/api/values` all'URL per richiamare l'API GET predefinita per `ValuesController`. 
 1. Se tutti i passaggi sono stati completati correttamente, verrà visualizzata una risposta dal servizio `mywebapi` simile a questa.
 

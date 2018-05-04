@@ -1,9 +1,9 @@
 ---
-title: Accedere a Visual Studio | Microsoft Docs
+title: Accedi a Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -43,7 +43,7 @@ Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle
 
 Quando si avvia Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-Selezionare quindi le impostazioni dell'interfaccia utente e il tema colori che si desidera usare in Visual Studio. Visual Studio memorizza queste impostazioni e le sincronizza tra tutti gli ambienti Visual Studio a cui si è eseguito l'accesso. Per un elenco delle impostazioni sincronizzate, vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). È possibile modificare in seguito le impostazioni nel menu **Strumenti**, **Opzioni** in Visual Studio.
+Selezionare quindi le impostazioni dell'interfaccia utente e il tema colori che si desidera usare in Visual Studio. Visual Studio memorizza queste impostazioni e le sincronizza tra tutti gli ambienti Visual Studio a cui si è eseguito l'accesso. Per un elenco delle impostazioni sincronizzate, vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). È possibile modificare in seguito le impostazioni nel menu **Strumenti** > **Opzioni** in Visual Studio.
 
 Dopo aver fornito le impostazioni, viene avviato Visual Studio e viene eseguito l'accesso dell'utente in modo da poter subito iniziare a usare l'applicazione. Per verificare se è stato eseguito l'accesso, cercare il nome nell'angolo superiore destro dell'ambiente Visual Studio.
 
@@ -53,7 +53,7 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 ## <a name="to-change-your-profile-information"></a>Per modificare le informazioni sul profilo
 
-1. Passare a **File**, **Impostazioni account** e scegliere il collegamento **Gestisci profilo di Visual Studio**.
+1. Passare a **File** > **Impostazioni account** e scegliere il collegamento **Gestisci profilo di Visual Studio**.
 
 1. Nella finestra del browser scegliere **Modifica profilo** e modificare le impostazioni desiderate.
 
@@ -65,5 +65,5 @@ Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assi
 
 ## <a name="see-also"></a>Vedere anche
 
-[Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)
+* [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

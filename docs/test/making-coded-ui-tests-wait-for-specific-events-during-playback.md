@@ -1,6 +1,7 @@
 ---
-title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici in Visual Studio | Microsoft Docs
+title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
@@ -8,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c288958ba2864c9db962b050ad3139dbb4f7ccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7503bc77f9cd857a0a551ff3862e2aa9824583ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
@@ -23,7 +24,8 @@ Nella riproduzione di un test codificato dell'interfaccia utente è possibile fa
  Visual Studio Enterprise
 
 > [!TIP]
->  È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+
 
  **Metodi UITestControl.WaitForControlXXX()**
 

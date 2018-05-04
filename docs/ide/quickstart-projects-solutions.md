@@ -1,7 +1,7 @@
 ---
-title: Introduzione a progetti e soluzioni in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Introduzione a progetti e soluzioni in Visual Studio
 ms.date: 12/11/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -9,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606b08608eea275a25a1a097ed75b7554a99f6a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Guida introduttiva: Progetti e soluzioni
 
 Questa guida introduttiva di 10 minuti esamina che cosa significa creare una soluzione e un progetto in Visual Studio. Si esaminano le proprietà di un progetto e alcuni dei file che può contenere. Si crea anche un riferimento a un secondo progetto.
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
 > [!TIP]
 > In questa guida introduttiva la soluzione e il progetto vengono creati da zero, in un esercizio didattico che favorisce la comprensione del concetto di progetto. Nell'uso generico di Visual Studio è probabile che si usi uno dei numerosi modelli di progetto resi disponibili da Visual Studio per la creazione di un nuovo progetto.
@@ -59,7 +59,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 1. Nel riquadro sinistro espandere **Visual C#** e scegliere **Desktop classico di Windows**. Nel riquadro centrale scegliere **Progetto vuoto (.NET Framework)**. Assegnare al progetto il nome "QuickDate" e scegliere **OK**.
 
-   Il progetto "QuickDate" appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome **App.config**.
+   Il progetto "QuickDate" appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
    > Se **Visual C#** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il carico di lavoro **Sviluppo per desktop .NET**. Per installarlo facilmente, scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo. Dopo l'avvio del **programma di installazione di Visual Studio**, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
@@ -76,9 +76,9 @@ Il progetto è vuoto. Ora si aggiungerà un file di codice.
 
 1. Espandere **Elementi di Visual C#**, quindi scegliere **Codice**. Nel riquadro centrale scegliere **Classe**. Assegnare il nome "Calendar" alla classe e scegliere il pulsante **Aggiungi**.
 
-   Il file "Calendar.cs" viene aggiunto al progetto. Il valore **cs** finale è l'estensione del nome file assegnata ai file di codice C#. Il file appare nella gerarchia visuale del progetto in **Esplora soluzioni** e il suo contenuto viene aperto nell'editor.
+   Il file *Calendar.cs* viene aggiunto al progetto. Il valore *cs* finale è l'estensione del nome file assegnata ai file di codice C#. Il file appare nella gerarchia visuale del progetto in **Esplora soluzioni** e il suo contenuto viene aperto nell'editor.
 
-1. Sostituire il contenuto del file **Calendar.cs** con il codice seguente.
+1. Sostituire il contenuto del file *Calendar.cs* con il codice seguente.
 
    ```csharp
    using System;
@@ -116,7 +116,7 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 1. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere **Progetto unit test (.NET Framework)**. Assegnare al progetto il nome "QuickTest" e scegliere il pulsante **OK**.
 
-   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome **UnitTest1.vb**. **vb** è l'estensione di nome file assegnata ai file di codice di Visual Basic.
+   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.vb*. *vb* è l'estensione di nome file assegnata ai file di codice di Visual Basic.
 
    ![Esplora soluzioni con due progetti](media/quickstart-projects-solution-explorer.png)
 
@@ -136,7 +136,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
 ## <a name="add-test-code"></a>Aggiungere codice di test
 
-1. Ora si aggiungerà codice di test al file di codice di Visual Basic. Sostituire il contenuto di **UnitTest1.vb** con il codice seguente.
+1. Ora si aggiungerà codice di test al file di codice di Visual Basic. Sostituire il contenuto di *UnitTest1.vb* con il codice seguente.
 
    ```vb
    <TestClass()> Public Class UnitTest1
@@ -150,7 +150,7 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
 
    Sotto alcune parti del codice viene visualizzata una linea rossa ondulata. Per risolvere l'errore si imposterà il progetto di test come [assembly Friend](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) del progetto **QuickDate**.
 
-1. Tornare al progetto **QuickDate**, aprire il file **Calendar.cs** se non è già aperto e usare la seguente istruzione using e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> per risolvere l'errore nel progetto di test.
+1. Tornare al progetto **QuickDate**, aprire il file *Calendar.cs* se non è già aperto e usare la seguente istruzione using e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> per risolvere l'errore nel progetto di test.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -168,7 +168,7 @@ La riga del file di codice C# contenente l'attributo <xref:System.Runtime.Compil
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**.
 
-   Le pagine delle proprietà per il progetto vengono aperte nella scheda **Applicazione**. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si vuole modificarlo, è necessario farlo qui. Se lo si modifica, quando si compila il progetto di test il nome del file eseguibile cambia da **QuickTest.exe** al nome scelto.
+   Le pagine delle proprietà per il progetto vengono aperte nella scheda **Applicazione**. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si vuole modificarlo, è necessario farlo qui. Se lo si modifica, quando si compila il progetto di test il nome del file eseguibile cambia da *QuickTest.exe* al nome scelto.
 
    ![Proprietà di progetti](media/quickstart-projects-properties.png)
 
@@ -178,14 +178,14 @@ La riga del file di codice C# contenente l'attributo <xref:System.Runtime.Compil
 
 Per verificare che l'unit test funzioni scegliere **Test** > **Esegui** > **Tutti i test** nella barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
 
-La guida introduttiva è stata completata. Ora può risultare utile vedere altre guide introduttive di Visual Studio o ottenere altre informazioni sulla [creazione di progetti e soluzioni](../ide/creating-solutions-and-projects.md).
+La guida introduttiva è stata completata. Ora può risultare utile vedere altre guide introduttive di Visual Studio o apprendere altre informazioni sulla [creazione di progetti e soluzioni](../ide/creating-solutions-and-projects.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)
 - [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
-- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
-- [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)
+- [Gestire le proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
+- [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

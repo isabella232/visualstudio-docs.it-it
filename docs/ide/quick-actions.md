@@ -1,6 +1,7 @@
 ---
-title: Azioni rapide | Microsoft Docs
+title: Azioni rapide
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -42,7 +43,7 @@ Le azioni rapide possono essere applicate tramite l'icona Lampadina ![Icona Lamp
 
 ## <a name="to-see-potential-fixes"></a>Per visualizzare le potenziali correzioni
 
-Fare clic sulla freccia GIÙ o sul collegamento Mostra correzioni potenziali per visualizzare un elenco delle azioni rapide eseguibili automaticamente dalla lampadina.
+Fare clic sulla freccia GIÙ o sul collegamento **Mostra correzioni potenziali** per visualizzare un elenco delle azioni rapide eseguibili automaticamente dalla lampadina.
 
 ![Lampadina espansa](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
@@ -51,4 +52,4 @@ Fare clic sulla freccia GIÙ o sul collegamento Mostra correzioni potenziali per
 - [Generazione di codice in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Azioni rapide comuni](../ide/common-quick-actions.md)
 - [Stili di codice e azioni rapide](../ide/code-styles-and-quick-actions.md)
-- [Scrittura e refactoring del codice (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Codice di scrittura e refactoring (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

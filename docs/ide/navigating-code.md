@@ -1,9 +1,8 @@
 ---
-title: Spostamento all'interno del codice in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Spostarsi all'interno del codice in Visual Studio
 ms.date: 09/26/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36702aad29bbfe7b81ca38cf2bda162fbf5c99e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 78c983943f7cf99bf9dbe7ee60df06b033404719
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -33,7 +32,7 @@ Visual Studio offre diversi modi per spostarsi all'interno del codice nell'edito
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Comandi Posizione precedente e Posizione successiva
 
-È possibile usare i pulsanti **Posizione precedente** (**CTRL+-**) e **Posizione successiva** (**CTRL+MAIUSC+-**) della barra degli strumenti per spostare il punto di inserimento nelle posizioni precedenti o tornare a una posizione più recente da una posizione precedente. Questi pulsanti conservano le ultime 20 posizioni del punto di inserimento. Questi comandi sono disponibili anche nel menu **Visualizza**, in **Posizione precedente** e **Posizione successiva**.
+È possibile usare i pulsanti **Posizione precedente** (**CTRL**+**-**) e **Posizione successiva** (**CTRL**+**MAIUSC**+**-**) della barra degli strumenti per spostare il punto di inserimento nelle posizioni precedenti o tornare a una posizione più recente da una posizione precedente. Questi pulsanti conservano le ultime 20 posizioni del punto di inserimento. Questi comandi sono disponibili anche nel menu **Visualizza**, in **Posizione precedente** e **Posizione successiva**.
 
 ![Pulsanti di spostamento per spostarsi avanti e indietro](../ide/media/vs2017_nav_buttons.png)
 
@@ -51,7 +50,7 @@ Per spostarsi all'interno di una codebase, è anche possibile usare la **barra d
 
 - Per passare direttamente a una routine o a un altro membro di una classe, scegliere l'elemento nell'elenco a discesa a destra.
 
-- Per spostare lo stato attivo dalla finestra del codice alla barra di spostamento, premere la combinazione di tasti di scelta rapida **CTRL+F2**.
+- Per spostare lo stato attivo dalla finestra del codice alla barra di spostamento, premere la combinazione di tasti **CTRL**+**F2**.
 
 - Per spostare lo stato attivo da una casella all'altra nella barra di spostamento, premere **TAB**.
 
@@ -59,36 +58,36 @@ Per spostarsi all'interno di una codebase, è anche possibile usare la **barra d
 
 - Per ripristinare lo stato attivo dalla barra di spostamento alla finestra del codice senza effettuare selezioni, premere **ESC**.
 
-Per nascondere la barra di spostamento, modificare l'opzione **Barra di spostamento** nelle impostazioni Tutti i linguaggi dell'editor di testo (**Strumenti**, **Opzioni**, **Editor di testo**, **Tutti i linguaggi**) oppure modificare le impostazioni per i singoli linguaggi.
+Per nascondere la barra di spostamento, modificare l'opzione **Barra di spostamento** nelle impostazioni **Tutti i linguaggi dell'editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**) oppure modificare le impostazioni per i singoli linguaggi.
 
 ## <a name="find-all-references"></a>Trova tutti i riferimenti
 
-Trova tutti i riferimenti all'elemento selezionato nella soluzione. Con questa opzione è possibile verificare i possibili effetti collaterali di un refactoring esteso o la presenza di codice non usato. Premere **F8** per passare ai risultati. Per altre informazioni, vedere [Finding references in your code](finding-references.md) (Ricerca di riferimenti nel codice).
+Trova tutti i riferimenti all'elemento selezionato nella soluzione. Con questa opzione è possibile verificare i possibili effetti collaterali di un refactoring esteso o la presenza di codice non usato. Premere **F8** per passare ai risultati. Per altre informazioni, vedere [Ricerca di riferimenti nel codice](finding-references.md).
 
-Input        | Funzione 
+Input        | Funzione
 ------------ | ---
-**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **MAIUSC+F12**  
-**Mouse**    | Selezionare **Trova tutti i riferimenti** dal menu di scelta rapida  
+**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **MAIUSC**+**F12**
+**Mouse**    | Selezionare **Trova tutti i riferimenti** dal menu di scelta rapida
 
 ## <a name="reference-highlighting"></a>Evidenziazione dei riferimenti
 
-Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per passare al simbolo evidenziato successivo o precedente, premere **CTRL+MAIUSC+ freccia GIÙ** o **CTRL+MAIUSC+freccia SU**. È possibile modificare il colore di evidenziazione in **Strumenti**, **Opzioni**, **Ambiente**, **Tipi di carattere e colori**, **Riferimento evidenziato.**
+Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per passare al simbolo evidenziato successivo o precedente, premere **CTRL**+**MAIUSC**+**freccia GIÙ** o **CTRL**+**MAIUSC**+**freccia SU**. È possibile modificare il colore di evidenziazione in **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Riferimento evidenziato**.
 
 ## <a name="go-to-commands"></a>Comandi Vai a
 
-Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifica** sotto **Vai a**:  
+Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifica** sotto **Vai a**:
 
-- **Vai alla riga** (**CTRL+G**): consente di passare al numero di riga specificato nel documento attivo.
+- **Vai alla riga** (**CTRL**+**G**): consente di passare al numero di riga specificato nel documento attivo.
 
-- **Vai a tutti** (**CTRL+T** o **CTRL+,**): consente di passare alla riga, al tipo, al file, al membro o al simbolo specificato.
+- **Vai a tutti** (**CTRL**+**T** o **CTRL**+**,** ): consente di passare alla riga, al tipo, al file, al membro o al simbolo specificato.
 
-- **Vai al file** (**CTRL+1**, **CTRL+F**): consente di passare al file specificato nella soluzione.
+- **Vai al file** (**CTRL**+**1**, **CTRL**+**F**): consente di passare al file specificato nella soluzione.
 
-- **Vai al tipo** (**CTRL+1**, **CTRL+T**): consente di passare al tipo specificato nella soluzione.
+- **Vai al tipo** (**CTRL**+**1**, **CTRL**+**T**): consente di passare al tipo specificato nella soluzione.
 
-- **Vai al membro** (**CTRL+1**, **CTRL+M**): consente di passare al membro specificato nella soluzione.
+- **Vai al membro** (**CTRL**+**1**, **CTRL**+**M**): consente di passare al membro specificato nella soluzione.
 
-- **Vai al simbolo** (**CTRL+1**, **CTRL+S**): consente di passare al simbolo specificato nella soluzione.
+- **Vai al simbolo** (**CTRL**+**1**, **CTRL**+**S**): consente di passare al simbolo specificato nella soluzione.
 
 Per altre informazioni su questi comandi, vedere l'argomento relativo alla [ricerca di codice con i comandi Vai a](../ide/go-to.md).
 
@@ -107,7 +106,7 @@ Consente di visualizzare la definizione dell'elemento selezionato in una finestr
 
 Input        | Funzione
 ------------ | ---
-**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **ALT+F12**
+**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **ALT**+**F12**
 **Mouse**    | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Visualizza definizione** o premere **CTRL** e fare clic sul nome del tipo (se l'opzione **Apri definizione in visualizzazione rapida** è selezionata)
 
 ## <a name="go-to-implementation"></a>Vai all'implementazione
@@ -116,7 +115,7 @@ Vai all'implementazione consente di passare da una classe o un tipo di base alle
 
 Input        | Funzione
 ------------ | ---
-**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL+F12**
+**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL**+**F12**
 **Mouse**    | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai all'implementazione**
 
 ## <a name="call-hierarchy"></a>Gerarchia di chiamata
@@ -125,12 +124,12 @@ Input        | Funzione
 
 Input        | Funzione
 ------------ | ---
-**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL+ K**, **CTRL+ T**
+**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL**+**K**, **CTRL**+**T**
 **Mouse**    | Fare clic con il pulsante destro sul nome del membro e selezionare **Visualizza gerarchia delle chiamate**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Comandi Metodo successivo e Metodo precedente (Visual Basic)
 
-Nei file di codice di Visual Basic usare questi comandi per spostare il punto di inserimento in metodi diversi. Scegliere **Modifica**, **Metodo successivo** o **Modifica**, **Metodo precedente**.
+Nei file di codice di Visual Basic usare questi comandi per spostare il punto di inserimento in metodi diversi. Scegliere **Modifica** > **Metodo successivo** o **Modifica** > **Metodo precedente**.
 
 ## <a name="structure-visualizer"></a>Visualizzatore di struttura
 
@@ -138,7 +137,7 @@ Nella funzionalità Visualizzatore di struttura dell'editor del codice sono visu
 
 ![Visualizzatore di struttura](../ide/media/vside_structure_visualizer.png)
 
-Per disabilitare le guide per strutture, passare a **Strumenti**, **Opzioni**, **Editor di testo**, **Generale** e deselezionare la casella **Mostra guide per strutture**.
+Per disabilitare le guide per strutture, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Generale** e deselezionare la casella **Mostra guide per strutture**.
 
 ## <a name="enhanced-scroll-bar"></a>Barra di scorrimento ottimizzata
 
@@ -150,5 +149,5 @@ Per una panoramica del codice, è possibile usare la barra di scorrimento avanza
 
 ## <a name="see-also"></a>Vedere anche
 
-[Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)  
-[Visualizzazione della gerarchia di chiamata](../ide/reference/call-hierarchy.md)
+- [Scrivere codice nell'editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Visualizzare la gerarchia di chiamata](../ide/reference/call-hierarchy.md)

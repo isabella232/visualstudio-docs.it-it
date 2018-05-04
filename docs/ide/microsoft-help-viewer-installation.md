@@ -1,7 +1,7 @@
 ---
-title: Installare la guida offline di Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Installare la guida offline di Visual Studio
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installazione di Microsoft Help Viewer
 
@@ -24,7 +24,7 @@ Diversi prodotti possono visualizzare il contenuto della Guida in Microsoft Help
 
 Help Viewer è un componente di installazione facoltativo di Visual Studio. Per installarlo tramite il programma di installazione di Visual Studio, seguire questa procedura:
 
-1. Aprire il **programma di installazione di Visual Studio** dal menu Start o, se Visual Studio è aperto, è possibile scegliere **Strumenti**, **Ottieni strumenti e funzionalità** per aprire il programma di installazione di Visual Studio.
+1. Aprire il **programma di installazione di Visual Studio** dal menu Start o, se Visual Studio è aperto, è possibile scegliere **Strumenti** > **Ottieni strumenti e funzionalità** per aprire il programma di installazione di Visual Studio.
 
 1. Scegliere la scheda **Singoli componenti** e quindi selezionare **Help Viewer** nella sezione **Strumenti per il codice**.
 
@@ -38,7 +38,7 @@ Help Viewer è un componente di installazione facoltativo di Visual Studio. Per 
 
    ![Casella Avvio veloce](media/help_viewer_quick_launch.png)
 
-1. Scegliere il risultato correlato all'installazione denominato **Help Viewer (Singolo componente)**.
+1. Scegliere il risultato denominato **Help Viewer (Singolo componente)**.
 
 1. Nella finestra di dialogo visualizzata scegliere il pulsante **Installa**.
 
@@ -50,5 +50,5 @@ Help Viewer è un componente di installazione facoltativo di Visual Studio. Per 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[Help Viewer e contenuto offline per SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+- [Help Viewer e contenuto offline per SQL Server](/sql/sql-server/sql-server-help-installation)

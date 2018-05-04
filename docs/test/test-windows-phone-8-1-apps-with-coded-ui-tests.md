@@ -1,6 +1,7 @@
 ---
-title: Testare app di Windows Phone 8.1 e UWP con test codificati dell'interfaccia utente in Visual Studio | Microsoft Docs
+title: Testare app di Windows Phone 8.1 e UWP con test codificati dell'interfaccia utente in Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: cdd664cdea9b69ecc1cc3889ded9504318874a5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 19b72bc29e236314f19a9c81b29c1c30a0cd84a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testare app di Windows Phone 8.1 e UWP con test codificati dell'interfaccia utente
 

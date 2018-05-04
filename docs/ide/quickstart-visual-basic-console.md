@@ -1,9 +1,10 @@
 ---
-title: "Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic | Microsoft Docs"
+title: "Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic"
+description: Informazioni dettagliate su come creare un'app console semplice in Visual Studio con Visual Basic.
 ms.custom: ''
 ms.date: 12/10/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -13,18 +14,20 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e7b9f03a5ef0a37594dad015084648eaa2bade
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic
+
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà una semplice applicazione di Visual Basic che viene eseguita nella console.
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
 ## <a name="create-a-project"></a>Creare un progetto
+
 In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di progetto include fin dall'inizio tutti i file modello necessari.
 
 1. Aprire Visual Studio 2017.
@@ -44,6 +47,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
      ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Creare l'applicazione
+
 Dopo la selezione del modello di progetto Visual Basic e l'assegnazione di un nome al progetto, in Visual Studio viene creata una semplice applicazione "Hello World". Chiama il metodo <xref:System.Console.WriteLine%2A> per visualizzare la stringa letterale "Hello World!" nella finestra della console.
 
 ![Visualizzare il codice Hello World predefinito dal modello](../ide/media/vb-console-helloworld-template.png)
@@ -55,6 +59,7 @@ Se si fa clic sul pulsante **HelloWorld** nell'IDE è possibile eseguire il prog
 Se si esegue questa operazione, la finestra della console resta visibile per un istante, quindi viene chiusa. Ciò accade perché il metodo `Main` termina dopo l'esecuzione dell'unica istruzione, quindi l'applicazione termina.
 
 ### <a name="add-some-code"></a>Aggiungere codice
+
 Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input dell'utente.
 
 1. Aggiungere il codice seguente subito dopo la chiamata al metodo <xref:System.Console.WriteLine%2A>:
@@ -70,6 +75,7 @@ Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input
    Il programma viene compilato in un linguaggio intermedio (IL) che viene successivamente convertito in codice binario da un compilatore JIT (Just-In-Time).
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
+
 1. Fare clic sul pulsante **HelloWorld** nella barra degli strumenti.
 
    ![Fare clic sul pulsante HelloWorld per eseguire il programma dalla barra degli strumenti](../ide/media/vb-console-hello-world-button.png)
@@ -79,6 +85,7 @@ Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input
    ![Finestra della console che visualizza Hello World e Premere un tasto qualsiasi per continuare](../ide/media/vb-console-hello-world-press-any-key.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di Visual Basic e dell'IDE di Visual Studio. Per altre informazioni, continuare con l'esercitazione seguente.
 
 > [!div class="nextstepaction"]

@@ -1,7 +1,7 @@
 ---
-title: IntelliSense per Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Visual Studio IntelliSense
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e87113f8c8a703a6eb4d893c0ca54a90bfb8d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48aa6cea8deec13bdf5dd43f83528daf5492e3d0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>Uso di IntelliSense in Visual Studio
 
@@ -99,8 +99,8 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Vedere anche
 
-[IntelliSense per Visual Basic](../ide/visual-basic-specific-intellisense.md)  
-[IntelliSense per C#](../ide/visual-csharp-intellisense.md)  
-[IntelliSense per JavaScript](../ide/javascript-intellisense.md)  
-[Scrittura e refactoring del codice (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
-[Inserimento di commenti al codice XML](../ide/supplying-xml-code-comments.md)
+- [IntelliSense per Visual Basic](../ide/visual-basic-specific-intellisense.md)
+- [IntelliSense per C#](../ide/visual-csharp-intellisense.md)
+- [IntelliSense per JavaScript](../ide/javascript-intellisense.md)
+- [Scrittura e refactoring del codice (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Inserimento di commenti al codice XML](../ide/supplying-xml-code-comments.md)

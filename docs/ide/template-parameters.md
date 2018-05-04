@@ -1,9 +1,9 @@
 ---
-title: Parametri dei modelli di progetti ed elementi di Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Parametri dei modelli di progetti ed elementi di Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
-Utilizzando i parametri nei modelli, è possibile sostituire i valori di parti di chiavi del modello, ad esempio i nomi delle classi e degli spazi dei nomi, quando viene creata un'istanza del modello. Questi parametri vengono sostituiti dalla procedura guidata di creazione modelli eseguita in background quando un utente sceglie **OK** o **Aggiungi** nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento**.
+Quando viene creata un'istanza di modello, è possibile sostituire i valori nel modello. Per configurare questa funzionalità, usare *parametri del modello*. Parametri del modello è utilizzabile per sostituire i valori, ad esempio i nomi della classe e gli spazi dei nomi nel modello. La creazione guidata del modello che viene eseguito in background quando un utente aggiunge un nuovo elemento o progetto sostituisce questi parametri.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Dichiarazione e abilitazione dei parametri di modello
 
@@ -118,5 +118,5 @@ Nel file VSTEMPLATE del modello di progetto includere l'attributo `ReplaceParame
 
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)  
-[Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)

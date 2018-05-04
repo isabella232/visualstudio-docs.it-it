@@ -1,8 +1,9 @@
 ---
-title: Limiti di esplorazione | Strumento di test per sviluppatori Microsoft IntelliTest | Microsoft Docs
+title: Limiti di esplorazione | Strumento di test per sviluppatori Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>Limiti di esplorazione
 
@@ -57,7 +58,7 @@ In genere, il timeout è dovuto al fatto che IntelliTest sta tentando di trovare
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-Numero di megabyte che il [risolutore di vincoli](input-generation.md#constraint-solver) ha a disposizione per calcolare gli input che determinano l'uso di un nuovo e diverso percorso di esecuzione. Si tratta di un'opzione di **PexSettingsAttributeBase** e i relativi tipi derivati.
+Numero di megabyte che il [risolutore di vincoli](input-generation.md#constraint-solver) ha a disposizione per calcolare gli input che determinano l'uso di un nuovo e diverso percorso di esecuzione. Si tratta di un'opzione di *PexSettingsAttributeBase** e i relativi tipi derivati.
 
 Maggiore è la profondità dell'esplorazione di IntelliTest nei percorsi di esecuzione di un programma, più complessi sono i sistemi di vincoli creati da IntelliTest dal flusso di controllo e dal flusso di dati del programma. In base alla memoria disponibile nel computer, è possibile impostare questo valore in modo da consentire a IntelliTest di affrontare i sistemi di vincolo più complessi.
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 Numero massimo di esecuzioni che IntelliTest tenterà durante l'esplorazione di un test.
 
-La motivazione alla base di questo limite di esplorazione è che qualsiasi codice che contiene cicli o ricorsioni potrebbe avere un numero infinito di percorsi di esecuzione, quindi IntelliTest deve essere limitato durante la [generazione di input](input-generation.md). 
+La motivazione alla base di questo limite di esplorazione è che qualsiasi codice che contiene cicli o ricorsioni potrebbe avere un numero infinito di percorsi di esecuzione, quindi IntelliTest deve essere limitato durante la [generazione di input](input-generation.md).
 
-Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel modo seguente: 
+Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel modo seguente:
 
 * IntelliTest chiamerà un metodo di test con parametri al massimo **MaxRuns** volte con input di test diversi.
-* Se il codice eseguito è deterministico, IntelliTest userà un percorso di esecuzione diverso ogni volta. 
-  Tuttavia, in alcune condizioni il codice eseguito può seguire un percorso di esecuzione già usato in precedenza, con input diversi. 
+* Se il codice eseguito è deterministico, IntelliTest userà un percorso di esecuzione diverso ogni volta. Tuttavia, in alcune condizioni il codice eseguito può seguire un percorso di esecuzione già usato in precedenza, con input diversi.
 * IntelliTest conta i percorsi di esecuzione univoca che trova: questo numero è limitato dall'opzione **MaxRunsWithUniquePaths**.
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel 
 
 Numero massimo di esecuzioni consecutive senza che venga generato un nuovo test.
 
-Benché IntelliTest spesso sia in grado di individuare rapidamente molti input di test interessanti, dopo un certo tempo non trova più nuovi input di test e non genera altri unit test. Questa opzione di configurazione definisce un limite per il numero di tentativi consecutivi che IntellTtest può effettuare senza creare un nuovo test. Raggiunto il limite, l'esplorazione viene interrotta. 
+Benché IntelliTest spesso sia in grado di individuare rapidamente molti input di test interessanti, dopo un certo tempo non trova più nuovi input di test e non genera altri unit test. Questa opzione di configurazione definisce un limite per il numero di tentativi consecutivi che IntellTtest può effettuare senza creare un nuovo test. Raggiunto il limite, l'esplorazione viene interrotta.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ La motivazione alla base di questo limite di esplorazione è che qualsiasi codic
 Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel modo seguente: 
 
 * IntelliTest chiamerà un metodo di test con parametri al massimo **MaxRuns** volte con input di test diversi.
-* Se il codice eseguito è deterministico, IntelliTest userà un percorso di esecuzione diverso ogni volta. 
-  Tuttavia, in alcune condizioni il codice eseguito può seguire un percorso di esecuzione già usato in precedenza, con input diversi. 
+* Se il codice eseguito è deterministico, IntelliTest userà un percorso di esecuzione diverso ogni volta. Tuttavia, in alcune condizioni il codice eseguito può seguire un percorso di esecuzione già usato in precedenza, con input diversi. 
 * IntelliTest conta i percorsi di esecuzione univoca che trova: questo numero è limitato dall'opzione **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ Le due impostazioni **MaxRuns** e **MaxRunsWithUniquePaths** sono correlate nel 
 
 Numero massimo di eccezioni che possono essere rilevate prima che l'esplorazione venga interrotta.
 
-La motivazione alla base di questo limite di esplorazione è interrompere l'esplorazione del codice che contiene molti bug.
-Se IntelliTest trova troppi errori nel codice, l'esplorazione si arresta.
+La motivazione alla base di questo limite di esplorazione è interrompere l'esplorazione del codice che contiene molti bug. Se IntelliTest trova troppi errori nel codice, l'esplorazione si arresta.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 I percorsi di esecuzione che superano i limiti di percorso configurati, [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) e [MaxConditions](#maxconditions), vengono ignorati.
 
-La motivazione alla base di questo limite di esplorazione è gestire i test potenzialmente non terminati. Quando IntelliTest raggiunge un limite di esplorazione come [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) o [MaxConditions](#maxconditions), presuppone che il test non sarà un processo non terminato e non causerà un overflow dello stack in un secondo momento.
-Questi test case possono causare problemi agli altri framework di test e questo attributo consente di impedire a IntelliTest di generare test case per i processi potenzialmente non terminati oppure test case che causeranno un overflow dello stack.
+La motivazione alla base di questo limite di esplorazione è gestire i test potenzialmente non terminati. Quando IntelliTest raggiunge un limite di esplorazione come [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) o [MaxConditions](#maxconditions), presuppone che il test non sarà un processo non terminato e non causerà un overflow dello stack in un secondo momento. Questi test case possono causare problemi agli altri framework di test e questo attributo consente di impedire a IntelliTest di generare test case per i processi potenzialmente non terminati oppure test case che causeranno un overflow dello stack.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +181,10 @@ In base all'impostazione corrente di [TestEmissionFilter](#testemissionfilter), 
 
 L'impostazione **TestEmissionBranchHits** determina se IntelliTest deve solo considerare se una diramazione è stata analizzata (**TestEmissionBranchHits = 1**), se un test ha eseguito l'analisi una o due volte (**TestEmissionBranchHits = 2**) e così via.
 
-**TestEmissionBranchHits = 1** produce un gruppo di test molto piccolo che esamina tutte le diramazioni che IntelliTest è in grado di raggiungere. In particolare, questo gruppo di test esamina anche tutti i blocchi di base e le istruzioni che raggiunge. 
+**TestEmissionBranchHits = 1** produce un gruppo di test molto piccolo che esamina tutte le diramazioni che IntelliTest è in grado di raggiungere. In particolare, questo gruppo di test esamina anche tutti i blocchi di base e le istruzioni che raggiunge.
 
 Il valore predefinito per questa opzione è **TestEmissionBranchHits=2**, che genera un gruppo di test più espressivo e più adatto per rilevare i futuri errori di regressione.
 
 ## <a name="got-feedback"></a>Commenti?
 
-Pubblicare idee e richieste di funzionalità in **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Pubblicare idee e richieste di funzionalità in [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

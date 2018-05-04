@@ -1,6 +1,7 @@
 ---
-title: Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes per Visual Studio| Microsoft Docs
+title: Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes per Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c42c25f397a5906654dd5ef0115df921d60607f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
@@ -21,6 +22,10 @@ Questo articolo illustra problemi e opzioni di generazione e compilazione di cod
 **Requisiti**
 
 -   Visual Studio Enterprise
+-   Un progetto .NET Framework
+
+> [!NOTE]
+> I progetti .NET Standard non sono supportati.
 
 ## <a name="code-generation-and-compilation"></a>Generazione e compilazione di codice
 

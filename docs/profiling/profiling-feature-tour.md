@@ -1,24 +1,25 @@
 ---
-title: Panoramica delle funzionalità di profilatura | Microsoft Docs
-ms.custom: H1HackMay2017
+title: Misurare le prestazioni con gli strumenti di profilatura
+description: Esaminare una breve panoramica dei diversi strumenti di diagnostica disponibili in Visual Studio.
+ms.custom: mvc
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: quickstart
 helpviewer_keywords:
-- debugger
+- diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c10e06d1dcd789212b04b591f0165e118139b1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="profiling-feature-tour"></a>Panoramica delle funzionalità di profilatura
+# <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
 Visual Studio offre un'ampia gamma di strumenti di profilatura che consentono di diagnosticare diversi tipi di problemi di prestazioni in base al tipo di app.
 

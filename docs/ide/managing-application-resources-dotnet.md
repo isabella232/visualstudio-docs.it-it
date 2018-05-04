@@ -1,9 +1,8 @@
 ---
-title: Gestione delle risorse delle applicazioni (.NET) | Microsoft Docs
-ms.custom: ''
+title: Gestire le risorse dell'applicazione (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -20,19 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-application-resources-net"></a>Gestione delle risorse delle applicazioni (.NET)
+# <a name="manage-application-resources-net"></a>Gestire le risorse dell'applicazione (.NET)
 
 I file di risorse sono file che fanno parte di un'applicazione ma non vengono compilati, ad esempio file di icone o file audio. Poiché questi file non fanno parte del processo di compilazione, è possibile modificarli senza dover ricompilare i file binari. Se si prevede di localizzare l'applicazione, è consigliabile usare file di risorse per tutte le stringhe e le altre risorse che devono essere modificate quando si localizza l'applicazione.
 
-Per altre informazioni sulle risorse nelle app desktop .NET, vedere [Resources in Desktop Apps](/dotnet/framework/resources/index).
+Per altre informazioni sulle risorse nelle app desktop .NET, vedere [Risorse nelle applicazioni desktop](/dotnet/framework/resources/index).
 
-## <a name="working-with-resources"></a>Uso delle risorse
+## <a name="work-with-resources"></a>Uso delle risorse
 
 In un progetto di codice gestito aprire la finestra delle proprietà del progetto. È possibile aprire la finestra delle proprietà in uno dei modi seguenti:
 
@@ -40,15 +39,15 @@ In un progetto di codice gestito aprire la finestra delle proprietà del progett
 - digitare "proprietà progetto" nella finestra **Avvio veloce**
 - scegliere **ALT**+**INVIO** nella finestra **Esplora soluzioni**
 
-Selezionare la scheda **Risorse** . È possibile aggiungere un file RESX, se non è ancora presente nel progetto, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.
+Selezionare la scheda **Risorse** . È possibile aggiungere un file *.resx*, se non è ancora presente nel progetto, aggiungere ed eliminare diversi tipi di risorse e modificare le risorse esistenti.
 
 ## <a name="resources-in-other-project-types"></a>Risorse in altri tipi di progetto
 
 Le risorse vengono gestite in modo diverso nei progetti .NET rispetto ad altri tipi di progetto. Per altre informazioni sulle risorse in:
 
 - app della piattaforma UWP (Universal Windows Platform), vedere [Risorse dell'app e sistema di gestione delle risorse](/windows/uwp/app-resources/)
-- progetti C++, vedere [Utilizzo di file di risorse](/cpp/windows/working-with-resource-files) e [Procedura: creare una risorsa](/cpp/windows/how-to-create-a-resource)
+- Progetti C++, vedere [Utilizzare file di risorse](/cpp/windows/working-with-resource-files) e [Procedura: creare una risorsa](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Risorse nelle applicazioni desktop (.NET Framework)](/dotnet/framework/resources/index)
+- [Risorse nelle applicazioni desktop (.NET Framework)](/dotnet/framework/resources/index)

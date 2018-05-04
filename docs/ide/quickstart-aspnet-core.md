@@ -1,7 +1,9 @@
 ---
-title: Usare Visual Studio per creare un'app Web ASP.NET Core in C# | Microsoft Docs
-ms.custom: ''
+title: Usare Visual Studio per creare un'app Web ASP.NET Core in C#
+description: Informazioni dettagliate su come creare un'app web ASP.NET Core in Visual Studio con C#.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,17 +14,17 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio, sarà possibile creare una semplice Applicazione Web ASP.NET Core C#.
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -68,7 +70,7 @@ Per prima cosa, creare un progetto dell'applicazione Web ASP:NET Core. Il tipo d
 
    ![Elenco errori](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. Nella finestra dell'editor, posizionare il cursore su una riga che contiene l'errore, quindi scegliere la lampadina relativa alle azioni rapide nel margine sinistro. Nel menu a discesa, scegliere **using System;** per aggiungere questa direttiva all'inizio del file e risolvere gli errori.
+1. Nella finestra dell'editor, posizionare il cursore su una riga che contiene l'errore, quindi scegliere la **lampadina relativa alle azioni rapide** nel margine sinistro. Nel menu a discesa, scegliere **using System;** per aggiungere questa direttiva all'inizio del file e risolvere gli errori.
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 

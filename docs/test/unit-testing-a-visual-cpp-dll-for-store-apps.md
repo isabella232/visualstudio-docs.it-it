@@ -1,6 +1,7 @@
 ---
-title: Come testare una libreria di collegamento dinamico di Visual C++ per le app UWP in Visual Studio| Microsoft Docs
+title: Come testare una libreria di collegamento dinamico di Visual C++ per le app UWP in Visual Studio
 ms.date: 02/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 56bd0acf242f0fac4ccb2d73063e8ee73d234a0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Come testare una DLL di Visual C++
 
@@ -236,7 +237,8 @@ In questo argomento viene descritto come creare unit test per una libreria di co
      Entrambi i test vengono superati.
 
 > [!TIP]
->  Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
+> Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
+
 
 ##  <a name="Debug_a_failing_test"></a> Debug di un test non superato
 

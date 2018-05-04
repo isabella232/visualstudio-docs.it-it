@@ -1,5 +1,5 @@
 ---
-title: Combinazione di test per uno scenario di test di carico in Visual Studio | Microsoft Docs
+title: Combinazione di test per uno scenario di test di carico in Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 
@@ -77,12 +78,14 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
  Il pulsante **Distribuisci** consente di allocare le percentuali in modo uniforme tra tutti gli elementi. In presenza di tre elementi, ad esempio, se si sceglie **Distribuisci** le percentuali verranno impostate su 34, 33 e 33.
 
 > [!WARNING]
->  Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
+> Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
+
 
  È anche possibile digitare direttamente i valori percentuali nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
->  I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% o se i valori immessi nella colonna **%** sono decimali.
+> I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% o se i valori immessi nella colonna **%** sono decimali.
+
 
  Quando si immettono manualmente le percentuali, assicurarsi che la somma di tutti gli elementi sia 100%. Quando si salva una combinazione, se la somma non è pari al 100%, verrà richiesto di accettare i valori percentuali così come sono o di tornare indietro e regolarli. Se si sceglie di accettarle così come sono, le percentuali verranno ripartite proporzionalmente al 100%.  Se ad esempio si dispone di due elementi che sono stati impostati manualmente su 80% e 40%, il primo elemento verrà impostato su 66,67% (80 diviso 120) mentre il secondo su 33,33% (40 diviso 120).
 

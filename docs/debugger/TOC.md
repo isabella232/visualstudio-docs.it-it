@@ -9,6 +9,7 @@
 ## [Informazioni sul debug tramite Visual Studio](getting-started-with-the-debugger.md)
 ## [Esecuzione del codice Python nel debugger](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Eseguire il debug di un'app Azure attiva](debug-live-azure-applications.md)
+## [Eseguire il debug di codice gestito e nativo](how-to-debug-managed-and-native-code.md)
 ## [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Guide pratiche
 ## [Spostarsi nel codice con il debugger](navigating-through-code-with-the-debugger.md)

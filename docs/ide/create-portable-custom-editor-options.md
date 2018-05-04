@@ -1,6 +1,5 @@
 ---
-title: Uso delle impostazioni di EditorConfig in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Uso delle impostazioni di EditorConfig in Visual Studio
 ms.date: 12/13/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +7,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: fe1653df6fc1d71dc4497c6e7e0a9adae9fa0b44
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -158,8 +158,8 @@ dir .editorconfig /s
 
 ## <a name="see-also"></a>Vedere anche
 
-[.NET code style conventions](../ide/editorconfig-code-style-settings-reference.md) (Convenzioni di stile del codice .NET)  
-[Convenzioni di denominazione .NET](../ide/editorconfig-naming-conventions.md)  
-[Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)  
-[EditorConfig.org](http://editorconfig.org/)  
-[Writing code in the editor](writing-code-in-the-code-and-text-editor.md) (Scrittura di codice nell'editor)
+- [.NET code style conventions](../ide/editorconfig-code-style-settings-reference.md) (Convenzioni di stile del codice .NET)
+- [Convenzioni di denominazione .NET](../ide/editorconfig-naming-conventions.md)
+- [Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)
+- [EditorConfig.org](http://editorconfig.org/)
+- [Writing code in the editor](writing-code-in-the-code-and-text-editor.md) (Scrittura di codice nell'editor)
