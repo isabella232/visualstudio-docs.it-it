@@ -1,13 +1,10 @@
 ---
-title: "Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio | Microsoft Docs"
+title: "Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio"
 description: In questa guida introduttiva viene usato Visual Studio per compilare un'app Web semplice in Python tramite il framework Flask.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: b3a455dc04693b70c0ae3932503aea33085b2a80
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -82,7 +79,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
 **Domanda: dove è possibile trovare altre informazioni su altri pacchetti Python disponibili?**
 
-**Risposta**: visitare l'[indice dei pacchetti Python](https://pypi.python.org/pypi) (pypi.python.org).
+**Risposta**: visitare l'[indice dei pacchetti Python](https://pypi.org/) (pypi.org).
 
 ## <a name="add-a-code-file"></a>Aggiungere un file di codice
 
@@ -121,7 +118,7 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
 
 **Domanda: dove si possono trovare altre informazioni su Flask?**
 
-**Risposta**: fare riferimento alla documentazione di Flask, iniziando dalla [guida introduttiva](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Risposta**: fare riferimento alla documentazione di Flask, iniziando dalla [guida introduttiva](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 

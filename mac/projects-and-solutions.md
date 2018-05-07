@@ -1,16 +1,15 @@
 ---
-title: Progetti e soluzioni in Visual Studio per Mac | Microsoft Docs
+title: Progetti e soluzioni in Visual Studio per Mac
 description: Questo documento offre una panoramica di progetti e soluzioni in Visual Studio per Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 1e3662fb45d91dfe5d7e2bb883dbf6918d0fd252
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a2936427ffa1f6c225d8a84754084287e2ab72c2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="projects-and-solutions"></a>Progetti e soluzioni
 

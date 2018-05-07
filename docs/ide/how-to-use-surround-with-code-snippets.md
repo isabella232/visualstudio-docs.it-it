@@ -1,25 +1,22 @@
 ---
 title: Come usare frammenti di codice racchiusi | Microsoft Docs
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 685f227205deb306d7d18dcea2e620e2366ad73f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Procedura: Usare frammenti di codice racchiusi
 
@@ -29,7 +26,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'IDE di Visual Studio aprire il file che si vuole modificare.
 
-1. Nell'Editor di codice selezionare il testo da racchiudere.
+1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
 1. Digitare **CTRL**+**K**, **CTRL**+**S**.
 
@@ -39,7 +36,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'IDE di Visual Studio aprire il file che si vuole modificare.
 
-1. Nell'Editor di codice selezionare il testo da racchiudere.
+1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
 1. Scegliere **IntelliSense** dal menu **Modifica** e selezionare il comando **Racchiudi tra**.
 
@@ -51,7 +48,7 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 1. Nell'IDE di Visual Studio aprire il file che si vuole modificare.
 
-1. Nell'Editor di codice selezionare il testo da racchiudere.
+1. Nell'**Editor di codice** selezionare il testo da racchiudere.
 
 1. Fare clic con il pulsante destro del mouse sul testo selezionato e selezionare il comando **Racchiudi tra** nel menu di scelta rapida.
 
@@ -61,5 +58,5 @@ Nelle procedure illustrate di seguito viene descritto come usare frammenti di co
 
 ## <a name="see-also"></a>Vedere anche
 
-[Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)  
-[Selezione frammento di codice](../ide/reference/code-snippet-picker.md)
+- [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)
+- [Selezione frammento di codice](../ide/reference/code-snippet-picker.md)

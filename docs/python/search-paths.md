@@ -1,26 +1,21 @@
 ---
-title: Come vengono applicati i percorsi di ricerca di Python | Microsoft Docs
+title: Come vengono applicati i percorsi di ricerca di Python
 description: Panoramica dell'uso dei percorsi di ricerca Python in Visual Studio per i progetti e gli ambienti.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ebb5ac043253db76cc9613ac67e5d980d911bd3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 94770d1591d1f4d80fadd2a0f868dfedfd84999a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Come vengono usati i percorsi di ricerca di Python Visual Studio
 

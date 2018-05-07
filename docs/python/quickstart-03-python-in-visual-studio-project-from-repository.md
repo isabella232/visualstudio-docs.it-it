@@ -1,15 +1,9 @@
 ---
-title: 'Guida introduttiva: clonazione di un repository di codice Python | Microsoft Docs'
+title: 'Guida introduttiva: clonazione di un repository di codice Python'
 description: In questa guida introduttiva viene creato un progetto Python in Visual Studio tramite la clonazione del repository koans Python con Visual Studio Team Explorer.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida rapida: Clonazione di un repository del codice Python in Visual Studio
 
@@ -52,7 +46,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-py
 
 9. In **Esplora soluzioni** espandere il nodo `python3`, fare clic con il pulsante destro del mouse su `contemplate_koans.py` e selezionare **Imposta come file di avvio**. Questo passaggio indica quale file deve essere usato da Visual Studio per l'esecuzione del progetto.
 
-10. Selezionare **Progetto > Proprietà Koans...** dal menu, selezionare la scheda **Generale** e impostare **Directory di lavoro** su "python3". Questo passaggio è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro sulla radice del progetto anziché sul percorso del file di avvio (`python3\contemplate_koans.py`, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file `koans.txt` nella cartella di lavoro, pertanto se non si modifica questo valore viene visualizzato un errore di runtime.
+10. Selezionare **Progetto > Proprietà Koans** dal menu, selezionare la scheda **Generale** e impostare **Directory di lavoro** su "python3". Questo passaggio è necessario perché, per impostazione predefinita, Visual Studio imposta la directory di lavoro sulla radice del progetto anziché sul percorso del file di avvio (`python3\contemplate_koans.py`, che è possibile visualizzare nelle proprietà del progetto). Il codice del programma cerca un file `koans.txt` nella cartella di lavoro, pertanto se non si modifica questo valore viene visualizzato un errore di runtime.
 
     ![Impostazione della cartella di lavoro per un progetto di Python](media/projects-set-working-directory.png)
 

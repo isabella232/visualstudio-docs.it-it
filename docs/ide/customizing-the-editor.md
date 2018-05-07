@@ -1,27 +1,24 @@
 ---
 title: Personalizzazione dell'editor di Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor, customizing
 - Code Editor, customizing
 - Text Editor, customizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 513780cde8a8a9c0db86b3720382b58a55f385af
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 1c31a9584fc2964704908b6da09b053046739b7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-the-editor"></a>Personalizzazione dell'editor
 
@@ -29,10 +26,10 @@ ms.lasthandoff: 01/23/2018
 
 Per altre informazioni sulle opzioni dell'editor di testo, vedere [Finestra di dialogo Opzioni editor di testo](../ide/reference/text-editor-options-dialog-box.md).
 
-## <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedere anche
 
 [Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Writing Code](../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)  
+[Scrittura di codice](../ide/writing-code-in-the-code-and-text-editor.md)  
 [Impostazione di segnalibri nel codice](../ide/setting-bookmarks-in-code.md)  
 [Generale, Ambiente, finestra di dialogo Opzioni](../ide/reference/general-environment-options-dialog-box.md)  
 [Documenti, Ambiente, finestra di dialogo Opzioni](../ide/reference/documents-environment-options-dialog-box.md)  

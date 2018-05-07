@@ -1,12 +1,10 @@
 ---
-title: "Prodotti e servizi Microsoft per l'accessibilità | Microsoft Docs"
-ms.custom: 
+title: Prodotti e servizi Microsoft per l'accessibilità | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - TT/TDD services
 - recorded documentation
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
-caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e058a4e501f49d58239c86e74157570fb854713
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
 > [!TIP]
@@ -66,7 +64,7 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
 
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Numero di telefono per utenti all'interno degli Stati Uniti: (800) 221-4792<br /><br /> Numero di telefono per utenti al di fuori di Stati Uniti e Canada: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Sito Web Recording for the Blind & Dyslexic: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Numero di telefono per utenti all'interno degli Stati Uniti: (800) 221-4792<br /><br /> Numero di telefono per utenti al di fuori di Stati Uniti e Canada: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Sito Web Recording for the Blind & Dyslexic, Inc.: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
 
  Poiché gli indirizzi Web possono cambiare, è possibile che il sito o i siti Web menzionati in questo documento non risultino disponibili.  
 

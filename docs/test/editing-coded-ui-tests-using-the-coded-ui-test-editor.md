@@ -2,21 +2,21 @@
 title: Modifica di test codificati dell'interfaccia utente in Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifica di test codificati dell'interfaccia utente utilizzando l'editor di test codificato dell'interfaccia utente
 L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare le proprietà dei metodi di test e delle azioni dell'interfaccia utente. Inoltre, è possibile usare la mappa del controllo dell'interfaccia utente per visualizzare e modificare i corrispondenti controlli.
@@ -71,7 +71,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
  Per modificare le proprietà di un'azione dell'interfaccia utente, nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente un'azione dell'interfaccia utente di cui si vogliono modificare le proprietà, selezionare l'azione dell'interfaccia utente e quindi modificare le proprietà usando la finestra Proprietà.
 
- Ad esempio, se un server non è disponibile e al Web browser è associata l'azione dell'interfaccia utente **Vai a pagina Web http://Contoso1/default.aspx**, è possibile sostituire l'URL con `'http://Contoso2/default.aspx'`.
+ Ad esempio, se un server non è disponibile e al Web browser è associata l'azione dell'interfaccia utente **Vai a pagina Web 'http://Contoso1/default.aspx'**, è possibile sostituire l'URL con `'http://Contoso2/default.aspx'`.
 
  ![Proprietà del controllo](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")
 
@@ -140,7 +140,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
 Per annullare lo spostamento, selezionare **Annulla** dal menu **Modifica** oppure premere CTRL+Z. Tuttavia, è poi necessario rimuovere manualmente il codice dal file UIMap.cs o UIMap.vb.
 
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test
+##  <a name="CodedUITestEditor_LocateUIControl"></a> Individuazione di un controllo dell'interfaccia utente nell'applicazione sottoposta a test
  A volte può essere difficile identificare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. La funzionalità **Individua controllo dell'interfaccia utente** nell'applicazione sottoposta a test consente anche di verificare le modifiche delle proprietà di ricerca apportate a un controllo.
 
  ![Individuazione di un controllo dell'interfaccia utente](../test/media/codeduilocatecontrol.png "CodedUILocateControl")

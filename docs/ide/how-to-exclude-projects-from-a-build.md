@@ -1,23 +1,21 @@
 ---
 title: 'Procedura: Escludere progetti da una compilazione | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 17a837ca-5db9-46cd-b5a7-b14ad1d2c47d
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a09f18ccb491474c5db20724ccea501fc94c14a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedura: escludere progetti da una compilazione
 È possibile compilare una soluzione senza compilare tutti i progetti contenuti al suo interno. Ad esempio, si può escludere un progetto che causa l'interruzione della compilazione. Sarà possibile compilare il progetto in seguito, dopo avere esaminato e risolto i problemi.  
@@ -32,7 +30,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Per rimuovere temporaneamente un progetto dalla configurazione della soluzione attiva.  
   
-1.  Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.  
+1.  Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.  
   
 2.  Nella tabella **Contesti progetto** individuare il progetto da escludere dalla compilazione.  
   
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Per creare una configurazione di soluzione che esclude un progetto  
   
-1.  Nella barra dei menu scegliere **Compilazione**, **Gestione configurazione**.  
+1.  Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.  
   
 2.  Nell'elenco **Configurazione soluzione attiva** **scegliere \<Nuova**.  
   
@@ -54,9 +52,9 @@ ms.lasthandoff: 12/22/2017
   
 6.  Sulla barra degli strumenti **Standard** verificare che la nuova configurazione della soluzione compaia come configurazione attiva nella casella **Configurazioni soluzione**.  
   
-7.  Sulla barra dei menu scegliere **Compila**, **Ricompila soluzione**.  
+7.  Sulla barra dei menu scegliere **Compila** > **Ricompila soluzione**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Understanding Build Configurations](../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  
- [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)   
+ [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)   
+ [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)   
  [Procedura: Compilare più configurazioni contemporaneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

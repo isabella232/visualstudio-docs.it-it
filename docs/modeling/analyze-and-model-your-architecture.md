@@ -32,11 +32,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a0547374087927e7fc2d3da89c3fe4f2a5c2b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: be58a86ec6c3b87954ff5b5be012ce636ad52204
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizzare e modellare l'architettura
 Verificare che l'app soddisfi i requisiti di architettura utilizzando l'architettura di Visual Studio e strumenti per progettare e modellare l'applicazione di modellazione.
@@ -56,19 +56,52 @@ Vedere [Scenario: modificare la progettazione mediante la visualizzazione e mode
 |**Visualizzare il codice**:<br /><br /> -Consente di visualizzare il codice dell'organizzazione e le relazioni creando mappe del codice. Visualizzare le dipendenze tra assembly, spazi dei nomi, classi, metodi e così via.<br />-Consente di visualizzare la struttura di classe e i membri per un progetto specifico tramite la creazione di diagrammi classi dal codice.<br />-Trovare conflitti tra il codice e la progettazione mediante la creazione di diagrammi di dipendenza per convalidare il codice.|-   [Visualizzare il codice](../modeling/visualize-code.md)<br />-   [Utilizzo di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md)<br />-   [Video: Comprensione progettazione dal codice con le mappe del codice Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Video: Convalidare le dipendenze dei propri architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
 |**Definire l'architettura**:<br /><br /> : Consente di definire e applicare vincoli sulle dipendenze tra i componenti del codice tramite la creazione di diagrammi di dipendenza.|-   [Video: Convalidare le dipendenze di architettura con Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
 |**Convalidare il sistema con i requisiti e la progettazione desiderata**<br /><br /> : Convalida delle dipendenze del codice con diagrammi di dipendenza che descrivono l'architettura desiderata e impedire modifiche che potrebbe essere in conflitto con la progettazione.|-   [Video: Convalidare le dipendenze di architettura con Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Condividere modelli, diagrammi e mappe codice usando il controllo della versione di Team Foundation**:<br /><br /> -Inserire le mappe del codice, i progetti e i diagrammi deoendency nel controllo della versione di Team Foundation in modo da poterli condividere.| |
 |**Personalizzare modelli e diagrammi**:<br /><br /> -Creare linguaggi specifici di dominio.|-   [SDK di modellazione per Visual Studio - linguaggi specifici di dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
 |**Generare testo usando i modelli T4**:<br /><br /> -Utilizzare blocchi di testo e la logica di controllo all'interno dei modelli per generare file basati su testo.<br /> -Compilazione di modelli T4 con MSBuild inclusi in Visual Studio|-   [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)|
+|**Condividere modelli, diagrammi e mappe codice usando il controllo della versione di Team Foundation**:<br /><br /> -Inserire le mappe del codice, progetti e i diagrammi di dipendenza nel controllo della versione di Team Foundation in modo da poterli condividere.| |
 
 Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
-## <a name="types-of-models-and-their-uses"></a>Tipo di modelli e relativi usi
+## <a name="types-of-models-and-typical-uses"></a>Tipi di modelli e utilizzi tipici
 
-|**Tipo di modello e usi tipici**|
-|-------------------------------------|
-|**Mappe codice**<br /><br /> Le mappe codice consentono di visualizzare l'organizzazione e le relazioni nel codice.<br /><br /> Usi tipici:<br /><br /> -Esaminare il codice programma in modo da comprendere meglio la struttura e le relative dipendenze, come aggiornarlo e stimare il costo della proposta di modifiche.<br /><br /> Vedere:<br /><br /> -   [Mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)<br />-   [Trovare problemi potenziali usando gli analizzatore delle mappe codice](../modeling/find-potential-problems-using-code-map-analyzers.md)|
-|**Diagramma di dipendenza**<br /><br /> Dipendenza diagrammi consentono di definire la struttura di un'applicazione come un set di livelli o blocchi con dipendenze esplicite. È possibile eseguire la convalida per trovare conflitti tra le dipendenze nel codice e le dipendenze descritte in un diagramma di dipendenze.<br /><br /> Usi tipici:<br /><br /> -Stabilizzare la struttura dell'applicazione apportando diverse modifiche durante il ciclo di vita.<br />-Prima di archiviare le modifiche apportate al codice, individuare i conflitti di dipendenza non intenzionali.<br /><br /> Vedere:<br /><br /> -   [Creare diagrammi dipendenza dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagrammi di dipendenza: riferimento](../modeling/layer-diagrams-reference.md)<br />-   [Convalidare il codice con diagrammi di dipendenza](../modeling/validate-code-with-layer-diagrams.md)|
-|**Linguaggio specifico di dominio (DSL)**<br /><br /> Un linguaggio DSL è una notazione progettata per uno scopo specifico. In Visual Studio, è generalmente grafico.<br /><br /> Usi tipici:<br /><br /> -Consente di generare o configurare parti dell'applicazione. Per sviluppare la notazione e gli strumenti sono necessarie alcune operazioni. Il risultato può essere più adatto al dominio rispetto alla personalizzazione di un modello UML.<br />-Per progetti di grandi dimensioni o nelle linee di prodotto in cui l'investimento nello sviluppo del linguaggio DSL e dei relativi strumenti è dato dall'uso in più di un progetto.<br /><br /> Vedere:<br /><br /> -   [SDK di modellazione per Visual Studio - linguaggi specifici di dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+### <a name="code-maps"></a>Mappe codice
+Le mappe codice consentono di visualizzare l'organizzazione e le relazioni nel codice.
+
+**Usi tipici:**
+
+-   Esaminare il codice programma in modo da poterne comprendere meglio la struttura e le relative dipendenze, come aggiornarlo e come stimare il costo delle modifiche proposte.
+
+**Vedere:**
+
+-   [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
+-   [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
+-   [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
+
+### <a name="dependency-diagram"></a>Diagramma di dipendenza
+Dipendenza diagrammi consentono di definire la struttura di un'applicazione come un set di livelli o blocchi con dipendenze esplicite. È possibile eseguire la convalida per trovare conflitti tra le dipendenze nel codice e le dipendenze descritte in un diagramma di dipendenze.
+
+**Usi tipici:**
+
+-   Stabilizzare la struttura dell'applicazione apportando diverse modifiche durante il relativo ciclo di vita.
+-   Prima di archiviare le modifiche apportate al codice, individuare i conflitti di dipendenza non intenzionali.
+
+**Vedere:**
+
+-   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
+-   [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+-   [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
+
+### <a name="domain-specific-language-dsl"></a>Linguaggio specifico di dominio (DSL)
+Un linguaggio DSL è una notazione progettata per uno scopo specifico. In Visual Studio, è generalmente grafico.
+
+**Usi tipici:**
+
+-   Generare o configurare parti dell'applicazione. Per sviluppare la notazione e gli strumenti sono necessarie alcune operazioni. Il risultato può essere più adatto al dominio rispetto alla personalizzazione di un modello UML.
+-   Per progetti di grandi dimensioni o nelle linee di prodotto in cui il ritorno sull'investimento associato allo sviluppo del linguaggio DSL e dei relativi strumenti è dato dall'uso in più progetti.
+
+**Vedere:**
+
+-   [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?
 

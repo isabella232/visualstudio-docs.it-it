@@ -2,25 +2,24 @@
 title: Tasti di scelta rapida in Visual Studio | Microsoft Docs
 ms.date: 06/21/2017
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a4d53ec38ee006e73f7d3f0d454e928527cc0120
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="keyboard-tips-for-visual-studio"></a>Suggerimenti relativi alla tastiera per Visual Studio
+# <a name="keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida per Visual Studio
 
 È possibile spostarsi più facilmente in Visual Studio usando i tasti di scelta rapida descritti in questo articolo.
 
-I tasti di scelta rapida elencati di seguito sono solo un subset dei tasti di scelta rapida disponibili. Per un elenco completo, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md).
+> [!TIP]
+> I tasti di scelta rapida elencati di seguito sono solo un subset dei tasti di scelta rapida disponibili. Per un elenco completo, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="window-management"></a>Gestione delle finestre
 
@@ -39,9 +38,9 @@ Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere 
 |-|-|
 |Spostare/Ancorare le finestre mobili|Win+freccia DESTRA / Win+freccia SINISTRA|
 |Ingrandire/Ridurre le finestre|Win+freccia SU / Win+freccia GIÙ|
-|Visualizzare la Jump List|Win+ALT+n|
-|Avviare una nuova istanza|Win+MAIUSC+n|
-|Spostarsi tra le finestre|Win+n|
+|Visualizzare la Jump List|Win+ALT+N|
+|Avviare una nuova istanza|Win+MAIUSC+N|
+|Spostarsi tra le finestre|Win+N|
 
 ## <a name="visual-studio-search"></a>Ricerca in Visual Studio
 
@@ -78,10 +77,10 @@ Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere 
 |Selezione frammento di codice|CTRL+K,X o ?,TAB (VB)||
 |Racchiudi tra|CTRL+K,S||
 |Visualizzare informazioni rapide|CTRL+K,I||
-|Passa a|CTRL+,||
+|Passa a|**CTRL**+**,**||
 |Esplorare i riferimenti evidenziati|CTRL+MAIUSC+freccia SU (Precedente), CTRL+MAIUSC+freccia GIÙ (Successivo)||
-|Zoom dell'editor|CTRL+MAIUSC> (In), CTRL+MAIUSC+< (Out)||
-|Selezione blocco|Tenere premuto ALT e trascinare il mouse, SHIFT+ALT+tasti di direzione||
+|Zoom dell'editor|**CTRL**+**MAIUSC**+**>** (In entrata), **CTRL**+**MAIUSC**+**<** (In uscita)||
+|Selezione blocco|Tenere premuto **ALT** e trascinare il mouse, SHIFT+ALT+tasti di direzione||
 |Spostare la riga verso l'alto o il basso|ALT+freccia SU o GIÙ||
 |Duplicare una riga|CTRL+ E,V|Visual Studio 2017 versione 15.6|
 |Espandere la selezione|**MAIUSC**+**ALT**+**=**|Visual Studio 2017 versione 15.5|
@@ -91,16 +90,16 @@ Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere 
 |Stack Vai a definizione|CTRL+MAIUSC+8 (Indietro), CTRL+MAIUSC+7 (Avanti)||
 |Chiudere la finestra Visualizza definizione|ESC||
 |Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|CTRL+ALT+HOME||
-|Spostarsi tra più finestre Visualizza definizione|CTRL+ALT+- e CTRL+ALT+=||
-|Spostarsi tra più risultati|F8 e MAIUSC+F8||
+|Spostarsi tra più finestre Visualizza definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+**=**||
+|Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**||
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|MAIUSC+ESC||
 
 ## <a name="toolbars"></a>Barre degli strumenti
 
 |||
 |-|-|
-|Aggiungere pulsanti|Fare clic sul pulsante di overflow della barra degli strumenti|
-|Casella combinata Trova nella barra degli strumenti standard|CTRL+D|
+|Aggiungere pulsanti|Selezionare il pulsante di overflow della barra degli strumenti|
+|Casella combinata Trova nella barra degli strumenti standard|**Ctrl**+**D**|
 |Modalità comando casella di testo Trova|Digitare ">"|
 |Creare nuovi alias|Comando >alias NewAlias|
 
@@ -125,9 +124,6 @@ Per informazioni su come ottimizzare Visual Studio per l'accessibilità, vedere 
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)
 - [Tasti di scelta rapida (VSTS e TFS)](/vsts/collaborate/keyboard-shortcuts)
-- [Blog di Visual Studio](http://blogs.msdn.com/b/visualstudio)
 - [Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)
-- [Casella degli strumenti di Visual Studio su Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
-- [Bug di connessione di Visual Studio](http://connect.microsoft.com/VisualStudio)

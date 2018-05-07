@@ -1,21 +1,19 @@
 ---
-title: 'Procedura: Tenere traccia del codice personalizzando la barra di scorrimento | Microsoft Docs'
-ms.custom: 
+title: 'Procedura: Tenere traccia del codice personalizzando la barra di scorrimento'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procedura: Tenere traccia del codice personalizzando la barra di scorrimento
 
@@ -25,7 +23,7 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
 1. È possibile configurare la barra di scorrimento in modo da visualizzare le modifiche al codice, i punti di interruzione, gli errori e i segnalibri.
 
-    Aprire la pagina Opzioni **Barra di scorrimento** scegliendo **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** o un linguaggio specifico, oppure digitando **barra di scorrimento** nella finestra Avvio veloce.
+    Aprire la pagina Opzioni **Barra di scorrimento** scegliendo **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** o un linguaggio specifico, oppure digitando **barra di scorrimento** nella finestra **Avvio veloce**.
 
 2. Selezionare **Mostra annotazioni su barra di scorrimento verticale** e quindi selezionare le annotazioni da visualizzare.
 
@@ -47,7 +45,7 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
     Nella pagina delle opzioni **Barra di scorrimento** selezionare **Usa modalità barra per barra di scorrimento verticale** o **Usa modalità mappa per barra di scorrimento verticale**. È possibile scegliere la larghezza nell'elenco a discesa **Panoramica origine**.
 
-    Ecco come appare l'esempio di ricerca quando è attivata la modalità mappa e la larghezza viene impostata su Media:
+    Ecco come appare l'esempio di ricerca quando è attivata la modalità mappa e la larghezza viene impostata su **Media**:
 
     ![Barra di scorrimento in modalità mappa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
@@ -59,4 +57,4 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Scrivere codice nell'editor](../ide/writing-code-in-the-code-and-text-editor.md)

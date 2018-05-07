@@ -2,11 +2,8 @@
 title: Attività Exec | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 20
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="exec-task"></a>Attività Exec
 Esegue il programma o il comando specificato con gli argomenti specificati.  
@@ -53,7 +49,7 @@ Esegue il programma o il comando specificato con gli argomenti specificati.
 |`WorkingDirectory`|Parametro `String` facoltativo.<br /><br /> Specifica la directory in cui verrà eseguito il comando.|  
   
 ## <a name="remarks"></a>Note  
- Questa attività è utile nei casi in cui non è disponibile un'attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] specifica per il processo che si vuole eseguire. A differenza di un'attività più specifica, tuttavia, con l'attività `Exec` non è possibile raccogliere l'output dallo strumento o dal comando eseguito.  
+ Questa attività è utile nei casi in cui non è disponibile un'attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] specifica per il processo che si vuole eseguire. Tuttavia, l'attività `Exec`, a differenza di un'attività più specifica, non può eseguire un'altra elaborazione o operazioni condizionali in base al risultato dello strumento o del comando eseguito.
   
  Anziché richiamare direttamente un processo, l'attività `Exec` chiama cmd.exe.  
   

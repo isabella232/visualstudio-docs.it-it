@@ -1,26 +1,20 @@
 ---
-title: Guida di R Tools per Visual Studio | Microsoft Docs
+title: Finestra della Guida per R
 description: La Guida di R è integrata direttamente nella finestra interattiva in Visual Studio tramite il comando .
-ms.custom: ''
-ms.date: 001/24/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: ''
+ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 47201a249ffda20739cee40add02c68e3c2ced8a
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 6153a59e1875bf7b1dd81e794e0d15a37d47c2f4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Guida di R Tools per Visual Studio
 

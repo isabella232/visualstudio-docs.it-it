@@ -1,22 +1,19 @@
 ---
 title: Creare modelli di elementi per Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+manager: douge
+ms.openlocfilehash: c5c29dde308c4e3720195924bd40db4e880e4b2e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -40,23 +37,23 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 1. Nella pagina **Selezionare le opzioni del modello** immettere il nome del modello ed eventualmente una descrizione, un'icona e un'immagine di anteprima, quindi scegliere **Fine**.
 
-    I file per il modello vengono aggiunti a un file ZIP e copiati nella directory specificata nella procedura guidata. Il percorso predefinito è %USERPROFILE%\Documenti\Visual Studio \<versione\>\My Exported Templates.
+    I file per il modello vengono aggiunti a un file con estensione *zip* e copiati nella directory specificata nella procedura guidata. Il percorso predefinito è *%USERPROFILE%\Documents\Visual Studio \<versione\>\My Exported Templates*.
 
-1. Se non è stata selezionata l'opzione **Importa automaticamente il modello in Visual Studio** nell'**Esportazione guidata modelli**, individuare il modello esportato e copiarlo nella directory dei modelli di elementi dell'utente. Il percorso predefinito è %USERPROFILE%\Documenti\Visual Studio \<versione\>\Templates\ItemTemplates.
+1. Se non è stata selezionata l'opzione **Importa automaticamente il modello in Visual Studio** nell'**Esportazione guidata modelli**, individuare il modello esportato. Quindi, copiarlo nella directory di modello di elemento utente. Il percorso predefinito è *%USERPROFILE%\Documents\Visual Studio \<versione\>\Templates\ItemTemplates*.
 
 1. Chiudere e riaprire Visual Studio.
 
-1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **Progetto** > **Aggiungi nuovo elemento** o premere **CTRL** + **MAIUSC** + **A**.
+1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **Progetto** > **Aggiungi nuovo elemento** o premere **CTRL**+**MAIUSC**+**A**.
 
    Il modello di elemento appare nella finestra di dialogo **Aggiungi nuovo elemento**. Se è stata aggiunta una descrizione nell'**Esportazione guidata modelli**, la descrizione viene visualizzata sul lato destro della finestra di dialogo.
 
 ## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Per abilitare l'uso del modello di elemento in un progetto di app di Windows universale
 
-La procedura guidata esegue la maggior parte delle operazioni richieste per creare un modello di base, ma in molti casi sarà necessario modificare manualmente il file VSTEMPLATE dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo**Aggiungi nuovo elemento** per un progetto di app di Windows universale, è necessario eseguire alcuni passaggi aggiuntivi.
+La procedura guidata esegue la maggior parte delle operazioni richieste per creare un modello di base, ma in molti casi sarà necessario modificare manualmente il file con estensione *vstemplate* dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo**Aggiungi nuovo elemento** per un progetto di app di Windows universale, è necessario eseguire alcuni passaggi aggiuntivi.
 
 1. Seguire i passaggi della sezione precedente per esportare un modello di elemento.
 
-1. Estrarre il file ZIP creato e aprire il file VSTEMPLATE in Visual Studio.
+1. Estrarre il file con estensione *zip* creato e aprire il file con estensione *vstemplate* in Visual Studio.
 
 1. Per un progetto C# di Windows universale, aggiungere il codice XML seguente all'interno dell'elemento `<TemplateData>`:
 
@@ -64,9 +61,9 @@ La procedura guidata esegue la maggior parte delle operazioni richieste per crea
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
 
-1. In Visual Studio salvare e chiudere il file vstemplate.
+1. In Visual Studio salvare e chiudere il file con estensione *vstemplate*.
 
-1. Copiare e incollare il file VSTEMPLATE nel file ZIP.
+1. Copiare e incollare il file con estensione *vstemplate* nel file con estensione *zip*.
 
      Se viene visualizzata la finestra di dialogo **Copia file**, selezionare l'opzione **Copia e sostituisci**.
 
@@ -76,9 +73,9 @@ La procedura guidata esegue la maggior parte delle operazioni richieste per crea
 
 È possibile specificare che il modello deve essere visualizzato solo per determinati sottotipi di progetto, ad esempio Windows, Office, Database o Web.
 
-1. Individuare l'elemento ProjectType nel file vstemplate per il modello di elemento.
+1. Individuare l'elemento `ProjectType` nel file con estensione *vstemplate* per il modello di elemento.
 
-1. Aggiungere un elemento [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) immediatamente dopo l'elemento ProjectType.
+1. Aggiungere un elemento [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) immediatamente dopo l'elemento `ProjectType`.
 
 1. Impostare il valore di testo dell'elemento su uno dei valori seguenti:
 
@@ -117,18 +114,18 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 1. Modificare il file del codice per indicare dove deve avvenire la sostituzione dei parametri, se necessaria. Per altre informazioni sulla sostituzione dei parametri, vedere [Procedura: Sostituire i parametri di un modello.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. Creare un file XML e salvarlo con estensione VSTEMPLATE nella stessa directory del file dell'elemento del progetto.
+1. Creare un file XML e salvarlo con estensione *vstemplate* nella stessa directory del file dell'elemento del progetto.
 
-1. Modificare il file XML VSTEMPLATE in modo da specificare i metadati del modello di elemento. Per altre informazioni, vedere [Riferimento allo schema di modello (estendibilità)](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.
+1. Modificare il file XML con estensione *vstemplate* in modo da specificare i metadati del modello di elemento. Per altre informazioni, vedere [Riferimento allo schema di modello (estendibilità)](../extensibility/visual-studio-template-schema-reference.md) e l'esempio nella sezione precedente.
 
-1. Salvare e chiudere il file vstemplate.
+1. Salvare e chiudere il file con estensione *vstemplate*.
 
-1. In Esplora risorse selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**. I file selezionati verranno compressi in un file ZIP.
+1. In **Esplora risorse** selezionare i file che si vuole includere nel modello. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**. I file selezionati verranno compressi in un file con estensione *zip*.
 
-1. Copiare il file ZIP e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2017 la directory predefinita è %USERPROFILE%\Documenti\Visual Studio 2017\Templates\ItemTemplates. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elementi](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. In Visual Studio 2017 la directory predefinita è *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elementi](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)  
+[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
 [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)  
 [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)

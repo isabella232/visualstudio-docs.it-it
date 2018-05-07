@@ -1,44 +1,39 @@
 ---
-title: "Procedura: Impostare più progetti di avvio | Microsoft Docs"
-ms.custom: 
+title: 'Procedura: impostare più progetti di avvio'
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9cc601f871d3f33ca408c24cd4ed070d2e5e77b8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: impostare più progetti di avvio
-Visual Studio consente di specificare la modalità di esecuzione di più progetti all'avvio del debugger.  
 
-### <a name="to-set-multiple-startup-projects"></a>Per impostare più progetti di avvio  
+Visual Studio consente di specificare la modalità di esecuzione di più progetti all'avvio del debugger.
 
-1.  Selezionare la soluzione in **Esplora soluzioni** (il primo nodo in alto).  
+## <a name="to-set-multiple-startup-projects"></a>Per impostare più progetti di avvio
 
-2.  Scegliere il menu di scelta rapida (clic con il tasto destro del mouse) del nodo della soluzione e quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo delle **pagine delle proprietà della soluzione**.  
+1.  Selezionare la soluzione in **Esplora soluzioni** (il primo nodo in alto).
 
-3.  Espandere il nodo **Proprietà comuni** e scegliere **Progetto di avvio**.  
+2.  Scegliere il menu di scelta rapida (clic con il tasto destro del mouse) del nodo della soluzione e quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo delle **pagine delle proprietà della soluzione**.
+
+3.  Espandere il nodo **Proprietà comuni** e scegliere **Progetto di avvio**.
 
 4.  Scegliere l'opzione **Progetti di avvio multipli** e impostare le azioni appropriate.
 
-## <a name="see-also"></a>Vedere anche  
- [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)
+## <a name="see-also"></a>Vedere anche
 
- [Creazione di soluzioni e progetti](../ide/creating-solutions-and-projects.md)
-
- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
+- [Compilare](../ide/compiling-and-building-in-visual-studio.md)
+- [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md)
+- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)

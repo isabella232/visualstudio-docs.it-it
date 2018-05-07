@@ -1,56 +1,27 @@
 ---
 title: Vantaggio WhiteSource Bolt | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/11/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the WhiteSource Bolt subscription included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fe8e731e26765ec17b56383e04362efa25b2f141
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/11/2017
+ms.topic: Get-Started-Article
+description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 0c2eed9efdcca076c20a240d60b4d38cdda23019
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
-## <a name="overview"></a>Panoramica
-
 È possibile trovare e correggere le vulnerabilità open source e generare report esaurienti sull'inventario e sulle licenze di tutti i componenti open source nella build.  Alcune sottoscrizioni selezionate di Visual Studio includono sei mesi di accesso gratuito. 
-
-## <a name="eligibility"></a>Idoneità
-
-| Livello di sottoscrizione/Programma                                                  | Vantaggio               | Rinnovabile?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 6 mesi              | Yes                                                                |
-| Visual Studio Enterprise (annuale)                                               | 6 mesi              | Yes                                                                |
-| Visual Studio Enterprise (mensile)                                              | Non disponibile         |                                                                    |
-| Visual Studio Professional Standard                                           | Non disponibile         |                                                                    |
-| Visual Studio Professional (annuale)                                             | Non disponibile         |                                                                    | 
-| Visual Studio Professional (mensile)                                            | Non disponibile         |                                                                    |
-| Visual Studio Test Pro                                                        | Non disponibile         |                                                                    |
-| MSDN Platforms                                                                | Non disponibile         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Non disponibile         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Non disponibile         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | Non disponibile         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | 6 mesi              | Yes                                                                |
-| Visual Studio Professional - Microsoft Partner Network                        | Non disponibile         |                                                                    |
-| Visual Studio Enterprise - Imagine (Standard)                                 | Non disponibile         |                                                                    |
-| Visual Studio Enterprise - Imagine (Premium)                                  | Non disponibile         |                                                                    |
-| Visual Studio Enterprise - BizSpark                                           | Non disponibile         |                                                                    |
-| Microsoft Certified Trainer - Software & Services                             | Non disponibile         |                                                                    |
-| Microsoft Certified Trainer - Developer Software & Services                   | Non disponibile         |                                                                    |
-
-<sup>1</sup>  *Include Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
-
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate all'indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
-1.  Per attivare il vantaggio WhiteSource Bolt, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Per attivare il vantaggio di WhiteSource Bolt, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
 2.  Individuare il riquadro WhiteSource Bolt nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.    
 
@@ -98,11 +69,23 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
     - Rischi per le licenze e dashboard di conformità
     - Report di inventario
 
-## <a name="faq"></a>Domande frequenti
-*Vedere qui per aggiornamenti*
+## <a name="eligibility"></a>Idoneità
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Yes          |
+| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | N/D         |
+| Visual Studio Dev Essentials | N/D  | Non disponibile |N/D |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+
+<sup>1</sup>   *Include: Microsoft Partner Network (Enterprise).  Esclude: Other Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Partner (MVP), Region Director (RD), MCT Software & Services, Microsoft Partner Network (Professional).*
+
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Serve aiuto con WhiteSource Bolt?  Chattare con un rappresentate di WhiteSource Bolt in diretta all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 
+-  Serve aiuto con WhiteSource Bolt?  Chat con un rappresentante WhiteSource Bolt in tempo reale all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 
 -  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
 -  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 
 

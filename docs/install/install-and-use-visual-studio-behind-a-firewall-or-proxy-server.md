@@ -1,13 +1,10 @@
 ---
 title: Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy | Microsoft Docs
-description: ''
+description: Verificare le URL di dominio, le porte e i protocolli da aggiungere in un elenco di elementi consentiti o aprire se l'organizzazione usa un firewall o un server proxy
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
+
 Se un utente o un'organizzazione usa misure di sicurezza come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere in un elenco di elementi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
 
 * **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere in un elenco di elementi consentiti in modo da poter accedere a tutti i componenti e i carichi di lavoro richiesti.
@@ -34,10 +32,13 @@ Se un utente o un'organizzazione usa misure di sicurezza come un firewall o un s
 * **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere in un elenco di elementi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e i servizi richiesti.
 
 ## <a name="install-visual-studio"></a>Installare Visual Studio
+
 ### <a name="urls-to-whitelist"></a>URL da aggiungere all'elenco degli elementi consentiti
+
 Dato che il programma di installazione di Visual Studio scarica i file da vari domini e dai rispettivi server di download, questi sono gli URL di dominio che possono essere aggiunti all'elenco degli elementi consentiti come attendibili nell'interfaccia utente o negli script di distribuzione.
 
 #### <a name="microsoft-domains"></a>Domini Microsoft
+
 | Dominio | Scopo |
 | ------ | ------- |
 | go.microsoft.com | Risoluzione degli URL di installazione |
@@ -57,6 +58,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Domini non Microsoft
+
 | Dominio | Installa questi carichi di lavoro |
 | ------ | ------- |
 | archive.apache.org |  Sviluppo di app per dispositivi mobili con JavaScript (Cordova) |
@@ -72,7 +74,9 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usare Visual Studio e i servizi di Azure
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL da aggiungere all'elenco degli elementi consentiti e porte e protocolli da aprire
+
 Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere all'elenco degli elementi consentiti e le porte e i protocolli che è possibile aprire.
 
 | Servizio o scenario | Endpoint DNS | Protocollo | Porta | Descrizione |
@@ -116,18 +120,21 @@ Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quan
 |Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | I domini *.npmjs.org, *.nuget.org e *.nodejs.org sono necessari solo per determinati scenari di attività di compilazione (quali il Programma di installazione strumento NuGet o il Programma di installazione strumento Node) o se si prevede di usare upstream pubblici con i feed.  Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Risoluzione dei problemi correlati alla rete
+
 In alcuni casi, è possibile che si riscontrino problemi correlati alla rete o al proxy quando si installa o si usa Visual Studio protetto da un firewall o un server proxy. Per altre informazioni sulle soluzioni per questo tipo di messaggi di errore, vedere la pagina [Troubleshooting network-related errors when you install or use Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md) (Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio).
 
 ## <a name="get-support"></a>Supporto
+
 Ecco alcune altre opzioni di supporto:
+
 * È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
 * È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte.
-* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).  Per questa opzione è necessario un account [GitHub](https://github.com/).
+* È possibile visualizzare lo stato dei problemi del prodotto e trovare una risposta nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio). Per questa opzione è necessario un account [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Troubleshooting network-related errors in Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md) (Risoluzione degli errori correlati alla rete in Visual Studio)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
 * [Installare Visual Studio 2017](install-visual-studio.md)

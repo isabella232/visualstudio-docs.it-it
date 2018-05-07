@@ -1,26 +1,20 @@
 ---
-title: Introduzione a R in Visual Studio | Microsoft Docs
+title: Guida introduttiva a R
 description: Procedura dettagliata per l'uso di R in Visual Studio, tra cui la creazione del progetto, la finestra interattiva, la modifica del codice e il debug.
-ms.custom: ''
 ms.date: 06/29/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1a76b5df7a85fa86d6f0597be2f0316a4960b6ec
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: c4ec2ce9a399c363427ef80087c1db1e8ef68d2c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Introduzione a R Tools per Visual Studio
 

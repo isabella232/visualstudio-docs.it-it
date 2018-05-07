@@ -1,28 +1,26 @@
 ---
 title: 'Procedura: Salvare e aprire file con codifica | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
 - files, encoding
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procedura: salvare e aprire file con codifica
 È possibile salvare i file con una codifica dei caratteri specifica per supportare le lingue bidirezionali. È anche possibile specificare una codifica all'apertura di un file, in modo che Visual Studio visualizzi il file correttamente.  
@@ -62,4 +60,4 @@ ms.lasthandoff: 12/22/2017
 ## <a name="see-also"></a>Vedere anche
 [Codifiche e interruzioni di riga](encodings-and-line-breaks.md)  
 [Globalizzazione di Windows Form e codifica](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
-[Globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md)
+[Globalizzare e localizzare le applicazioni](../ide/globalizing-and-localizing-applications.md)

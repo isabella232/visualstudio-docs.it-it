@@ -1,24 +1,22 @@
 ---
-title: "Creare modelli di elementi a più file per Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Creare modelli di elementi a più file per Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f1d5b11c97b7f214a13225b5605f47e3d3a45966
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -40,7 +38,7 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
 
 1. Creare il modello di elemento come se si creasse manualmente un modello di elemento a file singolo, ma includere ogni file che costituisce l'elemento a più file.
 
-1. Nel file XML con estensione vstemplate, aggiungere un elemento `ProjectItem` per ogni singolo file, quindi aggiungere un attributo `TargetFileName` a questo elemento. Impostare il valore dell'attributo `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:
+1. Nel file XML con estensione *vstemplate*, aggiungere un elemento `ProjectItem` per ogni singolo file, quindi aggiungere un attributo `TargetFileName` a questo elemento. Impostare il valore dell'attributo `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,13 +57,13 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
 
 1. Selezionare i file da includere nel modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**.
 
-   I file selezionati verranno compressi in un file ZIP.
+   I file selezionati verranno compressi in un file con estensione *zip*.
 
-1. Copiare il file ZIP nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è %USERPROFILE%\Documenti\Visual Studio \<Versione\>\Templates\ItemTemplates. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copiare il file *.zip* nel percorso del modello di elemento dell'utente. Per impostazione predefinita, la directory è *%USERPROFILE%\Documenti\Visual Studio \<Versione\>\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Chiudere e riaprire Visual Studio.
 
-1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **Progetto** > **Aggiungi nuovo elemento** o premere **CTRL** + **MAIUSC** + **A**.
+1. Creare un nuovo progetto o aprire un progetto esistente, quindi scegliere **Progetto** > **Aggiungi nuovo elemento** o premere **CTRL**+**MAIUSC**+**A**.
 
    Il modello di elemento a più file appare nella finestra di dialogo **Aggiungi nuovo elemento**.
 
@@ -98,7 +96,7 @@ L'esempio seguente illustra un modello di Windows Form. Quando viene creato un e
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)  
+[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
 [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)  
-[Parametri di modelli](../ide/template-parameters.md)  
+[Parametri di modello](../ide/template-parameters.md)  
 [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md)

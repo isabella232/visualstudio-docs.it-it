@@ -1,30 +1,28 @@
 ---
 title: Convenzioni di denominazione .NET per i file EditorConfig | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
-Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi pubblici devono essere scritti in lettere maiuscole o che i metodi asincroni devono terminare con "Async". È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'Elenco errori o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
+Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi pubblici devono essere scritti in lettere maiuscole o che i metodi asincroni devono terminare con "Async". È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
 
-Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica nel file EDITORCONFIG. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata.
+Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica nel file con estensione *editorconfig*. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata.
 
 Per ogni convenzione di denominazione, è necessario specificare i simboli a cui viene applicata, uno stile di denominazione e un livello di gravità per l'applicazione della convenzione, usando le proprietà descritte di seguito. L'ordine delle proprietà non è importante.
 
@@ -147,15 +145,15 @@ Gravità | Effetto
 ------------ | -------------
 none o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
-avviso | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'Elenco errori.
-errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'Elenco errori.
+avviso | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
+errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
 
 > [!NOTE]
-> Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'Elenco errori o come suggerimento.
+> Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.
 
 ## <a name="example"></a>Esempio
 
-Il file EDITORCONFIG seguente contiene una convenzione di denominazione che specifica che i nomi di proprietà, metodi, campi, eventi e delegati pubblici devono avere la prima lettera maiuscola. Si noti che questa convenzione di denominazione specifica più tipi di simboli a cui applicare la regola, usando una virgola per separare i valori.
+Il seguente file con estensione *editorconfig* contiene una convenzione di denominazione che specifica che i nomi di proprietà, metodi, campi, eventi e delegati pubblici devono avere la prima lettera maiuscola. Si noti che questa convenzione di denominazione specifica più tipi di simboli a cui applicare la regola, usando una virgola per separare i valori.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-La schermata seguente illustra l'effetto di questa convenzione di denominazione nell'editor. I nomi di due variabili pubbliche non hanno la prima lettera maiuscola. Una è `const` e una è `readonly`. Poiché la regola di denominazione si applica solo ai simboli *readonly*, solo la variabile `readonly` indica un suggerimento della regola di denominazione.
+La schermata seguente illustra l'effetto di questa convenzione di denominazione nell'editor. I nomi di due variabili pubbliche non hanno la prima lettera maiuscola. Una è `const` e una è `readonly`. Poiché la regola di denominazione si applica solo ai simboli `readonly`, solo la variabile `readonly` indica un suggerimento della regola di denominazione.
 
 ![Suggerimento della regola di denominazione](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ Ora si modifica la gravità della violazione, che diventa `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la violazione del nome, si visualizzano una linea verde ondulata e un avviso nell'Elenco errori:
+Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la violazione del nome, si visualizzano una linea verde ondulata e un avviso nell'**Elenco errori**:
 
 ![Avviso della regola di denominazione](media/editorconfig-naming-rule-warning.png)
 

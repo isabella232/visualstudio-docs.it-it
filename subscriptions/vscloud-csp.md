@@ -1,19 +1,19 @@
 ---
 title: Acquisto di sottoscrizioni cloud di Visual Studio per i CSP
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 
@@ -68,7 +68,7 @@ Se un sottoscrittore non ha ancora attivato la sottoscrizione di Visual Studio, 
 Per visualizzare i prezzi di Visual Studio per i partner CSP, accedere al [Centro per i partner](https://partnercenter.microsoft.com).  Scegliere **Prezzi e offerte** nella struttura di spostamento a sinistra.  Scegliere il file dei prezzi per il mese in corso in **servizi basati sull'utilizzo di servizi** in alto a destra. Nel foglio di calcolo di Excel scaricato passare al foglio **Azure Price List** (Listino prezzi di Azure) e selezionare **Visual Studio** per filtrare la colonna **Meter Category** (Categoria misuratore).
 
 Di seguito viene illustrato come interpretare le informazioni disponibili in questo foglio di calcolo:
-| Categoria misuratore    |   Nome                 |  Unità                                |           Contenuto                          |
+| Categoria misuratore    |   nome                 |  Unità                                |           Contenuto                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Enterprise   |
 | Visual Studio     | Enterprise (annuale)    |  Sottoscrizioni annuali                 | Sottoscrizione annuale di Visual Studio Enterprise    |
@@ -78,7 +78,7 @@ Di seguito viene illustrato come interpretare le informazioni disponibili in que
 Offriamo uno sconto del 5% per la sesta unità acquistata (per un determinato cliente) mensilmente di ogni sottoscrizione di Visual Studio. Questo è il motivo per cui sono visualizzate due righe per ogni opzione di sottoscrizione. Una riga mostra un valore minimo pari a 0, da interpretare come prezzo di base per le unità da 1 a 5. L'altra riga mostra un valore minimo pari a 5, ovvero il prezzo scontato del % 5 che si applica dalle 6 unità in poi.
 
 
-## <a name="faq"></a>Domande frequenti
+## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **mensili**?
 R: al momento del primo acquisto, viene fatturata una quantità ripartita in base ai giorni rimanenti del mese corrente. Ad esempio, se si acquistano 10 sottoscrizioni cloud mensili di Visual Studio Professional il 15 aprile, vengono addebitate 5 unità perché rimangono 15 giorni del mese di 30 giorni, ovvero il 50%, quindi l'addebito delle unità viene ripartito al 50%. Il primo del mese di maggio e per ogni mese successivo fino all'annullamento, verranno fatturate tutte e 10 le unità.
 

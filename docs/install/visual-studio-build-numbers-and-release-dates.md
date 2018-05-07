@@ -1,23 +1,22 @@
 ---
-title: Numeri di build e date di rilascio di Visual Studio 2017 | Microsoft Docs
+title: Numeri di build e date di rilascio di Visual Studio 2017
 description: Elenco aggiornato delle versioni rilasciate e dei numeri di build per Visual Studio 2017, in ordine di data.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/04/2018
+ms.date: 04/18/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f941891c858d36d4cbe1de706d100c0b27d9c85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio 2017
 
@@ -25,6 +24,10 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 Preview 4.0 | Anteprima | 18 aprile 2018 | 15.7.27617.1 |
+| 15.6.6 | Rilascio | 10 aprile 2018 | 15.6.27428.2037 |
+| 15.0.12 | Rilascio | 10 aprile 2018 | 15.0.26228.30 |
+| 15.7.0 Preview 3.0 | Anteprima | 9 aprile 2018 | 15.7.27604.0 |
 | 15.6.5 | Rilascio | 4 aprile 2018 | 15.6.27428.2027 |
 | 15.6.4 | Rilascio | 22 marzo 2018 | 15.6.27428.2015 |
 | 15.7.0 Preview 2.0 | Anteprima | 21 marzo 2018 | 15.7.27520.0 |
@@ -124,7 +127,7 @@ Ecco alcune altre opzioni di supporto:
 
 * È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
 * È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte.
+* È possibile visualizzare lo stato dei problemi del prodotto e trovare una risposta nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
 * È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio). Per questa opzione è necessario un account [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vedere anche

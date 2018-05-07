@@ -1,21 +1,19 @@
 ---
 title: Uso di Visualizza definizione in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -75,18 +73,18 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 
 |Funzionalità|Tasto di scelta rapida|
 |-------------------|:-----------------------:|
-|Consente di aprire la finestra di definizione|ALT+F12|
-|Consente di chiudere la finestra di definizione|ESC|
-|Consente di alzare di livello la finestra di definizione in una scheda documento normale|MAIUSC+ALT+HOME|
-|Consente di spostarsi tra le finestre di definizione|CTRL+ALT+- e CTRL+ALT+=|
-|Consente di spostarsi tra più risultati|F8 e MAIUSC+F8|
-|Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|MAIUSC+ESC|
+|Consente di aprire la finestra di definizione|**ALT**+**F12**|
+|Consente di chiudere la finestra di definizione|**ESC**|
+|Consente di alzare di livello la finestra di definizione in una scheda documento normale|**MAIUSC**+**ALT**+**Home**|
+|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+**=**|
+|Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
+|Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**MAIUSC**+**ESC**|
 
 > [!NOTE]
 > Per modificare codice in una finestra **Visualizza definizione** è anche possibile usare gli stessi tasti di scelta rapida utilizzabili in qualsiasi altra posizione in Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Esplorazione del codice](../ide/navigating-code.md)  
+[Spostarsi all'interno del codice](../ide/navigating-code.md)  
 [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)  
 [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)

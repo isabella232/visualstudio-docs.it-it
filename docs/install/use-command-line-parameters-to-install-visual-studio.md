@@ -1,12 +1,10 @@
 ---
-title: Usare i parametri della riga di comando per installare Visual Studio | Microsoft Docs
+title: Usare i parametri della riga di comando per installare Visual Studio
+description: Informazioni su come usare i parametri della riga di comando per controllare o personalizzare l'installazione di Visual Studio.
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
+
 Quando si installa Visual Studio 2017 da un prompt dei comandi, è possibile usare diversi parametri della riga di comando per controllare o personalizzare l'installazione. Dalla riga di comando è possibile eseguire le azioni seguenti:
 
 - Avviare l'installazione con determinate opzioni preselezionate.
@@ -37,7 +36,8 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>Elenco dei parametri della riga di comando  
+## <a name="list-of-command-line-parameters"></a>Elenco dei parametri della riga di comando
+
  Per i parametri della riga di comando di Visual Studio non viene fatta distinzione tra maiuscole e minuscole.
 
 > Sintassi: `vs_enterprise.exe [command] <options>...`
@@ -103,9 +103,11 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--noWeb` | **Novità in 15.3, facoltativa**: il programma di installazione scarica ora qualsiasi contenuto che viene installato da Internet.  Tutti i contenuti installati devono essere disponibili in un layout offline.  Se nel layout mancano contenuti, il programma di installazione ha esito negativo.  Per altre informazioni, vedere [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Elenco di ID di carichi di lavoro e ID di componenti
+
 Per un elenco degli ID di componenti e carichi di lavoro ordinati per prodotto Visual Studio, vedere la pagina [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Elenco delle impostazioni locali delle lingue
+
 | **Impostazioni locali** | **Lingua** |
 | ----------------------- | --------------- |
 | cs-CZ | Ceco |
@@ -124,6 +126,7 @@ Per un elenco degli ID di componenti e carichi di lavoro ordinati per prodotto V
 | zh-TW | Cinese tradizionale |
 
 ## <a name="error-codes"></a>Codici di errore
+
 A seconda del risultato dell'operazione, la variabile di ambiente `%ERRORLEVEL%` verrà impostata su uno dei valori seguenti:
 
 | **Valore** | **Risultato** |
@@ -138,16 +141,18 @@ A seconda del risultato dell'operazione, la variabile di ambiente `%ERRORLEVEL%`
 Durante ogni operazione nella directory `%TEMP%` vengono generati diversi file di log che indicano lo stato di avanzamento dell'installazione. Ordinare la cartella per data e cercare i file che iniziano con `dd_bootstrapper`, `dd_client` e `dd_setup` per individuare quelli che si riferiscono rispettivamente al programma di avvio automatico, all'app del programma di installazione e al motore di installazione.
 
 ## <a name="get-support"></a>Supporto
+
 Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni di supporto:
+
 * È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
 * È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte.
-* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).  Per questa opzione è necessario un account [GitHub](https://github.com/).
+* È possibile visualizzare lo stato dei problemi del prodotto e trovare una risposta nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio). Per questa opzione è necessario un account [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vedere anche
 
- * [Command-line parameter examples for Visual Studio 2017 installation](command-line-parameter-examples.md) (Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017)
- * [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md)
+* [Command-line parameter examples for Visual Studio 2017 installation](command-line-parameter-examples.md) (Esempi di parametri della riga di comando per l'installazione di Visual Studio 2017)
+* [Creare un'installazione offline di Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md)

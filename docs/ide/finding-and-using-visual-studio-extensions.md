@@ -1,13 +1,9 @@
 ---
-title: Individuare e usare altre estensioni di Visual Studio | Microsoft Docs
-ms.custom: 
+title: Individuare e usare le estensioni di Visual Studio
 ms.date: 06/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
 helpviewer_keywords:
@@ -15,23 +11,22 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 9a5b562aa6fe4a64f92d66ad0a6fff0395e5314a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare altre estensioni di Visual Studio
+# <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare le estensioni di Visual Studio
 
 Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studio che forniscono funzionalità di Visual Studio nuove o migliorate. Altre informazioni sulle estensioni di Visual Studio sono disponibili qui: [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per installare estensioni ed esempi di Visual Studio da siti Web e da altri percorsi e quindi abilitarli, disabilitarli, aggiornarli o disinstallarli (**Strumenti / Estensioni e aggiornamenti**oppure digitare **Estensioni** nella finestra **Avvio veloce** ). Nella finestra di dialogo vengono visualizzati anche gli aggiornamenti per le estensioni e gli esempi installati. È anche possibile scaricare estensioni da siti Web od ottenerle da altri sviluppatori.
+È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per installare estensioni ed esempi di Visual Studio da siti Web e da altri percorsi e quindi abilitarli, disabilitarli, aggiornarli o disinstallarli (**Strumenti > Estensioni e aggiornamenti**oppure digitare **Estensioni** nella finestra **Avvio veloce** ). Nella finestra di dialogo vengono visualizzati anche gli aggiornamenti per le estensioni e gli esempi installati. È anche possibile scaricare estensioni da siti Web od ottenerle da altri sviluppatori.
 
 > [!NOTE]
 > A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Marketplace vengono aggiornate automaticamente. È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
@@ -50,9 +45,9 @@ Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilita
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
 
-La maggior parte delle estensioni sono per utente e sono installate nella cartella **%LocalAppData%\Microsoft\VisualStudio\\<Versione Visual Studio\>\Extensions\\**. Alcune estensioni sono amministrative e vengono installate nel percorso **\<Cartella di installazione Visual Studio>\Common7\IDE\Extensions\\**.
+La maggior parte delle estensioni sono per utente e sono installate nella cartella *%LocalAppData%\Microsoft\VisualStudio\\<Versione Visual Studio\>\Extensions\\*. Alcune estensioni sono amministrative e vengono installate nel percorso *\<Cartella di installazione Visual Studio>\Common7\IDE\Extensions\\*.
 
-Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni utente amministrative. A questo scopo, passare alla pagina delle opzioni **Estensioni e aggiornamenti** (**Strumenti / Opzioni**, **Ambiente**, **Estensioni e aggiornamenti**oppure digitare **Estensione** nella finestra **Avvio veloce** ). Deselezionare la casella di controllo **Carica estensioni per utente se eseguite come amministratore** , quindi riavviare Visual Studio.
+Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni utente amministrative. A questo scopo, passare alla pagina delle opzioni **Estensioni e aggiornamenti** (**Strumenti > Opzioni** > **Ambiente** > **Estensioni e aggiornamenti**oppure digitare **Estensione** nella finestra **Avvio veloce**). Deselezionare la casella di controllo **Carica estensioni per utente se eseguite come amministratore** , quindi riavviare Visual Studio.
 
 ## <a name="automatic-extension-updates"></a>Aggiornamenti automatici delle estensioni
 
@@ -67,7 +62,7 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 - Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Estensioni e aggiornamenti**.
 
 > [!NOTE]
-> A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
+> A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti > Opzioni > Ambiente > Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
 
 ## <a name="extension-crashunresponsiveness-notifications"></a>Notifiche di arresto anomalo o blocco di un'estensione
 
@@ -114,11 +109,11 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installazione senza usare la finestra di dialogo Estensioni e Aggiornamenti
 
-Le estensioni che sono state incluse in file con estensione vsix possono essere disponibili in posizioni diverse da Visual Studio Marketplace. Benché la finestra di dialogo **Estensioni e aggiornamenti** non permetta di individuare questi file, è possibile installare un file VSIX facendovi doppio clic sopra oppure selezionandolo e quindi premendo INVIO. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. Benché la finestra di dialogo **Estensioni e aggiornamenti** non permetta di individuare questi file, è possibile installare un file con estensione *vsix* facendovi doppio clic sopra oppure selezionandolo e quindi premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Tipi di estensione non supportati dalla finestra di dialogo Estensioni e aggiornamenti
 
 Visual Studio continua a supportare le estensioni installate da Microsoft Installer (MSI) ma non tramite la finestra di dialogo **Estensioni e aggiornamenti** senza modifica.
 
 > [!TIP]
-> Se un'estensione basata su MSI include un file extension.vsixmanifest, tale estensione verrà visualizzata nella finestra di dialogo **Estensioni e aggiornamenti** .
+> Se un'estensione basata su MSI include un file *extension.vsixmanifest*, tale estensione verrà visualizzata nella finestra di dialogo **Estensioni e aggiornamenti**.

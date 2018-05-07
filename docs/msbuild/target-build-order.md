@@ -2,25 +2,21 @@
 title: Ordine di compilazione delle destinazioni | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 18
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. È possibile usare questi attributi per specificare l'ordine in cui vengono eseguite le destinazioni:  
@@ -114,6 +110,8 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 2.  Vengono eseguite le destinazioni specificate nella riga di comando dall'opzione **/target**. Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.  
   
 3.  Viene valutato l'attributo `Condition` della destinazione. Se l'attributo `Condition` è presente e restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione.
+
+    Le destinazioni che elencano la destinazione condizionale in `BeforeTargets` o `AfterTargets` vengono ancora eseguite nell'ordine prescritto
   
 4.  Prima che venga eseguita una destinazione, ne vengono eseguite le destinazioni `DependsOnTargets`.  
   

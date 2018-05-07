@@ -1,12 +1,8 @@
 ---
-title: 'Procedura dettagliata: data binding nella finestra di progettazione XAML | Microsoft Docs'
-ms.custom: 
+title: Eseguire il binding ai dati nella finestra di progettazione XAML
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
 dev_langs:
@@ -14,16 +10,16 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ef8826fd01c0eec45f2daea5900c5e440a5cebb0
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Procedura dettagliata: data binding nella finestra di progettazione XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
 Nella finestra di progettazione XAML è possibile impostare le proprietà di data binding mediante la tavola da disegno e la finestra Proprietà. Questa procedura dettagliata illustra come associare dati a un controllo. In particolare, la procedura dettagliata illustra come creare una classe di carrello semplice con una classe [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominata `ItemCount` e associare la proprietà `ItemCount` alla proprietà **Text** di un controllo [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
@@ -103,5 +99,5 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Finestra di dialogo Aggiungi convertitore di valori](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Creare un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Finestra di dialogo Aggiungi convertitore di valori](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

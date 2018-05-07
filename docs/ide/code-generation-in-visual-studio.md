@@ -1,25 +1,25 @@
 ---
-title: "Funzionalità di generazione del codice in Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Funzionalità di generazione del codice in Visual Studio | Microsoft Docs
 ms.date: 01/11/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c9c370a0ac169abe68da44d3c2e0438f9fbf15a5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funzionalità di generazione del codice in Visual Studio
 
 Visual Studio offre supporto in numerosi modi per generare e correggere il codice, nonché eseguirne il refactoring.
+
+## <a name="features"></a>Funzionalità
 
 - È possibile usare [frammenti di codice](../ide/code-snippets.md) per inserire un modello, ad esempio un blocco [switch](/dotnet/csharp/language-reference/keywords/switch) o una dichiarazione [enum](/dotnet/csharp/language-reference/keywords/enum).
 
@@ -32,7 +32,7 @@ Visual Studio offre supporto in numerosi modi per generare e correggere il codic
 
 ## <a name="see-also"></a>Vedere anche
 
-[Frammenti di codice](../ide/code-snippets.md)  
-[Azioni rapide](../ide/quick-actions.md)  
-[Refactoring](../ide/refactoring-in-visual-studio.md)  
-[Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)
+- [Frammenti di codice](../ide/code-snippets.md)
+- [Azioni rapide](../ide/quick-actions.md)
+- [Refactoring](../ide/refactoring-in-visual-studio.md)
+- [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)

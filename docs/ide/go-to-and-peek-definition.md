@@ -1,12 +1,9 @@
 ---
 title: Visualizzazione delle definizioni dei tipi in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
 - go to definition
@@ -15,36 +12,36 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 61428294fc9c4afa32a50b4776f03ce1e98b83b9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
-Gli sviluppatori devono spesso visualizzare le definizioni del codice sorgente per i tipi o i membri di classe che usano nel codice. In Visual Studio, le funzionalità Vai a definizione e Visualizza definizione consentono di visualizzare facilmente la definizione di un tipo o di un membro. Se il codice sorgente non è disponibile, vengono invece visualizzati i metadati.
+Gli sviluppatori devono spesso visualizzare le definizioni del codice sorgente per i tipi o i membri di classe che usano nel codice. In Visual Studio, le funzionalità **Vai a definizione** e **Visualizza definizione** consentono di visualizzare facilmente la definizione di un tipo o di un membro. Se il codice sorgente non è disponibile, vengono invece visualizzati i metadati.
 
 ## <a name="go-to-definition"></a>Vai a definizione
 
-La funzionalità Vai a definizione consente di passare al sorgente di un tipo o di un membro e di aprire il risultato in una nuova scheda. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del simbolo e premere **F12**. Se si preferisce usare il mouse, scegliere **Vai a definizione** dal menu di scelta rapida o usare la funzionalità **CTRL+clic** descritta nella sezione seguente.
+La funzionalità **Vai a definizione** consente di passare al sorgente di un tipo o di un membro e di aprire il risultato in una nuova scheda. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del simbolo e premere **F12**. Se si preferisce usare il mouse, scegliere **Vai a definizione** dal menu di scelta rapida o usare la funzionalità **CTRL+clic** descritta nella sezione seguente.
 
 ### <a name="ctrl-click-go-to-definition"></a>Vai a definizione con Ctrl+clic
 
-In Visual Studio 2017 versione 15.4, per gli utenti che preferiscono il mouse è più facile accedere rapidamente alla funzionalità Vai a definizione. Quando si preme **Ctrl** e si passa il puntatore del mouse su un tipo o su un membro, è possibile fare clic sui simboli. Per passare rapidamente alla definizione di un simbolo, premere **Ctrl** e quindi fare clic sul simbolo. È facile!
+In Visual Studio 2017 versione 15.4, per gli utenti che preferiscono il mouse è più facile accedere rapidamente alla funzionalità **Vai a definizione**. Quando si preme **Ctrl** e si passa il puntatore del mouse su un tipo o su un membro, è possibile fare clic sui simboli. Per passare rapidamente alla definizione di un simbolo, premere **Ctrl** e quindi fare clic sul simbolo. È facile!
 
 ![Animazione di Vai a definizione con un clic del mouse](../ide/media/click_gotodef.gif)
 
-È possibile cambiare il tasto di modifica per la funzionalità **Vai a definizione** con clic del mouse da **Strumenti**, **Opzioni**, **Editor di testo**, **Generale**. Selezionare quindi **Alt** o **Ctrl + Alt** dall'elenco a discesa **Usa tasto di modifica**. È anche possibile disabilitare la funzionalità **Vai a definizione** con clic del mouse deselezionando la casella di controllo **Abilita clic del mouse per eseguire Vai a definizione**.
+È possibile cambiare il tasto di modifica per la funzionalità **Vai a definizione** con clic del mouse da **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**. Selezionare quindi **ALT** o **CTRL + ALT** dall'elenco a discesa **Usa tasto di modifica**. È anche possibile disabilitare la funzionalità **Vai a definizione** con clic del mouse deselezionando la casella di controllo **Abilita clic del mouse per eseguire Vai a definizione**.
 
 ![Abilitazione del clic del mouse per Vai a definizione](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>Visualizza definizione
 
-La funzionalità Visualizza definizione consente di visualizzare in anteprima la definizione di un tipo senza abbandonare la posizione corrente nell'editor. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo o del membro e premere **Alt+F12**. Se si preferisce usare il mouse, è possibile selezionare **Visualizza definizione** dal menu di scelta rapida. In Visual Studio 2017 15.4 e versioni successive è disponibile un nuovo modo per visualizzare in anteprima una definizione tramite il mouse. Prima, passare a **Strumenti**, **Opzioni**, **Editor di testo**, **Generale**. Selezionare l'opzione **Apri definizione in visualizzazione rapida** e fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
+La funzionalità **Visualizza definizione** consente di visualizzare in anteprima la definizione di un tipo senza abbandonare la posizione corrente nell'editor. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo o del membro e premere **Alt+F12**. Se si preferisce usare il mouse, è possibile selezionare **Visualizza definizione** dal menu di scelta rapida. In Visual Studio 2017 15.4 e versioni successive è disponibile un nuovo modo per visualizzare in anteprima una definizione tramite il mouse. Per prima cosa, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**. Selezionare l'opzione **Apri definizione in visualizzazione rapida** e fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
 
 ![Impostazione dell'opzione Visualizza definizione con clic del mouse](../ide/media/editor_options_peek_view.png)
 
@@ -54,11 +51,11 @@ Premere quindi **Ctrl** (o il tasto di modifica selezionato in **Opzioni**) e fa
 
 Se viene visualizzata una definizione diversa da quella della finestra popup, è possibile seguire un percorso di navigazione usando i cerchi e le frecce visualizzati sopra la finestra popup.
 
-Per altre informazioni, vedere [How to: View and Edit Code by Using Peek Definition (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) (Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (Alt+F12).
+Per altre informazioni, vedere [How to: View and edit Code by using Peek Definition (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) (Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (ALT+F12)).
 
 ## <a name="view-metadata-as-source-code-c"></a>Visualizzare i metadati come codice sorgente (C#)
 
-Quando si visualizza la definizione di tipi o membri C# per i quali il codice sorgente non è disponibile, vengono invece visualizzati i relativi metadati. È possibile visualizzare le dichiarazioni di tipi e membri, ma non la relativa implementazione.
+Quando si visualizza la definizione di tipi o membri C# per i quali il codice sorgente non è disponibile, vengono visualizzati i relativi metadati. È possibile visualizzare le dichiarazioni di tipi e membri, ma non la relativa implementazione.
 
 Quando si esegue il comando **Vai a definizione** o **Visualizza definizione** per un elemento il cui codice sorgente non è disponibile, nell'editor del codice viene visualizzato un documento a schede che contiene una visualizzazione dei metadati dell'elemento visualizzati come codice sorgente. Il nome del tipo, seguito da **[da metadati]**, viene visualizzato nella scheda del documento.
 
@@ -71,7 +68,7 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualizzare le definizioni del codice sorgente decompilato invece dei metadati (C#)
 
-Una novità di **Visual Studio 2017 versione 15.6** consente di impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Espandere quindi **Editor di testo** > **C#** > **Avanzate** e selezionare **Enable navigation to decompiled sources** (Abilita navigazione a origini decompilate).
+Una novità di Visual Studio 2017 versione 15.6 consente di impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Espandere quindi **Editor di testo** > **C#** > **Avanzate** e selezionare **Enable navigation to decompiled sources** (Abilita navigazione a origini decompilate).
 
 ![Visualizzazione di una definizione decompilata](media/go-to-definition-decompiled-sources.png)
 
@@ -80,5 +77,6 @@ Una novità di **Visual Studio 2017 versione 15.6** consente di impostare un'opz
 
 ## <a name="see-also"></a>Vedere anche
 
-[Spostarsi all'interno del codice](../ide/navigating-code.md)
+[Esplorazione del codice](../ide/navigating-code.md)
+
 [Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,22 +1,23 @@
 ---
-title: Introduzione a C++ in Visual Studio | Microsoft Docs
+title: Introduzione a C++ in Visual Studio
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -32,7 +33,7 @@ Per seguire la procedura, è necessaria una copia della versione 15.3 o successi
 
 Se non è ancora stato avviato, avviare Visual Studio.
 
-![IDE con Visual C# 43; &#43; impostazioni applicate](../ide/media/get-started-cpp-ide-layout.png "IDE con Visual C# 43; &#43; impostazioni applicate")
+![IDE con Visual C# 43; & #43; impostazioni applicate](../ide/media/get-started-cpp-ide-layout.png "IDE con Visual C# 43; & #43; impostazioni applicate")
 
 Dopo aver aperto Visual Studio, saranno visibili le tre parti fondamentali dell'IDE, vale a dire le finestre degli strumenti, i menu e le barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di **Avvio veloce**, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Al centro della finestra si trova la **Pagina iniziale**. Quando si apre una soluzione o un progetto, in questo spazio verranno visualizzati gli editor e le finestre di progettazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
@@ -52,7 +53,7 @@ Visual Studia usa i *progetti* per organizzare il codice per un'applicazione e l
 
 1. Scegliere il pulsante **OK** per creare il progetto e la soluzione dell'applicazione.
 
-   Il progetto e la soluzione HelloApp, con i file di base per un progetto console Windows, verranno creati e caricati automaticamente in **Esplora soluzioni**. Il file HelloApp.cpp si aprirà nell'editor del codice. In **Esplora soluzioni**vengono visualizzati gli elementi riportati di seguito.
+   Il progetto e la soluzione HelloApp, con i file di base per un progetto console Windows, verranno creati e caricati automaticamente in **Esplora soluzioni**. Il file *HelloApp.cpp* si aprirà nell'editor del codice. In **Esplora soluzioni**vengono visualizzati gli elementi riportati di seguito.
 
    ![File per la soluzione in Esplora soluzioni](../ide/media/get-started-cpp-solution-explorer.png "File per la soluzione in Esplora soluzioni")
 
@@ -62,7 +63,7 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
 ### <a name="to-edit-code-in-the-editor"></a>Per scrivere codice nell'editor
 
-1. Nel file HelloApp.cpp, inserire una riga vuota prima della riga `return 0;` e quindi immettere il codice:
+1. Nel file *HelloApp.cpp*, inserire una riga vuota prima della riga `return 0;` e quindi immettere il codice:
 
    ```cpp
    cout << "Hello\n";
@@ -76,9 +77,9 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
    ![Errore nella finestra Elenco errori](../ide/media/get-started-cpp-error-list.png "Errore nella finestra Elenco errori")
 
-   Nel codice manca una dichiarazione per [std::cout](/cpp/standard-library/iostream), che si trova nel file di intestazione \<iostream>.
+   Nel codice manca una dichiarazione per [std::cout](/cpp/standard-library/iostream), che si trova nel file di intestazione *\<iostream>*.
 
-1. Per includere l'intestazione iostream, immettere il codice dopo `#include "stdafx.h"`:
+1. Per includere l'intestazione *iostream*, immettere il codice dopo `#include "stdafx.h"`:
 
    ```cpp
    #include <iostream>
@@ -105,11 +106,11 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
 ### <a name="to-debug-the-app"></a>Per eseguire il debug dell'app
 
-1. Nella barra dei menu scegliere **Debug > Avvia debug** per avviare il debug.
+Nella barra dei menu scegliere **Debug > Avvia debug** per avviare il debug.
 
-   ![Avviare il comando debug dal menu Debug](../ide/media/get-started-cpp-start-debugging-menu.png "Avviare il comando debug dal menu Debug")
+![Avviare il comando debug dal menu Debug](../ide/media/get-started-cpp-start-debugging-menu.png "Avviare il comando debug dal menu Debug")
 
-   Il debugger viene avviato e viene eseguito il codice. La finestra della console (una finestra separata simile a un prompt dei comandi) viene visualizzata per pochi secondi, ma si chiude rapidamente quando il debugger si arresta. Per visualizzare il testo, è necessario impostare un punto di interruzione per arrestare l'esecuzione del programma.
+Il debugger viene avviato e viene eseguito il codice. La finestra della console (una finestra separata simile a un prompt dei comandi) viene visualizzata per pochi secondi, ma si chiude rapidamente quando il debugger si arresta. Per visualizzare il testo, è necessario impostare un punto di interruzione per arrestare l'esecuzione del programma.
 
 ### <a name="to-add-a-breakpoint"></a>Per aggiungere un punto di interruzione
 
@@ -153,8 +154,8 @@ La guida introduttiva è stata completata. Per esaminare altri esempi, vedere [V
 
 ## <a name="see-also"></a>Vedere anche
 
-[Uso dell'IDE di Visual Studio per lo sviluppo di applicazioni desktop C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Procedura dettagliata: creare un'applicazione semplice con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Suggerimenti relativi alla produttività per Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
-[Esempi di Visual Studio](../ide/visual-studio-samples.md)  
-[Introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+- [Uso dell'IDE di Visual Studio per lo sviluppo di applicazioni desktop C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [Procedura dettagliata: creare un'applicazione semplice con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Suggerimenti relativi alla produttività per Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Esempi di Visual Studio](../ide/visual-studio-samples.md)
+- [Introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)

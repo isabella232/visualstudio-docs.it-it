@@ -1,36 +1,34 @@
 ---
-title: 'Procedura: Gestire le finestre dell''editor | Microsoft Docs'
-ms.custom: 
+title: "Procedura: Gestire le finestre dell'editor | Microsoft Docs"
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bd9d2d458c671fc590326989026aa776795243a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-manage-editor-windows"></a>Procedura: gestire le finestre dell'editor
+# <a name="how-to-manage-editor-windows"></a>Procedura: Gestire le finestre dell'editor
 È possibile lavorare sul codice in diverse posizioni contemporaneamente. A tale scopo, suddividere una finestra dell'editor o aprire più istanze delle finestre dell'editor.  
   
 > [!NOTE]
 >  Non tutte le finestre di editor supportano più istanze.  
   
-## <a name="splitting-an-editor-window"></a>Suddivisione di una finestra dell'editor  
+## <a name="split-an-editor-window"></a>Suddividere una finestra dell'editor  
  Per semplificare la modifica è possibile suddividere una finestra dell'editor in due visualizzazioni separate.  
   
 #### <a name="to-split-a-pane"></a>Per suddividere un riquadro  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Dal menu **Finestra** selezionare **Rimuovi divisione**.  
   
-## <a name="creating-new-windows"></a>Creazione di nuove finestre  
+## <a name="create-new-windows"></a>Creare nuove finestre  
  È anche possibile creare più istanze di una finestra dell'editor. Questa funzionalità consente di aprire un documento di grandi dimensioni in più istanze di un editor in modo che sia possibile visualizzare e modificare diverse sezioni contemporaneamente in finestre dell'editor a schermo intero separate.  
   
 #### <a name="to-create-a-new-window"></a>Per creare una nuova finestra  
@@ -58,6 +56,6 @@ ms.lasthandoff: 12/22/2017
      Viene aggiunta una nuova istanza a schede dell'editor.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Customizing the Editor](../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  
- [Scrittura di codice](../ide/writing-code-in-the-code-and-text-editor.md)   
+ [Personalizzare l'editor](../ide/customizing-the-editor.md)   
+ [Scrivi codice](../ide/writing-code-in-the-code-and-text-editor.md)   
  [Personalizzazione del layout delle finestre](../ide/customizing-window-layouts-in-visual-studio.md)

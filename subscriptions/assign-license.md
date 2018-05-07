@@ -9,11 +9,11 @@ description: Informazioni su come gli amministratori possono assegnare licenze a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Assegnazione di licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -32,11 +32,13 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
 
     Se l'organizzazione ha un indirizzo di posta elettronica diverso per ricevere gli email rispetto a quello da utilizzare per l'accesso, l'utente ha la possibilità di indicarlo qui. Selezionare il collegamento ipertestuale che indica "L'indirizzo di posta elettronica per le comunicazioni è diverso da quello per l'accesso?". 
 
-    Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di controllo Download. Se si sceglie di deselezionare questa casella, l'utente non avrà accesso ai download del software, ma potrà comunque accedere a tutti gli altri vantaggi inclusi nella sottoscrizione. Al termine, fare clic su **Aggiungi**.
+    **Accesso ai download:**  
+    Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di controllo Download. Se si sceglie di deselezionare questa casella, l'utente non avrà accesso ai download del software, ma potrà comunque accedere a tutti gli altri vantaggi inclusi nella sottoscrizione. 
+    
+    Dopo aver scelto le opzioni per il sottoscrittore, fare clic su **Aggiungi**.
 
-    ![Immettere le informazioni sul sottoscrittore](_img\assign-license-add\add-subscriber-1.png)
-
-    ![Immettere le informazioni sul sottoscrittore](_img\assign-license-add\add-subscriber-2.png)
+    ![Immettere le informazioni relative al sottoscrittore](_img\assign-license-add\add-subscriber-1.png)
+    ![Immettere le informazioni relative al sottoscrittore](_img\assign-license-add\add-subscriber-2.png)
 
 4.  Dopo aver aggiunto il sottoscrittore, viene inviato automaticamente al nuovo sottoscrittore un messaggio di posta elettronica di assegnazione, con altre istruzioni. È possibile inviare nuovamente il messaggio di posta elettronica di assegnazione in qualunque momento selezionando il sottoscrittore e facendo clic sul pulsante **Invia di nuovo** nel menu superiore.
 
@@ -55,9 +57,7 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
 **Per garantire un caricamento senza errori, osservare le procedure consigliate seguenti:**
     - Verificare che nessuno dei campi modulo contenga virgole.
     - Rimuovere gli spazi prima e dopo i campi del modulo, ad esempio i nomi degli utenti.
-    - Assicurarsi che i nomi degli utenti non contengano spazi aggiuntivi tra i nomi e cognomi composti da due parti (ad esempio il nome composto "Maria Giovanna" non deve essere digitato come "Maria  Giovanna" perché il sistema non annullerà lo spazio aggiuntivo)
-
-    ![Modello di aggiunta in blocco](_img\assign-license-add\bulk-template.png)
+    - Assicurarsi che i nomi degli utenti non contengano spazi aggiuntivi tra i nomi e cognomi composti da due parti (ad esempio il nome composto "Maria Giovanna" non deve essere digitato come "Maria  Giovanna" perché il sistema non annullerà lo spazio aggiuntivo) ![Modello Aggiungi in blocco](_img\assign-license-add\bulk-template.png)
 
 4.  Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Upload Multiple Subscribers (Carica più sottoscrittori), fare clic su **Sfoglia**. Andare al file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo. 
 

@@ -1,25 +1,21 @@
 ---
 title: Introduzione al debug in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Introduzione al debug in Visual Studio
 Visual Studio offre un set integrato di strumenti efficaci per il debug e la compilazione dei progetti. Questo argomento spiega come iniziare a usare il set di base delle funzionalità dell'interfaccia utente di debug.  
@@ -49,7 +45,7 @@ Il modo più semplice per compilare il progetto è premere **F7**, ma è anche p
 
  ![Elenco errori in Output di Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- Fare clic sulla riga di errore nella finestra **Elenco errori** per passare alla riga in cui si è verificato l'errore. In alternativa, attivare i numeri di riga facendo clic sulla barra **Avvio veloce** in alto a destra, digitando "numeri di riga" al suo interno e premendo INVIO. Questo è il modo più rapido per passare alla voce della finestra **Opzioni** in cui è possibile attivare i numeri di riga. Per risparmiare tempo, è consigliabile imparare a usare la barra **Avvio veloce**.  
+ Fare clic sulla riga di errore nella finestra **Elenco errori** per passare alla riga in cui si è verificato l'errore. In alternativa, attivare i numeri di riga facendo clic sulla barra **Avvio veloce** in alto a destra, digitando "numeri di riga" al suo interno e premendo **INVIO**. Questo è il modo più rapido per passare alla voce della finestra **Opzioni** in cui è possibile attivare i numeri di riga. Per risparmiare tempo, è consigliabile imparare a usare la barra **Avvio veloce**.  
 
  ![Editor di Visual Studio con numeri di riga](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -132,7 +128,7 @@ Il modo più semplice per compilare il progetto è premere **F7**, ma è anche p
 
  Passare il mouse su una variabile per visualizzare i valori e i riferimenti attualmente contenuti. Se viene visualizzato un valore non previsto, è probabile che ci sia un bug nelle righe di codice precedenti o chiamate.  Per i dettagli, [leggere altre informazioni ](../debugger/getting-started-with-the-debugger.md) sull'uso del debugger.
 
- Visual Studio visualizza anche la finestra Strumenti di diagnostica, in cui è possibile osservare l'utilizzo della memoria e della CPU dell'app nel corso del tempo. Durante lo sviluppo dell'app, è possibile usare questi strumenti per individuare l'utilizzo intenso della CPU imprevisto o l'allocazione della memoria. Usare contemporaneamente anche la finestra **Espressione di controllo** e i punti di interruzione per determinare la causa di questo utilizzo intenso imprevisto o del mancato rilascio delle risorse.  Per altre informazioni, vedere [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md).
+ Visual Studio visualizza anche la finestra **Strumenti di diagnostica**, in cui è possibile osservare l'utilizzo della memoria e della CPU dell'app nel corso del tempo. Durante lo sviluppo dell'app, è possibile usare questi strumenti per individuare l'utilizzo intenso della CPU imprevisto o l'allocazione della memoria. Usare contemporaneamente anche la finestra **Espressione di controllo** e i punti di interruzione per determinare la causa di questo utilizzo intenso imprevisto o del mancato rilascio delle risorse.  Per altre informazioni, vedere [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md).
 
 ### <a name="run-unit-tests"></a>Eseguire unit test  
  Gli unit test sono il primo elemento di difesa da bug nel codice perché, se eseguiti correttamente, testano una singola "unità" di codice, in genere una singola funzione. Anche eseguire il debug di una singola unità piuttosto che dell'intero programma risulta più semplice. Visual Studio installa i framework degli unit test di Microsoft sia per il codice gestito e che per quello nativo. Usare un framework di testing unità per creare unit test, eseguirli e riportare i risultati dei test. Eseguire nuovamente gli unit test quando si apportano modifiche per verificare che il codice funzioni ancora correttamente. Quando si usa Visual Studio Enterprise, è possibile eseguire automaticamente i test dopo ogni compilazione.  

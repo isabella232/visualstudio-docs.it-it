@@ -1,20 +1,20 @@
 ---
 title: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico in Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
@@ -36,7 +36,7 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
 -   Impostazione di esecuzione test Server Web aziendale di gestione temporanea: il parametro di contesto denominato WebServer1=http://CorporateStagingWebServer
 
--   Impostazione di esecuzione test Server Web aziendale di produzione: il parametro di contesto denominato WebServer1=http://CorporateProductionWebServer
+-   Impostazione di esecuzione test Server Web di produzione aziendale: il parametro di contesto denominato WebServer1=http://CorporateProductionWebServer
 
  **Modifica dell'impostazione di esecuzione test dalla riga di comando**
 
@@ -62,9 +62,9 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
      Se le impostazioni esecuzione test già contengono una cartella **Parametri di contesto**, è possibile fare clic con il pulsante destro del mouse sulla cartella e scegliere **Aggiungi parametro di contesto**.
 
-4.  Nella finestra Proprietà modificare il valore di **Nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra Proprietà, modificare **Valore** nel parametro che si vuole usare, ad esempio http://CorporateStagingWebServer.
+4.  Nella finestra Proprietà modificare il valore di **Nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra Proprietà modificare **Valore** nel parametro che si vuole usare, ad esempio http://CorporateStagingWebServer).
 
-5.  (Facoltativo) Ripetere i passaggi da 3 a 5 e utilizzare una stringa diversa per la proprietà **Valore**, ad esempio http://CorporateProductionWebServer.
+5.  (Facoltativo) Ripetere i passaggi da 3 a 5 e usare una stringa diversa per la proprietà **Valore**, ad esempio, http://CorporateProductionWebServer).
 
 6.  Scegliere quali impostazioni esecuzione test devono essere attive. Aprire il menu di scelta rapida nelle impostazioni esecuzione test e scegliere **Imposta come attivo**.
 

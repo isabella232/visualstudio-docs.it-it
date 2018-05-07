@@ -1,24 +1,22 @@
 ---
 title: Aggiungere parametri dei nomi ai modelli di progetti ed elementi in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ecdd277a36cb1c074653edb2af7f1882e6d25ede
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
 
@@ -36,7 +34,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
     namespace $safeprojectname$
     ```
 
-1. Nel file con estensione vstemplate del modello individuare l'elemento `ProjectItem` che include il file.
+1. Nel file con estensione *vstemplate* del modello individuare l'elemento `ProjectItem` che include il file.
 
 1. Impostare l'attributo `ReplaceParameters` su `true` per l'elemento `ProjectItem`:
 
@@ -46,7 +44,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)  
-[Parametri di modelli](../ide/template-parameters.md)  
-[Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
+[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
+[Parametri di modello](../ide/template-parameters.md)  
+[Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
 [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

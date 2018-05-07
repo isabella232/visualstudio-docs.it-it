@@ -1,23 +1,20 @@
 ---
 title: Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1e20081320109e5334360d0cc1f38b187f05d574
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -34,7 +31,7 @@ Vedere dove e come vengono usate le singole parti di codice nella soluzione:
 
 ![CodeLens &#45; Contattare il proprio team](../ide/media/codelensovervew2.png "CodeLensOvervew2")  
 
-Per scegliere gli indicatori da visualizzare o per abilitare o disabilitare CodeLens, passare a **Strumenti**, **Opzioni**, **Editor di testo**, **Tutti i linguaggi**, **CodeLens**.  
+Per scegliere gli indicatori da visualizzare o per abilitare o disabilitare CodeLens, passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens**.  
 
 ## <a name="FindReferences"></a> Individuare i riferimenti del codice
 
@@ -44,7 +41,7 @@ Sono necessari:
 
 -  Codice C# o Visual Basic
 
-Scegliere l'indicatore dei **riferimenti** (**Alt + 2**). Se i **riferimenti sono pari a 0**, non sono disponibili riferimenti da codice C# o Visual Basic. Questo non include riferimenti da altri elementi, ad esempio file XAML e ASPX.
+Scegliere l'indicatore dei **riferimenti** (**Alt + 2**). Se i **riferimenti sono pari a 0**, non sono disponibili riferimenti da codice C# o Visual Basic. Questo non include riferimenti da altri elementi, ad esempio file con estensione **xaml** e **aspx**.
 
 ![CodeLens &#45; Scegliere l'indicatore dei riferimenti](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -94,7 +91,7 @@ Per visualizzare una cronologia dettagliata di tutte le modifiche, comprese quel
 
 ![Visualizzare tutte le modifiche apportate al codice](../ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
 
-Verrà visualizzata la finestra Cronologia per i set di modifiche.  
+Verrà visualizzata la finestra **Cronologia** per i set di modifiche.  
 
 ![Finestra Cronologia per tutte le modifiche al codice](../ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
 
@@ -191,7 +188,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 ##  <a name="FindRunUnitTests"></a> Trovare unit test per il codice
 
-Informazioni sugli unit test disponibili per il proprio codice senza la necessità di aprire Test Explorer. Sono necessari:  
+Informazioni sugli unit test disponibili per il proprio codice senza la necessità di aprire **Test Explorer**. Sono necessari:  
 
 -   Visual Studio Enterprise e Visual Studio Professional  
   
@@ -209,7 +206,7 @@ Informazioni sugli unit test disponibili per il proprio codice senza la necessit
   
      ![CodeLens &#45; Visualizzare gli unit test non ancora in esecuzione](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
-4.  Per esaminare la definizione di un test, fare doppio clic sull'elemento di test nella finestra dell’indicatore CodeLens per aprire il file di codice nell'editor.  
+4.  Per esaminare la definizione di un test, fare doppio clic sull'elemento di test nella finestra dell'indicatore CodeLens per aprire il file di codice nell'editor.  
   
      ![CodeLens &#45; Passare alla definizione di unit test](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
@@ -223,13 +220,13 @@ Informazioni sugli unit test disponibili per il proprio codice senza la necessit
 
 ###  <a name="ChangeOrTurnOff"></a> D: Come si attiva o disattiva CodeLens o si scelgono gli indicatori da visualizzare?
 
-**R:**  È possibile attivare o disattivare tutti gli indicatori, ad eccezione di Riferimenti. Passare a **Strumenti**, **Opzioni**, **Editor di testo**, **Tutti i linguaggi**, **CodeLens**.  
+**R:**  È possibile attivare o disattivare tutti gli indicatori, ad eccezione di Riferimenti. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**  >  **CodeLens**.  
   
  Quando gli indicatori sono attivati, è possibile anche aprire le opzioni CodeLens dagli indicatori.  
   
  ![CodeLens &#45; Attivare o disattivare gli indicatori](../ide/media/codelensturnoffonindicatorsfromcode.png "CodeLensTurnOffOnIndicatorsFromCode")  
   
- Attivare gli indicatori CodeLens a livello di file e disattivare l’utilizzo delle icone con la freccia di espansione nella parte inferiore della finestra dell'editor.  
+ Attivare gli indicatori CodeLens a livello di file e disattivare l'utilizzo delle icone con la freccia di espansione nella parte inferiore della finestra dell'editor.  
   
  ![Attivare e disattivare gli indicatori a livello di file](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
@@ -265,7 +262,7 @@ CodeLens non supporta l'installazione di versioni di Lync o Skype diverse. Potre
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>D: Come si modifica il tipo di carattere e il colore per CodeLens?
 
-**R:** accedere a **Strumenti**, **Opzioni**, **Ambiente**, **Tipi di carattere e colori**.  
+**R:** passare a **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori**.  
 
 ![CodeLens &#45; Modificare le impostazioni di carattere e colore](../ide/media/codelensoptionsfontscolorssettings.png "CodeLensOptionsFontsColorsSettings")  
 
@@ -277,7 +274,7 @@ Per usare la tastiera:
 
 3.  Premere **Freccia GIÙ** da passare a **Tipi di carattere e colori**.  
 
-4.  Premere **TAB** per passare all'elenco **Mostra impostazioni per** , quindi premere **Freccia GIÙ** per selezionare **CodeLens**.  
+4.  Premere **TAB** per passare all'elenco **Mostra impostazioni per**, quindi premere **Freccia GIÙ** per selezionare **CodeLens**.  
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>D: È possibile spostare l'heads-up display CodeLens?
 

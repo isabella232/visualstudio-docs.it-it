@@ -1,16 +1,15 @@
 ---
-title: Abilitare la sottoscrizione per Visual Studio per Mac | Microsoft Docs
-description: "Questo articolo descrive come usare l'account Microsoft per abilitare la sottoscrizione e sbloccare le funzionalità di Visual Studio per Mac"
+title: Abilitare la sottoscrizione per Visual Studio per Mac
+description: Questo articolo descrive come usare l'account Microsoft per abilitare la sottoscrizione e sbloccare le funzionalità di Visual Studio per Mac
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9202229c1562c89e0ddd9852113d63dc85e0bcd2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="enable-subscription"></a>Abilitare la sottoscrizione
 
@@ -28,7 +27,7 @@ Per iniziare a usare una sottoscrizione, accedere a Visual Studio per Mac seguen
 
 Se la sottoscrizione è scaduta, sono disponibili due opzioni:
 
-1. Rinnovare l'abbonamento. È possibile rinnovare la sottoscrizione visitando il sito Web all'indirizzo [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
+1. Rinnovare l'abbonamento. È possibile rinnovare la sottoscrizione passando a [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
 
 2. Se è disponibile un altro account con una sottoscrizione attiva, è possibile aggiungerlo a Visual Studio per Mac come descritto in dettaglio nell'articolo [Aggiunta di più account utente](~/signing-in.md). Visual Studio per Mac rileverà la licenza migliore tra quelle degli account aggiunti. 
 

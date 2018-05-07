@@ -1,12 +1,10 @@
 ---
 title: Documenti, Ambiente, finestra di dialogo Opzioni | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -32,16 +30,16 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 49ac0d5aa5d621e7f6b833827057aeebba9a5181
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documenti, Ambiente, finestra di dialogo Opzioni
 Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei documenti nell'ambiente di sviluppo integrato (IDE) e gestire le modifiche esterne apportate a documenti e file. Per accedere a questa finestra di dialogo fare clic su **Opzioni** dal menu **Strumenti** e selezionare **Documenti** nel nodo **Ambiente**. Se l'opzione **Documenti** non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  
@@ -78,7 +76,7 @@ Usare la finestra di dialogo **Opzioni** per controllare la visualizzazione dei 
 > [!NOTE]
 >  Selezionare questa opzione per abilitare il comando **Visualizza nel browser** nel menu **File** per i documenti Web non inclusi nell'applicazione Web attiva.  
   
- **\<***n* **> elementi salvati nel progetto di file esterni**  
+ **\<** *n* **> elementi salvati nel progetto di file esterni**  
  Specifica il numero di file da salvare in modo permanente nella cartella **File esterni** di **Esplora soluzioni**. Questi file vengono elencati anche se non sono più aperti in un editor. È possibile specificare un numero intero qualsiasi compreso tra 0 e 256. Il numero predefinito è 0.  
   
  Ad esempio, se si imposta questa opzione su 5 e i file esterni aperti sono 10, quando si chiudono tutti i 10 file, i primi 5 verranno ancora visualizzati nella cartella **File esterni**.  

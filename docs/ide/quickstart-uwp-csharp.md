@@ -2,11 +2,8 @@
 title: 'Guida introduttiva: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C# | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/04/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -16,13 +13,13 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 7caba5278ec415aec036c501d4911bcd5c7f3c77
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Guida introduttiva: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C#35;
+# <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Guida introduttiva: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio verrà creata una semplice app "Hello World" eseguibile in qualsiasi dispositivo Windows 10. A tale scopo, verranno usati un modello di progetto della piattaforma UWP (Universal Windows Platform), Extensible Application Markup Language (XAML) e il linguaggio di programmazione C#.
 
@@ -30,13 +27,13 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ## <a name="create-a-project"></a>Creare un progetto
 
-Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal Windows Platform). Il tipo di progetto include fin dall'inizio tutti i file modello necessari.
+Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal Windows Platform). Il tipo di progetto include fin dall'inizio tutti i file di modello necessari.
 
 1. Aprire Visual Studio 2017.
 
 2. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
-3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **Universale di Windows**. Nel riquadro centrale scegliere **App vuota (Windows universale)**. Quindi assegnare al progetto il nome *HelloWorld* e scegliere **OK**.
+3. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **Universale di Windows**. Nel riquadro centrale scegliere **App vuota (Windows universale)**. Assegnare al progetto il nome *HelloWorld* e scegliere **OK**.
 
    ![Modello di progetto universale di Windows nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](../ide/media/new-project-csharp-uwp-helloworld.png)
 
@@ -48,26 +45,26 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
    ![Nella finestra di dialogo Nuovo progetto della piattaforma UWP (Universal Windows Platform) accettare le impostazioni predefinite per Versione di destinazione e Versione minima](../ide/media/new-uwp-project-target-minver-dialog.png)
 
   > [!NOTE]
-  > Se è la prima volta che si usa Visual Studio per creare app UWP, è possibile che venga visualizzata la finestra di dialogo **Impostazioni**. Scegliere **Developer mode** (Modalità sviluppatore) e quindi **Sì**.<br><br>
+  > Se è la prima volta che si usa Visual Studio per creare app UWP, è possibile che venga visualizzata la finestra di dialogo **Impostazioni**. Scegliere **Modalità sviluppatore** e **Sì**.<br><br>
  ![Abilitare la modalità sviluppatore nella finestra di dialogo Impostazioni della piattaforma UWP](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installa un pacchetto aggiuntivo di modalità sviluppatore per l'utente. Una volta completata l'installazione del pacchetto, chiudere la finestra di dialogo **Impostazioni**.
 
 ## <a name="create-the-application"></a>Creare l'applicazione
 
 A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un pulsante, verrà aggiunta un'azione al pulsante e l'app "Hello World" verrà avviata per visualizzarne l'aspetto.
 
-### <a name="add-a-button-to-the-design-canvas"></a>Aggiungere un pulsante nell'area di progettazione
+### <a name="add-a-button-to-the-design-canvas"></a>Aggiungere un pulsante all'area di progettazione
 
 1. In **Esplora soluzioni** fare doppio clic su **MainPage.xaml** per aprire una doppia visualizzazione.
 
   ![Aprire MainPage.xaml da Esplora soluzioni ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Sono disponibili due riquadri: **Finestra di progettazione XAML**, che include un'area di progettazione e **Editor XAML**, dove è possibile aggiungere o modificare il codice.    
+  Sono disponibili due riquadri: **Finestra di progettazione XAML**, che include un'area di progettazione, ed **Editor XAML**, dove è possibile aggiungere o modificare il codice.    
 
   ![Il riquadro Finestra di progettazione XAML dell'Editor XAML](../ide/media/uwp-xaml-editor.png)
 
 2. Scegliere **Casella degli strumenti** per aprire la finestra a comparsa della casella degli strumenti.
 
-  ![Fare clic su Casella degli strumenti per aprire la finestra a comparsa relativa](../ide/media/uwp-toolbox.png)
+  ![Fare clic su Casella degli strumenti per aprire la relativa finestra a comparsa](../ide/media/uwp-toolbox.png)
 
   Se l'opzione Casella degli strumenti non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **Visualizza** > **Barra degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
 
@@ -89,7 +86,7 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
    ![Modificare il valore di Button Content in Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Si noti che anche il pulsante nella finestra di progettazione XAML viene modificato.
+2. Anche il pulsante nella finestra di progettazione XAML viene modificato.
 
    ![Il pulsante diventa Hello World nell'area di progettazione](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -144,7 +141,7 @@ A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello Wo
 
  Il dispositivo Windows 10 pronuncerà le parole "Hello, World!"
 
-4. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, premere **Debug** > **Arresta debug** dalla barra degli strumenti, o scegliere **MAIUSC**+**F5**.
+4. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, scegliere **Debug** > **Arresta debug** dalla barra degli strumenti oppure premere **MAIUSC**+**F5**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

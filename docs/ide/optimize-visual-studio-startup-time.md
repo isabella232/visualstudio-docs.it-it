@@ -1,10 +1,7 @@
 ---
-title: Ottimizzare le prestazioni di Visual Studio | Microsoft Docs
+title: Migliorare il tempo di avvio di Visual Studio | Microsoft Docs
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -12,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 403bbfff74cfe969a26e12aeb1f4b54ef0473195
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="optimize-visual-studio-performance"></a>Ottimizzare le prestazioni di Visual Studio
+# <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 
 Visual Studio è progettato per essere avviato nel modo più rapido ed efficiente possibile. Tuttavia, alcune estensioni di Visual Studio e le finestre degli strumenti possono influenzare negativamente i tempi di avvio quando vengono caricate. È possibile controllare il comportamento delle estensioni e delle finestre degli strumenti lente nella finestra di dialogo **Gestisci prestazioni di Visual Studio**. Per suggerimenti generali su come migliorare le prestazioni, vedere [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
@@ -32,17 +29,17 @@ Visual Studio è progettato per essere avviato nel modo più rapido ed efficient
 
 Per evitare l'allungamento del tempo di avvio, Visual Studio 2017 carica le estensioni usando un approccio _su richiesta_. Con questo comportamento le estensioni non vengono aperte immediatamente dopo l'avvio di Visual Studio, ma all'occorrenza. Inoltre, poiché le finestre degli strumenti lasciate aperte in una sessione precedente di Visual Studio possono rallentare l'avvio, esse vengono aperte in un modo più intelligente per evitare di compromettere il tempo di avvio.
 
-Se Visual Studio rileva un avvio lento, viene visualizzato un messaggio popup che comunica quale estensione o finestra degli strumenti provoca il rallentamento. Il messaggio include un collegamento alla finestra di dialogo **Gestisci prestazioni di Visual Studio**. È possibile accedere a questa finestra di dialogo anche scegliendo **Guida**, **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
+Se Visual Studio rileva un avvio lento, viene visualizzato un messaggio popup che comunica quale estensione o finestra degli strumenti provoca il rallentamento. Il messaggio include un collegamento alla finestra di dialogo **Gestisci prestazioni di Visual Studio**. È possibile accedere a questa finestra di dialogo anche scegliendo **Guida** > **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
 
 ![Popup di Gestisci prestazioni di Visual Studio con il messaggio 'È stato notato che l'estensione ... rallenta Visual Studio'](../ide/media/vside_perfdialog_popup.png)
 
 La finestra di dialogo elenca le estensioni e le finestre degli strumenti che compromettono le prestazioni di avvio. È possibile modificare le impostazioni delle estensioni e delle finestre degli strumenti per migliorare le prestazioni di avvio.
 
-## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a>Per modificare le impostazioni delle estensioni per migliorare l'avvio, il caricamento della soluzione e le prestazioni di digitazione
+## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Per modificare le impostazioni delle estensioni per migliorare l'avvio, il caricamento della soluzione e le prestazioni di digitazione
 
-1. Aprire la finestra di dialogo **Gestisci prestazioni di Visual Studio** scegliendo **Guida**, **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
+1. Aprire la finestra di dialogo **Gestisci prestazioni di Visual Studio** scegliendo **Guida** > **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
 
-    Se un'estensione sta rallentando l'avvio di Visual Studio, il caricamento della soluzione o la digitazione, l'estensione viene visualizzata nella finestra di dialogo **Gestisci prestazioni di Visual Studio** quando si sceglie **Estensioni**, **Avvio** (oppure **Carico della soluzione** o **Digitazione**).
+    Se un'estensione sta rallentando l'avvio di Visual Studio, il caricamento della soluzione o la digitazione, l'estensione viene visualizzata nella finestra di dialogo **Gestisci prestazioni di Visual Studio** quando si sceglie **Estensioni** > **Avvio** (oppure **Carico della soluzione** o **Digitazione**).
 
     ![Gestisci prestazioni di Visual Studio - visualizzazione delle estensioni](../ide/media/vside_perfdialog_extensions.png)
 
@@ -50,11 +47,11 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 
 È sempre possibile riabilitare l'estensione per le sessioni future mediante il Gestore estensioni o la finestra di dialogo Gestisci prestazioni di Visual Studio.
 
-## <a name="to-change-tool-window-settings-to-improve-startup-time"></a>Per modificare le impostazioni delle finestre degli strumenti per migliorare i tempi di avvio
+## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Per modificare le impostazioni delle finestre degli strumenti per migliorare i tempi di avvio
 
-1. Aprire la finestra di dialogo **Gestisci prestazioni di Visual Studio** scegliendo **Guida**, **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
+1. Aprire la finestra di dialogo **Gestisci prestazioni di Visual Studio** scegliendo **Guida** > **Gestisci prestazioni di Visual Studio** dalla barra dei menu.
 
-    Se una finestra degli strumenti rallenta l'avvio di Visual Studio, la finestra viene visualizzata nella finestra di dialogo **Gestisci prestazioni di Visual Studio** quando si sceglie **Finestre degli strumenti**, **Avvio**.
+    Se una finestra degli strumenti rallenta l'avvio di Visual Studio, la finestra viene visualizzata nella finestra di dialogo **Gestisci prestazioni di Visual Studio** quando si sceglie **Finestre degli strumenti** > **Avvio**.
 
 2. Scegliere la finestra degli strumenti della quale si vuole modificare il comportamento.
 
@@ -73,4 +70,6 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Ottimizzare le prestazioni di Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Blog su Visual Studio - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Caricamento più rapido delle soluzioni con Visual Studio 2017 Versione 15.6)

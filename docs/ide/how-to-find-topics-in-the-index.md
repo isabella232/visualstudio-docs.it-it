@@ -1,12 +1,10 @@
 ---
 title: Usare l'indice del visualizzatore della Guida di Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,18 +13,18 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>Ricerca di argomenti tramite l'indice del visualizzatore della Guida
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Trovare argomenti tramite l'indice del visualizzatore della Guida
 L'indice contiene un elenco di parole chiave associate agli argomenti del contenuto installato. È possibile che a ogni argomento sia associata più di una parola chiave e che ogni parola chiave sia associata a più di un argomento. Usare questo indice nello stesso modo in cui si consulta l'indice di un libro.  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>Per trovare un argomento usando l'indice  

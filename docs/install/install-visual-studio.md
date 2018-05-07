@@ -3,11 +3,8 @@ title: Installare Visual Studio 2017 | Microsoft Docs
 description: Informazioni dettagliate sull'installazione di Visual Studio.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-visual-studio-2017"></a>Installare Visual Studio 2017
+
 In questo articolo viene presentato un nuovo modo per installare Visual Studio! Nella versione più recente è stata semplificata la procedura che consente di selezionare e installare solo le funzionalità necessarie. È anche stato ridotto il footprint minimo di Visual Studio in modo che possa essere installato più rapidamente, limitando l'impatto sul sistema.
 
 Per altre informazioni sulle novità in questa versione, vedere le [note sulla versione](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) Microsoft.
@@ -62,7 +60,7 @@ Scaricare quindi il file del programma di avvio automatico di Visual Studio. A t
 
 Eseguire quindi il file del programma di avvio automatico per installare il programma di installazione di Visual Studio. Questo nuovo programma di installazione semplificato include tutto ciò che occorre per installare e personalizzare Visual Studio 2017.
 
-1.  Dalla cartella **Download** fare doppio clic sul file del programma di avvio automatico corrispondente o simile a uno dei file seguenti:
+1. Dalla cartella **Download** fare doppio clic sul file del programma di avvio automatico corrispondente o simile a uno dei file seguenti:
 
   * **vs_enterprise.exe** per Visual Studio Enterprise
   * **vs_professional.exe** per Visual Studio Professional
@@ -70,7 +68,7 @@ Eseguire quindi il file del programma di avvio automatico per installare il prog
 
   Se si riceve una comunicazione di Controllo dell'account utente, fare clic su **Sì**.
 
-2.  Verrà richiesto di confermare le [Condizioni di licenza](https://www.visualstudio.com/license-terms/) e l'[Informativa sulla privacy](https://go.microsoft.com/fwlink/?LinkID=824704) di Microsoft. Scegliere **Continua**.  
+2. Verrà richiesto di confermare le [Condizioni di licenza](https://www.visualstudio.com/license-terms/) e l'[Informativa sulla privacy](https://go.microsoft.com/fwlink/?LinkID=824704) di Microsoft. Scegliere **Continua**.  
 
    ![Condizioni di licenza e informativa sulla privacy](media/vs2017-privacy-and-license-terms.PNG "Condizioni di licenza e informativa sulla privacy")
 
@@ -78,20 +76,20 @@ Eseguire quindi il file del programma di avvio automatico per installare il prog
 
 Dopo aver installato il programma di installazione, è possibile usarlo per personalizzare l'installazione selezionando i set di funzionalità o carichi di lavoro desiderati. Ecco come fare.
 
-1.  Individuare il carico di lavoro che si vuole installare nella schermata d'**installazione di Visual Studio**.
+1. Individuare il carico di lavoro che si vuole installare nella schermata d'**installazione di Visual Studio**.
 
  ![Selezionare un carico di lavoro dalla finestra di dialogo della configurazione di Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
      Scegliere ad esempio il carico di lavoro "Sviluppo per desktop .NET". Include l'editor principale predefinito che offre supporto di base per la modifica del codice per oltre 20 linguaggi, la possibilità di aprire e modificare il codice da qualsiasi cartella senza che sia necessario un progetto e il controllo del codice sorgente integrato.  
 
-2.  Dopo aver selezionato il carico di lavoro, fare clic su **Installa**.
+2. Dopo aver selezionato il carico di lavoro, fare clic su **Installa**.
 
     A questo punto si apriranno diverse schermate di stato in cui sarà visualizzato l'avanzamento dell'installazione di Visual Studio.
 
-3.  Dopo aver installato i carichi di lavoro e i componenti nuovi, fare clic su **Avvia**.  
+3. Dopo aver installato i carichi di lavoro e i componenti nuovi, fare clic su **Avvia**.  
 
 > [!TIP]
->  In qualsiasi momento dopo l'installazione, è possibile installare i carichi di lavoro o i componenti che non sono stati installati inizialmente. Se si ha Visual Studio aperto, passare a **Strumenti** > **Ottieni strumenti e funzionalità** che apre il programma di installazione di Visual Studio. In alternativa, aprire **il programma di installazione di Visual Studio** dal menu Start. Da qui, è possibile selezionare i carichi di lavoro o i componenti che si vogliono installare e fare clic su **Modifica**.  
+> In qualsiasi momento dopo l'installazione, è possibile installare i carichi di lavoro o i componenti che non sono stati installati inizialmente. Se si ha Visual Studio aperto, passare a **Strumenti** > **Ottieni strumenti e funzionalità** che apre il programma di installazione di Visual Studio. In alternativa, aprire **il programma di installazione di Visual Studio** dal menu Start. Da qui, è possibile selezionare i carichi di lavoro o i componenti che si vogliono installare e fare clic su **Modifica**.  
 
 |         |         |
 |---------|---------|
@@ -121,8 +119,8 @@ Per impostazione predefinita, alla prima esecuzione il programma di installazion
 
 Un altro modo per poter modificare la lingua predefinita consiste nell'eseguire il programma di installazione dalla riga di comando. Ad esempio, usare il comando seguente per forzare l'esecuzione in inglese del programma di installazione: `vs_installer.exe --locale en-US`. Il programma di installazione memorizza questa impostazione per l'esecuzione successiva. Il programma di installazione supporta i token delle lingue seguenti: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru e tr-tr.
 
-
 ## <a name="step-7---start-developing"></a>Passaggio 7: Iniziare a sviluppare
+
 1. Al termine dell'installazione di Visual Studio, fare clic sul pulsante **Avvia** per [iniziare a sviluppare con Visual Studio](../ide/get-started-developing-with-visual-studio.md).
 
 2. Fare clic su **File** e quindi su **Nuovo progetto**.
@@ -132,15 +130,18 @@ Un altro modo per poter modificare la lingua predefinita consiste nell'eseguire 
    Per [compilare un'app C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), fare clic su **Installati**, espandere **Visual C#** e selezionare il tipo di progetto C# che si vuole compilare.
 
 ## <a name="get-support"></a>Supporto
+
 Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni di supporto:
+
 * È possibile segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
 * È possibile condividere un suggerimento per il prodotto con Microsoft in [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* È possibile visualizzare lo stato dei problemi del prodotto nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/), dove è possibile creare domande e trovare risposte.
-* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).  Per questa opzione è necessario un account [GitHub](https://github.com/).
+* È possibile visualizzare lo stato dei problemi del prodotto e trovare una risposta nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+* È anche possibile comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio). Per questa opzione è necessario un account [GitHub](https://github.com/).
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Aggiornare Visual Studio 2017](update-visual-studio.md)
 * [Modificare Visual Studio 2017](modify-visual-studio.md)
 * [Disinstallare Visual Studio 2017](uninstall-visual-studio.md)

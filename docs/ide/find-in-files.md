@@ -1,12 +1,9 @@
 ---
-title: Cerca nei file | Microsoft Docs
-ms.custom: 
+title: Cerca nei file
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e1470868e207687a7b35f46724b80b0da0a0e71c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
@@ -37,7 +35,7 @@ Per visualizzare **Cerca nei file** nella finestra **Trova e sostituisci** è po
 
 ## <a name="to-display-find-in-files"></a>Per visualizzare Cerca nei file
 
-1. Nella barra dei menu scegliere **Modifica**, **Trova e sostituisci**.
+1. Nella barra dei menu scegliere **Modifica** > **Trova e sostituisci**.
 
 1. Scegliere **Cerca nei file**.
 
@@ -71,16 +69,20 @@ Specifica che la ricerca verrà eseguita nelle sottocartelle della cartella **Ce
 
 È possibile espandere o comprimere la sezione **Opzioni di ricerca**. È possibile selezionare o deselezionare le opzioni seguenti:
 
-Maiuscole/minuscole  
+**Maiuscole/minuscole**
+
 Se questa opzione è selezionata, in una ricerca impostata su **Risultati ricerca** viene applicata la distinzione tra maiuscole e minuscole
 
-Parola intera  
+**Parola intera**
+
 Se questa opzione è selezionata, la finestra **Risultati ricerca** restituirà solo corrispondenze di parole intere.
 
-Utilizza espressioni regolari  
+**Usare espressioni regolari**
+
 Se questa casella di controllo è selezionata, è possibile usare notazioni speciali per definire modelli di testo che devono corrispondere nelle caselle di testo **Trova** o **Sostituisci con**. Per un elenco di queste notazioni, vedere [Uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Cerca i seguenti tipi di file  
+**Cerca i seguenti tipi di file**
+
 L'elenco indica i tipi di file da cercare nelle directory **Cerca in**. Se questo campo è vuoto, la ricerca verrà eseguita in tutti i file contenuti nelle directory **Cerca in**.
 
 Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca preconfigurata che troverà i file dei tipi specificati.
@@ -89,20 +91,24 @@ Selezionare qualsiasi voce dell'elenco per immettere una stringa di ricerca prec
 
 È possibile espandere o comprimere la sezione **Opzioni risultati**. È possibile selezionare o deselezionare le opzioni seguenti:
 
-Finestra Risultati ricerca 1  
+**Finestra Risultati ricerca 1**
+
 Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 1**. Questa finestra viene visualizzata automaticamente per mostrare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 1**.
 
-Finestra Risultati ricerca 2  
+**Finestra Risultati ricerca 2**
+
 Quando questa opzione è selezionata, i risultati della ricerca corrente sostituiranno il contenuto della finestra **Risultati ricerca 2**. Questa finestra viene visualizzata automaticamente per mostrare i risultati della ricerca. Per aprire questa finestra manualmente, scegliere **Altre finestre** dal menu **Visualizza** e quindi **Risultati ricerca 2**.
 
-Mostra solo nomi file  
+**Mostra solo nomi file**
+
 Mostra un elenco di file che contengono le corrispondenze invece di visualizzare le corrispondenze stesse.
 
-Accoda risultati  
+**Accoda risultati**
+
 Aggiunge i risultati della ricerca a quelli della ricerca precedente.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)  
-[Sostituisci nei file](../ide/replace-in-files.md)  
-[Comandi di Visual Studio](../ide/reference/visual-studio-commands.md)
+- [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)
+- [Sostituisci nei file](../ide/replace-in-files.md)
+- [Comandi di Visual Studio](../ide/reference/visual-studio-commands.md)

@@ -1,12 +1,9 @@
 ---
 title: Creare soluzioni e progetti in Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -32,7 +29,7 @@ I *progetti* sono contenitori logici di Visual Studio che contengono gli element
 
 ![Gerarchia soluzione/progetto](./media/vside-proj-soln.png)
 
-È possibile visualizzare le soluzioni e i progetti in una finestra degli strumenti denominata **Esplora soluzioni**. La schermata seguente visualizza un esempio di soluzione in Esplora soluzioni (BikeSharing.Xamarin-UWP) contenente due progetti: BikeSharing.Clients.Core e BikeSharing.Clients.Windows. Ogni progetto contiene più file, cartelle e riferimenti. Il nome del progetto in grassetto indica il *progetto di avvio*, ovvero il progetto che viene avviato quando si esegue l'app. È possibile specificare quale progetto è il progetto di avvio.
+È possibile visualizzare le soluzioni e i progetti in una finestra degli strumenti denominata **Esplora soluzioni**. La schermata seguente visualizza un esempio di soluzione in **Esplora soluzioni** (**BikeSharing.Xamarin-UWP**) contenente due progetti: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Ogni progetto contiene più file, cartelle e riferimenti. Il nome del progetto in grassetto indica il *progetto di avvio*, ovvero il progetto che viene avviato quando si esegue l'app. È possibile specificare quale progetto è il progetto di avvio.
 
 ![Esplora soluzioni con progetti](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ In ogni caso non è obbligatorio usare le soluzioni e i progetti per sviluppare 
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Per creare un progetto da un modello di progetto
 
-1. Esistono vari metodi per creare un nuovo progetto in Visual Studio. Nella pagina iniziale immettere il nome di un modello di progetto nella casella **Cerca modelli di progetto** o scegliere il collegamento **Crea nuovo progetto** per aprire la finestra di dialogo **Nuovo progetto**. È anche possibile scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu o scegliere il pulsante **Nuovo progetto** sulla barra degli strumenti.
+1. Esistono vari metodi per creare un nuovo progetto in Visual Studio. Nella **pagina iniziale** immettere il nome di un modello di progetto nella casella **Cerca modelli di progetto** o scegliere il collegamento **Crea nuovo progetto** per aprire la finestra di dialogo **Nuovo progetto**. È anche possibile scegliere **File** > **Nuovo** > **Progetto** dalla barra dei menu o scegliere il pulsante **Nuovo progetto** sulla barra degli strumenti.
 
   ![Pagina iniziale](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ In ogni caso non è obbligatorio usare le soluzioni e i progetti per sviluppare 
 
 1. Scegliere il pulsante **OK** per creare la soluzione e il progetto.
 
-1. Per aggiungere un altro progetto alla soluzione, scegliere il nodo della soluzione in Esplora soluzioni e quindi sulla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+1. Per aggiungere un altro progetto alla soluzione, scegliere il nodo della soluzione in **Esplora soluzioni** e quindi sulla barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Creare un progetto da file di codice esistenti
 
@@ -122,10 +119,10 @@ Per creare un progetto temporaneo, in primo luogo scegliere **Strumenti** > **Op
 
 ## <a name="delete-a-solution-project-or-item"></a>Eliminare una soluzione, un progetto o un elemento
 
-È possibile eliminare definitivamente le soluzioni e il relativo contenuto, ma questa operazione non può essere eseguita con l'IDE Visual Studio. Quando si eliminano elementi all'interno di Visual Studio, questi vengono rimossi solo dalla soluzione o dal progetto corrente. Per eliminare definitivamente una soluzione o un altro componente dal sistema usare Esplora File per eliminare la cartella che contiene i file della soluzione con estensione sln e suo. Prima di eliminare definitivamente una soluzione è tuttavia consigliabile eseguire il backup dei progetti o dei file, che potrebbero tornare utili in futuro.
+È possibile eliminare definitivamente le soluzioni e il relativo contenuto, ma questa operazione non può essere eseguita con l'IDE Visual Studio. Quando si eliminano elementi all'interno di Visual Studio, questi vengono rimossi solo dalla soluzione o dal progetto corrente. Per eliminare definitivamente una soluzione o un altro componente dal sistema usare Esplora File per eliminare la cartella che contiene i file della soluzione con estensione *sln* e *suo*. Prima di eliminare definitivamente una soluzione è tuttavia consigliabile eseguire il backup dei progetti o dei file, che potrebbero tornare utili in futuro.
 
 > [!NOTE]
-> Il file con estensione suo è un file nascosto che non viene visualizzato nelle impostazioni predefinite di Esplora file. Per visualizzare i file nascosti, nel menu **Visualizza** di Esplora file selezionare la casella di controllo **Elementi nascosti**.
+> Il file con estensione *suo* è un file nascosto che non viene visualizzato nelle impostazioni predefinite di Esplora file. Per visualizzare i file nascosti, nel menu **Visualizza** di Esplora file selezionare la casella di controllo **Elementi nascosti**.
 
 ### <a name="to-permanently-delete-a-solution"></a>Per eliminare in modo permanente una soluzione
 

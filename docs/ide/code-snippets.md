@@ -1,11 +1,9 @@
 ---
-title: Frammenti di codice | Microsoft Docs
-ms.custom: 
+title: Frammenti di codice
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,18 +12,18 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -97,10 +95,10 @@ Se si modifica `newPropertyValue` in `m_property`, tutte le istanze di `newPrope
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)  
-[Procedura: Distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md)  
-[Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)  
-[Risoluzione dei problemi relativi ai frammenti di codice](../ide/troubleshooting-snippets.md)  
-[Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)  
-[Frammenti di codice Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Informazioni di riferimento sullo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)
+- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procedura: Distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md)
+- [Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)
+- [Risoluzione dei problemi relativi ai frammenti di codice](../ide/troubleshooting-snippets.md)
+- [Frammenti di codice C#](../ide/visual-csharp-code-snippets.md)
+- [Frammenti di codice Visual C++](../ide/visual-cpp-code-snippets.md)
+- [Informazioni di riferimento sullo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

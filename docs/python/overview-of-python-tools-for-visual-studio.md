@@ -1,15 +1,9 @@
 ---
-title: Panoramica del supporto di Python in Visual Studio in Windows | Microsoft Docs
+title: Panoramica del supporto di Python in Visual Studio in Windows
 description: Riepilogo delle funzionalità di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS)
-ms.custom: ''
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Utilizzo di Python in Visual Studio (Windows)
 
@@ -174,13 +168,15 @@ Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseg
 Le funzionalità di Python possono essere installate nelle edizioni seguenti di Visual Studio, come descritto nella [guida all'installazione](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (tutte le edizioni)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (tutte le edizioni)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (tutte le edizioni)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express per il Web, Update 2 o versione successiva
 - Visual Studio 2013 Express per Desktop, Update 2 o versione successiva
 - Visual Studio 2013 (Professional Edition o versione successiva)
 - Visual Studio 2012 (Professional Edition o versione successiva)
 - Visual Studio 2010 SP1 (Professional Edition o versione successiva; richiede .NET 4.5)
+
+Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
 
 > [!Important]
 > Le funzionalità vengono supportate e mantenute aggiornate in modo completo solo per la versione più recente di Visual Studio. Le funzionalità sono disponibili nelle versioni precedenti, ma non vengono mantenute aggiornate.
@@ -301,6 +297,6 @@ Le funzionalità di Python possono essere installate nelle edizioni seguenti di 
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-- [WFastCGI bridge between IIS and Python](https://pypi.python.org/pypi/wfastcgi) (Ponte WFastCGI tra IIS e Python) (python.org)
+- [WFastCGI bridge between IIS and Python](https://pypi.org/p/wfastcgi) (Ponte WFastCGI tra IIS e Python) (pypi.org)
 - [Corsi gratuiti per Python in Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Top Python Questions (Domande principali su Python) alla Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

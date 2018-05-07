@@ -1,28 +1,26 @@
 ---
 title: 'Procedura: Eseguire la ricerca di argomenti | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: Eseguire la ricerca di argomenti
 È possibile usare la funzionalità di ricerca full-text per individuare tutti gli argomenti che contengono una parola specifica. È anche possibile perfezionare e personalizzare la ricerca usando espressioni con caratteri jolly, operatori logici e operatori di ricerca avanzata.  
   
-Per aprire la scheda Cerca, scegliere la scheda **Cerca** scheda nella finestra Help Viewer oppure se si usa la tastiera, scegliere **CTRL+E**.  
+Per aprire la scheda **Cerca**, scegliere la scheda **Cerca** nella finestra **Help Viewer** oppure se si usa la tastiera, scegliere **CTRL**+**E**.  
   
 ## <a name="to-perform-a-full-text-search"></a>Per eseguire una ricerca full-text 
 1.  Nella casella di ricerca digitare la parola che si vuole trovare.  
