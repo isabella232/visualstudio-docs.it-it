@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità Visual Studio crea le didascalie per controlli associati a dati
+
 Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md) in una finestra di progettazione, tenere presente che in: i nomi di colonna nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole risultano concatenate. È possibile personalizzare il modo in cui vengono create le etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** i valori in il **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data progettisti** chiave del Registro di sistema.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 > [!CAUTION]
 > È necessario prestare particolare attenzione nell'eseguire alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si utilizza l'Editor del Registro di sistema in modo non corretto, può causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti dall'errato utilizzo dell'Editor del Registro di sistema. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
 >
->  Il seguente articolo della Knowledge Base contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Il seguente articolo della Knowledge Base contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Per modificare il comportamento della didascalia smart della finestra Origini dati
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificare il comportamento della didascalia smart della finestra Origini dati
 
 1.  Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
 
 2.  Tipo `regedit` nel **eseguire** la finestra di dialogo e fare clic su **OK**.
 
-3.  Espandere il **HKEY_CURRENT_USER**, **Software*, **Microsoft**, **VisualStudio** nodo.
+3.  Espandere il **HKEY_CURRENT_USER**, **Software**, **Microsoft**, **VisualStudio** nodo.
 
 7.  Fare doppio clic su di **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
 
@@ -80,7 +81,7 @@ La tabella seguente elenca le impostazioni predefinite interne per questi valori
 
     La volta successiva che si trascinano elementi dal **origini dati** finestra, le etichette della didascalia vengono create utilizzando i nuovi valori del Registro di sistema forniti.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Per disattivare la funzionalità di sottotitoli codificata intelligente
+## <a name="turn-off-the-smart-captioning-feature"></a>Disattivare la funzionalità intelligente per sottotitoli codificati
 
 1.  Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
 

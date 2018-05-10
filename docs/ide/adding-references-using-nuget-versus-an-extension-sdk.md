@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Aggiunta di riferimenti tramite NuGet o SDK di estensione
 
@@ -50,7 +50,7 @@ La tabella seguente consente di confrontare le funzionalità di riferimento di u
 |Il meccanismo si integra con i manifesti delle app.|Y|L'SDK deve passare concetti specifici di [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] in modo che la creazione di pacchetti e F5 funzionino correttamente con gli SDK disponibili in [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)].|Y|Il contenuto NuGet diventa parte del progetto. Non sono necessarie particolari considerazioni relative al comando F5.|
 |Il meccanismo distribuisce file non di riferimento, ad esempio un framework di test con cui eseguire i test delle app di [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)].|Y|Se si trascinano i file nella cartella *\redist*, questi vengono distribuiti automaticamente.|Y||
 |Il meccanismo aggiunge automaticamente gli SDK della piattaforma nell'IDE di Visual Studio.|Y|Se si trascina il [!INCLUDE[win8](../debugger/includes/win8_md.md)] o il Windows Phone SDK in un percorso specifico con un layout specifico, l'SDK viene integrato automaticamente con tutte le funzionalità di Visual Studio.|N||
-|Il meccanismo supporta un computer di sviluppo pulito. In altre parole, non è richiesta alcuna installazione e il semplice recupero dal controllo del codice sorgente funziona.|N|Poiché si fa riferimento a un SDK, è necessario archiviare la soluzione e l'SDK separatamente. È possibile archiviare l'SDK dai due percorsi predefiniti non presenti nel Registro di configurazione da cui MSBuild esegue l'iterazione degli SDK. Per informazioni dettagliate, vedere [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un SDK). In alternativa, se un percorso personalizzato è costituito da SDK, è possibile specificare il codice seguente nel file di progetto:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Archiviare quindi gli SDK in tale percorso.|Y|È possibile estrarre la soluzione. Visual Studio la riconosce e agisce sui file immediatamente.|
+|Il meccanismo supporta un computer di sviluppo pulito. In altre parole, non è richiesta alcuna installazione e il semplice recupero dal controllo del codice sorgente funziona.|N|Poiché si fa riferimento a un SDK, è necessario archiviare la soluzione e l'SDK separatamente. È possibile archiviare l'SDK dai due percorsi predefiniti non presenti nel Registro di configurazione da cui MSBuild esegue l'iterazione degli SDK. Per informazioni dettagliate, vedere [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un SDK). In alternativa, se un percorso personalizzato è costituito da SDK, è possibile specificare il codice seguente nel file di progetto:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Archiviare quindi gli SDK in tale percorso.|Y|È possibile estrarre la soluzione. Visual Studio la riconosce e agisce sui file immediatamente.|
 |È possibile partecipare a un'ampia community di autori di pacchetti.|N/D|La community è nuova.|Y||
 |È possibile partecipare a un'ampia community di consumer.|N/D|La community è nuova.|Y||
 |È possibile entrare a far parte di un ecosistema di partner (raccolte personalizzate, repository e così via).|N/D|I repository disponibili includono Visual Studio Marketplace, Area download Microsoft e [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||

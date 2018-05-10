@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0110a8e9b0e4617ac191bfaab8b575fd8faa6a76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
 Visualizza il contenuto dell'intervallo di memoria specificato.
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```cmd
 Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
@@ -57,13 +57,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="remarks"></a>Note
  Invece di scrivere un comando **Debug.ListMemory** completo con tutte le opzioni, è possibile richiamare il comando tramite alias predefiniti con alcune opzioni preimpostate su valori specificati. Ad esempio, anziché immettere:
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
  è possibile scrivere:
 
-```
+```cmd
 >df /Count:30 /Unicode
 ```
 
@@ -82,7 +82,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 ## <a name="example"></a>Esempio
 
-```
+```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 

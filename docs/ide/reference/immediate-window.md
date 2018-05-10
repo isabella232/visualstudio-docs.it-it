@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.
@@ -32,13 +32,13 @@ Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le e
 ## <a name="displaying-the-values-of-variables"></a>Visualizzazione dei valori delle variabili
  Questa finestra può essere particolarmente utile durante il debug di un'applicazione. Ad esempio, per controllare il valore di una variabile `varA`, usare il [comando Stampa](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Il punto interrogativo (?) è un alias di `Debug.Print`. Questo comando può quindi essere scritto anche nel modo seguente:
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ Non è possibile usare la valutazione delle espressioni in fase di progettazione
 
  Nel **immediato** finestra, un segno di uguale (=) viene interpretato come un operatore di assegnazione. Il comando
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ Non è possibile usare la valutazione delle espressioni in fase di progettazione
 
  Nel **comando** finestra, al contrario, un segno di uguale (=) viene interpretato come un operatore di confronto. Non è possibile utilizzare gli operatori di assegnazione nel **comando** finestra. Pertanto, se ad esempio i valori delle variabili `varA` e `varB` sono diversi, il comando
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

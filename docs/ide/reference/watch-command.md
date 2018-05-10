@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97fe1c6865b8934d2c0329547e98323c75bf3ec0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="watch-command"></a>Comando Watch
 Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . È possibile usare una finestra **Espressioni di controllo** per calcolare i valori di variabili, espressioni e registri, modificare i valori e salvare i risultati.
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```cmd
 Debug.Watch[index]
 ```
 
@@ -40,7 +40,7 @@ Debug.Watch[index]
 
 ## <a name="example"></a>Esempio
 
-```
+```cmd
 >Debug.Watch1
 ```
 

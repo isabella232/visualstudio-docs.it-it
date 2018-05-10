@@ -3,14 +3,14 @@ title: Debug - Visualizzazioni dati
 description: Il debug è una parte comune e necessaria della programmazione. Visual Studio per Mac contiene un intero gruppo di funzionalità per semplificare il debug. Questo articolo presenta le diverse visualizzazioni dati che è possibile usare per esaminare gli oggetti nel debugger.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 1c228718dc528e0ab34c9af328aee1c8259fa8b5
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 5ee16324a312eca79de2f3b356a5f3be941f5e7b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="data-visualizations"></a>Visualizzazioni dati
 

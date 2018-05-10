@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 225d65c33ac3616bdc207cfd71afa0441d58c80c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 24a8f49c036ed28693d92b162a417114f2c93e89
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio
 
@@ -28,7 +28,7 @@ In molti casi, gli amministratori aziendali creano un layout e lo inseriscono in
 
 Per impostazione predefinita, Visual Studio continua a cercare gli aggiornamenti online anche se l'installazione è stata distribuita da una condivisione di rete. Se è disponibile un aggiornamento, l'utente può installarlo. Eventuali contenuti aggiornati non disponibili nel layout offline sono scaricati dal Web.
 
-Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell'aggiornamento degli utenti. A tale scopo, attenersi alla seguente procedura:
+Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell’aggiornamento degli utenti. A tale scopo, attenersi alla seguente procedura:
 
  1. Creare un layout offline:
     ```cmd
@@ -40,14 +40,14 @@ Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiorn
     ```
  3. Modificare il file response.json nel layout e cambiare il valore `channelUri` in modo che punti a una copia del file channelManifest.json controllato dall'amministratore.
 
-  Assicurarsi di usare le barre rovesciate come carattere di escape nel valore, come illustrato nell'esempio seguente:
+  Assicurarsi di usare le barre rovesciate come carattere di escape nel valore, come illustrato nell’esempio seguente:
 
   ```json
     "channelUri":"\\\\server\\share\\VS2017\\ChannelManifest.json"
   ```
 
  Gli utenti finali possono ora eseguire l'installazione da questa condivisione per installare Visual Studio.
-    ```
+    ```cmd
     \\server\share\VS2017\vs_enterprise.exe
     ```
 
@@ -73,7 +73,7 @@ Come descritto in precedenza, Visual Studio controlla l'eventuale presenza di ag
 
 Se si preferisce non informare gli utenti della disponibilità di aggiornamenti, è possibile disabilitare le notifiche. Ad esempio, se si distribuiscono gli aggiornamenti attraverso un meccanismo di distribuzione centrale del software, è possibile voler disabilitare queste notifiche.
 
-Poiché Visual Studio 2017 [archivia le voci del Registro di sistema in un registro privato](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), non è possibile modificare direttamente il Registro di sistema nel modo consueto. Visual Studio include, tuttavia, un'utility `vsregedit.exe` che consente di modificare le impostazioni di Visual Studio. È possibile disattivare le notifiche con il comando seguente:
+Poiché Visual Studio 2017 [archivia le voci del Registro di sistema in un registro privato](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance), non è possibile modificare direttamente il Registro di sistema nel modo consueto. Visual Studio include, tuttavia, un’utility `vsregedit.exe` che consente di modificare le impostazioni di Visual Studio. È possibile disattivare le notifiche con il comando seguente:
 
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0

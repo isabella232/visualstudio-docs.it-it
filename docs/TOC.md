@@ -9,6 +9,7 @@
 ### [Creare un'installazione offline di Visual Studio](install/create-an-offline-installation-of-visual-studio.md)
 ### [Installare i certificati necessari per l'installazione offline](install/install-certificates-for-visual-studio-offline.md)
 ### [Eseguire l'installazione in ambienti di rete con larghezza di banda ridotta o non affidabili](install/install-vs-inconsistent-quality-network.md)
+## [Cambiare i percorsi di installazione](install/change-installation-locations.md)
 ## [Risoluzione dei problemi relativi all'installazione](install/troubleshooting-installation-issues.md)
 ## [Aggiornare Visual Studio](install/update-visual-studio.md)
 ## [Modificare Visual Studio](install/modify-visual-studio.md)
@@ -37,7 +38,7 @@
 ### [Guida dell'amministratore di Help Viewer](ide/help-viewer-administrator-guide.md)
 #### [Argomenti della riga di comando per Gestione contenuto della Guida](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Ovverride di Gestione contenuto della Guida](ide/help-content-manager-overrides.md)
-### Riferimento
+### Riferimenti
 #### [ID dei carichi di lavoro e dei componenti di Visual Studio](install/workload-and-component-ids.md)
 #### [Numeri di build e date di rilascio di Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
 ## [Usare Visual Studio da una macchina virtuale di Azure](install/using-visual-studio-vm.md)
@@ -62,7 +63,7 @@
 ## [Node.js in Visual Studio](nodejs/tutorial-nodejs.md)
 ## [C# in Visual Studio](ide/tutorial-csharp-aspnet-core.md)
 ## [Visual Basic in Visual Studio](ide/tutorial-visual-basic-console.md)
-## [Debug in Visual Studio](ide/getting-started-with-debugging-in-visual-studio.md)
+## [Debug in Visual Studio](debugger/getting-started-with-the-debugger.md?context=visualstudio/default)
 # Guide pratiche
 ## [Sviluppare](ide/index-writing-code.md)
 ### [Spostarsi nell'IDE di Visual Studio](ide/how-to-move-around-in-the-visual-studio-ide.md)
@@ -185,6 +186,7 @@
 #### [Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens](ide/find-code-changes-and-other-history-with-codelens.md)
 ##### [Comando CodeIndex](ide/codeindex-command.md)
 #### [Supporto dell'editor per altre lingue](ide/adding-visual-studio-editor-support-for-other-languages.md)
+### [Migliorare il codice](ide/find-and-fix-code-errors.md)
 ### [Sviluppo di app per dispositivi mobili multipiattaforma](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ### [Sviluppo per Office e Sharepoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [Usare file XML e XSLT](xml-tools/xml-tools-in-visual-studio.md)
@@ -288,7 +290,7 @@
 ### [Globalizzazione di applicazioni](ide/globalizing-applications.md)
 #### [Classi specifiche delle impostazioni cultura per Windows Form e Web Form globali](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Creazione di applicazioni in lingue bidirezionali](ide/creating-applications-in-bi-directional-languages.md)
-# Riferimento
+# Riferimenti
 ## Modelli di progetti e di elementi
 ### [Parametri di modelli](ide/template-parameters.md)
 ### [Riferimento allo schema di modello (estendibilità)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)

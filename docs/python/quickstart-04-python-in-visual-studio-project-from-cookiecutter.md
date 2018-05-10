@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c8e4ec1691dc1826fa6772d6d69723659245cece
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c428d72cca0bd552bb1318470e873c44f749e134
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida rapida: creare un progetto da un modello di Cookiecutter
 
@@ -49,6 +49,6 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-py
 ## <a name="see-also"></a>Vedere anche
 
 - [Uso dell'estensione Cookiecutter](using-python-cookiecutter-templates.md)
-- [Identificazione manuale di un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Identificazione manuale di un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installing-python-support-in-visual-studio.md).
 - [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations).

@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>Utilizzo del codice Visual C++ (Progettazione classi)
 
@@ -73,7 +73,7 @@ Se il diagramma classi non viene aggiornato con le modifiche apportate nel codic
 
 -   Il tipo si trova in una libreria a cui fa riferimento una direttiva #import. Una possibile soluzione alternativa consiste nell'aggiungere manualmente il codice generato (il file con estensione tlh) a una direttiva #include nel file di intestazione.
 
--   Verificare che **Progettazione classi** supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations).
+-   Verificare che **Progettazione classi** supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations-for-c-code-elements).
 
 Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è **Impossibile trovare il codice per una o più forme nel diagramma classi '\<elemento>'**. Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice.  Provare a eseguire le operazioni seguenti:
 

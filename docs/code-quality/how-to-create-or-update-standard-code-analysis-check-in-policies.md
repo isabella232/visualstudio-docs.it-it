@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice"
+title: Creare o aggiornare criteri di controllo dell'analisi del codice Standard
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -34,7 +34,7 @@ Criteri di controllo dell'analisi del codice vengono impostati nelle impostazion
 
 Dopo aver specificato un criterio di controllo per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi codice per i progetti di codice alle impostazioni dei criteri del progetto team.
 
-### <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor Criteri di archiviazione
+## <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor Criteri di archiviazione
 
 1. In Team Explorer, fare clic sul nome del progetto team, scegliere **impostazioni progetto Team**, quindi fare clic su **controllo del codice sorgente**.
 
@@ -46,28 +46,28 @@ Dopo aver specificato un criterio di controllo per il codice gestito, i membri d
 
     - Fare doppio clic su esistente **analisi del codice** elemento il **tipo di criteri** elenco per modificare i criteri.
 
-### <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri
+## <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri
 
 Selezionare o deselezionare le opzioni seguenti:
 
-    |Opzione|Descrizione|
-    |------------|-----------------|
-    |**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice è possibile eseguire solo sui file specificati nel file di configurazione di soluzione e progetto. Questo criterio assicura che tutto il codice che fa parte di una soluzione viene analizzato.|
-    |**Applicare l'analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ generati con la / analizzare l'opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|
-    |**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti, eseguire l'analisi del codice e compilare prima che possano essere archiviati.|
+|Opzione|Descrizione|
+|------------|-----------------|
+|**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice è possibile eseguire solo sui file specificati nel file di configurazione di soluzione e progetto. Questo criterio assicura che tutto il codice che fa parte di una soluzione viene analizzato.|
+|**Applicare l'analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ generati con la / analizzare l'opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|
+|**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti, eseguire l'analisi del codice e compilare prima che possano essere archiviati.|
 
-### <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestito
+## <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestito
 
-- Dal **eseguire il set di regole** elenco, utilizzare uno dei metodi seguenti:
+Dal **eseguire il set di regole** elenco, utilizzare uno dei metodi seguenti:
 
-    - Selezionare un set di regole standard Microsoft.
+- Selezionare un set di regole standard Microsoft.
 
-    - Per selezionare un set di regole personalizzato, fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente... >**, quindi digitare il percorso del controllo della versione del set di regole nel browser di controllo del codice sorgente. La sintassi di un percorso di controllo della versione è:
+- Selezionare una regola personalizzata imposta facendo clic  **\<seleziona Set di regole dal controllo del codice sorgente... >**. Quindi, digitare il percorso controllo della versione del set di regole nel browser del controllo del codice sorgente. La sintassi di un percorso di controllo della versione è:
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - Per ulteriori informazioni su come creare e implementare una regola dei criteri di controllo personalizzato, vedere [criteri di controllo che implementa personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Per ulteriori informazioni su come creare e implementare una regola di criteri di controllo personalizzati, vedere [criteri di controllo implementare personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Creare e usare criteri di controllo dell'analisi del codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

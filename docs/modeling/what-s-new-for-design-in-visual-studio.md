@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novità relative alla progettazione in Visual Studio
 
@@ -64,18 +64,13 @@ Per ulteriori informazioni, vedere [questo post di blog](https://blogs.msdn.micr
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Supporto della versione per gli strumenti di architettura e modellazione
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Supporto della versione per l'architettura e strumenti di modellazione
 
-Visual Studio è disponibile in diverse versioni. Non tutte le versioni forniscono il supporto per gli strumenti di architettura e modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
+Visual Studio 2015 è disponibile in diverse versioni. Non tutti questi forniscono supporto per l'architettura e strumenti di modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
 |**Funzionalità**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mappe codice**|Yes|Vedere la nota (1)|-|-|
-|**Diagrammi di dipendenza**|Yes|Vedere la nota (2)|Vedere la nota (2)|-|
+|**Mappe codice**|Yes|Supporta la lettura delle mappe del codice, il filtro codice esegue il mapping solo, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|-|
+|**Diagrammi di dipendenza**|Yes|Supporta solo la lettura di diagrammi di dipendenza.|Supporta solo la lettura di diagrammi di dipendenza.|-|
 |**Grafici diretti** (diagrammi DGML)|Yes|Sì|Yes|-|
 |**Clone di codice**|Yes|-|-|-|
-
-Nota (1): supporta solo la lettura delle mappe del codice, l'applicazione di filtri alle mappe del codice, l'aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.
-
-Nota (2): Supporta solo la lettura diagrammi di dipendenza.

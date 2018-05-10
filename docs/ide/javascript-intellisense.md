@@ -26,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16e0efd8393d6324321a505247a3dad171a81a57
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 
@@ -52,6 +52,7 @@ Per ottenere le informazioni necessarie, TypeScript usa diverse fonti:
 - [IntelliSense basato su file dichiarazione TypeScript](#TsDeclFiles)
 - [Acquisizione automatica delle definizioni dei tipi](#Auto)
 
+<a name="TypeInference"></a>
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense basato sull'inferenza del tipo
 
 In JavaScript nella maggior parte dei casi non sono disponibili informazioni esplicite relative ai tipi. In genere è abbastanza semplice intuire un tipo in base al contesto del codice circostante.
@@ -88,6 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
+<a name="JsDoc"></a>
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense basato su JSDoc
 
 Quando l'inferenza del tipo non specifica le informazioni sul tipo desiderate (o si vuole aggiungere supporto alla documentazione), è possibile includere informazioni sul tipo in modo esplicito tramite le annotazioni JSDoc.  Ad esempio, per assegnare un tipo specifico a un oggetto parzialmente dichiarato si può usare il tag `@type` come illustrato di seguito:
@@ -114,14 +116,16 @@ function Foo(param1) {
 
 Vedere [supporto per JSDoc in JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) per le annotazioni di JsDoc attualmente supportate.
 
+<a name="TsDeclFiles"></a>
 ### <a name="intellisense-based-on-typescript-declaration-files"></a>IntelliSense basato su file dichiarazione TypeScript
 
 Dato che ora JavaScript e TypeScript si basano sullo stesso servizio di linguaggio, sono in grado di interagire in modo più completo. Ad esempio è possibile aggiungere codice IntelliSense JavaScript per i valori dichiarati in un file *.d.ts* (vedere [documentazione TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), mentre i tipi quali interfacce e classi dichiarate in TypeScript sono disponibili per l'uso come tipi nei commenti JsDoc.
 
 Di seguito viene visualizzato un esempio semplice di file di definizione TypeScript che specifica questo tipo di informazioni (attraverso un'interfaccia) a un file JavaScript nello stesso progetto (mediante un tag `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
 
+<a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Acquisizione automatica delle definizioni dei tipi
 
 Nell'ambito TypeScript, le API delle librerie JavaScript più diffuse sono descritte da file *.d.ts* e il repository più comune per tali definizioni si trova in [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).

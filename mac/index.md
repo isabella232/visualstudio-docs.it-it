@@ -1,15 +1,15 @@
 ---
 title: Introduzione a Visual Studio per Mac
-description: ''
+description: In questo articolo vengono illustrate le funzionalità di Visual Studio per Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Introduzione a Visual Studio per Mac
 
@@ -72,7 +72,7 @@ Visual Studio dispone di un proprio Android SDK Manager integrato.
 
 Per le applicazioni Android, Visual Studio per Mac include una propria finestra di progettazione, utilizzabile con file Android `.axml` per creare visivamente le interfacce utente. Visual Studio per Mac apre questi file nella propria finestra di progettazione Android, come illustrato nella figura seguente:
 
-![](media/intro-image31.png)
+![Finestra di progettazione interfaccia utente Android](media/intro-image31.png)
 
 Per altre informazioni sulla finestra di progettazione di Android, vedere il documento [Designer Overview](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) (Panoramica della finestra di progettazione).
 
@@ -80,7 +80,7 @@ Per altre informazioni sulla finestra di progettazione di Android, vedere il doc
 
 La finestra di progettazione di iOS è pienamente integrata in Visual Studio per Mac e consente la modifica sul posto di file XIB e Storyboard per creare interfacce utente e transizioni iOS, tvOS e watchOS. L'intera interfaccia utente può essere compilata tramite la funzionalità di trascinamento della selezione tra la casella degli strumenti e l'area di progettazione, usando al contempo un approccio intuitivo alla gestione degli eventi. La finestra di progettazione di iOS supporta [controlli personalizzati](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/) con il vantaggio aggiunto del rendering in fase di progettazione.
 
-![](media/intro-image30.png)
+![Finestar di progettazione storyboard iOS](media/intro-image30.png)
 
 Per altre informazioni sull'uso della finestra di progettazione di iOS, vedere i documenti sulla [finestra di progettazione](https://developer.xamarin.com/guides/ios/user_interface/designer).
 
@@ -109,7 +109,7 @@ Xamarin Profiler dispone di tre strumenti per la profilatura. La guida [Introduz
 
 Xamarin Inspector offre una console C# interactive con strumenti disponibili agli utenti. Può essere utilizzato come supporto per il debug o per la diagnostica durante il controllo delle applicazioni attive, come strumento di formazione, di documentazione o sperimentazione.
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 È costituito da un'applicazione autonoma che rappresenta una console C# che può avere come destinazioni varie piattaforme di programmazione (Android, iOS, Mac e Windows) e può integrarsi nel flusso di lavoro di debug dell'IDE dell'utente.
 

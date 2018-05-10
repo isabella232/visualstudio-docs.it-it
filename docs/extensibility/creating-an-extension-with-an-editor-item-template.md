@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Creazione di un'estensione con un modello di elemento di Editor
 È possibile utilizzare i modelli di elementi inclusi nel SDK di Visual Studio per creare estensioni dell'editor di base che aggiungono classificatori, aree di controllo e i margini nell'editor. I modelli di elemento editor sono disponibili per i progetti Visual c# o Visual Basic VSIX.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
     -   EditorClassifier1.cs contiene la `EditorClassifier1` classe.  
   
-    -   EditorClassifier1ClassificationDefinition.cs contiene la `OEditorClassifier1ClassificationDefinition` classe.  
+    -   EditorClassifier1ClassificationDefinition.cs contiene la `EditorClassifier1ClassificationDefinition` classe.  
   
     -   EditorClassifier1Format.cs contiene la `EditorClassifier1Format` classe.  
   
@@ -57,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
     -   TextAdornment1.cs contiene la `TextAdornment1` classe.  
   
-    -   extAdornment1TextViewCreationListener.cs contiene la `TextAdornment1TextViewCreationListener` classe.  
+    -   TextAdornment1TextViewCreationListener.cs contiene la `TextAdornment1TextViewCreationListener` classe.  
   
 4.  Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale. Se si apre un file di testo, tutti i 'a' caratteri nel testo vengono evidenziati in rosso su uno sfondo blu.  
   
@@ -88,7 +88,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel **nuovo progetto** finestra di dialogo espandere **Visual c#** o **Visual Basic** e quindi fare clic su **estendibilità**. Nel **modelli** riquadro, selezionare **progetto VSIX**. Nella casella **Nome** digitare `MarginExtension`. Fare clic su **OK**.  
   
-2.  Nel **Esplora**del mouse sul nodo del progetto e scegliere **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **dell'area di controllo del riquadro di visualizzazione Editor**. Lasciare il nome di file predefinito (EditorMargin1.cs/vb).  
+2.  Nel **Esplora**del mouse sul nodo del progetto e scegliere **Aggiungi / nuovo elemento**. Passare a Visual c# **estendibilità** nodo e selezionare **Editor margine**. Lasciare il nome di file predefinito (EditorMargin1.cs/vb).  
   
 3.  Esistono due file di codice, come indicato di seguito:  
   

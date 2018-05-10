@@ -260,17 +260,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ffa56023aecc327f78b4b1d860c14fa96e04e45
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 69bc5492413a48ddde501bdba893fd880f2851cb
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi dell'analisi codice per codice gestito ordinati per CheckId
 
 Nella tabella seguente sono elencati gli avvisi di analisi del codice per il codice gestito ordinati per identificatore CheckId.
-
-## <a name="warnings"></a>Avvisi
 
 |CheckId|Avviso|Descrizione|
 |-------------|-------------|-----------------|

@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 058c03b439e1bdf32570332d9d5913f47e8f542b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Esegue il comando specificato dopo l'avvio dell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```cmd
 devenv /command CommandName
 ```
 
@@ -39,7 +39,7 @@ devenv /command CommandName
 ## <a name="example"></a>Esempio
  Questo codice di esempio avvia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ed esegue automaticamente la macro OpenFavoriteFiles.
 
-```
+```cmd
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 177a3c0c088e20b37172f6ff0a5b818dce24795c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-in-files-command"></a>Comando Cerca nei file
 Esegue la ricerca di testo nei file usando un subset delle opzioni disponibili nella scheda **Cerca nei file** della finestra **Trova e sostituisci**.
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```cmd
 Edit.FindinFiles findwhat [/case] [/ext:extensions]
 [/lookin:searchpath] [/names] [/options] [/reset] [/stop] [/sub]
 [/text2] [/wild|/regex] [/word]
@@ -52,7 +52,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 
  /stop Facoltativo. Se è in corso un'operazione di ricerca, la interrompe. Quando viene specificato `/stop` la ricerca ignora tutti gli altri argomenti. Ad esempio, per interrompere la ricerca corrente immettere quanto segue:
 
-```
+```cmd
 >Edit.FindinFiles /stop
 ```
 
@@ -67,7 +67,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="example"></a>Esempio
  Nell'esempio riportato di seguito viene cercato btnCancel in tutti i file CLS presenti nella cartella "My Visual Studio Projects" e le informazioni sulle corrispondenze trovate vengono visualizzate nella finestra Risultati ricerca 2.
 
-```
+```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 

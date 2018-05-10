@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: implementare progetti annidati
+
 Quando si crea un tipo di progetto annidato sono sono un alcuni passaggi aggiuntivi che devono essere implementati. Un progetto padre assume alcune delle responsabilità stessa con la soluzione per i progetti nidificati (figlio). Il progetto principale è un contenitore di progetti è simili a una soluzione. In particolare, sono disponibili diversi eventi che devono essere generati per la soluzione e per i progetti padre per compilare la gerarchia di progetti annidati. Questi eventi sono descritte nel processo seguente per la creazione di progetti annidati.
 
-### <a name="to-create-nested-projects"></a>Per creare progetti annidati
+## <a name="create-nested-projects"></a>Creare progetti annidati
 
 1.  Ambiente di sviluppo integrato (IDE) carica le informazioni di avvio e i file di progetto del progetto padre chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia. Il progetto principale viene creato e aggiunto alla soluzione.
 
     > [!NOTE]
-    >  A questo punto, è abbastanza recente del processo per il progetto principale creare il progetto annidato perché è necessario creare il progetto principale prima di possono creare i progetti figlio. Questa sequenza, il progetto principale è possibile applicare le impostazioni per i progetti figlio e i progetti figlio possono acquisire informazioni dai progetti padre, se necessario. Questa sequenza è se è necessario in dai client, ad esempio Esplora soluzioni e di controllo del codice sorgente (SCC).
+    > A questo punto, è abbastanza recente del processo per il progetto principale creare il progetto annidato perché è necessario creare il progetto principale prima di possono creare i progetti figlio. Questa sequenza, il progetto principale è possibile applicare le impostazioni per i progetti figlio e i progetti figlio possono acquisire informazioni dai progetti padre, se necessario. Questa sequenza è se è necessario in dai client, ad esempio Esplora soluzioni e di controllo del codice sorgente (SCC).
 
      Il progetto principale deve attendere il <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metodo chiamato dall'IDE prima dei relativi nidificati (figlio) può creare i progetti.
 
@@ -57,7 +58,7 @@ Quando si crea un tipo di progetto annidato sono sono un alcuni passaggi aggiunt
      Se non esiste già, il progetto principale crea un GUID per ogni progetto annidato chiamando `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` è un'API COM chiamata quando un GUID da creare. Per ulteriori informazioni, vedere `CoCreateGuid` e i GUID in MSDN Library.
+    > `CoCreateGuid` è un'API COM chiamata quando un GUID da creare. Per ulteriori informazioni, vedere `CoCreateGuid` e i GUID in MSDN Library.
 
      Il progetto principale archivia questo GUID nel relativo file di progetto per recuperare la prossima volta che viene aperto nell'IDE. Vedere il passaggio 4 per ulteriori informazioni relative al chiamante di `AddVirtualProjectEX` per recuperare il `guidProjectID` per il progetto figlio.
 
@@ -66,7 +67,7 @@ Quando si crea un tipo di progetto annidato sono sono un alcuni passaggi aggiunt
      Poiché i progetti padre e figlio vengono creata un'istanza a livello di codice, è possibile impostare le proprietà dei progetti annidati a questo punto.
 
     > [!NOTE]
-    >  Non solo ricevono le informazioni sul contesto dal progetto nidificato, ma è inoltre possibile richiedere se il progetto principale dispone di alcun contesto per l'elemento controllando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. In tal modo, è possibile aggiungere attributi aggiuntivi Guida dinamica e le opzioni di menu specifiche per singoli progetti annidati.
+    > Non solo ricevono le informazioni sul contesto dal progetto nidificato, ma è inoltre possibile richiedere se il progetto principale dispone di alcun contesto per l'elemento controllando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. In tal modo, è possibile aggiungere attributi aggiuntivi Guida dinamica e le opzioni di menu specifiche per singoli progetti annidati.
 
 10. La gerarchia viene compilata per la visualizzazione in Esplora soluzioni con una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metodo.
 
@@ -78,15 +79,12 @@ Quando si crea un tipo di progetto annidato sono sono un alcuni passaggi aggiunt
 
      Quando un progetto annidato viene chiuso perché l'utente ha chiuso la soluzione o di specifiche di progetto, l'altro metodo `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, viene chiamato. Il progetto principale esegue il wrapping di chiamate per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> metodo con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> per notificare a listener di eventi di soluzione che i progetti annidati vengono chiusi.
 
- Gestiscono diversi altri concetti da considerare quando si implementano progetti annidati gli argomenti seguenti:
+Gestiscono diversi altri concetti da considerare quando si implementano progetti annidati gli argomenti seguenti:
 
- [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-
- [Supporto di procedure guidate per i progetti annidati](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [Implementazione della gestione dei comandi per i progetti annidati](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [Applicazione di un filtro nella finestra di dialogo AddItem per i progetti annidati](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Supporto di procedure guidate per i progetti annidati](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implementazione della gestione dei comandi per i progetti annidati](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Applicazione di un filtro nella finestra di dialogo AddItem per i progetti annidati](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Vedere anche
 

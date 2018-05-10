@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedef di Visual C++ in Progettazione classi
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-Per altre informazioni sull'uso del tipo `typedef`, vedere [Typedef](/cpp/aliases-and-typedefs-cpp#typedefs).
+Per altre informazioni sull'uso del tipo `typedef`, vedere [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
 
 Una forma di typedef C++ ha la forma del tipo specificato nell'istruzione typedef. Ad esempio, se l'origine dichiara `typedef class`, la forma ha gli angoli arrotondati e l'etichetta **Class**. Per `typedef struct` la forma ha gli angoli quadrati e l'etichetta **Struct**.
 
@@ -199,6 +199,8 @@ Classe
 
 -> MyIntVect
 
-## <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedere anche
 
-- [Uso del codice di Visual C++](working-with-visual-cpp-code.md)
+- [Uso del codice di Visual C++](working-with-visual-cpp-code.md)  
+- [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+

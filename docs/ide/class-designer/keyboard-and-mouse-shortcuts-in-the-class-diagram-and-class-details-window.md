@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
 
@@ -32,8 +32,8 @@ Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 |Combinazione del mouse|Contesto|Descrizione|
 |-----------------------|-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
-||Connettore simbolo|Espande/comprime il simbolo.|
-||Etichetta del connettore simbolo|Richiama il comando **Mostra interfaccia**.|
+|Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
+|Doppio clic|Etichetta del connettore simbolo|Richiama il comando **Mostra interfaccia**.|
 |Rotellina del mouse|Diagramma classi|Scorre verticalmente.|
 |MAIUSC + rotellina del mouse|Diagramma classi|Scorre orizzontalmente.|
 |CTRL+rotellina del mouse|Diagramma classi|Ingrandisce.|
@@ -60,12 +60,12 @@ Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 |Chiave|Contesto|Descrizione|
 |---------|-------------|-----------------|
 |Tasti di direzione|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
-||Forme di primo livello|Consentono di spostare forme nel diagramma.|
+|Tasti di direzione|Forme di primo livello|Consentono di spostare forme nel diagramma.|
 |MAIUSC+tasti di direzione|All'interno delle forme dei tipi|Creazione della selezione continua costituita da elementi della forma quali membri, tipi nidificati o raggruppamenti. Questi tasti di scelta rapida non supportano il wrapping.|
 |HOME|All'interno delle forme dei tipi|Passa al titolo della forma di primo livello.|
-||Forme di primo livello|Passa alla prima forma del diagramma.|
+|HOME|Forme di primo livello|Passa alla prima forma del diagramma.|
 |FINE|All'interno delle forme dei tipi|Passa all'ultimo elemento visibile all'interno della forma.|
-||Forme di primo livello|Passa all'ultima forma del diagramma.|
+|FINE|Forme di primo livello|Passa all'ultima forma del diagramma.|
 |MAIUSC+HOME|All'interno della forma del tipo|Seleziona gli elementi all'interno della forma a partire dall'elemento corrente e fino a quello in primo piano sulla stessa forma.|
 |MAIUSC+END|All'interno della forma del tipo|Uguale a MAIUSC+HOME ma dall'alto verso il basso.|
 |INVIO|Tutti i contesti|Richiama l'operazione predefinita sulla forma, che è disponibile anche tramite doppio clic. Nella maggior parte dei casi si tratta di Visualizza codice, ma per alcuni elementi la definizione è differente (simboli, intestazioni di raggruppamenti, etichette di simboli).|
@@ -75,7 +75,7 @@ Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 |ALT+MAIUSC+L|All'interno delle forme dei tipi + sulle forme dei tipi|Passa al simbolo della forma selezionata, se presente.|
 |ALT+MAIUSC+B|All'interno delle forme dei tipi + sulle forme dei tipi|Se l'elenco di tipi di base è visualizzato sulla forma del tipo e contiene più di un elemento, comprime o espande l'elenco.|
 |DELETE|Sulle forme dei tipi e le forme Commenti|Richiama il comando **Rimuovi dal diagramma**.|
-||Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
+|DELETE|Su tutti gli altri elementi.|Richiama il comando **Delete from Code** (Elimina dal codice) (membri, parametri, associazioni, ereditarietà, etichette di simboli).|
 |CTRL+CANC|Tutti i contesti|Richiama il comando **Delete from Code** (Elimina dal codice) sulla selezione.|
 |TAB|Tutti i contesti|Passa all'elemento figlio successivo all'interno dello stesso elemento padre (supporta il wrapping).|
 |MAIUSC+TAB|Tutti i contesti|Passa all'elemento figlio precedente all'interno dello stesso elemento padre (supporta il wrapping).|

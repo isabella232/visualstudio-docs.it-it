@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a804ea329594a342a91c7f74e9ff32cd0206bed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82303d664245e9f04d13b6ee7ca39d09f43bc003
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per Gestione contenuto della Guida
 
@@ -30,13 +30,13 @@ ms.lasthandoff: 04/26/2018
 
 Sintassi:
 
-```
+```cmd
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint
 ```
 
 Ad esempio:
 
-```
+```cmd
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha
 ```
 

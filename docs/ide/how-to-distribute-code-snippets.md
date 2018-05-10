@@ -1,9 +1,8 @@
 ---
-title: 'Procedura: Distribuire frammenti di codice | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Distribuire frammenti di codice'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -15,93 +14,96 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e51abd2aa96c5313dfeeb31aabc492d8cfbcd82d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1841dc30fce8e3799191ff9e2d91b94c7d8ac96b
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
-È sufficiente fornire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con Gestione frammenti di codice. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio, che gli utenti di Visual Studio possono installare.  
 
-Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Individuare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [Visual Studio Downloads](https://www.visualstudio.com/downloads/).  
+È sufficiente fornire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con Gestione frammenti di codice. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio, che gli utenti di Visual Studio possono installare.
 
-## <a name="set-up-the-extension"></a>Configurazione dell'estensione  
-In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo del file con estensione *snippet* è fornito. Non è quindi necessario tornare indietro e crearlo.  
+Per creare estensioni di Visual Studio, è necessario installare Visual Studio SDK. Individuare la versione di VSSDK che corrisponde all'installazione di Visual Studio in [Visual Studio Downloads](https://www.visualstudio.com/downloads/).
 
-1.  Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File** > **Nuovo** > **Progetto** > **Visual C# (o Visual Basic)** > **Extensibility**).  
+## <a name="set-up-the-extension"></a>Configurazione dell'estensione
 
-2.  Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo *VBCodeSnippet.snippet*. Sostituire il contenuto con quanto riportato di seguito.  
+In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Il testo del file con estensione *snippet* è fornito. Non è quindi necessario tornare indietro e crearlo.
 
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <CodeSnippets  
-        xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-      <CodeSnippet Format="1.0.0">  
-        <Header>  
-          <Title>Hello World VB</Title>  
-          <Shortcut>HelloWorld</Shortcut>  
-          <Description>Inserts code</Description>  
-          <Author>MSIT</Author>  
-          <SnippetTypes>  
-            <SnippetType>Expansion</SnippetType>  
-            <SnippetType>SurroundsWith</SnippetType>  
-          </SnippetTypes>  
-        </Header>  
-        <Snippet>  
-          <Code Language="VB">  
-            <![CDATA[Console.WriteLine("Hello, World!")]]>  
-          </Code>  
-        </Snippet>  
-      </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+1.  Creare un nuovo progetto VSIX denominato **TestSnippet**. (**File** > **Nuovo** > **Progetto** > **Visual C# (o Visual Basic)** > **Extensibility**).
 
-#### <a name="set-up-the-directory-structure"></a>Configurazione della struttura di directory  
+2.  Nel progetto **TestSnippet** aggiungere un nuovo file XML e denominarlo *VBCodeSnippet.snippet*. Sostituire il contenuto con quanto riportato di seguito.
 
-1.  In **Esplora soluzioni** selezionare il nodo del progetto e aggiungere una cartella contenente il nome che si vuole assegnare al frammento di codice in **Gestione frammenti di codice**. In questo caso, dovrebbe essere **HelloWorldVB**.  
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <CodeSnippets
+        xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+      <CodeSnippet Format="1.0.0">
+        <Header>
+          <Title>Hello World VB</Title>
+          <Shortcut>HelloWorld</Shortcut>
+          <Description>Inserts code</Description>
+          <Author>MSIT</Author>
+          <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+            <SnippetType>SurroundsWith</SnippetType>
+          </SnippetTypes>
+        </Header>
+        <Snippet>
+          <Code Language="VB">
+            <![CDATA[Console.WriteLine("Hello, World!")]]>
+          </Code>
+        </Snippet>
+      </CodeSnippet>
+    </CodeSnippets>
+    ```
 
-2.  Spostare il file con estensione *snippet* nella cartella *HelloWorldVB*.  
+### <a name="set-up-the-directory-structure"></a>Configurazione della struttura di directory
 
-3.  Selezionare il file con estensione *snippet* in **Esplora soluzioni** e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.  
+1.  In **Esplora soluzioni** selezionare il nodo del progetto e aggiungere una cartella contenente il nome che si vuole assegnare al frammento di codice in **Gestione frammenti di codice**. In questo caso, dovrebbe essere **HelloWorldVB**.
 
-#### <a name="add-the-pkgdef-file"></a>Aggiunta del file con estensione pkgdef  
+2.  Spostare il file con estensione *snippet* nella cartella *HelloWorldVB*.
 
-1.  Aggiungere un file di testo alla cartella *HelloWorldVB* e denominarlo *HelloWorldVB.pkgdef*. Questo file consente di aggiungere alcune chiavi nel Registro di sistema. In questo caso viene aggiunta una nuova chiave a:  
+3.  Selezionare il file con estensione *snippet* in **Esplora soluzioni** e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.
 
-     `HKCU\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic`  
+### <a name="add-the-pkgdef-file"></a>Aggiunta del file con estensione pkgdef
 
-2.  Aggiungere al file il codice seguente:  
+1.  Aggiungere un file di testo alla cartella *HelloWorldVB* e denominarlo *HelloWorldVB.pkgdef*. Questo file consente di aggiungere alcune chiavi nel Registro di sistema. In questo caso viene aggiunta una nuova chiave a:
 
-    ```  
-    // Visual Basic   
-    [$RootKey$\Languages\CodeExpansions\Basic\Paths]   
-    "HelloWorldVB"="$PackageFolder$"  
-    ```  
+     `HKCU\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic`
 
-    Se si esamina questa chiave, è possibile visualizzare come specificare diverse lingue.  
+2.  Aggiungere al file il codice seguente:
 
-3.  Selezionare il file con estensione *pkgdef* in **Esplora soluzioni** e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.  
+    ```txt
+    // Visual Basic
+    [$RootKey$\Languages\CodeExpansions\Basic\Paths]
+    "HelloWorldVB"="$PackageFolder$"
+    ```
 
-4.  Aggiungere il file con estensione *pkgdef* come una risorsa nel manifesto VSIX. Nel file *source.extension.vsixmanifest* passare alla scheda **Asset** e fare clic su **Nuovo**.  
+    Se si esamina questa chiave, è possibile visualizzare come specificare diverse lingue.
 
-5.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare **Tipo** su **Microsoft.VisualStudio.VsPackage**, **Origine** su **File in filesystem** e **Percorso** su **HelloWorldVB.pkgdef** (che dovrebbe essere visualizzato nell'elenco a discesa).  
+3.  Selezionare il file con estensione *pkgdef* in **Esplora soluzioni** e nella finestra **Proprietà** assicurarsi che **Azione di compilazione** sia impostato su **Contenuto**, **Copia nella directory di output** sia impostato su **Copia sempre** e **Includi in VSIX** sia impostato su **true**.
 
-### <a name="test-the-snippet"></a>Test del frammento di codice  
+4.  Aggiungere il file con estensione *pkgdef* come una risorsa nel manifesto VSIX. Nel file *source.extension.vsixmanifest* passare alla scheda **Asset** e fare clic su **Nuovo**.
 
-1.  A questo punto è possibile assicurarsi che il frammento di codice funzioni nell'istanza sperimentale di Visual Studio. L'istanza sperimentale è una seconda copia di Visual Studio, separata da quella usata per scrivere codice. Consente di lavorare su un'estensione senza impatto sull'ambiente di sviluppo.  
+5.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare **Tipo** su **Microsoft.VisualStudio.VsPackage**, **Origine** su **File in filesystem** e **Percorso** su **HelloWorldVB.pkgdef** (che dovrebbe essere visualizzato nell'elenco a discesa).
 
-2.  Compilare il progetto e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.  
+### <a name="test-the-snippet"></a>Test del frammento di codice
 
-3.  Nell'istanza sperimentale, passare a **Strumenti > Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. *HelloWorldVB* verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento *HelloWorldVB*.  
+1.  A questo punto è possibile assicurarsi che il frammento di codice funzioni nell'istanza sperimentale di Visual Studio. L'istanza sperimentale è una seconda copia di Visual Studio, separata da quella usata per scrivere codice. Consente di lavorare su un'estensione senza impatto sull'ambiente di sviluppo.
 
-4.  Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.  
+2.  Compilare il progetto e avviare il debug. Verrà visualizzata una seconda istanza di Visual Studio.
 
-5.  *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**. Verrà visualizzato il seguente codice aggiunto al file:  
+3.  Nell'istanza sperimentale, passare a **Strumenti > Gestione frammenti di codice** e impostare il **linguaggio** su **Basic**. *HelloWorldVB* verrà visualizzato come una delle cartelle e dovrebbe essere possibile espandere la cartella per visualizzare il frammento *HelloWorldVB*.
 
-    ```vb  
-    Console.WriteLine("Hello, World!")  
-    ```  
+4.  Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.
 
-## <a name="see-also"></a>Vedere anche  
-[Frammenti di codice](../ide/code-snippets.md)
+5.  *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**. Verrà visualizzato il seguente codice aggiunto al file:
+
+    ```vb
+    Console.WriteLine("Hello, World!")
+    ```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Frammenti di codice](../ide/code-snippets.md)

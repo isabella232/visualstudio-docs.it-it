@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69e57e348692d57baabb0d4f13290913d45f814c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a519de555f35df4fac91a9960993a0f163c4de5a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
 Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```cmd
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
@@ -44,7 +44,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  Ad esempio, per creare un nuovo file di origine [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], per l'argomento /t:`templatename` è necessario immettere quanto segue.
 
-```
+```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
@@ -58,14 +58,14 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
  Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Esempio
  In questo esempio viene creata una nuova pagina Web "test1.htm" e aperta nell'editor del codice sorgente.
 
-```
+```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 

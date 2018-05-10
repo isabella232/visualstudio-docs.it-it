@@ -1,15 +1,14 @@
 ---
-title: Progetti e soluzioni in Visual Studio per Mac
+title: Progetti e soluzioni
 description: Questo documento offre una panoramica di progetti e soluzioni in Visual Studio per Mac.
 author: asb3993
-ms.author: amburns
-ms.date: 04/14/2017
+ms.author: amburns05/06/201804/14/2017
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: a2936427ffa1f6c225d8a84754084287e2ab72c2
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4a9ad4794b75590287df63ba11ba64316531db27
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="projects-and-solutions"></a>Progetti e soluzioni
 
@@ -22,7 +21,3 @@ Per creare un nuovo progetto o una nuova soluzione, vedere l'articolo [Creazione
 ## <a name="project-and-solution-options"></a>Opzioni relative a progetti e soluzioni
 
 È possibile gestire le proprietà di progetti e soluzioni facendo doppio clic sul nome del progetto o della soluzione oppure facendo clic con il pulsante destro del mouse e scegliendo **Opzioni**. Per altre informazioni su queste opzioni, vedere l'articolo [Gestione delle proprietà di soluzioni e progetti](~/managing-solutions-and-project-properties.md).
-
-
-
-

@@ -1,8 +1,8 @@
 ---
-title: Visualizzare uno snapshot tramite il passaggio di IntelliTrace-back - Visual Studio | Documenti Microsoft
+title: Visualizzare uno snapshot tramite il passaggio di IntelliTrace-back
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Visualizzazione di snapshot tramite IntelliTrace passaggio-back in Visual Studio
 
@@ -38,9 +38,20 @@ In questa esercitazione si eseguono le attività seguenti:
 
     ![Abilitare la modalità di eventi IntelliTrace e snapshot](../debugger/media/intellitrace-enable-snapshots.png "modalità attivare eventi di IntelliTrace e snapshot")
 
+1. Se si desidera configurare le opzioni per la visualizzazione snapshot in caso di eccezioni, scegliere **IntelliTrace** > **avanzate** dal **opzioni** finestra di dialogo.
+
+    Queste opzioni sono disponibili a partire da Visual Studio 2017 Enterprise versione 15.7.
+
+    ![Configurare il comportamento per gli snapshot in caso di eccezioni](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Quando si abilita gli eventi e gli snapshot, creazione di snapshot in caso di eccezioni è abilitato anche per impostazione predefinita. È possibile disabilitare gli snapshot in caso di eccezioni deselezionando **raccogliere le istantanee sugli eventi di eccezione**. Quando questa funzionalità è abilitata, vengono acquisiti gli snapshot per le eccezioni non gestite. Per le eccezioni gestite, vengono acquisiti gli snapshot solo se viene generata l'eccezione e se non è generare nuovamente un'eccezione generata in precedenza. È possibile impostare un numero massimo di snapshot in caso di eccezioni selezionando un valore dall'elenco a discesa. Il valore massimo si applica ogni volta che l'app passa alla modalità di interruzione (ad esempio, quando l'applicazione raggiunge un punto di interruzione).
+
+    > [!NOTE]
+    > Creazione di snapshot solo gli eventi di eccezione registrati da IntelliTrace. È possibile specificare gli eventi vengono registrate da IntelliTrace selezionando **Tools** > **opzioni** > **eventi IntelliTrace**.
+
 1. Nel progetto, impostare uno o più punti di interruzione e avviare il debug (premere **F5**), o avviare il debug, l'esecuzione passo passo del codice (**F10** oppure **F11**).
 
-    IntelliTrace accetta uno snapshot del processo dell'applicazione nel debugger di ogni evento di passaggio e punto di interruzione. Questi eventi vengono registrati nella **eventi** nella scheda il **strumenti di diagnostica** finestra, insieme agli altri eventi di IntelliTrace. Per aprire questa finestra, scegliere **Debug** > **Windows** > **Mostra strumenti di diagnostica**.
+    IntelliTrace viene creato uno snapshot del processo dell'applicazione in ogni passaggio debugger, evento punto di interruzione ed eventi di eccezione non gestita. Questi eventi vengono registrati nella **eventi** nella scheda il **strumenti di diagnostica** finestra, insieme agli altri eventi di IntelliTrace. Per aprire questa finestra, scegliere **Debug** > **Windows** > **Mostra strumenti di diagnostica**.
 
     Viene visualizzata un'icona di fotocamera accanto agli eventi per il quale gli snapshot sono disponibili. 
 

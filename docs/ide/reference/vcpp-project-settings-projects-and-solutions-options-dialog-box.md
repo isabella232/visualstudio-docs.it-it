@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Impostazioni progetto di VC++, Progetti e soluzioni, finestra di dialogo Opzioni
 Questa finestra di dialogo consente di definire [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] le impostazioni di build e del progetto relative ai log di compilazione, alle prestazioni e ai tipi di file supportati.
@@ -71,10 +71,10 @@ Questa finestra di dialogo consente di definire [!INCLUDE[vcprvc](../../code-qua
 ## <a name="extensions-to-hide"></a>Estensioni da nascondere
   Specifica le estensioni di file che non verranno visualizzate in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** è abilitata.
 
- ## <a name="build-customization-search-path"></a>Percorso di ricerca per le personalizzazioni delle compilazioni
+## <a name="build-customization-search-path"></a>Percorso di ricerca per le personalizzazioni delle compilazioni
   Specifica l'elenco delle directory che contengono i file con estensione rule, che consentono di definire le regole di compilazione per i progetti.
 
-# <a name="solution-explorer-mode"></a>Modalità Esplora soluzioni
+## <a name="solution-explorer-mode"></a>Modalità Esplora soluzioni
  **Mostra solo i file del progetto**
 
   Configura **Esplora soluzioni** in modo da visualizzare solo i file del progetto.

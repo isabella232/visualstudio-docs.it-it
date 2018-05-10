@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -30,13 +30,13 @@ La finestra **Comando** consente di eseguire i comandi o gli alias direttamente 
 ## <a name="displaying-the-values-of-variables"></a>Visualizzazione dei valori delle variabili
  Per controllare il valore di una variabile `varA`, usare il [comando Stampa](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Il punto interrogativo (?) è un alias di `Debug.Print`. Questo comando può quindi essere scritto anche nel modo seguente:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ La finestra **Comando** consente di eseguire i comandi o gli alias direttamente 
 ## <a name="parameters-switches-and-values"></a>Parametri, opzioni e valori
  Per alcuni comandi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] esistono argomenti, opzioni e valori obbligatori e facoltativi. Quando si usano questi comandi, vengono applicate alcune regole. Di seguito è riportato un esempio di un comando complesso con lo scopo di chiarirne la terminologia.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale val
 ## <a name="escape-characters"></a>Caratteri di escape
  Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

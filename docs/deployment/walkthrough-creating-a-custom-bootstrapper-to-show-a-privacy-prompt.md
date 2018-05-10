@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creazione di un programma di avvio automatico personalizzato per visualizzare l'informativa sulla Privacy dei messaggi di richiesta | Documenti Microsoft"
+title: 'Procedura dettagliata: Creare un programma di avvio automatico personalizzato con un prompt di privacy | Documenti Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procedura dettagliata: Creare un programma di avvio automatico personalizzato con un prompt di privacy
 È possibile configurare le applicazioni ClickOnce per aggiornare automaticamente quando gli assembly con le versioni più recenti di file e le versioni di assembly disponibili. Per assicurarsi che i clienti di consenso per questo comportamento, è possibile visualizzare un prompt di privacy a essi. Quindi, è possibile scegliere se concedere l'autorizzazione per l'applicazione per aggiornare automaticamente. Se l'applicazione non è consentito l'aggiornamento automatico, non viene installato.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Creazione di una finestra di dialogo di consenso aggiornamento  
+## <a name="create-an-update-consent-dialog-box"></a>Creare una finestra di dialogo di consenso di aggiornamento  
  Per visualizzare un prompt di privacy, creare un'applicazione che richiede il lettore per il consenso per gli aggiornamenti automatici per l'applicazione.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Per creare una finestra di dialogo di consenso  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/19/2018
   
 26. Nel **compilare** menu, fare clic su **Compila soluzione**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Creazione del pacchetto del programma di avvio automatico personalizzato  
+## <a name="create-the-custom-bootstrapper-package"></a>Creare il pacchetto di programma di avvio automatico personalizzato  
  Per visualizzare il prompt di privacy per gli utenti finali, è possibile creare un pacchetto del programma di avvio automatico personalizzato per l'applicazione della finestra di dialogo di consenso aggiornamento e includerlo come prerequisito in tutte le applicazioni ClickOnce.  
   
  Questa procedura viene illustrato come creare un pacchetto del programma di avvio automatico personalizzato creando i documenti seguenti:  
@@ -228,7 +228,7 @@ ms.lasthandoff: 04/19/2018
   
 6.  Se necessario, creare un nuovo file manifesto di package e un nuovo documento eula.rtf per le condizioni di licenza software per ognuna delle impostazioni locali. Ad esempio, se si crea una sottodirectory per le impostazioni locali fr e de, creare i file manifesto separato package.xml e condizioni di licenza software e salvarli in sottodirectory fr e de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Impostazione dell'applicazione di consenso di aggiornamento come prerequisito  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Impostare l'applicazione di fornire il consenso aggiornamento come prerequisito  
  In Visual Studio, è possibile impostare l'applicazione di consenso all'aggiornamento come prerequisito.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Per impostare l'applicazione di consenso di aggiornamento come prerequisito  
@@ -246,7 +246,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  Fare clic su **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Creare e testare il programma di installazione  
+## <a name="create-and-test-the-setup-program"></a>Creare e testare il programma di installazione  
  Dopo aver impostato l'applicazione di consenso all'aggiornamento come prerequisito, è possibile generare il programma di installazione e il programma di avvio automatico per l'applicazione.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Per creare e testare il programma di installazione, non fare clic su accetto  
