@@ -1,7 +1,7 @@
 ---
-title: Creare modelli di elementi per Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Creare modelli di elemento per Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,11 +9,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c5c29dde308c4e3720195924bd40db4e880e4b2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -126,6 +126,6 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
-[Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)  
-[Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)

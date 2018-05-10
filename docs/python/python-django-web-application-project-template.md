@@ -1,24 +1,25 @@
 ---
 title: Modello di progetto Web Django per Python
 description: Panoramica dei modelli di Visual Studio per le applicazioni Web scritte in Python con il framework Django.
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
+author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c5b64e6f14ef8a6d8015f27252374e54a6dd764
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 
-[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include un modello di progetto per configurare la struttura di un'applicazione Web basato su Django. Per usare il modello in Visual Studio, selezionare **File > Nuovo > Progetto**, cercare "Django" e selezionare il modello **Progetto Web Django**. Il progetto risultante include il codice boilerplate, nonché un database SQLite predefinito. Il modello **Progetto Web Django vuoto** è simile ma non include il database.
+[Django](https://www.djangoproject.com/) è un framework Python di alto livello progettato per lo sviluppo rapido, sicuro e scalabile di applicazioni Web. Il supporto di Python in Visual Studio include vari modelli di progetto per configurare la struttura di un'applicazione Web basata su Django. Per utilizzare un modello in Visual Studio, selezionare **File** > **Nuovo** > **Progetto**, cercare "Django" e scegliere tra i modelli "Progetto Web Django vuoto", "Progetto Web Django" e "Progetto Web Django di sondaggi". Vedere l'[Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md) per una guida su tutti i modelli.
 
 Visual Studio offre il supporto IntelliSense completo per i progetti Django:
 
@@ -54,10 +55,14 @@ Visual Studio offre anche [supporto completo per il debug](debugging-python-in-v
 
     ![Console](media/template-django-console-sync-db.png)
 
-- **Raccogli file statici**: esegue `manage.py collectstatic --noinput` per copiare tutti i file statici nel percorso specificato da `STATIC_ROOT` nel file `settings.py`. Si noti che durante la [pubblicazione in Microsoft Azure](python-web-application-project-templates.md#publishing-to-azure-app-service) l'operazione di pubblicazione include anche la raccolta automatica dei file statici.
+- **Raccogli file statici**: esegue `manage.py collectstatic --noinput` per copiare tutti i file statici nel percorso specificato da `STATIC_ROOT` nel file `settings.py`. Durante la [pubblicazione in Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) l'operazione di pubblicazione include anche la raccolta automatica dei file statici.
 
     ![Console](media/template-django-console-collect-static.png)
 
 - **Convalida**: esegue `manage.py validate`, che restituisce tutti gli errori di convalida presenti nei modelli installati specificati da `INSTALLED_APPS` nel file `settings.py`:
 
     ![Console](media/template-django-console-validate.png)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md)

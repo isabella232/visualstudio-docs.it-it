@@ -1,7 +1,7 @@
 ---
-title: Organizzare i modelli in Visual Studio| Microsoft Docs
-ms.custom: ''
+title: Organizzare i modelli in Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,11 +13,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 68ba015c1a1eb125f02e65c8a19c6f516e48f72a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare modelli di progetto e modelli di elementi
 
@@ -121,8 +121,8 @@ I modelli inclusi nelle sottocategorie possono essere visualizzati nelle relativ
 
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)  
-[Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)  
-[NumberOfParentCategoriesToRollUp (modelli di Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)  
-[Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)  
-[Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [NumberOfParentCategoriesToRollUp (modelli di Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)

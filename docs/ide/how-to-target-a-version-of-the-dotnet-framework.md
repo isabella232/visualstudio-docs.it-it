@@ -1,7 +1,7 @@
 ---
-title: Scegliere una versione di .NET Framework di destinazione in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Scegliere una versione di .NET Framework di destinazione in Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procedura: Scegliere una versione di .NET Framework di destinazione
 
@@ -69,8 +69,8 @@ Per informazioni su come modificare la versione di destinazione per i progetti C
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica del multitargeting di Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
-[Risolvere i problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
-[Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)  
-[Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Panoramica del multitargeting di Visual Studio](../ide/visual-studio-multi-targeting-overview.md)
+- [Risolvere i problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
+- [Applicazione (pagina), Creazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

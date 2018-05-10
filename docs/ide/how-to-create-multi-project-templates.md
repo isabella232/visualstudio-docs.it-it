@@ -1,9 +1,8 @@
 ---
-title: Creare modelli per più progetti in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Creare modelli per più progetti per Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b3902dd2b6f4dfac72d61d2c4d81937dcbbfdd07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
@@ -26,7 +25,7 @@ Un modello per più progetti contiene due o più modelli di progetto e un modell
 
 I modelli per più progetti funzionano in modo diverso rispetto ai modelli per progetto singolo. Presentano le caratteristiche specifiche seguenti:
 
-- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti nella finestra di dialogo **Nuovo progetto**. Usare l'attributo `ProjectName` nell'elemento `ProjectTemplateLink` del file con estensione *vstemplate* per specificare il nome di ogni progetto.
+- Non è possibile assegnare nomi ai singoli progetti di un modello per più progetti nella finestra di dialogo **Nuovo progetto**. Usare invece l'attributo `ProjectName` nell'elemento `ProjectTemplateLink` del file con estensione *vstemplate* per specificare il nome di ogni progetto.
 
 - I modelli per più progetti possono contenere progetti per linguaggi diversi, ma l'intero modello può essere inserito in una sola categoria. Specificare la categoria del modello nell'elemento `ProjectType` del file con estensione *vstemplate*.
 
@@ -34,7 +33,7 @@ Un modello per più progetti deve includere gli elementi seguenti, compressi in 
 
 - Un file radice con estensione *vstemplate* per l'intero modello per più progetti. Il file radice con estensione *vstemplate* contiene metadati visualizzati dalla finestra di dialogo **Nuovo progetto** e specifica la posizione dei file con estensione *vstemplate* dei progetti nel modello. Questo file deve trovarsi nella radice del file con estensione *zip*.
 
-- Due o più cartelle che contengono i file necessari per un modello di progetto completo. Sono inclusi tutti i file di codice per il progetto e un file con estensione *vstemplate* per il progetto.
+- Due o più cartelle che contengono i file necessari per un modello di progetto completo. Le cartelle includono tutti i file di codice per il progetto e un file con estensione *vstemplate* per il progetto.
 
 Ad esempio, il file con estensione *zip* di un modello per più progetti con due progetti può includere i file e le directory seguenti:
 
@@ -105,10 +104,10 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
 
 ## <a name="two-project-example"></a>Esempio con due progetti
 
-Questo esempio illustra un file radice con estensione *vstemplate* per più progetti. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` dell'elemento `ProjectTemplateLink` specifica il nome assegnato al progetto.
+Questo esempio illustra un file radice semplice con estensione *vstemplate* per più progetti. In questo esempio, il modello contiene due progetti `My Windows Application` e `My Class Library`. L'attributo `ProjectName` dell'elemento `ProjectTemplateLink` specifica il nome assegnato al progetto.
 
 > [!TIP]
-> Se l'attributo `ProjectName` non è specificato viene usato come nome del progetto il nome del file con estensione *vstemplate*.
+> Se l'attributo `ProjectName` non è specificato, viene usato come nome del progetto il nome del file con estensione *vstemplate*.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -170,8 +169,8 @@ Questo esempio usa l'elemento `SolutionFolder` per dividere i progetti in due gr
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)  
-[Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)  
-[Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)  
-[Elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
-[Elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [Elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

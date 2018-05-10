@@ -1,7 +1,7 @@
 ---
-title: Creare soluzioni e progetti in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Creare soluzioni e progetti in Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -134,7 +134,7 @@ Per creare un progetto temporaneo, in primo luogo scegliere **Strumenti** > **Op
 
 ## <a name="see-also"></a>Vedere anche
 
-[Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)  
-[Repository open source Microsoft su GitHub](https://github.com/Microsoft)  
-[Esempi di Visual Studio](../ide/visual-studio-samples.md)  
-[Esempi di codice per sviluppatori](https://code.msdn.microsoft.com/)
+- [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
+- [Repository open source Microsoft su GitHub](https://github.com/Microsoft)
+- [Esempi di Visual Studio](../ide/visual-studio-samples.md)
+- [Esempi di codice per sviluppatori](https://code.msdn.microsoft.com/)

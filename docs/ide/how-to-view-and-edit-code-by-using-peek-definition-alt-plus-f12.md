@@ -1,7 +1,7 @@
 ---
-title: Uso di Visualizza definizione in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Uso di Visualizza definizione in Visual Studio
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -65,7 +65,7 @@ Quando si inizia ad apportare modifiche all'interno di una finestra **Visualizza
 
 1. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.
 
-   ![Impostazione dell'opzione Visualizza definizione con clic del mouse](../ide/media/editor_options_peek_view.png)  
+   ![Impostazione dell'opzione Visualizza definizione con clic del mouse](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Tasti di scelta rapida per Visualizza definizione
 
@@ -85,6 +85,6 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 
 ## <a name="see-also"></a>Vedere anche
 
-[Spostarsi all'interno del codice](../ide/navigating-code.md)  
-[Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)  
-[Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)
+- [Spostarsi all'interno del codice](../ide/navigating-code.md)
+- [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)
+- [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)

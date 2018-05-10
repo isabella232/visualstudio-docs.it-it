@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida rapida: creare un progetto Python da un modello in Visual Studio
 
@@ -59,7 +59,7 @@ Dopo aver [installato il supporto di Python in Visual Studio 2017](installing-py
 
 **Risposta**: con il carico di lavoro Python installato, Visual Studio offre diversi modelli di progetto, inclusi quelli per i framework Web [Flask, Bottle e Django](../python/python-web-application-project-templates.md), per i servizi cloud di Azure e per diversi scenari di apprendimento automatico, nonché un modello per creare un progetto da una struttura di cartelle esistente contenente un'app Python. È possibile accedervi tramite la finestra di dialogo **File > Nuovo > Progetto...**  selezionando il nodo del linguaggio **Python** e i relativi nodi figlio.
 
-Visual Studio offre anche diversi file o *modelli di elemento* per creare rapidamente una classe Python, un pacchetto Python, uno unit test Python, un file web.config e altro ancora. Quando è aperto un progetto Python, è possibile accedere ai modelli di elemento tramite il comando di menu **Progetto > Aggiungi nuovo elemento...** .
+Visual Studio offre anche diversi file o *modelli di elemento* per creare rapidamente una classe Python, un pacchetto Python, uno unit test Python, file `web.config` e altro ancora. Quando è aperto un progetto Python, è possibile accedere ai modelli di elemento tramite il comando di menu **Progetto > Aggiungi nuovo elemento**. Vedere il riferimento ai [modelli di elemento](python-item-templates.md).
 
 L'uso di modelli consente di risparmiare una quantità di tempo significativa quando si inizia un progetto o si crea un file. I modelli sono anche un ottimo modo per ottenere informazioni sui diversi tipi di app e strutture di codice. È utile dedicare alcuni minuti alla creazione di progetti ed elementi dai diversi modelli per acquisire familiarità con ciò che questi ultimi hanno da offrire.
 

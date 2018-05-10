@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di Python, passaggio 3, uso della finestra interattiva REPL
-description: Passaggio 3 di un'esercitazione di base per l'utilizzo di Python all'interno di Visual Studio, dedicato alla finestra interattiva REPL di Python.
+title: Esercitazione sull'uso di Python, passaggio 3, uso della finestra interattiva REPL
+description: Passaggio 3 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato alla finestra interattiva REPL di Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a0cbe766f1b31166185275989bfa0678ed50690
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Passaggio 3: Uso della finestra interattiva REPL
 
@@ -89,7 +89,7 @@ La *finestra interattiva* di Visual Studio per Python offre un'esperienza comple
 
 1. Le modifiche appena apportate consentono di usare l'ambiente REPL rapido della finestra interattiva per elaborare i dettagli di una piccola parte di codice e aggiungerla facilmente al file di origine del progetto. Quando si esegue nuovamente il codice con Ctrl+F5 (o **Debug > Avvia senza eseguire debug**), viene visualizzato il risultati desiderato.
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
 > [Esecuzione del codice nel debugger](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

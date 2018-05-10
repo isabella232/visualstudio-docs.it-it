@@ -1,5 +1,5 @@
 ---
-title: Migliorare il tempo di avvio di Visual Studio | Microsoft Docs
+title: Migliorare il tempo di avvio di Visual Studio
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 
@@ -45,7 +46,7 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 
 2. Scegliere l'estensione che si vuole disabilitare, quindi scegliere il pulsante **Disabilita**.
 
-È sempre possibile riabilitare l'estensione per le sessioni future mediante il Gestore estensioni o la finestra di dialogo Gestisci prestazioni di Visual Studio.
+È sempre possibile riabilitare l'estensione per le sessioni future mediante **Gestione estensioni** o la finestra di dialogo **Gestisci prestazioni di Visual Studio**.
 
 ## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Per modificare le impostazioni delle finestre degli strumenti per migliorare i tempi di avvio
 

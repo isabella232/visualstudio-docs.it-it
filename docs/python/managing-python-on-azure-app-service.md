@@ -1,5 +1,5 @@
 ---
-title: Installazione di interpreti e librerie di Python in Servizio app di Azure
+title: Configurazione di Python in Servizio app di Azure
 description: Come installare un interprete e librerie di Python in Servizio app di Azure e configurazione delle applicazioni Web per fare riferimento correttamente a tale interprete.
 ms.date: 09/13/2017
 ms.prod: visual-studio-dev15
@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>Gestione di Python nel servizio app di Azure
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Come configurare un ambiente Python in Servizio app di Azure
 
 Il [servizio app di Azure](https://azure.microsoft.com/services/app-service/) è un'offerta di tipo piattaforma distribuita come servizio per le app Web, siano esse siti accessibili tramite un browser, API REST usate dai client o elaborazioni attivate da eventi. Il servizio app supporta pienamente l'uso di Python per implementare le app.
 

@@ -1,7 +1,7 @@
 ---
 title: Modelli di applicazione Web per Python
 description: Panoramica dei modelli di Visual Studio per applicazioni Web scritte con Python mediante i framework Bottle, Flask e Django, incluse le configurazioni di debug e la pubblicazione in Servizio app di Azure.
-ms.date: 07/13/2017
+ms.date: 04/17/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,37 +11,77 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0abb3752972e90347de2f296c11c86d8335fbb9a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
-Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. È anche possibile usare il modello generico **Progetto Web** per altri framework, come ad esempio Pyramid.
+Python in Visual Studio supporta lo sviluppo di progetti Web nei framework Bottle, Flask e Django, usando modelli di progetto e un'utilità di avvio del debug che può essere configurata in modo da gestire diversi framework. Questi modelli includono un file `requirements.txt` per dichiarare le dipendenze necessarie. Quando si crea un progetto da uno di questi modelli, Visual Studio richiede di installare i pacchetti. Vedere [Installazione dei requisiti di progetto](#installing-project-requirements) più avanti in questo articolo.
 
-Visual Studio non include i framework, che devono essere installati separatamente. A tale scopo, fare clic con il pulsante destro del mouse sul progetto e scegliere **Python > Install/upgrade framework** (Installa/Aggiorna framework).
+È anche possibile usare il modello generico "Progetto Web" per altri framework, ad esempio Pyramid. In questo caso, con il modello non vengono installati framework. In alternativa, installare i pacchetti necessari nell'ambiente in uso per il progetto (vedere [Gestione di ambienti Python](managing-python-environments-in-visual-studio.md)).
 
-Un progetto creato da un modello (accessibile da **File > Nuovo > Progetto**), quando viene eseguito avvia un server Web con una porta locale selezionata in modo causale, apre il browser predefinito durante il debug e consente la pubblicazione diretta in Microsoft Azure.
+## <a name="using-a-project-template"></a>Uso di un modello di progetto
 
-![Nuovi modelli di progetto Web](media/template-web-new-project.png)
+Per creare un progetto da un modello selezionare **File** > **Nuovo** > **Progetto**. Per visualizzare i modelli per i progetti Web, selezionare **Python** > **Web** sul lato sinistro della finestra di dialogo. Quindi, selezionare un modello a scelta, specificare il nome del progetto e della soluzione, impostare le opzioni per una directory soluzione e un repository Git e selezionare **OK**.
 
-I modelli Bottle, Flask e Django includono un sito di base contenente alcune pagine e file statici. Questo codice è sufficiente per avviare ed eseguire il debug del server in locale (in cui è necessario ottenere alcune impostazioni dall'ambiente) e per la distribuzione in Microsoft Azure (in cui è necessario specificare un oggetto [app WSGI](http://www.python.org/dev/peps/pep-3333/)).
+![Finestra di dialogo Nuovo progetto per app Web](media/projects-new-project-dialog-web.png)
+
+Il modello "Progetto Web" generico, citato in precedenza, mette a disposizione solo un progetto Visual Studio vuoto senza codice e né alcuna premessa, tranne che si tratta di un progetto di Python. Per informazioni dettagliate sul modello "Servizio Cloud Azure", vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).python-azure-cloud-service-project-template.md
+
+Tutti gli altri modelli sono basati su framework Web Bottle, Flask o Django e rientrano in tre categorie generali come descritto nelle sezioni seguenti. Le app create con uno di questi modelli contengono codice sufficiente per eseguire l'app in locale ed eseguirne il debug. Ognuno di essi fornisce inoltre l'[oggetto app WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) necessario per la [pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+### <a name="blank-group"></a>Gruppo vuoto
+
+Tutti i modelli "Progetto Web (framework) vuoto" creano un progetto con una quantità minima più o meno grande di codice boilerplate e le dipendenze necessarie dichiarate in un file `requirements.txt`.
+
+| Modello | Descrizione |
+| --- | --- |
+| Progetto Web Bottle vuoto | Genera un'app minima in `app.py` con una home page per `/` e una pagina `/hello/<name>` che restituisce `<name>` utilizzando un modello di pagina inline molto breve. |
+| Progetto Web Django vuoto | Genera un progetto Django con la struttura fondamentale del sito Django ma nessuna app Django. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 1 dell'esercitazione su Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
+| Progetto Web Flask vuoto | Genera un'app minima con un'unica pagina "Hello World!" per `/`. Questa app è simile al risultato che si ottiene seguendo i passaggi dettagliati nella [Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio](../ide/quickstart-python.md?context=visualstudio/python/default).
+
+### <a name="web-group"></a>Gruppo Web
+
+Tutti i modelli "Progetto Web (framework)" creano un'app Web di base con una struttura identica indipendentemente dal framework scelto. L'app prevede le pagine Home, Informazioni e Contatti, una barra di navigazione e una struttura reattiva basata su bootstrap. Ogni app è configurata in modo appropriato per i file statici server (CSS, JavaScript e i tipi di carattere) e utilizza un meccanismo per il modello di pagina appropriato per il framework.
+
+| Modello | Descrizione |
+| --- | --- |
+| Progetto Web Bottle | Genera un'app i cui file statici sono contenuti nella cartella `static` e gestiti tramite codice in `app.py`. Il routing per le singole pagine è specificato in `routes.py` e la cartella `views` contiene i modelli di pagina.|
+| Progetto Web Django | Genera un progetto Django e un'app Django con tre pagine, il supporto dell'autenticazione e un database SQLite (ma nessun modello dati). Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 4 dell'esercitazione su Django](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
+| Progetto Web Flask | Genera un'app i cui file statici sono contenuti nella cartella `static`. Il codice in `views.py` gestisce il routing e i modelli di pagina utilizzano il motore Jinja contenuto nella cartella `templates`. Il file `runserver.py` fornisce il codice di avvio. |
+| Progetto Web Flask/Jade | Genera la stessa app creata dal modello "Progetto Web Flask", ma utilizzando il motore di creazione modello Jade. |
+
+### <a name="polls-group"></a>Gruppo di sondaggi
+
+I modelli "Progetto Web (framework) di sondaggi" creano un'app Web di base attraverso la quale gli utenti possono votare domande di sondaggi diversi. Ogni app si basa sulla struttura dei modelli progetto "Web" e usano un database per gestire i sondaggi e le risposte dell'utente. Le app includono modelli di dati appropriati e una speciale pagina dell'app ("/ seed") che carica i sondaggi da un file `samples.json`.
+
+| Modello | Descrizione |
+| --- | --- |
+| Progetto Web Bottle di sondaggi | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli dati e il codice dell'archivio dati sono contenuti nella cartella `models` e il file `settings.py` contiene codice per determinare quale archivio dati viene utilizzato. |
+| Progetto Web Django di sondaggi | Genera un progetto Django e un'app Django con tre pagine e un database SQLite. Include le personalizzazioni per l'interfaccia amministrativa Django che consentono a un amministratore autenticato di creare e gestire i sondaggi. Per altre informazioni, vedere i [modelli Django](python-django-web-application-project-template.md) e il [passaggio 6 dell'esercitazione su Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
+| Progetto Web Flask di sondaggi | Genera un'app che può essere eseguita su un database in memoria, MongoDB o un archivio tabelle di Azure, che viene configurato tramite la variabile di ambiente `REPOSITORY_NAME`. I modelli dati e il codice dell'archivio dati sono contenuti nella cartella `models` e il file `settings.py` contiene codice per determinare quale archivio dati viene utilizzato. L'app utilizza il motore Jinja per i modelli di pagina. |
+| Progetto Web Flask/Jade di sondaggi | Genera la stessa app creata dal modello "Progetto Web Flask di sondaggi", ma utilizzando il motore di creazione modello Jade. |
+
+## <a name="installing-project-requirements"></a>Installazione dei requisiti di progetto
 
 Quando si crea un progetto da un modello specifico del framework, viene visualizzata una finestra di dialogo che consente di installare i pacchetti necessari con pip. Per i progetti Web è inoltre consigliabile usare un [ambiente virtuale](selecting-a-python-environment-for-a-project.md#using-virtual-environments), in modo che durante la pubblicazione del sito Web vengano incluse le dipendenze corrette:
 
 ![Finestra di dialogo in cui è possibile installare i pacchetti necessari per un modello di progetto](media/template-web-requirements-txt-wizard.png)
 
+Se si utilizza il controllo del codice sorgente, è pratica comune omettere la cartella dell'ambiente virtuale in quanto tale ambiente può essere ricreato usando solo `requirements.txt`. Il modo migliore per escludere la cartella consiste innanzitutto nel selezionare **Installazione manuale** nel messaggio visualizzato sopra, quindi disabilitare il commit automatico prima di creare l'ambiente virtuale. Per informazioni dettagliate, vedere [Esercitazione su Django, passaggi 1-2 e 1- 3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+
 Durante la distribuzione nel servizio app di Microsoft Azure, selezionare una versione di Python come [estensione sito](https://aka.ms/PythonOnAppService) e installare manualmente i pacchetti. Dal momento poi che il servizio app di Azure **non** installa automaticamente i pacchetti da un file `requirements.txt` quando viene distribuito da Visual Studio, attenersi ai dettagli di configurazione illustrati in [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-I servizi cloud di Microsoft Azure invece *supportano* il file `requirements.txt`. Per dettagli, vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).
+I servizi cloud di Microsoft Azure invece *supportano* il file `requirements.txt`. Vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md) per informazioni più dettagliate.
 
 ## <a name="debugging"></a>Debug
 
-Quando si avvia un progetto Web per il debug, Visual Studio avvia il server Web in locale e apre il browser predefinito usando l'indirizzo e la porta specificati. Per specificare altre opzioni, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà** e selezionare la scheda **Utilità di avvio Web**:
+Quando si avvia un progetto Web per il debug, Visual Studio avvia un server Web locale su una porta casuale e apre il browser predefinito usando l'indirizzo e la porta specificati. Per specificare altre opzioni, fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà** e selezionare la scheda **Utilità di avvio Web**:
 
-  ![Proprietà dell'utilità di Web per il modello Web generico](media/template-web-launcher-properties.png)
+![Proprietà dell'utilità di Web per il modello Web generico](media/template-web-launcher-properties.png)
 
 Nel gruppo **Debug** specificare le proprietà seguenti:
 
@@ -87,84 +127,23 @@ Per la creazione di app Pyramid è attualmente preferibile usare lo strumento da
   - Argomenti: `Production.ini`
 
 - Gruppo **Comando debug server**:
-    - Comando: `..\env\scripts\pserve-script.py` (script)
-    - Argomenti: `Development.ini`
+  - Comando: `..\env\scripts\pserve-script.py` (script)
+  - Argomenti: `Development.ini`
 
 > [!Tip]
-> È probabilmente necessario configurare la proprietà **Directory di lavoro** del progetto perché le app Pyramid si trovano in genere a un livello di directory inferiore rispetto alla parte superiore dell'albero di origine.
+> È probabilmente necessario configurare la proprietà **Directory di lavoro** del progetto perché le app Pyramid si trovano in genere una cartella sotto la radice del progetto.
 
 ### <a name="other-configurations"></a>Altre configurazioni
 
 Se si vogliono condividere impostazioni personalizzate per un altro framework oppure richiederne altre, aprire una [segnalazione in GitHub](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="publishing-to-azure-app-service"></a>Pubblicazione nel servizio app di Azure
-
-È possibile pubblicare nel servizio app di Azure in due modi. È innanzitutto possibile usare la distribuzione dal controllo del codice sorgente in modo analogo a quanto avviene per altri linguaggi, come descritto nella [documentazione di Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Per pubblicare direttamente da Visual Studio, fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**:
-
-![Comando Pubblica nel menu di scelta rapida di un progetto](media/template-web-publish-command.png)
-
-Dopo aver selezionato il comando, verrà visualizzata una procedura guidata per la creazione di un sito Web o l'importazione delle impostazioni di pubblicazione, la visualizzazione dell'anteprima dei file modificati e la pubblicazione in un server remoto.
-
-Quando si crea un sito nel servizio app, è necessario installare Python e tutti i pacchetti da cui dipende il sito. È possibile pubblicare prima il sito, che però non verrà eseguito fino a quando non si configura Python.
-
-Per installare Python nel servizio app, è consigliabile usare le [estensioni sito](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). Queste estensioni sono copie di [versioni ufficiali](https://www.python.org) di Python, ottimizzate e appositamente preparate per il servizio app di Azure.
-
-Un'estensione del sito può essere distribuita attraverso il [portale di Azure](https://portal.azure.com/). Selezionare il pannello **Strumenti di sviluppo > Estensioni** per il servizio app, selezionare **Aggiungi** e scorrere l'elenco per trovare gli elementi di Python:
-
-![Aggiungere un'estensione sito nel portale di Azure](media/template-web-site-extensions.png)
-
-Se si usano modelli di distribuzione JSON, è possibile specificare l'estensione sito come risorsa del sito:
-
-```json
-{
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "[parameters('siteName')]",
-        "type": "Microsoft.Web/sites",
-        ...
-    },
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "python352x64",
-        "type": "siteextensions",
-        "properties": { },
-        "dependsOn": [
-            "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
-        ]
-    },
-    ...
-}
-```
-
-È infine possibile accedere tramite la [console di sviluppo](https://github.com/projectkudu/kudu/wiki/Kudu-console) e installare un'estensione sito da tale posizione.
-
-Per installare i pacchetti, è al momento consigliabile usare la console di sviluppo dopo aver installato l'estensione sito e aver eseguito pip direttamente. È importante usare il percorso completo di Python per evitare di usare quello errato. Non è inoltre in genere necessario usare un ambiente virtuale. Ad esempio:
-
-```command
-c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-
-c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-```
-
-Quando viene distribuito nel servizio app di Azure, per l'esecuzione del sito si usa Microsoft IIS. Per consentire l'uso del sito con IIS, è necessario aggiungere almeno un file `web.config`. Sono disponibili modelli per alcune destinazioni di distribuzione comuni facilmente modificabili per adattarli ad altri utilizzi. Per accedervi, fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi > Nuovo elemento** (vedere la finestra di dialogo seguente). Per informazioni sulle impostazioni di configurazione disponibili, vedere la [guida di riferimento per la configurazione di IIS](https://www.iis.net/configreference).
-
-![Modelli di elemento di Azure](media/template-web-azure-items.png)
-
-Gli elementi disponibili includono:
-
-- web.config di Azure (FastCGI): consente di aggiungere un file `web.config` per i casi in cui l'app fornisce un oggetto [WSGI](https://wsgi.readthedocs.io/en/latest/) per gestire le connessioni in ingresso.
-- web.config di Azure (HttpPlatformHandler): consente di aggiungere un file `web.config` per i casi in cui l'app usa un socket per rimanere in ascolto delle connessioni in ingresso.
-- web.config di file statici di Azure: se è disponibile uno dei file `web.config` indicati in precedenza, aggiungerlo a una sottodirectory per evitare che venga gestito dall'app.
-- web.config di debug remoto di Azure: consente di aggiungere i file necessari per il debug remoto tramite WebSocket.
-- File di supporto del ruolo Web: contiene gli script di distribuzione predefiniti per i ruoli Web del servizio cloud.
-- File di supporto del ruolo di lavoro: contiene gli script di distribuzione e di avvio predefiniti per i ruoli di lavoro del servizio cloud.
-
-Se si aggiunge il modello `web.config` di debug al progetto e si intende usare il debug remoto di Python, è necessario pubblicare il sito nella configurazione "Debug". Questa impostazione è diversa rispetto alla configurazione attiva corrente della soluzione ed è sempre contraddistinta dal valore predefinito "Versione". Per modificarla, aprire la scheda **Impostazioni** e usare la casella combinata **Configurazione** nella pubblicazione guidata. Per altre informazioni sulla creazione e la distribuzione in app Web di Azure, vedere la [documentazione di Azure](https://azure.microsoft.com/develop/python/):
-
-![Modifica della configurazione di pubblicazione](media/template-web-publish-config.png)
+## <a name="convert-a-project-to-azure-cloud-service"></a>Convertire un progetto in un servizio cloud di Azure
 
 Il comando **Converti in progetto servizio cloud di Microsoft Azure** (immagine seguente) consente di aggiungere un progetto di servizio cloud alla soluzione. Questo progetto include le impostazioni di distribuzione e la configurazione per i servizi e le macchine virtuali da usare. Usare il comando **Pubblica** nel progetto cloud per eseguire la distribuzione nei servizi cloud. Con il comando **Pubblica** nel progetto Python la distribuzione viene ancora eseguita nei siti Web. Per altre informazioni, vedere [Progetti servizio cloud di Azure per Python](python-azure-cloud-service-project-template.md).
 
 ![Comando Converti in progetto servizio cloud di Microsoft Azure](media/template-web-convert-menu.png)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Riferimento ai modelli di elemento](python-item-templates.md)
+- [Pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

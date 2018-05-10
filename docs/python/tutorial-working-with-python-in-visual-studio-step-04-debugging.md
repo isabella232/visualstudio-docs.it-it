@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di Python, passaggio 4, debug
-description: Passaggio 4 di un'esercitazione di base per l'utilizzo di Python all'interno di Visual Studio, su come eseguire il codice Python nel debugger.
+title: Esercitazione sull'uso di Python, passaggio 4, debug
+description: Passaggio 4 della procedura dettagliata di base sulle funzionalità di Visual Studio, dedicato a come eseguire il codice Python nel debugger.
 ms.date: 03/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3241adb4afdc18a8ca9a6d4c75f0ee8c80be7b7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Passaggio 4: Esecuzione del codice nel debugger
 
@@ -100,7 +100,7 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 > [!Tip]
 > In alcune situazioni, come ad esempio quando si verifica un errore durante l'avvio dell'interprete Python stesso, la finestra di output potrebbe essere visualizzata solo per pochissimo tempo e poi chiudersi automaticamente, impedendo la visualizzazione dei messaggi di errore. Se questo dovesse verificarsi, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, selezionare **Proprietà**, selezionare la scheda **Debug**, quindi aggiungere `-i` al campo **Argomenti dell'interprete**. Questo argomento fa sì che l'interprete passi in modalità interattiva dopo il completamento di un programma, mantenendo la finestra aperta fino a quando non viene premuto CTRL+Z, INVIO per chiuderla.
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
 > [Installazione dei pacchetti nell'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

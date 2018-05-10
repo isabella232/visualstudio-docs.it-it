@@ -2,6 +2,7 @@
 title: 'Guida introduttiva: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C# | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Guida introduttiva: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
@@ -54,7 +55,7 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Aggiungere un pulsante all'area di progettazione
 
-1. In **Esplora soluzioni** fare doppio clic su **MainPage.xaml** per aprire una doppia visualizzazione.
+1. In **Esplora soluzioni** fare doppio clic su *MainPage.xaml* per aprire una doppia visualizzazione.
 
   ![Aprire MainPage.xaml da Esplora soluzioni ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
   ![Fare clic su Casella degli strumenti per aprire la relativa finestra a comparsa](../ide/media/uwp-toolbox.png)
 
-  Se l'opzione Casella degli strumenti non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **Visualizza** > **Barra degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
+  Se l'opzione **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **Visualizza** > **Barra degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
 
 3. Fare clic sull'icona **Blocca** per ancorare la Casella degli strumenti.
 
@@ -76,17 +77,17 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
    ![Fare clic sul controllo Pulsante e trascinarlo nell'area di progettazione](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Se si esamina il codice nell'Editor XAML, si noterà che il pulsante è stato aggiunto anche qui:
+  Se si esamina il codice nell'**Editor XAML**, si noterà che il pulsante è stato aggiunto anche qui:
 
   ![Fare clic sul controllo Pulsante e trascinarlo nell'area di progettazione](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Aggiungere un'etichetta al pulsante
 
-1. Nell'Editor XAML modificare il valore di Button Content da "Button" a "Hello World!"
+1. Nell'**Editor XAML** modificare il valore di Button Content da "Button" a "Hello World!"
 
    ![Modificare il valore di Button Content in Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Anche il pulsante nella finestra di progettazione XAML viene modificato.
+2. Anche il pulsante nella **finestra di progettazione XAML** viene modificato.
 
    ![Il pulsante diventa Hello World nell'area di progettazione](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Il termine "gestore dell'evento" sembra qualcosa di complesso, ma in realtà è 
 
 1. Fare doppio clic sul pulsante nell'area di progettazione.
 
-2.  Modificare il codice del gestore dell'evento in *MainPage.xaml.cs*, il file code-behind.
+2. Modificare il codice del gestore dell'evento in *MainPage.xaml.cs*, il file code-behind.
 
  E qui le cose si fanno interessanti. Il gestore dell'evento predefinito ha l'aspetto seguente:
 
@@ -121,7 +122,7 @@ Il termine "gestore dell'evento" sembra qualcosa di complesso, ma in realtà è 
 
 #### <a name="what-did-we-just-do"></a>Riepilogo dell'operazione eseguita
 
-Il codice usa alcune API Windows per creare un oggetto di sintesi vocale e assegnare un testo da pronunciare a tale oggetto. Per altre informazioni sull'uso di SpeechSynthesis, vedere <xref:System.Speech.Synthesis>.
+Il codice usa alcune API Windows per creare un oggetto di sintesi vocale e assegnare un testo da pronunciare a tale oggetto. Per altre informazioni sull'uso di `SpeechSynthesis`, vedere <xref:System.Speech.Synthesis>.
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 

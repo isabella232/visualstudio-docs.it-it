@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Introduzione a C# e ad ASP.NET Core in Visual Studio
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Introduzione a C# e ad ASP.NET Core in Visual Studio
 In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual Studio si creerà un'app Web ASP.NET Core C# e si aggiungerà codice all'app. Si esploreranno poi alcune funzionalità dell'ambiente IDE e si eseguirà l'app.
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
@@ -61,7 +61,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
    ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
-1. Chiudere la finestra di dialogo **Nuovo progetto** e dalla barra dei menu superiore scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
+1. Chiudere la finestra di dialogo **Nuovo progetto** e sulla barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
 
 2. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web** e quindi scegliere **Modifica**.   
 
@@ -86,15 +86,15 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
 
     ![Esplora soluzioni di ASP.NET in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Aprire il file **HomeController.cs** dalla cartella **Controller**.
+1. Aprire il file *HomeController.cs* dalla cartella **Controller**.
 
       ![File HomeController.cs in Esplora soluzioni in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Visualizzare il file **HomeController.cs**
+2. Visualizzare il file *HomeController.cs*
 
   ![HomeController.cs nella finestra del codice di Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Il progetto ha anche una cartella **Visualizzazioni** contenente altre cartelle mappate a ognuno dei controller, oltre a una cartella per le visualizzazioni **condivise**. Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso **/Home/About** si troverebbe in **Visualizzazioni/Home/About.cshtml**. Aprire il file.
+4. Il progetto ha anche una cartella **Visualizzazioni** contenente altre cartelle mappate a ognuno dei controller, oltre a una cartella per le visualizzazioni **condivise**. Ad esempio, il file CSHTML (estensione del linguaggio HTML) di visualizzazione per il percorso */Home/About* si troverebbe in *Visualizzazioni/Home/About.cshtml*. Aprire il file.
 
   ![File About.cshtml in Esplora soluzioni in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -103,13 +103,13 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
   ![About.cshtml nella finestra del codice di Visual Studio](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
- > Per altre informazioni, vedere la pagina [Introduzione a C# e ASP.NET tramite la sintassi Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+ > Per altre informazioni, vedere la pagina [Introduzione a C# e Web ASP.NET usando la sintassi Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-6. La soluzione contiene anche una cartella **wwwroot** per il sito Web. È possibile inserire contenuto statico del sito, ad esempio fogli di stile CSS, immagini e librerie JavaScript, direttamente nei percorsi ad essi destinati al momento della distribuzione del sito stesso.
+6. La soluzione contiene anche una cartella *wwwroot* per il sito Web. È possibile inserire contenuto statico del sito, ad esempio fogli di stile CSS, immagini e librerie JavaScript, direttamente nei percorsi ad essi destinati al momento della distribuzione del sito stesso.
 
  ![Cartella wwwroot in Esplora soluzioni in Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. È tuttavia possibile ignorare alcune di queste impostazioni, oppure ignorarle tutte, a seconda dell'ambiente, ad esempio tramite un file **appsettings.Development.json** per l'ambiente **Development**.
+7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in *appsettings.json*. È tuttavia possibile ignorare alcune di queste impostazioni, oppure ignorarle tutte, a seconda dell'ambiente, ad esempio tramite un file *appsettings.Development.json* per l'ambiente **Development**.
 
  ![File di configurazione in Esplora soluzioni in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
 
  ![Selezionare Informazioni su nella finestra del browser per l'app](../ide/media/csharp-aspnet-browser-page.png)
 
- Oltre ad altre operazioni, la pagina Informazioni su nel browser esegue il rendering del testo impostato nel file HomeController.cs.
+ Oltre ad altre operazioni, la pagina **Informazioni su** nel browser esegue il rendering del testo impostato nel file *HomeController.cs*.
 
    ![Visualizzare il testo nella pagina informazioni su](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Mantenere aperta la finestra del browser e tornare a Visual Studio. Aprire il file **Controller/HomeController.cs** se non è già aperto.
+1. Mantenere aperta la finestra del browser e tornare a Visual Studio. Aprire il file *Controller/HomeController.cs* se non è già aperto.
 
  ![Aprire il file HomeController.cs da Esplora soluzioni in Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. Impostare un punto di interruzione nella prima riga del metodo **About**. A tale scopo, fare clic sul margine o posizionare il cursore sulla riga e premere **F9**.
 
-  Questa riga imposta alcuni dati nella raccolta **ViewData** di cui viene eseguito il rendering della pagina CSHTML in **Visualizzazioni/Home/About.cshtml**.
+  Questa riga imposta alcuni dati nella raccolta **ViewData** di cui viene eseguito il rendering della pagina CSHTML in *Visualizzazioni/Home/About.cshtml*.
 
  ![Impostare un punto di interruzione in corrispondenza della prima riga del metodo About in About.cshtml.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Tornare al browser e aggiornare la pagina Informazioni su. Questa operazione attiverà il punto di interruzione in Visual Studio.
+1. Tornare al browser e aggiornare la pagina **Informazioni su**. Questa operazione attiverà il punto di interruzione in Visual Studio.
 
 1. In Visual Studio far passare il mouse sopra il membro **ViewData** per visualizzarne i dati.
 
@@ -148,7 +148,7 @@ Il criterio MVC consente di creare app più facili da testare e da aggiornare ri
 
 1. Rimuovere il punto di interruzione dell'applicazione con lo stesso metodo usato per aggiungerlo.
 
-1. Aprire **Visualizzazioni/Home/About.cshtml**.
+1. Aprire *Visualizzazioni/Home/About.cshtml*.
 
  ![Selezionare About.cshtml in Esplora soluzioni](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 

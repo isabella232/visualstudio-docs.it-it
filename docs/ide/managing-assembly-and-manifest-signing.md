@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 431daee3571efdab666867dc8e1a3a5d17b92b39
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c06ffe38b0d269562c7315d54da8c4d0a99218f
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 
@@ -38,13 +38,13 @@ La firma con nome sicuro offre un'identità univoca globale per un componente so
 
 È possibile firmare gli assembly .NET e i manifesti dell'applicazione, tra cui:
 
--   file eseguibili (*.exe*)
+-   File eseguibili (*.exe*)
 
--   manifesti dell'applicazione (*.exe.manifest*)
+-   Manifesti dell'applicazione (*.exe.manifest*)
 
--   manifesti della distribuzione (*.application*)
+-   Manifesti della distribuzione (*.application*)
 
--   assembly di componenti condivisi (*.dll*)
+-   Assembly di componenti condivisi (*.dll*)
 
 È necessario firmare i seguenti tipi di asset:
 

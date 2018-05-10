@@ -1,7 +1,7 @@
 ---
-title: Modelli di Visual Studio per progetti e file | Microsoft Docs
-ms.custom: ''
+title: Modelli di Visual Studio per progetti e file
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
 
@@ -52,8 +52,8 @@ Gli starter kit sono modelli avanzati che possono essere condivisi con altri mem
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)  
-[Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)  
-[Parametri di modello](../ide/template-parameters.md)  
-[Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)  
-[Pacchetti NuGet nei modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
+- [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Parametri di modello](../ide/template-parameters.md)
+- [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)
+- [Pacchetti NuGet nei modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

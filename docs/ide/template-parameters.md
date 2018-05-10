@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -34,7 +34,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Per abilitare la sostituzione dei parametri nei modelli
 
-1. Nel file .vstemplate del modello individuare l'elemento `ProjectItem` che corrisponde all'elemento per il quale si desidera attivare la sostituzione dei parametri.
+1. Nel file *.vstemplate* del modello individuare l'elemento `ProjectItem` che corrisponde all'elemento per il quale si vuole abilitare la sostituzione dei parametri.
 
 1. Impostare l'attributo `ReplaceParameters` dell'elemento `ProjectItem` su `true`.
 
@@ -73,7 +73,7 @@ Nella tabella seguente sono elencati i parametri di modello riservati che posson
 
 Oltre ai parametri di modello riservati predefiniti usati durante la sostituzione dei parametri, è possibile specificare i propri valori e i propri parametri di modello. Per altre informazioni, vedere [Elemento CustomParameters (modelli di Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Esempio: uso del nome del progetto per un nome file
+## <a name="example-use-the-project-name-for-a-file-name"></a>Esempio: usare il nome del progetto per un nome file
 
 È possibile specificare nomi di file variabili per gli elementi del progetto usando un parametro nell'attributo `TargetFileName`.
 
@@ -90,7 +90,7 @@ L'esempio seguente specifica che il nome di un file eseguibile usi il nome del p
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Esempio: uso del nome di progetto sicuro per il nome dello spazio dei nomi
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Esempio: usare il nome di progetto sicuro per il nome dello spazio dei nomi
 
 Per usare il nome di progetto sicuro per lo spazio dei nomi in un file di classe C#, usare la sintassi seguente:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-Nel file VSTEMPLATE del modello di progetto includere l'attributo `ReplaceParameters="true"` quando si fa riferimento al file:
+Nel file *.vstemplate* del modello di progetto includere l'attributo `ReplaceParameters="true"` quando si fa riferimento al file:
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ Nel file VSTEMPLATE del modello di progetto includere l'attributo `ReplaceParame
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)
+- [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)

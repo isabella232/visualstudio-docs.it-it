@@ -9,11 +9,11 @@ description: Informazioni su come gli amministratori possono assegnare licenze a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Assegnazione di licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -30,10 +30,10 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
 
 3.  Immettere le informazioni nei campi del modulo per il nuovo sottoscrittore. Se l'organizzazione usa Azure Active Directory, questo campo funge da funzione di ricerca per trovare i contatti nella directory corrente per poter selezionare l'utente corretto nei risultati della ricerca. Una volta selezionata la persona, vengono compilati automaticamente i campi relativi a nome, indirizzo di posta elettronica di accesso e per le notifiche, come visualizzato di seguito. 
 
-    Se l'organizzazione ha un indirizzo di posta elettronica diverso per ricevere gli email rispetto a quello da utilizzare per l'accesso, l'utente ha la possibilità di indicarlo qui. Selezionare il collegamento ipertestuale che indica "L'indirizzo di posta elettronica per le comunicazioni è diverso da quello per l'accesso?". 
+    Se l'organizzazione non usa Azure Active Directory (Azure AD) ma ha un indirizzo di posta elettronica diverso per ricevere gli email rispetto a quello da utilizzare per l'accesso, l'utente ha la possibilità di indicarlo qui. Selezionare il collegamento ipertestuale "Add a different notification email for receiving communication" (Aggiungi un indirizzo di posta elettronica di notifica diverso per la ricezione delle comunicazioni). 
 
     **Accesso ai download:**  
-    Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di controllo Download. Se si sceglie di deselezionare questa casella, l'utente non avrà accesso ai download del software, ma potrà comunque accedere a tutti gli altri vantaggi inclusi nella sottoscrizione. 
+    Se si vuole che il sottoscrittore possa accedere ai download software quando accede al [portale delle sottoscrizioni di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), assicurarsi di lasciare selezionata la casella di attivazione/disattivazione dei download. Se si sceglie di disattivare i download, l'utente non avrà accesso ai download del software, ma potrà comunque accedere a tutti gli altri vantaggi inclusi nella sottoscrizione. 
     
     Dopo aver scelto le opzioni per il sottoscrittore, fare clic su **Aggiungi**.
 
@@ -45,7 +45,7 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
     ![Sottoscrittore aggiunto](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Assegnazioni in blocco
-1.  Per aggiungere contemporaneamente più sottoscrittori, passare alla scheda **Sottoscrittori**. Nella barra multifunzione in alto, fare clic su **Aggiungi in blocco**. 
+1.  Per aggiungere contemporaneamente più sottoscrittori, passare alla scheda **Manage Subscribers** (Gestione sottoscrittori). Nella barra multifunzione in alto, fare clic su **Aggiungi in blocco**. 
 
     ![Aggiungi in blocco](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
 
     ![Carica più sottoscrittori](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  Nel foglio di calcolo Excel, compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. Il riferimento è un campo facoltativo. Se una parte del modello è stata compilata in modo errato, si dovrebbe visualizzare un messaggio di errore che descrive il problema. Salvare il file sul disco rigido al termine dell'operazione.
+3.  Nel foglio di calcolo Excel, compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. Il riferimento è un campo facoltativo. Se una parte del modello è stata compilata in modo errato, si dovrebbe visualizzare un messaggio di errore che descrive il problema. Al termine, salvare il file in locale.
 **Per garantire un caricamento senza errori, osservare le procedure consigliate seguenti:**
     - Verificare che nessuno dei campi modulo contenga virgole.
     - Rimuovere gli spazi prima e dopo i campi del modulo, ad esempio i nomi degli utenti.

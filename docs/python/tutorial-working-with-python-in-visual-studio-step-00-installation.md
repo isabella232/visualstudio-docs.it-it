@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di Python, passaggio 0, installazione
-description: Passaggio 0 (prerequisiti) di un'esercitazione di base per l'utilizzo di Python all'interno di Visual Studio, su come installare il supporto di Python in Visual Studio.
+title: Esercitazione sull'uso di Python, passaggio 0, installazione
+description: Passaggio 0 (prerequisiti di installazione) della procedura dettagliata di base per l'utilizzo di Python in Visual Studio.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d80e95a1418cbd23cbe284671be0a8c44ab4fff2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 314aedd06755fba89c1e7e427613b0cad4e81b12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/19/2018
 
     ![Testare Python nella finestra interattiva](media/installation-interactive-test.png)
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
 > [Passaggio 1: Creare un progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

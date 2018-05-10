@@ -1,9 +1,8 @@
 ---
-title: Ricerca di riferimenti nel codice | Microsoft Docs
-ms.custom: ''
+title: Ricerca di riferimenti nel codice
 ms.date: 09/26/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
@@ -13,40 +12,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c59a73fd0ffa23dd35d989a0fd0a0ae38b2419a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ac09eace078ef60f36bd57e9a2c4a1e5f1c510c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="finding-references-in-your-code"></a>Ricerca di riferimenti nel codice  
-Per trovare i riferimenti a particolari elementi di codice presenti nella codebase è possibile usare il comando **Trova tutti i riferimenti**. Il comando **Trova tutti i riferimenti** è disponibile nel menu di scelta rapida (clic con il pulsante destro del mouse) dell'elemento per il quale si vuole trovare i riferimenti. In alternativa, se si preferisce usare la tastiera, premere **MAIUSC+F12**.  
+# <a name="find-references-in-your-code"></a>Cercare riferimenti nel codice
 
-I risultati vengono visualizzati in una finestra degli strumenti denominata **<element>riferimenti**, in cui *elemento* è il nome dell'elemento cercato. Una barra degli strumenti nella finestra dei **riferimenti** consente di:  
-- Modificare l'ambito della ricerca in un elenco a discesa. È possibile scegliere di eseguire la ricerca solo nei documenti modificati o nell'intera soluzione.  
-- Copiare l'elemento di riferimento selezionato scegliendo il pulsante **Copia**.  
-- Scegliere i pulsanti per passare alla posizione precedente o successiva nell'elenco oppure premere **F8** e **MAIUSC+F8** per eseguire questa operazione.  
-- Rimuovere tutti i filtri applicati ai risultati restituiti scegliendo il pulsante **Cancella tutti i filtri**.  
-- Modificare il raggruppamento degli elementi restituiti scegliendo un'impostazione nell'elenco a discesa **Raggruppa per**.  
-- Mantenere la finestra dei risultati della ricerca corrente scegliendo il pulsante **Mantieni risultati**. Quando si sceglie questo pulsante, i risultati della ricerca corrente rimangono in questa finestra e i nuovi risultati vengono visualizzati in una nuova finestra degli strumenti.  
-- Cercare stringhe nei risultati della ricerca immettendo il testo nella casella di testo **Cerca in Trova tutti i riferimenti**.  
+Per trovare i riferimenti a particolari elementi di codice presenti nella codebase è possibile usare il comando **Trova tutti i riferimenti**. Il comando **Trova tutti i riferimenti** è disponibile nel menu di scelta rapida (clic con il pulsante destro del mouse) dell'elemento per il quale si vuole trovare i riferimenti. In alternativa, se si preferisce usare la tastiera, premere **MAIUSC+F12**.
 
-È anche possibile passare con il puntatore del mouse su un risultato della ricerca per visualizzare un'anteprima del riferimento.  
+I risultati vengono visualizzati in una finestra degli strumenti denominata **<element>riferimenti**, in cui *elemento* è il nome dell'elemento cercato. Una barra degli strumenti nella finestra dei **riferimenti** consente di:
+- Modificare l'ambito della ricerca in un elenco a discesa. È possibile scegliere di eseguire la ricerca solo nei documenti modificati o nell'intera soluzione.
+- Copiare l'elemento di riferimento selezionato scegliendo il pulsante **Copia**.
+- Scegliere i pulsanti per passare alla posizione precedente o successiva nell'elenco oppure premere **F8** e **MAIUSC+F8** per eseguire questa operazione.
+- Rimuovere tutti i filtri applicati ai risultati restituiti scegliendo il pulsante **Cancella tutti i filtri**.
+- Modificare il raggruppamento degli elementi restituiti scegliendo un'impostazione nell'elenco a discesa **Raggruppa per**.
+- Mantenere la finestra dei risultati della ricerca corrente scegliendo il pulsante **Mantieni risultati**. Quando si sceglie questo pulsante, i risultati della ricerca corrente rimangono in questa finestra e i nuovi risultati vengono visualizzati in una nuova finestra degli strumenti.
+- Cercare stringhe nei risultati della ricerca immettendo il testo nella casella di testo **Cerca in Trova tutti i riferimenti**.
 
-![Finestra degli strumenti Trova tutti i riferimenti](../ide/media/vside_findallreferences.png)  
+È anche possibile passare con il puntatore del mouse su un risultato della ricerca per visualizzare un'anteprima del riferimento.
+
+![Finestra degli strumenti Trova tutti i riferimenti](../ide/media/vside_findallreferences.png)
 
 ## <a name="navigate-to-references"></a>Passare ai riferimenti
-Per passare ai riferimenti nella finestra dei **riferimenti** è possibile usare i metodi seguenti:  
+Per passare ai riferimenti nella finestra dei **riferimenti** è possibile usare i metodi seguenti:
 
-- Premere **F8** per passare al riferimento successivo oppure **MAIUSC+F8** per passare al riferimento precedente.  
-- Premere **INVIO** su un riferimento oppure fare doppio clic su di esso per passare al riferimento nel codice.  
-- Nel menu di scelta rapida di un riferimento scegliere i comandi **Vai alla posizione precedente** o **Vai alla posizione successiva**.  
-- Premere i tasti **freccia SU** e **freccia GIÙ**, se sono abilitati nella finestra di dialogo **Opzioni**. Per abilitare questa funzionalità, nella barra dei menu scegliere **Strumenti** > **Opzioni** > **Ambiente** > **Schede e finestre** > **Scheda anteprima** e quindi selezionare le caselle **Consenti apertura nuovi file nella scheda anteprima** e **Anteprima file selezionati in Risultati ricerca**.  
+- Premere **F8** per passare al riferimento successivo oppure **MAIUSC+F8** per passare al riferimento precedente.
+- Premere **INVIO** su un riferimento oppure fare doppio clic su di esso per passare al riferimento nel codice.
+- Nel menu di scelta rapida di un riferimento scegliere i comandi **Vai alla posizione precedente** o **Vai alla posizione successiva**.
+- Premere i tasti **freccia SU** e **freccia GIÙ**, se sono abilitati nella finestra di dialogo **Opzioni**. Per abilitare questa funzionalità, nella barra dei menu scegliere **Strumenti** > **Opzioni** > **Ambiente** > **Schede e finestre** > **Scheda anteprima** e quindi selezionare le caselle **Consenti apertura nuovi file nella scheda anteprima** e **Anteprima file selezionati in Risultati ricerca**.
 
-## <a name="change-reference-groupings"></a>Modificare i raggruppamenti di riferimenti  
-Per impostazione predefinita, i riferimenti sono raggruppati prima in base al progetto e quindi in base alla definizione. È però possibile modificare questo ordine di raggruppamento modificando l'impostazione nell'elenco a discesa**Raggruppa per** sulla barra degli strumenti. Ad esempio, è possibile modificare l'impostazione predefinita **Progetto, quindi definizione** in **Definizione, quindi progetto** o in altre impostazioni.  
+## <a name="change-reference-groupings"></a>Modificare i raggruppamenti di riferimenti
+Per impostazione predefinita, i riferimenti sono raggruppati prima in base al progetto e quindi in base alla definizione. È però possibile modificare questo ordine di raggruppamento modificando l'impostazione nell'elenco a discesa**Raggruppa per** sulla barra degli strumenti. Ad esempio, è possibile modificare l'impostazione predefinita **Progetto, quindi definizione** in **Definizione, quindi progetto** o in altre impostazioni.
 
-I due raggruppamenti predefiniti usati sono **Definizione** e **Progetto**, ma è possibile aggiungerne altri scegliendo il comando **Raggruppamento** nel menu di scelta rapida dell'elemento selezionato. L'aggiunta di più raggruppamenti può essere utile se la soluzione contiene molti file e percorsi.  
+I due raggruppamenti predefiniti usati sono **Definizione** e **Progetto**, ma è possibile aggiungerne altri scegliendo il comando **Raggruppamento** nel menu di scelta rapida dell'elemento selezionato. L'aggiunta di più raggruppamenti può essere utile se la soluzione contiene molti file e percorsi.
 
-## <a name="see-also"></a>Vedere anche  
-[Esplorazione del codice](../ide/navigating-code.md)  
+## <a name="see-also"></a>Vedere anche
+
+- [Esplorazione del codice](../ide/navigating-code.md)

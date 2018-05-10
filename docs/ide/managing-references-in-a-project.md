@@ -1,6 +1,7 @@
 ---
-title: Gestione dei riferimenti in un progetto
+title: Gestire i riferimenti in un progetto
 ms.date: 04/11/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -22,11 +23,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e772f4d861e4b16499ad9be9d7c814320e1a14f9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-references-in-a-project"></a>Gestire i riferimenti in un progetto
 
@@ -54,7 +55,7 @@ Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul no
 
 I progetti della piattaforma UWP (Universal Windows Platform) possono creare riferimenti ad altri progetti UWP nella soluzione oppure a progetti o file binari di Windows 8.1, purché tali progetti non usino API deprecate in Windows 10. Per altre informazioni vedere la pagina relativa al [passaggio da Windows Runtime 8 alla piattaforma UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Se si sceglie di impostare di nuovo Windows 8.1 come destinazione dei progetti di Windows 10, vedere [Conversione, migrazione e aggiornamento dei progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Se si sceglie di reimpostare i progetti Windows 8.1 come progetti di Windows 10, vedere [Trasferire, migrare e aggiornare i progetti di Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ### <a name="extension-sdk-references"></a>Riferimenti all'SDK di estensione
 
@@ -89,9 +90,9 @@ Quando si fa riferimento a un assembly nel progetto, Visual Studio cerca l'assem
 - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti** .
 
 > [!NOTE]
-> - Tutti i progetti contengono un riferimento implicito a mscorlib.
+> - Tutti i progetti contengono un riferimento implicito a **mscorlib**.
 > - Tutti i progetti contengono un riferimento implicito a `System.Core`, anche se `System.Core` è stato rimosso dall'elenco di riferimenti.
-> - I progetti di Visual Basic contengono un riferimento implicito a `Microsoft.VisualBasic`.
+> - I progetti di Visual Basic contengono un riferimento implicito a <xref:Microsoft.VisualBasic>.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Riferimenti a componenti condivisi in fase di esecuzione
 
@@ -111,7 +112,7 @@ Per altre informazioni, vedere [Cenni preliminari sul multitargeting](../ide/vis
 
 I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile crearli tramite la scheda **Progetto** . Visual Studio può trovare un assembly se viene specificato un percorso al progetto.
 
-In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).
+In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory *bin*, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.
@@ -122,5 +123,5 @@ I riferimenti a file sono riferimenti diretti ad assembly esterni al contesto di
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md)
+- [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md)
 - [Procedura: Aggiungere o rimuovere riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

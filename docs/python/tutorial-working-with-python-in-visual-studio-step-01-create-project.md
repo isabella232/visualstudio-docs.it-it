@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di Python, passaggio 1, creazione di un progetto
-description: Passaggio 1 di un'esercitazione di base per l'utilizzo di Python all'interno di Visual Studio, in cui viene illustrata la struttura dell'intera esercitazione con descrizione dei prerequisiti e una procedura dettagliata del processo di creazione di un nuovo progetto Python.
+title: Esercitazione sull'uso di Python, passaggio 1, creazione di un progetto
+description: Panoramica e passaggio 1 della procedura dettagliata di base delle funzionalità di Python in Visual Studio, inclusi i prerequisiti e la creazione di un nuovo progetto Python.
 ms.date: 01/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5857f06deea3bc4e7c8af481330e6c66162e2f2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Uso di Python in Visual Studio
 
@@ -31,9 +31,7 @@ Visual Studio offre un supporto dei linguaggi di prima classe per Python. Comple
 - [Passaggio 5: Installazione di pacchetti e gestione di ambienti Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Passaggio 6: Uso di Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Prerequisiti
-
-- Visual Studio 2017 con carico di lavoro di Python installato. Per le istruzioni, vedere il [passaggio 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Passaggio 1: Creare un nuovo progetto Python
 
@@ -69,7 +67,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene un singo
 
     Fare doppio clic su qualsiasi nodo o elemento in Esplora soluzioni per accedere a un menu di comandi validi. Ad esempio, il comando **Rinomina** consente di modificare il nome di un nodo o di un elemento, inclusi il progetto e la soluzione.
 
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
 > [Scrittura ed esecuzione del codice](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

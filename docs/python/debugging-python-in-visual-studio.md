@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Debug del codice Python
 
@@ -125,7 +125,7 @@ Il comando di menu **Debug > Finestre > Impostazioni eccezioni** consente di vis
 
 La casella di controllo relativa alle singole eccezioni consente di controllare se l'esecuzione del debugger deve essere *sempre* interrotta quando viene generata l'eccezione. Selezionare questa casella se si vuole interrompere più spesso l'esecuzione per una particolare eccezione.
 
-Per impostazione predefinita, la maggior parte delle eccezioni causa un'interruzione quando nel codice sorgente non viene trovato alcun gestore di eccezioni. Per modificare questo comportamento, fare clic con il pulsante destro del mouse su una qualsiasi eccezione e selezionare oppure deselezionare **Continua se non gestita nel codice utente**. Deselezionare questa casella se si vuole interrompere meno spesso l'esecuzione per un'eccezione.
+Per impostazione predefinita, la maggior parte delle eccezioni causa un'interruzione quando nel codice sorgente non viene trovato alcun gestore di eccezioni. Per modificare questo comportamento, fare clic con il pulsante destro del mouse su una qualsiasi eccezione e modificare l'opzione **Continua se non gestita nel codice utente**. Deselezionare questa casella se si vuole interrompere meno spesso l'esecuzione per un'eccezione.
 
 Per configurare un'eccezione che non compare nell'elenco, fare clic sul pulsante **Aggiungi** per aggiungerla. Il nome deve corrispondere al nome completo dell'eccezione.
 

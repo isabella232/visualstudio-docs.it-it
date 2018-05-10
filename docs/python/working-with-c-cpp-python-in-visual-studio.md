@@ -1,6 +1,6 @@
 ---
 title: Uso di C++ e Python
-description: Una procedura dettagliata sulla creazione di un'estensione C++ per Python con Visual Studio, inclusa una procedura dettagliata di debug in modalità mista.
+description: Procedura dettagliata sulla creazione di un'estensione C++ per Python con Visual Studio, incluso il debug in modalità mista.
 ms.date: 04/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2be78ab073d688e8882dcfdedceef6a6fc73bde3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creazione di un'estensione C++ per Python
 

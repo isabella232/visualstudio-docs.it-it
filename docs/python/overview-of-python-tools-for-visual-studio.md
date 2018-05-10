@@ -1,6 +1,6 @@
 ---
 title: Panoramica del supporto di Python in Visual Studio in Windows
-description: Riepilogo delle funzionalità di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS)
+description: Riepilogo delle funzionalità Python di Visual Studio, il miglior ambiente IDE Python per Windows, noto anche come Python Tools for Visual Studio (PTVS).
 ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Utilizzo di Python in Visual Studio (Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Uso di Python in Visual Studio su Windows
 
 Python è un linguaggio di programmazione molto diffuso affidabile, flessibile, facile da imparare, il cui uso è gratuito in tutti i sistemi operativi e supportato sia da un'attiva community di sviluppatori che da numerose librerie gratuite. Python supporta tutte le modalità di sviluppo, tra cui applicazioni Web, servizi Web, app desktop, scripting e calcolo scientifico. Viene usato in molte università, nonché da scienziati e sviluppatori, professionisti e non professionisti. Per altre informazioni sul linguaggio, vedere [python.org](https://www.python.org) e [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python per principianti).
 
@@ -88,6 +88,7 @@ Grazie ai modelli di progetto e di elemento, è possibile automatizzare il proce
 Per ulteriori informazioni:
 
 - Documenti: [Gestione di progetti Python](managing-python-projects-in-visual-studio.md)
+- Documenti: [Riferimento ai modelli di elemento](python-item-templates.md)
 - Documenti: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
 - Documenti: [Uso di C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
 - Documenti generali sulle funzionalità di Visual Studio: [Modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)

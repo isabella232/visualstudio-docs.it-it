@@ -1,6 +1,6 @@
 ---
-title: Come gestire gli ambienti e gli interpreti Python
-description: Come usare la finestra Ambienti Python in Visual Studio per gestire gli ambienti globali e virtuali, configurare gli ambienti personalizzati, installare gli interpreti Python, installare pacchetti, impostare percorsi di ricerca e gestire gli ambienti per i progetti di Visual Studio.
+title: Gestire gli ambienti e gli interpreti Python
+description: Usare la finestra Ambienti Python per gestire ambienti globali, virtuali e Conda, installare pacchetti e interpreti Python e assegnare gli ambienti ai progetti di Visual Studio.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 422503cf1e9332ce2b42674f7a6293e844401772
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>Gestione di ambienti Python in Visual Studio
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
 Un *ambiente* Python è un contesto in cui eseguire il codice Python e include gli ambienti globale, virtuale e Conda. Un ambiente è costituito da un interprete, una libreria (in genere quella standard Python) e un set di pacchetti installati. Questi componenti nel loro insieme determinano la sintassi e i costrutti di linguaggio validi, le funzionalità accessibili del sistema operativo e i pacchetti che è possibile usare.
 

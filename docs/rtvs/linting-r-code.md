@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Lint del codice R in Visual Studio
 
-Il termine lint indica un processo che analizza il codice per individuare potenziali errori, problemi di formattazione e altri elementi superflui nel codice, come spazi vuoti spuri. Il processo di lint favorisce anche il rispetto di determinate convenzioni per la scrittura del codice, ad esempio la denominazione degli identificatori, molto utili all'interno di team o in altre situazioni di sviluppo in collaborazione.
+Il lint analizza il codice per individuare potenziali errori, problemi di formattazione e altri elementi superflui nel codice, come spazi vuoti spuri. Il lint consente inoltre di incoraggiare determinate convenzioni di codifica, ad esempio la modalità di denominazione degli identificatori. Tali convenzioni sono utili nei team e in altre situazioni di collaborazione.
 
 R Tools for Visual Studio (RTVS) offre funzionalità di lint incorporate per R, con un comportamento controllabile tramite un'ampia gamma di opzioni descritte in questo articolo. Queste opzioni sono disponibili in **Strumenti > Opzioni > Editor di testo > R > Lint**.
 
@@ -32,7 +30,7 @@ Dopo l'abilitazione, il lint viene applicato nell'editor durante la digitazione.
 
 ![Esempi di lint per il codice R](media/linting-01.png)
 
-È spesso necessario modificare le opzioni di lint a seconda delle esigenze di un progetto o un file. Ad esempio, il codice di esempio da un corso online potrebbe usare `=` invece di `<-` insieme agli identificatori con convenzione per le maiuscole/minuscole Pascal. Per questo codice verrebbero visualizzati avvisi di lint frequenti, perché le opzioni di lint predefinite contrassegnano questa convenzione per le maiuscole/minuscole. Durante l'utilizzo di tale codice è quindi possibile semplicemente disabilitare le opzioni anziché dedicare a tempo a correggere ogni istanza.
+È spesso necessario modificare le opzioni di lint a seconda delle esigenze di un progetto o un file. Ad esempio, il codice di esempio da un corso online potrebbe usare `=` invece di `<-` insieme agli identificatori con convenzione per le maiuscole/minuscole Pascal. Per questo codice verrebbero visualizzati avvisi di lint frequenti, perché le opzioni di lint predefinite contrassegnano questa convenzione per le maiuscole/minuscole. Durante l'utilizzo di tale codice è quindi possibile disabilitare le opzioni anziché dedicare tempo a correggere ogni istanza.
 
 ## <a name="assignment-group"></a>Gruppo Assegnazione
 

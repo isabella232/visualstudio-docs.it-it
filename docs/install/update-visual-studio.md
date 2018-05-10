@@ -1,7 +1,7 @@
 ---
 title: Aggiornare Visual Studio 2017
 description: Informazioni sulla procedura dettagliata di aggiornamento di Visual Studio alla versione più recente.
-ms.date: 03/06/2018
+ms.date: 04/23/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a524fa630fbe9ea8e1cf4474cab2b7180fe582a8
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aggiornare Visual Studio 2017 alla versione più recente
 
@@ -53,6 +53,9 @@ Quando è disponibile un aggiornamento, in Visual Studio viene visualizzato un f
 
      L'aggiornamento continua. Al termine, verrà riavviato Visual Studio.
 
+     > [!NOTE]
+     > Se si esegue Visual Studio in modalità amministratore, dopo l'aggiornamento è necessario riavviare manualmente Visual Studio.    
+
 ### <a name="use-the-ide"></a>Usare l'IDE
 
 È possibile verificare la disponibilità di un aggiornamento e quindi installarlo dalla barra dei menu in Visual Studio.
@@ -66,6 +69,9 @@ Quando è disponibile un aggiornamento, in Visual Studio viene visualizzato un f
 3. Quando viene visualizzata la finestra di dialogo **Aggiorna** scegliere **Aggiorna adesso**.
 
    L'aggiornamento procede come descritto nella sezione precedente e Visual Studio viene riavviato dopo il corretto completamento dell'aggiornamento.
+
+   > [!NOTE]
+   > Se si esegue Visual Studio in modalità amministratore, dopo l'aggiornamento è necessario riavviare manualmente Visual Studio.  
 
 ### <a name="use-the-visual-studio-installer"></a>Usare il programma di installazione di Visual Studio
 

@@ -11,15 +11,15 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Debug remoto di codice Python in Azure
 
-Il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) include la possibilità di eseguire il debug in remoto del codice Python in esecuzione in Servizio app di Azure. Diversamente dal semplice debug remoto, il computer di destinazione in questo scenario non è accessibile direttamente tramite TCP, quindi Visual Studio fornisce un proxy che espone il protocollo del debugger tramite HTTP. I progetti creati con il modello Web configurano automaticamente questo proxy nel file `web.debug.config` generato. Il debug remoto viene abilitato anche quando si pubblica una configurazione per il debug del progetto, come descritto in [Publishing to Azure App Service](python-web-application-project-templates.md#publishing-to-azure-app-service) (Pubblicazione in Servizio app di Azure).
+Il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) include la possibilità di eseguire il debug in remoto del codice Python in esecuzione in Servizio app di Azure. Diversamente dal semplice debug remoto, il computer di destinazione in questo scenario non è accessibile direttamente tramite TCP, quindi Visual Studio fornisce un proxy che espone il protocollo del debugger tramite HTTP. I progetti creati con il modello Web configurano automaticamente questo proxy nel file `web.debug.config` generato. Il debug remoto viene abilitato anche quando si pubblica una configurazione per il debug del progetto, come descritto in [Pubblicazione nel Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 Dato che il debug remoto di Azure usa WebSocket, è necessario abilitare i socket per il servizio app tramite il [portale di Azure](https://portal.azure.com). Passare a **Impostazioni > Impostazioni applicazione** e impostare **Impostazioni generali > Web Socket** su **Attivato**, quindi selezionare **Salva** per applicare la modifica. (Si noti che le impostazioni **Debug** non sono valide per il debug di Python.)
 

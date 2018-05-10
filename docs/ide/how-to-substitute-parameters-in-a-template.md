@@ -1,9 +1,8 @@
 ---
-title: Aggiungere parametri dei nomi ai modelli di progetti ed elementi in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Aggiungere parametri dei nomi ai modelli di progetti ed elementi in Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 26802b7b5293fd43eb1546290560c5300c360003
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
 
@@ -34,7 +33,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
     namespace $safeprojectname$
     ```
 
-1. Nel file con estensione *vstemplate* del modello individuare l'elemento `ProjectItem` che include il file.
+1. Nel file *vstemplate* del modello individuare l'elemento `ProjectItem` che include il file.
 
 1. Impostare l'attributo `ReplaceParameters` su `true` per l'elemento `ProjectItem`:
 
@@ -44,7 +43,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
-[Parametri di modello](../ide/template-parameters.md)  
-[Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Parametri di modello](../ide/template-parameters.md)
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Elemento ProjectItem (modelli di elemento di Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

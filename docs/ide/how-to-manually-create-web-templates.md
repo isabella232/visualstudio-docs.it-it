@@ -1,9 +1,8 @@
 ---
-title: Creare modelli Web per Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Creare modelli Web per Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f7dcc6f14bc631d4d5880d0d7f1ee123bde0306
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>Procedura: Creare manualmente modelli Web
 
@@ -26,7 +25,7 @@ La creazione di un modello Web è diversa dalla creazione di altri tipi di model
 > [!NOTE]
 > I modelli Web devono contenere un file con estensione *webproj* vuoto a cui si deve fare riferimento nel file con estensione *vstemplate* nell'attributo `File` dell'elemento `Project`. Benché i progetti Web non richiedano un file di progetto *proj*, è necessario creare questo file stub perché il modello Web funzioni correttamente.
 
-### <a name="to-manually-create-a-web-template"></a>Per creare manualmente un modello Web
+## <a name="to-manually-create-a-web-template"></a>Per creare manualmente un modello Web
 
 1. Creare un progetto Web.
 
@@ -85,5 +84,5 @@ L'esempio seguente illustra un file con estensione *vstemplate* di base per un m
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
-[Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)

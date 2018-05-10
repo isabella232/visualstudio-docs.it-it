@@ -1,20 +1,22 @@
 ---
-title: Come segnalare un problema con Visual Studio 2017 | Microsoft Docs
+title: Come segnalare un problema con Visual Studio 2017
+description: Informazioni su come segnalare un problema con Visual Studio 2017 a Microsoft in modo che sia possibile diagnosticarlo e risolverlo.
 ms.custom: ''
 ms.date: 03/11/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Come segnalare un problema con Visual Studio 2017
 
@@ -28,7 +30,7 @@ Se non già stato fatto, effettuare l'accesso a Visual Studio prima di segnalare
 2. Se non si è eseguito l'accesso, fare clic su **Accedi** sul lato destro dello strumento, come illustrato nello screenshot seguente.
 3. Seguire le istruzioni visualizzate per accedere.
 
- ![Accedere per segnalare un problema](../ide/media/sign-in-new-ux.png "Accedere per segnalare un problema")  
+ ![Accedere per segnalare un problema](../ide/media/sign-in-new-ux.png "Accedere per segnalare un problema")
 
 ## Cercare problemi simili e votarli <a name="search_and_vote"></a>
 

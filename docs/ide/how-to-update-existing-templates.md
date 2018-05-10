@@ -1,9 +1,8 @@
 ---
-title: Aggiornare modelli di progetti ed elementi esistenti in Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Aggiornare modelli di progetto e modelli di elemento esistenti in Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-update-existing-templates"></a>Procedura: Aggiornare modelli esistenti
 
@@ -69,8 +68,8 @@ In Visual Studio è disponibile l'**Esportazione guidata modelli** che può esse
 
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)  
-[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
-[Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[Parametri di modello](../ide/template-parameters.md)  
-[Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md)
+- [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Parametri di modello](../ide/template-parameters.md)
+- [Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md)

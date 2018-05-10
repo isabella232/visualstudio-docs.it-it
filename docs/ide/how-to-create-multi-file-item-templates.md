@@ -1,9 +1,8 @@
 ---
-title: Creare modelli di elementi a più file per Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Creazione di modelli di elementi a più file per Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -12,11 +11,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -96,7 +95,7 @@ L'esempio seguente illustra un modello di Windows Form. Quando viene creato un e
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)  
-[Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)  
-[Parametri di modello](../ide/template-parameters.md)  
-[Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
+- [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Parametri di modello](../ide/template-parameters.md)
+- [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md)
