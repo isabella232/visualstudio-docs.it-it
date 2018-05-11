@@ -183,7 +183,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="error-messages"></a>Messaggi di errore  
   
--   Il file ' /_CONTROLTEMPLATES/*\<nome progetto >*/*\<nome della Web Part >*/*\<controllo utente nome >*ascx ' non esiste.  
+-   Il file ' /_CONTROLTEMPLATES/*\<nome progetto >*/*\<nome della Web Part >*/*\<controllo utente nome >* ascx ' non esiste.  
   
 -   Errore del server nell'applicazione '/'.  
   

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a033d8b2709a6eaf871758d1bd46a3ad34f7a08f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Guida rapida: creare un progetto Python da un modello in Visual Studio
 
@@ -74,6 +74,6 @@ L'uso di modelli consente di risparmiare una quantità di tempo significativa qu
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Identificazione manuale di un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Identificazione manuale di un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Installazione del supporto di Python in Visual Studio 2015 e precedenti](installing-python-support-in-visual-studio.md).
 - [Percorsi di installazione](installing-python-support-in-visual-studio.md#install-locations).

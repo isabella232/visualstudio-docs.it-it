@@ -63,7 +63,7 @@ Esistono diversi modi per creare un file di configurazione (con estensione vsct)
   
 1.  Ottenere una copia del linguaggio Perl.  
   
-2.  Ottenere una copia dello script Perl ConvertCTCToVSCT.pl, in genere si trova nel  *\<il percorso di installazione di Visual Studio SDK >*\visualstudiointegration\tools\bin. cartella.  
+2.  Ottenere una copia dello script Perl ConvertCTCToVSCT.pl, in genere si trova nel  *\<il percorso di installazione di Visual Studio SDK >* \visualstudiointegration\tools\bin. cartella.  
   
 3.  Ottenere una copia del file di origine CTC da convertire.  
   

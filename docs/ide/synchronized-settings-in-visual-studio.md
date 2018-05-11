@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d642f580413020d62471b8b5f3ea030da4e39a12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91c8c931d71855913cdfaca4243711c917e3c8b4
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Sincronizzare le impostazioni in Visual Studio
 
@@ -28,17 +28,17 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti.
 
 - Impostazioni di sviluppo. È necessario selezionare un set di impostazioni la prima volta che si esegue Visual Studio, ma è possibile modificare la selezione in qualsiasi momento. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-- Le opzioni seguenti nelle pagine **Strumenti &#124; Opzioni**:
+- Le opzioni seguenti nelle pagine **Strumenti** > **Opzioni**:
 
-    - Impostazioni del **tema** e di maiuscole e minuscole nella barra dei menu nella pagina delle opzioni **Ambiente**, **Generale**
+    - Impostazioni del tema e di maiuscole e minuscole nella barra dei menu nella pagina delle opzioni **Ambiente** > **Generale**
 
-    - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Tipi di carattere e colori**
+    - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Tipi di carattere e colori**
 
-    - Tutti i tasti di scelta rapida nella pagina delle opzioni **Ambiente**, **Tastiera**
+    - Tutti i tasti di scelta rapida nella pagina delle opzioni **Ambiente** > **Tastiera**
 
-    - Tutte le impostazioni nella pagina delle opzioni **Ambiente, Schede e Finestre**
+    - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Schede e finestre**
 
-    - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Avvio**
+    - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Avvio**
 
     - Tutte le impostazioni nelle pagine delle opzioni **Editor di testo**
 
@@ -46,11 +46,11 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti.
 
 - Alias di comandi definiti dall'utente. Per altre informazioni su come definire gli alias di comandi, vedere [Alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- I layout delle finestre definite dall'utente nella pagina **Finestra &#124; Gestisci layout finestra**
+- Layout di finestra definiti dall'utente nella pagina **Finestra** > **Gestisci layout finestra**
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Disattivare le impostazioni sincronizzate per un computer specifico
 
-Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. È possibile disattivare le impostazioni sincronizzate in un computer visitando la pagina **Strumenti &#124; Opzioni &#124; Ambiente&#124; Account** e deselezionando la casella di controllo.  Ad esempio, se si decide di non sincronizzare le impostazioni di Visual Studio nel computer A, nessuna delle modifiche alle impostazioni del computer A verrà visualizzata nel computer B o nel computer C. I computer B e C continueranno a sincronizzarsi tra loro, ma non si sincronizzeranno con il computer A.
+Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. È possibile disattivare le impostazioni sincronizzate in un computer passando alla pagina **Strumenti** > **Opzioni** > **Ambiente** > **Account** e deselezionando la casella di controllo.  Ad esempio, se si decide di non sincronizzare le impostazioni di Visual Studio nel computer A, nessuna delle modifiche alle impostazioni del computer A verrà visualizzata nel computer B o nel computer C. I computer B e C continueranno a sincronizzarsi tra loro, ma non si sincronizzeranno con il computer A.
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Sincronizzare le impostazioni tra prodotti e edizioni della famiglia Visual Studio
 
@@ -58,14 +58,15 @@ Le impostazioni possono essere sincronizzate tra tutte le edizioni di Visual Stu
 
 ## <a name="side-by-side-synchronized-settings"></a>Impostazioni sincronizzate affiancate
 
-In Visual Studio 15.3 e versioni successive, è stata interrotta la condivisione di alcune impostazioni, ad esempio i layout delle finestre degli strumenti, tra diverse installazioni affiancate di Visual Studio 2017 modificando il percorso del file `CurrentSettings.vssettings` in una cartella `%userprofile%\Documents\Visual Studio 2017\Settings`specifica dell'installazione simile a `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings`.
+In Visual Studio 15.3 e versioni successive è stata interrotta la condivisione di alcune impostazioni, ad esempio i layout delle finestre degli strumenti, tra installazioni side-by-side di Visual Studio 2017 modificando la posizione del file *CurrentSettings.vssettings* in *%userprofile%\Documenti\Visual Studio 2017\Settings* in una cartella specifica dell'installazione simile a *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
-**NOTA:** per usare le nuove impostazioni specifiche dell'installazione è necessario eseguire una nuova installazione. Quando si esegue l'aggiornamento di un'installazione Visual Studio 2017 esistente alla versione più recente, verrà usato il percorso condiviso esistente. Se attualmente sono presenti installazioni affiancate di Visual Studio 2017 e si decide di eseguire l'aggiornamento usando il nuovo percorso del file di impostazioni specifico dell'installazione, eseguire i passaggio passaggi riportati:
+> [!NOTE]
+> Per usare le nuove impostazioni specifiche dell'installazione è necessario eseguire una nuova installazione. Quando si esegue l'aggiornamento di un'installazione Visual Studio 2017 esistente alla versione più recente, verrà usato il percorso condiviso esistente. Se attualmente sono presenti installazioni affiancate di Visual Studio 2017 e si decide di eseguire l'aggiornamento usando il nuovo percorso del file di impostazioni specifico dell'installazione, eseguire i passaggio passaggi riportati:
 
-1. Dopo l'aggiornamento, usare la procedura guidata Importazione/Esportazione impostazioni per esportare tutte le impostazioni esistenti in un percorso diverso dalla cartella `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx`.
+1. Dopo l'aggiornamento, usare la procedura guidata **Importazione/Esportazione impostazioni** per esportare tutte le impostazioni esistenti in una posizione fuori dalla cartella *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 2. Aprire il **prompt dei comandi per gli sviluppatori per VS 2017** dell'installazione di Visual Studio aggiornata ed eseguire `devenv /resetuserdata`.
 3. Avviare Visual Studio e importare le impostazioni salvate dal file di impostazioni esportato.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Personalizzazione dell'IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)

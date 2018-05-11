@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="talk-to-us"></a>Comunicazioni con Microsoft
 Microsoft è interessata alle idee degli utenti per migliorare i prodotti e la documentazione. Non possiamo sempre rispondere personalmente, ma ci assicureremo che commenti e suggerimenti vengano inviati alla persona o al team appropriato.  
@@ -35,7 +35,7 @@ Le versioni non definitive di Visual Studio includono una voce di menu **Valuta 
 ## <a name="i-want-to-contact-microsoft-support"></a>Contattare il supporto Microsoft
 Per informazioni sul supporto per Visual Studio, vedere la pagina [Manutenzione dei prodotti Visual Studio e Team Foundation Server](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs).
 
-Per altri prodotti e servizi Microsoft, vedere [Supporto Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) per l'assistenza online.
+Per altri prodotti e servizi Microsoft, vedere [Supporto Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) per assistenza online.
 
 > [!NOTE]
 > Il supporto al di fuori di Stati Uniti e Canada potrebbe variare. Per un elenco di contatti internazionali, vedere [Siti Microsoft nel mondo](http://www.microsoft.com/worldwide/).
@@ -53,4 +53,4 @@ Per condividere domande e risposte con altri sviluppatori, è possibile usare il
 Usare il pulsante per l'invio di commenti e suggerimenti **Questa pagina è stata utile?** nella parte inferiore della pagina. Questo pulsante si trova in tutte le pagine della documentazione. In alternativa, è possibile aggiungere commenti e suggerimenti in qualsiasi pagina di Visual Studio in [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) usando il pulsante **Sign in to give documentation feedback** (Accedi per fornire commenti sulla documentazione), anch'esso disponibile nella parte inferiore della pagina.
 
 ## <a name="see-also"></a>Vedere anche
- [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+[Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)

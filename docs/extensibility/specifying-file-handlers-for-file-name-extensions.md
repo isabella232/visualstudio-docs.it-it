@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |. Extension|ProductName. extension.versionMajor.versionMinor|  
   
- È possibile registrare diverse applicazioni che sono in grado di aprire una particolare estensione di file mediante l'aggiunta di ProgID con controllo delle versioni come valori per il HKEY_CLASSES_ROOT\\*\<estensione >*\OpenWithProgids chiave. Questa chiave del Registro di sistema contiene un elenco di ProgID alternativo associato all'estensione di file. Le applicazioni associate ai ProgID elencati vengono visualizzati nel **Apri con * * * il nome del prodotto* sottomenu. Se viene specificata l'applicazione stessa in entrambe le `OpenWithList` e `OpenWithProgids` chiavi, il sistema operativo unisce i duplicati.  
+ È possibile registrare diverse applicazioni che sono in grado di aprire una particolare estensione di file mediante l'aggiunta di ProgID con controllo delle versioni come valori per il HKEY_CLASSES_ROOT\\*\<estensione >* \OpenWithProgids chiave. Questa chiave del Registro di sistema contiene un elenco di ProgID alternativo associato all'estensione di file. Le applicazioni associate ai ProgID elencati vengono visualizzati nel **Apri con * * * il nome del prodotto* sottomenu. Se viene specificata l'applicazione stessa in entrambe le `OpenWithList` e `OpenWithProgids` chiavi, il sistema operativo unisce i duplicati.  
   
 > [!NOTE]
 >  Il `OpenWithProgids` chiavi è supportata solo in Windows XP. Poiché altri sistemi operativi ignorare questa chiave, non utilizzarlo come la registrazione sola per i gestori di file. Usare questa chiave per fornire una migliore esperienza utente in Windows XP.  

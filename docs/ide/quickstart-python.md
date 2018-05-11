@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c57dab3ac6ca4ee28b568a6fb8004f5559dfed2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c21803f83baaac6a6a5d44764278d35e061d7d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -76,7 +76,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
 **Domanda: dove è possibile trovare altre informazioni su altri pacchetti Python disponibili?**
 
-**Risposta**: visitare la pagina [Python Package Index](https://pypi.python.org/pypi) (Indice dei pacchetti Python).
+**Risposta**: visitare la pagina [Python Package Index](https://pypi.org/) (Indice dei pacchetti Python).
 
 ## <a name="add-a-code-file"></a>Aggiungere un file di codice
 

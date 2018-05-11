@@ -315,7 +315,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
   
    Viene visualizzata la pagina **Registro di sistema dell'applicazione** .  
   
-3. In **Si desidera configurare i dati del Registro di sistema che verranno installati dall'applicazione?**scegliere il pulsante di opzione **Sì** .  
+3. In **Si desidera configurare i dati del Registro di sistema che verranno installati dall'applicazione?** scegliere il pulsante di opzione **Sì** .  
   
 4. Nel **visualizzazione del Registro di sistema del computer di destinazione** elencare, aggiungere la gerarchia principale che attiva il tipo di programma di installazione che si desidera creare.  
   

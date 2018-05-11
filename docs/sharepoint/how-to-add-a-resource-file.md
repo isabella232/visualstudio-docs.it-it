@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Nel **Aggiungi risorsa** finestra di dialogo, scegliere una lingua per il file di risorse, ad esempio inglese (Stati Uniti).  
   
-     Questo passaggio aggiunge un file di risorse globale per la soluzione in formato Resource * x***.*** impostazioni cultura ***.** RESX, ad esempio Resource1-US.  
+     Questo passaggio aggiunge un file di risorse globale per la soluzione in formato Resource * x ***.*** impostazioni cultura ***.** RESX, ad esempio Resource1-US.  
   
 5.  Quando il **Editor risorse** viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aggiungere risorse al file di risorse.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  In **Esplora**, aprire il menu di scelta rapida per il nome di una funzionalità nel **funzionalità** nodo, quindi scegliere **Aggiungi risorsa funzionalità**.  
   
-     Questo passaggio viene aggiunto un file di risorse per la funzionalità nel formato * ResourceFileName***.*** impostazioni cultura ***.** RESX, ad esempio Feature1-US.  
+     Questo passaggio viene aggiunto un file di risorse per la funzionalità nel formato * ResourceFileName ***.*** impostazioni cultura ***.** RESX, ad esempio Feature1-US.  
   
 3.  Quando il **Editor risorse** viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], aggiungere risorse al file di risorse.  
   

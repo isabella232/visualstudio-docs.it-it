@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
 
-In questa esercitazione per Visual Basic (VB), si userà Visual Studio per creare ed eseguire alcune app console diverse ed esplorare nello stesso tempo alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment)](visual-studio-ide.md) di Visual Studio.
+In questa esercitazione per Visual Basic (VB) si userà Visual Studio per creare ed eseguire alcune app console diverse e nel frattempo si esploreranno alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio](visual-studio-ide.md).
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
@@ -55,7 +55,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+2. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *HelloWorld*.  
 
@@ -74,8 +74,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
    ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
-
-1. Chiudere la finestra di dialogo **Nuovo progetto** e dalla barra dei menu superiore scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
+1. Chiudere la finestra di dialogo **Nuovo progetto** e sulla barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
 
 2. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.   
 
@@ -107,7 +106,6 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 5. Premere un tasto qualsiasi per chiudere la finestra della console.
 
 ## <a name="create-a-calculate-this-application"></a>Creare un'applicazione "CalculateThis"
-
 1. Aprire Visual Studio 2017 e quindi sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
 2. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *CalculateThis*.  
@@ -144,5 +142,5 @@ L'esercitazione è stata completata. Per altre informazioni su Visual Basic e su
 * [Guida a Visual Basic](/dotnet/visual-basic/index)
 * [Novità di Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense per i file di codice di Visual Basic](visual-basic-specific-intellisense.md)
-* [Riferimenti per il linguaggio Visual Basic](/dotnet/visual-basic/language-reference/index)
-* Esercitazione video [Visual Basic Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507) (Concetti di base su Visual Basic per principianti)
+* [Informazioni di riferimento per il linguaggio Visual Basic](/dotnet/visual-basic/language-reference/index)
+* Esercitazione video [Visual Basic Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507) (Nozioni fondamentali di Visual Basic per principianti assoluti)
