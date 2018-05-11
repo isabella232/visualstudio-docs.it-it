@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47ac4ff9eee0a3e5cc1d339f5e5def1d6e3b175
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Innanzitutto in fase di distribuzione in Visual Studio
 
@@ -38,7 +38,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 ### <a name="deploy-to-local-folder"></a>Distribuire nella cartella locale
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: utilizzare lo strumento di pubblicazione per distribuire in una cartella locale. Le opzioni disponibili dipendono dal tipo di app. In Esplora risorse, mouse sul progetto e scegliere **pubblica**, quindi scegliere **cartella**. Per ulteriori informazioni, vedere [Distribuisci in una cartella locale](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: utilizzare lo strumento di pubblicazione per distribuire in una cartella locale. Le opzioni disponibili dipendono dal tipo di app. In Esplora soluzioni fare doppio clic su progetto e scegliere **pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Scegliere poi **cartella**. Per ulteriori informazioni, vedere [Distribuisci in una cartella locale](quickstart-deploy-to-local-folder.md).
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
@@ -48,9 +48,11 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 - **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: È possibile utilizzare lo strumento di pubblicazione per distribuire un sito Web con FTP o distribuzione Web. Per ulteriori informazioni, vedere [distribuzione a un sito web](quickstart-deploy-to-a-web-site.md).
 
-    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nello strumento di pubblicazione, scegliere l'opzione desiderato e quindi seguire i passaggi di configurazione.
+    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Nello strumento di pubblicazione, scegliere l'opzione desiderato e quindi seguire i passaggi di configurazione.
 
     ![Scegliere IIS, FTP e così via.](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    Per informazioni sull'importazione di un profilo di pubblicazione in Visual Studio, vedere [importare le impostazioni di pubblicazione e distribuire a IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
     È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per ulteriori informazioni, vedere [servizi e applicazioni web ASP.NET distribuzione](http://www.asp.net/aspnet/overview/deployment).
 
@@ -60,18 +62,16 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 ### <a name="publish-to-azure"></a>Pubblicare in Azure
 
-- **ASP.NET, ASP.NET Core, Python, Node. js e .NET Core** le applicazioni web: È possibile utilizzare lo strumento di pubblicazione per velocizzare la distribuzione di applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Nella finestra di dialogo Pubblica scegliere **servizio App di Microsoft Azure** o **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
+- **ASP.NET, ASP.NET Core, Python, Node. js e .NET Core** le applicazioni web: È possibile utilizzare lo strumento di pubblicazione per velocizzare la distribuzione di applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Nella finestra di dialogo pubblica, scegliere **Microsoft Azure App Service** oppure **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
 
     ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-azure.png "scegliere servizio App di Azure")
 
-    Per pubblicare una macchina virtuale di Azure, scorrere verso destra e selezionare **macchine virtuali di Microsoft Azure**.
+    Per informazioni sull'importazione di un profilo di pubblicazione dal servizio App di Azure per Visual Studio, vedere [importare le impostazioni di pubblicazione e distribuire in Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     Per una rapida introduzione, vedere [Publish to Azure](quickstart-deploy-to-azure.md). Vedere anche [pubblicare un'applicazione ASP.NET di base in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione usando Git, vedere [la distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
 
     > [!NOTE]
     > Se si dispone già di un account Azure, è possibile [iscriverti qui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-- Altri **servizi di Azure**: vedere la specifica [servizio Azure](/azure/#pivot=products) documentazione per diverse opzioni di distribuzione che possono essere supportati da Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
 

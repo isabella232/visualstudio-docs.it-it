@@ -1,7 +1,7 @@
 ---
 title: Distribuire in una cartella locale, Visual Studio | Documenti Microsoft
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Distribuire un'app web o .NET Core in una cartella locale utilizzando lo strumento di pubblicazione di Visual Studio
 
@@ -24,11 +24,17 @@ ms.lasthandoff: 04/19/2018
 
 Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App in Visual Studio. Per Node.js, sono supportati i passaggi, ma l'interfaccia utente è diverso.
 
+## <a name="prerequisites"></a>Prerequisiti
+
+* È necessario disporre di Visual Studio 2017 installato e il **.NET Framework** e il **.NET Core** carico di lavoro di sviluppo installato.
+
+    Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto 
 
 1. In Visual Studio scegliere **File > Nuovo progetto**.
 
-1. In **Visual c#** o **Visual Basic**, scegliere **.NET Core**, quindi nel riquadro centrale scegliere **applicazione Console (.NET Core)**.
+1. Sotto **Visual c#** oppure **Visual Basic**, scegliere **.NET Core**, quindi nel riquadro centrale scegliere **applicazione Console (.NET Core)**.
 
 1. Digitare un nome come **MyLocalApp** e fare clic su **OK**.
 
@@ -40,7 +46,9 @@ Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App i
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png "scegliere pubblica")
 
-1. Nel **pubblica** riquadro scegliere **cartella**.
+1. Se in precedenza è stato configurato alcun profilo di pubblicazione, il **pubblica** viene visualizzato il riquadro. Fare clic su **Crea nuovo profilo**.
+
+1. Nel **selezionare una destinazione di pubblicazione** finestra di dialogo, scegliere **cartella**.
 
     ![Scegliere cartella](../deployment/media/quickstart-publish-folder.png "scegliere cartella")
 

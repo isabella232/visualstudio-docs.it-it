@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Pubblicare un'app web o un'applicazione .NET Core in un sito web tramite lo strumento di pubblicazione di Visual Studio
 
@@ -24,13 +24,19 @@ ms.lasthandoff: 04/19/2018
 
 Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App in Visual Studio. Per Node.js, sono supportati i passaggi, ma l'interfaccia utente è diverso.
 
+## <a name="prerequisites"></a>Prerequisiti
+
+* È necessario disporre di Visual Studio 2017 installato e il **ASP.NET** e **.NET Framework** carico di lavoro di sviluppo. Per un'applicazione .NET Core, è necessario anche il **.NET Core** carico di lavoro.
+
+    Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto 
 
 1. In Visual Studio scegliere **File > Nuovo progetto**.
 
 1. In **Visual c#** o **Visual Basic**, scegliere **Web**, quindi nel riquadro centrale scegliere **applicazione Web ASP.NET (.NET Framework)**(solo c#) o **applicazione Web di ASP.NET Core**, quindi fare clic su **OK**.
 
-1. Scegliere **MVC**, assicurarsi che **Nessuna autenticazione** sia selezionata e quindi fare clic su **OK**.
+1. Scegliere **MVC** (oppure scegliere **applicazione Web (Model-View-Controller)** per .NET Core), verificare che **Nessuna autenticazione** sia selezionata e quindi fare clic su **OK** .
 
 1. Digitare un nome come **MyWebApp** e fare clic su **OK**.
 
@@ -44,7 +50,9 @@ Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App i
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish-aspnet.png "scegliere pubblica")
 
-1. Nel **pubblica** riquadro scegliere **IIS, FTP, e così via**.
+1. Se in precedenza è stato configurato alcun profilo di pubblicazione, il **pubblica** viene visualizzato il riquadro. Fare clic su **Crea nuovo profilo**.
+
+1. Nel **selezionare una destinazione di pubblicazione** finestra di dialogo, scegliere **IIS, FTP, e così via**.
 
     ![Scegliere IIS, FTP e così via](../deployment/media/quickstart-publish-iis-ftp.png "scegliere IIS, FTP e così via.")
 
@@ -56,7 +64,7 @@ Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App i
 
 1. Nel **metodo di pubblicazione** campo, scegliere un metodo, ad esempio **distribuzione Web** o **FTP**.
 
-    Le impostazioni visualizzate accanto corrispondono al metodo di pubblicazione.
+    Le impostazioni visualizzate accanto corrispondono al metodo di pubblicazione. La funzionalità distribuzione Web semplifica la distribuzione di applicazioni Web e siti Web ai server IIS e deve essere installata come un'applicazione nel server. Usare la [installazione guidata piattaforma Web](https://www.microsoft.com/web/downloads/platform.aspx) per installarlo.
 
 1. Configurare le impostazioni necessarie per il metodo di pubblicazione e fare clic su **convalida connessione**.
 
@@ -74,4 +82,7 @@ Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App i
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Distribuire ASP.NET in IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+In questa Guida rapida, è stato descritto come utilizzare Visual Studio per creare un profilo di pubblicazione. È inoltre possibile configurare una pubblicazione profilo tramite l'importazione delle impostazioni di pubblicazione.
+
+> [!div class="nextstepaction"]
+> [Importazione delle impostazioni di pubblicazione e distribuire in IIS](tutorial-import-publish-settings-iis.md)
