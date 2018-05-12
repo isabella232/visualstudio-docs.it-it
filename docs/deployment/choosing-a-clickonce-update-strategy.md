@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Scelta di una strategia di aggiornamento ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può fornire il supporto per gli aggiornamenti automatici delle applicazioni. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] legge periodicamente il file manifesto di distribuzione per vedere se sono disponibili aggiornamenti per l'applicazione. In caso affermativo, la nuova versione dell'applicazione viene scaricata ed eseguita. Per maggiore efficienza, vengono scaricati solo i file che risultano modificati.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Per gli aggiornamenti dell'applicazione è necessario disporre della connettività di rete. In assenza di una connessione di rete, l'applicazione verrà eseguita senza il controllo della disponibilità di aggiornamenti, indipendentemente dalla strategia di aggiornamento prescelta.  
   
 > [!NOTE]
->  In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di <xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. Il `deploymentProvider` elemento corrispondente in Visual Studio per il **percorso di aggiornamento** nel campo di **aggiornamenti** la finestra di dialogo del **pubblica** scheda. Tale regola è relaxed in .NET Framework 3.5. Per ulteriori informazioni, vedere [la distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di <xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. Il `deploymentProvider` elemento corrispondente in Visual Studio per il **percorso di aggiornamento** nel campo di **aggiornamenti** la finestra di dialogo del **pubblica** scheda. Tale regola è relaxed in .NET Framework 3.5. Per ulteriori informazioni, vedere [la distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Controllo della disponibilità di aggiornamenti dopo l'avvio dell'applicazione  
  Se si utilizza questa strategia, l'applicazione tenterà di individuare e leggere il file manifesto di distribuzione in background, mentre è in esecuzione. Se è disponibile un aggiornamento, la volta successiva che l'utente eseguirà l'applicazione verrà chiesto di scaricarlo e installarlo.  

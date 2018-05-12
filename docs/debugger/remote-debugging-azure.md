@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio 2017
 
@@ -110,11 +110,17 @@ Quando si scarica il software, è possibile ricevere le richieste per concedere 
 
 3. Riavviare il sistema (o eseguire **net stop stato /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Facoltativo) Installare Web Deploy 3.6 per i server in Windows Server di Hosting
+
+In alcuni scenari, può risultare più veloce per importare le impostazioni di pubblicazione in Visual Studio anziché configurare manualmente le opzioni di distribuzione. Se si preferisce importare impostazioni anziché configurare il profilo di pubblicazione in Visual Studio di pubblicazione, vedere [importazione delle impostazioni di pubblicazione e distribuire a IIS](../deployment/tutorial-import-publish-settings-iis.md). In caso contrario, rimanere in questo argomento e continuare la lettura. Se si completa l'articolo sull'importazione delle impostazioni di pubblicazione e distribuire l'app correttamente, quindi tornare a questo argomento e avviare nella sezione sul [download di remote tools](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Facoltativo) 3.6 in Windows Server di distribuzione Web di installazione
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Configurare il sito Web di ASP.NET sul computer del Server di Windows
+
+Se si sta importando le impostazioni di pubblicazione, è possibile ignorare questa sezione.
 
 1. Aprire **Gestione Internet Information Services (IIS)** e andare in **Siti**.
 

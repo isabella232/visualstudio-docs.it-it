@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug utilizzando il Debugger JIT di Visual Studio
 Il debug Just-In-Time avvia Visual Studio automaticamente quando si verifica un'eccezione o un arresto anomalo in un'applicazione che è in esecuzione all'esterno di Visual Studio. Ciò consente di testare l'applicazione quando Visual Studio non è in esecuzione e avviare il debug con Visual Studio quando si verifica un problema.
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Just-In-Time, debug, finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Avviso di sicurezza: la connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Avviso di sicurezza: la connessione a un processo appartenente a un utente non attendibile può essere pericolosa. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

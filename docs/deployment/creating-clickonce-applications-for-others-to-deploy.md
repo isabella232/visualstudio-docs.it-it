@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Creazione di applicazioni ClickOnce per la distribuzione da parte di terzi
 Non tutti gli sviluppatori che creano distribuzioni ClickOnce prevede di distribuire le applicazioni stesse. Molti di essi solo pacchetto propria applicazione tramite ClickOnce e quindi passare i file a un cliente, ad esempio un'azienda di grandi dimensioni. Il cliente si assume la responsabilità di ospitare l'applicazione nella propria rete. In questo argomento vengono illustrati alcuni problemi relativi a tali distribuzioni nelle versioni di .NET Framework precedenti alla versione 3.5. Viene quindi illustrata una nuova soluzione fornita utilizzando la nuova funzionalità di "Usa manifesto applicazione per l'attendibilità" in .NET Framework 3.5. Vengono infine con strategie consigliate per la creazione di distribuzioni ClickOnce per i clienti che utilizzano ancora versioni precedenti di .NET Framework.  
@@ -57,7 +57,7 @@ Non tutti gli sviluppatori che creano distribuzioni ClickOnce prevede di distrib
   
  Usando un certificato autofirmato per il manifesto di distribuzione presenta molti vantaggi. Eliminando la necessità per il cliente di ottenere o creare il proprio certificato Authenticode, `<useManifestForTrust>` semplifica la distribuzione per il cliente, consentendo allo sviluppatore di mantenere le proprie identità personalizzazione dell'applicazione. Il risultato è un insieme di distribuzioni con segno che sono più sicure e identità di applicazione univoco. In questo modo si evita il potenziale conflitto che può verificarsi dalla distribuzione della stessa applicazione a più clienti.  
   
- Per informazioni dettagliate su come creare una distribuzione di ClickOnce con `<useManifestForTrust>` abilitata, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce che Does non richiedono nuova firma e che mantiene informazioni sulla personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Per informazioni dettagliate su come creare una distribuzione di ClickOnce con `<useManifestForTrust>` abilitata, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce che Does non richiedono nuova firma e che mantiene informazioni sulla personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Manifesto dell'applicazione come per l'attendibilità in fase di esecuzione  
  Per ottenere una migliore comprensione del funzionamento del manifesto dell'applicazione per la relazione di trust in fase di esecuzione, si consideri l'esempio seguente. Un'applicazione ClickOnce destinate a .NET Framework 3.5 è stata creata da Microsoft. Il manifesto dell'applicazione utilizza il `<useManifestForTrust>` elemento e viene firmato da Microsoft. Adventure Works firma il manifesto di distribuzione utilizzando un certificato autofirmato. Adventure Works i client sono configurati per considerare attendibili tutte le applicazioni firmate da Microsoft.  
@@ -99,6 +99,6 @@ Non tutti gli sviluppatori che creano distribuzioni ClickOnce prevede di distrib
  Lo svantaggio di questo metodo è che richiede il cliente di installare gli strumenti di .NET Framework SDK e disporre di uno sviluppatore o un amministratore di sistema utilizzarli. Alcuni clienti potrebbero richiedere una soluzione che richiede poco o non necessarie competenze tecniche questa parte.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione di applicazioni ClickOnce per il test e i server di produzione senza riapposizione della firma](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Distribuzione di applicazioni ClickOnce per il test e i server di produzione senza riapposizione della firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Procedura dettagliata: distribuzione manuale di una applicazione ClickOnce che non richiede una nuova firma e mantiene le informazioni di personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Procedura dettagliata: distribuzione manuale di una applicazione ClickOnce che non richiede una nuova firma e mantiene le informazioni di personalizzazione](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
