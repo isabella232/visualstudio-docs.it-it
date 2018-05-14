@@ -9,18 +9,18 @@ description: Informazioni su come gli amministratori possono risolvere il proble
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 80420dd72416d5de1a96734ae532cfbad93f68d9
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9f80c335cbbdc56f4d26a73a9565ecb2a102aa6c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Gestione delle sottoscrizioni richieste in eccedenza
 
 Talvolta gli ordini vengono modificati dopo che sono stati aggiunti dei sottoscrittori, con un conseguente numero di sottoscrizioni assegnate superiore alle licenze detenute dall'azienda. In questo caso, la scheda Sottoscrittori mostra un avviso e presenta informazioni aggiuntive. 
 
 > [!NOTE] 
-> Gli scenari con richieste in eccedenza non sono consentiti nei programmi Open License.
+> Gli scenari con richieste in eccedenza non sono consentiti nei programmi Open License.  Inoltre, altri programmi possono visualizzare queste informazioni nel portale in modo diverso. 
 
  ![Avviso di sottoscrizioni richieste in eccedenza](_img\over-claimed\over-claimed-alert.png)
 

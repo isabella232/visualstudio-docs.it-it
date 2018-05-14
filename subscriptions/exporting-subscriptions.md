@@ -9,16 +9,17 @@ description: Informazioni su come esportare un elenco di sottoscrittori e i dett
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3d5ccd8c574ea6b79f164d57c1a5a2f64c4ad28
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 2bdd9d9d77388a1e00bd7ef57071f461a39674e9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="exporting-subscription-information"></a>Esportazione delle informazioni sulle sottoscrizioni
 
-Nel [portale di amministrazione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio è possibile esportare un elenco degli utenti e i dettagli sulle relative assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, download abilitati, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione. 
+Nel [portale di amministrazione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio è possibile esportare un elenco degli utenti e dei dettagli sulle rispettive assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, download abilitati, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione. 
 
-Questa funzionalità è utile per alcuni scenari. È possibile ad esempio tenere traccia delle assegnazioni e delle date di scadenza in modo semplice. Ad esempio, se si vuole tenere traccia delle sottoscrizioni usando gli identificatori GUID anziché BAN, è possibile usare questo report con la formula VLOOKUP in Microsoft Excel per associare i sottoscrittori correttamente.  
+Questa funzionalità è utile per alcuni scenari, ad esempio la verifica delle assegnazioni e delle date di scadenza. Se, ad esempio, si vuole tenere traccia delle assegnazioni delle sottoscrizioni usando gli identificatori GUID anziché i BAN, è possibile usare questo report con la formula CERCA.VERT in Microsoft Excel per associare correttamente i sottoscrittori.  
 
-Per eseguire l'esportazione, è sufficiente selezionare la scheda **Esporta** per scaricare il file nel computer locale. Il file include il nome dell'account di Azure che contiene le sottoscrizioni utente e la data dell'esportazione.  
+Per eseguire l'esportazione, è sufficiente selezionare la scheda **Esporta** per scaricare il file nel computer locale. Il file include il nome del contratto che contiene le sottoscrizioni utente e la data dell'esportazione.  
+        ![Esportare sottoscrittori](_img\exporting-subscriptions\exporting-subscriptions.png)

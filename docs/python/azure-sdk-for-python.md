@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 91f51f91008552e602991505f28ef4f076692f52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58e7f6cd46293573f17c344ffba943d99b55f830
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK per Python
 
@@ -49,7 +49,7 @@ Anche nella sezione [Azure SDK per Python del Centro per sviluppatori Python](ht
 - [Come usare gli argomenti e le sottoscrizioni del bus di servizio](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Gestione dei servizi](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
-Per le API pubbliche senza documentazione, gli unit test nel [repository GitHub dell'SDK](https://github.com/Azure/azure-sdk-for-python) rappresentano una buona fonte di informazioni:
+Per le API pubbliche senza documentazione, gli unit test nel [repository GitHub dell'SDK](https://github.com/Azure/azure-sdk-for-python) sono una buona fonte di informazioni:
 
 - [Unit test per l'archiviazione](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Unit test per il bus di servizio](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
