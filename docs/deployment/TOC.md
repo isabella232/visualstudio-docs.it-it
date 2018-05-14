@@ -14,6 +14,8 @@
 ### [Compilazione di applicazioni ClickOnce dalla riga di comando](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Importare impostazioni di pubblicazione e distribuzione in Azure](tutorial-import-publish-settings-azure.md)
+### [Importare impostazioni di pubblicazione e distribuzione in IIS](tutorial-import-publish-settings-iis.md)
 ### [Distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment)
 ### [Distribuire ASP.NET in IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Nativo
