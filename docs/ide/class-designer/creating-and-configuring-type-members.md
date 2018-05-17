@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Creazione e configurazione di membri di tipi (Progettazione classi)
 È possibile aggiungere questi membri ai tipi in un diagramma classi e configurarli nella finestra **Dettagli classe**:
@@ -57,8 +57,8 @@ ms.lasthandoff: 04/26/2018
 
 |Attività|Contenuto di supporto|
 |----------|------------------------|
-|**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|-   [Apertura della finestra Dettagli classe](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|-   [Creazione di membri](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modifica di membri di tipi](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Aggiunta di parametri a metodi](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|-   [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|-   [Creare membri](creating-and-configuring-type-members.md#create-members)<br />-   [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Aprire la finestra Dettagli classe
 Per impostazione predefinita, la finestra [Dettagli classe](how-to-add-class-diagrams-to-projects.md) viene visualizzata automaticamente quando si apre un nuovo diagramma classi (vedere **Procedura: Aggiungere diagrammi classi ai progetti**). È anche possibile aprire esplicitamente la finestra **Dettagli classe** seguendo le istruzioni riportate di seguito.
@@ -157,7 +157,7 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 
 -   **\<aggiungi membro>**
 
-     L'ultima riga della finestra **Dettagli classe** contiene il testo **\<Aggiungi membro>** nella cella **Nome**. Facendo clic su questa cella, è possibile creare un nuovo membro. Per altre informazioni, vedere [Creazione di membri](creating-and-configuring-type-members.md#CreateMembers).
+     L'ultima riga della finestra **Dettagli classe** contiene il testo **\<Aggiungi membro>** nella cella **Nome**. Facendo clic su questa cella, è possibile creare un nuovo membro. Per altre informazioni, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
 
 -   **Proprietà dei membri nella finestra Proprietà**
 
@@ -207,14 +207,14 @@ Le righe dei parametri contengono i seguenti elementi:
 
 -   **\<aggiungi parametro>**
 
-     L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Proprietà dei parametri nella finestra Proprietà**
 
 Nella finestra Proprietà vengono visualizzate le stesse proprietà dei parametri riportate nella finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
 
 > [!NOTE]
-> Per aggiungere un parametro a un delegato, vedere [Creazione di membri](creating-and-configuring-type-members.md#CreateMembers).
+> Per aggiungere un parametro a un delegato, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]

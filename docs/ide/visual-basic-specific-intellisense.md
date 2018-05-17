@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1334cb7f890f3924ca0720b4704e573a67058356
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense per i file di codice di Visual Basic
 
@@ -38,7 +38,7 @@ I suggerimenti per la sintassi visualizzano la sintassi dell'istruzione che si s
 
 Il completamento può essere disattivato per impostazione predefinita deselezionando **Elenco membri automatico** dalla pagina **Generale** delle proprietà nella cartella **Visual Basic**.
 
-È possibile richiamare manualmente il completamento richiamando Elenca membri, Completa parola o ALT+ FRECCIA DESTRA. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) (Uso di IntelliSense).
+È possibile richiamare manualmente il completamento richiamando Elenca membri, Completa parola o **ALT**+**Freccia DESTRA**. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense sensibile all'area
 
@@ -56,4 +56,4 @@ In Visual Basic gli elenchi di completamento IntelliSense includono due controll
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Usare IntelliSense](../ide/using-intellisense.md)

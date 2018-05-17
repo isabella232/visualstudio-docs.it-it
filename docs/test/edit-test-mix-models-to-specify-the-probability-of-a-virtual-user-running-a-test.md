@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modificare i modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modificare i modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test
 
 Il *modello di combinazione di test* specifica la probabilità che un utente virtuale esegua un determinato test in uno scenario di test di carico. In questo modo, è possibile simulare un carico in maniera più realistica. Anziché avere un unico flusso di lavoro nelle applicazioni, è possibile avere più flussi di lavoro in modo da ottenere una migliore approssimazione della modalità di interazione degli utenti finali con le applicazioni.
 
 ## <a name="test-mix-model-options"></a>Opzioni del modello di combinazione di test
- È possibile specificare una delle seguenti opzioni relative al modello di combinazione di test per lo scenario di test di carico:
+
+È possibile specificare una delle seguenti opzioni relative al modello di combinazione di test per lo scenario di test di carico:
 
 -   **In base al numero totale di test:** determina quali test delle prestazioni Web o unit test vengono eseguiti quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui un determinato test è stato eseguito corrisponde alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione.
 
@@ -79,5 +80,5 @@ Usando l'Editor test di carico è possibile modificare il modello di combinazion
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Modifica di uno scenario di test di carico](../test/edit-load-test-scenarios.md)
+- [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

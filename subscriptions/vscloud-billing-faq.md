@@ -9,11 +9,11 @@ description: Domande sulla fatturazione per sottoscrizioni cloud.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](https://www.visualstudio.com/vs/pricing/) per comprendere i vantaggi di ogni sottoscrizione di Visual Studio, esaminando le differenze tra le sottoscrizioni cloud e standard di Visual Studio, i dettagli dei vantaggi per i sottoscrittori e altri aspetti.
@@ -103,3 +103,9 @@ R: sì è possibile, se il rivenditore partecipa al programma Cloud Solution Pro
 * [Visual Studio Professional annuale](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Visual Studio Enterprise mensile](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
 * [Visual Studio Enterprise annuale](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+
+## <a name="related-resources"></a>Risorse correlate
+
+* [Portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com/)
+* [Supporto per la sottoscrizione di Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)

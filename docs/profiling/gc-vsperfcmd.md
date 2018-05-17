@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ab79ddf73b8481f8393ac39696bc0a5ee74c75
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08c9de6d307b54829e2f0783cf0ff272f399de68
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 L'opzione **GC** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti di .NET Framework. L'opzione **GC** può essere usata solo con il metodo di profilatura del campionamento e solo con l'opzione **Launch**.  
@@ -25,7 +25,7 @@ L'opzione **GC** abilita la raccolta dei dati di allocazione della memoria e dei
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cmd  
 VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]  
 ```  
   
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene avviata un'applicazione e vengono raccolti i dati di allocazione della memoria di .NET Framework.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Launch:TestApp.exe /gc  
 ```  
   

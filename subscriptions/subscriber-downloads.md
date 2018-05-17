@@ -9,11 +9,11 @@ description: Informazioni su come individuare e scaricare i prodotti Microsoft i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.  
@@ -24,7 +24,7 @@ In generale, tutti i prodotti commerciali e consumer di Microsoft utili per prog
 
 I possibili motivi in seguito ai quali determinati prodotti potrebbero non essere disponibili ai sottoscrittori sono diversi:
 
-- **Il prodotto non è incluso nel programma o nel livello di sottoscrizione.** [Leggere altre informazioni](https://www.visualstudio.com/vs/pricing/) sul software e i vantaggi disponibili con la sottoscrizione o [scaricare l’elenco completo](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_) di prodotti disponibili per ogni livello di sottoscrizione. Alcuni programmi, ad esempio [Microsoft Partner Network](https://partner.microsoft.com/), offrono sottoscrizioni di Visual Studio come parte dei relativi vantaggi.  Le sottoscrizioni non comprendono tutti i prodotti inclusi nelle sottoscrizioni di Visual Studio. I sottoscrittori di questi programmi devono indirizzare le proprie domande relative alla disponibilità di download per i prodotti ai team di supporto tecnico dei programmi.
+- **Il prodotto non è incluso nel programma o nel livello di sottoscrizione.** [Leggere altre informazioni](https://www.visualstudio.com/vs/pricing/) sul software e i vantaggi disponibili con la sottoscrizione o [scaricare l’elenco completo](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) di prodotti disponibili per ogni livello di sottoscrizione. Alcuni programmi, ad esempio [Microsoft Partner Network](https://partner.microsoft.com/), offrono sottoscrizioni di Visual Studio come parte dei relativi vantaggi.  Le sottoscrizioni non comprendono tutti i prodotti inclusi nelle sottoscrizioni di Visual Studio. I sottoscrittori di questi programmi devono indirizzare le proprie domande relative alla disponibilità di download per i prodotti ai team di supporto tecnico dei programmi.
 - **Il prodotto non è incluso nelle sottoscrizioni.** Alcuni prodotti Microsoft non sono contenuti nelle sottoscrizioni a causa di speciali condizioni di licenza, restrizioni tecniche o della rilevanza attribuita dallo sviluppatore. Se si intende richiedere l'aggiunta di un prodotto alla sottoscrizione, inviare un messaggio di posta elettronica al [servizio clienti](https://www.visualstudio.com/subscriptions/support/) di Visual Studio locale.
 - **Il prodotto è pubblicamente disponibile.** Alcuni strumenti, SDK, DDK e Service Pack sono disponibili pubblicamente nell'[Area download Microsoft](https://www.microsoft.com/download). Alcuni di tali prodotti potrebbero non essere pubblicati nei Download.
 - **Il prodotto non è ancora stato rilasciato.**  Molte versioni non definitive (beta) e le versioni finali candidate sono disponibili nei download. Non tutte le versioni beta possono tuttavia essere incluse poiché alcune richiedono una registrazione speciale o l'idoneità. Per altre informazioni sui programmi beta tecnici aperti, visitare [Microsoft Connect](http://connect.microsoft.com/).

@@ -2,7 +2,7 @@
 title: Usare i parametri della riga di comando per installare Visual Studio
 description: Informazioni su come usare i parametri della riga di comando per controllare o personalizzare l'installazione di Visual Studio.
 ms.custom: ''
-ms.date: 01/17/2018
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
 
@@ -101,6 +101,10 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--nocache` | **Novità in 15.2, facoltativa**: se presente, i pacchetti vengono eliminati dopo essere stati installati o riparati. Verranno nuovamente scaricati solo se necessario ed eliminati di nuovo dopo l'uso. Sostituisce l'impostazione dei criteri globali usata per installazioni successive, correzioni o modifiche. I criteri predefiniti prevedono di memorizzare i pacchetti nella cache. Questa impostazione viene ignorata per il comando di disinstallazione. Per altre informazioni, leggere come [disabilitare o spostare la cache dei pacchetti](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Novità in 15.2, facoltativa**: se è presente, impedisce al programma di installazione di aggiornarsi quando è specificata la modalità non interattiva. Il programma di installazione non riuscirà a eseguire il comando e restituirà un codice di uscita diverso da zero se è noUpdateInstaller con modalità non interattiva quando è richiesto un aggiornamento del programma di installazione. |
 | `--noWeb` | **Novità in 15.3, facoltativa**: il programma di installazione scarica ora qualsiasi contenuto che viene installato da Internet.  Tutti i contenuti installati devono essere disponibili in un layout offline.  Se nel layout mancano contenuti, il programma di installazione ha esito negativo.  Per altre informazioni, vedere [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **Novità della versione 15.7 (facoltativo)**: vengono usati per specificare percorsi d'installazione personalizzati. I nomi di percorso supportati sono shared, cache e install. |
+| `--path cache=<path>` | **Novità della versione 15.7 (facoltativo)**: vengono usati i percorsi specificati per scaricare i file d'installazione. Questo percorso può essere impostato solo la prima volta in cui viene installato Visual Studio. Esempio: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Novità della versione 15.7 (facoltativo)**: sono contenuti file condivisi per installazioni side-by-side di Visual Studio. Alcuni strumenti e SDK vengono installati in un percorso dell'unità, mentre altri potrebbero sostituire questa impostazione ed essere installati in un'altra unità. Esempio: `--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **Novità della versione 15.7 (facoltativo)**: equivalente a `–-installPath`. In particolare, `--installPath "C:\VS"` e `--path install="C:\VS"` sono equivalenti. È possibile usarne solo uno per volta. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Elenco di ID di carichi di lavoro e ID di componenti
 

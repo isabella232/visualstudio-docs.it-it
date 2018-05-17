@@ -1,6 +1,7 @@
 ---
-title: Suggerimenti sulle prestazioni di Visual Studio | Microsoft Docs
+title: Suggerimenti sulle prestazioni di Visual Studio
 ms.date: 08/31/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -28,7 +29,7 @@ I suggerimenti per le prestazioni di Visual Studio si riferiscono a situazioni d
 
     Se si aggiorna il sistema da una versione di Windows a 32 bit a una versione a 64 bit, espandere la quantità di memoria virtuale disponibile per Visual Studio da 2 a 4 GB. Ciò consente a Visual Studio di gestire carichi di lavoro notevolmente più grandi anche tramite il processo a 32 bit.
 
-    Per altre informazioni, vedere [Limiti di memoria](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Uso di /LARGEADDRESSAWARE in Windows a 64 bit](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Per altre informazioni, vedere i [limiti di memoria](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e la pagina[Use /LARGEADDRESSAWARE on 64-bit Window](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) ( Uso di /LARGEADDRESSAWARE in Windows a 64 bit).
 
 ## <a name="configure-solution-and-projects"></a>Configurare soluzione e progetti
 
@@ -36,7 +37,7 @@ In caso di una soluzione molto grande con molti progetti, possono essere utili l
 
 - **Scaricare progetti**
 
-    È possibile scaricare manualmente singoli progetti utilizzati raramente da Esplora soluzioni usando il menu di scelta rapida.
+    È possibile scaricare manualmente singoli progetti usati raramente da **Esplora soluzioni** usando il menu di scelta rapida.
 
 - **Eseguire il refactoring della soluzione**
 
@@ -50,23 +51,23 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     L'ottimizzazione più semplice consiste nell'abilitazione della funzionalità **Just My Code** che carica solo i simboli per il proprio progetto. L'abilitazione di questa funzionalità può offrire un notevole risparmio di memoria per il debug delle applicazioni gestite (.NET). Questa opzione è già abilitata per impostazione predefinita in alcuni tipi di progetto.
 
-    Per abilitare **Just My Code**, scegliere **Strumenti > Opzioni > Debug > Generale**, quindi selezionare **Abilita Just My Code**.
+    Per abilitare **Just My Code**, scegliere **Strumenti** > **Opzioni** > **Debug** > **Generale**, quindi selezionare **Abilita Just My Code**.
 
 - **Specificare i simboli da caricare**
 
-    Per il debug nativo, il caricamento dei file di simboli (con estensione PDB) è dispendioso in termini di risorse di memoria. È possibile configurare le impostazioni dei simboli del debugger per risparmiare memoria. In genere, si configura la soluzione per caricare solo i moduli del proprio progetto.
+    Per il debug nativo, il caricamento dei file di simboli (con estensione *pdb*) è dispendioso in termini di risorse di memoria. È possibile configurare le impostazioni dei simboli del debugger per risparmiare memoria. In genere, si configura la soluzione per caricare solo i moduli del proprio progetto.
 
-    Per specificare il caricamento dei simboli, scegliere **Strumenti > Opzioni > Debug > Simboli**.
+    Per specificare il caricamento dei simboli, scegliere **Strumenti**  > **Opzioni** > **Debug** > **Simboli**.
 
-    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli (per aprire la finestra durante il debug, scegliere **Debug > Finestra > Moduli**).
+    Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli (per aprire la finestra durante il debug, scegliere **Debug** > **Finestra** > **Moduli**).
 
-    Per altre informazioni, vedere [Informazioni sui file dei simboli](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Per altre informazioni, vedere [Understand symbol files](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/) (Informazioni sui file dei simboli).
 
 - **Disabilitare gli strumenti di diagnostica**
 
     È consigliabile disabilitare la profilatura della CPU dopo l'uso. Questa funzionalità può utilizzare grandi quantità di risorse. Dopo aver abilitato la profilatura della CPU, questo stato viene mantenuto per le sessioni di debug successive, perciò è preferibile disattivarla al termine. È possibile risparmiare risorse disabilitando gli strumenti di diagnostica durante il debug se la funzionalità offerte non sono necessarie.
 
-    Per disabilitare gli strumenti di diagnostica, avviare una sessione di debug, scegliere **Strumenti > Opzioni > Abilita strumenti di diagnostica** e deselezionare l'opzione.
+    Per disabilitare gli **strumenti di diagnostica**, avviare una sessione di debug, scegliere **Strumenti** > **Opzioni** > **Abilita strumenti di diagnostica** e deselezionare l'opzione.
 
     Per altre informazioni, vedere [Strumenti di profilatura](../profiling/profiling-tools.md).
 
@@ -85,13 +86,13 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     Visual Studio esegue l'analisi dell'intera soluzione per fornire un'esperienza completa di verifica degli errori prima di richiamare una compilazione. Questa funzionalità è utile per identificare gli errori il più presto possibile. Tuttavia, in caso di soluzioni molto grandi, può richiedere risorse di memoria notevoli. In caso di memoria insufficiente o di problemi analoghi, è possibile disabilitare questa funzionalità per liberare risorse. Per impostazione predefinita, questa opzione è abilitata per Visual Basic ed è disabilitata per C#.
 
-    Per disabilitare l'**analisi della soluzione completa**, scegliere **Strumenti > Opzioni > Editor di testo > <Visual Basic o C#>**. Quindi scegliere **Avanzate** e deselezionare **Abilita analisi della soluzione completa**.
+    Per disabilitare l'**analisi della soluzione completa**, scegliere **Strumenti** > **Opzioni** > **Editor di testo** > **<Visual Basic o C#>**. Quindi scegliere **Avanzate** e deselezionare **Abilita analisi della soluzione completa**.
 
 - **Disabilitare CodeLens**
 
-    Visual Studio esegue un'attività **Trova tutti i riferimenti** su ogni metodo quando viene visualizzato. CodeLens offre funzionalità come la visualizzazione inline del numero di riferimenti. Il lavoro viene eseguito in un processo separato (ad esempio, ServiceHub.RoslynCodeAnalysisService32). In soluzioni molto grandi o in sistemi con risorse limitate, questa funzionalità può avere un impatto notevole sulle prestazioni anche se viene eseguita con bassa priorità. Se si riscontra un elevato utilizzo della CPU in questo processo o se si verificano problemi di memoria (ad esempio, durante il caricamento di una soluzione di grandi dimensioni in un computer da 4 GB), è possibile provare a disabilitare questa funzionalità per liberare risorse.
+    Visual Studio esegue un'attività **Trova tutti i riferimenti** su ogni metodo quando viene visualizzato. CodeLens offre funzionalità come la visualizzazione inline del numero di riferimenti. Il lavoro viene eseguito in un processo separato (ad esempio, *ServiceHub.RoslynCodeAnalysisService32*). In soluzioni molto grandi o in sistemi con risorse limitate, questa funzionalità può avere un impatto notevole sulle prestazioni anche se viene eseguita con bassa priorità. Se si riscontra un elevato utilizzo della CPU in questo processo o se si verificano problemi di memoria (ad esempio, durante il caricamento di una soluzione di grandi dimensioni in un computer da 4 GB), è possibile provare a disabilitare questa funzionalità per liberare risorse.
 
-    Per disabilitare CodeLens, scegliere **Strumenti > Opzioni > Editor di testo > Tutti i linguaggi > CodeLens** e deselezionare la funzionalità.
+    Per disabilitare **CodeLens**, scegliere **Strumenti** > **Opzioni** >  **Editor di testo** > **Tutti i linguaggi** > **CodeLens** e deselezionare la funzionalità.
 
     Questa funzionalità è disponibile in Visual Studio Professional e in Visual Studio Enterprise.
 
@@ -105,9 +106,9 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 - **Disabilitare la finestra di progettazione XAML**
 
-    La finestra di progettazione XAML è abilitata per impostazione predefinita ma utilizza risorse solo se si apre un file con XAML. Se si utilizzano file XAML ma non si intende usare la funzionalità della finestra di progettazione, disabilitare questa funzionalità per liberare memoria.
+    La finestra di progettazione XAML è abilitata per impostazione predefinita, ma usa risorse solo se si apre un file con estensione *xaml*. Se si utilizzano file XAML ma non si intende usare la funzionalità della finestra di progettazione, disabilitare questa funzionalità per liberare memoria.
 
-    Per disabilitare la finestra di progettazione XAML, andare a **Strumenti > Opzioni > Finestra di progettazione XAML > Abilita finestra di progettazione XAML** e deselezionare l'opzione.
+    Per disabilitare la **finestra di progettazione XAML**, andare a **Strumenti** > **Opzioni** > **Finestra di progettazione XAML** > **Abilita finestra di progettazione XAML** e deselezionare l'opzione.
 
 - **Rimuovere i carichi di lavoro**
 
@@ -115,9 +116,9 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 
-CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se è presente una quantità notevole di garbage in attesa di raccolta e si impone una Garbage Collection, si dovrebbe notare una riduzione nel consumo di memoria da parte del processo devenv.exe in Gestione attività. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
+CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe* in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
 
-Per imporre una Garbage Collection, usare il tasto di scelta rapida: **Ctrl+Alt+Maiusc+F12**, **Ctrl+Alt+Maiusc+F12** (premerlo due volte).
+Per forzare una Garbage Collection, usare il tasto di scelta rapida: **CTRL**+**ALT**+**MAIUSC**+**F12**, **CTRL**+**ALT**+**MAIUSC**+**F12** (premerlo due volte).
 
 Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel proprio scenario, compilare un report tramite lo strumento per il feedback di Visual Studio poiché questo comportamento è in genere sintomo di un bug.
 

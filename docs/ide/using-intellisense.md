@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48aa6cea8deec13bdf5dd43f83528daf5492e3d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>Uso di IntelliSense in Visual Studio
 
@@ -39,23 +39,23 @@ Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad es
 
 ![Elenco dei membri di Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
 
-È possibile chiamare la funzionalità **Elenca membri** manualmente digitando **CTRL** + **J**, scegliendo **Modifica** > **IntelliSense** > **Elenca membri** o il pulsante **Elenca membri** sulla barra degli strumenti dell'editor. Se richiamato in una riga vuota o al di fuori di un ambito riconoscibile, l'elenco conterrà simboli dello spazio dei nomi globale.
+È possibile richiamare la funzionalità **Elenca membri** manualmente digitando **CTRL**+**J**, scegliendo **Modifica** > **IntelliSense** > **Elenca membri** o il pulsante **Elenca membri** sulla barra degli strumenti dell'editor. Se richiamato in una riga vuota o al di fuori di un ambito riconoscibile, l'elenco conterrà simboli dello spazio dei nomi globale.
 
 Per disattivare la funzionalità Elenca membri per impostazione predefinita, in modo che sia presente solo se specificamente chiamata, passare a **Strumenti** > **Opzioni** > **Tutti i linguaggi** e deselezionare **Elenco membri automatico**. Se si vuole disattivare la funzionalità Elenca membri solo per un linguaggio specifico, andare sulle impostazioni **Generali** per quel linguaggio.
 
-È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Ad esempio, se si immette un identificatore non presente nell'elenco e si preme **Tab**, in modalità di completamento la voce sostituisce l'identificatore digitato. Per passare dalla modalità di completamento alla modalità di suggerimento e viceversa, premere **CTRL** + **ALT** + **BARRA SPAZIATRICE** o scegliere **Modifica** > **IntelliSense** > **Attiva/Disattiva modalità di terminazione**.
+È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Ad esempio, se si immette un identificatore non presente nell'elenco e si preme **Tab**, in modalità di completamento la voce sostituisce l'identificatore digitato. Per passare dalla modalità di completamento alla modalità di suggerimento e viceversa, premere **CTRL**+**ALT**+**BARRA SPAZIATRICE** o scegliere **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione**.
 
 ## <a name="parameter-info"></a>Informazioni sul parametro
 
 Informazioni sul parametro fornisce informazioni relative al numero, ai nomi e ai tipi di parametri richiesti da un metodo, un parametro di tipo generico di attributo (in C#) o da un modello (in C++).
 
-Il parametro in grassetto indica il parametro successivo richiesto durante la digitazione della funzione. Per le funzioni in overload, è possibile usare i tasti FRECCIA SU e FRECCIA GIÙ per visualizzare informazioni sui parametri alternativi per gli overload della funzione.
+Il parametro in grassetto indica il parametro successivo richiesto durante la digitazione della funzione. Per le funzioni in overload, è possibile usare i tasti di direzione**Freccia SU** e **Freccia GIÙ** per visualizzare informazioni sui parametri alternativi per gli overload della funzione.
 
 ![Informazioni sul parametro](../ide/media/vs2015_param_info.png "VS2015_param_Info")
 
-Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserimento di commenti al codice XML](../ide/supplying-xml-code-comments.md).
+Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](../ide/supplying-xml-code-comments.md).
 
-È possibile chiamare manualmente le informazioni sul parametro scegliendo **Modifica** > **IntelliSense** > **Informazioni sul parametro**, premendo **CTRL** + **MAIUSC** + **BARRA SPAZIATRICE** oppure scegliendo il pulsante **Informazioni sul parametro** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente le informazioni sul parametro scegliendo **Modifica** > **IntelliSense** > **Informazioni sul parametro**, premendo **CTRL**+**MAIUSC**+**BARRA SPAZIATRICE** oppure scegliendo il pulsante **Informazioni sul parametro** sulla barra degli strumenti dell'editor.
 
 ## <a name="quick-info"></a>Informazioni rapide
 
@@ -67,7 +67,7 @@ Quando si seleziona un membro nella casella **Elenca membri**, vengono visualizz
 
 ![Informazioni sul parametro in C&#35; file di codice](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
-È possibile chiamare manualmente le informazioni rapide scegliendo **Modifica** > **IntelliSense** > **Informazioni rapide**, premendo **CTRL** + **I** o scegliendo il pulsante **Informazioni rapide** sulla barra degli strumenti dell'editor.
+È possibile chiamare manualmente le informazioni rapide scegliendo **Modifica** > **IntelliSense** > **Informazioni rapide**, premendo **CTRL**+**I** o scegliendo il pulsante **Informazioni rapide** sulla barra degli strumenti dell'editor.
 
 Se una funzione è sottoposta a overload, è possibile che IntelliSense non visualizzi le informazioni per tutte le forme di overload.
 
@@ -81,7 +81,7 @@ Completa parola completa la digitazione del nome di una variabile, di un comando
 
 Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivarle, scegliere **Strumenti** > **Opzioni** > **Editor di testo** e deselezionare **Informazioni parametri** o **Elenco membri automatico** se non si vuole usare la funzionalità Elenca membri.
 
-## <a name="troubleshooting-intellisense"></a>Risoluzione dei problemi relativi a IntelliSense
+## <a name="troubleshoot-intellisense"></a>Risolvere i problemi di IntelliSense
 
 Le opzioni IntelliSense potrebbero non funzionare come previsto, in alcuni casi.
 
@@ -102,5 +102,5 @@ MessageBox( hWnd, "String literal|")
 - [IntelliSense per Visual Basic](../ide/visual-basic-specific-intellisense.md)
 - [IntelliSense per C#](../ide/visual-csharp-intellisense.md)
 - [IntelliSense per JavaScript](../ide/javascript-intellisense.md)
-- [Scrittura e refactoring del codice (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [Inserimento di commenti al codice XML](../ide/supplying-xml-code-comments.md)
+- [Codice di scrittura e refactoring (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Inserire commenti XML per la generazione di documentazione](../ide/supplying-xml-code-comments.md)

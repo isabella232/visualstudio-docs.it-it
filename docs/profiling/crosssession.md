@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae3c401a08df3eefa6f2ebe247aa7404f6b4ed2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d0f9ef3577f1285f428415de6b5b452d2a4cd7b6
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="crosssession"></a>CrossSession
 L'opzione **CrossSession** di VSPerfCmd.exe consente al profiler di raccogliere dati da qualsiasi sessione della console. L'opzione **CrossSession** deve essere usata con l'opzione **Start**.  
@@ -23,7 +23,7 @@ L'opzione **CrossSession** di VSPerfCmd.exe consente al profiler di raccogliere 
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /CrossSession [Options]  
 ```  
   
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ## <a name="example"></a>Esempio  
  In questo esempio l'opzione **CrossSession** viene usata per connettersi a un'applicazione che è stata avviata in un'altra sessione di console.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession  
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  

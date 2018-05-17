@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.  
@@ -100,7 +100,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
   
     -   Usa la [Visualizzare la sequenza temporale della sessione di diagnostica](#Ruler) per visualizzare i [Contrassegnare il codice per l'analisi](#ProfileMark), gli eventi del ciclo di vita dell'app e la sequenza temporale associata per questi eventi e quella per i dati negli altri grafici.  
   
-    -   Usa il [CPU utilization graph](#CPUutilization) per visualizzare informazioni generali sull'attività della CPU e il tipo di lavoro gestito durante un periodo di tempo specifico. I periodi di attività eccessiva della CPU con più probabilità restituiscono problemi di velocità di risposta e fotogrammi rimossi.  
+    -   Usa il [CPU utilization graph](#CPUUtilization) per visualizzare informazioni generali sull'attività della CPU e il tipo di lavoro gestito durante un periodo di tempo specifico. I periodi di attività eccessiva della CPU con più probabilità restituiscono problemi di velocità di risposta e fotogrammi rimossi.  
   
     -   Se stai sviluppando un gioco o un'app multimediale avanzata, usa il [Visualizzare la velocità effettiva visuale (FPS)](#VisualThroughput) per identificare i periodi di tempo in cui la frequenza dei fotogrammi è diminuita.  
   

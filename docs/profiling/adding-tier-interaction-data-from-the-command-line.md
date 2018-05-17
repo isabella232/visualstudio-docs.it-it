@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Aggiunta di dati di interazione tra livelli dalla riga di comando
 
@@ -54,20 +54,20 @@ Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite
 
 2. Inizializzare la profilatura .NET e le variabili di ambiente TIP. Digitare i comandi seguenti:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Avvia il profiler. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Avviare l'applicazione con VSPerfCmd. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite
 
 6. Cancellare le variabili di ambiente TIP. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 3. Inizializzare le variabili di ambiente di profilatura .NET. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Inizializzare le variabili di ambiente TIP. Digitare il comando seguente
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 7. Avvia il profiler. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 9. Connettere il profiler al servizio. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 12. Cancellare le variabili di ambiente di profilatura .NET e TIP. Digitare il comando seguente:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ Lo strumento da riga di comando VSPerfASPNETCmd consente di eseguire facilmente 
 
 Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite VSPerfASPNETCmd, aggiungere l'opzione **/TIP** alla riga di comando. Ad esempio, utilizzare la riga di comando seguente per raccogliere i dati di interazione tra livelli quando si raccolgono statistiche dell'applicazione per un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] utilizzando il metodo di strumentazione:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

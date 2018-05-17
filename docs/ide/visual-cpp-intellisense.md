@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C++
 
-IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma alcune funzionalità di IntelliSense sono disponibili nei file con estensione cpp e c del progetto di codice condiviso, anche quando si opera in un contesto Android o iOS.
+IntelliSense per C++ è disponibile per i file autonomi e per i file che fanno parte di un progetto C++. Nei progetti multipiattaforma alcune funzionalità di IntelliSense sono disponibili nei file con estensione *cpp* e *c* del progetto di codice condiviso, anche quando si opera in un contesto Android o iOS.
 
 ## <a name="intellisense-features-in-c"></a>Funzionalità IntelliSense in C++
 
@@ -73,23 +73,23 @@ Di seguito un'applicazione OpenGLES configurata per la compilazione per Android 
 
 Tenere presente quanto segue:
 
-- Il ramo #else sulla riga 8 è visualizzato in grigio per indicare l'area inattiva, perché __ANDROID\_\_ è definito per il progetto Android.
+- Il ramo `#else` sulla riga 8 è visualizzato in grigio per indicare l'area inattiva, perché `__ANDROID__` è definito per il progetto Android.
 
-- La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ha una sottolineatura a zig-zag di colore viola. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente inattivo. Mentre nel progetto Android la riga 11 verrebbe compilata, non funzionerebbe in iOS. Poiché si tratta di codice condiviso, elemento che è necessario modificare anche se viene compilato nella configurazione attualmente attiva.
+- La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore `HELLO`, che ha una sottolineatura a zig-zag di colore viola. Ciò è dovuto al fatto che nessun identificatore `HELLO` è definito nel progetto iOS attualmente inattivo. Mentre nel progetto Android la riga 11 verrebbe compilata, non funzionerebbe in iOS. Poiché si tratta di codice condiviso, elemento che è necessario modificare anche se viene compilato nella configurazione attualmente attiva.
 
-- La riga 12 ha una sottolineatura rossa a zig-zag sull'identificatore BYE; tale identificatore non è definito nel progetto attivo correntemente selezionato.
+- La riga 12 ha una sottolineatura a zig-zag di colore rosso sull'identificatore `BYE`. Tale identificatore non è definito nel progetto attivo attualmente selezionato.
 
-A questo punto, impostare il progetto attivo su iOS.StaticLibrary e osservare come cambiano le sottolineature a zig-zag.
+A questo punto, impostare il progetto attivo su **iOS.StaticLibrary** e osservare come cambiano le sottolineature a zig-zag.
 
 ![iOS è selezionato come progetto attivo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Tenere presente quanto segue:
 
-- Il ramo #ifdef sulla riga 6 è visualizzato in grigio per indicare l'area inattiva, perché __ANDROID\_\_ non è definito per il progetto iOS.
+- Il ramo `#ifdef` sulla riga 6 è visualizzato in grigio per indicare l'area inattiva, perché `__ANDROID__` è definito per il progetto iOS.
 
-- La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore HELLO, che ora ha una sottolineatura a zig-zag di colore rosso. Ciò è dovuto al fatto che nessun identificatore HELLO è definito nel progetto iOS attualmente attivo.
+- La variabile di saluto sulla riga 11 viene inizializzata con l’identificatore `HELLO`, che ora ha una sottolineatura a zig-zag di colore rosso. Ciò è dovuto al fatto che nessun identificatore `HELLO` è definito nel progetto iOS attualmente attivo.
 
-- La riga 12 ha una sottolineatura a zig-zag di colore viola sull’identificatore BYE; tale identificatore non è definito nel progetto Android.NativeActivity attualmente inattivo.
+- La riga 12 ha una sottolineatura a zig-zag di colore viola sull’identificatore `BYE`. Tale identificatore non è definito nel progetto **Android.NativeActivity** attualmente inattivo.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense per file autonomi
 
@@ -97,10 +97,10 @@ IntelliSense è disponibile anche quando si apre un singolo file all'esterno di 
 
 ![Intellisense per singolo file Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Per impostazione predefinita, IntelliSense con singolo file utilizza solo directory di inclusione per trovare i file di intestazione. Per aggiungere ulteriori directory, aprire il menu di scelta rapida del nodo della soluzione e aggiungere la directory all’elenco relativo al **codice sorgente di debug**, come illustrato nella figura seguente:
+Per impostazione predefinita, IntelliSense con singolo file utilizza solo directory di inclusione per trovare i file di intestazione. Per aggiungere altre directory, aprire il menu di scelta rapida del nodo **Soluzione** e aggiungere la directory all’elenco **Esegui debug dei file di origine**, come illustrato nella figura seguente:
 
 ![Aggiunta di un percorso a un file di intestazione.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Usare IntelliSense](../ide/using-intellisense.md)

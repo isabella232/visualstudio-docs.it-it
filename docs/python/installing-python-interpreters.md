@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>Installazione degli interpreti Python
 
@@ -27,7 +27,7 @@ Per **Visual Studio 2015 e versioni precedenti** è necessario installare manual
 
 Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Python installato e il relativo ambiente controllando il Registro di sistema, come descritto in [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) (PEP 514 - Registrazione di Python nel Registro di sistema di Windows).
 
-Se Visual Studio non rileva un ambiente installato, vedere [Manually identifying an existing environment](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificazione manuale di un ambiente esistente).
+Se Visual Studio non rileva un ambiente installato, vedere [Identificare manualmente un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 Visual Studio visualizza tutti gli ambienti noti nella [finestra Ambienti Python](managing-python-environments-in-visual-studio.md) e rileva automaticamente gli aggiornamenti per gli interpreti esistenti.
 
@@ -45,7 +45,7 @@ Se si intende offrire nuove forme di rilevamento per gli ambienti Python, vedere
 
 Se si sposta un interprete esistente in una nuova posizione nel file system, Visual Studio non rileva automaticamente la modifica.
 
-- Se il percorso dell'interprete è stato specificato in origine tramite la finestra **Ambienti Python**, modificarne l'ambiente tramite la scheda **Configura** in tale finestra per identificare il nuovo percorso. Vedere [Manually identifying an existing environment](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificazione manuale di un ambiente esistente).
+- Se il percorso dell'interprete è stato specificato in origine tramite la finestra **Ambienti Python**, modificarne l'ambiente tramite la scheda **Configura** in tale finestra per identificare il nuovo percorso. Vedere [Identificare manualmente un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Se l'interprete è stato installato usando un programma di installazione, seguire questa procedura per reinstallare l'interprete nel nuovo percorso:
 

@@ -1,7 +1,7 @@
 ---
 title: Modifica del codice Python
 description: Per la modifica di codice Python in Visual Studio sono disponibili IntelliSense, frammenti di codice e funzionalità di navigazione, oltre a formattazione, lint e refactoring.
-ms.date: 03/05/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 
@@ -33,7 +33,7 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Sc
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring).
+IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
 
 Per migliorare le prestazioni, IntelliSense in **Visual Studio 2017 versione 15.5** e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di Esplora soluzioni, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Per le istruzioni `raise` e `except` vengono visualizzati gli elenchi di classi 
 
 > [!Tip]
 > È possibile configurare il comportamento dei completamenti tramite **Strumenti > Opzioni > Editor di testo > Python > Avanzate**. Tra le opzioni disponibili, **Filter list based on search string** (Filtra elenco in base alla stringa di ricerca) consente di applicare il filtro ai suggerimenti per il completamento durante la digitazione. Questa opzione è selezionata per impostazione predefinita. L'opzione **Member completion displays intersection of members** (Visualizza intersezione dei membri per i completamenti), inoltre, consente di visualizzare solo i completamenti supportati da tutti i tipi possibili (deselezionata per impostazione predefinita). Vedere [Opzioni - Risultati del completamento](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Suggerimenti relativi al tipo
+
+*Visual Studio 2017 15.7 e versioni successive.*
+
+I "suggerimenti relativi al tipo" in Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) rappresentano una sintassi di annotazione per le funzioni e le classi che indicano i tipi di argomenti, valori restituiti e attributi di classi. IntelliSense visualizza i suggerimenti relativi al tipo quando si passa il mouse su chiamate di funzioni, argomenti e variabili che presentano tali annotazioni.
+
+Nell'esempio seguente la classe `Vector` viene dichiarata come `List[float]` e la funzione `scale` contiene suggerimenti relativi al tipo sia per gli argomenti sia per il valore restituito. Con il passaggio del mouse su una chiamata a tale funzione vengono visualizzati i suggerimenti relativi al tipo:
+
+![Passaggio del mouse su una chiamata di funzione per visualizzare i suggerimenti relativi al tipo](media/code-editing-type-hints1.png)
+
+Nell'esempio seguente è possibile visualizzare il modo in cui gli attributi con annotazioni della classe `Employee` vengono visualizzati nella finestra popup di completamento di IntelliSense per un attributo:
+
+![Suggerimenti relativi al tipo visualizzati nel completamento di IntelliSense](media/code-editing-type-hints2.png)
+
+È inoltre utile convalidare i suggerimenti relativi al tipo in tutto il progetto, poiché gli errori in genere non vengono visualizzati prima dell'esecuzione. A tale scopo, Visual Studio integra lo strumento MyPy standard del settore attraverso il comando del menu di scelta rapida **Python > Esegui Mypy** in **Esplora soluzioni**:
+
+![Eseguire il comando MyPy del menu di scelta rapida in Esplora soluzioni](media/code-editing-type-hints-run-mypy.png)
+
+Con l'esecuzione del comando viene richiesta l'installazione del pacchetto mypy, se necessario. Visual Studio esegue quindi mypy per convalidare i suggerimenti relativi al tipo in ogni file Python del progetto. Gli errori vengono visualizzati nella finestra **Elenco errori** di Visual Studio. Se si seleziona un elemento nella finestra, si passa alla riga appropriata nel codice.
+
+Come esempio semplice, la seguente definizione di funzione contiene un suggerimento relativo al tipo per indicare che l'argomento `input` è di tipo `str`, mentre la chiamata a tale funzione tenta di passare un numero intero:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Se si usa il comando **Esegui Mypy** su questo codice, viene generato l'errore seguente:
+
+![Esempio di risultato di mypy che convalida i suggerimenti relativi al tipo](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> Per le versioni di Python precedenti alla 3.5, Visual Studio visualizza anche i suggerimenti relativi al tipo specificati nei *file stub* (`.pyi`). I file stub possono essere usati quando non si vuole includere i suggerimenti relativi al tipo direttamente nel codice o quando si vogliono creare suggerimenti relativi al tipo per una libreria che non li usa direttamente. Per altre informazioni, vedere [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creare stub per i moduli Python) nel wiki del progetto mypy.
+>
+> Al momento Visual Studio non supporta i suggerimenti relativi al tipo nei commenti.
 
 ### <a name="signature-help"></a>Supporto per la firma
 

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 
@@ -54,13 +54,13 @@ Il campionamento è un metodo di profilatura mediante il quale viene eseguito pe
 
 4. Digitare il comando seguente per impostare le variabili di ambiente appropriate:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Avviare la profilatura eseguendo VSPerfCmd.exe, ovvero lo strumento da riga di comando che controlla il profiler. Il comando seguente avvia l'applicazione e il profiler in modalità di campionamento:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ Il campionamento è un metodo di profilatura mediante il quale viene eseguito pe
 
 9. Arrestare il profiler. Digitare il comando seguente:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Usare il comando seguente per reimpostare le variabili di ambiente:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ Il campionamento è un metodo di profilatura mediante il quale viene eseguito pe
 
     - Generare un file con valori delimitati da virgole (CSV) tramite lo strumento da riga di comando VSPerfReport.exe. Per generare report da usare all'esterno dell'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], usare il comando seguente:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

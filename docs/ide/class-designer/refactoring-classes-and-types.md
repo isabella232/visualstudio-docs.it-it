@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring di classi e tipi (Progettazione classi)
 
@@ -40,8 +40,9 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 |----------|------------------------|
 |**Refactoring di classi:** è possibile usare le operazioni di refactoring per suddividere una classe in classi parziali o per implementare una classe base astratta.|-   [Procedura: dividere una classe in classi parziali](how-to-split-a-class-into-partial-classes.md)|
 |**Uso di interfacce:** in Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.|-   [Procedura: implementare un'interfaccia](how-to-implement-an-interface.md)|
-|**Refactoring di tipi, membri dei tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Spostamento dei membri dei tipi da un tipo a un altro](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Procedura: Creare un tipo nullable](how-to-create-a-nullable-type.md)|
+|**Refactoring di tipi, membri dei tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](refactoring-classes-and-types.md#rename)<br />-   [Spostamento dei membri dei tipi da un tipo a un altro](refactoring-classes-and-types.md#move)<br />-   [Procedura: Creare un tipo nullable](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Ridenominazione di tipi e membri dei tipi
 
 In Progettazione classi è possibile rinominare un tipo o un membro di un tipo nel diagramma classi o nella finestra Proprietà. Nella finestra Dettagli classe è possibile modificare il nome di un membro ma non di un tipo. La ridenominazione di un tipo o di un membro di un tipo verrà propagata a tutte le finestre e i percorsi di codice in cui è presente il nome precedente.
@@ -77,6 +78,7 @@ In Progettazione classi è possibile rinominare un tipo o un membro di un tipo n
 
      Il nuovo nome verrà propagato a tutte le finestre e i percorsi di codice del progetto corrente in cui è presente il nome precedente.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Spostamento dei membri dei tipi da un tipo a un altro
 
 In **Progettazione classi**è possibile spostare un membro del tipo da un tipo a un altro, se entrambi sono visibili nel diagramma classi corrente.

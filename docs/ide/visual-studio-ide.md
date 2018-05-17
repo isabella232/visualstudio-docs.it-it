@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Panoramica dell'ambiente IDE di Visual Studio
 
@@ -181,7 +181,7 @@ Per offrire una panoramica visiva di Visual Studio ad alto livello, l'immagine s
 
 Di seguito sono illustrate alcune altre funzionalità di produttività comuni in Visual Studio:
 
-- La casella di ricerca [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. È sufficiente immettere il nome di quello che si sta cercando e Visual Studio elenca i risultati che consentono di passare direttamente alla destinazione corretta. In Avvio veloce vengono visualizzati anche collegamenti per avviare il programma di installazione di Visual Studio per qualsiasi carico di lavoro o singolo componente.
+- La casella di ricerca [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. È sufficiente immettere il nome di quello che si sta cercando e Visual Studio elenca i risultati che consentono di passare direttamente alla destinazione corretta. In **Avvio veloce** vengono visualizzati anche collegamenti per avviare il programma di installazione di Visual Studio per qualsiasi carico di lavoro o singolo componente.
 
   ![Casella di ricerca di Avvio veloce](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -215,15 +215,15 @@ Di seguito sono illustrate alcune altre funzionalità di produttività comuni in
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gestire il codice sorgente e collaborare con altri utenti
 
-È possibile gestire il codice sorgente in repository GIT ospitati da qualsiasi provider, incluso GitHub. In alternativa, è possibile usare [Visual Studio Team Services (VSTS) ](/vsts/index) per gestire il codice insieme ai bug e agli elementi di lavoro per l'intero progetto. Per altre informazioni sulla gestione dei repository Git in Visual Studio tramite Team Explorer, vedere [Get Started with Git and Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) (Introduzione a Git e a Team Services (VSTS)). Visual Studio include anche altre funzionalità predefinite di controllo del codice sorgente. Per altre informazioni su tali funzionalità, vedere il post di blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuove funzionalità GIT in Visual Studio 2017).
+È possibile gestire il codice sorgente in repository GIT ospitati da qualsiasi provider, incluso GitHub. In alternativa, è possibile usare [Visual Studio Team Services (VSTS) ](/vsts/index) per gestire il codice insieme ai bug e agli elementi di lavoro per l'intero progetto. Per altre informazioni sulla gestione dei repository GIT in Visual Studio tramite Team Explorer, vedere [Get Started with Git and Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) (Introduzione a GIT e a Team Services (VSTS)). Visual Studio include anche altre funzionalità predefinite di controllo del codice sorgente. Per altre informazioni su tali funzionalità, vedere il post del blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuove funzionalità GIT in Visual Studio 2017).
 
 Visual Studio Team Services è un servizio basato sul cloud progettato per ospitare progetti software e consentire la collaborazione in team. Visual Studio Team Services supporta sistemi Git e di controllo del codice sorgente di Team Foundation, nonché metodologie di sviluppo Scrum, CMMI e Agile. Controllo della versione di Team Foundation (TFVC) usa un unico repository del server centralizzato per tenere traccia e gestire le versioni dei file. Le modifiche locali vengono sempre archiviate nel server centrale, in modo che gli altri sviluppatori possano disporre delle modifiche più recenti.
 
 Team Foundation Server (TFS) è l'hub di gestione del ciclo di vita delle applicazioni per Visual Studio. Consente a tutte le parti interessate di partecipare al processo di sviluppo usando un'unica soluzione. TFS è utile anche per la gestione di team e progetti eterogenei.
 
-Se si ha un account di Visual Studio Team Services o di Team Foundation Server nella rete, è possibile connettersi tramite la finestra Team Explorer in Visual Studio. Da questa finestra è possibile archiviare o estrarre il codice dal controllo del codice sorgente, gestire gli elementi di lavoro, avviare le compilazioni e accedere alle chat team e alle aree di lavoro. È possibile aprire Team Explorer dalla casella **Avvio veloce** o dal menu principale tramite **Visualizza, Team Explorer** o **Team, Gestisci connessioni**.
+Se si ha un account di Visual Studio Team Services o di Team Foundation Server nella rete, è possibile connettersi tramite la finestra **Team Explorer** in Visual Studio. Da questa finestra è possibile archiviare o estrarre il codice dal controllo del codice sorgente, gestire gli elementi di lavoro, avviare le compilazioni e accedere alle chat team e alle aree di lavoro. È possibile aprire **Team Explorer** dalla casella **Avvio veloce** o dal menu principale tramite **Visualizza** > **Team Explorer** o **Team** > **Gestisci connessioni**.
 
-L'immagine seguente mostra la finestra Team Explorer per una soluzione ospitata in Visual Studio Team Services.
+L'immagine seguente illustra la finestra **Team Explorer** per una soluzione ospitata in Visual Studio Team Services.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Il cloud è fondamentale per le esigenze attuali che richiedono di essere sempre
 
 ![Servizi connessi](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Scegliendo un servizio nella pagina **Servizi connessi** viene avviata la procedura guidata Aggiungi servizi connessi che consente di configurare il progetto e scaricare i pacchetti NuGet necessari per iniziare a scrivere il codice per il servizio.
+Scegliendo un servizio nella pagina **Servizi connessi** viene avviata la procedura guidata **Servizi connessi** che consente di configurare il progetto e scaricare i pacchetti NuGet necessari per iniziare a scrivere il codice per il servizio.
 
-È possibile visualizzare e gestire le risorse del cloud basate su Azure da Visual Studio con [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer mostra le risorse di Azure in tutti gli account gestiti con la sottoscrizione di Azure a cui si è connessi. Per ottenere Clould Explorer, è possibile selezionare il carico di lavoro **Sviluppo di Azure** nel programma di installazione di Visual Studio.
+È possibile visualizzare e gestire le risorse del cloud basate su Azure da Visual Studio con [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer mostra le risorse di Azure in tutti gli account gestiti con la sottoscrizione di Azure a cui si è connessi. Per ottenere **Clould Explorer**, selezionare il carico di lavoro **Sviluppo di Azure** nel programma di installazione di Visual Studio.
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Office 365 e in siti Web. Per aprire Esplora server, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni su Esplora server, vedere [Add new connections](../data-tools/add-new-connections.md) (Aggiungere nuove connessioni).
+**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Office 365 e in siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni su Esplora server, vedere [Add new connections](../data-tools/add-new-connections.md) (Aggiungere nuove connessioni).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
@@ -261,7 +261,7 @@ Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual 
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Altre informazioni e novità
 
-Se è la prima volta che si usa Visual Studio, vedere [Introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md) oppure seguire i corsi gratuiti su Visual Studio disponibili in [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Per scoprire le nuove funzionalità di Visual Studio 2017, vedere [Novità di Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
+Se è la prima volta che si usa Visual Studio, leggere l'[introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md) oppure seguire i corsi gratuiti su Visual Studio disponibili in [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Per scoprire le nuove funzionalità di Visual Studio 2017, vedere [Novità di Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
 
 La presentazione dell'IDE di Visual Studio e di alcune delle funzionalità principali del programma è così completa.
 

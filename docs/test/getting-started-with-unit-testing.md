@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39ec333cd7d3bebebe8baacd1c8a27f22e2b9cb4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -70,6 +70,9 @@ Creare unit test ed eseguirli frequentemente per assicurarsi che il codice funzi
 ## <a name="view-live-unit-test-results"></a>Visualizzare i risultati degli unit test in tempo reale
 
 Se si usa il framework di test MSTest, xUnit o NUnit in Visual Studio 2017 o versione successiva, è possibile visualizzare in tempo reale i risultati degli unit test.
+
+> [!NOTE]
+> Live Unit Testing è disponibile solo in Visual Studio 2017 Enterprise Edition.
 
 1. Attivare la funzionalità Live Unit Testing dal menu **Test**.
 

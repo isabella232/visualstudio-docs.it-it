@@ -1,15 +1,15 @@
 ---
-title: Compilazione e pulizia di progetti e soluzioni
-description: ''
+title: Compilazione e pulizia di progetti e soluzioni in Visual Studio per Mac
+description: Questo articolo descrive come compilare un progetto in Visual Studio per Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 746aefbee359313e6e8a5f0e3b8387cb5eff9a16
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 686735df963f2cdb3f85e4328299b609d5fbe08d
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilazione e pulizia di progetti e soluzioni
 
@@ -21,11 +21,11 @@ Per compilare, ricompilare o pulire un'intera soluzione:
 
 1. Selezionare il nodo della soluzione nel riquadro Soluzione:
 
-    ![](media/compiling-and-building-image1.png)
+    ![Selezione del nodo della soluzione](media/compiling-and-building-image1.png)
 
 2. Scegliere il menu Compila sulla barra dei menu e selezionare una delle opzioni seguenti:
 
-    ![](media/compiling-and-building-image2.png)
+    ![Selezione della voce di menu Compila tutto](media/compiling-and-building-image2.png)
 
     * **Compila tutto**: tenta di compilare tutti i file all'interno del progetto modificati dopo la compilazione più recente.
     * **Ricompila tutto**: pulisce la soluzione e quindi la compila.

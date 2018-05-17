@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # Guida F1
 
@@ -37,4 +37,4 @@ Se si stanno cercando informazioni della Guida F1 per una parola chiave o un nom
 
 ## Consigli per il miglioramento della Guida F1
 
-È possibile contribuire a migliorare l'esperienza della Guida F1 lasciando commenti e suggerimenti sul comportamento previsto e auspicato quando si è premuto **F1**. Ad esempio, su quale simbolo o finestra era posizionato il cursore? Usare il pulsante **Give documentation feedback** (Commenti e suggerimenti sulla documentazione) riportato di seguito. Microsoft ringrazia per il contributo.
+Contribuisci a migliorare l'esperienza della Guida F1. Registra un problema della Guida del prodotto facendo clic sul pulsante **Invia commenti sul prodotto** riportato di seguito. Includi gli elementi per i quali necessitavi di assistenza quando hai premuto **F1**, ad esempio il simbolo o la finestra su cui si trovava il cursore. Microsoft ringrazia per il contributo.

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Uso di Python in Visual Studio su Windows
 
@@ -46,7 +46,7 @@ Per ulteriori informazioni:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Modifica avanzata, IntelliSense e comprensione del codice
 
-Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, suggerimenti relativi al tipo e rilevamento di errori con Lint (illustrato sotto). Visual Studio offre anche funzionalità esclusive, ad esempio Visualizzazione classi, Vai alla definizione, Trova tutti i riferimenti, nonché i frammenti di codice. L'integrazione diretta con la [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
+Visual Studio mette a disposizione un editor Python di prima classe, con funzionalità di colorazione della sintassi, completamento automatico in tutto il codice e in tutte le librerie, formattazione del codice, supporto per la firma, refactoring, rilevamento di errori con Lint (illustrato sotto) e suggerimenti relativi al tipo. Visual Studio offre anche funzionalità esclusive, ad esempio Visualizzazione classi, Vai alla definizione, Trova tutti i riferimenti, nonché i frammenti di codice. L'integrazione diretta con la [finestra interattiva](#interactive-window) consente di sviluppare rapidamente codice Python già salvato in un file.
 
 ![Completamento di codice Python in Visual Studio](media/code-editing-completions-simple.png)
 

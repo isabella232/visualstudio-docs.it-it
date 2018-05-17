@@ -1,15 +1,15 @@
 ---
 title: Accesso a Visual Studio per Mac
-description: ''
+description: Come accedere a Visual Studio per Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 066f91db52a60cd524df3c3d5328acd45b11443c
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
 
@@ -25,21 +25,21 @@ Per accedere a Visual Studio per Mac, seguire questa procedura:
 
 1. Fare clic sul collegamento Accedi della home page e premere il pulsante **Accedi**:
 
-    ![](media/signing-in-image12.png)
+    ![Finestra di dialogo Account in Visual Studio per Mac](media/signing-in-image12.png)
 
 2. Inserire le proprie credenziali Microsoft:
 
-    ![](media/signing-in-image13.png)
+    ![Finestra di dialogo delle credenziali Microsoft](media/signing-in-image13.png)
 
     Non è possibile usare credenziali Xamarin per accedere a Visual Studio per Mac.
 
 3.  Dopo aver eseguito l'accesso, verrà visualizzato il proprio tipo di licenza. Da questa finestra di dialogo è possibile aggiungere ulteriori eventuali account Microsoft che si desidera usare:
 
-    ![](media/signing-in-image14.png)
+    ![Accesso eseguito correttamente](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Aggiunta di più account utente
 
 Visual Studio per Mac supporta l'aggiunta di più account al proprio account personalizzato. Questi account aggiuntivi consentono di accedere a risorse, ad esempio Azure, da qualsiasi account aggiunto. 
 
-Per aggiungere ulteriori account utente, seguire la procedura riportata nella sezione [Come accedere a Visual Studio per Mac](#How_to_sign_in_to_Visual_Studio_for_Mac).
+Per aggiungere ulteriori account utente, seguire la procedura riportata nella sezione [Come accedere a Visual Studio per Mac](#how-to-sign-in-to-visual-studio-for-mac).
 

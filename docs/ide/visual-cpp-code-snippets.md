@@ -1,5 +1,5 @@
 ---
-title: Frammenti di codice Visual C#
+title: Frammenti di codice Visual C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
 
@@ -23,9 +23,9 @@ In Visual Studio, è possibile usare frammenti di codice per aggiungere il codic
 
 È possibile aggiungere un frammento di codice in una determinata posizione nel codice (inserimento) o racchiudere il codice selezionato con un frammento di codice.
 
-## <a name="inserting-a-code-snippet"></a>Inserimento di un frammento di codice
+## <a name="insert-a-code-snippet"></a>Inserire un frammento di codice
 
-Per inserire un frammento di codice, aprire un file di codice C++ (file CPP o H), fare clic su un punto qualsiasi all'interno del file ed eseguire una delle seguenti operazioni:
+Per inserire un frammento di codice, aprire un file di codice C++ (con estensione *cpp* o *h*), fare clic in un punto qualsiasi all'interno del file ed eseguire una delle operazioni seguenti:
 
 - Fare clic con il pulsante destro del mouse per visualizzare il menu di scelta rapida e selezionare **Inserisci frammento di codice**
 
@@ -41,9 +41,9 @@ Verrà visualizzato un elenco di opzioni che iniziano con **#if**. Quando si sel
 #endif // 0
 ```
 
-Sarà quindi possibile sostituire il valore 0 con la condizione corretta.
+È possibile sostituire il valore **0** con la condizione corretta.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Uso di un frammento di codice per racchiudere il codice selezionato
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Usare un frammento di codice per racchiudere il codice selezionato
 
 Per usare un frammento di codice per racchiudere il codice selezionato, selezionare una riga (o più righe) ed eseguire una delle operazioni seguenti:
 
@@ -71,7 +71,7 @@ I nomi della maggior parte dei frammenti di codice sono di chiara interpretazion
 
 ## <a name="class-vs-classi"></a>Class e classi
 
-Il frammento di codice **class** offre la definizione di una classe denominata MyClass, con il costruttore e il distruttore predefiniti appropriati, dove le definizioni del costruttore e del distruttore si trovano all'esterno della classe:
+Il frammento di codice **class** specifica la definizione di una classe denominata `MyClass`, con il costruttore e il distruttore predefiniti appropriati, dove le definizioni del costruttore e del distruttore si trovano all'esterno della classe:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-Anche il frammento di codice **classi** specifica la definizione di una classe denominata MyClass, ma il costruttore e il distruttore predefiniti sono definiti nella definizione di classe:
+Anche il frammento di codice **classi** specifica la definizione di una classe denominata `MyClass`, ma il costruttore e il distruttore predefiniti sono definiti nella definizione della classe:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Se si inserisce il frammento distruttore, esso fornisce un distruttore per SomeClass:
+Se si inserisce il frammento di codice per il distruttore, esso specifica un distruttore per `SomeClass`:
 
 ```cpp
 class SomeClass {

@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 489490033530befa31f8109d8dfa717e8236cc8e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0e7c2d2985946ddd27c5786c22a724c9b2c4eaa
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="spanspan-destructor"></a>Distruttore span::~span
 Elimina l'oggetto `span` e ne rilascia le risorse.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp  
 ~span();  
 ```  
   

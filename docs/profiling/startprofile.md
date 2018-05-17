@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e134db79df1457b3308fc86b2fbe2b133d8ce86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="startprofile"></a>StartProfile
 La funzione `StartProfile` imposta il contatore su 1 (On) per il livello di profilatura specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(  
                         PROFILE_CONTROL_LEVEL Level,   
                         unsigned int dwId);  
@@ -73,7 +73,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="example"></a>Esempio  
  L'esempio seguente illustra la chiamata della funzione StartProfile.  
   
-```  
+```cpp  
 void ExerciseStartProfile()  
 {  
     // StartProfile and StopProfile control the  

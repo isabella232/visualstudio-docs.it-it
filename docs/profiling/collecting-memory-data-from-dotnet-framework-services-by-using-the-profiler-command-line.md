@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5857f0e64014ff6570bfddd087d7c3aafe33b713
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b03973767088951d62620cfb5846dda6fa7a5f82
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccolta di dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tramite il metodo di campionamento dalla riga di comando.  
@@ -34,15 +34,15 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
 |**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccolta di statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite strumentazione](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
+|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite strumentazione](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
 |**Sottoporre a profilatura i conflitti di risorse e le attività dei thread**|-   [Raccolta di dati di concorrenza](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>Profilatura di dati di memoria .NET Framework  
   
 |Attività|Contenuto correlato|  
 |----------|---------------------|  
-|**Sottoporre a profilatura applicazioni client autonome**|-   [Raccolta di dati di memoria di .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Sottoporre a profilatura applicazioni Web ASP.NET**|-   [Collecting Memory Data](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md) (Raccolta di dati relativi alla memoria)|  
+|**Sottoporre a profilatura applicazioni client autonome**|-   [Raccolta di dati di memoria di .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Sottoporre a profilatura applicazioni Web ASP.NET**|-   [Collecting Memory Data](../profiling/collecting-memory-data-from-an-aspnet-web-application.md) (Raccolta di dati relativi alla memoria)|  
   
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>Analisi di visualizzazioni dati e di report di memoria .NET  
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  

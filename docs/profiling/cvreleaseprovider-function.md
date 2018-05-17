@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b54fc676a9e7e6ee523bba7f94f58aef49916b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e4620a4322fedb7fb6337c3f4fd7cb7e22b39df
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cvreleaseprovider-function"></a>Funzione CvReleaseProvider
 Rilascia un provider di marcatori. Il rilascio del provider di marcatori non influisce sulle serie di marcatori del provider create in precedenza. Le serie di marcatori devono essere rilasciate separatamente dalla chiamata CvReleaseMarkerSeries. Il mancato rilascio del provider di marcatori causa una perdita di memoria.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```C  
 HRESULT CvReleaseProvider(  
    _In_ PCV_PROVIDER pProvider  
 );  

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaebb7afc76066e9c1c53b0649c70dd346ddb72f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 55e9519946dae36fcf8c9bc8808a23fbfaa985b8
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="counter"></a>Counter
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).  
@@ -27,11 +27,11 @@ L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del proce
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName | /Attach PID} /Counter:Name[,Reload[,FriendlyName]][Options]  
 ```  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[,Reload[,FriendlyName]]][Options]  
 ```  
   
@@ -62,7 +62,7 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
   
  Nell'esempio del metodo basato sulla strumentazione viene illustrato come inizializzare il profiler per la raccolta di eventi del contatore L2InstructionFetches. Il nome del contatore L2InstructionFetches è specifico del processore.  
   
-```  
+```cmd  
 ; Sample Method Example  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycles"  

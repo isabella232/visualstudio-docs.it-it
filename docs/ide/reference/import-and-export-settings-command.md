@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a95841d9b9b8e67f34883efcc1a55a2daba7e8b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="import-and-export-settings-command"></a>Importa/Esporta impostazioni (comando)
 Consente di importare, esportare o reimpostare le impostazioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sintassi
 
-```
+```cmd
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
@@ -51,7 +51,7 @@ Se si esegue questo comando senza opzioni viene visualizzata l'**Importazione/Es
 
 Il comando seguente esporta le impostazioni correnti nel file `MyFile.vssettings`.
 
-```shell
+```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 

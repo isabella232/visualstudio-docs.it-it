@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -26,7 +26,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 
  È possibile inserire un frammento di codice nella posizione del cursore o un frammento di codice racchiuso intorno al codice attualmente selezionato. Lo strumento per l'inserimento dei frammenti di codice viene richiamato usando i comandi **Inserisci frammento di codice** o **Racchiudi tra** del menu **IntelliSense** o usando rispettivamente i tasti di scelta rapida **CTRL**+**K**,**X** o **CTRL**+**K**,**S**.
 
- Lo strumento per l'inserimento dei frammenti di codice visualizza il nome del frammento di codice per tutti i frammenti di codice disponibili. Lo strumento include anche una finestra di dialogo di input in cui è possibile digitare il nome del frammento di codice o parte del nome del frammento di codice. Lo strumento per l'inserimento dei frammenti di codice evidenzia la corrispondenza più prossima al nome di un frammento di codice. Quando si preme **TAB** in qualsiasi momento, lo strumento per l'inserimento dei frammenti di codice viene chiuso e viene inserito il frammento di codice attualmente selezionato. Se si preme **ESC** o si fa clic con il mouse nell'editor del codice, lo strumento per l'inserimento dei frammenti di codice viene chiuso senza inserire un frammento di codice.
+ Lo **strumento per l'inserimento di frammenti di codice** visualizza il nome del frammento di codice per tutti i frammenti di codice disponibili. Lo strumento include anche una finestra di dialogo di input in cui è possibile digitare il nome del frammento di codice o parte del nome del frammento di codice. Lo strumento per l'inserimento dei frammenti di codice evidenzia la corrispondenza più prossima al nome di un frammento di codice. Quando si preme **TAB** in qualsiasi momento, lo strumento per l'inserimento dei frammenti di codice viene chiuso e viene inserito il frammento di codice attualmente selezionato. Se si preme **ESC** o si fa clic con il mouse nell'editor del codice, lo strumento per l'inserimento di frammenti di codice viene chiuso senza inserire un frammento di codice.
 
 ## <a name="default-code-snippets"></a>Frammenti di codice predefiniti
 
@@ -57,7 +57,7 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |iteratore|Crea un iteratore.|All'interno di una classe o uno struct.|
 |iterindex|Crea una coppia iteratore/indicizzatore "denominata" usando una classe annidata.|All'interno di una classe o uno struct.|
 |blocco|Crea un blocco [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|mbox|Crea una chiamata a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Può essere necessario aggiungere un riferimento a System.Windows.Forms.dll.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|mbox|Crea una chiamata a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Può essere necessario aggiungere un riferimento a *System.Windows.Forms.dll*.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |namespace|Crea una dichiarazione [namespace](/dotnet/csharp/language-reference/keywords/namespace).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
 |prop|Crea una dichiarazione di [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|All'interno di una classe o uno struct.|
 |propfull|Crea una dichiarazione di proprietà con le funzioni di accesso `get` e `set`.|All'interno di una classe o uno struct.|
@@ -77,5 +77,5 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 
 - [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md)
 - [Frammenti di codice](../ide/code-snippets.md)
-- [Parametri di modelli](../ide/template-parameters.md)
+- [Parametri di modello](../ide/template-parameters.md)
 - [Procedura: Usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)

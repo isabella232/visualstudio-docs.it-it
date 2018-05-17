@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -36,7 +36,7 @@ Include informazioni di base e comandi per l'ambiente:
 
 | Comando | Descrizione |
 | --- | --- |
-| Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti) | Imposta l'ambiente attivo, facendo sì che Visual Studio non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
+| Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti) | Imposta l'ambiente attivo, facendo sì che Visual Studio (2017 versione 15.5 e precedenti) non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
 | Visita il sito Web del server di distribuzione | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
 | Apri finestra interattiva | Apre la [finestra (REPL) interattiva](python-interactive-repl-in-visual-studio.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
 | Esplora gli script interattivi | Vedere [Script di avvio](#startup-scripts). |
@@ -75,7 +75,7 @@ Se disponibile, contiene i dettagli descritti nella tabella seguente. Se questa 
 
 *Denominata anche "pip" nelle versioni precedenti.*
 
-Consente di gestire i pacchetti installati nell'ambiente, nonché di cercare e installare quelli nuovi (incluse eventuali dipendenze).
+Consente di gestire i pacchetti installati nell'ambiente con Pip, nonché di cercare e installare quelli nuovi (incluse eventuali dipendenze). In Visual Studio 2017 15.7 e versioni successive, viene visualizzata l'opzione **Pacchetti (Conda)** che invece usa lo strumento di gestione dei pacchetti Conda. Se l'opzione non appare, impostare l'opzione **Strumenti** > **Opzioni** > **Python** > **Sperimentale** > **Usa strumento di gestione pacchetti Conda quando disponibile (anziché Pip)** e riavviare Visual Studio.
 
 I pacchetti già installati vengono visualizzati con controlli per aggiornare (freccia rivolta verso l'alto) e disinstallare (X in un cerchio) il pacchetto:
 
@@ -105,7 +105,8 @@ Mostra lo stato corrente del database di completamento IntelliSense:
 
 ![Scheda IntelliSense di Ambienti Python](media/environments-intellisense-tab.png)
 
-In **Visual Studio 2017 versione 15.5** e versioni precedenti, i completamenti IntelliSense dipendono da un database che è stato compilato per tale libreria. La creazione del database viene eseguita in background quando viene installata una libreria, ma potrebbe richiedere tempo e non essere completa quando si avvia la scrittura del codice. **Visual Studio 2017 versione 15.6** e versioni successive usano un metodo più rapido per fornire i completamenti che non dipendono dal database a meno che non si scelga espressamente di abilitarlo.
+- In **Visual Studio 2017 versione 15.5** e versioni precedenti, i completamenti IntelliSense dipendono da un database che è stato compilato per tale libreria. La creazione del database viene eseguita in background quando viene installata una libreria, ma potrebbe richiedere tempo e non essere completa quando si avvia la scrittura del codice.
+- **Visual Studio 2017 versione 15.6** e versioni successive usano un metodo più rapido per rendere disponibili i completamenti che non dipendono dal database per impostazione predefinita. Per questo motivo la scheda ha l'etichetta **IntelliSense [database disabilitato]**. È possibile abilitare il database deselezionando l'opzione **Strumenti** > **Opzioni** > **Python** > **Sperimentale** > **Usa nuovo stile IntelliSense per gli ambienti**.
 
 Quando Visual Studio rileva un nuovo ambiente (o ne viene aggiunto uno), avvia automaticamente la compilazione del database analizzando i file di origine della libreria. Questo processo può avvenire ovunque e richiedere da un minuto a oltre un'ora a seconda dei componenti installati. Anaconda include ad esempio molte librerie, di conseguenza la compilazione del database può richiedere molto tempo. Al termine dell'operazione, si ottengono informazioni IntelliSense dettagliate e non è necessario aggiornare di nuovo il database (con il pulsante **Aggiorna database**) fino a quando non si installano altre librerie.
 

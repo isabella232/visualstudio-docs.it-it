@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione della struttura del codice in Visual Studio
+title: Visualizzare la struttura del codice in Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Visualizzare la struttura del codice
 
@@ -56,11 +56,11 @@ Se il progetto viene archiviato nel controllo del codice sorgente, ogni elemento
 
 ### <a name="class-view-toolbar"></a>Visualizzazione classi - Barra degli strumenti
 
-La barra degli strumenti di Visualizzazione classi contiene i comandi seguenti.
+La barra degli strumenti di **Visualizzazione classi** contiene i comandi seguenti.
 
 |||
 |-|-|
-|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi utilizzati di frequente. Vengono salvate nel file di soluzione attiva (file SUO). Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
+|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi utilizzati di frequente. Vengono salvate nel file di soluzione attiva (*SUO*). Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
 |**Indietro**|Consente di passare all’elemento selezionato in precedenza.|
 |**Avanti**|Consente di passare al successivo elemento selezionato.|
 |**Visualizza diagramma classi** (solo progetti di codice gestito)|Diventa disponibile quando si seleziona uno spazio dei nomi o si digita in **Visualizzazione classi**. Quando viene selezionato uno spazio dei nomi, che contiene tutti i tipi visualizzati dal diagramma classi. Quando viene selezionato uno spazio dei nomi, viene visualizzato solo quel tipo dal diagramma classi.|
@@ -90,7 +90,7 @@ Il menu di scelta rapida in **Visualizzazione classi** può contenere i seguenti
 |**Vai a definizione**|Trova la definizione dell'elemento nel codice sorgente o nel **Visualizzatore oggetti**, se l'elemento non è definito nel progetto aperto.|
 |**Sfoglia definizione**|Visualizza l'elemento selezionato nel **Visualizzatore oggetti**.|
 |**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
-|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella risultati ricerca** (X) accanto alla casella **Trova**.|
+|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella risultati ricerca** (**X**) accanto alla casella **Trova**.|
 |**Copia**|Copia il nome completo dell'elemento.|
 |**Ordina alfabeticamente**|Elenca tipi e membri in ordine alfabetico per nome.|
 |**Ordina per tipo di membro**|Elenca i tipi e membri nell'ordine in base al tipo (in cui le classi precedono le interfacce, le interfacce precedono i delegati e i metodi precedono le proprietà).|
@@ -130,11 +130,11 @@ Il menu di scelta rapida nella finestra **Gerarchia di chiamata** contiene i com
 
 Nella finestra **Visualizzatore oggetti** vengono visualizzate le descrizioni del codice nei progetti.
 
-È possibile filtrare i componenti da visualizzare tramite l'elenco di riepilogo a discesa nella parte superiore della finestra. I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file OCX. Non è possibile aggiungere componenti personalizzati di C++. Le impostazioni personalizzate vengono salvate nella directory dell’applicazione utente di Visual Studio, %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+È possibile filtrare i componenti da visualizzare tramite l'elenco di riepilogo a discesa nella parte superiore della finestra. I componenti personalizzati possono includere file eseguibili di codice gestito, assembly di librerie, librerie dei tipi e file *OCX*. Non è possibile aggiungere componenti personalizzati di C++. Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 Il riquadro sinistro della finestra **Visualizzatore oggetti** mostra gli assembly. È possibile espandere gli assembly per visualizzare gli spazi dei nomi in essi contenuti e quindi espandere gli spazi dei nomi per visualizzare i tipi contenuti. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.
 
-È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (X) accanto alla casella **Ricerca**.
+È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (**X**) accanto alla casella **Ricerca**.
 
 Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è possibile spostarsi tra le selezioni effettuate usando i pulsanti **Avanti** e **Indietro** sulla barra degli strumenti.
 
@@ -185,7 +185,7 @@ La finestra **Definizione codice** visualizza la definizione di un membro o tipo
 Anche se questa finestra è di sola lettura, è possibile impostarvi punti di interruzione o segnalibri. Per modificare la definizione visualizzata scegliere **Modifica definizione** nel menu di scelta rapida. Verrà quindi aperto il file di origine nell'editor di codice e verrà spostato nel punto di inserimento sulla riga in cui inizia la definizione.
 
 > [!NOTE]
-> A partire da Visual Studio 2015, la finestra Definizione codice è utilizzabile solo con il codice C++.
+> A partire da Visual Studio 2015, la finestra **Definizione codice** può essere usata solo con il codice C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu di scelta rapida di Definizione codice
 

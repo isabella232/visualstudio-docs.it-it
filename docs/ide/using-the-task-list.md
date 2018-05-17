@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dell'elenco attività
+title: Usare l'elenco attività
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>Utilizzo dell'elenco attività
+# <a name="use-the-task-list"></a>Usare l'elenco attività
 
 Usare **Elenco attività** per tenere traccia dei commenti di codice che usano token quali `TODO` e `HACK`, o token personalizzati, e per gestire i collegamenti che indirizzano direttamente a una posizione predefinita nel codice. Fare clic sull'elemento nell'elenco per passare alla relativa posizione nel codice sorgente.
 
@@ -30,29 +30,29 @@ Usare **Elenco attività** per tenere traccia dei commenti di codice che usano t
 
 Quando è aperta, la finestra **Elenco attività** viene visualizzata nella parte inferiore della finestra dell'applicazione.
 
-### <a name="to-open-the-task-list"></a>Per aprire Elenco attività
+### <a name="open-the-task-list"></a>Aprire Elenco attività
 
-- Nel menu **Visualizza** scegliere **Elenco attività** (tastiera: CTRL+\\,T).
+- Nel menu **Visualizza** scegliere **Elenco attività** (tastiera: **CTRL**+**\\**,**T**).
 
     ![Finestra Elenco attività](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>Per modificare l'ordinamento dell'elenco
+### <a name="change-the-sort-order-of-the-list"></a>Modificare l'ordinamento dell'elenco
 
 - Fare clic sull'intestazione di una colonna qualsiasi. Per perfezionare ulteriormente i risultati della ricerca, premere il tasto MAIUSC e fare clic su una seconda intestazione di colonna.
 
-     In alternativa, nel menu di scelta rapida scegliere **Ordina per**e selezionare un'intestazione. Per perfezionare ulteriormente i risultati della ricerca, premere il tasto MAIUSC e scegliere una seconda intestazione.
+     In alternativa, nel menu di scelta rapida scegliere **Ordina per**e selezionare un'intestazione. Per perfezionare ulteriormente i risultati della ricerca, premere **MAIUSC** e scegliere una seconda intestazione.
 
-### <a name="to-show-or-hide-columns"></a>Per mostrare o nascondere colonne
+### <a name="show-or-hide-columns"></a>Mostrare o nascondere le colonne
 
 - Fare clic su **Mostra colonne**nel menu di scelta rapida. Scegliere le colonne che si desidera mostrare o nascondere.
 
-### <a name="to-change-the-order-of-the-columns"></a>Per modificare l'ordine delle colonne
+### <a name="change-the-order-of-the-columns"></a>Modificare l'ordine delle colonne
 
 - Trascinare un'intestazione di colonna qualsiasi nella posizione desiderata.
 
 ## <a name="user-tasks"></a>Attività definite dall'utente
 
-La funzionalità Attività definite dall'utente è stata rimossa a partire da Visual Studio 2015. Quando si apre una soluzione che contiene dati di attività definite dall'utente in Visual Studio 2013 e versioni precedenti, i dati contenuti nel file con estensione suo non verranno modificati, ma le attività definite dall'utente non verranno visualizzate nell'elenco attività.
+La funzionalità Attività definite dall'utente è stata rimossa a partire da Visual Studio 2015. Quando si apre una soluzione che contiene dati di attività definite dall'utente in Visual Studio 2013 e versioni precedenti, i dati contenuti nel file con estensione *suo* non verranno modificati, ma le attività definite dall'utente non verranno visualizzate nell'elenco attività.
 
 Per continuare ad accedere e aggiornare i dati delle attività definite dall'utente, è necessario aprire il progetto in Visual Studio 2013 e copiare il contenuto di tutte le attività definite dall'utente nello strumento di gestione dei progetti preferito (ad esempio Team Foundation Server).
 
@@ -74,11 +74,11 @@ Poiché `TODO` è un token predefinito, questo commento viene visualizzato nell'
 
 ###  <a name="customTokens"></a> Token personalizzati
 
-Per impostazione predefinita, Visual Studio include i seguenti token: HACK, TODO, UNDONE, NOTE. I token non fanno distinzione tra maiuscole e minuscole.
+Per impostazione predefinita, Visual Studio include i token seguenti: `HACK`, `TODO`, `UNDONE`, `NOTE`. I token non fanno distinzione tra maiuscole e minuscole.
 
 È inoltre possibile creare token personalizzati.
 
-#### <a name="to-create-a-custom-token"></a>Per creare un token personalizzato
+#### <a name="create-a-custom-token"></a>Creare un token personalizzato
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
@@ -96,7 +96,7 @@ Per impostazione predefinita, Visual Studio include i seguenti token: HACK, TODO
 
 Per impostazione predefinita, i commenti TODO C++ vengono visualizzati nella finestra **Elenco attività** . È possibile modificare questo comportamento.
 
-#### <a name="to-turn-off-c-todo-comments"></a>Per disattivare i commenti TODO C++
+#### <a name="turn-off-c-todo-comments"></a>Disattivare i commenti TODO di C++
 
 Dal menu **Strumenti** scegliere **Opzioni** > **Editor di testo** > **C/C++** > **Visualizza** > **Enumera attività di commento** e impostare il valore su false.
 
@@ -106,9 +106,9 @@ Un *collegamento* è un segnalibro nel codice che viene rilevato nell' **Elenco 
 
 ![Icona di collegamento Elenco attività di Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>Per creare un collegamento
+### <a name="create-a-shortcut"></a>Creare un collegamento
 
-Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **Modifica** > **Segnalibri** > **Aggiungi collegamento Elenco attività** o premere **CTRL**  +  **K**, **CTRL** + **H**.
+Per creare un collegamento, posizionare il puntatore nella parte del codice in cui si vuole aggiungere il collegamento. Scegliere **Modifica** > **Segnalibri** > **Aggiungi collegamento Elenco attività** o premere **CTRL** + **K**, **CTRL**+**H**.
 
 Per spostarsi tra i collegamenti nel codice, scegliere un collegamento nell'elenco, quindi fare clic su **Attività successiva** o **Attività precedente** nel menu di scelta rapida.
 

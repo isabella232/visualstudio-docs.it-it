@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Passaggio 5: Installazione dei pacchetti nell'ambiente Python
 
@@ -43,9 +43,9 @@ La community degli sviluppatori di Python produce migliaia di pacchetti utili ch
 
   ![Completamento dell'installazione matplotlib nell'ambiente](media/environments-add-matplotlib2.png)
 
-  L'indicatore di stato di piccole dimensioni sotto l'ambiente indica che Visual Studio sta compilando il database di IntelliSense per il pacchetto appena installato. La scheda **IntelliSense** offre anche informazioni più dettagliate. Si noti che, fino al completamento del database, le funzionalità di IntelliSense come il completamento automatico e la verifica della sintassi non saranno attive nell'editor del pacchetto.
+  Sotto l'ambiente potrebbe essere visualizzato un indicatore di stato di piccole dimensioni a indicare che Visual Studio sta compilando il database di IntelliSense per il pacchetto appena installato. La scheda **IntelliSense** offre anche informazioni più dettagliate. Si noti che, fino al completamento del database, le funzionalità di IntelliSense come il completamento automatico e la verifica della sintassi non saranno attive nell'editor del pacchetto.
 
-  Si noti che **Visual Studio 2017 versione 15.6** e versioni successive usano un metodo diverso e più veloce per l'utilizzo di IntelliSense e visualizzano un messaggio in merito nella scheda **IntelliSense**.
+  Si noti che **Visual Studio 2017 15.6** e versioni successive usano un metodo diverso e più veloce per l'utilizzo di IntelliSense e visualizzano un messaggio in merito nella scheda **IntelliSense**.
 
 1. Creare un nuovo progetto con **File > Nuovo > Progetto**, selezionando il modello "Applicazione Python". Nel file di codice che viene visualizzato incollare il codice seguente che crea una cosinusoide come nei passaggi dell'esercitazione precedente, questa volta tracciata graficamente:
 
