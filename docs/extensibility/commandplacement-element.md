@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14f28c8e2758d2dde9cf38db268abc9fa9b4f863
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 L'elemento CommandPlacement consente pulsanti, gruppi e menu da includere in più di un gruppo o un menu. Tramite l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.  
@@ -28,7 +28,7 @@ L'elemento CommandPlacement consente pulsanti, gruppi e menu da includere in pi�
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-<CommandPlacement guid=guidMyCommandSet" id="MyCommand" priority="0x001" >  
+<CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >  
   <Parent>... </Parent>  
 </CommandPlacement>  
 ```  

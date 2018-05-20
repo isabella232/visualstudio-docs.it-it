@@ -1,5 +1,5 @@
 ---
-title: Supporto aggiuntivo per gli errori nelle soluzioni Office | Documenti Microsoft
+title: Supporto aggiuntivo per gli errori nelle soluzioni Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -59,41 +59,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13e0520df662b1a48c3f2a603356d46e21c2f4f2
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: bbb9c5676ec3d9f06802f071c842f9e2a396703e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Supporto aggiuntivo per gli errori nelle soluzioni Office
   È possibile utilizzare le risorse seguenti consentono di trovare le risposte ai problemi riscontrati durante la creazione di soluzioni Office in Visual Studio.  
   
-## <a name="troubleshooting-specific-errors"></a>Risoluzione dei problemi relativi a errori specifici  
+## <a name="troubleshoot-specific-errors"></a>Risoluzione degli errori specifici  
  Per assistenza con alcuni errori comuni nelle soluzioni Office, vedere gli argomenti seguenti:  
   
--   [Risoluzione degli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
+-   [Risolvere gli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
--   [Risoluzione dei problemi relativi alla sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)  
+-   [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)  
   
--   [Risoluzione dei problemi relativi alla distribuzione di soluzioni Office](../vsto/troubleshooting-office-solution-deployment.md)  
+-   [Risolvere i problemi di distribuzione di soluzioni Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
 ## <a name="other-resources"></a>Altre risorse  
- [Visual Studio Tools per Office Forum](http://go.microsoft.com/fwlink/?LinkId=149744)  
+ [Visual Studio tools per forum di Office](http://go.microsoft.com/fwlink/?LinkId=149744)  
  Forum dedicato a domande relative a strumenti di sviluppo di Office in Visual Studio.  
   
- [Gruppi di discussione di Office](http://go.microsoft.com/fwlink/?LinkId=63585)  
- Fornisce un'esperienza di newsgroup per domande sulle applicazioni di Office. Utilizzare il programmazione newsgroup qui per domande su attività specifiche correlate ai modelli a oggetti delle applicazioni di Office.  
-  
- [Guida e supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?LinkID=108287)  
+ [Microsoft Guida e supporto tecnico](http://go.microsoft.com/fwlink/?LinkID=108287)  
  È possibile accedere agli articoli di Microsoft Knowledge Base (KB), a download e ad aggiornamenti, a servizi di supporto su Web e ad altri servizi.  
   
  [Risorse aggiuntive per lo sviluppo di soluzioni Office](../vsto/additional-resources-for-developing-office-solutions.md)  
  Vengono forniti collegamenti a risorse aggiuntive per ottenere ulteriori informazioni sullo sviluppo di soluzioni Office e lo sviluppo di Office con Visual Studio.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Risoluzione degli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
- [Risoluzione dei problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
- [Risoluzione dei problemi di distribuzione di soluzioni Office](../vsto/troubleshooting-office-solution-deployment.md)   
+ [Risolvere gli errori nelle soluzioni Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
+ [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
+ [Risolvere i problemi di distribuzione di soluzioni Office](../vsto/troubleshooting-office-solution-deployment.md)   
  [Risorse aggiuntive per lo sviluppo di soluzioni Office](../vsto/additional-resources-for-developing-office-solutions.md)  
   
   

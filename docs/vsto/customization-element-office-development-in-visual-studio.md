@@ -1,5 +1,5 @@
 ---
-title: '&lt;personalizzazione&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
+title: '&lt;personalizzazione&gt; elemento (sviluppo per Office in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;personalizzazione&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `customization` dello spazio dei nomi `vstov4` descrive una specifica soluzione Office. Gli elementi figlio sono diversi per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Sintassi per le personalizzazioni a livello di documento  
   
-```  
+```xml
 <customization  
   id  
   <document  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>Sintassi per i componenti aggiuntivi VSTO  
   
-```  
+```xml
 <customization  
   id  
   <appAddin  
@@ -73,14 +73,14 @@ ms.lasthandoff: 04/16/2018
 #### <a name="appaddin"></a>appAddin  
  Il `appAddin` elemento il `vstov4` dello spazio dei nomi è definito in [ &#60;appAddin&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).  
   
-## <a name="example-of-a-document-level-customization"></a>Esempio di personalizzazione a livello di documento  
+## <a name="example-of-a-document-level-customization"></a>Esempio di una personalizzazione a livello di documento  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra l'elemento `customization` per una personalizzazione a livello di documento. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra l'elemento `customization` per una personalizzazione a livello di documento. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
-```  
+```xml
 <vstov4:customization>  
   <vstov4:document   
     solutionId="73e" />  
@@ -90,11 +90,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="example-of-an-vsto-add-in"></a>Esempio di componente aggiuntivo VSTO  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra l'elemento `customization` per un componente aggiuntivo VSTO. Si tratta di un componente aggiuntivo VSTO per Outlook che include aree del modulo. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra l'elemento `customization` per un componente aggiuntivo VSTO. Si tratta di un componente aggiuntivo VSTO per Outlook che include aree del modulo. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
-```  
+```xml  
 <vstov4:customization>  
   <vstov4:appAddIn   
     application="Outlook"   
@@ -120,8 +120,8 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

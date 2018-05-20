@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere parti XML personalizzate a personalizzazioni a livello di documento | Documenti Microsoft'
+title: 'Procedura: aggiungere parti XML personalizzate a personalizzazioni a livello di documento'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,19 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5126e5ca6eb83df70ed03a7491fdd5d2a98912e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad9e78d6b87f85e09cbba68a4fd4297e09acf18e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Procedura: Aggiungere parti XML personalizzate a personalizzazioni a livello di documento
-  È possibile archiviare dati XML in una cartella di lavoro di Microsoft Office Excel o in un documento di Microsoft Office Word creando una parte XML personalizzata in una personalizzazione a livello di documento. Per altre informazioni, vedere [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md).  
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Procedura: aggiungere parti XML personalizzate a personalizzazioni a livello di documento
+  È possibile archiviare dati XML in una cartella di lavoro di Microsoft Office Excel o in un documento di Microsoft Office Word creando una parte XML personalizzata in una personalizzazione a livello di documento. Per altre informazioni, vedere [panoramica delle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Visual Studio non offre progetti a livello di documento per Microsoft Office PowerPoint. Per informazioni sull'aggiunta di una parte XML personalizzata a una presentazione di PowerPoint usando un componente aggiuntivo VSTO, vedere [procedura: aggiungere parti XML personalizzate a documenti da usando componenti aggiuntivi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+>  Visual Studio non offre progetti a livello di documento per Microsoft Office PowerPoint. Per informazioni sull'aggiunta di una parte XML personalizzata a una presentazione di PowerPoint usando un componente aggiuntivo VSTO, vedere [procedura: aggiungere parti XML personalizzate a documenti usando componenti aggiuntivi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Per aggiungere una parte XML personalizzata a una cartella di lavoro di Excel  
   
@@ -60,7 +60,7 @@ ms.lasthandoff: 04/16/2018
  Per semplicità, in questo esempio viene usata una stringa XML definita come variabile locale nel metodo. In genere, è necessario ottenere l'XML da un'origine esterna, ad esempio un file o un database.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Custom XML Parts Overview](../vsto/custom-xml-parts-overview.md)   
- [Procedura: Aggiungere Web part XML personalizzate a documenti usando componenti aggiuntivi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+ [Panoramica delle parti XML personalizzata](../vsto/custom-xml-parts-overview.md)   
+ [Procedura: aggiungere parti XML personalizzate a documenti usando componenti aggiuntivi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
   

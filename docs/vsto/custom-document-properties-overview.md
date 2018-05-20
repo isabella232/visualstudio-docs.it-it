@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sulle proprietà personalizzate dei documenti | Documenti Microsoft
+title: Cenni preliminari sulle proprietà personalizzate dei documenti
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
+# <a name="custom-document-properties-overview"></a>Cenni preliminari sulle proprietà personalizzate dei documenti
 
-Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate al documento nel progetto: \_PercorsoAssembly e \_AssemblyName. Quando un utente apre un documento, l'applicazione di Microsoft Office controlla per queste proprietà personalizzate dei documenti. Se sono presenti nel documento, l'applicazione carica il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], che avvia la personalizzazione. Per ulteriori informazioni, vedere [architettura di soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate al documento nel progetto: \_PercorsoAssembly e \_AssemblyName. Quando un utente apre un documento, l'applicazione di Microsoft Office controlla per queste proprietà personalizzate dei documenti. Se sono presenti nel documento, l'applicazione carica il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], che avvia la personalizzazione. Per altre informazioni, vedere [soluzioni di architettura di Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -38,7 +38,7 @@ Questa proprietà contiene il CLSID di un'interfaccia, il caricatore di soluzion
 
 ## <a name="assemblylocation"></a>\_PercorsoAssembly
 
-Questa proprietà contiene una stringa che fornisce informazioni dettagliate su manifesto di distribuzione per la personalizzazione. Per ulteriori informazioni sui manifesti, vedere [Application and Deployment Manifests nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Questa proprietà contiene una stringa che fornisce informazioni dettagliate su manifesto di distribuzione per la personalizzazione. Per ulteriori informazioni sui manifesti, vedere [manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
  Valore della proprietà The_AssemblyLocation può avere formati diversi, a seconda della modalità di distribuzione della soluzione:
 
@@ -54,8 +54,8 @@ Questa proprietà contiene una stringa che fornisce informazioni dettagliate su 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)
-[manifesti dell'applicazione e distribuzione nelle soluzioni Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Procedura: pubblicare una soluzione Office tramite ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[procedura: creare e modificare le proprietà personalizzate dei documenti](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)
+- [Manifesti dell'applicazione e distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Procedura: pubblicare una soluzione Office tramite ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Procedura: creare e modificare le proprietà personalizzate dei documenti](../vsto/how-to-create-and-modify-custom-document-properties.md)

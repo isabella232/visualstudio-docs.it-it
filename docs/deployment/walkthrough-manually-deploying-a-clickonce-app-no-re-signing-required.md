@@ -25,10 +25,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 0584aac376345bc508e5f2088decd45b8c64783b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: distribuzione manuale di una applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione
 Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi assegnarle a un cliente per pubblicare e distribuire, il cliente ha in genere era necessario aggiornare il manifesto di distribuzione e firmarlo di nuovo. Mentre è ancora il metodo preferito nella maggior parte dei casi, .NET Framework 3.5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni che possono essere distribuite dai clienti senza la necessità di rigenerare un nuovo manifesto di distribuzione. Per ulteriori informazioni, vedere [la distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  

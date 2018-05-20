@@ -1,5 +1,5 @@
 ---
-title: '&lt;customHostSpecified&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
+title: '&lt;customHostSpecified&gt; elemento (sviluppo per Office in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d74dac27e4d4a5735dc73ebb069d985d17022d4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4eaf874a259251c35a6b01c08f544993092ff4d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; elemento (sviluppo per Office in Visual Studio)
   Il `customHostSpecified` elemento indica che questa soluzione non è un'applicazione autonoma. Soluzioni Office contengono componenti che sono ospitati all'interno di applicazioni di Microsoft Office.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml
 <customHostSpecified />  
 ```  
   
@@ -40,17 +40,17 @@ ms.lasthandoff: 04/16/2018
  Questo elemento dispone di alcun attributo e non gli elementi figlio.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio di codice seguente viene illustrato il `customHostSpecified` elemento in un manifesto dell'applicazione per una soluzione Office. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ Nell'esempio di codice seguente viene illustrato il `customHostSpecified` elemento in un manifesto dell'applicazione per una soluzione Office. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
-```  
+```xml
 <entryPoint>  
     <co.v1:customHostSpecified />  
 </entryPoint>  
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

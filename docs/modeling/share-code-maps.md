@@ -1,0 +1,63 @@
+---
+title: Esportare e salvare le mappe del codice
+ms.date: 05/16/2018
+ms.topic: conceptual
+author: gewarren
+ms.author: gewarren
+manager: douge
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-modeling
+ms.workload:
+- multiple
+ms.openlocfilehash: abfe8d6160d023a99e9a49480baada9acb0c8243
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/17/2018
+---
+# <a name="share-code-maps"></a>Condividere le mappe codice
+
+È possibile salvare mappe del codice come parte di un progetto di Visual Studio, come un'immagine o come file XPS.
+
+## <a name="share-a-code-map-with-other-visual-studio-users"></a>Condividere una mappa del codice con altri utenti di Visual Studio
+
+Usare il menu **File** per salvare la mappa.
+
+oppure
+
+Per salvare la mappa come parte del progetto specifico, sulla barra degli strumenti della mappa, scegliere **condivisione** > **spostare \<nome mappa codice > DGML in**e quindi scegliere il progetto in cui si desidera salvare il eseguire il mapping.
+
+![Spostare una mappa in un altro progetto](../modeling/media/codemapsmovemapmenu.png)
+
+Visual Studio salva l'oggetto map come un *DGML* file che è possibile condividere con altri utenti di Visual Studio Enterprise e Visual Studio Professional.
+
+> [!NOTE]
+> Prima di condividere una mappa con gli utenti che usano Visual Studio Professional, assicurarsi di espandere tutti i gruppi, visualizzare i nodi nascosti e i collegamenti tra gruppi e recuperare tutti i nodi eliminati che si vuole vengano visualizzati da altri nella mappa. In caso contrario, altri utenti non saranno in grado di visualizzare questi elementi.
+>
+> Quando si salva una mappa che è contenuta in un progetto di modellazione o che è stata copiata da un progetto di modellazione in un altro percorso potrebbe verificarsi l'errore seguente:
+>
+> "Impossibile salvare *nomeFile* all'esterno della directory del progetto. Gli elementi collegati non sono supportati."
+>
+> In Visual Studio viene visualizzato l'errore, ma viene comunque creata la versione salvata. Per evitare l'errore, creare la mappa all'esterno del progetto di modellazione. Sarà quindi possibile salvarlo quindi nel percorso desiderato. Il semplice tentativo di copiare il file in un altro percorso della soluzione e salvarlo non produrrà alcun effetto.
+
+## <a name="export-a-code-map-as-an-image"></a>Esportare una mappa del codice come immagine
+
+Quando si esporta una mappa del codice sotto forma di immagine, è possibile copiarlo in altre applicazioni, ad esempio Microsoft Word o PowerPoint.
+
+1. Sulla barra degli strumenti della mappa del codice, scegliere **condivisione** > **posta elettronica come immagine** oppure **Copia immagine**.
+
+2. Incollare l'immagine in un'altra applicazione.
+
+## <a name="export-the-map-as-an-xps-file"></a>Esportare la mappa come file XPS
+
+Quando si esporta una mappa del codice come file XPS, è possibile visualizzarla in visualizzatori XAML o XML come Internet Explorer.
+
+1. Sulla barra degli strumenti della mappa del codice, scegliere **condivisione** > **Invia come Portable XPS** oppure **Salva come Portable XPS**.
+
+2. Scegliere la posizione in cui salvare il file.
+
+3. Assegnare un nome alla mappa codice. Assicurarsi che il **Salva come** casella viene impostata su **file XPS (\*XPS)**. Scegliere **Salva**.
+
+## <a name="see-also"></a>Vedere anche
+
+- [Mappare le dipendenze con le mappe del codice](../modeling/map-dependencies-across-your-solutions.md)

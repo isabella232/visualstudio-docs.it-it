@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 4f01dddf18e93c657d2c69e30a9b4698f4dda796
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug utilizzando il Debugger JIT di Visual Studio
 Il debug Just-In-Time avvia Visual Studio automaticamente quando si verifica un'eccezione o un arresto anomalo in un'applicazione che è in esecuzione all'esterno di Visual Studio. Ciò consente di testare l'applicazione quando Visual Studio non è in esecuzione e avviare il debug con Visual Studio quando si verifica un problema.
@@ -58,7 +58,7 @@ Il debug JIT può comunque essere abilitato anche se Visual Studio non è più p
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\DbgManagedDebugger  
+    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger  
 
     ![Chiave del Registro di sistema JIT](../debugger/media/dbg-jit-registry.png "chiave del Registro di sistema JIT") 
   

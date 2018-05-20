@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>Creazione di funzionalità SharePoint
   È possibile utilizzare una funzionalità di SharePoint per raggruppare gli elementi di progetto SharePoint correlati per semplificare la distribuzione. È possibile creare funzionalità, impostare gli ambiti e contrassegnare altre funzionalità come dipendenze utilizzando la finestra di progettazione di funzionalità di SharePoint. La finestra di progettazione genera inoltre un manifesto, ovvero un file XML che descrive ogni funzionalità.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |Proprietà|Descrizione|  
 |--------------|-----------------|  
-|Titolo|Facoltativo. Il titolo predefinito della funzionalità è impostato su *SolutionName * * FeatureName*.|  
+|Titolo|Facoltativo. Il titolo predefinito della funzionalità è impostato su *SolutionName* *FeatureName*.|  
 |Descrizione|Facoltativo. Descrizione della funzionalità di SharePoint.|  
 |Ambito|Obbligatorio. Se una funzionalità viene creata utilizzando **Esplora**, per impostazione predefinita, l'ambito è impostato sul Web.<br /><br /> -Farm: Attivare una funzionalità per un'intera server farm.<br /><br /> -Sito: Attivare una funzionalità per tutti i siti web in una raccolta siti.<br /><br /> -Web: Attivare una funzionalità per un sito web specifico.<br /><br /> -WebApplication: Attivare una funzionalità per tutti i siti web in un'applicazione web.|  
 |Elementi nella soluzione|Tutti gli elementi di SharePoint che può essere aggiunto alla funzionalità.|  

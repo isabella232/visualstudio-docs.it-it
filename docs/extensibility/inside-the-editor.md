@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>All'interno dell'Editor
 L'editor è composto da un numero di sottosistemi diversi, che consentono di mantenere l'editor di testo modello separato dalla visualizzazione di testo e l'interfaccia utente.  
@@ -59,7 +59,7 @@ L'editor è composto da un numero di sottosistemi diversi, che consentono di man
   
  Il sottosistema di modello di testo è libero di concetti dell'interfaccia utente. Ad esempio, non è responsabile per la formattazione del testo o il layout del testo e ha alcuna conoscenza del visuali che possono essere associati con il testo.  
   
- I tipi pubblici del sottosistema di modello di testo sono contenuti in Microsoft.VisualStudio.Text.Data.dll e Microsoft.VisualStudio.CoreUtilitiy.dll, solo nella libreria di classi base .NET Framework e Managed Extensibility Framework (MEF).  
+ I tipi pubblici del sottosistema di modello di testo contenuti Microsoft.VisualStudio.Text.Data.dll e Microsoft.VisualStudio.CoreUtility.dll, che dipendono da solo su Managed Extensibility Framework (MEF) e la libreria di classi base .NET Framework.  
   
 ### <a name="text-view-subsystem"></a>Sottosistema di visualizzazione di testo  
  Il sottosistema di visualizzazione di testo è responsabile per la formattazione e visualizzazione di testo. I tipi di questo sottosistema sono suddivise in due livelli, a seconda se i tipi si basano su Windows Presentation Foundation (WPF). I tipi più importanti sono <xref:Microsoft.VisualStudio.Text.Editor.ITextView> e <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, che controlla il set di righe di testo che devono essere visualizzati e anche il punto di inserimento, la selezione e le funzionalità per la decorazione di testo, utilizzando gli elementi UI WPF. Questo sottosistema fornisce anche i margini intorno al testo dell'area di visualizzazione. Questi margini possono essere esteso e possono contenere diversi tipi di effetti del contenuto e visual. Esempi dei margini sono riga numero consente di visualizzare e barre di scorrimento.  

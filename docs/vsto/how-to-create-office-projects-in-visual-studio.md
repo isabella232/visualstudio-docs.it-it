@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: creare progetti di Office in Visual Studio
   È possibile utilizzare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare il componente aggiuntivo VSTO a livello di documento e personalizzazioni per applicazioni di Microsoft Office. Per ulteriori informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -61,29 +61,29 @@ ms.lasthandoff: 04/16/2018
   
      I percorsi hanno i formati seguenti:  
   
-    -   [*unità*\]: \  
+      * [*unità*\]\:  
   
-    -   \\\\*Server*\\*condivisione*  
+      * \\\\*Server*\\*condivisione*  
   
      Non usare i caratteri seguenti nel percorso:  
   
-    -   Asterisco (*)  
+      * Asterisco (*)  
   
-    -   Barra verticale (|)  
+      * Barra verticale (|)  
   
-    -   Due punti (:) (consentiti solo dopo la lettera di unità)  
+      * Due punti (:) (consentiti solo dopo la lettera di unità)  
   
-    -   Virgolette doppie (") (nei percorsi che contengono spazi non sono necessarie le virgolette)  
+      * Virgolette doppie (") (nei percorsi che contengono spazi non sono necessarie le virgolette)  
   
-    -   Minore di (\<)  
+      * Minore di (\<)  
   
-    -   Maggiore di (>)  
+      * Maggiore di (>)  
   
-    -   Punto interrogativo (?)  
+      * Punto interrogativo (?)  
   
-    -   Segno di percentuale (%)  
+      * Segno di percentuale (%)  
   
-7.  Fare clic sul pulsante **OK** .  
+7. Fare clic sul pulsante **OK** .
   
     > [!NOTE]  
     >  I progetti di componente aggiuntivo vengono sempre salvati al momento della creazione e non possono essere creati come progetti temporanei. Per ulteriori informazioni sui progetti temporanei, vedere [progetti temporanei](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
@@ -123,7 +123,7 @@ ms.lasthandoff: 04/16/2018
   
      I percorsi hanno i formati seguenti:  
   
-    -   [*unità*\]: \  
+    -   [*unità*\]\:  
   
     -   \\\\*Server*\\*condivisione*  
   

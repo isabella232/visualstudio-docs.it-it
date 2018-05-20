@@ -1,12 +1,13 @@
 ---
 title: Metodo reduce (Array) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>Metodo reduce (Array) (JavaScript)
 Chiama la funzione di callback specificato per tutti gli elementi nella matrice. Il valore restituito della funzione di callback è il risultato accumulato e viene fornito come argomento nella chiamata successiva alla funzione di callback.  
@@ -43,7 +44,7 @@ array1.reduce(callbackfn[, initialValue])
 |---------------|----------------|  
 |`array1`|Obbligatorio. Oggetto matrice.|  
 |`callbackfn`|Obbligatorio. Una funzione che accetta fino a quattro argomenti. Il metodo `reduce` chiama la funzione `callbackfn` una volta per ogni elemento nella matrice.|  
-|`initialValue`|Parametro facoltativo. Se `initialValue` viene specificato, viene utilizzato come valore iniziale per avviare l'accumulo. La prima chiamata al `callbackfn` funzione questo valore viene fornito come argomento anziché un valore di matrice.|  
+|`initialValue`|Facoltativo. Se `initialValue` viene specificato, viene utilizzato come valore iniziale per avviare l'accumulo. La prima chiamata al `callbackfn` funzione questo valore viene fornito come argomento anziché un valore di matrice.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Il risultato accumulato dall'ultima chiamata alla funzione di callback.  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Note  
  Se un `initialValue` viene fornito il `reduce` chiamate al metodo di `callbackfn` funzione una volta per ogni elemento presente nella matrice, in ordine di indice crescente. Se un `initialValue` non viene specificato, il `reduce` chiamate al metodo di `callbackfn` funzione su ogni elemento, a partire dal secondo elemento.  
   
- Il valore restituito della funzione di callback viene fornito come il `previousValue` argomento alla chiamata successiva alla funzione di callback. Il valore restituito dell'ultima chiamata alla funzione di callback è il valore restituito di `reduce` metodo.  
+ Il valore restituito della funzione di callback viene fornito come il `accumulator` argomento alla chiamata successiva alla funzione di callback. Il valore restituito dell'ultima chiamata alla funzione di callback è il valore restituito di `reduce` metodo.  
   
  La funzione di callback non viene chiamata per gli elementi mancanti della matrice.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Sintassi della funzione di callback  
  La sintassi della funzione di callback è la seguente:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  È possibile dichiarare la funzione di callback utilizzando fino a quattro parametri.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Argomento di callback|Definizione|  
 |-----------------------|----------------|  
-|`previousValue`|Il valore dalla precedente chiamata alla funzione di callback. Se un `initialValue` viene fornito per il `reduce` (metodo), il `previousValue` è `initialValue` la prima volta che viene chiamata la funzione.|  
+|`accumulator`|Il valore dalla precedente chiamata alla funzione di callback. Se un `initialValue` viene fornito per il `reduce` (metodo), il `accumulator` è `initialValue` la prima volta che viene chiamata la funzione.|  
 |`currentValue`|Il valore dell'elemento della matrice corrente.|  
 |`currentIndex`|L'indice numerico dell'elemento della matrice corrente.|  
 |`array1`|Oggetto matrice contenente l'elemento.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Se un `initialValue` viene fornito al metodo ridurre:  
   
--   Il valore dell'argomento `previousValue` è `initialValue`.  
+-   Il valore dell'argomento `accumulator` è `initialValue`.  
   
 -   Il `currentValue` argomento è il valore del primo elemento presente nella matrice.  
   
  Se un `initialValue` non è stato specificato:  
   
--   Il `previousValue` argomento è il valore del primo elemento presente nella matrice.  
+-   Il `accumulator` argomento è il valore del primo elemento presente nella matrice.  
   
 -   Il `currentValue` argomento è il valore del secondo elemento presente nella matrice.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |L'elemento viene eliminato dalla matrice.|No, a meno che tale elemento non sia già stato passato alla funzione di callback.|  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente consente di concatenare i valori della matrice in una stringa, separare i valori con ":". Perché non è stato specificato alcun valore iniziale per il `reduce` (metodo), la prima chiamata alla funzione di callback è "abc" come il `previousValue` argomento e "def" come il `currentValue` argomento.  
+ Nell'esempio seguente consente di concatenare i valori della matrice in una stringa, separare i valori con ":". Perché non è stato specificato alcun valore iniziale per il `reduce` (metodo), la prima chiamata alla funzione di callback è "abc" come il `accumulator` argomento e "def" come il `currentValue` argomento.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  Nell'esempio seguente aggiunge i valori in una matrice. Il `currentIndex` e `array1` i parametri vengono utilizzati nella funzione di callback.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  Nell'esempio seguente ottiene una matrice che contiene solo i valori sono compresi tra 1 e 10 in un'altra matrice. Il valore iniziale specificato per il `reduce` metodo è una matrice vuota.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

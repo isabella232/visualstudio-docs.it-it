@@ -1,5 +1,5 @@
 ---
-title: '&lt;Descrizione&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
+title: '&lt;Descrizione&gt; elemento (sviluppo per Office in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13755a20b091696bf741c1f25360941e01b65945
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;Descrizione&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `description` dello spazio dei nomi `vstov4` archivia la descrizione della soluzione Office che viene visualizzata nella finestra di dialogo dei componenti aggiuntivi COM delle applicazioni di Microsoft Office.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <description>  
 </description>  
 ```  
@@ -40,12 +40,12 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO  
   
-### <a name="description"></a>description  
- L'esempio di codice seguente illustra l'elemento `description` in una soluzione a livello di applicazione distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+### <a name="description"></a>Descrizione  
+ L'esempio di codice seguente illustra l'elemento `description` in una soluzione a livello di applicazione distribuita tramite [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
-```  
+```xml  
 <vstov4:description>  
   ContosoOutlookAddIn - Outlook add-in   
   created with Visual Studio Tools for Office  
@@ -53,8 +53,8 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

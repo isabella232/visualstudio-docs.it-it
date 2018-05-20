@@ -1,5 +1,5 @@
 ---
-title: Distribuire una soluzione Office usando ClickOnce | Documenti Microsoft
+title: Distribuire una soluzione Office tramite ClickOnce
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29c0e6691f31c6092b9d2222064c59d7fb8839db
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-clickonce"></a>Distribuzione di una soluzione Office utilizzando ClickOnce
-  L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, se la soluzione sarà eseguita da più utenti nello stesso computer, si consiglia di usare Windows Installer (MSI).  
+# <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office tramite ClickOnce
+  L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è consigliabile utilizzare Windows Installer (*file con estensione msi*) se la soluzione sarà eseguita più di un utente nello stesso computer.  
   
 ## <a name="in-this-topic"></a>Contenuto dell'argomento  
   
@@ -45,10 +45,10 @@ ms.lasthandoff: 04/16/2018
   
 -   [Eseguire il rollback di una soluzione a una versione precedente](#Roll)  
   
- Per ulteriori informazioni su come distribuire una soluzione Office creando un file Windows Installer, vedere [distribuisce una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Per ulteriori informazioni su come distribuire una soluzione Office creando un file Windows Installer, vedere [distribuire una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ##  <a name="Publish"></a> Pubblicare la soluzione  
- È possibile pubblicare la soluzione usando il **pubblicazione guidata** o **progettazione**. In questa procedura si userà il **progettazione** perché offre il set completo di opzioni di pubblicazione. Vedere [pubblicazione guidata &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+ È possibile pubblicare la soluzione usando il **pubblicazione guidata** o **progettazione**. In questa procedura si userà il **progettazione** perché offre il set completo di opzioni di pubblicazione. Vedere [procedura guidata di pubblicazione &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Per pubblicare la soluzione  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/16/2018
 9. Se la soluzione venga destinata a .NET Framework 4.5, selezionare anche la **Visual Studio 2010 Tools per Office Runtime** casella di controllo.  
   
     > [!NOTE]  
-    >  Per impostazione predefinita, questa casella di controllo non viene visualizzato. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Vedere [creazione di un pacchetto del programma di avvio automatico per Office 2013 VSTO componente aggiuntivo con Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Per impostazione predefinita, questa casella di controllo non viene visualizzato. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Vedere [creare un pacchetto del programma di avvio per Office 2013 VSTO componente aggiuntivo con Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
   
 10. In **specificare il percorso di installazione dei prerequisiti**, scegliere una delle opzioni che vengono visualizzati, quindi scegliere il **OK** pulsante.  
   
@@ -97,7 +97,7 @@ ms.lasthandoff: 04/16/2018
     |**Scarica prerequisiti dallo stesso percorso dell'applicazione**|Il software prerequisito viene installato insieme alla soluzione. Se si seleziona questa opzione, tutti i pacchetti di prerequisiti vengono copiati automaticamente da Visual Studio nel percorso di pubblicazione. Per il corretto funzionamento di questa opzione, i pacchetti di prerequisiti devono essere presenti nel computer di sviluppo.|  
     |**Scarica prerequisiti dal seguente percorso**|Tutti i pacchetti di prerequisiti vengono copiati da Visual Studio nella posizione specificata e vengono installati insieme alla soluzione.|  
   
-     Vedere [la finestra di dialogo Prerequisiti](/visualstudio/ide/reference/prerequisites-dialog-box).  
+     Vedere [finestra di dialogo Prerequisiti](/visualstudio/ide/reference/prerequisites-dialog-box).  
   
 11. Scegliere il **aggiornamenti** pulsante, specificare la frequenza con cui ogni utente finale del componente aggiuntivo VSTO o personalizzazione per cercare gli aggiornamenti e quindi scegliere il **OK** pulsante.  
   
@@ -131,14 +131,14 @@ ms.lasthandoff: 04/16/2018
      ![Struttura della cartella di pubblicazione](../vsto/media/publishfolderstructure.png "struttura della cartella di pubblicazione")  
   
     > [!NOTE]  
-    >  ClickOnce viene aggiunta l'estensione. deploy agli assembly in modo che un'installazione protetta di Internet Information Services (IIS) non bloccherà i file a causa di un'estensione non sicura. Quando l'utente installa la soluzione, l'estensione .deploy viene automaticamente rimossa da ClickOnce.  
+    >  Con ClickOnce viene aggiunta la *deploy* estensione agli assembly in modo che un'installazione protetta di Internet Information Services (IIS) non bloccherà i file a causa di un'estensione non sicura. Quando l'utente installa la soluzione, rimossa da ClickOnce il *deploy* estensione.  
   
 14. Copiare i file della soluzione nel percorso di installazione specificato precedentemente in questa procedura.  
   
 ##  <a name="Trust"></a> Scegliere come si desidera concedere l'attendibilità alla soluzione  
- Prima che una soluzione possa essere eseguita nei computer degli utenti, è necessario concedere l'attendibilità oppure gli utenti devono rispondere a una richiesta di attendibilità quando installano la soluzione. Per concedere l'attendibilità alla soluzione, firmare i manifesti usando un certificato che identifichi un editore conosciuto e attendibile. Vedere [Trusting the Solution firmando the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+ Prima che una soluzione possa essere eseguita nei computer degli utenti, è necessario concedere l'attendibilità oppure gli utenti devono rispondere a una richiesta di attendibilità quando installano la soluzione. Per concedere l'attendibilità alla soluzione, firmare i manifesti usando un certificato che identifichi un editore conosciuto e attendibile. Vedere [attendibilità alla soluzione firmando i manifesti dell'applicazione e distribuzione](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
- Se si distribuisce una personalizzazione a livello di documento e si desidera inserire il documento in una cartella nel computer dell'utente o rendere disponibile il documento su un sito di SharePoint, verificare che Office attendibilità al percorso del documento. Vedere [concessione dell'attendibilità ai documenti](../vsto/granting-trust-to-documents.md).  
+ Se si distribuisce una personalizzazione a livello di documento e si desidera inserire il documento in una cartella nel computer dell'utente o rendere disponibile il documento su un sito di SharePoint, verificare che Office attendibilità al percorso del documento. Vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).  
   
 ##  <a name="Helping"></a> Consentire agli utenti di installare la soluzione  
  Gli utenti possono installare la soluzione eseguendo il programma di installazione, aprendo il manifesto di distribuzione oppure, nel caso di una personalizzazione a livello di documento, aprendo direttamente il documento. Come procedura consigliata, gli utenti devono installare la soluzione usando il programma di installazione. Gli altri due approcci non garantiscono che i prerequisiti software sia installato. Se gli utenti desiderano aprire il documento dal percorso di installazione, devono aggiungerlo all'elenco dei percorsi attendibili nel Centro protezione dell'applicazione di Office.  
@@ -148,16 +148,16 @@ ms.lasthandoff: 04/16/2018
   
  Come procedura consigliata, gli utenti devono aprire una copia del documento nei computer locali per evitare che più utenti tentino di aprire la stessa copia contemporaneamente. Per applicare questo approccio, è possibile configurare il programma di installazione in modo da copiare il documento nei computer degli utenti. Vedere [inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)](#Put).  
   
-### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installazione della soluzione tramite apertura del manifesto di distribuzione da un sito Web IIS  
- Gli utenti possono installare una soluzione Office aprendo il manifesto di distribuzione dal Web. Tuttavia, un'installazione protetta di Internet Information Services (IIS) bloccherà i file con estensione .vsto. Il tipo MIME deve essere definito in IIS prima di poter distribuire una soluzione Office tramite IIS.  
+### <a name="install-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installare la soluzione aprendo il manifesto di distribuzione da un sito Web IIS  
+ Gli utenti possono installare una soluzione Office aprendo il manifesto di distribuzione dal Web. Tuttavia, un'installazione protetta di Internet Information Services (IIS) bloccherà i file con il *VSTO* estensione. Il tipo MIME deve essere definito in IIS prima di poter distribuire una soluzione Office tramite IIS.  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>Per aggiungere il tipo MIME .vsto a IIS 6.0  
   
-1.  Nel server che esegue IIS 6.0, scegliere **avviare**, **tutti i programmi**, **strumenti di amministrazione**, **Internet Information Services (IIS) Manager**.  
+1.  Nel server che esegue IIS 6.0, scegliere **avviare** > **tutti i programmi** > **strumenti di amministrazione**  >   **Gestione Internet Information Services (IIS)**. 
   
 2.  Scegliere il nome del computer, il **siti Web** cartella o il sito web che si sta configurando.  
   
-3.  Nella barra dei menu, scegliere **azione**, **proprietà**.  
+3.  Nella barra dei menu, scegliere **azione** > **proprietà**.  
   
 4.  Nel **intestazioni HTTP** scheda, scegliere il **tipi MIME** pulsante.  
   
@@ -166,28 +166,28 @@ ms.lasthandoff: 04/16/2018
 6.  Nel **tipo MIME** finestra immettere **VSTO** come estensione, immettere **application/x-ms-vsto** come MIME digitare e quindi applicare le nuove impostazioni.  
   
     > [!NOTE]  
-    >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. Occorre a questo punto svuotare la cache del disco del browser e provare nuovamente ad aprire il file .vsto.  
+    >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È necessario quindi svuotare la cache del browser disco e quindi provare ad aprire il *VSTO* file nuovamente.  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Per aggiungere il tipo MIME .vsto a IIS 7.0  
   
-1.  Nel server che esegue IIS 7.0, scegliere **avviare**, **tutti i programmi**, **Accessori**.  
+1.  Nel server che esegue IIS 7.0, scegliere **avviare** > **tutti i programmi** > **Accessori**.  
   
 2.  Aprire il menu di scelta rapida **prompt dei comandi**, quindi scegliere **Esegui come amministratore.**  
   
 3.  Nel **aprire** , immettere il percorso seguente e quindi scegliere il **OK** pulsante.  
   
-    ```  
+    ```cmd
     %windir%\system32\inetsrv   
     ```  
   
 4.  Immettere il seguente comando, quindi applicare le nuove impostazioni.  
   
-    ```  
+    ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. Occorre a questo punto svuotare la cache del disco del browser e provare nuovamente ad aprire il file con estensione vsto.  
+    >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È necessario quindi svuotare la cache del browser disco e quindi provare ad aprire il *VSTO* file nuovamente.  
   
 ##  <a name="Put"></a> Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)  
  È possibile copiare il documento della soluzione nel computer dell'utente finale per essi mediante la creazione di un'azione post-distribuzione. In questo modo, l'utente non dispone di copiare manualmente il documento dal percorso di installazione nel proprio computer dopo l'installazione della soluzione. È necessario creare una classe che definisca l'azione di post-distribuzione, compilare e pubblicare la soluzione, modificare il manifesto dell'applicazione e firmare il manifesto dell'applicazione e di distribuzione.  
@@ -196,7 +196,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Creare una classe che definisca l'azione post-distribuzione  
   
-1.  Nella barra dei menu scegliere **File**, **Aggiungi**, **Nuovo progetto**.  
+1.  Nella barra dei menu, scegliere **File** > **Add** > **nuovo progetto**.  
   
 2.  Nel **Aggiungi nuovo progetto** della finestra di dialogo di **modelli installati** riquadro, scegliere il **Windows** cartella.  
   
@@ -206,9 +206,9 @@ ms.lasthandoff: 04/16/2018
   
 5.  In **Esplora**, scegliere il **FileCopyPDA** progetto.  
   
-6.  Nella barra dei menu scegliere **Progetto**, **Aggiungi riferimento**.  
+6.  Nella barra dei menu, scegliere **Project** > **Aggiungi riferimento**.  
   
-7.  Nel **.NET** scheda, aggiungere riferimenti a Microsoft e ServerDocument.  
+7.  Nel **.NET** scheda, aggiungere riferimenti agli `Microsoft.VisualStudio.Tools.Applications.Runtime` e `Microsoft.VisualStudio.Tools.Applications.ServerDocument`.  
   
 8.  Rinominare la classe in `FileCopyPDA`, quindi sostituire il contenuto del file con il codice. Mediante il codice vengono effettuate le seguenti attività:  
   
@@ -233,13 +233,13 @@ ms.lasthandoff: 04/16/2018
   
 5.  In **Esplora**, scegliere il **ExcelWorkbook** progetto.  
   
-6.  Nella barra dei menu, scegliere **progetto**, **nuova cartella**.  
+6.  Nella barra dei menu, scegliere **Project** > **nuova cartella**.  
   
-7.  Invio **dati**e quindi premere INVIO.  
+7.  Invio **dati**, quindi scegliere il **invio** chiave.  
   
 8.  In **Esplora**, scegliere il **dati** cartella.  
   
-9. Nella barra dei menu, scegliere **progetto**, **Aggiungi elemento esistente**.  
+9. Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**.  
   
 10. Nel **Aggiungi elemento esistente** la finestra di dialogo, individuare la directory di output per il **ExcelWorkbook** del progetto, scegliere il **ExcelWorkbook.xlsx** file e quindi scegliere il  **Aggiungere** pulsante.  
   
@@ -263,7 +263,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Dopo l'elemento `</vstav3:update>` aggiungere il codice seguente. Per l'attributo di classe di `<vstav3:entryPoint>` elemento, usare la sintassi seguente: *NomeSpazioDeiNomi*. Nell'esempio riportato di seguito il nome dello spazio dei nomi è uguale a quello della classe. Pertanto, il nome del punto di ingresso risultante è `FileCopyPDA.FileCopyPDA`.  
   
-    ```  
+    ```xml
     <vstav3:postActions>  
       <vstav3:postAction>  
         <vstav3:entryPoint  
@@ -288,7 +288,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Firmare il manifesto dell'applicazione modificato usando il comando seguente:  
   
-    ```  
+    ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Modificare il **c:\publish** cartella, quindi aggiornamento e la distribuzione di accesso manifesto eseguendo il comando seguente:  
   
-    ```  
+    ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
     celWorkbookMostRecentVersionNumber>\ExcelWorkbook.dll.manifest" -certfile "Application Files\ExcelWorkbookMostRecentVersionNumber>\ExcelWorkbook_TemporaryKey.pfx"  
     ```  
@@ -306,7 +306,7 @@ ms.lasthandoff: 04/16/2018
   
      Verrà visualizzato il messaggio "ExcelWorkbook.vsto firmato correttamente".  
   
-5.  Copiare il file ExcelWorkbook VSTO il **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ directory.  
+5.  Copia il *ExcelWorkbook* del file per il **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ directory.  
   
 ##  <a name="SharePoint"></a> Inserire il documento di una soluzione in un server che esegue SharePoint (solo personalizzazioni a livello di documento)  
  È possibile pubblicare la personalizzazione a livello di documento agli utenti finali tramite SharePoint. Quando gli utenti visitano il sito di SharePoint e aprono il documento, la soluzione viene automaticamente installata dalla cartella di rete condivisa nei computer locali degli utenti. Una volta che la soluzione è installata localmente, la personalizzazione continuerà a essere valida anche se il documento viene copiato in un'altra posizione, ad esempio sul desktop.  
@@ -331,7 +331,7 @@ ms.lasthandoff: 04/16/2018
   
         4.  Nel **percorso** , immettere l'URL della raccolta documenti di SharePoint che contiene il documento precedentemente caricato (ad esempio *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
-             Non aggiungere il nome della pagina Web predefinita, ad esempio default.aspx o AllItems.aspx.  
+             Non aggiungere il nome della pagina Web predefinita, ad esempio *default. aspx* oppure *AllItems*.  
   
         5.  Selezionare il **le sottocartelle di questo percorso verranno considerati attendibili** casella di controllo e quindi scegliere il **OK** pulsante.  
   
@@ -340,13 +340,13 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Custom"></a> Creare un programma di installazione personalizzato  
  È possibile creare un programma di installazione personalizzato per la soluzione Office, anziché utilizzare il programma di installazione che viene creato automaticamente quando si pubblica la soluzione. Ad esempio, è possibile usare uno script di accesso per avviare l'installazione oppure usare un file batch per installare la soluzione senza alcuna interazione da parte dell'utente. Questi scenari offrono i risultati migliori se i prerequisiti sono già installati nei computer degli utenti finali.  
   
- Come parte del processo di installazione personalizzato, chiamare lo strumento del programma di installazione delle soluzioni Office (VSTOInstaller.exe). Per impostazione predefinita, lo strumento è installato nel percorso seguente:  
+ Come parte del processo di installazione personalizzato, chiamare lo strumento programma di installazione per le soluzioni Office (*VSTOInstaller.exe*), cui è installato nel percorso seguente per impostazione predefinita:  
   
- %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
+ *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*  
   
- Se lo strumento non si trova in questa posizione, è possibile usare la chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath o HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath per individuare il percorso dello strumento.  
+ Se lo strumento non si trova in tale posizione, è possibile usare il **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** chiave del Registro di sistema per individuare il percorso dello strumento.  
   
- È possibile usare i seguenti parametri con VSTOinstaller.exe.  
+ È possibile utilizzare i seguenti parametri con *VSTOinstaller.exe*.  
   
 |Parametro|Definizione|  
 |---------------|----------------|  
@@ -355,18 +355,18 @@ ms.lasthandoff: 04/16/2018
 |/Silent o /S|Installa o disinstalla senza richiedere input da parte dell'utente o visualizzare un messaggio. Se una richiesta di attendibilità è necessario, la personalizzazione non è installata o aggiornata.|  
 |/Help o /?|Visualizza le informazioni della Guida.|  
   
- Durante l'esecuzione di VSTOinstaller.exe è possibile che vengano visualizzati i seguenti codici di errore.  
+ Quando si esegue *VSTOinstaller.exe*, i seguenti codici di errore potrebbe essere visualizzato.  
   
 |Codice di errore|Definizione|  
 |----------------|----------------|  
 |0|La soluzione è stata installata o disinstallata correttamente oppure è stata visualizzata la Guida di VSTOInstaller.|  
-|-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più volte. Per ulteriori informazioni, immettere "vstoinstaller /?" oppure vedere [creazione di un programma di installazione personalizzato per una soluzione Office ClickOnce](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più volte. Per ulteriori informazioni, immettere "vstoinstaller /?" oppure vedere [creare un programma di installazione personalizzato per una soluzione ClickOnce Office](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Una o più opzioni della riga di comando non è valido. Per altre informazioni, immettere "vstoinstaller /?".|  
 |-200|L'URI del manifesto di distribuzione non è valido. Per altre informazioni, immettere "vstoinstaller /?".|  
 |-201|Impossibile installare la soluzione perché il manifesto di distribuzione non è valido. Vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).|  
 |-202|Impossibile installare la soluzione perché Visual Studio Tools per la sezione Office del manifesto dell'applicazione non è valido. Vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).|  
 |-203|Impossibile installare la soluzione perché si è verificato un errore di download. Controllare l'URI o il percorso del file di rete del manifesto di distribuzione, quindi provare di nuovo.|  
-|-300|Impossibile installare la soluzione perché si è verificata un'eccezione di sicurezza. Vedere [sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md).|  
+|-300|Impossibile installare la soluzione perché si è verificata un'eccezione di sicurezza. Vedere [soluzioni Office Secure](../vsto/securing-office-solutions.md).|  
 |-400|Impossibile installare la soluzione.|  
 |-401|Impossibile disinstallare la soluzione.|  
 |-500|L'operazione è stata annullata perché non è stato possibile installare o disinstallare la soluzione o scaricare il manifesto di distribuzione.|  
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
      Nell'esempio seguente viene illustrato come modificare il percorso di installazione in un percorso sul sito Web di Fabrikam, ma è possibile sostituire tale URL con il percorso desiderato:  
   
-    ```  
+    ```cmd  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
@@ -428,7 +428,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Prima dell'identificatore immettere il percorso completo del documento seguito da una barra, nel formato *percorso*|*identificatore* (ad esempio, *File://ServerName/ FolderName/FileName | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.  
   
-     Per ulteriori informazioni su come l'identificatore di formato, vedere [Cenni preliminari sulle proprietà di documento personalizzato](../vsto/custom-document-properties-overview.md).  
+     Per ulteriori informazioni su come questo identificatore di formato, vedere [Cenni preliminari sulle proprietà di documento personalizzato](../vsto/custom-document-properties-overview.md).  
   
 5.  Scegliere il **OK** pulsante, quindi salvare e chiudere il documento.  
   
@@ -441,7 +441,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Aprire il percorso di installazione della soluzione.  
   
-2.  Nella cartella di pubblicazione di primo livello, eliminare il manifesto di distribuzione (ovvero il file con estensione VSTO).  
+2.  Nel primo livello di cartella di pubblicazione, eliminare il manifesto di distribuzione (il *VSTO* file).  
   
 3.  Individuare la sottocartella della versione che si desidera ripristinare.  
   
@@ -456,14 +456,14 @@ ms.lasthandoff: 04/16/2018
      Alla successiva apertura del documento personalizzato o dell'applicazione da parte dell'utente, verrà rilevata la modifica al manifesto di distribuzione. La versione precedente della soluzione Office viene eseguita dalla cache ClickOnce.  
   
 > [!NOTE]  
->  I dati locali vengono salvati soltanto per una versione precedente di una soluzione. Se si esegue il rollback di due versioni, non vengono conservati dati locali. Per ulteriori informazioni sui dati locali, vedere [l'accesso a dati locali e remoti in applicazioni ClickOnce](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
+>  I dati locali vengono salvati soltanto per una versione precedente di una soluzione. Se si esegue il rollback di due versioni, non vengono conservati dati locali. Per ulteriori informazioni sui dati locali, vedere [l'accesso ai dati locali e remoti in applicazioni ClickOnce](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione di una soluzione Office](../vsto/deploying-an-office-solution.md)   
- [Pubblicazione di soluzioni Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
+ [Pubblicare soluzioni Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Procedura: pubblicare una soluzione Office tramite ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Procedura: installare una soluzione Office ClickOnce](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
- [Procedura: pubblicare una soluzione Office a livello di documento in un Server di SharePoint tramite ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Creazione di un programma di installazione personalizzato per una soluzione Office ClickOnce](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Procedura: installare una soluzione ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
+ [Procedura: pubblicare una soluzione Office a livello di documento in un server di SharePoint tramite ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Creare un programma di installazione personalizzato per una soluzione office ClickOnce](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

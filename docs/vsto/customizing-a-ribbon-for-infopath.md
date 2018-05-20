@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione di una barra multifunzione per InfoPath | Documenti Microsoft
+title: Personalizzare una barra multifunzione per InfoPath
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a3e5121285f66059a898ce64fc4107903f371485
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82238cc29504b3ad2b757e94efa89a3c521bca90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-a-ribbon-for-infopath"></a>Personalizzazione di una barra multifunzione per InfoPath
+# <a name="customize-a-ribbon-for-infopath"></a>Personalizzare una barra multifunzione per InfoPath
   Quando si personalizza la barra multifunzione in Microsoft Office InfoPath, è necessario considerare la posizione in cui la barra multifunzione personalizzata verrà visualizzata nell'applicazione. In[!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] è possibile visualizzare la barra multifunzione nei tre tipi seguenti di finestre dell'applicazione InfoPath:  
   
 -   Finestre in cui viene visualizzato un modello di form aperto in modalità di progettazione.  
@@ -31,7 +31,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Finestra Anteprima di stampa.  
   
- **Si applica a:** le informazioni in questo argomento si applicano a progetti di componente aggiuntivo VSTO per InfoPath 2010. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Si applica a:** le informazioni in questo argomento si applicano a progetti di componente aggiuntivo VSTO per InfoPath 2010. Per altre informazioni, vedere [funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Utenti e progettisti aprono un modello di form in modalità di progettazione per modificarne l'aspetto e il layout. Gli utenti aprono i form basati su un modello di form per aggiungere contenuto.  
   
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  È necessario specificare il tipo di barra multifunzione di ogni finestra in cui si vuole visualizzare la barra multifunzione.  
   
-## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Specifica del tipo di barra multifunzione nella finestra di progettazione della barra multifunzione  
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Specificare il tipo di barra multifunzione nella finestra di progettazione della barra multifunzione  
  Se si usa l'elemento **Barra multifunzione (finestra di progettazione visiva)** , fare clic sulla proprietà **RibbonType** della barra multifunzione nella finestra **Proprietà** , quindi selezionare uno degli ID indicati nella tabella seguente.  
   
 |ID della barra multifunzione|Finestra in cui verrà visualizzata la barra multifunzione all'esecuzione del progetto|  
@@ -51,9 +51,9 @@ ms.lasthandoff: 04/16/2018
 |**Microsoft.InfoPath.Editor**|Finestre in cui è visualizzato un form basato su un modello di form.|  
 |**Microsoft.InfoPath.PrintPreview**|Finestra Anteprima di stampa.|  
   
- È possibile aggiungere più barre multifunzione a un progetto. Se più barre multifunzione condivide uno stesso ID, eseguire l'override del metodo CreateRibbonExtensibilityObject nella `ThisAddin` classe del progetto per specificare la barra multifunzione da visualizzare in fase di esecuzione. Per ulteriori informazioni, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
+ È possibile aggiungere più barre multifunzione a un progetto. Se più barre multifunzione condividono uno stesso ID di barra, eseguire l'override del metodo `CreateRibbonExtensibilityObject` nella classe `ThisAddin` del progetto per specificare la barra multifunzione da visualizzare in fase di esecuzione. Per altre informazioni, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifica del tipo di barra multifunzione con l'elemento XML della barra multifunzione  
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Specificare il tipo di barra multifunzione tramite XML della barra multifunzione  
  Se si usa l'elemento **Barra multifunzione (XML)** , controllare il valore del parametro *ribbonID* nel metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> e restituire la barra multifunzione appropriata.  
   
  Il metodo <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> viene generato automaticamente da Visual Studio nel file di codice della barra multifunzione. Il parametro *ribbonID* è una stringa che identifica il tipo di finestra di InfoPath che viene aperto.  
@@ -64,7 +64,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
  [XML della barra multifunzione](../vsto/ribbon-xml.md)  
