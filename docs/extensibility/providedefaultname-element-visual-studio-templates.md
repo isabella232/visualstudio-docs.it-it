@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelli di Visual Studio)
 Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del progetto verrà generato un nome predefinito per il modello di **Aggiungi nuovo elemento** o **nuovo progetto** la finestra di dialogo.  
@@ -59,7 +59,7 @@ Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
   
  Se il `ProvideDefaultName` elemento `false`, **nome** caselle del **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo contengono il valore `<Enter_name>`.  
   
- Utilizzare il [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento per specificare il nome predefinito del progetto o elemento di **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo.  
+ Utilizzare il [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento per specificare il nome predefinito del progetto o elemento di **Aggiungi nuovo elemento** e **nuovo progetto** finestre di dialogo. Quando il valore della `ProvideDefaultName` elemento `true`, omissione del `DefaultName` elemento per i progetti popola la finestra di dialogo con il nome del modello, vale a dire, il valore dal [nome](../extensibility/name-element-visual-studio-templates.md) elemento.
   
 ## <a name="example"></a>Esempio  
  Nell'esempio di codice viene impostata la `ProvideDefaultName` elemento `false`.  

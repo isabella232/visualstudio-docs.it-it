@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Innanzitutto in fase di distribuzione in Visual Studio
 
@@ -86,6 +86,8 @@ Da Visual Studio, è possibile creare pacchetti di app per la distribuzione in M
     ![Bridge desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>Creare un pacchetto di installazione (client di Windows)
+
+Se si richiesta più di un'installazione di un'applicazione desktop più complessa [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) può offrire, è possibile creare un pacchetto di installazione, un progetto di installazione o un programma di avvio automatico personalizzato.
 
 - È possibile creare un programma di installazione WiX basate su MSI utilizzando il [WiX set di strumenti di Visual Studio 2017 estensione](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 

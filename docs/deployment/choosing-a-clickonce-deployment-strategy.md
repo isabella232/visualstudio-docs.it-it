@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Scelta di una strategia di distribuzione ClickOnce
 Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono disponibili tre diverse strategie. La scelta dipende principalmente dal tipo di applicazione che si desidera distribuire. Le tre strategie di distribuzione sono elencate di seguito:  
@@ -46,15 +46,6 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/inc
   
  Questa è la strategia di distribuzione predefinita.  
   
-## <a name="install-from-a-cd"></a>Installazione da un CD  
- Se si utilizza questa strategia l'applicazione viene distribuita su un supporto rimovibile quale CD-ROM o DVD. Come con l'opzione precedente, quando l'utente sceglie di installare l'applicazione, questa viene installata e avviata e gli elementi vengono aggiunti per il **avviare** menu e **Aggiungi / Rimuovi programmi** in **controllo Pannello**.  
-  
- Questa strategia è particolarmente consigliata per le applicazioni che verranno distribuite a utenti che non dispongono di una connettività di rete permanente o con connessioni a larghezza di banda limitata. Dal momento che l'applicazione viene installata da un supporto rimovibile, per l'installazione non è necessaria alcuna connessione di rete, che è comunque necessaria per gli aggiornamenti dell'applicazione.  
-  
- Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], fare clic su **dal CD-ROM o DVD-ROM** sul **la modalità di installazione** pagina della procedura guidata di pubblicazione.  
-  
- Per attivare manualmente questa strategia di distribuzione, modificare il **deploymentProvider** tag nel manifesto di distribuzione. (In Visual Studio, questa proprietà viene esposta come **URL installazione** sul **pubblica** pagina di progettazione. In Mage.exe è **Start Location**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Avvio dell'applicazione dal Web o da una condivisione di rete  
  Questa strategia è simile alla prima, tranne per il fatto che in questo caso l'applicazione si comporta come un'applicazione Web. Quando l'utente fa clic su collegamento in una pagina Web, oppure fa doppio clic su un'icona della condivisione file, l'applicazione viene avviata. Quando gli utenti di chiudere l'applicazione, non è più disponibile nel computer locale. viene aggiunto nulla al **avviare** menu o **Aggiungi / Rimuovi programmi** in **Pannello di controllo**.  
   
@@ -66,6 +57,15 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/inc
  Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], fare clic su **non installare l'applicazione** sul **installa o Esegui dal Web** pagina della procedura guidata di pubblicazione.  
   
  Per attivare manualmente questa strategia di distribuzione, modificare il **installare** tag nel manifesto di distribuzione. (Il valore può essere **true** o **false**. In Mage.exe, utilizzare il **Online solo** opzione il **tipo di applicazione** elenco.)  
+
+## <a name="install-from-a-cd"></a>Installazione da un CD  
+ Se si utilizza questa strategia l'applicazione viene distribuita su un supporto rimovibile quale CD-ROM o DVD. Come con l'opzione precedente, quando l'utente sceglie di installare l'applicazione, questa viene installata e avviata e gli elementi vengono aggiunti per il **avviare** menu e **Aggiungi / Rimuovi programmi** in **controllo Pannello**.  
+  
+ Questa strategia è particolarmente consigliata per le applicazioni che verranno distribuite a utenti che non dispongono di una connettività di rete permanente o con connessioni a larghezza di banda limitata. Dal momento che l'applicazione viene installata da un supporto rimovibile, per l'installazione non è necessaria alcuna connessione di rete, che è comunque necessaria per gli aggiornamenti dell'applicazione.  
+  
+ Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], fare clic su **dal CD-ROM o DVD-ROM** sul **la modalità di installazione** pagina della procedura guidata di pubblicazione.  
+  
+ Per attivare manualmente questa strategia di distribuzione, modificare il **deploymentProvider** tag nel manifesto di distribuzione. (In Visual Studio, questa proprietà viene esposta come **URL installazione** sul **pubblica** pagina di progettazione. In Mage.exe è **Start Location**.)  
   
 ## <a name="web-browser-support"></a>Supporto Web browser  
  Le applicazioni destinate a .NET Framework 3.5 possono essere installate utilizzando qualsiasi browser.  

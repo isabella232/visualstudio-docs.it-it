@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e6fec89a151525a84349b7019c7569eb752172e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Errore: il server Web non è in grado di trovare la risorsa richiesta
 Ai fini della sicurezza, IIS ha restituito un errore generico.  
@@ -29,8 +29,7 @@ Ai fini della sicurezza, IIS ha restituito un errore generico.
   
  Questo errore può essere avere numerose cause. Alcune delle cause più comuni includono un problema di installazione o configurazione di IIS, di configurazione del sito Web o di autorizzazioni nel file system. È possibile provare ad accedere alla risorsa con un browser. A seconda della configurazione di IIS, potrebbe essere necessario utilizzare un browser locale nel server o analizzare il log degli errori di IIS per ottenere un messaggio di errore dettagliato.  
   
- Per ulteriori informazioni sulla risoluzione dei problemi di IIS, vedere [Gestione IIS e amministrazione](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Per ulteriori informazioni sulla risoluzione dei problemi di IIS, vedere [Gestione IIS e amministrazione](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Strumento di sicurezza UrlScan](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [Errore: il server Web è stato bloccato e blocca il verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

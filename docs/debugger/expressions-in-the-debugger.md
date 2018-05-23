@@ -21,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 063fe4f61e6e3d8e8ed9e54b990029f2cf408e24
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.
@@ -122,7 +122,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - Espressioni non supportate  
   
 ### <a name="dynamic-objects"></a>Oggetti dinamici  
- Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano [IDynamicMetaObjectProvider Interface](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) vengono valutati nella finestra Espressioni di controllo, viene aggiunto un nodo Visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.  
+ Nelle espressioni del debugger è possibile usare variabili tipizzate staticamente come dinamiche. Quando gli oggetti che implementano <xref:System.Dynamic.IDynamicMetaObjectProvider> vengono valutati nella finestra Espressioni di controllo del nodo viene aggiunto una visualizzazione dinamica. Il nodo Visualizzazione dinamica mostra i membri dell'oggetto, ma non consente la modifica dei valori dei membri.  
   
  Le funzionalità seguenti degli oggetti dinamici non sono supportate:  
   

@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Controllare le variabili in auto e variabili locali Windows in Visual Studio
 Il **Auto** finestra (durante il debug **CTRL + ALT + V, A**, o **Debug > Windows > Auto**) e **variabili locali** finestra (durante il debug **CTRL + ALT + V, L**, o **Debug > Windows > variabili locali**) sono molto utili quando si desidera visualizzare i valori delle variabili durante il debug. La finestra **Variabili locali** mostra le variabili definite nell'ambito locale, che corrisponde in genere alla funzione o al metodo attualmente in esecuzione. La finestra **Auto** mostra le variabili usate attorno alla riga corrente (il punto in cui il debugger viene arrestato). Esattamente le variabili da visualizzare in questa finestra è diverso in lingue diverse. Vedere [What variables appear in the Autos Window?](#bkmk_whatvariables) più avanti.  
@@ -28,7 +28,7 @@ Il **Auto** finestra (durante il debug **CTRL + ALT + V, A**, o **Debug > Window
 Per altre informazioni sul debug di base, vedere [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Oggetti nelle finestre Variabili locali e Auto  
-Le matrici e gli oggetti vengono visualizzati nelle finestre Variabili locali e Auto come controlli ad albero. Fare clic sulla freccia a sinistra del nome della variabile per espandere la visualizzazione e mostrare i campi e le proprietà. Ecco un esempio di oggetto [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) nella finestra **Variabili locali** :  
+Le matrici e gli oggetti vengono visualizzati nelle finestre Variabili locali e Auto come controlli ad albero. Fare clic sulla freccia a sinistra del nome della variabile per espandere la visualizzazione e mostrare i campi e le proprietà. Di seguito è riportato un esempio di un [FileStream](/dotnet/api/system.io.filestream) oggetto nel **variabili locali** finestra:  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
