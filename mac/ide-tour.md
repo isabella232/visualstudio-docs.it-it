@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: ffe295d6744af1ff6d91172b99575cf5eba97246
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 024e58c1c217652c489ad9fe9e568cd21f687ae8
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Presentazione di Visual Studio per Mac
 
@@ -52,7 +52,7 @@ Il riquadro della soluzione organizza i progetti in una soluzione:
 
 In questa posizione i file per il codice sorgente, le risorse, l'interfaccia utente e le dipendenze vengono organizzati in progetti specifici della piattaforma.
 
-Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac, vedere l'articolo [Progetti e soluzioni](~/projects-and-solutions.md).
+Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac, vedere l'articolo [Progetti e soluzioni](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Riferimenti dell'assembly
  
@@ -64,7 +64,7 @@ I riferimenti ad assembly per ogni progetto sono disponibili nella cartella Rife
  
 ![Finestra di dialogo Modifica riferimenti](media/ide-tour-image20.png)
 
-Per altre informazioni sull'uso dei riferimenti in Visual Studio per Mac, vedere l'articolo [Gestione dei riferimenti in un progetto](~/managing-references-in-a-project.md).
+Per altre informazioni sull'uso dei riferimenti in Visual Studio per Mac, vedere l'articolo [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Dipendenze/pacchetti
 
@@ -76,19 +76,19 @@ Per aggiungere una dipendenza all'applicazione, fare clic con il pulsante destro
 
 ![Aggiungere un pacchetto NuGet](media/ide-tour-image21.png)
 
-Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibili nell'articolo [Inserimento di un pacchetto NuGet nel progetto](~/nuget-walkthrough.md).
+Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibili nell'articolo [Inserimento di un pacchetto NuGet nel progetto](nuget-walkthrough.md).
 
 ## <a name="refactoring"></a>Refactoring
 
-Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: azioni di contesto e analisi dell'origine. Per altre informazioni, vedere l'articolo [Refactoring](~/refactoring.md).
+Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: azioni di contesto e analisi dell'origine. Per altre informazioni, vedere l'articolo [Refactoring](refactoring.md).
 
 ## <a name="debugging"></a>Debug
 
-Visual Studio per Mac ha un debugger nativo che offre supporto per il debug per applicazioni Xamarin.iOS, Xamarin.Mac e Xamarin.Android. Visual Studio per Mac usa Mono Soft Debugger, un debugger implementato nel runtime di Mono, per consentire all'IDE di eseguire il debug di codice gestito in tutte le piattaforme. Per altre informazioni sul debug, vedere l'articolo [Debug](~/debugging.md).
+Visual Studio per Mac ha un debugger nativo che offre supporto per il debug per applicazioni Xamarin.iOS, Xamarin.Mac e Xamarin.Android. Visual Studio per Mac usa Mono Soft Debugger, un debugger implementato nel runtime di Mono, per consentire all'IDE di eseguire il debug di codice gestito in tutte le piattaforme. Per altre informazioni sul debug, vedere l'articolo [Debug](debugging.md).
 
 Il debugger contiene visualizzatori avanzati per tipi speciali come stringhe, colori, URL, oltre che dimensioni, coordinate e curve di Bézier.
 
-Per altre informazioni sulle visualizzazioni dei dati del debugger, vedere l'articolo [Visualizzazioni dei dati](~/data-visualizations.md).
+Per altre informazioni sulle visualizzazioni dei dati del debugger, vedere l'articolo [Visualizzazioni dei dati](data-visualizations.md).
 
 ## <a name="version-control"></a>Controllo della versione
 
@@ -100,4 +100,4 @@ I file con modifiche di cui non è stato eseguito il commit presentano un'annota
 
 ![File con modifiche non sottoposte a commit nel riquadro della soluzione](media/ide-tour-image23.png)
 
-Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](~/version-control.md).
+Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](version-control.md).

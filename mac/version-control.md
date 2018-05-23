@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: c26cb512f0beb0dcfd47801d7a619ec78eb3cd32
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b09e776b1cf6726cd13ca8810ed528be12dd969a
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="version-control"></a>Controllo della versione
 
@@ -27,7 +27,7 @@ Git è un sistema di controllo della versione della versione distribuito che con
 
 Visual Studio per Mac offre supporto per entrambi i sistemi di controllo della versione Git e Subversion. Gli articoli seguenti illustrano come impostare i repository di Git e Subversion tramite Visual Studio per Mac e descrivono funzionalità semplici, quali ad esempio la revisione, il commit e il push delle modifiche.
 
-* [Impostazione di un repository Git](~/set-up-git-repository.md) 
-* [Uso di Git](~/working-with-git.md)
-* [Impostazione di un repository Subversion](~/set-up-subversion-repository.md)
-* [Uso di Subversion](~/working-with-subversion.md)
+* [Impostazione di un repository Git](set-up-git-repository.md) 
+* [Uso di Git](working-with-git.md)
+* [Impostazione di un repository Subversion](set-up-subversion-repository.md)
+* [Uso di Subversion](working-with-subversion.md)

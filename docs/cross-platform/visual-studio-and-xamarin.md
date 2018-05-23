@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: c16898fa94bcdb051b215f3ff89cf4d42cbe7fe7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 723518fa837803a5245eef2b227e6d593e8f4447
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 
@@ -30,7 +30,7 @@ Questa documentazione consente di valutare tutta la potenza di **Visual Studio c
   
 -   Una volta completata l'installazione, [verificare l'ambiente Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
   
--   Per concludere, consultare l'esercitazione [Nozioni di base sulla compilazione di app con Xamarin.Forms in Visual Studio](/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
+-   Per concludere, consultare l'esercitazione [Nozioni di base sulla compilazione di app con Xamarin.Forms in Visual Studio](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
   
 È possibile usare tutte le funzionalità di Xamarin tramite [una qualsiasi edizione di Visual Studio 2017](https://www.visualstudio.com/vs) (Community, Professional o Enterprise). Non è necessaria una licenza separata.  
   

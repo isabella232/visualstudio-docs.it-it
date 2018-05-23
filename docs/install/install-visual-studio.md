@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27bcbb12ac8111ad76b5b71c486081d9e075365e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ee4a75ba456184ffe48cb59f77668625acf673d1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="install-visual-studio-2017"></a>Installare Visual Studio 2017
 
@@ -78,7 +78,7 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
 
 1. Individuare il carico di lavoro che si vuole installare nella schermata d'**installazione di Visual Studio**.
 
- ![Selezionare un carico di lavoro dalla finestra di dialogo della configurazione di Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
+ ![Selezionare un carico di lavoro dalla finestra di dialogo della configurazione di Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
      Scegliere ad esempio il carico di lavoro "Sviluppo per desktop .NET". Include l'editor principale predefinito che offre supporto di base per la modifica del codice per oltre 20 linguaggi, la possibilità di aprire e modificare il codice da qualsiasi cartella senza che sia necessario un progetto e il controllo del codice sorgente integrato.  
 

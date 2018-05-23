@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Passaggio 1 dell'esercitazione: Iniziare a usare il framework Web Django in Visual Studio
 
@@ -62,7 +62,7 @@ Quando si usa Django dalla riga di comando, generalmente si avvia un progetto es
     - **Soluzione**: per questa impostazione lasciare il valore predefinito "Crea nuova soluzione".
     - **Nome della soluzione**: impostare su "LearningDjango", un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
     - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
-    - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione.
+    - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio 2017 e aggiungere GIT per Windows ed Estensione GitHub per Visual Studio nella scheda **Singoli componenti** sotto **Strumenti per il codice**.
 
 1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio "Questo progetto richiede pacchetti esterni", mostrato di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file `requirements.txt` che fa riferimento al pacchetto Django 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 

@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: dcfaee4d086fd5cd9d8ce85f365e63fbb21f8a9e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1bb23d03ac613c12df54f1a11e19ee5a8c2edb0
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="enable-subscription"></a>Abilitare la sottoscrizione
 
@@ -19,7 +19,7 @@ Visual Studio per Mac dà la possibilità di scegliere tra tre livelli di sottos
 * Visual Studio Professional per Mac
 * Visual Studio Community per Mac
 
-Per iniziare a usare una sottoscrizione, accedere a Visual Studio per Mac seguendo la procedura descritta nella guida [Signing in to Visual Studio for Mac](~/signing-in.md) (Accesso a Visual Studio per Mac). L'accesso consente di attivare la sottoscrizione, visualizzata nella finestra di dialogo degli account:
+Per iniziare a usare una sottoscrizione, accedere a Visual Studio per Mac seguendo la procedura descritta nella guida [Signing in to Visual Studio for Mac](signing-in.md) (Accesso a Visual Studio per Mac). L'accesso consente di attivare la sottoscrizione, visualizzata nella finestra di dialogo degli account:
 
 ![Finestra di dialogo di visualizzazione della licenza utente](media/user-accounts-login.png)
 
@@ -29,11 +29,11 @@ Se la sottoscrizione è scaduta, sono disponibili due opzioni:
 
 1. Rinnovare l'abbonamento. È possibile rinnovare la sottoscrizione passando a [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
 
-2. Se è disponibile un altro account con una sottoscrizione attiva, è possibile aggiungerlo a Visual Studio per Mac come descritto in dettaglio nell'articolo [Aggiunta di più account utente](~/signing-in.md). Visual Studio per Mac rileverà la licenza migliore tra quelle degli account aggiunti. 
+2. Se è disponibile un altro account con una sottoscrizione attiva, è possibile aggiungerlo a Visual Studio per Mac come descritto in dettaglio nell'articolo [Aggiunta di più account utente](signing-in.md). Visual Studio per Mac rileverà la licenza migliore tra quelle degli account aggiunti. 
 
 ## <a name="product-key-usage"></a>Utilizzo dei codici Product Key
 
-Attualmente, non è possibile usare un codice Product Key per abilitare i diritti Professional o Enterprise per Visual Studio per Mac. Per usare Visual Studio Enterprise per Mac e Visual Studio Professional per Mac, è necessario avere una [sottoscrizione](https://www.visualstudio.com/subscriptions/) appropriata ed [eseguire l'accesso](~/signing-in.md) all'IDE.
+Attualmente, non è possibile usare un codice Product Key per abilitare i diritti Professional o Enterprise per Visual Studio per Mac. Per usare Visual Studio Enterprise per Mac e Visual Studio Professional per Mac, è necessario avere una [sottoscrizione](https://www.visualstudio.com/subscriptions/) appropriata ed [eseguire l'accesso](signing-in.md) all'IDE.
 
 ## <a name="offline-activation"></a>Attivazione offline
 

@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurare e installare Visual Studio per Mac
 
@@ -58,7 +58,7 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
       - App Xamarin completamente multipiattaforma - Selezionare le piattaforme **Android**, **iOS** e **macOS**.
   * **Applicazioni .NET Core** - Selezionare la piattaforma **.NET Core**.
   * **Applicazioni Web ASP.NET Core** - Selezionare la piattaforma **.NET Core**.
-  * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](~/setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.
+  * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.
 
   Questa schermata di installazione mostra la versione e le dimensioni di ogni singolo componente. È possibile fare clic su ogni componente per visualizzare un elenco delle relative dipendenze (per Android), visualizzare altri pacchetti scaricati (per .NET Core) o visualizzare le applicazioni aggiuntive necessarie (per iOS e macOS):
 
@@ -112,4 +112,4 @@ L'installazione di Visual Studio per Mac consente di iniziare a scrivere codice 
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>app .NET core, app Web ASP.NET Core, sviluppo di giochi Unity
 
-Per altri carichi di lavoro, vedere la pagina [Carichi di lavoro](~/workloads.md).
+Per altri carichi di lavoro, vedere la pagina [Carichi di lavoro](workloads.md).

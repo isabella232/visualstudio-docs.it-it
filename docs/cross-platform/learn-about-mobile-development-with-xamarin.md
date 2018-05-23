@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 
@@ -101,7 +101,7 @@ Per eseguire il debug di app multipiattaforma senza dover usare un dispositivo f
   
 ### <a name="microsofts-android-emulator"></a>Emulatore Android di Microsoft 
 
-È consigliabile usare Microsoft [Visual Studio Emulator for Android](~/cross-platform/visual-studio-emulator-for-android.md), installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
+È consigliabile usare Microsoft [Visual Studio Emulator for Android](visual-studio-emulator-for-android.md), installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
   
 ### <a name="apples-ios-simulator"></a>Simulatore iOS di Apple
 
