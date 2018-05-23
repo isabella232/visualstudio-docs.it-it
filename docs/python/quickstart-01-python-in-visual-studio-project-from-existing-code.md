@@ -1,7 +1,7 @@
 ---
-title: 'Guida rapida: creazione di un progetto Python a partire da un codice esistente'
+title: 'Guida rapida: Creare un progetto Python a partire da un codice esistente'
 description: In questa guida introduttiva viene creato un progetto Visual Studio per Python da una cartella esistente, usando un modello appropriato.
-ms.date: 01/08/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a27110082ead9da0c8c355a9ee3770524f09f04
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Guida rapida: creare un progetto Python a partire da un codice esistente
 

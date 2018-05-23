@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creazione di un elemento di progetto Colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, è inoltre possibile fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Per inizializzare l'elemento del progetto, è possono utilizzare le informazioni raccolte.  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Se stai sviluppando un progetto Visual Basic, rimuovere il `ProjectTemplateWizard` dello spazio dei nomi dal `WizardWindow` nel nome della classe di `x:Class` attributo del `Window` elemento. Questo elemento è nella prima riga del codice XAML. Al termine, la prima riga dovrebbe essere analogo al seguente.  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Se si sviluppa un progetto Visual Basic, rimuovere il `ProjectTemplateWizard` dello spazio dei nomi dal `Page1` nel nome della classe di `x:Class` attributo del `UserControl` elemento. Questa è la prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile al seguente.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page1"  
     ```  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Se si sviluppa un progetto Visual Basic, rimuovere il `ProjectTemplateWizard` dello spazio dei nomi dal `Page2` nel nome della classe di `x:Class` attributo del `UserControl` elemento. Questa è la prima riga del codice XAML. Al termine, la prima riga dovrebbe essere simile al seguente.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page2"  
     ```  
   
@@ -332,7 +332,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Sotto il **SiteColumnProjectTemplate** nodo, aprire il file SiteColumnProjectTemplate e quindi rimuovere l'elemento seguente.  
   
-    ```  
+    ```xml  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
@@ -340,16 +340,16 @@ ms.lasthandoff: 04/16/2018
   
 5.  Sotto il **SiteColumnProjectTemplate** nodo, aprire il file csproj o ProjectTemplate e quindi rimuovere il seguente `PropertyGroup` elemento da esso.  
   
-    ```  
+    ```xml  
     <PropertyGroup>  
       <SignAssembly>true</SignAssembly>  
       <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>  
     </PropertyGroup>  
-    ```  
+    ``` 
   
 6.  Rimuovere il seguente `None` elemento.  
   
-    ```  
+    ```xml  
     <None Include="key.snk" />  
     ```  
   
@@ -384,7 +384,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Eseguire il comando seguente, sostituendo *PathToWizardAssembly* con il percorso completo per l'assembly compilato ProjectTemplateWizard. dll per il progetto ProjectTemplateWizard nel computer di sviluppo:  
   
-    ```  
+    ```cmd  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Verso la fine del file, aggiungere il seguente `WizardExtension` elemento tra le `</TemplateContent>` e `</VSTemplate>` tag. Sostituire il *il token* valore il `PublicKeyToken` attributo con il token di chiave pubblica ottenuto nella procedura precedente.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=your token</Assembly>  
       <FullClassName>ProjectTemplateWizard.SiteColumnProjectWizard</FullClassName>  
@@ -418,7 +418,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del file Elements.xml con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   

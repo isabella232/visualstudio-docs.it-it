@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aggiornare Visual Studio 2017 alla versione più recente
 
@@ -54,7 +54,7 @@ Quando è disponibile un aggiornamento, in Visual Studio viene visualizzato un f
      L'aggiornamento continua. Al termine, verrà riavviato Visual Studio.
 
      > [!NOTE]
-     > Se si esegue Visual Studio in modalità amministratore, dopo l'aggiornamento è necessario riavviare manualmente Visual Studio.    
+     > Quando si esegue Visual Studio in modalità amministratore, dopo l'aggiornamento è necessario riavviare manualmente Visual Studio.
 
 ### <a name="use-the-ide"></a>Usare l'IDE
 
@@ -71,7 +71,7 @@ Quando è disponibile un aggiornamento, in Visual Studio viene visualizzato un f
    L'aggiornamento procede come descritto nella sezione precedente e Visual Studio viene riavviato dopo il corretto completamento dell'aggiornamento.
 
    > [!NOTE]
-   > Se si esegue Visual Studio in modalità amministratore, dopo l'aggiornamento è necessario riavviare manualmente Visual Studio.  
+   > Quando si esegue Visual Studio in modalità amministratore, dopo l'aggiornamento è necessario riavviare manualmente Visual Studio.
 
 ### <a name="use-the-visual-studio-installer"></a>Usare il programma di installazione di Visual Studio
 

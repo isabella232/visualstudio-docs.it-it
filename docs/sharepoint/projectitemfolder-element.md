@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d126ab05edccf44642271ed7e379988defe212
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc63a3ac6d677da746823e101ca42d5765703907
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitemfolder-element"></a>Elemento ProjectItemFolder
   Rappresenta una cartella mappata.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|**Destinazione**|Richiesto **xs: String** attributo.<br /><br /> Il percorso della cartella di installazione di SharePoint il mapping della cartella corrispondente, rispetto alla cartella radice di distribuzione. Cartella radice di distribuzione è determinata dal tipo di distribuzione specificato per il **tipo** attributo.<br /><br /> Per ulteriori informazioni, vedere le descrizioni per il **percorso distribuzione** e **radice distribuzione** gli elementi nel progetto di proprietà di SharePoint [lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Destinazione**|Richiesto **xs: string** attributo.<br /><br /> Il percorso della cartella di installazione di SharePoint il mapping della cartella corrispondente, rispetto alla cartella radice di distribuzione. Cartella radice di distribuzione è determinata dal tipo di distribuzione specificato per il **tipo** attributo.<br /><br /> Per ulteriori informazioni, vedere le descrizioni per il **percorso distribuzione** e **radice distribuzione** gli elementi nel progetto di proprietà di SharePoint [lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Type**|Richiesto **xs: String** attributo.<br /><br /> Il tipo di distribuzione per la cartella mappata. Per ulteriori informazioni sui possibili valori, vedere la descrizione per il **tipo di distribuzione** proprietà degli elementi di progetto SharePoint in [lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo è l'elemento radice obbligatorio del file con estensione spdata.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo elemento è l'elemento radice obbligatorio del `.spdata` file.|  
   
 ## <a name="remarks"></a>Note  
  Per ulteriori informazioni sui mapping di cartelle, vedere [procedura: aggiungere e rimuovere cartelle mappata](../sharepoint/how-to-add-and-remove-mapped-folders.md).  

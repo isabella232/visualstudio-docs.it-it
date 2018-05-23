@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e887109c1edb6bad2ee130c6623d5b7538167ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48d18ef87bdda3abb147310bd49738a10d31040f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>Guida introduttiva (sviluppo per SharePoint in Visual Studio)
   Questa sezione permette di iniziare a usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per sviluppare soluzioni SharePoint in grado di sfruttare i vantaggi offerti da [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
@@ -36,7 +36,6 @@ ms.lasthandoff: 04/16/2018
 |-----------|-----------------|  
 |[Requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|Elenca i requisiti software per lo sviluppo per SharePoint.|  
 |[Informazioni aggiuntive sugli errori di SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Descrive dove trovare supporto durante lo sviluppo e la risoluzione dei problemi per SharePoint.|  
-|||  
   
 ## <a name="related-sections"></a>Sezioni correlate  
   

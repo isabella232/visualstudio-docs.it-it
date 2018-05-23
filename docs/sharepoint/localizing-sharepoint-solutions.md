@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89cc146a64e1e74c2682163ba3bebc16ed5a84e7
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localizzazione di soluzioni SharePoint
   Il processo di preparazione delle applicazioni in modo che possono essere utilizzati in tutto il mondo è noto come localizzazione. Localizzazione è conversione di risorse a una lingua specifica. Per ulteriori informazioni, vedere [globalizzazione e localizzazione di applicazioni](/visualstudio/ide/globalizing-and-localizing-applications). In questo argomento viene fornita una panoramica su come localizzare una soluzione di SharePoint.  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  Dopo aver creato la funzionalità file di risorse, aggiungere le stringhe tradotte per loro. Accedere alle stringhe localizzate con un'espressione nel formato seguente:  
   
-```  
+```aspx-csharp  
 $Resources:String ID  
 ```  
   
@@ -85,25 +85,25 @@ $Resources:String ID
   
  Sostituire tutte le stringhe hardcoded proprietà nel markup ASPX pagine e controlli con un'espressione nel formato seguente:  
   
-```  
+```aspx-csharp  
 <asp:<class> runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Ad esempio:  
   
-```  
+```aspx-csharp  
 <asp:Button ID="btn1" runat="server" onclick="btn1_Click" Text="<%$Resources:Resource1,String7%>"></asp:Button>  
 ```  
   
  Per ASPX come testo, utilizzare un'espressione nel formato seguente:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="<ID>" runat="server" Text="<%$Resources:<Resource File Name>, <String ID>%>" />  
 ```  
   
  Ad esempio:  
   
-```  
+```aspx-csharp  
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
@@ -120,7 +120,7 @@ $Resources:String ID
   
  Nel codice, sostituire le stringhe hardcoded con chiamate al <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metodo utilizzando la sintassi seguente:  
   
-```  
+```aspx-csharp  
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   

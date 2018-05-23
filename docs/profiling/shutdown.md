@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9c79b132dcd3358c697f9b08466af306aeed21
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c835894d18ca1aea33f26f234a4df914114089c
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="shutdown"></a>Arresta
 L'opzione **Shutdown** attende il termine o la disconnessione di qualsiasi processo in corso di profilatura, quindi disattiva il profiler e chiude il file di dati di profilatura. L'opzione **Shutdown** deve essere l'ultimo comando di un'esecuzione di profilatura.  
   
- Se non si specifica un parametro di timeout, l'opzione **Shutdown** attenderà per un tempo illimitato. Se si specifica un parametro di timeout, l'opzione restituisce il controllo dopo il numero di secondi specificato senza disattivare il profiler o chiudere il file di dati.  
+ Se non si specifica un parametro di timeout, l'opzione **Shutdown** attende per un tempo illimitato. Se si specifica un parametro di timeout, l'opzione restituisce il controllo dopo il numero di secondi specificato senza disattivare il profiler o chiudere il file di dati.  
   
  L'opzione **Shutdown** deve essere l'unica opzione specificata nella riga di comando.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cmd  
 VSPerfCmd.exe /Shutdown[:Timeout]  
 ```  
   

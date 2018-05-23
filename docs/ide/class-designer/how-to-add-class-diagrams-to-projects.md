@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)'
-ms.date: 11/04/2016
+ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,41 +13,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962df3467b8ff37a15c181a764e646ae3fb1e980
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)
+# <a name="how-to-add-class-diagrams-to-projects"></a>Procedura: Aggiungere diagrammi classi ai progetti
 
 Aggiungere un diagramma di classi al progetto C#, Visual Basic o C++ per progettare, modificare ed effettuare il refactoring di classi e altri tipi. Per visualizzare diverse parti del codice in un progetto, aggiungere più diagrammi di classi al progetto.
 
 Non è possibile creare diagrammi di classi da progetti che condividono codice tra più app. Per creare diagrammi classi UML, vedere [Creare diagrammi e progetti di modellazione UML](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="to-add-a-blank-class-diagram-to-a-project"></a>Per aggiungere un diagramma classi vuoto a un progetto
+## <a name="install-the-class-designer-component"></a>Installare il componente Progettazione classi
 
-1.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul nome del progetto. Scegliere quindi **Aggiungi nuovo elemento** o **Aggiungi** > **Nuovo elemento**.
+Se si esegue Visual Studio 2017 e non è stato installato il componente **Progettazione classi**, seguire questa procedura per installarlo.
 
-2.  Scegliere **Diagramma classi** nell'elenco di modelli. Per i progetti Visual C++ cercare il modello in **Modelli** e quindi in **Utilità**.
+1. Aprire il **Programma di installazione di Visual Studio** dal menu Start di Windows o selezionando **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu in Visual Studio.
 
-     Il diagramma classi verrà aperto in Progettazione classi e verrà visualizzato come file con estensione cd in Esplora soluzioni all'interno della gerarchia del progetto. Usare la casella degli strumenti Progettazione classi trascinare forme e linee nel diagramma.
+   Il **Programma di installazione di Visual Studio** si apre.
 
-3.  Per aggiungere più diagrammi classi, ripetere questa procedura.
+1. Selezionare la scheda **Singoli componenti** e quindi scorrere verso il basso fino alla categoria **Strumenti per il codice**.
 
-## <a name="to-add-a-class-diagram-based-on-existing-types"></a>Per aggiungere un diagramma classi basato su tipi esistenti
+1. Selezionare **Progettazione classi** e quindi **Modifica**.
 
-- In **Esplora soluzioni** aprire il menu di scelta rapida del file di classe e quindi scegliere **Visualizza diagramma classi**.
+   ![Componente Progettazione classi nel Programma di installazione di Visual Studio](media/class-designer-component.png)
 
-     oppure
+   Viene avviata l'installazione del componente **Progettazione classi**.
 
-     In **Visualizzazione classi** aprire il menu di scelta del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.
+## <a name="add-a-blank-class-diagram-to-a-project"></a>Aggiungere un diagramma classi vuoto a un progetto
+
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e quindi scegliere **Aggiungi** > **Nuovo elemento**. Oppure premere **CTRL**+**MAIUSC**+**A**.
+
+   Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
+
+2. Espandere **Elementi comuni** > **Generale**, quindi selezionare **Diagramma classi** dall'elenco di modelli. Per i progetti Visual C++ consultare la categoria **Utilità** per trovare il modello **Diagramma classi**.
+
+   > [!NOTE]
+   > Se il modello **Diagramma classi** non viene visualizzato, [seguire i passaggi](#install-the-class-designer-component) per installare il componente **Progettazione classi** per Visual Studio.
+
+   Il diagramma classi viene aperto in Progettazione classi e appare come file con estensione *CD* in **Esplora soluzioni**. È possibile trascinare forme e linee nel diagramma da **Casella degli strumenti**.
+
+Per aggiungere più diagrammi classi, ripetere questa procedura.
+
+## <a name="add-a-class-diagram-based-on-existing-types"></a>Aggiungere un diagramma classi basato su tipi esistenti
+
+In **Esplora soluzioni** aprire il menu di scelta rapida del file di classe e quindi scegliere **Visualizza diagramma classi**.
+
+oppure
+
+In **Visualizzazione classi** aprire il menu di scelta rapida del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto completo in un diagramma classi
 
-- In **Esplora soluzioni** o Visualizzazione classi fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizzazione**, quindi scegliere **Visualizza diagramma classi**.
+In **Esplora soluzioni** o Visualizzazione classi fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizzazione**, quindi scegliere **Visualizza diagramma classi**.
 
-     Verrà creato un diagramma classi compilato automaticamente.
+Verrà creato un diagramma classi compilato automaticamente.
 
 ## <a name="see-also"></a>Vedere anche
 

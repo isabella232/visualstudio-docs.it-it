@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f44279baea33333c21bfadfd9fec21a2045aea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Procedura: Visualizzare l'ereditarietà tra tipi (Progettazione classi)
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedura: Visualizzare l'ereditarietà tra tipi in Progettazione classi
 
 In **Progettazione classi** è possibile visualizzare la relazione di ereditarietà, se disponibile, tra un tipo di base e i relativi tipi derivati nel diagramma classi. Per creare una relazione di ereditarietà tra due tipi, se non ne esiste alcuna, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
 

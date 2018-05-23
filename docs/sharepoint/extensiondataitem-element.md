@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c991d3fece3e5997e8d470d168af9eba47c8663
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05ee17519019713b5e1bb89472dc06d5bc20ead1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="extensiondataitem-element"></a>Elemento ExtensionDataItem
-  Rappresenta un elemento di dati personalizzato associato all'elemento di progetto SharePoint, nel formato di chiave/valore. La chiave e valore devono essere stringhe.  
+  Un elemento di dati personalizzato che viene associato all'elemento di progetto SharePoint, nel formato di chiave/valore. La chiave e valore devono essere stringhe.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <ExtensionDataItem Key = "Key of the data item"  
     Value = "Value of the data item" />  
 ```  
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|**Key**|Richiesto **xs: String** attributo.<br /><br /> La chiave utilizzata per archiviare e recuperare l'elemento di dati.|  
+|**Key**|Richiesto **xs: string** attributo.<br /><br /> La chiave utilizzata per archiviare e recuperare l'elemento di dati.|  
 |**Valore**|Richiesto **xs: String** attributo.<br /><br /> Il valore dell'elemento di dati.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Rappresenta una raccolta di elementi di dati personalizzati associati all'elemento di progetto SharePoint.|  
   
 ## <a name="remarks"></a>Note  
- Quando si associano dati personalizzati a un elemento di progetto SharePoint tramite il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> proprietà di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> Visual Studio salva i dati in un nuovo oggetto **ExtensionDataItem** elemento nel file con estensione spdata per l'elemento del progetto. Per ulteriori informazioni, vedere [salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Quando si associano dati personalizzati a un elemento di progetto SharePoint tramite il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> proprietà di un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> dell'oggetto, Visual Studio salva i dati in un nuovo **ExtensionDataItem** elemento il `.spdata` file per il elemento di progetto. Per ulteriori informazioni, vedere [salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informazioni sull'elemento  
   

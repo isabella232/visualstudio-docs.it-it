@@ -1,5 +1,5 @@
 ---
-title: Azioni rapide
+title: Azioni rapide, lampadine e cacciavite
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -29,21 +29,27 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 - Effettuare un refactoring (ad esempio [impostare come inline una variabile temporanea](../ide/reference/inline-temporary-variable.md))
 - Generare codice (ad esempio [introdurre una variabile locale](../ide/reference/introduce-local-variable.md))
 
-Le azioni rapide possono essere applicate tramite l'icona Lampadina ![Icona Lampadina piccola](media/vs2015_lightbulbsmall.png) o premendo **CTRL**+**.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. La lampadina viene visualizzata se è presente una sottolineatura ondulata rossa e in Visual Studio è disponibile un suggerimento per correggere l'errore. Ad esempio, se è presente un errore indicato da una sottolineatura rossa ondulata, verrà visualizzata una lampadina quando sono disponibili correzioni per tale errore.
+Le azioni rapide possono essere applicate usando le icone a forma di lampadina ![icona lampadina](media/light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/screwdriver-icon.png) oppure premendo **CTRL**+**.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
 
 È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio si illumineranno in base a tali regole.
 
-## <a name="to-see-a-light-bulb"></a>Per visualizzare una lampadina
+## <a name="icons"></a>Icone
 
-1. In molti casi le lampadine vengono visualizzate direttamente quando si posiziona il puntatore del mouse su un errore, oppure sul margine destro dell'editor quando si sposta il cursore su una riga che contiene un errore. Quando è presente una sottolineatura ondulata rossa, è possibile passarvi sopra con il puntatore del mouse per visualizzare la lampadina. È anche possibile fare in modo che la lampadina venga visualizzata quando si usa il mouse o la tastiera per spostarsi nel punto della riga in cui si verifica l'errore.
+L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. L'icona a forma di *cacciavite* ![icona cacciavite](media/screwdriver-icon.png) indica semplicemente che sono disponibili azioni per la modifica del codice, ma l'utente può scegliere di non usarle. L'icona a forma di *lampadina gialla* ![icona lampadina](media/light-bulb-icon.png) indica che sono disponibili azioni che si *devono* eseguire per migliorare il codice. L'icona a forma di *lampadina che indica un errore* ![icona lampadina di errore](media/error-light-bulb-icon.png) suggerisce che è disponibile un'azione che corregge un errore nel codice.
 
-1. Premere **CTRL**+**.** in un punto qualsiasi della riga per richiamare la lampadina e passare direttamente all'elenco delle correzioni potenziali.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Per visualizzare una lampadina o un cacciavite
+
+- Se è disponibile una correzione, le lampadine vengono visualizzate spontaneamente quando si passa il mouse sulla posizione di un errore.
 
    ![Lampadina con passaggio del puntatore del mouse](../ide/media/vs2015_lightbulb_hover.png)
 
+- Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per cui è disponibile un'azione rapida.
+
+- Premere **CTRL**+**.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
+
 ## <a name="to-see-potential-fixes"></a>Per visualizzare le potenziali correzioni
 
-Fare clic sulla freccia GIÙ o sul collegamento **Mostra correzioni potenziali** per visualizzare un elenco delle azioni rapide eseguibili automaticamente dalla lampadina.
+Selezionare la freccia GIÙ accanto alla lampadina o il collegamento **Mostra correzioni potenziali** per visualizzare un elenco delle azioni rapide disponibili.
 
 ![Lampadina espansa](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

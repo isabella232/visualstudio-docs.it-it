@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usare i parametri della riga di comando per installare Visual Studio 2017
 
@@ -69,7 +69,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--includeOptional` | **Facoltativa**: include i componenti facoltativi per tutti i carichi di lavoro installati, ma non i componenti consigliati. I carichi di lavoro sono specificati con `--allWorkloads` o `--add`.  |
 | `--quiet, -q` | **Facoltativa**: consente di non visualizzare alcuna interfaccia utente durante l'installazione. |
 | `--passive, -p` | **Facoltativa**: consente di visualizzare l'interfaccia utente, senza richiedere alcuna interazione da parte dell'utente. |
-| `--norestart` | **Facoltativa**: se presente, i comandi con `--passive` o `--quiet` non riavviano automaticamente il computer (se richiesto).  Viene ignorata se non vengono specificate né `--passive` né `--quiet`.  |
+| `--norestart` | **Facoltativa**: se presente, i comandi con `--passive` o `--quiet` non riavviano automaticamente il computer (se necessario).  Viene ignorata se non vengono specificate né `--passive` né `--quiet`.  |
 | `--nickname <name>` | **Facoltativa**: definisce il nome alternativo da assegnare a un prodotto installato. La lunghezza del nome alternativo non può superare i 10 caratteri.  |
 | `--productKey` | **Facoltativa**: definisce il codice Product Key da usare per un prodotto installato. È composto da 25 caratteri alfanumerici in formato `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` o `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Visualizza una versione offline di questa pagina. |
@@ -84,8 +84,8 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--includeRecommended` | **Facoltativa**: include i componenti consigliati per tutti i carichi di lavoro installati, ma non i componenti facoltativi. I carichi di lavoro sono specificati con `--allWorkloads` o `--add`. |
 | `--includeOptional` | **Facoltativo**: include i componenti consigliati *e* facoltativi per tutti i carichi di lavoro inclusi nel layout. I carichi di lavoro sono specificati con `--add`.  |
 | `--keepLayoutVersion` | **Novità in 15.3, facoltativa**: è possibile applicare le modifiche al layout senza aggiornare la versione del layout. |
-| `--verify` | **Novità in 15.3, facoltativa**: è possibile verificare i contenuti di un layout.  Vengono elencati eventuali file danneggiati o mancanti. |
-| `--fix` | **Novità in 15.3, facoltativa**: è possibile verificare i contenuti di un layout.  Se alcuni file risultano danneggiati o mancanti, vengono scaricati di nuovo.  Per correggere un layout, è necessario l'accesso a Internet. |
+| `--verify` | **Novità in 15.3, facoltativa**: è possibile verificare i contenuti di un layout. Vengono elencati eventuali file danneggiati o mancanti. |
+| `--fix` | **Novità in 15.3, facoltativa**: è possibile verificare i contenuti di un layout.  Se alcuni file risultano danneggiati o mancanti, vengono scaricati di nuovo. Per correggere un layout, è necessario l'accesso a Internet. |
 | `--clean <one or more paths to catalogs>` | **Novità in 15.3, facoltativa**: rimozione delle versioni precedenti dei componenti da un layout che è stato aggiornato a una versione più recente. |
 
 | **Opzioni di installazione avanzate** | **Descrizione** |
@@ -103,7 +103,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | `--noWeb` | **Novità in 15.3, facoltativa**: il programma di installazione scarica ora qualsiasi contenuto che viene installato da Internet.  Tutti i contenuti installati devono essere disponibili in un layout offline.  Se nel layout mancano contenuti, il programma di installazione ha esito negativo.  Per altre informazioni, vedere [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **Novità della versione 15.7 (facoltativo)**: vengono usati per specificare percorsi d'installazione personalizzati. I nomi di percorso supportati sono shared, cache e install. |
 | `--path cache=<path>` | **Novità della versione 15.7 (facoltativo)**: vengono usati i percorsi specificati per scaricare i file d'installazione. Questo percorso può essere impostato solo la prima volta in cui viene installato Visual Studio. Esempio: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Novità della versione 15.7 (facoltativo)**: sono contenuti file condivisi per installazioni side-by-side di Visual Studio. Alcuni strumenti e SDK vengono installati in un percorso dell'unità, mentre altri potrebbero sostituire questa impostazione ed essere installati in un'altra unità. Esempio: `--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **Novità della versione 15.7 (facoltativo)**: sono contenuti file condivisi per installazioni side-by-side di Visual Studio. Alcuni strumenti e SDK vengono installati in un percorso dell'unità, mentre altri potrebbero sostituire questa impostazione ed essere installati in un'altra unità. Esempio: `--path shared="C:\VS\shared"` <br><br>Importante: l'impostazione può essere eseguita una sola volta e in occasione della prima installazione di Visual Studio. |
 | `--path install=<path>` | **Novità della versione 15.7 (facoltativo)**: equivalente a `–-installPath`. In particolare, `--installPath "C:\VS"` e `--path install="C:\VS"` sono equivalenti. È possibile usarne solo uno per volta. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Elenco di ID di carichi di lavoro e ID di componenti
@@ -114,24 +114,24 @@ Per un elenco degli ID di componenti e carichi di lavoro ordinati per prodotto V
 
 | **Impostazioni locali** | **Lingua** |
 | ----------------------- | --------------- |
-| cs-CZ | Ceco |
-| de-DE | Tedesco |
-| it-IT | Inglese |
-| es-ES | Spagnolo |
-| fr-FR | Francese |
-| it-IT | Italiano |
-| ja-JP | Giapponese |
-| ko-KR | Coreano |
-| pl-PL | Polacco |
-| pt-BR | Portoghese (Brasile) |
-| ru-RU | Russo |
-| tr-TR | Turco |
-| zh-CN | Cinese semplificato |
-| zh-TW | Cinese tradizionale |
+| Cs-cz | Ceco |
+| De-de | Tedesco |
+| En-us | Inglese |
+| Es-es | Spagnolo |
+| Fr-fr | Francese |
+| It-it | Italiano |
+| Ja-jp | Giapponese |
+| Ko-kr | Coreano |
+| Pl-pl | Polacco |
+| Pt-br | Portoghese (Brasile) |
+| Ru-ru | Russo |
+| Tr-tr | Turco |
+| Zh-cn | Cinese semplificato |
+| Zh-tw | Cinese tradizionale |
 
 ## <a name="error-codes"></a>Codici di errore
 
-A seconda del risultato dell'operazione, la variabile di ambiente `%ERRORLEVEL%` verrà impostata su uno dei valori seguenti:
+A seconda del risultato dell'operazione, la variabile di ambiente `%ERRORLEVEL%` viene impostata su uno dei valori seguenti:
 
 | **Valore** | **Risultato** |
 | --------- | ---------- |

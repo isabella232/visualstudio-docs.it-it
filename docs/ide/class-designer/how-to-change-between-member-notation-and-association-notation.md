@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione (Progettazione classi)
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione in Progettazione classi
 
 In **Progettazione classi** è possibile modificare il modo in cui il diagramma classi rappresenta una relazione di associazione tra due tipi dalla notazione membro alla notazione associazione e viceversa. I membri visualizzati come linee di associazione spesso offrono una visualizzazione utile della correlazione tra tipi.
 
@@ -41,9 +41,7 @@ In **Progettazione classi** è possibile modificare il modo in cui il diagramma 
 
 ## <a name="to-change-association-notation-to-member-notation"></a>Per passare dalla notazione associazione alla notazione membro
 
--   Nel diagramma classi, fare clic con il pulsante destro del mouse sulla linea di associazione e scegliere **Mostra come proprietà** o **Mostra come campo**, come appropriato.
-
-     La linea di associazione scompare e la proprietà viene visualizzata nel raggruppamento appropriato all'interno della forma tipo nel diagramma.
+Nel diagramma classi, fare clic con il pulsante destro del mouse sulla linea di associazione e scegliere **Mostra come proprietà** o **Mostra come campo**, come appropriato. La linea di associazione scompare e la proprietà viene visualizzata nel raggruppamento appropriato all'interno della forma tipo nel diagramma.
 
 ## <a name="see-also"></a>Vedere anche
 

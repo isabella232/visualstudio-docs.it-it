@@ -20,31 +20,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="work-with-visual-c-code-class-designer"></a>Utilizzo del codice Visual C++ (Progettazione classi)
+# <a name="work-with-visual-c-code-in-class-designer"></a>Usare il codice Visual C++ in Progettazione classi
 
 **Progettazione classi** mostra un'area di progettazione visiva denominata *diagramma classi* che fornisce una rappresentazione visiva degli elementi di codice nel progetto. Si possono usare i diagrammi classi per progettare e visualizzare le classi e gli altri tipi in un progetto.
 
 **Progettazione classi** supporta gli elementi di codice C++ seguenti:
 
--   Classe (simile a una forma di classe gestita, con la differenza che può avere relazioni di ereditarietà multiple)
+- Classe (simile a una forma di classe gestita, con la differenza che può avere relazioni di ereditarietà multiple)
 
--   Classe anonima (visualizza il nome generato da Visualizzazione classi per il tipo anonimo)
+- Classe anonima (visualizza il nome generato da Visualizzazione classi per il tipo anonimo)
 
--   Classe modello
+- Classe modello
 
--   Struct
+- Struct
 
--   Enum
+- Enum
 
--   Macro (visualizza la prospettiva post-elaborata della macro)
+- Macro (visualizza la prospettiva post-elaborata della macro)
 
--   Typedef
+- Typedef
 
 > [!NOTE]
 > Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [UML Class Diagrams: Reference](../../modeling/uml-class-diagrams-reference.md) (Diagrammi classi UML: riferimenti)
@@ -65,23 +65,23 @@ Se il diagramma classi non viene aggiornato con le modifiche apportate nel codic
 
 **Progettazione classi** potrebbe non essere in grado di risolvere i tipi per i motivi seguenti:
 
--   Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
+- Il tipo si trova in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
 
--   Il tipo non si trova nell'ambito corretto, di conseguenza **Progettazione classi** non è in grado di trovarlo. Verificare che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
+- Il tipo non si trova nell'ambito corretto, di conseguenza **Progettazione classi** non è in grado di trovarlo. Verificare che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
--   Il tipo non esiste oppure è stato impostato come commento. Per correggere questo errore, assicurarsi di non aver impostato il tipo come commento o di non averlo eliminato.
+- Il tipo non esiste oppure è stato impostato come commento. Per correggere questo errore, assicurarsi di non aver impostato il tipo come commento o di non averlo eliminato.
 
--   Il tipo si trova in una libreria a cui fa riferimento una direttiva #import. Una possibile soluzione alternativa consiste nell'aggiungere manualmente il codice generato (il file con estensione tlh) a una direttiva #include nel file di intestazione.
+- Il tipo si trova in una libreria a cui fa riferimento una direttiva #import. Una possibile soluzione alternativa consiste nell'aggiungere manualmente il codice generato (il file con estensione tlh) a una direttiva #include nel file di intestazione.
 
--   Verificare che **Progettazione classi** supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations-for-c-code-elements).
+- Verificare che **Progettazione classi** supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations-for-c-code-elements).
 
 Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è **Impossibile trovare il codice per una o più forme nel diagramma classi '\<elemento>'**. Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice.  Provare a eseguire le operazioni seguenti:
 
--   Verificare l'esistenza del tipo. Verificare di non aver involontariamente eliminato o impostato come codice il codice sorgente.
+- Verificare l'esistenza del tipo. Verificare di non aver involontariamente eliminato o impostato come codice il codice sorgente.
 
--   Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
+- Provare a risolvere il tipo. Il tipo potrebbe trovarsi in un progetto o in un assembly a cui non viene fatto riferimento dal progetto che contiene il diagramma classi. Per correggere questo errore, aggiungere un riferimento al progetto o all'assembly che contiene il tipo. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](../managing-references-in-a-project.md).
 
--   Verificare che il tipo si trovi nell'ambito corretto in modo che Progettazione classi possa trovarlo. Assicurarsi che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
+- Verificare che il tipo si trovi nell'ambito corretto in modo che Progettazione classi possa trovarlo. Assicurarsi che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
 ### <a name="troubleshoot-other-error-messages"></a>Risoluzione di altri messaggi di errore
 
@@ -89,25 +89,25 @@ Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è 
 
 ## <a name="limitations-for-c-code-elements"></a>Limitazioni per gli elementi di codice C++
 
--   Quando viene caricato un progetto Visual C++, **Progettazione classi** funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
+- Quando viene caricato un progetto Visual C++, **Progettazione classi** funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
 
--   **Progettazione classi** supporta solo semantica C++ nativa. Per i progetti Visual C++ compilati in codice gestito, **Progettazione classi** visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma **Progettazione classi** non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
+- **Progettazione classi** supporta solo semantica C++ nativa. Per i progetti Visual C++ compilati in codice gestito, **Progettazione classi** visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma **Progettazione classi** non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
 
--   Per i progetti Visual C++, **Progettazione classi** legge soltanto la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), **Progettazione classi** non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, **Progettazione classi** analogamente non visualizzerà niente.
+- Per i progetti Visual C++, **Progettazione classi** legge soltanto la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), **Progettazione classi** non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, **Progettazione classi** analogamente non visualizzerà niente.
 
--   I file IDL (.idl), che definiscono le interfacce COM e le librerie dei tipi, non vengono visualizzati nei diagrammi a meno che non siano compilati in codice C++ nativo.
+- I file IDL (.idl), che definiscono le interfacce COM e le librerie dei tipi, non vengono visualizzati nei diagrammi a meno che non siano compilati in codice C++ nativo.
 
--   **Progettazione classi** non supporta funzioni e variabili globali.
+- **Progettazione classi** non supporta funzioni e variabili globali.
 
--   **Progettazione classi** non supporta unioni. Si tratta di un tipo speciale di classe in cui la memoria allocata è solo la quantità necessaria per il membro dati più grande dell'unione.
+- **Progettazione classi** non supporta unioni. Si tratta di un tipo speciale di classe in cui la memoria allocata è solo la quantità necessaria per il membro dati più grande dell'unione.
 
--   **Progettazione classi** non visualizza tipi di dati di base come ad esempio `int` e `char`.
+- **Progettazione classi** non visualizza tipi di dati di base come ad esempio `int` e `char`.
 
--   **Progettazione classi** non visualizza tipi definiti all'esterno del progetto corrente se il progetto non ha riferimenti corretti a tali tipi.
+- **Progettazione classi** non visualizza tipi definiti all'esterno del progetto corrente se il progetto non ha riferimenti corretti a tali tipi.
 
--   **Progettazione classi** visualizza i tipi annidati, ma non le relazioni tra un tipo annidato e altri tipi.
+- **Progettazione classi** visualizza i tipi annidati, ma non le relazioni tra un tipo annidato e altri tipi.
 
--   **Progettazione classi** non può visualizzare tipi void o che derivano da un tipo void.
+- **Progettazione classi** non può visualizzare tipi void o che derivano da un tipo void.
 
 ## <a name="see-also"></a>Vedere anche
 

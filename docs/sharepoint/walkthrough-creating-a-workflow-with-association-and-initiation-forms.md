@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 92aefd2292976bd9dcb50603e93b460cdf2bf991
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c232d541e985944fe64d9eb40da7e344b32c0cc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: creazione di un flusso di lavoro con form di associazione e di avvio
   Questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenza base che include l'utilizzo di form di associazione e di avvio. Si tratta di form ASPX che consentono di parametri da aggiungere a un flusso di lavoro quando è associata prima dall'amministratore di SharePoint (form di associazione) e quando il flusso di lavoro viene avviato dall'utente (form di avvio).  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Subito dopo la prima riga in questo elemento di contenuto, aggiungere il codice seguente per creare un'etichetta e una casella di testo che richiede il limite di approvazione spese (*AutoApproveLimit*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" runat="server" />  
@@ -189,7 +189,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Subito dopo la prima riga in questo elemento di contenuto, aggiungere il codice seguente per creare un'etichetta e una casella di testo che visualizza il limite di approvazione spese (*AutoApproveLimit*) che è stato immesso in form di associazione e un'altra etichetta e casella di testo per la richiesta per il totale della spesa (*ExpenseTotal*):  
   
-    ```  
+    ```aspx-csharp  
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />  
   
     <asp:TextBox ID="AutoApproveLimit" ReadOnly="true" runat="server" />  

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Procedura dettagliata: Creazione di un elemento di progetto Colonna del sito con un modello di progetto, parte 1
   I progetti SharePoint sono contenitori per una o più elementi di progetto SharePoint. È possibile estendere il sistema di progetto SharePoint in Visual Studio mediante la creazione di propri tipi di elemento di progetto SharePoint e quindi associarle a un modello di progetto. In questa procedura dettagliata, si definirà un tipo di elemento di progetto per la creazione di una colonna del sito e quindi si creerà un modello di progetto che può essere usato per creare un nuovo progetto che contiene un elemento di progetto colonna del sito.  
@@ -203,13 +203,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Nel file di progetto, individuare la seguente `VSTemplate` elemento.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
 4.  Sostituire l'elemento con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del file Elements.xml con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
@@ -280,7 +280,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del file SharePointProjectItem con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
                  xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -304,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del file Feature1. feature con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
              imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
@@ -330,7 +330,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel progetto SiteColumnProjectTemplate, sostituire il contenuto del file package. package con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
              Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
@@ -357,7 +357,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Se si sta creando un modello di progetto Visual c#, utilizzare il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -393,7 +393,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Se si sta creando un modello di progetto Visual Basic, utilizzare il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -445,7 +445,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Se si sta creando un modello di progetto Visual c#, utilizzare il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -525,7 +525,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  Se si sta creando un modello di progetto Visual Basic, utilizzare il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  

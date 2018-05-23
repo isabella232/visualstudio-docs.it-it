@@ -1,5 +1,5 @@
 ---
-title: '&lt;entryPoints&gt; elemento (sviluppo per Office in Visual Studio) | Documenti Microsoft'
+title: '&lt;entryPoints&gt; elemento (sviluppo per Office in Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bec51fd4d9e6a140d274f028a0e0286a161ac147
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints&gt; elemento (sviluppo per Office in Visual Studio)
   L'elemento `entryPoints` dello spazio dei nomi `vstav3` contiene tutti gli elementi `entryPoint` associati a una soluzione Office.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <entryPoints>  
     <entryPoint>  
     </entryPoint>  
@@ -54,11 +54,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="document-level-customization-example"></a>Esempio di personalizzazione a livello di documento  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di documento distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
-```  
+```xml  
 <vstav3:entryPoints>  
   <vstav3:entryPoint   
     class="ContosoExcelWorkbook.ThisWorkbook">  
@@ -98,11 +98,11 @@ ms.lasthandoff: 04/16/2018
 ## <a name="vsto-add-in-example"></a>Esempio di componente aggiuntivo VSTO  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra un elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra un elemento `entryPoints` in un manifesto dell'applicazione per una soluzione a livello di applicazione distribuita con [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
-```  
+```xml  
 <vstav3:entryPoints>  
   <vstav3:entryPoint   
     class="ContosoOutlookAddIn.ThisAddIn">  
@@ -115,14 +115,14 @@ ms.lasthandoff: 04/16/2018
 </vstav3:entryPoints>  
 ```  
   
-## <a name="multi-project-deployment-example"></a>Esempio di distribuzione di più progetti  
+## <a name="multi-project-deployment-example"></a>Esempio di distribuzione basati su più progetti  
   
 ### <a name="description"></a>Descrizione  
- L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una distribuzione di più progetti. Questo esempio di codice fa parte di un esempio più esaustivo disponibile in [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  
+ L'esempio di codice seguente illustra l'elemento `entryPoints` in un manifesto dell'applicazione per una distribuzione di più progetti. Questo esempio di codice fa parte di un esempio più esaustivo disponibile [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Codice  
   
-```  
+```xml  
 <vstav3:entryPoints   
   id="ContosoExcel">  
   <vstav3:entryPoint   
@@ -172,8 +172,8 @@ ms.lasthandoff: 04/16/2018
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesto dell'applicazione ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

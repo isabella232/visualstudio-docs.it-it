@@ -1,5 +1,5 @@
 ---
-title: Linee guida per la creazione di Outlook aree del modulo | Documenti Microsoft
+title: Linee guida per la creazione di aree del modulo di Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="guidelines-for-creating-outlook-form-regions"></a>Linee guida per la creazione delle aree di modulo di Outlook
+# <a name="guidelines-for-creating-outlook-form-regions"></a>Linee guida per la creazione di aree del modulo di Outlook
   Le informazioni seguenti consentono di ottimizzare le aree del modulo ed evitare potenziali problemi:  
   
--   [Uso dei nomi delle aree del modulo](#UsingFormRegions).  
+-   [Utilizzare nomi delle aree di modulo](#UsingFormRegions).  
   
--   [Disabilitazione dell'ereditarietà dell'area del modulo](#DisablingInheritance).  
+-   [Disabilita ereditarietà dell'area del modulo](#DisablingInheritance).  
   
--   [Informazioni sui tipi e sui nomi delle classi messaggio](#ClassNames).  
+-   [Informazioni sui tipi e i nomi delle classi di messaggi](#ClassNames).  
   
 -   [Progettazione di aree del modulo adiacenti per il riquadro di lettura](#ReadingPane).  
   

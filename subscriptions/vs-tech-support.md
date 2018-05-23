@@ -9,11 +9,11 @@ description: Informazioni su come attivare il vantaggio Supporto tecnico incluso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivazione del vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
@@ -75,6 +75,20 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 3.  In "Supporto" fare clic su "Collega contratto di supporto"
 4.  Immettere "ID di accesso" e "ID contratto" ottenuti nel passaggio 1.
 Dopo aver completato questi passaggi, sarà possibile selezionare il piano di supporto associato al vantaggio della sottoscrizione di Visual Studio.  Il nome del piano può contenere "MSDN".
+
+## <a name="eligibility"></a>Idoneità
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Standard, cloud annuale)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Yes|
+| Visual Studio Professional (Standard, cloud annuale) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Yes         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Yes         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Yes         |
+| Visual Studio Dev Essentials | N/D  | Non disponibile |N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+
+<sup>1</sup> *Include: Imagine Premium. Esclude: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Microsoft Valued Partner (MVP), Region Director (RD), MCT Software & Services.*
+
+<sup>2</sup> *Include: Imagine Standard.*
 
  
 

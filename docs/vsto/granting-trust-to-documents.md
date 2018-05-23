@@ -1,5 +1,5 @@
 ---
-title: Concessione dell'attendibilità ai documenti | Documenti Microsoft
+title: Concedere l'attendibilità a documenti
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="granting-trust-to-documents"></a>Granting Trust to Documents
+# <a name="grant-trust-to-documents"></a>Concedere l'attendibilità a documenti
   Un progetto a livello di documento presenta gli stessi requisiti di sicurezza dei progetti a livello di applicazione, ovvero la firma dei manifesti con un certificato o la risposta, tramite clic, a una richiesta di attendibilità. Inoltre, il documento o la cartella di lavoro si deve trovare in una directory definita come percorso attendibile.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -39,15 +39,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Le cartelle locali sono considerate più sicure e sono implicitamente attendibili. I percorsi remoti, ad esempio le condivisioni file, devono essere designati come percorsi attendibili.  
   
--   Quando si aggiunge una directory ai percorsi attendibili, questa azione concede l'attendibilità totale non solo alle soluzioni Office, ma anche al codice VBA e ActiveX. Per questo motivo, la directory radice e le cartelle Documenti non devono essere designate come attendibili.  
+-   Quando si aggiunge una directory ai percorsi attendibili, questa azione concede l'attendibilità totale non solo alle soluzioni Office, ma anche al codice VBA e ActiveX. Per questo motivo, la directory radice e il *documenti* cartelle non devono essere designate come attendibili.  
   
--   Anche se il documento stesso è designato come attendibile mediante l'uso di percorsi attendibili, per rendere attendibile la personalizzazione sono necessarie ulteriori autorizzazioni. È possibile concedere attendibilità totale alla personalizzazione firmando i manifesti con un certificato, rispondendo tramite clic alla richiesta di attendibilità o installando la soluzione Office nella directory Programmi.  
+-   Anche se il documento stesso è designato come attendibile mediante l'uso di percorsi attendibili, per rendere attendibile la personalizzazione sono necessarie ulteriori autorizzazioni. È possibile concedere attendibilità totale alla personalizzazione tramite i manifesti con un certificato di firma, la richiesta di attendibilità o installando la soluzione Office per la *Program Files* directory.  
   
--   È possibile archiviare il documento o la cartella di lavoro di una soluzione a livello di documento nella stessa directory dell'assembly o in una directory diversa. Ad esempio, il documento potrebbe trovarsi in un server SharePoint e l'assembly potrebbe essere in una condivisione file di rete. Per ulteriori informazioni, vedere [procedura: pubblicare una soluzione Office a livello di documento in un Server di SharePoint tramite ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   È possibile archiviare il documento o la cartella di lavoro di una soluzione a livello di documento nella stessa directory dell'assembly o in una directory diversa. Ad esempio, il documento potrebbe trovarsi in un server SharePoint e l'assembly potrebbe essere in una condivisione file di rete. Per altre informazioni, vedere [procedura: pubblicare una soluzione Office a livello di documento in un server di SharePoint tramite ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Concessione dell'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)   
- [Risoluzione dei problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
- [Sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md)  
+ [Concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md)   
+ [Risolvere i problemi di sicurezza delle soluzioni Office](../vsto/troubleshooting-office-solution-security.md)   
+ [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)  
   
   

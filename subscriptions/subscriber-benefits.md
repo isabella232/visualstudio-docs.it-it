@@ -9,11 +9,11 @@ description: Informazioni sui vantaggi inclusi nella sottoscrizione di Visual St
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Vantaggi inclusi nella sottoscrizione di Visual Studio
 
@@ -40,5 +40,8 @@ I sottoscrittori di Visual Studio hanno anche diritto ad accedere a vari tipi di
 - I forum di supporto prioritario consentono di ottenere aiuto dai membri della community.  Se i membri della community non possono rispondere a una domanda, la risposta verrà fornita da esperti Microsoft. 
 - In caso di domande su Azure,  vedere i servizi Community di Azure e Azure Advisory Chat.  
 
-Per altre informazioni sui vantaggi inclusi nella sottoscrizione, vedere la pagina dei prezzi di Visual Studio.  Informazioni sui vantaggi specifici, incluse le sottoscrizioni in cui sono inclusi, sono disponibili nell'argomento **Uso dei vantaggi per i sottoscrittori** riportato di seguito. 
+> [!NOTE] 
+> La sottoscrizione può anche prevedere l'accesso ai download del software.  Per altre informazioni sui download e per sapere quali download sono inclusi con la sottoscrizione, visitare [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Per altre informazioni sui vantaggi inclusi nella sottoscrizione, vedere la [pagina dei prezzi di Visual Studio](https://www.visualstudio.com/vs/pricing/).  Informazioni sui vantaggi specifici, incluse le sottoscrizioni in cui sono inclusi, sono disponibili nell'argomento **Uso dei vantaggi per i sottoscrittori** riportato di seguito. 
 

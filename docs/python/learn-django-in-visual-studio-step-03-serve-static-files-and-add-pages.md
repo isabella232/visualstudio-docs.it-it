@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3 dell'esercitazione: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
@@ -283,4 +283,4 @@ I passaggi seguenti illustrano l'ereditarietà:
 - [Writing your first Django app, part 3 (views)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (Scrittura della prima app Django, parte 3 - visualizzazioni) (docs.djangoproject.com)
 - Per altre funzionalità dei modelli Django, ad esempio il flusso di controllo, vedere [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Linguaggio dei modelli Django) (docs.djangoproject.com)
 - Per informazioni dettagliate sull'uso del tag `{% url %}`, vedere la sezione [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) in [Built-in template tags and filters for Django templates reference](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (Filtri e tag dei modelli predefiniti per i riferimenti dei modelli Django) (docs.djangoproject.com)
-- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

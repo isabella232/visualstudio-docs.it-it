@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -37,7 +37,7 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
      Per inserire un frammento di codice, scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** o **Racchiudi tra** o aprire il menu di scelta rapida in un file e scegliere **Snippet** > **Inserisci frammento** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
-- **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando l'icona Lampadina ![Icona Lampadina piccola](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o premendo **ALT**+**INVIO** o **CTRL**+**.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
+- **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando le icone a forma di cacciavite ![icona cacciavite](media/screwdriver-icon.png) o di lampadina ![icona lampadina](media/light-bulb-icon.png) oppure premendo **ALT**+**INVIO** o **CTRL**+**.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
 
 - **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.
 

@@ -11,15 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Procedura: Dividere una classe in classi parziali (Progettazione classi)
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Procedura: Dividere una classe in classi parziali in Progettazione classi
 
 È possibile usare la parola chiave `partial` (`Partial` in Visual Basic) per dividere la dichiarazione di una classe o struttura in più dichiarazioni. È possibile usare tutte le dichiarazioni parziali che si desidera.
 
@@ -36,30 +39,11 @@ L'esempio seguente suddivide la definizione della classe `Employee` in due dichi
 > [!NOTE]
 > Visual Basic usa definizioni di classi parziali per separare il codice generato da Visual Studio dal codice creato dall'utente. Il codice viene separato in file di origine distinti. Ad esempio, **Progettazione Windows Form** definisce classi parziali per controlli come `Form`. In questi controlli il codice generato non deve essere modificato.
 
-
 Per altre informazioni sui tipi parziali in Visual Basic, vedere [Partial](/dotnet/visual-basic/language-reference/modifiers/partial).
 
-## <a name="visual-basic-example"></a>Esempio in Visual Basic
+## <a name="example"></a>Esempio
 
-Per suddividere una definizione di classe in Visual Basic, usare la parola chiave `Partial`, come illustrato nell'esempio seguente.
-
-```vb
-' First part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateWorkHours()
-    End Sub
-End Class
-
-' Second part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateTaxes()
-    End Sub
-End Class
-```
-
-## <a name="c-example"></a>Esempio in C#
-
-Per suddividere una definizione di classe in C#, usare la parola chiave `partial`, come illustrato nell'esempio seguente.
+Per suddividere una definizione di classe, usare la parola chiave `partial` (`Partial` in Visual Basic), come illustrato nell'esempio seguente:
 
 ```csharp
 // First part of class definition.
@@ -79,9 +63,23 @@ public partial class Employee
 }
 ```
 
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Classi e metodi parziali](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [partial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [partial (Tipo) (Riferimenti per C#)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [parziale (Metodo) (Riferimenti per C#)](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

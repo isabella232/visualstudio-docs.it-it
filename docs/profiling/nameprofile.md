@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b717882e943a37857bbdadf3d318f94b4900dc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.  
@@ -26,7 +26,7 @@ La funzione `NameProfile` assegna una stringa al processo o al thread specificat
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(  
                                    LPCTSTR pszName,   
                                    PROFILE_CONTROL_LEVEL Level,  
@@ -98,7 +98,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="example"></a>Esempio  
  Il codice seguente illustra la chiamata della funzione NameProfile. Nell'esempio si presuppone l'uso di macro stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la funzione abilitata per ANSI.  
   
-```  
+```cpp  
 void ExerciseNameProfile()  
 {  
     // Variables used to print output.  

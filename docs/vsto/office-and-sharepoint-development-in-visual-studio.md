@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Sviluppo di Office e SharePoint in Visual Studio
   È possibile estendere Microsoft Office e SharePoint creando un'app leggera o un componente aggiuntivo che gli utenti scaricano da [Office Store](https://store.office.com/) o da un catalogo dell'organizzazione oppure creando una soluzione basata su.NET Framework che gli utenti installano in un computer.  
@@ -50,11 +50,7 @@ ms.lasthandoff: 04/16/2018
   
  ![Le App per Office e SharePoint modello concettuale](../vsto/media/officeandsharepointapps2015.png "applicazioni per un modello concettuale di Office e SharePoint")  
   
- **Altre informazioni**  
-  
-|A|Vedere|  
-|--------|---------|  
-|Altre informazioni su Napa Office 365 Development Tools.|[Napa Office 365 Development Tools](https://msdn.microsoft.com/library/dn974046.aspx)|  
+
   
 ### <a name="build-an-office-add-in"></a>Creare un componente aggiuntivo di Office  
  Per estendere la funzionalità di Office, creare un componente aggiuntivo per Office. Si tratta in sostanza una pagina Web che è ospitata in un'applicazione di Office come Excel, Word, Outlook e PowerPoint. L'app può aggiungere funzionalità a documenti, fogli di lavoro, messaggi di posta elettronica, appuntamenti, presentazioni e progetti.  
@@ -71,7 +67,6 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Altre informazioni sui componenti aggiuntivi per Office e sulla relativa creazione.|[Componenti aggiuntivi di Office](http://msdn.microsoft.com/office/dn448457)|  
 |Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un'app o un componente aggiuntivo di Office.|[Guida di orientamento per componenti aggiuntivi di Office, VSTO e VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Altre informazioni su Napa Office 365 Development Tools.|[Napa Office 365 Development Tools](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Creare un componente aggiuntivo di SharePoint  
  Per estendere SharePoint per gli utenti, creare un componente aggiuntivo per SharePoint. Si tratta in sostanza un'applicazione di piccole dimensioni, facile da usare, autonoma che risolve una necessità degli utenti o dell'azienda.  
@@ -88,8 +83,7 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Altre informazioni sui componenti aggiuntivi per SharePoint e sulla relativa creazione.|[Componenti aggiuntivi di SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Confrontare i componenti aggiuntivi per SharePoint con le soluzioni tradizionali di SharePoint.|[Confronto tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Scegliere se creare un componente aggiuntivo di SharePoint o una soluzione di SharePoint.|[Scelta tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Altre informazioni su Napa Office 365 Development Tools.|[Napa Office 365 Development Tools](https://msdn.microsoft.com/library/dn974046.aspx)|  
+|Scegliere se creare un componente aggiuntivo di SharePoint o una soluzione di SharePoint.|[Scelta tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Creare un componente aggiuntivo VSTO  
  Creare un componente aggiuntivo VSTO per Office 2007 o Office 2010 oppure per estendere Office 2013 e Office 2016 oltre le possibilità dei componenti aggiuntivi di Office. I componenti aggiuntivi VSTO vengono eseguiti solo sul desktop. Gli utenti devono installare i componenti aggiuntivi VSTO, quindi in genere sono più difficili da distribuire e supportare.  Tuttavia, un componente aggiuntivo VSTO può essere maggiormente integrato con Office. Ad esempio, può aggiungere schede e controlli alla barra multifunzione di Office ed eseguire attività di automazione avanzate come l'unione di documenti o la modifica di grafici. È possibile sfruttare .NET Framework e usare C# e Visual Basic per interagire con gli oggetti di Office.  

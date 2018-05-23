@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Procedura: Visualizzare i tipi esistenti (Progettazione classi)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Procedura: Visualizzare i tipi esistenti in Progettazione classi
 
 Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a un diagramma classi.
 
@@ -36,13 +36,13 @@ Per progettare nuovi tipi nei diagrammi classi, vedere [How to: Create Types by 
 
 2.  Nel progetto in **Esplora soluzioni** trascinare un file di codice sorgente nel diagramma di classi.
 
-    > [!WARNING]
+    > [!NOTE]
     > Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:
     >
-    > -   Il progetto di app contenente il diagramma
-    > -   Un progetto condiviso importato dal progetto di app
-    > -   Un progetto a cui si fa riferimento
-    > -   Un assembly
+    > - Il progetto di app contenente il diagramma
+    > - Un progetto condiviso importato dal progetto di app
+    > - Un progetto a cui si fa riferimento
+    > - Un assembly
 
     Le forme che rappresentano i tipi definiti nel file di codice sorgente appariranno nel diagramma nella posizione in cui è stato trascinato il file.
 
@@ -60,9 +60,7 @@ La prima volta che viene visualizzato un tipo nel diagramma, la relativa forma a
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto in un diagramma classi
 
-- In **Esplora soluzioni** o **Visualizzazione classi** fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizzazione**, quindi scegliere **Visualizza diagramma classi**.
-
-     Verrà creato un diagramma classi compilato automaticamente.
+In **Esplora soluzioni** o **Visualizzazione classi** fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizzazione**, quindi scegliere **Visualizza diagramma classi**. Verrà creato un diagramma classi compilato automaticamente.
 
 ## <a name="see-also"></a>Vedere anche
 

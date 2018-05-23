@@ -15,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6eb831422df42a246a5d5c23ccdd480bce47a0e6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedef di Visual C++ in Progettazione classi
 
-Le istruzioni typedef creano uno o più livelli di riferimento indiretto tra un nome e il relativo tipo sottostante. **Progettazione classi** supporta i tipi typedef di C++, che vengono dichiarati con la parola chiave `typedef`, ad esempio:
+Le istruzioni [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) creano uno o più livelli di riferimento indiretto tra un nome e il relativo tipo sottostante. **Progettazione classi** supporta i tipi typedef di C++, che vengono dichiarati con la parola chiave `typedef`, ad esempio:
 
 ```cpp
 typedef class coord
@@ -38,7 +38,38 @@ typedef class coord
 
 `COORD OriginPoint;`
 
-Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non userà il nome del tag specificato, ma il nome generato da Visualizzazione classi. Ad esempio, la dichiarazione seguente è valida, ma appare in **Visualizzazione classi** e **Progettazione classi** come un oggetto denominato **__unnamed**:
+## <a name="class-and-struct-shapes"></a>Forme di classi e struct
+
+In **Progettazione classi** un typedef di C++ ha la forma del tipo specificato nel typedef. Se l'origine dichiara `typedef class`, la forma ha gli angoli arrotondati e l'etichetta **Class**. Per `typedef struct` la forma ha gli angoli quadrati e l'etichetta **Struct**.
+
+Classi e strutture possono avere typedef dichiarati annidati all'interno di essi. In **Progettazione classi** le forme di classi e strutture possono visualizzare le dichiarazioni typedef annidate come forme annidate.
+
+Le forme typedef supportano i comandi **Mostra come associazione** e **Mostra come associazione di raccolte** nel menu di scelta rapida.
+
+### <a name="class-typedef-example"></a>Esempio di typedef di classe
+
+```cpp
+class B {};
+typedef B MyB;
+```
+
+![Typedef di classe C++ in Progettazione classi](media/cpp-class-typedef.png)
+
+### <a name="struct-typedef-example"></a>Esempio di typedef di struct
+
+```cpp
+typedef struct mystructtag
+{
+    int   i;
+    double f;
+} mystruct;
+```
+
+![Typedef di struct C++ in Progettazione classi](media/cpp-struct-typedef.png)
+
+## <a name="unnamed-typedefs"></a>Typedef senza nome
+
+Sebbene sia possibile dichiarare un typedef senza nome, **Progettazione classi** non usa il nome del tag specificato. **Progettazione classi** usa il nome generato da **Visualizzazione classi**. Ad esempio, la dichiarazione seguente è valida, ma appare in **Visualizzazione classi** e **Progettazione classi** come un oggetto denominato **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -49,158 +80,10 @@ typedef class coord
 };
 ```
 
-Per altre informazioni sull'uso del tipo `typedef`, vedere [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
+> [!NOTE]
+> **Progettazione classi** non visualizza i typedef il cui tipo di origine è un puntatore a funzione.
 
-Una forma di typedef C++ ha la forma del tipo specificato nell'istruzione typedef. Ad esempio, se l'origine dichiara `typedef class`, la forma ha gli angoli arrotondati e l'etichetta **Class**. Per `typedef struct` la forma ha gli angoli quadrati e l'etichetta **Struct**.
+## <a name="see-also"></a>Vedere anche
 
-Classi e strutture possono avere typedef annidati dichiarati all'interno, di conseguenza, le forme di classi e strutture possono visualizzare le dichiarazioni typedef annidate come forme annidate.
-
-Le forme typedef supportano i comandi **Mostra come associazione** e **Mostra come associazione di raccolte** nel menu di scelta rapida.
-
-Di seguito sono riportati alcuni esempi di tipi typedef supportati da **Progettazione classi**:
-
-`typedef type name`
-
-*name* : *type*
-
-typedef
-
-Disegna una linea di associazione per la connessione al tipo *name*, se possibile.
-
-`typedef void (*func)(int)`
-
-`func: void (*)(int)`
-
-typedef
-
-Typedef per puntatori a funzione. Non viene disegnata alcuna linea di associazione.
-
-**Progettazione classi** non visualizza un typedef se il tipo di origine è un puntatore a funzione.
-
-```cpp
-typedef int MyInt;
-class A {
-   MyInt I;
-};
-```
-
-`MyInt: int`
-
-typedef
-
-`A`
-
-Classe
-
-Disegna una linea di associazione che punta dalla forma del tipo di origine alla forma del tipo di destinazione.
-
-`Class B {};`
-
-`typedef B MyB;`
-
-`B`
-
-Classe
-
-`MyB : B`
-
-typedef
-
-Se si fa clic su una forma di typedef con il pulsante destro del mouse e si fa clic su **Mostra come associazione**, vengono visualizzati il typedef o la classe e una linea **Alias di** che unisce le due forme (simile a una linea di associazione).
-
-`typedef B MyB;`
-
-`typedef MyB A;`
-
-`MyBar : Bar`
-
-typedef
-
-Vedi sopra.
-
-```cpp
-Class B {};
-typedef B MyB;
-
-class A {
-   MyB B;
-};
-```
-
-`B`
-
-Classe
-
-`MyB : B`
-
-typedef
-
-`A`
-
-Classe
-
-`MyB` è una forma di typedef annidata.
-
-`#include <vector>`
-
-`...`
-
-`using namespace std;`
-
-`...`
-
-`typedef vector<int> MyIntVect;`
-
-Classe `vector<T>`
-
-`MyIntVect : vector<int>`
-
-typedef
-
-`class B {};`
-
-`typedef B MyB;`
-
-`class A : MyB {};`
-
-`MyB : B`
-
-typedef
-
--> B
-
-`B`
-
-`A`
-
-Classe
-
--> MyB
-
-**Progettazione classi** non supporta la visualizzazione di questo tipo di relazione usando un comando di menu di scelta rapida.
-
-`#include <vector>`
-
-`Typedef MyIntVect std::vector<int>;`
-
-`Class MyVect : MyIntVect {};`
-
-`std::vector<T>`
-
-Classe
-
-`MyIntVect : std::vector<int>`
-
-typedef
-
-`MyVect`
-
-Classe
-
--> MyIntVect
-
-### <a name="see-also"></a>Vedere anche
-
-- [Uso del codice di Visual C++](working-with-visual-cpp-code.md)  
+- [Usare il codice Visual C++](working-with-visual-cpp-code.md)
 - [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
-

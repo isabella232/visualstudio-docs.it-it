@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d59c158bf8f532fa73a4eb2c22309218f80718e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
@@ -76,7 +76,7 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
 3.  Aggiungere uno o più attributi personalizzati, uno per riga. Non racchiuderli tra parentesi.
 
-     Al termine, gli attributi personalizzati verranno applicati al tipo.
+   Gli attributi personalizzati vengono applicati al tipo.
 
 ##  <a name="CustAttributeMember"></a> Applicare un attributo personalizzato a un membro di un tipo
 
@@ -86,7 +86,7 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
 3.  Aggiungere uno o più attributi personalizzati, uno per riga. Non racchiuderli tra parentesi.
 
-     Al termine, gli attributi personalizzati verranno applicati al tipo.
+   Gli attributi personalizzati vengono applicati al tipo.
 
 ## <a name="see-also"></a>Vedere anche
 

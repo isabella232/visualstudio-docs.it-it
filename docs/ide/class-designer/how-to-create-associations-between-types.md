@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Procedura: Creare associazioni tra tipi (Progettazione classi)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Procedura: Creare associazioni tra tipi in Progettazione classi
 
 Le linee di associazione in **Progettazione classi** mostrano le relazioni tra le classi di un diagramma. Una linea di associazione rappresenta una classe che corrisponde al tipo di una proprietà o di un campo di un'altra classe del progetto. Le linee di associazione vengono in genere utilizzate per illustrare le relazioni più importanti tra le classi del progetto.
 
@@ -35,25 +35,25 @@ Anche se è possibile visualizzare tutti i campi e tutte le proprietà come asso
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Per definire una linea di associazione in Diagramma classi
 
-1.  In **Progettazione classi**, nella casella degli strumenti, selezionare **Associazione**.
+1. In **Progettazione classi**, nella casella degli strumenti, selezionare **Associazione**.
 
-2.  Disegnare una linea tra le due forme da collegare con un'associazione.
+2. Disegnare una linea tra le due forme da collegare con un'associazione.
 
      Nella prima classe verrà creata una nuova proprietà, visualizzata come una linea di associazione (non come una proprietà all'interno di un raggruppamento della forma) con un nome predefinito. Il tipo di questa proprietà è la forma a cui punta la linea di associazione.
 
 ## <a name="to-change-the-name-of-an-association"></a>Per cambiare il nome di un'associazione
 
--   Sulla superficie del diagramma fare clic sull'etichetta della linea di associazione e modificarla.
+Sulla superficie del diagramma fare clic sull'etichetta della linea di associazione e modificarla.
 
- \- oppure -
+In alternativa, seguire questi passaggi:
 
-1.  Fare clic sulla forma che contiene la proprietà visualizzata come associazione.
+1. Selezionare la forma che contiene la proprietà visualizzata come associazione.
 
-     La forma otterrà lo stato attivo e i relativi membri verranno visualizzati nella finestra Dettagli classe e nella finestra Proprietà.
+   La forma acquisisce lo stato attivo e i relativi membri vengono visualizzati nelle finestre **Dettagli classe** e **Proprietà**.
 
-2.  Nella finestra Dettagli classe o nella finestra Proprietà modificare il campo del nome relativo alla proprietà e premere Invio.
+2. Nella finestra **Dettagli classe** o **Proprietà** modificare il campo del nome relativo alla proprietà e premere **Invio**.
 
-     Il nome verrà aggiornato nella finestra **Dettagli classe**, sulla linea di associazione, nella finestra Proprietà e nel codice.
+   Il nome viene aggiornato nella finestra **Dettagli classe**, sulla linea di associazione, nella finestra **Proprietà** e nel codice.
 
 ## <a name="see-also"></a>Vedere anche
 

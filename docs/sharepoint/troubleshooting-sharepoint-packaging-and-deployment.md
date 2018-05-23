@@ -26,11 +26,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22487077a355d51725258f37c03e5fd2bb58ab9b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Risoluzione dei problemi relativi alla creazione di pacchetti e alla distribuzione di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/16/2018
 
 2.  Aggiungere la riga di codice seguente al file Web.config:
 
-    ```
+    ```xml
     <compilation batch="false" optimizeCompilations="true">
     ```
 

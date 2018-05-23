@@ -1,6 +1,6 @@
 ---
-title: Abilitare l'accesso a VBA per creare o aprire un Visual Studio Tools per il progetto di Microsoft Office System
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+title: Abilitare l'accesso a VBA per creare o aprire un Visual Studio Tools per Microsoft Office system project
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Visual Studio Tools per il progetto di Microsoft Office System
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Visual Studio Tools per Microsoft Office system project
 
-Prima di poter creare o aprire un Visual Studio Tools per il progetto di Microsoft Office System, è necessario abilitare esplicitamente l'accesso a Visual Basic Applications (VBA) sistema del progetto in Microsoft Office.
+Prima di poter creare o aprire un Visual Studio Tools per Microsoft Office system project, è necessario abilitare esplicitamente l'accesso a Visual Basic Applications (VBA) sistema del progetto in Microsoft Office.
 
  Progetti di sviluppo di Microsoft Office richiedono l'accesso a Visual Basic il sistema di progetto Applications (VBA) in Microsoft Office Word e Microsoft Office Excel, anche se i progetti non utilizzano Visual Basic per le applicazioni. Il supporto in fase di progettazione dei controlli sia nei progetti di Visual Basic che in quelli di Visual C# dipende infatti dal sistema di progetto di Visual Basic, Applications Edition.
 
@@ -47,7 +47,7 @@ Prima di poter creare o aprire un Visual Studio Tools per il progetto di Microso
 
  È possibile ripristinare l'installazione di Office se vengono visualizzati errori VBA o COM.
 
-## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Per abilitare o disabilitare l'accesso a progetti Visual Basic
+## <a name="to-enable-or-disable-access-to-visual-basic-projects"></a>Per abilitare o disabilitare l'accesso a Visual Basic (progetti)
 
 1. Scegliere la scheda **File** .
 
@@ -127,4 +127,4 @@ Prima di poter creare o aprire un Visual Studio Tools per il progetto di Microso
 
 ## <a name="see-also"></a>Vedere anche
 
- [Sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md)
+ [Proteggere le soluzioni Office](../vsto/securing-office-solutions.md)

@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd97ae6cd610931f4b55deafb878f6c6067b6ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>Procedura: Stampare diagrammi classi (Progettazione classi)
+# <a name="how-to-print-class-diagrams"></a>Procedura: Stampare diagrammi classi
 
 È possibile stampare un diagramma classi usando la funzionalità di stampa di Visual Studio.
 
 ## <a name="to-print-a-class-diagram"></a>Per stampare un diagramma classi
 
-1.  Visualizzare il diagramma classi. (Se necessario, selezionare la scheda del diagramma classi per visualizzarlo.)
+1.  Aprire il diagramma classi.
 
 2.  Scegliere **Stampa** dal menu **File**.
 
-     Verrà stampato l'intero diagramma classi. Si noti che potrebbe essere necessario regolare le impostazioni nella finestra di dialogo Imposta pagina per stampare con dimensioni appropriate.
+Viene stampato l'intero diagramma classi. Può essere necessario regolare le impostazioni nella finestra di dialogo **Imposta pagina** per stampare con dimensioni appropriate.
 
 ## <a name="see-also"></a>Vedere anche
 

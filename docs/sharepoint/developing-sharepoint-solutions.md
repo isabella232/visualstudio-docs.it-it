@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Sviluppo di soluzioni SharePoint
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco di tipi di progetto disponibili, vedere [progetto SharePoint e i modelli di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  Quando una funzionalità viene aggiunta a un progetto SharePoint, viene visualizzata in **Esplora soluzioni** come nodo con il nome predefinito Feature*x*.feature, dove *x* è un numero univoco. Dopo che una funzionalità viene distribuita nel server SharePoint, un amministratore di SharePoint può attivarla e renderla disponibile agli utenti del sito SharePoint.  
   
 #### <a name="package-node"></a>Nodo Pacchetto  
- Il nodo **Pacchetto** contiene un singolo file che serve come meccanismo di distribuzione per il progetto SharePoint. Questo file, noto come un *soluzione * * pacchetto*, è. Basato su CAB con una. Estensione WSP. Un pacchetto della soluzione è un file distribuibile e riutilizzabile che contiene un set di funzionalità, definizioni dei siti e assembly che è possibile applicare ai siti SharePoint, nonché abilitare o disabilitare individualmente. Il **pacchetto** nodo contiene sempre anche un file denominato package. wspdef, un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file di definizione per il pacchetto. Quando un pacchetto viene distribuito nel server che esegue SharePoint, l'amministratore di SharePoint può installarlo e attivare le relative funzionalità.  
+ Il nodo **Pacchetto** contiene un singolo file che serve come meccanismo di distribuzione per il progetto SharePoint. Questo file, noto come un *pacchetto della soluzione*, è. Basato su CAB con una. Estensione WSP. Un pacchetto della soluzione è un file distribuibile e riutilizzabile che contiene un set di funzionalità, definizioni dei siti e assembly che è possibile applicare ai siti SharePoint, nonché abilitare o disabilitare individualmente. Il **pacchetto** nodo contiene sempre anche un file denominato package. wspdef, un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file di definizione per il pacchetto. Quando un pacchetto viene distribuito nel server che esegue SharePoint, l'amministratore di SharePoint può installarlo e attivare le relative funzionalità.  
   
  È possibile visualizzare o modificare il contenuto del pacchetto in Progettazione pacchetti facendo doppio clic sul nodo del pacchetto o aprendo il relativo menu di scelta rapida e scegliendo **aprire**. Per ulteriori informazioni, vedere [la creazione di pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   

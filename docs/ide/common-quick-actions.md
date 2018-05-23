@@ -12,17 +12,21 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
 Le sezioni di questo argomento presentano alcune delle **azioni rapide** comuni applicabili sia a codice C# che a codice Visual Basic. Queste azioni sono *correzioni del codice* per la diagnostica del compilatore o per gli [analizzatori .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) predefiniti di Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Azioni per risolvere errori
+
+Le Azioni rapide in questa sezione consentono di correggere gli errori nel codice che impedirebbero la compilazione. Se sono disponibili Azioni rapide per correggere un errore in una riga di codice, l'icona visualizzata nel margine o sotto la sottolineatura ondulata rossa è una lampadina con una "x" rossa.
+
+![Icona di errore e menu per le Azioni rapide](media/error-light-bulb-with-code.png)
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
@@ -94,44 +98,6 @@ private void MyMethod()
 |  ID errore | Linguaggi applicabili |  Versione supportata |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# e Visual Basic | Visual Studio 2017 versione 15.3 |
-
-### <a name="make-method-synchronous"></a>Rendere sincrono un metodo
-
-Quando si usa la parola chiave `async` o `Async` su un metodo, si prevede che venga usata anche la parola chiave `await` o `Await` in un punto all'interno del metodo stesso.  Se tuttavia ciò non avviene, viene visualizzata un'azione rapida che consente di impostare il metodo come sincrono rimuovendo la parola chiave `async` o `Async` e modificando il tipo restituito. Usare l'opzione **Imposta il metodo come sincrono** dal menu Azioni rapide.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  ID errore | Linguaggi applicabili |  Versione supportata |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# e Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>Rendere asincrono un metodo
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 versione 15.5 |
+
+### <a name="make-method-synchronous"></a>Rendere sincrono un metodo
+
+Quando si usa la parola chiave `async` o `Async` su un metodo, si prevede che venga usata anche la parola chiave `await` o `Await` in un punto all'interno del metodo stesso.  Se tuttavia ciò non avviene, viene visualizzata un'azione rapida che consente di impostare il metodo come sincrono rimuovendo la parola chiave `async` o `Async` e modificando il tipo restituito. Usare l'opzione **Imposta il metodo come sincrono** dal menu Azioni rapide.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  ID errore | Linguaggi applicabili |  Versione supportata |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# e Visual Basic | Visual Studio 2015 Update 2 |
 
 ## <a name="see-also"></a>Vedere anche
 

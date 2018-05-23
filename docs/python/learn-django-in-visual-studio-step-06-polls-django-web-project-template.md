@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Passaggio 6 della procedura: Usare il modello Progetto Web Django di sondaggi
 
@@ -361,7 +361,7 @@ La chiamata a `admin.site.register` connette quindi la classe al modello (`Poll`
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!Note]
-> Durante l'esercitazione è stato eseguito il commit della soluzione di Visual Studio nel controllo del codice sorgente. A questo punto è utile eseguire un altro commit. La soluzione dovrebbe corrispondere al codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Durante l'esercitazione è stato eseguito il commit della soluzione di Visual Studio nel controllo del codice sorgente. A questo punto è utile eseguire un altro commit. La soluzione dovrebbe corrispondere al codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 A questo punto, sono stati esaminati i modelli "Progetto Web Django vuoto", "Progetto Web Django" e "Progetto Web Django di sondaggi". Sono state apprese le nozioni di base di Django, ad esempio l'uso di visualizzazioni e modelli, e sono stati analizzati il routing, l'autenticazione e l'uso di modelli di database. A questo punto, si dovrebbe essere in grado di creare un'app Web con tutti i modelli e le visualizzazioni necessari.
 

@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 991d2c57da8a1fc45fba266cdafe38000cd3d594
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30f466b1dd849f7c0288de38ead481dfa19995af
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="featureproperties-element"></a>Elemento FeatureProperties
-  Rappresenta una raccolta di valori di proprietà che sono inclusi in una funzione quando viene distribuito in SharePoint. Dopo aver distribuita una funzionalità, è possibile accedere i valori delle proprietà nel codice.  
+  Raccolta di valori di proprietà che sono inclusi in una funzione quando viene distribuito in SharePoint. Dopo aver distribuita una funzionalità, è possibile accedere i valori delle proprietà nel codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <FeatureProperties>  
   <FeatureProperty.../>  
 </FeatureProperties>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo è l'elemento radice obbligatorio del file con estensione spdata.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo elemento di elemento radice obbligatorio del `.spdata` file.|  
   
 ## <a name="remarks"></a>Note  
  Per ulteriori informazioni sulle proprietà di funzionalità, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  

@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f1453b32052fb50a049f413d05bf562e6d4b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-customize-class-diagrams-class-designer"></a>Procedura: Personalizzare i diagrammi classi (Progettazione classi)
+# <a name="how-to-customize-class-diagrams"></a>Procedura: Personalizzare i diagrammi classi
 
 È possibile modificare la modalità con cui i diagrammi classi visualizzano le informazioni. È possibile personalizzare l'intero diagramma o i singoli tipi nell'area di progettazione.
 
@@ -34,9 +34,9 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Eseguire lo zoom avanti e indietro sul diagramma classi
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Nella barra degli strumenti di **Progettazione classi** fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.
+2. Nella barra degli strumenti di **Progettazione classi** fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.
 
      oppure
 
@@ -47,82 +47,82 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 
 ## <a name="customize-grouping-and-sorting-of-type-members"></a>Personalizzare il raggruppamento e l'ordinamento dei membri di tipo
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Fare clic con il pulsante destro del mouse in un punto vuoto dell'area di progettazione e scegliere **Raggruppa membri**.
+2. Fare clic con il pulsante destro del mouse in un punto vuoto dell'area di progettazione e scegliere **Raggruppa membri**.
 
-3.  Selezionare una delle opzioni disponibili:
+3. Selezionare una delle opzioni disponibili:
 
-    1.  **Raggruppa per tipo** separa i singoli membri di tipo in un elenco raggruppato di proprietà, metodi, eventi e campi. I singoli gruppi dipendono dalla definizione delle entità: ad esempio, una classe non visualizzerà alcun gruppo di eventi se non esistono ancora eventi definiti per tale classe.
+    - **Raggruppa per tipo** separa i singoli membri di tipo in un elenco raggruppato di proprietà, metodi, eventi e campi. I singoli gruppi dipendono dalla definizione delle entità: ad esempio, una classe non visualizzerà alcun gruppo di eventi se non esistono ancora eventi definiti per tale classe.
 
-    2.  **Raggruppa per accesso** separa i singoli membri di tipo in un elenco raggruppato basato sui modificatori di accesso del membro. Ad esempio, Public e Private.
+    - **Raggruppa per accesso** separa i singoli membri di tipo in un elenco raggruppato basato sui modificatori di accesso del membro. Ad esempio, Public e Private.
 
-    3.  **Ordina alfabeticamente** visualizza gli elementi che costituiscono un'entità come singolo elenco in ordine alfabetico. L'elenco è ordinato in ordine crescente.
+    - **Ordina alfabeticamente** visualizza gli elementi che costituiscono un'entità come singolo elenco in ordine alfabetico. L'elenco è ordinato in ordine crescente.
 
 ## <a name="hide-compartments-on-a-type"></a>Nascondere i raggruppamenti in un tipo
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Fare clic con il pulsante destro del mouse sulla categoria del membro nel tipo da personalizzare (ad esempio, selezionare il nodo **Metodi** in una classe).
+2. Fare clic con il pulsante destro del mouse sulla categoria del membro nel tipo da personalizzare (ad esempio, selezionare il nodo **Metodi** in una classe).
 
-3.  Fare clic su **Nascondi raggruppamento**.
+3. Fare clic su **Nascondi raggruppamento**.
 
      Il raggruppamento selezionato verrà rimosso dal contenitore del tipo.
 
 ## <a name="hide-individual-members-on-a-type"></a>Nascondere singoli membri in un tipo
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Fare clic con il pulsante destro del mouse sul membro nel tipo da nascondere.
+2. Fare clic con il pulsante destro del mouse sul membro nel tipo da nascondere.
 
-3.  Fare clic su **Nascondi**.
+3. Fare clic su **Nascondi**.
 
      Il membro selezionato verrà rimosso dal contenitore del tipo.
 
 ## <a name="show-hidden-compartments-and-members-on-a-type"></a>Mostrare raggruppamenti e membri nascosti in un tipo
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Fare clic con il pulsante destro del mouse sul nome del tipo con il raggruppamento nascosto.
+2. Fare clic con il pulsante destro del mouse sul nome del tipo con il raggruppamento nascosto.
 
-3.  Fare clic su **Mostra tutti i membri**.
+3. Fare clic su **Mostra tutti i membri**.
 
      Tutti i raggruppamenti e i membri nascosti verranno visualizzati nel contenitore del tipo.
 
 ## <a name="hide-relationships"></a>Nascondere relazioni
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Fare clic con il pulsante destro del mouse sulla linea di associazione o ereditarietà che si desidera nascondere.
+2. Fare clic con il pulsante destro del mouse sulla linea di associazione o ereditarietà che si desidera nascondere.
 
-3.  Fare clic su **Nascondi** per le linee di associazione e scegliere **Nascondi linea ereditarietà** per le linee di ereditarietà.
+3. Fare clic su **Nascondi** per le linee di associazione e scegliere **Nascondi linea ereditarietà** per le linee di ereditarietà.
 
-4.  Fare clic su **Mostra tutti i membri**.
+4. Fare clic su **Mostra tutti i membri**.
 
      Tutti i raggruppamenti e i membri nascosti verranno visualizzati nel contenitore del tipo.
 
 ## <a name="show-hidden-relationships"></a>Mostrare relazioni nascoste
 
-1.  Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
+1. Aprire e selezionare un file di diagramma classi in **Progettazione classi**.
 
-2.  Fare clic con il pulsante destro del mouse sul tipo con l'associazione o l'ereditarietà nascosta.
+2. Fare clic con il pulsante destro del mouse sul tipo con l'associazione o l'ereditarietà nascosta.
 
  Fare clic su **Mostra tutti i membri** per le linee di associazione e su **Mostra classe base** o **Mostra classi derivate** per le linee di ereditarietà.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Rimuovere una forma da un diagramma di classi
 È possibile rimuovere una forma di tipo dal diagramma di classi senza influire sul codice sottostante del tipo. La rimozione delle forme dei tipi da un diagramma classi influirà solo sul diagramma corrente: il codice sottostante che definisce il tipo e gli altri diagrammi in cui viene visualizzato il tipo non saranno interessati.
 
-1.  Nel diagramma classi selezionare la forma del tipo da rimuovere dal diagramma.
+1. Nel diagramma classi selezionare la forma del tipo da rimuovere dal diagramma.
 
-2.  Scegliere **Rimuovi dal diagramma** dal menu **Modifica**.
+2. Scegliere **Rimuovi dal diagramma** dal menu **Modifica**.
 
      La forma del tipo ed eventuali linee di associazione o ereditarietà connesse ad essa connesse non appariranno più sul diagramma.
 
 ## <a name="delete-a-type-shape-and-its-underlying-code"></a>Eliminare una forma di tipo e il codice sottostante
 
-1.  Fare clic con il pulsante destro del mouse sulla forma nell'area di progettazione.
+1. Fare clic con il pulsante destro del mouse sulla forma nell'area di progettazione.
 
-2.  Scegliere **Elimina codice** dal menu di scelta rapida.
+2. Scegliere **Elimina codice** dal menu di scelta rapida.
 
      La forma verrà rimossa dal diagramma e il codice sottostante verrà eliminato dal progetto.
 

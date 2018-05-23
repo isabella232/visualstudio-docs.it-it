@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -91,17 +91,15 @@ Eventuali avvisi nuovi o aggiornati vengono visualizzati nella scheda **Elenco e
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usare le lampadine per correggere o effettuare il refactoring del codice
 
-Le [lampadine](../ide/quick-actions.md) sono una funzionalità relativamente nuova di Visual Studio che consente di effettuare il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e selezionare **Azioni rapide** o premere **CTRL**+**.** quando il cursore si trova sulla riga con la linea ondulata colorata. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
+Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. Oppure, quando il cursore si trova sulla riga con la linea ondulata colorata premere **CTRL**+**.** oppure selezionare l'icona a forma di lampadina o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
 
 ![Anteprima di lampadina di Visual Studio](../ide/media/quick-actions-options.png)
 
-Le lampadine possono essere usate in tutti i casi in cui gli analizzatori di codice individuano la possibilità di correggere, eseguire il refactoring o migliorare il codice. Fare clic su una qualsiasi riga di codice, fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida e selezionare **Azioni rapide** oppure, per aumentare l'efficienza, premere **CTRL**+**.** Se sono disponibili opzioni di refactoring o miglioramento, vengono visualizzate. In caso contrario, viene visualizzato il messaggio **Azioni rapide non disponibili in questo punto** nell'angolo inferiore sinistro dell'IDE.
+Le Azioni rapide possono essere usate in tutti i casi in cui gli analizzatori di codice individuano la possibilità di correggere, eseguire il refactoring o migliorare il codice. Fare clic su una qualsiasi riga di codice, fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida e scegliere **Azioni rapide e rafactoring**. Se sono disponibili opzioni di refactoring o miglioramento, vengono visualizzate. In caso contrario, viene visualizzato il messaggio **Azioni rapide non disponibili in questo punto** nell'angolo inferiore sinistro dell'IDE.
 
-![Testo 'Nessuna opzione' del menu Lampadina di Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Testo Azioni rapide non disponibili in questo punto](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Con l'esperienza si apprenderà a usare rapidamente i tasti di direzione e **CTRL**+**.** per controllare se sia possibile eseguire il refactoring con Azioni rapide e per pulire il codice.
-
-Per altre informazioni sulle lampadine, vedere [Azioni rapide](../ide/quick-actions.md).
+Con l'esperienza si apprenderà a usare rapidamente i tasti di direzione e **CTRL**+**.** per controllare se sono disponibili opportunità per eseguire facilmente il refactoring e per pulire il codice.
 
 ## <a name="debug-your-running-code"></a>Eseguire il debug del codice in esecuzione
 

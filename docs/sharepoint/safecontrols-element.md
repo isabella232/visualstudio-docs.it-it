@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08f981c5dbbf5ae380e782c03553a8f249f41e2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99235ad0852ab211a93fa2241d0d86ccb2fd8b51
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="safecontrols-element"></a>Elemento SafeControls
-  Rappresenta una raccolta di controlli ASPX e Web part che sono definiti come sicuri per tutti gli utenti di accedere in qualsiasi pagina ASPX nel sito di SharePoint.  
+  Raccolta di controlli ASPX e dalle Web part sono designate come protette per tutti gli utenti di accedere in qualsiasi pagina ASPX nel sito di SharePoint.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <SafeControls>  
   <SafeControl.../>  
 </SafeControls>  
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo è l'elemento radice obbligatorio del file con estensione spdata.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo elemento di elemento radice obbligatorio del `.spdata` file.|  
   
 ## <a name="remarks"></a>Note  
  Per ulteriori informazioni sui controlli sicuri, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  

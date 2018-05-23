@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Editor standard
 
@@ -24,7 +24,6 @@ Questo articolo presenta alcune delle funzionalità chiave dell'editor standard 
 L'efficienza di visualizzazione e di spostamento nel codice è una parte essenziale del flusso di lavoro di sviluppo. Il modo esatto in cui si desidera visualizzare e gestire il codice è una decisione personale che varia da uno sviluppatore all'altro e spesso anche tra un progetto e l'altro.
 
 Visual Studio per Mac offre molte funzionalità potenti per rendere lo sviluppo multipiattaforma il più accessibile e utile possibile. Le sezioni seguenti descrivono alcune delle caratteristiche principali.
-
 
 ## <a name="code-folding"></a>Riduzione del codice
 
@@ -62,25 +61,20 @@ Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio
 
  ![spazi vuoti visualizzati](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Righello
 
 Il righello per le colonne è utile per determinare le lunghezze delle righe, in particolare quando si lavora in un team che ha linee guida per tali lunghezze. Per attivare o disattivare il righello per le colonne, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli** e selezionare (o deselezionare) **Show Column ruler** (Mostra righello per le colonne), come illustrato nell'immagine seguente:
 
- ![](media/source-editor-image5.png)
+ ![Finestra di dialogo Preferenze con opzione "show column ruler" evidenziata](media/source-editor-image5.png)
 
  Verrà visualizzata una linea grigia verticale nell'editor standard.
-
 
 ## <a name="highlight-identifier-references"></a>Evidenzia riferimenti identificatore
 
 Quando l'opzione "Highlight identifier references (Evidenzia riferimenti identificatore)" è attivata, è possibile selezionare qualsiasi simbolo nel codice sorgente e l'editor offrirà una guida visiva per tutti gli altri riferimenti in tale file. Per attivare questa opzione, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli** e selezionare _Highlight identifier references_ (Evidenzia riferimenti identificatore), come illustrato nell'immagine seguente:
 
-![](media/source-editor-image6.png)
+![Finestra di dialogo Preferenze con opzione "Highlight identifier references" evidenziata](media/source-editor-image6.png)
 
 Anche il colore dell'evidenziazione è utile per indicare che qualcosa è assegnato o referenziato. Se qualcosa è assegnato, è evidenziato in rosso, se qualcosa è referenziato, è evidenziato in blu:
 
-![](media/source-editor-image7.png)
-
-
-
+![esempio che illustra il colore dell'evidenziazione](media/source-editor-image7.png)

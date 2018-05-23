@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estensione di Esplora server per visualizzare web part
   In Visual Studio, è possibile utilizzare il **connessioni di SharePoint** nodo di **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata, è possibile estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuno connesso a un sito di SharePoint.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 3.5** nell'elenco delle versioni di .NET Framework.  
   
-4.  
-  
-5.  Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **WebPartCommands**, quindi scegliere il **OK** pulsante.  
+4.  Nell'elenco dei modelli di progetto, scegliere **libreria di classi**, denominare il progetto **WebPartCommands**, quindi scegliere il **OK** pulsante.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aggiunge il **WebPartCommands** progetto alla soluzione e apre il file di codice predefinito Class1.  
   
-6.  Eliminare il file di codice Class1 dal progetto.  
+5.  Eliminare il file di codice Class1 dal progetto.  
   
 ## <a name="configuring-the-projects"></a>Configurazione dei progetti  
  Prima di scrivere codice per creare l'estensione, è necessario aggiungere i file di codice e i riferimenti agli assembly e configurare le impostazioni di progetto.  

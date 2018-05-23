@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a872745208b1f97065cc073920273dd90f4fa60
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="pf"></a>PF
 L'opzione **PF** di VSPerfCmd.exe imposta l'evento di profilatura campionato per gli errori di pagina e modifica facoltativamente il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.  
   
 > [!NOTE]
->  L'opzione PF non può esser usata in sistemi a 64 bit.  
+>  L'opzione **PF** non può essere usata in sistemi a 64 bit.  
   
- Si noti che l'opzione **PF** non è supportata nei computer a 64 bit. L'opzione **PF** può essere usata solo in una riga di comando che contiene anche l'opzione **Launch** o l'opzione **Attach**.  
+**PF** può essere usata solo in una riga di comando che contiene anche l'opzione **Launch** o **Attach**.  
   
  Per impostazione predefinita, l'evento di campionamento è impostato sui cicli del clock del processore non interrotti e l'intervallo di campionamento è impostato su 10.000.000. Le opzioni **Timer**, **PF**, **Sys** e **Counter** consentono di impostare l'evento di campionamento e l'intervallo di campionamento. L'opzione **GC** raccoglie dati di memoria .NET in corrispondenza di ogni evento di allocazione e di Garbage Collection. È possibile specificare solo una di queste opzioni in una riga di comando.  
   
@@ -30,7 +30,7 @@ L'opzione **PF** di VSPerfCmd.exe imposta l'evento di profilatura campionato per
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]  
 ```  
   
@@ -65,7 +65,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="example"></a>Esempio  
  Questo esempio illustra come impostare l'evento di campionamento di profilatura per gli errori di pagina e imposta l'intervallo di campionamento su 20 errori di pagina.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  

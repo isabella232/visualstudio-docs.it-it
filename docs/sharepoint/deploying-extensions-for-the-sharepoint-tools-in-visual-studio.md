@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ed6b037d04e867b2d94a28fef5ecb6760e39dc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio
   Per distribuire un'estensione degli strumenti di SharePoint, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto extension (VSIX) che contiene l'assembly dell'estensione e qualsiasi altro file che si desiderano distribuire con l'estensione. Un pacchetto VSIX è un file compresso che è conforme allo standard Open Packaging Conventions (OPC). Pacchetti VSIX hanno l'estensione VSIX.  
@@ -133,13 +133,13 @@ ms.lasthandoff: 04/16/2018
   
 8.  Individuare la seguente `VSTemplate` elemento nel file di progetto.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
     ```  
   
 9. Sostituire l'elemento con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="YourTemplateName.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato il contenuto di un file Extension. vsixmanifest per un'estensione degli strumenti di SharePoint. L'estensione è implementata in un assembly denominato Contoso.ProjectExtension.dll. L'estensione include un assembly di comandi di SharePoint è denominato Contoso.ExtensionCommands.dll e un modello di elemento in una cartella denominata **ItemTemplates** nel pacchetto VSIX. In questo esempio si presuppone che entrambi gli assembly nella stessa cartella del file Extension. vsixmanifest nel pacchetto VSIX.  
   
-```  
+```xml 
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">  
   <Metadata>  
     <Identity Id="CustomActionProjectItem.Microsoft.b99efe4d-cef3-4afd-b9af-034ca0c52743" Version="1.0" Language="en-US" Publisher="Microsoft" />  

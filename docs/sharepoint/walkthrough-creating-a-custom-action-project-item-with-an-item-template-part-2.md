@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: creazione di un elemento di progetto Azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di elemento in Visual Studio, è inoltre possibile fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per aggiungere una nuova istanza dell'elemento di progetto a un progetto. Per inizializzare l'elemento del progetto, è possono utilizzare le informazioni raccolte.  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Se stai sviluppando un progetto Visual Basic, rimuovere il `ItemTemplateWizard` dello spazio dei nomi dal `WizardWindow` nel nome della classe di `x:Class` attributo del `Window` elemento. Questo elemento è nella prima riga del codice XAML. Al termine, la prima riga deve assomigliare al codice seguente:  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  In una finestra del prompt dei comandi di Visual Studio, eseguire il seguente comando, sostituendo *PathToWizardAssembly* con il percorso completo per l'assembly compilato ItemTemplateWizard. dll per il progetto ItemTemplateWizard nello sviluppo computer.  
   
-    ```  
+    ```xml  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Verso la fine del file, aggiungere il seguente `WizardExtension` elemento tra le `</TemplateContent>` e `</VSTemplate>` tag. Sostituire il *YourToken* valore il `PublicKeyToken` attributo con il token di chiave pubblica ottenuto nella procedura precedente.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=YourToken</Assembly>  
       <FullClassName>ItemTemplateWizard.CustomActionWizard</FullClassName>  
@@ -221,7 +221,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Nel progetto ItemTemplate, sostituire il contenuto del file Elements.xml con il seguente codice XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="$IdValue$"  

@@ -3,21 +3,21 @@ title: Vantaggio Supporto prioritario nella sottoscrizione di Visual Studio | Mi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: Informazioni sul vantaggio Supporto prioritario incluso nelle sottoscrizioni di Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Supporto prioritario nelle sottoscrizioni di Visual Studio
 
-Il vantaggio Supporto prioritario consente di accedere a un'ampia gamma di forum della community di supporto in cui è possibile effettuare ricerche nei post esistenti o porre nuove domande.  Se la domanda non ottiene risposta dalla community entro due giorni, il team di supporto Microsoft fornirà una risposta.  
+Il vantaggio Supporto prioritario consente di accedere a un'ampia gamma di forum della community di supporto in cui è possibile effettuare ricerche nei post esistenti o porre nuove domande.  Se la community non risponde alla domanda entro due giorni, il team di supporto Microsoft invierà una risposta.  
 
 I sottoscrittori con sottoscrizioni di Visual Studio selezionate hanno diritto a ricevere supporto prioritario tramite numerosi forum dedicati a svariati argomenti.
 

@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>Procedura: Implementare un'interfaccia (Progettazione classi)
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Procedura: Implementare un'interfaccia in Progettazione classi
 
 In **Progettazione classi** è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia. **Progettazione classi** genera un'implementazione dell'interfaccia e visualizza la relazione tra l'interfaccia e la classe come relazione di ereditarietà. È possibile implementare un'interfaccia tracciando una linea di ereditarietà tra l'interfaccia e la classe oppure trascinando l'interfaccia dalla visualizzazione classi.
 
@@ -34,7 +34,7 @@ In **Progettazione classi** è possibile implementare un'interfaccia nel diagram
 
      Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia.
 
- Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
+Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Per implementare un'interfaccia dalla finestra Visualizzazione classi
 

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 372e92c2edb9110d6fdde45cb5381c7b420b4b03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procedura: Aggiungere commenti a diagrammi classi (Progettazione classi)
+# <a name="how-to-add-comments-to-class-diagrams"></a>Procedura: Aggiungere commenti a diagrammi classi
 
 È possibile usare le forme Commenti per annotare i diagrammi classi. Una forma Commenti ha una sola proprietà, **Testo**, in cui è possibile digitare il testo. Le forme Commenti esistono solo sulla superficie del diagramma e non nel codice.
 

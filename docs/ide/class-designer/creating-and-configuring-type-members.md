@@ -31,13 +31,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="creating-and-configuring-type-members-class-designer"></a>Creazione e configurazione di membri di tipi (Progettazione classi)
+# <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
+
 È possibile aggiungere questi membri ai tipi in un diagramma classi e configurarli nella finestra **Dettagli classe**:
 
 |**Type**|**Membri che può contenere**|
@@ -57,30 +58,26 @@ ms.lasthandoff: 05/04/2018
 
 |Attività|Contenuto di supporto|
 |----------|------------------------|
-|**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|-   [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|-   [Creare membri](creating-and-configuring-type-members.md#create-members)<br />-   [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|- [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Aprire la finestra Dettagli classe
-Per impostazione predefinita, la finestra [Dettagli classe](how-to-add-class-diagrams-to-projects.md) viene visualizzata automaticamente quando si apre un nuovo diagramma classi (vedere **Procedura: Aggiungere diagrammi classi ai progetti**). È anche possibile aprire esplicitamente la finestra **Dettagli classe** seguendo le istruzioni riportate di seguito.
 
-#### <a name="to-open-the-class-details-window"></a>Per aprire la finestra Dettagli classe
+Per impostazione predefinita, la finestra **Dettagli classe** viene visualizzata automaticamente quando si apre un nuovo diagramma classi. Vedere [Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md). È anche possibile aprire la finestra **Dettagli classe** nei modi seguenti:
 
-1.  Fare clic con il pulsante destro del mouse su qualsiasi classe nel diagramma per visualizzare un menu di scelta rapida.
+- Fare clic con il pulsante destro del mouse su qualsiasi classe nel diagramma per visualizzare un menu di scelta rapida e quindi scegliere **Dettagli classe**.
 
-2.  Fare clic su **Dettagli classe** nel menu di scelta rapida.
-
- - oppure -
-
--   Scegliere **Altre finestre** dal menu Visualizza e fare clic su **Dettagli classe**.
+- Scegliere **Visualizza** > **Altre finestre** > **Dettagli classe** dalla barra dei menu.
 
 ## <a name="create-members"></a>Creare membri
+
 Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
--   **Progettazione classi**
+- **Progettazione classi**
 
--   Barra degli strumenti della finestra **Dettagli classe**
+- Barra degli strumenti della finestra **Dettagli classe**
 
--   Finestra **Dettagli classe**
+- Finestra **Dettagli classe**
 
 > [!NOTE]
 > È inoltre possibile creare costruttori e distruttori attenendosi alle procedure descritte in questa sezione. Tenere presente che costruttori e distruttori sono tipi speciali di metodi e, in quanto tali, vengono visualizzatili nel raggruppamento **Metodi** nelle forme del diagramma classi e nella sezione **Metodi** della griglia della finestra **Dettagli classe**.
@@ -88,7 +85,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 > [!NOTE]
 > L'unica entità che è possibile aggiungere a un delegato è il parametro. Si noti che la procedura "Per creare un membro usando la barra degli strumenti della finestra **Dettagli classe**" non è valida per questa operazione.
 
-#### <a name="to-create-a-member-using-class-designer"></a>Per creare un membro utilizzando Progettazione classi
+### <a name="create-a-member-using-class-designer"></a>Creare un membro usando Progettazione classi
 
 1.  Fare clic con il pulsante destro del mouse sul tipo a cui si vuole aggiungere un membro, scegliere **Aggiungi** e scegliere il tipo di membro da aggiungere.
 
@@ -96,7 +93,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
 2.  Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
 
-#### <a name="to-create-a-member-using-the-class-details-window-toolbar"></a>Per creare un membro usando la barra degli strumenti della finestra Dettagli classe
+### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Creare un membro usando la barra degli strumenti della finestra Dettagli classe
 
 1.  Sulla superficie del diagramma selezionare il tipo a cui aggiungere un membro.
 
@@ -112,7 +109,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
 4.  Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
 
-#### <a name="to-create-a-member-using-the-class-details-window"></a>Per creare un membro usando la finestra Dettagli classe
+### <a name="create-a-member-using-the-class-details-window"></a>Creare un membro usando la finestra Dettagli classe
 
 1.  Sulla superficie del diagramma selezionare il tipo a cui aggiungere un membro.
 
@@ -129,6 +126,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
      **Nota:** per creare i membri è anche possibile usare i tasti di scelta rapida. Per altre informazioni, vedere [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modificare i membri dei tipi
+
 Utilizzando Progettazione classi è possibile modificare i membri dei tipi visualizzati nel diagramma. È possibile modificare i membri di qualsiasi tipo visualizzato in un diagramma classi che non sia di sola lettura. È possibile modificare i membri dei tipi usando la modifica sul posto nell'area di progettazione, la finestra Proprietà e la finestra **Dettagli classe**.
 
 Tutti i membri visualizzati nella finestra **Dettagli classe** rappresentano i membri dei tipi presenti nel diagramma classi. Sono disponibili quattro tipi di membri: metodi, proprietà, campi ed eventi.
@@ -137,41 +135,41 @@ Tutte le righe dei membri sono contraddistinte da intestazioni che raggruppano i
 
 Ciascuna riga di membri visualizza i seguenti elementi:
 
--   **Icona del membro**
+- **Icona del membro**
 
      Ciascun tipo di membro è rappresentato dalla rispettiva icona. Posizionare il cursore del mouse sull'icona del membro per visualizzarne la firma. Fare clic sull'icona del membro o sullo spazio vuoto a sinistra per selezionare la riga.
 
--   **Nome del membro**
+- **Nome del membro**
 
      Nella colonna **Nome** della riga di un membro è visualizzato il nome del membro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per modificare il nome di qualsiasi membro con autorizzazioni di lettura-scrittura.
 
      Se la colonna **Nome** è troppo stretta per visualizzare l'intero nome, è possibile posizionare il cursore del mouse sul nome del membro per visualizzarlo.
 
--   **Tipo di membro**
+- **Tipo di membro**
 
      Nella cella **Tipo di membro** viene usata la tecnologia Intellisense, che consente di scegliere da un elenco di tutti i tipi disponibili nel progetto corrente o nei progetti a cui viene fatto riferimento.
 
--   **Modificatore del membro**
+- **Modificatore del membro**
 
      È possibile modificare il modificatore di visibilità di un membro in `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) o `Default`.
 
--   **\<aggiungi membro>**
+- **\<aggiungi membro>**
 
      L'ultima riga della finestra **Dettagli classe** contiene il testo **\<Aggiungi membro>** nella cella **Nome**. Facendo clic su questa cella, è possibile creare un nuovo membro. Per altre informazioni, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
 
--   **Proprietà dei membri nella finestra Proprietà**
+- **Proprietà dei membri nella finestra Proprietà**
 
      Nella finestra **Dettagli classe** viene visualizzato un sottoinsieme delle proprietà dei membri riportate nella finestra Proprietà. La modifica di una proprietà in un percorso aggiorna il valore della proprietà a livello globale. Ciò include la visualizzazione del valore nell'altro percorso.
 
--   **Riepilogo**
+- **Riepilogo**
 
      Nella cella **Riepilogo** è contenuto un riepilogo delle informazioni relative al membro. Fare clic sui puntini di sospensione nella cella **Riepilogo** per visualizzare o modificare le informazioni relative a **Riepilogo**, **Tipo restituito** e **Note** per il membro.
 
--   **Nascondi**
+- **Nascondi**
 
      Se la casella di controllo **Nascondi** è selezionata, il membro non verrà visualizzato nel tipo.
 
-#### <a name="to-modify-a-type-member"></a>Per modificare un membro di un tipo
+### <a name="to-modify-a-type-member"></a>Per modificare un membro di un tipo
 
 1.  Selezionare un tipo utilizzando Progettazione classi.
 
@@ -180,46 +178,43 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 3.  Modificare i valori nei campi della griglia della finestra **Dettagli classe**. Dopo ogni modifica premere INVIO oppure spostare lo stato attivo dal campo modificato, ad esempio premendo TAB. Il codice verrà immediatamente aggiornato in base alle modifiche apportate.
 
     > [!NOTE]
-    >  Se si desidera modificare solo il nome di un membro, è possibile farlo mediante la modifica sul posto.
+    > Se si desidera modificare solo il nome di un membro, è possibile farlo mediante la modifica sul posto.
 
 ## <a name="add-parameters-to-methods"></a>Aggiungere parametri a metodi
+
 Usare la finestra **Dettagli classe** per aggiungere parametri ai metodi. I parametri possono essere configurati per essere obbligatori o facoltativi. Se si specifica un valore per la proprietà **Valore predefinito facoltativo** di un parametro, la finestra di progettazione genererà il codice come parametro facoltativo.
 
 Le righe dei parametri contengono i seguenti elementi:
 
--   **Name**
+- **Name**
 
      La colonna **Nome** di una riga di parametri visualizza il nome del parametro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per cambiare il nome di qualsiasi parametro con autorizzazioni di lettura-scrittura.
 
      Se la colonna **Nome** è troppo stretta per visualizzare l'intero nome, è possibile posizionare il cursore del mouse sul nome del parametro per visualizzarlo.
 
--   **Type**
+- **Type**
 
      Nella cella **Tipo parametro** viene usata la tecnologia IntelliSense, che consente di scegliere da un elenco di tutti i tipi disponibili nel progetto corrente o nei progetti a cui viene fatto riferimento.
 
--   **Modificatore**
+- **Modificatore**
 
      La cella **Modificatore** di una riga di parametro accetta e visualizza il nuovo modificatore del parametro. Per immettere un nuovo modificatore di parametro, nell'elenco a discesa selezionare **Nessuno**, **ref**, **out** o **params** in C# e **ByVal**, **ByRef** o **ParamArray** in VB.
 
--   **Riepilogo**
+- **Riepilogo**
 
      La cella **Riepilogo** di una riga di parametro consente di immettere i commenti di codice visualizzati in IntelliSense quando si immette il parametro nell'editor di codice.
 
--   **\<aggiungi parametro>**
+- **\<aggiungi parametro>**
 
      L'ultima riga di parametri di un membro contiene la cella il testo **<add parameter>** nella cella **Nome**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-**Proprietà dei parametri nella finestra Proprietà**
-
-Nella finestra Proprietà vengono visualizzate le stesse proprietà dei parametri riportate nella finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
+Nella finestra **Proprietà** vengono visualizzate le stesse proprietà dei parametri riportate nella finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
 
 > [!NOTE]
 > Per aggiungere un parametro a un delegato, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).
 
-
 > [!NOTE]
 > Anche se è un metodo, un distruttore non può avere parametri.
-
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Per aggiungere un parametro a un metodo
 
@@ -254,45 +249,47 @@ Nella finestra Proprietà vengono visualizzate le stesse proprietà dei parametr
 4.  Nella finestra Proprietà digitare un valore per la proprietà **Valore predefinito facoltativo**. L'impostazione della proprietà Valore predefinito facoltativo di un parametro lo rende facoltativo.
 
     > [!NOTE]
-    >  I parametri facoltativi devono essere gli ultimi parametri presenti nell'elenco di parametri.
+    > I parametri facoltativi devono essere gli ultimi parametri presenti nell'elenco di parametri.
 
 ## <a name="class-details-usage-notes"></a>Note sull'uso di Dettagli classe
+
 Leggere i suggerimenti riportati di seguito relativi all'uso della finestra **Dettagli classe**.
 
-**Celle modificabili e non modificabili**
+### <a name="editable-and-non-editable-cells"></a>Celle modificabili e non modificabili
 
 Tutte le celle della finestra **Dettagli classe** sono modificabili, con alcune eccezioni:
 
--   L'intero tipo è di sola lettura se, ad esempio, si trova in un assembly a cui viene fatto riferimento. Se si seleziona la forma in Progettazione classi, i relativi dettagli vengono visualizzati in sola lettura nella finestra **Dettagli classe**.
+- L'intero tipo è di sola lettura se, ad esempio, si trova in un assembly a cui viene fatto riferimento. Se si seleziona la forma in Progettazione classi, i relativi dettagli vengono visualizzati in sola lettura nella finestra **Dettagli classe**.
 
--   Per gli indicizzatori, il nome è di sola lettura mentre gli altri elementi (tipo, modificatore, riepilogo) sono modificabili.
+- Per gli indicizzatori, il nome è di sola lettura mentre gli altri elementi (tipo, modificatore, riepilogo) sono modificabili.
 
--   Per tutti i generics sono presenti parametri di sola lettura nella finestra **Dettagli classe**. Per cambiare tali parametri, è necessario modificare il relativo codice sorgente.
+- Per tutti i generics sono presenti parametri di sola lettura nella finestra **Dettagli classe**. Per cambiare tali parametri, è necessario modificare il relativo codice sorgente.
 
--   Il nome del parametro di tipo definito su un tipo generico è di sola lettura.
+- Il nome del parametro di tipo definito su un tipo generico è di sola lettura.
 
--   Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo viene visualizzato in sola lettura nella finestra **Dettagli classe**.
+- Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo viene visualizzato in sola lettura nella finestra **Dettagli classe**.
 
-**Finestra Dettagli classe e codice sorgente**
+### <a name="the-class-details-window-and-source-code"></a>Finestra Dettagli classe e codice sorgente
 
--   Per visualizzare il codice sorgente, fare clic con il pulsante destro del mouse su una forma nella finestra **Dettagli classe** (o in Progettazione classi) e scegliere Visualizza codice. Il file del codice sorgente verrà aperto e il cursore verrà posizionato sull'elemento selezionato.
+- Per visualizzare il codice sorgente, fare clic con il pulsante destro del mouse su una forma nella finestra **Dettagli classe** (o in Progettazione classi) e scegliere Visualizza codice. Il file del codice sorgente verrà aperto e il cursore verrà posizionato sull'elemento selezionato.
 
--   La visualizzazione di informazioni sulla firma in Progettazione classi e nella finestra **Dettagli classe** verrà immediatamente aggiornata in base alla modifica del codice sorgente. Se la finestra **Dettagli classe** è chiusa, le nuove informazioni saranno visibili alla successiva apertura.
+- La visualizzazione di informazioni sulla firma in Progettazione classi e nella finestra **Dettagli classe** verrà immediatamente aggiornata in base alla modifica del codice sorgente. Se la finestra **Dettagli classe** è chiusa, le nuove informazioni saranno visibili alla successiva apertura.
 
--   Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo viene visualizzato in sola lettura nella finestra **Dettagli classe**.
+- Se il codice di un tipo è interrotto (non analizzabile), il contenuto del tipo viene visualizzato in sola lettura nella finestra **Dettagli classe**.
 
-**Funzionalità Appunti nella finestra Dettagli classe**
+### <a name="clipboard-functionality-in-the-class-details-window"></a>Funzionalità Appunti nella finestra Dettagli classe
 
- È possibile copiare o tagliare campi o righe dalla finestra **Dettagli classe** e incollarli in un altro tipo. Le righe possono essere tagliate solo se non sono di sola lettura. Quando una riga viene incollata, la finestra **Dettagli classe** assegna un nuovo nome (derivato dal nome della riga copiata) per evitare conflitti.
+È possibile copiare o tagliare campi o righe dalla finestra **Dettagli classe** e incollarli in un altro tipo. Le righe possono essere tagliate solo se non sono di sola lettura. Quando una riga viene incollata, la finestra **Dettagli classe** assegna un nuovo nome (derivato dal nome della riga copiata) per evitare conflitti.
 
 ## <a name="display-of-read-only-information"></a>Visualizzare le informazioni di sola lettura
+
 In Progettazione classi e nella finestra **Dettagli classe** è possibile visualizzare i tipi (e i membri dei tipi) per i seguenti elementi:
 
--   un progetto contenente un diagramma classi;
+- un progetto contenente un diagramma classi;
 
--   un progetto a cui viene fatto riferimento da un progetto contenente un diagramma classi;
+- un progetto a cui viene fatto riferimento da un progetto contenente un diagramma classi;
 
--   un assembly a cui viene fatto riferimento da un progetto contenente un diagramma classi.
+- un assembly a cui viene fatto riferimento da un progetto contenente un diagramma classi.
 
 Negli ultimi due casi, l'entità a cui viene fatto riferimento (un tipo o un membro) è in sola lettura nel diagramma classi che la rappresenta.
 

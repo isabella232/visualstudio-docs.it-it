@@ -9,11 +9,11 @@ description: Informazioni sulla sottoscrizione del training Pluralsight inclusa 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -82,7 +82,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 | Visual Studio Enterprise - NFR<sup>1</sup> | Programma                                       | Non disponibile                                  |N/D|
 <sup>1</sup>*include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup> *Dopo la scadenza delle sottoscrizioni Pluralsight, l'utente potrebbe essere idoneo a ricevere 12 mesi di accesso a 50 corsi Pluralsight selezionati in una delle tre aree di studio.  Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato. Vedere le domande frequenti qui di seguito per altri dettagli.*
+<sup>2</sup>  *Il vantaggio Pluralsight è monouso, associato alla persona.  Dopo che il sottoscrittore ha usato il vantaggio, non viene reimpostato. Vedere le domande frequenti qui di seguito per altri dettagli.  Dopo la scadenza delle sottoscrizioni Pluralsight, l'utente potrebbe essere idoneo a ricevere 12 mesi di accesso a 50 corsi Pluralsight selezionati in una delle tre aree di studio.*
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
 

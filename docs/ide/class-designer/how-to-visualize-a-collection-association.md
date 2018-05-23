@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Procedura: Visualizzare un'associazione di raccolte (Progettazione classi)
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procedura: Visualizzare un'associazione di raccolte in Progettazione classi
 
 Le proprietà e i campi che sono raccolte di altri tipi possono essere visualizzati nel diagramma classi come associazione di raccolte. A differenza di un'associazione normale che visualizza un campo o una proprietà come linea che collega la classe proprietaria al tipo di campo, un'associazione di raccolte viene visualizzata come una linea che collega la classe proprietaria al tipo raccolto.
 
@@ -35,7 +35,7 @@ Le proprietà e i campi che sono raccolte di altri tipi possono essere visualizz
 
 3.  Nella classe fare clic con il pulsante destro del mouse sul campo o proprietà e scegliere **Mostra come associazione di raccolte**.
 
-     La proprietà o il campo viene visualizzato come una linea di associazione che si collega al tipo raccolto.
+La proprietà o il campo viene visualizzato come una linea di associazione che si collega al tipo raccolto.
 
 ## <a name="see-also"></a>Vedere anche
 
