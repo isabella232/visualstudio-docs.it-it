@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili strumenti che consentono di creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti e voci di elenco in un sito Web di SharePoint. Gli elementi forniti prevedono una finestra di progettazione, un set di controlli dell'attività e i riferimenti all'assembly necessari. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include anche il **Personalizzazione guidata SharePoint**, per creare e configurare i flussi di lavoro.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Flussi di lavoro in SharePoint  
  Quando si aggiunge un flusso di lavoro a una raccolta di SharePoint o un elenco, si applica un processo di business in tutti gli elementi nell'elenco o raccolta. Un flusso di lavoro vengono descritte le azioni che il sistema o gli utenti devono eseguire su ogni elemento, ad esempio l'invio dell'elemento da modificare e quindi esaminato. Queste azioni, note come *attività*, sono i blocchi predefiniti del flusso di lavoro.  
   
- È possibile creare flussi di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirli a un sito Web di SharePoint. Dopo aver distribuito un flusso di lavoro in SharePoint, è associarlo a una libreria o elenco. Può quindi essere avviato automaticamente, da un processo o manualmente dall'utente. Per ulteriori informazioni sull'operazione di flusso di lavoro, vedere [utilizzando i flussi di lavoro per gestire i processi](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ È possibile creare flussi di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirli a un sito Web di SharePoint. Dopo aver distribuito un flusso di lavoro in SharePoint, è associarlo a una libreria o elenco. Può quindi essere avviato automaticamente, da un processo o manualmente dall'utente. Per ulteriori informazioni sull'operazione di flusso di lavoro, vedere [i flussi di lavoro di sviluppo di SharePoint con Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Creazione di flussi di lavoro SharePoint personalizzato  
  Due progetti di flusso di lavoro di SharePoint sono disponibili in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **flusso di lavoro sequenziale** e **flusso di lavoro macchina**.  

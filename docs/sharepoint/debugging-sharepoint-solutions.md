@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Debug di soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi viene aperta un'istanza del sito di SharePoint nel Web browser. Le sezioni seguenti illustrano come eseguire il debug di applicazioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Quando si esegue il debug di progetti di flusso di lavoro, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il modello di flusso di lavoro (a seconda del tipo) a una raccolta o a un elenco. È quindi possibile avviare il modello di flusso di lavoro manualmente o mediante l'aggiunta o aggiornamento di un elemento. È quindi possibile utilizzare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per eseguire il debug del flusso di lavoro.  
   
 > [!NOTE]  
->  Se si aggiungono riferimenti ad altri assembly, assicurarsi che tali assembly vengono installati nella global assembly cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). In caso contrario, la soluzione del flusso di lavoro avrà esito negativo. Per informazioni su come installare gli assembly, vedere [avviare manualmente un flusso di lavoro su un documento o un elemento](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Se si aggiungono riferimenti ad altri assembly, assicurarsi che tali assembly vengono installati nella global assembly cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). In caso contrario, la soluzione del flusso di lavoro avrà esito negativo. Per informazioni su come installare gli assembly, vedere [avviare manualmente un flusso di lavoro su un documento o un elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Tuttavia, il processo di distribuzione non viene avviato il flusso di lavoro. È necessario avviare il flusso di lavoro dal sito Web di SharePoint. È anche possibile avviare il flusso di lavoro tramite un'applicazione client, ad esempio Microsoft Office Word 2010 o tramite codice lato server separato. Utilizzare uno degli approcci specificati nella **Personalizzazione guidata SharePoint**.  
   
- Ad esempio, se si specifica che il flusso di lavoro possa essere avviato manualmente, è possibile avviare il flusso di lavoro direttamente dall'elemento della raccolta o un elenco. Per ulteriori informazioni su come avviare un flusso di lavoro manualmente, vedere [avviare manualmente un flusso di lavoro su un elemento del documento](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Ad esempio, se si specifica che il flusso di lavoro possa essere avviato manualmente, è possibile avviare il flusso di lavoro direttamente dall'elemento della raccolta o un elenco. Per ulteriori informazioni su come avviare un flusso di lavoro manualmente, vedere [avviare manualmente un flusso di lavoro su un elemento del documento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Ricevitori di eventi di debug  
  Per impostazione predefinita, quando si esegue un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] applicazione SharePoint, le funzionalità vengono attivate automaticamente per l'utente nel server SharePoint. Tuttavia, questa operazione causa problemi durante il debug di ricevitori di eventi perché quando una funzionalità viene attivata da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], viene eseguito in un processo diverso dal debugger. Ciò significa che alcune funzionalità di debug, ad esempio punti di interruzione, non funzionerà correttamente.  
