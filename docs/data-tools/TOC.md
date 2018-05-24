@@ -1,5 +1,5 @@
 # Panoramica
-## [Accesso ai dati in Visual Studio](accessing-data-in-visual-studio.md)
+## [Accedere ai dati in Visual Studio](accessing-data-in-visual-studio.md)
 # Esercitazioni
 ## [Creare un'app dati semplice usando ADO.NET](create-a-simple-data-application-by-using-adonet.md)
 ## [Creare un'app dati semplice usando WPF ed Entity Framework](create-a-simple-data-application-with-wpf-and-entity-framework-6.md)
@@ -94,7 +94,7 @@
 ### [Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 ## [Aggiornare i file con estensione MDF](upgrade-dot-mdf-files.md)
 ## [Risolvere i problemi relativi agli errori di accesso ai dati](additional-resources-for-troubleshooting-data-access-errors.md)
-# Riferimento
+# Riferimenti
 ## Object Relational Designer (LINQ to SQL)
 ### [Metodi DataContext](datacontext-methods-o-r-designer.md)
 ### [Ereditarietà di una classe dati](data-class-inheritance-o-r-designer.md)
