@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 
@@ -30,7 +30,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
 3.  Nel riquadro dell'editor e scegliere **Inserisci frammento di codice**.
 
-4.  Selezionare **frammento** dall'elenco e premere INVIO.
+4.  Selezionare **frammento** nell'elenco e premere **invio**.
 
 5.  Se necessario, apportare modifiche al nuovo frammento.
 
@@ -40,13 +40,13 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
 7.  Immettere il nome per il nuovo frammento di codice e selezionare **file frammento** dal **Salva come** finestra di riepilogo a discesa.
 
-8.  Utilizzare il **salvare in** elenco a discesa per modificare il percorso del file alla cartella Documenti\Visual Studio 2005 Snippets\XML\My XML Snippets e quindi premere **salvare**.
+8.  Usare la **salvare nella** elenco a discesa per modificare il percorso del file del *Documenti\Visual Studio 2005\Code Snippets\XML\My XML Snippets* cartella e quindi premere **salvare**.
 
-## <a name="snippet-description"></a>Descrizione del frammento di codice
+## <a name="snippet-description"></a>Descrizione di frammento di codice
 
- Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per ulteriori informazioni sugli elementi dello schema utilizzato per i frammenti di codice XML, vedere [riferimenti allo Schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).
+ Contenuto della sezione vengono descritti alcuni elementi chiave del frammento di codice standard. Per ulteriori informazioni sugli elementi di schema usati per i frammenti di codice XML, vedere [riferimenti allo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>Elemento SnippetType
+### <a name="snippettype-element"></a>SnippetType, elemento
 
  L'editor supporta due tipi di frammento di codice:
 
@@ -59,7 +59,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
  Il `Expansion` tipo determina se il frammento di codice viene visualizzato quando si richiama il **Inserisci frammento di codice** comando. Il `SurroundsWith` tipo determina se il frammento di codice viene visualizzato quando si richiama il **Racchiudi** comando.
 
-### <a name="code-element"></a>Elemento Code
+### <a name="code-element"></a>Elemento del codice
 
  L'elemento `Code` definisce il testo XML che verrà inserito quando viene richiamato il frammento di codice.
 
@@ -83,7 +83,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
 -   $selected$ è una variabile predefinita e rappresenta il testo che era stato selezionato nell'editor XML prima di richiamare il frammento di codice. La posizione di questa variabile determina la posizione del testo selezionato nel frammento di codice che racchiude la selezione.
 
--   $end$ è una variabile predefinita. Quando l'utente preme INVIO per terminare la modifica dei campi del frammento di codice, la variabile determina la posizione in cui viene spostato l'accento circonflesso (^).
+-   $end$ è una variabile predefinita. Quando l'utente preme **invio** per terminare la modifica di campi del frammento di codice, questa variabile determina dove viene spostato l'accento circonflesso (^).
 
  L'elemento `Code` consente l'inserimento del testo XML seguente:
 
@@ -95,7 +95,7 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
  Il valore dell'elemento nome viene contrassegnato come area modificabile.
 
-### <a name="literal-element"></a>Elemento Literal
+### <a name="literal-element"></a>Literal, elemento
 
  L'elemento `Literal` viene usato per identificare il testo di sostituzione che è possibile personalizzare dopo che è stato inserito nel file. Ad esempio, le stringhe letterali, i valori numerici e alcuni nomi di variabili possono essere dichiarati come letterali. È possibile definire un qualsiasi numero di valori formali nel frammento di codice XML e farvi riferimento più volte dall'interno del frammento. Di seguito viene riportato un esempio di elemento `Literal` che definisce una variabile $name$ il cui valore predefinito è "name."
 
@@ -119,6 +119,6 @@ L'editor XML può essere usato per creare nuovi frammenti di codice XML. L'edito
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti di codice XMLs](../xml-tools/xml-snippets.md)
-- [Procedura: Usare frammenti XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Procedura: Generare un frammento XML da XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Frammenti di codice XML](../xml-tools/xml-snippets.md)
+- [Procedura: utilizzare XML frammenti di codice](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedura: generare un frammento XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -1,7 +1,7 @@
 ---
 title: Eseguire il Debug remoto ASP.NET in un Computer remoto con IIS | Documenti Microsoft
 ms.custom: remotedebugging
-ms.date: 07/26/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
@@ -10,18 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: dddbe20c36aac6bc1c21cc2e29e59231c5b8feaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il Debug remoto ASP.NET in un Computer remoto con IIS
 Per eseguire il debug di un'applicazione ASP.NET che è stata distribuita a IIS, installare e quindi collegare all'App in esecuzione da Visual Studio eseguire remote tools sul computer in cui è distribuita l'app.
 
 ![I componenti del debugger remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Questa guida viene illustrato come impostare e configurare un'applicazione di Visual Studio 2017 ASP.NET MVC 4.5.2, distribuirlo in IIS e collegare il debugger remoto da Visual Studio. Eseguire il debug remoto ASP.NET Core, vedere [remoto il Debug di ASP.NET Core in un Computer IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Per il servizio App di Azure, è possibile distribuire facilmente ed eseguire il debug in un'istanza preconfigurata di IIS utilizzando la [Debugger Snapshot](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 richiesto) o da [per collegare il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
+Questa guida viene illustrato come impostare e configurare un'applicazione di Visual Studio 2017 ASP.NET MVC 4.5.2, distribuirlo in IIS e collegare il debugger remoto da Visual Studio.
+
+> [!NOTE]
+> In remoto il debug di ASP.NET Core invece, vedere [remoto il Debug di ASP.NET Core in un Computer con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Per il servizio App di Azure, è possibile distribuire facilmente ed eseguire il debug in un'istanza preconfigurata di IIS utilizzando la [Debugger Snapshot](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 richiesto) o da [per collegare il debugger da Esplora Server](../debugger/remote-debugging-azure.md).
 
 Queste procedure sono state testate su queste configurazioni del server:
 * Windows Server 2012 R2 e IIS 8 (per Windows Server 2008 R2, i passaggi di server sono diversi)
@@ -32,6 +35,14 @@ Il debugger remoto è supportato in Windows Server a partire da Windows Server 2
 
 > [!NOTE]
 > Il debug tra due computer connessi tramite un proxy non è supportato. Il debug tramite una connessione di larghezza di banda ridotta, ad esempio di connessione remota a Internet, ad alta latenza o tramite Internet tra paesi non è consigliato e potrebbe non funzionare oppure essere inaccettabile.
+
+## <a name="app-already-running-in-iis"></a>App già in esecuzione in IIS?
+
+In questo articolo include i passaggi per la configurazione di una configurazione di base di IIS in Windows server e distribuzione dell'app da Visual Studio. Questi passaggi sono, per assicurarsi che il server ha necessari componenti installati, che l'app può essere eseguito correttamente e che si è pronti per eseguire il debug remoto.
+
+* Se l'app è in esecuzione in IIS e si desidera scaricare il debugger remoto, avviare il debug, visitare [scaricare e installare remote tools in Windows Server](#BKMK_msvsmon).
+
+* Se si desidera visualizzare la Guida per assicurarsi che l'app è configurato, distribuito e in esecuzione correttamente in IIS in modo che è possibile eseguire il debug, seguono tutti i passaggi descritti in questo argomento.
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Creare ASP.NET 4.5.2 applicazione nel computer di Visual Studio
   
@@ -45,17 +56,14 @@ Il debugger remoto è supportato in Windows Server a partire da Windows Server 2
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Aggiornare le impostazioni di sicurezza del browser in Windows Server
 
-A seconda delle impostazioni di sicurezza, è possibile risparmiare tempo aggiungere i seguenti siti attendibili del browser in modo che è possibile scaricare facilmente il software descritto in questa esercitazione. Potrebbe essere necessario accedere a questi siti:
+Se sicurezza avanzata è abilitata in Internet Explorer (è abilitata per impostazione predefinita), potrebbe essere necessario aggiungere alcuni domini come siti attendibili per consentire il download alcuni dei componenti server web. Aggiungere siti attendibili, passare a **Opzioni Internet > sicurezza > siti attendibili > siti**. Aggiungere i seguenti domini.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
 - IIS.NET
 
-Se si utilizza Internet Explorer, è possibile aggiungere siti attendibili, passare a **Opzioni Internet > sicurezza > siti attendibili > siti**. Questi passaggi sono diversi per gli altri browser. (Se è necessario scaricare una versione precedente del debugger remoto da my.visualstudio.com, alcuni siti attendibili aggiuntivi sono obbligatorio per l'accesso).
-
-Quando si scarica il software, è possibile ricevere le richieste per concedere autorizzazioni per caricare vari script del sito web e risorse. Nella maggior parte dei casi, le risorse aggiuntive seguenti non sono necessari per installare il software.
+Quando si scarica il software, è possibile ricevere le richieste per concedere autorizzazioni per caricare vari script del sito web e risorse. Alcune di queste risorse non sono necessarie, ma per semplificare il processo, fare clic su **Aggiungi** quando richiesto.
 
 ## <a name="BKMK_deploy_asp_net"></a> Installare ASP.NET 4.5 in Windows Server
 
@@ -74,17 +82,47 @@ Se si desiderano informazioni più dettagliate per installare ASP.NET in IIS, ve
 
 2. Riavviare il sistema (o eseguire **net stop stato /y** seguito da **net start w3svc** da un prompt dei comandi per visualizzare una modifica al percorso di sistema).
 
-## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Facoltativo) Installare Web Deploy 3.6 per i server in Windows Server di Hosting
+## <a name="choose-a-deployment-option"></a>Scegliere un'opzione di distribuzione
 
-In alcuni scenari, può risultare più veloce per importare le impostazioni di pubblicazione in Visual Studio anziché configurare manualmente le opzioni di distribuzione. Se si preferisce importare impostazioni anziché configurare il profilo di pubblicazione in Visual Studio di pubblicazione, vedere [importazione delle impostazioni di pubblicazione e distribuire a IIS](../deployment/tutorial-import-publish-settings-iis.md). In caso contrario, rimanere in questo argomento e continuare la lettura. Se si completa l'articolo sull'importazione delle impostazioni di pubblicazione e distribuire l'app correttamente, quindi tornare a questo argomento e avviare nella sezione sul [download di remote tools](#BKMK_msvsmon).
+Se è necessario consentono di distribuire l'app a IIS, prendere in considerazione queste opzioni:
 
-## <a name="BKMK_install_webdeploy"></a> (Facoltativo) 3.6 in Windows Server di distribuzione Web di installazione
+* Distribuire mediante la creazione di un file di impostazioni di pubblicazione in IIS e importazione delle impostazioni di Visual Studio. In alcuni scenari, questo è un modo rapido per distribuire l'app. Quando si crea il file di impostazioni di pubblicazione, le autorizzazioni vengono impostate automaticamente in IIS.
 
-[!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
+* Distribuire la pubblicazione in una cartella locale e copiando l'output da un metodo preferito in una cartella di app preparata in IIS.
 
-## <a name="BKMK_deploy_asp_net"></a> Configura sito Web di ASP.NET sul computer del Server di Windows
+## <a name="optional-deploy-using-a-publish-settings-file"></a>(Facoltativo) Distribuire mediante un file di impostazioni di pubblicazione
 
-Se si sta importando le impostazioni di pubblicazione, è possibile ignorare questa sezione.
+È possibile utilizzare questa opzione Crea un file di impostazioni di pubblicazione e importarlo in Visual Studio.
+
+> [!NOTE]
+> Questo metodo di distribuzione utilizza distribuzione Web. Se si desidera configurare distribuzione Web manualmente in Visual Studio invece di importare le impostazioni, è possibile installare Web distribuire 3.6 anziché 3.6 distribuzione Web per i server di Hosting. Tuttavia, se si configura distribuzione Web manualmente, è necessario assicurarsi che una cartella di app nel server è configurata con i valori corretti e le autorizzazioni (vedere [sito Web ASP.NET configurare](#BKMK_deploy_asp_net)).
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Installare e configurare distribuzione Web per i server di Hosting in Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
+
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file di impostazioni di pubblicazione in IIS in Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importare le impostazioni di pubblicazione in Visual Studio e distribuire
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+
+Dopo che l'app viene distribuito correttamente, verrà avviato automaticamente. Se non si avvia l'app da Visual Studio, avviare l'app in IIS.
+
+1. Nel **impostazioni** della finestra di dialogo Abilita debug facendo **successivo**, scegliere un **Debug** configurazione e quindi scegliere **Rimuovi file aggiuntivi nella destinazione** sotto la **pubblicare File** opzioni.
+
+    > [!NOTE]
+    > Se si sceglie una configurazione di rilascio, disabilitare il debug nel *Web. config* file quando si esegue la pubblicazione.
+
+1. Fare clic su **salvare** e quindi pubblicare di nuovo l'app.
+
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Facoltativo) Distribuire mediante la pubblicazione in una cartella locale
+
+È possibile utilizzare questa opzione per distribuire l'app se si desidera copiare l'app a IIS tramite Powershell, RoboCopy, o si desidera copiare manualmente i file.
+
+### <a name="BKMK_deploy_asp_net"></a> Configurare il sito Web di ASP.NET sul computer del Server di Windows
 
 1. Aprire Esplora risorse e creare una nuova cartella **C:\Publish**, in cui verranno distribuiti in un secondo momento il progetto ASP.NET.
 
@@ -102,13 +140,7 @@ Se si sta importando le impostazioni di pubblicazione, è possibile ignorare que
 
 8. Con il sito selezionato in Gestione IIS, scegliere **Modifica autorizzazioni**e assicurarsi che tale account IUSR, IIS_IUSRS o l'utente configurato per il Pool di applicazioni è un utente autorizzato con diritti di lettura ed esecuzione. Se nessuno di questi utenti sono presenti, aggiungere IUSR come utente con diritti di lettura ed esecuzione.
 
-## <a name="bkmk_webdeploy"></a> (Facoltativo) Pubblicare e distribuire l'app usando distribuzione Web da Visual Studio
-
-[!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
-
-Inoltre, è necessario leggere la sezione su [risoluzione dei problemi relativi a porte](#bkmk_openports).
-
-## <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Facoltativo) Pubblicare e distribuire l'app mediante la pubblicazione in una cartella locale da Visual Studio
+### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Pubblicare e distribuire l'app mediante la pubblicazione in una cartella locale da Visual Studio
 
 È anche possibile pubblicare e distribuire l'app utilizzando il file system o altri strumenti.
 
@@ -132,6 +164,8 @@ Inoltre, è necessario leggere la sezione su [risoluzione dei problemi relativi 
 ## <a name="BKMK_msvsmon"></a> Scaricare e installare remote tools in Windows Server
 
 In questa esercitazione, si utilizza Visual Studio 2017.
+
+Nel caso di problemi durante l'apertura della pagina con il download del debugger remoto, vedere [sbloccare il download del file](../debugger/remote-debugging.md#unblock_msvsmon) per assistenza.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

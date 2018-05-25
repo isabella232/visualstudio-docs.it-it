@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere un riquadro azioni ai documenti Word o le cartelle di lavoro di Excel | Documenti Microsoft'
+title: 'Procedura: aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedura: aggiungere un riquadro ai documenti Word o alle cartelle di lavoro di Excel
   Per aggiungere un riquadro azioni a un documento di Microsoft Office Word o una cartella di lavoro di Microsoft Excel, creare innanzitutto un controllo utente Windows Form. Quindi, aggiungere il controllo utente per il <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.  
@@ -62,10 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-## <a name="adding-the-user-control-to-the-actions-pane"></a>Aggiunta del controllo utente al riquadro azioni  
+## <a name="add-the-user-control-to-the-actions-pane"></a>Aggiungere il controllo utente al riquadro azioni  
  Per visualizzare il riquadro azioni, aggiungere il controllo utente per il <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel).  
   
-#### <a name="to-add-the-user-control-to-the-actions-pane"></a>Per aggiungere il controllo utente al riquadro azioni  
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>Per aggiungere il controllo utente al riquadro azioni  
   
 1.  Aggiungere il codice seguente per il `ThisDocument` o `ThisWorkbook` classe come una dichiarazione a livello di classe (non aggiungere questo codice a un metodo).  
   
@@ -79,8 +79,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)   
- [Procedura dettagliata: Inserimento di testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Procedura: gestire il Layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Procedura dettagliata: inserimento di testo in un documento da un riquadro Azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Procedura: gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

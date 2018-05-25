@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da XML Schema
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da uno schema XML
 
-L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, premere TAB per inserire nell'elemento i dati XML generati dalle informazioni sullo schema per quel determinato elemento.
+L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome di elemento, è possibile premere **scheda** per popolare l'elemento con dati XML generati dalle informazioni sullo schema per quel determinato elemento.
 
 Questa funzionalità è disponibile solo per gli elementi. È inoltre necessario rispettare le seguenti regole:
 
@@ -44,7 +44,7 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
 
 ## <a name="example"></a>Esempio
 
- Nei passaggi di questa sezione viene illustrato come usare la funzionalità dei frammenti XML generati dallo schema dell'editor XML.
+ I passaggi descritti in questa sezione viene illustrato come utilizzare la generati da uno schema XML frammento funzionalità dell'Editor XML.
 
 > [!NOTE]
 > Prima di avviare tali procedure, salvare il file di schema nel computer locale.
@@ -85,11 +85,11 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
 
      **Contatto** per aggiungere l'elemento radice.
 
-3.  Selezionare **contatto** dall'elenco dei membri e premere INVIO.
+3.  Selezionare **contatto** nell'elenco dei membri e premere **invio**.
 
      L'editor aggiunge il tag di inizio `<Contact` e posiziona il cursore dopo il nome dell'elemento.
 
-4.  Premere TAB per generare i dati XML dell'elemento `Contact` in base alle informazioni sullo schema.
+4.  Premere **della scheda** per generare dati XML per il `Contact` elemento in base alle informazioni sullo schema.
 
 ## <a name="input"></a>Input
 
@@ -157,5 +157,5 @@ I valori predefiniti vengono generati e specificati come valori modificabili. Se
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti di codice XMLs](../xml-tools/xml-snippets.md)
-- [Procedura: Usare frammenti XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Frammenti di codice XML](../xml-tools/xml-snippets.md)
+- [Procedura: utilizzare XML frammenti di codice](../xml-tools/how-to-use-xml-snippets.md)

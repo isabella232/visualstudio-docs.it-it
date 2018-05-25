@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da usare
 
-L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir%\Xml\Schemas. La cache degli schemi include schemi XML noti che vengono usati per IntelliSense e per la convalida di documenti XML.
+L'Editor XML fornisce una cache degli schemi situata nel *%InstallDir%\Xml\Schemas.* directory. La cache degli schemi include schemi XML noti che vengono usati per IntelliSense e per la convalida di documenti XML.
 
 Il **schemi** proprietà del documento viene utilizzato per selezionare uno o più XML schema definition language (XSD) schemi da utilizzare. Consente di selezionare gli schemi dalla cache degli schemi o di specificare uno schema che non si trova nella cache.
 
-Gli schemi specificati vengono salvati nel file nascosto SUO (Solution User Options) insieme a tutte le altre proprietà del documento XML. Di conseguenza non sarà necessario immettere nuovamente tali valori alla successiva apertura della soluzione.
+Gli schemi specificati vengono salvati nel file di opzioni utente soluzione nascosto (. *suo*), insieme a tutti i dati XML di altre proprietà del documento. Di conseguenza non sarà necessario immettere nuovamente tali valori alla successiva apertura della soluzione.
 
 > [!NOTE]
-> L'editor può eseguire la convalida mediante uno schema inline o uno schema a cui fa riferimento l'attributo `xsd:schemaLocation`. Per ulteriori informazioni, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).
+> L'editor può eseguire la convalida mediante uno schema inline o uno schema a cui fa riferimento l'attributo `xsd:schemaLocation`. Per altre informazioni, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).
 
 ## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Per selezionare uno schema XML dalla cache degli schemi
 
@@ -33,7 +33,7 @@ Gli schemi specificati vengono salvati nel file nascosto SUO (Solution User Opti
 
 2.  Nella finestra delle proprietà del documento, scegliere il pulsante di **schemi** campo.
 
-     Il **schemi XML** viene visualizzata la finestra di dialogo. Nella finestra di dialogo sono elencati tutti gli schemi con estensione. xsd contenuti nella cache degli schemi (inclusi gli schemi a cui fa riferimento nel file catalog.xml) e anche di aprire qualsiasi schema a cui si trova nella soluzione corrente, in Visual Studio, a cui fa riferimento un `xsd:schemaLocation` attributo o a cui fa riferimento il **schemi** proprietà.
+     Il **schemi XML** viene visualizzata la finestra di dialogo. Nella finestra di dialogo sono elencati tutti gli schemi con un. *xsd* estensione nella cache degli schemi (inclusi gli schemi a cui fa riferimento il *Catalog* file) e anche qualsiasi schema a cui nella soluzione corrente, aperta in Visual Studio, fa riferimento un `xsd:schemaLocation` attributo o a cui fa riferimento il **schemi** proprietà.
 
 3.  Selezionare gli schemi da usare per la convalida eseguendo una delle seguenti operazioni:
 
@@ -75,5 +75,5 @@ Gli schemi specificati vengono salvati nel file nascosto SUO (Solution User Opti
 ## <a name="see-also"></a>Vedere anche
 
 - [Cache degli schemi](../xml-tools/schema-cache.md)
-- [Finestra di dialogo Schemi XML](../xml-tools/xml-schemas-dialog-box.md)
+- [Finestra di dialogo schemi XML](../xml-tools/xml-schemas-dialog-box.md)
 - [Editor XML](../xml-tools/xml-editor.md)

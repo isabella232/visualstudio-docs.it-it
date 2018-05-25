@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'editor XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'Editor XML
 
 L'editor XML consente di associare un foglio di stile XSLT a un documento XML, eseguire la trasformazione e visualizzare l'output. L'output risultante dalla trasformazione XSLT viene visualizzato in una nuova finestra del documento.
 
-Il **Output** proprietà specifica il nome del file per l'output. Se il **Output** proprietà è vuota, viene generato un nome di file nella directory temporanea. L'estensione del file è basata sull'elemento `xsl:output` del foglio di stile e può essere .xml, .txt o .htm.
+Il **Output** proprietà specifica il nome del file per l'output. Se il **Output** proprietà è vuota, viene generato un nome di file nella directory temporanea. L'estensione del file si basa sul `xsl:output` elemento nello stile foglio e può essere. *XML*,. *txt* o. *htm*.
 
-Se il **Output** proprietà specifica un nome di file con un file. htm o HTML estensione, l'output XSLT viene visualizzato in anteprima utilizzando [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Ad esempio, se l'estensione del file è .xml, Visual Studio utilizzerà l'editor XML.
+Se il **Output** proprietà consente di specificare un nome file con un. *htm* o. *HTML* estensione, l'output XSLT viene visualizzato in anteprima utilizzando [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Ad esempio, se è l'estensione del file. *xml*, Visual Studio utilizzerà l'Editor XML.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Per eseguire una trasformazione XSLT da un documento XML
 

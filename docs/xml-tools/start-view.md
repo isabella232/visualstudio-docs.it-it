@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 
@@ -26,7 +26,7 @@ La visualizzazione iniziale contiene due sezioni principali, la *filigrana* e **
 
 ## <a name="watermark"></a>Filigrana
 
-Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni di Progettazione XSD, Editor XML e XML Schema Explorer. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
+Il riquadro della filigrana contiene un elenco di collegamenti a tutte le visualizzazioni Progettazione XSD, Editor XML, e **XML Schema Explorer**. Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
 
 ## <a name="schema-set-details"></a>Dettagli set di schemi
 
@@ -42,9 +42,9 @@ I seguenti pulsanti sono abilitati nella barra degli strumenti di Progettazione 
 
 |Opzione|Descrizione|
 |------------|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla visualizzazione iniziale. Questa vista è possibile accedere tramite il tasto di scelta rapida: **CTRL + 1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. Questa vista è possibile accedere tramite il tasto di scelta rapida: **CTRL + 2**.|
-|**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. Questa vista è possibile accedere tramite il tasto di scelta rapida: **CTRL + 3**.|
+|**Mostra visualizzazione iniziale**|Passa alla visualizzazione iniziale. Questa vista è accessibile tramite il tasto di scelta rapida: **Ctrl**+**1**.|
+|**Mostra visualizzazione modello di contenuto**|Passa alla visualizzazione modello di contenuto. Questa vista è accessibile tramite il tasto di scelta rapida: **Ctrl**+**2**.|
+|**Mostra visualizzazione grafico**|Passa alla visualizzazione grafico. Questa vista è accessibile tramite il tasto di scelta rapida: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vedere anche
 

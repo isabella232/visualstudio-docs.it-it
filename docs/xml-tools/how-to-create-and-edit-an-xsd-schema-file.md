@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Procedura: creare e modificare un file di schema XSD
 
@@ -22,11 +22,11 @@ In questo argomento viene descritto come creare un nuovo file XML Schema (XSD) e
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Per creare un nuovo file XML Schema
 
-1. In Visual Studio, aprire il **File** dal menu **New** > **File**. Oppure, usare i tasti di scelta rapida CTRL+N.
+1. In Visual Studio, aprire il **File** dal menu **New** > **File**. In alternativa, usare il **Ctrl**+**N** tasto di scelta rapida.
 
 2. Nel **nuovo File** finestra di dialogo **XML Schema** e quindi selezionare **aperta**.
 
-   Verrà creato un nuovo file. In Visual Studio vengono aperte la visualizzazione iniziale e una finestra di XML Schema Explorer vuota.
+   Verrà creato un nuovo file. La visualizzazione iniziale e un oggetto vuoto **XML Schema Explorer** finestra vengono visualizzate in Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Per modificare un file
 
@@ -34,10 +34,10 @@ In questo argomento viene descritto come creare un nuovo file XML Schema (XSD) e
 
    Viene visualizzato l'editor XML con il nuovo file aperto.
 
-2. Copiare il codice di esempio di XML Schema da [Schema ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md) e incollarlo per sostituire il codice che è stato aggiunto il nuovo file XSD per impostazione predefinita.
+2. Copiare il codice di esempio di XML Schema da [schema di ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md) e incollarlo per sostituire il codice che è stato aggiunto il nuovo file XSD per impostazione predefinita.
 
-   XML Schema Explorer viene aggiornato con il nuovo set di schemi.
+   Il **XML Schema Explorer** viene aggiornato con il nuovo set di schemi.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso dei dati XML](../xml-tools/working-with-xml-data.md)
+- [Utilizzo di dati XML](../xml-tools/working-with-xml-data.md)

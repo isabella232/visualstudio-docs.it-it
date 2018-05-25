@@ -10,31 +10,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c787431cbdf9f6a9bcb70a87b99b0a566fd0e5ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 317588e4d6c81a13a18c036a040508a1adebafcb
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="xml-schema-designer-workspace"></a>Area di lavoro di Progettazione XML Schema
+# <a name="xml-schema-designer-workspace"></a>Area di lavoro Progettazione XML Schema
 
 Progettazione XML Schema (Progettazione XSD) è uno strumento grafico che consente di esplorare gli schemi XML. Oltre al [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), che consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche, progettazione XSD fornisce tre visualizzazioni che consentono di esplorare lo schema XSD più dettagliatamente. La visualizzazione iniziale è il punto di avvio per Progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni di Progettazione XSD e vedere i dettagli relativi al set di schemi. La visualizzazione grafico consente di visualizzare una panoramica di un set di schemi e delle relazioni tra i nodi degli schemi. La visualizzazione modello di contenuto fornisce una rappresentazione grafica dei dettagli relativi a nodi dello schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.
 
 Per iniziare a esplorare i nodi a cui si è interessati, è necessario aggiungerli all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
 
-## <a name="adding-nodes-to-the-workspace"></a>Aggiunta di nodi all'area di lavoro
+## <a name="add-nodes-to-the-workspace"></a>Aggiungere nodi all'area di lavoro
 
 È possibile aggiungere nodi all'area di lavoro come indicato di seguito:
 
 -   Nella sezione "Dettagli Set di schemi" del [visualizzazione iniziale](../xml-tools/start-view.md), fare clic su di **aggiungere** collegamento accanto a tipo di nodo globali.
 
--   Trascinare e rilasciare i nodi globali, i nodi di file e i nodi dello spazio dei nomi da XML Schema Explorer su una qualsiasi delle tre visualizzazioni. Per ulteriori informazioni, vedere la sezione "Trascinando e rimozione di nodi" in [XML Schema Explorer](../xml-tools/xml-schema-explorer.md).
+-   Trascinare e rilasciare nodi globali, nodi di file e nodi spazio dei nomi dal **XML Schema Explorer** su una qualsiasi delle tre visualizzazioni. Per ulteriori informazioni, vedere la sezione "Trascinando e rimozione di nodi" in [XML Schema Explorer](../xml-tools/xml-schema-explorer.md).
 
--   Usare il menu di scelta rapida in XML Schema Explorer. Per ulteriori informazioni, vedere [menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md).
+-   Utilizzare il menu di scelta rapida di **XML Schema Explorer**. Per altre informazioni, vedere [menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md).
 
--   Eseguire una ricerca in XSD Explorer e fare clic su di **Aggiungi nodi evidenziati all'area di lavoro** pulsante del riquadro dei risultati di riepilogo. Per ulteriori informazioni, vedere [la ricerca del Set di schemi](../xml-tools/searching-the-schema-set.md).
+-   Eseguire una ricerca in XSD Explorer e fare clic su di **Aggiungi nodi evidenziati all'area di lavoro** pulsante del riquadro dei risultati di riepilogo. Per altre informazioni, vedere [la ricerca di set di schemi](../xml-tools/searching-the-schema-set.md).
 
-## <a name="view-switching"></a>Cambio di visualizzazione
+## <a name="switch-views"></a>Cambia visualizzazione
 
 Per cambiare visualizzazioni, usare uno degli elementi seguenti:
 
@@ -44,4 +44,4 @@ Per cambiare visualizzazioni, usare uno degli elementi seguenti:
 
 -   Le filigrane sulla pagina della visualizzazione iniziale o la filigrana sulla visualizzazione modello di contenuto vuota o sulla visualizzazione grafico.
 
--   Tasti di scelta: CTRL+1 per la visualizzazione iniziale, CTRL+2 per la visualizzazione grafico e CTRL+3 per la visualizzazione modello di contenuto.
+-   Tasti di scelta rapida: **Ctrl**+**1** per la visualizzazione iniziale, **Ctrl**+**2** per la visualizzazione grafico e  **CTRL**+**3** per la visualizzazione modello di contenuto.

@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
 Il **strumenti > Opzioni > Debug > Generale** pagina consente di impostare le opzioni seguenti:  
@@ -94,11 +94,11 @@ Indica al debugger di Visual Studio di ottenere i file di origine da server di o
 - **Consenti server origine per assembly parzialmente attendibili (solo gestito)**  
     Quando il supporto del server di origine è abilitato, questa impostazione esegue l'override del comportamento predefinito che non recupera le origini per gli assembly parzialmente attendibili.  
 
-- **Abilita il supporto di origine collegamento**  
+**Abilitare il supporto di origine collegamento**  
     Indica al debugger di Visual Studio per scaricare il file di origine per i file con estensione PDB che contengono informazioni sui collegamenti di origine. Per ulteriori informazioni sul collegamento di origine, vedere il [specifica di collegamento di origine](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Poiché il collegamento di origine verranno scaricati i file tramite http o https, assicurarsi che si ritiene che il file con estensione pdb.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Evidenzia intera riga per i punti di interruzione e l'istruzione corrente (solo C++)**  
 Quando il debugger evidenzia un punto di interruzione o l'istruzione corrente, estende l'evidenziazione all'intera riga.  

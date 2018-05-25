@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7edbdc161a92b98a4a0d2d777bf055850e187b27
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 589bfa54a0ba1a7efb2964cf5b74446ca9ffe10d
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con i valori letterali XML
 
@@ -28,21 +28,21 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 2.  Dal **File** dal menu **New**, quindi selezionare **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** . Per **tipi di progetto**selezionare **altri linguaggi,** e quindi selezionare **Visual Basic**. Per **modelli**, selezionare applicazione Console. Quindi digitare `XMLLiterals` nel **nome** campo e un percorso di progetto nel **percorso** campo. Fare clic su **OK**.
 
-     Il nuovo progetto è creato. Il progetto XMLLiterals contiene un file di origine di Visual Basic, Module1.vb.
+     Il nuovo progetto è creato. Il progetto XMLLiterals contiene un file di origine Visual Basic, *Module1.vb*.
 
 ## <a name="to-add-an-existing-xsd-file-to-the-project"></a>Per aggiungere un file XSD esistente al progetto
 
-1.  Aprire un nuovo file di testo in Notepad.Copy il codice di esempio di XML Schema da [Schema ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md) e incollarlo nel file.
+1.  Aprire un nuovo file di testo nel blocco note. Copiare il codice di esempio di XML Schema da [schema di ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md) e incollarlo nel file.
 
-2.  Salvare il file in un percorso con il nome PurchaseOrderSchema.xsd.
+2.  Salvare il file in un percorso con il nome *Purchaseorderschema*.
 
-3.  In Esplora soluzioni, fare clic sul nome del progetto, selezionare **Aggiungi**, quindi selezionare **elemento esistente...** . Il **AddExisting elemento** viene visualizzata la finestra di dialogo. Individuare il file PurchaseOrderSchema.xsd, selezionarlo e quindi fare clic su **Aggiungi**.
+3.  In Esplora soluzioni, fare clic sul nome del progetto, selezionare **Add**, quindi selezionare **elemento esistente**. Il **AddExisting elemento** verrà visualizzata la finestra di dialogo. Individuare il *Purchaseorderschema* del file, selezionarlo e quindi fare clic su **Add**.
 
-     Il progetto XMLLiterals contiene ora due file: Module1.vb e PurchaseOrderSchema.xsd.
+     Il progetto XMLLiterals contiene ora due file: *Module1.vb* e *Purchaseorderschema*.
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Per aggiungere codice Visual Basic con un valore letterale XML, in base al file XSD incluso nel progetto
 
-1.  Sostituire il codice nel file Module1.vb con il codice seguente:
+1.  Sostituire il codice nel *Module1.vb* file con il codice seguente:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -73,4 +73,4 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 2.  Fare doppio clic su qualsiasi nodo XML in un valore letterale XML o un'importazione dello spazio dei nomi XML e selezionare **Mostra in Schema Explorer**.
 
-     XML Schema Explorer viene visualizzato accanto a un file di Visual Basic che dispone di un valore letterale XML associato al set di schemi XML.
+     Il **XML Schema Explorer** viene visualizzato in modo affiancato con un file di Visual Basic che ha il valore letterale XML associato al set XML schema.

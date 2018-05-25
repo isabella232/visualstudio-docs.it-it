@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>Modifica di fogli di stile XSLT
+# <a name="edit-xslt-style-sheets"></a>Modifica dei fogli di stile XSLT
 
 L'editor XML consente anche di modificare i fogli di stile XSLT. È possibile usare le funzionalità predefinite dell'editor, quali IntelliSense, struttura, frammenti XML e così via. Sono inoltre disponibili nuove funzionalità che semplificano lo sviluppo in XSLT.
 
@@ -29,7 +29,7 @@ L'editor XML consente anche di modificare i fogli di stile XSLT. È possibile us
 
  **Sottolineature ondulate**
 
- L'editor XML usa il file xslt.xsd installato per convalidare i fogli di stile XSLT. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. L'editor XML compila inoltre il foglio di stile in background e segnala gli errori del compilatore o avvisi con le opportune sottolineature ondulate.
+ L'Editor XML Usa installata *XSLT* file per convalidare i fogli di stile XSLT. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. L'editor XML compila inoltre il foglio di stile in background e segnala gli errori del compilatore o avvisi con le opportune sottolineature ondulate.
 
  **Supporto per i blocchi di script**
 
@@ -37,7 +37,7 @@ L'editor XML consente anche di modificare i fogli di stile XSLT. È possibile us
 
  **Visualizzazione dell'output XSLT**
 
- È possibile eseguire una trasformazione XSL e visualizzare l'output dall'editor XML. Per ulteriori informazioni, vedere [procedura: eseguire una trasformazione XSLT dall'Editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+ È possibile eseguire una trasformazione XSL e visualizzare l'output dall'editor XML. Per altre informazioni, vedere [procedura: eseguire una trasformazione XSLT dall'Editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
  **Eseguire il debug XSLT**
 

@@ -10,34 +10,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer
 
-In questo argomento viene illustrato come aggiungere nodi di [area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) da XML Schema Explorer. È possibile trascinare e rilasciare nodi da XML Schema Explorer su una visualizzazione di Progettazione XSD o tramite il menu di scelta rapida di XML Schema Explorer. È anche possibile aggiungere nodi evidenziati come risultato di una ricerca eseguita da XML Schema Explorer. Per ulteriori informazioni, vedere [procedura: aggiungere nodi dello Schema impostare ricerca risultati nell'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+In questo argomento viene illustrato come aggiungere nodi per il [dell'area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md) dal **XML Schema Explorer**. A questo scopo trascinando e rilasciando i nodi dal **XML Schema Explorer** su una visualizzazione di progettazione XSD o tramite il **XML Schema Explorer** menu di scelta rapida. È inoltre possibile aggiungere nodi evidenziati come risultato di una ricerca eseguita con il **XML Schema Explorer**. Per altre informazioni, vedere [procedura: aggiungere nodi dei risultati ricerca set schema all'area di lavoro](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
-> Possono essere aggiunti solo nodi globali per il [area di lavoro Progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md).
+> Possono aggiungere solo nodi globali per il [dell'area di lavoro di progettazione XML Schema](../xml-tools/xml-schema-designer-workspace.md).
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Per aggiungere nodi tramite il menu di scelta rapida di XML Explorer
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Per aggiungere nodi tramite il menu di scelta rapida Esplora XML
 
-1.  Seguire i passaggi in [procedura: creare e modificare un File di Schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Seguire i passaggi descritti in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
 2.  Fare clic con il pulsante destro sul `PurchaseOrderType` nodo in XSD Explorer. Selezionare **Mostra in visualizzazione grafico**.
 
      Il nodo `purchaseOrderType` viene visualizzato nell'area di progettazione della visualizzazione grafico.
 
-## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Per trascinare un nodo su una visualizzazione
+## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Per trascinare e rilasciare un nodo su una visualizzazione
 
-1.  Fare clic con il pulsante destro del mouse sul nodo `PurchaseOrderType` nella visualizzazione grafico. Selezionare **Mostra in XML Schema Explorer**.
+1.  Fare clic sul `PurchaseOrderType` nodo nella visualizzazione grafico. Selezionare **Mostra in XML Schema Explorer**.
 
-     Il nodo viene evidenziato in XML Schema Explorer.
+     Il nodo viene evidenziato nel **XML Schema Explorer**.
 
-2.  Fare clic con il pulsante destro sul `PurchaseOrderType` nodo in XML Schema Explorer e selezionare **Mostra tutti i riferimenti**.
+2.  Fare clic con il pulsante destro sul `PurchaseOrderType` nodo il **XML Schema Explorer** e selezionare **Mostra tutti i riferimenti**.
 
      Il nodo `purchaseOrder` viene evidenziato.
 
@@ -51,7 +51,7 @@ In questo argomento viene illustrato come aggiungere nodi di [area di lavoro Pro
 
      ![Ricerca di parola chiave XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     I risultati della ricerca sono evidenziati in XML Schema Explorer e contrassegnati con un segno di spunta sulla barra di scorrimento verticale.
+     I risultati della ricerca vengono evidenziati nel **XML Schema Explorer** e contrassegnato dal segno di spunta sulla barra di scorrimento verticale.
 
 2.  Aggiungere i risultati della ricerca all'area di lavoro, fare clic il **Aggiungi nodi evidenziati all'area di lavoro** pulsante del riquadro dei risultati di riepilogo.
 

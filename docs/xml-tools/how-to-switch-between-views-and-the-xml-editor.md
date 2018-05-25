@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9109b94f66a440b91e136266df6a8f896a01edcd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b0eb90f2ead313ce94d609d71385b595f3e964b
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: passare dalle visualizzazioni all'editor XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procedura: passare dalle visualizzazioni l'Editor XML
 
-In questo argomento viene illustrato come passare dalle visualizzazioni di Progettazione XML Schema (Progettazione XSD) all'editor XML. Questo esempio viene utilizzato il [Schema ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md).
+In questo argomento viene illustrato come passare dalle visualizzazioni di Progettazione XML Schema (Progettazione XSD) all'editor XML. Questo esempio viene utilizzata la [schema di ordine di acquisto](../xml-tools/sample-xsd-file-simple-schema.md).
 
 ## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Per passare dalle visualizzazioni all'editor XML
 
-1.  Per creare e modificare un nuovo file di XML Schema, seguire i passaggi in [procedura: creare e modificare un File di Schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Per creare e modificare un nuovo file di schema XML, seguire i passaggi descritti in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Per passare a Progettazione XML Schema dall'Editor XML, fare clic in un punto qualsiasi nell'Editor XML e selezionare **Visualizza finestra di progettazione**.
+2.  Per passare a Progettazione XML Schema dall'Editor XML, fare clic in un punto qualsiasi nell'Editor XML e selezionare **Progettazione viste**.
 
 3.  Per passare alla visualizzazione grafico tramite la filigrana, scegliere il **utilizzare la visualizzazione grafico per visualizzare la relazione tra i nodi** collegamento nella visualizzazione iniziale.
 
-4.  Trascinare il nodo `USAddress` da XML Schema Explorer alla visualizzazione grafico. Fare doppio clic su di `USAddress` nodo nella visualizzazione grafico e selezionare **Mostra nella visualizzazione modello di contenuto** nel menu di scelta rapida.
+4.  Trascinare il `USAddress` nodo il **XML Schema Explorer** alla visualizzazione grafico. Fare doppio clic su di `USAddress` nodo nella visualizzazione grafico e selezionare **Mostra nella visualizzazione modello di contenuto** nel menu di scelta rapida.
 
      Viene aperta la visualizzazione modello di contenuto con i dettagli del nodo `USAddress`.
 
-5.  Per passare alla visualizzazione iniziale dalla visualizzazione modello di contenuto tramite la barra degli strumenti, fare clic sul pulsante Visualizzazione iniziale sulla barra degli strumenti XSD.
+5.  Per passare alla visualizzazione iniziale dalla visualizzazione modello di contenuto tramite la barra degli strumenti, scegliere il **visualizzazione iniziale** pulsante sulla barra degli strumenti XSD.
 
-6.  Per passare da una visualizzazione all'altra tramite i tasti di scelta, premere CTRL+1 per la visualizzazione iniziale, CTRL+2 per la visualizzazione grafico e CTRL+3 per la visualizzazione modello di contenuto.
+6.  Per passare tra le visualizzazioni usando i tasti di scelta, premere **Ctrl**+**1** per la visualizzazione iniziale **Ctrl**+**2** per la visualizzazione grafico e **Ctrl**+**3** per la visualizzazione modello di contenuto.
 
 7.  Per passare all'Editor XML dalla visualizzazione modello di contenuto, il pulsante destro del nodo e selezionare **Visualizza codice** nel menu di scelta rapida.

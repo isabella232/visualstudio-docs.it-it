@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2956e0c19e7cf50fdde39765bc5b26112986b84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 02492f2e1760df3ce5cd6751808303bae75577e2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Procedura: valutare un'espressione XPath
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   Non sono supportate le funzioni definite dall'utente.
 
 > [!NOTE]
-> La procedura seguente usa i file belowAvg.xsl e books.xml il [procedura dettagliata: Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) argomento.
+> La procedura seguente usa il *belowAvg* e *Books* i file dal [procedura dettagliata: eseguire il Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) argomento.
 
 ## <a name="to-evaluate-an-xpath-expression"></a>Per valutare un'espressione XPath
 

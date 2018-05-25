@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
+# <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'Editor XML
 
 L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle di altri editor di linguaggio forniti in Visual Studio. Questa sezione illustra come usare IntelliSense con documenti XML Schema Definition Language (XSD) e XSLT.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in un documento XSD
- Dopo che uno schema è associato al documento, viene visualizzato un elenco a discesa degli elementi previsti ogni volta che si digita `"<"` oppure fare clic su di **visualizzare l'elenco di membri di un oggetto** pulsante sulla barra degli strumenti dell'editor XML. Per informazioni su come associare gli schemi dei documenti XML, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).
+ Dopo che uno schema è associato al documento, viene visualizzato un elenco a discesa degli elementi previsti ogni volta che si digita `"<"` oppure fare clic su di **visualizzare l'elenco di membri di un oggetto** pulsante sulla barra degli strumenti dell'editor XML. Per informazioni su come associare gli schemi con i documenti XML, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).
 
  Quando si preme BARRA SPAZIATRICE all'interno di un tag di inizio, viene visualizzato anche un elenco a discesa contenente tutti gli attributi che possono essere aggiunti all'elemento corrente.
 
@@ -73,14 +73,14 @@ Per ulteriori informazioni, vedere [procedura dettagliata: utilizzo di XSLT Inte
 
 -   Termina una dichiarazione DTD: `>`
 
-L'editor XML, inoltre, è in grado di inserire automaticamente una dichiarazione dello spazio dei nomi se si seleziona un elemento o attributo completo dello spazio dei nomi proveniente da un elenco di IntelliSense e lo spazio dei nomi per quell'elemento o attributo non è ancora nell'ambito.
+L'editor XML è inoltre la possibilità di inserire uno spazio dei nomi se si seleziona un elemento completo dello spazio dei nomi o attributi da un elenco di IntelliSense e lo spazio dei nomi per tale elemento o attributo non sono ancora inclusa nell'ambito di dichiarazione.
 
 Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in cui il prefisso è associato allo spazio dei nomi `http://books` che non è stato dichiarato nel documento, l'editor XML inserirà automaticamente la dichiarazione dello spazio dei nomi richiesta. Di seguito è riportato il testo XML risultante:
 
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe
- Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È inoltre possibile usare il tasto di scelta rapida (CTRL+]) per passare da una parentesi graffa a quella corrispondente.
+ Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È inoltre possibile utilizzare il tasto di scelta rapida (**Ctrl**+**]**) per passare da una parentesi graffa a parentesi graffa corrispondente.
 
  L'editor XML effettua tale operazione per i seguenti elementi:
 
@@ -98,8 +98,8 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 -   Virgolette di apertura e chiusura sugli attributi.
 
-## <a name="modifying-the-intellisense-options"></a>Modifica delle opzioni IntelliSense
- Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare le impostazioni relative alle opzioni degli strumenti.
+## <a name="modify-the-intellisense-options"></a>Modificare le opzioni di IntelliSense
+ Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare questo modificando il **Tools** > **opzioni** impostazioni.
 
  Il **inserimento automatico** sezione la **varie** pagina controlla il comportamento seguente:
 
@@ -109,7 +109,7 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 |Virgolette per attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
 |Altro markup|Completa commenti, CDATA, DOCTYPE, istruzioni di elaborazione e altre dichiarazioni dei markup.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>Per modificare il comportamento del completamento automatico
+### <a name="to-change-the-auto-completion-behavior"></a>Per modificare il comportamento del completamento automatico
 
 1.  Scegliere **Opzioni** dal menu **Strumenti**.
 

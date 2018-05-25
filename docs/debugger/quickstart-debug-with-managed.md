@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dc9c9acfed229e4215c32e2e924ba1601ce88b6
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Guida introduttiva: Eseguire il Debug con codice gestito utilizzando il debugger di Visual Studio
 
@@ -37,7 +37,7 @@ Il debugger di Visual Studio fornisce molte funzionalità avanzate che consenton
 
 4. In Program.cs o Module1. vb, sostituire il codice seguente
 
-    ```c#
+    ```csharp
     class Program
     {
         static void Main(string[] args)
@@ -55,7 +55,7 @@ Il debugger di Visual Studio fornisce molte funzionalità avanzate che consenton
 
     con questo codice:
 
-    ```c#
+    ```csharp
     class Program
     {
         private static void doWork()

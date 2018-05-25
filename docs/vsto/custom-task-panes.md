@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>Riquadri attività personalizzati
   I riquadri attività sono pannelli dell'interfaccia utente in genere ancorati a un lato di una finestra in un'applicazione di Microsoft Office. I riquadri attività personalizzati consentono di creare un riquadro attività basato sulle proprie esigenze specifiche e offrono agli utenti un'interfaccia utente nota per accedere alle funzionalità della soluzione. L'interfaccia può, ad esempio, contenere controlli che consentono di eseguire codice per la modifica dei documenti o per la visualizzazione dei dati di un'origine dati.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>Interfaccia utente familiare  
  Gli utenti delle applicazioni di Microsoft Office hanno già familiari con l'uso dei riquadri attività, ad esempio il **stili e formattazione** riquadro attività in Word. I riquadri attività personalizzati presentano un funzionamento simile a quello di altri riquadri attività di Microsoft Office. Gli utenti possono ancorare i riquadri attività personalizzati a diversi lati della finestra dell'applicazione oppure possono trascinare i riquadri attività personalizzati in qualsiasi posizione all'interno della finestra. È possibile creare un componente aggiuntivo VSTO in grado di visualizzare più riquadri attività personalizzati allo stesso tempo, garantendo agli utenti la possibilità di controllare ogni riquadro attività singolarmente.  
   
-### <a name="windows-forms-support"></a>supporto di Windows Form  
+### <a name="windows-forms-support"></a>Supporto di Windows Form  
  L'interfaccia utente di un riquadro attività personalizzato creato mediante gli strumenti di sviluppo di Office in Visual Studio si basa sui controlli Windows Form. È possibile usare il noto strumento Progettazione Windows Form per progettare l'interfaccia utente per un riquadro attività personalizzato. È inoltre possibile usare il supporto del data binding dei Windows Form per associare un'origine dati ai controlli del riquadro attività.  
   
 ## <a name="create-a-custom-task-pane"></a>Creare un riquadro attività personalizzato  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>Accedere all'applicazione dal riquadro attività  
  Per automatizzare l'applicazione dal controllo utente, è possibile accedere direttamente al modello a oggetti usando la classe `Globals.ThisAddIn.Application` nel codice. La classe statica `Globals` consente di accedere all'oggetto `ThisAddIn`. Il campo `Application` di questo oggetto rappresenta il punto di ingresso nel modello a oggetti dell'applicazione.  
   
- Per ulteriori informazioni sul `Application` campo del `ThisAddIn` oggetti, vedere [programma aggiuntivi](../vsto/programming-vsto-add-ins.md). Per una procedura dettagliata che illustri come automatizzare un'applicazione da un riquadro attività personalizzato, vedere [procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Per ulteriori informazioni sul `Globals` classe, vedere [accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Per ulteriori informazioni sul `Application` campo del `ThisAddIn` oggetti, vedere [programma aggiuntivi](../vsto/programming-vsto-add-ins.md). Per una procedura dettagliata che illustri come automatizzare un'applicazione da un riquadro attività personalizzato, vedere [procedura dettagliata: automatico, un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Per ulteriori informazioni sul `Globals` classe, vedere [accesso globale agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Gestione dell'interfaccia utente del riquadro attività  
  Dopo aver creato il riquadro attività è possibile usare le proprietà e gli eventi dell'oggetto <xref:Microsoft.Office.Tools.CustomTaskPane> per controllare l'interfaccia utente del riquadro attività e per definire il comportamento in risposta alle modifiche apportate dall'utente al riquadro attività.  
@@ -142,16 +142,11 @@ ms.lasthandoff: 05/17/2018
  ![collegamento alla trasmissione video](../vsto/media/playvideo.gif "collegamento alla trasmissione video") per una dimostrazione video correlata, vedere [procedura ricerca per categorie: gestire i riquadri attività nei componenti aggiuntivi VSTO di Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
- Quando si crea un riquadro attività personalizzato per Outlook, tale riquadro viene associato a una finestra di esplorazione o a una finestra di controllo specifica. Le finestre di esplorazione sono finestre che visualizzano il contenuto di una cartella, mentre le finestre di controllo visualizzano un elemento quale un messaggio di posta elettronica o un'attività.  
+ Quando si crea un riquadro attività personalizzato per Outlook, tale riquadro viene associato a una finestra di esplorazione o a una finestra di controllo specifica. Strumenti di esplorazione sono finestre che visualizzano il contenuto di una cartella e i controlli sono finestre che mostrano un elemento quale un messaggio di posta elettronica o un'attività.  
   
  Per visualizzare un riquadro attività personalizzato con più finestre di esplorazione o di controllo, è necessario creare una nuova istanza del riquadro attività personalizzato quando viene aperta una nuova finestra di esplorazione o di controllo. A questo scopo, gestire un evento generato quando viene creata una finestra di esplorazione o di controllo, quindi creare il riquadro attività nel gestore eventi. È anche possibile gestire gli eventi relativi alle finestre di esplorazione e di controllo per nascondere o visualizzare i riquadri attività a seconda di quale finestra è visibile.  
   
  Per associare il riquadro attività a un'esplorazione o di controllo specifici, usare il <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metodo per creare il riquadro attività e passare il <xref:Microsoft.Office.Interop.Outlook.Explorer> o <xref:Microsoft.Office.Interop.Outlook.Inspector> dell'oggetto per il *finestra* parametro. Per ulteriori informazioni sulla creazione di riquadri attività personalizzati, vedere [panoramica dei riquadri attività personalizzati](../vsto/custom-task-panes.md).  
-  
- Per una procedura dettagliata viene illustrato come creare un riquadro attività per ogni messaggio di posta elettronica aperto, vedere [procedura dettagliata: visualizzazione di riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
-  
-### <a name="outlook-events"></a>Eventi di Outlook  
- Per monitorare lo stato delle finestre di esplorazione, è possibile gestire gli eventi seguenti correlati all'esplorazione:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

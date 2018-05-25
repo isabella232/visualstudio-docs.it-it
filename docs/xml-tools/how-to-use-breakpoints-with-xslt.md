@@ -9,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1c3a5e2001726c0f082bf17d279eb22a03fc86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 430b7f14f35506b45fe73be47d056cdd7b6a9c95
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Procedura: utilizzare i punti di interruzione con XSLT
 
 È possibile impostare punti di interruzione in un foglio di stile XSLT o nel documento di origine XML. Se si imposta un punto di interruzione su un tag, all'avvio dell'esecuzione il punto di interruzione si sposterà all'istruzione successiva che dispone di informazioni sulla riga del codice sorgente.
 
-Per ulteriori informazioni, vedere [nozioni fondamentali di debug: i punti di interruzione](../debugger/using-breakpoints.md).
+Per altre informazioni, vedere [nozioni fondamentali di debug: i punti di interruzione](../debugger/using-breakpoints.md).
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Impostare un punto di interruzione in un foglio di stile
 
@@ -59,4 +59,4 @@ Per ulteriori informazioni, vedere [nozioni fondamentali di debug: i punti di in
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Procedura dettagliata: Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

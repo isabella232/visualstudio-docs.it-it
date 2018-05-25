@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu di scelta rapida (XML Schema Explorer)
 
@@ -31,7 +31,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Mostra elementi globali**|Consente di individuare ed evidenziare tutti gli elementi globali nel set di schemi.|
 |**Finestra Proprietà**|Apre il **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
-## <a name="node-type-namespace"></a>Tipo di nodo: spazio dei nomi
+## <a name="node-type-namespace"></a>Tipo di nodo: Namespace
  Nella tabella seguente vengono descritte le opzioni disponibili per un nodo dello spazio dei nomi.
 
 |Opzione|Descrizione|
@@ -42,7 +42,7 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 |**Mostra elementi globali**|Consente di individuare ed evidenziare tutti gli elementi globali nello spazio di nomi selezionato.|
 |**Finestra Proprietà**|Apre il **proprietà** finestra (se non è già aperto). In questa finestra verranno visualizzate le informazioni sul nodo.|
 
-## <a name="node-type-file"></a>Tipo di nodo: file
+## <a name="node-type-file"></a>Tipo di nodo: File
  Nella tabella seguente vengono descritte le opzioni disponibili per un nodo di file.
 
 |Opzione|Descrizione|
@@ -116,4 +116,4 @@ Nella tabella seguente vengono descritte le opzioni disponibili per un nodo del 
 ## <a name="see-also"></a>Vedere anche
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
-- [Ricerche nel set di schemi](../xml-tools/searching-the-schema-set.md)
+- [La ricerca di set di schemi](../xml-tools/searching-the-schema-set.md)
