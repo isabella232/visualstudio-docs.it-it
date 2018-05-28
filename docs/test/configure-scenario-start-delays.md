@@ -1,5 +1,5 @@
 ---
-title: Configurare ritardi di avvio di uno scenario per i test di carico in Visual Studio
+title: Configurare ritardi di avvio di uno scenario per test di carico
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurare ritardi di avvio di uno scenario nei test di carico
 
@@ -72,11 +72,11 @@ La proprietà **Disabilita durante riscaldamento** viene impostata usando la fin
 
      Viene visualizzato l'**Editor test di carico**. Verrà visualizzato l'albero del test di carico.
 
-2. Nella cartella **Scenari** dell'albero del test di carico scegliere il nodo dello scenario per cui verranno specificati gli agenti da usare.
+2. Nella cartella **Scenari** dell'albero del test di carico scegliere il nodo dello scenario per cui si vuole modificare il comportamento di riscaldamento.
 
 3. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-     Le categorie e le proprietà dello scenario verranno visualizzate nella finestra Proprietà.
+     Le categorie e le proprietà dello scenario vengono visualizzate nella finestra **Proprietà**.
 
      Nella proprietà **Disabilita durante riscaldamento** selezionare **True** o **False.**
 

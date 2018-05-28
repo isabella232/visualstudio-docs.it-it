@@ -13,26 +13,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
 Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Visualizzazione Riepilogo](../profiling/summary-view.md)  
  Descrive la visualizzazione e il report di riepilogo. Le colonne di dati dipendono dal metodo di profilatura.  
   
- [Visualizzazione Chiamante/Chiamato](../profiling/caller-callee-view.md)  
+ [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)  
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.  
   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)  
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)  
  Descrive la visualizzazione e il report Albero delle chiamate. Le colonne di dati dipendono dal metodo di profilatura.  
   
- [Visualizzazione moduli](../profiling/modules-view.md)  
+ [Visualizzazione Moduli](../profiling/modules-view.md)  
  Descrive la visualizzazione e il report Moduli. Le colonne di dati dipendono dal metodo di profilatura.  
   
  [Visualizzazione Funzioni](../profiling/functions-view.md)  
@@ -51,10 +51,10 @@ Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i re
  Elenca gli eventi ETW e di campionamento inseriti nei file dei dati di profilatura.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)  
+ [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)  
  Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite il metodo di campionamento.  
   
- [Instrumentation Method Data Views](../profiling/instrumentation-method-data-views.md) (Visualizzazioni dei dati del metodo di strumentazione)  
+ [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)  
  Informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler generati tramite il metodo di strumentazione.  
   
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  

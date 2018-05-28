@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
-Utilizzare il profiler **Sequenza temporale applicazione** per individuare e correggere problemi di prestazioni correlati all’interazione dell’applicazione nelle applicazioni XAML. Questo strumento consente di migliorare le prestazioni delle applicazioni XAML offrendo una visualizzazione dettagliata del consumo delle risorse delle applicazioni. È possibile analizzare il tempo impiegato dall'applicazione nella preparazione dei fotogrammi dell'interfaccia utente (layout e rendering), per soddisfare le richieste di rete e disco e in scenari come l’avvio dell’applicazione, il caricamento delle pagine e il ridimensionamento di Windows.  
+Utilizzare il profiler **Sequenza temporale applicazione** per individuare e correggere problemi di prestazioni correlati all’interazione dell’applicazione nelle applicazioni XAML. Questo strumento consente di migliorare le prestazioni delle applicazioni XAML offrendo una visualizzazione dettagliata del consumo delle risorse delle applicazioni. È possibile analizzare il tempo impiegato dall'applicazione nella preparazione dei fotogrammi dell'interfaccia utente (layout e rendering), per soddisfare le richieste di rete e disco e in scenari come l'avvio dell’applicazione, il caricamento delle pagine e il ridimensionamento di Windows.  
   
- **Sequenza temporale applicazione** è uno degli strumenti che possono essere avviati con il comando **Debug/Profiler prestazioni**.  
+ **Sequenza temporale applicazione** è uno degli strumenti che possono essere avviati con il comando **Debug** > **Profiler prestazioni**.  
   
  Questo strumento sostituisce lo strumento **Velocità di risposta interfaccia utente XAML** che faceva parte del set di strumenti diagnostici per Visual Studio 2013.  
   
@@ -96,7 +96,7 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
 |||  
 |-|-|  
 |**Analisi**|Tempo impiegato per l'analisi dei file XAML e la creazione di oggetti.<br /><br /> Espandendo un nodo **Analisi** in **Dettagli sequenza temporale** , viene visualizzata la catena di dipendenze di tutti i file XAML analizzati in seguito all'evento radice. In questo modo, è possibile identificare l'analisi di file e la creazione di oggetti non necessarie in scenari in cui le prestazioni sono un fattore importante e quindi ottimizzarle.|  
-|**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Ciò potrebbe comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento (ad esempio il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e ArrangeOverride) e crea le strutture ad albero visive che hanno preso parte a un passaggio di Layout. È possibile utilizzare questa visualizzazione per determinare quali strutture ad albero logiche devono essere eliminate o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|  
+|**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Ciò potrebbe comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento (ad esempio il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e ArrangeOverride) e crea le strutture ad albero visive che hanno preso parte a un passaggio di Layout. È possibile usare questa visualizzazione per determinare quali strutture ad albero logiche devono essere eliminate o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|  
 |**Rendering**|Tempo impiegato per disegnare elementi XAML sullo schermo.|  
 |**I / 0**|Tempo impiegato per il recupero di dati dal disco locale o dalle risorse di rete cui è possibile accedere tramite l' [API Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Codice app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|  

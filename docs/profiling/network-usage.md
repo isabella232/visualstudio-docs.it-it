@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -24,12 +24,12 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 > [!NOTE]
 >  Per una descrizione più completa dello strumento Rete, vedere [Introducing Visual Studio's network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx) (Introduzione allo strumento Rete di Visual Studio).  
   
-## <a name="collecting-network-tool-data"></a>Raccolta dei dati dello strumento di rete  
+## <a name="collect-network-tool-data"></a>Raccogliere i dati dello strumento di rete  
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.  
   
 1.  Aprire il progetto in Visual Studio.  
   
-2.  Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere **Rete** e quindi **Avvia**.  
+2.  Nella barra dei menu fare clic su **Debug/Profiler prestazioni**. Scegliere **Rete** e quindi **Avvia**.  
   
 3.  Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
@@ -41,7 +41,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
  ![Finestra dello strumento Rete](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Analisi dei dati  
+## <a name="analyze-data"></a>Analizzare i dati  
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.  
   
  Nella visualizzazione di riepilogo dello strumento **Rete** sono visualizzati i dati relativi alle singole operazioni di rete che si sono verificate durante l'esecuzione dell'app. Scegliere un'intestazione di colonna per ordinare l'elenco oppure scegliere i tipi di contenuto da visualizzare nella visualizzazione del filtro **Tipo di contenuto**.  
@@ -63,13 +63,13 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
  La barra di **riepilogo** dello strumento Rete indica il numero di operazioni di rete visualizzate in un determinato momento, la quantità di dati trasferita, il tempo impiegato per il download e il numero di errori (richieste con risposte 4xx o 5xx) visibili.  
   
 ### <a name="analysis-tips"></a>Suggerimenti sull’analisi   
- Questo strumento evidenzia determinate aree che possono essere utili quando si esegue l’analisi correlata alla rete:  
+ Questo strumento evidenzia determinate aree che possono essere utili quando si esegue l'analisi correlata alla rete:  
   
 1.  Le richieste gestite completamente dalla cache vengono visualizzate come **(dalla cache)** nella colonna **Ricevute**. Ciò consente di determinare se si sta utilizzando la cache in modo efficace per risparmiare la larghezza di banda dell’utente o se si stanno erroneamente memorizzando nella cache risposte fornendo agli utenti finali dell'applicazione dati obsoleti.  
   
 2.  Le risposte di errore (4xx o 5xx) vengono visualizzate nella colonna **Risultati** con il codice di stato rosso e vengono evidenziate anche nella barra di riepilogo. In tal modo è facile individuare gli errori tra le numerose potenziali richieste nell'applicazione.  
   
-3.  Il pulsante di stampa della risposta (all'interno della scheda corpo) consente di analizzare i paylod di risposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando la leggibilità del contenuto.  
+3.  Il pulsante di riformattazione della risposta (all'interno della scheda corpo) consente di analizzare i payload di risposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando la leggibilità del contenuto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  

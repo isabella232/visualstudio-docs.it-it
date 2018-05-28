@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 
@@ -27,7 +27,7 @@ L'editor è anche integrato con la finestra interattiva in Visual Studio, sempli
 |---|---|
 | ![icona della telecamera](../install/media/video-icon.png "Guardare un video") | [Guardare un video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) per una dimostrazione di modifica del codice Python (2m 30s).|
 
-Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Scrittura di codice nell'Editor di testo e del codice](../ide/writing-code-in-the-code-and-text-editor.md). Vedere anche [Struttura](../ide/outlining.md) per informazioni su questa funzionalità che consente di concentrarsi su sezioni specifiche del codice.
+Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md). Vedere anche [Struttura](../ide/outlining.md) per informazioni su questa funzionalità che consente di concentrarsi su sezioni specifiche del codice.
 
 È anche possibile usare il Visualizzatore oggetti di Visual Studio (**Visualizza > Altre finestre > Visualizzatore oggetti** o CTRL+W,J) per esaminare le classi di Python definite in ogni modulo e le funzioni definite in tali classi.
 

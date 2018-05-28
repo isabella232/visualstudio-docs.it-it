@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec85de208c7761b69a73cc17a72bdb4a59fe6bb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2da6c16aa0db88fefa1824d2ecabb35cc1539951
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità negli strumenti di profilatura di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 Gli strumenti di diagnostica includono nuove visualizzazioni che consentono di identificare i problemi da risolvere nell'app. Gli strumenti di diagnostica ora includono il supporto per le app ASP.NET.
@@ -33,5 +33,5 @@ Lo strumento Utilizzo CPU dispone di [nuove visualizzazioni](../profiling/Beginn
 ![Strumenti di diagnostica Visualizzazione Chiamante Chiamato](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
   
 ## <a name="see-also"></a>Vedere anche  
- [Profilatura in Visual Studio](../profiling/index.md)  
+ [Eseguire la profilatura in Visual Studio](../profiling/index.md)  
  [Tour delle funzionalità di profilatura](../profiling/profiling-feature-tour.md)

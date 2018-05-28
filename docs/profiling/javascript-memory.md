@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.
@@ -50,7 +50,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
   
 2.  Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** della barra degli strumenti **Standard** scegliere la destinazione di debug per il progetto, ovvero **Computer locale** o **Dispositivo**.  
   
-3.  Nella barra dei menu scegliere **Debug** e quindi **Profiler prestazioni...**.  
+3.  Nella barra dei menu scegliere **Debug** > **Profiler prestazioni**.  
   
      Per impostazione predefinita, viene analizzato il progetto di avvio corrente. Per modificare la destinazione di analisi, scegli **Cambia destinazione**.  
   
@@ -344,7 +344,7 @@ if (performance && performance.mark) {
   
  ![Uso del contrassegno del profilo](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> Suggerimenti per l'identificazione dei problemi di memoria  
+##  <a name="Tips"></a> Suggerimenti per identificare i problemi di memoria  
   
 -   Seguire il flusso di lavoro descritto in [Isolare una perdita di memoria](#Isolate) e usare il filtro **Oggetti rimasti dallo snapshot #\<numero>** in una visualizzazione differenze per identificare gli oggetti in cui potrebbero verificarsi perdite di memoria.  
   

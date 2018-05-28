@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Aggiunta di dati di interazione tra livelli dalla riga di comando
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
 
 La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione delle chiamate [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] sincrone nelle funzioni di applicazioni multilivello che comunicano con uno o più database.
 
@@ -30,7 +30,7 @@ Per raccogliere dati di interazione tra livelli nelle applicazioni desktop di Wi
 
 I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.
 
-**Raccolta di dati TIP in un computer remoto**
+**Raccogliere dati TIP in un computer remoto**
 
 Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs_profiler_***\<Piattaforma>***_***\<Linguaggio>***.exe** dalla cartella *%VSInstallDir%***\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
@@ -38,17 +38,17 @@ Per raccogliere dati di interazione tra livelli in un computer remoto, è necess
 
 I dati di interazione tra livelli possono essere visualizzati solo in Visual Studio Enterprise. I report sull'interazione tra livelli basati su file tramite [VSPerfReport](../profiling/vsperfreport.md) non sono disponibili.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Aggiunta di dati di interazione tra livelli con VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Aggiungere dati di interazione tra livelli con VSPerfCmd
 
 Lo strumento da riga di comando VSPerfASPNETCmd consente di accedere alla funzionalità completa disponibile negli strumenti di profilatura. Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite VSPerfCmd, è necessario usare l'utilità **VSPerfCLREnv** per impostare e rimuovere le variabili di ambiente che abilitano i dati di interazione tra livelli. Le opzioni specificate e le procedure necessarie per la raccolta dei dati dipendono dal tipo di applicazione di cui viene eseguita la profilatura.
 
-## <a name="profiling-stand-alone-applications"></a>Profilatura di applicazioni autonome
+## <a name="profile-stand-alone-applications"></a>Sottoporre a profilatura applicazioni autonome
 
 Per aggiungere i dati di interazione tra livelli in un'applicazione che non viene eseguita da un altro processo, ad esempio un'applicazione desktop di Windows che esegue chiamate [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] sincrone a un database SQLServer, usare l'opzione **VSPerfClrEnv /InteractionOn** per impostare le variabili di ambiente e l'opzione **VSPerfClrEnv /InteractionOff** per rimuoverle.
 
 Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite il metodo di strumentazione e vengono raccolti dati di interazione tra livelli.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Esempio di profilatura di un'applicazione desktop di Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Esempio di profilatura di un'applicazione desktop di Windows
 
 1. Aprire una finestra del prompt dei comandi con privilegi di amministratore. Fare clic su **Start**, scegliere **Tutti i programmi** e quindi **Accessori**. Fare clic con il pulsante destro del mouse su **Prompt dei comandi**, quindi scegliere **Esegui come amministratore**.
 
@@ -81,7 +81,7 @@ Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite
 
 Per altre informazioni, vedere [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Profilatura di servizi
+## <a name="profile-services"></a>Sottoporre a profilatura i servizi
 
 Per eseguire la profilatura di servizi, incluse le applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], usare l'opzione **VSPerfClrEnv /GlobalInteractionOn** per impostare le variabili di ambiente e l'opzione **VSPerfClrEnv /GlobalInteractionOff** per rimuoverle.
 
@@ -89,7 +89,7 @@ Quando si esegue la profilatura di servizi, incluse le applicazioni Web [!INCLUD
 
 Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo di strumentazione e vengono raccolti dati di interazione tra livelli.
 
-### <a name="profiling-a-windows-service-example"></a>Esempio di profilatura di un servizio Windows
+### <a name="profile-a-windows-service-example"></a>Esempio di profilatura di un servizio Windows
 
 1. Se necessario, installare il servizio.
 
@@ -101,7 +101,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
     vsperfclrenv /globaltraceon
     ```
 
-4. Inizializzare le variabili di ambiente TIP. Digitare il comando seguente
+4. Inizializzare le variabili di ambiente TIP. Digitare il comando seguente:
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +145,7 @@ Per altre informazioni, vedere uno degli argomenti seguenti:
 
 [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Aggiunta di dati di interazione tra livelli con VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Aggiungere dati di interazione tra livelli con VSPerfASPNETCmd
 
 Lo strumento da riga di comando VSPerfASPNETCmd consente di eseguire facilmente la profilatura di applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. A differenza dello strumento da riga di comando **VSPerfCmd**, le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è necessario riavviare il computer. Queste funzionalità di VSPerfASPNETCmd rendono molto facile la raccolta di dati di interazione tra livelli.
 

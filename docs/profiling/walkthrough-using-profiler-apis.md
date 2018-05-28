@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: utilizzo delle API del profiler
+# <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso delle API di Strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le API del profiler consentono di limitare la quantità di dati raccolti durante la profilatura della strumentazione.  
   
  In genere i passaggi descritti in questa procedura dettagliata si applicano a un'applicazione C/C++. Per ogni linguaggio, è necessario configurare l'ambiente di compilazione in modo appropriato.  
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  È possibile disabilitare la raccolta dei dati nella riga di comando senza usare una chiamata API. Questa procedura presuppone che l'ambiente di compilazione avviata tramite riga di comando sia configurato per eseguire gli strumenti di profilatura e come strumenti di sviluppo. Include le impostazioni necessarie per VSInstr e VSPerfCmd. Vedere gli strumenti di profilatura della riga di comando.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Limitazione della raccolta dei dati usando le API del profiler  
+## <a name="limit-data-collection-using-profiler-apis"></a>Limitare la raccolta dei dati usando le API del profiler  
   
 #### <a name="to-create-the-code-to-profile"></a>Per creare il codice per il profilo  
   

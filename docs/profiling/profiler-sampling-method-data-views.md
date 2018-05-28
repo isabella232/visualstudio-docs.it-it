@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a091ce71312778353a7f09869d6de45bc394c665
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.  
@@ -25,14 +25,14 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 > [!NOTE]
 >  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Visualizzazione Riepilogo](../profiling/summary-view-sampling-data.md)  
  Elenca le funzioni eseguite più di frequente al momento della raccolta dei campioni e le funzioni che eseguivano la maggior parte del lavoro individuale.  
   
  [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)  
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.  
   
- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)  
+ [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)  
  Organizza i dati di profilatura in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni in esecuzione al momento della raccolta dei campioni.  
   
  [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)  
@@ -44,7 +44,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)  
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.  
   
- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)  
+ [Visualizzazione Puntatori all'istruzione](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Elenca le righe di codice sorgente in esecuzione al momento della raccolta dei campioni.  
   
 ## <a name="reference"></a>Riferimenti  
@@ -58,7 +58,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Instrumentation Method Data Views](../profiling/instrumentation-method-data-views.md) (Visualizzazioni dei dati del metodo di strumentazione)  
+ [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)  
  Informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler generati tramite il metodo di strumentazione.  
   
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  

@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Esecuzione degli strumenti di profilatura con o senza il debugger
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni dei quali (ad esempio, **Utilizzo CPU** e **Utilizzo memoria**) possono essere eseguiti con o senza il debugger. Gli strumenti per le prestazioni privi di debugger devono essere eseguiti su configurazioni di rilascio; al contrario, gli strumenti di debugger integrati devono essere eseguiti sulle configurazioni di debug.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Lo strumento deve essere eseguito con o senza il debugger?  
@@ -39,9 +39,9 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug  
  La sezione seguente si occupa dell’esecuzione del debug in locale. È possibile trovare informazioni sul debug in un dispositivo o sul debug remoto nelle sezioni successive.  
   
-1.  Aprire il progetto di cui si vuole eseguire il debug, quindi fare clic su **Debug/Avvia debug** (oppure usare **Avvia** sulla barra degli strumenti o **F5**).  
+1.  Aprire il progetto di cui si vuole eseguire il debug, quindi fare clic su **Debug** > **Avvia debug** (oppure usare **Avvia** sulla barra degli strumenti o **F5**).  
   
-2.  La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.  
+2.  La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.  
   
 3.  Eseguire gli scenari per i quali si vuole raccogliere dati.  
   
@@ -51,7 +51,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  È possibile scegliere se visualizzare **Utilizzo memoria** o **Utilizzo CPU** (o entrambi) tramite l'impostazione **Seleziona strumenti** nella barra degli strumenti. Se si usa Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace in **Strumenti/Opzioni/IntelliTrace**.  
+4.  È possibile scegliere se visualizzare **Utilizzo memoria** o **Utilizzo CPU** (o entrambi) tramite l'impostazione **Seleziona strumenti** nella barra degli strumenti. Se si usa Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace in **Strumenti** > **Opzioni** > **IntelliTrace**.  
   
 5.  La sessione di diagnostica termina quando si interrompe il debug.  
   
@@ -72,7 +72,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
 1.  Aprire il progetto in Visual Studio.  
   
-2.  Scegliere **Profiler prestazioni** dal menu **Debug** (combinazione di tasti: ALT + F2).  
+2.  Scegliere **Profiler prestazioni** dal menu **Debug** (tasto di scelta rapida: **ALT**+**F2**).  
   
 3.  Nella pagina di avvio di diagnostica scegliere uno o più strumenti da eseguire nella sessione. Vengono visualizzati solo gli strumenti applicabili al tipo di progetto, al sistema operativo e al linguaggio di programmazione. Quando si sceglie uno strumento di diagnostica, le selezioni degli strumenti che non possono essere eseguiti nella stessa sessione di diagnostica sono disattivate. Ecco le possibili scelte per un'app UWP C#:  
   
@@ -106,7 +106,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
 |![Passaggio 5](../profiling/media/procguid_6.png "ProcGuid_6")|Quando i dati includono informazioni da più strumenti, i dettagli per ogni strumento sono raccolti in schede.|  
 |![Passaggio 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Uno strumento può avere una o più visualizzazioni dettagli. La visualizzazione viene filtrata in base alla sezione selezionata della cronologia.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Impostazione della destinazione di analisi su un altro dispositivo  
+## <a name="set-the-analysis-target-to-another-device"></a>Impostare la destinazione di analisi su un altro dispositivo  
  Prima di avviare l'app dal progetto di Visual Studio, è anche possibile eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in una versione dell'app installata da Windows App Store.  
   
  ![Scegliere la destinazione di analisi degli strumenti di diagnostica](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
