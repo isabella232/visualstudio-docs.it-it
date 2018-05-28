@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: modificare i tipi di carattere e i colori utilizzati nell'editor
 È possibile modificare il tipo di carattere predefinito, le dimensioni del carattere e i colori di sfondo e primo piano dei diversi **elementi di visualizzazione** del testo nell'Editor del codice. Quando si modificano le impostazioni del carattere tenere presente le informazioni seguenti:
@@ -56,5 +56,5 @@ ms.lasthandoff: 04/26/2018
 
 - [Personalizzazione dell'editor](../../ide/customizing-the-editor.md)
 - [Editor di testo (finestra di dialogo Opzioni)](../../ide/reference/text-editor-options-dialog-box.md)
-- [Writing Code](../../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)
+- [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

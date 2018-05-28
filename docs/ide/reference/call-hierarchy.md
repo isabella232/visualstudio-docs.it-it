@@ -1,6 +1,6 @@
 ---
-title: Visualizzazione della gerarchia di chiamata in Visual Studio
-ms.date: 01/10/2018
+title: Trovare le chiamate a un metodo
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,33 +13,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f5cfc65f23924f9ee1e9203e115feae13f454b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 
-Visualizzando la gerarchia di chiamata per il codice è possibile esplorare tutte le chiamate da e verso un metodo, una proprietà o un costruttore selezionato. Ciò consente di comprendere meglio il flusso del codice e di valutare gli effetti delle modifiche al codice. È possibile esaminare diversi livelli del codice per visualizzare le complesse catene di chiamate di metodi e i punti di ingresso aggiuntivi al codice. In questo modo è possibile esplorare tutti i possibili percorsi di esecuzione.
+Visualizzando la gerarchia di chiamata per il codice è possibile esplorare tutte le chiamate verso, e a volte da, un metodo, una proprietà o un costruttore selezionato. Ciò consente di comprendere meglio il flusso del codice e di valutare gli effetti delle modifiche al codice. È possibile esaminare diversi livelli del codice per visualizzare le complesse catene di chiamate di metodi e i punti di ingresso aggiuntivi al codice. In questo modo è possibile esplorare tutti i possibili percorsi di esecuzione.
 
 In Visual Studio, è possibile visualizzare una gerarchia di chiamata in fase di progettazione. Ciò significa che non è necessario impostare un punto di interruzione e avviare il debugger per visualizzare lo stack di chiamate della fase di esecuzione.
 
 ## <a name="use-the-call-hierarchy-window"></a>Usare la finestra Gerarchia di chiamata
 
-Per visualizzare la finestra **Gerarchia di chiamata**, fare clic con il pulsante destro del mouse sul nome di una chiamata a un metodo, una proprietà o un costruttore e quindi scegliere **Visualizza gerarchia delle chiamate**.
+Per visualizzare la finestra **Gerarchia di chiamata**, fare clic con il pulsante destro del mouse nell'editor del codice sul nome di una chiamata a un metodo, una proprietà o un costruttore e quindi scegliere **Visualizza gerarchia delle chiamate**.
 
-Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo del membro, vengono visualizzati i sottonodi **Chiamate a** *nome membro* e **Chiamate da** *nome membro*. La figura seguente mostra questi nodi nella finestra **Gerarchia di chiamata**.
+Il nome del membro viene visualizzato in un riquadro con visualizzazione struttura ad albero nella finestra **Gerarchia di chiamata**. Se si espande il nodo del membro, vengono visualizzati i sottonodi **Chiamate a** *nome membro* e per C++ **Chiamate da** *nome membro*.
 
-![Gerarchia di chiamata con un nodo aperto](../../ide/reference/media/onenode.png "OneNode")
+Per il codice C++, è possibile visualizzare le chiamate da e verso un membro:
+
+![Gerarchia di chiamata per il codice C++ in Visual Studio](media/call-hierarchy-cpp.png)
+
+Per il codice C# e Visual Basic, è possibile visualizzare le chiamate a un membro, ma non le chiamate da:
+
+![Gerarchia di chiamata per il codice C# in Visual Studio](media/call-hierarchy-csharp.png)
 
 - Se si espande il nodo **Chiamate a**, vengono visualizzati tutti i membri che chiamano il membro selezionato.
 
-- Se si espande il nodo **Chiamate da**, vengono visualizzati tutti i membri chiamati dal membro selezionato.
+- Per C++, se si espande il nodo **Chiamate da** vengono visualizzati tutti i membri chiamati dal membro selezionato.
 
-È quindi possibile espandere ognuno di questi membri dei sottonodi nei nodi **Chiamate a** e **Chiamate da**. In questo modo è possibile spostarsi nello stack dei chiamanti, come illustrato nella figura seguente.
+È quindi possibile espandere ogni membro chiamante per visualizzare i nodi corrispondenti **Chiamate a** e per C++ **Chiamate da**. In questo modo è possibile spostarsi nello stack dei chiamanti, come illustrato nella figura seguente:
 
-![Gerarchia di chiamata con più nodi aperti](../../ide/media/multiplenodes.png "MultipleNodes")
+![Finestra Gerarchia di chiamata con più livelli espansi](media/call-hierarchy-csharp-expanded.png)
 
 Per i membri definiti come virtuali o astratti viene visualizzato un nodo **Overrides method name** (Esegui override nome metodo). Per i membri di interfaccia viene visualizzato un nodo **Implements method name** (Implementa nome metodo). Questi nodi espandibili vengono visualizzati allo stesso livello dei nodi **Chiamate a** e **Chiamate da**.
 
@@ -49,12 +55,12 @@ Quando si seleziona un membro figlio nel riquadro della visualizzazione struttur
 
 - Il riquadro dei dettagli **Gerarchia di chiamata** visualizza tutte le righe di codice in cui tale membro figlio viene chiamato dal membro padre.
 
-- La **finestra Definizione codice**, se aperta, visualizza il codice per il membro selezionato (solo C++). Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
+- La finestra **Definizione codice**, se aperta, visualizza il codice per il membro selezionato (solo C++). Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> La funzionalità Gerarchia di chiamata non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
+> La funzionalità **Gerarchia di chiamata** non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.
 
-### <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida
+## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida
 
 La tabella seguente descrive i vari comandi del menu di scelta rapida disponibili quando si fa clic con il pulsante destro del mouse su un nodo nel riquadro della visualizzazione struttura ad albero.
 

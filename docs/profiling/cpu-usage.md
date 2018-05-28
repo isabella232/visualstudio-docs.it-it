@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, è consigliabile partire dall'analisi dell'utilizzo della CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice di Visual C++, Visual C#/Visual Basic e JavaScript. A partire da Visual Studio 2015 Update 1, è possibile visualizzare i dettagli dell'utilizzo della CPU a livello di singole funzioni senza uscire dal debugger. È possibile attivare o disattivare la profilatura della CPU durante il debug e visualizzare i risultati quando l'esecuzione viene interrotta, ad esempio in corrispondenza di un punto di interruzione.  

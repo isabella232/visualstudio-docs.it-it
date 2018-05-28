@@ -19,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="encodings-and-line-breaks"></a>Codifiche e interruzioni di riga
+# <a name="encodings-and-line-endings"></a>Codifiche e interruzioni di riga
 
 I caratteri seguenti vengono interpretati come interruzioni di riga in Visual Studio:
 
--   CR LF: ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A
+- CR LF: ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A
 
--   LF: avanzamento riga, carattere Unicode 000A
+- LF: avanzamento riga, carattere Unicode 000A
 
--   NEL:rRiga successiva, carattere Unicode 0085
+- NEL:rRiga successiva, carattere Unicode 0085
 
--   LF: separatore di riga, carattere Unicode 2028
+- LF: separatore di riga, carattere Unicode 2028
 
--   PS: separatore di paragrafo, carattere Unicode 2029
+- PS: separatore di paragrafo, carattere Unicode 2029
 
 Il testo che viene copiato da altre applicazioni mantiene la codifica e i caratteri originali dell'interruzione di riga. Ad esempio, quando il testo viene copiato da Blocco note e incollato in un file di testo in Visual Studio, il testo mantiene le stesse impostazioni che aveva in Blocco note.
 
@@ -56,4 +56,4 @@ Quando si apre un file con caratteri di interruzione di riga diversi, è possibi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

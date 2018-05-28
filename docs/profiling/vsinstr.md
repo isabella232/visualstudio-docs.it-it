@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f2857dc8a8bddcf3ea785abfe0b3a7aec806e9
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsinstr"></a>VSInstr
 Lo strumento VSInstr viene usato per instrumentare i file binari. Viene richiamato tramite la sintassi seguente:  
@@ -61,4 +61,4 @@ VSInstr [/U] filename [/options]
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Avvisi di VSInstr](../profiling/vsinstr-warnings.md)   
- [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)
+ [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)

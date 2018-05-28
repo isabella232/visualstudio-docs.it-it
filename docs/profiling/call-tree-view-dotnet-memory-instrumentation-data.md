@@ -12,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b33cffb8fba135043f316e6857f7da0ff138afe
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e05286c10758c19f1e3f5a5692f814a096763544
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET
 La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di strumentazione contiene i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati temporali e di memoria .NET per la funzione.  
   
  I valori nella visualizzazione Albero delle chiamate sono relativi alle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore dell'istanza della funzione e il numero totale o le dimensioni delle allocazioni nell'esecuzione della profilatura.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
+## <a name="highlight-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
  Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha creato gli oggetti più grandi o il numero maggiore di oggetti in memoria. Per visualizzare il percorso più attivo fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
+## <a name="set-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
  Ogni processo nell'esecuzione della profilatura viene visualizzato come nodo radice. Per impostare il nodo di inizio della visualizzazione Albero delle chiamate, fare clic con il pulsante destro del mouse sul nodo che si vuole impostare come nodo iniziale e selezionare **Imposta radice**.  
   
  Quando imposti il nodo radice, elimini dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo che si stava visualizzando, fare clic con il pulsante destro del mouse nella finestra della visualizzazione Albero delle chiamate e selezionare **Reimposta radice**.  

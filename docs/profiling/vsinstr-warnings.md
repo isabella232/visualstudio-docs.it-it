@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ea2bcf1770e8c20db61c93a2b4ed6516b0daff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 La tabella seguente elenca gli avvisi generati dallo strumento VSInstr.exe. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.  

@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Progetti e soluzioni, Opzioni (finestra di dialogo)
 Consente di impostare il comportamento di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in relazione a progetti e soluzioni. Per accedere a queste opzioni selezionare **Strumenti > Opzioni**, espandere **Progetti e soluzioni** e fare clic su **Generale**.
@@ -70,6 +70,12 @@ Se selezionata, viene visualizzata una finestra di messaggio che richiede se [!I
 **Chiedi conferma prima di spostare i file in un'altra posizione**
 
 Se selezionata, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] visualizza una finestra di messaggio di conferma prima che i percorsi dei file vengano modificati dalle azioni di Esplora soluzioni.
+
+**Riapri documenti al caricamento della soluzione (Visual Studio 2017 versione 15.8 Preview 2 e versioni successive)**
+ 
+Durante il caricamento della soluzione, riaprire automaticamente i documenti aperti nella sessione precedente. Se selezionata, i documenti aperti al momento della chiusura precedente della soluzione vengono aperti automaticamente quando viene caricata la soluzione.
+
+La riapertura di determinati tipi di file o finestre di progettazione può ritardare il caricamento della soluzione. Deselezionare questa opzione per migliorare le prestazioni di caricamento della soluzione se non si vuole ripristinare il contesto precedente della soluzione.
 
 ## <a name="locations-tab-options"></a>Opzioni della scheda Percorsi
 

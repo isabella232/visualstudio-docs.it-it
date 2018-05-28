@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e21b91ceda5b51a26633b7595aed4e0ee12059
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 40e28eb246b2c4611a15dc4ce2cf6b1b02dd0100
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati su conflitti
+# <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati sui conflitti
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Ogni nodo della funzione elenca tutte le funzioni che ha chiamato, il numero di volte per cui la funzione è stata bloccata e il tempo per il quale la funzione è stata bloccata perché in conflitto per una risorsa con altri thread o processi.  
   
  I valori nella visualizzazione Albero delle chiamate sono relativi alle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore dell'istanza della funzione e il numero totale di conflitti nell'esecuzione della profilatura.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
+## <a name="highlight-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione  
  Nella visualizzazione Albero delle chiamate è possibile espandere ed evidenziare il percorso di esecuzione del processo o della funzione che ha determinato il maggior numero di conflitti.  
   
 -   Per visualizzare il percorso più attivo fare clic con il pulsante destro del mouse sul processo o sulla funzione e quindi scegliere **Espandi percorso critico**.  
   
-## <a name="setting-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
+## <a name="set-the-call-tree-root-node"></a>Impostare il nodo radice dell'albero delle chiamate  
  Ogni processo nell'esecuzione della profilatura viene visualizzato come nodo radice. Per impostare il nodo di inizio della visualizzazione Albero delle chiamate, fare clic con il pulsante destro del mouse sul nodo che si vuole impostare come nodo iniziale e fare clic su **Imposta radice**.  
   
  Quando si imposta il nodo radice si eliminano dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo originale, fare clic con il pulsante destro del mouse nella visualizzazione Albero delle chiamate e fare clic su **Reimposta radice**.  
@@ -55,7 +55,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)   
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)   
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)   

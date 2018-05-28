@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="utilization-view"></a>Visualizzazione Uso
 La **visualizzazione Utilizzo** mostra le informazioni relative a CPU, GPU e altre risorse di sistema usate dal processo corrente. (Scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Viene indicato l'utilizzo medio dei core da parte del processo analizzato, del processo inattivo, del processo di sistema e di altri processi in esecuzione nel sistema nel tempo. Non viene indicato quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico. La visualizzazione viene generata dividendo il tempo di profilatura in brevi segmenti di tempo. Per ogni segmento, nel grafico viene rappresentato il numero medio di thread di processo in esecuzione nei core logici durante l'intervallo.  

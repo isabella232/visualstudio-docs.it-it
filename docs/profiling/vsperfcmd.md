@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Lo strumento **VSPerfCmd.exe** viene usato per avviare e arrestare la raccolta di dati sulle prestazioni. Viene usata la sintassi seguente:  
@@ -39,7 +39,7 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Abilita la profilatura tra sessioni di Windows. Usare solo con **Start**, **Attach** o **Launch**.|  
 |[User](../profiling/user-vsperfcmd.md) **:**[`domain\`]`username`|Consente l'accesso al servizio profiler all'account specificato. Usare solo con **Start**.|  
 |[WaitStart](../profiling/waitstart.md)[**:**`n`]|Attende l'inizializzazione del logger di raccolta dei dati. Se si specifica `n`, **VSPerfCmd** attende al massimo `n` secondi. Se non si specifica `n`, **VSPerfCmd** attenderà un tempo illimitato. Ciò semplifica l'uso di **VSPerfCmd** come parte di un processo batch.|  
-|[Counter](../profiling/counter.md) **:** `cfg`|Quando viene usato il metodi di campionamento per la profilatura, specifica un contatore di CPU e il numero di eventi da usare come intervallo di campionamento. È possibile campionare solo un valore di contatore.<br /><br /> Quando viene usato il metodo di profilatura tramite strumentazione, specifica un contatore di CPU da raccogliere a ogni punto di strumentazione. Usare solo con **Start:**`Trace`, **Attach**o **Launch**.|  
+|[Counter](../profiling/counter.md) **:** `cfg`|Quando viene usato il metodi di campionamento per la profilatura, specifica un contatore di CPU e il numero di eventi da usare come intervallo di campionamento. È possibile campionare solo un valore di contatore.<br /><br /> Quando viene usato il metodo di profilatura tramite strumentazione, specifica un contatore di CPU da raccogliere a ogni punto di strumentazione. Usare solo con **Start:**`Trace`, **Attach** o **Launch**.|  
 |[QueryCounters](../profiling/querycounters.md)|Visualizza un elenco di contatori CPU validi per il computer corrente.|  
 |[WinCounter](../profiling/wincounter.md) **:** *percorso*|Specifica un evento contatore delle prestazioni di Windows da includere con i dati contrassegnati di profilatura. Usare solo con **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Specifica l'intervallo di tempo (in millisecondi) tra gli eventi di raccolta di dati dei contatori delle prestazioni di Windows. Usare con **WinCounter**.|  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Sospende la profilatura per il thread specificato. Usare **ThreadOff** solo durante la profilatura con il metodo di strumentazione.|  
 |[Mark](../profiling/mark.md) **:** *NumContrassegno*[**,***TestoContrassegno***]**|Inserisce un contrassegno nel file dati di profilatura, con testo facoltativo.|  
   
-## <a name="sampling-method-options"></a>Opzioni del metodo di campionamento  
+## <a name="sample-method-options"></a>Opzioni del metodo di campionamento  
  Le opzioni seguenti sono disponibili solo quando si usa il metodo di campionamento per la profilatura.  
   
 |Opzione|Descrizione|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arresta la profilatura dei processi specificati. I processi possono essere identificati in base all'ID o al nome del processo. Se non viene specificato alcun processo, la profilatura viene interrotta per tutti i processi.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Raccoglie dati sull'allocazione di memoria .NET e sulla durata degli oggetti. Usare solo con l'opzione **VSPerfCmdLaunch**.|  
   
-### <a name="sampling-interval-options"></a>Opzioni per l'intervallo di campionamento  
+### <a name="sample-interval-options"></a>Opzioni per l'intervallo di campionamento  
  Le opzioni seguenti specificano il tipo e la durata degli intervalli di campionamento. L'opzione predefinita è **Timer**. È possibile specificare anche un contatore CPU come intervallo tramite l'opzione **Counter**. Queste opzioni possono essere specificate solo con **Launch** o con la prima operazione **Attach** di una sessione di profilatura.  
   
 |Opzione|Descrizione|  

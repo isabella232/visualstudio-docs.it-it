@@ -1,6 +1,6 @@
 ---
 title: Vai alla riga
-ms.date: 11/04/2016
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,22 +15,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af3db0e322a89188d2f767652f0bc30b79619d11
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bfbe70232537556bee826653d533bab8728e3d1c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="go-to-line-dialog-box"></a>Vai alla riga (finestra di dialogo)
 
-Questa finestra di dialogo consente di passare a una riga specifica nel documento attivo. Per accedere a questa finestra di dialogo, aprire un documento per la modifica e quindi scegliere **Vai** dal menu **Modifica**.
+La finestra di dialogo **Vai alla riga** consente di spostarsi su una riga specifica nel documento attivo. Per accedere a questa finestra di dialogo, aprire un documento per la modifica e quindi selezionare **Modifica** > **Vai a** > **Vai alla riga** oppure premere **CTRL**+**G**.
 
-## <a name="line-number-1---n"></a>Numero di riga (1 - `n`)
+![Finestra di dialogo Vai alla riga in Visual Studio](media/go-to-line-dialog-box.png)
 
-Consente di immettere il numero della riga del documento attivo a cui passare. Il numero immesso deve essere compreso tra 1 e `n`, il numero di righe nel documento corrente.
+## <a name="line-number-1---n"></a>Numero di riga (1 - \<n>)
+
+Nella casella **Numero di riga (1 - \<n >)** immettere il numero della riga nel documento attivo su cui ci si vuole spostare. Il numero immesso deve essere compreso tra 1 e l'ultimo numero di riga nel documento corrente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostazione di segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)
+- [Trovare codice con i comandi Vai a](../../ide/go-to.md)
+- [Impostare segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)
-- [Writing Code](../../ide/writing-code-in-the-code-and-text-editor.md) (Scrittura di codice)
+- [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)

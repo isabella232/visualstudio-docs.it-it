@@ -18,13 +18,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9ddcc2a374661525744e064929ca20daa83c97
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyzing-performance-tools-data"></a>Analisi dei dati degli strumenti per le prestazioni
+# <a name="analyze-performance-tools-data"></a>Analizzare i dati degli strumenti per le prestazioni
 I report sulle prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consentono di visualizzare e analizzare i problemi di prestazioni delle applicazioni. Questa sezione offre una panoramica dei report sulle prestazioni e delle visualizzazioni che è possibile usare per esaminare i dati sulle prestazioni.  
   
 ## <a name="common-tasks"></a>Attività comuni  
@@ -36,9 +36,9 @@ I report sulle prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](.
 |**Configurare, ordinare e filtrare le visualizzazioni dei report:** è possibile specificare e ordinare le colonne di dati da visualizzare in un report, ordinare le righe del report e filtrare i dati in modo da includere solo un intervallo di tempo specificato.|-   [Personalizzazione delle visualizzazioni dei report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Confronto tra file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)  
+ [Confrontare i file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)  
   
- [Salvataggio ed esportazione dei dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)  
+ [Salvare ed esportare i dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplora prestazioni](../profiling/performance-explorer.md)  

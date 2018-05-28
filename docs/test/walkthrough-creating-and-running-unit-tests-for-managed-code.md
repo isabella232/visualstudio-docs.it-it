@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 29472e2590a767c98c5674bce14712171f16fdbf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -285,7 +285,7 @@ L'esecuzione dei due metodi di test dimostra che i test funzionano correttamente
 
 Tuttavia, gli ultimi due metodi di test presentano alcuni problemi. Non è possibile determinare con certezza quale condizione nel metodo sottoposto a test genera l'eccezione quando si esegue uno dei due test. La possibilità di differenziare le due condizioni, ovvero una quantità di debito negativa o un importo superiore al saldo, renderebbe più affidabili i test.
 
-Tornare ad osservare il metodo sottoposto a test. Osservare che entrambe le istruzioni condizionali usano un costruttore `ArgumentOutOfRangeException` che accetta come parametro solo il nome dell'argomento:
+Tornare ad osservare il metodo sottoposto a test. Notare che entrambe le istruzioni condizionali usano un costruttore `ArgumentOutOfRangeException` che accetta come parametro solo il nome dell'argomento:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

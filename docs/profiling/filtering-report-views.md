@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="filtering-report-views"></a>Filtrare visualizzazioni rapporto
+# <a name="filter-report-views"></a>Filtrare le visualizzazioni report
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.  
   
  È anche possibile limitare un report a un intervallo di tempo usando la sequenza temporale grafica della visualizzazione Riepilogo. Vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -42,7 +42,6 @@ ms.lasthandoff: 04/19/2018
     |**Operator**|Selezionare l'operatore che specifica la relazione da impostare nella clausola tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|  
     |**Valore**|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Per creare un filtro report del profiler dalla visualizzazione report Contrassegni  
   
@@ -93,4 +92,4 @@ ms.lasthandoff: 04/19/2018
 2.  Specificare il percorso e il nome del file del filtro (VSPF) da salvare.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Personalizzazione delle visualizzazioni dei rapporti degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
+ [Personalizzazione delle visualizzazioni dei report sugli strumenti delle prestazioni](../profiling/customizing-performance-tools-report-views.md)

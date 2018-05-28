@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5912e6704a50884df2000afb7c12f82f7a8aa69f
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c51b981e7863db371d8e50ae13e48afbc7f270fc
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione (client) autonoma .NET Framework in esecuzione e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.  
   
 > [!NOTE]
@@ -30,7 +30,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
   
  Per terminare una sessione di profilatura, il profiler non deve essere più connesso all'applicazione e deve essere arrestato in modo esplicito. Nella maggior parte dei casi è consigliabile cancellare le variabili di ambiente di profilatura alla fine di una sessione di profilatura.  
   
-## <a name="attaching-the-profiler"></a>Connessione del profiler  
+## <a name="attach-the-profiler"></a>Connettere il profiler  
   
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Per connettere il profiler a un'applicazione .NET Framework in esecuzione  
   
@@ -80,9 +80,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Imposta l'evento di campionamento sulle chiamate di sistema dal processo al kernel del sistema operativo (syscall). Se si specifica `Interval`, imposta il numero di chiamate tra campioni. Il valore predefinito è 10.|  
     |[/counter](../profiling/counter.md) **:** `Config`|Imposta l'evento e l'intervallo di campionamento sul contatore delle prestazioni del processore e sull'intervallo specificati in `Config`.|  
   
-    -  
+     
   
-## <a name="controlling-data-collection"></a>Controllo della raccolta di dati  
+## <a name="control-data-collection"></a>Controllare la raccolta dati  
  Quando è in esecuzione l'applicazione di destinazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file di dati del profiler usando le opzioni **VSPerfCmd.exe**. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
@@ -95,7 +95,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato da `PID`.|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** avvia la raccolta dei dati per il processo specificato da `PID` o dal nome del processo (ProcName). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|  
   
-## <a name="ending-the-profiling-session"></a>Arresto della sessione di profilatura  
+## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura  
  Per terminare una sessione di profilatura, il profiler deve essere disconnesso da tutti i processi profilati e deve essere arrestato in modo esplicito. È possibile disconnettere il profiler da un'applicazione profilata tramite il metodo di campionamento chiudendo l'applicazione o chiamando l'opzione **VSPerfCmd /detach**. È quindi possibile chiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /off** cancella le variabili di ambiente di profilatura.  
   
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  

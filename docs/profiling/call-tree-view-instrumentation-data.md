@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf8e9176c389aecf2844f3e4bcaeea9bcaa5803
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3b42cce6c9134a668d5096150d986e950ed8a8e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione
 I valori di una funzione nell'albero delle chiamate indicano il tempo per le istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore delle istanze della funzione con il tempo inclusivo trascorso totale di tutte le funzioni nell'esecuzione della profilatura.  
@@ -85,6 +85,6 @@ I valori di una funzione nell'albero delle chiamate indicano il tempo per le ist
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)   
  [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

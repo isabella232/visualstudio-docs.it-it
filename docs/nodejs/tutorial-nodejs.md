@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 259524aa8f4bb20097f5f5504c890ee7f4cc3b78
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app, quindi si esploreranno alcune funzionalità dell'ambiente IDE e si eseguirà l'app. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
@@ -32,7 +32,7 @@ In questa esercitazione si imparerà a:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
+* È necessario che siano installati Visual Studio 2017 e il carico di lavoro di sviluppo Node.js.
 
     Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
 
@@ -95,6 +95,8 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
+    Il codice precedente aggiunge markup per generare dinamicamente una pagina HTML con un titolo e un messaggio di benvenuto. La pagina include anche il codice per visualizzare un'immagine che cambia ogni volta che si preme un pulsante.
+
 1. Nella cartella Route aprire *index.js*.
 
 1. Aggiungere il codice seguente prima della chiamata a `router.get`:
@@ -110,6 +112,8 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
     }
     ````
 
+    Questo codice crea un oggetto dati che verrà passato alla pagina HTML generata in modo dinamico.
+
 1. Sostituire la chiamata alla funzione `router.get` con il codice seguente:
 
     ```js
@@ -117,14 +121,16 @@ Per prima cosa si crea un progetto di applicazione Web Node.js.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+    
+    Il codice precedente imposta la pagina corrente usando l'oggetto router di Express ed esegue il rendering della pagina, passando il titolo e l'oggetto dati alla pagina.
 
-    È presente un errore nella riga di codice contenente `res.render`. È necessario correggerlo prima di poter eseguire l'app. L'errore verrà corretto nella prossima sezione.
+    Per illustrare diverse funzionalità di Visual Studio, è incluso un errore nella riga di codice contenente `res.render`. È necessario correggerlo prima di poter eseguire l'app. L'errore verrà corretto nella prossima sezione.
 
 ## <a name="use-intellisense"></a>Usare IntelliSense
 
 1. In *index.js* passare alla riga di codice contenente `res.render`.
 
-1. Dopo la stringa `data` digitare `: get`. IntelliSense visualizza la funzione `getData`. Selezionare `getData`.
+1. Posizionare il cursore dopo la stringa `data` e digitare `: get`. IntelliSense visualizzerà la funzione `getData`. Selezionare `getData`.
 
     ![Usare IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 

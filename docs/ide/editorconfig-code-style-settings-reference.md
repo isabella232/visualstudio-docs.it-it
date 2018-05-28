@@ -18,11 +18,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2a6642b03d5e49763cd18bccae8f88ff1f7c5bd4
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: a61f2cd0e961aaa726f9a56cf75c4efb0ed77ae9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
@@ -84,7 +84,7 @@ L'elenco seguente illustra le regole di convenzione del linguaggio consentite:
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - Impostazioni di stile del codice C#
-    - [Tipi impliciti ed espliciti](#var)
+    - [Tipi impliciti ed espliciti](#implicit-and-explicit-types)
         - csharp\_style\_var\_for\_built\_in_types
         - csharp\_style\_var\_when\_type\_is_apparent
         - csharp\_style\_var_elsewhere
@@ -592,7 +592,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Le regole di stile illustrate in questa sezione sono applicabili solo a C#.
 
-#### <a name="var"></a>Tipi impliciti ed espliciti
+#### <a name="implicit-and-explicit-types"></a>Tipi impliciti ed espliciti
 
 Le regole di stile illustrate in questa sezione (ID regola IDE0007 e IDE0008) riguardano l'uso della parola chiave [var](/dotnet/csharp/language-reference/keywords/var) rispetto a un tipo esplicito in una dichiarazione di variabile. Questa regola può essere applicata separatamente ai tipi predefiniti, quando il tipo è apparente, e altrove.
 

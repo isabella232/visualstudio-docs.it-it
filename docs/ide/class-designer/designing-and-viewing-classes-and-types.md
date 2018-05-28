@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Progettare e visualizzare classi e tipi con Progettazione classi
 
@@ -58,5 +58,5 @@ Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in docu
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Scrivere codice nell'editor](../writing-code-in-the-code-and-text-editor.md)
+- [Funzionalità dell'editor del codice](../writing-code-in-the-code-and-text-editor.md)
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../../modeling/map-dependencies-across-your-solutions.md)

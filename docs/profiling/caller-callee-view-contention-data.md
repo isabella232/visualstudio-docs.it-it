@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9206798c11fa0e5f63245235d633b755317e3cd2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="caller--callee-view----contention-data"></a>Visualizzazione Chiamante/chiamato: dati sui conflitti
+# <a name="callercallee-view----contention-data"></a>Visualizzazione Chiamante/chiamato: dati sui conflitti
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui conflitti per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.  
   
  Nella griglia centrale **Funzione corrente** visualizza le informazioni sui conflitti per la funzione selezionata. I valori includono tutti i conflitti di blocco per la funzione.  
@@ -53,5 +53,5 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui 
  [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)   
  [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)   
  [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)

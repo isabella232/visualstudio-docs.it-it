@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente di controllare quali tracce vengono raccolte.  Nella finestra sono presenti le schede seguenti: Simboli, Just My Code, Buffer, Filtro, Eventi CLR, Marcatori, Provider e File.  
@@ -65,7 +65,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
   
  È possibile usare l'elenco dei livelli di importanza per filtrare gli eventi che hanno un'importanza o un livello ETW inferiore al valore specificato.  
   
-### <a name="configuring-an-existing-provider"></a>Configurazione di un provider esistente  
+### <a name="configure-an-existing-provider"></a>Configurare un provider esistente  
  Per modificare le impostazioni associate a un provider esistente, selezionarlo dall'elenco e quindi scegliere il pulsante **Modifica provider**.  È possibile modificare le impostazioni relative al nome, al GUID e al filtro.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrare i dati del marcatore all'esterno dei report del visualizzatore di concorrenza  

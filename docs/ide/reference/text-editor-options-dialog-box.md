@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fc0004d076a36675ff6e9f8a9405d9062446d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d746426a5db9a3b71ba3fd3703887f9e4c894ef9
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="text-editor-options-dialog-box"></a>Finestra di dialogo Opzioni dell'editor di testo
 
@@ -32,4 +32,4 @@ Le opzioni dell'editor nella finestra di dialogo **Opzioni** consentono di perso
 
 ### <a name="see-also"></a>Vedere anche
 
-In [Scrittura di codice](../../ide/writing-code-in-the-code-and-text-editor.md) sono descritti i diversi modi per usare l'editor del codice.
+In [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md) sono descritti i diversi modi per usare l'editor del codice.

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
 È possibile aggiungere elementi, come controlli, layout e forme, all'app in XAML, nel codice o usando la finestra di progettazione XAML. Questo argomento descrive come usare gli elementi nella finestra di progettazione XAML in Visual Studio o in Blend per Visual Studio.
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/26/2018
 
         -   **Porta in secondo piano** per portare l'elemento dietro tutti gli altri nell'ordine.
 
-     Modificare la proprietà **ZIndex** nella sezione **Layout** della finestra Proprietà. Per gli elementi che si sovrappongono, la proprietà **ZIndex** ha la precedenza sull'ordine degli elementi indicato nella finestra Struttura documento. Un elemento con un valore **ZIndex** inferiore viene visualizzato in primo piano quando gli elementi si sovrappongono.
+     Modificare la proprietà **ZIndex** nella sezione **Layout** della finestra Proprietà. Per gli elementi che si sovrappongono, la proprietà **ZIndex** ha la precedenza sull'ordine degli elementi indicato nella finestra Struttura documento. Un elemento con un valore **ZIndex** maggiore viene visualizzato in primo piano quando gli elementi si sovrappongono.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Modifica dell'allineamento di un elemento
  È possibile allineare elementi nella tavola da disegno usando i comandi di menu o trascinando gli elementi sulle guide di allineamento.
@@ -74,7 +74,7 @@ ms.lasthandoff: 04/26/2018
 
      Quando i bordi sono allineati, viene visualizzato un *limite di allineamento* per indicare l'allineamento. Il limite di allineamento è indicato attraverso una riga tratteggiata rossa. I limiti di allineamento vengono visualizzati solo quando è abilitato l' **allineamento alle guide di allineamento** . Per un'illustrazione della tavola da disegno con un limite di allineamento, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Modifica dei margini di un elemento
+## <a name="changing-an-elements-margins"></a>Modifica dei margini di un elemento
  I margini nella finestra di progettazione XAML determinano la quantità di spazio vuoto attorno a un elemento sulla tavola da disegno. Ad esempio, i margini specificano la quantità di spazio tra i bordi esterni di un elemento e i limiti di un pannello `Grid` che contiene l'elemento. I margini specificano anche la quantità di spazio tra gli elementi contenuti in un oggetto `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Per modificare i margini di un elemento nella finestra Proprietà

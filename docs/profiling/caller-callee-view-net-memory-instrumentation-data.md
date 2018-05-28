@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: baf4edeb67d9c1c66ce6e6542b9684b29a8c358b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6005bfcd4c69220c26929a8ad57f0e37923f388c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET
 La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET raccolti con il metodo di strumentazione consente di visualizzare i dati relativi ad allocazione e temporizzazione per una funzione selezionata e le relative funzioni padre e figlio di tale funzione. La visualizzazione Chiamante/chiamato contiene tre griglie.  
@@ -106,6 +106,6 @@ La visualizzazione Chiamante/chiamato dei dati di profilatura della memoria .NET
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Personalizzare colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)   
- [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Visualizzazione Chiamante/chiamato: dati di strumentazione](../profiling/caller-callee-view-instrumentation-data.md)   
  [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)

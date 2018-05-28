@@ -9,13 +9,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f29251a7b8f5e38e5b74a6aabd17ae0ccfec7651
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyze-memory-usage"></a>Analizzare l'uso della memoria
+# <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 Usare lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger per rilevare perdite di memoria e usi inefficienti della memoria. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo. È possibile raccogliere snapshot di app.NET, native o in modalità mista (.NET e native).  
   
 -   È possibile analizzare un singolo snapshot per ottenere informazioni sull'impatto relativo dei tipi di oggetto sull'uso della memoria e per trovare nell'app il codice che usa la memoria in modo non efficiente.  
@@ -32,7 +32,7 @@ Per istruzioni dettagliate, vedere l'esercitazione sull'[analisi dell'uso della 
 
  [Analizzare CPU e memoria in fase di debug](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Blog su Visual C++: profilatura della memoria in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
+ [Blog su Visual C++: Profilatura della memoria in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="see-also"></a>Vedere anche
  [Profilatura in Visual Studio](../profiling/index.md)  

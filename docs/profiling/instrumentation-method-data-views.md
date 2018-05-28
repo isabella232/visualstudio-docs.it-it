@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d9fb3d0d90c5832620e8ab8642b491c0b68f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1d1582560611a5c47e3b5e24767d9a2b9c03f5a9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Visualizzazione Riepilogo](../profiling/summary-view-instrumentation-data.md)  
  Elenca le funzioni che hanno richiesto la maggiore quantità di tempo e le funzioni che hanno eseguito la maggior parte del lavoro individuale.  
   
@@ -46,8 +46,8 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
  Elenca inizio, fine e durata per tutti i processi sottoposti alla profilatura.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)  
- Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di campionamento.  
+ [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)  
+ Informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler generati tramite il metodo di campionamento.  
   
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler che includono dati di memoria .NET.  

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file CSV.  
@@ -91,4 +91,4 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**QueryDiffTables**|Elenco delle tabelle e delle colonne valide per i due file di report specificati.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)
+ [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)

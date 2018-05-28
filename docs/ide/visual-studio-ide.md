@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0fdc6acd2c14331d34ccb3f3435b1ee5fcc44a14
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Panoramica dell'ambiente IDE di Visual Studio
 

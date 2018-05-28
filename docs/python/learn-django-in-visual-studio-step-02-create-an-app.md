@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Esercitazione, passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -206,7 +206,7 @@ I passaggi seguenti descrivono l'uso dei modelli di pagina:
         )
     ```
 
-    Il primo argomento per `render`, come si può notare, è l'oggetto richiesta, seguito dal percorso relativo del file di modello all'interno della cartella `templates` dell'app. Un file di modello è denominato in base alla visualizzazione che supporta, se appropriato. Il terzo argomento per `render` è quindi un dizionario di variabili cui fa riferimento il modello. È possibile includere oggetti nel dizionario e in questo caso una variabile nel modello può fare riferimento a `{{ object.property }}`.
+    Il primo argomento per `render`, come si può notare, è l'oggetto richiesta, seguito dal percorso relativo del file di modello all'interno della cartella `templates` dell'app. Un file modello è denominato in base alla visualizzazione che supporta, se appropriato. Il terzo argomento per `render` è quindi un dizionario di variabili cui fa riferimento il modello. È possibile includere oggetti nel dizionario e in questo caso una variabile nel modello può fare riferimento a `{{ object.property }}`.
 
 1. Eseguire il progetto e osservare l'output. Dovrebbe essere visualizzato un messaggio simile a quello mostrato nel passaggio 2 2, che indica che il modello funziona.
 

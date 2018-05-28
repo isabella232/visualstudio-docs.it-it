@@ -1,7 +1,7 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="3701"></a>3.7.0.1
+ Data di rilascio 07-05-2018
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Programma di installazione:**
+
+    -   Correzione di un problema di dipendenza durante l'uso di build sperimentali.
+
+## <a name="3700"></a>3.7.0.0
+ Data di rilascio 07-05-2018
+
+### <a name="new-features"></a>Nuove funzionalità
+
+-   **Debug:**
+
+    -   Aggiunta del supporto per il debug orchestrato (debug di più lettori/editor con la stessa sessione di Visual Studio).
+    
+    -   Aggiunta del supporto per il debug del lettore USB Android.
+    
+    -   Aggiunta del supporto per il debug del lettore UWP/IL2CPP.
+
+-   **Valutazione:**
+
+    -   Aggiunta del supporto per gli identificatori esadecimali.
+    
+    -   Miglioramento dell'esperienza di valutazione della finestra delle espressioni di controllo.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+-   **Integrazione:**
+
+    -   Correzione dell'utilizzo delle impostazioni di eccezione.
+
+-   **Project Generation:**
+
+    -   Esclusione delle unità di compilazione di gestione pacchetti dalla generazione.
 
 ## <a name="3605"></a>3.6.0.5
  Rilasciato in data 13.03.2018
@@ -26,7 +64,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 -   **Project Generation:**
 
-    -   Aggiunta del supporto per il nuovo generatore di progetto in Unity 2018.1
+    -   Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
