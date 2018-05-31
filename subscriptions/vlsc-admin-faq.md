@@ -9,11 +9,12 @@ description: Domande frequenti sulla migrazione dell'amministrazione del Volume 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336126"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrazione dell'amministrazione delle sottoscrizioni di Visual Studio
 
@@ -78,7 +79,7 @@ Si continuerà a gestire le sottoscrizioni tramite VLSC fino al ricevimento del 
 Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e selezionare il percorso seguente: **Sottoscrizioni** > **Sottoscrizioni di Visual Studio**. Il PCN si trova sotto **Agreement/Public Customer Number Results** (Contratti/Risultati numero cliente pubblico). Seguire la procedura dettagliata sull'individuazione del numero PCN riportato in questo [articolo della Guida](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>In che modo si stabilisce chi è il contatto principale o per le comunicazioni?
-Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e selezionare percorso seguente: **Licenze > Riepilogo relazione** Selezionare **Licensing ID > Contacts** (ID di licenza > Contatti). Seguire la procedura dettagliata sull'individuazione del contatto principale o per le comunicazioni in questo [articolo della Guida](/find-primary-contact/). 
+Accedere a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e selezionare percorso seguente: **Licenze > Riepilogo relazione** Selezionare **Licensing ID > Contacts** (ID di licenza > Contatti). Seguire la procedura dettagliata sull'individuazione del contatto principale o per le comunicazioni in questo [articolo della Guida](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Cosa accade se il contatto principale o per le comunicazioni ha lasciato o non lavora più per la società oppure non è disponibile per completare il caricamento?
 È necessario [contattare l'assistenza](https://www.visualstudio.com/subscriptions/support/#talktous) e comunicare il messaggio di posta elettronica usato in VLSC per la gestione delle sottoscrizioni. Dopo aver eseguito la verifica, l'assistenza offrirà supporto per eseguire il processo di caricamento. 
@@ -106,8 +107,8 @@ Per informazioni aggiornate sulla migrazione, visitare la [pagina Web](https://a
 
 - [Supporto](https://www.visualstudio.com/subscriptions/support/) per le sottoscrizione di Visual Studio e la gestione 
 
-- [Come individuare il numero PCN](/find-pcn/)
+- [Come individuare il numero PCN](find-pcn.md)
 
-- [Come individuare il contatto principale o per le comunicazioni](/find-primary-contact/) 
+- [Come individuare il contatto principale o per le comunicazioni](find-primary-contact.md) 
 
 - [Video](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) su caricamento dell'organizzazione e amministratori di gestione 
