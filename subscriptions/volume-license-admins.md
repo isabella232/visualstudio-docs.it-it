@@ -9,11 +9,12 @@ description: Informazioni su come gli amministratori delle sottoscrizioni posson
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335892"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accesso al portale e gestione degli amministratori per le sottoscrizioni acquistate tramite i contratti multilicenza
 
@@ -36,7 +37,7 @@ Quando l'organizzazione è pronta per il processo di onboarding nel portale di a
 
      a. I contatti principali e per le comunicazioni ricevono un messaggio di posta elettronica un collegamento e le ultime tre cifre del numero PCN.  Se il contatto principale o per le comunicazioni riceve più di un messaggio di posta elettronica, significa che ha più PCN. Sarà necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.
 
-     b. Per ottenere il PCN completo, il contatto principale dovrà accedere al Volume Licensing Service Center. [Istruzioni per l'individuazione del PCN](/find-pcn/) 
+     b. Per ottenere il PCN completo, il contatto principale dovrà accedere al Volume Licensing Service Center. [Istruzioni per l'individuazione del PCN](find-pcn.md) 
 
      c. Dopo aver ottenuto il PCN, sarà necessario selezionare il collegamento univoco richiesto per accedere. Potranno accedere usando un account di lavoro o dell'istituto di istruzione (se l'organizzazione si trova in Azure AAD) o con un Account Microsoft (MSA) se l'organizzazione non è presente in AAD. 
 
@@ -46,6 +47,6 @@ Quando l'organizzazione è pronta per il processo di onboarding nel portale di a
 
 3.  Accesso al nuovo portale per la gestione delle sottoscrizioni. Una volta eseguita la migrazione dell'organizzazione, i nuovi amministratori e amministratoti con privilegi elevati registrati, riceveranno dei messaggi di posta elettronica per effettuare l'accesso al nuovo portale e iniziare a gestire le sottoscrizioni.  
 
-Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Vedere l'argomento [Trova il contatto principale](/find-primary-contact/) per la procedura per individuare il contatto principale/per le comunicazioni nel Volume Licensing Service Center.
+Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Vedere l'argomento [Trova il contatto principale](find-primary-contact.md) per la procedura per individuare il contatto principale/per le comunicazioni nel Volume Licensing Service Center.
 
 Se si è già stati configurati come amministratore, è possibile passare direttamente al portale di amministrazione delle sottoscrizioni di Visual Studio all'indirizzo: [https://manage.visualstudio.com](https://manage.visualstudio.com). 

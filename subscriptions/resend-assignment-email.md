@@ -9,11 +9,12 @@ description: Informazioni su come inviare di nuovo l'assegnazione delle sottoscr
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ee41426aa845f8a6c7ae2b414bec7bc3a814bcfe
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2edabf44637672f45241299703cb3d3f88348b6c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335957"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Come inviare di nuovo i messaggi di posta elettronica di assegnazione delle sottoscrizioni nel portale di gestione delle sottoscrizioni di Visual Studio
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/27/2018
 Il processo per inviare di nuovo i messaggi di posta elettronica di assegnazione dall'interno del portale manage.visualstudio.com è molto semplice:
 
 1. Visitare il portale [manage.visualstudio.com](https://manage.visualstudio.com) e accedere. 
-2. Usare la scheda **Filtro** per cercare il sottoscrittore a cui si vuole inviare di nuovo il messaggio di posta elettronica di assegnazione. (Per altre informazioni sui filtri, vedere [Cercare una sottoscrizione](/visualstudio/subscriptions/search-license).)
+2. Usare la scheda **Filtro** per cercare il sottoscrittore a cui si vuole inviare di nuovo il messaggio di posta elettronica di assegnazione. (Per altre informazioni sui filtri, vedere [Cercare una sottoscrizione](search-license.md).)
 3. Fare clic sui sottoscrittori.  È possibile usare CTRL+clic o MAIUSC+clic per selezionare più sottoscrittori.
 4. Fare clic su **Invia di nuovo** nella parte superiore dei risultati di ricerca.  
 
