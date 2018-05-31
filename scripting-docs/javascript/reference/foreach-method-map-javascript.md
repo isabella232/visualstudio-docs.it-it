@@ -1,27 +1,29 @@
 ---
 title: Metodo forEach (Map) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335801"
 ---
 # <a name="foreach-method-map-javascript"></a>Metodo forEach (Map) (JavaScript)
 Esegue l'azione specificata per ogni elemento in una mappa.  
@@ -37,10 +39,10 @@ mapObj.forEach(callbackfn[, thisArg])
  Obbligatorio. Oggetto `Map`.  
   
  `callbackfn`  
- Obbligatorio. La funzione che `forEach` chiama una volta per ogni elemento nella mappa. `callbackfn`accetta fino a tre argomenti. `forEach`chiamate di `callbackfn` funzione una sola volta per ogni elemento nella mappa.  
+ Obbligatorio. La funzione che `forEach` chiama una volta per ogni elemento nella mappa. `callbackfn` accetta fino a tre argomenti. `forEach` chiamate di `callbackfn` funzione una volta per ogni elemento nella mappa.  
   
  `thisArg`  
- Parametro facoltativo. Un oggetto che il `this` (parola chiave) possono fare riferimento al `callbackfn` (funzione). Se `thisArg` viene omesso, si utilizza `undefined` come valore `this`.  
+ Facoltativo. Un oggetto che il `this` (parola chiave) possono fare riferimento al `callbackfn` (funzione). Se `thisArg` viene omesso, si utilizza `undefined` come valore `this`.  
   
 ## <a name="exceptions"></a>Eccezioni  
  Se l'argomento `callbackfn` non è un oggetto funzione, viene generata un'eccezione `TypeError`.  
@@ -68,8 +70,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

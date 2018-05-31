@@ -10,43 +10,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a12cdea552c1008f3e26c868c206ccabaebced91
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ab274f76463c8a58203c9e004a3727b7ed2ed59e
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335905"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per le applicazioni client autonome .NET tramite il metodo di campionamento dalla riga di comando.  
   
-## <a name="common-tasks"></a>Attività comuni  
+## <a name="common-tasks"></a>Attività comuni
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Avviare un'applicazione e sottoporre a profilatura la memoria .NET**|-   [How to: Launch a .NET Framework Application with the Profiler to Collect Memory Data](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md) (Procedura: Avviare un'applicazione .NET Framework con il profiler per raccogliere dati di memoria)|  
-|**Connettere il profiler a un'applicazione .NET**|-   [How to: Attach the Profiler to a .NET Framework Application to Collect Memory Data](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md) (Procedura: Connettere il profiler a un'applicazione .NET Framework per raccogliere dati di memoria)|  
+|**Avviare un'applicazione e sottoporre a profilatura la memoria .NET**|-   [Procedura: Avviare un'applicazione .NET Framework con il profiler per raccogliere dati di memoria](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Connettere il profiler a un'applicazione .NET**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework per raccogliere dati di memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumentare un'applicazione per raccogliere dati di memoria .NET**|-   [Procedura: Instrumentare un componente autonomo .NET Framework e raccogliere dati di memoria con il profiler](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
-## <a name="related-tasks"></a>Attività correlate  
+## <a name="related-tasks"></a>Attività correlate
   
-### <a name="profiling-stand-alone-applications"></a>Profilatura di applicazioni autonome  
-  
-|Attività|Contenuti correlati|  
-|----------|---------------------|  
-|**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccolta di statistiche delle applicazioni tramite campionamento](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccolta di dati di intervallo dettagliati tramite strumentazione](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**Sottoporre a profilatura i conflitti di risorse e le attività dei thread**|-   [Raccolta di dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Aggiunta di dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-  
-### <a name="profiling-net-memory-data"></a>Profilatura di dati di memoria .NET  
+### <a name="profile-stand-alone-applications"></a>Sottoporre a profilatura applicazioni autonome  
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Profilatura di applicazioni ASP.NET**|-   [Collecting Memory Data](../profiling/collecting-memory-data-from-an-aspnet-web-application.md) (Raccolta di dati relativi alla memoria)|  
-|**Profilatura di servizi**|-   [Collecting .NET Memory Data](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md) (Raccolta di dati di memoria .NET)|  
+|**Eseguire la profilatura tramite il metodo di campionamento**|-   [Raccogliere statistiche dell'applicazione tramite campionamento](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccogliere dati di intervallo dettagliati tramite la strumentazione](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
+|**Sottoporre a profilatura i conflitti di risorse e le attività dei thread**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
+|**Aggiunta di dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+
   
-### <a name="analyzing-net-memory-data-views-and-reports"></a>Analisi di visualizzazioni dati e di report di memoria .NET  
+### <a name="profile-net-memory-data"></a>Sottoporre a profilatura i dati di memoria .NET  
+  
+|Attività|Contenuti correlati|  
+|----------|---------------------|  
+|**Profilatura di applicazioni ASP.NET**|-   [Raccogliere dati di memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Profilatura di servizi**|-   [Raccogliere dati di memoria .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
+  
+### <a name="analyze-net-memory-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di memoria .NET  
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Riferimenti  

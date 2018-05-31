@@ -9,11 +9,12 @@ description: Configurazione degli amministratori per le sottoscrizioni cloud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3c48c89a729f7eeb26680163c997669f3976e417
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335684"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurazione degli amministratori per le sottoscrizioni cloud di Visual Studio
 
@@ -46,5 +47,5 @@ Il sottoscrittore designato viene visualizzato al centro della pagina con il ruo
 Il nuovo amministratore potrà ora accedere al [portale di gestione](https://manage.visualstudio.com), selezionare la stessa sottoscrizione di Azure usata per l'acquisto delle sottoscrizioni cloud dall'elenco nell'angolo superiore sinistro della pagina e iniziare a gestire le sottoscrizioni. 
 
 
-Per informazioni sulle sottoscrizioni cloud di Visual Studio, vedere [Panoramica](/vscloud-overview/) in Acquisto di sottoscrizioni cloud. Per acquistare sottoscrizioni cloud di Visual Studio, visitare Visual Studio Marketplace all'indirizzo [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
+Per informazioni sulle sottoscrizioni cloud di Visual Studio, vedere [Panoramica](vscloud-overview.md) in Acquisto di sottoscrizioni cloud. Per acquistare sottoscrizioni cloud di Visual Studio, visitare Visual Studio Marketplace all'indirizzo [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 
