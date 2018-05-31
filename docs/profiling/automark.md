@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 922f6f40389277bed7da7b960fae341d7afe70da
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: f63ee0e28a432e43f30377b9f876004b69cd13dc
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335733"
 ---
 # <a name="automark"></a>AutoMark
 L'opzione **AutoMark** specifica il numero di millisecondi tra diverse raccolte di eventi del contatore delle prestazioni del software Windows. I contatori delle prestazioni di Windows sono specificati nell'opzione **WinCounter**.  
@@ -45,6 +46,6 @@ VSPerfCmd.exe /Launch:TestApp.exe
   
 ## <a name="see-also"></a>Vedere anche  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+ [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

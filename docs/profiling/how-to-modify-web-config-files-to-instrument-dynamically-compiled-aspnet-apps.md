@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21a4916e9e8398096e239ca1736238b0ffe8145
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336032"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 È possibile usare il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati di intervallo dettagliati, dati relativi all'allocazione di memoria .NET e dati di durata degli oggetti .NET da applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico.  
   
  Questo argomento descrive come modificare il file di configurazione web.config per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
@@ -75,15 +76,16 @@ ms.lasthandoff: 05/11/2018
   
      `PathToASPNetHelperDll` è l'URL del file di Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene installato nel percorso predefinito, il valore **href** sarà `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`.  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
             <assemblyBinding   
                 xmlns="urn:schemas-microsoft-com:asm.v1"  
             >  
                 <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    <assemblyIdentity name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"
+                        culture="neutral"   
                     />  
                     <codeBase   
                         version="10.0.0.0"  
@@ -110,7 +112,7 @@ ms.lasthandoff: 05/11/2018
     |--------------------|---------------------|  
     |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -152,7 +154,7 @@ ms.lasthandoff: 05/11/2018
   
      `PerformanceToolsFolder` è il percorso dei file eseguibili del profiler. Se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] viene installato nel percorso predefinito, il valore sarà **C:\Programmi\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**  
   
-```  
+```xml  
     <configuration>  
         <runtime>  
         . . .  
@@ -176,7 +178,7 @@ ms.lasthandoff: 05/11/2018
 ## <a name="example"></a>Esempio  
  Di seguito è riportato un file web.config completo che consente la strumentazione e la profilatura di applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico. In questo esempio si presuppone che non vi siano state altre impostazioni nel file prima della modifica.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
     <configuration>  
         <runtime>  

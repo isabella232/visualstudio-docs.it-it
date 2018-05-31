@@ -9,11 +9,12 @@ description: Elenco di download del software inclusi nella sottoscrizione di Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c59565e903947df54ec0ae593421ee0cc447e8c5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7958ccedb28a14763264cd590e83d5e8e7fbbcdf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335840"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>Come è possibile sapere qual è il software disponibile per il download?
 
@@ -21,7 +22,7 @@ L'[elenco di download del software](http://download.microsoft.com/download/1/5/4
 
 Se è già disponibile una sottoscrizione di Visual Studio: 
 1. Passare a [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
-2. Accedere alla sottoscrizione.  (Informazioni per l'[accesso](/visualstudio/subscriptions/signing-in).)
+2. Accedere alla sottoscrizione.  (Informazioni per l'[accesso](signing-in.md).)
 3. Dopo aver completato l'accesso sarà possibile cercare i download desiderati.  È anche possibile visualizzare un elenco di download popolari, che possono essere ordinati in base a vari criteri. 
 
 Per trovare rapidamente i prodotti, usare le funzioni di "Ricerca" nella parte superiore della pagina oppure fare clic sui diversi tipi di prodotto a sinistra.
