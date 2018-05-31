@@ -1,6 +1,6 @@
 ---
-title: Visualizzare la struttura del codice in Visual Studio
-ms.date: 11/04/2016
+title: Visualizzare la struttura del codice tramite la visualizzazione delle classi, la gerarchia delle chiamate, il visualizzatore oggetti e la finestra di definizione del codice
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,7 +13,7 @@ f1_keywords:
 - vs.componentpicker
 - vs.callbrowser
 helpviewer_keywords:
-- document outline window.
+- document outline window
 - Visual Studio, object browser
 - call hierarchy
 - Visual Studio, document outline window
@@ -27,26 +27,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336139"
 ---
-# <a name="view-the-structure-of-code"></a>Visualizzare la struttura del codice
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
-È possibile esaminare oggetti e membri in progetti di Visual Studio, componenti .NET Framework, componenti COM, librerie a collegamento dinamico (DLL) e librerie dei tipi (TLB).
+È possibile esaminare le classi e i relativi membri in Visual Studio usando diverse finestre degli strumenti, tra cui **Visualizzazione classi**, **Gerarchia di chiamata**, **Visualizzatore oggetti** e **Definizione codice** (solo C++). Queste finestre degli strumenti consentono di esaminare il codice in progetti di Visual Studio, componenti .NET Framework, componenti COM, librerie a collegamento dinamico (DLL) e librerie dei tipi (TLB).
 
-È anche possibile usare **Esplora soluzioni** per esplorare i tipi e i membri nei progetti, cercare simboli, visualizzare la gerarchia di chiamata di un metodo, individuare i riferimenti dei simboli ed eseguire altre attività senza dover passare tra le varie finestre degli strumenti elencati in precedenza.
+È anche possibile usare **Esplora soluzioni** per esplorare i tipi e i membri nei progetti, cercare simboli, visualizzare la gerarchia di chiamata di un metodo, individuare i riferimenti dei simboli ed eseguire altre attività senza dover passare tra varie finestre degli strumenti.
 
-Se si ha Visual Studio Enterprise, è possibile usare mappe del codice per visualizzare la struttura del codice e le relative dipendenze attraverso l'intera soluzione ed eseguire il drill-down nelle parti del codice di interesse. Per altre informazioni, vedere [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) (Eseguire il mapping delle dipendenze nelle soluzioni).
-
-> [!NOTE]
-> L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.
+Se si ha Visual Studio Enterprise Edition, è possibile usare *mappe del codice* per visualizzare la struttura del codice e le relative dipendenze per l'intera soluzione. Per altre informazioni, vedere [Mappare le dipendenze con le mappe del codice](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Visualizzazione classi (Visual Basic, C#, C++)
 
-**Visualizzazione classi** viene visualizzato come parte di **Esplora soluzioni** nonché in una finestra separata. La finestra **Visualizzazione classi** visualizza gli elementi di un'applicazione. Nel riquadro superiore vengono visualizzati spazi dei nomi, tipi, enumerazioni, interfacce e classi e nel riquadro inferiore vengono visualizzati i membri che appartengono al tipo selezionato nel riquadro superiore. Tramite questa finestra è possibile passare alle definizioni dei membri nel codice sorgente (o il **Visualizzatore oggetti** se l'elemento è definito all'esterno della soluzione).
+La finestra **Visualizzazione classi** viene visualizzata come parte di **Esplora soluzioni** e come finestra separata. La finestra **Visualizzazione classi** visualizza gli elementi di un'applicazione. Nel riquadro superiore vengono visualizzati spazi dei nomi, tipi, enumerazioni, interfacce e classi e nel riquadro inferiore vengono visualizzati i membri che appartengono al tipo selezionato nel riquadro superiore. Tramite questa finestra è possibile passare alle definizioni dei membri nel codice sorgente (o il **Visualizzatore oggetti** se l'elemento è definito all'esterno della soluzione).
 
 Non è necessario compilare un progetto per visualizzarne gli elementi in **Visualizzazione classi**. La finestra viene aggiornata quando si modifica il codice nel progetto.
 
@@ -56,18 +54,18 @@ Se il progetto viene archiviato nel controllo del codice sorgente, ogni elemento
 
 ### <a name="class-view-toolbar"></a>Visualizzazione classi - Barra degli strumenti
 
-La barra degli strumenti di **Visualizzazione classi** contiene i comandi seguenti.
+La barra degli strumenti di **Visualizzazione classi** contiene i comandi seguenti:
 
 |||
 |-|-|
-|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi utilizzati di frequente. Vengono salvate nel file di soluzione attiva (*SUO*). Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
+|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi usati di frequente. Vengono salvate nel file di soluzione attiva (*SUO*). Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
 |**Indietro**|Consente di passare all’elemento selezionato in precedenza.|
 |**Avanti**|Consente di passare al successivo elemento selezionato.|
 |**Visualizza diagramma classi** (solo progetti di codice gestito)|Diventa disponibile quando si seleziona uno spazio dei nomi o si digita in **Visualizzazione classi**. Quando viene selezionato uno spazio dei nomi, che contiene tutti i tipi visualizzati dal diagramma classi. Quando viene selezionato uno spazio dei nomi, viene visualizzato solo quel tipo dal diagramma classi.|
 
 ### <a name="class-view-settings"></a>Visualizzazione classi - Impostazioni
 
-Il pulsante **Visualizzazione classi - Impostazioni** sulla barra degli strumenti ha le impostazioni seguenti.
+Il pulsante **Visualizzazione classi - Impostazioni** sulla barra degli strumenti ha le impostazioni seguenti:
 
 |||
 |-|-|
@@ -83,7 +81,7 @@ Il pulsante **Visualizzazione classi - Impostazioni** sulla barra degli strument
 
 ### <a name="class-view-shortcut-menu"></a>Menu di scelta rapida di Visualizzazione classi
 
-Il menu di scelta rapida in **Visualizzazione classi** può contenere i seguenti comandi, a seconda del tipo di progetto selezionato.
+Il menu di scelta rapida in **Visualizzazione classi** può contenere i seguenti comandi, a seconda del tipo di progetto selezionato:
 
 |||
 |-|-|
@@ -103,19 +101,19 @@ Il menu di scelta rapida in **Visualizzazione classi** può contenere i seguenti
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Finestra Gerarchia di chiamata (Visual Basic, C#, C++)
 
-La finestra **Gerarchia di chiamata** visualizza dove viene chiamato un determinato metodo (o proprietà o costruttore) ed elenca i metodi chiamati da quel metodo. È possibile visualizzare più livelli di grafico delle chiamate, che mostra le relazioni chiamante/chiamato tra i metodi di un ambito specificato.
+La finestra **Gerarchia di chiamata** mostra le posizioni di chiamata di un particolare metodo o proprietà. Vengono inoltre elencati i metodi chiamati da tale metodo. È possibile visualizzare più livelli di grafico delle chiamate, che mostra le relazioni chiamante-chiamato tra i metodi di un ambito specificato.
 
-È possibile visualizzare la finestra **Gerarchia di chiamata** selezionando un metodo (o proprietà o costruttore) e quindi scegliendo **View Class Hierarchy** (Visualizza gerarchia di classi) nel menu di scelta rapida. La visualizzazione dovrebbe essere simile all’immagine seguente:
+È possibile visualizzare la finestra **Gerarchia di chiamata** selezionando un metodo (o proprietà o costruttore) nell'editor e scegliendo quindi **View Class Hierarchy** (Visualizza gerarchia di classi) dal menu di scelta rapida. La visualizzazione dovrebbe essere simile all’immagine seguente:
 
-![Gerarchia di chiamata con più nodi aperti](../ide/media/multiplenodes.png "MultipleNodes")
+![Finestra Gerarchia di chiamata in Visual Studio](../ide/media/multiplenodes.png)
 
-Usando l'elenco a discesa sulla barra degli strumenti, è possibile specificare l'ambito della gerarchia: la soluzione, il progetto corrente o il documento corrente.
+Usando l'elenco a discesa sulla barra degli strumenti è possibile specificare l'ambito della gerarchia: la soluzione, il progetto corrente o il documento corrente.
 
 Il riquadro principale visualizza le chiamate da e verso il metodo e il riquadro **Siti di chiamata** visualizza il percorso della chiamata selezionata. Per i membri virtuali o astratti viene visualizzato un nodo **Overrides method name** (Esegui override nome metodo). Per i membri di interfaccia viene visualizzato un nodo **Implements method name** (Implementa nome metodo).
 
 La finestra **Gerarchia di chiamata** non trova riferimenti per il gruppo di metodi, che includono i percorsi in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare questi riferimenti, usare il comando **Trova tutti i riferimenti**.
 
-Il menu di scelta rapida nella finestra **Gerarchia di chiamata** contiene i comandi seguenti.
+Il menu di scelta rapida nella finestra **Gerarchia di chiamata** contiene i comandi seguenti:
 
 |||
 |-|-|
@@ -142,7 +140,7 @@ Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è pos
 
 ### <a name="object-browser-settings"></a>Impostazioni di Visualizzatore oggetti
 
-Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli strumenti è possibile specificare una delle visualizzazioni seguenti.
+Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli strumenti è possibile specificare una delle visualizzazioni seguenti:
 
 |||
 |-|-|
@@ -160,7 +158,7 @@ Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli stru
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandi del menu di scelta rapida di Visualizzatore oggetti
 
-Il menu di scelta rapida nel **Visualizzatore oggetti** può contenere i comandi seguenti, a seconda del tipo di elemento selezionato.
+Il menu di scelta rapida nel **Visualizzatore oggetti** può contenere i comandi seguenti, a seconda del tipo di elemento selezionato:
 
 |||
 |-|-|
@@ -214,9 +212,9 @@ Il menu di scelta rapida nella finestra **Definizione codice** può contenere i 
 |**Modifica definizione**|Sposta il punto di inserimento alla definizione nella finestra del codice.|
 |**Scegli codifica**|Apre la finestra **Codifica** che consente di impostare una codifica per il file.|
 
-### <a name="document-outline-window"></a>Finestra Struttura documento
+## <a name="document-outline-window"></a>Finestra Struttura documento
 
-È possibile usare la finestra **Struttura documento** in combinazione con le visualizzazioni di progettazione, ad esempio la finestra di progettazione per una pagina XAML o una finestra di Progettazione Windows Form o con pagine HTML. Questa finestra visualizza gli elementi in una visualizzazione albero in modo che sia possibile visualizzare la struttura logica del form o della pagina e trovare i controlli sono incorporati o nascosti in profondità.
+È possibile usare la finestra **Struttura documento** in combinazione con le visualizzazioni di progettazione, ad esempio la finestra di progettazione per una pagina XAML o una finestra di Progettazione Windows Form o con pagine HTML. Questa finestra visualizza gli elementi in una visualizzazione albero in modo che sia possibile visualizzare la struttura logica del form o della pagina e trovare i controlli incorporati o nascosti in profondità.
 
 ## <a name="see-also"></a>Vedere anche
 

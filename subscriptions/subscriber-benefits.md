@@ -9,11 +9,12 @@ description: Informazioni sui vantaggi inclusi nella sottoscrizione di Visual St
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335593"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Vantaggi inclusi nella sottoscrizione di Visual Studio
 
@@ -22,7 +23,7 @@ Le sottoscrizioni di Visual Studio offrono il set di risorse più completo per c
 I vantaggi sono raggruppati in tre categorie:
 
 ## <a name="tools"></a>Strumenti
-La categoria Strumenti consente di accedere a un'ampia gamma di vantaggi, tra cui vantaggi principali, come l'[IDE di Visual Studio](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) e [Azure](/vs-azure/) .  A seconda del livello di sottoscrizione, verranno visualizzati anche gli account Windows e Office 365 Developer, Visual Studio App Center e vantaggi dai partner, come WhiteSource Bolt e ModernRequirements.
+La categoria Strumenti consente di accedere a un'ampia gamma di vantaggi, tra cui vantaggi principali, come l'[IDE di Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) e [Azure](vs-azure.md) .  A seconda del livello di sottoscrizione, verranno visualizzati anche gli account Windows e Office 365 Developer, Visual Studio App Center e vantaggi dai partner, come WhiteSource Bolt e ModernRequirements.
 
 ## <a name="professional-development"></a>Sviluppo professionale
 Per consentire ai sottoscrittori di migliorare costantemente le loro competenze ed essere sempre aggiornati sulle tecnologie più recenti, viene offerto l'accesso ad alcuni dei corsi di training online migliori proposti da società leader del settore. Alcuni esempi di contenuti di alta qualità sono i seguenti:
