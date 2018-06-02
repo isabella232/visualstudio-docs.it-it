@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3240868ce8f749bf97a12054aac4760018c71d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693523"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Procedura dettagliata: utilizzo di XSLT IntelliSense
 
@@ -46,7 +47,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
     </xsl:stylesheet>
     ```
 
-2.  Posizionare il cursore dopo `<xsl:template name="msg23" match="msg23">` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl:call-template`:
+2.  Posizionare il cursore dopo `<xsl:template name="msg23" match="msg23">` e premere **invio**. Quindi iniziare a digitare il seguente elemento `xsl:call-template`:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -55,7 +56,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
 
      L'elenco dei nomi di modello viene visualizzato nell'attributo `name=""` dell'elemento `xsl:call-template` durante la digitazione.
 
-3.  Posizionare il cursore dopo `<xsl:call-template name="localized-message">` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl:with-param`:
+3.  Posizionare il cursore dopo `<xsl:call-template name="localized-message">` e premere **invio**. Quindi iniziare a digitare il seguente elemento `xsl:with-param`:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -112,7 +113,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
     </xsl:stylesheet>
     ```
 
-2.  Posizionare il cursore dopo `<xsl:apply-templates select="phone" />` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl: apply-templates`:
+2.  Posizionare il cursore dopo `<xsl:apply-templates select="phone" />` e premere **invio**. Quindi iniziare a digitare il seguente elemento `xsl: apply-templates`:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -153,7 +154,7 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
     </xsl:stylesheet>
     ```
 
-2.  Posizionare il cursore dopo `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e premere INVIO. Quindi iniziare a digitare il seguente elemento `xsl:namespace-alias`:
+2.  Posizionare il cursore dopo `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e premere **invio**. Quindi iniziare a digitare il seguente elemento `xsl:namespace-alias`:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -163,4 +164,4 @@ Questa procedura dettagliata dimostra come usare XSLT IntelliSense per completar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Funzionalità IntelliSense dell'editor XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Funzionalità IntelliSense dell'Editor XML](../xml-tools/xml-editor-intellisense-features.md)

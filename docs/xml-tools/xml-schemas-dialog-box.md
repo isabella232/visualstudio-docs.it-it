@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693640"
 ---
-# <a name="xml-schemas-dialog-box"></a>Finestra di dialogo Schemi XML
+# <a name="xml-schemas-dialog-box"></a>Finestra di dialogo schemi XML
 
 Il **schemi XML** la finestra di dialogo è possibile selezionare quali schemi XML schema definition language (XSD) da associare a un documento XML. È possibile selezionare uno schema dalla cache degli schemi oppure specificare uno schema che non si trova nella cache. Gli schemi selezionati vengono considerati parte di un set di schemi, che viene usato per IntelliSense e per la convalida dei documenti XML.
 
@@ -51,6 +52,6 @@ Consente di rimuovere lo schema attualmente selezionato dal set di schemi. L'ope
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Componenti dell'editor XML](../xml-tools/xml-editor-components.md)
-- [Procedura: Selezionare gli schemi XML da usare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Componenti dell'Editor XML](../xml-tools/xml-editor-components.md)
+- [Procedura: selezionare gli schemi XML da usare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache degli schemi](../xml-tools/schema-cache.md)

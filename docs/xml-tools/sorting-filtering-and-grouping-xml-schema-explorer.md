@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693669"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordinamento, filtro e raggruppamento (XML Schema Explorer)
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>L'ordinamento, filtro e raggruppamento (XML Schema Explorer)
 
-In questo argomento vengono descritte le opzioni sono disponibili tramite il **opzioni di raggruppamento, filtro e ordinamento** menu sulla barra degli strumenti di XML Schema Explorer.
+In questo argomento vengono descritte le opzioni disponibili tramite il **ordinamento, filtro e le opzioni di raggruppamento** menu il **XML Schema Explorer** sulla barra degli strumenti.
 
 ## <a name="filter-options"></a>Opzioni di filtro
 
@@ -30,9 +31,9 @@ In questo argomento vengono descritte le opzioni sono disponibili tramite il **o
 
 -   **Mostra Compositor (sequence/choice/all)**.
 
-## <a name="sorting-options"></a>Opzioni di ordinamento
+## <a name="sorting-options"></a>Le opzioni di ordinamento
 
- Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. Le opzioni Ordina per non si applicano ai file e agli spazi dei nomi.
+ Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. **Ordina per** opzioni non si applicano ai file e gli spazi dei nomi.
 
 -   **Ordina per tipo**.
 
@@ -78,6 +79,6 @@ In questo argomento vengono descritte le opzioni sono disponibili tramite il **o
 
  Il **ordine del documento** opzione è disponibile quando il **Mostra file di Schema** opzione è selezionata. Quando **ordine del documento** è selezionata, i nodi globali vengono visualizzati nell'ordine in cui appaiono nel file di schema.
 
-## <a name="persisting-sortfilter-options"></a>Persistenza delle opzioni di ordinamento e filtro
+## <a name="persisting-sortfilter-options"></a>Salvare in modo permanente le opzioni di ordinamento/filtro
 
  Le opzioni di ordinamento, filtro e raggruppamento vengono salvate nel Registro di sistema per ogni utente, indipendentemente dalla soluzione o dai file aperti quando sono state modificate le impostazioni.

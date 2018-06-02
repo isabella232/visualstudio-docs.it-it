@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693721"
 ---
 # <a name="working-with-xml-data"></a>Utilizzo di dati XML
 
@@ -35,7 +36,7 @@ Le funzionalità aggiuntive comprendono:
 
 - Supporto per la modifica dei fogli di stile XSLT, incluso il supporto IntelliSense.
 
-- XML Schema Explorer.
+- **XML Schema Explorer**.
 
 ## <a name="xml-schema-designer"></a>Progettazione XML Schema
 
@@ -53,7 +54,7 @@ Visual Studio supporta il debug dei fogli di stile XSLT. Usando il debugger, è 
 
 [Creare e configurare i set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) viene fornita una spiegazione degli strumenti in fase di progettazione per la creazione di set di dati.
 
-[Servizi Web XML in codice gestito](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) viene descritto come creare e distribuire i servizi Web XML e come accedere ai servizi Web XML.
+[Servizi Web XML nel codice gestito](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) viene descritto come creare e distribuire i servizi Web XML e come accedere ai servizi Web XML.
 
 ## <a name="see-also"></a>Vedere anche
 

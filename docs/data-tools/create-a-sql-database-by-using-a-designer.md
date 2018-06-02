@@ -14,11 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c0cefc826c26e1f981866a3ceb16fc16d2d522b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690926"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 È possibile utilizzare Visual Studio per creare e aggiornare i file di database locale di SQL Server Express LocalDB. È anche possibile creare un database tramite l'esecuzione di istruzioni Transact-SQL nel **Esplora oggetti di SQL Server** finestra degli strumenti in Visual Studio. In questo argomento, si sarà creare un file con estensione mdf e aggiungere tabelle e le chiavi utilizzando Progettazione tabelle.
@@ -88,7 +89,7 @@ In questa sezione, si creeranno due tabelle, una chiave primaria in ogni tabella
 
 6.  Denominare la tabella Customers aggiornando la prima riga nel riquadro dello script in modo che corrisponda all'esempio seguente:
 
-    ```
+    ```sql
     CREATE TABLE [dbo].[Customers]
     ```
 

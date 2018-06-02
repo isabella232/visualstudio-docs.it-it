@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692213"
 ---
 # <a name="debugging-sharepoint-solutions"></a>Debug di soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi viene aperta un'istanza del sito di SharePoint nel Web browser. Le sezioni seguenti illustrano come eseguire il debug di applicazioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/23/2018
   
  Il file Web. config seguente:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <configuration>  
         ...  

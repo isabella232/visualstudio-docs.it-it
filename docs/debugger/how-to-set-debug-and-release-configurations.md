@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690666"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Procedura: impostazione del debug e rilascio di configurazioni in Visual Studio
 Progetti di Visual Studio installata versione separata e configurazioni per il programma di debug. Come indicato dai nomi, la versione di debug viene compilata per eseguire il debug, mentre quella di rilascio viene compilata per la distribuzione finale.  
@@ -60,7 +61,7 @@ Per altre informazioni sulle configurazioni della build, vedere [Informazioni su
   
      Questa procedura guidata non è disponibile nelle edizioni Express. È possibile utilizzare il **Compila soluzione F6** e **Avvia debug F5** voci di menu per scegliere la configurazione.
 
-## <a name="BKMK_symbols_release"></a>Generare file di simboli (.pbd) per una compilazione
+## <a name="BKMK_symbols_release"></a>Generare file di simboli (PDB) per una compilazione
 
 Per la maggior parte dei tipi di progetto, i file con estensione PDB vengono generati per impostazione predefinita per debug e di build di rilascio, ma le impostazioni predefinite sono diverse a seconda del tipo di progetto specifico e la versione di Visual Studio. È possibile configurare se il compilatore genera file con estensione pdb e il tipo di informazioni di debug da includere.
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31fd55358023e0ec3b11fbb048bdfa2b240b1859
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693838"
 ---
 # <a name="xml-document-validation"></a>Convalida di documenti XML
 
@@ -22,7 +23,7 @@ L'editor XML verifica la sintassi XML 1.0 ed esegue inoltre la convalida dei dat
 
  Gli schemi usati nella convalida vengono individuati confrontando il `targetNamespace` di uno schema compilato con la dichiarazione xmlns dell'elemento. Gli schemi compilati vengono caricati da una delle seguenti posizioni, elencate in ordine di priorità:
 
--   Il nome del file specificato nella **schemi** campo della finestra delle proprietà del documento.
+-   Il nome del file specificato nella **schemi** campo del documento **proprietà** finestra.
 
 -   Schema inline o DTD.
 
@@ -39,10 +40,10 @@ Gli schemi possono essere rilevati anche nelle seguenti posizioni aggiuntive qua
 -   Uno schema dalla directory della cache degli schemi.
 
 ## <a name="xslt-files"></a>File XSLT
- Quando si modifica un file XSLT, viene usato per la convalida il file xslt.xsd che si trova nella cache degli schemi. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Gli errori del compilatore XSLT vengono visualizzati con una sottolineatura ondulata di colore rosso.
+ Quando si modifica un file XSLT, il *XSLT* file che si trova nella cache degli schemi è utilizzato per la convalida. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Gli errori del compilatore XSLT vengono visualizzati con una sottolineatura ondulata di colore rosso.
 
-## <a name="xml-schema-xsd-files"></a>File XSD (XML Schema)
- Quando si modifica un file di schema XML, viene usato per la convalida il file xsdschema.xsd che si trova nella cache degli schemi. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Anche gli errori di compilazione vengono visualizzati con una sottolineatura ondulata di colore rosso.
+## <a name="xml-schema-xsd-files"></a>File XML schema (XSD)
+ Quando si modifica un file di XML Schema, il *XSDSchema* file che si trova nella cache degli schemi è utilizzato per la convalida. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Anche gli errori di compilazione vengono visualizzati con una sottolineatura ondulata di colore rosso.
 
 ## <a name="see-also"></a>Vedere anche
 

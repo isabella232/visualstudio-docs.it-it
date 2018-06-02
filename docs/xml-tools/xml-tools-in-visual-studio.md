@@ -34,23 +34,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279a0a73f24b2916e21293c854692ab40f444b4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693734"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Strumenti XML in Visual Studio
 
-*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per descrivere i dati. Offre una maggiore precisione per le dichiarazioni del contenuto e risultati di ricerca più significativi tra più piattaforme. Il linguaggio XML consente inoltre di separare la presentazione dai dati. Ad esempio, in HTML si usano i tag per indicare al browser di visualizzare i dati in grassetto o corsivo. In XML invece si usano i tag solo per descrivere i dati, ad esempio nome della città, temperatura e pressione barometrica. In XML si usano i fogli di stile, ad esempio XSL (Extensible Stylesheet Language) e CSS (Cascading Style Sheet) per presentare i dati in un browser. XML separa i dati dalla presentazione e dall'elaborazione. In questo modo è possibile presentare ed elaborare i dati come si vuole, applicando fogli di stile e applicazioni diversi.
+*Extensible Markup Language (XML)* è un linguaggio di markup che fornisce un formato per descrivere i dati. Offre una maggiore precisione per le dichiarazioni del contenuto e risultati di ricerca più significativi tra più piattaforme. Il linguaggio XML consente inoltre di separare la presentazione dai dati. Ad esempio, in HTML si usano i tag per indicare al browser di visualizzare i dati in grassetto o corsivo. In XML invece si usano i tag solo per descrivere i dati, ad esempio nome della città, temperatura e pressione barometrica. In XML, si usano i fogli di stile, ad esempio foglio di stile XSL (Extensible Language) e CSS (cascading style sheet) per presentare i dati in un browser. XML separa i dati dalla presentazione e dall'elaborazione. In questo modo è possibile presentare ed elaborare i dati come si vuole, applicando fogli di stile e applicazioni diversi.
 
 XML è un sottoinsieme di SGML ottimizzato per la distribuzione sul Web. È definito dal World Wide Web Consortium (W3C) Questa standardizzazione garantisce che i dati strutturati siano uniformi e indipendenti da applicazioni o fornitori.
 
-XML costituisce la base di molte funzionalità di Visual Studio e .NET Framework. Il seguente argomento descrive gli strumenti e le funzionalità relativi a XML disponibili in Visual Studio e .NET Framework.
+XML costituisce la base di molte funzionalità di Visual Studio e .NET Framework. Il seguente articolo descrive gli strumenti e le funzionalità relativi a XML disponibili in Visual Studio e .NET Framework.
 
 Per ulteriori informazioni, vedere il <xref:System.Xml?displayProperty=fullName> documentazione.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Riferimento
 
 [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) espone il [Editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) analizzare la struttura ad albero tramite [XML. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) per tutti i documenti XML.
 
@@ -68,6 +69,6 @@ Per ulteriori informazioni, vedere il <xref:System.Xml?displayProperty=fullName>
 
 [Le trasformazioni XSLT](/dotnet/standard/data/xml/xslt-transformations) descrive il modo in cui <xref:System.Xml.Xsl.XslCompiledTransform> classe implementa la raccomandazione XSLT 1.0.
 
-[Elaborare dati XML mediante il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) descrive il modo in cui <xref:System.Xml.XPath.XPathNavigator> classe elabora i dati XML archiviati in un <xref:System.Xml.XPath.XPathDocument> o un <xref:System.Xml.XmlDocument> oggetto. La classe <xref:System.Xml.XPath.XPathNavigator> è basata sul modello di dati XQuery 1.0 e XPath 2.0 e può essere usata per spostarsi tra i dati XML e per modificarli.
+[Elaborare dati XML usando il modello di dati XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) descrive il modo in cui <xref:System.Xml.XPath.XPathNavigator> classe elabora i dati XML archiviati in un <xref:System.Xml.XPath.XPathDocument> o un <xref:System.Xml.XmlDocument> oggetto. La classe <xref:System.Xml.XPath.XPathNavigator> è basata sul modello di dati XQuery 1.0 e XPath 2.0 e può essere usata per spostarsi tra i dati XML e per modificarli.
 
 [Modello SOM (Schema Object Model) XML](/dotnet/standard/data/xml/xml-schema-object-model-som) descrive le classi utilizzate per la creazione e la modifica di schemi XML, fornendo un <xref:System.Xml.Schema.XmlSchema> classe per caricare e modificare uno schema.

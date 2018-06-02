@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7aa00180cf5eb54bad9ceb28468f93b1d1f3d59
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f77cb92e62d5a5aec4d5e43fe295a3bab279c579
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692158"
 ---
 # <a name="projectoutputfile-element"></a>Elemento ProjectOutputFile
   Rappresenta l'output di un progetto separato per includere l'elemento di progetto quando viene distribuito in SharePoint.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 05/22/2018
  **ProjectOutputFileType**  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/22/2018
   
 |||  
 |-|-|  
-|**Spazio dei nomi**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Spazio dei nomi**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**Nome dello schema**|Schema di elemento di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  

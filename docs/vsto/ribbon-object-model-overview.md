@@ -1,5 +1,5 @@
 ---
-title: Panoramica del modello a oggetti di barra multifunzione | Documenti Microsoft
+title: Panoramica del modello a oggetti della barra multifunzione
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2be8f0ecdb4f2d7a8ea379474c4b5ec0062d2b57
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692961"
 ---
-# <a name="ribbon-object-model-overview"></a>Cenni preliminari sul modello a oggetti della barra multifunzione
-  Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] espone un modello a oggetti fortemente tipizzato che è possibile utilizzare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione. Ad esempio, è possibile in modo dinamico popolare i controlli menu, o mostrare e nascondere controlli in base al contesto. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima che la barra multifunzione viene caricata dall'applicazione di Office. Per informazioni, vedere [impostazione di proprietà che diventano di sola lettura](#SettingReadOnlyProperties).  
+# <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
+  Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] espone un modello a oggetti fortemente tipizzato che è possibile utilizzare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione. Ad esempio, è possibile in modo dinamico popolare i controlli menu, o mostrare e nascondere controlli in base al contesto. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima che la barra multifunzione viene caricata dall'applicazione di Office. Per informazioni, vedere [impostare le proprietà che diventano di sola lettura](#SettingReadOnlyProperties).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- Questo modello a oggetti della barra multifunzione è composto principalmente il [classe Ribbon](#RibbonClass), [eventi della barra multifunzione](#RibbonEvents), e [classi di controlli della barra multifunzione](#RibbonControlClasses).  
+ Questo modello a oggetti della barra multifunzione è costituito principalmente il [classe Ribbon](#RibbonClass), [sulla barra multifunzione eventi](#RibbonEvents), e [classi di controlli della barra multifunzione](#RibbonControlClasses).  
   
 ##  <a name="RibbonClass"></a> Classe Ribbon  
  Quando si aggiunge un nuovo **della barra multifunzione (finestra di progettazione visiva)** elemento a un progetto, Visual Studio aggiunge un **della barra multifunzione** classe al progetto. Il **della barra multifunzione** classe eredita la <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.  
@@ -36,10 +37,10 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="RibbonEvents"></a> Eventi della barra multifunzione  
  Il **della barra multifunzione** classe contiene i seguenti tre eventi:  
   
-|event|Descrizione|  
+|Evento|Descrizione|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Generato quando l'applicazione di Office carica la personalizzazione della barra multifunzione. Il <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> gestore eventi viene aggiunto automaticamente al file di codice della barra multifunzione. Utilizzare questo gestore eventi per eseguire codice personalizzato durante il caricamento della barra multifunzione.|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Consente di memorizzare nella cache immagini la personalizzazione della barra multifunzione al caricamento della barra multifunzione. Se si scrive codice per memorizzare nella cache le immagini della barra multifunzione in questo gestore eventi, è possibile ottenere un leggero miglioramento delle prestazioni. Per altre informazioni, vedere <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Consente alle immagini della cache nella personalizzazione della barra multifunzione quando si carica la barra multifunzione. Se si scrive codice per memorizzare nella cache le immagini della barra multifunzione in questo gestore eventi, è possibile ottenere un leggero miglioramento delle prestazioni. Per altre informazioni, vedere <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Generato quando si chiude l'istanza della barra multifunzione.|  
   
 ##  <a name="RibbonControlClasses"></a> Controlli della barra multifunzione  
@@ -62,17 +63,17 @@ ms.lasthandoff: 04/16/2018
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separatore**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**scheda**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**TAB**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
  Il <xref:Microsoft.Office.Tools.Ribbon> dello spazio dei nomi viene utilizzato il prefisso "Della barra multifunzione" per questi tipi per evitare conflitti con i nomi delle classi di controlli nel <xref:System.Windows.Forms> dello spazio dei nomi.  
   
  Quando si aggiunge un controllo alla finestra di progettazione della barra multifunzione, la finestra di progettazione della barra multifunzione dichiara la classe per il controllo come un campo nel file di codice di progettazione della barra multifunzione.  
   
-### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Attività comuni utilizzando le proprietà dei controlli della barra multifunzione  
+### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Attività comuni usando le proprietà dei controlli della barra multifunzione  
  Ogni `Ribbon` controllo contiene proprietà che è possibile utilizzare per eseguire diverse attività, ad esempio l'assegnazione di un'etichetta a un controllo, o la disattivazione della visualizzazione dei controlli.  
   
- In alcuni casi, le proprietà diventano di sola lettura dopo il caricamento della barra multifunzione o dopo l'aggiunta di un controllo a un menu dinamico. Per ulteriori informazioni, vedere [impostazione delle proprietà che diventano di sola lettura](#SettingReadOnlyProperties).  
+ In alcuni casi, le proprietà diventano di sola lettura dopo il caricamento della barra multifunzione o un controllo viene aggiunto a un menu dinamico. Per altre informazioni, vedere [impostare le proprietà che diventano di sola lettura](#SettingReadOnlyProperties).  
   
  Nella tabella seguente vengono descritte alcune delle attività che è possibile eseguire utilizzando `Ribbon` le proprietà del controllo.  
   
@@ -86,47 +87,47 @@ ms.lasthandoff: 04/16/2018
 |Aggiungere un controllo di dati definiti dall'utente.|Utilizzare la proprietà Tag.|  
 |Ottenere gli elementi in un <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, o<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> controllo.|Utilizzare la proprietà di elementi.|  
 |Aggiungere elementi a un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> controllo.|Utilizzare la proprietà di elementi.|  
-|Aggiungere controlli a un <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Utilizzare la proprietà di elementi.<br /><br /> Per aggiungere controlli al <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> dopo la barra multifunzione viene caricata nell'applicazione di Office, è necessario impostare il <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> proprietà **true** prima che la barra multifunzione viene caricata nell'applicazione di Office. Per informazioni, vedere [impostazione di proprietà che diventano di sola lettura](#SettingReadOnlyProperties).|  
+|Aggiungere controlli a un <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Utilizzare la proprietà di elementi.<br /><br /> Per aggiungere controlli per il <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> dopo la barra multifunzione viene caricata nell'applicazione di Office, è necessario impostare il <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> proprietà da **true** prima che la barra multifunzione è stata caricata nell'applicazione Office. Per informazioni, vedere [impostare le proprietà che diventano di sola lettura](#SettingReadOnlyProperties).|  
 |Ottenere l'elemento selezionato di un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Utilizzare la proprietà SelectedItem. Per un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, utilizzare il <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> proprietà.|  
 |Ottenere i gruppi in un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Usare la proprietà <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|  
 |Specificare il numero di righe e colonne che vengono visualizzati in un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Utilizzare il <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> e <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> proprietà.|  
   
-##  <a name="SettingReadOnlyProperties"></a> Impostazione delle proprietà che diventano di sola lettura  
+##  <a name="SettingReadOnlyProperties"></a> Impostare le proprietà che diventano di sola lettura  
  Alcune proprietà possono essere impostate solo prima di caricamento della barra multifunzione. Esistono tre posizioni per impostare queste proprietà:  
   
 -   In Visual Studio **proprietà** finestra.  
   
 -   Nel costruttore del **della barra multifunzione** classe.  
   
--   Nel metodo CreateRibbonExtensibilityObject il `ThisAddin`, `ThisWorkbook`, o `ThisDocument` classe del progetto.  
+-   Nel `CreateRibbonExtensibilityObject` metodo per il `ThisAddin`, `ThisWorkbook`, o `ThisDocument` classe del progetto.  
   
- Menu dinamici presentano alcune eccezioni. È possibile creare nuovi controlli, impostarne le proprietà e quindi aggiungerli a un menu dinamico in fase di esecuzione, anche dopo il caricamento della barra multifunzione che contiene il menu di.  
+ Menu dinamici presentano alcune eccezioni. È possibile creare nuovi controlli, impostarne le proprietà e quindi aggiungerli a un menu dinamico in fase di esecuzione, anche dopo il caricamento della barra multifunzione che contiene il menu di scelta.  
   
  In qualsiasi momento, è possono impostare le proprietà dei controlli aggiunti a un menu dinamico.  
   
- Per ulteriori informazioni, vedere [proprietà che diventano di sola lettura](#ReadOnlyProperties).  
+ Per altre informazioni, vedere [proprietà che diventano di sola lettura](#ReadOnlyProperties).  
   
-### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Impostazione delle proprietà nel costruttore della barra multifunzione  
+### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>Impostare le proprietà nel costruttore della barra multifunzione  
  È possibile impostare le proprietà di un `Ribbon` nel costruttore del controllo di **della barra multifunzione** classe. Questo codice deve essere visualizzata dopo la chiamata al `InitializeComponent` metodo. Nell'esempio seguente viene aggiunto un nuovo pulsante a un gruppo, se l'ora corrente è 17:00 del Pacifico (UTC-8) o versione successiva.  
   
  Aggiungere il codice seguente.  
   
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
+ [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
+ [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
   
  Nei progetti Visual c# che è stato eseguito l'aggiornamento da Visual Studio 2008, il costruttore viene visualizzato nel file di codice della barra multifunzione.  
   
  Nei progetti Visual Basic o nei progetti Visual c# creati in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], il costruttore viene visualizzato nel file di codice di progettazione della barra multifunzione. Questo file è denominato *YourRibbonItem*. Designer.cs o *YourRibbonItem*. Designer. Per visualizzare questo file nei progetti Visual Basic, è innanzitutto necessario scegliere il **Mostra tutti i file** pulsante in Esplora soluzioni.  
   
-### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Impostazione delle proprietà nel metodo CreateRibbonExtensibilityObject  
- È possibile impostare le proprietà di un `Ribbon` controllare quando si esegue l'override del metodo CreateRibbonExtensibilityObject nella `ThisAddin`, `ThisWorkbook`, o `ThisDocument` classe del progetto. Per ulteriori informazioni sul metodo CreateRibbonExtensibilityObject, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
+### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Impostare le proprietà nel metodo CreateRibbonExtensibilityObject  
+ È possibile impostare le proprietà di un `Ribbon` controllare quando esegue l'override di `CreateRibbonExtensibilityObject` metodo nel `ThisAddin`, `ThisWorkbook`, o `ThisDocument` classe del progetto. Per ulteriori informazioni sul `CreateRibbonExtensibilityObject` metodo, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).  
   
- Nell'esempio seguente imposta la proprietà della barra multifunzione nel metodo CreateRibbonExtensibilityObject la `ThisWorkbook` classe di un progetto cartella di lavoro di Excel.  
+ Nell'esempio seguente imposta le proprietà della barra multifunzione nel `CreateRibbonExtensibilityObject` metodo la `ThisWorkbook` classe di un progetto cartella di lavoro di Excel.  
   
  Aggiungere il codice seguente.  
   
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
+ [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
+ [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
 ###  <a name="ReadOnlyProperties"></a> Proprietà che diventano di sola lettura  
  Nella tabella seguente mostra le proprietà che possono essere impostate solo prima di caricamento della barra multifunzione.  
@@ -159,18 +160,18 @@ ms.lasthandoff: 04/16/2018
 |**Schede**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Titolo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
-### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Impostazione delle proprietà per barre multifunzione visualizzate nei controlli di Outlook  
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Impostare le proprietà di barre multifunzione visualizzate nei controlli di Outlook  
  Ogni volta che un utente apre un controllo in cui viene visualizzata la barra multifunzione viene creata una nuova istanza della barra multifunzione. Tuttavia, è possibile impostare le proprietà elencate nella tabella precedente solo prima che venga creata la prima istanza della barra multifunzione. Dopo la prima istanza viene creata, queste proprietà diventano di sola lettura perché la prima istanza definisce il file XML che è usato da Outlook per caricare la barra multifunzione.  
   
  Se si dispone di logica condizionale che imposta una di queste proprietà su un valore diverso quando vengono create altre istanze della barra multifunzione, questo codice avrà alcun effetto.  
   
 > [!NOTE]  
->  Verificare che il **nome** proprietà è impostata per ogni controllo che aggiunge a una barra multifunzione di Outlook. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di esecuzione, è necessario impostare questa proprietà nel codice. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di progettazione, la proprietà Name viene impostata automaticamente.  
+>  Verificare che il **nome** viene impostata per ogni controllo che si aggiunge a una barra multifunzione di Outlook. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di esecuzione, è necessario impostare questa proprietà nel codice. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di progettazione, la proprietà Name viene impostata automaticamente.  
   
 ## <a name="ribbon-control-events"></a>Eventi di controllo della barra multifunzione  
  Ogni classe del controllo contiene uno o più eventi. Nella tabella seguente vengono descritti questi eventi.  
   
-|event|Descrizione|  
+|Evento|Descrizione|  
 |-----------|-----------------|  
 |Clic|Si verifica quando si seleziona un controllo.|  
 |TextChanged|Si verifica quando viene modificato il testo di una casella di modifica o una casella combinata.|  
@@ -187,16 +188,15 @@ ms.lasthandoff: 04/16/2018
 |*e*|Oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> che contiene un <xref:Microsoft.Office.Core.IRibbonControl>. Utilizzare questo controllo di accesso a qualsiasi proprietà che non è disponibile nel modello a oggetti della barra multifunzione fornito dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)   
  [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)   
- [Procedura dettagliata: Creazione di una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Procedura dettagliata: Aggiornamento dei controlli in una barra multifunzione in fase di esecuzione](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Personalizzazione di una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)   
  [Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione alla barra multifunzione XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Procedura: Visualizzare gli errori dell'interfaccia utente del componente aggiuntivo](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  
+ [Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione in XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Procedura: il componente aggiuntivo Mostra errori dell'interfaccia utente](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ 

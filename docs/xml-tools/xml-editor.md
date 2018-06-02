@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693786"
 ---
 # <a name="xml-editor"></a>Editor XML
 
@@ -39,7 +40,7 @@ L'editor XML si basa sull'editor di testo di Visual Studio e include il supporto
 
 - Integrazione con il [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Ciò fornisce una visualizzazione gerarchica degli schemi XML.
 
-L'editor XML viene richiamato per estensioni di file note, quali XML, XSD,. xsl e. config. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML. È anche possibile aprire qualsiasi file con l'editor XML tramite il **Apri con** opzione e selezionando editor XML dall'elenco.
+L'editor XML viene richiamato per estensioni di file note, ad esempio *XML*, *XSD*, *XSL*, e *config*. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML. È anche possibile aprire qualsiasi file con l'editor XML tramite il **Apri con** opzione e selezionando editor XML dall'elenco.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 

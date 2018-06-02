@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento progetto, finestra di dialogo Opzioni | Documenti Microsoft
+title: Finestra di dialogo Opzioni di aggiornamento, progetto
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,23 +19,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f675ac5bab07c487217d2fdebcedd9fffd3d334c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692759"
 ---
-# <a name="project-upgrade-options-dialog-box"></a>Aggiornamento progetto, finestra di dialogo Opzioni
+# <a name="project-upgrade-options-dialog-box"></a>Finestra di dialogo Opzioni di aggiornamento, progetto
   Usare la pagina **Aggiornamento progetto** per specificare se Visual Studio modifica automaticamente progetti di componente aggiuntivo VSTO per usare la versione di Office installata nel computer di sviluppo.  
   
  Per accedere a questa pagina, scegliere **Opzioni** dal menu **Strumenti**. Espandere la cartella **Strumenti di Office** e quindi selezionare **Aggiornamento progetto**.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Aggiorna sempre alla versione installata di Office**  
- Questa opzione viene disabilitata per [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] perché i progetti di Office in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] possono essere destinati solo a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] o applicazioni [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] Microsoft. Per altre informazioni, vedere [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md).  
+ Questa opzione viene disabilitata per [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] perché i progetti di Office in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] possono essere destinati solo a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] o applicazioni [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] Microsoft. Per altre informazioni, vedere [eseguire l'aggiornamento e la migrazione di soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Upgrading and Migrating Office Solutions](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Procedura: aggiornare soluzioni Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
+ [Aggiornamento e la migrazione di soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md)   
+ [Procedura: soluzioni Office aggiornamento](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: In questo computer non è installato Microsoft Office | Documenti Microsoft
+title: Microsoft Office non è installato in questo computer
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,21 +15,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45a15b1680fbc12c9493833e01a6d8e90085faad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e781612e051b281b340c3744d2fbb1e6a1e834d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692431"
 ---
-# <a name="microsoft-office-is-not-installed-on-this-computer"></a>Microsoft Office non è installato in questo computer
-  Visual Studio non riesce a trovare l'applicazione Microsoft Office che corrisponde al tipo di progetto. Se si sta sviluppando un progetto di componente aggiuntivo VSTO, non è possibile eseguire il debug o il progetto. Se si sta provando a creare un progetto a livello di documento, non è possibile creare il progetto.  
+# <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office non è installato nel computer
+  Visual Studio non riesce a trovare l'applicazione Microsoft Office che corrisponde al tipo di progetto. Se si sta sviluppando un progetto di componente aggiuntivo VSTO, significa che non è possibile eseguire il debug o eseguire il progetto. Se si sta provando a creare un progetto a livello di documento, non è possibile creare il progetto.  
   
-### <a name="to-correct-this-error"></a>Per correggere l'errore  
+## <a name="to-correct-the-error"></a>Per correggere l'errore  
   
-1.  Installare l'applicazione di Microsoft Office associata al tipo di progetto, inclusi gli assembly di interoperabilità primari. Per altre informazioni sulle versioni supportate di Microsoft Office, vedere [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+1.  Installare l'applicazione di Microsoft Office associata al tipo di progetto, inclusi gli assembly di interoperabilità primari. Per ulteriori informazioni sulle versioni supportate di Microsoft Office, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [Procedura: Configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+ [Configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
+ [Procedura: configurare un computer per sviluppare soluzioni Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
   
   

@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691604"
 ---
 # <a name="create-sharepoint-solutions"></a>Creare soluzioni di SharePoint
   È possibile creare applicazioni di SharePoint in Visual Studio come alternativa alla creazione in SharePoint Designer. Visual Studio promuove lo sviluppo rapido di SharePoint fornendo funzionalità quali strumenti di debug avanzati, IntelliSense, completamento istruzioni e modelli di progetto. Visual Studio sfrutta anche i linguaggi e gli strumenti avanzati basati su .NET Framework. È possibile sviluppare progetti SharePoint con Visual Basic o Visual C# e sviluppare l'app per progetti SharePoint con JavaScript.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![Centro per sviluppatori MSDN](../sharepoint/media/vs-icon-msdndevcenter.gif "Centro per sviluppatori MSDN")|**I centri per sviluppatori MSDN**<br /><br /> -   [Centro di sviluppo di Visual Studio](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [Centro per sviluppatori di SharePoint](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [Centro per sviluppatori di SharePoint Server](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [Centro per sviluppatori di SharePoint Designer](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [Centro per sviluppatori di ASP.NET](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Inviare commenti e suggerimenti](../sharepoint/media/vs-icon-feedback.gif "commenti e suggerimenti")|**Inviare commenti e suggerimenti**<br /><br /> Fornire il feedback su Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Fornire il feedback sulla documentazione relativa a Visual Studio:<br /><br /> -   **Visualizzazione semplice.** Nella parte superiore di qualsiasi argomento è possibile scegliere il collegamento **Valuta questo argomento** per passare alla fine dell'argomento, dove è possibile specificare **Sì** o **No** alla domanda **Questa pagina è stata utile?** È quindi possibile selezionare una o più caselle di controllo visualizzate se si sceglie **No**o fornire altre informazioni nella casella di testo oppure entrambe le possibilità. Al termine, scegliere **Invia** .<br />-   **Visualizzazione senza script.** Nella parte superiore dell'argomento scegliere il collegamento **Feedback** per fornire commenti e suggerimenti nel forum Feedback sulle librerie MSDN, TechNet ed Expression.<br />-   **Visualizzazione classica.** Nella parte superiore dell'argomento scegliere il collegamento **Valuta il contenuto** e lascia un commento per fornire commenti e suggerimenti sull'argomento al team della documentazione.|  
   
-  
+ 

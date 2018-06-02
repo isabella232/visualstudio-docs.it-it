@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693445"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Procedura dettagliata: utilizzo della gerarchia XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Questa procedura dettagliata: Utilizzare gerarchia XSLT
 
 Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un foglio di stile XSLT spesso usa istruzioni `includes` e `imports`. La compilazione viene avviata dal foglio di stile principale, ma quando viene visualizzato un errore come risultato della compilazione di un foglio di stile XSLT, è possibile che l'errore provenga da un'origine diversa dal foglio di stile principale. È possibile che la correzione dell'errore o la modifica del foglio di stile richieda accesso ai fogli di stile inclusi o importati. Scorrendo il foglio di stile nel debugger è possibile che vengano visualizzati i fogli di stile inclusi e importati ed è necessario aggiungere un punto di interruzione in una determinata posizione di uno o più fogli di stile inclusi.
 
@@ -47,7 +48,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </COLLECTION>
     ```
 
-1. Aggiungere il seguente `xslincludefile.xsl`:
+1. Aggiungere il seguente *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </xsl:stylesheet>
     ```
 
-3.  Aggiungere il seguente file `xslinclude.xsl`:
+3.  Aggiungere il seguente *xslinclude.xsl* file:
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Procedura dettagliata: XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md)

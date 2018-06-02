@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f92b96f09353bf8e432d6a3931a534064ad7c446
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07ddb1dd64e5d972c23a032cb1eb752515d92ab6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693851"
 ---
-# <a name="xml-snippets"></a>Frammenti di codice XML
+# <a name="xml-snippets"></a>frammenti XML
 
 L'Editor XML offre una funzionalità denominata *frammenti XML*, che consente di compilare più rapidamente i file XML. È possibile riutilizzare i frammenti di codice XML inserendoli nei file. È possibile inoltre generare dati XML basati su uno schema XSD (XML Schema Definition Language).
 
@@ -40,17 +41,17 @@ L'editor XML include diversi frammenti di codice che comprendono alcune delle at
 
  È possibile inserire i frammenti di codice in due modi diversi: Il **Inserisci frammento di codice** comando consente di inserire il frammento XML nella posizione del cursore. Il **Racchiudi** comando esegue il wrapping il frammento XML nel testo selezionato. Entrambi i comandi sono disponibili dal **IntelliSense** sottomenu di sotto di **modifica** dal menu o dal menu di scelta rapida dell'editor.
 
- Per ulteriori informazioni, vedere [procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md).
+ Per altre informazioni, vedere [procedura: utilizzare XML snippets](../xml-tools/how-to-use-xml-snippets.md).
 
-## <a name="schema-generated-xml-snippets"></a>Frammenti di codice XML generati da uno schema
+## <a name="schema-generated-xml-snippets"></a>Frammenti XML generati dallo schema
  L'editor XML è in grado anche di generare un frammento di codice XML da uno schema XML. Tale funzionalità consente di inserire nell'elemento gli elementi XML generati dalle informazioni sullo schema per quel determinato elemento.
 
- Per ulteriori informazioni, vedere [procedura: generare un frammento di codice da un XML Schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
+ Per altre informazioni, vedere [procedura: generare un frammento XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
-## <a name="create-new-xml-snippets"></a>Creazione di nuovi frammenti di codice XML
+## <a name="create-new-xml-snippets"></a>Creare nuovi frammenti XML
  Oltre ai frammenti inclusi in [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio per impostazione predefinita, è anche possibile creare e usare i frammenti XML personalizzati.
 
- Per ulteriori informazioni, vedere [procedura: creare frammenti di codice XML](../xml-tools/how-to-create-xml-snippets.md).
+ Per altre informazioni, vedere [procedura: creare XML snippets](../xml-tools/how-to-create-xml-snippets.md).
 
 ## <a name="see-also"></a>Vedere anche
 

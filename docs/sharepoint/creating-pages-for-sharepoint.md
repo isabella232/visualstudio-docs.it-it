@@ -20,11 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f484c0501cbeede5600a4831d3d872ac81b3b5c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34694046"
 ---
 # <a name="creating-pages-for-sharepoint"></a>Creazione di pagine per SharePoint
   È possibile creare le pagine dell'applicazione, pagine del sito, pagine master e layout di pagina per un sito di SharePoint.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
  È inoltre possibile modificare l'aspetto e il comportamento delle pagine tramite fogli di stile CSS, ECMAScript e temi.  
   
-## <a name="types-of-sharepoint-pages"></a>Tipi di pagine di SharePoint  
+## <a name="types-of-sharepoint-pages"></a>Tipi di pagine di SharePoint
  Nella tabella seguente vengono descritti i quattro tipi principali di pagine che contiene un sito di SharePoint.  
   
 |Tipo di pagina|Descrizione|  
@@ -45,29 +46,28 @@ ms.lasthandoff: 04/16/2018
   
  Per una panoramica di ogni tipo di pagina, vedere [blocco predefinito: pagine e l'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095), e [pagine Master e layout di pagina](http://go.microsoft.com/fwlink/?LinkID=182096).  
   
-## <a name="creating-application-pages"></a>Creazione di pagine applicazione  
+## <a name="create-application-pages"></a>Creare le pagine dell'applicazione
  È possibile creare le pagine dell'applicazione in Visual Studio aggiungendo un **pagina applicazione** elemento a un progetto SharePoint. È possibile aggiungere controlli alla pagina e quindi gestire gli eventi di controllo aggiungendo il codice.  
   
  È possibile impostare i punti di interruzione nel file di codice della pagina, avviare il debugger e testare la pagina in un sito di SharePoint locale senza eseguire ulteriori passaggi di configurazione. Per ulteriori informazioni, vedere [la creazione di pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
-## <a name="creating-site-pages-master-pages-and-page-layouts"></a>Creazione di pagine del sito, pagine Master e layout di pagina  
+## <a name="create-site-pages-master-pages-and-page-layouts"></a>Creazione di pagine del sito, pagine master e layout di pagina
  È possibile creare pagine del sito, pagine master e layout di pagina utilizzando SharePoint Designer. Quindi, è possibile importare queste pagine in Visual Studio. Se si desidera sfruttare la distribuzione o la funzionalità di controllo di origine che sono disponibili in Visual Studio, importare le pagine. Per ulteriori informazioni, vedere [l'importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).  
   
  Poiché è difficile modificare queste pagine, dopo l'importazione, è consigliabile progettare le pagine prima di importarli.  
   
-## <a name="creating-cascading-style-sheets-ecmascript-and-themes"></a>Creazione di temi, ECMAScript e fogli di stile CSS  
+## <a name="create-cascading-style-sheets-ecmascript-and-themes"></a>Creazione di fogli di stile CSS, ECMAScript e temi
  Visual Studio fornisce modelli per lo sviluppo fogli CSS (Cascading Style), ECMAScript (JavaScript e JScript) o file di tema per i siti di SharePoint. È possibile creare questi file utilizzando le informazioni disponibili nel SDK di SharePoint o mediante strumenti quali SharePoint Designer.  
   
  È possibile aggiungere questi file per la soluzione direttamente oppure è possibile importarli. In entrambi i casi, è necessario creare le cartelle mappate appropriate per ogni elemento che si aggiunge. Per ulteriori informazioni su come creare una cartella mappata, vedere [procedura: aggiungere e rimuovere cartelle mappata](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   
  Per ulteriori informazioni sulla creazione di fogli di stile CSS, vedere [utilizzo della classe fogli di stile CSS in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098). Per ulteriori informazioni sulla creazione di un file JavaScript e JScript per una soluzione di SharePoint, vedere [impostazione di una pagina ASPX di base per ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099). Per ulteriori informazioni su temi, vedere [blocco predefinito: pagine e l'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095).  
   
-## <a name="related-topics"></a>Argomenti correlati  
+## <a name="related-topics"></a>Argomenti correlati
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Viene descritto come aggiungere le pagine di applicazioni: contenuto aspx unito con una pagina master di SharePoint.|  
 |[Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)|Viene illustrato come creare pagine ASP.NET eseguite in un sito di SharePoint.|  
 |[Procedura dettagliata: creazione di una pagina di un'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Viene illustrato come progettare ed eseguire il debug di una pagina Web ASP.NET per un sito di SharePoint.|  
-  
   

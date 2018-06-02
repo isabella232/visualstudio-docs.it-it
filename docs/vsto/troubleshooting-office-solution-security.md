@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693318"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Risoluzione dei problemi relativi alla sicurezza delle soluzioni Office
   In questo argomento contiene suggerimenti per la risoluzione dei problemi comuni che possono verificarsi quando si lavora con sicurezza delle soluzioni Office.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Trusted soluzioni non possono essere installate da siti con restrizioni  
- Gli utenti non è possibile installare una soluzione da un percorso web se il sito web è presente nell'area siti con restrizioni di Internet Explorer. Questo vale anche se la soluzione è firmata con un certificato attendibile.  
+ Gli utenti non è possibile installare una soluzione da un percorso web se il sito Web è presente nell'area siti con restrizioni di Internet Explorer. Questo vale anche se la soluzione è firmata con un certificato attendibile.  
   
  L'URL del manifesto di distribuzione può essere suddivise in una delle cinque aree:  
   
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
  Con IEESC e Internet Explorer 7 e versioni successive, se l'URL del manifesto della distribuzione è stato categorizzato nell'area Internet, il manifesto deve essere un certificato da un autore attendibile o non è possibile installare la soluzione. Senza IEESC, il comportamento predefinito è per richiedere all'utente finale per prendere una decisione di attendibilità.  
   
- Per gestire l'effetto di IEESC e Internet Explorer 7 e versioni successive, identificare i siti web e i percorsi UNC universal naming convention (UNC) che si considera attendibile e aggiungerli a una delle aree di sicurezza attendibili (intranet locale o siti attendibili). Per informazioni su come gestire le zone, vedere [di editori attendibili ClickOnce configurazione](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Gestire l'effetto di IEESC e Internet Explorer 7 e versioni successive, identificare i siti Web e i percorsi UNC universal naming convention (UNC) che si considera attendibile e li aggiunge a una delle aree di sicurezza con attendibilità (intranet locale o siti attendibili). Per informazioni su come gestire le zone, vedere [configurazione di editori attendibili ClickOnce](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza delle soluzioni Office](../vsto/securing-office-solutions.md)  

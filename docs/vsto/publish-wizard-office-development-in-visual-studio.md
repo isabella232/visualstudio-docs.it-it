@@ -1,5 +1,5 @@
 ---
-title: Pubblicazione guidata (sviluppo per Office in Visual Studio) | Documenti Microsoft
+title: Pubblicazione guidata (sviluppo per Office in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692720"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
   Utilizzare il **pubblicazione guidata** per copiare i file di soluzione in una posizione specifica, creare i file manifesto e creare un programma di installazione.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Digitare il percorso come un percorso su disco, una condivisione file, un sito FTP o URL del sito web oppure fare clic su di **Sfoglia** per cercare il percorso. Il percorso può essere nei seguenti formati:  
   
--   Un percorso relativo o assoluto in formato standard di Windows, ad esempio C:\Deploy\MyApplication o \MyApplication.  
+-   Un percorso relativo o assoluto nello standard Windows formato, ad esempio *C:\Deploy\MyApplication* oppure *\MyApplication*.  
   
--   Un percorso UNC Universal Naming Convention (), ad esempio \\\ServerName\MyApplication\\.  
+-   Un percorso (Universal Naming Convention), ad esempio  *\\\ServerName\MyApplication\\*.  
   
 -   Un URL di un sito web del sito, ad esempio http://www.microsoft.com/MyApplication.  
   
@@ -68,8 +69,8 @@ ms.lasthandoff: 04/16/2018
  Visual Studio masterizzare il CD o DVD. È necessario copiare manualmente l'output a un CD o DVD.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione di una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Pagina pubblica, Progettazione progetti &#40;sviluppo per Office in Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
- [Distribuzione di una soluzione Office](../vsto/deploying-an-office-solution.md)  
+ [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)  
   
   

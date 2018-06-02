@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 106f6a828035393273d7157c4b3e5bd898322e46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691370"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associazione di dati personalizzati alle estensioni degli strumenti di SharePoint
+# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associazione di dati personalizzati con le estensioni degli strumenti di SharePoint
   È possibile aggiungere dati personalizzati a determinati oggetti nelle estensioni degli strumenti di SharePoint. Ciò è utile quando si dispone di dati in una parte dell'estensione che si desidera accedere in un secondo momento da altro codice nell'estensione. Anziché implementare un modo personalizzato per archiviare e accedere ai dati, è possibile associare i dati a un oggetto nell'estensione e quindi recuperare i dati dallo stesso oggetto in un secondo momento.  
   
  Aggiunta di dati personalizzati agli oggetti è utile anche quando si desidera conservare i dati rilevanti per un elemento specifico in Visual Studio. Estensioni degli strumenti di SharePoint vengono caricate solo una volta in Visual Studio, pertanto l'estensione potrebbe funzionare con diverse voci (ad esempio progetti, gli elementi, del progetto o **Esplora Server** nodi) in qualsiasi momento. Se si dispone di dati personalizzati a cui sono rilevanti solo per un elemento specifico, è possibile aggiungere i dati per l'oggetto che rappresenta l'elemento.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/16/2018
   
  Nelle estensioni del sistema del progetto SharePoint, è anche possibile salvare i dati di tipo stringa che persiste dopo aver scaricata l'estensione. Per ulteriori informazioni, vedere [salvataggio dei dati nelle estensioni del sistema del progetto SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="objects-that-can-contain-custom-data"></a>Oggetti che possono contenere dati personalizzati  
+## <a name="objects-that-can-contain-custom-data"></a>Oggetti che possono contenere dati personalizzati
  È possibile aggiungere dati personalizzati in qualsiasi oggetto nel modello a oggetti degli strumenti di SharePoint che implementa il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interfaccia. Questa interfaccia definisce solo una delle proprietà, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, che è una raccolta di oggetti dati personalizzati. Implementano i seguenti tipi di <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>Aggiunta e recupero di dati personalizzati  
+## <a name="add-and-retrieve-custom-data"></a>Aggiungere e recuperare i dati personalizzati
  Per aggiungere dati personalizzati a un oggetto in un'estensione degli strumenti di SharePoint, ottenere il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'oggetto a cui si desidera aggiungere i dati e quindi utilizzare il <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> metodo per aggiungere i dati all'oggetto.  
   
  Per recuperare i dati personalizzati da un oggetto in un'estensione degli strumenti di SharePoint, ottenere il <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà dell'oggetto e quindi utilizzare uno dei metodi seguenti:  
@@ -81,10 +82,10 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Concetti di programmazione e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
  [Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Procedura dettagliata: Estensione di Esplora Server per visualizzare le Web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato] (.. /SharePoint/How-to-Add-a-Property-to-a-Custom-SharePoint-Project-Item-Type.MD   
-  
+ 

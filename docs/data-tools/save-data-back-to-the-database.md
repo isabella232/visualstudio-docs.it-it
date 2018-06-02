@@ -1,5 +1,5 @@
 ---
-title: Salvare i dati nel database
+title: Salvare i dati di nuovo nel database
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691134"
 ---
-# <a name="save-data-back-to-the-database"></a>Salvare i dati nel database
+# <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 Il set di dati è una copia in memoria dei dati. Se si modificano i dati, è consigliabile salvare le modifiche al database. Viene eseguita in uno dei tre modi:
 
 -   La chiamata a uno dei metodi di aggiornamento di un oggetto TableAdapter
@@ -221,7 +222,7 @@ Dopo avere apportate le modifiche in un set di dati, è possibile trasmettere le
 
  Una dimostrazione di come gli aggiornamenti, si supponga che l'applicazione utilizza un set di dati che contiene un'unica tabella dati. L'applicazione recupera due righe dal database. Dopo il recupero, la tabella di dati in memoria è simile al seguente:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Dopo avere apportate le modifiche in un set di dati, è possibile trasmettere le
 
  L'applicazione cambia lo stato di Nancy Buchanan "Preferito". In seguito a questa modifica, il valore di <xref:System.Data.DataRow.RowState%2A> proprietà per la riga viene modificata da <xref:System.Data.DataRowState.Unchanged> a <xref:System.Data.DataRowState.Modified>. Il valore di <xref:System.Data.DataRow.RowState%2A> proprietà per la prima riga rimane <xref:System.Data.DataRowState.Unchanged>. La tabella di dati è ora simile al seguente:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

@@ -28,18 +28,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691479"
 ---
-# <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione del modello di integrazione applicativa dei dati
+# <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati
   È possibile progettare un modello di integrazione applicativa dei dati (BDC) utilizzando la finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo di integrazione applicativa dei dati** finestra e **Esplora integrazione applicativa dei dati**.  
   
  Il **Esplora integrazione applicativa dei dati** consente di esplorare il modello, eseguire ricerche nel modello e definire i descrittori di tipo.  
   
-## <a name="bdc-designer"></a>Finestra di progettazione di integrazione applicativa dei dati  
+## <a name="bdc-designer"></a>Finestra di progettazione di integrazione applicativa dei dati
  La finestra di progettazione di integrazione applicativa dei dati consente di definire le entità nel modello e disporre visivamente le relazioni tra loro. Utilizzare la finestra di progettazione di integrazione applicativa dei dati per eseguire le attività seguenti:  
   
 -   Aggiungere entità al modello.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Per aprire la finestra di progettazione di integrazione applicativa dei dati, fare doppio clic sul file modello nel progetto o aprire il menu di scelta rapida per il file del modello e quindi scegliere **aprire**. Aggiungere un'entità al modello trascinando o copiando un **entità** dal **della casella degli strumenti** nella finestra di progettazione. Per creare un'associazione tra due entità, scegliere il **associazione** controllo il **della casella degli strumenti**, scegliere la prima entità, quindi la seconda entità.  
   
-## <a name="bdc-method-details-window"></a>Finestra Dettagli metodo di integrazione applicativa dei dati  
+## <a name="bdc-method-details-window"></a>Finestra Dettagli metodo di integrazione applicativa dei dati
  Utilizzare il **Dettagli metodo di integrazione applicativa dei dati** finestra per definire i parametri, le istanze e descrittori di filtro di un metodo.  
   
  È possibile generare rapidamente metodi Finder, Finder specifico, autore, Updater e Deleter il **Dettagli metodo di integrazione applicativa dei dati** finestra. Quando si generano questi metodi, Visual Studio aggiunge i metadati, ad esempio parametri, istanze e descrittori del tipo, il metodo. È possibile modificare i metadati per soddisfare il proprio scenario specifico.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
  Espandere o comprimere i nodi di **Dettagli metodo di integrazione applicativa dei dati** finestra per definire parametri, le istanze e descrittori di filtro. Utilizzare il **Esplora integrazione applicativa dei dati** per definire i descrittori di tipo.  
   
-## <a name="bdc-explorer"></a>Esplora integrazione applicativa dei dati  
+## <a name="bdc-explorer"></a>Esplora integrazione applicativa dei dati
  Il **Esplora integrazione applicativa dei dati** Visualizza gli elementi che costituiscono il modello. Per aprire la **Esplora integrazione applicativa dei dati**, sulla barra dei menu, scegliere **vista**, **altre finestre**, **Esplora integrazione applicativa dei dati**. Per esplorare il modello, espandere i nodi di **Esplora integrazione applicativa dei dati**. Ogni nodo rappresenta un elemento nel codice XML del file di modello.  
   
  Mentre si selezionano nodi nel **Esplora integrazione applicativa dei dati**, vengono visualizzate le proprietà di ogni nodo che si sceglie nel **proprietà** finestra. Molte di queste proprietà corrispondono agli attributi nel file di modello. È possibile cercare il modello utilizzando la casella di ricerca nella parte superiore del **Esplora integrazione applicativa dei dati**.  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Il **Esplora integrazione applicativa dei dati** non visualizza gli identificatori, proprietà personalizzate, le stringhe localizzate, gruppi di associazioni, azioni, descrittori di filtro, elenchi di controllo di azioni e i valori di parametro predefiniti.  
   
-### <a name="defining-type-descriptors"></a>Definizione di descrittori di tipo  
+### <a name="define-type-descriptors"></a>Definire i descrittori di tipo
  Utilizzare il **Esplora integrazione applicativa dei dati** per definire i descrittori di tipo. Le soluzioni di integrazione applicativa dei dati consente di definire un descrittore di tipo una sola volta e riusare quindi tale descrittore di tipo in un' posizione nel modello. A tale scopo, è possibile copiare un descrittore di tipo e incollarlo in qualsiasi altro parametro o descrittore di tipo.  
   
 > [!NOTE]  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Per ulteriori informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)   
  [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
@@ -91,4 +92,4 @@ ms.lasthandoff: 04/16/2018
  [Creazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
-  
+ 

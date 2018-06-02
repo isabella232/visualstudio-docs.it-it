@@ -1,5 +1,5 @@
 ---
-title: Supporto del threading in Office | Documenti Microsoft
+title: Supporto del threading in Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693084"
 ---
 # <a name="threading-support-in-office"></a>Supporto del threading in Office
-  In questo argomento vengono fornite informazioni sulle modalità di supporto del threading nel modello a oggetti Microsoft Office. Il modello a oggetti Office non è thread-safe, ma è possibile utilizzare più thread in una soluzione Office. Le applicazioni di Office sono server modello COM (Component Object). COM consente ai client di chiamare server COM con thread arbitrari. Per i server COM che non sono thread-safe, COM fornisce un meccanismo per la serializzazione di chiamate simultanee in modo che un solo thread logico viene eseguito nel server in qualsiasi momento. Questo meccanismo è noto come modello di apartment a thread singolo (STA). Poiché le chiamate vengono serializzate, i chiamanti potrebbero essere bloccati per periodi di tempo, mentre il server è occupato o si sta gestendo altre chiamate in un thread in background.  
+  Questo articolo fornisce informazioni sulle modalità di supporto del threading nel modello a oggetti Microsoft Office. Il modello a oggetti Office non è thread-safe, ma è possibile utilizzare più thread in una soluzione Office. Le applicazioni di Office sono server modello COM (Component Object). COM consente ai client di chiamare server COM con thread arbitrari. Per i server COM che non sono thread-safe, COM fornisce un meccanismo per la serializzazione di chiamate simultanee in modo che un solo thread logico viene eseguito nel server in qualsiasi momento. Questo meccanismo è noto come modello di apartment a thread singolo (STA). Poiché le chiamate vengono serializzate, i chiamanti potrebbero essere bloccati per periodi di tempo, mentre il server è occupato o si sta gestendo altre chiamate in un thread in background.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -36,17 +37,17 @@ ms.lasthandoff: 04/16/2018
   
 -   COM concetti con multithreading  
   
--   Concorrenza  
+-   Concurrency  
   
 -   Sincronizzazione  
   
 -   marshalling  
   
- Per informazioni generali sul multithreading, vedere [Managed Threading](/dotnet/standard/threading/).  
+ Per informazioni generali sul multithreading, vedere [threading gestito](/dotnet/standard/threading/).  
   
  Office viene eseguita in sta primario. Comprendere le implicazioni di questo oggetto consente di comprendere come utilizzare più thread con Office.  
   
-## <a name="basic-multithreading-scenario"></a>Scenario Multithreading di base  
+## <a name="basic-multithreading-scenario"></a>Scenario multithreading di base  
  Codice nelle soluzioni Office viene sempre eseguito nel thread principale dell'interfaccia utente. Si potrebbe voler riducono le prestazioni dell'applicazione mediante l'esecuzione di un'attività distinta su un thread in background. L'obiettivo è completare idealmente due attività in una sola volta anziché una sola attività seguita da altri, consentendo una migliore esecuzione (il principale motivo per l'utilizzo di più thread). Ad esempio, potrebbe essere il codice di eventi nel thread principale dell'interfaccia utente di Excel e in un thread in background è possibile eseguire un'attività che raccoglie i dati da un server e aggiorna le celle nell'interfaccia utente di Excel con i dati dal server.  
   
 ## <a name="background-threads-that-call-into-the-office-object-model"></a>Thread in background che effettuano chiamate nel modello a oggetti di Office  
@@ -62,13 +63,13 @@ ms.lasthandoff: 04/16/2018
   
  Tuttavia, nel caso di soluzioni create mediante gli strumenti di sviluppo per Office in Visual Studio, l'interoperabilità COM converte tutte le chiamate rifiutate per una <xref:System.Runtime.InteropServices.COMException> ("il filtro messaggi ha indicato che l'applicazione è occupata"). Quando si esegue un modello a oggetti chiamata su un thread in background, è necessario per essere pronti a gestire questa eccezione. In genere, che richiede un nuovo tentativo per un determinato periodo di tempo e quindi visualizzando una finestra di dialogo. Tuttavia, è possibile creare il thread in background come STA e quindi registrare un filtro messaggi per il thread gestire questa situazione.  
   
-## <a name="starting-the-thread-correctly"></a>È possibile avviare correttamente il Thread  
+## <a name="start-the-thread-correctly"></a>Avviare il thread correttamente  
  Quando si crea un nuovo thread STA, impostare lo stato dell'apartment STA prima di avviare il thread. Nell'esempio di codice seguente viene illustrato come procedere.  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Per ulteriori informazioni, vedere [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
+ Per altre informazioni, vedere [threading consigliate gestito](/dotnet/standard/threading/managed-threading-best-practices).  
   
 ## <a name="modeless-forms"></a>Form non modali  
  Un form non modale consente un certo tipo di interazione con l'applicazione mentre viene visualizzato il modulo. L'utente interagisce con il modulo e quest ' ultimo interagisce con l'applicazione senza chiudere. Il modello a oggetti Office supporta gestito form modale. Tuttavia, non devono essere usati in un thread in background.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vedere anche  
  [Threading gestito](/dotnet/standard/threading/)  
  [Threading (c#)](/dotnet/csharp/programming-guide/concepts/threading/index) [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
- [Utilizzo di thread e threading](/dotnet/standard/threading/using-threads-and-threading)   
+ [Utilizzo thread e threading](/dotnet/standard/threading/using-threads-and-threading)   
  [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

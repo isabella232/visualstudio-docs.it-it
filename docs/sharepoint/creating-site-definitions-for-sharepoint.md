@@ -18,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691804"
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Creazione di definizioni di sito per SharePoint
   Il progetto di definizione del sito di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] consente di creare un *definizione sito*, che funge da base per un nuovo sito di SharePoint. Queste definizioni determinano non solo l'aspetto e il comportamento del sito di SharePoint, ma anche il contenuto predefinito e funzionalità. Nella definizione è possibile inserire elenchi preconfigurati, tipi di contenuto, ricevitori di eventi, immagini e altri elementi. In SharePoint sono incluse alcune definizioni di sito come BLOG, ad esempio. Quando si crea un sito in base alla definizione di sito BLOG, il sito contiene gli elenchi, Web part e altri elementi richiesti da un sito blog.  
   
  Per ulteriori informazioni sulle definizioni di sito, vedere [modelli di sito e le definizioni di](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
-## <a name="site-definition-projects"></a>Progetti di definizione sito  
+## <a name="site-definition-projects"></a>Progetti di definizione sito
  Progetti di definizione sito [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] forniscono solo i file di base necessarie per un sito di SharePoint, non forniscono le funzionalità predefinite. È necessario aggiungere i file e il contenuto per fornire la funzionalità che si desidera. È possibile compilare il sito manualmente, creando e aggiungendo i file necessari.  
   
-## <a name="feature-stapling"></a>Associazione delle funzionalità  
+## <a name="feature-stapling"></a>Associazione delle funzionalità
  Un vantaggio della creazione di definizioni di sito in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] è l'utilizzo automatico *associazione delle funzionalità*. L'associazione delle funzionalità collega una funzionalità a una definizione di sito anziché incorporare le funzionalità nella definizione del sito stesso. Questa operazione consente di aggiungere la funzionalità a qualsiasi sito creato tramite la definizione del sito senza modificare la definizione di sito originale. Per ulteriori informazioni, vedere [associazione delle funzionalità](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Componenti del progetto di definizione del sito  
+## <a name="site-definition-project-components"></a>Componenti di progetto di definizione del sito
  Quando si crea una soluzione di definizione del sito, i seguenti file predefiniti vengono aggiunti al relativo **SiteDefinition** nodo.  
   
 |Nome file|Descrizione|  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
 |Onet.Xml|Specifica la configurazione del nuovo sito, i componenti del modello di definizione del sito e il comportamento predefinito. Queste impostazioni possono includere attributi, ad esempio i tipi di contenuto che sono abilitati, le visualizzazioni elenco predefinite, il file di modello di documento e le Web part incluse nel sito. Per impostazione predefinita, il `Modules` sezione sono elencati i file da aggiungere al sito di SharePoint e modalità di configurazione.|  
 |webtemp_*SiteDefinitionName*. Xml|Specifica le configurazioni di definizione del sito che viene visualizzato nel **selezione modello** sezione la **nuovo sito di SharePoint** pagina.|  
   
- Per impostazione predefinita, tutte le definizioni di sito vengono archiviate nel *unità:*cartella \Programmi\File comuni\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Ogni definizione di sito è una sottocartella.  
+ Per impostazione predefinita, tutte le definizioni di sito vengono archiviate nel *unità:* cartella \Programmi\File comuni\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Ogni definizione di sito è una sottocartella.  
   
-## <a name="related-topics"></a>Argomenti correlati  
+## <a name="related-topics"></a>Argomenti correlati
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |[Pagine Web ASP.NET di programmazione](http://go.microsoft.com/fwlink/?LinkId=178728)|Vengono fornite informazioni su come creare gestori eventi in [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine e le modalità di utilizzo di script client.|  
 |[Il linguaggio di programmazione Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Viene descritto come utilizzare il modello a oggetti gestito che viene fornito in [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

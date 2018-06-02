@@ -1,5 +1,5 @@
 ---
-title: Passare dati tra form
+title: Passare dati da un form all'altro
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691212"
 ---
-# <a name="pass-data-between-forms"></a>Passare dati tra form
+# <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio dei dati da un form a un altro. Usando le tabelle customers e orders di Northwind, un modulo consente agli utenti di selezionare un cliente e un secondo form vengono visualizzati gli ordini del cliente selezionato. Questa procedura dettagliata viene illustrato come creare un metodo nel secondo form che riceve i dati dal primo form.
 
 > [!NOTE]
@@ -145,7 +146,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
 
 5.  Aggiungere una clausola WHERE alla query, per restituire `Orders` in base il `CustomerID`. La query dovrebbe essere simile alla seguente:
 
-    ```
+    ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
     FROM Orders
     WHERE CustomerID = @CustomerID

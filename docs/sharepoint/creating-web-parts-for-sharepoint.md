@@ -28,23 +28,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691532"
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
   Utilizzando le web part, è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint utilizzando un browser. Web part sono controlli sul lato server che eseguono all'interno di una pagina web part: sono relative ai blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  È possibile creare e quindi eseguire il debug di web part in un sito di SharePoint utilizzando i modelli di Visual Studio.  
   
-## <a name="creating-a-web-part-in-visual-studio"></a>Creazione di una Web Part in Visual Studio  
+## <a name="create-a-web-part-in-visual-studio"></a>Creare una web part in Visual Studio
  Creare una web part aggiungendo un **Web Part** elemento a qualsiasi progetto SharePoint. È possibile utilizzare un **Web Part** elemento in una soluzione creata mediante sandbox o una soluzione farm.  
   
  Se si desidera progettare visivamente una web part tramite una finestra di progettazione, creare un **Web Part visiva** di progetto o aggiungere **Web Part visiva** elemento a qualsiasi progetto SharePoint. È possibile utilizzare un **Web Part visiva** articolo in solo una soluzione farm.  
   
-### <a name="web-part-item"></a>Elemento Web Part  
+### <a name="web-part-item"></a>Elemento Web part
  Oggetto **Web Part** elemento fornisce i file che è possibile utilizzare per progettare una web part per un sito di SharePoint. Quando si aggiunge un **Web Part** item, Visual Studio crea una cartella nel progetto e quindi vengono aggiunti alcuni file nella cartella. La tabella seguente descrive ciascun file.  
   
 |File|Descrizione|  
@@ -55,10 +56,10 @@ ms.lasthandoff: 04/16/2018
   
  Per ulteriori informazioni, vedere [procedura: creare una Web Part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
-### <a name="visual-web-part-item"></a>Elemento Web Part visiva  
+### <a name="visual-web-part-item"></a>Elemento web part visiva
  Una web part visiva è una web part creata utilizzando la finestra di progettazione di Visual Web Developer in Visual Studio. Una web part visiva funziona esattamente come qualsiasi altra web part. Per aggiungere controlli, ad esempio i pulsanti e caselle di testo, a una web part, aggiungere codice in un file XML. Tuttavia, aggiungere controlli a una web part visiva trascinando o copiando li nella web part di Visual Studio **della casella degli strumenti**. La finestra di progettazione genera quindi il codice necessario nel file XML. Vedere [procedura: creare una Web Part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
-## <a name="sharepoint-controls"></a>Controlli di SharePoint  
+## <a name="sharepoint-controls"></a>Controlli di SharePoint
  Visual Studio fornisce alcuni controlli per la creazione di pagine di SharePoint, ad esempio le pagine dell'applicazione. Questi controlli vengono visualizzati di **della casella degli strumenti** in **controlli SharePoint**. La funzionalità per questi controlli deriva il [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) spazio dei nomi, che contiene i controlli server ASP.NET che vengono utilizzati nelle pagine di siti ed elenchi SharePoint.  
   
 |Nome controllo|Descrizione|  
@@ -73,14 +74,14 @@ ms.lasthandoff: 04/16/2018
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Fornisce proprietà e metodi per la registrazione di risorse, ad esempio gli script, in una pagina in modo che può essere richiesta quando viene eseguito il rendering della pagina.|  
 |[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Applica un tema per la pagina aspx.|  
   
-## <a name="debugging-a-web-part"></a>Debug di una Web Part  
+## <a name="debug-a-web-part"></a>Eseguire il debug di una web part
  È possibile eseguire il debug di un progetto di SharePoint che contiene una web part, esattamente come si trattasse del debug di altri progetti di Visual Studio. Quando si avvia il debugger di Visual Studio, Visual Studio apre il sito di SharePoint.  
   
  Per avviare il debug del codice, aggiungere la web part a una pagina web part in SharePoint.  
   
  Per ulteriori informazioni su come eseguire il debug di progetti SharePoint, vedere [risoluzione dei problemi delle soluzioni di SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## <a name="visual-web-part-limitations"></a>Limitazioni della web part visiva  
+## <a name="visual-web-part-limitations"></a>Limitazioni della Visual web part
  A partire da Visual Studio, è possibile aggiungere una web part visive per soluzioni di SharePoint create mediante sandbox e soluzioni farm. Tuttavia, web part visive presentano le limitazioni seguenti:  
   
 -   Web part visive non supportano parametri sostituibili. Per ulteriori informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).  
@@ -103,14 +104,14 @@ ms.lasthandoff: 04/16/2018
   
  Per ulteriori informazioni sulle soluzioni create mediante sandbox, vedere [le differenze tra creata mediante sandbox e soluzioni Farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## <a name="creating-older-style-sharepoint-based-web-parts"></a>Creazione di precedente stile basato su SharePoint Web part  
+## <a name="create-older-style-sharepoint-based-web-parts"></a>Creare stile precedente basato su SharePoint web part
  È possibile utilizzare i modelli in Visual Studio per la creazione personalizzata [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web part per SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web part vengono compilate in cima il [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruttura delle web part e sono il tipo consigliato per i nuovi progetti.  
   
  In alcuni casi, potrebbe essere necessario creare una web part usando lo stile precedente parte web basato su SharePoint. È possibile utilizzare Visual Studio per creare questi tipi di web part, ma Visual Studio non fornisce tutti i modelli che sono progettati specificamente per semplificarne la creazione.  
   
  Per ulteriori informazioni su quando si potrebbe desiderare di creare uno stile precedente parte web basato su SharePoint, vedere [infrastruttura delle Web Part in Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Per ulteriori informazioni su come creare una web part usando lo stile precedente parte web basato su SharePoint, vedere [procedura dettagliata Creazione di una Web Part di SharePoint base](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## <a name="related-topics"></a>Argomenti correlati  
+## <a name="related-topics"></a>Argomenti correlati
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
@@ -120,5 +121,4 @@ ms.lasthandoff: 04/16/2018
 |[Procedura dettagliata: creazione di una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Viene descritto come progettare una web part per SharePoint.|  
 |[Procedura dettagliata: creazione di una web part per SharePoint tramite una finestra di progettazione](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Viene descritto come progettare una web part per SharePoint trascinando i controlli a una superficie di progettazione visiva.|  
 |[Procedura dettagliata: creazione di una Web part Silverlight che visualizza il servizio OData per SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Viene descritto come progettare una web part per SharePoint che ospita un'applicazione Silverlight e visualizza i dati da elenchi SharePoint.|  
-  
   

@@ -10,18 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693825"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Procedura dettagliata: utilizzo delle funzionalità dell'editor XML
+# <a name="walkthrough-use-xml-editor-features"></a>Questa procedura dettagliata: Utilizzare funzionalità dell'editor XML
 
 Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. Nella procedura dettagliata vengono inoltre usate alcune delle funzionalità dell'editor XML che lo rendono particolarmente utile per la creazione di codice XML.
 
 > [!NOTE]
-> Prima di avviare la procedura dettagliata, salvare il file hireDate.xsd (incluso di seguito in questo argomento) sul computer locale.
+> Prima di avviare la procedura dettagliata, salvare il *HireDate* file (incluso di seguito in questo argomento) nel computer locale.
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a uno schema XML
 
@@ -39,7 +40,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
      Il **Apri Schema XSD** viene visualizzata la finestra di dialogo.
 
-5.  Selezionare il file hireDate.xsd e fare clic su **aprire**.
+5.  Selezionare il *HireDate* del file e fare clic su **Apri**.
 
 6.  Fare clic su **OK**.
 
@@ -59,7 +60,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
     -   **dipendente** per aggiungere l'elemento radice.
 
-2.  Selezionare **<!-** per aggiungere un nodo di commento e premere INVIO.
+2.  Selezionare **<!-** per aggiungere un nodo di tipo comment e premere **invio**.
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
@@ -71,7 +72,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 5.  Digitare `>` per chiudere il tag.
 
-6.  L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. La descrizione comando visualizza il messaggio: contenuto dell'elemento 'employee' incompleto. Previsto "Identificatore".
+6.  L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. Il **ToolTip** viene visualizzato il messaggio: **dell'elemento 'employee' dispone di contenuto non completo. Previsto 'ID'**.
 
 7.  Tipo `<` e selezionare **ID** dall'elenco dei membri. Digitare quindi `>`.
 
@@ -79,17 +80,17 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 8.  Tipo **abc**.
 
-     Il **abc** testo ha una sottolineatura ondulata. La descrizione comando visualizza il messaggio: l'elemento 'identificatore' non ha un valore valido per il relativo tipo di dati.
+     Il **abc** testo ha una sottolineatura ondulata. Il **ToolTip** viene visualizzato il messaggio: **l'elemento 'ID' ha un valore non valido in base al relativo tipo di dati**.
 
-9. Fare clic con il pulsante destro sull'elemento ID e selezionare **Vai a definizione**.
+9. Fare clic sull'elemento ID e selezionare **Vai a definizione**.
 
-     Nell'editor viene aperto il file hireDate.xsd in una nuova finestra del documento e il cursore viene posizionato sulla definizione dell'elemento dello schema identificatore.
+     Verrà aperto l'editor di *HireDate* file in una nuova finestra del documento e posiziona il cursore nella definizione dell'elemento dello schema di ID.
 
 10. Tornare al file XML e sostituire il **abc** testo con **123**.
 
-     La sottolineatura ondulata e la descrizione comando sotto il valore identificatore dell'elemento vengono cancellati. La descrizione comando del tag di fine del dipendente visualizza il messaggio: contenuto dell'elemento 'employee' incompleto. Previsto 'hire-date'.
+     La sottolineatura ondulata e **ToolTip** sotto il valore ID dell'elemento vengono cancellati. Il **ToolTip** per l'entità finale dipendente tag viene ora visualizzato il messaggio: **dell'elemento 'employee' dispone di contenuto non completo. Previsto 'la data di assunzione'**.
 
-11. Posizionare il cursore dopo il tag di fine identificatore, digitare `<`, scegliere la data di assunzione dall'elenco dei membri, quindi digitare `>`.
+11. Posizionare il cursore dopo il tag di fine identificatore, digitare `<`, selezionare **la data di assunzione** dall'elenco dei membri e quindi digitare `>`.
 
      L'editor aggiunge l'elemento XML, `<hire-date></hire-date>`, e posiziona il cursore dopo il tag di inizio data assunzione.
 
@@ -105,11 +106,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 1.  Dal **File** dal menu **Salva con nome**.
 
-     Il **Salva File con nome** viene visualizzata la finestra di dialogo. Il nome file predefinito è "XMLFile1".
+     Il **Salva File con nome** viene visualizzata la finestra di dialogo. Il nome file predefinito è *"XMLFile1"*.
 
 2.  Immettere il nome del file e il percorso per il documento XML e fare clic su **salvare**.
 
-## <a name="hiredatexsd-file"></a>File hireDate.xsd
+## <a name="hiredatexsd-file"></a>file hireDate. xsd
  nella procedura dettagliata viene usato il seguente file di schema.
 
 ```xml

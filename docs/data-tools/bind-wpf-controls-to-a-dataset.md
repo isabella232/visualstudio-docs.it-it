@@ -1,5 +1,5 @@
 ---
-title: Associare i controlli WPF a un set di dati
+title: Associare controlli WPF a un set di dati
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bd0aa9ae269da4cfd4ae5ab3dfb45e96052d75fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 917bf166057ef304f3d045898838b7074d76c467
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690718"
 ---
-# <a name="bind-wpf-controls-to-a-dataset"></a>Associare i controlli WPF a un set di dati
+# <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i controlli associati a dati. I controlli vengono associati a record di prodotto incapsulati in un set di dati. Si aggiungeranno inoltre i pulsanti per scorrere i prodotti e salvare le modifiche ai record di prodotto.
 
 In questa procedura dettagliata vengono illustrate le attività seguenti:
@@ -116,7 +117,7 @@ Per completare la procedura dettagliata è inoltre consigliabile conoscere già 
 
 3.  Nel **immettere un'istruzione SQL** pagina, aggiungere la clausola WHERE seguente dopo il `SELECT` istruzione nella casella di testo.
 
-    ```
+    ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 

@@ -24,29 +24,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 293441e93c38a65ca343b021b2bf19c5a56ac7c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d0475653fe3c5950e39e9f8293d5179e9380db6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692171"
 ---
 # <a name="creating-an-association-between-entities"></a>Creazione di un'associazione tra entità
   È possibile definire relazioni tra entità nel modello (Applicativa dei dati) tramite la creazione di associazioni. Visual Studio genera metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.  
   
-## <a name="creating-an-association"></a>Creazione di un'associazione  
+## <a name="create-an-association"></a>Creare un'associazione
  Creare un'associazione scegliendo il **associazione** controllo in Visual Studio **della casella degli strumenti**, scegliendo la prima entità (entità di origine denominata) e quindi la seconda entità (chiamato il entità di destinazione). È possibile definire i dettagli dell'associazione nel **Editor di associazione**. Per ulteriori informazioni, vedere [procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md).  
   
-## <a name="association-methods"></a>Metodi di associazione  
+## <a name="association-methods"></a>Metodi di associazione
  Le applicazioni, ad esempio web part dei dati aziendali di SharePoint utilizzano associazioni chiamando i metodi nella classe di servizio di un'entità. È possibile aggiungere metodi alla classe di servizio di un'entità selezionandoli nel **Editor di associazione**.  
   
  Per impostazione predefinita, il **Editor di associazione** aggiunge un metodo AssociationNavigator alle entità di origine e destinazione. Un metodo AssociationNavigator nell'entità di origine consente agli utenti di recuperare un elenco di entità di destinazione. Un metodo AssociationNavigator nell'entità di destinazione consente agli utenti di recuperare l'entità di origine che si riferisce a un'entità di destinazione.  
   
  È necessario aggiungere il codice per ognuno di questi metodi per restituire le informazioni appropriate. È anche possibile aggiungere altri tipi di metodi per supportare scenari più avanzati. Per ulteriori informazioni su ciascuno di questi metodi, vedere [operazioni supportate](http://go.microsoft.com/fwlink/?LinkId=169286).  
   
-## <a name="types-of-associations"></a>Tipi di associazioni  
+## <a name="types-of-associations"></a>Tipi di associazioni
  È possibile creare due tipi di associazioni nella finestra di progettazione di integrazione applicativa dei dati: associazioni basato su chiave esterne e associazioni senza chiave esterna.  
   
-### <a name="foreign-key-based-association"></a>Associazione basata su chiavi esterne  
+### <a name="foreign-key-based-association"></a>Associazione basato su chiavi esterne
  È possibile creare un'associazione basata su chiavi esterne in relazione con un identificatore dell'entità di origine al tipo descrittori definiti nell'entità di destinazione. Questa relazione consente agli utenti del modello fornire un'interfaccia utente avanzata per i propri utenti. Ad esempio, un modulo in Outlook che consente all'utente di creare un ordine di vendita che è possibile visualizzare i clienti in un elenco a discesa; o un elenco di ordini di vendita in SharePoint che consente agli utenti di aprire una pagina del profilo per un cliente.  
   
  Per creare un'associazione basata su chiavi esterne, correlare gli identificatori e descrittori di tipo che condividono lo stesso nome e tipo. Ad esempio, è possibile creare un'associazione basata su chiavi esterne tra un `Contact` entità e un `SalesOrder` entità. Il `SalesOrder` entità restituisce una `ContactID` descrittore di tipo come parte del parametro restituito dal metodo Finder o Finder specifico. Entrambi i descrittori di tipo vengono visualizzati di **Editor di associazione**. Per creare una relazione basata su chiave esterna tra le `Contact` entità e `SalesOrder` entità, scegliere il `ContactID` identificatore accanto a ciascuno di questi campi.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]  
   
-### <a name="foreign-keyless-association"></a>Associazione senza chiave esterna  
+### <a name="foreign-keyless-association"></a>Associazione senza chiave esterna
  È possibile creare un'associazione senza mapping tra gli identificatori e descrittori del tipo di campo. Creare questo tipo di associazione quando l'entità di origine non dispone di una relazione diretta con l'entità di destinazione. Ad esempio, un `SalesOrderDetail` tabella non dispone di una chiave esterna che esegue il mapping a una chiave primaria in un `Contact` tabella.  
   
  Se si desidera visualizzare le informazioni nel `SalesOrderDetail` tabella che si riferisce a un `Contact`, è possibile creare un'associazione senza chiave esterna tra le `Contact` entità e `SalesOrderDetail` entità.  
@@ -78,8 +79,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Progettazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md)  
   
-  
+ 

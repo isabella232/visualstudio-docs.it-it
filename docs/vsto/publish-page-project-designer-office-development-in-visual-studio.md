@@ -1,5 +1,5 @@
 ---
-title: Pagina pubblica, Project Designer (sviluppo per Office in Visual Studio) | Documenti Microsoft
+title: Pagina pubblica, Progettazione progetti (sviluppo per Office in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,19 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692844"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina Pubblicazione, Progettazione progetti (sviluppo per Office in Visual Studio)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina pubblica, Progettazione progetti (sviluppo per Office in Visual Studio)
   La pagina **Pubblica** di **Creazione progetti** viene usata per configurare le proprietà per la distribuzione.  
   
  Per accedere a questa pagina, selezionare il progetto in **Esplora soluzioni**, quindi, nel menu **Progetto** , scegliere *NomeProgetto* **Proprietà**. Se la pagina **Pubblica** non viene visualizzata, scegliere la scheda **Pubblica** .  
   
 > [!NOTE]  
->  È anche possibile impostare il percorso di pubblicazione nella **Pubblicazione guidata**. Per altre informazioni, vedere [Procedura: Distribuire una soluzione Office usando ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  È anche possibile impostare il percorso di pubblicazione nella **Pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare una soluzione Office tramite ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Posizione cartella di pubblicazione (sito Web, server FTP o percorso file)**  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\*), o un percorso completo (*\\\servername\foldername* o http://*servername/foldername*).  
   
- Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato o la directory Publish \ se si è installato IIS.  
+ Per impostazione predefinita, il percorso di pubblicazione viene *http://localhost/projectname/* se IIS è installato, o il *pubblicare\\*  directory se non è installato IIS.  
   
  **URL cartella di installazione**  
  Facoltativo.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
  Se i file di installazione si trovano in un percorso relativo al documento o al programma di installazione, ad esempio l'opzione CD, lasciare vuota questa casella.  
   
- Questo valore può essere assegnato successivamente da un amministratore. Per altre informazioni, vedere [Procedura: Modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Questo valore può essere assegnato successivamente da un amministratore. Per altre informazioni, vedere [procedura: modificare il percorso di installazione di una soluzione Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Prerequisiti**  
  I prerequisiti possono essere inclusi nel programma di installazione o scaricati su richiesta durante l'installazione.  
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/16/2018
  **Lingua di pubblicazione**  
  Questa opzione imposta la lingua delle Condizioni di licenza software Microsoft e include i Language Pack nell'elenco dei prerequisiti. Non influisce sulla lingua della personalizzazione. La lingua del programma di installazione viene determinata dalle lingue installate di Visual Studio.  
   
- Per altre informazioni su come modificare la **lingua di pubblicazione**, vedere [Procedura: cambiare la lingua di pubblicazione di un'applicazione ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Per ulteriori informazioni su come modificare la **lingua di pubblicazione**, vedere [procedura: modificare la lingua di pubblicazione per un'applicazione ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Versione di pubblicazione**  
  Imposta il numero di versione per la personalizzazione. Quando il numero di versione viene modificato, l'applicazione viene pubblicata come aggiornamento. Viene creata una nuova cartella per ogni versione durante il processo di compilazione per evitare la sovrascrittura della versione precedentemente pubblicata. Ogni parte della versione di pubblicazione (**Principale**, **Secondaria**, **Compilazione**, **Revisione**) può contenere fino a cinque cifre.  
@@ -111,8 +112,8 @@ ms.lasthandoff: 04/16/2018
  Pubblica l'applicazione usando le impostazioni correnti. Equivale al pulsante **Fine** nella **Pubblicazione guidata**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione di una soluzione Office](../vsto/deploying-an-office-solution.md)   
- [Distribuzione di una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)   
+ [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Prerequisiti per la distribuzione di soluzioni Office](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

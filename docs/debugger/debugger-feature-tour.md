@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sul debugger
+title: Presentazione del debugger
 description: Esaminare rapidamente le diverse funzionalità del debugger di Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
@@ -13,15 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691092"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Cenni preliminari sul Debugger di Visual Studio
 
-In questo argomento vengono presentate le funzionalità del debugger di Visual Studio. Se si desidera seguire la procedura per l'apertura di un'app in Visual Studio, è possibile farlo oppure è possibile seguire insieme a un'app di esempio usando il [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
+Questo argomento presenta le funzionalità del debugger di Visual Studio. Se si desidera seguire la procedura per l'apertura di un'app in Visual Studio, è possibile farlo oppure è possibile seguire insieme a un'app di esempio usando il [Guida per principianti](../debugger/getting-started-with-the-debugger.md).
 
 Le funzionalità descritte di seguito sono applicabili a c#, C++, Visual Basic, JavaScript e altri linguaggi supportati da Visual Studio (se non diversamente).
 
@@ -76,7 +77,7 @@ Quando nel debugger, passare il mouse su una riga di codice fino a quando il **e
 
 ![Esegui fino al clic](../debugger/media/dbg-tour-run-to-click-2.png "eseguire fare clic su")
 
->  [!NOTE] 
+> [!NOTE]
 > Il **eseguire fare clic su** pulsante (esecuzione qui) è una novità di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Fare clic su di **eseguire fare clic su** pulsante (esecuzione qui). Il debugger avanza alla riga di codice in cui è stato selezionato.
@@ -104,7 +105,6 @@ Se sono stati impostati i punti di interruzione, il debugger sospende sul punto 
 Premere F5 fino a raggiungere la riga di codice in cui è stata selezionata **Esegui fino al cursore**.
 
 Questo comando è utile quando si modifica del codice e si desidera impostare un punto di interruzione temporaneo rapidamente e avviare il debugger.
-
 
 > [!NOTE]
 > È possibile utilizzare **Esegui fino al cursore** nel **Stack di chiamate** finestra durante il debug.
@@ -179,7 +179,7 @@ Il **Stack di chiamate** finestra Mostra l'ordine in cui sono chiamate i metodi 
 ## <a name="examine-an-exception"></a>Esaminare l'eccezione
 
 Quando l'app genera un'eccezione, il debugger passerà alla riga di codice che ha generato l'eccezione.
-     
+
 ![Supporto eccezioni](../debugger/media/dbg-tour-exception-helper.png "supporto eccezioni")
 
 In questo esempio, il **supporto eccezioni** Mostra un `System.Argument` eccezione e un messaggio di errore indicante che il percorso non è un modulo valido. In tal caso, sappiamo che si è verificato l'errore su un argomento di metodo o funzione.
@@ -188,7 +188,7 @@ In questo esempio, il `DirectoryInfo` chiamata dato l'errore archiviata in una s
 
 L'Helper di eccezione è un'ottima funzionalità che consentono di eseguire il debug degli errori. È anche possibile eseguire operazioni come visualizzazione dettagli dell'errore e aggiungere un'espressione di controllo il supporto di eccezioni. In alternativa, se necessario, è possibile modificare le condizioni per generare l'eccezione specifica.
 
->  [!NOTE] 
+>  [!NOTE]
 > L'Helper eccezioni sostituisce le informazioni sulle eccezioni in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Espandere il **impostazioni eccezioni** nodo per visualizzare ulteriori opzioni gestire questo tipo di eccezione, ma è necessario modificare alcun valore per questa presentazione.
@@ -209,7 +209,7 @@ Per ulteriori informazioni, vedere [Debug in tempo reale delle App ASP.NET utili
 
 È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti con le versioni precedenti di passaggio e l'inoltro")  
+![Passo indietro e Avanti pulsanti](../debugger/media/intellitrace-step-back-icons-description.png  "pulsanti con le versioni precedenti di passaggio e l'inoltro")
 
 Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
