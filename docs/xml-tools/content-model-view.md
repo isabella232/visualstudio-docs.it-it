@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751793"
 ---
 # <a name="content-model-view"></a>Visualizzazione modello di contenuto
 
@@ -22,7 +23,7 @@ La visualizzazione modello di contenuto fornisce una rappresentazione grafica di
 
  Nella figura seguente, il **dell'area di lavoro** pannello contiene sei nodi dello schema. Il `purchaseOrder` selezionato nel nodo il **dell'area di lavoro** pannello e viene visualizzato nell'area di progettazione.
 
- ![Visualizzazione del modello di contenuto della finestra di progettazione XML Schema](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Visualizzazione del modello di contenuto di Progettazione XML Schema](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Pannello area di lavoro
 
@@ -78,7 +79,7 @@ La visualizzazione modello di contenuto fornisce una rappresentazione grafica di
 
  I seguenti pulsanti della barra degli strumenti di Progettazione XSD sono abilitati quando la visualizzazione modello di contenuto è attiva.
 
- ![Barra degli strumenti della finestra di progettazione di XML Schema](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Opzione|Descrizione|
 |------------|-----------------|

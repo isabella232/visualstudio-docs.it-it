@@ -20,11 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 185876ec788bc3fcba917df77a7044a395bc8375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 307759881c6795d33dfb5a1c1425402aece05efb
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766614"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedura: aggiungere un descrittore di filtro a un metodo Finder
   Descrittori di filtro consentono agli utenti del modello di passare valori a metodi prima che vengano eseguiti. Per ulteriori informazioni, vedere [progettazione di un modello di connettività dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Nel **Dettagli metodo** finestra, scegliere il descrittore di tipo del parametro.  
   
-3.  Nella barra dei menu, scegliere **vista**, **finestra proprietà**.  
+3.  Nella barra dei menu, scegliere **vista** > **finestra proprietà**.  
   
 4.  Nel **proprietà** finestra, impostare il **nome del tipo** proprietà a un tipo di dati appropriato per il filtro.  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
      Verrà visualizzato un nuovo descrittore di filtro di **descrittori di filtro** nodo.  
   
-7.  Nella barra dei menu, scegliere **vista**, **finestra proprietà**.  
+7.  Nella barra dei menu, scegliere **vista** > **finestra proprietà**.  
   
 8.  Nel **proprietà** finestra, scegliere il **tipo** proprietà.  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

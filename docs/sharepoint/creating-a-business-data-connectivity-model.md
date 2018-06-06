@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c80d6f3e76d20e4b5a15af162ea4581b03999e61
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691496"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765190"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>Creazione di un modello di integrazione applicativa dei dati di business
+# <a name="create-a-business-data-connectivity-model"></a>Creare un modello di integrazione applicativa dei dati di business
   È possibile creare un modello di integrazione applicativa dei dati (BDC) o personalizzare un modello di integrazione applicativa dei dati esistente con Visual Studio. Ogni progetto di SharePoint può contenere solo un modello. Per ulteriori informazioni, vedere [l'integrazione di dati di Business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="create-a-new-model"></a>Creare un nuovo modello

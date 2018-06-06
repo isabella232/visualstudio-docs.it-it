@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747001"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: creazione di un'applicazione dati a più livelli
 *A più livelli* le applicazioni di dati sono applicazioni con accesso ai dati sono suddivisi in più livelli logici, o *livelli*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per ulteriori informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +50,7 @@ Durante questa procedura dettagliata, verranno eseguiti i passaggi seguenti:
 
 -   Scrivere il codice per popolare le tabelle dati.
 
-![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") per una versione video di questo argomento, vedere [procedura Video: creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).
+![collegamento alla trasmissione video](../data-tools/media/playvideo.gif) per una versione video di questo argomento, vedere [procedura Video: creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Prerequisiti
 Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempio Northwind.
@@ -78,7 +79,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **libreria di classi** tipo di progetto.
 
@@ -289,7 +290,7 @@ Questa procedura dettagliata viene illustrato come accedere a livello di accesso
 
 1.  Pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere **Aggiungi**, **nuovo progetto...** .
 
-2.  Nel **nuovo progetto** la finestra di dialogo, nel riquadro a sinistra, seleziona **Windows Desktop classico**. Nel riquadro centrale, selezionare **App di Windows Form**.
+2.  Nel **nuovo progetto** finestra di dialogo, nel riquadro sinistro, seleziona **Desktop Windows**. Nel riquadro centrale, selezionare **App di Windows Form**.
 
 3.  Denominare il progetto **PresentationTier** e fare clic su **OK**.
 

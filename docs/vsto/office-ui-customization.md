@@ -23,7 +23,7 @@ ms.openlocfilehash: 0152fea139d6351c947412260247c47f79bb6b66
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692460"
 ---
 # <a name="office-ui-customization"></a>Personalizzazione dell'interfaccia utente di Office
@@ -48,13 +48,13 @@ ms.locfileid: "34692460"
   
 |Funzionalità|Tipi di progetti non supportati|Applicazioni Microsoft Office supportate|  
 |-------------|-----------------------------|---------------------------------------------|  
-|Riquadro azioni|Personalizzazioni a livello di documento|Excel<br /><br /> Parola|  
-|Riquadri attività personalizzati|Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Parola<br /><br /> Excel|  
-|Interfaccia utente della barra multifunzione personalizzata|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Progetto<br /><br /> Parola<br /><br /> Visio|  
-|Visualizzazione Backstage|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Progetto<br /><br /> Parola<br /><br /> Visio|  
+|Riquadro azioni|Personalizzazioni a livello di documento|Excel<br /><br /> Word|  
+|Riquadri attività personalizzati|Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
+|Interfaccia utente della barra multifunzione personalizzata|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Progetto<br /><br /> Word<br /><br /> Visio|  
+|Visualizzazione Backstage|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Progetto<br /><br /> Word<br /><br /> Visio|  
 |Aree del modulo di Outlook|Componenti aggiuntivi VSTO|Outlook|  
-|Controlli sui documenti|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> Parola|  
-|Menu di scelta rapida|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Progetto<br /><br /> Parola<br /><br /> Visio<br /><br /> Excel|  
+|Controlli sui documenti|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> Word|  
+|Menu di scelta rapida|Personalizzazioni a livello di documento<br /><br /> Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Progetto<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a> Riquadri azioni e riquadri attività personalizzati  
  I riquadri attività sono pannelli dell'interfaccia utente in genere ancorati a un lato di una finestra in un'applicazione di Microsoft Office. Quasi tutte le applicazioni di Microsoft Office includono  riquadri attività incorporati. Un esempio di riquadro attività è il riquadro attività Guida in linea in Word.  

@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747469"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 *Aggiornamento gerarchico* si riferisce al processo di salvataggio di dati aggiornati (da un set di dati di due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento a regole di coerenza fornite tramite i vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per ulteriori informazioni sulle relazioni nei set di dati, vedere [relazioni nei set di dati](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Attivare l'aggiornamento gerarchico in un set di dati
  Per impostazione predefinita, l'aggiornamento gerarchico è abilitata per tutti i nuovi set di dati che vengono aggiunti o creati in un progetto. Attivare o disattivare l'aggiornamento gerarchico impostando il **aggiornamento gerarchico** proprietà di un dataset tipizzato nel set di dati **True** o **False**:
 
- ![Impostazione aggiornamento gerarchico](../data-tools/media/hierarchical-update-setting.png "impostazione aggiornamento gerarchico")
+ ![Impostazione aggiornamento gerarchico](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Creare una nuova relazione tra tabelle
  Per creare una nuova relazione tra due tabelle, nella finestra di progettazione set di dati, selezionare la barra del titolo di ogni tabella del mouse e scegliere **Aggiungi relazione**.
 
- ![Aggiornamento gerarchico aggiungere menu relazione](../data-tools/media/hierarchical-update-add-relation-menu.png "aggiornamento gerarchico aggiungere menu relazione")
+ ![Aggiornamento gerarchico aggiungere menu relazione](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Comprendere i vincoli foreign key, propagazione degli aggiornamenti ed eliminazioni
  È importante comprendere i vincoli come chiave esterna e il comportamento a catena nel database vengono creati nel codice dataset generata.

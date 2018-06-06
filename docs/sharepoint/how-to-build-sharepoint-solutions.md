@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6afa8e521ae11653d401b97a286e9478dde4bec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d490f6b8cd0c07c292b01c1f89daec8271deaf0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767988"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Procedura: compilare soluzioni SharePoint
   Creazione di una soluzione di SharePoint non è diversa rispetto a quella di altre applicazioni in Visual Studio. Per ulteriori informazioni sulla compilazione di applicazioni, vedere [e compilazione in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio). Per una discussione di alcune considerazioni specifiche per le soluzioni di SharePoint, vedere [procedura: distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
@@ -32,9 +33,8 @@ ms.lasthandoff: 04/16/2018
   
 2.  Scegliere l'opzione appropriata per la compilazione o la ricompilazione della soluzione o progetto. Per ulteriori informazioni, vedere [e compilazione in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
   
-3.  Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.  
+3.  Nella barra dei menu scegliere **Compila** > **Compila soluzione**.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
   

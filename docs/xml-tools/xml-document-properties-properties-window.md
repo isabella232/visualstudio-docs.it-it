@@ -14,7 +14,7 @@ ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693565"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, finestra proprietà

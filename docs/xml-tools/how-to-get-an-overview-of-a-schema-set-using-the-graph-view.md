@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751897"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedura: ottenere una panoramica di uno schema impostato tramite la visualizzazione grafico
 
@@ -34,7 +35,7 @@ In questo argomento viene descritto come utilizzare il [visualizzazione grafico]
 
 6.  Selezionare **Set di schemi** nodo il **XML Schema Explorer** e trascinare il nodo per progettare nell'area della visualizzazione grafico. Dovrebbero essere visualizzati i nodi globali e le frecce che collegano i nodi tra cui intercorrono relazioni.
 
-     ![Visualizzazione grafica](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![Visualizzazione grafico](../xml-tools/media/relationshipingraphview.gif)
 
 7.  Fare clic su qualsiasi nodo nell'area di progettazione e analizzare la barra di navigazione per vedere dove si trova il nodo selezionato nel set di schemi.
 

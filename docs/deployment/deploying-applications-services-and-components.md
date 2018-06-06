@@ -1,5 +1,5 @@
 ---
-title: Panoramica della distribuzione
+title: Panoramica sulle funzioni di distribuzione
 description: Informazioni sulle opzioni per la distribuzione di applicazioni da Visual Studio.
 ms.custom: mvc
 ms.date: 11/26/2017
@@ -24,29 +24,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 8d2c84b8e5d37876d890d40144b281e236fdcd0c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766311"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Innanzitutto in fase di distribuzione in Visual Studio
 
 Mediante la distribuzione, un'applicazione, un servizio o un componente viene distribuito per l'installazione in altri computer, dispositivi, server o nel cloud. Il metodo appropriato viene scelto in Visual Studio per il tipo di distribuzione necessaria. (Molti tipi di app supportano altri strumenti di distribuzione, ad esempio la distribuzione della riga di comando o NuGet che non sono descritte di seguito).
 
-Vedere le esercitazioni per istruzioni dettagliate.
+Vedere le esercitazioni per istruzioni dettagliate di distribuzione. Se si intende distribuire un'applicazione web e altre informazioni approfondite per scegliere la migliore soluzione di distribuzione da Visual Studio, vedere [quali opzioni di pubblicazione sono adatta alle mie esigenze?](../ide/not-in-toc/web-publish-options.md).
 
-### <a name="deploy-to-local-folder"></a>Distribuire nella cartella locale
+## <a name="deploy-to-local-folder"></a>Distribuire nella cartella locale
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: utilizzare lo strumento di pubblicazione per distribuire in una cartella locale. Le opzioni disponibili dipendono dal tipo di app. In Esplora soluzioni fare doppio clic su progetto e scegliere **pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Scegliere poi **cartella**. Per ulteriori informazioni, vedere [Distribuisci in una cartella locale](quickstart-deploy-to-local-folder.md).
+Distribuzione in una cartella locale viene in genere utilizzata per il test o per iniziare una pre-distribuzione in cui verrà utilizzato un altro strumento per la distribuzione finale.
+
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e. **NET Core**: utilizzare lo strumento di pubblicazione per distribuire in una cartella locale. Le opzioni disponibili dipendono dal tipo di app. In Esplora soluzioni fare doppio clic su progetto e scegliere **pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Scegliere poi **cartella**. Per ulteriori informazioni, vedere [Distribuisci in una cartella locale](quickstart-deploy-to-local-folder.md).
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
 - **Runtime di Visual C++**: È possibile distribuire il runtime di Visual C++ tramite la distribuzione locale o collegamento statico. Per ulteriori informazioni, vedere [la distribuzione di applicazioni Desktop Native (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
-### <a name="publish-to-web-or-deploy-to-network-share"></a>Pubblicazione sul Web o di distribuire in una condivisione di rete
+## <a name="azure"></a> Pubblicare in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Node. js**, **Python**, e **.NET Core**: È possibile utilizzare lo strumento di pubblicazione per distribuire un sito Web con FTP o distribuzione Web. Per ulteriori informazioni, vedere [distribuzione a un sito web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Python**, e **Node. js**: È possibile utilizzare lo strumento di pubblicazione per distribuire rapidamente applicazioni di servizio App di Azure o a un virtuali di Azure Macchina. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Nella finestra di dialogo pubblica, scegliere **servizio App** oppure **macchine virtuali di Azure**, quindi seguire i passaggi di configurazione.
+
+    ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-azure.png "scegliere servizio App di Azure")
+
+    In Visual Studio 2017 versione 15.7, è possibile distribuire le app ASP.NET Core **servizio di App per Linux**.
+
+    Per informazioni sull'importazione di un profilo di pubblicazione dal servizio App di Azure per Visual Studio, vedere [importare le impostazioni di pubblicazione e distribuire in Azure](../deployment/tutorial-import-publish-settings-azure.md).
+
+    Per una rapida introduzione, vedere [Publish to Azure](quickstart-deploy-to-azure.md). Vedere anche [pubblicare un'applicazione ASP.NET di base in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione usando Git, vedere [la distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
+
+    > [!NOTE]
+    > Se si dispone già di un account Azure, è possibile [iscriverti qui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+
+## <a name="web"></a> Pubblicazione sul Web o di distribuire in una condivisione di rete
+
+- **ASP.NET**, **ASP.NET Core**, **Node. js**, e **Python**: È possibile utilizzare lo strumento di pubblicazione per la distribuzione a un sito Web tramite FTP o distribuzione Web. Per ulteriori informazioni, vedere [distribuzione a un sito web](quickstart-deploy-to-a-web-site.md).
 
     In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Nello strumento di pubblicazione, scegliere l'opzione desiderato e quindi seguire i passaggi di configurazione.
 
@@ -60,20 +78,7 @@ Vedere le esercitazioni per istruzioni dettagliate.
 
 - **Desktop Windows** è possibile pubblicare un'applicazione desktop di Windows in un server web o una condivisione di file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per ulteriori informazioni, vedere [distribuire un'applicazione desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) e [distribuire un'applicazione nativa utilizzando ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
-### <a name="publish-to-azure"></a>Pubblicare in Azure
-
-- **ASP.NET, ASP.NET Core, Python, Node. js e .NET Core** le applicazioni web: È possibile utilizzare lo strumento di pubblicazione per velocizzare la distribuzione di applicazioni di servizio App di Azure o a una macchina virtuale di Azure. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. (Se in precedenza è stato configurato alcun profilo di pubblicazione, è necessario fare quindi clic **Crea nuovo profilo**.) Nella finestra di dialogo pubblica, scegliere **Microsoft Azure App Service** oppure **macchine virtuali di Microsoft Azure**, quindi seguire i passaggi di configurazione.
-
-    ![Scegliere servizio App di Azure](../deployment/media/quickstart-publish-azure.png "scegliere servizio App di Azure")
-
-    Per informazioni sull'importazione di un profilo di pubblicazione dal servizio App di Azure per Visual Studio, vedere [importare le impostazioni di pubblicazione e distribuire in Azure](../deployment/tutorial-import-publish-settings-azure.md).
-
-    Per una rapida introduzione, vedere [Publish to Azure](quickstart-deploy-to-azure.md). Vedere anche [pubblicare un'applicazione ASP.NET di base in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione usando Git, vedere [la distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
-
-    > [!NOTE]
-    > Se si dispone già di un account Azure, è possibile [iscriverti qui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-### <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
+## <a name="microsoft_store"></a> Pubblicare in Microsoft Store
 
 Da Visual Studio, è possibile creare pacchetti di app per la distribuzione in Microsoft Store.
 
@@ -85,7 +90,11 @@ Da Visual Studio, è possibile creare pacchetti di app per la distribuzione in M
 
     ![Bridge desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
-### <a name="create-an-installer-package-windows-client"></a>Creare un pacchetto di installazione (client di Windows)
+## <a name="deploy-to-a-device-uwp"></a>Distribuire in un dispositivo (UWP)
+
+Se si distribuisce un'app UWP per il test in un dispositivo, vedere [App UWP eseguiti in un computer remoto in Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
+
+## <a name="installer"></a> Creare un pacchetto di installazione (client di Windows)
 
 Se si richiesta più di un'installazione di un'applicazione desktop più complessa [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) può offrire, è possibile creare un pacchetto di installazione, un progetto di installazione o un programma di avvio automatico personalizzato.
 
@@ -97,19 +106,26 @@ Se si richiesta più di un'installazione di un'applicazione desktop più comples
 
 - È possibile installare componenti dei prerequisiti per le applicazioni desktop configurando un programma di installazione generico, noto come un programma di avvio automatico. Per ulteriori informazioni, vedere [prerequisiti di distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md).
 
-### <a name="deploy-to-test-lab"></a>Distribuire per eseguire il test lab
+## <a name="deploy-to-test-lab"></a>Distribuire per eseguire il test lab
 
 È possibile abilitare più sofisticate di sviluppo e test per la distribuzione di applicazioni in ambienti virtuali. Per ulteriori informazioni, vedere [Test in un ambiente lab](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-### <a name="devops-deployment"></a>Distribuzione DevOps
+## <a name="devops-deployment"></a>Distribuzione DevOps
 
 In un ambiente di team, è possibile utilizzare Visual Studio Team Services (VSTS) per abilitare la distribuzione continua dell'app. Per ulteriori informazioni, vedere [di compilazione e versione](/vsts/build-release/index) e [Distribuisci in Azure](/vsts/deploy-azure/index).
 
-### <a name="deployment-for-other-app-types"></a>Distribuzione per gli altri tipi di app
+## <a name="deployment-for-other-app-types"></a>Distribuzione per gli altri tipi di app
 
 | Tipo di app | Scenario di distribuzione | Collegamento |
 | --- | --- | --- |
 | **App di Office** | È possibile pubblicare un componente aggiuntivo per Office in Visual Studio. | [Distribuire e pubblicare il componente aggiuntivo di Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servizio WCF o OData**  | Altre applicazioni possono utilizzare servizi WCF RIA distribuiti in un server web. | [Sviluppo e distribuzione di WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch non è più supportata in Visual Studio 2017, ma può ancora essere distribuito da Visual Studio 2015 e versioni precedenti. | [Distribuzione di applicazioni LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+
+## <a name="next-steps"></a>Passaggi successivi
+
+In questa esercitazione, si ha un rapido controllo di opzioni di distribuzione per applicazioni diverse. Se si distribuisce un'applicazione web, ad esempio ASP.NET, leggere informazioni più dettagliate su alcune delle opzioni di distribuzione disponibili in Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Quali opzioni di pubblicazione sono adatta alle mie esigenze?](../ide/not-in-toc/web-publish-options.md)
 

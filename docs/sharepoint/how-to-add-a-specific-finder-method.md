@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d00159a8c944944348e4eec5fb98aaa4d6e9bae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767650"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procedura: aggiungere un metodo Finder specifico
   È possibile restituire una sola istanza di entità mediante la creazione di un *Finder specifico* metodo. Il servizio di integrazione applicativa dei dati (BDC) esegue il metodo Finder specifico quando un utente sceglie un'entità in una web part dati business o un elenco esterno. Per ulteriori informazioni, vedere [progettazione di un modello di connettività dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### <a name="to-create-a-specific-finder-method"></a>Per creare un metodo Finder specifico  
+### <a name="to-create-a-specific-finder-method"></a>Per creare un metodo Finder specifico
   
-1.  Nella finestra di progettazione di integrazione applicativa dei dati, scegliere un'entità.  
+1.  Nel **finestra di progettazione di integrazione applicativa dei dati**, scegliere un'entità.  
   
-     Per informazioni su come aggiungere un'entità alla finestra di progettazione di integrazione applicativa dei dati in Visual Studio, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     Per informazioni su come aggiungere un'entità per il **finestra di progettazione di integrazione applicativa dei dati** in Visual Studio, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Nella barra dei menu, scegliere **vista**, **altre finestre**, **Dettagli metodo di integrazione applicativa dei dati**.  
+2.  Nella barra dei menu, scegliere **vista** > **altre finestre**, **Dettagli metodo di integrazione applicativa dei dati**.  
   
      Il **Dettagli metodo di integrazione applicativa dei dati** verrà visualizzata la finestra. Per ulteriori informazioni su tale finestra, vedere [panoramica degli strumenti di progettazione del modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Progettazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)   
@@ -98,5 +99,4 @@ ms.lasthandoff: 04/16/2018
  [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)   
  [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
  [Procedura: Definire un'istanza di metodo](../sharepoint/how-to-define-a-method-instance.md)  
-  
   

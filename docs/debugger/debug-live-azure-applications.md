@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766324"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug in tempo reale delle app di Azure ASP.NET utilizzando il Debugger di Snapshot
 
 Il Debugger Snapshot crea uno snapshot delle applicazioni in produzione quando viene eseguito codice che si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
 Snappoints e logpoints sono simili ai punti di interruzione, ma a differenza dei punti di interruzione, snappoints non interrompere l'applicazione quando raggiunto. In genere, l'acquisizione dello snapshot in un snappoint accetta 10-20 millisecondi. 
-
-La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
-
-- Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
-- Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
-
-Inoltre, il Debugger dello Snapshot è disponibile solo per Visual Studio 2017 Enterprise 15,5 o versione successiva e piani di servizio App di base o versione successiva. 
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -40,16 +34,27 @@ In questa esercitazione si eseguono le attività seguenti:
 > * Impostare un snappoint e visualizzare uno snapshot
 > * Impostare un logpoint
 
-## <a name="start-the-snapshot-debugger"></a>Avviare il Debugger di Snapshot
+## <a name="prerequisites"></a>Prerequisiti
 
-1. Installare [2017 Enterprise di Visual Studio versione 15,5](https://www.visualstudio.com/downloads/) o versione successiva. Se si sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire il programma di installazione Visual Studio e controllare il componente del Debugger di Snapshot del carico di lavoro di sviluppo ASP.NET e web.
+* Debugger dello snapshot è disponibile solo per Visual Studio 2017 Enterprise 15,5 o versioni successive con il **carico di lavoro di sviluppo web ASP.NET e**. Per ASP.NET Core, è necessario anche il. **Lo sviluppo dei componenti di base NET** carico di lavoro installato.
 
-2. Aprire il progetto che si desidera eseguire il debug di snapshot. 
+    Se non è già installato, installarlo [2017 Enterprise di Visual Studio versione 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o versione successiva. Se si sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire il programma di installazione Visual Studio e controllare il componente del Debugger dello Snapshot **carico di lavoro di sviluppo web ASP.NET e**.
+
+* Piano di servizio App di Azure di base o versione successiva.
+
+* La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
+
+    * Applicazioni ASP.NET in esecuzione in .NET Framework 4.6.1 o versioni successive.
+    * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.0 o versioni successive in Windows.
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Aprire il progetto e avviare il Debugger di Snapshot
+
+1. Aprire il progetto che si desidera eseguire il debug di snapshot. 
 
     > [!IMPORTANT] 
     > Eseguire il debug dello snapshot, è necessario aprire la **stessa versione del codice sorgente** che viene pubblicato il servizio App di Azure. 
 
-3. In Esplora risorse Cloud (**Vista > Cloud Explorer**), il servizio App di Azure il progetto viene distribuito e scegliere **collega Debugger Snapshot**.
+1. In Esplora risorse Cloud (**Vista > Cloud Explorer**), il servizio App di Azure il progetto viene distribuito e scegliere **collega Debugger Snapshot**.
 
    ![Avviare il debugger di snapshot](../debugger/media/snapshot-launch.png)
 

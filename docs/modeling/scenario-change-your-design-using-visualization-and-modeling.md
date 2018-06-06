@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750168"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -150,13 +151,13 @@ Dinner Now deve stimare i costi da sostenere per soddisfare il nuovo requisito. 
 
  Ad esempio, lo sviluppatore crea una mappa codice. Modifica l'ambito per concentrarsi sulle aree che saranno interessate dal nuovo scenario. Queste aree sono selezionate ed evidenziate nella mappa:
 
- ![Grafico delle dipendenze Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Grafico delle dipendenze dello spazio dei nomi](../modeling/media/namespace_reviewsystem.png)
 
  **Mappa codice degli spazi dei nomi**
 
  Lo sviluppatore espande gli spazi dei nomi selezionati per visualizzarne le classi, i metodi e le relazioni:
 
- ![Grafico delle dipendenze dello spazio dei nomi espanso](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Grafico delle dipendenze dello spazio dei nomi espanso](../modeling/media/dep_reviewsystem.png)
 
  **Mappa codice degli spazi dei nomi espansi con i collegamenti tra gruppi visibili**
 
@@ -177,7 +178,7 @@ Dinner Now deve stimare i costi da sostenere per soddisfare il nuovo requisito. 
 
  Ad esempio, nel diagramma dipendenza seguente descrive le dipendenze tra i livelli e il numero di elementi che sono associati a ogni livello:
 
- ![Diagramma di dipendenze di sistema di pagamenti integrato](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagramma di dipendenze di sistema di pagamenti integrato](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramma di dipendenze**
 
@@ -277,19 +278,19 @@ Ad esempio, si supponga che Dinner Now debba stimare il costo dell'aggiornamento
 
 Il seguente grafico mostra le dipendenze tra la classe ElaborazionePagamenti e le altre parti del sistema di Dinner Now, che appaiono selezionate:
 
-![Grafico delle dipendenze per il sistema di pagamento di Dinner Now](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Grafico delle dipendenze per il sistema di pagamento di Dinner Now](../modeling/media/dep_dnpayment.png)
 
 **Mappa codice per il sistema di pagamento di Dinner Now**
 
 Lo sviluppatore esplora la mappa espandendo la classe ElaborazionePagamenti e selezionandone i membri per visualizzare le aree potenzialmente interessate:
 
-![Metodi interni a ElaborazionePagamenti e dipendenze](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Metodi interni a ElaborazionePagamenti e dipendenze](../modeling/media/depgraph_expandeddn.png)
 
 **Metodi interni alla classe ElaborazionePagamenti e relative dipendenze**
 
 Viene generata la mappa seguente per consentire il controllo delle classi, dei metodi e delle dipendenze del sistema di pagamento di Lucerne. Il team si rende conto che potrebbe essere necessario apportare modifiche anche al sistema di Lucerne, per consentirne l'interazione con le altre parti di Dinner Now:
 
-![Grafico delle dipendenze per il sistema di pagamento di Lucerne](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Grafico delle dipendenze per il sistema di pagamento di Lucerne](../modeling/media/depgraph_lucernepay.png)
 
 **Mappa codice per il sistema di pagamento di Lucerne**
 
@@ -297,7 +298,7 @@ Entrambi i team collaborano per determinare le modifiche necessarie per integrar
 
 Dopo avere riorganizzato il codice, i team generano una nuova mappa codice per visualizzare la struttura aggiornata e le relazioni:
 
-![Grafico delle dipendenze con codice riorganizzato](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Grafico delle dipendenze con codice riorganizzato](../modeling/media/depgraph_integrated.png)
 
 **Mappa codice con codice riorganizzato**
 
@@ -338,7 +339,7 @@ Questa mappa mostra che la classe RespApprovazionePagamenti ora si trova nello s
 
  Per aiutare Lucerne a descrivere e discutere le entità che partecipano al caso d'uso Elaborazione dei pagamenti, viene creato il diagramma classi seguente:
 
- ![Entità Elabora pagamento nel diagramma classi](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Entità Elabora pagamento nel diagramma classi](../modeling/media/uml_payentities.png)
 
  **Entità di Elaborazione dei pagamenti in un diagramma classi**
 
@@ -346,7 +347,7 @@ Questa mappa mostra che la classe RespApprovazionePagamenti ora si trova nello s
 
  Durante lo sviluppo, Lucerne usa il seguente diagramma classi per descrivere e discutere i dettagli di ogni classe:
 
- ![Dettagli di Elabora pagamento entità in un diagramma classi](../modeling/media/uml_payment.png "UML_Payment")
+ ![Dettagli dell'entità Elabora pagamento in un diagramma classi](../modeling/media/uml_payment.png)
 
  **Dettagli di Elaborazione dei pagamenti nel diagramma classi**
 
@@ -407,7 +408,7 @@ Come punto di partenza per esplorare e discutere le classi esistenti, è possibi
 
  Per mantenere il codice coerente con la progettazione, Dinner Now e Lucerne utilizzare il seguente diagramma di dipendenze per convalidare il codice di volta in volta modificato:
 
- ![Diagramma di dipendenze di sistema di pagamenti integrato](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagramma di dipendenze di sistema di pagamenti integrato](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramma di dipendenze di Dinner Now integrato con Lucerne**
 
@@ -417,13 +418,13 @@ Come punto di partenza per esplorare e discutere le classi esistenti, è possibi
 
  La mappa codice seguente mostra le nuove chiamate tra Dinner Now e RespApprovazionePagamenti:
 
- ![Grafico delle dipendenze aggiornato con il sistema integrato](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Grafico delle dipendenze aggiornato con il sistema integrato](../modeling/media/depgraph_intsystem.png)
 
  **Mappa codice con le chiamate di metodo aggiornate**
 
  Dopo aver verificato che il sistema funziona come previsto, Dinner Now imposta come commento il codice di ElaborazionePagamenti. I report di convalida dei livelli non segnalano problemi e la mappa codice risultante mostra che non esistono altre dipendenze di ElaborazionePagamenti:
 
- ![Grafico delle dipendenze senza ElaborazionePagamenti](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Grafico delle dipendenze senza ElaborazionePagamenti](../modeling/media/depgraph_nomore.png)
 
  **Codice mappa senza ElaborazionePagamenti**
 

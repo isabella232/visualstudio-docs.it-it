@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746559"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Errori di analisi codice gestito per il codice
 
@@ -30,7 +31,7 @@ In questa procedura dettagliata è illustrato il processo di utilizzo dell'anali
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
-1. Nel **nuovo progetto** finestra di dialogo espandere **installato** > **Visual c#** e quindi scegliere **Windows Desktop classico**.
+1. Nel **nuovo progetto** finestra di dialogo, espandere **installato** > **Visual c#**, quindi scegliere **Windows Desktop**.
 
 1. Scegliere il **libreria di classi (.NET Framework)** modello.
 

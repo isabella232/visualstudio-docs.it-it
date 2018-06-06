@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749057"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
@@ -63,7 +64,7 @@ Una regola di business è un requisito non associato a un particolare caso di ut
 
  Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *statico * * le regole di business* come commenti associati alle relative classi di un diagramma classi concettuali. Ad esempio:
 
- ![Regola nel commento associato alla classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![Regola nel commento associato alla classe Order.](../modeling/media/uml_reqmcd2.png)
 
  Le*regole di business dinamiche* vincolano le sequenze di eventi consentite. È possibile ad esempio usare un diagramma di attività o di sequenza per mostrare che un utente deve accedere prima di eseguire altre operazioni nel sistema.
 

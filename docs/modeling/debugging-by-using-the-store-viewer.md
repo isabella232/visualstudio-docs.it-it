@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c46e84caba16abbe9ba9d166076d1ee48d34fd94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748410"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Esecuzione del debug utilizzando il Visualizzatore di archivio
 Con il Visualizzatore di archiviazione, è possibile esaminare lo stato di un *archiviare* utilizzato da [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Nel Visualizzatore di archiviare vengono visualizzati tutti gli elementi del modello dominio in un negozio specifico, insieme alle proprietà dell'elemento e i collegamenti tra elementi.
@@ -44,7 +45,7 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ### <a name="using-store-viewer"></a>Visualizzatore di archivio
  Quando si apre il Visualizzatore di archivio, viene visualizzata una finestra non modale di Windows Form, come mostrato nella figura seguente.
 
- ![](../modeling/media/storeviewer2.png "storeviewer2") archiviare Visualizzatore
+ ![](../modeling/media/storeviewer2.png) Visualizzatore di archivio
 
  Il Visualizzatore di archivio ha tre riquadri: il riquadro sinistro, riquadro superiore destro e il riquadro in basso a destra. Riquadro di sinistra è una visualizzazione albero dei tipi di `DomainDataDirectory` membro di un archivio. Se si espande il nodo di partizione e fare clic su un elemento, le proprietà dell'elemento vengono visualizzate nel riquadro superiore destro. Se l'elemento è collegato ad altri elementi, gli elementi aggiuntivi vengono visualizzati nel riquadro in basso a destra. Se si fa doppio clic su un elemento nel riquadro in basso a destra, l'elemento viene evidenziato nel riquadro a sinistra.
 

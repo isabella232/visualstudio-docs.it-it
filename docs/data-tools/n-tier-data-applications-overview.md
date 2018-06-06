@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747144"
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
 *A più livelli* le applicazioni di dati sono dati applicazioni separate in più *livelli*. Acronimo di "applicazioni distribuite" e "applicazioni multilivello", le applicazioni a più livelli separano l'elaborazione in livelli discreti che vengono distribuite tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario una netta separazione tra i vari livelli che costituiscono l'applicazione.
@@ -58,7 +59,7 @@ Il *livello intermedio* è il livello che il livello di presentazione e i livell
 
 Nella figura seguente mostra le funzionalità e tecnologie che sono disponibili in Visual Studio e il relativo utilizzo al livello intermedio di un'applicazione a più livelli.
 
-![Componenti di livello intermedio](../data-tools/media/ntiermid.png "NtierMid") livello intermedio
+![Componenti di livello intermedio](../data-tools/media/ntiermid.png) livello intermedio
 
 Il livello intermedio in genere si connette al livello dati tramite una connessione dati. Questa connessione dati è in genere archiviata nel componente di accesso ai dati.
 
@@ -67,7 +68,7 @@ Il *livello dati* è fondamentalmente il server che archivia dati di un'applicaz
 
 Nella figura seguente mostra le funzionalità e tecnologie che sono disponibili in Visual Studio e il relativo utilizzo un livello dati di un'applicazione a più livelli.
 
-![Componenti di livello dati](../data-tools/media/ntierdatatier.png "ntierdatatier") livello dati
+![Componenti di livello dati](../data-tools/media/ntierdatatier.png) livello dati
 
 Il livello dati non sono accessibili direttamente dal client al livello presentazione. Il componente di accesso ai dati nel livello intermedio, invece, viene utilizzato per la comunicazione tra i livelli presentazione e dati.
 

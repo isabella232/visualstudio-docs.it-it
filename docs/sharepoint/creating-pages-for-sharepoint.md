@@ -20,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4cfbe0a7ae0a27e41053457774217f049d5caf3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0532025fdb090c3811f09cb823745bd50e8d91c5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34694046"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765528"
 ---
-# <a name="creating-pages-for-sharepoint"></a>Creazione di pagine per SharePoint
+# <a name="create-pages-for-sharepoint"></a>Creazione di pagine per SharePoint
   È possibile creare le pagine dell'applicazione, pagine del sito, pagine master e layout di pagina per un sito di SharePoint.  
   
  È possibile creare le pagine dell'applicazione utilizzando un modello in Visual Studio. Creare pagine del sito, pagine master e layout di pagina utilizzando SharePoint Designer. Quindi, è possibile importare queste pagine in Visual Studio per utilizzarli in un progetto SharePoint.  
@@ -67,7 +67,7 @@ ms.locfileid: "34694046"
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Viene descritto come aggiungere le pagine di applicazioni: contenuto aspx unito con una pagina master di SharePoint.|  
+|[Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Viene descritto come aggiungere le pagine di applicazioni: *aspx* contenuto che viene unito con una pagina master di SharePoint.|  
 |[Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)|Viene illustrato come creare pagine ASP.NET eseguite in un sito di SharePoint.|  
 |[Procedura dettagliata: creazione di una pagina di un'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|Viene illustrato come progettare ed eseguire il debug di una pagina Web ASP.NET per un sito di SharePoint.|  
   

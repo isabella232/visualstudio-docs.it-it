@@ -17,27 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48d18ef87bdda3abb147310bd49738a10d31040f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d0f4f12eee56d1d4962e5c340037094d5192c718
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766799"
 ---
-# <a name="getting-started-sharepoint-development-in-visual-studio"></a>Guida introduttiva (sviluppo per SharePoint in Visual Studio)
+# <a name="get-started-sharepoint-development-in-visual-studio"></a>Ottenere avviata (sviluppo per SharePoint in Visual Studio)
   Questa sezione permette di iniziare a usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per sviluppare soluzioni SharePoint in grado di sfruttare i vantaggi offerti da [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
   
  Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) e alla [compilazione di componenti aggiuntivi per SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
  SharePoint offre una piattaforma di collaborazione basata sul Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce molti modelli di progetto per la creazione di siti e contenuti di SharePoint, inclusi definizioni di elenco, flussi di lavoro, modelli di connettività dei dati aziendali e definizioni di sito. È anche possibile creare estensioni per i progetti e gli strumenti di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
 |[Requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|Elenca i requisiti software per lo sviluppo per SharePoint.|  
 |[Informazioni aggiuntive sugli errori di SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Descrive dove trovare supporto durante lo sviluppo e la risoluzione dei problemi per SharePoint.|  
   
-## <a name="related-sections"></a>Sezioni correlate  
+## <a name="related-sections"></a>Sezioni correlate
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
@@ -53,7 +54,7 @@ ms.lasthandoff: 05/22/2018
 |[Creazione del pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|Descrive come creare pacchetti di soluzioni SharePoint e come distribuirli.|  
 |[Estensione degli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|Descrive come estendere gli strumenti di SharePoint per creare le funzionalità necessarie.|  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Esplorazione di connessioni di SharePoint tramite Esplora Server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

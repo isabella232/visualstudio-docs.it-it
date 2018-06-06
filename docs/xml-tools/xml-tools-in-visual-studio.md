@@ -38,7 +38,7 @@ ms.openlocfilehash: 446378df2d73f4d0c2bb8eac45075fa51365cd6d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693734"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Strumenti XML in Visual Studio
@@ -51,7 +51,7 @@ XML costituisce la base di molte funzionalità di Visual Studio e .NET Framework
 
 Per ulteriori informazioni, vedere il <xref:System.Xml?displayProperty=fullName> documentazione.
 
-## <a name="reference"></a>Riferimento
+## <a name="reference"></a>Riferimenti
 
 [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) espone il [Editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) analizzare la struttura ad albero tramite [XML. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) per tutti i documenti XML.
 

@@ -19,7 +19,7 @@ ms.openlocfilehash: 3509588baa700cc6d280c01c2456b4736b8eb58d
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691872"
 ---
 # <a name="projectitemfolder-element"></a>Elemento ProjectItemFolder
@@ -36,7 +36,7 @@ ms.locfileid: "34691872"
  **ProjectItemFolderType**  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.  
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   

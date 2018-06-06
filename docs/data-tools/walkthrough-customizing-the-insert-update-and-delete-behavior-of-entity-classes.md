@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 356f15d3d7f332f87b445c66c89f79d099031a1b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dad2ffbc162b53d4141826b6015829482f3bc2df
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746754"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: Personalizzazione di inserimento, aggiornamento ed eliminazione di comportamento delle classi di entità
 
@@ -74,7 +75,7 @@ Poiché verranno usate classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtec
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **App di Windows Form** tipo di progetto.
 

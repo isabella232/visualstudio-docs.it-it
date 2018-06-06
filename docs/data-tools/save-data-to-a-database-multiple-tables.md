@@ -1,5 +1,5 @@
 ---
-title: Salvare i dati in un database (a più tabelle)
+title: Salvare dati in un database (a più tabelle)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5be0cccd71a356a78a04c3d15cdb2f080e30c9e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b087c9f92576edbd3f13ec89ff8716feb95be3e1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752359"
 ---
-# <a name="save-data-to-a-database-multiple-tables"></a>Salvare i dati in un database (a più tabelle)
+# <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazione di dati in un form in un'applicazione Windows, la modifica dei dati e l'invio dei dati aggiornati al database. In questa procedura dettagliata viene creato un form in cui sono visualizzati i dati di due tabelle correlate e viene illustrato come modificare i record e salvare le modifiche nel database. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind.
 
  È possibile salvare nel database i dati dell'applicazione chiamando il metodo `Update` di un oggetto TableAdapter. Quando si trascinano tabelle dal **origini dati** finestra in un form, il codice che ha richiesto di salvare i dati viene aggiunto automaticamente. Le tabelle aggiuntive che vengono aggiunti a un form richiedono l'aggiunta manuale del codice. In questa procedura dettagliata viene descritto come aggiungere il codice per salvare gli aggiornamenti da più di una tabella.
@@ -70,7 +71,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **App di Windows Form** tipo di progetto.
 

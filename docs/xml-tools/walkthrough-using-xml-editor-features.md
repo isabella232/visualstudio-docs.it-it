@@ -14,7 +14,7 @@ ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693825"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Questa procedura dettagliata: Utilizzare funzionalità dell'editor XML

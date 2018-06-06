@@ -24,14 +24,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d0475653fe3c5950e39e9f8293d5179e9380db6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b96a316e451528b886dd1eba0840a3212678e922
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692171"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766347"
 ---
-# <a name="creating-an-association-between-entities"></a>Creazione di un'associazione tra entità
+# <a name="create-an-association-between-entities"></a>Creare un'associazione tra entità
   È possibile definire relazioni tra entità nel modello (Applicativa dei dati) tramite la creazione di associazioni. Visual Studio genera metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.  
   
 ## <a name="create-an-association"></a>Creare un'associazione

@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745594"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 Nel contesto di strumenti di dati .NET in Visual Studio, il termine *origine dati* fa riferimento a oggetti .NET che si connettono a un archivio dati e di espongono i dati a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database di **origini dati** finestra. Questo tipo di origine dati può essere:
@@ -39,11 +40,11 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *origine dat
 
  Per creare e modificare origini dati utilizzando il **configurazione guidata origine dati** in un'applicazione Windows Form o Windows Presentation Foundation. Prima di creare classi di entità per Entity Framework, e quindi avviare la procedura guidata selezionando **progetto** > **Aggiungi nuova origine dati** (descritto in dettaglio più avanti in questo articolo).
 
- ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png "configurazione guidata origine dati")
+ ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png)
 
  Dopo aver creato un'origine dati, viene visualizzato nel **origini dati** finestra degli strumenti (Maiusc + Alt + D o **vista** > **altre finestre**  >  **Origine dati**). È possibile trascinare un'origine dati dal **origini dati** finestra un controllo o l'area di progettazione form. In questo modo il codice di boilerplate da generare, ovvero codice che visualizza i dati che hanno origine nell'archivio dati per l'utente. Nella figura seguente viene illustrato un set di dati che è stato eliminato in un Windows form. Se si seleziona F5 sull'applicazione, i dati dal database sottostante appariranno nei controlli del form.
 
- ![Operazione di trascinamento di origine dati](../data-tools/media/raddata-data-source-drag-operation.png "operazione di trascinamento raddata origine dati")
+ ![Operazione di trascinamento di origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Origine dati per un database o un file di database
 
@@ -53,15 +54,15 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *origine dat
 ### <a name="entity-classes"></a>Classi di entità
  Per creare un modello di Entity Framework come origine dati, eseguire innanzitutto il **procedura guidata Entity Data Model** per creare le classi di entità (**progetto** > **Aggiungi nuovo elemento**  >  **ADO.NET Entity Data Model**).
 
- ![Nuovo elemento di progetto di modello di Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata elemento del progetto modello nuovo Entity Framework")
+ ![Nuovo elemento di progetto di modello di Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Scegliere il metodo mediante il quale si desidera generare il modello.
 
- ![Procedura guidata Entity Data Model](../data-tools/media/raddata-entity-data-model-wizard.png "raddata procedura guidata Entity Data Model")
+ ![Entity Data Model (procedura guidata)](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Aggiungere il modello come origine dati. Le classi generate vengono visualizzate nel **configurazione guidata origine dati** quando si sceglie il **oggetti** categoria.
 
- ![Configurazione guidata origine dati con le classi di entità](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata configurazione guidata origine dati con le classi di entità")
+ ![Configurazione guidata origine dati con le classi di entità](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Origine dati per un servizio
  Per creare un'origine dati da un servizio, eseguire il **configurazione guidata origine dati** e scegliere il **servizio** tipo di origine dati. Si tratta in realtà solo un collegamento di **Aggiungi riferimento al servizio** nella finestra di dialogo è inoltre possibile accedere facendo clic con il progetto in **Esplora** e selezionando **Aggiungi riferimento al servizio** .

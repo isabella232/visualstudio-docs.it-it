@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 02e6ae6e06daf43a6aec08097df2b37a21d2aaa3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766676"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione in IIS tramite l'importazione delle impostazioni di pubblicazione in Visual Studio
 
@@ -40,7 +41,7 @@ Un file di impostazioni di pubblicazione (*\*publishsettings*) è diverso da que
 
 * È necessario disporre di Visual Studio 2017 installato e il **ASP.NET** e **.NET Framework** carico di lavoro di sviluppo. Per un'applicazione .NET Core, è necessario anche il **.NET Core** carico di lavoro.
 
-    Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
+    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
 * Per generare il file di impostazioni di pubblicazione da IIS, è necessario disporre di un computer che esegue Windows Server 2012 o Windows Server 2016 ed è necessario disporre del ruolo Server Web IIS configurato correttamente. ASP.NET 4.5 o ASP.NET di base deve essere installato. Per ASP.NET Core, vedere [pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Per ASP.NET 4.5, vedere [IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -66,17 +67,17 @@ Un file di impostazioni di pubblicazione (*\*publishsettings*) è diverso da que
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Creare il file di impostazioni di pubblicazione in IIS in Windows Server
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+[!INCLUDE [create-publish-settings-iis](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importare le impostazioni di pubblicazione in Visual Studio e distribuire
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import-publish-settings](../deployment/includes/import-publish-settings-vs.md)]
 
 Dopo che l'app viene distribuito correttamente, verrà avviato automaticamente. Se non avviato da Visual Studio, avviare l'app in IIS. Per ASP.NET Core, è necessario assicurarsi che il pool di applicazioni di campo per il **DefaultAppPool** è impostata su **nessun codice gestito**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa esercitazione è creato un file di impostazioni di pubblicazione, importato in Visual Studio e distribuito un'app ASP.NET in IIS.
+In questa esercitazione è creato un file di impostazioni di pubblicazione, importato in Visual Studio e distribuito un'app ASP.NET in IIS. È possibile una panoramica delle altre opzioni di pubblicazione in Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Presentazione della distribuzione](../deployment/deploying-applications-services-and-components.md)

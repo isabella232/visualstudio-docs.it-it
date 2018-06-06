@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751845"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 
@@ -22,7 +23,7 @@ La visualizzazione iniziale è il punto di avvio per Progettazione XML Schema (X
 
 La visualizzazione iniziale contiene due sezioni principali, la *filigrana* e **dettagli Set di schemi** riquadro. Include anche la barra degli strumenti, disponibile in tutte le visualizzazioni di Progettazione XSD.
 
-![Visualizzazione iniziale della finestra di progettazione XML Schema](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Visualizzazione iniziale di Progettazione XML Schema](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Filigrana
 
@@ -36,7 +37,7 @@ Il **dettagli Set di schemi** riquadro sono elencati i tipi di nodo dello schema
 
 È possibile spostarsi tra la visualizzazione iniziale, il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) e [visualizzazione grafico](../xml-tools/graph-view.md) dalla barra degli strumenti Progettazione XML Schema.
 
-![Barra degli strumenti della finestra di progettazione di XML Schema](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 I seguenti pulsanti sono abilitati nella barra degli strumenti di Progettazione XSD quando è attiva la visualizzazione iniziale:
 

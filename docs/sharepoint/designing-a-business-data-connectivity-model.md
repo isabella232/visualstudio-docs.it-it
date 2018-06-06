@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0971dc9d445c7a492d934c0c2bdc9b47de92028
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766064"
 ---
-# <a name="designing-a-business-data-connectivity-model"></a>Progettazione di un modello di integrazione applicativa dei dati
+# <a name="design-a-business-data-connectivity-model"></a>Progettare un modello di integrazione applicativa dei dati di business
   È possibile sviluppare un modello per il servizio di integrazione applicativa dei dati (BDC) mediante l'aggiunta di metodi e le entità in un file di modello. Un'entità descrive una raccolta di campi dati. Ad esempio, un'entità può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio aggiunta, eliminazione o aggiornamento dei dati rappresentati dalle entità. Per ulteriori informazioni, vedere [l'integrazione di dati di Business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## <a name="adding-entities"></a>Aggiunta di entità  
+## <a name="add-entities"></a>Aggiungere le entità
  È possibile aggiungere un'entità trascinando o copiando un **entità** da Visual Studio **della casella degli strumenti** nella finestra di progettazione di integrazione applicativa dei dati. Per ulteriori informazioni, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Definire i campi dell'entità in una classe. Ad esempio, è possibile aggiungere un campo denominato `Address` per un `Customer` classe. È possibile aggiungere una nuova classe al progetto o utilizzare una classe esistente creata utilizzando altri strumenti, ad esempio il Object Relational Designer (O/R Designer). Il nome dell'entità e il nome della classe che rappresenta l'entità non devono corrispondere. La classe viene correlata all'entità quando si definiscono i metodi nel modello.  
   
-## <a name="adding-methods"></a>Aggiunta di metodi  
+## <a name="add-methods"></a>Aggiungere metodi
  Il servizio di integrazione applicativa dei dati chiama i metodi nel modello quando gli utenti di visualizzano, aggiungere, aggiornare o eliminare le informazioni in un elenco o una Web Part che è basato sul modello. È necessario aggiungere un metodo per il modello per ogni attività che l'utente può eseguire. Creare metodi selezionando uno dei cinque tipi di metodo di base dal **Dettagli metodo di integrazione applicativa dei dati** finestra. Nella tabella seguente vengono descritti i cinque metodi di base di un modello di integrazione applicativa dei dati.  
   
 |Metodo|Descrizione|  
@@ -43,24 +44,24 @@ ms.lasthandoff: 04/16/2018
 |Updater|Modifica i dati in un elenco. Chiamato quando gli utenti aggiornano le informazioni in un elenco. Per ulteriori informazioni, vedere [procedura: aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md).|  
 |Deleter|Rimuove i dati. Chiamato quando gli utenti di eliminare un elemento dall'elenco. Per ulteriori informazioni, vedere [procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md).|  
   
-## <a name="defining-method-parameters"></a>Definizione dei parametri di metodo  
+## <a name="define-method-parameters"></a>Definire i parametri del metodo
  Quando si crea un metodo, Visual Studio aggiunge i parametri di input e outpui appropriati per il tipo di metodo. Questi parametri sono semplicemente segnaposto. Nella maggior parte dei casi, è necessario modificare i parametri in modo che possano passare o restituire il tipo di dati corretto. Ad esempio, per impostazione predefinita, un metodo Finder restituisce una stringa. Nella maggior parte dei casi, si desidera modificare il parametro restituito del metodo Finder in modo che restituisca una raccolta di entità. È possibile eseguire tale operazione modifica il descrittore di tipo del parametro. Un descrittore di tipo è una raccolta di attributi che descrive il tipo di dati di un parametro. Per ulteriori informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Visual Studio consente di copiare i descrittori di tipo tra i parametri del modello. Ad esempio, è possibile definire un descrittore di tipo denominato `CustomerTD` per il parametro restituito di `GetCustomer` metodo. È possibile copiare il `CustomerTD` digitare descrittore nel **Esplora integrazione applicativa dei dati**e quindi incollare il descrittore di tipo per il parametro di input di `CreateCustomer` (metodo). Ciò impedisce all'utente di dover definire più di una volta il descrittore di tipo stesso.  
   
-##  <a name="MethodInstances"></a> Istanze (metodo)  
+## <a name="method-instances"></a>Istanze (metodo)
  Quando si crea un metodo, Visual Studio aggiunge un'istanza predefinita del metodo. Un'istanza del metodo è un riferimento a un metodo, più i valori predefiniti per i parametri. Un singolo metodo può avere più istanze di metodo. Ogni istanza è una combinazione di firma del metodo e un set di valori predefiniti. Per ulteriori informazioni, vedere [procedura: definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Quando si esegue il progetto, vengono visualizzate le istanze di metodo in un elenco a discesa sopra l'elenco di SharePoint. Gli utenti possono scegliere istanze del metodo per visualizzare i dati.  
   
  Per aggiungere i valori predefiniti per l'istanza del metodo, è necessario modificare direttamente il codice XML del modello. Per ulteriori informazioni, vedere [DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279).  
   
-## <a name="adding-filter-descriptors"></a>Aggiunta di descrittori di filtro  
+## <a name="add-filter-descriptors"></a>Aggiungere i descrittori di filtro
  I consumer del modello potrebbe essere necessario recuperare le istanze di un'entità che corrispondono a certi criteri. Per abilitare questa funzionalità, è possibile aggiungere un descrittore di filtro a un metodo. Descrittori di filtro consentono ai consumer del modello filtrare il set di risultati di metodo per passare valori a metodi prima che vengano eseguiti. Per ulteriori informazioni, vedere [procedura: aggiungere parametri di filtro per le operazioni per limitare le istanze del sistema esterno](http://go.microsoft.com/fwlink/?LinkID=169267).  
   
  SharePoint fornisce diverse funzionalità che consentono agli utenti di fornire i valori di filtro. Web part dei dati di Business forniscono, ad esempio, una casella di testo del filtro. Gli utenti possono limitare i dati in un elenco immettendo un valore nella casella di testo. Per ulteriori informazioni su come aggiungere un descrittore di filtro a un metodo, vedere [procedura: aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
   
-### <a name="filter-descriptor-properties"></a>Proprietà del descrittore di filtro  
+### <a name="filter-descriptor-properties"></a>Proprietà del descrittore di filtro
  È necessario impostare il valore di **associata descrittore di tipo**, **nome**, e **tipo** proprietà di un descrittore di filtro. Tutte le altre proprietà sono facoltativi.  
   
  Il **associata descrittore di tipo** proprietà correlata il descrittore di filtro per un parametro di input. Quando un utente fornisce un valore di filtro, il servizio di integrazione applicativa dei dati passa tale valore nel metodo utilizzando il parametro di input.  
@@ -69,24 +70,24 @@ ms.lasthandoff: 04/16/2018
   
  Per ulteriori informazioni sulle proprietà di un descrittore di filtro, vedere [FilterDescriptor](http://go.microsoft.com/fwlink/?LinkID=169280).  
   
-### <a name="providing-default-values"></a>Fornire i valori predefiniti  
+### <a name="provide-default-values"></a>Fornire valori predefiniti
  In alcuni casi, l'utente potrebbe non fornire un valore di filtro. È possibile fornire un valore predefinito tramite l'aggiunta di un valore predefinito per l'istanza del metodo oppure impostando il valore predefinito nel codice del metodo. Per ulteriori informazioni su come aggiungere un valore predefinito per l'istanza del metodo, vedere [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282). Per un esempio di come impostare il valore predefinito di un parametro di input nel codice del metodo, vedere [procedura: aggiungere un descrittore di filtro a un metodo Finder](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).  
   
-## <a name="validating-the-model"></a>La convalida del modello  
+## <a name="validate-the-model"></a>Convalidare il modello
  È possibile convalidare il modello durante lo sviluppo. Visual Studio identifica i problemi che possono impedire il modello di funzioni come previsto. Tali problemi vengono visualizzati in Visual Studio **elenco errori**.  
   
- È possibile convalidare un modello di aprire il menu di scelta rapida per la finestra di progettazione di integrazione applicativa dei dati e quindi scegliendo **convalida**. Se il modello contiene errori, vengono visualizzati nel **elenco errori**. È possibile spostare rapidamente il cursore sul codice contenente un errore facendo doppio clic sull'errore nell'elenco. In alternativa, è possibile scegliere ripetutamente i tasti F8 o MAIUSC+F8 per spostarsi avanti o indietro negli errori nell'elenco.  
+ È possibile convalidare un modello di aprire il menu di scelta rapida per la finestra di progettazione di integrazione applicativa dei dati e quindi scegliendo **convalida**. Se il modello contiene errori, vengono visualizzati nel **elenco errori**. È possibile spostare rapidamente il cursore sul codice contenente un errore facendo doppio clic sull'errore nell'elenco. In alternativa, è possibile scegliere il **F8** oppure **MAIUSC**+**F8** chiavi ripetutamente per spostarsi avanti o indietro negli errori nell'elenco.  
   
  Quando le regole del modello vengono violate in qualche modo, possono verificarsi errori di convalida. Ad esempio, se il **IsCollection** di un descrittore di tipo è impostata su **true**, ma non descrittori di tipo figlio esistono, verrà visualizzato un errore di convalida. Potrebbe essere necessario fare riferimento alle regole di un modello di integrazione applicativa dei dati per comprendere alcuni errori visualizzati in Visual Studio **elenco errori**. Per ulteriori informazioni sulle regole di un modello di integrazione applicativa dei dati, vedere [BDCMetadata Schema](http://go.microsoft.com/fwlink/?LinkID=169275).  
   
-## <a name="debugging-the-solution-that-contains-the-model"></a>Il debug della soluzione che contiene il modello  
+## <a name="debug-the-solution-that-contains-the-model"></a>Il debug della soluzione che contiene il modello
  Come per qualsiasi codice in Visual Studio, è possibile eseguire il debug del codice. Per eseguire il debug del codice, impostare punti di interruzione in qualsiasi punto nel codice e quindi avviare il debugger. Visual Studio apre il sito di SharePoint. In SharePoint, creare un elenco o una Web Part che utilizza i dati aziendali. Quindi, è possibile esaminare il codice. Per ulteriori informazioni sul debug di progetti SharePoint, vedere [risoluzione dei problemi delle soluzioni di SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
  È anche possibile eseguire il debug di codice negli assembly personalizzati aggiunti al progetto. Tuttavia, per eseguire il debug di codice in un assembly personalizzato, è necessario aggiungere l'assembly per il pacchetto della soluzione. Per ulteriori informazioni, vedere [procedura: aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Per ulteriori informazioni sull'aggiunta di un assembly personalizzato al progetto, vedere [procedura: includere un Assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md).  
   
-### <a name="configuring-bdc-security"></a>Configurazione della protezione di integrazione applicativa dei dati  
+### <a name="configure-bdc-security"></a>Configurare la sicurezza di integrazione applicativa dei dati
  Potrebbe essere necessario modificare le impostazioni di sicurezza in SharePoint prima di poter eseguire il debug della soluzione. Per modificare queste impostazioni, aprire l'applicazione di servizio connettività dati Business nel sito Web di SharePoint 2010 centrale amministrazione. Nel **impostare autorizzazioni per l'archivio dei metadati** la finestra di dialogo, aggiungere l'account utente, quindi selezionare una qualsiasi delle opzioni seguenti:  
   
 |Attività|Opzione|  
@@ -102,18 +103,18 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Utilizzare queste impostazioni per il debug di una soluzione nel SharePoint Server locale. Per ulteriori informazioni su come configurare le impostazioni di sicurezza correlati di integrazione applicativa dei dati nel server di produzione SharePoint, vedere [Cenni preliminari sulla sicurezza di servizi di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkID=178886).  
   
-### <a name="retracting-models-that-become-corrupt"></a>Ritrazione dei modelli danneggiati  
+### <a name="retract-models-that-become-corrupt"></a>Ritirare i modelli che è stati danneggiati
  Quando il debugger viene avviato per la prima volta, in Visual Studio l'intero modello viene distribuito in SharePoint. Per ogni periodo di tempo in seguito, Visual Studio aggiorna il modello in SharePoint con le eventuali modifiche apportate tra le distribuzioni.  
   
  Potrebbero esistere situazioni in cui si desidera che Visual Studio per ritrarre completamente il modello da SharePoint. Ad esempio, un modello potrebbe essere danneggiato.  Per ridistribuire il modello in SharePoint, impostare il **aggiornamento incrementale** proprietà del modello da **False**, e quindi avviare il debugger. Il **aggiornamento incrementale** proprietà viene visualizzata nel **proprietà** finestra quando si seleziona il nodo che rappresenta il modello nel **Esplora integrazione applicativa dei dati**. Per impostazione predefinita, il nome del modello è **BdcModel1**.  
   
-### <a name="changing-identifier-names-of-entities-in-the-model"></a>Modifica i nomi degli identificatori di entità nel modello  
+### <a name="change-identifier-names-of-entities-in-the-model"></a>Modificare i nomi degli identificatori di entità nel modello
  Se si modifica il nome di un identificatore dopo avere distribuito il modello, si potrebbe ricevere un errore di distribuzione. Non è possibile risolvere l'errore impostando il **aggiornamento incrementale** proprietà del modello da **False**. È necessario recuperare manualmente il modello e quindi distribuire nuovamente la soluzione. Per ulteriori informazioni, vedere [risoluzione dei problemi delle soluzioni di SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). È possibile evitare questo errore impostando il **aggiornamento incrementale** proprietà **False** prima di distribuire inizialmente il modello.  
   
-## <a name="locating-documentation-for-bdc-model-elements"></a>Individuazione di documentazione per gli elementi del modello di integrazione applicativa dei dati  
+## <a name="locate-documentation-for-bdc-model-elements"></a>Individuare la documentazione per gli elementi del modello di integrazione applicativa dei dati
  Visual Studio aggiunge un elemento XML al modello per ogni entità, metodo o un altro elemento che si crea. Attributi dell'elemento vengono visualizzate le proprietà nel **proprietà** finestra. Per informazioni sugli elementi e attributi generato da Visual Studio quando si progetta il modello, vedere [BDCMetadata Schema](http://go.microsoft.com/fwlink/?LinkID=169275).  
   
-## <a name="related-topics"></a>Argomenti correlati  
+## <a name="related-topics"></a>Argomenti correlati
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
@@ -132,5 +133,4 @@ ms.lasthandoff: 04/16/2018
 |[Procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md)|Viene illustrato come definire le relazioni tra entità nel modello.|  
 |[Procedura dettagliata: creazione di un elenco esterno in SharePoint tramite il servizio di integrazione applicativa dei dati](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Vengono fornite istruzioni dettagliate che illustrano come creare e testare un modello che consente di visualizzare i contatti in un elenco esterno di SharePoint.|  
 |[Integrazione di dati business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Viene fornita una panoramica della creazione e la progettazione di modelli per il servizio di integrazione applicativa dei dati.|  
-  
   

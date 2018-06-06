@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750259"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
 Questo argomento illustra i concetti di base per la definizione e utilizzo di un linguaggio specifico di dominio (DSL) creato con il SDK di modellazione per Visual Studio.
@@ -28,7 +29,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
  Quando è stato progettato un linguaggio DSL, è possibile distribuire come parte di un pacchetto di Visual Studio Integration Extension (VSIX). Gli utenti lavorano con DSL in Visual Studio:
 
- ![Diagramma dell'albero genealogico, casella degli strumenti ed explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Diagramma, casella degli strumenti e finestra di esplorazione dell'albero genealogico](../modeling/media/familyt_instance.png)
 
  La notazione è solo una parte di un linguaggio DSL. Con la notazione, il pacchetto VSIX include strumenti che gli utenti possono applicare per modificare e generare il materiale dai relativi modelli.
 
@@ -60,7 +61,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
 3.  Fare clic su **progettazione linguaggio specifico di dominio**.
 
-     ![Creare finestra di dialogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Finestra di dialogo per la creazione di una soluzione DSL](../modeling/media/create_dsldialog.png)
 
 4.  Nel **nome** digitare **albero genealogico FamilyTree**. Fare clic su **OK**.
 
@@ -87,7 +88,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
  L'interfaccia utente ora è simile a quella nell'immagine seguente.
 
- ![Progettazione DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
  Questa soluzione definisce un linguaggio specifico di dominio. Per ulteriori informazioni, vedere [panoramica dell'interfaccia utente di strumenti di linguaggio specifico di dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
  L'istanza sperimentale di Visual Studio sarà simile all'esempio seguente:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Il contenuto di un modello
  Il contenuto di un file che è un'istanza di un linguaggio DSL viene chiamato un *modello*. Il modello contiene *modello * * elementi* e *collegamenti* tra gli elementi. La definizione DSL specifica i tipi di elementi del modello e i collegamenti possono esistere nel modello. Ad esempio, in un linguaggio DSL creato dal modello di lingua minimo, è un tipo di elemento del modello e un tipo di collegamento.
@@ -196,7 +197,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
 1.  Nel diagramma DslDefinition, rinominare **ExampleModel** a **FamilyTreeModel**, **ExampleElement** a **persona**,  **Destinazioni** a **padri**, e **origini** a **figli**. È possibile fare clic su ogni etichetta per modificarla.
 
-     ![Diagramma della definizione DSL &#45; modello di albero genealogico](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![Diagramma della definizione DSL &#45; modello di albero genealogico](../modeling/media/familyt_person.png)
 
 2.  Rinominare gli strumenti di elemento e connettore.
 
@@ -255,7 +256,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
     4.  Selezionare ogni elemento decorator del nuovo, quindi nella finestra Proprietà impostare il **posizione** campo. Questo determina dove verrà visualizzato il valore della proprietà dominio sulla forma. Ad esempio, impostare **InnerBottomLeft** e **InnerBottomRight**.
 
-         ![Definizione della forma raggruppamento](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Definizione della forma Raggruppamento](../modeling/media/familyt_compartment.png)
 
 3.  Eseguire il mapping di elementi Decorator alle proprietà.
 
@@ -271,7 +272,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
 6.  In un file con estensione TT, è possibile aggiungere il codice che ottiene le proprietà di ogni persona.
 
- ![Diagramma dell'albero genealogico, casella degli strumenti ed explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Diagramma, casella degli strumenti e finestra di esplorazione dell'albero genealogico](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definire nuove classi
  È possibile aggiungere relazioni e le classi di dominio a un modello. Ad esempio, è possibile creare una nuova classe per rappresentare città e una nuova relazione per rappresentare che una persona lunga in una città.
@@ -297,7 +298,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
     1.  Fare clic su di **relazione di riferimento** strumento, fare clic su utente e quindi fare clic su città.
 
-         ![Frammento della definizione DSL: radice dell'albero genealogico](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![Frammento della definizione DSL: radice dell'albero genealogico](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Relazioni di riferimento rappresentano i riferimenti incrociati da una parte dell'albero del modello a un altro.
@@ -322,7 +323,7 @@ Se si ha familiarità con DSL, è consigliabile che il **Lab strumenti DSL**, ch
 
     2.  Utilizzare il **diagramma elemento mappa** strumento per collegare il nuovo connettore per la relazione tra utente e città.
 
-         ![Definizione dell'albero genealogico con mappa di forme aggiunte](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Definizione dell'albero genealogico con mappa di forme aggiunte](../modeling/media/familyt_shapemap.png)
 
 6.  Creare uno strumento dell'elemento per l'esecuzione di una città di nuovo.
 

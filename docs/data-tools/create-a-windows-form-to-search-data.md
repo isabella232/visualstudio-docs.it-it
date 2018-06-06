@@ -1,5 +1,5 @@
 ---
-title: Creare un Windows Form per eseguire la ricerca di dati
+title: Creare un Windows Form per la ricerca di dati
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e04b0e4ef2f77381e305b992c5457bc46dc8261
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746728"
 ---
-# <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per eseguire la ricerca di dati
+# <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 Uno scenario applicativo comune prevede la visualizzazione dei dati selezionati in un form, ad esempio gli ordini per un determinato cliente o i dettagli di un ordine specifico. In questo scenario un utente immette informazioni in un form, quindi viene eseguita una query che usa come parametro l'input dell'utente. Questo significa che i dati vengono selezionati in base a una query con parametri. La query restituisce solo i dati che soddisfano i criteri immessi dall'utente. Questa procedura dettagliata illustra come creare una query che restituisca i clienti di una determinata città e come modificare l'interfaccia utente in modo che gli utenti possano immettere il nome di una città e fare clic su un pulsante per eseguire la query.
 
  L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. Al contrario, se richiesta un'intera tabella del database, trasferimento in rete e quindi utilizzare la logica dell'applicazione per trovare il record che si desidera, l'applicazione può diventare lento e inefficiente.
@@ -70,7 +71,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **App di Windows Form** tipo di progetto.
 

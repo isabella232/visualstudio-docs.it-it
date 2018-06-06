@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1fae92a9ca958f3d6702ec0f2d1678b33d471bab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691804"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765492"
 ---
-# <a name="creating-site-definitions-for-sharepoint"></a>Creazione di definizioni di sito per SharePoint
+# <a name="create-site-definitions-for-sharepoint"></a>Creare definizioni di sito per SharePoint
   Il progetto di definizione del sito di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] consente di creare un *definizione sito*, che funge da base per un nuovo sito di SharePoint. Queste definizioni determinano non solo l'aspetto e il comportamento del sito di SharePoint, ma anche il contenuto predefinito e funzionalità. Nella definizione è possibile inserire elenchi preconfigurati, tipi di contenuto, ricevitori di eventi, immagini e altri elementi. In SharePoint sono incluse alcune definizioni di sito come BLOG, ad esempio. Quando si crea un sito in base alla definizione di sito BLOG, il sito contiene gli elenchi, Web part e altri elementi richiesti da un sito blog.  
   
  Per ulteriori informazioni sulle definizioni di sito, vedere [modelli di sito e le definizioni di](http://go.microsoft.com/fwlink/?LinkId=179134).  
@@ -41,11 +41,11 @@ ms.locfileid: "34691804"
   
 |Nome file|Descrizione|  
 |---------------|-----------------|  
-|default.aspx|Pagina home ASPX predefinita per il nuovo sito di SharePoint.|  
-|Onet.Xml|Specifica la configurazione del nuovo sito, i componenti del modello di definizione del sito e il comportamento predefinito. Queste impostazioni possono includere attributi, ad esempio i tipi di contenuto che sono abilitati, le visualizzazioni elenco predefinite, il file di modello di documento e le Web part incluse nel sito. Per impostazione predefinita, il `Modules` sezione sono elencati i file da aggiungere al sito di SharePoint e modalità di configurazione.|  
-|webtemp_*SiteDefinitionName*. Xml|Specifica le configurazioni di definizione del sito che viene visualizzato nel **selezione modello** sezione la **nuovo sito di SharePoint** pagina.|  
+|*default.aspx*|Pagina home ASPX predefinita per il nuovo sito di SharePoint.|  
+|*Onet.Xml*|Specifica la configurazione del nuovo sito, i componenti del modello di definizione del sito e il comportamento predefinito. Queste impostazioni possono includere attributi, ad esempio i tipi di contenuto che sono abilitati, le visualizzazioni elenco predefinite, il file di modello di documento e le Web part incluse nel sito. Per impostazione predefinita, il `Modules` sezione sono elencati i file da aggiungere al sito di SharePoint e modalità di configurazione.|  
+|*webtemp_ {SiteDefinitionName}. Xml*|Specifica le configurazioni di definizione del sito che viene visualizzato nel **selezione modello** sezione la **nuovo sito di SharePoint** pagina.|  
   
- Per impostazione predefinita, tutte le definizioni di sito vengono archiviate nel *unità:* cartella \Programmi\File comuni\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Ogni definizione di sito è una sottocartella.  
+ Per impostazione predefinita, tutte le definizioni di sito vengono archiviate nel *{unità:} \Programmi\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates* cartella. Ogni definizione di sito è una sottocartella.  
   
 ## <a name="related-topics"></a>Argomenti correlati
   
@@ -53,7 +53,7 @@ ms.locfileid: "34691804"
 |-----------|-----------------|  
 |[Procedura dettagliata: creare un progetto di definizione di sito di base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Illustra la procedura dettagliata tramite la creazione di un progetto di definizione di sito di base in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Procedura: creare una definizione di sito personalizzato e configurazione](http://go.microsoft.com/fwlink/?LinkId=183309)|Viene descritto come creare una definizione di sito personalizzato in SharePoint copiando una definizione di sito esistente e quindi modificando tale copia.|  
-|[Webtemp](http://go.microsoft.com/fwlink/?LinkId=183310)|Descrive il file originale che specifica le definizioni di sito disponibile nel **selezione modello** sezione la **nuovo sito di SharePoint** pagina.|  
+|[*Webtemp*](http://go.microsoft.com/fwlink/?LinkId=183310)|Descrive il file originale che specifica le definizioni di sito disponibile nel **selezione modello** sezione la **nuovo sito di SharePoint** pagina.|  
 |[Localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Viene descritto come preparare le soluzioni di SharePoint per l'utilizzo generale.|  
 |[Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Viene descritto come creare parti di una pagina di SharePoint che gli utenti possono modificare.|  
 |[Creazione di controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Viene descritto come creare controlli riutilizzabili che vengono eseguiti nelle pagine di applicazione e Web part.|  

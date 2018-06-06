@@ -33,7 +33,7 @@ ms.openlocfilehash: 8cb8df33c89ce044572508918ba48edae2a6d75e
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693344"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
@@ -141,7 +141,7 @@ ms.locfileid: "34693344"
 ###  <a name="AddControlsToGroups"></a> Aggiungere controlli a gruppi  
  Aggiungere uno o più controlli a un gruppo. Nella tabella seguente viene descritto ogni controllo.  
   
-|Controllo|Descrizione|  
+|Control|Descrizione|  
 |-------------|-----------------|  
 |**Casella**|Un contenitore che organizza i controlli in un gruppo. È possibile aggiungere controlli a una casella ad eccezione di un separatore, un gruppo o una scheda. Una casella può essere orizzontale o verticale.|  
 |**Pulsante**|Un pulsante che avvia un'azione. È possibile aggiungere un pulsante a un gruppo, un gruppo di pulsanti, un elenco a discesa, una raccolta, un menu o un pulsante di menu combinato.|  
@@ -180,7 +180,7 @@ ms.locfileid: "34693344"
   
  Tasti di scelta rapida che si applicano a tutti i controlli vengono visualizzati nella tabella seguente.  
   
-|Azione|Tasto di scelta rapida|  
+|Operazione|Tasto di scelta rapida|  
 |------------|-----------------------|  
 |Spostare un controllo prima che il controllo precedente nell'elenco.|**CTRL**+**backup**<br /><br /> **CTRL**+**sinistra**|  
 |Spostare un controllo dopo il controllo successivo nell'elenco.|**CTRL**+**verso il basso**<br /><br /> **CTRL**+**a destra**|  
@@ -196,7 +196,7 @@ ms.locfileid: "34693344"
   
  Tasti di scelta rapida che si applicano solo al Menu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, e <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> vengono visualizzati nella tabella seguente.  
   
-|Azione|Tasto di scelta rapida|  
+|Operazione|Tasto di scelta rapida|  
 |------------|-----------------------|  
 |Se il pannello di riepilogo a discesa è aperto ed è presente un controllo selezionato nel Pannello di riepilogo a discesa, selezionare il controllo padre.|**A sinistra**|  
 |Chiudere il pannello di riepilogo a discesa, se il pannello di riepilogo a discesa è aperto e viene selezionato il controllo padre.|**A sinistra**|  

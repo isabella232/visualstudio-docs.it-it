@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691479"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765752"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati
   È possibile progettare un modello di integrazione applicativa dei dati (BDC) utilizzando la finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo di integrazione applicativa dei dati** finestra e **Esplora integrazione applicativa dei dati**.  
@@ -56,14 +56,14 @@ ms.locfileid: "34691479"
   
  È possibile generare rapidamente metodi Finder, Finder specifico, autore, Updater e Deleter il **Dettagli metodo di integrazione applicativa dei dati** finestra. Quando si generano questi metodi, Visual Studio aggiunge i metadati, ad esempio parametri, istanze e descrittori del tipo, il metodo. È possibile modificare i metadati per soddisfare il proprio scenario specifico.  
   
- Per aprire la **Dettagli metodo di integrazione applicativa dei dati** finestra, nella barra dei menu, scegliere **vista**, **altre finestre**, **Dettagli metodo di integrazione applicativa dei dati**.  
+ Per aprire la **Dettagli metodo di integrazione applicativa dei dati** finestra, nella barra dei menu, scegliere **vista** > **altre finestre** > **Dettagli metodo di integrazione applicativa dei dati** .  
   
  Per visualizzare i metodi di **Dettagli metodo di integrazione applicativa dei dati** finestra, scegliere l'entità nella finestra di progettazione di integrazione applicativa dei dati. I metodi dell'entità selezionata vengono visualizzati nel **Dettagli metodo di integrazione applicativa dei dati** finestra. Se non si sceglie un'entità nella finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo di integrazione applicativa dei dati** finestra viene visualizzata alcuna informazione.  
   
  Espandere o comprimere i nodi di **Dettagli metodo di integrazione applicativa dei dati** finestra per definire parametri, le istanze e descrittori di filtro. Utilizzare il **Esplora integrazione applicativa dei dati** per definire i descrittori di tipo.  
   
 ## <a name="bdc-explorer"></a>Esplora integrazione applicativa dei dati
- Il **Esplora integrazione applicativa dei dati** Visualizza gli elementi che costituiscono il modello. Per aprire la **Esplora integrazione applicativa dei dati**, sulla barra dei menu, scegliere **vista**, **altre finestre**, **Esplora integrazione applicativa dei dati**. Per esplorare il modello, espandere i nodi di **Esplora integrazione applicativa dei dati**. Ogni nodo rappresenta un elemento nel codice XML del file di modello.  
+ Il **Esplora integrazione applicativa dei dati** Visualizza gli elementi che costituiscono il modello. Per aprire la **Esplora integrazione applicativa dei dati**, sulla barra dei menu, scegliere **vista** > **altre finestre** > **Esplora integrazione applicativa dei dati**. Per esplorare il modello, espandere i nodi di **Esplora integrazione applicativa dei dati**. Ogni nodo rappresenta un elemento nel codice XML del file di modello.  
   
  Mentre si selezionano nodi nel **Esplora integrazione applicativa dei dati**, vengono visualizzate le proprietà di ogni nodo che si sceglie nel **proprietà** finestra. Molte di queste proprietà corrispondono agli attributi nel file di modello. È possibile cercare il modello utilizzando la casella di ricerca nella parte superiore del **Esplora integrazione applicativa dei dati**.  
   

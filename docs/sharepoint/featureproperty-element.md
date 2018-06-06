@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ff9571adc23c9ddc86de96736b9d37ef1cec5d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691818"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766965"
 ---
-# <a name="featureproperty-element"></a>Elemento FeatureProperty
+# <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Rappresenta una proprietà personalizzata che è inclusa in una funzionalità quando viene distribuito in SharePoint. Dopo aver distribuita una funzionalità, è possibile accedere alla proprietà nel codice.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -32,8 +32,8 @@ ms.locfileid: "34691818"
     Value = "Property value" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.  
+## <a name="attributes-and-elements"></a>Attributi ed elementi
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   
@@ -42,10 +42,10 @@ ms.locfileid: "34691818"
 |**Key**|Richiesto **xs: String** attributo.<br /><br /> La chiave utilizzata per archiviare e recuperare il valore della proprietà. Ogni proprietà devono avere una chiave che è univoca all'interno della funzionalità.|  
 |**Valore**|Richiesto **xs: String** attributo.<br /><br /> Valore della proprietà.|  
   
-### <a name="child-elements"></a>Elementi figlio  
+### <a name="child-elements"></a>Elementi figlio
  Nessuno.  
   
-### <a name="parent-elements"></a>Elementi padre  
+### <a name="parent-elements"></a>Elementi padre
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691818"
 ## <a name="remarks"></a>Note  
  Per ulteriori informazioni sulle proprietà di funzionalità, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Informazioni sull'elemento  
+## <a name="element-information"></a>Informazioni sull'elemento
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691818"
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Riferimento allo Schema elemento di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Specifica delle informazioni sui pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

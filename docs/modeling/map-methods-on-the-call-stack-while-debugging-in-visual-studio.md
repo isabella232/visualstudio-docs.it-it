@@ -30,16 +30,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ee400201ff76745612e7fe7ce36020ba5234a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 111a1180f694b57a4e5ae013a41128a4a7e9e9f5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748686"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 Creare una mappa codici per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.
 
- ![Debug con stack di chiamate nelle mappe codici](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
+ ![Debug con stack di chiamate nelle mappe del codice](../debugger/media/debuggermap_overview.png)
 
  Sono necessari:
 
@@ -71,60 +72,60 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
 2.  Dopo che l'app passa alla modalità di interruzione o esegue una funzione, scegliere **mappa del codice**. (Tastiera: **Ctrl** + **MAIUSC** + **`**)
 
-     ![Scegliere la mappa codici per avviare il mapping stack di chiamata](../debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")
+     ![Scegliere la mappa del codice per avviare il mapping dello stack di chiamate](../debugger/media/debuggermap_choosecodemap.png)
 
      Lo stack di chiamate corrente verrà visualizzato in arancione in una nuova mappa del codice:
 
-     ![Vedere lo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
+     ![Visualizzare lo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_seeundocallstack.png)
 
      La mappa si aggiornerà automaticamente durante il debug. Vedere [aggiornare la mappa con lo stack di chiamate successivo](#UpdateMap).
 
 ##  <a name="MakeNotes"></a> Aggiungere appunti sul codice
  Aggiungere commenti per tenere traccia di cosa avviene nel codice. Per aggiungere una nuova riga in un commento, premere **MAIUSC + INVIO**.
 
- ![Aggiungere un commento allo stack di chiamate nella mappa codici](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
+ ![Aggiungere un commento allo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_addcomment.png)
 
 ##  <a name="UpdateMap"></a> Aggiornare la mappa con lo stack di chiamate successivo
  Eseguire l'app fino al punto di interruzione successivo o eseguire una funzione. La mappa aggiungerà un nuovo stack di chiamate.
 
- ![Aggiornare la mappa codice con stack di chiamate successivo](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
+ ![Aggiornare la mappa del codice con lo stack di chiamate successivo](../debugger/media/debuggermap_addclearcallstack.png)
 
 ##  <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
  Ora si ha una mappa - cosa successivo? Se si lavora con c# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di cosa avviene nel codice.
 
  Fare doppio clic su un metodo per visualizzarne la definizione del codice o usare il menu di scelta rapida del metodo. (Tastiera: selezionare il metodo nella mappa e premere **F12**)
 
- ![Passare alla definizione del codice per un metodo nella mappa codici](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
+ ![Passare alla definizione del codice per un metodo nella mappa del codice](../debugger/media/debuggermap_gotocodedefinition.png)
 
  Aggiungere gli elementi di cui si vuole tenere traccia nella mappa.
 
- ![Visualizzare i campi di un metodo nella mappa codici dello stack di chiamate](../debugger/media/debuggermap_showfields.png "DebuggerMap_ShowFields")
+ ![Visualizzare i campi di un metodo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
 >  Per impostazione predefinita, quando si aggiungono gli elementi alla mappa si aggiungono anche i nodi di gruppo padre, ad esempio la classe, spazio dei nomi e l'assembly. Sebbene ciò sia utile, è possibile mantenere la mappa semplice disattivando questa funzionalità mediante il **Includi padri** pulsante sulla barra degli strumenti della mappa o premendo **CTRL** quando si aggiungono elementi.
 
- ![Campi correlati a un metodo nella mappa codici dello stack di chiamate](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
+ ![Campi correlati a un metodo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_showedfields.png)
 
  Di seguito è possibile visualizzare i metodi in cui vengono usati gli stessi campi. Gli elementi aggiunti più di recente sono indicati in verde.
 
  Continuare a compilare la mappa per visualizzare altro codice.
 
- ![Visualizzare i metodi che usano un campo: mappa codici dello stack di chiamate](../debugger/media/debuggermap_findallreferences.png "DebuggerMap_FindAllReferences")
+ ![Visualizzare i metodi che usano un campo: mappa del codice dello stack di chiamate](../debugger/media/debuggermap_findallreferences.png)
 
- ![I metodi che usano un campo nella mappa codici dello stack di chiamate](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
+ ![Metodi che usano un campo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_foundallreferences.png)
 
 ##  <a name="FindBugs"></a> Individuare bug utilizzando la mappa
  Visualizzando il codice, sarà possibile rilevare i bug più rapidamente. Si supponga, ad esempio, che si sta verificando un bug in un programma di disegno. Quando si disegna una linea e si tenta di annullare l'operazione, non accadrà nulla finché non si disegnerà un'altra riga.
 
  Pertanto, impostare punti di interruzione nei metodi `clear`, `undo` e `Repaint`, avviare il debug e compilare una mappa come quella indicata di seguito:
 
- ![Aggiungere un altro stack di chiamate alla mappa del codice](../debugger/media/debuggermap_addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
+ ![Aggiungere un altro stack di chiamate alla mappa del codice](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
  Tutte le azioni dell'utente nella mappa chiamano `Repaint`, tranne `undo`. Ciò potrebbe spiegare il motivo `undo` non funziona nell'immediato.
 
  Dopo aver corretto il bug e continuato a eseguire il programma, la mappa aggiungerà la nuova chiamata da `undo` in `Repaint`:
 
- ![Aggiungi nuovo metodo chiamata allo stack di chiamate nella mappa codici](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
+ ![Aggiungere una nuova chiamata di metodo allo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
 ##  <a name="QA"></a> Domande e risposte
 
@@ -132,11 +133,11 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      Per impostazione predefinita, nella mappa viene visualizzato solo il proprio codice. Per visualizzare il codice esterno, attivarlo nella **Stack di chiamate** finestra:
 
-     ![Visualizzare il codice esterno utilizzando la finestra Stack di chiamate](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
+     ![Visualizzare il codice esterno tramite la finestra Stack di chiamate](../debugger/media/debuggermap_callstackmenu.png)
 
      oppure disattivare **Abilita Just My Code** di Visual Studio, opzioni di debug:
 
-     ![Mostra codice esterno nella finestra di dialogo Opzioni](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
+     ![Scegliere Mostra codice esterno nella finestra di dialogo Opzioni](../debugger/media/debuggermap_debugoptions.png)
 
 -   **La modifica della mappa influisce sul codice?**
 
@@ -160,11 +161,11 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      È possibile esportare la mappa, inviarla ad altri se è installato Microsoft Outlook o salvarla nella soluzione in modo che sia possibile archiviarla nel controllo della versione di Team Foundation.
 
-     ![Condivisione Mappa codici dello stack di chiamate con altri utenti](../debugger/media/debuggermap_sharewithothers.png "DebuggerMap_ShareWithOthers")
+     ![Condividere la mappa del codice dello stack di chiamate con altri utenti](../debugger/media/debuggermap_sharewithothers.png)
 
 -   **Come è possibile interrompere la mappa dall'aggiunta di nuovi stack di chiamate automaticamente?**
 
-     Scegliere ![pulsante &#45; Mostra stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl** + **MAIUSC** + **`**.
+     Scegliere ![pulsante &#45; Mostra stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl** + **MAIUSC** + **`**.
 
      La mappa continuerà a evidenziare gli stack di chiamate esistenti sulla mappa durante il debug.
 
@@ -172,7 +173,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      Per ottenere ulteriori informazioni su un elemento, spostare il puntatore del mouse su di esso e osservare la descrizione comando dell'elemento. È anche possibile esaminare il **legenda** per informazioni su cosa significa ogni icona.
 
-     ![Che cosa significano le icone nella mappa codici dello stack di chiamate ] (../debugger/media/debuggermap_showlegend.png "DebuggerMap_ShowLegend")
+     ![Significato delle icone nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_showlegend.png)
 
  Vedere:
 

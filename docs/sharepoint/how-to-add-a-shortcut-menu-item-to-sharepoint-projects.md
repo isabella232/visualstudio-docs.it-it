@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aea2dd600548d76d57d58c8cfc0313c92ccb9f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f29465ca696617982a700a04b72c42b478933620
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766786"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procedura: aggiungere una voce di menu di scelta rapida ai progetti SharePoint
   È possibile aggiungere una voce di menu di scelta rapida per qualsiasi progetto SharePoint. La voce di menu viene visualizzata quando l'utente fa clic in un nodo di progetto **Esplora**.  
@@ -45,16 +46,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Compilazione del codice  
  Questo esempio richiede un progetto libreria di classi con i riferimenti agli assembly seguenti:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
+-   Microsoft.VisualStudio.SharePoint
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Distribuzione dell'estensione  
  Per distribuire l'estensione, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) per l'assembly e altri file che si desiderano distribuire con l'estensione del pacchetto. Per ulteriori informazioni, vedere [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Estensione di progetti SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Procedura: Aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
   

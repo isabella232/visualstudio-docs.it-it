@@ -20,11 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24338b2a6bc49a9a1a2a77e6395f60013c4465b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752333"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono generati quando due utenti tentano di modificare gli stessi dati in un database nello stesso momento. In questa procedura dettagliata, si crea un'applicazione Windows che viene illustrato come intercettare un <xref:System.Data.DBConcurrencyException>, individuare la riga che ha causato l'errore e una strategia per la gestione di informazioni.
@@ -72,7 +73,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **App di Windows Form** tipo di progetto.
 

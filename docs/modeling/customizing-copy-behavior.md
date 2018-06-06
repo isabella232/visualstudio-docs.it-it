@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748374"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio specifico di dominio (DSL, Domain-Specific Language) creato con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, è possibile modificare il tipo di comportamento che si ottiene quando l'utente copia e incolla degli elementi.
@@ -29,7 +30,7 @@ In un linguaggio specifico di dominio (DSL, Domain-Specific Language) creato con
 
  Questa regola si applica ricorsivamente a elementi e collegamenti copiati.
 
- ![Copiati e incollati gli elementi](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Elementi copiati e incollati](../modeling/media/dslcopypastedefault.png)
 
  Gli elementi e i collegamenti copiati vengono serializzati e archiviati in un oggetto <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), che viene inserito negli Appunti.
 
@@ -217,7 +218,7 @@ Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modelin
 ##  <a name="customizeLinks"></a> Personalizzazione del comportamento di Copia collegamento
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione del linguaggio DSL, selezionare un ruolo a un lato di una relazione e nel set di finestra delle proprietà di **propaga copia** valore.
 
- ![Propagazione della proprietà di copia del ruolo di dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propagazione della proprietà Copia del ruolo di dominio](../modeling/media/dslpropagatescopy.png)
 
  Sono disponibili tre valori:
 
@@ -227,7 +228,7 @@ Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modelin
 
 -   Propaga copia a collegamento e ad assegnatario di ruolo opposto - Il gruppo copiato include una copia dell'elemento presente nella posizione a cui punta il collegamento.
 
- ![Effetto della copia con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Effetto della copia con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  Le modifiche apportate influenzeranno sia gli elementi che l'immagine copiata.
 
@@ -237,9 +238,9 @@ Vedere [procedura: aggiungere un gestore di trascinamento e rilascio](../modelin
 > [!TIP]
 >  Per ulteriori informazioni sulla personalizzazione del modello utilizzando il codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagramma sequenza per l'operazione di copia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagramma sequenza per l'operazione Copia](../modeling/media/dslcopyseqdiagram.png)
 
- ![Diagramma di sequenza dell'operazione Incolla](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagramma sequenza per l'operazione Incolla](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Per definire il proprio oggetto ElementOperations
 

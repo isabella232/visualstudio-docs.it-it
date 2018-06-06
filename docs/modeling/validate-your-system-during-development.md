@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749941"
 ---
 # <a name="validate-your-system-during-development"></a>Convalidare il sistema durante lo sviluppo
 Visual Studio consente di mantenere la coerenza del software con i requisiti degli utenti e con l'architettura del sistema.
@@ -34,7 +35,7 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
 
 |**Categoria**|**Collegamenti**|
 |------------------|---------------|
-|**Video**|![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sette: codice e la progettazione di sistema con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: architettura di un'applicazione utilizzando un diagramma di dipendenza](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento alla trasmissione video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN serie di video procedurali: come convalidare codice con diagrammi di dipendenza](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Video**|![collegamento alla trasmissione video](../data-tools/media/playvideo.gif) [Channel 9: Doug sette: codice e la progettazione di sistema con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento alla trasmissione video](../data-tools/media/playvideo.gif) [Channel 9: architettura di un'applicazione utilizzando un diagramma di dipendenza](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento alla trasmissione video](../data-tools/media/playvideo.gif) [MSDN serie di video procedurali: come convalidare codice con diagrammi di dipendenza](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|

@@ -1,5 +1,5 @@
 ---
-title: Creare diagrammi dipendenza dal codice
+title: Creare diagrammi delle dipendenze dal codice
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3a34d52bb4b9af535d1b11843967ac5b9619a153
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73f3cf2bbb5903a3c2dda8c531f28e9aa81facad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749701"
 ---
-# <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi dipendenza dal codice
+# <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
 Per visualizzare l'architettura di alto livello, logica del sistema software, creare un *diagramma dipendenze* in Visual Studio. Per assicurarsi che il codice rimanga coerenza con la progettazione, è possibile convalidare il codice con un diagramma di dipendenze. È possibile creare diagrammi di dipendenza per i progetti Visual c# e Visual Basic. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-![Creare un diagramma di dipendenze](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+![Creare un diagramma di dipendenza](../modeling/media/layerdiagramvisualizecode.png)
 
 Un diagramma di dipendenza consente di organizzare gli elementi di soluzione di Visual Studio in gruppi logici e astratti denominati *livelli*. È possibile utilizzare i livelli per descrivere le attività principali che tali artefatti eseguono oppure i componenti principali del sistema. Ogni livello può contenere altri livelli che descrivono attività più dettagliate. È inoltre possibile specificare l'esistenti o *dipendenze* tra livelli. Tali dipendenze, rappresentate come frecce, mostrano quali livelli possono utilizzare o utilizzano attualmente la funzionalità rappresentata da altri livelli. Per gestire controllo a livello di architettura nel codice, mostrare le dipendenze desiderate nel diagramma, quindi convalidare il codice in base al diagramma.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693942"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751589"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
@@ -31,7 +31,7 @@ Il **XML Schema Explorer** è integrato con Microsoft Visual Studio e l'Editor X
 
 -   Aggiungere i risultati della ricerca alla visualizzazione grafico o visualizzazione modello di contenuto
 
--   Ordinare la struttura ad albero in base a nome, tipo o ordine dei documenti. Per altre informazioni, vedere [ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+-   Ordinare l'albero in base a nome, tipo o ordine dei documenti. Per altre informazioni, vedere [ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
 -   Aprire l'editor XML e passare ai percorsi del codice nel file XSD. Per ulteriori informazioni, vedere [integrazione con l'Editor XML](../xml-tools/integration-with-xml-editor.md).
 
@@ -47,7 +47,7 @@ Il **XML Schema Explorer** fornisce una visualizzazione gerarchica dello schema 
 
 -   È possibile accedere ai **XML Schema Explorer** da un *vb* file con un valore letterale XML di Visual Basic associato un *XSD* file. Per visualizzare lo schema impostati nella **XML Schema Explorer**, fare doppio clic su un nodo XML in un valore letterale XML o un'importazione dello spazio dei nomi XML e selezionare il **Mostra in Schema Explorer** comando. Per altre informazioni, vedere [valori letterali di integrazione di XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
-## <a name="tree-view"></a>Visualizzazione di struttura ad albero
+## <a name="tree-view"></a>Visualizzazione albero
  Il **XML Schema Explorer** schema Visualizza precompilato imposta le informazioni in una struttura ad albero. La struttura ad albero è organizzata come segue:
 
 -   Al livello principale è presente il nodo del set di schemi.
@@ -60,7 +60,7 @@ Il **XML Schema Explorer** fornisce una visualizzazione gerarchica dello schema 
 
 Di seguito viene riportato un esempio di struttura ad albero:
 
-![XML Schema Explorer](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")
+![XML Schema Explorer](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>Selezione e attivazione
  Per evidenziare e selezionare un nodo, fare clic una volta in Schema Explorer.
@@ -74,11 +74,11 @@ Di seguito viene riportato un esempio di struttura ad albero:
 -   L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.
 
 ## <a name="drag-and-drop-nodes"></a>Trascinare e rilasciare nodi
- È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.
+ È possibile trascinare e rilasciare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.
 
  Eliminazione di file sulla visualizzazione aggiungerà tutti i nodi globali nel file per il [dell'area di lavoro di progettazione XSD](../xml-tools/xml-schema-designer-workspace.md). Il rilascio degli spazi dei nomi sulla visualizzazione aggiungerà tutti i nodi globali contenuti nello spazio dei nomi all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
 
- Non è possibile trascinare nodi locali o importazioni.
+ Non è possibile trascinare e rilasciare nodi locali o importazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

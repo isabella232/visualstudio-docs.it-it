@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691532"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765726"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
   Utilizzando le web part, è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint utilizzando un browser. Web part sono controlli sul lato server che eseguono all'interno di una pagina web part: sono relative ai blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  È possibile creare e quindi eseguire il debug di web part in un sito di SharePoint utilizzando i modelli di Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691532"
   
 |File|Descrizione|  
 |----------|-----------------|  
-|Elements|Contiene informazioni che il file di definizione di funzionalità del progetto utilizzato per distribuire la web part.|  
+|*Elements*|Contiene informazioni che il file di definizione di funzionalità del progetto utilizzato per distribuire la web part.|  
 |file con estensione WebPart|Vengono fornite informazioni necessarie per visualizzare la web part in una raccolta web part per SharePoint.|  
 |File di codice|Contiene metodi che aggiungono controlli alla web part e di generare il contenuto personalizzato all'interno della web part.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691532"
 |Nome controllo|Descrizione|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Inserisce un menu ASP. Per ulteriori informazioni, vedere [Cenni preliminari sul controllo Menu](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Inserisce un **collegamento** elemento nella pagina aspx e si applica uno o più fogli di stile esterni definiti da **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Inserisce un controllo di data/ora nella pagina aspx.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Inserisce una convalida di sicurezza nella pagina. aspx|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Inserisce un **LINK** elemento nel *aspx* pagina e si applica uno o più fogli di stile esterni definiti dal **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Inserisce un controllo di data/ora nel *aspx* pagina.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Inserisce una convalida di sicurezza nel *aspx* pagina|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Restituisce una proprietà di un elenco specificato.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Restituisce una proprietà globale del sito Web corrente.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Inserisce un collegamento a un feed in una pagina aspx RSS.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Inserisce un collegamento a un feed in RSS il *aspx* pagina.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Fornisce proprietà e metodi per la registrazione di risorse, ad esempio gli script, in una pagina in modo che può essere richiesta quando viene eseguito il rendering della pagina.|  
-|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Applica un tema per la pagina aspx.|  
+|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Si applica un tema per il *aspx* pagina.|  
   
 ## <a name="debug-a-web-part"></a>Eseguire il debug di una web part
  È possibile eseguire il debug di un progetto di SharePoint che contiene una web part, esattamente come si trattasse del debug di altri progetti di Visual Studio. Quando si avvia il debugger di Visual Studio, Visual Studio apre il sito di SharePoint.  

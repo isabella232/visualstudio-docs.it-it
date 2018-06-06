@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747391"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare i controlli ai dati in Visual Studio
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dei dati ai controlli. È possibile creare questi controlli con associazione a dati trascinando elementi dal **origini dati** finestra in un'area di progettazione o controlli su una superficie in Visual Studio.
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="data-sources-window"></a>Finestra Origini dati
  Origini dati sono disponibili per il progetto come elementi di **origini dati** finestra. Questa finestra è visibile o accessibile dal **vista** menu, quando un'area di progettazione del form è la finestra attiva nel progetto. È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti e facendovi clic sopra, è inoltre possibile configurare le origini dati.
 
- ![Finestra Origini dati](../data-tools/media/raddata-data-sources-window.png "finestra Origini dati raddata")
+ ![Finestra Origini dati](../data-tools/media/raddata-data-sources-window.png)
 
  Per ogni tipo di dati che viene visualizzato nel **origini dati** finestra, viene creato un controllo predefinito quando si trascina l'elemento nella finestra di progettazione. Prima di trascinare un elemento di **origini dati** finestra, è possibile modificare il controllo che verrà creato. Per ulteriori informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

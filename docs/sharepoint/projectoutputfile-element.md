@@ -19,7 +19,7 @@ ms.openlocfilehash: f77cb92e62d5a5aec4d5e43fe295a3bab279c579
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692158"
 ---
 # <a name="projectoutputfile-element"></a>Elemento ProjectOutputFile
@@ -38,7 +38,7 @@ ms.locfileid: "34692158"
  **ProjectOutputFileType**  
   
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
- Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.  
+ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765375"
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Pubblicare un'applicazione ASP.NET o ASP.NET Core servizio App di Azure con Visual Studio
 
@@ -26,9 +27,9 @@ Se si dispone già di un account Azure, è possibile [iscriverti qui](https://az
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* È necessario disporre di Visual Studio 2017 installato e il **ASP.NET** e **.NET Framework** carico di lavoro di sviluppo. Per un'applicazione .NET Core, è necessario anche il **.NET Core** carico di lavoro.
+* È necessario disporre di Visual Studio 2017 installato e il **lo sviluppo web ASP.NET e** carico di lavoro e. **Sviluppo di applicazioni desktop NET** carico di lavoro. Per un'app .NET Core, è necessario il. **NET Core** carico di lavoro.
 
-    Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](http://www.visualstudio.com).
+    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto 
 
@@ -81,4 +82,4 @@ Se si dispone già di un account Azure, è possibile [iscriverti qui](https://az
 In questa Guida rapida, è stato descritto come utilizzare Visual Studio per creare un profilo di pubblicazione per la distribuzione in Azure. È inoltre possibile configurare una pubblicazione profilo tramite l'importazione di pubblicare le impostazioni di servizio App di Azure.
 
 > [!div class="nextstepaction"]
-> [Importazione delle impostazioni di pubblicazione e distribuzione in Azure](tutorial-import-publish-settings-azure.md)
+> [Importare impostazioni di pubblicazione e distribuzione in Azure](tutorial-import-publish-settings-azure.md)

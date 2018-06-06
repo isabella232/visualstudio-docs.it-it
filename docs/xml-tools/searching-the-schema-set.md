@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751741"
 ---
 # <a name="search-the-schema-set"></a>Cercare il set di schemi
 
@@ -28,7 +29,7 @@ Il **XML Schema Explorer** consente di cercare lo schema impostato nei modi segu
 
  Eseguire ricerche per parole chiave immettendo una sottostringa nel **set di schemi di ricerca** casella di testo del **XML Schema Explorer** sulla barra degli strumenti.
 
- ![Ricerca di parola chiave XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Ricerca di parole chiave in XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif)
 
  Il **XML Schema Explorer** Cerca lo schema impostata per gli attributi seguenti:
 
@@ -48,7 +49,7 @@ Il **XML Schema Explorer** consente di cercare lo schema impostato nei modi segu
 
  È possibile aggiungere i risultati della ricerca all'area di lavoro facendo clic di **Aggiungi nodi evidenziati all'area di lavoro** pulsante del riquadro dei risultati di riepilogo.
 
- ![Risultato di ricerca XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Cancella risultati
 

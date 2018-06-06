@@ -12,11 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746767"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio 2017
 
@@ -196,7 +197,7 @@ Nel caso di problemi durante l'apertura della pagina con il download del debugge
 
 ### <a name="BKMK_attach"></a> Connettersi all'applicazione ASP.NET dal computer di Visual Studio
 
-1. Nel computer di Visual Studio, aprire il **MyASPApp** soluzione.
+1. Nel computer di Visual Studio, aprire la soluzione che si sta tentando di eseguire il debug (**MyASPApp** se si segue i passaggi descritti in questo articolo).
 2. In Visual Studio, fare clic su **Debug > Connetti a processo** (Ctrl + Alt + P).
 
     > [!TIP]

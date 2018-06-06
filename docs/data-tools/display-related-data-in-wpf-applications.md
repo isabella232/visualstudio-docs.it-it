@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746546"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Visualizzare i dati correlati nelle applicazioni WPF
 In alcune applicazioni, si potrebbe voler lavorare con dati provenienti da più tabelle o entità che sono correlate tra loro in una relazione padre-figlio. Potrebbe ad esempio, si desidera visualizzare una griglia in cui vengono visualizzati i clienti da un `Customers` tabella. Quando l'utente seleziona un cliente specifico, in un'altra griglia vengono visualizzati gli ordini per cliente da un processo di `Orders` tabella.
@@ -53,7 +54,7 @@ In alcune applicazioni, si potrebbe voler lavorare con dati provenienti da più 
 
      La figura seguente illustra gli **ordini** tabella il **clienti** tabella in un set di dati nel **origini dati** finestra.
 
-     ![Finestra Origini dati che mostrano relazione](../data-tools/media/datasources2.gif "DataSources2")
+     ![Finestra Origini dati con visualizzazione delle relazioni](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -39,7 +39,7 @@ ms.openlocfilehash: 52297a90f562ac534d0087c273cde05f021711af
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692873"
 ---
 # <a name="program-vsto-add-ins"></a>Programma-componenti aggiuntivi VSTO
@@ -124,7 +124,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Eseguire il codice per inizializzare il componente aggiuntivo VSTO quando viene caricato.|Aggiungere il codice al metodo `ThisAddIn_Startup` . Questo metodo è il gestore eventi predefinito per l'evento <xref:Microsoft.Office.Tools.AddInBase.Startup> . Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).|  
 |Eseguire il codice per pulire le risorse usate dal componente aggiuntivo VSTO prima che venga scaricato.|Aggiungere il codice al metodo `ThisAddIn_Shutdown` . Questo metodo è il gestore eventi predefinito per l'evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md). **Nota:** In Outlook, per impostazione predefinita il `ThisAddIn_Startup` gestore dell'evento non viene chiamato sempre quando il componente aggiuntivo VSTO viene scaricato. Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).|  
 |Visualizzare un riquadro attività personalizzato.|Usare il campo `CustomTaskPanes` . Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).|  
-|Esporre gli oggetti nel componente aggiuntivo VSTO ad altre soluzioni Microsoft Office.|Eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>. Per altre informazioni, vedere [chiamare codice in componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
+|Esporre gli oggetti nel componente aggiuntivo VSTO ad altre soluzioni Microsoft Office.|Eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Per altre informazioni, vedere [chiamare codice in componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
 |Personalizzare una funzionalità nel sistema Microsoft Office implementando un'interfaccia di estensibilità.|Eseguire l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> in modo da ottenere un'istanza della classe che implementi l'interfaccia. Per altre informazioni, vedere [funzionalità di personalizzazione dell'interfaccia utente usando le interfacce di estendibilità](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:** per personalizzare la barra multifunzione dell'interfaccia utente, è inoltre possibile sostituire il <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> metodo.|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>Comprendere la progettazione della classe ThisAddIn  

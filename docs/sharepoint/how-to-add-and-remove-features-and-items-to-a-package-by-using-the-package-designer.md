@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f807394497bff99e12546f7a1a913adffbff41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767163"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti
   Quando si crea una soluzione di SharePoint, Visual Studio aggiunge le funzionalità di SharePoint predefinito per il pacchetto della soluzione. Prima della distribuzione finale, è possibile aggiungere e rimuovere elementi di progetto SharePoint e funzionalità per modificare il pacchetto di SharePoint.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="adding-features-to-a-sharepoint-package"></a>Aggiunta di funzionalità a un pacchetto di SharePoint  
  Per aggiungere funzionalità a un pacchetto di SharePoint, è possibile utilizzare la finestra di progettazione del pacchetto.  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Per aggiungere funzionalità di SharePoint con la finestra di progettazione del pacchetto  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Per aggiungere funzionalità di SharePoint con Progettazione pacchetti
   
 1.  Aprire il **Progettazione pacchetti**.  
   
@@ -54,15 +55,14 @@ ms.lasthandoff: 04/16/2018
 ## <a name="removing-features-from-a-sharepoint-package"></a>Rimozione di funzionalità da un pacchetto di SharePoint  
  Per rimuovere funzionalità da un pacchetto di SharePoint, è possibile utilizzare la finestra di progettazione del pacchetto.  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Per rimuovere le funzionalità di SharePoint con la finestra di progettazione del pacchetto  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Per rimuovere le funzionalità di SharePoint con Progettazione pacchetti
   
 1.  Nel **elementi nel pacchetto** elenco, scegliere un elemento che si desidera rimuovere e quindi scegliere il **rimuovere** (<) pulsante o selezionare il **Rimuovi tutto** pulsante (<<) per rimuovere tutti gli elementi.  
   
      Gli elementi di SharePoint vengono visualizzati nel **elementi nella soluzione** elenco.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Creazione di pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Procedura: creare un pacchetto](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
   

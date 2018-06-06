@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767621"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procedura: aggiungere una proprietà ai progetti SharePoint
   È possibile utilizzare un'estensione di progetto per aggiungere una proprietà a qualsiasi progetto SharePoint. La proprietà viene visualizzata nel **proprietà** finestra quando è selezionato il progetto in **Esplora**.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 3.  Nel gestore eventi per il <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento, aggiungere un'istanza della classe di proprietà per il <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> raccolta del parametro di argomenti dell'evento.  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice riportato di seguito viene illustrato come aggiungere due proprietà ai progetti SharePoint. Una proprietà mantiene i relativi dati nel file di progetto utente opzione (i. file csproj o. vbproj). L'altra proprietà mantiene i dati nel file di progetto (file con estensione csproj o vbproj).  
+ Esempio di codice riportato di seguito viene illustrato come aggiungere due proprietà ai progetti SharePoint. Una proprietà mantiene i relativi dati nel file di progetto utente opzione (il *. csproj* file oppure *. vbproj* file). L'altra proprietà mantiene i relativi dati nel file di progetto (*csproj* file oppure *vbproj* file).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
@@ -69,20 +70,20 @@ ms.lasthandoff: 04/16/2018
 ## <a name="compiling-the-code"></a>Compilazione del codice  
  Questo esempio richiede riferimenti agli assembly seguenti:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   VisualStudio  
-  
--   8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   VisualStudio
+-     
+-   8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Distribuzione dell'estensione  
  Per distribuire l'estensione, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) per l'assembly e altri file che si desiderano distribuire con l'estensione del pacchetto. Per ulteriori informazioni, vedere [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Estensione di progetti SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Procedura: creare un'estensione di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Procedura: aggiungere una voce di Menu di scelta rapida ai progetti SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

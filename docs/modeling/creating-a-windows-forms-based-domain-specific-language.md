@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749476"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 È possibile utilizzare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), anziché utilizzare un diagramma DSL. Questo argomento viene illustrata l'associazione di un Windows Form a un linguaggio DSL, usando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") istanza di un linguaggio DSL, che visualizza un'interfaccia utente di Windows Form ed Esplora modelli.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) istanza di un linguaggio DSL, che visualizza un'interfaccia utente di Windows Form ed Esplora modelli.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Creazione di un Windows Form DSL
  Il **minima progettazione Windows Form** modello DSL consente di creare un linguaggio DSL minimo che è possibile modificare per adattarli ai propri requisiti.
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="updating-the-dsl-definition"></a>L'aggiornamento della definizione DSL
  Le operazioni seguenti che in questa procedura dettagliata viene utilizzata la definizione di DSL.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Per aggiornare la definizione DSL
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 04/26/2018
 
      Le proprietà e relazioni della classe modello vengono visualizzati nella finestra Origini dati.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Per connettere il modello a un form
 
@@ -172,7 +173,7 @@ ms.lasthandoff: 04/26/2018
 
 -   Assicura che, quando l'utente seleziona una riga, la finestra proprietà vengono visualizzate le proprietà dell'elemento del modello corrispondente, anziché la riga della griglia di dati.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") Schema dei collegamenti tra origini dati e viste.
+ ![DslWpf4](../modeling/media/dslwpf4.png) Schema dei collegamenti tra origini dati e viste.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Per completare le associazioni del linguaggio DSL
 
@@ -301,7 +302,7 @@ ms.lasthandoff: 04/26/2018
 
      Dovrebbe essere possibile modificare il nome dell'elemento nella visualizzazione griglia dati. È anche possibile eliminare da qui.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informazioni sul codice per aggiungere un elemento
  Per i pulsanti del nuovo elemento, il seguente codice alternativo è leggermente più semplice.

@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 622ac8b6fd9f003c8bfccbd953f4b5f51cd00332
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766285"
 ---
-# <a name="developing-sharepoint-solutions"></a>Sviluppo di soluzioni SharePoint
+# <a name="develop-sharepoint-solutions"></a>Lo sviluppo di soluzioni SharePoint
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco di tipi di progetto disponibili, vedere [progetto SharePoint e i modelli di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.  
   
  Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) e alla [compilazione di componenti aggiuntivi per SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Elementi di un progetto SharePoint  
+## <a name="elements-of-a-sharepoint-project"></a>Elementi di un progetto SharePoint
  I nodi di un progetto SharePoint sono noti come *elementi di SharePoint*. Gli elementi di SharePoint possono anche contenere uno o più file correlati, detti *i file di elemento di SharePoint*, ad esempio [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] i file di configurazione, i form ASPX e altro ancora.  
   
  Anziché creare progetti tramite modelli di progetto che sono già popolati con i file degli elementi del progetto, è possibile usare il modello **Progetto vuoto** per creare un progetto SharePoint vuoto e successivamente aggiungervi manualmente gli elementi. I progetti SharePoint possono inoltre contenere anche uno o più file di funzionalità (per l'attivazione in SharePoint) e un file di pacchetto in cui distribuire il progetto.  
   
-### <a name="special-nodes"></a>Nodi speciali  
+### <a name="special-nodes"></a>Nodi speciali
  Ogni progetto SharePoint contiene due nodi che non possono essere rinominati, eliminati, tagliati, copiati o trascinati dal progetto. Questi nodi sono:  
   
--   Funzionalità  
-  
+-   Funzionalità    
 -   Pacchetto  
   
  Entrambi i nodi vengono sempre visualizzati in tutti i progetti SharePoint anche se non sono stati definiti pacchetti o funzionalità per il progetto.  
   
-#### <a name="features-node"></a>Nodo Funzionalità  
+#### <a name="features-node"></a>Nodo funzionalità
  Il nodo **Funzionalità** contiene una o più funzionalità del progetto SharePoint. Una funzionalità è un contenitore di estensioni per SharePoint. Una volta distribuita nel server SharePoint, una funzionalità può essere inclusa nelle definizioni dei siti o attivata individualmente dagli amministratori di SharePoint nei siti SharePoint. Per altre informazioni, vedere la pagina relativa all' [uso delle caratteristiche](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
  Quando un elemento, ad esempio un tipo di contenuto o un'istanza di elenco, viene aggiunto a un progetto SharePoint, viene anche aggiunto a una funzionalità del nodo **Funzionalità** . L'ambito dell'elemento determina se viene aggiunto a una funzionalità nuova o esistente. Se il nuovo elemento ha lo stesso ambito di una funzionalità esistente, viene aggiunto a tale funzionalità. In caso contrario, l'elemento viene aggiunto a una nuova funzionalità.  
@@ -52,17 +52,17 @@ ms.lasthandoff: 05/17/2018
   
  Quando una funzionalità viene aggiunta a un progetto SharePoint, viene visualizzata in **Esplora soluzioni** come nodo con il nome predefinito Feature*x*.feature, dove *x* è un numero univoco. Dopo che una funzionalità viene distribuita nel server SharePoint, un amministratore di SharePoint può attivarla e renderla disponibile agli utenti del sito SharePoint.  
   
-#### <a name="package-node"></a>Nodo Pacchetto  
+#### <a name="package-node"></a>Nodo pacchetto
  Il nodo **Pacchetto** contiene un singolo file che serve come meccanismo di distribuzione per il progetto SharePoint. Questo file, noto come un *pacchetto della soluzione*, è. Basato su CAB con una. Estensione WSP. Un pacchetto della soluzione è un file distribuibile e riutilizzabile che contiene un set di funzionalità, definizioni dei siti e assembly che è possibile applicare ai siti SharePoint, nonché abilitare o disabilitare individualmente. Il **pacchetto** nodo contiene sempre anche un file denominato package. wspdef, un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file di definizione per il pacchetto. Quando un pacchetto viene distribuito nel server che esegue SharePoint, l'amministratore di SharePoint può installarlo e attivare le relative funzionalità.  
   
  È possibile visualizzare o modificare il contenuto del pacchetto in Progettazione pacchetti facendo doppio clic sul nodo del pacchetto o aprendo il relativo menu di scelta rapida e scegliendo **aprire**. Per ulteriori informazioni, vedere [la creazione di pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
-## <a name="sharepoint-project-and-project-item-properties"></a>Proprietà dei progetti e degli elementi di progetto SharePoint  
+## <a name="sharepoint-project-and-project-item-properties"></a>Progetto SharePoint e le proprietà di elemento di progetto
  Nei progetti SharePoint, come in qualsiasi altro progetto di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le proprietà sono visualizzate nella finestra Proprietà e nella pagina delle proprietà. Le proprietà visualizzate dipendono dal nodo selezionato.  
   
  Quando un progetto, un elemento di progetto o un nodo del file dell'elemento di progetto SharePoint viene selezionato in **Esplora soluzioni**, nella finestra Proprietà o nella pagina delle proprietà vengono visualizzate le proprietà seguenti:  
   
-### <a name="project-properties"></a>Proprietà progetto  
+### <a name="project-properties"></a>Proprietà di progetti
   
 |Nome proprietà|Descrizione|  
 |-------------------|-----------------|  
@@ -82,7 +82,7 @@ ms.lasthandoff: 05/17/2018
   
  Quando si seleziona un file di elemento di SharePoint (ad esempio un flusso di lavoro o una funzionalità nel nodo Funzionalità), nella finestra Proprietà vengono visualizzate le proprietà seguenti:  
   
-### <a name="project-item-properties"></a>Proprietà dell'elemento di progetto  
+### <a name="project-item-properties"></a>Le proprietà dell'elemento di progetto
   
 |Nome proprietà|Descrizione|  
 |-------------------|-----------------|  
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/17/2018
 |Riferimenti all'output del progetto|Specifica una dipendenza, ad esempio un assembly, che l'elemento di progetto deve eseguire. Per ulteriori informazioni, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Voci di controllo sicure|Specifica i controlli che gli utenti non attendibili possono modificare senza problemi per la sicurezza. Per ulteriori informazioni, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
-### <a name="project-item-file-properties"></a>Proprietà del file dell'elemento di progetto  
+### <a name="project-item-file-properties"></a>Proprietà del file dell'elemento di progetto
   
 |Nome proprietà|Descrizione|  
 |-------------------|-----------------|  
@@ -104,11 +104,11 @@ ms.lasthandoff: 05/17/2018
 |Percorso di distribuzione|Percorso completo del file nel server SharePoint. Questo percorso è composto dalle sottoproprietà Radice distribuzione e Percorso distribuzione|  
 |Percorso distribuzione|Il percorso relativo del file nel file del SharePoint Server, ad esempio Workflow1\\. Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Selezionare un valore di *RootFile* per il *tipo di distribuzione* le modifiche alle proprietà di *radice distribuzione* in {SharePointRoot}\\, risultante in un percorso completo {SharePointRoot} \Workflow1\\. Per ulteriori informazioni, vedere [sui pacchetti e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Deployment Root|Stringa. Cartella radice in cui viene distribuito il file nel server SharePoint. Ad esempio, {SharePointRoot} \Template\Features\\{FeatureName}\\.<br /><br /> Il valore della proprietà *Deployment Root* è determinato dall'impostazione di *Deployment Type* .|  
-|Deployment Type|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . Il valore può essere uno dei seguenti:<br /><br /> NoDeployment: \<nessun valore ><br /><br /> Elemento ElementManifest: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> ElementFile: {SharePointRoot} \Template\Features\\{FeatureName}\\<br /><br /> TemplateFile: {SharePointRoot} \Template\\<br /><br /> RootFile: {SharePointRoot}\\<br /><br /> GlobalResource: \Resources {SharePointRoot}\\<br /><br /> ClassResource: {ClassResourcePath}\\<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Deployment Type|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . Il valore può essere uno dei seguenti:<br /><br /> NoDeployment:  *\<nessun valore >*<br /><br /> Elemento ElementManifest: *\Template\Features {SharePointRoot}\\{FeatureName}*\\<br /><br /> ElementFile: *\Template\Features {SharePointRoot}\\{FeatureName}\\*<br /><br /> TemplateFile: *\Template {SharePointRoot}\\*<br /><br /> RootFile: *{SharePointRoot}\\*<br /><br /> GlobalResource: *\Resources {SharePointRoot}\\*<br /><br /> ClassResource: *{ClassResourcePath}\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nome file|Nome del file o della cartella per il file dell'elemento.|  
 |Percorso completo|Percorso del file per l'elemento (sola lettura).|  
   
-## <a name="related-topics"></a>Argomenti correlati  
+## <a name="related-topics"></a>Argomenti correlati
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/17/2018
 |[Sicurezza per le soluzioni SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Descrive le considerazioni sulla sicurezza relative allo sviluppo di soluzioni SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Finestra di dialogo di selezione URL &#40;sviluppo per SharePoint in Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Descrive una finestra di dialogo che è possibile usare per aggiungere riferimenti di percorso alle risorse nel progetto o nel server SharePoint locale.|  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Introduzione al &#40;sviluppo per SharePoint in Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Esplorazione di connessioni di SharePoint tramite Esplora Server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   

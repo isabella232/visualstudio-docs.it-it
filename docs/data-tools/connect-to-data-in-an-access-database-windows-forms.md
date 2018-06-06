@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746816"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
 È possibile connettersi a un database di Access (file con estensione mdf o un file con estensione accdb) tramite Visual Studio. Dopo aver definito la connessione, i dati visualizzati nel **origini dati** finestra. da cui è possibile trascinare tabelle o visualizzazioni nei form.
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  Nel **vista** dal menu **altre finestre** > **origini dati**.
 
-     ![Visualizza, altre origini dati di Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
 3.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
 9. Nel **Aggiungi connessione** nella finestra di dialogo **Microsoft Office 12.0 Access Database Engine OLE DB Provider** dal **Provider OLE DB** elenco a discesa.
 
-     ![OLE DB Provider Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![Provider OLE DB Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Se non viene visualizzato **Microsoft Office 12.0 Access Database Engine OLE DB Provider** nell'elenco a discesa del provider OLE DB, è necessario installare il [2007 Office System Driver: Data Connectivity Components](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/26/2018
 
 2.  Nel **vista** dal menu **altre finestre** > **origini dati**.
 
-     ![Visualizza, altre origini dati di Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
 3.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 04/26/2018
 
 8.  Nel **nome file di Database**, specificare il percorso e nome del file con estensione mdb che si desidera connettersi e quindi selezionare **OK**.
 
-     ![Aggiungere File di Database di Access connessione](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Aggiunta della connessione al file di database di Access](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Selezionare **Avanti** sul **Seleziona connessione dati** pagina.
 

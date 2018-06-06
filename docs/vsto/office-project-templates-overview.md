@@ -37,7 +37,7 @@ ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692613"
 ---
 # <a name="office-project-templates-overview"></a>Cenni preliminari sui modelli di progetto di Office
@@ -127,7 +127,7 @@ ms.locfileid: "34692613"
   
  Quando si crea un progetto basato su uno di questi modelli di progetto, il codice nella soluzione viene eseguito all'avvio dell'applicazione associata. A differenza dei progetti a livello di documento, il codice non è associato a un singolo documento.  
   
- Per ulteriori informazioni sulle attività iniziali relative a questi tipi di progetti, vedere gli argomenti seguenti:  
+ Per altre informazioni sulle attività iniziali relative a questi tipi di progetti, vedere gli argomenti seguenti:  
   
 -   [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
@@ -158,13 +158,13 @@ ms.locfileid: "34692613"
 |Documenti|Modelli|  
 |---------------|---------------|  
 |I documenti possono essere aperti e modificati dagli utenti, a meno che non siano in sola lettura. Tutte le modifiche salvate vengono mantenute nell'originale.|Gli utenti possono aprire un modello e salvarne una copia locale per creare un nuovo documento. L'originale può essere modificato solo da utenti che dispongono di speciali autorizzazioni.|  
-|All'apertura del documento viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.Open> .|All'apertura del modello viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.New>.|  
+|All'apertura del documento viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.Open> .|All'apertura del modello viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.New> .|  
   
 ##  <a name="Limitations"></a> Limitazioni dei modelli globali e componenti aggiuntivi di Excel (file xla)  
  I documenti, le cartelle di lavoro e i modelli potrebbero non funzionare correttamente come modelli globali o come componenti aggiuntivi VSTO di Excel (file xla).  
   
 ## <a name="word-templates"></a>Modelli di Word  
- Se un modello di Microsoft Office Word utilizza estensioni di codice gestito, l'assembly del progetto non viene chiamato se il modello è associato come modello globale o se viene caricato dalla directory di avvio di Word. Inoltre il documento non riconosce il formato di un modello che fa parte di una soluzione Office.  
+ Se un modello di Microsoft Office Word usa estensioni di codice gestito, l'assembly del progetto non viene chiamato se il modello è associato come modello globale o se viene caricato dalla directory di avvio di Word. Inoltre il documento non riconosce il formato di un modello che fa parte di una soluzione Office.  
   
 ## <a name="excel-add-ins-xla-files"></a>Componenti aggiuntivi di Excel (file xla)  
  Non è disponibile alcun progetto di Office per la creazione di un componente aggiuntivo VSTO di Excel (file xla). È possibile salvare una cartella di lavoro come file xla, anche se questa operazione non è supportata né consigliata. Se si salva una cartella di lavoro estensioni di codice gestito come un **il componente aggiuntivo di Microsoft Office Excel (\*xla)** file, è possibile selezionarla nella **Add-Ins** la finestra di dialogo da applicare a un'altra cartella di lavoro. In alcuni casi il codice verrà eseguito nella cartella di lavoro di destinazione dopo l'applicazione del componente aggiuntivo VSTO, ma tale uso della soluzione Office non è supportato.  

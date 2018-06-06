@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751702"
 ---
 # <a name="graph-view"></a>Visualizzazione Grafico
 
@@ -22,7 +23,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  Nell'immagine seguente viene illustrata la visualizzazione grafico con sei nodi globali sulla relativa area di progettazione.
 
- ![Visualizzazione del grafico di progettazione XML Schema](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Visualizzazione del grafico di Progettazione XML Schema](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Area di progettazione
 
@@ -34,7 +35,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  Se l'area di progettazione è vuota, l'Editor XML, il **XML Schema Explorer**, e vengono visualizzate la filigrana. Il *filigrana* è un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.
 
- ![Progettazione XSD; Visualizzazione grafica](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Progettazione XSD; Visualizzazione del grafico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo: "Usare l'elenco degli errori per visualizzare e correggere gli errori nel set di schemi".
 
@@ -98,7 +99,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 
  I seguenti pulsanti della barra degli strumenti XSD sono abilitati quando la visualizzazione grafico è attiva.
 
- ![Barra degli strumenti della finestra di progettazione di XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Barra degli strumenti di Progettazione XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opzione|Descrizione|
 |------------|-----------------|

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766259"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>: Esercitazione eseguire il debug con Visual Studio
 
@@ -39,6 +40,14 @@ In questa esercitazione si eseguono le attività seguenti:
 > * Controllare le variabili nelle finestre del debugger e i suggerimenti dati
 > * Esaminare lo stack di chiamate
 > * Utilizzare l'Helper eccezioni
+
+## <a name="prerequisites"></a>Prerequisiti
+
+* È necessario disporre di Visual Studio 2017 installato e il. **Lo sviluppo desktop NET** carico di lavoro.
+
+    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+
+    Se è necessario installare il carico di lavoro, ma dispone già di Visual Studio, fare clic sul **aperto Visual Studio Installer** collegamento nel riquadro sinistro della finestra di **nuovo progetto** finestra di dialogo (selezionare **File**  >  **Nuova** > **progetto**). Verrà avviato il Programma di installazione di Visual Studio. Scegliere il. **Lo sviluppo desktop NET** carico di lavoro, quindi scegliere **modifica**.
 
 ## <a name="start-the-debugger"></a>Avviare il debugger.
 

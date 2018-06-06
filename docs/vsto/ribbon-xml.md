@@ -30,7 +30,7 @@ ms.openlocfilehash: c93553535ca85f63db64be773afa76711a38359b
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693130"
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
@@ -136,7 +136,7 @@ ms.locfileid: "34693130"
  Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli elementi disponibili e gli attributi, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 2 di 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
 ##  <a name="RibbonExtensionClass"></a> Riferimento alla classe Ribbon  
- Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli della barra multifunzione per questa classe. Questa classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility>.  
+ Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli della barra multifunzione per questa classe. Questa classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility> .  
   
  La tabella seguente descrive i metodi predefiniti della classe.  
   

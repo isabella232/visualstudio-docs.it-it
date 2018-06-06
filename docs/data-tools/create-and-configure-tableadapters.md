@@ -1,5 +1,5 @@
 ---
-title: Creare e configurare gli oggetti TableAdapter
+title: Creare e configurare oggetti TableAdapter
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748957"
 ---
-# <a name="create-and-configure-tableadapters"></a>Creare e configurare gli oggetti TableAdapter
+# <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 Gli oggetti TableAdapter forniscono la comunicazione tra l'applicazione e un database. Connessione al database, eseguire query o stored procedure e restituiscono i dati di tabella o di riempimento esistente <xref:System.Data.DataTable> con i dati restituiti. Gli oggetti TableAdapter anche inviare i dati aggiornati dall'applicazione al database.
 
 Gli oggetti TableAdapter vengono creati automaticamente quando si esegue una delle azioni seguenti:
@@ -40,7 +41,7 @@ Per un'introduzione agli oggetti TableAdapter, vedere [riempire i set di dati ut
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Utilizzare la configurazione guidata TableAdapter
 Eseguire il **configurazione guidata TableAdapter** per creare o modificare oggetti TableAdapter e le tabelle dati associate. È possibile configurare un oggetto TableAdapter esistente facendo clic su di esso nel **Progettazione Dataset**.
 
-![Configurazione guidata adattatore tabella raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata configurazione guidata adattatore di tabella")
+![raddata configurazione guidata adattatore di tabella](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 Se si trascina un nuovo TableAdapter dalla casella degli strumenti quando la **Progettazione Dataset** sia nello stato attivo, l'avvio della procedura guidata devono connettersi richiede di specificare quali dati di origine dell'oggetto TableAdapter. Nella pagina successiva, viene richiesto il tipo di comandi da usare per comunicare con il database, le istruzioni SQL o stored procedure. (Non non visibile se si sta configurando un TableAdapter che è già associato a un'origine dati.)
 
@@ -63,7 +64,7 @@ Il **opzioni avanzate** nella procedura guidata consentono di:
 ## <a name="configure-a-tableadapters-fill-method"></a>Configurare il metodo di riempimento di un oggetto TableAdapter
 In alcuni casi è consigliabile modificare lo schema della tabella dell'oggetto TableAdapter. A tale scopo, si modifica primaria dell'oggetto TableAdapter `Fill` metodo. TableAdapter vengono creati con un database primario `Fill` metodo che definisce lo schema della tabella di dati associato. Il database primario `Fill` metodo si basa sulla query o stored procedure immessa durante la configurazione iniziale dell'oggetto TableAdapter. È il primo metodo (in primo piano) sotto la tabella di dati in Progettazione DataSet.
 
-![TableAdapter con più query](../data-tools/media/tableadapter.gif "TableAdapter")
+![TableAdapter con più query](../data-tools/media/tableadapter.gif)
 
 Tutte le modifiche apportate all'oggetto TableAdapter principale del `Fill` metodo vengono riflesse nello schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query principale `Fill` metodo rimuove anche la colonna dalla tabella dati associata. Inoltre, rimuovere la colonna dalla principale `Fill` metodo rimuove la colonna da qualsiasi altra query per tale oggetto TableAdapter.
 

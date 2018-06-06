@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690926"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747040"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 È possibile utilizzare Visual Studio per creare e aggiornare i file di database locale di SQL Server Express LocalDB. È anche possibile creare un database tramite l'esecuzione di istruzioni Transact-SQL nel **Esplora oggetti di SQL Server** finestra degli strumenti in Visual Studio. In questo argomento, si sarà creare un file con estensione mdf e aggiungere tabelle e le chiavi utilizzando Progettazione tabelle.
@@ -36,7 +36,7 @@ Per completare questa procedura dettagliata, è necessario disporre facoltativo 
 
 3.  Nell'elenco dei modelli di elemento, scorrere verso il basso e selezionare **Database basato sul servizio**.
 
-     ![Finestra di dialogo modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Finestra di dialogo Modelli di elemento](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Nome del database **SampleDatabase**, quindi selezionare il **Aggiungi** pulsante.
 
@@ -95,7 +95,7 @@ In questa sezione, si creeranno due tabelle, una chiave primaria in ogni tabella
 
     Viene visualizzato un output simile al seguente:
 
-    ![Progettazione tabelle](../data-tools/media/raddata-table-designer.png "raddata Progettazione tabelle")
+    ![Progettazione tabelle](../data-tools/media/raddata-table-designer.png)
 
 7.  Nell'angolo superiore sinistro del **Progettazione tabelle**, selezionare il **aggiornamento** pulsante.
 
@@ -130,7 +130,7 @@ In questa sezione, si creeranno due tabelle, una chiave primaria in ogni tabella
 ### <a name="to-create-a-foreign-key"></a>Per creare una chiave esterna
 1.  Nel riquadro contesto sul lato destro della griglia, aprire il menu di scelta rapida per **chiavi esterne**, quindi selezionare **Aggiungi nuova chiave esterna**, come mostrato nella figura seguente.
 
-     ![Aggiunta di una chiave esterna in Progettazione tabelle](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Aggiunta di una chiave esterna in Progettazione tabelle](../data-tools/media/foreignkey.png)
 
 2.  Nella casella di testo che viene visualizzata, sostituire **ToTable** con `Customers`.
 

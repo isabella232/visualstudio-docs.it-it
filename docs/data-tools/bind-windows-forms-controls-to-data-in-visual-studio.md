@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89a919f6f93dc70f9417a23430c960f03cf92bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d3226785724f6627a962c532cea29393eb5e46e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747590"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dati a un Windows Form. Per creare questi controlli con associazione a dati, è possibile trascinare elementi dal **origini dati** finestra in Progettazione Windows Form in Visual Studio.
 
-![Operazione di trascinamento di origine dati](../data-tools/media/raddata-data-source-drag-operation.png "operazione di trascinamento raddata origine dati")
+![Operazione di trascinamento di origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
 Prima di trascinare elementi, è possibile impostare il tipo di controllo che si desidera associare. Valori diversi visualizzati a seconda se si scelga la tabella stessa, o una singola colonna.  È inoltre possibile impostare valori personalizzati. Per una tabella, "Dettagli" significa che ogni colonna è associato a un controllo separato.
 
-![Associare l'origine dati a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata origine dati di associazione di DataGridView")
+![Associare l'origine dati a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png)
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource e controlli di BindingNavigator
 Il componente <xref:System.Windows.Forms.BindingSource> ha due scopi. Fornisce un livello di astrazione quando i controlli di associazione ai dati. I controlli nel form vengono associati per il <xref:System.Windows.Forms.BindingSource> componente anziché direttamente a un'origine dati. In secondo luogo, è possibile gestire una raccolta di oggetti. Aggiunta di un tipo per il <xref:System.Windows.Forms.BindingSource> crea un elenco di quel tipo.
@@ -50,11 +51,11 @@ Il [controllo BindingNavigator](/dotnet/framework/winforms/controls/bindingnavig
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Associazione a dati in un controllo DataGridView
 Per un [controllo DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), l'intera tabella è associato a tale controllo singolo. Quando si trascina un controllo DataGridView al form, uno strumento striscia per l'esplorazione dei record (<xref:System.Windows.Forms.BindingNavigator>) viene inoltre visualizzato. Oggetto [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti. Nella figura seguente, viene inoltre aggiunto un TableAdapterManager perché la tabella Customers è una relazione con la tabella Orders. Queste variabili sono tutti dichiarate nel codice generato automaticamente come membri privati nella classe del modulo. Il codice generato automaticamente per la compilazione di DataGridView si trova nel gestore eventi form_load. Il codice per il salvataggio dei dati per aggiornare il database si trova nel gestore dell'evento Save di BindingNavigator. È possibile spostare o modificare il codice in base alle esigenze.
 
-![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView con BindingNavigator")
+![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 
 È possibile personalizzare il comportamento di DataGridView e BindingNavigator facendo clic sullo smart tag nell'angolo superiore destro di ogni:
 
-![DataGridView e associazione Navigator smart tag](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView e associazione Navigator smart tag")
+![DataGridView e associazione Navigator smart tag](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png)
 
 Se i controlli dell'applicazione è necessario non è disponibile dall'interno di **origini dati** finestra, è possibile aggiungere controlli. Per ulteriori informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
@@ -63,14 +64,14 @@ Se i controlli dell'applicazione è necessario non è disponibile dall'interno d
 ## <a name="bind-to-data-in-individual-controls"></a>Associazione a dati in singoli controlli
 Quando si associa un'origine dati per "Dettagli", ogni colonna nel set di dati è associato a un controllo separato.
 
-![Associare l'origine dati per informazioni dettagliate](../data-tools/media/raddata-bind-data-source-to-details.png "raddata origine dati di associazione per i dettagli")
+![Associare l'origine dati per i dettagli](../data-tools/media/raddata-bind-data-source-to-details.png)
 
 > [!IMPORTANT]
 > Si noti che nella figura precedente, si trascina dalla proprietà ordini della tabella Customers, non dalla tabella Orders. Tramite l'associazione alla proprietà Orders, i comandi di spostamento apportati in DataGridView vengono riflesse immediatamente nei controlli di dettagli. Se è stata trascinata dalla tabella Orders, i controlli sarebbero comunque essere associati al set di dati, ma non potrebbe non essere sincronizzati con il controllo DataGridView.
 
 La figura seguente mostra l'impostazione predefinita i controlli con associazione a dati che vengono aggiunti al modulo dopo che la proprietà di ordini nella tabella Customers è associata a "Dettagli" nel **origini dati** finestra.
 
-![Tabella Ordini associata a informazioni dettagliate](../data-tools/media/raddata-orders-table-bound-to-details.png "tabella Orders raddata associata ai dettagli")
+![Tabella Orders associata ai dettagli](../data-tools/media/raddata-orders-table-bound-to-details.png)
 
 Si noti inoltre che ogni controllo dispone di uno smart tag. Questo tag consente personalizzazioni che si applicano a solo a tale controllo.
 

@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8a6b42a9cff28cc57365081bc4a041524ece7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ca7f4befcb75a48e5b03637c143edfdd81b428a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767741"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procedura: aggiungere un file modello di integrazione applicativa dei dati esistente a un progetto SharePoint
-  È possibile personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati tramite Visual Studio per aggiungere il file del modello (con estensione bdcm) a qualsiasi progetto farm di SharePoint. Per ulteriori informazioni, vedere [creazione di un modello di connettività dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint
+  È possibile personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati (BDC) usando Visual Studio per aggiungere il file del modello (*bdcm*) a qualsiasi progetto farm di SharePoint. Per ulteriori informazioni, vedere [creazione di un modello di connettività dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Per aggiungere un file del modello di integrazione applicativa dei dati a un progetto SharePoint  
   
 1.  In **Esplora**, scegliere la cartella di un progetto SharePoint.  
   
-2.  Nella barra dei menu, scegliere **progetto**, **Aggiungi elemento esistente**.  
+2.  Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**.  
   
 3.  Nel **Aggiungi elemento esistente** la finestra di dialogo, selezionare il percorso del file di definizione del modello che si desidera aggiungere al progetto, scegliere il file e quindi scegliere il **Aggiungi** pulsante.  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/16/2018
   
      Il **modello di integrazione applicativa dei dati di Business** elemento viene aggiunto al progetto.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Creazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)   
  [Procedura: utilizzare un File di risorse per specificare nomi localizzati, proprietà e autorizzazioni](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Procedura: includere un Assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrazione di dati business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
-  
+ 

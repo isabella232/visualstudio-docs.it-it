@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691370"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764875"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associazione di dati personalizzati con le estensioni degli strumenti di SharePoint
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associare dati personalizzati con le estensioni degli strumenti di SharePoint
   È possibile aggiungere dati personalizzati a determinati oggetti nelle estensioni degli strumenti di SharePoint. Ciò è utile quando si dispone di dati in una parte dell'estensione che si desidera accedere in un secondo momento da altro codice nell'estensione. Anziché implementare un modo personalizzato per archiviare e accedere ai dati, è possibile associare i dati a un oggetto nell'estensione e quindi recuperare i dati dallo stesso oggetto in un secondo momento.  
   
  Aggiunta di dati personalizzati agli oggetti è utile anche quando si desidera conservare i dati rilevanti per un elemento specifico in Visual Studio. Estensioni degli strumenti di SharePoint vengono caricate solo una volta in Visual Studio, pertanto l'estensione potrebbe funzionare con diverse voci (ad esempio progetti, gli elementi, del progetto o **Esplora Server** nodi) in qualsiasi momento. Se si dispone di dati personalizzati a cui sono rilevanti solo per un elemento specifico, è possibile aggiungere i dati per l'oggetto che rappresenta l'elemento.  
@@ -87,5 +87,6 @@ ms.locfileid: "34691370"
  [Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Procedura dettagliata: Estensione di Esplora Server per visualizzare le Web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Procedura: aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato] (.. /SharePoint/How-to-Add-a-Property-to-a-Custom-SharePoint-Project-Item-Type.MD   
+ [Procedura: Aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

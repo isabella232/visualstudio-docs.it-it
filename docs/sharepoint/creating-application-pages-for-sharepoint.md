@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691979"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765005"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Creazione di pagine dell'applicazione per SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Creare le pagine dell'applicazione per SharePoint
   Un *pagina applicazione* è una pagina Web ASP.NET che è progettata per l'uso in un sito Web di SharePoint. Pagine dell'applicazione sono un tipo specializzato di pagina ASP.NET. La differenza principale tra una pagina dell'applicazione e una pagina ASP.NET standard è che una pagina dell'applicazione include contenuto che viene unito con una pagina master di SharePoint. Una pagina master consente di condividere lo stesso aspetto e comportamento delle altre pagine in un sito di pagine dell'applicazione.  
   
  Visual Studio consente di progettare pagine applicazione usando una finestra di progettazione. La finestra di progettazione consente di visualizzare un'area di contenuto per ogni segnaposto di contenuto che è definito in una pagina master. È possibile progettare la pagina dell'applicazione trascinando i controlli a queste aree di contenuto.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691979"
   
 |File|Descrizione|  
 |----------|-----------------|  
-|File della pagina ASP.NET (aspx)|Contiene il markup XML che definisce la pagina.|  
+|File della pagina ASP.NET (*aspx*)|Contiene il markup XML che definisce la pagina.|  
 |File di codice pagina applicazione|Contiene il codice dietro la pagina dell'applicazione. Aggiungere il codice che gestisce gli eventi per questo file.|  
 |File di codice della finestra di progettazione di pagina di applicazione|Contiene il codice generato dalla finestra di progettazione. Non modificare direttamente il file.|  
   

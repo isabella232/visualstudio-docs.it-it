@@ -1,5 +1,5 @@
 ---
-title: Leggere i dati XML in un set di dati
+title: Leggere dati XML in un set di dati
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d54811f2fe46733d256a473c5fcb1c523a15a71e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bda3c6914259232eb3b579caaf2eb0a4f0d2e16e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745936"
 ---
-# <a name="read-xml-data-into-a-dataset"></a>Leggere i dati XML in un set di dati
+# <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 ADO.NET fornisce semplici metodi per lavorare con i dati XML. In questa procedura dettagliata, si crea un'applicazione Windows che carica i dati XML in un set di dati. Il set di dati viene visualizzato in un <xref:System.Windows.Forms.DataGridView> controllo. Infine, uno schema XML in base al contenuto del file XML viene visualizzato in una casella di testo.
 
  Questa procedura dettagliata è costituita da cinque passaggi principali:
@@ -53,7 +54,7 @@ ADO.NET fornisce semplici metodi per lavorare con i dati XML. In questa procedur
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **App di Windows Form** tipo di progetto.
 

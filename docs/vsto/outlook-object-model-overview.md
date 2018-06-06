@@ -25,7 +25,7 @@ ms.openlocfilehash: 7e2d0141611a13e7b1ee9b20b8988466c92f3ce2
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693046"
 ---
 # <a name="outlook-object-model-overview"></a>Cenni preliminari sul modello a oggetti di Outlook
@@ -95,7 +95,7 @@ ms.locfileid: "34693046"
 ### <a name="mapifolder-object"></a>Oggetto MAPIFolder  
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> rappresenta una cartella che contiene messaggi di posta elettronica, contatti, attività e altri elementi. Outlook offre 16 oggetti <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> predefiniti.  
   
- Gli oggetti <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> predefiniti vengono definiti dai valori di enumerazione <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Di seguito è riportato un esempio:  
+ Gli oggetti <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> predefiniti vengono definiti dai valori di enumerazione <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Ad esempio,  
   
  OlDefaultFolders. olFolderInbox corrisponde alla **posta in arrivo** cartelle in Outlook.  
   

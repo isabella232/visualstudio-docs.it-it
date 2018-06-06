@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Automazione di un'applicazione da un riquadro attività personalizzato | Documenti Microsoft"
+title: "Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7269690e9ab7835f355939340d6c91dc56dd008
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7af399ca55c1fc2355da508662fe67314a519070
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768079"
 ---
-# <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>Procedura dettagliata: automazione di un'applicazione da un riquadro attività personalizzato
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato
   Questa procedura dettagliata mostra come creare un riquadro attività personalizzato che consente di automatizzare PowerPoint. Il riquadro attività personalizzato inserisce le date in una diapositiva quando l'utente fa clic su un controllo <xref:System.Windows.Forms.MonthCalendar> che si trova nel riquadro attività personalizzato.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -51,16 +52,16 @@ ms.lasthandoff: 04/16/2018
   
 -   Microsoft PowerPoint 2010 o [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].  
   
-## <a name="creating-the-add-in-project"></a>Creazione del progetto di componente aggiuntivo  
+## <a name="create-the-add-in-project"></a>Creare il progetto di componente aggiuntivo  
  Il primo passaggio consiste nel creare un progetto di componente aggiuntivo VSTO per PowerPoint.  
   
-#### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
+### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto  
   
-1.  Creare un progetto di componente aggiuntivo VSTO per PowerPoint denominato **MyAddIn**, usando il modello per il progetto di componente aggiuntivo di PowerPoint. Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Creare un progetto di componente aggiuntivo VSTO per PowerPoint denominato **MyAddIn**, usando il modello per il progetto di componente aggiuntivo di PowerPoint. Per altre informazioni, vedere [procedura: progetti di Office Create in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice **ThisAddIn.cs** o **ThisAddIn.vb** e aggiunge il progetto **MyAddIn** a **Esplora soluzioni**.  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Progettazione dell'interfaccia utente del riquadro attività personalizzato  
+## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Progettare l'interfaccia utente del riquadro attività personalizzato  
  Non sono presenti finestre di visualizzazione visiva per i riquadri attività personalizzati, ma è possibile progettare un controllo utente con il layout desiderato. Più avanti in questa procedura dettagliata il controllo utente verrà aggiunto al riquadro attività personalizzato.  
   
 #### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Per progettare l'interfaccia utente del riquadro attività personalizzato  
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
   
      Se il controllo **MonthCalendar** è più ampio dell'area di progettazione del controllo utente, ridimensionare il controllo utente per adattare il controllo **MonthCalendar** .  
   
-## <a name="automating-powerpoint-from-the-custom-task-pane"></a>Automazione di PowerPoint dal riquadro attività personalizzato  
+## <a name="automate-powerpoint-from-the-custom-task-pane"></a>Automatizzare PowerPoint dal riquadro attività personalizzato  
  Lo scopo del componente aggiuntivo VSTO è inserire una data selezionata nella prima diapositiva della presentazione attiva. Usare l'evento <xref:System.Windows.Forms.MonthCalendar.DateChanged> del controllo per aggiungere la data selezionata ogni volta che viene modificata.  
   
-#### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>Per automatizzare PowerPoint dal riquadro attività personalizzato  
+### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>Per automatizzare PowerPoint dal riquadro attività personalizzato  
   
 1.  Nella finestra di progettazione fare doppio clic sul controllo <xref:System.Windows.Forms.MonthCalendar> .  
   
@@ -101,10 +102,10 @@ ms.lasthandoff: 04/16/2018
   
 5.  In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **MyAddIn** , quindi scegliere **Compila**. Verificare che il progetto venga compilato senza errori.  
   
-## <a name="displaying-the-custom-task-pane"></a>Visualizzazione del riquadro attività personalizzato  
+## <a name="display-the-custom-task-pane"></a>Visualizzare il riquadro attività personalizzato  
  Per visualizzare il riquadro attività personalizzato quando viene avviato il componente aggiuntivo VSTO, aggiungere il controllo utente al riquadro attività nel gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> del componente aggiuntivo VSTO.  
   
-#### <a name="to-display-the-custom-task-pane"></a>Per visualizzare il riquadro attività personalizzato  
+### <a name="to-display-the-custom-task-pane"></a>Per visualizzare il riquadro attività personalizzato  
   
 1.  In **Esplora soluzioni**espandere **PowerPoint**.  
   
@@ -120,12 +121,12 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
   
-## <a name="testing-the-add-in"></a>Test del componente aggiuntivo  
+## <a name="test-the-add-in"></a>Testare il componente aggiuntivo  
  Quando si esegue il progetto, PowerPoint si apre e il componente aggiuntivo VSTO visualizza il riquadro attività personalizzato. Fare clic sul controllo <xref:System.Windows.Forms.MonthCalendar> per testare il codice.  
   
-#### <a name="to-test-your-vsto-add-in"></a>Per testare il componente aggiuntivo VSTO  
+### <a name="to-test-your-vsto-add-in"></a>Per testare il componente aggiuntivo VSTO  
   
-1.  Premere F5 per eseguire il progetto.  
+1.  Premere **F5** per eseguire il progetto.  
   
 2.  Verificare che il riquadro attività personalizzato sia visibile.  
   
@@ -138,14 +139,14 @@ ms.lasthandoff: 04/16/2018
   
 -   Creare un riquadro attività personalizzato in un componente aggiuntivo VSTO per un'applicazione diversa. Per ulteriori informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  
   
--   Creare un pulsante della barra multifunzione da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: sincronizzazione di un riquadro attività personalizzato con una barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Creare un pulsante della barra multifunzione da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [procedura dettagliata: sincronizzazione di un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
--   Creare un riquadro attività personalizzato per ogni messaggio di posta elettronica aperto in Outlook. Per altre informazioni, vedere [Procedura dettagliata: visualizzazione dei riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Creare un riquadro attività personalizzato per ogni messaggio di posta elettronica aperto in Outlook. Per altre informazioni, vedere [procedura dettagliata: visualizzazione di riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riquadri attività personalizzati](../vsto/custom-task-panes.md)   
  [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Procedura dettagliata: Sincronizzazione di un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Procedura dettagliata: visualizzazione dei riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [Procedura dettagliata: Visualizzazione di riquadri attività personalizzati con messaggi di posta elettronica in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

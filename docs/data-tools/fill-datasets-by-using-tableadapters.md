@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745698"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati utilizzando gli oggetti TableAdapter
 Un componente TableAdapter viene compilato un set di dati con i dati dal database, in base a uno o più query o stored procedure specificate. Inoltre è possibile eseguire gli oggetti TableAdapter aggiunge, aggiornamenti ed eliminazioni per rendere permanenti le modifiche apportate al set di dati nel database. È inoltre possibile emettere comandi globali che sono correlati a qualsiasi tabella specifica.
@@ -49,7 +50,7 @@ Un componente TableAdapter viene compilato un set di dati con i dati dal databas
 ## <a name="tableadapter-overview"></a>Panoramica degli oggetti TableAdapter
  Gli oggetti TableAdapter sono componenti generato da progettazione che si connettono a un database, eseguire query o stored procedure e compilare il DataTable con i dati restituiti. Gli oggetti TableAdapter anche inviare dati aggiornati dall'applicazione al database. È possibile eseguire il numero di query su un oggetto TableAdapter a condizione che restituiscono dati conformi allo schema della tabella a cui è associato l'oggetto TableAdapter. Il diagramma seguente illustra come gli oggetti TableAdapter interagire con i database e altri oggetti in memoria:
 
- ![Flusso di dati in un'applicazione client](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![Flusso dei dati in un'applicazione client](../data-tools/media/clientdatadiagram.gif)
 
  Mentre gli oggetti TableAdapter sono progettate con la **Progettazione Dataset**, le classi TableAdapter non vengono generate come classi annidate di <xref:System.Data.DataSet>. Si trovano in spazi dei nomi distinti che sono specifiche per ogni set di dati. Ad esempio, se si dispone di un set di dati denominato `NorthwindDataSet`, gli oggetti TableAdapter associati <xref:System.Data.DataTable>s nel `NorthwindDataSet` verrebbero il `NorthwindDataSetTableAdapters` dello spazio dei nomi. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza dell'oggetto TableAdapter. Ad esempio:
 
@@ -63,7 +64,7 @@ Un componente TableAdapter viene compilato un set di dati con i dati dal databas
  La funzionalità di aggiornamento di un oggetto TableAdapter è dipendente dalla quantità di informazioni è disponibile la query principale della procedura guidata TableAdapter. Ad esempio, gli oggetti TableAdapter che sono configurati per recuperare valori da più tabelle (join), valori scalari, viste o i risultati delle funzioni di aggregazione non vengono creati inizialmente con la possibilità di inviare aggiornamenti al database sottostante. Tuttavia, è possibile configurare manualmente i comandi INSERT, UPDATE e DELETE di **proprietà** finestra.
 
 ## <a name="tableadapter-queries"></a>TableAdapter (query)
- ![TableAdapter con più query](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![TableAdapter con più query](../data-tools/media/tableadapter.gif)
 
  Gli oggetti TableAdapter può contenere più query per compilare le tabelle dati associate. È possibile definire tutte le query per un oggetto TableAdapter richieste dall'applicazione, purché ogni query restituisce dati conformi allo stesso schema della tabella dati associata. Questa funzionalità consente a un oggetto TableAdapter caricare i risultati diversi in base a diversi criteri.
 

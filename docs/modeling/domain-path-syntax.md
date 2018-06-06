@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de364760b5d7446b050cd8931ea2e95867b88e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749544"
 ---
 # <a name="domain-path-syntax"></a>Sintassi del percorso di dominio
 Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi specifici in un modello.
@@ -26,7 +27,7 @@ Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi spe
 
  *RelationshipName.PropertyName/! Ruolo*
 
- ![Relazione di riferimento CommentReferencesSubjects](../modeling/media/dsl_reference.png "dsl_reference")
+ ![Relazione di riferimento CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
  La sintassi attraversa l'albero del modello. Ad esempio, la relazione di dominio **CommentReferencesSubjects** nella figura precedente include un **soggetti** ruolo. Il segmento di percorso **/! Subjectt** specifica che il percorso sia completata per gli elementi tramiti il **soggetti** ruolo.
 

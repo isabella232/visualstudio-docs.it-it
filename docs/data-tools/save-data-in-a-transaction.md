@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Salvataggio di dati in una transazione'
+title: 'Procedura dettagliata: Salvare dati in una transazione'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745529"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvataggio di dati in una transazione
+# <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
 Questa procedura dettagliata viene illustrato come salvare dati in una transazione utilizzando il <xref:System.Transactions> dello spazio dei nomi. In questa procedura dettagliata si creerà un'applicazione Windows Form. Utilizzare la configurazione guidata origine dati per creare un set di dati per le due tabelle nel database di esempio Northwind. Viene aggiunta a controlli con associazione dati a un Windows form, e che si desidera modificare il codice di BindingNavigator pulsante Salva aggiornare il database all'interno di un TransactionScope.
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -52,7 +53,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e database di esempi
 
 1. In Visual Studio, sul **File** dal menu **New**, **progetto...** .
 
-2. Espandere **Visual c#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **Windows Desktop classico**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro sinistro, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale, selezionare il **App di Windows Form** tipo di progetto.
 

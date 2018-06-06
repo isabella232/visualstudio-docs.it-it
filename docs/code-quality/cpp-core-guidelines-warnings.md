@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a56c8bd9ac0c3745e8096dc12fbfee730ba9558a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746066"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilizzando i controlli della linee guida di base di C++
 Le linee guida componenti di base di C++ sono un set portabile di linee guida, regole e procedure consigliate sulla codifica in C++ creati dai progettisti e gli esperti di C++. Visual Studio supporta attualmente un sottoinsieme di queste regole come parte dei relativi strumenti di analisi codice per C++. Correttori ortografici delle linee guida per i componenti di base vengono installati per impostazione predefinita in Visual Studio 2017 e sono [disponibile come pacchetto NuGet per Visual Studio 2015](#vs2015_corecheck).
@@ -25,11 +26,11 @@ Le linee guida componenti di base di C++ sono un set portabile di linee guida, r
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Abilitare le linee guida C++ Core controllare nell'analisi del codice
  È possibile abilitare l'analisi del codice del progetto selezionando il **Attiva analisi codice in fase di compilazione** nella casella di controllo di **analisi del codice** sezione del **pagine delle proprietà** finestra di dialogo per il progetto.
 
- ![Pagina delle proprietà per le impostazioni generali di analisi codice](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Pagina delle proprietà per le impostazioni generali di analisi codice](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Le regole di controllo di base C++ sono estensioni per il set di regole predefinite che eseguono quando è abilitata l'analisi del codice. Poiché le regole di controllo di base C++ sono in fase di sviluppo, alcune regole sono ben definite e alcuni, ma potrebbe non essere pronto per l'uso in tutto il codice, potrebbe essere informativi. Le regole sono suddivise in due gruppi: è stato rilasciato e sperimentale. È possibile scegliere se eseguire le regole rilasciate o sperimentale nelle proprietà del progetto.
 
- ![Pagina delle proprietà per le impostazioni di estensioni di analisi codice](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Pagina delle proprietà per le impostazioni di estensioni di analisi codice](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Per abilitare o disabilitare i set di regole C++ Core verificare, aprire il **pagine delle proprietà** finestra di dialogo per il progetto. In **le proprietà di configurazione**, espandere **analisi del codice**, **estensioni**. Nell'elenco a discesa accanto al controllo **abilitare C++ Core controllare (rilasciato)** o **abilitare C++ Core controllare (sperimentale)**, scegliere **Sì** o **n**. Scegliere **OK** o **applica** per salvare le modifiche.
 
@@ -228,7 +229,7 @@ Se si utilizza un sistema di compilazione che non si basa su MSBuild è comunque
 
 2.  Nel **Gestione pacchetti NuGet** finestra, cercare Microsoft.CppCoreCheck.
 
-     ![Finestra di gestione pacchetti NuGet Visualizza pacchetto CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Finestra di gestione pacchetti NuGet Mostra CppCoreCheck pacchetto](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Selezionare il pacchetto Microsoft.CppCoreCheck e quindi scegliere il **installare** pulsante per aggiungere le regole per il progetto.
 

@@ -48,7 +48,7 @@ ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693286"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Progetti di Office in ambiente di Visual Studio
@@ -74,7 +74,7 @@ ms.locfileid: "34693286"
 -   I file di progetto nascosti per i quali non è prevista la modifica diretta. Per altre informazioni, vedere [file di progetto nascosti](#hiddenfiles).  
   
 ### <a name="temporary-certificates"></a>Certificati temporanei  
- I progetti di Office includono anche un certificato temporaneo denominato *Nome progetto_TemporaryKey.pfx*. Questo certificato viene utilizzato per firmare i manifesti dell'applicazione e della distribuzione per il progetto durante lo sviluppo. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md) e [soluzioni Office Secure](../vsto/securing-office-solutions.md).  
+ I progetti di Office includono anche un certificato temporaneo denominato *Nome progetto_TemporaryKey.pfx*. Questo certificato viene usato per firmare i manifesti dell'applicazione e della distribuzione per il progetto durante lo sviluppo. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md) e [soluzioni Office Secure](../vsto/securing-office-solutions.md).  
   
 ###  <a name="hiddenfiles"></a> File di progetto nascosti  
  Alcuni file di progetto sono nascosti per impostazione predefinita. Questi file vengono generati da Visual Studio e si differenziano in base al tipo di progetto. Per visualizzare i file nascosti, fare clic su **Mostra tutti i file** in **Esplora soluzioni**.  

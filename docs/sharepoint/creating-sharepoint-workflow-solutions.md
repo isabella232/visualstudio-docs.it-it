@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc78726146b67a39f8e8988dda6c7d2baf5c49b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0c496c6d460b11efc4ccb6e1d8e7b5489efacd93
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691924"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766441"
 ---
-# <a name="creating-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro di SharePoint
+# <a name="create-sharepoint-workflow-solutions"></a>Creare soluzioni di flusso di lavoro di SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili strumenti che consentono di creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti e voci di elenco in un sito Web di SharePoint. Gli elementi forniti prevedono una finestra di progettazione, un set di controlli dell'attività e i riferimenti all'assembly necessari. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include anche il **Personalizzazione guidata SharePoint**, per creare e configurare i flussi di lavoro.  
   
  Per un elenco di prerequisiti per la creazione di progetti SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vedere [requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Per ulteriori informazioni su SharePoint, vedere [Microsoft SharePoint Products and Technologies](http://go.microsoft.com/fwlink/?LinkId=178470).  
@@ -53,7 +53,7 @@ ms.locfileid: "34691924"
   
  Per ulteriori informazioni sui tipi di flusso di lavoro, vedere [tipi di flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=178995).  
   
-### <a name="using-the-wizard"></a>Utilizzo della procedura guidata
+### <a name="use-the-wizard"></a>Utilizzare la procedura guidata
  Quando si crea un progetto flusso di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], è innanzitutto specificare le impostazioni di **Personalizzazione guidata SharePoint**. La procedura guidata utilizza queste impostazioni per creare un progetto in **Esplora**. Questo progetto contiene un file di codice, diversi file che vengono usate per distribuire il flusso di lavoro e riferimenti agli assembly necessari per creare un flusso di lavoro di SharePoint personalizzata.  
   
  Dopo aver creato il flusso di lavoro, è possibile modificarne le proprietà nella finestra Proprietà. Sebbene la maggior parte delle proprietà del flusso di lavoro possono essere modificate direttamente nella finestra Proprietà, alcune richiedono è possibile fare clic sul pulsante con i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) per modificare i relativi valori. Questo pulsante consente di riavviare il **Personalizzazione guidata SharePoint**. Dopo aver apportato la proprietà valore modifiche, scegliere il **fine** pulsante per renderle effettive.  
@@ -64,7 +64,7 @@ ms.locfileid: "34691924"
 ## <a name="design-a-sharepoint-workflow"></a>Progettare un flusso di lavoro di SharePoint
  Dopo aver definito tutti i passaggi nel processo di business, utilizzare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Progettazione flussi di lavoro per la progettazione del flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1. vb in **Esplora**, o aprire il menu di scelta rapida per uno di questi file e quindi scegliere **aprire**.  
   
-### <a name="activities"></a>Activities  
+### <a name="activities"></a>Attività  
  Per progettare un flusso di lavoro, aggiungere le attività dal **della casella degli strumenti** per un *pianificazione del flusso di lavoro* nella finestra di progettazione. Una pianificazione del flusso di lavoro contiene la sequenza di attività nell'ordine che deve essere eseguite.  
   
  Esistono due tipi di attività:  
@@ -105,7 +105,7 @@ ms.locfileid: "34691924"
 ## <a name="collect-information-during-the-workflow"></a>Raccogliere informazioni durante il flusso di lavoro
  È possibile raccogliere informazioni dagli utenti in determinati momenti nel flusso di lavoro. È possibile raccogliere informazioni tramite moduli o le proprietà dell'elemento.  
   
-### <a name="forms"></a>Form  
+### <a name="forms"></a>Moduli  
  I moduli sono come le finestre di dialogo contenenti domande che consentono agli utenti di fornire risposte.  
   
  Esistono quattro tipi di form che può essere usato in un flusso di lavoro:  
@@ -124,7 +124,7 @@ ms.locfileid: "34691924"
  È anche possibile raccogliere informazioni da utenti con le proprietà di un elemento nell'elenco o raccolta di SharePoint. File di codice principale (Workflow1.cs o Workflow1. vb) dichiara un'istanza della classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominata `workflowProperties`. Utilizzare il `workflowProperties` oggetto per accedere alle proprietà della libreria o dell'elenco nel codice. Per un esempio, vedere [procedura dettagliata: creazione e debug di una soluzione del flusso di lavoro di SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).  
   
 ## <a name="debug-a-sharepoint-workflow-template"></a>Eseguire il debug di un modello di flusso di lavoro di SharePoint
- È possibile eseguire il debug un progetto flusso di lavoro di SharePoint uguale a quello di altri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti Web. Quando si avvia il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilizza le impostazioni specificate nella **Personalizzazione guidata SharePoint** per aprire il sito Web di SharePoint appropriato e associare automaticamente il modello di flusso di lavoro con la libreria appropriata o elenco. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Collega anche il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del debugger per il [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo denominato w3wp.exe.  
+ È possibile eseguire il debug un progetto flusso di lavoro di SharePoint uguale a quello di altri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti Web. Quando si avvia il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilizza le impostazioni specificate nella **Personalizzazione guidata SharePoint** per aprire il sito Web di SharePoint appropriato e associare automaticamente il modello di flusso di lavoro con la libreria appropriata o elenco. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Collega anche il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del debugger per il [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo denominato *w3wp.exe*.  
   
  Per testare il flusso di lavoro, è necessario avviarlo manualmente. Per ulteriori informazioni, vedere la sezione "Debug dei flussi di lavoro" in [debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Per ulteriori informazioni su [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debug delle applicazioni Web, vedere [Script e il debug di applicazioni Web](/visualstudio/debugger/debugging-web-applications-and-script).  
   
@@ -140,7 +140,7 @@ ms.locfileid: "34691924"
 |-----------|-----------------|  
 |[Procedura dettagliata: creazione e debug di una soluzione flusso di lavoro SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Illustra la procedura dettagliata Creazione e il debug di un semplice [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] flusso di lavoro.|  
 |[Procedura dettagliata: creazione di un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Illustra la procedura dettagliata per la creazione di una più completa [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] flusso di lavoro completato con form di associazione e di avvio.|  
-|[Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Si basa sull'argomento [procedura dettagliata: creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) mediante l'aggiunta di una pagina di applicazione aspx aggiuntivo che fornisce un report sui dati immessi nel flusso di lavoro.|  
+|[Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Compila per l'argomento [procedura dettagliata: creazione di un flusso di lavoro con form di avvio e associazione](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) aggiungendo un ulteriore *aspx* pagina dell'applicazione che consenta di segnalare i dati immessi nel flusso di lavoro.|  
 |[Procedura dettagliata: creare un'attività personalizzata per un flusso di lavoro del sito](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Viene illustrato come eseguire due attività principali: creare un flusso di lavoro a livello di sito e creare un'attività flusso di lavoro personalizzato.|  
 |[Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Viene illustrato come importare flussi di lavoro dichiarativi riutilizzabili creati in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.|  
   

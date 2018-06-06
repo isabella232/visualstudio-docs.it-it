@@ -19,7 +19,7 @@ ms.openlocfilehash: 2be8f0ecdb4f2d7a8ea379474c4b5ec0062d2b57
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692961"
 ---
 # <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
@@ -37,7 +37,7 @@ ms.locfileid: "34692961"
 ##  <a name="RibbonEvents"></a> Eventi della barra multifunzione  
  Il **della barra multifunzione** classe contiene i seguenti tre eventi:  
   
-|Evento|Descrizione|  
+|event|Descrizione|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Generato quando l'applicazione di Office carica la personalizzazione della barra multifunzione. Il <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> gestore eventi viene aggiunto automaticamente al file di codice della barra multifunzione. Utilizzare questo gestore eventi per eseguire codice personalizzato durante il caricamento della barra multifunzione.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Consente alle immagini della cache nella personalizzazione della barra multifunzione quando si carica la barra multifunzione. Se si scrive codice per memorizzare nella cache le immagini della barra multifunzione in questo gestore eventi, è possibile ottenere un leggero miglioramento delle prestazioni. Per altre informazioni, vedere <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
@@ -171,7 +171,7 @@ ms.locfileid: "34692961"
 ## <a name="ribbon-control-events"></a>Eventi di controllo della barra multifunzione  
  Ogni classe del controllo contiene uno o più eventi. Nella tabella seguente vengono descritti questi eventi.  
   
-|Evento|Descrizione|  
+|event|Descrizione|  
 |-----------|-----------------|  
 |Clic|Si verifica quando si seleziona un controllo.|  
 |TextChanged|Si verifica quando viene modificato il testo di una casella di modifica o una casella combinata.|  
