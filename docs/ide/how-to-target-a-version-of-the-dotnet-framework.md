@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752307"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procedura: Scegliere una versione di .NET Framework di destinazione
 
@@ -49,11 +50,11 @@ Per informazioni su come modificare la versione di destinazione per i progetti C
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto che si vuole modificare e scegliere **Proprietà**.
 
-    ![Proprietà Esplora soluzioni di Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
+    ![Proprietà Esplora soluzioni di Visual Studio](../ide/media/vs_slnexplorer_properties.png)
 
 1. Nella colonna sinistra della finestra **Proprietà** scegliere la scheda **Applicazione**.
 
-    ![Scheda applicazione delle proprietà dell'app di Visual Studio](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
+    ![Scheda Applicazione delle proprietà app in Visual Studio](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
     > [!NOTE]
     > Dopo aver creato un'app UWP, non è possibile cambiare la versione di destinazione di Windows o di .NET Framework.

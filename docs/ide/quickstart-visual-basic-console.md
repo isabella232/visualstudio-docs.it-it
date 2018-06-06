@@ -14,17 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c996e0e896a125a0d0ab9342e63b81ad2b9b24
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17d95ed3ceeaa93110fa17b301e8d37ed87f073d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766243"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guida introduttiva: Creare per la prima volta un'app console in Visual Studio con Visual Basic
 
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà una semplice applicazione di Visual Basic che viene eseguita nella console.
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
@@ -32,7 +33,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 1. Aprire Visual Studio 2017.
 
-2. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
+2. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al progetto il nome *HelloWorld*.
 
@@ -68,7 +69,8 @@ Ora si aggiungerà del codice per sospendere l'applicazione e richiedere l'input
    Console.Write("Press any key to continue...")
    Console.ReadKey(true)
    ```
-   Questo codice sospende l'esecuzione del programma fino a quando non si preme un tasto.
+
+    Questo codice sospende l'esecuzione del programma fino a quando non si preme un tasto.
 
 2. Nella barra dei menu selezionare **Compila** > **Compila soluzione**.
 

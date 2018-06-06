@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751819"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: creare un'impostazione test per un test di carico distribuito
 
@@ -74,7 +75,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Viene visualizzata la pagina **Ruoli**.
 
-     ![Ruolo impostazioni test](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Ruolo impostazioni test](../test/media/load_testtestrole.png)
 
 10. Per eseguire i test in modalità remota o per eseguire i test e raccogliere dati in modalità remota, usare l'elenco a discesa **Metodo di esecuzione dei test** e selezionare **Esecuzione remota**.
 
@@ -108,7 +109,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Viene visualizzata la pagina **Dati e diagnostica**.
 
-     ![Dati e diagnostica delle impostazioni dei test](../test/media/load_testtest.png "Load_TestTest")
+     ![Test dei dati delle impostazioni e diagnostica](../test/media/load_testtest.png)
 
 18. Nella pagina **Dati e diagnostica** viene definita l'azione eseguita dal ruolo selezionando gli *adattatori dati di diagnostica* che verranno usati dal ruolo per raccogliere dati. Pertanto, se per il ruolo sono abilitati uno o più adattatori dati e adattatori diagnostici, tramite il controller di test verrà selezionato un computer dell'agente di test disponibile per raccogliere dati per gli adattatori dati e gli adattatori diagnostici specificati in base agli attributi definiti per il ruolo. Per selezionare gli adattatori dati e gli adattatori diagnostici che si vuole raccogliere per ogni ruolo, selezionare il ruolo. Per ogni ruolo, selezionare gli adattatori dati di diagnostica in base alle esigenze dei test. Per configurare ogni adattatore dati di diagnostica selezionato per ogni ruolo, scegliere **Configura**.
 

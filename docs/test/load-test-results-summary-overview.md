@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751858"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
 Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico agli stakeholder. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Riepilogo del test di carico
 

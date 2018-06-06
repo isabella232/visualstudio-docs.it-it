@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2aaa32de4742d5c3897ec2290e77223b0d6cdd56
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752663"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -69,7 +70,7 @@ Per informazioni sui tasti di scelta rapida comuni, vedere [Suggerimenti relativ
 
 - **Ricerca di finestre di dialogo, comandi di menu e opzioni**. Nella casella [Avvio veloce](../ide/reference/quick-launch-environment-options-dialog-box.md) immettere le frasi o le parole chiave per gli elementi da trovare. Ad esempio, se si immette `new project` vengono visualizzate le opzioni seguenti:
 
-    ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Risultati di Avvio veloce per il nuovo progetto](../ide/media/productivity_quicklaunch.png)
 
     **Avvio veloce** consente di visualizzare i collegamenti alla finestra di dialogo **Nuovo progetto**, alla finestra di dialogo **Aggiungi nuovo elemento** e alla pagina **Progetti e soluzioni** nella finestra di dialogo **Opzioni**. I risultati di Avvio veloce possono anche includere file di progetto e finestre degli strumenti.
 
@@ -79,7 +80,7 @@ Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di v
 
 - **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova nella barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente il browser usato durante il debug o la visualizzazione delle pagine.
 
-    ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png)
 
 - **Impostazione di punti di interruzione temporanei**. È possibile creare un punto di interruzione temporaneo nella riga di codice corrente e avviare contemporaneamente il debugger. Quando si raggiunge la riga di codice, viene attivata la modalità di interruzione del debugger. Per altre informazioni, vedere [Spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md).
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751884"
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Procedura: analizzare gli errori utilizzando il pannello dei contatori
 
@@ -22,7 +23,7 @@ Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualiz
 
  Il nodo **Errori** nel pannello dei contatori contiene tutti gli errori rilevati durante il test di carico. Il nodo Errori contiene inoltre diverse sottocategorie di nodi di errori, specifiche per diversi tipi di errori, ad esempio **eccezioni** ed **errori HTTP**.
 
- ![Nodo degli errori del pannello dei contatori](../test/media/ltest_errornode.png "LTest_ErrorNode")
+ ![Nodo di errore del riquadro dei contatori](../test/media/ltest_errornode.png)
 
 ## <a name="to-analyze-errors-in-the-counters-panel"></a>Per analizzare gli errori nel riquadro Contatori
 

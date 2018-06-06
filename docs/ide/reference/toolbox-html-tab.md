@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752696"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
 
@@ -33,13 +34,13 @@ Per impostazione predefinita, nella scheda HTML sono disponibili i seguenti stru
 
 **Puntatore**
 
-![Puntatore pagina HTML finestra di progettazione mobile ASP.NET](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Puntatore pagina HTML di ASP.NET Mobile Designer](../../ide/reference/media/vxpointer.gif)
 
 Questo strumento viene selezionato per impostazione predefinita quando si fa clic su una delle schede della casella degli strumenti e non è possibile eliminarlo. Il puntatore consente di trascinare oggetti nell'area di visualizzazione Progettazione, ridimensionarli e riposizionarli nella pagina o nel form. Per altre informazioni, vedere [Casella degli strumenti](../../ide/reference/toolbox.md).
 
 **Input (Pulsante)**
 
-![Pulsante pagina Web HTML](../../ide/reference/media/vxbutton.gif "vxButton")
+![Pulsante di pagina Web HTML](../../ide/reference/media/vxbutton.gif)
 
 Consente di inserire un elemento `input` di `type="button"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante viene inserito `id="Button1"`, come secondo pulsante `id="Button2"` e così via.
 
@@ -51,7 +52,7 @@ Quando si trascina **Input (Pulsante)** nell'area di visualizzazione Progettazio
 
 **Input (Reimposta)**
 
-![Screenshot HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
+![Schermata HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Consente di inserire un elemento `input` di `type="reset"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di reimpostazione viene inserito `id="Reset1"`, come secondo `id="Reset2"` e così via.
 
@@ -63,7 +64,7 @@ Quando si trascina **Input (Reimposta)** nell'area di visualizzazione Progettazi
 
 **Input (Invia)**
 
-![Screenshot HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![Schermata HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Consente di inserire un elemento `input` di `type="submit"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di invio viene inserito `id="Submit1"`, come secondo `id="Submit2"` e così via.
 
@@ -75,7 +76,7 @@ Quando si trascina **Input (Invia)** nell'area di visualizzazione Progettazione,
 
 **Input (Testo)**
 
-![Screenshot HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![Schermata HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Consente di inserire un elemento `input` di `type="text"` nel documento. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come primo campo di testo viene inserito `id="Text1"`, come secondo `id="Text2"` e così via.
 
@@ -90,7 +91,7 @@ Quando si trascina **Input (Testo)** nell'area di visualizzazione Progettazione,
 
 **Input (File)**
 
-![Campo File pagina HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Campo file pagina HTML](../../ide/reference/media/vxfilefield.gif)
 
 Consente di inserire un elemento `input` di `type="file"` nel documento. Per impostazione predefinita, come primo campo file viene inserito `id="File1"`, come secondo `id="File2"` e così via.
 
@@ -105,7 +106,7 @@ Quando si trascina **Input (File)** nell'area di visualizzazione Progettazione, 
 
 **Input (Password)**
 
-![Campo password Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Campo della password di Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Consente di inserire un elemento `input` di `type="password"`. Per impostazione predefinita, come primo campo file password viene inserito `id="Password1"`, come secondo `id="Password2"` e così via.
 
@@ -120,7 +121,7 @@ Quando si trascina **Input (Password)** nell'area di visualizzazione Progettazio
 
 **Input (Casella di controllo)**
 
-![Opzione Checkbox casella degli strumenti pagina Web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![Opzione della casella di controllo di una pagina Web HTML](../../ide/reference/media/vxcheckbox.gif)
 
 Consente di inserire un elemento `input` di `type="checkbox"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come prima casella di controllo viene inserito `id="Checkbox1"`, come seconda `id="Checkbox2"` e così via.
 
@@ -132,7 +133,7 @@ Quando si trascina **Input (Casella di controllo)** nell'area di visualizzazione
 
 **Input (Pulsante di opzione)**
 
-![Screenshot VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")
+![Schermata VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Consente di inserire un elemento `input` di `type="radio"`. Per modificare il testo visualizzato, modificare la proprietà `name`. Per impostazione predefinita, come primo pulsante di opzione viene inserito `id="Radio1"`, come secondo `id="Radio2"` e così via.
 
@@ -144,7 +145,7 @@ Quando si trascina **Input (Pulsante di opzione)** nell'area di visualizzazione 
 
 **Input (Nascosto)**
 
-![Elemento nascosto pagina HTML](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Elemento nascosto pagina HTML](../../ide/reference/media/vxhidden.gif)
 
 Consente di inserire un elemento `input` di `type="hidden"`. Per impostazione predefinita, come primo campo nascosto viene inserito `id="Hidden1"`, come secondo `id="Hidden2"` e così via.
 
@@ -156,7 +157,7 @@ Quando si trascina **Input (Nascosto)** nell'area di visualizzazione Progettazio
 
 **Area di testo**
 
-![Area testo casella degli strumenti pagina HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Area del testo della barra degli strumenti in una pagina HTML](../../ide/reference/media/vxtextarea.gif)
 
 Consente di inserire un elemento `textarea`. È possibile ridimensionare l'area di testo oppure usare le barre di scorrimento per visualizzare il testo che si estende oltre l'area di visualizzazione. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come prima area di testo viene inserito `id="textarea1"`, come seconda `id=" textarea 2"` e così via.
 
@@ -171,7 +172,7 @@ Quando si trascina **Area di testo** nell'area di visualizzazione Progettazione,
 
 **Tabella**
 
-![Screenshot HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")
+![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Consente di inserire un elemento `table`.
 
@@ -183,7 +184,7 @@ Quando si trascina **Tabella** nell'area di visualizzazione Progettazione, nel d
 
 **Immagine**
 
-![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif "vxImage")
+![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif)
 
 Consente di inserire un elemento `img`. Modificare questo elemento per specificare il testo `src` e `alt`.
 
@@ -195,7 +196,7 @@ Quando si trascina **Immagine** nell'area di visualizzazione Progettazione, nel 
 
 **Seleziona**
 
-![Elenco a discesa casella degli strumenti pagina HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Controllo Dropdown della casella degli strumenti di una pagina HTML](../../ide/reference/media/vxdropdown.gif)
 
 Consente di inserire un elemento `select` a discesa senza attributo `size`. Per impostazione predefinita, come prima casella di riepilogo viene inserito `id="select1"`, come seconda `id="select2"` e così via.
 
@@ -209,7 +210,7 @@ Quando si trascina **Seleziona** nell'area di visualizzazione Progettazione, nel
 
 **Righello orizzontale**
 
-![Elemento righello orizzontale pagina HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Elemento righello orizzontale pagina HTML](../../ide/reference/media/vxhorizontal.gif)
 
 Consente di inserire un elemento `hr`. Per aumentare lo spessore della linea, modificare l'attributo `size`.
 
@@ -221,7 +222,7 @@ Quando si trascina **Righello orizzontale** nell'area di visualizzazione Progett
 
 **Div**
 
-![Etichetta pagina HTML](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Etichetta pagina HTML](../../ide/reference/media/vxlabel.gif)
 
 Consente di inserire un elemento `div` che include un attributo `ms_positioning="FlowLayout"`. Tranne che per i valori relativi a larghezza e altezza, questo elemento è identico a un pannello di layout flusso. Per formattare il testo contenuto nell'elemento `div`, aggiungere un attributo `class="stylename"` al tag di apertura.
 

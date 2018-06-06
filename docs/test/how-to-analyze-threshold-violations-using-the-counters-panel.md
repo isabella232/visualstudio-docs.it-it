@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751806"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Procedura: analizzare le violazioni di soglia utilizzando il pannello dei contatori nell'Analizzatore test di carico
 
@@ -22,21 +23,21 @@ Il riquadro Contatori è visibile nella visualizzazione Grafici e nella visualiz
 
  Le violazioni di soglia sono associate a specifici contatori delle prestazioni e indicano che il contatore delle prestazioni ha superato o non ha raggiunto un valore soglia impostato. Tali violazioni di soglia vengono comunicate tramite icone nel riquadro Contatori.
 
- ![Nodo dei computer del pannello dei contatori](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Nodo del computer del riquadro dei contatori](../test/media/ltest_compnode.png)
 
  L'icona relativa a una violazione di soglia viene propagata dal nodo dell'albero dove risiede il contatore in errore fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile in un albero che non è stato espanso. Un esempio dell'icona può essere visualizzato nel nodo **Computer** nel pannello Contatori nella figura precedente.
 
  e possono essere una delle seguenti:
 
- ![Nessuna violazione di soglia](../test/media/icon_ltest_1.gif "Icon_LTest_1") Non si è verificata alcuna violazione di soglia.
+ ![Nessuna violazione di soglia](../test/media/icon_ltest_1.gif) Nessuna violazione di soglia.
 
- ![Violazione di soglia critica nell'ultimo intervallo](../test/media/icon_ltest_2.gif "Icon_LTest_2") Si è verificata una violazione di soglia critica nell'ultimo intervallo.
+ ![Violazione di soglia critica nell'ultimo intervallo](../test/media/icon_ltest_2.gif) Si è verificata una violazione di soglia critica nell'ultimo intervallo.
 
- ![Violazione di soglia critica in un intervallo precedente](../test/media/icon_ltest_3.gif "Icon_LTest_3") Si è verificata una violazione di soglia critica in un intervallo precedente.
+ ![Violazione di soglia critica in un intervallo precedente](../test/media/icon_ltest_3.gif) Si è verificata una violazione di soglia critica in un intervallo precedente.
 
- ![Violazione di soglia con avviso nell'ultimo intervallo](../test/media/icon_ltest_4.gif "Icon_LTest_4") Si è verificata una violazione di soglia con avviso nell'ultimo intervallo.
+ ![Violazione di soglia con avviso nell'ultimo intervallo](../test/media/icon_ltest_4.gif) Si è verificata una violazione di soglia di avvertenza nell'ultimo intervallo.
 
- ![Violazione di soglia con avviso in un intervallo precedente](../test/media/icon_ltest_5.gif "Icon_LTest_5") Si è verificata una violazione di soglia con avviso in un intervallo precedente.
+ ![Violazione di soglia con avviso in un intervallo precedente](../test/media/icon_ltest_5.gif) Si è verificata una violazione di soglia di avvertenza in un intervallo precedente.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Per analizzare le violazioni di soglia nel riquadro Contatori
 

@@ -13,17 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764933"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
 
 In questa esercitazione per Visual Basic (VB) si userà Visual Studio per creare ed eseguire alcune app console diverse e nel frattempo si esploreranno alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio](visual-studio-ide.md).
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -62,9 +63,11 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
    ![Modello di progetto Console App (.NET Core) nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
 #### <a name="add-a-workgroup-optional"></a>Aggiungere un gruppo di lavoro (facoltativo)
+
 Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è possibile ottenerlo aggiungendo il carico di lavoro **Sviluppo multipiattaforma .NET Core**. È possibile aggiungere questo carico di lavoro in uno dei due modi seguenti, a seconda degli aggiornamenti di Visual Studio 2017 installati nel computer.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Opzione 1: usare la finestra di dialogo Nuovo progetto
+
 1. Fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**.
 
   ![Fare clic sul collegamento Apri il programma di installazione di Visual Studio nella finestra di dialogo Nuovo progetto](../ide/media/vs-open-visual-studio-installer-generic.png)
@@ -74,9 +77,10 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
    ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opzione 2: usare la barra del menu Strumenti
+
 1. Chiudere la finestra di dialogo **Nuovo progetto** e sulla barra dei menu in alto scegliere **Strumenti** > **Ottieni strumenti e funzionalità**.
 
-2. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.   
+2. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
 
 ## <a name="create-a-what-is-your-name-application"></a>Creare un'applicazione "What Is Your Name?"
 
@@ -106,6 +110,7 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 5. Premere un tasto qualsiasi per chiudere la finestra della console.
 
 ## <a name="create-a-calculate-this-application"></a>Creare un'applicazione "CalculateThis"
+
 1. Aprire Visual Studio 2017 e quindi sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
 2. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *CalculateThis*.  

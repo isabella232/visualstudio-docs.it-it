@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751871"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Come testare una DLL di Visual C++
 
@@ -31,11 +32,11 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 3.  Assegnare al progetto il nome `RooterLibTests`, specificare il percorso, assegnare alla soluzione il nome `RooterLib` e verificare che l'opzione **Crea directory per soluzione** sia selezionata.
 
-     ![Specificare un nome e un percorso per il progetto e la soluzione](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Specificare un nome e un percorso per il progetto e la soluzione](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  Nel nuovo progetto aprire **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Come si può notare:
 
@@ -64,13 +65,13 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
      Il progetto di test viene compilato ed eseguito. Verrà visualizzata la finestra di Esplora test con il test elencato in **Test superati**. Nel riquadro di riepilogo nella parte inferiore della finestra sono disponibili ulteriori dettagli sul test selezionato.
 
-     ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Esplora test](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Aggiungere il progetto di DLL alla soluzione
 
 1.  In Esplora soluzioni scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Aggiungi nuovo progetto**.
 
-     ![Creare il progetto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![Creare il progetto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)**.
 
@@ -104,7 +105,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
     1.  In Esplora soluzioni selezionare il progetto **RooterLib** e quindi scegliere **Proprietà** dal menu di scelta rapida.
 
-         ![Aggiungere una definizione di un simbolo del preprocessore](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Aggiungere una definizione di un simbolo del preprocessore](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  Nella finestra di dialogo Pagina delle proprietà di RooterLib Property espandere **Proprietà di configurazione**, espandere **C++** e scegliere **Preprocessore**.
 
@@ -175,7 +176,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 5.  In Esplora test scegliere **Esegui tutto**.
 
-     ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png)
 
  È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
@@ -206,7 +207,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
 3.  Il test ha esito negativo.
 
-     ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
@@ -278,7 +279,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
      Il test ha esito negativo. Scegli il nome del test in Esplora test. L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di Esplora test.
 
-     ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Per capire perché il test non riesce, scorrere la funzione:
 
@@ -308,7 +309,7 @@ In questo argomento viene descritto come creare unit test per una libreria di co
 
  Tutti i test vengono ora superati.
 
- ![Tutti i test superati](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Tutti i test superati](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Eseguire il refactoring del codice senza modificare i test
 
