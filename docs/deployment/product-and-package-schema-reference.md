@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815574"
 ---
 # <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 A *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Esempi di dipendenze esterne di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e Microsoft Data Access Components (MDAC). Un file del pacchetto è simile a un file di prodotto, ma viene utilizzato per installare i componenti dipendenti dalla lingua di una dipendenza, ad esempio assembly localizzati, i contratti di licenza e documentazione.  
@@ -40,13 +41,13 @@ A *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze es
   
 |Elemento|Descrizione|Attributi|  
 |-------------|-----------------|----------------|  
-|[\<Prodotto > elemento](../deployment/product-element-bootstrapper.md)|Elemento di primo livello obbligatorio per i file del prodotto.|Nessuno|  
+|[\<Prodotto > elemento](../deployment/product-element-bootstrapper.md)|Elemento di primo livello obbligatorio per i file del prodotto.|nessuno|  
 |[\<Pacchetto > elemento](../deployment/package-element-bootstrapper.md)|Elemento di primo livello obbligatorio per i file di pacchetto.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento facoltativo per i file del prodotto. Gli altri prodotti che il prodotto viene installato o dipende dalla fase.|Nessuno|  
-|[\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento obbligatorio. Elenca i controlli delle dipendenze per l'esecuzione nel computer locale durante l'installazione.|Nessuno|  
-|[\<I comandi > elemento](../deployment/commands-element-bootstrapper.md)|Elemento obbligatorio.  Esegue uno o più controlli per l'installazione come descritto dalla `InstallChecks`e segnala il pacchetto di installazione se il controllo esito negativo.|Nessuno|  
-|[\<PackageFiles > elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento obbligatorio. Elenca i pacchetti che potrebbero essere installati da questo processo di installazione.|Nessuno|  
-|[\<Stringhe > elemento](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate delle stringhe di errore e nome di prodotto.|Nessuno|  
+|[\<RelatedProducts > elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento facoltativo per i file del prodotto. Gli altri prodotti che il prodotto viene installato o dipende dalla fase.|nessuno|  
+|[\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento obbligatorio. Elenca i controlli delle dipendenze per l'esecuzione nel computer locale durante l'installazione.|nessuno|  
+|[\<I comandi > elemento](../deployment/commands-element-bootstrapper.md)|Elemento obbligatorio.  Esegue uno o più controlli per l'installazione come descritto dalla `InstallChecks`e segnala il pacchetto di installazione se il controllo esito negativo.|nessuno|  
+|[\<PackageFiles > elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento obbligatorio. Elenca i pacchetti che potrebbero essere installati da questo processo di installazione.|nessuno|  
+|[\<Stringhe > elemento](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate delle stringhe di errore e nome di prodotto.|nessuno|  
   
 ## <a name="remarks"></a>Note  
  Lo schema di pacchetto verrà utilizzato dal Setup.exe, un programma stub generato dall'attività di avvio automatico MS Build che contiene la logica little hardcoded propri. Lo schema controlla ogni aspetto del processo di installazione.  
@@ -56,7 +57,7 @@ A *del file di prodotto* è un manifesto XML che descrive tutte le dipendenze es
 ## <a name="example"></a>Esempio  
  Esempio di codice riportato di seguito viene illustrato un file di prodotto completo per l'installazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

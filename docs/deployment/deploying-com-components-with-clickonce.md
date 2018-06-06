@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815873"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Distribuzione di componenti COM con ClickOnce
 Distribuzione di componenti COM legacy è tradizionalmente difficile. I componenti devono essere registrati a livello globale e pertanto possono causare effetti collaterali indesiderati applicazioni sovrapposte. Questa situazione non è in genere un problema nelle applicazioni .NET Framework perché i componenti sono completamente isolati a un'applicazione o compatibili con side-by-side. Visual Studio consente di distribuire i componenti COM isolati in Windows XP o versioni successive del sistema operativo.  
@@ -69,7 +70,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 4.  In Class1. vb aggiungere il codice seguente dopo il codice generato per il `New` metodo:  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
   
 8.  Fare doppio clic sul pulsante per aggiungere il codice del gestore e nel file di codice, aggiungere il codice in modo che il gestore è simile alla seguente:  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

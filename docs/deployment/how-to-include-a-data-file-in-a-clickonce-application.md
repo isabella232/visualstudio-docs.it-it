@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815545"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: includere un file di dati in un'applicazione ClickOnce
 Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installata viene assegnata una directory dei dati su disco del computer di destinazione in cui l'applicazione può gestire i propri dati. File di dati possono includere qualsiasi tipo file: file di testo, file XML o anche i file di Microsoft Access (mdb). Di seguito viene illustrato come aggiungere un file di dati di qualsiasi tipo nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
@@ -35,7 +36,7 @@ Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installat
   
 2.  Aggiornare il manifesto dell'applicazione all'elenco di file di dati.  
   
-     **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Per eseguire questa attività verrà ricreato l'elenco di file nel manifesto dell'applicazione e genera automaticamente anche le firme hash.  
   
@@ -53,13 +54,11 @@ Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installat
   
      È necessario firmare nuovamente il manifesto della distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
   
-     **Mage -s app manifesto - cf cert_file - pwd password**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **manifesto dell'applicazione di Mage -u distribuzione manifesto - appm**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **manifesto della distribuzione -s di Mage - cf certfile - pwd password**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Per includere un file di dati usando MageUI.exe  
   

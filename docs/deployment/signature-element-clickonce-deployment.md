@@ -16,18 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5637bad77e2d4e09d6d04007f0e0da3ed8af68df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814960"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (distribuzione di ClickOnce)
 Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
   
       <Signature>   
    XML signature information   
@@ -35,14 +36,14 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
 ```  
   
 ## <a name="remarks"></a>Note  
- Firma un manifesto di distribuzione utilizzando una firma protetta è facoltativa ma consigliato. Per altre informazioni sulla firma XML file il World Wide Web Consortium, vedere raccomandazione "Firma XML Syntax and Processing," descritto in [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Firma un manifesto di distribuzione utilizzando una firma protetta è facoltativa ma consigliato. Per ulteriori informazioni sulla firma di file XML, vedere il World Wide Web Consortium raccomandazione, "Firma XML Syntax and Processing," descritto in [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
  Se si desidera firmare il manifesto, è necessario specificare l'hash per tutti i file. Impossibile firmare un manifesto con i file che non è stato eseguito l'hashing, perché gli utenti non è possibile verificare il contenuto del file senza hash.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio di codice seguente viene illustrato un `Signature` elemento in un manifesto di distribuzione utilizzato in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.  
   
-```  
+```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
   <SignedInfo>  
     <CanonicalizationMethod Algorithm=  

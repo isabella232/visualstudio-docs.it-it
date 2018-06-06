@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cbc6b4f5ebd400d90466ccfa353d679a766580
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c551bc9335dc41f82800e2c3435d8508967a6db
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815470"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Le pianificazioni&gt; elemento (programma di avvio automatico)
 Il `Schedules` elemento contiene `Schedule` elementi che definiscono l'ora specifica a quali comandi definiti per il `Command` elemento deve essere eseguito.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml
 <Schedules>  
     <Schedule  
         Name  
