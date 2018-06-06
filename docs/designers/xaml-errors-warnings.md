@@ -10,11 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea8bf298f5847c779d2dc13154ddb27b2efeb214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a263f361e28c515f1694238c4d60fdeffb95f03a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746624"
 ---
 # <a name="xaml-errors-and-warnings"></a>Errori e avvisi XAML
 
@@ -40,6 +41,6 @@ Aprire la finestra di dialogo **Opzioni** selezionando **Strumenti > Opzioni** e
 
 Deselezionare la casella di controllo **Show errors detected by the XAML designer** (Visualizza errori rilevati dalla finestra di progettazione XAML).
 
-![Eliminare gli errori di finestra di progettazione XAML](../designers/media/suppress_xaml_designer_errors.PNG "SuppressXAMLDesignerErrors")
+![Eliminare gli errori della finestra di progettazione XAML](../designers/media/suppress_xaml_designer_errors.png)
 
 

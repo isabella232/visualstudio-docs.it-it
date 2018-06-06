@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745737"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procedura: Tenere traccia del codice personalizzando la barra di scorrimento
 
@@ -33,11 +34,11 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
     Ecco l'aspetto della barra di scorrimento dopo la ricerca di una stringa. Si noti che vengono visualizzate tutte le istanze della stringa.
 
-    ![Barra di scorrimento dopo la ricerca di una stringa.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Barra di scorrimento dopo la ricerca di una stringa.](../ide/media/enhancedscrollbarsearch.png)
 
     Ecco la barra di scorrimento dopo la sostituzione di tutte le istanze della stringa. È possibile vedere immediatamente che l'operazione ha provocato alcuni problemi.
 
-    ![Barra di scorrimento dopo la sostituzione di una stringa con errori](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Barra di scorrimento dopo la sostituzione di una stringa con errori](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Per impostare la modalità di visualizzazione per la barra di scorrimento
 
@@ -47,11 +48,11 @@ Quando si usano file di codice lunghi, può risultare difficile tenere presente 
 
     Ecco come appare l'esempio di ricerca quando è attivata la modalità mappa e la larghezza viene impostata su **Media**:
 
-    ![Barra di scorrimento in modalità mappa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Barra di scorrimento in modalità mappa](../ide/media/enhancedscrollbar.png)
 
 2. In modalità mappa per abilitare le anteprime del codice quando si sposta il cursore verso l'alto e il basso nella barra di scorrimento, selezionare l'opzione **Mostra descrizione comando anteprima**. L'aspetto è il seguente:
 
-    ![Barra di scorrimento con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Barra di scorrimento con una descrizione comando](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Se si vogliono mantenere il comportamento di scorrimento della modalità mappa e la descrizione comando anteprima ma non si vuole visualizzare la panoramica del codice sorgente, è possibile impostare **Panoramica origine** su **Off**.
 

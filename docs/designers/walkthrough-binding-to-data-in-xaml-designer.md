@@ -1,6 +1,7 @@
 ---
 title: Eseguire il binding ai dati nella finestra di progettazione XAML
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745711"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
@@ -81,7 +83,7 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
      La figura seguente illustra la finestra di dialogo **Seleziona oggetto** con **ShoppingCart** selezionato.
 
-     ![Finestra di dialogo Seleziona oggetto](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Finestra di dialogo Seleziona oggetto](../designers/media/blendselectobject.png)
 
 1. Nella **casella degli strumenti`TextBlock` scegliere un controllo**  e aggiungerlo al modulo.
 
@@ -91,7 +93,7 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
      La figura seguente illustra la finestra di dialogo **Crea associazione dati** con la proprietà **ItemCount** selezionata.
 
-     ![Finestra di dialogo Crea associazione dati](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Finestra di dialogo Crea data binding](../designers/media/xaml_create_data_binding.png)
 
 1. Premere **F5** per eseguire l'app.
 

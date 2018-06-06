@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745630"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procedura: Creare una trama di base
 Questo documento illustra come usare l'editor di immagini per creare una trama di base.
@@ -36,7 +37,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 
  La procedura seguente illustra come creare una trama che rappresenta una destinazione di tipo "bullseye". Al termine, la trama dovrebbe essere simile all'immagine seguente. Per illustrare meglio la trasparenza nella trama, l'editor di immagini è stato configurato per l'utilizzo di un modello verde a scacchi.
 
- ![Destinazione "Bullseye" con trasparenza visualizzata in verde](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![Destinazione "Bullseye" con trasparenza visualizzata in verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Prima di iniziare, assicurarsi che sia visualizzata la finestra **Proprietà**. Usare la finestra **Proprietà** per impostare la dimensione dell'immagine, modificare le proprietà dello strumento e specificare i colori mentre si lavora.
 
@@ -84,7 +85,7 @@ Questo documento illustra come usare l'editor di immagini per creare una trama d
 
  La trama di destinazione "bullseye" è completa. Di seguito è riportata l'immagine finale, illustrata con la trasparenza.
 
- ![Trama di destinazione "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![Trama di destinazione "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
 
  Come passaggio successivo è possibile generare i livelli MIP per la trama. Per informazioni, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md).
 

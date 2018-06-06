@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751342"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -51,7 +52,7 @@ I dati del contatore vengono raccolti nel server e in tutti i computer su cui vi
 
 Esistono tre categorie di contatori: percentuali, conteggi e medie. Alcuni esempi sono la percentuale di utilizzo della CPU, i conteggi dei blocchi di SQL Server e le richieste IIS al secondo.
 
-![Insiemi di contatori dei test di carico](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Insiemi di contatori di un test di carico](../test/media/loadtestcountersets.png)
 
 I dati delle prestazioni per le singole richieste HTTP vengono segnalati dal computer che esegue un test, ad esempio un computer agente. Per le richieste è possibile monitorare i dati quali Tempo medio ricezione primo byte, Tempo di risposta e Media richieste al secondo.
 

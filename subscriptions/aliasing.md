@@ -9,11 +9,12 @@ description: Si possono verificare errori di accesso se si usano alias o nomi de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477652"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Possibili errori di accesso alle sottoscrizioni di Visual Studio con alias
 
@@ -48,25 +49,26 @@ Seguire questa procedura per aggiungere un nuovo sottoscrittore con un account d
 1. Visitare [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e accedere.
 2. Dalla pagina di amministrazione di VLSC fare clic su **Sottoscrizioni** e quindi su **Sottoscrizioni di Visual Studio**.
 
-    ![Menu Sottoscrizioni](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Fare clic sul **numero di contratto** associato alla sottoscrizione di Visual Studio.
 
-    ![Selezionare il contratto](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Fare clic su **Assegna sottoscrizione**.
 
-    ![Assegna sottoscrizione](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. Selezionare il **livello di sottoscrizione** desiderato.
 
-    ![Livello di sottoscrizione](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Verificare che siano disponibili sottoscrizioni da assegnare e fare clic su **Avanti**.
 7.  Immettere i dettagli del sottoscrittore e l'indirizzo della directory nel campo dell'indirizzo di posta elettronica, quindi fare clic su **Avanti**.
 
-    ![Indirizzo di posta elettronica](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Verificare le informazioni del sottoscrizione e fare clic su **Fine**.
 
 9. Inviare notifica al sottoscrittore del provisioning della sottoscrizione usando il [modello](#notifying-your-subscribers-with-directory-addresses) di seguito.

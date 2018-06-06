@@ -11,11 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 44eb805a50e7518aa346b35a8aaba5202244ec76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8231b36f2fe44a04e16b420eb13bfcc4eb30c696
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573284"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Guida introduttiva: Usare l'editor del codice
 
@@ -23,7 +24,7 @@ In questa presentazione dell'editor, della durata di 10 minuti, si aggiunge codi
 
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) per installarlo gratuitamente.
 
-Questa guida introduttiva presuppone una certa familiarità con un linguaggio di programmazione. In caso contrario, è consigliabile leggere prima di tutto una delle guide introduttive alla programmazione, ad esempio su come creare un'app Web con [Python](../ide/quickstart-python.md) o [C#](../ide/tutorial-csharp-aspnet-core.md) oppure come creare un'app console con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/quickstart-cpp.md).
+Questa guida introduttiva presuppone una certa familiarità con un linguaggio di programmazione. In caso contrario, è consigliabile leggere prima di tutto una delle guide introduttive alla programmazione, ad esempio su come creare un'app Web con [Python](../ide/quickstart-python.md) o [C#](../ide/tutorial-csharp-aspnet-core.md) oppure come creare un'app console con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Creare un nuovo file di codice
 

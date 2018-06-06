@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750727"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
 
@@ -72,17 +73,17 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
 
 4.  Scegliere il collegamento **Output** nei risultati di Esplora test.
 
-     ![Collegamento Output in Esplora test](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Collegamento di output in Esplora test](../test/media/cuit_htmlactionlog1.png)
 
      Viene visualizzato l'output del test in cui è incluso un collegamento al log delle azioni.
 
-     ![Collegamenti dei risultati e dell'output del codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Risultati e collegamenti di output del test codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog2.png)
 
 5.  Scegliere il collegamento *UITestActionLog.html*.
 
      Il log verrà visualizzato nel browser Web.
 
-     ![File di log del test codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![File di log del test codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Vedere anche
 

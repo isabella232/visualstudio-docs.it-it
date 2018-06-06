@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573258"
 ---
 # <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
 
@@ -46,14 +47,10 @@ Quando questi file vengono compressi in un file con estensione *zip* e inseriti 
 
 Per altre informazioni sulle cartelle dei modelli, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="starter-kits"></a>Starter kit
-
-Gli starter kit sono modelli avanzati che possono essere condivisi con altri membri della community. Uno starter kit include esempi di codice compilabili, documentazione e altre risorse per facilitare l'apprendimento di nuovi strumenti e tecniche di programmazione durante la compilazione di applicazioni utili e reali. I contenuti e le procedure di base per gli starter kit sono identici a quelli dei modelli. Per altre informazioni, vedere [Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md).
-
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
 - [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)
 - [Parametri di modello](../ide/template-parameters.md)
-- [Personalizzazione di modelli](../ide/customizing-project-and-item-templates.md)
+- [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Pacchetti NuGet nei modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750935"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 
@@ -36,7 +37,7 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
 
 È possibile aggiungere più test delle prestazioni Web e unit test alla combinazione di test dello scenario utilizzando l'Editor test di carico.
 
-![Aggiunta di un test a un test di carico esistente](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Aggiunta di un test a un test di carico esistente](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Per aggiungere più test a uno scenario esistente
 
@@ -55,7 +56,7 @@ Quando si crea un nuovo scenario utilizzando la Creazione guidata test di carico
 5.  (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Rimozione dei test da uno scenario
- ![Rimozione di un test da un test di carico esistente](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Rimozione di un test da un test di carico esistente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Per rimuovere test da uno scenario
 

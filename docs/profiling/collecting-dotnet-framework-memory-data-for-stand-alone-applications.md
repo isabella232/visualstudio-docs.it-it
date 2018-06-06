@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab274f76463c8a58203c9e004a3727b7ed2ed59e
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335905"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549064"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 
@@ -45,8 +45,8 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
   
 |Attività|Contenuti correlati|  
 |----------|---------------------|  
-|**Profilatura di applicazioni ASP.NET**|-   [Raccogliere dati di memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profilatura di servizi**|-   [Raccogliere dati di memoria .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
+|**Sottoporre a profilatura applicazioni ASP.NET**|-   [Raccogliere dati di memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Sottoporre a profilatura i servizi**|-   [Raccogliere dati di memoria .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di memoria .NET  
  [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  

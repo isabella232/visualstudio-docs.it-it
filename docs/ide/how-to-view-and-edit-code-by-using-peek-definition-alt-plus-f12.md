@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746715"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 
      Questa illustrazione mostra la finestra **Visualizza definizione** per un metodo denominato `Print()`:
 
-     ![Finestra di visualizzazione](../ide/media/peekwindow.png "PeekWindow")
+     ![Finestra di anteprima](../ide/media/peekwindow.png)
 
      La finestra di definizione appare sotto la riga `printer.Print("Hello World!")` nel file originale. La finestra non nasconde alcuna sezione di codice nel file originale. Le righe che seguono `printer.Print("Hello World!")` sono visualizzate al di sotto della finestra di definizione.
 
@@ -43,19 +44,19 @@ ms.lasthandoff: 04/26/2018
 
 Se è già aperta una finestra **Visualizza definizione**, è possibile chiamare di nuovo **Visualizza definizione** per il codice in tale finestra. Verrà visualizzata un'altra finestra di definizione. Accanto alla scheda della finestra di definizione verrà visualizzato un set di punti di navigazione, che è possibile utilizzare per spostarsi tra le finestre di definizione. La descrizione comando in ciascun punto indica il nome e il percorso del file di definizione rappresentato dal punto.
 
-   ![Finestra di visualizzazione all'interno di una finestra di visualizzazione](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![Finestra di anteprima in una finestra di anteprima](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>Visualizza definizione con più risultati
 
 Se si usa **Visualizza definizione** per codice con più definizioni, ad esempio una classe parziale, a destra della visualizzazione della definizione del codice viene visualizzato un elenco di risultati. È possibile scegliere qualsiasi risultato nell'elenco per visualizzarne la definizione.
 
-   ![Finestra di visualizzazione con più risultati](../ide/media/peekmultiple.png "PeekMultiple")
+   ![Finestra di anteprima di più risultati](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Apportare modifiche all'interno della finestra Visualizza definizione
 
 Quando si inizia ad apportare modifiche all'interno di una finestra **Visualizza definizione**, il file da modificare viene aperto automaticamente sotto forma di scheda separata nell'editor di codice e riflette le modifiche apportate. È possibile continuare ad apportare, annullare e salvare modifiche nella finestra **Visualizza definizione**. La scheda continuerà a riflettere tali modifiche. Anche se si chiude la finestra **Visualizza definizione** senza salvare le modifiche, è possibile apportare, annullare e salvare altre modifiche nella scheda, riprendendo esattamente dal punto precedente nella finestra **Visualizza definizione**.
 
-   ![Modifica in una finestra di visualizzazione](../ide/media/peekedit.png "PeekEdit")
+   ![Modifica in una finestra di anteprima](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>Per modificare le opzioni per Visualizza definizione
 

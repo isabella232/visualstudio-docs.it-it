@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745763"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -61,7 +62,7 @@ Quando si esegue il comando **Vai a definizione** o **Visualizza definizione** p
 
 Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Console>, i metadati per <xref:System.Console> vengono visualizzati nell'editor del codice come codice sorgente C#. Il codice corrisponde alla relativa dichiarazione, ma non mostra un'implementazione.
 
-![Metadati come origine](../ide/media/metadatasource.png "MetadataSource")
+![Metadati come origine](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Quando si prova a eseguire il comando **Vai a definizione** o **Visualizza definizione** per i tipi o i membri contrassegnati come interni, Visual Studio non visualizza i metadati come codice sorgente, indipendentemente dal fatto che l'assembly di riferimento sia o meno un elemento friend.

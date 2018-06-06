@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750909"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -53,15 +54,15 @@ Se si verificano violazioni, sulla barra di stato dell'Analizzatore test di cari
 
  e possono essere una delle seguenti:
 
- ![Nessuna violazione di soglia](../test/media/icon_ltest_1.gif "Icon_LTest_1") Non si è verificata alcuna violazione di soglia.
+ ![Nessuna violazione di soglia](../test/media/icon_ltest_1.gif) Nessuna violazione di soglia.
 
- ![Violazione di soglia critica nell'ultimo intervallo](../test/media/icon_ltest_2.gif "Icon_LTest_2") Si è verificata una violazione di soglia critica nell'ultimo intervallo.
+ ![Violazione di soglia critica nell'ultimo intervallo](../test/media/icon_ltest_2.gif) Si è verificata una violazione di soglia critica nell'ultimo intervallo.
 
- ![Violazione di soglia critica in un intervallo precedente](../test/media/icon_ltest_3.gif "Icon_LTest_3") Si è verificata una violazione di soglia critica in un intervallo precedente.
+ ![Violazione di soglia critica in un intervallo precedente](../test/media/icon_ltest_3.gif) Si è verificata una violazione di soglia critica in un intervallo precedente.
 
- ![Violazione di soglia con avviso nell'ultimo intervallo](../test/media/icon_ltest_4.gif "Icon_LTest_4") Si è verificata una violazione di soglia con avviso nell'ultimo intervallo.
+ ![Violazione di soglia con avviso nell'ultimo intervallo](../test/media/icon_ltest_4.gif) Si è verificata una violazione di soglia di avvertenza nell'ultimo intervallo.
 
- ![Violazione di soglia con avviso in un intervallo precedente](../test/media/icon_ltest_5.gif "Icon_LTest_5") Si è verificata una violazione di soglia con avviso in un intervallo precedente.
+ ![Violazione di soglia con avviso in un intervallo precedente](../test/media/icon_ltest_5.gif) Si è verificata una violazione di soglia di avvertenza in un intervallo precedente.
 
  Se lo si desidera, è possibile visualizzare le violazioni di soglia anche nel grafico. L'icona di soglia viene visualizzata nel grafico accanto al punto dati in cui si è verificata la violazione di soglia.
 

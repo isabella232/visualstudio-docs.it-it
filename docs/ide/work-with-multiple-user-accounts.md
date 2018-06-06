@@ -9,11 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87e725cb311a6ca07325be0b118687641ed4ecdc
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: edbe53458eafa833287cf48fec4870987a8ba81b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749171"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -27,17 +28,17 @@ Questa procedura dettagliata illustra come aggiungere più account a Visual Stud
 
 - Accedere a Visual Studio con un account Microsoft o un account aziendale. Il nome utente dovrebbe essere visualizzato nell'angolo superiore della finestra, come illustrato nella figura seguente:
 
-     ![Utente attualmente connesso](../ide/media/vs2015_username.png "VS2015_UserName")
+     ![Utente attualmente connesso](../ide/media/vs2015_username.png)
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accedere all'account Azure in Esplora server
 
 Premere **CTRL**+**ALT**+**S** per aprire **Esplora server**. Scegliere l'icona di **Azure** per espanderla e visualizzare le risorse disponibili nell'account Azure associato all'ID usato per accedere a Visual Studio. Dovrebbe apparire una struttura simile a quella seguente, che però contiene le risorse dell'utente.
 
-![Esplora server con nodo Strumenti di Azure espanso](../ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")
+![Esplora server con nodo Strumenti di Azure espanso](../ide/media/vs2015_serverexplorer.png)
 
 La prima volta che si usa Visual Studio su qualsiasi dispositivo specifico, la finestra di dialogo visualizzerà solo le sottoscrizioni registrate con l'ID di accesso all'IDE. Per accedere alle risorse di altri account direttamente da **Esplora server**, fare clic con il pulsante destro del mouse sul nodo **Azure**, scegliere **Gestisci e filtra sottoscrizioni** e aggiungere gli account dal controllo di selezione account. È possibile scegliere un altro account, se necessario, facendo clic sulla freccia giù, sceglierlo dall'elenco di account collegati. Dopo aver scelto l'account, è possibile scegliere le sottoscrizioni da visualizzare in **Esplora server**.
 
-![Finestra di dialogo Gestisci sottoscrizioni Microsoft Azure](../ide/media/vs2015_manage_subs.png "vs2015_manage_subs")
+![Finestra di dialogo Gestisci sottoscrizioni Microsoft Azure](../ide/media/vs2015_manage_subs.png)
 
 Alla successiva apertura di **Esplora server** verranno visualizzate le risorse per la sottoscrizione.
 
@@ -54,7 +55,7 @@ Alla successiva apertura di **Esplora server** verranno visualizzate le risorse 
 
 Con Azure AD viene abilitato il supporto per end-user Single Sign-On in applicazioni Web ASP.NET o per Autenticazione di AD in servizi API Web. L'autenticazione di dominio è diverso da autenticazione degli account utente singoli; gli utenti che dispongono dell'accesso al dominio Active Directory è possono utilizzare gli account di Windows Azure esistenti per connettersi alle applicazioni web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio. Per un esempio pratico, creare un'applicazione Web (**File** > **Nuovo progetto** > **C#** > **Cloud** > **Applicazione Web ASP.NET**). Nella finestra di dialogo **Nuovo progetto ASP.NET** scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
 
-![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015_change_authentication.png "VS2015_change_authentication")
+![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015_change_authentication.png)
 
 Per altre informazioni sui diversi tipi di autenticazione in ASP.NET, vedere [Creare progetti Web ASP.NET in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (le informazioni sull'autenticazione sono ancora pertinenti per le versioni attuali di Visual Studio).
 
@@ -66,11 +67,11 @@ Nel menu principale scegliere **Team** > **Connetti a Team Foundation Server** p
 
 Fare clic sulla freccia GIÙ accanto al nome utente nell'angolo superiore di Visual Studio. Quindi scegliere la voce di menu **Impostazioni account**. Verrà visualizzata la finestra **Gestione account** con l'account usato per accedere. Scegliere il collegamento **Aggiungi nuovo account** in basso nella finestra di dialogo per aggiungere un nuovo account Microsoft oppure un nuovo account aziendale o dell'istituto di istruzione.
 
-![Selezione account di Visual Studio](../ide/media/vs2015_acct_picker.png "VS2015_acct_picker")
+![Selezione di account di Visual Studio](../ide/media/vs2015_acct_picker.png)
 
 Seguire i prompt visualizzati per immettere le credenziali del nuovo account. La figura seguente illustra **Gestione account** dopo che un utente ha aggiunto il proprio account aziendale *Contoso.com*.
 
-![Gestione account](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
+![Gestione account](../ide/media/vs2015_accountmanager.gif)
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Tornare alla procedura guidata Aggiungi servizio connesso e a Esplora server
 

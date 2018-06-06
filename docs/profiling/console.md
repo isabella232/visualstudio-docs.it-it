@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7fb90261453caab8dbe54fce79605c1d891d537
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 04cf166880ac8bcf83d4657b9c1c2eec1b46a14a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690816"
 ---
 # <a name="console"></a>Console
 L'opzione **Console** di VSPerfCmd.exe consente di avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. **Console** può essere usata solo con l'opzione **Launch** di VSPerfCmd. Se l'applicazione non è un'applicazione della riga di comando, **Console** non ha alcun effetto.  
@@ -36,6 +37,6 @@ VSPerfCmd.exe /Launch:AppName /Console
   
 ## <a name="see-also"></a>Vedere anche  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+ [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

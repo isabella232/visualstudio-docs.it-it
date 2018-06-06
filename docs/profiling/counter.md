@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e9519946dae36fcf8c9bc8808a23fbfaa985b8
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d09dc41f3726f21b432f39a504b5ea8b320bf107
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749245"
 ---
 # <a name="counter"></a>Counter
 L'opzione **Counter** raccoglie i dati dai contatori delle prestazioni del processore (hardware).  
@@ -73,6 +74,6 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
   
 ## <a name="see-also"></a>Vedere anche  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+ [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

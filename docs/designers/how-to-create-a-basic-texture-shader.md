@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Creare uno shader con trama di base'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe0031eed40424dbe9dc0219ecf82c69e44b33c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747053"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procedura: Creare uno shader con trama di base
 
@@ -46,7 +48,7 @@ La figura seguente illustra il grafico shader completato e un'anteprima dello sh
 > [!NOTE]
 > In questa illustrazione, viene utilizzato un piano come forma di anteprima ed è stata specificata una trama per illustrare meglio l'effetto dello shader.
 
-![Grafico shader e anteprima del relativo effetto](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")
+![Grafico shader e anteprima del relativo effetto](../designers/media/digit-texture-effect.png)
 
 Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [Finestra di progettazione shader](../designers/shader-designer.md).
 

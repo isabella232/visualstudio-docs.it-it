@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750838"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisi dell'attività utente virtuale del test di carico nella visualizzazione Dettagli dell'Analizzatore test di carico
 
 **Grafico attività utente virtuale**
 
- ![Grafico attività utente virtuale](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Grafico attività utente virtuale](../test/media/virtual_actchart.png)
 
  La visualizzazione Dettagli consente di visualizzare il Grafico attività utente virtuale, usato per analizzare visivamente le attività eseguite dai singoli utenti virtuali durante il test di carico. Il Grafico attività utente virtuale consente di visualizzare modelli dell'attività utente, modelli di carico, test non riusciti o lenti correlati e richieste con altra attività utente virtuale. Il Grafico attività utente virtuale consente inoltre di determinare i picchi di utilizzo della CPU, le cadute di richieste al secondo e i test o le pagine in esecuzione durante tali picchi o cadute.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Riquadro Legenda dettagli**
 
- ![Riquadro Legenda dettagli](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
 
  Il riquadro Legenda dettagli è visibile nel Grafico attività utente virtuale. Il riquadro Legenda dettagli consente di filtrare test, pagine e transazioni in base a diversi criteri. È ad esempio possibile rimuovere determinati test dalla visualizzazione, rimuovere tutti i test superati o rimuovere i test non superati a causa di errori specifici. È anche possibile rimuovere tutti i test che non dispongono di un log.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Riquadro Risultati filtro**
 
- ![Riquadro Risultati filtro](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
 
  Il riquadro Risultati filtro è visibile nel Grafico attività utente virtuale. Il pannello Risultati filtro può essere usato per filtrare in base ai seguenti criteri:
 

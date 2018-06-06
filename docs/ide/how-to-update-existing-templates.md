@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572566"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedura: Aggiornare modelli esistenti
 
@@ -72,4 +73,3 @@ In Visual Studio è disponibile l'**Esportazione guidata modelli** che può esse
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Parametri di modello](../ide/template-parameters.md)
-- [Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md)

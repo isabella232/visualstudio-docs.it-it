@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Creare uno shader con phong di base'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f81d6e34a6fe0932a8bccae2202c1640b8befb76
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746585"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
@@ -44,7 +46,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 > [!NOTE]
 > Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower**. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).
 
- ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png)
 
  Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).
 
@@ -55,7 +57,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 >
 > La proprietà **MaterialSpecularPower** determina l'intensità delle evidenziazioni speculari. Potenze speculari elevate simulano evidenziazioni deboli e più localizzate, mentre potenze speculari molto deboli simulano evidenziazioni intense e ampie che possono saturare eccessivamente e nascondere il colore dell'intera superficie.
 
- ![Illuminazione Phong applicata a un modello](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")
+ ![Illuminazione Phong applicata a un modello](../designers/media/digit-lighting-model.png)
 
  Per altre informazioni su come applicare uno shader a un modello 3D, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

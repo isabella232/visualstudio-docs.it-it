@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e94932749523cea906cd60442971b93160b6c13
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690900"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tramite il metodo di campionamento dalla riga di comando.  
@@ -25,7 +26,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 |----------|---------------------|  
 |**Connettere il profiler a un servizio .NET**|-   [Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrumentare un servizio .NET e raccogliere dati di memoria .NET**|-   [Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Aggiungere dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Attività correlate
   

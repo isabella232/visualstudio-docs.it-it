@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749229"
 ---
 # <a name="options-text-editor-all-languages"></a>Opzioni, Editor di testo, Tutti i linguaggi
 Questa finestra di dialogo consente di modificare il comportamento predefinito dell'editor del codice. Queste impostazioni si applicano anche agli altri editor basati sull'editor del codice, come ad esempio la visualizzazione dell'origine della finestra di progettazione HTML. Per aprire questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella dell'**Editor di testo** espandere la sottocartella **All Languages** (Tutti i linguaggi), quindi scegliere **Generale**.
@@ -70,7 +71,7 @@ Questa finestra di dialogo consente di modificare il comportamento predefinito d
 
  Quando questa opzione è selezionata, viene visualizzato un indicatore a forma di freccia rivolta indietro in caso di ritorno a capo automatico di una riga lunga su una seconda riga.
 
- ![Schermata LineBreakSymbol](../../ide/reference/media/linebreak.gif "interruzione riga")
+ ![Schermata LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
  Deselezionare questa opzione per non visualizzare tali indicatori.
 

@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e902df40e27fb5bf27ca29d9335634844024f3fb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747482"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installazione di Microsoft Help Viewer
 
@@ -46,7 +47,7 @@ Help Viewer è un componente di installazione facoltativo di Visual Studio. Per 
 
 |         |         |
 |---------|---------|
-|  ![icona della telecamera](../install/media/video-icon.png "Guardare un video")  |  [Guardare un video](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) su come installare Microsoft Help Viewer usando il programma di installazione di Visual Studio. |
+|  ![icona della telecamera per un video](../install/media/video-icon.png)  |  [Guardare un video](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) su come installare Microsoft Help Viewer usando il programma di installazione di Visual Studio. |
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477106"
 ---
 # <a name="utilization-view"></a>Visualizzazione Uso
 La **visualizzazione Utilizzo** mostra le informazioni relative a CPU, GPU e altre risorse di sistema usate dal processo corrente. (Scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Viene indicato l'utilizzo medio dei core da parte del processo analizzato, del processo inattivo, del processo di sistema e di altri processi in esecuzione nel sistema nel tempo. Non viene indicato quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico. La visualizzazione viene generata dividendo il tempo di profilatura in brevi segmenti di tempo. Per ogni segmento, nel grafico viene rappresentato il numero medio di thread di processo in esecuzione nei core logici durante l'intervallo.  
@@ -46,7 +47,7 @@ La **visualizzazione Utilizzo** mostra le informazioni relative a CPU, GPU e alt
   
  Se si usa la GPU con C++ AMP o DirectX, potrebbe essere utile identificare il numero di motori GPU in uso o le aree di inattività imprevista della GPU.  
   
-## <a name="zooming"></a>Zoom  
+## <a name="zoom"></a>Zoom  
  Per ingrandire il grafico Utilizzo CPU o il grafico Attività GPU, selezionare una sezione o usare il dispositivo di scorrimento dello zoom sopra il grafico. L'impostazione dello zoom viene mantenuta quando si passa ad altre visualizzazioni. Per eseguire lo zoom indietro, usare il dispositivo di scorrimento dello zoom. È inoltre possibile eseguire lo zoom tenendo premuto CTRL mentre si sposta la rotellina del mouse.  
   
 ## <a name="see-also"></a>Vedere anche  

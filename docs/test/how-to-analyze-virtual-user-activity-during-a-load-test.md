@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751234"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: analizzare le attività degli utenti virtuali durante un test di carico utilizzando il grafico attività utente virtuale
 
@@ -75,7 +76,7 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il Grafi
 
      **Riquadro Legenda dettagli**
 
-     ![Riquadro Legenda dettagli](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
 
 2.  Selezionare o deselezionare le caselle di controllo relative a pagine ASPX, errori, log, test e ricerca associati al test di carico.
 
@@ -87,7 +88,7 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il Grafi
 
      **Riquadro Risultati filtro**
 
-     ![Riquadro Risultati filtro](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
 
 3.  Nei risultati del filtro selezionare o deselezionare le caselle di controllo per le opzioni di filtro seguenti:
 

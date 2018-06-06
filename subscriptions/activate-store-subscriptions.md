@@ -9,11 +9,12 @@ description: Informazioni su come attivare le sottoscrizioni di Visual Studio ac
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477275"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Qual è la procedura per attivare una sottoscrizione acquistata da Microsoft Store?
 Se la sottoscrizione di Visual Studio è stata acquistata usando Microsoft Store, la procedura di attivazione può essere avviata dalla pagina di conferma o dal messaggio di posta elettronica di conferma del pagamento ricevuto dopo l'acquisto. 
@@ -32,7 +33,7 @@ Se la sottoscrizione di Visual Studio è stata acquistata usando Microsoft Store
 7. Al completamento dell'accesso verrà visualizzata la finestra "Attiva la sottoscrizione a Visual Studio".
 8. Immettere il codice Product Key disponibile nella pagina di conferma o nel messaggio di posta elettronica di conferma del pagamento e fare clic su **Attivalo**.
 
-    ![Immettere il codice Product Key](_img/buy-retail/enter-product-key.png)
+    <img alt="Enter product key" src="_img/buy-retail/enter-product-key.png" style="border: 1px solid #CCCCCC" />
 
 9. A questo punto la sottoscrizione dovrebbe essere visibile nella pagina [Sottoscrizioni](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e dovrebbero essere accessibili tutti i vantaggi della sottoscrizione. 
 

@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3fe4cf9591d64465fa7ec44d1653bbfc65ec8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92d82cfaf2f06018ce93e6c1fce1abd0b63809f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747310"
 ---
 # <a name="image-editor"></a>Editor di immagini
 
@@ -93,7 +94,7 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 
  Di seguito è illustrata la barra degli strumenti della **modalità dell'editor di immagini**:
 
- ![Barra degli strumenti della modalità dell'editor di immagini.](../designers/media/digit-tre-modal-toolbar.png "Digit-TRE-Modal-Toolbar")
+ ![Barra degli strumenti modale Editor di immagini.](../designers/media/digit-tre-modal-toolbar.png)
 
  La tabella seguente descrive gli elementi disponibili nella barra degli strumenti della **modalità dell'editor di immagini**, nell'ordine di visualizzazione da sinistra verso destra.
 
@@ -117,7 +118,7 @@ Le barre degli strumenti dell'editor di immagini contengono i comandi che consen
 
  Di seguito è illustrata la barra degli strumenti **Editor di immagini**.
 
- ![Barra degli strumenti Editor di immagini](../designers/media/digit-tre-toolbar.png "Digit-TRE-Toolbar")
+ ![Barra degli strumenti dell'editor di immagini](../designers/media/digit-tre-toolbar.png)
 
  La tabella seguente descrive gli elementi disponibili nella barra degli strumenti **Editor di immagini**, nell'ordine di visualizzazione dall'alto verso il basso.
 

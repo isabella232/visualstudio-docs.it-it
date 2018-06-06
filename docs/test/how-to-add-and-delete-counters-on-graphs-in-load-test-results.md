@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 110aa964c6163f508ba9cd5f26409d0a9912a17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3293b526b3380d3052123d45f3fb7f6599f7b5f7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751975"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedura: aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
 
 Per aggiungere contatori delle prestazioni a un grafico, è possibile utilizzare il riquadro Contatori.
 
- ![Contatore aggiunto a un grafico](../test/media/ltest_selectcounter.png "LTest_SelectCounter")
+ ![Contatore aggiunto a un grafico](../test/media/ltest_selectcounter.png)
 
  **Considerazioni sull'intervallo di campionamento dei contatori delle prestazioni**
 

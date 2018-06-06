@@ -12,11 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751455"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolamento del codice sottoposto a test con Microsoft Fakes
 
@@ -28,7 +29,7 @@ Fakes è di due tipi:
 
 -   Uno [shim](#shims) modifica il codice compilato dell'applicazione in fase di esecuzione in modo tale che, invece di effettuare la chiamata al metodo specificato, esegue il codice dello shim fornito dal test. Gli shim possono essere usati per sostituire le chiamate agli assembly che non si possono modificare, ad esempio gli assembly .NET.
 
-![Fakes sostituisce altri componenti](../test/media/fakes-2.png "Fakes-2")
+![Fakes sostituisce altri componenti](../test/media/fakes-2.png)
 
 **Requisiti**
 

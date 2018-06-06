@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747229"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificare e personalizzare i tasti di scelta rapida in Visual Studio
 
@@ -48,7 +49,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
-   ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png)
 
 3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
@@ -60,7 +61,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
 5. Se al comando è associato un tasto di scelta rapida, verrà visualizzato nell'elenco **Tasti di scelta rapida per comando selezionato**.
 
-   ![Visualizzare un tasto di scelta rapida per un comando specifico](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Visualizzare un collegamento per un comando specifico](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizzare un tasto di scelta rapida
 
@@ -86,7 +87,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
      Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, premere il tasto **BACKSPACE** per eliminare il tasto di scelta rapida prima di provarne un altro.
 
-    ![Specificare un tasto di scelta rapida diverso per un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Specificare un collegamento diverso per un comando](../ide/media/reassignshortcut.png)
 
 7. Scegliere il pulsante **Assegna**.
 
@@ -107,7 +108,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
 4. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Avanti**.
 
-    ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png)
 
 5. Nelle caselle **Assegnare un nome al file di impostazioni?** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
 
@@ -129,7 +130,7 @@ Se un tasto di scelta rapida viene assegnato a un comando nel contesto globale e
 
 7. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Fine**.
 
-    ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Vedere anche
 

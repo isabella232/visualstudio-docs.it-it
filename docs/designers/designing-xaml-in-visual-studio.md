@@ -1,6 +1,7 @@
 ---
 title: Progettazione di XAML in Visual Studio
 ms.date: 07/17/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5309bff9fdc11c5e6a2dffc470889e448aa08142
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745724"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Progettare XAML in Visual Studio
 
@@ -36,17 +38,17 @@ Per attività più semplici l'IDE per Visual Studio e Blend per Visual Studio co
 
 - **Un'interfaccia utente coerente:** è possibile progettare le applicazioni all'interno del contesto familiare dell'interfaccia utente di Visual Studio, che semplifica il passaggio tra IDE in modo più produttivo e piacevole. Blend per Visual Studio usa il tema scuro di Visual Studio che consente di concentrarsi sul contenuto che si sta progettando migliorando il contrasto tra il contenuto e l'interfaccia utente. Vedere [Creating a UI by using XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md) (Creazione di un'interfaccia utente tramite la finestra di progettazione XAML).
 
-     ![IDE per Blend per Visual Studio ](../designers/media/blendide.png "BlendIDE")
+     ![Blend per Visual Studio IDE](../designers/media/blendide.png)
 
 - **IntelliSense XAML:** entrambi gli IDE supportano tutte le funzionalità comuni che sarebbero previste da IntelliSense incluso il completamento istruzioni, il supporto per operazioni come aggiunta di commenti e formattazione di codice e spostamento di risorse, editor di associazione e di codice.
 
-- **Base funzionalità di debug:** è ora possibile eseguire il debug in Blend, inclusa l'impostazione di punti di interruzione nel codice per il debug dell'app in esecuzione. Per garantire un'esperienza di debug coerente con Visual Studio, Blend per Visual Studio include la maggior parte delle finestre di debug e le barre degli strumenti di Visual Studio. Avanzate funzionalità di debug, ad esempio la diagnostica e l'analisi del codice sono disponibili solo in Visual Studio. Vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
+- **Base funzionalità di debug:** è ora possibile eseguire il debug in Blend, inclusa l'impostazione di punti di interruzione nel codice per il debug dell'app in esecuzione. Per garantire un'esperienza di debug coerente con Visual Studio, Blend per Visual Studio include la maggior parte delle finestre di debug e le barre degli strumenti di Visual Studio. Avanzate funzionalità di debug, ad esempio la diagnostica e l’analisi del codice sono disponibili solo in Visual Studio. Vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-- **Esperienza di ricaricamento file:** è possibile modificare i file XAML in Blend per Visual Studio o Visual Studio e ricaricare automaticamente i file modificati quando si passa dall'uno all'altro. Per ridurre al minimo le interruzioni di flusso di lavoro, è ora possibile impostare le preferenze di ricaricamento file nella finestra Ricarica file.
+- **Esperienza di ricaricamento file:** è possibile modificare i file XAML in Blend per Visual Studio o Visual Studio e ricaricare automaticamente i file modificati quando si passa dall’uno all’altro. Per ridurre al minimo le interruzioni di flusso di lavoro, è ora possibile impostare le preferenze di ricaricamento file nella finestra Ricarica file.
 
-     ![Esperienza di ricaricamento file](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Esperienza di ricaricamento file](../designers/media/blendfilereload.png)
 
-- **Impostazioni e layout sincronizzati:** layout personalizzati consentono di salvare e applicare le personalizzazioni di layout delle finestre degli strumenti. Quando si effettua l'accesso con lo stesso account Microsoft, Visual Studio sincronizzerà queste personalizzazioni e le preferenze per Visual Studio e Blend per Visual Studio tra più computer. Vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+- **Impostazioni e layout sincronizzati:** layout personalizzati consentono di salvare e applicare le personalizzazioni di layout delle finestre degli strumenti. Quando si effettua l’accesso con lo stesso account Microsoft, Visual Studio sincronizzerà queste personalizzazioni e le preferenze per Visual Studio e Blend per Visual Studio tra più computer. Vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 - **Un Esplora soluzioni comune:** Esplora soluzioni offre una visualizzazione organizzata dei progetti e dei relativi file, nonché l'accesso immediato ai comandi associati. Con Esplora soluzioni è più facile lavorare con progetti di grandi imprese. Vedere [Solutions and Projects](../ide/solutions-and-projects-in-visual-studio.md) (Soluzioni e progetti)
 

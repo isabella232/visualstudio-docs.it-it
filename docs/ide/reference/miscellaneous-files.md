@@ -22,18 +22,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2106c89b9bbef2babbe7e4d203c32a1d96d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747733"
 ---
 # <a name="miscellaneous-files"></a>File esterni
 È consigliabile usare gli editor [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per lavorare in modo indipendente sui file di un progetto o di una soluzione. Mentre si ha una soluzione aperta, è possibile aprire e modificare i file senza aggiungerli a una soluzione o a un progetto. I file che si intende usare in modo indipendente dai contenitori sono chiamati file esterni. I file esterni sono esterni a soluzioni e progetti, non sono inclusi nelle compilazioni e non possono essere inclusi in una soluzione sotto il controllo del codice sorgente.
 
  L'apertura dei file in modo indipendente dal contenitore è utile per diversi motivi. Si potrebbe voler visualizzare un file durante lo sviluppo di una soluzione basata su un progetto ma che non è parte integrante dello sviluppo della soluzione. Tra gli esempi comuni vi sono note o istruzioni di sviluppo, lo schema del database e segmenti di codice. L'utente potrebbe anche voler creare un file autonomo.
 
- ![Progetti di soluzioni](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")
+ ![Progetti di soluzioni](../../ide/reference/media/projects_solutions_misc.gif)
 
  Esplora soluzioni può visualizzare una cartella File esterni per i file se sono abilitate le opzioni per la cartella. È possibile impostare le opzioni da [Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md). Dopo la chiusura di un file esterno, esso non è associato ad alcuna soluzione o progetto particolare a meno che non sia stata abilitata un'opzione a tale scopo.
 

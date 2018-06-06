@@ -1,6 +1,7 @@
 ---
 title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 ms.date: 07/17/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -14,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9eadc306b0b2f7c53dffc01d27590bc5d4cf4b52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745750"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva per semplificare la progettazione di app per Windows e per il Web. È possibile creare interfacce utente per le app trascinando i controlli dalla **Casella degli strumenti** e impostando le proprietà nella finestra **Proprietà** . È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
@@ -33,7 +35,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Nella visualizzazione Progettazione la finestra che include la *tavola da disegno* è la finestra attiva ed è possibile usarla come area di lavoro principale. Permette di progettare visivamente una pagina nell'app, aggiungendo o disegnando elementi e quindi modificandoli. Per altre informazioni, vedi [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
- ![Visualizzazione progettazione nella finestra di progettazione XAML](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![Visualizzazione Progettazione della finestra di progettazione XAML](../designers/media/xaml_editor_design_view.png)
 
  Nella tavola da disegno sono disponibili le funzionalità seguenti:
 
@@ -55,7 +57,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Nella visualizzazione Progettazione sono disponibili comandi aggiuntivi della tavola da disegno nell'area inferiore sinistra della schermata, come illustrato di seguito:
 
- ![Comandi della visualizzazione di progettazione](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Comandi della visualizzazione Progettazione](../designers/media/xaml_editor_design_controls.png)
 
  Nella barra degli strumenti sono disponibili i comandi seguenti:
 
@@ -69,7 +71,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Nella visualizzazione XAML, la finestra contenente l'editor XAML è la finestra attiva e l'editor XAML è lo strumento di creazione primario. Il linguaggio Extensible Application Markup Language (XAML) fornisce un vocabolario dichiarativo basato su XML per la specifica dell'interfaccia utente di un'applicazione. La visualizzazione XAML include IntelliSense, la formattazione automatica, l'evidenziazione della sintassi e la navigazione tra tag. La figura seguente mostra la visualizzazione XAML:
 
- ![Visualizzazione XAML](../designers/media/xaml_editor.png "xaml_editor")
+ ![Visualizzazione XAML](../designers/media/xaml_editor.png)
 
  **Barra della visualizzazione suddivisa** La barra della visualizzazione suddivisa compare nella parte superiore della visualizzazione XAML quando l'editor XAML si trova nella finestra inferiore. Tale barra consente di controllare le dimensioni relative delle visualizzazioni Progettazione e XAML. È anche possibile scambiare le posizioni delle visualizzazioni, usando il pulsante **Scambia riquadri** , specificare se le visualizzazioni sono disposte orizzontalmente o verticalmente e comprimere una visualizzazione.
 
@@ -78,7 +80,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="device-window"></a>Finestra Dispositivo
  La finestra Dispositivo nella finestra di progettazione XAML consente di simulare in fase di progettazione diverse viste, visualizzazioni e opzioni di visualizzazione per il progetto. La finestra Dispositivo è disponibile nel menu **Progettazione** quando si usa la finestra di progettazione XAML e ha l'aspetto seguente:
 
- ![Finestra dispositivo](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Finestra Dispositivo](../designers/media/xaml_editor_device_panel.png)
 
  Le opzioni della finestra Dispositivo sono le seguenti:
 
@@ -113,7 +115,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Per visualizzare la finestra Struttura documento, scegliere **Visualizza**, **Altre finestre**, **Struttura documento**sulla barra dei menu.
 
- ![Finestra Struttura documento](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Finestra Struttura documento](../designers/media/xaml_editor_doc_outline.png)
 
  Le opzioni della finestra Struttura documento sono le seguenti:
 
@@ -128,7 +130,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="properties-window"></a>Finestra Proprietà
  La finestra Proprietà consente di impostare valori di proprietà sui controlli e ha l'aspetto seguente:
 
- ![Finestra proprietà](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Finestra Proprietà](../designers/media/xaml_editor_prop_window.png)
 
  Nella parte superiore della finestra Proprietà sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra Proprietà mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](http://go.microsoft.com/fwlink/?LinkID=247983).
 

@@ -1,6 +1,7 @@
 ---
 title: Finestra di progettazione shader
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 641db475998d62df534353824f9d58a01c8d1792
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746780"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
@@ -65,7 +67,7 @@ I comandi che influiscono sullo stato della finestra di progettazione shader si 
 
 Di seguito è illustrata la barra degli strumenti **Modalità progettazione shader**.
 
-![Barra degli strumenti Modalità progettazione shader.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")
+![Barra degli strumenti modale progettazione shader.](../designers/media/digit-dsd-modal-toolbar.png)
 
 Questa tabella descrive gli elementi disponibili nella barra degli strumenti **Modalità progettazione shader**, elencati nell'ordine di visualizzazione da sinistra verso destra.
 

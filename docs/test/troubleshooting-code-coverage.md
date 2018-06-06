@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e7e939a5acaf89b3013cb5465b8fac6c272dd5d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751566"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
@@ -23,7 +24,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
 
 Se si sceglie un comando **Analizza code coverage** dal menu Test e se la compilazione e i test vengono eseguiti correttamente, nella finestra di code coverage verrà visualizzato un elenco di risultati. Potrebbe essere necessario espandere gli elementi per visualizzare il dettaglio.
 
-![Risultati del code coverage con colorazione](../test/media/codecoverage1.png "CodeCoverage1")
+![Risultati del code coverage con colorazione](../test/media/codecoverage1.png)
 
 Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

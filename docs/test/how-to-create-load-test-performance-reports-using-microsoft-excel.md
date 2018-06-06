@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751533"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: creare rapporti di prestazioni dei test di carico utilizzando Microsoft Excel
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
  Nella figura seguente è illustrato un esempio di report in cui viene mostrata una correlazione tra una riduzione della velocità della transazione di aggiornamento del carrello e l'alterazione del contatore di percentuale processore. Ciò indica un potenziale problema nel codice dell'applicazione, anziché nel database o nella rete, ed è una situazione adatta alla diagnosi tramite il profiler ASP.NET.
 
- ![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png "LT_Excel")
+ ![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png)
 
  È possibile generare report di Excel nell'Analizzatore test di carico usando il pulsante **Crea rapporto Excel** nella barra degli strumenti oppure da Excel usando l'opzione **Rapporto test di carico** nella scheda **Test di carico** della barra multifunzione di Office.
 
