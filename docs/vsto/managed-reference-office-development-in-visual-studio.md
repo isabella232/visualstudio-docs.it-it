@@ -1,5 +1,5 @@
 ---
-title: Riferimenti (sviluppo per Office in Visual Studio) gestiti | Documenti Microsoft
+title: Riferimenti gestiti (sviluppo per Office in Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3c991b6507ded441dd37ec92cb5efd0e2167285
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572192"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Riferimenti gestiti (sviluppo per Office in Visual Studio)
   Questa sezione include documentazione di riferimento alle API per gli spazi dei nomi e i tipi usati nei progetti di Office destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per la documentazione di riferimento API sugli spazi dei nomi e sui tipi utilizzati nei progetti di Office destinati a .NET Framework 3.5, vedere la sezione di riferimento seguente nella documentazione di Visual Studio: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Interessati allo sviluppo di soluzioni che estendono l'esperienza di Office in [più piattaforme](https://dev.office.com/add-in-availability)? Vedere la nuova [modello aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e i componenti aggiuntivi VSTO e possono essere creati con quasi tutte le tecnologie, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  <xref:Microsoft.Office.Tools>  
  Contiene classi comuni per la programmazione di soluzioni Office. Includono la classe base per i componenti aggiuntivi VSTO, classi per la creazione di riquadri attività personalizzati nei componenti aggiuntivi VSTO, classi per la creazione di smart tag nelle soluzioni Excel e Word e classi per la creazione di riquadri azioni nelle personalizzazioni a livello di documento.  
   
@@ -63,8 +64,8 @@ ms.lasthandoff: 04/16/2018
  Contiene classi di attività MSBuild che vengono usate per compilare progetti di Office.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica di Visual Studio Tools per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Introduzione al &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Visual Studio tools per Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Iniziare a &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)  
   

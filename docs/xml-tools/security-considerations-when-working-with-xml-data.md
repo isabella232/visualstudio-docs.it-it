@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c79330091c5ef5cbe4f89dee1422d1de267f70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572605"
 ---
-# <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza durante l'utilizzo di dati XML
+# <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza quando si lavora con dati XML
 
 In questo argomento vengono illustrati i problemi di sicurezza che è necessario prendere in considerazione quando si usa l'editor XML o il debugger XSLT.
 
@@ -32,7 +33,7 @@ In questo argomento vengono illustrati i problemi di sicurezza che è necessario
 
 -   L'editor XML usa le classi <xref:System.Net> per scaricare gli schemi
 
-## <a name="xslt-debugger"></a>Debugger XSLT
+## <a name="xslt-debugger"></a>debugger XSLT
 
  Il debugger XSLT usa il motore di debug gestito di Visual Studio e le classi degli spazi dei nomi <xref:System.Xml> e <xref:System.Xml.Xsl>.
 
@@ -44,4 +45,4 @@ In questo argomento vengono illustrati i problemi di sicurezza che è necessario
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Domini dell'applicazione](/dotnet/framework/app-domains/application-domains)
+- [Domini applicazione](/dotnet/framework/app-domains/application-domains)

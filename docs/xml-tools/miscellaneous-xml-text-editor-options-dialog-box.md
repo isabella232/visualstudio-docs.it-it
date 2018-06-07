@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571770"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varie, XML, editor di testo, finestra di dialogo Opzioni
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varie, XML, Editor di testo, finestra di dialogo Opzioni
 
 Questa finestra di dialogo consente di modificare le impostazioni di completamento automatico e dello schema per l'editor XML. È possibile accedere il **opzioni** dalla finestra di dialogo di **strumenti** menu.
 
@@ -70,5 +71,5 @@ Questa finestra di dialogo consente di modificare le impostazioni di completamen
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Proprietà dei documenti XML, finestra Proprietà](../xml-tools/xml-document-properties-properties-window.md)
+- [Proprietà del documento XML, finestra proprietà](../xml-tools/xml-document-properties-properties-window.md)
 - [Componenti dell'editor XML](../xml-tools/xml-editor-components.md)

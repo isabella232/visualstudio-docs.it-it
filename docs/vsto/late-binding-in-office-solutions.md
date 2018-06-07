@@ -1,5 +1,5 @@
 ---
-title: L'associazione tardiva nelle soluzioni Office | Documenti Microsoft
+title: Associazione tardiva nelle soluzioni Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572550"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associazione tardiva nelle soluzioni Office
   Alcuni tipi nei modelli a oggetti delle applicazioni di Office forniscono le funzionalità disponibili tramite le funzionalità di associazione tardiva. Ad esempio, alcuni metodi e proprietà può restituire diversi tipi di oggetti a seconda del contesto dell'applicazione di Office e alcuni tipi possono esporre metodi o proprietà in contesti diversi.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/16/2018
   
  Progetti di Visual Basic dove **Option Strict** è disattivato e progetti Visual c# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] può lavorare direttamente con i tipi che utilizzano queste funzionalità di associazione tardiva.  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Cast implicito ed esplicito dei valori restituiti di oggetto  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>I valori restituiti implicito ed esplicito eseguire il cast dell'oggetto  
  Numerosi metodi e proprietà di restituire assembly di interoperabilità primari (PIA) di Microsoft Office <xref:System.Object> valori, poiché possono restituire diversi tipi di oggetti. Ad esempio, il <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> proprietà restituisce un <xref:System.Object> perché il relativo valore restituito può essere un <xref:Microsoft.Office.Interop.Excel.Worksheet> o <xref:Microsoft.Office.Interop.Excel.Chart> oggetto, a seconda del foglio attivo.  
   
  Quando una proprietà o metodo restituisce un <xref:System.Object>, è necessario convertire in modo esplicito (in Visual Basic) l'oggetto nel tipo corretto nei progetti Visual Basic in cui **Option Strict** si trova in. Non è necessario eseguire il cast esplicito <xref:System.Object> restituiscono valori nei progetti Visual Basic in cui **Option Strict** è disattivata.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="accessing-members-that-are-available-only-through-late-binding"></a>L'accesso ai membri che sono disponibili solo tramite l'associazione tardiva  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>Accedere ai membri che sono disponibili solo tramite l'associazione tardiva  
  Alcune proprietà e metodi nell'assembly di interoperabilità primari di Office sono disponibili solo tramite l'associazione tardiva. Nei progetti Visual Basic dove **Option Strict** è attiva o nei progetti Visual c# che hanno come destinazione il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], è possibile utilizzare le funzionalità di associazione tardiva nelle lingue seguenti per accedere ai membri ad associazione tardiva. Nei progetti Visual Basic dove **Option Strict** è attivo, è necessario usare la reflection per accedere a questi membri.  
   
 ### <a name="examples"></a>Esempi  
@@ -64,9 +65,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Scrittura di codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
+ [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)   
  [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Utilizzo del tipo dinamico &#40;C&#35; Guida per programmatori&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Utilizzo del tipo dinamico &#40;C&#35; Guida alla programmazione&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Istruzione Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

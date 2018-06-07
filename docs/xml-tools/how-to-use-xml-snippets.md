@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573128"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: utilizzare XML frammenti di codice
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 04/26/2018
 
 Dopo che il frammento XML è stato aggiunto all'editor, i campi modificabili nel frammento vengono evidenziati in giallo e il cursore viene posizionato nel primo campo modificabile.
 
-## <a name="insert-snippet"></a>Inserisci frammento di codice
+## <a name="insert-snippet"></a>Inserisci frammento
 
 Le procedure seguenti descrivono come accedere il **Inserisci frammento di codice** comando.
 
@@ -49,7 +50,7 @@ Le procedure seguenti descrivono come accedere il **Inserisci frammento di codic
 
 3. Selezionare un frammento dall'elenco usando il mouse o digitando il nome del frammento di codice e premendo **scheda** o **invio**.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Per inserire i frammenti dall'elenco Completa parola di IntelliSense
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Per inserire i frammenti di codice tramite l'elenco completa parola di IntelliSense
 
 1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.
 
@@ -79,7 +80,7 @@ Le procedure seguenti descrivono come accedere il **Racchiudi** comando.
 > [!NOTE]
 > Il **Racchiudi** comando è anche disponibile tramite il tasto di scelta rapida (**Ctrl**+**K**, quindi **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Per usare il comando dal menu di scelta rapida
+### <a name="to-use-surround-with-from-the-context-menu"></a>Per utilizzare Racchiudi dal menu di scelta rapida
 
 1. Selezionare il testo da racchiudere nell'editor XML.
 
@@ -89,7 +90,7 @@ Le procedure seguenti descrivono come accedere il **Racchiudi** comando.
 
 3. Selezionare un frammento dall'elenco usando il mouse o digitando il nome del frammento di codice e premendo **scheda** o **invio**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Per utilizzare dal menu di IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Per utilizzare Racchiudi dal menu di IntelliSense
 
 1. Selezionare il testo da racchiudere nell'editor XML.
 
@@ -99,7 +100,7 @@ Le procedure seguenti descrivono come accedere il **Racchiudi** comando.
 
 3. Selezionare un frammento dall'elenco usando il mouse o digitando il nome del frammento di codice e premendo **scheda** o **invio**.
 
-## <a name="using-xml-snippets"></a>Utilizzo dei frammenti XML
+## <a name="use-xml-snippets"></a>Usare i frammenti XML
 
 Una volta scelto il frammento XML, il testo del frammento di codice viene inserito automaticamente nella posizione del cursore. I campi modificabili del frammento vengono evidenziati e il primo campo modificabile viene selezionato automaticamente. Il campo attualmente selezionato è di tipo boxed.
 
@@ -109,10 +110,10 @@ Quando si seleziona un campo, è possibile digitare un nuovo valore per tale cam
 
 Premendo **invio** o **Esc** Annulla la modifica dei campi e restituisce l'editor Normal.
 
-Colori predefiniti per i campi dei frammenti di codice modificabile possono essere modificati modificando l'impostazione del campo frammento di codice nel **tipi di carattere e colori** riquadro del **opzioni** la finestra di dialogo. Per ulteriori informazioni, vedere [procedura: modificare tipi di carattere e colori nell'Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+I colori predefiniti per i campi di frammento di codice modificabile possono essere cambiati modificando il **campo frammento di codice** impostazione nel **tipi di carattere e colori** riquadro del **opzioni** finestra di dialogo. Per altre informazioni, vedere [procedura: modificare i tipi di carattere e colori nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti di codice XMLs](../xml-tools/xml-snippets.md)
-- [Procedura: Generare un frammento XML da XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Procedura: Creare frammenti XML](../xml-tools/how-to-create-xml-snippets.md)
+- [Frammenti di codice XML](../xml-tools/xml-snippets.md)
+- [Procedura: generare un frammento XML da uno schema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Procedura: creare frammenti XML](../xml-tools/how-to-create-xml-snippets.md)

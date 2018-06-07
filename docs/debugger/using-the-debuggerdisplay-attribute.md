@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573245"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilizzo dell'attributo DebuggerDisplay
 Il [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controlla come un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+Il ", nq" suffisso indica l'analizzatore di espressioni per rimuovere le virgolette la visualizzazione del valore finale (nq non = virgolette). 
   
 ## <a name="example"></a>Esempio  
  Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`, insieme a `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando è visualizzato in una finestra delle variabili del debugger, come la finestra **Espressioni di controllo** , produce un'espansione analoga alla seguente:  

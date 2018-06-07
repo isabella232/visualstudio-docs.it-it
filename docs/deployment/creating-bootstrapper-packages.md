@@ -1,5 +1,5 @@
 ---
-title: Creazione di pacchetti del programma di avvio
+title: Creare pacchetti del programma di avvio automatico personalizzati
 ms.custom: ''
 ms.date: 05/02/2018
 ms.technology: vs-ide-deployment
@@ -22,13 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572725"
 ---
-# <a name="create-bootstrapper-packages"></a>Creazione di pacchetti del programma di avvio
+# <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (.msi) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile o prerequisito, che compare nella **prerequisiti** finestra di dialogo per ClickOnce è un pacchetto di programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito. 
   
 Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
@@ -77,7 +78,7 @@ Nei sistemi a 64 bit, utilizzare la seguente chiave del Registro di sistema:
   
 Ciascun componente ridistribuibile viene mostrato nella propria sottocartella nella directory dei pacchetti. Il prodotto del manifesto e ridistribuibile file devono essere inseriti in questa sottocartella. Le versioni localizzate dei manifesti di pacchetto e componente devono essere inserite in sottocartelle denominate in base al nome delle impostazioni cultura.  
   
-Dopo che questi file vengono copiati nella cartella del programma di avvio automatico, il relativo pacchetto viene visualizzato automaticamente in Visual Studio **prerequisiti** finestra di dialogo. Se il pacchetto di programma di avvio automatico personalizzato non è visualizzato, chiudere e riaprire il **prerequisiti** finestra di dialogo. Per altre informazioni, vedere [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
+Dopo che questi file vengono copiati nella cartella del programma di avvio automatico, il relativo pacchetto viene visualizzato automaticamente in Visual Studio **prerequisiti** finestra di dialogo. Se il pacchetto di programma di avvio automatico personalizzato non è visualizzato, chiudere e riaprire il **prerequisiti** finestra di dialogo. Per altre informazioni, vedere [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md).  
   
 La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.  
   
@@ -86,7 +87,7 @@ La tabella seguente illustra le proprietà popolate automaticamente dal programm
 |ApplicationName|Nome dell'applicazione.|  
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Versione dell'assembly di Windows Installer (msi.dll) eseguito durante l'installazione.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Questa proprietà viene impostata se l'utente ha i privilegi di amministratore. I valori sono true o false.|  
 |InstallMode|La modalità di installazione indica il percorso dal quale deve essere installato il componente. Sono inclusi i valori seguenti:<br /><br /> -HomeSite: prerequisiti vengono installati dal sito Web del fornitore.<br />-SpecificSite: prerequisiti vengono installati dal percorso selezionato.<br />-SameSite: prerequisiti vengono installati dallo stesso percorso dell'applicazione.|  

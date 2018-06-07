@@ -1,5 +1,5 @@
 ---
-title: Limitazioni di Windows Form controlli nei documenti di Office | Documenti Microsoft
+title: Limitazioni dei controlli Windows Form nei documenti di Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572959"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitazioni dei controlli Windows Form nei documenti di Office
 
@@ -73,7 +74,7 @@ Controlli Windows Form in genere hanno lo stesso comportamento su un documento d
 |Funzionalità|Differenza|
 |-------------------|----------------|
 |Ordine delle schede di controllo|È Impossibile scheda tramite i controlli inseriti in un foglio di lavoro di Excel o di un documento di Word.|
-|Raggruppamento di controllo|Non è possibile utilizzare un <xref:System.Windows.Forms.GroupBox> controllo per contenere altri controlli in un documento di Office. Quando si aggiungono più pulsanti di opzione direttamente al documento, i pulsanti di opzione non si escludono a vicenda. È possibile scrivere codice per rendere i pulsanti di opzione si escludono a vicenda. Tuttavia, l'approccio consigliato consiste nell'aggiungere i pulsanti di opzione in un controllo utente e quindi aggiungere il controllo utente al documento. Per ulteriori informazioni, vedere l'esempio di controlli di Word o Excel di esempio di controlli in [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).|
+|Raggruppamento di controllo|Non è possibile utilizzare un <xref:System.Windows.Forms.GroupBox> controllo per contenere altri controlli in un documento di Office. Quando si aggiungono più pulsanti di opzione direttamente al documento, i pulsanti di opzione non si escludono a vicenda. È possibile scrivere codice per rendere i pulsanti di opzione si escludono a vicenda. Tuttavia, l'approccio consigliato consiste nell'aggiungere i pulsanti di opzione in un controllo utente e quindi aggiungere il controllo utente al documento. Per altre informazioni, vedere l'esempio relativo ai controlli Word o Excel di esempio di controlli al [procedure dettagliate ed esempi di sviluppo Office](../vsto/office-development-samples-and-walkthroughs.md).|
 |Tipo di controllo|Vengono eseguito il wrapping di controlli Windows Form nei documenti in una classe fornita dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] i controlli che offre funzionalità aggiuntive specifiche per il foglio di lavoro di Excel o di un documento di Word. Ad esempio, se dispone di un **pulsante** controllare un foglio di lavoro di Excel, assicurarsi di specificare il tipo come <xref:Microsoft.Office.Tools.Excel.Controls.Button> anziché <xref:System.Windows.Forms.Button> quando si fa riferimento o il cast dell'oggetto.|
 |Posizione del controllo e le dimensioni|Le dimensioni e la posizione del controllo è determinata dalle proprietà che fanno parte del contenitore di controlli ActiveX. Le proprietà del controllo ActiveX accettano valori diversi da quelli di proprietà equivalenti di un controllo Windows Form. Quando si imposta la `Top`, `Left`, `Height`, o `Width` delle proprietà di un controllo, è misurata in punti, invece di pixel.|
 |Posizione del controllo nei documenti di Word|Se si aggiungono controlli a un layout di flusso, tenere presente che i controlli di flusso con il contenuto modificato il contenuto. Non è possibile ancorare il controllo a un paragrafo quando si trascina dal **della casella degli strumenti** perché il controllo viene aggiunto al documento di Word in linea con il testo. Se si utilizza un altro metodo per aggiungere il controllo, ad esempio fare doppio clic sul controllo, il controllo viene inserito in base all'opzione di Word che sono stati impostati per l'inserimento di immagini.<br /><br /> Non è possibile impostare il `Left` o `Top` proprietà di un controllo che è in linea con il testo.<br /><br /> È possibile inserire controlli in un'intestazione o piè di pagina o all'interno di un documento secondario.|
@@ -83,7 +84,7 @@ Controlli Windows Form in genere hanno lo stesso comportamento su un documento d
 |Ridimensionamento del controllo|Se si ridimensiona un controllo nel documento utilizzando uno dei quadratini di otto ridimensionamento, le nuove dimensioni del controllo non vengono riflesse nel **proprietà** finestra fino a quando non si seleziona di nuovo il controllo.|
 |Controllare il comportamento|Controlli in un foglio di lavoro di Excel potrebbero funzionare in modo imprevedibile quando il foglio di lavoro è divisa. Ad esempio, l'accesso a un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> nel foglio di lavoro potrebbe essere disponibile solo in una delle finestre.|
 |Denominazione di controllo|È possibile utilizzare parole riservate per i nomi dei controlli. Ad esempio, se si aggiunge un <xref:Microsoft.Office.Tools.Excel.Controls.Button> a un foglio di lavoro e modificare il nome in **sistema**, si verificano errori quando si compila il progetto.|
-|Aggiunta di controlli a livello di codice|Non utilizzare il costruttore del controllo per aggiungere un controllo al documento in fase di esecuzione. Utilizzare invece i metodi di supporto forniti dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ad esempio, utilizzare il <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> per aggiungere un pulsante in un foglio di lavoro. Se si desidera aggiungere un controllo che non è supportato da questi metodi di supporto, è possibile utilizzare il metodo AddControl. Per altre informazioni, vedere [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Aggiunta di controlli a livello di codice|Non utilizzare il costruttore del controllo per aggiungere un controllo al documento in fase di esecuzione. Utilizzare invece i metodi di supporto forniti dal [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ad esempio, utilizzare il <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> per aggiungere un pulsante in un foglio di lavoro. Se si desidera aggiungere un controllo che non è supportato da questi metodi di supporto, è possibile utilizzare il `AddControl` metodo. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Copia di controlli|Se si copia un controllo Windows Form e incollarlo in un documento in fase di esecuzione, un contenitore vuoto controllo ActiveX viene incollato nel documento. Il controllo Windows Form non viene visualizzato nella nuova posizione e code-behind del controllo originale non viene copiato al contenitore del controllo ActiveX.|
 
 ## <a name="limitations-in-document-level-projects"></a>Limitazioni nei progetti a livello di documento
@@ -95,7 +96,7 @@ Alcune limitazioni dell'utilizzo di controlli Windows Form nei documenti sono un
 Determinati controlli Windows Form vengono rimosse le **della casella degli strumenti** quando un foglio di lavoro di Excel o di un documento di Word è aperto nella finestra di progettazione di Visual Studio. Ciò è dovuto a problemi tecnici o perché la funzionalità è già disponibile in Word o Excel. I progetti di Excel e Word supportano tutti i controlli Windows Form e altri componenti che vengono visualizzati di **della casella degli strumenti** quando il documento ha lo stato attivo ed è anche possibile aggiungere controlli di terze parti a un documento o foglio di lavoro.
 
 > [!NOTE]
-> Tutti i controlli vengono rimossi dal **della casella degli strumenti** quando un documento è protetto. Per informazioni sulla protezione dei documenti, vedere [protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md).
+> Tutti i controlli vengono rimossi dal **della casella degli strumenti** quando un documento è protetto. Per informazioni sulla protezione di documenti, vedere [protezione nelle soluzioni a livello di documento di documenti](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > I controlli di terze parti devono avere la <xref:System.Runtime.InteropServices.ComVisibleAttribute> attributo impostato su **true** per poter essere usato in una soluzione Office.
@@ -178,13 +179,13 @@ Controlli e i componenti seguenti non sono disponibili nel **della casella degli
 
 - <xref:System.Windows.Forms.ToolStripPanel>
 
-### <a name="support-for-legacy-activex-controls"></a>Supporto per i controlli ActiveX Legacy
+### <a name="support-for-legacy-activex-controls"></a>Supporto per i controlli ActiveX legacy
 
 Se si crea un progetto di Office a livello di documento che utilizza un documento di Word o una cartella di lavoro di Excel che contiene controlli ActiveX, la funzionalità dei controlli ActiveX non andrà persa. Tuttavia, non vi è alcun supporto per l'aggiunta di nuovi controlli ActiveX ai documenti all'interno di Visual Studio. Ad esempio, se il documento di Word è un pulsante di **controllo** della casella degli strumenti che esegue un esempio di Visual Basic, Applications Edition (VBA), continuerà a eseguire la macro dopo che il documento è stato utilizzato in un progetto di Office. Tuttavia, è consigliabile rimuovere i controlli ActiveX e le macro VBA e sostituirli con controlli Windows Form e codice gestito.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
-- [Panoramica dei controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Aggiunta di controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Procedura: Aggiungere controlli Windows Forms a documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Controlli Windows Form in panoramica di documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

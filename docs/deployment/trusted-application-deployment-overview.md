@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572241"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.  
@@ -86,7 +87,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
  La distribuzione di applicazioni attendibili è specifica per [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]è può essere usata solo con le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
 ### <a name="sign-the-deployment"></a>Formare la distribuzione  
- Dopo aver ottenuto il certificato, usarlo per firmare la distribuzione. Se si distribuisce l'applicazione usando la pubblicazione guidata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , viene generato automaticamente un certificato di prova se non è già stato specificato un altro certificato. Tuttavia, è anche possibile usare la finestra Creazione progetti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per specificare un certificato fornito da un'autorità di certificazione.  Vedere anche [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata] (http://msdn.microsoft.com/library/31kztyey\(v=vs.110\).  
+ Dopo aver ottenuto il certificato, usarlo per firmare la distribuzione. Se si distribuisce l'applicazione usando la pubblicazione guidata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , viene generato automaticamente un certificato di prova se non è già stato specificato un altro certificato. Tuttavia, è anche possibile usare la finestra Creazione progetti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per specificare un certificato fornito da un'autorità di certificazione.  Vedere anche [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Non si consiglia di distribuire l'applicazione con un certificato di prova.  
