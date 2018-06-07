@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815769"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ciascuna lingua. Il manifesto del pacchetto contiene gli aspetti specifici di localizzazione del pacchetto. Ciò include stringhe, i contratti di licenza dell'utente finale e i language pack.  
@@ -41,7 +42,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 3.  Aggiungere il seguente codice XML per descrivere il codice di prodotto e lo spazio dei nomi XML per il pacchetto. Sostituire il codice prodotto con un identificatore univoco per il pacchetto.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 4.  Aggiungere codice XML per specificare che il pacchetto ha una dipendenza. In questo esempio viene utilizzata una dipendenza su Microsoft Windows Installer 3.1.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 5.  Aggiungere codice XML per elencare tutti i file del pacchetto del programma di avvio automatico. In questo esempio viene utilizzato il nome di file di pacchetto CorePackage. msi.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 7.  Aggiungere codice XML per installare il pacchetto utilizzando i comandi di avvio automatico. Aggiunge automaticamente il programma di avvio automatico di **/qn** flag per il file con estensione msi, che consente l'installazione invisibile all'utente. Se il file è un .exe, il programma di avvio viene eseguito il file .exe mediante la shell. Il codice XML seguente non Mostra argomenti per CorePackage. msi, ma è possibile inserire l'attributo di argomenti argomento della riga di comando.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Aggiungere il codice XML seguente per verificare se è installato il pacchetto del programma di avvio automatico. Sostituire il codice prodotto con il GUID per il componente ridistribuibile.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 9. Aggiungere codice XML per modificare il comportamento del programma di avvio automatico a seconda se è già installato il componente del programma di avvio automatico. Se è installato il componente, non si esegue il pacchetto del programma di avvio automatico. Il codice XML seguente controlla se l'utente corrente è un amministratore, poiché questo componente richiede privilegi amministrativi.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 10. Aggiungere codice XML per impostare i codici di uscita se l'installazione è riuscita e se è necessario un riavvio. Il codice XML seguente viene illustrato che l'esito negativo e FailReboot codici, che indicano che il programma di avvio non continuerà l'installazione dei pacchetti di uscita.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
   
 11. Aggiungere il seguente codice XML per terminare una sezione per i comandi di avvio automatico.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
 ## <a name="example"></a>Esempio  
  Il manifesto del prodotto contiene le istruzioni di installazione per i prerequisiti personalizzati.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
