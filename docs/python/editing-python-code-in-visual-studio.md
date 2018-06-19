@@ -16,6 +16,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449140"
 ---
 # <a name="editing-python-code"></a>Modifica del codice Python
 

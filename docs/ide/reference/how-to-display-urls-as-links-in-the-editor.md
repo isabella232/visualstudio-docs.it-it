@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448052"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 È possibile fare in modo che l'Editor del codice consideri gli URL (Uniform Resource Locator) all'interno del codice come collegamenti attivi. Quando si usa questa funzionalità, gli URL:

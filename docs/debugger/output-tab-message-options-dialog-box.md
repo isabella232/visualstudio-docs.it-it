@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475405"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Scheda Output, finestra di dialogo Opzioni messaggio
 Utilizzare il **Output** tab per specificare quali dati di ogni messaggio all'elenco [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare il [finestra di dialogo Opzioni messaggio](../debugger/message-options-dialog-box.md), scegliere **messaggi di Log** dal **Spy** menu.  

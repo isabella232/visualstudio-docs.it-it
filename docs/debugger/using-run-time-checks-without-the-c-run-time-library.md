@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481759"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C
 Se si collega il programma senza la libreria di runtime C, utilizzando **/NODEFAULTLIB**e si desidera utilizzare i controlli in fase di esecuzione, è necessario collegare con la libreria RunTmChk.lib.  

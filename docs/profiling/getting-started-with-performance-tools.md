@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576443"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introduzione agli strumenti per le prestazioni
 Questa sezione fornisce una panoramica dei concetti e delle attività applicabili in fase di raccolta, visualizzazione e analisi delle prestazioni del codice mediante gli strumenti per le prestazioni di Visual Studio.  

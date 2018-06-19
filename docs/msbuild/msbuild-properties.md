@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573960"
 ---
 # <a name="msbuild-properties"></a>Proprietà di MSBuild
 Le proprietà sono coppie nome-valore che possono essere usate per configurare le compilazioni. Le proprietà sono utili per passare i valori alle attività, valutare le condizioni e archiviare i valori a cui si farà riferimento nel file di progetto.  

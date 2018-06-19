@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472942"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Procedura: uscire da codice gestito quando nella finestra Stack di chiamate non sono visualizzati frame nativi
 Se il codice contiene frame nativi non visibili nella **Stack di chiamate** finestra uscita codice gestito può produrre risultati imprevisti. In alternativa, è possibile utilizzare un punto di interruzione anziché **Esci**.  

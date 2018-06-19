@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572804"
 ---
 # <a name="item-functions"></a>Funzioni degli elementi
 A partire da MSBuild 4.0, il codice nelle attività e nelle destinazioni è in grado di chiamare le funzioni di elementi per ottenere informazioni sugli elementi del progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474921"
 ---
 # <a name="message-options-dialog-box"></a>Finestra di dialogo Opzioni messaggio
 Utilizzare questa finestra di dialogo per selezionare quali messaggi sono elencati [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare questa finestra di dialogo, scegliere **messaggi di Log** dal **Spy** menu.  

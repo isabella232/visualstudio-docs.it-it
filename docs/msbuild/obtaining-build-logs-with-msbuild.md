@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574685"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Recupero di log di compilazione con MSBuild
 Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazione si vogliono esaminare e se salvare i dati di compilazione in uno o più file. È anche possibile specificare un logger personalizzato per raccogliere i dati di compilazione. Per informazioni sulle opzioni della riga di comando di MSBuild, non illustrate in questo argomento, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  

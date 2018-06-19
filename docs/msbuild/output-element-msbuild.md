@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577353"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Archivia i valori di output dell'attività in elementi e proprietà.  

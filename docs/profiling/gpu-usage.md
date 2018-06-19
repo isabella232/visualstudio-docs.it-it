@@ -14,6 +14,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575559"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consente di comprendere meglio l'utilizzo hardware in generale da parte dell'app Direct3D. Può essere usato per determinare se le prestazioni dell'app sono basate sulla CPU o sulla GPU e per ottenere informazioni su come usare l'hardware della piattaforma in modo più efficiente. Utilizzo GPU supporta le app che usano Direct3D 12, Direct3D 11 e Direct3D 10. Non supporta altre API grafiche, come Direct2D o OpenGL.  

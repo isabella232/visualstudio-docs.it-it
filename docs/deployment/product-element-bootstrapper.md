@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559439"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Prodotto&gt; elemento (programma di avvio automatico)
 Il `Product` è l'elemento XML di primo livello all'interno di un file di prodotto.  

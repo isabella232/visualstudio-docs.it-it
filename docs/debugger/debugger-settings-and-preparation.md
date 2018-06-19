@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473316"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.  

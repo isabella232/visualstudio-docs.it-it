@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561415"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: specificare i file da pubblicare mediante ClickOnce
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i file dell'applicazione, tutti non di codice nel progetto vengono distribuiti insieme all'applicazione. In alcuni casi, non si desidera oppure la pubblicazione di determinati file o che si desidera installare determinati file in base alle condizioni. Visual Studio fornisce le funzionalità per escludere i file, contrassegnare i file come file di dati o i prerequisiti e creare gruppi di file per l'installazione condizionale.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146764"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procedura dettagliata: Visualizzazione delle descrizioni comandi informazioni rapide
 Informazioni rapide è una funzionalità di IntelliSense che consente di visualizzare le firme del metodo e le descrizioni quando l'utente sposta il puntatore su un nome di metodo. È possibile implementare funzionalità basate sul linguaggio, come informazioni rapide definendo gli identificatori per il quale si desidera fornire le descrizioni di informazioni rapide e quindi la creazione di una descrizione comando in cui visualizzare il contenuto. È possibile definire informazioni rapide nel contesto di un servizio di linguaggio, è possibile definire il tipo di estensione e il contenuto di nome file e visualizzare le informazioni rapide per quel tipo o è possibile visualizzare informazioni rapide per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata viene illustrato come visualizzare informazioni rapide per il tipo di contenuto "text".  

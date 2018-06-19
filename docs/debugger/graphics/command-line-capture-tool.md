@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477927"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica della grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.  

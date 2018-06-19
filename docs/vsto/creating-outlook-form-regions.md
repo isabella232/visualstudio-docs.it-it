@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265550"
 ---
 # <a name="create-outlook-form-regions"></a>Creare aree del modulo di Outlook
   È possibile usare aree del modulo per personalizzare i moduli di Microsoft Office Outlook. Visual Studio fornisce strumenti avanzati che semplificano la progettazione, lo sviluppo e il debug delle aree del modulo.  

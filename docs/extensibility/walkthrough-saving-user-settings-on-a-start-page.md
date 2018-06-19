@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146091"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procedura dettagliata: Salvataggio delle impostazioni utente in una pagina iniziale
 È possibile mantenere le impostazioni utente per la pagina iniziale. Seguendo questa procedura dettagliata, è possibile creare un controllo per salvare un'impostazione nel Registro di sistema quando l'utente fa clic su un pulsante e recupera quindi che l'impostazione di ogni volta che viene caricata la pagina iniziale. Poiché il modello di progetto di pagina iniziale include un controllo utente personalizzabile e il valore predefinito, avviare XAML della pagina chiama tale controllo, non è necessario modificare la pagina iniziale se stesso.  

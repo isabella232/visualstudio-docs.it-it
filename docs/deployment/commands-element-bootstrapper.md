@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566199"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;I comandi&gt; elemento (programma di avvio automatico)
 Il `Commands` elemento implementa test descritti dagli elementi di sotto di `InstallChecks` elemento e dichiara il pacchetto di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programma di avvio automatico deve installare se il test ha esito negativo.  

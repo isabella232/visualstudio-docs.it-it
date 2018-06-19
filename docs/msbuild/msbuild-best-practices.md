@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571123"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate di MSBuild
 Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni riportate di seguito:  

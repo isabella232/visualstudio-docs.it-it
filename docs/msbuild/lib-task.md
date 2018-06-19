@@ -32,6 +32,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574220"
 ---
 # <a name="lib-task"></a>Attività LIB
 Esegue il wrapping dello strumento di gestione librerie Microsoft a 32 bit, lib.exe. Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per altre informazioni, vedere [Riferimenti a LIB](/cpp/build/reference/lib-reference) ed [Esecuzione di LIB](/cpp/build/reference/running-lib).  

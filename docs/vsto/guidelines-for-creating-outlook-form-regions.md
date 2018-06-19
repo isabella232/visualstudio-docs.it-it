@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548167"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Linee guida per creare aree del modulo di Outlook
   Le informazioni seguenti consentono di ottimizzare le aree del modulo ed evitare potenziali problemi:  

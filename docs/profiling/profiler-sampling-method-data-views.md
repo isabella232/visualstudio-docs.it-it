@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265044"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475126"
 ---
 # <a name="thread-search-dialog-box"></a>Finestra di dialogo Ricerca thread
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico in [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un **thread** finestra di visualizzazione. Scegliere quindi **trova Thread** dal **ricerca** menu.  

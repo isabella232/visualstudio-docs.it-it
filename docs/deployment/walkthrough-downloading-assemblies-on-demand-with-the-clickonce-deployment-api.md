@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565770"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: download di assembly su richiesta con l'API della distribuzione ClickOnce
 Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione vengono scaricati alla prima esecuzione dell'applicazione. Tuttavia, è possibile parti dell'applicazione usati da un set ridotto di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata seguente viene illustrato come contrassegnare determinati assembly nell'applicazione come "facoltativi" e per scaricarli usando le classi nel <xref:System.Deployment.Application> dello spazio dei nomi quando common language runtime (CLR).  

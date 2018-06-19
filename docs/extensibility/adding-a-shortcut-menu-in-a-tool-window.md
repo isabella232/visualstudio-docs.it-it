@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568669"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Aggiunta di un Menu di scelta rapida in una finestra degli strumenti
 Questa procedura dettagliata pone un menu di scelta rapida in una finestra degli strumenti. Menu di scelta rapida è un menu che viene visualizzato quando un utente fa un pulsante, una casella di testo o sfondo della finestra. Comandi del menu di scelta rapida comportano come comandi su altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nel file vsct e visualizzarli in risposta a destro del mouse.  

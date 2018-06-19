@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471687"
 ---
 # <a name="how-to-display-spy-views"></a>Procedura: visualizzare le visualizzazioni di Spy++
 Avvio di Spy + +, aprirla in [Windows Vista](../debugger/windows-view.md), una visualizzazione albero di tutte le finestre e i controlli disponibili nel computer. Questa finestra di primo livello è stata aggiunta una didascalia "Windows 1". Sono disponibili anche altre tre visualizzazioni di Spy + +: [visualizzazione messaggi](../debugger/messages-view.md), [visualizzazione processi](../debugger/processes-view.md), e [visualizzazione thread](../debugger/threads-view.md). È possibile visualizzare la visualizzazione desiderata di **Spy** menu. Per ulteriori informazioni, vedere [visualizzazioni di Spy + +](../debugger/spy-increment-views.md).  

@@ -34,6 +34,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454557"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, fare clic su **Debug > Connetti a processo** (o premere **CTRL + ALT + P**) per aprire la **Connetti a processo** la finestra di dialogo.

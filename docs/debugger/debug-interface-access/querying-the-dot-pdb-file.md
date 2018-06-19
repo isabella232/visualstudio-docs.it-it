@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470062"
 ---
 # <a name="querying-the-pdb-file"></a>Ricerche nel file PDB
 Un file di database di programma (estensione pdb) è un file binario che contiene informazioni sul debug simbolici raccolti nel corso di compilazione e collegamento del progetto e tipo. Un file PDB viene creato quando si compila un programma C/C++ con **/ZI** o **/Zi** o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], o [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programmare con il **/debug** opzione. File oggetto contengono riferimenti nel file con estensione PDB per le informazioni di debug. Per ulteriori informazioni sui file pdb, vedere [file PDB](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Un'applicazione di DIA è possibile utilizzare i passaggi generali seguenti per ottenere i dettagli sui diversi simboli, oggetti e gli elementi di dati all'interno di un'immagine eseguibile.  

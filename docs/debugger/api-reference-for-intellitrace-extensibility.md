@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457462"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Riferimento API per l'estensibilità di IntelliTrace
 Tramite le informazioni contenute in questa sezione è possibile utilizzare le API di estensibilità di IntelliTrace per leggere e decodificar i file con estensione itrace nell'applicazione.  

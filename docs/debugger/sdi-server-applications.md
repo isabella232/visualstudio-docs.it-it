@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475662"
 ---
 # <a name="sdi-server-applications"></a>Applicazioni server SDI
 Se si esegue il debug di un'applicazione server SDI, è necessario specificare `/Embedding` o `/Automation` nel **argomenti della riga di comando** proprietà il *progetto* la finestra di dialogo Pagine delle proprietà per C/C++, c#, o Progetti di Visual Basic.  

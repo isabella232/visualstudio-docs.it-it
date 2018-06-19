@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474934"
 ---
 # <a name="debugging-linq"></a>Debug di LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta il debug di codice LINQ (Language Integrated Query), con alcune limitazioni. La maggior parte delle funzionalità di debug è compatibile con le istruzioni LINQ, inclusa l'esecuzione di istruzioni, l'impostazione di punti di interruzione e la visualizzazione dei risultati nelle finestre del debugger. In questo argomento vengono descritte le principali limitazioni del debug di codice LINQ.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481879"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: oggetti mancanti a causa di una pipeline configurata in modo non corretto
 Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.  

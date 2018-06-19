@@ -37,6 +37,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575897"
 ---
 # <a name="link-task"></a>Attività Link
 Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione exe) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni linker](/cpp/build/reference/linker-options).  

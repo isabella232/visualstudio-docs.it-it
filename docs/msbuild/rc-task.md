@@ -29,6 +29,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574568"
 ---
 # <a name="rc-task"></a>Attività RC
 Esegue il wrapping dello strumento Compilatore di risorse di Microsoft Windows, rc.exe. L'attività **RC** compila le risorse, ad esempio cursori, icone, bitmap, finestre di dialogo e tipi di carattere, in un file di risorse (RES). Per altre informazioni, vedere l'articolo sullo strumento Compilatore di risorse nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

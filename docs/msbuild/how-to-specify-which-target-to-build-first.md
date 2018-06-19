@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571949"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: specificare quale destinazione compilare per prima
 Un file di progetto può contenere uno o più elementi `Target` che definiscono come viene compilato il progetto. Il motore [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila il primo progetto che trova e le eventuali dipendenze, a meno che il file di progetto contenga un attributo `DefaultTargets` o `InitialTargets` oppure venga specificata una destinazione nella riga di comando usando l'opzione **/target**.  

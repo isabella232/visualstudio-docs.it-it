@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576950"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come elemento figlio di un elemento `ItemGroup`.  

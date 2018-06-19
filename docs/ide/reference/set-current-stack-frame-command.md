@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704798"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Imposta stack frame corrente
 Consente di impostare uno stack frame specifico.

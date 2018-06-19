@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475142"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 Per aprire questa finestra di dialogo, aprire il **Connetti a processo** la finestra di dialogo e quindi scegliere il **selezionare** pulsante.  

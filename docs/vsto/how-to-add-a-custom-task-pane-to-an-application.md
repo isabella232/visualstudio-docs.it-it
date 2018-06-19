@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548814"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Procedura: aggiungere un riquadro attività personalizzato a un'applicazione
   È possibile aggiungere un riquadro attività personalizzato alle applicazioni elencate sopra usando un componente aggiuntivo VSTO. Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).  

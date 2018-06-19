@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464352"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 Recupera un flag che specifica se la funzione contiene qualsiasi gestione delle eccezioni non gestite nello stile di C++ (ad esempio, un blocco try/catch).  

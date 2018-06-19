@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480267"
 ---
 # <a name="symbol-locations"></a>Percorsi dei simboli
 La maggior parte dei simboli dispongono di un percorso definito all'interno del file di immagine. Percorso di un simbolo viene specificato con un valore di [LocationType (enumerazione)](../../debugger/debug-interface-access/locationtype.md) enumerazione. Il simbolo può supportare proprietà aggiuntive in base al relativo percorso.  

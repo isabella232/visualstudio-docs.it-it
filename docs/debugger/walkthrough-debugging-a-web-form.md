@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480332"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: debug di un Web Form
 Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], noto anche come Web Form. Viene illustrato come avviare e arrestare l'esecuzione, impostare punti di interruzione ed esaminare le variabili di **espressioni di controllo** finestra.  

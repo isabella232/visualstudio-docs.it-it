@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480661"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire App UWP nel simulatore
 Il simulatore di Visual Studio per App UWP è un'applicazione desktop che simula un'app UWP. In genere, è possibile eseguire il debug sul computer locale, un dispositivo collegato o un computer remoto. Tuttavia, in alcuni scenari, si consiglia di utilizzare il simulatore di Visual Studio per emulare dello schermo fisico di diverse dimensioni e la risoluzione. È anche possibile simulare i comuni eventi di tocco e rotazione e le proprietà di connessione di rete.

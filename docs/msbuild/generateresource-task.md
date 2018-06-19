@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575104"
 ---
 # <a name="generateresource-task"></a>Attività GenerateResource
 Converte file con estensione txt o resx (formato di risorsa basato su XML) in file binari di Common Language Runtime (con estensione resources) che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file con estensione txt o resx in file con estensione resource. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  

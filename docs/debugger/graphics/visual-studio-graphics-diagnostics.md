@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477732"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 Visual Studio*diagnostica della grafica* è un set di strumenti per la registrazione e quindi analizzare i problemi di prestazioni e di rendering nelle App Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.  

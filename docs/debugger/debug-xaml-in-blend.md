@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477453"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] per eseguire il debug del codice XAML nell'app. Quando si compila un progetto, eventuali errori vengono visualizzati nel **risultati** pannello. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se è necessario più spazio per lavorare, è possibile nascondere il **risultati** pannello premendo F12.  

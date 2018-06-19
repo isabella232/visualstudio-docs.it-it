@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482152"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Errore: impossibile eseguire la connessione a SQL Server su un computer remoto
 Impossibile connettersi a SQL Server sul computer remoto *nome*. Accesso negato. Verificare che il debugger remoto sia installato sul computer remoto. Se il computer remoto non è un dominio o se Visual Studio è eseguito come account locale, il computer remoto deve disporre di un account con gli stessi nome utente e password dell'account locale.  

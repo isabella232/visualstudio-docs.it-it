@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562832"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows aggiornamento automatico che possono essere installate ed eseguite l'intervento dell'utente minima. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e aggiornamento di applicazioni distribuite con la tecnologia ClickOnce se è stata sviluppata i progetti con Visual Basic e Visual c#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [distribuzione ClickOnce per applicazioni Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  

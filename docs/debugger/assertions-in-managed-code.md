@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465408"
 ---
 # <a name="assertions-in-managed-code"></a>Asserzioni nel codice gestito
 Un'asserzione, o istruzione `Assert`, verifica una condizione specificata come argomento dell'istruzione `Assert`. Se la condizione restituisce true, non viene eseguita alcuna azione. Se restituisce false, l'asserzione ha esito negativo. Se l'esecuzione avviene all'interno di una build di debug, viene attivata la modalità di interruzione.  

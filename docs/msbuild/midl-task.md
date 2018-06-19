@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575725"
 ---
 # <a name="midl-task"></a>Attività MIDL
 Esegue il wrapping dello strumento di compilazione Microsoft Interface Definition Language (MIDL), midl.exe. Per altre informazioni, vedere "MIDL Command-Line Reference" (Informazioni di riferimento sulla riga di comando MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

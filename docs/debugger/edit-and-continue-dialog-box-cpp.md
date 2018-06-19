@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481788"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Finestra di dialogo Modifica e continuazione (C++)
 La modalità Modifica e continuazione non ha applicato le modifiche apportate al codice nativo. Questa condizione potrebbe essere temporanea. In alcuni casi, la modalità Modifica e continuazione non applica immediatamente le modifiche al codice nativo, ma in seguito durante la sessione di debug, ad esempio al termine della chiamata corrente alla procedura in esecuzione. Per ulteriori informazioni, vedere [modifica e continuazione](../debugger/edit-and-continue.md).  

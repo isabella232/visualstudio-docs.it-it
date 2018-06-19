@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562546"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere cercati gli aggiornamenti automaticamente o a livello di codice. Lo sviluppatore è un numero elevato di flessibilità per specificare come e quando vengono eseguiti controlli di aggiornamento, se gli aggiornamenti sono obbligatori e in cui l'applicazione deve cercare gli aggiornamenti.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478031"
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
 Quando si apre Spy + +, Windows visualizza una struttura ad albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati il nome di classe e di handle di finestra. La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre sono figli del desktop e sono elencate in base alla gerarchia di finestre standard. Finestre di pari livello è visualizzato negli elenchi espandibili su un livello rientrati sotto i relativi elementi padre.  

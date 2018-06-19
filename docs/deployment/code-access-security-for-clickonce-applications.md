@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560713"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sicurezza dall'accesso di codice per applicazioni ClickOnce
 Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vincoli di sicurezza per l'accesso al codice. Per poter scrivere correttamente le applicazioni ClickOnce è quindi importante comprendere le implicazioni di questo tipo di sicurezza.  

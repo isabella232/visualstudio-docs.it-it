@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575608"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: compilare gli stessi file di origine con opzioni diverse
 Quando si compilano progetti, spesso si compilano gli stessi componenti con opzioni di compilazione diverse. È possibile, ad esempio, creare una build di debug con informazioni sui simboli o una build di versione senza informazioni sui simboli, ma con le ottimizzazioni abilitate oppure è possibile compilare un progetto da eseguire su una piattaforma specifica, ad esempio x86 o [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. In tutti questi casi, la maggior parte delle opzioni di compilazione è la stessa. Vengono modificate solo alcune opzioni per controllare la configurazione della build. Con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], è possibile usare le proprietà e le condizioni per creare le diverse configurazioni della build.  

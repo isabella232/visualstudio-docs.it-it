@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463052"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Recupera un flag che specifica se la funzione contiene qualsiasi [strutturata delle eccezioni (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (ad esempio, try /\_except blocchi).  

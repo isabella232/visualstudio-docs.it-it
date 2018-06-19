@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263691"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per le applicazioni client autonome tramite il metodo di campionamento dalla riga di comando.  

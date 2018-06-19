@@ -20,6 +20,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454376"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelli di Visual Studio)
 Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del progetto verrà generato un nome predefinito per il modello di **Aggiungi nuovo elemento** o **nuovo progetto** la finestra di dialogo.  
