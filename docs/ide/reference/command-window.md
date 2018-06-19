@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704759"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.

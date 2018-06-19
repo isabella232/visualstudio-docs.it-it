@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135368"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedura: esporre elenchi dei simboli forniti dalla libreria per la gestione di oggetti
 Gli strumenti di esplorazione simbolo **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **risultati ricerca simbolo**, il passaggio delle richieste per i nuovi dati il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di gestione degli oggetti. Gestione degli oggetti consente di trovare le librerie appropriate e richiede nuovi elenchi dei simboli. Le librerie di rispondono fornendo i dati richiesti per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di gestione degli oggetti chiama i metodi in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> l'interfaccia per ottenere i dati e viene utilizzato per compilare o aggiornare le visualizzazioni degli strumenti di esplorazione del simbolo.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141672"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Utilizzando la gestione di testo per monitorare le impostazioni globali
 Se si implementa un editor di componenti di base, è necessario monitorare le modifiche apportate alle impostazioni globali, perché queste modifiche potrebbero influenzare l'istanza dell'editor. È possibile rilevare le modifiche in attesa di eventi generati dal gestore del testo. Ad esempio, quando si specifica una preferenza globale per l'aspetto o il comportamento di un componente nell'editor di componenti di base, ad esempio un oggetto dati documento, il gestore di testo vengono archiviate queste informazioni e comunica a tutti i client interessati.  

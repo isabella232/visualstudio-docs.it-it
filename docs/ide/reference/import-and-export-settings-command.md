@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704587"
 ---
 # <a name="import-and-export-settings-command"></a>Importa/Esporta impostazioni (comando)
 Consente di importare, esportare o reimpostare le impostazioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

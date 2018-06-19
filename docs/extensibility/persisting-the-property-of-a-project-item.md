@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138054"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Salvare in modo permanente la proprietà di un elemento di progetto
 È consigliabile mantenere una proprietà che aggiungere un elemento di progetto, ad esempio l'autore di un file di origine. È possibile farlo archiviando la proprietà nel file di progetto.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101157"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Enumera i tipi aggiuntivi di campi che un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto può contenere. Questa enumerazione estende il [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumerazione.  

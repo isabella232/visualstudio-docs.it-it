@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704025"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Utilizzo di un tasto di scelta rapida con un'estensione di Editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. La procedura dettagliata seguente viene illustrato come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo con un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo utilizzando il carattere +.  

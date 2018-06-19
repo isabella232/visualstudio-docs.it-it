@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140059"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Procedura dettagliata: Aggiunta di XAML personalizzato alla pagina iniziale
 Questa procedura dettagliata viene illustrato come creare una pagina iniziale personalizzata di Visual Studio contenente un Web browser.  

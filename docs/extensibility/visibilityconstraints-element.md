@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138311"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
 L'elemento VisibilityConstraints determina la visibilità statica dei gruppi di comandi e le barre degli strumenti. Visibilità viene controllata prima per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) senza caricare il pacchetto VSPackage.  

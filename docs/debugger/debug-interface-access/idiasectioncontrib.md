@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465590"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Recupera i dati che descrivono un contributo di sezione, vale a dire un blocco di memoria contiguo ha contribuito all'immagine da un modulo.  

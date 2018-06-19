@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134952"
 ---
 # <a name="source-control-vspackage-features"></a>Origine controllare le funzionalità di VSPackage
 In questa sezione descrive le varie funzionalità di un controllo del codice sorgente VSPackage. Vengono illustrate la registrazione e i dettagli per questo tipo di un VSPackage, selezione e vengono illustrati tre delle funzionalità relativa ai controlli origine principale: gestione di eventi Query modifica Query Salva (QEQS), la sostituzione del glifo e interfaccia utente personalizzata (UI) per il controllo del codice sorgente funzioni.  

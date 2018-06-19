@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138714"
 ---
 # <a name="wizards"></a>Procedure guidate
 Dopo aver creato una procedura guidata, in genere da aggiungere per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrato (IDE) di ambiente di sviluppo in modo che altri utenti possono utilizzarlo. La procedura Aggiunta guidata viene quindi visualizzata nel **Aggiungi nuovo progetto** o **Aggiungi nuovo elemento** finestre di dialogo. Per visualizzare il **Aggiungi nuovo progetto** o **Aggiungi nuovo elemento** finestra di dialogo finestre, fare doppio clic su una soluzione aperta in **Esplora**, scegliere **Aggiungi**, e quindi fare clic su **nuovo progetto** o **nuovo elemento**.  

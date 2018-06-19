@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::GetScriptState | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.GetScriptState
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_GetScriptState
 ms.assetid: 59837f7c-755d-45c4-8194-bd57638fe2e1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640181"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
 Recupera lo stato corrente del motore di scripting. Questo metodo può essere chiamato dal thread non di base senza callout non in base a oggetti host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  
