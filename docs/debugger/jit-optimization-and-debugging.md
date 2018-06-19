@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477355"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
 **Modalità di funzionamento di ottimizzazioni in .NET:** se si sta tentando di eseguire il debug di codice, è più semplice quando che codice **non** ottimizzato. Infatti, quando il codice è ottimizzato, il compilatore e il runtime di apportare modifiche al codice della CPU generato in modo che viene eseguito più velocemente, ma dispone di un mapping meno diretto al codice sorgente originale. Ciò significa che i debugger sono in grado di indicare il valore delle variabili locali e l'esecuzione di istruzioni del codice e i punti di interruzione potrebbe non funzionare come previsto.

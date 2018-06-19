@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264776"
 ---
 # <a name="reduce-method-array-javascript"></a>Metodo reduce (Array) (JavaScript)
 Chiama la funzione di callback specificato per tutti gli elementi nella matrice. Il valore restituito della funzione di callback è il risultato accumulato e viene fornito come argomento nella chiamata successiva alla funzione di callback.  

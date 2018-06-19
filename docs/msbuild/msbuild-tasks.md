@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569930"
 ---
 # <a name="msbuild-tasks"></a>Attività MSBuild
 Una piattaforma di compilazione deve poter eseguire un numero illimitato di azioni durante il processo di compilazione. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa le *attività* per eseguire queste azioni. Un'attività è un'unità di codice eseguibile usata da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per eseguire operazioni di compilazione atomiche.  

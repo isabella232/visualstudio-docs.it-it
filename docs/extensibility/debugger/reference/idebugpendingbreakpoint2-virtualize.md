@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122431"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Alterna lo stato virtualizzato di questo punto di interruzione. Quando un punto di interruzione in sospeso è virtualizzato, il motore di debug tenterà di eseguirne l'associazione ogni volta che viene caricato di nuovo codice nel programma.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116747"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua l'esecuzione di questo programma da uno stato di arresto. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene mantenuto, e il programma viene avviato l'esecuzione di nuovo.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561555"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedura: configurare il comportamento di richiesta di attendibilità di ClickOnce
 È possibile configurare la richiesta di attendibilità di ClickOnce per controllare se gli utenti finali viene forniti la possibilità di installare le applicazioni ClickOnce, ad esempio le applicazioni Windows Form, applicazioni Windows Presentation Foundation, applicazioni console, browser WPF le applicazioni e soluzioni Office. Per configurare la richiesta di attendibilità, impostare le chiavi del Registro di sistema nel computer di ogni utente finale.  

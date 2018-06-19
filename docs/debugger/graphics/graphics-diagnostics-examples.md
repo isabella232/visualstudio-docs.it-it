@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474304"
 ---
 # <a name="graphics-diagnostics-examples"></a>Esempi di diagnostica della grafica
 Questi esempi mostrano come eseguire il debug dei problemi di rendering nelle app basate su DirectX usando la diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

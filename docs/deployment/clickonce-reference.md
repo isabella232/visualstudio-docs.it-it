@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557034"
 ---
 # <a name="clickonce-reference"></a>Riferimenti di ClickOnce
 Le pagine seguenti vengono descritti la struttura dei file XML utilizzato per rappresentare le applicazioni ClickOnce.  

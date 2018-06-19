@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566134"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: ripetere la firma dei manifesti dell'applicazione e di distribuzione
 Dopo aver apportato modifiche alle proprietà di distribuzione nel manifesto dell'applicazione per applicazioni Windows Form, le applicazioni Windows Presentation Foundation (xbap) o soluzioni Office, è necessario firmare nuovamente l'applicazione e i manifesti di distribuzione con un certificato. Questo processo aiuta ad assicurare che nei computer degli utenti finali non sono installati file alterati.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564922"
 ---
 # <a name="clickonce-cache-overview"></a>Cenni preliminari sulla cache di ClickOnce
 Tutti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni, se vengono installati in locale o ospitati online, vengono archiviate nel computer client in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]applicazione *cache*. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache è una famiglia di sottodirectory nascoste nella directory delle impostazioni locali della cartella Documents and Settings dell'utente corrente. Questa cache contiene tutti i file dell'applicazione, inclusi gli assembly, i file di configurazione dell'applicazione e le impostazioni utente e directory dei dati. La cache è inoltre responsabile per la migrazione di directory dei dati dell'applicazione per la versione più recente. Per ulteriori informazioni sulla migrazione dei dati, vedere [l'accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  
