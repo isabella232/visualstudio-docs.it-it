@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927204"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra i set di dati
 Tabelle di set di dati che contengono dati correlati utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati utilizzando il **configurazione guidata origine dati**, o **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto.

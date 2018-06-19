@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927269"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 Stato attivo di regole minime miste Microsoft ai problemi più critici dei progetti C++ che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali delle applicazioni. È necessario includere questo set di regole nel set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime.

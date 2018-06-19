@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926554"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 Il set di regole regole estese di correttezza Microsoft ottimizza la logica e i framework utilizzo gli errori restituiti dall'analisi del codice. Attenzione è rivolta a scenari specifici, ad esempio l'interoperabilità COM e applicazioni per dispositivi mobili. È consigliabile inclusi in questo set di regole se uno di questi scenari si applica al progetto o per individuare ulteriori problemi nel progetto.

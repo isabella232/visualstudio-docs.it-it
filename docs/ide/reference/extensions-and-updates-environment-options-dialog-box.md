@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943306"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Estensioni e aggiornamenti, Ambiente, finestra di dialogo Opzioni
 Usare questa pagina per impostare le opzioni relative alla modalità di esecuzione degli aggiornamenti da parte di Visual Studio e della modalità di aggiornamento e individuazione delle estensioni.

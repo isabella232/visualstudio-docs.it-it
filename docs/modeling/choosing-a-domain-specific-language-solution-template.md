@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949643"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Scelta di un modello di soluzione per un linguaggio specifico di dominio
 Per creare una soluzione di linguaggio specifico di dominio, scegliere uno dei modelli di soluzioni che sono disponibili nella finestra di progettazione guidata linguaggio specifico di dominio. Scegliendo il modello che rispecchia maggiormente la lingua che si desidera creare, è possibile ridurre al minimo le modifiche che è necessario apportare alla soluzione inizia.

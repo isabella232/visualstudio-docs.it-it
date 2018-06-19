@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924304"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi del codice
 Analisi del codice utilizza un dizionario incorporato per controllare gli identificatori nel codice per errori di ortografia, maiuscole e altre convenzioni di denominazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] linee guida. È possibile creare un file Xml del dizionario personalizzato per aggiungere, rimuovere o modificare i termini e abbreviazioni acronimi nel dizionario incorporato.

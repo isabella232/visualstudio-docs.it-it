@@ -1,19 +1,20 @@
 ---
-title: "confrontare una proprietà (intl. Collator) | Documenti Microsoft"
-ms.custom: 
+title: confrontare una proprietà (intl. Collator) | Documenti Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 59f274dc-6e52-4344-8d5c-b9f0000b66e0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634171"
 ---
 # <a name="compare-property-intlcollator"></a>Proprietà compare (Intl.Collator)
 Restituisce una funzione che confronta due stringhe utilizzando di ordinamento dell'utilità di confronto.  

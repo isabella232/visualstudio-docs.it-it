@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945129"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notifiche, Ambiente, finestra di dialogo Opzioni
 Usare questa opzione per fare in modo che tutte le notifiche che in precedenza si è scelto di ignorare mediante la finestra di dialogo Notifiche non vengano più ignorate. Per altre informazioni, vedere [Notifiche](../../ide/visual-studio-notifications.md).

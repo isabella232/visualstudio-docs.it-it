@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106981"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: Eseguire il Debug di un motore di Debug personalizzati
 Un tipo di progetto consente di avviare il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodo. Ciò significa che la Germania venga avviato con il controllo dell'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] il controllo del tipo di progetto. Tuttavia, tale istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è possibile eseguire il debug la Germania. Di seguito è riportati i passaggi per consentire il debug la Germania personalizzato.  
@@ -59,7 +60,7 @@ Un tipo di progetto consente di avviare il motore di debug (DE) dal <xref:Micros
   
 1.  Avviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nell'hive del Registro di sistema normale di caricamento progetto digitare progetto (si tratta, l'origine per il tipo di progetto, non un'istanza del tipo di progetto).  
   
-2.  Aprire le proprietà del progetto e passare al **Debug** pagina. Per il **comando**, digitare il percorso di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (per impostazione predefinita, si tratta di *[unità]*\Programmi\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Aprire le proprietà del progetto e passare al **Debug** pagina. Per il **comando**, digitare il percorso di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (per impostazione predefinita, si tratta di *[unità]* \Programmi\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Per il **gli argomenti del comando**, tipo `/rootsuffix exp` per l'hive del Registro di sistema sperimentale (creato durante l'installazione di VSIP).  
   

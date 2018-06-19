@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947482"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: generare modelli da modelli utilizzando sequenze di escape
 È possibile creare un modello di testo che consente di creare un altro modello di testo come output testo generato. A tale scopo, è necessario utilizzare sequenze di escape per delineare i tag di modello di testo. Se non si utilizzano le sequenze di escape, il modello di testo generato avrà un significato predefinito. Per ulteriori informazioni sull'utilizzo di sequenze di escape nei modelli di testo, vedere [utilizzando le sequenze di Escape nei modelli di testo](../modeling/using-escape-sequences-in-text-templates.md).

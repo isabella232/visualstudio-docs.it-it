@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953616"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 Queste linee guida generali potrebbero essere utile se si sta generando codice programma o altre risorse dell'applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le regole non sono fisse.

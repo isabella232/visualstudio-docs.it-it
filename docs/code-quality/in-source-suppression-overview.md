@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924418"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Esclusione di avvisi di analisi codice
 

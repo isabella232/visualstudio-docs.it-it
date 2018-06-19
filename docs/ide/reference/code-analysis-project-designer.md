@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944674"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 Contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice. Lo strumento restituisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.

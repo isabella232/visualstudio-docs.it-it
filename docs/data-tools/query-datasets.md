@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926699"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 Per cercare un record specifico in un set di dati, utilizzare il metodo FindBy in DataTable, scrivere la propria istruzione foreach per eseguire un ciclo in una raccolta di righe della tabella o utilizzare [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

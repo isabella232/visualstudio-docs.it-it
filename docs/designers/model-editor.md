@@ -1,6 +1,7 @@
 ---
 title: Editor dei modelli
 ms.date: 04/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a388f14040cedd7fd05fd7ffdbb47ba7a8ff09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5353be6e3c02895ce74ff4cf27493f803bb25b4e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927033"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 

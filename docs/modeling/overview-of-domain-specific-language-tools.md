@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949524"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Informazioni generali sugli strumenti di linguaggio specifico di dominio
 Strumenti di linguaggio specifico di dominio (strumenti DSL), che sono ospitati in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consentono progettare un linguaggio specifico di dominio e quindi generare tutto ciò che gli utenti devono disporre per creare i modelli basati sulla lingua.

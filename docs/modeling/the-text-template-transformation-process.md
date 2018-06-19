@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951180"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile utilizzare modelli di testo per generare il codice Visual Basic o c# oppure è possibile generare un report HTML.

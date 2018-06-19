@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947937"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.

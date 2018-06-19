@@ -1,9 +1,8 @@
 ---
-title: 'Procedura: Sbloccare Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: 'Procedura: Sbloccare Visual Studio'
 ms.date: 07/20/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -11,11 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8136d74f461d781fb395b534184b8d5b211421f7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943118"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedura: Sbloccare Visual Studio
 

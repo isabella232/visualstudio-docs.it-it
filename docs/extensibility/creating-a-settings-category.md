@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107498"
 ---
 # <a name="creating-a-settings-category"></a>Creazione di una categoria di impostazioni
 In questa procedura dettagliata creare una categoria di impostazioni di Visual Studio e utilizzarlo per i valori per salvare e ripristinare i valori da un file di impostazioni. Una categoria di impostazioni è un gruppo di proprietà correlate che vengono visualizzati come "punto di impostazioni personalizzate;" vale a dire come una casella di controllo di **Importa / Esporta impostazioni** procedura guidata. (È possibile visualizzarla nella **strumenti** menu.) Le impostazioni vengono salvate o ripristinate come una categoria e le singole impostazioni non vengono visualizzate nella procedura guidata. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  

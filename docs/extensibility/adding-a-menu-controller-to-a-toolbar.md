@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104631"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Aggiunta di un Controller di Menu per una barra degli strumenti
 Questa procedura dettagliata si basa il [aggiunta di una barra degli strumenti a una finestra degli strumenti](../extensibility/adding-a-toolbar-to-a-tool-window.md) procedura dettagliata e viene illustrato come aggiungere un controller di menu finestra degli strumenti. I passaggi illustrati di seguito è possibile applicare anche alla barra degli strumenti creati nel [aggiunta di una barra degli strumenti](../extensibility/adding-a-toolbar.md) procedura dettagliata.  
