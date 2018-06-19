@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135721"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Le interfacce e i campi di proprietà finestra
 Il modello per la selezione determinare quali informazioni vengono visualizzate nel **proprietà** finestra è basata sulla finestra che ha lo stato attivo nell'IDE. Ogni finestra e un oggetto all'interno della finestra selezionata, può includere il relativo oggetto di contesto di selezione inserito nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori di una cornice di finestra quando tale finestra ha lo stato attivo. Quando viene modificato lo stato attivo, pertanto, non il contesto della selezione.  

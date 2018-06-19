@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148847"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Dizionario di linguaggio Visual per Visual Studio
 Visual Studio Usa un linguaggio di visual comune per illustrare i concetti che sono i blocchi predefiniti di relativo visualizzato e altre immagini. Quando si progetta nuove icone, è possibile utilizzare questo dizionario per identificare i concetti che si desidera comunicare la propria immagine.  

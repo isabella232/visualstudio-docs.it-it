@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476910"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
 È possibile utilizzare il **RPTn**, e **RPTFn** macro, definite in CRTDBG. H, per sostituire l'utilizzo di `printf` istruzioni per il debug. Queste macro vengono automaticamente eliminate nel rilascio di compilazione quando **debug** non è definito, pertanto non è necessario racchiuderle tra istruzioni **#ifdef**s.  

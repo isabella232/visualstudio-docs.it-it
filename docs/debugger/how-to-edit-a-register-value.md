@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475003"
 ---
 # <a name="how-to-edit-a-register-value"></a>Procedura: modificare un valore di registro
 La finestra Registri è disponibile solo se il debug a livello di indirizzo è abilitato nel **opzioni** nella finestra di dialogo **debug** nodo.  

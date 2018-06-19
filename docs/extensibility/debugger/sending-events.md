@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125764"
 ---
 # <a name="sending-events"></a>L'invio di eventi
 Il meccanismo per la comunicazione tra il debugger e il motore di debug (DE) è un modello di eventi in base a DCOM. Gli eventi vengono inviati come oggetti COM, e ogni evento dispone di parametri che specificano le operazioni seguenti:  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477417"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Debug di progetti di DLL da Visual Studio
 I seguenti modelli di Visual Studio creano una DLL:  

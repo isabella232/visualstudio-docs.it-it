@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148899"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 Il glossario includono le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentazione.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473654"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Errore: il debug in modalità mista è supportato solo quando si utilizza Microsoft .NET Framework 2.0 o versione successiva
 Per eseguire il debug di codice nativo e gestito misto, è necessario disporre di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versione 2.0, 3.0, 3.5 o 4. Debug in modalità mista con versioni precedenti del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] non è supportata.  

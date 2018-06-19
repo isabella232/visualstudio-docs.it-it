@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476952"
 ---
 # <a name="visualizer-api-reference"></a>Informazioni di riferimento sulle API del visualizzatore
 Le API del visualizzatore vengono fornite per gli utenti che desiderano scrivere un visualizzatore per il debugger di Visual Studio. Un visualizzatore è una piccola applicazione che estende le funzionalità dell'interfaccia utente del debugger di Visual Studio Un visualizzatore può visualizzare e modificare facoltativamente un oggetto dati di un tipo specifico per cui è stato progettato il visualizzatore.  

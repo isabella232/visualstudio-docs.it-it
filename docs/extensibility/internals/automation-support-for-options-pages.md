@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128572"
 ---
 # <a name="automation-support-for-options-pages"></a>Supporto di automazione per le pagine di opzioni
 VSPackage possono fornire personalizzato **opzioni** alle finestre di dialogo per la **strumenti** menu, pagine Opzioni del menu Strumenti, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e può renderli disponibili per il modello di automazione.  

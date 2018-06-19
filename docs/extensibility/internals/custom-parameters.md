@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134347"
 ---
 # <a name="custom-parameters"></a>Parametri personalizzati
 Parametri personalizzati controllano il funzionamento di una procedura guidata dopo l'avvio di una procedura guidata. Un file VSZ correlati fornisce una matrice di parametri definiti dall'utente che vengono inserite dall'ambiente di sviluppo integrato (IDE) e passato alla procedura guidata come una matrice di stringhe quando viene avviata la procedura guidata. La procedura guidata, quindi, analizza la matrice di stringhe e utilizza le informazioni di controllo del funzionamento effettivo della procedura guidata. In questo modo, una procedura guidata può personalizzare la funzionalità in base al contenuto del file vsz.  

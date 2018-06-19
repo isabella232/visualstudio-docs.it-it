@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478291"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Visualizzazione thread e le attività tramite la finestra Stack in parallelo
 Il **stack in parallelo** finestra è utile quando si esegue il debug di applicazioni multithreading. Il relativo **visualizzazione thread** Mostra informazioni sullo stack di chiamate per tutti i thread nell'applicazione. Consente di navigare tra i thread e gli stack frame nei thread. Nel codice gestito, il **visualizzazione attività** Mostra stack di chiamate di <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti. Nel codice nativo, il **visualizzazione attività** Mostra stack di chiamate di [gruppi di attività](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [gli algoritmi paralleli](/cpp/parallel/concrt/parallel-algorithms), [agenti asincroni](/cpp/parallel/concrt/asynchronous-agents)e [attività leggere](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

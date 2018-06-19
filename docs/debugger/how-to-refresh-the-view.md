@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480085"
 ---
 # <a name="how-to-refresh-the-view"></a>Procedura: aggiornare la visualizzazione
 Spy + + accetta "snapshot" delle tabelle di sistema e aggiorna una vista in base a queste informazioni. È importante aggiornare periodicamente le visualizzazioni di sistema. Se si dispone di una vista di Spy + + aprire e la visualizzazione non è stato aggiornato, non noterai tali processi, thread e windows che verranno creati successivamente. È possibile vedere anche gli elementi che non esistono più. Il **aggiornamento** comando è disponibile per tutte le visualizzazioni tranne la visualizzazione di messaggi.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559595"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: specificare il percorso da cui gli utenti finali eseguiranno l'installazione
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, il percorso in cui gli utenti accedere per scaricare e installare l'applicazione non è necessariamente il percorso in cui è inizialmente a pubblicare l'applicazione. Ad esempio, in alcune organizzazioni uno sviluppatore può pubblicare un'applicazione a un server di gestione temporanea e quindi un amministratore sposterebbe l'applicazione a un server Web.  

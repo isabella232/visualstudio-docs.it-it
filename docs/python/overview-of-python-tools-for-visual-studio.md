@@ -16,6 +16,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449169"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Uso di Python in Visual Studio su Windows
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134355"
 ---
 # <a name="test-area-5-change-source-control"></a>Area test 5: Modifica controllo del codice sorgente
 Questa area di plug-in test di controllo del codice sorgente riguarda modifica il controllo del codice sorgente tramite la **Modifica controllo del codice sorgente** comando.  

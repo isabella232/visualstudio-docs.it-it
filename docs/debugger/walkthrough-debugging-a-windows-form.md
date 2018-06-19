@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477953"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: debug di un Windows Form
 Un Windows Form è una delle applicazioni gestite più comuni. Un Windows Form consente di creare un'applicazione Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.  
