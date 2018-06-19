@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098108"
 ---
 # <a name="bitmap-element"></a>Elemento bitmap
 Definisce una bitmap. La bitmap viene caricata da una risorsa o da un file.  

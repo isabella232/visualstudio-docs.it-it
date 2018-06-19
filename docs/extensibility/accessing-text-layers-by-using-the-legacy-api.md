@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098667"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>L'accesso ai livelli di testo tramite l'API Legacy
 In genere, un livello testo incapsula alcuni aspetti di layout del testo. Ad esempio, un livello "una funzione-tempo" nascosta testo prima e dopo una funzione che contiene il punto di inserimento (il punto di inserimento di testo).  

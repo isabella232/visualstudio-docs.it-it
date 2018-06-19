@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104706"
 ---
 # <a name="attaching-after-a-launch"></a>Dopo il lancio di un collegamento di
 Dopo che è stato avviato un programma, la sessione di debug è possibile collegare il motore di debug (DE) a tale programma.  

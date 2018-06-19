@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099473"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Accesso ai Buffer di testo tramite l'API Legacy
 Il testo è responsabile della gestione dei flussi di testo e salvataggio permanente di file. Anche se il buffer può leggere o scrivere altri formati, tutte le normali comunicazioni con il buffer viene eseguita utilizzando Unicode. Nelle API legacy, con il buffer di testo è possibile utilizzare uno - o un sistema di coordinate bidimensionale per identificare le posizioni di caratteri nel buffer.  

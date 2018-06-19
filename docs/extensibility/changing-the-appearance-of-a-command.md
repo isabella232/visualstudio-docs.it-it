@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099083"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Modifica dell'aspetto di un comando
 È possibile fornire feedback all'utente modificando l'aspetto di un comando. È ad esempio, un comando per un aspetto diverso quando non è disponibile. È possibile rendere i comandi disponibili o non disponibile, nascondere o visualizzarli, o selezionare o deselezionare le dal menu.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103942"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Questa interfaccia indica al gestore di sessione di debug (SDM) che un punto di interruzione in sospeso non può essere associato a un programma caricato, a causa di un avviso o un errore.  

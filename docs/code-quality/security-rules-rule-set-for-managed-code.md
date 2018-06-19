@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925042"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Set di regole di sicurezza per codice gestito
 È necessario includere le regole di sicurezza Microsoft set di regole per aumentare del numero di potenziali problemi di sicurezza che vengono segnalati.

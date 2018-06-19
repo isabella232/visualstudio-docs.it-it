@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065595"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
 Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma generano esempi completi che è possibile usare per acquisire dimestichezza. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100611"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Elementi interni di estensione parallela per .NET Framework
 In questa sezione vengono descritti i tipi interni, metodi e campi delle classi che consentono di implementano un debugger personalizzato per le estensioni parallele di .NET Framework.  

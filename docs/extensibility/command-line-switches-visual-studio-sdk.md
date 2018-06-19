@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098186"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Opzioni della riga di comando (Visual Studio SDK)
 Devenv.exe, il file eseguibile che inizia il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), supporta i parametri della riga di comando in modo specifico per lo sviluppo dei pacchetti VSPackage. Pacchetti VSPackage possono inoltre rendere disponibili i propri parametri dalla riga di comando Devenv. Gli argomenti seguenti forniscono informazioni su come usare le opzioni della riga di comando nell'IDE.  

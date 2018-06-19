@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102928"
 ---
 # <a name="debug-engine"></a>Motore di debug
 Un motore di debug (DE) funziona con l'interprete o a un sistema operativo per fornire servizi di debug, ad esempio la valutazione di espressioni, i punti di interruzione e controllo di esecuzione. La Germania è responsabile del monitoraggio dello stato di un programma in fase di debug. A tale scopo, la Germania Usa qualsiasi metodi sono disponibili per il processo di runtime supportate, se la CPU o le API fornito dal runtime.  

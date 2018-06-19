@@ -20,12 +20,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105794"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L'accesso a carattere archiviato e le impostazioni dei colori
 Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) vengono archiviate le impostazioni modificate per i tipi di carattere e colori nel Registro di sistema. È possibile utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia per accedere a queste impostazioni.
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Per avviare la persistenza dello stato dei tipi di carattere e colori
- Informazioni di carattere e colori vengono archiviate in base alla categoria nel percorso seguente del Registro di sistema: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\  *\<CategoryGUID >*], dove  *\<CategoryGUID >* è il GUID di categoria.
+ Informazioni di carattere e colori vengono archiviate in base alla categoria nel percorso seguente del Registro di sistema: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], dove  *\<CategoryGUID >* è il GUID di categoria.
 
  Pertanto, per avviare la persistenza, un pacchetto VSPackage deve:
 

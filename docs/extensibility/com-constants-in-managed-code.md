@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101888"
 ---
 # <a name="com-constants-in-managed-code"></a>Costanti di COM nel codice gestito
 Il Framework di pacchetto gestito (MPF) rende disponibile per il codice gestito alcune costanti COM standard. Queste costanti sono elencate di seguito per riferimento.  

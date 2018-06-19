@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098392"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Aggiunta di icone ai comandi di Menu
 I comandi possono apparire su entrambi i menu e barre degli strumenti. Sulla barra degli strumenti, è comune per un comando da visualizzare solo un'icona (per risparmiare spazio) durante il menu che viene visualizzato in genere un comando con un'icona e testo.  

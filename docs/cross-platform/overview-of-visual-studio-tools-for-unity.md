@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31065553"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Panoramica di Visual Studio Tools per Unity
 Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual Studio Tools per Unity e su come usarle per incrementare la produttività con Unity.

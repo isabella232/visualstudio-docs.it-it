@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099272"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Campo AsyncVoidMethodBuilder.m_objectIdForDebugger
 Rappresenta l'oggetto con inizializzazione differita utilizzato dal debugger per identificare in modo univoco questo generatore.  

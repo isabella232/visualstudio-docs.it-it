@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927468"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati in set di dati
 Convalida dei dati è il processo di conferma che i valori immessi negli oggetti dati sono conformi ai vincoli all'interno dello schema di un set di dati. Il processo di convalida conferma inoltre che questi valori vengono eseguite le regole che sono state stabilite per l'applicazione. È buona norma convalidare i dati prima di inviare aggiornamenti al database sottostante. In questo modo si riduce gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.

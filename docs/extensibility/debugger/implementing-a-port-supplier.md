@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098992"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementazione di un fornitore di porta
 Un fornitore di porta fornisce porte su richiesta al gestore di sessione di debug (SDM). Un fornitore di porta deve essere implementato durante il debug in un computer non DCOM o quando un nuovo dispositivo deve essere supportato. Per consentire il debug di un telefono cellulare, ad esempio, è possibile implementare un fornitore di porta che fornisce porte connettono a telefoni cellulari (ad esempio tramite una connessione di cella o IR) ed elencare i processi e i programmi in esecuzione sul telefono.  

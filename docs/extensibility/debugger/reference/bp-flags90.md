@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100348"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 Enumera i valori validi per i flag facoltativo. I flag facoltativi possono essere utilizzati per specificare informazioni aggiuntive quando si imposta un punto di interruzione. Questa enumerazione estende il [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumerazione.  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947118"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.

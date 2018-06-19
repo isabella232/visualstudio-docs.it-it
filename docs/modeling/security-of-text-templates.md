@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947521"
 ---
 # <a name="security-of-text-templates"></a>Sicurezza dei modelli di testo
 Modelli di testo sono i seguenti problemi di protezione:

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102980"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
 Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati insieme in un menu o una barra degli strumenti. Qualsiasi gruppo di comando nuovo utilizzabile tramite l'assegnazione ai menu padre diverso nella sezione CommandPlacements del file con estensione vsct.  

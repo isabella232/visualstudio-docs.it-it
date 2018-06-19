@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100530"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Abilitazione di un programma da sottoporre a debug
 Prima che il motore di debug (DE) può eseguire il debug di un programma, è necessario avviare la Germania o collegarlo a un programma esistente.  

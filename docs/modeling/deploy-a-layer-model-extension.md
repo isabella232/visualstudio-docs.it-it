@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949436"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Distribuire un'estensione del modello di livello
 Altri utenti di Visual Studio possono installare estensioni di modellazione del livello creati tramite Visual Studio.

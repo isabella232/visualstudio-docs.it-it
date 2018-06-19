@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942490"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Avvio, Ambiente, finestra di dialogo Opzioni
 Usare questa pagina per personalizzare la pagina di avvio di Visual Studio o impostare un'azione predefinita diversa all'avvio di Visual Studio. Per altre informazioni, vedere [Personalizzazione della pagina iniziale](../../ide/customizing-the-start-page-for-visual-studio.md).

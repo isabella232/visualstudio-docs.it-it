@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100260"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelli di Visual Studio)
 Specifica un'espressione facoltativa da associare a una o più funzionalità. Vedere <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>. Le funzionalità vengono esposte dai tipi di progetto tramite la gerarchia come proprietà <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. In questo modo, il modello può essere condiviso da molteplici tipi di progetto che dispongono di funzionalità applicabili comuni.  

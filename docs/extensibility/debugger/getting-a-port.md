@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102993"
 ---
 # <a name="getting-a-port"></a>Recupero di una porta
 Una porta rappresenta una connessione a un computer in cui i processi in esecuzione. Tale computer potrebbe essere il computer locale o un computer remoto (quale un sistema operativo non basato su Windows potrebbe eventualmente essere in esecuzione, vedere [porte](../../extensibility/debugger/ports.md) per altre informazioni).  

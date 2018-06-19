@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103240"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimento all'API (debug di Visual Studio)
 La sezione di riferimento include una panoramica concettuale dell'API, una Guida che illustra la sintassi e utilizzo per tutti gli elementi API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico in base alla categoria.  

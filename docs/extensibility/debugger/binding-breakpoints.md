@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104151"
 ---
 # <a name="binding-breakpoints"></a>Associazione dei punti di interruzione
 Se l'utente imposta un punto di interruzione, ad esempio premendo F9, l'IDE in cui viene creata la richiesta e richiede la sessione di debug per creare il punto di interruzione.  

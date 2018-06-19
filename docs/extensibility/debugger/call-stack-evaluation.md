@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101303"
 ---
 # <a name="call-stack-evaluation"></a>Valutazione dello Stack di chiamate
 Per visualizzare gli stack frame dello stack di chiamate durante la modalità di interruzione, è necessario implementare la [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metodo.  

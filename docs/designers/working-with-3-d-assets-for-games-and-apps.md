@@ -1,6 +1,7 @@
 ---
 title: Uso di risorse 3D per giochi e app
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -11,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd99cad3b63df1cf7ab3bcecb347df53f7408832
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924844"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare asset 3D per giochi e app
 

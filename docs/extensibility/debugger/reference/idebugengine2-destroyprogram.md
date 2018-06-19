@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105866"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informa un motore di debug (DE) che il programma specificato è stato insolitamente terminato e che la Germania necessario pulire tutti i riferimenti al programma e la trasmissione di un programma evento di eliminazione.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097614"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 Il `CommandName` elemento specifica il testo visualizzato nella categoria tastiera il **opzioni** nella finestra di dialogo e il **comandi** nell'elenco il **Personalizza** finestra di dialogo casella.  

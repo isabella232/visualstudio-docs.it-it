@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102681"
 ---
 # <a name="debugger-concepts"></a>Concetti di debugger
 Per compilare il pacchetto di debug di Visual Studio, è necessario avere familiarità con i concetti dell'architettura della progettazione del pacchetto.  

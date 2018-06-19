@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105265"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Aggiunta di una più recente di elenco per un sottomenu usati
 Questa procedura dettagliata si basa su dimostrazioni in [aggiunta di un sottomenu a un Menu](../extensibility/adding-a-submenu-to-a-menu.md)e viene illustrato come aggiungere un elenco dinamico di un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco più recente (MRU).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101290"
 ---
 # <a name="adding-and-removing-property-pages"></a>Aggiunta e rimozione di proprietà (pagine)
 Progettazione progetti fornisce una posizione centralizzata per la gestione delle proprietà del progetto, impostazioni e le risorse in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Viene visualizzato come un'unica finestra nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo (IDE) integrato e contiene un numero di riquadri a destra che si accede mediante le schede a sinistra. I riquadri (noto anche come pagine delle proprietà) in Progettazione progetti variano in base a lingua e il tipo di progetto. La finestra di progettazione del progetto è possibile accedere con il **proprietà** comando il **progetto** menu.  

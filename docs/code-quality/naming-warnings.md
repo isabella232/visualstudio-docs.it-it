@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927087"
 ---
 # <a name="naming-warnings"></a>avvisi di denominazione
 Supportano la conformità alle convenzioni di denominazione di avvisi di denominazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] linee guida di progettazione.

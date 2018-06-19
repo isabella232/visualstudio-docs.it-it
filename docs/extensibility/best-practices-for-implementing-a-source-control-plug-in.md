@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106048"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Procedure consigliate per l'implementazione di un plug-in controllo del codice sorgente
 I dettagli tecnici seguenti consentono di implementare in modo affidabile un plug-in controllo del codice sorgente [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

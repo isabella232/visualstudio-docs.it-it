@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102090"
 ---
 # <a name="program-control"></a>Controllo del programma
 In Visual Studio il debug, tutte le istruzioni seguenti e continuando routine si verificano a livello di programma:  

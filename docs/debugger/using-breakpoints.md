@@ -41,6 +41,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927453"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizzare i punti di interruzione nel Debugger di Visual Studio
 È possibile impostare i punti di interruzione quando si desidera arrestare l'esecuzione del debugger, ad esempio per visualizzare lo stato delle variabili di codice o per esaminare lo stack di chiamate. I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore.  

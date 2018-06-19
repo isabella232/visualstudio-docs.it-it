@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099838"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Origini di eventi (Visual Studio SDK)
 Esistono due origini di eventi: il motore di debug (DE) e la sessione di debug manager (SDM). Gli eventi inviati da un DE hanno un motore diverso da NULL, mentre gli eventi inviati dal SDM hanno un motore NULL.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102792"
 ---
 # <a name="evaluating-expressions"></a>La valutazione delle espressioni
 Le espressioni vengono create dalle stringhe passate dal Auto, espressioni di controllo, controllo immediato o finestra di controllo immediato. Quando viene valutata un'espressione, viene generata una stringa stampabile che contiene il nome e il tipo di variabile o argomento e il relativo valore. Questa stringa viene visualizzata nella finestra dell'IDE corrispondente.  
