@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135784"
 ---
 # <a name="handling-specialized-deployment"></a>Gestione specializzato distribuzione
 Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un **Smart Device** progetto supporta una distribuzione per copiare un'applicazione compilata nel dispositivo di destinazione. Sottotipi di progetto possono fornire il comportamento della distribuzione specializzato mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia. Questa interfaccia definisce un set completo di operazioni di distribuzione:  

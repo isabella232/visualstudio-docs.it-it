@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142900"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfacce legacy nell'Editor
 Editor di Visual Studio è possibile accedere da interfacce legacy. Visual Studio SDK include schede di rete come *shim*, che consentono di queste interfacce interagire con il nuovo editor. Tuttavia, è consigliabile aggiornare il codice legacy per utilizzare il nuovo editor di API. Il codice garantiscono prestazioni migliori ed è possibile usare nuove tecnologie, ad esempio Windows Presentation Foundation (WPF) e Managed Extensibility Framework (MEF).  

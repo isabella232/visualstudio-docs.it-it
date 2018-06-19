@@ -23,6 +23,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135547"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Estensione di proprietà, elenco attività, Output e opzioni Windows
 È possibile accedere a qualsiasi finestra degli strumenti in Visual Studio. Questa procedura dettagliata viene illustrato come integrare informazioni sulla finestra di strumento in un nuovo **opzioni** pagina e una nuova impostazione nel **proprietà** pagina, nonché su come scrivere il **elenco attività** e **Output** windows.  

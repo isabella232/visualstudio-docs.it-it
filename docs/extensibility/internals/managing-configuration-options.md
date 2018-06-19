@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134760"
 ---
 # <a name="managing-configuration-options"></a>Gestione delle opzioni di configurazione
 Quando si crea un nuovo tipo di progetto, è necessario gestire impostazioni di configurazione di progetto e soluzione che determinano come verrà compilato, pacchetti, distribuito ed esecuzione del progetto. Gli argomenti seguenti descrivono la configurazione di soluzione e progetto.  

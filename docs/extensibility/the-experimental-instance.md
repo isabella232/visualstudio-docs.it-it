@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138925"
 ---
 # <a name="the-experimental-instance"></a>L'istanza sperimentale
 Per proteggere l'ambiente di sviluppo di Visual Studio da applicazioni non verificate che è possibile modificarlo, Visual Studio SDK fornisce uno spazio sperimentale che è possibile utilizzare per provare. Sviluppare nuove applicazioni con Visual Studio come di consueto, ma vengono eseguiti utilizzando l'istanza sperimentale.  
@@ -28,7 +29,7 @@ Per proteggere l'ambiente di sviluppo di Visual Studio da applicazioni non verif
   
  Se si desidera avviare l'istanza sperimentale di Visual Studio all'esterno di una soluzione specifica, eseguire il comando seguente nella finestra di comando:  
   
- "*\<Il percorso di installazione di visual studio >*\Common7\IDE\devenv.exe" RootSuffix Exp  
+ "*\<Il percorso di installazione di visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
 >  L'istanza sperimentale viene scritto nel Registro di sistema sotto il `<version number>Exp` e `<version number>Exp_Config` nodi. Ad esempio l'area del Registro di sistema sperimentale di Visual Studio 2015 è  

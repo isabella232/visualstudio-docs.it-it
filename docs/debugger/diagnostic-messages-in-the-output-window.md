@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474583"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Inviare i messaggi diagnostici nella finestra di Output
 È possibile scrivere messaggi in fase di esecuzione per il **Output** finestra tramite il `Debug` classe o `Trace` (classe), che fanno parte di <xref:System.Diagnostics> libreria di classi. Utilizzare la classe Debug se si desidera generare l'output solo nella versione di debug del programma e la classe Trace se si desidera generare l'output sia nella versione di debug che in quella di rilascio del programma.  

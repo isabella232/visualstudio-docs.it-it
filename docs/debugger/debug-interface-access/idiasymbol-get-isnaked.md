@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463289"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Recupera un flag che specifica se la funzione ha il [naked](/cpp/cpp/naked-cpp) attributo (vale a dire, la funzione non dispone di alcun codice di prologo o epilogo aggiunte dal compilatore).  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578848"
 ---
 # <a name="vbc-task"></a>Attività Vbc
 Esegue il wrapping di vbc.exe, un compilatore che genera file eseguibili con estensione exe, librerie a collegamento dinamico con estensione dll o moduli di codice con estensione netmodule. Per altre informazioni su vbc.exe, vedere [Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index) (Compilatore della riga di comando di Visual Basic).  

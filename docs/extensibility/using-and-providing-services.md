@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138340"
 ---
 # <a name="using-and-providing-services"></a>Utilizzando e servizi
 Un servizio è un contratto tra due pacchetti VSPackage. Un VSPackage offre un set specifico di interfacce per un altro VSPackage da utilizzare. Ad esempio, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre il <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> del servizio a qualsiasi VSPackage carica. Questo servizio fornisce il <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfaccia, che consente di scrivere nel log attività. Per ulteriori informazioni, vedere [procedura: utilizzare il registro attività](../extensibility/how-to-use-the-activity-log.md).  

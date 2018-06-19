@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479838"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C# #
 Questa procedura dettagliata viene illustrato come scrivere un visualizzatore semplice usando c#. Il visualizzatore che si creerà in questa procedura dettagliata consente di visualizzare il contenuto di una stringa utilizzando una finestra di messaggio Windows Form. Questo visualizzatore semplice di stringhe non è particolarmente utile in sé, ma mostra i passaggi di base che è necessario seguire per creare più utili visualizzatori per altri tipi di dati.  
@@ -37,7 +38,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  Nel **File** menu, scegliere **nuovo > progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#**selezionare **.NET Standard**.  
+2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#** selezionare **.NET Standard**.  
   
 3.  Nel riquadro centrale, scegliere **libreria di classi**.  
   
@@ -232,7 +233,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 1.  Nel **File** menu, scegliere **nuovo > progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#**selezionare **.NET Standard**.  
+2.  Nel **nuovo progetto** nella finestra di dialogo **Visual c#** selezionare **.NET Standard**.  
   
 3.  Nel riquadro centrale, scegliere **libreria di classi**.   
   
@@ -248,7 +249,7 @@ Eseguire le attività seguenti per creare un visualizzatore.
   
 2.  Nel menu di scelta rapida scegliere **Aggiungi** e quindi fare clic su **nuovo elemento**.  
   
-3.  Nel **Aggiungi nuovo elemento** nella finestra di dialogo **elementi di Visual c#**selezionare **visualizzatore del Debugger**.  
+3.  Nel **Aggiungi nuovo elemento** nella finestra di dialogo **elementi di Visual c#** selezionare **visualizzatore del Debugger**.  
   
 4.  Nel **nome** , digitare un nome appropriato, ad esempio SecondVisualizer.cs.  
   

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572322"
 ---
 # <a name="xdcmake-task"></a>Attività XDCMake
 Esegue il wrapping dello strumento Documentazione XML (xdcmake.exe) che unisce i file di commento (con estensione xdc) del documento XML in un file con estensione xml.  

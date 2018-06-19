@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133988"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID di barre degli strumenti di Visual Studio
 In questo argomento enumera i valori GUID e ID di barre degli strumenti inclusi in ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nel file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per ulteriori informazioni, vedere [IDE-Defined comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  

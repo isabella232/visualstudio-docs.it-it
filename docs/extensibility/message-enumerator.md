@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140262"
 ---
 # <a name="message-enumerator"></a>Enumeratore di messaggio
 I flag seguenti vengono utilizzati per il `TEXTOUTPROC` funzione, che è una funzione di callback nell'IDE sono disponibili quando si chiama il [SccOpenProject](../extensibility/sccopenproject-function.md) (vedere [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) per informazioni dettagliate su callback funzione).  

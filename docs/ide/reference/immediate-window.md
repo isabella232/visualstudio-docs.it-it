@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704525"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le espressioni, eseguire istruzioni, i valori delle variabili di stampa e così via. Consente di immettere le espressioni che devono essere valutate ed eseguite dal linguaggio di sviluppo durante il debug. Per visualizzare il **immediato** finestra, aprire un progetto per la modifica, quindi scegliere **Windows** dal **Debug** dal menu **immediato**, oppure premere CTRL + ALT + I.

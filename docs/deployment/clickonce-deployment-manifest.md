@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560323"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto di distribuzione ClickOnce
 Un manifesto della distribuzione è un file XML che descrive una distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], inclusa l'identificazione della versione corrente dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da distribuire.  

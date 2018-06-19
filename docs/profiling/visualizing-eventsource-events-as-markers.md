@@ -15,6 +15,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449026"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizzare eventi EventSource come marcatori
 Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource come marcatori ed è possibile controllare la modalità di visualizzazione dei marcatori. Per visualizzare i marcatori EventSource, registrare il GUID del provider ETW mediante la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Il visualizzatore di concorrenza usa convenzioni predefinite per rappresentare gli eventi EventSource come [marcatori di flag](../profiling/flag-markers.md), [marcatori di span](../profiling/span-markers.md) e [marcatori di messaggi](../profiling/message-markers.md). È possibile personalizzare la modalità di visualizzazione degli eventi EventSource aggiungendo campi personalizzati agli eventi. Per altre informazioni sui marcatori, vedere [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md). Per altre informazioni sugli eventi EventSource, vedere <xref:System.Diagnostics.Tracing>.  

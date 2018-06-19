@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140072"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Fornisce un contesto del servizio di linguaggio tramite l'API Legacy
 Sono disponibili due opzioni per un servizio di linguaggio fornire contesto utente utilizzando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale: fornire un contesto di indicatore di testo, o fornire un contesto utente tutti. In seguito vengono descritte le differenze tra ogni.  

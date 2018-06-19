@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473638"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: Espandere e comprimere alberi di Spy++
 È possibile espandere e comprimere le visualizzazioni di Windows, processi e thread utilizzando due metodi: facendo clic sulle icone nella finestra o utilizzando il **albero** menu. Il + e - icone nell'albero come avviene nella finestra del progetto di Visual C++.  

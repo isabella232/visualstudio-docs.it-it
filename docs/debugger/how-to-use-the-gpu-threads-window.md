@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476728"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Procedura: utilizzare la finestra Thread GPU
 Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per ulteriori informazioni sulle applicazioni in esecuzione sulla GPU, vedere [C++ AMP Panoramica](/cpp/parallel/amp/cpp-amp-overview).  

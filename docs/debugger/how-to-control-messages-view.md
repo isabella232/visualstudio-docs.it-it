@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473199"
 ---
 # <a name="how-to-control-messages-view"></a>Procedura: controllare la visualizzazione messaggi
 Con Spy + +, è necessario un controllo notevole sul contenuto di un [visualizzazione messaggi](../debugger/messages-view.md) finestra. È possibile [avviare e arrestare](../debugger/how-to-start-and-stop-the-message-log-display.md) visualizzando i messaggi in qualsiasi momento, è possibile specificare:  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479740"
 ---
 # <a name="no-source-available"></a>Nessuna origine disponibile
 Il progetto non contiene codice sorgente per il codice che si tenta di visualizzare. La causa è facendo doppio clic su un modulo che non dispone di codice sorgente nel **finestra Stack di chiamate** o **finestra thread**. È possibile continuare il debug, ma non è possibile utilizzare la finestra di origine per impostare i punti di interruzione ed eseguire altre operazioni in questa posizione. Se è necessario impostare un punto di interruzione, utilizzare il **finestra Disassembly** invece.  

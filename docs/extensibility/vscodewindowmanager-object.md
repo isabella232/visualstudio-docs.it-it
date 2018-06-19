@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137602"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
 Il servizio di linguaggio implementa la gestione di finestre del codice ed è responsabile per la gestione di aree di controllo (ad esempio, la barra di menu a discesa). Per ulteriori informazioni, vedere [la personalizzazione di codice Windows tramite l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

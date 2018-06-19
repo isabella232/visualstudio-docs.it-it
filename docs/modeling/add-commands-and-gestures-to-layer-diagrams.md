@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952142"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi di dipendenza
 È possibile definire i comandi di menu di scelta e gestori movimenti nei diagrammi di dipendenza in Visual Studio. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) che è possibile distribuire ad altri utenti di Visual Studio.

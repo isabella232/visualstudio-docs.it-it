@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573565"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire un'attività una sola volta per ogni batch. Può non essere semplice comprendere esattamente quali elementi vengono passati e a quale batch. Questo argomento descrive gli scenari più comuni relativi alla suddivisione in batch.  

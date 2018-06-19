@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103357"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione tasti di scelta rapida alle voci di Menu
 Per associare un tasto di scelta rapida a un comando di menu personalizzate, è sufficiente aggiungere una voce nel file vsct per il pacchetto. In questo argomento viene illustrato come eseguire il mapping di un tasto di scelta rapida per un pulsante personalizzato, una voce di menu o un comando della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o limitati a un editor personalizzato.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131756"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Creazione di istanze di progetto tramite le factory di progetto
 Tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizzare un *factory del progetto* per creare istanze di oggetti del progetto. Una factory del progetto è simile a una factory di classe standard per gli oggetti COM cocreatable. Oggetti del progetto non sono tuttavia cocreatable: possono essere creati solo tramite una factory del progetto.  

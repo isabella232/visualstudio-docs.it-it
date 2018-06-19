@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471600"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg (distruttore)
 Elimina un'istanza di `VsgDbg` classe. Se le informazioni grafiche sono attiva la registrazione, il file di log di grafica viene finalizzato e chiuso e vengono rilasciate le risorse utilizzate durante l'acquisizione di informazioni grafiche attivamente.  

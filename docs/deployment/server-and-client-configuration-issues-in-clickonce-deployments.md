@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562624"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si utilizza Internet Information Services (IIS) in Windows Server e la distribuzione contiene un tipo di file che non viene riconosciuta, ad esempio un file di Microsoft Word, IIS rifiuta la trasmissione del file e la distribuzione avrà esito negativo.  

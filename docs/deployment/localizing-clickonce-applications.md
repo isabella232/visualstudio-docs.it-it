@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562182"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
 La localizzazione è il processo di adattamento di un'applicazione a impostazioni cultura specifiche. Questo processo consiste nel tradurre il testo dell'interfaccia utente in una lingua specifica di un paese/area geografica, usare la formattazione di data e valuta corretta, regolare la dimensione dei controlli di un form e, se necessario, eseguire il mirroring dei controlli da destra verso sinistra.  

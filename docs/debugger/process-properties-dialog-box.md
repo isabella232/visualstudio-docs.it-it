@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476809"
 ---
 # <a name="process-properties-dialog-box"></a>Finestra di dialogo Proprietà processo
 Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un processo specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero, quindi scegliere **proprietà** dal **vista** menu.  

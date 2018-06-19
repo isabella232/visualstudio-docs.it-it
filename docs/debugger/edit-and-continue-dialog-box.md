@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473137"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Finestra di dialogo Modifica e continuazione
 (Solo nativo) Questa finestra di dialogo viene visualizzata quando è stato modificato durante il debug del codice e **modifica e continuazione** riconosce che è possibile applicare le modifiche al codice. Per ulteriori informazioni, vedere [modifica e continuazione](../debugger/edit-and-continue.md).  

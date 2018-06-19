@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134659"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio Legacy
 La barra di navigazione nella parte superiore della visualizzazione dell'editor vengono visualizzati i tipi e membri nel file. Discesa a sinistra vengono visualizzati i tipi e membri vengono visualizzati nella finestra di destra elenco a discesa. Quando l'utente seleziona un tipo, il cursore viene posizionato nella prima riga del tipo. Quando l'utente seleziona un membro, il cursore viene posizionato sulla definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate per riflettere il percorso corrente del punto di inserimento.  

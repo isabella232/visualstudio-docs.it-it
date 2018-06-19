@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137547"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelli di Visual Studio)
 Specifica se l'utente viene richiesto per un progetto Salva percorso tramite il **nuovo progetto** la finestra di dialogo quando si crea un progetto. Se questo elemento è impostato su `true`, quindi all'utente viene richiesto per il salvataggio percorso; se `false`, quindi non vengono visualizzate. (Ovvero, un progetto temporaneo viene creato.)  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134620"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfacce di servizio di linguaggio legacy
 Per un determinato linguaggio di programmazione, può essere solo un'istanza di un servizio di linguaggio alla volta. Tuttavia, un servizio di linguaggio singolo può essere utilizzato più di un editor.  

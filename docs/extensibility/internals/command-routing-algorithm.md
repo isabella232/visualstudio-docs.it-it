@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131495"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo di Routing di comandi
 In Visual Studio, i comandi vengono gestiti da un numero dei diversi componenti. Indirizzare i comandi da un contesto più interno, che è basato sulla selezione corrente, per il contesto più esterno (noto anche come globale). Per ulteriori informazioni, vedere [disponibilità](../../extensibility/internals/command-availability.md).  

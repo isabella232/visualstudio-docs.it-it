@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131738"
 ---
 # <a name="legacy-language-service-features"></a>Funzionalità del linguaggio legacy
 Un servizio di linguaggio di pacchetto gestito (MPF) framework può supportare uno o più [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità, ad esempio l'evidenziazione della sintassi, IntelliSense e convalida del punto di interruzione. Ogni funzionalità può essere implementata indipendente dagli altri, ma tutti richiedono un parser e uno scanner, ad eccezione di evidenziazione della sintassi, che richiede solo uno scanner.  

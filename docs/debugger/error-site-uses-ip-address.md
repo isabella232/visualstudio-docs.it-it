@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470904"
 ---
 # <a name="error-site-uses-ip-address"></a>Errore: il sito utilizza un indirizzo IP
 Questo errore si verifica quando il debugger tenta di connettersi automaticamente a un'applicazione Web che utilizza un indirizzo IP Questo errore si verifica se si modifica **Identificazione sito Web** a **Usa indirizzo IP specifico** in IIS.  

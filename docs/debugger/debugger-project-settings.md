@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474024"
 ---
 # <a name="debugger-project-settings"></a>Impostazioni di progetto correlate al debugger
 Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste impostazioni vengono definiti determinati aspetti del processo di debug, ad esempio le directory esaminate dal debugger, il comando e i relativi argomenti utilizzati per l'avvio del programma e il tipo di informazioni di debug create per il programma. Per modificare le impostazioni, è possibile utilizzare la finestra di dialogo **Pagine delle proprietà** .  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953923"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
 Questo documento descrive le pagine, o raccolte di proprietà, associate alla categoria **Ambiente**, `DTE.Properties("Environment", <Property Page>)`, della finestra di dialogo **Opzioni**. Il titolo di ogni sottosezione rappresenta la chiamata usata per accedere alla raccolta Proprietà e la tabella di ogni sottosezione elenca le proprietà della raccolta.

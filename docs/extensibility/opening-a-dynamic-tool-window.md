@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138288"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Aprire una finestra degli strumenti dinamiche
 Le finestre degli strumenti sono in genere aperto da un comando in un menu o un equivalente di tasti di scelta rapida. In alcuni casi, tuttavia, potrebbe essere una finestra degli strumenti visualizzata ogni volta che si applica uno specifico contesto UI e si chiude quando il contesto dell'interfaccia utente non è più valido. Questi tipi di finestre degli strumenti sono dette *dinamiche* oppure *visibili automaticamente*.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133149"
 ---
 # <a name="test-area-4-check-in"></a>Area test 4: Check-In
 Questa area di plug-in test di controllo del codice sorgente include gli elementi aggiornati di invio all'archivio delle versioni tramite il **Archivia** comando.  

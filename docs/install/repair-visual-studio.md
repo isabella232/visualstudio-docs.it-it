@@ -16,6 +16,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31620859"
 ---
 # <a name="repair-visual-studio-2017"></a>Riparare Visual Studio 2017
 

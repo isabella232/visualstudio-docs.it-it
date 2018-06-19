@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128944"
 ---
 # <a name="creating-a-source-control-vspackage"></a>Creazione di un VSPackage di controllo di origine
 Questa documentazione include i collegamenti per la panoramica dell'architettura di un pacchetto di controllo del codice sorgente integrato con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], l'API che viene definito mediante le interfacce da implementare e i servizi per l'utilizzo e un esempio che illustra una semplice origine controllare l'implementazione del pacchetto.  

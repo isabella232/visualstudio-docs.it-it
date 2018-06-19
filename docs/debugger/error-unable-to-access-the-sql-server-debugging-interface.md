@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471632"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Errore: impossibile accedere all'interfaccia di debug di SQL Server
 Questo messaggio viene visualizzato quando si tenta di eseguire il debug di SQL su un computer in cui non è attivato questo tipo di debug.  

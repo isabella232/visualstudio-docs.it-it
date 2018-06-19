@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133209"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Elenco di controllo: Creazione di un servizio di linguaggio Legacy
 L'elenco di controllo seguente sono riepilogati i passaggi di base è necessario eseguire per creare un servizio di linguaggio per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principale. Per integrare il servizio di linguaggio in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario creare un analizzatore di espressioni di debug. Per ulteriori informazioni, vedere [la scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) nel [estensibilità di Visual Studio Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

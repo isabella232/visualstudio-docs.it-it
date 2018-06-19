@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147115"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procedura dettagliata: Visualizzazione di completamento istruzioni
 È possibile implementare il completamento delle istruzioni basata su linguaggio definendo gli identificatori per il quale si desidera fornire completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire la propria estensione di file e il tipo di contenuto e quindi visualizzare il completamento per quel tipo o è possibile attivare il completamento per un tipo di contenuto esistente, ad esempio, "normale". Questa procedura dettagliata viene illustrato come attivare il completamento del tipo di contenuto "normale", ovvero il tipo di contenuto dei file di testo. Il tipo di contenuto "text" è il predecessore di tutti gli altri tipi contenuti, inclusi codice e file XML.  
