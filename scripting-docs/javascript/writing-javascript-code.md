@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571501"
 ---
 # <a name="writing-javascript-code"></a>Scrittura di codice JavaScript
 Come molti altri linguaggi di programmazione, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] è organizzato in istruzioni, blocchi costituiti da set di istruzioni correlate e commenti. All'interno di un'istruzione è possibile usare variabili, stringhe, numeri ed espressioni.  

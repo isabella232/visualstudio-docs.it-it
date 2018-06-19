@@ -1,12 +1,13 @@
 ---
 title: Creazione di oggetti (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -26,7 +27,7 @@ helpviewer_keywords:
 - custom objects
 - initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -35,6 +36,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569201"
 ---
 # <a name="creating-objects-javascript"></a>Creazione di oggetti (JavaScript)
 Esistono diversi modi per creare oggetti personalizzati in JavaScript. È possibile creare direttamente un'istanza di un [Oggetto Oggetto](../javascript/reference/object-object-javascript.md), quindi aggiungere le proprie proprietà e metodi. In alternativa, è possibile usare un'annotazione letterale di oggetto per definire l'oggetto. È anche possibile usare una funzione del costruttore per definire un oggetto. Per altre informazioni sull'uso delle funzioni del costruttore, vedere [Uso di costruttori per la definizione di tipi](../javascript/advanced/using-constructors-to-define-types.md).  

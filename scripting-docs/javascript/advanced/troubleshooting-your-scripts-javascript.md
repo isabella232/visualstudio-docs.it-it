@@ -1,12 +1,13 @@
 ---
 title: Risoluzione dei problemi degli script (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - automative type conversion
 - troubleshooting scripts
 ms.assetid: 0e0545d9-44e5-4179-befc-99a882c5c672
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569281"
 ---
 # <a name="troubleshooting-your-scripts-javascript"></a>Risoluzione dei problemi negli script (JavaScript)
 In tutti i linguaggi di programmazione possono insorgere situazioni inaspettate. Ad esempio, il valore `null` in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] non si comporta come il valore `Null` nei linguaggi C o C++.  

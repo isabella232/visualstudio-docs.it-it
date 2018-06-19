@@ -1,14 +1,14 @@
 ---
 title: Funzione JsSetProjectionEnqueueCallback | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: c751ccef-20d2-4d41-9568-1c54adf47cdf
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568981"
 ---
 # <a name="jssetprojectionenqueuecallback-function"></a>Funzione JsSetProjectionEnqueueCallback
 Imposta il callback da usare per richiamare un completamento di proiezione nel thread richiesto dai chiamanti.  

@@ -1,12 +1,13 @@
 ---
 title: Oggetti e matrici (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569341"
 ---
 # <a name="objects-and-arrays-javascript"></a>Oggetti e matrici (JavaScript)
 Gli oggetti [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sono costituiti da una raccolta di proprietà e metodi. Un metodo è una funzione membro di un oggetto. Una proprietà è un valore o un insieme di valori (sotto forma di matrice od oggetto) membro di un oggetto. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] supporta quattro tipi di oggetti:  

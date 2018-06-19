@@ -1,13 +1,13 @@
 ---
 title: Funzione JsRunSerializedScriptWithCallback | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568861"
 ---
 # <a name="jsrunserializedscriptwithcallback-function"></a>Funzione JsRunSerializedScriptWithCallback
 Esegue uno script serializzato.     Fornisce la possibilità di eseguire caricamento lazy del codice script solo se/quando è necessario.  

@@ -1,13 +1,13 @@
 ---
 title: Previsto &#39;} &#39; | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1009
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632821"
 ---
 # <a name="expected-3939"></a>Previsto &#39;} &#39;
 Si non includere la parentesi graffa destra che contrassegna la fine del corpo della funzione, ciclo, blocco di codice, o un oggetto inizializzatore. Un esempio di questo errore può essere un **per** ciclo con solo la parentesi graffa sinistra contrassegnare il corpo del ciclo.  
