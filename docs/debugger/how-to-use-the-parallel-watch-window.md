@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475947"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Impostare un'espressione di controllo nelle variabili di thread paralleli in Visual Studio
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti sono visualizzate nel **espressioni di controllo parallelo** finestra:  

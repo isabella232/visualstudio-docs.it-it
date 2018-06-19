@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121092"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi. Questa interfaccia esiste come una sostituzione per vari metodi di [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia. Fornisce un controllo su tutti i programmi del processo.  

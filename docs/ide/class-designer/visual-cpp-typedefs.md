@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958334"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedef di Visual C++ in Progettazione classi
 

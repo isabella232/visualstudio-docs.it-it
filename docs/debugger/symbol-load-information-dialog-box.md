@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475418"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Finestra di dialogo Informazioni sul caricamento simboli
 Il **informazioni sul caricamento simboli** la finestra di dialogo viene visualizzata quando fare clic su di **moduli** finestra e scegliere **informazioni sul caricamento simboli**.  

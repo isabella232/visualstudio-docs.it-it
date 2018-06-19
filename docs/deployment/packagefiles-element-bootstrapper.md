@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560908"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` elementi, che definiscono i pacchetti di installazione eseguiti come risultato del `Command` elemento.  

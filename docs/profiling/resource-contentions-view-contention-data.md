@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584139"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
 Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conflitti relativi alle risorse che hanno causato gli eventi di conflitto. Un evento di conflitto si verifica quando una funzione in un thread deve attendere l'accesso alla risorsa perché una funzione in un altro thread ne ha acquisito l'accesso esclusivo. Ogni risorsa è il nodo radice di un albero delle chiamate in cui vengono visualizzati i percorsi di esecuzione delle funzioni che hanno generato gli eventi di conflitto.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569888"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Procedura: Usare SDK di progetto MSBuild
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 è stato introdotto il concetto di "SDK di progetto" che semplifica l'uso di Software Development Kit che richiedono l'importazione di proprietà e destinazioni.

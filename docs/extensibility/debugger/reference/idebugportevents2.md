@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120036"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Questa interfaccia notifica a un listener (in genere debug Gestione sessione [SDM] o un motore di debug) del processo e il programma di creazione e l'eliminazione su una porta specifica. Queste informazioni possono essere utilizzate per presentare una visualizzazione in tempo reale dei processi e i programmi in esecuzione sulla porta.  

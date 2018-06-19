@@ -19,20 +19,48 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Esercitazioni
   items:
-    - name: 0 - Installare il supporto Python
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 - Creare un nuovo progetto Python
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 - Scrittura ed esecuzione del codice
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 - Uso della finestra interattiva REPL
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 - Esecuzione del codice nel debugger
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 - Installazione di pacchetti e gestione di ambienti Python
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 - Uso di Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Python in Visual Studio
+      items:
+        - name: 0 - Installare il supporto Python
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 - Creare un nuovo progetto Python
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 - Scrittura ed esecuzione del codice
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 - Uso della finestra interattiva REPL
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 - Esecuzione del codice nel debugger
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 - Installazione di pacchetti e gestione di ambienti Python
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 - Uso di Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Informazioni su Django in Visual Studio
+      items:
+        - name: 1 - Creare un progetto e una soluzione
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2 - Creare un'app Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3 - Rendere disponibili file statici e aggiungere pagine
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4 - Usare il modello di progetto Web Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5 - Autenticare gli utenti
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6 - Usare il modello di progetto Web Django per le votazioni
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: Informazioni su Flask in Visual Studio
+      items:
+        - name: 1 - Creare un progetto e una soluzione
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 - Creare un'app Flask
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 - Rendere disponibili file statici e aggiungere pagine
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 - Usare il modello di progetto Web Flask
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 - Usare il modello di progetto Web Flask di sondaggi
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Concetti
   items:
     - name: Progetti Python
@@ -106,5 +134,7 @@
       href: using-python-cookiecutter-templates.md
 - name: Riferimenti
   items:
+    - name: Modelli di elemento
+      href: python-item-templates.md
     - name: Opzioni
       href: python-support-options-and-settings-in-visual-studio.md

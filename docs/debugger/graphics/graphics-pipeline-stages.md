@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481301"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata di disegno viene trasformata in ogni fase della pipeline grafica Direct3D.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114216"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Disconnette il debugger da questo processo scollegare tutte le applicazioni del processo.  

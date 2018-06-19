@@ -25,6 +25,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477691"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.

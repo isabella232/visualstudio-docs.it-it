@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475509"
 ---
 # <a name="process-search-dialog-box"></a>Finestra di dialogo Ricerca processi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un processo specifico in [visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un **processi** finestra di visualizzazione. Scegliere quindi **Trova processo** dal **ricerca** menu.  

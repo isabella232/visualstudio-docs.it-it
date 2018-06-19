@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557697"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Come vengono eseguiti gli aggiornamenti di applicazioni con ClickOnce
 ClickOnce utilizza le informazioni sulla versione di file specificati nel manifesto di distribuzione di un'applicazione per decidere se aggiornare i file dell'applicazione. Dopo l'avvio di un aggiornamento, ClickOnce Usa una tecnica denominata *file patch* per evitare la ridondanza di download dei file dell'applicazione.  

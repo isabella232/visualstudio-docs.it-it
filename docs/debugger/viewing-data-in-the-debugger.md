@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482178"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Creare visualizzazioni personalizzate dei dati nel debugger di Visual Studio
 Nel debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è disponibile una serie di strumenti che consentono di analizzare e modificare lo stato del programma. La maggior parte di questi strumenti è utilizzabile solo in modalità di interruzione.

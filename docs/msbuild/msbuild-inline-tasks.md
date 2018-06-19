@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574640"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577535"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 Gli elementi MSBuild sono input nel sistema di compilazione e in genere rappresentano i file. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.  

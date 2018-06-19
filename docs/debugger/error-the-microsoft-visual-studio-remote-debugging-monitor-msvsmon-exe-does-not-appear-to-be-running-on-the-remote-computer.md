@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476065"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.
 Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza corretta di Visual Studio Remote Debugging Monitor nel computer remoto. Per il funzionamento del debug remoto, è necessario che Visual Studio Remote Debugging Monitor sia installato. Per informazioni sul download e l'impostazione del debugger remoto, vedere [debug remoto](../debugger/remote-debugging.md).  
@@ -71,7 +72,7 @@ Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza cor
 ## <a name="more-help"></a>Altre informazioni  
  Per ottenere assistenza sul debugger più remoti, inclusi opzioni della riga di comando, fare clic su **Guida > utilizzo** nella finestra del debugger remoto. Se non è aperto, è possibile vedere la pagina web copiando la riga seguente a un **Esplora File** finestra. (È necessario sostituire \<directory di installazione di Visual Studio > con il percorso di installazione di Visual Studio.)  
   
- res: / /*\<directory di installazione di Visual Studio >*\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
+ res: / /*\<directory di installazione di Visual Studio >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

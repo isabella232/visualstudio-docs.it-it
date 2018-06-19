@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480453"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: abilitare e disabilitare Modifica e continuazione (c#, VB, C++)
 È possibile disabilitare o abilitare Modifica e continuazione di **opzioni** la finestra di dialogo in fase di progettazione. Non è possibile modificare questa impostazione durante il debug.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574207"
 ---
 # <a name="lc-task"></a>Attività LC
 Esegue il wrapping di LC.exe, uno strumento che genera un file con estensione license da un file con estensione licx. Per altre informazioni su LC.exe, vedere [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).  

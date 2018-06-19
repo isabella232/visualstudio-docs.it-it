@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263929"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
 Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.  

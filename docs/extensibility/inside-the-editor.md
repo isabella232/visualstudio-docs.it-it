@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265775"
 ---
 # <a name="inside-the-editor"></a>All'interno dell'Editor
 L'editor è composto da un numero di sottosistemi diversi, che consentono di mantenere l'editor di testo modello separato dalla visualizzazione di testo e l'interfaccia utente.  

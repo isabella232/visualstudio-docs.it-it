@@ -25,6 +25,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448991"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Visual Studio Tools per Microsoft Office system project
 

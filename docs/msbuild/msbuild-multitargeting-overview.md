@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569170"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Cenni preliminari sul multitargeting di MSBuild
 Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework e in una qualunque delle tante piattaforme di sistema. Ad esempio, è possibile compilare un'applicazione da eseguire in .NET Framework 2.0 in una piattaforma a 32 bit e compilare la stessa applicazione da eseguire in .NET Framework 4.5 in una piattaforma a 64 bit.  

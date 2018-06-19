@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119162"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Questa interfaccia consente la sessione di debug manager (SDM) un processo di collegamento a o la disconnessione dal processo di notifica.  

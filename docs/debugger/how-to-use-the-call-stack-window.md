@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482035"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Consente di visualizzare lo stack di chiamate e utilizzare la finestra Stack di chiamate nel debugger di Visual Studio
 

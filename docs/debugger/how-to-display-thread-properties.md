@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473218"
 ---
 # <a name="how-to-display-thread-properties"></a>Procedura: visualizzare le proprietà thread
 Per ulteriori informazioni su un thread elencato in [visualizzazione thread](../debugger/threads-view.md), utilizzare il [finestra di dialogo proprietà Thread](../debugger/thread-properties-dialog-box.md).  

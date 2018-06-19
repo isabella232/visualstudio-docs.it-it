@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481337"
 ---
 # <a name="vtableshape"></a>VTableShape
 Il [VTable](../../debugger/debug-interface-access/vtable.md) simbolo è un simbolo di classe figlio identificato dal `SymTagVTableShape` tag.  

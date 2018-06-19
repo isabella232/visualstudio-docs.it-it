@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454642"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Controllare le variabili in auto e variabili locali Windows in Visual Studio
 Il **Auto** finestra (durante il debug **CTRL + ALT + V, A**, o **Debug > Windows > Auto**) e **variabili locali** finestra (durante il debug **CTRL + ALT + V, L**, o **Debug > Windows > variabili locali**) sono molto utili quando si desidera visualizzare i valori delle variabili durante il debug. La finestra **Variabili locali** mostra le variabili definite nell'ambito locale, che corrisponde in genere alla funzione o al metodo attualmente in esecuzione. La finestra **Auto** mostra le variabili usate attorno alla riga corrente (il punto in cui il debugger viene arrestato). Esattamente le variabili da visualizzare in questa finestra è diverso in lingue diverse. Vedere [What variables appear in the Autos Window?](#bkmk_whatvariables) più avanti.  

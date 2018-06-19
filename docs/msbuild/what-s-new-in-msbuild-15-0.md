@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569303"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novità di MSBuild 15
 MSBuild è ora incluso in [.NET Core SDK](https://www.microsoft.com/net/download/core) e consente di compilare progetti .NET Core in Windows, macOS e Linux.  

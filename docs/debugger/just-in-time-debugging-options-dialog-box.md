@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480889"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>JIT, Debug, Finestra di dialogo Opzioni
 Per l'accesso di **Just-In-Time** page, passare al **strumenti** menu e fare clic su **opzioni**. Nel **opzioni** finestra di dialogo espandere il **debug** nodo e selezionare **Just-In-Time**. Questa pagina consente di abilitare il debug JIT per codice gestito, codice nativo e script. Per ulteriori informazioni, vedere [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).  

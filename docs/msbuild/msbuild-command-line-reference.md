@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576014"
 ---
 # <a name="msbuild-command-line-reference"></a>Riferimenti alla riga di comando di MSBuild
 Quando si usa MSBuild.exe per compilare un file di progetto o di soluzione, si possono includere varie opzioni per specificare diversi aspetti del processo.  

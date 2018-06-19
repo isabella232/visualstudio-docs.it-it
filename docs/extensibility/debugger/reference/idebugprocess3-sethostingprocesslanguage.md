@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115161"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Questo metodo imposta la lingua che verrà ospitato nel processo. Questo linguaggio è quindi utilizzabile per caricare l'analizzatore di espressioni appropriato dal motore di debug (DE).  

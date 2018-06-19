@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572905"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>Attività CreateVisualBasicManifestResourceName
 Crea un nome di manifesto di tipo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] dal nome di un determinato file con estensione resx o da un'altra risorsa.  

@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33884398"
 ---
 # <a name="working-with-git"></a>Uso di Git
 

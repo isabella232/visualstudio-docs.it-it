@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561441"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 La *stringa di query* è la parte di un URL che inizia con un punto interrogativo (?) e contiene informazioni arbitrarie nel formato *nome = valore*. Si supponga di avere un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominata `WindowsApp1` che è ospitare in `servername`e di voler passare un valore per la variabile `username` quando l'applicazione viene avviata. L'aspetto dell'URL potrebbe essere simile al seguente:  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564506"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 Questo argomento vengono elencati gli errori comuni che possono verificarsi quando si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , applicazione e fornisce i passaggi per risolvere i problemi.  

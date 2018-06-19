@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476975"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visualizza le stringhe in un visualizzatore di stringhe in Visual Studio
 Durante il debug, è possibile aprire un visualizzatore di stringhe per le stringhe di visualizzazione che sono troppo lungo da visualizzare in una finestra del debugger o suggerimento dati. In molti scenari, il Visualizzatore consente di identificare le stringhe di formato non valido.

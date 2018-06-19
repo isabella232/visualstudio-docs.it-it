@@ -118,6 +118,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479245"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 È possibile modificare le impostazioni di progetto per una configurazione di debug Visual C++ o C nel **pagine delle proprietà** la finestra di dialogo, come descritto in [come: impostare il Debug e rilascio delle configurazioni](../debugger/how-to-set-debug-and-release-configurations.md). Le tabelle seguenti illustrano la posizione in cui sono disponibili le impostazioni correlate al debugger il **pagine delle proprietà** la finestra di dialogo.  

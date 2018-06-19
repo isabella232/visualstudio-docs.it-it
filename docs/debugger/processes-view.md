@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474846"
 ---
 # <a name="processes-view"></a>Visualizzazione processi
 La visualizzazione dei processi viene visualizzato un albero di tutti i processi attivi nel sistema. Vengono visualizzati il nome del modulo e l'ID processo. Se si desidera esaminare un particolare processo di sistema, che generalmente corrisponde a un programma in esecuzione, utilizzare la visualizzazione dei processi. I processi vengono identificati da nomi di modulo o vengono designati come "processi di sistema".  

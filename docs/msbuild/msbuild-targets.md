@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570600"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 Le destinazioni raggruppano le attività in un determinato ordine e consentono di suddividere il processo di compilazione in unità più piccole. Ad esempio, una destinazione può eliminare tutti i file presenti nella directory di output per preparare la compilazione, mentre un'altra compila gli input per il progetto e li inserisce nella directory vuota. Per altre informazioni sulle attività, vedere [Attività](../msbuild/msbuild-tasks.md).  

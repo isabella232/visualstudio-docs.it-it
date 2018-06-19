@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572241"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Compilazione di più progetti in parallelo con MSBuild
 È possibile utilizzare MSBuild per compilare più progetti più velocemente eseguendoli in parallelo. Per eseguire compilazioni in parallelo, è possibile utilizzare le impostazioni seguenti in un computer multicore o con più processori:  

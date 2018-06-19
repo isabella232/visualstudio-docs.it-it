@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475350"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il Debug di una violazione di accesso C++?
 ## <a name="problem-description"></a>Descrizione del problema  

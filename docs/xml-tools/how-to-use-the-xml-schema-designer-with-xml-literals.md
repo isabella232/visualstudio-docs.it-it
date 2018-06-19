@@ -17,6 +17,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548208"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con i valori letterali XML
 

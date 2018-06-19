@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577789"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 Specifica un blocco di codice selezionabile dall'elemento `Choose`.  

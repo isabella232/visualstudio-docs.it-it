@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474606"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà thread
 Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su un [visualizzazione thread](../debugger/threads-view.md) finestra oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare qualsiasi nodo thread nell'albero, quindi scegliere **proprietà** dal **vista** menu.  

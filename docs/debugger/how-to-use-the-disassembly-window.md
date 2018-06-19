@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475535"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Visualizzare il codice Disassembly nel Debugger di Visual Studio
 Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo di **opzioni** nella finestra di dialogo **debug** nodo. Non è invece disponibile per il debug di script o SQL.  

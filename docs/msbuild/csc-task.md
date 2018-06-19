@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575657"
 ---
 # <a name="csc-task"></a>Attività Csc
 Esegue il wrap di CSC.exe e produce file eseguibili (con estensione EXE), librerie a collegamento dinamico (con estensione DLL) o moduli di codice (con estensione NETMODULE). Per altre informazioni su CSC.exe, vedere [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index).  

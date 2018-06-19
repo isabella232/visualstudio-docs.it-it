@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268269"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni dei quali (ad esempio, **Utilizzo CPU** e **Utilizzo memoria**) possono essere eseguiti con o senza il debugger. Gli strumenti per le prestazioni privi di debugger devono essere eseguiti su configurazioni di rilascio; al contrario, gli strumenti di debugger integrati devono essere eseguiti sulle configurazioni di debug.  

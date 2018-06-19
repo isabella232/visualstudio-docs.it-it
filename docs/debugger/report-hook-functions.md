@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481178"
 ---
 # <a name="report-hook-functions"></a>Funzioni hook per la creazione di rapporti
 Una funzione hook di report, installata mediante [CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), viene chiamato ogni volta [CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) genera un report di debug. È possibile utilizzare tale funzione, ad esempio, per filtrare i report in modo da concentrarsi su tipi specifici di allocazioni. Una funzione hook per la creazione di report deve avere un prototipo analogo al seguente:  

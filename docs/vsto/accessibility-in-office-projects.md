@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262315"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
   Microsoft Visual Studio e Microsoft Office includono molte funzionalità di accessibilità che consentono di creare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard. Microsoft pubblica linee guida per l'accesso facilitato sul Web. Per informazioni dettagliate, vedere la [sito Web di accessibilità](http://go.microsoft.com/fwlink/?LinkID=37113).  

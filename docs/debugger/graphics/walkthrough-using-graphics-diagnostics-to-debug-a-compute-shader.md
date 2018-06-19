@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481265"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procedura dettagliata: utilizzo della diagnostica della grafica per eseguire il debug di un compute shader
 Questa procedura dettagliata illustra come usare gli strumenti di diagnostica della grafica di Visual Studio per esaminare un compute shader che genera risultati errati.  

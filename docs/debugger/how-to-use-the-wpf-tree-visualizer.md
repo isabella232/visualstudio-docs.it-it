@@ -23,11 +23,12 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475467"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: Usare il visualizzatore dell'albero di WPF
 È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per ulteriori informazioni su strutture ad albero visuali, vedere [alberi in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Per ulteriori informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
- Quando si apre il Visualizzatore dell'albero di WPF, si vedranno due riquadri: il **struttura ad albero visuale** a sinistra e il **delle proprietà del** *nome***:***tipo* riquadro a destra. Selezionare qualsiasi oggetto nel **struttura ad albero visuale** riquadro e il **delle proprietà di** *nome***:***tipo* riquadro viene aggiornato automaticamente per mostrare la proprietà per l'oggetto.  
+ Quando si apre il Visualizzatore dell'albero di WPF, si vedranno due riquadri: il **struttura ad albero visuale** a sinistra e il **delle proprietà del** *nome ***:*** tipo* riquadro a destra. Selezionare qualsiasi oggetto nel **struttura ad albero visuale** riquadro e il **delle proprietà di** *nome ***:*** tipo* riquadro viene aggiornato automaticamente per mostrare la proprietà per l'oggetto.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Per aprire il visualizzatore dell'albero di WPF  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/18/2018
   
 ### <a name="to-search-the-properties-list"></a>Per eseguire ricerche nell'elenco di proprietà  
   
--   Nel **proprietà di** *nome***:***tipo* riquadro, digitare la stringa di cui si desidera effettuare la ricerca per il **filtro** casella.  
+-   Nel **proprietà di** *nome ***:*** tipo* riquadro, digitare la stringa di cui si desidera effettuare la ricerca per il **filtro** casella.  
   
      Il visualizzatore dell'albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.  
   

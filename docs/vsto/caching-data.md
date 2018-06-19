@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264369"
 ---
 # <a name="cache-data"></a>Dati nella cache
   È possibile memorizzare nella cache di oggetti dati in una personalizzazione a livello di documento in modo che i dati sono accessibili, offline o senza l'apertura di Microsoft Office Word o Microsoft Office Excel. Per memorizzare nella cache un oggetto, l'oggetto deve avere un tipo di dati che soddisfano determinati requisiti. Molti tipi di dati comuni in .NET Framework soddisfano questi requisiti, compresi <xref:System.String>, <xref:System.Data.DataSet>, e <xref:System.Data.DataTable>.  

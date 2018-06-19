@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116347"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Ottiene il titolo, un nome descrittivo o un nome di file del processo di hosting di questo programma.  

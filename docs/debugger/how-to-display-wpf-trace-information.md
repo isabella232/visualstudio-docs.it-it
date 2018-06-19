@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476224"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procedura: visualizzare le informazioni di traccia WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] può ricevere le informazioni di traccia di debug da applicazioni WPF e visualizzare tali informazioni nella **Output** finestra. Per visualizzare le informazioni di traccia di debug, è necessario abilitare la tracciatura WPF.  

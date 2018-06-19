@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575858"
 ---
 # <a name="resolveassemblyreference-task"></a>Attività ResolveAssemblyReference
 Determina tutti gli assembly che dipendono dall'assembly specificato. Sono incluse le dipendenze di secondo e `n`ordine.  

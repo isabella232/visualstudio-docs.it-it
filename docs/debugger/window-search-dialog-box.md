@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476631"
 ---
 # <a name="window-search-dialog-box"></a>Finestra di dialogo Ricerca finestre
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per una finestra specifica in [Windows Vista](../debugger/windows-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo alla finestra di visualizzazione di Windows. Scegliere quindi **Trova finestra** dal **ricerca** menu.  

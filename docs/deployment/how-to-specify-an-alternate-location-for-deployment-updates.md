@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561350"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: specificare un percorso alternativo per gli aggiornamenti della distribuzione
 È possibile installare il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione inizialmente da un CD o una condivisione file, ma l'applicazione deve controllare gli aggiornamenti periodici sul Web. È possibile specificare un percorso alternativo per gli aggiornamenti nel manifesto di distribuzione in modo che sia possibile l'aggiornamento automatico dell'applicazione dal Web dopo l'installazione iniziale.  

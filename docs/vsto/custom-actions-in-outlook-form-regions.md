@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264089"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Azioni personalizzate nelle aree del modulo di Outlook
   Azioni visualizzano i pulsanti che consentono agli utenti di rispondere a un elemento di Microsoft Office Outlook. Per rispondere a un elemento di posta elettronica, ad esempio, gli utenti fanno clic il **risposta**, **Rispondi a tutti**, o **Avanti** pulsanti di azione. Ognuna di queste azioni crea un nuovo elemento di posta elettronica e popola i campi dell'elemento utilizzando le informazioni dell'elemento originale.  

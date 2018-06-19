@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473832"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Etichetta (Debug Interface Access SDK)
 Una posizione nel codice programma è identificata da un `SymTagLabel` simbolo.  

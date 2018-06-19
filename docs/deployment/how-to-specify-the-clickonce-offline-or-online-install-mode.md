@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563027"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Procedura: specificare la modalità di installazione online o offline di ClickOnce
 Il `Install Mode` per un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione determina se l'applicazione sarà disponibile online o offline. Quando si sceglie **l'applicazione è disponibile solo online**, l'utente deve disporre di accesso per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] percorso di pubblicazione (pagina Web o una condivisione file) per eseguire l'applicazione. Quando si sceglie **l'applicazione è disponibile offline nonché**, l'applicazione aggiunge voci per il **avviare** menu e **Aggiungi / Rimuovi programmi** la finestra di dialogo; l'utente è in grado di eseguire l'applicazione quando non sono connessi.  

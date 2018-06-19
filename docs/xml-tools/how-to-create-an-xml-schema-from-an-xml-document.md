@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548293"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: creare uno schema XML da un documento XML
 

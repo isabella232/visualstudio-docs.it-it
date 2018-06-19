@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475639"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: debug del codice sorgente di .NET Framework
 Per eseguire il debug di origine di .NET Framework, è necessario avere accesso ai simboli per il codice di debug. È anche necessario abilitare l'esecuzione di istruzioni origine .NET Framework.  

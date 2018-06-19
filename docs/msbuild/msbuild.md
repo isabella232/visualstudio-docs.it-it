@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576001"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio utilizza MSBuild, ma esso non dipende da Visual Studio. Richiamando msbuild.exe nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.  

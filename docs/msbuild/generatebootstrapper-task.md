@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573798"
 ---
 # <a name="generatebootstrapper-task"></a>Attività GenerateBootstrapper
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.  

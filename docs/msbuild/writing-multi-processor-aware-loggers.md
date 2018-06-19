@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572595"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Scrittura di logger compatibili con più processori
 La possibilità di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di sfruttare più processori può ridurre i tempi di compilazione del progetto, ma aggiunge complessità alla registrazione dell'evento di compilazione. In un ambiente a processore singolo gli eventi, i messaggi, gli avvisi e gli errori arrivano al logger in modo prevedibile e sequenziale. Tuttavia, in un ambiente a più processori gli eventi di diverse origini possono arrivare contemporaneamente o fuori sequenza. A tale scopo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] offre un logger compatibile con più processori e un nuovo modello di registrazione e consente di creare "logger di inoltro" personalizzati.  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565692"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 Affinché l'applicazione venga installata ed eseguita correttamente, è necessario che nel computer di destinazione siano già installati tutti i componenti da cui l'applicazione dipende. Ad esempio, la maggior parte delle applicazioni create con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno una dipendenza da [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; prima di installare l'applicazione, è necessario che nel computer di destinazione sia presente la versione corretta di Common Language Runtime.  

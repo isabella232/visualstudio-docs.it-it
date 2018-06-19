@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481801"
 ---
 # <a name="message-search-dialog-box"></a>Finestra di dialogo Ricerca messaggi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di un messaggio specifico in [visualizzazione messaggi](../debugger/messages-view.md). Spostare lo stato attivo per visualizzare questa finestra di dialogo, una finestra di visualizzazione di messaggi. Scegliere quindi **Trova messaggio** dal **ricerca** menu.  

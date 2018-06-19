@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558334"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Procedura: impostare la versione pubblicazione per un'applicazione ClickOnce
 Il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` proprietà determina se l'applicazione che si sta pubblicando verrà considerata un aggiornamento. Viene incrementato ogni versione della fase, l'applicazione verrà pubblicata come aggiornamento.  

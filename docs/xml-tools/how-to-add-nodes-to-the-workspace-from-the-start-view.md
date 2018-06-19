@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548674"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedura: aggiungere nodi all'area di lavoro dalla visualizzazione iniziale
 

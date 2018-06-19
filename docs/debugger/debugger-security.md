@@ -24,6 +24,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065006"
 ---
 # <a name="debugger-security"></a>Sicurezza del debugger
 La possibilità di eseguire il debug di un altro processo offre grandi potenzialità che altrimenti non si avrebbero, in particolare nel debug remoto. Un debugger dannoso potrebbe causare gravi danni al computer oggetto del debug.  

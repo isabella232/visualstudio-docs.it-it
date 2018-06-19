@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704473"
 ---
 # <a name="set-radix-command"></a>Comando Imposta radice
 Imposta o restituisce la base numerica usata per visualizzare i valori integer.

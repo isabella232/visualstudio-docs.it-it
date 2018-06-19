@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479955"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visual Studio consente di comprendere in che modo uno specifico pixel viene interessato dagli eventi Direct3D che si verificano durante un frame del gioco o dell'app.  

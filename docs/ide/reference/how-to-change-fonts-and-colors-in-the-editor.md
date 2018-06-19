@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447817"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: modificare i tipi di carattere e i colori utilizzati nell'editor
 È possibile modificare il tipo di carattere predefinito, le dimensioni del carattere e i colori di sfondo e primo piano dei diversi **elementi di visualizzazione** del testo nell'Editor del codice. Quando si modificano le impostazioni del carattere tenere presente le informazioni seguenti:
