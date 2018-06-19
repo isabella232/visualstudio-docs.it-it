@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947167"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controllo delle proprietà Color, Line Style e altre
 Alcune proprietà della forma, ad esempio colore può essere 'esposti' -, collegato a una proprietà di dominio della forma. Altri devono essere controllati direttamente.

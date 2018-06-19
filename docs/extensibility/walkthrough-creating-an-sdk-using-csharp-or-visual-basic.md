@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146611"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creazione di un SDK tramite c# o Visual Basic
 In questa procedura dettagliata si apprenderà come creare un SDK di libreria matematica semplice utilizzando Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). Si completeranno le seguenti procedure:  

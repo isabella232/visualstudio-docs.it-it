@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131288"
 ---
 # <a name="creating-options-pages"></a>Creazione di pagine Opzioni
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] framework di pacchetto gestito, le classi derivate da <xref:Microsoft.VisualStudio.Shell.DialogPage> estendere il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE tramite l'aggiunta di **opzioni** pagine sotto il **strumenti** menu.  

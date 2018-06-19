@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458918"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Costanti (Debug Interface Access SDK)
 Per identificare diverse sezioni di un file di database di (programma PDB) programma debug tramite il DIA SDK, è possono utilizzare queste costanti di stringa.  

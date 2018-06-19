@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131887"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaccia utente personalizzata (origine controllo VSPackage)
 Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefinito tramite il file di Visual Studio Command Table (vsct). Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) consente di visualizzare le voci di menu negli stati predefiniti finché non viene caricato il pacchetto VSPackage. Successivamente, il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo viene chiamato per abilitare o disabilitare le voci di menu.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126171"
 ---
 # <a name="symbol-provider"></a>Provider di simboli
 Un'implementazione dell'analizzatore di espressioni deve accedere alle informazioni di debug sui simboli generate dal compilatore di linguaggio per valutare variabili ed espressioni. Esegue l'operazione usando le interfacce di un provider di simboli (SP), denominato anche un gestore di simboli.  

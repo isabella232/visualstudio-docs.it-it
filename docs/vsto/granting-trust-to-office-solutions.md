@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447245"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Concedere l'attendibilità alle soluzioni Office
   Concedere l'attendibilità a Office soluzioni mezzi Modifica criteri di sicurezza di ogni computer di destinazione per considerare attendibile l'assembly della soluzione, manifesto dell'applicazione, il manifesto di distribuzione e documento. È possibile concedere l'attendibilità alla soluzione Office per l'utente o l'utente finale.  

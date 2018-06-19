@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129118"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Intercettazione di comandi del servizio di linguaggio Legacy
 Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è possibile disporre i comandi intercetta servizio linguaggio gestire in altro modo la visualizzazione del testo. Ciò è utile per il comportamento specifico del linguaggio che non gestisce la visualizzazione del testo. È possibile intercettare questi comandi mediante l'aggiunta di uno o più filtri dei comandi per la visualizzazione del testo dal servizio di linguaggio.  

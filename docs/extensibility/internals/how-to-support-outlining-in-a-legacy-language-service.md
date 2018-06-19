@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130245"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedura: supportare la struttura in un servizio di linguaggio Legacy
 La struttura viene utilizzata per espandere o comprimere le diverse aree di testo. Viene utilizzata la struttura possono essere definiti in modo diverso in diverse lingue. Per altre informazioni, vedere [Struttura](../../ide/outlining.md).  

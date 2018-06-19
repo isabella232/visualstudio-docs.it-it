@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129364"
 ---
 # <a name="implementing-single-file-generators"></a>Implementazione di generatori di File singolo
 Uno strumento personalizzato, talvolta detta un generatore di file singolo, possono essere usati per estendere il [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemi di progetto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Uno strumento personalizzato è un componente COM che implementa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaccia. Utilizzo di questa interfaccia, uno strumento personalizzato Trasforma un singolo file di input in un singolo file di output. Il risultato della trasformazione può essere codice sorgente, o qualsiasi altro output che è utile. Due esempi di file di codice generati da strumenti personalizzati sono codice generato in risposta alle modifiche in una finestra di progettazione e i file generati utilizzando i servizi Web (WSDL, Web Services Description Language).  

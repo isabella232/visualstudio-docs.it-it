@@ -1,6 +1,7 @@
 ---
 title: Proprietà dinamiche in LINQ to XML
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 184204011a3862522be37f458839d5a1b56b7052
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eab219b0babbb423c10a08f1f9c4888ad70aff12
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917776"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Proprietà dinamiche in LINQ to XML
 

@@ -32,6 +32,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947924"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 È possibile usare le proprietà file per indicare le operazioni che il sistema di progetto dovrà eseguire sui file. Ad esempio, è possibile impostare le proprietà file per indicare se un file deve essere aggiunto al pacchetto come file di risorse.

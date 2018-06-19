@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262257"
 ---
 # <a name="net-memory-data-views"></a>Visualizzazioni dei dati di memoria .NET
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler che contengono dati di profilatura della memoria .NET.  

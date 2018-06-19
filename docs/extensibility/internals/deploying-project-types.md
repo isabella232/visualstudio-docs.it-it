@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127975"
 ---
 # <a name="deploying-project-types"></a>Tipi di progetto di distribuzione
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Installa un nuovo Sil aggregator di tipi di progetto (ProjectAggregator2. dll) e anche un pacchetto Windows Installer per la ridistribuzione (ProjectAggregator2.msi). È necessario utilizzare il nuovo Sil aggregator per tipi di progetto di codice gestito. ProjectAggregator2 funziona alternative limitazioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetto aggregator che impediscono il corretto funzionamento tipi di progetto di codice gestito. I passaggi seguenti descrivono come modificare il pacchetto VSPackage per usare al nuovo Sil aggregator.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134379"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Opzioni della riga di comando devenv per lo sviluppo di VSPackage
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente agli sviluppatori di automatizzare le attività dalla riga di comando quando si esegue devenv.exe, del file che avvia l'ambiente di sviluppo integrato (IDE) di Visual Studio.  

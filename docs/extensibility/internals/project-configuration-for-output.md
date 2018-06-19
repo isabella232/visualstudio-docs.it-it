@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132195"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione per l'Output del progetto
 Ogni configurazione è in grado di supportare un set di processi di compilazione che generano elementi di output, ad esempio il file eseguibile o una risorsa. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che si collegano i tipi correlati di output, ad esempio i file eseguibili (.exe, DLL,. lib) e file di origine (con estensione idl, file con estensione h).  

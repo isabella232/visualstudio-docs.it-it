@@ -1,6 +1,7 @@
 ---
 title: Uso degli asset 3D nel gioco o nell'app
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -16,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd757a88ebfddb9f86eb233ba407fd7eb9b27e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b9ed78375438dd699959ce40a3427692ae1649af
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917107"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usare gli asset 3D nel gioco o nell'app
 

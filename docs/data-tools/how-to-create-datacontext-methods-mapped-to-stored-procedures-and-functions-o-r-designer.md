@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923442"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procedura: creare metodi DataContext mappati a stored procedure e funzioni (O/R Designer)
 Stored procedure e funzioni possono essere aggiunti al [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] come <xref:System.Data.Linq.DataContext> metodi. La chiamata al metodo e passando i parametri obbligatori viene eseguita la stored procedure o funzione nel database e restituisce i dati nel tipo restituito del <xref:System.Data.Linq.DataContext> metodo. Per informazioni dettagliate su <xref:System.Data.Linq.DataContext> metodi, vedere [metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).

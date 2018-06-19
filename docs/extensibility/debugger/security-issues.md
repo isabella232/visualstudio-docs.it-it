@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126897"
 ---
 # <a name="security-issues"></a>Problemi relativi alla sicurezza
 Per eseguire il debug di un programma in Visual Studio, solo le autorizzazioni necessite sono gli stessi necessari per eseguire il programma. Ciò include il debug remoto per la maggior parte delle situazioni (alcune situazioni che coinvolgono altri servizi, ad esempio Internet Information Service, potrebbe essere necessario un livello superiore di autorizzazioni).  

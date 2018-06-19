@@ -1,6 +1,7 @@
 ---
 title: Nodi di matematica
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce9c8a85e79286f243a29d216d5bf6c7f1898dd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d4da8c2b37ed13cfd8a0a6f47850cdc7f9e2c74b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919729"
 ---
 # <a name="math-nodes"></a>Nodi di matematica
 

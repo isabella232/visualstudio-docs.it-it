@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919428"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Procedura: Eseguire manualmente l'analisi del codice gestito
 Lo strumento di analisi codice fornisce informazioni sui possibili errori nel codice sorgente. È possibile eseguire automaticamente l'analisi del codice con ogni compilazione di un progetto di codice ed è anche possibile eseguire manualmente l'analisi del codice. Le regole che vengono controllate durante l'esecuzione dell'analisi del codice sono specificati nella pagina dell'analisi del codice delle pagine delle proprietà di progetto. Per altre informazioni, vedere [come: Configura analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

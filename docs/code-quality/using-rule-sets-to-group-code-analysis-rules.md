@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923055"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Set di regole di utilizzo per raggruppare regole di analisi codice
 

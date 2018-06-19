@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141513"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Completamento delle parole in un servizio di linguaggio Legacy
 I caratteri mancanti su una parola parziale digitata viene compilato il completamento delle parole. Se è presente un solo termine possibili, la parola viene completata quando si immette il carattere di completamento. Se la parola parziale corrisponde a più possibilità, viene visualizzato un elenco di possibili completamenti. Un carattere di completamento può essere qualsiasi carattere che non viene utilizzato per gli identificatori.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129235"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Estendere e personalizzare le finestre degli strumenti
 Visual Studio fornisce diversi tipi di windows, ad esempio le finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio la finestra Proprietà, la finestra di Output e la finestra Elenco attività, sono tipi di finestre degli strumenti.  

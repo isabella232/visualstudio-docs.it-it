@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920615"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Specificare dove e quando applicare un'annotazione
 Quando un'annotazione è condizionale, potrebbe essere necessario altre annotazioni per specificare che per l'analizzatore.  Ad esempio, se una funzione dispone di una variabile che può essere sincrona o asincrona, la funzione si comporta come segue: nel caso sincrono sempre andrà a buon fine, ma nel caso asincrono viene segnalato un errore se il tentativo non riesce immediatamente. Quando la funzione viene chiamata in modo sincrono, controllando il valore di risultato non fornisce alcun valore per l'analizzatore di codice, poiché potrebbe non avere restituito.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, può verificarsi un errore grave. Questo esempio viene illustrata una situazione in cui è possibile utilizzare il `_When_` annotazione, descritto più avanti in questo articolo, abilitare il controllo.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126910"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizzatore di tipo e il visualizzatore personalizzato
 Un visualizzatore di tipo è un componente che consente di visualizzare i dati in un formato molto specifico. Questo formato è interamente dipende dall'implementatore del visualizzatore, ovvero l'utente finale o un fornitore di terze parti di visualizzatori.  

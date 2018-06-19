@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134093"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
 Un pacchetto VSPackage può definire una o più categorie di impostazioni, che sono gruppi di variabili di stato che vengono mantenute quando un utente sceglie il **Importa/Esporta impostazioni** comando il **strumenti** menu. Per abilitare la persistenza, utilizzare le impostazioni API nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ Un pacchetto VSPackage può definire una o più categorie di impostazioni, che s
      Se un singolo VSPackage supporta diversi punti di impostazioni personalizzato, ogni punto di impostazioni personalizzato viene implementato da una classe separata e ciascuno viene registrato da un'istanza univoca del <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Di conseguenza, le impostazioni di un classe di implementazione possono supportare più di una categoria di impostazioni.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Dettagli delle voci del Registro di sistema di punto di impostazioni personalizzate  
- Punti di impostazioni personalizzati vengono creati in una voce del Registro di sistema nel percorso seguente: HKLM\Software\Microsoft\VisualStudio\\*\<versione >*\UserSettings\\`<CSPName>`, dove `<CSPName>` è il nome del punto di impostazioni personalizzato supporta il pacchetto VSPackage e  *\<versione >* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ad esempio 8.0.  
+ Punti di impostazioni personalizzati vengono creati in una voce del Registro di sistema nel percorso seguente: HKLM\Software\Microsoft\VisualStudio\\*\<versione >* \UserSettings\\`<CSPName>`, dove `<CSPName>` è il nome del punto di impostazioni personalizzato supporta il pacchetto VSPackage e  *\<versione >* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ad esempio 8.0.  
   
 > [!NOTE]
 >  Il percorso radice dell'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sostituito con un'alternativa radice quando il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) inizializzato. Per ulteriori informazioni, vedere [opzioni della riga di comando](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Di seguito è illustrata la struttura della voce del Registro di sistema:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<versione >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<versione >* \UserSettings\  
   
  `<CSPName`> = '#12345' s  
   

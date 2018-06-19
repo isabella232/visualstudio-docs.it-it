@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133037"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e la selezione (origine controllo VSPackage)
 Un pacchetto VSPackage deve essere registrato per esporla a controllo del codice sorgente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se più di un controllo del codice sorgente VSPackage è registrato, l'utente può selezionare il pacchetto VSPackage per caricare in momenti appropriati. Vedere [VSPackage](../../extensibility/internals/vspackages.md) per ulteriori dettagli sul VSPackage e come eseguirne la registrazione.  

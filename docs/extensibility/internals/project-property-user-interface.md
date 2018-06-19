@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132427"
 ---
 # <a name="project-property-user-interface"></a>Interfaccia utente di proprietà del progetto
 Un sottotipo di progetto è possibile usare gli elementi del progetto **pagine delle proprietà** la finestra di dialogo come vengono forniti dal progetto di base, nascondere o rendere intere pagine e controlli di sola lettura come fornito o aggiungere pagine specifici del sottotipo di progetto per il **Pagine delle proprietà** la finestra di dialogo.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922336"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 È possibile creare controlli associati a dati trascinando elementi dal **origini dati** finestra in Progettazione Windows Form o finestra di progettazione WPF. Ogni elemento di **origini dati** finestra dispone di un controllo predefinito che viene creato quando si trascina la finestra di progettazione. Tuttavia, è possibile scegliere di creare un controllo diverso.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447882"
 ---
 # <a name="zoom-control-threads-view"></a>Controllo zoom (visualizzazione Thread)
 Il controllo zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale, in modo da potersi concentrare sulle aree di particolare interesse. Poiché questo controllo esegue uno zoom avanti al centro della visualizzazione della sequenza temporale, centrare l'area di interesse prima di procedere.  

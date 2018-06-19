@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456425"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
 Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.  

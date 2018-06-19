@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130669"
 ---
 # <a name="project-subtypes"></a>Sottotipi di progetto
 Sottotipi di progetto consentono di personalizzare o flavor il comportamento dei sistemi di progetto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Le personalizzazioni includono il salvataggio di dati aggiuntivi nel file di progetto, aggiungendo o filtrando gli elementi il **Aggiungi nuovo elemento** nella finestra di dialogo controllo modalità di debug e di distribuito, assembly e il progetto di estensione **proprietà Pagine** la finestra di dialogo. I pacchetti VSPackage implementare sottotipi di progetto utilizzando l'aggregazione COM.  

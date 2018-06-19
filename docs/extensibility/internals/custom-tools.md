@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128884"
 ---
 # <a name="custom-tools"></a>Strumenti personalizzati
 *Strumenti personalizzati* consentono di associare uno strumento con un elemento in un progetto ed eseguire tale strumento ogni volta che il file viene salvato. Alcuni strumenti personalizzati, dette *generatori di file singolo*, vengono spesso utilizzati per implementare funzioni di conversione che genera il codice dai dati e viceversa. Ad esempio, di creare generatori di file singolo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] codice non i file resx e. Settings dell'origine. Il codice sorgente generato fornisce accesso fortemente tipizzato ai dati nei file resx e. Settings. Il [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipi di progetto supportano strumenti personalizzati. [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] non tipi di progetto. I tipi di progetto possono supportare anche gli strumenti personalizzati.  

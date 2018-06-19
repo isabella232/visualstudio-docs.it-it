@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128916"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Introduzione al Plug-in del controllo codice sorgente
 Per creare plug-in un controllo del codice sorgente, è necessario creare una DLL che implementa le funzioni definite nell'API di plug-in controllo di origine, quindi registrare la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per renderlo disponibile per l'utilizzo nel controllo di versione del codice sorgente.  

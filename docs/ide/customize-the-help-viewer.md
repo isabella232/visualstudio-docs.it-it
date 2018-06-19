@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923839"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare Help Viewer
 È possibile personalizzare il layout delle finestre di Help Viewer, così come altre opzioni quali dimensioni del carattere, numero massimo di risultati e se includere contenuto in inglese.

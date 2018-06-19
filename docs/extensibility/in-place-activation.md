@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131633"
 ---
 # <a name="in-place-activation"></a>Attivazione sul posto
 Se la visualizzazione dell'editor ospita controlli ActiveX o altri controlli attivi, è necessario implementare la visualizzazione come controllo ActiveX o come oggetto dati del documento attivo usando il modello di attivazione sul posto.  

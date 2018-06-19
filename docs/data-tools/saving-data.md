@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923429"
 ---
 # <a name="saving-data"></a>Salvataggio di dati
 Salvataggio dei dati è che il processo di persistenza dei dati nel modello di dati di un'applicazione nuovamente impostata nell'archivio dati originale, in genere un database relazionale, ad esempio SQL Server.

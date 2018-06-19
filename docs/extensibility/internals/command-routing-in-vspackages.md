@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135803"
 ---
 # <a name="command-routing-in-vspackages"></a>Routing dei comandi in VSPackage
 Un comando viene instradato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in base al contesto in cui viene eseguito. Nel contesto globale viene indirizzato dal contesto iniziale verso l'esterno.  

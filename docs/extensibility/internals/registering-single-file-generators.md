@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132181"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di File singolo
 Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario registrare in modo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possibile crearne un'istanza e lo associa a un particolare tipo di progetto.  

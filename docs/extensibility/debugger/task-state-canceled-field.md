@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127037"
 ---
 # <a name="taskstatecanceled-field"></a>Campo TASK_STATE_CANCELED
 L'attività è stata annullata prima ha raggiunto lo stato di esecuzione, oppure ha confermato il relativo annullamento e completata senza eccezioni.  

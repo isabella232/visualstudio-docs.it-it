@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130729"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Ottimizzazione di Menu e comandi della barra degli strumenti
 L'aggiunta di pacchetti VSPackage e i comandi corrispondenti a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe causare una talmente dell'interfaccia utente. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce metodi per ridurre al minimo la confusione comandi dell'interfaccia utente.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916748"
 ---
 # <a name="reliability-warnings"></a>avvisi di affidabilità
 Avvisi di affidabilità supportano l'affidabilità di applicazioni e librerie, ad esempio di utilizzo della memoria e thread corretto.

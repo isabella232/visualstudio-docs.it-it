@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900630"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 Il set di regole regole base di correttezza incentrata su errori di logica e gli errori più comuni di utilizzo delle API del framework. Regole base di correttezza includono le regole nel set di regole regole minime consigliate. Per ulteriori informazioni, vedere [set di regole alle regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) è necessario includere questo set di regole per espandere l'elenco degli avvisi segnalati dalle regole minime consigliate.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133430"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>I GUID e costanti di Visual Studio SDK
 La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce l'accesso a una selezione di GUID di ambiente e costanti.  

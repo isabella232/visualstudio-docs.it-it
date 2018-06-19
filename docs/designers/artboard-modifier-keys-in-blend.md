@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923097"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
 Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] per individuarli. La tabella seguente elenca i tasti di scelta rapida che modificano un'azione, ad esempio il ridimensionamento di un oggetto.

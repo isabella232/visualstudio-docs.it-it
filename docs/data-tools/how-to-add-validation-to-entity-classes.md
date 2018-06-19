@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923125"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: aggiungere la convalida alle classi di entità
 *La convalida* classi di entità è il processo di conferma che i valori immessi negli oggetti dati sono conformi con i vincoli nello schema dell'oggetto, nonché alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132255"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configurazione di progetto per la distribuzione di gestione
 Distribuzione indica l'azione fisicamente lo spostamento di elementi di output da un processo di compilazione nella posizione prevista per il debug e l'installazione. Ad esempio, un'applicazione Web potrebbe essere compilata in un computer locale e quindi inserita nel server.  

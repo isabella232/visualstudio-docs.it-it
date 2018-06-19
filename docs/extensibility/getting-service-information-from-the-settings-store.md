@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127503"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Acquisizione delle informazioni sul servizio dall'archivio di impostazioni
 È possibile utilizzare l'archivio di impostazioni per trovare tutti i servizi disponibili o per determinare se è installato un particolare servizio. È necessario conoscere il tipo della classe del servizio.  

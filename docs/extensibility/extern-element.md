@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127692"
 ---
 # <a name="extern-element"></a>Elemento extern
 L'elemento Extern fa riferimento a tutti i file esterni intestazione (h) di tipo merge con il file con estensione vsct in fase di compilazione. I file da unire devono trovarsi nel percorso di inclusione specificato per il compilatore VSCT o a cui fa riferimento un [elemento Include](../extensibility/include-element.md). I file potrebbero essere altri file con estensione vsct o file di intestazione C++.  

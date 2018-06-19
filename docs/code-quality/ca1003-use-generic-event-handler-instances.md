@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899964"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>Ca1003: Utilizzare istanze di gestori eventi generici
 |||

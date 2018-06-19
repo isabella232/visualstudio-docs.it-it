@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263490"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesti della distribuzione per le soluzioni Office
   Un manifesto di distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione dell'applicazione corrente.  

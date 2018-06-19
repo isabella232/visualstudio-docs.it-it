@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131124"
 ---
 # <a name="project-persistence"></a>Persistenza del progetto
 La persistenza è una considerazione di progettazione chiave per il progetto. La maggior parte dei progetti utilizzano gli elementi di progetto che rappresentano file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta anche i progetti i cui dati sono non basate su file. Entrambi i file di proprietà del progetto e il file di progetto devono essere resa persistente. L'IDE consente di configurare il progetto per salvare se stesso o un elemento di progetto.  

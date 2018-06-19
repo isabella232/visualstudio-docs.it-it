@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132747"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inizializzazione della finestra di progettazione e configurazione dei metadati
 Modifica degli attributi dei metadati e di filtro associata a una finestra di progettazione o di un componente di progettazione fornisce un meccanismo definire gli strumenti vengono utilizzati da una particolare finestra di progettazione per gestire diverse applicazioni <xref:System.Type> oggetti (ad esempio le strutture di dati, le classi, o entità con interfaccia grafica), quando non è disponibile la finestra di progettazione e configurazione per supportare la finestra di progettazione IDE di Visual Studio (per istanza cui **della casella degli strumenti** categoria o la scheda è disponibile).  

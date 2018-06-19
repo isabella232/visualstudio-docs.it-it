@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134045"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: conversione di componenti aggiuntivi in VSPackage Extensions
 I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Ecco le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio in un'estensione VSIX.  
@@ -67,7 +68,7 @@ I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visua
   
 1.  Creare un VSPackage contenente un comando di menu. (Per ulteriori informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<nome progetto >*Package.cs.)  
+2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<nome progetto >* Package.cs.)  
   
 3.  Aggiungere al file le istruzioni `using` seguenti:  
   
@@ -129,7 +130,7 @@ I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visua
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Per recuperare l'oggetto DTE da un VSPackage  
   
-1.  In un progetto VSIX con un modello di elemento di pacchetto di Visual Studio, cercare il  *\<nome progetto >*Package.cs file. Si tratta della classe che deriva da <xref:Microsoft.VisualStudio.Shell.Package> e consente di interagire con Visual Studio. In questo caso, usare il relativo <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> per recuperare l'oggetto <xref:EnvDTE80.DTE2>.  
+1.  In un progetto VSIX con un modello di elemento di pacchetto di Visual Studio, cercare il  *\<nome progetto >* Package.cs file. Si tratta della classe che deriva da <xref:Microsoft.VisualStudio.Shell.Package> e consente di interagire con Visual Studio. In questo caso, usare il relativo <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> per recuperare l'oggetto <xref:EnvDTE80.DTE2>.  
   
 2.  Aggiungere queste istruzioni `using`:  
   
@@ -161,7 +162,7 @@ I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visua
   
 1.  Creare un VSPackage che dispone di un comando di menu, come nel [come avviare lo sviluppo di estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.  
   
-2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<nome progetto >*Package.cs.)  
+2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<nome progetto >* Package.cs.)  
   
 3.  Aggiungere queste istruzioni `using`:  
   
@@ -209,7 +210,7 @@ I componenti aggiuntivi sono deprecati. Per creare una nuova estensione di Visua
   
 1.  Creare un VSPackage che dispone di un comando di menu, come nel [come avviare lo sviluppo di estensioni VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sezione.  
   
-2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<nome progetto >*Package.cs.)  
+2.  Aprire il file che contiene la definizione del VSPackage. (In un progetto c#, ha  *\<nome progetto >* Package.cs.)  
   
 3.  Aggiungere queste istruzioni `using`:  
   

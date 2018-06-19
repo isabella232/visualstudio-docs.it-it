@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132335"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Creazione di istanze di Editor di componenti di base tramite l'API Legacy
 L'editor è responsabile per la modifica delle funzioni, ad esempio inserimento, eliminazione, copia e Incolla di testo. Combina queste funzioni con quelli forniti da servizi di linguaggio, ad esempio la colorazione di testo, i rientri e il completamento delle istruzioni IntelliSense.  

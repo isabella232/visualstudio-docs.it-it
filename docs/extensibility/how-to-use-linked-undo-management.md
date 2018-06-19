@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127637"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Procedura: utilizzare Gestione fase di rollback collegata
 Fase di rollback collegata consente all'utente di annullare contemporaneamente le stesse modifiche in più file. Modifiche di testo simultanee in più file di programma, ad esempio un file di intestazione e un file di Visual C++, è ad esempio, una transazione di annullamento collegata. Funzionalità di annullamento collegato è incorporata l'implementazione dell'ambiente di gestione degli annullamenti, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> consente di modificare questa funzionalità. Fase di rollback collegata è implementata da un'unità di annullamento padre che è possibile collegare gli stack di annullamento separato in modo da essere considerato come una sola unità di annullamento. La procedura per l'utilizzo di fase di rollback collegata è descritta in dettaglio nella sezione seguente.  

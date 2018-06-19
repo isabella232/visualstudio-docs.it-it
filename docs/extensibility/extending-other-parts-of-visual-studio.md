@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133662"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Estensione di altre parti di Visual Studio
 Sono disponibili molte altre parti dell'interfaccia utente Visual Studio che è possibile estendere. Di seguito viene illustrata solo alcune.  

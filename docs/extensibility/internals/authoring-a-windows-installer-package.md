@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127934"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Creazione di un pacchetto di Windows Installer
 Unità di dati del modello di Windows Installer. Invece che scrivere uno script contenente le procedure per copiare i file e la scrittura di voci del Registro di sistema, ad esempio, si creano le righe e colonne nelle tabelle di database che contengono dati di file e Registro di sistema.  

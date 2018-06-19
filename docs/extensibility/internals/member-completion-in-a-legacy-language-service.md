@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134032"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Completamento di membro in un servizio di linguaggio Legacy
 Il completamento di membro IntelliSense è una descrizione comando che consente di visualizzare un elenco di possibili membri di un ambito specifico, ad esempio una classe, struttura, enumerazione o dello spazio dei nomi. Ad esempio, in c#, se l'utente digita "this" seguito da un punto, un elenco di tutti i membri della classe o struttura nell'ambito corrente viene visualizzato un elenco da cui l'utente può selezionare.  

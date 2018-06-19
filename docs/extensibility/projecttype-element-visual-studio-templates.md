@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137882"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelli di Visual Studio)
 Classifica il modello di progetto in modo che venga visualizzato nel gruppo specificato di **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo.  

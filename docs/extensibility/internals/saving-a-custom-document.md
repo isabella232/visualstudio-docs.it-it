@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132548"
 ---
 # <a name="saving-a-custom-document"></a>Salvataggio di un documento personalizzato
 Gli handle di ambiente di **salvare**, **Salva con nome**, e **Salva tutto** comandi. Quando un utente fa clic **salvare**, **Salva con nome**, **o Salva tutto** sul **File** menu o chiude la soluzione, pertanto il comando Salva tutto, le operazioni seguenti si verifica.  

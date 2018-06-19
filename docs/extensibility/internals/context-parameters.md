@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132104"
 ---
 # <a name="context-parameters"></a>Parametri di contesto
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), è possibile aggiungere procedure guidate per la **nuovo progetto**, **Aggiungi nuovo elemento**, o **Aggiungi progetto Sub** finestre di dialogo. Le procedure guidate di aggiuntive sono disponibili nel **File** menu o facendo clic su un progetto in **Esplora**. L'IDE passa i parametri di contesto per l'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.  

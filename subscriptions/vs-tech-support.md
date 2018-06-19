@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957655"
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivazione del vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 

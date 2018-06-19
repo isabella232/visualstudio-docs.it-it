@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130847"
 ---
 # <a name="solution-user-options-suo-file"></a>Opzioni utente della soluzione (. File suo)
 Il file (suo Solution) di opzioni utente della soluzione contiene le opzioni di soluzione per utente. Questo file non deve essere archiviato nel controllo del codice sorgente.  

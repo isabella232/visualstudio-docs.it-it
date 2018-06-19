@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134607"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sul parametro in un servizio di linguaggio Legacy
 Informazioni sul parametro IntelliSense è una descrizione comando che consente di visualizzare la firma di un metodo quando l'utente digita l'elenco dei parametri start carattere (in genere una parentesi di apertura) per l'elenco di parametri di metodo. Quando viene immesso ogni parametro e il separatore di parametro (in genere una virgola) è tipizzato, la descrizione comando viene aggiornata per mostrare il parametro successivo in grassetto.  

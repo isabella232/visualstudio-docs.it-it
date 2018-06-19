@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126876"
 ---
 # <a name="icon-element"></a>Icona elemento
 L'attributo guid del tag icona è il guid di una bitmap definito.  L'attributo id consente di selezionare lo slot nella striscia di bitmap. Questo elemento è facoltativo.  Se questo elemento viene omesso il valore di **guidOfficeIcon:msotcidNoIcon** verrà implicita.  

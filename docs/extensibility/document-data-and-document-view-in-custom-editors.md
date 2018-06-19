@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130259"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dati del documento e visualizzazione del documento in un editor personalizzato
 Un editor personalizzato è costituito da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggeriscono i nomi, l'oggetto dati del documento rappresenta i dati di testo da visualizzare e l'oggetto visualizzazione del documento (o "view") rappresenta una o più finestre in cui visualizzare l'oggetto dati del documento.  

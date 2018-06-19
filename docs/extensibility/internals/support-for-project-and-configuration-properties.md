@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133578"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per la proprietà di configurazione e di progetto
 Il **proprietà** finestra il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di progetto e la configurazione. È possibile fornire una pagina delle proprietà per un tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.  

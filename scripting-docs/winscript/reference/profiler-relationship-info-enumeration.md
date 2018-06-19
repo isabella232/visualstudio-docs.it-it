@@ -1,14 +1,14 @@
 ---
 title: Enumerazione profiler_info_object_flags | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: fae69317-6224-4a6a-8e9e-ccaa6a330818
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733931"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>Enumerazione PROFILER_INFO_OBJECT_FLAGS
 Rappresenta le informazioni sull'oggetto nella relazione. Utilizzato [struttura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md).  

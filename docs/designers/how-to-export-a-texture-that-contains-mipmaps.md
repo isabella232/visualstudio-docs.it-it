@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: esportare una trama che contiene mipmap'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff27404a37eb641deb8409e6e529bf052264591
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923327"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedura: esportare una trama che contiene mipmap
 

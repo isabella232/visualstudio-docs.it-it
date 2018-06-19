@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953861"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento a una definizione di linguaggio specifico di dominio
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951310"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora risorse della lingua e sono accessibili da codice programma. Tuttavia, le proprietà variano in modo che i relativi valori vengono archiviati.

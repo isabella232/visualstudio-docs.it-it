@@ -40,6 +40,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947973"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 È possibile digitare gli eventi pre-compilazione o post-compilazione per la [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direttamente nella casella di modifica oppure selezionare le macro pre-compilazione e post-compilazione da un elenco di macro disponibili.

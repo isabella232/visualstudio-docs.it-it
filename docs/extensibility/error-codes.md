@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130774"
 ---
 # <a name="error-codes"></a>Codici di errore
 Quando una funzione API plug-in controllo di origine restituisce un errore, è previsto in uno dei seguenti codici di errore. Tutti gli errori sono negativi, sono positivi, avvisi o i codici di errore informativo ed esito positivo è 0.  

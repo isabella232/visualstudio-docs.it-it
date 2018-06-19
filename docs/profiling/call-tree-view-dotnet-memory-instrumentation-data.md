@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263598"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET
 La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di strumentazione contiene i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati temporali e di memoria .NET per la funzione.  

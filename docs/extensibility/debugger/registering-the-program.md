@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126302"
 ---
 # <a name="registering-the-program"></a>Il programma di registrazione
 Dopo che il motore di debug ha acquisito una porta, rappresentato da un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia, abilitare il programma da sottoporre a debug il passaggio successivo consiste nel registrarlo con la porta. Una volta registrato, il programma è disponibile per il debug di uno dei seguenti modi:  

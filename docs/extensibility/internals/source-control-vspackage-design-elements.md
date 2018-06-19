@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130225"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementi di progettazione di VSPackage di controllo di origine
 Negli argomenti di questa sezione descrivono la struttura di controllo del codice sorgente pacchetto VSPackage deve implementare per l'integrazione completa. Elenca inoltre le interfacce e i servizi che il controllo origine VSPackage possono implementare le interfacce e i servizi è possibile utilizzare il controllo del codice sorgente VSPackage dagli altri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componenti per supportare la relativa origine controllano modello e la funzionalità.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127044"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Procedura: generare eventi quando l'Editor perde lo stato attivo
 In alcuni casi è necessario sapere quando un editor perde lo stato attivo sulla cornice finestra. È ad esempio, potrebbe essere necessario estrarre codice da una finestra del codice dopo l'editor non è più incentrata su di esso. La procedura seguente fornisce i passaggi da seguire per ricevere la notifica dell'editor perde lo stato attivo.  

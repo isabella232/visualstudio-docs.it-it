@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133799"
 ---
 # <a name="project-subtypes-design"></a>Sottotipi di progetto
 Sottotipi di progetto consentono VSPackage estendono progetti basati su Microsoft Build Engine (MSBuild). L'utilizzo di aggregazioni consente di riutilizzare la maggior parte del sistema del progetto principale gestite implementata in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ancora comunque personalizzare il comportamento per un determinato scenario.  

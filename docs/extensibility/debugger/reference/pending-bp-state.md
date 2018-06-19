@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125916"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Specifica lo stato di un punto di interruzione in sospeso (un punto di interruzione che non è stato ancora associato).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129722"
 ---
 # <a name="legacy-language-service-extensibility"></a>Estensibilità di servizio di linguaggio legacy
 Un servizio di linguaggio fornisce il supporto di specifiche della lingua per la modifica del codice sorgente nell'IDE.  

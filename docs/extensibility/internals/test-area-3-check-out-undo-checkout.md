@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134965"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area test 3: Estrarre / Annulla estrazione
 Questa area di plug-in test di controllo del codice sorgente include gli elementi di modifica e di ripristino dall'archivio delle versioni tramite il **Estrai** e **Annulla estrazione** comandi.  

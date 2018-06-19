@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953040"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
 È possibile modificare l'aspetto e il comportamento dell'esplorazione per la finestra di progettazione di linguaggio specifico di dominio come indicato di seguito:

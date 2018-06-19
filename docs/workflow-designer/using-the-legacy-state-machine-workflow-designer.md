@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979149"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilizzo della finestra di progettazione flusso di lavoro di una macchina a stati (legacy)
 

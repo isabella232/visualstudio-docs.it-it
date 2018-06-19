@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134100"
 ---
 # <a name="running-document-table"></a>Tabella documenti in esecuzione
 L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura interna denominata tabella document (RDT) in esecuzione. Questo elenco include tutti i documenti aperti in memoria, indipendentemente dal fatto che tali documenti sono in corso di modifica. Un documento è un elemento in modo permanente, inclusi i file in un progetto o file di progetto principale (ad esempio, un file con estensione vcxproj).  

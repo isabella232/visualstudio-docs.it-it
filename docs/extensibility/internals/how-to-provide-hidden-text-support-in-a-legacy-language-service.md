@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132642"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: fornire supporto di testo nascosto in un servizio di linguaggio Legacy
 È possibile creare aree di testo nascosto oltre alle aree della struttura. Le aree di testo nascosto possono essere gestito dal client o controllati editor e vengono utilizzati per nascondere completamente un'area di testo. Nell'editor vengono visualizzate in un'area nascosta come linee orizzontali. Un esempio di questa è la visualizzazione solo Script nell'editor HTML.  

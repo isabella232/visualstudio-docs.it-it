@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920948"
 ---
 # <a name="intrinsic-functions"></a>Funzioni intrinseche
 Un'espressione in SAL può essere un'espressione C/C++ a condizione che sia un'espressione che non produca effetti collaterali, ad esempio ++, -- e le chiamate di funzione hanno effetti collaterali in questo contesto.  Tuttavia, SAL forniscono alcuni oggetti di tipo funzione e alcuni simboli riservati che possono essere utilizzate nelle espressioni di SAL. Queste sono denominate *funzioni intrinseche*.

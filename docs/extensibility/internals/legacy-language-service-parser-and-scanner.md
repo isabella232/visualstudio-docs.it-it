@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134582"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanner e Parser servizio di linguaggio legacy
 Il parser è il cuore del servizio di linguaggio. Le classi di lingua del file system distribuito (MPF, Managed Package Framework) richiedono un parser del linguaggio per selezionare le informazioni sul codice di visualizzazione. Un parser separa il testo in token lessicale e quindi identifica i token dal tipo e funzionalità.  

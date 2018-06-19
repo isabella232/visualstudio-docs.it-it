@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919677"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Avvisi dell'analisi codice per il linguaggio C/C++
 In questa sezione sono elencati gli avvisi di analisi del codice C/C++ ad eccezione di quelli che vengono generati i [correttori ortografici linee guida di base C++](code-analysis-for-cpp-corecheck.md). Per informazioni sull'analisi del codice, vedere [/analyze (analisi di codice)](/cpp/build/reference/analyze-code-analysis) e [avvio rapido: analisi del codice per C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

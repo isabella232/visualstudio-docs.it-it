@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922442"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
 I tasti di scelta rapida nella finestra di progettazione XAML consentono di lavorare più velocemente grazie alla possibilità di eseguire, con un unico tasto di scelta rapida, un'azione che richiederebbe diversi clic del pulsante del mouse.

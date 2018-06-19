@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129170"
 ---
 # <a name="how-to-register-editor-file-types"></a>Procedura: registrare i tipi di File dell'Editor
 È il modo più semplice per registrare i tipi di file di editor utilizzando gli attributi di registrazione forniti come parte di [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] classi framework (gestito MPF) del pacchetto gestito. Se si implementa il pacchetto in nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], è anche possibile scrivere uno script del Registro di sistema che registra l'editor e le estensioni associate.

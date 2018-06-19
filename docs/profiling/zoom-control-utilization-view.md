@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447843"
 ---
 # <a name="zoom-control-utilization-view"></a>Controllo zoom (visualizzazione Utilizzo)
 Il controllo zoom consente di ingrandire il grafico Utilizzo CPU, in modo da potersi concentrare sulle aree di particolare interesse. Questo controllo esegue uno zoom avanti al centro della visualizzazione. È pertanto consigliabile centrare l'area di interesse prima di procedere.  

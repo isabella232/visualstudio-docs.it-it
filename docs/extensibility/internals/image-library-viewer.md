@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133786"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare e la ricerca di manifesti dell'immagine, consentendo all'utente di modificarli in modo identico a Visual Studio. L'utente può modificare in background, le dimensioni, DPI, contrasto elevato e altre impostazioni. Inoltre, lo strumento visualizza le informazioni di caricamento per ogni manifesto immagine e visualizza le informazioni di origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:  

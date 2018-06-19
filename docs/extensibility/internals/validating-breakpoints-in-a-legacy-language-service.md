@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139375"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Convalida i punti di interruzione in un servizio di linguaggio Legacy
 Un punto di interruzione indica che l'esecuzione del programma deve essere arrestata in un particolare punto mentre è in esecuzione in un debugger. Un utente può inserire un punto di interruzione in qualsiasi riga nel file di origine, poiché l'editor non ha alcuna conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. Quando il debugger viene avviato, tutti i punti di interruzione contrassegnate (denominati in sospeso i punti di interruzione) vengono associati nella posizione appropriata nel programma in esecuzione. Allo stesso tempo che i punti di interruzione vengono convalidate per assicurarsi che vengono modificate le sezioni di codice valido. Ad esempio, un punto di interruzione in un commento non è valido, poiché non è presente codice in tale posizione nel codice sorgente. Il debugger disabilita i punti di interruzione non validi.  

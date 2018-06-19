@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921445"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Set di dati separati e gli oggetti TableAdapter in progetti diversi
 I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](create-and-configure-tableadapters.md) e classi di set di dati possono essere generate in progetti separati. Ciò consente di separare i livelli dell'applicazione rapidamente e generare applicazioni dati a più livelli.

@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640741"
 ---
 # <a name="toutcstring-method-date-javascript"></a>Metodo toUTCString (Date) (JavaScript)
 Restituisce una data convertita in una stringa utilizzando l'ora UTC (Universal Coordinated Time).  

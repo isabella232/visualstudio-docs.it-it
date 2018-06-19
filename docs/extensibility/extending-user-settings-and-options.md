@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135540"
 ---
 # <a name="extending-user-settings-and-options"></a>Opzioni e impostazioni utente estensione
 In Visual Studio sono disponibili due modi per mantenere le preferenze dell'utente. Il **Strumenti / opzioni** pagine consentono agli utenti di impostare i propri valori per diversi tipi di impostazioni, generali e specifici della lingua. Impostazioni utente consentono agli utenti di specificare le proprietà di configurazione generali di Visual Studio. Per ulteriori informazioni sulle pagine di opzioni, vedere [opzioni e le pagine di opzioni](../extensibility/internals/options-and-options-pages.md). Per ulteriori informazioni sulle impostazioni utente, vedere [il supporto per le impostazioni utente](../extensibility/internals/support-for-user-settings.md).  

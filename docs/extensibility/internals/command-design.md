@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132175"
 ---
 # <a name="command-design"></a>Progettazione di comando
 Quando si aggiunge un comando a un VSPackage, è necessario specificare dove verrà visualizzato quando è disponibile e come è possibile gestire.  

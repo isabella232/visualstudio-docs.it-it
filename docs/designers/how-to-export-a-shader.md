@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Esportare uno shader'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8975bbff3e845f0bee66f5c0e27f9935d1986593
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 632cd61d3844dc6f405090081ef76e5a2d6967b7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924995"
 ---
 # <a name="how-to-export-a-shader"></a>Procedura: Esportare uno shader
 Questo documento illustra come usare la finestra di progettazione shader per esportare uno shader DGSL (Directed Graph Shader Language) da usare nell'app.

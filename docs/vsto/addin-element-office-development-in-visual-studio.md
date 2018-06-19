@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262382"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;componente aggiuntivo&gt; elemento (sviluppo per Office in Visual Studio)
   Il **addin** elemento del `vstav3` dello spazio dei nomi contiene informazioni che sono specifiche di componenti aggiuntivi VSTO per Microsoft Office e le personalizzazioni a livello di documento sviluppate con Visual Studio.  

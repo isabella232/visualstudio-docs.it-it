@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952715"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 Per personalizzare una mappa di codice, è possibile modificare il file Directed Graph Markup Language (con estensione dgml) di una mappa. È ad esempio possibile modificare elementi per specificare stili personalizzati, assegnare proprietà e categorie a collegamenti e elementi di codice o collegare documenti o URL a elementi di codice o a collegamenti.  Per ulteriori informazioni sugli elementi DGML, vedere [riferimento diretto Graph Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).

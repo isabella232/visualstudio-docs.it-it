@@ -1,6 +1,7 @@
 ---
 title: Esempi della finestra di progettazione shader
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70145f966e527288c1fc8febbe5266d93a2dac68
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ebdbb07f4b4e6d031230386942d9058b1db267d9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921977"
 ---
 # <a name="shader-designer-examples"></a>Esempi della finestra di progettazione shader
 

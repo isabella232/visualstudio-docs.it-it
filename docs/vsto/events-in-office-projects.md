@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448714"
 ---
 # <a name="events-in-office-projects"></a>Eventi nei progetti di Office
   Ogni modello di progetto di Office genera automaticamente diversi gestori eventi. I gestori eventi per le personalizzazioni a livello di documento sono leggermente diversi dai gestori eventi per componenti aggiuntivi VSTO.  

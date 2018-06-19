@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127748"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Aggiunta di directory per il dialogo Aggiungi nuovo elemento
 Esempio di codice riportato di seguito viene illustrato come registrare un nuovo set di directory per il **Aggiungi nuovo elemento** la finestra di dialogo. Directory per il **Aggiungi nuovo elemento** la finestra di dialogo sono diverse per ogni progetto. Pertanto, le directory vengono registrate nella sottochiave progetti, vedere \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

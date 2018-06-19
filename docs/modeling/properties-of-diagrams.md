@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949159"
 ---
 # <a name="properties-of-diagrams"></a>Proprietà di diagrammi
 È possibile impostare le proprietà che specificano come diagrammi verranno visualizzato nella finestra di progettazione generato. Ad esempio, è possibile specificare un colore predefinito per il testo nel diagramma.

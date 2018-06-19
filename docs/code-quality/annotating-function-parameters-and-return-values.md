@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900446"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo vengono descritti gli utilizzi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e puntatori a strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di utilizzo comune per le annotazioni. Per ulteriori annotazioni che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)

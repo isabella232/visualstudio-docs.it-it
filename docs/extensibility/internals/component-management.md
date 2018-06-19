@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129535"
 ---
 # <a name="component-management"></a>Gestione dei componenti
 Unità di attività del programma di installazione di Windows vengono definite come componenti di Windows Installer (talvolta denominati WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità fondamentale di installazione e conteggio dei riferimenti per le installazioni che usano Windows Installer.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922511"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Errore: Il processo di destinazione è stato terminato con codice &#39;codice&#39; durante la valutazione della funzione &#39;(funzione)&#39;
 
