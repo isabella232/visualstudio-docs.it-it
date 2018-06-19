@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132734"
 ---
 # <a name="editor-imports"></a>Editor di importazioni
 È possibile importare un numero di intermediari che forniscono l'estensione con diversi tipi di accesso per l'editor di componenti di base, le factory e servizi di editor. Ad esempio, è possibile importare il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire all'utente un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> per un determinato tipo di contenuto. (Lo strumento di spostamento consente che eseguire diversi tipi di ricerche in un buffer di testo).  

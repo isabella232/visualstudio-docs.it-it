@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134408"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quando un punto di interruzione consente di associare o diventa non associato
 Quando un punto di interruzione non può essere associato al momento in cui viene eseguita una chiamata di [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) metodo, l'associazione di tempo e creare ora del punto di interruzione sono diversi.  

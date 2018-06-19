@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129206"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Applicazione delle impostazioni tra più connessioni di progetto
 Per eseguire la stessa operazione di controllo di origine in più contesti di connessione o di più progetti compilati utilizzando la 1.2 di API plug-in controllo di origine, è possibile utilizzare un'operazione batch un plug-in controllo del codice sorgente. Batch possono essere utilizzati per eliminare ridondanti, finestre di dialogo dall'esperienza utente per ogni progetto.  

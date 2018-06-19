@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131587"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio Legacy
 Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene utilizzato per fornire l'editor con informazioni specifiche per tale lingua. Ad esempio, l'editor deve conoscere le parole chiave del linguaggio e elementi per supportare la colorazione della sintassi.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126783"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procedura: gestire una raccolta privata usando le impostazioni del Registro di sistema
 Se si è un amministratore o lo sviluppatore di un'estensione della Shell isolata, è possibile controllare l'accesso ai controlli, modelli e strumenti in Visual Studio Gallery, la raccolta di esempi o raccolte private. Per rendere una raccolta disponibile o non disponibile, è possibile creare un file. pkgdef che descrive le chiavi del Registro di sistema modificate e i relativi valori.  

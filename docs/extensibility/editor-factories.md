@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128248"
 ---
 # <a name="editor-factories"></a>Factory editor
 Una factory editor crea gli oggetti di editor e li inserisce in una cornice di finestra, nota come una visualizzazione fisica. Crea i dati del documento e oggetti di visualizzazione di documenti che sono necessari per creare gli editor e finestre di progettazione. Per creare qualsiasi editor standard e l'editor di componenti di base di Visual Studio, è necessario un factory dell'editor. Facoltativamente è possibile creare un editor personalizzato con una factory dell'editor.  

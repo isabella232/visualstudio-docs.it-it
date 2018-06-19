@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140014"
 ---
 # <a name="loading-vspackages"></a>Il caricamento di pacchetti VSPackage
 Pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta la funzionalità. Ad esempio, un pacchetto VSPackage viene caricato quando Visual Studio Usa una factory del progetto o un servizio che implementa il pacchetto VSPackage. Questa funzionalità è denominata caricamento ritardato, che viene utilizzato ogni volta che è possibile migliorare le prestazioni.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130544"
 ---
 # <a name="document-lock-holder-management"></a>Gestione dei documenti blocco titolare
 La tabella di documento in esecuzione (RDT) mantiene un conteggio di documenti aperti e presentano i blocchi di modifica. È possibile inserire un blocco di modifica su un documento di RDT quando viene modificata a livello di codice in background senza visualizzare un documento aperto in una finestra del documento. Questa funzionalità viene spesso utilizzata nelle finestre di progettazione che modificano più file tramite un'interfaccia utente grafica.  

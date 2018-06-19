@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133274"
 ---
 # <a name="property-pages"></a>Pagine delle proprietà
 Gli utenti possono visualizzare e modificare proprietà dipendenti dalla configurazione e - indipendente tramite pagine delle proprietà del progetto. Oggetto **pagine delle proprietà** pulsante è abilitato nel **proprietà** finestra o sulla barra degli strumenti Esplora soluzioni per gli oggetti che forniscono una visualizzazione della pagina di proprietà dell'oggetto selezionato. Pagine delle proprietà vengono creati dall'ambiente e sono disponibili per i progetti e soluzioni. Possono, tuttavia, essere resa disponibile per gli elementi di progetto che costituiscono l'utilizzo di proprietà dipendenti dalla configurazione. Questa funzionalità può essere usata quando i file all'interno di un progetto richiedono le impostazioni dell'opzione del compilatore diverse compilare in modo corretto.  

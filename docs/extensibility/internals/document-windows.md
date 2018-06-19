@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129050"
 ---
 # <a name="document-windows"></a>Finestre dei documenti
 In Visual Studio, un *finestra del documento* è una finestra cornice figlio che è associata a una finestra di interfaccia a documenti multipli (MDI). Le finestre dei documenti vengono generalmente utilizzate per la visualizzazione e modifica di codice sorgente o di testo, ma può ospitare anche altri tipi di funzionalità. Finestre di documento:  

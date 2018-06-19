@@ -14,6 +14,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454714"
 ---
 **CONDIZIONI DI LICENZA SOFTWARE MICROSOFT PER LE SEGUENTI SOTTOSCRIZIONI DI VISUAL STUDIO:**
 

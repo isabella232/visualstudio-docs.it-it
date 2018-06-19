@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134675"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa Guida di riferimento contiene informazioni e procedure consigliate per adottare il servizio immagini di Visual Studio e il catalogo di immagini introdotta in Visual Studio 2015.  
@@ -165,7 +166,7 @@ Questa Guida di riferimento contiene informazioni e procedure consigliate per ad
 |-|-|  
 |**Attributo**|**Definizione**|  
 |URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei valori seguenti:<br /><br /> -A [URI di tipo Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br />-Un riferimento a una risorsa componente assoluto<br />-Un percorso di un file contenente una risorsa nativa|  
-|Sfondo|[Facoltativo] Indica l'oggetto tipo di sfondo che dell'origine deve essere utilizzata.<br /><br /> Può essere uno dei valori seguenti:<br /><br /> *Illuminazione:* l'origine può essere utilizzata su sfondo chiaro.<br /><br /> *Dark:*l'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere utilizzata in qualsiasi in background in modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere utilizzata su sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se l'attributo Background viene omesso, l'origine è utilizzabile in qualsiasi dello sfondo.<br /><br /> Se lo sfondo è *luce*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o è impostato su sfondo *contrasto elevato*, l'inversione dei colori dell'origine viene controllata l'immagine **AllowColorInversion** attributo.|  
+|Sfondo|[Facoltativo] Indica l'oggetto tipo di sfondo che dell'origine deve essere utilizzata.<br /><br /> Può essere uno dei valori seguenti:<br /><br /> *Illuminazione:* l'origine può essere utilizzata su sfondo chiaro.<br /><br /> *Dark:* l'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *Contrasto elevato:* l'origine può essere utilizzata in qualsiasi in background in modalità a contrasto elevato.<br /><br /> *HighContrastLight:* l'origine può essere utilizzata su sfondo chiaro in modalità a contrasto elevato.<br /><br /> *HighContrastDark:* l'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se l'attributo Background viene omesso, l'origine è utilizzabile in qualsiasi dello sfondo.<br /><br /> Se lo sfondo è *luce*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se viene omesso o è impostato su sfondo *contrasto elevato*, l'inversione dei colori dell'origine viene controllata l'immagine **AllowColorInversion** attributo.|  
 |||  
   
  Oggetto \<origine > elemento può avere uno e uno solo dei sottoelementi facoltativi seguenti:  

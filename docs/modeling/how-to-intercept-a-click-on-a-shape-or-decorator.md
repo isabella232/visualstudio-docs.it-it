@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952300"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 Le procedure seguenti viene illustrato come intercettare un clic su una forma o un elemento decorator icona. È possibile intercettare fa clic su, fa doppio clic, trascina, e altre azioni e rendere l'elemento di rispondere.

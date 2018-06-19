@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129472"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Procedura: fornire l'automazione per Windows
 È possibile fornire l'automazione per documenti e finestre. Fornisce l'automazione è consigliabile ogni volta che si desidera rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non esiste ancora fornisce un oggetto di automazione pronti all'uso, come invece avviene con un elenco di attività.

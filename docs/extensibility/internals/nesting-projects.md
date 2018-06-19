@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131160"
 ---
 # <a name="nesting-projects"></a>Progetti di annidamento
 Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto di Visual Studio possono consentono di raggruppare tipi simili di insieme di progetti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizzando *progetto nidificazione*. Ad esempio, il progetto di modello Enterprise utilizza progetti annidati per i progetti di gruppo in categorie. Progetti di facciata business, i progetti di interfaccia utente Web e così via vengono raggruppati in una categoria.  

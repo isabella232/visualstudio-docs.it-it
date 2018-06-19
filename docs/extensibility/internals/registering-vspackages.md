@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128845"
 ---
 # <a name="registering-vspackages"></a>Registrazione di pacchetti VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si basa su file. pkgdef per descrivere e individuare un pacchetto VSPackage. Un file. pkgdef contiene tutte le informazioni di registrazione che, in caso contrario, verrebbero aggiunto al Registro di sistema. VSPackage gestiti sono registrati per l'aggiunta di attributi per il codice sorgente e quindi eseguendo il [CreatePkgDef utilità](../../extensibility/internals/createpkgdef-utility.md) sull'assembly risultante per generare un file. pkgdef.  

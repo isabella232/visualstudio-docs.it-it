@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129376"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Testo della struttura e nascosto in un servizio di linguaggio Legacy
 Struttura consente di comprimere una sequenza di righe di testo in una singola riga. In C++, ad esempio, tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Il testo nascosto è la sequenza di righe di testo che può essere visualizzato o nascosto.  

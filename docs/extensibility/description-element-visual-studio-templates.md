@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128917"
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento Description (modelli di Visual Studio)
 Specifica la descrizione del modello così come appare in entrambi i **nuovo progetto** o **Aggiungi nuovo elemento** la finestra di dialogo.  

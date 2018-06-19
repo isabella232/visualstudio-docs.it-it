@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131662"
 ---
 # <a name="extending-properties"></a>Estensione delle proprietà
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **proprietà** finestra è un visualizzatore di proprietà universale per i componenti COM e COM+ e supporta tutte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prodotti. Il **proprietà** finestra funziona con `ITypeInfo` digitare le informazioni e i metadati di COM+ per elencare le proprietà in fase di progettazione per l'oggetto attualmente selezionato in un'altra finestra nell'ambiente di sviluppo integrato (IDE).  

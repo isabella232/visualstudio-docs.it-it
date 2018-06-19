@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132931"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e le pagine di opzioni
 Fare clic su **opzioni** sul **strumenti** menu viene aperto il **opzioni** la finestra di dialogo. Le opzioni nella finestra di dialogo vengono definiti collettivamente come pagine Opzioni del menu. Il controllo struttura ad albero nel riquadro di spostamento include le categorie delle opzioni e ogni categoria dispone di pagine Opzioni del menu. Quando si seleziona una pagina, le relative opzioni vengono visualizzati nel riquadro di destra. Queste pagine consentono di modificare i valori delle opzioni che determinano lo stato di un VSPackage.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126845"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelli di Visual Studio)
 Specifica se il **Sfoglia** pulsante è disponibile nel **nuovo progetto** nella finestra di dialogo, in modo che gli utenti possono modificare facilmente la directory predefinita in cui è stato salvato un nuovo progetto.  

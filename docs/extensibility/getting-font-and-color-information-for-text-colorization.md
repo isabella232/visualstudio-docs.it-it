@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129696"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Recupero di tipo di carattere e colore per testo colorazione
 Il processo che esegue il rendering o Visualizza colorato testo negli elementi dell'interfaccia utente dipende dal tipo di progetto, la tecnologia e developer di preferenze. Il **tipi di carattere e colori** pagina delle proprietà vengono archiviate le impostazioni.

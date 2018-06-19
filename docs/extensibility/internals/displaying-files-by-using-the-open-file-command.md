@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130893"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Visualizzazione di file utilizzando il comando Apri File
 I passaggi seguenti descrivono il modo in cui l'IDE gestisce il **Apri File** comando, è disponibile nel **File** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Viene descritta anche la modalità con cui i progetti devono risposta alle chiamate provenienti da questo comando.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137340"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout (funzione)
 Questa funzione Annulla un'operazione di estrazione precedente, ripristinando in questo modo il contenuto del file selezionato o dei file allo stato precedente l'estrazione. Tutte le modifiche apportate al file dopo l'estrazione andranno perse.  

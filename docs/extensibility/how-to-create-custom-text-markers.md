@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132273"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedura: creare marcatori di testo personalizzato
 Se si desidera creare un indicatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire i passaggi seguenti:  
@@ -34,9 +35,9 @@ Se si desidera creare un indicatore di testo personalizzato per enfatizzare o or
   
 1.  Creare una voce del Registro di sistema come segue:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >*\Text Editor\External marcatori\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* \Text Editor\External marcatori\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*è un `GUID` utilizzato per identificare il marcatore da aggiungere  
+     *\<MarkerGUID >* è un `GUID` utilizzato per identificare il marcatore da aggiungere  
   
      *\<Versione >* è la versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ad esempio 8.0  
   
@@ -45,7 +46,7 @@ Se si desidera creare un indicatore di testo personalizzato per enfatizzare o or
     > [!NOTE]
     >  Il percorso radice dell'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sostituita con una radice alternativa, quando viene inizializzata la shell di Visual Studio, per ulteriori informazioni, vedere [Della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Creare quattro valori sotto HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >*\Text Editor\External marcatori\\*\<MarkerGUID >*  
+2.  Creare quattro valori sotto HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* \Text Editor\External marcatori\\*\<MarkerGUID >*  
   
     -   (Predefinito)  
   

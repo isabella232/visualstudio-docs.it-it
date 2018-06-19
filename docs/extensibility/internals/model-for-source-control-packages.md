@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129443"
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti di controllo di origine
 Il modello seguente rappresenta un esempio di implementazione di un controllo di origine. Nel modello, vengono visualizzati le interfacce che è necessario implementare e i servizi di ambiente che è necessario chiamare. Ad esempio tutti i servizi, è effettivamente possibile chiamare i metodi di una determinata interfaccia che è possibile ottenere tramite il servizio. I nomi delle classi vengono identificati per rendere più semplice visualizzare l'esecuzione del controllo del codice sorgente.  

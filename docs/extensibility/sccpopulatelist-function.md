@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140291"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (funzione)
 Questa funzione aggiorna un elenco di file per un comando di controllo di origine specifica e fornisce lo stato del controllo di origine in tutti i file specificati.  

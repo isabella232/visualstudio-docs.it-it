@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134441"
 ---
 # <a name="delayed-document-loading"></a>Documento caricamento ritardato
 Quando un utente riapre una soluzione di Visual Studio, è possibile che la maggior parte dei documenti associati non vengono caricata immediatamente. La cornice della finestra documento viene creata in uno stato in sospeso inizializzazione e un documento di segnaposto (denominato frame dello stub) viene inserito nel documento di tabella in esecuzione (RDT).  

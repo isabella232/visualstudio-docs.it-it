@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138577"
 ---
 # <a name="sccdiff-function"></a>SccDiff (funzione)
 Questa funzione consente di visualizzare (o facoltativamente solo Cerca) le differenze tra il file corrente (su disco locale) e la relativa ultima versione archiviata nell'origine del sistema di controllo.  
