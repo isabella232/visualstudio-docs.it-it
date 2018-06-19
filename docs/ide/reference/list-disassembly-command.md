@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704733"
 ---
 # <a name="list-disassembly-command"></a>Comando Elenca disassembly
 Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.

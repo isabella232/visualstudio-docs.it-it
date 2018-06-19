@@ -1,13 +1,13 @@
 ---
 title: Prevista cifra esadecimale | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1023
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633091"
 ---
 # <a name="expected-hexadecimal-digit"></a>Prevista cifra esadecimale
 Creazione di una sequenza di escape Unicode non corretta. Le sequenze di escape Unicode iniziano con \u, seguito da quattro cifre esadecimali (non sono più presenti e non meno). Cifre esadecimali Unicode possono contenere solo i numeri 0-9, lettere maiuscole A-F e le lettere minuscole-f. L'esempio seguente illustra una sequenza di escape Unicode corretta.  

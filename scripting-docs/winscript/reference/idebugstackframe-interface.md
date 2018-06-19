@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727531"
 ---
 # <a name="idebugstackframe-interface"></a>Interfaccia IDebugStackFrame
 Rappresenta un frame di stack logico sullo stack di thread. Chiamare il `IDebugStackFrame::QueryInterface` per ottenere il `IDebugExpressionContext` interfaccia, che consente di espressione di valutazione ed espressioni di controllo di windows.  

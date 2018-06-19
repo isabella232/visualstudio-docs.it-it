@@ -1,13 +1,13 @@
 ---
 title: Funzione Math.Abs (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - abs
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - numeric expressions
 - abs method
 ms.assetid: 9af4b5b8-de77-47bb-bb59-abdde371e4c3
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638371"
 ---
 # <a name="mathabs-function-javascript"></a>Funzione Math.abs (JavaScript)
 Restituisce il valore assoluto di un numero (il valore senza considerare se è positivo o negativo). Ad esempio, il valore assoluto di -5 è lo stesso come il valore assoluto di 5.  

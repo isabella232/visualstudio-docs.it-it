@@ -1,13 +1,13 @@
 ---
 title: Previsto oggetto di espressione regolare | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5016
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632781"
 ---
 # <a name="regular-expression-object-expected"></a>Previsto un oggetto di espressione regolare
 Si è tentato di richiamare il **RegExp.prototype.toString** o **RegExp.prototype.valueOf** su un oggetto di un tipo diverso da `RegExp`. L'oggetto di questo tipo di chiamata deve essere di tipo `RegExp`.  

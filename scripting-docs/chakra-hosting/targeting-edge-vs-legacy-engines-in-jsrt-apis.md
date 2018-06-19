@@ -1,14 +1,14 @@
 ---
 title: Scelta del motore Edge o del motore Legacy come destinazione per le API JsRT | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569601"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Scelta del motore Edge o del motore Legacy come destinazione per le API JsRT
 A partire da Windows 10, una delle modifiche che sono state apportate a Chakra (il motore JavaScript), che è allineato con la strategia di browser di Windows 10 di supportare un nuovo motore di rendering Edge, consiste nel supportare due diversi motori di Chakra:  

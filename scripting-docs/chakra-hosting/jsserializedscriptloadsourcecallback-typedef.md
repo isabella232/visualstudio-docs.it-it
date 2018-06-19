@@ -1,13 +1,13 @@
 ---
 title: Typedef JsSerializedScriptLoadSourceCallback | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9406c488-76ac-49e5-b305-39751f3412ea
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568721"
 ---
 # <a name="jsserializedscriptloadsourcecallback-typedef"></a>Typedef JsSerializedScriptLoadSourceCallback
 Chiamata di runtime per caricare codice sorgente dello script serializzato.     Il chiamante deve mantenere il buffer dello script valido fino a `JsSerializedScriptUnloadCallback`.  

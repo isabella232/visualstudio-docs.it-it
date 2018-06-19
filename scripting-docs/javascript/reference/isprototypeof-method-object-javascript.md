@@ -1,13 +1,13 @@
 ---
 title: Metodo isPrototypeOf (Object) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - isPrototypeOf
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - isPrototypeOf method
 ms.assetid: 9c821319-c208-480f-915e-565ef6e017b6
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637381"
 ---
 # <a name="isprototypeof-method-object-javascript"></a>Metodo isPrototypeOf (Object) (JavaScript)
 Determina se un oggetto esiste nella catena di prototipi di un altro oggetto.  

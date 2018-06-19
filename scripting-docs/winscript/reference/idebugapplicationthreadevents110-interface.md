@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726271"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>Interfaccia IDebugApplicationThreadEvents110
 Aggiunge gli eventi di più thread. Questi eventi sono solo locali. Ovvero è possibile sottoscrivere li solo nel processo che viene eseguito il debug, usando il [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) di notifica e annullare gli avvisi per i metodi su oggetti di thread dell'applicazione PDM (oggetti che implementano [IDebugApplicationThread Interfaccia](../../winscript/reference/idebugapplicationthread-interface.md)). Si verificano nel thread di che provenienza.  

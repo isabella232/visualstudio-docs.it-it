@@ -1,13 +1,13 @@
 ---
 title: Operatore di assegnazione sottrazione (-) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - -=
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - -= operator [JavaScript]
 - assignment operators, JavaScript
 ms.assetid: a03adbd8-75fa-4633-80c5-f7215332a8ef
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640191"
 ---
 # <a name="subtraction-assignment-operator---javascript"></a>Operatore di assegnazione di sottrazione (-=) (JavaScript)
 Sottrae il valore di un'espressione da quello di una variabile e assegna il risultato alla variabile.  

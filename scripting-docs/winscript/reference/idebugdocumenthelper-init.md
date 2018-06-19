@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726321"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
 Il `Init` metodo inizializza un helper del documento di debug con un nome e attributi iniziali.  

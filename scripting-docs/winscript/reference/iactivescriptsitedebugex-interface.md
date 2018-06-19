@@ -1,16 +1,16 @@
 ---
 title: Interfaccia IActiveScriptSiteDebugEx | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IActiveScriptSiteDebugEx Interface
 ms.assetid: 76869378-1a7b-47bd-8cd0-acc31f91d58d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725041"
 ---
 # <a name="iactivescriptsitedebugex-interface"></a>Interfaccia IActiveScriptSiteDebugEx
 Implementare questa interfaccia con il `IActiveScriptSiteDebug` interfaccia se si sta scrivendo un host che è necessario ottenere una notifica di errore di run-time in un'applicazione e, facoltativamente, connettersi all'applicazione per il debug. Il processo di Debug Manager fornisce una notifica tramite `IActiveScriptDebug` se Just In Time debugger di script non viene trovato nel computer. Se il debugger di script non Just-In-Time viene trovato, PDM fornisce una notifica tramite `IActiveScriptDebugEx` invece.  

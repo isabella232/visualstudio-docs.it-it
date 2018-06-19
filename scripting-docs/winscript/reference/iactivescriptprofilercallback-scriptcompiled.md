@@ -1,16 +1,18 @@
 ---
 title: IActiveScriptProfilerCallback::ScriptCompiled | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerCallback.ScriptCompiled
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerCallback.ScriptCompiled
+apilocation:
+- scrobj.dll
 ms.assetid: 1bb8e9be-cbb1-4a61-b36c-805127a56ac7
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724701"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
 Notifica al profiler di oggetto che lo script del motore compilato uno script. Questo metodo viene chiamato per ogni script che viene compilato.  

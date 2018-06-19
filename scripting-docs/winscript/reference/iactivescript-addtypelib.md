@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640871"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Aggiunge una libreria dei tipi per lo spazio dei nomi per lo script. È simile al `#include` direttiva in C/C++. Consente a un set di elementi predefiniti, ad esempio le definizioni di classe, `typedefs`, denominato costanti da aggiungere all'ambiente di runtime disponibile per lo script.  

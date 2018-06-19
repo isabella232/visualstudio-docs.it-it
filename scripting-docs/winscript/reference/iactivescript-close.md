@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640971"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Fa sì che il motore di script per l'abbandono di tutti gli script caricati, perdono il proprio stato e rilasciare qualsiasi puntatori a interfaccia che dispone di altri oggetti, quindi immettere uno stato chiuso. Sink di evento, il testo script eseguito immediatamente e le chiamate alle macro che sono già in corso vengono completati prima i cambiamenti di stato (utilizzare [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread in esecuzione di script). Questo metodo deve essere chiamato dall'host di creazione prima che l'interfaccia viene rilasciata per evitare problemi relativi ai riferimenti circolari.  

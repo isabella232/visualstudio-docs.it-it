@@ -1,13 +1,13 @@
 ---
 title: Metodo Match (String) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - match
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Match method
 ms.assetid: eda9ad27-4f9b-4cb1-8345-a0ae85979ca0
-caps.latest.revision: 
+caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639371"
 ---
 # <a name="match-method-string-javascript"></a>Metodo match (String) (JavaScript)
 Corrisponde a una stringa con un'espressione regolare e restituisce una matrice contenente i risultati della ricerca.  

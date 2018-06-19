@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640641"
 ---
 # <a name="tolowercase-method-javascript"></a>Metodo toLowerCase (JavaScript)
 Converte tutti i caratteri alfabetici in una stringa in caratteri minuscoli.  

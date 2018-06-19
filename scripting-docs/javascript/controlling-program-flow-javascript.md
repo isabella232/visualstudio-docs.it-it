@@ -1,12 +1,13 @@
 ---
 title: Controllo del flusso di programma (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - break statement
 - control flow, about control flow
 ms.assetid: 4ef58c82-e5d6-4b09-9458-cf0aa3b39bf5
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569711"
 ---
 # <a name="controlling-program-flow-javascript"></a>Controllo del flusso di programma (JavaScript)
 In genere, le istruzioni in uno script di [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] vengono eseguite una dopo l'altra, nell'ordine di scrittura. Questo tipo di esecuzione viene definita sequenziale e rappresenta la direzione predefinita del flusso di programma.  

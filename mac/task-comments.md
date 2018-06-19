@@ -5,11 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: ca74c6429ed721a6c11bd71d024668cc695274e9
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 23ce804476b6495d45e114728b287c1f5f85d1d9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956637"
 ---
 # <a name="task-comments"></a>Commenti dell'attività
 
@@ -19,7 +20,7 @@ Quando si scrive codice, è prassi standard commentare esplicitamente il codice 
 
 Quando si aggiunge un nuovo commento di attività, includere la parola chiave dell'attività. Ad esempio:
 
-```
+```csharp
 //TODO: Finish this for all properties.
 ```
 

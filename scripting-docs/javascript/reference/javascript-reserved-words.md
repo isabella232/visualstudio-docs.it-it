@@ -1,13 +1,13 @@
 ---
 title: Parole riservate in JavaScript | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - reserved words
 ms.assetid: ab2c246c-99c7-4594-b598-c91909653e09
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637681"
 ---
 # <a name="javascript-reserved-words"></a>Parole riservate in JavaScript
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]un numero di parole riservate che non è possibile utilizzare come identificatori. Parole riservate hanno un significato specifico per il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] lingua, come fanno parte della sintassi del linguaggio. Utilizzando una parola riservata causa un errore di compilazione durante il caricamento dello script.  

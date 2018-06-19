@@ -1,12 +1,13 @@
 ---
-title: "Modalità strict (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Modalità strict (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1038
@@ -25,7 +26,7 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -34,6 +35,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569571"
 ---
 # <a name="strict-mode-javascript"></a>Modalità strict (JavaScript)
 La modalità strict consente di introdurre nel codice un migliore controllo degli errori. Quando si utilizza la modalità strict, non è possibile, ad esempio, utilizzare in modo implicito variabili dichiarate, assegnare un valore a una proprietà di sola lettura o aggiungere una proprietà a un oggetto non estendibile. Le restrizioni sono elencate nella sezione [Restrizioni sul codice in modalità strict](../../javascript/advanced/strict-mode-javascript.md#rest) più avanti in questo argomento. Per altre informazioni sulla modalità strict, vedere la [specifica del linguaggio ECMAScript, quinta edizione](http://www.ecma-international.org/publications/standards/Ecma-262.htm).  

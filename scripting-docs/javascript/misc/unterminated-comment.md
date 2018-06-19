@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633701"
 ---
 # <a name="unterminated-comment"></a>Commento senza terminazione
 Inizio di un blocco di commento su più righe, ma non lo è correttamente terminato. I commenti su più righe iniziano con una "/ *" combinazione e terminano con l'operazione inversa "\*/" combinazione. Di seguito è riportato un esempio:  

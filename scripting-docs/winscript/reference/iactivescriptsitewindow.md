@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725131"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
 Questa interfaccia viene implementata dagli host che supporta un'interfaccia utente per l'oggetto stesso come [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Gli host che non supportano l'interfaccia utente, ad esempio server, non implementare il `IActiveScriptSiteWindow` interfaccia. Il motore di script accede a questa interfaccia chiamando `QueryInterface` da `IActiveScriptSite`.  

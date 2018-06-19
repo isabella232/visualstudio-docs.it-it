@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641121"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>Enumerazione APPLICATION_NODE_EVENT_FILTER
 Specifica i tipi di nodi da escludere quando si filtrano i documenti di codice. Utilizzato [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) e [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  

@@ -1,13 +1,13 @@
 ---
 title: Funzione Math. ceil (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ceil
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - ceil method
 - Math object
 ms.assetid: 0dd456ac-bb40-4e18-862c-6c6f3bff0b9f
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638231"
 ---
 # <a name="mathceil-function-javascript"></a>Funzione Math.ceil (JavaScript)
 Restituisce l'intero minimo maggiore o uguale al relativo argomento numerico.  

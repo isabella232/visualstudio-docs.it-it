@@ -1,14 +1,16 @@
 ---
 title: Bit per bit NOT (operatore) (~) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: ~
+f1_keywords:
+- "~"
 dev_langs:
 - JavaScript
 - TypeScript
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - NOT operator
 - bitwise operators, NOT operator
 ms.assetid: 39f92474-fe05-4a8b-9ad8-caca93f82bca
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634261"
 ---
 # <a name="bitwise-not-operator--javascript"></a>Operatore NOT bit per bit (~) (JavaScript)
 Esegue un'operazione NOT bit per bit (negazione) su un'espressione.  

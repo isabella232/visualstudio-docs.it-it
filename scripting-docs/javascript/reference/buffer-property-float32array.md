@@ -1,19 +1,20 @@
 ---
-title: "Proprietà (Float32Array) buffer | Documenti Microsoft"
-ms.custom: 
+title: Proprietà (Float32Array) buffer | Documenti Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 07b341ae-f83b-44ea-ad84-d5736eb51ec4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633351"
 ---
 # <a name="buffer-property-float32array"></a>Proprietà buffer (Float32Array)
 Sola lettura. Ottiene l'oggetto ArrayBuffer a cui la matrice fa riferimento.  

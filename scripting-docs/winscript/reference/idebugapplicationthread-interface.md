@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725951"
 ---
 # <a name="idebugapplicationthread-interface"></a>Interfaccia IDebugApplicationThread
 Consente di motori di linguaggio e host per fornire la sincronizzazione dei thread e per mantenere informazioni sullo stato di debug specifico del thread. Questa interfaccia estende il `IRemoteDebugApplicationThread` interfaccia per fornire l'accesso non remoti per il thread.  

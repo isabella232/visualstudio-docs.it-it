@@ -1,13 +1,13 @@
 ---
-title: "numero di proprietà (errore) (JavaScript) | Documenti Microsoft"
-ms.custom: 
+title: numero di proprietà (errore) (JavaScript) | Documenti Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Number
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Number property
 ms.assetid: 8697e20b-a2b0-4e26-85c0-ab07ddfe8281
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639101"
 ---
 # <a name="number-property-error-javascript"></a>Proprietà number (Error) (JavaScript)
 Restituisce o imposta il valore numerico associato a un errore specifico. Il `Error` proprietà predefinita dell'oggetto è **numero**.  

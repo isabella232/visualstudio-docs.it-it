@@ -18,6 +18,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24623711"
 ---
 > [!NOTE]
 >  In [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], è possibile connettersi a un database di SQL Server da uno **Esplora oggetti di SQL Server** o **connessioni dati** nodo **Esplora Server**. **Esplora oggetti di SQL Server** fornisce una visualizzazione simile a SQL Server Management Studio. Per aprirlo dalla barra dei menu, scegliere **vista**, **Esplora oggetti di SQL Server**. Per ulteriori informazioni, vedere [sviluppo del Database connesso](http://go.microsoft.com/fwlink/?LinkId=233646).

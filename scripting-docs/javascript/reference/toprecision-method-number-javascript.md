@@ -1,13 +1,13 @@
 ---
 title: Metodo toPrecision (Number) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toPrecision
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toPrecision method
 ms.assetid: ac13c82f-1038-447a-823f-f755bba535ca
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640721"
 ---
 # <a name="toprecision-method-number-javascript"></a>Metodo toPrecision (Number) (JavaScript)
 Rappresenta un numero in notazione esponenziale o a virgola fissa con un numero di cifre specificato.  

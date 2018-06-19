@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724891"
 ---
 # <a name="iactivescriptstringcompare-interface"></a>Interfaccia IActiveScriptStringCompare
 Il `IActiveScriptCompare` interfaccia viene utilizzata per definire il metodo di confronto di stringhe per il motore di script.  
