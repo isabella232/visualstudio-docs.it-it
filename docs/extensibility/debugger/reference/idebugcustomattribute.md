@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107764"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Questa interfaccia rappresenta un attributo personalizzato può fornire il nome, un padre e il tipo di classe dell'attributo.  

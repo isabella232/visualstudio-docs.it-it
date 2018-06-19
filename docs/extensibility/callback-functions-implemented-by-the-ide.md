@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109688"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funzioni di callback implementate dall'IDE
 Per rendere l'integrazione con l'ambiente di sviluppo integrato (IDE) come trasparente come possibili e per fornire un'esperienza unificata per l'utente finale, il plug-in controllo del codice sorgente possa utilizzare funzioni di callback che vengono implementate dall'IDE. Il plug-in può chiamare queste funzioni in momenti appropriati durante un'operazione di controllo del codice sorgente per passare informazioni a IDE; l'IDE quindi possibile visualizzare queste informazioni come gli elementi incorporati nell'interfaccia utente nativa. L'utente avrà un'esperienza meno frammentata in questo scenario rispetto a se il plug-in utilizzati la propria interfaccia utente.  

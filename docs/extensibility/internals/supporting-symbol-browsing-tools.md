@@ -26,6 +26,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134591"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Supporto di strumenti di esplorazione di simbolo
 **Visualizzatore oggetti-**, **Visualizzazione classi**, **Visualizzatore chiamate** e **risultati ricerca simbolo** tools fornire un simbolo di esplorazione delle funzionalità in Visual Studio. Questi strumenti visualizzazioni struttura ad albero gerarchica dei simboli e mostrano le relazioni tra i simboli nella struttura. I simboli possono rappresentare gli spazi dei nomi, gli oggetti, classi, membri della classe e altri elementi del linguaggio contenuti nei vari componenti. I componenti includono i progetti di Visual Studio, esterni [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] componenti e le librerie dei tipi (tlb). Per altre informazioni, vedere [Viewing the Structure of Code](../../ide/viewing-the-structure-of-code.md) (Visualizzazione della struttura del codice).  

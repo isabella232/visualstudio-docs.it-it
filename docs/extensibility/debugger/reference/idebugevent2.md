@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111206"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Questa interfaccia viene utilizzata per comunicare le informazioni di debug critici, ad esempio l'interruzione in corrispondenza di un punto di interruzione sia le informazioni non critiche, ad esempio un messaggio di debug.  

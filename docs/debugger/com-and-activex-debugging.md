@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468431"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
 In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.  

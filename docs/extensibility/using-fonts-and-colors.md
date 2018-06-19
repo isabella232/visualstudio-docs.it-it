@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141210"
 ---
 # <a name="using-fonts-and-colors"></a>Utilizzo di tipi di carattere e colori
 Il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornisce il supporto per l'utilizzo di tipi di carattere e colori per visualizzare il testo.  

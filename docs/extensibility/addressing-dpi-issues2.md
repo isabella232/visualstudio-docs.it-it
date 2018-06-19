@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108443"
 ---
 # <a name="addressing-dpi-issues"></a>Risolvere i problemi DPI
 Un numero crescente di dispositivi è distribuiti con schermate "ad alta risoluzione". Queste schermate vengono visualizzate in genere sono più di 200 pixel per pollice (PPID). Utilizzo di un'applicazione in questi computer richiederà il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire da 2014, la destinazione principale per gli schermi ad alta densità è mobile computing dispositivi (telefoni, Tablet e portatili conchiglia).  

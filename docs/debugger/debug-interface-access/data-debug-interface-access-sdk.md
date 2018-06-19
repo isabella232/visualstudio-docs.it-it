@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468372"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dati (Debug Interface Access SDK)
 Tutte le variabili, ad esempio parametri, variabili locali, le variabili globali e i membri di classe, vengono identificate da `SymTagData` simboli. Valori costanti (`LocIsConstant`) vengono anche identificati con questo tipo.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468077"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 Recupera un flag che specifica se è presente il puntatore ai frame. Utilizzo di [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) è impostato su `SymTagFunction`.  

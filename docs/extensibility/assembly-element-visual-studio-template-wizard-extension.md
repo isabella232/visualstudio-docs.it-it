@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109611"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento Assembly (estensione della Creazione guidata modelli di Visual Studio)
 Specifica il nome o un nome sicuro dell'assembly che implementa il `IWizard` interfaccia.  

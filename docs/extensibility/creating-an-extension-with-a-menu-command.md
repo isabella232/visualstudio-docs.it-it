@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108154"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creazione di un'estensione con un comando di Menu
 Questa procedura dettagliata viene illustrato come creare un'estensione con un comando di menu che consente di avviare Blocco note.  

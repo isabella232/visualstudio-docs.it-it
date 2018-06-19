@@ -27,6 +27,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899355"
 ---
 # <a name="annotating-function-behavior"></a>Annotazione del comportamento delle funzioni
 Oltre ad annotare [i parametri di funzione e restituire valori](../code-quality/annotating-function-parameters-and-return-values.md), è possibile annotare le proprietà dell'intera funzione.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119559"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Questa interfaccia consente a un motore di debug (DE) o fornitori di porta personalizzato per registrare i programmi per il debug.  

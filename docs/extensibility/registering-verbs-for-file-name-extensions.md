@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138106"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrazione dei verbi per estensioni di File
 L'associazione di un'estensione di file con un'applicazione è in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Questo preferibile utilizzare l'azione è collegata a un verbo, ad esempio aperto, che corrisponde all'azione.  

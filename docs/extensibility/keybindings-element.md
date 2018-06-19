@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141415"
 ---
 # <a name="keybindings-element"></a>Tasti di scelta rapida elemento
 Gli elementi KeyBinding di tasti di scelta rapida elemento gruppi e altri raggruppamenti di tasti di scelta rapida.  

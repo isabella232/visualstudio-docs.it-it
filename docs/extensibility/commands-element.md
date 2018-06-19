@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108482"
 ---
 # <a name="commands-element"></a>Elemento Commands
 Rappresenta la raccolta di comandi sulla barra degli strumenti di VSPackage. La raccolta può avere fino a cinque sezioni, come indicato di seguito: menu, gruppi, i pulsanti, casella combinata e bitmap.  

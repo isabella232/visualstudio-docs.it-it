@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141034"
 ---
 # <a name="vstextbuffer-object"></a>Oggetto VSTextBuffer
 L'oggetto TextBuffer rappresenta un flusso di testo Unicode, che in genere è associato un file. Oggetto <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto può essere utilizzato all'esterno del contesto dell'editor di componenti di base, come nel caso di una procedura guidata.  

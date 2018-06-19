@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135857"
 ---
 # <a name="migrating-a-legacy-language-service"></a>La migrazione di un servizio di linguaggio Legacy
 È possibile eseguire la migrazione di un servizio di linguaggio legacy a una versione successiva di Visual Studio l'aggiornamento del progetto e l'aggiunta di un file vsixmanifest al progetto. Il servizio di linguaggio stesso continuerà a funzionare come prima, poiché l'editor di Visual Studio consente di adattare il.  

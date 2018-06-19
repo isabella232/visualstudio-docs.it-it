@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108838"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 Utilizzata per impostare i punti di interruzione di codice in base a una stringa che l'utente può immettere dall'ambiente di sviluppo integrato (IDE).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140469"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio Command Table (. File Vsct)
 Un file di configurazione di tabella comandi è un file di testo che descrive il set di comandi che contiene un pacchetto VSPackage. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando compilatore tabella (VSCT) compila il file di configurazione basato su XML (file con estensione vsct) in file di output (CTO) nella tabella di comando binary. I file CTO risultanti sono gli stessi di quelli che vengono creati utilizzando il compilatore di tabella (CTC) del comando per compilare i file di configurazione CTC. Tuttavia, il file vsct basato su XML presenta alcuni vantaggi, ad esempio un editor XML e IntelliSense XML.  

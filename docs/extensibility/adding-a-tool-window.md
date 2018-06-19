@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107881"
 ---
 # <a name="adding-a-tool-window"></a>Aggiunta di una finestra degli strumenti
 In questa procedura dettagliata imparare a creare una finestra degli strumenti e integrarlo in Visual Studio nei modi seguenti:  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108141"
 ---
 # <a name="creating-an-options-page"></a>Creazione di una pagina di opzioni
 Questa procedura dettagliata crea una pagina di opzioni semplice che utilizza una griglia delle proprietà per esaminare e impostare le proprietà.  

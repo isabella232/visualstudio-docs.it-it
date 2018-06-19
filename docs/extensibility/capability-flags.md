@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108388"
 ---
 # <a name="capability-flags"></a>Flag di capacità
 Il SCC_CAP_*xxx* flag sono flag di bit utilizzati per indicare le funzionalità di un plug-in controllo del codice sorgente. Il SCC_EXCAP_*xxx* flag sono incrementali flag che indicano funzionalità estese e risolvere in valori integer.  

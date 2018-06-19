@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109805"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Valutazione dell'espressione (Visual Studio Debugging SDK)
 Modalità di interruzione, l'IDE deve essere in grado di valutare le espressioni semplici che interessa diverse variabili del programma. A tale scopo, il motore di debug (DE) deve essere in grado di analizzare e valutare un'espressione che viene immesso in una delle finestre dell'IDE.  

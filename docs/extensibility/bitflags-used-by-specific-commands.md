@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108786"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit utilizzati dai comandi specifici
 Il comportamento di un numero di funzioni nell'API di plug-in del controllo origine può essere modificato impostando uno o più bit in un singolo valore. Questi valori sono noti come flag di bit. Il flag di bit diversi usato dall'API plug-in controllo di origine sono descritte in dettaglio in questo caso, raggruppati per la funzione in cui vengono utilizzati.  
