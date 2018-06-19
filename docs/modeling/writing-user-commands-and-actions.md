@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965177"
 ---
 # <a name="writing-user-commands-and-actions"></a>Scrittura di azioni e comandi utente
 È possibile personalizzare un linguaggio specifico di dominio aggiungendo comandi al diagramma e rispondendo a movimenti quali gli eventi di trascinamento della selezione, scelta e doppio clic.

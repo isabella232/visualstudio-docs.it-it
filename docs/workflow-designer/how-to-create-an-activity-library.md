@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974044"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedura: creare una libreria attività
 Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello libreria di attività in Visual Studio 2010 è stato specificato per consentire la creazione di tali attività personalizzate usando visivamente la finestra di progettazione del flusso di lavoro di Windows.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143319"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Procedura dettagliata: Visualizzazione di parentesi graffe corrispondenti
 È possibile implementare funzionalità basate sul linguaggio, come parentesi graffa corrispondente definendo le parentesi graffe che deve corrispondere e quindi aggiungere un tag dell'indicatore di testo le parentesi graffe corrispondenti quando il punto di inserimento si trova su una delle parentesi graffe. È possibile definire le parentesi graffe all'interno di una lingua, è possibile definire il tipo di estensione e il contenuto di nome file e applicare i tag per quel tipo o è possibile applicare i tag a un tipo di contenuto esistente (ad esempio "text"). La procedura dettagliata seguente viene illustrato come applicare i tag per il tipo di contenuto "text" corrispondenza parentesi graffe.  

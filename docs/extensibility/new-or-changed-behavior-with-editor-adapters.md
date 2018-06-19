@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148662"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento nuovo o modificato con schede dell'Editor
 Se si sta aggiornando il codice che è stato scritto in versioni precedenti di editor di componenti di base di Visual Studio e si prevede di utilizzare l'editor schede (o shim) invece di usare la nuova API, è necessario essere consapevoli delle seguenti differenze nel comportamento delle schede di editor rispetto all'editor principale precedente.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471021"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API di estensibilità del riepilogo file dump
 Utilizzando le API di estensibilità in questa sezione, è possibile estendere il. Sistema di progetto exe e **riepilogo Dump** pagina per l'utilizzo con il proprio motore di debug personalizzato.  

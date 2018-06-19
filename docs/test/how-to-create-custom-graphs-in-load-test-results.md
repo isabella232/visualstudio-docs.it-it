@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965125"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedura: creare grafici personalizzati nei risultati del test di carico
 

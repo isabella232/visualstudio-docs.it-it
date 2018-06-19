@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464703"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Recupera un flag che specifica se il simbolo dei dati fa parte di una funzione di aggregazione o una raccolta di simboli. il compilatore considererà i simboli aggregati come entità distinte, ma davvero fanno parte di un singolo simbolo di dimensioni maggiore.  

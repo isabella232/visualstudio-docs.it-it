@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725411"
 ---
 # <a name="iapplicationdebugger-interface"></a>Interfaccia IApplicationDebugger
 L'interfaccia primaria esposto da un debugger. Oltre ai metodi ereditati da `IUnknown`, `IApplicationDebugger` interfaccia espone i metodi seguenti.  

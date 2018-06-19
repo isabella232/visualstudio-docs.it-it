@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727571"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
 Restituisce un visualizzatore di proprietà che esegue il wrapping di una variante e consente la conversione dei valori di variante o tipi VARTYPE personalizzata alle stringhe.  

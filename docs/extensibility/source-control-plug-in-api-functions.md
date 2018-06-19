@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144369"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funzioni API plug-in controllo di origine
 L'API di plug-in controllo di origine fornisce le funzioni seguenti, che devono essere implementate per il controllo del codice sorgente plug-in base a questa API. Le firme di ogni funzione e la semantica associata con il flag di bit e altri parametri sono descritti in dettaglio in questo riferimento.  
@@ -85,7 +86,7 @@ L'API di plug-in controllo di origine fornisce le funzioni seguenti, che devono 
 ## <a name="requirements"></a>Requisiti  
  Intestazione: scc.h  
   
- (Fornito nel SDK di ambiente comuni include cartelle, per impostazione predefinita *[unità]*8.0\EnvSDK\common\inc \Program Files\VSIP; fornire anche nella cartella VSIP con l'esempio MSSCCI, *[unità]*\Programmi. Files\VSIP 8.0\MSSCCI).  
+ (Fornito nel SDK di ambiente comuni include cartelle, per impostazione predefinita *[unità]* 8.0\EnvSDK\common\inc \Program Files\VSIP; fornire anche nella cartella VSIP con l'esempio MSSCCI, *[unità]* \Programmi. Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Plug-in del controllo codice sorgente](../extensibility/source-control-plug-ins.md)   

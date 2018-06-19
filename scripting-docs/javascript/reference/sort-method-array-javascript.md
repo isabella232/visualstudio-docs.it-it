@@ -1,13 +1,13 @@
 ---
 title: Metodo Sort (Array) (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sort
@@ -25,6 +25,7 @@ ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/05/2018
+ms.locfileid: "28987815"
 ---
 # <a name="sort-method-array-javascript"></a>Metodo sort (Array) (JavaScript)
 Ordina un `Array`.  

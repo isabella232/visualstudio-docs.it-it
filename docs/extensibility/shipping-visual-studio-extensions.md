@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142754"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione di estensioni di Visual Studio
 Dopo aver completato lo sviluppo dell'estensione, installarlo in altri computer, condividerle con colleghi e amici o pubblicarla in Visual Studio Marketplace. In questa sezione è spiegare tutte le operazioni necessarie per pubblicare e gestire l'estensione: utilizzo di file. VSIX, pubblicazione, localizzazione e l'aggiornamento.  

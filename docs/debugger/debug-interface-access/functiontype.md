@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465886"
 ---
 # <a name="functiontype"></a>FunctionType
 Ogni firma della funzione univoco è identificato da un `SymTagFunctionType` simbolo. Ogni parametro viene identificato come un simbolo di classe figlio con un `SymTagFunctionArgType` tag.  

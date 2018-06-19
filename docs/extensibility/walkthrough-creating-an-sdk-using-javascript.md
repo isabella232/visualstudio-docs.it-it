@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144216"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Procedura dettagliata: Creazione di un SDK tramite JavaScript
 Questa procedura dettagliata viene illustrato come utilizzare JavaScript per creare un SDK come un Visual Studio Extension (VSIX) semplici operazioni matematiche.  La procedura dettagliata è suddivisa nelle parti seguenti:  
@@ -33,7 +34,7 @@ Questa procedura dettagliata viene illustrato come utilizzare JavaScript per cre
   
 1.  Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2.  Nell'elenco di categorie dei modelli, in **Visual c#**selezionare **estendibilità**, quindi selezionare il **progetto VSIX** modello.  
+2.  Nell'elenco di categorie dei modelli, in **Visual c#** selezionare **estendibilità**, quindi selezionare il **progetto VSIX** modello.  
   
 3.  Nel **nome** testo specificare `SimpleMathVSIX` e scegliere il **OK** pulsante.  
   

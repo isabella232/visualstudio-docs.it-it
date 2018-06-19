@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031182"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Ricerca e filtro dei sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e varie altre informazioni. 

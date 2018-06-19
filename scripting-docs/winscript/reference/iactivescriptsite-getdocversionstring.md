@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724541"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Recupera una stringa definita dall'host che identifica in modo univoco la versione del documento corrente. Se il documento correlato è stato modificato all'esterno dell'ambito dello Script di Windows (come nel caso di una pagina HTML modificato con il blocco note), il motore di script può salvare questo oltre allo stato persistente, forzare una ricompilazione al successivo che caricamento dello script.  

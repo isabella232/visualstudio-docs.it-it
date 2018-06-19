@@ -1,13 +1,13 @@
 ---
 title: Operatori (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, operators
 ms.assetid: b8602b69-aba9-46e8-86e1-cb533ad41410
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753271"
 ---
 # <a name="operators-javascript"></a>Operatori (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] offre una gamma completa di operatori aritmetici, logici, bit per bit, di assegnazione e misti. Per le descrizioni e gli esempi d'uso vedere gli argomenti relativi ai singoli operatori.  

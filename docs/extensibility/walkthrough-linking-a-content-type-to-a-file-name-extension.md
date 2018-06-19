@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144895"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File
 È possibile definire il tipo di contenuto e collegare un'estensione di file utilizzando le estensioni di editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione del nome file è già stato definito da un servizio di linguaggio. Tuttavia, per utilizzarlo con MEF è ancora necessario collegarlo a un tipo di contenuto.  

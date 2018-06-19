@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142789"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struttura VSPackage (origine controllo VSPackage)
 Origine controllo pacchetto SDK fornisce indicazioni per la creazione di un VSPackage che consentono a un implementatore di controllo di origine per integrare la propria funzionalità di controllo di origine con il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente. Un VSPackage è un componente COM che in genere viene caricato su richiesta per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) in base ai servizi che vengono annunciati dal pacchetto in relative voci del Registro di sistema. Ogni pacchetto VSPackage deve implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Un VSPackage in genere utilizza i servizi offerti dal [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE e proffers alcuni servizi propri.  

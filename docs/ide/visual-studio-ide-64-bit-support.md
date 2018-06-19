@@ -18,6 +18,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425738"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Supporto a 64 bit per l'IDE di Visual Studio
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969644"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procedura: utilizzare l'API del test di carico
 

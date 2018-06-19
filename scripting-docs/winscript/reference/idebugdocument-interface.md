@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725751"
 ---
 # <a name="idebugdocument-interface"></a>Interfaccia IDebugDocument
 L'interfaccia di base per tutti i documenti di debug.  

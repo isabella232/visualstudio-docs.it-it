@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971545"
 ---
 # <a name="runtime-activity-designers"></a>ActivityDesigner Runtime
 Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e terminare le attività del flusso di lavoro. Gli argomenti contenuti in questa sezione forniscono istruzioni su come usare le finestre di progettazione di attività di progettazione flussi di lavoro.

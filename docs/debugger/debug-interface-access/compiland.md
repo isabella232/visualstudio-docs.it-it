@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457839"
 ---
 # <a name="compiland"></a>Compilando
 È presente `SymTagCompiland` simbolo per ogni modulo collegato al file .exe. Informazioni di modulo viene suddiviso tra i simboli con un `SymTagCompiland` tag, che può essere recuperato senza caricare i simboli compilando aggiuntive, i simboli con un `SymTagCompilandDetails` tag, che potrebbe richiedere il caricamento dei simboli aggiuntivi.  

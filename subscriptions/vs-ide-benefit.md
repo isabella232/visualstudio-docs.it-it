@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31197841"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Uso del vantaggio di Visual Studio 2017
 

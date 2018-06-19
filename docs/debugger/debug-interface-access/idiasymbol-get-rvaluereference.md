@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31469162"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 Recupera un flag che specifica se un tipo di puntatore è un riferimento rvalue. Utilizzo di [SymTagEnum (enumerazione)](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo di puntatore.  

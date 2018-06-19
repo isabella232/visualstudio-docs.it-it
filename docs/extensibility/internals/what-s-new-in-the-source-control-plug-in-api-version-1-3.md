@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145009"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Novità&#39;s nuove nell'origine di controllo del plug-in API versione 1.3
 L'API di plug-in controllo origine versione 1.3 introduce le nuove funzioni seguenti per fornire un controllo più avanzata.  

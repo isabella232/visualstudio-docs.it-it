@@ -1,19 +1,20 @@
 ---
 title: Funzione Promise. race (Promise) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9236eced-d313-4d03-8c3e-d89d762b3084
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2018
+ms.locfileid: "27782672"
 ---
 # <a name="promiserace-function-promise"></a>Funzione Promise.race (Promise)
 Crea una nuova promessa che sarà risolta o rifiutata con lo stesso valore dei risultati della prima promessa da risolvere o rifiutare tra gli argomenti passati.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145035"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject (funzione)
 Questa funzione crea un sottoprogetto con il nome specificato in un progetto padre esistente specificato per il `lpParentProjPath` argomento.  

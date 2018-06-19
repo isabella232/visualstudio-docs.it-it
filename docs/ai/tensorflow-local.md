@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708933"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Eseguire il training di un modello TensorFlow in locale
 

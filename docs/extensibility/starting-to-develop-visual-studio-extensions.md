@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144463"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Iniziando a sviluppare estensioni di Visual Studio
 Se è mai stata scritta un'estensione di Visual Studio prima di, è probabile che alcune domande. È stata elencate alcune di quelle più comuni. Se le informazioni che si sta cercando non viene visualizzato, utilizzare i pulsanti di commenti e suggerimenti (**questa pagina è stata utile?** nella parte inferiore dello schermo) per chiedere a quello desiderato.  

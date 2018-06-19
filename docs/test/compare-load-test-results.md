@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966367"
 ---
 # <a name="reporting-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Creazione di rapporti sui risultati dei test di carico per confronti tra test o analisi delle tendenze
 

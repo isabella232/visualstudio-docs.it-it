@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143898"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: struttura
 È possibile implementare una funzionalità basata su linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, è possibile definire il tipo di estensione e il contenuto di nome file e applicare la definizione dell'area a solo a quel tipo o è possibile applicare le definizioni di area per un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata viene illustrato come definire e visualizzare le aree della struttura.  

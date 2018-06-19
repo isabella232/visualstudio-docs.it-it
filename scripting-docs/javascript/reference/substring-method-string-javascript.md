@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640931"
 ---
 # <a name="substring-method-string-javascript"></a>Metodo substring (String) (JavaScript)
 Restituisce la sottostringa nella posizione specificata all'interno di un `String` oggetto.  
@@ -52,7 +53,7 @@ Restituisce la sottostringa nella posizione specificata all'interno di un `Strin
 ## <a name="remarks"></a>Note  
  Il `substring` metodo restituisce una stringa che contiene la sottostringa `start` backup, ma non include, `end`.  
   
- Il **sottostringa** viene utilizzato il valore minore di `start` e `end` come punto iniziale della sottostringa. Ad esempio, strvar.substring (0, 3**)** e strvar.substring (3, 0) restituiscono la stessa sottostringa.  
+ Il **sottostringa** viene utilizzato il valore minore di `start` e `end` come punto iniziale della sottostringa. Ad esempio, strvar.substring (0, 3 **)** e strvar.substring (3, 0) restituiscono la stessa sottostringa.  
   
  Se il valore `start` o `end` è `NaN` o negativo, viene sostituito con zero.  
   

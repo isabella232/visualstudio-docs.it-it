@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144882"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornisce il supporto di annullamento per le finestre di progettazione
 Finestre di progettazione, ad esempio editor, in genere necessario supportare le operazioni di annullamento in modo che gli utenti possono invertire le modifiche apportate di recente quando si modifica un elemento di codice.  

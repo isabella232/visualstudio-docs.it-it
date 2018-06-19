@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977115"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Esempio di progetto per creare un adattatore dati di diagnostica
 

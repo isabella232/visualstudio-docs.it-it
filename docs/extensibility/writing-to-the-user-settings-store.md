@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145412"
 ---
 # <a name="writing-to-the-user-settings-store"></a>La scrittura nell'archivio impostazioni utente
 Le impostazioni utente siano scrivibili impostazioni come quelli nel **Strumenti / opzioni** finestra di dialogo, finestre delle proprietà e altre finestre di dialogo. Estensioni di Visual Studio possono utilizzarli per archiviare piccole quantità di dati. Questa procedura dettagliata viene illustrato come aggiungere il blocco note di Visual Studio come uno strumento esterno dalla lettura e scrittura nell'archivio impostazioni utente.  

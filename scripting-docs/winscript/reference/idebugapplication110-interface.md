@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726061"
 ---
 # <a name="idebugapplication110-interface"></a>Interfaccia IDebugApplication110
 Il `IDebugApplication110` interfaccia estende la funzionalità del [interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md). È possibile ottenere un'istanza di questa interfaccia tramite la chiamata QueryInterface su un'implementazione di [interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md).  

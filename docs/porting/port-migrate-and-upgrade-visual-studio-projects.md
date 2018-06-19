@@ -24,6 +24,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032203"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Riferimento alla migrazione e all'aggiornamento di un progetto per Visual Studio 2017
 

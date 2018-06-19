@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031348"
 ---
 # <a name="django-web-project-template"></a>Modello di progetto Web Django
 

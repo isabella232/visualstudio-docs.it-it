@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641501"
 ---
 # <a name="tolocaletimestring-method-date-javascript"></a>Metodo toLocaleTimeString (Date) (JavaScript)
 Restituisce un'ora come valore di stringa appropriato alle impostazioni locali correnti dell'ambiente host o impostazioni locali specificate.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143527"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Quando l'utente esegue un'operazione di controllo codice sorgente all'interno dell'ambiente di sviluppo integrato (IDE), il plug-in controllo del codice sorgente può essere opportuno trasmettere i messaggi di stato o di errore relativi al funzionamento. Il plug-in può visualizzare finestre di messaggio per questo scopo. Tuttavia, per più di integrazione, il plug-in può passi le stringhe dell'IDE, quindi li visualizza in modo nativo per la visualizzazione di informazioni sullo stato. Il meccanismo per questo è il `LPTEXTOUTPROC` puntatore a funzione. L'IDE implementa questa funzione (descritta in dettaglio più avanti) per la visualizzazione di errore e stato.  

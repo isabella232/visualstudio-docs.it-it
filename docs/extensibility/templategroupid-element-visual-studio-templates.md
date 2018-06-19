@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144437"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelli di Visual Studio)
 Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento. Questo elemento è significativo quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `false`. Quando [ShowByDefault (modelli di Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) è impostato su `true`, un modello di elemento è disponibile in tutti i tipi di progetto.  
@@ -58,7 +59,7 @@ Specifica il tipo di progetto in cui verranno visualizzati i modelli di elemento
 ## <a name="remarks"></a>Note  
  `TemplateGroupID` è un elemento.  
   
- Il valore di `TemplateGroupID` elemento viene utilizzato la registrazione del sistema del progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numero di versione >*\Projects\\) per filtrare i modelli visualizzati nel **Aggiungi nuovo elemento** la finestra di dialogo.  
+ Il valore di `TemplateGroupID` elemento viene utilizzato la registrazione del sistema del progetto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<numero di versione >* \Projects\\) per filtrare i modelli visualizzati nel **Aggiungi nuovo elemento** la finestra di dialogo.  
   
 |Valore di Visual C++|Significato|  
 |------------------------|-------------|  

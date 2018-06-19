@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147581"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Procedura dettagliata: Creazione di un SDK tramite C++
 Questa procedura dettagliata viene illustrato come creare una libreria C++ nativa matematiche SDK, pacchetto SDK come un Visual Studio Extension (VSIX) e quindi utilizzarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:  

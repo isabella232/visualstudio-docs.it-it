@@ -1,12 +1,13 @@
 ---
 title: Funzione Object. Create (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - create function [JavaScript]
 - Object.create function [JavaScript]
 ms.assetid: 0ad31f36-a9ee-444e-b0fe-c87843d03196
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640481"
 ---
 # <a name="objectcreate-function-javascript"></a>Funzione Object.create (JavaScript)
 Crea un oggetto che ha il prototipo specificato e che contiene facoltativamente le proprietà specificate.  

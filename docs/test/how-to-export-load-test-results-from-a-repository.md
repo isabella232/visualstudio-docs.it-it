@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969629"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Procedura: esportare i risultati di un test di carico da un repository
 

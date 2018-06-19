@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148737"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento di valore di colore per Visual Studio
 In questo argomento è un riferimento per la creazione di nuovi token di colore. Quando si crea la nuova interfaccia utente, è possibile utilizzare colori simili nell'interfaccia utente esistente per scegliere i colori per ogni tema principale e il nome del colore di sistema per questo elemento per i temi di contrasto elevato. 

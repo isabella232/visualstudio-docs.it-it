@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725051"
 ---
 # <a name="iactivescriptstats-interface"></a>Interfaccia IActiveScriptStats
 Consente a un host eseguire una query le statistiche di esecuzione di script. L'host può utilizzare queste informazioni per determinare se uno script ha richiesto troppo tempo per completare.  

@@ -1,19 +1,20 @@
 ---
 title: Funzione Object. getownpropertysymbols (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 68dd69b9-5a33-44c2-ba5f-21a4ae6c0879
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: abae48f476832f79cc2c5bac43bb1226d3fe4e48
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/16/2018
+ms.locfileid: "27814960"
 ---
 # <a name="objectgetownpropertysymbols-function-javascript"></a>Funzione Object.getOwnPropertySymbols (JavaScript)
 Restituisce le proprietà di simboli propri di un oggetto. Le proprietà di simboli propri di un oggetto sono le proprietà definite direttamente sull'oggetto stesso e non ereditate dal prototipo dell'oggetto.  

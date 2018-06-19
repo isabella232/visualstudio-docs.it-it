@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458245"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Finestra di dialogo Seleziona punti di interruzione
 Il **Seleziona punti di interruzione** la finestra di dialogo viene visualizzata quando si tenta di impostare un punto di interruzione da un input ambiguo nel **nuovo punto di interruzione** la finestra di dialogo. Un esempio comune di input ambiguo è un nome di funzione in overload.  

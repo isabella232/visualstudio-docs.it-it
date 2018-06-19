@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32064074"
 ---
 # <a name="talk-to-us"></a>Comunicazioni con Microsoft
 Microsoft è interessata alle idee degli utenti per migliorare i prodotti e la documentazione. Non possiamo sempre rispondere personalmente, ma ci assicureremo che commenti e suggerimenti vengano inviati alla persona o al team appropriato.  

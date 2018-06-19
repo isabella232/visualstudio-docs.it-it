@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148649"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimento di Schema 2.0 estensione VSIX
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato di file non sia disciplinato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di attributi e tipi personalizzati.  Lo schema del manifesto è estensibile. Il caricatore di manifesto ignora gli elementi XML e gli attributi che non riconosce.  

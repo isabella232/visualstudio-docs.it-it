@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973294"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procedura: creare una libreria del flusso di lavoro di macchina a stati (legacy)
 
