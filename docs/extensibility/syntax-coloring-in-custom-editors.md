@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139461"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Sintassi colorazione nell'editor personalizzati
 Editor di Visual Studio SDK di ambiente, incluso l'editor di componenti di base, utilizzare servizi di linguaggio per identificare elementi sintattici specifici e visualizzarli con i colori specificati per la visualizzazione di un documento specificato.

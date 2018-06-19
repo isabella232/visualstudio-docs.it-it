@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141942"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Utilizzo degli indicatori di testo con l'API Legacy
 Un indicatore di testo è un intervallo di testo in un buffer che può influenzare la visualizzazione a virgola mobile e il comportamento di un'area di testo. Marcatori di includono i punti di interruzione, segnalibri, sottolineature ondulate di colore e le aree di sola lettura. I marcatori di testo sono fondamentalmente diversi da colorazione della sintassi. La colorazione della sintassi è un modo rapido per comunicare la sintassi del linguaggio che è associata a un'area di testo. La colorazione della sintassi in genere è richiesta quando Windows ridisegna la schermata, quando la velocità è importante. La colorazione della sintassi cambia solo il colore del testo. Marcatori di testo è possono modificare molte altre proprietà di testo. Marcatori di testo è possono "float" e applicare un comportamento speciale e la colorazione.  

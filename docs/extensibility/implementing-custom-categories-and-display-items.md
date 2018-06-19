@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134883"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementazione di elementi visualizzati e categorie personalizzate
 Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del testo per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) tramite le categorie personalizzate e di elementi visualizzati.
@@ -47,7 +48,7 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 
 ## <a name="to-create-or-identify-categories"></a>Per creare o identificare categorie
 
--   Creare un tipo speciale di voce del Registro di sistema categoria [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\`<Category>`]
+-   Creare un tipo speciale di voce del Registro di sistema categoria [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\`<Category>`]
 
      *\<Categoria >* è il nome non localizzato della categoria.
 
@@ -62,7 +63,7 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 
 ## <a name="to-create-or-identify-groups"></a>Per creare o identificare i gruppi
 
--   Creare un tipo speciale di voce del Registro di sistema categoria [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\  *\<gruppo >*]
+-   Creare un tipo speciale di voce del Registro di sistema categoria [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\  *\<gruppo >*]
 
      *\<gruppo >* è il nome non localizzato del gruppo.
 

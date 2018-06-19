@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144750"
 ---
 # <a name="windows-installer-basics"></a>Nozioni fondamentali di Windows Installer
 Windows Installer installa e rimuove le applicazioni o i prodotti software sul computer dell'utente, queste attività in unità denominate, talvolta denominati WICs o solo i componenti, i componenti di Windows Installer. Un GUID identifica ogni WIC, ovvero l'unità fondamentale di installazione e conteggio dei riferimenti per le installazioni tramite Windows Installer.  

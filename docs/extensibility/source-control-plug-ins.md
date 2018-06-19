@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140216"
 ---
 # <a name="source-control-plug-ins"></a>Plug-in del controllo codice sorgente
 La sezione di riferimento SDK plug-in controllo di origine contiene la specifica di interfaccia completa che consente ai sistemi di controllo di origine per l'integrazione con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Specifica la sintassi e semantica tra i diversi tipi di dati e funzioni che il plug-in controllo del codice sorgente deve implementare per l'interazione con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE).  

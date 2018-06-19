@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139123"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (funzione)
 Questa funzione inizializza il plug-in controllo del codice sorgente che fornisce funzionalità e i limiti per l'ambiente di sviluppo integrato (IDE).  

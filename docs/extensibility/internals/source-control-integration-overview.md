@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135179"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica sull'integrazione di controllo di origine
 Questa sezione vengono confrontate due modi per integrare nel controllo del codice sorgente Visual Studio; un controllo del codice sorgente plug-in e da un VSPackage che offre una soluzione di controllo di origine e vengono evidenziate le nuove funzionalità di controllo di origine. Visual Studio consente di passaggio manuale da controllo del codice sorgente VSPackage e plug-in del controllo codice sorgente, nonché di commutazione automatica basata sulla soluzione.  

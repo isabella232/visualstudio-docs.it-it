@@ -15,6 +15,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704915"
 ---
 # <a name="diff"></a>/Diff
 Confronta due file. Le differenze vengono visualizzate in una finestra speciale di Visual Studio.

@@ -1,14 +1,14 @@
 ---
 title: Enumerazione PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1a41b642-c9a9-4d83-b943-d59b232eebf6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734011"
 ---
 # <a name="profilerheapobjectrelationshipflags-enumeration"></a>Enumerazione PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS
 Flag che determinano un oggetto nell'heap a cui punta in una relazione di oggetto è un metodo getter o setter. Utilizzato nel [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) quando il valore PROFILER_HEAP_OBJECT_RELATIONSHIP_FLAGS è specificato nel metodo il `enumFlags` parametro.  

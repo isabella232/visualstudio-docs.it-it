@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138727"
 ---
 # <a name="vstextview-object"></a>Oggetto VSTextView
 La visualizzazione del testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer del testo. In pratica, la visualizzazione è fare riferimento alla maggior parte degli utenti come l'editor. Poiché la vista è separata dal buffer tramite vari livelli di testo (ritorno a capo automatico, il testo della struttura e così via), la vista non deve necessariamente essere una rappresentazione esatta del testo nel buffer. Per ulteriori informazioni sulla visualizzazione di testo, vedere [accesso theText vista utilizzando l'API Legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  

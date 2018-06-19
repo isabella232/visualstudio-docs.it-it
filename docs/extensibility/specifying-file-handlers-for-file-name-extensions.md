@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140687"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Specifica i gestori di File per estensioni di File
 Esistono diversi modi per determinare l'applicazione che gestisce un file che contiene un'estensione di file specifico. I verbi OpenWithList e OpenWithProgids sono due modi per specificare i gestori di file nella voce del Registro di sistema per l'estensione di file.  

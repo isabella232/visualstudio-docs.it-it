@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138223"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch (funzione)
 Questa funzione termina un batch di operazioni di controllo codice sorgente. Questi batch non possono essere annidati.  

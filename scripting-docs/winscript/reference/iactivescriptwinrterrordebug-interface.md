@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725431"
 ---
 # <a name="iactivescriptwinrterrordebug-interface"></a>Interfaccia IActiveScriptWinRTErrorDebug
 Implementata dal motore JavaScript per fornire informazioni di errore estese Windows Runtime da un [enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md) evento. È possibile eseguire un QueryInterface per far sì che da un [IActiveScriptError](../../winscript/reference/iactivescripterror.md) oggetto.  

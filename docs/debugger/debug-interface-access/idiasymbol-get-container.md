@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31462912"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 Questa funzione recupera un puntatore a un simbolo che rappresenta il contenitore di questo simbolo.  

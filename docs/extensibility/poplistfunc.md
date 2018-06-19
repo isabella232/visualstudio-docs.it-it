@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138564"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Questo callback viene fornito per il [SccPopulateList](../extensibility/sccpopulatelist-function.md) dall'IDE e viene utilizzato il plug-in controllo del codice sorgente per aggiornare un elenco di file o directory (anche fornito per il `SccPopulateList` funzione).  

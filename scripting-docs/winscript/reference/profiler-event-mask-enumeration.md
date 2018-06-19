@@ -1,16 +1,18 @@
 ---
 title: Enumerazione PROFILER_EVENT_MASK | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: PROFILER_EVENT_MASK
-apilocation: scrobj.dll
+apiname:
+- PROFILER_EVENT_MASK
+apilocation:
+- scrobj.dll
 ms.assetid: c2168408-f4f6-4600-971d-f15b4edf4ca2
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734241"
 ---
 # <a name="profilereventmask-enumeration"></a>Enumerazione PROFILER_EVENT_MASK
 Indica i tipi di eventi che devono eseguire il profiling.  

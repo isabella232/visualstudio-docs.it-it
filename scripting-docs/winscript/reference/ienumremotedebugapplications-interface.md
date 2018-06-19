@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728331"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>Interfaccia IEnumRemoteDebugApplications
 Enumera gli oggetti dell'applicazione. Questa interfaccia può essere utilizzata per enumerare le applicazioni in esecuzione in un computer per la finestra di dialogo "Collega all'applicazione".  

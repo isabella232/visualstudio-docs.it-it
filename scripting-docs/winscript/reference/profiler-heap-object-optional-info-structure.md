@@ -1,14 +1,14 @@
 ---
 title: Struttura PROFILER_HEAP_OBJECT_OPTIONAL_INFO | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 77e638bd-ae36-4292-a170-90a0c500e610
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734031"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>Struttura PROFILER_HEAP_OBJECT_OPTIONAL_INFO
 Rappresenta informazioni facoltative sugli oggetti degli heap.  

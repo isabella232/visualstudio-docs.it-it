@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465223"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Si accede alle informazioni che descrive il processo di mapping da un blocco di byte di testo da un'immagine a un numero di riga di file di origine.  

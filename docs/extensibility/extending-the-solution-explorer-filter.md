@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135507"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estendere il filtro di Esplora soluzioni
 È possibile estendere **Esplora** funzionalità per visualizzare o nascondere i diversi file di filtro. Ad esempio, è possibile creare un filtro che mostra solo classe factory file c# il **Esplora**, come illustrato in questa procedura dettagliata.  

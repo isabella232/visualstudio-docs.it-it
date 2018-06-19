@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727061"
 ---
 # <a name="idebugproperty-interface"></a>Interfaccia IDebugProperty
 Utilizzata per descrivere le proprietà gerarchico dell'entità in fase di debug che ha un nome, tipo e valore. In genere, `IDebugProperty` viene utilizzato per descrivere il risultato della valutazione dell'espressione, la valutazione di istruzione o evaluation di registro.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728011"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che descrive l'errore, se possibile.  

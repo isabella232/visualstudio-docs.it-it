@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726941"
 ---
 # <a name="idebugthreadcall-interface"></a>Interfaccia IDebugThreadCall
 Il `IDebugThreadCall` viene in genere implementata da un componente che effettua chiamate cross-thread con il `IDebugThread` il marshalling di implementazione fornita dal gestore di debug del processo (PDM).  

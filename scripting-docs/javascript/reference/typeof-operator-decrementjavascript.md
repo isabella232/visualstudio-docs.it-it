@@ -1,13 +1,13 @@
 ---
 title: Operatore typeof (JavaScript) | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - typeof_JavaScriptKeyword
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - typeof operator
 ms.assetid: ee8a1036-119f-486f-b034-b07bdba87f0c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29899630"
 ---
 # <a name="typeof-operator-javascript"></a>Operatore typeof (JavaScript)
 Restituisce una stringa che identifica il tipo di dati di un'espressione.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726801"
 ---
 # <a name="idebugstackframesniffer-interface"></a>Interfaccia IDebugStackFrameSniffer
 Consente di enumerare i frame di stack logico noti da un componente. Motori di script è in genere implementano questa interfaccia. Il processo debug manager non utilizza questa interfaccia per trovare tutti gli stack frame associato a un determinato thread.  

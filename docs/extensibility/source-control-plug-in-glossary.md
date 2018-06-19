@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139026"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossario di plug-in controllo di origine
 I seguenti termini utili e le definizioni relative alla documentazione di SDK di plug-in controllo di origine.  

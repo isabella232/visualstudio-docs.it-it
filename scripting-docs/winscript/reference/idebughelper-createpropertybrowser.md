@@ -1,11 +1,11 @@
 ---
 title: IDebugHelper::CreatePropertyBrowser | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugHelper.CreatePropertyBrowser
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugHelper::CreatePropertyBrowser
 ms.assetid: 2fa819cf-c7f7-4bd7-b018-ea33b804ba8f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727481"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
 Restituisce un visualizzatore di proprietà che esegue il wrapping di una variante.  

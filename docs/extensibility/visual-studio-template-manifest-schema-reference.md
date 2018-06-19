@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142578"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimenti dello Schema manifesto dei modelli di Visual Studio
 Questo schema viene descritto il formato dei file manifesto (.vstman) modello Visual Studio generati per i modelli di progetto o un elemento di Visual Studio e descrive il percorso e altre informazioni rilevanti relative al modello.  

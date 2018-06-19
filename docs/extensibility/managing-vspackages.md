@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140134"
 ---
 # <a name="managing-vspackages"></a>Gestione dei pacchetti VSPackage
 Nella maggior parte dei casi non è necessario preoccuparsi di gestione dei pacchetti VSPackage, poiché i modelli di progetto e di elemento di registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più per gestire il pacchetto.  

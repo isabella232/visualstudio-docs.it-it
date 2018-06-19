@@ -1,14 +1,14 @@
 ---
 title: Enumerazione PROFILER_HEAP_OBJECT_FLAGS | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 0f517743-cc4a-4911-add3-a43680071a1f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734131"
 ---
 # <a name="profilerheapobjectflags-enumeration"></a>Enumerazione PROFILER_HEAP_OBJECT_FLAGS
 Flag che rappresentano informazioni di base sull'oggetto heap. Utilizzato nel [struttura PROFILER_HEAP_OBJECT](../../winscript/reference/profiler-heap-object-structure.md).  

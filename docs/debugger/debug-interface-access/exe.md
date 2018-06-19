@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459740"
 ---
 # <a name="exe"></a>Exe
 Exe è l'unico simbolo senza un lessicale o classe padre, in quanto rappresenta l'ambito globale del file .exe o DLL. È presente un solo simbolo con la `SymTagExe` tag per ogni file. Il [idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) il metodo restituisce il simbolo.  

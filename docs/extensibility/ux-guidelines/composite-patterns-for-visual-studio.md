@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148951"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Modelli compositi combinano elementi di progettazione e l'interazione in configurazioni distinte. Alcuni dei più importanti compositi modelli in Visual Studio per quanto riguarda la coerenza includono:  

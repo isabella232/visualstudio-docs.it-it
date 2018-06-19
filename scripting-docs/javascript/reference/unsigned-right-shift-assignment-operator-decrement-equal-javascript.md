@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641391"
 ---
 # <a name="unsigned-right-shift-assignment-operator-gtgtgt-javascript"></a>Operatore di assegnazione Right Shift senza segno (&gt;&gt;&gt;=) (JavaScript)
 Sposta a destra il valore di una variabile per il numero di bit specificato nel valore di un'espressione, senza mantenere il segno, e assegna il risultato alla variabile.  

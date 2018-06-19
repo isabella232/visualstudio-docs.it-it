@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::Clone | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641591"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Clona il motore di script corrente (meno qualsiasi stato corrente dell'esecuzione), la restituzione di un motore di script caricato che non dispone di alcun sito nel thread corrente. Le proprietà di questo nuovo motore di script sarà identiche alle proprietà del che motore di script originale sarà nella se ne sono stati eseguita la transizione allo stato inizializzato.  

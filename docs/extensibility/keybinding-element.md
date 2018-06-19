@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139169"
 ---
 # <a name="keybinding-element"></a>Tasto di scelta rapida elemento
 L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134734"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 Questo controllo del codice sorgente plug-in di test viene illustrata l'area immissione soluzioni o progetti nel controllo del codice sorgente e vengono recuperati dal controllo del codice sorgente.  

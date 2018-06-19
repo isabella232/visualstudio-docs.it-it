@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24729601"
 ---
 # <a name="iremotedebugapplication-interface"></a>Interfaccia IRemoteDebugApplication
 Rappresenta un'applicazione in esecuzione. Se è necessario che corrispondono a un processo del sistema operativo. In genere, un debugger è destinato a un'applicazione per il debug. In genere, il gestore di eseguire il Debug di processi implementa l'oggetto applicazione.  

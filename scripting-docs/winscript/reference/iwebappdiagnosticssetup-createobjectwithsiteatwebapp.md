@@ -1,16 +1,16 @@
 ---
 title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Documenti Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 ms.assetid: 30975973-acb1-48f4-8266-5e097a57db22
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733941"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
 Questo metodo crea condiviso il cui ID è passato con la classe `rclsid` utilizzando il `dwClsContext`. Questa operazione è simile al modo in cui [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) works, con la differenza che nel caso di `CreateObjectWithSiteAtWebApp` l'oggetto viene creato in modo asincrono sul thread dell'interfaccia utente dell'applicazione web. L'oggetto specificato dall'ID di classe deve implementare [interfaccia IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Dopo l'oggetto è stato creato, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) viene chiamato con un riferimento all'applicazione di debug PDM e `hPassToObject` parametro di `CreateObjectWithSiteAtWebApp`. È possibile utilizzare questo metodo per passare all'App un handle per una pipe anonima che è stata copiata utilizzando [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
