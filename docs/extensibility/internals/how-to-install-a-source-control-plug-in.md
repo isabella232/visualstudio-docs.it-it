@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133556"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: installare un plug-in controllo del codice sorgente
 Creazione di plug-in un controllo origine prevede tre passaggi:  
@@ -37,7 +38,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Per registrare il controllo origine DLL plug-in  
   
-1.  Aggiungere due voci nella chiave HKEY_LOCAL_MACHINE nella sottochiave SOFTWARE che specifica la sottochiave nome società aggiungendo la sottochiave nome prodotto. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\\*[nome società]*\\*[nome prodotto]*\\*[entry]* = valore. Le due voci vengono sempre chiamate SCCServerName e SCCServerPath. Ognuno è una stringa normale.  
+1.  Aggiungere due voci nella chiave HKEY_LOCAL_MACHINE nella sottochiave SOFTWARE che specifica la sottochiave nome società aggiungendo la sottochiave nome prodotto. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nome società]*\\ *[nome prodotto]*\\ *[entry]* = valore. Le due voci vengono sempre chiamate SCCServerName e SCCServerPath. Ognuno è una stringa normale.  
   
      Ad esempio, se il nome della società è Microsoft e il controllo del codice sorgente denominato SourceSafe, tale percorso del Registro di sistema è HKEY_LOCAL_MACHINE\Software\Microsoft\SourceSafe. Questa sottochiave, la prima voce, SCCServerName, è una stringa leggibile dall'utente denominazione del prodotto. La seconda voce, SCCServerPath, è il percorso completo all'origine del controllo DLL plug-in cui deve connettersi l'IDE. Nelle sezioni che seguono vengono fornite le voci del Registro di sistema di esempio:  
   
@@ -66,7 +67,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
   
 3.  Aggiungere la sottochiave SourceCodeControlProvider, sotto la chiave HKEY_LOCAL_MACHINE nella sottochiave del SOFTWARE.  
   
-     In questa sottochiave viene impostata voce del Registro di sistema ProviderRegKey a una stringa che rappresenta la sottochiave che è stata inserita nel Registro di sistema nel passaggio 1. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\*[nome società]*\\*[nome prodotto]*.  
+     In questa sottochiave viene impostata voce del Registro di sistema ProviderRegKey a una stringa che rappresenta la sottochiave che è stata inserita nel Registro di sistema nel passaggio 1. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\ *[nome società]*\\ *[nome prodotto]*.  
   
      Di seguito è l'esempio di contenuto di questa sottochiave.  
   
@@ -79,7 +80,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
   
 4.  Creare una sottochiave denominata InstalledSCCProviders nella sottochiave SourceCodeControlProvider e quindi inserire una voce in tale sottochiave.  
   
-     Il nome di questa voce è il nome leggibile dall'utente del provider (uguale al valore specificato per la voce SCCServerName) e il valore è, in questo caso, la sottochiave creata nel passaggio 1. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[nome]* = SOFTWARE\\*[nome società]* \\ *[nome prodotto]*.  
+     Il nome di questa voce è il nome leggibile dall'utente del provider (uguale al valore specificato per la voce SCCServerName) e il valore è, in questo caso, la sottochiave creata nel passaggio 1. Il modello è HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[nome]* = SOFTWARE\\ *[nome società]* \\ *[nome prodotto]*.  
   
      Ad esempio:  
   
@@ -102,7 +103,7 @@ Creazione di plug-in un controllo origine prevede tre passaggi:
 > [!NOTE]
 >  L'IDE non caricare le DLL da percorsi relativi (ad esempio,.\NewProvider.DLL). Specificare un percorso completo della DLL (ad esempio, c:\Providers\NewProvider.DLL). Ciò aumenta la protezione dell'IDE, impedendo che il caricamento delle DLL plug-in utenti non autorizzati o rappresentato.  
   
- Per individuare la DLL il secondo modo, l'IDE è simile per tutte le voci nella sottochiave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders*.* Ogni voce ha un nome e un valore. L'IDE visualizza un elenco di questi nomi per l'utente*.* Quando l'utente sceglie un nome, l'IDE rileva che il valore per il nome selezionato che punta a una sottochiave. L'IDE verrà cercata una voce denominata SccServerPath nella sottochiave nella chiave HKEY_LOCAL_MACHINE. Il valore della voce punta IDE alla DLL corretta.  
+ Per individuare la DLL il secondo modo, l'IDE è simile per tutte le voci nella sottochiave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders *.* Ogni voce ha un nome e un valore. L'IDE visualizza un elenco di questi nomi per l'utente *.* Quando l'utente sceglie un nome, l'IDE rileva che il valore per il nome selezionato che punta a una sottochiave. L'IDE verrà cercata una voce denominata SccServerPath nella sottochiave nella chiave HKEY_LOCAL_MACHINE. Il valore della voce punta IDE alla DLL corretta.  
   
  Un plug-in controllo del codice sorgente deve supportare entrambi i metodi di individuazione della DLL e, di conseguenza, impostare ProviderRegKey, sovrascrivendo qualsiasi impostazione precedente. Ancora più importante, è necessario aggiungere stesso all'elenco di InstalledSccProviders l'utente può avere una scelta di quale plug-in controllo del codice sorgente per utilizzare.  
   

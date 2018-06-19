@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134126"
 ---
 # <a name="source-control-configuration-details"></a>Dettagli di configurazione di controllo di origine
 Per implementare il controllo del codice sorgente, è necessario configurare correttamente il sistema di progetto o un editor per eseguire le operazioni seguenti:

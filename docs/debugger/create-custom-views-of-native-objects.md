@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927165"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Creare viste personalizzate di oggetti nativi nel debugger di Visual Studio
 Il framework Natvis di Visual Studio consente di personalizzare il modo in cui Visual Studio visualizza i tipi nativi nelle finestre delle variabili del debugger (ad esempio, il **espressioni di controllo** finestra **variabili locali** finestra e in  **I suggerimenti dati**.

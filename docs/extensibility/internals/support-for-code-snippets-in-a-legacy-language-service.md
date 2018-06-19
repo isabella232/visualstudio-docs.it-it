@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135682"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio Legacy
 Un frammento di codice è un frammento di codice che viene inserito nel file di origine. Il frammento stesso è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo che il frammento di codice viene inserito e può presentare valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Subito dopo l'inserimento del frammento, il servizio di linguaggio possibile formattare il frammento di codice.  
@@ -52,7 +53,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
   
  Sono disponibili due posizioni in cui sono archiviati i file di modello di frammento: 1) in cui è stato installato il linguaggio e 2) nella cartella dell'utente. Questi percorsi vengono aggiunti al Registro di sistema in modo che Visual Studio **Gestione frammenti di codice** possibile trovare i frammenti di codice. La cartella dell'utente è in cui sono archiviati i frammenti di codice creati dall'utente.  
   
- Il layout tipico di cartella per i file di modello di frammento installato è simile al seguente: *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ Il layout tipico di cartella per i file di modello di frammento installato è simile al seguente: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
  *[InstallRoot]*  è la cartella del linguaggio è installato in.  
   
@@ -60,7 +61,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
   
  *[LCID]*  è l'ID delle impostazioni locali. Si tratta di versioni localizzate di modalità di frammenti di codice vengono archiviati. Ad esempio, l'ID impostazioni locali per l'inglese è 1033, in modo *[LCID]* viene sostituito da 1033.  
   
- È necessario specificare un file aggiuntivo di un file di indice, in genere chiamato SnippetsIndex.xml o ExpansionsIndex.xml (è possibile utilizzare qualsiasi nome file valido che terminano con estensione XML). Questo file è in genere archiviato nel *[InstallRoot]*\\*[TestLanguage]* cartella e specifica la posizione esatta della cartella di frammenti di codice, nonché ID lingua e il GUID del linguaggio servizio che utilizza i frammenti di codice. Il percorso esatto del file di indice viene inserito nel Registro di sistema come descritto più avanti in "Installazione di voci del Registro di sistema". Di seguito è riportato un esempio di un file SnippetsIndex.xml:  
+ È necessario specificare un file aggiuntivo di un file di indice, in genere chiamato SnippetsIndex.xml o ExpansionsIndex.xml (è possibile utilizzare qualsiasi nome file valido che terminano con estensione XML). Questo file è in genere archiviato nel *[InstallRoot]*\\ *[TestLanguage]* cartella e specifica la posizione esatta della cartella di frammenti di codice, nonché ID lingua e il GUID del linguaggio servizio che utilizza i frammenti di codice. Il percorso esatto del file di indice viene inserito nel Registro di sistema come descritto più avanti in "Installazione di voci del Registro di sistema". Di seguito è riportato un esempio di un file SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
   
  Si presuppone che il servizio di linguaggio viene installato nella cartella di installazione di Visual Studio. La variabile % LCID % viene sostituita con l'ID impostazioni locali correnti. dell'utente Più \<SnippetDir > tag possono essere aggiunti, uno per ogni altra directory e delle impostazioni locali. Inoltre, una cartella di frammento può contenere sottocartelle, ognuno dei quali è identificato nel file di indice con il \<SnippetSubDir > tag incorporato in un \<SnippetDir > tag.  
   
- Gli utenti possono anche creare i propri frammenti di codice per il linguaggio. Questi vengono in genere archiviati nella cartella di impostazioni dell'utente, ad esempio *[TestDocs]*\Code frammenti\\*[TestLanguage]*\Test frammenti di codice, in cui *[TestDocs]* è il percorso della cartella di impostazioni dell'utente per Visual Studio.  
+ Gli utenti possono anche creare i propri frammenti di codice per il linguaggio. Questi vengono in genere archiviati nella cartella di impostazioni dell'utente, ad esempio *[TestDocs]* \Code frammenti\\ *[TestLanguage]* \Test frammenti di codice, in cui *[TestDocs]* è il percorso della cartella di impostazioni dell'utente per Visual Studio.  
   
  I seguenti elementi di sostituzione possono essere inseriti nel percorso memorizzato nel \<DirPath > tag nel file di indice.  
   
@@ -91,7 +92,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 |% InstallRoot %|Cartella di installazione radice per Visual Studio, ad esempio C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Cartella contenente il progetto corrente.|  
 |% ProjItem %|Cartella contenente l'elemento del progetto corrente.|  
-|% TestDocs %|Cartella nella cartella di impostazioni dell'utente, ad esempio, C:\Documents and Settings\\*[username]*Documents\Visual Studio\8.|  
+|% TestDocs %|Cartella nella cartella di impostazioni dell'utente, ad esempio, C:\Documents and Settings\\ *[username]* Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>L'abilitazione di frammenti di codice per il servizio di linguaggio  
  È possibile abilitare i frammenti di codice per il servizio di linguaggio aggiungendo il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> attributo per il pacchetto VSPackage (vedere [la registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) per informazioni dettagliate). Il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> e <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametri sono facoltativi, ma è consigliabile includere il `SearchPaths` parametro denominato per informare il **Gestione frammenti di codice** del percorso dei frammenti di codice.  

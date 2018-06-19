@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132561"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creazione di cartelle dei contenitori padre per le soluzioni
 Nell'API versione 1.2 del plug-in controllo di origine, un utente può specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti Web all'interno della soluzione. Questa singola radice viene chiamata una radice unificata Super (SUR).  

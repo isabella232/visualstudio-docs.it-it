@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950007"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedura: utilizzare le transazioni per aggiornare il modello
 Le transazioni assicurarsi che le modifiche apportate all'archivio vengono considerate come un gruppo. Le modifiche che vengono raggruppate possono essere eseguito il commit o rollback come unità singola.

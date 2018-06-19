@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134113"
 ---
 # <a name="making-commands-available"></a>Rendere disponibili i comandi
 Quando più VSPackage vengono aggiunti a Visual Studio, l'interfaccia utente (UI) potrebbe diventare saturi con i comandi. È possibile programmare il pacchetto per ridurre questo problema, come indicato di seguito:

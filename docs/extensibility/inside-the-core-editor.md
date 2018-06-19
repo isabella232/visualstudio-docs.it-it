@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130437"
 ---
 # <a name="inside-the-core-editor"></a>Nell'Editor di componenti di base
 Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale è un set di diversi componenti che consentono di modificare ed eseguire query su informazioni testuali. Se l'editor di componenti di base è stato personalizzato utilizzando l'API legacy, è possibile continuare a usare queste personalizzazioni, verranno instradate tramite le schede dell'editor. Si consiglia, tuttavia, che si adattano le personalizzazioni per il nuovo editor API.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129641"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminazione di ~ SAK file
 1.2 API di plug-in controllo di origine, il ~ SAK file sono stati sostituiti da flag di capacità e nuove funzioni di rilevare se un plug-in controllo del codice sorgente supporta il file MSSCCPRJ estrazioni condivise.  

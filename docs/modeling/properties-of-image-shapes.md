@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952628"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 È possibile utilizzare forme di immagine per specificare la visualizzazione di classi di dominio in una finestra di progettazione generato. Definire una forma di immagine impostando il `Image` proprietà della classe in un file di immagine predefinita. Sono supportati i formati seguenti:

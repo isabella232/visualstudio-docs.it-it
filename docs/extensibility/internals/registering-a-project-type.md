@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134633"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 Quando si crea un nuovo tipo di progetto, è necessario creare le voci del Registro di sistema che consentono a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per riconoscere e usare il tipo di progetto. Queste voci del Registro di sistema è in genere creare utilizzando un file di script (con estensione RGS) del Registro di sistema.  

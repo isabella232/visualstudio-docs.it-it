@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131580"
 ---
 # <a name="providing-automation-for-vspackages"></a>Fornisce l'automazione per pacchetti VSPackage
 Esistono due modi per fornire l'automazione per VSPackage: mediante l'implementazione degli oggetti specifici di VSPackage e implementando gli oggetti di automazione standard. In genere, questi vengono utilizzati insieme per estendere il modello di automazione dell'ambiente.  

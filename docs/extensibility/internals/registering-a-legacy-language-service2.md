@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134139"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrazione di un servizio di linguaggio Legacy
 Le sezioni seguenti forniscono elenchi di voci del Registro di sistema per la lingua di varie opzioni di servizio disponibile in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  
-|(Predefinito)|REG_SZ|ASCII|Il valore predefinito può essere utilizzato per documentare il nome della lingua. Il nome di questa chiave è un GUID di un analizzatore di espressioni che ha una voce corrispondente in  *\<VS Reg radice >*\AD7Metrics\Expression dell'analizzatore di espressioni.|  
+|(Predefinito)|REG_SZ|ASCII|Il valore predefinito può essere utilizzato per documentare il nome della lingua. Il nome di questa chiave è un GUID di un analizzatore di espressioni che ha una voce corrispondente in  *\<VS Reg radice >* \AD7Metrics\Expression dell'analizzatore di espressioni.|  
   
 ### <a name="example"></a>Esempio  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Voci del Registro di sistema per le opzioni di visualizzazione logica  
- Il *VS Reg radice*\Editors\\*GUI Editor >*chiave \LogicalViews può contenere i valori seguenti.  
+ Il *VS Reg radice*\Editors\\*GUI Editor >* chiave \LogicalViews può contenere i valori seguenti.  
   
 |nome|Tipo|Intervallo|Descrizione|  
 |----------|----------|-----------|-----------------|  

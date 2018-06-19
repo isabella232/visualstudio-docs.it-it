@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953646"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con diagrammi di dipendenza
 

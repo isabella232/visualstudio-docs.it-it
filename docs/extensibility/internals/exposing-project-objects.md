@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130453"
 ---
 # <a name="exposing-project-objects"></a>Esposizione di oggetti di progetto
 Tipi di progetto personalizzato è possono fornire oggetti di automazione per consentire l'accesso al progetto utilizzando le interfacce di automazione. Ogni tipo di progetto deve fornire lo standard <xref:EnvDTE.Project> oggetto di automazione che è accessibile da <xref:EnvDTE.Solution>, che contiene una raccolta di tutti i progetti aperti nell'IDE. È previsto che ogni elemento del progetto devono essere esposte da un <xref:EnvDTE.ProjectItem> oggetto cui si accede con `Project.ProjectItems`. Oltre a questi oggetti di automazione standard, i progetti è possono scegliere di oggetti di automazione specifico.  

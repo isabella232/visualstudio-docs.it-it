@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131589"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Guida introduttiva a servizio di linguaggio e le estensioni di Editor
 Per aggiungere funzionalità del linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e le lampadine proprio linguaggio di programmazione o a qualsiasi tipo di contenuto, è possibile utilizzare le estensioni di editor. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio testo colorazione, margini, aree di controllo e altri elementi visivi. È inoltre possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni di testo in cui viene visualizzato il contenuto.  
@@ -66,7 +67,7 @@ Per aggiungere funzionalità del linguaggio, ad esempio la struttura, corrispond
 ## <a name="running-extensions-in-the-experimental-instance"></a>Esecuzione delle estensioni nell'istanza sperimentale  
  È possibile isolare la versione di lavoro di Visual Studio mentre si sviluppa un'estensione distribuendola nella cartella seguente sperimentale (in Windows Vista e Windows 7):  
   
- *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*società*\\*ExtensionID*  
+ *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*società*\\*ExtensionID*  
   
  dove *% LOCALAPPDATA %* è il nome dell'utente connesso, *aziendale* è il nome della società che possiede l'estensione, e *ExtensionID* è l'ID dell'estensione.  
   

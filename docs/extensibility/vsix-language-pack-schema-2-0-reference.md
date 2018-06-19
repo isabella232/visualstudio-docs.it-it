@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139653"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Riferimento allo Schema 2.0 di VSIX Language Pack
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130042"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Criteri dei modelli e la finestra proprietà
 Quando un progetto è contenuto all'interno di un progetto di modello enterprise, il progetto di modello enterprise può applicare i criteri. Criteri dei modelli diventano un sistema vincolante che può essere utilizzato per impostare i valori predefiniti per le proprietà, nascondere le proprietà, aggiungere le proprietà e così via.  

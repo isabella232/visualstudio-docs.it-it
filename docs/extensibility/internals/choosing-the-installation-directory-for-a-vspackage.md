@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134440"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Scegliere la Directory di installazione per un pacchetto VSPackage
 Nel file system di un utente devono essere un VSPackage e i relativi file di supporto. Il percorso varia a seconda se il pacchetto VSPackage gestito o non gestiti, a regime di controllo delle versioni side-by-side la scelta dell'utente.  

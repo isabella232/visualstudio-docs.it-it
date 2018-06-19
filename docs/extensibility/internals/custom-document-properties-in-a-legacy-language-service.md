@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132495"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Proprietà personalizzate del documento in un servizio di linguaggio Legacy
 Proprietà di documento possono essere visualizzate nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **proprietà** finestra. Linguaggi di programmazione in genere non sono associata a file di origine singole proprietà. Tuttavia, XML supporta le proprietà di documento che interessano la codifica, schemi e foglio di stile.  

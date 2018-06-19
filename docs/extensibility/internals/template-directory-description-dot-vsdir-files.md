@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133999"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Descrizione del modello Directory (. File VSDIR)
 Un file di descrizione modello directory (VSDIR) è un file di testo che consente l'ambiente di sviluppo integrato (IDE) per visualizzare le cartelle, file VSZ della procedura guidata e i file modello associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Tutti i file VSDir in una posizione a cui fa riferimento vengono uniti, anche se i file sola VSDIR generalmente è fornito per descrivere più cartelle, procedure guidate o file di modello.  

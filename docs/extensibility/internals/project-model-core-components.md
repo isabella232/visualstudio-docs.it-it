@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133117"
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 Espandono le tabelle seguenti nel modello di progetto. Le tabelle presentano brevi descrizioni di interfacce e servizi individuati nel modello e le interfacce e i servizi associati a oggetti specifici. Inoltre, le tabelle in dettaglio le altre interfacce facoltative nella creazione del progetto e di manutenzione a seconda dei requisiti del tipo di progetto specifico.  

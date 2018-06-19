@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563674"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: creare un manifesto di pacchetto
 Per distribuire i prerequisiti per l'applicazione, è possibile utilizzare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ciascuna lingua. Le funzionalità condivise tra le diverse versioni localizzate devono andare nel manifesto del prodotto.  

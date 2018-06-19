@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131147"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: accedere ai tipi di carattere incorporati e una combinazione di colori
 Ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associata a una finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.
@@ -38,7 +39,7 @@ Ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tip
 
 1.  Creare un GUID non autorizzato.
 
-     Questo GUID è utilizzato per identificare in modo univoco una categoria**.** Questa categoria riutilizza specifica di colori e tipi di carattere predefiniti dell'IDE.
+     Questo GUID è utilizzato per identificare in modo univoco una categoria **.** Questa categoria riutilizza specifica di colori e tipi di carattere predefiniti dell'IDE.
 
     > [!NOTE]
     >  Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, VSPackage utilizzano questo GUID per fare riferimento a informazioni predefinite.
@@ -51,7 +52,7 @@ Ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tip
 
 1.  Creare un tipo speciale di voce del Registro di sistema di categoria nel percorso seguente:
 
-     [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\*\<categoria >*]
+     [HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\*\<categoria >*]
 
      *\<Categoria >* è il nome non localizzato della categoria.
 

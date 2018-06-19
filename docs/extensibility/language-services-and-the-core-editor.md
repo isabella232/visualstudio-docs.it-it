@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138480"
 ---
 # <a name="language-services-and-the-core-editor"></a>Servizi per linguaggi e l'Editor di componenti di base
 Editor di Visual Studio sono spesso associati a un servizio di linguaggio. Tra le altre cose, un servizio di linguaggio fornisce la colorazione della sintassi, il completamento delle istruzioni, IntelliSense e la formattazione del testo.  

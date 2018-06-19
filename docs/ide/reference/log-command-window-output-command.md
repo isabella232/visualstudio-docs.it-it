@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704681"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 Copia interamente l'input e l'output della finestra di **comando** in un file.

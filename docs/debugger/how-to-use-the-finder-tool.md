@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476185"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
 È possibile utilizzare lo strumento di ricerca nel **Trova finestra** la finestra di dialogo per visualizzare le proprietà della finestra o messaggi. Lo strumento di ricerca può anche individuare finestre figlio disabilitato e discernere quale finestra per evidenziare se disabilitata sovrapposizione delle finestre figlio.  

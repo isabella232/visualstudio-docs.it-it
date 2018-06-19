@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129389"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Gruppi di menu e comandi definiti dall'IDE
 Molti menu, comandi e i gruppi di comandi sono già definiti per l'utilizzo da parte di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Questi comandi sono disponibili per l'utilizzo anche quando si estende [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -35,7 +36,7 @@ Molti menu, comandi e i gruppi di comandi sono già definiti per l'utilizzo da p
   
 -   ShellCmdPlace.vsct  
   
- Questi file si trovano  *\<il percorso di installazione di Visual Studio SDK >*\VisualStudioIntegration\Common\Inc\\. Questi file forniscono le definizioni e i GUID dei gruppi che è possibile utilizzare nel file di configurazione (con estensione vsct) nella tabella di comando di un VSPackage come contenitori per i menu, gruppi e i comandi e menu.  
+ Questi file si trovano  *\<il percorso di installazione di Visual Studio SDK >* \VisualStudioIntegration\Common\Inc\\. Questi file forniscono le definizioni e i GUID dei gruppi che è possibile utilizzare nel file di configurazione (con estensione vsct) nella tabella di comando di un VSPackage come contenitori per i menu, gruppi e i comandi e menu.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131265"
 ---
 # <a name="selection-context-objects"></a>Selezione oggetti di contesto
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) usa un oggetto di contesto di selezione globale per determinare cosa deve essere visualizzata nell'IDE. Tutte le finestre nell'IDE possono avere un proprio oggetto di contesto di selezione inserito nel contesto di selezione globale. L'IDE aggiorna il contesto di selezione globale con i valori da una finestra quando tale finestra ha lo stato attivo. Per ulteriori informazioni, vedere [Feedback all'utente](../../extensibility/internals/feedback-to-the-user.md).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134262"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Esposizione delle proprietà nella finestra proprietà
 Questa procedura dettagliata espone le proprietà pubbliche dell'oggetto per il **proprietà** finestra. Le modifiche apportate a queste proprietà vengono riflesse nel **proprietà** finestra.  

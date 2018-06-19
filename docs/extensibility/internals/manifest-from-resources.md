@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134283"
 ---
 # <a name="manifest-from-resources"></a>Manifesto da risorse
 Il manifesto dallo strumento di risorse è un'applicazione console che accetta un elenco di risorse immagine (file con estensione PNG o XAML) e genera un file .imagemanifest che consente le immagini da utilizzare con il servizio di immagini di Visual Studio. Inoltre, questo strumento può essere utilizzato per aggiungere immagini a un .imagemanifest esistente. Questo strumento è utile per aggiungere supporto per immagini a un'estensione di Visual Studio ad alta risoluzione e temi. Il file generato .imagemanifest deve essere incluso in e distribuito come parte di un'estensione di Visual Studio (VSIX).  

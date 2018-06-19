@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128772"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Procedura: eliminare le notifiche di modifica File
 Quando è stato modificato il file fisico che rappresenta il buffer di testo, una finestra di dialogo viene visualizzato con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se prevede molte modifiche a file, tuttavia, questa finestra di dialogo visualizzazione più volte può risultare fastidiosa.  

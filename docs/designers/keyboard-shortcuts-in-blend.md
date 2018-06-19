@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927074"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Tasti di scelta rapida in Blend
 ## <a name="project-shortcuts"></a>Tasti di scelta rapida per i progetti

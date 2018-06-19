@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129683"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Procedura: usare elementi di colori predefiniti
 Prima di utilizzare gli elementi di colori predefiniti, è necessario innanzitutto segnalare all'ambiente di sviluppo integrato (IDE) che si desidera non fornire i propri elementi di colori personalizzati, in questo caso sarebbe <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> oggetti. Questo caso, impostare una voce del Registro di sistema per il servizio di linguaggio.  
