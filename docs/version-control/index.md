@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 428139af8680bc60f4456367d1a17d4c97874efc
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795352"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279914"
 ---
 # <a name="version-control-in-visual-studio"></a>Controllo della versione in Visual Studio
 
@@ -28,7 +28,7 @@ Ad oggi, Git è il sistema di controllo della versione più diffuso e si sta aff
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://www.visualstudio.com/learn-git/">
+        <a href="https://docs.microsoft.com/azure/devops/git/what-is-git">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -145,11 +145,8 @@ Controllo della versione di Team Foundation (TFVC) è un sistema di controllo de
 </ul>
 
 
-## <a name="resources"></a>Risorse 
+## <a name="resources"></a>Risorse
 
-- [Libro Pro Git](https://git-scm.com/book/en/v2)  
-- [Plan your migration to Git (Pianificare la migrazione a Git)](https://www.visualstudio.com/learn/centralized-to-git/)  
-- [Migrate from TFVC to Git (Eseguire la migrazione dal controllo della versione di Team Foundation a Git)](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/)  
-
- 
-
+- [Libro Pro Git](https://git-scm.com/book/en/v2)
+- [Plan your migration to Git (Pianificare la migrazione a Git)](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
+- [Migrate from TFVC to Git (Eseguire la migrazione dal controllo della versione di Team Foundation a Git)](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)

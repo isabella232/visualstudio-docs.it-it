@@ -64,7 +64,7 @@
 #### [Sottoscrizioni scadute](handle-expired-license.md)
 #### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
 ## Acquisizione di sottoscrizioni di Visual Studio
-### [Confrontare le opzioni di sottoscrizione](https://www.visualstudio.com/vs/pricing)
+### [Confrontare le opzioni di sottoscrizione](https://visualstudio.microsoft.com/vs/pricing)
 ### Acquisto di sottoscrizioni cloud
 #### [Panoramica](vscloud-overview.md)
 #### [Domande frequenti sulla fatturazione](vscloud-billing-faq.md)
@@ -75,8 +75,8 @@
 #### [Microsoft for Startups](program-startups.md)
 ## Risorse
 ### [White paper sulle licenze di Visual Studio](http://aka.ms/vslicensing)
-### [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://www.visualstudio.com/vs/pricing)
-### [Confrontare le funzionalità dell'IDE di Visual Studio](https://www.visualstudio.com/vs/compare)
-### [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
+### [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
+### [Confrontare le funzionalità dell'IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+### [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Condizioni dei contratti multilicenza](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Contratto per i Prodotti e i Servizi Microsoft (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)
