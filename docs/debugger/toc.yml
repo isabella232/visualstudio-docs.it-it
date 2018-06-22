@@ -765,7 +765,7 @@
             - name: Strumenti di ricerca per le visualizzazioni di Spy++
               href: search-tools-for-spy-increment-views.md
               items:
-                - name: Trova finestra (finestra di dialogo)
+                - name: Finestra di dialogo Trova finestra
                   href: find-window-dialog-box.md
                 - name: Ricerca finestre (finestra di dialogo)
                   href: window-search-dialog-box.md
@@ -826,3 +826,5 @@
   items:
     - name: Novità relative al debugger di Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Debug per principianti
+      href: debugging-absolute-beginners.md
