@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795318"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327190"
 ---
 # <a name="visual-studio-subscriptions"></a>Sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio rappresentano il set di risorse più completo per creare, distribuire e gestire applicazioni di alta qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi delle sottoscrizioni includono l'accesso agli strumenti di sviluppo, a servizi e software cloud, a risorse di training e al supporto per svariate esigenze di test e sviluppo.
@@ -149,7 +149,6 @@ I sottoscrittori accedono a [https://my.visualstudio.com](https://my.visualstudi
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio per Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server e CAL per TFS</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ I sottoscrittori accedono a [https://my.visualstudio.com](https://my.visualstudi
                         <p>Con la sottoscrizione di Visual Studio è possibile ottenere un credito mensile per Azure e accesso gratuito ai servizi Azure, tariffe scontate per lo sviluppo e il test, nonché accesso esclusivo a una raccolta di immagini riservata ai sottoscrittori, con macchine virtuali preconfigurate. A seconda della sottoscrizione, i servizi cloud possono includere:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Abbonamento a Office 365 Developer</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Account sviluppatore per Windows</a></li>
                             <li>PowerBI Pro</li>
