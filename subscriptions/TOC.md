@@ -1,4 +1,5 @@
 # [Sottoscrizioni di Visual Studio](index.md)
+## [Novità](whats-new-in-subscriptions.md)
 ## Esperienze di sottoscrizione
 ### [Uso del portale dei sottoscrittori](using-the-subscriber-portal.md)
 #### [Attivare le sottoscrizioni al dettaglio](activate-store-subscriptions.md)

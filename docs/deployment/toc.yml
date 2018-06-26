@@ -8,12 +8,12 @@
   items:
     - name: Presentazione della distribuzione
       href: deploying-applications-services-and-components.md
-    - name: Distribuire in una cartella locale
-      href: quickstart-deploy-to-local-folder.md
+    - name: Distribuire nel Servizio app di Azure
+      href: quickstart-deploy-to-azure.md
     - name: Distribuire in un sito Web
       href: quickstart-deploy-to-a-web-site.md
-    - name: Distribuire in Azure
-      href: quickstart-deploy-to-azure.md
+    - name: Distribuire in una cartella locale
+      href: quickstart-deploy-to-local-folder.md
 - name: Esercitazioni
   items:
     - name: .NET
