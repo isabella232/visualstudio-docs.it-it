@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573180"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -35,12 +36,12 @@ ms.lasthandoff: 05/17/2018
  Se dal **campionamento** non si ottengono i dati necessari, altri metodi di raccolta degli strumenti di profilatura offrono tipi diversi di informazioni che potrebbero essere utili. Per altre informazioni sugli altri metodi, vedere [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Se si analizza il codice che chiama le funzioni di Windows, assicurarsi di avere i file con estensione pdb più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per altre informazioni su come verificare la disponibilità dei file necessari, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Se si analizza il codice che chiama le funzioni di Windows, assicurarsi di avere i file con estensione *pdb* più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per altre informazioni su come verificare la disponibilità dei file necessari, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a> Creare ed eseguire una sessione di prestazioni  
+## <a name="create-and-run-a-performance-session"></a>Creare e attivare una sessione di prestazioni  
  Per ottenere i dati che si devono analizzare, è necessario innanzitutto creare una sessione di prestazioni e quindi eseguire la sessione. La **Creazione guidata sessione di prestazioni** consente di eseguire entrambe le operazioni.  
   
- Se non si profila un'app desktop di Windows o un'app ASP.NET, è necessario usare uno degli altri strumenti di profilatura. Vedere [Strumenti di profilatura](../profiling/profiling-tools.md).  
+ Se non si profila un'app desktop di Windows o un'app ASP.NET, è necessario usare uno degli altri strumenti di profilatura. Vedere [Presentazione degli strumenti di profilatura](../profiling/profiling-tools.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Per creare e attivare una sessione di prestazioni  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/17/2018
   
      Eseguita l'applicazione, la visualizzazione **Riepilogo** relativa ai dati di profilatura appare nella finestra principale di Visual Studio e viene visualizzata un'icona per la nuova sessione nella finestra **Esplora prestazioni**.  
   
-##  <a name="Step2"></a> Passaggio 2: Analizzare i dati di campionamento  
+## <a name="step-2-analyze-sampling-data"></a>Passaggio 2: Analizzare i dati di campionamento  
  Al termine dell'esecuzione di una sessione di prestazioni, la visualizzazione **Riepilogo** del rapporto sulla profilatura appare nella finestra principale di Visual Studio.  
   
  È consigliabile iniziare ad analizzare i dati esaminando il **Percorso critico**, quindi l'elenco delle funzioni che svolgono la maggior parte del lavoro e infine concentrandosi sulle altre funzioni usando la **sequenza temporale di riepilogo**. È anche possibile visualizzare suggerimenti e avvisi relativi alla profilatura nella finestra **Elenco errori**.  
@@ -92,13 +93,13 @@ ms.lasthandoff: 05/17/2018
   
     -   Nel riquadro inferiore della finestra **Dettagli funzione** è visualizzato il codice della funzione. Se si esamina il codice e un'opportunità per ottimizzare le prestazioni, fare clic sul nome del file di origine per aprire il file nell'editor di Visual Studio.  
   
-3.  Per continuare l'analisi, tornare alla visualizzazione **Riepilogo** selezionando **Riepilogo** dall'elenco a discesa Visualizza. Esaminare quindi le funzioni in **Funzioni che svolgono più lavoro individuale**. Questo elenco vengono visualizzate le funzioni con i campioni esclusivi più alti. Il codice nel corpo della funzione di queste funzioni eseguite molto lavoro e potrebbe essere possibile ottimizzarlo. Per analizzare ulteriormente una particolare funzione, fare clic sul nome della funzione per visualizzarlo in **Dettagli funzione**.  
+3.  Per continuare l'analisi, tornare alla visualizzazione **Riepilogo** selezionando **Riepilogo** dall'elenco a discesa **Visualizza**. Esaminare quindi le funzioni in **Funzioni che svolgono più lavoro individuale**. Questo elenco vengono visualizzate le funzioni con i campioni esclusivi più alti. Il codice nel corpo della funzione di queste funzioni eseguite molto lavoro e potrebbe essere possibile ottimizzarlo. Per analizzare ulteriormente una particolare funzione, fare clic sul nome della funzione per visualizzarlo in **Dettagli funzione**.  
   
      ![Elenco di funzioni che svolgono la maggior parte del lavoro](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
      Per continuare l'analisi dell'esecuzione della profilatura, è possibile analizzare di nuovo un segmento di dati di profilatura usando la sequenza temporale nella visualizzazione **Riepilogo** per vedere il **Percorso critico** e le **Funzioni che svolgono più lavoro individuale** da un segmento selezionato. Ad esempio, con particolare attenzione ad un picco più piccolo nella sequenza temporale potrebbe rivelare costosi alberi delle chiamate e funzioni che non sono stati visualizzati durante l'analisi dell'intera esecuzione della profilatura.  
   
-     Per analizzare di nuovo un segmento, selezionarlo all'interno della casella della sequenza temporale di riepilogo e quindi fare clic su **Filtro in base a selezione**.  
+     Per analizzare di nuovo un segmento, selezionarlo all'interno della **casella della sequenza temporale di riepilogo** e quindi fare clic su **Filtro in base a selezione**.  
   
      ![Sequenza temporale visualizzazione Riepilogo prestazioni](../profiling/media/performancesummary.png "PerformanceSummary")  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 05/17/2018
   
     -   Per visualizzare informazioni dettagliate sull'avviso, fare clic sull'errore con il pulsante destro del mouse e quindi scegliere **Mostra guida errore**  
   
-##  <a name="Step3"></a> Passaggio 3: Rivedere il codice ed eseguire nuovamente una sessione  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Passaggio 3: Rivedere codice ed eseguire nuovamente una sessione  
  Dopo aver individuato e ottimizzare una o più funzioni, è possibile ripetere l'esecuzione della profilatura e confrontare i dati per visualizzare la differenza che le modifiche apportate alle prestazioni dell'applicazione.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Per modificare il codice e rieseguire il profiler  
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione da rieseguire e quindi fare clic su **Avvio con analisi.**  
   
-4.  Dopo che la sessione è stata rieseguita, viene aggiunto un altro file di dati alla cartella **Report** per la sessione in **Esplora prestazioni**. Selezionare i dati di profilatura, sia nuovi che originali, fare clic con il pulsante destro del mouse sulla selezione e quindi fare clic su **Confronta rapporto di prestazioni**.  
+4.  Dopo che la sessione è stata rieseguita, viene aggiunto un altro file di dati alla cartella *Report* per la sessione in **Esplora prestazioni**. Selezionare i dati di profilatura, sia nuovi che originali, fare clic con il pulsante destro del mouse sulla selezione e quindi fare clic su **Confronta rapporto di prestazioni**.  
   
      Verrà visualizzata una nuova finestra del report, visualizzare i risultati del confronto. Per altre informazioni sull'uso della visualizzazione di confronto, vedere [Procedura: Confrontare i file di dati delle prestazioni](../profiling/how-to-compare-performance-data-files.md).
   

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748192"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Sviluppo di test preventivi con la funzionalità di generazione dall'utilizzo
 
@@ -41,7 +42,7 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
 3.  Nel riquadro centrale scegliere **Progetto unit test** e accettare il nome predefinito `UnitTestProject1`. La figura seguente mostra la finestra di dialogo quando viene visualizzata in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] l'aspetto della finestra di dialogo è simile.
 
-     ![Finestra di dialogo Nuovo progetto di test](../ide/media/newproject_test.png "NewProject_Test")
+     ![Finestra di dialogo Nuovo progetto di test](../ide/media/newproject_test.png)
 
 4.  Scegliere **OK** per chiudere la finestra di dialogo **Nuovo progetto**.
 
@@ -66,9 +67,9 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
 3.  Individuare il metodo `TestMethod1()` e rinominarlo in `DefaultAutomobileIsInitializedCorrectly()`. All'interno di questo metodo creare una nuova istanza di una classe denominata `Automobile`, come illustrato negli screenshot seguenti. Vengono visualizzate una sottolineatura ondulata che indica un errore in fase di compilazione e una lampadina [Azioni rapide](../ide/quick-actions.md) a sinistra (solo C#) o direttamente sotto la sottolineatura a zigzag se si passa il puntatore del mouse sopra.
 
-     ![Azioni rapide in Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Azioni rapide in Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Azioni rapide in C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Azioni rapide in C&#35;](../ide/media/genclass_underline.png)
 
 4.  Scegliere o fare clic sulla lampadina **Azioni rapide**. Verrà visualizzato un messaggio di errore a indicare che il tipo `Automobile` non è definito. Vengono anche proposte alcune soluzioni.
 
@@ -76,7 +77,7 @@ Questo argomento illustra come usare la funzionalità di [generazione dall'utili
 
 6. Nell'elenco **Progetto** fare clic su **GFUDemo\_VB** o **GFUDemo_CS** per indicare a Visual Studio di aggiungere il file al progetto di libreria di classi invece che al progetto di test. Se non è già selezionata, scegliere l'opzione **Crea nuovo file** e denominare il file *Automobile.cs* o *Automobile.vb*.
 
-     ![Finestra di dialogo Genera nuovo tipo](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Finestra di dialogo Genera nuovo tipo](../ide/media/genotherdialog.png)
 
 6.  Fare clic su **OK** per chiudere la finestra di dialogo e creare il nuovo file.
 
@@ -133,7 +134,7 @@ Si supponga che la specifica indichi che un nuovo oggetto `Automobile` può esse
 
      La finestra **Risultati test** è illustrata nella figura seguente.
 
-     ![Risultati dei test non riusciti](../ide/media/testsfailed.png "TestsFailed")
+     ![Risultati dei test non riusciti](../ide/media/testsfailed.png)
 
 2.  Nella finestra **Risultati del test** fare doppio clic su ogni riga dei risultati del test per passare alla posizione di ogni test.
 
@@ -155,7 +156,7 @@ Si supponga che la specifica indichi che un nuovo oggetto `Automobile` può esse
 
      Questa volta il test ha esito positivo. La finestra **Risultati test** è illustrata nella figura seguente.
 
-     ![Risultati dei test riusciti](../ide/media/testspassed.png "TestsPassed")
+     ![Risultati dei test riusciti](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765389"
 ---
-# <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere un metodo di raccolta
+# <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
 
 Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta dei dati relativi alle prestazioni: campionamento, strumentazione e concorrenza. È anche possibile usare il metodo di campionamento o di strumentazione per raccogliere dati di durata e allocazione di memoria .NET.
 
@@ -52,7 +53,7 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 1. In **Esplora prestazioni** selezionare la sessione di prestazioni.
 
-     L'estensione del nome di un file di sessione di prestazioni è psess.
+     L'estensione del nome di un file di sessione di prestazioni è *psess*.
 
 2. Fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi scegliere **Proprietà**.
 
@@ -92,6 +93,6 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
+[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)  
 [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)  
 [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)

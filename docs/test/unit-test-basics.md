@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751517"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -41,7 +42,7 @@ Per un'introduzione agli unit test che mostra direttamente la creazione di codic
 
 In questo argomento si usa lo sviluppo di un'applicazione fittizia denominata `MyBank` come esempio. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test sono scritti in C# e sono presentati tramite il framework per unit test Microsoft per codice gestito. I concetti possono essere tuttavia trasferiti facilmente ad altri linguaggi e altri framework.
 
- ![Soluzione MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![Soluzione MyBank](../test/media/ute_mybanksolution.png)
 
  Il primo tentativo di progettazione per l'applicazione `MyBank` include un componente conti che rappresenta un singolo conto e le rispettive transazioni con la banca e un componente database che rappresenta la funzionalità per l'aggregazione e la gestione dei singoli conti.
 
@@ -85,15 +86,15 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
 1.  Nella finestra dell'editor del codice fare clic con il pulsante destro del mouse e scegliere **Crea unit test** dal menu di scelta rapida.
 
-     ![Dalla finestra dell'editor visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png)
 
 2.  Fare clic su OK per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
 
-     ![Fare clic con il pulsante destro del mouse nell'editor e scegliere Crea unit test](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Fare clic con il pulsante destro del mouse nell'editor e scegliere Crea unit test](../test/media/createunittestsdialog.png)
 
 3.  Gli stub di unit test vengono creati in un nuovo progetto di unit test per tutti i metodi nella classe.
 
-     ![Gli unit test vengono creati](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Vengono creati gli unit test](../test/media/createunittestsstubs.png)
 
 4.  Passare quindi alle informazioni seguenti per apprendere come [aggiungere codice ai metodi di unit test](#BKMK_Writing_your_tests) per rendere significativo lo unit test ed eventuali unit test aggiuntivi che è possibile aggiungere per testare accuratamente il codice.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
 
- ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
 
  Durante l'esecuzione, la scrittura e la nuova esecuzione di test, la visualizzazione predefinita di Esplora test mostra i risultati in gruppi di **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile scegliere un'intestazione di gruppo per aprire la visualizzazione che mostra tutti i test disponibili nel gruppo.
 
@@ -214,11 +215,11 @@ Quando si compila il progetto di test, i test vengono visualizzati in Esplora te
 
 La barra degli strumenti di Esplora test permette di individuare, organizzare ed eseguire i test a cui si è interessati.
 
- ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
 
  È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un insieme di test, un riepilogo dei test verrà visualizzato nella parte inferiore della finestra Esplora test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri Test** dal menu di scelta rapida (tastiera: F12) per visualizzare il codice sorgente per il test selezionato.
 
- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
@@ -227,17 +228,17 @@ La barra degli strumenti di Esplora test permette di individuare, organizzare ed
 
 |||
 |-|-|
-|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di Esplora test.|
+|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di Esplora test.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrare e raggruppare l'elenco dei test
 
 Quando è disponibile un numero elevato di test, è possibile digitare nella casella di testo di Esplora test per filtrare l'elenco in base alla stringa specificata. È possibile limitare ulteriormente i risultati scegliendo uno dei filtri disponibili nell'elenco.
 
- ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
+|![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
 
  Per altre informazioni, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md).
 
@@ -260,7 +261,7 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugging-in
 
  **R:** Usare IntelliSense per generare classi e metodi nel codice del progetto. Scrivere un'istruzione in un metodo di test che chiama la classe o il metodo da generare, quindi aprire il menu di IntelliSense sotto la chiamata. Se la chiamata è per un costruttore della nuova classe, scegliere **Genera nuovo tipo** dal menu, quindi eseguire la procedura guidata per inserire la classe nel progetto di codice. Se la chiamata è per un metodo, scegliere **Genera nuovo metodo** dal menu di IntelliSense.
 
- ![Menu IntelliSense Genera stub di metodo](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Menu IntelliSense Genera stub di metodo](../test/media/ute_generatemethodstubintellisense.png)
 
  **D: È possibile creare unit test che accettano più set di dati come input per eseguire il test?**
 
@@ -304,9 +305,9 @@ Il metodo con attributi viene eseguito una volta per ogni riga della tabella. In
 
  I risultati del code coverage sono visualizzati nella finestra Risultati code coverage.
 
- ![Risultati del code coverage](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Risultati code coverage](../test/media/ute_codecoverageresults.png)
 
- Altre informazioni sul [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+ Altre informazioni sul [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
  **D: Come è possibile testare metodi nel codice con dipendenze esterne?**
 
@@ -326,6 +327,6 @@ Altre informazioni sull' [isolamento di metodi di unit test tramite Microsoft Fa
 
  **R:** Sì, seguire questa procedura per [trovare e installare altri framework](../test/install-third-party-unit-test-frameworks.md). Dopo aver riavviato Visual Studio, riaprire la soluzione per creare unit test e quindi selezionare i framework installati:
 
- ![Selezionare altri framework di unit test installati](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Selezionare un altro framework di unit test installato](../test/media/createunittestsdialogextensions.png)
 
  Gli stub di unit test verranno creati usando il framework selezionato.

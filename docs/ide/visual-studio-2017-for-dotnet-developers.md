@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748751"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guida per la produttività di Visual Studio 2017 per gli sviluppatori .NET
 
@@ -88,7 +89,7 @@ Visual Studio 2017 include molti refactoring, azioni di generazione del codice e
   - [SonarLint per Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Refactoring in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Refactoring in Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Accesso agli utilizzi, all'implementazione e alle origini decompilate
 Visual Studio 2017 include molte funzionalità che consentono di eseguire ricerche nella codebase e di esplorarla. Sono disponibili altre informazioni sulle [funzionalità di esplorazione del codice](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Sono state aggiunte moltissime nuove funzionalità di debug in Visual Studio 201
 - Il debug [Torna indietro](../debugger/how-to-use-intellitrace-step-back.md) consente di tornare ai punti di interruzione o ai passaggi precedenti e visualizzare lo stato precedente dell'applicazione.
 - [Debug snapshot](/azure/application-insights/app-insights-snapshot-debugger) consente di esaminare lo stato di un'applicazione Web attiva nel momento in cui è stata generata un'eccezione (è necessario essere in Azure).
 
-![Nuovo Helper eccezioni in VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![Nuovo Helper eccezioni in VS2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Usare il controllo della versione con i progetti
 È possibile usare Git o il controllo della versione di Team Foundation per archiviare e aggiornare il codice in Visual Studio.

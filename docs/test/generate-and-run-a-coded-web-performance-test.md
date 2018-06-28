@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 97c7728cf784c3ef11bb72cdb7abc9b441cd68cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750854"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -75,11 +76,11 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 
 6.  Eseguire il test.
 
-     ![Eseguire il test codificato delle prestazioni Web](../test/media/web_test_coded_generate_run.png "Web_Test_Coded_Generate_Run")
+     ![Eseguire il test delle prestazioni Web codificato](../test/media/web_test_coded_generate_run.png)
 
      E poiché il giorno in cui è stato eseguito era un mercoledì...
 
-     ![Risultati del test codificato delle prestazioni Web](../test/media/web_test_coded_generate_results.png "Web_Test_Coded_Generate_Results")
+     ![Risultati del test prestazioni Web codificato](../test/media/web_test_coded_generate_results.png)
 
 ## <a name="qa"></a>Domande e risposte
 

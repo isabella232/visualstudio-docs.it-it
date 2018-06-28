@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572153"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 
@@ -42,7 +43,7 @@ In questa procedura dettagliata vengono illustrate le operazioni seguenti:
 Il campionamento è un metodo di profilatura mediante il quale viene eseguito periodicamente il polling di un processo specifico per determinare la funzione attiva. I dati risultanti forniscono un conteggio della frequenza con cui la funzione si trovava all'inizio dello stack di chiamate quando è stato eseguito il campionamento del processo.
 
 > [!NOTE]
-> Gli strumenti da riga di comando degli Strumenti di Profilatura sono contenuti nella sottodirectory \Team Tools\Performance Tools della directory di installazione di Visual Studio. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra Prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specifica del percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax è un'applicazione a 32 bit.
+> Gli strumenti da riga di comando degli Strumenti di profilatura sono contenuti nella sottodirectory *\Team Tools\Performance Tools* della directory di installazione di Visual Studio. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra Prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specifica del percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax è un'applicazione a 32 bit.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Per eseguire la profilatura dell'applicazione PeopleTrax tramite il metodo di campionamento
 
@@ -58,13 +59,13 @@ Il campionamento è un metodo di profilatura mediante il quale viene eseguito pe
     VSPerfCLREnv /sampleon
     ```
 
-5. Avviare la profilatura eseguendo VSPerfCmd.exe, ovvero lo strumento da riga di comando che controlla il profiler. Il comando seguente avvia l'applicazione e il profiler in modalità di campionamento:
+5. Avviare la profilatura eseguendo *VSPerfCmd.exe*, ovvero lo strumento da riga di comando che controlla il profiler. Il comando seguente avvia l'applicazione e il profiler in modalità di campionamento:
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     Il processo del profiler viene avviato e collegato al processo PeopleTrax.exe. Il processo del profiler inizia a scrivere i dati di profilatura raccolti nel file di report.
+     Il processo del profiler viene avviato e collegato al processo *PeopleTrax.exe*. Il processo del profiler inizia a scrivere i dati di profilatura raccolti nel file di report.
 
 6. Fare clic su **Get People**.
 
@@ -86,13 +87,13 @@ Il campionamento è un metodo di profilatura mediante il quale viene eseguito pe
     VSPerfCLREnv /sampleoff
     ```
 
-11. I dati di profilatura vengono archiviati nel file con estensione vsp. Analizzare i risultati usando uno dei metodi seguenti:
+11. I dati di profilatura vengono archiviati nel file con estensione *vsp*. Analizzare i risultati usando uno dei metodi seguenti:
 
-    - Aprire il file con estensione vsp nell'IDE di Visual Studio.
+    - Aprire il file con estensione *vsp* nell'IDE di Visual Studio.
 
          oppure
 
-    - Generare un file con valori delimitati da virgole (CSV) tramite lo strumento da riga di comando VSPerfReport.exe. Per generare report da usare all'esterno dell'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], usare il comando seguente:
+    - Generare un file con valori delimitati da virgole (*csv*) tramite lo strumento da riga di comando *VSPerfReport.exe*. Per generare report da usare all'esterno dell'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], usare il comando seguente:
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

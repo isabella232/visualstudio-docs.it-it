@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c70f1ba622e8fb24c2ece0f52c9c653051d588
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747118"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
 
@@ -41,7 +42,7 @@ La figura seguente illustra il grafico shader completato e un'anteprima dello sh
 > [!NOTE]
 > Nella figura è stato specificato un colore arancione per illustrare meglio l'effetto dello shader.
 
-![Grafico shader e risultato in un modello 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")
+![Grafico shader e risultato in un modello 3&#45;D](../designers/media/digit-flat-color-effect.png)
 
 Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per altre informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [Finestra di progettazione shader](../designers/shader-designer.md).
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573167"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 La **visualizzazione thread** è la visualizzazione più dettagliata e completa nel Visualizzatore di concorrenza (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Tramite questa visualizzazione, è possibile identificare se i thread sono in esecuzione o se sono bloccati a causa di operazioni di sincronizzazione, di I/O oppure per altri motivi.  
@@ -54,7 +55,7 @@ La **visualizzazione thread** è la visualizzazione più dettagliata e completa 
   
 -   Individuazione delle dipendenze tra thread di lavoro e percorsi critici di esecuzione.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Analisi di intervalli di tempo specifici e thread  
+## <a name="examine-specific-time-intervals-and-threads"></a>Esaminare intervalli di tempo e thread specifici  
  La visualizzazione Thread mostra una sequenza temporale. È possibile usare le funzionalità di zoom e panoramica all'interno della sequenza temporale per esaminare gli intervalli specifici e i thread dell'applicazione. Sull'asse x viene rappresentato il tempo mentre sull'asse y sono riportati diversi canali:  
   
 -   Due canali di I/O per ogni unità disco del sistema, un canale per la lettura e uno per la scrittura.  
@@ -106,10 +107,10 @@ Visualizzazione Thread
   
  Se in un determinato momento solo un thread è verde (in esecuzione), l'app potrebbe non sfruttare completamente la concorrenza nel sistema. È possibile usare il grafico della sequenza temporale per esaminare le dipendenze tra thread e le relazioni temporali tra i thread di blocco e quelli bloccati. Per riordinare i thread, selezionare un thread e quindi nella barra degli strumenti scegliere il pulsante freccia su o freccia giù. Per nascondere i thread, selezionarli e quindi scegliere il pulsante **Nascondi thread**.  
   
-### <a name="profile-reports"></a>Rapporti dei profili  
+### <a name="profile-reports"></a>Report dei profili  
  Sotto il grafico della sequenza temporale sono visualizzati un profilo della sequenza temporale e un riquadro con schede per vari rapporti. I rapporti si aggiornano automaticamente quando si cambia la visualizzazione Thread. Per le tracce di grandi dimensioni, il riquadro dei rapporti potrebbe non essere disponibile mentre gli aggiornamenti vengono calcolati. Ogni rapporto dispone di due regolazioni di filtro: Riduzione rumore e Just My Code. Usare Riduzione rumore per filtrare le voci dell'albero delle chiamate in cui viene impiegata una quantità di tempo limitata. Il valore predefinito del filtro è 2%, ma può essere impostato qualsiasi valore compreso tra 0% e 99%. Per visualizzare solo l'albero delle chiamate per il codice, selezionare la casella di controllo **Just My Code**. Per visualizzare tutti gli alberi delle chiamate, deselezionarla.  
   
-#### <a name="profile-report"></a>Rapporto profili  
+#### <a name="profile-report"></a>Report profili  
  Questa scheda mostra i rapporti corrispondenti alle voci nella legenda attiva. Per visualizzare un rapporto, scegliere una delle voci.  
   
 #### <a name="current-stack"></a>Stack corrente  
@@ -121,10 +122,10 @@ Visualizzazione Thread
 #### <a name="execution"></a>Esecuzione  
  Il rapporto di esecuzione riporta la suddivisione del tempo che l'applicazione ha impiegato nell'esecuzione.  
   
- Per trovare la riga di codice in cui è trascorso il tempo di esecuzione, espandere l'albero delle chiamate e quindi scegliere **Visualizza origine** o **Visualizza siti di chiamata** dal menu di scelta rapida per la voce dell'albero delle chiamate. **Visualizzazione origine** consente di individuare la riga di codice eseguita. **Visualizza siti di chiamata** permette di individuare la riga di codice che ha chiamato la riga di codice eseguita. Se esiste un solo sito di chiamata, la riga di codice corrispondente è evidenziata. Se sono presenti più siti di chiamata, è possibile selezionare quello desiderato nella finestra di dialogo visualizzata e quindi scegliere il pulsante **Vai a origine** per evidenziare il codice del sito di chiamata. È spesso molto utile individuare il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi. Per altre informazioni, vedere [Rapporto Profilo di esecuzione](../profiling/execution-profile-report.md).  
+ Per trovare la riga di codice in cui è trascorso il tempo di esecuzione, espandere l'albero delle chiamate e quindi scegliere **Visualizza origine** o **Visualizza siti di chiamata** dal menu di scelta rapida per la voce dell'albero delle chiamate. **Visualizzazione origine** consente di individuare la riga di codice eseguita. **Visualizza siti di chiamata** permette di individuare la riga di codice che ha chiamato la riga di codice eseguita. Se esiste un solo sito di chiamata, la riga di codice corrispondente è evidenziata. Se sono presenti più siti di chiamata, è possibile selezionare quello desiderato nella finestra di dialogo visualizzata e quindi scegliere il pulsante **Vai a origine** per evidenziare il codice del sito di chiamata. È spesso molto utile individuare il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi. Per altre informazioni, vedere [Report del profilo di esecuzione](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Sincronizzazione  
- Il rapporto di sincronizzazione mostra le chiamate responsabili dei blocchi di sincronizzazione, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sincronizzazione](../profiling/synchronization-time.md).  
+ Il rapporto di sincronizzazione mostra le chiamate responsabili dei blocchi di sincronizzazione, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Periodo di sincronizzazione](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>I/O  
  Il rapporto di I/O mostra le chiamate responsabili dei blocchi di I/O, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md).  
@@ -142,10 +143,10 @@ Visualizzazione Thread
  Il rapporto di elaborazione interfaccia utente mostra le chiamate responsabili dei blocchi di elaborazione dell'interfaccia utente, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Riepilogo per thread  
- Questa scheda mostra una visualizzazione a colonne di colori diversi del tempo totale trascorso da ciascun thread nell'esecuzione, nel blocco, nell'I/O e in altri stati. Le colonne sono etichettate nella parte inferiore. Quando si modifica il livello di zoom nel grafico della sequenza temporale, questa scheda viene aggiornata automaticamente. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra. Se il thread desiderato non è presente, è possibile nascondere gli altri thread. Per altre informazioni, vedere [Rapporto di riepilogo per thread](../profiling/per-thread-summary-report.md).  
+ Questa scheda mostra una visualizzazione a colonne di colori diversi del tempo totale trascorso da ciascun thread nell'esecuzione, nel blocco, nell'I/O e in altri stati. Le colonne sono etichettate nella parte inferiore. Quando si modifica il livello di zoom nel grafico della sequenza temporale, questa scheda viene aggiornata automaticamente. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra. Se il thread desiderato non è presente, è possibile nascondere gli altri thread. Per altre informazioni, vedere [Report di riepilogo per thread](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Operazioni su disco  
- Questa scheda mostra i processi e i thread coinvolti in operazioni di I/O su disco per conto del processo corrente, i file interessati (ad esempio, le DLL che sono state caricate), il numero di byte letti e altre informazioni. È possibile usare questo rapporto per valutare il tempo impiegato nell'accesso ai file durante l'esecuzione, specialmente se il processo sembra presentare vincoli di I/O. Per altre informazioni, vedere [Rapporto delle operazioni su disco](../profiling/disk-operations-report-threads-view.md).  
+ Questa scheda mostra i processi e i thread coinvolti in operazioni di I/O su disco per conto del processo corrente, i file interessati (ad esempio, le DLL che sono state caricate), il numero di byte letti e altre informazioni. È possibile usare questo rapporto per valutare il tempo impiegato nell'accesso ai file durante l'esecuzione, specialmente se il processo sembra presentare vincoli di I/O. Per altre informazioni, vedere [Report delle operazioni su disco](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)

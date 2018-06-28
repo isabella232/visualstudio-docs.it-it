@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692301"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
 I marcatori del visualizzatore di concorrenza sono icone che rappresentano eventi in un'app.  In genere, l'applicazione genera questi eventi per definire fasi o occorrenze di un'applicazione.  Gli eventi possono essere generati dall'app o da librerie e runtime usati dall'app.  
@@ -59,10 +60,10 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
  Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) è possibile usare la scheda Marcatori per controllare se visualizzare nel visualizzatore di concorrenza i marcatori di varie origini e filtrare i marcatori in base a importanza e categoria.  
   
 ## <a name="markers-from-eventsource"></a>Marcatori di EventSource  
- Il visualizzatore di concorrenza può visualizzare anche eventi EventSource.  Per altre informazioni, vedere [Visualizing EventSource Events as Markers](../profiling/visualizing-eventsource-events-as-markers.md) (Visualizzazione di eventi EventSource come marcatori).  
+ Il visualizzatore di concorrenza può visualizzare anche eventi EventSource.  Per altre informazioni, vedere [Visualizzazione di eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Flag Markers](../profiling/flag-markers.md)  (Marcatori di flag)  
- [Message Markers](../profiling/message-markers.md)  (Marcatori di messaggio)  
- [Span Markers](../profiling/span-markers.md) (Marcatori di span)  
- [Visualizzazione di eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md)
+ [Marcatori di flag](../profiling/flag-markers.md)   
+ [Marcatori di messaggi](../profiling/message-markers.md)   
+ [Marcatori di span](../profiling/span-markers.md)   
+ [Visualizzare eventi EventSource come marcatori](../profiling/visualizing-eventsource-events-as-markers.md)

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477392"
 ---
 # <a name="vsperf"></a>VSPerf
 Usare lo strumento della riga di comando **VsPerf** per:  
@@ -25,16 +26,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
   
  Per altre informazioni sulle opzioni di profilatura, vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> In questo argomento  
- In questo argomento vengono descritte le opzioni che è possibile usare con lo strumento della riga di comando `vsperf.exe`. Di seguito sono elencate le diverse sezioni di questo argomento:  
-  
- [Solo app UWP](#BKMK_windows_store_apps_only)  
-  
- [Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [Tutte le applicazioni](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> Solo app UWP  
+## <a name="uwp-apps-only"></a>Solo app UWP  
  Queste opzioni si applicano solo alle app UWP.  
   
 |||  
@@ -45,7 +37,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/noclr**|Facoltativo. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|  
 |**/listapps**|Elencare i valori Name e PackageFullName delle app installate.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012  
  Queste opzioni non funzionano per le app UWP.  
   
 |||  
@@ -54,7 +46,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/args:{ExecutableArguments}**|Specifica gli argomenti della riga di comando da passare alla destinazione **/launch**.|  
 |**/console**|Esegue la destinazione **/launch** in una nuova finestra di comando.|  
   
-##  <a name="BKMK_All_applications"></a> Tutte le applicazioni  
+## <a name="all-applications"></a>Tutte le applicazioni  
  Queste opzioni si applicano a tutte le applicazioni Windows 8 o Windows Server 2012.  
   
 |||  

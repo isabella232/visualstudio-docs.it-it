@@ -9,17 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 835d8fbefa778147f2397eefad055cb96fb82c90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751650"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
-In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
+Questa procedura dettagliata insegna come creare, modificare e gestire un test codificato dell'interfaccia utente per testare un'app di Windows Presentation Framework (WPF). Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring dei controlli.
 
-## <a name="create-a-simple-wpf-application"></a>Creare una semplice applicazione WPF
+## <a name="create-a-wpf-app"></a>Creare un'app WPF
 
 1.  Nel menu **File** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
@@ -49,7 +50,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 12. Selezionare il controllo Checkbox. Nella finestra Proprietà modificare il valore della proprietà **Name** da \<No Name> a checkBox1 e quindi deselezionare la proprietà **IsEnabled**.
 
-     ![Applicazione WPF semplice](../test/media/codedui_wpfapp.png "CodedUI_WPFApp")
+     ![Applicazione WPF semplice](../test/media/codedui_wpfapp.png)
 
 13. Fare doppio clic sul pulsante per aggiungere un gestore eventi Click.
 
@@ -96,7 +97,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 16. Salvare il file.
 
-### <a name="verify-the-wpf-application-runs-correctly"></a>Verificare che l'applicazione WPF venga eseguita correttamente
+### <a name="run-the-wpf-app"></a>Eseguire l'app WPF
 
 1.  Nel menu **Debug** scegliere **Avvia debug** o premere **F5**.
 
@@ -108,83 +109,88 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 4.  Chiudere SimpleWPFApp.
 
-### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Creare ed eseguire un test codificato dell'interfaccia utente per SimpleWPFApp
+## <a name="create-a-shortcut-to-the-wpf-app"></a>Creare un collegamento all'app WPF
 
-1.  Individuare l'applicazione SimpleWPFApp creata precedentemente. Per impostazione predefinita, l'applicazione viene salvata in C:\Users\\\<nomeutente\>\Documenti\Visual Studio \<versione>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1.  Individuare l'applicazione SimpleWPFApp creata precedentemente.
 
-2.  Creare un collegamento sul desktop all'applicazione SimpleWPFApp. Fare clic con il pulsante destro del mouse su SimpleWPFApp.exe e scegliere **Copia**. Sul desktop fare clic con il pulsante destro del mouse e scegliere **Incolla collegamento**.
+2.  Creare un collegamento sul desktop all'applicazione SimpleWPFApp. Fare clic con il pulsante destro del mouse su *SimpleWPFApp.exe* e scegliere **Copia**. Sul desktop fare clic con il pulsante destro del mouse e scegliere **Incolla collegamento**.
 
     > [!TIP]
     > Un collegamento all'applicazione rende più facile aggiungere o modificare i test codificati dell'interfaccia utente per l'applicazione, perché consente di avviare rapidamente l'applicazione.
 
-3.  In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
+## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Creare un test codificato dell'interfaccia utente per SimpleWPFApp
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-4.  Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Test**.
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo progetto** .
 
-5.  Nel riquadro centrale selezionare il modello **Progetto di test codificato dell'interfaccia utente**.
+1. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Test**.
 
-6.  Scegliere **OK**.
+1. Nel riquadro centrale selezionare il modello **Progetto di test codificato dell'interfaccia utente**.
 
-     In Esplora soluzioni il nuovo progetto di test codificato dell'interfaccia utente denominato **CodedUITestProject1** viene aggiunto alla soluzione.
+   > [!NOTE]
+   > Se non viene visualizzato il modello **progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+
+1. Scegliere **OK**.
+
+     Il nuovo progetto di test codificato dell'interfaccia utente denominato **CodedUITestProject1** viene aggiunto alla soluzione.
 
      Viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
 
-7.  Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e fare clic su **OK**.
+1. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e fare clic su **OK**.
 
-     Viene visualizzata la finestra UIMap – Generatore di test codificati dell'interfaccia utente e Visual Studio è ridotto a icona.
+     Viene visualizzata la finestra di dialogo **UIMap – Generatore di test codificati dell'interfaccia utente** e Visual Studio è ridotto a icona.
 
      Per altre informazioni sulle opzioni disponibili nella finestra di dialogo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
 
-8.  Scegliere **Avvia registrazione** in UIMap - Generatore di test codificati dell'interfaccia utente.
+1. Scegliere **Avvia registrazione** nella finestra di dialogo **UIMap - Generatore di test codificati dell'interfaccia utente**.
 
-     ![Avvio della registrazione](../test/media/cuit_builder_record.png "CUIT_Builder_Record")
+     ![Avviare la registrazione](../test/media/cuit_builder_record.png)
 
      Se necessario, è possibile sospendere la registrazione, ad esempio per controllare la posta elettronica in arrivo.
 
-     ![Sospensione della registrazione](../test/media/cuit_.png "CUIT_")
+     ![Sospendere la registrazione](../test/media/cuit_.png)
 
     > [!WARNING]
     > Tutte le azioni eseguite sul desktop verranno registrate. Sospendere la registrazione se si eseguono azioni che possono comportare l'inserimento di dati sensibili nella registrazione.
 
-9. Avviare SimpleWPFApp usando il collegamento sul desktop.
+1. Avviare SimpleWPFApp usando il collegamento sul desktop.
 
      Anche in questo caso, si noti che il controllo CheckBox è disabilitato.
 
-10. In SimpleWPFApp scegliere **Avvia**.
+1. In SimpleWPFApp scegliere **Avvia**.
 
      L'indicatore di stato dovrebbe essere completato al 100% in pochi secondi.
 
-11. Selezionare il controllo CheckBox, ora abilitato.
+1. Selezionare il controllo CheckBox, ora abilitato.
 
-12. Chiudere l'applicazione SimpleWPFApp.
+1. Chiudere l'applicazione SimpleWPFApp.
 
-13. In UIMap - Generatore di test codificati dell'interfaccia utente scegliere **Genera codice**.
+1. Nella finestra di dialogo **UIMap - Generatore di test codificati dell'interfaccia utente** scegliere **Genera codice**.
 
-14. In Nome metodo digitare **SimpleAppTest** e scegliere **Aggiungi e genera**. Entro pochi secondi il test codificato dell'interfaccia utente verrà visualizzato e aggiunto alla soluzione.
+1. Nella casella **Nome metodo** digitare **SimpleAppTest** e scegliere **Aggiungi e genera**. Entro pochi secondi il test codificato dell'interfaccia utente verrà visualizzato e aggiunto alla soluzione.
 
-15. Chiudere UIMap - Generatore di test codificati dell'interfaccia utente.
+1. Chiudere **UIMap - Generatore di test codificati dell'interfaccia utente**.
 
-     Il file CodedUITest1.cs verrà visualizzato nell'editor del codice.
+     Il file *CodedUITest1.cs* verrà visualizzato nell'editor del codice.
 
-16. Salvare il progetto.
+1. Salvare il progetto.
 
-### <a name="run-the-coded-ui-test"></a>Eseguire il test codificato dell'interfaccia utente
+### <a name="run-the-test"></a>Eseguire il test
 
-1.  Nel menu **Test** scegliere **Finestre** e quindi **Esplora test**.
+1. Nel menu **Test** scegliere **Finestre** e quindi **Esplora test**.
 
-2.  Scegliere **Compila soluzione** dal menu **Compila**.
+2. Scegliere **Compila soluzione** dal menu **Compila**.
 
-3.  Nel file CodedUITest1.cs individuare il metodo **CodedUITestMethod**, fare clic con il pulsante destro del mouse e scegliere **Esegui test** oppure eseguire i test da Esplora test.
+3. Nel file *CodedUITest1.cs* individuare il metodo **CodedUITestMethod**, fare clic con il pulsante destro del mouse e scegliere **Esegui test** oppure eseguire i test da **Esplora test**.
 
-     Durante l'esecuzione del test codificato dell'interfaccia utente, SimpleWPFApp rimane visibile. Vengono eseguiti i passaggi effettuati nella procedura precedente. Tuttavia, quando nel test è effettuato il tentativo di selezionare la casella di controllo relativa al controllo CheckBox, nella finestra Risultati test viene indicato che il test non è stato completato. Ciò è dovuto al fatto che durante l'esecuzione del test è effettuato il tentativo di selezionare la casella di controllo, senza considerare che il controllo CheckBox rimane disabilitato finché l'indicatore di stato non sarà completato al 100%. È possibile correggere questo e problemi analoghi usando i diversi metodi `UITestControl.WaitForControlXXX()` disponibili per il test codificato dell'interfaccia utente. Nella procedura seguente verrà descritto l'uso del metodo `WaitForControlEnabled()` per correggere il problema che ha impedito il corretto funzionamento di questo test. Per altre informazioni, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Durante l'esecuzione del test codificato dell'interfaccia utente, SimpleWPFApp rimane visibile. Vengono eseguiti i passaggi effettuati nella procedura precedente. Tuttavia, quando nel test è effettuato il tentativo di selezionare la casella di controllo relativa al controllo CheckBox, nella finestra **Risultati test** viene indicato che il test non è stato completato. Ciò è dovuto al fatto che durante l'esecuzione del test è effettuato il tentativo di selezionare la casella di controllo, senza considerare che il controllo CheckBox rimane disabilitato finché l'indicatore di stato non sarà completato al 100%. È possibile correggere questo e problemi analoghi usando i diversi metodi `UITestControl.WaitForControlXXX()` disponibili per il test codificato dell'interfaccia utente. Nella procedura seguente verrà descritto l'uso del metodo `WaitForControlEnabled()` per correggere il problema che ha impedito il corretto funzionamento di questo test. Per altre informazioni, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-### <a name="edit-and-rerun-the-coded-ui-test"></a>Modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
+## <a name="edit-and-rerun-the-coded-ui-test"></a>Modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
 
-1.  Nella finestra Esplora test selezionare il test non riuscito e quindi nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()**.
+1.  Nella finestra **Esplora test** selezionare il test non riuscito e quindi nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()**.
 
-2.  Il file UIMap.Designer.cs verrà aperto con il punto di errore evidenziato nel codice:
+2.  Il file *UIMap.Designer.cs* verrà aperto con il punto di errore evidenziato nel codice:
 
     ```csharp
     // Select 'CheckBox' check box
@@ -194,25 +200,25 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 3.  Per correggere questo problema, è possibile fare in modo che il test codificato dell'interfaccia utente attenda che il controllo CheckBox sia abilitato prima di continuare fino a questa riga usando il metodo `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > Il file UIMap.Designer.cs non deve essere modificato. Qualsiasi modifica del codice apportata nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. Se è necessario modificare un metodo registrato, copiarlo nel file UIMap.cs e rinominarlo. Il file UIMap.cs può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file UIMapDesigner.cs. È necessario rimuovere il riferimento al metodo originale nel file Coded UITest.cs e sostituirlo con il nome del metodo rinominato.
+    > Il file *UIMap.Designer.cs* non deve essere modificato. Qualsiasi modifica del codice apportata verrà sovrascritta ogni volta che si genera codice usando **UIMap - Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file *UIMapDesigner.cs*. È necessario rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
 
-4.  In Esplora soluzioni individuare **UIMap.uitest** nel progetto di test codificato dell'interfaccia utente.
+4.  In **Esplora soluzioni** individuare *UIMap.uitest* nel progetto di test codificato dell'interfaccia utente.
 
-5.  Aprire il menu di scelta rapida per **UIMap.uitest** e scegliere **Apri**.
+5.  Aprire il menu di scelta rapida per *UIMap.uitest* e scegliere **Apri**.
 
      Il test codificato dell'interfaccia utente viene visualizzato nell'Editor test codificati dell'interfaccia utente. È quindi possibile visualizzare e modificare il test codificato dell'interfaccia utente.
 
-6.  Nel riquadro **Azioni dell'interfaccia utente** selezionare il metodo di test (SimpleAppTest) da spostare nel file di UIMap.cs o UIMap.vb per facilitare la funzionalità di codice personalizzato che non sarà sovrascritta quando il codice di test viene ricompilato.
+6.  Nel riquadro **Azioni dell'interfaccia utente** selezionare il metodo di test (SimpleAppTest) che si desidera spostare nel file *UIMap.cs* o *UIMap.vb*. Lo spostamento del metodo in un altro file consente di aggiungere codice personalizzato che non verrà sovrascritto in fase di ricompilazione del codice di test.
 
-7.  Scegliere il pulsante **Sposta codice** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente.
+7.  Scegliere il pulsante **Sposta codice** sulla barra degli strumenti dell'**Editor di test codificati dell'interfaccia utente**.
 
-8.  Verrà visualizzata una finestra di dialogo di Microsoft Visual Studio Si tratta di un avviso indicante che il metodo verrà spostato dal file UIMap.uitest al file UIMap.cs e che non sarà più possibile modificare il metodo usando l'Editor test codificati dell'interfaccia utente. Scegliere **Sì**.
+8.  Verrà visualizzata una finestra di dialogo di Microsoft Visual Studio Si tratta di un avviso indicante che il metodo verrà spostato dal file *UIMap.uitest* al file *UIMap.cs* e che non sarà più possibile modificare il metodo usando l'Editor test codificati dell'interfaccia utente. Scegliere **Sì**.
 
-     Il metodo di test verrà rimosso dal file UIMap.uitest e non verrà più visualizzato nel riquadro delle azioni dell'interfaccia utente. Per modificare il file di test spostato, aprire il file UIMap.cs da Esplora soluzioni.
+     Il metodo di test verrà rimosso dal file *UIMap.uitest* e non verrà più visualizzato nel riquadro delle azioni dell'interfaccia utente. Per modificare il file di test spostato, aprire il file *UIMap.cs* da **Esplora soluzioni**.
 
-9. Sulla barra degli strumenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] scegliere **Salva**.
+9. Nella barra degli strumenti di Visual Studio scegliere **Salva**.
 
-     Gli aggiornamenti al metodo di test vengono salvati nel file UIMap.Designer.
+     Gli aggiornamenti al metodo di test vengono salvati nel file *UIMap.Designer*.
 
     > [!WARNING]
     > Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice.
@@ -234,7 +240,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. Nel file CodedUITest1.cs individuare il metodo **CodedUITestMethod** e impostare come commento o rinominare il riferimento al metodo SimpleAppTest() originale e quindi sostituirlo con il nuovo metodo ModifiedSimpleAppTest():
+13. Nel file *CodedUITest1.cs* individuare il metodo **CodedUITestMethod** e impostare come commento o rinominare il riferimento al metodo SimpleAppTest() originale e quindi sostituirlo con il nuovo metodo ModifiedSimpleAppTest():
 
     ```csharp
     [TestMethod]
@@ -251,23 +257,23 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 15. Fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod** e selezionare **Esegui test**.
 
-16. Questa volta tutti i passaggi del test codificato dell'interfaccia utente vengono completati e nella finestra Esplora test è visualizzato **Superato**.
+16. Questa volta tutti i passaggi del test codificato dell'interfaccia utente vengono completati e nella finestra **Esplora test** è visualizzato **Superato**.
 
-### <a name="refactor-a-control-in-the-simplewpfapp"></a>Effettuare il refactoring di un controllo in SimpleWPFApp
+## <a name="refactor-a-control-in-simplewpfapp"></a>Effettuare il refactoring di un controllo in SimpleWPFApp
 
-1.  Nel file MainWindow.xaml selezionare il pulsante nella finestra di progettazione.
+1.  Nel file *MainWindow.xaml* selezionare il pulsante nella finestra di progettazione.
 
-2.  Nella parte superiore della finestra Proprietà modificare il valore della proprietà **Name** da button1 a buttonA.
+2.  Nella parte superiore della finestra **Proprietà** modificare il valore della proprietà **Name** da **button1** a **buttonA**.
 
 3.  Scegliere **Compila soluzione** dal menu **Compila**.
 
-4.  In Esplora test eseguire **CodedUITestMethod1**.
+4.  In **Esplora test** eseguire **CodedUITestMethod1**.
 
      Il test non funziona perché il test codificato dell'interfaccia utente non è in grado di individuare il pulsante mappato in origine come button1 in UIMap. Il refactoring può influire in questo modo sui test codificati dell'interfaccia utente.
 
-5.  Nella sezione **StackTrace** della finestra Esplora test scegliere il primo collegamento accanto a **UIMpa.ModifiedSimpleAppTest()**.
+5.  Nella sezione **StackTrace** di **Esplora test** scegliere il primo collegamento accanto a **UIMpa.ModifiedSimpleAppTest()**.
 
-     Verrà aperto il file UIMap.cs. Il punto di errore è evidenziato nel codice:
+     Verrà aperto il file *UIMap.cs*. Il punto di errore è evidenziato nel codice:
 
     ```csharp
     // Click 'Start' button
@@ -276,19 +282,19 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Si noti che nella riga di codice precedente di questa procedura viene usato `UiStartButton`, che corrisponde al nome di UIMap prima del refactoring.
 
-     Per correggere il problema, è possibile aggiungere il controllo di cui è stato effettuato il refactoring a UIMap tramite il Generatore di test codificati dell'interfaccia utente. È possibile aggiornare il codice del test in modo che venga usato il codice, come illustrato nella procedura seguente.
+     Per correggere il problema, è possibile aggiungere il controllo di cui è stato effettuato il refactoring a UIMap tramite il **Generatore di test codificati dell'interfaccia utente**. È possibile aggiornare il codice del test in modo che venga usato il codice, come illustrato nella procedura seguente.
 
-### <a name="map-refactored-control-and-edit-and-rerun-the-coded-ui-test"></a>Mappare il controllo di cui è stato effettuato il refactoring e modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
+## <a name="map-refactored-control-rerun-the-test"></a>Mapping del controllo di cui è stato effettuato il refactoring, eseguire di nuovo il test
 
-1.  Nel file CodedUITest1.cs fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod1()**, scegliere **Genera codice per test codificato dell'interfaccia utente** e quindi fare clic su **Usa il generatore di test codificati dell'interfaccia utente**.
+1.  Nel file *CodedUITest1.cs* fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod1()**, scegliere **Genera codice per test codificato dell'interfaccia utente** e quindi fare clic su **Usa il generatore di test codificati dell'interfaccia utente**.
 
-     Verrà visualizzato UIMap - Generatore di test codificati dell'interfaccia utente.
+     Verrà visualizzato **UIMap - Generatore di test codificati dell'interfaccia utente**.
 
 2.  Usando il collegamento del desktop creato in precedenza, eseguire l'applicazione SimpleWPFApp creata precedentemente.
 
-3.  In UIMap - Generatore di test codificati dell'interfaccia utente trascinare il selettore di precisione sul pulsante **Start** in SimpleWPFApp.
+3.  In **UIMap - Generatore di test codificati dell'interfaccia utente** trascinare il selettore di precisione sul pulsante **Start** in SimpleWPFApp.
 
-     Il pulsante **Start** è racchiuso in una casella blu. Generatore di test codificati dell'interfaccia utente richiede alcuni secondi per elaborare i dati relativi al controllo selezionato e visualizza le proprietà dei controlli. Si noti che il nome di **AutomationUId** è **buttonA**.
+     Il pulsante **Start** è racchiuso in una casella blu. **Generatore di test codificati dell'interfaccia utente** richiede alcuni secondi per elaborare i dati relativi al controllo selezionato e visualizza le proprietà dei controlli. Si noti che il valore di **AutomationUId** è **buttonA**.
 
 4.  Nelle proprietà del controllo scegliere la freccia nell'angolo superiore sinistro per espandere la mappa del controllo dell'interfaccia utente. Si noti che **UIStartButton1** è selezionato.
 
@@ -296,21 +302,19 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Lo stato nella parte inferiore della finestra consente di verificare l'azione visualizzando il messaggio **Il controllo selezionato è stato aggiunto alla mappa del controllo dell'interfaccia utente**.
 
-6.  In UIMap - Generatore di test codificati dell'interfaccia utente scegliere **Genera codice**.
+6.  Nella finestra di dialogo **UIMap - Generatore di test codificati dell'interfaccia utente** scegliere **Genera codice**.
 
-     Viene visualizzato Generatore di test codificati dell'interfaccia utente - Genera codice con una nota in cui è indicato che non è richiesto alcun nuovo metodo e che il codice sarà generato solo per le modifiche alla mappa del controllo dell'interfaccia utente.
+     Viene visualizzata la finestra di dialogo **Generatore di test codificati dell'interfaccia utente - Genera codice** con una nota in cui è indicato che non è richiesto alcun nuovo metodo e che il codice sarà generato solo per le modifiche alla mappa del controllo dell'interfaccia utente.
 
 7.  Scegliere **Genera**.
 
-8.  Chiudere SimpleWPFApp.exe.
+8.  Chiudere SimpleWPFApp.
 
-9. Chiudere UIMap - Generatore di test codificati dell'interfaccia utente.
+9. Chiudere **UIMap - Generatore di test codificati dell'interfaccia utente**.
 
-     UIMap - Generatore di test codificati dell'interfaccia utente richiede alcuni secondi per elaborare le modifiche alla mappa di controllo dell'interfaccia utente.
+10. In **Esplora soluzioni** aprire il file *UIMap.Designer.cs*.
 
-10. In Esplora soluzioni aprire il file UIMap.Designer.cs.
-
-11. Nel file UIMap.Designer.cs individuare la proprietà UIStartButton1. Si noti che `SearchProperties` è impostato su `"buttonA"`:
+11. Nel file UIMap.Designer.cs individuare la proprietà **UIStartButton1**. Si noti che `SearchProperties` è impostato su `"buttonA"`:
 
     ```csharp
     public WpfButton UIStartButton1
@@ -332,7 +336,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      A questo punto è possibile modificare il test codificato dell'interfaccia utente in modo che venga usato il controllo appena mappato. Come evidenziato nella procedura precedente, se si desidera eseguire l'override di metodi o proprietà nel test codificato dell'interfaccia utente, è necessario effettuare questa operazione nel file UIMap.cs.
 
-12. Nel file UIMap.cs aggiungere un costruttore e specificare la proprietà `SearchProperties` della proprietà `UIStartButton` per usare la proprietà `AutomationID` con un valore `"buttonA":`
+12. Nel file *UIMap.cs* aggiungere un costruttore e specificare la proprietà `SearchProperties` della proprietà `UIStartButton` per usare la proprietà `AutomationID` con un valore `"buttonA":`
 
     ```csharp
     public UIMap()
@@ -343,21 +347,19 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 13. Scegliere **Compila soluzione** dal menu **Compila**.
 
-14. In Esplora test eseguire CodedUITestMethod1.
+14. In **Esplora test** eseguire **CodedUITestMethod1**.
 
-     Questa volta tutti i passaggi del test codificato dell'interfaccia utente vengono completati.  Nella finestra Risultati test viene visualizzato **Superato**.
+     Questa volta tutti i passaggi del test codificato dell'interfaccia utente vengono completati. Nella finestra **Risultati test** viene visualizzato **Superato**.
 
-## <a name="external-resources"></a>Risorse esterne
+## <a name="videos"></a>Video
 
-### <a name="videos"></a>Video
+![collegamento a video](../data-tools/media/playvideo.gif) [Introduzione ai test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230573)
 
-![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo")[Introduzione ai test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230573)
+![collegamento a video](../data-tools/media/playvideo.gif) [Manutenzione e debug di test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230574)
 
-![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Manutenzione e debug di test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230574)
+![collegamento a video](../data-tools/media/playvideo.gif) [Codifica manuale dei test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230575)
 
-![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Codifica manuale dei test codificati dell'interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=230575)
-
-### <a name="faq"></a>Domande frequenti
+## <a name="faq"></a>Domande frequenti
 
 [Domande frequenti sui test codificati dell'interfaccia utente](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
 

@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572215"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file CSV.  
+Lo strumento da riga di comando VSPerfReport viene usato per creare report usando i file di dati di profilatura degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Il formato predefinito per i report è un file con estensione *csv*.  
   
  VSPerfReport usa la sintassi seguente:  
   
@@ -32,18 +33,18 @@ Lo strumento da riga di comando VSPerfReport viene usato per creare report usand
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- Si noti che `filename` deve essere un file con estensione vsp o vsps valido.  
+ Si noti che `filename` deve essere un file con estensione *vsp* o *vsps* valido.  
   
- Lo strumento da riga di comando VSPerfReport viene inoltre usato per confrontare i file con estensione vsp o vsps. Per generare un report delle differenze ("diff"), usare la sintassi seguente:  
+ Lo strumento da riga di comando VSPerfReport viene anche usato per confrontare i file con estensione *vsp* o *vsps*. Per generare un report delle differenze ("diff"), usare la sintassi seguente:  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2` devono essere file con estensione vsp o vsps validi.  
+ `vspfilename1 and vspfilename2` devono essere file con estensione *vsp* o *vsps* validi.  
   
 ## <a name="symbol-files"></a>File di simboli  
- Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, VSPerfReport richiede l'accesso ai file di simboli (con estensione PDB) dei componenti profilati e ai file dei simboli di Windows. Per altre informazioni, vedere [Procedura: Specificare percorsi dei file di simboli tramite la riga di comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, VSPerfReport richiede l'accesso ai file di simboli (con estensione PDB) dei componenti profilati e ai file dei simboli di Windows. Per altre informazioni, vedere [Procedura: Specificare percorsi dei file di simboli dalla riga di comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Opzioni generali per i report  
  La tabella seguente descritte le opzioni di formattazione dei report generali e le opzioni per selezionare i dati da includere nel report.  
@@ -57,7 +58,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**ClearPackedSymbols**|Rimuove i simboli precedentemente incorporati da un file di dati del profiler. Eseguire questo comando prima di eseguire PackSymbols una seconda volta.|  
 |**SymbolPath:** `path`|Specifica uno o più percorsi di ricerca o server di simboli che contengono i simboli per il file di dati del profiler.|  
 |**DebugSymPath**|Elenca i percorsi in cui vengono cercati i simboli e se vengono trovati. Questa opzione è utile per risolvere i problemi di risoluzione dei simboli.|  
-|**PackSymbols**|Salva i simboli nel file di dati di profilatura (con estensione vsp) in modo che i file di simboli (con estensione pdb) non siano necessari per l'analisi.|  
+|**PackSymbols**|Salva i simboli nel file di dati di profilatura (con estensione vsp) in modo che i file di simboli (con estensione *pdb*) non siano necessari per l'analisi.|  
 |**Output:** *percorso*&#124;*nomefile*|Specifica un percorso alternativo per i file dei report generati. Per impostazione predefinita, i report vengono creati nella directory corrente.|  
 |**SummaryFile**|Analizza e salva le informazioni analizzate in un file di riepilogo vsps.|  
 |**PrintMarks**|Mostra il nome e il timestamp di tutti i contrassegni nel file di report specificato.|  
@@ -84,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Opzioni|Descrizione|  
 |-------------|-----------------|  
-|**Diff**  `vspfile1 vspfile2`|Confrontare due file di report (con estensione vsp o vsps). Le opzioni Summary verranno ignorate quando si usa l'opzione Diff.|  
+|**Diff**  `vspfile1 vspfile2`|Confrontare due file di report (con estensione *vsp* o *vsps*). Le opzioni Summary verranno ignorate quando si usa l'opzione Diff.|  
 |**Diff:**[*valore*]|Sotto questo valore di soglia la differenza tra due valori verrà ignorata. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|  
 |**DiffTable:**[*nometabella*]|Usare questa tabella specifica per confrontare i file. Per impostazione predefinita, viene usata la tabella delle funzioni.|  
 |**DiffColumn:**[*nomecolonna*]|Usare questa colonna specifica per confrontare i file. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi.|  

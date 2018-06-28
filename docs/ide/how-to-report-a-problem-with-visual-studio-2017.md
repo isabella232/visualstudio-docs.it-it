@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745995"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Come segnalare un problema con Visual Studio 2017
 
@@ -30,14 +31,14 @@ Se non già stato fatto, effettuare l'accesso a Visual Studio prima di segnalare
 2. Se non si è eseguito l'accesso, fare clic su **Accedi** sul lato destro dello strumento, come illustrato nello screenshot seguente.
 3. Seguire le istruzioni visualizzate per accedere.
 
- ![Accedere per segnalare un problema](../ide/media/sign-in-new-ux.png "Accedere per segnalare un problema")
+ ![Accedere per segnalare un problema](../ide/media/sign-in-new-ux.png)
 
 ## Cercare problemi simili e votarli <a name="search_and_vote"></a>
 
 1. Cercare il problema e controllare se è già stato segnalato da altri utenti.
 2. Se è già stato segnalato, è necessario contrassegnarlo per inviare a Microsoft la notifica.
 
-  ![Cercare e votare problemi simili](../ide/media/search-and-vote.png "Cercare e votare problemi simili")
+  ![Cercare e contrassegnare problemi simili](../ide/media/search-and-vote.png)
 
 ## Segnalare un problema nuovo <a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Se non già stato fatto, effettuare l'accesso a Visual Studio prima di segnalare
 2. Creare un titolo descrittivo per il problema in modo da consentirne l'invio al team di Visual Studio corretto.
 3. Fornire eventuali dettagli aggiuntivi e, se possibile, descrivere la procedura per riprodurre il problema.
 
-  ![Segnalare un problema nuovo](../ide/media/report-new-problem.png "Segnalare un problema nuovo")
+  ![Segnalare un problema nuovo](../ide/media/report-new-problem.png)
 
 ## Inviare screenshot e allegati (facoltativo) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ I file di traccia e di dump di heap sono utili per diagnosticare i problemi. Sia
 1. Scegliere la scheda **Registra**.
 2. Scegliere **Avvia registrazione**. Concedere le autorizzazioni per eseguire lo strumento.
 
-  ![Scegliere "Avvia registrazione" per inviare un file di traccia e un file dump dell'heap](../ide/media/record-dialog-box.png "Inviare un file di traccia e un file dump dell'heap")
+  ![Scegliere "Avvia registrazione" per inviare un file di traccia e un file dump dell'heap ](../ide/media/record-dialog-box.png)
 
 3. Quando lo strumento **Registrazione azioni utente** viene visualizzato, seguire la procedura per riprodurre il problema.
 4. Al termine, scegliere il pulsante **Arresta registrazione**.

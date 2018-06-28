@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572980"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso delle API di Strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le API del profiler consentono di limitare la quantità di dati raccolti durante la profilatura della strumentazione.  
@@ -30,9 +31,9 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
   
  Il profiler di Visual Studio consente di limitare la raccolta dei dati. Questa procedura dettagliata offre un esempio su come limitare la raccolta dei dati usando le API del profiler. Il profiler di Visual Studio offre un'API per il controllo della raccolta dei dati all'interno di un'applicazione.  
   
- Per il codice nativo, le API del profiler di Visual Studio API si trovano in VSPerf.dll. Il file di intestazione VSPerf.h e la libreria di importazione VSPerf.lib si trovano nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni.  
+ Per il codice nativo, le API del profiler di Visual Studio si trovano in *VSPerf.dll*. Il file di intestazione *VSPerf.h* e la libreria di importazione *VSPerf.lib* si trovano nella directory *Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni*.  
   
- Per il codice gestito, le API del profiler si trovano in Microsoft.VisualStudio.Profiler.dll. Questa DLL è disponibile nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.  
+ Per il codice gestito, le API del profiler si trovano in *Microsoft.VisualStudio.Profiler.dll*. Questa DLL è disponibile nella directory *Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni*. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Questa procedura dettagliata presuppone che l'ambiente di sviluppo scelto sia configurato per supportare il debug e il campionamento. Gli argomenti seguenti offrono una panoramica di questi prerequisiti:  
@@ -58,7 +59,7 @@ DataCollection.CurrentId);
 1.  Creare un nuovo progetto C# in Visual Studio o usare una compilazione avviata tramite riga di comando, a seconda delle preferenze.  
   
     > [!NOTE]
-    >  La compilazione deve fare riferimento alla libreria Microsoft.VisualStudio.Profiler.dll che si trova nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni.  
+    >  La compilazione deve fare riferimento alla libreria *Microsoft.VisualStudio.Profiler.dll* che si trova nella directory *Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni*.  
   
 2.  Copiare il codice riportato di seguito e incollarlo nel progetto:  
   
@@ -157,7 +158,7 @@ DataCollection.CurrentId);
   
 8.  Digitare il comando seguente: **VSPerfReport /calltrace:\<filename>.vsp**  
   
-     Viene creato un file con estensione csv nella directory corrente con i dati sulle prestazioni risultanti.  
+     Viene creato un file con estensione *csv* nella directory corrente con i dati sulle prestazioni risultanti.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Profiler>   

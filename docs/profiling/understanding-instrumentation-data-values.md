@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477548"
 ---
-# <a name="understanding-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
+# <a name="understand-instrumentation-data-values"></a>Informazioni sui valori dei dati di strumentazione
 
 Il metodo di profilatura *Strumentazione* di Visual Studio registra informazioni dettagliate sugli intervalli per le chiamate di funzione, le righe e le istruzioni nell'applicazione sottoposta a profilatura.
 
@@ -98,5 +99,5 @@ Percentuale dei valori di tempo inclusivo applicazione totali della sessione di 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)  
+[Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)  
 [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)

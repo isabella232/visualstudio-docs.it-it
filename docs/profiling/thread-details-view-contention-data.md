@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d45d2da94535f4f017fab838a661a3c3e4bc438d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477353"
 ---
 # <a name="thread-details-view---contention-data"></a>Visualizzazione Dettagli thread: dati sui conflitti
 La visualizzazione Dettagli thread presenta un grafico della sequenza temporale degli eventi di blocco nel thread selezionato di un'esecuzione della profilatura causati da conflitti relativi alle risorse. Si verifica un evento di blocco quando il thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso a una risorsa.  
   
- In questa visualizzazione la sequenza temporale dell'esecuzione del thread è rappresentata come una barra orizzontale, mentre gli eventi di blocco sono rappresentati come una barra verticale su una sequenza temporale orizzontale per il thread. Se necessario, è possibile fare zoom avanti su una sezione della sequenza temporale per visualizzare i singoli eventi. Per visualizzare il percorso di esecuzione delle funzioni che hanno condotto all'evento, fare clic sulla barra dell'evento. Le funzioni verranno visualizzate nella finestra Stack di chiamate. Quando è disponibile il codice sorgente per una funzione, è possibile fare clic sul nome della funzione per modificare il file di origine nell'IDE di Visual Studio.  
+ In questa visualizzazione la sequenza temporale dell'esecuzione del thread è rappresentata come una barra orizzontale, mentre gli eventi di blocco sono rappresentati come una barra verticale su una sequenza temporale orizzontale per il thread. Se necessario, è possibile fare zoom avanti su una sezione della sequenza temporale per visualizzare i singoli eventi. Per visualizzare il percorso di esecuzione delle funzioni che hanno condotto all'evento, fare clic sulla barra dell'evento. Le funzioni verranno visualizzate nella finestra **Stack di chiamate**. Quando è disponibile il codice sorgente per una funzione, è possibile fare clic sul nome della funzione per modificare il file di origine nell'IDE di Visual Studio.  
   
-## <a name="navigating-the-timeline"></a>Esplorazione della sequenza temporale  
+## <a name="navigate-the-timeline"></a>Esplorare la sequenza temporale  
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Per fare zoom avanti su un segmento della sequenza temporale  
   
@@ -45,7 +46,7 @@ La visualizzazione Dettagli thread presenta un grafico della sequenza temporale 
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Per visualizzare o modificare il codice sorgente di una funzione nello stack di chiamate  
   
--   Nella finestra Stack di chiamate fare clic sul nome della funzione.  
+-   Nella finestra **Stack di chiamate** fare clic sul nome della funzione.  
   
  Il codice sorgente della funzione deve far parte del progetto corrente.  
   

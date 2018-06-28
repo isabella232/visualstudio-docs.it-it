@@ -15,15 +15,16 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767686"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
-Questa procedura dettagliata illustra come creare, eseguire e personalizzare una serie di unit test usando il framework di unit test di Microsoft per il codice gestito ed **Esplora test** di Visual Studio. Verrà illustrato prima di tutto il progetto C# in fase di sviluppo, quindi saranno creati i test in cui verrà usato il codice e saranno esaminati i risultati. Sarà infine possibile modificare il codice del progetto ed eseguire nuovamente i test.
+Questo articolo illustra come creare, eseguire e personalizzare una serie di unit test usando il framework di unit test di Microsoft per il codice gestito ed **Esplora test** di Visual Studio. Verrà illustrato prima di tutto il progetto C# in fase di sviluppo, quindi saranno creati i test in cui verrà usato il codice e saranno esaminati i risultati. Sarà infine possibile modificare il codice del progetto ed eseguire nuovamente i test.
 
 > [!NOTE]
 > Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. **Esplora test** consente anche di eseguire test da framework di unit test di terze parti che dispongono di adapter per **Esplora test**. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md)
@@ -41,23 +42,20 @@ Questa procedura dettagliata illustra come creare, eseguire e personalizzare una
 
 2. Nel menu **File** selezionare **Nuovo** > **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+   Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 3. In **Modelli installati**fare clic su **Visual C#**.
 
 4. Nell'elenco di tipi di applicazione fare clic su **Libreria di classi**.
 
-5. Digitare **Bank** nella casella `Bank` , quindi scegliere **OK**.
+5. Digitare **Bank** nella casella **Nome**, quindi scegliere **OK**.
 
-    > [!NOTE]
-    > Se il nome "Bank" è stato già usato, scegliere un altro nome per il progetto.
+   Viene creato nuovo progetto Bank, visualizzato in **Esplora soluzioni** con il file *Class1.cs* aperto nell'editor di codice.
 
-     Viene creato nuovo progetto Bank, visualizzato in **Esplora soluzioni** con il file *Class1.cs* aperto nell'editor di codice.
+   > [!NOTE]
+   > Se il file *Class1.cs* non fosse aperto nell'editor del codice, fare doppio clic sul file *Class1.cs* in **Esplora soluzioni**.
 
-    > [!NOTE]
-    > Per aprire il file *Class1.cs* nell'editor del codice, nel caso non fosse aperto, fare doppio clic sul file stesso in Esplora soluzioni.
-
-6. Copiare il codice di origine del [progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md) e sostituire il contenuto originale di *Class1.cs* con il codice copiato.
+6. Copiare il codice sorgente del [progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md) e sostituire il contenuto originale di *Class1.cs* con il codice copiato.
 
 7. Salvare il file come *BankAccount.cs*.
 
@@ -93,11 +91,11 @@ public void Debit(double amount)
 
 4. Nella casella **Nome** immettere `BankTests`, quindi scegliere **OK**.
 
-     Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
+   Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
 5. Nel progetto **BankTests** aggiungere un riferimento al progetto **Bank**.
 
-     In Esplora soluzioni selezionare **Riferimenti** nel progetto **BankTests**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+   In Esplora soluzioni selezionare **Riferimenti** nel progetto **BankTests**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
 6. Nella finestra di dialogo Gestione riferimenti espandere **Soluzione** , quindi selezionare l'elemento **Bank** .
 
@@ -211,13 +209,13 @@ Un metodo di test deve soddisfare i seguenti requisiti:
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Correggere il codice e rieseguire i test
 
-**Analizzare i risultati dei test**
+### <a name="analyze-the-test-results"></a>Analizzare i risultati dei test
 
 Il risultato del test contiene un messaggio che descrive l'errore. Per il metodo `AreEquals` il messaggio visualizza il contenuto previsto (parametro **Previsto\<*valore*>**) e il contenuto ricevuto (parametro **Effettivo\<*valore*>**). Si prevedeva una diminuzione del saldo, ma questo di fatto è aumentato di un valore pari alla somma prelevata.
 
 Lo unit test ha rivelato un bug: la quantità da ritirare viene *aggiunta* al saldo del conto anziché essere *sottratta*.
 
-**Correggere il bug**
+### <a name="correct-the-bug"></a>Correggere il bug
 
 Per correggere l'errore, sostituire la riga:
 
@@ -231,7 +229,7 @@ con:
 m_balance -= amount;
 ```
 
-**Eseguire nuovamente il test**
+### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
 In Esplora test scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato, quindi il test viene spostato nel gruppo **Test superati**.
 
@@ -239,14 +237,14 @@ In Esplora test scegliere **Esegui tutto** per rieseguire il test. La barra verd
 
 In questa sezione viene descritto come un processo iterativo di analisi, di sviluppo di unit test e di refactoring può aiutare a rendere il codice di produzione più affidabile ed efficace.
 
-**Analizzare i problemi**
+### <a name="analyze-the-issues"></a>Analizzare i problemi
 
 È stato creato un metodo di test per confermare che un importo valido viene detratto correttamente nel metodo `Debit`. Ora verificare che il metodo generi un oggetto <xref:System.ArgumentOutOfRangeException> se la quantità di debito è
 
 - superiore al saldo o
 - minore di zero.
 
-**Creare i metodi di test**
+### <a name="create-the-test-methods"></a>Creare i metodi di test
 
 Creare un metodo di test per verificare il comportamento corretto quando la quantità di debito è minore di zero:
 
@@ -277,11 +275,11 @@ Per sottoporre a test il caso in cui l'importo prelevato è maggiore del saldo, 
 
 3. Impostare `debitAmount` su un numero maggiore del saldo.
 
-**Eseguire i test**
+### <a name="run-the-tests"></a>Eseguire i test
 
 L'esecuzione dei due metodi di test dimostra che i test funzionano correttamente.
 
-**Continuare l'analisi**
+### <a name="continue-the-analysis"></a>Continuare l'analisi
 
 Tuttavia, gli ultimi due metodi di test presentano alcuni problemi. Non è possibile determinare con certezza quale condizione nel metodo sottoposto a test genera l'eccezione quando si esegue uno dei due test. La possibilità di differenziare le due condizioni, ovvero una quantità di debito negativa o un importo superiore al saldo, renderebbe più affidabili i test.
 
@@ -291,11 +289,11 @@ Tornare ad osservare il metodo sottoposto a test. Notare che entrambe le istruzi
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-È possibile usare un altro costruttore, che include informazioni molto più complete: <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` include il nome dell'argomento, il valore dell'argomento e un messaggio definito dall'utente. È possibile effettuare il refactoring del metodo sottoposto a test per usare questo costruttore. Ancor meglio, è possibile usare membri di tipo pubblico per specificare gli errori.
+È possibile usare un altro costruttore, che include informazioni molto più complete: <xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> include il nome dell'argomento, il valore dell'argomento e un messaggio definito dall'utente. È possibile effettuare il refactoring del metodo sottoposto a test per usare questo costruttore. Ancor meglio, è possibile usare membri di tipo pubblico per specificare gli errori.
 
-**Effettuare il refactoring del codice sottoposto a test**
+### <a name="refactor-the-code-under-test"></a>Effettuare il refactoring del codice sottoposto a test
 
-Prima è necessario definire due costanti per i messaggi di errore nell'ambito di classe. Inserire le costanti nella classe sottoposta a test (`Bank`):
+Prima è necessario definire due costanti per i messaggi di errore nell'ambito di classe. Inserire le costanti nella classe sottoposta a test (BankAccount):
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -316,7 +314,7 @@ Quindi modificare le due istruzioni condizionali nel metodo `Debit`:
     }
 ```
 
-**Eseguire il refactoring dei metodi di test**
+### <a name="refactor-the-test-methods"></a>Eseguire il refactoring dei metodi di test
 
 Rimuovere l'attributo del metodo di test `ExpectedException` e invece rilevare l'eccezione generata e verificare il messaggio associato. Il metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> offre la possibilità di confrontare due stringhe.
 
@@ -344,9 +342,9 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-**Rieseguire il test, riscrivere e rianalizzare**
+### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non *attivi* un <xref:System.ArgumentOutOfRangeException> e a maggior ragione non produca il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se il valore `debitAmount` è valido, ovvero è minore del saldo ma maggiore di zero, non sarà intercettata alcuna eccezione e quindi non verrà mai attivata l'asserzione. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non attivi un <xref:System.ArgumentOutOfRangeException> né tantomeno generi il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se il valore `debitAmount` è valido, ovvero è minore del saldo ma maggiore di zero, non sarà intercettata alcuna eccezione e quindi non verrà mai attivata l'asserzione. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 

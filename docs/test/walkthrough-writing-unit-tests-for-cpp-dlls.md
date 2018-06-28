@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751832"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -45,11 +46,11 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
      In questa procedura dettagliata, il progetto di test viene denominato `NativeRooterTest`.
 
-     ![Creazione di un progetto unit test C++](../test/media/utecpp01.png "UteCpp01")
+     ![Creazione di un progetto unit test C++](../test/media/utecpp01.png)
 
 2.  Nel nuovo progetto, controllare **unittest1.cpp**
 
-     ![Progetto di test con TEST&#95;CLASS e TEST&#95;METHOD](../test/media/utecpp2.png "UteCpp2")
+     ![Progetto di test con TEST&#95;CLASS e TEST&#95;METHOD](../test/media/utecpp2.png)
 
      Si noti che:
 
@@ -82,7 +83,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
          Il test verrà visualizzato in **Test superati**.
 
-         ![Esplora unit test con un test superato](../test/media/utecpp04.png "UteCpp04")
+         ![Esplora unit test con un test superato](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> Creare un progetto DLL
 
@@ -90,17 +91,17 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
-     ![Creazione di un progetto Win32 C++ Win32](../test/media/utecpp05.png "UteCpp05")
+     ![Creazione di un progetto Win32 C++](../test/media/utecpp05.png)
 
 2.  Selezionare **DLL** ed **Esporta simboli** nella creazione guidata applicazione Win32.
 
      L'opzione **Esporta simboli** genera una semplice macro che è possibile usare per dichiarare i metodi esportati.
 
-     ![Creazione guidata progetto C++ impostata per DLL ed esportazione simboli](../test/media/utecpp06.png "UteCpp06")
+     ![Creazione progetto C++ impostata per simboli di esportazione e DLL](../test/media/utecpp06.png)
 
 3.  Dichiarare una funzione esportata nel file .h principale:
 
-     ![Nuovo progetto di codice DLL e file h con macro API](../test/media/utecpp07.png "UteCpp07")
+     ![Nuovo progetto di codice DLL e file h con macro API](../test/media/utecpp07.png)
 
      Il dichiaratore `__declspec(dllexport)` permette ai membri public e protected della classe di essere visibili al di fuori della DLL. Per altre informazioni, vedere [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
     1.  Aprire le proprietà del progetto di test e scegliere **Proprietà comuni**, **Framework e riferimenti**.
 
-         ![Proprietà progetto C++ | Framework e riferimenti](../test/media/utecpp08.png "UteCpp08")
+         ![Proprietà progetto C++ | Framework e riferimenti](../test/media/utecpp08.png)
 
     2.  Scegliere **Aggiungi nuovo riferimento**.
 
          Nella finestra di dialogo **Aggiungi riferimento** , selezionare il progetto DLL e scegliere **Aggiungi**.
 
-         ![Proprietà progetto C++ |Aggiungi nuovo riferimento](../test/media/utecpp09.png "UteCpp09")
+         ![Proprietà progetto C++ | Aggiungi nuovo riferimento](../test/media/utecpp09.png)
 
 2.  Nel file principale .cpp delll'unit test, includere il file .h del codice DLL:
 
@@ -160,7 +161,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 5.  In Esplora test scegliere **Esegui tutto**.
 
-     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png "UteCpp10")
+     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
  È stato installato il test e i progetti di codice, e verificato che sia possibile eseguire test che eseguono funzioni nel progetto di codice. Ora è possibile iniziare a scrivere test e codici reali.
 
@@ -189,7 +190,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
      Il nuovo test non riesce.
 
-     ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
@@ -217,7 +218,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
      Entrambi i test vengono superati.
 
-     ![Esplora unit test &#45; Test intervallo superato](../test/media/utecpp12.png "UteCpp12")
+     ![Esplora unit test &#45; Test intervallo superato](../test/media/utecpp12.png)
 
     > [!TIP]
     > Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
@@ -263,7 +264,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
      L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di Esplora test.
 
-     ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests non riuscito](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Per capire perché il test non riesce, scorrere la funzione:
 
@@ -291,10 +292,10 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 6.  Tutti i test vengono ora superati.
 
-     ![Tutti i test superati](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Tutti i test superati](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 
 ##  <a name="refactor"></a> Eseguire il refactoring del codice senza modificare i test

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751423"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva allo sviluppo basato su test con Esplora test
 
@@ -28,7 +29,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 -   Possibilità di visualizzare in un'unica finestra tutte le informazioni necessarie.
 
 ## <a name="using-test-explorer"></a>Utilizzo di Esplora test
- ![Esplora unit test con il pulsante Esegui tutto](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Esplora unit test con il pulsante Esegui tutto](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Per eseguire lo unit test utilizzando Esplora test
 
@@ -42,9 +43,9 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
          Selezionare **Progetto unit test**.
 
-    2.  Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]`.
+    2.  Scrivere ogni unit test come un metodo. Aggiungere come prefisso a ogni metodo di test l'attributo `[TestMethod]` .
 
-2.  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+2.  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 3.  Sulla barra dei menu scegliere **Test**, **Esegui unit test**, **Tutti i test**.
 
@@ -77,9 +78,9 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 2.  Creare un progetto di test.
 
-    -   Nella finestra di dialogo **Nuovo progetto**, scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.
+    -   Nella finestra di dialogo **Nuovo progetto** , scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.
 
-         ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png)
 
 3.  Scrivere un metodo di test di base. Verificare il risultato ottenuto con un input specifico:
 
@@ -125,7 +126,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
 7.  Selezionare gli elementi in **Traccia dello Stack** per visualizzare dove i test hanno avuto esito negativo.
 
- ![Esplora unit test con test non superato](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Esplora unit test con test non superato.](../test/media/unittestexplorerwalkthrough2.png)
 
  A questo punto, si è creato un test e uno stub che verrà modificato in modo che il test possa essere superato.
 
@@ -146,7 +147,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
      Il test ha esito positivo.
 
-     ![Esplora unit test con test superato](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Esplora unit test con test superato.](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Aggiungere test per estendere l'intervallo degli input
 
@@ -288,4 +289,4 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 
      Tutti i test hanno ancora esito positivo.
 
-     ![Esplora unit test con tre test superati](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Esplora unit test con 3 test superati.](../test/media/unittestexplorerwalkthrough4.png)

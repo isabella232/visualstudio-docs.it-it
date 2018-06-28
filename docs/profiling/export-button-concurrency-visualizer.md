@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c773d3135cff3d898c93ed6d9df43b36c387747c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c977c147aa9edc7dc83e76dc3d9c07dd959c3f9c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764709"
 ---
-# <a name="export-button-concurrency-visualizer"></a>Pulsante Esporta (visualizzatore di concorrenze)
-Il pulsante **Esporta** consente di esportare lo stack di chiamate come file CSV per i propri record o per l'uso con un altro strumento, ad esempio Microsoft Excel.  
+# <a name="export-button-concurrency-visualizer"></a>Pulsante Esporta (visualizzatore di concorrenza)
+Il pulsante **Esporta** consente di esportare lo stack di chiamate come file con estensione *csv* per i propri record o per l'uso con un altro strumento, ad esempio Microsoft Excel.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzatore di concorrenza](../profiling/concurrency-visualizer.md)   

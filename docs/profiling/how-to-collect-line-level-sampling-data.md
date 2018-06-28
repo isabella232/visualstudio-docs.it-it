@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765700"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 Il campionamento a livello di riga è una capacità del profiler che consente di determinare il punto del codice di una funzione che richiede un uso intensivo del processore, ad esempio una funzione con esempi esclusivi elevati, in cui il processore impiega la maggior parte del tempo.  
@@ -35,11 +36,11 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
   
 -   Indirizzo funzione.  
   
--   Inizio riga: numero riga del codice di esempio.  
+-   Inizi riga: numero riga del codice di esempio.  
   
 -   Fine riga: numero riga di fine del codice sorgente. Generalmente corrisponde al valore di "Inizio riga" ad eccezione di quando una singola istruzione del programma si estende su più righe del codice sorgente.  
   
--   Inizio carattere: colonna iniziale dell'esempio di aggregazione. Generalmente questo valore è 0 ad eccezione di quando una singola riga contiene più istruzioni del programma.  
+-   Inizi carattere: colonna iniziale dell'esempio di aggregazione. Generalmente questo valore è 0 ad eccezione di quando una singola riga contiene più istruzioni del programma.  
   
 -   Fine carattere: colonna finale dell'esempio di aggregazione.  
   
@@ -48,7 +49,7 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
  Nella visualizzazione **Moduli**, se una funzione presenta statistiche a livello di riga, le statistiche vengono annidate in ogni funzione. Vengono inoltre visualizzate le statistiche a livello di IP annidate in ogni riga.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Disattivare il campionamento a livello di riga per il codice gestito  
- Per impostazione predefinita, il campionamento a livello di riga è attivato. È possibile disattivare la raccolta di dati a livello di riga per il codice gestito in uno dei seguenti modi:  
+ Per impostazione predefinita, il campionamento a livello di riga è attivato. È possibile disattivare la raccolta di dati a livello di riga per il codice gestito con uno dei comandi seguenti:  
   
 -   Prima della profilatura, digitare **VSPerfCLREnv /samplelineoff**. Questa operazione ha effetto sulle applicazioni e sui servizi.  
   
@@ -57,5 +58,5 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
 -   Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
- [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)
+ [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
+ [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752001"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procedura: selezionare un repository dei risultati del test di carico
 
@@ -37,7 +38,7 @@ Per altre informazioni sugli agenti, vedere [Test controller e agenti di test](c
 
 2.  Dalla barra degli strumenti **Test di carico** scegliere **Gestisci Test Controller**. Verrà visualizzata la finestra di dialogo Gestisci controller di test. Se si utilizza un agente in remoto, è necessario selezionare un controller.
 
-     ![Proprietà di connessione dell'archivio dei risultati del test di carico](../test/media/loadtestconnectionproperties.png "LoadTestConnectionProperties") Proprietà di connessione dell'archivio dei risultati del test di carico
+     ![Proprietà di connessione dell'archivio dei risultati del test di carico](../test/media/loadtestconnectionproperties.png) Proprietà di connessione dell'archivio dei risultati del test di carico
 
 3.  In **Archivio risultati test di carico** fare clic su (…) per visualizzare la finestra di dialogo **Proprietà connessione**.
 

@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747893"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: Aggiungere un problema di sottrazione
 Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazione e si apprenderà come eseguire le attività seguenti:
@@ -30,7 +31,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
 ## <a name="to-add-a-subtraction-problem"></a>Per aggiungere un problema di sottrazione
 
-1.  Aggiungere al modulo due variabili Integer per il problema di sottrazione, tra le variabili Integer per il problema di addizione e il timer. Il codice dovrebbe essere analogo al seguente.
+1.  Aggiungere al form due variabili Integer per il problema di sottrazione, tra le variabili Integer per il problema di addizione e il timer. Il codice dovrebbe essere analogo al seguente.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -51,12 +52,12 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
      È possibile chiamare in più modi il metodo `Next()` della classe Random, a cui in precedenza in questa esercitazione è stato assegnato il nome "randomizer". I metodi che è possibile chiamare in più modi sono denominati metodi di overload ed è possibile utilizzare IntelliSense per esplorarli. Esaminare nuovamente la descrizione comando della finestra di IntelliSense per il metodo `Next()`.
 
-     ![Descrizione comando della finestra di IntelliSense](../ide/media/express_overloads.png "Express_Overloads")
+     ![Descrizione comando della finestra di IntelliSense](../ide/media/express_overloads.png)
 Descrizione comando della finestra di **IntelliSense**
 
      La dicitura **(+ 2 overload(s))** della descrizione comando indica che è possibile chiamare il metodo `Next()` in altri due modi. Gli overload contengono numeri o tipi di argomenti diversi, pertanto funzionano in modo leggermente diverso l'uno dall'altro. Ad esempio, un metodo potrebbe accettare un singolo argomento Integer, mentre uno degli overload potrebbe accettare un Integer e una stringa. Scegliere l'overload corretto in base all'operazione da eseguire. Quando si aggiunge codice al metodo `StartTheQuiz()`, nella finestra di IntelliSense vengono visualizzate altre informazioni non appena si immette `randomizer.Next(`. Per scorrere gli overload, usare i tasti **freccia SU** e **freccia GIÙ**, come illustrato nella figura seguente:
 
-     ![Overload per il metodo Next&#40;&#41; in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") Overload per il metodo **Next()** in **IntelliSense**
+     ![Overload per il metodo Next&#40;&#41; in IntelliSense](../ide/media/express_nextoverload.png) Overload per il metodo **Next()** in **IntelliSense**
 
      In questo caso, si desidera scegliere l'ultimo overload, perché consente di specificare i valori minimo e massimo.
 
@@ -76,8 +77,8 @@ Descrizione comando della finestra di **IntelliSense**
 
      Il programma include un problema di sottrazione, come illustrato nella figura seguente:
 
-     ![Quiz matematico con problema di sottrazione](../ide/media/express_addsubtract.png "Express_AddSubtract")
-**Quiz matematico** con problema di sottrazione
+     ![Quiz matematico con sottrazione](../ide/media/express_addsubtract.png)
+**Quiz matematico** con sottrazione
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764907"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>Creazione di rapporti di profilatura di base tramite la riga di comando
-Questo argomento descrive i comandi VSPerfReport di base che generano report con estensione csv da file di dati di profilatura con estensione vsp o vsps. Per la descrizione di tutte le opzioni del report, vedere [VSPerfReport](../profiling/vsperfreport.md).  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>Creare report di profilatura di base tramite la riga di comando
+Questo articolo descrive i comandi VSPerfReport di base che generano report di valori separati da virgole (file con estensione *csv*) da un file di dati di profilatura con estensione *vsp* o *vsps*. Per la descrizione di tutte le opzioni del report, vedere [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="report-commands"></a>Comandi del report  
  Usare uno dei comandi seguenti per creare un report per il file di dati di profilatura specificato.  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  
- Genera tutti i report disponibili per il file con estensione vsp o vsps.  
+ Genera tutti i report disponibili per il file con estensione *vsp* o *vsps*.  
   
  **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
  Genera i tipi di report specificati.  
@@ -51,4 +52,4 @@ Questo argomento descrive i comandi VSPerfReport di base che generano report con
 |**Type**|Elenca i dati di profilatura dell'allocazione in base al tipo.|-   [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md)|  
 |**Contention**|Conflitti tra risorse.|-   [Conflitti tra risorse](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Elenca i problemi relativi alle regole di prestazioni.|Elenca il valore CheckId, la descrizione e il percorso del codice sorgente del problema relativo alla regola.|  
-|**ETW**|Elenca gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura.|-   [Rapporto ETW](../profiling/event-tracing-for-windows-etw-report.md)|
+|**ETW**|Elenca gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura.|-   [Report ETW](../profiling/event-tracing-for-windows-etw-report.md)|

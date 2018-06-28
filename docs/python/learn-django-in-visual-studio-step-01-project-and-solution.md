@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750298"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Passaggio 1 dell'esercitazione: Iniziare a usare il framework Web Django in Visual Studio
 
@@ -33,11 +34,13 @@ In questa esercitazione si imparerà a:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Visual Studio 2017 con le opzioni seguenti:
+- Visual Studio 2017 in Windows con le opzioni seguenti:
   - Carico di lavoro **Sviluppo Python** (scheda **Carico di lavoro** nel programma di installazione). Per istruzioni, vedere [Installazione del supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md).
   - **GIT per Windows** e **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** sotto a **Strumenti per il codice**.
 
 I modelli di progetto Django sono inclusi anche in tutte le versioni precedenti di Python Tools for Visual Studio, anche se alcuni dettagli possono differire rispetto a quanto presentato in questa esercitazione, in particolare con le versioni precedenti del framework Django.
+
+Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In Mac e Linux usare l'[estensione Python in Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 ### <a name="visual-studio-projects-and-django-projects"></a>"Progetti di Visual Studio" e "progetti Django"
 
@@ -116,7 +119,7 @@ Risposta: Sì. Per disabilitare il commit automatico, passare alla pagina **Impo
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Passaggio 1-3: Creare l'ambiente virtuale ed escluderlo dal controllo del codice sorgente
 
-Dopo aver configurato il controllo del codice sorgente per il progetto, è possibile creare l'ambiente virtuale con i pacchetti Django necessari richiesti dal progetto. È quindi possibile usare **Team Explorer** per escludere la cartella dell'ambiente dal controllo del codice sorgente.
+Dopo aver configurato il controllo del codice sorgente per il progetto, è possibile creare l'ambiente virtuale contenente i pacchetti Django necessari per il progetto. È quindi possibile usare **Team Explorer** per escludere la cartella dell'ambiente dal controllo del codice sorgente.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere **Aggiungi ambiente virtuale**.
 

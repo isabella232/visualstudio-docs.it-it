@@ -16,20 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573141"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-Lo strumento **VSPerfCmd.exe** viene usato per avviare e arrestare la raccolta di dati sulle prestazioni. Viene usata la sintassi seguente:  
+Lo strumento *VSPerfCmd.exe* viene usato per avviare e arrestare la raccolta di dati sulle prestazioni. Viene usata la sintassi seguente:  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- Le tabelle seguenti descrivono le opzioni dello strumento **VSPerfCmd.exe**.  
+ Le tabelle seguenti descrivono le opzioni dello strumento *VSPerfCmd.exe*.  
   
 |Opzione|Descrizione|  
 |------------|-----------------|  
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Visualizza un elenco di contatori CPU validi per il computer corrente.|  
 |[WinCounter](../profiling/wincounter.md) **:** *percorso*|Specifica un evento contatore delle prestazioni di Windows da includere con i dati contrassegnati di profilatura. Usare solo con **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Specifica l'intervallo di tempo (in millisecondi) tra gli eventi di raccolta di dati dei contatori delle prestazioni di Windows. Usare con **WinCounter**.|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Controlla la raccolta degli eventi ETW (Event Tracing for Windows) specificati. I dati ETW vengono raccolti in un file con estensione itl diverso dal file di dati di profilatura (con estensione vsp).|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Controlla la raccolta degli eventi ETW (Event Tracing for Windows) specificati. I dati ETW vengono raccolti in un file con estensione *itl* diverso dal file di dati di profilatura (con estensione *vsp*).|  
 |[Status](../profiling/status.md)|Visualizza lo stato del profiler, informazioni sui processi attualmente in corso di profilatura e gli account che dispongono dell'autorità per controllare il profiler.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|Chiude il file di dati di profilatura e disattiva il profiler.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Riprende la raccolta di dati dopo una chiamata a **VSPerfCmdGlobalOff**.|  

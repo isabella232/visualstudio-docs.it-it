@@ -1,7 +1,7 @@
 ---
 title: Informazioni di riferimento sulla finestra Ambienti Python
 description: Dettagli su ognuna delle schede visualizzate nella finestra Ambienti Python in Visual Studio.
-ms.date: 03/05/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572124"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -75,7 +76,7 @@ Se disponibile, contiene i dettagli descritti nella tabella seguente. Se questa 
 
 *Denominata anche "pip" nelle versioni precedenti.*
 
-Consente di gestire i pacchetti installati nell'ambiente con Pip, nonché di cercare e installare quelli nuovi (incluse eventuali dipendenze). In Visual Studio 2017 15.7 e versioni successive, viene visualizzata l'opzione **Pacchetti (Conda)** che invece usa lo strumento di gestione dei pacchetti Conda. Se l'opzione non appare, impostare l'opzione **Strumenti** > **Opzioni** > **Python** > **Sperimentale** > **Usa strumento di gestione pacchetti Conda quando disponibile (anziché Pip)** e riavviare Visual Studio.
+Consente di gestire i pacchetti installati nell'ambiente con Pip, nonché di cercare e installare quelli nuovi (incluse eventuali dipendenze). In Visual Studio 2017 15.7 e versioni successive, viene visualizzata la scheda **Pacchetti (Conda)** che invece usa lo strumento di gestione dei pacchetti Conda. Se l'opzione non appare, impostare l'opzione **Strumenti** > **Opzioni** > **Python** > **Sperimentale** > **Usa strumento di gestione pacchetti Conda quando disponibile (anziché Pip)** e riavviare Visual Studio.
 
 I pacchetti già installati vengono visualizzati con controlli per aggiornare (freccia rivolta verso l'alto) e disinstallare (X in un cerchio) il pacchetto:
 
@@ -85,11 +86,19 @@ Quando di immette un termine di ricerca viene filtrato l'elenco dei pacchetti in
 
 ![Scheda Pacchetti nella finestra Ambienti Python con la ricerca di "num"](media/environments-pip-tab.png)
 
-È anche possibile immettere direttamente qualsiasi comando `pip install` nella casella di ricerca, compresi i flag, come `--user` o `--no-deps`.
+Come illustrato nella figura precedente, i risultati della ricerca mostrano un numero di pacchetti corrispondenti al termine di ricerca; la prima voce dell'elenco, tuttavia, è un comando per l'esecuzione diretta di `pip install <name>`. La scheda **Pacchetti (Conda)** visualizza invece `conda install <name>`:
+
+![Scheda Pacchetti (Conda) con un comando di installazione di Conda](media/environments-conda-tab-install.png)
+
+In entrambi i casi, è possibile personalizzare l'installazione aggiungendo gli argomenti nella casella di ricerca dopo il nome del pacchetto. Quando si includono gli argomenti, i risultati della ricerca mostrano `pip install` o `conda install` seguito dal contenuto della casella di ricerca:
+
+![Uso degli argomenti nei comandi di installazione pip e conda](media/environments-pip-tab-arguments.png)
 
 L'installazione di un pacchetto crea sottocartelle all'interno della cartella `Lib` dell'ambiente nel file system. Ad esempio, se si dispone di Python 3.6 installato in `c:\Python36`, i pacchetti vengono installati in `c:\Python36\Lib`; se è installato Anaconda3 in `c:\Program Files\Anaconda3` i pacchetti vengono installati in `c:\Program Files\Anaconda3\Lib`.
 
-Nel secondo caso, poiché l'ambiente si trova in un'area protetta del file system, `c:\Program Files`, Visual Studio deve eseguire `pip install` con privilegi elevati per consentirgli di creare sottocartelle di pacchetto. Quando è necessaria l'elevazione, Visual Studio visualizza il prompt dei comandi "Potrebbero essere necessari i privilegi di amministratore per installare, aggiornare o rimuovere i pacchetti per questo ambiente":
+### <a name="granting-administrator-privileges-for-package-install"></a>Concessione dei privilegi di amministratore per l'installazione dei pacchetti
+
+Durante l'installazione di pacchetti in un ambiente che si trova in un'area protetta del file system, ad esempio `c:\Program Files\Anaconda3\Lib`, Visual Studio deve eseguire `pip install` con privilegi elevati per consentire la creazione di sottocartelle di pacchetto. Quando è necessaria l'elevazione, Visual Studio visualizza il prompt dei comandi "Potrebbero essere necessari i privilegi di amministratore per installare, aggiornare o rimuovere i pacchetti per questo ambiente":
 
 ![Richiesta di elevazione dei privilegi per l'installazione del pacchetto](media/environments-pip-elevate.png)
 
@@ -98,6 +107,18 @@ Nel secondo caso, poiché l'ambiente si trova in un'area protetta del file syste
 Selezionando **Eleva sempre quando si installano o rimuovono pacchetti** si impedisce la visualizzazione della finestra di dialogo per l'ambiente in questione. Per visualizzare nuovamente la finestra di dialogo, passare a **Strumenti > Opzioni > Strumenti Python > Generale** e selezionare il pulsante, **Ripristina tutte le finestre di dialogo nascoste in modo permanente**.
 
 In tale scheda, è anche possibile selezionare **Esegui sempre pip come amministratore** per eliminare la finestra di dialogo per tutti gli ambienti. Vedere [Opzioni - Scheda Generale](python-support-options-and-settings-in-visual-studio.md#general-options).
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>Restrizioni di sicurezza con le versioni precedenti di Python
+
+Quando si usa Python 2.6, 3.1 e 3.2, Visual Studio visualizza un messaggio di avviso che comunica che l'installazione da Internet potrebbe non funzionare nella versione di Python a causa di restrizioni di sicurezza:
+
+![Messaggio sulle restrizioni di installazione pip con una versione precedente di Python](media/environments-old-version-restriction.png)
+
+L'avviso viene visualizzato poiché nelle versioni precedenti di Python `pip install` non include il supporto di Transport Security Layer (TLS) 1.2 necessario per il download dei pacchetti dall'origine dei pacchetti pypi.org. Le build di Python personalizzate possono supportare TLS 1.2 e consentire il funzionamento di `pip install`.
+
+È possibile scaricare la versione appropriata di `get-pip.py` per un pacchetto da [bootstrap.pypa.io](https://bootstrap.pypa.io/), scaricare manualmente un pacchetto da [pypi.org](https://pypi.org/) e quindi installarlo dalla copia locale.
+
+È consigliabile, tuttavia, eseguire semplicemente l'aggiornamento a Python 2.7 o 3.3+. In tal caso, l'avviso non viene visualizzato.
 
 ## <a name="intellisense-tab"></a>Scheda IntelliSense
 

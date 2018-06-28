@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750334"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3 dell'esercitazione: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
@@ -40,8 +41,6 @@ Per visualizzare i modelli disponibili, passare a **Esplora soluzioni**, fare cl
 ![Finestra di dialogo Aggiungi nuovo elemento in Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Per usare un modello, selezionare il modello desiderato, specificare un nome per il file e selezionare **OK**. Aggiungendo un elemento in questo modo il file viene aggiunto automaticamente al progetto di Visual Studio e vengono contrassegnate le modifiche per il controllo del codice sorgente.
-
-Visual Studio aggiunge anche alcune opzioni usate di frequente direttamente nel menu **Aggiungi**. In un progetto Python, ad esempio, si potrebbe vedere il comando **Pagina HTML** oppure **Foglio di stile** nella parte inferiore del menu **Aggiungi**, tramite cui viene chiesto un nome e creato il file.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Domanda: In che modo Visual Studio può sapere quale modelli di elementi offrire?
 
@@ -187,7 +186,7 @@ Un modello di base delinea i blocchi usando i tag `{% block <block_name> %}` e `
 
 I passaggi seguenti illustrano l'ereditarietà:
 
-1. Nella cartella `templates/HelloDjangoApp` dell'app, creare un nuovo file HTML (usando il menu di scelta rapida **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Pagina HTML**) denominato `layout.html` e incollare i contenuti seguenti. È possibile notare che questo modello contiene un blocco denominato "content" che è quello che le pagine di riferimento devono sostituire:
+1. Nella cartella `templates/HelloDjangoApp` dell'app creare un nuovo file HTML (usando il menu di scelta rapida **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Pagina HTML**) denominato `layout.html` e sostituirne il contenuto con il markup riportato di seguito. È possibile notare che questo modello contiene un blocco denominato "content" che è quello che le pagine di riferimento devono sostituire:
 
     ```html
     <!DOCTYPE html>

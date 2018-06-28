@@ -1,0 +1,39 @@
+---
+title: Analisi utilizzo software di Visual Studio
+description: Informazioni su come gestire le impostazioni di privacy in Visual Studio per Mac.
+author: asb3993
+ms.author: amburns
+ms.date: 05/22/2018
+ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
+ms.openlocfilehash: b09dfc87d5fc672002b922efec7b1213dcaf87cd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34469137"
+---
+# <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
+
+Analisi utilizzo software di Visual Studio è un programma pensato per aiutare Microsoft a migliorare nel tempo Visual Studio per Mac. Il programma raccoglie informazioni sull'hardware del computer e sulle modalità d'uso di Visual Studio per Mac senza interrompere le attività dell'utente al computer. I dati raccolti consentono a Microsoft di identificare le funzionalità da migliorare. Questo documento illustra come acconsentire o rifiutare esplicitamente di partecipare al programma.
+
+Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utilizzo software di Visual Studio, leggere l'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).  
+
+## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Scelta e controllo su Analisi utilizzo software di Visual Studio
+
+Analisi utilizzo software di Visual Studio è attivato per impostazione predefinita. È possibile disattivarlo o riattivarlo seguendo le istruzioni riportate di seguito.
+
+1. Aprire Visual Studio per Mac.
+
+1. Nella barra dei menu scegliere **Visual Studio > Preferenze > Altro > Feedback**.
+
+1. Selezionare la preferenza per la partecipazione:
+
+    ![Selezionare un pulsante di opzione per indicare la preferenza di partecipazione](media/visual-studio-experience-improvement-program-image1.png)
+
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
+
+## <a name="see-also"></a>Vedere anche
+
+* [Come segnalare un problema con Visual Studio per Mac](report-a-problem.md)
+* [Community degli sviluppatori Visual Studio per Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)
