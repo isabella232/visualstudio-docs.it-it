@@ -1,26 +1,28 @@
 ---
 title: Sottoscrizioni di Visual Studio
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327190"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946926"
 ---
 # <a name="visual-studio-subscriptions"></a>Sottoscrizioni di Visual Studio
+
 Le sottoscrizioni di Visual Studio rappresentano il set di risorse più completo per creare, distribuire e gestire applicazioni di alta qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi delle sottoscrizioni includono l'accesso agli strumenti di sviluppo, a servizi e software cloud, a risorse di training e al supporto per svariate esigenze di test e sviluppo.
 
-##  <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Introduzione
+
 Gli amministratori possono accedere a [https://manage.visualstudio.com](https://manage.visualstudio.com) per assegnare le sottoscrizioni ai team.<br>
 I sottoscrittori accedono a [https://my.visualstudio.com](https://my.visualstudio.com) per usufruire dei vantaggi della sottoscrizione.
 
@@ -134,6 +136,12 @@ I sottoscrittori accedono a [https://my.visualstudio.com](https://my.visualstudi
         </a>
     </li>   
 </ul>
+
+---
+
+## <a name="whats-new"></a>Novità
+
+Per rendere ancora più utile la sottoscrizione, a questa si aggiungono vantaggi, che vengono aggiornati spesso. Per altre informazioni, vedere la pagina [What's new in subscriptions](whats-new-in-subscriptions.md) (Novità delle sottoscrizioni).
 
 ---
 

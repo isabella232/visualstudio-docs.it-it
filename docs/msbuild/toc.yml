@@ -84,6 +84,8 @@
               items:
                 - name: 'Procedura dettagliata: Creazione di un''attività inline'
                   href: walkthrough-creating-an-inline-task.md
+            - name: Attività inline di MSBuild con RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Confronto di proprietà ed elementi
           href: comparing-properties-and-items.md
         - name: Caratteri speciali di MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Attività Delete
               href: delete-task.md
+            - name: Attività DownloadFile
+              href: downloadfile-task.md
             - name: Attività Error
               href: error-task.md
             - name: Attività Exec
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: Attività UnregisterAssembly
               href: unregisterassembly-task.md
+            - name: Attività Unzip
+              href: unzip-task.md
             - name: Attività UpdateManifest
               href: updatemanifest-task.md
             - name: Attività Vbc
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: Attività XslTransformation
               href: xsltransformation-task.md
+            - name: Attività ZipDirectory
+              href: zipdirectory-task.md
         - name: Condizioni di MSBuild
           href: msbuild-conditions.md
         - name: Costrutti condizionali di MSBuild
