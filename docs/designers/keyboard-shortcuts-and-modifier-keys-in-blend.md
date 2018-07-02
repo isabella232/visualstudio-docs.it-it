@@ -1,6 +1,7 @@
 ---
 title: Tasti di scelta rapida e tasti di modifica in Blend
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd5299a9384e672f00150997ee4310de6c3282c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6a9ceb3f6aa2483621b3d917533457a05008df0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747417"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tasti di scelta rapida e tasti di modifica in Blend
 I tasti di scelta rapida consentono di velocizzare il lavoro riducendo un'azione che richiederebbe diversi clic del pulsante del mouse a un unico tasto di scelta rapida. In [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] i tasti di scelta rapida sono divisi nelle due categorie seguenti:
@@ -22,13 +24,13 @@ I tasti di scelta rapida consentono di velocizzare il lavoro riducendo un'azione
 
      Per usare i tasti di scelta, premere ALT o F10 per visualizzare i caratteri di sottolineatura, quindi premere la lettera corrispondente del menu o dell'elemento della finestra di dialogo specifico. In alternativa, è possibile spostarsi in un menu o in una finestra di dialogo usando TAB o i tasti di direzione. Se ad esempio si preme ALT in [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)], viene visualizzata una sottolineatura sotto la lettera **F** nel menu **File** per identificarlo come tasto di scelta. Per aprire un progetto, è possibile tenere premuto ALT, premere F, quindi O.
 
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") Tasti di scelta che vengono visualizzati con un carattere di sottolineatura dopo aver premuto ALT
+     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png) Tasti di scelta visualizzati con un carattere di sottolineatura dopo aver premuto ALT
 
 -   **Tasti di scelta rapida** I tasti di scelta rapida consentono di eseguire un'azione, ad esempio la selezione di un comando di menu o la modifica del comportamento di uno strumento.
 
      La maggior parte dei tasti di scelta rapida è facilmente identificabile nell'interfaccia utente di [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]. Essi vengono visualizzati a destra dei comandi di menu. Ad esempio, nel menu **File** il comando di menu **Apri progetto** include il tasto di scelta rapida CTRL+MAIUSC+O. Per visualizzare i tasti di scelta rapida per uno strumento nel pannello **Strumenti**, posizionare il puntatore sullo strumento.
 
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Tasti di scelta rapida visualizzati accanto alle voci di menu che dispongono di tali tasti
+     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png) Tasti di scelta rapida visualizzati accanto alle voci di menu che dispongono di tali tasti
 
  Per altre informazioni sull'accessibilità e le funzionalità, vedere [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).
 

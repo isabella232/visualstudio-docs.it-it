@@ -13,11 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747352"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -33,7 +34,7 @@ Per seguire la procedura, è necessaria una copia della versione 15.3 o successi
 
 Se non è ancora stato avviato, avviare Visual Studio.
 
-![IDE con Visual C# 43; & #43; impostazioni applicate](../ide/media/get-started-cpp-ide-layout.png "IDE con Visual C# 43; & #43; impostazioni applicate")
+![IDE con impostazioni Visual C&#43;&#43; applicate](../ide/media/get-started-cpp-ide-layout.png)
 
 Dopo aver aperto Visual Studio, saranno visibili le tre parti fondamentali dell'IDE, vale a dire le finestre degli strumenti, i menu e le barre degli strumenti e lo spazio della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione. La casella di **Avvio veloce**, la barra dei menu e la barra degli strumenti standard si trovano nella parte superiore. Al centro della finestra si trova la **Pagina iniziale**. Quando si apre una soluzione o un progetto, in questo spazio verranno visualizzati gli editor e le finestre di progettazione. Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
@@ -43,11 +44,11 @@ Visual Studia usa i *progetti* per organizzare il codice per un'applicazione e l
 
 1. Sulla barra dei menu scegliere **File> Nuovo > Progetto** per aprire la finestra di dialogo **Nuovo progetto**.
 
-   ![Nella barra dei menu scegliere File > Nuovo > Progetto](../ide/media/get-started-cpp-file-new-project-menu.png "Nella barra dei menu scegliere File > Nuovo > Progetto")
+   ![Nella barra dei menu scegliere File > Nuovo > Progetto](../ide/media/get-started-cpp-file-new-project-menu.png)
 
 1. Nella finestra di dialogo **Nuovo progetto**, selezionare **Installato > Visual C++** se non è già selezionato. Nel riquadro centrale selezionare il modello per **l'applicazione console di Windows**. Nella casella di modifica **Nome**, immettere *HelloApp*.
 
-   ![Usare la finestra di dialogo Nuovo progetto per creare il progetto dell'applicazione](../ide/media/get-started-cpp-new-project-dialog.png "Usare la finestra di dialogo Nuovo progetto per creare il progetto dell'applicazione")
+   ![Usare la finestra di dialogo Nuovo progetto per creare un progetto di app](../ide/media/get-started-cpp-new-project-dialog.png)
 
    La finestra di dialogo potrebbe avere opzioni diverse a seconda dei carichi di lavoro di Visual Studio e dei componenti installati. Se non vengono visualizzati i modelli del progetto di Visual C++, è necessario eseguire nuovamente il programma di installazione di Visual Studio e installare il carico di lavoro **Sviluppo di applicazioni desktop con C++**. È possibile farlo direttamente dalla finestra di dialogo **Nuovo progetto**. Per avviare il programma di installazione, scegliere il collegamento nella finestra di dialogo **Apri il programma di installazione di Visual Studio** .
 
@@ -55,7 +56,7 @@ Visual Studia usa i *progetti* per organizzare il codice per un'applicazione e l
 
    Il progetto e la soluzione HelloApp, con i file di base per un progetto console Windows, verranno creati e caricati automaticamente in **Esplora soluzioni**. Il file *HelloApp.cpp* si aprirà nell'editor del codice. In **Esplora soluzioni**vengono visualizzati gli elementi riportati di seguito.
 
-   ![File per la soluzione in Esplora soluzioni](../ide/media/get-started-cpp-solution-explorer.png "File per la soluzione in Esplora soluzioni")
+   ![File per la soluzione in Esplora soluzioni](../ide/media/get-started-cpp-solution-explorer.png)
 
 ## <a name="add-code-to-the-app"></a>Aggiungere codice all'applicazione
 
@@ -71,11 +72,11 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
    Una linea rossa ondulata appare sotto `cout`. Se si posiziona il puntatore del mouse su di essa, viene visualizzato un messaggio di errore.
 
-   ![Testo dell'errore per cout](../ide/media/get-started-cpp-intellisense-error.png "Testo dell'errore per cout")
+   ![Testo dell'errore per cout](../ide/media/get-started-cpp-intellisense-error.png)
 
    Il messaggio di errore viene visualizzato anche nella finestra **Elenco errori** . È possibile visualizzare la finestra scegliendo **Visualizzazione > Elenco errori** dalla barra dei menu.
 
-   ![Errore nella finestra Elenco errori](../ide/media/get-started-cpp-error-list.png "Errore nella finestra Elenco errori")
+   ![Errore nella finestra Elenco errori](../ide/media/get-started-cpp-error-list.png)
 
    Nel codice manca una dichiarazione per [std::cout](/cpp/standard-library/iostream), che si trova nel file di intestazione *\<iostream>*.
 
@@ -88,7 +89,7 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
    Si noti che viene visualizzato un riquadro quando si immette il codice. Questa finestra contiene suggerimenti di completamento automatico per i caratteri immessi. Fa parte di IntelliSense per C++, che specifica prompt di codifica, incluse classi o membri di interfaccia e informazioni sui parametri. È anche possibile usare frammenti di codice, cioè blocchi di codice predefiniti. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) e [Code Snippets](../ide/code-snippets.md).
 
-   ![Il codice corretto nell'editor](../ide/media/get-started-cpp-cout-fix.png "Il codice corretto nell'editor")
+   ![Il codice corretto nell'editor](../ide/media/get-started-cpp-cout-fix.png)
 
    La sottolineatura ondulata di colore rosso sotto `cout` scomparirà dopo aver risolto l'errore.
 
@@ -98,7 +99,7 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
 È facile compilare il codice. Nella barra dei menu scegliere **Compilazione > Compila soluzione**. Visual Studio compila la soluzione HelloApp e i report sullo stato di avanzamento nella finestra di **Output**.
 
-   ![Compilare la soluzione HelloApp](../ide/media/get-started-cpp-build-solution.gif "Compilare la soluzione HelloApp")
+   ![Compilare la soluzione HelloApp](../ide/media/get-started-cpp-build-solution.gif)
 
 ## <a name="debug-and-test-the-app"></a>Eseguire il debug e il test dell'app
 
@@ -108,7 +109,7 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
 Nella barra dei menu scegliere **Debug > Avvia debug** per avviare il debug.
 
-![Avviare il comando debug dal menu Debug](../ide/media/get-started-cpp-start-debugging-menu.png "Avviare il comando debug dal menu Debug")
+![Avviare il comando Debug dal menu Debug](../ide/media/get-started-cpp-start-debugging-menu.png)
 
 Il debugger viene avviato e viene eseguito il codice. La finestra della console (una finestra separata simile a un prompt dei comandi) viene visualizzata per pochi secondi, ma si chiude rapidamente quando il debugger si arresta. Per visualizzare il testo, è necessario impostare un punto di interruzione per arrestare l'esecuzione del programma.
 
@@ -116,17 +117,17 @@ Il debugger viene avviato e viene eseguito il codice. La finestra della console 
 
 1. Nell'editor, posizionare il cursore sulla riga `return 0;`. Nella barra dei menu scegliere **Debug > Imposta/Rimuovi punto di interruzione**. È anche possibile fare clic sul margine sinistro per impostare un punto di interruzione.
 
-     ![Attivare o disattivare il comando del punto di interruzione dal menu Debug](../ide/media/get-started-cpp-toggle-breakpoint-menu.png "Attivare o disattivare il comando del punto di interruzione dal menu Debug")
+     ![Comando Imposta/Rimuovi punto di interruzione nel menu Debug](../ide/media/get-started-cpp-toggle-breakpoint-menu.png)
 
      Accanto alla riga di codice nel margine di estrema sinistra della finestra dell'editor verrà visualizzato un cerchio rosso.
 
-     ![Punto di interruzione indicato al margine della finestra](../ide/media/get-started-cpp-breakpoint-set.png "Punto di interruzione indicato al margine della finestra")
+     ![Punto di interruzione indicato al margine della finestra](../ide/media/get-started-cpp-breakpoint-set.png)
 
 1. Premere **F5** per avviare il debug.
 
    Il debugger viene avviato, e viene visualizzata una finestra della console con la parola **Hello**.
 
-   ![Testo Hello nella finestra della console](../ide/media/get-started-cpp-helloapp-window.png "Testo Hello nella finestra della console")
+   ![Testo Hello nella finestra della console](../ide/media/get-started-cpp-helloapp-window.png)
 
 1. Premere MAIUSC+F5 per arrestare il debug.
 
@@ -140,11 +141,11 @@ Dopo aver verificato che tutto funzioni, è possibile preparare una build di ril
 
 1. Nella barra dei menu selezionare **Compila > Pulisci soluzione** per eliminare i file intermedi e di output creati durante le compilazioni precedenti.
 
-   ![Comando Pulisci soluzione dal menu Compila](../ide/media/get-started-cpp-clean-solution-menu.png "ExploreIDE-CleanSolution")
+   ![Comando Pulisci soluzione del menu Compila](../ide/media/get-started-cpp-clean-solution-menu.png)
 
 1. Per modificare la configurazione della soluzione per HelloApp da **Debug** a **Versione**, nella barra degli strumenti selezionare l'elenco a discesa sul controllo delle configurazioni di soluzione e quindi scegliere **Versione**.
 
-   ![Compilare una versione di rilascio dell'applicazione](../ide/media/get-started-cpp-set-release-configuration.png "C++IDE_ChangingBuildtoRelease")
+   ![Compilare una versione di rilascio dell'applicazione](../ide/media/get-started-cpp-set-release-configuration.png)
 
 1. Compilare la soluzione. Nella barra dei menu scegliere **Compilazione > Compila soluzione**.
 
@@ -157,5 +158,3 @@ La guida introduttiva è stata completata. Per esaminare altri esempi, vedere [V
 - [Uso dell'IDE di Visual Studio per lo sviluppo di applicazioni desktop C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [Procedura dettagliata: creare un'applicazione semplice con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [Suggerimenti relativi alla produttività per Visual Studio](../ide/productivity-tips-for-visual-studio.md)
-- [Esempi di Visual Studio](../ide/visual-studio-samples.md)
-- [Introduzione allo sviluppo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)

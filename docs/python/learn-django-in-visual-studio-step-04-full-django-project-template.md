@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750363"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Passaggio 4 della procedura: Usare il modello Progetto Web Django completo
 
@@ -40,7 +41,7 @@ Il modello fornisce anche l' autenticazione di base, come descritto nel passaggi
 
 1. Poiché il modello include di nuovo un file `requirements.txt`, Visual Studio chiede dove installare queste dipendenze. Scegliere l'opzione **Installa in un ambiente virtuale** e nella finestra di dialogo **Aggiungi ambiente virtuale** selezionare **Crea** per accettare le impostazioni predefinite.
 
-1. Al termine della configurazione dell'ambiente virtuale in Python, seguire le istruzioni nel file `readme.html` visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il pulsante destro del mouse sul progetto di Visual Studio e scegliere il comando **Python** > **Creazione Super User Django**, quindi seguire le indicazioni. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
+1. Al termine della configurazione dell'ambiente virtuale in Visual Studio, seguire le istruzioni nel file `readme.html` visualizzato per creare un utente Django con privilegi avanzati, ovvero un amministratore. È sufficiente fare clic con il pulsante destro del mouse sul progetto di Visual Studio e scegliere il comando **Python** > **Creazione Super User Django**, quindi seguire le indicazioni. Assicurarsi di registrare il nome utente e la password, perché verranno usati per provare le funzionalità di autenticazione dell'app.
 
 1. Impostare il progetto "DjangoWeb" come predefinito per la soluzione di Visual Studio facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo **Imposta come progetto di avvio**. Il progetto di avvio, indicato in grassetto, è quello che viene eseguito quando si avvia il debugger.
 

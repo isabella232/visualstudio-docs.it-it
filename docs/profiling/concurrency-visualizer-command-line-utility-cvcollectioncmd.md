@@ -12,20 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691147"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
-L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) permette di raccogliere tracce dalla riga di comando, in modo da poterle visualizzare nel Visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  
+L'utilità della riga di comando del visualizzatore di concorrenza (*CVCollectionCmd.exe*) consente di raccogliere tracce dalla riga di comando in modo da poterle visualizzare nel visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  
   
 > [!NOTE]
 >  A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio.) È possibile scaricare gli [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) dall'Area download.  
   
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Scaricare l'utilità riga di comando Visualizzatore di concorrenza  
- Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, CVCollectionCmd.exe è installato in %Programmi%\Microsoft Concurrency Visualizer Collection Tools\ (%Programmi(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Scaricare l'utilità della riga di comando del visualizzatore di concorrenza  
+ Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, *CVCollectionCmd.exe* è installato in %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Raccogliere una traccia con CVCollectionCmd  
  È possibile raccogliere una traccia avviando l'app con CVCollectionCmd oppure tramite una connessione all'app. Per le opzioni disponibili, vedere i riferimenti ai comandi seguenti. Esempio:  
@@ -51,13 +52,13 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 |Process|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|Nessuno.|  
 |Config|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|Nessuno.|  
   
-## <a name="customizing-configuration-settings"></a>Personalizzazione delle impostazioni di configurazione  
+## <a name="customize-configuration-settings"></a>Personalizzare le impostazioni di configurazione  
  Se si usa CVCollectionCmd per raccogliere tracce e si vogliono personalizzare le impostazioni di raccolta, usare un file di configurazione per specificarle.  
   
 > [!NOTE]
 >  Quando si usa Visual Studio per raccogliere le tracce, è necessario non modificare direttamente il file di configurazione.  Per modificare le impostazioni, usare invece la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .  
   
- Per modificare le impostazioni di raccolta, creare un file di configurazione nella macchina in cui sarà eseguita l'utilità CVCollectionCmd. È possibile creare un file di configurazione completamente nuovo oppure copiare il file di configurazione disponibile nel computer in cui è installato Visual Studio e modificarlo. Il nome del file è `UserConfig.xml` e il file si trova nella cartella **Local AppData** . Quando si esegue l'utilità, usare l'opzione Config insieme al comando Launch, Attach o Analyze.  Specificare il percorso del file di configurazione nel parametro associato all'opzione Config.  
+ Per modificare le impostazioni di raccolta, creare un file di configurazione nella macchina in cui sarà eseguita l'utilità CVCollectionCmd. È possibile creare un file di configurazione completamente nuovo oppure copiare il file di configurazione disponibile nel computer in cui è installato Visual Studio e modificarlo. Il nome del file è *UserConfig.xml* e il file si trova nella cartella *Local AppData*. Quando si esegue l'utilità, usare l'opzione Config insieme al comando Launch, Attach o Analyze.  Specificare il percorso del file di configurazione nel parametro associato all'opzione Config.  
   
 ### <a name="configuration-file-tags"></a>Tag del file di configurazione  
  Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  

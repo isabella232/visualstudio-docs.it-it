@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e3b082c57e48d7c70fdda22c68c1a9d8980f71
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750103"
 ---
 # <a name="cvinitprovider-function"></a>Funzione CvInitProvider
 Inizializza il provider di marcatori. Deve essere chiamata prima di qualsiasi altra funzione SDK del visualizzatore di concorrenza.  
@@ -43,7 +44,7 @@ HRESULT CvInitProvider(
  S_OK quando il provider è stato inizializzato correttamente oppure codice dell'errore nel caso in cui si siano verificati errori. Usare le macro SUCCEEDED/FAILED per controllare la condizione di errore.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** cvmarkers.h  
+ **Intestazione:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento alla libreria C++](../profiling/cpp-library-reference.md)

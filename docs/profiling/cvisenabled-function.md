@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47129a84b38a4182514bf91be3c55704cf506410
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 1555703c92695090a3c8ac7b04e7a35dadcd7627
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749200"
 ---
 # <a name="cvisenabled-function"></a>Funzione CvIsEnabled
 Determina se vi sono sessioni che hanno abilitato il provider ETW specifico.  
@@ -52,7 +53,7 @@ HRESULT CvIsEnabledEx(
  S_OK se il provider è stato abilitato correttamente. S_FALSE se il provider attualmente è disabilitato. Codice dell'errore nel caso in cui si siano verificati errori. Usare la macro FAILED per verificare la condizione di errore e quindi verificare la presenza di S_OK/S_FALSE.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** cvmarkers.h  
+ **Intestazione:** *cvmarkers.h*  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimento alla libreria C++](../profiling/cpp-library-reference.md)

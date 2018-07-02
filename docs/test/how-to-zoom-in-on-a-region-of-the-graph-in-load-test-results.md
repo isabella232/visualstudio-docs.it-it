@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750971"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
 
@@ -39,7 +40,7 @@ Al termine di un test di carico, è possibile utilizzare le barre dello zoom per
 > [!TIP]
 > È possibile usare l'opzione **Sincronizza controlli zoom orizzontali** nella barra degli strumenti per attivare o disattivare la sincronizzazione automatica dello zoom orizzontale. Quando la sincronizzazione è attiva, qualsiasi valore di zoom applicato a un grafico verrà applicato anche a tutti gli altri grafici nella visualizzazione Grafici.
 
- ![Controllo zoom della visualizzazione Grafici](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") Controllo zoom della visualizzazione Grafici
+ ![Controllo zoom della visualizzazione Grafici](../test/media/ltest_zoomcontrol.png) Controllo zoom della visualizzazione Grafici
 
  Nell'illustrazione precedente, il grafico Sistema sotto test è stato ingrandito al fine di esaminare problemi di soglia. Le violazioni di soglia sono state abilitate tramite l'opzione **Mostra violazioni di soglia su grafico** del menu a discesa **Opzioni grafico** presente nella barra degli strumenti.
 

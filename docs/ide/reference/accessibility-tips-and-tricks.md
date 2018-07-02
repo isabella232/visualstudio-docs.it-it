@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747456"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Suggerimenti sull'accessibilità per Visual Studio
 
@@ -34,13 +35,13 @@ Visual Studio dispone di funzionalità di accessibilità integrate compatibili c
 
 Per alcuni, alcuni colori sono più difficili da vedere. Se si desidera aumentare il contrasto durante la compilazione, ma non si desidera usare i temi tipici a "Contrasto elevato", Microsoft offre il tema "Blu (massimo contrasto)".
 
-  ![Confrontare il tema blu e il tema blu a massimo contrasto](media/blue-extra-contrast-theme.png "Visualizzare la differenza tra il tema blu e il tema blu a massimo contrasto")
+  ![Confronto tra il tema Blu e il tema Blu (massimo contrasto)](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Usare le annotazioni per rivelare informazioni utili sul proprio codice
 
 L'editor di Visual Studio comprende molte "aree di controllo" del testo che consentono di conoscere caratteristiche e funzionalità in determinati punti su una riga di codice, come lampadine, controlli durante la digitazione per errori e avvisi, segnalibri e altro ancora. È possibile usare il set di comandi "Mostra annotazioni riga" per scoprire queste aree di controllo e spostarsi dall'una all'altra.
 
-  ![Usare il set di comandi Mostra annotazioni riga](media/show-line-annotations-command-set.png "Illustra come impostare il set di comandi Mostra annotazioni riga")
+  ![Usare il set di comandi Mostra annotazioni riga](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Accedere alle barre degli strumenti tramite combinazioni di tasti
 
@@ -82,18 +83,18 @@ Ecco come fare.
 
 1. Nella casella **Ricerca** in un computer con Windows 10, digitare **Cambia segnali acustici emessi dal sistema**.
 
-  ![Casella di ricerca in Windows 10](media/type-here-to-search.png "Digitare Suoni in un computer con Windows 10")
+  ![Casella di ricerca in Windows 10](media/type-here-to-search.png)
 
   (In alternativa, se è abilitato Cortana, pronunciare "Ehi Cortana", quindi pronunciare "Cambia segnali acustici emessi dal sistema".)
 
 2. Fare doppio clic su **Cambia segnali acustici emessi dal sistema**.
 
-  ![Risultati della ricerca in Windows 10](media/change-system-sounds.png "Fare doppio clic su Cambia segnali acustici emessi dal sistema nei risultati della ricerca")
+  ![Risultati della ricerca in Windows 10](media/change-system-sounds.png)
 
 3. Nella finestra di dialogo **Suono**, fare clic sulla scheda **Suoni**. <br><br>
  Quindi, in **Eventi**, scorrere fino a **Microsoft Visual Studio**e selezionare i suoni che si desidera applicare agli eventi scelti.
 
-  ![Scheda Suoni dell'applet Suono in Windows 10](media/sound-applet.png "Fare doppio clic su Cambia segnali acustici emessi dal sistema nei risultati della ricerca")
+  ![Scheda Suoni dell'applet Audio in Windows 10](media/sound-applet.png)
 
 4. Fare clic su **OK**.
 

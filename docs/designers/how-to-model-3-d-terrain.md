@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Creare un modello di territorio 3D'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3108ff6c04ccae459e977601446d3d16efa8ebfa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745578"
 ---
 # <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di territorio 3D
 
@@ -25,7 +27,7 @@ Questo articolo illustra come usare l'editor dei modelli per creare un modello d
 
 Al termine, il modello dovrebbe risultare simile al seguente:
 
-![Scena 3D che illustra un modello di terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Scena 3D che illustra un modello di terreno](../designers/media/digit-terrain-model.png)
 
 Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
@@ -51,7 +53,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
 Il modello di terreno è completo. Di seguito viene nuovamente illustrato il modello finale con l'ombreggiatura Phong applicata.
 
-![Scena 3D che illustra un modello di terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Scena 3D che illustra un modello di terreno](../designers/media/digit-terrain-model.png)
 
 È possibile usare questo modello di terreno per illustrare l'effetto dello shader con sfumatura descritto in [Procedura: Creare uno shader con sfumatura basata sulla geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

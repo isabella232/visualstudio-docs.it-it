@@ -1,15 +1,16 @@
 ---
 layout: HubPage
-hide_bc: ''
+hide_bc: true
 title: Documentazione di Visual Studio | Microsoft Docs
 description: Informazioni su come usare Visual Studio 2017 per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per le piattaforme e i dispositivi desiderati.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 86d19020a46c0aeb4d1d5a5d2c72e6881a04ef0c
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690598"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -53,6 +54,25 @@ ms.lasthandoff: 03/28/2018
                                                 <div class="cardText">
                                                     <h3>Visual Studio Team Services</h3>
                                                     <p>Aumentare la produttività del team con strumenti e report per il progetto Agile. Compilare, testare e distribuire i progetti dal controllo del codice sorgente con moderni strumenti di integrazione continua/recapito continuo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Team Foundation Server</h3>
+                                                    <p>Installare, aggiornare e gestire le distribuzioni in locale.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -135,7 +155,7 @@ ms.lasthandoff: 03/28/2018
                                     </div>
                                 </a>
                             </li>
-                        </ul>                       
+                        </ul>
                     </li>
                 </ul>
             </li>

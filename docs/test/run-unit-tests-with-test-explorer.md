@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752066"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -29,13 +30,13 @@ Visual Studio include i framework di unit test Microsoft sia per il codice gesti
 
 Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
 
-![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
 
 Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi predefiniti **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile modificare la modalità con cui Esplora test raggruppa i test.
 
 È possibile eseguire molte delle operazioni di ricerca, organizzazione ed esecuzione dei test dalla barra degli strumenti di Esplora test.
 
-![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Esegui test
 
@@ -47,7 +48,7 @@ Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i ri
 
 - Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.
 
-- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 Mentre il test viene eseguito, la barra Superato/Non superato nella parte superiore della finestra Esplora test mostra un'animazione. Al termine dell'esecuzione del test, la barra Superato/Non superato diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 
@@ -65,7 +66,7 @@ Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i ri
 
 Per visualizzare i dettagli di un singolo test, selezionare il test.
 
-![Dettagli sull'esecuzione dei test](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Dettagli sull'esecuzione dei test](../test/media/ute_testdetails.png)
 
 Il riquadro dei dettagli del test mostra le informazioni seguenti:
 
@@ -91,9 +92,9 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 
 ### <a name="group-tests-in-the-test-list"></a>Raggruppare i test nell'elenco di test
 
- Per modificare la modalità di organizzazione dei test, scegliere la freccia rivolta verso il basso accanto al pulsante **Raggruppa** ![Pulsante Raggruppa di Esplora test](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") e selezionare un nuovo criterio di raggruppamento.
+ Per modificare la modalità di organizzazione dei test, scegliere la freccia rivolta verso il basso accanto al pulsante **Raggruppamento** ![Pulsante Raggruppamento di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
 
- ![Raggruppare i test per categoria in Esplora test](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Raggruppare i test per categoria in Esplora test](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
@@ -135,7 +136,7 @@ Per filtrare in base a un criterio diverso:
 
 3. Immettere il valore di filtro tra virgolette.
 
-![Filtrare i test in Esplora test](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Filtrare i test in Esplora test](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
@@ -160,9 +161,9 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
 ## <a name="create-custom-playlists"></a>Creare playlist personalizzate
 
- È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco saranno visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test**.
+ È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco saranno visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
 
- ![Scegliere una playlist](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Scegliere una playlist](../test/media/ute_playlist.png)
 
  **Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist**, **Nuova playlist**dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
 
@@ -170,7 +171,7 @@ Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test 
 
  **Per aprire una playlist**, scegliere Test, Playlist dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere Apri playlist per specificare il nome e il percorso della playlist.
 
- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Eseguire il debug e l'analisi di unit test
 

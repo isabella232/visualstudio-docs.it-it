@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748231"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -93,7 +94,7 @@ L'operazione **Aggiungi using** di IntelliSense aggiunge automaticamente la dire
 
 Per avviare l'operazione **Aggiungi using**, posizionare il cursore sul riferimento a un tipo che non può essere risolto. Ad esempio, quando si crea un'applicazione console e si aggiunge `XmlTextReader` al corpo del metodo `Main`, nella riga di codice appare una sottolineatura ondulata rossa per indicare che non è possibile risolvere il riferimento al tipo. È quindi possibile richiamare **Aggiungi using** con le **Azione rapide**. Le **Azioni rapide** sono visualizzate solo quando il cursore è posizionato sul tipo non associato.
 
-![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
+![Immagine ampliata Aggiungi using, azione rapida](../ide/media/addusing-quickaction.png)
 
 Fare clic sull'icona lampadina e quindi scegliere **using System.Xml;** per aggiungere automaticamente la direttiva using.
 
@@ -137,17 +138,17 @@ Le opzioni visualizzate possono includere quanto segue:
 
 - **Genera nuovo tipo** (per una classe, struct, interfaccia o enumerazione)
 
-## <a name="generate-event-handlers"></a>Genera gestori di eventi
+## <a name="generate-event-handlers"></a>Genera gestori eventi
 
 Nell'editor del codice IntelliSense consente di agganciare i metodi (gestori di eventi) a campi evento.
 
 Quando si digita l'operatore `+=` dopo un campo evento in un file con estensione *cs*, IntelliSense chiede di premere **TAB**. Questa operazione consente di inserire una nuova istanza di un delegato che punta al metodo che gestisce l'evento.
 
-![Associazione automatica dei pulsanti](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Associazione automatica dei pulsanti](../ide/media/vxautohookup.gif)
 
 Se si preme **TAB**, IntelliSense termina automaticamente l'istruzione e visualizza il riferimento al gestore dell'evento come testo selezionato nell'editor del codice. Per completare l'associazione automatica dell'evento, IntelliSense chiede di premere di nuovo **TAB** per creare uno stub vuoto per il gestore dell'evento.
 
-![Genera gestore eventi](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Gestore eventi di generazione](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Se un nuovo delegato creato da IntelliSense fa riferimento a un gestore eventi esistente, IntelliSense comunica queste informazioni nella descrizione comando. È quindi possibile modificare questo riferimento. Il testo è già selezionato nell'editor del codice. In caso contrario, l'associazione automatica dell'evento è a questo punto completata.

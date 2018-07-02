@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750493"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Passaggio 6 della procedura: Usare il modello Progetto Web Django di sondaggi
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-Se non si ha familiarità con le espressioni regolari più complesse usate in questo argomento, è possibile incollare l'espressione in [regex101.com](https://regex101.com/) per una spiegazione in un linguaggio semplice. È necessario aggiungere un carattere di escape per la barra `/` aggiungendo una barra rovesciata, `\`. L'uso di caratteri di escape non è necessario in Python perché è presente il prefisso `r` nella stringa, che indica "raw" (non elaborato).
+Se non si ha familiarità con le espressioni regolari più complesse usate in questo argomento, è possibile incollare l'espressione in [regex101.com](https://regex101.com/) per una spiegazione in un linguaggio semplice. È necessario aggiungere un carattere di escape per la barra `/` facendola precedere da una barra rovesciata, `\`. L'uso di caratteri di escape non è necessario in Python perché è presente il prefisso `r` nella stringa, che indica "raw" (non elaborato).
 
 In Django la sintassi `?P<name>pattern` crea un gruppo denominato `name`, che viene passato come argomento nelle visualizzazioni, nell'ordine in cui appaiono. Nel codice riportato in precedenza, `PollsDetailView` e `PollsResultsView` ricevono un argomento denominato `pk` e `app.views.vote` riceve un argomento denominato `poll_id`.
 

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750506"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Esercitazione, passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -106,7 +107,7 @@ A questo punto, se si esegue di nuovo il progetto in Visual Studio, usando il pu
 
 Poiché sono state apportate modifiche al codice e il test delle modifiche è riuscito, questo è il momento più appropriato per esaminare le modifiche ed eseguirne il commit nel controllo del codice sorgente. I passaggi successivi di questa esercitazione indicano i momenti appropriati in cui eseguire un nuovo commit nel controllo del codice sorgente e rimandano a questa sezione.
 
-1. Selezionare il pulsante Modifiche nella parte inferiore di Visual Studio (opzione cerchiata di seguito), che permette di passare a **Team Explorer**.
+1. Selezionare il pulsante Modifiche nella parte inferiore di Visual Studio (opzione cerchiata di seguito), che consente di passare a **Team Explorer**.
 
     ![Pulsante Modifiche per il controllo del codice sorgente sulla barra di stato di Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -210,9 +211,7 @@ I passaggi seguenti descrivono l'uso dei modelli di pagina:
 
 1. Eseguire il progetto e osservare l'output. Dovrebbe essere visualizzato un messaggio simile a quello mostrato nel passaggio 2 2, che indica che il modello funziona.
 
-    Osservare, tuttavia, che il rendering del file HTML usato nella proprietà `content` viene eseguito solo come testo normale, perché la funzione `render` esce automaticamente dal file HTML. Anche se è possibile aggirare questo comportamento, idealmente è bene evitare del tutto di usare HTML inline. La formattazione e lo stile vengono mantenuti al meglio nel modello di pagina, non nel codice, ed è semplice creare variabili aggiuntive quando necessario.
-
-    Ad esempio, modificare `templates/index.html` in modo che corrisponda al markup seguente, che aggiunge un titolo di pagina e mantiene tutta la formattazione nel modello di pagina:
+    Osservare, tuttavia, che il rendering del file HTML usato nella proprietà `content` viene eseguito solo come testo normale, perché la funzione `render` esce automaticamente dal file HTML. La sequenza di escape automatica evita vulnerabilità accidentali agli attacchi injection: gli sviluppatori spesso raccolgono l'input da una pagina e lo usano come valore in un'altra usando un segnaposto di modello. L'escape funge anche da promemoria per ricordare che è meglio tenere l'HTML nel modello di pagina e fuori dal codice. Per fortuna è semplice creare variabili aggiuntive in caso di necessità. Ad esempio, modificare `templates/index.html` in modo che corrisponda al markup seguente, che aggiunge un titolo di pagina e mantiene tutta la formattazione nel modello di pagina:
 
     ```html
     <html>

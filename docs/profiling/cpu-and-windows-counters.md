@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748738"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -45,7 +46,7 @@ Il profiler di Visual Studio continua a supportare eventi specifici per una dete
 
 Gli eventi portabili costituiscono un gruppo di contatori della CPU che non sono specifici di un processore specifico. Tutti gli altri contatori CPU vengono chiamati eventi piattaforma e potrebbero non essere supportati su varie piattaforme.
 
- I contatori per gli eventi portabili e piattaforma sono definiti in file con estensione xml in cui vengono specificati valori specifici correlati ai contatori. Sono presenti più file per le diverse CPU poiché i dati per le CPU Intel e AMD, ad esempio, sono diversi. Il profiler di [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] usa queste informazioni per presentare all'utente i contatori appropriati, sia portabili che piattaforma, per la misurazione delle prestazioni.
+ I contatori per gli eventi portabili e piattaforma sono definiti in file con estensione *xml* in cui vengono specificati valori specifici correlati ai contatori. Sono presenti più file per le diverse CPU poiché i dati per le CPU Intel e AMD, ad esempio, sono diversi. Il profiler di [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] usa queste informazioni per presentare all'utente i contatori appropriati, sia portabili che piattaforma, per la misurazione delle prestazioni.
 
 ### <a name="portable-events"></a>Eventi portabili
 
@@ -78,7 +79,7 @@ Gli eventi portabili contengono i seguenti eventi:
 |Richieste non soddisfatte lettura cache L2|Indica il numero di richieste non soddisfatte di lettura cache di secondo livello.|
 |Riferimenti lettura cache L2|Indica il numero di riferimenti di lettura nella cache di secondo livello. Include le richieste non soddisfatte di caricamento e le richieste soddisfatte e non soddisfate di lettura per titolarità (RFO).|
 
-## <a name="viewing-available-counters"></a>Visualizzazione dei contatori disponibili
+## <a name="view-available-counters"></a>Visualizzare i contatori disponibili
 
 È possibile elencare i contatori di CPU disponibili nell'IDE di Visual Studio in una finestra del prompt dei comandi.
 
@@ -126,9 +127,9 @@ Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) è po
 
      **\<Directory degli strumenti per le prestazioni di Visual Studio > \VSPerfCmd /QueryCounters.**
 
-     dove  **\<Directory degli strumenti per le prestazioni di Visual Studio>** è il percorso alla directory degli strumenti per le prestazioni della propria installazione di Visual Studio, in genere
+     dove  *\<Directory degli strumenti per le prestazioni di Visual Studio>* è il percorso alla directory degli strumenti per le prestazioni della propria installazione di Visual Studio, in genere
 
-     C:\Programmi\Microsoft Visual Studio 10.0\Team Tools\Strumenti per le prestazioni
+     *C:\Programmi\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>Vedere anche
 

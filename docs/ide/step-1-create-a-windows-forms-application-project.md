@@ -11,64 +11,65 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133166ad19b438f3da43f9c3b600c6cb67ce4827
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d9bcb82622a7ea303a632865b0c3f964de4b4dc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747655"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: Creare un progetto Windows Forms Application
-Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella creazione di un progetto di Windows Forms Application.  
-  
- ![collegamento al video](../data-tools/media/playvideo.gif "Riproduci video")Per una versione video di questo argomento, vedere [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1) o [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Esercitazione 1: Creare un visualizzatore di immagini in C# - Video 1). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.  
-  
-## <a name="to-create-a-windows-forms-application-project"></a>Per creare un progetto di Windows Forms Application  
-  
-1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Verrà visualizzata una finestra di dialogo simile alla seguente.  
-  
-     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts")  
-Finestra di dialogo **Nuovo progetto**  
-  
-2.  Scegliere **Visual C#** o **Visual Basic** dall'elenco **Modelli installati**.  
+Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella creazione di un progetto di Windows Forms Application.
 
-3.  Nell'elenco di modelli scegliere l'icona **Windows Forms Application**. Assegnare il nome **PictureViewer** al nuovo modulo, quindi scegliere il pulsante **OK**.  
+ ![collegamento al video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Tutorial 1: Create a picture viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) (Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1) o [Tutorial 1: Create a picture viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199) (Esercitazione 1: Creare un visualizzatore di immagini in C# - Video 1). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
-     Visual Studio crea una soluzione per il programma. Una soluzione funge da contenitore per tutti i progetti e i file richiesti dal programma. Questi termini verranno spiegati dettagliatamente più avanti in questa esercitazione.  
+## <a name="to-create-a-windows-forms-application-project"></a>Per creare un progetto di Windows Forms Application
 
-4.  Nella figura seguente viene illustrato ciò che si dovrebbe vedere nell'interfaccia di Visual Studio.  
+1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**. Verrà visualizzata una finestra di dialogo simile alla seguente.
+
+     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)
+Finestra di dialogo **Nuovo progetto**
+
+2.  Scegliere **Visual C#** o **Visual Basic** dall'elenco **Modelli installati**.
+
+3.  Nell'elenco di modelli scegliere l'icona **Windows Forms Application**. Assegnare il nome **PictureViewer** al nuovo form, quindi scegliere il pulsante **OK**.
+
+     Visual Studio crea una soluzione per il programma. Una soluzione funge da contenitore per tutti i progetti e i file richiesti dal programma. Questi termini verranno spiegati dettagliatamente più avanti in questa esercitazione.
+
+4.  Nella figura seguente viene illustrato ciò che si dovrebbe vedere nell'interfaccia di Visual Studio.
 
     > [!NOTE]
-    >  Il layout delle finestre potrebbe non essere esattamente uguale a questa illustrazione. Il layout preciso della finestra dipende dalla versione di Visual Studio, dal linguaggio di programmazione in uso e da altri fattori. Tuttavia, è necessario verificare che tutte e tre le finestre siano visualizzate.  
+    >  Il layout delle finestre potrebbe non essere esattamente uguale a questa illustrazione. Il layout preciso della finestra dipende dalla versione di Visual Studio, dal linguaggio di programmazione in uso e da altri fattori. Tuttavia, è necessario verificare che tutte e tre le finestre siano visualizzate.
 
-     ![Finestra IDE](../ide/media/express_ideoverview_visio.png "Express_IDEOverview_Visio")  
-Finestra **IDE**  
-  
-     L'interfaccia contiene tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.  
-  
-     Se manca una di queste finestre, ripristinare il layout di finestra predefinito, scegliendo **Finestra** > **Reimposta layout finestra** sulla barra dei menu. È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**. Se sono aperte altre finestre, chiuderle scegliendo il pulsante **Chiudi** (x) negli angoli in alto a destra.  
-  
-5.  Nella figura sono illustrate le finestre seguenti (in senso orario dall'angolo superiore sinistro):  
-  
-    -   **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei moduli e la modifica del codice. La finestra nella figura contiene un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Design]**. In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.  
-  
-    -   **Finestra Esplora soluzioni** In questa finestra è possibile visualizzare tutti gli elementi della soluzione e spostarsi tra di essi. Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con l'estensione *CS* in Visual C# e *VB* in Visual Basic), viene visualizzato il file stesso o la relativa finestra di progettazione. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per i moduli di Visual Studio, la finestra di progettazione è denominata **Progettazione Windows Form**.  
-  
-    -   **Finestra Proprietà** In questa finestra è possibile modificare le proprietà degli elementi scelti nelle altre finestre. Ad esempio, se si sceglie Form1, è possibile modificarne il titolo impostando la proprietà **Text** e il colore di sfondo impostando la proprietà **Backcolor**.  
-  
+     ![Finestra IDE](../ide/media/express_ideoverview_visio.png)
+Finestra **IDE**
+
+     L'interfaccia contiene tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
+
+     Se manca una di queste finestre, ripristinare il layout di finestra predefinito, scegliendo **Finestra** > **Reimposta layout finestra** sulla barra dei menu. È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**. Se sono aperte altre finestre, chiuderle scegliendo il pulsante **Chiudi** (x) negli angoli in alto a destra.
+
+5.  Nella figura sono illustrate le finestre seguenti (in senso orario dall'angolo superiore sinistro):
+
+    -   **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra nella figura contiene un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]**. In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
+
+    -   **Finestra Esplora soluzioni** In questa finestra è possibile visualizzare tutti gli elementi della soluzione e spostarsi tra di essi. Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con l'estensione *CS* in Visual C# e *VB* in Visual Basic), viene visualizzato il file stesso o la relativa finestra di progettazione. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per i moduli di Visual Studio, la finestra di progettazione è denominata **Progettazione Windows Form**.
+
+    -   **Finestra Proprietà** In questa finestra è possibile modificare le proprietà degli elementi scelti nelle altre finestre. Ad esempio, se si sceglie Form1, è possibile modificarne il titolo impostando la proprietà **Text** e il colore di sfondo impostando la proprietà **Backcolor**.
+
     > [!NOTE]
-    >  Nella riga superiore in **Esplora soluzioni** è riportata la dicitura **Soluzione "PictureViewer" (1 progetto)** per indicare che è stata creata una soluzione in Visual Studio. Una soluzione può contenere più progetti, ma per ora verranno utilizzate soluzioni che contengono un solo progetto.  
-  
-6.  Sulla barra dei menu scegliere **File** > **Salva tutto**.  
-  
-     In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, come illustrato nella figura seguente.  
+    >  Nella riga superiore in **Esplora soluzioni** è riportata la dicitura **Soluzione "PictureViewer" (1 progetto)** per indicare che è stata creata una soluzione in Visual Studio. Una soluzione può contenere più progetti, ma per ora verranno utilizzate soluzioni che contengono un solo progetto.
 
-     ![Pulsante sulla barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png "Express_IconSaveAll")  
-Pulsante **Salva tutto** della barra degli strumenti  
-  
-     In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.  
+6.  Sulla barra dei menu scegliere **File** > **Salva tutto**.
 
-## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
-  
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).  
-  
+     In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, come illustrato nella figura seguente.
+
+     ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)
+Pulsante della barra degli strumenti **Salva tutto**
+
+     In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.
+
+## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
+
+-   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
+
 -   Per tornare all'argomento introduttivo, vedere [Esercitazione 1: Creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).

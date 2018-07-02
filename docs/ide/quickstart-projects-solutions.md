@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747508"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Guida introduttiva: Progetti e soluzioni
 
@@ -57,7 +58,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
-1. Nel riquadro sinistro espandere **Visual C#** e scegliere **Desktop classico di Windows**. Nel riquadro centrale scegliere **Progetto vuoto (.NET Framework)**. Assegnare al progetto il nome "QuickDate" e scegliere **OK**.
+1. Nel riquadro sinistro espandere **Visual C#** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere **Progetto vuoto (.NET Framework)**. Assegnare al progetto il nome "QuickDate" e scegliere **OK**.
 
    Il progetto "QuickDate" appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
@@ -185,7 +186,7 @@ La guida introduttiva è stata completata. Ora può risultare utile vedere altre
 - [Guida introduttiva: Presentazione dell'IDE di Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Guida introduttiva: Personalizzare l'IDE e l'editor di Visual Studio](../ide/quickstart-personalize-the-ide.md)
 - [Guida introduttiva: Scrittura di codice nell'editor](../ide/quickstart-editor.md)
-- [Gestire le proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
+- [Gestione delle proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

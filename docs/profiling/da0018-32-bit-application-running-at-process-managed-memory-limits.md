@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba328ae4b54728422e032741e20543b99f49d5ae
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 862e70c104db08f147c6a608adf1cf022b642025
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749779"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 |||  
@@ -68,4 +69,4 @@ ms.lasthandoff: 04/19/2018
   
  Per limitare i vincoli della memoria virtuale sull'architettura alla dimensione della parte privata di uno spazio degli indirizzi del processo, provare a eseguire questo processo a 32 bit su un computer a 64 bit.  Un processo a 32 bit su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
   
- Un processo a 64 bit eseguito su un computer a 64 bit può acquisire fino a 8 TB di memoria virtuale. È consigliabile compilare di nuovo l'applicazione in modo che venga eseguita come un'applicazione a 64 bit nativa. Questa regola è solo a scopo informativo e potrebbe non richiedere azione correttiva.
+ Un processo a 64 bit eseguito su un computer a 64 bit può acquisire fino a 8 TB di memoria virtuale. È consigliabile compilare di nuovo l'applicazione in modo che venga eseguita come applicazione a 64 bit nativa. Questa regola è solo a scopo informativo e potrebbe non richiedere azione correttiva.

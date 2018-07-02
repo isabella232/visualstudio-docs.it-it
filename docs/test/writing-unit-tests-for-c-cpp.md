@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752079"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -51,19 +52,19 @@ Le sezioni seguenti illustrano i passaggi di base per iniziare con il testing un
 
 I test vengono definiti ed eseguiti all'interno di uno o più progetti di test inclusi nella stessa soluzione del codice da testare. Per aggiungere un nuovo progetto di test a una soluzione esistente, fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Aggiungi | Nuovo progetto**. Nel riquadro sinistro scegliere **Progetto di test Visual C++** e scegliere uno dei tipi di progetto nel riquadro centrale. La figura seguente mostra i progetti di test disponibili quando è installato il carico di lavoro **Sviluppo di applicazioni desktop con C++**:
 
-![Progetti di test C++](media/cpp-new-test-project.png "Nuovi modelli di progetti di test C++")
+![Progetti di test C++](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Creare riferimenti ad altri progetti nella soluzione
 
 Per abilitare il codice di test per l'accesso alle funzioni nel progetto da testare, aggiungere un riferimento al progetto nel progetto di test. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi | Riferimento**. Nella finestra di dialogo scegliere quindi i progetti da testare.
 
-![Aggiungi riferimento](media/cpp-add-ref-test-project.png "Test C++, aggiungere un riferimento ai progetti da testare")
+![Aggiungi riferimento](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Aggiungere direttive #include per il file di intestazione
 
 Nel file cpp dell'unit test aggiungere quindi una direttiva `#include` per tutti i file di intestazione che dichiarano i tipi e le funzioni da testare. Digitare `#include "`. Verrà attivato IntelliSense per facilitare la scelta. Ripetere per eventuali intestazioni aggiuntive.
 
-![Aggiungere le direttive include](media/cpp-add-includes-test-project.png "Test C++, aggiungere le direttive include per i file di intestazione")
+![Aggiungere direttive include](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Scrivere i metodi di test
 
@@ -72,7 +73,7 @@ Nel file cpp dell'unit test aggiungere quindi una direttiva `#include` per tutti
 
 Il file con estensione cpp nel progetto di test include una classe stub e un metodo definiti come esempio per la scrittura del codice di test. Si noti che le firme usano le macro TEST_CLASS e TEST_METHOD, che rendono individuabili i metodi dalla finestra Esplora test.
 
-![Aggiungere le direttive include](media/cpp-write-test-methods.png "Test C++, aggiungere le direttive include per i file di intestazione")
+![Aggiungere direttive include](media/cpp-write-test-methods.png)
 
 TEST_CLASS e TEST_METHOD fanno parte del [framework di test nativo Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Esplora test** consente di individuare i metodi di test in altri framework supportati in modo analogo.
 
@@ -94,7 +95,7 @@ Nell'esempio precedente, il risultato della chiamata `Assert::AreEqual` determin
 
 1. Nel menu **Test** scegliere **Finestre** > **Esplora test**. La figura seguente illustra un progetto di test con test non ancora eseguiti.
 
-   ![Esplora test prima dell'esecuzione dei test](media/cpp-test-explorer.png "Esplora test C++")
+   ![Esplora test prima dell'esecuzione dei test](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > L'integrazione di CTest con **Esplora test** non è ancora disponibile. Eseguire test CTest dal menu principale di CMake.
@@ -103,7 +104,7 @@ Nell'esempio precedente, il risultato della chiamata `Assert::AreEqual` determin
 
 1. In Esplora test scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati. Dopo aver eseguito tutti i test, la finestra mostra i test superati e quelli non superati:
 
-![Esplora test dopo l'esecuzione dei test](media/cpp-test-explorer-passed.png "Esplora test C++ dopo l'esecuzione dei test")
+![Esplora test dopo l'esecuzione dei test](media/cpp-test-explorer-passed.png)
 
 Per i test non superati, il messaggio include dettagli utili per diagnosticare la causa. È possibile fare clic con il pulsante destro del mouse sul test non superato e scegliere **Esegui debug test selezionati** per esaminare la funzione in cui si è verificato l'errore.
 

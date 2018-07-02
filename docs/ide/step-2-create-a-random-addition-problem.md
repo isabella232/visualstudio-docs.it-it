@@ -11,17 +11,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747867"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: Creare un problema di addizione casuale
 Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di matematica basati su numeri casuali. Viene inoltre creato un metodo denominato `StartTheQuiz()` che completa i problemi e avvia il timer del conto alla rovescia. Più avanti nell'esercitazione si aggiungeranno problemi di sottrazione, moltiplicazione e divisione.
 
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
+>  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-random-addition-problem"></a>Per creare un problema di addizione casuale
 
@@ -38,11 +39,11 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
      Al modulo è stato aggiunto un oggetto Random denominato **randomizer**.
 
-     `Random` è noto come oggetto. Probabilmente la parola oggetto è già stata incontrata. Nella prossima esercitazione ne verrà spiegato il significato in termini di programmazione. Per ora, è sufficiente ricordare che è possibile utilizzare le istruzioni `new` per creare pulsanti, etichette, panelli, elementi OpenFileDialog, ColorDialog, SoundPlayer, Random e moduli e che tali elementi sono definiti oggetti. Quando si esegue il programma, il modulo viene avviato e il code-behind crea un oggetto casuale, a cui viene assegnato il nome **randomizer**.
+     `Random` è noto come oggetto. Probabilmente la parola oggetto è già stata incontrata. Nella prossima esercitazione ne verrà spiegato il significato in termini di programmazione. Per ora, è sufficiente ricordare che è possibile utilizzare le istruzioni `new` per creare pulsanti, etichette, panelli, elementi OpenFileDialog, ColorDialog, SoundPlayer, Random e form e che tali elementi sono definiti oggetti. Quando si esegue il programma, il modulo viene avviato e il code-behind crea un oggetto casuale, a cui viene assegnato il nome **randomizer**.
 
      Verrà quindi compilato un metodo per controllare le risposte, pertanto nel quiz è richiesto l'uso di variabili per archiviare numeri casuali generati per ciascun problema. Vedere [Variabili](/dotnet/visual-basic/programming-guide/language-features/variables/index) o [Tipi](/dotnet/csharp/programming-guide/types/index). Per utilizzare correttamente le variabili, è necessario dichiararle ovvero elencarne i nomi e i tipi di dati.
 
-4.  Aggiungere due variabili Integer al modulo e denominarle **addend1** e **addend2**.
+4.  Aggiungere due variabili Integer al form e denominarle **addend1** e **addend2**.
 
     > [!NOTE]
     >  Una variabile Integer è nota come int in C# o Integer in Visual Basic. Questo tipo di variabile archivia un numero intero positivo o negativo compreso tra -2147483648 e 2147483647 e non può archiviare numeri decimali.
@@ -59,7 +60,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
      Si noti che quando si immette il punto (.) dopo `randomizer` nel codice, viene aperta una finestra di IntelliSense che mostra tutti i metodi dell'oggetto Random che è possibile chiamare. Ad esempio, in IntelliSense è elencato il metodo `Next()`, come indicato di seguito.
 
-     ![Metodo Next](../ide/media/express_randomwhite.png "Express_RandomWhite") Metodo Next
+     ![Metodo Next](../ide/media/express_randomwhite.png) Metodo Next
 
      Quando si inserisce un punto dopo un oggetto, IntelliSense mostra un elenco dei membri dell'oggetto, ad esempio proprietà, metodi ed eventi.
 
@@ -88,7 +89,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
      Viene visualizzato un problema di addizione casuale, come illustrato nella figura seguente.
 
-     ![Problema di addizione casuale](../ide/media/express_additionproblem.png "Express_AdditionProblem") Problema di addizione casuale
+     ![Problema di addizione casuale](../ide/media/express_additionproblem.png) Problema di addizione casuale
 
      Nel passaggio successivo dell'esercitazione, verrà aggiunta la somma.
 

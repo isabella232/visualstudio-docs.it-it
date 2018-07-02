@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548661"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
 
@@ -79,7 +80,7 @@ Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite
     vsperfclrenv /off
     ```
 
-Per altre informazioni, vedere [Profilatura di applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Per altre informazioni, vedere [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
 ## <a name="profile-services"></a>Sottoporre a profilatura i servizi
 
@@ -141,9 +142,9 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 Per altre informazioni, vedere uno degli argomenti seguenti:
 
-[Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
-[Profilatura di servizi](../profiling/command-line-profiling-of-services.md)
+[Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
 
 ## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Aggiungere dati di interazione tra livelli con VSPerfASPNETCmd
 
@@ -155,4 +156,4 @@ Per aggiungere l'interazione tra livelli ai dati di profilatura raccolti tramite
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Per altre informazioni su VSPerfASPNETCmd, vedere [Profilatura rapida di sito Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Per altre informazioni su VSPerfASPNETCmd, vedere [Profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

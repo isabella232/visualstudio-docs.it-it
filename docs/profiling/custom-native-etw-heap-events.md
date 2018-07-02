@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749460"
 ---
 # <a name="custom-native-etw-heap-events"></a>Personalizzare gli eventi dell'heap ETW nativo
 
@@ -136,7 +137,7 @@ Questa libreria può essere usata facilmente in C e C++.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Verificare l'uso della memoria
+## <a name="track-memory-usage"></a>Verificare l'utilizzo della memoria
 Dopo aver definito le chiamate, è possibile verificare l'uso dell'heap personalizzato con lo strumento **Utilizzo memoria** standard di Visual Studio.  Per altre informazioni sull'uso di questo strumento, vedere la documentazione relativa a [Utilizzo memoria](../profiling/memory-usage.md). Verificare di avere abilitato la profilatura dell'heap con gli snapshot, poiché altrimenti non verrà visualizzato l'uso dell'heap personalizzato. 
 
 ![Abilitare la profilatura dell'heap](media/heap-enable-heap.png)
@@ -145,7 +146,7 @@ Per visualizzare la verifica dell'heap personalizzato, usare l'elenco a discesa 
 
 ![Selezione dell'heap](media/heap-example-custom-heap.png)
 
-Usando l'esempio di codice precedente, con `MemoryPool` che crea un oggetto `VSHeapTracker::CHeapTracker` e il metodo `allocate` che ora chiama il metodo `AllocateEvent`, ora appare il risultato dell'allocazione personalizzata, che indica 3 istanze per un totale di 24 byte, tutti di tipo `Foo`.
+Usando l'esempio di codice precedente, con `MemoryPool` che crea un oggetto `VSHeapTracker::CHeapTracker` e il metodo `allocate` che ora chiama il metodo `AllocateEvent`, viene visualizzato il risultato dell'allocazione personalizzata, che indica tre istanze per un totale di 24 byte, tutti di tipo `Foo`.
 
 L'*heap NT* predefinito ha lo stesso aspetto di prima, con l'aggiunta dell'oggetto `CHeapTracker`.
 
@@ -154,8 +155,8 @@ L'*heap NT* predefinito ha lo stesso aspetto di prima, con l'aggiunta dell'ogget
 Come con l'heap standard di Windows, è possibile usare questo strumento per confrontare gli snapshot e verificare la presenza di spazi inutilizzati ed errori nell'heap personalizzato, descritto nella documentazione principale di [Utilizzo memoria](../profiling/memory-usage.md).
 
 > [!TIP]
-> Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni** set di strumenti, che viene abilitato dall'opzione di menu **Debug > Profiler prestazioni** o dalla combinazione di tasti **Alt+F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug > Windows > Mostra strumenti di diagnostica** o la combinazione di tasti **Ctrl+Alt+F2**, contiene questa funzionalità.
+> Visual Studio contiene anche uno strumento **Utilizzo memoria** nel set di strumenti di **profilatura delle prestazioni**, che viene abilitato dall'opzione di menu **Debug**>**Profiler prestazioni** o dalla combinazione di tasti **ALT**+**F2**.  Questa funzionalità non include la verifica dell'heap e non visualizza l'heap personalizzato come descritto in questo documento.  Solo la finestra **Strumenti di diagnostica**, che può essere abilitata con il menu **Debug**>**Windows**>**Mostra strumenti di diagnostica** o la combinazione di tasti **CTRL**+**ALT**+**F2**, contiene questa funzionalità.
 
 ## <a name="see-also"></a>Vedere anche
-[Profiling Tools](../profiling/profiling-tools.md) (Strumenti di profilatura)  
+[Strumenti di profilatura](../profiling/profiling-tools.md)  
 [Utilizzo memoria](../profiling/memory-usage.md)

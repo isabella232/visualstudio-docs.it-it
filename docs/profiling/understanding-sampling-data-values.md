@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cd6b8d7fcb6a9eaf2d68f3eabe4b851979302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477002"
 ---
-# <a name="understanding-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
+# <a name="understand-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
 
 Il metodo di profilatura di *campionamento* degli strumenti di profilatura di Visual Studio interrompe il processore del computer a intervalli prestabiliti e raccoglie lo stack di chiamate della funzione. Lo *stack di chiamate* è una struttura dinamica che archivia informazioni sulle funzioni in esecuzione nel processore.
 
@@ -53,4 +54,4 @@ Percentuale del numero totale di campioni esclusivi nell'esecuzione della profil
 ## <a name="see-also"></a>Vedere anche
 
 [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)  
-[Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)
+[Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751715"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procedura dettagliata: Creare ed eseguire unit test per le app UWP
 
@@ -45,11 +46,11 @@ Le procedure riportate di seguito descrivono i passaggi per creare, eseguire ed 
 
 6.  Lasciare selezionata l'opzione **Crea directory per soluzione** e scegliere il pulsante **OK** .
 
-     ![Libreria unit test personalizzata](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Libreria unit test personalizzata](../test/media/unit_test_win8_1.png)
 
      Esplora soluzioni verrà popolato con il nuovo progetto di unit test per UWP e l'editor di codice visualizzerà lo unit test predefinito denominato UnitTest1.
 
-     ![Nuovo progetto di unit test personalizzato](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Nuovo progetto di unit test personalizzato](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Modificare il file manifesto dell'applicazione UWP del progetto di unit test
 
@@ -99,7 +100,7 @@ Nell'Editor di codice modificare lo unit test e aggiungere le asserzioni e la lo
     >
     > Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test**e di usare l'opzione **Proprietà** .
     >
-    > ![Esplora unit test &#45; menu di scelta rapida unit test](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Esplora unit test &#45; Menu di scelta rapida dello unit test](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     Lo unit test viene eseguito. Al termine, in Esplora test viene visualizzato lo stato del test, il tempo trascorso e viene fornito un collegamento all'origine.
 

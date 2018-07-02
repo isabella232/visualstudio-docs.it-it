@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751624"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Come usare Boost.Test per C++ in Visual Studio
 
 In **Visual Studio 2017 versione 15.5** e versioni successive l'adattatore di test Boost.Test è integrato nell'IDE di Visual Studio come componente del carico di lavoro **Sviluppo di applicazioni desktop con C++**.
 
-![Adattatore di test per Boost.Test](media/cpp-boost-component.png "Adattatore per il componente Boost.Test")
+![Adattatore di test per Boost.Test](media/cpp-boost-component.png)
 
 Se il carico di lavoro **Sviluppo di applicazioni desktop con C++** non è installato, aprire il **programma di installazione di Visual Studio** e selezionare **Modifica**. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere il pulsante **Modifica**.
 
@@ -43,7 +44,7 @@ Per usare Boost.Test è necessario installare [Boost](http://www.boost.org/). Se
 
 1. Per creare un file con estensione cpp per i test, fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi nuovo elemento**.
 
-   ![Modello di elemento Boost.Test](media/boost_test_item_template.png "Modello di elemento Boost.Test")
+   ![Modello di elemento Boost.Test](media/boost_test_item_template.png)
 
 1. Il nuovo file contiene un metodo di test di esempio. Compilare il progetto per consentire a **Esplora test** di individuare il metodo.
 
@@ -87,7 +88,7 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
 
 1. Nel file con estensione cpp del test aggiungere le direttive `#include` necessarie per rendere visibili al codice di test i tipi e le funzioni del programma. Il programma si trova in genere al livello superiore della gerarchia di cartelle. Se si digita `#include "../"`, viene visualizzata una finestra di IntelliSense che consente di selezionare il percorso completo del file di intestazione.
 
-   ![Aggiungere direttive #include](media/cpp-gtest-includes.png "Aggiungere direttive include al file con estensione cpp del test")
+   ![Aggiungere direttive #include](media/cpp-gtest-includes.png)
 
    È possibile usare la libreria autonoma con:
 
