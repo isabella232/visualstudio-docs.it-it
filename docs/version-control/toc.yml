@@ -77,7 +77,7 @@
       href: /vsts/git/use-ssh-keys-to-authenticate?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
     - name: Autenticazione con Git Credential Manager
       href: /vsts/git/set-up-credential-managers?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
-- name: Riferimento
+- name: Riferimenti
   items:
     - name: Informazioni di riferimento sui comandi
       href: /vsts/git/command-prompt?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Risorse
   items:
-    - name: Informazioni su Git
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: Che cos'è Git
+      href: /azure/devops/git/what-is-git

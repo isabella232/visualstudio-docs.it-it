@@ -2,6 +2,10 @@
   href: ide/index.md
 - name: Panoramica
   href: ide/visual-studio-ide.md
+  expanded: true
+  items:
+    - name: Funzionalità avanzate
+      href: ide/advanced-feature-overview.md
 - name: Installazione
   items:
     - name: Installare Visual Studio
@@ -630,6 +634,8 @@
           href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Personalizzare il layout delle finestre
           href: ide/customizing-window-layouts-in-visual-studio.md
+        - name: Personalizzare l'annidamento file in Esplora soluzioni
+          href: ide/file-nesting-solution-explorer.md
         - name: Personalizzare la pagina iniziale
           href: ide/customizing-the-start-page-for-visual-studio.md
         - name: Individuare e usare le estensioni di Visual Studio
@@ -645,17 +651,6 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: Suggerimenti
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Sicurezza
-      href: ide/security-in-visual-studio.md
-      items:
-        - name: Proteggere le applicazioni
-          href: ide/securing-applications.md
-        - name: Mantenimento della sicurezza
-          href: ide/maintaining-security.md
-        - name: Autorizzazioni utente
-          href: ide/user-permissions-and-visual-studio.md
-        - name: Bibliografia sulla sicurezza
-          href: ide/security-bibliography.md
     - name: Gestire le funzionalità di accessibilità
       href: ide/reference/accessibility-features-of-visual-studio.md
       items:
@@ -860,6 +855,8 @@
               items:
                 - name: Finestra di dialogo Impostazioni avanzate per i servizi
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
+            - name: 'Pagina Impostazioni, Creazione progetti'
+              href: ide/reference/settings-page-project-designer.md
             - name: 'Pagina Firma, Progettazione progetti'
               href: ide/reference/signing-page-project-designer.md
         - name: 'Pagine proprietà, JavaScript'
@@ -997,6 +994,14 @@
           href: ide/reference/toggle-breakpoint-command.md
         - name: Comando Watch
           href: ide/reference/watch-command.md
+    - name: Sicurezza
+      items:
+        - name: Sviluppare applicazioni sicure
+          href: ide/securing-applications.md
+        - name: Eseguire Visual Studio come utente normale o amministratore
+          href: ide/user-permissions-and-visual-studio.md
+        - name: Windows Information Protection (WIP)
+          href: ide/exempt-visual-studio-from-wip.md
     - name: Microsoft Help Viewer
       href: ide/microsoft-help-viewer.md
       items:
@@ -1043,12 +1048,14 @@
           href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default
         - name: Frequenza di rilascio
           href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default
+        - name: Roadmap di Visual Studio
+          href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default
         - name: Requisiti di sistema
           href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default
         - name: Compatibilità della piattaforma
           href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default
         - name: Licenze
-          href: 'https://www.visualstudio.com/license-terms/'
+          href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Codice distribuibile
           href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default
         - name: Ciclo di vita del supporto e manutenzione
