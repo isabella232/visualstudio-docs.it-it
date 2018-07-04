@@ -155,8 +155,6 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: Aggiungere e rimuovere elementi del progetto
               href: ide/adding-and-removing-project-items.md
-            - name: Tipi di file di soluzioni e di progetto
-              href: ide/reference/project-and-solution-file-types.md
             - name: Gestire le proprietà di progetti e soluzioni
               href: ide/managing-project-and-solution-properties.md
             - name: Gestire i riferimenti in un progetto
@@ -604,11 +602,6 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Configurazione degli avvisi in Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: Disabilitare il processo di hosting
-          href: ide/how-to-disable-the-hosting-process.md
-          items:
-            - name: Processo di hosting (vshost.exe)
-              href: ide/hosting-process-vshost-exe.md
         - name: 'Procedura dettagliata: Creare un ambiente di compilazione con più computer'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Eseguire il debug...
@@ -1062,6 +1055,9 @@
           href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
     - name: Segnalare un problema di Visual Studio
       href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+      items:
+        - name: Privacy dei dati della community degli sviluppatori
+          href: ide/developer-community-privacy.md
     - name: Analisi utilizzo software
       href: ide/visual-studio-experience-improvement-program.md
       items:
