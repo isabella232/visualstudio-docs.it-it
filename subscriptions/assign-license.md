@@ -9,12 +9,12 @@ description: Informazioni su come gli amministratori possono assegnare licenze a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4325921bbaa75e0fb8a8a16947c45901b6f01649
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d0dbd509d60ed3528186e41c98f374ab6db60fa3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477379"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36327024"
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Assegnazione di licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -26,9 +26,7 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
 1.  Accedere al [portale per gli amministratori](https://manage.visualstudio.com)
 
 2.  Per assegnare un singolo sottoscrittore di Visual Studio, nella parte superiore della tabella, fare clic su **Aggiungi**.
-
-    <img alt="Add subscriber" src="_img\assign-license-add\assign-license-add.png" style="border: 1px solid #CCCCCC" />
-
+   
 3.  Immettere le informazioni nei campi del modulo per il nuovo sottoscrittore. Se l'organizzazione usa Azure Active Directory, questo campo funge da funzione di ricerca per trovare i contatti nella directory corrente per poter selezionare l'utente corretto nei risultati della ricerca. Una volta selezionata la persona, vengono compilati automaticamente i campi relativi a nome, indirizzo di posta elettronica di accesso e per le notifiche, come visualizzato di seguito. 
 
     Se l'organizzazione non usa Azure Active Directory (Azure AD) ma ha un indirizzo di posta elettronica diverso per ricevere gli email rispetto a quello da utilizzare per l'accesso, l'utente ha la possibilità di indicarlo qui. Selezionare il collegamento ipertestuale "Add a different notification email for receiving communication" (Aggiungi un indirizzo di posta elettronica di notifica diverso per la ricezione delle comunicazioni). 
@@ -43,23 +41,17 @@ Se sono disponibili licenze per le sottoscrizioni di Visual Studio, è possibile
 
 4.  Dopo aver aggiunto il sottoscrittore, viene inviato automaticamente al nuovo sottoscrittore un messaggio di posta elettronica di assegnazione, con altre istruzioni. È possibile inviare nuovamente il messaggio di posta elettronica di assegnazione in qualunque momento selezionando il sottoscrittore e facendo clic sul pulsante **Invia di nuovo** nel menu superiore.
 
-    <img alt="Subscriber added" src="_img\assign-license-add\add-subscriber-complete.png" style="border: 1px solid #CCCCCC" />
 
 ## <a name="bulk-assignments"></a>Assegnazioni in blocco
 1.  Per aggiungere contemporaneamente più sottoscrittori, passare alla scheda **Manage Subscribers** (Gestione sottoscrittori). Nella barra multifunzione in alto, fare clic su **Aggiungi in blocco**. 
 
-    <img alt="Bulk add" src="_img\assign-license-add\bulk-assign-add.png" style="border: 1px solid #CCCCCC" />
-
 2. L'assegnazione in blocco usa un modello di Microsoft Excel per caricare i sottoscrittori. Nella finestra di dialogo Upload Multiple Subscriber (Carica più sottoscrittori), fare clic su **Download** per scaricare il modello. Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
-
-    <img alt="Upload multiple subscribers" src="_img\assign-license-add\bulk-assign-upload.png" style="border: 1px solid #CCCCCC" />
 
 3.  Nel foglio di calcolo Excel, compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. Il riferimento è un campo facoltativo. Se una parte del modello è stata compilata in modo errato, si dovrebbe visualizzare un messaggio di errore che descrive il problema. Al termine, salvare il file in locale.
 **Per garantire un caricamento senza errori, osservare le procedure consigliate seguenti:**
     - Verificare che nessuno dei campi modulo contenga virgole.
     - Rimuovere gli spazi prima e dopo i campi del modulo, ad esempio i nomi degli utenti.
     - Assicurarsi che i nomi degli utenti non contengano spazi aggiuntivi tra i nomi e cognomi composti da due parti (ad esempio il nome composto "Maria Giovanna" non deve essere digitato come "Maria  Giovanna" perché il sistema non annullerà lo spazio aggiuntivo).
-    <img alt="Bulk add template" src="_img\assign-license-add\bulk-template.png" style="border: 1px solid #CCCCCC" />
 
 4.  Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Upload Multiple Subscribers (Carica più sottoscrittori), fare clic su **Sfoglia**. Andare al file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo. 
 
@@ -70,4 +62,3 @@ Se il modello contiene errori, il caricamento avrà esito negativo e verranno vi
 
 Quando il caricamento ha esito positivo, viene visualizzato l'elenco di sottoscrittori e un messaggio di conferma.
 
-   <img alt="Upload complete" src="_img\assign-license-add\bulk-assign-upload-complete.png" style="border: 1px solid #CCCCCC" />

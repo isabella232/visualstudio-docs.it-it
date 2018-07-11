@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751728"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668684"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -35,7 +35,7 @@ Come mostrato nell'illustrazione seguente, in una procedura di sviluppo tipica s
 
 Creare un test codificato dell'interfaccia utente è semplice. Basta eseguire il test manualmente mentre il **Generatore di test codificati dell'interfaccia utente** è in esecuzione in background. È anche possibile specificare i valori che devono apparire in specifici campi. Il **Generatore di test codificati dell'interfaccia utente** registra le azioni e genera codice da queste azioni. Dopo aver creato il test, è possibile modificarlo in un editor specializzato che consente di modificare la sequenza di azioni.
 
-In alternativa, se si dispone di un test case registrato in Microsoft Test Manager, si può generare codice a partire da esso. Per altre informazioni, vedere [Registrare e riprodurre test manuali](/vsts/manual-test/getting-started/record-play-back-manual-tests).
+In alternativa, se si dispone di un test case registrato in Microsoft Test Manager, si può generare codice a partire da esso. Per altre informazioni, vedere [Registrare e riprodurre test manuali](/vsts/test/mtm/record-play-back-manual-tests).
 
 Il **Generatore di test codificati dell'interfaccia utente** e l'editor appositi semplificano la creazione e la modifica di test codificati dell'interfaccia utente, anche se le proprie competenze principali sono orientate alle attività di test piuttosto che alla scrittura di codice. Per gli sviluppatori che vogliono estendere i test in modo più avanzato, tuttavia, il codice è strutturato in modo da essere estremamente semplice da copiare e adattare. Ad esempio, si può registrare un test per l'acquisto di un articolo in un sito Web e quindi modificare il codice generato per aggiungere un ciclo che acquista molti articoli.
 
@@ -67,7 +67,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
    ![Modello di progetto di test codificato dell'interfaccia utente nella finestra di dialogo Nuovo progetto](media/coded-ui-test-project-template.png)
 
    > [!NOTE]
-   > Se il modello **Progetto di test codificato dell'interfaccia utente** non è visualizzato, è necessario [installare il componente Test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se non viene visualizzato il modello **Progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Aggiungere un file di test codificato dell'interfaccia utente.
 
@@ -105,7 +105,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
     > [!TIP]
     > Passare alternativamente dalla registrazione delle azioni alla verifica dei valori. Generare il codice al termine di ogni sequenza di azioni o verifiche. Se necessario, sarà possibile inserire nuove azioni e verifiche in un secondo momento.
 
-     Per informazioni dettagliate, vedere [Convalida delle proprietà dei controlli](#VerifyingCodeUsingCUITGenerateAssertions).
+     Per informazioni dettagliate, vedere [Convalida delle proprietà dei controlli](#validate-the-properties-of-ui-controls).
 
 5. Visualizzare il codice di test generato.
 
@@ -140,7 +140,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 8. Eseguire il test.
 
-   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni sull'esecuzione dei test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Usare l'automazione dell'interfaccia utente per testare il codice* nella sezione [Argomenti successivi](#VerifyCodeUsingCUITWhatsNext) alla fine di questo argomento.
+   Usare Esplora test o aprire il menu di scelta rapida nel metodo di test e scegliere **Esegui test**. Per altre informazioni sull'esecuzione dei test, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) e *Usare l'automazione dell'interfaccia utente per testare il codice* nella sezione [Argomenti successivi](#what's-next?) alla fine di questo argomento.
 
 Le sezioni rimanenti di questo argomento offrono informazioni più dettagliate sui passaggi di questa procedura.
 
@@ -284,13 +284,13 @@ Verificare che nel file di configurazione il tasto `RecordImplicitiHovers` sia i
 
 Dopo aver creato il test codificato dell'interfaccia utente, è possibile modificarlo usando uno qualsiasi degli strumenti seguenti in Visual Studio:
 
-- Usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere altri controlli e la convalida ai test. Vedere la sezione [Aggiunta di controlli e la convalida delle proprietà](#VerifyingCodeUsingCUITGenerateAssertions) in questo argomento.
+- Usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere altri controlli e la convalida ai test. Vedere la sezione [Aggiunta di controlli e la convalida delle proprietà](#validate-the-properties-of-ui-controls) in questo argomento.
 
 - L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modifica di test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Editor di codice:**
 
-    - Aggiungere manualmente il codice per i controlli nel test come descritto nella sezione [Codifica di azioni e proprietà del controllo dell'interfaccia utente](#VerifyingCodeCUITActionsandProperties) in questo argomento.
+    - Aggiungere manualmente il codice per i controlli nel test come descritto nella sezione [Codifica di azioni e proprietà del controllo dell'interfaccia utente](#coded-ui-control-actions-and-properties) in questo argomento.
 
     - Dopo aver creato un test codificato dell'interfaccia utente, è possibile modificarlo in modo che sia basato sui dati. Per altre informazioni, vedere [Creazione di un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md).
 
@@ -454,7 +454,7 @@ Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UI
 
 - [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test manuali, vedere [Eseguire test manuali con Microsoft Test Manager](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager). Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
+I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test manuali, vedere [Eseguire test manuali con Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vedere anche
 

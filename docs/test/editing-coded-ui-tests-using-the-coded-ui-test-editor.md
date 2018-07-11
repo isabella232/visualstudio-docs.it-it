@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692369"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35668816"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -92,9 +92,9 @@ Dopo aver completato le modifiche, salvarle nel file UIMap.Designer scegliendo *
 
 - È possibile usare il pulsante **Trova** sulla barra degli strumenti dell'editor di test codificati dell'interfaccia utente per aprire lo strumento Trova e sostituisci in Visual Studio. Quindi è possibile usare il controllo Trova per individuare l'azione dell'interfaccia utente nell'Editor di test codificati dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante Accesso". Questo è utile nei test di grandi dimensioni. Si noti che non è possibile usare la funzionalità di sostituzione dello strumento Trova e sostituisci nell'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo Trova in [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
-- A volte può essere difficile identificare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. Per altre informazioni, vedere [Individuare un controllo dell'interfaccia utente nell'applicazione sottoposta a test](#CodedUITestEditor_LocateUIControl) più avanti in questo articolo.
+- A volte può essere difficile identificare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. Per altre informazioni, vedere [Individuare un controllo dell'interfaccia utente nell'applicazione sottoposta a test](#locate-a-ui-control-in-the-application-under-test) più avanti in questo articolo.
 
-- Potrebbe essere necessario espandere il controllo contenitore che comprende il controllo che si vuole modificare. Per altre informazioni, vedere [Individuare un controllo e i relativi discendenti](#CodedUITestEditor_LocateDecendants) più avanti nell'articolo.
+- Potrebbe essere necessario espandere il controllo contenitore che comprende il controllo che si vuole modificare. Per altre informazioni, vedere [Individuare un controllo e i relativi discendenti](#locate-a-control-and-its-descendants) più avanti nell'articolo.
 
 ## <a name="delete-unwanted-ui-actions"></a>Eliminare le azioni dell'interfaccia utente indesiderate
 
