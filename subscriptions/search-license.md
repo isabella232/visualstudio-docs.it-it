@@ -1,28 +1,31 @@
 ---
-title: Ricerca e filtro | Microsoft Docs
+title: Eseguire ricerche e applicare filtri | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.author: tglee
+manager: douge
+ms.date: 06/27/2018
+ms.topic: conceptual
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e6d91ae6b7a2c77ab7a19dc9d689000fa866f17
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 4dcdb5ce46bc0fbabd5b35199d0743a43a035c11
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031182"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37089724"
 ---
-# <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Ricerca e filtro dei sottoscrittori nelle sottoscrizioni di Visual Studio
-Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e varie altre informazioni. 
+# <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 
-1.  Per cercare uno specifico gruppo di sottoscrittori, nella parte superiore della tabella, fare clic su **Filtro**.
+Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
 
-    ![Filtra sottoscrittori](_img\edit-license\filter-list.png)
+1. Per cercare uno specifico gruppo di sottoscrittori, selezionare **Filtro**.
 
-2.  Verranno visualizzati molti campi che è possibile usare come criteri di ricerca. Selezionare i criteri che si vuole usare come base per la ricerca e fare clic su **Filtro**. Verrà visualizzato un elenco di sottoscrittori che soddisfano i criteri scelti.
-![Trovare i sottoscrittori](_img\search-filter\search-filter-find.png)
+   ![Selezionare il filtro per cercare un elenco di sottoscrittori](media\filter-list.png)
 
+2. Inserire i criteri da usare come base per la ricerca e quindi selezionare nuovamente **Filtro**.
+
+   ![Usare i campi disponibili per filtrare i dati del sottoscrittore](media\filter-subscribers.png)
+
+   L'elenco di sottoscrittori corrisponde quindi ai criteri scelti.

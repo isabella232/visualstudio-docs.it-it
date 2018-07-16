@@ -1,36 +1,37 @@
 ---
-title: Visual Studio 2017 per sviluppatori .NET
-description: Panoramica delle funzionalità di Visual Studio 2017 che consentono di scrivere codice .NET più efficiente in modo più veloce.
+title: Aumentare la produttività per lo sviluppo .NET
+description: Panoramica di esplorazione, analisi del codice, testing unità e altre funzionalità che consentono di scrivere codice .NET in modo più efficiente e veloce.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748751"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37175304"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guida per la produttività di Visual Studio 2017 per gli sviluppatori .NET
+# <a name="visual-studio-2017-c-productivity-guide"></a>Guida sulla produttività di Visual Studio 2017 in C#
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) consente agli sviluppatori di essere più produttivi che mai! Sono migliorate le prestazioni e l'affidabilità della soluzione in merito all'avvio, al caricamento, all'individuazione di test e alla latenza della digitazione. Sono state anche aggiunte e migliorate le funzionalità che aiutano a scrivere codice più efficace in modo più veloce. Alcune di queste funzionalità sono: navigazione su assembly decompilati, suggerimenti di nomi di variabili durante la digitazione, vista gerarchia in **Esplora test**, uso di Vai a tutti (**CTRL**+**T**) per passare alle dichiarazioni di file/tipo/membro/simbolo, **Helper eccezioni** intelligente, configurazione e imposizione dello stile del codice e vari refactoring e correzioni del codice.
-
-Attenersi a questa guida per ottimizzare la produttività.
+[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) consente agli sviluppatori di essere ancora più produttivi, grazie ai miglioramenti che interessano prestazioni e produttività, come l'esplorazione di assembly decompilati, suggerimenti di nomi di variabili durante la digitazione, una visualizzazione della gerarchia in **Esplora test**, l'uso di Vai a tutti (**CTRL**+**T**) per passare alle dichiarazioni di file/tipo/membro/simbolo, un **Helper eccezioni** intelligente, configurazione e imposizione dello stile del codice e molti refactoring e correzioni del codice.
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Tasti di scelta rapida provenienti da un'estensione/editor/IDE diversi.
 
-Se fino a questo momento si è usato un altro ambiente IDE o di stesura di codice, può essere utile installare una di queste estensioni:
+**Novità in Visual Studio 2017 versione 15.8** Se si passa da un IDE o un ambiente di codifica diverso, è possibile modificare lo schema della tastiera per *Visual Studio Code* o *ReSharper (Visual Studio)*:
 
-- [Emulazione Emacs](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
+![Schemi della tastiera di Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
+
+Alcune estensioni offrono anche gli schemi della tastiera:
 - [HotKeys per Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Emulazione Emacs](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio:
@@ -44,14 +45,18 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **CTRL**+**.** (o **ALT**+**INVIO** in profilo C# ) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
 | **Ctrl**+**D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **MAIUSC**+**ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
+| **MAIUSC** + **ALT** + **INS** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 | **CTRL**+**Q** | Avvio veloce | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **CTRL**+**F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
 | **CTRL**+**K**,**D** (profilo predefinito) o **CTRL**+**E**,**D** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
 | **CTRL**+**\\**,**E** (profilo predefinito) o **CTRL**+**W**,**E** (profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
+| **ALT** + **PGSU/PGGIÙ** | Passa a problema successivo/precedente | Passa all'errore, avviso, suggerimento precedente/successivo nel documento (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 
 > [!NOTE]
-> Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi riportati di seguito, reimpostare i tasti di scelta rapida sui valori predefiniti di Visual Studio in **Strumenti** > **Importa/Esporta impostazioni** > **Reimposta tutte le impostazioni** oppure **Strumenti** > **Opzioni** > **Tastiera** > **Reimposta**.
+> Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi riportati in precedenza, ripristinare i tasti di scelta rapida sui valori predefiniti di Visual Studio in **Strumenti** > **Importa/Esporta impostazioni** > **Reimposta tutte le impostazioni** oppure **Strumenti** > **Opzioni** > **Tastiera** > **Reimposta**.
+
+Altre informazioni sui tasti di scelta rapida e sui comandi sono disponibili nella [documentazione](..\ide\tips-and-tricks-for-visual-studio.md) di Visual Studio.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Serve un modo per spostarsi velocemente su file o tipi.
 Visual Studio 2017 offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**). Vai a tutti consente di passare rapidamente a qualsiasi dichiarazione di file, tipo, membro o simbolo.
@@ -85,6 +90,7 @@ Visual Studio 2017 include molti refactoring, azioni di generazione del codice e
   - Per altre informazioni, vedere la [documentazione](https://aka.ms/refactorings)
 - È possibile scrivere un proprio refactoring o correzione del codice con gli [analizzatori Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Diversi membri della community hanno scritto estensioni gratuite che aggiungono controlli aggiuntivi del codice:
+  - [Analizzatori FXCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint per Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -120,7 +126,7 @@ Sono state aggiunte moltissime nuove funzionalità di debug in Visual Studio 201
 - Il debug [Torna indietro](../debugger/how-to-use-intellitrace-step-back.md) consente di tornare ai punti di interruzione o ai passaggi precedenti e visualizzare lo stato precedente dell'applicazione.
 - [Debug snapshot](/azure/application-insights/app-insights-snapshot-debugger) consente di esaminare lo stato di un'applicazione Web attiva nel momento in cui è stata generata un'eccezione (è necessario essere in Azure).
 
-![Nuovo Helper eccezioni in VS2017](../ide/media/VSGuide_Debugging.png)
+![Nuovo Helper eccezioni in Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Usare il controllo della versione con i progetti
 È possibile usare Git o il controllo della versione di Team Foundation per archiviare e aggiornare il codice in Visual Studio.
@@ -141,8 +147,6 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 | Modalità di terminazione/suggerimento | Modifica il comportamento del completamento in IntelliSense. Gli sviluppatori con esperienza IntelliJ tendono a cambiare l'impostazione predefinita in questo punto | **Menu** > **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor | **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens** |
 | [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Consente di generare il boilerplate comune |  Digitare un nome di frammento di codice e premere **TAB** due volte. |
-
-![Frammenti di codice in Visual Studio](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Manca una funzionalità che migliora la produttività o le prestazioni sono scadenti?
 Esistono diversi modi per inviare commenti e suggerimenti:

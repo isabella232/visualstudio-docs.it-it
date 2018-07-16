@@ -1,7 +1,7 @@
 ---
 title: Gestire gli ambienti e gli interpreti Python
 description: Usare la finestra Ambienti Python per gestire ambienti globali, virtuali e Conda, installare pacchetti e interpreti Python e assegnare gli ambienti ai progetti di Visual Studio.
-ms.date: 05/22/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477574"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37342756"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -87,7 +87,7 @@ In entrambi i casi, la finestra **Ambienti Python** viene visualizzata come una 
 
 ![Finestra Ambienti Python](media/environments-default-view.png)
 
-Se l'elenco non include un ambiente previsto, vedere [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
+Visual Studio segue [PEP 514](https://www.python.org/dev/peps/pep-0514/) per identificare gli ambienti installati usando il Registro di sistema. Se l'elenco non include un ambiente previsto, vedere [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
 
 La selezione di un ambiente nell'elenco determina la visualizzazione di vari comandi e proprietà per l'ambiente nella scheda **Panoramica**. Nell'immagine precedente si può ad esempio vedere che il percorso dell'interprete è `C:\Python36-32`. Usare l'elenco a discesa disponibile sotto l'elenco degli ambienti per spostarsi tra le diverse schede, ad esempio **Pacchetti** e **IntelliSense**. Queste schede sono descritte in [Informazioni di riferimento sulle schede della finestra Ambienti Python](python-environments-window-tab-reference.md).
 
@@ -118,7 +118,27 @@ Se si è certi di disporre di un interprete Python nel computer in uso, ma Visua
 >
 > Tuttavia, se si sposta manualmente un interprete e il relativo ambiente tramite il file system, Visual Studio non conosce il nuovo percorso. Per altre informazioni, vedere [Spostamento di un interprete](installing-python-interpreters.md#moving-an-interpreter).
 
-<a name="manually-identifying-an-existing-environment></a>
+## <a name="fix-invalid-environments"></a>Correggere gli ambienti non validi
+
+Se per un ambiente Visual Studio rileva voci del Registro di sistema, ma il percorso all'interprete non è valido, nella finestra Ambienti Python il nome viene visualizzato barrato:
+
+![Finestra Ambienti Python con ambiente non valido visualizzato](media/environments-invalid-entry.png)
+
+Per correggere un ambiente che si vuole mantenere, provare prima a usare il processo di **riparazione** del programma di installazione. Ad esempio, i programmi di installazione per la versione Python 3.x standard includono tale opzione.
+
+Per correggere un ambiente che non dispone di un'opzione di riparazione o per rimuovere un ambiente non valido, usare la procedura seguente per modificare direttamente il Registro di sistema. Visual Studio aggiorna automaticamente la finestra Ambienti Python dopo aver apportato le modifiche al Registro di sistema.
+
+1. Eseguire `regedit.exe`.
+1. Passare a `HKEY_LOCAL_MACHINE\SOFTWARE\Python` per interpreti a 32 bit o a `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` per interpreti a 64 bit. Per IronPython, cercare invece `IronPython`.
+1. Espandere il nodo che corrisponde alla distribuzione, ad esempio `PythonCore` per CPython o `ContinuumAnalytics` per Anaconda. Per IronPython, espandere il nodo del numero di versione.
+1. Controllare i valori nel nodo `InstallPath`:
+
+    ![Voci del Registro di sistema per una tipica installazione CPython](media/environments-registry-entries.png)
+
+    - Se l'ambiente è ancora presente nel computer, modificare il valore di `ExecutablePath` nella posizione corretta. Correggere anche i valori `(Default)` e `WindowedExecutablePath` se necessario.
+    - Se l'ambiente non è più presente nel computer e si vuole rimuoverlo dalla finestra Ambienti Python, eliminare il nodo padre di `InstallPath`, ad esempio `3.6` nell'immagine precedente.
+
+<a name="manually-identifying-an-existing-environment"></a>
 
 ## <a name="manually-identify-an-existing-environment"></a>Identificare manualmente un ambiente esistente
 
