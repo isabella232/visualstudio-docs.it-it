@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844742"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: creare un adattatore dati di diagnostica
 
@@ -92,13 +93,13 @@ Per creare un *adattatore dati di diagnostica*, è necessario creare una libreri
 
 5.  Aggiungere <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> alla classe dell'adattatore dati di diagnostica in modo che venga identificato come adattatore dati di diagnostica, sostituendo **Company**, **Product** e **Version** con le informazioni appropriate per l'adattatore dati di diagnostica:
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  Aggiungere l'attributo <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> alla classe, sostituendo i parametri con le informazioni appropriate per l'adattatore dati di diagnostica:
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

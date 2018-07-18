@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668707"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
 
@@ -44,7 +45,7 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
 
 3.  Modificare la voce per l'opzione `EqtTraceLevel` nella sezione del file relativa alla diagnostica di sistema. Il codice sarà simile a quello riportato di seguito:
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ Questo articolo descrive alcuni problemi comuni che possono verificarsi quando s
 
 -   Eseguire nuovamente l'installazione dell'agente di test. Questa volta, specificare l'indirizzo IP anziché il nome del controller di test.
 
- Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. La proprietà `BindTo` deve essere impostata per ogni processo in esecuzione in un computer che dispone di più schede di rete. La procedura per impostare la proprietà `BindTo` è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e il processo agente di test, usare i file di configurazione elencati in [Impostazione del livello di registrazione in un computer controller di test](#Logging).
+ Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. La proprietà `BindTo` deve essere impostata per ogni processo in esecuzione in un computer che dispone di più schede di rete. La procedura per impostare la proprietà `BindTo` è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e il processo agente di test, usare i file di configurazione elencati in [Impostazione del livello di registrazione in un computer controller di test](#setting-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Vedere anche
 

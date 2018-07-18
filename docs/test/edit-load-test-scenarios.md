@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668594"
 ---
 # <a name="edit-load-test-scenarios"></a>Modificare gli scenari di test di carico
 
@@ -32,9 +33,8 @@ Tutte le opzioni e le impostazioni di configurazione iniziali specificate durant
 
 Gli scenari contengono i seguenti componenti:
 
-|||
-|-|-|
 |Termine|Definizione|
+|-|-|
 |Combinazione di browser|Simula l'accesso di utenti virtuali a un sito Web tramite una serie di browser Web.|
 |Modello di carico|Specifica il numero di utenti virtuali attivi durante un test di carico e la velocità con cui vengono avviati i nuovi utenti, ad esempio: modello per passaggio, costante e basato su obiettivo.|
 |Modello di combinazione di test|Specifica la percentuale di probabilità che un utente virtuale esegua un determinato test in uno scenario di test di carico, ad esempio 20% di possibilità che venga eseguito il TestA e 80% che venga eseguito il TestB. Il modello di combinazione di test deve riflettere gli obiettivi del test per un determinato scenario.|
