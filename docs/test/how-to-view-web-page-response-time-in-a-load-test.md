@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3f65920a1f47895ab6caf4bc84dd75c8100487a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668605"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: visualizzare il tempo di risposta delle pagine Web in un test di carico utilizzando l'Analizzatore test di carico
 
@@ -44,7 +45,7 @@ Se il test Web viene eseguito sotto stress in un test di carico, sarà possibile
 
 3.  I dati per ogni pagina vengono visualizzati nella griglia. Solitamente vengono visualizzate le colonne seguenti.
 
-    |||
+    |Intestazione colonna|Descrizione|
     |-|-|
     |**Page**|Nome della pagina Web.|
     |**Scenario**|Nome dello scenario. Importante se il test Web include più di uno scenario.|
