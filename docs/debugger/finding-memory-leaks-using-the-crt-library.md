@@ -1,5 +1,5 @@
 ---
-title: Ricerca di perdite di memoria tramite la libreria CRT | Documenti Microsoft
+title: Individuazione di perdite di memoria tramite la libreria CRT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477862"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057213"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappresentato dalle perdite di memoria, ovvero dall'impossibilità di deallocare correttamente la memoria allocata in precedenza. Una piccola perdita di memoria potrebbe passare inosservata, ma nel tempo può causare problemi come un calo delle prestazioni o l'arresto anomalo in caso di completo esaurimento della memoria. Nel peggiore dei casi, un'applicazione che usa tutta la memoria disponibile può causare l'arresto di un'altra applicazione, rendendo più difficile l'individuazione dell'applicazione responsabile del problema. Anche le perdite di memoria apparentemente inoffensive possono essere indice di altri problemi che è necessario correggere.  
@@ -48,7 +48,7 @@ Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappr
   
  Per attivare le funzioni degli heap di debug, includere le seguenti istruzioni nel programma:  
   
-```  
+```cpp
 #define _CRTDBG_MAP_ALLOC  
 #include <stdlib.h>  
 #include <crtdbg.h>  
@@ -62,13 +62,13 @@ Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappr
   
  Dopo avere abilitato le funzioni heap di debug tramite queste istruzioni, è possibile effettuare una chiamata a `_CrtDumpMemoryLeaks` prima del punto di uscita dell'applicazione per visualizzare un report sulle perdite di memoria alla chiusura dell'applicazione:  
   
-```  
+```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
  Se l'applicazione presenta più uscite, non è necessario effettuare manualmente una chiamata a [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) a ogni punto di uscita. Una chiamata a `_CrtSetDbgFlag` all'inizio dell'applicazione determina una chiamata automatica a `_CrtDumpMemoryLeaks` a ogni punto di uscita. È necessario impostare i due campi di bit indicati di seguito:  
   
-```  
+```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
@@ -76,14 +76,14 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
   
  Se si usa una libreria, è possibile che l'output venga indirizzato in un'altra posizione. In questo caso, è possibile reimpostare la posizione dell'output sulla finestra **Output** , come illustrato di seguito:  
   
-```  
+```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretazione del report delle perdite di memoria  
  Se `_CRTDBG_MAP_ALLOC`non viene definito, [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) visualizza un report delle perdite di memoria simile al seguente:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 {18} normal block at 0x00780E80, 64 bytes long.  
@@ -93,7 +93,7 @@ Object dump complete.
   
  Se `_CRTDBG_MAP_ALLOC`viene definito, il report delle perdite di memoria sarà simile al seguente:  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 c:\users\username\documents\projects\leaktest\leaktest.cpp(20) : {18}   
@@ -120,7 +120,7 @@ Object dump complete.
   
  Esistono altri due tipi di blocchi di memoria che non compaiono mai nei report delle perdite di memoria. Un *blocco libero* è dato da memoria rilasciata. Per definizione non si tratta quindi di perdita. Un *blocco da ignorare* è dato da memoria che è stata esplicitamente contrassegnata per essere esclusa dal report delle perdite di memoria.  
   
- Queste tecniche sono appropriate per la memoria allocata tramite la funzione `malloc` CRT standard. Se il programma di memoria allocata tramite C++ `new` (operatore), tuttavia, è possibile visualizzare solo il numero di riga e file in cui l'implementazione di globale `operator new` chiamate `_malloc_dbg` nel report delle perdite di memoria. Poiché questo comportamento non è molto utile, è possibile modificare in modo da segnalare la riga che ha effettuato l'allocazione utilizzando una macro simile al seguente: 
+ Queste tecniche sono appropriate per la memoria allocata tramite la funzione `malloc` CRT standard. Se la memoria usando C++ viene allocata `new` operatore, tuttavia, ne verrà visualizzato solo il numero di file e righe in cui l'implementazione dell'oggetto globale `operator new` chiamate `_malloc_dbg` nel report delle perdite di memoria. Poiché questo comportamento non è molto utile, è possibile modificarlo per segnalare la riga che ha effettuato l'allocazione tramite una macro che si presenta come segue: 
  
 ```C++  
 #ifdef _DEBUG
@@ -132,7 +132,7 @@ Object dump complete.
 #endif
 ```  
   
-Ora è possibile sostituire il `new` operatore tramite il `DBG_NEW` (macro) nel codice. Nelle build di debug, utilizza un overload di globale `operator new` che accetta parametri aggiuntivi per il tipo di blocco, i file e numero di riga. Questo overload di `new` chiamate `_malloc_dbg` per registrare le informazioni aggiuntive. Quando si utilizza `DBG_NEW`, la perdita di memoria report mostra il nome di file e numero di riga in cui sono stati allocati gli oggetti persi. Nelle build di vendita al dettaglio, viene utilizzato il valore predefinito `new`. (Non è consigliabile creare una macro del preprocessore denominata `new`, o qualsiasi altra parola chiave del linguaggio.) Di seguito è riportato un esempio della tecnica:  
+A questo punto è possibile sostituire il `new` operatore usando la `DBG_NEW` macro nel codice. Nelle build di debug, si usa un overload dell'oggetto globale `operator new` che accetta parametri aggiuntivi per il tipo di blocco, file e numero di riga. Questo overload del metodo `new` chiamate `_malloc_dbg` per registrare le informazioni aggiuntive. Quando si usa `DBG_NEW`, segnala la perdita di memoria Mostra il numero di riga e nome file in cui sono stati allocati gli oggetti persi. Nelle build di vendita al dettaglio, Usa il valore predefinito `new`. (Si consiglia di non crei una macro del preprocessore denominata `new`, o qualsiasi altra lingua (parola chiave).) Di seguito è riportato un esempio della tecnica:  
   
 ```C++  
 // debug_new.cpp
@@ -162,7 +162,7 @@ void main() {
 }
 ```  
   
-Quando si esegue questo codice nel debugger di Visual Studio, la chiamata a `_CrtDumpMemoryLeaks` genera un report nel **Output** finestra simile al seguente:  
+Quando si esegue questo codice nel debugger di Visual Studio, la chiamata a `_CrtDumpMemoryLeaks` genera un report nel **Output** finestra che ha un aspetto simile al seguente:  
   
 ```Output  
 Detected memory leaks!
@@ -173,7 +173,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Indica che l'allocazione persa era nella riga 20 di debug_new.cpp.  
+Ciò indica che l'allocazione persa era nella riga 20 di debug_new.cpp.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Impostazione di punti di interruzione su un numero di allocazione della memoria  
  Il numero di allocazione della memoria indica quando è stato allocato un blocco di memoria di cui è stata registrata la perdita. Un blocco con un numero di allocazione della memoria pari a 18, ad esempio, corrisponde al diciottesimo blocco di memoria allocato durante l'esecuzione dell'applicazione. Il report CRT tiene conto di tutte le allocazioni di blocchi di memoria durante l'esecuzione. Sono incluse le allocazioni della libreria CRT e di altre librerie come MFC. Di conseguenza, un blocco con un numero di allocazione della memoria pari a 18 potrebbe non essere il diciottesimo blocco di memoria allocato dal codice. In genere, non lo è.  
@@ -186,7 +186,7 @@ Indica che l'allocazione persa era nella riga 20 di debug_new.cpp.
   
 2.  Quando l'applicazione si interrompe al punto di interruzione, viene visualizzata la finestra **Espressioni di controllo** .  
   
-3.  Nella finestra **Espressioni di controllo** digitare `_crtBreakAlloc` nella colonna **Nome** .  
+3.  Nel **Watch** finestra, digitare `_crtBreakAlloc` nel **nome** colonna.  
   
      Se si usa la versione DLL multithread della libreria CRT (opzione /MD), includere l'operatore di contesto `{,,ucrtbased.dll}_crtBreakAlloc`  
   
@@ -202,20 +202,20 @@ Indica che l'allocazione persa era nella riga 20 di debug_new.cpp.
   
  È anche possibile impostare i punti di interruzione dell'allocazione di memoria nel codice. Questo risultato può essere raggiunto in due modi:  
   
-```  
+```cpp
 _crtBreakAlloc = 18;  
 ```  
   
  oppure:  
   
-```  
+```cpp
 _CrtSetBreakAlloc(18);  
 ```  
   
 ## <a name="comparing-memory-states"></a>Confronto tra stati di memoria  
  Un'altra tecnica per l'individuazione delle perdite di memoria comporta l'esecuzione di snapshot dello stato della memoria dell'applicazione in corrispondenza di punti chiave. Per eseguire uno snapshot dello stato della memoria in un determinato punto dell'applicazione, creare una struttura **_CrtMemState** e passarla alla funzione `_CrtMemCheckpoint` . Questa funzione inserisce nella struttura uno snapshot dello stato corrente della memoria:  
   
-```  
+```cpp
 _CrtMemState s1;  
 _CrtMemCheckpoint( &s1 );  
   
@@ -225,14 +225,14 @@ _CrtMemCheckpoint( &s1 );
   
  Per generare il contenuto di una struttura **_CrtMemState** , passare la struttura alla funzione `_ CrtMemDumpStatistics` :  
   
-```  
+```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
  `_ CrtMemDumpStatistics` genera un dump dello stato di memoria simile al seguente:  
   
-```  
+```cmd
 0 bytes in 0 Free Blocks.  
 0 bytes in 0 Normal Blocks.  
 3071 bytes in 16 CRT Blocks.  
@@ -245,7 +245,7 @@ Total allocations: 3764 bytes.
   
  Per verificare se si è verificata una perdita di memoria in una sezione di codice, è possibile eseguire snapshot dello stato della memoria prima e dopo la sezione, quindi usare `_ CrtMemDifference` per confrontare i due stati:  
   
-```  
+```cpp
 _CrtMemCheckpoint( &s1 );  
 // memory allocations take place here  
 _CrtMemCheckpoint( &s2 );  

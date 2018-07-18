@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments | Documenti Microsoft
+title: IDiaEnumSegments | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa63e85a19a1aec5102d3f59b027e3cddf849a62
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 30e359192ea6d19d6bc6e31de3c91943bda2deee
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468749"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056870"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Enumera i vari segmenti contenuti nell'origine dati.  
@@ -35,21 +35,21 @@ IDiaEnumSegments : IUnknown
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera il [interfaccia IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versione di questo enumeratore.|  
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|  
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Recupera il numero di segmenti.|  
-|[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Recupera un segmento di mezzo di un indice.|  
-|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Recupera un numero di segmenti nella sequenza di enumerazione specificato.|  
-|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Ignora un numero di segmenti in una sequenza di enumerazione specificato.|  
+|[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Recupera un segmento per mezzo di un indice.|  
+|[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Recupera un determinato numero di segmenti nella sequenza di enumerazione.|  
+|[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Ignora un determinato numero di segmenti in una sequenza di enumerazione.|  
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
-|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione come enumerazione corrente.|  
+|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Ottenere questa interfaccia chiamando il `QueryInterface` metodo su un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) oggetto. Vedere l'esempio per informazioni dettagliate.  
+ Ottenere questa interfaccia chiamando il `QueryInterface` metodo su un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) oggetto. Vedere l'esempio per i dettagli.  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come ottenere il `IDiaEnumSections` interfaccia da una tabella. Per un esempio più completo dell'utilizzo di segmenti, vedere il [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interfaccia.  
+ In questo esempio viene illustrato come ottenere il `IDiaEnumSections` interfaccia da una tabella. Per un esempio più completo dell'uso di segmenti, vedere la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interfaccia.  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  

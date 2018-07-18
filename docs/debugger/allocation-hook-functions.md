@@ -1,5 +1,5 @@
 ---
-title: Funzioni Hook di allocazione | Documenti Microsoft
+title: Funzioni Hook di allocazione | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,35 +24,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c46b498ea36459dff0eb538ac3e0371fd9c5707
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6c8a051641811da3658ffe556982c67649704069
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460108"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433356"
 ---
 # <a name="allocation-hook-functions"></a>Funzioni hook di allocazione
-Una funzione hook di allocazione, installata tramite [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), viene chiamato ogni volta che viene allocata, riallocata o liberata memoria. Questo tipo di funzione è utilizzabile per numerosi scopi differenti. È possibile usare le funzioni hook per verificare come un'applicazione gestisce situazioni di memoria insufficiente, ad esempio, oppure per esaminare schemi di allocazione o per registrare informazioni di allocazione da analizzare in seguito.  
+Una funzione di hook di allocazione, installata tramite [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), viene chiamato ogni volta che viene allocata, riallocata o liberata memoria. È possibile usare questo tipo di hook per numerosi scopi differenti. Usato per verificare come un'applicazione gestisce situazioni di memoria insufficiente, ad esempio per esaminare schemi di allocazione o registrare le informazioni di allocazione per analisi successive.  
   
 > [!NOTE]
->  Tenere presente le restrizioni sull'utilizzo delle funzioni di libreria run-time C in una funzione hook di allocazione, descritto in [hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+>  Tenere presente le restrizioni sull'utilizzo di funzioni della libreria di runtime C in una funzione di hook di allocazione, descritto nella [hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
- Una funzione hook di allocazione dovrebbe avere un prototipo analogo al seguente:  
+ Una funzione di hook di allocazione dovrebbe avere un prototipo analogo al seguente:  
   
-```  
+```cpp
 int YourAllocHook(int nAllocType, void *pvData,  
         size_t nSize, int nBlockUse, long lRequest,  
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Il puntatore passato a [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) è di tipo **CRT_ALLOC_HOOK**, come definito in CRTDBG. H:  
+ Il puntatore passato a [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) JE typu **CRT_ALLOC_HOOK**, come definito in CRTDBG. H:  
   
-```  
+```cpp
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
     (int, void *, size_t, int, long, const unsigned char *, int);  
 ```  
   
- Quando la libreria di runtime chiama la funzione hook, il *nAllocType* argomento indica quali allocazione operazione sta per essere eseguita (**HOOK_ALLOC**, **HOOK_REALLOC**, o **HOOK_FREE**). Nel caso di una liberazione o di una riallocazione, `pvData` conterrà un puntatore all'argomento utente del blocco che sarà liberato. Nel caso di un'allocazione, tuttavia, questo puntatore è nullo, poiché l'allocazione non ha ancora avuto luogo. I restanti argomenti contengono la dimensione dell'allocazione in questione, il tipo di blocco, il numero di richiesta sequenziale associato all'allocazione e un puntatore al nome file e al numero di riga in cui l'allocazione è stata effettuata, se tali informazioni sono disponibili. Dopo la funzione hook ha eseguito l'analisi e altre attività definite dall'autore, deve restituire **TRUE**, che indica che l'operazione di allocazione può continuare, o **FALSE**, a indicare che il operazione non riuscirà. Una semplice funzione hook di questo tipo può controllare la quantità di memoria allocata fino a quel momento e restituire **FALSE** se tale quantità eccede il limite di piccole dimensioni. L'applicazione sarà quindi soggetta agli errori di allocazione che in genere si verificano solo quando la memoria disponibile è molto scarsa. Funzioni hook più complesse possono tenere traccia degli schemi di allocazione, analizzare l'uso della memoria o informare del verificarsi di determinate situazioni.  
+ Quando la libreria di runtime chiama la funzione hook, il *nAllocType* l'argomento indica quali allocazione operazione deve essere reso (**HOOK_ALLOC**, **HOOK_REALLOC**, o **HOOK_FREE**). In una versione gratuita o in una riallocazione, `pvData` dispone di un puntatore all'articolo di utente del blocco verrà liberato. Tuttavia per un'allocazione, questo puntatore è null, perché non è stata eseguita l'allocazione. I restanti argomenti contengono la dimensione dell'allocazione in questione, il tipo di blocco, il numero di richiesta sequenziale associato e un puntatore al nome del file. Se disponibile, i argomenti includono anche il numero di riga in cui è stato effettuato l'allocazione. Dopo la funzione hook eseguito l'analisi e altre attività definite dall'autore, mentre deve restituire **TRUE**, che indica che l'operazione di allocazione può continuare, o **FALSE**, a indicare che la operazione non riuscirà. Una semplice funzione hook di questo tipo potrebbe controllare la quantità di memoria allocata fino ad ora e restituire **FALSE** se tale quantità eccede il limite di piccole dimensioni. L'applicazione sarà quindi soggetta agli errori di allocazione che in genere si verificano solo quando la memoria disponibile è molto scarsa. Funzioni hook più complesse possono tenere traccia degli schemi di allocazione, analizzare l'uso della memoria o informare del verificarsi di determinate situazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   

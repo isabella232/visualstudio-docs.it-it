@@ -1,5 +1,5 @@
 ---
-title: Debug di LINQ | Documenti Microsoft
+title: Debug di LINQ | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ca92fe5142957faf85ead5f9c9068b062d25a8d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474934"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056695"
 ---
 # <a name="debugging-linq"></a>Debug di LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta il debug di codice LINQ (Language Integrated Query), con alcune limitazioni. La maggior parte delle funzionalità di debug è compatibile con le istruzioni LINQ, inclusa l'esecuzione di istruzioni, l'impostazione di punti di interruzione e la visualizzazione dei risultati nelle finestre del debugger. In questo argomento vengono descritte le principali limitazioni del debug di codice LINQ.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta il debug di codice LINQ (Language Integrated Query), con alcune limitazioni. La maggior parte delle funzionalità di debug è compatibile con le istruzioni LINQ, inclusa l'esecuzione di istruzioni, l'impostazione di punti di interruzione e la visualizzazione dei risultati nelle finestre del debugger. Questo argomento descrive le principali limitazioni del debug di codice LINQ.  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> Visualizzazione dei risultati LINQ  
  È possibile visualizzare il risultato di un'istruzione LINQ usando i suggerimenti dati, la finestra Espressioni di controllo e la finestra di dialogo Controllo immediato. Quando si usa una finestra di origine, passare con il puntatore su una query nella finestra di origine per visualizzare un suggerimento dati. È possibile copiare una variabile LINQ e incollarla nella finestra Espressioni di controllo o nella finestra di dialogo Controllo immediato.  
   
- In LINQ, le query non vengono valutate al momento della creazione o della dichiarazione, ma soltanto al momento dell'uso. La query non dispone pertanto di un valore fino a quando non viene valutata. Per una descrizione completa di creazione della query e di valutazione, vedere [Introduzione alle query LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) o [scrittura nella prima Query LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
+ In LINQ, le query non vengono valutate al momento della creazione o della dichiarazione, ma soltanto al momento dell'uso. La query non dispone pertanto di un valore fino a quando non viene valutata. Per una descrizione completa della creazione di query e la valutazione, vedere [Introduzione alle query LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) oppure [Writing Your prima Query LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
   
  Per visualizzare il risultato di una query, è necessario che venga valutata dal debugger. Tenere presenti alcuni effetti della valutazione implicita, che avviene quando si visualizza il risultato di una query LINQ nel debugger:  
   
@@ -49,11 +49,11 @@ ms.locfileid: "31474934"
  Nelle query LINQ to SQL il codice del predicato non è sotto il controllo del debugger e pertanto non è possibile eseguirne le istruzioni. Qualsiasi query compilata in una struttura ad albero dell'espressione produce un codice che non è sotto il controllo del debugger.  
   
 ### <a name="stepping-in-visual-basic"></a>Esecuzione di istruzioni in Visual Basic  
- Se, durante l'esecuzione di istruzioni tramite un programma Visual Basic, il debugger rileva una dichiarazione della query, non esegue le istruzioni della dichiarazione ma evidenzia l'intera dichiarazione come un'unica istruzione. Tale comportamento si verifica perché la query non viene valutata fino al momento della chiamata. Per ulteriori informazioni, vedere [Introduzione a LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq).  
+ Se, durante l'esecuzione di istruzioni tramite un programma Visual Basic, il debugger rileva una dichiarazione della query, non esegue le istruzioni della dichiarazione ma evidenzia l'intera dichiarazione come un'unica istruzione. Tale comportamento si verifica perché la query non viene valutata fino al momento della chiamata. Per altre informazioni, vedere [Introduzione a LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq).  
   
  Se si eseguono le istruzioni contenute nell'esempio di codice seguente, il debugger evidenzia la dichiarazione della query o la creazione della query come un'unica istruzione.  
   
-```  
+```vb
 Function MyFunction(ByVal x As Char)  
     Return True  
 End Function  
@@ -76,7 +76,7 @@ End Sub
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>Sostituzione di un predicato con una funzione per attivare l'esecuzione di istruzioni (Visual Basic)  
  Se è necessario eseguire le istruzioni del codice del predicato a fini di debug, è possibile sostituire il predicato con una chiamata a una funzione contenente il codice del predicato originale. Si supponga, ad esempio, di avere a disposizione il codice seguente:  
   
-```  
+```vb
 Dim items() as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -89,7 +89,7 @@ Next
   
  È possibile spostare il codice del predicato in una funzione nuova, denominata `IsEven`:  
   
-```  
+```vb
 Dim items () as integer ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  
   
 ' Get the even numbers  
@@ -106,8 +106,8 @@ End Function
   
  La query modificata chiama la funzione `IsEven` a ogni passaggio attraverso l'oggetto `items`. È possibile usare le finestre del debugger per verificare che ogni elemento soddisfi la condizione specificata ed eseguire il codice in `IsEven`. Il predicato contenuto nell'esempio seguente è abbastanza semplice. In presenza di un predicato più complesso di cui sia necessario eseguire il debug, tuttavia, questa tecnica può rivelarsi molto utile.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Modifica e continuazione non sono supportate per LINQ  
- Modifica e continuazione supporta modifiche alle query LINQ con limitazioni. Per informazioni dettagliate, vedere [modifiche supportate EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Modifica e continuazione non supportate per LINQ  
+ Modifica e continuazione supporta modifiche alle query LINQ con limitazioni. Per informazioni dettagliate, vedere [EnC supportate modifiche](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)    

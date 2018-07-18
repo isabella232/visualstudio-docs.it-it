@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare funzionalità personalizzate e regole di convalida del pacchetto per le soluzioni SharePoint | Documenti Microsoft'
+title: 'Procedura: creare funzionalità personalizzate e regole di convalida del pacchetto per le soluzioni SharePoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,16 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c68df756e24fc45603d34dd6982a09889bd5203
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119832"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedura: Creare regole personalizzate per la convalida di funzionalità e pacchetti per le soluzioni SharePoint
-  È possibile creare le regole di convalida personalizzata per verificare il pacchetto della soluzione generato da Visual Studio. È possibile eseguire la convalida completa in un'intera funzionalità o un pacchetto selezionando **convalida** dal menu di scelta rapida di un pacchetto o una funzionalità di **PackagingExplorer**. Quando si aggiungono nuovi elementi di progetto SharePoint o una funzionalità al progetto per determinare se il pacchetto o la funzionalità in uno stato valido, viene eseguita la convalida parziale.  
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedura: creare funzionalità personalizzate e un pacchetto le regole di convalida per le soluzioni SharePoint
+  È possibile creare le regole di convalida personalizzata per verificare il pacchetto della soluzione generato da Visual Studio. È possibile eseguire la convalida completa in un'intera funzione o un pacchetto selezionando **Validate** dal menu di scelta rapida di un pacchetto o una funzionalità nel **PackagingExplorer**. Quando si aggiungono nuovi elementi di progetto SharePoint o le funzionalità al progetto per determinare se il pacchetto o la funzionalità sarà in uno stato valido, viene eseguita la convalida parziale.  
   
-### <a name="to-create-a-custom-package-validation-rule"></a>Per creare una regola di convalida del pacchetto personalizzato  
+### <a name="to-create-a-custom-package-validation-rule"></a>Per creare una regola di convalida pacchetto personalizzato  
   
 1.  Creare un progetto Libreria di classi.  
   
@@ -44,22 +45,21 @@ ms.lasthandoff: 04/16/2018
 4.  Aggiungere il <xref:System.ComponentModel.Composition.ExportAttribute> alla classe. Questo attributo consente a Visual Studio di individuare e caricare la regola di convalida. Passare il <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> o <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> tipo al costruttore dell'attributo.  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice riportato di seguito viene illustrato come creare una regola di convalida di funzionalità personalizzata.  
+ Esempio di codice seguente viene illustrato come creare una regola di convalida di funzionalità personalizzata.  
   
  [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]
  [!code-csharp[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/CSharp/featurevalidation/extension/customfeaturevalidationrule.cs#1)]  
   
-## <a name="compiling-the-code"></a>Compilazione del codice  
- Questo esempio richiede riferimenti agli assembly seguenti:  
+## <a name="compile-the-code"></a>Compilare il codice  
+ In questo esempio vengono richiesti riferimenti agli assembly seguenti:  
   
 -   Microsoft.VisualStudio.SharePoint.  
   
--   System.  
+-   Composition.  
   
-## <a name="deploying-the-extension"></a>Distribuzione dell'estensione  
- Per distribuire l'estensione, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) per l'assembly e altri file che si desiderano distribuire con l'estensione del pacchetto. Per ulteriori informazioni, vedere [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Distribuire l'estensione  
+ Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [gli strumenti di distribuzione di estensioni per SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Vedere anche  
- [Estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  
+## <a name="see-also"></a>Vedere anche
+ [Estendere la distribuzione e creazione di pacchetti di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   

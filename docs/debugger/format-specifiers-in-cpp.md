@@ -1,5 +1,5 @@
 ---
-title: Nel debugger (C++) identificatori di formato | Documenti Microsoft
+title: Formattare gli identificatori nel debugger (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -29,20 +29,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478122"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057756"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C++ nel debugger di Visual Studio
 È possibile modificare il formato con cui viene visualizzato il valore nella finestra **Espressioni di controllo** usando gli identificatori di formato.  
   
- È inoltre possibile utilizzare identificatori di formato nel **controllo immediato** finestra, la **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e persino nelle finestre di origine. Se si posiziona su un'espressione in queste finestre, il risultato viene visualizzato in un suggerimento dati. La visualizzazione Suggerimento dati riflette l'identificatore di formato.  
+ È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e persino nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato viene visualizzato in un suggerimento dati. La visualizzazione Suggerimento dati riflette l'identificatore di formato.  
   
 > [!NOTE]
->  Quando il debugger nativo di Visual Studio è cambiato in un nuovo motore di debug, sono stati aggiunti nuovi identificatori di formato e alcuni precedenti sono stati rimossi. Il debugger precedente viene ancora usato per il debug di interoperabilità (nativo e gestito combinati) con C++/CLI. Le sezioni seguenti in questo argomento illustrano gli identificatori di formato per ogni motore di debug.
+>  Quando il debugger nativo di Visual Studio è cambiato in un nuovo motore di debug, sono stati aggiunti nuovi identificatori di formato e alcuni precedenti sono state rimosse. Il debugger precedente viene ancora usato per il debug di interoperabilità (nativo e gestito combinati) con C++/CLI. Le sezioni seguenti in questo argomento illustrano gli identificatori di formato per ogni motore di debug.
 >   
 >  -   [Identificatori di formato](#BKMK_Visual_Studio_2012_format_specifiers) descrive gli identificatori di formato nel nuovo motore di debug.  
 > -   [Identificatori di formato per il debug di interoperabilità con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descrive gli identificatori di formato nel motore di debug precedente.  
@@ -58,7 +58,7 @@ int main() {
 }  
 ```  
   
- Aggiungere il `my_var1` variabile per il **espressioni di controllo** finestra (durante il debug **Debug > Windows > espressioni di controllo > controllo1**) e quindi impostare la visualizzazione su esadecimale (nel **guardare**finestra, la variabile e scegliere **visualizzazione esadecimale**). La finestra Espressioni di controllo mostra il valore 0x0065. Per visualizzare il valore espresso come carattere anziché come intero, nella colonna Nome, dopo il nome della variabile, aggiungere l'identificatore del formato di carattere **, c**. A questo punto, la colonna **valore** mostra **101 'e'**.  
+ Aggiungere la `my_var1` variabile il **Watch** finestra (durante il debug **Debug > Windows > espressioni di controllo > espressione di controllo 1**) e quindi impostare la visualizzazione su esadecimale (nel **guarda**finestra, la variabile e scegliere **visualizzazione esadecimale**). La finestra Espressioni di controllo mostra il valore 0x0065. Per visualizzare il valore espresso come carattere anziché come intero, nella colonna Nome, dopo il nome della variabile, aggiungere l'identificatore del formato di carattere **, c**. A questo punto, la colonna **valore** mostra **101 'e'**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -74,17 +74,17 @@ int main() {
 |c|carattere singolo|0x0065, c|101 'e'|  
 |s|stringa const char*|\<posizione > "hello world"|"hello world"|  
 |**sb**|const char * stringa (senza virgolette)|\<posizione > "hello world"|hello world|  
-|s8|stringa UTF-8|\<posizione > "This is â˜• una tazza di caffè UTF-8"|"Questo è un ☕ tazza di caffè UTF-8"|
+|s8|stringa UTF-8|\<posizione > "This is â˜• una tazza di caffè UTF-8"|"This is ☕ una tazza di caffè UTF-8"|
 |**s8b**|Stringa UTF-8 (senza virgolette)|\<posizione > "hello world"|hello world|  
 |su|Stringa Unicode (codifica UTF-16)|\<posizione > L "hello world"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Stringa Unicode (codifica UTF-16) (senza virgolette)|\<posizione > L "hello world"|hello world|  
 |bstr|stringa BSTR|\<posizione > L "hello world"|L"hello world"|  
-|env|Blocco di ambiente (string con terminazione null a doppia)|\<posizione > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|Blocco di ambiente (stringa a terminazione null doppia)|\<posizione > L "=:: =::/\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|stringa UTF-32|\<posizione > U "hello world"|u"hello world"|  
 |**s32b**|stringa UTF-32 (senza virgolette)|\<posizione > U "hello world"|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
 |**hv**|Tipo di puntatore: indica che il valore del puntatore in esame è il risultato dell'allocazione di heap di una matrice, ad esempio `new int[3]`.|\<posizione > {\<primo membro >}|\<posizione > {\<primo membro >, \<secondo membro >,...}|  
-|**na**|Elimina l'indirizzo di memoria di un puntatore a un oggetto.|\<posizione >, {membro = valore...}|{membro = value …}|  
+|**na**|Elimina l'indirizzo di memoria di un puntatore a un oggetto.|\<posizione >, {membro = valore...}|{membro = valore...}|  
 |**nd**|Visualizza solo le informazioni sulla classe base, ignorando le classi derivate|`(Shape*) square` include informazioni sulla classe base e sulle classi derivate|Visualizza solo informazioni sulla classe base|  
 |hr|HRESULT o codice di errore Win32. Poiché ora il debugger decodifica gli HRESULT automaticamente, l'identificatore non è necessario.|S_OK|S_OK|  
 |wc|flag della classe di finestre|0x0010|WC_DEFAULTCHAR|  
@@ -115,13 +115,13 @@ int main() {
 |**l,h**|prefisso lungo o breve per: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|virgola mobile signed|(3./2.), f|1.500000|  
 |**e**|notazione scientifica signed|(3.0/2.0)|1.500000e+000|  
-|**g**|virgola mobile signed o notazione scientifica signed (a seconda di quale sia più breve)|(3.0/2.0)|1,5|  
+|**g**|accesso automatico a virgola mobile signed o notazione scientifica,<br/> qualunque sia il più breve|(3.0/2.0)|1,5|  
 |c|carattere singolo|\<percorso >|101 'e'|  
 |s|const char*|\<percorso >|"hello world"|  
 |su|const wchar_t*<br /><br /> char16_t const\*|\<percorso >|L"hello world"|  
 |sub|const wchar_t*<br /><br /> char16_t const\*|\<percorso >|hello world|  
 |s8|const char*|\<percorso >|"hello world"|  
-|hr|HRESULT o codice di errore Win32. Poiché ora il debugger decodifica gli HRESULT automaticamente, l'identificatore non è necessario.|S_OK|S_OK|  
+|hr|HRESULT o codice di errore Win32.<br/>(Debugger decodifica gli HRESULT automaticamente,<br/> In questo identificatore non è necessario in questi casi.|S_OK|S_OK|  
 |wc|Flag della classe Window.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numeri di messaggio Windows|0x0010|WM_CLOSE|  
 |!|formato non elaborato in cui vengono ignorate le personalizzazioni delle visualizzazioni del tipo di dati|\<rappresentazione personalizzata >|4|  

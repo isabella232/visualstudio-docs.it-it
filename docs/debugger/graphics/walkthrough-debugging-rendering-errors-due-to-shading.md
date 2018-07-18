@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Debug degli errori a causa dello sfondo di Rendering | Documenti Microsoft'
+title: 'Procedura dettagliata: Debug degli errori a causa dello sfondo di Rendering | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b03a8f88c5daa421a3d6a10870b8d66b209402
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 62e64634d968e391b0414b55a5220c97e181d456
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480046"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433412"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo
-Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto colorato in modo non corretto a causa di un bug dello shader.  
+Questa procedura dettagliata illustra come usare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostica della grafica per esaminare un oggetto colorato in modo non corretto a causa di un bug dello shader.  
   
  Questa procedura dettagliata illustra come:  
   
@@ -31,7 +31,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
 ## <a name="scenario"></a>Scenario  
  Una colorazione non corretta per gli oggetti si verifica in genere quando un vertex shader passa informazioni errate o incomplete a un pixel shader.  
   
- In questo scenario, è stato aggiunto di recente un oggetto all'app, oltre a nuovi vertex shader e pixel shader per trasformare l'oggetto e assegnargli un aspetto univoco. Quando si esegue l'app durante un test, l'oggetto viene visualizzato in nero a tinta unita. Usando gli strumenti di Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'app. Nell'app, il problema si presenta nel modo seguente:  
+ In questo scenario si recentemente aggiunto un oggetto all'app. Inoltre aggiunto un nuovo vertice e pixel shader per trasformare l'oggetto e assegnargli un aspetto univoco. Quando si esegue l'app durante un test, l'oggetto viene visualizzato in nero a tinta unita. Usando gli strumenti di Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'app. Il problema si presenta come questa immagine nell'app:  
   
  ![Rendering dell'oggetto con colori non corretti. ] (media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")  
   
@@ -39,10 +39,10 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
  Utilizzando gli strumenti di diagnostica della grafica, è possibile caricare il documento del log di grafica per controllare i frame acquisiti durante il test.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica  
+   
+1.  In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], caricare un log di grafica contenente un frame che mostra il modello mancante. Verrà visualizzata una nuova finestra del documento log grafica [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
   
-1.  In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]caricare un log di grafica contenente un frame che mostra il modello mancante. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]viene visualizzata una nuova finestra del documento del log di grafica. Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.  
-  
-2.  In **Elenco frame**selezionare un frame in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la finestra del documento del log di grafica ha il seguente aspetto:  
+2.  Nel **elenco Frame**, selezionare un frame in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario, il log di grafica documento finestra ha un aspetto simile a questa immagine:  
   
      ![Log grafico in Visual Studio. ] (media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")  
   
@@ -52,7 +52,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 1.  Aprire la finestra **Cronologia pixel grafica** . Scegliere **Cronologia pixel** sulla barra degli strumenti **Diagnostica grafica**.  
   
-2.  Selezionare un pixel da esaminare. Nella finestra del documento del log di grafica selezionare uno dei pixel nell'oggetto non colorato correttamente:  
+2.  Selezionare un pixel da esaminare. Nella finestra del documento log grafica selezionare uno dei pixel per l'oggetto colorato correttamente:  
   
      ![Selezione di un pixel consente di visualizzare informazioni sulla relativa cronologia. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -60,9 +60,9 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
      ![La cronologia pixel Mostra un evento DrawIndexed. ] (media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     Si noti che il risultato del pixel shader è nero completamente opaco (0, 0, 0, 1) e che **Unione output** ha combinato questo risultato con il colore **Precedente** del pixel in modo che anche **Risultato** sia nero completamente opaco.  
+     Si noti che il risultato del pixel shader è nero completamente opaco (0, 0, 0, 1) e che il **unione Output** combinare questo shader pixel con la **Previous** colore del pixel in modo che il  **Risultato** anche è nero completamente opaco.  
   
- Dopo aver esaminato un pixel colorato in modo errato e aver appurato che il colore dell'output del pixel shader non è quello previsto, è possibile usare il debugger HLSL per esaminare il pixel shader e scoprire cosa è successo al colore dell'oggetto. È possibile usare il debugger HLSL per esaminare lo stato delle variabili HLSL durante l'esecuzione, eseguire il codice HLSL un'istruzione alla volta e impostare i punti di interruzione per facilitare la diagnosi del problema.  
+ Dopo aver esaminato un pixel colorato in modo non corretto e individuare che l'output del pixel shader non corrisponde al colore previsto, è possibile usare il Debugger HLSL per esaminare il pixel shader e scoprire cosa è successo al colore dell'oggetto. È possibile usare il debugger HLSL per esaminare lo stato delle variabili HLSL durante l'esecuzione, eseguire il codice HLSL un'istruzione alla volta e impostare i punti di interruzione per facilitare la diagnosi del problema.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Per esaminare il pixel shader  
   
@@ -84,13 +84,13 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 2.  Individuare la struttura di output del vertex shader, ovvero l'input per il pixel shader. In questo scenario, il nome di questa struttura è `output`. Esaminare il codice di vertex shader e notare che il membro `color` della struttura `output` è stato impostato in modo esplicito su nero completamente opaco, probabilmente a causa delle attività di debug di un utente.  
   
-3.  Verificare che il membro del colore non venga mai copiato dalla struttura di input. Poiché il valore di `output.color` è impostato su nero completamente opaco immediatamente prima che il `output` struttura viene restituita, è consigliabile verificare che il valore di `output` non è stato correttamente inizializzato in una riga precedente. Eseguire il codice di vertex shader un'istruzione alla volta fino al raggiungimento della riga tramite cui si imposta `output.color` su nero durante l'analisi del valore di `output.color`. Si noti che il valore di `output.color` non viene inizializzato fino a quando non viene impostato su nero. In questo modo viene confermato che la riga di codice tramite cui si imposta `output.color` su nero deve essere modificata, anziché eliminata.  
+3.  Verificare che il membro del colore non venga mai copiato dalla struttura di input. Poiché il valore di `output.color` è impostato su nero completamente opaco immediatamente prima di `output` struttura viene restituita, è consigliabile assicurarsi che il valore di `output` non è stato correttamente inizializzato in una riga precedente. Eseguire il codice di vertex shader un'istruzione alla volta fino al raggiungimento della riga tramite cui si imposta `output.color` su nero durante l'analisi del valore di `output.color`. Si noti che il valore di `output.color` non viene inizializzato fino a quando non viene impostato su nero. In questo modo viene confermato che la riga di codice tramite cui si imposta `output.color` su nero deve essere modificata, anziché eliminata.  
   
      ![Il valore di "Color" è nero. ] (media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   
  Una volta determinato che la causa del problema di rendering è che il vertex shader non fornisce un valore di colore corretto al pixel shader, è possibile utilizzare queste informazioni per correggere il problema. In questo scenario è possibile correggere l'errore modificando il codice seguente nel vertex shader  
   
-```  
+```hlsl  
 output.color = float3(0.0f, 0.0f, 0.0f);  
 ```  
   
@@ -102,7 +102,7 @@ output.color = input.color;
   
  Questo codice passa semplicemente il colore del vertice dai vertici dell'oggetto senza modifiche. Vertex shader più complessi potrebbero modificare il colore prima di passarlo. Il codice corretto del vertex shader dovrebbe essere simile al seguente:  
   
- ![Il codice corretto vertex shader. ] (media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")  
+ ![Il codice corretto del vertex shader. ] (media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")  
   
  Dopo aver corretto il codice, ricompilare ed eseguire l'app per verificare che il problema di rendering sia stato risolto:  
   

@@ -1,5 +1,5 @@
 ---
-title: Variante del formato di destinazione di rendering 16bpp | Documenti Microsoft
+title: Variante del formato di destinazione di rendering a 16bpp | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,28 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f8328b180c398cab5ff7fa0f29dfc578414e3a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474859"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433328"
 ---
-# <a name="16bpp-render-target-format-variant"></a>Variante del formato di destinazione di rendering 16bpp
+# <a name="16-bpp-render-target-format-variant"></a>eseguire il rendering di destinazione variante del formato di 16 bpp
 Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer nascosti.  
   
 ## <a name="interpretation"></a>Interpretazione  
- Una destinazione di rendering o un buffer nascosto usa in genere un formato a 32bpp (32 bit per pixel), come ad esempio B8G8R8A8_UNORM. I formati a 32bpp possono usare una larghezza di banda della memoria molto elevata. Se si usa il formato B5G6R5_UNORM, ovvero un formato a 16bpp che corrisponde alla metà delle dimensioni dei formati a 32bpp, è possibile alleggerire il carico sulla larghezza di banda della memoria, a fronte di una riduzione della fedeltà del colore.  
+ Una destinazione di rendering o un buffer nascosto Usa in genere un formato di 32 bpp (32 bit per pixel), ad esempio B8G8R8A8_UNORM. formati di 32 bpp possono utilizzare una grande quantità di larghezza di banda di memoria. Poiché il formato B5G6R5_UNORM è un formato di 16-bit per pixel che è metà delle dimensioni dei formati di 32 bpp, usarlo possibile alleggerire il carico sulla larghezza di banda di memoria, ma al costo di fedeltà dei colori ridotta.  
   
- Se questa variante mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare un consumo eccessivo della larghezza di banda della memoria. I miglioramenti in termini di prestazioni possono risultare particolarmente significativi quando il fotogramma profilato presenta una quantità di caricamento significativa o una notevole fusione alfa.  
-  
- Se il tipo di scene di cui l'app esegue il rendering non richiedono la riproduzione dei colori ad alta fedeltà, non richiedono che la destinazione di rendering disponga di un canale alfa e spesso non contengono sfumature che possono generare striature in caso di fedeltà dei colori ridotta, valutare l'uso di un formato di destinazione di rendering di 16bpp per ridurre l'utilizzo della larghezza di banda della memoria.  
-  
- Se le scene di cui l'app esegue il rendering richiedono la riproduzione dei colori ad alta fedeltà o un canale alfa, se spesso contengono sfumature, è consigliabile valutare altre strategie per ridurre l'uso della larghezza di banda della memoria. È ad esempio possibile ridurre la quantità di caricamento o fusione alfa, ridurre le dimensioni del buffer di frame o modificare le risorse della trama affinché usino una quantità inferiore di larghezza di banda della memoria abilitando la compressione o riducendone le dimensioni. Di norma, è necessario valutare i compromessi relativi alla qualità di immagine associati a ognuna di queste ottimizzazioni.  
-  
- Se per l'app risulta vantaggioso passare a un buffer nascosto a 16bpp che però fa parte della catena di scambio, è necessario effettuare procedure aggiuntive perché il formato DXGI_FORMAT_B5G6R5_UNORM non è un formato di buffer nascosto supportato per le catene di scambio create tramite `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain`. In questo caso, è necessario creare una destinazione di rendering in formato B5G6R5_UNORM usando `CreateTexture2D` ed eseguire il rendering in quel formato. Successivamente, prima di chiamare Present sulla catena di scambio, copiare la destinazione di rendering nel buffer nascosto della catena di scambio disegnando una quaterna a schermo intero con la destinazione di rendering come trama di origine. Sebbene si tratti di un passaggio aggiuntivo che richiede una certa quantità di larghezza di banda della memoria, la maggior parte delle operazioni di rendering userà una larghezza di banda inferiore, in quanto interessa la destinazione di rendering a 16bpp. Se questa operazione genera un risparmio di larghezza di banda superiore rispetto a quella usata dalla copia della destinazione di rendering nel buffer nascosto della catena di scambio, le prestazioni di rendering risultano migliorate.  
-  
- Le architetture GPU che usano tecniche di rendering basate su riquadri registrano vantaggi significativi usando un formato di buffer di frame a 16bpp perché la cache del frame di buffer locale di ogni riquadro può ospitare una parte del buffer di frame più grande. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.  
+ Se questa variante mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare un consumo eccessivo della larghezza di banda della memoria. È possibile ottenere miglioramenti significativi delle prestazioni, soprattutto quando il fotogramma profilato era una quantità significativa di caricamento o fusione alfa.
+
+Formato di destinazione di rendering 16-bit per pixel può ridurre fuori banda di memoria con l'utilizzo quando l'applicazione presenta le seguenti condizioni:
+- Non richiede la riproduzione dei colori ad alta fedeltà.
+- Non richiede un canale alfa.
+- Ofent privo di sfumature (che sono soggette agli elementi di rappresentazione per bande fedeltà dei colori ridotta).
+
+Altre strategie per ridurre la larghezza di banda di memoria includono:
+- Ridurre la quantità di caricamento o fusione alfa.
+- Ridurre le dimensioni del buffer frame.
+- Ridurre le dimensioni delle risorse di trama.
+- Ridurre la compressione delle risorse di trama.
+ 
+Di norma, è necessario valutare i compromessi relativi alla qualità di immagine associati a ognuna di queste ottimizzazioni.  
+
+Le applicazioni che fanno parte di una catena di scambio hanno un formato di buffer nascosto (DXGI_FORMAT_B5G6R5_UNORM) che non supporta i 16 bit per pixel. Queste catene di scambio vengono create usando `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain`. Per aggirare questa limitazione, procedere come segue:
+1. Creare una destinazione di rendering formato B5G6R5_UNORM usando `CreateTexture2D` ed eseguire il rendering che hanno come destinazione. 
+2. Copiare la destinazione di rendering nel buffer nascosto della catena di scambio disegnando una quad a schermo intero con la destinazione di rendering come trama di origine.
+3. Chiamare Present sulla catena di scambio.
+
+ Se questa strategia consente di salvare più larghezza di banda usata dalla copia di destinazione di rendering per il buffer nascosto della catena di scambio, le prestazioni di rendering sono stata migliorata.
+
+ Le architetture GPU che usano tecniche di rendering possono visualizzare i vantaggi significativi delle prestazioni utilizzando un formato di buffer di frame di 16 bit per pixel. Questo miglioramento è perché una parte maggiore del buffer di frame può adattarsi alla cache del buffer di ogni riquadro frame locale. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.  
   
 ## <a name="remarks"></a>Note  
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:  
@@ -46,9 +60,9 @@ Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazion
  Poiché il formato B5G6R5 non ha un canale alfa, il contenuto alfa non viene mantenuto da questa variante. Se il rendering dell'app richiede un canale alfa nella destinazione di rendering, non è possibile passare semplicemente al formato B5G6R5.  
   
 ## <a name="example"></a>Esempio  
- Il **formato di destinazione di rendering 16bpp** variante può essere riprodotte per destinazioni di rendering create tramite `CreateTexture2D` utilizzando codice simile al seguente:  
+ Il **bpp 16 formato di destinazione di rendering** variante può essere riprodotta per destinazioni di rendering create tramite `CreateTexture2D` usando codice simile al seguente:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC target_description;  
   
 target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  

@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dell'attributo DebuggerDisplay | Documenti Microsoft
+title: Uso dell'attributo DebuggerDisplay | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573245"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057586"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilizzo dell'attributo DebuggerDisplay
-Il [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controlla come un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.  
+Il [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controlla come un oggetto, proprietà o campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.  
   
  L'attributo `DebuggerDisplay` presenta un solo argomento, costituito da una stringa da visualizzare nella colonna del valore per le istanze del tipo. Questa stringa può contenere parentesi graffe (`{` e `}`). Il testo racchiuso tra due parentesi graffe viene valutato come un campo, una proprietà o un metodo.  
   
@@ -51,7 +51,7 @@ Il [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdi
   
  Per compilare autoexp.cs, aprire un prompt dei comandi per gli sviluppatori per VS2015 ed eseguire i comandi seguenti.  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -61,7 +61,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>Utilizzo di espressioni in DebuggerDisplay  
  Sebbene sia possibile utilizzare un'espressione generale tra parentesi graffe in un attributo DebuggerDisplay, questa procedura non è consigliata.  
   
- Un'espressione generale in DebuggerDisplay ha accesso implicito al puntatore `this` solo per l'istanza corrente del tipo di destinazione. L'espressione non ha accesso ad alias, variabili locali o puntatori. Se l'espressione fa riferimento a delle proprietà, gli attributi su tali proprietà non vengono elaborati. Ad esempio, il codice c# `[DebuggerDisplay("Object {count - 2}")]` Visualizza `Object 6` se il campo `count` è 8.  
+ Un'espressione generale in DebuggerDisplay ha accesso implicito al puntatore `this` solo per l'istanza corrente del tipo di destinazione. L'espressione non ha accesso ad alias, variabili locali o puntatori. Se l'espressione fa riferimento a delle proprietà, gli attributi su tali proprietà non vengono elaborati. Ad esempio, il codice c# `[DebuggerDisplay("Object {count - 2}")]` visualizzerebbe `Object 6` se il campo `count` è 8.  
   
  L'utilizzo di espressioni in DebuggerDisplay può causare i problemi seguenti:  
   
@@ -88,7 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
-Il ", nq" suffisso indica l'analizzatore di espressioni per rimuovere le virgolette la visualizzazione del valore finale (nq non = virgolette). 
+Il ", nq" suffisso indica l'analizzatore di espressioni per rimuovere le virgolette, la visualizzazione del valore finale (nq non = virgolette). 
   
 ## <a name="example"></a>Esempio  
  Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`, insieme a `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando è visualizzato in una finestra delle variabili del debugger, come la finestra **Espressioni di controllo** , produce un'espansione analoga alla seguente:  
@@ -177,7 +177,7 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [Identificatori di formato in c#](../debugger/format-specifiers-in-csharp.md)   
  [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

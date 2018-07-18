@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers | Documenti Microsoft
+title: IDiaEnumLineNumbers | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0b457a0efef1c860be7174f012575aec64f99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463276"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057321"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
-Enumera i numeri di riga diversi contenuti nell'origine dati.  
+Enumera i diversi numeri di riga contenuti nell'origine dati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,18 +35,18 @@ IDiaEnumLineNumbers : IUnknown
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Recupera il [interfaccia IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versione di questo enumeratore.|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|  
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Recupera il numero di numeri di riga.|  
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Recupera un numero di riga tramite un indice.|  
-|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Recupera un numero specificato di numeri di riga nella sequenza di enumerazione.|  
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Ignora un numero specificato di numeri di riga in una sequenza di enumerazione.|  
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Recupera un determinato numero di numeri di riga nella sequenza di enumerazione.|  
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Ignora un determinato numero di numeri di riga in una sequenza di enumerazione.|  
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione come enumerazione corrente.|  
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Questa interfaccia viene ottenuta chiamando uno dei seguenti metodi di [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaccia:  
+ Questa interfaccia viene ottenuta chiamando uno dei metodi seguenti nel [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaccia:  
   
 -   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
@@ -59,7 +59,7 @@ IDiaEnumLineNumbers : IUnknown
 -   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>Esempio  
- In questo esempio viene illustrato come ottenere il `IDiaEnumLineNumbers` interfaccia da una sessione. In questo caso, nell'esempio viene illustrato come ottenere l'enumerazione di numeri di riga per una funzione (rappresentato da `pSymbol`). Per un esempio più completo dell'utilizzo di numeri di riga, vedere il [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) interfaccia.  
+ In questo esempio viene illustrato come ottenere il `IDiaEnumLineNumbers` interfaccia da una sessione. In questo caso, nell'esempio viene illustrato come ottenere l'enumerazione di numeri di riga per una funzione (rappresentato da `pSymbol`). Per un esempio più completo dell'uso di numeri di riga, vedere la [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) interfaccia.  
   
 ```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  
