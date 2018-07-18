@@ -10,35 +10,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ef863bfb899c218a65673236c284bed63aed11
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1d7dcb437a77bd91c8dbb3360a33c7260fabb91
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973529"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755239"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: impostazione di punti di interruzione nei Flussi di lavoro
+# <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: impostare punti di interruzione nei flussi di lavoro
 
-Quando si utilizza Progettazione flussi di lavoro di Windows, è possibile impostare i punti di interruzione in flussi di lavoro grafici come si farebbe nel codice Visual Basic o c#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
+Quando si utilizza Progettazione flussi di lavoro, è possibile impostare i punti di interruzione su flussi di lavoro grafici come si farebbe nel codice Visual Basic o c#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
 
- Un punto di interruzione ha tre stati: *in sospeso*, *associato*, e *errore*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
+Un punto di interruzione ha tre stati: *in sospeso*, *associato*, e *errore*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
 
 > [!NOTE]
 > L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.
 
-> [!WARNING]
-> Assicurarsi di selezionare l'opzione **Abilita Just My Code (solo gestito)** dal **strumenti**, **opzioni**, **debug** menu prima eseguire il debug. Se si dispone di due sequenze annidate in un'altra sequenza e si imposta un punto di interruzione nella prima sequenza interna, premendo **F11** non eseguire il debug nella seconda sequenza interna se il **Abilita Just My Code (solo gestito)** opzione non è selezionata.
+> [!NOTE]
+> Assicurarsi di selezionare l'opzione **Abilita Just My Code (solo gestito)** dalle **Tools** > **opzioni** > **debug**  menu prima di eseguire il debug. Se non è selezionata l'opzione e si dispone di due sequenze annidate in un'altra sequenza e impostare un punto di interruzione nella prima sequenza interna, premendo **F11** non consente il debug nella seconda sequenza interna.
 
-> [!WARNING]
-> I punti di interruzione in un flusso di lavoro non vengono raggiunti se il percorso completo per la proprietà del file XAML non è corretto. Il percorso completo del file XAML non è preciso dopo avere spostato il progetto o la soluzione in un'altra cartella o a un altro computer. Selezionare CTRL+S per salvare e aggiornare la proprietà percorso completo.
+> [!NOTE]
+> I punti di interruzione in un flusso di lavoro non vengano raggiunti se il percorso completo di proprietà del file XAML non è preciso. Il percorso completo al file XAML non è preciso dopo lo spostamento di progetto o della soluzione in un'altra cartella o in un altro computer. Selezionare **Ctrl**+**S** per salvare e aggiornare la proprietà percorso completo.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Per impostare un punto di interruzione su un'attività nella visualizzazione Progettazione
 
-1.  Selezionare l'attività in corrispondenza della quale si desidera che il debugger si interrompa.
+1. Selezionare l'attività in corrispondenza della quale si desidera che il debugger si interrompa.
 
-2.  Nel **Debug** dal menu **Attiva/Disattiva punto di interruzione**. Verrà visualizzata un'icona rossa sul bordo superiore sinistro dell'attività.
+2. Nel **Debug** dal menu **Attiva/Disattiva punto di interruzione**. Verrà visualizzata un'icona rossa sul bordo superiore sinistro dell'attività.
 
-     In alternativa, è anche possibile premere il collegamento **F9** chiave dopo avere selezionato l'attività o si può fare doppio clic su attività e selezionare **punto di interruzione** quindi **Inserisci punto di interruzione**dal menu di scelta rapida.
+   In alternativa, è possibile premere **F9** dopo aver selezionato l'attività o si può fare doppio clic su attività e selezionare **punto di interruzione** > **Inserisci punto di interruzione** dal menu di scelta rapida.
 
 ## <a name="see-also"></a>Vedere anche
 

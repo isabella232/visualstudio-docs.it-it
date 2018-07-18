@@ -1,5 +1,5 @@
 ---
-title: Creare tabelle di ricerca nelle applicazioni Windows Form
+title: Creare tabelle di ricerca nelle applicazioni Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,50 +13,50 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 315bed179a21ec99a256fcc8cb16f6fc1164f238
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917068"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756766"
 ---
-# <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Form
-Il termine *tabella di ricerca* vengono descritti i controlli associati a due tabelle dati correlate. Questi controlli di ricerca visualizzano i dati della prima tabella in base a un valore selezionato nella seconda tabella.
+# <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
+Il termine *tabella di ricerca* descrive i controlli associati a due tabelle dati correlate. Questi controlli di ricerca visualizzano i dati della prima tabella basata su un valore selezionato nella seconda tabella.
 
- È possibile creare tabelle di ricerca trascinando il nodo principale di una tabella padre (dal [finestra Origini dati](add-new-data-sources.md)) su un controllo sul form che è già associato alla colonna della tabella figlio correlata.
+ È possibile creare tabelle di ricerca tramite trascinamento del nodo principale di una tabella padre (dal [finestra Origini dati](add-new-data-sources.md)) su un controllo nel form che è già associato alla colonna della tabella figlio correlata.
 
- Ad esempio, si consideri una tabella `Orders` in un database sales. Ogni record di `Orders` tabella include un `CustomerID`, che indica il cliente che ha effettuato l'ordine. Il `CustomerID` è una chiave esterna che punta a un record cliente di `Customers` tabella. In questo scenario, si espande il `Orders` tabella il **origini dati** finestra e impostare il nodo principale **dettagli**. Quindi impostare il `CustomerID` colonna da utilizzare un <xref:System.Windows.Forms.ComboBox> (o qualsiasi altro controllo che supporta l'associazione di ricerca) e trascinare il `Orders` nodo nel form. Infine, trascinare il `Customers` nodo nel controllo associato alla colonna correlata, in questo caso, il <xref:System.Windows.Forms.ComboBox> associato al `CustomerID` colonna.
+ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni record di `Orders` tabella include un `CustomerID`, che indica il cliente che ha effettuato l'ordine. Il `CustomerID` è una chiave esterna che punta a un record del cliente nel `Customers` tabella. In questo scenario, si espande il `Orders` nella tabella le **Zdroje dat** finestra e impostare il nodo principale **dettagli**. Quindi, impostare il `CustomerID` colonna da utilizzare un <xref:System.Windows.Forms.ComboBox> (o qualsiasi altro controllo che supporta il binding di ricerca) e trascinare il `Orders` nodo nel form. Infine, trascinare il `Customers` nodo nel controllo associato alla colonna correlata, in questo caso, il <xref:System.Windows.Forms.ComboBox> associato ai `CustomerID` colonna.
 
 ## <a name="to-databind-a-lookup-control"></a>Come associare un controllo di ricerca
 
-1.  Aprire il **origini dati** finestra.
+1.  Aprire il **Zdroje dat** finestra.
 
     > [!NOTE]
-    >  Tabelle di ricerca richiedono che siano disponibili in due tabelle o oggetti correlati di **origini dati** finestra. Per ulteriori informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
+    >  Le tabelle di ricerca richiedono che siano disponibili in due tabelle correlate o gli oggetti di **Zdroje dat** finestra. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
-2.  Espandere i nodi di **origini dati** finestra fino a quando non è possibile visualizzare la tabella padre e tutte le relative colonne e la tabella figlio correlata e tutte le relative colonne.
+2.  Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre e tutte le relative colonne e la tabella figlio correlata e tutte le relative colonne.
 
     > [!NOTE]
     >  Il nodo della tabella figlio è il nodo che viene visualizzato come nodo figlio espandibile nella tabella padre.
 
-3.  Modificare il tipo di rilascio della tabella figlio **dettagli** selezionando **dettagli** dall'elenco di controllo sul nodo della tabella figlio. Per ulteriori informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+3.  Modificare il tipo di rilascio della tabella figlio alla **informazioni dettagliate** selezionando **dettagli** dall'elenco di controllo sul nodo della tabella figlio. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4.  Individuare il nodo che correla le due tabelle (il `CustomerID` nodo nell'esempio precedente). Modificare il tipo di trascinamento per un <xref:System.Windows.Forms.ComboBox> selezionando **ComboBox** dall'elenco di controllo.
+4.  Individuare il nodo che correla le due tabelle (il `CustomerID` nodo nell'esempio precedente). Modificare il tipo di rilascio a un <xref:System.Windows.Forms.ComboBox> selezionando **ComboBox** dall'elenco di controllo.
 
-5.  Trascinare il nodo della tabella figlio principale dal **origini dati** finestra nel form.
+5.  Trascinare il nodo della tabella figlio principale dal **Zdroje dat** finestra nei form.
 
-     Controlli con associazione a dati (con etichette descrittive) e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) vengono visualizzati nel form. Oggetto [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+     I controlli con associazione a dati (con etichette descrittive) e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) vengono visualizzati nel form. Oggetto [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
-6.  Trascinare il nodo della tabella padre principale dal **origini dati** finestra direttamente al controllo di ricerca (il <xref:System.Windows.Forms.ComboBox>).
+6.  A questo punto, trascinare il nodo della tabella padre principale dal **Zdroje dat** finestra direttamente al controllo di ricerca (il <xref:System.Windows.Forms.ComboBox>).
 
-     Le associazioni di ricerca sono ora stabilite. Fare riferimento alla tabella di seguito per le proprietà specifiche che sono stati impostati sul controllo.
+     A questo punto vengono stabilite le associazioni di ricerca. Vedere la tabella seguente per le proprietà specifiche di quelle impostate nella finestra di controllo.
 
     |Proprietà|Spiegazione dell'impostazione|
     |--------------|----------------------------|
-    |**Origine dati**|Questa proprietà viene impostata da Visual Studio sul <xref:System.Windows.Forms.BindingSource> creato per la tabella trascinata nel controllo (a differenza del <xref:System.Windows.Forms.BindingSource> creato al momento della creazione del controllo).<br /><br /> Se è necessario apportare modifiche, quindi impostare il <xref:System.Windows.Forms.BindingSource> della tabella con la colonna che si desidera visualizzare.|
-    |**DisplayMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna successiva alla chiave primaria con tipo di dati stringa per la tabella che si intende trascinare nel controllo.<br /><br /> Se è necessario apportare modifiche, quindi impostare il nome della colonna che si desidera visualizzare.|
-    |**ValueMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna che partecipa alla chiave primaria o la prima colonna della tabella nel caso in cui non sia stata definita alcuna chiave.<br /><br /> Se è necessario apportare modifiche, quindi impostare la chiave primaria nella tabella con la colonna che si desidera visualizzare.|
-    |**SelectedValue**|Visual Studio imposta questa proprietà per la colonna originale trascinata dal **origini dati** finestra.<br /><br /> Se è necessario apportare modifiche, quindi impostare la colonna chiave esterna nella tabella correlata.|
+    |**Origine dati**|Visual Studio imposta questa proprietà il <xref:System.Windows.Forms.BindingSource>, creato per la tabella si trascina il controllo (in contrapposizione al <xref:System.Windows.Forms.BindingSource>, creato quando il controllo è stato creato).<br /><br /> Se è necessario apportare modifiche, impostare questa opzione il <xref:System.Windows.Forms.BindingSource> della tabella contenente la colonna che si desidera visualizzare.|
+    |**DisplayMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna successiva alla chiave primaria con tipo di dati stringa per la tabella che si intende trascinare nel controllo.<br /><br /> Se è necessario apportare modifiche, impostare il nome della colonna da visualizzare.|
+    |**ValueMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna che partecipa alla chiave primaria o la prima colonna della tabella nel caso in cui non sia stata definita alcuna chiave.<br /><br /> Se è necessario apportare modifiche, impostare la chiave primaria della tabella con la colonna che si desidera visualizzare.|
+    |**SelectedValue**|Visual Studio imposta questa proprietà per la colonna originale trascinata dal **Zdroje dat** finestra.<br /><br /> Se è necessario apportare modifiche, impostare la colonna chiave esterna nella tabella correlata.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: utilizzare la struttura di spostamento'
+title: 'Finestra di progettazione del flusso di lavoro - procedura: usare la struttura di spostamento'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975066"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757619"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procedura: utilizzare l'esplorazione tramite la barra di navigazione
 
-Esistono tre modi principali per modificare il set di attività che vengono visualizzati nella finestra di progettazione del flusso di lavoro Windows:
+Esistono tre modi principali per modificare il set di attività che vengono visualizzati nella finestra di progettazione del flusso di lavoro:
 
 1.  Facendo doppio clic per analizzare un'attività figlio.
 
@@ -40,16 +40,16 @@ Esistono tre modi principali per modificare il set di attività che vengono visu
 2.  Quando lo stato di espansione viene modificato facendo clic sul pulsante, il nuovo stato di espansione viene salvato in XAML.
 
     > [!WARNING]
-    > Non tutte le attività possono essere espanse sul posto. Esistono due casi in cui un'attività non può essere espansa sul posto, ovvero quando il padre dell'attività non consente l'espansione sul posto dei relativi figli (le attività di un diagramma di flusso non possono ad esempio essere espanse sul posto) o quando non è consentita l'espansione automatica dell'ActivityDesigner sul posto. Anche se nessuno degli ActivityDesigner inclusi nella finestra di progettazione del flusso di lavoro hanno il comportamento di quest'ultimo, alcune attività personalizzate possono presentare questo comportamento.
+    > Non tutte le attività possono essere espanse sul posto. Esistono due casi in cui un'attività non può essere espansa sul posto, ovvero quando il padre dell'attività non consente l'espansione sul posto dei relativi figli (le attività di un diagramma di flusso non possono ad esempio essere espanse sul posto) o quando non è consentita l'espansione automatica dell'ActivityDesigner sul posto. Anche se nessuno degli ActivityDesigner inclusi nella finestra di progettazione del flusso di lavoro hanno il comportamento di quest'ultimo, alcune attività personalizzate lo espongano.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Espansione o compressione di tutte le attività
 
-1.  Utilizzare il **Espandi tutto** e **Comprimi tutto** pulsanti nell'interfaccia utente per espandere o comprimere tutte le attività sotto la radice della barra di navigazione corrente. Si noti che Espandi tutto e Comprimi tutto sono stati globali. Ciò significa che quando si modifica l'attività radice utilizzando la struttura di spostamento, espandere tutte stato o Comprimi tutto permane fino a quando non si fa clic su **ripristinare**.
+1.  Usare la **Espandi tutto** e **Comprimi tutto** pulsanti nell'interfaccia utente per espandere o comprimere tutte le attività sotto la radice di navigazione corrente. Si noti che Espandi tutto e Comprimi tutto sono stati globali. Ciò significa che quando si modifica l'attività radice usando la struttura di spostamento, espandere tutte o comprimere tutti gli stati persiste fino a quando non si fa clic su **ripristinare**.
 
-2.  Dopo aver applicati un Espandi tutto o Comprimi tutto lo stato, è possibile fare clic il **ripristinare** pulsante visualizzato per tornare alla visualizzazione dello stato applicato precedentemente a ogni attività.
-
-    > [!WARNING]
-    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, è stata scelta espansione sul posto, la funzionalità associata la **Espandi tutto** e **Comprimi tutto** pulsanti sono disabilitato nel **diagramma di flusso**  finestra di progettazione. Per ulteriori informazioni sul **diagramma di flusso** della finestra di progettazione, vedere il [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) argomento.
+2.  Quando è stato applicato un Espandi tutto o Comprimi tutti gli stati, è possibile scegliere il **ripristinare** pulsante visualizzato per tornare alla visualizzazione dello stato in precedenza applicato a ogni attività.
 
     > [!WARNING]
-    > Espandi tutto anche ha un effetto speciale **commutatore** e **TryCatch** ActivityDesigner. Quando fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Fare clic su **ripristinare** o **Comprimi tutto** restituisce queste finestre di progettazione al relativo stato predefinito, da cui è possibile fare clic su un case/blocco singolo per visualizzarne il contenuto.
+    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha acconsentito esplicitamente espansione sul posto, la funzionalità associata il **Espandi tutto** e **Comprimi tutto** pulsanti sono disabilitato nel **diagramma di flusso**  finestra di progettazione. Per altre informazioni sul **diagramma di flusso** della finestra di progettazione, vedere il [Flowchart](../workflow-designer/flowchart-activity-designer.md) argomento.
+
+    > [!WARNING]
+    > Espandi tutto ha anche un effetto speciale **commutatore** e **TryCatch** ActivityDesigner. Quando fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Facendo clic **ripristinare** oppure **Comprimi tutto** restituisce queste finestre di progettazione al relativo stato predefinito, in cui è possibile scegliere un case/blocco singolo per visualizzarne il contenuto.

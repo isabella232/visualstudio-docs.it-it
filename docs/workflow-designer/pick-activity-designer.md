@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner Pick
+title: Finestra di progettazione del flusso di lavoro, ActivityDesigner Pick
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f664ac3a22b91780d392e0fef3224cd80b1e7919
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975432"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757751"
 ---
 # <a name="pick-activity-designer"></a>ActivityDesigner Pick
 
@@ -25,15 +25,13 @@ Nell'attività <xref:System.Activities.Statements.Pick> è disponibile il flusso
 
 ## <a name="the-pick-activity"></a>Attività Pick
 
-Un'attività <xref:System.Activities.Statements.Pick> contiene una raccolta di oggetti <xref:System.Activities.Statements.PickBranch>, uno dei quali può essere eseguito dall'attività <xref:System.Activities.Statements.Pick> per effetto di un evento in entrata che funge da trigger. In questo modo Progettazione flussi di lavoro di Windows fornisce modellazione del flusso di controllo basato su eventi. Ciascun oggetto <xref:System.Activities.Statements.PickBranch> contiene una proprietà <xref:System.Activities.Statements.PickBranch.Trigger%2A> e una proprietà <xref:System.Activities.Statements.PickBranch.Action%2A>. All'inizio di un <xref:System.Activities.Statements.Pick> esecuzione dell'attività, tutte le attività del trigger del <xref:System.Activities.Statements.PickBranch> elementi pianificati. Quando la prima attività viene completata, l'attività dell'azione corrispondente è pianificata e tutte le altre attività del trigger sono annullate.
+Un'attività <xref:System.Activities.Statements.Pick> contiene una raccolta di oggetti <xref:System.Activities.Statements.PickBranch>, uno dei quali può essere eseguito dall'attività <xref:System.Activities.Statements.Pick> per effetto di un evento in entrata che funge da trigger. In questo modo Progettazione flussi di lavoro fornisce modellazione del flusso di controllo basato su eventi. Ciascun oggetto <xref:System.Activities.Statements.PickBranch> contiene una proprietà <xref:System.Activities.Statements.PickBranch.Trigger%2A> e una proprietà <xref:System.Activities.Statements.PickBranch.Action%2A>. All'inizio di una <xref:System.Activities.Statements.Pick> esecuzione dell'attività, tutte le attività del trigger del <xref:System.Activities.Statements.PickBranch> elementi pianificati. Quando la prima attività viene completata, l'attività dell'azione corrispondente è pianificata e tutte le altre attività del trigger sono annullate.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Modalità di utilizzo dell'ActivityDesigner Pick
 
-Il **Pick** ActivityDesigner è reperibile nella **flusso di controllo** categoria del **casella degli strumenti**, accessibile facendo clic il **della casella degli strumenti**scheda nella finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu o premere CTRL + ALT + X.)
+Accesso il **Scegli** ActivityDesigner nel **flusso di controllo** categoria del **della casella degli strumenti**. Il **prelievo** ActivityDesigner può essere trascinato dal **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che vengono in genere posizionate le attività, ad esempio all'interno di un  **Sequenza** ActivityDesigner. Dopo averlo rilasciato in Progettazione flussi di lavoro, viene creato un <xref:System.Activities.Statements.Pick> attività, che per impostazione predefinita contiene due vuoto <xref:System.Activities.Statements.PickBranch> attività come elementi con i nomi visualizzati dei Branch1 e Branch2. I rispettivi <xref:System.Activities.Statements.PickBranch.DisplayName%2A> i valori delle proprietà possono essere modificati nella **PickBranch** intestazione ActivityDesigner o all'interno di **proprietà** finestra per ogni ramo.
 
-Il **Pick** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che vengono generalmente posizionati gli ActivityDesigner, ad esempio all'interno di un  **Sequenza** ActivityDesigner. Dopo averlo rilasciato in Progettazione flussi di lavoro, viene creato un <xref:System.Activities.Statements.Pick> attività, che per impostazione predefinita contiene due vuoto <xref:System.Activities.Statements.PickBranch> attività come elementi i nomi visualizzati Branch1 e Branch2. I rispettivi <xref:System.Activities.Statements.PickBranch.DisplayName%2A> i valori delle proprietà possono essere modificati nella **PickBranch** intestazione ActivityDesigner o all'interno di **proprietà** finestra per ogni ramo.
-
-Esistono due modi per aggiungere <xref:System.Activities.Statements.PickBranch> attività alla raccolta di un <xref:System.Activities.Statements.Pick> oggetto: trascinando e rilasciando il **PickBranch** dalla finestra di progettazione di **della casella degli strumenti** o utilizzando il menu di scelta rapida da all'interno di **Pick** area di progettazione. Per informazioni dettagliate, vedere il [PickBranch](../workflow-designer/pickbranch-activity-designer.md) argomento. Si noti che l'unico elemento che possono essere inserito all'interno di un **Pick** ActivityDesigner è un **PickBranch** ActivityDesigner.
+Esistono due modi per aggiungere <xref:System.Activities.Statements.PickBranch> attività alla raccolta di un <xref:System.Activities.Statements.Pick> oggetto: trascinando la **PickBranch** della finestra di progettazione dal **della casella degli strumenti** o tramite il menu di scelta rapida da all'interno di **prelievo** nell'area di progettazione. Per informazioni dettagliate, vedere la [PickBranch](../workflow-designer/pickbranch-activity-designer.md) argomento. Si noti che l'unico elemento che possono essere inserito in una **prelievo** ActivityDesigner è un **PickBranch** ActivityDesigner.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di prelievo in Progettazione flussi di lavoro
 

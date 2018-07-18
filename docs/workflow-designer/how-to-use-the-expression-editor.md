@@ -12,33 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e14a967b9721973d8d545e10f58cab3c68b8e15
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976504"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756143"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: utilizzare l'editor espressioni
 
-L'Editor espressioni è un controllo di progettazione del flusso di lavoro di Windows che viene utilizzato in molte attività di flusso di lavoro come mezzo per immettere e valutare queste espressioni. L'editor espressioni fornisce un'esperienza di modifica IDE completa che include, tra le altre funzionalità, IntelliSense, colorazione, ParamInfo, controllo errori di ortografia durante la digitazione. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor espressioni** la finestra di dialogo.
+L'Editor espressioni è un controllo di finestra di progettazione del flusso di lavoro che viene usato in molte attività del flusso di lavoro per immettere e valutare le espressioni. L'Editor espressioni fornisce un IDE completa la modifica di esperienza, tra cui IntelliSense, colorazione, paraminfo, controllo ortografia durante la digitazione, errore tra le altre funzionalità. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor di espressioni** nella finestra di dialogo.
 
- Le espressioni sono valori letterali o codice Visual Basic associati ad argomenti o proprietà. Contengono elementi valore, ad esempio variabili, costanti, valori letterali, proprietà, che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che l'uso delle maiuscole non è rilevante, il confronto viene eseguito utilizzando uguale a un singolo segno ("=") anziché ("= ="), gli operatori booleani sono le parole "e" e "or" anziché i simboli "& &" e "&#124;&#124;", e **Nothing**  viene usata invece di **null**. Per ulteriori informazioni sulle espressioni e operatori in Visual Basic e per alcuni esempi, vedere [operatori ed espressioni in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+Le espressioni sono valori letterali o codice Visual Basic associati ad argomenti o proprietà. Contengono elementi valore (ad esempio, le variabili, costanti, valori letterali, proprietà) che vengono combinati con le operazioni per produrre un nuovo valore. Le espressioni vengono scritte usando la sintassi VB.NET, anche se l'applicazione si trova in un programma che usa C#. Ciò significa che l'uso delle maiuscole non è rilevante, il confronto viene eseguito usando un singolo uguale ("=" anziché "= =") l'accesso, gli operatori booleani sono le parole "and" e "or" anziché i simboli "& &" e "| |", e **Nothing** viene utilizzato invece di **null**. Per altre informazioni sulle espressioni e operatori in Visual Basic e per alcuni esempi, vedere [gli operatori ed espressioni in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
- Il **Editor espressioni** si comporta come segue:
+Il **Editor di espressioni** si comporta come segue:
 
--   Se lo stato attivo non è sull'editor espressioni, si presenta come un controllo TextBlock normale.
+- Se lo stato attivo non è sull'editor espressioni, si presenta come un controllo TextBlock normale.
 
--   Quando lo stato attivo è sull'editor espressioni, si presenta e si comporta come un controllo dell'editor espressioni. Dopo aver perso lo stato attivo, si presenta nuovamente come un normale controllo TextBlock.
+- Quando lo stato attivo è sull'editor espressioni, si presenta e si comporta come un controllo dell'editor espressioni. Dopo aver perso lo stato attivo, l'Editor espressioni è simile anche in questo caso a un normale controllo TextBlock.
 
--   Se si imposta lo stato attivo sull'editor espressioni in un oggetto progettazione flussi di lavoro riallocato, si comporta come oggetto TextBox. Quando nell'oggetto progettazione flussi di lavoro riallocato si perde lo stato attivo, l'editor espressioni si presenta nuovamente come un normale oggetto TextBlock.
+- Se si imposta lo stato attivo sull'editor espressioni in un oggetto progettazione flussi di lavoro riallocato, si comporta come oggetto TextBox. Quando nell'oggetto progettazione flussi di lavoro riallocato si perde lo stato attivo, l'editor espressioni si presenta nuovamente come un normale oggetto TextBlock.
 
 > [!NOTE]
-> IntelliSense per l'Editor espressioni è disponibile solo all'interno di Visual Studio 2010. In Visual Studio 2010 e scenari di riallocazione, il compilatore convalida l'espressione dopo l'immissione e l'editor espressioni viene visualizzata un'icona di errore se l'espressione non è valido.
+> IntelliSense per l'Editor espressioni è disponibile solo all'interno di Visual Studio. In Visual Studio e di scenari di riallocazione, il compilatore convalida l'espressione dopo che è stata immessa e l'editor espressioni viene visualizzata un'icona di errore se l'espressione non è valido.
 
-## <a name="use-the-expression-editor"></a>Utilizzare l'editor espressioni
+## <a name="use-the-expression-editor"></a>Usare l'editor espressioni
 
-1.  In Visual Studio 2010, aprire un progetto flusso di lavoro nuova o esistente.
+1.  In Visual Studio, aprire un progetto di flusso di lavoro nuova o esistente.
 
 2.  Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.
 
@@ -47,13 +47,13 @@ L'Editor espressioni è un controllo di progettazione del flusso di lavoro di Wi
 
 3.  Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.
 
-     Le stringhe con filigrana di colore grigio  **\<per >** e  **\<immettere un'espressione VB >** è l'impostazione predefinita, le stringhe di testo per gli editor di espressioni nel <xref:System.Activities.Statements.Assign> attività.
+     Le stringhe con filigrana di colore grigio  **\<al >** e  **\<immettere un'espressione VB >** è il valore predefinito di stringhe di testo per gli editor di espressioni nel <xref:System.Activities.Statements.Assign> attività.
 
 4.  Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.
 
-     Al termine, selezionare un'area esterna all'editor espressioni per trasferire lo stato attivo in un'altra parte della finestra di progettazione. In questo modo il compilatore convalida l'espressione, come descritto precedentemente.
+     Al termine, selezionare una regione o area di fuori l'Editor di espressioni per spostare lo stato attivo a un'altra parte della finestra di progettazione. Spostando lo stato attivo, il compilatore convalida l'espressione, come descritto in precedenza.
 
-     Una modalità alternativa per immettere/modificare un'espressione consiste nel fare clic sul pulsante con i puntini sospensivi accanto al nome della proprietà nella griglia delle proprietà. Verrà aperta la **Editor espressioni** come finestra di dialogo.
+     Un modo alternativo per immettere o modificare un'espressione è necessario fare clic sui puntini di sospensione accanto al nome della proprietà nella griglia delle proprietà. Selezionando i puntini di sospensione viene visualizzata la **Editor di espressioni** come una finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -12,33 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 490740f8f2682ad6b82bc60edb5d24e6d410b192
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7ed52f7898f10b5f13f55c27cba380334489871
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970295"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758134"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Finestra di dialogo Definizione di CorrelatesOn
 
-Il **CorrelatesOn** in Progettazione flussi di lavoro di Windows utilizzata per modificare la finestra di dialogo di <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> proprietà di un <xref:System.ServiceModel.Activities.Receive> attività. Per ulteriori informazioni, vedere il [ricezione](../workflow-designer/receive-activity-designer.md) argomento.
+Il **CorrelatesOn** finestra di dialogo viene utilizzata nella finestra di progettazione del flusso di lavoro per modificare le <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> proprietà di un <xref:System.ServiceModel.Activities.Receive> attività. Per altre informazioni, vedere [ricezione ActivityDesigner](../workflow-designer/receive-activity-designer.md).
 
 La correlazione tra le attività <xref:System.ServiceModel.Activities.Receive> specifica come operazioni del servizio diverse si connettono tra loro in un flusso di lavoro.
 
-Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente di **CorrelatesOn** la finestra di dialogo.
+La tabella seguente descrive gli elementi dell'interfaccia utente di **CorrelatesOn** nella finestra di dialogo.
 
 |Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**CorrelatesWith**|Oggetto <xref:System.ServiceModel.Activities.CorrelationHandle> usato per indirizzare il messaggio all'istanza del flusso di lavoro appropriata.|
-|**Query XPath**|Una coppia chiave/valore che contiene le query usate per estrarre dati di correlazione dai messaggi in ingresso. Questa proprietà corrisponde alla proprietà <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>. Le query XPath sono incluse in un oggetto <xref:System.ServiceModel.MessageQuerySet>.|
+|**Query XPath**|Una coppia chiave/valore che contiene le query usate per estrarre dati di correlazione dai messaggi in ingresso. Questo valore corrisponde al <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> proprietà. Le query XPath sono incluse in un oggetto <xref:System.ServiceModel.MessageQuerySet>.|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>Per aprire la finestra di dialogo CorrelatesOn.
 
-Il **Receive** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che vengono in genere posizionate le attività. In questo modo viene creata un'attività <xref:System.ServiceModel.Activities.Receive> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Receive. Selezionare il **ricezione** ActivityDesigner e fare clic sul pulsante con i puntini di sospensione accanto al testo (raccolta) per il **CorrelatesOn** proprietà nella griglia delle proprietà per il **definizione di CorrelatesOn**  finestra di dialogo.
+Il **Receive** ActivityDesigner può essere trascinato dalla **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro, ogni volta che vengono in genere posizionate le attività. La finestra di progettazione di attività di rilascio crea un <xref:System.ServiceModel.Activities.Receive> attività predefinito <xref:System.Activities.Activity.DisplayName%2A> di ricezione. Per aprire la **definizione di CorrelatesOn** finestra di dialogo, seleziona la **ricezione** attività della finestra di progettazione e quindi nella griglia delle proprietà, selezionare il pulsante con puntini di sospensione accanto al testo di raccolta per il  **CorrelatesOn** proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [Finestra di dialogo Aggiungi inizializzatori di correlazione](../workflow-designer/add-correlationinitializers-dialog-box.md)
-- [Aggiungere la finestra di dialogo di correlazione](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
+- [Aggiungi finestra di dialogo di correlazione](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [Finestra di dialogo Inizializza correlazione](../workflow-designer/initialize-correlation-dialog-box.md)

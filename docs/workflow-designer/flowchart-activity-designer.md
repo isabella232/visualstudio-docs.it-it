@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner diagramma di flusso
+title: Finestra di progettazione del flusso di lavoro - Activity Designer Flowchart
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4dd44a91ac2a3d823c5a5690edbdd57422857ea9
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974274"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755628"
 ---
 # <a name="flowchart-activity-designer"></a>ActivityDesigner Diagramma di flusso
 
-L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare flussi di lavoro che definiscono e gestiscono controlli di flusso complessi. Oggetto <xref:System.Activities.Statements.Flowchart> possono essere creati nel codice o tramite Progettazione flussi di lavoro. Questo argomento vengono illustrate l'esperienza di progettazione flussi di lavoro. L'ActivityDesigner del flusso di lavoro di progettazione del flusso di lavoro di Windows consente agli sviluppatori di creare flussi di lavoro in modo naturale.
+L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare flussi di lavoro che definiscono e gestiscono controlli di flusso complessi. Oggetto <xref:System.Activities.Statements.Flowchart> possono essere creati nel codice o tramite Progettazione del flusso di lavoro. Questo argomento vengono illustrate l'esperienza di progettazione del flusso di lavoro. L'ActivityDesigner del flusso di lavoro di progettazione del flusso di lavoro consente agli sviluppatori di creare flussi di lavoro in modo naturale.
 
 ## <a name="the-flowchart-activity"></a>Attività Flowchart
 
@@ -31,11 +31,11 @@ L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare
 
 ### <a name="using-the-flowchart-activity-designer"></a>Utilizzo dell'ActivityDesigner Flowchart
 
-Il **diagramma di flusso** ActivityDesigner è reperibile nella **diagramma di flusso** categoria del **casella degli strumenti**, accessibile facendo clic il **della casella degli strumenti**scheda nella finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu o premere CTRL + ALT + X.)
+Il **diagramma di flusso** ActivityDesigner è reperibile nel **diagramma di flusso** categoria del **della casella degli strumenti**, accessibile facendo clic di **della casella degli strumenti**scheda nella finestra di progettazione del flusso di lavoro. In alternativa, selezionare **della casella degli strumenti** dal **View** dal menu oppure premere **Ctrl**+**Alt** + **X**.
 
-Il **diagramma di flusso** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che vengono generalmente posizionati gli ActivityDesigner, come un'attività radice o come il elemento figlio di un'altra attività del flusso di controllo. Se il **diagramma di flusso** viene rilasciato un ActivityDesigner su un'area di progettazione flussi di lavoro vuota, viene creato un <xref:System.Activities.Statements.Flowchart> attività, che per impostazione predefinita si presenta una visualizzazione espansa in cui è il nodo iniziale che avvia l'esecuzione rappresentato come una palla di colore verde. Se il **diagramma di flusso** ActivityDesigner viene rilasciato in un'altra attività del flusso di controllo, si presenta come una visualizzazione ridotta a icona che può essere espansa facendo doppio clic su di **diagramma di flusso** ActivityDesigner. Tutte le attività di **della casella degli strumenti** possono essere trascinate direttamente il **diagramma di flusso** ActivityDesigner, insieme ad altre attività del flusso di controllo.
+Il **diagramma di flusso** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che vengono in genere posizionate le attività, come un'attività radice o come il elemento figlio di un'altra attività del flusso di controllo. Se il **diagramma di flusso** ActivityDesigner viene eliminata in un'area di progettazione del flusso di lavoro vuota, viene creato un <xref:System.Activities.Statements.Flowchart> attività, che per impostazione predefinita si manifesta in una visualizzazione espansa in cui è il nodo iniziale che avvia l'esecuzione rappresentato come una palla di colore verde. Se il **diagramma di flusso** ActivityDesigner viene inserito in un'altra attività del flusso di controllo, si presenta una vista ridotta a icona che può essere espanso facendo doppio clic il **Flowchart** ActivityDesigner. Qualsiasi attività nel **casella degli strumenti** possono essere trascinati direttamente il **diagramma di flusso** ActivityDesigner, tra cui altre attività del flusso di controllo.
 
-Dopo aver rilasciato diversi ActivityDesigner nell'area di disegno Progettazione flussi di lavoro, il <xref:System.Activities.Activity> possono essere collegati gli oggetti che rappresentano per specificare l'ordine di esecuzione. Per creare un collegamento tra un'attività di origine e un'attività di destinazione, spostare il mouse sulla finestra di progettazione dell'attività di origine in modo da visualizzare handle quadrati su ciascun lato. Fare clic su uno degli handle quadrati e, tenendo premuto il pulsante del mouse, trascinarlo su uno degli handle visualizzati in modo simile intorno all'attività di destinazione durante il passaggio del mouse. Dopo aver rilasciato il pulsante del mouse, verrà creato un collegamento tra queste due attività rappresentato da una freccia che collega la finestra di progettazione di origine a quella di destinazione.
+Dopo aver rilasciato diversi ActivityDesigner nell'area di disegno, finestra di progettazione del flusso di lavoro di <xref:System.Activities.Activity> possono essere collegati gli oggetti che rappresentano per specificare l'ordine di esecuzione. Per creare un collegamento tra un'attività di origine e un'attività di destinazione, spostare il mouse sulla finestra di progettazione dell'attività di origine in modo da visualizzare handle quadrati su ciascun lato. Fare clic su uno degli handle quadrati e, tenendo premuto il pulsante del mouse, trascinarlo su uno degli handle visualizzati in modo simile intorno all'attività di destinazione durante il passaggio del mouse. Dopo aver rilasciato il pulsante del mouse, verrà creato un collegamento tra queste due attività rappresentato da una freccia che collega la finestra di progettazione di origine a quella di destinazione.
 
 ### <a name="flowchart-activity-properties"></a>Proprietà dell'attività Flowchart
 

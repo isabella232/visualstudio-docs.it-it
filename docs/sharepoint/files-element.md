@@ -1,5 +1,5 @@
 ---
-title: Elemento file | Documenti Microsoft
+title: Elemento di file | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766906"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327294"
 ---
 # <a name="files-element"></a>Files (elemento)
-  Specifica i file da distribuire con l'elemento del progetto SharePoint, ad esempio i file di elemento di funzionalità e l'output dei progetti SharePoint dipendenti.  
+  Specifica i file da distribuire con l'elemento del progetto SharePoint, ad esempio i file di elemento di funzionalità e l'output dei progetti di SharePoint non dipendente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,25 +47,25 @@ ms.locfileid: "34766906"
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Parametro facoltativo **ProjectItemFileType** elemento.<br /><br /> Rappresenta un file di SharePoint, ad esempio file di elemento di funzionalità, per includere l'elemento di progetto quando viene distribuito in SharePoint.|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Parametro facoltativo **ProjectOutputFileType** elemento.<br /><br /> Rappresenta l'output di un progetto da includere nell'elemento di progetto quando viene distribuito in SharePoint.|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Facoltativo **ProjectItemFileType** elemento.<br /><br /> Rappresenta un file di SharePoint, ad esempio file di elemento di funzionalità, da includere con l'elemento del progetto quando viene distribuito in SharePoint.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Facoltativo **ProjectOutputFileType** elemento.<br /><br /> Rappresenta l'output di un progetto da includere con l'elemento del progetto quando viene distribuito in SharePoint.|  
   
 ### <a name="parent-elements"></a>Elementi padre
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento di progetto SharePoint. Questo elemento di elemento radice obbligatorio del `.spdata` file.|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento del progetto SharePoint. Questo elemento l'elemento radice obbligatorio del `.spdata` file.|  
   
 ## <a name="element-information"></a>Informazioni sull'elemento
   
 |||  
 |-|-|  
 |**Spazio dei nomi**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nome dello schema**|Schema di elemento di progetto SharePoint|  
+|**Nome dello schema**|Schema degli elementi di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  
   
 ## <a name="see-also"></a>Vedere anche
- [Riferimento allo schema degli elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

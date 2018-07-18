@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di elementi di posta elettronica | Documenti Microsoft
+title: Usare gli elementi di posta elettronica
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,30 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6eef48686332231d08397780b481f6770bdad0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 722f89a2fea0c5533106b010a08ed9f862ac02e8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258311"
 ---
-# <a name="working-with-mail-items"></a>Utilizzo degli elementi di posta
-  La <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contiene i metodi e le proprietà utilizzati per eseguire attività con messaggi di posta elettronica.  
+# <a name="work-with-mail-items"></a>Usare gli elementi di posta elettronica
+  Il <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contiene i metodi e le proprietà usati per eseguire attività con messaggi di posta elettronica.  
   
 |Attività|Routine|  
 |----------|---------------|  
-|Creare un messaggio di posta elettronica.|[Procedura: Creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Invio di un messaggio di posta elettronica|[Procedura: Inviare messaggi di posta elettronica a livello di codice](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
-|Rispondere a nuovi messaggi di posta elettronica con un'azione personalizzata.|[Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
-|Salvare gli allegati.|[Procedura: Salvare allegati da elementi di posta elettronica di Outlook a livello di codice](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
-|Aggiungere gli allegati|[Procedura: Allegare file a elementi di posta elettronica di Outlook a livello di codice](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
-|Scorrere tutti i messaggi non letti.|[Procedura: Recuperare messaggi non letti dalla Posta in arrivo a livello di codice](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
+|Creare un messaggio di posta elettronica.|[Procedura: creare a livello di programmazione un elemento di posta elettronica](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
+|Invio di un messaggio di posta elettronica|[Procedura: programmare l'invio di posta elettronica](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Rispondere a nuovi messaggi di posta elettronica con un'azione personalizzata.|[Procedura: eseguire a livello di codice azioni quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
+|Salva gli allegati.|[Procedura: a livello di codice salva gli allegati da elementi di posta elettronica di Outlook](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
+|Aggiungere allegati|[Procedura: a livello di programmazione allegare file agli elementi di posta elettronica di Outlook](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
+|Scorrere tutti i messaggi non letti.|[Procedura: recuperare a livello di programmazione di messaggi non letti dalla posta in arrivo](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
   
- Per altre informazioni sulle attività e il modello a oggetti di Outlook, vedere [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md).  
+ Per altre informazioni sulle attività di Outlook e il modello a oggetti, vedere [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo dei contatti](../vsto/working-with-contact-items.md)   
- [Utilizzo delle cartelle](../vsto/working-with-folders.md)   
- [Uso degli elementi di calendario](../vsto/working-with-calendar-items.md)   
+ [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)   
+ [Con le cartelle di lavoro](../vsto/working-with-folders.md)   
+ [Lavorare con gli elementi del calendario](../vsto/working-with-calendar-items.md)   
  [Soluzioni Outlook](../vsto/outlook-solutions.md)  
   
   

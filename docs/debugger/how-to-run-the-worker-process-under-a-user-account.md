@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: eseguire il processo di lavoro con un Account utente | Documenti Microsoft'
+title: 'Procedura: eseguire il processo di lavoro con un Account utente | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475754"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057187"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.  
 
  > [!IMPORTANT]
- > A partire da Windows Server 2008 R2, è consigliabile utilizzare il [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
+ > A partire da Windows Server 2008 R2, è consigliabile usare la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
   
 ## <a name="procedure"></a>Routine  
   
@@ -40,7 +40,7 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
   
 1.  Aprire il file machine.config, che si trova sul computer nella cartella CONFIG, nel percorso in cui è stato installato l'ambiente runtime.  
   
-2.  Trovare il &lt;processModel&gt; sezione e modificare gli attributi utente e password specificando il nome e la password dell'account utente si desidera eseguire aspnet_wp.exe.  
+2.  Trovare il &lt;processModel&gt; sezione e modificare gli attributi utente e password per il nome e la password dell'account utente si vuole aspnet_wp.exe venga eseguito con.  
   
 3.  Salvare il file machine.config.  
   
@@ -58,17 +58,17 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
   
 5.  Aprire un prompt dei comandi di Windows e reimpostare il server eseguendo:  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     oppure  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  
   
-6.  Individuare la cartella dei file temporanei di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], che dovrebbe trovarsi nello stesso percorso della cartella CONFIG. Fare doppio clic su temporanea [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] cartella dei file e scegliere **proprietà** nel menu di scelta rapida.  
+6.  Individuare la cartella dei file temporanei di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], che dovrebbe trovarsi nello stesso percorso della cartella CONFIG. Fare doppio clic su oggetto temporaneo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] cartella dei file e scegliere **proprietà** menu di scelta rapida.  
   
 7.  Nella finestra di dialogo **Proprietà file ASP.NET temporanei** scegliere la scheda **Sicurezza** .  
   

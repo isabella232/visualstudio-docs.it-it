@@ -1,6 +1,6 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: aggiungere un nuovo elemento a un progetto flusso di lavoro'
-ms.date: 11/04/2016
+title: 'Finestra di progettazione del flusso di lavoro - procedura: aggiungere un nuovo elemento a un progetto di flusso di lavoro'
+ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
@@ -10,40 +10,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f1202c87986eab6af899a3d4c3b7a5f62e5af6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971644"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757679"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procedura: aggiungere un nuovo elemento ad un progetto flusso di lavoro
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procedura: aggiungere un nuovo elemento a un progetto di flusso di lavoro
 
-Dopo aver creato un progetto flusso di lavoro, è possibile aggiungere le attività del flusso di lavoro, finestre di progettazione e altri elementi di Visual Studio comuni al progetto.
+Dopo aver creato un progetto di flusso di lavoro, è possibile aggiungere attività del flusso di lavoro, finestre di progettazione e altri elementi di Visual Studio comuni al progetto.
 
-Nella tabella seguente vengono elencati gli elementi di Windows Workflow Foundation (WF) che è possibile aggiungere a un progetto flusso di lavoro.
+La tabella seguente elenca gli elementi Windows Workflow Foundation (WF) che è possibile aggiungere a un progetto di flusso di lavoro:
 
 |nome|Descrizione|
 |----------|-----------------|
-|Attività|Attività che deve essere composta da altre attività. Selezionando questo elemento viene aggiunto lo stesso file XAML al progetto ottenuti quando si seleziona il **libreria attività** modello per un nuovo progetto. Per ulteriori informazioni su questa procedura, vedere [procedura: creare una libreria attività](../workflow-designer/how-to-create-an-activity-library.md).|
-|ActivityDesigner|Finestra di progettazione per personalizzare l'esperienza di progettazione di un'attività. Selezionando questo elemento consente di aggiungere gli stessi file al progetto ottenuti quando si seleziona il **libreria ActivityDesigner** modello per un nuovo progetto. Per ulteriori informazioni su questa procedura, vedere [procedura: creare una libreria ActivityDesigner](../workflow-designer/how-to-create-an-activity-designer-library.md).|
+|Attività|Attività che deve essere composta da altre attività. Selezionando questo elemento vengono aggiunti nello stesso file XAML al progetto ottenuti quando si seleziona il **libreria di attività** modello per un nuovo progetto. Per altre informazioni su questa procedura, vedere [procedura: creare una libreria attività](../workflow-designer/how-to-create-an-activity-library.md).|
+|ActivityDesigner|Finestra di progettazione per personalizzare l'esperienza di progettazione di un'attività. Selezionando questo elemento vengono aggiunti gli stessi file al progetto ottenuto quando si seleziona il **libreria ActivityDesigner** modello per un nuovo progetto. Per altre informazioni su questa procedura, vedere [procedura: creare una libreria ActivityDesigner](../workflow-designer/how-to-create-an-activity-designer-library.md).|
 |Attività Code|Attività con la logica di esecuzione scritta nel codice. Un file di codice sorgente con un override del metodo <xref:System.Activities.CodeActivity.Execute%2A> è già generato automaticamente.|
-|Servizio flusso di lavoro WCF|Servizio [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilato usando le attività del flusso di lavoro. Selezionando questo elemento consente di aggiungere gli stessi file al progetto ottenuti quando si seleziona il **applicazione del servizio del flusso di lavoro WCF** modello per un nuovo progetto. Per ulteriori informazioni su questa procedura, vedere [procedura: creare un'applicazione di servizio del flusso di lavoro WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
+|Servizio flusso di lavoro WCF|Servizio [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilato usando le attività del flusso di lavoro. Selezionando questo elemento vengono aggiunti gli stessi file al progetto ottenuto quando si seleziona il **applicazione del servizio del flusso di lavoro WCF** modello per un nuovo progetto. Per altre informazioni su questa procedura, vedere [procedura: creare un'applicazione di servizio del flusso di lavoro WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Per aggiungere un nuovo elemento a un progetto flusso di lavoro
 
-1.  Nel **progetto** menu, fare clic su **Aggiungi nuovo elemento...** .
+1. Nel **Project** dal menu **Aggiungi nuovo elemento**.
 
-     Il **aggiungere un nuovo elemento** verrà visualizzata la finestra di dialogo.
+   Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2.  Nel **modelli installati** riquadro, selezionare **flusso di lavoro** gruppo.
+1. Nel riquadro di sinistra, selezionare la **flusso di lavoro** categoria e quindi selezionare un modello di elemento del flusso di lavoro.
 
-3.  Selezionare uno dei quattro elementi. Nella tabella precedente sono elencate le selezioni disponibili.
+   > [!NOTE]
+   > Se non viene visualizzato il **flusso di lavoro** category, installare prima il **Windows Workflow Foundation** componente di Visual Studio 2017. Per istruzioni dettagliate, vedere [installazione di Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-4.  Digitare un nome appropriato per la voce di **nome** nella parte inferiore della finestra di dialogo.
+1. Immettere un nome per l'elemento nel **nome** nella parte inferiore della finestra di dialogo.
 
-5.  Fare clic su **Aggiungi** ad aggiungere l'elemento al progetto flusso di lavoro corrente.
+1. Selezionare **Add** per aggiungere l'elemento al progetto.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)
+- [Creare un progetto di flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)

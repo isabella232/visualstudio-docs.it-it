@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: eseguire a livello di programmazione azioni quando viene ricevuto un messaggio di posta elettronica | Documenti Microsoft'
+title: 'Procedura: eseguire a livello di codice azioni quando viene ricevuto un messaggio di posta elettronica'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b9936d1d3e1ffd3b4ec04af6719d0699000f8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb3ab28a70904d7f7bedbf126dc5fcdce77f176a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257387"
 ---
-# <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>Procedura: Eseguire azioni quando viene ricevuto un messaggio di posta elettronica a livello di codice
-  Questo esempio esegue azioni personalizzate quando l'utente riceve un messaggio di posta elettronica.  
+# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Procedura: eseguire a livello di codice azioni quando viene ricevuto un messaggio di posta elettronica
+  In questo esempio esegue le azioni personalizzate quando l'utente riceve un messaggio di posta elettronica.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: creare gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md)   
- [Utilizzo di elementi di posta elettronica](../vsto/working-with-mail-items.md)   
- [Introduzione alla programmazione dei componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)   
+ [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

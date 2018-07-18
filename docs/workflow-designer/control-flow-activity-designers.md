@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner flusso di controllo
+title: Finestra di progettazione del flusso di lavoro - Activity Designer Control Flow
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea0806b1abc4febbdcf89c59025452c5879addb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e525d2529ce47059025e76dbefaeec1eb15ef81
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967400"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758394"
 ---
 # <a name="control-flow-activity-designers"></a>ActivityDesigner Flusso di controllo
 
-Progettazione del flusso di lavoro di Windows include una serie di attività fornite dal sistema che è possibile utilizzare durante la costruzione di flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
+Finestra di progettazione del flusso di lavoro include numerose attività fornite dal sistema che è possibile usare durante la costruzione dei flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per controllare il flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
 
 ## <a name="reference"></a>Riferimenti
 

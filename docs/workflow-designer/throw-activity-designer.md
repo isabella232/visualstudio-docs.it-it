@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner Throw
+title: Finestra di progettazione del flusso di lavoro, ActivityDesigner Throw
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bb94ad17b78b1264129b8a5ba00a964edbd2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71cf547a1ea3599de8926e40ca5a43f3bdea0f71
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974656"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758321"
 ---
 # <a name="throw-activity-designer"></a>ActivityDesigner Throw
 
-Il **generare** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Throw> attività.
+Il **Throw** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Throw> attività.
 
 ## <a name="the-throw-activity"></a>Attività Throw
- L'attività <xref:System.Activities.Statements.Throw> genera un'eccezione.
+
+L'attività <xref:System.Activities.Statements.Throw> genera un'eccezione.
 
 ### <a name="using-the-throw-activity-designer"></a>Utilizzo dell'ActivityDesigner Throw
- Il **Throw** ActivityDesigner è reperibile nella **Error Handling** categoria del **casella degli strumenti**, accessibile facendo clic il **della casella degli strumenti**scheda sul lato sinistro della finestra di progettazione del flusso di lavoro (in alternativa, selezionare **sulla barra degli strumenti** dal **vista** menu oppure premere CTRL + ALT + X.)
 
- Il **Throw** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione flussi di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Crea un <xref:System.Activities.Statements.Throw> attività con valore predefinito è **DisplayName** throw. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **generare** ActivityDesigner o nel **DisplayName** casella della griglia delle proprietà. La proprietà <xref:System.Activities.Statements.Throw.Exception%2A> deve essere modificata nella griglia delle proprietà.
+Accesso di **Throw** ActivityDesigner nel **Error Handling** categoria del **della casella degli strumenti**.
+
+Il **Throw** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Ciò consente di creare un <xref:System.Activities.Statements.Throw> attività con un valore predefinito **DisplayName** throw. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **Throw** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà. La proprietà <xref:System.Activities.Statements.Throw.Exception%2A> deve essere modificata nella griglia delle proprietà.
 
 ### <a name="the-throw-properties"></a>Proprietà di Throw
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
+
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-------------------|--------------|-----------|
@@ -42,6 +45,6 @@ Il **generare** ActivityDesigner viene utilizzato per creare e configurare un <x
 ## <a name="see-also"></a>Vedere anche
 
 - [Raccolta](../workflow-designer/collection-activity-designers.md)
-- [rethrow](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Activity Designer Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

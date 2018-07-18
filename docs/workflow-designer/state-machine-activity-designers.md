@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner macchina a stati
+title: Finestra di progettazione del flusso di lavoro - Activity Designer State Machine
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972363"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755509"
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 
-Progettazione del flusso di lavoro di Windows include una serie di finestre di progettazione di attività che è possibile utilizzare durante la costruzione di flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
+Finestra di progettazione del flusso di lavoro include una serie di ActivityDesigner che è possibile usare durante la costruzione dei flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
 
 ## <a name="reference"></a>Riferimenti
  <xref:System.Activities.Statements.StateMachine>

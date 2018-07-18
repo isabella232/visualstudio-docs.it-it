@@ -1,5 +1,5 @@
 ---
-title: Procedure dettagliate con Word | Documenti Microsoft
+title: Procedure dettagliate con Word
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,63 +16,64 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ce56d696cbab963f39b876027e27e8b1254a9a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8baedac87ae0f740c9413d4cdba2f07aa0d978a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258327"
 ---
 # <a name="walkthroughs-using-word"></a>Procedure dettagliate con Word
   Le procedure dettagliate seguenti mostrano come usare le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per automatizzare Microsoft Office Word e personalizzare l'interfaccia utente.  
   
 ## <a name="document-level-walkthroughs"></a>Procedure dettagliate a livello di documento  
- [Procedura dettagliata: creazione della prima personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+ [Procedura dettagliata: Creare una personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
  Illustra come creare una personalizzazione di base a livello di documento per Word.  
   
- [Procedura dettagliata: inserimento di testo in un documento da un riquadro Azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Illustra come aggiungere testo a un documento Word quando gli utenti immettono testo nei controlli in un riquadro delle azioni.  
   
- [Procedura dettagliata: associazione di dati a controlli in un riquadro Azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
+ [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Illustra come associare i dati ai controlli in un riquadro delle azioni. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.  
   
- [Procedura dettagliata: modifica della formattazione dei documenti mediante i controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
+ [Procedura dettagliata: Modifica la formattazione dei documenti mediante controlli CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
  Illustra come usare le caselle di controllo in un documento Word per modificare la formattazione.  
   
- [Procedura dettagliata: visualizzazione di testo in una casella di testo di un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
+ [Procedura dettagliata: Visualizzazione di testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
  Illustra come usare i pulsanti e le caselle di testo nei documenti Word.  
   
- [Procedura dettagliata: aggiornamento di un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
+ [Procedura dettagliata: Aggiornamento di un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
  Illustra come modificare gli stili del grafico in un documento Word usando i pulsanti di opzione in una personalizzazione a livello di documento.  
   
- [Procedura dettagliata: creazione di menu di scelta rapida per segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
+ [Procedura dettagliata: Creare menu di scelta rapida per segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
  Illustra come creare un menu di scelta rapida da usare per formattare il testo in un segnalibro.  
   
- [Procedura dettagliata: chiamata di codice da VBA in un progetto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
+ [Procedura dettagliata: Chiamata di codice da VBA in un progetto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
  Illustra come chiamare il codice in un assembly di personalizzazione dal codice VBA nel documento.  
   
- [Procedura dettagliata: creazione di un modello mediante i controlli del contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)  
+ [Procedura dettagliata: Creare un modello mediante controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)  
  Illustra come usare i controlli contenuto per creare contenuti strutturati e riutilizzabili in un modello di Word.  
   
- [Procedura dettagliata: associazione dei controlli del contenuto a Web part XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [Procedura dettagliata: Associare controlli contenuto a parti XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  Illustra come associare i controlli contenuto in un documento Word ai dati XML archiviati nel documento.  
   
 ## <a name="application-level-walkthroughs"></a>Procedure dettagliate a livello di applicazione  
- [Procedura dettagliata: creazione del primo componente aggiuntivo VSTO per Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+ [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
  Illustra come creare un componente aggiuntivo VSTO di base per Word.  
   
- [Procedura dettagliata: aggiunta di controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
+ [Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
  Illustra come aggiungere controlli a un documento mediante un componente aggiuntivo VSTO.  
   
- [Procedura dettagliata: creazione di una scheda personalizzata mediante l'XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [Procedura dettagliata: Creare una scheda personalizzata utilizzando XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
  Illustra come creare una scheda della barra multifunzione usando un file descrittore XML in un componente aggiuntivo VSTO.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)   
  [Dati nelle procedure dettagliate di soluzioni Office](../vsto/data-in-office-solutions-walkthroughs.md)   
  [Procedure dettagliate di personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization-walkthroughs.md)   
- [Sicurezza e procedure dettagliate sulla distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
+ [Procedure dettagliate di sicurezza e distribuzione](../vsto/security-and-deployment-walkthroughs.md)   
  [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
+ [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word | Documenti Microsoft'
+title: 'Procedura: aggiungere a livello di codice di testo e formattazione alle celle delle tabelle di Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7d50a5531bdb4e073c2760ae6d4e746b4970af6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7fff8451c469e58d7c23ab6bd3366db2fa10d59
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256344"
 ---
-# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice
+# <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Procedura: aggiungere a livello di codice di testo e formattazione alle celle delle tabelle di Word
   Ogni tabella è costituita da una raccolta di celle. Ogni singolo oggetto <xref:Microsoft.Office.Interop.Word.Cell> rappresenta una cella della tabella. Le singole celle vengono individuate tramite la relativa posizione nella tabella. Questo esempio si riferisce alla cella che si trova nella prima riga e nella prima colonna della tabella. Viene aggiunto un testo alla cella e viene applicata la formattazione.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-add-text-and-formatting-to-cells"></a>Per aggiungere testo e formattazione alle celle  
+## <a name="to-add-text-and-formatting-to-cells"></a>Per aggiungere testo e formattazione alle celle  
   
 1.  Fare riferimento alla cella tramite la relativa posizione nella tabella, aggiungere testo alla cella e applicare la formattazione.  
   
@@ -44,8 +45,8 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#97](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#97)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: creare tabelle di Word](../vsto/how-to-programmatically-create-word-tables.md)   
- [Procedura: aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Procedura: Popolare tabelle di Word con le proprietà documento a livello di codice](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+ [Procedura: creazione di tabelle di Word a livello di codice](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Procedura: a livello di codice aggiungere righe e colonne alle tabelle di Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Procedura: a livello di codice compilare tabelle di Word con le proprietà documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

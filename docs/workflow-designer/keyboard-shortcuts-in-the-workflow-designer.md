@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - tasti di scelta rapida nella finestra di progettazione del flusso di lavoro
+title: Finestra di progettazione del flusso di lavoro - scelte rapide da tastiera nella finestra di progettazione del flusso di lavoro
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977644"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756594"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
-Tutte le funzionalità principali di progettazione del flusso di lavoro di Windows è possibile accedere dalla tastiera.
+Tutte le funzionalità principali della finestra di progettazione del flusso di lavoro è accessibile dalla tastiera.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navigazione in Progettazione flussi di lavoro mediante la tastiera
 
-All'interno di Visual Studio 2010, i collegamenti globali e collegamenti di debug si applicano alla finestra di progettazione del flusso di lavoro. Inoltre, un numero di scelte rapide da tastiera specifiche di progettazione flussi di lavoro creato. In Visual Studio 2010, tutti i tasti di scelta rapida possono essere rimappati. In un'applicazione riallocata, tuttavia, i tasti di scelta rapida sono hardcoded.
+All'interno di Visual Studio, i collegamenti globali e collegamenti di debug si applicano alla finestra di progettazione del flusso di lavoro. Inoltre, un numero di scelte rapide da tastiera specifiche di progettazione del flusso di lavoro è stato creato. In Visual Studio, tutti i tasti di scelta rapida possono essere rimappati. In un'applicazione riallocata, tuttavia, i tasti di scelta rapida sono hardcoded.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
-Nella tabella seguente sono riepilogate predefinito tasti di scelta rapida assegnati ai comandi di progettazione flussi di lavoro.
+Nella tabella seguente sono riepilogati i tasti di scelta assegnati ai comandi di progettazione del flusso di lavoro.
 
 |Collegamento|Scopo|
 |--------------|-------------|
@@ -49,13 +49,13 @@ Nella tabella seguente sono riepilogate predefinito tasti di scelta rapida asseg
 
 ### <a name="flowchart"></a>Diagramma di flusso
 
-Nell'elenco seguente vengono presentate le operazioni necessarie per costruire un diagramma di flusso dalla tastiera. Come nella parte rimanente della finestra di progettazione del flusso di lavoro, le attività vengono aggiunte all'area di progettazione usando i tasti di scelta rapida globali della casella degli strumenti forniti con Visual Studio 2010.
+Nell'elenco seguente vengono presentate le operazioni necessarie per costruire un diagramma di flusso dalla tastiera. Come nella parte rimanente della finestra di progettazione del flusso di lavoro, le attività vengono aggiunte all'area di progettazione usando i tasti di scelta rapida globale della casella degli strumenti forniti con Visual Studio.
 
 - Per spostare un'attività, selezionarla e riposizionarla usando i tasti di direzione.
 
 - Per ridimensionare un diagramma di flusso, spostare un'attività oltre il bordo corrente del diagramma di flusso usando i tasti di direzione. Il diagramma di flusso viene ridimensionato automaticamente.
 
-- Per impostare un'attività come nodo iniziale, utilizzare il **imposta come StartNode** comando nel menu di scelta rapida.
+- Per impostare un'attività come nodo iniziale, usare il **imposta come StartNode** comando nel menu di scelta rapida.
 
 - Per connettere le attività:
 
@@ -73,11 +73,11 @@ Note sulla connessione delle attività dalla tastiera:
 
 - Se una coppia di attività non può essere connessa, ad esempio se per l'attività di origine è già presente una connessione in uscita, le altre connessioni tra le attività della selezione vengono comunque create quando possibile.
 
-- Quando un **FlowDecision** è incluso nella selezione e **FlowDecision** non ha connettori in uscita, il connettore viene posizionato sul **True** ramo.
+- Quando un **FlowDecision** è incluso nella selezione e il **FlowDecision** non dispone di alcun connettori in uscita, il connettore viene posizionato sul **True** ramo.
 
 ### <a name="expression-editing"></a>Modifica dell'espressione
 
-Per impostazione predefinita, predefinita tasti di scelta rapida per la modifica del testo di Visual Basic si applicano all'interno dell'editor di espressioni nella finestra di progettazione del flusso di lavoro con le limitazioni seguenti:
+Per impostazione predefinita, i tasti predefinite per la modifica del testo di Visual Basic si applicano nell'editor di espressioni nella finestra di progettazione del flusso di lavoro con le limitazioni seguenti:
 
 - La modifica del mapping dei tasti di scelta rapida per i comandi seguenti non ha effetto. In caso di modifica di un'espressione, è possibile accedere a questi comandi solo mediante i tasti di scelta rapida predefiniti.
 
@@ -88,4 +88,4 @@ Per impostazione predefinita, predefinita tasti di scelta rapida per la modifica
    - Annulla
    - Ripristina
 
-- Per modificare il mapping di tasti di scelta rapida per i comandi di modifica espressione all'interno di progettazione del flusso di lavoro in Visual Studio 2010, modificare i collegamenti nell'ambito di progettazione flussi di lavoro. Le modifiche apportate nell'ambito dell'Editor di testo non si applicano automaticamente alla finestra di progettazione del flusso di lavoro. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.
+- Per rimappare i tasti di scelta rapida per i comandi di modifica espressione all'interno di progettazione del flusso di lavoro in Visual Studio, modificare i collegamenti nell'ambito di progettazione del flusso di lavoro. Le modifiche apportate nell'Editor di testo ambito non si applicano automaticamente alla finestra di progettazione del flusso di lavoro. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere un nodo personalizzato di SharePoint a Esplora Server | Documenti Microsoft'
+title: 'Procedura: aggiungere un nodo personalizzato di SharePoint a Esplora Server | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 878a2c76bbc57983791b65b73c8e0580dbfa3cfd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: bb0ba7f09ae564a794792ad6f7a60f53f6f6422e
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767491"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755641"
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedura: aggiungere un nodo SharePoint personalizzato a Esplora Server
-  È possibile aggiungere nodi personalizzati sotto il **connessioni di SharePoint** nodo **Esplora Server**. Ciò è utile quando si desidera visualizzare i componenti aggiuntivi di SharePoint che non vengono visualizzati in **Esplora Server** per impostazione predefinita. Per ulteriori informazioni, vedere [estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedura: aggiungere un nodo personalizzato di SharePoint a Esplora Server
+  È possibile aggiungere i nodi personalizzati sotto il **connessioni di SharePoint** nodo **Esplora Server**. Ciò è utile quando si desidera visualizzare i componenti aggiuntivi di SharePoint che non vengono visualizzati nella **Esplora Server** per impostazione predefinita. Per altre informazioni, vedere [estendere del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
- Per aggiungere un nodo personalizzato, creare innanzitutto una classe che definisce il nuovo nodo. Quindi creare un'estensione che aggiunge il nodo come figlio di un nodo esistente.  
+ Per aggiungere un nodo personalizzato, creare innanzitutto una classe che definisce il nuovo nodo. Creare quindi un'estensione che aggiunge il nodo come elemento figlio di un nodo esistente.  
   
 ### <a name="to-define-the-new-node"></a>Per definire il nuovo nodo  
   
@@ -44,50 +44,50 @@ ms.locfileid: "34767491"
   
 3.  Creare una classe che implementi l'interfaccia <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>.  
   
-4.  Alla classe, aggiungere gli attributi seguenti:  
+4.  Aggiungere gli attributi seguenti alla classe:  
   
     -   <xref:System.ComponentModel.Composition.ExportAttribute>. Questo attributo consente a Visual Studio di individuare e caricare il <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> implementazione. Passare il <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> tipo al costruttore dell'attributo.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. Nella definizione di un nodo, questo attributo specifica l'identificatore di stringa per il nuovo nodo. È consigliabile utilizzare il formato *nome società*. *nome del nodo* per assicurarsi che tutti i nodi di abbiano un identificatore univoco.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. In una definizione del nodo, questo attributo specifica l'identificatore di stringa per il nuovo nodo. Si consiglia di utilizzare il formato *nome società*. *nome del nodo* per assicurarsi che tutti i nodi hanno un identificatore univoco.  
   
-5.  Nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> metodo, utilizzare i membri del *typeDefinition* parametro per configurare il comportamento del nuovo nodo. Questo parametro è un <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> oggetto che fornisce accesso agli eventi definiti nel <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interfaccia.  
+5.  Nell'implementazione del metodo di <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> metodo, utilizzare i membri del *typeDefinition* parametro per configurare il comportamento del nuovo nodo. Questo parametro è un <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> oggetto che fornisce accesso agli eventi definiti nel <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interfaccia.  
   
-     Esempio di codice riportato di seguito viene illustrato come definire un nuovo nodo. Questo esempio si presuppone che il progetto contiene un'icona denominata CustomChildNodeIcon come risorsa incorporata.  
+     Esempio di codice seguente viene illustrato come definire un nuovo nodo. Questo esempio si presuppone che il progetto contiene un'icona denominata CustomChildNodeIcon come risorsa incorporata.  
   
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]  
   
-### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>Per aggiungere il nuovo nodo come figlio di un nodo esistente  
+### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>Per aggiungere il nuovo nodo come elemento figlio di un nodo esistente  
   
 1.  Nello stesso progetto della definizione del nodo, creare una classe che implementa il <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interfaccia.  
   
 2.  Aggiungere il <xref:System.ComponentModel.Composition.ExportAttribute> attributo alla classe. Questo attributo consente a Visual Studio di individuare e caricare il <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementazione. Passare il <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> tipo al costruttore dell'attributo.  
   
-3.  Aggiungere il <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> attributo alla classe. In un'estensione del nodo, questo attributo specifica l'identificatore di stringa per il tipo di nodo che si desidera estendere.  
+3.  Aggiungere il <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> attributo alla classe. In un'estensione di nodo, questo attributo specifica l'identificatore di stringa per il tipo di nodo che si vuole estendere.  
   
      Per specificare i tipi di nodo predefiniti forniti da Visual Studio, passare uno dei seguenti valori di enumerazione al costruttore dell'attributo:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Usa questi valori per specificare i nodi delle connessioni del sito (i nodi contenenti gli URL dei siti), i nodi dei siti o tutti gli altri nodi padre **Esplora Server**.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Usa questi valori per specificare i nodi di connessione del sito (i nodi che consentono di visualizzare gli URL dei siti), i nodi, o tutti gli altri nodi padre nel sito **Esplora Server**.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Utilizzare questi valori per specificare uno dei nodi incorporati che rappresentano un singolo componente in un sito di SharePoint, ad esempio un nodo che rappresenta un elenco, un campo o un tipo di contenuto.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Usare questi valori per specificare uno dei nodi predefiniti che rappresentano un singolo componente in un sito di SharePoint, ad esempio un nodo che rappresenta un elenco, un campo o un tipo di contenuto.  
   
-4.  Nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> (metodo), l'handle di <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> evento del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> parametro.  
+4.  Nell'implementazione del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> metodo, handle il <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> eventi del <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> parametro.  
   
-5.  Nel <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> gestore dell'evento, aggiungere il nuovo nodo alla raccolta di nodi figlio di <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> oggetto esposto dal parametro di argomenti dell'evento.  
+5.  Nel <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> gestore eventi, aggiungere il nuovo nodo alla raccolta di nodi figlio di <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> oggetto esposto dal parametro di argomenti dell'evento.  
   
-     Esempio di codice riportato di seguito viene illustrato come aggiungere il nuovo nodo come figlio del nodo di sito di SharePoint in **Esplora Server**.  
+     Esempio di codice seguente viene illustrato come aggiungere il nuovo nodo come elemento figlio del nodo del sito di SharePoint in **Esplora Server**.  
   
      [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
      [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]  
   
 ## <a name="complete-example"></a>Esempio completo
- Esempio di codice seguente fornisce il codice completo per definire un nodo semplice e aggiungerlo come elemento figlio del nodo di sito di SharePoint in **Esplora Server**.  
+ Esempio di codice seguente fornisce il codice completo per definire un nodo semplice e aggiungerlo come elemento figlio del nodo del sito di SharePoint in **Esplora Server**.  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]  
   
 ## <a name="compiling-the-code"></a>Compilazione del codice  
- Questo esempio si presuppone che il progetto contiene un'icona denominata CustomChildNodeIcon come risorsa incorporata. In questo esempio richiede riferimenti agli assembly seguenti:  
+ Questo esempio si presuppone che il progetto contiene un'icona denominata CustomChildNodeIcon come risorsa incorporata. In questo esempio sono inoltre richiesti riferimenti agli assembly seguenti:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
@@ -95,12 +95,12 @@ ms.locfileid: "34767491"
   
 -   System.Drawing  
   
-## <a name="deploying-the-extension"></a>Distribuzione dell'estensione  
- Per distribuire il **Esplora Server** estensione, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) per l'assembly e altri file che si desiderano distribuire con l'estensione del pacchetto. Per ulteriori informazioni, vedere [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploy-the-extension"></a>Distribuire l'estensione  
+ Per distribuire il **Esplora Server** estensione, creare un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) creare un pacchetto per l'assembly e qualsiasi altro file che si desidera distribuire con l'estensione. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vedere anche
  [Estensione del nodo Connessioni di SharePoint in Esplora Server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Procedura: estendere un nodo SharePoint in Esplora Server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Procedura dettagliata: estensione di Esplora server per visualizzare web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+ [Procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   
   

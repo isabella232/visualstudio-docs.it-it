@@ -1,6 +1,6 @@
 ---
 title: Suggerimenti e consigli nel Debugger di Visual Studio
-description: Informazioni sui suggerimenti relativi alla produttività per il debugger di Visual Studio
+description: Informazioni su alcune delle funzionalità meno conosciute supportata dal debugger di Visual Studio
 ms.custom: ''
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
@@ -15,63 +15,63 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4fb2c32f74a764e092e0e6f65685a358d64f54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927282"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303081"
 ---
-# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni sui suggerimenti e consigli per il Debugger in Visual Studio
+# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni su consigli e suggerimenti relativi alla produttività per il Debugger di Visual Studio
 
-Leggere questo argomento per informazioni su alcuni suggerimenti e consigli per il debugger di Visual Studio. Per esaminare le funzionalità di base del debugger, vedere [Debugger funzionalità presentazione](../debugger/debugger-feature-tour.md). In questo argomento viene illustrata l'alcune aree che non sono incluse nella presentazione di funzionalità.
+Leggere questo argomento per informazioni su alcuni suggerimenti per la produttività e consigli per il debugger di Visual Studio. Per esaminare le funzionalità di base del debugger, vedere [Debugger Feature Tour](../debugger/debugger-feature-tour.md). In questo argomento illustra alcune aree che non sono inclusi nella presentazione funzionalità.
 
 ## <a name="pin-data-tips"></a>Suggerimenti dati pin
 
-Se si passa spesso sui suggerimenti dati durante il debug, si desidera aggiungere il suggerimento dati per la variabile per disporre di accesso rapido. La variabile rimane bloccata anche dopo il riavvio. Per bloccare il suggerimento dati, fare clic sull'icona della puntina durante il passaggio del mouse su di esso. È possibile aggiungere più variabili.
+Se si passa spesso sui suggerimenti per i dati durante il debug, è possibile aggiungere il suggerimento dati per la variabile aumentare l'accesso rapido. La variabile rimane bloccata anche dopo il riavvio. Per bloccare il suggerimento dati, fare clic sull'icona della puntina al passaggio del mouse su di esso. È possibile aggiungere più variabili.
 
-![Aggiunta di un suggerimento dati](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+![L'aggiunta di un suggerimento dati](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modificare il codice e continuare il debug (in c#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modificare il codice e continuare il debug (c#, VB, C++)
 
-Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice all'interno di una sessione di debug e continuare il debug. Per utilizzare questa funzionalità, fare clic nel codice con il cursore durante la sospensione nel debugger, apportare modifiche e premere **F5**, **F10**, o **F11** per continuare il debug.
+Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice all'interno di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic nel codice con il cursore durante la pausa del debugger, apportare modifiche e premere **F5**, **F10**, o **F11** per continuare il debug.
 
-![Modifica e continuazione debug](../debugger/media/dbg-tips-edit-and-continue.gif "/EDITANDCONTINUE")
+![Modificare e continuare il debug](../debugger/media/dbg-tips-edit-and-continue.gif "/EDITANDCONTINUE")
 
-Per ulteriori informazioni sull'uso della funzionalità e limitazioni di funzionalità, vedere [modifica e continuazione](../debugger/edit-and-continue.md).
+Per altre informazioni sull'uso della funzionalità e sulle limitazioni di funzionalità, vedere [modifica e continuazione](../debugger/edit-and-continue.md).
 
-## <a name="debug-issues-that-are-hard-to-reproduce"></a>Debug dei problemi che sono difficili da riprodurre
+## <a name="debug-issues-that-are-hard-to-reproduce"></a>Il debug dei problemi che sono difficili da riprodurre
 
-Se risulta difficile o lunghi ricreare un determinato stato nell'applicazione, prendere in considerazione se consentono l'utilizzo di un punto di interruzione condizionale. È possibile utilizzare [punti di interruzione condizionali](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) e filtrare i punti di interruzione per evitare l'interruzione nel codice dell'app fino a quando l'app passa allo stato desiderato (ad esempio uno stato in cui una variabile è archiviati i dati non validi). È possibile impostare le condizioni tramite espressioni, filtri, conteggio e così via.
+Se è difficile o che richiedono molto tempo ricreare uno stato specifico nell'app, prendere in considerazione se consentono l'uso di un punto di interruzione condizionale. È possibile usare [punti di interruzione condizionali](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) e filtrare i punti di interruzione per evitare l'interruzione nel codice dell'app fino a quando l'app passa allo stato desiderato (ad esempio uno stato in cui una variabile è l'archiviazione dei dati non validi). È possibile impostare le condizioni tramite espressioni, filtri, conteggio e così via.
 
 #### <a name="to-create-a-conditional-breakpoint"></a>Per creare un punto di interruzione condizionale
 
-1. Fare doppio clic sull'icona di un punto di interruzione (sfera rossa) e scegliere **condizioni**.
+1. Fare doppio clic su un'icona di punto di interruzione (la palla di colore rosso) e scegliere **condizioni**.
 
 2. Nel **impostazioni punto di interruzione** finestra, digitare un'espressione.
 
     ![Punto di interruzione condizionale](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
-3. Se è interessati a un altro tipo di condizione, selezionare **filtro** anziché **espressione condizionale** nel **impostazioni punto di interruzione** la finestra di dialogo e quindi osservando la suggerimenti di filtro.
+3. Se è interessati a un altro tipo di condizione, selezionare **filtro** invece di **espressione condizionale** nel **impostazioni punto di interruzione** nella finestra di dialogo e quindi seguire le suggerimenti di filtro.
 
 ## <a name="change-the-execution-flow"></a>Modificare il flusso di esecuzione
 
-Con il debugger sospesa su una riga di codice, utilizzare il mouse per trascinare il puntatore freccia gialla a sinistra. Spostare il puntatore freccia gialla in un altro punto nel percorso di esecuzione di codice. E quindi utilizzare F5 o un comando del passaggio per continuare l'esecuzione dell'applicazione.
+Con il debugger sospeso su una riga di codice, utilizzare il mouse per trascinare il puntatore sulla freccia gialla a sinistra. Spostare il puntatore sulla freccia gialla in un altro punto nel percorso di esecuzione del codice. Per continuare a eseguire l'app è usare F5 o un comando di esecuzione.
 
 ![Spostare il puntatore di esecuzione](../debugger/media/dbg-tour-move-the-execution-pointer.gif "spostare il puntatore di esecuzione")
 
-Se si modifica il flusso di esecuzione, è possibile eseguire operazioni quali percorsi di esecuzione diverso codice di test o eseguire di nuovo codice senza dover riavviare il debugger.
+Se si modifica il flusso di esecuzione, è possibile eseguire operazioni come percorsi di esecuzione di codice diversi di test o eseguire di nuovo codice senza riavviare il debugger.
 
 > [!WARNING]
-> Spesso è necessario prestare attenzione con questa funzionalità, e viene visualizzato un avviso nella descrizione comando. È possibile visualizzare altri avvisi, troppo. Spostare il puntatore non è possibile ripristinare l'app in uno stato applicazione precedente.
+> Spesso è necessario prestare attenzione con questa funzionalità, e viene visualizzato un avviso nella descrizione comando. È possibile visualizzare altri avvisi, troppo. Spostare il puntatore del mouse non è possibile ripristinare l'app a uno stato precedente dell'applicazione.
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Tenere traccia di un oggetto out-of-scope (c#, Visual Basic)
 
-È facile visualizzare variabili tramite finestre del debugger, ad esempio il **espressioni di controllo** finestra. Tuttavia, quando una variabile esce dall'ambito nel **espressioni di controllo** finestra, è possibile notare che è inattivo. In alcuni scenari di app, il valore di una variabile può variare anche quando la variabile esula dall'ambito, e si desidera osservare come strettamente (ad esempio, una variabile venga raccolto nel garbage collector). È possibile monitorare la variabile tramite la creazione di un ID di oggetto nella **espressioni di controllo** finestra.
+È facile visualizzare le variabili usando finestre del debugger, ad esempio la **Watch** finestra. Tuttavia, quando una variabile esce dall'ambito nel **Watch** finestra, è possibile notare che è disattivato. In alcuni scenari di app, il valore di una variabile può cambiare anche quando la variabile esula dall'ambito, e si potrebbe voler guardala strettamente (ad esempio, una variabile venga sottoposto a garbage collection). È possibile monitorare la variabile tramite la creazione di un ID oggetto corrispondente nei **Watch** finestra.
 
 #### <a name="to-create-an-object-id"></a>Per creare un ID di oggetto
 
-1.  Impostare un punto di interruzione in prossimità di una variabile che si desidera tenere traccia.
+1.  Impostare un punto di interruzione in prossimità di una variabile che si vuole tenere traccia.
 
 2.  Avviare il debugger (**F5**) e interrompere nel punto di interruzione.
 
@@ -81,49 +81,49 @@ Se si modifica il flusso di esecuzione, è possibile eseguire operazioni quali p
   
 4.  Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Questa variabile è l'ID oggetto.
   
-5.  La variabile oggetto con ID di mouse e scegliere **Aggiungi espressione di controllo**.
+5.  Fare doppio clic la variabile dell'ID oggetto e scegli **Aggiungi espressione di controllo**.
 
-Per ulteriori informazioni, vedere [creare un ID oggetto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
+Per altre informazioni, vedere [creare un ID di oggetto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
 ## <a name="view-return-values-for-functions"></a>Visualizzare i valori restituiti per le funzioni
 
-Per visualizzare i valori restituiti per le funzioni, esaminare le funzioni che vengono visualizzati nel **Auto** finestra mentre eseguono le istruzioni del codice. Per visualizzare il valore restituito per una funzione, assicurarsi che la funzione di cui si è interessati è già stata eseguita (premere **F10** volte se sono arrestati sulla chiamata di funzione). Se la finestra viene chiusa, utilizzare **Debug > Windows > Auto** per aprire la **Auto** finestra.
+Per visualizzare i valori restituiti per le funzioni, esaminare le funzioni che vengono visualizzati nei **Auto** finestra mentre eseguono le istruzioni del codice. Per visualizzare il valore restituito per una funzione, assicurarsi che la funzione si è interessati è già stata eseguita (premere **F10** once se è attualmente interrotto alla chiamata di funzione). Se la finestra viene chiusa, usare **Debug > Windows > Auto** per aprire il **Auto** finestra.
 
 ![Finestra Auto](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-Inoltre, è possibile immettere funzioni il **immediato** consente di visualizzare i valori restituiti. (Aprirlo utilizzando **Debug > Windows > immediato**.)
+Inoltre, è possibile immettere le funzioni nel **Immediate** finestra per visualizzare i valori restituiti. (Aprirlo utilizzando **Debug > Windows > controllo immediato**.)
 
 ![Finestra di controllo immediato](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-È inoltre possibile utilizzare [pseudo variabili](../debugger/pseudovariables.md) nel **espressioni di controllo** e **immediato** finestra, ad esempio `$ReturnValue`.
+È anche possibile usare [pseudo variabili](../debugger/pseudovariables.md) nel **Watch** e **controllo immediato** finestra, ad esempio `$ReturnValue`.
 
-## <a name="string_visualizer"></a>Controllare le stringhe in un visualizzatore
+## <a name="string_visualizer"></a>Esaminare le stringhe in un visualizzatore
 
-Quando si utilizzano stringhe, può essere utile visualizzare l'intera stringa di formato. Per visualizzare un testo normale, la stringa JSON, XML o HTML, fare clic sull'icona di lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore") durante il passaggio del mouse su una variabile che contiene un valore stringa.
+Quando si usano le stringhe, può essere utile visualizzare l'intera stringa formattata. Per visualizzare un testo normale, una stringa XML, HTML o JSON, fare clic sull'icona della lente di ingrandimento ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icona Visualizzatore") al passaggio del mouse su una variabile che contiene un valore stringa.
 
 ![Aprire un visualizzatore di stringhe](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
-Un visualizzatore di stringhe consentono di verificare la disponibilità di una stringa in formato non corretto, a seconda del tipo di stringa. Ad esempio, un valore vuoto **valore** campo indica la stringa non è riconosciuta per il tipo del visualizzatore. Per ulteriori informazioni, vedere [dialogo Visualizzatore stringhe](../debugger/string-visualizer-dialog-box.md).
+Un visualizzatore di stringhe può aiutare a determinare se una stringa è in formato non corretto, a seconda del tipo stringa. Ad esempio, uno spazio vuoto **valore** campo indica la stringa non è riconosciuta per il tipo del visualizzatore. Per altre informazioni, vedere [dialogo Visualizzatore stringhe](../debugger/string-visualizer-dialog-box.md).
 
 ![Visualizzatore di stringhe JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Per alcuni altri tipi, ad esempio oggetti WPF visualizzati nelle finestre del debugger, è anche possibile aprire i visualizzatori.
+Per alcuni altri tipi, ad esempio gli oggetti WPF visualizzati nelle finestre del debugger, è anche possibile aprire i visualizzatori.
 
-## <a name="break-into-code-on-handled-exceptions"></a>Inserire un'interruzione nel codice di eccezioni gestite
+## <a name="break-into-code-on-handled-exceptions"></a>Inserire un'interruzione nel codice in corrispondenza di eccezioni gestite
 
-Il debugger interrompe nel codice su eccezioni non gestite. Eccezioni gestite, tuttavia, (ad esempio le eccezioni che si verificano all'interno di un `try/catch` blocco) può anche essere un'origine dei bug e si potrebbe voler conoscere quando si verificano. È possibile configurare il debugger per inserire un'interruzione nel codice per le eccezioni gestite tramite la configurazione di opzioni di **impostazioni eccezioni** la finestra di dialogo. Aprire questa finestra di dialogo scegliendo **Debug > Windows > Impostazioni eccezioni**.
+Il debugger si interrompe nel codice su eccezioni non gestite. Tuttavia, gestite le eccezioni (ad esempio le eccezioni che si verificano all'interno di un `try/catch` blocco) può anche essere fonte di bug e si potrebbe voler conoscere quando si verificano. È possibile configurare il debugger per inserire un'interruzione nel codice per le eccezioni gestite tramite la configurazione di opzioni nel **impostazioni eccezioni** nella finestra di dialogo. Aprire la finestra di dialogo scegliendo **Debug > Windows > Impostazioni eccezioni**.
 
-Il **impostazioni eccezioni** la finestra di dialogo consente di indicare al debugger di inserire un'interruzione nel codice per eccezioni specifiche. Nell'illustrazione seguente, il debugger si interrompe nel codice ogni volta che un `System.NullReferenceException` si verifica. Per ulteriori informazioni, vedere [la gestione delle eccezioni](../debugger/managing-exceptions-with-the-debugger.md).
+Il **impostazioni eccezioni** nella finestra di dialogo consente di indicare al debugger di inserire un'interruzione nel codice per eccezioni specifiche. Nell'illustrazione seguente, il debugger si interrompe nel codice ogni volta che un `System.NullReferenceException` si verifica. Per altre informazioni, vedere [la gestione delle eccezioni](../debugger/managing-exceptions-with-the-debugger.md).
 
-![Finestra di dialogo Impostazioni di eccezioni](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
+![Finestra di dialogo Impostazioni eccezioni](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
-## <a name="debug-deadlocks-and-race-conditions"></a>Eseguire il debug di race condition e deadlock
+## <a name="debug-deadlocks-and-race-conditions"></a>Eseguire il debug di deadlock e race condition
 
-Se è necessario eseguire il debug di tipi di problemi comuni per applicazioni multithreading, è spesso utile per visualizzare la posizione dei thread durante il debug. È possibile farlo con facilità utilizzando la **Mostra thread nell'origine** pulsante.
+Se è necessario eseguire il debug di tipi di problemi comuni per le app a thread multipli, è spesso utile per visualizzare la posizione dei thread durante il debug. È possibile farlo facilmente usando le **Mostra thread nell'origine** pulsante.
 
-#### <a name="to-show-threads-in-your-source-code"></a>Per mostrare i thread nel codice sorgente
+#### <a name="to-show-threads-in-your-source-code"></a>Per visualizzare i thread nel codice sorgente
 
-1.  Durante il debug, fare clic su di **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") nel **Debug** barra degli strumenti.
+1.  Durante il debug, fare clic sui **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") nel **Debug** sulla barra degli strumenti.
   
 2.  All'estrema sinistra della finestra, In questa riga, viene visualizzato un *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che due fili. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
 
@@ -131,40 +131,40 @@ Se è necessario eseguire il debug di tipi di problemi comuni per applicazioni m
   
 3.  Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati. in cui è indicato il nome e il numero ID di ciascun thread interrotto.
 
-    È inoltre possibile visualizzare il percorso del thread di [finestra Stack in parallelo](../debugger/get-started-debugging-multithreaded-apps.md).
+    È anche possibile visualizzare il percorso del thread dei [finestra Stack in parallelo](../debugger/get-started-debugging-multithreaded-apps.md).
 
-## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Esaminare i payload per servizi web e alle risorse di rete (UWP)
+## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Esaminare i payload dei servizi web e le risorse di rete (UWP)
 
-Nelle App UWP, è possibile analizzare le operazioni di rete eseguite utilizzando il `Windows.Web.Http` API. È possibile utilizzare questo strumento per eseguire il debug di servizi web e le risorse di rete. Per utilizzare lo strumento, selezionare **Debug > Profiler delle prestazioni**. Selezionare **rete**, quindi scegliere **avviare**. Nell'applicazione seguire lo scenario che usa `Windows.Web.Http` e quindi scegliere **Arresta raccolta** per generare il report.
+Nelle App UWP, è possibile analizzare le operazioni di rete eseguite con la `Windows.Web.Http` API. È possibile utilizzare questo strumento per facilitare il debug dei servizi web e le risorse di rete. Per usare lo strumento, selezionare **Debug > Profiler prestazioni**. Selezionare **Network**, quindi scegliere **avviare**. Nell'applicazione seguire lo scenario che usa `Windows.Web.Http` e quindi scegliere **Arresta raccolta** per generare il report.
 
-![Utilizzo dello strumento di profilatura di rete](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
+![Utilizzo dello strumento di profilatura della rete](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
 Selezionare un'operazione nella visualizzazione di riepilogo per visualizzare altri dettagli.
 
-![Informazioni dettagliate nello strumento utilizzo della larghezza](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
+![Informazioni dettagliate nello strumento utilizzo della rete](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Per altre informazioni, vedere [Utilizzo della rete](../profiling/network-usage.md).
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Ottenere una maggiore familiarità con la modalità con cui il debugger si connette all'App
+## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Acquisire familiarità con la modalità con cui il debugger si connette all'App
 
-Per connettere l'App in esecuzione, il debugger carica il file di simboli (PDB) generati per la stessa build dell'app a cui che si sta tentando di eseguire il debug. In alcuni scenari, conoscenza dei file di simboli possono essere utile. È possibile esaminare la modalità di caricamento dei file di simboli tramite Visual Studio il **moduli** finestra.
+Per collegare all'App in esecuzione, il debugger carica i file di simboli (PDB) generati per la stessa build dell'app che si sta tentando di eseguire il debug. In alcuni scenari, può essere utile conoscenza dei file di simboli. È possibile esaminare come Visual Studio carica il file di simboli tramite il **moduli** finestra.
 
-Aprire il **moduli** finestra durante il debug selezionando **Debug > Windows > moduli**. Il **moduli** finestra può indicare quali il debugger viene considerato codice utente, i moduli o [ *My Code*](../debugger/just-my-code.md)e il simbolo di stato per il modulo di caricamento. Nella maggior parte degli scenari, il debugger individua automaticamente i file di simboli per codice utente, ma se si desidera eseguire l'istruzione (o eseguire il debug) codice .NET framework, codice di sistema o il codice di libreria di terze parti, sono necessari ulteriori passaggi per ottenere i file di simboli corretto.
+Aprire il **moduli** finestra durante il debug, selezionando **Debug > Windows > moduli**. Il **moduli** finestra può indicare quali moduli il debugger è trattare come codice utente, o [ *My Code*](../debugger/just-my-code.md)e il simbolo di caricamento dello stato per il modulo. Nella maggior parte degli scenari, il debugger individua automaticamente i file di simboli per il codice utente, ma se si desidera eseguire l'istruzione (o eseguire il debug) codice .NET framework, codice di sistema o il codice della libreria di terze parti, sono necessari passaggi aggiuntivi per ottenere i file di simboli corretto.
 
-![Visualizzare le informazioni sui simboli nella finestra moduli](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
+![Visualizzare le informazioni sui simboli nella finestra di moduli](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
-È possibile caricare le informazioni sui simboli direttamente il **moduli** finestra facendo clic e scegliendo **Carica simboli**.
+È possibile caricare le informazioni sui simboli direttamente dai **moduli** finestra facendo clic e scegliendo **Carica simboli**.
 
-In alcuni casi, gli sviluppatori di app rilasciato App senza i corrispondente file di simboli (per ridurre il footprint), ma occorre tenere una copia del simbolo corrispondente file per la compilazione in modo che possono eseguire il debug una versione rilasciata in un secondo momento.
+In alcuni casi, gli sviluppatori di app invia l'App senza i corrispondente file di simboli (per ridurre il footprint), ma tenere una copia del simbolo corrisponda file per la compilazione in modo che possono eseguire il debug una versione rilasciata in un secondo momento.
 
-Per sapere come il debugger classifica codice come codice utente, vedere [Just My Code](../debugger/just-my-code.md). Per ulteriori informazioni sui file di simboli, vedere [specificare simboli (PDB) e i file di origine nel debugger di Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Per scoprire come il debugger consente di classificare il codice come codice utente, vedere [Just My Code](../debugger/just-my-code.md). Per altre informazioni sui file di simboli, vedere [specifica simboli (PDB) e i file di origine nel debugger di Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="learn-more"></a>Altre informazioni
 
 Per altri suggerimenti e consigli e informazioni più dettagliate, vedere questi post di blog:
 
-- [7 minore attacchi noti per il debug in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 nascoste in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 HACK noti minori per il debug in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 strumenti utili nascosti in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Vedere anche
 [Tasti di scelta rapida](../ide/tips-and-tricks-for-visual-studio.md)

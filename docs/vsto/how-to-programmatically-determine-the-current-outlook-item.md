@@ -1,5 +1,5 @@
 ---
-title: "Procedura: determinare a livello di codice all'elemento Outlook corrente | Documenti Microsoft"
+title: 'Procedura: determinare a livello di codice elemento Outlook corrente'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e18c9fabd3d568d7663be9fecd6724edbafdbdfd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257047"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: determinare l'elemento corrente di Outlook a livello di codice
-  In questo esempio viene utilizzato l'evento di Explorer. SelectionChange per visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice visualizza quindi l'elemento selezionato.  
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: determinare a livello di codice elemento Outlook corrente
+  Questo esempio viene usato il `Explorer.SelectionChange` evento per visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice consente di visualizzare l'elemento selezionato.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -33,14 +34,14 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_OL_CurrentItem#1](../vsto/codesnippet/VisualBasic/Trin_OL_CurrentItem/thisaddin.vb#1)]
  [!code-csharp[Trin_OL_CurrentItem#1](../vsto/codesnippet/CSharp/Trin_OL_CurrentItem/thisaddin.cs#1)]  
   
-## <a name="compiling-the-code"></a>Compilazione del codice  
+## <a name="compile-the-code"></a>Compilare il codice  
  L'esempio presenta i requisiti seguenti:  
   
--   Un appuntamento, contatto e gli elementi di posta elettronica in Microsoft Office Outlook.  
+-   Appuntamento, contatto e gli elementi di posta elettronica in Microsoft Office Outlook.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)   
- [Procedura: recuperare a livello di codice una cartella per nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Procedura: Eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
+ [Procedura: recuperare una cartella a livello programmatico in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Procedura: eseguire la ricerca a livello di codice di un contatto specifico](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
   
   

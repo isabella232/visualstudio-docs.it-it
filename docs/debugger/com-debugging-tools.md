@@ -1,5 +1,5 @@
 ---
-title: Strumenti di debug COM | Documenti Microsoft
+title: Strumenti di debug COM | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,26 +23,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c801ddfce436d4867af9f7012c0abe785ed68a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c2d2cd73ece3129e4719b50e5d140481e9210edb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458990"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757188"
 ---
 # <a name="com-debugging-tools"></a>Strumenti di debug COM
-In questo argomento sono elencati gli strumenti che consentono di verificare i programmi COM.  
-  
- Visualizzatore oggetti OLE/COM  
- OLEVIEW visualizza gli oggetti ActiveX e OLE installati nel computer e le interfacce che essi supportano. Consente inoltre di modificare il Registro di sistema ed esaminare le librerie dei tipi. Per ulteriori informazioni, vedere [utilizzo del Visualizzatore oggetti OLE/COM](/cpp/data/ado-rdo/using-the-ole-com-object-viewer).  
-  
- Microsoft Foundation Class Samples  
- Per la verifica delle applicazioni, sono disponibili anche gli esempi ActiveX MFC OCLIENT e SUPERPAD. È fornito anche il codice sorgente completo per tali esempi.  
-  
-## <a name="see-also"></a>Vedere anche  
- [COM e ActiveX di debug](../debugger/com-and-activex-debugging.md)   
- [Strumenti di debug COM](../debugger/com-debugging-tools.md)  
- [Debug in Visual Studio](../debugger/index.md)  
- [Debugger Feature Tour](../debugger/debugger-feature-tour.md)  (Tour delle funzionalità del debugger)  
- [Esempio OCLIENT: Illustra un'applicazione contenitore di modifica visiva](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)   
- [Esempio SUPERPAD: Di seguito viene illustrato un Server di modifica visiva testi con CEditView](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)
+
+In questo argomento sono elencati gli strumenti che consentono di verificare i programmi COM.
+
+Visualizzatore oggetti OLE/COM
+
+OLEVIEW visualizza gli oggetti ActiveX e OLE installati nel computer e le interfacce che essi supportano. Consente inoltre di modificare il Registro di sistema ed esaminare le librerie dei tipi.
+
+Microsoft Foundation Class Samples
+
+Per la verifica delle applicazioni, sono disponibili anche gli esempi ActiveX MFC OCLIENT e SUPERPAD. È fornito anche il codice sorgente completo per tali esempi.
+
+### <a name="see-also"></a>Vedere anche
+
+- [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
+- [Strumenti di debug COM](../debugger/com-debugging-tools.md)
+- [Debug in Visual Studio](../debugger/index.md)
+- [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)
+- [Esempio di OCLIENT: Illustra un'applicazione contenitore di modifica visiva](http://msdn.microsoft.com/en-us/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Esempio SUPERPAD: Di seguito viene illustrato un Server di modifica visiva testi con CEditView](http://msdn.microsoft.com/en-us/7b14e975-d986-4e6a-8289-226485cfcb72)

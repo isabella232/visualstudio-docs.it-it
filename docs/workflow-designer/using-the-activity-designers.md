@@ -1,28 +1,28 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - utilizzo degli ActivityDesigner
+title: Finestra di progettazione del flusso di lavoro - uso degli Activity Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Workflow Designer [WFD], activity designer
-- Visual Studio 2010 Workflow Designer [WFD], activity designer
+- Visual Studio Workflow Designer [WFD], activity designer
 ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfab116d7c4d3882b4b35322a24af90f3842211
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971532"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758041"
 ---
 # <a name="using-the-activity-designers"></a>Utilizzo degli ActivityDesigner
 
-La finestra di progettazione del flusso di lavoro di Windows include un numero di attività fornite dal sistema che è possibile utilizzare quando si crea l'attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e viene fornito materiale sussidiario sul relativo uso.
+La finestra di progettazione del flusso di lavoro include numerose attività fornite dal sistema che è possibile usare durante la creazione delle attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e viene fornito materiale sussidiario sul relativo uso.
 
 ## <a name="reference"></a>Riferimenti
 

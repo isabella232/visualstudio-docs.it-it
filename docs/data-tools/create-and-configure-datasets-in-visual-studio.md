@@ -13,82 +13,82 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746572"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756032"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
 
-Oggetto *set di dati* è un set di oggetti che archiviano i dati da un database in memoria e supportano il rilevamento delle modifiche per abilitare creare, leggere, aggiornare e l'eliminazione (CRUD) sui dati senza la necessità di essere sempre connessi al database. Set di dati sono stati progettati per semplice *form su dati* applicazioni aziendali. Per le nuove applicazioni, prendere in considerazione l'utilizzo di Entity Framework per archiviare e modellare i dati in memoria. Per utilizzare i set di dati, è necessario una conoscenza di base dei concetti di database.
+Un set di dati è un set di oggetti che archiviano i dati da un database in memoria e supportano il rilevamento delle modifiche per consentire di creare, leggere, aggiornare ed eliminazione (CRUD) sui dati senza la necessità di essere sempre connessi al database. I set di dati sono stati progettati per semplice *form over data* applicazioni aziendali. Per le nuove applicazioni, è consigliabile usare Entity Framework per archiviare e modellare i dati in memoria. Per lavorare con i set di dati, si deve avere una conoscenza di base dei concetti relativi ai database.
 
-Si crea un oggetto tipizzato <xref:System.Data.DataSet> classe in Visual Studio in fase di progettazione utilizzando il **configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [la creazione di un set di dati (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
+Si crea un oggetto tipizzato <xref:System.Data.DataSet> classe in Visual Studio in fase di progettazione utilizzando il **configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creando un dataset (ADO.NET)](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).
 
-## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Creare un nuovo set di dati utilizzando la configurazione guidata origine dati
+## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Creare un nuovo set di dati usando la configurazione guidata origine dati
 
-1.  Nel **progetto** menu, fare clic su **Aggiungi nuova origine dati** per avviare il **configurazione guidata origine dati**.
+1.  Nel **progetto** menu, fare clic su **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.
 
-2.  Scegliere il tipo dell'origine dati che connetterà.
+2.  Scegliere il tipo di origine dati a cui ci si connetterà.
 
      ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png)
 
-3.  Per i database, scegliere i database che sarà l'origine dati per il set di dati.
+3.  Scegliere uno o più database che fungerà da origine dati per il set di dati.
 
      ![Origine dati scegliere una connessione](../data-tools/media/data-source-choose-a-connection.png)
 
-4.  Scegliere le tabelle (o singole colonne), stored procedure, funzioni e viste dal database che si desidera essere rappresentato nel set di dati.
+4.  Scegliere le tabelle o le singole colonne, stored procedure, funzioni e viste dal database che si desidera essere rappresentato nel set di dati.
 
-     ![Scegliere gli oggetti di database](../data-tools/media/raddata-chose-objects.png)
+     ![Scegli oggetti di database](../data-tools/media/raddata-chose-objects.png)
 
 5.  Scegliere **Fine**.
 
-6.  Il set di dati viene visualizzato come un nodo in **Esplora**:
+6.  Il set di dati viene visualizzato come nodo in **Esplora soluzioni**.
 
      ![Set di dati in Esplora soluzioni](../data-tools/media/dataset-in-solution-explorer.png)
 
-     Fare clic su tale nodo, e il set di dati verrà visualizzata la **Progettazione DataSet**. Si noti che ogni tabella nel set di dati è associato un oggetto TableAdapter, che è rappresentato nella parte inferiore. Adattatore di tabella viene utilizzato per popolare il set di dati e, facoltativamente, per inviare comandi al database.
+     Fare clic su tale nodo, e il set di dati verrà visualizzata la **Progettazione DataSet**. Si noti che ogni tabella nel set di dati è associato un `TableAdapter` oggetto, che è rappresentata nella parte inferiore. L'adattatore di tabella viene utilizzato per popolare il set di dati e, facoltativamente, per inviare comandi al database.
 
      ![Progettazione DataSet](../data-tools/media/dataset-designer.png)
 
-7.  Le linee di relazione che si connettono le tabelle rappresentano le relazioni tra tabelle, come definito nel database. Per impostazione predefinita, i vincoli di chiave esterna in un database vengono rappresentati come una relazione solo con l'aggiornamento ed eliminare le regole impostate su none. In genere, che è quello desiderato. Tuttavia, è possibile fare clic su righe da visualizzare il **relazione** finestra di dialogo, in cui è possibile modificare il comportamento degli aggiornamenti gerarchici. Per ulteriori informazioni, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md) e [aggiornamento gerarchico](../data-tools/hierarchical-update.md).
+7.  Le linee di relazione che si connettono le tabelle rappresentano le relazioni tra tabelle, come definito nel database. Per impostazione predefinita, i vincoli di chiave esterna in un database sono rappresentati come una relazione solo con l'aggiornamento ed eliminare le regole impostate su none. In genere, che è quello desiderato. Tuttavia, è possibile fare clic per visualizzare le righe di **relazione** finestra di dialogo in cui è possibile modificare il comportamento degli aggiornamenti gerarchici. Per altre informazioni, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md) e [aggiornamento gerarchico](../data-tools/hierarchical-update.md).
 
      ![Finestra di dialogo relazione DataSet](../data-tools/media/raddata-relation-dialog.png)
 
-8.  Fare clic su una tabella, l'adattatore di tabella o il nome di colonna in una tabella per visualizzare le proprietà nel **proprietà** finestra. È possibile modificare alcuni dei valori di. Ricordare che si modifica il set di dati, non il database di origine.
+8.  Fare clic su una tabella, l'adattatore di tabella o nome di colonna in una tabella per visualizzarne le proprietà nel **proprietà** finestra. È possibile modificare alcuni dei valori qui. È importante ricordare che si modifica il set di dati, non il database di origine.
 
      ![Proprietà delle colonne di set di dati](../data-tools/media/dataset-column-properties.png)
 
-9. È possibile aggiungere nuove tabelle o gli adattatori di tabella per il set di dati o aggiungere nuove query per gli adattatori di tabella esistente o specificare nuove relazioni tra tabelle trascinando gli elementi dal **della casella degli strumenti** scheda. Questa scheda viene visualizzato quando il **Progettazione DataSet** lo stato attivo.
+9. È possibile aggiungere nuove tabelle o gli adattatori di tabella per il set di dati o aggiungere nuove query per gli adattatori di tabella esistente o specificare nuove relazioni tra tabelle trascinando gli elementi dal **casella degli strumenti** scheda. Questa scheda viene visualizzato quando la **Progettazione DataSet** presenta lo stato attivo.
 
      ![Set di dati della casella degli strumenti](../data-tools/media/raddata-dataset-toolbox.png)
 
-10. Successivamente, si potrebbe essere necessario specificare come popolare il set di dati con i dati. A tale scopo, utilizzare il **configurazione guidata TableAdapter**. Per ulteriori informazioni, vedere [riempire i set di dati utilizzando gli oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
+10. Successivamente, probabilmente si desidera specificare come popolare il set di dati con i dati. A tal fine, si utilizza il **configurazione guidata TableAdapter**. Per altre informazioni, vedere [compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Aggiungere una tabella di database o un altro oggetto a un set di dati esistente
+## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Aggiungere una tabella di database o un altro oggetto a un set di dati
 
-Questa procedura viene illustrato come aggiungere una tabella dallo stesso database utilizzato per creare innanzitutto il set di dati.
+Questa procedura viene illustrato come aggiungere una tabella dallo stesso database usato per creare innanzitutto il set di dati.
 
-1.  Fare clic sul nodo di set di dati in **Esplora** per rendere la finestra di progettazione del set di dati attivo.
+1.  Fare clic sul nodo del set di dati in **Esplora soluzioni** per rendere attivo la finestra di progettazione set di dati.
 
-2.  Fare clic su di **origini dati** scheda nel margine sinistro di Visual Studio o immettere `Data Sources` in **veloce**.
+2.  Fare clic sui **Zdroje dat** scheda nel margine sinistro di Visual Studio, oppure immettere `Data Sources` nelle **avvio veloce**.
 
 3.  Il nodo di set di dati e scegliere **Configura origine dati con Creazione guidata**.
 
      ![Menu di scelta rapida origine dati](../data-tools/media/data-source-context-menu.png)
 
-4.  Utilizzare la procedura guidata per specificare quali tabelle aggiuntive, o le stored procedure o un altro oggetto di database, da aggiungere al set di dati.
+4.  Utilizzare la procedura guidata per specificare quali tabelle aggiuntive, o stored procedure o un altro oggetto di database, aggiungere al set di dati.
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Aggiungere una tabella dati autonomo a un set di dati
 
-1.  Aprire il dataset nel **Progettazione Dataset**.
+1.  Aprire il set di dati nel **Progettazione Dataset**.
 
-2.  Trascinare un <xref:System.Data.DataTable> classe il **set di dati** scheda della finestra il **della casella degli strumenti** nel **Progettazione Dataset**.
+2.  Trascinare un <xref:System.Data.DataTable> classe il **set di dati** scheda della finestra di **della casella degli strumenti** nel **Progettazione Dataset**.
 
-3.  Aggiungere colonne per definire la tabella dati. Fare doppio clic sulla tabella e scegliere **Aggiungi > colonna**. Utilizzare il **proprietà** finestra per impostare il tipo di dati della colonna e una chiave, se necessario.
+3.  Aggiungere colonne per definire la tabella di dati. Fare clic sulla tabella e scegliere **Add** > **colonna**. Usare la **proprietà** finestra per impostare il tipo di dati della colonna e una chiave, se necessario.
 
-4.  Le tabelle autonome necessario implementare `Fill` logica nelle tabelle autonome in modo che è possibile inserire i dati. Per informazioni su come inserire le tabelle di dati autonomo, vedere [popolamento di un set di dati da un oggetto DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+4.  Le tabelle autonome devono implementare `Fill` per la logica nelle tabelle autonome in modo che è possibile inserire i dati. Per informazioni su come inserire le tabelle di dati autonomo, vedere [popolamento di un set di dati da un oggetto DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
 ## <a name="see-also"></a>Vedere anche
 

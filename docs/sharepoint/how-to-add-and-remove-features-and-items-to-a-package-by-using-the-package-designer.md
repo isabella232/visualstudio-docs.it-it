@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto utilizzando la finestra di progettazione del pacchetto | Documenti Microsoft'
+title: 'Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando la finestra di progettazione del pacchetto | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,50 +19,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a2307a870487a3cc62a60b4162245db57653d452
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767163"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756093"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti
-  Quando si crea una soluzione di SharePoint, Visual Studio aggiunge le funzionalità di SharePoint predefinito per il pacchetto della soluzione. Prima della distribuzione finale, è possibile aggiungere e rimuovere elementi di progetto SharePoint e funzionalità per modificare il pacchetto di SharePoint.  
+  Quando si crea una soluzione di SharePoint, Visual Studio aggiunge le funzionalità di SharePoint predefinito per il pacchetto della soluzione. Prima della distribuzione definitiva, è possibile aggiungere e rimuovere elementi di progetto SharePoint e funzionalità per modificare il pacchetto di SharePoint.  
   
- In alternativa, è possibile utilizzare Esplora pacchetti per aggiungere e rimuovere elementi di progetto SharePoint. È inoltre possibile visualizzare e modificare la gerarchia degli elementi di progetto SharePoint e funzionalità che vengono inserite nel pacchetto (con estensione wsp). Per ulteriori informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto utilizzando Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+ In alternativa, è possibile usare Esplora pacchetti per aggiungere e rimuovere elementi di progetto SharePoint. È anche possibile visualizzare e modificare la gerarchia delle funzionalità che vengono inserite nel pacchetto (con estensione wsp) e gli elementi di progetto SharePoint. Per altre informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
-## <a name="adding-features-to-a-sharepoint-package"></a>Aggiunta di funzionalità a un pacchetto di SharePoint  
- Per aggiungere funzionalità a un pacchetto di SharePoint, è possibile utilizzare la finestra di progettazione del pacchetto.  
+## <a name="add-features-to-a-sharepoint-package"></a>Aggiungere funzionalità a un pacchetto di SharePoint  
+ È possibile utilizzare la finestra di progettazione di pacchetti per aggiungere funzionalità a un pacchetto di SharePoint.  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Per aggiungere funzionalità di SharePoint con Progettazione pacchetti
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Per aggiungere funzionalità di SharePoint con la progettazione di pacchetti
   
 1.  Aprire il **Progettazione pacchetti**.  
   
-     Per ulteriori informazioni, vedere [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Per altre informazioni, vedere [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-2.  Aggiungere una o più funzionalità di SharePoint mediante l'esecuzione di uno o più delle seguenti operazioni:  
+2.  Aggiungere una o più funzionalità di SharePoint mediante l'esecuzione di uno o più delle operazioni seguenti:  
   
     1.  Fare doppio clic su ogni elemento di **elementi nella soluzione** elenco che si desidera aggiungere.  
   
-    2.  Scegliere un elemento che si desidera aggiungere e quindi scegliere il **Aggiungi** (>).  
+    2.  Scegliere un elemento che si desidera aggiungere e quindi scegliere il **Add** (>).  
   
     3.  Scegliere il **Aggiungi tutto** pulsante (>>) per aggiungere tutti gli elementi in una sola volta.  
   
-     Ad esempio, è possibile fare doppio clic su un elemento nel **elementi nella soluzione** per aggiungerlo all'elenco di **elementi nel pacchetto** elenco.  
+     Ad esempio, è possibile fare doppio clic su un elemento nel **elementi nella soluzione** per aggiungerlo all'elenco il **elementi nel pacchetto** elenco.  
   
-     Gli elementi di progetto SharePoint funzionalità appaiano nel **elementi nel pacchetto** elenco.  
+     Gli elementi di progetto SharePoint e le funzionalità vengono visualizzati nei **gli elementi nel pacchetto** elenco.  
   
-## <a name="removing-features-from-a-sharepoint-package"></a>Rimozione di funzionalità da un pacchetto di SharePoint  
+## <a name="remove-features-from-a-sharepoint-package"></a>Rimuovere funzionalità da un pacchetto di SharePoint  
  Per rimuovere funzionalità da un pacchetto di SharePoint, è possibile utilizzare la finestra di progettazione del pacchetto.  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Per rimuovere le funzionalità di SharePoint con Progettazione pacchetti
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Per rimuovere le funzionalità di SharePoint con la progettazione di pacchetti
   
-1.  Nel **elementi nel pacchetto** elenco, scegliere un elemento che si desidera rimuovere e quindi scegliere il **rimuovere** (<) pulsante o selezionare il **Rimuovi tutto** pulsante (<<) per rimuovere tutti gli elementi.  
+1.  Nel **gli elementi nel pacchetto** elenco, scegliere un elemento che si desidera rimuovere e quindi scegliere il **rimuovere** (<) pulsante oppure scegliere il **Rimuovi tutto** pulsante (<<) da rimuovere tutti gli elementi.  
   
-     Gli elementi di SharePoint vengono visualizzati nel **elementi nella soluzione** elenco.  
+     Gli elementi di SharePoint vengono visualizzati nei **elementi nella soluzione** elenco.  
   
 ## <a name="see-also"></a>Vedere anche
- [Creazione di pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
- [Procedura: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Creare pacchetti delle soluzioni SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
+ [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Procedura: creare un pacchetto](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
   

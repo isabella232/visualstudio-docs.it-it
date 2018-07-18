@@ -1,5 +1,5 @@
 ---
-title: 'Errore: ASP.NET non installato | Documenti Microsoft'
+title: 'Errore: ASP.NET non è installato | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b462c3ed02ebd622a39cd08039037b3ba63e7f57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd660ea2cdeaaae5d37811406221a7d150ab9bef
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479422"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056661"
 ---
 # <a name="error-aspnet-not-installed"></a>Errore: ASP.NET non è installato
 Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è installato correttamente nel computer di cui si sta tentando di eseguire il debug. Questo errore potrebbe essere dovuto al fatto che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è mai stato installato o che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] è stato installato prima di IIS.  
@@ -35,14 +35,14 @@ Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vs
   
 1.  Da una finestra del prompt dei comandi eseguire il comando seguente:  
   
-    ```  
+    ```cmd
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     dove *versione* rappresenta il numero di versione di .NET Framework installata nel computer in uso, ad esempio v 1.0.370. È possibile determinare la versione di framework esaminando il `\WINDOWS\Microsoft.NET\Framework` directory.  
+     in cui *versione* rappresenta il numero di versione di .NET Framework installata nel computer, ad esempio v1.0.370. È possibile determinare la versione del framework esaminando il `\WINDOWS\Microsoft.NET\Framework` directory.  
   
     > [!NOTE]
-    >  Con Windows Server 2003, è possibile installare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] utilizzando **Aggiungi / Rimuovi programmi** nel Pannello di controllo.  
+    >  Con Windows Server 2003, è possibile installare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando **Aggiungi / Rimuovi programmi** nel Pannello di controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

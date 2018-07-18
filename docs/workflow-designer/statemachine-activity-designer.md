@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner StateMachine
+title: Finestra di progettazione del flusso di lavoro, ActivityDesigner StateMachine
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974923"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758232"
 ---
 # <a name="statemachine-activity-designer"></a>ActivityDesigner StateMachine
 
@@ -26,7 +26,7 @@ L'attività <xref:System.Activities.Statements.StateMachine> contiene una raccol
 
 ## <a name="using-the-statemachine-activity-designer"></a>Utilizzo dell'ActivityDesigner StateMachine
 
-Per aggiungere un <xref:System.Activities.Statements.StateMachine> attività, trascinare il **StateMachine** ActivityDesigner dal **macchina a stati** sezione il **della casella degli strumenti** e rilasciarlo al flusso di lavoro di Windows Area di progettazione. Per aggiungere uno stato figlio a questa <xref:System.Activities.Statements.StateMachine> attività, trascinare un <xref:System.Activities.Statements.State> o <xref:System.Activities.Core.Presentation.FinalState> dal **della casella degli strumenti** e rilasciarla il **StateMachine**.
+Per aggiungere un <xref:System.Activities.Statements.StateMachine> attività, trascinare il **StateMachine** ActivityDesigner dal **macchina a stati** sezione del **casella degli strumenti** e rilasciarlo al finestra di progettazione del flusso di lavoro Nell'area. Per aggiungere uno stato figlio a questa <xref:System.Activities.Statements.StateMachine> attività, trascinare un <xref:System.Activities.Statements.State> o <xref:System.Activities.Core.Presentation.FinalState> dal **casella degli strumenti** e rilasciarlo sulla **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività StateMachine in Progettazione flussi di lavoro
 

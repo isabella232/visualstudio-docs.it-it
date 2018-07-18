@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare un modello di integrazione applicativa dei dati | Documenti Microsoft'
+title: 'Procedura: creare un modello di integrazione applicativa dei dati | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,37 +18,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 357730c8095e9449e9556fd4926afa0bbd53fb30
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 1a0e2bc47c902707ee896c46fa0d9988551fa6fd
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767296"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757922"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Procedura: creare un modello di integrazione applicativa dei dati
-  È possibile creare un modello di integrazione applicativa dei dati (BDC) utilizzando il modello per questo tipo di elemento e quindi aggiungere il modello a qualsiasi progetto SharePoint. Per ulteriori informazioni, vedere [creazione di un modello di connettività dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md). Per ulteriori informazioni su come progettare il modello, vedere [progettazione di un modello di connettività dei dati di Business](../sharepoint/designing-a-business-data-connectivity-model.md).  
+  È possibile creare un modello di integrazione applicativa dei dati (BDC) usando il modello per tale tipo di elemento e quindi aggiungere il modello a qualsiasi progetto SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md). Per altre informazioni su come progettare il modello, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-bdc-project"></a>Per creare un progetto di integrazione applicativa dei dati  
   
 1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.  
   
     > [!NOTE]  
-    >  Se l'IDE è configurato per utilizzare le impostazioni di sviluppo di Visual Basic, scegli **File** > **nuovo progetto**.  
+    >  Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, scegli **File** > **nuovo progetto**.  
   
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  In presenza di **Visual Basic** o **Visual c#**, scegliere **Office/SharePoint**, **soluzioni SharePoint**.  
+2.  In presenza di una **Visual Basic** oppure **Visual c#**, scegliere **Office/SharePoint**, **soluzioni SharePoint**.  
   
 3.  Nel **modelli** riquadro, scegliere il **SharePoint 2013 - progetto vuoto** elemento e quindi scegliere il **OK** pulsante.  
   
      Il **Personalizzazione guidata SharePoint** apre.  
   
-4.  Nel **specificare il livello di sito e di sicurezza per il debug** pagina, specificare l'URL di un sito di SharePoint nel computer locale, scegliere il **Distribuisci come soluzione farm** pulsante di opzione e quindi scegliere il **Fine** pulsante.  
+4.  Nel **specificare il livello di sito e la sicurezza per il debug** pagina, specificare l'URL di un sito di SharePoint nel computer locale, scegliere il **Distribuisci come soluzione farm** pulsante di opzione e quindi scegliere il **Finish** pulsante.  
   
      Si testerà il modello nel sito di SharePoint specificato.  
   
     > [!IMPORTANT]  
-    >  Poiché i modelli di integrazione applicativa dei dati supportano solo soluzioni farm, è necessario distribuire il progetto come soluzione farm.  
+    >  Poiché i modelli BDC supportano solo soluzioni farm, è necessario distribuire il progetto come soluzione farm.  
   
      Viene creato un progetto SharePoint vuoto.  
   
@@ -56,16 +56,16 @@ ms.locfileid: "34767296"
   
 6.  Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **Office/SharePoint** nodo.  
   
-7.  Nell'elenco dei modelli di SharePoint, scegliere **(solo soluzione Farm) modello di integrazione applicativa dei dati Business**.  
+7.  Nell'elenco dei modelli di SharePoint, scegliere **Business Data Connectivity Model (solo soluzione Farm)**.  
   
-8.  Nel **nome** , specificare un nome per il modello di integrazione applicativa dei dati e quindi scegliere il **Aggiungi** pulsante.  
+8.  Nel **Name** casella, specificare un nome per il modello di integrazione applicativa dei dati e quindi scegliere il **Add** pulsante.  
   
-     Oggetto **modello di integrazione applicativa dei dati di Business** elemento viene aggiunto al progetto. Per impostazione predefinita, il modello viene visualizzato nella finestra di progettazione di integrazione applicativa dei dati. Per ulteriori informazioni, vedere [creazione di un modello di connettività dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     Oggetto **Business Data Connectivity Model** elemento viene aggiunto al progetto. Per impostazione predefinita, il modello viene visualizzato nella finestra di progettazione integrazione applicativa dei dati. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ## <a name="see-also"></a>Vedere anche
- [Creazione di un modello di integrazione applicativa dei dati di Business](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Procedura: aggiungere un File di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Procedura: utilizzare un File di risorse per specificare nomi localizzati, proprietà e autorizzazioni](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Procedura: includere un Assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
- [Integrazione di dati business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+ [Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Procedura: aggiungere un file di modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Integrazione di dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   

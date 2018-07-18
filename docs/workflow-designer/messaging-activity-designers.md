@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner messaggistica
+title: Finestra di progettazione del flusso di lavoro - Activity Designer Messaging
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97279d92b9853f183778d069aa81182fa6cf8b56
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974336"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755229"
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
 
-Gli ActivityDesigner Messaging vengono utilizzati per creare e configurare le attività di messaggistica che inviano e ricevono messaggi di Windows Communication Foundation (WCF) da un'applicazione Windows Workflow Foundation (WF). .NET Framework 4 introduce cinque attività di messaggistica e la finestra di progettazione del flusso di lavoro di Windows fornisce due nuovi progettisti di modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro. Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono istruzioni su come usare l'attività di progettazione flussi di lavoro e i progettisti di modelli.
+Gli ActivityDesigner Messaging vengono usati per creare e configurare le attività di messaggistica di inviare e ricevano messaggi di Windows Communication Foundation (WCF) da all'interno di un'applicazione Windows Workflow Foundation (WF). .NET Framework 4 introduce cinque attività di messaggistica e la finestra di progettazione del flusso di lavoro fornisce due nuovi progettisti di modelli che consentono di gestire la messaggistica all'interno di un flusso di lavoro. Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono indicazioni su come usare l'attività di progettazione del flusso di lavoro e i progettisti di modelli.
 
 ## <a name="reference"></a>Riferimenti
  <xref:System.Activities.Activity>
