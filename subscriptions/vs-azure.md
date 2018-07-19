@@ -9,12 +9,12 @@ description: Informazioni su come attivare il vantaggio Azure incluso nella sott
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336084"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280657"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -94,7 +94,7 @@ Se è possibile acquistare direttamente una sottoscrizione, eseguire una delle o
 1.  Acquistare una sottoscrizione cloud di Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) o [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) annuale tramite Visual Studio Marketplace.
 2.  Ottenere uno sconto del 50% o maggiore rinnovando la sottoscrizione corrente tramite [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
-Confrontare tutte le [sottoscrizioni e i relativi vantaggi](https://www.visualstudio.com/vs/pricing/).
+Confrontare tutte le [sottoscrizioni e i relativi vantaggi](https://visualstudio.microsoft.com/vs/pricing/).
 
 Se si ha un'altra sottoscrizione di Visual Studio con lo **stesso** livello in un account Microsoft, è possibile collegarlo al vantaggio Azure aggiungendo un [account alternativo](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) nel portale delle sottoscrizioni di Visual Studio. Se il problema persiste, è anche possibile provare a [trasferire il vantaggio Azure](/azure/billing/billing-subscription-transfer/) nella sottoscrizione di Visual Studio attiva.
 
@@ -111,5 +111,5 @@ Se si ritiene di aver ricevuto questo messaggio di posta elettronica per errore,
 -  Serve aiuto con Azure?  Vedere queste risorse:
     - Supporto tecnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Documentazione di Azure](/azure/)
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/).
+-  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -9,206 +9,206 @@ description: Informazioni sul vantaggio Supporto prioritario incluso nelle sotto
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 776438935a2fdbc2e7f360d605cc2135ac02b9a0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995842"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280403"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Supporto prioritario nelle sottoscrizioni di Visual Studio
 
-Il vantaggio Supporto prioritario consente di accedere a un'ampia gamma di forum della community di supporto in cui è possibile effettuare ricerche nei post esistenti o porre nuove domande.  Se la community non risponde alla domanda entro due giorni, il team di supporto Microsoft invierà una risposta.  
+Il vantaggio Supporto prioritario consente di accedere a un'ampia gamma di forum della community di supporto in cui è possibile effettuare ricerche nei post esistenti o porre nuove domande.  Se la community non risponde alla domanda entro due giorni, il team di supporto Microsoft invierà una risposta.
 
 I sottoscrittori con sottoscrizioni di Visual Studio selezionate hanno diritto a ricevere supporto prioritario tramite numerosi forum dedicati a svariati argomenti.
 
 ## <a name="included-forums"></a>Forum inclusi
 
 ### <a name="net-framework"></a>.NET Framework
-   - Installazione e assistenza .NET Framework 
+   - Installazione e assistenza .NET Framework
 
-   - Attributi e architettura di Common Language Runtime 
+   - Attributi e architettura di Common Language Runtime
 
-   - Librerie di classi .NET Framework 
+   - Librerie di classi .NET Framework
 
-   - Windows Presentation Foundation (WPF) 
+   - Windows Presentation Foundation (WPF)
 
-   - Windows Communication Foundation, serializzazione e rete 
+   - Windows Communication Foundation, serializzazione e rete
 
 ### <a name="windows-forms-development"></a>Sviluppo di Windows Form
-   - Controlli dati e data binding di Windows Form 
+   - Controlli dati e data binding di Windows Form
 
-   - Domande generiche su Windows Form 
+   - Domande generiche su Windows Form
 
-   - ClickOnce e i progetti di distribuzione e installazione 
+   - ClickOnce e i progetti di distribuzione e installazione
 
-   - Progettazione Windows Form 
+   - Progettazione Windows Form
 
-   - Applicazioni di esempio di Windows Form 
+   - Applicazioni di esempio di Windows Form
 
 
 ### <a name="windows-universal-apps"></a>App universali di Windows
-   - Sviluppo di app universali di Windows 
+   - Sviluppo di app universali di Windows
 
 ### <a name="internet-of-things-iot"></a>Internet delle cose (IoT)
-   - Windows 10 IoT 
+   - Windows 10 IoT
 
 ### <a name="office-development"></a>Sviluppo di Office
-   - Microsoft Office per sviluppatori 
+   - Microsoft Office per sviluppatori
 
-   - Excel per sviluppatori 
+   - Excel per sviluppatori
 
-   - Word per sviluppatori 
+   - Word per sviluppatori
 
-   - Outlook per sviluppatori 
+   - Outlook per sviluppatori
 
-   - Access per sviluppatori 
+   - Access per sviluppatori
 
-   - Visual Studio Tools per Office 
+   - Visual Studio Tools per Office
 
-   - Open XML Format SDK 
+   - Open XML Format SDK
 
-   - Visual Basic, Applications Edition 
+   - Visual Basic, Applications Edition
 
-   - Sviluppo di Office generale 
+   - Sviluppo di Office generale
 
-   - Sviluppo di app per Office 2013 
+   - Sviluppo di app per Office 2013
 
 ### <a name="sql-server"></a>SQL Server
-   - Introduzione a SQL Server 
+   - Introduzione a SQL Server
 
-   - SQL Server Data Access 
+   - SQL Server Data Access
 
-   - Motore di database SQL Server 
+   - Motore di database SQL Server
 
-   - SQL Server Data Warehousing 
+   - SQL Server Data Warehousing
 
-   - SQL Server Integration Services 
+   - SQL Server Integration Services
 
-   - SQL Server Analysis Services 
+   - SQL Server Analysis Services
 
-   - SQL Server Notification Services 
+   - SQL Server Notification Services
 
-   - SQL Server Reporting Services 
+   - SQL Server Reporting Services
 
-   - Transact-SQL 
+   - Transact-SQL
 
-   - Replica di SQL Server 
+   - Replica di SQL Server
 
-   - Sicurezza di SQL Server 
+   - Sicurezza di SQL Server
 
-   - Installazione e aggiornamento di SQL Server 
+   - Installazione e aggiornamento di SQL Server
 
-   - Informazioni generali sugli strumenti di SQL Server 
+   - Informazioni generali sugli strumenti di SQL Server
 
-   - SQL Service Broker 
+   - SQL Service Broker
 
-   - SQL Server Compact 
+   - SQL Server Compact
 
-   - SQL Server Express 
+   - SQL Server Express
 
-   - Data mining 
+   - Data mining
 
-   - .NET Framework in SQL Server 
+   - .NET Framework in SQL Server
 
 ### <a name="sharepoint"></a>SharePoint
-   - SharePoint 2013: discussioni e domande generiche 
+   - SharePoint 2013: discussioni e domande generiche
 
-   - Sviluppo di app per SharePoint 2013 
+   - Sviluppo di app per SharePoint 2013
 
-   - SharePoint 2013: sviluppo e programmazione 
+   - SharePoint 2013: sviluppo e programmazione
 
-   - SharePoint 2013: installazione, aggiornamento, amministrazione e funzionamento 
+   - SharePoint 2013: installazione, aggiornamento, amministrazione e funzionamento
 
-   - SharePoint 2013: uso di SharePoint Designer, InfoPath e altre personalizzazioni 
+   - SharePoint 2013: uso di SharePoint Designer, InfoPath e altre personalizzazioni
 
-   - SharePoint 2013: ricerca 
+   - SharePoint 2013: ricerca
 
-   - SharePoint 2010: sviluppo e programmazione 
+   - SharePoint 2010: sviluppo e programmazione
 
-   - SharePoint 2010: discussioni e domande generiche 
+   - SharePoint 2010: discussioni e domande generiche
 
-   - SharePoint 2010: installazione, aggiornamento, amministrazione e funzionamento 
+   - SharePoint 2010: installazione, aggiornamento, amministrazione e funzionamento
 
-   - SharePoint 2010: uso di SharePoint Designer, InfoPath e altre personalizzazioni 
+   - SharePoint 2010: uso di SharePoint Designer, InfoPath e altre personalizzazioni
 
-   - SharePoint 2010: ricerca 
+   - SharePoint 2010: ricerca
 
 ### <a name="visual-studio"></a>Visual Studio
-   - Domande generali su Visual Studio 
+   - Domande generali su Visual Studio
 
-   - Installazione e configurazione di Visual Studio 
+   - Installazione e configurazione di Visual Studio
 
-   - Strumenti di test in Visual Studio 2010 e 2012 
+   - Strumenti di test in Visual Studio 2010 e 2012
 
-   - Esecuzione di test con Visual Studio Test Manager (MTM) 
+   - Esecuzione di test con Visual Studio Test Manager (MTM)
 
-   - Visual Studio Unit Testing (Testing unità con Visual Studio) 
+   - Visual Studio Unit Testing (Testing unità con Visual Studio)
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
-   - TFS: installazione e amministrazione 
+   - TFS: installazione e amministrazione
 
-   - TFS: domande generiche 
+   - TFS: domande generiche
 
-   - TFS: controllo del codice sorgente e della versione 
+   - TFS: controllo del codice sorgente e della versione
 
-   - TFS: Build e Release Management 
+   - TFS: Build e Release Management
 
-   - TFS: report e warehouse 
+   - TFS: report e warehouse
 
-   - TFS: Gestione progetti ed elemento di lavoro 
+   - TFS: Gestione progetti ed elemento di lavoro
 
-   - TFS: modelli di processo 
+   - TFS: modelli di processo
 
-   - TFS: migrazione e integrazione 
+   - TFS: migrazione e integrazione
 
-   - Visual Studio Online 
+   - Visual Studio Online
 
 ### <a name="visual-studio-languages"></a>Linguaggi di Visual Studio
-   - Visual Basic 
+   - Visual Basic
 
-   - Visual C# 
+   - Visual C#
 
-   - Visual C++ 
+   - Visual C++
 
-   - Standard Visual C++, estensioni e interoperabilità 
+   - Standard Visual C++, estensioni e interoperabilità
 
 
 ### <a name="biztalk"></a>BizTalk
-   - Domande generiche su BizTalk Server 
+   - Domande generiche su BizTalk Server
 
-   - BizTalk Server EDI e AS2 
+   - BizTalk Server EDI e AS2
 
 ### <a name="adospannet"></a>ADO<span>.NET
-   - Provider di dati ADO<span>.NET 
+   - Provider di dati ADO<span>.NET
 
-   - ADO<span>.NET DataSet 
+   - ADO<span>.NET DataSet
 
-   - LINQ to SQL 
+   - LINQ to SQL
 
-   - ADO<span>.NET Entity Framework e LINQ to Entities 
+   - ADO<span>.NET Entity Framework e LINQ to Entities
 
-   - WCF (ADO<span>.NET) Data Services 
+   - WCF (ADO<span>.NET) Data Services
 
 ### <a name="xml"></a>XML
-   - XML e .NET Framework 
+   - XML e .NET Framework
 
-   - SQL Server XML 
+   - SQL Server XML
 
 
 ## <a name="activation-steps"></a>Procedura di attivazione
-Ottenere l'accesso al supporto prioritario è molto semplice. 
+Ottenere l'accesso al supporto prioritario è molto semplice.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro Supporto prioritario nella sezione Supporto.  Fare clic su **Ottieni assistenza**.
 
     ![Riquadro Supporto prioritario](_img/vs-priority-support/vs-priority-support-tile.png)
 
-3. Esplorare l'elenco dei forum e selezionare il forum desiderato. 
+3. Esplorare l'elenco dei forum e selezionare il forum desiderato.
 
     ![Forum di supporto prioritario](_img/vs-priority-support/vs-priority-support-forums.png)
 
-4. È possibile leggere le risposte recenti, cercare post precedenti o inviare una nuova domanda.  
+4. È possibile leggere le risposte recenti, cercare post precedenti o inviare una nuova domanda.
 
     ![Esempio di supporto prioritario](_img/vs-priority-support/vs-priority-support-example.png)
 
@@ -224,9 +224,9 @@ Ottenere l'accesso al supporto prioritario è molto semplice.
 
 <sup>1</sup>  *Include: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine.  Esclude:  Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Microsoft Valued Partner (MVP), Region Director (RD).*
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 
+-  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

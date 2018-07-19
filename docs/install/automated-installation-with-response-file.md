@@ -15,16 +15,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef060f77a7ac580cb93c93f8e48889b7f19e4fab
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0029dc1599005cfe100bebbf9069dce672dd61b1
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622055"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282242"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Come definire impostazioni in un file di risposta
 
-Gli amministratori che distribuiscono Visual Studio possono specificare un file di risposta usando il parametro `--in`, come nell'esempio che segue:
+Gli amministratori che distribuiscono Visual Studio possono specificare un file di risposta usando il parametro `--in`, come nell’esempio che segue:
 
 ```cmd
 vs_enterprise.exe --in customInstall.json
@@ -36,11 +36,11 @@ Parametri specificati nelle impostazioni di sostituzione della riga di comando d
 
 ## <a name="setting-a-default-configuration-for-visual-studio"></a>Impostazione di una configurazione predefinita per Visual Studio
 
-Se è stata creata una cache di layout di rete con l'opzione `--layout`, nel layout viene creato un file `response.json` iniziale. Se si crea un layout parziale, il file di risposta include le lingue e i carichi di lavoro inclusi nel layout.  L'esecuzione automatica dell'installazione da questo layout utilizza questo file response.json che seleziona i carichi di lavoro e i componenti inclusi nel layout.  Gli utenti possono comunque selezionare o deselezionare i carichi di lavoro nel programma di installazione dell'interfaccia utente prima di installare Visual Studio.
+Se è stata creata una cache di layout di rete con l'opzione `--layout`, nel layout viene creato un file `response.json` iniziale. Se si crea un layout parziale, il file di risposta include le lingue e i carichi di lavoro inclusi nel layout.  L’esecuzione automatica dell'installazione da questo layout utilizza questo file response.json che seleziona i carichi di lavoro e i componenti inclusi nel layout.  Gli utenti possono comunque selezionare o deselezionare i carichi di lavoro nel programma di installazione dell'interfaccia utente prima di installare Visual Studio.
 
 Gli amministratori che creano un layout possono modificare il file `response.json` nel layout per controllare le impostazioni predefinite che gli utenti visualizzeranno durante l'installazione di Visual Studio dal layout.  Se, ad esempio, un amministratore vuole che, per impostazione predefinita, vengano installati specifici carichi di lavoro e componenti, per aggiungerli può configurare il file `response.json`.
 
-Se l'installazione di Visual Studio viene eseguita da una cartella di layout, viene _automaticamente_ usato il file di risposta nella cartella di layout.  Non è necessario usare l'opzione `--in`.
+Se l'installazione di Visual Studio viene eseguita da una cartella di layout, viene _automaticamente_ usato il file di risposta nella cartella di layout.  Non è necessario usare l’opzione `--in`.
 
 È possibile aggiornare il file `response.json` creato in una cartella di layout offline per definire l'impostazione predefinita per gli utenti che eseguono l'installazione da questo layout.
 
@@ -98,7 +98,7 @@ Il seguente esempio viene installato Visual Studio Enterprise con sei carichi di
 
 ## <a name="get-support"></a>Supporto
 
-Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni di supporto:
 

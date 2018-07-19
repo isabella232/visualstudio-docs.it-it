@@ -10,11 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280390"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 Questa sezione descrive come installare Visual Studio Tools per Unity e configurare un progetto Unity per l'uso con Visual Studio.
@@ -27,7 +28,7 @@ Questa sezione descrive come installare Visual Studio Tools per Unity e configur
 
 -   Una versione di **Visual Studio** che supporti le estensioni, come Visual Studio Community, Professional, Premium o Enterprise. È possibile scaricare gratuitamente Visual Studio Community
 
-     [Scaricare Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+     [Scaricare Visual Studio Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   **Unity** 4.0.0 o versioni successive; **Unity** 5.2.0 o versioni successive per sfruttare il supporto incorporato per Visual Studio Tools per Unity 2.1 o versioni successive.
 

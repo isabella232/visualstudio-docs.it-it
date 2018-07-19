@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948340"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282229"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "31948340"
 
 Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempio, dopo aver effettuato l'accesso, tra le tante funzionalità, è possibile sincronizzare le impostazioni tra i dispositivi, estendere una versione di prova gratuita e connettersi automaticamente al servizio Azure.
 
-Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:  
+Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
 
 - **Accedere al programma Visual Studio Dev Essentials**: il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
 
@@ -62,9 +62,9 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assistenza](https://www.visualstudio.com/subscriptions/support/).
+Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assistenza](https://visualstudio.microsoft.com/subscriptions/support/).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Panoramica dell'IDE di Visual Studio](../ide/visual-studio-ide.md)

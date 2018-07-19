@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297606"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
 Usare il comando **CodeIndex** per gestire l'indicizzazione del codice in Team Foundation Server. Ad esempio, è possibile che si desideri reimpostare l'indice per correggere le informazioni di CodeLens o disabilitare l'indicizzazione per esaminare eventuali problemi di prestazioni del server.
 
-**Autorizzazioni necessarie**
+## <a name="required-permissions"></a>Autorizzazioni necessarie
 
-Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators** . Vedere [Permissions and groups defined for Team Services and TFS](https://www.visualstudio.com/docs/setup-admin/permissions) (Autorizzazioni e gruppi definiti per Team Services e TFS).
+Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators** . Vedere [Permissions and groups defined for Team Services and TFS](/vsts/organizations/security/permissions?view=vsts) (Autorizzazioni e gruppi definiti per Team Services e TFS).
 
 > [!NOTE]
 > Anche se si accede con le credenziali amministrative, per eseguire questo comando, è necessario aprire una finestra del prompt dei comandi con privilegi elevati. È inoltre necessario eseguire questo comando dal livello applicazione di Team Foundation.
@@ -126,4 +127,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>Vedere anche
 
 - [Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Managing server configuration with TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd) (Gestione della configurazione del server con TFSConfig)
+- [Managing server configuration with TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) (Gestione della configurazione del server con TFSConfig)

@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Office 365 Developer incluso nella sotto
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3f97d5b3d704c65ba0f18f653a1554c47175a09c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199872"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280546"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Vantaggio dell'abbonamento a Office 365 Developer nelle sottoscrizioni di Visual Studio
 
@@ -26,21 +26,21 @@ I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise rice
 
 2. A seconda dell'account, verrà eseguito il reindirizzamento alla pagina di accesso dell'organizzazione o dell'account Microsoft.   In entrambi i casi immettere il nome utente e la password e fare clic su **Avanti**.
 
-3. Dopo il completamento della procedura di accesso, viene visualizzata la pagina dei vantaggi per le sottoscrizioni.  Se si hanno più abbonamenti, è possibile passare dall'uno all'altro facendo clic sulla freccia dell'elenco a discesa nell'angolo superiore destro, sotto la barra multifunzione scura.  Il vantaggio Abbonamento a Office 365 Developer si trova nella categoria Strumenti.  Usare la freccia a destra della riga di riquadri per scorrere la pagina fino a rendere visibile il riquadro Office. 
+3. Dopo il completamento della procedura di accesso, viene visualizzata la pagina dei vantaggi per le sottoscrizioni.  Se si hanno più abbonamenti, è possibile passare dall'uno all'altro facendo clic sulla freccia dell'elenco a discesa nell'angolo superiore destro, sotto la barra multifunzione scura.  Il vantaggio Abbonamento a Office 365 Developer si trova nella categoria Strumenti.  Usare la freccia a destra della riga di riquadri per scorrere la pagina fino a rendere visibile il riquadro Office.
 
-4. Individuare il riquadro Abbonamento a Office 365 Developer nella categoria Strumenti.  Fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Dopo aver recuperato il codice, fare clic su **Attiva**. 
+4. Individuare il riquadro Abbonamento a Office 365 Developer nella categoria Strumenti.  Fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Dopo aver recuperato il codice, fare clic su **Attiva**.
 
     ![Riquadro del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-tile.png)
 
-5.  Il passaggio successivo consiste nella creazione di un account.  Specificare le informazioni di contatto e fare clic su **Avanti**. 
+5.  Il passaggio successivo consiste nella creazione di un account.  Specificare le informazioni di contatto e fare clic su **Avanti**.
 
     ![Account del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
-6.  Specificare le informazioni obbligatorie relative alla località in cui si userà l'abbonamento e fare clic su **Avanti**.  Le informazioni vengono usate per determinare la disponibilità di abbonamenti e le eventuali imposte applicabili.  
+6.  Specificare le informazioni obbligatorie relative alla località in cui si userà l'abbonamento e fare clic su **Avanti**.  Le informazioni vengono usate per determinare la disponibilità di abbonamenti e le eventuali imposte applicabili.
 
     ![Informazioni di contatto del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
-7.  Creare il nome utente e la password dell'account.  
+7.  Creare il nome utente e la password dell'account.
 
     ![Nome utente del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
@@ -48,16 +48,16 @@ I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise rice
 
 9.  A questo punto può venire richiesto di effettuare l'accesso.  Se nella pagina di accesso di Office 365 sono presenti più account, scegliere l'account associato a questo abbonamento.
 
-10. Nella pagina successiva viene visualizzata la conferma che l'abbonamento è disponibile gratuitamente.  Fare clic su **Avanti** per continuare.  
+10. Nella pagina successiva viene visualizzata la conferma che l'abbonamento è disponibile gratuitamente.  Fare clic su **Avanti** per continuare.
 
     ![Vantaggio Office 365 Developer - Che ne dici di questo](_img\vs-office-dev\vs-office-dev-price.png)
 
-11. Al termine del "Passaggio 3" viene richiesto di selezionare un "Metodo di pagamento".  Sono disponibili due opzioni di pagamento.  La prima opzione è l'aggiunta di una **carta di credito** (come visualizzato di seguito) e la seconda opzione è la **fattura**.  In entrambi i casi, quando si fa clic su **Effettuare l'ordine** viene inviato un ordine da 0,00 dollari.   
+11. Al termine del "Passaggio 3" viene richiesto di selezionare un "Metodo di pagamento".  Sono disponibili due opzioni di pagamento.  La prima opzione è l'aggiunta di una **carta di credito** (come visualizzato di seguito) e la seconda opzione è la **fattura**.  In entrambi i casi, quando si fa clic su **Effettuare l'ordine** viene inviato un ordine da 0,00 dollari.
 
     > [!NOTE]
     > I sottoscrittori che non vogliono fornire una carta di credito possono selezionare il metodo di pagamento **Fattura**.  È anche possibile selezionare **Pay by the year** (Pagamento annuale) per limitare la ricezione di fatture a una volta all'anno.
 
-12. A questo punto il riscatto del vantaggio Abbonamento a Office 365 Developer è completato.  Verrà visualizzata una pagina con la conferma dell'ordine.  Nella pagina è disponibile un collegamento alla [pagina di accesso](https://portal.office.com "pagina di accesso di Office 365").  È consigliabile creare un segnalibro per la pagina per uso successivo.  È anche consigliabile prendere nota dell'ID utente visualizzato sulla pagina.  Dopo la configurazione dell'account, poi, si riceverà un messaggio di posta elettronica di benvenuto all'indirizzo specificato.  Fare clic su **Avvia configurazione** per continuare.  
+12. A questo punto il riscatto del vantaggio Abbonamento a Office 365 Developer è completato.  Verrà visualizzata una pagina con la conferma dell'ordine.  Nella pagina è disponibile un collegamento alla [pagina di accesso](https://portal.office.com "pagina di accesso di Office 365").  È consigliabile creare un segnalibro per la pagina per uso successivo.  È anche consigliabile prendere nota dell'ID utente visualizzato sulla pagina.  Dopo la configurazione dell'account, poi, si riceverà un messaggio di posta elettronica di benvenuto all'indirizzo specificato.  Fare clic su **Avvia configurazione** per continuare.
 
     ![Conferma dell'ordine del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-confirm.png)
 
@@ -73,7 +73,7 @@ I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise rice
 
 <sup>1</sup>*include: Not for Resale (NFR),  Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Esclude: Microsoft Partner Network (MPN), Imagine, Microsoft Valued Partner (MVP), Region Director (RD).*
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -90,7 +90,7 @@ R: configurazione del vantaggio Abbonamento a Office 365 Developer
     ![Interfaccia di amministrazione del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
-3.  Il passaggio 2 consente agli amministratori di aggiungere utenti all'account Office 365.  Aggiungere gli utenti desiderati e fare clic su **Avanti**.  
+3.  Il passaggio 2 consente agli amministratori di aggiungere utenti all'account Office 365.  Aggiungere gli utenti desiderati e fare clic su **Avanti**.
 
 4.  Il passaggio 3 consente di installare le applicazioni di Office.  È possibile scegliere di installarle subito o in seguito.  Per installare Office Professional Plus o Skype for Business, è sufficiente fare clic sul pulsante **Installa ora** corrispondente.  L'abbonamento a Office 365 ProPlus include:
     - Word
@@ -103,18 +103,18 @@ R: configurazione del vantaggio Abbonamento a Office 365 Developer
     - Skype for Business
     - OneDrive for Business
 
-5.  Scegliere la lingua preferita e fare clic su **Installa**. 
+5.  Scegliere la lingua preferita e fare clic su **Installa**.
 
     ![Installare le applicazioni del vantaggio Office 365 Developer](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
 
 6. Fare clic su **Esegui** per iniziare l'installazione immediatamente oppure fare clic su **Salva** per salvare il pacchetto di installazione nel PC e installarlo in seguito.
 
-7.  Quando viene visualizzata la finestra di dialogo Controllo dell'account utente, fare clic su **Sì** per consentire l'installazione di Office nel computer in uso.  
+7.  Quando viene visualizzata la finestra di dialogo Controllo dell'account utente, fare clic su **Sì** per consentire l'installazione di Office nel computer in uso.
 
 
 ### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>D: qual è la procedura per aggiornare il numero di utenti dal portale di amministrazione di Office 365?
-R: se durante la procedura di riscatto non è stato assegnato il numero di utenti necessario e in seguito si vuole aumentare questo numero, attenersi alla procedura seguente. 
+R: se durante la procedura di riscatto non è stato assegnato il numero di utenti necessario e in seguito si vuole aumentare questo numero, attenersi alla procedura seguente.
 
 1. Per aumentare il numero degli utenti dopo la procedura di riscatto, è necessario visitare [https://portal.office.com](https://portal.office.com) e accedere con l'"ID utente" creato durante la procedura di creazione del tenant.
 
@@ -136,5 +136,5 @@ R: se durante la procedura di riscatto non è stato assegnato il numero di utent
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Serve aiuto con l'abbonamento a Office Developer? Vedere le risorse di [supporto](https://developer.microsoft.com/office/support) in [Office Dev Center](https://developer.microsoft.com/office).
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 
+-  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

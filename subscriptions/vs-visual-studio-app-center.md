@@ -9,12 +9,12 @@ description: Informazioni sul vantaggio Visual Studio App Center nelle sottoscri
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9c425e675deb97236665d328774e0b9c2fab4e77
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31190187"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282538"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center nelle sottoscrizioni di Visual Studio
 
@@ -25,14 +25,14 @@ App Center è uno strumento cruciale per il controllo delle app.
 -  Aggiungere notifiche push all'app in pochi minuti
 
 ## <a name="activation-steps"></a>Procedura di attivazione
-Iniziare a usare Visual Studio App Center è facile. 
+Iniziare a usare Visual Studio App Center è facile.
 1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro di Visual Studio App Center e fare clic su **Inizia subito**.
 
     ![Riquadro Visual Studio App Center](_img/vs-app-center/vs-app-center-tile.png)
 
-3. Creare quindi un account.  Per l'accesso è possibile usare account esistenti di Microsoft, Google, GitHub o Facebook oppure creare un nuovo account specificando nome utente, indirizzo di posta elettronica e password.  Fare clic su **Crea account** per continuare. 
+3. Creare quindi un account.  Per l'accesso è possibile usare account esistenti di Microsoft, Google, GitHub o Facebook oppure creare un nuovo account specificando nome utente, indirizzo di posta elettronica e password.  Fare clic su **Crea account** per continuare.
 
     ![Creazione dell'account in Visual Studio App Center](_img/vs-app-center/vs-app-center-create-account.png)
 
@@ -52,21 +52,21 @@ Iniziare a usare Visual Studio App Center è facile.
 
 <sup>1</sup>*Include: Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Microsoft Valued Partner (MVP), Region Director (RD).*
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>D: ricevo un messaggio di errore di browser non supportato.  Qual è il problema? 
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>D: ricevo un messaggio di errore di browser non supportato.  Qual è il problema?
 R: per App Center sono richieste funzionalità più recenti che potrebbero non essere disponibili in alcuni browser meno recenti.  Se il browser non è supportato, seguire questa procedura:
-1.  Aprire un browser diverso, ad esempio Microsoft Edge o le versioni più recenti di Google Chrome, Firefox o Safari.  
-2.  Connettersi a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ed effettuare l'accesso. 
-3.  Fare clic sul collegamento **Inizia subito** nel riquadro di Visual Studio App Center. 
+1.  Aprire un browser diverso, ad esempio Microsoft Edge o le versioni più recenti di Google Chrome, Firefox o Safari.
+2.  Connettersi a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ed effettuare l'accesso.
+3.  Fare clic sul collegamento **Inizia subito** nel riquadro di Visual Studio App Center.
 
-A questo punto dovrebbe essere possibile accedere al portale di App Center e creare l'account. 
+A questo punto dovrebbe essere possibile accedere al portale di App Center e creare l'account.
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Serve aiuto con App Center?  
-    - È possibile ottenere suggerimenti e risposte dal team di App Center in [App Center Help Center](https://intercom.help/appcenter/). 
-    - Vedere la [documentazione completa di App Center](/appcenter/) 
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 
+-  Serve aiuto con App Center?
+    - È possibile ottenere suggerimenti e risposte dal team di App Center in [App Center Help Center](https://intercom.help/appcenter/).
+    - Vedere la [documentazione completa di App Center](/appcenter/)
+-  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

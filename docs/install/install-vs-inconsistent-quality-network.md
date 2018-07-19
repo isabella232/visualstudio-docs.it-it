@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297626"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Installare Visual Studio 2017 in ambienti di rete con larghezza di banda ridotta o non affidabili
 
 È consigliabile provare il nuovo &mdash;programma di installazione Web di Visual Studio, che garantisce risultati molto soddisfacenti nella maggior parte delle situazioni.
 
  > [!div class="button"]
- > [Scarica Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [Scarica Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 Tuttavia, se la connessione Internet non è disponibile o affidabile, è possibile usare la riga di comando per creare una cache locale dei file necessari per completare un'installazione offline. Ecco come fare.
@@ -46,7 +47,7 @@ Il file di installazione o, per essere più specifici, il file di un programma d
 
 ## <a name="step-2---create-a-local-install-cache"></a>Passaggio 2: Creare una cache di installazione locale
 
-Per completare questo passaggio è necessario avere una connessione Internet. Per creare un layout locale, aprire un prompt dei comandi e usare uno dei comandi degli esempi seguenti. Negli esempi seguenti si presuppone l'uso dell'edizione Community di Visual Studio: modificare il comando a seconda della propria edizione.
+Per completare questo passaggio è necessario avere una connessione Internet. Per creare un layout locale, aprire un prompt dei comandi e usare uno dei comandi presenti negli esempi seguenti. Negli esempi seguenti si presuppone che si stia usando Visual Studio Community Edition: modificare il comando in base all'edizione in uso.
 
 - Per lo sviluppo per Web .NET e desktop .NET, eseguire:
 
@@ -106,7 +107,7 @@ Usare questo comando per eseguire l'installazione:
 
 ## <a name="get-support"></a>Supporto
 
-Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Non sempre tutto funziona correttamente. Se l'installazione di Visual Studio non riesce, vedere la pagina [Risoluzione degli errori di installazione e aggiornamento di Visual Studio 2017](troubleshooting-installation-issues.md). Se nessuna delle procedure di risoluzione dei problemi risulta utile, contattare Microsoft tramite chat in tempo reale per richiedere assistenza per l'installazione (solo in lingua inglese). Per informazioni dettagliate, vedere la [pagina del supporto di Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Ecco alcune altre opzioni di supporto:
 
@@ -120,3 +121,4 @@ Ecco alcune altre opzioni di supporto:
 * [Installare Visual Studio](install-visual-studio.md)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md)

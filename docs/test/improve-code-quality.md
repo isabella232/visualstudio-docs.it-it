@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0312b3aaffb12757466b11aa117170387f01c19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967221"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281615"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Strumenti di test di Visual Studio
 
@@ -38,7 +38,7 @@ Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di
 - I [test di carico](../test/quickstart-create-a-load-test-project.md) simulano il carico su un'applicazione server tramite l'esecuzione di unit test e test delle prestazioni Web.
 
 > [!NOTE]
-> Il testing unità è disponibile in tutte le edizioni di Visual Studio. Altri strumenti di test, come ad esempio Live Unit Testing, IntelliTest, e i test codificati dell'interfaccia utente sono disponibili solo in Visual Studio Enterprise Edition. Per altre informazioni sulle edizioni, vedere [Confronta gli IDE di Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+> Il testing unità è disponibile in tutte le edizioni di Visual Studio. Altri strumenti di test, come ad esempio Live Unit Testing, IntelliTest, e i test codificati dell'interfaccia utente sono disponibili solo in Visual Studio Enterprise Edition. Per altre informazioni sulle edizioni, vedere [Confronta gli IDE di Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Scenari correlati
 
