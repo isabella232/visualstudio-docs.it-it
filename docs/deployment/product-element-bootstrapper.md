@@ -1,5 +1,5 @@
 ---
-title: '&lt;Prodotto&gt; elemento (programma di avvio automatico) | Documenti Microsoft'
+title: '&lt;Prodotto&gt; elemento (programma di avvio automatico) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559439"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080405"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Prodotto&gt; elemento (programma di avvio automatico)
-Il `Product` è l'elemento XML di primo livello all'interno di un file di prodotto.  
+Il `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -139,8 +139,8 @@ ProductCode
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `Product` elemento è obbligatorio in un file di prodotto. Contiene l'attributo seguente.  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+ Il `Product` elemento è obbligatorio in un file di prodotto. Include l'attributo seguente.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
@@ -149,7 +149,7 @@ ProductCode
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente viene illustrato un file di prodotto completo per l'installazione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -252,4 +252,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)

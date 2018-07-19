@@ -1,5 +1,5 @@
 ---
-title: Distribuzione dei prerequisiti per le applicazioni a 64 bit | Documenti Microsoft
+title: Prerequisiti per le applicazioni a 64 bit la distribuzione | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ffb52e73be1f86b9ae4be67d130807fc7e238
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566004"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077932"
 ---
-# <a name="deploying-prerequisites-for-64-bit-applications"></a>Prerequisiti per la distribuzione di applicazioni a 64 bit
-La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione sono **x86** per piattaforme a 32 bit, **x64** per computer che supportano il set di istruzioni AMD64 ed EM64T e **Itanium** per il processore Itanium a 64 bit.  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>Distribuire i prerequisiti per le applicazioni a 64 bit
+La distribuzione ClickOnce supporta l'installazione di applicazioni su piattaforme a 64 bit. Le piattaforme di destinazione vengono **x86** per piattaforme a 32 bit **x64** per le macchine che supportano il set di istruzioni AMD64 ed EM64T, e **Itanium** per il processore Itanium a 64 bit.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  La tabella seguente elenca i componenti ridistribuibili che è possibile usare come prerequisiti per l'installazione dell'applicazione a 64 bit.  
@@ -38,12 +38,12 @@ La distribuzione ClickOnce supporta l'installazione di applicazioni su piattafor
 |Componente ridistribuibile|Supporto x64|Supporto IA64|  
 |---------------------|-----------------|------------------|  
 |[!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)]|Sì|No|  
-|Librerie di runtime di Visual C++ 2010 (IA64)|No|Sì|  
-|Librerie di runtime di Visual C++ 2010 (x64)|Sì|No|  
+|Librerie di runtime di Visual C++ 2010 (IA64)|No|Yes|  
+|Librerie di runtime di Visual C++ 2010 (x64)|Yes|No|  
 |Microsoft .NET Framework 4 (x86 e x64)|Sì||  
 |Microsoft .NET Framework 4 Client Profile (x86 e x64)|Yes||  
   
 ## <a name="see-also"></a>Vedere anche  
- [Distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)   
- [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Distribuire le applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md)   
+ [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Applicazioni a 64 bit](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

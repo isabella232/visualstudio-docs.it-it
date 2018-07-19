@@ -1,5 +1,5 @@
 ---
-title: Modifica delle impostazioni di visualizzazione tramite l'API Legacy | Documenti Microsoft
+title: Modifica delle impostazioni di visualizzazione tramite l'API Legacy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9857daab890c2dd7bf7a799b6dca4d1b74cb9e37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f92c4146cc40aff6cf4c73ab3652f68f33a27b51
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099337"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077968"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>La modifica delle impostazioni di visualizzazione tramite l'API Legacy
-Impostazioni per le funzionalità di editor di componenti di base, quali ritorno a capo automatico, il margine di selezione e lo spazio virtuale, possono essere modificate dall'utente mediante il **opzioni** la finestra di dialogo. Tuttavia, è anche possibile modificare queste impostazioni a livello di codice.  
+# <a name="change-view-settings-by-using-the-legacy-api"></a>Modificare le impostazioni di visualizzazione tramite l'API legacy
+Impostazioni per la funzionalità dell'editor principale, ad esempio a capo, margine di selezione e lo spazio virtuale, possono essere modificate dall'utente tramite il **opzioni** nella finestra di dialogo. Tuttavia, è anche possibile modificare queste impostazioni a livello di codice.  
   
-## <a name="changing-settings-by-using-the-legacy-api"></a>Modifica delle impostazioni tramite l'API Legacy  
- Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia espone un set di proprietà dell'editor di testo. Visualizzazione di testo contiene una categoria di proprietà (GUID_EditPropCategory_View_MasterSettings) che rappresenta il gruppo di impostazioni modificate a livello di codice per la visualizzazione del testo. Una volta che le impostazioni di visualizzazione sono state modificate in questo modo, non possono essere modificate nel **opzioni** la finestra di dialogo fino a quando non vengono reimpostate.  
+## <a name="change-settings-by-using-the-legacy-api"></a>Modificare le impostazioni utilizzando l'API legacy  
+ Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia espone un set di proprietà dell'editor di testo. La visualizzazione di testo contiene una categoria di proprietà (GUID_EditPropCategory_View_MasterSettings) che rappresenta il gruppo di impostazioni a livello di codice modificate per la visualizzazione di testo. Una volta Visualizza impostazioni sono state modificate in questo modo, non possono essere modificate nel **opzioni** nella finestra di dialogo fino a quando non vengono reimpostate.  
   
- Di seguito è il processo tipico per la modifica delle impostazioni di visualizzazione per un'istanza dell'editor di componenti di base.  
+ Di seguito è il processo tipico per la modifica delle impostazioni di visualizzazione per un'istanza dell'editor principale.  
   
-1.  Chiamare `QueryInterface` sul (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia.  
+1.  Chiamare `QueryInterface` di (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia.  
   
-2.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo, specificando un valore di GUID_EditPropCategory_View_MasterSettings per il `rguidCategory` parametro.  
+2.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo, specificando il valore GUID_EditPropCategory_View_MasterSettings per il `rguidCategory` parametro.  
   
-     Questa operazione restituisce un puntatore al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia, che contiene il set di proprietà forzato per la visualizzazione. Le impostazioni di questo gruppo in modo permanente forzate. Se un'impostazione non è presente in questo gruppo, quindi seguirà le opzioni specificate nel **opzioni** la finestra di dialogo o i comandi dell'utente.  
+     Questa operazione restituisce un puntatore al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia, che contiene il set di proprietà forzato per la visualizzazione. In modo permanente vengono forzate le impostazioni in questo gruppo. Se un'impostazione non è presente in questo gruppo, quindi seguirà le opzioni specificate nel **opzioni** nella finestra di dialogo o i comandi dell'utente.  
   
-3.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metodo, specificando il valore delle impostazioni appropriate nel `idprop` parametro.  
+3.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metodo, specificando il valore di impostazioni appropriate nel `idprop` parametro.  
   
-     Per forzare il ritorno a capo automatico, ad esempio, è consigliabile chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> e specificare un valore di VSEDITPROPID_ViewLangOpt_WordWrap, `vt` per il `idprop` parametro. In questa chiamata, `vt` è una variante del tipo VT_BOOL e `vt.boolVal` è VARIANT_TRUE.  
+     Ad esempio, per forzare il ritorno a capo automatico, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> e specificare il valore, VSEDITPROPID_ViewLangOpt_WordWrap `vt` per il `idprop` parametro. In questa chiamata `vt` è una variante di tipo VT_BOOL e `vt.boolVal` è VARIANT_TRUE.  
   
-## <a name="resetting-changed-view-settings"></a>Ripristino delle impostazioni di visualizzazione modificato  
- Per reimpostare qualsiasi vista modificata l'impostazione per un'istanza dell'editor principale, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> (metodo) e specificare il valore dell'impostazione appropriata nel `idprop` parametro.  
+## <a name="reset-changed-view-settings"></a>Reimpostazione modificato le impostazioni di visualizzazione  
+ Per reimpostare qualsiasi visualizzazione modificata l'impostazione per un'istanza dell'editor principale, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> metodo e specificare il valore dell'impostazione appropriata nel `idprop` parametro.  
   
- Ad esempio, per consentire di ritorno a capo automatico mobile liberamente, si sarebbe rimuoverlo dalla categoria di proprietà chiamando <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> e specificando un valore di VSEDITPROPID_ViewLangOpt_WordWrap per il `idprop` parametro.  
+ Ad esempio, per consentire l'a capo spostata liberamente, si sarebbe rimuoverlo dalla categoria della proprietà chiamando <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> e specificando il valore VSEDITPROPID_ViewLangOpt_WordWrap per il `idprop` parametro.  
   
- Per rimuovere modificate tutte le impostazioni per l'editor di componenti di base in una sola volta, specificare un valore di VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt per il `idprop` parametro. In questa chiamata, vt è una variante del tipo VT_BOOL e vt.boolVal è VARIANT_TRUE.  
+ Per rimuovere le impostazioni di tutto questo è cambiate per l'editor principale in una sola volta, specificare il valore VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt per il `idprop` parametro. In questa chiamata, vt è una variante di tipo VT_BOOL e vt.boolVal è VARIANT_TRUE.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Nell'Editor di componenti di base](../extensibility/inside-the-core-editor.md)   
- [L'accesso a theText visualizzazione tramite l'API Legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+ [All'interno dell'editor di base](../extensibility/inside-the-core-editor.md)   
+ [Visualizzazione di theText accesso usando l'API legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [Finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md)

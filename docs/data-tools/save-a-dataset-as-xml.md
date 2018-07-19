@@ -1,5 +1,5 @@
 ---
-title: Salvataggio di un set di dati in formato XML
+title: Salvare un set di dati come XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,31 +18,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c0b4b508acf90aac6e65e0a5f4a426bd2fce50
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5a1b0c453f3b48b12c5a77fce86789a66fe77c26
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924291"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37173997"
 ---
-# <a name="save-a-dataset-as-xml"></a>Salvataggio di un set di dati in formato XML
+# <a name="save-a-dataset-as-xml"></a>Salvare un set di dati come XML
 
-I dati XML in un set di dati sono accessibili chiamando i metodi XML disponibili nel set di dati. Per salvare i dati in formato XML, è possibile chiamare il <xref:System.Data.DataSet.GetXml%2A> metodo o <xref:System.Data.DataSet.WriteXml%2A> metodo di un <xref:System.Data.DataSet>.
+Accedere ai dati XML in un set di dati chiamando i metodi XML disponibili nel set di dati. Per salvare i dati in formato XML, è possibile chiamare il <xref:System.Data.DataSet.GetXml%2A> metodo o il <xref:System.Data.DataSet.WriteXml%2A> metodo di un <xref:System.Data.DataSet>.
 
 La chiamata di <xref:System.Data.DataSet.GetXml%2A> metodo restituisce una stringa che contiene i dati da tutte le tabelle di dati nel set di dati in formato XML.
 
 La chiamata di <xref:System.Data.DataSet.WriteXml%2A> metodo invia i dati in formato XML in un file specificato.
 
-## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Per salvare i dati in un set di dati come XML in una variabile
+## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Per salvare i dati in un set di dati in formato XML a una variabile
 
-- Il <xref:System.Data.DataSet.GetXml%2A> metodo restituisce un <xref:System.String>. Dichiarare una variabile di tipo <xref:System.String> e assegna il risultato di <xref:System.Data.DataSet.GetXml%2A> (metodo).
+- Il <xref:System.Data.DataSet.GetXml%2A> metodo restituisce un <xref:System.String>. Dichiarare una variabile di tipo <xref:System.String> e assegnare i risultati del <xref:System.Data.DataSet.GetXml%2A> (metodo).
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>Per salvare i dati in un set di dati come XML in un file
 
-- Il <xref:System.Data.DataSet.WriteXml%2A> metodo dispone di diversi overload. Dichiarare una variabile e la assegna un percorso valido in cui salvare il file. Il codice seguente viene illustrato come salvare i dati in un file:
+- Il <xref:System.Data.DataSet.WriteXml%2A> metodo dispone di diversi overload. Dichiarare una variabile e assegnarla a un percorso valido per salvare il file. Il codice seguente viene illustrato come salvare i dati in un file:
 
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]

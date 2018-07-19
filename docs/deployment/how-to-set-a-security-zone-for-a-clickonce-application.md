@@ -1,5 +1,5 @@
 ---
-title: "Procedura: impostare un'area di sicurezza per un'applicazione ClickOnce | Documenti Microsoft"
+title: "Procedura: impostare un'area di sicurezza per un'applicazione ClickOnce | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b2155cb36a2538bd93c48ccda1f2c93b0876b95
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564548"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077727"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procedura: impostare un'area di sicurezza per un'applicazione ClickOnce
 Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un'applicazione ClickOnce, è necessario iniziare con un set di autorizzazioni di base nella pagina **Sicurezza** di **Creazione progetti**.  
@@ -46,6 +46,5 @@ Quando si impostano le autorizzazioni di sicurezza dall'accesso di codice per un
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Sicurezza di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

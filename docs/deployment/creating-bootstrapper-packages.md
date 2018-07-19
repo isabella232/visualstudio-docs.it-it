@@ -22,30 +22,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572725"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078442"
 ---
 # <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
-Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (.msi) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile o prerequisito, che compare nella **prerequisiti** finestra di dialogo per ClickOnce è un pacchetto di programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito. 
+Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili, ad esempio Windows Installer (*file con estensione msi*) i file e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile o prerequisito, che viene visualizzato nei **prerequisiti** finestra di dialogo di ClickOnce è un pacchetto di programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito. 
   
-Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
+Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. In secondo luogo, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
   
-## <a name="create-custom-bootstrapper-packages"></a>Creazione di programmi di avvio automatico personalizzato  
-È possibile generare i manifesti del programma di avvio utilizzando l'Editor XML in Visual Studio. Per un esempio di creazione di un pacchetto del programma di avvio, vedere la sezione [procedura dettagliata: creare un programma di avvio automatico personalizzato con un prompt di privacy](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+## <a name="create-custom-bootstrapper-packages"></a>Creare pacchetti di programma di avvio automatico personalizzato  
+È possibile generare i manifesti del programma di avvio automatico usando l'Editor XML in Visual Studio. Per un esempio di creazione di un pacchetto di programma di avvio automatico, vedere [procedura dettagliata: creare un programma di avvio personalizzata con un prompt di privacy](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
-Per creare un pacchetto di programma di avvio automatico, è necessario creare un manifesto del prodotto e, per ogni versione di un componente, nonché un manifesto di pacchetto localizzata.
+Per creare un pacchetto di programma di avvio automatico, è necessario creare un manifesto del prodotto e, per ogni versione localizzata di un componente, nonché un manifesto del pacchetto.
   
-* Il manifesto del prodotto, *Product*, contiene i metadati indipendenti dal linguaggio per il pacchetto. Questo file contiene i metadati comuni a tutte le versioni localizzate del componente ridistribuibile.  Per creare questo file, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).
+* Il manifesto del prodotto, *Product*, contiene tutti i metadati indipendenti dalla lingua per il pacchetto. Questo file contiene i metadati comuni a tutte le versioni localizzate del componente ridistribuibile.  Per creare questo file, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).
   
-* Il manifesto del pacchetto *package*, contiene i metadati specifici del linguaggio; in genere contiene i messaggi di errore localizzato. Deve essere disponibile almeno un manifesto del pacchetto per ogni versione localizzata del componente. Per creare questo file, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).
+* Il manifesto del pacchetto *package*, contiene metadati specifici del linguaggio; in genere contiene i messaggi di errore localizzato. Deve essere disponibile almeno un manifesto del pacchetto per ogni versione localizzata del componente. Per creare questo file, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).
   
 Dopo aver creato questi file, inserire il file manifesto del prodotto in una cartella denominata per il programma di avvio automatico personalizzato. Il file manifesto del pacchetto deve essere inserito in una cartella denominata per le impostazioni locali. Ad esempio, se il file manifesto del pacchetto è destinato alla ridistribuzione in inglese, inserire il file in una cartella denominata en. Ripetere questo processo per ogni impostazione locale, ad esempio ja per il giapponese e de per il tedesco. Il pacchetto del programma di avvio automatico personalizzato finale potrebbe avere la struttura di cartelle seguente.  
 
-    ```
+    ```xml
     CustomBootstrapperPackage
       product.xml
       CustomBootstrapper.msi
@@ -60,7 +60,7 @@ Dopo aver creato questi file, inserire il file manifesto del prodotto in una car
         package.xml
     ```
   
-Successivamente, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+Quindi copiare i file ridistribuibili nel percorso della cartella di programma di avvio automatico. Per altre informazioni, vedere [procedura: creare un pacchetto bootstrapper localizzata](../deployment/how-to-create-a-localized-bootstrapper-package.md).
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     
@@ -72,13 +72,13 @@ oppure
   
     *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
-Nei sistemi a 64 bit, utilizzare la seguente chiave del Registro di sistema:  
+Nei sistemi a 64 bit, usare la chiave del Registro di sistema seguente:  
   
     *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
-Ciascun componente ridistribuibile viene mostrato nella propria sottocartella nella directory dei pacchetti. Il prodotto del manifesto e ridistribuibile file devono essere inseriti in questa sottocartella. Le versioni localizzate dei manifesti di pacchetto e componente devono essere inserite in sottocartelle denominate in base al nome delle impostazioni cultura.  
+Ciascun componente ridistribuibile viene mostrato nella propria sottocartella nella directory dei pacchetti. Il prodotto del manifesto e pacchetto ridistribuibile di file devono essere inseriti in questa sottocartella. Le versioni localizzate dei manifesti di pacchetto e del componente devono essere inserite nelle sottocartelle denominate in base al nome delle impostazioni cultura.  
   
-Dopo che questi file vengono copiati nella cartella del programma di avvio automatico, il relativo pacchetto viene visualizzato automaticamente in Visual Studio **prerequisiti** finestra di dialogo. Se il pacchetto di programma di avvio automatico personalizzato non è visualizzato, chiudere e riaprire il **prerequisiti** finestra di dialogo. Per altre informazioni, vedere [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md).  
+Dopo che questi file vengono copiati nella cartella di programma di avvio automatico, il pacchetto di programma di avvio automatico viene visualizzata automaticamente in Visual Studio **prerequisiti** nella finestra di dialogo. Se il pacchetto di programma di avvio automatico non viene visualizzata, chiudere e riaprire il **prerequisiti** nella finestra di dialogo. Per altre informazioni, vedere [finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).  
   
 La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.  
   
@@ -88,18 +88,18 @@ La tabella seguente illustra le proprietà popolate automaticamente dal programm
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Microsoft Windows 95, Windows 98 o Windows ME. La sintassi della versione è Principale.Secondario.ServicePack.|  
 |[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numero di versione per i sistemi operativi Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 o Windows 7. La sintassi della versione è Principale.Secondario.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Versione dell'assembly di Windows Installer (msi.dll) eseguito durante l'installazione.|  
+|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|La versione dell'assembly di Windows Installer (MSI) per l'esecuzione durante l'installazione.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Questa proprietà viene impostata se l'utente ha i privilegi di amministratore. I valori sono true o false.|  
-|InstallMode|La modalità di installazione indica il percorso dal quale deve essere installato il componente. Sono inclusi i valori seguenti:<br /><br /> -HomeSite: prerequisiti vengono installati dal sito Web del fornitore.<br />-SpecificSite: prerequisiti vengono installati dal percorso selezionato.<br />-SameSite: prerequisiti vengono installati dallo stesso percorso dell'applicazione.|  
+|InstallMode|La modalità di installazione indica il percorso dal quale deve essere installato il componente. Sono inclusi i valori seguenti:<br /><br /> -HomeSite: i prerequisiti vengono installati dal sito Web del fornitore.<br />-SpecificSite: i prerequisiti vengono installati dal percorso selezionato.<br />-SameSite: i prerequisiti vengono installati dallo stesso percorso dell'applicazione.|  
   
-## <a name="separating-redistributables-from-application-installations"></a>Separazione dei ridistribuibili dalle installazioni delle applicazioni  
+## <a name="separate-redistributables-from-application-installations"></a>Componenti ridistribuibili separati dalle installazioni delle applicazioni  
 Per impedire che i file ridistribuibili vengano distribuiti nei progetti di installazione, creare un elenco di ridistribuibili nella cartella RedistList situata nella directory di .NET Framework:  
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-L'elenco dei ridistribuibili è un file XML al quale è necessario assegnare un nome usando il formato *Nome azienda*.*Nome componente*.RedistList.xml. In tal caso, ad esempio, se il componente è DataWidgets Acme, usare *DataWidgets*. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
+L'elenco dei ridistribuibili è un file XML che deve essere denominato utilizzando il formato seguente:  *\<nome società >.\< Nome componente >. RedistList*. Quindi, ad esempio, se il componente viene chiamato DataWidgets e Acme, usare *DataWidgets*. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
 <FileList Redist="Acme.DataWidgets" >  
 <File AssemblyName="Acme.DataGrid" Version="1.0.0.0" PublicKeyToken="b03f5f7f11d50a3a" Culture="neutral" ProcessorArchitecture="MSIL" InGAC="true" />  
@@ -107,7 +107,7 @@ L'elenco dei ridistribuibili è un file XML al quale è necessario assegnare un 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [La finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md)   
- [Riferimenti dello Schema di pacchetto e prodotto](../deployment/product-and-package-schema-reference.md)   
- [Utilizzo di Visual Studio 2005 del programma di avvio per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md)   
+ [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)   
+ [Usare il programma di bootstrap di Visual Studio 2005 per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)

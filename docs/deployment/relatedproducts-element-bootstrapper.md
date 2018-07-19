@@ -1,5 +1,5 @@
 ---
-title: '&lt;RelatedProducts&gt; elemento (programma di avvio automatico) | Documenti Microsoft'
+title: '&lt;RelatedProducts&gt; elemento (programma di avvio automatico) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5701b88f3942301c8fdb6d674fc323e62a93589b
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815457"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077805"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (programma di avvio automatico)
-Il `RelatedProducts` elemento definisce i prodotti che dipendono o sono inclusi nel prodotto corrente.  
+Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono inclusi nel prodotto corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -51,32 +51,32 @@ Il `RelatedProducts` elemento definisce i prodotti che dipendono o sono inclusi 
 </RelatedProducts>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `RelatedProducts` è un elemento figlio del `Product` elemento. Non dispone di attributi.  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+ Il `RelatedProducts` elemento è figlio di `Product` elemento. Non dispone di attributi.  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  
- Il `DependsOnProduct` elemento indica che il prodotto corrente dipende dal prodotto specificato, e pertanto deve essere installato prima di quello corrente. È un figlio di `RelatedProducts` elemento. Oggetto `RelatedProducts` elemento può contenere uno o più `DependsOnProduct` elementi.  
+ Il `DependsOnProduct` elemento indica che il prodotto corrente dipende dal prodotto specificato e che il prodotto deve essere installato prima di quello corrente. È un figlio di `RelatedProducts` elemento. Oggetto `RelatedProducts` elemento può contenere uno o più `DependsOnProduct` elementi.  
   
- `DependsOnProduct` presenta l'attributo seguente.  
+ `DependsOnProduct` ha l'attributo seguente.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Code`|Il nome del prodotto incluso, come specificato dal codice di `ProductCode` attributo del `Product` elemento. Per ulteriori informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
+|`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="eitherproducts"></a>EitherProducts  
- Il `EitherProducts` elemento definisce zero o più `DependsOnProduct` elementi, e non ha attributi. Almeno un `DependsOnProduct` in questo set deve essere installato prima del prodotto corrente. Oggetto `RelatedProducts` elemento può contenere zero o più `EitherProducts` elementi.  
+ Il `EitherProducts` elemento definisce zero o più `DependsOnProduct` elementi, e non include attributi. Almeno un `DependsOnProduct` in questo set deve essere installato prima del prodotto corrente. Oggetto `RelatedProducts` può contenere zero o più `EitherProducts` elementi.  
   
 ## <a name="includesproduct"></a>IncludesProduct  
- Il `IncludesProduct` elemento indica che un prodotto è incluso nell'installazione corrente che non richiede un'installazione separata. È un figlio di `RelatedProducts` elemento. Oggetto `RelatedProducts` elemento può contenere uno o più `IncludesProduct` elementi.  
+ Il `IncludesProduct` elemento indica che un prodotto sia incluso nell'installazione corrente e non richiede un'installazione separata. È un figlio di `RelatedProducts` elemento. Oggetto `RelatedProducts` elemento può contenere uno o più `IncludesProduct` elementi.  
   
- `IncludesProduct` presenta l'attributo seguente.  
+ `IncludesProduct` ha l'attributo seguente.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Code`|Il nome del prodotto incluso, come specificato dal codice di `ProductCode` attributo del `Product` elemento. Per ulteriori informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
+|`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente specifica che Microsoft Installer viene installato con il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]e pertanto non richiede un'installazione separata.  
+ Esempio di codice seguente specifica che sia installato Microsoft Installer con la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]e pertanto non richiede un'installazione separata.  
   
 ```xml  
 <RelatedProducts>  
@@ -85,4 +85,4 @@ Il `RelatedProducts` elemento definisce i prodotti che dipendono o sono inclusi 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [\<Prodotto > elemento](../deployment/product-element-bootstrapper.md)
+ [\<Product > elemento](../deployment/product-element-bootstrapper.md)

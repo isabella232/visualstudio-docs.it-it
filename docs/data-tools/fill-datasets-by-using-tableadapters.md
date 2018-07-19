@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57387cecfdf58667998cc3766617d37c62e0f4ab
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: HT
+ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757081"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131973"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
@@ -106,7 +106,7 @@ TableAdapter usare comandi di dati per leggere e scrivere dal database. Usare in
 Quando si usa un oggetto TableAdapter, esegue in modo efficace le stesse operazioni con i comandi che si eseguono in genere. Ad esempio, quando si chiama l'adapter `Fill` metodo, l'adapter viene eseguito il comando dati relativo `SelectCommand` proprietà e Usa un lettore di dati (ad esempio, <xref:System.Data.SqlClient.SqlDataReader>) per caricare il set dei risultati nella tabella di dati. Analogamente, quando si chiama l'adapter `Update` metodo, viene eseguito il comando appropriato (nelle `UpdateCommand`, `InsertCommand`, e `DeleteCommand` proprietà) per ciascun record nella tabella di dati modificato.
 
 > [!NOTE]
-> Se non sono sufficienti informazioni della query principale, il `InsertCommand`, `UpdateCommand`, e `DeleteCommand` i comandi vengono creati per impostazione predefinita quando l'oggetto TableAdapter viene generato. Se l'oggetto TableAdapter principale del query è maggiore di una singola tabella `SELECT` istruzione, è possibile la finestra di progettazione non sia in grado di generare `InsertCommand`, `UpdateCommand`, e `DeleteCommand`. Se non vengono generati i comandi seguenti, è possibile ricevere un errore durante l'esecuzione di `TableAdapter.Update` (metodo).
+> Se non sono sufficienti informazioni della query principale, il `InsertCommand`, `UpdateCommand`, e `DeleteCommand` i comandi vengono creati per impostazione predefinita quando viene generato l'oggetto TableAdapter. Se l'oggetto TableAdapter principale del query è maggiore di una singola tabella `SELECT` istruzione, è possibile la finestra di progettazione non sia in grado di generare `InsertCommand`, `UpdateCommand`, e `DeleteCommand`. Se non vengono generati i comandi seguenti, è possibile ricevere un errore durante l'esecuzione di `TableAdapter.Update` (metodo).
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 

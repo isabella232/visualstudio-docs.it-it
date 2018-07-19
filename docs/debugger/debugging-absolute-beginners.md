@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cba770195ced84083e67ae42afbef53631e5ba1
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
-ms.translationtype: HT
+ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890214"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131869"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Come eseguire il debug per principianti
 
@@ -41,7 +41,7 @@ Uso di un debugger in modo efficace è anche una competenza che richiede tempo e
 
 ## <a name="examine-your-assumptions"></a>Esaminare i presupposti
 
-Prima si esamina un bug o un errore, considerare l'ipotesi che ha effettuato si prevede che un determinato risultato. Presupposti nascosti o sconosciuti possono ostacolare l'identificazione di un problema anche quando si intende corretto la causa del problema in un debugger. È possibile un lungo elenco di possibili presupposti! Ecco alcune domande da porsi alla richiesta di verifica i presupposti sono.
+Prima si esamina un bug o un errore, considerare l'ipotesi che ha effettuato si prevede che un determinato risultato. Presupposti nascosti o sconosciuti possono ostacolare l'identificazione di un problema anche quando si intende corretto la causa del problema in un debugger. È possibile un lungo elenco di possibili presupposti! Ecco alcune domande da porsi alla richiesta di verifica i presupposti.
 
 * Si sta usando l'API a destra (vale a dire, l'oggetto a destra, funzione, metodo o proprietà)? Un'API che sta usando non cosa tu pensi. (Dopo aver esaminato la chiamata all'API nel debugger, correggere la situazione potrebbe essere necessario un viaggio la documentazione per aiutare a identificare l'API corretta.)
 
@@ -322,7 +322,7 @@ Quando si trova l'area di codice con il problema, utilizzare il debugger per esa
 
 * [Esaminare le variabili](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) e verificare se contengono il tipo di valori che devono contenere. Se un valore non valido, scoprire dove è stato impostato il valore non valido (per individuare dove è stato impostato il valore, potrebbe essere necessario il riavvio del debugger, esaminare i [stack di chiamate](../debugger/how-to-use-the-call-stack-window.md), o entrambi).
 
-* Controllare se l'applicazione è in esecuzione il codice che si prevede. (Ad esempio, nell'applicazione di esempio, è previsto il codice per l'istruzione switch impostare il tipo galaxy a irregolari, ma l'app ignorato il codice a causa di errore di digitazione.)
+* Controllare se l'applicazione è in esecuzione il codice che si prevede. (Ad esempio, nell'applicazione di esempio, è previsto il codice per l'istruzione switch impostare il tipo galaxy a irregolari, ma l'app ignorati il codice a causa di errore di digitazione.)
 
 > [!TIP]
 > Utilizzare un debugger per individuare i bug. Uno strumento di debug può individuare i bug *automaticamente* solo se ne conosce l'intento del codice. Uno strumento può solo conoscere la finalità del codice se dallo sviluppatore, esprimere tale finalità. La scrittura [unit test](../test/improve-code-quality.md) è come farlo.

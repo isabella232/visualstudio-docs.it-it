@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; elemento (distribuzione di ClickOnce) | Documenti Microsoft'
+title: '&lt;publisherIdentity&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815142"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081410"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (distribuzione di ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (distribuzione ClickOnce)
 Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,17 +37,17 @@ Contiene informazioni sull'editore che ha firmato questo manifesto della distrib
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `publisherIdentity` elemento è obbligatorio per manifesti firmati. Nella tabella seguente vengono illustrati gli attributi di `publisherIdentity` supportato dall'elemento.  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+ Il `publisherIdentity` elemento è obbligatorio per manifesti firmati. La tabella seguente illustra gli attributi di `publisherIdentity` supportato dall'elemento.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`name`|Obbligatorio. Descrive l'identità dell'entità che ha pubblicato l'applicazione.|  
+|`name`|Obbligatorio. Descrive l'identità dell'entità pubblicata l'applicazione.|  
 |`issuerKeyHash`|Obbligatorio. Contiene l'hash SHA-1 della chiave pubblica dell'autorità di certificazione.|  
   
 #### <a name="parameters"></a>Parametri  
   
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
+## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito  
   
 ## <a name="exceptions"></a>Eccezioni  
   

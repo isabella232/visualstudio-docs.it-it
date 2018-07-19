@@ -1,5 +1,5 @@
 ---
-title: '&lt;customErrorReporting&gt; elemento (distribuzione di ClickOnce) | Documenti Microsoft'
+title: '&lt;customErrorReporting&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ade854a37127443735e1c197c080aad3d5bd93
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c060c419fa72bb5914491a8ee666a9b1a2c6a622
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31556342"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080353"
 ---
-# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; elemento (distribuzione di ClickOnce)
+# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; elemento (distribuzione ClickOnce)
 Specifica un URI da visualizzare quando si verifica un errore.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
 <customErrorReporting  
    uri  
 />  
 ```  
   
 ## <a name="remarks"></a>Note  
- Questo elemento è facoltativo. Senza di esso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visualizza una finestra di dialogo di errore con lo stack dell'eccezione. Se il `customErrorReporting` elemento è presente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verrà invece visualizzato l'URI indicato dal `uri` parametro. L'URI di destinazione include la classe di eccezione esterna, la classe di eccezione interna e il messaggio di eccezione interna come parametri.  
+ Questo elemento è facoltativo. In caso contrario, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visualizza una finestra di dialogo di errore che mostra lo stack dell'eccezione. Se il `customErrorReporting` è presente, l'elemento [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] invece verrà visualizzato l'URI indicato dal `uri` parametro. L'URI di destinazione includerà la classe di eccezione esterna, la classe di eccezione interna e il messaggio di eccezione interna come parametri.  
   
- Utilizzare questo elemento per aggiungere funzionalità di segnalazione per l'applicazione. Poiché l'URI generato include informazioni sul tipo di errore, il sito Web è possibile analizzare tali informazioni e visualizzare, ad esempio, una schermata di risoluzione dei problemi appropriata.  
+ Usare questo elemento per aggiungere funzionalità di segnalazione all'applicazione. Poiché l'URI generato contiene informazioni sul tipo di errore, il sito Web è possibile analizzare tali informazioni e visualizzazione, ad esempio, una schermata di risoluzione dei problemi appropriata.  
   
 ## <a name="example"></a>Esempio  
- Il frammento di codice seguente viene illustrato il `customErrorReporting` elemento, con l'URI generato che potrebbe produrre.  
+ Il frammento seguente illustra il `customErrorReporting` elemento, con l'URI generato che potrebbe produrre.  
   
-```  
+```xml
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  
   
 Example Generated Error:  
@@ -50,4 +50,4 @@ http://www.contoso.com/applications/error.asp? outer=System.Deployment.Applicati
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
+ [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)

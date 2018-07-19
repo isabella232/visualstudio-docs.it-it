@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 29c6baaa4da4eae4a2302ec3916a156b59a49272
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 89463ca785a995f475519eeba5e2d4af07563428
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453883"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283149"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilazione e creazione di build in Visual Studio per Mac
 
@@ -20,7 +20,7 @@ Visual Studio per Mac consente di compilare applicazioni e creare assembly duran
 
 Visual Studio per Mac consente di creare ed eseguire build immediatamente, mantenendo al contempo il controllo della funzionalità di creazione della build. Il sistema di creazione di build di Visual Studio per Mac è MSBuild.
 
-Tutti i progetti e tutte le soluzioni create nell'interfaccia IDE hanno una configurazione di compilazione predefinita, che definisce il contesto per le build. Queste configurazioni possono essere modificate. In alternativa, è possibile creare configurazioni personalizzate. La creazione e la modifica di queste configurazioni aggiorna automaticamente il file di progetto, che viene quindi usato da MSBuild per la compilazione.  
+Tutti i progetti e tutte le soluzioni create nell'interfaccia IDE hanno una configurazione di compilazione predefinita, che definisce il contesto per le build. Queste configurazioni possono essere modificate. In alternativa, è possibile creare configurazioni personalizzate. La creazione e la modifica di queste configurazioni aggiorna automaticamente il file di progetto, che viene quindi usato da MSBuild per la compilazione.
 
 Per altre informazioni su come compilare progetti e soluzioni nell'IDE, vedere la guida [Compilazione e pulizia di progetti e soluzioni](building-and-cleaning-projects-and-solutions.md).
 
@@ -42,9 +42,9 @@ Visual Studio per Mac consente anche di eseguire le operazioni seguenti:
 
 È possibile usare il motore di compilazione MSBuild per compilare applicazioni tramite la riga di comando.
 
-Per altre informazioni sull'uso di MSBuild, vedere il contenuto in [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
+Per altre informazioni sull'uso di MSBuild, vedere il contenuto in [MSBuild](/visualstudio/msbuild/msbuild).
 
 ## <a name="building-from-visual-studio-team-services"></a>Compilazione da Visual Studio Team Services
 
-* [Build your Xamarin App](https://www.visualstudio.com/docs/build/apps/mobile/xamarin) (Compilare l'app Xamarin)
+* [Build your Xamarin App](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts) (Compilare l'app Xamarin)
 * [Continuous Integration with Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/) (Integrazione continua con Xamarin)

@@ -14,17 +14,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 0f23b4a602b707dbe126d0a97824694fc51d3ddf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809249"
 ---
 ### <a name="supported-operating-systems"></a>Supported Operating Systems  
 Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi:  
   
 -   Windows 10 (non phone) 
   
--   Windows 8 o 8.1 (phone non)
+-   Windows 8 o 8.1 (non phone)
   
 -   Windows 7 Service Pack 1  
   
@@ -43,9 +44,9 @@ Nel computer remoto deve essere in esecuzione uno dei seguenti sistemi operativi
   
 -   1 GB di spazio disponibile su disco rigido  
   
--   Disco rigido a 5400 RPM  
+-   Unità disco rigido da 5400 RPM  
   
 -   Scheda video che supporta DirectX 9 con una risoluzione di 1024 x 768 o superiore  
   
 ### <a name="network-configuration"></a>Configurazione di rete  
- Il computer remoto e quello che esegue Visual Studio devono essere connessi tramite una rete, un gruppo di lavoro o un gruppo home o collegati direttamente con un cavo Ethernet. Il debug tra due computer connessi tramite un proxy non è supportato. Il debug tramite una connessione di larghezza di banda ridotta, ad esempio di connessione remota a Internet, ad alta latenza o tramite Internet tra paesi non è consigliato e potrebbe non funzionare oppure essere inaccettabile.
+ Il computer remoto e quello che esegue Visual Studio devono essere connessi tramite una rete, un gruppo di lavoro o un gruppo home o collegati direttamente con un cavo Ethernet. Non è supportato tra due computer connessi tramite un proxy di debug. Debug tramite una latenza elevata o una connessione di larghezza di banda ridotta, ad esempio Internet, accesso remoto o la rete Internet tra paesi non è consigliabile e può avere esito negativo o essere inaccettabile.

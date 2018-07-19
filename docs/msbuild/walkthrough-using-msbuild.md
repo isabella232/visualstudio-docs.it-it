@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575845"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327037"
 ---
 # <a name="walkthrough-using-msbuild"></a>Procedura dettagliata: utilizzo di MSBuild
 MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa procedura dettagliata introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild. Contenuto della procedura dettagliata:
@@ -129,7 +129,7 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 
 3.  Eseguire msbuild con l'opzione di comando /t: HelloWorld. La destinazione HelloWorld verrà selezionata e compilata:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -178,7 +178,7 @@ MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che og
 ## <a name="examining-a-property-value"></a>Esaminare un valore della proprietà
  Per ottenere il valore di una proprietà, usare la sintassi seguente, dove PropertyName è il nome della proprietà:
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -199,7 +199,7 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -237,7 +237,7 @@ $(PropertyName)
 
 1.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -266,7 +266,7 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -308,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>Analisi dei valori di un tipo di elemento
  Per ottenere i valori di un tipo di elemento, usare la sintassi seguente, dove ItemType è il nome del tipo di elemento:
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -328,7 +328,7 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -342,7 +342,7 @@ $(PropertyName)
 
  Per modificare il separatore di un tipo di elemento, usare la sintassi seguente, dove ItemType è il tipo di elemento e Separator è una stringa di uno o più caratteri di separazione:
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -360,7 +360,9 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  Esaminare l'output. Dovrebbero essere visualizzate queste righe:
 
@@ -438,7 +440,7 @@ $(PropertyName)
 
 4.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -463,7 +465,7 @@ $(PropertyName)
 
  Per ottenere il valore dei metadati di un tipo di elemento, usare la sintassi seguente, dove ItemType è il nome del tipo di elemento e MetaDataName è il nome dei metadati:
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -479,7 +481,7 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -509,7 +511,7 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -529,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>Trasformazioni di metadati
  Gli elenchi di elementi possono essere trasformati in nuovi elenchi di elementi. Per trasformare un elenco di elementi, usare la sintassi seguente, dove ItemType è il nome del tipo di elemento e MetadataName è il nome dei metadati:
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -547,7 +549,7 @@ $(PropertyName)
 
 3.  Dalla **finestra di comando** immettere ed eseguire questa riga:
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 

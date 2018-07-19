@@ -14,14 +14,16 @@ ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e202c35ee6bd8353170e758629b1cc6e739b775d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900212"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080971"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementare IDisposable correttamente
 
@@ -34,59 +36,59 @@ ms.locfileid: "31900212"
 
 ## <a name="cause"></a>Causa
 
-`IDisposable` non è implementato correttamente. Tra le cause di questo problema sono elencate di seguito:
+Il <xref:System.IDisposable?displayProperty=nameWithType> interfaccia non è implementata correttamente. Possibili cause sono:
 
-- IDisposable è nuovamente implementato nella classe.
+- <xref:System.IDisposable> reimplementato nella classe.
 
-- Finalizzare viene nuovamente eseguito l'override.
+- Finalizzare è reoverridden.
 
-- Viene eseguito l'override di Dispose.
+- Viene eseguito l'override di Dispose ().
 
-- Dispose () non è pubblico, sealed o denominato Dispose.
+- Non è pubblico, il metodo Dispose () [sealed](/dotnet/csharp/language-reference/keywords/sealed), o denominati **Dispose**.
 
-- Dispose (bool) non protetti, virtuali o non sealed.
+- Dispose (bool) non è protetto, virtuale o non sealed.
 
-- In tipi non sealed, Dispose devono chiamare Dispose (true).
+- Nei tipi non sealed, Dispose () devono chiamare Dispose (true).
 
-- Per i tipi non sealed, l'implementazione di Finalize non chiama Dispose (bool) o il finalizzatore della classe base.
+- Per i tipi unsealed, l'implementazione di Finalize non chiama Dispose (bool) o il finalizzatore della classe base.
 
-Violazione di uno di questi modelli genererà l'avviso.
+Violazione di uno di questi modelli Attiva avviso CA1063.
 
-Ogni tipo non sealed che dichiara e implementa l'interfaccia IDisposable è necessario fornire il relativo metodo Dispose (bool) void virtuale protetto. Dispose devono chiamare Dispose (true) e Finalize deve chiamare Dispose (false). Se si sta creando un tipo non sealed che dichiara e implementa l'interfaccia IDisposable, è necessario definire Dispose (bool) e chiamarlo. Per ulteriori informazioni, vedere [pulizia delle risorse non gestite](/dotnet/standard/garbage-collection/unmanaged) nel [indicazioni per la progettazione di .NET Framework](/dotnet/standard/design-guidelines/index).
+Ogni tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia deve fornire il proprio metodo Dispose (bool) di void virtuale protetto. Dispose () devono chiamare Dispose (true) e il finalizzatore deve chiamare Dispose (false). Se si crea un tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia, è necessario definire Dispose (bool) e chiamarlo. Per altre informazioni, vedere [pulire le risorse non gestite (Guida per .NET)](/dotnet/standard/garbage-collection/unmanaged) e [criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-È necessario che tutti i tipi IDisposable implementino correttamente il modello Dispose.
+Tutti i <xref:System.IDisposable> i tipi devono implementare le [criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern) correttamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Esaminare il codice e determinare quale delle soluzioni seguenti per correggere questa violazione.
+Esaminare il codice e determinare quale delle seguenti soluzioni risolverà questa violazione:
 
-- Rimuovere IDisposable dall'elenco di interfacce implementate da {0} ed eseguire l'override dell'implementazione Dispose della classe base.
+- Rimuovere <xref:System.IDisposable> nell'elenco delle interfacce implementate dal tipo di ed eseguire l'override dell'implementazione Dispose della classe base.
 
-- Rimuovere il finalizzatore dal tipo {0}, eseguire l'override di Dispose (bool disposing) e inserire la logica di finalizzazione nel percorso di codice dove 'disposing' è false.
+- Rimuovere il finalizzatore dal tipo specificato, eseguire l'override di Dispose (bool disposing) e inserire la logica di finalizzazione nel percorso del codice dove 'disposing' è false.
 
-- Rimuovere {0}, eseguire l'override di Dispose (bool disposing) e inserire la logica di dispose nel percorso di codice dove 'disposing' è true.
+- Eseguire l'override di Dispose (bool disposing) e inserire la logica di dispose nel percorso del codice dove 'disposing' è true.
 
-- Assicurarsi che {0} sia dichiarato public e sealed.
+- Assicurarsi che sia dichiarato come pubblico Dispose () e [sealed](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Rinominare {0} in 'Dispose' e assicurarsi che sia dichiarato public e sealed.
+- Rinominare il metodo dispose **Dispose** e assicurarsi che sia dichiarato come pubblico e [sealed](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Assicurarsi che {0} è dichiarato come protected, virtual e non sealed.
+- Assicurarsi che che Dispose (bool) sia dichiarato come protected, virtual e unsealed.
 
-- Modificare {0} in modo che chiami Dispose (true), quindi chiama GC. SuppressFinalize nell'istanza dell'oggetto corrente ('this' o 'Me' in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e successivamente viene restituito.
+- Modificare Dispose () in modo che chiami Dispose (true), quindi chiama <xref:System.GC.SuppressFinalize%2A> sull'istanza dell'oggetto corrente (`this`, o `Me` in Visual Basic) e poi restituisce.
 
-- Modificare {0} in modo che chiami Dispose (false) e quindi restituisce.
+- Modificare il finalizzatore, in modo che chiami Dispose (false) e quindi restituisce.
 
-- Se si sta creando un tipo non sealed che dichiara e implementa l'interfaccia IDisposable, assicurarsi che l'implementazione di IDisposable segua il modello descritto in precedenza in questa sezione.
+- Se si crea un tipo non sealed che dichiara e implementa la <xref:System.IDisposable> l'interfaccia, assicurarsi che l'implementazione di <xref:System.IDisposable> segue il modello che è descritti in precedenza in questa sezione.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
 Non escludere un avviso da questa regola.
 
 ## <a name="pseudo-code-example"></a>Esempio di pseudocodice
 
-Lo pseudocodice seguente fornisce un esempio generale delle modalità di implementazione Dispose (bool) in una classe che utilizza gestita e le risorse native.
+Il pseudo-codice seguente viene fornito un esempio generale di come Dispose (bool) deve essere implementata in una classe che usa gestita e le risorse native.
 
 ```csharp
 public class Resource : IDisposable
@@ -102,7 +104,7 @@ public class Resource : IDisposable
     }
 
     // NOTE: Leave out the finalizer altogether if this class doesn't
-    // own unmanaged resources itself, but leave the other methods
+    // own unmanaged resources, but leave the other methods
     // exactly as they are.
     ~Resource()
     {
@@ -131,3 +133,8 @@ public class Resource : IDisposable
     }
 }
 ```
+
+## <a name="see-also"></a>Vedere anche
+
+- [Elimina modello (linee guida di progettazione framework)](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Pulire le risorse non gestite (Guida per .NET)](/dotnet/standard/garbage-collection/unmanaged)

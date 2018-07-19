@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: specificare un collegamento per il supporto tecnico | Documenti Microsoft'
+title: 'Procedura: specificare un collegamento per il supporto tecnico | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,30 +22,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24052420ecc04ab8a369f739efa885a6fa821fbd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31556592"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078826"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Procedura: specificare un collegamento per il supporto tecnico
-Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, il **URL di supporto** proprietà identifica una pagina Web o una condivisione file in cui gli utenti possono accedere per ottenere informazioni sull'applicazione. Questa proprietà è facoltativa. Se specificato, verrà visualizzato l'URL in ingresso dell'applicazione **Aggiungi / Rimuovi programmi** la finestra di dialogo.  
+Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, il **URL del supporto** proprietà identifica una pagina Web o una condivisione file in cui gli utenti possono accedere per ottenere informazioni sull'applicazione. Questa proprietà è facoltativa. Se specificato, verrà visualizzato l'URL in ingresso dell'applicazione **Aggiungi / Rimuovi programmi** nella finestra di dialogo.  
   
- Il **URL di supporto** proprietà può essere impostata sul **pubblica** pagina del **progettazione**.  
+ Il **URL del supporto** può impostare la proprietà il **Publish** pagina del **Progettazione progetti**.  
   
 ### <a name="to-specify-a-support-url"></a>Per specificare un URL di supporto  
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic su di **pubblica** scheda.  
+2.  Scegliere il **pubblica** scheda.  
   
-3.  Fare clic su di **opzioni** pulsante per aprire la **opzioni di pubblicazione** la finestra di dialogo.  
+3.  Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.  
   
 4.  Fare clic su **descrizione**.  
   
-5.  Nel **URL di supporto** immettere il percorso completo per una condivisione UNC, pagina Web o sito Web.  
+5.  Nel **URL del supporto** campo, immettere il percorso completo di una condivisione UNC, pagina Web o sito Web.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

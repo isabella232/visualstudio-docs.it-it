@@ -10,20 +10,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 760edee404ac609c16942489c1ff33f647013594
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bed9629c40d4d7b7e93ccd250474ea90b44ab7c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921228"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174101"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Impossibile modificare la finestra di progettazione durante il debug
 
-Questo messaggio viene visualizzato quando si tenta di modificare elementi in Progettazione relazionale oggetti durante l'esecuzione dell'applicazione in modalità di debug. Quando l'applicazione è in esecuzione in tale modalità, Progettazione relazionale oggetti è di sola lettura.
+Questo messaggio viene visualizzato quando viene effettuato un tentativo di modificare gli elementi nel **O/R Designer** quando l'applicazione è in esecuzione in modalità di debug. Quando l'applicazione è in esecuzione in modalità debug, il **O/R Designer** è di sola lettura.
 
-Per correggere l'errore, selezionare **arresta debug** sul **Debug** menu. Il debug viene interrotto e sarà quindi possibile modificare gli elementi in Progettazione relazionale oggetti.
+Per correggere questo errore, selezionare **Termina debug** nel **Debug** menu. L'applicazione interrompe il debug, ed è possibile modificare gli elementi di **O/R Designer**.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

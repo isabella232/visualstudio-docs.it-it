@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124ccc0a4eb7af470a9631bc2291dbeb089711e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951791"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924274"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 I comandi di Visual Studio consentono di richiamare un comando dalla finestra **Comando** , dalla finestra **Comando immediato** o dalla casella **Trova/Comando** . In ogni caso, per indicare che deve essere eseguito un comando anziché un'operazione di ricerca o di debug, viene usato il segno di maggiore (`>`).
@@ -61,7 +61,6 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 |[Nuovo file](../../ide/reference/new-file-command.md)|Crea un nuovo file e lo aggiunge al progetto attualmente selezionato.|
 |[Apri file](../../ide/reference/open-file-command.md)|Apre un file esistente e consente di specificare un editor.|
 |[Apri progetto](../../ide/reference/open-project-command.md)|Apre un progetto esistente e consente di aggiungerlo alla soluzione corrente.|
-|[Apri soluzione](../../ide/reference/open-solution-command.md)|Apre una soluzione esistente.|
 |[Print](../../ide/reference/print-command.md)|Valuta l'espressione e visualizza i risultati o il testo specificato.|
 |[Comando Controllo immediato](../../ide/reference/quick-watch-command.md)|Visualizza il testo selezionato o specificato nel campo **Espressione** della finestra di dialogo **Espressione di controllo rapida** .|
 |[Sostituisci](../../ide/reference/replace-command.md)|Sostituisce elementi di testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** .|

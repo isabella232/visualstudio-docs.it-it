@@ -1,3 +1,3 @@
-  **Si applica a**: le informazioni contenute in questo argomento sono valide per i progetti di componenti aggiuntivi VSTO per Excel. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Si applica a:** le informazioni contenute in questo argomento si applicano a VSTO aggiungere\-nei progetti di Excel. Per altre informazioni, vedere [funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../../vsto/features-available-by-office-application-and-project-type.md).
 
   

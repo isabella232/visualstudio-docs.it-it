@@ -1,7 +1,17 @@
 ---
-title: Riferimenti alle API non gestite ClickOnce | Documenti Microsoft
+title: Riferimenti alle API non gestite ClickOnce | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
+api_name:
+- CleanOnlineAppCache
+- GetDeploymentDataFromManifest
+- LaunchApplication
+api_location:
+- dfshim.dll
+api_type:
+- COM
+topic_type:
+- apiref
 ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
@@ -20,26 +30,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0651c42abb410b55af956744da7a5e37952770b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39082139"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API pubbliche non gestite da dfshim.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pubbliche API non gestite da dfshim.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
- Pulisce o disinstalla tutte le applicazioni in linea dal [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache dell'applicazione.  
+ Esegue la pulizia o disinstalla tutte le applicazioni online dal [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache dell'applicazione.  
   
 ### <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
   
 ### <a name="remarks"></a>Note  
- La chiamata a CleanOnlineAppCache avvia il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] del servizio se non è già in esecuzione.  
+ La chiamata a CleanOnlineAppCache avvierà il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] del servizio se non è già in esecuzione.  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
- Recupera le informazioni di distribuzione dall'URL manifesto e l'attivazione.  
+ Recupera le informazioni di distribuzione dall'URL del manifesto e l'attivazione.  
   
 ### <a name="parameters"></a>Parametri  
   
@@ -47,38 +58,38 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|Un puntatore al `ActivationURL`.|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|Un puntatore al `PathToDeploymentManifest`.|LPCWSTR|  
-|`pwzApplicationIdentity`|Un puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica l'identità dell'applicazione completo restituito.|LPWSTR|  
-|`pdwIdentityBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzApplicationIdentity` buffer, in WCHAR. Include lo spazio per il carattere di terminazione NULL.|LPDWORD|  
-|`pwzProcessorArchitecture`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica l'architettura del processore della distribuzione dell'applicazione, nel manifesto.|LPWSTR|  
+|`pwzApplicationIdentity`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica l'identità dell'applicazione completo restituito.|LPWSTR|  
+|`pdwIdentityBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzApplicationIdentity` buffer, in WCHAR. Ciò include lo spazio per il carattere di terminazione NULL.|LPDWORD|  
+|`pwzProcessorArchitecture`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica l'architettura del processore di distribuzione dell'applicazione, dal manifesto.|LPWSTR|  
 |`pdwArchitectureBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzProcessorArchitecture` buffer, in WCHAR.|LPDWORD|  
-|`pwzApplicationManifestCodebase`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica la codebase del manifesto dell'applicazione, nel manifesto.|LPWSTR|  
+|`pwzApplicationManifestCodebase`|Puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica la codebase del manifesto dell'applicazione, dal manifesto.|LPWSTR|  
 |`pdwCodebaseBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzApplicationManifestCodebase` buffer, in WCHAR.|LPDWORD|  
-|`pwzDeploymentProvider`|Un puntatore a un buffer per la ricezione di una stringa con terminazione NULL che specifica il provider di distribuzione dal manifesto, se presente. In caso contrario, viene restituita una stringa vuota.|LPWSTR|  
+|`pwzDeploymentProvider`|Un puntatore a un buffer per ricevere una stringa con terminazione NULL che specifica il provider di distribuzione dal manifesto, se presente. In caso contrario, viene restituita una stringa vuota.|LPWSTR|  
 |`pdwProviderBufferLength`|Un puntatore a un valore DWORD che è la lunghezza del `pwzProviderBufferLength`.|LPDWORD|  
   
 ### <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.  
   
 ### <a name="remarks"></a>Note  
  I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non deve essere vuoto.  
   
  È responsabilità del chiamante per pulire l'URL di attivazione. Ad esempio, aggiungendo caratteri di escape in cui sono necessari o rimuovendo la stringa di query.  
   
- È responsabilità del chiamante per limitare la lunghezza di input. Ad esempio, la lunghezza massima dell'URL è 2KB.  
+ È responsabilità del chiamante per limitare la lunghezza di input. Ad esempio, la lunghezza URL massima è 2KB.  
   
 ## <a name="launchapplication"></a>LaunchApplication  
- Avvia o installa un'applicazione utilizzando un URL di distribuzione.  
+ Avvia o si installa un'applicazione usando un URL di distribuzione.  
   
 ### <a name="parameters"></a>Parametri  
   
 |Parametro|Descrizione|Tipo|  
 |---------------|-----------------|----------|  
-|`deploymentUrl`|Puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto di distribuzione.|LPCWSTR|  
+|`deploymentUrl`|Un puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto della distribuzione.|LPCWSTR|  
 |`data`|Riservato per utilizzi futuri. Deve essere NULL.|LPVOID|  
 |`flags`|Riservato per utilizzi futuri. Deve essere 0.|DWORD|  
   
 ### <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
+ Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

@@ -14,34 +14,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7b992dadb703cf1c4f73830324e9934d7525645
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920457"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131882"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Panoramica di analisi del codice per il codice gestito
+# <a name="overview-of-code-analysis-for-managed-code"></a>Panoramica dell'analisi codice per il codice gestito
 
-Visual Studio 2017 analizza il codice gestito in due modi: con legacy *FxCop* analisi statica di assembly gestiti e con .NET Compiler Platform *analizzatori*. Questo argomento vengono illustrate l'analisi statica del codice FxCop. Per ulteriori informazioni sull'analisi del codice usando gli analizzatori di .NET Compiler Platform, vedere [Panoramica di Roslyn analizzatori](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 consente di analizzare il codice gestito in due modi: con legacy *FxCop* analisi statica di assembly gestiti e con .NET Compiler Platform *analizzatori*. Questo argomento illustra l'analisi statica del codice di FxCop. Per altre informazioni su analisi del codice tramite gli analizzatori .NET Compiler Platform, vedere [analizzatori di panoramica di Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 L'analisi del codice gestito analizza gli assembly gestiti e fornisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.
 
 Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come messaggi di avviso. I messaggi di avviso identificano eventuali problemi di programmazione e progettazione e, se possibile, forniscono informazioni su come risolverli.
 
-## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (integrated development environment)
+> [!NOTE]
+> Analisi statica del codice non sono supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di msbuild, si noterà un errore simile al **errori: CA0055: Impossibile identificare la piattaforma per \<your.dll >**. Per analizzare codice nei progetti .NET Core o .NET Standard, utilizzare [analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md) invece.
 
-È possibile eseguire l'analisi del codice del progetto manualmente o automaticamente.
+## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (ambiente di sviluppo integrato)
 
-Per eseguire l'analisi codice ogni volta che si compila un progetto, selezionare **Attiva analisi codice in fase di compilazione** nella pagina delle proprietà del progetto. Per ulteriori informazioni, vedere [procedura: abilitare e disabilitare analisi del codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+È possibile eseguire l'analisi del codice sul progetto manualmente o automaticamente.
 
-Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analizza** > **Esegui analisi del codice** > **Esegui analisi del codice su \<progetto >**.
+Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilita analisi codice su compilazione** nella pagina delle proprietà del progetto. Per altre informazioni, vedere [procedura: abilitare e disabilitare analisi del codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+
+Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<progetto >**.
 
 ## <a name="rule-sets"></a>Set di regole
 
-Regole di analisi del codice per il codice gestito raggruppate in [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). È possibile usare uno dei set di regole standard Microsoft oppure è possibile [creare un set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare esigenze specifiche.
+Regole di analisi codice per il codice gestito vengono raggruppate in [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). È possibile usare uno dei set di regole standard Microsoft oppure è possibile [creare un set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare esigenze specifiche.
 
-## <a name="suppress-warnings"></a>Esclusione di avvisi
+## <a name="suppress-warnings"></a>Non visualizzare avvisi
 
 È in genere utile indicare se un avviso non è applicabile. In questo modo lo sviluppatore e altri individui che potrebbero esaminare il codice in un secondo momento verranno informati del fatto che un avviso è stato sottoposto ad analisi, quindi è stato eliminato o ignorato.
 
@@ -55,10 +58,10 @@ Public class MyClass
 }
 ```
 
-Per ulteriori informazioni, vedere [esclusione di avvisi](../code-quality/in-source-suppression-overview.md).
+Per altre informazioni, vedere [non visualizzare avvisi](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Se non si è pronti per risolvere gli avvisi e si desidera aumentare la produttività sin da subito, puoi *linea di base* lo stato di analisi del progetto. Dal **Analizza** dal menu **Esegui analisi del codice ed Elimina problemi attivi**.
+> Se si esegue la migrazione di un progetto di Visual Studio 2017, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Se non si è pronti per risolvere gli avvisi e vogliono essere produttivi sin da subito, è possibile *baseline* lo stato di analisi del progetto. Dal **Analyze** dal menu **Esegui analisi del codice ed Elimina problemi attivi**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Eseguire l'analisi del codice come parte dei criteri di archiviazione
 
@@ -66,16 +69,16 @@ Le organizzazioni richiedono talvolta che tutte le archiviazioni soddisfino dete
 
 - Nel codice da archiviare non siano presenti errori di compilazione.
 
-- Analisi del codice viene eseguito come parte della compilazione più recente.
+- Analisi del codice viene eseguito come parte della build più recente.
 
-A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione. Per ulteriori informazioni, vedere [miglioramento della qualità del codice con i criteri di archiviazione del progetto Team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+A tale scopo, è utile quindi definire dei criteri specifici per l'archiviazione. Per altre informazioni, vedere [miglioramento della qualità del codice con i criteri di controllo il progetto Team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integrazione di team build
 
-È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per ulteriori informazioni, vedere [di compilazione e versione (VSTS)](/vsts/build-release/index).
+È possibile utilizzare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi come parte del processo di compilazione. Per altre informazioni, vedere [Build e release (VSTS)](/vsts/build-release/index).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica di Roslyn analizzatori](../code-quality/roslyn-analyzers-overview.md)
+- [Panoramica degli analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Uso di set di regole per raggruppare regole di analisi del codice](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [Procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

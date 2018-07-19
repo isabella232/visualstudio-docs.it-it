@@ -1,6 +1,6 @@
 ---
 title: 'CA1304: Specificare CultureInfo'
-ms.date: 11/04/2016
+ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64bbe0d710b720eab7a6fbb90d5dff67ae5cbb0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bae12da61047e8e9bde6ee097ed84c1d6c95acbc
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901119"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174140"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Specificare CultureInfo
+
 |||
 |-|-|
 |TypeName|SpecifyCultureInfo|
@@ -32,49 +33,58 @@ ms.locfileid: "31901119"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Un metodo o costruttore chiama un membro che presenta un overload che accetta un <xref:System.Globalization.CultureInfo?displayProperty=fullName> parametro e il metodo o costruttore non chiama l'overload che accetta il <xref:System.Globalization.CultureInfo> parametro. Questa regola ignora le chiamate ai metodi seguenti:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+Un metodo o costruttore chiama un membro che ha un overload che accetta un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parametro e il metodo o costruttore non chiama l'overload che accetta il <xref:System.Globalization.CultureInfo> parametro. Questa regola ignora le chiamate ai metodi seguenti:
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
-
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=fullName> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non produrre l'effetto desiderato in tutte le impostazioni locali. Inoltre, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] membri scelgono impostazioni cultura predefinite e formattazione basata su ipotesi che potrebbero non essere corrette per il codice. Per garantire che il codice funzioni come previsto negli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
 
--   Se il valore verrà visualizzato all'utente, utilizzare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.
+Quando un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=nameWithType> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri di .NET Framework scelgono le impostazioni cultura predefinite e formattazione basato su presupposti che potrebbero non essere corretti per il codice. Per verificare che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
 
--   Se il valore verrà archiviato e accessibile da parte di software, vale a dire, mantenuto in un file o di un database, utilizzare le impostazioni cultura invarianti. Vedere <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.
+- Se il valore verrà visualizzato all'utente, usare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
--   Se non si conosce la destinazione del valore, sono consumer di dati o provider di specificare le impostazioni cultura.
+- Se il valore verrà archiviato e utilizzato dal software, vale a dire, mantenuto in un file o database, usare le impostazioni cultura invarianti. Vedere <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
- Si noti che <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> viene utilizzato solo per recuperare le risorse localizzate con un'istanza di <xref:System.Resources.ResourceManager?displayProperty=fullName> classe.
+- Se non si conosce la destinazione del valore, dispone al consumer di dati o provider di specificare le impostazioni cultura.
 
- Anche se il comportamento predefinito del membro di overload è adatto alle proprie esigenze, è preferibile chiamare in modo esplicito l'overload specifico delle impostazioni cultura in modo che il codice autodocumentato e gestita in modo più semplice.
+Anche se il comportamento predefinito del membro di overload è adatto alle proprie esigenze, è preferibile chiamare in modo esplicito l'overload specifico delle impostazioni cultura in modo che quest'ultima è autodocumentato e più facilmente gestibili.
+
+> [!NOTE]
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> viene usato solo per recuperare le risorse localizzate con un'istanza del <xref:System.Resources.ResourceManager?displayProperty=nameWithType> classe.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, utilizzare l'overload che accetta un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider> e specificare l'argomento in base alle indicazioni elencate in precedenza.
 
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se si è certi che il provider di formato delle impostazioni cultura predefinito è la scelta corretta e la gestibilità del codice non è una priorità di sviluppo importanti.
+Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.Globalization.CultureInfo> argomento.
 
-## <a name="example"></a>Esempio
- Nell'esempio seguente, `BadMethod` causa due violazioni di questa regola. `GoodMethod` corregge la prima violazione passando le impostazioni cultura invarianti a System.String.Compare e corregge la seconda violazione passando le impostazioni cultura correnti per <xref:System.String.ToLower%2A> perché `string3` viene visualizzato all'utente.
+## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
- [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
+È possibile eliminare un avviso da questa regola se si è certi che la lingua predefinita è la scelta corretta e la gestibilità del codice non è una priorità di sviluppo importanti.
 
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato l'effetto delle impostazioni cultura correnti predefinito <xref:System.IFormatProvider> che è selezionata per il <xref:System.DateTime> tipo.
+## <a name="example-showing-how-to-fix-violations"></a>Esempio che illustra come correggere le violazioni
 
- [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
+Nell'esempio seguente, `BadMethod` fa sì che due delle violazioni di questa regola. `GoodMethod` corregge la prima violazione passando a impostazioni cultura invarianti <xref:System.String.Compare%2A?displayProperty=nameWithType>e consente di correggere la violazione secondo passando le impostazioni cultura correnti <xref:System.String.ToLower%2A?displayProperty=nameWithType> perché `string3` viene visualizzato all'utente.
 
- Questo esempio produce il seguente output:
+[!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
- **6/4/1900 12:15:12 PM**
+## <a name="example-showing-formatted-output"></a>Visualizzazione di esempio l'output formattato
+
+Nell'esempio seguente mostra l'effetto delle impostazioni cultura correnti sul valore predefinito <xref:System.IFormatProvider> sarà selezionata per il <xref:System.DateTime> tipo.
+
+[!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
+
+Questo esempio produce il seguente output:
+
+**4/6/1900:12 12.15**
+
 **06/04/1900 12:15:12**
+
 ## <a name="related-rules"></a>Regole correlate
- [CA1305: Specificare IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+
+- [CA1305: Specificare IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Vedere anche
-[Utilizzo della classe CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+
+- [Utilizzo della classe CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)

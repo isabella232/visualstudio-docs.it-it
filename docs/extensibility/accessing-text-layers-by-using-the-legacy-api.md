@@ -1,5 +1,5 @@
 ---
-title: L'accesso a livelli di testo tramite l'API Legacy | Documenti Microsoft
+title: L'accesso ai livelli di testo usando l'API Legacy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21b31940f1e1ebca767b9d3f0cf5ab802181bda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098667"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078667"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>L'accesso ai livelli di testo tramite l'API Legacy
-In genere, un livello testo incapsula alcuni aspetti di layout del testo. Ad esempio, un livello "una funzione-tempo" nascosta testo prima e dopo una funzione che contiene il punto di inserimento (il punto di inserimento di testo).  
+# <a name="access-text-layers-by-using-the-legacy-api"></a>Livelli di accesso testo usando l'API legacy
+Un livello di testo sono incluse in genere alcuni aspetti del layout del testo. Ad esempio, un livello "una funzione-tempo" nasconde il testo prima e dopo una funzione che contiene il punto di inserimento (il punto di inserimento di testo).  
   
  Un livello di testo si trova tra un buffer e una visualizzazione e modifica il modo in cui che la vista visualizza i contenuti del buffer.  
   
 ## <a name="text-layer-information"></a>Informazioni sul livello di testo  
  Nell'elenco seguente viene descritto il funzionano di livelli di testo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
--   Il testo in un livello di testo può decorare con marcatori e la colorazione della sintassi.  
+-   Il testo in un livello di testo può essere decorato con marcatori e la colorazione della sintassi.  
   
--   Attualmente non è possibile implementare il propria livelli.  
+-   Attualmente non è possibile implementare i proprio livelli.  
   
--   Espone un livello <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, che deriva da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Lo stesso buffer di testo viene inoltre implementato come livello, che consente una visualizzazione gestire in modo polimorfico livelli sottostanti.  
+-   Un livello espone <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, che deriva da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Lo stesso buffer di testo viene anche implementato come un livello, che consente una visualizzazione gestire in modo polimorfico livelli sottostanti.  
   
--   Un numero qualsiasi di livelli può essere compresa tra la visualizzazione e il buffer. Ogni livello riguarda solo il livello sottostante e la visualizzazione si occupa principalmente di livello superiore. (La vista dispone di alcune informazioni sul buffer.)  
+-   Un numero qualsiasi di livelli può essere compreso tra la visualizzazione e il buffer. Ogni livello si occupa solo al livello sottostante e la visualizzazione si occupa principalmente di livello superiore. (La visualizzazione avere alcune informazioni sui buffer).  
   
--   Un livello può influire sulle solo i livelli sottostanti. E non influisce sui livelli sopra di esso oltre l'origine eventi standard.  
+-   Un livello può influire sulle solo i livelli sottostanti. Tale operazione non influisce sui livelli sopra di esso, oltre che hanno origine gli eventi standard.  
   
--   Nell'editor di testo nascosto, il testo sintetico e ritorno a capo automatico vengono implementati come livelli. È possibile implementare il testo nascosto e sintetico senza interagire direttamente con i livelli. Per ulteriori informazioni, vedere [struttura in un servizio di linguaggio Legacy](../extensibility/internals/outlining-in-a-legacy-language-service.md) e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
+-   Nell'editor di testo nascosto e sintetica di testo a capo vengono implementati come livelli. È possibile implementare il testo nascosto e sintetico senza interagire direttamente con i livelli. Per altre informazioni, vedere [struttura in un servizio di linguaggio legacy](../extensibility/internals/outlining-in-a-legacy-language-service.md) e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
   
--   Ogni livello di testo ha un proprio sistema di coordinate locale che viene esposta tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> interfaccia. Il livello di riga a capo automatico, ad esempio, potrebbe contenere due righe mentre il buffer di testo sottostante può contenere solo una riga.  
+-   Ogni livello di testo ha un proprio sistema di coordinate locale che viene esposta tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> interfaccia. Il livello di riga a capo automatico, ad esempio, potrebbe contenere due righe anche se il buffer di testo sottostante può contenere solo una riga.  
   
--   La vista comunica ai livelli tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> interfaccia. Utilizzare questa interfaccia per risolvere le differenze tra le coordinate di visualizzazione con le coordinate di buffer.  
+-   La vista comunica ai livelli tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> interfaccia. Utilizzare questa interfaccia per risolvere le differenze tra le coordinate di visualizzazione con le coordinate del buffer.  
   
--   Uno dei livelli, ad esempio il livello di testo sintetici che ha origine il testo deve fornire un'implementazione locale di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
+-   Uno dei livelli, ad esempio livello sintetica di testo che genera il testo deve fornire un'implementazione locale di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
   
--   Oltre a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, deve implementare un livello testo <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> e generare gli eventi nel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> interfaccia.  
+-   Altre origini oltre a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, deve implementare un livello di testo <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> e genera gli eventi nel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> interfaccia.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Sintassi colorazione nell'editor personalizzati](../extensibility/syntax-coloring-in-custom-editors.md)   
- [Utilizzo degli indicatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Personalizzazione di menu e controlli di Editor utilizzando l'API Legacy](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
+ [Colorazione della sintassi negli editor personalizzati](../extensibility/syntax-coloring-in-custom-editors.md)   
+ [Usare marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Personalizzare menu e controlli di editor usando l'API legacy](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

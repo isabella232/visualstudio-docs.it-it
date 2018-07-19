@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c9c2d28a3e36a53e7a9da3acf36752f1f8d82f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00185a4165c6b97a8fcf1dd8d7ce81b219abef75
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926522"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890116"
 ---
-# <a name="constant-nodes"></a>Nodi costanti
+# <a name="constant-nodes"></a>Nodi di costante
 
 Nella modalità di progettazione shader, i nodi delle costanti rappresentano valori letterali e attributi vertice interpolati nei calcoli di pixel shader. Poiché gli attributi vertice sono interpolati, e quindi sono diversi per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione della costante diversa. In questo modo ogni pixel ha un aspetto univoco.
 

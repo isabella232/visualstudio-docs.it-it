@@ -1,5 +1,5 @@
 ---
-title: FeatureProperty (elemento) | Documenti Microsoft
+title: Elemento FeatureProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ccc9e0d628d5c17283368de135c8e83dbd40bec1
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766965"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325982"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
-  Rappresenta una proprietà personalizzata che è inclusa in una funzionalità quando viene distribuito in SharePoint. Dopo aver distribuita una funzionalità, è possibile accedere alla proprietà nel codice.  
+  Rappresenta una proprietà personalizzata che è inclusa in una funzione quando viene distribuito in SharePoint. Dopo aver distribuita una funzionalità, è possibile accedere alla proprietà nel codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,8 +39,8 @@ ms.locfileid: "34766965"
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|**Key**|Richiesto **xs: String** attributo.<br /><br /> La chiave utilizzata per archiviare e recuperare il valore della proprietà. Ogni proprietà devono avere una chiave che è univoca all'interno della funzionalità.|  
-|**Valore**|Richiesto **xs: String** attributo.<br /><br /> Valore della proprietà.|  
+|**Key**|Obbligatorio **xs: String** attributo.<br /><br /> La chiave utilizzata per archiviare e recuperare il valore della proprietà. Ogni proprietà devono avere una chiave univoca all'interno della funzionalità.|  
+|**Valore**|Obbligatorio **xs: String** attributo.<br /><br /> Valore della proprietà.|  
   
 ### <a name="child-elements"></a>Elementi figlio
  Nessuno.  
@@ -52,19 +52,19 @@ ms.locfileid: "34766965"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Rappresenta una raccolta di valori di proprietà che sono inclusi in una funzione quando viene distribuito in SharePoint.|  
   
 ## <a name="remarks"></a>Note  
- Per ulteriori informazioni sulle proprietà di funzionalità, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Per altre informazioni sulle proprietà di funzionalità, vedere [fornendo informazioni pacchetto e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Informazioni sull'elemento
   
 |||  
 |-|-|  
 |**Spazio dei nomi**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nome dello schema**|Schema di elemento di progetto SharePoint|  
+|**Nome dello schema**|Schema degli elementi di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  
   
 ## <a name="see-also"></a>Vedere anche
- [Riferimento allo Schema elemento di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Specifica delle informazioni sui pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

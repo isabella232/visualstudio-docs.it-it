@@ -10,23 +10,23 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d6719ee57000ebec8ad88a90543031e0d3eeb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf0e7aed5c8f28805d19039672c500312e44dc06
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927546"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945949"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
-Il linguaggio di annotazione del codice sorgente Microsoft (SAL) fornisce un set di annotazioni che è possibile utilizzare per descrivere come una funzione utilizza i relativi parametri, le ipotesi su cui fa su di essi e le garanzie che rende quando viene completato. Le annotazioni sono definite nel file di intestazione `<sal.h>`. Analisi codice di Visual Studio per C++ Usa le annotazioni SAL per modificare l'analisi di funzioni. Per ulteriori informazioni su SAL 2.0 per lo sviluppo di driver di Windows, vedere [SAL 2.0 annotazioni per i driver di Windows](http://go.microsoft.com/fwlink/?LinkId=250979).
+Linguaggio di annotazione del codice sorgente Microsoft (SAL) fornisce un set di annotazioni che è possibile utilizzare per descrivere come una funzione utilizza le garanzie che questa mette al termine, i relativi parametri e i presupposti che questa mette bloccarli. Le annotazioni sono definite nel file di intestazione `<sal.h>`. Analisi di codice di Visual Studio per C++ Usa le annotazioni SAL per modificare l'analisi delle funzioni. Per altre informazioni su SAL 2.0 per lo sviluppo di driver di Windows, vedere [SAL 2.0 di annotazioni per Windows i driver](http://go.microsoft.com/fwlink/?LinkId=250979).
 
- In modo nativo, C e C++ consentono solo limitato per gli sviluppatori esprimere in modo coerente finalità e l'invarianza. Utilizzando le annotazioni SAL, è possibile descrivere le funzioni in modo più dettagliato in modo che gli sviluppatori che utilizzano tali comprendere meglio come utilizzarle.
+ In modo nativo, C e C++ forniscono solo alcune modalità per gli sviluppatori di esprimere in modo coerente con finalità e l'invarianza. Utilizzando le annotazioni SAL, è possibile descrivere le funzioni più dettagliatamente in modo che gli sviluppatori che li usano più facilmente comprensibili come usarli.
 
-## <a name="what-is-sal-and-why-should-you-use-it"></a>Che cos'è SAL e perché è opportuno utilizzarla?
- Semplificando, SAL è una soluzione economica per consentire al compilatore di cercare il codice.
+## <a name="what-is-sal-and-why-should-you-use-it"></a>What ' s SAL e il motivo per cui è opportuno utilizzarla?
+ Semplificando, SAL è una soluzione economica per consentire al compilatore di controllare il codice per l'utente.
 
-### <a name="sal-makes-code-more-valuable"></a>SAL rende codice più utili
- SAL consentono di rendere la progettazione di codice più comprensibile per gli utenti e per gli strumenti di analisi codice. Si consideri l'esempio che illustra la funzione di runtime C `memcpy`:
+### <a name="sal-makes-code-more-valuable"></a>SAL rende di codice più utili
+ SAL può aiutarti a rendere la progettazione di codice più comprensibile sia per gli essere umani per strumenti di analisi codice. Si consideri l'esempio che mostra la funzione di runtime C `memcpy`:
 
 ```cpp
 
@@ -38,18 +38,18 @@ void * memcpy(
 
 ```
 
- È possibile conoscere ciò che svolge questa funzione? Quando implementata una funzione viene chiamata, è necessario configurare alcune proprietà per assicurare la correttezza di programma. Esaminando solo una dichiarazione, ad esempio quello nell'esempio, non si conosce quali sono. Senza le annotazioni SAL, è necessario basarsi sulla documentazione o commenti del codice. Ecco la documentazione di MSDN per `memcpy` è indicato:
+ È possibile conoscere ciò che svolge questa funzione? Quando una funzione è implementata o chiamata, è necessario mantenere alcune proprietà per garantire la correttezza del programma. Osservando semplicemente una dichiarazione come quello nell'esempio, non si conosce quali siano. Senza annotazioni SAL, è necessario fare affidamento sulla documentazione o commenti del codice. Ecco quali la documentazione di MSDN per `memcpy` afferma:
 
-> "Copie contano i byte di src di destinazione. Se l'origine e destinazione si sovrappongono, il comportamento di memcpy è definito. Utilizzare memmove per gestire le aree di sovrapposizione.
-> **Nota sulla sicurezza:** assicurarsi che il buffer di destinazione sia della stessa dimensione o maggiore del buffer di origine. Per ulteriori informazioni, vedere evitare sovraccarichi del Buffer."
+> "Copie contano i byte di src a dest. Se l'origine e destinazione si sovrappongono, il comportamento di memcpy è definito. Usare memmove per gestire le aree di sovrapposizione.
+> **Nota sulla sicurezza:** assicurarsi che il buffer di destinazione sia della stessa dimensione o maggiore del buffer di origine. Per altre informazioni, vedere evitare sovraccarichi del Buffer".
 
- La documentazione contiene un paio di bit di informazioni che suggerisce che il codice debba mantenere alcune proprietà per garantire la correttezza di programma:
+ La documentazione contiene un paio di bit di informazioni che suggeriscono che il codice deve gestire alcune proprietà per garantire la correttezza del programma:
 
--   `memcpy` copie di `count` di byte dal buffer di origine per il buffer di destinazione.
+-   `memcpy` copie di `count` di byte dal buffer di origine nel buffer di destinazione.
 
--   Il buffer di destinazione deve essere grande almeno come buffer di origine.
+-   Il buffer di destinazione debba essere uguali almeno alle dimensioni del buffer di origine.
 
- Tuttavia, il compilatore non è possibile leggere la documentazione o commenti informali. Riconosce che vi sia una relazione tra due buffer e `count`, e inoltre non è possibile in modo efficace indovinare su una relazione. SAL potrebbe fornire maggiore chiarezza sulle proprietà e implementazione della funzione, come illustrato di seguito:
+ Tuttavia, il compilatore non è possibile leggere la documentazione o commenti informali. Non è chiaro che vi sia una relazione tra due buffer e `count`, inoltre non è possibile in modo efficace indovinare su una relazione. SAL può fornire maggiore chiarezza sulle proprietà e implementazione della funzione, come illustrato di seguito:
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
- Si noti che queste annotazioni sono simili le informazioni nella documentazione di MSDN, ma sono più concise e seguono un modello semantico. Durante la lettura di questo codice, è possibile comprendere rapidamente le proprietà di questa funzione e come evitare problemi di sicurezza di sovraccarico del buffer. Ancor meglio, i modelli semantici che fornisce SAL possono migliorare l'efficienza e l'efficacia di strumenti di analisi codice automatizzato l'individuazione iniziale di possibili bug. Si supponga che un utente scrive questa implementazione di anomalo `wmemcpy`:
+ Si noti che queste annotazioni simile alle informazioni nella documentazione di MSDN, ma sono più concise e seguono un modello semantico. Quando si legge questo codice, è possibile comprendere rapidamente le proprietà di questa funzione e come evitare problemi di sicurezza di sovraccarico del buffer. Ancora meglio, i modelli semantici che fornisce SAL possono migliorare l'efficienza e l'efficacia degli strumenti di analisi codice automatica l'individuazione iniziali di potenziali bug. Si supponga che un utente scrive questa implementazione difettoso di `wmemcpy`:
 
 ```cpp
 
@@ -78,59 +78,59 @@ wchar_t * wmemcpy(
 
 ```
 
- Questa implementazione contiene un errore comune di disattivare uno. Fortunatamente, l'autore del codice incluso l'annotazione di dimensioni del buffer SAL, uno strumento di analisi del codice potrebbe intercettare il bug analizzando questa funzione.
+ Questa implementazione contiene un errore comune off alla volta. Per fortuna, l'autore di codice inclusi annotazione SAL buffer delle dimensioni, ovvero uno strumento di analisi codice può intercettare il bug grazie all'analisi di questa funzione solo.
 
 ### <a name="sal-basics"></a>Nozioni di base SAL
- SAL definisce quattro tipi di base di parametri, che sono classificati in base al modello di utilizzo.
+ SAL definisce quattro tipi base di parametri, che vengono classificati in base al modello di utilizzo.
 
 |Category|Annotazione parametro|Descrizione|
 |--------------|--------------------------|-----------------|
-|**Input per chiamata alla funzione**|`_In_`|Dati viene passati alla funzione chiamata e viene considerati come di sola lettura.|
-|**Input per la chiamata alla funzione e di output al chiamante**|`_Inout_`|Dati utilizzabili viene passati alla funzione e potenzialmente viene modificati.|
-|**Output al chiamante**|`_Out_`|Il chiamante fornisce solo spazio per la funzione chiamata da scrivere. La funzione chiamata scrive i dati in tale spazio.|
-|**Output del puntatore al chiamante**|`_Outptr_`|Ad esempio **Output al chiamante**. Il valore restituito dalla funzione chiamata è un puntatore.|
+|**Input alla chiamata alla funzione**|`_In_`|I dati viene passati alla funzione chiamata e viene considerati di sola lettura.|
+|**Input alla chiamata alla funzione e di output al chiamante**|`_Inout_`|Dati utilizzabili siano passati alla funzione e potenzialmente viene modificati.|
+|**Output al chiamante**|`_Out_`|Il chiamante fornisce solo lo spazio per la funzione chiamata in cui scrivere. La funzione chiamata scrive i dati in tale spazio.|
+|**Output del puntatore al chiamante**|`_Outptr_`|Ad esempio **di Output al chiamante**. Il valore restituito dalla funzione chiamata è un puntatore.|
 
- Queste quattro annotazioni di base possono essere reso più esplicite in vari modi. Per impostazione predefinita, i parametri dei puntatori con annotazioni si presuppone che siano necessari, ovvero devono essere non NULL per la funzione abbia esito positivo. La variazione delle annotazioni base utilizzata più di frequente indica che un parametro del puntatore è facoltativo, ovvero se è NULL, la funzione può ancora riesce il proprio lavoro.
+ Queste quattro annotazioni di base possono essere reso più esplicite in vari modi. Per impostazione predefinita, i parametri di puntatore con annotazioni si presuppone che siano necessari, ovvero devono essere non NULL per la funzione abbia esito positivo. Le variazioni di uso più frequente delle annotazioni di base indica che un parametro del puntatore è facoltativo, ovvero se è NULL, la funzione può comunque eseguita in modo.
 
- Questa tabella viene illustrato come distinguere tra i parametri obbligatori e facoltativi:
+ Questa tabella mostra come distinguere tra i parametri obbligatori e facoltativi:
 
 ||I parametri sono obbligatori|I parametri sono facoltativi|
 |-|-----------------------------|-----------------------------|
-|**Input per chiamata alla funzione**|`_In_`|`_In_opt_`|
-|**Input per la chiamata alla funzione e di output al chiamante**|`_Inout_`|`_Inout_opt_`|
+|**Input alla chiamata alla funzione**|`_In_`|`_In_opt_`|
+|**Input alla chiamata alla funzione e di output al chiamante**|`_Inout_`|`_Inout_opt_`|
 |**Output al chiamante**|`_Out_`|`_Out_opt_`|
 |**Output del puntatore al chiamante**|`_Outptr_`|`_Outptr_opt_`|
 
- Queste annotazioni aiutano a identificare i possibili valori non inizializzati e un puntatore null non valido viene utilizzato in modo accurato e formale. Passaggio di NULL a un parametro obbligatorio potrebbe causare un arresto anomalo, o potrebbe causare un codice di errore "errore" deve essere restituito. In entrambi i casi, la funzione non riesce il proprio lavoro.
+ Queste annotazioni aiutano a identificare i possibili valori non inizializzati e un puntatore null non valido viene utilizzato in modo formale e accurato. Passaggio di NULL a un parametro obbligatorio potrebbe causare un arresto anomalo del sistema, o potrebbe causare un codice di errore "non riuscito" deve essere restituito. In entrambi i casi, la funzione non può avere esito positivo di svolgere il proprio lavoro.
 
 ## <a name="sal-examples"></a>Esempi SAL
  In questa sezione vengono illustrati esempi di codice per le annotazioni SAL base.
 
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Utilizzando lo strumento di analisi codice di Visual Studio per trovare errori
- Negli esempi, lo strumento di analisi del codice di Visual Studio viene utilizzato insieme alle annotazioni SAL per individuare difetti del codice. Di seguito viene illustrato come eseguire questa operazione.
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Usando lo strumento di analisi codice di Visual Studio per individuare i difetti
+ Negli esempi viene utilizzato lo strumento di analisi del codice di Visual Studio con le annotazioni SAL per individuare i difetti del codice. Di seguito viene illustrato come eseguire questa operazione.
 
-##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Utilizzare gli strumenti di analisi codice di Visual Studio e SAL
+##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Usare gli strumenti di analisi codice di Visual Studio e SAL
 
 1.  In Visual Studio, aprire un progetto C++ che contiene le annotazioni SAL.
 
-2.  Nella barra dei menu, scegliere **compilare**, **Esegui analisi del codice su soluzione**.
+2.  Nella barra dei menu, scegliere **compilare**, **Esegui analisi del codice sulla soluzione**.
 
-     Si consideri il riscaldamento in\_ riportato in questa sezione. Se si esegue l'analisi del codice, viene visualizzato questo avviso:
+     Prendere in considerazione la \_In\_ riportato in questa sezione. Se si esegue l'analisi del codice su di esso, viene visualizzato questo avviso:
 
-    > **Valore del parametro non valido C6387** 'pInt' potrebbe essere '0': questa condizione non soddisfa la specifica della funzione 'InCallee'.
+    > **Valore del parametro non valido C6387** 'pInt' potrebbe essere '0': questa condizione non soddisfa la specifica la funzione 'InCallee'.
 
-### <a name="example-the-in-annotation"></a>Esempio: Il riscaldamento in\_ annotazione
+### <a name="example-the-in-annotation"></a>Esempio: La \_In\_ annotazione
  Il `_In_` annotazione indica che:
 
 -   Il parametro deve essere valido e non verrà modificato.
 
--   La funzione verrà letti solo dal buffer del singolo elemento.
+-   La funzione leggerà solo dal buffer a elemento singolo.
 
--   Il chiamante deve fornire al buffer e inizializzarlo.
+-   Il chiamante deve fornire al buffer e inizializzarla.
 
--   `_In_` Specifica di "sola lettura". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.
+-   `_In_` Consente di specificare "read-only". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.
 
--   `_In_` è consentita ma ignorato dall'analizzatore di valori scalari non puntatore.
+-   `_In_` è consentito ma ignorato dall'analizzatore su valori scalari non puntatore.
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -155,10 +155,10 @@ void BadInCaller()
 
 ```
 
- Se si utilizza l'analisi del codice di Visual Studio in questo esempio, verifica che i chiamanti passare un puntatore non Null in un buffer inizializzato per `pInt`. In questo caso, `pInt` puntatore non può essere NULL.
+ Se si usa analisi di Visual Studio Code in questo esempio, verifica che i chiamanti passare un puntatore non Null a un buffer inizializzato per `pInt`. In questo caso, `pInt` puntatore non può essere NULL.
 
-### <a name="example-the-inopt-annotation"></a>Esempio: _In_opt\_ annotazione
- `_In_opt_` è identico `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve ricercare.
+### <a name="example-the-inopt-annotation"></a>Esempio: La \_nelle\_opt\_ annotazione
+ `_In_opt_` equivale a `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve cercare.
 
 ```cpp
 
@@ -183,9 +183,9 @@ void InOptCaller()
 
 ```
 
- Analisi del codice di Visual Studio consente di verificare che la funzione verifica i valori NULL prima di accedere il buffer.
+ Analisi del codice di Visual Studio consente di verificare che la funzione controlla i valori NULL prima di accedere ai buffer.
 
-### <a name="example-the-out-annotation"></a>Esempio: REC0 out\_ annotazione
+### <a name="example-the-out-annotation"></a>Esempio: La \_Out\_ annotazione
  `_Out_` supporta uno scenario comune in cui viene passato un puntatore non NULL che punta a un buffer di elemento e la funzione Inizializza l'elemento. Il chiamante non dispone di inizializzare il buffer prima della chiamata. la funzione chiamata promette di inizializzarlo prima della restituzione.
 
 ```cpp
@@ -210,10 +210,10 @@ void OutCaller()
 
 ```
 
- Strumento di analisi di Visual Studio codice verifica che il chiamante passa un puntatore non NULL in un buffer per `pInt` e che il buffer viene inizializzato dalla funzione prima della restituzione.
+ Visual Studio Code Analysis Tool verifica che il chiamante passa un puntatore non NULL a un buffer per `pInt` e che il buffer viene inizializzato dalla funzione prima della restituzione.
 
-### <a name="example-the-outopt-annotation"></a>Esempio: _Out_opt\_ annotazione
- `_Out_opt_` è identico `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, pertanto, la funzione deve ricercare.
+### <a name="example-the-outopt-annotation"></a>Esempio: La \_Out\_opt\_ annotazione
+ `_Out_opt_` equivale a `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, pertanto, la funzione deve cercare.
 
 ```cpp
 
@@ -238,13 +238,13 @@ void OutOptCaller()
 
 ```
 
- Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di `pInt` è dereferenziato e se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.
+ Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima `pInt` è dereferenziato e se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.
 
-### <a name="example-the-inout-annotation"></a>Esempio: InOut\_ annotazione
- `_Inout_` viene usato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche se viene modificato, devono comunque essere un valore valido in fase di restituzione. L'annotazione specifica che la funzione può liberamente leggere e scrivere nel buffer di un elemento. Il chiamante deve fornire al buffer e inizializzarlo.
+### <a name="example-the-inout-annotation"></a>Esempio: La \_Inout\_ annotazione
+ `_Inout_` viene usato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche se subisce delle modifiche, comunque deve avere un valore valido in fase di restituzione. L'annotazione specifica che la funzione può liberamente leggere e scrivere nel buffer di un solo elemento. Il chiamante deve fornire al buffer e inizializzarla.
 
 > [!NOTE]
->  Ad esempio `_Out_`, `_Inout_` deve essere applicata a un valore modificabile.
+>  Ad esempio `_Out_`, `_Inout_` necessario applicare a un valore modificabile.
 
 ```cpp
 
@@ -272,8 +272,8 @@ void BadInOutCaller()
 
  Analisi del codice di Visual Studio verifica che i chiamanti passare un puntatore non NULL in un buffer inizializzato per `pInt`e che, prima della restituzione, `pInt` ancora non è null e il buffer viene inizializzato.
 
-### <a name="example-the-inoutopt-annotation"></a>Esempio: _Inout_opt\_ annotazione
- `_Inout_opt_` è identico `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve ricercare.
+### <a name="example-the-inoutopt-annotation"></a>Esempio: La \_Inout\_opt\_ annotazione
+ `_Inout_opt_` equivale a `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve cercare.
 
 ```cpp
 
@@ -300,10 +300,10 @@ void InOutOptCaller()
 
 ```
 
- Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di accedere il buffer e, se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.
+ Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di accedere ai buffer e se `pInt` non è NULL, che il buffer viene inizializzato dalla funzione prima della restituzione.
 
-### <a name="example-the-outptr-annotation"></a>Esempio: _Outptr\_ annotazione
- `_Outptr_` viene usato per annotare un parametro che è progettata per restituire un puntatore.  Il parametro non deve essere NULL, la funzione chiamata restituisce un puntatore non NULL e tale puntatore punta a dati inizializzati.
+### <a name="example-the-outptr-annotation"></a>Esempio: La \_Outptr\_ annotazione
+ `_Outptr_` viene usato per annotare un parametro che è progettata per restituire un puntatore.  Il parametro stesso non deve essere NULL, la funzione chiamata restituisce un puntatore non NULL e tale puntatore punta a dati inizializzati.
 
 ```cpp
 
@@ -333,8 +333,8 @@ void OutPtrCaller()
 
  Analisi del codice di Visual Studio verifica che il chiamante passa un puntatore non NULL `*pInt`, e che il buffer viene inizializzato dalla funzione prima della restituzione.
 
-### <a name="example-the-outptropt-annotation"></a>Esempio: _Outptr_opt\_ annotazione
- `_Outptr_opt_` è identico `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.
+### <a name="example-the-outptropt-annotation"></a>Esempio: La \_Outptr\_opt\_ annotazione
+ `_Outptr_opt_` equivale a `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.
 
 ```cpp
 
@@ -364,10 +364,10 @@ void OutPtrOptCaller()
 
 ```
 
- Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima di `*pInt` è dereferenziato e che il buffer viene inizializzato dalla funzione prima della restituzione.
+ Analisi del codice di Visual Studio verifica che questa funzione controlla i valori NULL prima `*pInt` è dereferenziato, e che il buffer viene inizializzato dalla funzione prima della restituzione.
 
-### <a name="example-the-success-annotation-in-combination-with-out"></a>Esempio: _Success\_ annotazione in combinazione con out\_
- Per la maggior parte degli oggetti, è possono utilizzare le annotazioni.  In particolare, è possibile annotare un'intera funzione.  Una delle caratteristiche di una funzione più ovvie è che può avere esito positivo o esito negativo. Ma, come l'associazione tra un buffer e le relative dimensioni, C/C++ non può esprimere funzione riuscita o meno. Tramite il `_Success_` annotazione, si può supporre il caso di esito positivo per una funzione simile.  Il parametro per il `_Success_` annotazione è semplicemente un'espressione che quando è true indica che la funzione ha avuto esito positivo. L'espressione può essere qualsiasi elemento che è in grado di gestire il parser di annotazione. Gli effetti delle annotazioni dopo la funzione restituisce sono applicabili solo quando la funzione ha esito positivo. Questo esempio viene illustrato come `_Success_` interagisce con `_Out_` di eseguire l'azione di destra. È possibile utilizzare la parola chiave `return` per rappresentare il valore restituito.
+### <a name="example-the-success-annotation-in-combination-with-out"></a>Esempio: La \_Success\_ annotazione in combinazione con \_Out\_
+ Annotazioni possono essere applicate alla maggior parte degli oggetti.  In particolare, è possibile annotare un'intera funzione.  Una delle caratteristiche più ovvie di una funzione è che può avere esito positivo o esito negativo. Ma, come l'associazione tra un buffer e le relative dimensioni, C/C++ non può esprimere funzione esito positivo o negativo. Tramite il `_Success_` annotazione, è possibile dire quali operazioni riuscite per una funzione simile.  Il parametro per il `_Success_` annotazione è semplicemente un'espressione che quando è true indica che la funzione ha avuto esito positivo. L'espressione può essere in grado di gestire il parser di annotazione. Gli effetti delle annotazioni dopo la funzione restituisce sono applicabili solo quando la funzione ha esito positivo. Questo esempio viene illustrato come `_Success_` interagisce con `_Out_` a fare la cosa giusta. È possibile usare la parola chiave `return` per rappresentare il valore restituito.
 
 ```cpp
 
@@ -384,30 +384,30 @@ bool GetValue(_Out_ int *pInt, bool flag)
 
 ```
 
- Il `_Out_` annotazione provoca l'analisi di codice di Visual Studio per convalidare che il chiamante passa un puntatore non NULL in un buffer per `pInt`, e che il buffer viene inizializzato dalla funzione prima della restituzione.
+ Il `_Out_` annotazione fa in modo che analisi di codice di Visual Studio per convalidare che il chiamante passa un puntatore non NULL a un buffer per `pInt`, e che il buffer viene inizializzato dalla funzione prima della restituzione.
 
-## <a name="sal-best-practice"></a>SAL consigliata
+## <a name="sal-best-practice"></a>Procedura consigliata SAL
 
 ### <a name="adding-annotations-to-existing-code"></a>Aggiunta di annotazioni al codice esistente
- SAL è una tecnologia potente che consente di migliorare la sicurezza e affidabilità del codice. Dopo aver appreso SAL, è possibile applicare le nuove competenze per le attività quotidiane. Nel nuovo codice, è possibile utilizzare specifiche basate su SAL per impostazione predefinita nel codice precedente, è possibile aggiungere annotazioni in modo incrementale e pertanto migliorare le prestazioni ogni volta che si aggiorna.
+ SAL è una tecnologia potente che può aiutarti a migliorare la sicurezza e affidabilità del codice. Dopo aver imparato SAL, è possibile applicare la nuova competenza per le attività quotidiane. Nel nuovo codice, è possibile usare le specifiche basate su SAL per impostazione predefinita in tutto; nel codice precedente, è possibile aggiungere annotazioni in modo incrementale e pertanto migliorare le prestazioni ogni volta che aggiorna.
 
- Microsoft pubbliche intestazioni sono già annotate. Pertanto, è consigliabile che nei progetti è innanzitutto annotare le funzioni di nodo foglia e funzioni che chiamano le API Win32 per trarre il massimo vantaggio.
+ Microsoft pubbliche intestazioni sono già annotate. Pertanto, è consigliabile che nei progetti è prima di tutto annotare le funzioni di nodo foglia e le funzioni che chiamano le API Win32 per ottenere il massimo vantaggio.
 
 ### <a name="when-do-i-annotate"></a>Quando annotare?
  Di seguito sono riportate alcune linee guida:
 
 -   Annotare tutti i parametri di puntatore.
 
--   Annotare le annotazioni di intervallo di valori in modo che l'analisi del codice può garantire la sicurezza dei buffer e puntatore.
+-   Annotare le annotazioni di intervallo di valori in modo che l'analisi del codice può garantire la sicurezza del buffer e puntatore.
 
--   Annotare le regole di blocco e gli effetti collaterali. Per ulteriori informazioni, vedere [annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md).
+-   Annotare le regole di blocco e gli effetti collaterali. Per altre informazioni, vedere [annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md).
 
 -   Annotare le proprietà del driver e le altre proprietà specifiche del dominio.
 
- Oppure è possibile annotare tutti i parametri per rendere l'intento clear in tutto e verificare di aver eseguite le annotazioni.
+ Oppure è possibile annotare tutti i parametri per rendere il preventivo clear in tutto e rendono più semplice controllare di aver eseguite le annotazioni.
 
 ## <a name="related-resources"></a>Risorse correlate
  [Blog del Team di analisi del codice](http://go.microsoft.com/fwlink/p/?LinkId=251197)
 
 ## <a name="see-also"></a>Vedere anche
- [Utilizzo delle annotazioni SAL per ridurre gli errori del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md) [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md) [annotazioni di struct e Le classi](../code-quality/annotating-structs-and-classes.md) [annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md) [specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md) [suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)
+ [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md) [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md) [annotazioni di struct e Le classi](../code-quality/annotating-structs-and-classes.md) [annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md) [specificare quando e dove applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md) [procedure consigliate ed esempi](../code-quality/best-practices-and-examples-sal.md)

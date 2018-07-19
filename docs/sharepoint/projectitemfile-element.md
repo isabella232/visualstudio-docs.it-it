@@ -1,5 +1,5 @@
 ---
-title: ProjectItemFile (elemento) | Documenti Microsoft
+title: Elemento ProjectItemFile | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 60ae46f981bc0377c93f1e00d09094604b5d776c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0b66849f9df9ed4de7725bca842c38f4f5a52582
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694004"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119892"
 ---
-# <a name="projectitemfile-element"></a>Elemento ProjectItemFile
-  Rappresenta un file di SharePoint, ad esempio file di elemento di funzionalità, per includere l'elemento di progetto quando viene distribuito in SharePoint.  
+# <a name="projectitemfile-element"></a>ProjectItemFile (elemento)
+  Rappresenta un file di SharePoint, ad esempio file di elemento di funzionalità, da includere con l'elemento del progetto quando viene distribuito in SharePoint.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,39 +36,38 @@ ms.locfileid: "34694004"
 ## <a name="type"></a>Tipo  
  **ProjectItemFileType**  
   
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
+## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|**Origine**|Richiesto **xs: String** attributo.<br /><br /> Il nome del file da distribuire con l'elemento del progetto.|  
-|**Destinazione**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il percorso in cui verrà distribuito il file in SharePoint, rispetto alla cartella radice di distribuzione. Cartella radice di distribuzione è determinata dal tipo di distribuzione specificato per il **tipo** attributo. Se il **destinazione** attributo non è specificato, il file verrà distribuito in una cartella con il nome specificato nella **origine** attributo.<br /><br /> Per ulteriori informazioni, vedere le descrizioni per il **percorso distribuzione** e **radice distribuzione** gli elementi nel progetto di proprietà di SharePoint [lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Richiesto **xs: String** attributo.<br /><br /> Il tipo di distribuzione per il file. Per ulteriori informazioni sui possibili valori, vedere la descrizione per il **tipo di distribuzione** proprietà degli elementi di progetto SharePoint in [lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Origine**|Obbligatorio **xs: String** attributo.<br /><br /> Il nome del file da distribuire con l'elemento del progetto.|  
+|**Destinazione**|Facoltativo **xs: String** attributo.<br /><br /> Il percorso in cui verrà distribuito il file in SharePoint, relativo alla cartella radice di distribuzione. Cartella radice di distribuzione è determinata dal tipo di distribuzione specificato per il **tipo** attributo. Se il **destinazione** attributo viene omesso, il file verrà distribuito in una cartella con il nome specificato nella **origine** attributo.<br /><br /> Per altre informazioni, vedere le descrizioni per le **percorso di distribuzione** e **Deployment Root** le proprietà di SharePoint elementi nel progetto [SharePoint sviluppare soluzioni](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Type**|Obbligatorio **xs: String** attributo.<br /><br /> Il tipo di distribuzione per il file. Per altre informazioni sui possibili valori, vedere la descrizione per il **tipo di distribuzione** proprietà di elementi di progetto SharePoint in [soluzioni SharePoint sviluppare](../sharepoint/developing-sharepoint-solutions.md).|  
   
-### <a name="child-elements"></a>Elementi figlio  
+### <a name="child-elements"></a>Elementi figlio
  Nessuno.  
   
-### <a name="parent-elements"></a>Elementi padre  
+### <a name="parent-elements"></a>Elementi padre
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[File](../sharepoint/files-element.md)|Specifica i file da includere con l'elemento di progetto SharePoint quando viene distribuito in SharePoint.|  
+|[File](../sharepoint/files-element.md)|Specifica i file da includere con l'elemento del progetto SharePoint quando viene distribuito in SharePoint.|  
   
 ## <a name="remarks"></a>Note  
- I file di SharePoint a cui fa riferimento in genere in **ProjectItemFile** elementi includono i file di elemento di funzionalità (Elements), file di schema per le definizioni di elenco (Schema.xml) e file di definizione delle Web Part per le Web part (WebPart).  
+ I file di SharePoint che in genere fanno riferimento a **ProjectItemFile** gli elementi includono i file di elemento di funzionalità (*Elements. XML*), file di schema per le definizioni di elenco (*schema*) e i file di definizione di Web Part per Web part (*WebPart*).  
   
-## <a name="element-information"></a>Informazioni sull'elemento  
+## <a name="element-information"></a>Informazioni sull'elemento
   
 |||  
 |-|-|  
 |**Spazio dei nomi**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nome dello schema**|Schema di elemento di progetto SharePoint|  
+|**Nome dello schema**|Schema degli elementi di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  
   
-## <a name="see-also"></a>Vedere anche  
- [Riferimento allo schema degli elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
+## <a name="see-also"></a>Vedere anche
+ [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   

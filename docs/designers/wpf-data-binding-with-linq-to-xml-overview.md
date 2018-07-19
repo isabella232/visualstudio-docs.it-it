@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0263aba7d732c766d08bda05c6700c47d58f3d44
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925156"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890370"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 
@@ -79,13 +79,13 @@ In C# è possibile accedere alle proprietà dinamiche solo in fase di esecuzione
 
 Al contrario, in un'origine XML è possibile accedere alle proprietà dinamiche tramite una notazione diretta nel seguente formato:
 
-```
+```xml
 <object>.<dynamic-property>
 ```
 
 Le proprietà dinamiche per queste due classi si risolvono in un valore che può essere usato direttamente o in un indicizzatore che deve essere fornito con un indice per ottenere il valore o la raccolta di valori risultante. Nell'ultimo caso la sintassi ha il seguente formato:
 
-```
+```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 
