@@ -9,21 +9,21 @@ description: Informazioni sulle modalità di acquisto e di gestione delle sottos
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199079"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283377"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 
-I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti. 
+I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
 
-[Confrontare le opzioni di sottoscrizione cloud](https://www.visualstudio.com/vs/pricing)
+[Confrontare le opzioni di sottoscrizione cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Prerequisiti
-È prima di tutto necessario configurare il tenant del cliente nel Centro per i partner e creare una sottoscrizione di Azure per questo tenant. 
+È prima di tutto necessario configurare il tenant del cliente nel Centro per i partner e creare una sottoscrizione di Azure per questo tenant.
 [Altre informazioni](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Modalità di acquisto
@@ -58,9 +58,10 @@ Dopo aver confermato l'acquisto, è possibile scegliere **Gestisci** per assegna
 
 Se è disponibile più di una sottoscrizione di Azure per il cliente, usare il menu a discesa per scegliere la sottoscrizione di Azure tramite la quale sono stati effettuati gli acquisti.  In **Riepilogo licenze** viene visualizzato il numero di sottoscrizioni assegnate e disponibili per ogni opzione di sottoscrizione cloud di Visual Studio.  Il riepilogo consente anche di acquistare sottoscrizioni aggiuntive o ridurre il numero di sottoscrizioni.
 
-Scegliere **Aggiungi** per assegnare una sottoscrizione a un nuovo utente.  Il conteggio visualizzato viene aggiornato e l'utente finale riceve una notifica tramite posta elettronica. L'utente finale può quindi accedere con l'indirizzo di posta elettronica fornito per attivare la sottoscrizione di Visual Studio nel [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Scegliere **Aggiungi** per assegnare una sottoscrizione a un nuovo utente.  Il conteggio visualizzato viene aggiornato e l'utente finale riceve una notifica tramite posta elettronica.
+L'utente finale può quindi accedere con l'indirizzo di posta elettronica fornito per attivare la sottoscrizione di Visual Studio nel [portale per i sottoscrittori di Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-Per riassegnare una sottoscrizione di Visual Studio a un altro utente, è possibile eliminare la sottoscrizione corrente e aggiungere un nuovo sottoscrittore. 
+Per riassegnare una sottoscrizione di Visual Studio a un altro utente, è possibile eliminare la sottoscrizione corrente e aggiungere un nuovo sottoscrittore.
 
 Se un sottoscrittore non ha ancora attivato la sottoscrizione di Visual Studio, è possibile che non abbia ricevuto il messaggio di posta elettronica di invito.  È possibile usare il portale di amministrazione di Visual Studio anche per richiedere un nuovo invio dell'invito per l'attivazione all'utente.
 
@@ -81,15 +82,17 @@ Offriamo uno sconto del 5% per la sesta unità acquistata (per un determinato cl
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **mensili**?
-R: al momento del primo acquisto, viene fatturata una quantità ripartita in base ai giorni rimanenti del mese corrente. Ad esempio, se si acquistano 10 sottoscrizioni cloud mensili di Visual Studio Professional il 15 aprile, vengono addebitate 5 unità perché rimangono 15 giorni del mese di 30 giorni, ovvero il 50%, quindi l'addebito delle unità viene ripartito al 50%. Il primo del mese di maggio e per ogni mese successivo fino all'annullamento, verranno fatturate tutte e 10 le unità.
+R: al momento del primo acquisto, viene fatturata una quantità ripartita in base ai giorni rimanenti del mese corrente. Ad esempio, se si acquistano 10 sottoscrizioni cloud mensili di Visual Studio Professional il 15 aprile, vengono addebitate 5 unità perché rimangono 15 giorni del mese di 30 giorni, ovvero il 50%, quindi l'addebito delle unità viene ripartito al 50%.
+Il primo del mese di maggio e per ogni mese successivo fino all'annullamento, verranno fatturate tutte e 10 le unità.
 
-Quando si aumenta la quantità a pagamento in un secondo momento, anche le unità aggiunte verranno ripartite in base ai giorni rimanenti del mese corrente. Pertanto, se si acquista un'altra sottoscrizione cloud mensile di Visual Studio Professional il 10 maggio, verranno fatturate approssimativamente 0,677 unità (21 giorni rimanenti nel mese di maggio di 31 giorni). 
+Quando si aumenta la quantità a pagamento in un secondo momento, anche le unità aggiunte verranno ripartite in base ai giorni rimanenti del mese corrente. Pertanto, se si acquista un'altra sottoscrizione cloud mensile di Visual Studio Professional il 10 maggio, verranno fatturate approssimativamente 0,677 unità (21 giorni rimanenti nel mese di maggio di 31 giorni).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>D: come vengono elaborati gli addebiti per le sottoscrizioni cloud **annuali**?
 R: a ogni acquisto viene fatturata immediatamente l'intera quantità acquistata. Gli addebiti non vengono distribuiti nell'anno e non è prevista alcuna ripartizione proporzionale. Se si acquistano sottoscrizioni cloud annuali in momenti diversi nell'anno, ci saranno sottoscrizioni con rinnovo in mesi diversi. Non viene allineata la data di scadenza di tutte le sottoscrizioni cloud annuali di un cliente come avviene comunemente con i contratti multilicenza Microsoft.
 
 ### <a name="q-how-do-cancelations-work"></a>D: come funzionano gli annullamenti?
-R: quando si annulla una sottoscrizione cloud di Visual Studio, si annulla il rinnovo automatico. La sottoscrizione continua fino alla relativa data di rinnovo normale e poi semplicemente scade. Alla scadenza, il sottoscrittore di Visual Studio non può più usare Visual Studio o qualsiasi altro vantaggio dalla sottoscrizione.
+R: quando si annulla una sottoscrizione cloud di Visual Studio, si annulla il rinnovo automatico. La sottoscrizione continua fino alla relativa data di rinnovo normale e poi semplicemente scade.
+Alla scadenza, il sottoscrittore di Visual Studio non può più usare Visual Studio o qualsiasi altro vantaggio dalla sottoscrizione.
 
 Con le sottoscrizioni cloud mensili, gli annullamenti diventano effettivi a partire dal primo giorno del mese successivo. Se si annullano solo alcune delle sottoscrizioni cloud mensili del cliente, assicurarsi di rimuovere gli utenti il primo del mese successivo per assicurarsi che rimangano assegnate sottoscrizioni attive alle persone corrette.
 
@@ -108,7 +111,7 @@ Ad esempio quindi, se si acquistano 6 sottoscrizioni mensili di Visual Studio Pr
 
 Inoltre, lo sconto è valido solo per gli addebiti in un determinato periodo di fatturazione mensile. Pertanto, se si acquistano 5 sottoscrizioni annuali di Visual Studio Professional in un mese e quindi se ne acquistano altre 5 nel mese successivo, verrà applicato il prezzo normale per tutte le 10 sottoscrizioni.
 
-Questi sconti sono indicati nei dati sui prezzi all'interno del [Centro per i partner](https://partnercenter.microsoft.com). 
+Questi sconti sono indicati nei dati sui prezzi all'interno del [Centro per i partner](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>D: sono previsti sconti per il rinnovo?
 

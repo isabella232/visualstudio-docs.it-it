@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764933"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280338"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Introduzione a Visual Basic in Visual Studio
 
 In questa esercitazione per Visual Basic (VB) si userà Visual Studio per creare ed eseguire alcune app console diverse e nel frattempo si esploreranno alcune funzionalità dell'[ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio](visual-studio-ide.md).
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -58,7 +58,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
 
 2. Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
-3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *HelloWorld*.  
+3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *HelloWorld*.
 
    ![Modello di progetto Console App (.NET Core) nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
 1. Aprire Visual Studio 2017 e quindi sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
-2. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *CalculateThis*.  
+2. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual Basic**, quindi selezionare **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi assegnare al file il nome *CalculateThis*.
 
 3. Immettere il codice seguente tra la riga `Module Program` e la riga `End Module`:
 
@@ -136,7 +136,7 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
    ![Finestra del codice che mostra il codice di CalculateThis](../ide/media/vb-codewindow-calculate-this.png)
 
-4. Fare clic su **CalculateThis** per eseguire il programma. La finestra della console dovrebbe avere un aspetto simile allo screenshot seguente:       
+4. Fare clic su **CalculateThis** per eseguire il programma. La finestra della console dovrebbe avere un aspetto simile allo screenshot seguente:
 
     ![Finestra della console che mostra l'app CalculateThis con le azioni possibili.](../ide/media/vb-console-calculate-this.png)
 

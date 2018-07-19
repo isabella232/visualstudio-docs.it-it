@@ -1,7 +1,7 @@
 ---
 title: Attività VCMessage | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8ef67a4fa19bd715e73e50fcc268aee7a4df5d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1b95d6e0e03aa0ed9aeb84a1709c5806c13946c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574523"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058334"
 ---
 # <a name="vcmessage-task"></a>Attività VCMessage
 Registra gli avvisi e i messaggi di errore durante una compilazione.  
   
 ## <a name="remarks"></a>Note  
- Questa attività consente di implementare MSBuild per Visual C++ e non deve essere chiamata dall'utente. Per altre informazioni, vedere <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
+ Questa attività consente di implementare MSBuild per Visual C++ e non deve essere chiamata dall'utente. Per ulteriori informazioni, vedere <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **VCMessage**.  

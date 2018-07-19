@@ -13,19 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: cfb41cf6274238fef2de9b74496a33fba110e04f
-ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
+ms.openlocfilehash: b6e312f7e1913a8b4533c0127b966dc3ac0d981d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38809257"
 ---
 È necessario disporre delle autorizzazioni amministrative nel computer remoto.  
   
-1.  Trovare l'applicazione del debugger remoto. (Individuare msvsmon.exe nel percorso in cui è stato installato, o aprire il menu Start e cercare **Debugger remoto**.)
+1.  Trovare l'applicazione del debugger remoto. (Individuare msvsmon.exe nella posizione in cui è stato installato, o aprire il menu Start e cercare **Remote Debugger**.)
   
-     Se si esegue il debugger remoto in un server remoto, è possibile fare doppio clic su app il Debugger remoto e scegliere **Esegui come amministratore**. Se non si vengono eseguiti in un server remoto, semplicemente avviarlo normalmente.
+     Se si esegue il debugger remoto in un server remoto, è possibile fare doppio clic il Debugger remoto di app e scegliere **Esegui come amministratore**. Se non si vengono eseguite in un server remoto, semplicemente avviare normalmente.
   
-3.  Quando si avvia remote tools per la prima volta (o prima di aver configurato), il **configurazione debug remoto** viene visualizzata la finestra di dialogo.  
+3.  Quando si avvia remote tools per la prima volta (o prima che sia stato configurato), il **configurazione debug remoto** verrà visualizzata la finestra di dialogo.  
   
      ![RemoteDebuggerConfWizardPage](../media/remotedebuggerconfwizardpage.png "RemoteDebuggerConfWizardPage")  
   
@@ -33,14 +34,14 @@ ms.lasthandoff: 01/03/2018
   
 5.  Selezionare i tipi di reti su cui usare Remote Tools. Almeno un tipo di rete deve essere selezionato. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, è necessario scegliere il secondo o il terzo elemento a seconda delle esigenze.  
   
-6.  Scegliere **configurare il debug remoto** per configurare il firewall e avviare lo strumento.  
+6.  Scegli **Configura debug remoto** per configurare il firewall e avviare lo strumento.  
   
 7.  Al termine della configurazione viene visualizzata la finestra del debugger remoto.
   
      ![RemoteDebuggerWindow](../media/remotedebuggerwindow.png "RemoteDebuggerWindow")
   
-     Il debugger remoto è in attesa per una connessione. Prendere nota del nome del server e il numero che viene visualizzato, porta, poiché deve corrispondere la configurazione utilizzata in Visual Studio in un secondo momento.  
+     Il debugger remoto è in attesa di una connessione. Prendere nota del nome del server e il numero che viene visualizzato, porta, poiché questo deve corrispondere alla configurazione in un secondo momento usare in Visual Studio.  
   
- Al termine delle operazioni di debug ed è necessario arrestare il debugger remoto, fare clic su **File > uscita** della finestra. È possibile riavviare il sistema dal **avviare** menu o dalla riga di comando:  
+ Al termine delle operazioni di debug ed è necessario arrestare il debugger remoto, fare clic su **File > Esci** nella finestra. È possibile riavviarlo dal **avviare** menu o dalla riga di comando:  
   
- **\<Directory di installazione di Visual Studio > \Common7\IDE\Remote Debugger\\< x86, x64 o Appx > \msvsmon.exe**.  
+ **\<Directory di installazione di Remote debugger >\\< x86, x64, ARM, ARM64 o Appx > \msvsmon.exe**.  

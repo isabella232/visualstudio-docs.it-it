@@ -1,6 +1,6 @@
 ---
-title: Risorse aggiuntive per la risoluzione dei problemi di accesso ai dati
-ms.date: 11/04/2016
+title: Forum di accesso dati
+ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
@@ -222,36 +222,36 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
 manager: douge
-robots: noindex,nofollow
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089076"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Risorse aggiuntive per la risoluzione dei problemi di accesso ai dati
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Risolvere gli errori di accesso dati sui forum
 
-È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Nella tabella seguente sono elencati i forum correlati ai dati disponibili in MSDN.
+È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Ecco alcuni forum correlati ai dati disponibili su MSDN:
 
- [Controlli Windows Form dati e il Data Binding](http://go.microsoft.com/fwlink/?LinkId=160179) forum dedicato a domande e discussioni generali dell'accesso ai dati in Windows Form.
+- [I controlli Windows Form dati e il Data Binding](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
- [Forum di set di dati ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160180) forum dedicato a domande e discussioni generali dei set di dati.
+- [Set di dati ADO.NET forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
- [LINQ to Entities e ADO.NET Entity Framework](http://go.microsoft.com/fwlink/?LinkId=191520) forum dedicato a domande e discussioni generali delle applicazioni Entity Framework e il linguaggio LINQ to Entities.
+- [ADO.NET Entity Framework e LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
- [Forum di WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181) forum dedicato a domande e discussioni generali dei servizi dati.
+- [Forum di WCF data services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
- [Forum di accesso ai dati di SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184) forum dedicato a domande e discussioni generali di accesso ai dati in Microsoft SQL Server.
+- [Forum di accesso di dati di SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
- [LINQ al Forum di SQL](http://go.microsoft.com/fwlink/?LinkId=160183) forum dedicato a domande e discussioni generali di Linq to SQL.
+- [LINQ al forum su SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
- [Forum di provider di dati ADO.NET](http://go.microsoft.com/fwlink/?LinkId=160182) forum dedicato a domande e discussioni generali dei provider di dati diversi .NET Framework.
+- [Forum di provider di dati ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
- Per informazioni sulla risoluzione dei problemi di connettività a SQL Server, vedere [come risolvere i problemi di connessione al motore di Database di SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+Per informazioni su come risolvere i problemi di connettività a SQL Server, vedere [risolvere i problemi di connessione al motore di database di SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -26,9 +26,6 @@
   items:
     - name: Analizzare l'utilizzo della CPU
       href: cpu-usage.md
-      items:
-        - name: Analizzare l'utilizzo della CPU in un'app di Windows universale (UWP)
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: Analizzare l'utilizzo della memoria
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: Analizzare la memoria JavaScript
       href: javascript-memory.md
-      items:
-        - name: 'Procedura dettagliata: trovare una perdita di memoria (JavaScript)'
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: Analizzare l'utilizzo della rete
       href: network-usage.md
     - name: Analizzare la velocità di risposta dell'interfaccia utente HTML
       href: html-ui-responsiveness.md
-      items:
-        - name: 'Procedura dettagliata: Migliorare la velocità di risposta dell''interfaccia utente (HTML)'
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: Usare Esplora prestazioni
       href: performance-explorer.md
       items:

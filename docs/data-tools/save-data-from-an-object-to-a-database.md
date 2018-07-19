@@ -1,5 +1,5 @@
 ---
-title: Salvare i dati da un oggetto in un database
+title: Salvare dati da un oggetto in un database
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,46 +17,46 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 641b598eb855fb1f2c3a7ca38d966630fbac15bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d5e118e4d998a5abf87920ee54401bf53d4adfa
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924717"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174488"
 ---
-# <a name="save-data-from-an-object-to-a-database"></a>Salvare i dati da un oggetto in un database
-È possibile salvare i dati negli oggetti a un database passando i valori dall'oggetto a uno dei metodi DBDirect di TableAdapter (ad esempio, `TableAdapter.Insert`). Per ulteriori informazioni, vedere [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+# <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
+È possibile salvare i dati dagli oggetti in un database passando i valori dall'oggetto a uno dei metodi DBDirect di TableAdapter (ad esempio, `TableAdapter.Insert`). Per altre informazioni, vedere [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
- Per salvare i dati da una raccolta di oggetti, scorrere la raccolta di oggetti (ad esempio, un ciclo for-next) e inviare i valori per ogni oggetto al database utilizzando uno dei metodi DBDirect di TableAdapter.
+ Per salvare i dati da una raccolta di oggetti, scorrere la raccolta di oggetti (ad esempio, un ciclo for-next) e inviare i valori per ogni oggetto nel database utilizzando uno dell'oggetto TableAdapter `DBDirect` metodi.
 
- Per impostazione predefinita, i metodi DBDirect vengono creati in un oggetto TableAdapter che può essere eseguito direttamente nel database. Questi metodi possono essere chiamati direttamente e non richiedono <xref:System.Data.DataSet> o <xref:System.Data.DataTable> oggetti per risolvere le modifiche per inviare gli aggiornamenti a un database.
+ Per impostazione predefinita, `DBDirect` metodi vengono creati in un oggetto TableAdapter che può essere eseguito direttamente nel database. Questi metodi possono essere chiamati direttamente e non richiedono <xref:System.Data.DataSet> o <xref:System.Data.DataTable> oggetti da riconciliare le modifiche per inviare aggiornamenti a un database.
 
 > [!NOTE]
->  Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per i metodi DBDirect da creare. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati da una tabella che non dispone di una colonna chiave primaria definita, non genera DBDirect (metodi).
+>  Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per il `DBDirect` metodi da creare. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati da una tabella che non dispone di una colonna chiave primaria definita, non genera `DBDirect` metodi.
 
 |Metodo DBDirect di TableAdapter|Descrizione|
 |----------------------------------|-----------------|
-|`TableAdapter.Insert`|Aggiunge nuovi record in un database e consente di passare valori di singole colonne come parametri di metodo.|
-|`TableAdapter.Update`|Aggiorna i record esistenti in un database. Il `Update` accetta valori di colonna originali e quelli nuovi come parametri del metodo. I valori originali vengono utilizzati per individuare il record originale e i nuovi valori vengono utilizzati per aggiornare il record.<br /><br /> Il `TableAdapter.Update` metodo viene utilizzato anche per risolvere le modifiche in un set di dati al database tramite l'aggiunta di un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, o una matrice di <xref:System.Data.DataRow>come parametri del metodo.|
-|`TableAdapter.Delete`|Elimina i record dal database in base ai valori di colonna originale passati come parametri del metodo esistenti.|
+|`TableAdapter.Insert`|Aggiunge nuovi record a un database e consente di passare i valori di singole colonne come parametri del metodo.|
+|`TableAdapter.Update`|Aggiorna i record in un database esistenti. Il `Update` metodo accetta i valori originale e della nuova colonna come parametri del metodo. I valori originali vengono usati per individuare il record originale e i nuovi valori vengono usati per aggiornare record in questione.<br /><br /> Il `TableAdapter.Update` metodo viene usato anche per risolvere le modifiche in un set di dati nel database eseguendo un' <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, o una matrice di <xref:System.Data.DataRow>s come parametri del metodo.|
+|`TableAdapter.Delete`|Elimina i record dal database in base ai valori di colonna originali passati come parametri del metodo esistenti.|
 
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Per salvare i nuovi record da un oggetto in un database
 
--   Creare i record passando i valori per il `TableAdapter.Insert` metodo.
+-   Creare i record passando i valori per il `TableAdapter.Insert` (metodo).
 
-     L'esempio seguente crea un nuovo record di cliente nel `Customers` tabella passando i valori nel `currentCustomer` dell'oggetto per il `TableAdapter.Insert` metodo.
+     L'esempio seguente crea un nuovo record del cliente nel `Customers` passando i valori nella tabella di `currentCustomer` dell'oggetto per il `TableAdapter.Insert` (metodo).
 
      [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
      [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]
 
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Per aggiornare i record esistenti da un oggetto a un database
 
--   Modificare i record di `TableAdapter.Update` (metodo), passando i nuovi valori per aggiornare il record e i valori originali per individuare il record.
+-   Modificare i record chiamando il `TableAdapter.Update` (metodo), passando i nuovi valori per aggiornare il record e i valori originali per individuare il record.
 
     > [!NOTE]
-    >  L'oggetto deve mantenere i valori originali per passarli al `Update` metodo. In questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.
+    >  L'oggetto deve mantenere i valori originali per passarli al `Update` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.
 
-     Nell'esempio seguente viene aggiornato un record esistente nella `Customers` tabella passando i valori nuovi e originali nel `Customer` dell'oggetto per il `TableAdapter.Update` metodo.
+     L'esempio seguente aggiorna un record esistente nel `Customers` tabella passando i valori nuovi e originali nel `Customer` dell'oggetto per il `TableAdapter.Update` (metodo).
 
      [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
      [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]
@@ -66,15 +66,15 @@ ms.locfileid: "31924717"
 -   Eliminare i record chiamando il `TableAdapter.Delete` metodo e passando i valori originali per individuare il record.
 
     > [!NOTE]
-    >  L'oggetto deve mantenere i valori originali per passarli al `Delete` metodo. In questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.
+    >  L'oggetto deve mantenere i valori originali per passarli al `Delete` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.
 
-     Nell'esempio seguente viene eliminato un record dal `Customers` tabella passando i valori originali nel `Customer` dell'oggetto per il `TableAdapter.Delete` metodo.
+     L'esempio seguente elimina un record dal `Customers` passando i valori originali nella tabella di `Customer` dell'oggetto per il `TableAdapter.Delete` (metodo).
 
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework
- È necessario disporre dell'autorizzazione per eseguire selezionata INSERT, UPDATE o DELETE sulla tabella nel database.
+ È necessario disporre dell'autorizzazione per eseguire selezionato `INSERT`, `UPDATE`, o `DELETE` sulla tabella nel database.
 
 ## <a name="see-also"></a>Vedere anche
 

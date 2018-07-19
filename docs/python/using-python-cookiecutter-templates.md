@@ -1,7 +1,7 @@
 ---
 title: Estensione CookieCutter per Python
 description: Visual Studio supporta l'estensione grafica Cookiecutter per individuare modelli per il codice Python e creare progetti da tali modelli.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2f3851d479a976d4e43317f94aa7a5328deb4fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a4cee1acbeeafb1360912f1f7342310a51ad54ff
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584659"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058464"
 ---
 # <a name="using-the-cookiecutter-extension"></a>Uso dell'estensione Cookiecutter
 

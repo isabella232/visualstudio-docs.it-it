@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954569"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38800733"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -87,7 +87,7 @@ Consente di specificare il modulo di avvio o il punto di ingresso dell'applicazi
 
 Se l'opzione **Abilita framework applicazione** è selezionata (impostazione predefinita), questo elenco ha come intestazione **Modulo di avvio** e mostra solo moduli, poiché il framework applicazione supporta solo moduli di avvio, non oggetti.
 
-Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per altre informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.
+Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per ulteriori informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.
 
 Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.
 

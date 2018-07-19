@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: importare una pagina Master o un tema | Documenti Microsoft'
+title: 'Procedura: importare una pagina Master o un tema | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,45 +16,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d28d178e5592d9cdf6d4aba6f642a869c12cc78f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119902"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedura: importare una pagina master o un tema
-  È possibile assegnare pagine nel sito di SharePoint un aspetto coerente mediante la creazione e utilizzo di temi e pagine master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per tali elementi, ma è possibile crearli in SharePoint Designer e importarle quindi in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per ulteriori informazioni, vedere [blocco predefinito: pagine e interfaccia utente](http://go.microsoft.com/fwlink/?LinkID=182095) del sito Web Microsoft.  
+  È possibile assegnare le pagine nel sito di SharePoint un aspetto coerente creando e usando i temi e le pagine master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [blocco predefinito: interfaccia utente e le pagine](http://go.microsoft.com/fwlink/?LinkID=182095) del sito Web Microsoft.  
   
 ### <a name="to-import-a-master-page-or-theme"></a>Per importare una pagina master o un tema  
   
 1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare o aprire un progetto SharePoint.  
   
-     Per informazioni su come creare un progetto SharePoint, vedere [progetto SharePoint e i modelli di progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+     Per informazioni su come creare un progetto SharePoint, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-2.  Nella barra dei menu, scegliere **progetto**, **Aggiungi nuovo elemento**.  
+2.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.  
   
-3.  Nel **Aggiungi nuovo elemento** finestra di dialogo, espandere il **SharePoint** nodo, quindi scegliere il **2010** nodo.  
+3.  Nel **Aggiungi nuovo elemento** finestra di dialogo espandere il **SharePoint** nodo e quindi scegliere il **2010** nodo.  
   
 4.  Nell'elenco dei modelli di SharePoint, scegliere il **modulo** modello, quindi specificare un nome per il modulo.  
   
-     Un modulo contiene file (ad esempio, la pagina master o file di tema) per la distribuzione in un percorso specificato in SharePoint.  
+     Un modulo contiene file (ad esempio, file di tema o pagina master) per la distribuzione in una posizione specificata in SharePoint.  
   
-5.  Nel modulo, eliminare il file predefinito, denominato Sample.  
+5.  Nel modulo, eliminare il file predefinito, chiamata ScriptHelpers *Sample. txt*.  
   
 6.  Scegliere il nodo del modulo.  
   
-7.  Nella barra dei menu, scegliere **progetto**, **Aggiungi elemento esistente**, quindi scegliere il file di tema o pagina master.  
+7.  Nella barra dei menu, scegliere **Project** > **Aggiungi elemento esistente**, quindi scegliere il file di pagina o un tema master.  
   
-     File della pagina master hanno estensione master e file di tema è un'estensione con estensione thmx.  
+     File della pagina master caratterizzati dall'estensione. master, e i file di tema hanno un'estensione di estensione thmx.  
   
-8.  Se si aggiunge una pagina master, modificare il relativo **risoluzione conflitti di distribuzione** impostando su **automatica** nelle proprietà del modulo.  
+8.  Se si aggiunge una pagina master, modificare relativi **risoluzione dei conflitti di distribuzione** se si imposta su **automatica** nelle proprietà del modulo.  
   
     > [!NOTE]  
-    >  Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: importare una pagina Master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
+    >  Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: importare una pagina master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).  
   
-9. Nel modulo, aprire Elements.xml.  
+9. Nel modulo, aprire *Elements*.  
   
-     È necessario aggiornare il file Elements.xml per fare riferimento alla pagina master o un tema che è stato aggiunto.  
+     È necessario aggiornare il *Elements* file per fare riferimento alla pagina master o un tema che è stato aggiunto.  
   
 10. Per una pagina master, sostituire il markup del modulo esistente con il markup seguente.  
   
@@ -74,27 +75,26 @@ ms.lasthandoff: 05/22/2018
     </Module>  
     ```  
   
-     Assicurarsi di sostituire i valori segnaposto con i nomi effettivi del modulo e la pagina master o del tema.  
+     Assicurarsi di sostituire i valori segnaposto con i nomi effettivi del modulo e la pagina master o il tema.  
   
-     L'attributo `Type="GhostableInLibrary"` indica che l'elemento viene aggiunto al database del contenuto e `Url` attributo del modulo specifica dove archiviare il file nel database del contenuto di SharePoint.  
+     L'attributo `Type="GhostableInLibrary"` indica che l'elemento viene aggiunto al database del contenuto e il `Url` attributo del modulo specifica la posizione in cui archiviare il file nel database del contenuto di SharePoint.  
   
-11. Per modificare l'ambito di distribuzione per una pagina master, in **Esplora**, aprire il file di funzionalità nella finestra di progettazione di funzionalità e quindi scegliere un nuovo ambito di distribuzione dal **ambito** elenco.  
+11. Per modificare l'ambito di distribuzione per una pagina master, in **Esplora soluzioni**, aprire il file delle funzionalità nella finestra di progettazione di funzionalità e quindi scegliere un nuovo ambito di distribuzione dalle **ambito** elenco.  
   
-     Il valore **Web** significa che la pagina master si applica solo al sito Web attualmente specificato nel progetto. Il valore **sito** significa che la pagina master si applica la raccolta siti corrente, che include tutti i siti secondari e il sito web radice. Non si applicano gli altri valori.  
+     Un valore pari **Web** significa che la pagina master si applica solo al sito Web che è già specificato nel progetto. Un valore pari **sito** significa che la pagina master si applica alla raccolta di siti corrente, che include tutti i siti secondari e web radice. Gli altri valori non sono applicabili.  
   
     > [!NOTE]  
-    >  Poiché i temi si applicano solo a livello di raccolta siti, è consigliabile non impostare l'ambito di un tema a un valore diverso da **sito**. Possono verificarsi errori se viene usato un tema in un sito secondario.  
+    >  Poiché i temi si applicano solo a livello di raccolta siti, è consigliabile non impostare l'ambito di un tema su qualsiasi elemento diverso da **sito**. Possono verificarsi errori se viene usato un tema in un sito secondario.  
   
-12. Nella barra dei menu, scegliere **compilare**, **Distribuisci soluzione**.  
+12. Nella barra dei menu, scegliere **compilare** > **Distribuisci soluzione**.  
   
-13. Per verificare se i file sono stati distribuiti correttamente, aprire il sito di SharePoint, scegliere il **Azioni sito** menu, scegliere il **Impostazioni sito** comandi e quindi scegliere il **pagine Master**  collegamento o **temi** collegamento.  
+13. Per verificare se i file sono stati distribuiti correttamente, aprire il sito di SharePoint, scegliere il **Azioni sito** menu, scegliere il **le impostazioni del sito** comando e quindi scegliere il **pagine Master**  collegamento o il **temi** collegamento.  
   
      L'elenco di pagine master o temi viene visualizzata e contiene la pagina master o il tema è stato importato.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Pagine master](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Creazione di pagine per SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
- [Uso di moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  
+ [Usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
   

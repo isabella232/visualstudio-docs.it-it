@@ -9,16 +9,16 @@ description: Informazioni sul vantaggio Community di Azure nelle sottoscrizioni 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199183"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280377"
 ---
-# <a name="azure-community"></a>Community di Azure  
+# <a name="azure-community"></a>Community di Azure
 
-Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.  
+Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -33,18 +33,18 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
 
 
 ## <a name="activation-steps"></a>Procedura di attivazione
-È semplice iniziare a partecipare alla community di Azure.  
+È semplice iniziare a partecipare alla community di Azure.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2. Individuare il riquadro Community di Azure nella sezione Supporto e fare clic sul collegamento **Ottieni assistenza**. 
+2. Individuare il riquadro Community di Azure nella sezione Supporto e fare clic sul collegamento **Ottieni assistenza**.
 
    ![Riquadro Community di Azure](_img/vs-azure-community/vs-azure-community-tile.png)
 
-3. Verrà visualizzato un elenco dei forum disponibili.  Fare semplicemente clic sul forum di propria scelta.  
+3. Verrà visualizzato un elenco dei forum disponibili.  Fare semplicemente clic sul forum di propria scelta.
 
    ![Forum della community di Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  All'interno del forum, è possibile visualizzare gli argomenti e le risposte, cercare risposte alle proprie domande o pubblicare una nuova domanda. 
+4.  All'interno del forum, è possibile visualizzare gli argomenti e le risposte, cercare risposte alle proprie domande o pubblicare una nuova domanda.
 
    ![Esempio di Community di Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
@@ -62,10 +62,10 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 |
 <sup>1</sup>  *Include: Not for Resale (NFR), Microsoft FTE, Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
 -  Per altre risorse della community di Azure, visitare la [pagina del supporto](https://azure.microsoft.com/support/forums/) della community di Azure.
 -  [Documentazione di Azure](/azure/).
--  Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 
+-  Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -1,7 +1,7 @@
 ---
 title: Refactoring del codice Python
 description: Come eseguire facilmente il refactoring di codice Python in Visual Studio tramite ridenominazione degli identificatori, estrazione dei metodi, aggiunta delle importazioni e rimozione delle importazioni inutilizzate.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc06ba43261a90dcfe6677a73c8a267a7efdcb1c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583073"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056540"
 ---
 # <a name="refactoring-python-code"></a>Refactoring del codice Python
 

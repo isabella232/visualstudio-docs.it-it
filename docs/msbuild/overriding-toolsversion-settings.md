@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d4254e8f45da6a476207740cfa28e1db2253e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571555"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327089"
 ---
 # <a name="overriding-toolsversion-settings"></a>Override delle impostazioni ToolsVersion
 È possibile modificare il set di strumenti per progetti e soluzioni nei tre modi seguenti:  
@@ -32,7 +32,7 @@ ms.locfileid: "31571555"
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Eseguire l'override delle impostazioni di ToolsVersion di progetti e soluzioni nelle compilazioni da riga di comando  
  Anche se i progetti Visual Studio vengono in genere compilati con la versione di ToolsVersion specificata nel file di progetto, è possibile usare l'opzione `/ToolsVersion` (o `/tv`) della riga di comando per eseguire l'override del valore e compilare tutti i progetti e le dipendenze tra progetti con un set di strumenti diverso. Ad esempio:  
   
-```  
+```cmd  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
@@ -77,7 +77,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 3.  Immettere il comando seguente in un prompt dei comandi:  
   
-    ```  
+    ```cmd  
     msbuild projectA.proj /t:go /toolsversion:3.5  
     ```  
   

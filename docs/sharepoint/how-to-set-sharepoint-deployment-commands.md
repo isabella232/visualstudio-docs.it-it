@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: impostare i comandi di distribuzione di SharePoint | Documenti Microsoft'
+title: 'Procedura: Set SharePoint Deployment Commands | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,36 +17,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8779ba4ee4cf9803982d9849b3af7c83930d8a5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119971"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: impostare i comandi di distribuzione di SharePoint
-  È possibile personalizzare il processo di distribuzione mediante l'impostazione di comandi pre-distribuzione e post-distribuzione. Questi comandi vengono eseguiti prima e dopo le altre azioni di distribuzione durante il debug di soluzioni di SharePoint da Visual Studio.  
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: Set SharePoint i comandi di distribuzione
+  È possibile personalizzare il processo di distribuzione, impostare i comandi di pre e post-distribuzione. Questi comandi vengono eseguiti prima e dopo altre azioni di distribuzione durante il debug di soluzioni di SharePoint da Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Per aggiungere un comando di pre-distribuzione  
   
-1.  Nella barra dei menu, scegliere **Project**, * ProjectName ***proprietà**.  
+1.  Nella barra dei menu, scegliere **Project** > **\<*ProjectName*> proprietà**.  
   
 2.  Scegliere il **SharePoint** scheda.  
   
-3.  Nel **riga di comando pre-distribuzione** testo immettere comandi MS-DOS o MSBuild per personalizzare questo passaggio.  
+3.  Nel **riga di comando di pre-distribuzione** testo immettere i comandi di MS-DOS o MSBuild per personalizzare questo passaggio.  
   
-     Ad esempio, per elencare il contenuto della directory prima della distribuzione è stata completata, immettere **dir**.  
+     Ad esempio, per elencare il contenuto della directory prima che venga completata la distribuzione, immettere **dir**.  
   
-### <a name="to-add-a-post-deployment-command"></a>Per aggiungere un comando di post-distribuzione  
+### <a name="to-add-a-post-deployment-command"></a>Per aggiungere un comando post-distribuzione  
   
-1.  Nella barra dei menu, scegliere **Project**, * ProjectName ***proprietà**.  
+1.  Nella barra dei menu, scegliere **Project** > **\<*ProjectName*> proprietà**.  
   
 2.  Scegliere il **SharePoint** scheda.  
   
-3.  Nel **riga di comando post-distribuzione** testo immettere comandi MS-DOS o MSBuild per personalizzare questo passaggio.  
+3.  Nel **riga di comando di post-distribuzione** testo immettere i comandi di MS-DOS o MSBuild per personalizzare questo passaggio.  
   
-     Ad esempio, per elencare il contenuto della directory dopo la distribuzione è completata, immettere **dir**. Per utilizzare una variabile di MSBuild per copiare l'assembly dalla directory di compilazione, immettere **copiare $ (TargetPath) c:\DeploymentDirectory**.  
+     Ad esempio, per elencare il contenuto della directory dopo la distribuzione è completata, immettere **dir**. Per usare una variabile di MSBuild per copiare l'assembly dalla directory di compilazione, immettere **copiare c:\DeploymentDirectory TargetPath**.  
   
-## <a name="see-also"></a>Vedere anche  
- [Creazione del pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Vedere anche
+ [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

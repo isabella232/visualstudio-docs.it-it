@@ -1,7 +1,5 @@
 - name: Panoramica
-  items:
-    - name: Accedere ai dati in Visual Studio
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: Esercitazioni
   items:
     - name: Creare un'app dati semplice usando ADO.NET

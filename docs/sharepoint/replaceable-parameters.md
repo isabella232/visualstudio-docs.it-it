@@ -1,9 +1,8 @@
 ---
-title: Parametri sostituibili | Documenti Microsoft
+title: Parametri sostituibili | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,63 +17,63 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.workload:
-- office
-ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.workload: office
+ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119941"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
-  Parametri sostituibili, o *token*, può essere utilizzato nei file di progetto per fornire valori per gli elementi di soluzione SharePoint i cui valori effettivi non sono noti in fase di progettazione. La relativa funzione è simile a quella dei token del modello standard di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per ulteriori informazioni, vedere [parametri di modello](/visualstudio/ide/template-parameters).  
+  Parametri sostituibili, oppure *token*, può essere usato nei file di progetto per fornire valori per elementi di soluzione SharePoint con i valori effettivi non sono noti in fase di progettazione. Si tratta di una funzione simile allo standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token del modello. Per altre informazioni, vedere [parametri di modello](/visualstudio/ide/template-parameters).  
   
-## <a name="token-format"></a>Formato di token  
- I token iniziano e terminano con un simbolo di dollaro ($). Nella distribuzione, eventuali token usati vengono sostituiti con i valori effettivi quando viene creato un pacchetto di un progetto in un pacchetto di soluzione SharePoint (file con estensione wsp). Ad esempio, il token **$SharePoint.Package.Name$** potrebbe essere risolto per la stringa "Test del pacchetto di SharePoint".  
+## <a name="token-format"></a>Formato del token
+ Token iniziano e terminano con un simbolo di dollaro ($). Nella distribuzione, eventuali token usati vengono sostituiti con i valori effettivi quando viene incluso nel pacchetto di un progetto in un pacchetto di soluzione SharePoint (*wsp* file). Ad esempio, il token **$SharePoint.Package.Name$** potrebbe essere risolto per la stringa "Test SharePoint Package".  
   
-## <a name="token-rules"></a>Regole dei token  
+## <a name="token-rules"></a>Regole di token
  Le regole seguenti si applicano ai token:  
   
--   Token possono essere specificati in una riga.  
+-   I token possono essere specificati in qualsiasi punto in una riga.  
   
--   Token non possono estendersi su più righe.  
+-   I token non possono estendersi su più righe.  
   
 -   Lo stesso token può essere specificato più volte sulla stessa riga e nello stesso file.  
   
--   È possibile specificare token diversi nella stessa riga.  
+-   Token diversi può essere specificato nella stessa riga.  
   
- Token che non rispettano queste regole vengono ignorati senza fornire un avviso o errore.  
+ I token che non seguono queste regole vengono ignorati e non generano un avviso o errore.  
   
- La sostituzione dei token con i valori stringa avviene immediatamente dopo la trasformazione del manifesto. Questa sostituzione consente all'utente di modificare i modelli con token del manifesti.  
+ La sostituzione dei token con valori di stringa viene eseguita immediatamente dopo la trasformazione del manifesto. Questa sostituzione consente all'utente di modificare i modelli con i token del manifesto.  
   
-### <a name="token-name-resolution"></a>Risoluzione dei nomi di token  
- Nella maggior parte dei casi, un token si risolve in un valore specifico, indipendentemente dall'elemento che lo contiene. Tuttavia, se il token è correlato a un pacchetto o una funzionalità, il valore del token dipende in cui è contenuto. Ad esempio, se è una funzionalità nel pacchetto, il token `$SharePoint.Package.Name$` risolve nel valore di "Pacchetto A." Se la stessa funzionalità è nel pacchetto B, quindi `$SharePoint.Package.Name$` si risolve in "Pacchetto B."  
+### <a name="token-name-resolution"></a>Risoluzione dei nomi di token
+ Nella maggior parte dei casi, un token viene risolto in un valore specifico indipendentemente da dove è contenuto. Tuttavia, se il token è correlato a un pacchetto o una funzionalità, il valore del token dipende in cui è contenuto. Ad esempio, se è una funzionalità nel pacchetto, il token `$SharePoint.Package.Name$` risolve nel valore di "Pacchetto r." Se la stessa funzionalità è nel pacchetto B, allora `$SharePoint.Package.Name$` si risolve in "Del pacchetto B."  
   
-## <a name="tokens-list"></a>Elenco di token  
- Nella tabella seguente sono elencati i token disponibili.  
+## <a name="tokens-list"></a>Elenco token
+ La tabella seguente elenca i token disponibili.  
   
 |nome|Descrizione|  
 |----------|-----------------|  
-|$SharePoint.Project.FileName$|Il nome del file di progetto che lo contiene, ad esempio, "NewProj".|  
+|$SharePoint.Project.FileName$|Il nome dell'oggetto contenitore, ad esempio, file, progetto *NewProj*.|  
 |$SharePoint.Project.FileNameWithoutExtension$|Il nome del file di progetto contenitore senza l'estensione del nome file. Ad esempio, "NewProj".|  
-|$SharePoint.Project.AssemblyFullName$|Il nome visualizzato (nome sicuro) del contenitore progetto dell'assembly di output.|  
-|$SharePoint.Project.AssemblyFileName$|Il nome del contenitore progetto dell'assembly di output.|  
-|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Il nome del progetto contiene dell'assembly, senza l'estensione del nome file di output.|  
-|$SharePoint.Project.AssemblyPublicKeyToken$|Assembly, convertito in una stringa di output del token di chiave pubblica del contenitore progetto. (16 caratteri in "x2" formato esadecimale.)|  
-|$SharePoint.Package.Name$|Il nome del pacchetto contenitore.|  
-|$SharePoint.Package.FileName$|Il nome del file di definizione del pacchetto contenitore.|  
-|$SharePoint.Package.FileNameWithoutExtension$|Il nome del file di definizione del pacchetto contenitore (senza estensione).|  
-|$SharePoint.Package.Id$|L'ID di SharePoint per il pacchetto che lo contiene. Se una funzionalità viene utilizzata in più di un pacchetto, questo valore verrà modificato.|  
-|$SharePoint.Feature.FileName$|Il nome del file di definizione della funzionalità contenitore, ad esempio Feature1. feature.|  
+|$SharePoint.Project.AssemblyFullName$|Il nome visualizzato (nome sicuro) del progetto che lo contiene dell'assembly di output.|  
+|$SharePoint.Project.AssemblyFileName$|Il nome del progetto che contiene dell'assembly di output.|  
+|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Il nome del progetto che contiene dell'assembly, senza l'estensione del nome file di output.|  
+|$SharePoint.Project.AssemblyPublicKeyToken$|Assembly, convertito in una stringa di output del token di chiave pubblica del progetto che lo contiene. (16 caratteri in "x2" formato esadecimale.)|  
+|$SharePoint.Package.Name$|Il nome del pacchetto che lo contiene.|  
+|$SharePoint.Package.FileName$|Nome del file di definizione del pacchetto che lo contiene.|  
+|$SharePoint.Package.FileNameWithoutExtension$|Il nome (senza estensione) del file di definizione del pacchetto che lo contiene.|  
+|$SharePoint.Package.Id$|L'ID di SharePoint per il pacchetto che lo contiene. Se una funzionalità viene usata in più pacchetti, questo valore verrà modificato.|  
+|$SharePoint.Feature.FileName$|Funzionalità con il nome del file di definizione dell'oggetto contenitore, ad esempio *Feature1*.|  
 |$SharePoint.Feature.FileNameWithoutExtension$|Il nome del file di definizione di funzionalità, senza l'estensione del nome file.|  
 |$SharePoint.Feature.DeploymentPath$|Il nome della cartella che contiene la funzionalità nel pacchetto. Questo token corrisponde alla proprietà "Percorso di distribuzione" nella finestra di progettazione di funzionalità. È un valore di esempio, "Project1_Feature1".|  
-|$SharePoint.Feature.Id$|L'ID di SharePoint della funzionalità contenitore. Il token, come con tutti i token a livello di funzionalità, può essere utilizzato solo dai file inclusi in un pacchetto tramite una funzionalità, non aggiunto direttamente a un pacchetto all'esterno di una funzionalità.|  
-|$SharePoint.ProjectItem.Name$|Il nome dell'elemento di progetto (non il nome del file) ottenuto da **ISharePointProjectItem.Name**.|  
+|$SharePoint.Feature.Id$|L'ID SharePoint della funzionalità che lo contiene. Questo token, come con tutti i token a livello di funzionalità, può essere usato solo per i file inclusi in un pacchetto tramite una funzionalità, non aggiunti direttamente a un pacchetto all'esterno di una funzionalità.|  
+|$SharePoint.ProjectItem.Name$|Il nome dell'elemento del progetto (non il nome file), ottenuto da **ISharePointProjectItem.Name**.|  
 |$SharePoint.Type. \<GUID >. $ AssemblyQualifiedName|Nome completo di assembly del tipo che corrisponde al [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] del token. Il formato del [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] è minuscolo e corrisponde al formato Guid.ToString("D"), vale a dire xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.|  
 |$SharePoint.Type. \<GUID >. $ FullName|Il nome completo del tipo che corrisponde al GUID nel token. Il formato del GUID è minuscolo e corrisponde al formato GUID (vale a dire xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
-## <a name="adding-extensions-to-the-token-replacement-file-extensions-list"></a>Aggiunta di estensioni per la sostituzione dei Token di elenco di estensioni di File  
- Anche se i token teoricamente possono essere utilizzati da qualsiasi file che appartiene a un progetto SharePoint elemento incluso nel pacchetto, per impostazione predefinita, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Cerca token solo nel file di pacchetto, i file manifesto e i file con le estensioni seguenti:  
+## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Aggiungere le estensioni per l'elenco di estensioni di file di sostituzione dei token
+ Anche se i token in teoria possono essere usati da tutti i file che appartiene a un elemento incluso nel pacchetto, per impostazione predefinita, un progetto SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ricerche per i token solo nel file di pacchetto, i file manifesto e i file con le estensioni seguenti:  
   
 -   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
@@ -84,16 +83,16 @@ ms.lasthandoff: 05/22/2018
   
 -   Web part  
   
--   DWP  
+-   CON ESTENSIONE DWP  
   
- Queste estensioni vengono definite per il `<TokenReplacementFileExtensions>` elemento nel file Microsoft. VisualStudio nel... \\< file di programma\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools cartella.  
+ Queste estensioni sono definite dal `<TokenReplacementFileExtensions>` elemento nel file targets, che si trova nel... \\< file di programma\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools cartella.  
   
  È tuttavia possibile aggiungere altre estensioni di file all'elenco. Aggiungere un `<TokenReplacementFileExtensions>` elemento a qualsiasi oggetto PropertyGroup nel file di progetto SharePoint definito prima il \<Import > del file di destinazioni di SharePoint.  
   
 > [!NOTE]  
->  Poiché la sostituzione dei token si verifica dopo la compilazione di un progetto, è consigliabile non aggiungere estensioni di file per i tipi di file che vengono compilati, ad esempio con estensione cs, vb o. resx. I token vengono sostituiti solo nei file non compilati.  
+>  Poiché la sostituzione dei token si verifica dopo la compilazione di un progetto, non è possibile aggiungere estensioni di file per i tipi di file che vengono compilati, ad esempio *cs*, *vb* oppure *resx*. I token vengono sostituiti solo nei file non compilati.  
   
- Ad esempio, per aggiungere le estensioni di nome file "myextension" e "yourextension" all'elenco di estensioni di file di sostituzione dei token, aggiungere il comando seguente per un `.csproj` file:  
+ Ad esempio, per aggiungere le estensioni del nome file (*MyExtension* e *yourextension*) all'elenco di estensioni di file di sostituzione dei token, aggiungere quanto segue a un progetto (*csproj* ) file:  
   
 ```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -108,9 +107,8 @@ ms.lasthandoff: 05/22/2018
 </PropertyGroup>  
 ```  
   
- È possibile aggiungere l'estensione direttamente al file con estensione targets. Tuttavia, questa operazione modifica l'elenco di estensioni per tutti i progetti SharePoint incluso nel pacchetto nel sistema locale, non solo la propria. È possibile pratico quando si è l'unico sviluppatore nel sistema o se richiedono la maggior parte dei progetti. Tuttavia, perché si tratta di specifiche del sistema, questo approccio non è molto portatile e di conseguenza, è consigliabile aggiungere tutte le estensioni il file di progetto invece.  
+ È possibile aggiungere l'estensione direttamente alle destinazioni (*targets*) file. Tuttavia, non aggiungere l'estensione viene modificato l'elenco di estensioni per tutti i progetti SharePoint incluso nel pacchetto nel sistema locale, solo il proprio. Questa estensione può essere utile quando si è l'unico sviluppatore del sistema o se richiedono la maggior parte dei progetti. Tuttavia, poiché è specifico del sistema, questo approccio non è portabile e di conseguenza, è consigliabile che si aggiungere tutte le estensioni al file di progetto.  
   
-## <a name="see-also"></a>Vedere anche  
- [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+## <a name="see-also"></a>Vedere anche
+ [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

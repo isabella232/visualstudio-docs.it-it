@@ -10,22 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 857c9436b3a1279671702575d3ab479d9c2282f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db0ac06d26e7e597d9f8d4b3c11a9cf8db188e80
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921936"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174127"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata
 
-Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata. È stata invece usata la stringa di connessione del file .dbml.
+Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata. Stringa di connessione il *dbml* file è stato utilizzato al suo posto.
 
-Il file .dbml contiene un riferimento a una stringa di connessione nel file di impostazioni dell'applicazione che non è possibile trovare. Questo messaggio è puramente informativo; l'impostazione della stringa di connessione verrà creata quando **OK** si fa clic.
+Il *dbml* file contiene un riferimento a una stringa di connessione nel file di impostazioni dell'applicazione che non è stata trovata. Questo messaggio è puramente informativo; l'impostazione della stringa di connessione verrà creata quando **OK** si fa clic.
 
-Per rispondere a questo messaggio, selezionare **OK**. Le informazioni di connessione contenute nel file .dbml vengono aggiunte alle impostazioni dell'applicazione.
+Per rispondere a questo messaggio, selezionare **OK**. Le informazioni di connessione contenute nella *dbml* file viene aggiunto alle impostazioni dell'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

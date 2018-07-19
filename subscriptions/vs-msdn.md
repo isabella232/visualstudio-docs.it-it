@@ -9,23 +9,23 @@ description: Registrarsi per ricevere l'abbonamento a MSDN Magazine incluso nell
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196814"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280313"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Vantaggio MSDN Magazine nelle sottoscrizioni di Visual Studio
 
-Copertura completa delle tecnologie Microsoft per soluzioni pratiche a problemi reali.  A seconda della sottoscrizione, si ha diritto alla rivista stampata o a un accesso tempestivo alla versione digitale.  
+Copertura completa delle tecnologie Microsoft per soluzioni pratiche a problemi reali.  A seconda della sottoscrizione, si ha diritto alla rivista stampata o a un accesso tempestivo alla versione digitale.
 
 
 ## <a name="activation-steps"></a>Procedura di attivazione
-I passaggi per attivare il vantaggio dipendono dall'edizione scelta.  
+I passaggi per attivare il vantaggio dipendono dall'edizione scelta.
 
 ### <a name="digital-edition"></a>Edizione digitale
-L'edizione digitale è disponibile per i membri di Visual Studio Dev Essentials.  
+L'edizione digitale è disponibile per i membri di Visual Studio Dev Essentials.
 
 1.  Per accedere all'edizione digitale di MSDN Magazine, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Individuare il riquadro MSDN Magazine nella sezione Sviluppo professionale e fare clic su **Access** (Accedi).
@@ -37,7 +37,7 @@ L'edizione digitale è disponibile per i membri di Visual Studio Dev Essentials.
     ![Riquadro del vantaggio MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
 
 
-3.  Nella pagina MSDN Magazine scegliere il tipo di abbonamento preferito.  È possibile scegliere l'edizione digitale gratuita indipendentemente dal luogo di residenza.  La versione stampata è disponibile gratuitamente per i residenti negli Stati Uniti.  Vengono applicate spese di spedizione per le versioni stampate inviate a indirizzi fuori dagli Stati Uniti.  
+3.  Nella pagina MSDN Magazine scegliere il tipo di abbonamento preferito.  È possibile scegliere l'edizione digitale gratuita indipendentemente dal luogo di residenza.  La versione stampata è disponibile gratuitamente per i residenti negli Stati Uniti.  Vengono applicate spese di spedizione per le versioni stampate inviate a indirizzi fuori dagli Stati Uniti.
 
     ![Abbonamenti al vantaggio MSDN Magazine](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
@@ -57,15 +57,15 @@ L'edizione digitale è disponibile per i membri di Visual Studio Dev Essentials.
 |Visual Studio Enterprise, Visual Studio Professional (cloud mensile)   | Azure |Non disponibile      |  N/D         |
 |Visual Studio Dev Essentials| N/D |Edizione digitale       |  Yes|
 
-<sup>1</sup>  *Edizione stampata: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*  
+<sup>1</sup>  *Edizione stampata: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
 *Edizione digitale: MCT Software & Services, Microsoft Valued Partner (Professional), Region Director (RD).*
 
 *Esclude: Imagine (Standard), BizSpark, MCT Software & Services Developer*
 
 
-Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni. 
+Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://www.visualstudio.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://www.visualstudio.com/support/). 
+-  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+-  Per domande sull'IDE di Visual Studio, Visual Studio Team Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

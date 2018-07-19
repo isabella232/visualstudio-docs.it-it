@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449026"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058591"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizzare eventi EventSource come marcatori
 Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource come marcatori ed è possibile controllare la modalità di visualizzazione dei marcatori. Per visualizzare i marcatori EventSource, registrare il GUID del provider ETW mediante la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Il visualizzatore di concorrenza usa convenzioni predefinite per rappresentare gli eventi EventSource come [marcatori di flag](../profiling/flag-markers.md), [marcatori di span](../profiling/span-markers.md) e [marcatori di messaggi](../profiling/message-markers.md). È possibile personalizzare la modalità di visualizzazione degli eventi EventSource aggiungendo campi personalizzati agli eventi. Per altre informazioni sui marcatori, vedere [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md). Per altre informazioni sugli eventi EventSource, vedere <xref:System.Diagnostics.Tracing>.  
@@ -25,9 +25,9 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
   
 ### <a name="marker-type"></a>Tipo di marcatore  
   
-1.  Gli eventi con [codice operativo](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start o win:Stop vengono considerati come l'inizio o la fine di una sezione span, rispettivamente.  Le sezioni span annidate o sovrapposte non possono essere visualizzate. Le coppie di eventi che iniziano in un thread di inizio e finiscono in un altro non possono essere visualizzate.  
+1.  Gli eventi con [codice operativo](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start o win:Stop vengono considerati come l'inizio o la fine di una sezione span, rispettivamente.  Le sezioni span annidate o sovrapposte non possono essere visualizzate. Le coppie di eventi che iniziano in un thread di inizio e finiscono in un altro non possono essere visualizzate.  
   
-2.  Un evento il cui codice operativo non è win:Start né win:Stop viene considerato come un flag di marcatore, a meno che il relativo [livello](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo di EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) non sia win:Verbose o superiore.  
+2.  Un evento il cui codice operativo non è win:Start né win:Stop viene considerato come un flag di marcatore, a meno che il relativo [livello](/windows/desktop/WES/defining-severity-levels) (campo di EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) non sia win:Verbose o superiore.  
   
 3.  In tutti gli altri casi, l'evento viene considerato un messaggio.  
   

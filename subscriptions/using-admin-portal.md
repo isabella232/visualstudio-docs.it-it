@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327392"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -50,7 +51,7 @@ Quando l'organizzazione è pronta per il processo di onboarding nel portale di a
 > [!NOTE]
 > Se il contatto principale o per le comunicazioni riceve più di un messaggio di posta elettronica, significa che ha più PCN. È necessario completare il processo usando il collegamento univoco per il PCN a cui si fa riferimento in ogni messaggio di posta elettronica.*
 
-Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Vedere l'argomento [Trova il contatto principale](/find-primary-contact/) per la procedura per individuare il contatto principale o per le comunicazioni nel Volume Licensing Service Center.
+Se è necessario essere aggiunti al nuovo Portale di amministrazione delle sottoscrizioni di Visual Studio e non si è certi di chi sia il contatto principale/per le comunicazioni di riferimento, è possibile trovare queste informazioni dopo l'accesso a [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Vedere l'argomento [Trova il contatto principale](find-primary-contact.md) per la procedura per individuare il contatto principale o per le comunicazioni nel Volume Licensing Service Center.
 Se si è già stati configurati come amministratore, è possibile passare direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Informazioni sulla pagina dei sottoscrittori
@@ -67,11 +68,9 @@ Dopo aver assegnato le sottoscrizioni, la scheda Subscribers (Sottoscrittori) of
 - Un campo facoltativo per un altro indirizzo e-mail usato per le comunicazioni di accesso. 
 
 Sul lato sinistro della pagina è possibile visualizzare informazioni aggiuntive sul numero di licenze acquistate, assegnate e ancora disponibili nella propria organizzazione per ogni contratto.
-
-   ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
+    ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Informazioni sulla pagina relativa ai dettagli
 Per altre informazioni sul contratto visualizzato, selezionare la scheda dettagli. Visualizza lo stato del contratto, dell'account di acquisto, i dettagli dell'organizzazione, i contatti principali (VLSC), gli amministratori con privilegi elevati (se disponibile) e altre informazioni di acquisto.
-
-   ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
+    ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
 
