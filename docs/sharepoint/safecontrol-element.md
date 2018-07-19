@@ -1,5 +1,5 @@
 ---
-title: SafeControl (elemento) | Documenti Microsoft
+title: Elemento SafeControl | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e507d83a1f1f75e346ccbab1858d797dc7b7518
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: aded7f246d961bd3f956611ff092dfdcf8b68564
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691843"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118892"
 ---
-# <a name="safecontrol-element"></a>Elemento SafeControl
-  Rappresenta un controllo ASPX o una Web Part che è designato come protetto per qualsiasi utente di accedere in qualsiasi pagina ASPX nel sito di SharePoint.  
+# <a name="safecontrol-element"></a>SafeControl (elemento)
+  Rappresenta un controllo ASPX o una Web Part che è designato come protetto per tutti gli utenti accedere in qualsiasi pagina ASPX nel sito di SharePoint.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,43 +36,42 @@ ms.locfileid: "34691843"
     TypeName = "Type of the safe control" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Attributi ed elementi  
+## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.  
   
 ### <a name="attributes"></a>Attributi  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|**Assembly**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome dell'assembly in cui è definito il controllo ASPX o una Web Part. Per impostazione predefinita, questo attributo viene utilizzato il **$SharePoint.Project.AssemblyFullName$** parametro sostituibile per il nome dell'assembly. Per ulteriori informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).|  
-|**IsSafe**|Parametro facoltativo **xs: Boolean** attributo.<br /><br /> Specifica se il controllo ASPX o una Web Part è sicuro per gli utenti non attendibili di accedere.|  
-|**IsSafeAgainstScript**|Parametro facoltativo **xs: Boolean** attributo.<br /><br /> Specifica se gli utenti non attendibili è possono visualizzare o modificare le proprietà del controllo ASPX o Web Part.|  
-|**Name**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome di questa voce di controllo sicure nella raccolta.|  
-|**Spazio dei nomi**|Parametro facoltativo **xs: String** attributo.<br /><br /> Lo spazio dei nomi del controllo ASPX o Web Part.|  
-|**TypeName**|Parametro facoltativo **xs: String** attributo.<br /><br /> Il nome del tipo di controllo ASPX o Web Part.|  
+|**Assembly**|Facoltativo **xs: String** attributo.<br /><br /> Il nome dell'assembly in cui è definito il controllo ASPX o una Web Part. Per impostazione predefinita, questo attributo Usa il **$SharePoint.Project.AssemblyFullName$** parametro sostituibile per il nome dell'assembly. Per altre informazioni, vedere [parametri sostituibili](../sharepoint/replaceable-parameters.md).|  
+|**IsSafe**|Facoltativo **xs: Boolean** attributo.<br /><br /> Specifica se il controllo ASPX o una Web Part è sicura per gli utenti non attendibili di accedere.|  
+|**IsSafeAgainstScript**|Facoltativo **xs: Boolean** attributo.<br /><br /> Specifica se gli utenti non attendibili possono visualizzare o modificare le proprietà del controllo ASPX o Web Part.|  
+|**Name**|Facoltativo **xs: String** attributo.<br /><br /> Il nome di questa voce di controllo sicura nell'insieme.|  
+|**Spazio dei nomi**|Facoltativo **xs: String** attributo.<br /><br /> Lo spazio dei nomi del controllo ASPX o Web Part.|  
+|**TypeName**|Facoltativo **xs: String** attributo.<br /><br /> Il nome del tipo del controllo ASPX o Web Part.|  
   
-### <a name="child-elements"></a>Elementi figlio  
+### <a name="child-elements"></a>Elementi figlio
  Nessuno.  
   
-### <a name="parent-elements"></a>Elementi padre  
+### <a name="parent-elements"></a>Elementi padre
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[SafeControls](../sharepoint/safecontrols-element.md)|Rappresenta una raccolta di controlli ASPX e Web part che sono definiti come sicuri per tutti gli utenti di accedere in qualsiasi pagina ASPX nel sito di SharePoint.|  
+|[SafeControls](../sharepoint/safecontrols-element.md)|Rappresenta una raccolta di controlli ASPX e Web part che sono definiti come sicuri per tutti gli utenti accedere in qualsiasi pagina ASPX nel sito di SharePoint.|  
   
 ## <a name="remarks"></a>Note  
- Per ulteriori informazioni sui controlli sicuri, vedere [che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Per altre informazioni sui controlli sicuri, vedere [fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Informazioni sull'elemento  
+## <a name="element-information"></a>Informazioni sull'elemento
   
 |||  
 |-|-|  
 |**Spazio dei nomi**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nome dello schema**|Schema di elemento di progetto SharePoint|  
+|**Nome dello schema**|Schema degli elementi di progetto SharePoint|  
 |**File di convalida**|ProjectItemModelSchema.xsd|  
 |**Può essere vuoto**|No|  
   
-## <a name="see-also"></a>Vedere anche  
- [Riferimento allo Schema elemento di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Specifica delle informazioni sui pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
+## <a name="see-also"></a>Vedere anche
+ [Riferimento dello schema elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
+ [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

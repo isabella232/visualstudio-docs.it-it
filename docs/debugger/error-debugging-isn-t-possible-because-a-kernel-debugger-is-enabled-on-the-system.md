@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Eseguire il debug&#39;t perché nel sistema è attivato un Debugger del Kernel | Documenti Microsoft'
+title: 'Errore: Debug non è&#39;t possibili perché nel sistema è attivato un Debugger del Kernel | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482113"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058724"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: Eseguire il debug&#39;t perché nel sistema è attivato un Debugger del Kernel
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: Debug non è&#39;t possibili perché nel sistema è attivato un Debugger del Kernel
 Quando si esegue il debug del codice gestito, è possibile che venga visualizzato il seguente messaggio di errore:  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -60,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   Al prompt dei comandi, digitare:  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -68,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  Al prompt dei comandi, digitare:  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -76,15 +76,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Per disabilitare il debug del kernel per tutte le sessioni (altri sistemi operativi Windows)  
   
-1.  Individuare boot.ini nell'unità di sistema (in genere c:\\). Il file boot.ini potrebbe essere nascosto e di sola lettura. Per visualizzarlo, è pertanto necessario utilizzare il seguente comando:  
+1.  Individuare Boot. ini nell'unità di sistema (in genere c:\\). Il file boot.ini potrebbe essere nascosto e di sola lettura. Per visualizzarlo, è pertanto necessario utilizzare il seguente comando:  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Aprire boot.ini utilizzando Blocco note e rimuovere le seguenti opzioni:  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

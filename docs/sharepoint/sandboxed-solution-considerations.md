@@ -1,5 +1,5 @@
 ---
-title: Considerazioni sulle soluzioni create mediante sandbox | Documenti Microsoft
+title: Considerazioni sulle soluzioni create mediante sandbox | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,31 +23,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119162"
 ---
-# <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
+# <a name="sandboxed-solution-considerations"></a>Considerazioni sulle soluzioni create mediante sandbox
   *Soluzioni create mediante sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti di raccolta siti caricare le proprie soluzioni di codice personalizzato. Una soluzione creata mediante sandbox comune è utenti di caricare le proprie Web part.  
   
- Un'applicazione in modalità sandbox di SharePoint viene eseguito in un processo sicuro e monitorato con accesso a una parte della Web farm. Microsoft SharePoint 2010 Usa una combinazione di funzionalità, le raccolte di soluzioni, soluzione di monitoraggio e un framework di convalida per abilitare soluzioni create mediante sandbox.  
+ Un'applicazione in modalità sandbox di SharePoint viene eseguito in un processo sicuro e monitorato con accesso a una parte limitata di Web farm. Microsoft SharePoint 2010 Usa una combinazione di funzionalità, le raccolte di soluzioni, soluzioni di monitoraggio e un framework di convalida per abilitare soluzioni create mediante sandbox.  
   
-## <a name="specifying-project-trust-level"></a>Specifica il livello di attendibilità di progetto  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] supporta soluzioni create mediante sandbox tramite una proprietà booleana del progetto chiamate *soluzione creata mediante sandbox*. Questa proprietà può essere impostata in qualsiasi momento nel progetto o può essere specificato quando si crea il progetto nel **Personalizzazione guidata SharePoint**.  
+## <a name="specify-project-trust-level"></a>Specificare il livello di attendibilità di progetto
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] supporta soluzioni create mediante sandbox tramite una proprietà del progetto booleano chiamate *soluzione creata mediante sandbox*. Questa proprietà può essere impostata in qualsiasi momento nel progetto, o può essere specificato quando si crea il progetto nel **Personalizzazione guidata SharePoint**.  
   
 > [!NOTE]  
->  Modifica il *soluzione creata mediante sandbox* proprietà di un progetto dopo averlo creato può causare errori di convalida.  
+>  Modifica il *soluzione creata mediante sandbox* proprietà di un progetto dopo la creazione può causare errori di convalida.  
   
  La soluzione viene considerata una soluzione con ambito farm se la *soluzione creata mediante sandbox* è impostata su **false** o si sceglie il **Distribuisci come soluzione farm** opzione. Tuttavia, la soluzione viene trattata in modo diverso da una soluzione farm se la *soluzione creata mediante sandbox* è impostata su **true** o si sceglie il **Distribuisci come soluzione creata mediante sandbox** opzione della procedura guidata.  
   
-## <a name="sharepoint-site-hierarchy"></a>Gerarchia del sito di SharePoint  
- Per informazioni sulle soluzioni come creata mediante sandbox, è opportuno sapere che i siti di SharePoint sono gerarchici nell'ambito. Il primo elemento è noto come Web farm e gli altri elementi sono subordinati:  
+## <a name="sharepoint-site-hierarchy"></a>Gerarchia dei siti di SharePoint
+ Per comprendere come sandbox soluzioni, è opportuno sapere che siti di SharePoint sono gerarchici nell'ambito. L'elemento all'inizio è nota come Web farm e gli altri elementi sono subordinati a esso:  
   
  Web Farm  
   
- Applicazione Web  
+ Applicazione Web A  
   
  Raccolta siti A1  
   
@@ -57,40 +58,40 @@ ms.lasthandoff: 04/16/2018
   
  Raccolta siti B1  
   
- Sito B1a  
+ B1a sito  
   
- Sito B1b  
+ B1b sito  
   
  Raccolta siti B2  
   
  Sito B2a  
   
- Come si può notare, le Web farm può contenere uno o più applicazioni Web, che a sua volta possono contenere uno o più raccolte siti, che possono avere siti secondari e così via. Modifiche apportate a una raccolta siti influiscono solo tale raccolta e nessun altro. Tuttavia, le modifiche apportate a livello di farm Web influiscono su tutte le raccolte siti nella farm.  
+ Come può notare, le Web farm può contenere uno o più applicazioni Web, che a sua volta possono contenere uno o più raccolte siti, che possono avere siti secondari e così via. Modifiche apportate a una raccolta siti influiscono solo tale raccolta e nessun altro. Tuttavia, le modifiche apportate a livello di farm Web influiscono su tutte le raccolte di siti nella farm.  
   
  Windows SharePoint Services (WSS) 3.0 consente di distribuire soluzioni solo a livello di farm, ma [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] consente di distribuire a livello di farm (soluzione farm) oppure a livello di raccolta siti (soluzione creata mediante sandbox).  
   
-## <a name="why-sandboxed-solutions"></a>Motivo per cui soluzioni create mediante sandbox?  
- WSS 3.0, le soluzioni può essere distribuite solo a livello di farm. In questo modo, che può essere distribuite soluzioni potenzialmente dannose o destabilizzanti che influiscono l'intera Web farm e tutte le altre raccolte siti e applicazioni eseguite in essa contenute. Tuttavia, con le soluzioni create mediante sandbox, è possibile distribuire le soluzioni in un'area secondaria della farm, ovvero una raccolta siti. Per fornire protezione aggiuntiva, l'assembly della soluzione non viene caricato nel principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo (w3wp.exe). In alternativa, caricarli in un processo separato (SPUCWorkerProcess.exe). Questo processo viene monitorato e implementa quote e limitazioni per proteggere la farm da soluzioni create mediante sandbox che eseguono attività dannose, ad esempio l'esecuzione di cicli rigidi che utilizzano i cicli della CPU.  
+## <a name="why-sandboxed-solutions"></a>Il motivo per cui soluzioni create mediante sandbox?
+ In WSS 3.0, soluzioni può essere distribuite solo a livello di farm. Questo significava che è stato possibile distribuire soluzioni potenzialmente dannose o destabilizzanti che interessata l'intera farm Web e tutte le altre raccolte siti e applicazioni in esecuzione sotto di esso. Tuttavia, usando le soluzioni create mediante sandbox, è possibile distribuire le soluzioni in un'area secondaria della farm, ovvero una raccolta siti. Per fornire protezione aggiuntiva, l'assembly della soluzione non viene caricato nel principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo (*w3wp.exe*). Al contrario, viene caricato in un processo separato (*SPUCWorkerProcess.exe*). Questo processo viene monitorato e implementa quote e limitazioni per proteggere la farm da soluzioni create mediante sandbox che eseguono attività dannose, ad esempio l'esecuzione di cicli rigidi cicli della CPU.  
   
-## <a name="site-collection-solution-gallery"></a>Soluzioni della raccolta siti  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 dispone di una funzionalità nota come "raccolta di soluzioni della raccolta siti". È possibile accedere a questa funzionalità dalla pagina Amministrazione centrale SharePoint 2010 o aprendo il **Azioni sito** menu, scegliendo **Impostazioni sito**e quindi scegliendo il **soluzioni** collegamento in **raccolte** nel sito di SharePoint. Le raccolte di soluzioni sono repository di soluzioni che consentono agli amministratori raccolta siti gestire soluzioni nelle proprie raccolte siti.  
+## <a name="site-collection-solution-gallery"></a>Soluzioni della raccolta siti
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 dispone di una funzionalità nota come "raccolta di soluzioni della raccolta siti". È possibile accedere a questa funzionalità dalla pagina di amministrazione centrale SharePoint 2010 o aprendo il **Azioni sito** menu, scegliendo **le impostazioni del sito**e quindi scegliendo il **soluzioni** collegamento sotto **Galleries** nel sito di SharePoint. Le raccolte di soluzioni sono repository delle soluzioni che consentono agli amministratori raccolta siti gestire le soluzioni nelle proprie raccolte siti.  
   
- La raccolta di soluzioni è una raccolta di documenti archiviata nella radice Web del sito di SharePoint. La raccolta di soluzioni sostituisce i modelli di sito e supporta i pacchetti della soluzione. Quando viene caricato un file di pacchetto (con estensione wsp) di soluzione SharePoint, viene elaborato come una soluzione creata mediante sandbox.  
+ La raccolta di soluzioni è una raccolta di documenti archiviata nella radice Web del sito di SharePoint. La raccolta di soluzioni sostituisce i modelli di sito e supporta i pacchetti della soluzione. Quando un pacchetto della soluzione SharePoint (*wsp*) file viene caricato, viene elaborato come soluzione creata mediante sandbox.  
   
-## <a name="sandboxed-solution-limitations"></a>Limitazioni di soluzione creata mediante sandbox  
- Quando si distribuisce una soluzione creata mediante sandbox, la matrice delle funzionalità di SharePoint disponibili per il processo è limitata per ridurre le vulnerabilità di sicurezza di che potrebbe disporre. Alcune di queste limitazioni includono quanto segue:  
+## <a name="sandboxed-solution-limitations"></a>Limitazioni delle soluzioni create mediante sandbox
+ Quando si distribuisce una soluzione creata mediante sandbox, la matrice delle funzionalità di SharePoint disponibili per il processo è limitata per ridurre qualsiasi vulnerabilità della sicurezza che può avere. Alcune di queste limitazioni includono quanto segue:  
   
--   Soluzioni create mediante sandbox sono un subset limitato di elementi di soluzione distribuibili a loro disposizione. Modelli di progetto SharePoint potenzialmente vulnerabili, ad esempio le definizioni di sito e i flussi di lavoro, non sono disponibili.  
+-   Le soluzioni create mediante sandbox hanno un subset limitato di elementi di soluzione da distribuire a loro disposizione. Modelli di progetto SharePoint potenzialmente vulnerabili, ad esempio le definizioni di sito e i flussi di lavoro, non sono disponibili.  
   
--   SharePoint esegue codice soluzione creata mediante sandbox in un processo (SPUCWorkerProcess.exe) separato dalla principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo (w3wp.exe) di pool di applicazioni.  
+-   SharePoint viene eseguito il codice della soluzione creata mediante sandbox in un processo (*SPUCWorkerProcess.exe*) separata dalla pagina principale [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool di applicazioni (*w3wp.exe*) processo.  
   
--   Mapping di cartelle non può essere aggiunto al progetto.  
+-   Cartelle mappate non possono essere aggiunto al progetto.  
   
--   Tipi di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server non può essere utilizzato in soluzioni create mediante sandbox. Inoltre, solo i tipi nel [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft. SharePoint può essere utilizzato in soluzioni create mediante sandbox.  
+-   Tipi di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] assembly Microsoft.Office.Server non possono essere utilizzati in soluzioni create mediante sandbox. Inoltre, solo i tipi nel [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] assembly Microsoft. SharePoint possono essere utilizzati in soluzioni create mediante sandbox.  
   
- È importante notare che se si specifica una soluzione di SharePoint come una soluzione creata mediante sandbox non ha alcun effetto in SharePoint server. solo determina la modalità del progetto SharePoint viene distribuito in SharePoint da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e gli assembly associati a. Non si applica il file con estensione wsp generati e il file con estensione wsp non contiene dati che è direttamente correlato al *soluzione creata mediante sandbox* proprietà.  
+ È importante notare che se si specifica una soluzione di SharePoint come una soluzione creata mediante sandbox non ha alcun effetto su SharePoint server. solo determina come viene distribuito il progetto di SharePoint a SharePoint da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e gli assembly associati a. Non interessa generato *wsp* file e il *wsp* file non contiene dati che è direttamente correlata al *soluzione creata mediante sandbox* proprietà.  
   
-## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funzionalità e gli elementi nelle soluzioni create mediante sandbox  
+## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>Funzionalità e gli elementi in soluzioni create mediante sandbox
  Soluzioni create mediante sandbox supportano le funzionalità e gli elementi seguenti:  
   
 -   Campi di tipi di contenuto  
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Ricevitori di eventi  
   
--   Funzionalità callout  
+-   Callout di funzionalità  
   
 -   Definizioni di elenco  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Navigazione  
   
--   Onet.Xml  
+-   *Onet. Xml*  
   
 -   SPItemEventReceiver  
   
@@ -123,7 +124,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Web part  
   
--   Funzionalità webtemplate (anziché webtemp)  
+-   Funzionalità webtemplate (invece di *webtemp*)  
   
 -   Web part visive  
   
@@ -131,7 +132,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Pagine dell'applicazione  
   
--   Gruppo di azioni personalizzate  
+-   Gruppo di azione personalizzato  
   
 -   Funzionalità con ambito farm  
   
@@ -141,8 +142,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Flussi di lavoro con codice  
   
-## <a name="see-also"></a>Vedere anche  
- [Differenze tra creata mediante sandbox e soluzioni Farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
+## <a name="see-also"></a>Vedere anche
+ [Differenze tra modalità sandbox e soluzioni farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

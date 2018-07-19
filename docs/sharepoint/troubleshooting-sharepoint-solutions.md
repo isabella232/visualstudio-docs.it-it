@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi delle soluzioni SharePoint | Documenti Microsoft
+title: Risoluzione dei problemi delle soluzioni SharePoint | Microsoft Docs
 ms.custom: ''
 ms.date: 02/22/2017
 ms.technology:
@@ -19,16 +19,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 12de0ea2e9638c7ab523bbda0e623c84d0182aad
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118933"
 ---
-# <a name="troubleshooting-sharepoint-solutions"></a>Risoluzione dei problemi relativi alle soluzioni SharePoint
-  Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per ulteriori informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+# <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi di soluzioni SharePoint
+  Potrebbero verificarsi i problemi o gli avvisi seguenti durante il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Per altre informazioni, vedere [debug delle soluzioni di flusso di lavoro di SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
   
-## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrizioni dei token nelle web part visive create mediante sandbox  
+## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrizioni dei token nelle sandbox web part visive
  Tramite le web part visive nelle soluzioni create mediante sandbox non è possibile elaborare i token standard, ad esempio $SPUrl, supportati dal runtime di SharePoint. Di conseguenza, l'URL non viene risolto e non è possibile visualizzare in anteprima il contenuto nella visualizzazione Progettazione nella finestra di progettazione di web part visive se vi si fa riferimento direttamente in un elemento dello script, come nell'esempio seguente:  
   
 ```xml  
@@ -43,10 +44,10 @@ ms.lasthandoff: 05/23/2018
 <asp:literal ID="Literal3" runat="server" Text="' type='text/javascript' ></script>" />  
 ```  
   
-## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Restrizioni relative ai caratteri in nomi di progetti e di elementi di progetto  
- Nei nomi di progetti e di elementi di progetto possono essere inclusi solo caratteri che sono validi in un percorso di distribuzione in SharePoint 2010. Altri caratteri non consentiti.  
+## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Restrizioni dei caratteri nei nomi di progetti ed elementi di progetto
+ Nei nomi di progetti e di elementi di progetto possono essere inclusi solo caratteri che sono validi in un percorso di distribuzione in SharePoint 2010. Altri caratteri non sono consentiti.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
  Messaggio di errore "Caratteri non validi".  
   
 ### <a name="resolution"></a>Risoluzione  
@@ -68,11 +69,11 @@ ms.lasthandoff: 05/23/2018
   
  Quando viene creato un pacchetto di un progetto, tramite una regola di convalida viene verificato che nella proprietà del percorso di distribuzione per ogni file distribuito siano contenuti solo questi caratteri validi.  
   
-## <a name="errors-when-creating-custom-fields"></a>Errori durante la creazione di campi personalizzati  
+## <a name="errors-when-creating-custom-fields"></a>Errori durante la creazione di campi personalizzati
  I campi personalizzati in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono definiti in XML. Si possono verificare errori se un campo non è definito o non vi viene fatto riferimento tramite un formato specifico.  
   
-### <a name="error-message"></a>Messaggio di errore  
- Messaggio di errore "Caratteri non validi" in fase di creazione del pacchetto.  
+### <a name="error-message"></a>Messaggio di errore
+ Messaggio di errore "Caratteri non validi" in fase di creazione dei pacchetti.  
   
 ### <a name="resolution"></a>Risoluzione  
  L'ID per una definizione di campo deve essere un GUID racchiuso tra parentesi graffe, come illustrato nell'esempio seguente:  
@@ -97,50 +98,50 @@ ms.lasthandoff: 05/23/2018
   
  Se il codice XML di origine per il campo non è corretto, ad esempio un file XML non è valido o presenta altri problemi, si verificherà l'errore indicante che non è possibile analizzare il file.  
   
-## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>Le nuove definizioni di sito Non in lingua inglese non vengono visualizzati nella pagina di creazione del sito dopo la distribuzione  
- Dopo aver creato e distribuire una definizione di sito utilizzando una versione inglese di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (ovvero, una versione con impostazioni locali [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] diverso da 1033), il **personalizzazioni di SharePoint** scheda non verrà visualizzata nel **Selezione modello** casella e il nuovo modello di sito non viene visualizzato nel **nuovo sito di SharePoint** pagina.  
+## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>Nuove definizioni del sito non in lingua inglese non sono visualizzate nella pagina di creazione del sito dopo la distribuzione
+ Dopo aver creato e distribuire una definizione di sito utilizzando una versione non inglese di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (vale a dire, una versione con le impostazioni locali [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] diverso da 1033), il **personalizzazioni di SharePoint** scheda non viene visualizzato nei **Selezione modello** finestra e il nuovo modello di sito non viene visualizzato nei **nuovo sito di SharePoint** pagina.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
  Nessuno.  
   
 ### <a name="resolution"></a>Risoluzione  
- Questo problema si verifica a causa di un valore non corretto nel **percorso** proprietà per il file di configurazione definizione sito webtemp, ad esempio webtemp_SiteDefinitionProject1. Nel **percorso** proprietà per il file webtemp, sotto il **percorso di distribuzione**, modificare le impostazioni locali 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Ad esempio, per l'utilizzo delle impostazioni locali giapponesi modificare il valore su 1041. Per ulteriori informazioni, vedere [ID impostazioni locali assegnati da Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) nel sito Web MSDN.  
+ Questo problema si verifica a causa di un valore non corretto nel **tracciato** file di proprietà per la configurazione della definizione sito webtemp, ad esempio *webtemp_SiteDefinitionProject1*. Nel **percorso** proprietà per il file webtemp, che si trova sotto il **percorso di distribuzione**, modificare le impostazioni locali 1033 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Ad esempio, per usare le impostazioni locali giapponesi modificare il valore per 1041. Per altre informazioni, vedere [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) sul sito Web MSDN.  
   
-## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Errore viene visualizzato quando un progetto flusso di lavoro viene distribuito in un sistema pulito  
+## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Errore viene visualizzato quando un progetto di flusso di lavoro viene distribuito in un sistema pulito
  Questo problema si verifica se si distribuisce un progetto flusso di lavoro in un computer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con un sistema pulito. Un sistema pulito è un computer in cui è presente una nuova installazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e di SharePoint, ma non sono presenti progetti flusso di lavoro distribuiti.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
  Impossibile trovare l'elenco di SharePoint: cronologia del flusso di lavoro.  
   
 ### <a name="resolution"></a>Risoluzione  
- Questo errore si verifica a causa di un elenco di cronologia del flusso di lavoro mancano. Poiché l'ambiente di sviluppo è un sistema pulito, nessun flusso di lavoro viene distribuiti e l'elenco della cronologia del flusso di lavoro non esiste ancora. Per risolvere questo problema, riaprire la procedura guidata del flusso di lavoro, che determina l'elenco di cronologia del flusso di lavoro da creare.  
+ Questo errore si verifica a causa di un elenco Cronologia flussi di lavoro mancano. Poiché l'ambiente di sviluppo è un sistema pulito, alcun flusso di lavoro non viene distribuiti e l'elenco di cronologia del flusso di lavoro non esiste ancora. Per risolvere questo problema, aprire nuovamente la procedura guidata del flusso di lavoro, che fa sì che l'elenco Cronologia flussi di lavoro da creare.  
   
-##### <a name="to-reenter-the-workflow-wizard"></a>Per immettere nuovamente la procedura guidata del flusso di lavoro  
+##### <a name="to-reenter-the-workflow-wizard"></a>Immettere nuovamente la procedura guidata del flusso di lavoro  
   
-1.  In **Esplora**, scegliere il nodo del flusso di lavoro.  
+1.  Nelle **Esplora soluzioni**, scegliere il nodo del flusso di lavoro.  
   
-2.  Nel **proprietà** finestra, fare clic sul pulsante con puntini di sospensione (...) a una proprietà che contiene un pulsante con i puntini di sospensione.  
+2.  Nel **proprietà** finestra, fare clic sul pulsante con puntini di sospensione (...) su qualsiasi proprietà che dispone di un pulsante con puntini di sospensione.  
   
-## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>L'utente deve aggiornare la pagina applicazione nel Browser durante il debug per visualizzare l'immagine aggiornata  
- Se si esegue il debug di una soluzione di SharePoint che contiene una pagina dell'applicazione con un controllo che visualizza un'immagine, ad esempio un [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] controllo immagine, è necessario aggiornare la pagina nel browser per visualizzare le modifiche apportate all'immagine.  
+## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>L'utente deve aggiornare la pagina dell'applicazione nel browser durante il debug per visualizzare l'immagine aggiornata
+ Se si esegue il debug di una soluzione di SharePoint contenente una pagina dell'applicazione con un controllo che visualizza un'immagine, ad esempio un [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] controllo immagine, è necessario aggiornare la pagina nel browser per visualizzare tutte le modifiche apportate all'immagine.  
   
-## <a name="error-the-site-location-is-not-valid"></a>Errore: Il percorso del sito non è valido  
- Questo problema può verificarsi se [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] non è installato. Si potrebbe verificare anche se non si dispone dell'accesso come amministratore per il sito Web di SharePoint specificato nella **Personalizzazione guidata SharePoint**.  
+## <a name="error-the-site-location-is-not-valid"></a>Errore: Il percorso del sito non è valido
+ Questo problema può verificarsi se [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] non è installato. Si potrebbe verificare anche se non hai accesso come amministratore al sito Web di SharePoint specificato nella **Personalizzazione guidata SharePoint**.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
   
--   Percorso del sito di SharePoint non è valido.  
+-   Percorso di sito di SharePoint non è valido.  
   
 ### <a name="resolution"></a>Risoluzione  
   
 -   Installare [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Verificare di disporre di accesso di amministratore per il sito Web di SharePoint. Per altre informazioni, vedere la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] articolo Online [assegnare o rimuovere gli amministratori di applicazioni di servizio in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Assicurarsi di avere accesso di amministratore per il sito Web di SharePoint. Per altre informazioni, vedere la [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] articolo in linea [assegnare o rimuovere gli amministratori di applicazioni di servizio in SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
-## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Evento Web l'eliminazione del sito non è disponibile nel progetto ricevitore di eventi  
+## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Eventi web eliminazione sito non si verificano nel progetto ricevitore di eventi
  Quando si crea un progetto di ricevitore di eventi e si selezionano determinati eventi Web, ad esempio "un sito di eliminazione in corso", l'evento si verifica mai.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
  Nessuno.  
   
 ### <a name="resolution"></a>Risoluzione  
@@ -148,42 +149,42 @@ ms.lasthandoff: 05/23/2018
   
 -   Un sito viene eliminato (WebDeleting)  
   
--   È stato eliminato un sito (WebDeleted)  
+-   Un sito è stato eliminato (WebDeleted)  
   
 -   Un sito viene spostato (WebMoving)  
   
 -   È stato spostato un sito (WebMoved)  
   
- Per risolvere il problema, modificare l'ambito della funzionalità del ricevitore di eventi, come indicato di seguito.  
+ Per risolvere il problema, modificare l'ambito di funzionalità del ricevitore di eventi, come indicato di seguito.  
   
-##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Per modificare l'ambito della funzionalità del ricevitore di eventi  
+##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Per modificare l'ambito di funzionalità del ricevitore di eventi  
   
-1.  In **Esplora**, aprire il file con estensione feature del ricevitore di eventi nel **Progettazione funzionalità** facendo doppio clic sul file o aprendo il menu di scelta rapida e scegliendo **aprire**.  
+1.  Nelle **Esplora soluzioni**, aprire il ricevitore di eventi *feature* del file nei **Progettazione funzionalità** doppio clic sul file o aprendo il relativo menu di scelta rapida e quindi scelta **aperto**.  
   
 2.  Scegliere la freccia accanto a **ambito**, quindi scegliere **sito** nell'elenco visualizzato.  
   
-## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Errore di distribuzione viene visualizzato dopo avere modificato il nome di un identificatore in un progetto di modello connettività dati Business  
+## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Errore di distribuzione viene visualizzato dopo aver modificato il nome di un identificatore in un progetto modello di connettività dei dati
  Questo problema si verifica se si modifica il nome dell'identificatore di un'entità in un modello di integrazione applicativa dei dati (BDC) e quindi provare a distribuire la soluzione.  
   
-### <a name="error-messages"></a>Messaggi di errore  
+### <a name="error-messages"></a>Messaggi di errore
   
--   \<*nome del modello*> contiene gli errori di attivazione di tipo di contenuto esterno seguenti...  
+-   \<*nome del modello*> presenta i seguenti errori di attivazione di tipo di contenuto esterno...  
   
--   IMetadataObject denominato '\<*nome modello*>' ha un valore nel campo 'name' che è duplicato...  
+-   IMetadataObject denominato '\<*nome del modello*>' ha un valore nel campo 'name' che è duplicato...  
   
 ### <a name="resolution"></a>Risoluzione  
- Per risolvere questo problema, eliminare manualmente il modello e quindi distribuire nuovamente la soluzione.  È possibile eliminare il modello utilizzando uno degli strumenti seguenti:  
+ Per risolvere questo problema, eliminare manualmente il modello e quindi distribuire nuovamente la soluzione.  È possibile eliminare il modello usando uno dei seguenti strumenti:  
   
--   Amministrazione centrale SharePoint 2010. Per ulteriori informazioni, vedere [gestione del modello di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkID=181472) nel sito Web Microsoft TechNet.  
+-   Amministrazione centrale SharePoint 2010. Per altre informazioni, vedere [modelli BDC](http://go.microsoft.com/fwlink/?LinkID=181472) nel sito Web Microsoft TechNet.  
   
--   Windows PowerShell. È possibile eliminare il modello digitando questo comando al prompt dei comandi: **Remove-SPBusinessDataCatalogModel**. Per ulteriori informazioni, vedere [cmdlet generali (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) nel sito Web Microsoft TechNet.  
+-   Windows PowerShell. È possibile eliminare il modello digitando questo comando al prompt dei comandi: **Remove-SPBusinessDataCatalogModel**. Per altre informazioni, vedere [cmdlet generali (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) nel sito Web Microsoft TechNet.  
   
-## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Viene visualizzato un errore quando si tenta di visualizzare una Web Part visiva in SharePoint  
- Questo problema si verifica quando il **percorso** proprietà del controllo utente non inizia con la stringa "CONTROLTEMPLATES\\".  
+## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Viene visualizzato un errore quando si prova a visualizzare una web part visiva in SharePoint
+ Questo problema si verifica quando la **tracciato** proprietà del controllo utente non inizia con la stringa "CONTROLTEMPLATES\\".  
   
-### <a name="error-messages"></a>Messaggi di errore  
+### <a name="error-messages"></a>Messaggi di errore
   
--   Il file ' /_CONTROLTEMPLATES/*\<nome progetto >*/*\<nome della Web Part >*/*\<controllo utente nome >* ascx ' non esiste.  
+-   Il file "/_CONTROLTEMPLATES/*\<nome progetto >*/*\<nome della Web Part >*/*\<controllo utente nome >*. ascx "non esiste.  
   
 -   Errore del server nell'applicazione '/'.  
   
@@ -191,97 +192,97 @@ ms.lasthandoff: 05/23/2018
   
 ##### <a name="to-resolve-this-issue"></a>Per risolvere il problema  
   
-1.  In **Esplora**, scegliere il file di controllo utente, la cui estensione di file è ascx.  
+1.  Nelle **Esplora soluzioni**, scegliere il file di controllo utente, la cui estensione viene *ascx*.  
   
-2.  Nella barra dei menu, scegliere **vista**, **finestra proprietà**.  
+2.  Nella barra dei menu, scegliere **View** > **finestra proprietà**.  
   
-3.  Nel **proprietà** finestra, espandere il **percorso di distribuzione** nodo.  
+3.  Nel **delle proprietà** finestra, espandere il **percorso di distribuzione** nodo.  
   
-4.  Assicurarsi che il valore della **percorso** proprietà inizia con la stringa "CONTROLTEMPLATES\\".  
+4.  Assicurarsi che il valore della **tracciato** proprietà inizia con la stringa "CONTROLTEMPLATES\\".  
   
-## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Errore durante l'esecuzione di un flusso di lavoro riutilizzabile importato contenente un campo del Form attività  
- Questo problema si verifica se si importa un flusso di lavoro che contiene un modulo di attività che dispone di un campo e quindi eseguirla di nuovo flusso di lavoro nello stesso sistema da cui è stato importato.  
+## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Errore viene visualizzato quando si esegue un flusso di lavoro riutilizzabile importato che contiene un campo del form attività
+ Questo problema si verifica se si importa un flusso di lavoro che contiene un modulo di attività che dispone di un campo e quindi esecuzione di nuovo flusso di lavoro nello stesso sistema da cui è stato importato.  
   
-### <a name="error-message"></a>Messaggio di errore  
- Errore durante il passaggio di distribuzione 'Attiva funzionalità': il campo con Id [*Guid*] definito nella funzionalità [*Guid*] è stato trovato nella raccolta siti corrente o in un sito secondario.  
+### <a name="error-message"></a>Messaggio di errore
+ Si è verificato un errore in fase di distribuzione 'Attivare la funzionalità': il campo con Id [*Guid*] definito in funzionalità [*Guid*] è stato trovato nella raccolta di siti corrente o in un sito secondario.  
   
 ### <a name="resolution"></a>Risoluzione  
- Questo errore è il risultato di conflitti di ID di campo che si verificano perché il flusso di lavoro riutilizzabile nel progetto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non modifica l'ID di campo modulo attività. Se si distribuisce un flusso di lavoro importato nello stesso server che contiene il flusso di lavoro originale, si verificano conflitti di campo ID.  
+ Questo errore è il risultato di collisioni ID campo che si verificano poiché il flusso di lavoro riutilizzabile di importazione del progetto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non modifica campo del form attività ID. Se si distribuisce un flusso di lavoro importato nello stesso server che contiene il flusso di lavoro originale, si verifica conflitti tra ID di campo.  
   
- Per risolvere questo problema, utilizzare la funzionalità Trova e Sostituisci per modificare il valore dell'attributo ID campo in tutti i file di flusso di lavoro importato.  
+ Per risolvere questo problema, usare la funzionalità di ricerca e sostituzione per modificare il valore dell'attributo campo ID in tutti i file di flusso di lavoro importato.  
   
-## <a name="error-appears-when-a-renamed-imported-list-instance-is-run"></a>Errore viene visualizzato quando importata rinominata viene eseguita l'istanza di elenco  
+## <a name="error-appears-when-a-renamed-imported-list-instance-is-run"></a>Errore viene visualizzato quando un rinominato importati viene eseguita l'istanza di elenco
  Questo problema si verifica se si rinomina un'istanza di elenco importata e quindi eseguirlo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-### <a name="error-message"></a>Messaggio di errore  
- Errore di compilazione: si è verificato un errore in fase di distribuzione 'Attiva funzionalità': il file Template\Features\\[*importare il progetto**funzionalità**nome*] \Files\Lists\\[*vecchio * * nome dell'elenco*] \Schema.xml non esiste.  
+### <a name="error-message"></a>Messaggio di errore
+ Errore di compilazione: si è verificato un errore in fase di distribuzione 'Attivare la funzionalità': il file Template\Features\\[*Importa progetto**funzionalità**name*] \Files\Lists\\[*vecchio * * nome elenco*] \Schema.xml non esiste.  
   
 ### <a name="resolution"></a>Risoluzione  
- Quando si importa un'istanza di elenco, un attributo denominato CustomSchema viene aggiunto al file Elements.xml dell'istanza di elenco. Elements include il percorso di un schema personalizzato per l'istanza di elenco. Quando si rinomina l'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cambia il percorso di distribuzione per il schema.xml personalizzato, ma il valore del percorso dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza di elenco Impossibile trovare il file di schema nel percorso specificato dall'attributo CustomSchema quando viene attivata la funzionalità precedente.  
+ Quando si importa un'istanza di elenco, un attributo denominato CustomSchema viene aggiunto al file Elements. XML dell'istanza di elenco. Elements. XML include il percorso di un file schema. XML personalizzato per l'istanza di elenco. Quando si rinomina l'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], viene modificato il percorso di distribuzione per il file schema. XML personalizzato, ma il valore di percorso dell'attributo CustomSchema non viene aggiornato. Di conseguenza, l'istanza di elenco non è stato trovato il *schema* file nel vecchio percorso specificato dall'attributo CustomSchema quando la funzionalità viene attivata.  
   
- Per risolvere questo problema, aggiornare il percorso di distribuzione del file di schema nell'attributo CustomSchema.  
+ Per risolvere questo problema, aggiornare il percorso della posizione di distribuzione di *schema* file nell'attributo CustomSchema.  
   
-## <a name="sharepoint-debugging-session-terminated-by-iis"></a>Sessione terminata da IIS di debug di SharePoint  
- Questo problema si verifica se si imposta un punto di interruzione un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] soluzione SharePoint, premere il tasto F5 per eseguire e quindi rimarrà in un punto di interruzione più di 90 secondi.  
+## <a name="sharepoint-debugging-session-terminated-by-iis"></a>SharePoint terminata da IIS la sessione di debug
+ Questo problema si verifica se si imposta un punto di interruzione in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] soluzione di SharePoint, scegliere il **F5** tasto per eseguire il file e quindi restare in corrispondenza di un punto di interruzione più di 90 secondi.  
   
-### <a name="error-message"></a>Messaggio di errore  
- Processo del server Web a cui è stato eseguito il debug è stato terminato da Internet Information Services (IIS). Il problema può essere risolto configurando le impostazioni ping del pool di applicazioni in IIS. Vedere la Guida per ulteriori informazioni.  
+### <a name="error-message"></a>Messaggio di errore
+ Il processo del server Web in fase di debug è stato terminato da Internet Information Services (IIS). Il problema può essere risolto configurando le impostazioni ping del pool di applicazioni in IIS. Vedere la Guida per altri dettagli.  
   
 ### <a name="resolution"></a>Risoluzione  
- Per impostazione predefinita, il pool di applicazioni IIS attende 90 secondi per un'applicazione di rispondere prima della chiusura dell'applicazione. Questo processo è noto come "ping", l'applicazione. Per risolvere questo problema, è possibile aumentare il tempo di attesa o disabilitare completamente il ping di applicazione.  
+ Per impostazione predefinita, il pool di applicazioni IIS attende 90 secondi per un'applicazione di rispondere prima della chiusura dell'applicazione. Questo processo è noto come "ping" l'applicazione. Per risolvere questo problema, è possibile aumentare il tempo di attesa o disabilitare completamente il ping dell'applicazione.  
   
-##### <a name="to-access-the-iis-app-pool-settings"></a>Per accedere alle impostazioni di pool di applicazioni IIS  
+##### <a name="to-access-the-iis-app-pool-settings"></a>Per accedere alle impostazioni di IIS app pool  
   
 1.  Aprire Gestione IIS.  
   
-2.  Nel **connessioni** riquadro espandere il nodo del server SharePoint e quindi scegliere il **pool di applicazioni** nodo.  
+2.  Nel **connessioni** riquadro, espandere il nodo del server SharePoint e quindi scegliere il **pool di applicazioni** nodo.  
   
-3.  Nel **pool di applicazioni** , selezionare il pool di applicazioni di SharePoint (in genere "SharePoint - 80"), quindi il **azioni** riquadro, scegliere il **impostazioni avanzate** collegamento.  
+3.  Nel **pool di applicazioni** pagina, scegliere il pool di applicazioni di SharePoint (in genere "SharePoint - 80") e quindi nel **azioni** riquadro, scegliere il **impostazioni avanzate** collegamento.  
   
-4.  Per aumentare il tempo di attesa prima del timeout IIS, modificare il valore di **il tempo di risposta massimo Ping (secondi)** su un valore maggiore di 90 secondi.  
+4.  Per aumentare il tempo di attesa prima del timeout IIS, modificare il valore della **tempo di risposta massimo Ping (secondi)** su un valore maggiore di 90 secondi.  
   
-5.  Per disabilitare il ping di IIS, impostare **Ping abilitato** a **False**.  
+5.  Per disabilitare il ping di IIS, impostare **Ping abilitato** al **False**.  
   
-## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Istanza di elenco orfana lascia ritrazione automatica in SharePoint  
- Questo problema si verifica se vengono eseguiti i passaggi seguenti.  
+## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Ritrazione automatica lascia l'istanza di elenco orfani in SharePoint
+ Questo problema si verifica se si esegue la procedura seguente.  
   
-1.  Creare una definizione di elenco che include un'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Creare una definizione di elenco con un'istanza di elenco in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Premere il tasto F5 per eseguire la soluzione.  
+2.  Scegliere il **F5** tasto per eseguire la soluzione.  
   
-3.  Interrompere il debug o chiudere il sito di SharePoint.  
+3.  Arrestare il debug oppure chiudere il sito di SharePoint.  
   
 4.  Riaprire il sito di SharePoint e aprire l'istanza di elenco.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
  Errore del server nell'applicazione '/'.  
   
 ### <a name="resolution"></a>Risoluzione  
- Ciò accade perché dopo la chiusura di una sessione di debug di una soluzione di SharePoint, la ritrazione automatica funzionalità ritrae la soluzione. Il ritiro Elimina la definizione di elenco da SharePoint, ma non l'istanza dell'elenco. La definizione di elenco sottostante è obbligatoria per l'istanza di elenco.  
+ Ciò accade perché dopo la chiusura di una sessione di debug di una soluzione di SharePoint, la ritrazione automatica funzionalità ritrae la soluzione. Il ritiro della Elimina la definizione di elenco da SharePoint, ma non l'istanza dell'elenco. La definizione di elenco sottostante è obbligatoria per l'istanza di elenco.  
   
- Per risolvere questo problema, distribuire la soluzione, nella barra dei menu, scegliendo **compilare**, **Distribuisci**. Non eseguire il debug della soluzione premendo il tasto F5. Eliminare quindi l'istanza di elenco in SharePoint.  
+ Per risolvere questo problema, distribuire la soluzione, nella barra dei menu, scegliendo **compilare** > **Distribuisci**. (Non eseguire il debug della soluzione, scegliere il **F5** chiave.) Quindi, eliminare l'istanza di elenco in SharePoint.  
   
-## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>Soluzione di SharePoint originale viene sostituita da una versione esportata  
- Se si esporta una soluzione di SharePoint, Importa la soluzione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]e quindi distribuire la soluzione al sito stesso da cui è stato esportato, la soluzione SharePoint originale viene sostituita. Questo problema si verifica se si distribuisce la soluzione in un server che non dispone di una soluzione originale attivata su di esso.  
+## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>Soluzione di SharePoint originale viene sostituita da una versione esportata
+ Se si esporta una soluzione di SharePoint, Importa la soluzione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]e quindi distribuire la soluzione nuovamente allo stesso sito da cui è stato esportato, la soluzione di SharePoint originale viene sostituita. Questo problema si verifica se si distribuisce la soluzione in un server che non è la soluzione originale attivata su di esso.  
   
-### <a name="error-message"></a>Messaggio di errore  
+### <a name="error-message"></a>Messaggio di errore
  Nessuno.  
   
 ### <a name="resolution"></a>Risoluzione  
- Per evitare la sovrascrittura di una soluzione nel sito da cui è stato esportato, modificare il GUID dell'IDSoluzione e gli ID di funzionalità di tutte le funzionalità importate nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto.  
+ Per evitare la sovrascrittura di una soluzione nel sito da cui è stato esportato, cambiare i GUID degli SolutionID e gli ID di funzionalità di tutte le funzionalità importate nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto.  
   
-## <a name="error-appears-when-debugging-starts"></a>Errore in caso di avvio del debug  
+## <a name="error-appears-when-debugging-starts"></a>Errore viene visualizzato all'avvio del debug
  Quando si avvia il debug di una soluzione SharePoint in Visual Studio, viene visualizzato un errore indicante che è impossibile caricare il file di configurazione Web.config in Visual Studio perché la chiave specificata non è presente nel dizionario.  
   
-### <a name="error-message"></a>Messaggio di errore  
- Impossibile caricare il file di configurazione Web. config. Controllare il file per tutti gli elementi XML non valido e riprovare. Si è verificato l'errore seguente: la chiave specificata non è presente nel dizionario.  
+### <a name="error-message"></a>Messaggio di errore
+ Impossibile caricare il file di configurazione Web. config. Controllare il file per tutti gli elementi XML in formato non corretto e ripetere l'operazione. Si è verificato l'errore seguente: la chiave specificata non era presente nel dizionario.  
   
 ### <a name="resolution"></a>Risoluzione  
- Per risolvere questo problema, verificare che il valore della proprietà URL sito del progetto SharePoint in Visual Studio corrisponda all'URL assegnato all'area predefinita per i mapping di accesso alternativo dell'applicazione Web. L'utilizzo di un'altra area, ad esempio Intranet, per l'URL non risolverà l'errore. L'URL del sito del progetto e l'URL nell'area predefinita devono corrispondere. Per accedere ai mapping di accesso alternativo, aprire l'utilità di amministrazione centrale SharePoint 2010, scegliere il **Application Management** collegamento, quindi in **applicazioni Web**, scegliere il  **Configurare i mapping di accesso alternativo** collegamento. Per ulteriori informazioni, vedere [creare zone per le applicazioni Web](http://go.microsoft.com/fwlink/?LinkId=192274).  
+ Per risolvere questo problema, verificare che il valore della proprietà URL sito del progetto SharePoint in Visual Studio corrisponda all'URL assegnato all'area predefinita per i mapping di accesso alternativo dell'applicazione Web. L'utilizzo di un'altra area, ad esempio Intranet, per l'URL non risolverà l'errore. L'URL del sito del progetto e l'URL nell'area predefinita devono corrispondere. Per accedere ai mapping di accesso alternativo, aprire l'utilità di amministrazione centrale SharePoint 2010, scegliere il **Gestione applicazioni** collegamento e quindi selezionare **applicazioni Web**, scegliere il  **Configura mapping di accesso alternativo** collegamento. Per altre informazioni, vedere [creare le zone per le applicazioni Web](http://go.microsoft.com/fwlink/?LinkId=192274).  
   
-## <a name="see-also"></a>Vedere anche  
- [Distribuzione e risoluzione dei problemi dei pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   
- [Compilazione e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
+## <a name="see-also"></a>Vedere anche
+ [Risolvere i problemi di distribuzione e la creazione di pacchetti di SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   
+ [Compilare ed eseguire il debug di soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Debug in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: associare una pagina Web una cartella di Outlook a livello di codice | Documenti Microsoft'
+title: 'Procedura: associare a livello di codice una pagina web a una cartella di Outlook'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5495066b05ded6fc49dfe92ed489932d8c75b24d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb1ef525917288dc44609b899611db884da9073
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256465"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Procedura: associare una pagina Web a una cartella di Outlook a livello di codice
-  In questo esempio cerca una cartella denominata `HtmlView` in Microsoft Office Outlook. Se la cartella non esiste, il codice viene creata la cartella e assegna una pagina Web. Se la cartella esiste, il codice visualizza il contenuto della cartella.  
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Procedura: associare a livello di codice una pagina web a una cartella di Outlook
+  Questo esempio viene verificata una cartella denominata `HtmlView` in Microsoft Office Outlook. Se la cartella non esiste, il codice crea la cartella e la assegna a una pagina Web a. Se la cartella esiste, il codice visualizza il contenuto della cartella.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -32,8 +33,8 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo delle cartelle](../vsto/working-with-folders.md)   
- [Procedura: recuperare a livello di codice una cartella per nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Procedura: Creare cartelle personalizzate a livello di codice](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+ [Con le cartelle di lavoro](../vsto/working-with-folders.md)   
+ [Procedura: recuperare una cartella a livello programmatico in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [Procedura: creare cartelle personalizzate](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

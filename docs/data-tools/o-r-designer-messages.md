@@ -10,26 +10,26 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c88134bb3b0df901ecb20cb91ed41ceb7e472b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922310"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089054"
 ---
 # <a name="or-designer-messages"></a>Messaggi di O/R Designer
 
 In questo argomento vengono elencati i messaggi che è possibile rilevare quando si usa Progettazione relazionale oggetti.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
- [Impossibile creare un'associazione \<nome associazione >-proprietà elencata due volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Impossibile creare un'associazione \<nome associazione >-proprietà è elencata due volte](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Impossibile creare un'associazione \<nome associazione >-proprietà hanno tipi non corrispondenti](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Impossibile creare un'associazione \<nome associazione >-tipi di proprietà non corrispondono](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [La modifica del tipo restituito di un metodo DataContext non può essere annullata](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Non è stato possibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Impossibile recuperare le informazioni sullo schema per l'oggetto di database \<nome oggetto >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione.](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -43,7 +43,7 @@ In questo argomento vengono elencati i messaggi che è possibile rilevare quando
 
  [La proprietà \<nome proprietà > non può essere eliminato](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [La proprietà \<nome proprietà > non può essere eliminato perché si trova nell'oggetto association \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [La proprietà \<nome proprietà > non può essere eliminato perché è inclusa nell'associazione \<nome associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Impossibile eliminare la classe selezionata perché è usata come tipo restituito per uno o più metodi DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 

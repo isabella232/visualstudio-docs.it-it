@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84a910d75c7c91aa2abb381781a731dfbe646cfe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920323"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089464"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
 
@@ -27,9 +27,9 @@ Quando si trascinano oggetti di database in classi di entità esistenti, i dati 
 
 1. Fare clic su **OK** per chiudere la finestra di dialogo.
 
-2. Selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione, ovvero la classe in cui viene rilasciato l'oggetto di database all'interno di Progettazione relazionale oggetti.
+2. Selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione (la classe dell'oggetto di database viene trascinato nel **O/R Designer**).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Messaggi di Object Relational Designer](../data-tools/o-r-designer-messages.md)
-- [Gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,5 +1,5 @@
 ---
-title: Funzioni Hook del blocco client | Documenti Microsoft
+title: Funzioni Hook del blocco client | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,33 +23,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eccc1781174394da333d2fc703fec0b4d31e522a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ee0209c082185e111988e5f8e39f2f0b806a4995
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457231"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433119"
 ---
 # <a name="client-block-hook-functions"></a>Funzioni hook del blocco client
 Se si desidera convalidare o inserire in report il contenuto dei dati memorizzati in blocchi `_CLIENT_BLOCK`, sarà possibile scrivere una funzione specificamente per tale scopo. Tale funzione dovrà avere un prototipo analogo al seguente, come definito in CRTDBG.H:  
   
-```  
+```cpp
 void YourClientDump(void *, size_t)  
   
 ```  
   
- In altre parole, la funzione hook consiglia di accettare un **void** puntatore all'inizio del blocco di allocazione, insieme a un **size_t** tipo di valore che indica la dimensione dell'allocazione e restituire `void`. Non esistono altre limitazioni al contenuto.  
+ In altre parole, la funzione di hook dovrà accettare un **void** puntatore all'inizio del blocco di allocazione, insieme a un **size_t** tipo valore che indica la dimensione dell'allocazione e restituire `void`. Non esistono altre limitazioni al contenuto.  
   
- Dopo aver installato la funzione hook mediante [CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), verrà chiamato ogni volta un `_CLIENT_BLOCK` il dump di blocco. È quindi possibile utilizzare [CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) per ottenere informazioni sul tipo o sottotipo dei blocchi di dump.  
+ Dopo aver installato la funzione hook mediante [CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), verrà chiamato ogni volta che un `_CLIENT_BLOCK` dump di blocco. È quindi possibile usare [CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) per ottenere informazioni sul tipo o sul sottotipo dei blocchi di dump;.  
   
- Puntatore alla funzione che viene passato a `_CrtSetDumpClient` è di tipo **CRT_DUMP_CLIENT**, come definito in CRTDBG. H:  
+ Il puntatore alla funzione che viene passato a `_CrtSetDumpClient` JE typu **CRT_DUMP_CLIENT**, come definito in CRTDBG. H:  
   
-```  
+```cpp
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  
    (void *, size_t);  
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrittura di funzioni Hook di debug](../debugger/debug-hook-function-writing.md)   
- [Esempio crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)   
+ [Esempio crt_dbg2](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)   
  [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

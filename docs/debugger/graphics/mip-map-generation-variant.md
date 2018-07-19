@@ -1,5 +1,5 @@
 ---
-title: Variante di generazione di mappe MIP | Documenti Microsoft
+title: Variante di generazione di mappe MIP | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475720"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433168"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di rendering.  
@@ -47,7 +47,7 @@ Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di renderi
 ## <a name="example"></a>Esempio  
  Il **generazione di mappe Mip** variante può essere riprodotta usando codice simile al seguente:  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Se si vuole fornire contenuto di livello MIP personalizzato anziché generarlo automaticamente, è necessario creare le proprie trame tramite un editor di immagini che supporta trame con mappe MIP, caricare il file e passare i livelli MIP a `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variante delle dimensioni della trama a metà o un quarto](half-quarter-texture-dimensions-variant.md)
+ [Variante delle dimensioni della trama ridotte metà/quarto](half-quarter-texture-dimensions-variant.md)

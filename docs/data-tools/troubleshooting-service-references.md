@@ -18,91 +18,91 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c244489f21dec3783aed9d970b46805d204a1104
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925055"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118083"
 ---
-# <a name="troubleshoot-service-references"></a>Risolvere i riferimenti al servizio
+# <a name="troubleshoot-service-references"></a>Risolvere i problemi relativi ai riferimenti al servizio
 
-Questo argomento elenca i problemi comuni che possono verificarsi quando si lavora con Windows Communication Foundation (WCF) o i riferimenti di WCF Data Services in Visual Studio.
+Questo argomento elenca i problemi comuni che possono verificarsi quando si lavora con Windows Communication Foundation (WCF) o riferimenti di WCF Data Services in Visual Studio.
 
-## <a name="error-returning-data-from-a-service"></a>Errore di restituzione di dati da un servizio
+## <a name="error-returning-data-from-a-service"></a>Errore durante la restituzione dei dati da un servizio
 
-Quando viene restituito un `DataSet` o `DataTable` da un servizio, è possibile ricevere un'eccezione "è stata superata la quota della dimensione massima dei messaggi in arrivo". Per impostazione predefinita, il `MaxReceivedMessageSize` di alcune associazioni è impostata su un valore relativamente basso per limitare l'esposizione agli attacchi di tipo denial of service. È possibile aumentare questo valore per evitare l'eccezione. Per altre informazioni, vedere <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Quando si restituisce un `DataSet` o `DataTable` da un servizio, è possibile ricevere un'eccezione "è stata superata la quota delle dimensioni massime dei messaggi in ingresso". Per impostazione predefinita, il `MaxReceivedMessageSize` proprietà per alcune associazioni è impostata su un valore relativamente basso limita l'esposizione agli attacchi denial of service. È possibile aumentare questo valore per evitare l'eccezione. Per altre informazioni, vedere <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Per correggere l'errore:
 
-1.  In **Esplora**, doppio clic sul file app. config per aprirlo.
+1.  Nella **Esplora soluzioni**, fare doppio clic il *app. config* file per aprirlo.
 
-2.  Individuare il `MaxReceivedMessageSize` proprietà e impostarla su un valore maggiore.
+2.  Individuare il `MaxReceivedMessageSize` proprietà e modificarlo in un valore maggiore.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Impossibile trovare un servizio nella soluzione
 
-Quando si fa clic il **Discover** pulsante il **aggiungere riferimenti al servizio** la finestra di dialogo, uno o più progetti di libreria di servizi WCF nella soluzione non vengono visualizzati nell'elenco dei servizi. Ciò può verificarsi se una libreria di servizi è stato aggiunto alla soluzione, ma non è ancora stata compilata.
+Quando si fa clic il **Discover** pulsante il **aggiungere riferimenti al servizio** nella finestra di dialogo uno o più progetti di libreria di servizi WCF nella soluzione non vengono visualizzati nell'elenco dei servizi. Ciò può verificarsi se una libreria di servizi è stato aggiunto alla soluzione ma non è ancora stata compilata.
 
 Per correggere l'errore:
 
--   In **Esplora**, fare clic sul progetto libreria di servizi WCF e fare clic su **compilare**.
+-   Nelle **Esplora soluzioni**, fare clic sul progetto libreria di servizi WCF e fare clic su **compilazione**.
 
-## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Errore durante l'accesso di un servizio su un Desktop remoto
+## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Errore di accesso a un servizio su un desktop remoto
 
-Quando un utente accede a un servizio WCF ospitato sul Web su una connessione desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non dispone di autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "la richiesta HTTP non è autorizzata con lo schema di autenticazione client 'Anonymous'. L'intestazione di autenticazione ricevuto dal server: 'NTLM' ".
+Quando un utente accede a un servizio WCF ospitato sul Web tramite una connessione desktop remoto e l'utente non dispone di autorizzazioni amministrative, viene utilizzata l'autenticazione NTLM. Se l'utente non ha le autorizzazioni amministrative, l'utente potrebbe ricevere il messaggio di errore seguente: "la richiesta HTTP non è autorizzata con lo schema di autenticazione client 'Anonimo'. L'intestazione di autenticazione ricevuta dal server: 'NTLM'."
 
 Per correggere l'errore:
 
-1.  Nel progetto di sito Web, aprire il **proprietà** pagine.
+1.  Nel progetto sito Web, aprire il **proprietà** pagine.
 
-2.  Nel **opzioni di avvio** scheda, deseleziona il **l'autenticazione NTLM** casella di controllo.
+2.  Nel **opzioni di avvio** scheda, deseleziona le **autenticazione NTLM** casella di controllo.
 
     > [!NOTE]
-    > È consigliabile disattivare l'autenticazione NTLM solo per i siti Web che contengono esclusivamente servizi WCF. Sicurezza per i servizi WCF è gestita tramite la configurazione nel file Web. config. In questo modo l'autenticazione NTLM non necessari.
+    > Sarà necessario disattivare l'autenticazione NTLM solo per i siti Web che contengono esclusivamente servizi WCF. Sicurezza per i servizi WCF è gestita tramite la configurazione nel *Web. config* file. In questo modo l'autenticazione NTLM non necessari.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Livello di accesso per classi generate impostazione non ha alcun effetto
 
-Impostazione di **livello di accesso per classi generate** opzione il **Configura riferimento a servizio** finestra di dialogo per **interno** o **Friend** potrebbe non funzionare. Anche se viene visualizzata l'opzione da impostare nella finestra di dialogo, le classi di supporto risultanti vengono generate con un livello di accesso `Public`.
+Impostando il **livello di accesso per classi generate** opzione il **riferimenti al servizio di configurare** finestra di dialogo **interno** o **Friend** potrebbe non funzionare. Anche se viene visualizzata l'opzione da impostare nella finestra di dialogo, le classi di supporto risultanti vengono generate con un livello di accesso di `Public`.
 
-Si tratta di una limitazione nota di determinati tipi, ad esempio quelli serializzati utilizzando il <xref:System.Xml.Serialization.XmlSerializer>.
+Si tratta di una limitazione nota di determinati tipi, ad esempio quelli serializzato mediante il <xref:System.Xml.Serialization.XmlSerializer>.
 
 ## <a name="error-debugging-service-code"></a>Codice di errore debug del servizio
 
-Quando si esegue il codice per un servizio WCF dal codice client, si potrebbe ricevere un errore correlato ai simboli mancanti. Ciò può verificarsi quando un servizio che faceva parte della soluzione è stato spostato o rimosso dalla soluzione.
+Quando si esegue il codice per un servizio WCF dal codice client e si verifichi un errore correlato ai simboli mancanti. Ciò può verificarsi quando un servizio che faceva parte della soluzione è stato spostato o rimosso dalla soluzione.
 
-Quando si aggiunge un riferimento a un servizio WCF che fa parte della soluzione corrente, una dipendenza di compilazione esplicita viene aggiunto tra il progetto di servizio e il progetto client del servizio. In questo modo si garantisce che il client accede sempre file binari del servizio aggiornata, che è particolarmente importante per gli scenari, ad esempio l'esecuzione di istruzioni dal codice client del codice del servizio di debug.
+Quando si aggiunge un riferimento a un servizio WCF che fa parte della soluzione corrente, viene aggiunto una dipendenza di compilazione esplicita tra il progetto di servizio e il progetto di client del servizio. In questo modo si garantisce che il client accede sempre i file binari del servizio aggiornati, che è particolarmente importante per gli scenari, ad esempio l'esecuzione di istruzioni dal codice client nel codice del servizio di debug.
 
-Se il progetto di servizio viene rimosso dalla soluzione, viene invalidata la dipendenza di compilazione esplicita. Visual Studio non può più garantire che il progetto di servizio viene ricompilato base alle necessità.
+Se il progetto di servizio viene rimosso dalla soluzione, viene invalidata questa dipendenza di compilazione esplicita. Visual Studio non può più garantire che il progetto di servizio viene ricompilato base alle esigenze.
 
-Per correggere l'errore, è necessario ricreare manualmente il progetto di servizio:
+Per correggere questo errore, è necessario ricompilare manualmente il progetto di servizio:
 
 1.  Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Nel **opzioni** finestra di dialogo espandere **progetti e soluzioni**, quindi selezionare **generale**.
+2.  Nel **le opzioni** finestra di dialogo espandere **progetti e soluzioni**e quindi selezionare **generali**.
 
-3.  Assicurarsi che il **avanzata Mostra configurazioni della build** casella di controllo è selezionata e quindi fare clic su **OK**.
+3.  Assicurarsi che il **advanced Mostra configurazioni della build** casella di controllo sia selezionata e quindi fare clic su **OK**.
 
 4.  Caricare il progetto di servizio WCF.
 
-5.  Nel **Configuration Manager** la finestra di dialogo, impostare il **configurazione soluzione attiva** a **Debug**. Per altre informazioni, vedere [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md) (Procedura: Creare e modificare le configurazioni).
+5.  Nel **Configuration Manager** finestra di dialogo, impostare il **configurazione soluzione attiva** a **Debug**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
-6.  In **Esplora**, selezionare il progetto di servizio WCF.
+6.  Nelle **Esplora soluzioni**, selezionare il progetto di servizio WCF.
 
 7.  Nel **compilare** menu, fare clic su **ricompilare** per ricompilare il progetto di servizio WCF.
 
-## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services non è disponibile nel Browser
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services non vengono visualizzati in browser
 
-Quando si tenta di visualizzare una rappresentazione XML dei dati in un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer che potrebbero essere erroneamente i dati come un feed RSS. Assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata.
+Quando prova a visualizzare una rappresentazione XML dei dati in un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer che potrebbero essere erroneamente i dati come un feed RSS. Assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata.
 
-Per correggere l'errore, disabilitare i feed RSS:
+Per correggere questo errore, disabilitare il feed RSS:
 
-1.  In Internet Explorer nel **strumenti** menu, fare clic su **Opzioni Internet**.
+1.  In Internet Explorer sul **degli strumenti** menu, fare clic su **Opzioni Internet**.
 
-2.  Nel **contenuto** nella scheda il **feed** fare clic su **impostazioni**.
+2.  Nel **contenuti** nella scheda il **feed** fare clic su **impostazioni**.
 
-3.  Nel **impostazioni Feed** la finestra di dialogo, deseleziona il **attivare la visualizzazione di lettura feed** casella di controllo e quindi fare clic su **OK**.
+3.  Nel **impostazioni Feed** della finestra di dialogo deseleziona le **attivare la visualizzazione di lettura feed** casella di controllo e quindi fare clic su **OK**.
 
-4.  Fare clic su **OK** per chiudere la **Opzioni Internet** la finestra di dialogo.
+4.  Fare clic su **OK** per chiudere la **Opzioni Internet** nella finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
 

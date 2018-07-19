@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ActivityDesigner diagramma di flusso
+title: Finestra di progettazione del flusso di lavoro - Activity Designer Flowchart
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6294b2e2392c81e20c984972ec875c589a7167
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967839"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755720"
 ---
 # <a name="flowchart-activity-designers"></a>ActivityDesigner Diagramma di flusso
 
-Progettazione del flusso di lavoro di Windows include una serie di attività fornite dal sistema che è possibile utilizzare durante la costruzione di flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per gestire diagrammi di flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
+Finestra di progettazione del flusso di lavoro include numerose attività fornite dal sistema che è possibile usare durante la costruzione dei flussi di lavoro. Contenuto della sezione sono presentate le attività fornite dal sistema usate per gestire diagrammi di flusso all'interno di un flusso di lavoro. Negli argomenti riportati di seguito vengono illustrate queste attività e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
 
 ## <a name="reference"></a>Riferimenti
  <xref:System.Activities.Activity>

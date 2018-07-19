@@ -1,5 +1,5 @@
 ---
-title: Utilizzo degli elementi di calendario | Documenti Microsoft
+title: Lavorare con gli elementi del calendario
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,28 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3caae91f24c3fbdefe24ae421fb80536b9d8ca56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 199665d7cce60034c2b998b6c67fbc1623c43307
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258593"
 ---
-# <a name="working-with-calendar-items"></a>Uso degli elementi di calendario
+# <a name="work-with-calendar-items"></a>Lavorare con gli elementi del calendario
   La classe <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> contiene i metodi e le proprietà usati per eseguire attività con gli elementi di calendario.  
   
 |Attività|Routine|  
 |----------|---------------|  
-|Creare un appuntamento e aggiungere i destinatari.|[Procedura: Creare appuntamenti a livello di codice](../vsto/how-to-programmatically-create-appointments.md)|  
-|Eliminare un'istanza di un appuntamento ricorrente.|[Procedura: Eliminare appuntamenti a livello di codice](../vsto/how-to-programmatically-delete-appointments.md)|  
-|Creare una cartella Calendario e aggiungere un elemento Appuntamento.|[Procedura: Creare un calendario personalizzato a livello di codice](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
-|Creare una richiesta di appuntamento e inviarla.|[Procedura: Creare una convocazione riunione a livello di codice](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
+|Creare un appuntamento e aggiungere i destinatari.|[Procedura: creare appuntamenti](../vsto/how-to-programmatically-create-appointments.md)|  
+|Eliminare un'istanza di un appuntamento ricorrente.|[Procedura: eliminare a livello di programmazione appuntamenti](../vsto/how-to-programmatically-delete-appointments.md)|  
+|Creare una cartella Calendario e aggiungere un elemento Appuntamento.|[Procedura: creare a livello di codice un calendario personalizzato](../vsto/how-to-programmatically-create-a-custom-calendar.md)|  
+|Creare una richiesta di appuntamento e inviarla.|[Procedura: creazione di una convocazione riunione a livello di codice](../vsto/how-to-programmatically-create-a-meeting-request.md)|  
   
- Per altre informazioni sulle attività e il modello a oggetti di Outlook, vedere [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md).  
+ Per altre informazioni sulle attività di Outlook e il modello a oggetti, vedere [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo dei contatti](../vsto/working-with-contact-items.md)   
- [Utilizzo delle cartelle](../vsto/working-with-folders.md)   
- [Utilizzo di elementi di posta elettronica](../vsto/working-with-mail-items.md)   
+ [Lavorare con gli elementi di contatto](../vsto/working-with-contact-items.md)   
+ [Con le cartelle di lavoro](../vsto/working-with-folders.md)   
+ [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)   
  [Soluzioni Outlook](../vsto/outlook-solutions.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic | Documenti Microsoft'
+title: 'Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478135"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058698"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: scrittura di un visualizzatore in Visual Basic
 In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per scrivere un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo visualizzatore semplice di stringhe è un esempio base per illustrare la creazione di visualizzatori per altri tipi di dati più applicabili ai progetti.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, utilizzare il **strumenti** menu e scegliere **importare ed esportare** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, passare al **degli strumenti** dal menu e scegliere **importare ed esportare** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
  Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. La prima operazione da effettuare consiste nel creare un progetto Libreria di classi per la DLL.  
   
@@ -43,7 +43,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 3.  Nel **modelli** fare clic su **libreria di classi**.  
   
-4.  Nel **nome** , digitare un nome appropriato per la libreria di classi, ad esempio **MyFirstVisualizer**.  
+4.  Nel **Name** , digitare un nome appropriato per la libreria di classi, ad esempio **MyFirstVisualizer**.  
   
 5.  Fare clic su **OK**.  
   
@@ -51,22 +51,22 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Per rinominare Class1.vb e aggiungere Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  In **Esplora**, fare doppio clic su **Class1. vb**, nel menu di scelta rapida, fare clic su **rinominare**.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **Class1.vb**, nel menu di scelta rapida, fare clic su **rinominare**.  
   
 2.  Sostituire Class1.vb con un nome significativo, ad esempio DebuggerSide.vb.  
   
     > [!NOTE]
     >  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la dichiarazione di classe viene modificata automaticamente in base al nuovo nome di file DebuggerSide.vb.  
   
-3.  In **Esplora**, fare doppio clic su **My First Visualizer**, nel menu di scelta rapida, fare clic su **Aggiungi riferimento**.  
+3.  Nelle **Esplora soluzioni**, fare doppio clic su **My First Visualizer**, nel menu di scelta rapida, fare clic su **Aggiungi riferimento**.  
   
-4.  Nel **Aggiungi riferimento** della finestra di dialogo di **.NET** scheda, scegliere Microsoft.VisualStudio.DebuggerVisualizers.DLL.  
+4.  Nel **Aggiungi riferimento** finestra di dialogo il **.NET** scheda, fare clic su DebuggerVisualizers.  
   
 5.  Fare clic su **OK**.  
   
 6.  In DebuggerSide.vb aggiungere l'istruzione seguente alle istruzioni `Imports`:  
   
-    ```  
+    ```vb
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
     ```  
   
@@ -77,13 +77,13 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1.  In DebuggerSide.vb posizionarsi sulla riga di codice seguente:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     ```  
   
 2.  Modificare il codice nel modo seguente:  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     Inherits DialogDebuggerVisualizer  
     ```  
@@ -94,7 +94,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 -   In `public class DebuggerSide` aggiungere il metodo seguente:  
   
-    ```  
+    ```vb
     Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
         End Sub  
@@ -104,15 +104,15 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-add-systemwindowsforms"></a>Per aggiungere System.Windows.Forms  
   
-1.  In **Esplora**, fare doppio clic su **riferimenti**, nel menu di scelta rapida, fare clic su **Aggiungi riferimento**.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **riferimenti**, nel menu di scelta rapida, fare clic su **Aggiungi riferimento**.  
   
-2.  Nel **Aggiungi riferimento** della finestra di dialogo di **.NET** scheda, fare clic su **Forms**.  
+2.  Nel **Aggiungi riferimento** finestra di dialogo il **.NET** scheda, fare clic su **Forms**.  
   
 3.  Fare clic su **OK**.  
   
 4.  In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `Imports`:  
   
-    ```  
+    ```vb
     Imports System.Windows.Forms  
     ```  
   
@@ -123,13 +123,13 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1.  Nel metodo `Show` aggiungere la riga di codice seguente:  
   
-    ```  
+    ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())  
     ```  
   
      Questo codice di esempio non include la gestione degli errori. In un vero visualizzatore o in un qualsiasi altro tipo di applicazione è consigliabile includere la gestione degli errori.  
   
-2.  Nel **compilare** menu, fare clic su **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2.  Nel **compilare** menu, fare clic su **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
 ## <a name="add-the-necessary-attribute"></a>Aggiungere l'attributo necessario  
  Il codice sul lato debugger è stato completato. È tuttavia necessario eseguire un altro passaggio, ovvero specificare l'attributo che indica al lato dell'oggetto del debug la raccolta di classi che comprende il visualizzatore.  
@@ -138,11 +138,11 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1.  Aggiungere il codice di attributo seguente a DebuggerSide.vb, dopo le istruzioni `Imports` ma prima di `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Nel **compilare** menu, fare clic su **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2.  Nel **compilare** menu, fare clic su **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
 ## <a name="create-a-test-harness"></a>Creare un test harness  
  A questo punto il visualizzatore è pronto. Se la procedura è stata completata in modo corretto, è possibile compilare il visualizzatore e installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Prima di installare un visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è tuttavia consigliabile testarlo per assicurarsi che funzioni in modo corretto. Di seguito viene descritto come creare un test harness per eseguire il visualizzatore senza installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -151,24 +151,24 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 1.  Aggiungere il metodo seguente alla classe `public DebuggerSide`:  
   
-    ```  
+    ```vb
     Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
         Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
     visualizerHost.ShowVisualizer()  
     End Sub  
     ```  
   
-2.  Nel **compilare** menu, fare clic su **Compila MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
+2.  Nel **compilare** menu, fare clic su **compilare MyFirstVisualizer**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.  
   
  Creare quindi un progetto eseguibile per chiamare la DLL del visualizzatore. Per semplicità, utilizzare un progetto applicazione console.  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>Per aggiungere un progetto applicazione console alla soluzione  
   
-1.  Nel **File** menu, fare clic su **Aggiungi**, quindi fare clic su **nuovo progetto**.  
+1.  Nel **File** menu, fare clic su **Add**e quindi fare clic su **nuovo progetto**.  
   
-2.  Nel **Aggiungi nuovo progetto** della finestra di dialogo di **modelli** fare clic su **applicazione Console**.  
+2.  Nel **Aggiungi nuovo progetto** nella finestra di dialogo il **modelli** fare clic su **applicazione Console**.  
   
-3.  Nel **nome** , digitare un nome significativo per l'applicazione console, ad esempio **MyTestConsole**.  
+3.  Nel **Name** , digitare un nome significativo per l'applicazione console, ad esempio **MyTestConsole**.  
   
 4.  Fare clic su **OK**.  
   
@@ -176,15 +176,15 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>Per aggiungere riferimenti necessari a MyTestConsole  
   
-1.  In **Esplora**, fare doppio clic su **MyTestConsole**, nel menu di scelta rapida, fare clic su **Aggiungi riferimento**.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **MyTestConsole**, nel menu di scelta rapida, fare clic su **Aggiungi riferimento**.  
   
-2.  Nel **Aggiungi riferimento** della finestra di dialogo di **.NET** scheda, fare clic su DebuggerVisualizers.  
+2.  Nel **Aggiungi riferimento** finestra di dialogo il **.NET** scheda, fare clic su DebuggerVisualizers.  
   
 3.  Fare clic su **OK**.  
   
 4.  Fare doppio clic su **MyTestConsole**, quindi fare clic su **Aggiungi riferimento** nuovamente.  
   
-5.  Nel **Aggiungi riferimento** la finestra di dialogo, fare clic sul **progetti** scheda e selezionare MyFirstVisualizer.  
+5.  Nel **Aggiungi riferimento** finestra di dialogo, fare clic sul **progetti** scheda e selezionare MyFirstVisualizer.  
   
 6.  Fare clic su **OK**.  
   
@@ -193,21 +193,21 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-add-code-to-mytestconsole"></a>Per aggiungere codice a MyTestConsole  
   
-1.  In **Esplora**, fare doppio clic su **Program. vb**, nel menu di scelta rapida, fare clic su **rinominare**.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **Program. vb**, nel menu di scelta rapida, fare clic su **rinominare**.  
   
-2.  Modificare Module1. vb con un nome appropriato, ad esempio **TestConsole**.  
+2.  Modifica Module1.vb con un nome appropriato, ad esempio **TestConsole**.  
   
      Si noti che in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la dichiarazione di classe viene modificata automaticamente in TestConsole.vb in base al nuovo nome file.  
   
-3.  In TestConsole. Visual Basic, aggiungere il seguente `Imports` istruzione:  
+3.  In TestConsole. vb, aggiungere il codice seguente `Imports` istruzione:  
   
-    ```  
+    ```vb
     Imports MyFirstVisualizer  
     ```  
   
 4.  Nel metodo `Main` aggiungere il codice seguente:  
   
-    ```  
+    ```vb
     Dim myString As String = "Hello, World"  
     DebuggerSide.TestShowVisualizer(myString)  
     ```  
@@ -216,7 +216,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
 #### <a name="to-test-the-visualizer"></a>Per eseguire il test del visualizzatore  
   
-1.  In **Esplora**, fare doppio clic su **MyTestConsole**, nel menu di scelta rapida, fare clic su **imposta come progetto di avvio**.  
+1.  Nelle **Esplora soluzioni**, fare doppio clic su **MyTestConsole**, nel menu di scelta rapida, fare clic su **imposta come progetto di avvio**.  
   
 2.  Nel **Debug** menu, fare clic su **avviare**.  
   
@@ -224,7 +224,7 @@ In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb
   
  Il visualizzatore è stato compilato e sottoposto a test.  
   
- Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per ulteriori informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
+ Se si desidera utilizzare il visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anziché chiamarlo semplicemente dal test harness, è necessario installarlo. Per altre informazioni, vedere [procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)   

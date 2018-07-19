@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3975d7f0bcfc9b80c944c892cde52f2b625e0bbf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6f90a99a387452500686af332edb1d112a88f82
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921101"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089118"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Procedura: connettersi ai dati di un servizio
+# <a name="how-to-connect-to-data-in-a-service"></a>Procedura: connettersi ai dati in un servizio
 
-Per connettere l'applicazione ai dati restituiti da un servizio, eseguire il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png) e selezionando **servizio** sul **scegliere un tipo di origine dati**pagina.
+Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png) e selezionando **Service** sul **scegliere un tipo di origine dati**pagina.
 
-Al termine della procedura guidata, viene aggiunto al progetto un riferimento al servizio e sono immediatamente disponibile nel [finestra Origini dati](add-new-data-sources.md).
+Dopo il completamento della procedura guidata, viene aggiunto al progetto un riferimento al servizio ed è immediatamente disponibile nel [finestra Origini dati](add-new-data-sources.md).
 
 > [!NOTE]
-> Gli elementi visualizzati nel **origini dati** finestra dipendono dalle informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti affinché il **configurazione guidata origine dati** per creare oggetti associabili. Ad esempio, se il servizio restituisce un dataset non tipizzato, quindi viene visualizzato alcun elemento nella **finestra Origini dati** dopo avere completato la procedura guidata. Questo avviene perché i dataset non tipizzati non forniscono alcuno schema, pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
+> Gli elementi visualizzati nei **Zdroje dat** finestra dipendono le informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per il **configurazione guidata origine dati** per creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, viene visualizzato alcun elemento nel **finestra Origini dati** dopo aver completato la procedura guidata. Questo avviene perché i set di dati non tipizzati non forniscono alcuno schema, in modo che la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,26 +40,26 @@ Al termine della procedura guidata, viene aggiunto al progetto un riferimento al
 
 1.  Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
-2.  Selezionare **servizio** sul **scegliere un tipo di origine dati** pagina e quindi fare clic su **Avanti**.
+2.  Selezionare **Service** nel **scegliere un tipo di origine dati** e quindi fare clic su **Avanti**.
 
-3.  Immettere l'indirizzo del servizio che si desidera utilizzare oppure fare clic su **Discover** per individuare i servizi nella soluzione corrente e quindi fare clic su **passare**.
+3.  Immettere l'indirizzo del servizio che si desidera usare oppure fare clic su **Discover** per individuare servizi nella soluzione corrente e quindi fare clic su **Vai**.
 
-4.  Facoltativamente, un nuovo **Namespace** possono essere digitati al posto del valore predefinito.
+4.  Facoltativamente, è possibile digitare un nuovo **Namespace** al posto del valore predefinito.
 
     > [!NOTE]
-    > Fare clic su **avanzate** per aprire la [dialogo Configura riferimento al servizio](../data-tools/configure-service-reference-dialog-box.md).
+    > Fare clic su **avanzate** per aprire il [nella finestra di dialogo Configura riferimento al servizio](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Fare clic su **OK** per aggiungere un riferimento al progetto.
+5.  Fare clic su **OK** per aggiungere un riferimento al servizio al progetto.
 
 6.  Scegliere **Fine**.
 
-     L'origine dati viene aggiunta per il **origini dati** finestra.
+     L'origine dati viene aggiunta per il **Zdroje dat** finestra.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per aggiungere funzionalità all'applicazione, selezionare un elemento di **origini dati** finestra e trascinarlo su un form per creare controlli associati. Per ulteriori informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+Per aggiungere funzionalità all'applicazione, selezionare un elemento di **Zdroje dat** finestra e trascinarlo su un form per creare controlli associati. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Associare controlli WPF a un servizio di dati WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Servizi dati di servizi Windows Communication Foundation e WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: creare un ricevitore di eventi per un'istanza di elenco specifico | Documenti Microsoft"
+title: "Procedura: creare un ricevitore di eventi per un'istanza di elenco specifica | Microsoft Docs"
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,42 +16,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118958"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: creare un ricevitore di eventi per un'istanza di elenco specifica
-  Un ricevitore di eventi di istanza di elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Sebbene il modello del ricevitore di eventi viene abilitata la destinazione di un'istanza di elenco specifico, è possibile modificare un ricevitore di eventi con ambito di una definizione di elenco per rispondere agli eventi in un'istanza di elenco specifico.  
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: creare un ricevitore di eventi per un'istanza di elenco specifico
+  Un ricevitore di eventi di istanza di elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Anche se il modello del ricevitore di eventi non abilita l'impostazione della destinazione di un'istanza di elenco specifico, è possibile modificare un ricevitore di eventi con ambito di una definizione di elenco per rispondere agli eventi in un'istanza di elenco specifico.  
   
- Per impostare come destinazione un'istanza di elenco specifico, nel file Elements. XML per il ricevitore di eventi, sostituire `ListTemplateId` con `ListUrl` e aggiungere l'URL dell'istanza di elenco.  
+ Come destinazione un'istanza di elenco specifico, per il *Elements* per il ricevitore di eventi, sostituire `ListTemplateId` con `ListUrl` e aggiungere l'URL dell'istanza di elenco.  
   
-## <a name="creating-a-list-instance-event-receiver"></a>Creazione di un ricevitore di eventi di istanza di elenco  
- La procedura seguente viene illustrato come modificare un ricevitore di eventi di elemento di elenco per rispondere solo a eventi che si verificano in un'istanza di elenco di annunci personalizzato.  
+## <a name="create-a-list-instance-event-receiver"></a>Creare un ricevitore di eventi di istanza di elenco  
+ La procedura seguente illustra come modificare un ricevitore di eventi elemento elenco in modo che risponda solo gli eventi che si verificano in un'istanza di elenco di annunci personalizzati.  
   
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Per modificare un ricevitore di eventi per rispondere a un'istanza di elenco specifico  
   
 1.  In un browser aprire il sito di SharePoint.  
   
-2.  Nel riquadro di spostamento, **Elenca** collegamento.  
+2.  Nel riquadro di spostamento **Elenca** collegamento.  
   
-3.  Nel **tutto il contenuto del sito** pagina, scegliere il **crea** collegamento.  
+3.  Nel **All Site Content** pagina, scegliere il **crea** collegamento.  
   
-4.  Nel **crea** finestra di dialogo scegliere la **annunci** tipo, denominare l'annuncio **TestAnnouncements**e quindi scegliere il **crea**pulsante.  
+4.  Nel **Create** finestra di dialogo scegliere la **annunci** digitare, denominare l'annuncio **TestAnnouncements**e quindi scegliere il **crea**pulsante.  
   
 5.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], creare un progetto di ricevitore di eventi.  
   
-6.  Nel **il tipo di ricevitore di eventi si desidera?** scegliere **eventi elementi elenco**.  
+6.  Nel **quale tipo di ricevitore di eventi da?** casella di riepilogo **eventi elementi elenco**.  
   
     > [!NOTE]  
-    >  È inoltre possibile selezionare qualsiasi altro tipo di ricevitore di eventi che definisce l'ambito di una definizione di elenco, ad esempio, **elenco eventi di posta elettronica** o **gli eventi del flusso di lavoro elenco**.  
+    >  È anche possibile selezionare qualsiasi altro tipo di ricevitore di eventi che definisce l'ambito di una definizione di elenco, ad esempio, **elenco eventi di posta elettronica** oppure **elenco eventi di flusso di lavoro**.  
   
-7.  Nel **selezionare l'elemento deve essere l'origine evento?** scegliere **annunci**.  
+7.  Nel **selezionare l'elemento deve essere l'origine dell'evento?** casella di riepilogo **annunci**.  
   
-8.  Nel **gestire gli eventi seguenti** elenco, selezionare il **viene aggiunto un elemento** casella di controllo e quindi scegliere il **fine** pulsante.  
+8.  Nel **gestire gli eventi seguenti** elenco, selezionare la **viene aggiunto un elemento** casella di controllo e quindi scegliere il **fine** pulsante.  
   
-9. In **Esplora**, sotto EventReceiver1 aprire Elements.xml.  
+9. Nelle **Esplora soluzioni**, sotto EventReceiver1 aprire *Elements*.  
   
      Il ricevitore di eventi fa riferimento attualmente alla definizione di elenco degli annunci tramite la riga seguente:  
   
@@ -65,11 +66,11 @@ ms.lasthandoff: 05/22/2018
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   
-     In questo modo il ricevitore di eventi per rispondere solo a eventi che si verificano nel nuovo **TestAnnouncements** elenco di annunci appena creato. È possibile modificare il `ListURL` attributo per fare riferimento a qualsiasi istanza di elenco nel server SharePoint.  
+     Questa azione apre il ricevitore di eventi per rispondere solo a eventi che si verificano nel nuovo **TestAnnouncements** elenco di annunci appena creato. È possibile modificare il `ListURL` attributo per fare riferimento a qualsiasi istanza di elenco nel server SharePoint.  
   
 10. Aprire il file di codice per il ricevitore di eventi e inserire un punto di interruzione nel metodo ItemAdding.  
   
-11. Premere il tasto F5 per compilare ed eseguire la soluzione.  
+11. Scegliere il **F5** chiave per compilare ed eseguire la soluzione.  
   
 12. In SharePoint, scegliere il **TestAnnouncements** collegamento nel riquadro di spostamento.  
   
@@ -77,18 +78,17 @@ ms.lasthandoff: 05/22/2018
   
 14. Immettere un titolo per l'annuncio e quindi scegliere il **salvare** pulsante.  
   
-     Si noti che il punto di interruzione viene raggiunto quando viene aggiunto il nuovo elemento all'elenco di annunci personalizzato.  
+     Si noti che il punto di interruzione viene raggiunto quando il nuovo elemento viene aggiunto all'elenco degli annunci personalizzati.  
   
-15. Scegliere il tasto F5 per riprendere.  
+15. Scegliere il **F5** tasto per continuare.  
   
-16. Nel riquadro di spostamento, scegliere il **Elenca** collegamento e quindi scegliere il **annunci** collegamento.  
+16. Nel riquadro di spostamento, scegliere il **sono elencati** collegamento e quindi scegliere il **annunci** collegamento.  
   
 17. Aggiungere un nuovo annuncio.  
   
-     Si noti che il ricevitore di eventi non viene attivato sul nuovo annuncio perché il destinatario è configurato per rispondere solo agli eventi nell'istanza di elenco di annuncio personalizzato, **TestAnnouncements**.  
+     Si noti che il ricevitore di eventi non attivare il nuovo annuncio perché il destinatario è configurato per rispondere solo agli eventi nell'istanza di elenco di annuncio personalizzato, **TestAnnouncements**.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)   
- [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
+ [Lo sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   

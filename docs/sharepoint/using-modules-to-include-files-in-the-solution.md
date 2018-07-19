@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di moduli per includere i file nella soluzione | Documenti Microsoft
+title: Uso dei moduli per includere i file nella soluzione | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,19 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0773d9c167a0a799b7d9bc8ddd2b52afc9bc6f2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118904"
 ---
-# <a name="using-modules-to-include-files-in-the-solution"></a>Utilizzo di moduli per includere file nella soluzione
-  È possibile che quando si desidera distribuire i file nel server di SharePoint indipendentemente dal tipo di file, ad esempio pagine master. A tale scopo, è possibile utilizzare *moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione di SharePoint. Quando si distribuisce la soluzione, i file nel modulo vengono copiati nelle cartelle specificate nel server SharePoint.  
+# <a name="use-modules-to-include-files-in-the-solution"></a>Usare i moduli per includere file nella soluzione
+  Potrebbe esserci situazioni quando si vuole distribuire i file nel server di SharePoint indipendentemente dal loro tipo di file, ad esempio nuove pagine master. A tale scopo, è possibile usare *moduli* (non deve essere confusa con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione di SharePoint. Quando si distribuisce la soluzione, i file nel modulo vengono copiati nelle cartelle specificate nel server SharePoint.  
   
-## <a name="module-items-and-elements"></a>Elementi del modulo  
- Per creare un modulo, aggiungerlo a un progetto scegliendolo nella **Aggiungi nuovo elemento** la finestra di dialogo. Quindi, modificare il file Elements.xml per includere i nomi dei file di cui che si desidera distribuire, in cui si trovano nel sistema e devono essere copiati nel server SharePoint.  
+## <a name="module-items-and-elements"></a>Elementi del modulo
+ Per creare un modulo, aggiungerlo a un progetto scegliendolo nella **Aggiungi nuovo elemento** nella finestra di dialogo. Modificare quindi relativi *Elements* file da includere i nomi dei file di cui si vuole distribuire, in cui si trovano nel sistema e devono essere copiati nel server SharePoint.  
   
- Di seguito è riportato un esempio del file Elements.xml per un modulo:  
+ Di seguito è riportato un esempio del *Elements* file per un modulo:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -41,28 +42,27 @@ ms.lasthandoff: 05/22/2018
   
 ```  
   
- Appena creato moduli contengono i file predefiniti seguenti:  
+ Nuovi moduli contengono i file predefiniti seguenti:  
   
 |Nome file|Descrizione|  
 |---------------|-----------------|  
-|Elements|File di definizione per il modulo.|  
-|Sample|File segnaposto che funge da un esempio di un file nel modulo.|  
+|*Elements. Xml*|File di definizione per il modulo.|  
+|*Sample*|Un file segnaposto che funge da un esempio di un file nel modulo.|  
   
- Il file Elements.xml contiene gli elementi seguenti:  
+ Il *Elements* file contiene gli elementi seguenti:  
   
 |Nome elemento|Descrizione|  
 |------------------|-----------------|  
 |Elementi|Contiene tutti gli elementi definiti nel modulo.|  
-|Modulo|L'elemento di modulo ha un solo attributo, *nome*, che specifica il nome del modulo nel formato `<Module Name="Module1">`.<br /><br /> Si noti che se si modifica il nome del modulo (o dai relativi *nome della cartella* proprietà), è necessario aggiornare manualmente il nome nell'elemento modulo.<br /><br /> Se si specifica una sottodirectory per i file nell'elemento modulo [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) crea automaticamente una struttura di directory corrispondente per loro.|  
-|File|Il File dispone di due parametri, *percorso* e *Url*.<br /><br /> -Path: Il nome e percorso del file della soluzione di SharePoint. Il formato è, `Path="Module1\Sample.txt"`.<br /><br /> -Url: Il percorso in cui verrà distribuito il file nel server SharePoint. Il formato è, `Url="Module1/Sample.txt"`.<br /><br /> -Type: Attributo facoltativo che dispone di due impostazioni: *GhostableInLibrary* e *Ghostable*. Il formato è, `Type="GhostableInLibrary"`. Specifica di *GhostableInLibrary* significa che il file verrà aggiunto a una raccolta documenti di SharePoint insieme a un elemento di elenco associata al file quando viene aggiunto alla raccolta. Specifica di *Ghostable* , il file viene aggiunto a SharePoint all'esterno della libreria di documenti.|  
+|Modulo|L'elemento di modulo ha un solo attributo, *Name*, che specifica il nome del modulo nel formato `<Module Name="Module1">`.<br /><br /> Si noti che se si modifica il nome del modulo (o dai relativi *nome cartella* proprietà), è necessario aggiornare manualmente il nome dell'elemento di modulo.<br /><br /> Se si specifica una sottodirectory per i file nell'elemento del modulo, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) creerà automaticamente una struttura di directory corrispondente per loro.|  
+|File|L'elemento File ha due parametri, *tracciato* e *Url*.<br /><br /> -Path: Il nome e percorso del file della soluzione di SharePoint. Il formato è, `Path="Module1\Sample.txt"`.<br /><br /> -Url: Il percorso in cui verrà distribuito il file nel server SharePoint. Il formato è, `Url="Module1/Sample.txt"`.<br /><br /> -Type: Attributo facoltativo che ha due impostazioni: *GhostableInLibrary* e *Ghostable*. Il formato è, `Type="GhostableInLibrary"`. Che specifica *GhostableInLibrary* significa che il file verrà aggiunto a una raccolta documenti di SharePoint insieme a un elemento di elenco associata al file quando viene aggiunto alla raccolta. Che specifica *Ghostable* fa sì che il file viene aggiunto a SharePoint all'esterno della raccolta documenti.|  
   
- Ogni file che si desidera distribuire richiede un apposito `<File>` voce elemento Elements.  
+ Ogni file che si desidera distribuire richiede un oggetto separato `<File>` voce elemento nel *Elements*.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Procedura: includere file mediante un modulo](../sharepoint/how-to-include-files-by-using-a-module.md)   
  [Procedura: effettuare il provisioning di un file](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [Creazione del pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
+ [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

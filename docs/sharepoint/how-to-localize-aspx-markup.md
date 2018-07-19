@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: localizzare il Markup ASPX | Documenti Microsoft'
+title: 'Procedura: localizzare il Markup ASPX | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,45 +18,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b43a8833ea84c4f6d191200bcf3af80815deb03a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 68e74f743c1c00bb940a89039e4fd5cfcf8e63e4
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118993"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Procedura: localizzare il markup ASPX
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine (con estensione aspx) usano in genere i valori stringa a livello di codice. Per localizzare le stringhe, sostituirli con espressioni che fanno riferimento alle risorse localizzate.  
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagine (con estensione aspx) usano in genere i valori di stringa hardcoded. Per queste stringhe da localizzare, sostituirli con espressioni che fanno riferimento alle risorse localizzate.  
   
-## <a name="localizing-aspx-markup"></a>Localizzazione Markup ASPX  
+## <a name="localize-aspx-markup"></a>Localizzare il markup ASPX  
   
 #### <a name="to-localize-aspx-markup"></a>Per localizzare il markup ASPX  
   
 1.  Aggiungere file di risorse separati: uno per la lingua predefinita e uno per ogni lingua localizzata.  
   
-     Se si localizza solo il markup e non di codice, aggiungere un elemento di progetto di File di risorse globali. Se si localizza codice e markup, aggiungere un elemento di progetto di File di risorse.  
+     Se si sta localizzando solo markup e non nel codice, aggiungere un elemento di progetto di File di risorse globali. Se si sta localizzando codice e markup, aggiungere un elemento di progetto di File di risorse.  
   
-    1.  Per aggiungere un File di risorse globali in **Esplora**, aprire il menu di scelta rapida per un elemento di progetto SharePoint e quindi scegliere **Aggiungi**, **nuovo elemento**. In SharePoint **2010** nodo, scegliere il **File di risorse globali** modello.  
+    1.  Per aggiungere un File di risorse globali, in **Esplora soluzioni**, aprire il menu di scelta rapida per un elemento di progetto SharePoint e quindi scegliere **Add** > **nuovo elemento**. In SharePoint **2010** nodo, scegliere il **File di risorse globali** modello.  
   
-    2.  Per aggiungere un File di risorse, in **Esplora**, aprire il menu di scelta rapida per un elemento di progetto SharePoint e quindi scegliere **Aggiungi**, **nuovo elemento**. Sotto il **Visual Basic** o **Visual c#** nodo, scegliere il **File di risorse** modello.  
+    2.  Per aggiungere un File di risorse, in **Esplora soluzioni**, aprire il menu di scelta rapida per un elemento di progetto SharePoint e quindi scegliere **Add** > **nuovo elemento**. Sotto il **Visual Basic** oppure **Visual c#** nodo, scegliere il **File di risorse** modello.  
   
     > [!NOTE]  
-    >  Assicurarsi di aggiungere i file di risorse a un elemento di progetto SharePoint per abilitare la proprietà del tipo di distribuzione. Questa proprietà è necessario più avanti in questa procedura. Se la soluzione non dispone di un elemento di progetto SharePoint, è possibile aggiungere un progetto SharePoint vuoto e rimuovere il file Elements.xml predefinito.  
+    >  Assicurarsi di aggiungere i file di risorse a un elemento di progetto SharePoint per abilitare la proprietà del tipo di distribuzione. Questa proprietà è necessaria più avanti in questa procedura. Se la soluzione non ha un elemento del progetto SharePoint, è possibile aggiungere un progetto SharePoint vuoto e rimuovere sul valore predefinito *Elements* file.  
   
-2.  Assegnare il file di risorse di lingua predefinita di un nome di propria scelta con estensione resx, ad esempio MyAppResources. Utilizzare lo stesso nome base per ogni file di risorse localizzato, ma aggiungere l'[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] delle impostazioni cultura. Assegnare un nome, ad esempio, una risorsa localizzata tedesca MyAppResources.de-de.  
+2.  Assegnare un nome di propria scelta con i file di risorse di lingua predefinito un *resx* estensione, ad esempio MyAppResources. Utilizzare lo stesso nome base per ogni file di risorse localizzato, ma aggiungere l'[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] delle impostazioni cultura. Ad esempio, nome un tedesco localizzata resource *MyAppResources.de-. resx*.  
   
-3.  Modificare il valore della **tipo di distribuzione** proprietà di ogni file di risorse per **AppGlobalResource** per cartella App_GlobalResources del server.  
+3.  Modificare il valore della **tipo di distribuzione** proprietà di ogni file di risorse da **AppGlobalResource** per fare in modo per distribuire nella cartella App_GlobalResources del server.  
   
-4.  Se si utilizzano le risorse per localizzare il codice oltre al markup ASPX, lasciare il valore di **azione di compilazione** proprietà di ogni file come **risorsa incorporata**. Se si utilizza i file di risorse solo per localizzare il markup, è possibile modificare facoltativamente il valore della proprietà dei file **contenuto**. Per ulteriori informazioni, vedere [localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
+4.  Se si usa le risorse per localizzare codice oltre al markup ASPX, lasciare il valore di **Build Action** proprietà di ogni file impostato **risorsa incorporata**. Se si usa i file di risorse solo per localizzare il markup, è facoltativamente possibile modificare il valore della proprietà dei file da **contenuto**. Per altre informazioni, vedere [soluzioni SharePoint localizzare](../sharepoint/localizing-sharepoint-solutions.md).  
   
-5.  Aprire ogni file di risorse e aggiungere le stringhe localizzate, utilizzando la stessa stringa ID in ogni file.  
+5.  Aprire ogni file di risorse e aggiungere le stringhe localizzate, usando la stessa stringa di ID in ogni file.  
   
-6.  Nel [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] markup per la pagina ASPX o di un controllo, sostituire le stringhe hardcoded con i valori che utilizzano il formato seguente:  
+6.  Nel [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] markup della pagina ASPX o del controllo, sostituire le stringhe hardcoded con i valori che usano il formato seguente:  
   
     ```aspx-csharp  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
-     Per localizzare il testo per un controllo etichetta in una pagina applicazione, ad esempio, sarebbe modificare:  
+     Ad esempio, per localizzare il testo per un controllo etichetta in una pagina applicazione, modificare:  
   
     ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -72,16 +73,15 @@ ms.lasthandoff: 05/22/2018
     </asp:Content>  
     ```  
   
-7.  Premere il tasto F5 per compilare ed eseguire l'applicazione.  
+7.  Scegliere il **F5** chiave per compilare ed eseguire l'applicazione.  
   
-8.  In SharePoint, modificare la lingua di visualizzazione da quello predefinito.  
+8.  In SharePoint, cambiare la lingua di visualizzazione da quello predefinito.  
   
-     Le stringhe localizzate visualizzata nell'applicazione. Per visualizzare le risorse localizzate, il server di SharePoint deve disporre di un language pack installati che corrispondono alle impostazioni cultura del file di risorse.  
+     Le stringhe localizzate visualizzata nell'applicazione. Per visualizzare le risorse localizzate, il server di SharePoint deve avere installato un language pack corrispondente alle impostazioni cultura del file di risorse.  
   
-## <a name="see-also"></a>Vedere anche  
+## <a name="see-also"></a>Vedere anche
  [Localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
  [Procedura: localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)   
- [Procedura: aggiungere un File di risorse](../sharepoint/how-to-add-a-resource-file.md)   
- [Procedura: Localizzare il codice](../sharepoint/how-to-localize-code.md)  
-  
+ [Procedura: aggiungere un file di risorse](../sharepoint/how-to-add-a-resource-file.md)   
+ [Procedura: localizzare il codice](../sharepoint/how-to-localize-code.md)  
   

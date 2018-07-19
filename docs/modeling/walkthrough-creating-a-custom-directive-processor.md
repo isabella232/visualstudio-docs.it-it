@@ -15,16 +15,16 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e0ee905cf4ddaec6a05d5c0722b80c345489acd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979035"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234424"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
-*Processori di direttive* funzionano aggiungendo codice per il *classe della trasformazione generata*. Se si chiama un *direttiva* da un *modello di testo*, il resto del codice che scrive nel modello di testo può basarsi sulle funzionalità che la direttiva fornisce.
+*Processori di direttiva* funzionano aggiungendo codice per il *classe transformation generata*. Se si chiama un *direttiva* da un *modello di testo*, il resto del codice scritto nel modello di testo può basarsi sulle funzionalità che fornisce la direttiva.
 
 È possibile scrivere processori di direttive personalizzati propri. In questo modo è possibile personalizzare i propri modelli di testo. Per creare un processore di direttiva personalizzato, si crea una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
@@ -82,7 +82,7 @@ End Property
 1. In Visual Studio, creare un progetto Libreria di classi in C# o in Visual Basic denominato CustomDP.
 
     > [!NOTE]
-    > Se si desidera installare il processore di direttiva su più computer, è consigliabile utilizzare un progetto di Visual Studio Extension (VSIX) e includere un file. pkgdef nell'estensione. Per ulteriori informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).
+    > Se si desidera installare il processore di direttiva su più computer, è preferibile usare un progetto di Visual Studio Extension (VSIX) e includere un file con estensione pkgdef nell'estensione. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).
 
 2. Aggiungere riferimenti a questi assembly:
 
@@ -90,7 +90,7 @@ End Property
 
     - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-3. Sostituire il codice in **Class1** con il codice seguente. Questo codice definisce una classe CustomDirectiveProcessor che eredita dalla classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa i metodi necessari.
+3. Sostituire il codice nel **Class1** con il codice seguente. Questo codice definisce una classe CustomDirectiveProcessor che eredita dalla classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa i metodi necessari.
 
     ```csharp
     using System;
@@ -127,7 +127,7 @@ End Property
 
             // These are the errors that occur during processing. The engine passes
             // the errors to the host, and the host can decide how to display them,
-            // for example the the host can display the errors in the UI
+            // for example the host can display the errors in the UI
             // or write them to a file.
             // ---------------------------------------------------------------------
             private CompilerErrorCollection errorsValue;
@@ -386,7 +386,7 @@ End Property
 
             ' These are the errors that occur during processing. The engine passes
             ' the errors to the host, and the host can decide how to display them,
-            ' for example the the host can display the errors in the UI
+            ' for example the host can display the errors in the UI
             ' or write them to a file.
             ' ---------------------------------------------------------------------
             Private errorsValue As CompilerErrorCollection
@@ -601,7 +601,7 @@ End Property
     End Namespace
     ```
 
-4. Per solo per Visual Basic, aprire il **Project** dal menu **proprietà CustomDP**. Nel **applicazione** scheda **spazio dei nomi radice**, eliminare il valore predefinito, `CustomDP`.
+4. Solo per Visual Basic, aprire il **Project** dal menu **proprietà CustomDP**. Nel **Application** nella scheda **spazio dei nomi radice**, eliminare il valore predefinito, `CustomDP`.
 
 5. Nel **File** menu, fare clic su **Salva tutto**.
 
@@ -616,7 +616,7 @@ Compilare il progetto. Scegliere **Compila soluzione** dal menu **Compila**.
 Prima di chiamare una direttiva da un modello di testo in Visual Studio, è necessario aggiungere una chiave del Registro di sistema per il processore di direttiva.
 
 > [!NOTE]
-> Se si desidera installare il processore di direttiva su più computer, è meglio definire un Visual Studio Extension (VSIX) che include un *pkgdef* file insieme all'assembly. Per ulteriori informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).
+> Se si desidera installare il processore di direttiva su più computer, è preferibile definire un Visual Studio Extension (VSIX) che include un' *pkgdef* file insieme all'assembly. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).
 
 Nel Registro di sistema esistono delle chiavi per i processori di direttiva nella posizione seguente:
 
@@ -637,7 +637,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
 ### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Per aggiungere una chiave del Registro di sistema per il processore di direttiva
 
-1. Eseguire il `regedit` comando utilizzando il menu Start o la riga di comando.
+1. Eseguire il `regedit` comando usando il menu Start o la riga di comando.
 
 2. Passare al percorso **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**, fare clic sul nodo.
 
@@ -676,14 +676,14 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
 Per testare il processore di direttiva, è necessario scrivere un modello di testo che lo chiami.
 
-In questo esempio, il modello di testo chiama la direttiva e passa nel nome di un file XML che contiene documentazione per un file della classe. Il modello di testo utilizza il <xref:System.Xml.XmlDocument> proprietà che la direttiva crea per navigare nel XML e stampare i commenti della documentazione.
+In questo esempio, il modello di testo chiama la direttiva e passa nel nome di un file XML che contiene documentazione per un file della classe. Usa il modello di testo di <xref:System.Xml.XmlDocument> proprietà che la direttiva crea per navigare nel XML e stampare i commenti della documentazione.
 
 ### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Per creare un file XML da utilizzare nel test del processore di direttiva
 
-1. Creare un file denominato *Docfile* utilizzando un editor di testo (ad esempio, il blocco note).
+1. Creare un file denominato *Docfile* usando qualsiasi editor di testo (ad esempio Blocco note).
 
     > [!NOTE]
-    > È possibile creare questo file in qualsiasi posizione (ad esempio *C:\Test\DocFile.xml*).
+    > È possibile creare questo file in qualsiasi posizione (ad esempio, *C:\Test\DocFile.xml*).
 
 2. Aggiungere quanto segue al file XML:
 
@@ -734,7 +734,7 @@ In questo esempio, il modello di testo chiama la direttiva e passa nel nome di u
 
 2. Aggiungere un nuovo file modello di testo denominato TestDP.tt.
 
-3. Assicurarsi che il **lo strumento personalizzato** di TestDP.tt sia impostata su `TextTemplatingFileGenerator`.
+3. Assicurarsi che il **Custom Tool** proprietà di TestDP.tt sia impostata su `TextTemplatingFileGenerator`.
 
 4. Modificare il contenuto di TestDP.tt nel testo seguente.
 
@@ -832,11 +832,11 @@ In questo esempio, il modello di testo chiama la direttiva e passa nel nome di u
 
 ### <a name="to-test-the-directive-processor"></a>Per testare il processore di direttiva
 
-1. In **Esplora**, fare doppio clic su TestDP.tt e quindi fare clic su **Esegui strumento personalizzato**.
+1. Nelle **Esplora soluzioni**, fare doppio clic su TestDP.tt e quindi fare clic su **Esegui strumento personalizzato**.
 
-   Per gli utenti di Visual Basic, TestDP. txt non è possibile visualizzare **Esplora soluzioni** per impostazione predefinita. Per visualizzare tutti i file assegnati al progetto, aprire il **progetto** menu e fare clic su **Mostra tutti i file**.
+   Per gli utenti di Visual Basic, TestDP. txt non vengano visualizzati nella **Esplora soluzioni** per impostazione predefinita. Per visualizzare tutti i file assegnati al progetto, aprire il **Project** dal menu **Mostra tutti i file**.
 
-2. In **Esplora**, espandere il nodo TestDP.txt e quindi fare doppio clic su TestDP.txt per aprirlo nell'editor.
+2. Nelle **Esplora soluzioni**, espandere il nodo TestDP. txt e quindi fare doppio clic su TestDP. txt per aprirlo nell'editor.
 
     Verrà visualizzato l'output di testo generato. L'output dovrebbe essere simile al seguente:
 
@@ -870,7 +870,7 @@ In questo esempio, il modello di testo chiama la direttiva e passa nel nome di u
       value:  A value tag is used to describe the property value
     ```
 
-## <a name="add-html-to-generated-text"></a>Aggiungere codice HTML a testo generato
+## <a name="add-html-to-generated-text"></a>Aggiungere il codice HTML a testo generato
 
 Dopo avere testato il processore di direttiva personalizzato, è possibile che si desideri aggiungere del codice HTML al testo generato.
 
@@ -879,7 +879,7 @@ Dopo avere testato il processore di direttiva personalizzato, è possibile che s
 1. Sostituire il codice nel *TestDP.tt* con il codice seguente. Il codice HTML è evidenziato. Assicurarsi di sostituire la stringa `YOUR PATH` con il percorso per il *Docfile* file.
 
     > [!NOTE]
-    > Apertura aggiuntivi \<# e chiusura #> tag separano il codice dell'istruzione dai tag HTML.
+    > Apri altri \<# e chiusura #> tag separano il codice dell'istruzione dai tag HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>
@@ -961,8 +961,8 @@ Dopo avere testato il processore di direttiva personalizzato, è possibile che s
     </body></html>
     ```
 
-2. Nel **File** menu, fare clic su **Salva TestDP.txt**.
+2. Nel **File** menu, fare clic su **Salva TestDP**.
 
-3. Per visualizzare l'output in un browser, in **Esplora**, fare doppio clic su TestDP.htm e fare clic su **Visualizza nel Browser**.
+3. Per visualizzare l'output in un browser, in **Esplora soluzioni**, fare doppio clic su TestDP. htm e fare clic su **Visualizza nel Browser**.
 
    L'output deve corrispondere il testo originale, ad eccezione del fatto che è in formato HTML. Ogni nome di elemento viene visualizzato in grassetto.

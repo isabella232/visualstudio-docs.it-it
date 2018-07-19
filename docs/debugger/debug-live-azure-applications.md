@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug in tempo reale delle app di Azure ASP.NET
+title: Il debug in tempo reale delle app di Azure ASP.NET
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
 ms.custom: mvc
 ms.date: 03/16/2018
@@ -14,33 +14,33 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5207af86d850dca3e4dfde515237452c293788ea
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766324"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281550"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Debug in tempo reale delle app di Azure ASP.NET utilizzando il Debugger di Snapshot
+# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Il debug in tempo reale delle app di Azure ASP.NET usando il Debugger di Snapshot
 
-Il Debugger Snapshot crea uno snapshot delle applicazioni in produzione quando viene eseguito codice che si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
+Quando viene eseguito codice che si è interessati, il Debugger di Snapshot crea uno snapshot delle App nell'ambiente di produzione. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
 
-Snappoints e logpoints sono simili ai punti di interruzione, ma a differenza dei punti di interruzione, snappoints non interrompere l'applicazione quando raggiunto. In genere, l'acquisizione dello snapshot in un snappoint accetta 10-20 millisecondi. 
+Punti di ancoraggio e punti di registrazione sono simili ai punti di interruzione, ma a differenza dei punti di interruzione, i punti di ancoraggio non interrompere l'applicazione quando raggiunto. Acquisizione dello snapshot in un punto di ancoraggio richiede in genere, 10-20 millisecondi.
 
 In questa esercitazione si eseguono le attività seguenti:
 
 > [!div class="checklist"]
 > * Avviare il Debugger di Snapshot
-> * Impostare un snappoint e visualizzare uno snapshot
-> * Impostare un logpoint
+> * Impostare un punto di ancoraggio e visualizzare uno snapshot
+> * Impostare un punto di registrazione
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Debugger dello snapshot è disponibile solo per Visual Studio 2017 Enterprise 15,5 o versioni successive con il **carico di lavoro di sviluppo web ASP.NET e**. Per ASP.NET Core, è necessario anche il. **Lo sviluppo dei componenti di base NET** carico di lavoro installato.
+* Debugger di snapshot è disponibile solo per Visual Studio 2017 Enterprise versione 15.5 o versione successiva con il **carico di lavoro sviluppo ASP.NET e web**. Per ASP.NET Core, è necessario anche il. **Lo sviluppo di NET Core** installato il carico di lavoro.
 
-    Se non è già installato, installarlo [2017 Enterprise di Visual Studio versione 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o versione successiva. Se si sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire il programma di installazione Visual Studio e controllare il componente del Debugger dello Snapshot **carico di lavoro di sviluppo web ASP.NET e**.
+    Se non è già installato, installarlo [Visual Studio 2017 Enterprise versione 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o versione successiva. Se sta aggiornando un'installazione precedente di Visual Studio 2017, eseguire l'installazione di Visual Studio e verificare il componente Debugger di Snapshot **carico di lavoro sviluppo ASP.NET e web**.
 
-* Piano di servizio App di Azure di base o versione successiva.
+* Piano di servizio App di Azure Basic o superiore.
 
 * La raccolta di snapshot è disponibile per le seguenti app Web in esecuzione in Servizio app di Azure:
 
@@ -49,102 +49,102 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Aprire il progetto e avviare il Debugger di Snapshot
 
-1. Aprire il progetto che si desidera eseguire il debug di snapshot. 
+1. Aprire il progetto che desidera eseguire il debug di snapshot.
 
-    > [!IMPORTANT] 
-    > Eseguire il debug dello snapshot, è necessario aprire la **stessa versione del codice sorgente** che viene pubblicato il servizio App di Azure. 
+    > [!IMPORTANT]
+    > Eseguire il debug di snapshot, è necessario aprire la **stessa versione del codice sorgente** che viene pubblicato in servizio App di Azure.
 
-1. In Esplora risorse Cloud (**Vista > Cloud Explorer**), il servizio App di Azure il progetto viene distribuito e scegliere **collega Debugger Snapshot**.
+1. In Cloud Explorer (**Visualizza > Cloud Explorer**), il progetto viene distribuito il servizio App di Azure e scegliere **collegare Snapshot Debugger**.
 
    ![Avviare il debugger di snapshot](../debugger/media/snapshot-launch.png)
 
-    La prima volta, si seleziona **collega Debugger Snapshot**, viene chiesto di installare l'estensione del sito Debugger Snapshot nel servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure. 
+    La prima volta che si seleziona **collegare Snapshot Debugger**, viene chiesto di installare l'estensione del sito Snapshot Debugger in servizio App di Azure. Questa installazione richiede un riavvio del servizio App di Azure.
 
-   Visual Studio è in modalità di debug di snapshot.
+   Visual Studio è ora in modalità di debug snapshot.
 
     > [!NOTE]
-    > L'estensione del sito di Application Insights supporta anche il debug dello Snapshot. Se viene visualizzato un messaggio di errore "estensione aggiornata del sito", vedere [risoluzione dei problemi noti per il debug dello snapshot e suggerimenti](../debugger/debug-live-azure-apps-troubleshooting.md) per l'aggiornamento dei dettagli.
+    > L'estensione del sito Application Insights supporta anche il debug di Snapshot. Se viene visualizzato un messaggio di errore "estensione aggiornata del sito", vedere [risoluzione dei problemi di suggerimenti e problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per l'aggiornamento dei dettagli.
 
-   ![Modalità di debug di snapshot](../debugger/media/snapshot-message.png)
+   ![Modalità di debug snapshot](../debugger/media/snapshot-message.png)
 
-   Il **moduli** finestra viene visualizzato quando tutti i moduli sono caricati per il servizio App di Azure (scegliere **Debug / Windows / moduli** per aprire questa finestra).
+   Il **moduli** finestra viene visualizzato quando tutti i moduli sono caricati per il servizio App di Azure (sceglie **eseguire il Debug / Windows / moduli** per aprire questa finestra).
 
    ![Controllare la finestra moduli](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint"></a>Impostare un snappoint
+## <a name="set-a-snappoint"></a>Impostare un punto di ancoraggio
 
-1. Nell'editor di codice, fare clic sulla barra di navigazione a sinistra accanto a una riga di codice che si desidera impostare un snappoint. Verificare che si tratta di codice che verrà eseguita.
+1. Nell'editor del codice, fare clic sulla barra di navigazione a sinistra accanto a una riga di codice che si è interessati per impostare un punto di ancoraggio. Assicurarsi che sia codice che già conosci verrà eseguita.
 
-   ![Impostare un snappoint](../debugger/media/snapshot-set-snappoint.png)
+   ![Impostare un punto di ancoraggio](../debugger/media/snapshot-set-snappoint.png)
 
-2. Fare clic su **Start Collection** per attivare il snappoint.  
+2. Fare clic su **Avvia raccolta** per attivare il punto di ancoraggio.
 
-   ![Attivare il snappoint](../debugger/media/snapshot-start-collection.png)
+   ![Attivare il punto di ancoraggio](../debugger/media/snapshot-start-collection.png)
 
     > [!TIP]
-    > Non è possibile eseguire durante la visualizzazione di uno snapshot, ma è possibile inserire più snappoints nel codice per seguire l'esecuzione in diverse righe di codice. Se si dispone di più snappoints nel codice, il Debugger Snapshot garantiscono che gli snapshot corrispondenti siano dalla stessa sessione dell'utente finale. Il Debugger Snapshot avviene anche se sono presenti molti utenti raggiunge l'app.
+    > Non è possibile eseguire quando si visualizza un'istantanea, ma è possibile inserire più punti di ancoraggio nel codice per seguire l'esecuzione in diverse righe di codice. Se si dispone di più punti di ancoraggio nel codice, il Debugger di Snapshot garantisce che gli snapshot corrispondenti siano dalla stessa sessione dell'utente finale. Il Debugger di Snapshot avviene anche se sono presenti molti utenti raggiungere l'app.
 
 ## <a name="take-a-snapshot"></a>Creare uno snapshot
 
-Quando un snappoint è attivata, acquisisce uno snapshot ogni volta che viene eseguita la riga di codice in cui viene inserito il snappoint. L'esecuzione può essere causata da una richiesta effettiva sul server. Per forzare il snappoint riscontri, passare alla visualizzazione esplorazione del sito web e intraprendere le azioni necessarie che causano il snappoint da sottoporre a hit.
+Quando un punto di ancoraggio è attivata, consente di acquisire uno snapshot ogni volta che viene eseguita la riga di codice in cui si trova il punto di ancoraggio. L'esecuzione può essere causata da una richiesta reale sul server. Per forzare il punto di ancoraggio per raggiungere, passare alla visualizzazione esplorazione del sito web e intraprendere eventuali azioni necessarie che provocano il punto di ancoraggio da sottoporre a hit.
 
-## <a name="inspect-snapshot-data"></a>Controllare i dati dello snapshot
+## <a name="inspect-snapshot-data"></a>Esaminare i dati dello snapshot
 
-1. Quando viene raggiunto il snappoint, nella finestra Strumenti di diagnostica viene visualizzato uno snapshot. Per aprire questa finestra, scegliere **Debug / Windows / Mostra strumenti di diagnostica**.
+1. Quando viene raggiunto il punto di ancoraggio, uno snapshot viene visualizzato nella finestra Strumenti di diagnostica. Per aprire questa finestra, scegliere **Debug / Windows / Mostra strumenti di diagnostica**.
 
-   ![Aprire un snappoint](../debugger/media/snapshot-diagsession-window.png)
+   ![Aprire un punto di ancoraggio](../debugger/media/snapshot-diagsession-window.png)
 
-1. Fare doppio clic per aprire lo snapshot nell'editor di codice il snappoint.
+1. Fare doppio clic sul punto di ancoraggio per aprire lo snapshot nell'editor del codice.
 
-   ![Controllare i dati dello snapshot](../debugger/media/snapshot-inspect-data.png)
+   ![Esaminare i dati dello snapshot](../debugger/media/snapshot-inspect-data.png)
 
-   In questa vista è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, utilizzare il **variabili locali**, **controlla**, e **Stack di chiamate** windows e anche valutare le espressioni.
+   Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, utilizzare il **variabili locali**, **controlla**, e **Stack di chiamate** windows e anche valutare le espressioni.
 
-    Il sito Web è ancora in tempo reale e gli utenti finali non sono interessati. Un solo snapshot viene acquisito per snappoint per impostazione predefinita: dopo aver acquisito uno snapshot di snappoint viene disattivata. Se si desidera acquisire snapshot di un altro nel snappoint, è possibile attivare il snappoint indietro facendo **Aggiorna insieme**.
+    Il sito Web stesso è ancora in tempo reale e gli utenti finali non sono interessati. Un solo snapshot viene acquisito per ogni punto di ancoraggio per impostazione predefinita: dopo uno snapshot viene acquisito il punto di ancoraggio viene disattivata. Se si desidera acquisire snapshot di un altro al punto di ancoraggio, è possibile attivare il punto di ancoraggio indietro facendo **Aggiorna raccolta**.
 
-È anche possibile aggiungere ulteriori snappoints all'app e attivarli con il **Aggiorna insieme** pulsante.
+È anche possibile aggiungere ulteriori punti di ancoraggio all'App e attivarli con il **Aggiorna raccolta** pulsante.
 
-**Serve aiuto?** Vedere il [problemi noti e risoluzione dei problemi](../debugger/debug-live-azure-apps-troubleshooting.md) e [domande frequenti relative al debug snapshot](../debugger/debug-live-azure-apps-faq.md) pagine.
+**Serve aiuto?** Vedere le [problemi noti e risoluzione dei problemi](../debugger/debug-live-azure-apps-troubleshooting.md) e [domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md) pagine.
 
-## <a name="set-a-conditional-snappoint"></a>Impostare un snappoint condizionale
+## <a name="set-a-conditional-snappoint"></a>Impostare un punto di ancoraggio condizionale
 
-Se è difficile ricreare un determinato stato nell'app, è consigliabile se si consente l'utilizzo di un snappoint condizionale. Snappoints condizionale di evitare l'esecuzione di uno snapshot finché l'app passa allo stato desiderato, ad esempio quando una variabile contiene un valore specifico che si desidera controllare. È possibile impostare le condizioni di utilizzo di espressioni, filtri, o conteggio.
+Se è difficile da ricreare uno stato specifico nell'app, prendere in considerazione se l'utilizzo di un punto di ancoraggio condizionale può aiutare. Punti di ancoraggio condizionale consentono di che evitare l'esecuzione di uno snapshot fino a quando l'app passa allo stato desiderato, ad esempio quando una variabile ha un valore specifico che si desidera esaminare. È possibile impostare le condizioni di utilizzo delle espressioni, filtri, o conteggio.
 
-#### <a name="to-create-a-conditional-snappoint"></a>Per creare un snappoint condizionale
+#### <a name="to-create-a-conditional-snappoint"></a>Per creare un punto di ancoraggio condizionale
 
-1. Fare doppio clic su un'icona di snappoint (la palla vuota) e scegliere **impostazioni**.
+1. Fare doppio clic su un'icona di punto di ancoraggio (la palla vuota) e scegliere **impostazioni**.
 
    ![Scegliere le impostazioni](../debugger/media/snapshot-snappoint-settings.png)
 
-1. Nella finestra Impostazioni snappoint, digitare un'espressione.
+1. Nella finestra Impostazioni punto di ancoraggio, digitare un'espressione.
 
    ![Digitare un'espressione](../debugger/media/snapshot-snappoint-conditions.png)
 
-   Nell'illustrazione precedente, viene creato lo snapshot solo per il snappoint quando `visitor.FirstName == "Dan"`.
+   Nella figura precedente, viene creato lo snapshot solo per il punto di ancoraggio quando `visitor.FirstName == "Dan"`.
 
-## <a name="set-a-logpoint"></a>Impostare un logpoint
+## <a name="set-a-logpoint"></a>Impostare un punto di registrazione
 
-Oltre a creare uno snapshot quando viene raggiunto un snappoint, è inoltre possibile configurare un snappoint per registrare un messaggio (ossia, creare un logpoint). È possibile impostare logpoints senza dover ridistribuire l'applicazione. Logpoints vengono eseguiti quasi e non causare alcun impatto o effetti collaterali all'applicazione in esecuzione.
+Oltre a eseguire uno snapshot quando viene raggiunto un punto di ancoraggio, è anche possibile configurare un punto di ancoraggio per un messaggio di log (vale a dire, creare un punto di registrazione). È possibile impostare punti di registrazione senza dover ridistribuire l'app. Punti di registrazione vengono eseguite praticamente e non causare alcun impatto o effetti collaterali all'applicazione in esecuzione.
 
-#### <a name="to-create-a-logpoint"></a>Per creare un logpoint
+#### <a name="to-create-a-logpoint"></a>Per creare un punto di registrazione
 
-1. Fare doppio clic su un'icona di snappoint (esagono blu) e scegliere **impostazioni**.
+1. Fare doppio clic su un'icona di punto di ancoraggio (esagono blu) e scegliere **impostazioni**.
 
-1. Nella finestra Impostazioni snappoint selezionare **azioni**.
+1. Nella finestra Impostazioni punto di ancoraggio, selezionare **azioni**.
 
-    ![Creare un logpoint](../debugger/media/snapshot-logpoint.png)
+    ![Creare un punto di registrazione](../debugger/media/snapshot-logpoint.png)
 
-1. Nel campo messaggio, è possibile immettere il nuovo messaggio di log che si desidera registrare. È inoltre possibile valutare le variabili nel messaggio di log, inserirli all'interno delle parentesi graffe.
+1. Nel campo messaggio, è possibile immettere il nuovo messaggio di log che si desidera registrare. È inoltre possibile valutare le variabili nel messaggio di log, posizionandoli all'interno di parentesi graffe.
 
-    Se si sceglie **inviare alla finestra di Output**, quando viene raggiunto il logpoint, viene visualizzato il messaggio nella finestra Strumenti di diagnostica.
+    Se si sceglie **inviare alla finestra di Output**, quando viene raggiunto il punto di registrazione, verrà visualizzato il messaggio nella finestra Strumenti di diagnostica.
 
-    ![Dati Logpoint nella finestra di diagsession](../debugger/media/snapshot-logpoint-output.png)
+    ![Punto di registrazione dati nella finestra di diagsession](../debugger/media/snapshot-logpoint-output.png)
 
-    Se si sceglie **invia al registro applicazioni**, quando viene raggiunto il logpoint, il messaggio viene visualizzato in qualsiasi punto che è possibile visualizzare i messaggi da `System.Diagnostics.Trace` (o `ILogger` in .NET Core), ad esempio [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
+    Se si sceglie **invia al log applicazioni**, quando viene raggiunto il punto di registrazione, il messaggio viene visualizzato in qualsiasi punto che è possibile visualizzare i messaggi dal `System.Diagnostics.Trace` (o `ILogger` in .NET Core), ad esempio [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa esercitazione è stato spiegato come utilizzare il Debugger di Snapshot. È possibile leggere altre informazioni su questa funzionalità.
+In questa esercitazione si è appreso come usare il Debugger di Snapshot. È possibile leggere altre informazioni su questa funzionalità.
 
 > [!div class="nextstepaction"]
 > [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)

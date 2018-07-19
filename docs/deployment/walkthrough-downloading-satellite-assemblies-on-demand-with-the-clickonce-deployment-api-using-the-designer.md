@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Download di assembly Satellite su richiesta con l'API tramite la finestra di progettazione della distribuzione ClickOnce | Documenti Microsoft"
+title: "Procedura dettagliata: Download di assembly Satellite su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,17 +22,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560895"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233464"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: download di assembly satellite su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione
 Le applicazioni Windows Form possono essere configurate per più impostazioni cultura con l'uso di assembly satellite. Un *assembly satellite* è un assembly in cui sono contenute risorse dell'applicazione per impostazioni cultura diverse da quelle predefinite dell'applicazione.  
   
- Come descritto in [localizzazione di applicazioni ClickOnce](../deployment/localizing-clickonce-applications.md), è possibile includere più assembly satellite per più impostazioni cultura all'interno dello stesso [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per impostazione predefinita, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scaricherà tutti gli assembly satellite nella distribuzione nel computer client, anche se probabilmente un singolo client richiederà un solo assembly satellite.  
+ Come descritto nella [localizzazione di applicazioni ClickOnce](../deployment/localizing-clickonce-applications.md), è possibile includere più assembly satellite per più impostazioni cultura all'interno della stessa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. Per impostazione predefinita, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] scaricherà tutti gli assembly satellite nella distribuzione nel computer client, anche se probabilmente un singolo client richiederà un solo assembly satellite.  
   
  Questa procedura dettagliata descrive come contrassegnare gli assembly satellite come facoltativi e scaricare solo l'assembly di cui un computer client ha bisogno per le impostazioni cultura correnti.  
   
@@ -43,21 +43,21 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
   
 1.  Compilazione del progetto. In questo modo verranno generati gli assembly satellite per tutte le impostazioni cultura in cui si sta eseguendo la localizzazione.  
   
-2.  Fare clic sul nome del progetto in Esplora soluzioni e fare clic su **proprietà**.  
+2.  Fare doppio clic sul nome del progetto in Esplora soluzioni e scegliere **proprietà**.  
   
-3.  Fare clic su di **pubblica** scheda e quindi fare clic su **file dell'applicazione**.  
+3.  Fare clic sui **Publish** scheda e quindi fare clic su **file applicazione**.  
   
 4.  Selezionare il **Mostra tutti i file** casella di controllo per visualizzare gli assembly satellite. Per impostazione predefinita, tutti gli assembly satellite verranno inclusi nella distribuzione e saranno visibili in questa finestra di dialogo.  
   
-     Un assembly satellite avranno un nome nel formato *CodiceIso*\ApplicationName.Resources.dll, in cui *CodiceIso* è un identificatore di lingua in formato RFC 1766.  
+     Un assembly satellite hanno un nome nel formato *CodiceIso*\ApplicationName.Resources.dll, dove *CodiceIso* è un identificatore di lingua in formato RFC 1766.  
   
-5.  Fare clic su **New...**  nel **gruppo di Download** elenco per ogni identificatore di lingua. Quando viene richiesto di specificare un nome per il gruppo di download, immettere l'identificatore del linguaggio. Ad esempio, per un assembly satellite giapponese, specificare il nome del gruppo di download `ja-JP`.  
+5.  Fare clic su **New** nel **gruppo di Download** elenco per ogni identificatore di lingua. Quando viene richiesto di specificare un nome per il gruppo di download, immettere l'identificatore del linguaggio. Ad esempio, per un assembly satellite giapponese, si specificherà il nome del gruppo di download `ja-JP`.  
   
-6.  Chiudi il **file dell'applicazione** la finestra di dialogo.  
+6.  Chiudi il **i file dell'applicazione** nella finestra di dialogo.  
   
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Per scaricare assembly satellite su richiesta in C# #
   
-1.  Aprire il file Program.cs. Se non viene visualizzato questo file in Esplora soluzioni, selezionare il progetto e sul **progetto** menu, fare clic su **Mostra tutti i file**.  
+1.  Aprire il file Program.cs. Se non viene visualizzato in questo file in Esplora soluzioni, selezionare il progetto e nel **Project** menu, fare clic su **Mostra tutti i file**.  
   
 2.  Usare il codice seguente per scaricare l'assembly satellite appropriato e avviare l'applicazione.  
   
@@ -65,9 +65,9 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
   
 ### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>Per scaricare assembly satellite su richiesta in Visual Basic  
   
-1.  Nel **proprietà** finestra dell'applicazione, fare clic su di **applicazione** scheda.  
+1.  Nel **delle proprietà** finestra per l'applicazione, fare clic sui **applicazione** scheda.  
   
-2.  Nella parte inferiore della pagina della scheda, fare clic su **Visualizza eventi di applicazioni**.  
+2.  Nella parte inferiore della pagina della scheda, fare clic su **Visualizza eventi applicazione**.  
   
 3.  Nella parte iniziale del file ApplicationEvents.VB, aggiungere i seguenti riferimenti importati.  
   

@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 111a1180f694b57a4e5ae013a41128a4a7e9e9f5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748686"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283194"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 Creare una mappa codici per tracciare visivamente lo stack di chiamate durante il debug. È possibile inserire note sulla mappa per tenere traccia dell'attività del codice e in tal modo concentrarsi sull'individuazione di bug.
@@ -44,13 +44,13 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
  Sono necessari:
 
--   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)
+-   [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   Codice che è possibile eseguire il debug, ad esempio Visual c#, Visual Basic, C++, JavaScript o X + +
 
  Vedere:
 
--   [Video: Debug visivo con l'integrazione del debugger Mappa codici (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+-   [Video: Debug visivo con integrazione del debugger della mappa codici (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 -   [Eseguire il mapping dello stack di chiamate](#MapStack)
 
@@ -60,17 +60,17 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
 -   [Aggiungere il codice correlato alla mappa](#AddRelatedCode)
 
--   [Individuare bug utilizzando la mappa](#FindBugs)
+-   [Individuare bug usando la mappa](#FindBugs)
 
 -   [DOMANDE E RISPOSTE](#QA)
 
- Per informazioni dettagliate sui comandi e le azioni che è possibile utilizzare quando si lavora con le mappe del codice, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).
+ Per informazioni dettagliate dei comandi e le azioni è possibile usare quando si lavora con le mappe codici, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).
 
 ##  <a name="MapStack"></a> Eseguire il mapping dello stack di chiamate
 
 1.  Avviare il debug. (Tastiera: **F5**)
 
-2.  Dopo che l'app passa alla modalità di interruzione o esegue una funzione, scegliere **mappa del codice**. (Tastiera: **Ctrl** + **MAIUSC** + **`**)
+2.  Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, scegli **mappa codice**. (Tastiera: **Ctrl** + **MAIUSC** + **`**)
 
      ![Scegliere la mappa del codice per avviare il mapping dello stack di chiamate](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -78,10 +78,10 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      ![Visualizzare lo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_seeundocallstack.png)
 
-     La mappa si aggiornerà automaticamente durante il debug. Vedere [aggiornare la mappa con lo stack di chiamate successivo](#UpdateMap).
+     La mappa si aggiornerà automaticamente durante il debug. Visualizzare [aggiornare la mappa con lo stack di chiamate successivo](#UpdateMap).
 
 ##  <a name="MakeNotes"></a> Aggiungere appunti sul codice
- Aggiungere commenti per tenere traccia di cosa avviene nel codice. Per aggiungere una nuova riga in un commento, premere **MAIUSC + INVIO**.
+ Aggiungere commenti per tenere traccia di ciò che avviene nel codice. Per aggiungere una nuova riga in un commento, premere **MAIUSC + INVIO**.
 
  ![Aggiungere un commento allo stack di chiamate nella mappa del codice](../debugger/media/debuggermap_addcomment.png)
 
@@ -91,7 +91,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
  ![Aggiornare la mappa del codice con lo stack di chiamate successivo](../debugger/media/debuggermap_addclearcallstack.png)
 
 ##  <a name="AddRelatedCode"></a> Aggiungere il codice correlato alla mappa
- Ora si ha una mappa - cosa successivo? Se si lavora con c# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di cosa avviene nel codice.
+ Ora hai una mappa - che cosa successivamente? Se si lavora con c# o Visual Basic, aggiungere elementi, ad esempio campi, proprietà e altri metodi, per tenere traccia di ciò che avviene nel codice.
 
  Fare doppio clic su un metodo per visualizzarne la definizione del codice o usare il menu di scelta rapida del metodo. (Tastiera: selezionare il metodo nella mappa e premere **F12**)
 
@@ -102,7 +102,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
  ![Visualizzare i campi di un metodo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
->  Per impostazione predefinita, quando si aggiungono gli elementi alla mappa si aggiungono anche i nodi di gruppo padre, ad esempio la classe, spazio dei nomi e l'assembly. Sebbene ciò sia utile, è possibile mantenere la mappa semplice disattivando questa funzionalità mediante il **Includi padri** pulsante sulla barra degli strumenti della mappa o premendo **CTRL** quando si aggiungono elementi.
+>  Per impostazione predefinita, quando si aggiungono gli elementi alla mappa si aggiungono anche i nodi di gruppo padre, ad esempio la classe, spazio dei nomi e l'assembly. Sebbene questo sia utile, è possibile mantenere la mappa semplice disattivando questa funzionalità usando il **Includi padri** pulsante sulla barra degli strumenti della mappa o premendo **CTRL** quando si aggiungono elementi.
 
  ![Campi correlati a un metodo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_showedfields.png)
 
@@ -114,8 +114,8 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
  ![Metodi che usano un campo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> Individuare bug utilizzando la mappa
- Visualizzando il codice, sarà possibile rilevare i bug più rapidamente. Si supponga, ad esempio, che si sta verificando un bug in un programma di disegno. Quando si disegna una linea e si tenta di annullare l'operazione, non accadrà nulla finché non si disegnerà un'altra riga.
+##  <a name="FindBugs"></a> Individuare bug usando la mappa
+ Visualizzando il codice, sarà possibile rilevare i bug più rapidamente. Si supponga, ad esempio, che si sta esaminando un bug in un programma di disegno. Quando si disegna una linea e si tenta di annullare l'operazione, non accadrà nulla finché non si disegnerà un'altra riga.
 
  Pertanto, impostare punti di interruzione nei metodi `clear`, `undo` e `Repaint`, avviare il debug e compilare una mappa come quella indicata di seguito:
 
@@ -135,19 +135,19 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
      ![Visualizzare il codice esterno tramite la finestra Stack di chiamate](../debugger/media/debuggermap_callstackmenu.png)
 
-     oppure disattivare **Abilita Just My Code** di Visual Studio, opzioni di debug:
+     oppure disattivare **Abilita Just My Code** nelle opzioni di debug di Visual Studio:
 
      ![Scegliere Mostra codice esterno nella finestra di dialogo Opzioni](../debugger/media/debuggermap_debugoptions.png)
 
--   **La modifica della mappa influisce sul codice?**
+-   **La modifica della mappa influisce il codice?**
 
-     La modifica della mappa non influenza in alcun modo il codice. È possibile rinominare, spostare o rimuovere qualsiasi elemento nella mappa.
+     La modifica della mappa non influenza sul codice in alcun modo. È possibile rinominare, spostare o rimuovere qualsiasi elemento nella mappa.
 
--   **Che cosa significa questo messaggio: "il diagramma può essere basato su una versione precedente del codice"?**
+-   **Che cosa significa questo messaggio: "il diagramma potrebbe essere basato su una versione precedente del codice"?**
 
      È possibile che il codice sia stato modificato dopo l'ultimo aggiornamento della mappa. Ad esempio, nel codice potrebbe non essere più disponibile una chiamata alla mappa. Chiudere il messaggio, quindi provare a ricompilare la soluzione prima di aggiornare di nuovo la mappa.
 
--   **Come controllare il layout della mappa?**
+-   **Come si controlla il layout della mappa?**
 
      Aprire il **Layout** menu sulla barra degli strumenti della mappa:
 
@@ -157,21 +157,21 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
     -   Per ridisporre la mappa il meno possibile quando si aggiungono elementi, disattivare **Layout incrementale**.
 
--   **È possibile condividere la mappa con altri?**
+-   **È possibile condividere la mappa con altri utenti?**
 
      È possibile esportare la mappa, inviarla ad altri se è installato Microsoft Outlook o salvarla nella soluzione in modo che sia possibile archiviarla nel controllo della versione di Team Foundation.
 
      ![Condividere la mappa del codice dello stack di chiamate con altri utenti](../debugger/media/debuggermap_sharewithothers.png)
 
--   **Come è possibile interrompere la mappa dall'aggiunta di nuovi stack di chiamate automaticamente?**
+-   **Come si interrompono la mappa di aggiungere automaticamente nuovi stack di chiamate?**
 
-     Scegliere ![pulsante &#45; Mostra stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl** + **MAIUSC** + **`**.
+     Scegli ![pulsante &#45; Mostra stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl** + **MAIUSC** + **`**.
 
      La mappa continuerà a evidenziare gli stack di chiamate esistenti sulla mappa durante il debug.
 
--   **Le icone degli elementi e delle frecce di significato?**
+-   **Le icone degli elementi e le frecce significato**
 
-     Per ottenere ulteriori informazioni su un elemento, spostare il puntatore del mouse su di esso e osservare la descrizione comando dell'elemento. È anche possibile esaminare il **legenda** per informazioni su cosa significa ogni icona.
+     Per ottenere altre informazioni su un elemento, spostare il puntatore del mouse su di esso ed esaminare la descrizione comando. È anche possibile esaminare i **legenda** per informazioni su cosa significa che ogni icona.
 
      ![Significato delle icone nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap_showlegend.png)
 
@@ -185,7 +185,7 @@ Creare una mappa codici per tracciare visivamente lo stack di chiamate durante i
 
 -   [Aggiungere il codice correlato alla mappa](#AddRelatedCode)
 
--   [Individuare bug utilizzando la mappa](#FindBugs)
+-   [Individuare bug usando la mappa](#FindBugs)
 
 ## <a name="see-also"></a>Vedere anche
 

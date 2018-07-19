@@ -1,7 +1,7 @@
 ---
-title: Distribuire in una cartella locale, Visual Studio | Documenti Microsoft
+title: Distribuire in una cartella locale
 ms.custom: ''
-ms.date: 05/08/2018
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,67 +12,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016538bded47a5186294c161cc7f310b26818d15
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764219"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781913"
 ---
-# <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Distribuire un'app web o .NET Core in una cartella locale utilizzando lo strumento di pubblicazione di Visual Studio
+# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Distribuire un'app in una cartella locale usando Visual Studio
 
-È possibile utilizzare il **pubblica** strumento per pubblicare l'app in una cartella locale. 
+È possibile usare la **pubblica** dello strumento per la pubblicazione di App ASP.NET, ASP.NET Core, .NET Core e Python in una cartella locale da Visual Studio. Per Node. js, sono supportati i passaggi, ma l'interfaccia utente è diversa.
 
-Questa procedura si applica a ASP.NET, ASP.NET di base, .NET Core e Python App in Visual Studio. Per Node.js, sono supportati i passaggi, ma l'interfaccia utente è diverso.
-
-## <a name="prerequisites"></a>Prerequisiti
-
-* È necessario disporre di Visual Studio 2017 installato e il. **Lo sviluppo desktop NET** carico di lavoro e il. **NET Core** carico di lavoro.
-
-    Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) per installarlo gratuitamente.
-
-## <a name="create-a-new-project"></a>Creare un nuovo progetto 
-
-1. In Visual Studio scegliere **File > Nuovo progetto**.
-
-1. Sotto **Visual c#** oppure **Visual Basic**, scegliere **.NET Core**, quindi nel riquadro centrale scegliere **applicazione Console (.NET Core)**.
-
-1. Digitare un nome come **MyLocalApp** e fare clic su **OK**.
-
-    Visual Studio crea il progetto.
+[!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 ## <a name="deploy-to-a-local-folder"></a>Distribuire in una cartella locale
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
+1. In Esplora soluzioni fare clic sul progetto e scegliere **Publish** (o utilizzare il **compilare** > **pubblica** voce di menu).
 
-    ![Scegliere Pubblica](../deployment/media/quickstart-publish.png "scegliere pubblica")
+    ![Il comando Pubblica nel menu di scelta rapida progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "scegliere pubblica")
 
-1. Se in precedenza è stato configurato alcun profilo di pubblicazione, il **pubblica** viene visualizzato il riquadro. Fare clic su **Crea nuovo profilo**.
+1. Se sono stati configurati tutti i profili di pubblicazione, il **pubblica** viene visualizzato il riquadro. Selezionare **Crea nuovo profilo**.
 
 1. Nel **selezionare una destinazione di pubblicazione** finestra di dialogo, scegliere **cartella**.
 
-    ![Scegliere cartella](../deployment/media/quickstart-publish-folder.png "scegliere cartella")
+    ![Scegliere la cartella locale come una destinazione di pubblicazione](../deployment/media/quickstart-publish-folder.png "Scegli cartella")
 
-1. Immettere un percorso o fare clic su **Sfoglia** per selezionare una cartella locale.
+1. Immettere un percorso o selezionarne **esplorare** per specificare una cartella locale.
 
-1. Fare clic su **Pubblica**.
+1. Selezionare **Pubblica**. Visual Studio compila il progetto e lo pubblica nella cartella specificata. Le proprietà del progetto **pubblica** viene visualizzato il riquadro, con un profilo il riepilogo.
 
-    Visual Studio compila il progetto e verrà pubblicato nella cartella specificata.
+    ![Riquadro delle proprietà con il riepilogo un profilo di pubblicazione](../deployment/media/quickstart-publish-folder-summary.png)
 
-    Il riquadro di pubblicazione viene illustrato un profilo di riepilogo.
+1. Per configurare le impostazioni di distribuzione, selezionare **Configure** nel profilo del riepilogo e seleziona il **impostazioni** scheda.
 
-1. Per configurare le impostazioni di distribuzione, fare clic su **impostazioni** nel profilo di riepilogo.
+    ![Impostazioni del profilo](../deployment/media/quickstart-profile-settings.png "impostazioni del profilo")
 
-    ![Impostazioni del profilo](../deployment/media/quickstart-profile-settings.png "impostazioni del profilo") 
+1. Configurare le opzioni, ad esempio se si desidera distribuire una configurazione Debug o rilascio e quindi selezionare **salvare**.
 
-1. Configurare le opzioni, ad esempio se distribuire una configurazione di Debug o Release e quindi fare clic su **salvare**.
+1. Per pubblicare di nuovo, selezionare **pubblica**.
 
-1. Per pubblicare, fare clic su **pubblica**.
-
-Distribuire i file pubblicati con il metodo desiderato. Ad esempio, è possibile includerli in un file Zip, usare un comando di copia semplice o distribuirli con qualsiasi pacchetto di installazione di propria scelta.
+Distribuire i file pubblicati con il metodo desiderato. Ad esempio, è possibile creare un pacchetto in un *zip* file, usare un comando di copia semplice o distribuirli con qualsiasi pacchetto di installazione di propria scelta.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Distribuire un'applicazione .NET Core con lo strumento di pubblicazione](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Creare un pacchetto dell'applicazione desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Distribuire .NET Framework e le applicazioni...](/dotnet/framework/deployment/)
+- (.NET) [Distribuire .NET Framework e applicazioni](/dotnet/framework/deployment/)

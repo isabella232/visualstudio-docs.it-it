@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di una Web Part per SharePoint tramite una finestra di progettazione | Documenti Microsoft'
+title: 'Procedura dettagliata: Creazione di una Web Part per SharePoint tramite una finestra di progettazione | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,165 +19,166 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edc9665882caae64e0548a00507022f32f3b2bd5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118915"
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: creazione di una web part per SharePoint tramite una finestra di progettazione
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: Creare una web part per SharePoint tramite una finestra di progettazione
 
-Se si crea una web part per un sito di SharePoint, gli utenti possono modificare direttamente il contenuto, l'aspetto e il comportamento delle pagine del sito utilizzando un browser. Questa procedura dettagliata viene illustrato come creare una web part visivamente tramite SharePoint **Web Part visiva** modello di progetto in Visual Studio.
+Se si creano web part per un sito di SharePoint, gli utenti possono modificare direttamente il contenuto, l'aspetto e comportamento delle pagine in tale sito utilizzando un browser. Questa procedura dettagliata viene illustrato come creare visivamente una web part tramite SharePoint **Web Part visiva** modello di progetto in Visual Studio.
 
-Consente di visualizzare la web part che verrà creata una visualizzazione di calendario mensile e una casella di controllo per ogni elenco di calendario nel sito. Gli utenti possono specificare quali elenchi di includere nella visualizzazione del calendario mensile selezionando le caselle di controllo calendario.
+Consente di visualizzare la web part che verrà creata una visualizzazione del calendario mensile e una casella di controllo per ogni elenco di calendario sul sito. Gli utenti possono specificare quali elenchi di calendario includere nella visualizzazione del calendario mensile selezionando le caselle di controllo.
 
 Questa procedura dettagliata illustra le attività seguenti:
 
 - Creazione di una web part tramite il **Web Part visiva** modello di progetto.
-- Progettazione della web part tramite la finestra di progettazione di Visual Web Developer in Visual Studio.
-- Aggiungere il codice per gestire gli eventi dei controlli web part.
+- Progettazione della web part utilizzando la finestra di progettazione di Visual Web Developer in Visual Studio.
+- Aggiunta di codice per gestire gli eventi dei controlli nella web part.
 - Test della web part in SharePoint.
 
     > [!NOTE]
-    > Il computer potrebbe essere diversi nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente per Visual Studio nelle istruzioni seguenti. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+    > Computer in uso potrebbe mostrare nomi diversi o posizioni di alcuni elementi dell'interfaccia utente per Visual Studio nelle istruzioni seguenti. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
-- Le edizioni supportate di Windows e SharePoint. Vedere [requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Edizioni supportate di Windows e SharePoint. Visualizzare [i requisiti per lo sviluppo di soluzioni SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
 
-## <a name="creating-a-web-part-project"></a>Creazione di un progetto di web part
+## <a name="create-a-web-part-project"></a>Creare un progetto web part
 
-Creare innanzitutto un progetto di web part tramite il **Web Part visiva** modello di progetto.
+In primo luogo, creare un progetto web part tramite il **Web Part visiva** modello di progetto.
 
-1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilizzando il **Esegui come amministratore** opzione.
+1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando il **Esegui come amministratore** opzione.
 
-2. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.
+2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-3. Nel **nuovo progetto** in presenza di una finestra di dialogo **Visual c#** o **Visual Basic**, espandere **Office/SharePoint**, quindi scegliere il  **Le soluzioni SharePoint** categoria.
+3. Nel **nuovo progetto** in presenza di una finestra di dialogo **Visual c#** oppure **Visual Basic**, espandere **Office/SharePoint**e quindi scegliere il  **Soluzioni SharePoint** categoria.
 
 4. Nell'elenco dei modelli, scegliere il **SharePoint 2013 - Web Part visiva** modello, quindi scegliere il **OK** pulsante.
 
-     Il **Personalizzazione guidata SharePoint** viene visualizzato. Utilizzare questa procedura guidata, è possibile specificare il sito che si utilizzerà per eseguire il debug del progetto e il livello di attendibilità della soluzione.
+     Il **Personalizzazione guidata SharePoint** viene visualizzata. Usando questa procedura guidata, è possibile specificare il sito che verrà usato per eseguire il debug del progetto e il livello di attendibilità della soluzione.
 
-5. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** , scegliere il **Distribuisci come soluzione farm** pulsante di opzione.
+5. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.
 
 6. Scegliere il **fine** pulsante per accettare il sito di SharePoint locale predefinito.
 
-## <a name="designing-the-web-part"></a>Progettazione di web part
+## <a name="designing-the-web-part"></a>Progettazione della web part
 
-Progettare la web part aggiungendo i controlli dal **della casella degli strumenti** nell'area della finestra di progettazione di Visual Web Developer.
+Progettare la web part aggiungendo i controlli dal **casella degli strumenti** nell'area della finestra di progettazione di Visual Web Developer.
 
-1. Nella finestra di progettazione di Visual Web Developer scegliere il **progettazione** tab per passare alla visualizzazione progettazione.
+1. Nella finestra di progettazione in Visual Web Developer, scegliere il **progettazione** pressione di tab per passare alla visualizzazione progettazione.
 
-2. Sulla barra dei menu scegliere **Visualizza**, **Casella degli strumenti**.
+2. Nella barra dei menu, scegliere **View** > **casella degli strumenti**.
 
-3. Nel **Standard** nodo del **della casella degli strumenti**, scegliere il **CheckBoxList** controllare e quindi effettuare una delle operazioni seguenti:
+3. Nel **Standard** nodo delle **della casella degli strumenti**, scegliere il **CheckBoxList** controllare e quindi effettuare una delle operazioni seguenti:
 
-    - Aprire il menu di scelta rapida per il **CheckBoxList** di controllo, scegliere **copia**, aprire il menu di scelta rapida per la prima riga nella finestra di progettazione e quindi scegliere **Incolla**.
+    - Aprire il menu di scelta rapida per il **CheckBoxList** controllare, scegliere **copia**, aprire il menu di scelta rapida per la prima riga nella finestra di progettazione e quindi scegliere **Incolla**.
 
-    - Trascinare il **CheckBoxList** controllo il **della casella degli strumenti**e connettere il controllo per la prima riga nella finestra di progettazione.
+    - Trascinare il **CheckBoxList** controllare dalle **della casella degli strumenti**e connettere il controllo alla prima riga nella finestra di progettazione.
 
 4. Ripetere il passaggio precedente, ma spostare un pulsante alla riga successiva della finestra di progettazione.
 
 5. Nella finestra di progettazione, scegliere il **Button1** pulsante.
 
-6. Nella barra dei menu, scegliere **vista**, **finestra proprietà**.
+6. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
 
      Il **proprietà** verrà visualizzata la finestra.
 
-7. Nel **testo** proprietà del pulsante, immettere **aggiornamento**.
+7. Nel **testo** proprietà del pulsante, immettere **Update**.
 
-## <a name="handling-the-events-of-controls-on-the-web-part"></a>Gestione degli eventi dei controlli web part
+## <a name="handling-the-events-of-controls-on-the-web-part"></a>Gestione degli eventi dei controlli nella web part
 
-Aggiungere il codice che consente all'utente di aggiungere calendari alla visualizzazione del calendario master.
+Aggiungere il codice che consente all'utente di includere calendari alla visualizzazione del calendario master.
 
 1. Eseguire una delle procedure seguenti:
 
-    - Nella finestra di progettazione, fare doppio clic su di **aggiornamento** pulsante.
+    - Nella finestra di progettazione, fare doppio clic il **Update** pulsante.
 
-    - Nel **proprietà** finestra per il **aggiornamento** pulsante, scegliere il **eventi** pulsante. Nel **fare clic su** proprietà, immettere **Button1_Click**e quindi premere INVIO.
+    - Nel **delle proprietà** finestra per il **Update** pulsante la **eventi** pulsante. Nel **fare clic su** proprietà, immettere **Button1_Click**e quindi premere INVIO.
 
-     Il file di codice del controllo utente verrà aperto nell'Editor di codice e `Button1_Click` gestore eventi viene visualizzato. Successivamente, verrà aggiunto il codice a questo gestore eventi.
+     Il file di codice del controllo utente verrà aperto nell'Editor di codice e `Button1_Click` gestore eventi viene visualizzato. In un secondo momento, si aggiungerà codice a questo gestore eventi.
 
 2. Aggiungere le istruzioni seguenti all'inizio del file di codice del controllo utente.
 
      [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
 
-3. Aggiungere la seguente riga di codice per la `VisualWebPart1` classe. Questo codice dichiara un controllo calendario mensile.
+3. Aggiungere la seguente riga di codice per il `VisualWebPart1` classe. Questo codice dichiara un controllo di visualizzazione del calendario mensile.
 
      [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]
      [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]
 
-4. Sostituire il `Page_Load` metodo la `VisualWebPart1` classe con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
+4. Sostituire il `Page_Load` metodo di `VisualWebPart1` classe con il codice seguente. Mediante il codice vengono effettuate le seguenti attività:
 
-    - Aggiunge una visualizzazione di calendario mensile per il controllo utente.
+    - Aggiunge una visualizzazione del calendario mensile al controllo utente.
 
-    - Aggiunge una casella di controllo per ogni elenco calendario nel sito.
+    - Aggiunge una casella di controllo per ogni elenco di calendario sul sito.
 
     - Specifica un modello per ogni tipo di elemento che viene visualizzato nella visualizzazione del calendario.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]
 
-5. Sostituire il `Button1_Click` metodo la `VisualWebPart1` classe con il codice seguente. Questo codice aggiunge gli elementi da ogni calendario selezionato alla visualizzazione del calendario master.
+5. Sostituire il `Button1_Click` metodo di `VisualWebPart1` classe con il codice seguente. Questo codice aggiunge elementi da ogni calendario selezionato alla visualizzazione del calendario master.
 
      [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
      [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]
 
-## <a name="testing-the-web-part"></a>Test della web part
+## <a name="test-the-web-part"></a>Testare la web part
 
-Quando si esegue il progetto, viene aperto il sito di SharePoint. La web part viene automaticamente aggiunto alla raccolta Web Part in SharePoint. Per questo progetto di test, verranno eseguite le attività seguenti:
+Quando si esegue il progetto, viene aperto il sito di SharePoint. La web part viene automaticamente aggiunto alla raccolta Web Part in SharePoint. Per questo progetto di test, si eseguirà le attività seguenti:
 
-- Aggiungere un evento a ognuno dei due elenchi di calendario separato.
+- Aggiungere un evento a ognuno dei due elenchi di calendario distinti.
 - Aggiungere la web part a una pagina web part.
 - Specificare gli elenchi da includere nella visualizzazione del calendario mensile.
 
-### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Per aggiungere eventi agli elenchi di calendario nel sito
+### <a name="to-add-events-to-calendar-lists-on-the-site"></a>Per aggiungere eventi agli elenchi di calendario sul sito
 
-1. In Visual Studio, premere il tasto F5.
+1. In Visual Studio, scegliere il **F5** chiave.
 
-     Apre il sito di SharePoint e [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] in questa pagina è visualizzato sulla barra Avvio veloce.
+     Viene aperto il sito di SharePoint e il [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] barra Avvio veloce viene visualizzata nella pagina.
 
-2. Sulla barra Avvio veloce in **Elenca**, scegliere il **calendario** collegamento.
+2. Nella barra Avvio veloce, sotto **sono elencati**, scegliere il **calendario** collegamento.
 
      Il **calendario** verrà visualizzata la pagina.
 
-     Se si alcun collegamento di calendario viene visualizzato sulla barra Avvio veloce, scegliere il **contenuto del sito** collegamento. Se la pagina di contenuto del sito non è presente un **calendario** elemento, crearne uno.
+     Se è alcun collegamento di calendario non visualizzato sulla barra Avvio veloce, scegliere il **contenuti del sito** collegamento. Se non viene visualizzata la pagina di contenuto del sito una **calendario** di elemento, crearne uno.
 
-3. Nella pagina del calendario, scegliere un giorno e quindi scegliere il **Aggiungi** collegamento nel giorno selezionato per aggiungere un evento.
+3. Nella pagina del calendario, scegliere un giorno e quindi scegliere il **Add** collegamento nel giorno selezionato per aggiungere un evento.
 
-4. Nel **titolo** immettere **evento nel calendario predefinito**, quindi scegliere il **salvare** pulsante.
+4. Nel **Title** casella, immettere **evento nel calendario predefinito**e quindi scegliere il **Salva** pulsante.
 
-5. Scegliere il **contenuto del sito** collegamento e quindi scegliere il **aggiungere un'app** riquadro.
+5. Scegliere il **contenuti del sito** collegamento e quindi scegliere il **Aggiungi un'app** riquadro.
 
-6. Nel **crea** pagina, scegliere il **calendario** tipo, denominare il calendario e quindi scegliere il **crea** pulsante.
+6. Nel **Create** pagina, scegliere il **calendario** digitare, denominare il calendario e quindi scegliere il **Create** pulsante.
 
-7. Aggiungere un evento per il nuovo calendario, assegnare il nome dell'evento **evento nel calendario personalizzato**, quindi scegliere il **salvare** pulsante.
+7. Aggiungere un evento per il nuovo calendario, denominare l'evento **evento nel calendario personalizzato**, quindi scegliere il **salvare** pulsante.
 
 ### <a name="to-add-the-web-part-to-a-web-part-page"></a>Per aggiungere la web part a una pagina web part
 
-1. Nel **contenuto del sito** pagina, aprire il **pagine del sito** cartella.
+1. Nel **contenuti del sito** pagina, aprire il **pagine del sito** cartella.
 
-2. Sulla barra multifunzione, scegliere il **file** scheda, aprire il **nuovo documento** menu e quindi scegliere il **pagina Web Part** comando.
+2. Sulla barra multifunzione scegliere la **file** scheda, aprire il **nuovo documento** dal menu e quindi scegliere il **Web Part Page** comando.
 
-3. Nel **nuova pagina Web Part** pagina, denominare la pagina **SampleWebPartPage.aspx**, quindi scegliere il **crea** pulsante.
+3. Nel **nuova pagina Web Part** pagina, denominare la pagina **SampleWebPartPage. aspx**e quindi scegliere il **Create** pulsante.
 
-     Verrà visualizzata la pagina web part.
+     Viene visualizzata la pagina web part.
 
-4. Nell'area superiore della pagina web part, scegliere il **inserire** scheda e quindi scegliere il **Web Part** pulsante.
+4. Nella parte superiore della pagina web part, scegliere il **inserire** scheda e quindi scegliere il **Web Part** pulsante.
 
-5. Scegliere il **personalizzato** cartella, scegliere il **VisualWebPart1** web part e quindi scegliere il **Aggiungi** pulsante.
+5. Scegliere il **Custom** cartella, scegliere il **VisualWebPart1** web part e quindi scegliere il **Add** pulsante.
 
-     La web part verrà visualizzata la pagina. I controlli seguenti vengono visualizzati nella web part:
+     La web part viene visualizzata nella pagina. Nella web part sono visualizzati i controlli seguenti:
 
-    - Una visualizzazione di calendario mensile.
+    - Una visualizzazione del calendario mensile.
 
-    - Un **aggiornamento** pulsante.
+    - Un' **Update** pulsante.
 
     - Oggetto **calendario** casella di controllo.
 
@@ -185,13 +186,12 @@ Quando si esegue il progetto, viene aperto il sito di SharePoint. La web part vi
 
 ### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>Per specificare gli elenchi da includere nella visualizzazione del calendario mensile
 
-Nella web part, specificare calendari che si desidera includere nella visualizzazione del calendario mensile e quindi scegliere il **aggiornamento** pulsante.
+Nella web part, specificare i calendari che si desidera includere nella visualizzazione del calendario mensile e quindi scegliere il **Update** pulsante.
 
 Gli eventi da tutti i calendari specificati vengono visualizzati nella visualizzazione del calendario mensile.
 
 ## <a name="see-also"></a>Vedere anche
 
 [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Procedura: Creare una web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Procedura: Creare una web part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[Procedura dettagliata: creazione di una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[Procedura: creare una web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Procedura dettagliata: Creare una web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

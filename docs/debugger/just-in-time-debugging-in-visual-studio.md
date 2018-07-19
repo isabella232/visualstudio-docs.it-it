@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: rispondere per il debug Just-In-Time | Documenti Microsoft'
+title: 'Procedura: rispondere per il debug Just-In-Time | Microsoft Docs'
 ms.custom: ''
 ms.date: 05/23/17
 ms.technology: vs-ide-debug
@@ -13,41 +13,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 21301bd7fce15152c8beb825f749b3d05fd0837a
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454662"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281498"
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Procedura: rispondere per il debug Just-In-Time
 
-Le azioni necessarie quando viene visualizzato Just-in-Time nella finestra di dialogo debugger variano a seconda che si sta tentando di effettuare:
+L'attività da eseguire quando viene visualizzato il Just-in-Time nella finestra di dialogo debugger dipendono da ciò che si sta tentando di eseguire:
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Se si desidera risolvere o eseguire il debug dell'errore (gli utenti di Visual Studio)
+#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Se si desidera risolvere o eseguire il debug dell'errore (utenti di Visual Studio)
 
-- È necessario disporre di [installato Visual Studio](http://www.visualstudio.com) per visualizzare le informazioni dettagliate sull'errore e provare a eseguire il debug. Per ulteriori informazioni, vedere [eseguire il Debug utilizzando il Debugger JIT](../debugger/debug-using-the-just-in-time-debugger.md). Se non è possibile risolvere l'errore e correggere l'app, contattare il proprietario dell'app per risolvere l'errore.
+- È necessario disporre [installato Visual Studio](http://visualstudio.microsoft.com) per visualizzare le informazioni dettagliate sull'errore e provare a eseguirne il debug. Per altre informazioni, vedere [eseguire il Debug con il Debugger JIT](../debugger/debug-using-the-just-in-time-debugger.md). Se è Impossibile risolvere l'errore e correggere l'app, contattare il proprietario dell'app per risolvere l'errore.
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Se si desidera impedire la visualizzazione nella finestra di dialogo Debugger JIT
+#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Se si desidera evitare che la finestra di dialogo Debugger JIT
 
-È possibile eseguire i passaggi per impedire Just-in-Time la finestra di dialogo Debugger venga visualizzato. Se l'applicazione gestisce l'errore, è possibile eseguire l'applicazione normalmente.
+È possibile intervenire per evitare il Just-in-Time finestra di dialogo Debugger venga visualizzato. Se l'app gestisce l'errore, è possibile eseguire normalmente l'app.
 
-1. (App web) Se si sta tentando di eseguire un'applicazione web, è possibile disabilitare il debug degli script.
+1. (App web) Se si sta provando a eseguire un'app web, è possibile disabilitare il debug degli script.
 
-    Per Internet Explorer o Microsoft Edge, disabilitare il debug degli script nella finestra di dialogo Opzioni Internet. È possibile accedere a queste impostazioni dal **Pannello di controllo** > **rete e Internet** > **Opzioni Internet** (passaggi esatti dipendono le versione di Windows e il browser).
+    Per Internet Explorer o Microsoft Edge, disabilitare il debug degli script nella finestra di dialogo Opzioni Internet. È possibile accedere a queste impostazioni dal **Pannello di controllo** > **rete e Internet** > **Opzioni Internet** (i passaggi esatti dipendono le versione di Windows e browser).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
-    Riaprire la pagina web in cui è possibile trovare l'errore. Se si modifica questa impostazione non risolve il problema, contattare il proprietario dell'app web per risolvere il problema.
+    Riaprire la pagina web in cui è stato trovato l'errore. Se la modifica di questa impostazione non risolve il problema, contattare il proprietario dell'app web per risolvere il problema.
 
-3. (Gli utenti di visual Studio) Se si è installato Visual Studio (o se è stato installato in precedenza e rimosso), [Just-in-Time di disabilitare il debug](../debugger/debug-using-the-just-in-time-debugger.md) e provare a eseguire nuovamente l'app.
+3. (Utenti di visual Studio) Se si è installato Visual Studio (o se si dispone di installato in precedenza e averla rimossa), [Just-in-Time di disabilitare il debug](../debugger/debug-using-the-just-in-time-debugger.md) e provare a eseguire nuovamente l'app.
 
     > [!IMPORTANT]
-    > Se si disabilita Just-in-Time di debug e l'applicazione rileva un'eccezione non gestita (errore), verrà visualizzato una finestra di dialogo di errore standard invece o l'app verrà arrestato in modo anomalo o un blocco. L'app non verrà eseguita in genere finché non viene risolto l'errore (per utente o il proprietario dell'app).
+    > Se si disabilita Just-in-Time di debug e l'app rileva un'eccezione non gestita (errore), possano vedere invece una finestra di dialogo di errore standard o l'app verrà arrestarsi in modo anomalo o un blocco. L'app non verrà eseguite normalmente fino a quando non viene risolto l'errore (per utente o il proprietario dell'app).
 
-2. (ASP.NET e IIS) Se si ospita un'applicazione Web ASP.NET in IIS, disabilitare il debug sul lato server.
+2. (ASP.NET e IIS) Se si ospita un'app Web ASP.NET in IIS, disabilitare il debug sul lato server.
 
-    In Gestione IIS, fare doppio clic sul nodo del server e scegliere **passa a visualizzazione funzionalità**. Nella sezione ASP.NET scegliere **compilazione .NET** e assicurarsi di scegliere **False** come il comportamento di Debug (i passaggi sono diversi nelle versioni precedenti di IIS).
-  
-## <a name="see-also"></a>Vedere anche    
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)   
+    In Gestione IIS, fare clic sul nodo del server e scegliere **passa a visualizzazione funzionalità**. Sotto la sezione ASP.NET, scegliere **compilazione con .NET** e quindi assicurarsi che si sceglie **False** come il comportamento di Debug (i passaggi sono diversi nelle versioni precedenti di IIS).
+
+## <a name="see-also"></a>Vedere anche
+ [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)

@@ -1,5 +1,5 @@
 ---
-title: Limitazioni del debug di Script | Documenti Microsoft
+title: Limitazioni del debug degli Script | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6679e781e564a58d6a98b7d0190f2f2b4e9fa74
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9c85f990d08a41bd4b4ee25190d0c5b6bd99d340
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476835"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058022"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitazioni del debug di script
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supporta il debug di script lato client, soggetto alle limitazioni trattate in questo argomento.  
@@ -45,7 +45,7 @@ ms.locfileid: "31476835"
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>Mapping dei punti di interruzione e righe duplicate  
  Per trovare la posizione corrispondente negli script lato server e lato client, l'algoritmo di mapping dei punti di interruzione esamina il codice su ogni riga. L'algoritmo presuppone che ogni riga sia univoca. Se due o più righe contengono lo stesso codice e si imposta un punto di interruzione su una delle righe duplicate, l'algoritmo di mapping dei punti di interruzione potrebbe selezionare il duplicato errato nel file lato client. Per evitare questo problema, aggiungere un commento alla riga in cui è stato impostato il punto di interruzione. Ad esempio:  
   
-```  
+```csharp
 i++ ;  
 i ++; // I added a comment, so this line is now unique  
 i ++;  

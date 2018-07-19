@@ -1,5 +1,5 @@
 ---
-title: Elemento Folder (modelli di progetto di Visual Studio) | Documenti Microsoft
+title: Elemento Folder (modelli di progetto di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132815"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234923"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelli di progetto Visual Studio)
-Specifica una cartella che verrà aggiunto al progetto.  
+Specifica una cartella in cui verrà aggiunto al progetto.  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -47,7 +47,7 @@ Specifica una cartella che verrà aggiunto al progetto.
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Name`|Attributo obbligatorio.<br /><br /> Il nome della cartella del progetto.|  
-|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per utilizzare la sostituzione dei parametri per creare un nome di cartella o una cartella con una stringa internazionale di denominazione che non può essere utilizzato direttamente nel file ZIP.|  
+|`TargetFolderName`|Attributo facoltativo.<br /><br /> Specifica il nome da assegnare alla cartella quando viene creato un progetto dal modello. Questo attributo è utile per l'uso di sostituzione dei parametri per creare un nome di cartella o una cartella con una stringa internazionale di denominazione che non è possibile usare direttamente nel file con estensione zip.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -60,14 +60,14 @@ Specifica una cartella che verrà aggiunto al progetto.
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo di [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
+|[Progetto](../extensibility/project-element-visual-studio-templates.md)|Elemento figlio facoltativo degli [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Note  
  `Folder` è un elemento figlio facoltativo di `Project`.  
   
- Per organizzare gli elementi di progetto in cartelle in un modello, è possibile utilizzare uno dei metodi seguenti per:  
+ Per organizzare gli elementi del progetto in cartelle in un modello, è possibile usare uno qualsiasi dei metodi seguenti:  
   
--   Includere le cartelle nel file zip del modello, quindi aggiungerli al progetto nel file vstemplate, specificando il percorso del file nel `ProjectItem` elementi, senza alcun `Folder` elementi. Questo è il metodo consigliato. Ad esempio:  
+-   Includere le cartelle nel file zip del modello e aggiungerli al progetto nel file vstemplate, specificando il percorso del file nei `ProjectItem` elementi, con nessuna `Folder` elementi. Questo è il metodo consigliato. Ad esempio:  
   
      `...`  
   
@@ -77,7 +77,7 @@ Specifica una cartella che verrà aggiunto al progetto.
   
      `...`  
   
--   Includere le cartelle nel file zip del modello, quindi aggiungerli al progetto nel file con estensione vstemplate `Folder` elementi. Ad esempio:  
+-   Includere le cartelle nel file zip del modello e aggiungerli al progetto nel file con estensione vstemplate con `Folder` elementi. Ad esempio:  
   
      `...`  
   
@@ -91,7 +91,7 @@ Specifica una cartella che verrà aggiunto al progetto.
   
      `...`  
   
--   Non includere le cartelle nel file zip del modello, ma è aggiungere cartelle utilizzando il `TargetFileName` attributo del `ProjectItem` elemento. Ad esempio:  
+-   Non includere le cartelle nel file zip del modello, ma aggiungere cartelle utilizzando il `TargetFileName` attributo del `ProjectItem` elemento. Ad esempio:  
   
      `...`  
   

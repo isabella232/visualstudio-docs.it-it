@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare un pacchetto di soluzione SharePoint tramite le attività di MSBuild | Documenti Microsoft'
+title: 'Procedura: creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118856"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: Creare un pacchetto della soluzione SharePoint tramite le attività MSBuild
-  È possibile compilare, pulire e convalidare un pacchetto di SharePoint (con estensione wsp), usare le attività di MSBuild dalla riga di comando in un computer di sviluppo. È anche possibile utilizzare questi comandi per automatizzare il processo di compilazione tramite Team Foundation Server in un computer di compilazione.  
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild
+  È possibile compilare, pulire e convalidare un pacchetto di SharePoint (*wsp*) usando le attività della riga di comando di MSBuild in un computer di sviluppo. È anche possibile usare questi comandi per automatizzare il processo di compilazione mediante Team Foundation Server in un computer di compilazione.  
   
-## <a name="building-a-sharepoint-package"></a>Compilazione di un pacchetto di SharePoint  
+## <a name="build-a-sharepoint-package"></a>Creare un pacchetto di SharePoint  
   
-#### <a name="to-build-a-sharepoint-package"></a>Per creare un pacchetto di SharePoint  
+#### <a name="to-build-a-sharepoint-package"></a>Per compilare un pacchetto di SharePoint  
   
-1.  Di Windows **avviare** menu, scegliere **tutti i programmi**, **Accessori**, **prompt dei comandi**.  
+1.  Nella finestra di Windows **avviare** menu, scegliere **tutti i programmi** > **Accessori** > **prompt dei comandi**.  
   
 2.  Passare alla directory in cui si trova il progetto SharePoint.  
   
@@ -40,14 +41,14 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:Package ProjectFileName  
     ```  
   
-     Ad esempio, è possibile eseguire uno dei comandi seguenti per creare un progetto SharePoint denominato ListDefinition1 il pacchetto.  
+     Ad esempio, è possibile eseguire uno dei comandi seguenti per creare un progetto di SharePoint denominato ListDefinition1 il pacchetto.  
   
     ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
   
-## <a name="cleaning-a-sharepoint-package"></a>La pulizia di un pacchetto di SharePoint  
+## <a name="clean-a-sharepoint-package"></a>Eliminare un pacchetto di SharePoint  
   
 #### <a name="to-clean-a-sharepoint-package"></a>Per eliminare un pacchetto di SharePoint  
   
@@ -61,14 +62,14 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
-     Ad esempio, è possibile eseguire uno dei seguenti comandi per eliminare un progetto SharePoint denominato ListDefinition1.  
+     Ad esempio, è possibile eseguire uno dei comandi seguenti per eliminare un progetto di SharePoint denominato ListDefinition1.  
   
     ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
   
-## <a name="validating-a-sharepoint-package"></a>Convalida di un pacchetto di SharePoint  
+## <a name="validate-a-sharepoint-package"></a>Convalidare un pacchetto di SharePoint  
   
 #### <a name="to-validate-a-sharepoint-package"></a>Per convalidare un pacchetto di SharePoint  
   
@@ -82,14 +83,14 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
-     Ad esempio, è possibile eseguire uno dei seguenti comandi per la convalida di un progetto SharePoint denominato ListDefinition1.  
+     Ad esempio, è possibile eseguire uno dei comandi seguenti per convalidare un progetto di SharePoint denominato ListDefinition1.  
   
     ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
   
-## <a name="setting-properties-in-a-sharepoint-package"></a>Impostazione delle proprietà in un pacchetto di SharePoint  
+## <a name="set-properties-in-a-sharepoint-package"></a>Impostare le proprietà in un pacchetto di SharePoint  
   
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Per impostare una proprietà in un pacchetto di SharePoint  
   
@@ -109,9 +110,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /property:WarningLevel = 2  
     ```  
   
-## <a name="see-also"></a>Vedere anche  
- [Creazione di funzionalità SharePoint](../sharepoint/creating-sharepoint-features.md)   
+## <a name="see-also"></a>Vedere anche
+ [Creare funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Procedura: personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Procedura: Aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
-  
+ [Procedura: aggiungere e rimuovere elementi alle funzionalità SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

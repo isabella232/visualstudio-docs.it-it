@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aggiungere forme a un documento di Visio | Documenti Microsoft'
+title: 'Procedura: a livello di codice aggiungere forme a un documento di Visio'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cc4369977e1989960fe9448d4dd7d56e67ed7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32fc1b61505711cbcf353819372bcd1452bf3716
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256669"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procedura: Aggiungere forme a un documento di Visio a livello di codice
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procedura: a livello di codice aggiungere forme a un documento di Visio
   È possibile aggiungere forme a un documento di Microsoft Office Visio recuperando i master da uno stencil e rilasciando le forme nella pagina attiva.  
   
  Per altre informazioni, vedere la documentazione di riferimento di VBA per il metodo [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) , la proprietà [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) e il metodo [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) .  
   
-## <a name="adding-shapes-to-a-visio-document"></a>Aggiunta di forme a un documento di Visio  
+## <a name="add-shapes-to-a-visio-document"></a>Aggiungere forme a un documento di Visio  
   
-#### <a name="to-add-shapes-to-a-visio-document"></a>Per aggiungere forme a un documento di Visio  
+### <a name="to-add-shapes-to-a-visio-document"></a>Per aggiungere forme a un documento di Visio  
   
 -   Con un documento attivo, recuperare i master dalla raccolta Documents.Masters e rilasciare le forme nel documento attivo. È possibile recuperare un master usando l'indice o il nome del master.  
   
@@ -40,8 +41,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vedere anche  
  [Soluzioni Visio](../vsto/visio-solutions.md)   
- [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)   
- [Utilizzo delle forme di Visio](../vsto/working-with-visio-shapes.md)   
- [Procedura: Copiare e incollare forme in un documento di Visio a livello di codice](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Panoramica del modello a oggetti Visio](../vsto/visio-object-model-overview.md)   
+ [Lavorare con le forme di Visio](../vsto/working-with-visio-shapes.md)   
+ [Procedura: copiare e incollare forme in un documento di Visio a livello di codice](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

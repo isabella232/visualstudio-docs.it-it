@@ -1,5 +1,5 @@
 ---
-title: Hook di allocazione e allocazioni di memoria di runtime C | Documenti Microsoft
+title: Hook di allocazione e allocazioni di memoria di runtime C | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -22,24 +22,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0d4a14ff8df32ea783f74bd911ba97fa179563
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7e4c631b72ae9b12f77daf2ddd49919651c0b3e5
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458073"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433106"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Hook di allocazione e allocazioni di memoria di runtime C
-Una restrizione molto importante che riguarda le funzioni hook di allocazione è che esse devono esplicitamente ignorare i blocchi `_CRT_BLOCK` (le allocazioni di memoria effettuate internamente dalle funzioni dalla libreria di runtime del linguaggio C) se tali blocchi effettuano chiamate a funzioni della libreria di runtime del linguaggio C che allocano memoria interna. È possibile far sì che i blocchi `_CRT_BLOCK` vengano ignorati includendo, all'inizio della funzione hook di allocazione, un codice del seguente tipo:  
+Una restrizione molto importante per le funzioni di hook di allocazione è che esse devono esplicitamente ignorare `_CRT_BLOCK` blocchi. Questi blocchi sono le allocazioni di memoria effettuate internamente dalle funzioni della libreria di runtime C se vengono effettuate chiamate alle funzioni della libreria di runtime C che allocano memoria interna. È possibile ignorare `_CRT_BLOCK` funzione hook di blocchi, includendo il codice seguenti all'inizio il raggiungimento dell'allocazione:  
   
-```  
+```cpp
 if ( nBlockUse == _CRT_BLOCK )  
     return( TRUE );  
 ```  
   
- Se la funzione hook di allocazione non ignora i blocchi `_CRT_BLOCK`, qualsiasi funzione della libreria di runtime del linguaggio C chiamata nella funzione hook rischia di intrappolare il programma in un ciclo senza termine. Ad esempio, `printf` crea un'allocazione interna. Se il codice hook chiama `printf`, l'allocazione risulta genererà la funzione hook chiamato nuovamente, verrà chiamato **printf** nuovamente, e così via fino a quando non causa un overflow dello stack. Se è necessario segnalare le operazioni di allocazione `_CRT_BLOCK`, un modo per ovviare a questa limitazione consiste nell'utilizzare funzioni API Windows, anziché funzioni di runtime del linguaggio C, per la formattazione e l'output. Dal momento che le API Windows non utilizzano l'heap della libreria di runtime del linguaggio C, esse non bloccheranno la funzione hook di allocazione in un ciclo senza termine.  
+ Se la funzione di hook di allocazione non ignora `_CRT_BLOCK` si blocca, quindi qualsiasi funzione di libreria run-time C chiamata nella funzione hook rischia di intrappolare il programma in un ciclo infinito. Ad esempio, `printf` crea un'allocazione interna. Se il codice hook chiama `printf`, quindi l'allocazione effettuata farà sì che l'hook venga nuovamente chiamata che chiamerà **printf** anche in questo caso, e così via, fino all'overflow dello stack. Se è necessario segnalare le operazioni di allocazione `_CRT_BLOCK`, un modo per ovviare a questa limitazione consiste nell'utilizzare funzioni API Windows, anziché funzioni di runtime del linguaggio C, per la formattazione e l'output. Poiché le API di Windows non usa l'heap della libreria run-time C, essi non intercettare l'hook di allocazione in un ciclo infinito.  
   
- Se si esaminano i file di origine della libreria run-time, si noterà che l'allocazione predefinita funzione hook, **CrtDefaultAllocHook** (che restituisce semplicemente **TRUE**), si trova in un file separato propri, DBGHOOK. C. Se si desidera l'hook di allocazione di essere chiamata anche per le allocazioni eseguite dal codice di avvio in fase di esecuzione che viene eseguito prima dell'applicazione **principale** funzione, è possibile sostituire questa funzione predefinita con uno proprio, anziché utilizzando [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
+ Se si esaminano i file di origine della libreria run-time, si noterà che l'allocazione predefinita funzione hook, **CrtDefaultAllocHook** (che restituisce semplicemente **TRUE**), si trova in un file separato proprio, DBGHOOK. C. Se si desidera che l'hook di allocazione venga chiamato anche per le allocazioni effettuate dal codice di avvio in fase di esecuzione che viene eseguito prima dell'applicazione **principale** (funzione), è possibile sostituire questa funzione predefinita con uno personalizzato, invece di usando [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)   
