@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255145"
 ---
 # <a name="profiling-tools-apis"></a>API per strumenti di profilatura
 È possibile inserire i metodi gestiti o nativi delle API degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per controllare la raccolta di dati in un'esecuzione della profilatura. Questa sezione descrive i metodi delle API e come usarli.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)  
  Descrive i metodi degli strumenti di profilatura C++.  
   
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/19/2018
  Informazioni su come usare i metodi degli strumenti di profilatura .NET in questo esempio completo.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Controlling Data Collection](../profiling/controlling-data-collection.md) (Controllo della raccolta di dati)  
+ [Controllare la raccolta dati](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplora prestazioni](../profiling/performance-explorer.md)

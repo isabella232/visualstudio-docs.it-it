@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751689"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845493"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
@@ -32,7 +32,7 @@ In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL,
 
     3.  Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **<Edit>**:
 
-        |||
+        |Directory|Proprietà|
         |-|-|
         |**Directory di inclusione**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Directory delle librerie**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -67,7 +67,7 @@ Usare i metodi statici nella classe [Assert](microsoft-visualstudio-testtools-cp
 
  Per usare il tratto definito negli unit test:
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

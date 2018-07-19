@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844303"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -35,8 +36,8 @@ Ecco alcuni esempi di topologie comuni di ambienti lab:
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
 |![Ambiente lab client-server](../media/topology_clientserver.png)| Questo ambiente lab ha una *topologia client/server*, spesso usata per testare un'applicazione dotata di componenti server e client. In una topologia client/server tutti i computer client e server usati per testare l’applicazione si trovano nell’ambiente lab. Quando si usa questa topologia, è possibile raccogliere dati di test da ogni computer che incide sui test.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![icona della telecamera per un video](../../install/media/video-icon.png)  |    [Guardare un video](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sulla gestione degli ambienti lab per l'esecuzione di test. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Usare il cloud con Compilazione e versione di Team Services o Team Foundation Server

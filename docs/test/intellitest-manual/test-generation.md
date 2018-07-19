@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815022"
 ---
 # <a name="test-generation"></a>Generazione di test
 
@@ -27,7 +28,7 @@ Nel testing unità tradizionale un test è costituito da diverse operazioni:
 
 Di seguito è riportata una struttura di test di esempio:
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ Gli *unit test con parametri* sono test che accettano parametri. A differenza de
 
 Gli unit test con parametri vengono definiti usando l'attributo personalizzato [PexMethod](attribute-glossary.md#pexmethod) in modo simile a MSTest (o NUnit, xUnit). Sono metodi di istanza raggruppati logicamente in classi contrassegnate con [PexClass](attribute-glossary.md#pexclass). L'esempio seguente illustra un unit test con parametri semplice archiviato nella classe **MyPexTest**:
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 dove **ReplaceFirstChar** è un metodo che sostituisce il primo carattere di una stringa:
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 Da questo test IntelliTest può automaticamente [generare gli input](input-generation.md) per un unit test con parametri che copre tutti i percorsi di esecuzione del codice testato. Ogni input che riguarda un percorso di esecuzione diverso viene "serializzato" come unit test:
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 Gli unit test con parametri possono essere metodi generici. In questo caso l'utente deve specificare i tipi usati per creare un'istanza del metodo con [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest offre numerosi attributi di convalida per consentire la valutazione 
 
 Le eccezioni previste generano test case negativi con l'annotazione appropriata, ad esempio **ExpectedException(typeof(*xxx*))**, mentre le eccezioni impreviste generano test case non superati.
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ I validator sono:
 
 IntelliTest è in grado di testare i tipi interni, purché siano visibili. Affinché IntelliTest veda i tipi, le procedure guidate di Visual Studio IntelliTest aggiungono al progetto di prodotto o di test l'attributo seguente:
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ Gli utenti possono usare presupposti e asserzioni per esprimere [precondizioni](
 
 Le asserzioni sono un concetto noto nei framework dei normali unit test, quindi IntelliTest "riconosce" già le classi **Assert** predefinite disponibili in ogni framework di test supportato. Tuttavia, nella maggior parte dei framework non è presente una classe **Assume**. In questo caso IntelliTest specifica una classe [PexAssume](static-helper-classes.md#pexassume). Se non si vuole usare un framework di test esistente, IntelliTest offre anche una classe [PexAssert](static-helper-classes.md#pexassert).
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 In particolare, il presupposto di non invalidità può essere codificato come attributo personalizzato:
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ Come parte dell'integrazione con i framework di test, IntelliTest supporta il ri
 
 **Esempio**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 
