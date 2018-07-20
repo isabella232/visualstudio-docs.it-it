@@ -1,5 +1,5 @@
 ---
-title: Archivio | Documenti Microsoft
+title: Archivio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd683ee7edc2a8641d38ef84d69c30badd5b14db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 476e711f8b2e65652bb750c4933a5dfa98fbbf63
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097211"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153735"
 ---
 # <a name="archive"></a>Archivio
-In questa sezione contiene discussioni di tecnologie di estendibilità di Visual Studio che sono ancora supportati, ma che dispongono di tecnologie di sostituzione che sono più recenti.  
+In questa sezione contiene le discussioni di tecnologie di estendibilità di Visual Studio che sono ancora supportati ma che dispongono di tecnologie di sostituzione che sono più recenti.  
   
-## <a name="legacy-interfaces-in-the-editor"></a>Interfacce legacy nell'Editor  
- In questa sezione viene illustrato come accedere all'editor con le interfacce legacy (vettori di inizializzazione *) anziché il codice più recente di MEF: [Legacy interfacce nell'Editor](../extensibility/legacy-interfaces-in-the-editor.md).  
+## <a name="legacy-interfaces-in-the-editor"></a>Interfacce legacy nell'editor  
+ Questa sezione viene illustrato come accedere all'editor con le interfacce di legacy (interfacce IVs *) anziché il codice più recente di MEF: [Legacy interfacce nell'editor](../extensibility/legacy-interfaces-in-the-editor.md).  
   
 ## <a name="tool-windows-in-the-registry"></a>Finestre degli strumenti nel Registro di sistema  
- Questa sezione viene illustrato come configurare le finestre degli strumenti direttamente nel Registro di sistema: [finestre degli strumenti nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md).
+ Questa sezione viene illustrato come impostare le finestre degli strumenti direttamente nel Registro di sistema: [dello strumento windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md).

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: includere un File di dati in un'applicazione ClickOnce | Documenti Microsoft"
+title: "Procedura: includere un File di dati in un'applicazione ClickOnce | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,41 +18,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815545"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151700"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: includere un file di dati in un'applicazione ClickOnce
-Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installata viene assegnata una directory dei dati su disco del computer di destinazione in cui l'applicazione può gestire i propri dati. File di dati possono includere qualsiasi tipo file: file di testo, file XML o anche i file di Microsoft Access (mdb). Di seguito viene illustrato come aggiungere un file di dati di qualsiasi tipo nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
+Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installata è assegnata una directory di dati sul disco locale del computer di destinazione in cui l'applicazione può gestire i propri dati. File di dati possono includere file di qualsiasi tipo: file di testo, file XML o anche i database di Microsoft Access (*mdb*) file. Le procedure seguenti illustrano come aggiungere un file di dati di qualsiasi tipo nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.  
   
-### <a name="to-include-a-data-file-by-using-mageexe"></a>Per includere un file di dati tramite Mage.exe  
+### <a name="to-include-a-data-file-by-using-mageexe"></a>Per includere un file di dati usando Mage.exe  
   
-1.  Aggiungere il file di dati nella directory dell'applicazione con il resto del file dell'applicazione.  
+1.  Aggiungere il file di dati alla directory dell'applicazione con il resto del file dell'applicazione.  
   
-     In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v 1.0.0.0.  
+     In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v1.0.0.0.  
   
 2.  Aggiornare il manifesto dell'applicazione all'elenco di file di dati.  
   
      `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
-     Per eseguire questa attività verrà ricreato l'elenco di file nel manifesto dell'applicazione e genera automaticamente anche le firme hash.  
+     Per eseguire questa attività verrà ricreato l'elenco dei file nel manifesto dell'applicazione e genera anche automaticamente le firme hash.  
   
-3.  Aprire il manifesto dell'applicazione nell'editor XML o testo preferito e individuare il `file` elemento per il file aggiunto di recente.  
+3.  Aprire il manifesto dell'applicazione nell'editor XML di testo preferito o e trovare il `file` (elemento) per il file aggiunto di recente.  
   
      Se è stato aggiunto un file XML denominato `Data.xml`, il file avrà un aspetto simile al seguente esempio di codice.  
   
  `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Aggiungere l'attributo `type` a questo elemento e fornirlo con un valore di `data`.  
+1.  Aggiungere l'attributo `type` a questo elemento, quindi assegnare il valore `data`.  
   
  `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Firmare il manifesto dell'applicazione utilizzando la coppia di chiavi o un certificato e firmare il manifesto della distribuzione.  
+1.  Firmare nuovamente il manifesto dell'applicazione usando la coppia di chiavi o un certificato e quindi firmare nuovamente il manifesto della distribuzione.  
   
-     È necessario firmare nuovamente il manifesto della distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
+     È necessario firmare nuovamente il manifesto di distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
   
      `mage -s app manifest -cf cert_file -pwd password`
   
@@ -62,9 +62,9 @@ Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installat
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Per includere un file di dati usando MageUI.exe  
   
-1.  Aggiungere il file di dati nella directory dell'applicazione con il resto del file dell'applicazione.  
+1.  Aggiungere il file di dati alla directory dell'applicazione con il resto del file dell'applicazione.  
   
-2.  In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v 1.0.0.0.  
+2.  In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v1.0.0.0.  
   
 3.  Nel **File** menu, fare clic su **aprire** per aprire il manifesto dell'applicazione.  
   
@@ -72,17 +72,17 @@ Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installat
   
 5.  Nella casella di testo nella parte superiore della scheda, immettere la directory che contiene i file dell'applicazione e quindi fare clic su **Popola**.  
   
-     Il file di dati verrà visualizzati nella griglia.  
+     Il file di dati verrà visualizzato nella griglia.  
   
-6.  Impostare il **tipo di File** valore del file di dati per **dati**.  
+6.  Impostare il **tipo di File** valore del file di dati **dati**.  
   
-7.  Salvare il manifesto dell'applicazione e firmare nuovamente il file.  
+7.  Salvare il manifesto dell'applicazione e quindi firmare nuovamente il file.  
   
-     MageUI.exe verrà richiesto di firmare il file.  
+     *MageUI.exe* chiederà di firmare nuovamente il file.  
   
-8.  Firmare il manifesto della distribuzione  
+8.  Firmare nuovamente il manifesto di distribuzione  
   
-     È necessario firmare nuovamente il manifesto della distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
+     È necessario firmare nuovamente il manifesto di distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

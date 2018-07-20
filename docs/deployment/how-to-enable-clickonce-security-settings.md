@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: abilitare le impostazioni di sicurezza ClickOnce | Documenti Microsoft'
+title: 'Procedura: abilitare le impostazioni di sicurezza ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3f87e590c6b915d5b3d9db5d2517d80965dd6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558620"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150937"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Procedura: abilitare le impostazioni di sicurezza ClickOnce
-Sicurezza dall'accesso di codice per le applicazioni ClickOnce deve essere abilitato per pubblicare l'applicazione. Questa operazione viene eseguita automaticamente quando si pubblica un'applicazione mediante la pubblicazione guidata.  
+Sicurezza dall'accesso di codice per applicazioni ClickOnce deve essere abilitata per poter pubblicare l'applicazione. Ciò avviene automaticamente quando si pubblica un'applicazione usando la pubblicazione guidata.  
   
- In alcuni casi, l'abilitazione di sicurezza dall'accesso di codice può influire sulle prestazioni durante la compilazione o il debug dell'applicazione. In questi casi, si desidera disabilitare temporaneamente le impostazioni di sicurezza.  
+ In alcuni casi, l'abilitazione di sicurezza dall'accesso di codice può influire sulle prestazioni quando si compila o il debug dell'applicazione. In questi casi, si desidera disabilitare temporaneamente le impostazioni di sicurezza.  
   
- Impostazioni di sicurezza ClickOnce possono essere abilitate o disabilitate sul **sicurezza** pagina del **progettazione**.  
+ Impostazioni di sicurezza ClickOnce possono essere abilitate o disabilitate sul **sicurezza** pagina della **creazione progetti**.  
   
 ### <a name="to-enable-clickonce-security-settings"></a>Per abilitare le impostazioni di sicurezza ClickOnce  
   
@@ -40,10 +40,10 @@ Sicurezza dall'accesso di codice per le applicazioni ClickOnce deve essere abili
   
 3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** .  
   
-     È ora possibile personalizzare le impostazioni di sicurezza per l'applicazione nella pagina protezione.  
+     È ora possibile personalizzare le impostazioni di sicurezza per l'applicazione nella pagina sicurezza.  
   
     > [!NOTE]
-    >  Questa casella di controllo è selezionata automaticamente ogni volta che l'applicazione viene pubblicata con di **pubblica** procedura guidata.  
+    >  Questa casella di controllo è selezionata automaticamente ogni volta che l'applicazione viene pubblicata con il **pubblica** procedura guidata.  
   
 ### <a name="to-disable-clickonce-security-settings"></a>Per disabilitare le impostazioni di sicurezza ClickOnce  
   
@@ -51,14 +51,14 @@ Sicurezza dall'accesso di codice per le applicazioni ClickOnce deve essere abili
   
 2.  Fare clic sulla scheda **Sicurezza** .  
   
-3.  Cancella il **Abilita impostazioni di sicurezza ClickOnce** casella di controllo.  
+3.  Cancella il **Enable ClickOnce Security Settings** casella di controllo.  
   
-     L'applicazione verrà eseguita con le impostazioni di sicurezza con attendibilità totale; le impostazioni per il **sicurezza** pagina verrà ignorata.  
+     L'applicazione verrà eseguita con le impostazioni di sicurezza con attendibilità totale; tutte le impostazioni sul **sicurezza** pagina verrà ignorata.  
   
     > [!NOTE]
-    >  Ogni volta che l'applicazione viene pubblicata utilizzando la pubblicazione guidata, verrà selezionata la casella di controllo; è necessario cancellarlo nuovo termine di ogni pubblicazione.  
+    >  Ogni volta che l'applicazione viene pubblicata con la pubblicazione guidata, verrà selezionata questa casella di controllo; è necessario cancellarlo nuovo termine di ogni pubblicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  

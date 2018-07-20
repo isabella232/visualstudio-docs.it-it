@@ -1,9 +1,9 @@
 ---
-title: Impostazioni di progetto correlate al debugger | Documenti Microsoft
+title: Impostazioni di progetto correlate al debugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474024"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152985"
 ---
 # <a name="debugger-project-settings"></a>Impostazioni di progetto correlate al debugger
 Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste impostazioni vengono definiti determinati aspetti del processo di debug, ad esempio le directory esaminate dal debugger, il comando e i relativi argomenti utilizzati per l'avvio del programma e il tipo di informazioni di debug create per il programma. Per modificare le impostazioni, è possibile utilizzare la finestra di dialogo **Pagine delle proprietà** .  
@@ -50,10 +50,10 @@ Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste im
  Vengono elencate le proprietà disponibili nella finestra di dialogo **Pagine delle proprietà** per progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Specificare i simboli (PDB) e file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [Specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Viene descritto come il debugger utilizza file di simboli e file di origine per visualizzare informazioni per il debug.  
   
- [Debug delle App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
+ [Eseguire il debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
  Viene descritto come eseguire il debug di App UWP. (Centro sviluppatori Windows)  
   
  [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)  

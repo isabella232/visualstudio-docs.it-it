@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace
       href: how-to-use-intellitrace-step-back.md
+    - name: Debug per principianti
+      href: debugging-absolute-beginners.md
 - name: Guide pratiche
   items:
     - name: Spostarsi nel codice con il debugger
@@ -103,10 +105,8 @@
         - name: Modifica e continuazione (Visual Basic)
           href: edit-and-continue-visual-basic.md
           items:
-            - name: Applicare modifiche in modalità di interruzione con Modifica e continuazione
+            - name: Applicare modifiche in modalità di interruzione con Modifica e Continua
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Modifiche non supportate in Modifica e continuazione di Visual Basic
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'Modifica e continuazione non supportate per F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Visualizzare i dati del debugger
@@ -826,5 +826,3 @@
   items:
     - name: Novità relative al debugger di Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: Debug per principianti
-      href: debugging-absolute-beginners.md

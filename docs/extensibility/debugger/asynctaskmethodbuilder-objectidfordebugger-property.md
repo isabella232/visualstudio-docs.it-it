@@ -1,5 +1,5 @@
 ---
-title: Proprietà AsyncTaskMethodBuilder.ObjectIdForDebugger | Documenti Microsoft
+title: Proprietà asynctaskmethodbuilder. Objectidfordebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af89be5eeeb3138e6fc67e3c92ebf263e57d342f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29474e7c47203499f99e6763097fdd0f3f10549a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098274"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152331"
 ---
-# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Proprietà AsyncTaskMethodBuilder.ObjectIdForDebugger
-Ottiene un oggetto che può essere utilizzato per identificare in modo univoco questo generatore al debugger.  
+# <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>Proprietà asynctaskmethodbuilder. Objectidfordebugger
+Ottiene un oggetto che può essere utilizzato per identificare in modo univoco questo generatore del debugger.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in mscorlib. dll)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   

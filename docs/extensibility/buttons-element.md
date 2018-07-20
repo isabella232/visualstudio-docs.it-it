@@ -1,5 +1,5 @@
 ---
-title: I pulsanti elemento | Documenti Microsoft
+title: Pulsanti elemento | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a89d40d1f9c9a994269045dd674a533a0bcd32c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 522a69dc703a83ef601a5c7f0c54a5e0c224366e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097650"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155412"
 ---
-# <a name="buttons-element"></a>Elemento di pulsanti
-Gruppi [pulsante](../extensibility/button-element.md) elementi che rappresentano i singoli comandi.  
+# <a name="buttons-element"></a>Elemento Buttons
+I gruppi [pulsante](../extensibility/button-element.md) che rappresentano singoli comandi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,7 +40,7 @@ Gruppi [pulsante](../extensibility/button-element.md) elementi che rappresentano
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -70,5 +70,5 @@ Gruppi [pulsante](../extensibility/button-element.md) elementi che rappresentano
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Come VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

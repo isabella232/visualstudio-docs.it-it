@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234010"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153599"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Risolvere errori specifici nelle distribuzioni ClickOnce
 Questo articolo elenca i seguenti errori comuni che possono verificarsi quando si distribuisce un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e viene descritta la procedura per risolvere ogni problema.  
   
 ## <a name="general-errors"></a>Errori generali  
@@ -36,7 +36,7 @@ Questo articolo elenca i seguenti errori comuni che possono verificarsi quando s
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Quando si tenta di individuare un file dell'applicazione, non accade nulla o XML esegue il rendering di Internet Explorer o viene visualizzata una finestra di dialogo Esegui o Salva con nome  
  Questo errore è probabilmente causato dai tipi di contenuto (noto anche come tipi MIME) non registrati correttamente nel server o nel client.  
   
- In primo luogo, assicurarsi che il server è configurato per associare il `.application` estensione con contenuto di tipo "application/x-ms-application".  
+ In primo luogo, assicurarsi che il server è configurato per associare il *Application* estensione con contenuto di tipo "application/x-ms-application".  
   
  Se il server sia configurato correttamente, verificare che il [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] è installato nel computer. Se il [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] è installato, e viene comunque visualizzato questo problema, provare a disinstallare e reinstallare il [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] per registrare nuovamente il tipo di contenuto nel client.  
   
@@ -45,20 +45,20 @@ Questo articolo elenca i seguenti errori comuni che possono verificarsi quando s
   
 -   Se il file di log indica "(403) accesso negato" o "(404) non trovata", verificare che il server Web sia configurato in modo che non blocca il download di questo file. Per altre informazioni, vedere [Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Se il file con estensione config è bloccato dal server, vedere la sezione "errore di Download quando si prova a installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che dispone di un file con estensione config" più avanti in questo articolo.  
+-   Se il *config* file è bloccato dal server, vedere la sezione "errore di Download quando si prova a installare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione che dispone di un file con estensione config" più avanti in questo articolo.  
   
--   Determinare se ciò si è verificato perché la `deploymentProvider` URL nel manifesto di distribuzione fa riferimento a un percorso diverso rispetto all'URL utilizzato per l'attivazione.  
+-   Determinare se questo errore si è verificato perché la `deploymentProvider` URL nel manifesto di distribuzione fa riferimento a un percorso diverso rispetto all'URL utilizzato per l'attivazione.  
   
 -   Assicurarsi che tutti i file siano presenti sul server. il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] log dovrebbero essere il file non trovato.  
   
 -   Verificare se sono presenti problemi di connettività di rete; è possibile ricevere questo messaggio se il computer client era offline durante il download.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Errore di download quando si prova a installare un'applicazione ClickOnce che dispone di un file con estensione config  
- Per impostazione predefinita, un'applicazione basata su Visual Basic Windows include un file app. config. Esisterà un problema quando un utente prova a installare da un server Web che usa Windows Server 2003, poiché tale sistema operativo blocca l'installazione dei file con estensione config per motivi di sicurezza. Per abilitare il file con estensione config da installare, fare clic su **estensione di file ". deploy"** nel **Publish Options** nella finestra di dialogo.  
+ Per impostazione predefinita, un'applicazione basata su Visual Basic Windows include un file app. config. Esisterà un problema quando un utente prova a installare da un server Web che usa Windows Server 2003, poiché tale sistema operativo blocca l'installazione di *config* file per motivi di sicurezza. Per abilitare la *config* file per l'installazione, fare clic su **, l'estensione di file ". deploy"** nel **Publish Options** nella finestra di dialogo.  
   
  È anche necessario impostare i tipi di contenuto (noto anche come tipi MIME) in modo appropriato per i file. deploy. Application e manifest. Per altre informazioni, vedere la documentazione del server Web.  
   
- Per altre informazioni, vedere "Windows Server 2003: tipi di contenuti bloccati" nella [Server e problemi di configurazione Client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Per altre informazioni, vedere "Windows Server 2003: tipi di contenuti bloccati" nella [problemi di configurazione Server e client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Messaggio di errore: "Applicazione non è formattata"; File di log contiene "firma XML non valido"  
  Assicurarsi di aver aggiornato il file manifesto e averlo nuovamente firmato. Ripubblicare l'applicazione usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o usare Mage per firmare nuovamente l'applicazione.  
@@ -139,5 +139,5 @@ Questo articolo elenca i seguenti errori comuni che possono verificarsi quando s
 |L'applicazione è troppo grande per essere eseguita in linea in attendibilità parziale. Per assistenza, contattare il fornitore dell'applicazione o l'amministratore di sistema.|Un'applicazione che viene eseguita in attendibilità parziale non può essere maggiore della metà delle dimensioni della quota online delle applicazioni, che per impostazione predefinita è pari a 250 MB.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Distribuzione e protezione ClickOnce](../deployment/clickonce-security-and-deployment.md)   
+ [Risolvere i problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

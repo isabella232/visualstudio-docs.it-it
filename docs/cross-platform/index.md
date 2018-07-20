@@ -3,17 +3,18 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: Documentazione per lo sviluppo di app per dispositivi mobili con C++ | Microsoft Docs
 description: Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060951"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924174"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentazione per lo sviluppo di app per dispositivi mobili con C++
 
@@ -31,7 +32,7 @@ Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma</h3>
+                        <h3>Installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma</h3>
                         <p>Configurare gli strumenti necessari per creare app per dispositivi mobili multipiattaforma.</p>
                     </div>
                 </div>
@@ -69,7 +70,7 @@ Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Esempi di sviluppo di app per dispositivi mobili multipiattaforma</h3>
+                        <h3>Esempi di Sviluppo app per dispositivi mobili multipiattaforma</h3>
                         <p>Visualizzare esempi utili per iniziare a sviluppare app per dispositivi mobili multipiattaforma.</p>
                     </div>
                 </div>
@@ -80,7 +81,7 @@ Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.
 </ul>
 
 ---
-<h2>Riferimento</h2>
+<h2>Riferimenti</h2>
 
 <ul class="panelContent cardsW">
     <li>

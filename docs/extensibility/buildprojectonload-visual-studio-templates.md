@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnLoad (modelli di Visual Studio) | Documenti Microsoft
+title: BuildProjectOnLoad (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b70cc3522d59c2abe4633f38f746aeeb3159fe8a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097881"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150665"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (modelli di Visual Studio)
 Specifica se compilare il progetto immediatamente dopo averlo creato.  
@@ -89,5 +89,5 @@ Specifica se compilare il progetto immediatamente dopo averlo creato.
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento TemplateContent (modelli di Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
+ [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

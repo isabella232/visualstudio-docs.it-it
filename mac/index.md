@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693692"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889885"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Introduzione a Visual Studio per Mac
 
@@ -46,7 +46,7 @@ F# è un linguaggio di programmazione funzionale e fortemente tipizzato, progett
 
 ## <a name="net-core"></a>.NET Core
 
-[.NET core](https://www.microsoft.com/net/core#macos) è una piattaforma per la creazione di applicazioni che vengono eseguite in Windows, Linux e Mac. Visual Studio per Mac offre supporto per il caricamento, la creazione, l'esecuzione e il debug di progetti .NET Core.
+[.NET core](https://www.microsoft.com/net/core#macos) è una piattaforma per la creazione di applicazioni che vengono eseguite in Windows, Linux e Mac. Visual Studio per Mac include il supporto per il caricamento, la creazione, l'esecuzione e il debug dei progetti .NET Core. 
 
 Per eseguire progetti .NET Core, è necessario scaricare e installare .NET Core SDK.
 
@@ -56,7 +56,7 @@ Supporto di .NET Core:
 * Modelli di progetto .NET Core per console, libreria e applicazioni Web.
 * Completo supporto per il debug, inclusi punti di interruzione, stack di chiamate, finestra Espressioni di controllo e così via.
 * NuGet PackageReferences e ripristino basato su MSBuild.
-* Supporto per il testing integrato dell'unità per test di esecuzione e di debug con la piattaforma di test di Visual Studio inclusa in .NET Core SDK.
+* Supporto per il testing unità integrato per test di esecuzione e di debug con la piattaforma di test di Visual Studio inclusa in .NET Core SDK.
 * Migrazione dal precedente formato project.json.
 
 Per iniziare, esaminare il [laboratorio pratico](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) sulle app Web ASP.NET Core.
@@ -87,7 +87,7 @@ Per altre informazioni sull'uso della finestra di progettazione di iOS, vedere i
 
 ### <a name="mac"></a>Mac
 
-Xamarin offre native associazioni API Mac native che consentono di creare applicazioni Mac efficaci.
+Xamarin offre associazioni API Mac native che consentono di creare applicazioni Mac efficaci.
 
 Per altre informazioni sulla scrittura di applicazioni Mac con Visual Studio per Mac, vedere la documentazione di [Xamarin.Mac](https://developer.xamarin.com/guides/#mac).
 
@@ -108,11 +108,11 @@ Xamarin Profiler dispone di tre strumenti per la profilatura. La guida [Introduz
 
 ### <a name="inspector"></a>Inspector
 
-Xamarin Inspector offre una console C# interactive con strumenti disponibili agli utenti. Può essere utilizzato come supporto per il debug o per la diagnostica durante il controllo delle applicazioni attive, come strumento di formazione, di documentazione o sperimentazione.
+Xamarin Inspector offre una console C# interattiva con strumenti disponibili agli utenti. Può essere usato come supporto per il debug o per la diagnostica durante il controllo delle applicazioni attive, come strumento di formazione, di documentazione o sperimentazione.
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-È costituito da un'applicazione autonoma che rappresenta una console C# che può avere come destinazioni varie piattaforme di programmazione (Android, iOS, Mac e Windows) e può integrarsi nel flusso di lavoro di debug dell'IDE dell'utente.
+È costituito da un'applicazione autonoma che rappresenta una console C# che può avere come destinazioni varie piattaforme di programmazione (Android, iOS, Mac e Windows) e può integrarsi nel flusso di lavoro di debug dell'IDE. 
 
 Per altre informazioni, vedere la guida di [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/).
 

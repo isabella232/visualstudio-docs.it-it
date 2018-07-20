@@ -1,8 +1,10 @@
+- name: Documentazione dell'analisi codice
+  href: index.md
 - name: Panoramica
   items:
-    - name: Analisi del codice gestito
+    - name: Analisi codice per il codice gestito
       href: code-analysis-for-managed-code-overview.md
-    - name: Analizzatori di Roslyn
+    - name: Analizzatori Roslyn
       href: roslyn-analyzers-overview.md
     - name: Analisi codice per C/C++
       href: code-analysis-for-c-cpp-overview.md
@@ -10,7 +12,7 @@
       href: code-metrics-values.md
 - name: Guide rapide introduttive
   items:
-    - name: 'Guida introduttiva: Analisi del codice per C/C++'
+    - name: 'Guida introduttiva: Analisi codice per C/C++'
       href: quick-start-code-analysis-for-c-cpp.md
 - name: Esercitazioni
   items:
@@ -23,7 +25,7 @@
           href: demo-sample.md
 - name: Guide pratiche
   items:
-    - name: Analisi del codice gestito
+    - name: Analisi codice per il codice gestito
       items:
         - name: Installare analizzatori di Roslyn
           href: install-roslyn-analyzers.md
@@ -137,7 +139,7 @@
           href: native-recommended-rules-rule-set.md
         - name: Set di regole di sicurezza per codice gestito
           href: security-rules-rule-set-for-managed-code.md
-    - name: Analisi del codice per gli avvisi del codice gestito
+    - name: Avvisi dell'analisi codice per il codice gestito
       href: code-analysis-for-managed-code-warnings.md
       items:
         - name: Avvisi di analisi del codice per il codice gestito ordinati per CheckId

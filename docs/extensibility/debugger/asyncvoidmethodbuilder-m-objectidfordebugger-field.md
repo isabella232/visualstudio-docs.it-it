@@ -1,5 +1,5 @@
 ---
-title: Campo AsyncVoidMethodBuilder.m_objectIdForDebugger | Documenti Microsoft
+title: Campo asyncvoidmethodbuilder. M_objectidfordebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ddf5566d7f897bbe44eca3d9d21f9183efd69d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e9b0fc96eca5582be01745f4fe934cfe812bc65
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099272"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155425"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Campo AsyncVoidMethodBuilder.m_objectIdForDebugger
-Rappresenta l'oggetto con inizializzazione differita utilizzato dal debugger per identificare in modo univoco questo generatore.  
+# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Campo asyncvoidmethodbuilder. M_objectidfordebugger
+Rappresenta l'oggetto inizializzato in modo differito usato dal debugger per identificare in modo univoco questo generatore.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in mscorlib. dll)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .field private object m_objectIdForDebugger  
 ```  
   

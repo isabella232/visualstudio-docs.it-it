@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: pubblicare versione automaticamente incremento ClickOnce | Documenti Microsoft'
+title: 'Procedura: incrementare ClickOnce automaticamente versione pubblicazione | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,30 +19,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 178599f8f32ff2cbe1c12996eafb15feee62d463
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: beada30e45ce2d46500654bca5051bd51db02d66
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565640"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151964"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Procedura: incrementare automaticamente il numero di versione pubblicazione dell'applicazione ClickOnce
-Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, la modifica di `Publish Version` fa sì che l'applicazione viene pubblicata come aggiornamento. Per impostazione predefinita, viene incrementato automaticamente il `Revision` numero il `Publish Version` ogni volta che si pubblica l'applicazione.  
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Procedura: incrementare ClickOnce automaticamente versione pubblicazione
+Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, la modifica di `Publish Version` fa sì che l'applicazione viene pubblicata come aggiornamento. Per impostazione predefinita, Visual Studio incrementa automaticamente il `Revision` numerose il `Publish Version` ogni volta che si pubblica l'applicazione.  
   
- È possibile disabilitare questo comportamento nel **pubblica** pagina del **progettazione**.  
+ È possibile disabilitare questo comportamento nel **Publish** pagina della **creazione progetti**.  
   
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Per disabilitare l'incremento automatico della versione di pubblicazione  
+### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Per disabilitare la versione di pubblicazione a incremento automatico  
   
 1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic su di **pubblica** scheda.  
+2.  Scegliere il **pubblica** scheda.  
   
-3.  Nel **versione pubblicazione** sezione, deselezionare il **incrementa automaticamente revisione a ogni versione** casella di controllo.  
+3.  Nel **Publish Version** sezione, deselezionare le **incrementa automaticamente revisione a ogni versione** casella di controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Impostare la versione pubblicazione per un'applicazione ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)   
- [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Procedura: impostare ClickOnce versione pubblicazione](../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

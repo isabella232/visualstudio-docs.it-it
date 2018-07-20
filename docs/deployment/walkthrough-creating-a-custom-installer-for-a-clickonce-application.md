@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creazione di un programma di installazione personalizzato per un'applicazione ClickOnce | Documenti Microsoft"
+title: "Procedura dettagliata: Creazione di un programma di installazione personalizzato per un'applicazione ClickOnce | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,25 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdef0199aa55d6981761a20804f9f209a1a0fdc4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565419"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152243"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: creazione di un programma di installazione personalizzato per un'applicazione ClickOnce
-Qualsiasi applicazione ClickOnce in base a un file .exe può essere installati automaticamente e aggiornata dal programma di installazione personalizzato. Un programma di installazione personalizzato può implementare un'esperienza utente migliorata durante l'installazione, tra cui le finestre di dialogo personalizzate per le operazioni di manutenzione e di sicurezza. Per eseguire operazioni di installazione, il programma di installazione personalizzato utilizza il <xref:System.Deployment.Application.InPlaceHostingManager> classe. Questa procedura dettagliata viene illustrato come creare un programma di installazione personalizzato per l'installazione invisibile all'utente di un'applicazione ClickOnce.  
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: Creare un programma di installazione personalizzato per un'applicazione ClickOnce
+Tutte le applicazioni ClickOnce basato su un *.exe* file può essere installati e aggiornati da un programma di installazione personalizzato in modo invisibile. Un programma di installazione personalizzato può implementare un'esperienza utente migliorata durante l'installazione, tra cui finestre di dialogo personalizzate per le operazioni di manutenzione e sicurezza. Per eseguire operazioni di installazione, il programma di installazione personalizzato utilizza il <xref:System.Deployment.Application.InPlaceHostingManager> classe. Questa procedura dettagliata viene illustrato come creare un programma di installazione personalizzato per l'installazione invisibile all'utente un'applicazione ClickOnce.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Per creare un programma di installazione di applicazioni ClickOnce personalizzato  
   
-1.  In un'applicazione ClickOnce, aggiungere riferimenti a System. Deployment e Forms.  
+1.  Nell'applicazione ClickOnce, aggiungere i riferimenti a System. Deployment e Forms.  
   
-2.  Aggiungere una nuova classe all'applicazione e specificare qualsiasi nome. Questa procedura dettagliata viene utilizzato il nome `MyInstaller`.  
+2.  Aggiungere una nuova classe all'applicazione e specificare un nome qualsiasi. Questa procedura dettagliata Usa il nome `MyInstaller`.  
   
-3.  Aggiungere il seguente `Imports` o `using` istruzioni all'inizio della nuova classe.  
+3.  Aggiungere il codice seguente `Imports` o `using` istruzioni all'inizio della nuova classe.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -52,15 +52,15 @@ Qualsiasi applicazione ClickOnce in base a un file .exe può essere installati a
   
 4.  Aggiungere i metodi seguenti alla classe.  
   
-     Chiamano questi metodi <xref:System.Deployment.Application.InPlaceHostingManager> metodi per scaricare il manifesto di distribuzione, l'asserzione delle autorizzazioni appropriate, chiedere all'utente l'autorizzazione per l'installazione e quindi scaricare e installare l'applicazione nella cache di ClickOnce. Un programma di installazione personalizzato è possibile specificare che un'applicazione ClickOnce è pre-attendibile, o è possibile posticipare la decisione sull'attendibilità di <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> chiamata al metodo. Questo codice pre-attendibile l'applicazione.  
+     Questi metodi chiamano <xref:System.Deployment.Application.InPlaceHostingManager> metodi per scaricare il manifesto di distribuzione, l'asserzione delle autorizzazioni appropriate, chiedere all'utente l'autorizzazione per installare e quindi scaricare e installare l'applicazione nella cache di ClickOnce. Un programma di installazione personalizzato è possibile specificare che un'applicazione ClickOnce è pre-attendibile o possibile posticipare la decisione di attendibilità di <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> chiamata al metodo. Questo codice pre-attendibile l'applicazione.  
   
     > [!NOTE]
-    >  Le autorizzazioni assegnate concedendo pre-l'attendibilità di non possono superare le autorizzazioni del codice programma di installazione personalizzato.  
+    >  Le autorizzazioni assegnate da pre-concessione dell'attendibilità non possono superare le autorizzazioni del codice di programma di installazione personalizzato.  
   
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]  
   
-5.  Per eseguire l'installazione dal codice, chiamare il `InstallApplication` metodo. Ad esempio, se la classe è denominata `MyInstaller`, è possibile chiamare `InstallApplication` nel modo seguente.  
+5.  Per tentare l'installazione dal codice, chiamare il `InstallApplication` (metodo). Ad esempio, se la classe è denominata `MyInstaller`, è possibile chiamare `InstallApplication` nel modo seguente.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -75,7 +75,7 @@ Qualsiasi applicazione ClickOnce in base a un file .exe può essere installati a
     ```  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- Un'applicazione ClickOnce è anche possibile aggiungere logica di aggiornamento personalizzata, tra cui un'interfaccia utente personalizzata per mostrare durante il processo di aggiornamento. Per altre informazioni, vedere <xref:System.Deployment.Application.UpdateCheckInfo>. Un'applicazione ClickOnce può inoltre eliminare la voce di menu Start standard, collegamento e voce Aggiungi / Rimuovi programmi mediante un `<customUX>` elemento. Per ulteriori informazioni, vedere [ \<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) e <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+ Un'applicazione ClickOnce è anche possibile aggiungere logica di aggiornamento personalizzato, inclusi un'interfaccia utente personalizzata per mostrare durante il processo di aggiornamento. Per altre informazioni, vedere <xref:System.Deployment.Application.UpdateCheckInfo>. Un'applicazione ClickOnce può anche eliminare la voce di menu Start standard, collegamento e Aggiungi / Rimuovi programmi voce usando un `<customUX>` elemento. Per altre informazioni, vedere [ \<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md) e <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)   

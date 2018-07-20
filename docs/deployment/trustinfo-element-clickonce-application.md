@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; elemento (applicazione ClickOnce) | Documenti Microsoft'
+title: '&lt;trustInfo&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816003"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151062"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (applicazione ClickOnce)
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.  
@@ -68,7 +68,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 </trustInfo>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
  L'elemento `trustInfo` è obbligatorio e si trova nello spazio dei nomi `asm.v2` . Non ha attributi e contiene gli elementi seguenti.  
   
 ## <a name="security"></a>sicurity  
@@ -163,7 +163,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
   
  Tutte le autorizzazioni richieste mediante `defaultAssemblyRequest` e `assemblyRequest` verranno concesse senza chiedere all'utente se il manifesto di distribuzione ha una licenza di attendibilità valida.  
   
- Per ulteriori informazioni sull'elevazione delle autorizzazioni, vedere [protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Per altre informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md). Per altre informazioni sulla distribuzione dei criteri, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="examples"></a>Esempi  
  I seguenti tre esempi di codice descrivono gli elementi `trustInfo` per le aree di sicurezza denominate predefinite, ovvero Internet, LocalIntranet e FullTrust, per l'uso in un manifesto dell'applicazione di distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
@@ -271,4 +271,4 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
   
 ## <a name="see-also"></a>Vedere anche  
  [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)   
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
