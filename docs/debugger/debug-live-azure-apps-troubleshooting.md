@@ -1,8 +1,8 @@
 ---
-title: Risoluzione dei problemi e problemi noti per il debug di snapshot | Documenti Microsoft
+title: Risoluzione dei problemi e problemi noti per il debug di snapshot | Microsoft Docs
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
@@ -11,79 +11,79 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7340b5f6ce7e9f8cbcbb0e2673b22712b3ab45a3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480098"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152013"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se i passaggi descritti in questo argomento non risolvono il problema, contattare snaphelp@microsoft.com.
+Se i passaggi descritti in questo articolo non risolvono il problema, contattare il tecnico snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Snappoint non attivata
+## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Punto di ancoraggio non attiva
 
-Se viene visualizzata un'icona di avviso ![icona di avviso Snappoint](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "icona di avviso Snappoint") con il snappoint anziché l'icona normale snappoint, quindi il snappoint non è acceso.
+Se viene visualizzata un'icona di avviso ![icona di avviso punto di ancoraggio](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "icona di avviso punto di ancoraggio") con il punto di ancoraggio anziché l'icona di punto di ancoraggio regolari, quindi il punto di ancoraggio non è attivata.
 
-![Non attivare Snappoint](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Snappoint non attiva")
+![Punto di ancoraggio non attivata](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "punto di ancoraggio non attiva")
 
-Eseguire la procedura seguente:
+Eseguire questi passaggi:
 
-1. Accertarsi di avere la stessa versione del codice sorgente utilizzato per compilare e distribuire il app.isua1. Verificare che il caricamento di simboli corretti per la distribuzione. A tale scopo, è possibile visualizzare il **moduli** finestra durante il debug di Snapshot e verificare la colonna del File di simboli viene illustrato un file con estensione pdb caricato per il modulo a cui si esegue il debug. Si noti che il Debugger Snapshot tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
+1. Assicurarsi di avere la stessa versione del codice sorgente che è stato usato per compilare e distribuire il app.isua1. Assicurarsi che si siano caricando i simboli corretti per la distribuzione. A tale scopo, visualizzare il **moduli** finestra durante il debug di Snapshot e verificare la colonna del File di simboli viene illustrato un file con estensione pdb caricato per il modulo si esegue il debug. Il Debugger di Snapshot tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: I simboli non vengono caricati quando si apre uno Snapshot
 
-Se viene visualizzato in seguito finestra, i simboli non è stato caricato.
+Se verrà visualizzata la seguente finestra, i simboli non è stato caricato.
 
-![Non vengono caricati i simboli](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "non vengono caricati i simboli")
+![Non è possibile caricare i simboli](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "non è possibile caricare i simboli")
 
-Eseguire la procedura seguente:
+Eseguire questi passaggi:
 
-- Fare clic sul **modificare le impostazioni dei simboli...** collegamenti in questa pagina. Nel **Debug > simboli** impostazioni, aggiungere una directory cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
+- Fare clic su di **modificare le impostazioni dei simboli...** collegamento in questa pagina. Nel **Debug > simboli** impostazioni, aggiungere una directory cache dei simboli. Riavviare il debug di snapshot dopo aver impostato il percorso dei simboli.
 
-   I simboli o file con estensione pdb, disponibili nel progetto devono corrispondere la distribuzione del servizio App. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, CI/CD con Visual Studio Team Services o Kudu, e così via) verranno pubblicare i file di simboli insieme al servizio App. Impostazione directory cache dei simboli consente a Visual Studio utilizzare questi simboli.
+   I simboli o un file con estensione pdb, disponibili nel progetto devono corrispondere la distribuzione del servizio App. La maggior parte delle distribuzioni (distribuzione tramite Visual Studio, integrazione continua/recapito Continuo con Visual Studio Team Services o Kudu, e così via) verranno pubblicati i file di simboli insieme al servizio App. Impostare la directory cache dei simboli consente a Visual Studio usare questi simboli.
 
-   ![Impostazioni dei simboli](../debugger/media/snapshot-troubleshooting-symbol-settings.png "le impostazioni dei simboli")
+   ![Impostazioni dei simboli](../debugger/media/snapshot-troubleshooting-symbol-settings.png "impostazioni dei simboli")
 
-- In alternativa, se l'organizzazione utilizza un server di simboli o Elimina i simboli in un percorso diverso, è possibile utilizzare le impostazioni dei simboli per caricare i simboli appropriati per la distribuzione.
+- In alternativa, se l'organizzazione Usa un server di simboli o Elimina i simboli in un percorso diverso, usare le impostazioni dei simboli per caricare i simboli corretti per la distribuzione.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: non è possibile visualizzare l'opzione "Collega Debugger Snapshot" in Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: non è possibile visualizzare l'opzione "Collegare Snapshot Debugger" in Cloud Explorer
 
-Eseguire la procedura seguente:
+Eseguire questi passaggi:
 
-- Verificare che sia installato il componente del Debugger di Snapshot. Aprire il programma di installazione Visual Studio e controllare il **Debugger Snapshot** componente nel carico di lavoro Azure.
-- Verificare che l'app sia supportato. Attualmente, solo ASP.NET (4.6.1+) e sono supportate le applicazioni ASP.NET Core (2.0 +) distribuite ai servizi di App di Azure.
+- Verificare che sia installato il componente Debugger di Snapshot. Aprire l'installazione di Visual Studio e verificare i **Snapshot Debugger** componente del carico di lavoro di Azure.
+- Assicurarsi che l'app sia supportato. Attualmente, solo ASP.NET (4.6.1+) e le app ASP.NET Core (2.0 +) distribuite in servizi App di Azure sono supportate.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: vedere solo gli snapshot limitate negli strumenti di diagnostica
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: è visibile solo gli snapshot limitato in strumenti di diagnostica
 
-![Throttled snappoint](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitate snappoint")
+![Punto di ancoraggio limitate](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "limitate punto di ancoraggio")
 
-Eseguire la procedura seguente:
+Eseguire questi passaggi:
 
-- Gli snapshot occupano molto spazio di memoria, ma dispongono di un addebito di commit. Se il Debugger Snapshot rileva che il server è in condizioni di carico elevato della memoria, non passerà snapshot. È possibile eliminare gli snapshot già acquisiti interrompendo la sessione del Debugger di Snapshot e riprovare.
+- Gli snapshot occupano memoria piccolo ma è previsto un addebito commit. Se il Debugger di Snapshot rileva che il server è in condizioni di carico di memoria pesanti, non registra snapshot. È possibile eliminare gli snapshot già acquisiti interrompendo la sessione del Debugger di Snapshot e riprovare.
 
 ## <a name="known-issues"></a>Problemi noti
 
 - Debug di snapshot con più client di Visual Studio con lo stesso servizio App non è attualmente supportato.
-- Ottimizzazioni IL Roslyn non sono completamente supportate nei progetti ASP.NET Core. Per alcuni progetti ASP.NET Core, potrebbe non essere in grado di visualizzare alcune variabili o utilizzare alcune variabili nelle istruzioni condizionali. 
-- Variabili speciali, ad esempio *$FUNCTION* o *$CALLER*, non può essere valutato nelle istruzioni condizionali o logpoints per i progetti ASP.NET Core.
-- Debug di snapshot non funziona in servizi di App che hanno [memorizzazione nella cache locale](/azure/app-service/app-service-local-cache) acceso.
-- Debug di App per le API di snapshot non è attualmente supportato.
+- Ottimizzazioni di linguaggio intermedio Roslyn non sono completamente supportate nei progetti ASP.NET Core. Per alcuni progetti ASP.NET Core, potrebbe non essere in grado di vedere alcune variabili o usare alcune variabili nelle istruzioni condizionali. 
+- Variabili speciali, ad esempio *$FUNCTION* oppure *$CALLER*, non è possibile valutare in istruzioni condizionali o punti di registrazione per i progetti ASP.NET Core.
+- Debug di snapshot non funziona nei servizi di App che hanno [memorizzazione nella cache locale](/azure/app-service/app-service-local-cache) attivata.
+- Snapshot di debug di App per le API non è attualmente supportato.
 
 ## <a name="site-extension-upgrade"></a>Aggiornamento di estensione del sito
 
-Debug di snapshot e Application Insights dipendono da un ICorProfiler Carica nel processo del sito che causa problemi di blocco del file durante l'aggiornamento. Si consiglia di questo processo per verificare che sia presente alcun tempo di inattività per il sito di produzione.
+Debug di snapshot e Application Insights variano in base un ICorProfiler, che viene caricato il processo del sito e fa in modo che i problemi di blocco di file durante l'aggiornamento. È consigliabile assicurarsi che non ci sia alcun tempo di inattività per il sito di produzione del processo.
 
-- Creare un [Slot di distribuzione](/azure/app-service/web-sites-staged-publishing) all'interno del servizio App e il sito è stato distribuito nello slot.
-- Scambiare lo Slot di produzione da Cloud Explorer in Visual Studio o dal portale di Azure.
-- Arrestare il sito di Slot. L'operazione richiederà alcuni secondi per terminare il processo w3wp.exe di sito da tutte le istanze.
-- Aggiornare l'estensione di uno Slot del sito dal sito Kudu o il portale di Azure (*Pannello di servizio App > Strumenti di sviluppo > estensioni > aggiornamento*).
-- Avviare il sito di Slot. Si consiglia di visitare il sito per il riscaldamento nuovamente.
-- Scambiare lo Slot di produzione.
+- Creare un [Slot di distribuzione](/azure/app-service/web-sites-staged-publishing) all'interno del servizio App e Distribuisci il tuo sito nello slot.
+- Trasferire lo Slot di produzione da Esplora Cloud in Visual Studio o dal portale di Azure.
+- Arrestare il sito dello Slot. Questo richiederà alcuni secondi per terminare il processo w3wp.exe di sito da tutte le istanze.
+- Aggiornare l'estensione dello Slot del sito dal sito di Kudu o il portale di Azure (*pannello servizio App > Strumenti di sviluppo > estensioni > aggiornamenti*).
+- Avviare il sito dello Slot. È consigliabile visitare il sito per riscaldamento nuovamente.
+- Trasferire lo Slot di produzione.
 
 ## <a name="see-also"></a>Vedere anche
 
 [Debug in Visual Studio](../debugger/index.md)  
-[Eseguire il debug in tempo reale App ASP.NET utilizzando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md)  
+[Il debug in tempo reale delle App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md)  
 [Domande frequenti sul debug di snapshot](../debugger/debug-live-azure-apps-faq.md)  

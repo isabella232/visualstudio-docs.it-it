@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sulla distribuzione di applicazioni attendibili | Documenti Microsoft
+title: Trusted Application Deployment Overview | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572241"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152682"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.  
@@ -55,7 +55,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
 -   Il deployer è il gruppo, in genere del reparto IT, che distribuisce l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ai computer desktop aziendali.  
   
- Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione di applicazioni attendibili:  
+Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione di applicazioni attendibili:  
   
 1.  Ottenere un certificato per l'editore.  
   
@@ -67,10 +67,10 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
 5.  Pubblicare la distribuzione dell'applicazione nei computer client.  
   
-### <a name="obtain-a-certificate-for-the-publisher"></a>Ottenere un certificato per l'editore  
+### <a name="obtain-a-certificate-for-the-publisher"></a>Ottenere un certificato per il server di pubblicazione  
  I certificati digitali sono un componente principale del sistema di sicurezza e autenticazione Microsoft Authenticode. Authenticode è una parte standard del sistema operativo Windows. Tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] devono essere firmate con un certificato digitale, a prescindere se partecipano alla distribuzione di applicazioni attendibili. Per una spiegazione completa di come funziona Authenticode con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).  
   
-### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Aggiungere l'editore all'archivio Editori attendibili  
+### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Aggiungere l'editore all'archivio editori attendibili  
  Affinché l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] riceva un livello di attendibilità superiore, è necessario aggiungere il certificato come editore attendibile a ogni computer client in cui verrà eseguita l'applicazione. Si tratta di una configurazione che si esegue una sola volta. Dopo il completamento, è possibile distribuire tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmate con il certificato editore desiderate, che verranno eseguite con un livello di attendibilità elevato.  
   
  Se si distribuisce l'applicazione in un ambiente desktop gestito, ad esempio una Intranet aziendale che esegue il sistema operativo Windows, è possibile aggiungere gli editori attendibili a un archivio del client creando un nuovo elenco scopi consentiti ai certificati (CTL) con Criteri di gruppo. Per altre informazioni, vedere [Create a certificate trust list for a Group Policy object](http://go.microsoft.com/fwlink/?LinkId=102576)(Creare un elenco scopi consentiti ai certificati per un oggetto Criteri di gruppo).  
@@ -79,30 +79,30 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
 -   Spazio dei nomi <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
--   CertMgr.exe, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per ulteriori informazioni, vedere [Certmgr.exe (strumento di gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
+-   *CertMgr.exe*, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per altre informazioni, vedere [Certmgr.exe (strumento di gestione certificati)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).  
   
 ### <a name="create-a-clickonce-application"></a>Creare un'applicazione ClickOnce  
- Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per ulteriori informazioni su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione, vedere [questa procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
  La distribuzione di applicazioni attendibili è specifica per [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]è può essere usata solo con le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
-### <a name="sign-the-deployment"></a>Formare la distribuzione  
+### <a name="sign-the-deployment"></a>Firmare la distribuzione  
  Dopo aver ottenuto il certificato, usarlo per firmare la distribuzione. Se si distribuisce l'applicazione usando la pubblicazione guidata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , viene generato automaticamente un certificato di prova se non è già stato specificato un altro certificato. Tuttavia, è anche possibile usare la finestra Creazione progetti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per specificare un certificato fornito da un'autorità di certificazione.  Vedere anche [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Non si consiglia di distribuire l'applicazione con un certificato di prova.  
   
- È anche possibile firmare l'applicazione usando gli strumenti SDK Mage.exe o MageUI.exe. Per ulteriori informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Per un elenco completo delle opzioni della riga di comando relative alla firma della distribuzione, vedere [Mage.exe (generazione manifesto e lo strumento di modifica)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
+ È anche possibile accedere all'applicazione tramite il *Mage.exe* oppure *MageUI.exe* strumenti SDK. Per altre informazioni, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Per un elenco completo di opzioni della riga di comando relative alla firma della distribuzione, vedere [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
 ### <a name="publish-the-application"></a>Pubblicare l'applicazione  
  Dopo aver firmato i manifesti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , l'applicazione è pronta per la pubblicazione nel percorso di installazione. Il percorso di installazione può essere un server Web, una condivisione file o il disco locale. Quando un client accede al manifesto della distribuzione per la prima volta, il gestore di attendibilità deve determinare se all'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono state concesse le autorizzazioni per l'esecuzione con un livello di trust superiore da un editore attendibile installato. Per effettuare questa scelta, il gestore di attendibilità confronta il certificato usato per firmare la distribuzione con i certificati archiviati nell'archivio Editori attendibili del client. Se il gestore di attendibilità trova una corrispondenza, l'applicazione viene eseguita con un livello di attendibilità elevato.  
   
 ## <a name="trusted-application-deployment-and-permission-elevation"></a>Distribuzione di applicazioni attendibili ed elevazione delle autorizzazioni  
- Se l'editore corrente non è attendibile, il gestore di attendibilità usa l'elevazione delle autorizzazioni per chiedere all'utente se desidera concedere le autorizzazioni elevate all'applicazione. Se l'elevazione delle autorizzazioni è stata disabilitata dall'amministratore, tuttavia, l'applicazione non riesce a ottenere le autorizzazioni per l'esecuzione. L'applicazione non viene eseguita e l'utente non visualizza alcuna notifica. Per ulteriori informazioni sull'elevazione delle autorizzazioni, vedere [protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Se l'editore corrente non è attendibile, il gestore di attendibilità usa l'elevazione delle autorizzazioni per chiedere all'utente se desidera concedere le autorizzazioni elevate all'applicazione. Se l'elevazione delle autorizzazioni è stata disabilitata dall'amministratore, tuttavia, l'applicazione non riesce a ottenere le autorizzazioni per l'esecuzione. L'applicazione non viene eseguita e l'utente non visualizza alcuna notifica. Per altre informazioni sull'elevazione delle autorizzazioni, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 ## <a name="limitations-of-trusted-application-deployment"></a>Limitazioni della distribuzione di applicazioni attendibili  
  È possibile usare la distribuzione di applicazioni attendibili per concedere un livello di attendibilità elevato alle applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuite tramite Web o tramite una condivisione file aziendale. Non è necessario usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuite con un CD perché, per impostazione predefinita, a queste applicazioni viene concessa l'attendibilità totale.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
- [Procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+ [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

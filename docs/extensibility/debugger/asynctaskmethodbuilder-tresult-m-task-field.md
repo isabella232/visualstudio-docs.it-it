@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder&lt;TResult&gt;campo .m_task | Documenti Microsoft
+title: AsyncTaskMethodBuilder&lt;TResult&gt;. m_task campo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,25 +13,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9c2bbd8e0cb148f7575f2adbc6fec8fa62052e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c22566247a773beffa5f6fb79f1cb2aac51ac6b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097663"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154359"
 ---
-# <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task campo
-Rappresenta l'inizializzazione differita compilato attività.  
+# <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. m_task campo
+Rappresenta l'inizializzazione differita compilate attività.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly:** mscorlib (in mscorlib. dll)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .field private class System.Threading.Tasks.Task`1<!TResult> m_task  
 ```  
   

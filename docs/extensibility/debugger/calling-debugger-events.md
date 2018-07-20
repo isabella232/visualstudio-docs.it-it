@@ -1,5 +1,5 @@
 ---
-title: La chiamata di eventi del Debugger | Documenti Microsoft
+title: La chiamata a eventi del Debugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100027"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153033"
 ---
-# <a name="calling-debugger-events"></a>Eventi del Debugger chiamata
-Si verificano eventi nelle sessioni di debug in un ordine specifico.  
+# <a name="call-debugger-events"></a>Chiamare gli eventi del debugger
+Gli eventi nella sessione di debug e si verificano in un ordine specifico.  
   
 ## <a name="discussion"></a>Discussione  
- Per comprendere il criterio di chiamate tra il motore di debug (DE) e il gestore di sessione di debug (SDM), di seguito rappresenta l'ordine degli eventi che si verificano in una sessione di debug tipica chiamante:  
+ Per comprendere il criterio di chiamate tra il motore di debug (DE) e la gestione di debug di sessione (SDM), di seguito rappresenta l'ordine di chiamata degli eventi che si verificano durante una normale sessione di debug:  
   
-1.  [Collegamento e scollegamento di un programma](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
+1.  [Collegamento e scollegamento da un programma](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
-2.  [Avvio del debugger](../../extensibility/debugger/launching-the-debugger.md)  
+2.  [L'avvio del debugger](../../extensibility/debugger/launching-the-debugger.md)  
   
-3.  [Terminare un programma](../../extensibility/debugger/terminating-a-program.md)  
+3.  [Terminazione di un programma](../../extensibility/debugger/terminating-a-program.md)  
   
 4.  [Creazione di un punto di interruzione](../../extensibility/debugger/creating-a-breakpoint.md)  
   
@@ -44,7 +44,7 @@ Si verificano eventi nelle sessioni di debug in un ordine specifico.
   
 9. [Modalità di interruzione](../../extensibility/debugger/entering-break-mode.md)  
   
-10. [L'esecuzione di istruzioni in modalità di interruzione](../../extensibility/debugger/stepping-in-break-mode.md)  
+10. [Esecuzione di istruzioni in modalità di interruzione](../../extensibility/debugger/stepping-in-break-mode.md)  
   
 11. [Valutazione dell'espressione in modalità di interruzione](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   

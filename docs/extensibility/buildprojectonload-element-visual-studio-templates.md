@@ -1,5 +1,5 @@
 ---
-title: Elemento buildProjectOnload (modelli di Visual Studio) | Documenti Microsoft
+title: Elemento buildProjectOnload (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097822"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154158"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (modelli di Visual Studio)
-Compila solo i nuovi progetti durante la creazione e aggiungerli a una soluzione. Non viene compilato l'intera soluzione.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento buildProjectOnload (modelli di Visual Studio)
+Compila solo i nuovi progetti durante la creazione e aggiungerle a una soluzione. Non viene compilato l'intera soluzione.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -44,7 +44,7 @@ Compila solo i nuovi progetti durante la creazione e aggiungerli a una soluzione
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|TemplateData|Classifica il modello e definisce come viene visualizzato in entrambe le **nuovo progetto** e **Aggiungi nuovo elemento** finestre di dialogo.|  
+|`TemplateData`|Classifica il modello e definisce come viene visualizzato in entrambe le **nuovo progetto** e il **Aggiungi nuovo elemento** finestre di dialogo.|  
   
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
@@ -83,5 +83,5 @@ Compila solo i nuovi progetti durante la creazione e aggiungerli a una soluzione
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Creazione di modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
+ [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

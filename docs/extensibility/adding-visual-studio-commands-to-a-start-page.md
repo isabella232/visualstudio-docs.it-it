@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di comandi di Visual Studio a una pagina iniziale | Documenti Microsoft
+title: Aggiunta di comandi di Visual Studio a una pagina iniziale | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87a5e6d29877efb857b846a7b3fac5f19f790d7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22ae9ebb5e9acb3fa1787f2af3b0fbb159c1485d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101794"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153631"
 ---
-# <a name="adding-visual-studio-commands-to-a-start-page"></a>Aggiunta di comandi di Visual Studio a una pagina iniziale
-Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi comandi di Visual Studio. Questo documento vengono illustrate le diverse modalità di associazione di comandi di Visual Studio a oggetti XAML in una pagina di avvio.  
+# <a name="add-visual-studio-commands-to-a-start-page"></a>Aggiungere comandi di Visual Studio a una pagina iniziale
+Quando si crea una pagina iniziale personalizzata, è possibile aggiungervi comandi di Visual Studio. Questo documento illustra i diversi modi per eseguire l'associazione di comandi di Visual Studio per gli oggetti XAML in una pagina iniziale.  
   
- Per ulteriori informazioni sui comandi in XAML, vedere [panoramica dei comandi](/dotnet/framework/wpf/advanced/commanding-overview)  
+ Per altre informazioni sui comandi in XAML, vedere [Commanding Panoramica](/dotnet/framework/wpf/advanced/commanding-overview)  
   
-## <a name="adding-commands-from-the-command-well"></a>Aggiunta di comandi anche dal comando  
- La pagina iniziale creato in [la creazione di una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md) aggiunto il <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> e <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> spazi dei nomi, come indicato di seguito.  
+## <a name="add-commands-from-the-command-well"></a>Aggiungere anche i comandi dal comando  
+ Nella pagina iniziale creato in [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md) aggiunte le <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> e <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> spazi dei nomi, come indicato di seguito.  
   
 ```  
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
 ```  
   
- Aggiungere un altro spazio dei nomi per Microsoft.VisualStudio.Shell dall'assembly Microsoft.VisualStudio.Shell.Immutable.11.0.dll. (Potrebbe essere necessario aggiungere un riferimento all'assembly nel progetto)  
+ Aggiungere un altro spazio dei nomi per Microsoft.VisualStudio.Shell dall'assembly *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*. (Si potrebbe essere necessario aggiungere un riferimento a questo assembly nel progetto.)  
   
 ```xml  
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"  
 ```  
   
- È possibile utilizzare il `vscom:` alias per associare i comandi di Visual Studio a XAML controlli nella pagina impostando la <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> proprietà del controllo da `vscom:VSCommands.ExecuteCommand`. È quindi possibile impostare il <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> proprietà sul nome del comando da eseguire, come illustrato nell'esempio seguente.  
+ È possibile usare la `vscom:` controlla l'alias per associare i comandi di Visual Studio da XAML nella pagina impostando la <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> proprietà del controllo da `vscom:VSCommands.ExecuteCommand`. È quindi possibile impostare il <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> proprietà sul nome del comando da eseguire, come illustrato nell'esempio seguente.  
   
 ```xml  
 <Button Name="btnNewProj" Content="New Project"   
@@ -50,11 +50,11 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  Il `x:` alias, che fa riferimento allo schema XAML, è necessario all'inizio di tutti i comandi.  
+>  Il `x:` alias che fa riferimento allo schema XAML, è necessario all'inizio di tutti i comandi.  
   
- È possibile impostare il valore di `Command` proprietà per tutti i comandi che è possibile accedere dal **comando** finestra. Per un elenco di comandi disponibili, vedere [alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).  
+ È possibile impostare il valore della `Command` proprietà per tutti i comandi che è possibile accedere dal **comando** finestra. Per un elenco di comandi disponibili, vedere [alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).  
   
- Se il comando per aggiungere richiede un parametro aggiuntivo, è possibile aggiungere il valore di `CommandParameter` proprietà. Parametri separati da comandi tramite spazi, come illustrato nell'esempio seguente.  
+ Se il comando per aggiungere richiede un parametro aggiuntivo, è possibile aggiungere al valore della `CommandParameter` proprietà. Parametri separati da comandi utilizzando spazi, come illustrato nell'esempio seguente.  
   
 ```xml  
 <Button Content="Web Search"   
@@ -62,20 +62,20 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
         CommandParameter="View.WebBrowser www.bing.com" />  
 ```  
   
-### <a name="calling-extensions-from-the-command-well"></a>La chiamata di estensioni dal comando anche  
- È possibile chiamare i comandi da pacchetti VSPackage registrati con la stessa sintassi utilizzata per chiamare altri comandi di Visual Studio. Se, ad esempio, un VSPackage installato aggiunge un **Home Page** comando per il **vista** menu, è possibile chiamare tale comando impostando `CommandParameter` a `View.HomePage`.  
+### <a name="call-extensions-from-the-command-well"></a>Chiamare anche le estensioni del comando  
+ È possibile chiamare i comandi da pacchetti VSPackage registrati con la stessa sintassi che consente di chiamare gli altri comandi di Visual Studio. Ad esempio, se un pacchetto VSPackage installati aggiunge un **Home Page** comando per il **vista** menu, è possibile chiamare tale comando impostando `CommandParameter` a `View.HomePage`.  
   
 > [!NOTE]
 >  Se si chiama un comando che è associato a un pacchetto VSPackage, è necessario caricare il pacchetto quando viene richiamato il comando.  
   
-## <a name="adding-commands-from-assemblies"></a>Aggiunta di comandi dagli assembly  
- Per chiamare un comando da un assembly o accedere al codice in un VSPackage che non è associato a un comando di menu, è necessario creare un alias per l'assembly e quindi chiamare l'alias.  
+## <a name="add-commands-from-assemblies"></a>Aggiungere comandi dagli assembly  
+ Per chiamare un comando da un assembly o accedere al codice in un pacchetto VSPackage che non è associato a un comando di menu, è necessario creare un alias per l'assembly e quindi chiamare l'alias.  
   
-#### <a name="to-call-a-command-from-an-assembly"></a>Per chiamare un comando da un assembly  
+### <a name="to-call-a-command-from-an-assembly"></a>Per chiamare un comando da un assembly  
   
 1.  Nella soluzione, aggiungere un riferimento all'assembly.  
   
-2.  Nella parte superiore del file StartPage, aggiungere una direttiva dello spazio dei nomi per l'assembly, come illustrato nell'esempio seguente.  
+2.  In cima il *StartPage* file, aggiungere una direttiva dello spazio dei nomi per l'assembly, come illustrato nell'esempio seguente.  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
@@ -90,12 +90,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  È necessario copiare l'assembly e quindi incollarlo in... \\ *Cartella di installazione di visual Studio*\common7\ide\privateassemblies\. per assicurarsi che sia stata caricata prima che venga chiamato.  
+>  È necessario copiare l'assembly e quindi incollarlo in *... \\\Common7\IDE\PrivateAssemblies. {cartella di installazione di visual Studio}\* per assicurarsi che il caricamento prima che venga chiamato.  
   
-## <a name="adding-commands-with-the-dte-object"></a>Aggiunta di comandi con l'oggetto DTE  
- È possibile accedere all'oggetto DTE da una pagina iniziale nel markup e nel codice.  
+## <a name="add-commands-with-the-dte-object"></a>Aggiungere i comandi con l'oggetto DTE  
+ È possibile accedere all'oggetto DTE da una pagina iniziale, nel markup e nel codice.  
   
- Nel codice, è possibile accedervi tramite la [estensione di Markup Binding](/dotnet/framework/wpf/advanced/binding-markup-extension) sintassi per chiamare il <xref:EnvDTE.DTE> oggetto. È possibile utilizzare questo approccio per associare le proprietà semplici, ad esempio quelli che restituiscono raccolte, ma non è possibile associare ai metodi o servizi. Nell'esempio seguente un <xref:System.Windows.Controls.TextBlock> controllo associato al <xref:EnvDTE._DTE.Name%2A> proprietà e un <xref:System.Windows.Controls.ListBox> controllo che enumera il <xref:EnvDTE.Window.Caption%2A> le proprietà della raccolta restituita dal <xref:EnvDTE._DTE.Windows%2A> proprietà.  
+ Nel markup, è possibile accedervi usando il [estensione di Markup Binding](/dotnet/framework/wpf/advanced/binding-markup-extension) sintassi per chiamare il <xref:EnvDTE.DTE> oggetto. È possibile usare questo approccio da associare alla proprietà semplici, ad esempio quelli che restituiscono raccolte, ma non è possibile associare ai metodi o servizi. L'esempio seguente mostra una <xref:System.Windows.Controls.TextBlock> controllo associato al <xref:EnvDTE._DTE.Name%2A> proprietà e un <xref:System.Windows.Controls.ListBox> controllo che enumera il <xref:EnvDTE.Window.Caption%2A> le proprietà della raccolta restituito dal <xref:EnvDTE._DTE.Windows%2A> proprietà.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  
@@ -111,4 +111,4 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Per un esempio, vedere [procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Aggiunta di un controllo utente nella pagina iniziale](../extensibility/adding-user-control-to-the-start-page.md)
+ [Aggiunta di controllo utente nella pagina iniziale](../extensibility/adding-user-control-to-the-start-page.md)
