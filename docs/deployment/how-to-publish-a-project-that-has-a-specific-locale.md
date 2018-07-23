@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: pubblicare un progetto con un specifico delle impostazioni locali | Documenti Microsoft'
+title: 'Procedura: pubblicare un progetto dotato di impostazioni locali specifiche | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,26 +22,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8975c362039e347700e4256036998e8386c2e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561610"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080799"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: pubblicare un progetto dotato di impostazioni locali specifiche
 Accade spesso che un'applicazione contenga componenti con impostazioni locali diverse. In questi casi si crea una soluzione con più progetti, che vengono poi pubblicati con impostazioni locali differenti. Questa procedura illustra come usare una macro per pubblicare il primo progetto in una soluzione con le impostazioni locali 'en'. Se si vuole provare la procedura con impostazioni locali diverse da 'en', impostare `localeString` nella macro in modo che corrisponda alle impostazioni locali in uso (ad esempio, 'de' o 'de-DE').  
   
 > [!NOTE]
->  Quando si usa questa macro, il percorso di pubblicazione deve essere una condivisione UNC (Universal Naming Convention) o un URL valido. È anche necessario installare Internet Information Services (IIS) nel computer. Per installare IIS, nel **avviare** menu, fare clic su **Pannello di controllo**. Fare doppio clic su **aggiungere o rimuovere i programmi**. In **Aggiungi / Rimuovi programmi**, fare clic su **Installazione componenti di Windows**. Nel **Aggiunta guidata componenti di Windows**, selezionare il **Internet Information Services (IIS)** casella di controllo di **componenti** elenco. Quindi fare clic su **fine** per chiudere la procedura guidata.  
+>  Quando si usa questa macro, il percorso di pubblicazione deve essere una condivisione UNC (Universal Naming Convention) o un URL valido. È anche necessario installare Internet Information Services (IIS) nel computer. Per installare IIS, nelle **avviare** menu, fare clic su **Pannello di controllo**. Fare doppio clic su **aggiungere o rimuovere programmi**. Nelle **Aggiungi / Rimuovi programmi**, fare clic su **Installazione componenti di Windows**. Nel **Aggiunta guidata componenti di Windows**, selezionare la **Internet Information Services (IIS)** casella di controllo la **componenti** elenco. Quindi fare clic su **fine** per chiudere la procedura guidata.  
   
 ### <a name="to-create-the-publishing-macro"></a>Per creare la macro di pubblicazione  
   
-1.  Per aprire Esplora Macro, scegliere il **strumenti** dal menu **macro**, quindi fare clic su **Esplora Macro**.  
+1.  Per aprire Esplora Macro, scegliere il **degli strumenti** dal menu **macro**e quindi fare clic su **Esplora Macro**.  
   
-2.  Creare un nuovo modulo macro. In Esplora Macro selezionare **MyMacros**. Nel **strumenti** dal menu **macro**, quindi fare clic su **nuovo modulo Macro**. Denominare il modulo **PublishSpecificCulture**.  
+2.  Creare un nuovo modulo macro. In Esplora Macro, selezionare **MyMacros**. Nel **degli strumenti** dal menu **macro**e quindi fare clic su **nuovo modulo Macro**. Denominare il modulo **PublishSpecificCulture**.  
   
-3.  In Esplora Macro espandere il **MyMacros** nodo e quindi aprire il **PublishAllProjects** modulo facendovi doppio clic (o dal **strumenti** dalmenu**Macro**, quindi fare clic su **IDE macro**).  
+3.  In Esplora Macro espandere il **MyMacros** nodo e quindi aprire il **PublishAllProjects** modulo facendo doppio (e viceversa, il **strumenti** menu, scegliere **Macro**, quindi fare clic su **IDE macro**).  
   
 4.  In IDE macro aggiungere il codice seguente al modulo, dopo le istruzioni `Import`:  
   
@@ -141,30 +141,30 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>Per pubblicare un progetto per impostazioni locali specifiche  
   
-1.  Per creare un progetto applicazione Windows di Visual Basic, nel **File** dal menu **New**, quindi fare clic su **progetto**.  
+1.  Per creare un progetto di applicazione Windows di Visual Basic, nelle **File** dal menu **New**, quindi fare clic su **progetto**.  
   
-2.  Nel **nuovo progetto** nella finestra di dialogo **applicazione Windows** dal **Visual Basic** nodo. Denominare il progetto **PublishLocales**.  
+2.  Nel **nuovo progetto** finestra di dialogo **Windows Application** dal **Visual Basic** nodo. Denominare il progetto *PublishLocales*.  
   
-3.  Fare clic su Form1. Nel **proprietà** finestra, in **progettazione**, modificare il **Language** proprietà **(predefinito)** a **inglese**. Modifica il **testo** proprietà del form su **MyForm**.  
+3.  Fare clic su Form1. Nel **delle proprietà** finestra, in **progettazione**, modificare il **Language** proprietà da **(predefinito)** a **inglese**. Modifica il **testo** proprietà del form su **MyForm**.  
   
      Notare che i file DDL delle risorse localizzate non vengono creati finché non sono necessari. Vengono creati, ad esempio, quando si modifica il testo del form o uno dei relativi controlli dopo avere specificato le nuove impostazioni locali.  
   
-4.  Pubblicare il progetto PublishLocales usando l'IDE di Visual Studio.  
+4.  Pubblicare *PublishLocales* usando l'IDE di Visual Studio.  
   
-     In **Esplora**, selezionare il progetto PublishLocales. Nel **progetto** dal menu **proprietà**. In Creazione progetti, nelle **pubblica** , specificare un percorso di pubblicazione **http://localhost/PublishLocales**e quindi fare clic su **pubblica**.  
+     Nelle **Esplora soluzioni**, selezionare *PublishLocales*. Nel **Project** dal menu **proprietà**. In Creazione progetti, nella **Publish** , specificare un percorso di pubblicazione **http://localhost/PublishLocales**e quindi fare clic su **pubblica**.  
   
      Chiudere la pagina Web di pubblicazione non appena viene visualizzata. In questa fase non è necessario installare il progetto, ma solo pubblicarlo  
   
-5.  Pubblicare di nuovo il progetto PublishLocales richiamando la macro nella finestra del prompt dei comandi di Visual Studio. Per visualizzare la finestra prompt dei comandi, scegliere il **vista** dal menu **altre finestre** e quindi fare clic su **finestra di comando**, oppure premere CTRL + ALT + A. Nella finestra del prompt dei comandi, digitare `macros`; completamento automatico fornirà un elenco delle macro disponibili. Selezionare la macro seguente e premere INVIO:  
+5.  Pubblicare *PublishLocales* nuovamente richiamando la macro nella finestra del Prompt dei comandi di Visual Studio. Per visualizzare la finestra prompt dei comandi, scegliere il **vista** dal menu **Other Windows** e quindi fare clic su **finestra di comando**, oppure premere **Ctrl** + **Alt**+**oggetto**. Nella finestra del prompt dei comandi, digitare `macros`; completamento automatico fornirà un elenco delle macro disponibili. Selezionare la macro seguente e premere INVIO:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  Dopo il completamento del processo di pubblicazione verrà generato il messaggio "Publish succeeded for PublishLocales\PublishLocales.vbproj. Publish language was 'en'." Fare clic su **OK** nella finestra di messaggio. Quando viene visualizzata la pagina Web di pubblicazione, fare clic su **installare**.  
+6.  Quando il processo di pubblicazione ha esito positivo, verrà generato un messaggio che indica che "è riuscita per la pubblicazione *Publishlocales\publishlocales.vbproj*. Publish language was 'en'." Fare clic su **OK** nella finestra di messaggio. Quando viene visualizzata la pagina Web di pubblicazione, fare clic su **installare**.  
   
-7.  Controllare il percorso C:\Inetpub\wwwroot\PublishLocales\en. Dovrebbero essere presenti i file installati, tra cui i manifesti, setup.exe e il file della pagina Web di pubblicazione, oltre alla DLL delle risorse localizzate. Per impostazione predefinita, ClickOnce aggiunge ai file EXE e DLL l'estensione deploy, che può essere rimossa dopo la distribuzione.  
+7.  Cerca in *C:\Inetpub\wwwroot\PublishLocales\en*. I file installati, ad esempio i manifesti, dovrebbe *setup.exe*e il file di pagina Web pubblica, oltre alla DLL delle risorse localizzate. (Per impostazione predefinita, ClickOnce aggiunge un *deploy* estensione exe e DLL; è possibile rimuovere questa estensione dopo la distribuzione.)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [La pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Ambiente di sviluppo di macro](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
  [Finestra Esplora macro](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Procedura: modificare e creare a livello di programmazione delle macro](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Procedura: modificare e creare a livello di codice delle macro](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)

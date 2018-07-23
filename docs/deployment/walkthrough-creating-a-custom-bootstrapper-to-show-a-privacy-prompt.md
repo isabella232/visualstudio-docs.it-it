@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808442"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152500"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procedura dettagliata: Creare un programma di avvio automatico personalizzato con un prompt di privacy
 È possibile configurare le applicazioni ClickOnce per l'aggiornamento automatico quando gli assembly con le versioni più recenti di file e delle versioni degli assembly saranno disponibili. Per assicurarsi che i clienti di consenso a questo comportamento, è possibile visualizzare un prompt di privacy a essi. Quindi, è possibile scegliere se concedere l'autorizzazione per l'applicazione per aggiornare automaticamente. Se l'applicazione non è consentita l'aggiornamento automatico, non viene installato.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
   
 -   Visual Studio 2010.  
   
-## <a name="create-an-update-consent-dialog-box"></a>Creare una finestra di dialogo di consenso di aggiornamento  
+## <a name="create-an-update-consent-dialog-box"></a>Creare una finestra di dialogo di consenso all'aggiornamento  
  Per visualizzare un prompt di privacy, creare un'applicazione che richiede il lettore a fornire il consenso agli aggiornamenti automatici per l'applicazione.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Per creare una finestra di dialogo di consenso  
@@ -116,7 +116,7 @@ ms.locfileid: "38808442"
   
     2.  Nel **Project** menu, fare clic su **Aggiungi modulo**e quindi fare clic su **Add**.  
   
-    3.  Nel file di codice Module1.vb, aggiungere il codice seguente.  
+    3.  Nel *Module1.vb* file di codice, aggiungere il codice seguente.  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ ms.locfileid: "38808442"
   
      Per Visual c# solo per gli sviluppatori:  
   
-     Aprire il file di codice Program.cs e aggiungere il codice seguente.  
+     Aprire il *Program.cs* file di codice e aggiungere il codice seguente.  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ ms.locfileid: "38808442"
   
  Questa procedura viene illustrato come creare un pacchetto di programma di avvio automatico personalizzato creando i documenti seguenti:  
   
--   Un Product manifest file per descrivere il contenuto del programma di avvio automatico.  
+-   Oggetto *Product* file manifesto per descrivere il contenuto del programma di avvio automatico.  
   
--   Un file manifesto di package. XML per elencare gli aspetti specifici della localizzazione del pacchetto, ad esempio stringhe e le condizioni di licenza software.  
+-   Oggetto *package* file manifesto per elencare gli aspetti specifici della localizzazione del pacchetto, ad esempio stringhe e le condizioni di licenza software.  
   
 -   Un documento per le condizioni di licenza software.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Passaggio 1: Creare la directory di avvio automatico  
   
-1.  Creare una directory denominata **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.  
+1.  Creare una directory denominata **UpdateConsentDialog** nel *%PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages*.  
   
     > [!NOTE]
     >  Potrebbe essere necessario privilegi di amministratore per creare questa cartella.  
   
-2.  Nella directory UpdateConsentDialog, creare una sottodirectory denominata en.  
+2.  Nel *UpdateConsentDialog* directory, creare una sottodirectory denominata *en*.  
   
     > [!NOTE]
     >  Creare una nuova directory per ciascuna lingua. Ad esempio, è possibile aggiungere le sottodirectory per le impostazioni locali de e fr. Queste directory conterrebbe il francese e tedesco stringhe e i language pack, se necessario.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Passaggio 2: Creare il file manifesto di Product. Xml  
   
-1.  Creare un file di testo denominato `product.xml`.  
+1.  Creare un file di testo denominato *Product*.  
   
-2.  Nel file di Product. XML, aggiungere il codice XML seguente. Assicurarsi che non sovrascrivere il codice XML esistente.  
+2.  Nel *Product* , aggiungere il codice XML seguente. Assicurarsi che non sovrascrivere il codice XML esistente.  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ ms.locfileid: "38808442"
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Passaggio 3: Creare il manifesto del package. XML file e il software di condizioni di licenza  
   
-1.  Creare un file di testo denominato `package.xml`.  
+1.  Creare un file di testo denominato *package*.  
   
-2.  Nel file package. XML, aggiungere il codice XML seguente per definire le impostazioni locali e includere le condizioni di licenza software. Assicurarsi che non sovrascrivere il codice XML esistente.  
+2.  Nel *package* , aggiungere il codice XML seguente per definire le impostazioni locali e includere le condizioni di licenza software. Assicurarsi che non sovrascrivere il codice XML esistente.  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ ms.locfileid: "38808442"
   
 3.  Salvare il file nella directory del programma di bootstrap UpdateConsentDialog nella sottodirectory en.  
   
-4.  Creare un documento denominato EULA. RTF per le condizioni di licenza software.  
+4.  Creare un documento denominato *EULA. RTF* per le condizioni di licenza software.  
   
     > [!NOTE]
     >  Le condizioni di licenza software devono includere informazioni sulle licenze, garanzia, responsabilità e le leggi locali. Questi file devono essere specifiche delle impostazioni locali, assicurarsi che il file viene salvato in un formato che supporta i caratteri MBCS o UNICODE. Consultare l'ufficio legale sul contenuto delle condizioni di licenza software.  
   
-5.  Salvare il documento nella directory del programma di bootstrap UpdateConsentDialog nella sottodirectory en.  
+5.  Salvare il documento nella sottodirectory en nel *UpdateConsentDialog* directory bootstrapper.  
   
-6.  Se necessario, creare un nuovo file manifesto di package. XML e un nuovo documento EULA. RTF per le condizioni di licenza software per ognuna delle impostazioni locali. Ad esempio, se è stata creata una sottodirectory per le impostazioni locali de e fr, creare condizioni di licenza software e i file manifesto separato package. XML e salvarli in sottodirectory fr e de.  
+6.  Se necessario, creare una nuova *package. XML* file e un nuovo manifesto *EULA. RTF* documento per le condizioni di licenza software per ognuna delle impostazioni locali. Ad esempio, se è stata creata una sottodirectory per le impostazioni locali de e fr, creare condizioni di licenza software e i file manifesto separato package. XML e salvarli in sottodirectory fr e de.  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Impostare l'applicazione di fornire il consenso di aggiornamento come prerequisito  
  In Visual Studio, è possibile impostare l'applicazione di fornire il consenso di aggiornamento come prerequisito.  
@@ -260,7 +260,7 @@ ms.locfileid: "38808442"
   
 4.  Se l'output di pubblicazione non viene aperto automaticamente, passare all'output della pubblicazione.  
   
-5.  Eseguire il programma Setup.exe.  
+5.  Eseguire la *Setup.exe* programma.  
   
      Il programma di installazione viene illustrato il contratto di licenza della finestra di consenso di aggiornamento software.  
   
@@ -286,7 +286,7 @@ ms.locfileid: "38808442"
   
 4.  Se l'output di pubblicazione non viene aperto automaticamente, passare all'output della pubblicazione.  
   
-5.  Eseguire il programma Setup.exe.  
+5.  Eseguire la *Setup.exe* programma.  
   
      Il programma di installazione viene illustrato il contratto di licenza della finestra di consenso di aggiornamento software.  
   
@@ -302,7 +302,7 @@ ms.locfileid: "38808442"
   
 ## <a name="see-also"></a>Vedere anche  
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)   
- [Creazione di pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md)   
+ [Creare pacchetti di programma di avvio automatico](../deployment/creating-bootstrapper-packages.md)   
  [Procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md)   
  [Procedura: creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)   
- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare un manifesto di pacchetto | Documenti Microsoft'
+title: 'Procedura: creare un manifesto di pacchetto | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,31 +20,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2e6a231ce597e2ec6a3e04cf74521b6c10d2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31563674"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154629"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: creare un manifesto di pacchetto
-Per distribuire i prerequisiti per l'applicazione, è possibile utilizzare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ciascuna lingua. Le funzionalità condivise tra le diverse versioni localizzate devono andare nel manifesto del prodotto.  
+Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Le funzionalità condivise tra le versioni localizzate che devono essere inserite il manifesto del prodotto.  
   
- Per ulteriori informazioni sui manifesti di pacchetto, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
+ Per altre informazioni sui manifesti di pacchetto, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).  
   
-## <a name="creating-the-package-manifest"></a>Creazione del manifesto del pacchetto  
+## <a name="create-the-package-manifest"></a>Creare il manifesto del pacchetto  
   
-#### <a name="to-create-the-package-manifest"></a>Per creare il manifesto di pacchetto  
+#### <a name="to-create-the-package-manifest"></a>Per creare il manifesto del pacchetto  
   
-1.  Creare una directory per il pacchetto del programma di avvio automatico. In questo esempio viene utilizzato c:\package.  
+1.  Creare una directory per il pacchetto di programma di avvio automatico. Questo esempio viene usato *c:\package*.  
   
-2.  Creare una sottodirectory con il nome delle impostazioni locali, ad esempio en per la lingua inglese.  
+2.  Creare una sottodirectory con il nome delle impostazioni locali, ad esempio *en* per la lingua inglese.  
   
-3.  In Visual Studio, creare un file XML denominato `package.xml`e salvarlo nella cartella c:\package\en.  
+3.  In Visual Studio, creare un file XML denominato *package. XML*e salvarlo per il *c:\package\en.* cartella.  
   
-4.  Aggiungere codice XML per elencare il nome del pacchetto, le impostazioni cultura per il manifesto di pacchetto di aggiornamento e il contratto di licenza facoltativo. Il codice XML seguente utilizza le variabili `DisplayName` e `Culture`, che sono definite in un elemento successivo.  
+4.  Aggiungere codice XML per elencare il nome del pacchetto, le impostazioni cultura per questo manifesto del pacchetto di aggiornamento e il contratto di licenza facoltativo. Il codice XML seguente usa le variabili `DisplayName` e `Culture`, che sono definiti in un elemento successivo.  
   
-    ```  
+    ```xml  
     <Package  
         xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
         Name="DisplayName"  
@@ -52,17 +52,17 @@ Per distribuire i prerequisiti per l'applicazione, è possibile utilizzare un pa
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Aggiungere codice XML per elencare tutti i file che si trovano nella directory specifiche delle impostazioni locali. Il codice XML seguente viene utilizzato un file denominato EULA che è applicabile per il **en** internazionali.  
+5.  Aggiungere codice XML per elencare tutti i file che si trovano nella directory specifiche delle impostazioni locali. Il codice XML seguente viene utilizzato un file denominato *EULA* che è applicabile per il **en** delle impostazioni locali.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
       <PackageFile Name="eula.txt"/>  
     </PackageFiles>  
     ```  
   
-6.  Aggiungere codice XML per definire le stringhe localizzabili per il pacchetto del programma di avvio automatico. Il seguente codice XML aggiunge le stringhe di errore per le impostazioni locali en.  
+6.  Aggiungere codice XML per definire le stringhe localizzabili per il pacchetto di programma di avvio automatico. Il codice XML seguente aggiunge le stringhe di errore per il **en** delle impostazioni locali.  
   
-    ```  
+    ```xml  
       <Strings>  
         <String Name="DisplayName">Custom Bootstrapper Package</String>  
         <String Name="CultureName">en</String>  
@@ -73,12 +73,12 @@ Per distribuire i prerequisiti per l'applicazione, è possibile utilizzare un pa
     </Strings>  
     ```  
   
-7.  Copiare la cartella c:\package. nella directory di avvio automatico di Visual Studio. Per Visual Studio 2010, si tratta della directory di Sdks\windows\v7.0A\Bootstrapper\Packages. \Programmi\Microsoft.  
+7.  Copia il *c:\package.* cartella nella directory di avvio automatico di Visual Studio. Per Visual Studio 2010, questo è il *\Programmi\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.* directory.  
   
 ## <a name="example"></a>Esempio  
  Il manifesto del pacchetto contiene informazioni specifiche delle impostazioni locali, ad esempio i messaggi di errore, condizioni di licenza software e i language pack.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Package  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
@@ -101,4 +101,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)
+ [Riferimento allo schema di Product e package](../deployment/product-and-package-schema-reference.md)
