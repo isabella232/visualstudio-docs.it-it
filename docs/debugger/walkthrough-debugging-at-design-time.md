@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug in fase di progettazione - Visual Studio | Documenti Microsoft
+title: Eseguire il debug in fase di progettazione - Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c569ba018cfaa65cf2fec3edcf0676ef374db225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476767"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180178"
 ---
 # <a name="debug-at-design-time-in-visual-studio"></a>Eseguire il debug in fase di progettazione in Visual Studio
 
-In alcuni scenari, si desidera eseguire il debug di codice in fase di progettazione ora invece che durante l'esecuzione dell'applicazione. È possibile farlo usando il **immediato** finestra. Se si desidera eseguire il debug di codice XAML che interagisce con altro codice, ad esempio il codice di associazione dati, è possibile utilizzare **Debug** > **Connetti a processo** a tale scopo.
+In alcuni scenari, è possibile eseguire il debug di codice in fase di progettazione anziché di tempo mentre l'applicazione è in esecuzione. È possibile farlo usando il **Immediate** finestra. Se si desidera eseguire il debug di codice XAML che interagisce con altro codice, ad esempio il codice di associazione dati, è possibile usare **Debug** > **Connetti a processo** a tale scopo.
   
 ### <a name="debug-at-design-time-using-the-immediate-window"></a>Eseguire il debug in fase di progettazione utilizzando la finestra controllo immediata  
 
-È possibile utilizzare Visual Studio **immediato** finestra per eseguire una funzione o una subroutine quando l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio interromperà l'esecuzione al momento appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
+È possibile usare Visual Studio **Immediate** finestra per eseguire una funzione o subroutine mentre l'applicazione non è in esecuzione. Se la funzione o subroutine contiene un punto di interruzione, Visual Studio si interromperà l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Questa funzionalità è denominata debug in fase di progettazione.  
 
-Nell'esempio seguente è in Visual Basic, ma la **immediato** finestra è supportata anche nelle applicazioni c# e C++.
+L'esempio seguente è in Visual Basic, ma il **Immediate** finestra è supportata anche nelle applicazioni c# e C++.
   
 1.  Incollare il codice seguente in un'applicazione console Visual Basic:  
   
@@ -60,47 +60,47 @@ Nell'esempio seguente è in Visual Basic, ma la **immediato** finestra è suppor
   
 2.  Impostare un punto di interruzione sulla riga che legge, `s="Add BreakPoint Here"`.  
   
-3.  Aprire il **immediato** finestra (**Debug** > **Windows** > **immediato**) e digitare il comando seguente nel finestra: `?MyFunction<enter>`  
+3.  Aprire il **controllo immediato** finestra (**Debug** > **Windows** > **immediato**) e digitare il comando seguente nel finestra: `?MyFunction<enter>`  
   
-4.  Verificare che lo stack di chiamate è accurato e che è stato raggiunto il punto di interruzione.  
+4.  Verificare che è stato raggiunto il punto di interruzione e che lo stack di chiamate è accurato.  
   
 5.  Nel **Debug** menu, fare clic su **continua**e verificare che sia ancora in modalità progettazione.  
   
-6.  Digitare il comando seguente nel **immediato** finestra: `?MyFunction<enter>`  
+6.  Digitare il comando seguente nel **Immediate** finestra: `?MyFunction<enter>`  
   
-7.  Digitare il comando seguente nel **immediato** finestra: `?MySub<enter>`  
+7.  Digitare il comando seguente nel **Immediate** finestra: `?MySub<enter>`  
   
-8.  Verificare che il punto di interruzione e controllare il valore della variabile statica `i` nel **variabili locali** finestra. Deve essere il valore 3.  
+8.  Verificare che sia stato raggiunto il punto di interruzione ed esamina il valore della variabile statica `i` nella **variabili locali** finestra. Deve avere il valore di 3.  
   
-9. Verificare che lo stack di chiamate sia accurato.  
+9. Verificare che lo stack di chiamate è accurato.  
   
 10. Nel **Debug** menu, fare clic su **continua**e verificare che sia ancora in modalità progettazione.  
 
 ## <a name="debug-at-design-time-from-the-xaml-designer"></a>Eseguire il debug in fase di progettazione dalla finestra di progettazione XAML
 
-Può essere utile eseguire il debug di codice dalla finestra di progettazione XAML in alcuni scenari di associazione dati dichiarativa.
+Può essere utile eseguire il debug di code-behind dalla finestra di progettazione XAML in alcuni scenari di associazione dichiarativa dei dati.
 
 1. Nel progetto, aggiungere una nuova pagina XAML, ad esempio *temp.xaml*. Lasciare vuota la nuova pagina XAML. 
 
 1. Compilare la soluzione.
 
-1. Aprire *temp.xaml*, che carica la finestra di progettazione (*UwpSurface.exe* in un'app UWP, o *XDesProc.exe*) in modo è possibile collegarvi nei passaggi successivi. 
+1. Aprire *temp.xaml*, che carica la finestra di progettazione (*UwpSurface.exe* in un'app UWP, o *XDesProc.exe*) in modo che è possibile collegarvi nei passaggi successivi. 
 
-1. Aprire una nuova istanza di Visual Studio. Nella nuova istanza, aprire il **Connetti a processo** la finestra di dialogo (**Debug** > **Connetti a processo**), impostare il **allegarvi** campo al tipo di codice corretto, ad esempio **codice gestito (CoreCLR)** o il tipo di codice corretto in base alla versione di .NET. Selezionare il processo di progettazione corretto dall'elenco e scegliere **collegamento**.
+1. Aprire una nuova istanza di Visual Studio. Nella nuova istanza, aprire il **Connetti a processo** finestra di dialogo (**Debug** > **Connetti a processo**), impostare la **collegare a** campo al tipo di codice corretto, ad esempio **Managed Code (CoreCLR)** o il tipo di codice corretto in base la versione di .NET. Selezionare il processo di progettazione corretto dall'elenco e scegliere **Attach**.
 
-    Per UWP progetti per compilare 16299 o versioni successive, il processo di progettazione è *UwpSurface.exe*. Per WPF o le versioni di piattaforma UWP precedenti a 16299, il processo di progettazione è *XDesProc.exe*.
+    Per la piattaforma UWP progetti destinati a build 16299 o versione successiva, il processo di progettazione *UwpSurface.exe*. Per WPF o della piattaforma UWP in versioni precedenti a 16299, è il processo di progettazione *XDesProc.exe*.
 
-1. Quando connesso al processo, passare al progetto, aprire il code-behind in cui si desidera eseguire il debug e impostare un punto di interruzione.
+1. Durante la connessione al processo, passare al progetto, aprire il code-behind in cui si desidera eseguire il debug e impostare un punto di interruzione.
 
 1. Infine, aprire la pagina che contiene il codice XAML che include l'associazione dati.
 
-    Ad esempio, è possibile impostare un punto di interruzione nel codice del convertitore di tipo per il codice XAML seguente, che associa un controllo TextBlock in fase di progettazione.
+    Ad esempio, è possibile impostare un punto di interruzione nel codice del convertitore di tipo per il seguente XAML, che associa un elemento TextBlock in fase di progettazione.
 
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
-   Quando il caricamento della pagina, il punto di interruzione viene raggiunto.
+   Quando la pagina viene caricata, viene raggiunto il punto di interruzione.
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+ [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (Nozioni di base sul debugger)

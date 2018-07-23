@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548209"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176024"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
 In questo argomento vengono descritte le finestre di dialogo e altre finestre del debugger. Vengono illustrati solo gli elementi dell'interfaccia utente che presentano un comportamento di debug specifico per XSLT.
 
-Per altre informazioni, vedere la [riferimenti dell'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md).
+Per altre informazioni, vedere la [riferimento all'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Finestra Variabili locali
  Nella finestra Variabili locali vengono visualizzate le informazioni sulle variabili definite nel foglio di stile. La finestra Variabili locali contiene tre colonne di informazioni:
@@ -36,7 +36,7 @@ Per altre informazioni, vedere la [riferimenti dell'interfaccia utente di debug]
 
  **Type**
 
- Questa colonna identifica il tipo di dati di ciascuna variabile elencata nella **nome** colonna.
+ Questa colonna identifica il tipo di dati di ciascuna variabile elencata nel **nome** colonna.
 
  Nella finestra Variabili locali vengono inoltre visualizzate le variabili di contesto predefinite che tengono traccia del contesto della trasformazione XSLT. Nella tabella seguente vengono descritte le variabili di contesto predefinite usate dal debugger XSLT.
 
@@ -52,9 +52,9 @@ Per altre informazioni, vedere la [riferimenti dell'interfaccia utente di debug]
  Nel debugger XSLT viene usata una finestra separata per visualizzare l'output del debugger. Si tratta della stessa finestra usata per visualizzare l'output di un **Mostra l'Output XSL** comando.
 
 ## <a name="task-list"></a>Elenco attività
- Il **elenco attività** Elenca tutti gli errori di compilazione nel foglio di stile. Se si fa doppio clic sull'errore il cursore si sposta sulla riga contenente l'errore.
+ Il **elenco attività** sono elencati tutti gli errori di compilazione nel foglio di stile. Se si fa doppio clic sull'errore il cursore si sposta sulla riga contenente l'errore.
 
- Il **elenco attività** comprende gli eventuali errori che si verificano nei blocchi di script nel file XSLT.
+ Il **elenco attività** includa gli errori che si verificano nei blocchi di script nel file XSLT.
 
 > [!NOTE]
 > Il debugger XSLT non dispone di avvisi, in modo che vengano visualizzati nel **elenco attività**.
@@ -73,16 +73,16 @@ Per altre informazioni, vedere la [riferimenti dell'interfaccia utente di debug]
  Le variabili visualizzate nella finestra Espressioni di controllo sono relative al contesto corrente (l'elemento in primo piano nello stack di chiamate). Se si modifica il contesto, la finestra viene aggiornata e vengono visualizzate le variabili impostate per quel determinato contesto.
 
 ## <a name="call-stack-window"></a>Finestra Stack di chiamate
- Il **Stack di chiamate** finestra consente di visualizzare i nomi delle funzioni sui valori di parametro, i tipi di parametro e stack di chiamate. Le informazioni relative allo stack di chiamate sono visualizzate solo quando il programma in fase di debug si trova in modalità interruzione.
+ Il **Stack di chiamate** finestra viene utilizzata per visualizzare i nomi delle funzioni in di stack di chiamate, i tipi di parametro e i valori dei parametri. Le informazioni relative allo stack di chiamate sono visualizzate solo quando il programma in fase di debug si trova in modalità interruzione.
 
- Lo stack di chiamate rappresenta i vari contesti in cui si verifica l'esecuzione XSLT. Ad esempio, se viene rilevata una chiamata dal modello "a" al modello "b", modello "a" e modello "b" vengono visualizzate nel **Stack di chiamate** finestra con il contesto corrente nella parte superiore dell'elenco. L'utente è in grado di visualizzare la query attualmente in esecuzione.
+ Lo stack di chiamate rappresenta i vari contesti in cui si verifica l'esecuzione XSLT. Ad esempio, se viene eseguita una chiamata dal modello "a" al modello "b", modello "a" e modello "b" vengono visualizzati nei **Stack di chiamate** finestra con il contesto corrente nella parte superiore dell'elenco. L'utente è in grado di visualizzare la query attualmente in esecuzione.
 
  Se i modelli non dispongono di un nome nel file XSLT, vengono usati i nomi generati dal processore XSLT.
 
  Se si fa clic su un elemento diverso da quello presente all'inizio dell'elenco, viene indicato al visualizzatore dove si è verificata la creazione di un ramo dell'esecuzione XSLT usando l'evidenziazione verde standard e le frecce verdi.
 
 ## <a name="quickwatch-dialog-box"></a>Controllo immediato (finestra di dialogo)
- Il **controllo immediato** la finestra di dialogo viene utilizzata per valutare le espressioni XPath 1.0. Il nodo di contesto (il nodo `self::node()` proveniente dalla finestra Variabili locali) fornisce il contesto per l'esecuzione dell'espressione XPath. Il risultato dell'esecuzione dell'espressione XPath viene visualizzato nella finestra Espressioni di controllo.
+ Il **controllo immediato** nella finestra di dialogo viene utilizzata per valutare le espressioni XPath 1.0. Il nodo di contesto (il nodo `self::node()` proveniente dalla finestra Variabili locali) fornisce il contesto per l'esecuzione dell'espressione XPath. Il risultato dell'esecuzione dell'espressione XPath viene visualizzato nella finestra Espressioni di controllo.
 
  Nell'elenco seguente vengono descritte alcune restrizioni alla valutazione dell'espressione XPath.
 
@@ -97,10 +97,10 @@ Per altre informazioni, vedere [procedura: valutare un'espressione XPath](../xml
 ## <a name="disassembly-window"></a>Disassembly (finestra)
  Nella finestra Disassembly viene visualizzato il codice di assembly generato dal compilatore XSLT. Questa finestra può essere usata nello stesso modo in cui si usano tutte le altre finestre Disassembly di Visual Studio.
 
- Per ulteriori informazioni [procedura: utilizzare la finestra disassembly](../debugger/how-to-use-the-disassembly-window.md).
+ Per altre informazioni, [procedura: utilizzare la finestra disassembly](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)
-- [Nozioni di base sul debugger](../debugger/debugger-basics.md)
-- [Controllare le variabili nelle finestre variabili locali e Auto in Visual Studio](../debugger/autos-and-locals-windows.md)
+- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)
+- [Esaminare le variabili nelle finestre Auto e variabili locali in Visual Studio](../debugger/autos-and-locals-windows.md)

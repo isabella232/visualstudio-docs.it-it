@@ -1,5 +1,5 @@
 ---
-title: '&lt;dipendenza&gt; elemento (applicazione ClickOnce) | Documenti Microsoft'
+title: '&lt;dipendenza&gt; elemento (applicazione ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee364b7116bf69b961726ec2154809f66f9bc45
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1dbd882958c8542be1ec337386634af7dae2e70e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815035"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078560"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dipendenza&gt; elemento (applicazione ClickOnce)
 Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'applicazione.  
@@ -88,20 +88,20 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 </dependency>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
  Il `dependency` elemento è obbligatorio. Possono esistere più istanze di `dependency` nel manifesto dell'applicazione stessa.  
   
- Il `dependency` elemento non ha attributi e contiene gli elementi figlio seguenti.  
+ Il `dependency` elemento non ha attributi e contiene i seguenti elementi figlio.  
   
 ### <a name="dependentos"></a>dependentOS  
- Facoltativo. Contiene il `osVersionInfo` elemento. Il `dependentOS` e `dependentAssembly` elementi si escludono a vicenda: uno o l'altro deve esistere per un `dependency` elemento, ma non entrambi.  
+ Facoltativo. Contiene il `osVersionInfo` elemento. Il `dependentOS` e `dependentAssembly` elementi si escludono a vicenda: uno o l'altro necessarie affinché un `dependency` elemento, ma non entrambi.  
   
  `dependentOS` supporta gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`supportUrl`|Facoltativo. Specifica un URL di supporto per la piattaforma dipendente. L'URL viene visualizzato all'utente se viene trovata la piattaforma richiesta.|  
-|`description`|Facoltativo. Descrive, in forma leggibile, il sistema operativo specificato per il `dependentOS` elemento.|  
+|`supportUrl`|Facoltativo. Specifica un URL di supporto per la piattaforma di dipendenti. L'URL viene visualizzato all'utente se viene trovata la piattaforma richiesta.|  
+|`description`|Facoltativo. Descrive, in forma leggibile, il sistema operativo descritto dal `dependentOS` elemento.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentOS` e contiene l'elemento `os`. Questo elemento non ha attributi.  
@@ -115,22 +115,22 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 |`minorVersion`|Obbligatorio. Specifica il numero di versione secondaria del sistema operativo.|  
 |`buildNumber`|Obbligatorio. Specifica il numero di build del sistema operativo.|  
 |`servicePackMajor`|Obbligatorio. Specifica il numero principale del service pack del sistema operativo.|  
-|`servicePackMinor`|Facoltativo. Specifica il numero secondario del service pack del sistema operativo.|  
+|`servicePackMinor`|Facoltativo. Specifica il numero secondario di service pack del sistema operativo.|  
 |`productType`|Facoltativo. Identifica il valore del tipo di prodotto. I valori validi sono `server`, `workstation` e `domainController`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `workstation`.|  
-|`suiteType`|Facoltativo. Identifica una famiglia di prodotti disponibile nel sistema o il tipo di configurazione del sistema. I valori validi sono `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, e `terminal`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `professional`.|  
+|`suiteType`|Facoltativo. Identifica una famiglia di prodotti disponibile nel sistema, o tipo di configurazione del sistema. I valori validi sono `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, e `terminal`. Ad esempio, per Windows 2000 Professional, il valore dell'attributo è `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
- Facoltativo. Contiene il `assemblyIdentity` elemento. Il `dependentOS` e `dependentAssembly` elementi si escludono a vicenda: uno o l'altro deve esistere per un `dependency` elemento, ma non entrambi.  
+ Facoltativo. Contiene il `assemblyIdentity` elemento. Il `dependentOS` e `dependentAssembly` elementi si escludono a vicenda: uno o l'altro necessarie affinché un `dependency` elemento, ma non entrambi.  
   
- `dependentAssembly` presenta i seguenti attributi.  
+ `dependentAssembly` ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`dependencyType`|Obbligatorio. Specifica il tipo di dipendenza. I valori validi sono `preprequisite` e `install`. Un `install` assembly viene installato come parte di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. A `prerequisite` assembly deve essere presente nella global assembly cache (GAC) prima di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possibile installare l'applicazione.|  
+|`dependencyType`|Obbligatorio. Specifica il tipo di dipendenza. I valori validi sono `preprequisite` e `install`. Un' `install` assembly viene installato come parte di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Oggetto `prerequisite` assembly deve essere presente nella global assembly cache (GAC) prima di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata.|  
 |`allowDelayedBinding`|Obbligatorio. Specifica se l'assembly può essere caricato a livello di codice in fase di esecuzione.|  
-|`group`|Facoltativo. Se il `dependencyType` attributo è impostato su `install`, definisce un gruppo denominato di assembly che vengono installati solo su richiesta. Per altre informazioni, vedere [Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se impostato su `framework` e `dependencyType` attributo è impostato su `prerequisite`, definisce l'assembly come parte di .NET Framework. La cache di assembly globale (GAC) non viene controllata per questo assembly durante l'installazione in [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versioni successive.|  
-|`codeBase`|Obbligatorio quando il `dependencyType` attributo è impostato su `install`. Il percorso dell'assembly dipendente. Può essere un percorso assoluto o un percorso relativo al codice del manifesto di base. Questo percorso deve essere un URI valido affinché il manifesto dell'assembly sia valido.|  
-|`size`|Obbligatorio quando il `dependencyType` attributo è impostato su `install`. Le dimensioni dell'assembly dipendente, in byte.|  
+|`group`|Facoltativo. Se il `dependencyType` attributo è impostato su `install`, definisce un gruppo denominato di assembly che vengono installati solo su richiesta. Per altre informazioni, vedere [Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se impostato su `framework` e il `dependencyType` attributo è impostato su `prerequisite`, definisce l'assembly come parte di .NET Framework. La cache di assembly globale (GAC) non è selezionata per questo assembly durante l'installazione in [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versioni successive.|  
+|`codeBase`|Obbligatorio quando la `dependencyType` attributo è impostato su `install`. Il percorso dell'assembly dipendente. Potrebbe essere un percorso assoluto o un percorso relativo al codice del manifesto di base. Questo percorso deve essere un URI valido affinché il manifesto dell'assembly sia valido.|  
+|`size`|Obbligatorio quando la `dependencyType` attributo è impostato su `install`. Le dimensioni dell'assembly dipendente, in byte.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly` e ha l'attributo seguente.  
@@ -139,40 +139,40 @@ Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'a
 |---------------|-----------------|  
 |`name`|Obbligatorio. Identifica il nome dell'applicazione.|  
 |`version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|  
-|`publicKeyToken`|Facoltativo. Specifica una stringa esadecimale a 16 caratteri che rappresenta gli ultimi 8 byte del `SHA-1` hash del valore della chiave pubblica utilizzata per firmare l'assembly. La chiave pubblica utilizzata per firmare il catalogo deve essere maggiore o 2048 bit.|  
+|`publicKeyToken`|Facoltativo. Specifica una stringa esadecimale a 16 caratteri rappresentato dagli ultimi 8 byte del `SHA-1` valore della chiave pubblica utilizzata per firmare l'applicazione o assembly hash. La chiave pubblica usata per firmare il catalogo deve essere maggiore o 2048 bit.|  
 |`processorArchitecture`|Facoltativo. Specifica il processore. I valori validi sono `x86` per Windows a 32 bit e `I64` per Windows a 64 bit.|  
 |`language`|Facoltativo. Identifica i codici di lingua di due parti, ad esempio EN-US, dell'assembly.|  
   
 ### <a name="hash"></a>hash  
- Il `hash` elemento è un elemento figlio facoltativo del `assemblyIdentity` elemento. Il `hash` elemento non ha attributi.  
+ Il `hash` costituisce un elemento figlio facoltativo di `assemblyIdentity` elemento. Il `hash` elemento non ha attributi.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per verificare che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non viene incluso, questo controllo non verrà eseguito. Pertanto, omettendo il `hash` elemento non è consigliato.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza, per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
   
 ### <a name="dsigtransforms"></a>dsig: Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:Transforms` elemento non ha attributi.  
   
 ### <a name="dsigtransform"></a>dsig: Transform  
- Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. Il `dsig:Transform` dispone degli attributi seguenti.  
+ Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. Il `dsig:Transform` elemento ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Algorithm`|L'algoritmo utilizzato per calcolare il digest per questo file. L'unico valore attualmente utilizzato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ### <a name="dsigdigestmethod"></a>dsig: DigestMethod  
- Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestMethod` dispone degli attributi seguenti.  
+ Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestMethod` elemento ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Algorithm`|L'algoritmo utilizzato per calcolare il digest per questo file. L'unico valore attualmente utilizzato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ### <a name="dsigdigestvalue"></a>dsig:  
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestValue` elemento non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
   
 ## <a name="remarks"></a>Note  
- Tutti gli assembly utilizzati dall'applicazione devono avere un corrispondente `dependency` elemento. Gli assembly dipendenti non includono assembly che devono essere preinstallati nella global assembly cache come assembly di piattaforma.  
+ Tutti gli assembly usati dall'applicazione devono avere una corrispondente `dependency` elemento. Gli assembly dipendenti non includono gli assembly che devono essere preinstallati nella global assembly cache degli assembly di piattaforma.  
   
 ## <a name="example"></a>Esempio  
- L'esempio di codice seguente illustra `dependency` elementi in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Questo esempio di codice fa parte di un esempio più esaustivo disponibile per il [manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md) argomento.  
+ L'esempio di codice seguente illustra `dependency` elementi in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Questo esempio di codice è parte di un esempio più esaustivo disponibile per il [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md) argomento.  
   
 ```xml  
 <dependency>  

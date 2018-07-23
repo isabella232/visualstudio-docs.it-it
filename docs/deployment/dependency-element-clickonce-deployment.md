@@ -1,5 +1,5 @@
 ---
-title: '&lt;dipendenza&gt; elemento (distribuzione di ClickOnce) | Documenti Microsoft'
+title: '&lt;dipendenza&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -27,19 +27,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e217413a428c8c22712ac3a90836b1ea4fbc35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee76dbe8579ca37c538985bbabf953917b5fd9c8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31563053"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078680"
 ---
-# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dipendenza&gt; elemento (distribuzione di ClickOnce)
-Identifica la versione dell'applicazione da installare e il percorso del manifesto dell'applicazione.  
+# <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dipendenza&gt; elemento (distribuzione ClickOnce)
+Identifica la versione dell'applicazione per l'installazione e la posizione del manifesto dell'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```xml  
   
       <dependency>   
    <dependentAssembly  
@@ -72,66 +72,66 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 </dependency>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
  Il `dependency` elemento è obbligatorio. Non dispone di attributi. Un manifesto di distribuzione può avere più `dependency` elementi.  
   
- Il `dependency` elemento descrive in genere le dipendenze dell'applicazione principale dagli assembly contenuti in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Se l'applicazione Main.exe utilizza un assembly denominato DotNetAssembly. dll, tale assembly deve essere elencato in una sezione di dipendenza. Dipendenza, tuttavia, può inoltre essere formulata altri tipi di dipendenze, ad esempio le dipendenze da una versione specifica di common language runtime, in un assembly nella global assembly cache (GAC) o su un oggetto COM. Perché è una tecnologia di distribuzione no-touch, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non è possibile avviare il download e installazione di questi tipi di dipendenze, ma ne impedisce l'esecuzione dell'applicazione se uno o più dipendenze specificate non esistono.  
+ Il `dependency` elemento esprime in genere le dipendenze dell'applicazione principale negli assembly contenuti all'interno di un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione. Se l'applicazione Main.exe utilizza un assembly denominato DotNetAssembly. dll, tale assembly deve essere elencato nella sezione delle dipendenze. Dipendenza, tuttavia, può inoltre essere formulata altri tipi di dipendenze, ad esempio dipendenze da una versione specifica di common language runtime, in un assembly nella global assembly cache (GAC) o su un oggetto COM. Perché è una tecnologia di distribuzione automatica, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non è possibile avviare il download e installazione di questi tipi di dipendenze, ma impedisce l'esecuzione dell'applicazione se non sono presenti uno o più dipendenze specificate.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Obbligatorio. Questo elemento contiene il `assemblyIdentity` elemento. Nella tabella seguente vengono illustrati gli attributi di `dependentAssembly` supporta.  
+ Obbligatorio. Questo elemento contiene il `assemblyIdentity` elemento. La tabella seguente illustra gli attributi di `dependentAssembly` supporta.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`preRequisite`|Facoltativo. Specifica che l'assembly deve essere già esistente nella GAC. I valori validi sono `true` e `false`. Se `true`e l'assembly specificato non esiste nella GAC, l'applicazione non viene eseguito correttamente.|  
-|`visible`|Facoltativo. Identifica l'identità di applicazione di livello superiore, incluse le relative dipendenze. Utilizzato internamente da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] per gestire l'archiviazione di applicazioni e attivazione.|  
-|`dependencyType`|Obbligatorio. La relazione tra questa dipendenza e l'applicazione. I valori validi sono:<br /><br /> -   `install`. Componente rappresenta un'installazione distinta dall'applicazione corrente.<br />-   `preRequisite`. Componente è necessario per l'applicazione corrente.|  
+|`preRequisite`|Facoltativo. Specifica che l'assembly deve essere già esistente nella Global Assembly Cache. I valori validi sono `true` e `false`. Se `true`e l'assembly specificato non esiste nella Global Assembly Cache, non è possibile eseguire l'applicazione.|  
+|`visible`|Facoltativo. Identifica l'identità di applicazione di primo livello, incluse le relative dipendenze. Utilizzato internamente da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] per gestire archiviazione di applicazioni e attivazione.|  
+|`dependencyType`|Obbligatorio. La relazione tra questa dipendenza e l'applicazione. I valori validi sono:<br /><br /> -   `install`. Componente rappresenta un'installazione separata dall'applicazione corrente.<br />-   `preRequisite`. Componente è necessario per l'applicazione corrente.|  
 |`codebase`|Facoltativo. Il percorso completo del manifesto dell'applicazione.|  
 |`size`|Facoltativo. Le dimensioni del manifesto dell'applicazione, in byte.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly`. Il contenuto di `assemblyIdentity` deve essere identico a quello descritto nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Nella tabella seguente vengono illustrati gli attributi del `assemblyIdentity` elemento.  
+ Obbligatorio. Questo elemento è figlio dell'elemento `dependentAssembly`. Il contenuto del `assemblyIdentity` deve essere identico a quello descritto nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. La tabella seguente illustra gli attributi del `assemblyIdentity` elemento.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Name`|Obbligatorio. Identifica il nome dell'applicazione.|  
 |`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione, nel formato seguente: `major.minor.build.revision`|  
-|`publicKeyToken`|Obbligatorio. Specifica una stringa esadecimale a 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica utilizzata per firmare l'assembly. La chiave pubblica utilizzata per firmare deve essere 2048 bit o superiore.|  
+|`publicKeyToken`|Obbligatorio. Specifica una stringa esadecimale a 16 caratteri che rappresenta gli ultimi 8 byte dell'hash SHA-1 della chiave pubblica utilizzata per firmare l'applicazione o assembly. La chiave pubblica usata per firmare deve essere 2048 bit o superiore.|  
 |`processorArchitecture`|Obbligatorio. Specifica il microprocessore. I valori validi sono `x86` per Windows a 32 bit e `IA64` per Windows a 64 bit.|  
-|`Language`|Facoltativo. Identifica i codici di lingua di due parti dell'assembly. Ad esempio EN-US, che è l'acronimo per inglese (Stati Uniti). Il valore predefinito è `neutral`. Questo elemento è presente il `asmv2` dello spazio dei nomi.|  
-|`type`|Facoltativo. Per le versioni precedenti della tecnologia di installazione la compatibilità con Windows side-by-side. L'unico valore consentito è `win32`.|  
+|`Language`|Facoltativo. Identifica i codici di lingua di due parti dell'assembly. Ad esempio, EN-US, che è l'acronimo per inglese (Stati Uniti). Il valore predefinito è `neutral`. Questo elemento è presente il `asmv2` dello spazio dei nomi.|  
+|`type`|Facoltativo. Per tecnologia di installazione compatibilità con Windows side-by-side con le versioni precedenti. L'unico valore consentito è `win32`.|  
   
 ## <a name="hash"></a>hash  
- Il `hash` elemento è un elemento figlio facoltativo del `file` elemento. Il `hash` elemento non ha attributi.  
+ Il `hash` costituisce un elemento figlio facoltativo di `file` elemento. Il `hash` elemento non ha attributi.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza per verificare che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non viene incluso, questo controllo non verrà eseguito. Pertanto, omettendo il `hash` elemento non è consigliato.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Usa un hash algoritmico di tutti i file in un'applicazione come un controllo di sicurezza per assicurarsi che nessuno dei file sono stati modificati dopo la distribuzione. Se il `hash` elemento non è incluso, questo controllo non verrà eseguito. Pertanto, l'omissione di `hash` elemento non è consigliato.  
   
 ## <a name="dsigtransforms"></a>dsig: Transforms  
  Il `dsig:Transforms` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:Transforms` elemento non ha attributi.  
   
 ## <a name="dsigtransform"></a>dsig: Transform  
- Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. Nella tabella seguente vengono illustrati gli attributi del `dsig:Transform` elemento.  
+ Il `dsig:Transform` elemento è un elemento figlio obbligatorio del `dsig:Transforms` elemento. La tabella seguente illustra gli attributi del `dsig:Transform` elemento.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Algorithm`|L'algoritmo utilizzato per calcolare il digest per questo file. L'unico valore attualmente utilizzato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod  
- Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. Nella tabella seguente vengono illustrati gli attributi del `dsig:DigestMethod` elemento.  
+ Il `dsig:DigestMethod` elemento è un elemento figlio obbligatorio del `hash` elemento. La tabella seguente illustra gli attributi del `dsig:DigestMethod` elemento.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Algorithm`|L'algoritmo utilizzato per calcolare il digest per questo file. L'unico valore attualmente utilizzato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|`Algorithm`|L'algoritmo utilizzato per la quale calcolare il digest per questo file. Attualmente l'unico valore usato da [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ## <a name="dsigdigestvalue"></a>dsig:  
  Il `dsig:DigestValue` elemento è un elemento figlio obbligatorio del `hash` elemento. Il `dsig:DigestValue` elemento non ha attributi. Il valore di testo è l'hash calcolato per il file specificato.  
   
 ## <a name="remarks"></a>Note  
- Manifesti di distribuzione dispongono in genere un singolo `assemblyIdentity` elemento che identifica il nome e la versione del manifesto dell'applicazione.  
+ Manifesti di distribuzione hanno in genere un singolo `assemblyIdentity` elemento che identifica il nome e la versione del manifesto dell'applicazione.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio di codice riportato di seguito viene illustrato un `dependency` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione.  
+ Nell'esempio di codice riportato di seguito viene illustrato un `dependency` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione.  
   
-```  
+```xml  
 <!-- Identify the assembly dependencies -->  
 <dependency>  
   <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyApplication.exe" size="16384">  
@@ -148,9 +148,9 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 ```  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente specifica una dipendenza su un assembly già installato nella Global Assembly Cache.  
+ Esempio di codice seguente specifica una dipendenza in un assembly già installato nella Global Assembly Cache.  
   
-```  
+```xml  
 <dependency>  
   <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
     <assemblyIdentity name="GACAssembly" version="1.0.0.0" language="neutral" processorArchitecture="msil" />  
@@ -159,9 +159,9 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 ```  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente specifica una dipendenza da una versione specifica di common language runtime.  
+ Esempio di codice seguente specifica una dipendenza su una versione specifica di common language runtime.  
   
-```  
+```xml  
 <dependency>  
   <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
     <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50215.0" />  
@@ -172,7 +172,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente specifica una dipendenza del sistema operativo.  
   
-```  
+```xml  
 <dependency>  
    <dependentOS supportUrl="http://www.microsoft.com" description="Microsoft Windows Operating System">  
       <osVersionInfo>  

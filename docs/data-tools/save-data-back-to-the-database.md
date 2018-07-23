@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175330"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177344"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -185,7 +185,7 @@ Se le modifiche rifletteranno lo stato corrente dell'origine dati, non è più n
     > [!NOTE]
     > È possibile impedire che l'adapter automaticamente il commit delle modifiche quando si chiama il `Fill` metodo impostando il `AcceptChangesDuringFill` proprietà dell'adapter `false`. Se è impostato su `false`, il <xref:System.Data.DataRow.RowState%2A> di ogni riga viene inserita durante la compilazione è impostato su <xref:System.Data.DataRowState.Added>.
 
-- Dopo l'invio di set di dati modifiche a un altro processo, ad esempio un servizio Web XML.
+- Dopo l'invio di set di dati modifiche a un altro processo, ad esempio un servizio web XML.
 
     > [!CAUTION]
     > Eseguire il commit della modifica in questo modo consente di cancellare le informazioni di modifica. Eseguire operazioni non il commit delle modifiche fino a dopo aver fine esecuzione di operazioni che richiedono che l'applicazione per conoscere quali modifiche sono state apportate nel set di dati.

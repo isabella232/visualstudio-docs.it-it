@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548411"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178348"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Procedura: avviare il debug XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procedura: avvio del debug XSLT
 
 Il debugger XSLT può essere usato per eseguire il debug di un foglio di stile o di un'applicazione XSLT. Durante il debug è possibile eseguire il codice una riga alla volta eseguendo le istruzioni, ignorandole o eseguendole al di fuori del codice. I comandi per usare la funzionalità di esecuzione del codice riga per riga sono uguali a quelli del debugger XSLT e degli altri debugger di Visual Studio. Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visualizzazione del documento di input e dell'output XSLT.
 
@@ -30,13 +30,13 @@ Il debugger XSLT può essere usato per eseguire il debug di un foglio di stile o
 
 1. Aprire il foglio di stile nell'editor XML.
 
-1. Selezionare **Debug XSLT** dal **XML** menu.
+1. Selezionare **Debug XSLT** dalle **XML** menu.
 
 ### <a name="to-start-debugging-from-an-xml-input-document"></a>Per avviare il debug da un documento di input XML
 
 1. Aprire il documento XML nell'editor XML.
 
-1. Selezionare **Debug XSLT** dal **XML** menu.
+1. Selezionare **Debug XSLT** dalle **XML** menu.
 
 ## <a name="xslt-from-other-languages"></a>XSLT di altre lingue
 
@@ -94,4 +94,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura dettagliata: Debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Nozioni di base sul debugger](../debugger/debugger-basics.md)
+- [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)

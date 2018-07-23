@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058763"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176441"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il Debugger JIT in Visual Studio
 Debug Just-In-Time avvia Visual Studio automaticamente quando si verifica un'eccezione o un arresto anomalo del sistema in un'applicazione eseguita esternamente a Visual Studio. In questo modo è possibile testare l'applicazione quando Visual Studio non è in esecuzione e avviare il debug con Visual Studio quando si verifica un problema.
@@ -176,4 +176,4 @@ static void Main(string[] args)
      Per risolvere questo problema, usare il disco di installazione per reinstallare o riparare l'installazione di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
- [Sicurezza del debugger](../debugger/debugger-security.md) [nozioni fondamentali di debug](../debugger/debugger-basics.md) [Just-In-Time, debug, finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md) [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosi. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+ [Sicurezza del debugger](../debugger/debugger-security.md) [nozioni fondamentali di debug](../debugger/getting-started-with-the-debugger.md) [Just-In-Time, debug, finestra di dialogo Opzioni](../debugger/just-in-time-debugging-options-dialog-box.md) [avviso di sicurezza: connessione a un processo appartenente a un utente non attendibile può essere pericolosi. Se le informazioni seguenti sono sospette o non si è certi della loro provenienza e del loro stato, non connettersi al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

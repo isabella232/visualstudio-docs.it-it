@@ -1,5 +1,5 @@
 ---
-title: '&lt;assembly&gt; elemento (distribuzione di ClickOnce) | Documenti Microsoft'
+title: '&lt;assembly&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c9d72eafb03f22a01d22894bb887085648c324e3
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815665"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080633"
 ---
-# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; elemento (distribuzione di ClickOnce)
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; elemento (distribuzione ClickOnce)
 L'elemento di primo livello per il manifesto di distribuzione.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,17 +37,17 @@ L'elemento di primo livello per il manifesto di distribuzione.
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementi e attributi  
- Il `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento di contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono essere in spazi dei nomi seguenti: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, e `http://www.w3.org/2000/09/xmldsig#`. Gli elementi figlio dell'assembly devono essere anche in questi spazi dei nomi, per ereditarietà o per l'assegnazione di tag.  
+## <a name="elements-and-attributes"></a>Gli elementi e attributi  
+ Il `assembly` elemento è l'elemento radice ed è obbligatorio. Il primo elemento di contenuto deve essere un `assemblyIdentity` elemento. Gli elementi del manifesto devono essere in spazi dei nomi seguenti: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, e `http://www.w3.org/2000/09/xmldsig#`. Gli elementi figlio dell'assembly devono essere anche in questi spazi dei nomi, tramite ereditarietà o tramite l'assegnazione di tag.  
   
- Il `assembly` elemento presenta l'attributo seguente.  
+ Il `assembly` elemento ha l'attributo seguente.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`manifestVersion`|Obbligatorio. Questo attributo deve essere impostato su `1.0`.|  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio di codice seguente viene illustrato un `assembly` elemento in un manifesto di distribuzione per un'applicazione distribuita mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Questo esempio di codice fa parte di un esempio più esaustivo disponibile per il [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) argomento.  
+ L'esempio di codice seguente illustra un' `assembly` elemento in un manifesto di distribuzione per un'applicazione distribuita usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile per il [del manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) argomento.  
   
 ```xml  
 <asmv1:assembly   

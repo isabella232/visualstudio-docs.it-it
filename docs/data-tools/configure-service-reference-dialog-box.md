@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281066"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180464"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
@@ -50,7 +50,7 @@ Per l'accesso di **Configura riferimento al servizio** della finestra di dialogo
 
  **Indirizzo**
 
- Aggiorna l'indirizzo Web in cui un riferimento al servizio cerca un servizio. Ad esempio, durante lo sviluppo, il servizio può essere ospitato in un server di sviluppo e in seguito spostato in un server di produzione, è necessario eseguire un cambio di indirizzo.
+ Aggiorna l'indirizzo web in cui un riferimento al servizio cerca un servizio. Ad esempio, durante lo sviluppo, il servizio può essere ospitato in un server di sviluppo e in seguito spostato in un server di produzione, è necessario eseguire un cambio di indirizzo.
 
 > [!NOTE]
 > L'elemento Address non è disponibile quando il **Configura riferimento al servizio** verrà visualizzata la finestra di dialogo dalle **Add Service Reference Dialog Box**.
@@ -96,7 +96,7 @@ Per l'accesso di **Configura riferimento al servizio** della finestra di dialogo
 
  **Elenco assembly di riferimento**
 
- Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi negli assembly di riferimento specificati**, è possibile selezionare o deselezionare singoli assembly.
+ Contiene un elenco di assembly di riferimento per il progetto o sito Web. Quando si seleziona **Riutilizza tipi negli assembly di riferimento specificati**, è possibile selezionare o deselezionare singoli assembly.
 
  **Aggiungi riferimento Web**
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058737"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176967"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Visualizzazione thread e le attività tramite la finestra Stack in parallelo
 Il **stack in parallelo** finestra è utile quando si esegue il debug delle applicazioni multithreading. Relativi **visualizzazione thread** Mostra le informazioni sullo stack di chiamate per tutti i thread nell'applicazione. Consente di navigare tra i thread e gli stack frame nei thread. Nel codice gestito, il **visualizzazione attività** Mostra stack di chiamate di <xref:System.Threading.Tasks.Task?displayProperty=fullName> oggetti. Nel codice nativo, il **visualizzazione attività** Mostra di stack di chiamate [gruppi di attività](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmi paralleli](/cpp/parallel/concrt/parallel-algorithms), [agenti asincroni](/cpp/parallel/concrt/asynchronous-agents)e [attività leggere](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -118,7 +118,7 @@ Il **stack in parallelo** finestra è utile quando si esegue il debug delle appl
 ## <a name="see-also"></a>Vedere anche  
  [Iniziare il debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
+ [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)   
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
  [Programmazione parallela](/dotnet/standard/parallel-programming/index)   
  [Uso della finestra attività](../debugger/using-the-tasks-window.md)   

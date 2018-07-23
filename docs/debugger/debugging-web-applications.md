@@ -1,5 +1,5 @@
 ---
-title: Debug di applicazioni Web | Documenti Microsoft
+title: Debug di applicazioni Web | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8638bccca59bdcf497feeeef2b311cc22e5d79c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472397"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178917"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
 In questa sezione viene illustrato come eseguire il debug di diversi tipi di applicazioni Web.  
@@ -41,6 +41,6 @@ In questa sezione viene illustrato come eseguire il debug di diversi tipi di app
 ## <a name="see-also"></a>Vedere anche  
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
- [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
+ [Nozioni di base sul debugger](../debugger/getting-started-with-the-debugger.md)   
  [Debug in Visual Studio](../debugger/index.md)  
  [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056297"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178426"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Informazioni sulla finestra Registri in Visual Studio
 Il **registra** è disponibile solo se è abilitato il debug a livello di indirizzo nella finestra di **opzioni** della finestra di dialogo **debug** nodo.  
@@ -52,4 +52,4 @@ Il **registra** è disponibile solo se è abilitato il debug a livello di indiri
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: usare la finestra registri](../debugger/how-to-use-the-registers-window.md)   
- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+ [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (Nozioni di base sul debugger)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059267"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179996"
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
 
@@ -96,7 +96,7 @@ Il **passa all'attività** comando sospende l'attività corrente di attività at
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)
+- [Debugger Basics](../debugger/getting-started-with-the-debugger.md) (Nozioni di base sul debugger)
 - [Debug di codice gestito](../debugger/debugging-managed-code.md)
 - [Programmazione parallela](/dotnet/standard/parallel-programming/index)
 - [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime)

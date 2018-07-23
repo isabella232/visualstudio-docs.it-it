@@ -1,5 +1,5 @@
 ---
-title: Debug del codice nativo | Documenti Microsoft
+title: Debug del codice nativo | Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2017
 ms.technology: vs-ide-debug
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472906"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180191"
 ---
 # <a name="debugging-native-code"></a>Debug del codice nativo
-In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per informazioni sulle modalità di utilizzo del debugger di Visual Studio, vedere [Debugger Roadmap](../debugger/debugger-basics.md).  
+In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per i meccanismi di uso del debugger di Visual Studio, vedere [orientamento al Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md)  
@@ -67,7 +67,7 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
  [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  
  Vengono forniti collegamenti ad argomenti che descrivono le modalità di debug dei tipi di progetto nativi creati mediante i modelli di progetto di Visual C++.  
 
- [Debug di progetti DLL](../debugger/debugging-dll-projects.md) fornisce informazioni su come eseguire il debug di DLL native e gestite.
+ [Debug di progetti DLL](../debugger/debugging-dll-projects.md) fornisce informazioni su come eseguire il debug di DLL native che gestite.
   
  [Tour delle funzionalità del debugger](../debugger/debugger-feature-tour.md)  
  Vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Vengono fornite informazioni sui seguenti argomenti: novità del debugger, impostazione e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice nativo, debug di SQL e riferimenti all'interfaccia utente.  

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 14909ec9b5ad989dc8042b6196e84964ffb190af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952958"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176811"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 È possibile generare o configurare parti dell'applicazione da un modello.
@@ -22,7 +22,7 @@ ms.locfileid: "31952958"
  Un modello rappresenta i requisiti in modo più diretto rispetto al codice. Derivando il comportamento dell'applicazione direttamente dal modello, è possibile rispondere ai cambiamenti di requisiti con maggiore rapidità e affidabilità che non semplicemente aggiornando il codice. Anche se la configurazione della derivazione richiede un impegno iniziale, l'investimento di tempo risulta sicuramente proficuo quando i requisiti sono destinati a cambiare o si prevede di realizzare più varianti del prodotto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generazione del codice dell'applicazione da un modello
- Il modo più semplice per generare codice consiste nell'usare modelli di testo. È possibile generare codice nello stesso [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soluzione in cui è mantenere il modello. Per altre informazioni, vedere:
+ Il modo più semplice per generare codice consiste nell'usare modelli di testo. È possibile generare codice nello stesso [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che contiene il modello di soluzione. Per altre informazioni, vedere:
 
 -   [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -37,7 +37,7 @@ ms.locfileid: "31952958"
  Tuttavia, se si parte da un'applicazione esistente, potrebbe rendersi necessaria un'attività di refactoring non indifferente per separare i diversi comportamenti regolati dal modello in modo che possano essere variati in modo indipendente. Si consiglia di valutare questo aspetto dell'applicazione quando si effettua una stima del costo del progetto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configurazione dell'applicazione in base a un modello
- Se si vuole variare il comportamento dell'applicazione in fase di esecuzione, non è possibile usare la generazione di codice, poiché genera il codice sorgente prima che venga compilata l'applicazione. In alternativa, è possibile progettare l'applicazione per leggere il modello e variano di conseguenza il proprio comportamento. Per altre informazioni, vedere:
+ Se si vuole variare il comportamento dell'applicazione in fase di esecuzione, non è possibile usare la generazione di codice, poiché genera il codice sorgente prima che venga compilata l'applicazione. In alternativa, è possibile progettare l'applicazione per leggere il modello e che il comportamento di conseguenza. Per altre informazioni, vedere:
 
 -   [Procedura: Aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -48,29 +48,29 @@ ms.locfileid: "31952958"
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.
 
--   **Avviare specifici, quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.
+-   **Avviare specifico e quindi generalizzare.** Scrivere prima una versione specifica dell'applicazione. Questa versione dovrebbe funzionare in un set di condizioni specifico. Dopo avere verificato il corretto funzionamento dell'applicazione, sarà possibile derivarne una parte da un modello. Estendere gradualmente le parti derivate.
 
-     Ad esempio, progettare un sito Web che include un set specifico di pagine Web prima di progettare un'applicazione Web che presenta pagine definite in un modello.
+     Ad esempio, progettare un sito Web che include un set specifico di pagine web prima di progettare un'applicazione web che presenta pagine definite in un modello.
 
--   **Gli aspetti varianti del modello.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.
+-   **Modellare gli aspetti variabili.** Identificare gli aspetti che varieranno tra una distribuzione e l'altra o nel tempo con il mutare dei requisiti. Questi sono gli aspetti che devono essere derivati da un modello.
 
-     Ad esempio, se il set di pagine Web e dei relativi collegamenti cambia, ma lo stile e il formato delle pagine rimangono gli stessi, sarà necessario che il modello descriva i collegamenti, ma non il formato delle pagine.
+     Ad esempio, se il set di web pages e collegamenti tra loro viene modificato, ma lo stile e il formato delle pagine è sempre lo stesso, quindi il modello descriva i collegamenti, ma non è necessario descrivere il formato delle pagine.
 
 -   **Separare le problematiche.** Se gli aspetti variabili possono essere suddivisi in aree indipendenti, usare modelli separati per ogni area. Usando ModelBus, è possibile definire operazioni che influiscono su entrambi modelli e i vincoli reciproci.
 
-     Ad esempio, usare un modello per definire la navigazione delle pagine Web e un modello differente per definire il layout delle pagine.
+     Ad esempio, usare un modello per definire la navigazione tra le pagine web e un modello diverso per definire il layout delle pagine.
 
--   **Il requisito, non la soluzione del modello.** Progettare il modello in modo che descrive i requisiti utente. Non progettare invece la notazione in base agli aspetti variabili dell'implementazione.
+-   **Il requisito, non sulla soluzione del modello.** Progettare il modello in modo che descriva i requisiti dell'utente. Non progettare invece la notazione in base agli aspetti variabili dell'implementazione.
 
-     Ad esempio, il modello della navigazione Web deve rappresentare le pagine Web e i reciproci collegamenti ipertestuali. Il modello della navigazione Web non deve rappresentare frammenti di HTML o classi dell'applicazione.
+     Ad esempio, il modello della navigazione web deve rappresentare le pagine web e collegamenti ipertestuali tra di essi. Il modello della navigazione web non deve rappresentare frammenti di HTML o classi nell'applicazione.
 
--   **Generazione e interpretazione.** Se i requisiti per una particolare distribuzione sono destinati a cambiare di rado, generare il codice programma dal modello. Se è possibile che i requisiti cambino di frequente o che ne coesistano più varianti nella stessa distribuzione, scrivere l'applicazione in modo che possa leggere e interpretare un modello.
+-   **Generazione e interpretazione?** Se i requisiti per una particolare distribuzione sono destinati a cambiare di rado, generare il codice programma dal modello. Se è possibile che i requisiti cambino di frequente o che ne coesistano più varianti nella stessa distribuzione, scrivere l'applicazione in modo che possa leggere e interpretare un modello.
 
-     Ad esempio, se si usa il modello del sito Web per sviluppare una serie di siti Web differenti e installati separatamente, sarà necessario generare il codice del sito dal modello. Se, invece, si usa il modello per controllare un sito che cambia quotidianamente, sarà preferibile scrivere un server Web che legga il modello e che presenti il sito conformemente a tale modello.
+     Ad esempio, se si usa il modello di sito Web per lo sviluppo di una serie di siti Web differenti e installati separatamente, quindi si deve generare il codice del sito dal modello. Invece, si usa il modello per controllare un sito che cambia quotidianamente, sarà preferibile scrivere un server web che legge il modello e presenta il sito di conseguenza.
 
 -   **UML o DSL?** Prendere in considerazione la creazione della notazione dei modelli tramite stereotipi per estendere UML. Definire un modello DSL se non si ha un diagramma UML appropriato. Evitare tuttavia di alterare la semantica standard di UML.
 
-     Ad esempio, un diagramma classi UML è una raccolta di caselle e di frecce. Con questa notazione si può, teoricamente, definire qualsiasi elemento. L'uso del diagramma classi è tuttavia consigliato solo quando si descrive un set di tipi. Ad esempio, è possibile adattare diagrammi classi per descrivere tipi differenti di pagine Web.
+     Ad esempio, un diagramma classi UML è una raccolta di caselle e di frecce. Con questa notazione si può, teoricamente, definire qualsiasi elemento. L'uso del diagramma classi è tuttavia consigliato solo quando si descrive un set di tipi. Ad esempio, è possibile adattare diagrammi classi per descrivere tipi differenti di pagine web.
 
 ## <a name="see-also"></a>Vedere anche
 

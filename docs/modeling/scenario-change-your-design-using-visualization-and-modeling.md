@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281336"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177331"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -55,11 +55,11 @@ Per altre informazioni su questi strumenti e sugli scenari supportati, vedere:
 
 ## <a name="scenario-overview"></a>Panoramica dello scenario
 
-Questo scenario descrive alcuni episodi dei cicli di vita di sviluppo del software di due società fittizie: Dinner Now e Lucerne Publishing. Dinner Now fornisce un servizio di consegna pasti basato sul Web per l'area di Milano. I clienti possono ordinare i pasti ed effettuare il pagamento sul sito Web di Dinner Now. Gli ordini vengono quindi inviati al ristorante locale di pertinenza per la consegna. Lucerne Publishing, una società con sede a Roma, gestisce varie attività offline e sul Web. Ad esempio, gestisce un sito Web in cui i clienti possono inserire recensioni di ristoranti.
+Questo scenario descrive alcuni episodi dei cicli di vita di sviluppo del software di due società fittizie: Dinner Now e Lucerne Publishing. Dinner Now fornisce un servizio di consegna pasti basato sul Web per l'area di Milano. I clienti possono ordinare pasti e pagare nel sito Web Dinner Now. Gli ordini vengono quindi inviati al ristorante locale di pertinenza per la consegna. Lucerne Publishing, una società con sede a Roma, gestisce varie attività offline e sul Web. Ad esempio, vengono eseguiti un sito Web in cui i clienti possono inserire recensioni di ristoranti.
 
 Lucerne ha recentemente acquisito Dinner Now e vuole apportare le modifiche seguenti:
 
-- Integrare i siti Web delle due società aggiungendo funzionalità di recensione dei ristoranti a Dinner Now.
+- Integrare i propri siti Web mediante l'aggiunta di funzionalità di recensione dei ristoranti a Dinner Now.
 
 - Sostituire il sistema di pagamento di Dinner Now con il sistema di Lucerne.
 
