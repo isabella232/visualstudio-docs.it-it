@@ -1,5 +1,5 @@
 ---
-title: Sessione di debug | Documenti Microsoft
+title: Sessione di debug | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0fd986e5a3c0dbbe515e0338c4ca6007fd4162
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67734025b70ee6f910ed46f034dcfb1b10135cc3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098846"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203777"
 ---
 # <a name="debug-session"></a>Sessione di debug
-In termini di architettura del debugger, un **sessione**:  
+In termini di architettura del debugger, un *sessione*:  
   
--   È il set di tutti i processi, correlati o correlati, avviati o collegati a da una singola istanza dell'IDE.  
+-   È il set di tutti i processi, correlati o correlati, che sono state avviate o collegati a da una singola istanza dell'IDE.  
   
--   Viene implementato da un gestore di debug della sessione (SDM). Per ulteriori informazioni, vedere [Gestione sessione di Debug](../../extensibility/debugger/session-debug-manager.md).  
+-   Viene implementato da un gestore di debug di sessione (SDM). Per altre informazioni, vedere [sessione di Debug Manager](../../extensibility/debugger/session-debug-manager.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Gestione di Debug delle sessioni](../../extensibility/debugger/session-debug-manager.md)   
+ [Gestione del debug della sessione](../../extensibility/debugger/session-debug-manager.md)   
  [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)

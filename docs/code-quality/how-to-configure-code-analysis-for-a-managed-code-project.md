@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179560"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204232"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procedura: Configurare l'analisi codice per un progetto di codice gestito
 
-In Visual Studio, è possibile scegliere da un elenco di analisi del codice *set di regole* da applicare a un progetto di codice gestito. Il set di regole predefinito è *Microsoft regole minime*. È possibile applicare un altro set di regole a un progetto o a tutti i progetti in una soluzione.
+In Visual Studio, è possibile scegliere da un elenco di analisi del codice [set di regole](../code-quality/rule-set-reference.md)) da applicare a un progetto di codice gestito. Per impostazione predefinita, il **Microsoft regole minime** set di regole è selezionato, ma è possibile applicare una regola diversa se si desidera impostare. Set di regole possono essere applicati a uno o più progetti in una soluzione.
 
 > [!TIP]
 > Per informazioni su come configurare una set di regole per le applicazioni web ASP.NET, vedere [procedura: applicazione web Configura analisi codice per un ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -76,4 +76,5 @@ Per impostazione predefinita, tutti i progetti gestiti di una soluzione vengono 
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)
 - [Procedura: configurare l'analisi codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

@@ -2,7 +2,7 @@
 title: Creare viste personalizzate di oggetti nativi
 description: Usare il framework Natvis per personalizzare il modo che Visual Studio visualizza i tipi nativi nel debugger
 ms.custom: ''
-ms.date: 06/27/2017
+ms.date: 067/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49cb94e11f4ce5c472ef4fa445037cfcd2861fd4
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: b03e7809cb0958760e1a4fcc7b4bb5b4260a7429
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433574"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204245"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Creare viste personalizzate di oggetti nativi nel debugger di Visual Studio
 Il framework Natvis di Visual Studio consente di personalizzare il modo in cui Visual Studio visualizza i tipi nativi nelle finestre delle variabili del debugger (ad esempio, il **Watch** finestra **variabili locali** finestra e in  **I suggerimenti dati**.
@@ -631,7 +631,7 @@ Sono supportate le funzioni intrinseche seguenti:
 </Type>  
 ```  
   
- È possibile visualizzare un esempio di UIVisualizer nell'estensione delle espressioni di controllo immagine usate per visualizzare le bitmap in memoria: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ È possibile vedere un esempio di UIVisualizer nell'estensione Image Watch usata per visualizzare le bitmap in memoria: [ImageWatch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017)  
   
 ### <a name="customvisualizer-element"></a>Elemento CustomVisualizer  
  `CustomVisualizer` è un punto di estendibilità che specifica un'estensione VSIX che è possibile scrivere per controllare la visualizzazione nel codice in esecuzione in Visual Studio. Per altre informazioni sulla scrittura di estensioni VSIX, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Scrittura di un visualizzatore personalizzato è molto di più operazioni rispetto alla scrittura di una definizione natvis XML, ma non sussistono vincoli su ciò che natvis supporta o non supporta. I visualizzatori personalizzati hanno accesso al set completo di API di estendibilità del debugger, che possono essere usate per eseguire query e modificare il processo dell'oggetto del debug o per comunicare con altre parti di Visual Studio.  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81a26c4aa8ebbf436ba58ee40ceb02ff8f92b0aa
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993915"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204154"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurare e usare le regole dell'analizzatore Roslyn
 
@@ -79,7 +79,7 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
 È possibile modificare la gravità di una regola dal **Esplora soluzioni**, o all'interno di  *\<projectname > estensione ruleset* file che viene aggiunto alla soluzione dopo aver modificato la gravità di una regola in  **Esplora soluzioni**.
 
-![File di set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
+![File del set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
 
 ### <a name="to-set-rule-severity-from-solution-explorer"></a>Per impostare la gravità di regola da Esplora soluzioni
 
@@ -99,7 +99,7 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
 1. Nel **azione** colonna, selezionare il valore per aprire un elenco a discesa e selezionare il livello di gravità desiderato dall'elenco.
 
-   ![File di set di regole aperto nell'editor](media/ruleset-file-in-editor.png)
+   ![File del set di regole aperto nell'editor](media/ruleset-file-in-editor.png)
 
 ## <a name="suppress-violations"></a>Non visualizzare le violazioni
 
