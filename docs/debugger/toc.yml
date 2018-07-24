@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Configurare Windows Firewall per il debug remoto
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Sbloccare il download in Windows Server
+          href: remote-debugging-unblock-file-download.md
         - name: Errori e risoluzione dei problemi relativi al debug remoto
           href: remote-debugging-errors-and-troubleshooting.md
           items:
