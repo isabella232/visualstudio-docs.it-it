@@ -1,5 +1,5 @@
 ---
-title: Campo m_parent | Documenti Microsoft
+title: Campo m_parent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c50bb06a7aa87e06768e55849ca1e7c2bd4d1c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2246a846324710cee0cb49913c1debd3bad0436
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099194"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231129"
 ---
-# <a name="mparent-field"></a>m_parent campo
+# <a name="mparent-field"></a>campo m_parent
 Il campo sottostante per il <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` proprietà.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .field private initonly class System.Threading.Tasks.Task m_parent  
 ```  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

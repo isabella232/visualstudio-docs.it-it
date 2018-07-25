@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51bf2b02079d7b187c50a789910bb0a4d0871b0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b68e1caa0add0c013740c6a0615995a1fa8bc1
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098323"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232364"
 ---
-# <a name="mtaskid-field"></a>m_taskId Field
+# <a name="mtaskid-field"></a>campo m_taskId
 Il campo sottostante per il <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> proprietà.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .field private int32 m_taskId  
 ```  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

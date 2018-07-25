@@ -1,5 +1,5 @@
 ---
-title: Elemento casella combinata | Documenti Microsoft
+title: Elemento combos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 103ce59fe8303f7d044eb7b28ea135f0f449956a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097764"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231203"
 ---
-# <a name="combos-element"></a>Elemento casella combinata
-Gruppi [elemento combinata](../extensibility/combo-element.md) elementi.  
+# <a name="combos-element"></a>Elemento combos
+I gruppi [elemento Combo](../extensibility/combo-element.md) elementi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,14 +40,14 @@ Gruppi [elemento combinata](../extensibility/combo-element.md) elementi.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|[Elemento Combos](../extensibility/combos-element.md)|Raggruppa elementi combinata.|  
-|[Elemento Combo](../extensibility/combo-element.md)|Definisce i comandi che vengono visualizzati in una casella combinata.|  
+|[Elemento combos](../extensibility/combos-element.md)|Raggruppa gli elementi di casella combinata.|  
+|[Elemento combo](../extensibility/combo-element.md)|Definisce i comandi che vengono visualizzati in una casella combinata.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
@@ -80,5 +80,5 @@ Gruppi [elemento combinata](../extensibility/combo-element.md) elementi.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Come VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757162"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232173"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Panoramica della distribuzione in Visual Studio
 
@@ -42,9 +42,9 @@ Nella scheda **Pubblica** è possibile selezionare un profilo di pubblicazione e
 
 ## <a name="azure-app-service"></a>Servizio app di Azure
 
-[Servizio app di Azure](/azure/app-service/app-service-web-overview) consente agli sviluppatori di creare rapidamente un'ampia gamma di servizi e applicazioni Web scalabili senza gestire l'infrastruttura.
+[Servizio App di Azure](/azure/app-service/app-service-web-overview) e [servizio App in Linux](/azure/app-service/containers/app-service-linux-intro) consentono agli sviluppatori di creare rapidamente un'ampia gamma di servizi e applicazioni web scalabili senza gestire l'infrastruttura.
 
-Determinare quanta potenza di calcolo di un servizio APp, scelta di un [piano tariffario](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) del servizio App che lo contiene. È possibile avere più Web App (e altri tipi di app) condividano lo stesso servizio App senza modificare il piano tariffario. Ad esempio, è possibile ospitare le app Web di sviluppo, staging e produzione insieme nello stesso servizio App.
+Determinare quanta potenza di calcolo di un servizio App, scelta di un [piano tariffario](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) del servizio App che lo contiene. È possibile avere più Web App (e altri tipi di app) condividano lo stesso servizio App senza modificare il piano tariffario. Ad esempio, è possibile ospitare le app Web di sviluppo, staging e produzione insieme nello stesso servizio App.
 
 Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azure, ma tali macchine vengono gestite automaticamente. Ogni app in un servizio App verrà assegnato un valore univoco \*. URL azurewebsites.net; tutti i piani tariffari diversi da quello gratuito consentono l'assegnazione di nomi di dominio personalizzati al sito.
 
@@ -57,7 +57,7 @@ Un servizio app viene eseguito nelle macchine virtuali ospitate nel cloud di Azu
 
 > Per usare Servizio app di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Per altre informazioni sulla pubblicazione in servizio App, vedere [Guida introduttiva: pubblicare in Azure App Service](quickstart-deploy-to-azure.md).
+Per altre informazioni sulla pubblicazione in servizio App, vedere [Guida introduttiva: pubblicare in servizio App di Azure](quickstart-deploy-to-azure.md) e [Guida introduttiva - pubblicazione di ASP.NET Core per Linux](quickstart-deploy-to-linux.md).
 
 ## <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
 

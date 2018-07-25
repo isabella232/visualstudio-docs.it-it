@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9198e39be5149440b09ebab5115e803d60716423
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080263"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231226"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Guida introduttiva: Presentazione della distribuzione in Visual Studio
 
@@ -57,9 +57,9 @@ Distribuzione in una cartella locale in genere viene utilizzata per il test o pe
 
     Per le app di Python, vedere anche [Python - pubblicazione in servizio App di Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
-    Per informazioni su come importare un profilo di pubblicazione dal servizio App di Azure per Visual Studio, vedere [importare impostazioni di pubblicazione e distribuzione in Azure](../deployment/tutorial-import-publish-settings-azure.md).
+    Per una rapida introduzione, vedere [Publish to Azure](quickstart-deploy-to-azure.md) e [Publish to Linux](quickstart-deploy-to-linux.md). Vedere anche [pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione tramite Git, vedere [distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
 
-    Per una rapida introduzione, vedere [Publish to Azure](quickstart-deploy-to-azure.md). Vedere anche [pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione tramite Git, vedere [distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
+    Per informazioni su come importare un profilo di pubblicazione dal servizio App di Azure per Visual Studio, vedere [importare impostazioni di pubblicazione e distribuzione in Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     > [!NOTE]
     > Se non hai già un account Azure, puoi [iscrizione qui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).

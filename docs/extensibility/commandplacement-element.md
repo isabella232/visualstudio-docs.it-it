@@ -1,5 +1,5 @@
 ---
-title: Elemento CommandPlacement | Documenti Microsoft
+title: Elemento CommandPlacement | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267975"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232429"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
-L'elemento CommandPlacement consente pulsanti, gruppi e menu da includere in più di un gruppo o un menu. Tramite l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.  
+L'elemento CommandPlacement Abilita i pulsanti, gruppi e i menu da includere in più di un gruppo o un menu. Usando l'elemento CommandPlacement, non è completamente ridefinire tali elementi per modificare l'aspetto di un'interfaccia utente.  
   
- Per ulteriori informazioni, vedere [creazione riutilizzabile gruppi di pulsanti](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Per altre informazioni, vedere [creazione di gruppi riutilizzabili di pulsanti](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,16 +41,16 @@ L'elemento CommandPlacement consente pulsanti, gruppi e menu da includere in pi�
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|guid|Obbligatorio. Il guid del set di comandi, come definito nel [elemento simboli](../extensibility/symbols-element.md).|  
+|guid|Obbligatorio. Il guid del set di comandi, come definito nel [elemento Symbols](../extensibility/symbols-element.md).|  
 |ID|Obbligatorio. L'id del menu, gruppo o comando per essere inserito, come definito nel `Symbols Element`.|  
-|priority|Obbligatorio. Determina la posizione dell'elemento visiva nel relativo elemento padre.|  
-|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|priority|Obbligatorio. Determina la posizione dell'elemento visual nel relativo elemento padre.|  
+|Condizione|Facoltativo. Visualizzare [Aattributes condizionale](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Padre|Obbligatorio. Il menu o un gruppo che contiene l'elemento da inserire.|  
+|Padre|Obbligatorio. Il menu o un gruppo che ospita l'elemento da inserire.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
@@ -71,4 +71,4 @@ L'elemento CommandPlacement consente pulsanti, gruppi e menu da includere in pi�
   
 ## <a name="see-also"></a>Vedere anche  
  [Elemento CommandPlacements](../extensibility/commandplacements-element.md)   
- [File Visual Studio Command Table (VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [File di Visual Studio comando table (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

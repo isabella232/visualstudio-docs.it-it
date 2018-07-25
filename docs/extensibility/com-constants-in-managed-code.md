@@ -1,5 +1,5 @@
 ---
-title: Costanti di COM nel codice gestito | Documenti Microsoft
+title: Costanti COM nel codice gestito | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101888"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231536"
 ---
-# <a name="com-constants-in-managed-code"></a>Costanti di COM nel codice gestito
-Il Framework di pacchetto gestito (MPF) rende disponibile per il codice gestito alcune costanti COM standard. Queste costanti sono elencate di seguito per riferimento.  
+# <a name="com-constants-in-managed-code"></a>Costanti COM nel codice gestito
+Il Framework di pacchetto gestito (MPF) rende disponibili al codice gestito alcune costanti COM standard. Queste costanti sono elencate di seguito per riferimento.  
   
 ## <a name="boolean-hresult-values"></a>Valori HRESULT booleano  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
@@ -130,4 +130,4 @@ Il Framework di pacchetto gestito (MPF) rende disponibile per il codice gestito 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
 ## <a name="see-also"></a>Vedere anche  
- [Gestione degli errori e valori restituiti](../extensibility/error-handling-and-return-values.md)
+ [Gestione degli errori e i valori restituiti](../extensibility/error-handling-and-return-values.md)

@@ -1,5 +1,5 @@
 ---
-title: Campo m_stateObject | Documenti Microsoft
+title: Campo m_stateObject | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79313460d380b2b505f6fa75f35351811ddaa470
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d33879ca8aaaba08288f9e16d54ab462d92f67b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097459"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231317"
 ---
-# <a name="mstateobject-field"></a>m_stateObject campo
-Oggetto che rappresenta i dati che verrà utilizzata l'azione.  
+# <a name="mstateobject-field"></a>campo m_stateObject
+Oggetto che rappresenta i dati che verrà usato l'azione.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,7 +36,7 @@ Oggetto che rappresenta i dati che verrà utilizzata l'azione.
 ```  
   
 ## <a name="remarks"></a>Note  
- Si tratta di `state` parametro il <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo sottostante per il <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> proprietà.  
+ Questo è il `state` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo sottostante per il <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> proprietà.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

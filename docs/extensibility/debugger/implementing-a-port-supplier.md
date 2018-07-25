@@ -1,5 +1,5 @@
 ---
-title: Implementazione di un fornitore di porta | Documenti Microsoft
+title: Implementazione di un fornitore di porte | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0743f307dc579f6197880b0b89acaf2db0dda08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098992"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233035"
 ---
-# <a name="implementing-a-port-supplier"></a>Implementazione di un fornitore di porta
-Un fornitore di porta fornisce porte su richiesta al gestore di sessione di debug (SDM). Un fornitore di porta deve essere implementato durante il debug in un computer non DCOM o quando un nuovo dispositivo deve essere supportato. Per consentire il debug di un telefono cellulare, ad esempio, è possibile implementare un fornitore di porta che fornisce porte connettono a telefoni cellulari (ad esempio tramite una connessione di cella o IR) ed elencare i processi e i programmi in esecuzione sul telefono.  
+# <a name="implement-a-port-supplier"></a>Implementare un fornitore di porte
+Un fornitore di porte fornisce porte di richiesta al gestore di sessione di debug (SDM). Durante il debug in un computer non DCOM o quando un nuovo dispositivo richiede il supporto è necessario implementare un fornitore di porte. Ad esempio, per offrire debug in un telefono cellulare, è possibile impostare backup di un fornitore di porte che fornisce le porte, connettersi al telefono cellulare (magari tramite una connessione di cella o di runtime di integrazione), che enumera i processi e i programmi in esecuzione sul telefono.  
   
- Per debug programmi nei computer basati su Windows (incluso il debug remoto), Visual Studio offre i fornitori di porte per nativo e i processi di Common Language Runtime (CLR), pertanto non è necessario implementare il propria fornitore della porta in questi casi.  
+ Debug dei programmi nei computer basati su Windows (incluso il debug remoto), Visual Studio offre fornitori di porte per i processi di Common Language Runtime (CLR) e native in modo che non è necessario configurare il proprio fornitore di porte in questi casi.  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Implementazione e registrazione di un fornitore di porte](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
- Viene descritto come il SDM interagisce con il fornitore della porta e le relative porte.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Implementare e registrare un fornitore di porte](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
+ Viene descritto come il modello SDM interagisce con il fornitore della porta e le relative porte.  
   
- [Interfacce obbligatorie dei fornitori di porte](../../extensibility/debugger/required-port-supplier-interfaces.md)  
- Vengono illustrate le interfacce che devono essere implementate per ottenere un fornitore di porta.  
+ [Porta richiesta supplier interfacce](../../extensibility/debugger/required-port-supplier-interfaces.md)  
+ Vengono documentate le interfacce che devono implementare per ottenere un fornitore di porte.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)  
- Vengono descritti i principali concetti dell'architettura di debug.  
+ Descrive i principali concetti dell'architettura di debug.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Estendibilità del debugger di Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Estendibilità del debugger Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

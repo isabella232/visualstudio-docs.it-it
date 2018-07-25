@@ -1,5 +1,5 @@
 ---
-title: Modalità di interruzione | Documenti Microsoft
+title: Modalità di interruzione | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb601ca4cf00ca2cc811f75ec27ad12bc6be32db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f9b41a111ecc6118c9bae0ff518d8421a9f2320
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098209"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231938"
 ---
-# <a name="entering-break-mode"></a>Modalità di interruzione
-Di seguito viene descritto il processo che si verifica quando viene rilevato un punto di interruzione dopo l'esecuzione di istruzioni in una funzione, eseguendo la riga del codice sorgente che contiene il cursore o a un punto di interruzione.  
+# <a name="enter-break-mode"></a>Modalità di interruzione
+Le informazioni seguenti viene descritto il processo che si verifica quando viene rilevato un punto di interruzione dopo l'esecuzione di una funzione, l'esecuzione alla riga di codice sorgente che contiene il cursore di o in esecuzione in un punto di interruzione.  
   
-## <a name="break-mode-process"></a>Processo in modalità di interruzione  
+## <a name="break-mode-process"></a>Processo della modalità di interruzione  
   
-1.  Il motore di debug (DE) Invia [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), o qualsiasi altro evento di arresto per passare alla modalità di interruzione dell'IDE.  
+1.  Il motore di debug (DE) Invia [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), o qualsiasi altro evento di arresto per causare l'IDE attivare la modalità di interruzione.  
   
-2.  Il SDM Ottiene le informazioni sullo stack di chiamata dal thread, come indicato di seguito:  
+2.  Il modello SDM Ottiene le informazioni sullo stack di chiamata dal thread, come indicato di seguito:  
   
     -   [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
   
@@ -45,4 +45,4 @@ Di seguito viene descritto il processo che si verifica quando viene rilevato un 
     -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) per ottenere informazioni sulla memoria  
   
 ## <a name="see-also"></a>Vedere anche  
- [Chiamata degli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
+ [La chiamata a eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

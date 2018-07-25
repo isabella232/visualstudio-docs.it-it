@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (modelli di Visual Studio) | Documenti Microsoft
+title: CreateInPlace (modelli di Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e032a5fa57bd85aefdb5e8b7e0d270f491503e65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099213"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231395"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modelli di Visual Studio)
 Specifica se creare il progetto ed eseguire la sostituzione del parametro nella posizione specificata, o eseguire la sostituzione del parametro in una posizione temporanea e quindi salvare il progetto nel percorso specificato.  
@@ -54,7 +54,7 @@ Specifica se creare il progetto ed eseguire la sostituzione del parametro nella 
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Questo testo deve essere `true` o `false`. Se `true`, viene creato il progetto e la sostituzione dei parametri viene eseguita nella posizione specificata nel **nuovo progetto** la finestra di dialogo. Se `false`, la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.  
+ Questo testo deve essere `true` o `false`. Se `true`, viene creato il progetto e la sostituzione dei parametri viene eseguita nella posizione specificata nel **nuovo progetto** nella finestra di dialogo. Se `false`, la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.  
   
 ## <a name="remarks"></a>Note  
  `CreateInPlace` è un elemento facoltativo. Il valore predefinito è `true`.  
@@ -88,5 +88,5 @@ Specifica se creare il progetto ed eseguire la sostituzione del parametro nella 
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Creare modelli di progetto ed elemento](../ide/creating-project-and-item-templates.md)   
+ [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

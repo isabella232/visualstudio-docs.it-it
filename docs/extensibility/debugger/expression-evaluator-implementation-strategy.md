@@ -1,5 +1,5 @@
 ---
-title: Strategia di implementazione dell'analizzatore di espressioni | Documenti Microsoft
+title: Strategia di implementazione dell'analizzatore di espressioni | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e67b2496c2e30428cd4cc830526e53cf0cc61fdd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a0b60a82b9451dfa43f5cd231fd38dd32b1729ed
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102434"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233048"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Strategia di implementazione dell'analizzatore di espressioni
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestiti esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Uno degli approcci disponibili per creare rapidamente un analizzatore di espressioni (Java EE) consiste nell'implementare prima di tutto il codice minimo necessario per visualizzare le variabili locali nel **variabili locali** finestra. È utile tenere presente che ogni riga di **variabili locali** finestra vengono visualizzati nome, tipo e il valore di una variabile locale e che tutti e tre sono rappresentati da un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) oggetto. Nome, tipo e il valore di una variabile locale può essere ottenuti da un `IDebugProperty2` oggetto chiamando il relativo [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metodo. Per ulteriori informazioni su come visualizzare le variabili locali nel **variabili locali** finestra, vedere [visualizzazione variabili locali](../../extensibility/debugger/displaying-locals.md).  
+ Uno degli approcci per creare rapidamente un analizzatore di espressioni (EE) consiste nell'implementare prima di tutto il codice minimo necessario per visualizzare variabili locali all'interno di **variabili locali** finestra. È utile tenere presente che in ogni riga i **variabili locali** finestra viene visualizzato il nome, tipo e valore di una variabile locale e che tutti e tre sono rappresentati da un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) oggetto. Il nome, tipo e valore di una variabile locale viene ottenuto da un' `IDebugProperty2` chiamando relativi [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (metodo). Per altre informazioni su come visualizzare variabili locali all'interno di **variabili locali** finestra, vedere [variabili locali di visualizzazione](../../extensibility/debugger/displaying-locals.md).  
   
 ## <a name="discussion"></a>Discussione  
- Una possibile implementazione che inizia con implementazione [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). Il [analizzare](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) e [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) metodi devono essere implementati per visualizzare variabili locali. La chiamata `IDebugExpressionEvaluator::GetMethodProperty` restituisce un `IDebugProperty2` oggetto che rappresenta un metodo:, ovvero un [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) oggetto. Metodi non vengono visualizzati di **variabili locali** finestra.  
+ Una sequenza di implementazione possibili inizia con l'implementazione [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). Il [analizzare](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) e il [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) devono essere implementati i metodi per visualizzare variabili locali. La chiamata `IDebugExpressionEvaluator::GetMethodProperty` restituisce un `IDebugProperty2` oggetto che rappresenta un metodo: vale a dire una [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) oggetto. Metodi stessi non vengono visualizzati nei **variabili locali** finestra.  
   
- Il [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metodo deve essere implementato successivamente. Il motore di debug (DE) chiama questo metodo per ottenere un elenco di argomenti e variabili locali passando `IDebugProperty2::EnumChildren` un `guidFilter` argomento di `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` le chiamate [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) e [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), combinando i risultati in un'unica enumerazione. Vedere [visualizzazione variabili locali](../../extensibility/debugger/displaying-locals.md) per altri dettagli.  
+ Il [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metodo deve essere implementato successivamente. Il motore di debug (DE) chiama questo metodo per ottenere un elenco di argomenti e variabili locali, passando `IDebugProperty2::EnumChildren` una `guidFilter` argomento di `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` le chiamate [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) e [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), combinare i risultati in un'unica enumerazione. Visualizzare [visualizzare variabili locali](../../extensibility/debugger/displaying-locals.md) per altri dettagli.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Implementazione di un analizzatore di espressioni](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
- [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)
+ [Implementare un analizzatore di espressioni](../../extensibility/debugger/implementing-an-expression-evaluator.md)   
+ [Variabili locali di visualizzazione](../../extensibility/debugger/displaying-locals.md)

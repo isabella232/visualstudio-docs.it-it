@@ -1,5 +1,5 @@
 ---
-title: Metodo NotifyDebuggerOfWaitCompletion | Documenti Microsoft
+title: Metodo NotifyDebuggerOfWaitCompletion | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c510cd0b9be97c53d2026a54335b07bcd1da9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1288034f171c56e78f17d02f39843cf4ff600e5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102730"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233100"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Metodo NotifyDebuggerOfWaitCompletion
-Metodo segnaposto utilizzato come destinazione del punto di interruzione dal debugger. Questo metodo non deve essere inline o ottimizzato.  
+Metodo segnaposto usato come destinazione un punto di interruzione dal debugger. Questo metodo non deve essere impostato come inline o ottimizzato.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,9 +34,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```  
   
 ## <a name="remarks"></a>Note  
- Tutte le operazioni di join con un'attività è necessario chiamare questo metodo se i bit di notifica di debugger è impostato.  
+ Tutte le operazioni di join con un'attività devono chiamare questo metodo se i bit di notifica di debugger è impostato.  
   
 ## <a name="requirements"></a>Requisiti  
   
 ## <a name="see-also"></a>Vedere anche  
- [Classe dell'attività](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

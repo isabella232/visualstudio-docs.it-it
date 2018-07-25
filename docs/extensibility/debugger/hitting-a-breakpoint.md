@@ -1,5 +1,5 @@
 ---
-title: Raggiungere un punto di interruzione | Documenti Microsoft
+title: Raggiungere un punto di interruzione | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4788f8a038a274d6d94b4edf368e30ef495665
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a9b110abdaf0ebfaed720dd5d09c0e215a6b2e7
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109142"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231555"
 ---
-# <a name="hitting-a-breakpoint"></a>Raggiungere un punto di interruzione
-Di seguito viene descritto il processo quando il motore di debug (DE) raggiunge un punto di interruzione durante l'esecuzione o l'esecuzione di istruzioni:  
+# <a name="hit-a-breakpoint"></a>Raggiungere un punto di interruzione
+La sezione seguente descrive il processo quando il motore di debug (DE) raggiunge un punto di interruzione durante l'esecuzione o l'esecuzione di istruzioni:  
   
-## <a name="troubleshooting-a-hit-breakpoint"></a>Risoluzione dei problemi relativi a un punto di interruzione Hit  
+## <a name="troubleshoot-a-hit-breakpoint"></a>Risolvere i problemi di un punto di interruzione hit  
   
-1.  Invia il DE un [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfaccia come un' **EVENT_SYNC_STOP**.  
+1.  L'invio di DE un' [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) dell'interfaccia come un' **EVENT_SYNC_STOP**.  
   
 2.  Gestore di sessione di debug (SDM) chiama [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) per ottenere il punto di interruzione raggiunto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Chiamata degli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)
+ [Chiamare gli eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

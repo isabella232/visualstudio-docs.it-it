@@ -1,5 +1,5 @@
 ---
-title: Metodo GetScheduledTasksForDebugger | Documenti Microsoft
+title: Metodo GetScheduledTasksForDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20cde88083acd38df780468927faec5fbd142b67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 648d48f34681865a34654ed9f82bd790d77b2395
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100312"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231164"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>Metodo GetScheduledTasksForDebugger
 Recupera una matrice di tutte le attività pianificate.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (in mscorlib. dll)  
+ **Assembly:** mscorlib (in *mscorlib. dll*)  
   
- Poiché è possibile accedere a questo membro interno di .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
+ Poiché è possibile accedere a questo membro interno da .NET Framework, la sintassi seguente viene fornita in comune Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```csharp  
 .method assembly hidebysig instance class System.Threading.Tasks.Task[] GetScheduledTasksForDebugger() cil managed  
 ```  
   
 ## <a name="return-value"></a>Valore restituito  
- Matrice di tutte le attività pianificate. Ogni attività sono in esecuzione o ha terminato l'esecuzione.  
+ Matrice di tutte le attività pianificate. Ogni attività sono in esecuzione o ha completato l'esecuzione.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo non è thread-safe e non deve essere utilizzato contemporaneamente altre istanze di <xref:System.Threading.Tasks.TaskScheduler> deve essere chiamato da un debugger solo quando il debugger ha sospeso tutti gli altri thread.  
+ Questo metodo non è thread-safe e non è consigliabile utilizzare contemporaneamente ad altre istanze di <xref:System.Threading.Tasks.TaskScheduler>. Chiamare questo metodo da un debugger solo quando il debugger ha sospeso tutti gli altri thread.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)
