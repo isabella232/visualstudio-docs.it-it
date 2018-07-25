@@ -1,6 +1,7 @@
 - name: Documentazione dell'analisi codice
   href: index.md
 - name: Panoramica
+  expanded: true
   items:
     - name: Analisi codice per il codice gestito
       href: code-analysis-for-managed-code-overview.md
@@ -80,10 +81,12 @@
     - name: Set di regole
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Set di regole per pacchetti dell'analizzatore
+          href: analyzer-rule-sets.md
         - name: Set di regole per codice gestito
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: Configurare l'analisi codice per un'applicazione Web ASP.NET
+            - name: Configurare l'analisi codice per un'app Web ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Set di regole per codice C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -126,7 +129,7 @@
         - name: Set di regole delle Regole di globalizzazione per codice gestito
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Set di regole minime gestite per codice gestito
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Set di regole consigliate gestite per codice gestito
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Set di regole minime miste
