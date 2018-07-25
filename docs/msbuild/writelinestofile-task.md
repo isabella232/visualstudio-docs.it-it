@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f321eadf4fa02d55e869dcc0d9c93b637a2d3ac3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 062270864c3fecb6556ef9b48d00177966a41859
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578380"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233022"
 ---
-# <a name="writelinestofile-task"></a>Attività WriteLinesToFile
+# <a name="writelinestofile-task"></a>WriteLinesToFile (attività)
 Scrive i percorsi degli elementi specificati nel file di testo indicato.  
   
 ## <a name="task-parameters"></a>Parametri dell'attività  
- Nella tabella che segue vengono descritti i parametri dell'attività `WriteLinestoFile`.  
+ Nella tabella che segue vengono descritti i parametri dell'attività `WriteLinestoFile` .  
   
 |Parametro|Descrizione|  
 |---------------|-----------------|  
@@ -43,7 +43,7 @@ Scrive i percorsi degli elementi specificati nel file di testo indicato.
 ## <a name="remarks"></a>Note  
  Se `Overwrite` è `true`, crea un nuovo file, scrive il contenuto nel file e quindi lo chiude. Se il file di destinazione è già esistente, viene sovrascritto. Se `Overwrite` è `false`, accoda il contenuto al file, creando il file di destinazione nel caso in cui non esista.  
   
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente usa l'attività `WriteLinesToFile` per scrivere i percorsi degli elementi della raccolta di elementi `MyItems` nel file specificato dalla raccolta di elementi `MyTextFile`.  
@@ -69,4 +69,4 @@ Scrive i percorsi degli elementi specificati nel file di testo indicato.
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

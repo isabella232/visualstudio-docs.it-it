@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752165"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232319"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>Esercitazione, passaggio 5: Usare il modello Progetto Web Flask di sondaggi
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Passaggio 5: Usare il modello di progetto Web Flask di sondaggi
 
 **Passaggio precedente: [Usare il modello Progetto Web Flask completo](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -78,35 +78,35 @@ Come accennato prima, molte parti di un progetto creato dal modello "Progetto We
 
 I modelli di dati per l'app sono classi Python denominate Poll e Choice definite in `models/__init__.py`. La classe Poll rappresenta una domanda, per la quale una raccolta di istanze di Choice rappresenta l'insieme delle risposte disponibili. Poll gestisce inoltre il numero totale di voti (per ogni scelta) e un metodo per calcolare le statistiche usate per la generazione di visualizzazioni:
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 Questi modelli di dati sono astrazioni generiche che consentono alle visualizzazioni dell'app di funzionare con diversi tipi di archivi dati di backup, descritti nel passaggio successivo.
 
@@ -189,32 +189,32 @@ I passaggi seguenti aggiungono il supporto per un archivio dati diverso dai tre 
 
 Inizialmente un archivio dati, indipendentemente dall'opzione scelta, non contiene sondaggi, quindi nella home page dell'app un messaggio indica che non sono disponibili sondaggi e appare un pulsante di **creazione di sondaggi di esempio**. Quando si seleziona il pulsante, tuttavia, la visualizzazione cambia e appaiono i sondaggi disponibili. Questo cambiamento è dovuto ai tag condizionali in `templates\index.html` (alcune righe vuote sono state omesse per brevità):
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 La variabile `polls` nel modello proviene da una chiamata a `repository.get_polls`, che non restituisce nulla finché l'archivio dati non viene inizializzato.
 
